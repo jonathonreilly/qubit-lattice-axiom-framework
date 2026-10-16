@@ -1,0 +1,54 @@
+{
+  "schema": "compensated-preparation-inputs-v1",
+  "members": {
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/ACTUAL_BINDING.json": {
+      "bytes": 3011,
+      "sha256": "4292299e69608eeea4a83b069a0a8c8735f31029582f2a83b005082a1e2053bb"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/AUTHOR_EXPOSURE.md": {
+      "bytes": 2948,
+      "sha256": "e3f93dfc9ce21138180d723d783f0c968cd0d4b5bd55ff11709ee043b41e151c"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/AUTHOR_FAILURE_LEDGER.md": {
+      "bytes": 2376,
+      "sha256": "da128d4bd21268c816482cdae6287c1301de9c015a5c85d8eb7225dca9a994a6"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/BODY_MAP.json": {
+      "bytes": 712,
+      "sha256": "e0b10916b73142cef13e1763feaf6c1cb7ea095d4e11e3cda4e2e0d3d6b357d6"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/DEPENDENCIES.json": {
+      "bytes": 539,
+      "sha256": "e8e12c6412b477a0843e9768d3014563f75fa4f27777b4ad1bca9656ca7bd625"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/EXPOSURE_AND_LIMITS.md": {
+      "bytes": 2362,
+      "sha256": "2c9ed26b6ddb57e32d90912267f1ec56860c3e262f441154eb45eb2305147479"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/PUBLICATION_STATE.json": {
+      "bytes": 712,
+      "sha256": "9c7d4a62003be826636c143425191ef83ac569ea09a533104aab583bdee53522"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/ROOT_ACCEPTANCE.md": {
+      "bytes": 3659,
+      "sha256": "01a9e3220fa7e5c53dbd9a3b3bf9ef246b21bed430d1e2bbdfc45d8af9b90d9a"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/SOURCE_MANIFEST.json": {
+      "bytes": 4851,
+      "sha256": "7e7bb72181b8acb945ce71506ad4c965485c8f1ab752a811a9c1ecacb8e366a6"
+    },
+    ".claude/science/physics-loops/toe-compensated-finite-reservoir-clock-preparation-20261015/SOURCE_REVIEW.md": {
+      "bytes": 22559,
+      "sha256": "74cbf0fcbea985b5c52c5700fe54abdcfeacc577df3226246d9a58c2137669c5"
+    },
+    "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 48637,
+      "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+    },
+    "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 41771,
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+    }
+  },
+  "primary_scope": "Source identity only; scientific proofs are separately checked analytic arguments."
+}

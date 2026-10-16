@@ -1,0 +1,58 @@
+{
+  "source_acceptance_status": "two checked conditional analytic sources",
+  "publication_binding_complete": false,
+  "canonical_parent_binding_complete": true,
+  "unresolved_binding_fields": [
+    "publication_pr",
+    "primary_execution",
+    "cache",
+    "graph_execution"
+  ],
+  "feature_branch": "physics-loop/toe-local-clock-memory-resources-20261015",
+  "base_branch": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+  "head": "94390940f270a7a3db8ca832206ab6076e21025b",
+  "tree": "905d0851eff992f421e882ab0b44f7f93c453992",
+  "parent_pr": 9599,
+  "parent_head": "94390940f270a7a3db8ca832206ab6076e21025b",
+  "main_ref": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "publication_pr": null,
+  "builder_execution": {
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/build_memory_source.py",
+      "bytes": 8752,
+      "sha256": "85d8a90e020e6ba3b5fde326ab4e1377958af642604db682b673b02a27131e2e"
+    },
+    "phase": "this source build; outer completion recorded separately"
+  },
+  "primary_execution": null,
+  "cache": null,
+  "graph_execution": null,
+  "parent": {
+    "alias": "premises/finite_reservoir.md",
+    "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+    "acceptance_alias": "premises/finite_reservoir_acceptance.md",
+    "acceptance_sha256": "51a1622784a86aac00ef24e5a97af364ccf9034f323a532f8ca0938ddb516e2f",
+    "role": "Literal finite-unitary NN reset/entry with unchanged H0, full retained output, 2B ts + 2G_e tp and complete resource ledger",
+    "canonical_path": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "canonical_sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+    "start": 14549,
+    "end": 41771
+  },
+  "conditional_acceptances": {
+    "local_clock_reservoir_purity_root_review/ACCEPTANCE.md": "32b8c2ce025b203d724b701bb00f42f87a7a7174a3118c3de1116483a3d8087e",
+    "local_clock_biased_memory_root_review/ACCEPTANCE.md": "435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222"
+  },
+  "note_path_proposed": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "helper_path_proposed": "scripts/finite_local_clock_memory_resources_2026_10_15.py",
+  "new_scientific_programs_run": 0,
+  "stage": "root_source_bound_prepublication",
+  "source_binding_complete": true,
+  "stack_parent": {
+    "pr": 9599,
+    "branch": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+    "head": "94390940f270a7a3db8ca832206ab6076e21025b",
+    "tree": "905d0851eff992f421e882ab0b44f7f93c453992",
+    "role": "actual stack parent; theorem import separately established by full raw clause"
+  }
+}

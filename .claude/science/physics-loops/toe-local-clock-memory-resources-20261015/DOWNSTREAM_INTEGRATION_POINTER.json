@@ -1,0 +1,24 @@
+{
+  "role": "Later actual downstream integration pointer only; not adopted into this offline binding.",
+  "root_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/PUBLICATION.json",
+    "bytes": 2136,
+    "sha256": "85065ac84ff668ade9f949ef52294d2d366e0c1876d4a051f7bb463876d81be0"
+  },
+  "stored_record": "observations/parent_PUBLICATION.json",
+  "canonical_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 41771,
+    "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+  },
+  "raw_body_sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+  "start": 14549,
+  "end": 41771,
+  "unique_exact_extraction": true,
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9599",
+  "head": "94390940f270a7a3db8ca832206ab6076e21025b",
+  "tree": "905d0851eff992f421e882ab0b44f7f93c453992",
+  "feature": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+  "fresh_network_check": false,
+  "runtime_publication_fields_remain_null": true
+}

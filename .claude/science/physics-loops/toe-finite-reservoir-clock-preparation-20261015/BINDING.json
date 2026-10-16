@@ -1,0 +1,49 @@
+{
+  "claim_id": "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15",
+  "claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "artifact_role": "theorem",
+  "source_acceptance": "accepted unchanged conditional source; not retained audit",
+  "root_acceptance_sha256": "51a1622784a86aac00ef24e5a97af364ccf9034f323a532f8ca0938ddb516e2f",
+  "root_acceptance_alias": "local_clock_finite_reservoir_root_review/ACCEPTANCE.md",
+  "accepted_proof_sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+  "source_observation_utc": "2026-10-15T08:47:29.957407+00:00",
+  "parent_clause": {
+    "alias": "local_clock_finite_reservoir_candidate/sources/boundary_derivation.md",
+    "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+    "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+    "start": 62134,
+    "end": 80595,
+    "role": "Direct complete positive boundary-window clause: literal apparatus, geometry, full-space gap/norm, right entry and time-indexed word comparison."
+  },
+  "canonical_parent_identity_bound": true,
+  "publication_binding_complete": false,
+  "stack_parent": {
+    "pr": 9598,
+    "branch": "physics-loop/toe-installed-clock-reset-20261015",
+    "head": "294d3e762232aeec754e94b0b2da5b011f682b44",
+    "tree": "d62bd9d4a9c2c3235d9cecc04f21a24af5197f41",
+    "role": "ancestry only; not a theorem import"
+  },
+  "feature_branch": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+  "base_branch": "physics-loop/toe-installed-clock-reset-20261015",
+  "head": "294d3e762232aeec754e94b0b2da5b011f682b44",
+  "tree": "d62bd9d4a9c2c3235d9cecc04f21a24af5197f41",
+  "publication_pr": null,
+  "builder_execution": {
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/build_reservoir_source.py",
+      "bytes": 6760,
+      "sha256": "86ca2851e2abd6fd779c3a06e77ff5cfeac4b29987942c25b8efcf78282e9371"
+    },
+    "phase": "this source build; outer completion recorded separately"
+  },
+  "primary_execution": null,
+  "cache": null,
+  "graph_execution": null,
+  "scientific_programs_run": 0,
+  "editable_prompt_files_changed": [],
+  "stage": "root_source_bound_prepublication",
+  "source_binding_complete": true
+}

@@ -1,0 +1,30 @@
+{
+  "mathematical_roles": [
+    {
+      "alias": "premises/finite_reservoir.md",
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "acceptance_alias": "premises/finite_reservoir_acceptance.md",
+      "acceptance_sha256": "51a1622784a86aac00ef24e5a97af364ccf9034f323a532f8ca0938ddb516e2f",
+      "role": "Literal finite-unitary NN reset/entry with unchanged H0, full retained output, 2B ts + 2G_e tp and complete resource ledger",
+      "canonical_path": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "canonical_sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+      "start": 14549,
+      "end": 41771
+    }
+  ],
+  "distinct_external_theorem_roles": 1,
+  "canonical_targets": [
+    "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "actual_graph_result": null,
+  "internal_relation": "The included proofs do not import each other; their shared parent is the finite-reservoir construction.",
+  "methodological_attribution_only": [
+    "Ticozzi-Viola 2014 spectral packing/virtual subsystem",
+    "Kaye 2007 reversible independent-bit majority recursion",
+    "Barenco et al. 1995 controlled-square-root circuit"
+  ],
+  "ancestry_is_not_a_theorem": true,
+  "publication_binding_complete": false,
+  "current_source_binding_complete": true,
+  "historical_unbound_record": "Preserved original offline DEPENDENCIES.json; no old record overwritten."
+}

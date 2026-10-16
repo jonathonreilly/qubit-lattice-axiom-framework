@@ -1,0 +1,13 @@
+# Exposure and execution limits
+
+This is source-only publication preparation after root acceptance, not a new independent proof review. The same worker previously derived/reviewed related boundary, reset and reader sources. Selected model and reasoning effort were retained. No blind, model-diverse or retained-audit claim is made.
+
+Current complete reading covers the 541-line reservoir proof, 111-line substantive review, selected-control source, plan/input/preseal, complete actual scientific output, all seven author programs, four review programs, two root programs, root acceptance and source closure, all six author and two review closed receipts/streams, direct review-seal invocation, and both root outer receipts/streams/executed sources. Aggregate output truncations were followed by smaller complete reads; the missing middle of root close_sources.py was separately recovered. Exact previously complete b3b6 boundary coverage is reused, with the current copied body and canonical unique interval checked by identity. Related context bodies preserved for exposure are not newly certified or made premises.
+
+The historical selected run is the only mathematical execution in these source groups. Its scope is an ideal finite isometry and selected geometry, not installed-H0 propagation. The historical author's recorder lacks a child launch pin; the prior immutable preseal is preserved honestly. The review's direct sealer has SEAL_INVOCATION.json, not an invented outer subprocess receipt. The root close/seal outer streams and launch-source copies are preserved exactly.
+
+This draft's allowed actual programs are capture_sources.py, inspect_draft.py and freeze_packet.py, plus their metadata recorder. They read bytes, parse syntax, generate source/diff/interval inventories and seal files. They do not import the proposed reservoir_common.py, execute build_reservoir_source.py or reservoir_primary.template.py, run a scientific control, create an offline payload, use Git/network, alter a canonical file or invoke cache/graph/audit tooling.
+
+Future stack parent, feature/base/head/tree and PR are unknown. Known canonical parent bytes bind a mathematical citation only. No pending publication is described as actual. Root must review the full proposed source and later supply real bindings in a separate preserved derivative. The present draft's null statuses remain historical when that occurs.
+
+All writes are confined to this new publication-draft directory. The candidate, review, root packet, prior drafts, canonical checkout and previous renewal are unchanged. Editable prompts and physical axioms changed: none.

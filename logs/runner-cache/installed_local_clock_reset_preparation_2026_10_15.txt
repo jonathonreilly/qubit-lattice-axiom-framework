@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/installed_local_clock_reset_preparation_2026_10_15.py
+runner_sha256: c8291993f190397fe67cbcbea158d4b9a51ec4f4f4b7444365ee5f3b86fc42ee
+input_fingerprint_sha256: 59f8681cebfecd821152df380556d5a5d593a5e2880dc7ce8723ecedd252d837
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"archived_receipts": {"limits": "After-execution author hashes remain after-execution; no retroactive launch attestation.", "replayed": false, "scientific_attempts": 0, "unique_historical_metadata_attempts": 11}, "complete_mathematical_bodies": 2, "dated_canonical_source_binding_complete": true, "decoded_originals": 189, "limits": "No mathematical test, microscopic bath supplier, later PR status or retained audit.", "mathematical_predicates_executed": 0, "publication_link_replacements": 1, "result": "reset_source_identity_binding", "scientific_programs_run": 0, "scope": "Bytes, full-body intervals, one-link inverse and actual historical stream provenance only."}
+per_element: arbitrary correlated old/clock/passive-reference input; reservoir is supplied and traced
+per_site: literal occupied-chain clock kept installed; uniform local damping and one onsite entry pulse supplied
+per_mode: all number sectors and clock-number coherence included; total-sector law is not site independence
+per_block: sufficient reset/preparation error and necessary model-specific action; actual old free aging retained
+lattice_wide: fixed finite carrier, growing-rate/resource prices; no microscopic bath, reuse or native readout
+
+----- stderr -----
+

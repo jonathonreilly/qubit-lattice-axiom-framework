@@ -1,0 +1,210 @@
+{
+  "unique_actual_receipts": [
+    {
+      "id": "5526385c01b16178c6f8ad8a16adaffd04ebd3faf3ae70eb61d1feffe6611d38",
+      "receipt_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/purification_2014_pdf/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "runs/purification_2014_pdf/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/purification_2014_pdf/stdout",
+      "stderr_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/purification_2014_pdf/stderr",
+      "source_alias": null,
+      "replayed": false
+    },
+    {
+      "id": "4ce73b0398eccf0a902b3fa8532a54f6a538283817bd9f7610fc8509b6c2e263",
+      "receipt_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/reservoir_purity_candidate_freeze/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "runs/reservoir_purity_candidate_freeze/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/reservoir_purity_candidate_freeze/stdout",
+      "stderr_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/reservoir_purity_candidate_freeze/stderr",
+      "source_alias": "local_clock_reservoir_purity_decisive_check/archive/historical_runs/reservoir_purity_candidate_freeze/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "845010d992e2daa206dc71c3a418930eb6904b9cc2a0bed52cdff6cd5db4591f",
+      "receipt_alias": "local_clock_reservoir_purity_decisive_check/runs/capture_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_reservoir_purity_decisive_check/runs/capture_01/stdout",
+      "stderr_alias": "local_clock_reservoir_purity_decisive_check/runs/capture_01/stderr",
+      "source_alias": "local_clock_reservoir_purity_decisive_check/runs/capture_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "2d249861e42f3ade6dfbcbff2d19346e81c0707b71a9fc63392934c4737dac43",
+      "receipt_alias": "local_clock_reservoir_purity_decisive_check/runs/freeze_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_reservoir_purity_decisive_check/runs/freeze_01/stdout",
+      "stderr_alias": "local_clock_reservoir_purity_decisive_check/runs/freeze_01/stderr",
+      "source_alias": "local_clock_reservoir_purity_decisive_check/runs/freeze_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "fb90644237951c4df5de064bf21e053a465d45e9449eb55939219fb05660f519",
+      "receipt_alias": "local_clock_reservoir_purity_decisive_check/runs/identity_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_reservoir_purity_decisive_check/runs/identity_01/stdout",
+      "stderr_alias": "local_clock_reservoir_purity_decisive_check/runs/identity_01/stderr",
+      "source_alias": "local_clock_reservoir_purity_decisive_check/runs/identity_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "4bda4e48c976915d8b030191e9d4b2642000a8ba61d03fb4eb3caf2aa9920307",
+      "receipt_alias": "local_clock_biased_memory_candidate/literature/Barenco_1995/extraction/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/extraction/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_candidate/literature/Barenco_1995/extraction/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/literature/Barenco_1995/extraction/stderr",
+      "source_alias": "local_clock_biased_memory_candidate/literature/Barenco_1995/extraction/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "253f831b1a28b86d11740aabe544276118266d5c757e2e2e7b95855d9bdf260e",
+      "receipt_alias": "local_clock_biased_memory_candidate/literature/Kaye_2007/extraction/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/extraction/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_candidate/literature/Kaye_2007/extraction/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/literature/Kaye_2007/extraction/stderr",
+      "source_alias": "local_clock_biased_memory_candidate/literature/Kaye_2007/extraction/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "571f6e420ee5fa8c60aa1186c254a98b620d0b2be2c73e75fe952f17a1b4ed2d",
+      "receipt_alias": "local_clock_biased_memory_candidate/runs/capture_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/runs/capture_01/EXECUTION.json"
+      ],
+      "expected_exit_code": 1,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_candidate/runs/capture_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/runs/capture_01/stderr",
+      "source_alias": "local_clock_biased_memory_candidate/runs/capture_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "cbe4ec65d41ee54006144f7425083146e185b65c9209c64c628632b796a0d411",
+      "receipt_alias": "local_clock_biased_memory_candidate/runs/finalize_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/runs/finalize_01/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_candidate/runs/finalize_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/runs/finalize_01/stderr",
+      "source_alias": "local_clock_biased_memory_candidate/runs/finalize_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "ec97e25391c301e9694b676453433bd54c6b0ce35eb79801f5366ee8a6cf73e7",
+      "receipt_alias": "local_clock_biased_memory_candidate/runs/selected_control_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/runs/selected_control_01/EXECUTION.json"
+      ],
+      "expected_exit_code": 0,
+      "classification": "author_selected_scientific_control",
+      "stdout_alias": "local_clock_biased_memory_candidate/runs/selected_control_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/runs/selected_control_01/stderr",
+      "source_alias": "local_clock_biased_memory_candidate/runs/selected_control_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "f533d8258ded3411cf20c69ef8f43f9fdbe70837491e8cbae362fc526b96c251",
+      "receipt_alias": "local_clock_biased_memory_candidate/search/EXECUTION.json",
+      "duplicate_receipt_aliases": [
+        "local_clock_biased_memory_decisive_check/archive/candidate/search/EXECUTION.json"
+      ],
+      "expected_exit_code": 1,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_candidate/search/stdout",
+      "stderr_alias": "local_clock_biased_memory_candidate/search/stderr",
+      "source_alias": null,
+      "replayed": false
+    },
+    {
+      "id": "a01cfbb71f980ab6264d4e60535f36a51c89480311a6423884ba5f08296324fc",
+      "receipt_alias": "local_clock_biased_memory_decisive_check/runs/capture_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_decisive_check/runs/capture_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_decisive_check/runs/capture_01/stderr",
+      "source_alias": "local_clock_biased_memory_decisive_check/runs/capture_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "8b24aa03caa0609fb3b3604ae5c22171982318d6b6a277fb28930bc0b3de99c8",
+      "receipt_alias": "local_clock_biased_memory_decisive_check/runs/freeze_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_decisive_check/runs/freeze_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_decisive_check/runs/freeze_01/stderr",
+      "source_alias": "local_clock_biased_memory_decisive_check/runs/freeze_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "bc3e31582dbb7e9d8db5642dbbfd955756cb5d0a466d01175bf78e4e632a3156",
+      "receipt_alias": "local_clock_biased_memory_decisive_check/runs/identity_01/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "local_clock_biased_memory_decisive_check/runs/identity_01/stdout",
+      "stderr_alias": "local_clock_biased_memory_decisive_check/runs/identity_01/stderr",
+      "source_alias": "local_clock_biased_memory_decisive_check/runs/identity_01/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "027315cf4c20aec6cfb0902e1221bad9625ec4fb1aa87c0b875b61f615f590fe",
+      "receipt_alias": "runs/reservoir_purity_root_close/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "runs/reservoir_purity_root_close/stdout",
+      "stderr_alias": "runs/reservoir_purity_root_close/stderr",
+      "source_alias": "runs/reservoir_purity_root_close/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "cfde07edba485ef4efed6354d65f4936568c123bd49f120cf0d4992d54bf0121",
+      "receipt_alias": "runs/biased_memory_root_candidate_close/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "runs/biased_memory_root_candidate_close/stdout",
+      "stderr_alias": "runs/biased_memory_root_candidate_close/stderr",
+      "source_alias": "runs/biased_memory_root_candidate_close/executed_source.py",
+      "replayed": false
+    },
+    {
+      "id": "4497e6f242d980ecb91d283d613ae66e7f890fdfbb255473f339363f67392687",
+      "receipt_alias": "runs/biased_memory_root_review_close/EXECUTION.json",
+      "duplicate_receipt_aliases": [],
+      "expected_exit_code": 0,
+      "classification": "historical_metadata_or_literature_operation",
+      "stdout_alias": "runs/biased_memory_root_review_close/stdout",
+      "stderr_alias": "runs/biased_memory_root_review_close/stderr",
+      "source_alias": "runs/biased_memory_root_review_close/executed_source.py",
+      "replayed": false
+    }
+  ],
+  "historical_scientific_executions": 1,
+  "new_scientific_executions": 0,
+  "limits": "Direct invocations without outer receipts remain described by their original invocation/recovery records; no launch pins invented."
+}

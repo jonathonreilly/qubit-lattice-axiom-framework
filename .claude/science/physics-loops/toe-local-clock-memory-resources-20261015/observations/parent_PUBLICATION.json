@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-15T10:20:04.287230+00:00",
+  "baseRefName": "physics-loop/toe-installed-clock-reset-20261015",
+  "headRefName": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+  "headRefOid": "94390940f270a7a3db8ca832206ab6076e21025b",
+  "isDraft": false,
+  "number": 9599,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9599",
+  "tree": "905d0851eff992f421e882ab0b44f7f93c453992",
+  "base_head": "294d3e762232aeec754e94b0b2da5b011f682b44",
+  "commit": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/COMMIT.json",
+    "bytes": 604,
+    "sha256": "c475661734235a199b0a2fa82e2c5b042415bc1d101f36dbae886bd5ffcfa951"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/RESERVOIR_PR_BODY.md",
+    "bytes": 1339,
+    "sha256": "0ba2b84f7ec5649e686542941690499bdda06db0fe5550fcb26d2de1753cb21e"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 41771,
+    "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_reservoir_boundary_clock_preparation_2026_10_15.py",
+    "bytes": 26841,
+    "sha256": "1656f09364520673460d0e676a42b6067a1b55a9d72b32b20dcca285c5e94811"
+  },
+  "staged_verification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/STAGED_VERIFICATION.json",
+    "bytes": 380714,
+    "sha256": "88be3830ac877c4f3a7f66eb8525c259e67674d0606ccdd97ad1199c0ff5562a"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "retained_audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Calling chat must attach created URL next."
+}

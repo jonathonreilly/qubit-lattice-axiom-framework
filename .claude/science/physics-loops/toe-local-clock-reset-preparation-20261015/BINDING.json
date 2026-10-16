@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-15T09:50:36.290860+00:00",
+  "stage": "root_bound_review_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-installed-clock-reset-20261015",
+  "base_branch": "physics-loop/toe-static-historical-reader-20261015",
+  "observed_base_head": "88b08187750d0ffa795f166c1d94cd2245b048c9",
+  "observed_base_tree": "be56ff51df547e5db210f9119bd2f82c66f28629",
+  "base_pr": 9596,
+  "main_ref": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "publication_pr": null,
+  "source_head": "88b08187750d0ffa795f166c1d94cd2245b048c9",
+  "control_sha256": "0bc4df1231c3bb7ea8f2e563cd7811e2d312a1e9df5fcbd1ca4c12e9b1e297bc",
+  "parent_clauses": [
+    {
+      "alias": "premises/boundary_derivation.md",
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "start": 62134,
+      "end": 80595,
+      "role": "Literal positive occupied-chain apparatus, all-sector vacuum silence/number conservation/norm and actual right-entry moments; later boundary-word use retains its own hypotheses"
+    }
+  ],
+  "conditional_acceptances": {
+    "local_clock_reset_preparation_root_review/ACCEPTANCE.md": "7672e171652914194378c3efe76bb750e4ac3f385cbc78a5c16297b19c1ee03b",
+    "local_clock_reset_action_root_review/ACCEPTANCE.md": "a5fe9c5ea793b31e23b3169300b15a983a0ae4ff1b57ec23a720a8d77cf4e8b7"
+  },
+  "ancestry_alone_supplies_mathematical_premise": false,
+  "new_scientific_programs_run": 0,
+  "scope": "Dated actual stack binding; only b3 is a mathematical external clause. Actual later PR is separate."
+}

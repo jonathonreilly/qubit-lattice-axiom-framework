@@ -1,6 +1,6 @@
 {
- "edge_count": 16095,
- "node_count": 7143,
+ "edge_count": 16099,
+ "node_count": 7147,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3930,6 +3930,10 @@
    "deps_hash": "12b6f44ac94c",
    "out_degree": 4
   },
+  "compensated_finite_reservoir_clock_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "44fe82ec55ee",
+   "out_degree": 1
+  },
   "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -6714,6 +6718,10 @@
    "deps_hash": "9c83fb5042d9",
    "out_degree": 3
   },
+  "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "44fe82ec55ee",
+   "out_degree": 1
+  },
   "finite_local_clock_word_windows_bounded_theorem_note_2026-10-15": {
    "deps_hash": "45954a626534",
    "out_degree": 2
@@ -6748,6 +6756,10 @@
   },
   "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "finite_reservoir_boundary_clock_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "3e766f8a603a",
    "out_degree": 1
   },
   "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
@@ -12517,6 +12529,10 @@
   "installed_generator_preparation_readiness_bounded_theorem_note_2026-10-15": {
    "deps_hash": "7f0d6f98d7fb",
    "out_degree": 4
+  },
+  "installed_local_clock_reset_preparation_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "3e766f8a603a",
+   "out_degree": 1
   },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "4af4136b6493",

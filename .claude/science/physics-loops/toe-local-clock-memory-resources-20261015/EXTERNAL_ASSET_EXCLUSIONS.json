@@ -1,0 +1,2022 @@
+{
+  "schema": "memory-external-exclusions-v1",
+  "unique_external_assets": [
+    {
+      "sha256": "ec578e7f3591ad1b5dde088aa3ee7353813f35454653f81445943899ae7a8bad",
+      "bytes": 614663,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "32d8baba1f8954b57e33e29a20e20e57922fc03250be97586bbc7f356c744cb1",
+      "bytes": 5579,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "26bb64130c39da821c4d0d42db9cb33e7fd67755e61b130e0256b217cba452ff",
+      "bytes": 5565,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "1f5996e89b25d3bf8601bea28906339720654c4c2b5759d5be2468f9ba5ddcf5",
+      "bytes": 5347,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "9fcf8a410c162d8ff32624ca7514fe31fb1b2e890b11c2351fa05894031789e5",
+      "bytes": 5346,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "f7df37bbf8d70ba169c16b8ddd56ceedba344c3c6cec5f61c233645b0942a613",
+      "bytes": 5771,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "36296c66e45e739282fdcf3e53e11c95b15477ce19c3f2e0d591f21ca4b72e39",
+      "bytes": 6143,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "67f780b445dda3047f122230654ec4ad099eed3b5d7c61fbd8489ca2829a964b",
+      "bytes": 4870,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "8f4f45f8a8b9b49ba802d969f129fc0b6038b2ab55d63a8d450e545dd15a9ea8",
+      "bytes": 5065,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "0dbafad381bc56747c4fe8bd9e20a9f8f33e174b4849dfb31595f5c1353dd2b1",
+      "bytes": 6386,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "252bbe4b63adab955c75d6cb116e81abc476bde44b00924a7321ee46236e1aa7",
+      "bytes": 543,
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "dd5f4f054e7d9087b4c633b205515c1a90435f4400195a015be1f83729b3d2d3",
+      "bytes": 2019,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "c72f828f4147e7b7c157ab33027f201f06db008557dc65cc51428c35d4f2232e",
+      "bytes": 3114,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "d78fae639083ce6a729a6dd842eb6153e25dd196e6f53e1f21465debe4eff43a",
+      "bytes": 2927,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "f989abf71bd33ff66bb83f01660e37eb1cba773cc334fffe05b1b3a8160b852d",
+      "bytes": 2814,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "d25bc32fc66ea48b6df463048819fd9bcf302a6021ea5b2f73c5647bdd64831e",
+      "bytes": 2159,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "5efe32b440d825b5c1cca397b1dbd8f18ee048859339b494a546083e4110778d",
+      "bytes": 2506,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "ca630b965c173a29ad28e68a91a4833729962dd932f3011dded3b72a0722228a",
+      "bytes": 1949,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "c717170070be3e7bc04e382e8be51a4215c8c6f4acf394b4b31340da9bf37b95",
+      "bytes": 2288,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "60525837dd22e9d87f0d9495827d0949759009625afcd40f7145fef510d6d577",
+      "bytes": 2390,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "12cdef0bb7d1d8715c5656925ef3f730705e059cb994c3461d11bede2ab071bc",
+      "bytes": 3093,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "61f1a92d27767da97face0263e43dc7e3b973aa3a3f7d26ca9e5353f1bcc1a3d",
+      "bytes": 2641,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "2fcddb56620a2b3f487690da5ff54d05aecb8637d68cc38742fdac2f9c388de2",
+      "bytes": 2210,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "d59cf9bccbb1cf8629f25aa217c671f7a4a2163e7144029a2a7b90981f1c9b97",
+      "bytes": 2491,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "79fbdfd35d51b14d052f4bf5256e7697acbbb286620863fac0112d58b0e5dc01",
+      "bytes": 1749,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "710057df4cb0f4770a3ee55c78b682e15019145b627e2e45384a25bbcaa31375",
+      "bytes": 2347,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "5745ca0f3b814427b652f4e90f9df84182fd8403cf7a3a985bcad0545bc2d06a",
+      "bytes": 1905,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "689bfccd070b3d46459948de5bfaa3509733d9e0bf1ce04cba5ace8b99b4dc15",
+      "bytes": 1690,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "29f2a4df4fb52a907df3481877820e3830369d623a6c68df70f8803fe2f02fc3",
+      "bytes": 2088,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "12ba167a810c0aa8cf7a041cd202d8b24f22e201fd3f10e81c50fa7a73a0086a",
+      "bytes": 2072,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "fb1912b14ac45447b99a9abd67be78d803104d71ff62292c4b15eafcea22cc94",
+      "bytes": 1846,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "dd6dd9341b55dfe110f5ccd7330818e142bf8f2812872031d637ce6ee8107ede",
+      "bytes": 2477,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "b133cef951aa6c7b1a94c7a7b92c8d0628270bc146b43d8dfa7d70c5eaf16ae9",
+      "bytes": 2978,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "4541ec39058bd0b6df45cfdd00a43321f027d438a1109a75a43a7e24ddb779bd",
+      "bytes": 2437,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "6306281374ddcd93aaa40c4b7e172f8fbf1f85b729c59974832aff80d17d8cbc",
+      "bytes": 2740,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "6e7e3b84d8cdf9453754b169e551baced51f8c5993c2d898903eb7abecdc7511",
+      "bytes": 1322,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "21cf0fed2c300a4466609116205c789b19e3aae6f2c7d61100cfd92a5fcf315f",
+      "bytes": 284286,
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "b1a2a36376e0dce8678d64297b883a3347507ba68357727c89899025a627eaee",
+      "bytes": 2122,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "c8a4409b3cce1ed628e17cea986b3af8b50126213f36b4ad13ffc31ecd0d96a4",
+      "bytes": 2107,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "be174b846a46956e9966b81fe836f5fae7b1e5b21cd5ca47a940338d1cbe95fe",
+      "bytes": 2279,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "3fe2deb1c9109b16cb3a82acd3dc36159780d9305fe68a6c249b98c2e6c92eab",
+      "bytes": 2324,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "7f90d6370b5045f36236f334f1fec996218dd1a7a10dd8e8fa5da607f5ec8c56",
+      "bytes": 1935,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "99102de6668997302532f88f3d990a607d4640936854ab72a35a1d7525d097f0",
+      "bytes": 1653,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "ce9d3277b66d48635c73abf87baee6a6697981a6a471f92b9ac99f9d3894a8c0",
+      "bytes": 1854,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "60480e51453c0795944832ab8846892bdd887d337e9740c10a848a8565248c5c",
+      "bytes": 1504,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "3cc0db04f68d598ee2e9ecdcaff1993d40955c82c39b182874974a3fc1d4bd58",
+      "bytes": 1102,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "28a06549b1f2b6f96b090206cb9d43de1b1fdb73acec7304fe1819a575f03a79",
+      "bytes": 1127,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "a40459cf3b5d1f844a5ef30c9b4f9bcdb1f69217957b7930050ca160aee8c67b",
+      "bytes": 1223,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "3e350c46b25a931312d557e7d86477e1e5aa4d1cc8766fe702344095a92d1373",
+      "bytes": 1728,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "444d189408fb13174537c54bc02824e4e71d4d2dc61b284e4cca937e3022ca6c",
+      "bytes": 1215,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "b388bc0ce98c46e3541b4bb481b170f8411446bbfb975896dc1c5e3712aac5c7",
+      "bytes": 1126,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "497bd1d63e612829b6380aaf35cf792cc7ce535872168860a683f854aca7ac38",
+      "bytes": 1892,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "452fc7036fc6689dd5c45d0c9357ca8b04e506e91a72ae9e67f13473d63ccf7c",
+      "bytes": 1292,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "816bbe91211e6a3a9900da0bfd1f383e1b5c2b6f2672c69dc6605e11cd507f27",
+      "bytes": 1669,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "a11f5ba014cda30730a24a287143fb41061b7a2b5e9a446379a5e86207897837",
+      "bytes": 1332,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "35227665c3f985cc8c7b355a8d9924d8221b9dd45e23222b5a76ff8c9bf2faf6",
+      "bytes": 1330,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "414d387c7fc21cc09c24ef5efb6ae2eaca7513dbf1854520b6774bfb66ebfe3a",
+      "bytes": 1399,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "efe8d3db59c08fe12b1214ab04ab341fc4d6234650a3138503ee057f70a07c99",
+      "bytes": 1183,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "df3b4cf82f6f8467c36eafb4e9741e524380b6cf86df7e82ddc5215ae2c8a2e4",
+      "bytes": 1890,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "498d0bf0d40bc6531c4ec506c399dd405374ba21d100b50b44402d47a029a2c3",
+      "bytes": 1522,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "5aa9c2f824a1b7f403951f79295fd6172fb0db63e8ad397742412ecf7c3564e8",
+      "bytes": 986,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "fa9cd76e051e315b8210be6429ffb4e7ffe7688a916760d2e5178141fd41c2bc",
+      "bytes": 914,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "45b29822b502f87d4811468f6a3b3824aa60a1c65380247807e4a5c99bb39e85",
+      "bytes": 1978,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "918513c4c135dd88c1f16dd88e2dee3a0506e5204e169cf7a7dac2e37f317e28",
+      "bytes": 2244,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "b2cdc03d11bc3d8091e99ed13c519ea4e221c84b973fb554d412d7ea57c909b0",
+      "bytes": 2181,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "6b18e4f84648898325e70964dcdad689bde7476417df427f8a1bab62877bf255",
+      "bytes": 2382,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "41710a7a349922b6b04bdf252c2dbbefc174584dd410b3500419728876dae492",
+      "bytes": 3082,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "92adef027851dd5ff9b5f4e7fc14bf3a806b549d7e0fcf165f9008be62e3f3a4",
+      "bytes": 2544,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    {
+      "sha256": "e329e6e56e234a4c572f8eb2d493b07864e308027fe142985fb76e62229e154d",
+      "bytes": 252283,
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    }
+  ],
+  "excluded_aliases": {
+    "local_clock_reservoir_purity_decisive_check/archive/literature/arxiv_1403_8143.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/arxiv_1403_8143.pdf",
+      "bytes": 614663,
+      "sha256": "ec578e7f3591ad1b5dde088aa3ee7353813f35454653f81445943899ae7a8bad",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_01.txt",
+      "bytes": 5579,
+      "sha256": "32d8baba1f8954b57e33e29a20e20e57922fc03250be97586bbc7f356c744cb1",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_02.txt",
+      "bytes": 5565,
+      "sha256": "26bb64130c39da821c4d0d42db9cb33e7fd67755e61b130e0256b217cba452ff",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_03.txt",
+      "bytes": 5347,
+      "sha256": "1f5996e89b25d3bf8601bea28906339720654c4c2b5759d5be2468f9ba5ddcf5",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_04.txt",
+      "bytes": 5346,
+      "sha256": "9fcf8a410c162d8ff32624ca7514fe31fb1b2e890b11c2351fa05894031789e5",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_05.txt",
+      "bytes": 5771,
+      "sha256": "f7df37bbf8d70ba169c16b8ddd56ceedba344c3c6cec5f61c233645b0942a613",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_06.txt",
+      "bytes": 6143,
+      "sha256": "36296c66e45e739282fdcf3e53e11c95b15477ce19c3f2e0d591f21ca4b72e39",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_07.txt",
+      "bytes": 4870,
+      "sha256": "67f780b445dda3047f122230654ec4ad099eed3b5d7c61fbd8489ca2829a964b",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_08.txt",
+      "bytes": 5065,
+      "sha256": "8f4f45f8a8b9b49ba802d969f129fc0b6038b2ab55d63a8d450e545dd15a9ea8",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_09.txt",
+      "bytes": 6386,
+      "sha256": "0dbafad381bc56747c4fe8bd9e20a9f8f33e174b4849dfb31595f5c1353dd2b1",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_reservoir_purity_decisive_check/archive/literature/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reservoir_purity_decisive_check/archive/literature/page_10.txt",
+      "bytes": 543,
+      "sha256": "252bbe4b63adab955c75d6cb116e81abc476bde44b00924a7321ee46236e1aa7",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_01.txt",
+      "bytes": 2122,
+      "sha256": "b1a2a36376e0dce8678d64297b883a3347507ba68357727c89899025a627eaee",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_02.txt",
+      "bytes": 2107,
+      "sha256": "c8a4409b3cce1ed628e17cea986b3af8b50126213f36b4ad13ffc31ecd0d96a4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_03.txt",
+      "bytes": 2279,
+      "sha256": "be174b846a46956e9966b81fe836f5fae7b1e5b21cd5ca47a940338d1cbe95fe",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_04.txt",
+      "bytes": 2324,
+      "sha256": "3fe2deb1c9109b16cb3a82acd3dc36159780d9305fe68a6c249b98c2e6c92eab",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_05.txt",
+      "bytes": 1935,
+      "sha256": "7f90d6370b5045f36236f334f1fec996218dd1a7a10dd8e8fa5da607f5ec8c56",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_06.txt",
+      "bytes": 1653,
+      "sha256": "99102de6668997302532f88f3d990a607d4640936854ab72a35a1d7525d097f0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_07.txt",
+      "bytes": 1854,
+      "sha256": "ce9d3277b66d48635c73abf87baee6a6697981a6a471f92b9ac99f9d3894a8c0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_08.txt",
+      "bytes": 1504,
+      "sha256": "60480e51453c0795944832ab8846892bdd887d337e9740c10a848a8565248c5c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_09.txt",
+      "bytes": 1102,
+      "sha256": "3cc0db04f68d598ee2e9ecdcaff1993d40955c82c39b182874974a3fc1d4bd58",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_10.txt",
+      "bytes": 1127,
+      "sha256": "28a06549b1f2b6f96b090206cb9d43de1b1fdb73acec7304fe1819a575f03a79",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_11.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_11.txt",
+      "bytes": 1223,
+      "sha256": "a40459cf3b5d1f844a5ef30c9b4f9bcdb1f69217957b7930050ca160aee8c67b",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_12.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_12.txt",
+      "bytes": 1728,
+      "sha256": "3e350c46b25a931312d557e7d86477e1e5aa4d1cc8766fe702344095a92d1373",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_13.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_13.txt",
+      "bytes": 1215,
+      "sha256": "444d189408fb13174537c54bc02824e4e71d4d2dc61b284e4cca937e3022ca6c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_14.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_14.txt",
+      "bytes": 1126,
+      "sha256": "b388bc0ce98c46e3541b4bb481b170f8411446bbfb975896dc1c5e3712aac5c7",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_15.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_15.txt",
+      "bytes": 1892,
+      "sha256": "497bd1d63e612829b6380aaf35cf792cc7ce535872168860a683f854aca7ac38",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_16.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_16.txt",
+      "bytes": 1292,
+      "sha256": "452fc7036fc6689dd5c45d0c9357ca8b04e506e91a72ae9e67f13473d63ccf7c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_17.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_17.txt",
+      "bytes": 1669,
+      "sha256": "816bbe91211e6a3a9900da0bfd1f383e1b5c2b6f2672c69dc6605e11cd507f27",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_18.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_18.txt",
+      "bytes": 1332,
+      "sha256": "a11f5ba014cda30730a24a287143fb41061b7a2b5e9a446379a5e86207897837",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_19.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_19.txt",
+      "bytes": 1330,
+      "sha256": "35227665c3f985cc8c7b355a8d9924d8221b9dd45e23222b5a76ff8c9bf2faf6",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_20.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_20.txt",
+      "bytes": 1399,
+      "sha256": "414d387c7fc21cc09c24ef5efb6ae2eaca7513dbf1854520b6774bfb66ebfe3a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_21.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_21.txt",
+      "bytes": 1183,
+      "sha256": "efe8d3db59c08fe12b1214ab04ab341fc4d6234650a3138503ee057f70a07c99",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_22.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_22.txt",
+      "bytes": 1890,
+      "sha256": "df3b4cf82f6f8467c36eafb4e9741e524380b6cf86df7e82ddc5215ae2c8a2e4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_23.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_23.txt",
+      "bytes": 1522,
+      "sha256": "498d0bf0d40bc6531c4ec506c399dd405374ba21d100b50b44402d47a029a2c3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_24.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_24.txt",
+      "bytes": 986,
+      "sha256": "5aa9c2f824a1b7f403951f79295fd6172fb0db63e8ad397742412ecf7c3564e8",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_25.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_25.txt",
+      "bytes": 914,
+      "sha256": "fa9cd76e051e315b8210be6429ffb4e7ffe7688a916760d2e5178141fd41c2bc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_26.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_26.txt",
+      "bytes": 1978,
+      "sha256": "45b29822b502f87d4811468f6a3b3824aa60a1c65380247807e4a5c99bb39e85",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_27.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_27.txt",
+      "bytes": 2244,
+      "sha256": "918513c4c135dd88c1f16dd88e2dee3a0506e5204e169cf7a7dac2e37f317e28",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_28.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_28.txt",
+      "bytes": 2181,
+      "sha256": "b2cdc03d11bc3d8091e99ed13c519ea4e221c84b973fb554d412d7ea57c909b0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_29.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_29.txt",
+      "bytes": 2382,
+      "sha256": "6b18e4f84648898325e70964dcdad689bde7476417df427f8a1bab62877bf255",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_30.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_30.txt",
+      "bytes": 3082,
+      "sha256": "41710a7a349922b6b04bdf252c2dbbefc174584dd410b3500419728876dae492",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/page_31.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/page_31.txt",
+      "bytes": 2544,
+      "sha256": "92adef027851dd5ff9b5f4e7fc14bf3a806b549d7e0fcf165f9008be62e3f3a4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Barenco_1995/paper.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Barenco_1995/paper.pdf",
+      "bytes": 252283,
+      "sha256": "e329e6e56e234a4c572f8eb2d493b07864e308027fe142985fb76e62229e154d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_01.txt",
+      "bytes": 2019,
+      "sha256": "dd5f4f054e7d9087b4c633b205515c1a90435f4400195a015be1f83729b3d2d3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_02.txt",
+      "bytes": 3114,
+      "sha256": "c72f828f4147e7b7c157ab33027f201f06db008557dc65cc51428c35d4f2232e",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_03.txt",
+      "bytes": 2927,
+      "sha256": "d78fae639083ce6a729a6dd842eb6153e25dd196e6f53e1f21465debe4eff43a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_04.txt",
+      "bytes": 2814,
+      "sha256": "f989abf71bd33ff66bb83f01660e37eb1cba773cc334fffe05b1b3a8160b852d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_05.txt",
+      "bytes": 2159,
+      "sha256": "d25bc32fc66ea48b6df463048819fd9bcf302a6021ea5b2f73c5647bdd64831e",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_06.txt",
+      "bytes": 2506,
+      "sha256": "5efe32b440d825b5c1cca397b1dbd8f18ee048859339b494a546083e4110778d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_07.txt",
+      "bytes": 1949,
+      "sha256": "ca630b965c173a29ad28e68a91a4833729962dd932f3011dded3b72a0722228a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_08.txt",
+      "bytes": 2288,
+      "sha256": "c717170070be3e7bc04e382e8be51a4215c8c6f4acf394b4b31340da9bf37b95",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_09.txt",
+      "bytes": 2390,
+      "sha256": "60525837dd22e9d87f0d9495827d0949759009625afcd40f7145fef510d6d577",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_10.txt",
+      "bytes": 3093,
+      "sha256": "12cdef0bb7d1d8715c5656925ef3f730705e059cb994c3461d11bede2ab071bc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_11.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_11.txt",
+      "bytes": 2641,
+      "sha256": "61f1a92d27767da97face0263e43dc7e3b973aa3a3f7d26ca9e5353f1bcc1a3d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_12.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_12.txt",
+      "bytes": 2210,
+      "sha256": "2fcddb56620a2b3f487690da5ff54d05aecb8637d68cc38742fdac2f9c388de2",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_13.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_13.txt",
+      "bytes": 2491,
+      "sha256": "d59cf9bccbb1cf8629f25aa217c671f7a4a2163e7144029a2a7b90981f1c9b97",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_14.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_14.txt",
+      "bytes": 1749,
+      "sha256": "79fbdfd35d51b14d052f4bf5256e7697acbbb286620863fac0112d58b0e5dc01",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_15.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_15.txt",
+      "bytes": 2347,
+      "sha256": "710057df4cb0f4770a3ee55c78b682e15019145b627e2e45384a25bbcaa31375",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_16.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_16.txt",
+      "bytes": 1905,
+      "sha256": "5745ca0f3b814427b652f4e90f9df84182fd8403cf7a3a985bcad0545bc2d06a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_17.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_17.txt",
+      "bytes": 1690,
+      "sha256": "689bfccd070b3d46459948de5bfaa3509733d9e0bf1ce04cba5ace8b99b4dc15",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_18.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_18.txt",
+      "bytes": 2088,
+      "sha256": "29f2a4df4fb52a907df3481877820e3830369d623a6c68df70f8803fe2f02fc3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_19.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_19.txt",
+      "bytes": 2072,
+      "sha256": "12ba167a810c0aa8cf7a041cd202d8b24f22e201fd3f10e81c50fa7a73a0086a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_20.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_20.txt",
+      "bytes": 1846,
+      "sha256": "fb1912b14ac45447b99a9abd67be78d803104d71ff62292c4b15eafcea22cc94",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_21.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_21.txt",
+      "bytes": 2477,
+      "sha256": "dd6dd9341b55dfe110f5ccd7330818e142bf8f2812872031d637ce6ee8107ede",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_22.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_22.txt",
+      "bytes": 2978,
+      "sha256": "b133cef951aa6c7b1a94c7a7b92c8d0628270bc146b43d8dfa7d70c5eaf16ae9",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_23.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_23.txt",
+      "bytes": 2437,
+      "sha256": "4541ec39058bd0b6df45cfdd00a43321f027d438a1109a75a43a7e24ddb779bd",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_24.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_24.txt",
+      "bytes": 2740,
+      "sha256": "6306281374ddcd93aaa40c4b7e172f8fbf1f85b729c59974832aff80d17d8cbc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/page_25.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/page_25.txt",
+      "bytes": 1322,
+      "sha256": "6e7e3b84d8cdf9453754b169e551baced51f8c5993c2d898903eb7abecdc7511",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Kaye_2007/paper.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Kaye_2007/paper.pdf",
+      "bytes": 284286,
+      "sha256": "21cf0fed2c300a4466609116205c789b19e3aae6f2c7d61100cfd92a5fcf315f",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/arxiv_1403_8143.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/arxiv_1403_8143.pdf",
+      "bytes": 614663,
+      "sha256": "ec578e7f3591ad1b5dde088aa3ee7353813f35454653f81445943899ae7a8bad",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_01.txt",
+      "bytes": 5579,
+      "sha256": "32d8baba1f8954b57e33e29a20e20e57922fc03250be97586bbc7f356c744cb1",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_02.txt",
+      "bytes": 5565,
+      "sha256": "26bb64130c39da821c4d0d42db9cb33e7fd67755e61b130e0256b217cba452ff",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_candidate/literature/Ticozzi_Viola_2014/page_03.txt",
+      "bytes": 5347,
+      "sha256": "1f5996e89b25d3bf8601bea28906339720654c4c2b5759d5be2468f9ba5ddcf5",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_01.txt",
+      "bytes": 2122,
+      "sha256": "b1a2a36376e0dce8678d64297b883a3347507ba68357727c89899025a627eaee",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_02.txt",
+      "bytes": 2107,
+      "sha256": "c8a4409b3cce1ed628e17cea986b3af8b50126213f36b4ad13ffc31ecd0d96a4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_03.txt",
+      "bytes": 2279,
+      "sha256": "be174b846a46956e9966b81fe836f5fae7b1e5b21cd5ca47a940338d1cbe95fe",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_04.txt",
+      "bytes": 2324,
+      "sha256": "3fe2deb1c9109b16cb3a82acd3dc36159780d9305fe68a6c249b98c2e6c92eab",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_05.txt",
+      "bytes": 1935,
+      "sha256": "7f90d6370b5045f36236f334f1fec996218dd1a7a10dd8e8fa5da607f5ec8c56",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_06.txt",
+      "bytes": 1653,
+      "sha256": "99102de6668997302532f88f3d990a607d4640936854ab72a35a1d7525d097f0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_07.txt",
+      "bytes": 1854,
+      "sha256": "ce9d3277b66d48635c73abf87baee6a6697981a6a471f92b9ac99f9d3894a8c0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_08.txt",
+      "bytes": 1504,
+      "sha256": "60480e51453c0795944832ab8846892bdd887d337e9740c10a848a8565248c5c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_09.txt",
+      "bytes": 1102,
+      "sha256": "3cc0db04f68d598ee2e9ecdcaff1993d40955c82c39b182874974a3fc1d4bd58",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_10.txt",
+      "bytes": 1127,
+      "sha256": "28a06549b1f2b6f96b090206cb9d43de1b1fdb73acec7304fe1819a575f03a79",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_11.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_11.txt",
+      "bytes": 1223,
+      "sha256": "a40459cf3b5d1f844a5ef30c9b4f9bcdb1f69217957b7930050ca160aee8c67b",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_12.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_12.txt",
+      "bytes": 1728,
+      "sha256": "3e350c46b25a931312d557e7d86477e1e5aa4d1cc8766fe702344095a92d1373",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_13.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_13.txt",
+      "bytes": 1215,
+      "sha256": "444d189408fb13174537c54bc02824e4e71d4d2dc61b284e4cca937e3022ca6c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_14.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_14.txt",
+      "bytes": 1126,
+      "sha256": "b388bc0ce98c46e3541b4bb481b170f8411446bbfb975896dc1c5e3712aac5c7",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_15.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_15.txt",
+      "bytes": 1892,
+      "sha256": "497bd1d63e612829b6380aaf35cf792cc7ce535872168860a683f854aca7ac38",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_16.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_16.txt",
+      "bytes": 1292,
+      "sha256": "452fc7036fc6689dd5c45d0c9357ca8b04e506e91a72ae9e67f13473d63ccf7c",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_17.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_17.txt",
+      "bytes": 1669,
+      "sha256": "816bbe91211e6a3a9900da0bfd1f383e1b5c2b6f2672c69dc6605e11cd507f27",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_18.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_18.txt",
+      "bytes": 1332,
+      "sha256": "a11f5ba014cda30730a24a287143fb41061b7a2b5e9a446379a5e86207897837",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_19.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_19.txt",
+      "bytes": 1330,
+      "sha256": "35227665c3f985cc8c7b355a8d9924d8221b9dd45e23222b5a76ff8c9bf2faf6",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_20.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_20.txt",
+      "bytes": 1399,
+      "sha256": "414d387c7fc21cc09c24ef5efb6ae2eaca7513dbf1854520b6774bfb66ebfe3a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_21.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_21.txt",
+      "bytes": 1183,
+      "sha256": "efe8d3db59c08fe12b1214ab04ab341fc4d6234650a3138503ee057f70a07c99",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_22.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_22.txt",
+      "bytes": 1890,
+      "sha256": "df3b4cf82f6f8467c36eafb4e9741e524380b6cf86df7e82ddc5215ae2c8a2e4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_23.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_23.txt",
+      "bytes": 1522,
+      "sha256": "498d0bf0d40bc6531c4ec506c399dd405374ba21d100b50b44402d47a029a2c3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_24.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_24.txt",
+      "bytes": 986,
+      "sha256": "5aa9c2f824a1b7f403951f79295fd6172fb0db63e8ad397742412ecf7c3564e8",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_25.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_25.txt",
+      "bytes": 914,
+      "sha256": "fa9cd76e051e315b8210be6429ffb4e7ffe7688a916760d2e5178141fd41c2bc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_26.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_26.txt",
+      "bytes": 1978,
+      "sha256": "45b29822b502f87d4811468f6a3b3824aa60a1c65380247807e4a5c99bb39e85",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_27.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_27.txt",
+      "bytes": 2244,
+      "sha256": "918513c4c135dd88c1f16dd88e2dee3a0506e5204e169cf7a7dac2e37f317e28",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_28.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_28.txt",
+      "bytes": 2181,
+      "sha256": "b2cdc03d11bc3d8091e99ed13c519ea4e221c84b973fb554d412d7ea57c909b0",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_29.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_29.txt",
+      "bytes": 2382,
+      "sha256": "6b18e4f84648898325e70964dcdad689bde7476417df427f8a1bab62877bf255",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_30.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_30.txt",
+      "bytes": 3082,
+      "sha256": "41710a7a349922b6b04bdf252c2dbbefc174584dd410b3500419728876dae492",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_31.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/page_31.txt",
+      "bytes": 2544,
+      "sha256": "92adef027851dd5ff9b5f4e7fc14bf3a806b549d7e0fcf165f9008be62e3f3a4",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/paper.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Barenco_1995/paper.pdf",
+      "bytes": 252283,
+      "sha256": "e329e6e56e234a4c572f8eb2d493b07864e308027fe142985fb76e62229e154d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Barenco_1995",
+      "source_url": "https://arxiv.org/pdf/quant-ph/9503016v1",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_01.txt",
+      "bytes": 2019,
+      "sha256": "dd5f4f054e7d9087b4c633b205515c1a90435f4400195a015be1f83729b3d2d3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_02.txt",
+      "bytes": 3114,
+      "sha256": "c72f828f4147e7b7c157ab33027f201f06db008557dc65cc51428c35d4f2232e",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_03.txt",
+      "bytes": 2927,
+      "sha256": "d78fae639083ce6a729a6dd842eb6153e25dd196e6f53e1f21465debe4eff43a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_04.txt",
+      "bytes": 2814,
+      "sha256": "f989abf71bd33ff66bb83f01660e37eb1cba773cc334fffe05b1b3a8160b852d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_05.txt",
+      "bytes": 2159,
+      "sha256": "d25bc32fc66ea48b6df463048819fd9bcf302a6021ea5b2f73c5647bdd64831e",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_06.txt",
+      "bytes": 2506,
+      "sha256": "5efe32b440d825b5c1cca397b1dbd8f18ee048859339b494a546083e4110778d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_07.txt",
+      "bytes": 1949,
+      "sha256": "ca630b965c173a29ad28e68a91a4833729962dd932f3011dded3b72a0722228a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_08.txt",
+      "bytes": 2288,
+      "sha256": "c717170070be3e7bc04e382e8be51a4215c8c6f4acf394b4b31340da9bf37b95",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_09.txt",
+      "bytes": 2390,
+      "sha256": "60525837dd22e9d87f0d9495827d0949759009625afcd40f7145fef510d6d577",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_10.txt",
+      "bytes": 3093,
+      "sha256": "12cdef0bb7d1d8715c5656925ef3f730705e059cb994c3461d11bede2ab071bc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_11.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_11.txt",
+      "bytes": 2641,
+      "sha256": "61f1a92d27767da97face0263e43dc7e3b973aa3a3f7d26ca9e5353f1bcc1a3d",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_12.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_12.txt",
+      "bytes": 2210,
+      "sha256": "2fcddb56620a2b3f487690da5ff54d05aecb8637d68cc38742fdac2f9c388de2",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_13.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_13.txt",
+      "bytes": 2491,
+      "sha256": "d59cf9bccbb1cf8629f25aa217c671f7a4a2163e7144029a2a7b90981f1c9b97",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_14.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_14.txt",
+      "bytes": 1749,
+      "sha256": "79fbdfd35d51b14d052f4bf5256e7697acbbb286620863fac0112d58b0e5dc01",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_15.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_15.txt",
+      "bytes": 2347,
+      "sha256": "710057df4cb0f4770a3ee55c78b682e15019145b627e2e45384a25bbcaa31375",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_16.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_16.txt",
+      "bytes": 1905,
+      "sha256": "5745ca0f3b814427b652f4e90f9df84182fd8403cf7a3a985bcad0545bc2d06a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_17.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_17.txt",
+      "bytes": 1690,
+      "sha256": "689bfccd070b3d46459948de5bfaa3509733d9e0bf1ce04cba5ace8b99b4dc15",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_18.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_18.txt",
+      "bytes": 2088,
+      "sha256": "29f2a4df4fb52a907df3481877820e3830369d623a6c68df70f8803fe2f02fc3",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_19.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_19.txt",
+      "bytes": 2072,
+      "sha256": "12ba167a810c0aa8cf7a041cd202d8b24f22e201fd3f10e81c50fa7a73a0086a",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_20.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_20.txt",
+      "bytes": 1846,
+      "sha256": "fb1912b14ac45447b99a9abd67be78d803104d71ff62292c4b15eafcea22cc94",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_21.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_21.txt",
+      "bytes": 2477,
+      "sha256": "dd6dd9341b55dfe110f5ccd7330818e142bf8f2812872031d637ce6ee8107ede",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_22.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_22.txt",
+      "bytes": 2978,
+      "sha256": "b133cef951aa6c7b1a94c7a7b92c8d0628270bc146b43d8dfa7d70c5eaf16ae9",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_23.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_23.txt",
+      "bytes": 2437,
+      "sha256": "4541ec39058bd0b6df45cfdd00a43321f027d438a1109a75a43a7e24ddb779bd",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_24.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_24.txt",
+      "bytes": 2740,
+      "sha256": "6306281374ddcd93aaa40c4b7e172f8fbf1f85b729c59974832aff80d17d8cbc",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_25.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/page_25.txt",
+      "bytes": 1322,
+      "sha256": "6e7e3b84d8cdf9453754b169e551baced51f8c5993c2d898903eb7abecdc7511",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/paper.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Kaye_2007/paper.pdf",
+      "bytes": 284286,
+      "sha256": "21cf0fed2c300a4466609116205c789b19e3aae6f2c7d61100cfd92a5fcf315f",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Kaye_2007",
+      "source_url": "https://arxiv.org/pdf/quant-ph/0703194v3",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/arxiv_1403_8143.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/arxiv_1403_8143.pdf",
+      "bytes": 614663,
+      "sha256": "ec578e7f3591ad1b5dde088aa3ee7353813f35454653f81445943899ae7a8bad",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_01.txt",
+      "bytes": 5579,
+      "sha256": "32d8baba1f8954b57e33e29a20e20e57922fc03250be97586bbc7f356c744cb1",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_02.txt",
+      "bytes": 5565,
+      "sha256": "26bb64130c39da821c4d0d42db9cb33e7fd67755e61b130e0256b217cba452ff",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_biased_memory_decisive_check/archive/candidate/literature/Ticozzi_Viola_2014/page_03.txt",
+      "bytes": 5347,
+      "sha256": "1f5996e89b25d3bf8601bea28906339720654c4c2b5759d5be2468f9ba5ddcf5",
+      "role": "complete authored candidate/review/root package; external assets separately excluded",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/arxiv_1403_8143.pdf": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/arxiv_1403_8143.pdf",
+      "bytes": 614663,
+      "sha256": "ec578e7f3591ad1b5dde088aa3ee7353813f35454653f81445943899ae7a8bad",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_full_paper",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_01.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_01.txt",
+      "bytes": 5579,
+      "sha256": "32d8baba1f8954b57e33e29a20e20e57922fc03250be97586bbc7f356c744cb1",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_02.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_02.txt",
+      "bytes": 5565,
+      "sha256": "26bb64130c39da821c4d0d42db9cb33e7fd67755e61b130e0256b217cba452ff",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_03.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_03.txt",
+      "bytes": 5347,
+      "sha256": "1f5996e89b25d3bf8601bea28906339720654c4c2b5759d5be2468f9ba5ddcf5",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_04.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_04.txt",
+      "bytes": 5346,
+      "sha256": "9fcf8a410c162d8ff32624ca7514fe31fb1b2e890b11c2351fa05894031789e5",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_05.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_05.txt",
+      "bytes": 5771,
+      "sha256": "f7df37bbf8d70ba169c16b8ddd56ceedba344c3c6cec5f61c233645b0942a613",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_06.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_06.txt",
+      "bytes": 6143,
+      "sha256": "36296c66e45e739282fdcf3e53e11c95b15477ce19c3f2e0d591f21ca4b72e39",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_07.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_07.txt",
+      "bytes": 4870,
+      "sha256": "67f780b445dda3047f122230654ec4ad099eed3b5d7c61fbd8489ca2829a964b",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_08.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_08.txt",
+      "bytes": 5065,
+      "sha256": "8f4f45f8a8b9b49ba802d969f129fc0b6038b2ab55d63a8d450e545dd15a9ea8",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_09.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_09.txt",
+      "bytes": 6386,
+      "sha256": "0dbafad381bc56747c4fe8bd9e20a9f8f33e174b4849dfb31595f5c1353dd2b1",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    },
+    "literature/purification_2014/page_10.txt": {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/literature/purification_2014/page_10.txt",
+      "bytes": 543,
+      "sha256": "252bbe4b63adab955c75d6cb116e81abc476bde44b00924a7321ee46236e1aa7",
+      "role": "local external literature source location; identity only",
+      "paper": "Ticozzi_Viola_2014",
+      "source_url": "https://arxiv.org/pdf/1403.8143",
+      "kind": "external_extracted_page",
+      "reason": "Full external paper/extracted text stays in local literature archives; no redistribution in this publication draft."
+    }
+  },
+  "scope": "All external PDF/page identities in selected source groups, including archived duplicates and original literature locations. Their complete bytes are not in this packet.",
+  "local_historical_evidence_preserved": true,
+  "external_byte_reconstruction_claimed": false
+}

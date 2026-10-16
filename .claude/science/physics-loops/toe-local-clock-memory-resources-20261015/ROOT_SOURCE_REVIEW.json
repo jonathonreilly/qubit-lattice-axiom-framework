@@ -1,0 +1,172 @@
+{
+  "completed": true,
+  "utc": "2026-10-15T11:18:37.576883+00:00",
+  "review_scope": "Full current20-file source/prose read plus all9 metadata programs and complete actual9 receipt streams; root closure7d55 verifies785files, original295files,619captured originals,28complete diffs/33modules/9metadata maps,25prior outer attempts and recursive paper exclusions. Exact accepted f463/f38/26220 mathematics and previous offline/procedure reads reused by identity. No scientific replay or retained audit. Full limitations in root READ_AND_LIMITS.md.",
+  "scientific_programs_run": 0,
+  "offline_source_review_complete": true,
+  "offline_source_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_offline_root_review/ACCEPTANCE.json",
+    "bytes": 2078,
+    "sha256": "50c947f3a6ef316e2255ef2b8d49bea7355c1490f432709ffe011399dcfb2125"
+  },
+  "offline_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_publication_draft/FINAL_FREEZE.json",
+    "bytes": 57204,
+    "sha256": "6a2f025501943ac7ba1b9ca3bbe094975801e7ef4d46cbde7f98f4d02f636727"
+  },
+  "integration_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/FINAL_FREEZE.json",
+    "bytes": 167153,
+    "sha256": "a018b112cd418598c19be3370ec9130a57d0b7827d457e4f70ec24a06dff4ea5"
+  },
+  "actual_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/MEMORY_ACTUAL_BINDING.json",
+    "bytes": 1702,
+    "sha256": "1789bf87ef4bc53f1f3704230635d96ebba3ebc05aa9b5d14365c79fd250f727"
+  },
+  "reviewed_files": {
+    "MEMORY_ASSUMPTIONS_AND_IMPORTS.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/MEMORY_ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2186,
+      "sha256": "e80b47787eea835a97db162536d452d1b9790612f463f060c12ad7697cd667e1"
+    },
+    "MEMORY_CLAIM_STATUS_CERTIFICATE.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/MEMORY_CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1180,
+      "sha256": "22889e9cc3273a4f25a9e192c38570c819c6c3bcb2a1d058edba63245db2481d"
+    },
+    "MEMORY_DEPENDENCIES.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/MEMORY_DEPENDENCIES.json",
+      "bytes": 1502,
+      "sha256": "df8bbac1b0dbf26bfc29a10546ccd6647c56ae18c9df20f577466f142a15f0f4"
+    },
+    "MEMORY_FRAMING.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/MEMORY_FRAMING.md",
+      "bytes": 12157,
+      "sha256": "c98c1612ee81fafb4b5207debc92e9742e754b408d91800702041f20f3d54c3f"
+    },
+    "MEMORY_PR_BODY.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/MEMORY_PR_BODY.md",
+      "bytes": 1215,
+      "sha256": "89ac24a053efb45a4138af6bfad661a6a8ac66daf1bced928cef7ee4e9d87c0f"
+    },
+    "bind_memory_branch.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/bind_memory_branch.py",
+      "bytes": 860,
+      "sha256": "61241d046f1f08a2e60aa8763ae7229adb6cdfb23d08d1f043bbfcbc7d369684"
+    },
+    "build_memory_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/build_memory_source.py",
+      "bytes": 8752,
+      "sha256": "85d8a90e020e6ba3b5fde326ab4e1377958af642604db682b673b02a27131e2e"
+    },
+    "check_memory_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/check_memory_graph.py",
+      "bytes": 1765,
+      "sha256": "8d0dbb742b9beb1dfb00fc99cd9aa3458560ffb92367f2865926ba5344d5ad1c"
+    },
+    "check_memory_primary_mutations.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/check_memory_primary_mutations.py",
+      "bytes": 5523,
+      "sha256": "6792eea6b51e2bffe9399388003391d13a07f3f9c9a0bde5956803bf2543e947"
+    },
+    "common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+    },
+    "execute_memory_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/execute_memory_cache.py",
+      "bytes": 1995,
+      "sha256": "68c38a04e52ffd067df98f7c1e9219e57d4c6b24a3b5045554e2fedaba2de471"
+    },
+    "install_memory.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/install_memory.py",
+      "bytes": 4381,
+      "sha256": "36edc801ce121f37b689b4b4b2dbc2d973cf47a22eb88b8df79183dd7857af7f"
+    },
+    "memory_common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/memory_common.py",
+      "bytes": 12571,
+      "sha256": "c9b57300fa9702d4bc2c9d90b4eaef67d0562ae0bbe49456e6d3574ca3160354"
+    },
+    "memory_primary.template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/memory_primary.template.py",
+      "bytes": 10410,
+      "sha256": "ecd5be08b8e54a35c4ae66ecb9f6a3b63106604d11a0003de8edf7164d392403"
+    },
+    "package_memory.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/package_memory.py",
+      "bytes": 6589,
+      "sha256": "5cc4c952f3c915fe64dfcf8036c4aa84d9a2259feab35a17845b7d873c9f9735"
+    },
+    "prepare_memory_root.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/prepare_memory_root.py",
+      "bytes": 2065,
+      "sha256": "44562852a2e036ca58cdfd6ce17f8f75a87cba92bb6fc76dce44a86529d3fc05"
+    },
+    "publish_memory.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/publish_memory.py",
+      "bytes": 2781,
+      "sha256": "a1e2335de761ee6ad6afad7e7916407fffb0dbfc8c40b1d5382cac81c2d74806"
+    },
+    "run_memory_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/run_memory_graph.py",
+      "bytes": 362,
+      "sha256": "bca9428e2d3b19c51e6faf84d5d038aa0da313c62e00c1dff68b61081834add8"
+    },
+    "verify_memory_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/verify_memory_publication.py",
+      "bytes": 9608,
+      "sha256": "0c89eea3ae16719697a961d5a555163ffe5d25d11d63357e80ef11ce1d96fb66"
+    },
+    "write_memory_publication_text.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_memory_resources_integration_draft/proposals/write_memory_publication_text.py",
+      "bytes": 5841,
+      "sha256": "70aefc0ea894d883671e7b3e27deb166d2dd286e1a5dda5e3f9941f72e788af0"
+    }
+  },
+  "repository_procedures": {
+    "scripts/runner_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/runner_cache.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    "docs/audit/scripts/run_citation_graph_build.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/run_citation_graph_build.py",
+      "bytes": 6826,
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    "docs/audit/scripts/write_citation_graph_manifest.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    "scripts/vocab_lint.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/vocab_lint.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+    },
+    "docs/audit/scripts/check_changed_audit_evidence.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+    }
+  },
+  "actual_source_record_paths": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_integration_root_review/close_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_integration_root_review/SOURCE_CLOSURE.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_integration_root_review/READ_AND_LIMITS.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_integration_root_review/bind_review.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_integration_root_review/REF_OBSERVATION.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/memory_main_sync_1049/SUMMARY.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_source_close_1117/EXECUTION.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_source_close_1117/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_source_close_1117/stdout",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_source_close_1117/stderr",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_binding_1118/EXECUTION.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_binding_1118/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_binding_1118/stdout",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/memory_root_binding_1118/stderr"
+  ]
+}

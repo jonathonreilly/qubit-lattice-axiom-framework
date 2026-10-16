@@ -1,0 +1,351 @@
+{
+  "utc": "2026-10-15T10:19:25.427399+00:00",
+  "base_head": "294d3e762232aeec754e94b0b2da5b011f682b44",
+  "branch": "physics-loop/toe-finite-reservoir-clock-preparation-20261015",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_reservoir_boundary_clock_preparation_2026_10_15.py",
+    "bytes": 26841,
+    "sha256": "1656f09364520673460d0e676a42b6067a1b55a9d72b32b20dcca285c5e94811"
+  },
+  "canonical_cache_fresh": true,
+  "declared_timeout_sec": 60,
+  "scientific_programs_run": 0,
+  "compiled_live_python": [
+    "scripts/finite_reservoir_boundary_clock_preparation_2026_10_15.py"
+  ],
+  "vocabulary_files": 17,
+  "vocabulary_did_not_change_source": true,
+  "tracked_input_closure": 105,
+  "checked_markdown_links": [
+    {
+      "source": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "target": "FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "resolved": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    }
+  ],
+  "all_archive_originals_decoded": true,
+  "focused_ledger_checker_result": {
+    "base": "HEAD",
+    "changed_path_count": 522,
+    "checked": [],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "index_before_after_focused_checker_equal": true,
+  "focused_checker_scope": "Per-unit compatibility; an empty checked set is not scientific audit.",
+  "source_and_graph_checks": "Actual canonical source binding, review pin closure and full graph preservation in publication evidence.",
+  "extra_original_evidence": {
+    "publication_integration/verify_reservoir_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/verify_reservoir_publication.py",
+      "bytes": 9573,
+      "sha256": "5fbb98c9433938264547e2562f3ee6a0f0cc51d4da49eb7fcddc0441c2468036",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/5fbb98c9433938264547e2562f3ee6a0f0cc51d4da49eb7fcddc0441c2468036.gz"
+    },
+    "publication_integration/reservoir/python_compile/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/EXECUTION.json",
+      "bytes": 1452,
+      "sha256": "6eebe32e8c1bf61e3910cbdfee9bc61e22c19074f54f4a4fb36ba653634506de",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/6eebe32e8c1bf61e3910cbdfee9bc61e22c19074f54f4a4fb36ba653634506de.gz"
+    },
+    "publication_integration/reservoir/python_compile/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/python_compile/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/vocab_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/EXECUTION.json",
+      "bytes": 3100,
+      "sha256": "9d25331559b8129371f5f63497176f03e2e08efb4cf6ea1751f6421f6be3a135",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/9d25331559b8129371f5f63497176f03e2e08efb4cf6ea1751f6421f6be3a135.gz"
+    },
+    "publication_integration/reservoir/vocab_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/reservoir/vocab_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/vocab_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/reservoir/vocab_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/EXECUTION.json",
+      "bytes": 3114,
+      "sha256": "ea621de39e4b998a90bdeaab2f2921e66d5ff3d7502212d4dccb9f8a140c9727",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/ea621de39e4b998a90bdeaab2f2921e66d5ff3d7502212d4dccb9f8a140c9727.gz"
+    },
+    "publication_integration/reservoir/vocab_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/reservoir/vocab_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/vocab_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/reservoir/changed_evidence/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/EXECUTION.json",
+      "bytes": 1557,
+      "sha256": "1b01d69213c860f76cfb11d733c6b13f5bd4153e14cf2331652d3096245e0c0e",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/1b01d69213c860f76cfb11d733c6b13f5bd4153e14cf2331652d3096245e0c0e.gz"
+    },
+    "publication_integration/reservoir/changed_evidence/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/executed_source.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz"
+    },
+    "publication_integration/reservoir/changed_evidence/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/changed_evidence/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/stdout",
+      "bytes": 204,
+      "sha256": "2ca86c4a575c1e2f774fa79db58feb36cfd5793af8ccd69707ef089a36fa71a7",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/2ca86c4a575c1e2f774fa79db58feb36cfd5793af8ccd69707ef089a36fa71a7.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_fix/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/EXECUTION.json",
+      "bytes": 1565,
+      "sha256": "beed171a7326b570ad9a54fa61c0f6221b5601f8bbb2086b59643a3dfcfc14dd",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/beed171a7326b570ad9a54fa61c0f6221b5601f8bbb2086b59643a3dfcfc14dd.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_fix/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_fix/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_fix/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_report/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/EXECUTION.json",
+      "bytes": 1579,
+      "sha256": "d5d1bf4511b3638a6f96b3ec32951bdcb5d1562811bc48bb14e94890ef00536b",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/d5d1bf4511b3638a6f96b3ec32951bdcb5d1562811bc48bb14e94890ef00536b.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_report/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/executed_source.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_report/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "publication_integration/reservoir/vocab_final_history_report/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/stdout",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+    },
+    "runs/reservoir_package_actual/EXECUTION.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_package_actual/EXECUTION.json",
+      "bytes": 1443,
+      "sha256": "de2914192fd50df21dc73d8642f7f2e1e004af802491430eae2c3b80aa9dfe3b",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/de2914192fd50df21dc73d8642f7f2e1e004af802491430eae2c3b80aa9dfe3b.gz"
+    },
+    "runs/reservoir_package_actual/executed_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_package_actual/executed_source.py",
+      "bytes": 6273,
+      "sha256": "2293dcd5cd7f2e7d726745c889443766610fee1d1700f0f24e33571eb694b88e",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/2293dcd5cd7f2e7d726745c889443766610fee1d1700f0f24e33571eb694b88e.gz"
+    },
+    "runs/reservoir_package_actual/stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_package_actual/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    "runs/reservoir_package_actual/stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/reservoir_package_actual/stdout",
+      "bytes": 377,
+      "sha256": "1feec6a6f5032fbc7608723b5049e9987cc5eb7d584dc25b082875c9794e4da8",
+      "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/1feec6a6f5032fbc7608723b5049e9987cc5eb7d584dc25b082875c9794e4da8.gz"
+    }
+  },
+  "checks": {
+    "python_compile": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/EXECUTION.json",
+        "bytes": 1452,
+        "sha256": "6eebe32e8c1bf61e3910cbdfee9bc61e22c19074f54f4a4fb36ba653634506de",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/6eebe32e8c1bf61e3910cbdfee9bc61e22c19074f54f4a4fb36ba653634506de.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/python_compile/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_fix": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/EXECUTION.json",
+        "bytes": 3100,
+        "sha256": "9d25331559b8129371f5f63497176f03e2e08efb4cf6ea1751f6421f6be3a135",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/9d25331559b8129371f5f63497176f03e2e08efb4cf6ea1751f6421f6be3a135.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_fix/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_report": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/EXECUTION.json",
+        "bytes": 3114,
+        "sha256": "ea621de39e4b998a90bdeaab2f2921e66d5ff3d7502212d4dccb9f8a140c9727",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/ea621de39e4b998a90bdeaab2f2921e66d5ff3d7502212d4dccb9f8a140c9727.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_report/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "changed_evidence": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/EXECUTION.json",
+        "bytes": 1557,
+        "sha256": "1b01d69213c860f76cfb11d733c6b13f5bd4153e14cf2331652d3096245e0c0e",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/1b01d69213c860f76cfb11d733c6b13f5bd4153e14cf2331652d3096245e0c0e.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/stdout",
+        "bytes": 204,
+        "sha256": "2ca86c4a575c1e2f774fa79db58feb36cfd5793af8ccd69707ef089a36fa71a7",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/2ca86c4a575c1e2f774fa79db58feb36cfd5793af8ccd69707ef089a36fa71a7.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/changed_evidence/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_final_history_fix": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/EXECUTION.json",
+        "bytes": 1565,
+        "sha256": "beed171a7326b570ad9a54fa61c0f6221b5601f8bbb2086b59643a3dfcfc14dd",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/beed171a7326b570ad9a54fa61c0f6221b5601f8bbb2086b59643a3dfcfc14dd.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_fix/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    },
+    "vocab_final_history_report": {
+      "EXECUTION.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/EXECUTION.json",
+        "bytes": 1579,
+        "sha256": "d5d1bf4511b3638a6f96b3ec32951bdcb5d1562811bc48bb14e94890ef00536b",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/d5d1bf4511b3638a6f96b3ec32951bdcb5d1562811bc48bb14e94890ef00536b.gz"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/stdout",
+        "bytes": 81,
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/reservoir/vocab_final_history_report/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": ".claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/publication_archive/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+      }
+    }
+  },
+  "outstanding": [
+    "Combined full pipeline, strict audit lint and cumulative changed-evidence on an integrated current-main candidate.",
+    "Independent retained audit.",
+    "Supplied finite pure memory, vacancies, isolation, calibrated driven controls, timing and eventual recycling; no native realization."
+  ],
+  "science_merged": false,
+  "editable_prompt_files_changed": [],
+  "review_history_completion": {
+    "before": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/REVIEW_HISTORY.md",
+      "bytes": 4117,
+      "sha256": "087d503c4025f001e9862a3d6b7bb2411e46c77b4d42cd9cb01ef61cc4fd5834"
+    },
+    "after": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-finite-reservoir-clock-preparation-20261015/REVIEW_HISTORY.md",
+      "bytes": 5362,
+      "sha256": "5bca0088d5a5946bf3001b30e8171ea0266cc0a9e4a26ffd524e33d4f10a1ab4"
+    },
+    "scope": "Dated focused completion appendix; cumulative landing validation remains open."
+  }
+}

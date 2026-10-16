@@ -1,0 +1,13 @@
+{
+  "schema": "reset-root-control-v1",
+  "feature_branch": "physics-loop/toe-installed-clock-reset-20261015",
+  "base_branch": "physics-loop/toe-static-historical-reader-20261015",
+  "head": "88b08187750d0ffa795f166c1d94cd2245b048c9",
+  "tree": "be56ff51df547e5db210f9119bd2f82c66f28629",
+  "parent_pr": 9596,
+  "main_ref": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "execution_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_reset_preparation_execution_20261015",
+  "root_review_file": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/reset_integration_root_review/ROOT_SOURCE_REVIEW.json",
+  "status": "Actual clean static-reader parent observed; live bind rechecks parent PR, duplicates, refs and procedures before mutation."
+}

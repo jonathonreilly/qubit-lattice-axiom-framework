@@ -1,0 +1,26 @@
+{
+  "schema": "compensated-preparation-body-map-v1",
+  "raw_candidate_modified": false,
+  "candidate": {
+    "start": 12121,
+    "end": 48637,
+    "bytes": 36516,
+    "sha256": "e3f8baf1f1c1d674a8ef22668356f245fc19716d5a4cf53279cd8f994ad02273"
+  },
+  "channel_refinement": {
+    "start": 7694,
+    "end": 12081,
+    "bytes": 4387,
+    "sha256": "73a4fd22733b901259ef6aaf7b12a72e465930dadcf843d82ab770274a8b7310",
+    "source_role": "source_review",
+    "source_start": 4617,
+    "source_end": 9004,
+    "separate_channel_only_claim": true
+  },
+  "parent_raw_body": {
+    "start": 14549,
+    "end": 41771,
+    "bytes": 27222,
+    "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4"
+  }
+}

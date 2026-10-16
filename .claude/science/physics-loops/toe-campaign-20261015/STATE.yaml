@@ -1,0 +1,16 @@
+loop: toe-campaign-20261015
+branch: claude/toe-campaign-24h-20261015
+base: claude/rules-hygiene-20261015 (from origin/main bbada1fe0)
+window: 2026-10-15T23:30Z .. 2026-10-16T23:00Z
+mode: campaign
+target: best-honest-status
+active_block: B1-covariant-qubit-walks
+blocks:
+  B1-covariant-qubit-walks:
+    status: in_progress
+    results_so_far:
+      - "EXACT: soldered O-covariant one-qubit unitary walks with 27-point (Chebyshev range 1) stencil are +-1 times a phase (Groebner basis over Q, valid over C)."
+      - "NUMERICAL: T-covariant (tetrahedral) cube-stencil walks: no moving solution found (best residual 0.088, 200 starts)."
+    running:
+      - "subgroup scan of moving-walk existence (D2..O) on cube stencil"
+      - "Groebner basis for O-covariant range-2-per-axis stencil (125 points)"

@@ -1,0 +1,97 @@
+{
+  "at_utc": "2026-10-16T15:53:53.566946+00:00",
+  "scope": "Focused delivery checks; full pipeline, strict audit lint, changed-evidence and formal audit are not run.",
+  "vocabulary": [
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "-B",
+        "scripts/vocab_lint.py",
+        "--fix",
+        "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+        "scripts/scalar_kinetic_background.py",
+        "scripts/scalar_kinetic_phase.py",
+        "scripts/scalar_kinetic_response.py",
+        "scripts/scalar_kinetic_response_core.py",
+        "scripts/scalar_kinetic_weak.py",
+        "scripts/scalar_kinetic_zero.py",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/APPROACH_REGISTRY.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ARTIFACT_PLAN.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ASSUMPTIONS_AND_IMPORTS.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/CLAIM_STATUS_CERTIFICATE.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/CLUSTER_VALUE_v1.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/EVIDENCE_INDEX.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/GOAL.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/HANDOFF.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/INTEGRATION_REVIEW_v1.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/LITERATURE_BRIDGES.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/PR_BACKLOG.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ROUTE_PORTFOLIO.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/TRACE_GATE.md"
+      ],
+      "exit_code": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "-B",
+        "scripts/vocab_lint.py",
+        "--report-only",
+        "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+        "scripts/scalar_kinetic_background.py",
+        "scripts/scalar_kinetic_phase.py",
+        "scripts/scalar_kinetic_response.py",
+        "scripts/scalar_kinetic_response_core.py",
+        "scripts/scalar_kinetic_weak.py",
+        "scripts/scalar_kinetic_zero.py",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/APPROACH_REGISTRY.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ARTIFACT_PLAN.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ASSUMPTIONS_AND_IMPORTS.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/CLAIM_STATUS_CERTIFICATE.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/CLUSTER_VALUE_v1.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/EVIDENCE_INDEX.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/GOAL.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/HANDOFF.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/INTEGRATION_REVIEW_v1.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/LITERATURE_BRIDGES.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/PR_BACKLOG.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/ROUTE_PORTFOLIO.md",
+        ".claude/science/physics-loops/scalar-kinetic-response-20261016/TRACE_GATE.md"
+      ],
+      "exit_code": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+      "stderr": ""
+    }
+  ],
+  "compiled_python": [
+    "scripts/scalar_kinetic_background.py",
+    "scripts/scalar_kinetic_phase.py",
+    "scripts/scalar_kinetic_response.py",
+    "scripts/scalar_kinetic_response_core.py",
+    "scripts/scalar_kinetic_weak.py",
+    "scripts/scalar_kinetic_zero.py"
+  ],
+  "local_links": [
+    {
+      "file": "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "href": "../scripts/scalar_kinetic_response.py",
+      "exists": true
+    },
+    {
+      "file": "docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "href": "../outputs/scalar_kinetic_response/result.json",
+      "exists": true
+    }
+  ],
+  "publication_base": "2dd8eef1ea1dc9e77c0744ceb150a75728e2dc58",
+  "latest_read_main": "dd16171663343dbdeb21adea70ab5e08b3a3a8df",
+  "shared_landing_validation": "pending"
+}

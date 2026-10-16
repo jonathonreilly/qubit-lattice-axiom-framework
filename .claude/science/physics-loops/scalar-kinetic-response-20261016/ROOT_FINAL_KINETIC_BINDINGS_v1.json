@@ -1,0 +1,330 @@
+{
+  "at_utc": "2026-10-16T15:51:53.456833+00:00",
+  "scope": "Root verifies bytes after reading complete final comparison/integration/cluster reports. Static identity, not scientific replay.",
+  "checks": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_DERIVATION_v1.md",
+      "expected": "cb0d42e2a504e411af58fb90d42129a78b0b8e983848f2b17d80069818c8fe8a",
+      "actual": "cb0d42e2a504e411af58fb90d42129a78b0b8e983848f2b17d80069818c8fe8a",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_general_kinetic_photon_v1.py",
+      "expected": "4246f13b83e1517bf6c5856945ea7a7087925efc7fb1c87e48046a9a86b34bee",
+      "actual": "4246f13b83e1517bf6c5856945ea7a7087925efc7fb1c87e48046a9a86b34bee",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_CONTROLS_v1.json",
+      "expected": "be7d93cb0f0cbd353c80b9a630f514903504e1c46b7423b2f2899c3c8246c217",
+      "actual": "be7d93cb0f0cbd353c80b9a630f514903504e1c46b7423b2f2899c3c8246c217",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_CONTROLS_v1.stderr.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_EXECUTION_v1.json",
+      "expected": "27f0fb2ae739e3c2225e6e8d8c49fbbf7b211c8435ba1d28150eab1a51d8a813",
+      "actual": "27f0fb2ae739e3c2225e6e8d8c49fbbf7b211c8435ba1d28150eab1a51d8a813",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_DERIVATION_FREEZE_v1.json",
+      "expected": "afa81ee589240d1b1f8cc27b8402e2c05a04e1e72661a01251233e7d320047e3",
+      "actual": "afa81ee589240d1b1f8cc27b8402e2c05a04e1e72661a01251233e7d320047e3",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/GENERAL_KINETIC_PHOTON_SOURCE_FREEZE_v1.json",
+      "expected": "12dd42d7cc0a0c6aaf93fb0853edcdd3cb69ceb1a90012e61eb900be957d48eb",
+      "actual": "12dd42d7cc0a0c6aaf93fb0853edcdd3cb69ceb1a90012e61eb900be957d48eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_SOURCES_v1.json",
+      "expected": "73a927210ade59d28015c2920e858f49348b6a780094cecd39acc7d0085d93a3",
+      "actual": "73a927210ade59d28015c2920e858f49348b6a780094cecd39acc7d0085d93a3",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/check_comparison_v1.py",
+      "expected": "a5225270f1fc67c87a5a7b71b9697521246d9299dbdfde102916f34f201b2729",
+      "actual": "a5225270f1fc67c87a5a7b71b9697521246d9299dbdfde102916f34f201b2729",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/comparison_stdout_v1.json",
+      "expected": "6581a6415a180dd0fb9ff874b763c944f9504b963f11abe5fa90a78a7ba155e9",
+      "actual": "6581a6415a180dd0fb9ff874b763c944f9504b963f11abe5fa90a78a7ba155e9",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/comparison_stderr_v1.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/author_stdout_v1.json",
+      "expected": "db1d130d96d6241c5171c64c8a2a251f4bf2b3bdd82a04e96712867496c8d095",
+      "actual": "db1d130d96d6241c5171c64c8a2a251f4bf2b3bdd82a04e96712867496c8d095",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/author_stderr_v1.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_RECEIPTS_v1.json",
+      "expected": "725ae05c89e2c3ac950434047c44c9b07efe4cf109bafdddcabf5c6e73abe4a5",
+      "actual": "725ae05c89e2c3ac950434047c44c9b07efe4cf109bafdddcabf5c6e73abe4a5",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_curvature_weak/COMPARISON_REPORT_v1.md",
+      "expected": "de27f2ac0bf3fa20887b7f6827ee78ce44fb146e6fdb17e83b97cd612835dc13",
+      "actual": "de27f2ac0bf3fa20887b7f6827ee78ce44fb146e6fdb17e83b97cd612835dc13",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "expected": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "actual": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_response.py",
+      "expected": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+      "actual": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_background.py",
+      "expected": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+      "actual": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_response_core.py",
+      "expected": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+      "actual": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_zero.py",
+      "expected": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+      "actual": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_phase.py",
+      "expected": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+      "actual": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/scripts/scalar_kinetic_weak.py",
+      "expected": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01",
+      "actual": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/outputs/scalar_kinetic_response/result.json",
+      "expected": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "actual": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "expected": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+      "actual": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/EXPOSURE_v1.json",
+      "expected": "83e44640068b0c6626adf5c1c8b122c922c28f947b5192bdb13993a7ad3db573",
+      "actual": "83e44640068b0c6626adf5c1c8b122c922c28f947b5192bdb13993a7ad3db573",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CORRESPONDENCE_v1.json",
+      "expected": "891386697f5d7d34f4c4159a0609c01cbe55104799981e0545120ed0c393fc62",
+      "actual": "891386697f5d7d34f4c4159a0609c01cbe55104799981e0545120ed0c393fc62",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_PROCEDURE_SOURCE_v1.json",
+      "expected": "ea89183fdba897ddb16fc383741cc44c9ca71f16442c76b1c8973161491e99e3",
+      "actual": "ea89183fdba897ddb16fc383741cc44c9ca71f16442c76b1c8973161491e99e3",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/INTEGRATION_REVIEW_v1.md",
+      "expected": "b98fc73afeb9d29c98cff903098b1db3da513a60e5d23c76ee7a7b432a506e55",
+      "actual": "b98fc73afeb9d29c98cff903098b1db3da513a60e5d23c76ee7a7b432a506e55",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_VALUE_v1.md",
+      "expected": "152aa5a9c9f035a41ffeaac675ee0c5c4507d769fa011f35ec366dae4e18e0c0",
+      "actual": "152aa5a9c9f035a41ffeaac675ee0c5c4507d769fa011f35ec366dae4e18e0c0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/PROOF_BEFORE_CODE_v1.md",
+      "expected": "c9013323a284a120dafc91fae69ee639c41a43490e0e198df619976fc63b802a",
+      "actual": "c9013323a284a120dafc91fae69ee639c41a43490e0e198df619976fc63b802a",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/OUTPUT_FREEZE_v1.json",
+      "expected": "1bb6b979d0e0dd72c5d7a97fc94683f4ac0250603e81208bf62b8fb3d7c975b4",
+      "actual": "1bb6b979d0e0dd72c5d7a97fc94683f4ac0250603e81208bf62b8fb3d7c975b4",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/COMPARISON_REPORT_v1.md",
+      "expected": "bb10125292f25c58fca24782ec132dacca06e2d89240df33f5d87adfa4bcb31d",
+      "actual": "bb10125292f25c58fca24782ec132dacca06e2d89240df33f5d87adfa4bcb31d",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/COMPARISON_IDENTITY_v1.json",
+      "expected": "62e3040950aa75b2bc709b489d6fb8188d238e583f58d69e188da8ea0ef5234f",
+      "actual": "62e3040950aa75b2bc709b489d6fb8188d238e583f58d69e188da8ea0ef5234f",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_v1.md",
+      "expected": "aa6db1a1bd5c2e7ca4d1971af515d6323d675be667d31af05d034ab5190b4d23",
+      "actual": "aa6db1a1bd5c2e7ca4d1971af515d6323d675be667d31af05d034ab5190b4d23",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_general_kinetic_background/REAL_PHASE_JETS_COMPARISON_IDENTITY_v1.json",
+      "expected": "4ab8a28dec9a551345eb172eaa204d5cd6ad3f5e1d2f1dbb05cb3204462f0105",
+      "actual": "4ab8a28dec9a551345eb172eaa204d5cd6ad3f5e1d2f1dbb05cb3204462f0105",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/AGENTS.md",
+      "expected": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "actual": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "expected": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "expected": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "actual": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "expected": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "actual": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "expected": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "expected": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "actual": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_result.json",
+      "expected": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "actual": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_background.py",
+      "expected": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+      "actual": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_phase.py",
+      "expected": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+      "actual": "8e885688bd5a70b15ad06321647df1672c9e7b2abfa01a1069115fa92fce4864",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response.py",
+      "expected": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+      "actual": "8aad6fa4cdb8b5ed5e09d7a3fa87762c7722275acc095fdc93560dc9b8b2a9a2",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_response_core.py",
+      "expected": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+      "actual": "2cb9263f0841849bbf393a06c293f8f45169530e2fdfce7f0ceadcf2ac5d0d28",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_weak.py",
+      "expected": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01",
+      "actual": "dce72839ce95df00cff487bd9a71311d061a4a3f6d3c8852757150d354b69d01",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CURRENT_scalar_kinetic_zero.py",
+      "expected": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+      "actual": "69e8f5bec95b2a0c0537a2df2ddf1071ad23de665dd5445dbbb1d4e87be3bc97",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/HISTORICAL_PRE_TIMEOUT_result.json",
+      "expected": "6a5eae242d12569bd5bfb39de71ad3d218c000f78379bbfdd6341c536f067bde",
+      "actual": "6a5eae242d12569bd5bfb39de71ad3d218c000f78379bbfdd6341c536f067bde",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_VALUE_v1.md",
+      "expected": "152aa5a9c9f035a41ffeaac675ee0c5c4507d769fa011f35ec366dae4e18e0c0",
+      "actual": "152aa5a9c9f035a41ffeaac675ee0c5c4507d769fa011f35ec366dae4e18e0c0",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/docs/SCALAR_KINETIC_RESPONSE_NOTE_2026-10-16.md",
+      "expected": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "actual": "baa1ae9f2bffb4eb451d11db7aa3faf1a42eacaf0396ca37d40ad6c5ad74fb9e",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-kinetic-response-20261016/New Axioms Lets Go/outputs/scalar_kinetic_response/result.json",
+      "expected": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "actual": "fa945220248ef0b41b65e5f39d5e5a425c8ce98983e19a671aa64ddb2109136d",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md",
+      "expected": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+      "actual": "84b2a556a3e68ba37be48d8c8d2368766bec89954ea1f490ad3ef948df187631",
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_canonical_kinetic_response/CLUSTER_PROCEDURE_SOURCE_v1.json",
+      "expected": "ea89183fdba897ddb16fc383741cc44c9ca71f16442c76b1c8973161491e99e3",
+      "actual": "ea89183fdba897ddb16fc383741cc44c9ca71f16442c76b1c8973161491e99e3",
+      "matches": true
+    }
+  ]
+}

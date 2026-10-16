@@ -1,0 +1,5 @@
+# Assumptions and imports
+
+The scientific note separates role, provenance and open bridge for each premise. Adopted: Einstein gravity, one differentiable Q(zeta,Y), universal exp(zeta) pressureless matter coupling, linear scalar sector and homogeneous flat background. Conditional inputs: registered a,q,G,R,P,J,Z and their phases, controlled derivatives or declared weak-integral weights, clock/distance and species correspondence. Positivity and nonzero-denominator conditions are local. The M=1,t0=1 fixture is a convention, not a scale prediction.
+
+The canonical kinetic choice is replaced by an identifiable normalized derivative on sufficiently informative records. The unknown bare-density contrast is eliminated and subsequently reconstructed. The action/species class, actual extraction of the records, absolute scale, initial-state origin and off-trajectory extension remain open. None is hidden as a fitted selector. The current primitive registry was checked: scale reference, kinetic isotropy and pointwise realized-state evaluation do not supply these additional physical identifications. No primitive or authority surface is amended.

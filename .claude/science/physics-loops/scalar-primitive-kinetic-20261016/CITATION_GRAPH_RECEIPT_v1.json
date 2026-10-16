@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-16T16:40:25.348585+00:00",
+  "base_commit": "c64cf5df6206bb5363f8b4504999bd72ebe4d85d",
+  "added_nodes": [
+    "scalar_primitive_kinetic_note_2026-10-16"
+  ],
+  "removed_nodes": [],
+  "changed_existing_nodes": [],
+  "edge_count": 16111,
+  "node_count": 7158,
+  "manifest_sha256": "10571c6db6c6902be5f1ce49623d35dca659693dfe94bbd5d3cce444bf1741f7",
+  "scope": "Serialized local graph build and manifest; topology adds only new conditional-support note, no shared landing or audit. The build was initiated by --help forwarded through wrapper; builder ran normally."
+}

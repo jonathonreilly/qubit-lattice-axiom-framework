@@ -1,0 +1,648 @@
+{
+  "at": "2026-10-16T16:40:25.305282+00:00",
+  "failed": 0,
+  "rows": [
+    {
+      "manifest": "independent_kinetic_primitive_photon/POST_EXPOSURE_MANIFEST_v1.json",
+      "manifest_sha256": "3b72a56d1a7af2963c8356cfa26216a5e31edcc2a369433d0be461b8c391157e",
+      "bindings_checked": 42,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_adjoints.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_adjoints.stdout.txt",
+          "expected": "fc77d317ec1a3786fd307871f289ac723df72442801a0ab1611e2e3faa5e2073",
+          "actual": "fc77d317ec1a3786fd307871f289ac723df72442801a0ab1611e2e3faa5e2073"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_bounds.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_bounds.stdout.txt",
+          "expected": "789d8448b6867901f87b30989cddfb544775f6a093c0c9d9660b4cb1409aa7a9",
+          "actual": "789d8448b6867901f87b30989cddfb544775f6a093c0c9d9660b4cb1409aa7a9"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_moment.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/ATTEMPT01_moment.stdout.txt",
+          "expected": "e8322d284178a351b454d104a0623c11767681d4488281778441460cdb893d21",
+          "actual": "e8322d284178a351b454d104a0623c11767681d4488281778441460cdb893d21"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/DERIVATION_BEFORE_CODE_v1.md",
+          "expected": "ca31d88d2f24d9c8e3e7dc64f3e3c598225759cb7a358ba1aa23be076b234b37",
+          "actual": "ca31d88d2f24d9c8e3e7dc64f3e3c598225759cb7a358ba1aa23be076b234b37"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/FAILURES_POST_AUTHOR_v1.json",
+          "expected": "38472c8e65c2e7878e281e2c1d28e359f3a8e08a6d7a4b66e1e204b424e6ccd5",
+          "actual": "38472c8e65c2e7878e281e2c1d28e359f3a8e08a6d7a4b66e1e204b424e6ccd5"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/FAILURES_PRE_AUTHOR_v1.json",
+          "expected": "b04a227049192956e395a00c9a4535d70516f9e5bdfb206b18c06d534466d5af",
+          "actual": "b04a227049192956e395a00c9a4535d70516f9e5bdfb206b18c06d534466d5af"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/INDEPENDENT_FREEZE_v1.json",
+          "expected": "c0169b30739ddccc8c086ee3be618a4f6680f156a02495b9a5e1ec9e1f2c13f6",
+          "actual": "c0169b30739ddccc8c086ee3be618a4f6680f156a02495b9a5e1ec9e1f2c13f6"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/INDEPENDENT_RUN_v1.json",
+          "expected": "4bdb79a01924d43f56c013ae8b5a97c350490ef2cdc5a57420a0244f9db76ebb",
+          "actual": "4bdb79a01924d43f56c013ae8b5a97c350490ef2cdc5a57420a0244f9db76ebb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/NEUTRAL_CONTRACT_v1.json",
+          "expected": "2d8f6e1cd697cd4f20195a406bfbdf3413ab8d2a313dbeeebf8c0174a2210233",
+          "actual": "2d8f6e1cd697cd4f20195a406bfbdf3413ab8d2a313dbeeebf8c0174a2210233"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_ATTEMPT01.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_ATTEMPT01.stdout.txt",
+          "expected": "dfd4702746ca26de74bafb42b8a67d64f4682bee575eee0df55b5df2e6a4769c",
+          "actual": "dfd4702746ca26de74bafb42b8a67d64f4682bee575eee0df55b5df2e6a4769c"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_EXPOSURE_ARGUMENT_v1.md",
+          "expected": "479998294e94ebfceab0245ed33d959faaf191072f8c49d938d0380fe8965979",
+          "actual": "479998294e94ebfceab0245ed33d959faaf191072f8c49d938d0380fe8965979"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_EXPOSURE_REPORT_v1.md",
+          "expected": "e2453052ecae0ad37b0674c5ba758ac559e1ae200e2a6d39060986301b58a4a1",
+          "actual": "e2453052ecae0ad37b0674c5ba758ac559e1ae200e2a6d39060986301b58a4a1"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_EXPOSURE_SOURCE_BINDINGS_v1.json",
+          "expected": "3c7a0b890cb4804915e1f18f6cc8a09a2020daa83190e33f9a6f57f72730d5cb",
+          "actual": "3c7a0b890cb4804915e1f18f6cc8a09a2020daa83190e33f9a6f57f72730d5cb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_EXPOSURE_SOURCE_BINDINGS_v3.json",
+          "expected": "9364a1826dc32dcab46afcaa619cc72265ec04eeb4170a6ab5f435845d770ef0",
+          "actual": "9364a1826dc32dcab46afcaa619cc72265ec04eeb4170a6ab5f435845d770ef0"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_RAY_CORRECTION_BINDING_v1.json",
+          "expected": "8797408a1e49ba4281564f2db8a97dc3c79e3e247fa9e180cff3097a40b887eb",
+          "actual": "8797408a1e49ba4281564f2db8a97dc3c79e3e247fa9e180cff3097a40b887eb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_RUN_v1.json",
+          "expected": "64a6dcc7c2130aba8acd3275368509fbd40e16fc3d1d2518117c08824988d32b",
+          "actual": "64a6dcc7c2130aba8acd3275368509fbd40e16fc3d1d2518117c08824988d32b"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_SOURCE_CLOSURE_v1.json",
+          "expected": "90df5633c7476e1da4f71f52751164a1460e6bbe464b6b8387fa8cada9eb3f23",
+          "actual": "90df5633c7476e1da4f71f52751164a1460e6bbe464b6b8387fa8cada9eb3f23"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_V3_ATTEMPT01.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_V3_ATTEMPT01.stdout.txt",
+          "expected": "7ad78166a6835270bcac0b370620ff53d93e9f0fb7f37c27c2608ad191ef5440",
+          "actual": "7ad78166a6835270bcac0b370620ff53d93e9f0fb7f37c27c2608ad191ef5440"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_V3_MOMENT_ARGUMENT_v1.md",
+          "expected": "c3c8c476a41df583823aea5a0c91ff3eccfee842768656a3330b863f3961e993",
+          "actual": "c3c8c476a41df583823aea5a0c91ff3eccfee842768656a3330b863f3961e993"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/POST_V3_RUN_v1.json",
+          "expected": "a19ace6a19641655b794540f5d9f59d927c393bb1dd16846ef29eb7fb813f325",
+          "actual": "a19ace6a19641655b794540f5d9f59d927c393bb1dd16846ef29eb7fb813f325"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/PRE_AUTHOR_CLOSURE_v1.json",
+          "expected": "29610aa607001c139412862f8e5349e975ce46203523e07142a5ca04e0d4cc2d",
+          "actual": "29610aa607001c139412862f8e5349e975ce46203523e07142a5ca04e0d4cc2d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/PRE_AUTHOR_FINDINGS_v1.md",
+          "expected": "55420e8aba651a9677399f978ecf984c31d09e499b18cbe62560233a0d3aa89d",
+          "actual": "55420e8aba651a9677399f978ecf984c31d09e499b18cbe62560233a0d3aa89d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/PRE_CODE_FREEZE_v1.json",
+          "expected": "299f912c094b48808fe8832f916d29a93380acdfe5b92867d21d071ac3a96dc4",
+          "actual": "299f912c094b48808fe8832f916d29a93380acdfe5b92867d21d071ac3a96dc4"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/check_kinetic_primitive_v1.py",
+          "expected": "68134959d8f5de6f29e862d12632c6c91a55ef8086547dfd2675f39b3d1f7c9e",
+          "actual": "68134959d8f5de6f29e862d12632c6c91a55ef8086547dfd2675f39b3d1f7c9e"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/check_post_exposure_v1.py",
+          "expected": "4ba2925e02b9d0fb43d59c35f67be6cd981252c2de082d7a05ee482136085f7c",
+          "actual": "4ba2925e02b9d0fb43d59c35f67be6cd981252c2de082d7a05ee482136085f7c"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/check_post_v3_moment_v1.py",
+          "expected": "d47479adcb32f8ee3f0d00ea58360055ab75e31f28091d8f10e5d44b3198cb8e",
+          "actual": "d47479adcb32f8ee3f0d00ea58360055ab75e31f28091d8f10e5d44b3198cb8e"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v1/KINETIC_PRIMITIVE_OPERATOR_PROBES_v1.md",
+          "expected": "689289b78aa523162b9337d9395155f47616d37ddc4e7cfa25c6f8f04b62b5b9",
+          "actual": "689289b78aa523162b9337d9395155f47616d37ddc4e7cfa25c6f8f04b62b5b9"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v1/KINETIC_PRIMITIVE_PHOTON_CONTROLS_v2.json",
+          "expected": "b5a7fec2f246701d2be20f06abe042c2e4c5ef46ade7066774e5ef7a2bc5d7f1",
+          "actual": "b5a7fec2f246701d2be20f06abe042c2e4c5ef46ade7066774e5ef7a2bc5d7f1"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v1/KINETIC_PRIMITIVE_PHOTON_DERIVATION_v1.md",
+          "expected": "1979979683f09637d1fe66240af81a52bbfa99aa2815eec9d7f768a0b6361c68",
+          "actual": "1979979683f09637d1fe66240af81a52bbfa99aa2815eec9d7f768a0b6361c68"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v1/check_kinetic_primitive_photon_v2.py",
+          "expected": "aeaff17b7fedd682c2b633301b4e28ad7fe5e9a3f3d9edd3f6c5c5cdb74763ab",
+          "actual": "aeaff17b7fedd682c2b633301b4e28ad7fe5e9a3f3d9edd3f6c5c5cdb74763ab"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v3/KINETIC_PRIMITIVE_ANGULAR_ERROR_CONTRACT_v1.md",
+          "expected": "7fecf447b1c9a51395dfe243d640edfb94709347983306c4c21e98201cfafea4",
+          "actual": "7fecf447b1c9a51395dfe243d640edfb94709347983306c4c21e98201cfafea4"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v3/KINETIC_PRIMITIVE_PHOTON_CONTROLS_v3.json",
+          "expected": "fc0ddaa78b802ab6753099f2c2cfcb8841153d6b24152033c340fe32560450c3",
+          "actual": "fc0ddaa78b802ab6753099f2c2cfcb8841153d6b24152033c340fe32560450c3"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v3/KINETIC_PRIMITIVE_RAY_DOMAIN_CORRECTION_v1.md",
+          "expected": "d16da374f6b5dc545c3548595351fe539a4d8ad0b3d24d21abfcd2673b5e451a",
+          "actual": "d16da374f6b5dc545c3548595351fe539a4d8ad0b3d24d21abfcd2673b5e451a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/post_author_sources_v3/check_kinetic_primitive_photon_v3.py",
+          "expected": "91a61402aa8ab2b94c7d5ee424aba66ecf1cb0d85c08274f6444a4fc9254b063",
+          "actual": "91a61402aa8ab2b94c7d5ee424aba66ecf1cb0d85c08274f6444a4fc9254b063"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/run_kinetic_primitive_v1.py",
+          "expected": "5943e15de13005b96727585f1e13d0a6319d721dc90abb860c6994a830647edb",
+          "actual": "5943e15de13005b96727585f1e13d0a6319d721dc90abb860c6994a830647edb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/run_post_exposure_v1.py",
+          "expected": "6efa71d3afd66479fffc63eaab1237cd90b7f8556977ab421aea1937637be4f5",
+          "actual": "6efa71d3afd66479fffc63eaab1237cd90b7f8556977ab421aea1937637be4f5"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/run_post_v3_moment_v1.py",
+          "expected": "732018c3376e7fe01ba7783bb3f774be3fda98c32862684186e39d51d0845f10",
+          "actual": "732018c3376e7fe01ba7783bb3f774be3fda98c32862684186e39d51d0845f10"
+        }
+      ]
+    },
+    {
+      "manifest": "independent_kinetic_primitive_photon/canonical_integration_v1/MANIFEST_v1.json",
+      "manifest_sha256": "33bfa99d0ec823adb66f4b820429d874b8fe7db277751b13d31697d86c3fd0d0",
+      "bindings_checked": 15,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/ATTEMPT01.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/ATTEMPT01.stdout.txt",
+          "expected": "844c62151a5aa05598e45716e2874f5a38a7de52e26141ba1041299c86c073b0",
+          "actual": "844c62151a5aa05598e45716e2874f5a38a7de52e26141ba1041299c86c073b0"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/CLOSURE_v1.json",
+          "expected": "30021513abb2a6b3ba3179bd35ecc2954bf55412e70aa1878543a4802e647941",
+          "actual": "30021513abb2a6b3ba3179bd35ecc2954bf55412e70aa1878543a4802e647941"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/FAILURES_v1.json",
+          "expected": "c72682ebf349b7baff7b78f7fde6e9d546f48e61934c39dd53d4afce43f16249",
+          "actual": "c72682ebf349b7baff7b78f7fde6e9d546f48e61934c39dd53d4afce43f16249"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/REPORT_v1.md",
+          "expected": "9e03cb5ebc9e6fb3539b9632798e6f9a23a1c644b4d7aae78d8804aa0eb69fc8",
+          "actual": "9e03cb5ebc9e6fb3539b9632798e6f9a23a1c644b4d7aae78d8804aa0eb69fc8"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/RUN_v1.json",
+          "expected": "87fa2a05f11ab5fbd25a86e13736668eca3599afeccf2d2ea889a8082c3f4c84",
+          "actual": "87fa2a05f11ab5fbd25a86e13736668eca3599afeccf2d2ea889a8082c3f4c84"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/SOURCE_BINDINGS_v1.json",
+          "expected": "a7ad8988d5e26964c5265d13c90e932155eb4aedff939e026363f47ae98b60bb",
+          "actual": "a7ad8988d5e26964c5265d13c90e932155eb4aedff939e026363f47ae98b60bb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/check_integration_v1.py",
+          "expected": "c90393476cd6cbafe7ff11defc2c8b3a48f79f7a24070e4adf5ed13592046855",
+          "actual": "c90393476cd6cbafe7ff11defc2c8b3a48f79f7a24070e4adf5ed13592046855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/run_integration_v1.py",
+          "expected": "f04ef5421aea0a328141a788f8f8477b3d92240aed617a6b4ae2817d43ef9972",
+          "actual": "f04ef5421aea0a328141a788f8f8477b3d92240aed617a6b4ae2817d43ef9972"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+          "expected": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51",
+          "actual": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/outputs/scalar_primitive_kinetic/result.json",
+          "expected": "f142d98b33c29cffb821c92c7e5ba4ac949fa3b0e0da269576fe15b06c7f9bc2",
+          "actual": "f142d98b33c29cffb821c92c7e5ba4ac949fa3b0e0da269576fe15b06c7f9bc2"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/scripts/scalar_primitive_kinetic.py",
+          "expected": "978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f",
+          "actual": "978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/scripts/scalar_primitive_kinetic_action.py",
+          "expected": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+          "actual": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/scripts/scalar_primitive_kinetic_bound.py",
+          "expected": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e",
+          "actual": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_photon/canonical_integration_v1/sources/scripts/scalar_primitive_kinetic_core.py",
+          "expected": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb",
+          "actual": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb"
+        }
+      ]
+    },
+    {
+      "manifest": "independent_kinetic_photon_witness/AUTHOR_COMPARISON_IDENTITY_v1.json",
+      "manifest_sha256": "8235016fde95f702cd001e525fde03696779968c2be1b5dee8065162218925de",
+      "bindings_checked": 40,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_COMPARISON_v1.md",
+          "expected": "6a51a163902ba80ef16916990be08e7032f8de67bddc39344b6ffa652164b71d",
+          "actual": "6a51a163902ba80ef16916990be08e7032f8de67bddc39344b6ffa652164b71d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_DERIVATION_v1.md",
+          "expected": "1979979683f09637d1fe66240af81a52bbfa99aa2815eec9d7f768a0b6361c68",
+          "actual": "1979979683f09637d1fe66240af81a52bbfa99aa2815eec9d7f768a0b6361c68"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_OPERATOR_PROBES_v1.md",
+          "expected": "689289b78aa523162b9337d9395155f47616d37ddc4e7cfa25c6f8f04b62b5b9",
+          "actual": "689289b78aa523162b9337d9395155f47616d37ddc4e7cfa25c6f8f04b62b5b9"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_RAY_DOMAIN_CORRECTION_v1.md",
+          "expected": "d16da374f6b5dc545c3548595351fe539a4d8ad0b3d24d21abfcd2673b5e451a",
+          "actual": "d16da374f6b5dc545c3548595351fe539a4d8ad0b3d24d21abfcd2673b5e451a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_ANGULAR_ERROR_CONTRACT_v1.md",
+          "expected": "7fecf447b1c9a51395dfe243d640edfb94709347983306c4c21e98201cfafea4",
+          "actual": "7fecf447b1c9a51395dfe243d640edfb94709347983306c4c21e98201cfafea4"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_primitive_photon_v2.py",
+          "expected": "aeaff17b7fedd682c2b633301b4e28ad7fe5e9a3f3d9edd3f6c5c5cdb74763ab",
+          "actual": "aeaff17b7fedd682c2b633301b4e28ad7fe5e9a3f3d9edd3f6c5c5cdb74763ab"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_CONTROLS_v2.json",
+          "expected": "b5a7fec2f246701d2be20f06abe042c2e4c5ef46ade7066774e5ef7a2bc5d7f1",
+          "actual": "b5a7fec2f246701d2be20f06abe042c2e4c5ef46ade7066774e5ef7a2bc5d7f1"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_EXECUTION_v2.json",
+          "expected": "2d113b9dd6c5b9a85be90d11f6b3725019f69f091bf04c126288164d5acbb59f",
+          "actual": "2d113b9dd6c5b9a85be90d11f6b3725019f69f091bf04c126288164d5acbb59f"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_SOURCE_FREEZE_v2.json",
+          "expected": "acf0fa1aa21565d65b3955a35b0add3fb8733b06565e79c68a692be4f2324932",
+          "actual": "acf0fa1aa21565d65b3955a35b0add3fb8733b06565e79c68a692be4f2324932"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_STDERR_v2.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_kinetic_primitive_photon_v3.py",
+          "expected": "91a61402aa8ab2b94c7d5ee424aba66ecf1cb0d85c08274f6444a4fc9254b063",
+          "actual": "91a61402aa8ab2b94c7d5ee424aba66ecf1cb0d85c08274f6444a4fc9254b063"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_CONTROLS_v3.json",
+          "expected": "fc0ddaa78b802ab6753099f2c2cfcb8841153d6b24152033c340fe32560450c3",
+          "actual": "fc0ddaa78b802ab6753099f2c2cfcb8841153d6b24152033c340fe32560450c3"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_EXECUTION_v3.json",
+          "expected": "b5e0b6325536e63311775465346b3139ec250f9bfd456438b4e609ae080470bc",
+          "actual": "b5e0b6325536e63311775465346b3139ec250f9bfd456438b4e609ae080470bc"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_SOURCE_FREEZE_v3.json",
+          "expected": "486010b59613a48dd3625af46a134aa1f6c717c17a5f12e2dc697a1eed694b5f",
+          "actual": "486010b59613a48dd3625af46a134aa1f6c717c17a5f12e2dc697a1eed694b5f"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/KINETIC_PRIMITIVE_PHOTON_STDERR_v3.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_CORRESPONDENCE_CODE_FREEZE_v1.json",
+          "expected": "42d243dc7fc12c0d6a2e7e750812a3b377c5f73d8a9019eab5709e55a2b3504e",
+          "actual": "42d243dc7fc12c0d6a2e7e750812a3b377c5f73d8a9019eab5709e55a2b3504e"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_CORRESPONDENCE_CONTROLS_v1.json",
+          "expected": "5ad0dd86561a219e7cbb509892556fd726d0d3d29d78547849f606ae607471ba",
+          "actual": "5ad0dd86561a219e7cbb509892556fd726d0d3d29d78547849f606ae607471ba"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_CORRESPONDENCE_EXECUTION_v1.json",
+          "expected": "a4e13b59eac9b652d54ee5f57fb62df575ddfb05ce025f4dba2fbf3588d0f2b5",
+          "actual": "a4e13b59eac9b652d54ee5f57fb62df575ddfb05ce025f4dba2fbf3588d0f2b5"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_CORRESPONDENCE_STDERR_v1.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_EXPOSURE_v1.json",
+          "expected": "7efa4b95226e7c9ccc8f9b426379d062890f94fbc05c957d3c1bb94c13089f91",
+          "actual": "7efa4b95226e7c9ccc8f9b426379d062890f94fbc05c957d3c1bb94c13089f91"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/AUTHOR_REVISED_DOMAIN_EXPOSURE_v1.json",
+          "expected": "1b7928953cf3b6fb2f5a420ea782274f4d9eaa3093184b9da15437d34e1e2adf",
+          "actual": "1b7928953cf3b6fb2f5a420ea782274f4d9eaa3093184b9da15437d34e1e2adf"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/CODE_FREEZE_v1.json",
+          "expected": "278a3295e231b5c5731b9ebd71ff36d2a7a0cc31f880459483c4de7107d1671e",
+          "actual": "278a3295e231b5c5731b9ebd71ff36d2a7a0cc31f880459483c4de7107d1671e"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/EXECUTION_v1.json",
+          "expected": "63834a9b3be8c9412c59f4c823b7a521cfb9ada08960c2ba17c15034696d8c46",
+          "actual": "63834a9b3be8c9412c59f4c823b7a521cfb9ada08960c2ba17c15034696d8c46"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/INDEPENDENT_REPORT_v1.md",
+          "expected": "90ba72fc1fa9ac10d35b7eafb34ba3f6c67a64d8b23e1a6b894cbd73a1acaf95",
+          "actual": "90ba72fc1fa9ac10d35b7eafb34ba3f6c67a64d8b23e1a6b894cbd73a1acaf95"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/INDEPENDENT_REPORT_v2.md",
+          "expected": "2cde4501ba8ae9868af2a179524e6272528317b4c7a26ea8023f986674719ede",
+          "actual": "2cde4501ba8ae9868af2a179524e6272528317b4c7a26ea8023f986674719ede"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/OUTPUT_FREEZE_v1.json",
+          "expected": "25080ef4e241b82935237cef2c2facc403c37fa6d1104884fdcc174427494c3a",
+          "actual": "25080ef4e241b82935237cef2c2facc403c37fa6d1104884fdcc174427494c3a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/OUTPUT_FREEZE_v2.json",
+          "expected": "7ba7b181f85d0db2e3747108f6e8ae480fe03760b525599c2742d9ede4efad5b",
+          "actual": "7ba7b181f85d0db2e3747108f6e8ae480fe03760b525599c2742d9ede4efad5b"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/PROOF_BEFORE_CODE_v1.md",
+          "expected": "00ff44243a4ab67dd1baa73f320dbb5b8abb126a982dabf3196633067c13157b",
+          "actual": "00ff44243a4ab67dd1baa73f320dbb5b8abb126a982dabf3196633067c13157b"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/PROOF_FREEZE_v1.json",
+          "expected": "c8f85cca6c8ff3b2c523858fc4184fe8c5b51ed97ddc4afb76ba9092e9ae832f",
+          "actual": "c8f85cca6c8ff3b2c523858fc4184fe8c5b51ed97ddc4afb76ba9092e9ae832f"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/REPORT_WORDING_CORRECTION_v1.json",
+          "expected": "6ba604950e6ca7b7aad119aa61c801909a288cbbb76cddcdba32e61f1b47e718",
+          "actual": "6ba604950e6ca7b7aad119aa61c801909a288cbbb76cddcdba32e61f1b47e718"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/RESULTS_v1.json",
+          "expected": "b859cc8304d1fe8dc152b4da2a324279f6c9ebed1c6e42541a7707dafa2e5e35",
+          "actual": "b859cc8304d1fe8dc152b4da2a324279f6c9ebed1c6e42541a7707dafa2e5e35"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/REVISED_DOMAIN_BINDING_CONTROLS_v1.json",
+          "expected": "8d7f989440be1cc0f89b9f6901baef9b0f91b9e5dd746dde6fd3fcaa57b1dd1a",
+          "actual": "8d7f989440be1cc0f89b9f6901baef9b0f91b9e5dd746dde6fd3fcaa57b1dd1a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/REVISED_DOMAIN_BINDING_EXECUTION_v1.json",
+          "expected": "e2ad9dac6799101ca132c948b7890e717cd4ae097a34d8d63a5bf9d1f2f33973",
+          "actual": "e2ad9dac6799101ca132c948b7890e717cd4ae097a34d8d63a5bf9d1f2f33973"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/REVISED_DOMAIN_BINDING_STDERR_v1.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/RUN_v1.stderr",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/RUN_v1.stdout",
+          "expected": "b859cc8304d1fe8dc152b4da2a324279f6c9ebed1c6e42541a7707dafa2e5e35",
+          "actual": "b859cc8304d1fe8dc152b4da2a324279f6c9ebed1c6e42541a7707dafa2e5e35"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/SOURCE_INTAKE_v1.json",
+          "expected": "114073cfc8afe66f7c68f73effa76869f80b2c919ff48caf98fe938e5103dae3",
+          "actual": "114073cfc8afe66f7c68f73effa76869f80b2c919ff48caf98fe938e5103dae3"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/check_author_correspondence_v1.py",
+          "expected": "8b0214c7a598e7088fac2d39dd0a1766656f55440638edcfedc797b572421b5b",
+          "actual": "8b0214c7a598e7088fac2d39dd0a1766656f55440638edcfedc797b572421b5b"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/check_revised_domain_binding_v1.py",
+          "expected": "540b0dbfe700d9693982209734e207a7e15dd92903d53d16e772955373cc4465",
+          "actual": "540b0dbfe700d9693982209734e207a7e15dd92903d53d16e772955373cc4465"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_photon_witness/check_witness_v1.py",
+          "expected": "f9217c8688a7f86a804120c1192eb9b7cdc00cc94e3ccadc77fb65d8fd86f20c",
+          "actual": "f9217c8688a7f86a804120c1192eb9b7cdc00cc94e3ccadc77fb65d8fd86f20c"
+        }
+      ]
+    },
+    {
+      "manifest": "independent_kinetic_primitive_norm/FINAL_COMPARISON_FREEZE_v2.json",
+      "manifest_sha256": "94b106bf61a190b4a251db34b39ccde35d6449dadd5c066b1744c9d2db7abc91",
+      "bindings_checked": 8,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/REPORT_v2.md",
+          "expected": "910f0d35ed618fce610e90f8b33c8b91db132fb2a031dd6ff38cb1e3735b7d5d",
+          "actual": "910f0d35ed618fce610e90f8b33c8b91db132fb2a031dd6ff38cb1e3735b7d5d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/MILESTONE_VALUE_PROPOSAL_v1.md",
+          "expected": "277591b69506e53cdb516fa58e73defc89ecc162ced688a320b4c2cd6d5b0b4a",
+          "actual": "277591b69506e53cdb516fa58e73defc89ecc162ced688a320b4c2cd6d5b0b4a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/COMPARISON_SOURCES_v2.json",
+          "expected": "95c0907881c0af9e70ff043519c45c9f93120703989c1b09eb54c4f2931c1a2d",
+          "actual": "95c0907881c0af9e70ff043519c45c9f93120703989c1b09eb54c4f2931c1a2d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/check_comparison_v2.py",
+          "expected": "b984fbe5df5664474f9f6de7f98347015353b80858b3694c6928217a86d23764",
+          "actual": "b984fbe5df5664474f9f6de7f98347015353b80858b3694c6928217a86d23764"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/comparison_stdout_v2.json",
+          "expected": "5b9f9a5cb4e44bb789e1ce15e0b3de3c83c66ce9c06490ad94f4f9f37f16964d",
+          "actual": "5b9f9a5cb4e44bb789e1ce15e0b3de3c83c66ce9c06490ad94f4f9f37f16964d"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/comparison_stderr_v2.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/COMPARISON_EXECUTION_v2.json",
+          "expected": "9a79cc79ddc7d3550c7938854ee1bd829f911f4449753ab121dc77367e2a3a4a",
+          "actual": "9a79cc79ddc7d3550c7938854ee1bd829f911f4449753ab121dc77367e2a3a4a"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/CHANGED_INPUT_FREEZE_v2.json",
+          "expected": "436768e059f6f385914decf0c3fd14f5f21a2148513c2caed4e74f2c72d06a7f",
+          "actual": "436768e059f6f385914decf0c3fd14f5f21a2148513c2caed4e74f2c72d06a7f"
+        }
+      ]
+    },
+    {
+      "manifest": "independent_kinetic_primitive_norm/CHANGED_INPUT_FREEZE_v2.json",
+      "manifest_sha256": "436768e059f6f385914decf0c3fd14f5f21a2148513c2caed4e74f2c72d06a7f",
+      "bindings_checked": 6,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/check_v2.py",
+          "expected": "f4305999b68dcd7d1045efca4b37c22c5b133f3f537f26712ec5dc806e8948cb",
+          "actual": "f4305999b68dcd7d1045efca4b37c22c5b133f3f537f26712ec5dc806e8948cb"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/KINETIC_PRIMITIVE_WEIGHT_POLYNOMIALS_v2.json",
+          "expected": "e5b0b2607b8fa53761acdb6740d034ee9113dc7759f09a128d55981127283a2c",
+          "actual": "e5b0b2607b8fa53761acdb6740d034ee9113dc7759f09a128d55981127283a2c"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/stdout_v2.txt",
+          "expected": "b4d5718a0f37fe6c584388ec067e59342d58110e885e77f48e5ca80ba4b65194",
+          "actual": "b4d5718a0f37fe6c584388ec067e59342d58110e885e77f48e5ca80ba4b65194"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/stderr_v2.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/EXECUTION_v2.json",
+          "expected": "8a37e588a8787c1bc432d4696011f608fb78be36c51bf9febe7f10ea635ec4cc",
+          "actual": "8a37e588a8787c1bc432d4696011f608fb78be36c51bf9febe7f10ea635ec4cc"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/RESULT_v2.json",
+          "expected": "6309e7b8aae7fefbd2f0b0bfa9d674c30f36bb99600ce4eef299093412c59d48",
+          "actual": "6309e7b8aae7fefbd2f0b0bfa9d674c30f36bb99600ce4eef299093412c59d48"
+        }
+      ]
+    },
+    {
+      "manifest": "independent_kinetic_primitive_norm/CANONICAL_BOUND_FREEZE_v1.json",
+      "manifest_sha256": "c2e4aa065f2efaa92ad44eb7cb2de0da7f8187b6b0c43f4f74f1361a832a6dff",
+      "bindings_checked": 9,
+      "checks": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/check_canonical_v1.py",
+          "expected": "763533ce402ae3bdbba5954e084c69ad6a2e0416f5bcc64dcd17c7d3fd026e89",
+          "actual": "763533ce402ae3bdbba5954e084c69ad6a2e0416f5bcc64dcd17c7d3fd026e89"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/check_canonical_v2.py",
+          "expected": "ec6368674ae0ec7666b492b024245cd0bbf0a17d123dfef7b7ac14b9cfcb04d3",
+          "actual": "ec6368674ae0ec7666b492b024245cd0bbf0a17d123dfef7b7ac14b9cfcb04d3"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/canonical_stdout_v1.json",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/canonical_stderr_v1.txt",
+          "expected": "b9f6722bedfbde68337045af6e31eb31bd47af8e7c29db196a946e72da0f3805",
+          "actual": "b9f6722bedfbde68337045af6e31eb31bd47af8e7c29db196a946e72da0f3805"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/canonical_stdout_v2.json",
+          "expected": "d5f56d53e8cb04ac69ff5cbcf77bb86f408a9ccdab6110e999cd94ec7b760998",
+          "actual": "d5f56d53e8cb04ac69ff5cbcf77bb86f408a9ccdab6110e999cd94ec7b760998"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/canonical_stderr_v2.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/CANONICAL_EXECUTION_v1.json",
+          "expected": "4ddaffc9a865eab456178c7cf1b9a946b81a828789d0ee61914598d4e3d89b4f",
+          "actual": "4ddaffc9a865eab456178c7cf1b9a946b81a828789d0ee61914598d4e3d89b4f"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/CANONICAL_EXECUTION_v2.json",
+          "expected": "6cda8d9f3f26842da81b54a95df5ba7d129a98213912f415b602c6e6f9ccc19c",
+          "actual": "6cda8d9f3f26842da81b54a95df5ba7d129a98213912f415b602c6e6f9ccc19c"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_kinetic_primitive_norm/CANONICAL_BOUND_REPORT_v1.md",
+          "expected": "3ae8a45807323bae950b8260ce03d32c2f89e75bfd6bbbff8170fdd16b90ed92",
+          "actual": "3ae8a45807323bae950b8260ce03d32c2f89e75bfd6bbbff8170fdd16b90ed92"
+        }
+      ]
+    }
+  ]
+}

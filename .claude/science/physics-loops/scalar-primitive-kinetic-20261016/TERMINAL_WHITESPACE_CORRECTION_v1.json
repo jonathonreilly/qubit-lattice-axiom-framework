@@ -1,0 +1,104 @@
+{
+  "at": "2026-10-16T16:49:14.563808+00:00",
+  "scope": "No equation, code token or body text changed; remove final blank lines for staged diff hygiene",
+  "changes": [
+    {
+      "path": "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+      "before_sha256": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51",
+      "after_sha256": "4a24a549df6b53f23768e67ca174638ed360ec18137b874f85b9307cae03dfc3",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": "scripts/scalar_primitive_kinetic_bound.py",
+      "before_sha256": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e",
+      "after_sha256": "f4e3fbbdddb22d23a8611f60bdb7b7cbad064892c918318abdf07b6e75756c82",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": "scripts/scalar_primitive_kinetic_core.py",
+      "before_sha256": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb",
+      "after_sha256": "b7fff4c8f1df13adfd4cab76e452722edda848fc814d68af5f6b332df047dee5",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/ASSUMPTIONS_AND_IMPORTS.md",
+      "before_sha256": "b37ccdb04c1d51a1abbfdac71078bd38328da81bff0af4a3c0511e6aff926791",
+      "after_sha256": "5f559fe64c8961b145bc8eb31e7a83b8b730d6c74b569e7038651455ba455282",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "before_sha256": "62b2dc493e1d3cc1ff813362559c74d0b78b316377d7af1473d7a8700e5d99b8",
+      "after_sha256": "ef2318a65c6a7cba9e63fe932209a6d6e5a5341ff4c8068f9404ce7d6e597b96",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/APPROACH_REGISTRY.md",
+      "before_sha256": "83e9d83700c03f25b024a0ad9401762818b11ab214ffa08bc8a1bc2a371c4809",
+      "after_sha256": "1ceaa888e1fd9555aa6223339226ebc9e499a94b2463becb7966938077714039",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/TRACE_GATE.md",
+      "before_sha256": "f96a41384d06bb81fd7f6fb5c180c561168ad2b29cc5fdbd68f390e2726b5988",
+      "after_sha256": "5f8aba8ada47713c3afa026a4c3f85db8a87c3e62a19b4eb354185382608da6a",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/INDEPENDENT_CANONICAL_INTEGRATION_v1.md",
+      "before_sha256": "9e03cb5ebc9e6fb3539b9632798e6f9a23a1c644b4d7aae78d8804aa0eb69fc8",
+      "after_sha256": "2beb3d81b35809e35a0d1d6f1c24a9d47ea6531dea19cde31c87c9482b6e423c",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/GOAL.md",
+      "before_sha256": "49be54c2d38dde16e6868eb6789a97b3db0bdb87a48d65bc8f378108d1eda7d2",
+      "after_sha256": "6de6e34999e12ee7b5a4eebcb24d3f4767e5d88466133915dc98202e9db2e9f8",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/OPPORTUNITY_QUEUE.md",
+      "before_sha256": "9be5ff6bec217ffeef3eeb3247453644efa258b9c6a6159ba19f18c402becb84",
+      "after_sha256": "e2cc055ca6ac1c80502cd9c0097e1d5b338b24639109181e9ba01485d5e42eb6",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/LITERATURE_BRIDGES.md",
+      "before_sha256": "8ce91e5535e22517981febb8b8d02d4a2904d4221a7511d5aba9d0e96ab61c77",
+      "after_sha256": "d589d5a1175e3434122161fc151215a217d31bd681de789f40a6dbda05c48490",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/INDEPENDENT_ADJOINT_COMPARISON_v1.md",
+      "before_sha256": "e2453052ecae0ad37b0674c5ba758ac559e1ae200e2a6d39060986301b58a4a1",
+      "after_sha256": "445897da2b9c3f3d58016593817cd6ac0092539b69c425e4a9ec2b976cdccd0c",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/ARTIFACT_PLAN.md",
+      "before_sha256": "c8a1ca55f5821b4c9758851fdc01fc2d55ea519350f95a16b184754cde9230fd",
+      "after_sha256": "810828646c9737a367f77fb2b54254702d66b827baad20fda4db6211de3f3d26",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/scalar-primitive-kinetic-20261016/ROUTE_PORTFOLIO.md",
+      "before_sha256": "005baf8723f622d0c02ae47f42ec87cd5ecf4ff3b2b1f4a8db0356524c72fc36",
+      "after_sha256": "f0021e8acb01d3ea46ef06b73be2806b3f34457234c2297e702cd48438aaf539",
+      "only_terminal_lf_removal": true,
+      "removed_bytes": 1
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-16T16:45:50.887437+00:00",
+  "vocabulary": [
+    {
+      "mode": "fix",
+      "exit_code": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonBridger/.codex/worktrees/scalar-primitive-kinetic-20261016/New Axioms Lets Go/.claude/science/physics-loops/scalar-primitive-kinetic-20261016/VOCAB_fix_v1.json\n",
+      "stderr": ""
+    },
+    {
+      "mode": "report-only",
+      "exit_code": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonBridger/.codex/worktrees/scalar-primitive-kinetic-20261016/New Axioms Lets Go/.claude/science/physics-loops/scalar-primitive-kinetic-20261016/VOCAB_report_only_v1.json\n",
+      "stderr": ""
+    }
+  ],
+  "frozen_science_unchanged": {
+    "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51",
+    "scripts/scalar_primitive_kinetic.py": "978ab14363b55f759e867555dad5b15614056a7053caf4b33fb49abbec50475f",
+    "scripts/scalar_primitive_kinetic_action.py": "9ec86c25fb331f2f41bbed742305ea1e072cf58759c6fe62ec36115b72af10de",
+    "scripts/scalar_primitive_kinetic_bound.py": "e06cad4f61560603371dc99b4cc9e50e4d54859149435be35c8b9526f33ac32e",
+    "scripts/scalar_primitive_kinetic_core.py": "df030726044df695faacc96eefb5d899c5fbadb0f9138e3ca050de7617604ddb"
+  },
+  "verbatim_reports_unchanged": true,
+  "compiled": [
+    "scripts/scalar_primitive_kinetic.py",
+    "scripts/scalar_primitive_kinetic_action.py",
+    "scripts/scalar_primitive_kinetic_bound.py",
+    "scripts/scalar_primitive_kinetic_core.py"
+  ],
+  "local_links": [
+    {
+      "file": "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+      "target": "/Users/jonBridger/.codex/worktrees/scalar-primitive-kinetic-20261016/New Axioms Lets Go/scripts/scalar_primitive_kinetic.py",
+      "exists": true
+    },
+    {
+      "file": "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+      "target": "/Users/jonBridger/.codex/worktrees/scalar-primitive-kinetic-20261016/New Axioms Lets Go/outputs/scalar_primitive_kinetic/result.json",
+      "exists": true
+    }
+  ],
+  "local_links_failed": [],
+  "unstaged_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "shared_pipeline_audit_lint_changed_evidence": "Pending exact integrated-main landing pass; not run as leaf-only substitutes"
+}

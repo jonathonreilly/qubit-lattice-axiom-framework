@@ -1,0 +1,32 @@
+[
+  {
+    "copy": "INDEPENDENT_ADJOINT_COMPARISON_v1.md",
+    "source": "independent_kinetic_primitive_photon/POST_EXPOSURE_REPORT_v1.md",
+    "sha256": "e2453052ecae0ad37b0674c5ba758ac559e1ae200e2a6d39060986301b58a4a1"
+  },
+  {
+    "copy": "INDEPENDENT_CANONICAL_INTEGRATION_v1.md",
+    "source": "independent_kinetic_primitive_photon/canonical_integration_v1/REPORT_v1.md",
+    "sha256": "9e03cb5ebc9e6fb3539b9632798e6f9a23a1c644b4d7aae78d8804aa0eb69fc8"
+  },
+  {
+    "copy": "INDEPENDENT_FULL_ACTION_PHOTONS_v1.md",
+    "source": "independent_kinetic_photon_witness/AUTHOR_COMPARISON_v1.md",
+    "sha256": "6a51a163902ba80ef16916990be08e7032f8de67bddc39344b6ffa652164b71d"
+  },
+  {
+    "copy": "INDEPENDENT_NORM_COMPARISON_v2.md",
+    "source": "independent_kinetic_primitive_norm/REPORT_v2.md",
+    "sha256": "910f0d35ed618fce610e90f8b33c8b91db132fb2a031dd6ff38cb1e3735b7d5d"
+  },
+  {
+    "copy": "INDEPENDENT_BOUND_INTEGRATION_v1.md",
+    "source": "independent_kinetic_primitive_norm/CANONICAL_BOUND_REPORT_v1.md",
+    "sha256": "3ae8a45807323bae950b8260ce03d32c2f89e75bfd6bbbff8170fdd16b90ed92"
+  },
+  {
+    "copy": "INDEPENDENT_VALUE_PROPOSAL_v1.md",
+    "source": "independent_kinetic_primitive_norm/MILESTONE_VALUE_PROPOSAL_v1.md",
+    "sha256": "277591b69506e53cdb516fa58e73defc89ecc162ced688a320b4c2cd6d5b0b4a"
+  }
+]

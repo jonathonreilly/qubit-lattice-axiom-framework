@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-16T16:25:59.629229+00:00",
+  "stage": "Root canonical proof assembled before canonical code; historical algebra and domain correction already frozen",
+  "note": "docs/SCALAR_PRIMITIVE_KINETIC_NOTE_2026-10-16.md",
+  "sha256": "1a2a389b64d4ad24f369876b637577459c1da568d2aaa6cb3a49c097446aff51",
+  "inputs": {
+    "check_kinetic_primitive_photon_v3.py": "91a61402aa8ab2b94c7d5ee424aba66ecf1cb0d85c08274f6444a4fc9254b063",
+    "check_kinetic_primitive_bound_v4.py": "73dd811672a8c7fd28bdad85db4c616cc4090080fea90ca7ba8946ae7b48c0d3",
+    "KINETIC_PRIMITIVE_PHOTON_CONTROLS_v3.json": "fc0ddaa78b802ab6753099f2c2cfcb8841153d6b24152033c340fe32560450c3",
+    "KINETIC_PRIMITIVE_WEIGHT_POLYNOMIALS_v2.json": "e5b0b2607b8fa53761acdb6740d034ee9113dc7759f09a128d55981127283a2c"
+  }
+}

@@ -1,0 +1,70 @@
+
+# module statement 0
+"""Record a unique actual attempt with executed source and all raw streams."""
+
+# module statement 1
+import argparse,datetime,hashlib,json,os,platform,shutil,subprocess,sys,time
+
+# module statement 2
+from pathlib import Path
+
+# module statement 3
+p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--source',required=True);p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+
+# module statement 4
+p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--source',required=True);p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+
+# module statement 5
+p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--source',required=True);p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+
+# module statement 6
+p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--source',required=True);p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+
+# module statement 7
+p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--source',required=True);p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+
+# module statement 8
+r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)
+
+# module statement 9
+r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)
+
+# module statement 10
+r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)
+
+# module statement 11
+r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)
+
+# module statement 12
+r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)
+
+# module statement 13
+cmd=[sys.executable,str(source)]+(a.args[1:] if a.args[:1]==['--'] else a.args)
+
+# module statement 14
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic()
+
+# module statement 15
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic()
+
+# module statement 16
+with (r/'stdout.txt').open('wb') as stdout,(r/'stderr.txt').open('wb') as stderr:
+ rc=subprocess.run(cmd,stdout=stdout,stderr=stderr,cwd=source.parent).returncode
+
+# module statement 17
+end=datetime.datetime.now(datetime.timezone.utc).isoformat();after=source.read_bytes()
+
+# module statement 18
+end=datetime.datetime.now(datetime.timezone.utc).isoformat();after=source.read_bytes()
+
+# module statement 20
+d={'started_utc':start,'finished_utc':end,'wall_seconds':time.monotonic()-tick,'command':cmd,'exit_code':rc,'python':sys.version,'platform':platform.platform(),'source':str(source),'source_sha256_before':hashlib.sha256(before).hexdigest(),'source_sha256_after':hashlib.sha256(after).hexdigest(),'source_unchanged':before==after,'stdout':info(r/'stdout.txt'),'stderr':info(r/'stderr.txt')}
+
+# module statement 21
+(r/'RECEIPT.json').write_text(json.dumps(d,indent=2,sort_keys=True)+'\n');print(json.dumps(d,indent=2));sys.exit(rc)
+
+# module statement 22
+(r/'RECEIPT.json').write_text(json.dumps(d,indent=2,sort_keys=True)+'\n');print(json.dumps(d,indent=2));sys.exit(rc)
+
+# module statement 23
+(r/'RECEIPT.json').write_text(json.dumps(d,indent=2,sort_keys=True)+'\n');print(json.dumps(d,indent=2));sys.exit(rc)

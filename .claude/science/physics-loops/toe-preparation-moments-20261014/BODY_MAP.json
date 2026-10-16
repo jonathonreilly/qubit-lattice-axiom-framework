@@ -1,0 +1,92 @@
+{
+  "bodies": [
+    {
+      "byte_end_exclusive": 22609,
+      "byte_start_0": 10238,
+      "bytes": 12371,
+      "id": "generic",
+      "line_end_1": 235,
+      "line_start_1": 76,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_candidate/DERIVATION.md",
+      "role": "complete primary generic moment proof",
+      "sha256": "be12650621104a57f7e914a8f3bcba518d2a1f6abd7181022bb37cf5089794f2",
+      "source_lines": 160,
+      "terminal_lf_count": 1,
+      "transformation": "none"
+    },
+    {
+      "byte_end_exclusive": 38776,
+      "byte_start_0": 22794,
+      "bytes": 15982,
+      "id": "sharper",
+      "line_end_1": 439,
+      "line_start_1": 241,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_independent/DERIVATION.md",
+      "role": "complete primary sharper moment proof",
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "source_lines": 199,
+      "terminal_lf_count": 1,
+      "transformation": "none"
+    },
+    {
+      "byte_end_exclusive": 59953,
+      "byte_start_0": 39056,
+      "bytes": 20897,
+      "id": "chain",
+      "line_end_1": 662,
+      "line_start_1": 445,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_chain_placement/DERIVATION.md",
+      "role": "complete prerequisite appendix; not separately retained",
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+      "source_lines": 218,
+      "terminal_lf_count": 1,
+      "transformation": "none"
+    }
+  ],
+  "fragments": [
+    {
+      "bytes": 10238,
+      "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md.gz",
+      "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32",
+      "codec": "gzip"
+    },
+    {
+      "bytes": 185,
+      "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_generic_sharper.md.gz",
+      "sha256": "d2279ac4d50dfa051f8d22a27b3499338ffc95898a875f0715f1471e14aca5a2",
+      "codec": "gzip"
+    },
+    {
+      "bytes": 280,
+      "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_sharper_chain.md.gz",
+      "sha256": "5f681e7482c0bb55f642c54453ba7b3689ef967165f9446af6b9032bd4a84956",
+      "codec": "gzip"
+    },
+    {
+      "bytes": 249,
+      "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_footer.md.gz",
+      "sha256": "7a3f17d49ad1308661e0882d1892031435c44457e2597a1b91d6699c04e21e29",
+      "codec": "gzip"
+    }
+  ],
+  "note": {
+    "bytes": 60202,
+    "path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+  },
+  "parent": {
+    "byte_end_exclusive": 32138,
+    "byte_start_0": 8389,
+    "bytes": 32493,
+    "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+    "commit": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+    "line_end_1": 319,
+    "line_start_1": 50,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "raw_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/DERIVATION.md",
+    "raw_sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+    "repo_path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+  },
+  "schema": "preparation-moment-components-v1"
+}

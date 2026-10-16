@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-14T22:20:40.201749+00:00",
+  "reason": "Plain git diff --check rejected deliberate fragment blank EOF and archived patch context whitespace.",
+  "original_proofs_and_note_unchanged": true,
+  "primary_logic_change": "Read gzip framing, validate original fragment identity, then perform identical complete-note reconstruction.",
+  "renamed_artifacts": {
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_generic_sharper.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_generic_sharper.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_sharper_chain.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_sharper_chain.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_footer.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_footer.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/initial_note_header.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/initial_note_header.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/between_generic_sharper.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/between_generic_sharper.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/note_header.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/note_header.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/between_sharper_chain.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/templates/between_sharper_chain.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/BUILDER.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/BUILDER.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/note_header.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/note_header.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/INPUTS.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/INPUTS.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/HEADER.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/HEADER.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/generated/13_note_header.md": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/history/wrapper_v1/generated/13_note_header.md.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/history_checker/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/history_checker/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/source_checker/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/source_checker/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/freezer/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/freezer/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/builder_current_delta/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/builder_current_delta/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/wrapper_repair/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/wrapper_repair/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/review_mapper/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/review_mapper/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/recorder/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/recorder/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/generic_wrapper_to_current.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/generic_wrapper_to_current.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/sharper_wrapper_to_current.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/sharper_wrapper_to_current.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/chain_wrapper_to_current.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/framing/chain_wrapper_to_current.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/builder/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/builder/complete.diff.gz",
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/primary_helper/complete.diff": ".claude/science/physics-loops/toe-preparation-moments-20261014/publication/generation/review_maps/primary_helper/complete.diff.gz"
+  },
+  "old_canonical_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-preparation-moments-20261014/publication/storage_repair/PRE_REPAIR_CANONICAL_MAP.json",
+    "bytes": 195209,
+    "sha256": "678bcb2f389d08ee04dc7665016b2a30b5db8bfbcfb219ee0d2c716d5e744446"
+  },
+  "old_stage_failure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/preparation_verify_stage/EXECUTION.json",
+    "bytes": 1392,
+    "sha256": "60b95ba1511590efd68445ec752dabc5db1afe031b6c72265dade827dc7ab8e1"
+  },
+  "current_helper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_moment_source_identity_2026_10_14.py",
+    "bytes": 64832,
+    "sha256": "72e9f007f4093ec2de21a3f19b1a81abf08979dce317f477ccc11ac4eae42537"
+  },
+  "current_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+    "bytes": 165664,
+    "sha256": "1be386390ea0bbf80fdf2fffb0f7c0fd77bbcb17b3d30986dbfd641415343700"
+  },
+  "new_mathematical_predicates": 0,
+  "required_followup": [
+    "Nine integrity controls including changed decompression family",
+    "Fresh canonical cache",
+    "Final full staged checks"
+  ]
+}

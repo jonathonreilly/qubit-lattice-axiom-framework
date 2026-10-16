@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-14T22:14:19.882986+00:00",
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/CANONICAL_RESULT.json",
+    "bytes": 1615,
+    "sha256": "62cdd67e7801c7af255b45209efbaee5efc88bb7cb27dbefae5f10bca6807810"
+  },
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/preparation_moment_source_identity_2026_10_14.txt",
+    "bytes": 1520,
+    "sha256": "41830f73979c9826fef06e92854ac42d5d3fb8a71078d078f3118cdf40515bbf"
+  },
+  "helper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_moment_source_identity_2026_10_14.py",
+    "bytes": 64629,
+    "sha256": "7556e3b25d63b6e725e87248196e3830f046189e198c2f02174e5479a71d9463"
+  },
+  "cache_status": "fresh",
+  "inputs": 413,
+  "identity_result": {
+    "archive_records_checked": 616,
+    "declared_inputs_checked": 413,
+    "external_scientific_reads": [
+      "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    ],
+    "inner_aliases_checked": 482,
+    "mathematical_predicates": 0,
+    "not_established": [
+      "mathematical correctness",
+      "physical preparation",
+      "independent audit",
+      "canonical landing approval"
+    ],
+    "package_integrity_read_count": 412,
+    "proof_bodies_checked": 3,
+    "scientific_programs_executed": 0,
+    "status": "source_identity_verified"
+  },
+  "scope_lines": [
+    "per_element: checked and not executed \u2014 source bytes only; no operator algebra or numerical identity is evaluated.",
+    "per_site: checked and not executed \u2014 source bytes only; no local preparation or geometry measurement is performed.",
+    "per_mode: checked and not executed \u2014 source bytes only; no mode, continuum or native dynamics theorem is tested.",
+    "per_block: checked and not executed \u2014 exact argument reconstruction only; no moment inequality is proved by this runner.",
+    "lattice_wide: checked and not executed \u2014 preservation only; no all-volume preparation, common cap or physical realization is established."
+  ],
+  "canonical_child_streams": "runner_cache merges child stderr into stdout; empty result.stderr is not separate child stderr evidence",
+  "root_wrapper_separate_streams": "recorded by outer N/run.py",
+  "mathematical_predicates_executed": 0
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+    "--verify-existing"
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-10-14T22:06:08.580295+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+  "source_sha256_after": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf",
+  "source_sha256_before": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf",
+  "source_unchanged": true,
+  "started_utc": "2026-10-14T22:06:07.712896+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/reproduction01/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 1000,
+    "path": "runs/reproduction01/stdout.txt",
+    "sha256": "bd536bae86a48fbe35bcb822e2ddbb5d780710d875fed0ae727e38c733c87321"
+  },
+  "wall_seconds": 0.8665185840800405
+}

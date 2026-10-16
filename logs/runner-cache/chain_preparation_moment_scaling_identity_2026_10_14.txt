@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/chain_preparation_moment_scaling_identity_2026_10_14.py
+runner_sha256: 8c45a9e8d7e9f4e62d5ca47705212da00ed0af712592517a1fb9731ccb54016d
+input_fingerprint_sha256: 182032e8f364b6d932c4688a328835175f50ba778053c3431dbdf09dc1cd0c43
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+{"actual_parent_live_state_queried": false, "claim_id": "chain_preparation_moment_scaling_bounded_theorem_note_2026-10-14", "decoded_archival_originals": 495, "mathematical_predicates_executed": 0, "meaning": "Byte integrity and lossless archive decoding only; no mathematical theorem or audit was executed.", "observations_are_dated": true, "original_component_files": 452, "result": "source_identities_and_reconstruction_match", "scientific_programs_executed": 0}
+per_element: checked and not executed — source identities only; no operator algebra was evaluated.
+per_site: checked and not executed — source identities only; no support or local-load calculation was evaluated.
+per_mode: checked and not executed — source identities only; no physical-mode identification was evaluated.
+per_block: checked and not executed — source identities only; no marginal or variance inequality was evaluated.
+lattice_wide: checked and not executed — source identities only; no all-length or native theorem was verified.
+
+----- stderr -----
+

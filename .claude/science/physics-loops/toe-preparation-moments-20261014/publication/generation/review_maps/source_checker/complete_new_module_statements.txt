@@ -1,0 +1,32 @@
+
+# module statement 0
+"""Read-only source reconstruction and static runner inspection; zero mathematics."""
+
+# module statement 1
+import argparse
+
+# module statement 2
+import ast
+
+# module statement 3
+import gzip
+
+# module statement 4
+import hashlib
+
+# module statement 5
+import json
+
+# module statement 6
+from pathlib import Path
+
+# module statement 7
+ROOT = Path(__file__).resolve().parent
+
+# module statement 12
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--payload', default=str(ROOT / 'payload'))
+    parser.add_argument('--origins', action='store_true', help='also compare every declared original source')
+    args = parser.parse_args()
+    print(json.dumps(inspect(Path(args.payload).resolve(), args.origins), indent=2, sort_keys=True))

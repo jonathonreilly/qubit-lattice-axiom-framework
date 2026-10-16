@@ -1,0 +1,139 @@
+#!/usr/bin/env python3
+"""Exact source identity only. Zero mathematical predicates; no science replay."""
+import gzip
+import hashlib
+import json
+from pathlib import Path, PurePosixPath
+
+AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = @AUDIT_INPUT_PATHS@
+MANIFEST_PATH = @MANIFEST_PATH@
+MANIFEST_SHA256 = @MANIFEST_SHA256@
+
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def identity(data, pin, label):
+    require(len(data) == pin['bytes'] and sha(data) == pin['sha256'], 'identity: ' + label)
+
+
+def safe(relative):
+    p = PurePosixPath(relative)
+    require(not p.is_absolute() and '..' not in p.parts and str(p) == relative,
+            'unsafe input path: ' + relative)
+    return relative
+
+
+def verify(repo):
+    declared = set(AUDIT_INPUT_PATHS)
+    require(len(declared) == len(AUDIT_INPUT_PATHS), 'duplicate declared input')
+    read_set = set()
+
+    def read(relative):
+        safe(relative)
+        require(relative in declared, 'undeclared read: ' + relative)
+        path = repo / relative
+        require(path.is_file() and not path.is_symlink() and path.resolve().is_relative_to(repo),
+                'missing/escaping input: ' + relative)
+        read_set.add(relative)
+        return path.read_bytes()
+
+    raw = read(MANIFEST_PATH)
+    require(sha(raw) == MANIFEST_SHA256, 'manifest identity')
+    manifest = json.loads(raw)
+    require(set(manifest['files']) | {MANIFEST_PATH} == declared, 'input closure')
+    data = {}
+    for relative, pin in manifest['files'].items():
+        b = read(relative)
+        identity(b, pin, relative)
+        data[relative] = b
+    packet = manifest['packet']
+    note = data[manifest['note']]
+    bodymap = json.loads(data[packet + '/BODY_MAP.json'])
+    cores = {}
+    for row in bodymap['bodies']:
+        b = note[row['byte_start_0']:row['byte_end_exclusive']]
+        identity(b, row, 'body ' + row['id'])
+        require(sha(b) == manifest['core_sha256'][row['id']], 'core fixed pin')
+        require(note.count(b) == 1 and b.endswith(b'\n') and not b.endswith(b'\n\n'),
+                'unique exact one-LF body')
+        require(note[:row['byte_start_0']].count(b'\n') + 1 == row['line_start_1'], 'body start line')
+        require(note[:row['byte_end_exclusive']].count(b'\n') == row['line_end_1'], 'body end line')
+        cores[row['id']] = b
+    fragments = [data[f['path']] for f in bodymap['fragments']]
+    require(note == fragments[0] + cores['generic'] + fragments[1] + cores['sharper'] +
+            fragments[2] + cores['chain'] + fragments[3], 'complete note reconstruction')
+
+    archive = json.loads(data[packet + '/SOURCE_ARCHIVE.json'])
+    objects = {}
+    for key, item in archive['objects'].items():
+        packed = data[item['path']]
+        identity(packed, item['stored'], 'compressed object')
+        b = gzip.decompress(packed)
+        identity(b, item, 'uncompressed object')
+        require(sha(b) == key, 'content address')
+        objects[key] = b
+    records = {}
+    for row in archive['records']:
+        parts = []
+        for part in row['parts']:
+            if part['kind'] == 'core':
+                parts.append(cores[part['id']])
+            else:
+                require(part['kind'] == 'object', 'unknown archive part')
+                parts.append(objects[part['sha256']])
+        b = b''.join(parts)
+        identity(b, row, 'archive ' + row['alias'])
+        require(len(b.splitlines()) == row['line_count'], 'archive line count')
+        require(row['alias'] not in records, 'duplicate archive alias')
+        records[row['alias']] = b
+    inner_count = 0
+    for group in archive['groups']:
+        prefix = 'assemblies/' + group['id'] + '/'
+        raw_seal = records[prefix + group['seal']]
+        require(sha(raw_seal) == group['seal_sha256'], 'group seal identity')
+        seal = json.loads(raw_seal)
+        rows = {r['path']: r for r in seal['members']}
+        require(len(rows) == len(seal['members']), 'duplicate group member')
+        expected = {prefix + p for p in rows} | {prefix + group['seal']}
+        actual = {p for p in records if p.startswith(prefix)}
+        require(actual == expected and len(actual) == group['complete_files'], 'complete group closure')
+        for p, pin in rows.items():
+            identity(records[prefix + p], pin, 'group member ' + p)
+        inner = json.loads(records[prefix + 'archive/ALIASES.json'])['aliases']
+        for row in inner:
+            b = records[prefix + safe(row['file'])]
+            if row['storage'] == 'embedded_proof_body':
+                b = b[row['byte_start_0']:row['byte_end_exclusive']]
+            else:
+                require(row['storage'] == 'object', 'inner storage')
+            identity(b, row, 'inner alias ' + row['alias'])
+            inner_count += 1
+    require(inner_count == archive['inner_aliases_checked'], 'inner alias count')
+    parent = bodymap['parent']
+    live = data[parent['repo_path']]
+    historical = records['external/mathematical_parent/canonical_note.md']
+    require(live == historical, 'live canonical parent drift')
+    raw_parent = live[parent['byte_start_0']:parent['byte_end_exclusive']]
+    require(sha(raw_parent) == parent['raw_sha256'] and live.count(raw_parent) == 1,
+            'exact unique parent extraction')
+    require(read_set == declared, 'declared reads not fully consumed')
+    return {'status': 'source_identity_verified', 'mathematical_predicates': 0,
+            'scientific_programs_executed': 0, 'proof_bodies_checked': len(cores),
+            'archive_records_checked': len(records), 'inner_aliases_checked': inner_count,
+            'declared_inputs_checked': len(read_set),
+            'external_scientific_reads': manifest['external_scientific_paths'],
+            'package_integrity_read_count': len(manifest['integrity_paths']) + 1,
+            'not_established': ['mathematical correctness', 'physical preparation',
+                                'independent audit', 'canonical landing approval']}
+
+
+if __name__ == '__main__':
+    print(json.dumps(verify(Path(__file__).resolve().parents[1]), indent=2, sort_keys=True))

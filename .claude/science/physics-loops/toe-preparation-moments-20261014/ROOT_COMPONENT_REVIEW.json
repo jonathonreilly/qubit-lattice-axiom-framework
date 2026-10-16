@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-14T22:13:20.572222+00:00",
+  "component_review_complete": true,
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/FINAL_FREEZE.json",
+    "bytes": 135581,
+    "sha256": "558e6691fa872f1b53cba5ffdcbf571bb1e44ebad12dff275f34a66575163839"
+  },
+  "scope": "Source-only composition acceptance. No new mathematical check, canonical execution, retained audit, or future publication is asserted.",
+  "fully_reviewed_programs": {
+    "builder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+      "bytes": 12265,
+      "sha256": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf"
+    },
+    "source_checker": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/CHECK_COMPONENTS.py",
+      "bytes": 8807,
+      "sha256": "b2eb7274c6814e57c496e16cff5adf4d43f4097d2646c4e198a9b405dd44788c"
+    },
+    "primary_helper": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/payload/scripts/preparation_moment_source_identity_2026_10_14.py",
+      "bytes": 63761,
+      "sha256": "49e8398ba1dd8708685ee0e337c412f5bf3cf120c606050f971620618a11baeb"
+    },
+    "recorder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/record_run.py",
+      "bytes": 1531,
+      "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696"
+    },
+    "builder_current_delta": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+      "bytes": 12265,
+      "sha256": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf"
+    },
+    "wrapper_repair": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/REPAIR_WRAPPER.py",
+      "bytes": 4523,
+      "sha256": "b33c2bf6baa484d539f23dc8945aa6b3f2dad28df79a3276ba21e0fba90dde73"
+    },
+    "history_checker": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/CHECK_HISTORY.py",
+      "bytes": 1880,
+      "sha256": "769960c2d1ba51d9180b0c7475fb4a86227a5105d74a6fce6d6cd3809552d0f0"
+    },
+    "review_mapper": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/MAKE_REVIEW_MAPS.py",
+      "bytes": 7678,
+      "sha256": "3ad724c366e925ffc77c2c603a3af8e478098be1bad8fa718d647f2e1b8cb32e"
+    },
+    "freezer": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/FREEZE_COMPONENTS.py",
+      "bytes": 4169,
+      "sha256": "590b2caadf061895ae15bfba45cb42f47c8bd551f975c6ee3dcc692b8b375392"
+    }
+  },
+  "program_map": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/review_maps/PROGRAM_AND_FRAMING_MAP.json",
+    "bytes": 153228,
+    "sha256": "0fffeca7f42e806a05a657d47e56ee31cba9720c77ea4152c29af6c8d7830a2f"
+  },
+  "source_replay": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/preparation_components_source_check/EXECUTION.json",
+    "bytes": 1450,
+    "sha256": "09bd914772b3d667a054593fd7f28f1ffaf307920def33690732a13d43adc004"
+  },
+  "review_coverage": [
+    "Complete current builder initially read; final write/build functions and complete changed module statements read, all other builder functions reused at identity.",
+    "Complete source checker and primary functional template read; generated literal-only substitutions independently reproduced by unchanged checker.",
+    "Complete recorder, repair, history checker, mapper and freezer read. All actual recorded streams and both pre-child failures inspected.",
+    "Complete current four framing fragments/five sidecars previously read; final one-line scalar correction read. Complete unchanged generic, sharper and chain arguments and necessary premises reuse recorded analytic and source acceptance.",
+    "All 511 members checked; current 411 payload, 616 origin records and 482 inner aliases verified. All mapped current function/global segments and prior/current source pins verified.",
+    "Large inventory data are deterministically verified; prior truncated metadata displays are not asserted as full semantic reads."
+  ],
+  "scientific_limits": [
+    "Conditional supplied preparation, full old/reference marginal control, installed same K/scalar, charged variance and penalty loads.",
+    "Restricted reserved-strip chain only; no native realization, common cap, optimality or broad no-go.",
+    "Generic section4 uses complete chain Appendix; sharper depends on be8; only be8 is an external theorem edge."
+  ],
+  "new_math_executions": 0,
+  "editable_prompts_changed": [],
+  "remaining": [
+    "Fresh source/parent guards",
+    "Root bound derivative and integrity controls",
+    "Canonical cache and graph preservation",
+    "Focused compatibility and regular PR"
+  ]
+}

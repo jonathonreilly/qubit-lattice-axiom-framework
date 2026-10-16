@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/preparation_moment_source_identity_2026_10_14.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"archive_records_checked\": 616,\n  \"declared_inputs_checked\": 413,\n  \"external_scientific_reads\": [\n    \"docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md\"\n  ],\n  \"inner_aliases_checked\": 482,\n  \"mathematical_predicates\": 0,\n  \"not_established\": [\n    \"mathematical correctness\",\n    \"physical preparation\",\n    \"independent audit\",\n    \"canonical landing approval\"\n  ],\n  \"package_integrity_read_count\": 412,\n  \"proof_bodies_checked\": 3,\n  \"scientific_programs_executed\": 0,\n  \"status\": \"source_identity_verified\"\n}\nper_element: checked and not executed \u2014 source bytes only; no operator algebra or numerical identity is evaluated.\nper_site: checked and not executed \u2014 source bytes only; no local preparation or geometry measurement is performed.\nper_mode: checked and not executed \u2014 source bytes only; no mode, continuum or native dynamics theorem is tested.\nper_block: checked and not executed \u2014 exact argument reconstruction only; no moment inequality is proved by this runner.\nlattice_wide: checked and not executed \u2014 preservation only; no all-volume preparation, common cap or physical realization is established.\n",
+  "stderr": "",
+  "elapsed_sec": 0.12284111976623535,
+  "timeout_sec": 60,
+  "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/preparation_moment_source_identity_2026_10_14.txt"
+}

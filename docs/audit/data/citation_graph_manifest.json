@@ -1,6 +1,6 @@
 {
- "edge_count": 16056,
- "node_count": 7116,
+ "edge_count": 16060,
+ "node_count": 7120,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2298,6 +2298,10 @@
    "deps_hash": "0d278fe7903f",
    "out_degree": 7
   },
+  "balanced_critical_mediator_coupling_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "0564142f80cc",
+   "out_degree": 1
+  },
   "barrier_identification_tested_cycle893_bounded_theorem_note_2026-07-28": {
    "deps_hash": "100cedca9ec7",
    "out_degree": 2
@@ -2824,6 +2828,10 @@
   },
   "centre_regularity_to_geometric_bounded_theorem_note_2026-10-12": {
    "deps_hash": "55bddc03b38d",
+   "out_degree": 1
+  },
+  "chain_preparation_moment_scaling_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "a0ec83520a6b",
    "out_degree": 1
   },
   "channel_surface_cn_grounding_peripheral_unitary_summand_bounded_theorem_note_2026-06-11": {
@@ -14886,6 +14894,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "a2e5c22fb92f",
+   "out_degree": 1
+  },
   "multifactor_connes_lott_purchases_not_derives_koide_multiplicity_narrow_obstruction_note_2026-06-04": {
    "deps_hash": "ecc26c550a95",
    "out_degree": 10
@@ -19628,6 +19640,10 @@
   },
   "signed_record_finite_refinement_and_conditional_source_6266_bounded_theorem_note_2026-09-09": {
    "deps_hash": "a4716dfd6b5b",
+   "out_degree": 1
+  },
+  "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "2c779262d2ce",
    "out_degree": 1
   },
   "sin2thetaw_proof_walk_lattice_independence_bounded_note_2026-05-08": {

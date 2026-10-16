@@ -1,0 +1,151 @@
+{
+  "schema": "bounded-preparation-wrapper-composition-check/v1",
+  "utc": "2026-10-14T22:14:56.662692+00:00",
+  "source_freeze_sha256": "558e6691fa872f1b53cba5ffdcbf571bb1e44ebad12dff275f34a66575163839",
+  "pins": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/FINAL_FREEZE.json",
+      "bytes": 135581,
+      "sha256": "558e6691fa872f1b53cba5ffdcbf571bb1e44ebad12dff275f34a66575163839",
+      "coverage": "manifest identity and complete top-level status; membership checked only for the scoped reviewed files"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/templates/note_header.md",
+      "bytes": 10238,
+      "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/templates/between_generic_sharper.md",
+      "bytes": 185,
+      "sha256": "d2279ac4d50dfa051f8d22a27b3499338ffc95898a875f0715f1471e14aca5a2",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/templates/between_sharper_chain.md",
+      "bytes": 280,
+      "sha256": "5f681e7482c0bb55f642c54453ba7b3689ef967165f9446af6b9032bd4a84956",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/templates/note_footer.md",
+      "bytes": 249,
+      "sha256": "7a3f17d49ad1308661e0882d1892031435c44457e2597a1b91d6699c04e21e29",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/packet_text/ASSUMPTION_LEDGER.md",
+      "bytes": 2253,
+      "sha256": "719f3d692bf6b4744c8bad8e226104d2a3cf9c438411d2f5ccfae85034955574",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/packet_text/CLAIM_STATUS.md",
+      "bytes": 1334,
+      "sha256": "a5502782680077ecfc3675bdaeb684c17c68245e639445cb2b02adf7af6c71c5",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/packet_text/CONFORMANCE.md",
+      "bytes": 2258,
+      "sha256": "d1a3254c0787d49290b49bafef5da20c1ce5ce23658dd529717f3a153de40385",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/packet_text/EVIDENCE_SCOPE.md",
+      "bytes": 2090,
+      "sha256": "cb51b46f20031ee0342aaea08b14f953f1cba0fbcda0849d874b6bb97543f4f7",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/packet_text/INTEGRITY_CONTROL_PLAN.md",
+      "bytes": 1919,
+      "sha256": "8a12cc5be85ad03b62930b5f7ae6cb0960ce55be28dd8452abbbe6a025e270de",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/PROPOSED_PR_BODY.md",
+      "bytes": 1388,
+      "sha256": "7b8382be9af21bb4c66cb50304441123a60e70756a8e2a81fa90d75b18c674c9",
+      "coverage": "complete new prose read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/payload/.claude/science/physics-loops/toe-preparation-moments-20261014/BODY_MAP.json",
+      "bytes": 3786,
+      "sha256": "b4686570947cedae161895bfca69ccf8c3d7b79cc643868cd45429bfd390b146",
+      "coverage": "complete metadata read; exact extraction independently checked"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/payload/docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f",
+      "coverage": "framing read through exact templates; all three complete unchanged proof bodies reused from prior complete coverage, extraction refreshed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_dependency_review/DEPENDENCY_REVIEW.md",
+      "bytes": 14579,
+      "sha256": "af0f40ba46bb54d438c71008f49365dc90a7c08dd80d953b378e02c5e5419dea",
+      "coverage": "complete earlier dependency assessment authored here; reused unchanged"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_dependency_review/SOURCE_PINS.json",
+      "bytes": 53881,
+      "sha256": "616fec0dfcd89ecd8487d9308d163dbcfe2c4a6370ba1130313163b826d026ad",
+      "coverage": "exact prior source and coverage inventory reused unchanged"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/templates/identity_runner.py.in",
+      "bytes": 6176,
+      "sha256": "bdd485c0f0c0de02cf1424e99aaa4e49cc4bb89b130efd8ff7c83a5f99913de7",
+      "coverage": "incidentally displayed in full during template inventory; no substantive program review or execution claimed"
+    }
+  ],
+  "body_extractions": [
+    {
+      "id": "generic",
+      "sha256": "be12650621104a57f7e914a8f3bcba518d2a1f6abd7181022bb37cf5089794f2",
+      "bytes": 12371,
+      "byte_start_0": 10238,
+      "byte_end_exclusive": 22609,
+      "occurrences": 1
+    },
+    {
+      "id": "sharper",
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "bytes": 15982,
+      "byte_start_0": 22794,
+      "byte_end_exclusive": 38776,
+      "occurrences": 1
+    },
+    {
+      "id": "chain",
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+      "bytes": 20897,
+      "byte_start_0": 39056,
+      "byte_end_exclusive": 59953,
+      "occurrences": 1
+    }
+  ],
+  "exact_note_reconstruction": true,
+  "scoped_files_match_frozen_members": true,
+  "material_findings": [],
+  "nonblocking_precision_points": [
+    {
+      "path": "templates/note_header.md",
+      "line": 56,
+      "text": "The newer chain-scaling proposal is not imported by this note",
+      "assessment": "Non-import is correct. The separate result is already conditionally source-accepted; proposal is imprecise if read as current scientific status. No unaccepted-status claim or mathematical dependence follows, and CLAIM_STATUS.md correctly calls these results. Optional wording: separately accepted chain-scaling results are not imported."
+    }
+  ],
+  "limits": {
+    "mathematical_derivations_or_program_runs": 0,
+    "canonical_or_identity_program_runs": 0,
+    "git_or_network": 0,
+    "new_audit": false,
+    "source_edits": false,
+    "root_integration_delegated": false,
+    "full_archive_and_program_review": "not repeated; root retains integrity/program/installation review",
+    "review_exposure": "same agent/model/source family; source-exposed composition review, not new blind or model-diverse mathematics",
+    "editable_prompt_files_changed": []
+  }
+}

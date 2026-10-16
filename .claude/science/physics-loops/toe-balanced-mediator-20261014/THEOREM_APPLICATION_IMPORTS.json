@@ -1,0 +1,14 @@
+{
+  "current_canonical_identity": {
+    "actual_parent_head": "c1208dca2d6ae78be1c479b6e5e1d0b16579a3d7",
+    "actual_parent_pr": 9570,
+    "bytes": 32063,
+    "path": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "sha256": "7c8503ca162de431ce2fec1e8189a37b877a25920cce7bdcf9e7419a3f66854b"
+  },
+  "direct_mathematical_parent_count": 1,
+  "inherited_open_path_interface_not_new_direct_import": true,
+  "method_rederivation_attribution": "Inherited critical residual; this corollary selects a legal coupling and prices it. No generic gadget or optimization novelty claim.",
+  "source_sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+  "whole_apparatus_NN_native_common_cap_optimality": false
+}

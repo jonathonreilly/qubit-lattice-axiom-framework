@@ -1,0 +1,16 @@
+{
+  "actual_receipt": {
+    "bytes": 1167,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/balanced_parent_change_recovery/BALANCED_MAIN_BRANCH_CREATION.json",
+    "sha256": "b5ce36a0a831cc32d66c34dc17ee4fe3e3755ad6037fffa8e8891941454ea654"
+  },
+  "base": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "base_kind": "observed_origin_main",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-balanced-mediator-main-20261014",
+  "branch_created_by_source_preparer": false,
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "parent_pr": null,
+  "stack_parent": null,
+  "tree": "5a0e4070deecabeb0c30f92468c558dc49c5f0b6"
+}

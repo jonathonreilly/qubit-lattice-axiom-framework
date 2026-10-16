@@ -1,0 +1,63 @@
+{
+  "frontmatter": "---\ntitle: Simultaneous three-Pauli ports with noncommuting shared data\nclaim_id: simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: finite supplied cells, disjoint clean auxiliaries, unchanged H, same-time full-reference prepared map and paid global mixed inverse\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nstatus: proposed_retained\ncanonical_parent_binding_complete: true\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies: [\"finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/simultaneous_multi_port_identity_2026_10_14.py\nclaim_type_reason: self-contained conditional simultaneous port theorem; one methodological citation, zero imported global theorems; no packing, common-cap or native claim\nnext_trace_action: bind actual canonical attribution and clean regular-parent child; separate root program review before execution\n---\n\nClaim type: bounded_theorem\n\n",
+  "historical_suffix_and_proof_preserved": true,
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 32138,
+          "byte_start_inclusive": 8389,
+          "bytes": 23749,
+          "id": "MULTI_PORT",
+          "line_end_inclusive": 319,
+          "line_start_inclusive": 50,
+          "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/DERIVATION.md"
+        }
+      ],
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_sha256": "6df4dccb59a61714ce94f50bf35615340665f74b23b0d8c1716c6af16feb2e4b",
+      "diff_stored_sha256": "6a1cb6d433f2b53aa0354d82088de92183db460412515dd4605e91388c57dda9",
+      "fromfile": "CANDIDATE_NOTE.md",
+      "note": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/DERIVATION.md",
+          "source_sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc"
+        }
+      ],
+      "published_bytes": 32493,
+      "published_lines": 321,
+      "published_sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755",
+      "tofile": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "aa351988c1d87f0ef8e0913693fb937fd807c385e098f4e75ba914cdbaa83732",
+  "wrapper_diff": {
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_sha256": "9ee0f8596ab7ecce330bb81017ffefb670b622a71284df2f3386274fa0d4fe84",
+    "diff_stored_sha256": "d90246fafdbc06efbd4895e01789f098602006a7036b3eb343367898adfd4928",
+    "fromfile": "wrappers/note_prefix.md",
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This new assembly still requires root review. Source acceptance supplies neither publication authority nor retained audit status.",
+      "rendered": "Current binding observation: regular OPEN PR9573 at `103cb68b6541e5f9419463d68ac41d311e3c404d`, clean child `physics-loop/toe-multi-port-global-20261014`, tree `7bc88206b59a5b55dbd777f42b25688140f7e357`. The canonical method attribution is bound at SHA256 `919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4`. Earlier pending-binding wording below records the prebinding source stage; it is superseded only for these supplied receipt facts. Zero global theorem imports and one method citation remain. Separate final root source/program acceptance and execution are still required.\n\nRoot accepted this assembly for publication preparation under MULTI_PORT_ASSEMBLY_ROOT_ACCEPTANCE.json `7b1067fa`. These unbound publication components require separate root review and actual parent/child/main binding. Neither source acceptance nor these components supply execution authority or retained audit status.",
+      "scope": "publication metadata/current source status or attribution qualification only"
+    },
+    {
+      "original": "Publication ancestry and canonical dependency edges remain unbound.",
+      "rendered": "The [finite-range mediator construction](FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md) is cited only for the earlier residual method and its explicitly narrower hypotheses. This note imports no global theorem from it and does not apply its auxiliary-only-penalty lemma to the present data-dependent L. The literal one-cell identity is rederived here; the unpublished four-cell source remains historical attribution, not an asserted published theorem. The citation graph therefore has one attribution edge, while the mathematical global-import count is zero. Publication ancestry remains unbound.",
+      "scope": "publication metadata/current source status or attribution qualification only"
+    },
+    {
+      "original": "The complete original proof follows, with its historical status and exposure wording unchanged.",
+      "rendered": "The complete original proof and the original assembly suffix follow unchanged. Their pending-review or pending-assembly language is historical; the current source and assembly acceptances are stated above.",
+      "scope": "publication metadata/current source status or attribution qualification only"
+    }
+  ]
+}

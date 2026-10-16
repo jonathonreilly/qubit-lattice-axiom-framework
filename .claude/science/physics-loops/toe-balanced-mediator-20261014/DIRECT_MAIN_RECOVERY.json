@@ -1,0 +1,14 @@
+{
+  "balanced_proof_unchanged": "dc4ae71e40ca0f325dfa19bb2e2c7c7d6b8d4335094b34bbfb5ca98b407fb475",
+  "base": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "base_kind": "observed_origin_main",
+  "branch": "physics-loop/toe-balanced-mediator-main-20261014",
+  "current_parent_canonical_sha256": "131168af9a6acf1ab15c1dd0c079ef299a8c97957fff9927c9ae81e5a15a3ba5",
+  "historical_closed_parent": 9570,
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "new_root_acceptance_required": true,
+  "parent_pr": null,
+  "parent_proof_unchanged": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+  "prior_verify_failed_before_focused_checks": true,
+  "tree": "5a0e4070deecabeb0c30f92468c558dc49c5f0b6"
+}

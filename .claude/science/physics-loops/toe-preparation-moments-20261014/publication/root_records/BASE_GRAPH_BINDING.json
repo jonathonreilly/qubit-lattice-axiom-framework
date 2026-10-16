@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-14T21:57:39.879303+00:00",
+  "head": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+  "clean": true,
+  "graph": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/base_graph.json",
+    "bytes": 10428365,
+    "sha256": "69528dd2a0ad0330b345f5cfb8f43271a38b1f406f0027aca3b3943c0ae72b9b"
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/base_graph_manifest.json",
+    "bytes": 1016254,
+    "sha256": "510af72249ad6b8c78162e30cd3fe05c782c85fcbe591ab2c0f930dbd16e4950"
+  },
+  "manifest_function": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+    "bytes": 2049,
+    "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+  },
+  "nodes": 7114,
+  "edges": 16053,
+  "roots": 3192,
+  "complete_tracked_topology_manifest_matches_graph": true,
+  "prior_schema_failure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/BASE_GRAPH_BINDING_FAILED_SCHEMA.json",
+    "bytes": 646,
+    "sha256": "8fd7f93313e7ed94413dde49fb5224b906df8ae7ac5a0b2ba358d512dd82b084"
+  },
+  "mathematical_checks": 0
+}

@@ -1,0 +1,17 @@
+{
+  "branch_ancestry_is_not_a_theorem_import": true,
+  "claim_id": "chain_preparation_moment_scaling_bounded_theorem_note_2026-10-14",
+  "expected_direct_edges": 1,
+  "graph_execution": false,
+  "sole_direct_parent": {
+    "claim_id": "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14",
+    "markdown": "[preparation-moment theorem and restricted-chain prerequisite](MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+    "path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "required_complete_raw_clauses": [
+      "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    ],
+    "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+  },
+  "transitive_be8_is_not_an_added_direct_edge": true
+}

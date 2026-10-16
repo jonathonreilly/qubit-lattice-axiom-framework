@@ -1,0 +1,73 @@
+{
+  "component_acceptance_sha256": "a2d2310ca5ff409cbbaf7ea01df2e73e8957d0c2e4347879dcb538df24e24aaa",
+  "component_freeze_sha256": "659b6e517f8fff8939447a25b7539f97f6cefbeb8d7b41acfcbff5e4c941776f",
+  "evidence": [
+    {
+      "bytes": 2341,
+      "matches": {
+        "/child/base_head_sha": "/facts/child/base_head_sha",
+        "/child/branch": "/facts/child/branch",
+        "/child/clean": "/facts/child/clean",
+        "/child/head_sha": "/facts/child/head_sha",
+        "/child/observed_utc": "/facts/child/observed_utc",
+        "/child/tree_sha": "/facts/child/tree_sha",
+        "/parent/head_ref": "/facts/parent/head_ref",
+        "/parent/head_sha": "/facts/parent/head_sha",
+        "/parent/is_draft": "/facts/parent/is_draft",
+        "/parent/number": "/facts/parent/number",
+        "/parent/observed_utc": "/facts/parent/observed_utc",
+        "/parent/state": "/facts/parent/state",
+        "/parent/url": "/facts/parent/url"
+      },
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/chain/ACTUAL_BINDING_RECEIPT.json",
+      "path": "binding_evidence/00.json",
+      "sha256": "b7c87ef1a09c8b5f7ddb6baa142d427ce0a97c0c627bf9d847477951f491490d"
+    }
+  ],
+  "external_state_independently_queried_by_builder": false,
+  "facts": {
+    "child": {
+      "base_head_sha": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "branch": "physics-loop/toe-chain-preparation-scaling-20261014",
+      "clean": true,
+      "head_sha": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "observed_utc": "2026-10-14T22:24:45.843690+00:00",
+      "tree_sha": "1342d0f7f2d85beb35712ea3adfcec996d40b98c"
+    },
+    "parent": {
+      "canonical_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f",
+      "claim_id": "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14",
+      "head_ref": "physics-loop/toe-preparation-moments-20261014",
+      "head_sha": "84d28d386cf8d8dbbdd4506387ad18296161fe53",
+      "is_draft": false,
+      "number": 9575,
+      "observed_utc": "2026-10-14T22:24:45.407505+00:00",
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9575"
+    }
+  },
+  "observations_are_dated": true,
+  "parent_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 38776,
+      "byte_start_0": 22794,
+      "bytes": 15982,
+      "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+      "source": "source/archive/objects/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 59953,
+      "byte_start_0": 39056,
+      "bytes": 20897,
+      "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+      "source": "source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff"
+    }
+  ],
+  "parent_path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+  "parent_sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f",
+  "prior_binding_source_freeze_sha256": "3b739e10f598dc4d9dbb837f827291a886e9a3edd09ed8227c36b80c9fe57a41",
+  "source_binding_builder_freeze_sha256": "e5db26b252bfc634a50c9d34caf233ae1e210baaec78f32141bd5153a6497680"
+}

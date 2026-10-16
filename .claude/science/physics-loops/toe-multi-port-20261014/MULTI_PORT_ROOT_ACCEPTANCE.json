@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-14T19:26:39.429435+00:00",
+  "disposition": "accepted_conditional_for_source_preparation",
+  "proof": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/DERIVATION.md",
+    "bytes": 23749,
+    "sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/FINAL_FREEZE.json",
+    "bytes": 7900,
+    "sha256": "8df7261aa78f7d732b5bc56d47bbb292d4d073055badc82d9ab35aff57a8f857"
+  },
+  "independent_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_review/REPORT.md",
+    "bytes": 17294,
+    "sha256": "7db2c34d8933ec035d3d91e37857a64513416ae84c6431034c05a962166a68dc"
+  },
+  "independent_review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_review/FINAL_FREEZE.json",
+    "bytes": 15689,
+    "sha256": "40b66a204a2117d20ab29b2ca646014bf15e245f526a4c2af2bbe96bbd6b1115"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/MULTI_PORT_ROOT_REVIEW.md",
+    "bytes": 5144,
+    "sha256": "2f2de29a4722863a276fc3b6752757184a09f2d5228082ae41b67cb795dacbb2"
+  },
+  "root_author_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/multi_port_root_review/SOURCE_BINDING.json",
+    "bytes": 3274,
+    "sha256": "1544ea27589e5cf8494f426299170f2c23a6a0218b07c61130e3b5bcf7d72fb0"
+  },
+  "root_review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/multi_port_root_review/REVIEW_SOURCE_BINDING.json",
+    "bytes": 2256,
+    "sha256": "054a5ce60032bf225f39d42dd75b32321a642cda9b5cb4aa3a7687207cc16233"
+  },
+  "root_preliminary_analytic_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/multi_port_root_review/PRELIMINARY_ANALYTIC_READ.md",
+    "bytes": 4711,
+    "sha256": "249ff7f5d3913e66c3d0aebad5c24f7ff96f952bae0b66f51f0f9bcb2b8023bf"
+  },
+  "new_mathematical_repair_required": false,
+  "publication_approval": false,
+  "retained_audit": false,
+  "native_physical_realization": false,
+  "current_canonical_bindings": null,
+  "actual_independent_control_scope": "One exact preselected three-qubit noncommuting-drive residual/order discriminator, implementation after source exposure; prior method exposure retained.",
+  "source_identity_is_mathematical_proof": false,
+  "editable_prompt_files_changed": []
+}

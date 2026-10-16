@@ -1,0 +1,8 @@
+{
+  "actual_combined_tool_output": "zsh:1: no matches found: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_publication_preparation/CONFORMANCE*\n",
+  "actual_command": "rg -n 'primary_helper|assumption|conformance|claim_type|upstream_dependencies|proposed_retained' /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_publication_preparation/CONFORMANCE* /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_publication_preparation/EXPECTED*",
+  "exit_code": 1,
+  "meaning": "Wrong assumed top-level filename glob; actual packet_text paths were subsequently discovered read-only.",
+  "separate_streams_or_launch_pin_fabricated": false,
+  "tool_chunk_id": "9318e0"
+}

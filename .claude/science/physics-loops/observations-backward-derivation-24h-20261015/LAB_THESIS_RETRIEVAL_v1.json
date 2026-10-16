@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-10-16T06:53:28.653094+00:00",
+  "url": "https://digital.lib.washington.edu/researchworks/bitstreams/6013936a-da00-42b7-ba0a-4dff0cb05bf8/download",
+  "returncode": 0,
+  "elapsed_seconds": 7.836311916820705,
+  "stderr": "",
+  "origin_metadata": "https://digital.lib.washington.edu/researchworks/items/971237d1-100a-41ae-9027-d1bbce8cf315/full",
+  "access_basis": "Official repository marks Open Access and CC BY; direct unauthenticated standard public download, no credentials or access-control bypass",
+  "role": "exposed development/reproduction under LAB_OBSERVATION_ACCESS_PLAN_v1.json",
+  "prior_tool_failures": [
+    "web fetch of old and current official bitstream returned403"
+  ],
+  "content_read": false,
+  "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/Lee_washington_0250E_21241.pdf",
+  "sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+  "bytes": 17382930,
+  "pdf_signature": "%PDF-"
+}

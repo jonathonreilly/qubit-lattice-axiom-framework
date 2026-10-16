@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "Preparation bridge checked; scalar endpoint-normalization route next",
+  "phase": "Weak-source and finite laboratory response checked; actual processed torque records acquired and verified",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T06:18:03.328311+00:00",
+  "updated_at": "2026-10-16T07:06:40.835585+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -14,11 +14,11 @@
   "delivery": "milestone",
   "checkpoint_minutes": 30,
   "block": "common-action reconstruction across environments",
-  "route": "measured preparation -> conditional rest response; return to scalar normalization observations",
+  "route": "observed torsion torque -> finite-source response and physical calibration -> common scalar action constraints",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test.",
+  "next_action": "Reconstruct and check the Lee thesis external-sphere calibration formula and units before any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue. Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations, keep these95processed rows exposed development, and do not replace unavailable positions, covariances, geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable, derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute F and physical environmental registration remain unresolved.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -145,6 +145,15 @@
       "background_9636_head": "02d5c9dcb3cc27f071b6bcbca6f51e22b7737d65",
       "read_scope": "Complete metadata delta and30linePR9636 note delta read; existing hypotheses not adopted, no full new proof review.",
       "other_author_work_modified": false
+    },
+    "read_only_recheck": {
+      "time": "2026-10-16T07:06:40.835585+00:00",
+      "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+      "pr9637_head": "de4db24e811625eeb059beb341e51a1a8487371a",
+      "pr9637_state": "OPEN",
+      "pr9637_shared_landing": "pending;mergeStateStatusBLOCKED",
+      "unchanged": true
     }
   },
   "first_block_files": [
@@ -160,21 +169,24 @@
     "Hensen original deposited records reproduced using frozen published selection; exposed development data. Synthetic network controls are not empirical validation.",
     "Existing Cassini products remain exposed development data.",
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
-    "Measured Newton coupling is not identified with 1/F."
+    "Measured Newton coupling is not identified with 1/F.",
+    "Lee2020 Appendix A.1:95published processed torque rows, all exposed development; dual-engine transcription checked, no model fit or empirical validation. Missing primitive records/corrections and unresolved separation correspondence are retained."
   ],
   "milestone_status": "PR9628,PR9632,PR9634,PR9637 published and attached; shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T06:18:03.328311+00:00",
+    "time": "2026-10-16T07:06:40.835585+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Conditional preparation bridge, signed-weight cost and preserved transition counterexample",
+    "checkpoint_scope": "Scalar source closure, finite-body laboratory bridge, and published processed observation intake",
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T05:33:04.980136+00:00",
-    "commit": "b37b3432e3993cea4e428fc3201c95e33311e94f",
+    "checked_at": "2026-10-16T06:20:25.551879+00:00",
+    "commit": "b1d880c72362480d08fad90ad27b1340c8002180",
+    "remote_head": "b1d880c72362480d08fad90ad27b1340c8002180",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Ringdown common-action and coefficient reconstruction with source-bound focused checks; exact historical diff preserved in gzip"
+    "scope": "Conditional preparation bridge, source-bound independent checks and sharp noise cost; support only",
+    "worktree_clean": true
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -722,5 +734,131 @@
     "prior_art": "Known quadratic-output lifting and polynomial interpolation; Berkane et al. arXiv2312.10684v1 abstract/introduction and displayed closure/lifting equations inspected, not full observer theorem.",
     "delivery": "commits-only support, no new PR",
     "next_action": "Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test."
+  },
+  "scalar_bridge_checkpoint": {
+    "time": "2026-10-16T06:42:20.467110+00:00",
+    "author": "/root personally",
+    "siren_source": "SCALAR_SIREN_BRIDGE_v1.md",
+    "siren_source_sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+    "root_verification": {
+      "checked_at": "2026-10-16T06:42:20.467110+00:00",
+      "author": "/root",
+      "complete_independent_proof_code_results_read": true,
+      "manifest": "independent_scalar_siren_bridge/SCALAR_SIREN_REVIEW_IDENTITY_v1.json",
+      "manifest_sha256": "a1af36b0745a5c9e03e7cfb1b9896c443a2c64a61f369fb5efe6912b7c2ad83f",
+      "all_bindings_verified": 30,
+      "primary_controls": 207,
+      "independent_pre_runner_controls": 96,
+      "post_exposure_comparison_rows": 16,
+      "author_reproduction_byte_identical": true,
+      "counts_overlap_not_pooled": true,
+      "formal_audit": false,
+      "empirical_validation": false
+    },
+    "source_closure_source": "SCALAR_SOURCE_CLOSURE_v2.md",
+    "source_closure_source_sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
+    "source_closure_primary_controls": 174,
+    "source_closure_independent_check": {
+      "checked_at": "2026-10-16T07:00:01.326626+00:00",
+      "author": "/root",
+      "complete_independent_proof_code_results_read": true,
+      "manifest": "independent_scalar_source_closure/MANIFEST_v1.json",
+      "manifest_sha256": "45d5af9634725fc7ef2d89e16044cec0a6c230cdf19b4e146bde779d699331af",
+      "all_artifact_bindings_verified": 19,
+      "all_source_bindings_verified": 7,
+      "independent_controls": 72,
+      "primary_controls": 174,
+      "primary_reproduction_byte_identical": true,
+      "current_source": "SCALAR_SOURCE_CLOSURE_v2.md",
+      "primary_reproduction_source": "SCALAR_SOURCE_CLOSURE_v1.md",
+      "version_relation": "Scope-only correction: a negative scalar mass squared is not alone a general curved-vacuum instability test. V1 and its unchanged runner/output remain preserved. Independent AdS counterexample and corrected v2 are checked.",
+      "counts_overlap_not_pooled": true,
+      "formal_audit": false,
+      "empirical_validation": false
+    },
+    "result": "Leading tensor transport weights endpoint F, but chirp-distance inference also depends on source loss. Within a weak unscreened point-body class, universal scalar charges and scalar radiation can be derived from the supplied action instead of setting the loss to zero. A separate finite-wavelength proxy bounds transport only with interior regularity data.",
+    "conditional_equations": [
+      "D_chirp/DL=(1+eta)/sqrt(Fs/Fo)",
+      "alpha_weak^2=1/(2omega+3)",
+      "eta_quadrupole=alpha_weak^2/6 in massless weak equal-charge limit",
+      "vacuum W_x=W and m_s^2=2(W_xx-W)/(2omega+3) independent of chart normalization C"
+    ],
+    "surviving_premises": [
+      "scalar action class",
+      "actual on-shell endpoint/background and material state",
+      "weak unscreened body approximation, not compact-source sensitivity",
+      "calibrated distance, geometry, inclination and amplitude",
+      "finite-wavelength validity and regularity",
+      "common absolute scale and cross-environment registration"
+    ],
+    "data_roles": "Exact mathematics and frozen synthetic controls only; primary papers exposed for development, no raw new dataset or independent empirical test.",
+    "prior_art": "Known scalar-tensor/siren and multipole physics, rederived as support; no novelty claim or new PR.",
+    "next_action": "Finish the focused weak-source check and checkpoint both scalar support derivations. Then establish a measured weak-body laboratory bridge: derive extended-source scalar response and normalization bounds from measured mass/geometry without choosing a density profile; inspect Lee et al.2020 primary measurement/calibration and data availability before a frozen data-access plan. Keep screening, material stress, source registration and apparatus transfer explicit. No transfer of weak charges to compact objects by assumption.",
+    "source_scope_correction": "V1 overbroad negative-mass claim corrected to flat constant vacuum; curved stability needs background/spectrum/boundary conditions. Explicit AdS counterexample preserved; original174control evidence unchanged."
+  },
+  "lab_bridge_checkpoint": {
+    "time": "2026-10-16T07:06:40.835585+00:00",
+    "author": "/root personally",
+    "source": "LAB_YUKAWA_BRIDGE_v1.md",
+    "source_sha256": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+    "verification": {
+      "checked_at": "2026-10-16T07:05:09.602402+00:00",
+      "author": "/root",
+      "complete_independent_proof_code_results_read": true,
+      "manifest": "independent_lab_yukawa_bridge/LAB_YUKAWA_REVIEW_IDENTITY_v1.json",
+      "manifest_sha256": "a59cd42b47758fd751b9804cc273272790057f76505f9f2db33c12f76756384c",
+      "all_bindings_verified": 23,
+      "primary_controls": 151,
+      "independent_controls": 193,
+      "author_reproduction_byte_identical": true,
+      "counts_overlap_not_pooled": true,
+      "numerical_status": "Floating quadrature and finite differences, not certified enclosures; analytic bounds checked separately",
+      "formal_audit": false,
+      "empirical_validation": false
+    },
+    "result": "Derived the finite-source trace response and geometry-dependent signed torque kernel within the supplied weak unscreened action class. Source support/stress bounds replace a chosen radial density only for a conditional exterior bound. Complex calibration ratios constrain a common scalar strength without fixing gain, but leave absolute GT unidentified. Calibration leakage, zero-channel branches and noise margins are explicit.",
+    "data_source": "Lee2020 thesis Appendix A.1",
+    "data_identity": "LEE2020_DATA_IDENTITY_v1.json",
+    "data_csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+    "rows": 95,
+    "torque_channels": 3,
+    "transcription_check": {
+      "checked_at": "2026-10-16T07:02:07.819656+00:00",
+      "source_pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+      "csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+      "extractor_sha256": "fb9634d6a6f818bcbf377092dd25e2eea608844b83b64f0ddce3be45d3afc002",
+      "pypdf_version": "6.11.0",
+      "pymupdf_version": "1.27.2.3",
+      "rows": 95,
+      "numeric_table_cells_compared": 760,
+      "run_and_page_identifiers_compared": true,
+      "cross_engine_exact_decimal_agreement": true,
+      "original_csv_byte_identical": true,
+      "separation_range_um": [
+        46.2,
+        3036.3
+      ],
+      "all_printed_rows_kept": true,
+      "new_selection_or_model_fitting": false,
+      "data_role": "Exposed processed development data; not an empirical holdout",
+      "empirical_validation": false
+    },
+    "source_review": "LEE2020_VISUAL_AND_SOURCE_REVIEW_v1.json",
+    "data_roles": "Exposed processed development data; no new model fit, no raw records, no empirical holdout",
+    "empirical_validation": false,
+    "surviving_premises": [
+      "fixed weak unscreened action and environmental coefficients",
+      "source stress and material response",
+      "finite-geometry and boundary data",
+      "physical gain and frequency transfer",
+      "actual covariance/uncertainty and per-run corrections",
+      "absolute scale and cross-environment scalar registration"
+    ],
+    "source_correspondence_issues": [
+      "Appendix46.2um minimum versus Chapter11 stated52um, convention unresolved",
+      "Table8.1 prints positive11 exponent forG; no silent input correction"
+    ],
+    "delivery": "commits-only support and source intake; no new PR or formal audit",
+    "next_action": "Reconstruct and check the Lee thesis external-sphere calibration formula and units before any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue. Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations, keep these95processed rows exposed development, and do not replace unavailable positions, covariances, geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable, derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute F and physical environmental registration remain unresolved."
   }
 }

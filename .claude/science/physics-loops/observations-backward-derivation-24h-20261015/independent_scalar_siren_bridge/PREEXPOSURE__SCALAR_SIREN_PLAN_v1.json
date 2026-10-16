@@ -1,0 +1,100 @@
+{
+  "frozen_before_execution": "2026-10-16T06:24:40.490270+00:00",
+  "source": "SCALAR_SIREN_BRIDGE_v1.md",
+  "source_sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+  "data_roles": "exact algebra and synthetic development/reserved controls only; no observed siren or physical F profile",
+  "test_plan": [
+    "exact arbitrary scalar-gradient transverse projection and conformal current",
+    "direct orbital quadrupole differentiation and energy-balance cancellation",
+    "complete leading chirp and strain invariance under positive constant rescaling with constant or dipole-shaped extra loss",
+    "deterministic endpoint registration intervals with correlated bounded inputs",
+    "independent direct-h and transformed-u scattering comparison plus Wronskian and analytic conservative error bounds",
+    "same-endpoint profile ambiguity and global scale invariance"
+  ],
+  "profiles": {
+    "domain": [
+      0,
+      1
+    ],
+    "logF": "a*(10x^3-15x^4+6x^5)+b*64x^3*(1-x)^3",
+    "development": [
+      [
+        0.6,
+        0
+      ],
+      [
+        0.6,
+        0.8
+      ]
+    ],
+    "reserved": [
+      [
+        -0.35,
+        0.25
+      ],
+      [
+        0,
+        0.6
+      ]
+    ],
+    "frequencies": [
+      3,
+      9,
+      45,
+      180
+    ],
+    "global_scalings": [
+      0.3,
+      7
+    ],
+    "solver": "DOP853 rtol1e-10 atol1e-12; compare complex transmission/reflection to3e-8",
+    "analytic_J_upper": "(7.5abs(a)+60abs(b)+(.25)*(1.875abs(a)+12abs(b))^2) on unit interval"
+  },
+  "chirp_controls": {
+    "frequency_grid": [
+      0.03,
+      0.18,
+      101
+    ],
+    "base": {
+      "Kz": 0.7,
+      "rho": 1.4,
+      "DL": 40,
+      "eta0": 0.3,
+      "b": 0.05,
+      "omega_ref": 0.07
+    },
+    "rescalings": [
+      0.9,
+      1.3,
+      2.0
+    ],
+    "counterassumption": "eta=0 naive inferred rho differs from true nonzero eta",
+    "tolerance": 1e-10
+  },
+  "interval_controls": {
+    "seed": 733,
+    "draws": 80,
+    "q_interval": [
+      0.8,
+      1.1
+    ],
+    "eta_interval": [
+      0.1,
+      0.4
+    ],
+    "xs_interval": [
+      -0.2,
+      0.3
+    ],
+    "xo_interval": [
+      0.05,
+      0.2
+    ]
+  },
+  "scope_limits": [
+    "leading supplied source contract, not complete scalar action realizability",
+    "one-dimensional scattering proxy, not an on-shell gravitational background",
+    "no observational or independent empirical validation"
+  ]
+}

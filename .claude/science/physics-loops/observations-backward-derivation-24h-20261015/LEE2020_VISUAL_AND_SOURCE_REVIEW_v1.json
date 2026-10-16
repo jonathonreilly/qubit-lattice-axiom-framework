@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-16T07:05:09.602402+00:00",
+  "author": "/root",
+  "pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+  "table_pages_visually_inspected": [
+    158,
+    159,
+    160,
+    161,
+    162
+  ],
+  "additional_calibration_fit_table_pages_visually_inspected": [
+    107,
+    144,
+    145
+  ],
+  "images": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_a1-158.png",
+      "sha256": "5608155304fcb74abf6d01308f4f068e70c8ed75959af475370a1c16b626f26d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_a1-159.png",
+      "sha256": "3b665190f179d8ed670fb37e06f693cb44a2e1c3e813a395cb043c555a8dff3e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_a1-160.png",
+      "sha256": "55f29527e4609b7d0974b348cf1553442214b6149a06d17a50c7f850cfa2b5b2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_a1-161.png",
+      "sha256": "3a0028718884b4d927e2c348fdb12c09670f64dcef9da67c35a042c4435f13a9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_a1-162.png",
+      "sha256": "58815cac9404044bfd4736029a7a1b0696bac2877e94c3b289e782792f98722d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_analysis-107.png",
+      "sha256": "06c866b60264d98a3708c14a38b4e800b141817ed678f884da71e96cd85dae21"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_analysis-144.png",
+      "sha256": "9a14db109632e84653d796d3307f08caa6704b139032df38698a1875baa205d7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/tmp/pdfs/lee_analysis-145.png",
+      "sha256": "9cefb3d9f828aea3fa12cabc3daf3ec88a1ad9014e9ad5e63ee41597081ef153"
+    }
+  ],
+  "inspection_scope": "All five A.1 table pages viewed for headers, units, row layout, signs and section cutoff; full numeric-cell correspondence is established separately by two-engine extraction, not a claim of manual transcription of every cell. Calibration/fit tables viewed to confirm source typography and offset values.",
+  "text_read_scope": {
+    "complete_chapters": [
+      8,
+      11
+    ],
+    "printed_pages": [
+      [
+        84,
+        95
+      ],
+      [
+        123,
+        137
+      ],
+      [
+        146,
+        151
+      ]
+    ],
+    "earlier_front_matter_and_intro": "TOC, lists, printed1-2; not complete thesis"
+  },
+  "source_issues_preserved": [
+    "A.1 separation minimum46.2um vs Chapter11 description52um, unresolved mapping",
+    "Printed95 G exponent+11 confirmed visually; no silently corrected numeric input"
+  ],
+  "extraction_verification": "LEE2020_EXTRACTION_VERIFICATION_v1.json",
+  "extraction_verification_sha256": "0dcd8fc932c759c8ad39ce1840b503fabdc2a89f2f61b17a33cf6379765893d3",
+  "empirical_validation": false
+}

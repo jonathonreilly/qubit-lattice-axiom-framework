@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-16T06:42:20.467110+00:00",
+  "author": "/root",
+  "complete_independent_proof_code_results_read": true,
+  "manifest": "independent_scalar_siren_bridge/SCALAR_SIREN_REVIEW_IDENTITY_v1.json",
+  "manifest_sha256": "a1af36b0745a5c9e03e7cfb1b9896c443a2c64a61f369fb5efe6912b7c2ad83f",
+  "all_bindings_verified": 30,
+  "primary_controls": 207,
+  "independent_pre_runner_controls": 96,
+  "post_exposure_comparison_rows": 16,
+  "author_reproduction_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "formal_audit": false,
+  "empirical_validation": false
+}

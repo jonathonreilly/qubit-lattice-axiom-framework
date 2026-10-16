@@ -1,0 +1,1251 @@
+{
+  "source_sha256": {
+    "LAB_YUKAWA_BRIDGE_v1.md": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+    "LAB_YUKAWA_PLAN_v1.json": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae",
+    "check_lab_yukawa_bridge_v1.py": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4"
+  },
+  "passed": 151,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Yukawa radial Helmholtz away from source",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial torque derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "decreasing positive radial bound",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "form factor monotonic numerator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "central uniform core potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "complex Mobius difference",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration ratio inversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "zero-mass strength cancellation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive support bound ('uniform', 0)",
+      "passed": true,
+      "Q_over_M": 1.0000000000000002,
+      "upper": 1.0
+    },
+    {
+      "name": "angular/reduced response ('uniform', 0, 1.2)",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "angular/reduced response ('uniform', 0, 2.5)",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "bounded stress trace ('uniform', 0)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('uniform', 0.3)",
+      "passed": true,
+      "Q_over_M": 1.0090289768350584,
+      "upper": 1.0150676448238087
+    },
+    {
+      "name": "angular/reduced response ('uniform', 0.3, 1.2)",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "angular/reduced response ('uniform', 0.3, 2.5)",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "bounded stress trace ('uniform', 0.3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('uniform', 1)",
+      "passed": true,
+      "Q_over_M": 1.103638323514327,
+      "upper": 1.1752011936438014
+    },
+    {
+      "name": "angular/reduced response ('uniform', 1, 1.2)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "angular/reduced response ('uniform', 1, 2.5)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "bounded stress trace ('uniform', 1)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('uniform', 3)",
+      "passed": true,
+      "Q_over_M": 2.2427901177692666,
+      "upper": 3.3392916424699677
+    },
+    {
+      "name": "angular/reduced response ('uniform', 3, 1.2)",
+      "passed": true,
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "angular/reduced response ('uniform', 3, 2.5)",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "name": "bounded stress trace ('uniform', 3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('central', 0)",
+      "passed": true,
+      "Q_over_M": 1.0,
+      "upper": 1.0
+    },
+    {
+      "name": "angular/reduced response ('central', 0, 1.2)",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "angular/reduced response ('central', 0, 2.5)",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "bounded stress trace ('central', 0)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('central', 0.3)",
+      "passed": true,
+      "Q_over_M": 1.006444664791704,
+      "upper": 1.0150676448238087
+    },
+    {
+      "name": "angular/reduced response ('central', 0.3, 1.2)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "angular/reduced response ('central', 0.3, 2.5)",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "bounded stress trace ('central', 0.3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('central', 1)",
+      "passed": true,
+      "Q_over_M": 1.0734430519421174,
+      "upper": 1.1752011936438014
+    },
+    {
+      "name": "angular/reduced response ('central', 1, 1.2)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "angular/reduced response ('central', 1, 2.5)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "bounded stress trace ('central', 1)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('central', 3)",
+      "passed": true,
+      "Q_over_M": 1.8275025411678352,
+      "upper": 3.3392916424699677
+    },
+    {
+      "name": "angular/reduced response ('central', 3, 1.2)",
+      "passed": true,
+      "error": 2.0816681711721685e-17
+    },
+    {
+      "name": "angular/reduced response ('central', 3, 2.5)",
+      "passed": true,
+      "error": 5.421010862427522e-20
+    },
+    {
+      "name": "bounded stress trace ('central', 3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('outer', 0)",
+      "passed": true,
+      "Q_over_M": 0.9999999999999998,
+      "upper": 1.0
+    },
+    {
+      "name": "angular/reduced response ('outer', 0, 1.2)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "angular/reduced response ('outer', 0, 2.5)",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "bounded stress trace ('outer', 0)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('outer', 0.3)",
+      "passed": true,
+      "Q_over_M": 1.0117096991811723,
+      "upper": 1.0150676448238087
+    },
+    {
+      "name": "angular/reduced response ('outer', 0.3, 1.2)",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "angular/reduced response ('outer', 0.3, 2.5)",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "bounded stress trace ('outer', 0.3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('outer', 1)",
+      "passed": true,
+      "Q_over_M": 1.1350407939227225,
+      "upper": 1.1752011936438014
+    },
+    {
+      "name": "angular/reduced response ('outer', 1, 1.2)",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "angular/reduced response ('outer', 1, 2.5)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "bounded stress trace ('outer', 1)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('outer', 3)",
+      "passed": true,
+      "Q_over_M": 2.6831760605290746,
+      "upper": 3.3392916424699677
+    },
+    {
+      "name": "angular/reduced response ('outer', 3, 1.2)",
+      "passed": true,
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "angular/reduced response ('outer', 3, 2.5)",
+      "passed": true,
+      "error": 2.168404344971009e-19
+    },
+    {
+      "name": "bounded stress trace ('outer', 3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('reserved_mixed', 0)",
+      "passed": true,
+      "Q_over_M": 1.0000000000000002,
+      "upper": 1.0
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 0, 1.2)",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 0, 2.5)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "bounded stress trace ('reserved_mixed', 0)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('reserved_mixed', 0.3)",
+      "passed": true,
+      "Q_over_M": 1.010499815311014,
+      "upper": 1.0150676448238087
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 0.3, 1.2)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 0.3, 2.5)",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "bounded stress trace ('reserved_mixed', 0.3)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('reserved_mixed', 1)",
+      "passed": true,
+      "Q_over_M": 1.120834363587394,
+      "upper": 1.1752011936438014
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 1, 1.2)",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 1, 2.5)",
+      "passed": true,
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "bounded stress trace ('reserved_mixed', 1)",
+      "passed": true
+    },
+    {
+      "name": "positive support bound ('reserved_mixed', 3)",
+      "passed": true,
+      "Q_over_M": 2.4804210125885926,
+      "upper": 3.3392916424699677
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 3, 1.2)",
+      "passed": true,
+      "error": 3.469446951953614e-17
+    },
+    {
+      "name": "angular/reduced response ('reserved_mixed', 3, 2.5)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "bounded stress trace ('reserved_mixed', 3)",
+      "passed": true
+    },
+    {
+      "name": "approach central endpoint 0.4",
+      "passed": true,
+      "Q": 1.0000016000009142
+    },
+    {
+      "name": "approach outer endpoint 0.4",
+      "passed": true,
+      "Q": 1.0268537370795747,
+      "upper": 1.0268808145070387
+    },
+    {
+      "name": "approach central endpoint 2",
+      "passed": true,
+      "Q": 1.0000400005714327
+    },
+    {
+      "name": "approach outer endpoint 2",
+      "passed": true,
+      "Q": 1.8124567050144829,
+      "upper": 1.8134302039235093
+    },
+    {
+      "name": "exterior bound does not bound interior",
+      "passed": true,
+      "examples": [
+        {
+          "radius": 0.2,
+          "Q": 1.0040057185204432,
+          "central_potential": 7.5
+        },
+        {
+          "radius": 0.05,
+          "Q": 1.0002500223224622,
+          "central_potential": 30.0
+        },
+        {
+          "radius": 0.01,
+          "Q": 1.0000100000357144,
+          "central_potential": 150.0
+        }
+      ]
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0, 0.13)",
+      "passed": true,
+      "error": 6.408107378064187e-11
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0, 0.8)",
+      "passed": true,
+      "error": 6.083578085736008e-12
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0, 2.1)",
+      "passed": true,
+      "error": 5.690205251429603e-12
+    },
+    {
+      "name": "signed kernel/harmonic bound ([0.7, 0.2, 0], 0)",
+      "passed": true,
+      "max_kernel": 0.34581541875729993,
+      "harmonic": 0.12136264770395165,
+      "bound": 1.1375171702000808
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0.4, 0.13)",
+      "passed": true,
+      "error": 6.112971240312959e-11
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0.4, 0.8)",
+      "passed": true,
+      "error": 7.677358748736651e-12
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 0.4, 2.1)",
+      "passed": true,
+      "error": 4.656941499092682e-12
+    },
+    {
+      "name": "signed kernel/harmonic bound ([0.7, 0.2, 0], 0.4)",
+      "passed": true,
+      "max_kernel": 0.3164023261570084,
+      "harmonic": 0.10575502621900312,
+      "bound": 1.0903292370901634
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 2, 0.13)",
+      "passed": true,
+      "error": 1.8673410040470628e-11
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 2, 0.8)",
+      "passed": true,
+      "error": 7.329255258259337e-12
+    },
+    {
+      "name": "pair energy derivative ([0.7, 0.2, 0], 2, 2.1)",
+      "passed": true,
+      "error": 7.883190628055203e-13
+    },
+    {
+      "name": "signed kernel/harmonic bound ([0.7, 0.2, 0], 2)",
+      "passed": true,
+      "max_kernel": 0.11106964508264901,
+      "harmonic": 0.02484468354215956,
+      "bound": 0.5971179651385783
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0, 0.13)",
+      "passed": true,
+      "error": 1.7193080292798868e-11
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0, 0.8)",
+      "passed": true,
+      "error": 6.915717998268178e-12
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0, 2.1)",
+      "passed": true,
+      "error": 6.875208735657168e-12
+    },
+    {
+      "name": "signed kernel/harmonic bound ([-0.3, 0.8, 0], 0)",
+      "passed": true,
+      "max_kernel": 0.8613008236984099,
+      "harmonic": 0.2450623300024388,
+      "bound": 3.4176014981270124
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0.4, 0.13)",
+      "passed": true,
+      "error": 1.814198791194599e-11
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0.4, 0.8)",
+      "passed": true,
+      "error": 6.759093285069184e-12
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 0.4, 2.1)",
+      "passed": true,
+      "error": 7.678024882551426e-12
+    },
+    {
+      "name": "signed kernel/harmonic bound ([-0.3, 0.8, 0], 0.4)",
+      "passed": true,
+      "max_kernel": 0.8354221433410307,
+      "harmonic": 0.23056077470383293,
+      "bound": 3.357714537938361
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 2, 0.13)",
+      "passed": true,
+      "error": 1.2890556677636056e-11
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 2, 0.8)",
+      "passed": true,
+      "error": 3.2235533686808537e-12
+    },
+    {
+      "name": "pair energy derivative ([-0.3, 0.8, 0], 2, 2.1)",
+      "passed": true,
+      "error": 4.26421398191934e-12
+    },
+    {
+      "name": "signed kernel/harmonic bound ([-0.3, 0.8, 0], 2)",
+      "passed": true,
+      "max_kernel": 0.5358128787256644,
+      "harmonic": 0.10886397359342484,
+      "bound": 2.514530658555299
+    },
+    {
+      "name": "positive masses harmonic cancellation 0",
+      "passed": true,
+      "first_harmonic": 1.5515838457795457e-17,
+      "max_torque": 0.287243063336232
+    },
+    {
+      "name": "positive masses harmonic cancellation 0.4",
+      "passed": true,
+      "first_harmonic": 7.757919228897728e-18,
+      "max_torque": 0.27131757126387024
+    },
+    {
+      "name": "positive masses harmonic cancellation 2",
+      "passed": true,
+      "first_harmonic": 5.485677294651096e-18,
+      "max_torque": 0.10781574338637645
+    },
+    {
+      "name": "density total-variation bound 0",
+      "passed": true,
+      "actual": 0.036441819051830124,
+      "bound": 2.0738005890634716
+    },
+    {
+      "name": "density total-variation bound 0.4",
+      "passed": true,
+      "actual": 0.03276897868305142,
+      "bound": 2.037461181620998
+    },
+    {
+      "name": "density total-variation bound 2",
+      "passed": true,
+      "actual": 0.012328334642632251,
+      "bound": 1.525817203611356
+    },
+    {
+      "name": "ratio model consistency (0, 0)",
+      "passed": true,
+      "error": 2.8609792490763984e-17
+    },
+    {
+      "name": "common gain scale degeneracy (0, 0)",
+      "passed": true
+    },
+    {
+      "name": "massless ratio degeneracy 0",
+      "passed": true
+    },
+    {
+      "name": "ratio model consistency (0, 0.2)",
+      "passed": true,
+      "error": 8.326672684688674e-18
+    },
+    {
+      "name": "common gain scale degeneracy (0, 0.2)",
+      "passed": true
+    },
+    {
+      "name": "massless ratio degeneracy 0.2",
+      "passed": true
+    },
+    {
+      "name": "ratio model consistency (0, 1.5)",
+      "passed": true,
+      "error": 1.3877787807814457e-16
+    },
+    {
+      "name": "common gain scale degeneracy (0, 1.5)",
+      "passed": true
+    },
+    {
+      "name": "massless ratio degeneracy 1.5",
+      "passed": true
+    },
+    {
+      "name": "ratio model consistency (0.4, 0)",
+      "passed": true,
+      "error": 2.8609792490763984e-17
+    },
+    {
+      "name": "common gain scale degeneracy (0.4, 0)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (0.4, 0)",
+      "passed": true,
+      "error": 7.213354005053232e-16
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 0, 0)",
+      "passed": true,
+      "max_error": 1.6168800056647664e-07,
+      "max_bound": 1.616880378531895e-07
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 0, 1)",
+      "passed": true,
+      "max_error": 5.568501733308361e-08,
+      "max_bound": 5.5685021923976e-08
+    },
+    {
+      "name": "ratio model consistency (0.4, 0.2)",
+      "passed": true,
+      "error": 3.437382582245582e-17
+    },
+    {
+      "name": "common gain scale degeneracy (0.4, 0.2)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (0.4, 0.2)",
+      "passed": true,
+      "error": 6.916565479013996e-16
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 0.2, 0)",
+      "passed": true,
+      "max_error": 2.1107983255883876e-07,
+      "max_bound": 2.1107988724933283e-07
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 0.2, 1)",
+      "passed": true,
+      "max_error": 7.269546332973021e-08,
+      "max_bound": 7.269546918818442e-08
+    },
+    {
+      "name": "calibration omission detected (0.4, 0.2)",
+      "passed": true,
+      "max_bias": 0.16815600814807125
+    },
+    {
+      "name": "ratio model consistency (0.4, 1.5)",
+      "passed": true,
+      "error": 1.2609900516398658e-16
+    },
+    {
+      "name": "common gain scale degeneracy (0.4, 1.5)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (0.4, 1.5)",
+      "passed": true,
+      "error": 4.693063571628356e-15
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 1.5, 0)",
+      "passed": true,
+      "max_error": 6.923536177469287e-07,
+      "max_bound": 6.923539438474984e-07
+    },
+    {
+      "name": "complex noisy ratio bound (0.4, 1.5, 1)",
+      "passed": true,
+      "max_error": 2.384451581150727e-07,
+      "max_bound": 2.3844519248793714e-07
+    },
+    {
+      "name": "calibration omission detected (0.4, 1.5)",
+      "passed": true,
+      "max_bias": 1.3681293405883965
+    },
+    {
+      "name": "ratio model consistency (2, 0)",
+      "passed": true,
+      "error": 2.8609792490763984e-17
+    },
+    {
+      "name": "common gain scale degeneracy (2, 0)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (2, 0)",
+      "passed": true,
+      "error": 6.667608503948849e-16
+    },
+    {
+      "name": "complex noisy ratio bound (2, 0, 0)",
+      "passed": true,
+      "max_error": 1.4945504846032506e-07,
+      "max_bound": 1.4945505000456874e-07
+    },
+    {
+      "name": "complex noisy ratio bound (2, 0, 1)",
+      "passed": true,
+      "max_error": 3.088344701418435e-08,
+      "max_bound": 3.088344673869608e-08
+    },
+    {
+      "name": "ratio model consistency (2, 0.2)",
+      "passed": true,
+      "error": 6.13071990641655e-17
+    },
+    {
+      "name": "common gain scale degeneracy (2, 0.2)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (2, 0.2)",
+      "passed": true,
+      "error": 6.028719847757493e-16
+    },
+    {
+      "name": "complex noisy ratio bound (2, 0.2, 0)",
+      "passed": true,
+      "max_error": 1.5144724533928872e-07,
+      "max_bound": 1.5144724665146025e-07
+    },
+    {
+      "name": "complex noisy ratio bound (2, 0.2, 1)",
+      "passed": true,
+      "max_error": 3.129511532421354e-08,
+      "max_bound": 3.129511498726066e-08
+    },
+    {
+      "name": "calibration omission detected (2, 0.2)",
+      "passed": true,
+      "max_bias": 0.03355479691999347
+    },
+    {
+      "name": "ratio model consistency (2, 1.5)",
+      "passed": true,
+      "error": 2.0816681711721685e-17
+    },
+    {
+      "name": "common gain scale degeneracy (2, 1.5)",
+      "passed": true
+    },
+    {
+      "name": "strength reconstructed (2, 1.5)",
+      "passed": true,
+      "error": 1.0731040927780856e-15
+    },
+    {
+      "name": "complex noisy ratio bound (2, 1.5, 0)",
+      "passed": true,
+      "max_error": 1.6471802860590535e-07,
+      "max_bound": 1.6471803027530284e-07
+    },
+    {
+      "name": "complex noisy ratio bound (2, 1.5, 1)",
+      "passed": true,
+      "max_error": 3.403739480987776e-08,
+      "max_bound": 3.403739459988481e-08
+    },
+    {
+      "name": "calibration omission detected (2, 1.5)",
+      "passed": true,
+      "max_bias": 0.3030040861880161
+    },
+    {
+      "name": "pairwise determinants alone insufficient",
+      "passed": true
+    }
+  ],
+  "details": {
+    "radial_controls": [
+      {
+        "profile": "uniform",
+        "mR": 0,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0000000000000002,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "profile": "uniform",
+        "mR": 0,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0000000000000002,
+        "error": 5.551115123125783e-17
+      },
+      {
+        "profile": "uniform",
+        "mR": 0.3,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0090289768350584,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "profile": "uniform",
+        "mR": 0.3,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0090289768350584,
+        "error": 2.7755575615628914e-17
+      },
+      {
+        "profile": "uniform",
+        "mR": 1,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.103638323514327,
+        "error": 0.0
+      },
+      {
+        "profile": "uniform",
+        "mR": 1,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.103638323514327,
+        "error": 0.0
+      },
+      {
+        "profile": "uniform",
+        "mR": 3,
+        "r_over_R": 1.2,
+        "Q_over_M": 2.2427901177692666,
+        "error": 4.163336342344337e-17
+      },
+      {
+        "profile": "uniform",
+        "mR": 3,
+        "r_over_R": 2.5,
+        "Q_over_M": 2.2427901177692666,
+        "error": 1.0842021724855044e-19
+      },
+      {
+        "profile": "central",
+        "mR": 0,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "profile": "central",
+        "mR": 0,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0,
+        "error": 5.551115123125783e-17
+      },
+      {
+        "profile": "central",
+        "mR": 0.3,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.006444664791704,
+        "error": 0.0
+      },
+      {
+        "profile": "central",
+        "mR": 0.3,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.006444664791704,
+        "error": 2.7755575615628914e-17
+      },
+      {
+        "profile": "central",
+        "mR": 1,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0734430519421174,
+        "error": 0.0
+      },
+      {
+        "profile": "central",
+        "mR": 1,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0734430519421174,
+        "error": 0.0
+      },
+      {
+        "profile": "central",
+        "mR": 3,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.8275025411678352,
+        "error": 2.0816681711721685e-17
+      },
+      {
+        "profile": "central",
+        "mR": 3,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.8275025411678352,
+        "error": 5.421010862427522e-20
+      },
+      {
+        "profile": "outer",
+        "mR": 0,
+        "r_over_R": 1.2,
+        "Q_over_M": 0.9999999999999998,
+        "error": 0.0
+      },
+      {
+        "profile": "outer",
+        "mR": 0,
+        "r_over_R": 2.5,
+        "Q_over_M": 0.9999999999999998,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "profile": "outer",
+        "mR": 0.3,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0117096991811723,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "profile": "outer",
+        "mR": 0.3,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0117096991811723,
+        "error": 2.7755575615628914e-17
+      },
+      {
+        "profile": "outer",
+        "mR": 1,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.1350407939227225,
+        "error": 1.1102230246251565e-16
+      },
+      {
+        "profile": "outer",
+        "mR": 1,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.1350407939227225,
+        "error": 0.0
+      },
+      {
+        "profile": "outer",
+        "mR": 3,
+        "r_over_R": 1.2,
+        "Q_over_M": 2.6831760605290746,
+        "error": 4.163336342344337e-17
+      },
+      {
+        "profile": "outer",
+        "mR": 3,
+        "r_over_R": 2.5,
+        "Q_over_M": 2.6831760605290746,
+        "error": 2.168404344971009e-19
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 0,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.0000000000000002,
+        "error": 2.220446049250313e-16
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 0,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.0000000000000002,
+        "error": 0.0
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 0.3,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.010499815311014,
+        "error": 0.0
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 0.3,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.010499815311014,
+        "error": 2.7755575615628914e-17
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 1,
+        "r_over_R": 1.2,
+        "Q_over_M": 1.120834363587394,
+        "error": 5.551115123125783e-17
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 1,
+        "r_over_R": 2.5,
+        "Q_over_M": 1.120834363587394,
+        "error": 6.938893903907228e-18
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 3,
+        "r_over_R": 1.2,
+        "Q_over_M": 2.4804210125885926,
+        "error": 3.469446951953614e-17
+      },
+      {
+        "profile": "reserved_mixed",
+        "mR": 3,
+        "r_over_R": 2.5,
+        "Q_over_M": 2.4804210125885926,
+        "error": 0.0
+      }
+    ],
+    "pair_controls": [
+      {
+        "x": [
+          0.7,
+          0.2,
+          0
+        ],
+        "y": [
+          1.3,
+          -0.4,
+          0.8
+        ],
+        "m": 0,
+        "bound": 1.1375171702000808,
+        "harmonic": [
+          -0.06618430359361346,
+          0.10172772589388737
+        ]
+      },
+      {
+        "x": [
+          0.7,
+          0.2,
+          0
+        ],
+        "y": [
+          1.3,
+          -0.4,
+          0.8
+        ],
+        "m": 0.4,
+        "bound": 1.0903292370901634,
+        "harmonic": [
+          -0.0576727921996477,
+          0.08864521764019925
+        ]
+      },
+      {
+        "x": [
+          0.7,
+          0.2,
+          0
+        ],
+        "y": [
+          1.3,
+          -0.4,
+          0.8
+        ],
+        "m": 2,
+        "bound": 0.5971179651385783,
+        "harmonic": [
+          -0.013548881054842048,
+          0.02082513199170167
+        ]
+      },
+      {
+        "x": [
+          -0.3,
+          0.8,
+          0
+        ],
+        "y": [
+          0.6,
+          0.1,
+          0.5
+        ],
+        "m": 0,
+        "bound": 3.4176014981270124,
+        "harmonic": [
+          -0.24048303395931414,
+          -0.04715353607045373
+        ]
+      },
+      {
+        "x": [
+          -0.3,
+          0.8,
+          0
+        ],
+        "y": [
+          0.6,
+          0.1,
+          0.5
+        ],
+        "m": 0.4,
+        "bound": 3.357714537938361,
+        "harmonic": [
+          -0.22625245835308855,
+          -0.04436322712805657
+        ]
+      },
+      {
+        "x": [
+          -0.3,
+          0.8,
+          0
+        ],
+        "y": [
+          0.6,
+          0.1,
+          0.5
+        ],
+        "m": 2,
+        "bound": 2.514530658555299,
+        "harmonic": [
+          -0.10682971413171877,
+          -0.020947002770925236
+        ]
+      }
+    ],
+    "ratio_controls": [
+      {
+        "m": 0.4,
+        "a": 0,
+        "A_abs": [
+          0.019239022233059035,
+          0.05586276077276908
+        ],
+        "reconstructed": [
+          [
+            -6.046325726113317e-16,
+            3.9337540868689e-16
+          ],
+          [
+            -5.114690200608395e-16,
+            -2.6290463647987063e-17
+          ]
+        ]
+      },
+      {
+        "m": 0.4,
+        "a": 0.2,
+        "A_abs": [
+          0.016838310966092222,
+          0.04889201363362323
+        ],
+        "reconstructed": [
+          [
+            0.20000000000000018,
+            -1.6670747756991857e-17
+          ],
+          [
+            0.20000000000000062,
+            -3.24851878587014e-16
+          ]
+        ]
+      },
+      {
+        "m": 0.4,
+        "a": 1.5,
+        "A_abs": [
+          0.009297323362394227,
+          0.026995870399694623
+        ],
+        "reconstructed": [
+          [
+            1.5000000000000013,
+            -7.7984524915406265e-16
+          ],
+          [
+            1.5000000000000044,
+            -1.5176702727601306e-15
+          ]
+        ]
+      },
+      {
+        "m": 2,
+        "a": 0,
+        "A_abs": [
+          0.020813741238099728,
+          0.10072446665428827
+        ],
+        "reconstructed": [
+          [
+            -5.588874856389407e-16,
+            3.6361354487352766e-16
+          ],
+          [
+            -2.8366565204467996e-16,
+            -1.4580944731268626e-17
+          ]
+        ]
+      },
+      {
+        "m": 2,
+        "a": 0.2,
+        "A_abs": [
+          0.020676391988166197,
+          0.10005978894033665
+        ],
+        "reconstructed": [
+          [
+            0.2000000000000002,
+            -1.6061195214465224e-16
+          ],
+          [
+            0.2000000000000006,
+            1.5401489485612362e-16
+          ]
+        ]
+      },
+      {
+        "m": 2,
+        "a": 1.5,
+        "A_abs": [
+          0.019825989786611237,
+          0.09594441596565675
+        ],
+        "reconstructed": [
+          [
+            1.4999999999999991,
+            6.022387306675539e-16
+          ],
+          [
+            1.4999999999999998,
+            1.7682263778111448e-16
+          ]
+        ]
+      }
+    ]
+  },
+  "data_roles": "Exact algebra and synthetic numerical diagnostics; no empirical fit or independent empirical test",
+  "numerical_status": "Floating quadrature/finite-difference checks, not interval-certified integration; analytic inequalities are separately derived in note"
+}

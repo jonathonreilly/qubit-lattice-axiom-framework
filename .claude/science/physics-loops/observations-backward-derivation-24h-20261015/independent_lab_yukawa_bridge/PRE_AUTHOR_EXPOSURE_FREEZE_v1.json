@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-16T06:57:26.742091+00:00",
+  "author_runner_read": false,
+  "author_results_read": false,
+  "identities": {
+    "PRECHECK_v1.md": "7c9bf5b47835683fe2e42f4ed3c19a93b033fd1557264150a0fabeaf9c3e511d",
+    "independent_controls_v1.py": "9f735a7b684825a0c782eab5dfb6a98365e69fc144fbd7d6051b06a22ccfbd54",
+    "INDEPENDENT_RESULTS_v1.json": "59b0a67d9b2a09048bdf3fcf3531d0050fd3f6eb6c6ecf4fb5cf564e04521f1a",
+    "INDEPENDENT_STDOUT_v1.txt": "f816b74fdadf0991749966c275786a6994ce955d949d9857fe9b0408ab425190",
+    "INDEPENDENT_STDERR_v1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "INDEPENDENT_EXECUTION_v1.json": "1bfa768ef930d33d31422c657e6fd9ef2081eb32e7b5b4f72d893eca2753a760"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-16T07:08:12.324600+00:00",
+  "original_exit": 2,
+  "diagnostics": 96,
+  "only_file": "LEE2020_APPENDIX_A1_v1.csv",
+  "cause": "Pinned CSV uses standard CRLF line endings; git default whitespace detection labels every carriage return trailing whitespace. No data or derivation failure.",
+  "raw_diagnostic_runtime_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/LAB_STAGED_WHITESPACE_INITIAL_v1.txt",
+  "raw_diagnostic_sha256": "c6c8e74faf6326089e65ed68d0e7623c8d5f6da55379c114849cd7d54c504466",
+  "recovery": "An exact-file .gitattributes rule accepts CR only at EOL and disables text normalization to preserve pinned CSV bytes. Ordinary trailing whitespace, blank EOF and space-before-tab checks remain enabled. No global git setting changes.",
+  "scientific_conclusion": null
+}

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-16T07:00:01.326626+00:00",
+  "author": "/root",
+  "complete_independent_proof_code_results_read": true,
+  "manifest": "independent_scalar_source_closure/MANIFEST_v1.json",
+  "manifest_sha256": "45d5af9634725fc7ef2d89e16044cec0a6c230cdf19b4e146bde779d699331af",
+  "all_artifact_bindings_verified": 19,
+  "all_source_bindings_verified": 7,
+  "independent_controls": 72,
+  "primary_controls": 174,
+  "primary_reproduction_byte_identical": true,
+  "current_source": "SCALAR_SOURCE_CLOSURE_v2.md",
+  "primary_reproduction_source": "SCALAR_SOURCE_CLOSURE_v1.md",
+  "version_relation": "Scope-only correction: a negative scalar mass squared is not alone a general curved-vacuum instability test. V1 and its unchanged runner/output remain preserved. Independent AdS counterexample and corrected v2 are checked.",
+  "counts_overlap_not_pooled": true,
+  "formal_audit": false,
+  "empirical_validation": false
+}

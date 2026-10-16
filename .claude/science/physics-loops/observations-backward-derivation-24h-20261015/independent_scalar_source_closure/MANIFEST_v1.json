@@ -1,0 +1,85 @@
+{
+  "created_at_utc": "2026-10-16T06:54:00.727317+00:00",
+  "kind": "Focused independent source-closure evidence manifest",
+  "self_excluded": true,
+  "source_binding": "FINAL_SOURCE_BINDING_v1.json",
+  "report": "REPORT_v1.md",
+  "files": {
+    "DERIVATION_BEFORE_CODE.md": {
+      "sha256": "d5351fc051721a3c59233dfb2aeda3c1f270dce19b516035b72d9d079a6a5c0f",
+      "bytes": 6566
+    },
+    "FAILURE_AND_CHANGE_RECORD_v1.json": {
+      "sha256": "235ba97ab221339675d1fbc9ccb13b15d62511b3f5a5ca439a56fc00d7918284",
+      "bytes": 2464
+    },
+    "FINAL_SOURCE_BINDING_v1.json": {
+      "sha256": "bb5b7c6a4cf05b6da4cf97a86af842642e90503ee9134af6ce7b96e2fad9f449",
+      "bytes": 1310
+    },
+    "PRE_CODE_SOURCE_BINDING.json": {
+      "sha256": "cf075fac34c38b4d25193ba362ff0626fc726c413dae22bb4804f75ba4a699db",
+      "bytes": 1139
+    },
+    "REPORT_v1.md": {
+      "sha256": "6ae3ce627ed378b65b6d21e39c5a1ab277b0a169449f29ef0c7043c9e88d47e1",
+      "bytes": 6618
+    },
+    "SOURCE_DELTA_v1_to_v2.json": {
+      "sha256": "e82a33f8bfb468073d5519d056d9fa0cb1a454da5048043775056ba20dda90ba",
+      "bytes": 3028
+    },
+    "SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "88dfbed2b80d8de228979d7449b475427f9007e204d5d6d1c4f8dadfc3c2add9",
+      "bytes": 79029
+    },
+    "author_attempt01.run.json": {
+      "sha256": "edfa487d1267f9ddd4f6309474d032d49addc043c937572c235ee1d411aa4853",
+      "bytes": 6197
+    },
+    "author_attempt01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "author_attempt01.stdout.json": {
+      "sha256": "a6a0d53d65d054293b8bee455e6ef76b8b8cbbb651fb5f2ba77a63f8b335a342",
+      "bytes": 36576
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "69b0fc2bcd0580ffd6564069772a651984579f2fb14b12c470835a1f135f0d59",
+      "bytes": 6100
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "8b130ebca84e7ec042318bef6c1e56650ce1118e8a56f1a4d4901eefc943e35f",
+      "bytes": 4234
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "8786053f5d436752ef6226755da811a888ee908995ef1a3142ddff33dd7acfa1",
+      "bytes": 11691
+    },
+    "independent_controls_v1.py": {
+      "sha256": "6b9f264818c8f9a854b228162d2652fd71f5f37a2dba5614637ea505d01e1396",
+      "bytes": 13685
+    },
+    "observe_author_reads_v1.py": {
+      "sha256": "bfafe110b1f38f3d3c02ea4dc3f2bb072742070240b49058d86b8dcc3f5154ce",
+      "bytes": 1765
+    },
+    "observed_author_attempt01.run.json": {
+      "sha256": "d9a932bf47db5f52cf2156b2b9d55aeb30942dcc40c0fc300fec6f469209a85f",
+      "bytes": 6237
+    },
+    "observed_author_attempt01.stderr.txt": {
+      "sha256": "cdf0c98694a6e643a7a043b9c006a5707c70d53abc2e7d3a7c70f96f76358c17",
+      "bytes": 1855
+    },
+    "observed_author_attempt01.stdout.json": {
+      "sha256": "a6a0d53d65d054293b8bee455e6ef76b8b8cbbb651fb5f2ba77a63f8b335a342",
+      "bytes": 36576
+    },
+    "run_bounded_checks_v1.py": {
+      "sha256": "68ad8c5dbb66ac23caed9fe1d363f1a50d56699384d2313763cbe7c43f8d9a1d",
+      "bytes": 5157
+    }
+  }
+}

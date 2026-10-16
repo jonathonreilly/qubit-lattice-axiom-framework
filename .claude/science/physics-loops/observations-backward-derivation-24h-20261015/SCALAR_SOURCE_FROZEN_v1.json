@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-16T06:34:37.469662+00:00",
+  "sources": {
+    "SCALAR_SOURCE_CLOSURE_v1.md": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+    "SCALAR_SOURCE_PLAN_v1.json": "7accf5f24d12abe6b231b2379e4167d706905ade4928f69573e5202b08039ed0",
+    "check_scalar_source_closure_v1.py": "df0f437428fdda2d1b001899f53a2236f5e2056b1a1d33bbb803b9b6e6ddc37e"
+  }
+}

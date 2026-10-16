@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-16T06:46:18.310239+00:00",
+  "url": "https://arxiv.org/html/2002.11761v1",
+  "returncode": 0,
+  "elapsed_seconds": 0.10876487521454692,
+  "stderr": "",
+  "purpose": "Exact public primary source retrieval after main-text exposure; not a new independent dataset",
+  "path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/lee2020-arxiv2002.11761v1.html",
+  "sha256": "842624bb53b0a162d44c9eac5db2417b85dc1faec10fec43d90c2800ba579b8f",
+  "bytes": 107125
+}

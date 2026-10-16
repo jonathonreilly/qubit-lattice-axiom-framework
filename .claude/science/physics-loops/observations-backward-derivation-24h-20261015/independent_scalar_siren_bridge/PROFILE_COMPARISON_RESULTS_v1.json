@@ -1,0 +1,249 @@
+{
+  "scope": "Post-exposure all16author profile rows; independent Radau physical flux coordinates, no imported author solver",
+  "source_sha256": "32755c16427db99b785cde5e91a1379be35c0ecfb477218b994bcbea8e14aef0",
+  "reference_sha256": "e0371c260ea76461f08d4631f156f85ab218eff285a53a52b30234d96c7fe584",
+  "passed": 16,
+  "failed": 0,
+  "rows": [
+    {
+      "profile_index": 0,
+      "k": 3,
+      "transmission": [
+        0.732123832999201,
+        -0.019672947518730388
+      ],
+      "reflection": [
+        0.14830146519698192,
+        -0.025221487409485023
+      ],
+      "author_difference": 7.958272401594373e-12,
+      "weighted_flux_error": 6.927791673660977e-14,
+      "passed": true
+    },
+    {
+      "profile_index": 0,
+      "k": 9,
+      "transmission": [
+        0.7407975265913005,
+        -0.005518760437026704
+      ],
+      "reflection": [
+        -0.0005535763639788777,
+        0.0002553757914343464
+      ],
+      "author_difference": 4.087265021006345e-11,
+      "weighted_flux_error": 3.211875210240578e-13,
+      "passed": true
+    },
+    {
+      "profile_index": 0,
+      "k": 45,
+      "transmission": [
+        0.7408174617420051,
+        -0.0010599176651991948
+      ],
+      "reflection": [
+        2.2985548037968208e-05,
+        3.711252662705752e-05
+      ],
+      "author_difference": 2.1272732298107502e-10,
+      "weighted_flux_error": 1.5407675135747922e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 0,
+      "k": 180,
+      "transmission": [
+        0.7408181734243282,
+        -0.00026460291243118883
+      ],
+      "reflection": [
+        3.74606180648347e-07,
+        5.011082268808605e-07
+      ],
+      "author_difference": 8.52357287574853e-10,
+      "weighted_flux_error": 6.108447081487611e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 1,
+      "k": 3,
+      "transmission": [
+        0.5990984449634534,
+        -0.03766642284119287
+      ],
+      "reflection": [
+        0.000633408682057468,
+        -0.586021748654811
+      ],
+      "author_difference": 2.2643019577233528e-11,
+      "weighted_flux_error": 7.771561172376096e-15,
+      "passed": true
+    },
+    {
+      "profile_index": 1,
+      "k": 9,
+      "transmission": [
+        0.7381489250449893,
+        -0.04713894806663718
+      ],
+      "reflection": [
+        0.02333379076670312,
+        0.05099020779233786
+      ],
+      "author_difference": 2.1058634708538572e-11,
+      "weighted_flux_error": 1.2889689315898067e-13,
+      "passed": true
+    },
+    {
+      "profile_index": 1,
+      "k": 45,
+      "transmission": [
+        0.7407738591901687,
+        -0.008106020144919457
+      ],
+      "reflection": [
+        -0.00012567587703442206,
+        0.00013089430780748596
+      ],
+      "author_difference": 2.126990438680234e-10,
+      "weighted_flux_error": 1.4772627565662333e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 1,
+      "k": 180,
+      "transmission": [
+        0.7408154757369295,
+        -0.0020166779280240132
+      ],
+      "reflection": [
+        -2.645063565308896e-06,
+        2.7682952608571817e-06
+      ],
+      "author_difference": 8.524614927483361e-10,
+      "weighted_flux_error": 8.714140520282854e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 2,
+      "k": 3,
+      "transmission": [
+        1.1625694139065654,
+        -0.015547870174071332
+      ],
+      "reflection": [
+        -0.11520390033577954,
+        -0.18472707653775983
+      ],
+      "author_difference": 4.078008193665547e-11,
+      "weighted_flux_error": 1.1213252548714081e-14,
+      "passed": true
+    },
+    {
+      "profile_index": 2,
+      "k": 9,
+      "transmission": [
+        1.1910424166016091,
+        -0.009523236864621865
+      ],
+      "reflection": [
+        0.0074398401001892845,
+        0.014928918560214442
+      ],
+      "author_difference": 6.235343397885604e-11,
+      "weighted_flux_error": 1.0225154056797692e-13,
+      "passed": true
+    },
+    {
+      "profile_index": 2,
+      "k": 45,
+      "transmission": [
+        1.1912450211072056,
+        -0.0016861893661013205
+      ],
+      "reflection": [
+        -5.9243676463775046e-05,
+        6.737802568455568e-06
+      ],
+      "author_difference": 3.419920302973046e-10,
+      "weighted_flux_error": 6.251665851664256e-13,
+      "passed": true
+    },
+    {
+      "profile_index": 2,
+      "k": 180,
+      "transmission": [
+        1.1912461426009529,
+        -0.00041991251504513993
+      ],
+      "reflection": [
+        -1.160811397868538e-06,
+        4.1209332042151473e-07
+      ],
+      "author_difference": 1.370287444524071e-09,
+      "weighted_flux_error": 2.067568338759429e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 3,
+      "k": 3,
+      "transmission": [
+        0.8915971243469634,
+        -0.021391387930553396
+      ],
+      "reflection": [
+        -0.07455415715672098,
+        -0.4461374833269156
+      ],
+      "author_difference": 7.322216565850857e-11,
+      "weighted_flux_error": 7.105427357601002e-15,
+      "passed": true
+    },
+    {
+      "profile_index": 3,
+      "k": 9,
+      "transmission": [
+        0.9986558558273595,
+        -0.03147818449956935
+      ],
+      "reflection": [
+        0.018143689851937025,
+        0.03696501103375204
+      ],
+      "author_difference": 3.8054108477302006e-11,
+      "weighted_flux_error": 1.6653345369377348e-13,
+      "passed": true
+    },
+    {
+      "profile_index": 3,
+      "k": 45,
+      "transmission": [
+        0.9999856842992754,
+        -0.005349220220194073
+      ],
+      "reflection": [
+        -0.00011069909422211163,
+        6.916283024836901e-05
+      ],
+      "author_difference": 2.87143995580432e-10,
+      "weighted_flux_error": 1.7593704271234856e-12,
+      "passed": true
+    },
+    {
+      "profile_index": 3,
+      "k": 180,
+      "transmission": [
+        0.9999991151047758,
+        -0.0013303296737650072
+      ],
+      "reflection": [
+        -2.263016086953538e-06,
+        1.6951654714782171e-06
+      ],
+      "author_difference": 1.1504607575764585e-09,
+      "weighted_flux_error": 4.629741034989365e-12,
+      "passed": true
+    }
+  ]
+}

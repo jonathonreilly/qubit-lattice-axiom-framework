@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-16T07:02:07.819656+00:00",
+  "source_pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+  "csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+  "extractor_sha256": "fb9634d6a6f818bcbf377092dd25e2eea608844b83b64f0ddce3be45d3afc002",
+  "pypdf_version": "6.11.0",
+  "pymupdf_version": "1.27.2.3",
+  "rows": 95,
+  "numeric_table_cells_compared": 760,
+  "run_and_page_identifiers_compared": true,
+  "cross_engine_exact_decimal_agreement": true,
+  "original_csv_byte_identical": true,
+  "separation_range_um": [
+    46.2,
+    3036.3
+  ],
+  "all_printed_rows_kept": true,
+  "new_selection_or_model_fitting": false,
+  "data_role": "Exposed processed development data; not an empirical holdout",
+  "empirical_validation": false
+}

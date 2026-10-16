@@ -1,0 +1,877 @@
+{
+  "scope": "Independent exact algebra plus synthetic physical-flux Radau versus constant-Q layers and Volterra quadrature; no empirical test",
+  "source_sha256": "c4788d28c255fef06fc9c3faed9f58e7d2bc62dbb87f6e004b18d860ee8188e9",
+  "passed": 96,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "TT arbitrary-gradient plus",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "TT transverse plus",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "TT trace plus",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "TT arbitrary-gradient cross",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "TT transverse cross",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "TT trace cross",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "canonical kinetic coefficient",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "four-dimensional current weight",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "circular quadrupole contraction",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "Gc distinct source balance",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "distance ratio",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "constant plus dipole chirp ambiguity",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "amplitude ambiguity",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "S prime squared integral",
+      "passed": true,
+      "expression": "0"
+    },
+    {
+      "name": "correlated registration conservative box",
+      "passed": true,
+      "lower": -0.5056667430197697,
+      "upper": 1.2635648328510758,
+      "actual_min": 0.13124071921729952,
+      "actual_max": 0.6309950041666628
+    },
+    {
+      "name": "analytic J enclosure (0.45, 0.3)",
+      "passed": true,
+      "J": 3.6938678576037796,
+      "upper": 5.5438419246990405
+    },
+    {
+      "name": "independent layer/flux ODE (0.45, 0.3, 1.7)",
+      "passed": true,
+      "error": 3.322559320327892e-08,
+      "coarse_error": 5.316092168461804e-07
+    },
+    {
+      "name": "layer refinement (0.45, 0.3, 1.7)",
+      "passed": true,
+      "fine": 3.322559320327892e-08,
+      "coarse": 5.316092168461804e-07
+    },
+    {
+      "name": "physical weighted flux (0.45, 0.3, 1.7)",
+      "passed": true,
+      "error": 1.5543122344752192e-15,
+      "unweighted_flux": 0.6902371879947391
+    },
+    {
+      "name": "real transfer determinant (0.45, 0.3, 1.7)",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "conservative scattering bounds (0.45, 0.3, 1.7)",
+      "passed": true,
+      "m": 42.52090350183135
+    },
+    {
+      "name": "Volterra independent quadrature (0.45, 0.3, 1.7)",
+      "passed": true,
+      "errors": [
+        3.5192436466488436e-13,
+        5.336163464153486e-13,
+        1.0404051879674556e-13
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (0.45, 0.3, 4.3)",
+      "passed": true,
+      "error": 2.0400699296482736e-08,
+      "coarse_error": 3.26410868634006e-07
+    },
+    {
+      "name": "layer refinement (0.45, 0.3, 4.3)",
+      "passed": true,
+      "fine": 2.0400699296482736e-08,
+      "coarse": 3.26410868634006e-07
+    },
+    {
+      "name": "physical weighted flux (0.45, 0.3, 4.3)",
+      "passed": true,
+      "error": 7.09432512735475e-14,
+      "unweighted_flux": 0.673976368754717
+    },
+    {
+      "name": "real transfer determinant (0.45, 0.3, 4.3)",
+      "passed": true,
+      "error": 7.860379014346108e-14
+    },
+    {
+      "name": "conservative scattering bounds (0.45, 0.3, 4.3)",
+      "passed": true,
+      "m": 2.340094022795475
+    },
+    {
+      "name": "Volterra independent quadrature (0.45, 0.3, 4.3)",
+      "passed": true,
+      "errors": [
+        2.6520706516046823e-12,
+        3.480992043177254e-13,
+        3.5104125382955846e-13
+      ]
+    },
+    {
+      "name": "global F scale (0.45, 0.3, 4.3)",
+      "passed": true,
+      "error": 1.9926589689013934e-14
+    },
+    {
+      "name": "independent layer/flux ODE (0.45, 0.3, 13.0)",
+      "passed": true,
+      "error": 8.840148775463288e-09,
+      "coarse_error": 1.414430412730182e-07
+    },
+    {
+      "name": "layer refinement (0.45, 0.3, 13.0)",
+      "passed": true,
+      "fine": 8.840148775463288e-09,
+      "coarse": 1.414430412730182e-07
+    },
+    {
+      "name": "physical weighted flux (0.45, 0.3, 13.0)",
+      "passed": true,
+      "error": 6.999956170261612e-13,
+      "unweighted_flux": 0.6376601434168659
+    },
+    {
+      "name": "real transfer determinant (0.45, 0.3, 13.0)",
+      "passed": true,
+      "error": 6.998845947236987e-13
+    },
+    {
+      "name": "conservative scattering bounds (0.45, 0.3, 13.0)",
+      "passed": true,
+      "m": 0.3266194946393075
+    },
+    {
+      "name": "Volterra independent quadrature (0.45, 0.3, 13.0)",
+      "passed": true,
+      "errors": [
+        9.428035469461007e-13,
+        5.1015027820535696e-14,
+        2.9645245574764334e-12
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (0.45, 0.3, 37.0)",
+      "passed": true,
+      "error": 3.143171832504184e-09,
+      "coarse_error": 5.02912495265368e-08
+    },
+    {
+      "name": "layer refinement (0.45, 0.3, 37.0)",
+      "passed": true,
+      "fine": 3.143171832504184e-09,
+      "coarse": 5.02912495265368e-08
+    },
+    {
+      "name": "physical weighted flux (0.45, 0.3, 37.0)",
+      "passed": true,
+      "error": 1.63069557856943e-12,
+      "unweighted_flux": 0.6376282383516999
+    },
+    {
+      "name": "real transfer determinant (0.45, 0.3, 37.0)",
+      "passed": true,
+      "error": 1.6302514893595799e-12
+    },
+    {
+      "name": "conservative scattering bounds (0.45, 0.3, 37.0)",
+      "passed": true,
+      "m": 0.0870263981751629
+    },
+    {
+      "name": "Volterra independent quadrature (0.45, 0.3, 37.0)",
+      "passed": true,
+      "errors": [
+        8.319480544684952e-13,
+        8.198285806127537e-13,
+        3.151744242886885e-13
+      ]
+    },
+    {
+      "name": "analytic J enclosure (-0.55, -0.2)",
+      "passed": true,
+      "J": 3.211730439470609,
+      "upper": 5.089511127725391
+    },
+    {
+      "name": "independent layer/flux ODE (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "error": 2.7652867127658645e-08,
+      "coarse_error": 4.4244581266820835e-07
+    },
+    {
+      "name": "layer refinement (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "fine": 2.7652867127658645e-08,
+      "coarse": 4.4244581266820835e-07
+    },
+    {
+      "name": "physical weighted flux (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "error": 5.551115123125783e-16,
+      "unweighted_flux": 1.6438025391411877
+    },
+    {
+      "name": "real transfer determinant (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "conservative scattering bounds (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "m": 29.881406292327455
+    },
+    {
+      "name": "Volterra independent quadrature (-0.55, -0.2, 1.7)",
+      "passed": true,
+      "errors": [
+        3.3306221781873576e-13,
+        1.380431909542487e-12,
+        1.2942855971061703e-13
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "error": 7.8217032400106e-09,
+      "coarse_error": 1.251472819428588e-07
+    },
+    {
+      "name": "layer refinement (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "fine": 7.8217032400106e-09,
+      "coarse": 1.251472819428588e-07
+    },
+    {
+      "name": "physical weighted flux (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "error": 1.247890679678676e-13,
+      "unweighted_flux": 1.6724242701571874
+    },
+    {
+      "name": "real transfer determinant (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "error": 1.3633538742396922e-13
+    },
+    {
+      "name": "conservative scattering bounds (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "m": 1.9329103414913087
+    },
+    {
+      "name": "Volterra independent quadrature (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "errors": [
+        1.2379322774063704e-13,
+        3.4317773915005984e-13,
+        1.36222575690178e-13
+      ]
+    },
+    {
+      "name": "global F scale (-0.55, -0.2, 4.3)",
+      "passed": true,
+      "error": 1.6207735234714224e-14
+    },
+    {
+      "name": "independent layer/flux ODE (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "error": 5.725353189979459e-09,
+      "coarse_error": 9.160609922027723e-08
+    },
+    {
+      "name": "layer refinement (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "fine": 5.725353189979459e-09,
+      "coarse": 9.160609922027723e-08
+    },
+    {
+      "name": "physical weighted flux (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "error": 6.900036098045348e-13,
+      "unweighted_flux": 1.7332305734871785
+    },
+    {
+      "name": "real transfer determinant (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "error": 6.894484982922222e-13
+    },
+    {
+      "name": "conservative scattering bounds (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "m": 0.2895538752426702
+    },
+    {
+      "name": "Volterra independent quadrature (-0.55, -0.2, 13.0)",
+      "passed": true,
+      "errors": [
+        7.034612855629659e-13,
+        2.416398897255511e-12,
+        1.939133440706559e-12
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "error": 2.1164885463162545e-09,
+      "coarse_error": 3.3864201496490955e-08
+    },
+    {
+      "name": "layer refinement (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "fine": 2.1164885463162545e-09,
+      "coarse": 3.3864201496490955e-08
+    },
+    {
+      "name": "physical weighted flux (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "error": 1.2353451595004117e-12,
+      "unweighted_flux": 1.733252938499893
+    },
+    {
+      "name": "real transfer determinant (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "error": 1.2350120925930241e-12
+    },
+    {
+      "name": "conservative scattering bounds (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "m": 0.07891934021128956
+    },
+    {
+      "name": "Volterra independent quadrature (-0.55, -0.2, 37.0)",
+      "passed": true,
+      "errors": [
+        1.0213914060990872e-12,
+        2.8288341305940083e-13,
+        3.1789411206080902e-12
+      ]
+    },
+    {
+      "name": "analytic J enclosure (0.0, 0.65)",
+      "passed": true,
+      "J": 6.988476413741257,
+      "upper": 8.929961074943161
+    },
+    {
+      "name": "independent layer/flux ODE (0.0, 0.65, 1.7)",
+      "passed": true,
+      "error": 4.770692968795773e-08,
+      "coarse_error": 7.633104212543509e-07
+    },
+    {
+      "name": "layer refinement (0.0, 0.65, 1.7)",
+      "passed": true,
+      "fine": 4.770692968795773e-08,
+      "coarse": 7.633104212543509e-07
+    },
+    {
+      "name": "physical weighted flux (0.0, 0.65, 1.7)",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "unweighted_flux": 1.0000000000000018
+    },
+    {
+      "name": "real transfer determinant (0.0, 0.65, 1.7)",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "conservative scattering bounds (0.0, 0.65, 1.7)",
+      "passed": true,
+      "m": 501.9772920589069
+    },
+    {
+      "name": "Volterra independent quadrature (0.0, 0.65, 1.7)",
+      "passed": true,
+      "errors": [
+        3.9657246498086617e-13,
+        1.3452527183704627e-12,
+        1.0795692294758522e-13
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (0.0, 0.65, 4.3)",
+      "passed": true,
+      "error": 4.478419728244262e-08,
+      "coarse_error": 7.165464268046526e-07
+    },
+    {
+      "name": "layer refinement (0.0, 0.65, 4.3)",
+      "passed": true,
+      "fine": 4.478419728244262e-08,
+      "coarse": 7.165464268046526e-07
+    },
+    {
+      "name": "physical weighted flux (0.0, 0.65, 4.3)",
+      "passed": true,
+      "error": 9.325873406851315e-15,
+      "unweighted_flux": 0.9999999999999907
+    },
+    {
+      "name": "real transfer determinant (0.0, 0.65, 4.3)",
+      "passed": true,
+      "error": 1.3211653993039363e-14
+    },
+    {
+      "name": "conservative scattering bounds (0.0, 0.65, 4.3)",
+      "passed": true,
+      "m": 8.284488960008117
+    },
+    {
+      "name": "Volterra independent quadrature (0.0, 0.65, 4.3)",
+      "passed": true,
+      "errors": [
+        1.5561018890717065e-12,
+        5.763256244181064e-13,
+        1.3200940066688868e-12
+      ]
+    },
+    {
+      "name": "global F scale (0.0, 0.65, 4.3)",
+      "passed": true,
+      "error": 2.746904689522024e-14
+    },
+    {
+      "name": "independent layer/flux ODE (0.0, 0.65, 13.0)",
+      "passed": true,
+      "error": 2.0007176541544852e-08,
+      "coarse_error": 3.2011599345711584e-07
+    },
+    {
+      "name": "layer refinement (0.0, 0.65, 13.0)",
+      "passed": true,
+      "fine": 2.0007176541544852e-08,
+      "coarse": 3.2011599345711584e-07
+    },
+    {
+      "name": "physical weighted flux (0.0, 0.65, 13.0)",
+      "passed": true,
+      "error": 6.250555628639631e-13,
+      "unweighted_flux": 0.9999999999993749
+    },
+    {
+      "name": "real transfer determinant (0.0, 0.65, 13.0)",
+      "passed": true,
+      "error": 6.252776074688882e-13
+    },
+    {
+      "name": "conservative scattering bounds (0.0, 0.65, 13.0)",
+      "passed": true,
+      "m": 0.6826558547645013
+    },
+    {
+      "name": "Volterra independent quadrature (0.0, 0.65, 13.0)",
+      "passed": true,
+      "errors": [
+        1.549929095367984e-12,
+        2.2785596110284725e-12,
+        1.6294296676669858e-12
+      ]
+    },
+    {
+      "name": "independent layer/flux ODE (0.0, 0.65, 37.0)",
+      "passed": true,
+      "error": 6.722114874676987e-09,
+      "coarse_error": 1.0755507259947907e-07
+    },
+    {
+      "name": "layer refinement (0.0, 0.65, 37.0)",
+      "passed": true,
+      "fine": 6.722114874676987e-09,
+      "coarse": 1.0755507259947907e-07
+    },
+    {
+      "name": "physical weighted flux (0.0, 0.65, 37.0)",
+      "passed": true,
+      "error": 2.389421993598262e-12,
+      "unweighted_flux": 0.9999999999976106
+    },
+    {
+      "name": "real transfer determinant (0.0, 0.65, 37.0)",
+      "passed": true,
+      "error": 2.389199948993337e-12
+    },
+    {
+      "name": "conservative scattering bounds (0.0, 0.65, 37.0)",
+      "passed": true,
+      "m": 0.15361546835367965
+    },
+    {
+      "name": "Volterra independent quadrature (0.0, 0.65, 37.0)",
+      "passed": true,
+      "errors": [
+        8.054418367233462e-13,
+        6.995665319483698e-13,
+        1.4323822255913645e-12
+      ]
+    },
+    {
+      "name": "constant profile 0.4",
+      "passed": true,
+      "r": [
+        -1.0795592992367799e-16,
+        -1.2734150315470253e-16
+      ],
+      "t": [
+        0.9999999999999977,
+        0.0
+      ]
+    },
+    {
+      "name": "constant profile 3.7",
+      "passed": true,
+      "r": [
+        -1.6610152883967573e-16,
+        1.6074523728077466e-16
+      ],
+      "t": [
+        0.9999999999999838,
+        -6.106226635438361e-16
+      ]
+    },
+    {
+      "name": "constant profile 20.0",
+      "passed": true,
+      "r": [
+        -1.691855881650597e-15,
+        1.3672226473363645e-16
+      ],
+      "t": [
+        0.9999999999999546,
+        -2.7755575615628914e-16
+      ]
+    }
+  ],
+  "scattering_rows": [
+    {
+      "a": 0.45,
+      "b": 0.3,
+      "k": 1.7,
+      "r": [
+        -0.31226175801761824,
+        -0.2183398608997666
+      ],
+      "t_u": [
+        0.9243754175481872,
+        0.018718628545653187
+      ],
+      "t_h": [
+        0.7381287631346987,
+        0.014947128486636319
+      ],
+      "layer_error": 3.322559320327892e-08,
+      "flux_error": 1.5543122344752192e-15,
+      "volterra_error": 5.336163464153486e-13,
+      "Jupper": 5.5438419246990405,
+      "Jnumeric": 3.6938678576037796,
+      "m": 42.52090350183135
+    },
+    {
+      "a": 0.45,
+      "b": 0.3,
+      "k": 4.3,
+      "r": [
+        0.29645783436238127,
+        -0.11144127041813957
+      ],
+      "t_u": [
+        0.9457322949513723,
+        -0.07269127856006784
+      ],
+      "t_h": [
+        0.7551825761231977,
+        -0.058045164892569945
+      ],
+      "layer_error": 2.0400699296482736e-08,
+      "flux_error": 7.09432512735475e-14,
+      "volterra_error": 2.6520706516046823e-12,
+      "Jupper": 5.5438419246990405,
+      "Jnumeric": 3.6938678576037796,
+      "m": 2.340094022795475
+    },
+    {
+      "a": 0.45,
+      "b": 0.3,
+      "k": 13.0,
+      "r": [
+        -0.0029549395227889343,
+        0.008919236063501845
+      ],
+      "t_u": [
+        0.9997938941928347,
+        -0.017996796784068885
+      ],
+      "t_h": [
+        0.798351639929575,
+        -0.014370734117795603
+      ],
+      "layer_error": 8.840148775463288e-09,
+      "flux_error": 6.999956170261612e-13,
+      "volterra_error": 2.9645245574764334e-12,
+      "Jupper": 5.5438419246990405,
+      "Jnumeric": 3.6938678576037796,
+      "m": 0.3266194946393075
+    },
+    {
+      "a": 0.45,
+      "b": 0.3,
+      "k": 37.0,
+      "r": [
+        0.0002863731161814848,
+        0.00039665210132509805
+      ],
+      "t_u": [
+        0.9999821407766767,
+        -0.005956406938158564
+      ],
+      "t_h": [
+        0.7985019578798989,
+        -0.004756287545650495
+      ],
+      "layer_error": 3.143171832504184e-09,
+      "flux_error": 1.63069557856943e-12,
+      "volterra_error": 8.319480544684952e-13,
+      "Jupper": 5.5438419246990405,
+      "Jnumeric": 3.6938678576037796,
+      "m": 0.0870263981751629
+    },
+    {
+      "a": -0.55,
+      "b": -0.2,
+      "k": 1.7,
+      "r": [
+        0.24786298957446523,
+        0.24607971178779597
+      ],
+      "t_u": [
+        0.9370124685092021,
+        0.004043229394317308
+      ],
+      "t_h": [
+        1.2336056575257959,
+        0.00532303552314517
+      ],
+      "layer_error": 2.7652867127658645e-08,
+      "flux_error": 5.551115123125783e-16,
+      "volterra_error": 1.380431909542487e-12,
+      "Jupper": 5.089511127725391,
+      "Jnumeric": 3.211730439470609,
+      "m": 29.881406292327455
+    },
+    {
+      "a": -0.55,
+      "b": -0.2,
+      "k": 4.3,
+      "r": [
+        -0.27574312105307514,
+        0.0832052228298306
+      ],
+      "t_u": [
+        0.9559219128031693,
+        -0.057060658148609965
+      ],
+      "t_h": [
+        1.2585005209835043,
+        -0.07512210678078013
+      ],
+      "layer_error": 7.8217032400106e-09,
+      "flux_error": 1.247890679678676e-13,
+      "volterra_error": 3.4317773915005984e-13,
+      "Jupper": 5.089511127725391,
+      "Jnumeric": 3.211730439470609,
+      "m": 1.9329103414913087
+    },
+    {
+      "a": -0.55,
+      "b": -0.2,
+      "k": 13.0,
+      "r": [
+        0.0011203030184087097,
+        -0.005417955786626526
+      ],
+      "t_u": [
+        0.9998680489734099,
+        -0.015273353189722566
+      ],
+      "t_h": [
+        1.3163569572935354,
+        -0.02010783798235699
+      ],
+      "layer_error": 5.725353189979459e-09,
+      "flux_error": 6.900036098045348e-13,
+      "volterra_error": 2.416398897255511e-12,
+      "Jupper": 5.089511127725391,
+      "Jnumeric": 3.211730439470609,
+      "m": 0.2895538752426702
+    },
+    {
+      "a": -0.55,
+      "b": -0.2,
+      "k": 37.0,
+      "r": [
+        -0.00017450119672902237,
+        -0.0002789026345620635
+      ],
+      "t_u": [
+        0.9999870044851669,
+        -0.005087496653594337
+      ],
+      "t_h": [
+        1.3165135658737082,
+        -0.006697845402743319
+      ],
+      "layer_error": 2.1164885463162545e-09,
+      "flux_error": 1.2353451595004117e-12,
+      "volterra_error": 3.1789411206080902e-12,
+      "Jupper": 5.089511127725391,
+      "Jnumeric": 3.211730439470609,
+      "m": 0.07891934021128956
+    },
+    {
+      "a": 0.0,
+      "b": 0.65,
+      "k": 1.7,
+      "r": [
+        -0.595218359050576,
+        -0.14363397883954537
+      ],
+      "t_u": [
+        0.7860518618257036,
+        0.08489320168427679
+      ],
+      "t_h": [
+        0.7860518618257036,
+        0.08489320168427679
+      ],
+      "layer_error": 4.770692968795773e-08,
+      "flux_error": 1.7763568394002505e-15,
+      "volterra_error": 1.3452527183704627e-12,
+      "Jupper": 8.929961074943161,
+      "Jnumeric": 6.988476413741257,
+      "m": 501.9772920589069
+    },
+    {
+      "a": 0.0,
+      "b": 0.65,
+      "k": 4.3,
+      "r": [
+        0.44506564889611555,
+        -0.3350680429806922
+      ],
+      "t_u": [
+        0.8080215511380662,
+        -0.1916954554552423
+      ],
+      "t_h": [
+        0.8080215511380662,
+        -0.1916954554552423
+      ],
+      "layer_error": 4.478419728244262e-08,
+      "flux_error": 9.325873406851315e-15,
+      "volterra_error": 1.5561018890717065e-12,
+      "Jupper": 8.929961074943161,
+      "Jnumeric": 6.988476413741257,
+      "m": 8.284488960008117
+    },
+    {
+      "a": 0.0,
+      "b": 0.65,
+      "k": 13.0,
+      "r": [
+        -0.008435321359470508,
+        0.021238517226225686
+      ],
+      "t_u": [
+        0.9981959584844902,
+        -0.055521159968058675
+      ],
+      "t_h": [
+        0.9981959584844902,
+        -0.055521159968058675
+      ],
+      "layer_error": 2.0007176541544852e-08,
+      "flux_error": 6.250555628639631e-13,
+      "volterra_error": 2.2785596110284725e-12,
+      "Jupper": 8.929961074943161,
+      "Jnumeric": 6.988476413741257,
+      "m": 0.6826558547645013
+    },
+    {
+      "a": 0.0,
+      "b": 0.65,
+      "k": 37.0,
+      "r": [
+        0.000688853586282149,
+        0.0007897839843261301
+      ],
+      "t_u": [
+        0.9998350528538065,
+        -0.018131982915044587
+      ],
+      "t_h": [
+        0.9998350528538065,
+        -0.018131982915044587
+      ],
+      "layer_error": 6.722114874676987e-09,
+      "flux_error": 2.389421993598262e-12,
+      "volterra_error": 1.4323822255913645e-12,
+      "Jupper": 8.929961074943161,
+      "Jnumeric": 6.988476413741257,
+      "m": 0.15361546835367965
+    }
+  ]
+}

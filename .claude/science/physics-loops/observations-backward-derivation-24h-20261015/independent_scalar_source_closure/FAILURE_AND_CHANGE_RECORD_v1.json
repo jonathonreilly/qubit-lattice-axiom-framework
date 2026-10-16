@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-10-16T06:54:00.725572+00:00",
+  "scientific_finding": {
+    "source": "SCALAR_SOURCE_CLOSURE_v1.md",
+    "finding": "Unqualified negative-mass instability inference exceeds a general curved constant vacuum.",
+    "independent_evidence": "AdS Klein-Gordon radial operator and same-action-class vacuum in independent_attempt01.stdout.json; full reasoning in DERIVATION_BEFORE_CODE.md and REPORT_v1.md.",
+    "resolution": "Author preserved v1 and wrote v2; narrowing inspected and source-bound. No mathematical equation or original runner changed.",
+    "delta": "SOURCE_DELTA_v1_to_v2.json"
+  },
+  "execution_attempts": {
+    "independent": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 0.6933572087436914,
+      "reported_summary": {
+        "passed": 72,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    },
+    "author": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 0.609833125025034,
+      "reported_summary": {
+        "passed": 174,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    },
+    "observed_author": {
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 0.5960123748518527,
+      "reported_summary": {
+        "passed": 174,
+        "failed": 0
+      },
+      "sources_unchanged": true
+    }
+  },
+  "failed_executions": [],
+  "timeouts": [],
+  "execution_evidence_policy": "Actual stdout/stderr and metadata retained; no simulated failures or reconstructed stdout. All three attempts completed on their first execution.",
+  "display_only_inspection_error": {
+    "description": "An earlier interactive inspection queried pass/ok instead of the author JSON field passed and therefore displayed an incorrect failure filter. It did not execute a science checker or change the original result. Subsequent inspection and saved reproduction parse the actual passed field.",
+    "persisted_scientific_artifact_affected": false,
+    "original_tool_display_retention": "Conversation tool history; no separate output file was written by that display query."
+  },
+  "source_movement": "Version 2 was added after the pre-code binding; the original six bound source files did not change. Both note versions are retained losslessly, and all final sources were unchanged during controls and final packaging.",
+  "scope": "Focused mathematical/source check only; no empirical test, formal audit status or compact-body realization."
+}

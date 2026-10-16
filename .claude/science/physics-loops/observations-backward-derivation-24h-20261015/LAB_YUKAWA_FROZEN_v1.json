@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-16T06:51:33.578556+00:00",
+  "sources": {
+    "LAB_YUKAWA_BRIDGE_v1.md": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+    "LAB_YUKAWA_PLAN_v1.json": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae",
+    "check_lab_yukawa_bridge_v1.py": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4"
+  }
+}

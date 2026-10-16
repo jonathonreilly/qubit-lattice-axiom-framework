@@ -1,0 +1,1269 @@
+{
+  "scope": "Independent pre-runner algebra and synthetic finite-source/torque/complex calibration checks; no physical calibration or empirical test",
+  "source_sha256": "9f735a7b684825a0c782eab5dfb6a98365e69fc144fbd7d6051b06a22ccfbd54",
+  "passed": 193,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "exterior Yukawa PDE",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "source flux -4pi",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "long range torque has no linear mass term",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "uniform central concentration limit",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "radial kernel decreasing formula",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "pressure support 0.0",
+      "passed": true,
+      "M": 0.6640149659825475,
+      "Q": 0.6199678711917215,
+      "lower": 0.531211972786038,
+      "upper": 0.6640149659825475
+    },
+    {
+      "name": "independent angular convolution (0.0, 1.15)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "independent angular convolution (0.0, 2.4)",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "pressure support 0.7",
+      "passed": true,
+      "M": 0.6640149659825475,
+      "Q": 0.6363680217148718,
+      "lower": 0.531211972786038,
+      "upper": 0.7195870442455611
+    },
+    {
+      "name": "independent angular convolution (0.7, 1.15)",
+      "passed": true,
+      "error": 1.3877787807814457e-16
+    },
+    {
+      "name": "independent angular convolution (0.7, 2.4)",
+      "passed": true,
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "name": "pressure support 2.3",
+      "passed": true,
+      "M": 0.6640149659825475,
+      "Q": 0.8190025324972104,
+      "lower": 0.531211972786038,
+      "upper": 1.4253115327681458
+    },
+    {
+      "name": "independent angular convolution (2.3, 1.15)",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "independent angular convolution (2.3, 2.4)",
+      "passed": true,
+      "error": 2.168404344971009e-19
+    },
+    {
+      "name": "complex torque Fourier (0.0, 1)",
+      "passed": true,
+      "error": 1.1107649934270853e-17,
+      "coefficient": [
+        0.01100876110286725,
+        0.04349438477438149
+      ]
+    },
+    {
+      "name": "harmonic support (0.0, 1)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (0.0, 2)",
+      "passed": true,
+      "error": 3.088358975665238e-17,
+      "coefficient": [
+        0.001295039543585695,
+        0.003117252924689782
+      ]
+    },
+    {
+      "name": "harmonic support (0.0, 2)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (0.0, 4)",
+      "passed": true,
+      "error": 4.420176209900967e-17,
+      "coefficient": [
+        0.0008159956213668523,
+        6.608944986118172e-05
+      ]
+    },
+    {
+      "name": "harmonic support (0.0, 4)",
+      "passed": true
+    },
+    {
+      "name": "periodic mean torque 0.0",
+      "passed": true,
+      "error": 2.1023357750851734e-18
+    },
+    {
+      "name": "physical torque sign (0.0, 0.13)",
+      "passed": true,
+      "error": 2.7927486712098215e-13
+    },
+    {
+      "name": "physical torque sign (0.0, 0.71)",
+      "passed": true,
+      "error": 2.3657464875981304e-13
+    },
+    {
+      "name": "physical torque sign (0.0, 2.14)",
+      "passed": true,
+      "error": 4.138356324290271e-13
+    },
+    {
+      "name": "density L1 norm (0.0, 1)",
+      "passed": true,
+      "error": 0.012762494922804731,
+      "bound": 0.29180000000000006
+    },
+    {
+      "name": "density L1 norm (0.0, 2)",
+      "passed": true,
+      "error": 0.0021702513862403737,
+      "bound": 0.29180000000000006
+    },
+    {
+      "name": "density L1 norm (0.0, 4)",
+      "passed": true,
+      "error": 4.162005429061658e-05,
+      "bound": 0.29180000000000006
+    },
+    {
+      "name": "positive-mass harmonic cancellation 0.0",
+      "passed": true,
+      "residual": 8.066810372969586e-19
+    },
+    {
+      "name": "signed mass must use total variation 0.0",
+      "passed": true,
+      "invalid_signed_mass_bound": 0,
+      "actual": 0.006436308644700368,
+      "tv_bound": 0.08800000000000002
+    },
+    {
+      "name": "complex torque Fourier (0.8, 1)",
+      "passed": true,
+      "error": 4.336808689942018e-19,
+      "coefficient": [
+        0.0037840194306058123,
+        0.027035898717782468
+      ]
+    },
+    {
+      "name": "harmonic support (0.8, 1)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (0.8, 2)",
+      "passed": true,
+      "error": 5.244670419506027e-18,
+      "coefficient": [
+        0.001278392731472074,
+        0.002798762104552352
+      ]
+    },
+    {
+      "name": "harmonic support (0.8, 2)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (0.8, 4)",
+      "passed": true,
+      "error": 3.110555354441665e-17,
+      "coefficient": [
+        0.0007371365544094867,
+        5.5104566372295654e-05
+      ]
+    },
+    {
+      "name": "harmonic support (0.8, 4)",
+      "passed": true
+    },
+    {
+      "name": "periodic mean torque 0.8",
+      "passed": true,
+      "error": 8.029872339970767e-19
+    },
+    {
+      "name": "physical torque sign (0.8, 0.13)",
+      "passed": true,
+      "error": 7.292869650191158e-13
+    },
+    {
+      "name": "physical torque sign (0.8, 0.71)",
+      "passed": true,
+      "error": 1.1249889908526711e-12
+    },
+    {
+      "name": "physical torque sign (0.8, 2.14)",
+      "passed": true,
+      "error": 1.4480847077003034e-12
+    },
+    {
+      "name": "density L1 norm (0.8, 1)",
+      "passed": true,
+      "error": 0.008202640144947222,
+      "bound": 0.23600554511292954
+    },
+    {
+      "name": "density L1 norm (0.8, 2)",
+      "passed": true,
+      "error": 0.0017419005037492673,
+      "bound": 0.23600554511292954
+    },
+    {
+      "name": "density L1 norm (0.8, 4)",
+      "passed": true,
+      "error": 3.78762880835687e-05,
+      "bound": 0.23600554511292954
+    },
+    {
+      "name": "positive-mass harmonic cancellation 0.8",
+      "passed": true,
+      "residual": 6.419664615641282e-19
+    },
+    {
+      "name": "signed mass must use total variation 0.8",
+      "passed": true,
+      "invalid_signed_mass_bound": 0,
+      "actual": 0.004092882501970245,
+      "tv_bound": 0.07117370791616791
+    },
+    {
+      "name": "complex torque Fourier (2.2, 1)",
+      "passed": true,
+      "error": 4.336808689942018e-19,
+      "coefficient": [
+        -0.0013157260057283036,
+        0.005277025999337328
+      ]
+    },
+    {
+      "name": "harmonic support (2.2, 1)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (2.2, 2)",
+      "passed": true,
+      "error": 1.8653319485909126e-18,
+      "coefficient": [
+        0.0008328497947284291,
+        0.0014145517521554124
+      ]
+    },
+    {
+      "name": "harmonic support (2.2, 2)",
+      "passed": true
+    },
+    {
+      "name": "complex torque Fourier (2.2, 4)",
+      "passed": true,
+      "error": 2.6352456931770437e-18,
+      "coefficient": [
+        0.00040718492069249284,
+        1.6407266530179794e-05
+      ]
+    },
+    {
+      "name": "harmonic support (2.2, 4)",
+      "passed": true
+    },
+    {
+      "name": "periodic mean torque 2.2",
+      "passed": true,
+      "error": 8.046812998915853e-20
+    },
+    {
+      "name": "physical torque sign (2.2, 0.13)",
+      "passed": true,
+      "error": 1.5469006284241082e-13
+    },
+    {
+      "name": "physical torque sign (2.2, 0.71)",
+      "passed": true,
+      "error": 2.694806183756171e-13
+    },
+    {
+      "name": "physical torque sign (2.2, 2.14)",
+      "passed": true,
+      "error": 2.358911677102782e-13
+    },
+    {
+      "name": "density L1 norm (2.2, 1)",
+      "passed": true,
+      "error": 0.0018752367657129739,
+      "bound": 0.10346355715241291
+    },
+    {
+      "name": "density L1 norm (2.2, 2)",
+      "passed": true,
+      "error": 0.0006326639656719977,
+      "bound": 0.10346355715241291
+    },
+    {
+      "name": "density L1 norm (2.2, 4)",
+      "passed": true,
+      "error": 2.2018316050028323e-05,
+      "bound": 0.10346355715241291
+    },
+    {
+      "name": "positive-mass harmonic cancellation 2.2",
+      "passed": true,
+      "residual": 1.2061702194835974e-19
+    },
+    {
+      "name": "signed mass must use total variation 2.2",
+      "passed": true,
+      "invalid_signed_mass_bound": 0,
+      "actual": 0.0008916206712536658,
+      "tv_bound": 0.031202169394833227
+    },
+    {
+      "name": "complex ratio strength 0.0",
+      "passed": true,
+      "error": 3.613145321200101e-16
+    },
+    {
+      "name": "exact common gain scale 0.0",
+      "passed": true
+    },
+    {
+      "name": "complex error disk (0.0, 0, 0.0)",
+      "passed": true,
+      "error": 5.886760887500682e-05,
+      "bound": 5.886763628202766e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 0.3306939635357677)",
+      "passed": true,
+      "error": 5.886771485973185e-05,
+      "bound": 5.886784825332818e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 0.6613879270715354)",
+      "passed": true,
+      "error": 5.8867889431948106e-05,
+      "bound": 5.886819740104098e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 0.992081890607303)",
+      "passed": true,
+      "error": 5.8868113675021774e-05,
+      "bound": 5.8868645893650114e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 1.3227758541430708)",
+      "passed": true,
+      "error": 5.8868363290391604e-05,
+      "bound": 5.8869145133328764e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 1.6534698176788385)",
+      "passed": true,
+      "error": 5.886861122894814e-05,
+      "bound": 5.886964102087327e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 1.984163781214606)",
+      "passed": true,
+      "error": 5.88688306214592e-05,
+      "bound": 5.887007981770127e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 2.3148577447503738)",
+      "passed": true,
+      "error": 5.8868997692644794e-05,
+      "bound": 5.887041396988173e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 2.6455517082861415)",
+      "passed": true,
+      "error": 5.886909433583853e-05,
+      "bound": 5.887060726281147e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 2.9762456718219092)",
+      "passed": true,
+      "error": 5.886911007778709e-05,
+      "bound": 5.887063874732874e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 3.306939635357677)",
+      "passed": true,
+      "error": 5.886904321169309e-05,
+      "bound": 5.887050501109178e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 3.6376335988934447)",
+      "passed": true,
+      "error": 5.8868900984596365e-05,
+      "bound": 5.887022054857241e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 3.968327562429212)",
+      "passed": true,
+      "error": 5.8868698810534896e-05,
+      "bound": 5.886981618947981e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 4.29902152596498)",
+      "passed": true,
+      "error": 5.886845859952536e-05,
+      "bound": 5.88693357562883e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 4.6297154895007475)",
+      "passed": true,
+      "error": 5.8868206383128035e-05,
+      "bound": 5.886883131375092e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 4.960409453036515)",
+      "passed": true,
+      "error": 5.886796949284881e-05,
+      "bound": 5.8868357525879324e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 5.291103416572283)",
+      "passed": true,
+      "error": 5.8867773598490955e-05,
+      "bound": 5.886796573231953e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 5.621797380108051)",
+      "passed": true,
+      "error": 5.8867639926617316e-05,
+      "bound": 5.8867698386010146e-05
+    },
+    {
+      "name": "complex error disk (0.0, 0, 5.9524913436438185)",
+      "passed": true,
+      "error": 5.886758296130013e-05,
+      "bound": 5.886758445442318e-05
+    },
+    {
+      "name": "sharp complex ratio error (0.0, 0)",
+      "passed": true,
+      "relative": 1.7459367285255212e-12
+    },
+    {
+      "name": "complex error disk (0.0, 1, 0.0)",
+      "passed": true,
+      "error": 3.232921370536988e-05,
+      "bound": 3.232967300291156e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 0.3306939635357677)",
+      "passed": true,
+      "error": 3.232921329894392e-05,
+      "bound": 3.2329672190019895e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 0.6613879270715354)",
+      "passed": true,
+      "error": 3.232918821058545e-05,
+      "bound": 3.2329622012335066e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 0.992081890607303)",
+      "passed": true,
+      "error": 3.232914115911e-05,
+      "bound": 3.2329527907806474e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 1.3227758541430708)",
+      "passed": true,
+      "error": 3.232907724356355e-05,
+      "bound": 3.232940007477363e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 1.6534698176788385)",
+      "passed": true,
+      "error": 3.232900339040096e-05,
+      "bound": 3.232925236654207e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 1.984163781214606)",
+      "passed": true,
+      "error": 3.2328927602825205e-05,
+      "bound": 3.2329100789904304e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 2.3148577447503738)",
+      "passed": true,
+      "error": 3.232885809359585e-05,
+      "bound": 3.2328961770423223e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 2.6455517082861415)",
+      "passed": true,
+      "error": 3.232880239496761e-05,
+      "bound": 3.23288503725171e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 2.9762456718219092)",
+      "passed": true,
+      "error": 3.2328766542503686e-05,
+      "bound": 3.232877866720692e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 3.306939635357677)",
+      "passed": true,
+      "error": 3.2328754421068794e-05,
+      "bound": 3.2328754424316644e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 3.6376335988934447)",
+      "passed": true,
+      "error": 3.232876734418836e-05,
+      "bound": 3.232878027072808e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 3.968327562429212)",
+      "passed": true,
+      "error": 3.232880391149763e-05,
+      "bound": 3.2328853405806613e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 4.29902152596498)",
+      "passed": true,
+      "error": 3.2328860160634586e-05,
+      "bound": 3.232896590479855e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 4.6297154895007475)",
+      "passed": true,
+      "error": 3.232892999635694e-05,
+      "bound": 3.2329105577362006e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 4.960409453036515)",
+      "passed": true,
+      "error": 3.2329005851106175e-05,
+      "bound": 3.232925728829731e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 5.291103416572283)",
+      "passed": true,
+      "error": 3.232907950472693e-05,
+      "bound": 3.2329404597474266e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 5.621797380108051)",
+      "passed": true,
+      "error": 3.232914297572362e-05,
+      "bound": 3.232953154133141e-05
+    },
+    {
+      "name": "complex error disk (0.0, 1, 5.9524913436438185)",
+      "passed": true,
+      "error": 3.232918938574196e-05,
+      "bound": 3.232962436291343e-05
+    },
+    {
+      "name": "sharp complex ratio error (0.0, 1)",
+      "passed": true,
+      "relative": 3.1230573682705653e-12
+    },
+    {
+      "name": "complex ratio strength 0.37",
+      "passed": true,
+      "error": 4.1035100113480384e-16
+    },
+    {
+      "name": "exact common gain scale 0.37",
+      "passed": true
+    },
+    {
+      "name": "nonzero calibration leakage bias 0.37",
+      "passed": true,
+      "bias": 0.17795558820706284
+    },
+    {
+      "name": "complex error disk (0.37, 0, 0.0)",
+      "passed": true,
+      "error": 6.714326227927239e-05,
+      "bound": 6.71432856404768e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 0.3306939635357677)",
+      "passed": true,
+      "error": 6.714337897335623e-05,
+      "bound": 6.714351903054586e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 0.6613879270715354)",
+      "passed": true,
+      "error": 6.714358164538994e-05,
+      "bound": 6.714392437884684e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 0.992081890607303)",
+      "passed": true,
+      "error": 6.714384833449062e-05,
+      "bound": 6.714445776483859e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 1.3227758541430708)",
+      "passed": true,
+      "error": 6.714415014287194e-05,
+      "bound": 6.714506139242707e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 1.6534698176788385)",
+      "passed": true,
+      "error": 6.7144454365328e-05,
+      "bound": 6.714566985114806e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 1.984163781214606)",
+      "passed": true,
+      "error": 6.714472803411146e-05,
+      "bound": 6.714621720358308e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 2.3148577447503738)",
+      "passed": true,
+      "error": 6.714494149179798e-05,
+      "bound": 6.714664413132357e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 2.6455517082861415)",
+      "passed": true,
+      "error": 6.714507160422965e-05,
+      "bound": 6.714690436484553e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 2.9762456718219092)",
+      "passed": true,
+      "error": 6.714510427084706e-05,
+      "bound": 6.714696969975657e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 3.306939635357677)",
+      "passed": true,
+      "error": 6.714503595086194e-05,
+      "bound": 6.714683305488865e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 3.6376335988934447)",
+      "passed": true,
+      "error": 6.714487404850922e-05,
+      "bound": 6.714650924012343e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 3.968327562429212)",
+      "passed": true,
+      "error": 6.71446361107117e-05,
+      "bound": 6.714603335054601e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 4.29902152596498)",
+      "passed": true,
+      "error": 6.714434792364368e-05,
+      "bound": 6.714545696135265e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 4.6297154895007475)",
+      "passed": true,
+      "error": 6.714404071771514e-05,
+      "bound": 6.714484253669501e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 4.960409453036515)",
+      "passed": true,
+      "error": 6.714374778346794e-05,
+      "bound": 6.714425665926987e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 5.291103416572283)",
+      "passed": true,
+      "error": 6.71435008644917e-05,
+      "bound": 6.714376281494496e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 5.621797380108051)",
+      "passed": true,
+      "error": 6.714332671579327e-05,
+      "bound": 6.714341451436296e-05
+    },
+    {
+      "name": "complex error disk (0.37, 0, 5.9524913436438185)",
+      "passed": true,
+      "error": 6.714324420729553e-05,
+      "bound": 6.714324949636407e-05
+    },
+    {
+      "name": "sharp complex ratio error (0.37, 0)",
+      "passed": true,
+      "relative": 4.601652392466349e-12
+    },
+    {
+      "name": "complex error disk (0.37, 1, 0.0)",
+      "passed": true,
+      "error": 3.687413166911752e-05,
+      "bound": 3.687468890327335e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 0.3306939635357677)",
+      "passed": true,
+      "error": 3.687413525665521e-05,
+      "bound": 3.687469607859957e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 0.6613879270715354)",
+      "passed": true,
+      "error": 3.687410857956025e-05,
+      "bound": 3.6874642723366756e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 0.992081890607303)",
+      "passed": true,
+      "error": 3.687405452871329e-05,
+      "bound": 3.687453461992458e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 1.3227758541430708)",
+      "passed": true,
+      "error": 3.687397896184214e-05,
+      "bound": 3.6874383483787334e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 1.6534698176788385)",
+      "passed": true,
+      "error": 3.6873890068028264e-05,
+      "bound": 3.6874205693726544e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 1.984163781214606)",
+      "passed": true,
+      "error": 3.6873797480429205e-05,
+      "bound": 3.687402051652862e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 2.3148577447503738)",
+      "passed": true,
+      "error": 3.687371123239131e-05,
+      "bound": 3.68738480189394e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 2.6455517082861415)",
+      "passed": true,
+      "error": 3.6873640670072215e-05,
+      "bound": 3.6873706893153426e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 2.9762456718219092)",
+      "passed": true,
+      "error": 3.6873593439389484e-05,
+      "bound": 3.6873612431475797e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 3.306939635357677)",
+      "passed": true,
+      "error": 3.6873574658476875e-05,
+      "bound": 3.6873574869527806e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 3.6376335988934447)",
+      "passed": true,
+      "error": 3.68735863624039e-05,
+      "bound": 3.6873598277382175e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 3.968327562429212)",
+      "passed": true,
+      "error": 3.687362728287887e-05,
+      "bound": 3.687368011865384e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 4.29902152596498)",
+      "passed": true,
+      "error": 3.687369298580056e-05,
+      "bound": 3.687381152526425e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 4.6297154895007475)",
+      "passed": true,
+      "error": 3.687377635156746e-05,
+      "bound": 3.687397825814301e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 4.960409453036515)",
+      "passed": true,
+      "error": 3.6873868346472456e-05,
+      "bound": 3.687416224988308e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 5.291103416572283)",
+      "passed": true,
+      "error": 3.687395900150676e-05,
+      "bound": 3.6874343562334824e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 5.621797380108051)",
+      "passed": true,
+      "error": 3.687403849271498e-05,
+      "bound": 3.687450254712521e-05
+    },
+    {
+      "name": "complex error disk (0.37, 1, 5.9524913436438185)",
+      "passed": true,
+      "error": 3.687409820556298e-05,
+      "bound": 3.68746219750137e-05
+    },
+    {
+      "name": "sharp complex ratio error (0.37, 1)",
+      "passed": true,
+      "relative": 2.086109063270669e-12
+    },
+    {
+      "name": "complex ratio strength 1.8",
+      "passed": true,
+      "error": 2.319748951109777e-16
+    },
+    {
+      "name": "exact common gain scale 1.8",
+      "passed": true
+    },
+    {
+      "name": "nonzero calibration leakage bias 1.8",
+      "passed": true,
+      "bias": 1.040093287041153
+    },
+    {
+      "name": "complex error disk (1.8, 0, 0.0)",
+      "passed": true,
+      "error": 0.000106536898684018,
+      "bound": 0.00010653690751029953
+    },
+    {
+      "name": "complex error disk (1.8, 0, 0.3306939635357677)",
+      "passed": true,
+      "error": 0.00010653705814803505,
+      "bound": 0.00010653722644160509
+    },
+    {
+      "name": "complex error disk (1.8, 0, 0.6613879270715354)",
+      "passed": true,
+      "error": 0.00010653740155176695,
+      "bound": 0.00010653791325696564
+    },
+    {
+      "name": "complex error disk (1.8, 0, 0.992081890607303)",
+      "passed": true,
+      "error": 0.00010653789168657725,
+      "bound": 0.00010653889354160825
+    },
+    {
+      "name": "complex error disk (1.8, 0, 1.3227758541430708)",
+      "passed": true,
+      "error": 0.0001065384754428371,
+      "bound": 0.00010654006107927108
+    },
+    {
+      "name": "complex error disk (1.8, 0, 1.6534698176788385)",
+      "passed": true,
+      "error": 0.0001065390895655693,
+      "bound": 0.00010654128935699006
+    },
+    {
+      "name": "complex error disk (1.8, 0, 1.984163781214606)",
+      "passed": true,
+      "error": 0.00010653966750385933,
+      "bound": 0.00010654244527142727
+    },
+    {
+      "name": "complex error disk (1.8, 0, 2.3148577447503738)",
+      "passed": true,
+      "error": 0.0001065401466265492,
+      "bound": 0.0001065434035528463
+    },
+    {
+      "name": "complex error disk (1.8, 0, 2.6455517082861415)",
+      "passed": true,
+      "error": 0.00010654047500902156,
+      "bound": 0.00010654406034360461
+    },
+    {
+      "name": "complex error disk (1.8, 0, 2.9762456718219092)",
+      "passed": true,
+      "error": 0.00010654061705994298,
+      "bound": 0.0001065443444582148
+    },
+    {
+      "name": "complex error disk (1.8, 0, 3.306939635357677)",
+      "passed": true,
+      "error": 0.00010654055738445958,
+      "bound": 0.00010654422510246548
+    },
+    {
+      "name": "complex error disk (1.8, 0, 3.6376335988934447)",
+      "passed": true,
+      "error": 0.00010654030245031553,
+      "bound": 0.00010654371521297629
+    },
+    {
+      "name": "complex error disk (1.8, 0, 3.968327562429212)",
+      "passed": true,
+      "error": 0.00010653987988773852,
+      "bound": 0.00010654287005422913
+    },
+    {
+      "name": "complex error disk (1.8, 0, 4.29902152596498)",
+      "passed": true,
+      "error": 0.00010653933549199569,
+      "bound": 0.00010654178122556819
+    },
+    {
+      "name": "complex error disk (1.8, 0, 4.6297154895007475)",
+      "passed": true,
+      "error": 0.00010653872826146799,
+      "bound": 0.00010654056672938885
+    },
+    {
+      "name": "complex error disk (1.8, 0, 4.960409453036515)",
+      "passed": true,
+      "error": 0.0001065381240004765,
+      "bound": 0.00010653935817914421
+    },
+    {
+      "name": "complex error disk (1.8, 0, 5.291103416572283)",
+      "passed": true,
+      "error": 0.00010653758818761306,
+      "bound": 0.00010653828653532093
+    },
+    {
+      "name": "complex error disk (1.8, 0, 5.621797380108051)",
+      "passed": true,
+      "error": 0.00010653717888399698,
+      "bound": 0.00010653746791581451
+    },
+    {
+      "name": "complex error disk (1.8, 0, 5.9524913436438185)",
+      "passed": true,
+      "error": 0.00010653694043718849,
+      "bound": 0.00010653699101753634
+    },
+    {
+      "name": "sharp complex ratio error (1.8, 0)",
+      "passed": true,
+      "relative": 1.1801670751765414e-12
+    },
+    {
+      "name": "complex error disk (1.8, 1, 0.0)",
+      "passed": true,
+      "error": 5.850888203061427e-05,
+      "bound": 5.850997692350102e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 0.3306939635357677)",
+      "passed": true,
+      "error": 5.850891256687019e-05,
+      "bound": 5.851003799745564e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 0.6613879270715354)",
+      "passed": true,
+      "error": 5.8508882123938866e-05,
+      "bound": 5.8509977110750836e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 0.992081890607303)",
+      "passed": true,
+      "error": 5.850879400204981e-05,
+      "bound": 5.8509800862119987e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 1.3227758541430708)",
+      "passed": true,
+      "error": 5.850865775018599e-05,
+      "bound": 5.8509528352680344e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 1.6534698176788385)",
+      "passed": true,
+      "error": 5.8508488134592164e-05,
+      "bound": 5.8509189115253214e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 1.984163781214606)",
+      "passed": true,
+      "error": 5.850830353637901e-05,
+      "bound": 5.8508819913098864e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 2.3148577447503738)",
+      "passed": true,
+      "error": 5.850812395984001e-05,
+      "bound": 5.8508460755363004e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 2.6455517082861415)",
+      "passed": true,
+      "error": 5.850796886407734e-05,
+      "bound": 5.850815056131189e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 2.9762456718219092)",
+      "passed": true,
+      "error": 5.850785505607324e-05,
+      "bound": 5.8507922943267575e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 3.306939635357677)",
+      "passed": true,
+      "error": 5.8507794867106645e-05,
+      "bound": 5.850780256504169e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 3.6376335988934447)",
+      "passed": true,
+      "error": 5.8507794819577146e-05,
+      "bound": 5.850780247012924e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 3.968327562429212)",
+      "passed": true,
+      "error": 5.850785491873157e-05,
+      "bound": 5.8507922668814365e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 4.29902152596498)",
+      "passed": true,
+      "error": 5.850796865197526e-05,
+      "bound": 5.8508150137056267e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 4.6297154895007475)",
+      "passed": true,
+      "error": 5.850812369559357e-05,
+      "bound": 5.8508460227276187e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 4.960409453036515)",
+      "passed": true,
+      "error": 5.850830324883672e-05,
+      "bound": 5.8508819338404695e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 5.291103416572283)",
+      "passed": true,
+      "error": 5.850848785505513e-05,
+      "bound": 5.850918855622816e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 5.621797380108051)",
+      "passed": true,
+      "error": 5.8508657508535976e-05,
+      "bound": 5.8509527869905066e-05
+    },
+    {
+      "name": "complex error disk (1.8, 1, 5.9524913436438185)",
+      "passed": true,
+      "error": 5.850879382447429e-05,
+      "bound": 5.85098005079139e-05
+    },
+    {
+      "name": "sharp complex ratio error (1.8, 1)",
+      "passed": true,
+      "relative": 7.877032359715486e-12
+    },
+    {
+      "name": "A0 b0 unidentified",
+      "passed": true
+    },
+    {
+      "name": "A0 bnonzero incompatible despite determinants",
+      "passed": true
+    },
+    {
+      "name": "massless ratio no strength 0",
+      "passed": true
+    },
+    {
+      "name": "massless ratio no strength 0.2",
+      "passed": true
+    },
+    {
+      "name": "massless ratio no strength 3.0",
+      "passed": true
+    },
+    {
+      "name": "pole boundary is not admitted",
+      "passed": true
+    }
+  ],
+  "details": {
+    "radial": [
+      {
+        "m": 0.0,
+        "r": 1.15,
+        "direct": 0.5391024966884534,
+        "reduced": 0.5391024966884534,
+        "error": 0.0
+      },
+      {
+        "m": 0.0,
+        "r": 2.4,
+        "direct": 0.2583199463298839,
+        "reduced": 0.258319946329884,
+        "error": 5.551115123125783e-17
+      },
+      {
+        "m": 0.7,
+        "r": 1.15,
+        "direct": 0.24740213857146237,
+        "reduced": 0.24740213857146223,
+        "error": 1.3877787807814457e-16
+      },
+      {
+        "m": 0.7,
+        "r": 2.4,
+        "direct": 0.04941768267972262,
+        "reduced": 0.04941768267972261,
+        "error": 1.3877787807814457e-17
+      },
+      {
+        "m": 2.3,
+        "r": 1.15,
+        "direct": 0.05056831698575912,
+        "reduced": 0.05056831698575912,
+        "error": 0.0
+      },
+      {
+        "m": 2.3,
+        "r": 2.4,
+        "direct": 0.0013669998372378307,
+        "reduced": 0.0013669998372378305,
+        "error": 2.168404344971009e-19
+      }
+    ],
+    "torque": [
+      {
+        "m": 0.0,
+        "coefficients": [
+          [
+            0.01100876110286725,
+            0.04349438477438149
+          ],
+          [
+            0.001295039543585695,
+            0.003117252924689782
+          ],
+          [
+            0.0008159956213668523,
+            6.608944986118172e-05
+          ]
+        ]
+      },
+      {
+        "m": 0.8,
+        "coefficients": [
+          [
+            0.0037840194306058123,
+            0.027035898717782468
+          ],
+          [
+            0.001278392731472074,
+            0.002798762104552352
+          ],
+          [
+            0.0007371365544094867,
+            5.5104566372295654e-05
+          ]
+        ]
+      },
+      {
+        "m": 2.2,
+        "coefficients": [
+          [
+            -0.0013157260057283036,
+            0.005277025999337328
+          ],
+          [
+            0.0008328497947284291,
+            0.0014145517521554124
+          ],
+          [
+            0.00040718492069249284,
+            1.6407266530179794e-05
+          ]
+        ]
+      }
+    ],
+    "ratios": [
+      {
+        "a": 0.0,
+        "ratios": [
+          [
+            0.3814180929095355,
+            0.5427872860635697
+          ],
+          [
+            -0.3618581907090465,
+            0.25427872860635703
+          ]
+        ]
+      },
+      {
+        "a": 0.37,
+        "ratios": [
+          [
+            0.3025697859369171,
+            0.630176549524328
+          ],
+          [
+            -0.16516426651346844,
+            0.16914670588083977
+          ]
+        ]
+      },
+      {
+        "a": 1.8,
+        "ratios": [
+          [
+            0.03663874628478788,
+            0.8390435017562821
+          ],
+          [
+            0.4332883004593353,
+            0.024263712510132398
+          ]
+        ]
+      }
+    ]
+  }
+}

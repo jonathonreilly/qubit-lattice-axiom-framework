@@ -1,0 +1,25 @@
+{
+  "start": "2026-10-16T06:36:01.527471+00:00",
+  "elapsed_seconds": 1.4783016252331436,
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "before": {
+    "SCALAR_SIREN_BRIDGE_v1.md": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+    "SCALAR_SIREN_PLAN_v1.json": "d87c4764b82b032f69224a73f62d23bf4f70961004628348bd156fbc342fdf66",
+    "check_scalar_siren_bridge_v1.py": "5faa9ceaf683c78d426524613d3194829a0809fc49602a119fcda3b8f9b14b67",
+    "SCALAR_SIREN_CONTROLS_v1.json": "e0371c260ea76461f08d4631f156f85ab218eff285a53a52b30234d96c7fe584"
+  },
+  "after": {
+    "SCALAR_SIREN_BRIDGE_v1.md": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+    "SCALAR_SIREN_PLAN_v1.json": "d87c4764b82b032f69224a73f62d23bf4f70961004628348bd156fbc342fdf66",
+    "check_scalar_siren_bridge_v1.py": "5faa9ceaf683c78d426524613d3194829a0809fc49602a119fcda3b8f9b14b67",
+    "SCALAR_SIREN_CONTROLS_v1.json": "e0371c260ea76461f08d4631f156f85ab218eff285a53a52b30234d96c7fe584"
+  },
+  "stable": true,
+  "json_exact_equal": true,
+  "stdout_exact_equal": true,
+  "summary": {
+    "passed": 207,
+    "failed": 0
+  }
+}

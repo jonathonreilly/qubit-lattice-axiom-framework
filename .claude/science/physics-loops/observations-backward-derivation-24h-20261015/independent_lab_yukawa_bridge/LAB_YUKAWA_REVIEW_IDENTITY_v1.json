@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-10-16T07:01:37.110959+00:00",
+  "scope": "Focused mathematical and computational source check, not formal audit, empirical validation, or publication approval",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_YUKAWA_BRIDGE_v1.md",
+      "bytes": 8344,
+      "sha256": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_YUKAWA_PLAN_v1.json",
+      "bytes": 1957,
+      "sha256": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v2.md",
+      "bytes": 8730,
+      "sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_yukawa_bridge_v1.py",
+      "bytes": 8161,
+      "sha256": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/LAB_YUKAWA_CONTROLS_v1.json",
+      "bytes": 30313,
+      "sha256": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295"
+    }
+  ],
+  "review": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/LAB_YUKAWA_REVIEW_v1.md",
+    "bytes": 8785,
+    "sha256": "17efbe29a2c0b88fa6e8fdee9561a51509cf3d020820a7d1d9c06d8f45375665"
+  },
+  "evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/AUTHOR_EXPOSURE__LAB_YUKAWA_CONTROLS_v1.json",
+      "bytes": 30313,
+      "sha256": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/AUTHOR_EXPOSURE__check_lab_yukawa_bridge_v1.py",
+      "bytes": 8161,
+      "sha256": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/AUTHOR_REPRODUCTION_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/AUTHOR_REPRODUCTION_STDOUT_v1.txt",
+      "bytes": 30313,
+      "sha256": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/AUTHOR_REPRODUCTION_v1.json",
+      "bytes": 1674,
+      "sha256": "f2335c1dceb63f9d6cf17321ebaa74ffe84702cc43b009d60c689424c4c93e67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/INDEPENDENT_CODE_FREEZE_v1.json",
+      "bytes": 279,
+      "sha256": "ba0b1d2df780516ea69af0a7734bac0c15f5c8124b015a1af2a9f5d41e245114"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/INDEPENDENT_EXECUTION_v1.json",
+      "bytes": 136,
+      "sha256": "1bfa768ef930d33d31422c657e6fd9ef2081eb32e7b5b4f72d893eca2753a760"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 33459,
+      "sha256": "59b0a67d9b2a09048bdf3fcf3531d0050fd3f6eb6c6ecf4fb5cf564e04521f1a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/INDEPENDENT_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/INDEPENDENT_STDOUT_v1.txt",
+      "bytes": 50,
+      "sha256": "f816b74fdadf0991749966c275786a6994ce955d949d9857fe9b0408ab425190"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PRECHECK_IDENTITY_v1.json",
+      "bytes": 1170,
+      "sha256": "2aa6c3de0184a1e8e3a9ca2602f7b2b8e7f1783c427e3e0b8fdbcc5fb792ecc4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PRECHECK_v1.md",
+      "bytes": 5104,
+      "sha256": "7c9bf5b47835683fe2e42f4ed3c19a93b033fd1557264150a0fabeaf9c3e511d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PREEXPOSURE__LAB_YUKAWA_BRIDGE_v1.md",
+      "bytes": 8344,
+      "sha256": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PREEXPOSURE__LAB_YUKAWA_PLAN_v1.json",
+      "bytes": 1957,
+      "sha256": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PREEXPOSURE__SCALAR_SOURCE_CLOSURE_v2.md",
+      "bytes": 8730,
+      "sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/PRE_AUTHOR_EXPOSURE_FREEZE_v1.json",
+      "bytes": 736,
+      "sha256": "171207b8019bf426716c4f67f42fee3b9f1a3ff2b87f85a3f83c7c7f31bf52a5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_lab_yukawa_bridge/independent_controls_v1.py",
+      "bytes": 7299,
+      "sha256": "9f735a7b684825a0c782eab5dfb6a98365e69fc144fbd7d6051b06a22ccfbd54"
+    }
+  ],
+  "independent_controls": {
+    "passed": 193,
+    "failed": 0
+  },
+  "unchanged_author_reproduction": {
+    "passed": 151,
+    "failed": 0,
+    "exact_stdout_match": true
+  },
+  "concrete_errors_found": [],
+  "failures_discarded": false,
+  "author_source_changed": false
+}

@@ -1,0 +1,76 @@
+{
+  "frozen_at": "2026-10-16T06:49:27.572912+00:00",
+  "author": "/root",
+  "source": "LAB_YUKAWA_BRIDGE_v1.md",
+  "source_sha256": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+  "scope": "Conditional static linear weak-source laboratory response, finite-density and gain identifiability; standard support",
+  "development": {
+    "radial_densities": [
+      "uniform",
+      "quadratic central concentration",
+      "outer-biased polynomial"
+    ],
+    "mR": [
+      0,
+      0.3,
+      1,
+      3
+    ],
+    "exterior_r_over_R": [
+      1.2,
+      2.5
+    ],
+    "pair_geometries": [
+      [
+        0.7,
+        0.2,
+        0,
+        1.3,
+        -0.4,
+        0.8
+      ],
+      [
+        -0.3,
+        0.8,
+        0,
+        0.6,
+        0.1,
+        0.5
+      ]
+    ],
+    "ratio_strengths": [
+      0,
+      0.2,
+      1.5
+    ],
+    "ratio_masses": [
+      0,
+      0.4,
+      2
+    ]
+  },
+  "reserved_synthetic_controls": {
+    "radial_density": "positive mixed polynomial not used for development",
+    "noise_phases": 16,
+    "mass_density_perturbations": "fixed deterministic signed differences with L1 bounds"
+  },
+  "calibration": "Exact synthetic geometry/transfer inputs; no real apparatus calibration",
+  "independent_empirical_test": null,
+  "failure_witnesses": [
+    "same mass and radius support bound do not bound interior weak gravity",
+    "signed harmonic cancellation",
+    "m=0 ratio nonidentifiability",
+    "ignoring nonzero calibration scalar response biases strength",
+    "rank condition A=0,b!=0 is incompatible even though pairwise determinants vanish"
+  ],
+  "not_derived": [
+    "action class",
+    "uniform background",
+    "decay or chamber boundary condition",
+    "linear unscreened regime",
+    "physical source stress and stationary support",
+    "common gain/transfer and geometric certificates",
+    "absolute F normalization"
+  ],
+  "external_data_opened_for_this_computation": false
+}

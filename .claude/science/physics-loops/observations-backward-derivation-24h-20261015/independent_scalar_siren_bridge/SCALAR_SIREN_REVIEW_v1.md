@@ -1,0 +1,37 @@
+# Focused independent scalar-siren bridge review v1
+
+The complete note, frozen plan/intake and runner were read. No consequential mathematical or implementation discrepancy was found in the stated conditional source/transport contract and one-dimensional proxy. This is a focused independent check, not authorship, formal audit, action-realizability proof or empirical validation.
+
+Exact reviewed note: `13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709`. Runner: `5faa9ceaf683c78d426524613d3194829a0809fc49602a119fcda3b8f9b14b67`. Plan: `d87c4764b82b032f69224a73f62d23bf4f70961004628348bd156fbc342fdf66`. Intake: `fa3b73643edc2e181b402f19d7ce3504241633478278066d84675406ae1ffaac`.
+
+## Independent derivation and exposure order
+
+I read the note and plan before deriving the proof in PRECHECK_v1.md, frozen at 06:32:04Z, SHA256 `2e375eeaef3ad4a8e63ea4872f733a9d10dcd118cc76cb7c0454fa4e3167baad`. I then froze and ran my separately implemented controls before opening the author runner/results. PRE_AUTHOR_EXPOSURE_FREEZE_v1.json binds this chronology and the original code/results. This is independent derivation/implementation given the disclosed author note and test plan; it is not blind hypothesis discovery or an empirical holdout.
+
+The Einstein-frame canonical coefficient is Fstar(2omega+3)/(2F^2), the potential multiplier is Fstar^2/F^2, and the four-dimensional current transforms to div(F A^2 k)=0. The leading scalar stress contracts to zero against transverse traceless polarization; the harmonic-gauge derivative term in delta box(phi) vanishes. Remaining Hessian/background mixing is lower WKB order, not absent at all orders. The dimensionless TT amplitude and phase-covector conventions are consistent. The derivation requires the supplied positive, regular scalar chart, smooth on-shell slowly varying background and geometric-optics hierarchy; it does not apply to arbitrary derivative-coupled scalar actions.
+
+Direct quadrupole differentiation and energy balance recover the 32/5 flux, intrinsic 4K amplitude and 96/5 chirp coefficients with Gc distinct from GT. The fixed-redshift normalization then gives D_chirp=DL(1+eta)/sqrt(rho). The positive rescaling leaves both amplitude and frequency ODE unchanged; fixed initial frequency/phase therefore gives the same leading waveform. The dipole coefficient rescales with the constant term, leaving the stated ambiguity. This is nonidentifiability in the deliberately reduced source contract, not a guarantee that every parameter triple comes from a common global scalar solution, nor immunity to extra data or higher waveform orders.
+
+The deterministic interval image and log-chart mapping have correct endpoint signs and factors. The rectangular bounds remain valid for correlated admissible inputs but need not be sharp for a particular joint constraint. They are not confidence intervals. Loss bounds, distance, inclination/polarization, timing/beam corrections and actual endpoint registration remain supplied. Ratio registration leaves a common dimensional normalization undetermined unless a separate physical source/matter calibration supplies it.
+
+## Exact scattering proof and independent controls
+
+The transform u=sqrt(F)h gives Q=L''/2+L'^2/4 with the displayed sign. The outgoing Jost Volterra equation has the stated plus sign. Expanding its sine kernel on the left gives A=1-(2ik)^(-1) integral exp(-iky)Qf and B=(2ik)^(-1) integral exp(iky)Qf. Volterra ordered-integral bounds yield the slightly stronger |A-1|,|B| <= (exp(J/k)-1)/2 <= J exp(J/k)/(2k), so the quoted conservative m is valid.
+
+The real-potential Wronskian yields |A|^2-|B|^2=1, hence A is nonzero and the stated t, r and error/lower bounds follow. Physical strain transmission is sqrt(Fleft/Fright)*t. Its conserved transmitted flux is (Fright/Fleft)|t_h|^2; using unweighted |t_h|^2 would be incorrect. F positive C2, constant exterior values, real Q, k>0 and no dissipative term are real hypotheses. The author's analytic J upper bound is conservative: S' <=15/8, |S''|<=15, |B'|<=12, |B''|<=120 on the unit interval. Some low-frequency m values are very large and practically uninformative. That is not a false bound, and cannot be promoted to a real-siren error budget.
+
+My pre-runner implementation passed 96 controls, including a non-axis-aligned rational null direction and both TT screens, exact source algebra, correlated endpoint inputs, and a distinct profile family F=exp(a S)*(1+b B)^2. For 12 predeclared profile/frequency cases it integrated real physical flux variables (h,p=F h') with Radau, compared them with exact constant-Q layer transfer products at two resolutions, and separately checked the Volterra integral by quadrature. Maximum fine-layer discrepancy was 4.770692968795773e-8; weighted-flux error 2.389421993598262e-12; Volterra residual 3.1789411206080902e-12. Constant-F and global-scaling controls also passed. These floating computations are numerical checks, not outward-rounded certificates; the bound itself is justified by the separate proof.
+
+After exposure, I compared all 16 author profile/frequency rows using a separate Radau physical-flux generator, not imported author scattering functions. All 16 passed the pre-existing 3e-8 comparison scale; maximum transmission/reflection difference was 1.370287444524071e-9, maximum weighted-flux error 8.714140520282854e-12. This post-exposure correspondence is separately labeled, not counted as a new blind result.
+
+## Exact author reproduction
+
+Running the unchanged original runner with Python -B, captured stdout/stderr and a 120-second cap reproduced all 207 passing controls and zero failures in 1.4783 seconds. Entire stdout and parsed JSON are byte/value-identical to SCALAR_SIREN_CONTROLS_v1.json (`e0371c260ea76461f08d4631f156f85ab218eff285a53a52b30234d96c7fe584`). Source, plan, runner and saved-result hashes were identical before and after execution. This reproduction is distinct from the independent mathematical/numerical checks.
+
+Own pre-exposure controls took 3.3692 seconds and the post-exposure all-profile comparison 8.4839 seconds, each capped at120 seconds with bytecode disabled. All three processes exited zero; all stderr streams are empty. No failed computational attempt or tolerance change occurred in this check. Exact code, results, stdout, stderr, execution receipts and frozen author-source copies are retained in this directory.
+
+## Remaining premises and scope
+
+The candidate action, actual on-shell background, compact-source sensitivities/loss law, fixed source mass/coupling approximation, physical distance/amplitude/error suppliers and endpoint-chart identification are not derived here. Leading TT decoupling does not remove scalar radiation energy from the source. The one-dimensional coefficient profile is a propagation proxy, not an arbitrary realizable gravitational solution. No raw observations, observed siren, fitted gravity parameters or independent empirical test were used. Prior-art pages were not independently re-read; their local intake claims remain limited to the stated author read scope. No external network, Git/PR, shared source, model, ownership or status changes were made.
+
+The result supports the note's conditional route: an independently bounded source loss plus calibrated geometric/readout inputs could constrain relative scalar charts. It does not itself provide those inputs, retire the global state/action/scale assumptions, or validate the supplied scalar theory.

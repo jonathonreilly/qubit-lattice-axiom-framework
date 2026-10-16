@@ -1,0 +1,62 @@
+{
+  "frozen_at": "2026-10-16T06:32:21.565899+00:00",
+  "source": "SCALAR_SOURCE_CLOSURE_v1.md",
+  "source_sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+  "data_roles": "symbolic and synthetic only; no actual source classified as weak",
+  "tests": [
+    "Einstein-frame mass derivative gives alpha squared1/D",
+    "direct sphere integration of scalar dipole/quadrupole radiation versus tensor contraction",
+    "scalar mass from both canonical potential and Jordan trace",
+    "unknown C cancels from vacuum and mass criterion",
+    "massive far-field Green-function flux power and subthreshold evanescence",
+    "weak equal charge dipole vanishes while quadrupole survives",
+    "fixed conservative charge product has distinct luminosities",
+    "PPN bound and siren ratio recover synthetic environment only inside same declared class"
+  ],
+  "synthetic": {
+    "omega_values": [
+      -1.4,
+      0,
+      5,
+      50
+    ],
+    "mass_ratios": [
+      1,
+      2,
+      5
+    ],
+    "charge_products": [
+      0.02,
+      0.2
+    ],
+    "charge1_values": [
+      0.1,
+      0.4,
+      1.2
+    ],
+    "orbital_speed": 0.08,
+    "scalar_mass_over_omega": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      3
+    ],
+    "field_scales": [
+      0.2,
+      1,
+      5
+    ],
+    "potential_family": "W(x)=w0 exp(x-x0)+a(x-x0)^2; x0=.3,w0=.02,a in[-.04,.01,.1]",
+    "endpoint_ratio": 1.4,
+    "distance_ratio_roundtrip_tolerance": 1e-12
+  },
+  "stated_obligations": [
+    "weak self-gravity and unscreened common source environment for universal charge",
+    "on-shell nearly constant vacuum environment for mass formula",
+    "independent reconstructed action derivatives and source registration",
+    "massive-wave and Newtonian limits, no extra energy loss",
+    "not a proof of full compact-binary identifiability"
+  ]
+}

@@ -1,0 +1,1479 @@
+{
+  "source_sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+  "plan_sha256": "d87c4764b82b032f69224a73f62d23bf4f70961004628348bd156fbc342fdf66",
+  "runner_sha256": "5faa9ceaf683c78d426524613d3194829a0809fc49602a119fcda3b8f9b14b67",
+  "summary": {
+    "passed": 207,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "scalar_derivative_TT_plus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_derivative_TT_cross",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "background_gradient_square_not_generically_TT_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conformal_current_power",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_conformal_power_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadrupole_flux_contraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "faceon_tensor_amplitude",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "energy_balance_with_separate_couplings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "redshift_and_chirp_distance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "naive_no_extra_loss_wrong",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_invariance_(0.0, 0.9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.0, 0.9)",
+      "passed": true,
+      "detail": 3.4813029177421537e-16
+    },
+    {
+      "name": "source_invariance_(0.0, 1.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.0, 1.3)",
+      "passed": true,
+      "detail": 2.3208686118281026e-16
+    },
+    {
+      "name": "source_invariance_(0.0, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.0, 2.0)",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "eta_ignored_bias_0.0",
+      "passed": true,
+      "detail": {
+        "true_rho": 1.4,
+        "naive_min": 0.828402366863904,
+        "naive_max": 0.8284023668639052
+      }
+    },
+    {
+      "name": "source_invariance_(0.05, 0.9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.05, 0.9)",
+      "passed": true,
+      "detail": 2.4469929965718663e-16
+    },
+    {
+      "name": "source_invariance_(0.05, 1.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.05, 1.3)",
+      "passed": true,
+      "detail": 1.656771001906901e-16
+    },
+    {
+      "name": "source_invariance_(0.05, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_leading_waveform_(0.05, 2.0)",
+      "passed": true,
+      "detail": 3.313542003813802e-16
+    },
+    {
+      "name": "eta_ignored_bias_0.05",
+      "passed": true,
+      "detail": {
+        "true_rho": 1.4,
+        "naive_min": 0.7267311912908319,
+        "naive_max": 0.7954674564645312
+      }
+    },
+    {
+      "name": "registration_interval_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registration_interval_79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_wave_transform",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(0, 3)",
+      "passed": true,
+      "detail": 1.5227978005194818e-11
+    },
+    {
+      "name": "real_potential_flux_(0, 3)",
+      "passed": true,
+      "detail": 9.586997862243152e-12
+    },
+    {
+      "name": "analytic_gradient_bound_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 3, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 3, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(0, 9)",
+      "passed": true,
+      "detail": 1.84260694443563e-11
+    },
+    {
+      "name": "real_potential_flux_(0, 9)",
+      "passed": true,
+      "detail": 8.096523451683879e-12
+    },
+    {
+      "name": "analytic_gradient_bound_(0, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(0, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 9, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 9, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(0, 45)",
+      "passed": true,
+      "detail": 1.2875263171601598e-11
+    },
+    {
+      "name": "real_potential_flux_(0, 45)",
+      "passed": true,
+      "detail": 6.417077980103159e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(0, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(0, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 45, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 45, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(0, 180)",
+      "passed": true,
+      "detail": 1.2905691018388945e-11
+    },
+    {
+      "name": "real_potential_flux_(0, 180)",
+      "passed": true,
+      "detail": 2.5713009499384043e-10
+    },
+    {
+      "name": "analytic_gradient_bound_(0, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(0, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 180, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(0, 180, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(1, 3)",
+      "passed": true,
+      "detail": 1.0505942958732097e-11
+    },
+    {
+      "name": "real_potential_flux_(1, 3)",
+      "passed": true,
+      "detail": 3.7063685454086226e-12
+    },
+    {
+      "name": "analytic_gradient_bound_(1, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(1, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 3, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 3, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(1, 9)",
+      "passed": true,
+      "detail": 4.646822038201113e-11
+    },
+    {
+      "name": "real_potential_flux_(1, 9)",
+      "passed": true,
+      "detail": 2.3115953595720384e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(1, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(1, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 9, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 9, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(1, 45)",
+      "passed": true,
+      "detail": 1.334589926420849e-11
+    },
+    {
+      "name": "real_potential_flux_(1, 45)",
+      "passed": true,
+      "detail": 6.412470554550964e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(1, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(1, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 45, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 45, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(1, 180)",
+      "passed": true,
+      "detail": 1.3055055869506341e-11
+    },
+    {
+      "name": "real_potential_flux_(1, 180)",
+      "passed": true,
+      "detail": 2.571243218341124e-10
+    },
+    {
+      "name": "analytic_gradient_bound_(1, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(1, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 180, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(1, 180, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(2, 3)",
+      "passed": true,
+      "detail": 5.308307112821314e-11
+    },
+    {
+      "name": "real_potential_flux_(2, 3)",
+      "passed": true,
+      "detail": 6.639355731863361e-12
+    },
+    {
+      "name": "analytic_gradient_bound_(2, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(2, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 3, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 3, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(2, 9)",
+      "passed": true,
+      "detail": 1.6839520409800602e-11
+    },
+    {
+      "name": "real_potential_flux_(2, 9)",
+      "passed": true,
+      "detail": 2.37529995672503e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(2, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(2, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 9, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 9, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(2, 45)",
+      "passed": true,
+      "detail": 1.1947770165281183e-11
+    },
+    {
+      "name": "real_potential_flux_(2, 45)",
+      "passed": true,
+      "detail": 6.416733810965525e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(2, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(2, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 45, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 45, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(2, 180)",
+      "passed": true,
+      "detail": 1.2019286068526097e-11
+    },
+    {
+      "name": "real_potential_flux_(2, 180)",
+      "passed": true,
+      "detail": 2.571195478751065e-10
+    },
+    {
+      "name": "analytic_gradient_bound_(2, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(2, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 180, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(2, 180, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(3, 3)",
+      "passed": true,
+      "detail": 4.660598959064446e-11
+    },
+    {
+      "name": "real_potential_flux_(3, 3)",
+      "passed": true,
+      "detail": 1.1619483153424426e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(3, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(3, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 3, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 3, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(3, 9)",
+      "passed": true,
+      "detail": 6.91754583543549e-11
+    },
+    {
+      "name": "real_potential_flux_(3, 9)",
+      "passed": true,
+      "detail": 3.7368552696648294e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(3, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(3, 9)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 9, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 9, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(3, 45)",
+      "passed": true,
+      "detail": 1.8647067451666098e-12
+    },
+    {
+      "name": "real_potential_flux_(3, 45)",
+      "passed": true,
+      "detail": 6.414346831462581e-11
+    },
+    {
+      "name": "analytic_gradient_bound_(3, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(3, 45)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 45, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 45, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_h_vs_u_(3, 180)",
+      "passed": true,
+      "detail": 9.411743042240584e-13
+    },
+    {
+      "name": "real_potential_flux_(3, 180)",
+      "passed": true,
+      "detail": 2.5712287854418037e-10
+    },
+    {
+      "name": "analytic_gradient_bound_(3, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certified_proxy_error_(3, 180)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 180, 0.3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "absolute_scale_unidentifiable_(3, 180, 7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_endpoints_different_finite_wave_3",
+      "passed": true,
+      "detail": 0.13423680202249558
+    },
+    {
+      "name": "same_endpoints_different_finite_wave_9",
+      "passed": true,
+      "detail": 0.041704377548651014
+    },
+    {
+      "name": "high_frequency_endpoint_approach_0",
+      "passed": true,
+      "detail": {
+        "low": 0.029033490546045947,
+        "high": 0.00035717772058430113
+      }
+    },
+    {
+      "name": "high_frequency_endpoint_approach_1",
+      "passed": true,
+      "detail": {
+        "low": 0.19794313280361456,
+        "high": 0.0027222341280406137
+      }
+    },
+    {
+      "name": "high_frequency_endpoint_approach_2",
+      "passed": true,
+      "detail": {
+        "low": 0.027383485377074055,
+        "high": 0.0003524996573356801
+      }
+    },
+    {
+      "name": "high_frequency_endpoint_approach_3",
+      "passed": true,
+      "detail": {
+        "low": 0.11049332528007495,
+        "high": 0.0013303311111468952
+      }
+    }
+  ],
+  "details": {
+    "leading_source_ambiguity": [
+      {
+        "eta_dipole_coefficient": 0.0,
+        "rescaling": 0.9,
+        "rho_before": 1.4,
+        "rho_after": 1.134,
+        "max_fractional_history_difference": 3.4813029177421537e-16
+      },
+      {
+        "eta_dipole_coefficient": 0.0,
+        "rescaling": 1.3,
+        "rho_before": 1.4,
+        "rho_after": 2.366,
+        "max_fractional_history_difference": 2.3208686118281026e-16
+      },
+      {
+        "eta_dipole_coefficient": 0.0,
+        "rescaling": 2.0,
+        "rho_before": 1.4,
+        "rho_after": 5.6,
+        "max_fractional_history_difference": 0.0
+      },
+      {
+        "eta_dipole_coefficient": 0.05,
+        "rescaling": 0.9,
+        "rho_before": 1.4,
+        "rho_after": 1.134,
+        "max_fractional_history_difference": 2.4469929965718663e-16
+      },
+      {
+        "eta_dipole_coefficient": 0.05,
+        "rescaling": 1.3,
+        "rho_before": 1.4,
+        "rho_after": 2.366,
+        "max_fractional_history_difference": 1.656771001906901e-16
+      },
+      {
+        "eta_dipole_coefficient": 0.05,
+        "rescaling": 2.0,
+        "rho_before": 1.4,
+        "rho_after": 5.6,
+        "max_fractional_history_difference": 3.313542003813802e-16
+      }
+    ],
+    "intervals": {
+      "rho": [
+        0.7744000000000002,
+        2.3716
+      ],
+      "log_Cs_over_Co": [
+        -0.5056667430197694,
+        1.2635648328510756
+      ],
+      "scope": "deterministic synthetic control, no observational interval"
+    },
+    "scattering_proxy": [
+      {
+        "profile_index": 0,
+        "role": "development",
+        "a": 0.6,
+        "b": 0,
+        "k": 3,
+        "strain_transmission": [
+          0.7321238329957411,
+          -0.0196729475258972
+        ],
+        "reflection": [
+          0.14830146519524848,
+          -0.025221487408105356
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.029033490546045947,
+        "J_numeric": 1.1360074977739814,
+        "J_analytic_bound": 4.81640625,
+        "complex_error_bound": 3.997772533778408,
+        "direct_equation_difference": 1.5227978005194818e-11,
+        "wronskian_error": 9.586997862243152e-12
+      },
+      {
+        "profile_index": 0,
+        "role": "development",
+        "a": 0.6,
+        "b": 0,
+        "k": 9,
+        "strain_transmission": [
+          0.7407975265941148,
+          -0.005518760477802349
+        ],
+        "reflection": [
+          -0.0005535763639470988,
+          0.00025537579150321124
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.007449599810911083,
+        "J_numeric": 1.1360074977739814,
+        "J_analytic_bound": 4.81640625,
+        "complex_error_bound": 0.45694719161793984,
+        "direct_equation_difference": 1.84260694443563e-11,
+        "wronskian_error": 8.096523451683879e-12
+      },
+      {
+        "profile_index": 0,
+        "role": "development",
+        "a": 0.6,
+        "b": 0,
+        "k": 45,
+        "strain_transmission": [
+          0.7408174617660428,
+          -0.0010599178765640566
+        ],
+        "reflection": [
+          2.2985548046398107e-05,
+          3.711252660883254e-05
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.0014307398477397802,
+        "J_numeric": 1.1360074977739814,
+        "J_analytic_bound": 4.81640625,
+        "complex_error_bound": 0.05956123347183382,
+        "direct_equation_difference": 1.2875263171601598e-11,
+        "wronskian_error": 6.417077980103159e-11
+      },
+      {
+        "profile_index": 0,
+        "role": "development",
+        "a": 0.6,
+        "b": 0,
+        "k": 180,
+        "strain_transmission": [
+          0.7408181735215318,
+          -0.00026460375922774645
+        ],
+        "reflection": [
+          3.746061798473296e-07,
+          5.011082269455408e-07
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.00035717772058430113,
+        "J_numeric": 1.1360074977739814,
+        "J_analytic_bound": 4.81640625,
+        "complex_error_bound": 0.013741729039397866,
+        "direct_equation_difference": 1.2905691018388945e-11,
+        "wronskian_error": 2.5713009499384043e-10
+      },
+      {
+        "profile_index": 1,
+        "role": "development",
+        "a": 0.6,
+        "b": 0.8,
+        "k": 3,
+        "strain_transmission": [
+          0.5990984449571821,
+          -0.03766642285495654
+        ],
+        "reflection": [
+          0.0006334086608834892,
+          -0.5860217486628341
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.19794313280361456,
+        "J_numeric": 5.715886998213551,
+        "J_analytic_bound": 81.25640625000001,
+        "complex_error_bound": 7848306916448.878,
+        "direct_equation_difference": 1.0505942958732097e-11,
+        "wronskian_error": 3.7063685454086226e-12
+      },
+      {
+        "profile_index": 1,
+        "role": "development",
+        "a": 0.6,
+        "b": 0.8,
+        "k": 9,
+        "strain_transmission": [
+          0.7381489250517419,
+          -0.04713894808658382
+        ],
+        "reflection": [
+          0.023333790773384728,
+          0.05099020780477935
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.06373285943300068,
+        "J_numeric": 5.715886998213551,
+        "J_analytic_bound": 81.25640625000001,
+        "complex_error_bound": 37636.42045540698,
+        "direct_equation_difference": 4.646822038201113e-11,
+        "wronskian_error": 2.3115953595720384e-11
+      },
+      {
+        "profile_index": 1,
+        "role": "development",
+        "a": 0.6,
+        "b": 0.8,
+        "k": 45,
+        "strain_transmission": [
+          0.7407738592121546,
+          -0.008106020356479154
+        ],
+        "reflection": [
+          -0.00012567587705389794,
+          0.00013089430788640943
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.010942146827416994,
+        "J_numeric": 5.715886998213551,
+        "J_analytic_bound": 81.25640625000001,
+        "complex_error_bound": 5.493128297277439,
+        "direct_equation_difference": 1.334589926420849e-11,
+        "wronskian_error": 6.412470554550964e-11
+      },
+      {
+        "profile_index": 1,
+        "role": "development",
+        "a": 0.6,
+        "b": 0.8,
+        "k": 180,
+        "strain_transmission": [
+          0.7408154758330929,
+          -0.002016678775044199
+        ],
+        "reflection": [
+          -2.6450635553582982e-06,
+          2.7682952540974886e-06
+        ],
+        "endpoint_only_transmission": 0.7408182206817179,
+        "complex_endpoint_error": 0.0027222341280406137,
+        "J_numeric": 5.715886998213551,
+        "J_analytic_bound": 81.25640625000001,
+        "complex_error_bound": 0.35449186253950454,
+        "direct_equation_difference": 1.3055055869506341e-11,
+        "wronskian_error": 2.571243218341124e-10
+      },
+      {
+        "profile_index": 2,
+        "role": "reserved_synthetic",
+        "a": -0.35,
+        "b": 0.25,
+        "k": 3,
+        "strain_transmission": [
+          1.1625694139041656,
+          -0.015547870214780738
+        ],
+        "reflection": [
+          -0.11520390036346793,
+          -0.18472707654587095
+        ],
+        "endpoint_only_transmission": 1.191246216612358,
+        "complex_endpoint_error": 0.027383485377074055,
+        "J_numeric": 1.805702631925265,
+        "J_analytic_bound": 20.967041015625,
+        "complex_error_bound": 3790.3207761713916,
+        "direct_equation_difference": 5.308307112821314e-11,
+        "wronskian_error": 6.639355731863361e-12
+      },
+      {
+        "profile_index": 2,
+        "role": "reserved_synthetic",
+        "a": -0.35,
+        "b": 0.25,
+        "k": 9,
+        "strain_transmission": [
+          1.1910424166152522,
+          -0.009523236925464423
+        ],
+        "reflection": [
+          0.007439840102432033,
+          0.014928918563463347
+        ],
+        "endpoint_only_transmission": 1.191246216612358,
+        "complex_endpoint_error": 0.007996178482802024,
+        "J_numeric": 1.805702631925265,
+        "J_analytic_bound": 20.967041015625,
+        "complex_error_bound": 11.96817681881524,
+        "direct_equation_difference": 1.6839520409800602e-11,
+        "wronskian_error": 2.37529995672503e-11
+      },
+      {
+        "profile_index": 2,
+        "role": "reserved_synthetic",
+        "a": -0.35,
+        "b": 0.25,
+        "k": 45,
+        "strain_transmission": [
+          1.1912450211453163,
+          -0.001686189705963247
+        ],
+        "reflection": [
+          -5.9243676487116353e-05,
+          6.737802608091498e-06
+        ],
+        "endpoint_only_transmission": 1.191246216612358,
+        "complex_endpoint_error": 0.0014154841427632958,
+        "J_numeric": 1.805702631925265,
+        "J_analytic_bound": 20.967041015625,
+        "complex_error_bound": 0.37123362552111083,
+        "direct_equation_difference": 1.1947770165281183e-11,
+        "wronskian_error": 6.416733810965525e-11
+      },
+      {
+        "profile_index": 2,
+        "role": "reserved_synthetic",
+        "a": -0.35,
+        "b": 0.25,
+        "k": 180,
+        "strain_transmission": [
+          1.1912461427548506,
+          -0.00041991387666298385
+        ],
+        "reflection": [
+          -1.1608114000427314e-06,
+          4.1209332502606386e-07
+        ],
+        "endpoint_only_transmission": 1.191246216612358,
+        "complex_endpoint_error": 0.0003524996573356801,
+        "J_numeric": 1.805702631925265,
+        "J_analytic_bound": 20.967041015625,
+        "complex_error_bound": 0.06543691430161788,
+        "direct_equation_difference": 1.2019286068526097e-11,
+        "wronskian_error": 2.571195478751065e-10
+      },
+      {
+        "profile_index": 3,
+        "role": "reserved_synthetic",
+        "a": 0,
+        "b": 0.6,
+        "k": 3,
+        "strain_transmission": [
+          0.8915971243382685,
+          -0.021391387980111067
+        ],
+        "reflection": [
+          -0.07455415722871869,
+          -0.44613748334025033
+        ],
+        "endpoint_only_transmission": 1.0,
+        "complex_endpoint_error": 0.11049332528007495,
+        "J_numeric": 4.170089048681745,
+        "J_analytic_bound": 48.959999999999994,
+        "complex_error_bound": 99856445.64035343,
+        "direct_equation_difference": 4.660598959064446e-11,
+        "wronskian_error": 1.1619483153424426e-11
+      },
+      {
+        "profile_index": 3,
+        "role": "reserved_synthetic",
+        "a": 0,
+        "b": 0.6,
+        "k": 9,
+        "strain_transmission": [
+          0.998655855844469,
+          -0.031478184533560216
+        ],
+        "reflection": [
+          0.018143689863442242,
+          0.03696501104377586
+        ],
+        "endpoint_only_transmission": 1.0,
+        "complex_endpoint_error": 0.03150686948967983,
+        "J_numeric": 4.170089048681745,
+        "J_analytic_bound": 48.959999999999994,
+        "complex_error_bound": 626.8027390129461,
+        "direct_equation_difference": 6.91754583543549e-11,
+        "wronskian_error": 3.7368552696648294e-11
+      },
+      {
+        "profile_index": 3,
+        "role": "reserved_synthetic",
+        "a": 0,
+        "b": 0.6,
+        "k": 45,
+        "strain_transmission": [
+          0.9999856843307003,
+          -0.005349220505613318
+        ],
+        "reflection": [
+          -0.00011069909425660804,
+          6.916283031872239e-05
+        ],
+        "endpoint_only_transmission": 1.0,
+        "complex_endpoint_error": 0.0053492396614903594,
+        "J_numeric": 4.170089048681745,
+        "J_analytic_bound": 48.959999999999994,
+        "complex_error_bound": 1.6147723191372876,
+        "direct_equation_difference": 1.8647067451666098e-12,
+        "wronskian_error": 6.414346831462581e-11
+      },
+      {
+        "profile_index": 3,
+        "role": "reserved_synthetic",
+        "a": 0,
+        "b": 0.6,
+        "k": 180,
+        "strain_transmission": [
+          0.9999991152341313,
+          -0.0013303308169303944
+        ],
+        "reflection": [
+          -2.263016087410309e-06,
+          1.6951654800904782e-06
+        ],
+        "endpoint_only_transmission": 1.0,
+        "complex_endpoint_error": 0.0013303311111468952,
+        "J_numeric": 4.170089048681745,
+        "J_analytic_bound": 48.959999999999994,
+        "complex_error_bound": 0.17851183217831068,
+        "direct_equation_difference": 9.411743042240584e-13,
+        "wronskian_error": 2.5712287854418037e-10
+      }
+    ]
+  },
+  "empirical_validation": false,
+  "scope": "Conditional source/transport contract and 1D proxy. No exact scalar-background or full PN-waveform claim."
+}

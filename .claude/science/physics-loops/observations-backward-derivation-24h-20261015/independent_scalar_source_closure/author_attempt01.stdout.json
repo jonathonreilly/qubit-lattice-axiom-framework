@@ -1,0 +1,1497 @@
+{
+  "source_sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+  "plan_sha256": "7accf5f24d12abe6b231b2379e4167d706905ade4928f69573e5202b08039ed0",
+  "runner_sha256": "df0f437428fdda2d1b001899f53a2236f5e2056b1a1d33bbb803b9b6e6ddc37e",
+  "summary": {
+    "passed": 174,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "weak_charge_from_conformal_mass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_exchange_normalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_sphere_integral",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadrupole_sphere_integral",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equal_charge_scalar_quadrupole_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_flux_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_zero_does_not_remove_quadrupole",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mass_weighted_scalar_dipole",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mass_weighted_scalar_quadrupole",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_and_Jordan_scalar_mass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inverse_vacuum_criterion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inverse_mass_without_normalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normalization_absent_from_mass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "massive_flux_power_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "massless_flux_shortcut_detected_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "massive_flux_power_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "massless_flux_shortcut_detected_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "evanescent_time_averaged_radial_flux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_PPN_charge_-1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(-1.4, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(-1.4, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(-1.4, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(-1.4, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(-1.4, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(-1.4, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_PPN_charge_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(0, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(0, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(0, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(0, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(0, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_PPN_charge_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(5, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(5, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(5, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(5, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(5, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(5, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_PPN_charge_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 0.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(50, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dipole_closed_quadrupole_open_(50, 1.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weak_source_siren_closure_(50, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold_range_(50, 3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 0.2, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 0.2, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 1, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 1, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 1, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 5, -0.04)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 5, 0.01)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical_F_potential_mass_(50, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tachyonic_boundary_(50, 5, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.02, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.02, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.02, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(1, 0.02)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.2, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(1, 0.2, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(1, 0.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.02, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.02, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.02, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(2, 0.02)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.2, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(2, 0.2, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(2, 0.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.02, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.02, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.02, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(5, 0.02)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.2, 0.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.2, 0.4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_conservative_product_(5, 0.2, 1.2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_product_different_radiation_(5, 0.2)",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "threshold_controls": [
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 0,
+        "dipole_factor": 1.0,
+        "quadrupole_factor": 1.0,
+        "extra_flux_fraction_weak_equal_charge": 0.8333333333333326,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 0.5,
+        "dipole_factor": 0.649519052838329,
+        "quadrupole_factor": 0.8509973172819031,
+        "extra_flux_fraction_weak_equal_charge": 0.709164431068252,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 1,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.48713928962874675,
+        "extra_flux_fraction_weak_equal_charge": 0.40594940802395524,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 1.5,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.1266033342208642,
+        "extra_flux_fraction_weak_equal_charge": 0.10550277851738675,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 2,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": -1.4,
+        "mass_over_orbital_frequency": 3,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 0,
+        "dipole_factor": 1.0,
+        "quadrupole_factor": 1.0,
+        "extra_flux_fraction_weak_equal_charge": 0.05555555555555555,
+        "rho_recovered": 1.4000000000000004
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 0.5,
+        "dipole_factor": 0.649519052838329,
+        "quadrupole_factor": 0.8509973172819031,
+        "extra_flux_fraction_weak_equal_charge": 0.0472776287378835,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 1,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.48713928962874675,
+        "extra_flux_fraction_weak_equal_charge": 0.02706329386826371,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 1.5,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.1266033342208642,
+        "extra_flux_fraction_weak_equal_charge": 0.007033518567825789,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 2,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 0,
+        "mass_over_orbital_frequency": 3,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 0,
+        "dipole_factor": 1.0,
+        "quadrupole_factor": 1.0,
+        "extra_flux_fraction_weak_equal_charge": 0.012820512820512822,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 0.5,
+        "dipole_factor": 0.649519052838329,
+        "quadrupole_factor": 0.8509973172819031,
+        "extra_flux_fraction_weak_equal_charge": 0.010910222016434656,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 1,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.48713928962874675,
+        "extra_flux_fraction_weak_equal_charge": 0.006245375508060856,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 1.5,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.1266033342208642,
+        "extra_flux_fraction_weak_equal_charge": 0.001623119669498259,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 2,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 5,
+        "mass_over_orbital_frequency": 3,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 0,
+        "dipole_factor": 1.0,
+        "quadrupole_factor": 1.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0016181229773462782,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 0.5,
+        "dipole_factor": 0.649519052838329,
+        "quadrupole_factor": 0.8509973172819031,
+        "extra_flux_fraction_weak_equal_charge": 0.0013770183127538884,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 1,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.48713928962874675,
+        "extra_flux_fraction_weak_equal_charge": 0.0007882512777164187,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 1.5,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.1266033342208642,
+        "extra_flux_fraction_weak_equal_charge": 0.00020485976411143073,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 2,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      },
+      {
+        "omega": 50,
+        "mass_over_orbital_frequency": 3,
+        "dipole_factor": 0.0,
+        "quadrupole_factor": 0.0,
+        "extra_flux_fraction_weak_equal_charge": 0.0,
+        "rho_recovered": 1.4
+      }
+    ],
+    "normalization_and_mass_controls": [
+      {
+        "omega": -1.4,
+        "C": 0.2,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.7999999999999993,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": -1.4,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.19999999999999982,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": -1.4,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 1.9999999999999984,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": -1.4,
+        "C": 1,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.7999999999999994,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": -1.4,
+        "C": 1,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.19999999999999984,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": -1.4,
+        "C": 1,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 1.9999999999999991,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": -1.4,
+        "C": 5,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.7999999999999994,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": -1.4,
+        "C": 5,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.19999999999999987,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": -1.4,
+        "C": 5,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 1.9999999999999987,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 0.2,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.05333333333333333,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 0,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.013333333333333329,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.13333333333333333,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 1,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.05333333333333334,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 0,
+        "C": 1,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.013333333333333332,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 1,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.13333333333333333,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 5,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.053333333333333344,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 0,
+        "C": 5,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.013333333333333336,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 0,
+        "C": 5,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.13333333333333333,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 0.2,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.012307692307692308,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 5,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.003076923076923077,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.03076923076923077,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 1,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.01230769230769231,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 5,
+        "C": 1,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.003076923076923077,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 1,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.03076923076923077,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 5,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.012307692307692311,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 5,
+        "C": 5,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.0030769230769230787,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 5,
+        "C": 5,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.030769230769230778,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 0.2,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.0015533980582524269,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 50,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.0003883495145631066,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 0.2,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.0038834951456310674,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 1,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.0015533980582524273,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 50,
+        "C": 1,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.0003883495145631066,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 1,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.0038834951456310682,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 5,
+        "quadratic_W_coefficient": -0.04,
+        "mass_squared": -0.0015533980582524273,
+        "stable_mass_sign": false
+      },
+      {
+        "omega": 50,
+        "C": 5,
+        "quadratic_W_coefficient": 0.01,
+        "mass_squared": 0.00038834951456310693,
+        "stable_mass_sign": true
+      },
+      {
+        "omega": 50,
+        "C": 5,
+        "quadratic_W_coefficient": 0.1,
+        "mass_squared": 0.0038834951456310682,
+        "stable_mass_sign": true
+      }
+    ],
+    "compact_charge_counterexamples": [
+      {
+        "mass_ratio": 1,
+        "product": 0.02,
+        "alpha1": 0.1,
+        "alpha2": 0.19999999999999998,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.00375,
+        "total_leading_fraction": 0.08513020833333329
+      },
+      {
+        "mass_ratio": 1,
+        "product": 0.02,
+        "alpha1": 0.4,
+        "alpha2": 0.049999999999999996,
+        "dipole_fraction": 0.9969075520833335,
+        "quadrupole_fraction": 0.0084375,
+        "total_leading_fraction": 1.0053450520833336
+      },
+      {
+        "mass_ratio": 1,
+        "product": 0.02,
+        "alpha1": 1.2,
+        "alpha2": 0.016666666666666666,
+        "dipole_fraction": 11.395489728009258,
+        "quadrupole_fraction": 0.061678240740740735,
+        "total_leading_fraction": 11.457167968749998
+      },
+      {
+        "mass_ratio": 1,
+        "product": 0.2,
+        "alpha1": 0.1,
+        "alpha2": 2.0,
+        "dipole_fraction": 29.378255208333332,
+        "quadrupole_fraction": 0.18375,
+        "total_leading_fraction": 29.562005208333332
+      },
+      {
+        "mass_ratio": 1,
+        "product": 0.2,
+        "alpha1": 0.4,
+        "alpha2": 0.5,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.03375,
+        "total_leading_fraction": 0.11513020833333329
+      },
+      {
+        "mass_ratio": 1,
+        "product": 0.2,
+        "alpha1": 1.2,
+        "alpha2": 0.16666666666666669,
+        "dipole_fraction": 8.689597800925924,
+        "quadrupole_fraction": 0.07782407407407407,
+        "total_leading_fraction": 8.767421874999998
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.02,
+        "alpha1": 0.1,
+        "alpha2": 0.19999999999999998,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.004629629629629629,
+        "total_leading_fraction": 0.08600983796296291
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.02,
+        "alpha1": 0.4,
+        "alpha2": 0.049999999999999996,
+        "dipole_fraction": 0.9969075520833335,
+        "quadrupole_fraction": 0.004629629629629629,
+        "total_leading_fraction": 1.001537181712963
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.02,
+        "alpha1": 1.2,
+        "alpha2": 0.016666666666666666,
+        "dipole_fraction": 11.395489728009258,
+        "quadrupole_fraction": 0.028168724279835397,
+        "total_leading_fraction": 11.423658452289093
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.2,
+        "alpha1": 0.1,
+        "alpha2": 2.0,
+        "dipole_fraction": 29.378255208333332,
+        "quadrupole_fraction": 0.31129629629629624,
+        "total_leading_fraction": 29.689551504629627
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.2,
+        "alpha1": 0.4,
+        "alpha2": 0.5,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.03629629629629629,
+        "total_leading_fraction": 0.11767650462962959
+      },
+      {
+        "mass_ratio": 2,
+        "product": 0.2,
+        "alpha1": 1.2,
+        "alpha2": 0.16666666666666669,
+        "dipole_fraction": 8.689597800925924,
+        "quadrupole_fraction": 0.04353909465020575,
+        "total_leading_fraction": 8.733136895576129
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.02,
+        "alpha1": 0.1,
+        "alpha2": 0.19999999999999998,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.005601851851851851,
+        "total_leading_fraction": 0.08698206018518514
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.02,
+        "alpha1": 0.4,
+        "alpha2": 0.049999999999999996,
+        "dipole_fraction": 0.9969075520833335,
+        "quadrupole_fraction": 0.001956018518518519,
+        "total_leading_fraction": 0.998863570601852
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.02,
+        "alpha1": 1.2,
+        "alpha2": 0.016666666666666666,
+        "dipole_fraction": 11.395489728009258,
+        "quadrupole_fraction": 0.0076247427983539085,
+        "total_leading_fraction": 11.403114470807612
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.2,
+        "alpha1": 0.1,
+        "alpha2": 2.0,
+        "dipole_fraction": 29.378255208333332,
+        "quadrupole_fraction": 0.47226851851851853,
+        "total_leading_fraction": 29.85052372685185
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.2,
+        "alpha1": 0.4,
+        "alpha2": 0.5,
+        "dipole_fraction": 0.08138020833333329,
+        "quadrupole_fraction": 0.038935185185185184,
+        "total_leading_fraction": 0.12031539351851847
+      },
+      {
+        "mass_ratio": 5,
+        "product": 0.2,
+        "alpha1": 1.2,
+        "alpha2": 0.16666666666666669,
+        "dipole_fraction": 8.689597800925924,
+        "quadrupole_fraction": 0.01914094650205761,
+        "total_leading_fraction": 8.708738747427981
+      }
+    ]
+  },
+  "empirical_validation": false,
+  "scope": "Weak-source leading closure only; no compact-body charge, physical action or actual dataset validated."
+}

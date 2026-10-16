@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-10-16T06:54:00.722955+00:00",
+  "sources": {
+    "SCALAR_SOURCE_CLOSURE_v1.md": {
+      "sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+      "bytes": 8052
+    },
+    "SCALAR_SOURCE_CLOSURE_v2.md": {
+      "sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
+      "bytes": 8730
+    },
+    "SCALAR_SOURCE_PLAN_v1.json": {
+      "sha256": "7accf5f24d12abe6b231b2379e4167d706905ade4928f69573e5202b08039ed0",
+      "bytes": 1859
+    },
+    "SCALAR_SOURCE_FROZEN_v1.json": {
+      "sha256": "673b8f30182af5d3927c937fe939d8c89872b95c495b69004ec68a93ff7b8d13",
+      "bytes": 387
+    },
+    "check_scalar_source_closure_v1.py": {
+      "sha256": "df0f437428fdda2d1b001899f53a2236f5e2056b1a1d33bbb803b9b6e6ddc37e",
+      "bytes": 6667
+    },
+    "SCALAR_SOURCE_CONTROLS_v1.json": {
+      "sha256": "a6a0d53d65d054293b8bee455e6ef76b8b8cbbb651fb5f2ba77a63f8b335a342",
+      "bytes": 36576
+    },
+    "SCALAR_SIREN_BRIDGE_v1.md": {
+      "sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+      "bytes": 10710
+    }
+  },
+  "all_snapshot_sources_unchanged": true,
+  "original_frozen_manifest_matches": true,
+  "plan_source_matches": true,
+  "current_note_version": 2,
+  "primary_reproduction_note_version": 1
+}

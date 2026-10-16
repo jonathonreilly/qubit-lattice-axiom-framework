@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-16T06:42:51.951855+00:00",
+  "current_source": "SCALAR_SOURCE_CLOSURE_v2.md",
+  "current_source_sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
+  "previous_source": "SCALAR_SOURCE_CLOSURE_v1.md",
+  "previous_source_sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+  "trigger": "Focused checker identified an overbroad curved-background stability implication.",
+  "change": "Narrow negative-mass growing-mode claim to flat constant vacuum; curved-background stability requires geometry, spectrum and boundary data.",
+  "equations_changed": false,
+  "primary_controls_changed": false,
+  "original_control_binding": "SCALAR_SOURCE_CONTROLS_v1.json binds original v1;174controls unchanged",
+  "independent_check": "pending final focused report"
+}

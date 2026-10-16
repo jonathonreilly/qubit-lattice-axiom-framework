@@ -1,0 +1,116 @@
+{
+  "mode": "independent",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/independent_controls_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "sys_dont_write_bytecode_of_observer": true,
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "start_utc": "2026-10-16T06:49:53.568788+00:00",
+  "end_utc": "2026-10-16T06:49:54.263097+00:00",
+  "wall_seconds": 0.6933572087436914,
+  "child_user_seconds": 0.5556599999999999,
+  "child_system_seconds": 0.040160999999999995,
+  "child_peak_rss_platform_units": 68239360,
+  "platform": "darwin",
+  "returncode": 0,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "stdout_sha256": "8786053f5d436752ef6226755da811a888ee908995ef1a3142ddff33dd7acfa1",
+  "stdout_bytes": 11691,
+  "stderr_sha256": "8b130ebca84e7ec042318bef6c1e56650ce1118e8a56f1a4d4901eefc943e35f",
+  "stderr_bytes": 4234,
+  "source_binding_before": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v1.md": {
+      "sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+      "bytes": 8052
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v2.md": {
+      "sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
+      "bytes": 8730
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_PLAN_v1.json": {
+      "sha256": "7accf5f24d12abe6b231b2379e4167d706905ade4928f69573e5202b08039ed0",
+      "bytes": 1859
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_FROZEN_v1.json": {
+      "sha256": "673b8f30182af5d3927c937fe939d8c89872b95c495b69004ec68a93ff7b8d13",
+      "bytes": 387
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py": {
+      "sha256": "df0f437428fdda2d1b001899f53a2236f5e2056b1a1d33bbb803b9b6e6ddc37e",
+      "bytes": 6667
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CONTROLS_v1.json": {
+      "sha256": "a6a0d53d65d054293b8bee455e6ef76b8b8cbbb651fb5f2ba77a63f8b335a342",
+      "bytes": 36576
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SIREN_BRIDGE_v1.md": {
+      "sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+      "bytes": 10710
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/independent_controls_v1.py": {
+      "sha256": "6b9f264818c8f9a854b228162d2652fd71f5f37a2dba5614637ea505d01e1396",
+      "bytes": 13685
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/observe_author_reads_v1.py": {
+      "sha256": "bfafe110b1f38f3d3c02ea4dc3f2bb072742070240b49058d86b8dcc3f5154ce",
+      "bytes": 1765
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/run_bounded_checks_v1.py": {
+      "sha256": "68ad8c5dbb66ac23caed9fe1d363f1a50d56699384d2313763cbe7c43f8d9a1d",
+      "bytes": 5157
+    }
+  },
+  "source_binding_after": {
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v1.md": {
+      "sha256": "ae27e3d7d819a69c2b15549444415cf9385d87af2e356ecc73a7a374ce9d6754",
+      "bytes": 8052
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v2.md": {
+      "sha256": "c27e409e2c953b0a115569138e0b6357f246f8c14809b3c822789bd5869569bd",
+      "bytes": 8730
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_PLAN_v1.json": {
+      "sha256": "7accf5f24d12abe6b231b2379e4167d706905ade4928f69573e5202b08039ed0",
+      "bytes": 1859
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_FROZEN_v1.json": {
+      "sha256": "673b8f30182af5d3927c937fe939d8c89872b95c495b69004ec68a93ff7b8d13",
+      "bytes": 387
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py": {
+      "sha256": "df0f437428fdda2d1b001899f53a2236f5e2056b1a1d33bbb803b9b6e6ddc37e",
+      "bytes": 6667
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CONTROLS_v1.json": {
+      "sha256": "a6a0d53d65d054293b8bee455e6ef76b8b8cbbb651fb5f2ba77a63f8b335a342",
+      "bytes": 36576
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SIREN_BRIDGE_v1.md": {
+      "sha256": "13d8b7b65a1bda41b20c228b54a2b7f9837ff5d875a24588981088f7d2951709",
+      "bytes": 10710
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/independent_controls_v1.py": {
+      "sha256": "6b9f264818c8f9a854b228162d2652fd71f5f37a2dba5614637ea505d01e1396",
+      "bytes": 13685
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/observe_author_reads_v1.py": {
+      "sha256": "bfafe110b1f38f3d3c02ea4dc3f2bb072742070240b49058d86b8dcc3f5154ce",
+      "bytes": 1765
+    },
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_scalar_source_closure/run_bounded_checks_v1.py": {
+      "sha256": "68ad8c5dbb66ac23caed9fe1d363f1a50d56699384d2313763cbe7c43f8d9a1d",
+      "bytes": 5157
+    }
+  },
+  "sources_unchanged": true,
+  "output_parse_error": null,
+  "reported_summary": {
+    "passed": 72,
+    "failed": 0
+  }
+}

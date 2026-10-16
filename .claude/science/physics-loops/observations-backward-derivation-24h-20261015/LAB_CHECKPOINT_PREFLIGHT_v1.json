@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-16T07:07:18.060711+00:00",
+  "scope": "Campaign support and data-intake checkpoint only",
+  "files_checked_before_receipt": 105,
+  "parse_counts": {
+    "json": 59,
+    "python": 12,
+    "markdown": 17
+  },
+  "vocabulary_exit": 0,
+  "tracked_whitespace_exit": 0,
+  "scientific_checks": "Frozen source-bound receipts: siren30 bindings, scalar source26, lab23; complete independent proofs/code/results read. All original primary outputs reproduced by focused checkers.",
+  "data_transcription": "95rows/760numeric cells agree exactly across pypdf/PyMuPDF; unchanged originalCSV byte-for-byte. Five rendered pages inspected.",
+  "canonical_science_changed": false,
+  "new_pr": false,
+  "formal_audit": false,
+  "empirical_validation": false,
+  "known_failure_preserved": "Scalar sourcev1 curved-vacuum stability overstatement preserved; correctedscopev2 and AdS counterexample documented.",
+  "shared_landing_validation": "Not run for these commits-only support files; existing milestonePRs still pending.",
+  "staged_check_at": "2026-10-16T07:08:38.299775+00:00",
+  "staged_whitespace_exit": 0,
+  "staged_scope_paths": 108,
+  "staged_csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+  "format_recovery": "LAB_STAGED_WHITESPACE_RECOVERY_v1.json; exact-file CRLF handling, no data changes"
+}

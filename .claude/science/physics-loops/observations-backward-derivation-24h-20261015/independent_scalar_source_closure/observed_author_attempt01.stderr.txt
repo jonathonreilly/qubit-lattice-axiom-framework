@@ -1,0 +1,52 @@
+{
+  "observed_repository_open_events": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_PLAN_v1.json",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v1.md",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_PLAN_v1.json",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py",
+      "mode": "r",
+      "flags": 16777216,
+      "write": false
+    }
+  ],
+  "allowed_reads": [
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_scalar_source_closure_v1.py",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_PLAN_v1.json",
+    ".claude/science/physics-loops/observations-backward-derivation-24h-20261015/SCALAR_SOURCE_CLOSURE_v1.md"
+  ],
+  "dont_write_bytecode": true
+}

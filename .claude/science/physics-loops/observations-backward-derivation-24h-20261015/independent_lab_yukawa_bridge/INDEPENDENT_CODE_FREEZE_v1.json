@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-16T06:57:05.388938+00:00",
+  "source_sha256": "9f735a7b684825a0c782eab5dfb6a98365e69fc144fbd7d6051b06a22ccfbd54",
+  "author_runner_read": false,
+  "author_results_read": false,
+  "command": "python3 -B independent_controls_v1.py",
+  "timeout_seconds": 120
+}

@@ -42,3 +42,13 @@ A useful next empirical bridge must bound preparation contamination and moving-h
 Return to the actual scalar-field normalization gap. Personally derive what tensor-wave amplitude transport can identify across measured environments, retaining source generation, detector calibration, screening, scalar mixing and finite-wavelength limits. Read primary standard-siren prior art before selecting a route; do not replace unknown local endpoint fields by a cosmological profile or call a toy oscillator a gravity test.
 
 The preparation bridge removes an actual reset only conditionally. Avoid another block of noiseless oscillator interpolation: the physical field and observation registration remain the highest-value gaps.
+
+## Scalar response follow-through 2026-10-16T06:42:20.467110+00:00
+
+Finish the focused weak-source check and checkpoint both scalar support derivations. Then establish a measured weak-body laboratory bridge: derive extended-source scalar response and normalization bounds from measured mass/geometry without choosing a density profile; inspect Lee et al.2020 primary measurement/calibration and data availability before a frozen data-access plan. Keep screening, material stress, source registration and apparatus transfer explicit. No transfer of weak charges to compact objects by assumption.
+
+## Actual laboratory data follow-through 2026-10-16T07:06:40.835585+00:00
+
+Reconstruct and check the Lee thesis external-sphere calibration formula and units before any scalar fit, retaining measured versus calculated quantities and the printed G-exponent issue. Then obtain the public finite-geometry kernel and identify required per-run corrections, resolving the Appendix A.1 separation convention before a Newtonian reference reproduction. Freeze computations, keep these95processed rows exposed development, and do not replace unavailable positions, covariances, geometry or calibration leakage with chosen zeros/profiles. If required inputs remain unavailable, derive controlled uncertainty envelopes or pivot to a dataset with the primitive channels. Absolute F and physical environmental registration remain unresolved.
+
+The finite-source/control derivation has been checked. More noiseless synthetic models will not close the actual measurement gap. Source and calibration correspondence take priority.

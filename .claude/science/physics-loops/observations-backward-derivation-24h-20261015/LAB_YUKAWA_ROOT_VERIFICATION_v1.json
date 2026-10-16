@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-16T07:05:09.602402+00:00",
+  "author": "/root",
+  "complete_independent_proof_code_results_read": true,
+  "manifest": "independent_lab_yukawa_bridge/LAB_YUKAWA_REVIEW_IDENTITY_v1.json",
+  "manifest_sha256": "a59cd42b47758fd751b9804cc273272790057f76505f9f2db33c12f76756384c",
+  "all_bindings_verified": 23,
+  "primary_controls": 151,
+  "independent_controls": 193,
+  "author_reproduction_byte_identical": true,
+  "counts_overlap_not_pooled": true,
+  "numerical_status": "Floating quadrature and finite differences, not certified enclosures; analytic bounds checked separately",
+  "formal_audit": false,
+  "empirical_validation": false
+}

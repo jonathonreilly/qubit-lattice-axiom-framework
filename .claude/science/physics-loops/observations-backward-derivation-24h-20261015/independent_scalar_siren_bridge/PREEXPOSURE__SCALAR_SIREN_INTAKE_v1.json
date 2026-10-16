@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-16T06:24:40.490270+00:00",
+  "existing_scalar_source": "BLOCK01_DERIVATION_v5.md",
+  "existing_scalar_sha256": "5c2eb165f317192fbc6c8f3c548e442ce40d60d55915c363e57a4311d4d0f586",
+  "repo_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "pr_inventory": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0557.json",
+  "prior_art": [
+    {
+      "url": "https://arxiv.org/html/1912.06117v3",
+      "read_scope": "Abstract/action and complete displayed sectionsIII.3.3,III.4; endpoint transport is established prior art, full proof/appendices not independently reproduced."
+    },
+    {
+      "url": "https://arxiv.org/html/1906.12333",
+      "read_scope": "section5 through equations162-166, source/observer screening premises; not entire paper."
+    },
+    {
+      "url": "https://arxiv.org/html/2009.11827v3",
+      "read_scope": "Abstract, scalar luminality criterion67, sectionIV.2.1through92; direct transverse contraction checked here, not general Horndeski derivation."
+    },
+    {
+      "url": "https://arxiv.org/html/2201.10924",
+      "read_scope": "Abstract, displayed37-45 source moments and scalar radiation discussion; not full high-PN flux implementation."
+    }
+  ],
+  "novelty_claim": false,
+  "new_empirical_data_accessed": false,
+  "rejected_shortcut": "GR-template luminosity-distance posterior cannot act as a model-independent input for testing its own source and propagation assumptions."
+}

@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-16T06:55:23.921077+00:00",
+  "pdf_url": "https://digital.lib.washington.edu/researchworks/bitstreams/6013936a-da00-42b7-ba0a-4dff0cb05bf8/download",
+  "pdf_sha256": "00d13a466e4f8c14c3f6067d49d90fd0c49a89e72a8cf93f3a79c18d6aef924a",
+  "source_pdf_pages": [
+    158,
+    159,
+    160,
+    161,
+    162
+  ],
+  "source_printed_pages": [
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "table": "Appendix A.1, stops before A.2 on printed150",
+  "csv": "LEE2020_APPENDIX_A1_v1.csv",
+  "csv_sha256": "de832b111212a39a6a7a610a1013fbf6fa7201b1e9f304da13801e92961ba381",
+  "rows": 95,
+  "unique_run_ids": 95,
+  "unrounded_source_precision": "Printed decimal values preserved numerically; CSV does not imply extra measurement precision",
+  "role": "Exposed published processed development data under frozen LAB_OBSERVATION_ACCESS_PLAN_v1.json; not raw records or an empirical holdout",
+  "processing_status": "Phase rotated, torque-calibrated, systematic contributions subtracted, as stated in Appendix A.1; original unrotated .sum files not accessed",
+  "selection": "All printed A.1 rows retained; no data cleaning, exclusions, fitting or parameter choice here",
+  "reported_table_range_um": [
+    46.2,
+    3036.3
+  ],
+  "range_caution": "Some printed separations are below the article abstract minimum. Do not relabel, drop or reinterpret them before reading the separation/fit convention. This is not evidence of anomalous physics.",
+  "raw_files_accessed": false,
+  "visual_verification": "pending rendered table-page inspection",
+  "empirical_validation": false
+}

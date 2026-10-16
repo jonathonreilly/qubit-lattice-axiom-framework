@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-10-16T06:59:51.429107+00:00",
+  "elapsed_seconds": 0.7891804999671876,
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_lab_yukawa_bridge_v1.py"
+  ],
+  "source_before": {
+    "LAB_YUKAWA_BRIDGE_v1.md": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+    "LAB_YUKAWA_PLAN_v1.json": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae",
+    "check_lab_yukawa_bridge_v1.py": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4",
+    "LAB_YUKAWA_CONTROLS_v1.json": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295"
+  },
+  "source_after": {
+    "LAB_YUKAWA_BRIDGE_v1.md": "2f211e5710f8a2ebd44eb2c6f191ccf99674690db839e3f16585a4b39b83afb6",
+    "LAB_YUKAWA_PLAN_v1.json": "abca49a7abd34235ed03b294997de1acb5d493b279448f021215a0505ca5efae",
+    "check_lab_yukawa_bridge_v1.py": "2227793a14146ab6da7e24a2a45d996f429c3c7ff130eaad901b54321ee626e4",
+    "LAB_YUKAWA_CONTROLS_v1.json": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295"
+  },
+  "source_unchanged": true,
+  "exact_stdout_match": true,
+  "parsed_output_equal": true,
+  "stdout_sha256": "26de055d716d6fc5d4cb0226115aed71180282a3d14213cbcaaf1af4ffd1b295",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "keys": [
+    "source_sha256",
+    "passed",
+    "failed",
+    "checks",
+    "details",
+    "data_roles",
+    "numerical_status"
+  ]
+}

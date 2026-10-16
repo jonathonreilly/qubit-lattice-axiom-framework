@@ -1,0 +1,27 @@
+{
+  "frozen_at": "2026-10-16T06:44:31.590381+00:00",
+  "author": "/root",
+  "intake": "LAB_OBSERVATION_INTAKE_v1.md",
+  "intake_sha256": "8f13a9142fa8b1b9a0b5496ef7e42f7223491aada8f7b980fa2980ed50065196",
+  "primary_identity": {
+    "arxiv": "2002.11761v1",
+    "doi": "10.1103/PhysRevLett.124.101101"
+  },
+  "access_so_far": "Main-text HTML and figure captions; abstract/publisher metadata; not pixels, supplement or raw data",
+  "roles": {
+    "calibration": "Published apparatus mass, geometry and transfer inputs, with their uncertainty; no independently measured new calibration",
+    "development": "All already-read published findings; any subsequently obtained same-experiment table or thesis is exposed development/reproduction material",
+    "independent_empirical_test": "none reserved or claimed"
+  },
+  "pre_access_plan": "If numerical products are found, save exact origin/version/hash and distinguish raw from processed channels before reading values. First reproduce the published reference analysis at its stated inputs where sufficient. Do not tune the scalar action or choose a new potential to match those products. If geometry/likelihood inputs are missing, record missing inputs and limit the result instead of inventing them. Any future empirical holdout requires a separate frozen protocol before access.",
+  "possible_primary_next_source": "https://digital.lib.washington.edu/bitstreams/6013936a-da00-42b7-ba0a-4dff0cb05bf8/download",
+  "possible_source_status": "Search-result title only seen previously; full thesis not opened",
+  "current_failures": [
+    "arXiv supplemental reference is XXXX placeholder",
+    "Publisher supplemental link is marked subscription-required; not bypassed",
+    "Official group /experiments/isl route returned an internal fetch error",
+    "Limited searches returned no located public numeric torque table; no nonavailability claim"
+  ],
+  "empirical_validation": false,
+  "novelty_claim": false
+}

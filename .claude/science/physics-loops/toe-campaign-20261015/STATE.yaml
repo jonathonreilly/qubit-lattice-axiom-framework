@@ -54,8 +54,9 @@ blocks:
     method: "staggered.py: two O-covariant coefficient families, exact Z^3 coefficient equations for WW^dag and W^dag W"
   B5-exact-extensions:
     status: in_progress
-    running: ["Singular slimgb: D3 on the cell (19 vars)", "line-branch method at range three (scratchpad/walk/rangeR.py RANGE=3)"]
+    running: ["spin-3/2 irreducible coin exact line test (spinj_exact.py 3/2): 3 linearly consistent branches incl. axis exponents (+-1,+-1,-+1,-+1); Groebner closure running"]
     done:
+      - "range three EXACT (B1 Theorem 4'): six TRIM-based lines; only the trivial of 4.4M branches consistent (Gamma lines exact via fastR.py, others exact recheck 2548); trivial-branch ideal 21 vars zero-dim nilpotent (Singular modStd verified + slimgb mod p)"
       - "O, range two per axis, full action: EXACT freeze (Theorem 4 of the B1 note). Line restriction makes f + i|g| a unit Laurent monomial on axis/face/body lines; 584 of 585 exponent branches are linearly inconsistent; trivial branch radical forces V = 1. Runner scripts/cubic_covariant_qubit_walk_range_two_freeze_2026_10_16.py PASS=14 (~3 min); scratch branch_o2.py agrees. Singular O_axis2 job stopped as superseded."
       - "doubled spin-1 site at delta 0.5: 0/12 moving, best residual 5.5e-2"
       - "D3 cell EXACT (Theorem 5 of B1): constant or body-diagonal shifts exp(+-i(k1+k2+k3) sigma.n); corrects the numerical 'none'. Line-branch runner scripts/cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16.py (Theorems 4+5)."

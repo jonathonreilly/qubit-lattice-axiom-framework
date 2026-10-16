@@ -42,7 +42,8 @@ stated in the note.
   branches, runner `scripts/cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16.py`
   PASS=16, which also proves Theorem 5: D3 cell walks are constant or
   body-diagonal shifts; this corrected the earlier numerical 'D3: none').
-  Range three is running (`scratchpad/walk/rangeR3.log`).
+  Range three is now exact too (Theorem 4', Singular-certified final step;
+  scripts and logs in `exact_extensions/`). Range four and up remain open.
 - Whether every two-qubit O-covariant cell walk is Clifford-form up to flavor
   gauge (all hits tested so far are).
 - Irreducible 4-dimensional coin: no moving walk found (search only).

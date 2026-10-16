@@ -1,0 +1,13 @@
+# Independent check checkpoint
+
+Status: complete, frozen source-exposed independent check. Root acceptance remains separate.
+
+Primary recovery file: `REVIEW.md`, containing the complete pre-computation analytic derivation and final evidence, scope and qualifications. Candidate source: `DERIVATION.md`, SHA-256 `71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29`. Premises: bus note `1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b`; compensated reservoir `d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8`. Live originals matched at the final pre-freeze check.
+
+Outcome: no blocking mathematical defect found in the conditional new composition. Full SWAP retains arbitrary correlations; old time is T+tau and the source phase uses runtime T; the cap counts installed and complement channels; the full moments hold for every N>=2 without [H,B]=0. A microscopic drive and native purity remain supplied/open. Clarify the line-121 shorthand: nu must bound ||delta Gamma||; relative amplitude error instead needs the factor ||Gamma||.
+
+Evidence: analytic derivation frozen before checker construction; one exact Fraction/bitstring algebra run, exit 0, in `run_001/`; one provenance/tamper bookkeeping run, exit 0, in `run_002_provenance/`. Complete source-at-launch, actual argv/cwd/exit and full streams are retained. No failed scientific runs or broad replay. General independent off-code discriminator: squared residual `(N-2)(N+1)/(16N)`, positive for N>=3; the symmetric-code substitution is rejected exactly.
+
+Independence limits: separate same-family child context, source-exposed. The author's checker bytes were hashed by an inventory but not semantically inspected or executed. Its design/results were exposed in the candidate derivation. Parent runtime theorem is inherited, not fully reproved. Named other preparation notes were not fully independently compared.
+
+Open obligations: actual complement controls, fresh independent memory, phase/timing references, vacant matching sites, isolation and full calibration, slew, passive storage, microscopic drive output/energy if claimed, and inherited bus spectral/geometry conditions. No active work remains in this check. Reopen affected coverage if source/premise bytes change. Only this assigned directory was written; no editable prompt files changed. Final member identities are in `FREEZE.json`.

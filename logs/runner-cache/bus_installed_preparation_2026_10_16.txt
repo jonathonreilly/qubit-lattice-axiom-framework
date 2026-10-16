@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/bus_installed_preparation_2026_10_16.py
+runner_sha256: af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137
+input_fingerprint_sha256: b39d8ccd1b4a68bb48fd0489334ef780069ca7804a57dcf84fed631748a9cac5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: exact source coefficients retained; no physical element tested
+per_site: installed/complementary modeled incident budgets retained; no hardware slew certificate
+per_mode: Q and evolved U_E memory contracts remain distinct
+per_block: full physical A2 and scalar reserves retained; provenance checks only
+lattice_wide: native preparation, drive energy, storage, halt/reuse and audit remain separate
+
+----- stderr -----
+

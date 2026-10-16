@@ -1,0 +1,27 @@
+{
+  "observed_commit": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/cb054fad672a4afa990de83b67fec80c14ca0be070448b10b5c8b53a3e7d40c6.json",
+      "bytes": 1574,
+      "sha256": "cb054fad672a4afa990de83b67fec80c14ca0be070448b10b5c8b53a3e7d40c6"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+      "bytes": 51748,
+      "sha256": "37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/47d08a9eaed8ba5492a507e989837355fdaef4bbbd8ee3810e57cb94f2d98488.blob",
+      "bytes": 41,
+      "sha256": "47d08a9eaed8ba5492a507e989837355fdaef4bbbd8ee3810e57cb94f2d98488"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

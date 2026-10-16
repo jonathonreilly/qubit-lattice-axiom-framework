@@ -1,6 +1,6 @@
 {
- "edge_count": 16115,
- "node_count": 7152,
+ "edge_count": 16116,
+ "node_count": 7153,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2649,6 +2649,10 @@
   "broken_graph_action_power_robustness_note": {
    "deps_hash": "010d7d5bac2c",
    "out_degree": 3
+  },
+  "bus_installed_preparation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "e723971c6dcb",
+   "out_degree": 1
   },
   "bus_joint_energy_moments_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e723971c6dcb",

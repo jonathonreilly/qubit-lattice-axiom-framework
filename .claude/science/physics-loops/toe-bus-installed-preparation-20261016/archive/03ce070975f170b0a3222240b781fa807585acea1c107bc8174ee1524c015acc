@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T04:53:07.002372+00:00",
+  "baseRefName": "physics-loop/toe-bus-joint-energy-moments-20261016",
+  "headRefName": "physics-loop/toe-positive-bias-suppliers-20261016",
+  "headRefOid": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "isDraft": false,
+  "number": 9635,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9635",
+  "tree": "d0df9208acedc1d5632b90eb90c5d966c8d856d3",
+  "base_head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_BIAS_SUPPLIERS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 133383,
+    "sha256": "0863ff1a4e3d2e2e9349e99541057ce8860f394e0499fbe8b4efeaba3d24bf36"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_bias_suppliers_2026_10_16.py",
+    "bytes": 132340,
+    "sha256": "6ed8d187ab1f55bead5fe289ce96a7e96806ab349d2230c415444e349314c64b"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/PR_BODY.md",
+    "bytes": 2033,
+    "sha256": "189ee11ba2a84d11fd8323a4d8b779d693e8f497e8e2d4b043f907bea475ccc1"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

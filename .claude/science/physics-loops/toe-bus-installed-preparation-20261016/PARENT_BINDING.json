@@ -1,0 +1,14 @@
+{
+  "direct_mathematical_parents": [
+    {
+      "bytes": 83919,
+      "claim_id": "strongly_regular_bus_bounded_theorem_note_2026-10-15",
+      "path": "docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+      "source_use": "Qualified complete bus runtime with exact-target/support and rational-target repair qualifications"
+    }
+  ],
+  "excluded": "No resource-composition, shrinking-bias or positive-bias preparation theorem imported.",
+  "git_ancestry_is_not_dependency_rule": true,
+  "internal_composition": "Slew preparation uses the original preparation argument embedded in this same note."
+}

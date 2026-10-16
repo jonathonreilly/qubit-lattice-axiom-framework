@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T03:53:54.441974+00:00",
+  "kind": "Metadata-only source identity and receipt verification.",
+  "source_captures_verified": 9,
+  "scientific_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_installed_preparation_candidate/check_run/EXECUTION.json",
+    "bytes": 1868,
+    "sha256": "9e8eec6c662c9de30082d3f9c5be0e537a60afe23ded7b9474b8262fdc172d15"
+  },
+  "source_and_launcher_equal_launch_copies": true,
+  "initial_findings_precede_new_check": true,
+  "full_scientific_streams_read": true,
+  "scientific_executions": 1,
+  "scientific_failures": 0,
+  "scientific_replays": 0
+}

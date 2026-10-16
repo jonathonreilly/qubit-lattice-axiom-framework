@@ -1,0 +1,262 @@
+{
+  "utc": "2026-10-16T13:26:17.633317+00:00",
+  "branch": "physics-loop/toe-bus-preparation-20261016",
+  "base_head": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 115070,
+    "sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+    "bytes": 57191,
+    "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+  },
+  "cache": {
+    "utc": "2026-10-16T13:22:53.560025+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+      "bytes": 57191,
+      "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/CANONICAL_RESULT.json",
+      "bytes": 1027,
+      "sha256": "8b03343eb4873846430f0e1837d7fd58d24b4e768448debf4cceceebc698dc92"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/bus_installed_preparation_2026_10_16.txt",
+      "bytes": 992,
+      "sha256": "c70860e22bf4f32182829dd07864f4e1bc1edd4d7e9b350a5ee08f94a7a27791"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "Exact source/body/review/base/receipt provenance only"
+    },
+    "scope_lines": [
+      "per_element: exact source coefficients retained; no physical element tested",
+      "per_site: installed/complementary modeled incident budgets retained; no hardware slew certificate",
+      "per_mode: Q and evolved U_E memory contracts remain distinct",
+      "per_block: full physical A2 and scalar reserves retained; provenance checks only",
+      "lattice_wide: native preparation, drive energy, storage, halt/reuse and audit remain separate"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T13:23:10.386624+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_installed_preparation_2026_10_16.py",
+      "bytes": 57191,
+      "sha256": "af6a3916b8840f692c6e02177647f2fc75bdb7bf5454f5495f2eaf44f0cf5137"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/MUTATION_RESULTS.json",
+      "bytes": 6157,
+      "sha256": "8b4b0f8af366fa60327bfb36e3fa9f75c02feeb2898de5c6b1735ad5b012a93f"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 127,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source/provenance only; current-main/cumulative-stack and audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T13:25:39.421697+00:00",
+    "old_nodes_preserved": 7152,
+    "old_edges_preserved": 16115,
+    "new_node": {
+      "claim_id": "bus_installed_preparation_bounded_theorem_note_2026-10-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823",
+      "path": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "runner_path": "scripts/bus_installed_preparation_2026_10_16.py",
+      "title": "Conditional preparation and release for the installed strong-spectral bus"
+    },
+    "new_edges": [
+      {
+        "from": "bus_installed_preparation_bounded_theorem_note_2026-10-16",
+        "to": "strongly_regular_bus_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "old_roots_preserved": true,
+    "new_roots": [],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10472446,
+      "sha256": "15198129904dc3cd15d8cad75296f26f4cb07937a47c67c8c268d2d55c515585"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1021269,
+      "sha256": "e2408ed24b7789f1429384e0e7dadff605151826c6537982d55979044e9fa516"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "a5f84709dfa8794a0c133d6852cb1ac3f00f983b653711508ae00d9c5fc3ca43"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T13:23:04.910683+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2193,
+          "sha256": "00ccffa02756ea1e06ec229973cab8dc943658e7ce3e4a8d6dc3d0846f0bf71e"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2250,
+          "sha256": "4629aaa972879b84bc01913859a93b4835a6e37e4243d2b9d858c6b48d157c50"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2238,
+          "sha256": "957168ccfcc12d35f2f22b65403b14ae48bc8cd5981503e1a0ba9d9d5b70a89b"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Canonical body identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2227,
+          "sha256": "53448a5f4667c562dd7fb101932f7b52e8b426a43063bd71eb60f9e0d299554f"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2251,
+          "sha256": "b54c656b604965a52b3cbc2adb619821794e63077d90b575f14beae3c0991274"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2257,
+          "sha256": "53818a8340ed369e760fbdb3bc7536d6badd50998930b4599500202aebf3b107"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2215,
+          "sha256": "23921c44eaf47c063964d84be62aaa9f9c6fd5b0d89bd17df62bd48330a03c4c"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Successful captured execution",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2245,
+          "sha256": "fa284ac09e3d6432b6e2002139b21f729d8de74a801fb66a745f8a6d171eeacf"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2274,
+          "sha256": "6378ddfc31fc0a3b39570528ba576c0c709dd774b6af09122427843d602b48dc"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2262,
+          "sha256": "77782f75353e6a2cea70d09d5154678d067495231577c876be00e56d8ac6a477"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2219,
+          "sha256": "a9b5316ec5d2e10a70465b9a6bfbf9e0e0aa0cce4c946062e656afb47ea63cef"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2226,
+          "sha256": "70298c994fca62518149467bca29989999a4ac78b3aecbc4973b7d629bff551b"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2256,
+          "sha256": "f1fe954961e6a7843aa1f7eae4f92bcc1769f48d2714bf1507cbff09e6bda6fa"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_preparation/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2299,
+          "sha256": "9251906d562564f22d042f24c14ae2dd060c2c42c8d408c7bf7aead32798a55e"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 13,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack checks and independent audit remain separate. Literal H, all outputs, Q versus U_E memory, full A2 and actual scalar/time chronology remain preserved. Supplied complements, fresh purity, matching/isolation, physical implementation slew, drive energy, storage and halt/reuse remain open. No resource-composition or shrinking-bias result is imported."
+  ]
+}

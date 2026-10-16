@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T04:24:04.485337+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3462,
+      "sha256": "28bef1945c65f807be837286d6e795d888f3d8b9ebb75024ac26ee0084409641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 5082,
+      "sha256": "1c94a58239c1bd9d168c837cf961522264a1f2d1705f3897ef541a3c8ced788e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION.md",
+      "bytes": 5394,
+      "sha256": "cb0fcf69047b0e8ee803e51eaaf1b4d34934463ba1f301b3ad3342226703dba9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/ANALYTIC_RECONSTRUCTION_FREEZE.json",
+      "bytes": 418,
+      "sha256": "a88baa780ac868b2f88ecf6ad103decec18c6226c4fd3f034a98843b626e4345"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_root_review/record_acceptance.py",
+      "bytes": 3655,
+      "sha256": "50f1f36a2b1d7a71f697f6ef28da63d3fc7bd23196d52e88c24bad7aec775716"
+    }
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false
+}

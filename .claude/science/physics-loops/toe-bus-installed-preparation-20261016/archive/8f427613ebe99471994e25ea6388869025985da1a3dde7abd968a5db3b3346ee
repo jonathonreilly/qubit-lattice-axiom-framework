@@ -1,0 +1,39 @@
+{
+  "scope": "Floating-point complete isometry discriminator at xi=0. This is the exact commuting zero-weak-coupling boundary, not a positive-xi runtime bus or numerical integration of an arbitrary waveform.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "qubits": {
+    "old": 1,
+    "bus": 1,
+    "source": 2,
+    "memory": 3
+  },
+  "physical_dimension": 128,
+  "input_dimension": 16,
+  "parameters": {
+    "ron": 0.8,
+    "roff": 1.2,
+    "ts": 1.1,
+    "tp": 1.3,
+    "tau": 4.4,
+    "alpha_on": 0.4,
+    "alpha_off": 0.6,
+    "omega": 0.9,
+    "C0": 6.6,
+    "R": 2.3,
+    "phi_release": 0.37,
+    "phi_gate": 0.91,
+    "Phi": 26.3107963267949
+  },
+  "complete_isometry_error": 5.5493761249792295e-15,
+  "wrong_literal_memory_isometry_error": 1.2884353744753785,
+  "wrong_off_ramp_phase_sign_isometry_error": 1.143031587031417,
+  "wrong_unshifted_gate_phase_isometry_error": 0.637673220818705,
+  "missing_R_ramp_phase_isometry_error": 1.8255278805210404,
+  "mean_compression_difference_for_different_memory_outputs": 1.12753909680551e-15,
+  "second_compression_difference_for_different_memory_outputs": 4.3958498704160435e-15,
+  "memory_overlap_nonscalar_norm": 0.731067959111858
+}

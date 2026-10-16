@@ -1,0 +1,19 @@
+{
+  "actual_canonical_binding": null,
+  "actual_new_publication": null,
+  "actual_root_wrapper_code_approval": null,
+  "current_main_or_instructions_refresh": null,
+  "editable_prompt_files_changed": [],
+  "intended_note": "docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "intended_primary": "scripts/bus_installed_preparation_2026_10_16.py",
+  "kind": "source_only_unbound_canonical_proposal",
+  "mathematical_parent": "1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b",
+  "retained_audit": false,
+  "supplied_publication_base_pointer": {
+    "authority": "Root actual publication record and direct task message; no new local Git observation by this worker",
+    "branch": "physics-loop/toe-positive-bias-suppliers-20261016",
+    "evidence": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/positive_bias_suppliers/PUBLICATION.json",
+    "head": "142cbd74aa146848b246795f8bf7007f3e38976d",
+    "tree": "d0df9208acedc1d5632b90eb90c5d966c8d856d3"
+  }
+}

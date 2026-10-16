@@ -1,0 +1,104 @@
+# Source-exposed independent mathematical findings, before computation
+
+This file records the derivation reached before writing or running the independent algebra checker. The candidate under review is `DERIVATION.md`, SHA-256 `71e9ec899920fdbb9af3ef56176550bffdfb8d8b77a300d6caa560a90009af29`. The initial conclusion is that its mathematical preparation/release composition is valid under its explicitly supplied driven-model premises. This is neither root acceptance nor an audit verdict.
+
+## 1. Full SWAP with arbitrary correlations
+
+For arbitrary basis labels `d,c,r`, the matching unitary satisfies
+
+    S_CE (|d,c,r> tensor |0_E>) = |0_C> tensor |d,c_E,r>.
+
+Linearity proves the identity for every vector, including vectors entangled between D,C,R. Applying it to matrix units proves the corresponding identity for every mixed input. Thus the map called Q is an isometric relabeling, not a partial trace or replacement of the old marginal. Every original C correlation is transferred to E. There is no need for sigma_DCR to factor. The exact ready-E premise is global independence from DCR; a marginally pure E already implies such independence, but a merely approximate marginal certificate has no stated trace-error conversion here.
+
+Each SWAP is generated exactly by the positive operator `(pi/2)(I-S)` because its eigenvalues on the symmetric/antisymmetric subspaces are 0/pi. Its exponential is S, with no leftover scalar. For `Y_phi=cos(phi)Y-sin(phi)X`, direct action gives `Y_phi|0>=i exp(i phi)|1>`. Therefore the positive source pulse `Q_phi=(pi/4)(I+Y_phi)` gives `exp(-iQ_phi)|0>=exp(-i pi/4)|alpha_phi>`. The phase from all source rotations is `pi n_S/4`.
+
+The comparator generator `H+u(t)C0 I+G(t)` has commuting H and controller parts. The complete preparation endpoint is consequently
+
+    exp[-i(C0 integral u + pi n_S/4)]
+       |Omega_phi> tensor (exp(-i tau H) tensor I_ER) Q.
+
+All four stages, including both ramps, contribute to tau. The comparator's source is stationary on the release ramp; the actual residual source evolution on that ramp is paid in the error bound.
+
+## 2. Duhamel, positivity, and physical load
+
+The literal old H is untouched. From `0<=h_j<=c_j I`, each separately installed complement `Gamma_j=c_j I-h_j` is positive, has norm at most c_j, and has the same declared support. Their sum is exactly `C0 I-A`. The actual generator is `H+(1-u)A+u C0 I+G`; the difference from the comparator is `(1-u)A`.
+
+Duhamel evaluated on the comparator input uses the full norm `||A||<=C0` before the SWAP. After the two pulses it uses `||A J_Omega||=G_Omega`, uniformly in the arbitrary aged D,E,R vector. Multiplication by `exp(-itH)` on the old input does not change that operator norm. The plateau residual is zero. Since each ramp has integral `(1-u)=r/2`,
+
+    ||U_prep J - V_prep|| <= (C0 r_on+G_Omega r_off)/2.
+
+Purification converts this to a full-output unhalved trace bound `C0 r_on+Gbar r_off`; adding an initially certified trace error and twice the integrated full Hermitian generator error gives equation (11). No actual-state code-invariance assumption is used.
+
+At any site, the installed h_j ledger and the independent complement ledger each cost at most J_*. A matching SWAP has norm `2gamma`, and a source pulse has norm `pi w/(2t_p)`. Their stages are disjoint. The chosen durations make either pulse load at most g, so the common modeled added incident bound is `2J_*+g`. This counts the two channels despite their algebraic cancellation. It does not constrain a microscopic drive or infer a pointwise implementation cap from an integrated error bound. The latter requires the separately stated slack/certificate.
+
+The global sum C0 may grow with size. It obeys `C0<= (n_C+1)J_*` by summing the incident ledger over C and the unique old port, since every term is counted at least once. The memory matching in the explicit embedding is injective, avoids C and the nonnegative old box, and uses unit L1 edges; its extra geometric adjacencies still need isolation.
+
+The pulse action and variation follow from `||I-S||=2`, `||Q_phi||=pi/2`, `integral w=1`, and `integral |w'|=2m0`. They give the candidate's equations (15)-(17). The complete generator norm is at most `||H||+C0+g n_C`, since `||(1-u)A+u C0 I||<=C0`. The endpoint work identity is the finite closed driven identity `d Tr(rho K_prep)/dt=Tr(rho dot K_prep)`. Its variation bound does not construct a power supply or prove cooling.
+
+## 3. Literal time, source phase, and the exact marginal
+
+The inherited bus estimate is uniform over the old input and a passive reference. At release, its reference can be ER. Its old comparator `exp(-isH) W exp(-iTH)` acts on `exp(-i tau H)Q sigma Q* exp(i tau H)`. The two consecutive right-hand H flows combine to
+
+    exp(-isH) W exp[-i(T+tau)H] Q.
+
+The target thus uses the original input and the actual total time `T+tau+s`. It does not require preparation to preserve the old state rather than its free H aging.
+
+The parent phase prescription fixes `G_phi=exp(iHT)L exp(-iHT)/t_*` with runtime origin at release. Preparation supplies that phase at release. Therefore its `+omega_l T` remains correct; using `T+tau` in that phase generally inserts an extra H-conjugation of W. H aging before release is already on the input side of the runtime map and must not be counted again in the control phase.
+
+Applying the actual runtime unitary to the preparation error, then comparing to the nominal bus unitary, proves total trace error `e_p+delta_bus+2e_r`. The ideal aged old/ER state is not asserted to equal the actual release marginal. If one rewrites the premise as a product with the exact actual marginal, a separate marginal-shift cost is necessary. The candidate states this distinction correctly.
+
+The exact-target allocation is `epsilon/8+3epsilon/4+2(epsilon/16)=epsilon`. For the inherited rational target refinement at working tolerance epsilon/2, nominal bus error is `3epsilon/8`, preparation error `epsilon/16`, and runtime error `2(epsilon/32)`, totaling epsilon/2. Approximating L by M within epsilon/32 adds at most epsilon/16 in full trace norm, yielding 9epsilon/16. This relies on the inherited rational-support repair; the new preparation theorem does not prove the parent bus's spectral/calibration construction.
+
+## 4. Full installed moments from a Gram operator
+
+This derivation does not expand K squared or insert a code projection. Apply K once to the prepared embedding J. Split its image by orthogonal bus sectors:
+
+    KJ psi = |0_bus> tensor [H+R+sum_l f_l] (psi tensor Alpha)
+             + xi v_p |1_c1> tensor (B psi tensor Alpha)
+             + xi sum_l r_l |1_ul> tensor
+                    (psi tensor sigma_-^(l,1) Alpha).
+
+The bus vacuum and the c1/u_l single-excitation states are mutually orthogonal. Bus hopping/onsite terms annihilate the vacuum. Every source ferromagnetic term annihilates the identical source product before K acts, even for complex phase. All reserve constants are in the actual R. The f_l include the literal NN source density operator; f_l Alpha need not be symmetric.
+
+Since K is Hermitian, `J* K^2 J = (KJ)*(KJ)`. In the vacuum sector H acts on D and f_l on different source factors. Writing `mu_l=<f_l>` and `v_l^mom=<f_l^2>-mu_l^2` gives `(H+cI)^2+sum v_l^mom I`, where `c=R+sum mu_l`. The port sector gives `xi^2 v_p^2 B^2`. Each source sector gives `xi^2 r_l^2/2`, because `||sigma_- alpha||^2=1/2`. This proves both operator compressions (23) for arbitrary old dimension, any number of distinct source attachment sites, every N>=2 and arbitrary phase. There is no H/B commutation assumption.
+
+For one length-N source, let independent fair bits X_j have K_s=sum X_j and D_s=sum X_j X_(j+1). Then
+
+    E K_s=N/2,      E D_s=(N-1)/4,
+    Var K_s=N/4,   Var D_s=(5N-7)/16,
+    Cov(K_s,D_s)=(N-1)/4.
+
+The D variance has N-1 terms of variance 3/16 and N-2 unordered adjacent pairs of covariance 1/16. The covariance with K_s has two endpoint contributions of 1/8 per bond. Thus the candidate's equation (22) follows for all real a_l,b_l, including negative b_l. These are full NN moments, not symmetric-code moments.
+
+Subtracting the H column from KJ proves
+
+    J* A^2 J = [c^2+sum_l v_l^mom+(xi^2/2)sum_l r_l^2]I
+                    +xi^2 v_p^2 B^2.
+
+Its largest eigenvalue is the scalar term plus `xi^2 v_p^2 ||B||^2`, proving (24). The source variances are nonnegative even when their displayed cross coefficient is negative. The independently known global norm bound provides `G_Omega<=C0`.
+
+With rho_D(tau)=exp(-i tau H)sigma_D exp(i tau H), H moments are conserved by the ideal preparation. Tracing the two compressions therefore gives (25), with `Tr(B^2 rho_D(tau))` at the actual release time. This generally differs from its value on sigma_D. Arbitrary D/ER correlations do not alter this unconditional expectation calculation; they are still present in the full target.
+
+For a fixed center a and beta>=||K-aI||, trace duality bounds the centered first/raw-second differences by beta e and beta^2 e. The difference of the two squared centered means is at most 2 beta^2 e, proving the 3 beta^2 e variance bound. Duality against an arbitrary norm-one reference observable gives the reference-valued bound (27). These linear operators are not conditional variances or measurement channels.
+
+## 5. A general off-code discriminator derived here
+
+On the symmetric source code, `P_sym D_s P_sym=K_s(K_s-1)/N`. For a binomial K_s, factorial moments give
+
+    Var[K_s(K_s-1)/N]=(N-1)(2N-1)/(8N).
+
+For example, `(K_s)_2^2=(K_s)_4+4(K_s)_3+2(K_s)_2` and `E(K_s)_j=(N)_j/2^j` establish this directly. Its mean and covariance with K_s equal those of D_s. Hence the squared off-code residual on the coherent source is exactly
+
+    ||(I-P_sym)D_s Alpha||^2
+       = Var(D_s)-Var[K_s(K_s-1)/N]
+       = (N-2)(N+1)/(16N).
+
+It vanishes at N=2 and is positive at every N>=3. Replacing physical D_s by the compressed expression consequently loses `sum_l b_l^2 (N-2)(N+1)/(16N)` from the second-moment compression while preserving the first moment. At N=3 this reduces to the candidate's 1/12 residual. This is the planned planted defect for the independent checker.
+
+## 6. Scope and limits at this stage
+
+Fresh purity, globally controlled ready-state error, positive complementary couplings on all named supports, phase-referenced rotations, complete matching SWAPs, vacant memory sites, isolation, complete generator calibration, fixed timing, and zero/passive retained E remain premises. So do the accepted runtime bus's spectral, geometry and effective-target hypotheses. The external drive has no quantum output in the prescribed time-dependent model; a microscopic F with a ready state, complete retained output and energy/covariance ledger is an unresolved stronger interface. No autonomous or reusable supplier, native purity theorem, thermodynamic cost theorem, permanent halt, or generic Lie-to-static realization follows.
+
+The source's broad comparison sentences about other preparation papers are not independently established here: only the named bus and compensated-reservoir premise sections were inspected. They are not needed to prove the new conditional construction. The independent check inherits the same model family and is source-exposed. No formal retained status follows.
+
+The author's checker was not semantically inspected or executed. An initial inventory hashed all files in its directory, including its checker; this is disclosed byte access. The complete candidate derivation exposed the author's checker design and reported results in section 8. Our checker will instead use pure-Python exact Gaussian rational bitstring actions and a combinatorial state-count recurrence, with no imported author code or expected output files.

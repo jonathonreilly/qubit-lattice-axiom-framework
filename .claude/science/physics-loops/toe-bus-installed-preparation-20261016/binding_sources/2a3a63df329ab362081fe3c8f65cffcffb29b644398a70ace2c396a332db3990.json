@@ -1,0 +1,87 @@
+{
+  "reviewed_utc": "2026-10-16T12:51:24.662340+00:00",
+  "status": "source-only wrapper/code accepted for separately reviewed canonical integration; not retained audit",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bus_preparation_publication_review/REVIEW.md",
+    "bytes": 5448,
+    "sha256": "defdbe274b3d121ac8fd1116e263d997050e6a642600bcc46c33b403d50130ce"
+  },
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/FINAL_FREEZE.json",
+    "bytes": 33180,
+    "sha256": "ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/proposal/docs/BUS_INSTALLED_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 114810,
+    "sha256": "07c011350166272167a56e69c3551d5ccaf412eea17f76eb343ca6186b2b11c9"
+  },
+  "source_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/proposal/scripts/bus_installed_preparation_2026_10_16.py",
+    "bytes": 26714,
+    "sha256": "1dd69dee6643f905d09daaa3ef8b2666de25ebb4dde0cd39da34085e52280bc5"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/wrapper.md",
+    "bytes": 18054,
+    "sha256": "13f11141b856e4e843bb3d61366bdf5bdb2066547b55c3c784dd4f04c939e889"
+  },
+  "frozen_members": 138,
+  "selected_live_sources": 107,
+  "immutable_bodies": 7,
+  "declared_inputs": 86,
+  "acceptance_reference_edges": 18,
+  "metadata_receipts": [
+    {
+      "label": "build_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/metadata_runs/build_01/EXECUTION.json",
+        "bytes": 2305,
+        "sha256": "b6bd7b9f85fc66b5905080f1986744fdd477197703e35b942f84deee052e5ff0"
+      },
+      "actual_exit": 0
+    },
+    {
+      "label": "integrity_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/metadata_runs/integrity_01/EXECUTION.json",
+        "bytes": 2413,
+        "sha256": "4cf8650f7ea54f1b238e8c8cbc3eb540029e3096072a0ef3fb66ceb7f35f546e"
+      },
+      "actual_exit": 0
+    },
+    {
+      "label": "controls_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/metadata_runs/controls_01/EXECUTION.json",
+        "bytes": 2414,
+        "sha256": "55857838fec5f21d2efe003315096152157d2fd5f0456ef4b1fc328fd180494d"
+      },
+      "actual_exit": 0
+    },
+    {
+      "label": "default_refusal_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/metadata_runs/default_refusal_01/EXECUTION.json",
+        "bytes": 2422,
+        "sha256": "03b433e9857687fb9da89f74f043c783ce747f659cf2caa0e1ecf77a3ce8edb4"
+      },
+      "actual_exit": 2
+    },
+    {
+      "label": "inspection_01",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bus_preparation_publication_draft/metadata_runs/inspection_01/EXECUTION.json",
+        "bytes": 2334,
+        "sha256": "215f93b9b60200e40739d1f08cffe7a05275daf3339244c14868c9f9c9c9f9c0"
+      },
+      "actual_exit": 0
+    }
+  ],
+  "scientific_reexecutions": 0,
+  "cluster_cap": "OPEN conditional on canonical conformance",
+  "actual_canonical_acceptance": null,
+  "actual_new_publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

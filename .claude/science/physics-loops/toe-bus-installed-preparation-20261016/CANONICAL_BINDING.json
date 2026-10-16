@@ -1,0 +1,37 @@
+{
+  "kind": "actual_bus_preparation_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "actual_git_base": "142cbd74aa146848b246795f8bf7007f3e38976d",
+  "bound_note_sha256": "0c6b10f903352ff152cc920499f01c624a6407ea0e02c907a2b8b30c4ef81823",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/07c011350166272167a56e69c3551d5ccaf412eea17f76eb343ca6186b2b11c9.md",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2a3a63df329ab362081fe3c8f65cffcffb29b644398a70ace2c396a332db3990.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/2e7ab15259339ef2d3ef943c94cb37f8ef66e1bdd48dd2b7ff0aa6eb45474c55.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/37ab070539679fd9559c7816e079e888dc688ac605731023c7620b3488c0a038.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/408bd0c424cd3563dff687a0aefe6aa20775c9eb89fbfdefa5ce288a09001d2e.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/47d08a9eaed8ba5492a507e989837355fdaef4bbbd8ee3810e57cb94f2d98488.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/54a6c6055e8bf1b7046db9ec94d6a56526d5d28204ad5be4b3a28b1e11fe3e36.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/5884a9241b6db9801c8e959b90c8fb9d030b574d2dc969793c84a7be3cb341f7.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/588a7bc9b4a71003ab50610da957bed882e7684bf17e9e88c23d4d9c75cc42ef.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/59a7f0294c011ac3c068a126d175c2bca40716247977a1580d98922255992def.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/89d6d78882274a58f864b541a6612def852519f7017b901c9a84df31b70067a7.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/af755f443fb22379780475436b86da78563d3e8b21f62b9b83b5a1622c851f05.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/b78f04acb3cdf8a98c0859c2f12a4e1d15e9db62b32aef18a78a745f7bed3474.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/cb054fad672a4afa990de83b67fec80c14ca0be070448b10b5c8b53a3e7d40c6.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/d72157ac8a873f451103ab17fbb0a263a24dd61b29d5b2569be0a2efc05e3b8c.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/defdbe274b3d121ac8fd1116e263d997050e6a642600bcc46c33b403d50130ce.md",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/ed576446fcbf5f0aae92054730165082e2c68567b09baaf389d36b49f6d87278.json",
+    ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/f80e6b016210ba941203d25c92e43f6c930d6a481b715ad5a2712613fba41ac7.py"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-bus-installed-preparation-20261016/binding_sources/457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09.json",
+    "bytes": 13709,
+    "sha256": "457f02dafdb7d3ad547279fe000532dee639c5a1ba59b87207b420b15918ec09"
+  }
+}

@@ -5,6 +5,31 @@ PR #9625). Window 2026-10-15T23:30Z – 2026-10-16T23:00Z. Nothing here is
 adopted; every result is unaudited bounded support with its evidence level
 stated in the note.
 
+## Plain-language summary (for the owner)
+
+The question was what one tick of a unitary update can do on the axioms'
+cubic grid of qubits, if every cube direction is treated alike.
+
+- **One qubit per site cannot move.** This is proven for hops of up to
+  three sites and for every irreducible internal state (spin 1/2, spin 1,
+  spin 3/2, E).
+- **Two ways out, both forcing Dirac (electron-type) matter:**
+  - two qubits on one site (the parked M_4(C) fork);
+  - one qubit per site, with the electron spread over a staggered 2x2x2
+    neighbourhood. This keeps the one-qubit axiom.
+- **Copies are axis-permutation labels.** The number of electron copies is
+  set by the neighbourhood's shape, and the copies are always labelled by
+  permutations of the three axes. That links to the repository's C3
+  generation programme without deriving three generations.
+- **Exact prices of the grid:**
+  - perfect isotropy at order k^4 caps the cone speed at sqrt(2/3);
+  - lifting fermion doublers costs a fixed chirality breaking of
+    (1/2) sin(theta_X).
+- **One self-correction.** A numerical claim about D3 was wrong, and exact
+  methods fixed it.
+- **Verification.** Independent fresh-context checks agreed on every
+  load-bearing result.
+
 ## Delivered blocks
 
 | Block | Note | Runner | Headline |
@@ -27,8 +52,9 @@ stated in the note.
     fermions per block.
   The second keeps the one-qubit Qubit axiom and is the discrete-time
   counterpart of the axiom memo's open staggered-Dirac gate. Open: a
-  nearest-site version. Its unitary solutions found so far have flat bands,
-  and a dispersion-constrained search is running.
+  nearest-site version. Every unitary solution found has flat bands, both
+  here (with a dispersion constraint) and in about 300 independent runs.
+  This is numerical.
 - **Generations (interpretation).** A neighbourhood electron's copy index
   is always an axis-permutation representation (B7, exact), so cells
   produce the repository's C3 generation labels by themselves. No cell gave
@@ -56,7 +82,9 @@ stated in the note.
   PASS=16, which also proves Theorem 5: D3 cell walks are constant or
   body-diagonal shifts; this corrected the earlier numerical 'D3: none').
   Range three is now exact too (Theorem 4', Singular-certified final step;
-  scripts and logs in `exact_extensions/`). Range four and up remain open.
+  scripts and logs in `exact_extensions/`). Range four: the line stage
+  leaves only the trivial branch (numerical prefilter), but the 67-unknown
+  ideal was not closed. Range four and up remain open.
 - Whether every two-qubit O-covariant cell walk is Clifford-form up to flavor
   gauge (all hits tested so far are).
 - Irreducible 4-dimensional coin: no moving walk found (search only).

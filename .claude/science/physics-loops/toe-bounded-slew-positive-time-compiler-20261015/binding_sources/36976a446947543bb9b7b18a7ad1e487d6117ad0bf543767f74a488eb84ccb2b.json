@@ -1,0 +1,27 @@
+{
+  "observed_commit": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/1c142431607f2aa5756aea7837c1c318a6845653b59431aa96eea9223743c9ae.json",
+      "bytes": 1587,
+      "sha256": "1c142431607f2aa5756aea7837c1c318a6845653b59431aa96eea9223743c9ae"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c.py",
+      "bytes": 55814,
+      "sha256": "be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/b506680ca281808529a9a137646b2934a05765d362287a0c04b2fe4b82e8e79a.blob",
+      "bytes": 41,
+      "sha256": "b506680ca281808529a9a137646b2934a05765d362287a0c04b2fe4b82e8e79a"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual local stacked base HEAD, separately checked by clean_base; origin/main is separately pinned authority."
+}

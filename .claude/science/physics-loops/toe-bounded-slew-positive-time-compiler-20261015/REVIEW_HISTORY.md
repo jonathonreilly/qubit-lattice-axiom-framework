@@ -1,0 +1,3 @@
+# Source review and exposure
+
+Qualified acceptance 270985de follows root complete reading of both proofs, comparison, coverage and scoped check sources/results. Protected proof c6bf17a1 was frozen before root-proof exposure; comparison cc263f5f is exposed and separately contributes the minimum-runtime corollary and root robustness qualification. Both authors share model, parent machinery and question framing. Packaging is exposed and supplies no new scientific check or independent model replication. Root must review this new wrapper and all changed code before separate canonical integration. Source acceptance is not retained audit or publication.

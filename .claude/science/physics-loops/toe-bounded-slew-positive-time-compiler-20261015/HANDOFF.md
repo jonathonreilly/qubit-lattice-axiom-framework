@@ -1,0 +1,3 @@
+# Root integration handoff
+
+Read the complete wrapper, exact source bodies/acceptance and changed-code map at their current identities. Preserve this source draft after FINAL_FREEZE. Integrate separately, bind actual local base plus raw-draft review, explicitly review final canonical note and relocated BODY_MAP, and refresh SOURCE_MANIFEST current-body intervals and literal input pins. Run only authorized integration checks there. The frozen proposal retains its historical null outcomes. The canonical derivative records subsequent actual review, integration and publication evidence separately.

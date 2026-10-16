@@ -1,0 +1,90 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 66336,
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "claim_id": "accuracy_scaled_compiler_bounded_theorem_note_2026-10-15",
+      "role": "direct_mathematical_parent",
+      "accepted_body_intervals": [
+        {
+          "name": "root_degree_D",
+          "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 19188,
+          "end_byte_exclusive": 31871,
+          "bytes": 12683,
+          "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+        },
+        {
+          "name": "separately_attributed_k0_readout",
+          "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 32026,
+          "end_byte_exclusive": 33881,
+          "bytes": 1855,
+          "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+        },
+        {
+          "name": "source_exposed_assessment",
+          "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 34029,
+          "end_byte_exclusive": 66336,
+          "bytes": 32307,
+          "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+        }
+      ],
+      "body_map": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/BODY_MAP.json",
+        "bytes": 1053,
+        "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96"
+      },
+      "canonical_binding": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/CANONICAL_BINDING.json",
+        "bytes": 2421,
+        "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d"
+      },
+      "source_revision_supplied": "d789fef0a544f91feceb20500a15bacc3374f08b",
+      "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records.",
+      "source_head_supplied": "9ca474a32b3a4799d2d14cfee7580d77750422b4"
+    },
+    {
+      "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 97212,
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+      "claim_id": "conditioned_positive_time_compiler_bounded_theorem_note_2026-10-15",
+      "role": "direct_mathematical_parent",
+      "accepted_body_intervals": [
+        {
+          "name": "independent_author",
+          "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 39210,
+          "end_byte_exclusive": 70080,
+          "bytes": 30870,
+          "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+        },
+        {
+          "name": "comparison",
+          "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 70233,
+          "end_byte_exclusive": 97212,
+          "bytes": 26979,
+          "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+        }
+      ],
+      "body_map": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+        "bytes": 1063,
+        "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a"
+      },
+      "canonical_binding": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/CANONICAL_BINDING.json",
+        "bytes": 2487,
+        "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6"
+      },
+      "source_revision_supplied": null,
+      "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records.",
+      "source_head_supplied": "9ca474a32b3a4799d2d14cfee7580d77750422b4"
+    }
+  ],
+  "transitive_premises": [],
+  "git_ancestry_is_not_mathematical_dependency": true
+}

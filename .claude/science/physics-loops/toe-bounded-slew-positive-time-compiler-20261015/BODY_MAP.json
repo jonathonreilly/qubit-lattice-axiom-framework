@@ -1,0 +1,29 @@
+{
+  "note": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "protected_weak_bump_body",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 15591,
+      "end_byte_exclusive": 35069,
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+    },
+    {
+      "name": "root_full_unitary_variant",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 35244,
+      "end_byte_exclusive": 46725,
+      "bytes": 11481,
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e"
+    },
+    {
+      "name": "exposed_comparison_and_minimum_time_corollary",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 46920,
+      "end_byte_exclusive": 56587,
+      "bytes": 9667,
+      "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f"
+    }
+  ]
+}

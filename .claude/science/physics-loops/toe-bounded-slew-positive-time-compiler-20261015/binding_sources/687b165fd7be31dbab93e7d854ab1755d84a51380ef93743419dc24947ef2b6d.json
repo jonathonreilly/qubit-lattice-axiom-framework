@@ -1,0 +1,266 @@
+{
+  "kind": "root_installed_canonical_source_review",
+  "utc": "2026-10-16T00:27:51.188102+00:00",
+  "root_read_complete": true,
+  "bound_note_sha256": "e6bb3a0dacd3ac6a2161e4471155b1d269137470bd84dffb5758b8e8675636ba",
+  "canonical_body_pins": [
+    {
+      "name": "protected_weak_bump_body",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 15591,
+      "end_byte_exclusive": 35069,
+      "bytes": 19478,
+      "sha256": "c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5"
+    },
+    {
+      "name": "root_full_unitary_variant",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 35244,
+      "end_byte_exclusive": 46725,
+      "bytes": 11481,
+      "sha256": "c46422d545bf1b8eaa72345ed4cffe293e073da1cc4aa1903661fd7ff3771e6e"
+    },
+    {
+      "name": "exposed_comparison_and_minimum_time_corollary",
+      "container": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 46920,
+      "end_byte_exclusive": 56587,
+      "bytes": 9667,
+      "sha256": "cc263f5f842c4d0f955d2d14bff78dcfbae4df0d331ed61fdb4d6b698868977f"
+    }
+  ],
+  "parent_binding": {
+    "canonical_parents": [
+      {
+        "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 66336,
+        "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+        "claim_id": "accuracy_scaled_compiler_bounded_theorem_note_2026-10-15",
+        "role": "direct_mathematical_parent",
+        "accepted_body_intervals": [
+          {
+            "name": "root_degree_D",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 19188,
+            "end_byte_exclusive": 31871,
+            "bytes": 12683,
+            "sha256": "6cae05fe6569b630041095b2cd44ad53a2cfedebdd0de30cd411975729f0186b"
+          },
+          {
+            "name": "separately_attributed_k0_readout",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 32026,
+            "end_byte_exclusive": 33881,
+            "bytes": 1855,
+            "sha256": "899a28b936f5d8213ca2fbf28da6dc0bf0bc59534a64b97d8f2116db53ff9dc5"
+          },
+          {
+            "name": "source_exposed_assessment",
+            "container": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 34029,
+            "end_byte_exclusive": 66336,
+            "bytes": 32307,
+            "sha256": "c9c098724bd13d87ce129f291ff7f75d7862651a85c17034a161de3ff0e124a8"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/BODY_MAP.json",
+          "bytes": 1053,
+          "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-accuracy-scaled-compiler-20261015/CANONICAL_BINDING.json",
+          "bytes": 2421,
+          "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d"
+        },
+        "source_revision_supplied": "d789fef0a544f91feceb20500a15bacc3374f08b",
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records.",
+        "source_head_supplied": "9ca474a32b3a4799d2d14cfee7580d77750422b4"
+      },
+      {
+        "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 97212,
+        "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+        "claim_id": "conditioned_positive_time_compiler_bounded_theorem_note_2026-10-15",
+        "role": "direct_mathematical_parent",
+        "accepted_body_intervals": [
+          {
+            "name": "independent_author",
+            "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 39210,
+            "end_byte_exclusive": 70080,
+            "bytes": 30870,
+            "sha256": "dd6cca8552a117d97f7be21c7b999ecd2276382f6cc762954bd97d00e3a6ff04"
+          },
+          {
+            "name": "comparison",
+            "container": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+            "start_byte_inclusive": 70233,
+            "end_byte_exclusive": 97212,
+            "bytes": 26979,
+            "sha256": "227180a0822eab4e3dbfc002b6604d914af23589c29add9cca71e1a2f3ae2db0"
+          }
+        ],
+        "body_map": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/BODY_MAP.json",
+          "bytes": 1063,
+          "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a"
+        },
+        "canonical_binding": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/CANONICAL_BINDING.json",
+          "bytes": 2487,
+          "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6"
+        },
+        "source_revision_supplied": null,
+        "revision_evidence_limit": "No Git command run; canonical bytes verified against existing local binding records.",
+        "source_head_supplied": "9ca474a32b3a4799d2d14cfee7580d77750422b4"
+      }
+    ],
+    "transitive_premises": [],
+    "preparation_release_intervals": [],
+    "scope": "Only fixed complete plant, positive path/port interface, computable augmented polynomial certificate and parent scalar/actual-time ledger. No autonomous controller import. Source HEAD supplied, no Git command run here."
+  },
+  "source_draft_freeze_sha256": "0add271622a6912ce736e43f106f90a4c40e09ab3115cdc0ec0ea6b7a10fd06f",
+  "source_draft_review_sha256": "1909d938a96545ee60a5624470df424348c20d72cbd1f23e9c1e3d6fc4ea9fc7",
+  "git_base": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bounded_slew_positive_time_compiler_2026_10_15.py",
+    "bytes": 39374,
+    "sha256": "8d59144ce3c87bfeedb9551dc7d245efe554abf4421a2a0a12a030c821ab1076"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_integration_proposal/bounded_slew_common.py",
+    "bytes": 55814,
+    "sha256": "be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c"
+  },
+  "root_integration_review": {
+    "utc": "2026-10-16T00:26:07.037339+00:00",
+    "kind": "root_integration_source_review",
+    "root_read_complete_for_changed_implementation": true,
+    "proposal_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_integration_proposal/FINAL_FREEZE.json",
+      "bytes": 64938,
+      "sha256": "861c259765dd6b6b74c5235e2c5335b92ad1be2b08e7426b5bed8a9514084cf6"
+    },
+    "source_publication_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_bounded_slew_publication_review/REVIEW.json",
+      "bytes": 8782,
+      "sha256": "1909d938a96545ee60a5624470df424348c20d72cbd1f23e9c1e3d6fc4ea9fc7"
+    },
+    "common": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_integration_proposal/bounded_slew_common.py",
+      "bytes": 55814,
+      "sha256": "be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c"
+    },
+    "primary_unbound": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bounded_slew_integration_proposal/proposed_primary_unbound.py",
+      "bytes": 34983,
+      "sha256": "8fa4e15cad0ca3c833233680ff4e3879d4a04fe0096081ba66c176bb9d4ff4eb"
+    },
+    "function_comparison": {
+      "common_vs_actual_autonomous": {
+        "exact_source": 29,
+        "changed": 4,
+        "added": 1
+      },
+      "primary_vs_frozen_bounded_slew": {
+        "exact_source": 11,
+        "added": 1,
+        "changed": 2
+      },
+      "primary_vs_actual_autonomous": {
+        "exact_source": 11,
+        "added": 2,
+        "changed": 1
+      }
+    },
+    "coverage": [
+      "Complete changed prepare, verify, finish, publish and relocate_recoveries functions; changed primary execution_evidence, main and check_receipt_members; module binding constants; unchanged functions verified against reviewed exact reference sources.",
+      "Complete metadata build, validation, recorder and seal source; actual produced code is authoritative over its authoring patch inputs.",
+      "Complete wrapper and packet text replacements, binding contract, command plan, PR template and integration sections; exact archive membership verified deterministically.",
+      "Oversized combined diff output was truncated and is not claimed as full read. Full changed operational functions were read in later scoped outputs. Scientific body review and source-draft review are reused at unchanged hashes."
+    ],
+    "decision": "Accept frozen integration implementation for sequential execution with actual canonical and staged review gates.",
+    "scientific_programs_run": 0,
+    "retained_audit": false,
+    "editable_prompt_files_changed": []
+  },
+  "prepared_content_review": {
+    "kind": "root_prepared_content_review",
+    "utc": "2026-10-16T00:27:37.583761+00:00",
+    "prepared": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bounded_slew_compiler/PREPARED.json",
+      "bytes": 46661,
+      "sha256": "0242947355ec78656df61d7e8ba043386a7c1dc2638e48bc83a5bccd9e489560"
+    },
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bounded_slew_compiler/CANONICALIZATION.diff",
+      "bytes": 251797,
+      "sha256": "a1a809e67725685e251f533f5cb8f8c3497c4ab3392f6527c6aee0a481a799e5"
+    },
+    "note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bounded_slew_compiler/canonical_source/docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 56587,
+      "sha256": "e6bb3a0dacd3ac6a2161e4471155b1d269137470bd84dffb5758b8e8675636ba"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bounded_slew_compiler/canonical_source/scripts/bounded_slew_positive_time_compiler_2026_10_15.py",
+      "bytes": 39374,
+      "sha256": "8d59144ce3c87bfeedb9551dc7d245efe554abf4421a2a0a12a030c821ab1076"
+    },
+    "changed": [
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ACTUAL_BINDING.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/BINDING_CONTRACT.md",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/BODY_MAP.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/CHECK_RECEIPTS.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/HANDOFF.md",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/INPUT_MANIFEST.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/PR_TITLE.txt",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/SOURCE_MANIFEST.json",
+      "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "scripts/bounded_slew_positive_time_compiler_2026_10_15.py"
+    ],
+    "added": [
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ACTUAL_HANDOFF.md",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ACTUAL_REFRESH_PROVENANCE.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/CANONICAL_BINDING.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/0add271622a6912ce736e43f106f90a4c40e09ab3115cdc0ec0ea6b7a10fd06f.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/1909d938a96545ee60a5624470df424348c20d72cbd1f23e9c1e3d6fc4ea9fc7.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/1c142431607f2aa5756aea7837c1c318a6845653b59431aa96eea9223743c9ae.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/21d2ed433190d525bed8fb67372943e37cd31a3b3f084f243caab29a084d8f1d.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/2e31d1a55341ac00a0ce2cf6bf3d37df5b5c6b6e001317018084343445665171.blob",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/2f8eec322d80768e59e47f3232f83d40a7cd0eb3c63e1fd02b22545654ec161c.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/36976a446947543bb9b7b18a7ad1e487d6117ad0bf543767f74a488eb84ccb2b.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/3a0d721d371deefcdabc3db2733f42a8a4f9c363881a554d7ca7ac5469ca7d44.blob",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/4edfc8744d107900b883c5c0d910cff51ec1d3408adcc8f39a7cb95909ac668c.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/5e7ebdfae78ee5d1eea22022f0a0ef565e2db99f85a7a556e08cc7626ede02bc.py",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/65791cefb0ce1ed605e72f7ba2487343373ac64136bf141af3a309fba96db291.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/77db636195c694110e353797fbd2da9c8f40e828c4b1214218a54c4b070777e1.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/8500a4ea92a5e9f25733504ccccd18eadfcc4026c35ea2a75397dd55ed69f956.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/91c7ad105285fe5b12bb99f8b3bf4a14734fe857d0881b8aaaba2679cc0350e4.blob",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/9b58b1329d4eca12d802151ecd10f0b536fee45b665f97626386917c3d2d5ad1.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/ae4f0bce5744128bc06b97c551bb8a04329cd877b82ea36c3b3bbfcba19f53e7.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/b506680ca281808529a9a137646b2934a05765d362287a0c04b2fe4b82e8e79a.blob",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/be708cea3ddb81371c4b47ca88d2648c2a01b727b441cd317bd68ca84662b81c.py",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/da9577d8a249ca22584d70fa3ea86ebd11c1f777480f179d8c42a42818957416.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/e6180a226a0498b826249bce8e6b81e09947999cba22725aaa9c0a04645b79f3.json",
+      ".claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/binding_sources/f1706af10835754541043f1cbfe34dfb9b8860b9606e4337f05e5a643dc2b948.blob"
+    ],
+    "note_wrapper_matches_fully_read_replacements": true,
+    "three_proof_bodies_unchanged": true,
+    "primary_executable_logic_matches_reviewed_proposal": true,
+    "source_and_canonical_reviews_distinct": true,
+    "historical_publication_nulls_preserved": true,
+    "source_or_binding_metadata_only": true,
+    "scientific_programs_run": 0,
+    "scope": "Full active text/code deltas reviewed through their exact already-read replacements; large copied receipts and manifests verified by identity and schema, not relabeled as new scientific argument reading."
+  },
+  "coverage": "Installed files match the reviewed canonical copy exactly. Frozen source wrapper and complete mathematical bodies were reviewed under their original identities; full final active text replacements and changed integrity logic were read, and canonical byte intervals separately checked. Captured historical receipts and literal inventories are byte/schema evidence, not additional scientific verification.",
+  "decision": "Accept this exact installed canonical source and the reviewed metadata-only binding step for scoped execution and regular PR publication.",
+  "scientific_programs_run": 0,
+  "primary_runs_at_review": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "actual_conditioned_positive_compiler_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "actual_git_base": "d7df9087a06d772bc7c7a443e479149a30f385fb",
+  "actual_branch_at_binding": "physics-loop/toe-polynomial-path-mediator-20261015",
+  "bound_note_sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/0cdc01cd5b26bc48f250e5a854d93cb41ed3c135ae1a7dfed24be9d0e7d8c8fd.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/137a053a187876c9540c9a2f3efcc60d03af6cb2b5da28398c86b86d8981e3fa.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/283c0c87214ed8fa4d863ce217026f306c104ca011ba9868d82d4e3ff42e5f54.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/4473e20fa0b91406fe1c8706dd906143ceae6ba6dbb6eedaf700c47cbc08521c.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/51ffee6b82f62b65ae08940ad05b60cac4c39fe83588ccc0b2d3783ec949506f.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/58be88b6b396bb2cb30017819e083acf6932a1ed43b51ccebdb3d7a768887c4a.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/9325a8bef9e59a6d539154deb5d04df7c95c568bb9819f3a2736bb19faa5672b.json",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/b6b640a56c07a0a807e9c06ee4e56bae223b187a65ced63e07da60cb13e880ef.py",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-conditioned-positive-compiler-20261015/binding_sources/f04da9a0cd7760a1950fe6c592051486a5cb5e559be9540937b2682661c79ffb.py"
+  ],
+  "canonical_parent_sha256": {
+    "docs/SINGLE_PORT_PROGRAM_AND_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-15.md": "9b08b7a78f21390d065322150d1fe6a222343323cc76dfe7f3b065a624d5a18e"
+  }
+}

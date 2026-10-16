@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/bounded_slew_positive_time_compiler_2026_10_15.py
+runner_sha256: 59addf56928d2dc68e66ea93a41a4da132a08110f8ee84572f41939d94ad24ea
+input_fingerprint_sha256: b21bd12671a0684ef18c2fcb2c27e48f92c76ec4ba671bc11805fd7fb07f27e9
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "exact bytes, recovery and captured binding metadata only"}
+per_element: source coefficient text retained; no physical element was executed
+per_site: declared complete lattice interface retained; no hardware test was executed
+per_mode: weak-bump and full-phase ramp contracts remain distinct; no propagation was executed
+per_block: exact compiler sources and historical/actual receipt metadata checked only
+lattice_wide: native preparation, actual suppliers and independent audit remain separate
+metadata_check_counts_only: source bytes and provenance assertions; no scientific proof or retained status
+TOTAL: PASS=827 FAIL=0
+
+----- stderr -----
+

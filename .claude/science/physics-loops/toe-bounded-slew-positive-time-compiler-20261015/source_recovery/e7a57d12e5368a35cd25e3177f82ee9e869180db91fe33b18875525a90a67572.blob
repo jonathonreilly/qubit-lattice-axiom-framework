@@ -1,0 +1,47 @@
+{
+  "completed_utc": "2026-10-15T23:50:38.018193+00:00",
+  "source_head_at_finalization": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "source_refresh": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "matches_launch": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "matches_launch": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "matches_launch": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "matches_launch": true
+    },
+    {
+      "path": "docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2",
+      "matches_launch": true
+    },
+    {
+      "path": "docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a",
+      "matches_launch": true
+    },
+    {
+      "path": "origin/ai/execution:AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "matches_launch": true
+    }
+  ],
+  "derivation_fully_read_before_freeze": true,
+  "last_edits_reviewed": "One numerical-enclosure clarification and three wording changes, all inspected before final symbolic capture.",
+  "scientific_outcome": "Affirmative conditional qualitative proof; no polynomial bound claimed.",
+  "open_obligation": "Supervisor mathematical review before comparison/reuse; no formal audit performed.",
+  "scoped_check_final": "checks/exact_symbolic_final/EXECUTION.json",
+  "current_new_derivation_exposure": "No other current derivation read before this freeze."
+}

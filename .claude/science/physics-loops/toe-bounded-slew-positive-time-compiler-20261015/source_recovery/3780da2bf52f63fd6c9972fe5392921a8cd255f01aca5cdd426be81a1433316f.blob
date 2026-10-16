@@ -1,0 +1,51 @@
+# Root readout after the independent fixed-slew derivation
+
+The root INITIAL_FREEZE remains unchanged. Root has now completely read
+bounded_slew_independent_check/DERIVATION.md, SHA256
+c6bf17a1e80e05dd7121031c3497d8c2149198e24f7ba0e4e289270540f93ff5,
+and its complete SOURCE_COVERAGE.md. The two proposals were frozen before
+comparison. They share the same selected model and accepted input machinery;
+this is separate-context mathematical checking, not independent model-family
+replication, a compiler execution, or a retained audit.
+
+The worker gives a second port-direction extraction: polynomial bumps of
+height proportional to duration have area beta delta^2, with fixed slew.
+Factoring the drift inside the compact reachable closure gives a unitary
+error <=beta ||A|| delta^3. Repetition O(delta^-2) times yields a port
+one-parameter subgroup with O(delta) error. Root reconstructed the integral
+constant (beta=8kappa/15), group closure on both actual-time coordinates,
+commutator sign, finite-dimensional span implication, and effective strict
+search margin. No load-bearing error has been found in that argument.
+
+Its contract differs deliberately from the root ramp proof: the worker uses
+the traceless augmented pair, restores the original parent comparison scalar
+chi=(Rs+lambda j0)(T+s)+A_s+theta, and requires a determinant lift. Root uses
+the full pair and the positive-ray sum to obtain the first scalar direction;
+its search targets the full W phase during runtime. The two phases must not
+be spliced. The worker version is the direct parent-compatible contract for a
+potential publication. Neither version inherits polynomial runtime or oracle
+bounds from the previous compiler.
+
+The worker's finite interpolation choice gives a window error <=epsilon/64.
+Its accepted pair error <epsilon/8 gives endpoint error <epsilon/4; the extra
+full generator-integral allowance epsilon/64 produces total unhalved trace
+error <=9epsilon/16. This leaves room but allocates no unmentioned timing,
+state or switching error automatically. Input and external-controller
+premises remain supplied. Every physical scalar stays in the actual
+propagator and complete output formula.
+
+A fixed positive minimum duration may be added by prefixing a rational free
+wait t_pre>=T_min. Since the full augmented reachable closure is a group,
+the residual target (Wtilde,I)exp(-t_pre A) still lies in it. Enumerating words
+with this prefix preserves terminating search, positive time and all amplitude
+and slew bounds. This is separate from the worker's original nonempty-word
+statement. It gives no new uniform upper runtime bound.
+
+Root's finite diagnostic check_ramp_limit.py was actually run through
+runs/bounded_slew_ramp_diagnostic: 32 floating-point cases on a fixed two-qubit
+plant and four rays. At the last amplitude 1/512, each successive tangent
+error ratio is about 1.999997; largest unitarity residual is 4.24e-14. It
+checks the local ramp limit and its explicit bounds, not any Lie certificate
+or complete compiler. Worker symbolic source/receipt and freezes have yet
+to be inspected by root. The worker has been asked for a separate exposed
+comparison of the original root proof before final qualified acceptance.

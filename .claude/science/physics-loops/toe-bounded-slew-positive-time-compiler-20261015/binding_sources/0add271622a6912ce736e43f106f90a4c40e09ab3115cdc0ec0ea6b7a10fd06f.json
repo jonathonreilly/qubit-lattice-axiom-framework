@@ -1,0 +1,610 @@
+{
+  "frozen_utc": "2026-10-16T00:07:33.390600+00:00",
+  "scope": "Exact source-only draft, selected recovery, changed-code maps and actual metadata evidence",
+  "note": {
+    "path": "docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 56503,
+    "sha256": "671eebdd3e4e234e3fa6467cc940c28c3499311f736b95ba681613701652438a"
+  },
+  "immutable_bodies": 3,
+  "direct_mathematical_parents": 2,
+  "transitive_premise_files": 0,
+  "scientific_programs_run_this_draft": 0,
+  "historical_scientific_programs_replayed": 0,
+  "primary_execution": null,
+  "actual_binding": null,
+  "publication_action": null,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 503,
+      "sha256": "5d4517e84972fcc0cddda6633b0ffa10c2ce21feff64ccc83393293043aaa2b1"
+    },
+    {
+      "path": "CHANGED_CODE.patch",
+      "bytes": 19166,
+      "sha256": "f7ad94cc8f8904d4943d8eeec4cbb985128f609ef7f124a2a5a7be103ddb032c"
+    },
+    {
+      "path": "CHANGED_TEXT.patch",
+      "bytes": 52144,
+      "sha256": "bbaa2d93dc82b976ae909c3b298c480f3a8eb27b3c2f1ba72bb9e5e3b26cf0ea"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1095,
+      "sha256": "7e372b141149f7ee99ff011a44f56b2b33efb2d21d97f9523cb1daca84888d90"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 2311,
+      "sha256": "4effa16f7fdce6d525c7723ad5425f78968f9f5e1ccd5d45e5f50a029aec655b"
+    },
+    {
+      "path": "COMMAND_LOG.jsonl",
+      "bytes": 4289,
+      "sha256": "5ea031de677156d3568114e92e36ea916dd55b514e3e7b0b5467f3422a617da7"
+    },
+    {
+      "path": "DELIVERY.json",
+      "bytes": 1155,
+      "sha256": "1bcdf74e956101b079f35b9bb18e70f69799ca5fb578889622ad75d62f23bc89"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 2035,
+      "sha256": "34dffba08d8120c8d7002abbfe72403fccd9ef7dcf04ab5ec609696edd253207"
+    },
+    {
+      "path": "HISTORICAL_PROSE_DELTA.patch",
+      "bytes": 4514,
+      "sha256": "41f8fe296f388fc98cecb3107259af4a17001f13076483b76b1bed4432f4a998"
+    },
+    {
+      "path": "IMPLEMENTATION_BASIS.json",
+      "bytes": 2604,
+      "sha256": "cd9d6a9f669df4618fbdb91b4150309d70a836d2654370b12293b5bb8c90f76c"
+    },
+    {
+      "path": "INITIAL_BINDING.json",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "PARENT_BINDING.json",
+      "bytes": 4685,
+      "sha256": "8493d537bb7ae2f4796339f629140b8df13d44db99754bd4de21f88a3ecb8b2e"
+    },
+    {
+      "path": "PAYLOAD_INDEX.json",
+      "bytes": 14549,
+      "sha256": "ca5bb1aa31132fea0e707ec605ab2ec2e78f725f63d995087754677365345390"
+    },
+    {
+      "path": "PREVIOUS_FREEZE_PRESERVED.json",
+      "bytes": 474,
+      "sha256": "325e3c85a8403053813c4013327eec5c01a27897a2643890dad5a6395176311c"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 6258,
+      "sha256": "ee9d51fb0e3768cd2e1737cb94a7dd01133266d678bac1e9d8072623fc56672f"
+    },
+    {
+      "path": "REUSE_MAP.json",
+      "bytes": 37336,
+      "sha256": "6852df3d7cf2d09961d90d0843817ff47c681579b98c2bf70b5c4f49eb077e20"
+    },
+    {
+      "path": "REVIEW_SURFACE.json",
+      "bytes": 1871,
+      "sha256": "293d1427660f622849bbd520d1ad20ffc348bf174855ca681a6d1726a420542e"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 2381,
+      "sha256": "998e8969816785fa7dcaf7e5e66e68b05d43f3ed327236f084e78b80d9967797"
+    },
+    {
+      "path": "SCRIPT_MAP.json",
+      "bytes": 1241,
+      "sha256": "773c9d29432a73b348a6a789c2a48589f48d3de1064f1a3c6abade00f5a31ba4"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 977,
+      "sha256": "2976b9b3a678615b4ba28908535da49842926f3cb90d9986faa0bc8f093a822a"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "bytes": 17029,
+      "sha256": "0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 16804,
+      "sha256": "003daa05340acef48132d6c9a16fd18411abdc3cfe514915c06cda5b9ba7d026"
+    },
+    {
+      "path": "START.json",
+      "bytes": 2536,
+      "sha256": "758f5531a6758f693a40d05d8887d904dae4f65dda292ba3f77089096ff7aa76"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2179,
+      "sha256": "f54d92faa9eda8658a50df7031bb729d02721c54c4c2302800a8317b66f5d384"
+    },
+    {
+      "path": "build_proposal.py",
+      "bytes": 12458,
+      "sha256": "d69f4dbed5953a5b2e7b225b49538cc43a68c8ae5f42ebde916548497c5786cf"
+    },
+    {
+      "path": "inspect_proposal.py",
+      "bytes": 12379,
+      "sha256": "d715d92246c00e3772ef636fe0eda2e5dd29638fccb093592d5f89d396201337"
+    },
+    {
+      "path": "metadata_inputs/0e0b9a811226521ba32db270d22900e7a88bd1f12f4b567bc4117f5ca2d4a802.blob",
+      "bytes": 641,
+      "sha256": "0e0b9a811226521ba32db270d22900e7a88bd1f12f4b567bc4117f5ca2d4a802"
+    },
+    {
+      "path": "metadata_inputs/0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9.blob",
+      "bytes": 17029,
+      "sha256": "0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9"
+    },
+    {
+      "path": "metadata_inputs/207c0ee49273216d140ebea154b8e6291f68a31b086880652e17903151e58795.blob",
+      "bytes": 685,
+      "sha256": "207c0ee49273216d140ebea154b8e6291f68a31b086880652e17903151e58795"
+    },
+    {
+      "path": "metadata_inputs/2b5d6fccbf273238d6f9c6b538bd1612fcd55ebf6ed0397339d0b9422a2bf227.blob",
+      "bytes": 3596,
+      "sha256": "2b5d6fccbf273238d6f9c6b538bd1612fcd55ebf6ed0397339d0b9422a2bf227"
+    },
+    {
+      "path": "metadata_inputs/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "metadata_inputs/5e1d10d7a8bb1deb75d929dab1f87c1ac4030e08f839d6b351b2a74fb8636f56.blob",
+      "bytes": 655,
+      "sha256": "5e1d10d7a8bb1deb75d929dab1f87c1ac4030e08f839d6b351b2a74fb8636f56"
+    },
+    {
+      "path": "metadata_inputs/68622f41e60806c0129af6089aa973dc38448bf647ab4bb21df81ac59f2c1dbe.blob",
+      "bytes": 736,
+      "sha256": "68622f41e60806c0129af6089aa973dc38448bf647ab4bb21df81ac59f2c1dbe"
+    },
+    {
+      "path": "metadata_inputs/709cff53e07115cc243cf319657ed1757b84ce279afaa3115899d56d0c625f88.blob",
+      "bytes": 622,
+      "sha256": "709cff53e07115cc243cf319657ed1757b84ce279afaa3115899d56d0c625f88"
+    },
+    {
+      "path": "metadata_inputs/7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf.blob",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "metadata_inputs/8493d537bb7ae2f4796339f629140b8df13d44db99754bd4de21f88a3ecb8b2e.blob",
+      "bytes": 4685,
+      "sha256": "8493d537bb7ae2f4796339f629140b8df13d44db99754bd4de21f88a3ecb8b2e"
+    },
+    {
+      "path": "metadata_inputs/8cbbc11b78280205a313e74c72c49b7ae1f667f2636639412481517eba105a55.blob",
+      "bytes": 15333,
+      "sha256": "8cbbc11b78280205a313e74c72c49b7ae1f667f2636639412481517eba105a55"
+    },
+    {
+      "path": "metadata_inputs/9afddbcece447a4af43d25fe9a919f49ed8424f8b61608d30a1837c3ae9e5123.blob",
+      "bytes": 12333,
+      "sha256": "9afddbcece447a4af43d25fe9a919f49ed8424f8b61608d30a1837c3ae9e5123"
+    },
+    {
+      "path": "metadata_inputs/b447307cf3d5baa94af4886c789314c58ebf6900f0ec1efad565ca4dfa5c9c66.blob",
+      "bytes": 537,
+      "sha256": "b447307cf3d5baa94af4886c789314c58ebf6900f0ec1efad565ca4dfa5c9c66"
+    },
+    {
+      "path": "metadata_inputs/bea5780c53906d48aaf6694e94e6c902b7c76172a864a210864bbe4758d5c41c.blob",
+      "bytes": 625,
+      "sha256": "bea5780c53906d48aaf6694e94e6c902b7c76172a864a210864bbe4758d5c41c"
+    },
+    {
+      "path": "metadata_inputs/cd9d6a9f669df4618fbdb91b4150309d70a836d2654370b12293b5bb8c90f76c.blob",
+      "bytes": 2604,
+      "sha256": "cd9d6a9f669df4618fbdb91b4150309d70a836d2654370b12293b5bb8c90f76c"
+    },
+    {
+      "path": "metadata_inputs/d72a5098794482fb8b9064e179715262786225ca8a27ec1c75c2e422d3300a35.blob",
+      "bytes": 713,
+      "sha256": "d72a5098794482fb8b9064e179715262786225ca8a27ec1c75c2e422d3300a35"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 2275,
+      "sha256": "87122e1e7caffdd6d9cb5785e8a492aeab16c4e440e6f75c0b12fb2c3e396c68"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 11559,
+      "sha256": "7cf368cc65db523504c5b0d8c2b46303e23727d9fcf4fd132642cccb4fe6276f"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 12458,
+      "sha256": "d69f4dbed5953a5b2e7b225b49538cc43a68c8ae5f42ebde916548497c5786cf"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 503,
+      "sha256": "5d4517e84972fcc0cddda6633b0ffa10c2ce21feff64ccc83393293043aaa2b1"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2302,
+      "sha256": "b0d8709c7810f3d55ef5526242e8f7986c85dc18fddcc29a7bc6c278b5f8ce5e"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 11566,
+      "sha256": "32a47debfb48bb49cac5b8eef11c7944a9be3854a55e9a86a0ceec0185b16724"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 12379,
+      "sha256": "d715d92246c00e3772ef636fe0eda2e5dd29638fccb093592d5f89d396201337"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2179,
+      "sha256": "f54d92faa9eda8658a50df7031bb729d02721c54c4c2302800a8317b66f5d384"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 685,
+      "sha256": "207c0ee49273216d140ebea154b8e6291f68a31b086880652e17903151e58795"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 3596,
+      "sha256": "2b5d6fccbf273238d6f9c6b538bd1612fcd55ebf6ed0397339d0b9422a2bf227"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 622,
+      "sha256": "709cff53e07115cc243cf319657ed1757b84ce279afaa3115899d56d0c625f88"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 625,
+      "sha256": "bea5780c53906d48aaf6694e94e6c902b7c76172a864a210864bbe4758d5c41c"
+    },
+    {
+      "path": "packet_text/HANDOFF.md",
+      "bytes": 537,
+      "sha256": "b447307cf3d5baa94af4886c789314c58ebf6900f0ec1efad565ca4dfa5c9c66"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 736,
+      "sha256": "68622f41e60806c0129af6089aa973dc38448bf647ab4bb21df81ac59f2c1dbe"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 713,
+      "sha256": "d72a5098794482fb8b9064e179715262786225ca8a27ec1c75c2e422d3300a35"
+    },
+    {
+      "path": "packet_text/REVIEW_HISTORY.md",
+      "bytes": 655,
+      "sha256": "5e1d10d7a8bb1deb75d929dab1f87c1ac4030e08f839d6b351b2a74fb8636f56"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 641,
+      "sha256": "0e0b9a811226521ba32db270d22900e7a88bd1f12f4b567bc4117f5ca2d4a802"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 12333,
+      "sha256": "9afddbcece447a4af43d25fe9a919f49ed8424f8b61608d30a1837c3ae9e5123"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ACTUAL_BINDING.json",
+      "bytes": 375,
+      "sha256": "87064d2437237ac5a313f61af8da72f568b72bbe3b068237c4864f6160c2f336"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ARCHIVE_INDEX.json",
+      "bytes": 17663,
+      "sha256": "9f2029c0d6de31a206c4dd453cd3fcbbd835c46669a05ebfb83ca731db6df1b4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 685,
+      "sha256": "207c0ee49273216d140ebea154b8e6291f68a31b086880652e17903151e58795"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/BINDING_CONTRACT.md",
+      "bytes": 3596,
+      "sha256": "2b5d6fccbf273238d6f9c6b538bd1612fcd55ebf6ed0397339d0b9422a2bf227"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/BODY_MAP.json",
+      "bytes": 1121,
+      "sha256": "8500a4ea92a5e9f25733504ccccd18eadfcc4026c35ea2a75397dd55ed69f956"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/CHECK_RECEIPTS.json",
+      "bytes": 13950,
+      "sha256": "3aaa5c096da1f916ba4a014b7d29425e7b55a1b7d808ab082e0175502ba267e4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 622,
+      "sha256": "709cff53e07115cc243cf319657ed1757b84ce279afaa3115899d56d0c625f88"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/COUNTEREXAMPLES.md",
+      "bytes": 625,
+      "sha256": "bea5780c53906d48aaf6694e94e6c902b7c76172a864a210864bbe4758d5c41c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/DEPENDENCIES.json",
+      "bytes": 4463,
+      "sha256": "a0ee2117680dbd996797a69fbb19df0cd094364f389b06e9eeee2c650611fa3e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/HANDOFF.md",
+      "bytes": 537,
+      "sha256": "b447307cf3d5baa94af4886c789314c58ebf6900f0ec1efad565ca4dfa5c9c66"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/INPUT_MANIFEST.json",
+      "bytes": 13769,
+      "sha256": "a306767655e7452cdb8b94884e38a78f6cb00974ced7e7a55bb427d53419218c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/PARENT_BINDING.json",
+      "bytes": 4685,
+      "sha256": "8493d537bb7ae2f4796339f629140b8df13d44db99754bd4de21f88a3ecb8b2e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/PR_BODY.md",
+      "bytes": 736,
+      "sha256": "68622f41e60806c0129af6089aa973dc38448bf647ab4bb21df81ac59f2c1dbe"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/PR_TITLE.txt",
+      "bytes": 90,
+      "sha256": "43ec66bc246dac28e25d7487a33a27ded759736640183baceb6796574ee46670"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "481769f173b46edafdfd6e11c3c583ff359fe963ce48c0a5e175c16aae8fa88a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/RECOVERY_SCOPE.md",
+      "bytes": 713,
+      "sha256": "d72a5098794482fb8b9064e179715262786225ca8a27ec1c75c2e422d3300a35"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/RECOVERY_SELECTION.json",
+      "bytes": 17006,
+      "sha256": "9b50ae10235673d696e35956436705064258aabab15d605d3236f200263dc174"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/REVIEW_HISTORY.md",
+      "bytes": 655,
+      "sha256": "5e1d10d7a8bb1deb75d929dab1f87c1ac4030e08f839d6b351b2a74fb8636f56"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/SOURCE_MANIFEST.json",
+      "bytes": 36736,
+      "sha256": "9e7e0250ce8aceb4805a446ca68ae15b97c38da2c4d7efdad79d4a42e984fc35"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/TRACE_GATE.md",
+      "bytes": 641,
+      "sha256": "0e0b9a811226521ba32db270d22900e7a88bd1f12f4b567bc4117f5ca2d4a802"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a.blob",
+      "bytes": 1063,
+      "sha256": "04055accf8580a34501198d0afdc9929ed84cff4082589cff43912c6a13fcf8a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/0655df53a9998bcc4d21331327134111be2c7775c7eace054b0bdca6f0c7d4f1.blob",
+      "bytes": 484,
+      "sha256": "0655df53a9998bcc4d21331327134111be2c7775c7eace054b0bdca6f0c7d4f1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/08a88b6c5a8f27cdf3f6cc62e2ad24232d592975cf4d4ab509af0045892af639.blob",
+      "bytes": 1458,
+      "sha256": "08a88b6c5a8f27cdf3f6cc62e2ad24232d592975cf4d4ab509af0045892af639"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9.blob",
+      "bytes": 17029,
+      "sha256": "0fda1e787e39eb405291055b1d92f981627a819104ca2ed8a3b8723a342ed2f9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/1a1dc0cdbc9b0a51b8f345b3a7a5e8a353375c24e536c507c495fbf25d984491.blob",
+      "bytes": 1845,
+      "sha256": "1a1dc0cdbc9b0a51b8f345b3a7a5e8a353375c24e536c507c495fbf25d984491"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/1ac34e79dc8e935e976faff9c30e6522a9789d0a60f69d7c51dffa00fb0739dc.blob",
+      "bytes": 201,
+      "sha256": "1ac34e79dc8e935e976faff9c30e6522a9789d0a60f69d7c51dffa00fb0739dc"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/270985de36fb34e6b4a91260d7a546eea7d2b859906f1464217b4e856bbb6868.blob",
+      "bytes": 3165,
+      "sha256": "270985de36fb34e6b4a91260d7a546eea7d2b859906f1464217b4e856bbb6868"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/278dc3607435a0f40acf56cb33d3a793083dac950d2631a44e194608e3846ba7.blob",
+      "bytes": 19273,
+      "sha256": "278dc3607435a0f40acf56cb33d3a793083dac950d2631a44e194608e3846ba7"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/3780da2bf52f63fd6c9972fe5392921a8cd255f01aca5cdd426be81a1433316f.blob",
+      "bytes": 3217,
+      "sha256": "3780da2bf52f63fd6c9972fe5392921a8cd255f01aca5cdd426be81a1433316f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679.blob",
+      "bytes": 215,
+      "sha256": "5491d4a68ba50bd555a6d42c438bb82df2f9639225829c30af69f6f7f5ac1679"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96.blob",
+      "bytes": 1053,
+      "sha256": "57095124c667495dbff696c517cc0da2f950725cc95b25bc5aefcd67e3127b96"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4.blob",
+      "bytes": 7070,
+      "sha256": "618e0082afc870c475736926a8e2ceb22bbdf1831acc0dbfdd5fcc32b6a9acc4"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16.blob",
+      "bytes": 2605,
+      "sha256": "6beb1dfb5028302836342c8f53c28d29b74d1e67048ef02d29e55a4e9f5c0c16"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46.blob",
+      "bytes": 2040,
+      "sha256": "76bb338ff6c3cf62ebba7d205588a970768942c184c44f7adc81c74a0140aa46"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226.blob",
+      "bytes": 1412,
+      "sha256": "775c916b371db7faf8fc5545d05ed811c45e512b671e6b11ea85eaef4bca9226"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f.blob",
+      "bytes": 1603,
+      "sha256": "7d526e7309c7676b75d492d6e7e81b3416f6f2bbc903b5f08508c146a1086e4f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/8ac690365a806f10876cd3272c9e1ad6d731f67959403a1476b441d58b39d767.blob",
+      "bytes": 11925,
+      "sha256": "8ac690365a806f10876cd3272c9e1ad6d731f67959403a1476b441d58b39d767"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/9932da872269a61dff350c846e438f9a69fae5a34694107a922a2a30afb9c55a.blob",
+      "bytes": 89,
+      "sha256": "9932da872269a61dff350c846e438f9a69fae5a34694107a922a2a30afb9c55a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc.blob",
+      "bytes": 5018,
+      "sha256": "ba8cd3012b1166f7b307722ef33ebb7955d641d9651b5f182bb49b2c3038d0cc"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6.blob",
+      "bytes": 2487,
+      "sha256": "bc6d975b98dd3c610b687ea3eb32b22f25197fe9b723047df00fdc2e5bce0fa6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c65e19954074bcae5a68a65fe4ca2fcb9f5a5166ed86d849ba0ef76ebde5e670.blob",
+      "bytes": 87,
+      "sha256": "c65e19954074bcae5a68a65fe4ca2fcb9f5a5166ed86d849ba0ef76ebde5e670"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c82e13371f9f8326b73b7c0e1e777cd7ba829a5d63e2b238b24c049cb6779d47.blob",
+      "bytes": 200,
+      "sha256": "c82e13371f9f8326b73b7c0e1e777cd7ba829a5d63e2b238b24c049cb6779d47"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/c8d7d2178e400c19429b0e0c716212bda9274eb076d2255f5e91a25caf487b18.blob",
+      "bytes": 1950,
+      "sha256": "c8d7d2178e400c19429b0e0c716212bda9274eb076d2255f5e91a25caf487b18"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5.blob",
+      "bytes": 4983,
+      "sha256": "cf182b8f14d130ff4d845e78cf986e00ff625a33037b24c655470d3393479ee5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf.blob",
+      "bytes": 563,
+      "sha256": "d0d4dc6619d9452b9b975612c973e13e3dac2faed3cdd5483801371aab7552bf"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d.blob",
+      "bytes": 2421,
+      "sha256": "ddf30e6d5ba22aec6d9984aa848a62148929959c9b566ed4cedb04d730c7b84d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e161fa0ec167b09b15690bcdc8082d43fbfa052e32e0e2086145490f8698ac56.blob",
+      "bytes": 1548,
+      "sha256": "e161fa0ec167b09b15690bcdc8082d43fbfa052e32e0e2086145490f8698ac56"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/e7a57d12e5368a35cd25e3177f82ee9e869180db91fe33b18875525a90a67572.blob",
+      "bytes": 2034,
+      "sha256": "e7a57d12e5368a35cd25e3177f82ee9e869180db91fe33b18875525a90a67572"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-bounded-slew-positive-time-compiler-20261015/source_recovery/f0c7c815f56be5a3db2aab5793830663517e6575364ec190fb0ce3c7749d4bc3.blob",
+      "bytes": 807,
+      "sha256": "f0c7c815f56be5a3db2aab5793830663517e6575364ec190fb0ce3c7749d4bc3"
+    },
+    {
+      "path": "proposal/docs/BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 56503,
+      "sha256": "671eebdd3e4e234e3fa6467cc940c28c3499311f736b95ba681613701652438a"
+    },
+    {
+      "path": "proposal/scripts/bounded_slew_positive_time_compiler_2026_10_15.py",
+      "bytes": 20509,
+      "sha256": "fe766ef2c061c93a72d694162debb58f16dfe2d3d2b74cbdc2aca707c1fe8ab9"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 5071,
+      "sha256": "7e169a8ca4f6b879731089b0bc983d4ce21f85569955555d5fbc96b3a1069f5b"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 15333,
+      "sha256": "8cbbc11b78280205a313e74c72c49b7ae1f667f2636639412481517eba105a55"
+    }
+  ]
+}

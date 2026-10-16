@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T23:22:05.527484+00:00",
+  "baseRefName": "physics-loop/toe-accuracy-scaled-compiler-20261015",
+  "headRefName": "physics-loop/toe-autonomous-compiler-composition-20261015",
+  "headRefOid": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "isDraft": false,
+  "number": 9624,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9624",
+  "tree": "3d96533adedbc3f3bba5bd129e41f9829ea8f93d",
+  "base_head": "d789fef0a544f91feceb20500a15bacc3374f08b",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 69312,
+    "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/autonomous_compiler_composition_2026_10_15.py",
+    "bytes": 44934,
+    "sha256": "1b688278d4782ce1523fba3b8e173752f4f4e0ef80af8b9690678137a69538c5"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/autonomous_compiler_composition/PR_BODY.md",
+    "bytes": 2901,
+    "sha256": "0e02e622586e329c04767b63ced59e6551af49c3e706994323b47e7650704080"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

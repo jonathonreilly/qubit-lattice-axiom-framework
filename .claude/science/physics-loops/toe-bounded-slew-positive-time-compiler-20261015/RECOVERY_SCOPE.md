@@ -1,0 +1,3 @@
+# Recovery scope
+
+The note stores the protected weak-bump proof, separate root full-U(d) variant and exposed comparison once each, byte-for-byte. Current canonical parent files remain external exact pins. Selected source/check receipts, original check captures, original/final streams, freeze/coverage metadata and root acceptance are hash-deduplicated. Historical instruction snapshots and entire upstream publication archives are not recursively copied. Source manifests retain their original references and identify their own coverage; this package does not promise recursive recovery of every older dependency. Original pre-clarification prose is retained because an actual earlier symbolic receipt names it.

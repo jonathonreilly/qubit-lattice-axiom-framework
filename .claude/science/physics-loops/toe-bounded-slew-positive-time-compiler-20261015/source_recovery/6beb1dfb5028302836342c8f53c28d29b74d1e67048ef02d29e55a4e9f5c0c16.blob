@@ -1,0 +1,57 @@
+"""Floating-point diagnostic of the ramp tangent lemma, not a compiler run."""
+import json
+import math
+import platform
+import sys
+import numpy as np
+import scipy
+from scipy.integrate import solve_ivp
+from scipy.linalg import block_diag, expm
+
+I2 = np.eye(2, dtype=complex)
+X = np.array([[0, 1], [1, 0]], dtype=complex)
+Y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+Z = np.diag([1., -1.]).astype(complex)
+I4 = np.eye(4, dtype=complex)
+swap = np.array([[1,0,0,0],[0,0,1,0],[0,1,0,0],[0,0,0,1]], dtype=complex)
+H = .31*np.kron(Z,I2)+.17*np.kron(X,X)+.23*np.kron(I2,Y)
+Rs = float(np.linalg.norm(H, 2))+.2
+HP = H+Rs*I4+.37*(I4-swap)
+A = block_diag(-1j*HP, -1j*H)
+S0 = .7
+eye = np.eye(8, dtype=complex)
+norm = lambda M: float(np.linalg.norm(M, 2))
+rows = []
+for label, port in [('plus_x',X),('minus_x',-X),('plus_y',Y),('minus_y',-Y)]:
+    C = I4+np.kron(port,I2)
+    B = block_diag(-1j*C, np.zeros((4,4), dtype=complex))
+    previous_error = None
+    for k in range(2, 10):
+        a = 2.**(-k)
+        delta = 3*a/(2*S0)
+        def rhs(s, y):
+            x = s/delta
+            u = a*(1-(3*x*x-2*x*x*x))
+            return ((A+u*B)@y.reshape(8,8)).reshape(-1)
+        solution = solve_ivp(rhs, (0,delta), eye.reshape(-1), method='DOP853', rtol=2e-13, atol=2e-14)
+        if not solution.success:
+            raise RuntimeError(solution.message)
+        D = solution.y[:,-1].reshape(8,8)
+        X_a = D@(A+a*B)@D.conj().T
+        tangent_error = norm((X_a-A)/a-B)
+        ramp_error = norm(D-expm(delta*A))
+        ramp_bound = norm(B)*a*delta/2
+        tangent_bound = delta*norm(B)*(3*norm(A)+2*a*norm(B))
+        unitarity = norm(D.conj().T@D-eye)
+        row = dict(ray=label,a=a,delta=delta,ramp_error=ramp_error,ramp_bound=ramp_bound,
+                   tangent_error=tangent_error,tangent_bound=tangent_bound,unitarity_error=unitarity,
+                   previous_over_current=None if previous_error is None else previous_error/tangent_error)
+        rows.append(row)
+        if ramp_error > ramp_bound+2e-10 or tangent_error > tangent_bound+2e-10 or unitarity > 2e-10:
+            raise AssertionError(row)
+        previous_error = tangent_error
+    if not 1.8 < rows[-1]['previous_over_current'] < 2.2:
+        raise AssertionError('Small-amplitude tangent convergence was not observed.')
+print(json.dumps(dict(scope='Floating-point finite ramp diagnostic only; no augmented certificate or compiler search executed.',
+                     python=sys.version,numpy=np.__version__,scipy=scipy.__version__,platform=platform.platform(),
+                     scalar_slew_cap=S0,rows=rows),indent=2))

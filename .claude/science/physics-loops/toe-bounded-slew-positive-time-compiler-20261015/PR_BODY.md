@@ -1,0 +1,3 @@
+The supplied finite plant and augmented polynomial certificate admit positive-time external compilation under any fixed positive amplitude and first-derivative caps, with no polynomial resource estimate. The primary protected weak-bump theorem preserves the parent scalar ledger; the root full-U(d) variant and later exposed minimum-runtime corollary remain separately attributed.
+
+This source-only draft preserves all three bodies exactly and carries source/receipt integrity tooling. Historical checks cover exact pulse/jet/budget arithmetic and a finite ramp diagnostic only. Canonical review, actual integration validation and publication outcomes must be filled from real root operations before this text becomes a PR description.

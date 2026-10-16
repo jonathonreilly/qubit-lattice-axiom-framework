@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""Exact, scoped arithmetic checks; this is not a compiler or proof checker."""
+from fractions import Fraction as F
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent
+PINS = {
+    'docs/ACCURACY_SCALED_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md':
+        'c0332b37e159ecf6aaa70143f65793ee424c3df3a77e8840df91043ddf47bde2',
+    'docs/CONDITIONED_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md':
+        'db922c9b3f67a603961f5a621a67eea7fa4894b793befbcdd3b7b034011e540a',
+}
+
+
+def assert_pinned(blob, expected):
+    actual = hashlib.sha256(blob).hexdigest()
+    if actual != expected:
+        raise ValueError(f'source mismatch: {actual} != {expected}')
+
+
+def deriv(p):
+    return [F(i) * p[i] for i in range(1, len(p))]
+
+
+def value(p, x):
+    return sum((c * x**i for i, c in enumerate(p)), F(0))
+
+
+def integral(p, moment=0):
+    return sum((c / F(i + moment + 1) for i, c in enumerate(p)), F(0))
+
+
+def poly_product(p, q):
+    result = [F(0)] * (len(p) + len(q) - 1)
+    for i, a in enumerate(p):
+        for j, b in enumerate(q):
+            result[i+j] += a*b
+    return result
+
+
+def boundary_conditions(p):
+    dp = deriv(p)
+    return value(p, F(0)) == value(p, F(1)) == value(dp, F(0)) == value(dp, F(1)) == 0
+
+
+def word_product(a, b, degree=2):
+    result = {}
+    for wa, ca in a.items():
+        for wb, cb in b.items():
+            word = wa + wb
+            if len(word) <= degree:
+                result[word] = result.get(word, F(0)) + ca*cb
+    return {w: c for w, c in result.items() if c}
+
+
+def exponential_jet(letter, sign):
+    return {(): F(1), (letter,): F(sign), (letter, letter): F(1, 2)}
+
+
+def commutator_jet(first, second):
+    result = {(): F(1)}
+    for letter, sign in [(first, 1), (second, 1), (first, -1), (second, -1)]:
+        result = word_product(result, exponential_jet(letter, sign))
+    return result
+
+
+def main():
+    events = []
+    for rel, pin in PINS.items():
+        blob = (ROOT / 'source_at_launch' / rel).read_bytes()
+        assert_pinned(blob, pin)
+        try:
+            assert_pinned(blob + b'\n', pin)
+        except ValueError:
+            tamper_rejected = True
+        else:
+            tamper_rejected = False
+        assert tamper_rejected
+        events.append({'check': 'source_pin_and_in_memory_tamper_rejection', 'path': rel, 'sha256': pin})
+
+    # This coefficient construction checks the displayed factored pulse separately.
+    p = [F(0), F(0), F(16), F(-32), F(16)]
+    assert p == [16*c for c in poly_product([F(0), F(0), F(1)], [F(1), F(-2), F(1)])]
+    assert boundary_conditions(p)
+    dp_factored = [32*c for c in poly_product([F(0), F(1), F(-1)], [F(1), F(-2)])]
+    assert deriv(p) == dp_factored
+    assert integral(p) == F(8,15)
+    assert integral(p, 1) == F(4,15)
+    assert 2 * integral(p, 1) == integral(p)
+    # 4 x(1-x) = 1-(2x-1)^2 on [0,1], hence 0 <= psi <= 1.
+    four_x_one_minus_x = poly_product([F(0), F(4)], [F(1), F(-1)])
+    squared_two_x_minus_one = poly_product([F(-1), F(2)], [F(-1), F(2)])
+    one_minus_square = [-c for c in squared_two_x_minus_one]
+    one_minus_square[0] += 1
+    assert four_x_one_minus_x == one_minus_square
+    # |32 x(1-x)(1-2x)| <= 32*(1/4)*1 = 8 on [0,1].
+    assert F(32)*F(1,4) == F(8)
+    events.append({'check': 'pulse_polynomial', 'area': str(integral(p)),
+                   'first_moment': str(integral(p, 1)),
+                   'endpoint_value_and_derivative': 'all zero',
+                   'coefficient_slew_majorant': '8 kappa'})
+
+    jet = commutator_jet('C', 'D')
+    expected = {(): F(1), ('C', 'D'): F(1), ('D', 'C'): F(-1)}
+    assert jet == expected
+    events.append({'check': 'noncommuting_degree_two_jet', 'value': 'I + u^2(CD-DC)'})
+
+    endpoint = F(2)*F(1,8)
+    window = calibration = F(1,64)
+    full_trace = 2*(endpoint + window + calibration)
+    assert full_trace == F(9,16) <= 1
+    assert endpoint + window == F(17,64)
+    events.append({'check': 'normalized_error_budget', 'coherent_nominal': '17/64',
+                   'full_unhalved_trace': str(full_trace)})
+
+    # Deliberate defects are evaluated as defects, never counted as proof outcomes.
+    mutations = {
+        'quadratic_pulse_has_nonzero_boundary_derivative': not boundary_conditions([F(0), F(4), F(-4)]),
+        'incorrect_area_one_half_rejected': integral(p) != F(1,2),
+        'reversed_commutator_sign_rejected': commutator_jet('D', 'C') != expected,
+        'omitted_trace_factor_two_rejected': endpoint + window + calibration != full_trace,
+    }
+    assert all(mutations.values())
+    print(json.dumps({'scope': 'Exact polynomial, noncommuting jet, budget arithmetic and source integrity only',
+                      'events': events, 'deliberate_defects_detected': mutations,
+                      'not_checked': ['general reachable-closure theorem', 'compiler execution',
+                                      'physical realization', 'formal proof', 'audit status']}, indent=2))
+
+
+if __name__ == '__main__':
+    main()

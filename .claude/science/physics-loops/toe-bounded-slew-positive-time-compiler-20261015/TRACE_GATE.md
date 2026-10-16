@@ -1,0 +1,3 @@
+# Trace and execution boundary
+
+Primary outputs include the complete plant and arbitrary passive reference, actual returned T and chronological exp(-isH) W exp(-iTH). SU(d) and full-U(d) coherent phases remain distinct. One E_int<=epsilon/64 plus endpoint/window allocations yields 9epsilon/16 unhalved trace error under stated premises. Historical symbolic checks and the finite ramp diagnostic have narrow recorded scopes. The proposed 60-second integrity primary performs source/receipt validation only and remains unexecuted. Future integration, cache, mutations, graph/pipeline and independent retained audit are root responsibilities.

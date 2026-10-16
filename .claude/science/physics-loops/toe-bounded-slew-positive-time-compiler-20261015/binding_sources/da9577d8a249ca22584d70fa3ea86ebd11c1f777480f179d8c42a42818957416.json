@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-16T00:20:30.227649+00:00",
+  "refs": {
+    "HEAD": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_slew_publication_binding/stdout",
+    "bytes": 21760,
+    "sha256": "91c7ad105285fe5b12bb99f8b3bf4a14734fe857d0881b8aaaba2679cc0350e4"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_slew_publication_binding/EXECUTION.json",
+      "bytes": 1222,
+      "sha256": "2f8eec322d80768e59e47f3232f83d40a7cd0eb3c63e1fd02b22545654ec161c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_slew_publication_binding/EXECUTION.json",
+      "bytes": 1291,
+      "sha256": "9b58b1329d4eca12d802151ecd10f0b536fee45b665f97626386917c3d2d5ad1"
+    }
+  ],
+  "open_count": 56,
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "physics-loop/toe-accuracy-scaled-compiler-20261015",
+        "headRefName": "physics-loop/toe-autonomous-compiler-composition-20261015",
+        "headRefOid": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+        "isDraft": false,
+        "number": 9624,
+        "title": "[physics-loop] autonomous-compiler-composition: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9624"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/rules-hygiene-20261015",
+        "headRefOid": "9a1da8d7c72501f4609f547ad6384856cbccdf9a",
+        "isDraft": false,
+        "number": 9625,
+        "title": "hygiene: archive retired autopilot protocols and simplify agent rules",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9625"
+      },
+      {
+        "baseRefName": "ai/execution",
+        "headRefName": "claude/ai-execution-agents-simplify",
+        "headRefOid": "c631acc3aa63412fa898efbc38eb93b120359f46",
+        "isDraft": false,
+        "number": 9626,
+        "title": "planning: simplify ai/execution AGENTS.md to dispatch-specific rules",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9626"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "scope": "Source and open-PR identity observation only; no scientific verification."
+}

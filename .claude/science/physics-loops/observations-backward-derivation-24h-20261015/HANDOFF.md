@@ -158,3 +158,37 @@ losslessly stored in attempt02_changes.json to preserve significant context
 spaces without violating the pre-commit whitespace check. The older report and
 manifest remain in serialization_prior. This changes no scientific conclusion.
 Next remains first milestone packaging and then coupled fixed-action response.
+
+## Canonical integration checkpoint 2026-10-16T00:20:42.283487+00:00
+
+Root authored the self-contained canonical note and primary/helper computation.
+The current completed run has 52 controls and seven scratch mutation detections.
+Final prose/metadata edits require a fresh canonical cache and mutation pin before
+publication. Two symbolic-domain operational failures are preserved with their
+exact sources and nonzero envelopes; neither counts as a scientific failure.
+A focused integration checker is active, with no replacement author.
+
+Publication will use a standalone selected-file branch from refreshed main,
+`codex/scalar-observation-inverse-20261016`, while the full campaign checkpoint
+branch preserves all exploratory histories. No old script/stdout is needed by
+the canonical scientific claim. All older campaigns remain stopped.
+
+## Current resume point: canonical integration ready (2026-10-16T00:38:32.287791+00:00)
+
+The current canonical note and primary/helper are bound by the final independent
+integration manifest. Root verified its 45 files and all canonical/copy identities.
+The primary has 56 passing controls and a fresh 120-second cache; eight actual
+scratch mutations fail the intended assertions. The checker independently verifies
+29 mathematical/source controls and reproduces the exact primary's 56 controls.
+These counts are separate and synthetic. Its symbolic sign-guard defect was
+repaired, and the real failed attempts and source changes are preserved.
+
+The standalone 59-file milestone tree is based on main bbada1f, excludes earlier
+exploratory scripts as dependencies, and has a one-node-only citation manifest
+delta. All eight Python files compile, 33 JSON files parse, six local links resolve
+in that tree, vocabulary has zero violations, and the diff whitespace check passes.
+Read MILESTONE_REVIEW.md for the section-by-section author preparation record.
+The shared integrated-main landing pass is still pending. Next is PR publication
+and attachment, followed by fixed-action coupled response with physical forcing
+and readout specified. No checker or detached author remains active; all older
+campaigns remain stopped. The fixed deadline and empirical limits are unchanged.

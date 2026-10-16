@@ -1,0 +1,199 @@
+{
+  "kind": "scratch-copy load-bearing fault injection; original sources untouched",
+  "input_sha256": {
+    "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+    "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44",
+    "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768"
+  },
+  "recipe": "For each exact single replacement below, copy only the pinned runner, helper and note into a fresh temporary repo-shaped directory; run the copied primary runner with Python and a 120s subprocess timeout; require exit != 0, parsed passed=false, and at least one failed assertion in the named family. A crash or timeout alone is not a detected mutation. No original source or canonical cache is changed.",
+  "mutations": [
+    {
+      "name": "angular curvature sign",
+      "family": "vacuum_geometry",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "+ bp * (ellp + 1 / r) / 2",
+      "new": "- bp * (ellp + 1 / r) / 2",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8706047078594565,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"general lower-derivative transport\",\n    \"dust metric compared with Cartesian curvature: angular\",\n    \"separate constant branch scalar slope\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "general lower-derivative transport",
+        "dust metric compared with Cartesian curvature: angular",
+        "separate constant branch scalar slope"
+      ],
+      "target_family_failures": [
+        "general lower-derivative transport",
+        "dust metric compared with Cartesian curvature: angular"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "38e9efb86a67e7151384fcd5ae16a60348e6f2be083903306b1a58448b621ce6"
+    },
+    {
+      "name": "observation numerator power",
+      "family": "observation_pullback",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "J = R**4 * P**2 / (q * r * D)",
+      "new": "J = R**2 * P**2 / (q * r * D)",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8706610002554953,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"general observation pullback from angular equation\",\n    \"nonlinear-label power metric\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "general observation pullback from angular equation",
+        "nonlinear-label power metric"
+      ],
+      "target_family_failures": [
+        "general observation pullback from angular equation",
+        "nonlinear-label power metric"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "4c1319a4222fcf746e3fbcb36175d3b29e835d075ecfd04370e7a596eba561b9"
+    },
+    {
+      "name": "omit shared clock contribution",
+      "family": "primitive_error",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "eD = 2 * R * eR +",
+      "new": "eD = 0 * R * eR +",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8845351249910891,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"shared clock dependence near positive D margin\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "shared clock dependence near positive D margin"
+      ],
+      "target_family_failures": [
+        "shared clock dependence near positive D margin"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "a7aa8590d37cd947eeb151495334801e0756d30bdaad55aa56f9eb8206963982"
+    },
+    {
+      "name": "omit squared bin increment",
+      "family": "radar_bins",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "return sum(x**2 / h",
+      "new": "return sum(x / h",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8656520838849247,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"exact bin refinement surplus\",\n    \"bin equality profile S=amplitude*r\",\n    \"unfactored positive bin integral\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "exact bin refinement surplus",
+        "bin equality profile S=amplitude*r",
+        "unfactored positive bin integral"
+      ],
+      "target_family_failures": [
+        "exact bin refinement surplus",
+        "bin equality profile S=amplitude*r",
+        "unfactored positive bin integral"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "0021e0a028e22117047fac14ea4e3f4f15826b23f2fbe470389a72f55044430a"
+    },
+    {
+      "name": "material kinetic coefficient",
+      "family": "material_solution",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "Z = 3 * k / (rho - 2 * k * field)",
+      "new": "Z = 2 * k / (rho - 2 * k * field)",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8670569593086839,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"regular-center full time equation\",\n    \"regular-center full radial equation\",\n    \"regular-center full angular equation\",\n    \"regular-center full scalar equation\",\n    \"Einstein kinetic sign expression\",\n    \"potential curvature ratio only\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "regular-center full time equation",
+        "regular-center full radial equation",
+        "regular-center full angular equation",
+        "regular-center full scalar equation",
+        "Einstein kinetic sign expression",
+        "potential curvature ratio only"
+      ],
+      "target_family_failures": [
+        "regular-center full time equation",
+        "regular-center full radial equation",
+        "regular-center full angular equation",
+        "regular-center full scalar equation",
+        "Einstein kinetic sign expression",
+        "potential curvature ratio only"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "d63ed1eeb42c88b8ad81362186ad212b289c09eb9c896287e1333890f51694ff"
+    },
+    {
+      "name": "dust normalization sign",
+      "family": "material_action",
+      "path": "scripts/scalar_observation_inverse.py",
+      "old": "X = -Tt**2 / N0**2 + Bd * Tr**2",
+      "new": "X = Tt**2 / N0**2 + Bd * Tr**2",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8567180843092501,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"dust multiplier constraint\",\n    \"dust temporal stress\",\n    \"dust radial stress\",\n    \"dust angular stress\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "dust multiplier constraint",
+        "dust temporal stress",
+        "dust radial stress",
+        "dust angular stress"
+      ],
+      "target_family_failures": [
+        "dust multiplier constraint",
+        "dust temporal stress",
+        "dust radial stress",
+        "dust angular stress"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "6fbbc44aa7d239350a869c5a0b64c3af5afc21e7edc9e793d141a501c0defc43"
+    },
+    {
+      "name": "sphere profile exponent",
+      "family": "sphere_domain",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "integration_constant / s.cos(s.sqrt(k) * chi)**2",
+      "new": "integration_constant / s.cos(s.sqrt(k) * chi)**4",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8652236247435212,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"undivided sphere transport\",\n    \"equator divergent coefficient\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "undivided sphere transport",
+        "equator divergent coefficient"
+      ],
+      "target_family_failures": [
+        "undivided sphere transport",
+        "equator divergent coefficient"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "b7b7d8a975156ddb57aeb721cef6d64f7e5c09b2a29ac2158144cac025b9c6d3"
+    },
+    {
+      "name": "accept negative bin weight",
+      "family": "radar_bins",
+      "path": "scripts/scalar_observation_inverse_math.py",
+      "old": "if not positive:",
+      "new": "if not positive and h != -1:",
+      "timeout_sec": 120,
+      "elapsed_sec": 0.8540022079832852,
+      "exit_code": 1,
+      "stdout": "{\n  \"checks\": 56,\n  \"failures\": [\n    \"invalid or uncertified bin sign rejected: -1\"\n  ],\n  \"passed\": false,\n  \"receipt\": \"outputs/scalar_observation_inverse.json\"\n}\n",
+      "stderr": "",
+      "failures": [
+        "invalid or uncertified bin sign rejected: -1"
+      ],
+      "target_family_failures": [
+        "invalid or uncertified bin sign rejected: -1"
+      ],
+      "detected_by_checks": true,
+      "mutated_sha256": "580d2b83e38863212ceb2014483b131a87f34ba40c9f11d8fe4838b5d4f0881d"
+    }
+  ],
+  "passed": true
+}

@@ -83,3 +83,18 @@ original bytes losslessly in JSON. Root verified the decoded original SHA-256
 and all 19 entries in the updated manifest. Earlier report/manifest records are
 preserved under serialization_prior. No source, runner or scientific result
 changed, and no scientific test was repeated. No whitespace exemption was added.
+
+Canonical integration completed at 2026-10-16T00:38:32.287791+00:00. The final source-bound independent
+report is independent_integration/INDEPENDENT_CHECK.md, with 45 verified manifest
+entries. Its 29 current mathematical checks and separate 56-control exact-byte
+reproduction have zero failures. Root's canonical run has 56 controls and eight
+successfully detected scratch mutations. Historical runs are not added to these
+counts. The checker found a real symbolic sign-guard interface defect; root fixed
+it and the original expression now passes. Source-movement failures and exact
+old programs remain recorded. This is a focused check, not an audit verdict.
+
+MILESTONE_REVIEW.md records sections 1–12 and the checked selected-tree packet.
+The canonical node extracts with bounded_theorem author hint, primary and helper;
+its fresh cache binds final input bytes. The generated manifest adds only that
+node. Final commit and PR publication remain to complete; shared integrated-main
+landing validation remains pending.

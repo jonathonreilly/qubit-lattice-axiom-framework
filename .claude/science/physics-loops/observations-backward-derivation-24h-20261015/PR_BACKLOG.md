@@ -1,11 +1,13 @@
 # Delivery
 
-No new PR yet. The inverse, primitive bounds, sourced material family and
-separate boundary probe now have scoped focused independent checks.
-The canonical source note, reproducible runner/cache, abstract-core extraction
-and milestone conformance gates remain to package. This checkpoint will be
-committed and pushed to codex/observations-backward-derivation-20261015 without
-forcing an incomplete PR. Existing science PRs remain unmerged.
+The first standalone scientific milestone is ready for publication on
+`codex/scalar-observation-inverse-20261016`, based on current main bbada1f.
+It contains the conditional observation inverse, deterministic input bounds,
+sourced constructions, canonical runner/cache and focused independent evidence.
+The full exploratory history remains on the separate campaign checkpoint branch.
 
-At the first review-ready milestone, open and verify its PR, record the exact
-base/head, and attach it to this chat. No network/auth delivery failure remains.
+Root must now commit and push the checkpoint, commit and push the selected tree,
+open and verify its PR, record exact base/head, and attach it to this chat.
+No PR exists yet. No science will be merged and the shared integrated-main
+landing validation is pending. Next scientific block is a fixed-action coupled
+response with justified forcing/readout; no independent data has been opened.

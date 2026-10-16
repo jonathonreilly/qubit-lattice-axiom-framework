@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "first_milestone_packaging",
+  "phase": "first_milestone_ready_to_publish",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-15T23:58:08.316445+00:00",
+  "updated_at": "2026-10-16T00:38:32.287791+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Package the first coherent milestone from the checked inverse, primitive-input bounds and sourced material/boundary diagnostics: self-contained canonical note, declared-input primary runner with canonical cache, exact dependency closure and applicable conformance checks, then open/verify/attach its PR. In parallel scientific planning, identify a coupled response observable with fixed action parameters and justified preparation/readout; do not infer a physical mass from Vsecond/Z or adopt the hypothetical global geometry as observed.",
+  "next_action": "Publish and attach the first coherent standalone milestone PR from current main after final selected-tree checks; then derive coupled scalar/metric/material response with action parameters fixed and justify a physical forcing/readout. Preserve all histories on the checkpoint branch.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -62,13 +62,14 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-15T23:30:18.932733+00:00",
+      "time": "2026-10-16T00:00:53+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 54,
-      "new_pr": 9624,
-      "new_head": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
-      "new_note_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
-      "scope": "Latest compact metadata and declared interface read; no full mathematical check or dependency adoption. Last complete path inventory remains the prior 53-PR snapshot."
+      "open_pr_count": 56,
+      "new_prs": [
+        9625,
+        9626
+      ],
+      "scope": "Compact metadata and both new governance PR bodies/paths read; unmerged rules not adopted. Last complete full path inventory remains 53-PR snapshot."
     }
   },
   "first_block_files": [
@@ -86,32 +87,38 @@
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "All three scoped mathematical blocks have completed focused independent checks. First milestone canonical packaging and conformance remain; no PR created yet.",
+  "milestone_status": "Canonical source checked on final bytes: 56 controls, eight detected scratch mutations; 29 independent mathematical checks and separate 56-control reproduction. Final standalone selected tree has 59 files; PR publication is next.",
   "checkpoint": {
-    "time": "2026-10-15T23:58:08.316445+00:00",
-    "lock": {
-      "expires_at": "2026-10-16T00:49:24.399482+00:00",
-      "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-      "owner": "direct-author-observations-backward-derivation",
-      "pid": 37490,
-      "purpose": "observations-backward-derivation-24h-20261015",
-      "started_at": "2026-10-15T23:49:24.399482+00:00"
-    },
+    "time": "2026-10-16T00:38:32.287791+00:00",
     "direct_author_only": true,
-    "owned_jobs": [],
-    "artifact_format_recovery": "Exact unified-diff bytes encoded losslessly in JSON after a pre-commit whitespace rejection; no science source/output changes or scientific rerun."
+    "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+    "checkpoint_scope": "final canonical milestone evidence, packaging and publication",
+    "failures": [
+      "symbolic min ordering in first canonical run",
+      "unordered symbolic endpoints in second canonical run",
+      "unfactored positive symbolic integral rejected by helper; independently found and repaired",
+      "independent source-binding failure on metadata edit; preserved before final rerun"
+    ],
+    "failure_evidence": [
+      "outputs/scalar_observation_inverse_attempt01.json",
+      "outputs/scalar_observation_inverse_attempt02.json",
+      "independent_integration/SESSION_FAILURES.md"
+    ],
+    "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-15T23:06:12.435032+00:00",
-    "commit": "22e0f18e6fc133c4f8b7db1e20d31fbc25e2f694",
+    "checked_at": "2026-10-15T23:58:49.714657+00:00",
+    "commit": "74f9132b33a259a01a950f5928f154c71519cbf3",
     "branch": "codex/observations-backward-derivation-20261015",
     "remote_refs": {
-      "refs/heads/codex/observations-backward-derivation-20261015": "22e0f18e6fc133c4f8b7db1e20d31fbc25e2f694",
+      "refs/heads/codex/observations-backward-derivation-20261015": "74f9132b33a259a01a950f5928f154c71519cbf3",
       "refs/heads/main": "bbada1fe09b2d10d610560864d86b68c24a59713"
     },
     "worktree_clean": true,
+    "full_branch_diff_check": "passed",
+    "conflicting_owned_processes": [],
     "no_pr_created": true,
-    "scope": "Personal-author campaign checkpoint; first milestone packaging is still pending."
+    "scope": "Personal-author research checkpoint; first canonical milestone packaging and conformance pending."
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -186,5 +193,34 @@
       "empirical_validation": false,
       "not_formal_audit": true
     }
+  },
+  "milestone_review_branch": "codex/scalar-observation-inverse-20261016",
+  "milestone_publication_strategy": "Standalone selected-file commit from refreshed main; no rewrite or deletion of campaign checkpoint history, and no dependency on excluded archived scripts.",
+  "independent_integration_check": {
+    "status": "completed; no remaining mathematical discrepancy within stated hypotheses",
+    "agent": "/root/common_action_check",
+    "report": "independent_integration/INDEPENDENT_CHECK.md",
+    "report_sha256": "8efa8c5f0cf0e53b549dd32c6446b47a4c8f4f11e4050b9cae5c2b172f2561b9",
+    "manifest_sha256": "c49cdadc68d4da1a9e6c4b0ccb1d8613efb386028561ce9db8dcfa5cdb704add",
+    "manifest_entries_verified": 45,
+    "independent_checks": 29,
+    "primary_reproduction_checks": 56,
+    "failures": 0,
+    "canonical_sources": {
+      "docs/SCALAR_OBSERVATION_INVERSE_AND_INPUT_BOUNDS_NOTE_2026-10-16.md": "23185fcfd16a9f762a9d810efb843ed178e5a749e7dba73dfcfa9726c745f768",
+      "scripts/scalar_observation_inverse.py": "d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405",
+      "scripts/scalar_observation_inverse_math.py": "6c363eb9087e84f932c5ec12964257cb92470daaa51b107f4f0c0d35a2b30c44"
+    },
+    "empirical_validation": false,
+    "not_formal_audit": true
+  },
+  "canonical_computation": {
+    "primary": "scripts/scalar_observation_inverse.py",
+    "controls": 56,
+    "failures": 0,
+    "scratch_mutations_detected": 8,
+    "canonical_cache_status": "fresh",
+    "timeout_seconds": 120,
+    "empirical_validation": false
   }
 }

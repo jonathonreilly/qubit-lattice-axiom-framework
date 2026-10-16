@@ -1,0 +1,22 @@
+PASS: helper Einstein tensor compared with full four-dimensional curvature
+PASS: transport denominator is the actual angular-temporal Hessian difference
+PASS: all metric equations for independent non-power reconstruction
+PASS: direct scalar equation for independent non-power reconstruction
+PASS: non-power transport from independently computed curvature
+PASS: primitive density with arbitrary light speed
+PASS: simultaneous orbit-rate/light-speed unit conversion
+PASS: endpoint multiplicative ratio
+PASS: independent derivative envelope coefficient: r
+PASS: independent derivative envelope coefficient: R
+PASS: independent derivative envelope coefficient: O
+PASS: independent derivative envelope coefficient: q
+PASS: independent derivative envelope coefficient: P
+PASS: pointwise completed-square identity for radar bins
+PASS: bin helper reaches equality for actual integrated profile
+PASS: dust metric equations from independently computed full curvature
+PASS: dust scalar equation from independent curvature and Hessian
+PASS: constant branch scalar slope uses independently computed curvature
+PASS: restored reference length in power-family potential ratio
+PASS: all power-family equations with reference length restored: exponent 1
+PASS: all power-family equations with reference length restored: exponent 2
+{"pass": 29, "fail": 0, "source_moved": false}

@@ -1,0 +1,24 @@
+PASS: helper Einstein tensor compared with full four-dimensional curvature
+PASS: transport denominator is the actual angular-temporal Hessian difference
+PASS: all metric equations for independent non-power reconstruction
+PASS: direct scalar equation for independent non-power reconstruction
+PASS: non-power transport from independently computed curvature
+PASS: primitive density with arbitrary light speed
+PASS: simultaneous orbit-rate/light-speed unit conversion
+PASS: endpoint multiplicative ratio
+PASS: independent derivative envelope coefficient: r
+PASS: independent derivative envelope coefficient: R
+PASS: independent derivative envelope coefficient: O
+PASS: independent derivative envelope coefficient: q
+PASS: independent derivative envelope coefficient: P
+PASS: pointwise completed-square identity for radar bins
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_integration/check_integrated_math.py", line 139, in <module>
+    check("bin helper reaches equality for actual integrated profile",weighted-author.bin_lower_bound([increment],[inverse_weight]))
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/scripts/scalar_observation_inverse_math.py", line 64, in bin_lower_bound
+    if any(h <= 0 for h in inverse_weight_integrals):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/core/relational.py", line 519, in __bool__
+    raise TypeError(
+TypeError: cannot determine truth value of Relational: -aa**2/2 + (aa + width)**2/2 <= 0

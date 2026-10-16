@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/scalar_observation_inverse.py
+runner_sha256: d4cda09d0fd70b58d998783b8951c6f7596a2bc44909b0003c3679f7ae5d8405
+input_fingerprint_sha256: 8baa76b7d5aa9b24dec24a0531092987efbe6e50277faf17df059aa45edb8f48
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.00
+status: ok
+----- stdout -----
+{
+  "checks": 56,
+  "failures": [],
+  "passed": true,
+  "receipt": "outputs/scalar_observation_inverse.json"
+}
+
+----- stderr -----
+

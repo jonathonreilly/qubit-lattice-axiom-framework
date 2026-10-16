@@ -127,6 +127,27 @@ loop pack):
 
 All moving solutions found had numerically zero three-winding.
 
+## Range two per axis under O (evidence, not proof)
+
+On the 125-point stencil (hops up to two along each axis, products over
+axes) the O-covariant families have 10 invariant scalars and 15 equivariant
+vectors; the identity f^2 + |g|^2 = 1 gives 149 coefficient equations. An
+exact Groebner computation did not finish within 35 minutes and is not
+claimed. Numerically:
+
+- with the motion coefficients bounded below by sum b^2 >= delta, the best
+  residual over 30–1500 starts scales like delta^2 for small delta
+  (9.8e-6 at 0.05, 1.6e-4 at 0.2): the quartic valley of the constant walk,
+  not a family of moving solutions;
+- for delta >= 0.5 the searches converge to one interior local minimum
+  (sum b^2 = 3.09, max |g| = 0.999) with residual 4.57e-4 and pointwise
+  unitarity defect 1.7e-3; Levenberg–Marquardt polishing leaves it there
+  with gradient norm 3e-13 and a nonsingular Jacobian (smallest singular
+  value 2.8e-3). It is an isolated near-miss, not an exact walk.
+
+No moving O-covariant range-two walk was found. This is search evidence; a
+general theorem for every finite range remains open.
+
 ## What this does not do
 
 - It does not classify walks with hops beyond the 27-point cell. A

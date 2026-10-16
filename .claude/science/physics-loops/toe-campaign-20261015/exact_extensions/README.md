@@ -33,3 +33,17 @@
   branch has 67 free unknowns and 4881 equations, too large to close in the
   campaign window. Range four is therefore not claimed; the linear stage is
   evidence only.
+- **Converter bug, found and fixed (2026-10-16 21:35Z).** `tosing_branch.py`
+  renamed free unknowns to real symbols `y0, y1, ...` by sequential
+  substitution. When the free unknowns were themselves named `x_i, y_i`
+  (real), as in the twisted-pair branches, the renaming overwrote variables.
+  It now uses fresh names `zz_i` with simultaneous substitution, and passes a
+  self-test: the converted ideal vanishes at the constant walk.
+  - **Affected:** only the twisted-pair (E1/2 + E5/2) mod-p runs. Their
+    unit-ideal output was wrong and is discarded; they are being rerun.
+  - **Unaffected, with reasons:**
+    - range three: its unknowns are named `x_i` only, so there is no
+      collision;
+    - spin 3/2: it used `tosing_alg.py`, whose new symbols are non-real and
+      distinct from the original real `y_i`;
+    - the range-two validation reproduced the sympy result.

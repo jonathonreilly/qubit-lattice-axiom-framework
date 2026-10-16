@@ -33,7 +33,11 @@ blocks:
     result: "positive order-blind rules: consistent finite laws -> one record field; full conditionals = rule (static = formation); 1-dependent; no LRO, power laws or pinch points"
     prior_art_note: "iid-priority (random order) decay is standard (Penrose-Sudbury decreasing paths; cited in the 2026-09-07 priority note); not claimed"
   B3-larger-site-covariant-motion:
-    status: in_progress
+    status: delivered_to_branch
+    note: docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md
+    runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py (TOTAL PASS=11)
+    result: "two-qubit site (flavor x spin, cube on spin): exact O-covariant moving cell walks exist; Clifford family f + i h.tau_perp + i tau3 g.sigma classified by Gram criterion G(b) >= 0 rank <= 3; explicit algebraic member: one massless isotropic Dirac cone at k=0 (speed 0.914), seven doublers gapped 2.20-2.31 rad"
+    pending: ["independent check (fresh agent, launched 03:50Z)", "universality: are all two-qubit O-covariant cell walks Clifford-form up to flavor gauge? (collect2q + clifford_test)"]
     question: "does a two-qubit site (fork 4, M4(C)) or spin-3/2 coin admit an exactly O-covariant moving cell walk?"
     so_far:
       - "spin-3/2 (irreducible 4-dim rep of 2O): 12 starts polished to positive local minima (2.4e-3 .. 1.6e-2); none moving"

@@ -1,7 +1,7 @@
 ---
 claim_id: two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation). A one-qubit walk with sublattice-dependent coefficients (staggering) folds into this class with an extra twist symmetry and is then frozen (exact within the Clifford class; no staggered moving walk found numerically)."
+claim_scope: "Conditional on a two-qubit site C^2 (flavor) (x) C^2 (spin) with the proper cubic rotations acting as 1 (x) D(R) (outside the Qubit axiom's one-site algebra M_2(C); the parked M_4(C) fork is not adopted). Exact: walks U = f + i(h1 tau1 + h2 tau2) + i tau3 (x) g.sigma on the 27-point cell, with f, h1, h2 O-invariant and g O-equivariant, are exactly O-covariant, and are unitary iff f^2 + h1^2 + h2^2 + |g|^2 = 1; writing g = sum b_j v_j, this holds iff the uniquely determined Gram matrix G(b) is positive semidefinite of rank <= 3; an explicit algebraic b* satisfies det G(b*) = 0 with the other eigenvalues positive, so moving O-covariant one-tick walks exist on a two-qubit site. Exact: the cone speed s = b0 + 2 b1 + b2 obeys s^2 <= 1 and the axis doublers sit at quasienergy 2 arcsin|s|, so doubler-free on the axes iff s < 1; the light-speed member is unique up to sign, b_gold = ((9 sqrt5 - 5)/38, (5 sqrt5 - 7)/19, (71 - 29 sqrt5)/38), with f(t,0,0) = cos t and pi-mode doublers; a walk commuting with the chirality tau3 (x) 1 splits into two one-qubit covariant cell walks and is frozen, so moving covariant cell walks must break chirality. Numerical: the walk built from b* is unitary to 1e-15, has a single massless isotropic Dirac cone at k = 0 (speed 0.914) and gapped doublers at the seven other time-reversal-invariant momenta (gaps 2.20-2.31 rad); no other band touching on a 40^3 grid. Searches found no moving walk for the irreducible 4-dimensional coin (spin 3/2 = E (x) spin 1/2). Within the family nearest-neighbour-only walks are impossible (moving needs corner hops, b2 != 0); isolated rank-two members with h2 = 0 exist at small cone speed (independent Groebner computation). A one-qubit walk with sublattice-dependent coefficients (staggering) folds into this class with an extra twist symmetry and is then frozen (exact within the Clifford class; no staggered moving walk found numerically). Exact (Theorem 7): the massless member of each G(b) has cos omega = phi0^T G(b) phi(k); its k^4 cubic anisotropy is -s (b0 - b1 - 2 b2)/3 sum k^4 and vanishes iff b0 = b1 + 2 b2; there omega^2 = s^2|k|^2 - s^2(1 - s^2)|k|^4/12 + O(k^6) with an unavoidable k^6 anisotropy -(s^2/360)|k|^2 sum k^4, and |s| <= sqrt(2/3) with equality at an explicit rank-three member over Q(sqrt6, sqrt15) (numerically doubler-free)."
 upstream_dependencies:
   - minimal_axioms
   - cubic_covariance_freezes_a_one_qubit_tick_cell_classification_bounded_theorem_note_2026-10-16
@@ -65,6 +65,15 @@ forced Dirac structure.
    each block is a one-qubit O-covariant cell walk, hence constant by the
    companion note. Moving covariant matter on the cell must break chirality;
    the h terms are forced, not chosen.
+7. **Cubic anisotropy can be cancelled at order k^4, but only below speed
+   sqrt(2/3), and never at order k^6.** The massless member of each G(b) has
+   cos omega = phi0^T G(b) phi(k), and its k^4 anisotropy is
+   -s (b_0 - b_1 - 2 b_2)/3 times sum k_a^4. On the plane b_0 = b_1 + 2 b_2 the
+   dispersion through order k^4 depends on the speed alone,
+   omega^2 = s^2 |k|^2 - s^2 (1 - s^2) |k|^4 / 12, and the speed obeys
+   s^2 <= 2/3, with equality only at an explicit member b_iso over
+   Q(sqrt 6, sqrt 15). The k^6 anisotropy -(s^2/360) |k|^2 sum k_a^4 never
+   vanishes for a moving walk. Light speed and k^4 isotropy exclude each other.
 
 ## Premises and declared objects
 
@@ -157,6 +166,65 @@ companion note, whose leading correction is linear and handed
 (-n1 n2 n3 |k|^2). That cubic symmetry pushes lattice anisotropy to
 O(a^2) is standard; the new point is the contrast within these tick laws.
 
+## Theorem 7 — isotropy at order k^4 and the sqrt(2/3) bound
+
+*Massless dispersion.* At k = 0, g = 0 and the Gram identity give
+phi0^T G phi0 = 1 with phi0 = phi(0) = (1, 3, 3, 1). A member is massless at
+k = 0 (U(0) = +-1) iff h(0) = 0 and f(0) = +-1. Writing f = a.phi and
+h_i = c_i.phi with G = a a^T + c_1 c_1^T + c_2 c_2^T, this means G phi0 = +-a.
+So the massless member of each G(b) is unique up to sign, with a = G phi0.
+It exists for every admissible b, because G - G phi0 phi0^T G is positive
+semidefinite, annihilates phi0 and has rank at most 2. Its bands are
+
+    cos omega(k) = phi0^T G(b) phi(k).
+
+*Expansion.* With s = b_0 + 2 b_1 + b_2, exactly,
+
+    omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum_a k_a^4 + O(k^6),
+    beta(b) = -s (b_0 - b_1 - 2 b_2) / 3,
+
+and alpha(b) is a quartic in b (runner). At b_gold, beta = 7/6 - sqrt5/2,
+in agreement with Theorem 5. For a moving walk (s != 0) the k^4 anisotropy
+therefore vanishes exactly on the plane b_0 = b_1 + 2 b_2. On that plane
+s = 3(b_1 + b_2), and the coefficients that survive depend on s alone:
+
+    omega^2 = s^2 |k|^2 - s^2 (1 - s^2) |k|^4 / 12
+              + s^2 (8 s^4 - 5 s^2 + 2) |k|^6 / 360 - (s^2/360) |k|^2 sum_a k_a^4
+              + z(b) k_1^2 k_2^2 k_3^2 + O(k^8).
+
+The three sextic structures are linearly independent, so the coefficient
+-s^2/360 is a k^6 cubic anisotropy that no moving walk on the plane avoids.
+The k^4 correction is negative for every such walk: the group velocity falls
+below s as |k| grows.
+
+*Which speeds occur.* On the plane, det G = (b_1 + b_2)^2 Q(b_1, b_2). The
+rank of G drops to two only at b = 0, so the positive semidefinite part of
+{Q = 0} is a union of compact components. On those components s reaches its
+extremes only where it is critical on the curve. The discriminant in b_1 of
+Q at fixed speed S is c S^12 (8 S^2 + 3)(3 S^2 - 2)^2 (S^4 + 84 S^2 + 36),
+whose real roots are S = 0 and S = +-sqrt(2/3). Hence every k^4-isotropic
+moving walk has
+
+    |s| <= sqrt(2/3),
+
+with equality at
+
+    b_iso = ((sqrt6 + 2 sqrt15)/27, (5 sqrt6 - 2 sqrt15)/27, (2 sqrt15 - 2 sqrt6)/27),
+
+where G is positive semidefinite of rank three (exact). Sampling the curve
+(numerical) shows the attained speeds fill (0, sqrt(2/3)]; the curve reaches
+b = 0 at the roots of -3 lam^4 + 4 lam - 2 (b_2 = lam b_1). At b_iso,
+alpha = -1/54, z = sqrt10/9 - 16/45, the axis and face doublers sit at
+cos theta_X = -1/3 and cos theta_M = -7/9 (exact), the corner doublers at
+2.715 rad, and on a 41^3 grid omega >= 0.9 s |2 sin(k/2)|: a single cone and
+no doublers (numerical). At |k| = 1 its directional spread of omega is about
+0.1%, against about 1.6% for the light-speed member. ∎
+
+Reading: on the two-qubit site, cubic lattice anisotropy can be tuned away at
+order (k a)^2 relative to the leading term. The price is a cone speed at most
+sqrt(2/3) of the lattice's site-per-tick limit. The order-(k a)^4 anisotropy
+is unavoidable.
+
 ## Theorem 6 — exact chirality freezes motion
 
 tau3 (x) 1 commutes with every coin operator 1 (x) D(R). If U commutes with
@@ -225,6 +293,10 @@ optimum sat in the quartic valley of the constant walk):
 | spin 1 | not spinorial | none (20 starts) |
 | spin 1 + spin 0 = spin 1/2 (x) spin 1/2 | spinor (x) spinor | none (16 + 16 starts) |
 | 2 x spin 1 | not spinorial | none (16 + 12 + 12 starts) |
+
+The "none" entries are weak evidence. In the companion note a 300-start search
+of the same kind missed the two isolated D3-covariant body-diagonal shifts
+that an exact computation later found (Theorem 5 there).
 
 **Criterion (observed, proved only in part).** In the Clifford mechanism the
 moving part is g.Gamma with Gamma_a a vector triple of anticommuting Hermitian
@@ -309,7 +381,13 @@ framework's conventions: exact soldered cubic covariance of a single tick on
 the simple cubic cell; the Gram-matrix characterization of the anticommuting
 family; that this doubling is what lifts the one-qubit freeze, while the
 irreducible 4-dimensional coin did not in the searches; and an explicit
-member with exactly one light Dirac fermion.
+member with exactly one light Dirac fermion. Removing O(a^2) rotational
+errors with extra couplings is standard in lattice field theory (improved
+actions). Theorem 7 is a different kind of statement. It concerns a single
+unitary tick confined to the cell, where improvement is limited by
+unitarity: the speed bound sqrt(2/3) and the unavoidable k^6 term are
+consequences of the Gram constraint, and have no counterpart in an
+unconstrained Hamiltonian.
 
 ## Bearing on the parked M_4(C) fork (information for the owner, not an adoption)
 
@@ -333,7 +411,8 @@ is not addressed here.
 - It does not classify all two-qubit O-covariant walks, or walks beyond the
   cell.
 - It does not identify the walk with a physical fermion, fix its mass or
-  speed, or couple it to anything.
+  speed, or couple it to anything. Theorem 7 shows which speeds permit
+  k^4 isotropy; it does not select one.
 
 ## No-Go Discipline Gate
 
@@ -349,4 +428,4 @@ impossibility claim.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=24 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=38 FAIL=0` (under a minute).

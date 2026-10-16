@@ -11,7 +11,11 @@ uniquely in terms of b; walks exist iff G(b) is positive semidefinite of rank
 <= 3. Exact parts: Clifford relations, covariance, the formula for G(b), and an
 algebraic point b* with det G(b*) = 0 and the other three eigenvalues > 0.
 Numerical parts (labelled): the factorised walk's unitarity, its single
-massless Dirac cone and the gapped doublers.
+massless Dirac cone and the gapped doublers. Theorem 7 (exact): the massless
+member's dispersion is cos omega = phi0^T G(b) phi(k); its cubic anisotropy at
+order k^4 vanishes exactly on the plane b0 = b1 + 2 b2, where speeds are at
+most sqrt(2/3) (attained at b_iso over Q(sqrt6, sqrt15)) and the order-k^6
+anisotropy -(s^2/360)|k|^2 sum k^4 never vanishes.
 """
 
 from __future__ import annotations
@@ -206,6 +210,106 @@ def main() -> int:
     ck.check('at b*: e1, e2, e3 of G are positive, so the three nonzero eigenvalues are positive (G >= 0, rank 3)',
              all(sg == 1 for sg in signs))
 
+    # Theorem 7: quartic isotropy and the sqrt(2/3) bound
+    phi0c = sp.Matrix([1, 3, 3, 1])
+    ck.check('phi0^T G phi0 = 1 identically in b: the massless member has f = phi0^T G phi(k)',
+             sp.expand((phi0c.T * G * phi0c)[0]) == 1)
+    def omega2_series(Gm, order):
+        cs = [sum((-1) ** j * (eps * x) ** (2 * j) / sp.factorial(2 * j) for j in range(order // 2 + 1)) for x in nn]
+        ph = sp.Matrix([1, sum(cs), cs[0] * cs[1] + cs[0] * cs[2] + cs[1] * cs[2], cs[0] * cs[1] * cs[2]])
+        uu = sp.expand((phi0c.T * Gm * (phi0c - ph))[0])
+        uu = sum(uu.coeff(eps, j) * eps ** j for j in range(order + 1))
+        ww = sp.expand(2 * uu + uu ** 2 / 3 + 8 * uu ** 3 / 45)
+        return [sp.expand(ww.coeff(eps, j)) for j in range(order + 1)]
+    N4 = sum(x ** 4 for x in nn)
+    alpha = s_ * (b[0] ** 3 + 6 * b[0] ** 2 * b[1] + 3 * b[0] ** 2 * b[2] + 12 * b[0] * b[1] ** 2 + 12 * b[0] * b[1] * b[2]
+                  + 3 * b[0] * b[2] ** 2 + 3 * b[0] + 8 * b[1] ** 3 + 12 * b[1] ** 2 * b[2] + 6 * b[1] * b[2] ** 2
+                  - 6 * b[1] + b[2] ** 3 - 9 * b[2]) / 12
+    beta = -s_ * (b[0] - b[1] - 2 * b[2]) / 3
+    w = omega2_series(G, 4)
+    ck.check('massless member: omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum k_a^4 + O(k^6), beta = -s (b0 - b1 - 2 b2)/3',
+             sp.expand(w[2] - s_ ** 2 * nsq) == 0 and sp.expand(w[4] - alpha * nsq ** 2 - beta * N4) == 0)
+    ck.check('golden member: beta(b_gold) = 7/6 - sqrt5/2 (agrees with Theorem 5)',
+             sp.expand(beta.subs(bgold) - kap) == 0)
+    Gp = G.subs(b[0], b[1] + 2 * b[2]).applyfunc(sp.expand)
+    Qp = sp.cancel(Gp.det() / (b[1] + b[2]) ** 2)
+    ck.check('on the isotropy plane b0 = b1 + 2 b2: det G = (b1 + b2)^2 Q(b1, b2) with Q polynomial; there s = 3(b1 + b2)',
+             sp.denom(sp.together(Qp)) == 1 and sp.expand(s_.subs(b[0], b[1] + 2 * b[2]) - 3 * (b[1] + b[2])) == 0)
+    Ssym = sp.Symbol('S')
+    disc = sp.discriminant(sp.Poly(sp.expand(Qp.subs(b[2], Ssym / 3 - b[1])), b[1]))
+    expected = {sp.Poly(Ssym, Ssym): 12, sp.Poly(8 * Ssym ** 2 + 3, Ssym): 1, sp.Poly(3 * Ssym ** 2 - 2, Ssym): 2,
+                sp.Poly(Ssym ** 4 + 84 * Ssym ** 2 + 36, Ssym): 1}
+    got = {sp.Poly(f_, Ssym).monic(): m for f_, m in sp.factor_list(disc)[1]}
+    ck.check('discriminant in b1 of Q at fixed speed S is c S^12 (8S^2 + 3)(3S^2 - 2)^2 (S^4 + 84 S^2 + 36): real critical speeds 0, +-sqrt(2/3)',
+             got == {k.monic(): v for k, v in expected.items()})
+    minors = [sp.expand(Gp.extract(list(r_), list(c_)).det()) for r_ in itertools.combinations(range(4), 3) for c_ in itertools.combinations(range(4), 3)]
+    Gm2 = sp.groebner([m for m in minors if m != 0], b[1], b[2], order='grevlex')
+    ck.check('on the plane, rank G <= 2 only at b = 0 (b1, b2 in the radical of the 3x3 minors), so the PSD part of {Q = 0} is a union of compact components',
+             any(Gm2.contains(b[1] ** p) for p in range(1, 9)) and any(Gm2.contains(b[2] ** p) for p in range(1, 9)))
+    r6, r15 = sp.sqrt(6), sp.sqrt(15)
+    biso = {b[0]: (r6 + 2 * r15) / 27, b[1]: (5 * r6 - 2 * r15) / 27, b[2]: (2 * r15 - 2 * r6) / 27}
+    Gi = G.subs(biso).applyfunc(sp.expand)
+    cpi = sp.Poly(sp.expand((Gi - lam * sp.eye(4)).det(method='berkowitz')), lam)
+    ei = [sp.expand(-cpi.coeff_monomial(lam ** 3)), sp.expand(cpi.coeff_monomial(lam ** 2)), sp.expand(-cpi.coeff_monomial(lam))]
+    ck.check('b_iso = ((sqrt6 + 2 sqrt15)/27, (5 sqrt6 - 2 sqrt15)/27, (2 sqrt15 - 2 sqrt6)/27): on the plane, s = sqrt(2/3), det G = 0, e1, e2, e3 > 0 (G >= 0, rank 3)',
+             sp.expand(biso[b[0]] - biso[b[1]] - 2 * biso[b[2]]) == 0 and sp.simplify(s_.subs(biso) - sp.sqrt(sp.Rational(2, 3))) == 0
+             and sp.expand(cpi.coeff_monomial(1)) == 0 and all(sp.N(e, 50) > 0 for e in ei))
+    wi = omega2_series(Gi, 6)
+    N6 = sum(x ** 6 for x in nn)
+    P222 = nn[0] ** 2 * nn[1] ** 2 * nn[2] ** 2
+    target6 = sp.Rational(1, 243) * nsq ** 3 - sp.Rational(1, 540) * nsq * N4 + (sp.sqrt(10) / 9 - sp.Rational(16, 45)) * P222
+    ck.check('b_iso: omega^2 = (2/3)|k|^2 - (1/54)|k|^4 + (1/243)|k|^6 - (1/540)|k|^2 sum k^4 + (sqrt10/9 - 16/45) k1^2 k2^2 k3^2 + O(k^8)',
+             sp.expand(wi[2] - sp.Rational(2, 3) * nsq) == 0 and sp.expand(wi[4] + nsq ** 2 / 54) == 0
+             and sp.expand(sp.radsimp(wi[6] - target6)) == 0)
+    del N6
+    bi = [float(biso[x]) for x in b]
+    ck.check('b_iso doubler gaps: cos theta_X = -1/3, cos theta_M = -7/9 (exact, from Theorem 4 formulas)',
+             sp.simplify((1 - 2 * s_ ** 2).subs(biso) + sp.Rational(1, 3)) == 0
+             and sp.simplify((1 - 8 * s_ * (b[0] - b[2])).subs(biso) + sp.Rational(7, 9)) == 0)
+    Gin = np.array(Gi.evalf(30), dtype=float)
+    ai = Gin @ np.array([1.0, 3, 3, 1])
+    tg = np.linspace(-np.pi, np.pi, 41)
+    KK = np.stack(np.meshgrid(tg, tg, tg, indexing='ij'), -1).reshape(-1, 3)
+    cc = np.cos(KK)
+    phg = np.stack([np.ones(len(cc)), cc.sum(1), cc[:, 0] * cc[:, 1] + cc[:, 0] * cc[:, 2] + cc[:, 1] * cc[:, 2], cc.prod(1)], 1)
+    om = np.arccos(np.clip(phg @ ai, -1, 1))
+    kl = np.linalg.norm(2 * np.sin(KK / 2), axis=1)   # lattice momentum, zero only at k = 0
+    ck.check('[numerical] b_iso: on a 41^3 grid omega >= 0.9 s |2 sin(k/2)| (single cone at k = 0, no doublers)',
+             np.all(om >= 0.9 * np.sqrt(2 / 3) * kl))
+    # sampled check along the isotropic curve: which speeds occur
+    lamv = sp.Symbol('lamv')
+    Ql = sp.expand(Qp.subs(b[2], lamv * b[1]) / b[1] ** 4)
+    P6l, P4l = sp.lambdify(lamv, Ql.coeff(b[1], 2)), sp.lambdify(lamv, Ql.coeff(b[1], 0))
+    yco = -s_ * (20 * b[0] ** 3 + 60 * b[0] ** 2 * b[1] - 120 * b[0] * b[1] * b[2] - 60 * b[0] * b[2] ** 2 - 9 * b[0] - 80 * b[1] ** 3
+                 - 240 * b[1] ** 2 * b[2] - 180 * b[1] * b[2] ** 2 + 12 * b[1] - 40 * b[2] ** 3 + 21 * b[2]) / 360
+    w6 = omega2_series(G, 6)[6]
+    xs_, ys_, zs_ = sp.symbols('xs ys zs')
+    s6 = sp.solve(sp.Poly(sp.expand(w6 - xs_ * nsq ** 3 - ys_ * nsq * N4 - zs_ * P222), *nn).coeffs(), [xs_, ys_, zs_], dict=True)[0]
+    ck.check('sextic coefficient of |k|^2 sum k^4 in omega^2 is y(b) = -s (20 b0^3 + ... + 21 b2)/360', sp.expand(s6[ys_] - yco) == 0)
+    onp = {b[0]: b[1] + 2 * b[2]}
+    sp_ = 3 * (b[1] + b[2])
+    ck.check('on the isotropy plane: alpha = -s^2 (1 - s^2)/12, x = s^2 (8 s^4 - 5 s^2 + 2)/360, y = -s^2/360 (depend on s only)',
+             sp.expand(alpha.subs(onp) + sp_ ** 2 * (1 - sp_ ** 2) / 12) == 0
+             and sp.expand(s6[xs_].subs(onp) - sp_ ** 2 * (8 * sp_ ** 4 - 5 * sp_ ** 2 + 2) / 360) == 0
+             and sp.expand(s6[ys_].subs(onp) + sp_ ** 2 / 360) == 0)
+    ck.check('|k|^6, |k|^2 sum k^4 and k1^2 k2^2 k3^2 are linearly independent, so y != 0 is a genuine k^6 anisotropy for every moving isotropic member',
+             len(s6) == 3)
+    G_f = sp.lambdify(b, G)
+    samples = []
+    for L in np.linspace(0.55, 0.85, 3001):
+        q = -P4l(L) / P6l(L)
+        if not np.isfinite(q) or q <= 0:
+            continue
+        for sg in (1, -1):
+            B1 = sg * np.sqrt(q)
+            B = (B1 + 2 * L * B1, B1, L * B1)
+            if np.linalg.eigvalsh(np.array(G_f(*B), float))[0] >= -1e-10:
+                samples.append((0.0, 0.0, B[0] + 2 * B[1] + B[2]))
+    samples = np.array(samples)
+    sv = np.sort(np.abs(samples[:, 2]))
+    ck.check(f'[numerical] {len(samples)} PSD samples of the isotropic curve: speeds fill [{sv[0]:.3f}, sqrt(2/3)] (largest gap {np.diff(sv).max():.1e}), never above',
+             len(samples) > 100 and sv[0] < 0.1 and sv[-1] > np.sqrt(2 / 3) - 1e-6 and np.diff(sv).max() < 0.01
+             and sv[-1] <= np.sqrt(2 / 3) + 1e-9)
     # numerical construction (labelled numerical)
     bnum = np.array([float(B0), float(sp.sqrt(ustar).evalf(40)), float(B2)])
     Gn = np.array(Gb.subs(b[1], sp.sqrt(ustar)).evalf(40).tolist(), float)

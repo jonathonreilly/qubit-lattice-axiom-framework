@@ -192,3 +192,21 @@ The shared integrated-main landing pass is still pending. Next is PR publication
 and attachment, followed by fixed-action coupled response with physical forcing
 and readout specified. No checker or detached author remains active; all older
 campaigns remain stopped. The fixed deadline and empirical limits are unchanged.
+
+## Published first milestone (2026-10-16T00:42:54.152591+00:00)
+
+PR #9628: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628
+Head `40e5030769a9409f0d52d3e4e58e8279a5550e47`; base main
+`bbada1fe09b2d10d610560864d86b68c24a59713`. Its 59-file standalone delta,
+body and exact base/head were verified and the PR attached to this chat. The
+scientific checkpoint is `5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2`.
+No source identity changed during publication. Shared integrated landing checks
+remain pending; no merge or audit verdict was applied.
+
+Resume personal science with a fixed-action coupled response. Hold rho0, k and C
+in the candidate action fixed when changing material density, retain the metric
+and material response, and justify the observable rather than calling V''/Z a
+measured mass. Refresh relevant science first: main remains bbada1f, there are
+58 compact open-PR records, and new PR 9627's proof has not been adopted. The
+53-PR full path inventory remains distinct from this compact refresh. All older
+campaign statuses remain completed/cancelled with no worker/supervisor PID.

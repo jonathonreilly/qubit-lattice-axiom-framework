@@ -98,3 +98,10 @@ The canonical node extracts with bounded_theorem author hint, primary and helper
 its fresh cache binds final input bytes. The generated manifest adds only that
 node. Final commit and PR publication remain to complete; shared integrated-main
 landing validation remains pending.
+
+Publication at 2026-10-16T00:42:54.152591+00:00: PR #9628 is open, non-draft, verified at
+`40e5030769a9409f0d52d3e4e58e8279a5550e47` against main
+`bbada1fe09b2d10d610560864d86b68c24a59713`, and attached to this chat.
+The PR's 59 changed paths exactly match the selected tree. Full source/evidence
+bytes were preserved; current main was not changed. Shared landing validation
+remains pending. The campaign continues with direct authorship.

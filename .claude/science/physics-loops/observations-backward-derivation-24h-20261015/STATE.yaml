@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "first_milestone_ready_to_publish",
+  "phase": "fixed_action_response_ready",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T00:38:32.287791+00:00",
+  "updated_at": "2026-10-16T00:42:54.152591+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Publish and attach the first coherent standalone milestone PR from current main after final selected-tree checks; then derive coupled scalar/metric/material response with action parameters fixed and justify a physical forcing/readout. Preserve all histories on the checkpoint branch.",
+  "next_action": "Refresh relevant main/open PR science, including new PR 9627, without adopting unchecked proof. Then personally derive coupled scalar/metric/material response at one fixed action member and specify independently justified forcing, readout and boundary conditions. Do not vary action parameters with a density perturbation or identify V-double-prime/Z with measured mass.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -41,7 +41,27 @@
     "not_formal_audit": true,
     "readout_intake": "Ideal coherent-carrier cancellation and metric-level ambiguity independently checked in independent_block02/INDEPENDENT_CHECK.md; external Moyer citation and empirical implications were outside that check."
   },
-  "milestones": [],
+  "milestones": [
+    {
+      "number": 9628,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9628",
+      "title": "[physics-loop] scalar-observation-inverse bounded_theorem conditional-support",
+      "head_branch": "codex/scalar-observation-inverse-20261016",
+      "head_sha": "40e5030769a9409f0d52d3e4e58e8279a5550e47",
+      "base_branch": "main",
+      "base_sha": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "state": "OPEN",
+      "is_draft": false,
+      "verified_at": "2026-10-16T00:42:17.344839+00:00",
+      "changed_files": 59,
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "attached_to_current_chat": true,
+      "checkpoint_commit": "5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2",
+      "scientific_status": "bounded_theorem / conditional-support; no empirical test",
+      "shared_landing_validation": "pending"
+    }
+  ],
   "owned_jobs": [],
   "supervisor_pid": null,
   "worker_pid": null,
@@ -62,14 +82,10 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T00:00:53+00:00",
+      "time": "2026-10-16T00:42:17.344839+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 56,
-      "new_prs": [
-        9625,
-        9626
-      ],
-      "scope": "Compact metadata and both new governance PR bodies/paths read; unmerged rules not adopted. Last complete full path inventory remains 53-PR snapshot."
+      "open_pr_count": 58,
+      "scope": "Compact metadata refresh; current created PR 9628 exact base/head/body/files verified. New physics PR 9627 is noted for scientific intake before the next route; its proof is not adopted. Last full path inventory remains the 53-PR launch snapshot."
     }
   },
   "first_block_files": [
@@ -87,12 +103,12 @@
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "Canonical source checked on final bytes: 56 controls, eight detected scratch mutations; 29 independent mathematical checks and separate 56-control reproduction. Final standalone selected tree has 59 files; PR publication is next.",
+  "milestone_status": "First standalone scientific milestone published as PR 9628; exact base/head/body and all 59 changed paths verified; attached to this chat. Shared integrated landing validation remains pending.",
   "checkpoint": {
-    "time": "2026-10-16T00:38:32.287791+00:00",
+    "time": "2026-10-16T00:42:54.152591+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "final canonical milestone evidence, packaging and publication",
+    "checkpoint_scope": "First PR publication, exact artifact verification, and next personally authored scientific route",
     "failures": [
       "symbolic min ordering in first canonical run",
       "unordered symbolic endpoints in second canonical run",
@@ -107,18 +123,10 @@
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-15T23:58:49.714657+00:00",
-    "commit": "74f9132b33a259a01a950f5928f154c71519cbf3",
+    "checked_at": "2026-10-16T00:42:54.152591+00:00",
+    "commit": "5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2",
     "branch": "codex/observations-backward-derivation-20261015",
-    "remote_refs": {
-      "refs/heads/codex/observations-backward-derivation-20261015": "74f9132b33a259a01a950f5928f154c71519cbf3",
-      "refs/heads/main": "bbada1fe09b2d10d610560864d86b68c24a59713"
-    },
-    "worktree_clean": true,
-    "full_branch_diff_check": "passed",
-    "conflicting_owned_processes": [],
-    "no_pr_created": true,
-    "scope": "Personal-author research checkpoint; first canonical milestone packaging and conformance pending."
+    "scope": "Verified pre-publication science/evidence checkpoint. Publication bookkeeping follows in the next checkpoint; runtime status records the final pushed head."
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",

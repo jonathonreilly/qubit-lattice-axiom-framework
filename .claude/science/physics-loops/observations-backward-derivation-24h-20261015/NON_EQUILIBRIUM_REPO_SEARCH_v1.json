@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-16T08:53:07.971117+00:00",
+  "scope": "Current checkout docs markdown with scalar/reconstruct/gravity/cosmolog in basename; historic_intake excluded; checkpoint science base equals current main. Not an exhaustive novelty search.",
+  "files_scanned": 230,
+  "hits": [],
+  "failed_prior_search": "Broader git grep ended with exit137 and no usable result. Not evidence of absence; narrowed read-only scan completed."
+}

@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-16T08:53:33.531253+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "open_pr_inventory": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0841.json",
+  "open_pr_sha256": "cc953584817f54d0a61612e70ad9b9e38396cce86acd4ffca47835d10f7f3f06",
+  "open_pr_count": 67,
+  "changed_heads_since_0758": [],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/gr-qc/0001066v1",
+      "file": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/boisseau2000-gr-qc0001066v1.pdf",
+      "sha256": "11a0c92d8fb925a4f7c2a5308a6581206ff3572937bab42e047143fe889d896d",
+      "bytes": 124111,
+      "pages": 4
+    },
+    {
+      "url": "https://arxiv.org/pdf/1111.6613v4",
+      "file": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/brax2012-arxiv1111.6613v4.pdf",
+      "sha256": "93bc60e7cf6d7bc1f94f3377fff0721eec30b285e4c105c059ef16398ab35533",
+      "bytes": 206601,
+      "pages": 7
+    }
+  ],
+  "source_read_scope": [
+    {
+      "source": "brax2012-arxiv1203.4812v2.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "content": "Action/density conventions, local screening assumptions, all section II.C kick and stability discussion, II.D equation of state, tomography III.A-B and beginning III.C. No full perturbation/stability proof adopted."
+    },
+    {
+      "source": "brax2012-arxiv1111.6613v4.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "content": "Action and minimum construction, local/BBN conditions and linear-growth context; later pages not read in this block."
+    },
+    {
+      "source": "boisseau2000-gr-qc0001066v1.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "content": "Complete four-page primary paper, including boundaries, short-wavelength growing adiabatic mode assumption and approximation in inverse Brans-Dicke parameter."
+    }
+  ],
+  "distinction": "General potential/coupling reconstruction and off-minimum background reconstruction are prior art. No priority established for the finite velocity-candidate corollary. Own action variation fixes density and M factors rather than relying on source shorthand.",
+  "data_roles": "No observation arrays or fitted cosmology introduced; prospective compatibility inputs are not measured in this campaign. All exact fixtures are exposed mathematical constructions.",
+  "operational_failure": "Python urllib failed local CA verification before file write; system curl with ordinary certificate verification succeeded. No insecure TLS bypass.",
+  "new_theory_status": "No new physical axiom or selected action accepted; conditional class only."
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "Packaging failure captured from direct exec heredoc, not a scientific control failure",
+  "tool_chunk_id": "13258e",
+  "returncode": 1,
+  "argv": [
+    "python3",
+    "-B",
+    "-"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar",
+  "stdin_preserved_as": "metadata_snapshot_attempt01.py",
+  "stdout": "metadata_snapshot_attempt01.stdout.txt",
+  "stderr": "metadata_snapshot_attempt01.stderr.txt",
+  "script_preservation": "Restored verbatim from the executed heredoc after the failure; not rerun",
+  "failure": "An incorrectly remembered old metadata string failed its presence assertion before any output file was written",
+  "scientific_inputs_changed": false,
+  "written_targets_before_failure": [],
+  "wall_seconds": null,
+  "wall_note": "No owned calculation wall-clock wrapper was installed for this short packaging heredoc; no duration is invented",
+  "recovery": "Read the historical snapshot's exact metadata string; attempt02 changes only that expected old string",
+  "serialization_tool_failure": {
+    "kind": "apply_patch validation error",
+    "message": "apply_patch verification failed: invalid hunk at line 81, '' is not a valid hunk header. Valid hunk headers: '*** Add File: {path}', '*** Delete File: {path}', '*** Update File: {path}'",
+    "cause": "The generated patch could not represent an empty stdout file; no patch was applied",
+    "recovery": "Created the preserved files through explicit exclusive Python file writes"
+  }
+}

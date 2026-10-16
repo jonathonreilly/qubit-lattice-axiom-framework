@@ -1,0 +1,33 @@
+{
+  "changed_sources": [
+    "scripts/scalar_history_inverse.py",
+    "outputs/scalar_history_inverse/result.json"
+  ],
+  "final_sources": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+      "bytes": 21973
+    },
+    "scripts/scalar_history_inverse.py": {
+      "sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+      "bytes": 1833
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "bytes": 12259
+    },
+    "outputs/scalar_history_inverse/result.json": {
+      "sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+      "bytes": 11856
+    },
+    "outputs/scalar_history_inverse/review_clarifications.json": {
+      "sha256": "b1e03949f66989271d26e44debb873f5e1ab467be6f0059ded0a9418693c2724",
+      "bytes": 614
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "bytes": 82110
+    }
+  },
+  "diff_sha256": "1762a6b068796cdf22c50b0d554ff1eb15ac892c6d7387507629bf66faa087dc"
+}

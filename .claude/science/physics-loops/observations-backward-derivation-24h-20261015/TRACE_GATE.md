@@ -4,7 +4,7 @@ target_blocker_text: "derive the remaining assumptions rather than supplying the
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: frontier_probe
-next_trace_action: "identify measured channels and normalization transport for the common-action discriminator; package the checked relative-field and finite-bin constraints"
+next_trace_action: "Derive physical clock/frame and coupled-response correspondences for the checked scalar-history inverse; preserve measurement and uncertainty imports."
 
 ## Neighborhood-evolution subcampaign
 
@@ -43,3 +43,7 @@ Next trace action: read the primary dynamical-gravity measurement and calibratio
 Trace remains upstream_support with conditional reachability. Root personally reconstructed the relative-motion/calibration map and preparation-independent weak equation, then ran frozen diagnostics on one deposited lock-in file. The complete parser and one regression were independently rebuilt; known code replay is distinguished from independent implementation. Complex probes are post-exposure development, not held-out evidence. No action, potential, scalar normalization or physical environmental correspondence is promoted.
 
 Next trace action: examine whether the equilibrium premise in known density-based scalar reconstruction can be replaced by finite-history observational identities or bounded departures. Preserve independently measured coordinate, force, density/frame and transfer obligations. A laboratory source-position change does not itself supply a scalar environment label.
+
+## Scalar-history compatibility — 2026-10-16T09:36:59.455687+00:00
+
+Trace remains upstream_support, reachability supports, with bounded_theorem / conditional-support in PR9638. Potential shape and minimum tracking are not inserted; exact compatible histories are tested rather than one being selected. The finite-versus-continuous classification does not retire the action, scale, measured-frame, curvature or uncertainty premises. Next action is the physical observation-to-input bridge, with no new observational data opened in this block.

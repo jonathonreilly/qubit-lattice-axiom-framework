@@ -1,0 +1,47 @@
+PASS: lapse variation gives Friedmann
+PASS: scalar variation fixes density and coupling normalization
+PASS: scale-factor variation plus constraint gives Raychaudhuri
+PASS: particle dust exchange
+PASS: expanded curvature polynomial agrees with differentiated KG
+PASS: dust conservation solves first-order velocity equation
+PASS: nonzero coupling gives exact degree six
+PASS: degree-six coefficient is positive for nonzero real coupling
+PASS: constant coefficient retains density expansion derivative
+PASS: forward power-law Friedmann
+PASS: forward power-law Raychaudhuri
+PASS: forward power-law scalar equation
+PASS: forward power-law matter energy
+PASS: forward power-law signed coupling
+PASS: forward power-law curvature
+PASS: inverse differential equation recovers forward power-law
+PASS: inverse polynomial recovers forward power-law
+PASS: non-power-law scalar equation
+PASS: non-power-law dust exchange
+PASS: non-power-law inverse velocity
+PASS: non-power-law inverse curvature
+PASS: non-power-law fixture has positive dust and kinetic energy on 1<t<4
+PASS: unique-fixture curvature factorization
+PASS: unique-fixture differential residual
+PASS: instantaneous and differential polynomial gcd
+PASS: one extra instantaneous physical root exists
+PASS: minimum formula is not the fixture velocity
+PASS: minimum discrepancy is nonzero
+PASS: uncoupled dust-era curvature polynomial is identically zero
+PASS: uncoupled family c=1/2 identical coupling
+PASS: uncoupled family c=1/2 identical curvature
+PASS: uncoupled family c=1/2 positive matter
+PASS: uncoupled family c=3/4 identical coupling
+PASS: uncoupled family c=3/4 identical curvature
+PASS: uncoupled family c=3/4 positive matter
+PASS: uncoupled family c=1 identical coupling
+PASS: uncoupled family c=1 identical curvature
+PASS: uncoupled family c=1 positive matter
+PASS: fixed-conserved-density fixture curvature after ordered substitution
+PASS: bare potential curvature alone fails fixture
+PASS: fixed-rho versus fixed-r curvature difference
+PASS: constant signed-coupling fixture curvature difference
+PASS: registered-density curvature identity
+PASS: near-degenerate family preserves exact velocity
+PASS: root slope vanishes in uncoupled limit
+PASS: near-degenerate finite-input root slope is nonzero
+TOTAL: PASS=46 FAIL=0

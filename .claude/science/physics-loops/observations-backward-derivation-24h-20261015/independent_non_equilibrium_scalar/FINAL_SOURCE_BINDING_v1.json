@@ -1,0 +1,296 @@
+{
+  "time_utc": "2026-10-16T09:29:21.102960+00:00",
+  "kind": "Read-only final source and preservation binding; no audit status",
+  "original_pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "canonical_root": "/Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go",
+  "original_sources": {
+    "NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": {
+      "expected": {
+        "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+        "bytes": 12311
+      },
+      "actual": {
+        "sha256": "eb0c9d27aa497caa77adb4fe0f9865517ba2617cd48322ebe6bce8da4a8b3436",
+        "bytes": 12311
+      },
+      "matches": true
+    },
+    "check_nonequilibrium_scalar_v1.py": {
+      "expected": {
+        "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+        "bytes": 9690
+      },
+      "actual": {
+        "sha256": "553892bfa957e30947773529254e4ffbb6b79013173ad00ab96f4278083a87e8",
+        "bytes": 9690
+      },
+      "matches": true
+    },
+    "check_nonequilibrium_scalar_v2.py": {
+      "expected": {
+        "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+        "bytes": 10050
+      },
+      "actual": {
+        "sha256": "7622b4359a1f432760f3540eae7f5720c2f314faea42f6fff8fdc426457ab599",
+        "bytes": 10050
+      },
+      "matches": true
+    },
+    "NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": {
+      "expected": {
+        "sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+        "bytes": 8968
+      },
+      "actual": {
+        "sha256": "6cfa56a4ab69de50866acf8b9718cd3b2131178a064a6fb15ff30d228cf2b006",
+        "bytes": 8968
+      },
+      "matches": true
+    },
+    "NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "expected": {
+        "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+        "bytes": 9163
+      },
+      "actual": {
+        "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+        "bytes": 9163
+      },
+      "matches": true
+    },
+    "NON_EQUILIBRIUM_CONTROL_RECOVERY_v1.json": {
+      "expected": {
+        "sha256": "6cf0c38265d8c31b152b581916cd26b60f3054391677e94c0a0430a1547ced74",
+        "bytes": 1076
+      },
+      "actual": {
+        "sha256": "6cf0c38265d8c31b152b581916cd26b60f3054391677e94c0a0430a1547ced74",
+        "bytes": 1076
+      },
+      "matches": true
+    },
+    "NON_EQUILIBRIUM_REVIEW_INPUT_v1.json": {
+      "expected": {
+        "sha256": "541d2a5db618acde30b647ab71553f96cbbaa9365a3a1921db78562ae3398c42",
+        "bytes": 846
+      },
+      "actual": {
+        "sha256": "541d2a5db618acde30b647ab71553f96cbbaa9365a3a1921db78562ae3398c42",
+        "bytes": 846
+      },
+      "matches": true
+    }
+  },
+  "canonical_sources": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "expected": {
+        "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+        "bytes": 21973
+      },
+      "actual": {
+        "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+        "bytes": 21973
+      },
+      "matches": true
+    },
+    "scripts/scalar_history_inverse.py": {
+      "expected": {
+        "sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+        "bytes": 1833
+      },
+      "actual": {
+        "sha256": "b0fd9b26b2ebe21cb80ee212705cd39e5185ea64abfe3cd782ab137d111e33a5",
+        "bytes": 1833
+      },
+      "matches": true
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "expected": {
+        "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+        "bytes": 12259
+      },
+      "actual": {
+        "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+        "bytes": 12259
+      },
+      "matches": true
+    },
+    "outputs/scalar_history_inverse/result.json": {
+      "expected": {
+        "sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+        "bytes": 11856
+      },
+      "actual": {
+        "sha256": "6a89dbe49961d18288411e4a1058c3009d782997f43c95427de7d97b54aca2f3",
+        "bytes": 11856
+      },
+      "matches": true
+    },
+    "outputs/scalar_history_inverse/review_clarifications.json": {
+      "expected": {
+        "sha256": "b1e03949f66989271d26e44debb873f5e1ab467be6f0059ded0a9418693c2724",
+        "bytes": 614
+      },
+      "actual": {
+        "sha256": "b1e03949f66989271d26e44debb873f5e1ab467be6f0059ded0a9418693c2724",
+        "bytes": 614
+      },
+      "matches": true
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "expected": {
+        "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+        "bytes": 82110
+      },
+      "actual": {
+        "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+        "bytes": 82110
+      },
+      "matches": true
+    }
+  },
+  "frozen_evidence_checks": {
+    "PRE_CODE_FREEZE_v1.json": {
+      "NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": true,
+      "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": true
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "NEUTRAL_CONTRACT_BEFORE_EXPOSURE_v1.json": true,
+      "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": true,
+      "PRE_CODE_FREEZE_v1.json": true,
+      "independent_exact_controls_v1.py": true,
+      "run_independent_bounded_v1.py": true,
+      "independent_attempt01.run.json": true,
+      "independent_attempt01.stdout.json": true,
+      "independent_attempt01.stderr.txt": true
+    },
+    "ORIGINAL_STAGE_AND_ADDITIONS_FREEZE_v1.json": {
+      "INDEPENDENT_OUTPUT_FREEZE_v1.json": true,
+      "AUTHOR_ORIGINAL_EXPOSURE_v1.json": true,
+      "AUTHOR_V1_TO_V2_DIFF_v1.json": true,
+      "ORIGINAL_UNIT_COMPARISON_v1.md": true,
+      "ADDITIONS_BEFORE_CANONICAL_READ_v1.md": true,
+      "replay_original_unit_bounded_v1.py": true,
+      "author_original_v1_attempt01.run.json": true,
+      "author_original_v1_attempt01.stdout.txt": true,
+      "author_original_v1_attempt01.stderr.txt": true,
+      "author_original_v2_attempt01.run.json": true,
+      "author_original_v2_attempt01.stdout.txt": true,
+      "author_original_v2_attempt01.stderr.txt": true,
+      "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": true,
+      "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": true,
+      "original_replay/NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": true,
+      "original_replay/check_nonequilibrium_scalar_v1.py": true,
+      "original_replay/check_nonequilibrium_scalar_v2.py": true
+    }
+  },
+  "embedded_snapshot_checks": {
+    "AUTHOR_ORIGINAL_EXPOSURE_v1.json": {
+      "NON_EQUILIBRIUM_SCALAR_INVERSE_v1.md": true,
+      "check_nonequilibrium_scalar_v1.py": true,
+      "check_nonequilibrium_scalar_v2.py": true,
+      "NON_EQUILIBRIUM_SCALAR_CONTROLS_v1.json": true,
+      "NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": true,
+      "NON_EQUILIBRIUM_CONTROL_RECOVERY_v1.json": true,
+      "NON_EQUILIBRIUM_REVIEW_INPUT_v1.json": true
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v1.json": {
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": true,
+      "scripts/scalar_history_inverse.py": true,
+      "scripts/scalar_history_inverse_math.py": true,
+      "outputs/scalar_history_inverse/result.json": true,
+      "outputs/scalar_history_inverse/mutation_attempt01.json": true
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v2.json": {
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": true,
+      "scripts/scalar_history_inverse.py": true,
+      "scripts/scalar_history_inverse_math.py": true,
+      "outputs/scalar_history_inverse/result.json": true,
+      "outputs/scalar_history_inverse/review_clarifications.json": true,
+      "docs/audit/scripts/build_citation_graph.py": true
+    },
+    "CANONICAL_SOURCE_SNAPSHOT_v3.json": {
+      "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": true,
+      "scripts/scalar_history_inverse.py": true,
+      "scripts/scalar_history_inverse_math.py": true,
+      "outputs/scalar_history_inverse/result.json": true,
+      "outputs/scalar_history_inverse/review_clarifications.json": true,
+      "docs/audit/scripts/build_citation_graph.py": true
+    }
+  },
+  "lossless_diff_checks": {
+    "AUTHOR_V1_TO_V2_DIFF_v1.json": {
+      "sha256_matches": true,
+      "bytes_match": true
+    },
+    "CANONICAL_NOTE_CHANGE_v1.json": {
+      "sha256_matches": true,
+      "bytes_match": true
+    },
+    "CANONICAL_PRIMARY_METADATA_CHANGE_v1.json": {
+      "sha256_matches": true,
+      "bytes_match": true
+    }
+  },
+  "run_stream_checks": {
+    "independent_attempt01": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "additions_attempt01": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "author_original_v1_attempt01": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "author_original_v2_attempt01": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "canonical_attempt01": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "canonical_attempt02": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    },
+    "metadata_snapshot_attempt02": {
+      "stdout": true,
+      "stderr": true,
+      "bounded": true,
+      "bytecode_disabled": true
+    }
+  },
+  "closure_checks": {
+    "original_seven_sources_unchanged": true,
+    "final_canonical_sources_unchanged": true,
+    "all_earlier_freeze_entries_intact": true,
+    "all_embedded_source_snapshots_intact": true,
+    "all_lossless_diff_containers_intact": true,
+    "all_instrumented_run_streams_intact": true,
+    "final_integration_checks_pass": true,
+    "no_generated_bytecode": true,
+    "no_raw_unified_diff_artifacts": true,
+    "no_symlinks": true
+  },
+  "summary": {
+    "passed": 10,
+    "failed": 0
+  }
+}

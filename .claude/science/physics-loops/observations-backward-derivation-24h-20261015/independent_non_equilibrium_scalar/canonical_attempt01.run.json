@@ -1,0 +1,153 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/observe_canonical_replay_v1.py",
+    "--replay-root",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/canonical_attempt01_repository",
+    "--audit-output",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/canonical_attempt01.read_closure.json"
+  ],
+  "source_root": "/Users/jonBridger/.codex/worktrees/scalar-history-inverse-20261016/New Axioms Lets Go",
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/canonical_attempt01_repository",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T09:18:57.558307+00:00",
+  "end_utc": "2026-10-16T09:18:58.160603+00:00",
+  "wall_seconds": 0.6011952082626522,
+  "child_user_seconds": 0.473551,
+  "child_system_seconds": 0.038516,
+  "child_peak_rss_platform_units": 68272128,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 2993,
+  "stdout_sha256": "0838bb8aeb6eb61746b12e3cd8512df9243ec628c65bc4ac498495e74a8cf559",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_binding_before": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+      "bytes": 21973
+    },
+    "scripts/scalar_history_inverse.py": {
+      "sha256": "d540f1b5a69093afb74950ba101f81aed757495c0e3f5105471318fdf1ccbd4b",
+      "bytes": 1807
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "bytes": 12259
+    },
+    "outputs/scalar_history_inverse/result.json": {
+      "sha256": "1d6c170cce2f073eb98b7a0a132fb13312a60cf101f013b72ecebfb97ffe4286",
+      "bytes": 11830
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "bytes": 82110
+    }
+  },
+  "source_binding_after": {
+    "docs/SCALAR_HISTORY_COMPATIBILITY_NOTE_2026-10-16.md": {
+      "sha256": "e1cde04301073b42a9b4ec09247bc8c5da8908a836bfc24fc5f9b0e56267e45e",
+      "bytes": 21973
+    },
+    "scripts/scalar_history_inverse.py": {
+      "sha256": "d540f1b5a69093afb74950ba101f81aed757495c0e3f5105471318fdf1ccbd4b",
+      "bytes": 1807
+    },
+    "scripts/scalar_history_inverse_math.py": {
+      "sha256": "3709bd3426bc686fc444290901627dd7429f4fc9e6adafc6c0a7a83e3c0aca5b",
+      "bytes": 12259
+    },
+    "outputs/scalar_history_inverse/result.json": {
+      "sha256": "1d6c170cce2f073eb98b7a0a132fb13312a60cf101f013b72ecebfb97ffe4286",
+      "bytes": 11830
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "bytes": 82110
+    }
+  },
+  "bundle_binding_before": {
+    "CANONICAL_SOURCE_SNAPSHOT_v2.json": {
+      "sha256": "a2784b063be2eb45aaf9af5d7afafedd77cf993b64384a9b07d5438d73f45ee1",
+      "bytes": 136844
+    },
+    "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "bytes": 9163
+    },
+    "observe_canonical_replay_v1.py": {
+      "sha256": "656238c9b15b4798acb817e3063136c2959875e5b466e25c726fdc32a3130f7f",
+      "bytes": 3654
+    },
+    "check_canonical_integration_v1.py": {
+      "sha256": "67962ae739af47c3bce7f7a7b889b2541ab513dbc4c8297b08fd8a27c0438fee",
+      "bytes": 8862
+    }
+  },
+  "bundle_binding_after": {
+    "CANONICAL_SOURCE_SNAPSHOT_v2.json": {
+      "sha256": "a2784b063be2eb45aaf9af5d7afafedd77cf993b64384a9b07d5438d73f45ee1",
+      "bytes": 136844
+    },
+    "original_replay/NON_EQUILIBRIUM_SCALAR_CONTROLS_v2.json": {
+      "sha256": "d7cafaee194b14b22c6ee12b2b4038ab85fbe989e204cdee419fd9b0a032ae81",
+      "bytes": 9163
+    },
+    "observe_canonical_replay_v1.py": {
+      "sha256": "656238c9b15b4798acb817e3063136c2959875e5b466e25c726fdc32a3130f7f",
+      "bytes": 3654
+    },
+    "check_canonical_integration_v1.py": {
+      "sha256": "67962ae739af47c3bce7f7a7b889b2541ab513dbc4c8297b08fd8a27c0438fee",
+      "bytes": 8862
+    }
+  },
+  "output_parse_error": null,
+  "output_sha256": "1d6c170cce2f073eb98b7a0a132fb13312a60cf101f013b72ecebfb97ffe4286",
+  "reference_sha256": "1d6c170cce2f073eb98b7a0a132fb13312a60cf101f013b72ecebfb97ffe4286",
+  "author_control_summary": {
+    "passed": 58,
+    "failed": 0
+  },
+  "integration_checks": {
+    "initial_snapshot_matches": true,
+    "primary_extraction": true,
+    "helper_extraction": true,
+    "bounded_claim_hint": true,
+    "timeout_declared": true,
+    "declared_read_inputs": true,
+    "successful_primary": true,
+    "output_byte_identical_to_final_receipt": true,
+    "original_46_controls_preserved": true,
+    "original_algebra_preserved": true,
+    "exact_repository_read_closure": true,
+    "no_outside_writes": true,
+    "source_inputs_unchanged": true,
+    "bundle_inputs_unchanged": true,
+    "copied_sources_unchanged": true
+  },
+  "integration_summary": {
+    "passed": 15,
+    "failed": 0
+  },
+  "new_canonical_controls": [
+    "exceptional coefficients all vanish",
+    "exceptional flow is proportional to velocity",
+    "exceptional kinetic fraction is conserved",
+    "uncoupled nonzero polynomial has degree at most four",
+    "curvature constraint respects canonical field reflection",
+    "velocity evolution respects canonical field reflection",
+    "positive coupling representative has prescribed beta squared",
+    "positive coupling representative derivative",
+    "field reflection reverses coupling without changing energy along history",
+    "field reflection preserves potential along reflected history",
+    "field reflection preserves fixed-density curvature",
+    "physical dust normalization resolves scaling-family magnitudes"
+  ],
+  "source_bound_output_path": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_non_equilibrium_scalar/canonical_attempt01_repository/outputs/scalar_history_inverse/result.json",
+  "author_code_run_in_place": false,
+  "formal_pipeline_or_audit_run": false
+}

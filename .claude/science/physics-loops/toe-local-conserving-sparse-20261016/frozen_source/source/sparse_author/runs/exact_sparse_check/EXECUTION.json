@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-16T14:33:10.095990+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/runs/exact_sparse_check/SOURCE_AT_LAUNCH.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate",
+  "source_sha256": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+  "launcher_sha256": "791ff5d085f6b08bff9251c1e685e877b42d12b37f0613c6e82e8b812bb0e85f",
+  "wall_seconds_limit": 90,
+  "cpu_seconds_limit": 60,
+  "address_space_bytes_limit": 3221225472,
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt",
+  "exit_code": null,
+  "failure": "Launcher exception",
+  "elapsed_wall_seconds": 0.001940916758030653,
+  "finished_utc": "2026-10-16T14:33:10.099525+00:00",
+  "source_sha256_after": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "2b3be7de47b9b2d4465f18686e1841cba8556f8963b8830de7ad9ec6e45c114c"
+}

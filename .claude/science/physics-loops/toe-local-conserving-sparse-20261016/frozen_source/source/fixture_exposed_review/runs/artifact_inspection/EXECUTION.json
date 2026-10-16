@@ -1,0 +1,27 @@
+{
+  "kind": "actual_saved_artifact_inspection_and_floating_reanalysis",
+  "compiler_replay": false,
+  "gate_propagation": false,
+  "argv": [
+    "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/runs/artifact_inspection/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check",
+  "start_utc": "2026-10-16T15:31:40.957879+00:00",
+  "wall_timeout_seconds": 60,
+  "source_sha256": "676aa072d4053421f910370f368ff88d5d6b38c96e894d46e2058f7ff32a5422",
+  "launcher_sha256": "09c9c70e174fa2b4185ac4ffda28291bd787bfae31ddadfaffb1d7ae86c64fde",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "end_utc": "2026-10-16T15:31:41.460874+00:00",
+  "elapsed_seconds": 0.5021724589169025,
+  "stdout_bytes": 3878,
+  "stdout_sha256": "82a674252dcb9f2120bca87e64f37034046175ede01a33e878402403b6db8c77",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

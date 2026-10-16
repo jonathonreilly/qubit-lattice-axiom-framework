@@ -1,0 +1,83 @@
+{
+  "kind": "canonical_body_recovery",
+  "source_packet_freeze": "8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c",
+  "current_body_recovery_intervals": [
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "sparse_derivation",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_path": "source/sparse_author/DERIVATION.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "label": "sparse_derivation",
+      "start_byte": 13189,
+      "end_byte_exclusive": 43390
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "sparse_analytical_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+      "packet_path": "source/sparse_exposed_review/REVIEW.md",
+      "bytes": 25079,
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "label": "sparse_analytical_review",
+      "start_byte": 43421,
+      "end_byte_exclusive": 68500
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "sparse_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/sparse_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "label": "sparse_qualifications",
+      "start_byte": 68528,
+      "end_byte_exclusive": 77137
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "runtime_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/control_parent_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "label": "runtime_qualifications",
+      "start_byte": 77166,
+      "end_byte_exclusive": 88203
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "fixture_report",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/REVIEW.md",
+      "packet_path": "source/emitted_fixture/REVIEW.md",
+      "bytes": 12442,
+      "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649",
+      "label": "fixture_report",
+      "start_byte": 88224,
+      "end_byte_exclusive": 100666
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "fixture_exposed_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/REVIEW.md",
+      "packet_path": "source/fixture_exposed_review/REVIEW.md",
+      "bytes": 21515,
+      "sha256": "c1f7a257fbb824d868c3ca25c7ba9fc8d7504f2e532ca83b8851427afdae305d",
+      "label": "fixture_exposed_review",
+      "start_byte": 100695,
+      "end_byte_exclusive": 122210
+    },
+    {
+      "note": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "body_id": "fixture_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/fixture_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 4390,
+      "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc",
+      "label": "fixture_qualifications",
+      "start_byte": 122239,
+      "end_byte_exclusive": 126629
+    }
+  ]
+}

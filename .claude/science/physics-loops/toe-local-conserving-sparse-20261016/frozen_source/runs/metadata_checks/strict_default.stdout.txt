@@ -1,0 +1,25 @@
+{
+  "current_payload_files": 14,
+  "exact_final_inventory_checked": false,
+  "exact_final_inventory_members": null,
+  "fixture_disposition": "QUALIFIED_SINGLE_NUMERICAL_FIXTURE_AND_SAVED_ARTIFACT_INSPECTION",
+  "historical_receipts_bound": 4,
+  "history_records": 3,
+  "immediate_closures": 7,
+  "immutable_bodies": 7,
+  "kind": "read_only_metadata_verification",
+  "meaning": "Selected byte closure and receipt bindings only; no mathematical, interval, physical, canonical or publication certification.",
+  "null_bindings": [
+    "actual_git_base",
+    "canonical_parent",
+    "canonical_binding",
+    "canonical_acceptance",
+    "current_wrapper_review",
+    "publication",
+    "integration_driver"
+  ],
+  "primary_status": "UNBOUND",
+  "scientific_executions": 0,
+  "source_files": 131,
+  "status": "UNBOUND"
+}

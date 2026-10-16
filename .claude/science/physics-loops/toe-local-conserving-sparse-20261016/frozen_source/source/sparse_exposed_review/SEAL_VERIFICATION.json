@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-16T15:18:34.613019+00:00",
+  "kind": "actual_metadata_verification_before_seal",
+  "argv": [
+    "seal_packet.py"
+  ],
+  "scientific_execution": false,
+  "author_original_capture_identities_verified": 22,
+  "author_freeze_members_verified": 21,
+  "author_failure_and_success_receipt_source_launcher_streams_verified": true,
+  "prior_parent_review_and_freeze_unchanged": true,
+  "metadata_capture_receipt_sha256": "4354d0834b08e96bac5e06d6e224ab9cb75e341bb83cfa081aca2dc4a9315cb5",
+  "metadata_capture_source_launcher_and_full_streams_verified": true,
+  "review_bytes": 25079,
+  "review_sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+  "source_coverage_sha256": "336e9d5ddf4ab9374d12ad098444bf21a86862bb68ee67e4ee7fdc040ff42b56",
+  "scientific_programs_executed_by_reviewer": 0,
+  "scope": "Metadata checks and local sealing only; no scientific replay, approval, canonical or Git operation."
+}

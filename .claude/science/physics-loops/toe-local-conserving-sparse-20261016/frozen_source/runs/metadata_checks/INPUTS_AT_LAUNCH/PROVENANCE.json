@@ -1,0 +1,62 @@
+{
+  "kind": "source_only_qualified_sparse_publication_proposal",
+  "primary_status": "UNBOUND",
+  "mathematical_disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT",
+  "fixture_disposition": "QUALIFIED_SINGLE_NUMERICAL_FIXTURE_AND_SAVED_ARTIFACT_INSPECTION",
+  "actual_git_base": null,
+  "canonical_parent": null,
+  "canonical_binding": null,
+  "canonical_acceptance": null,
+  "current_wrapper_review": null,
+  "publication": null,
+  "retained_audit": false,
+  "rigorous_fixture_residual_certificate": false,
+  "independent_fixture_propagation": false,
+  "scientific_executions": 0,
+  "integration_driver": null,
+  "editable_prompt_files_changed": [],
+  "physical_axioms_changed": [],
+  "source_decisions": {
+    "sparse_acceptance": {
+      "packet_path": "source/sparse_root_decision/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3678,
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda"
+    },
+    "sparse_qualifications": {
+      "packet_path": "source/sparse_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    },
+    "runtime_acceptance": {
+      "packet_path": "source/control_parent_decision/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5279,
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509"
+    },
+    "runtime_qualifications": {
+      "packet_path": "source/control_parent_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305"
+    },
+    "fixture_acceptance": {
+      "packet_path": "source/fixture_root_decision/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3444,
+      "sha256": "449fed271fe190a1065c25c0fdf94fc75992e2a0511f35e258a7c6bd95b86021"
+    },
+    "fixture_qualifications": {
+      "packet_path": "source/fixture_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 4390,
+      "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc"
+    }
+  },
+  "historical_wrapper_review_only": {
+    "packet_path": "history/original_publication_review/REVIEW.json",
+    "bytes": 3549,
+    "sha256": "a33ef4f684fc567544a36da12d87a69588de29b10fc6815b6f1a26801b6e19fc"
+  },
+  "historical_draft_seal_only": {
+    "packet_path": "history/original_publication_FREEZE.json",
+    "bytes": 22129,
+    "sha256": "0903d917f7fffcde78c432acfe7ba11dae9c7bfd917c9f08f09a50293db67b72"
+  },
+  "qualification": "Source decisions authorize only their stated scopes. No current wrapper, canonical, physical, retained or publication acceptance is inferred."
+}

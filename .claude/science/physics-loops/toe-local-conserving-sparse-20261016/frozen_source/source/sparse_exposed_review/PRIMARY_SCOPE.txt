@@ -1,0 +1,1131 @@
+=== PDF PAGE 8 ===
+8
+0, whereas
+Q =
+
+
+1
+Q
+(1)
+1
+
+ ∈ SV U(1)
+2 , (33)
+i.e., has determinant 1 in all sectors with Hamming weights 0 ,
+1, and 2. Q
+(1) can be written in the basis of |01⟩ and |10⟩ as a
+single-qubit gate. For example,
+Q = exp(iαR ) − → Q(1) = exp(iαX )
+Q =
+√
+iSW AP − → Q(1) = exp(iπX/ 4)
+Q = exp(iα [Z1 − Z2]) − → Q(1) = exp(2iαZ ). (34)
+In particular, using the Euler decomposition for Q(1) as
+Q(1) = eiγZeiβYeiαZ for some α,β,γ ∈ (− π,π ], we ﬁnd
+thatQ has a decomposition as
+Q =ei γ
+2 (Z1− Z2)√
+iSw12ei β
+2 (Z1− Z2)√
+iSw
+†
+12ei α
+2 (Z1− Z2).
+(35)
+Furthermore,
+D =eiθ0Π(0) ± eiθ1/2Π(1) +eiθ2Π(2) (36a)
+=eiφ2Z1Z2 eiφ1(Z1+Z2)eiφ0 , (36b)
+whereθ 1 = arg(det(V1)) and
+4φ 0 =θ 0 +θ 1 +θ 2 =: Φ 0, (37a)
+8φ 1 = 2θ 0 − 2θ 2 =: Φ 1, (37b)
+4φ 2 =θ 0 − θ 1 +θ 2 =: Φ 2 : mod 2π. (37c)
+The phases Φl : l = 0, 1, 2 are called the l-body phase as-
+sociated to the unitary V [10]. It is worth noting that while
+neither of phases θ 0,θ 1,θ 2, or φ 0,φ 1,φ 2 are physically ob-
+servable, all thel-body phases, except Φ0, are observable. For
+instance, when V is the identity operator, Eq. (36b) holds for
+all
+φ 0 =φ 1 =φ 2 = kπ
+2 :k = 0, · · ·, 3,
+whereas for all 4 cases we have
+Φ0 = Φ 1 = Φ 2 = 0 : mod 2π.
+Note that Φ0 = 4φ 0 corresponds to a global phase. Further-
+more, Φ1 = 4φ 1 can be changed arbitrarily by applying the
+unitary exp(iφ 1(Z1 +Z2)), which can be realized with local
+Z interactions. On the other hand, as it follows immediately
+from Eq. (18) in Theorem 5, a general U(1)-invariant unitary
+V on a pair of qubits can be realized by XY interaction and
+localZ if, and only if its 2-body phase is zero, i.e.,
+Φ2 =θ 0 − θ 1 +θ 2 = 0 : mod 2π. (38)
+This constraint, for instance, excludes the SW AP and CZ
+gates, because for both of these operators 2-body phase is
+Φ2 =π .
+It is also worth mentioning that the matricesQ andD in de-
+composition in
+Eq. (32) are unique up to a freedom in choos-
+ingθ 1 orθ 1 +π . This freedom is related to the fact that both
+matrices
+(
+1
+1
+)
+,
+(
+− 1
+− 1
+)
+are in SU(2). Therefore, the component of Q in the sector
+with Hamming weight 1 is ﬁxed up to a plus/minus sign.
+B. 2-qubit semi-universality of the gate sets in Theorem 1
+As we will explain in the following, the above characteri-
+zation of 2-qubit energy-conserving unitaries immediately im-
+plies the semi-universality of gate sets 1 and 2 in Theorem 1,
+for the special case of n = 2 qubits. This, in particular, means
+that using any of these gate sets one can realize the family of
+unitaries
+exp(iαR ) : α = (− π,π ],
+whereR = (X ⊗ X +Y ⊗ Y )/ 2.
+Then, in the rest of the paper, we consider circuits that only
+contain this family of unitaries as well as the S gate and prove
+Theorem 1 for this gate set, which is a special case of gate set
+2 (In other words, we show how a general energy-conserving
+unitary can be realized with these elementary gates and a sin -
+gle ancilla qubit). This result combined with the following
+discussion proves
+Theorem 1 for gate sets 1 and 2. Crucially,
+as we will show below, the gates in each set can be constructed
+using the other gate set exactly, using a ﬁnite O(1) number of
+gates. Therefore, to implement a general energy-conservin g
+unitary, the number of required gates from each gate set is th e
+same for all gate sets, up to an O(1) constant.
+Note that, due to Z2 symmetry of XY interaction in
+Eq. (5),
+the gate set 3, which only includes exp(iαR ) : α = ( − π,π ]
+without single-qubit rotations around z, is not semi-unive rsal.
+However, as we will explain in Sec. VI F, this Z2 symmetry
+can be broken using a single ancilla qubit. It follows that in
+this case semi-universality is achievable with one extra qu bit.
+1. Semi-universality of gate set
+1
+First, consider the gate set
+√
+iSW AP, and exp(iφZ ) : φ ∈ (− π,π ]. (39)
+Eq. (35) already shows that any unitary in SV U(1)
+2 can be re-
+alized exactly with this gate set, using the following circu it:
+ei α
+2 Z
+√
+iSw
+ei β
+2 Z
+√
+iSw
+†
+ei γ
+2 Z
+e− i α
+2 Z e− i β
+2 Z e− i γ
+2 Z
+
+=== PDF PAGE 9 ===
+9
+where α,β and γ come from the Euler decomposition. It is
+also worth noting that one can save the number of gates at the
+cost of introducing relative phases between sectors with differ-
+ent Hamming weights, i.e., constructing an energy-conserving
+unitary outside SV U(1)
+2 . Note that in the decomposition of ma-
+trixQ in
+Eq. (35) eiα(Z1− Z2) = ei2αZ1e− iα(Z1+Z2), and the
+unitarye− iα(Z1+Z2) commutes with all other unitaries in this
+decomposition and can be absorbed in the diagonal matrix D.
+Similar argument works for eiβ(Z1− Z2) and eiγ(Z1− Z2). We
+conclude that, up to relative phases between sectors with di f-
+ferent Hamming weights, any 2-qubit energy-conserving cir -
+cuit has a decomposition as
+eiαZ √
+iSw
+eiβZ √
+iSw
+† eiγZ
+For future applications, it is also useful to consider the fo l-
+lowing realization of the unitary exp(iαR ) = exp(iα [XX +
+YY ]/ 2):
+eiαR =
+S √
+iSw
+e− iαZ/2
+√
+iSw
+† S†
+eiαZ/2
+Therefore, any circuit that involves gates exp(iαR ) for ar-
+bitrary values of α ∈ (− π,π ], can be transformed to a circuit
+that only involves gates
+√
+iSW AP and single-qubit rotations
+around z, and this increases the number of entangling gates
+by, at most, a factor of 2.
+2. V ariation of gate set 1: Heisenberg interaction
+A variant of the gate set in Eq. (39) is
+exp(iπR Heis/ 4), and exp(iφZ ) : φ ∈ (− π,π ], (40)
+whereRHeis := (X ⊗ X +Y ⊗ Y +Z ⊗ Z)/ 2 is the Heisenberg
+interaction. We observe that
+exp(iπR Heis/ 4) =
+√
+iSW APexp(iπZ 1Z2/ 8) (41a)
+= exp(iπZ 1Z2/ 8)
+√
+iSW AP. (41b)
+Since exp(iπZ 1Z2/ 8) commutes with the single-qubit rota-
+tions around z, in the above circuit we can replace
+√
+iSW AP
+with exp(iπR Heis/ 4). That is, any Q ∈ SV U(1)
+2 can be real-
+ized with the following circuit
+ei α
+2 Z
+ei π
+4 HHeis
+ei β
+2 Z
+e− i π
+4 HHeis
+ei γ
+2 Z
+e− i α
+2 Z e− i β
+2 Z e− i γ
+2 Z
+Hence, the gate set in Eq. (40) is semi-universal.
+3. Semi-universality with gate set 2
+Recall the map deﬁned in Eq. (34), which gives the matrix
+representation of the component of 2-qubit operators in the
+sector with Hamming weight 1, relative to |01⟩, |10⟩ basis.
+Applying this map we ﬁnd
+Hint − → H
+(1)
+int (42a)
+S1HintS†
+1 − → SH (1)
+int S† (42b)
+where H (1)
+int is a 2 × 2 Hermitian matrix and S1 = S ⊗ I
+denotes the S gate on the ﬁrst qubit. The fact that Hint is
+not diagonal in the computational basis implies that H (1)
+int is
+not diagonal. Then, we apply the following lemma which is
+shown in
+Appendix B.
+Lemma 8. Suppose H is a 2 × 2 non-diagonal Hermitian
+matrix. Then, any unitary U ∈ SU (2) has a decomposition
+as
+U =
+l∏
+j=1
+[
+exp(iα jH)S exp(iβ jH)S† ]
+, (43)
+where α j,β j ∈ R, and the length of this sequence, l, is
+bounded by a constant independent of U .
+This lemma together with the correspondence in Eq. (42)
+imply that any 2-qubit energy-conserving unitary Q ∈
+SV U(1)
+2 , has a decomposition as
+Q =
+l∏
+j=1
+[
+exp(iα jHint)S1 exp(iβ jHint)S†
+1
+]
+(44)
+where l, the length of this sequence, does not depend on Q.
+We conclude that any Q ∈ SV U(1)
+2 can be realized with
+HamiltonianHint andS gates, which means gate set 2 is semi-
+universal onn = 2 qubits.
+4. Example of gate set 2: XY interaction
+For XY interaction, the realization of a general 2-qubit
+energy-conserving unitary Q ∈ SV U(1)
+2 has a simple form.
+Applying the Euler decomposition toQ(1) deﬁned in Eq. (33),
+this time for the x and y axes, we obtain
+Q(1) =eiγXeiβYeiαX =eiγXSeiβXS†eiαX , (45)
+for γ,β,α ∈ (− π,π ]. Recall that by the correspondence in
+Eq. (34), in the subspace with Hamming weight 1 the action
+of exp(iαR ) relative to the basis |01⟩ and |10⟩ is described
+by the unitary exp(iαX ) and the action of S gate on the ﬁrst
+qubit is S = e
+iπ
+4 exp(− iπZ/ 4). It follows that an arbitrary
+
+=== PDF PAGE 10 ===
+10
+unitaryQ ∈ SV U(1)
+2 can be realized as by the circuit
+exp(iαR ) S†
+exp(iβR )
+S
+exp(iγR )
+5. Example of gate set 2: Heisenberg interaction
+Another canonical example of non-diagonal energy-
+conserving Hamiltonians is the Heisenberg interaction
+RHeis = (X ⊗ X +Y ⊗ Y +Z ⊗ Z)/ 2. In this case, again
+the decomposition in
+Eq. (44) ﬁnds a simple form, which can
+be seen by noting that
+Z1 exp(− iαR Heis)Z1 exp(iαR Heis)
+=Z1 exp(− iαR )Z1 exp(iαR )
+= exp(i2αR ), (46)
+where we have used the facts that RHeis = R +Z ⊗ Z/ 2,
+[R,Z ⊗ Z] = 0 , and (Z ⊗ I)R(Z ⊗ I) = − R. The circuit
+diagram is shown as follows:
+ei2αR = eiαRHeis
+Z
+e− iαRHeis
+Z
+Therefore, gates exp(iαR Heis) : α ∈ (− π,π ] together with
+S gate generate all gates in the previous example, which are
+semi-universal for forn = 2.
+C. Single-qubit rotations around z
+(Proof of Theorem 1 for the special case of n = 1)
+Using the above results, it can be easily shown that any
+single-qubit rotation around z axis can be realized using th e
+gate set 2 in Theorem 1, i.e.,S gates and exp(iαH int) : α ∈ R,
+and a single ancilla qubit. To see this note that the family of
+diagonal unitaries
+eiφZ ⊗ e− iφZ : φ ∈ (− π,π ], (47)
+are in SV U(1)
+2 and therefore are realizable by the aforemen-
+tioned gate set. Then, for any single-qubit state |ψ ⟩ ∈ C2, we
+have
+(eiφZ ⊗ e− iφZ)|ψ ⟩ ⊗ | 0⟩anc =e− iφeiφZ|ψ ⟩ ⊗ | 0⟩anc, (48)
+which means that, up to a global phase, unitary eiφZ can be
+realized on a system with n = 1 qubit, using a single ancilla
+qubit. This proves
+Theorem 1 for gate set 2 in the special case
+ofn = 1 qubit.
+It is worth noting that in the case of XY interaction the fol-
+lowing circuit realizes unitaries in Eq. (47)
+eiφZ
+e− iφZ
+= √
+iSw
+†
+S
+e2iφR
+S†
+√
+iSw
+IV . 3-QUBIT ENERGY-CONSERVING UNITARIES
+Next, we study 3-qubit energy-conserving unitaries and
+show how they can be realized with gates exp(iαR ) : α ∈
+(− π,π ] and S gate. These methods can then be general-
+ized to implement energy-conserving unitaries on an arbitr ary
+number of qubits. We start by constructing a useful 2-level 3 -
+qubit energy-conserving unitary, using only combinations of
+iSW AP andiSW AP† gates.
+A. A useful 2-level unitary: Two controlled- Z gates
+Using Eq. (31) one can easily show the identities
+iSw13 iSw†
+23 iSw12 iSw23 = exp(iπ
+4Z2[Z3 − Z1]) (49a)
+iSw13 iSw23 iSw12 iSw23 = − i exp(iπ
+4Z2[Z1 +Z3]),
+(49b)
+where iSwij denotes iSW AP gate on qubits i and j, deﬁned
+in Eq. (28). The second identity and similar other identities
+can be obtained by replacing iSwij with iSw†
+ij, or vice versa.
+It is worth noting that the speciﬁc combination of unitaries
+iSwij appearing in these identities has a nice interpretation
+in terms of the permutation group: Applying
+Eq. (31) to all
+iSwij in the left-hand side of Eq. (49), the left-hand side be-
+comes Sw 13Sw23Sw12Sw23, up to a diagonal unitary in the
+computational basis, where Sw ij denotes the SW AP unitary.
+However, this combination of swaps is equal to the identity
+operator, which can be seen from the basic properties of the
+permutation group. We conclude that iSw13iSw23iSw12iSw23
+is equal to a unitary diagonal in the computational basis, th at
+is determined by the right-hand side of
+Eq. (49).
+The ﬁrst identity implies that
+iSw13iSw†
+23iSw12iSw23S†
+1S3 = exp(iπ
+4 [(Z3 − Z1)(Z2 − I)])
+= |0⟩⟨0|2 ⊗ I13 + |1⟩⟨1|2 ⊗ Z1Z3 (50a)
+= CZ12CZ23. (50b)
+See Fig. 3 for the corresponding circuit identity. This unitary
+is diagonal in the computational basis and is 2-level, i.e., it
+acts non-trivially only on states |011⟩ and |110⟩, and it gives
+− 1 sign to both of these states. Note that using the second
+identity in Eq. (49) we can obtain a similar construction of
+this unitary using 4 iSW AP gates.
+
+=== PDF PAGE 11 ===
+11
+For future applications, we also note that Eq. (49) implies
+F123 := iSw13iSw†
+23iSw12 = (S1 ⊗ S†
+2 ⊗ Z3)CZ12Sw23
+(51)
+See
+Fig. 3 for the corresponding circuit identity. Also, note
+that changing each iSw gate to iSw† , or, vice versa, in the cir-
+cuit on the left-hand side is equivalent to changing S gate to
+S† and vice versa in the right-hand side. (This can be seen by
+considering the complex conjugate of both sides in the com-
+putational basis.)
+The SW AP and controlled-Z gates with an ancilla qubit
+Eq. (50b) immediately gives a method for realizing the
+controlled-Z gate: Suppose we prepare qubit 1 in state |0⟩.
+Then, the overall action of this circuit on qubits 2 and 3 will
+be CZ gate. Another important unitary transformation that can
+be realized in this way is the SW AP gate. In
+Fig. 1 we com-
+pare the circuit obtained in this way (the bottom circuit) wi th
+the standard way of implementing the SW AP unitary with 3
+iSW AP gates, which is originally presented in [
+9]. As ex-
+plained in the caption of Fig. 1, the realization of the SW AP
+gate with ancilla is more robust against certain types of err ors,
+such as the ﬂuctuations of the master clock. (It is also worth
+noting that the use of an ancilla has another advantage: by
+measuring the ancilla qubit at the end of the process in the z
+basis, it is possible to detect the presence of certain X errors
+in the circuit.)
+In
+Appendix C we present other examples of identities sim-
+ilar to Eq. (49). Such identities, for instance, imply that the
+gate controlled-Rz(− π
+2 ) can be realized using 3 iSW AP, 3√
+iSW AP gates and an ancilla qubit.
+B. General 2-level energy-conserving unitaries on 3 qubits
+Next, we show how general 2-level energy-conserving uni-
+taries in SV U(1)
+3 can be realized. Here, we adapt the approach
+developed in [ 42] for quantum circuits with general Abelian
+symmetries to the case of U(1) symmetry. To achieve this we
+use the gate F123 deﬁned in
+Eq. (51).
+First, note that sandwiching exp(iθR/ 2) on qubits 2 and 3
+withF123 andF †
+123 and using the facts thatS† ⊗ S† and SW AP
+commute withR, we obtain
+F †
+123S†
+3 exp(iθ
+2R23)S3F123 (52)
+= |0⟩⟨0|1 ⊗ exp(iθ
+2R23) + |1⟩⟨1|1 ⊗ exp(− iθ
+2R23),
+or, equivalently, the circuit identity
+S • • S† • •
+S† ×
+e
+iθR
+2
+× S =
+e
+iθR
+2
+S† • × × • S • •
+This implies
+exp(iθ
+2R23)F †
+123S†
+3 exp(i (− 1)bθ
+2 R23)S3F123 (53)
+= |b⟩⟨b|1 ⊗ I23 + |b⟩⟨b|1 ⊗ exp(iθR 23) =: Ub : b = 0, 1,
+which corresponds to the circuit in Fig. 4, whereb denotes the
+negation of b. This unitary is 2-level: it acts as exp(iθX ) in
+the 2D subspace
+spanC{| ˜0⟩ ≡ | b01⟩, |˜1⟩ ≡ | b10⟩} : b = 0, 1, (54)
+whereas it acts as the identity operator elsewhere. By sand-
+wiching the second (or, third) qubit between S† and S, we
+obtain the 2-level unitary
+S2UbS†
+2 =S†
+3UbS3 = |b⟩⟨b|⊗ I+|
+b⟩⟨b|⊗ exp(iθL 23) : b = 0, 1,
+(55)
+which acts as exp(iθY ) in the same 2D subspace, where we
+have deﬁned
+L = 1
+2 (Y ⊗ X − X ⊗ Y ) = (I ⊗ S† )R(I ⊗ S) (56a)
+= i(|10⟩⟨01| − | 01⟩⟨10|). (56b)
+Therefore, we can realize both x and y rotations in the 2D
+subspace in Eq. (54). Furthermore, applying the Euler decom-
+position in Eq. (45) for SU(2) unitaries, we can obtain a gen-
+eral SU(2) unitary in this 2D subspace.
+In conclusion, this way we can realize any 2-level 3-qubit
+energy-conserving unitary in the form of
+Λb(V ) := |¯b⟩⟨¯b| ⊗ I + |b⟩⟨b| ⊗ V : V =
+
+
+1
+V
+(1)
+1
+
+ ,
+(57)
+for any V
+(1) ∈ SU(2), with any of the sets 1 and 2 in
+Theorem 1. Here, Λb(V ) denotes a controlled gate that ap-
+plies V , when the control qubit is b, namely a controlled- V
+gate for b = 1 or an anti-controlled-V gate for b = 0 . The
+number of gates used in this construction is:
+1. 32 gates in set 2 (choosingHint =R), if we also allow
+the application of S† , or 40 gates if we implement S†
+asS3 in set 2;
+2. 80 gates in set 1, allowing
+√
+iSW AP
+†
+(one needs 6 gates
+to implement exp(± iθR ); see Sec. III B 1), or 152 if
+one implement iSW AP† as
+√
+iSW AP
+6
+and
+√
+iSW AP
+†
+as
+√
+iSW AP
+7
+.
+
+=== PDF PAGE 12 ===
+12
+iSw =
+× • S
+× • S
+Eq. (31)
+iSw
+iSw
+S†
+iSw iSw†
+S
+=
+•
+• •
+•
+Eq. (50b)
+F =
+iSw
+iSw
+iSw†
+=
+• S
+× • S†
+× Z
+=
+S •
+Z ×
+S† • ×
+Eq. (51)
+G = iSw
+iSw iSw†
+=
+• • × Z
+• • ×
+• •
+Eq. (101a)
+FIG. 3. Summary of useful circuit identities involving iSW AP andS gates.
+eiθR
+=
+iSw
+iSw iSw† iSw†
+iSw† e± iθR/2 iSw eiθR/2
+S S†
+FIG. 4. The circuit corresponding to Eq. (53): Assuming the gate in the middle (the ﬁfth gate) is exp(− iRθ/2) with R = (X ⊗ X +Y ⊗ Y )/2,
+this circuit implements controlled-exp(iθR), i.e., the 2-level 3-qubit unitary U1 deﬁned in Eq. (53). This family includes useful unitaries, such
+as controlled- iSW AP (corresponding to θ = π/2, which means the ﬁfth gate is
+√
+iSW AP
+†
+and the tenth gate is
+√
+iSW AP) as well as the
+controlled-
+√
+iSW AP (corresponding toθ = π/4, which means the ﬁfth gate is exp(− iπR/8) and the tenth gate is exp(iπR/8)). On the other
+hand, when the gate in the middle is exp(+iRθ/2), the circuit realizes U0 in Eq. (53), which applies exp(iθR/2) when the control qubit is
+in state |0⟩ rather than |1⟩. As we explain in the next section, using this construction r ecursively, we can obtain all energy-conserving 2-level
+unitaries with determinant 1.
+Example: controlled-iSW AP gate
+A useful unitary, which plays a crucial role in our construc-
+tion, is the 3-qubit gate controlled- iSW AP denoted as
+Λ1(iSW AP) = |0⟩⟨0| ⊗ I + |1⟩⟨1| ⊗ iSW AP. (58)
+This unitary can be realized by the circuit in Fig. 4. In partic-
+ular, this unitary corresponds to θ = π/ 2, in which case the
+ﬁfth and tenth gates in the circuit are
+√
+iSW AP
+†
+and
+√
+iSW AP
+gates, respectively.
+In summary, controlled-iSW AP can be realized with
+3 iSW AP+3 iSW AP† +1
+√
+iSW AP+1
+√
+iSW AP
+†
++1S +1S†.
+C. Semi-universality on 3 qubits
+By composing the above 2-level unitaries one can obtain
+any unitary Q ∈ SV U(1)
+3 . Recall that any such unitary has a
+decomposition as
+Q =
+
+
+
+
+1
+Q
+(1)
+Q(2)
+1
+
+
+
+ , (59)
+where Q
+(1),Q (2) ∈ SU(3) act on the subspaces with Ham-
+ming weights 1 and 2, respectively. According to Lemma 12
+to be shown later, any unitary in SU (3) can be decomposed
+into 3 2-level unitaries in SU(3). We conclude that any 3-qubit
+energy-conserving unitary Q ∈ SV U(1)
+3 has a decomposition
+in the form of
+Fig. 5, where each gate in this circuit is a 2-level
+energy-conserving unitary in the form of Eq. (57).
+
+=== PDF PAGE 13 ===
+13
+Q =
+FIG. 5. The circuit for implementing arbitrary unitaries in SV U(1)
+3 , i.e., all 3-qubit energy-conserving unitaries with the pr operty that the
+determinant of the component of unitary in each Hamming weig ht sector is 1. Here, each gate is in the form of
+Eq. (57) and hence can be
+realized by composing 3 circuits in the form of Fig. 4.
+C-exp(iθR ) 2-level SV U(1)
+3
+(
+Sec. IV B)
+S and exp(iθR )
+C-iSW AP
+Step 1
+2-level special unitary,
+w(b) = w(b′)
+d(b, b′) = 2
+Step 2
+2-level special unitary,
+w(b) = w(b′)
+Step 3
+Semi-universality
+SV U(1)
+n
+Step 4
+Universality
+V U(1)
+n
+Ancilla qubit
+× 3
+×O (1) ×O (1)
+×O (n2)
+× 1
+×O (n) ×O
+(
+4n
+√ n
+)
+× 1
+×O (n)
+× 1
+FIG. 6. Overview of the method for synthesizing general ener gy-conserving unitaries. The number on the arrow pointing f rom one box A to
+another box B indicates the number of uses of A in the construction of B. C- exp(iθR) denotes controlled-exp(iθR) which can be realized
+with the circuit in Fig. 4.
+V . SYNTHESIS OF GENERAL ENERGY-CONSERVING
+UNITARIES WITH XY AND Z INTERACTIONS
+In this section, we explain how general energy-conserving
+unitaries can be obtained from 2-level 3-qubit unitaries co n-
+structed in Section IV B. In the following, for any pair of bit
+strings b, b′ ∈ { 0, 1} n, d(b, b′) := ∑n
+j=1 |bj − b′
+j| denotes
+their Hamming distance, i.e., the number of bits taking diff er-
+ent values in b and b′.
+Our construction, which is illustrated in
+Fig. 6, is based on
+the following steps:
+1. Synthesizing 2-level special unitaries acting on any two
+basis elements |b⟩ and |b′⟩, with Hamming weights
+w(b) = w(b′), and Hamming distance d(b, b′) = 2
+(See
+Lemma 9).
+2. Generalizing the previous step to the case of arbitrary
+Hamming distanced(b, b′) (See
+Corollary 11).
+3. Synthesizing the subgroup SV U(1)
+n , deﬁned in
+Eq. (13).
+4. Synthesizing the group of all energy-conserving uni-
+taries, denoted by V U(1)
+n .
+Note that only in the last step, one needs to use a single an-
+cilla qubit. It is also worth noting that some of the techniqu es
+that are used in the proofs of Steps
+1 to 3 follow similar con-
+structions that have been developed previously in the quantum
+circuit theory for circuits without symmetry constraints ( See
+[1] and [ 2]). In Step 4, where we use an ancilla qubit, we
+apply a technique that was developed previously in [ 42].
+Step 1: Basis elements with equal Hamming weights and
+Hamming distance 2
+First, we show that by applying the construction in Fig. 4
+recursively, we can realize any unitary in the form V =
+U (1)(b, b′), deﬁned in Eq. (21), where d(b, b′) = 2 ,w(b) =
+w(b′), and U (1)(b, b′) acts unitarily on the 2-dimensional
+subspace spanned by |b⟩ and |b′⟩ and satisﬁes
+det(V ) = det(U (1)(b, b′)) = 1 . (60)
+Here, we denote the 2 × 2 unitary as U (1) since, as we will
+see below in Eq. (62), we will think of it as the component of
+a 2-qubit unitary U in the sector with Hamming weight 1.
+For simplicity of presentation, we relabel the qubits such
+that the common bits of b and b′ are labelled from 1 to k =
+n − 2, and the two different bits of b and b′ are labeledn − 1
+andn. Rearranging the qubits in this way, noting that b and
+b′ have equal Hamming weights and Hamming distance 2, we
+can write
+|b⟩ = |c⟩|0⟩|1⟩, |b′⟩ = |c⟩|1⟩|0⟩, (61)
+where c ∈ { 0, 1} n− 2 contains the common bits of b and b′.
+With this deﬁnition the target gate U (1)(b, b′) can be written
+as a multi-controlled SV U(1)
+2 gate as
+U
+(1)(b, b′) = Λ c(U ), U =
+
+
+1
+U
+(1)
+1
+
+ , (62)
+
+=== PDF PAGE 14 ===
+14
+where
+Λc(U ) :=
+∑
+c′ ̸=c
+|c′⟩ ⟨c′| ⊗ I + |c⟩ ⟨c| ⊗ U , (63)
+is a controlled-unitary with control string c.
+Now we use a recursive construction of the circuit for
+Λc(U ). (Here, we are applying a technique that was origi-
+nally used in [ 1, 2] for general quantum circuits.) We de-
+compose c as c = c1c2, where c1 has length ⌊k/ 2⌋ and c2
+has length ⌈k/ 2⌉ . Since U (1) ∈ SU(2), there exists oper-
+ators A(1),B (1) ∈ SU(2) such that A(1)B(1)A(1)†B(1)† =
+U (1). (To see this, note that a general SU(2) unitary
+U (1) is equal to exp(iθZ ), up to a change of basis, as
+U (1) = W exp(iθZ )W † . Then, one can choose A(1) =
+W exp(iθZ/ 2)W † andB(1) = iWXW † .)
+Let A := 1 ⊕ A(1) ⊕ 1 and B := 1 ⊕ B(1) ⊕ 1 be the
+extensions of A(1) andB(1) to 2-qubit unitaries, in the same
+wayU extendsU (1) to a 2-qubit unitary. Then ABA†B† =
+U . We can therefore decompose Λc(U ) as
+Λc(U ) = Λ c1(A)Λc2(B)Λc1 (A† )Λc2(B† ), (64)
+with the ﬁrst ⌊k/ 2⌋ qubits being the control qubits for Λc1 (A)
+and Λc1(A† ), and the next ⌈k/ 2⌉ qubits being the control
+qubits for Λc2(B) and Λc2(B† ), as shown in Fig. 7.
+B† A† B A
+...
+...
+...
+...
+c2
+c1
+c2
+c1⌊k/ 2⌋
+⌈k/ 2⌉
+FIG. 7. Circuit of a controlled gate with k control qubits (See
+Eq. (64)).
+With this decomposition, we realize Λc(U ) with 4
+controlled-unitaries, namely Λc1 (A), Λc2 (B), Λc1(A† ) and
+Λc2 (B† ), each of which has ⌊k/ 2⌋ or ⌈k/ 2⌉ number of control
+qubits. We can recursively decompose each of the 4 unitaries
+into gates with less number of control qubits, and ﬁnally rea ch
+thek = 1 case. Note that when k = 1 , the single-controlled
+gate Λc(U ) is a 2-level SV U(1)
+3 gate whose implementation
+has been addressed in
+Sec. IV B. This gives the base case of
+the recursion.
+The number of 2-level SV U(1)
+3 gates in this recursive con-
+struction is given by the following lemma, which applies an
+argument previously used in the quantum circuit theory
+6.
+Lemma 9. F or any pair of bit strings b, b′ ∈ { 0, 1} n with
+equal Hamming weights and Hamming distance 2, any 2-level
+unitary with determinant 1, which acts non-trivially only i n
+the subspace spanned by |b⟩ and |b′⟩ can be realized with
+no more than 9n2/ 8 number of 3-qubit controlled gates in
+Eq. (53), which all belong to SV U(1)
+3 and can be realized with
+the circuit in Fig. 4.
+Proof. Let T (k) be the number of 3-qubit controlled gates
+used to implement a gate in the form of Λc(U ) with |c| = k
+control qubits. Based on the circuit in Fig. 7, we obtain the
+recursive relation:
+T (k) = 2T
+(⌊ k
+2
+⌋)
++ 2T
+(⌈ k
+2
+⌉)
+, k ≥ 2 (65a)
+T (1) = 1 (65b)
+We will prove by induction that
+T (k) ≤
+{
+(9k2 − 1)/ 8 k is odd
+(9k2 − 4)/ 8 k is even (66)
+T (1) = 1,T (2) = 4 satisfy the inequality. For k ≥ 3, assum-
+ing the inequality holds for all smaller k,
+1. If k is even, T (k) = 4 T (k/ 2) ≤ 4 × 9(k/2)2− 1
+8 =
+9k2− 4
+8 ;
+2. If k is odd, then one of ⌊k/ 2⌋ = k− 1
+2 and ⌈k/ 2⌉ =
+k+1
+2 is even, and the other one is odd. In ei-
+ther case, T (k) = 2 T
+( k− 1
+2
+)
++ 2T
+( k+1
+2
+)
+≤ 2 ×(
+9( k− 1
+2 )2
+8 + 9( k+1
+2 )2
+8 − 1
+8 − 4
+8
+)
+= 9k2− 1
+8 .
+Therefore, Eq. (66) holds for everyk ≥ 1.
+To implement an n-qubit 2-level gate on the subspace
+spanned by |b⟩ and |b′⟩, we need to implement a controlled
+gate with n − 2 control qubits. The number of 3-qubit gates
+used is therefore T (n − 2) ≤ 9n2/ 8.
+Step 2: Basis elements with equal Hamming weights
+Next, using the construction developed in Step 1, we show
+how one can implement general 2-level unitaries that preser ve
+the Hamming weight of states in the computational basis. The
+technique used here is a variation of a similar technique tha t
+has been previously used for general quantum circuits [
+1].
+Lemma 10. F or a system with n qubits, consider a 2-level
+unitary transformation V that acts trivially on the subspace
+orthogonal to |b⟩, |b′⟩, where b, b′ ∈ { 0, 1} n are a pair of bit
+6 See Chapter 8.1.3 of [ 1], or Exercise 4.30 of [ 2]
+
+=== PDF PAGE 15 ===
+15
+strings with equal Hamming weights. Any such unitary can be
+decomposed as
+V =K †WK , (67)
+whereW is also a 2-level unitary that acts on the subspace
+spanned by |b′⟩ and |b′′ ⟩, where b′, b′′ ∈ { 0, 1} n have equal
+Hamming weights and have Hamming distanced(b′, b′′ ) = 2 ,
+and unitaryK can be realized as a sequence of d(b, b′)/ 2 − 1
+controlled-iSWAP gates.
+We conclude that
+Corollary 11. Any 2-level unitary with determinant 1, acting
+on a pair of basis elements |b⟩ and |b′⟩ with equal Hamming
+weights can be realized withd(b, b′)/ 2 − 1 controlled-iSWAP,
+d(b, b′)/ 2 − 1 controlled-iSWAP† gates, plus one 2-level gate
+of the type constructed in Step 1. In total this requires O(n2 +
+d(b, b′)) = O(n2) of gates in any of the gate sets 1 and 2 in
+Theorem 1.
+Proof. (Lemma 10) For any pair of bit strings b and b′, there
+exists a sequence of n-bit strings as
+b = b0 → b1 → · · · → bt = b′ , (68)
+such that (i) all bit strings in this sequence have equal Ham-
+ming weights, (ii) For any pair of consecutive bit strings bj
+and bj+1 the Hamming distance is 2, and (iii) The length of
+this sequence is t + 1, wheret =d(b, b′)/ 2.
+This sequence of bit strings is realized by applying t + 1
+swaps that can be determined as follows: Suppose we specify
+each bit by its label (i.e., its location) which is an integer i ∈
+{ 1, · · ·,n } , such that b = b1 · · ·bi · · ·bn. Consider the bits
+in which b and b′ take different values. There are d(b, b′)
+such bits, where d(b, b′) is the Hamming distance of b and
+b′, which is an even integer because they have equal Hamming
+weights. These bits can be partitioned into two subsets, eac h
+having size t := d(b, b′)/ 2 with the following property: bits
+in the ﬁrst subset take value 0 in b and take value 1 in b′. And,
+the bits in the second subset take value 1 in b and take value 0
+in b′. More precisely, let
+l1,l 2, · · ·,l t
+bet distinct integers in { 1, · · ·,n } whereblj = 1 andb′
+lj = 0
+forj = 1,...,t . Similarly, let
+r1,r 2, · · ·,r t
+bet distinct integers in { 1, · · ·,n } wherebrj = 0 andb′
+rj = 1
+forj = 1,...,t . Then, deﬁne
+|bj⟩ = SW APlj ,rj |bj− 1⟩, (69)
+where |b0⟩ = |b⟩, and SW APlj ,rj is the SW AP unitary acting
+on qubits lj andrj. In this way, we obtain a sequence of bit
+strings in the form of
+Eq. (68) satisfying the desired proper-
+ties.
+In general, the gate SW AP lj ,rj acts non-trivially on state
+|b′⟩. Now, suppose rather than this gate, we use controlled-
+iSW AP, with the control qubit chosen to differentiate |b′⟩ and
+|bj− 1⟩. Namely, we choose
+Λ1
+lj+1 (iSwlj ,rj )|bj− 1⟩ = i|bj⟩ (70a)
+Λ1
+lj+1 (iSwlj ,rj )|b′⟩ = |b′⟩, (70b)
+where the unitary in the left-hand side is controlled- iSW AP,
+i.e.,
+Λ1
+lj+1 (iSwlj ,rj ) = |0⟩⟨0|lj+1 ⊗ Ilj ,rj + |1⟩⟨1|lj+1 ⊗ iSwlj ,rj ,
+(71)
+where lj+1 is the control qubit, and lj and rj are the target
+qubits. This gate acts trivially on state b′ since by the above
+deﬁnition,b′
+lj+1 = 0 for everyj = 0,...,t − 1.
+Then, deﬁning
+K = Λ 1
+lt(iSwlt− 1,rt− 1 ) · · · · · ·Λ1
+l3 (iSwl2,r2)Λ1
+l2(iSwl1,r1),
+(72)
+we ﬁnd
+K|b⟩ = it− 1|bt− 1⟩ (73a)
+K|b′⟩ = |b′⟩. (73b)
+Therefore, by deﬁning
+W =KVK † , (74)
+we ﬁnd that W is a 2-level unitary acting on the subspace
+spanned by |b′′ ⟩ = |bt− 1⟩ and |b′⟩, where d(b′, b′′ ) = 2 .
+More explicitly, ifV =U (b, b′) with
+U =
+(
+a b
+c d
+)
+, (75)
+thenW = ˜U (b′′, b′) with
+˜U =
+(
+it− 1
+1
+)
+U
+(
+i1− t
+1
+)
+=
+(
+a it− 1b
+i1− tc d
+)
+. (76)
+This completes the proof of
+Lemma 10.
+Step 3: Semi-universality
+As deﬁned in Eq. (13), we call a gate set semi-universal if
+it generates all unitaries in SV U(1)
+n for all n, i.e., all energy-
+conserving unitaries V = ⨁n
+m=0V
+(m) satisfying the addi-
+tional constraint det (V (m)) = 1 : m = 0, · · ·,n . It can be
+easily shown that any such unitary can be decomposed into
+a sequence of 2-level energy-conserving unitaries that sat isfy
+the same constraint. To show this we use the following result .
+Lemma 12. [57] Given any basis for Cd, any unitary in
+SU(d) can be decomposed into a product of no more than
+d(d − 1)/ 2 unitaries in SU (d) that are 2-level with respect
+to this basis.
+
+=== PDF PAGE 16 ===
+16
+This lemma is a slight variation of a similar result in [ 57],
+which does not impose any constraints on the determinant
+of 2-level unitaries (See also [
+1, 2]). For completeness, we
+present the proof in Appendix D.
+Recall that in the decompositionV = ⨁n
+m=0V
+(m), unitary
+V (m) acts on the subspace with Hamming weight m, which
+has dimension
+( n
+m
+)
+. Then, applying this lemma, we ﬁnd that
+V (m) can be realized with
+1
+2
+( n
+m
+)
+×
+[( n
+m
+)
+− 1
+]
+2-level energy-conserving unitaries, each of which acts on
+two computational basis vectors in the subspace of Hamming
+weightm, has determinant 1, and can be constructed with the
+method in
+Step 2.
+In conclusion, the total number of 2-level gates needed to
+implementV is
+1
+2
+n− 1∑
+m=1
+( n
+m
+) [( n
+m
+)
+− 1
+]
+=
+( 2n
+n
+)
+− 2n
+2 ≈ 4n
+2√ πn , (77)
+where ≈ means the ratio of two sides goes to 1, in the limit
+n → ∞ .
+Combining this with Corollary 11 we conclude that
+Proposition 13. Any energy-conserving unitary in SV U(1)
+n
+can be realized with O(4nn3/2) gates in any of the gate sets
+1 and 2 in Theorem 1, without ancillary qubits.
+Here, to count the number of gates, one can use the dia-
+gram in Fig. 6: Recall that controlled- iSW AP can be realized
+using the circuit in Fig. 4, which requires O(1) gates in one
+of the aforementioned gate sets. Therefore, the total requi red
+number of elementary gates is
+[
+O(n2) + O(n)
+]
+× O
+( 4n
+√ n
+)
+= O(4nn3/2). (78)
+Note that, in general, if the desired unitary acts non-trivially
+only on a subspace spanned by D ≤ 2n basis elements, then
+from Lemma 12 it can be decomposed into no more than
+D(D − 1) = O(D2) 2-level unitaries. Hence, any such uni-
+tary can be implemented with [O(n2) + O(n)] × O (D2) =
+O(n2D2) elementary gates in Theorem 1.
+Step 4: Universality
+Finally, applying a mechanism developed in [ 42], we show
+how one can achieve universality using a single ancillary
+qubit. It is worth noting that this technique can be applied t o
+symmetric circuit with any arbitrary Abelian symmetry (See
+Lemma 5 of [
+42]).
+Let |b⟩ be an arbitrary element of the computational basis
+{| 0⟩, |1⟩} ⊗ n, other than |0⟩⊗ n. Then, there is (at least) one
+qubit with reduced state |1⟩. Let |b′⟩ be the n-qubit state ob-
+tained from |b⟩ by changing the state of this qubit from |1⟩ to
+|0⟩. Deﬁne the Hamiltonian
+˜Hb = |b⟩⟨b| ⊗ | 0⟩⟨0|anc − | b′⟩⟨b′| ⊗ | 1⟩⟨1|anc. (79)
+Note that (n + 1) -qubit states |b⟩|0⟩anc and |b′⟩|1⟩anc have
+equal Hamming weights and their Hamming distance is 2.
+Furthermore, this Hamiltonian is traceless, which means
+exp(i ˜Hbθ ) has determinant 1. It follows from
+Step 1 that this
+2-level energy-conserving unitary can be implemented with -
+out ancilla. Implementing this unitary on the system and an-
+cilla we obtain state
+exp[i ˜Hbθ ](|ψ ⟩⊗| 0⟩anc) =
+(
+exp[iθ |b⟩⟨b|]|ψ ⟩
+)
+⊗| 0⟩anc, (80)
+where |ψ ⟩ ∈ (C2)⊗ n is the initial state of n qubits in the
+system. Since the state of ancilla qubit remains unchanged,
+we can reuse again in a similar fashion. Therefore, in this
+way we can realize the unitary exp(i|b⟩⟨b|θ ). We can apply
+this procedure to any sector, except the sector with Hamming
+weightm = 0 , which corresponds to state |0⟩⊗ n. It follows
+that using (n − 1) 2-level unitaries we can realize any unitary
+in the form
+D = |0⟩⟨0|⊗ n +
+n∑
+m=1
+exp(iθ m) |bm⟩ ⟨bm| , (81)
+for any arbitrary θ 1,...,θ n ∈ (− π,π ], where |bm⟩ is an ar-
+bitrarily selected basis element in the sector with Hamming
+weightm.
+Finally, recall that any energy-conserving unitary V can
+be decomposed as V = eiθ0DQ, where eiθ0 = V
+(0) =
+⟨0|⊗ nV |0⟩⊗ n, D is in the form of Eq. (81), with θ m =
+arg(det(V (m))) − θ 0 for 1 ≤ m ≤ n, and Q ∈ SV U(1)
+n .
+As mentioned above, D can be implemented with an ancil-
+lary qubit. Furthermore, in the previous section we saw how
+Q ∈ SV U(1)
+n can be implemented without ancillary qubits.
+Note that the unitary generated by Hamiltonian in
+Eq. (79)
+is of the type we studied in Step 1 of this construction, and
+therefore can be realized with no more than 9(n + 1)2/ 8 gates
+(n + 1 qubits including one ancilla qubit) in SV U(1)
+3 . In total,
+this step requires O(n2) elementary gates.
+In conclusion, any energy-conserving unitary can be real-
+ized, up to a global phase, with one ancillary qubit. Further -
+more, using the diagram in
+Fig. 6 and Eq. (78), we ﬁnd that
+this construction requires
+O(4nn3/2) + O(n2)(n − 1) = O(4nn3/2), (82)
+gates in one of these elementary gate sets, which completes
+the proof of
+Theorem 1 for sets 1 and 2.
+VI. REALIZING ALL ENERGY-CONSERVING
+UNITARIES WITH XY INTERACTION ALONE
+So far in this paper, we have considered circuits that contain
+both XY interaction as well as single-qubit rotations aroun d
+the z axis. In this section, we focus on synthesizing quan-

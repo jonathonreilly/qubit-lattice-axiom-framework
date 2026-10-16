@@ -1,6 +1,6 @@
 {
- "edge_count": 16148,
- "node_count": 7193,
+ "edge_count": 16149,
+ "node_count": 7194,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14456,6 +14456,10 @@
   },
   "local_conserving_preparation_bounded_theorem_note_2026-10-16": {
    "deps_hash": "1e4bf801d7dc",
+   "out_degree": 1
+  },
+  "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
    "out_degree": 1
   },
   "local_electric_completions_and_postbirth_field_phase_bounded_theorem_note_2026-09-24": {

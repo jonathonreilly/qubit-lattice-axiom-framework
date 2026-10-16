@@ -1,0 +1,39 @@
+{
+  "editable_prompt_files_changed": [],
+  "execution": "runs/attempt_01/EXECUTION.json",
+  "execution_count": 1,
+  "mutations_outside_new_packet": [],
+  "parents": [
+    {
+      "bytes": 30201,
+      "coverage": "Complete source refreshed/read in this task; authored previously.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_copy": "sources/sparse_DERIVATION.md",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "bytes": 3916,
+      "coverage": "Identity refreshed; existing freeze was not changed.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/FREEZE.json",
+      "packet_copy": "sources/sparse_FREEZE.json",
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    },
+    {
+      "bytes": 31922,
+      "coverage": "Sections 4-6 relevant generators, phases, timing and work reread; full source authored/read previously.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "packet_copy": "sources/control_DERIVATION.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    }
+  ],
+  "primary_literature": {
+    "previously_pinned_pdf_sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+    "title": "Bai and Marvian, Synthesis of Energy-Conserving Quantum Circuits with XY interaction",
+    "url": "https://arxiv.org/pdf/2309.11051v3",
+    "use": "Indirect mathematical parent via pinned source; relevant arguments read in the preceding author tasks, not newly reread/downloaded here."
+  },
+  "review_exposure": "Same author and inherited model/reasoning; root independent review directories unread; sparse source not promoted.",
+  "scientific_launcher_sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5",
+  "scientific_source_sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8",
+  "scope": "One exposed author-produced numerical emitted-word fixture; no general certification."
+}

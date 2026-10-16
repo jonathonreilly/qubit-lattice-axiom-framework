@@ -1,0 +1,12 @@
+{
+  "kind": "exact_direct_mathematical_parent_binding",
+  "direct_canonical_parents": [
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    }
+  ],
+  "git_base": null,
+  "scope": "The author fixed-duration local-control argument and its qualifications are in this parent. Existing finite-lift core is transitive; no preparation/runtime composition is newly claimed."
+}

@@ -1,0 +1,69 @@
+{
+  "author_actual_propagation": {
+    "bytes": 2130,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/EXECUTION.json",
+    "sha256": "fb0fa13bec56ba4560fd7bd3a59671a0a0e4cc3f293cd3f4834f7b9d6895f145"
+  },
+  "canonical_acceptance": null,
+  "controlling_qualifications": {
+    "bytes": 4390,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/FINAL_QUALIFICATIONS.md",
+    "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc"
+  },
+  "editable_prompt_files_changed": [],
+  "exposed_saved_artifact_reanalysis": {
+    "bytes": 1303,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/runs/artifact_inspection/EXECUTION.json",
+    "sha256": "d21c5a582c4a4833c09436c3833fdd25dbd99651dd7218ece774368f525ce9bb"
+  },
+  "independence_limit": "Exposed same-selected-model check; exact saved-route inspection and floating reanalysis, no independent compiler propagation.",
+  "observed_evidence": {
+    "ancilla_leakage": 1.203455149051588e-14,
+    "complete_isometry_residual": 2.9508448902312835e-13,
+    "logical_gates": 6384,
+    "mutant_exact_prediction": "24/13",
+    "mutant_residual": 1.8461538461538018,
+    "positive_endpoint_residual": 5.44294855010996e-12,
+    "route_upper_bound": 44688,
+    "routed_gates": 24720
+  },
+  "publication": null,
+  "retained_audit": false,
+  "rigorous_residual_certificate": false,
+  "root_scientific_executions": 0,
+  "source_packets": [
+    {
+      "body": {
+        "bytes": 12442,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/REVIEW.md",
+        "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649"
+      },
+      "freeze": {
+        "bytes": 3788,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/FREEZE.json",
+        "sha256": "2b62a1ba9241999824241c41f191674c3a66c0829185e5bc6ea76052fcc40582"
+      },
+      "verified_members": 22
+    },
+    {
+      "body": {
+        "bytes": 21515,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/REVIEW.md",
+        "sha256": "c1f7a257fbb824d868c3ca25c7ba9fc8d7504f2e532ca83b8851427afdae305d"
+      },
+      "freeze": {
+        "bytes": 7323,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/FREEZE.json",
+        "sha256": "415bcee1e080367afb77363df79b9e41163c349bcdf44e70710b31dd5137350e"
+      },
+      "verified_members": 39
+    }
+  ],
+  "sparse_theorem_acceptance": {
+    "bytes": 3678,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+    "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda"
+  },
+  "status": "qualified support for one numerical emitted fixture and separately checked saved-artifact structure",
+  "utc": "2026-10-16T15:51:19.016894+00:00"
+}

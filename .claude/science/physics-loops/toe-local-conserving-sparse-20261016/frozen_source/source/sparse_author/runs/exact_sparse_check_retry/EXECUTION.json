@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-16T14:33:31.332582+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/runs/exact_sparse_check_retry/SOURCE_AT_LAUNCH.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate",
+  "source_sha256": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+  "launcher_sha256": "62b650f712efd67b9aeef27a8ae95e5acde811bd43a2971405ed51a27557bc37",
+  "wall_seconds_limit": 90,
+  "cpu_seconds_limit": 60,
+  "address_space_bytes_limit": null,
+  "retry_reason": "Original launch failed in preexec_fn before scientific source started; retry removes address-space limit, preserves 90s wall/60s CPU bounds. Exact preexec failure cause was not exposed.",
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt",
+  "exit_code": 0,
+  "elapsed_wall_seconds": 1.4818634581752121,
+  "finished_utc": "2026-10-16T14:33:32.814989+00:00",
+  "source_sha256_after": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+  "stdout_sha256": "35c1f6fdaf4c0c240ac2cc4c2359263debffda5c43295c3728abbf5671d29b41",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

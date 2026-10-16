@@ -1,0 +1,39 @@
+{
+  "kind": "actual_local_conserving_sparse_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "actual_git_base": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "bound_note_sha256": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0c87d3be9af2418d0de0175251998f83dbc1a3cd46a2b943640410dd81990394.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0da27d48c154171d0fd975bcf554d3f10862c9414925157481ae26fbc2b02433.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/1921469ba53746b85df3d36febffd3f1213f5c66cf59514825c065232ecbf4b7.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/354a3b8a1605759b74708a45c33aafe27fdb622ad7b402c0efaa6c29330f9606.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3d5604eab20b799db4862ce095a23dbf5b2816f2f48b77692919afcfc5acc6f4.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4d0d6b112e46ec0a20b4aad89637f7245aea141d6420bb6a4d781220a644f9c6.md",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4db683d3c480902089122fdd83c2365ecf5fe43d72bc4aabc9c76c9ff006e81b.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4ed7f802f5edf2b7b3ba8dcfc13decac3d07bd2285be11c635e62d4f440b180e.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/61a639668b2e4e1b98234a6ac2cf9ab9cc2c5c152444315554c6db948ee2c050.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/7d8b52e99b020407bd908ca63e7a4d43fcaa965e10805be47d1adf8848036d94.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8628a1a473daf3c17bae6f48ed1dfd528e3d81a482162218f3bb1345fcf6f989.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8efb46edb72d27350474575a9123325593d686bc7045ed5c0396270fa6ac97ae.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9927849edd289e7ce206e0abb06d0908a9cc760d0b3dc749c7961c096e607f18.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a66128973140423a4a080e08411dfbb450ee8f1145e7b9342473609d4b5ec299.md",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2e9392fd3b68228839cf8959b72abc792474c0515e3e8881a0593946dcae942.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/ef66b9de63abdb41c735e3f26e17f05a77f92d9c2fd43dc0e9abe85b540340e4.json"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0.json",
+    "bytes": 92467,
+    "sha256": "60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0"
+  }
+}

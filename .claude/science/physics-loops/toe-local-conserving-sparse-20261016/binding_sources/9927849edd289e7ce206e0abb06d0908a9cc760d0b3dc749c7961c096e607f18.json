@@ -1,0 +1,69 @@
+{
+  "kind": "root_qualified_sparse_publication_source_review",
+  "utc": "2026-10-16T16:29:14.755516+00:00",
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "root_read_complete": true,
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_qualified_publication_draft/FREEZE.json",
+    "bytes": 31807,
+    "sha256": "8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_qualified_publication_draft/THEOREM_NOTE.md",
+    "bytes": 10520,
+    "sha256": "4d0d6b112e46ec0a20b4aad89637f7245aea141d6420bb6a4d781220a644f9c6"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_qualified_publication_draft/SOURCE_MANIFEST.json",
+    "bytes": 59056,
+    "sha256": "0c87d3be9af2418d0de0175251998f83dbc1a3cd46a2b943640410dd81990394"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_qualified_publication_draft/verify_provenance.py",
+    "bytes": 10194,
+    "sha256": "cd890636262655c771d56dde5273dc8993adafdb2408dd784fbeb611255d97c7"
+  },
+  "metadata_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_qualified_publication_draft/runs/metadata_checks/EXECUTION.json",
+    "bytes": 7900,
+    "sha256": "068762fd60f160ddedcd37adc64f9261ec1c91dd3271fc9b76562f679d487038"
+  },
+  "source_files": 131,
+  "history_records": 3,
+  "immutable_bodies": 7,
+  "metadata_verification": {
+    "kind": "read_only_metadata_verification",
+    "primary_status": "UNBOUND",
+    "source_files": 131,
+    "immediate_closures": 7,
+    "history_records": 3,
+    "immutable_bodies": 7,
+    "current_payload_files": 14,
+    "historical_receipts_bound": 4,
+    "fixture_disposition": "QUALIFIED_SINGLE_NUMERICAL_FIXTURE_AND_SAVED_ARTIFACT_INSPECTION",
+    "exact_final_inventory_members": 164,
+    "exact_final_inventory_checked": true,
+    "scientific_executions": 0,
+    "null_bindings": [
+      "actual_git_base",
+      "canonical_parent",
+      "canonical_binding",
+      "canonical_acceptance",
+      "current_wrapper_review",
+      "publication",
+      "integration_driver"
+    ],
+    "meaning": "Selected byte closure and receipt bindings only; no mathematical, interval, physical, canonical or publication certification."
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_local_conserving_sparse_qualified_publication_review/REVIEW.md",
+    "bytes": 2883,
+    "sha256": "a66128973140423a4a080e08411dfbb450ee8f1145e7b9342473609d4b5ec299"
+  },
+  "actual_canonical_acceptance": null,
+  "actual_git_base": null,
+  "publication": null,
+  "retained_audit": false,
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": []
+}

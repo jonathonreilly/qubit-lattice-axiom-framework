@@ -1,0 +1,158 @@
+{
+  "all_32_input_number_commutator": 0.0,
+  "all_32_input_routing_operator_residual": 0.0,
+  "counts": {
+    "G0": 6384,
+    "Gbar": 44688,
+    "T2": 4,
+    "T3": 10,
+    "by_kind": {
+      "logical": {
+        "A": 5040,
+        "Z": 1344
+      },
+      "mutant_logical": {
+        "A": 1440,
+        "Z": 384
+      },
+      "mutant_routed": {
+        "A": 1440,
+        "SWAP": 2496,
+        "Z": 384
+      },
+      "routed": {
+        "A": 5040,
+        "SWAP": 18336,
+        "Z": 1344
+      }
+    },
+    "logical_total": 6384,
+    "mutant_logical_total": 1824,
+    "mutant_routed_total": 4320,
+    "routed_total": 24720,
+    "tight_uniform_route_bound": 36624
+  },
+  "dtype": "numpy.complex128",
+  "endpoint_illustration": {
+    "Delta": 0.7,
+    "E0": 0.2,
+    "Q_star": 18.84955592153876,
+    "absolute_work_upper_bound": 1864221.0806401833,
+    "g": 75.39822368615503,
+    "gamma": [
+      0.7394755605940313,
+      -0.6731834038983308
+    ],
+    "h": 1.0,
+    "hbar": 1.0,
+    "ideal_common_added_incident_cap": 38.39911184307752,
+    "k": 2756,
+    "lambda": 11.758706586941116,
+    "maximum_free_energy": 3.7,
+    "operator_residual": 5.44294855010996e-12,
+    "r": 2754.125,
+    "sigma": 236.8705056261446,
+    "tau": 24721.0,
+    "whole_free_energy_commutation_is_exact_by_gate_definition": true
+  },
+  "logical_isometry_residual": 2.9508448902312835e-13,
+  "machine_epsilon": 2.220446049250313e-16,
+  "maximum_internal_commutator_residual": 2.1912899996703748e-16,
+  "maximum_internal_euler_residual": 2.556934838376727e-16,
+  "mutant_error_difference_from_24_over_13": 4.440892098500626e-14,
+  "mutant_exact_expected_operator_error": "24/13",
+  "mutant_omit_determinant_compensation": {
+    "ancilla_one_leakage_operator_norm": 0.0,
+    "complete_isometry_frobenius_norm": 3.197632260127062,
+    "complete_isometry_operator_norm": 1.8461538461538018,
+    "identity_off_selected_operator_norm": 8.208769713649952e-14,
+    "isometry_defect_operator_norm": 1.6428528080510368e-13,
+    "maximum_column_l2_error": 1.8461538461538014
+  },
+  "nominal": {
+    "ancilla_one_leakage_operator_norm": 1.203455149051588e-14,
+    "complete_isometry_frobenius_norm": 8.930355179806793e-13,
+    "complete_isometry_operator_norm": 2.9508448902312835e-13,
+    "identity_off_selected_operator_norm": 2.950835855960473e-13,
+    "isometry_defect_operator_norm": 5.90018483444466e-13,
+    "maximum_column_l2_error": 2.9506123471984577e-13
+  },
+  "number_internal_commutator_checks": 12,
+  "number_internal_euler_checks": 42,
+  "numpy": "2.4.4",
+  "parameters": {
+    "L": 1,
+    "M_reservoir": 3,
+    "m_with_ancilla": 5,
+    "n_data": 4,
+    "q": 1
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "qubit_order": "MSB first, clean ancilla is site 4/least significant bit",
+  "scalar": {
+    "Phi_includes_all_A_and_Z_reserves": true,
+    "SWAP_positive_generator_exp_is_full_SWAP": true,
+    "logical_scalar": [
+      1,
+      0
+    ],
+    "positive_reserve_phase_Phi": 4732.64387840259,
+    "positive_word_residual": 3.6647411565014315e-12
+  },
+  "status": "numerical_fixture_only_not_certified_interval_arithmetic",
+  "target": {
+    "determinant_exact": "(-119+120i)/169",
+    "determinant_numeric": [
+      -0.7041420118343196,
+      0.7100591715976332
+    ],
+    "determinant_theta": 2.35201041419027,
+    "formula": "((5+12i)/13)*[[3/5,4i/5],[4i/5,3/5]]",
+    "givens_residual": 1.250588883164116e-16,
+    "givens_unitarity": 2.220446049250313e-16,
+    "selected_pairs": [
+      [
+        4,
+        8
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "target_unitarity": 2.220446049250313e-16
+  },
+  "threshold_fixed_before_execution": 1e-09,
+  "words": {
+    "logical": {
+      "bytes": 438291,
+      "path": "logical_word.json",
+      "sha256": "c6a7240b290facabd2b0bab76e1f28cae596bee628c3abcc203dee69b2d65313"
+    },
+    "mutant_logical": {
+      "bytes": 125451,
+      "path": "mutant_logical_word.json",
+      "sha256": "ff4c9bac0ad56d910836b9fb1669c3f9799d5c57cda8beba38ba0ba2195c14da"
+    },
+    "mutant_routed": {
+      "bytes": 525853,
+      "path": "mutant_routed_word.json",
+      "sha256": "91fe3512c8480f31391a629125c036fffc8b008109c31c56ae7ee6b944aba8fd"
+    },
+    "routed": {
+      "bytes": 2998963,
+      "path": "routed_word.json",
+      "sha256": "cef2bddf3c37c903361aac2d8cf60b27a39ac3b4fbd8d2772fb4318c729cf289"
+    },
+    "segments": {
+      "bytes": 512,
+      "path": "segments.json",
+      "sha256": "ee9413961e254449a22c67cbc2980330cbe897e84e4088760742a27e0cec5b04"
+    }
+  }
+}

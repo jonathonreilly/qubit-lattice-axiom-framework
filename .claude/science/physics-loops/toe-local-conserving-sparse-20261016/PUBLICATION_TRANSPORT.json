@@ -1,0 +1,113 @@
+{
+  "kind": "actual_current_main_publication_transport",
+  "created_utc": "2026-10-16T17:45:02.239357+00:00",
+  "original_integration_base": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "original_snapshot": "c421083c5793561af8286248f03292a479cb0336",
+  "publication_base": "cea15d2c7fca3ffb403f1f474fef6b6697650d8b",
+  "latest_observed_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "later_main_scope": "One unrelated scalar primitive kinetic milestone; no authority, parent theorem or validation-tool changes; not imported into this publication base.",
+  "original_stage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/STAGED_VERIFICATION.json",
+    "bytes": 328647,
+    "sha256": "26305da2b2c854550d1f59802f1dea2a0e86c392d9c78ef2d0aa57a1f1fe1898"
+  },
+  "original_root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/ROOT_STAGED_REVIEW.json",
+    "bytes": 7411,
+    "sha256": "9ad7f4c494a0ea779410b797040b099f519fe81b0a952a2ad59904800c4f5030"
+  },
+  "original_failed_publish": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/failed_publication/actions/publish/EXECUTION.json",
+    "bytes": 959,
+    "sha256": "5a7a2738bc2c0b889a6ffbf5c4880628e56f79028c2a97afe83391e6ea34cad7"
+  },
+  "source_snapshot": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/SNAPSHOT.json",
+    "bytes": 1283,
+    "sha256": "754a7cacc179e354ea7da24f482310a7fdb99cb466a080c74ebda87f8b326c87"
+  },
+  "tool_pins": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/CURRENT_TOOL_PINS.json",
+    "bytes": 3592,
+    "sha256": "54d8e2c807e1396669446d76dbef9b6b66f221411f3493fb38f0f12c119b22a7"
+  },
+  "unchanged_bound_canonical_files": 213,
+  "unchanged_milestone_files": 488,
+  "changed_milestone_cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/local_conserving_sparse_2026_10_16.txt",
+    "bytes": 1029,
+    "sha256": "33ff656b51b09aa84ee387dc9889c02f4478a5e5012d24c4fbf8ba5965e057da"
+  },
+  "checks": {
+    "current_main_baseline_graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_baseline_graph/EXECUTION.json",
+      "bytes": 1634,
+      "sha256": "4cacecd959641e4d5f9bdd9f7bfcd715acf702d9faf3d2eef99ad18836e55dc6"
+    },
+    "current_main_primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_primary/EXECUTION.json",
+      "bytes": 1624,
+      "sha256": "7a63e6140113eb8e2cac51de2231df78d8e168254d2530dfeb15fbbad109b97b"
+    },
+    "current_main_vocabulary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_vocabulary/EXECUTION.json",
+      "bytes": 2447,
+      "sha256": "0d0f599a64524fd4579c5b429a813c9d5282e14f29fd788caca0f34e7bd109f9"
+    },
+    "current_main_scoped_evidence": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_scoped_evidence/EXECUTION.json",
+      "bytes": 1715,
+      "sha256": "df9af50ad3942849b2997947d634d49c23564d8871bce07f26aa2be891df6541"
+    },
+    "current_main_milestone_graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_milestone_graph/EXECUTION.json",
+      "bytes": 1637,
+      "sha256": "ef7b3cacb2ed9b469def2a47551abf2ae974d2f5b62cb2e226c6e7f82a8f153c"
+    },
+    "current_main_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/runs/current_main_manifest/EXECUTION.json",
+      "bytes": 1631,
+      "sha256": "66eff18c97cd039d5f0927b942fd1da86fc496d7033c149de25dd02bbfdb1a77"
+    }
+  },
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/FRESH_CACHE.json",
+    "bytes": 2256,
+    "sha256": "262e0ee61c16f0537efd00a8ccc1411ceac2e918032d7545ef42e56446badf31"
+  },
+  "graph": {
+    "old_nodes": 7193,
+    "old_edges": 16148,
+    "all_old_nodes_and_edges_preserved": true,
+    "new_nodes": [
+      "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16"
+    ],
+    "new_edges": [
+      {
+        "from": "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16",
+        "to": "local_conserving_preparation_bounded_theorem_note_2026-10-16"
+      }
+    ],
+    "roots_unchanged": true,
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/current_main_baseline_graph.json",
+      "bytes": 10514596,
+      "sha256": "72d542d9d5eb08339dad8d50813c3afa332711baa20b27f1aeae72558b722442"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_main_transport/current_main_milestone_graph.json",
+      "bytes": 10515596,
+      "sha256": "8581ab8831af6f99b35bbd1ab3ee70bce788834ba408668f893444057b7d2cfe"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1026371,
+      "sha256": "a6415686303dacdee5d420d73f97ae3c0c591b50cb53aeb2a749e49c0fb98ed3"
+    }
+  },
+  "scientific_executions": 0,
+  "historical_science_replays": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": [],
+  "scope": "Exact theorem/primary/qualified proofs retained. Actual scoped current-main compatibility checks only; no unrelated science endorsement, blanket full-repository validation, native supplier or new preparation composition."
+}

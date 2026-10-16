@@ -1,0 +1,183 @@
+{
+  "utc": "2026-10-16T15:31:41.358318+00:00",
+  "fixture_source_records": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/EXPOSURE.md",
+      "capture": "fixture_source/EXPOSURE.md",
+      "bytes": 2076,
+      "sha256": "78380cac22dc307263ef4b15f7f5375687554f6fd47f587ceb7a19ff852d59d6"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/LAUNCH_CONTEXT.md",
+      "capture": "fixture_source/LAUNCH_CONTEXT.md",
+      "bytes": 1174,
+      "sha256": "c2e0892b6bab53ce18e817a4918a8ec776f1a07bc7c6abaaa45806a9ba9120f4"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/REVIEW.md",
+      "capture": "fixture_source/REVIEW.md",
+      "bytes": 12442,
+      "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/SOURCE_MANIFEST.json",
+      "capture": "fixture_source/SOURCE_MANIFEST.json",
+      "bytes": 2347,
+      "sha256": "7e1e3a54d00c7128d575ccec5113c0e073f95b58751ce07c8a014d8fd808312a"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/emitted_word_fixture.py",
+      "capture": "fixture_source/emitted_word_fixture.py",
+      "bytes": 17836,
+      "sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/run_fixture.py",
+      "capture": "fixture_source/run_fixture.py",
+      "bytes": 2261,
+      "sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/EXECUTION.json",
+      "capture": "fixture_source/runs/attempt_01/EXECUTION.json",
+      "bytes": 2130,
+      "sha256": "fb0fa13bec56ba4560fd7bd3a59671a0a0e4cc3f293cd3f4834f7b9d6895f145"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/launcher_at_launch.py",
+      "capture": "fixture_source/runs/attempt_01/launcher_at_launch.py",
+      "bytes": 2261,
+      "sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/RESULT.json",
+      "capture": "fixture_source/runs/attempt_01/output/RESULT.json",
+      "bytes": 4652,
+      "sha256": "c71e4452d2e05b6758b94766b7ecc8784df1de00f458357aa19bbf3a27935611"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/complete_matrices.npz",
+      "capture": "fixture_source/runs/attempt_01/output/complete_matrices.npz",
+      "bytes": 13288,
+      "sha256": "de8316769e13fde208e22bea19adab8c9d593ba0d82f547dbe01b853876248fd"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/logical_word.json",
+      "capture": "fixture_source/runs/attempt_01/output/logical_word.json",
+      "bytes": 438291,
+      "sha256": "c6a7240b290facabd2b0bab76e1f28cae596bee628c3abcc203dee69b2d65313"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/mutant_logical_word.json",
+      "capture": "fixture_source/runs/attempt_01/output/mutant_logical_word.json",
+      "bytes": 125451,
+      "sha256": "ff4c9bac0ad56d910836b9fb1669c3f9799d5c57cda8beba38ba0ba2195c14da"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/mutant_routed_word.json",
+      "capture": "fixture_source/runs/attempt_01/output/mutant_routed_word.json",
+      "bytes": 525853,
+      "sha256": "91fe3512c8480f31391a629125c036fffc8b008109c31c56ae7ee6b944aba8fd"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/routed_word.json",
+      "capture": "fixture_source/runs/attempt_01/output/routed_word.json",
+      "bytes": 2998963,
+      "sha256": "cef2bddf3c37c903361aac2d8cf60b27a39ac3b4fbd8d2772fb4318c729cf289"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output/segments.json",
+      "capture": "fixture_source/runs/attempt_01/output/segments.json",
+      "bytes": 512,
+      "sha256": "ee9413961e254449a22c67cbc2980330cbe897e84e4088760742a27e0cec5b04"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/source_at_launch.py",
+      "capture": "fixture_source/runs/attempt_01/source_at_launch.py",
+      "bytes": 17836,
+      "sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/stderr.txt",
+      "capture": "fixture_source/runs/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/stdout.txt",
+      "capture": "fixture_source/runs/attempt_01/stdout.txt",
+      "bytes": 4727,
+      "sha256": "4e279574f87ea9dfabf4f98de5db201801892f93f6f1258fcbc098f7277a9ba9"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/seal_packet.py",
+      "capture": "fixture_source/seal_packet.py",
+      "bytes": 4670,
+      "sha256": "182d427fa2ef5d16b17f83b338296ad52ba0568fe5a988bd6f977a96003fe780"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/sources/control_DERIVATION.md",
+      "capture": "fixture_source/sources/control_DERIVATION.md",
+      "bytes": 31922,
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/sources/sparse_DERIVATION.md",
+      "capture": "fixture_source/sources/sparse_DERIVATION.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/sources/sparse_FREEZE.json",
+      "capture": "fixture_source/sources/sparse_FREEZE.json",
+      "bytes": 3916,
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/FREEZE.json",
+      "capture": "fixture_source/FREEZE.json",
+      "bytes": 3788,
+      "sha256": "2b62a1ba9241999824241c41f191674c3a66c0829185e5bc6ea76052fcc40582"
+    }
+  ],
+  "unchanged_mathematical_parents": [
+    {
+      "bytes": 30201,
+      "coverage": "Complete source refreshed/read in this task; authored previously.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_copy": "sources/sparse_DERIVATION.md",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "bytes": 3916,
+      "coverage": "Identity refreshed; existing freeze was not changed.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/FREEZE.json",
+      "packet_copy": "sources/sparse_FREEZE.json",
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    },
+    {
+      "bytes": 31922,
+      "coverage": "Sections 4-6 relevant generators, phases, timing and work reread; full source authored/read previously.",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "packet_copy": "sources/control_DERIVATION.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    }
+  ],
+  "prior_review_exposure": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+      "capture": "prior_review/REVIEW.md",
+      "bytes": 25079,
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "scope": "Identity and prior-exposure record; not a new parent review or copy of its entire closure."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/FREEZE.json",
+      "capture": "prior_review/FREEZE.json",
+      "bytes": 6731,
+      "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9",
+      "scope": "Identity and prior-exposure record; not a new parent review or copy of its entire closure."
+    }
+  ],
+  "coverage": "Complete fixture source and all saved route records; all saved arrays inspected/reanalyzed. No author source import or circuit replay."
+}

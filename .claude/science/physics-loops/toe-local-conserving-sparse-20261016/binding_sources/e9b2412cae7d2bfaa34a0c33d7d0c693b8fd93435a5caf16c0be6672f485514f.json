@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T16:37:30.366017+00:00",
+  "baseRefName": "physics-loop/toe-bus-memory-recovery-20261016",
+  "headRefName": "physics-loop/toe-local-conserving-preparation-20261016",
+  "headRefOid": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "isDraft": false,
+  "number": 9645,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9645",
+  "tree": "813f1fe72d5016a10c87de04b3a47d793f06286e",
+  "base_head": "5379d02febf465dbca41dba0b9119da4dfe0b667",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_conserving_preparation_2026_10_16.py",
+    "bytes": 69477,
+    "sha256": "6e16c17cb84f4f404dcf9456ff3395b70ba71e58833298ec5a3b56a3793dc38b"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_preparation/PR_BODY.md",
+    "bytes": 1849,
+    "sha256": "ca0dff7551e27b84210c977079298093fe587612dd03dc36a063e71e679b9772"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

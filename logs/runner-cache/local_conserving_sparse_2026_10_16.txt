@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_conserving_sparse_2026_10_16.py
+runner_sha256: 0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8
+input_fingerprint_sha256: b1c4b1d6806cdd41a1243ec55aea124c8f99f71a1badde5d3475c2987b890481
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: positive reserves, full SWAP and actual phase corrections remain supplied
+per_site: literal equal-gap old K and all-site connected-path access remain explicit
+per_mode: fixed-q laboratory count does not bound classical compiler time or memory
+per_block: complete complement, determinant phase, ancilla and reference outputs retained
+lattice_wide: one qualified floating fixture; no interval certificate, physical test or retained audit
+
+----- stderr -----
+

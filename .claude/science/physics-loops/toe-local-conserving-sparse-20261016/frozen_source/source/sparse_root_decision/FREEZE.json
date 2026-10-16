@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 8609,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    },
+    {
+      "bytes": 3678,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda"
+    }
+  ],
+  "kind": "qualified analytical root decision",
+  "retained_audit": false,
+  "scientific_executions": 0,
+  "utc": "2026-10-16T15:31:22.977941+00:00"
+}

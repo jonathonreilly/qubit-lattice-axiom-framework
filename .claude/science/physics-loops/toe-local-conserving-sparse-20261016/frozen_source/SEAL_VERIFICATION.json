@@ -1,0 +1,50 @@
+{
+  "kind": "actual_preseal_metadata_and_original_refresh",
+  "utc": "2026-10-16T16:19:20.031286+00:00",
+  "source_verifier_result": {
+    "kind": "read_only_metadata_verification",
+    "primary_status": "UNBOUND",
+    "source_files": 131,
+    "immediate_closures": 7,
+    "history_records": 3,
+    "immutable_bodies": 7,
+    "current_payload_files": 14,
+    "historical_receipts_bound": 4,
+    "fixture_disposition": "QUALIFIED_SINGLE_NUMERICAL_FIXTURE_AND_SAVED_ARTIFACT_INSPECTION",
+    "exact_final_inventory_members": null,
+    "exact_final_inventory_checked": false,
+    "scientific_executions": 0,
+    "null_bindings": [
+      "actual_git_base",
+      "canonical_parent",
+      "canonical_binding",
+      "canonical_acceptance",
+      "current_wrapper_review",
+      "publication",
+      "integration_driver"
+    ],
+    "meaning": "Selected byte closure and receipt bindings only; no mathematical, interval, physical, canonical or publication certification."
+  },
+  "original_files_refreshed": 134,
+  "metadata_receipt": {
+    "path": "runs/metadata_checks/EXECUTION.json",
+    "bytes": 7900,
+    "sha256": "068762fd60f160ddedcd37adc64f9261ec1c91dd3271fc9b76562f679d487038"
+  },
+  "actual_invocations": [
+    {
+      "name": "strict_default",
+      "exit_code": 2,
+      "status": "UNBOUND"
+    },
+    {
+      "name": "explicit_source_only",
+      "exit_code": 0,
+      "status": "SOURCE_CLOSURE_VERIFIED"
+    }
+  ],
+  "metadata_input_snapshots_match": true,
+  "scientific_executions": 0,
+  "all_historical_source_bytes_unchanged": true,
+  "postseal_result_location": "Returned by seal_packet.py to caller; no post-seal packet write."
+}

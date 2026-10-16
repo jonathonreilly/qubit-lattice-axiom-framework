@@ -1,0 +1,34 @@
+{
+  "retrieved_utc": "2026-10-16T14:05:04.552347+00:00",
+  "paper": {
+    "url": "https://arxiv.org/pdf/2309.11051v3",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/sources/BAI_MARVIAN_2309.11051v3.pdf",
+    "bytes": 687654,
+    "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+  },
+  "parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/finite_energy_reservoir_candidate/DERIVATION.md",
+    "bytes": 29199,
+    "sha256": "ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195"
+  },
+  "screen": {
+    "argv": [
+      "rg",
+      "-n",
+      "-i",
+      "--glob",
+      "*.md",
+      "--glob",
+      "!audit/**",
+      "--glob",
+      "!work_history/**",
+      "2309\\.11051|Bai.{0,30}Marvian|Synthesis of Energy.Conserving Quantum Circuits",
+      "."
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs",
+    "returncode": 1,
+    "stdout": "SCOPE_SCREEN.stdout",
+    "stderr": "SCOPE_SCREEN.stderr",
+    "meaning": "Scoped Markdown title/text screen only; exit 1 means no matches. No root proposal read."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "actual_metadata_only_execution",
+  "scientific_execution": false,
+  "start_utc": "2026-10-16T14:39:29.743220+00:00",
+  "end_utc": "2026-10-16T14:39:29.811505+00:00",
+  "argv": [
+    "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/runs/source_capture/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check",
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "source_original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/capture_sources.py",
+  "source_at_launch_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/runs/source_capture/executed_source.py",
+  "source_sha256": "63b7951a9d2795fae752bc677e3c2bb055b3c3ee6bd25de2f988f659f5e15ab2",
+  "launcher_original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/run_metadata_capture.py",
+  "launcher_at_launch_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/runs/source_capture/launcher_source.py",
+  "launcher_sha256": "a11b92077fa496c3c6ad2ec3fa20f9527c67c547767b951421f7e01b28e0aff5",
+  "stdout_bytes": 926,
+  "stdout_sha256": "0772833e27b636452f1d74dcbd48a211e11eb7ac352e30d20498f4652c04a6b2",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Verify/copy the author freeze members, bind prior root-only exposure identities, and compare saved search argv metadata; no scientific runner or search replay."
+}

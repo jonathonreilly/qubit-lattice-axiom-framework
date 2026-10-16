@@ -1,0 +1,27 @@
+{
+  "source_records": 13,
+  "author_freeze_members_verified": 12,
+  "all_identities_match": true,
+  "prior_root_exposure_unchanged": true,
+  "search_receipt_finding": {
+    "kind": "comparison_of_saved_metadata_arguments_only",
+    "saved_regex_arguments_equal": true,
+    "first_saved_argument": "2309\\.11051|Bai.{0,30}Marvian|Synthesis of Energy.Conserving Quantum Circuits",
+    "corrected_saved_argument": "2309\\.11051|Bai.{0,30}Marvian|Synthesis of Energy.Conserving Quantum Circuits",
+    "numeric_prefix_codepoints": [
+      50,
+      51,
+      48,
+      57,
+      92,
+      46,
+      49,
+      49,
+      48,
+      53,
+      49
+    ],
+    "interpretation": "Both saved numeric patterns have one backslash before the period. The separately annotated earlier overescaped argv is not recoverable from these two records. No search was replayed and no undocumented argv reconstructed."
+  },
+  "scientific_executions": 0
+}

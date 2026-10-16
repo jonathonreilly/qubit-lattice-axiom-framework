@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T15:15:30.323617+00:00",
+  "baseRefName": "physics-loop/toe-bus-resources-20261016",
+  "headRefName": "physics-loop/toe-bus-memory-recovery-20261016",
+  "headRefOid": "5379d02febf465dbca41dba0b9119da4dfe0b667",
+  "isDraft": false,
+  "number": 9643,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9643",
+  "tree": "9d51d0c4acbc8de56b3d57074a403dcbcd00a3a8",
+  "base_head": "9f2c922307afc1354e75b2da0dc9a8ce0ac2b3bd",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BUS_MEMORY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 91303,
+    "sha256": "6f76d1790705855488e6b8288b4b4fe13031919930c0b9dabe7ce7ade1cb6abf"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/bus_memory_recovery_2026_10_16.py",
+    "bytes": 77974,
+    "sha256": "8fdc7ca827ce7d25ed84678a79c963dc90e30bf4bc71d34c0a4035dc678cf0b9"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/bus_memory_recovery/PR_BODY.md",
+    "bytes": 1920,
+    "sha256": "7e04a8c9593a6cf5c9a8aed0fdf5d7bf63748e08a2b70481cb366dd953ce6e64"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

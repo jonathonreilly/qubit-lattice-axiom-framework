@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-10-16T14:15:48.180041+00:00",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/finite_energy_reservoir_candidate/DERIVATION.md",
+      "bytes": 29199,
+      "sha256": "ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195",
+      "expected_sha256": "ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195",
+      "read_coverage": "Scientific predecessor; current refreshed lines 1-165 complete, covering sections 1-5 and relevant finite-block, full-output, energy and phase claims. Full note was authored/read in the immediately preceding task; no independent parent validation claimed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/finite_energy_reservoir_candidate/FREEZE.json",
+      "bytes": 3762,
+      "sha256": "b847121746665551ca8f5b8e8851e06a0f67ae419c98a48c8162f4c90eb0025b",
+      "expected_sha256": "b847121746665551ca8f5b8e8851e06a0f67ae419c98a48c8162f4c90eb0025b",
+      "read_coverage": "Identity check only in this continuation; preserved author freeze, not acceptance."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 17399,
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "expected_sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "read_coverage": "Duplicate origin; full argument read in preceding task and identity refreshed here. The current construction re-proves the homogeneous one-ladder specialization, not the predecessor collision application."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "expected_sha256": null,
+      "read_coverage": "Complete current captured workflow read in this task; process only, not scientific premise."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "expected_sha256": null,
+      "read_coverage": "Execution-split and scope passages lines 1-180 refreshed; already applied worker workflow. Explicit inherited model/no-subagent direction controls."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "expected_sha256": null,
+      "read_coverage": "Relevant review and no-go passages lines 1-180 refreshed; no audit procedure launched."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/no-go-discipline/SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "expected_sha256": null,
+      "read_coverage": "Complete N1-N8 instructions and output/stop conditions read through line 310; narrow written scope check in section 9; no negative packet PASS or audit status claimed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/sources/BAI_MARVIAN_2309.11051v3.pdf",
+      "url": "https://arxiv.org/pdf/2309.11051v3",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+      "expected_sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+      "read_coverage": "Primary PDF text: main statements through pages 1-4, including equation (2), Theorem 1 and strict-path discussion/Corollary 3; relevant section IV example/base and section V synthesis discussion, equations (58)-(82), including recurrence, equal-weight routing and clean-ancilla mechanism. Not a full read of all 38 pages or independent verification of all figure identities/appendices. External theorem remains imported; effective interface is an explicit full-isometry residual certificate."
+    }
+  ],
+  "prohibited_source_unread": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal",
+  "source_copies": [
+    "sources/FINITE_RESERVOIR_PARENT.md",
+    "sources/BAI_MARVIAN_2309.11051v3.pdf"
+  ],
+  "scientific_runner": "None launched in this task. Retrieval, exact-byte hashing and scoped text searches are bookkeeping, not scientific validation."
+}

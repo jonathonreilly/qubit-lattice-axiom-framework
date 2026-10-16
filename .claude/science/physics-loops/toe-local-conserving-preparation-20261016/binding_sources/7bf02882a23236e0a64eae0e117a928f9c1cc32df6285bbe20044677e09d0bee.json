@@ -1,0 +1,73 @@
+{
+  "bodies": [
+    {
+      "bytes": 12642,
+      "end_byte_exclusive": 27079,
+      "label": "Root period-wait argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "be48d2010c68561df8d2a48a924602cd797625345b8e7934e50ac05cd99c3bde",
+      "start_byte": 14437
+    },
+    {
+      "bytes": 23371,
+      "end_byte_exclusive": 50517,
+      "label": "Root period-wait exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/REVIEW.md",
+      "sha256": "70d14b789941483c88d39e582195485f5230528415197ad763183fab6407ebc4",
+      "start_byte": 27146
+    },
+    {
+      "bytes": 31922,
+      "end_byte_exclusive": 82505,
+      "label": "Author fixed-duration argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60",
+      "start_byte": 50583
+    },
+    {
+      "bytes": 29411,
+      "end_byte_exclusive": 111988,
+      "label": "Author fixed-duration exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/REVIEW.md",
+      "sha256": "0f87bf70c55412bf1fca93e2c3c5c3be569b7257b4b986dc0fb084ff562273f1",
+      "start_byte": 82577
+    },
+    {
+      "bytes": 11037,
+      "end_byte_exclusive": 123095,
+      "label": "Controlling runtime qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "start_byte": 112058
+    },
+    {
+      "bytes": 15499,
+      "end_byte_exclusive": 138664,
+      "label": "Explicit sine preparation argument",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "start_byte": 123165
+    },
+    {
+      "bytes": 22829,
+      "end_byte_exclusive": 161555,
+      "label": "Preparation exposed review",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/REVIEW.md",
+      "sha256": "f4addfc95983ebd497bfb44ac7224afdd1b5d342a9241ea11696e97804eab022",
+      "start_byte": 138726
+    },
+    {
+      "bytes": 8398,
+      "end_byte_exclusive": 170027,
+      "label": "Controlling preparation qualifications",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "start_byte": 161629
+    }
+  ],
+  "note": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "wrapper": {
+    "bytes": 14376,
+    "sha256": "6fa0ac173ce0b66658f443d092a7c814642b1da899f8371c4bf6b06470a173b8"
+  }
+}

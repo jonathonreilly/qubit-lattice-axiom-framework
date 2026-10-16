@@ -1,0 +1,70 @@
+{
+  "frozen_utc": "2026-10-16T14:21:07.275745+00:00",
+  "claim_status": "Proposed conditional source theorem; root review and acceptance pending. Not an independent validation of author parents.",
+  "members": [
+    {
+      "path": "AUTHOR_CHECK_AND_EXPOSURE.md",
+      "bytes": 5762,
+      "sha256": "16c0d0da47a13b19ec12fb7154449ae0d7789c4a60696a2c69fb6f55653cbc0b"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1727,
+      "sha256": "238148a31d82f37693122d5771c26657572d2df30688a87c3683cb008c811403"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 31922,
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "path": "RETRIEVAL.json",
+      "bytes": 1261,
+      "sha256": "f87a0f08e65d182847669d20b0cb97199a303a1ce545ff0c0efb6c64eaccc851"
+    },
+    {
+      "path": "SCOPE_SCREEN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SCOPE_SCREEN.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SCOPE_SCREEN_CORRECTED.json",
+      "bytes": 727,
+      "sha256": "b08987473e3387c386f6b1f3bd48ec23996f03c985c285b400c11d2e2fe78dd7"
+    },
+    {
+      "path": "SCOPE_SCREEN_CORRECTED.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SCOPE_SCREEN_CORRECTED.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4793,
+      "sha256": "eb7105f876d9e643ef33287bb8baf61031ca56340c8cd41dfe6044fe4b8dec22"
+    },
+    {
+      "path": "sources/BAI_MARVIAN_2309.11051v3.pdf",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+    },
+    {
+      "path": "sources/FINITE_RESERVOIR_PARENT.md",
+      "bytes": 29199,
+      "sha256": "ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195"
+    }
+  ],
+  "verified_external_source_records": 8,
+  "scientific_executions": [],
+  "unread_root_proposal": true,
+  "prohibited_mutations": "No existing packet, worktree, canonical, Git, PR, audit, lock, prompt or axiom modifications; no other-chat messages."
+}

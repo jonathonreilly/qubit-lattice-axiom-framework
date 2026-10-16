@@ -1,0 +1,17 @@
+{
+  "direct_canonical_parents": [
+    {
+      "bytes": 17399,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Existing complete finite lift and sine estimate only; no collision/GKLS application or new core claim",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+    }
+  ],
+  "git_base": null,
+  "scope": "One existing core parent; authority context is not fresh integration-base evidence.",
+  "source_authority_context": {
+    "instructions": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+    "main": "41f192b2dcee96d9967e0e01ad50c5f1229ab252"
+  }
+}

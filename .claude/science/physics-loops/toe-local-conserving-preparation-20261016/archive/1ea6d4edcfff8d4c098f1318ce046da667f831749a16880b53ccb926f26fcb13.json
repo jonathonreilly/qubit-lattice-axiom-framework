@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-16T14:10:12.478252+00:00",
+  "status": "unaccepted root proposal",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/Bai_Marvian_2309.11051v3.pdf",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 12642,
+      "sha256": "be48d2010c68561df8d2a48a924602cd797625345b8e7934e50ac05cd99c3bde"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/SOURCE_AND_EXPOSURE.json",
+      "bytes": 2061,
+      "sha256": "75aba8e41a4be8e8d1652988ddcc335dd43bfd74433fffd9de3e8bfbc0e5b715"
+    }
+  ],
+  "scientific_executions": 0,
+  "independent_author_result_read": false
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-16T14:08:15.266201+00:00",
+  "argv": [
+    "rg",
+    "-n",
+    "-i",
+    "--glob",
+    "*.md",
+    "--glob",
+    "!audit/**",
+    "--glob",
+    "!work_history/**",
+    "2309\\.11051|Bai.{0,30}Marvian|Synthesis of Energy.Conserving Quantum Circuits",
+    "."
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs",
+  "exit_code": 1,
+  "prior_attempt": "RETRIEVAL.json escaped the numeric regex twice; original receipt and streams retained; author/title alternatives still valid. This corrected numeric alternative controls the absence statement.",
+  "scope": "Markdown under W/docs excluding audit/** and work_history/**; not a universal absence claim."
+}

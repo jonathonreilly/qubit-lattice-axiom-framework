@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "bytes": 4586,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_local_conserving_preparation_publication_review/REVIEW.md",
+      "sha256": "6bcd7b7914f2892c3406677914ffcf3ac7da95f2b15192008aae270823494d01"
+    },
+    {
+      "bytes": 13629,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_local_conserving_preparation_publication_review/REVIEW.json",
+      "sha256": "7a8aee2ed961f86019774797ef924a0790f81731f49a03178f7028d6d05ee63b"
+    }
+  ],
+  "scientific_executions": 0,
+  "utc": "2026-10-16T15:49:27.195038+00:00"
+}

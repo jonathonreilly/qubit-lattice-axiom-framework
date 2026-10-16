@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "rg",
+    "-n",
+    "-i",
+    "--glob",
+    "*.md",
+    "sine.{0,50}(prepar|prefix)|prefix.{0,50}(sine|prepar)|controlled.{0,30}sine",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs"
+  ],
+  "exit_code": 0,
+  "scope": "Bounded lexical repository screen only; neither exhaustive novelty search nor absence proof. Earlier broad search had missing checkpoint path and truncated output; this narrower capture has complete saved streams."
+}

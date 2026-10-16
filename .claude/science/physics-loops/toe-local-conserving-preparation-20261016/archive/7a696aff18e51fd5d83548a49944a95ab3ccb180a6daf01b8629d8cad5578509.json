@@ -1,0 +1,100 @@
+{
+  "accepted_scope": [
+    "Restricted actual equal-gap noninteracting old generator with connected all-site path, full SWAP, prescribed controls and ready packet.",
+    "Two distinct complete local schedules, positive reserves, scalar phases, calibration and full correlated output.",
+    "Author fixed-duration parallel phase layer; root period wait with explicit effective-angle variant.",
+    "Energy-transfer robustness includes initial and final old marginal errors; same-F storage and work limits."
+  ],
+  "canonical_acceptance": null,
+  "complete_changed_arguments_read": true,
+  "controlling_qualifications": {
+    "bytes": 11037,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+    "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305"
+  },
+  "editable_prompt_files_changed": [],
+  "existing_core_not_republished": "Finite energy-lift and sine packet core already present; this acceptance adds restricted scheduling interfaces.",
+  "imported_primary": {
+    "scope": "Necessary theorem/geometry/ancilla passages and explicit local reconstructions; no complete revalidation of all38 pages.",
+    "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+    "url": "https://arxiv.org/pdf/2309.11051v3"
+  },
+  "independence_limit": "Root route frozen before separate author exposure; later author checker knew earlier root route. Same selected model and shared primary; not blind review or retained audit.",
+  "mandatory_corrections": [
+    "Initial-energy allowance under imperfect readiness; no transfer of final-only nominal formula to changed actual initial old state.",
+    "Simultaneous final onsite layer required for author duration.",
+    "Actual positivity, slew and support calibration separate from Duhamel error.",
+    "Saved search argv history does not establish annotated overescaping; originals preserved."
+  ],
+  "new_candidates_not_accepted": [
+    "local_sine_preparation_root_proposal",
+    "local_conserving_sparse_compiler_candidate"
+  ],
+  "open_obligations": [
+    "Complete target-specific emitted compiler certificate",
+    "Finite packet preparation supplier",
+    "General interacting H and restricted-port route",
+    "Microscopic controller and actual energy/slew identification",
+    "Autonomous halt and indefinite reuse"
+  ],
+  "publication": null,
+  "retained_audit": false,
+  "scientific_executions": 0,
+  "source_exposed_checks": 2,
+  "source_packets": [
+    {
+      "body": {
+        "bytes": 12642,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/PROPOSED_LEMMAS.md",
+        "sha256": "be48d2010c68561df8d2a48a924602cd797625345b8e7934e50ac05cd99c3bde"
+      },
+      "freeze": {
+        "bytes": 1040,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/FREEZE.json",
+        "sha256": "1ea6d4edcfff8d4c098f1318ce046da667f831749a16880b53ccb926f26fcb13"
+      },
+      "verified_members": 3
+    },
+    {
+      "body": {
+        "bytes": 23371,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/REVIEW.md",
+        "sha256": "70d14b789941483c88d39e582195485f5230528415197ad763183fab6407ebc4"
+      },
+      "freeze": {
+        "bytes": 4971,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/FINAL_FREEZE.json",
+        "sha256": "f17710dd8d161053aa6f8168496dc739aeea8488105c422d834e274a2cc043cd"
+      },
+      "verified_members": 29
+    },
+    {
+      "body": {
+        "bytes": 31922,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+        "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+      },
+      "freeze": {
+        "bytes": 2360,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/FREEZE.json",
+        "sha256": "3128a438f020588eb8e8e945b1cbe9f4e6d64f5524831e19e530ff28a1e08c9b"
+      },
+      "verified_members": 12
+    },
+    {
+      "body": {
+        "bytes": 29411,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/REVIEW.md",
+        "sha256": "0f87bf70c55412bf1fca93e2c3c5c3be569b7257b4b986dc0fb084ff562273f1"
+      },
+      "freeze": {
+        "bytes": 5094,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/FREEZE.json",
+        "sha256": "5f1dc73712ed9e82ffb30becb9d310b5d146ee2686c530b44bb83b9915dc7dfa"
+      },
+      "verified_members": 27
+    }
+  ],
+  "status": "qualified conditional analytical support; eligible for separately reviewed composition and milestone packaging",
+  "utc": "2026-10-16T15:05:37.476079+00:00"
+}

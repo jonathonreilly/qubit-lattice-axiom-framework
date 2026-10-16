@@ -1,0 +1,9 @@
+{
+  "scope": "Metadata verification only",
+  "source_members_verified": 14,
+  "exact_source_captures": 17,
+  "read_only_rule_retrievals": 5,
+  "author_receipt_and_original_captures_match": true,
+  "author_source_parsed_not_executed": true,
+  "new_scientific_executions": 0
+}

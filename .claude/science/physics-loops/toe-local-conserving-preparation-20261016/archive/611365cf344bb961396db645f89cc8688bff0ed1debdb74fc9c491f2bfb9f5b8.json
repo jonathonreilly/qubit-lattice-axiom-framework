@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-16T14:26:00.990752+00:00",
+  "kind": "metadata_only_source_identity_capture",
+  "scientific_executions": 0,
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/PROPOSED_LEMMAS.md",
+      "captured_path": "sources/PROPOSED_LEMMAS.md",
+      "bytes": 12642,
+      "sha256": "be48d2010c68561df8d2a48a924602cd797625345b8e7934e50ac05cd99c3bde"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/FREEZE.json",
+      "captured_path": "sources/FREEZE.json",
+      "bytes": 1040,
+      "sha256": "1ea6d4edcfff8d4c098f1318ce046da667f831749a16880b53ccb926f26fcb13"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/Bai_Marvian_2309.11051v3.pdf",
+      "captured_path": "sources/Bai_Marvian_2309.11051v3.pdf",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+    }
+  ],
+  "primary_page_count": 38,
+  "nonlayout_extraction_pages": [
+    3,
+    4,
+    16
+  ],
+  "render": {
+    "attempted": true,
+    "purpose": "Resolve typography of displayed sector-determinant formulas; not a scientific simulation.",
+    "status": "unavailable",
+    "detail": "No module named 'fitz'"
+  },
+  "root_freeze_third_member_not_opened_or_validated": "SOURCE_AND_EXPOSURE.json",
+  "separate_author_files_read": false,
+  "all_requested_identity_checks_match": true
+}

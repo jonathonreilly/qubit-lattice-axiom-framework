@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_conserving_preparation_2026_10_16.py
+runner_sha256: 6e16c17cb84f4f404dcf9456ff3395b70ba71e58833298ec5a3b56a3793dc38b
+input_fingerprint_sha256: d2800d5724180d7a95aa2f5f1146622f995d8a57589e806a6ec5c0e99cd94055
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: positive reserves and rotating quadratures are supplied; no physical control tested
+per_site: actual equal-gap noninteracting old K and complete incident caps remain explicit
+per_mode: period-wait and fixed-duration schedules keep distinct dimensions and phases
+per_block: author-route sine preparation and full-reference composition retain correlated outputs
+lattice_wide: generic synthesis limits, moment growth and physical driver obligations remain; no retained audit
+
+----- stderr -----
+

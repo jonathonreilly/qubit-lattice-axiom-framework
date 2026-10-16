@@ -1,0 +1,17 @@
+{
+  "status": "PASS author exact finite discriminator",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "q": 1,
+  "L": 3,
+  "M": 5,
+  "physical_dimension": 32,
+  "output": "exact full battery vector including phase",
+  "mean_number": "2",
+  "variance_number": "1/2",
+  "missing_final_phase_trace_norm_squared": "3",
+  "wrong_positive_conditional_phase_trace_norm_squared": "3/2 - sqrt(6)/2",
+  "reversed_axis_trace_norm_squared": "4",
+  "bare_generator_negative_eigenvalue": "-a for a>0",
+  "limits": "No propagation of time-dependent laboratory pulses; no general-L numerical proof; no independent check or microscopic driver."
+}

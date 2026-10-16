@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T14:10:12.473917+00:00",
+  "status": "unaccepted root proposal before independent author delivery",
+  "local_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 17399,
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/finite_energy_reservoir_candidate/DERIVATION.md",
+      "bytes": 29199,
+      "sha256": "ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195"
+    }
+  ],
+  "primary": {
+    "url": "https://arxiv.org/pdf/2309.11051v3",
+    "pdf": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_proposal/Bai_Marvian_2309.11051v3.pdf",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8"
+    },
+    "read_scope": "Primary PDF theorem1 gate set1, equation2 ancillary convention, generic cost statement and strict-path geometry qualification. Full imported synthesis proof not independently reproduced.",
+    "retrieval": "Actual curl --fail --location --silent --show-error returned exit0 earlier in this turn; saved PDF bytes are authoritative. No synthetic execution receipt or precise retrieval timestamp."
+  },
+  "exposure": "Root read both finite reservoir sources and primary statement before deriving this local bridge. Separately tasked local-control author has not been read; root proposal not sent to author.",
+  "originality_scope": "Existing finite lift and imported number-conserving circuit theorem; proposed restricted equal-gap positive pulse, explicit spatial routing, buffer and free-period timing composition.",
+  "scientific_executions": 0,
+  "independent_acceptance": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

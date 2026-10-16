@@ -22,12 +22,15 @@ cb = conj(c):
   every coefficient except c7: the constant walk.
 - **Components 5, 6.** Contain c9 cb9 + c10 cb10, so c9 = c10 = 0, and the
   rest follows: the constant walk.
-- **Component 8.** The in-type mirror of 2. Numerically
-  (`comp8_real.py`), the real locus forces c3..c6 = 0: the best residual is
-  0.48 x delta for a lower bound delta on sum |c3..c6|^2, i.e. the penalty
-  dominates. An exact sum-of-squares membership test is running
-  (`nn_sos.sing`).
+- **Component 8.** Closed by hand from its generators (B6 note, Theorem 3).
+  - Phase alignment of c7..c10.
+  - The quartic generator gives r10 = 0 and r8^2 = 2 r9^2, so
+    r7^2 + 9 r9^2 = 1.
+  - Then c_j = e^{2 i theta} conj(c_j) for j = 3..6, and the cb-only
+    generators force c3..c6 = 0.
+  - So the walk is purely in-type: flat. `comp8_real.py` agrees numerically:
+    the residual scales as 0.48 x delta.
 
-If component 8 closes, every real nearest-site unitary walk on the spinorial
-block is flat (purely in-type, purely out-type, or constant). That would be
-an exact no-go for a nearest-site Kogut–Susskind-type one-tick walk.
+Result: every real nearest-site unitary walk on the spinorial block is flat
+(purely in-type, purely out-type, or constant). This is an exact no-go for a
+nearest-site Kogut–Susskind-type one-tick walk.

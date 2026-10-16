@@ -234,6 +234,14 @@ as the lower bound delta on the motion coefficients shrinks. For delta >= 0.5
 they reach one isolated interior near-miss (residual 4.6e-4, nonsingular
 Jacobian), which the theorem shows is not a walk.
 
+*Split-step walks.* Composing steps does not escape Theorem 4.
+Suppose a product U = U_2 U_1 of two one-qubit steps, each with hops in the
+27-point cell, is O-covariant as a whole. Its hops lie in {-2,...,2}^3, so U
+is a constant phase. The factors themselves need not be covariant. Two
+conditional shifts along the same axis, or a D2 product walk followed by any
+cell step, are examples. The same holds for any product whose total range
+per axis is at most two.
+
 The line-branch method is not specific to range two; whether it closes every
 finite range is open.
 
@@ -343,4 +351,4 @@ Expected: `TOTAL: PASS=31 FAIL=0` (under a minute).
 python3 scripts/cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=17 FAIL=0` (about ten minutes; Theorems 4 and 5).
+Expected: `TOTAL: PASS=16 FAIL=0` (about ten minutes; Theorems 4 and 5).

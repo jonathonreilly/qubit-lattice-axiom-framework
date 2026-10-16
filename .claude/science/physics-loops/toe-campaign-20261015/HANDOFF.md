@@ -40,7 +40,7 @@ stated in the note.
 - One-qubit freeze at every finite range. Exact now at range one (cell, all
   four actions) and range two per axis (O, full action; Theorem 4 by line
   branches, runner `scripts/cubic_covariant_qubit_walk_line_branch_certificates_2026_10_16.py`
-  PASS=17, which also proves Theorem 5: D3 cell walks are constant or
+  PASS=16, which also proves Theorem 5: D3 cell walks are constant or
   body-diagonal shifts; this corrected the earlier numerical 'D3: none').
   Range three is running (`scratchpad/walk/rangeR3.log`).
 - Whether every two-qubit O-covariant cell walk is Clifford-form up to flavor

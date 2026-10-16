@@ -65,7 +65,10 @@ def laurent_coeffs(expr, shift=20):
 
 
 def line_degree(expr, e, shift=20):
-    mons = sp.Poly(sp.expand(on_line(expr, e) * Z ** shift), Z).monoms()
+    restricted = on_line(expr, e)
+    if restricted == 0:
+        return 0
+    mons = sp.Poly(sp.expand(restricted * Z ** shift), Z).monoms()
     return max(abs(m[0] - shift) for m in mons)
 
 
@@ -101,7 +104,7 @@ def branches(f, g, unknowns, lines, degrees):
     return out
 
 
-def close_branch(sub, eqs):
+def close_branch(sub, eqs, solve=False):
     """Groebner basis of the unitarity equations on a branch; returns (G, free, point or None)."""
     free = sorted(set().union(*[sp.sympify(v).free_symbols for v in sub.values()]), key=str)
     red = [e for e in (sp.expand(e.subs(sub)) for e in eqs) if e != 0]
@@ -110,7 +113,7 @@ def close_branch(sub, eqs):
     G = sp.groebner(red, *free, order='grevlex')
     if G.exprs == [1]:
         return G, free, None
-    pts = sp.solve(G.exprs, free, dict=True)
+    pts = sp.solve(G.exprs, free, dict=True) if solve else None
     return G, free, pts
 
 
@@ -159,10 +162,10 @@ def main() -> int:
     n_hat = sp.Matrix([1, 1, 1]) / sp.sqrt(3)
     survivors = {}
     for ns, sub in br.items():
-        G, free, pts = close_branch(sub, eqs)
+        G, free, _ = close_branch(sub, eqs)
         if G is not None and G.exprs == [1]:
             continue
-        survivors[ns] = (G, free, pts, sub)
+        survivors[ns] = (G, free, close_branch(sub, eqs, solve=True)[2], sub)
     checks.check('D3: Groebner bases close every branch except (0, 0) and (+-3, 0)',
                  sorted(survivors) == [(-3, 0), (0, 0), (3, 0)])
     point_ok, walks = True, {}

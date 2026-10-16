@@ -1,0 +1,53 @@
+{
+  "historical_author_scientific_runs": 1,
+  "new_scientific_reexecutions": 0,
+  "runs": [
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/runs/source_capture",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "runtime-root-source-capture",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/runs/source_capture/EXECUTION.json",
+      "schema": "flat-metadata"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/runs/page16_render",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "runtime-root-page16-render",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/runs/page16_render/EXECUTION.json",
+      "schema": "pdf-render"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/runs/source_capture",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "runtime-author-source-capture",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_author_exposed_check/runs/source_capture/EXECUTION.json",
+      "schema": "flat-metadata"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/local_sine_preparation_exact_01",
+      "exit_code": 0,
+      "kind": "author-scientific",
+      "label": "preparation-author-exact-fixture",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/local_sine_preparation_exact_01/EXECUTION.json",
+      "schema": "root-recorder"
+    },
+    {
+      "base": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify",
+      "exit_code": 0,
+      "kind": "provenance-only",
+      "label": "preparation-exposed-source-capture",
+      "original_fields_preserved": true,
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify/EXECUTION.json",
+      "schema": "nested-metadata"
+    }
+  ],
+  "runtime_scientific_executions": 0,
+  "scope": "One original author preparation fixture; four historical metadata/render processes. No synthetic acceptance recorder or missing launch reconstructed."
+}

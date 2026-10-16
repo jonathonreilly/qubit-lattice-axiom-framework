@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T14:30:04.785913+00:00",
+  "scope": "Metadata integrity only, not a scientific execution or retained audit.",
+  "authorized_source_identities_rechecked_at_seal": true,
+  "source_at_launch_and_launcher_captures_match": true,
+  "full_stream_hashes_match": true,
+  "metadata_run_exit_codes": {
+    "source_capture": 0,
+    "page16_render": 0
+  },
+  "render_warning_retained": true,
+  "scientific_executions": 0,
+  "separate_author_exposure": false,
+  "root_acceptance": "pending",
+  "canonical_or_editable_prompt_changes": false
+}

@@ -1,0 +1,7 @@
+# Conditional claim status
+
+This packet presents qualified conditional source mathematics under actual equal gaps, a noninteracting old register, supplied connected control access/full SWAP, external pulses/timing/calibration and independent vacuum. Runtime and preparation root acceptances are bound by exact hashes and complete controlling qualification bodies. Source acceptance does not establish retained audit status or approve this new wrapper/code.
+
+The fixed-duration and period-wait runtime schedules retain different battery dimensions, units, pulse/scalar conventions and effective-angle qualifications. The explicit preparation composition displayed here uses the fixed-duration route with M=L+2q and gamma(W)V. No unreviewed translation to the root route is asserted. The existing finite-lift core is cited rather than claimed anew. Separate sparse compilation and its fixture are excluded from this milestone and provide no premise, evidence or favorable resource promise.
+
+The primary is a provenance validator. Its successes and deliberately rejected byte/membership corruptions do not prove a theorem, execute a runtime circuit, independently reproduce the author fixture or identify laboratory energy. Original source records keep canonical approval, Git-base binding and publication absent. Later actual source/canonical/base evidence is separately bound in ACTUAL_BINDING.json; publication remains root-owned. No audit verdict, prompt, axiom or lock is changed.

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-16T14:39:53.362496+00:00",
+  "status": "unaccepted source and author fixture pre-execution freeze",
+  "scientific_executions_before_freeze": 0,
+  "members": [
+    {
+      "path": "PROPOSED_LEMMAS.md",
+      "bytes": 15499,
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826"
+    },
+    {
+      "path": "CHECK_PLAN.md",
+      "bytes": 996,
+      "sha256": "d82259e247dec073254bd4a216de5c5c51e0c6feba0762189616f9a24db0958c"
+    },
+    {
+      "path": "selected_exact_check.py",
+      "bytes": 3077,
+      "sha256": "ec098c06310c1dde2864c020f8311ea2833bf09c0da31da268d863776564fbc4"
+    },
+    {
+      "path": "SEARCH.json",
+      "bytes": 502,
+      "sha256": "7121f9f0c84b20fc9e0299ef64720827df1d6f7787c6eb771c58e2cbb15fdf70"
+    },
+    {
+      "path": "SEARCH.stdout",
+      "bytes": 2999,
+      "sha256": "99b87181b3096dee58cf1958b4ec4d3676b09d2c206d1edb2ea88810d5ed359c"
+    },
+    {
+      "path": "SEARCH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

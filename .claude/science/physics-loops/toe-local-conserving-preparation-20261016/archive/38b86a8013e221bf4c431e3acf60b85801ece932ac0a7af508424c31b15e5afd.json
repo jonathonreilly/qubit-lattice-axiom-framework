@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-16T14:40:38.814169+00:00",
+  "scope": "New root-authored proposal, source-exposed to candidate and root-only review; no independent acceptance.",
+  "source_exposure": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "bytes": 31922,
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/FREEZE.json",
+      "bytes": 2360,
+      "sha256": "3128a438f020588eb8e8e945b1cbe9f4e6d64f5524831e19e530ff28a1e08c9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/REVIEW.md",
+      "bytes": 23371,
+      "sha256": "70d14b789941483c88d39e582195485f5230528415197ad763183fab6407ebc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_exposed_check/FINAL_FREEZE.json",
+      "bytes": 4971,
+      "sha256": "f17710dd8d161053aa6f8168496dc739aeea8488105c422d834e274a2cc043cd"
+    }
+  ],
+  "actual_author_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/local_sine_preparation_exact_01/EXECUTION.json",
+    "bytes": 1783,
+    "sha256": "7d8ea9a5f8c43db3458ef81b4d04fadbbcdd7a8bb0387de2a97b36f454736963"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  },
+  "failed_scientific_executions": 0,
+  "discovery_limits": [
+    "Earlier broad repository search had a missing checkpoint path and truncated output; narrowed complete capture retained.",
+    "Canonical boundary-clock note was screened in part only; it is not a proof premise.",
+    "A guessed earlier finite-reservoir execution path was absent; rg located the actual check_run receipt; this was file discovery, not a scientific launch.",
+    "Python/SymPy import discovery succeeded before the selected run; it was environment discovery, not a scientific test."
+  ],
+  "new_scientific_execution_count": 1,
+  "independent_review": null,
+  "canonical_changes": false,
+  "editable_prompt_files_changed": []
+}

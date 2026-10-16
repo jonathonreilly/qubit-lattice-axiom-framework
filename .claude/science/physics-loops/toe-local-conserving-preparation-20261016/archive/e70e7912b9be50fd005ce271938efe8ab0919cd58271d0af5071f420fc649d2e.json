@@ -1,0 +1,27 @@
+{
+  "start_utc": "2026-10-16T14:57:40.075838+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify/source_at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/capture_and_verify.py",
+    "bytes": 6536,
+    "sha256": "0c9839b6b3b54f14d8bb64fd1e055d1aef8f5075ea7fb39ccc8bf52f31d05b71"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify/source_at_launch.py",
+    "bytes": 6536,
+    "sha256": "0c9839b6b3b54f14d8bb64fd1e055d1aef8f5075ea7fb39ccc8bf52f31d05b71"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify/recorder_at_launch.py",
+    "bytes": 1912,
+    "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+  },
+  "expected_exit": 0,
+  "timeout_seconds": 60,
+  "scope": "New source-only packaging metadata; no historical science execution"
+}

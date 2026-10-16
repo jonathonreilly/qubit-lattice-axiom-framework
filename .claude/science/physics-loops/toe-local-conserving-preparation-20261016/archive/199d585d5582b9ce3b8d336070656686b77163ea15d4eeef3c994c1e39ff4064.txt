@@ -1,0 +1,421 @@
+=== PDF PAGE 3 ===
+3
+Ref. [ 10] proves that for any desired energy-conserving uni-
+taryV onn qubits, there exists an energy-conserving unitary
+˜V onn+1 qubits, such that ˜V can be realized by Hamiltonians
+X ⊗ X +Y ⊗ Y and single-qubitZ and
+˜V (|ψ ⟩ ⊗ | 0⟩anc) = (V |ψ ⟩) ⊗ | 0⟩anc, (2)
+for all states |ψ ⟩ ofn qubit system (See the example in Fig. 1).
+Subsequently, Ref. [42] simpliﬁed and generalized this result,
+to symmetric quantum circuits with arbitrary Abelian symme -
+tries.
+Building on the ideas developed in [ 10] and [ 42], in this
+work we go beyond these results and develop various cir-
+cuit synthesis techniques for constructing explicit circuits with
+energy-conserving gates. (This is analogous to the develop -
+ment of the theory of quantum circuits: ﬁrst, the universali ty
+of 2-local gates was established mostly using Lie-algebraic ar-
+guments [
+6, 41], and then, building on those results, explicit
+and efﬁcient circuit synthesis techniques were developed. See,
+e.g., [3, 43].)
+Using these circuit synthesis methods we show that
+Theorem 1. (Exact implementation) Any energy-conserving
+unitary transformation onn qubits, i.e., a unitary transforma-
+tion that commutes with ∑n
+j=1Zj, can be realized exactly, up
+to a possible global phase, using O(4nn3/2) gates from any
+one of the following universal gate sets
+1.
+√
+iSWAP = exp(i π
+4R) , and exp(iφZ ) : φ ∈ (− π,π ]
+gates, with one ancilla qubit, where
+R = 1
+2 (X ⊗ X +Y ⊗ Y ). (3)
+2. exp(iαH int) : α ∈ R , and S = eiπ/4 exp(− iπZ/ 4)
+gates, with one ancilla qubit, where Hint is any energy-
+conserving 2-qubit Hamiltonian that is not diagonal in
+the computational basis, such that
+[Hint,Z ⊗ I] = − [Hint, I ⊗ Z] ̸= 0 , (4)
+3. exp(iαR ) : α ∈ (− π,π ] gates, with two ancilla qubits.
+Two canonical examples of non-diagonal energy-
+conserving Hamiltonians are the XY interaction and the
+Heisenberg interactionRHeis := (X ⊗ X +Y ⊗ Y +Z ⊗ Z)/ 2.
+Then, part
+2 of the theorem implies that the following sets are
+universal:
+• exp(iαR ) : α ∈ (− π,π ] , andS gates, with one ancilla
+qubit,
+• exp(iαR Heis) : α ∈ (− π,π ] , and S gates, with one
+ancilla qubit.
+A few remarks are in order: First, as we show in
+Sec. II A, general energy-conserving unitary transformations
+on n qubits are smoothly parameterized by ≈ 4n/ √ πn real
+parameters. Therefore, a simple parameter counting implie s
+that for generic energy-conserving unitaries, the above co n-
+structions are close to optimal, by a factor of n2.1
+Second, note that in part 2 of the theorem the condition
+thatHint is not diagonal is necessary, because otherwise qubits
+cannot exchange energy with each other, i.e., the overall n-
+qubit unitary will be also diagonal in the computational bas is.
+Finally, note that in all the 3 cases in Theorem 1 one needs,
+at least, one ancilla qubit, which by the argument [ 10] is un-
+avoidable. However, for the last gate set an extra ancilla is
+used. This is because XY Hamiltonian has an additional Z2
+symmetry, namely
+X ⊗ 2RX ⊗ 2 =R. (5)
+As we further explain in
+Sec. VI, this Z2 symmetry can be
+broken with the extra ancilla qubit. In this case, the ancill a can
+be interpreted as a quantum reference frame, or asymmetry
+catalyst [
+44, 45].2
+In addition to exact implementation, we also investigate th e
+approximate implementation of energy-conserving unitari es
+using ﬁnite gate sets, e.g.,
+√
+iSW AP andS gates. Applying
+the Solovay-Kitaev theorem [ 1, 50, 51], one can bound the
+number of such gates that are needed to implement a desired
+energy-conserving unitary, with any error ǫ >0 as quantiﬁed
+in terms of the operator norm distance between the desired
+unitary and the realized unitary (See
+Sec. VII for the formal
+statements). In particular, we show that
+Corollary 2. (Approximate implementation) Any energy-
+conserving unitary on n ≥ 2 qubits can be realized with an
+error bounded byǫ> 0, using O(4nn3/2(n+logǫ − 1)ν) num-
+ber of gates from either of the following gate sets:
+1.
+√
+iSWAP gate alone with 2 ancilla qubits.
+2.
+√
+iSWAP andS gates with 1 ancilla qubit.
+Here,ν is the exponent for the complexity of Solovay-Kitaev
+algorithm, and can be chosen as any number greater than
+log(1+
+√
+5)/2 2 ≈ 1. 44042.
+In the above discussions, we did not specify any geometry
+for the system of qubits and assumed gates can be applied
+between any pair of qubits. What happens if we assume the
+qubits form an open chain and gates are allowed only between
+nearest-neighbor qubits?
+As it was noted in [
+10], this additional restriction does not
+affect the set of realizable unitaries, provided that the an cilla
+can be coupled to all the qubits in the chain. This is because
+interacting two qubits with the ancilla using X ⊗ X +Y ⊗ Y
+1 More generally, we will show in Sec. V Step 3 that if an energy-conserving
+unitary acts non-trivially only on a subspace spanned by D elements of the
+computational basis then it can be realized using O(n2 × D2) gates from
+any one of the above gate sets.
+2 It is worth noting that with any ﬁnite number of ancilla qubit s, it is
+impossible to implement non-energy-conserving unitaries , using energy-
+conserving interactions alone. This can be understood as a c onsequence of
+the Wigner-Araki-Y anase theorem [46, 47], or equivalently, a consequence
+of the no-programming theorem [ 48] (See [ 49] for the connection).
+
+=== PDF PAGE 4 ===
+4
+andZ Hamiltonians, allows us to perform the SW AP gate that
+exchanges the state of two qubits (See Fig. 1). Then, apply-
+ing SW APs between nearest-neighbor qubits, one can arbi-
+trarily change the order of qubits. On the other hand, if one
+requires that the ancilla should also be part of the chain and
+only interact with its nearest neighbors, then the above uni -
+versality result does not hold anymore. Indeed, in this case ,
+using the Jordan-Wigner transformation [
+52–54] this system
+can be mapped to a free fermionic system, which implies that
+the group of realizable unitaries is signiﬁcantly smaller t han
+the group of energy-conserving unitaries (namely, it has di -
+mensionn2). Of course, if one is allowed to use the SW AP
+gate, this restriction can be avoided. That is
+Corollary 3. (Approximate implementation with nearest-
+neighbor gates) Consider an open chain ofn+1 qubits, where
+one of the qubits is designated as the ancilla qubit and is ini -
+tially prepared in state |0⟩. Any energy-conserving unitary
+on the rest of qubits can be realized using O(4nn3/2(n +
+logǫ − 1)ν) number of gates S, SWAP , and
+√
+iSWAP with
+two-qubit gates restricted to nearest-neighbor qubits, fo r any
+ν > log(1+
+√
+5)/2 2.
+Finally, in Sec. VI we develop circuit synthesis techniques
+using XY interaction alone and, in particular, without sing le-
+qubit Z Hamiltonian and ancilla qubits. It follows that all
+realizable unitaries should satisfy the Z2 symmetry of XY
+interaction in Eq. (5). However, as the following theorem
+states, there are more constraints on the realizable unitar ies
+(See Sec. VI for further details).
+Theorem 4. (Circuits with XY interaction alone) On a sys-
+tem with n ≥ 3 qubits, any unitary V can be realized with
+interaction R = (X ⊗ X +Y ⊗ Y )/ 2 alone (without any
+ancilla qubits) if, and only if,
+1. V is energy-conserving, i.e., [V, ∑n
+j=1Zj] = 0 .
+2. It satisﬁes the Z2 symmetryX ⊗ nVX ⊗ n =V .
+3. det(V (m)) = 1 : m = 0 , · · ·,n , where det (V (m))
+is the determinant of V (m), the component of V =⨁n
+m=0V
+(m) in the subspace with Hamming weight m,
+that is the eigensubspace of ∑n
+j=1Zj with eigenvalue
+n − 2m.
+4. When n is even, det (V (n/2,± )) = 1 , where V (n/2,± )
+is the component of V in the joint eigensubspaces of∑
+jZj and X ⊗ n, with eigenvalues 0 and ± 1, respec-
+tively, such that
+V (n/2) =V (n/2,+) ⊕ V (n/2,− ). (6)
+Furthermore, any unitary satisfying the above conditions c an
+be realized with O(4nn3/2) gates exp(iθR ) : θ ∈ (− π,π ].
+This means that the group of unitaries that can be realized
+with XY interaction alone on n ≥ 3 qubits, denoted by Gn, is
+isomorphic to
+Gn ∼
+=
+⌊ n
+2 ⌋∏
+m=1
+SU(
+( n
+m
+)
+) : n is odd
+Gn ∼
+=
+n
+2 − 1∏
+m=1
+SU(
+( n
+m
+)
+) ×
+[
+SU( 1
+2
+( n
+n
+2
+)
+)
+]× 2
+:n is even
+where we have used the fact that the dimension of the sub-
+space with Hamming weight m is
+( n
+m
+)
+. Note that in the spe-
+cial case of n = 2, the constraint in condition
+4 does not hold
+and3
+G2 ∼
+= U(1).
+It is also worth emphasizing that while the additional con-
+straint in the case of even n ≥ 4, i.e., condition
+4, is related to
+the aforementioned Z2 symmetry of XY interaction in Eq. (5),
+it is not necessarily satisﬁed by all unitaries that respect the Z2
+symmetry (Namely, it is of the type of constraints discussed
+in [
+10] which are the consequence of both locality and sym-
+metry of Hamiltonian). For instance, for a system with n = 4
+qubits, consider the family of unitaries
+exp
+(
+iθ
+[
+|0011⟩⟨1100| + |1100⟩⟨0011|
+])
+:θ ∈ (− π,π ],
+i.e., unitaries generated by Hamiltonian H =
+|0011⟩⟨1100| + |1100⟩⟨0011|. While these unitaries re-
+spect conditions 1-3 of Theorem 4, unless θ = 0 , they do
+not satisfy condition 4 of this theorem and therefore they are
+not realizable with XY interaction alone 4. Finally, we note
+that our results on approximate universality imply that the
+group generated by
+√
+iSW AP gates onn ≥ 3 qubits is a dense
+subgroup of Gn.
+The rest of this paper is organized as follows:
+• Sec. II formulates our goal by introducing energy-
+conserving unitaries and the notion of (semi-
+)universality. It contains a collection of elementary
+gates useful for subsequent circuit constructions.
+In
+Sec. II E, circuits with iSW AP and single-qubit
+z-rotations are characterized.
+• Sec. III discusses the structure of 2-qubit energy-
+conserving unitaries. It shows the semi-universality of
+(and thus the equivalence between) the gate sets
+1 and
+2 in Theorem 1 for 2 qubits.
+3 In this case, the eigen-subspaces of X⊗ 2 in the subspace with Hamming
+weight 1 correspond to vectors |01⟩ ± | 10⟩, which are also eigenvectors of
+exp(iθR) with eigenvalues e± iθ.
+4 In particular, in this case, V (2,± ) = exp( ± iθ|ψ± ⟩⟨ψ± |) where |ψ± ⟩ =
+(|0011⟩ ± | 1100⟩)/
+√
+2 are the eigenvectors of H with eigenvalues ± 1.
+Then, det (V (2,± )) = e± iθ which implies, unless θ = 0 , this unitary is
+not realizable with XY interactions alone.
+
+=== PDF PAGE 16 ===
+16
+This lemma is a slight variation of a similar result in [ 57],
+which does not impose any constraints on the determinant
+of 2-level unitaries (See also [
+1, 2]). For completeness, we
+present the proof in Appendix D.
+Recall that in the decompositionV = ⨁n
+m=0V
+(m), unitary
+V (m) acts on the subspace with Hamming weight m, which
+has dimension
+( n
+m
+)
+. Then, applying this lemma, we ﬁnd that
+V (m) can be realized with
+1
+2
+( n
+m
+)
+×
+[( n
+m
+)
+− 1
+]
+2-level energy-conserving unitaries, each of which acts on
+two computational basis vectors in the subspace of Hamming
+weightm, has determinant 1, and can be constructed with the
+method in
+Step 2.
+In conclusion, the total number of 2-level gates needed to
+implementV is
+1
+2
+n− 1∑
+m=1
+( n
+m
+) [( n
+m
+)
+− 1
+]
+=
+( 2n
+n
+)
+− 2n
+2 ≈ 4n
+2√ πn , (77)
+where ≈ means the ratio of two sides goes to 1, in the limit
+n → ∞ .
+Combining this with Corollary 11 we conclude that
+Proposition 13. Any energy-conserving unitary in SV U(1)
+n
+can be realized with O(4nn3/2) gates in any of the gate sets
+1 and 2 in Theorem 1, without ancillary qubits.
+Here, to count the number of gates, one can use the dia-
+gram in Fig. 6: Recall that controlled- iSW AP can be realized
+using the circuit in Fig. 4, which requires O(1) gates in one
+of the aforementioned gate sets. Therefore, the total requi red
+number of elementary gates is
+[
+O(n2) + O(n)
+]
+× O
+( 4n
+√ n
+)
+= O(4nn3/2). (78)
+Note that, in general, if the desired unitary acts non-trivially
+only on a subspace spanned by D ≤ 2n basis elements, then
+from Lemma 12 it can be decomposed into no more than
+D(D − 1) = O(D2) 2-level unitaries. Hence, any such uni-
+tary can be implemented with [O(n2) + O(n)] × O (D2) =
+O(n2D2) elementary gates in Theorem 1.
+Step 4: Universality
+Finally, applying a mechanism developed in [ 42], we show
+how one can achieve universality using a single ancillary
+qubit. It is worth noting that this technique can be applied t o
+symmetric circuit with any arbitrary Abelian symmetry (See
+Lemma 5 of [
+42]).
+Let |b⟩ be an arbitrary element of the computational basis
+{| 0⟩, |1⟩} ⊗ n, other than |0⟩⊗ n. Then, there is (at least) one
+qubit with reduced state |1⟩. Let |b′⟩ be the n-qubit state ob-
+tained from |b⟩ by changing the state of this qubit from |1⟩ to
+|0⟩. Deﬁne the Hamiltonian
+˜Hb = |b⟩⟨b| ⊗ | 0⟩⟨0|anc − | b′⟩⟨b′| ⊗ | 1⟩⟨1|anc. (79)
+Note that (n + 1) -qubit states |b⟩|0⟩anc and |b′⟩|1⟩anc have
+equal Hamming weights and their Hamming distance is 2.
+Furthermore, this Hamiltonian is traceless, which means
+exp(i ˜Hbθ ) has determinant 1. It follows from
+Step 1 that this
+2-level energy-conserving unitary can be implemented with -
+out ancilla. Implementing this unitary on the system and an-
+cilla we obtain state
+exp[i ˜Hbθ ](|ψ ⟩⊗| 0⟩anc) =
+(
+exp[iθ |b⟩⟨b|]|ψ ⟩
+)
+⊗| 0⟩anc, (80)
+where |ψ ⟩ ∈ (C2)⊗ n is the initial state of n qubits in the
+system. Since the state of ancilla qubit remains unchanged,
+we can reuse again in a similar fashion. Therefore, in this
+way we can realize the unitary exp(i|b⟩⟨b|θ ). We can apply
+this procedure to any sector, except the sector with Hamming
+weightm = 0 , which corresponds to state |0⟩⊗ n. It follows
+that using (n − 1) 2-level unitaries we can realize any unitary
+in the form
+D = |0⟩⟨0|⊗ n +
+n∑
+m=1
+exp(iθ m) |bm⟩ ⟨bm| , (81)
+for any arbitrary θ 1,...,θ n ∈ (− π,π ], where |bm⟩ is an ar-
+bitrarily selected basis element in the sector with Hamming
+weightm.
+Finally, recall that any energy-conserving unitary V can
+be decomposed as V = eiθ0DQ, where eiθ0 = V
+(0) =
+⟨0|⊗ nV |0⟩⊗ n, D is in the form of Eq. (81), with θ m =
+arg(det(V (m))) − θ 0 for 1 ≤ m ≤ n, and Q ∈ SV U(1)
+n .
+As mentioned above, D can be implemented with an ancil-
+lary qubit. Furthermore, in the previous section we saw how
+Q ∈ SV U(1)
+n can be implemented without ancillary qubits.
+Note that the unitary generated by Hamiltonian in
+Eq. (79)
+is of the type we studied in Step 1 of this construction, and
+therefore can be realized with no more than 9(n + 1)2/ 8 gates
+(n + 1 qubits including one ancilla qubit) in SV U(1)
+3 . In total,
+this step requires O(n2) elementary gates.
+In conclusion, any energy-conserving unitary can be real-
+ized, up to a global phase, with one ancillary qubit. Further -
+more, using the diagram in
+Fig. 6 and Eq. (78), we ﬁnd that
+this construction requires
+O(4nn3/2) + O(n2)(n − 1) = O(4nn3/2), (82)
+gates in one of these elementary gate sets, which completes
+the proof of
+Theorem 1 for sets 1 and 2.
+VI. REALIZING ALL ENERGY-CONSERVING
+UNITARIES WITH XY INTERACTION ALONE
+So far in this paper, we have considered circuits that contain
+both XY interaction as well as single-qubit rotations aroun d
+the z axis. In this section, we focus on synthesizing quan-

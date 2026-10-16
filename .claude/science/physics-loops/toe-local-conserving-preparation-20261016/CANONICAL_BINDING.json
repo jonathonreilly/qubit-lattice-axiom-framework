@@ -1,0 +1,39 @@
+{
+  "kind": "actual_local_conserving_preparation_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "5379d02febf465dbca41dba0b9119da4dfe0b667",
+  "actual_git_base": "5379d02febf465dbca41dba0b9119da4dfe0b667",
+  "bound_note_sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/33a6e9bf22c4f55ff4780c03dd4a81317db9af35d16d4e26c3568041e6bd5d3f.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/34ee5fb0151e09ce59370cc397ecf1cc7a16203d254d3386e05809551d309f81.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/3b13fd9021b80193231bf7413ad87e73f247ea1fb1b9e5fad42e0e159ced3830.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/477d30fab8a5bbf73a128679bcfa94af42aff38ff3bfe10b51d1a0700ffdc2bc.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/6373ceda48c0afdb8438321279102fa0751fc81667badfef9f72406f7f662579.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/6bcd7b7914f2892c3406677914ffcf3ac7da95f2b15192008aae270823494d01.md",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/703dd6080c3c70f212b5fe13480a72e19754b2a7ea23439797f2d132720d34ac.py",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/7a8aee2ed961f86019774797ef924a0790f81731f49a03178f7028d6d05ee63b.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/7bf02882a23236e0a64eae0e117a928f9c1cc32df6285bbe20044677e09d0bee.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/8d3f31c5d46462f73a3245176a68d0dc161af8328e437c9c151aef2d4c94922e.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/8ea4f3b13e415815bac730007afc78e9b774a8f3d1d6c968e3fc7d2cb95ec477.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/9352efce36f94b6959f937585520a7030d125b08de01671c4cd546aa6175be11.blob",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/a27bfe5e8ccca365ad8ee26e40e69220201139a24cf218c8cd0335646306b769.blob",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/a804cdd819aee5e2c9efc716fe96016fed9c4f3625f73990527f6cea6a6812d3.blob",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/c4eb00bd9490af7a2cc6098c1a48782d2ada86abe9ebfa06758ddab3497ddab3.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/c932f21c7cdbca6d5fb7faf1be926446b67296db56fe3176ff40e1cfd23a303f.json",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/ce1ed5c80088e519df2d6eae075c86b4e0fd4eea21fb15ea644c79351c710afb.py",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/db71e6b3a7ab351aa66f69dff5c4858402da659846adc04923ce6347ae88e7d7.md",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e458eeccde36a5f21145b25311127eb025ee17894122bd48885b63c44b9287d5.py",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e86383c197d7f6576c771074362ae8434c53bdb2c2f12897b2bb6edd1737adfe.blob",
+    ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/fa91c71c0261dab7939cb46d0fad7f47ffcdd3bf6d5638bc4215a1b2896d91a4.md"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/8ea4f3b13e415815bac730007afc78e9b774a8f3d1d6c968e3fc7d2cb95ec477.json",
+    "bytes": 41319,
+    "sha256": "8ea4f3b13e415815bac730007afc78e9b774a8f3d1d6c968e3fc7d2cb95ec477"
+  }
+}

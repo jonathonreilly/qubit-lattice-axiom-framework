@@ -1,0 +1,111 @@
+{
+  "kind": "actual_root_refresh_provenance",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/d5c10401a1b7d93bd8b24450b7b92ab60ed3458602b9b2f2232f6bed9884b2bd.json",
+      "bytes": 7783,
+      "sha256": "d5c10401a1b7d93bd8b24450b7b92ab60ed3458602b9b2f2232f6bed9884b2bd"
+    },
+    "root_binding": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/25ea8fa6d506c17422a57a9fbb7247660ce64576b59ea7dd7b122d88a2a48db6.json",
+      "bytes": 1710,
+      "sha256": "25ea8fa6d506c17422a57a9fbb7247660ce64576b59ea7dd7b122d88a2a48db6"
+    },
+    "integration_review": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/a42c3a004b438515d0b86d40202b9b7ff1c18d9f8519292b8eca63855a5edca6.json",
+      "bytes": 10157,
+      "sha256": "a42c3a004b438515d0b86d40202b9b7ff1c18d9f8519292b8eca63855a5edca6"
+    },
+    "integration_proposal": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/bb1aafaa6f6ab6ce62ee664e2ec078d4af35867880b7a349346b2f790e63f978.json",
+      "bytes": 115994,
+      "sha256": "bb1aafaa6f6ab6ce62ee664e2ec078d4af35867880b7a349346b2f790e63f978"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/f98d998fc34c101252ddc48633055b451fee8ec41a7b4397fd36858e3ce8f127.json",
+      "bytes": 1527,
+      "sha256": "f98d998fc34c101252ddc48633055b451fee8ec41a7b4397fd36858e3ce8f127"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/9ad3346ec71ecccf39551952d18f55ffd3aceeadeec6b4ff18a61a2faac159f1.json",
+      "bytes": 217,
+      "sha256": "9ad3346ec71ecccf39551952d18f55ffd3aceeadeec6b4ff18a61a2faac159f1"
+    },
+    "inventory": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/3ff970f97d708942d3e9582a513e396a3eb83608262a2ba9d688f3d6cb6221b0.blob",
+      "bytes": 12776,
+      "sha256": "3ff970f97d708942d3e9582a513e396a3eb83608262a2ba9d688f3d6cb6221b0"
+    },
+    "actual_refresh_receipts": [
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/964af4c848bec810a82d7ab26ba78637e6fee7b98b2ed6c457a10facce114f4f.json",
+          "bytes": 1261,
+          "sha256": "964af4c848bec810a82d7ab26ba78637e6fee7b98b2ed6c457a10facce114f4f"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/06624a9cdde35fecce962ee515ad065e84060a3ff9805253203ba5435d31271f.blob",
+          "bytes": 234,
+          "sha256": "06624a9cdde35fecce962ee515ad065e84060a3ff9805253203ba5435d31271f"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/b3bd79fdad505f4e4bf6e51535e1190217f5bdd568d25e78499035cce9e75fdc.json",
+          "bytes": 1331,
+          "sha256": "b3bd79fdad505f4e4bf6e51535e1190217f5bdd568d25e78499035cce9e75fdc"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/3ff970f97d708942d3e9582a513e396a3eb83608262a2ba9d688f3d6cb6221b0.blob",
+          "bytes": 12776,
+          "sha256": "3ff970f97d708942d3e9582a513e396a3eb83608262a2ba9d688f3d6cb6221b0"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/6e6a081f67a4886f3c2cfd09d4137d262e5492d97aa4ae58cff973391eff7222.json",
+          "bytes": 1265,
+          "sha256": "6e6a081f67a4886f3c2cfd09d4137d262e5492d97aa4ae58cff973391eff7222"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/a038ab89580597290a70d1266b0de80da234de536f7724ce0537f5c3b4d8f054.blob",
+          "bytes": 19823,
+          "sha256": "a038ab89580597290a70d1266b0de80da234de536f7724ce0537f5c3b4d8f054"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "execution": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/1c929bfb2abc2965c0d5f217a4c6a6d765c627e4c900b2198c6e91934c1ef182.json",
+          "bytes": 1209,
+          "sha256": "1c929bfb2abc2965c0d5f217a4c6a6d765c627e4c900b2198c6e91934c1ef182"
+        },
+        "stdout": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/7cbc11b949f39eada7d310d8981f4453ab09a9c5946fd373dd976756a313627f.blob",
+          "bytes": 19769,
+          "sha256": "7cbc11b949f39eada7d310d8981f4453ab09a9c5946fd373dd976756a313627f"
+        },
+        "stderr": {
+          "path": ".claude/science/physics-loops/toe-local-conserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ]
+  },
+  "scope": "Actual root Git/source refresh; Git ancestry is not a mathematical dependency."
+}

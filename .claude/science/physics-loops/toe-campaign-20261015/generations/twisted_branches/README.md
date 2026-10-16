@@ -14,21 +14,23 @@ Each branch is labelled by its J_x-eigenline exponents along the x axis:
 
 | file | axis exponents (m_1..m_4) | mod 32003 (slimgb) | over Q (modStd) |
 |---|---|---|---|
-| b0 | (-1, 1, -1, 1) | unit ideal | unit ideal (`b0_Q.out`) |
-| b1 | (-1, 1, 0, 0) | unit ideal | not run |
-| b2 | (-1, 1, 1, -1) | unit ideal | not run |
-| b3 | (0, 0, -1, 1) | unit ideal | not run |
-| b4 | (0, 0, 0, 0) | dim 4; 2 unknowns vanish, 4 nilpotent | not finished in window |
-| b5 | (0, 0, 1, -1) | unit ideal | not run |
-| b6 | (1, -1, -1, 1) | unit ideal | not run |
-| b7 | (1, -1, 0, 0) | unit ideal | not run |
-| b8 | (1, -1, 1, -1) | unit ideal | not run |
+| b0 | (-1, 1, -1, 1) | unit ideal | unit ideal |
+| b1 | (-1, 1, 0, 0) | unit ideal | unit ideal |
+| b2 | (-1, 1, 1, -1) | unit ideal | unit ideal |
+| b3 | (0, 0, -1, 1) | unit ideal | unit ideal |
+| b4 | (0, 0, 0, 0) | dim 4; 2 unknowns vanish, 4 nilpotent | same |
+| b5 | (0, 0, 1, -1) | unit ideal | unit ideal |
+| b6 | (1, -1, -1, 1) | unit ideal | unit ideal |
+| b7 | (1, -1, 0, 0) | unit ideal | unit ideal |
+| b8 | (1, -1, 1, -1) | unit ideal | unit ideal |
 
 In each `.out` file, `zzI power P` gives the smallest P <= 12 with
-zzI^P in the ideal. P = 12 means none was found up to 12.
+zzI^P in the ideal; P = 12 means none was found below 12 (not nilpotent at low order).
 
 Evidence level: the branch list comes from a numerical linear-consistency
-prefilter, and the unit ideals are mod p except for b0. Together they
+prefilter. The over-Q column is Singular's multi-prime modStd
+(`bN_Q.out`, input `b0_Q.sing` pattern: `ring r=0`, `modStd`); for a unit
+result modStd does not itself certify 1 in I. Together they
 support "every U(0) = 1 twisted-pair cell walk is flat along the axes", but
 do not prove it.
 

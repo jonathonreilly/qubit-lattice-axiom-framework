@@ -1,6 +1,6 @@
 {
  "edge_count": 16068,
- "node_count": 7123,
+ "node_count": 7124,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19275,6 +19275,10 @@
    "out_degree": 3
   },
   "scalar_kg_rerun_note_2026-04-10": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "scalar_photon_calibration_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

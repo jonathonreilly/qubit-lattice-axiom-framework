@@ -1,0 +1,14 @@
+{
+  "scripts/scalar_photon_reception_core.py": {
+    "historical_source": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_reception_gain_dynamic_v2.py",
+    "source_sha256": "e5aa7b637c3d715f5398cbb12deb351f04a37d0908e3adc1d8fdd66715e8e70b",
+    "canonical_sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+    "changes": "Remove standalone output boilerplate, add run_checks and timeout; canonicalize import path; separate-gain coefficient intermediates normalized exactly before further differentiation."
+  },
+  "scripts/scalar_photon_separate_gains.py": {
+    "historical_source": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/check_split_reception_gain_v2.py",
+    "source_sha256": "54c2cd58d18485510697b9e7f5d65bff17c3acf81b11b7c24130579fd086f4d5",
+    "canonical_sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+    "changes": "Remove standalone output boilerplate, add run_checks and timeout; canonicalize import path; separate-gain coefficient intermediates normalized exactly before further differentiation."
+  }
+}

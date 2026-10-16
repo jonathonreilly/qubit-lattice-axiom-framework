@@ -1,0 +1,31 @@
+# Focused final-source integration check
+
+No material mismatch was found between this canonical unit and the frozen independent reception/robustness findings. This is a source-bound integration check, not a formal audit, landing review, empirical validation, novelty certification or independent blind derivation of the separate-gain theorem.
+
+Read completely: docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md; scripts/scalar_photon_calibration.py, scalar_photon_reception_core.py, scalar_photon_separate_gains.py and scalar_photon_calibration_controls.py; outputs/scalar_photon_calibration/result.json. The exact six-file source/output binding is frozen_sources.json. The note hash is 710f1ff2562e3c0b794ba2121fa42eb82a6515ebd6be11148ce325c5dccbb6ee. Read canonicalization_v1.json as provenance, not mathematical evidence.
+
+## Mathematics and scope correspondence
+
+The fixed-reception radial inversion retains X=gP because g is constant along the fixed-u inversion; this does not license commuting a coeval derivative with gain. The note retains the complete registered primitive B=a g I0 and W=fY+2(g-f)I1+2g_u I0. The independent checker derives T=fY directly from the product rule B'=hB+g_u I0+gI1, and verifies the f=g specialization. Observer/source terms and actual-event redshift convention are explicit; a fixed-coordinate endpoint convention is expressly excluded from silent substitution. This is a supplied photon/source-clock contract, not an instrument calibration result.
+
+All twelve shared-gain coefficients match the previous independent expansion, with Lbeta=2beta'+hbeta and the two path identities included. K=0 produces a nontrivial column relation; K!=0 alone is not a rank guarantee. The fourteen-column extension preserves the radius dependence of D,E and uses L rather than incorrectly replacing LD with D'. Its full formula and extraction chain were inspected for integration consistency; the separate assigned blind mathematical check remains distinct from this review.
+
+The target says at-most-one local coefficient history under actual rank and smooth registered histories. It does not claim that the eliminated relation is sufficient. Cross-shell homogeneity, reception integrability, all coefficient identities, original field equations and photon equations remain required. The chart restrictions b,x nonzero, R>0, q/G>0, qG>0 and positive gains are stated. Absolute common gain, action normalization, scalar origin/orientation, off-trajectory continuation, supplied a,h and action-class selection remain unresolved. The full-sky l>=2 contract and lack of a masked-patch/general survey claim are explicit.
+
+The separate-gain fixture uses derivatives of exact coefficient functions in its drift recovery. It does not numerically infer those derivatives from neighboring finite records. This matches the stated ideal-continuum premise and the explicit statement that one isolated matrix cannot supply derivatives. It is an important implementation limit, not a newly established measurement pipeline.
+
+## Robustness findings retained
+
+The canonical controls freshly construct the 24-mode finite field, 48 shared-shell angular samples, baseline column normalization and seeded derivative-level perturbations. They do not read historical checker output. Their singular spectrum, condition number 729814.6187806218, four noise cases and beta recovery agree with the frozen independent records. At epsilon=1e-6 beta is about .065652 instead of .1. The note preserves that these are generous derivative-level inputs, not primitive instrument-noise propagation, and may not be realizable as one perturbed field.
+
+The omission of 2g_u I0 survives the single-shell angular fit exactly; it is not reported as detected by unused angular rows. The canonical control establishes exact modal consistency, which also entails consistency of angular evaluations. Known-generator parameter comparison is explicitly not observational rejection. The adaptive follow-up regenerates C and e cross-shell differences 20/9999 and 40/9999 and the reference-shell residuals: Raychaudhuri -3/5, scalar background 127sqrt(65)/650, bare-dust background -1/50, and K'/K consistency -16/65. These match the earlier independent work. The canonical diagnostics do not regenerate the earlier extra linear-dust residuals, and do not claim to do so; the reproduced background residuals already reject this candidate history. No all-errors detection or generic conditioning claim is substituted.
+
+The noise bound is an input-perturbation bound in exact arithmetic. At zero added noise the recorded bound is zero while floating roundoff is about 2.3e-17 in scaled coefficients; the code appropriately tests noiseless numerical recovery separately and applies the bound assertions to nonzero perturbations. No practical instrument error budget follows.
+
+## Computation and bindings
+
+A byte-identical scratch copy of the note and four scripts was made entirely under this independent directory. The unchanged primary was executed there with PYTHONDONTWRITEBYTECODE=1, python3 -B and a 120-second subprocess timeout. It completed in 23.39 seconds. Its full JSON result equals the canonical result exactly: common reception 48/0, separate reception 33/0, conditioning/omission 12/0. Counts overlap and are not independent experiments. Canonical sources and output remained unchanged throughout.
+
+Independent check.py adds sixteen correspondence, source-binding and symbolic product-rule/shared-expansion checks, all passing. It reads earlier independent outputs only for the explicitly identified integration comparison; primary reproduction itself recomputes all results. Full stdout, stderr and execution receipts are retained. There were no execution failures in this integration check. The scientifically relevant surviving mutation remains preserved rather than relabeled.
+
+Evidence files: frozen_sources.json; check.py, check_stdout.json, check_stderr.txt, check_receipt.json; reproduction_stdout.txt, reproduction_stderr.txt, reproduction_receipt.json, reproduction_comparison.json; scratch/ containing the exact reproduction sources and fresh result. final_bindings.json binds delivered evidence. Earlier campaign artifacts were not changed. No canonical file or workflow state was edited.

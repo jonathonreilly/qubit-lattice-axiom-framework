@@ -1,0 +1,8 @@
+{
+  "failure": "RunnerIdentityChangedError in first envelope execution",
+  "cause": "Content runner SHA and input fingerprint unchanged; scripts parent directory stat changed during Python import. Bytecode directory creation observed; execution was not cached.",
+  "root_wrapper_used_B": true,
+  "recovery": "Set PYTHONDONTWRITEBYTECODE=1 for envelope child as well as wrapper; leave science source and declared timeout unchanged.",
+  "runner_sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+  "bytecode_directory_exists": true
+}

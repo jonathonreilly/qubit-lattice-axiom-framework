@@ -1,0 +1,2 @@
+vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)
+vocab_lint: wrote report to /Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration/vocabulary_fix.json

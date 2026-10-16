@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "6a809f4c8f791d3bc0e9dd0d0d00a1e3670b2bf3eedd0635b5161e87d4f488fd",
+  "entries": {
+    "cache_before_weak_addition.txt": {
+      "bytes": 5309,
+      "sha256": "268e7804e7c1fb591724f9d493d8bae6c03c2dd080cc8b0bf43ceb10814c806d"
+    },
+    "cache_under_weak_review.txt": {
+      "bytes": 6388,
+      "sha256": "1149a46248d4949ac5aa2da20ef4d3ecfd20245a39acf47d099d7eae984f68e0"
+    },
+    "graph_manifest_before_main_refresh.json": {
+      "bytes": 1016503,
+      "sha256": "5cc4b225c316f2152805cd8236401dde424e39bd2eff8aede4250edf0ae497c0"
+    }
+  },
+  "reason": "Preserve exact historical cache terminal blank lines and large previous-base graph snapshot without repeating them in the source diff."
+}

@@ -1,0 +1,5 @@
+{
+  "failure": "First apply_patch rejected before changes because an added prose line lacked its + patch marker.",
+  "recovery": "Corrected patch formatting; no formula, source assumption, test or execution timeout changed.",
+  "scientific_conclusion": "None"
+}

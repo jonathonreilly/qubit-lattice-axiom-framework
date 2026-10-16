@@ -1,0 +1,421 @@
+{
+  "scope": "Immutable provenance, not canonical computation input",
+  "source_root": "/Users/jonBridger/.codex/worktrees/scalar-photon-calibration-20261016/New Axioms Lets Go/outputs/scalar_photon_calibration",
+  "members": {
+    "cluster_value_check/CANDIDATE_NOTE_v1.md": {
+      "sha256": "710f1ff2562e3c0b794ba2121fa42eb82a6515ebd6be11148ce325c5dccbb6ee",
+      "bytes": 17248
+    },
+    "cluster_value_check/CANDIDATE_RESULT_v1.json": {
+      "sha256": "9b67daa2f01e9219f679b2c7624129e12b5ab8a3aefda2b18177023784772153",
+      "bytes": 18376
+    },
+    "cluster_value_check/IDENTITY_v1.json": {
+      "sha256": "72d91b65cc3948a08d7a2350bcb7865fc602cc403893b0c64b62f834dab27663",
+      "bytes": 6481
+    },
+    "cluster_value_check/PR9639_NOTE_v1.md": {
+      "sha256": "1e3b1dbdd0f42ebee7a66ce6fd27aeb0c5702baa594438654b564a05f05f8c63",
+      "bytes": 27044
+    },
+    "cluster_value_check/REPORT_v1.md": {
+      "sha256": "e1fc6cae5d868566b92ca222c4afb6c90c900dfcf01b784d483d7f342a312e9e",
+      "bytes": 2975
+    },
+    "independent_integration/DELTA_v2_DERIVATION.md": {
+      "sha256": "cef99fc5944baf295992f6a91a5436b76af8d51ca10cea4f9fafc799675a55df",
+      "bytes": 2717
+    },
+    "independent_integration/DELTA_v2_REPORT.md": {
+      "sha256": "fe95a7b0db6a6b63671825f639152567aa11f076543467c788b2bee58a174e94",
+      "bytes": 4087
+    },
+    "independent_integration/EDITORIAL_v3_REPORT.md": {
+      "sha256": "4652c5b7e158edac1cfd23aa3c280897c1d8cb775673fc4a80b4671f6ee4ae38",
+      "bytes": 1614
+    },
+    "independent_integration/REPORT.md": {
+      "sha256": "aa6da7e91999eb8f9d6b02c8edc25647360063bed14be52c27d06f757d89ecbb",
+      "bytes": 6287
+    },
+    "independent_integration/check.py": {
+      "sha256": "e93aa9966168d715eb86d8ebcc1c7aad4b1ed45ae2c7e53de583b7259ba066dd",
+      "bytes": 3884
+    },
+    "independent_integration/check_delta_v2.py": {
+      "sha256": "9de994ba5265b3ea8e2b755764631fbc4ef6527fa218ac207f64219145862e10",
+      "bytes": 2160
+    },
+    "independent_integration/check_receipt.json": {
+      "sha256": "472864298e4182b5ca75bc20798bd81c9481c64e425e011be94ea53a78941b81",
+      "bytes": 296
+    },
+    "independent_integration/check_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_integration/check_stdout.json": {
+      "sha256": "2fdf1c6fe9a16ae5c0ca7133621495b39584010dcbb6c9c29fdfb496b1c2599e",
+      "bytes": 1934
+    },
+    "independent_integration/delta_v2_final_bindings.json": {
+      "sha256": "f67982ec47fe425aa159c51e382612da0ce2d6c8b290e15d716ed1b15bc0b3a2",
+      "bytes": 927
+    },
+    "independent_integration/delta_v2_receipt.json": {
+      "sha256": "bd858e45d3fb2ae20b9d4eadcf0f8ea1e4aec8d63a6f7160e19a9bffef494bb8",
+      "bytes": 304
+    },
+    "independent_integration/delta_v2_sources.json": {
+      "sha256": "df5b5143779f05e8adffa6c9b62e81d33e8959725d901f44cd96fca431a760da",
+      "bytes": 917
+    },
+    "independent_integration/delta_v2_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_integration/delta_v2_stdout.json": {
+      "sha256": "e759b75990b8ade3f885cc966cb68faf68de401cbc8ce305c60e99a2914d496a",
+      "bytes": 4009
+    },
+    "independent_integration/editorial_v3_bindings.json": {
+      "sha256": "96c0bf1203a12460c97d77d5c1d9b82cd631742d3bf1acc858046ff833f16964",
+      "bytes": 1600
+    },
+    "independent_integration/final_bindings.json": {
+      "sha256": "423cbc6e994e8501a854e4215d55fd8ca958e59607d8d2c85623d05ad40c6425",
+      "bytes": 2290
+    },
+    "independent_integration/frozen_sources.json": {
+      "sha256": "c51508f60ea6103a314a76857844b8c4d98afc320f642a8396363ec8fa95a6c6",
+      "bytes": 700
+    },
+    "independent_integration/reproduction_comparison.json": {
+      "sha256": "747becbe9ea3d2617bc8370b7c80eb203336aff63d29460db904875f0627fa46",
+      "bytes": 580
+    },
+    "independent_integration/reproduction_receipt.json": {
+      "sha256": "6625f481f79f3e0081906c310aa55e7200dcc5e20d77cf8b035967daf7eb432e",
+      "bytes": 331
+    },
+    "independent_integration/reproduction_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_integration/reproduction_stdout.txt": {
+      "sha256": "e9134a317b0012991ce679828445fa1e3d54a52b4a90be75b183407ff9fd9225",
+      "bytes": 4965
+    },
+    "independent_integration/scratch/docs/SCALAR_PHOTON_CALIBRATION_NOTE_2026-10-16.md": {
+      "sha256": "710f1ff2562e3c0b794ba2121fa42eb82a6515ebd6be11148ce325c5dccbb6ee",
+      "bytes": 17248
+    },
+    "independent_integration/scratch/outputs/scalar_photon_calibration/result.json": {
+      "sha256": "9b67daa2f01e9219f679b2c7624129e12b5ab8a3aefda2b18177023784772153",
+      "bytes": 18376
+    },
+    "independent_integration/scratch/scripts/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "independent_integration/scratch/scripts/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "independent_integration/scratch/scripts/scalar_photon_reception_core.py": {
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "bytes": 7807
+    },
+    "independent_integration/scratch/scripts/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/RESULTS.json": {
+      "sha256": "d97ae8f1ca310383c4fc997b66d7939d8e5ecaa7ce5022642cef70bb38ee201e",
+      "bytes": 4980
+    },
+    "mutations/RESULTS_attempt01.json": {
+      "sha256": "d97ae8f1ca310383c4fc997b66d7939d8e5ecaa7ce5022642cef70bb38ee201e",
+      "bytes": 4980
+    },
+    "mutations/RESULTS_v2.json": {
+      "sha256": "12f6f6b46b5c56032624c8ddbffc37ae8f21192bb20111c016f8a159a4f74fb5",
+      "bytes": 1030
+    },
+    "mutations/actual_rank_loss/receipt.json": {
+      "sha256": "1e63ce5fa399694d9e52b9ab3106b389dc10eb055cb8976d10dfd6e71e18d0ad",
+      "bytes": 513
+    },
+    "mutations/actual_rank_loss/result.json": {
+      "sha256": "583d426a1f77aa46142d3d53d3d91211bdc333953bbb81985e072e1dc4b49a2a",
+      "bytes": 7064
+    },
+    "mutations/actual_rank_loss/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/actual_rank_loss/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "mutations/actual_rank_loss/scalar_photon_reception_core.py": {
+      "sha256": "212876e9514b443f521b9612605daf05c6cd754eb2a84ba006eba84765e24a02",
+      "bytes": 7805
+    },
+    "mutations/actual_rank_loss/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/actual_rank_loss/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/actual_rank_loss/stdout.txt": {
+      "sha256": "439e0066196692cb0f96f1a396fde175bc93dfb224f5e6c7e0b0ccb75d3dd885",
+      "bytes": 73
+    },
+    "mutations/cases.json": {
+      "sha256": "e4435b9d12a97d9ff54d352192d78ee988681354983baa90e7d05230acfa0f31",
+      "bytes": 2804
+    },
+    "mutations/cases_v2.json": {
+      "sha256": "ad1a44f5caab5e40d997f9d97d04a1a3f2ed63b4b594361a9f4251900bcd1564",
+      "bytes": 751
+    },
+    "mutations/common_coefficient/receipt.json": {
+      "sha256": "8bf2034b8e8f5efb5dd827a77c86d3fdf00c14c73ecc7702726059d82c741df6",
+      "bytes": 776
+    },
+    "mutations/common_coefficient/result.json": {
+      "sha256": "1f2998b441769b2b5795dc0380f41e9694d600d10ae05d3eb6609d2e7851f1d0",
+      "bytes": 6602
+    },
+    "mutations/common_coefficient/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/common_coefficient/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "mutations/common_coefficient/scalar_photon_reception_core.py": {
+      "sha256": "4920cbd5d36dff78326631b1d69d316d250157d75b97717f1b7abdb61457e4a5",
+      "bytes": 7805
+    },
+    "mutations/common_coefficient/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/common_coefficient/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/common_coefficient/stdout.txt": {
+      "sha256": "9dc068b17e93302844fbfc2a22aa4fcb601abeffe7ca5cbc11d94d7376ba56da",
+      "bytes": 300
+    },
+    "mutations/common_primitive_path/receipt.json": {
+      "sha256": "9fcaac86b2ebc9d83ad9e38a0c5d7f9bfa5d8717e9080de6d07e4f2597e6c80d",
+      "bytes": 865
+    },
+    "mutations/common_primitive_path/result.json": {
+      "sha256": "31e93b309f83e9327c7a8d64298c3f365962ebbd3b970056c8ac01a4c585b3f5",
+      "bytes": 9380
+    },
+    "mutations/common_primitive_path/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/common_primitive_path/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "mutations/common_primitive_path/scalar_photon_reception_core.py": {
+      "sha256": "ef723635519a90f3328d084ea30ebc364ff4361f6e2301688efc4eb3991d9727",
+      "bytes": 7805
+    },
+    "mutations/common_primitive_path/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/common_primitive_path/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/common_primitive_path/stdout.txt": {
+      "sha256": "914b2894b79d11b4b05b1932627ab40c590fcc6fd34703e58ae20d203603ee05",
+      "bytes": 356
+    },
+    "mutations/conditioning_bound/receipt.json": {
+      "sha256": "ae01d7fef0a2d72e0c8bc89d8a0ba852013ceb01a9ac583916428e75afb5d98a",
+      "bytes": 666
+    },
+    "mutations/conditioning_bound/result.json": {
+      "sha256": "7ec6d951f23e00bd351f9323ccd1a035319c5cd53a5ae01a60ae7bfd5589461f",
+      "bytes": 3821
+    },
+    "mutations/conditioning_bound/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/conditioning_bound/scalar_photon_calibration_controls.py": {
+      "sha256": "92a49245da7992b49445ed398a22b29748430e5c1e7c91d83d37b00e7461cd5e",
+      "bytes": 6035
+    },
+    "mutations/conditioning_bound/scalar_photon_reception_core.py": {
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "bytes": 7807
+    },
+    "mutations/conditioning_bound/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/conditioning_bound/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/conditioning_bound/stdout.txt": {
+      "sha256": "669fe96646e7060d2a4df191d9f431a58f7c27e72f09eb7e8d157012cd435a74",
+      "bytes": 144
+    },
+    "mutations/execute_cases.py": {
+      "sha256": "3debd7e6c157ef5d137d4d59df753cdf00e846d4023738790e06386209b30364",
+      "bytes": 2317
+    },
+    "mutations/execute_cases_v2.py": {
+      "sha256": "7f879603aa6f06c1d27cc41f741fd0758fee9e56a47d71bd0adbebeaf048805a",
+      "bytes": 2323
+    },
+    "mutations/physical_background_density/receipt.json": {
+      "sha256": "c43e0953016b256ea1d727c3f07d0c819f6840829949304931a884d290acb01e",
+      "bytes": 688
+    },
+    "mutations/physical_background_density/result.json": {
+      "sha256": "0dcc58f3ac49ca020a3093338a91613b10704943de580e03235c862462ab6a76",
+      "bytes": 1843
+    },
+    "mutations/physical_background_density/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/physical_background_density/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "mutations/physical_background_density/scalar_photon_reception_core.py": {
+      "sha256": "aaf7dd3402c1404b4dfdb8a9debfe2956d7f5d1830dc70b5faae867f2c4515bb",
+      "bytes": 7809
+    },
+    "mutations/physical_background_density/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/physical_background_density/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/physical_background_density/stdout.txt": {
+      "sha256": "14c2de150abe53c41ad5d1173932487cfb08cb13260db43805c541b3b379fd0a",
+      "bytes": 207
+    },
+    "mutations/physical_residual_positive_control/receipt.json": {
+      "sha256": "a4228565fff6324a1c116193428ec3e83ff0afba8630b7cd88fcb1d3a66a9698",
+      "bytes": 520
+    },
+    "mutations/physical_residual_positive_control/result.json": {
+      "sha256": "c4c972a8a2362ae2a2c511822c2ac22c7649ddd340a35ff12e94c1e450d17118",
+      "bytes": 3815
+    },
+    "mutations/physical_residual_positive_control/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/physical_residual_positive_control/scalar_photon_calibration_controls.py": {
+      "sha256": "e99f454d8c861a4bb5974a94d751b3ceb35012b4bcecd7b2bc2ca2ab6ae335c8",
+      "bytes": 6024
+    },
+    "mutations/physical_residual_positive_control/scalar_photon_reception_core.py": {
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "bytes": 7807
+    },
+    "mutations/physical_residual_positive_control/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/physical_residual_positive_control/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/physical_residual_positive_control/stdout.txt": {
+      "sha256": "e0f26056fdbadb262c5d3677360bb802143dc7390f3cfa51d569927c76745ffe",
+      "bytes": 41
+    },
+    "mutations/physical_residual_positive_control_v2/receipt.json": {
+      "sha256": "b514916a57fcfe78d79d3241194989060a4f8361e56edd45489fc34a7bcaf4ea",
+      "bytes": 976
+    },
+    "mutations/physical_residual_positive_control_v2/result.json": {
+      "sha256": "c996c920fb576c8ca103a8eca16253385060313fbead1924efd5d53feda13297",
+      "bytes": 3798
+    },
+    "mutations/physical_residual_positive_control_v2/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/physical_residual_positive_control_v2/scalar_photon_calibration_controls.py": {
+      "sha256": "f9ecf75ab7c4aa80d54b7cc9e7f49ea9e2a9bdf1b2a1bf2528429538dbd3ea33",
+      "bytes": 6012
+    },
+    "mutations/physical_residual_positive_control_v2/scalar_photon_reception_core.py": {
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "bytes": 7807
+    },
+    "mutations/physical_residual_positive_control_v2/scalar_photon_separate_gains.py": {
+      "sha256": "e2f336b766c95b9c541d145c90fba1d2191c5725345a72948a4f67edfb93d671",
+      "bytes": 6779
+    },
+    "mutations/physical_residual_positive_control_v2/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/physical_residual_positive_control_v2/stdout.txt": {
+      "sha256": "6d91dfc3a8df71fd3466c50120158560226371cca6cc309f5bde8138bc610f71",
+      "bytes": 163
+    },
+    "mutations/separate_coefficient/receipt.json": {
+      "sha256": "e7bd2cd4a70d0c3b5e9dbe5593259526447cfdc461c72246a58e58a94d7f20fb",
+      "bytes": 672
+    },
+    "mutations/separate_coefficient/result.json": {
+      "sha256": "1dd26bb0929b454d0e9b61ad7bc0fade07ebea8f100424b95c7d747fbfd982df",
+      "bytes": 5373
+    },
+    "mutations/separate_coefficient/scalar_photon_calibration.py": {
+      "sha256": "e7af4ed397ff6f2837943c06334cbd70e965ee0b0e83b6e2f0fa425775e92e11",
+      "bytes": 2562
+    },
+    "mutations/separate_coefficient/scalar_photon_calibration_controls.py": {
+      "sha256": "6bde9d561e26eb94f4cae4fb0f084895464672e5fc005394a61ef7a7ac52a5b3",
+      "bytes": 6036
+    },
+    "mutations/separate_coefficient/scalar_photon_reception_core.py": {
+      "sha256": "78ab8f598d6656af0dd77057427bcbb9fc49d4360299a2058a7ffa1d4ab90a32",
+      "bytes": 7807
+    },
+    "mutations/separate_coefficient/scalar_photon_separate_gains.py": {
+      "sha256": "2e62e27c01bebde23218b676c681b1f52b079b3d900c897933404a6fbb785361",
+      "bytes": 6779
+    },
+    "mutations/separate_coefficient/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mutations/separate_coefficient/stdout.txt": {
+      "sha256": "1dc4e399fe0bdb898ef6bf7d9af854221f80f752d52d7882b768859127cc650e",
+      "bytes": 193
+    }
+  },
+  "archive_sha256": "5fe7695bef869d7db70f77b105687d19c794400b5936225f7cc00e0b288da257",
+  "member_count": 103,
+  "verified_each_member": true
+}

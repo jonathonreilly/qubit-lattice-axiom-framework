@@ -1,0 +1,17 @@
+[
+  {
+    "manifest": "independent_joint_photon_background/MANIFEST_v1.json",
+    "sha256": "7defda29f47e45848a990166fb295f10974ef21a3071a7aed88f41e045f6f9a7",
+    "files_verified": 78
+  },
+  {
+    "manifest": "independent_joint_gain/COMPARISON_IDENTITY_v1.json",
+    "sha256": "2bdb3e7734502367d037603b94adc098373cb5cd78eeac6e1949660376fbc0fd",
+    "files_verified": 21
+  },
+  {
+    "manifest": "independent_reception_gain/robustness_final_bindings.json",
+    "sha256": "0378bda3199ba612c0715fde6bfe573add672e8bfebcd2fbdeac79c6157ad58b",
+    "files_verified": 25
+  }
+]

@@ -1,0 +1,19 @@
+milestone: scalar-photon-calibration-20261016
+status: preparing_review
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+base: b31c55267a6d617023c9a4d1951385178663e70f
+branch: codex/scalar-photon-calibration-20261016
+direct_author: /root
+independent_checks: completed within source-bound scopes
+formal_audit: not_run
+shared_landing_validation: pending
+empirical_validation: false
+primary_units: [48, 33, 12, 19]
+control_failures: 0
+counting_scope: overlapping mathematical controls
+next_action: finish mechanical checks and publish one coherent review PR
+execution_checkpoint: observations-backward-derivation-24h-20261015
+deadline: '2026-10-16T22:36:59Z'

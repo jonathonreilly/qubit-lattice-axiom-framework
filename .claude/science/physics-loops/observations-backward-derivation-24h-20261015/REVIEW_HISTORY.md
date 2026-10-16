@@ -121,3 +121,7 @@ Block05 is pending completion: independent checker identified that the adopted i
 ## Coupling extension check
 
 Root read complete independent source derivations, code and outputs, then verified final bindings. Coupling v2:26author controls,31independent assertions. Sampled inverse v2:33author controls,275independent assertions. Standalone integration:44primary controls,135focused assertions and21scratch mutations; final source/cache hashes checked. These sets overlap and are not summed. No formal audit or empirical validation.
+
+## Sampled milestone publication 2026-10-16T04:41:10.591852+00:00
+
+PR9634 exact head/base,108files,body and OPEN state verified; attached to this chat. Root read the complete independent canonical check and all final metadata/storage addenda and verified their bindings.44primary controls,135focused independent assertions,21detected scratch mutations; one citation node added, zero rewired. Fresh cache, vocabulary, compile/JSON and final branch whitespace checks passed. Historical-cache bytes preserved in deterministic gzip with unchanged historical manifests and explicit path mapping. Shared integrated-main landing checks remain pending. No audit verdict or merge applied. See SAMPLED_MILESTONE_RECEIPT_v1.json for exact identities.

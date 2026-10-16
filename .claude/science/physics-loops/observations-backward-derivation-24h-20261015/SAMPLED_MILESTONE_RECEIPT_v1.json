@@ -1,0 +1,85 @@
+{
+  "checked_at": "2026-10-16T04:41:10.591852+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "changedFiles": 108,
+    "headRefName": "codex/sampled-coupling-inverse-20261016",
+    "headRefOid": "09ee78488eda7950be5e18624678d709e3758fb2",
+    "isDraft": false,
+    "mergeStateStatus": "BLOCKED",
+    "mergeable": "MERGEABLE",
+    "number": 9634,
+    "state": "OPEN",
+    "title": "[physics-loop] sampled-coupling inverse bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634",
+    "verified_at": "2026-10-16T04:39:21.109604+00:00",
+    "attached_to_current_chat": true,
+    "shared_landing_validation": "pending",
+    "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
+  },
+  "source_checkpoint": "48e6b3641d5d4a88914f80f2d9dcd41f9e19a1b7",
+  "source_state": {
+    "time": "2026-10-16T04:41:10.591852+00:00",
+    "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "open_pr_count": 64,
+    "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0440.json",
+    "inventory_sha256": "d0092679ff1840e20b0bb0ca95b56ff130553476d630ff1f06b5a5a19135befd",
+    "scope": "Full compact metadata inventory; PR9633 declared interface, body and first90note lines read at its frozen head. No new proof imported. PR9634 exact head/base/state and body verified. Not a complete independent review of all open PR science.",
+    "new_background_pr": {
+      "number": 9633,
+      "head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+      "source_note_sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
+      "role": "Background only; no premise adopted."
+    }
+  },
+  "checks": {
+    "primary_controls": 44,
+    "independent_assertions": 135,
+    "detected_mutations": 21,
+    "cache_status": "fresh",
+    "empirical_validation": false,
+    "final_bindings": {
+      "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+      "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+      "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+      "logs/runner-cache/sampled_coupling_inverse.txt": "8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4",
+      "outputs/sampled_coupling/cache_before_runner_label.txt": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd"
+    },
+    "historical_cache_storage": {
+      "checked_at": "2026-10-16T04:36:57.838850+00:00",
+      "reason": "Staged whitespace check found the preserved historical cache has a terminal blank line. Preserve exact evidence bytes in deterministic gzip instead of editing the historical output. This is packaging only.",
+      "historical_path": "outputs/sampled_coupling/cache_before_runner_label.txt",
+      "archive_path": "outputs/sampled_coupling/cache_before_runner_label.txt.gz",
+      "uncompressed_sha256": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd",
+      "archive_sha256": "05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414",
+      "byte_exact_roundtrip": true,
+      "historical_manifests_unchanged": true
+    },
+    "focused_preflight": {
+      "checked_at": "2026-10-16T04:37:54.564069+00:00",
+      "canonical_bindings_verified": true,
+      "historical_cache_roundtrip_verified": true,
+      "cache_status": "fresh",
+      "staged_whitespace_exit_code": 0,
+      "staged_path_count_before_this_receipt": 107,
+      "scope_guard": "only declared source, outputs, campaign pack, runner cache and citation manifest",
+      "publication_validation": "focused checks passed; shared integrated landing validation remains pending"
+    },
+    "publication_worktree_clean": true,
+    "review": "Root read complete focused proof/code/results and verified final bindings; no formal audit verdict."
+  },
+  "ownership": {
+    "matching_lock": {
+      "expires_at": "2026-10-16T05:39:53.798692+00:00",
+      "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+      "owner": "direct-author-observations-backward-derivation",
+      "pid": 98719,
+      "purpose": "observations-backward-derivation-24h-20261015",
+      "started_at": "2026-10-16T04:39:53.798692+00:00"
+    },
+    "conflicting_owned_processes": [],
+    "older_campaigns": "stopped"
+  },
+  "next_action": "Personally establish a physical source/coordinate/time and force-readout bridge for the sampled common-coupling test; freeze calibration/model-development/reserved histories and model-error budget before opening candidate test data. Begin from NEXT_OBSERVATION_CONTRACT_v1.md; do not identify an apparatus oscillator with quantum or gravity dynamics by analogy."
+}

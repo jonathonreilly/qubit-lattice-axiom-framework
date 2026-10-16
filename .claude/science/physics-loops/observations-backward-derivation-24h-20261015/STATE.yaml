@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "sampled coupling milestone: final publication checks",
+  "phase": "sampled coupling milestone published; physical observation bridge next",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T04:29:29.375930+00:00",
+  "updated_at": "2026-10-16T04:41:10.591852+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Finish standalone sampled-coupling PR then establish an actual observation/force bridge; fixed campaign continues.",
+  "next_action": "Personally establish a physical source/coordinate/time and force-readout bridge for the sampled common-coupling test; freeze calibration/model-development/reserved histories and model-error budget before opening candidate test data. Begin from NEXT_OBSERVATION_CONTRACT_v1.md; do not identify an apparatus oscillator with quantum or gravity dynamics by analogy.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -78,6 +78,24 @@
       "attached_to_current_chat": true,
       "shared_landing_validation": "pending",
       "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "changedFiles": 108,
+      "headRefName": "codex/sampled-coupling-inverse-20261016",
+      "headRefOid": "09ee78488eda7950be5e18624678d709e3758fb2",
+      "isDraft": false,
+      "mergeStateStatus": "BLOCKED",
+      "mergeable": "MERGEABLE",
+      "number": 9634,
+      "state": "OPEN",
+      "title": "[physics-loop] sampled-coupling inverse bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634",
+      "verified_at": "2026-10-16T04:39:21.109604+00:00",
+      "attached_to_current_chat": true,
+      "shared_landing_validation": "pending",
+      "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
     }
   ],
   "owned_jobs": [],
@@ -100,11 +118,18 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T03:45:08.963809+00:00",
+      "time": "2026-10-16T04:41:10.591852+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 62,
-      "inventory_sha256": "60fa51f8149639364b5b83f48e095661bbc471e36cf30d95ad996534bfedd40c",
-      "scope": "Main and execution refs unchanged; newest open science PR identities unchanged from prior intake; current PR9632 verified open and attached."
+      "open_pr_count": 64,
+      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0440.json",
+      "inventory_sha256": "d0092679ff1840e20b0bb0ca95b56ff130553476d630ff1f06b5a5a19135befd",
+      "scope": "Full compact metadata inventory; PR9633 declared interface, body and first90note lines read at its frozen head. No new proof imported. PR9634 exact head/base/state and body verified. Not a complete independent review of all open PR science.",
+      "new_background_pr": {
+        "number": 9633,
+        "head": "e2c214f59ad8201a10ef1b7f245cd67973aeb088",
+        "source_note_sha256": "c55b35da1d25c03d66f5d6a7750ab1b7e2def371a821d5d77426640f2bb2ca49",
+        "role": "Background only; no premise adopted."
+      }
     }
   },
   "first_block_files": [
@@ -122,31 +147,26 @@
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "PR9628 scalar inverse and PR9632 neighborhood intervention both published and attached; shared integrated landing gates pending. No merges or audit verdicts.",
+  "milestone_status": "PR9628,PR9632,PR9634 published and attached; exact sources preserved. Shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T03:50:31.645102+00:00",
+    "time": "2026-10-16T04:41:10.591852+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "All19network research units and report pushed; final ownership/continuation handoff. Original24hour clock unchanged.",
-    "failures": [
-      "symbolic min ordering in first canonical run",
-      "unordered symbolic endpoints in second canonical run",
-      "unfactored positive symbolic integral rejected by helper; independently found and repaired",
-      "independent source-binding failure on metadata edit; preserved before final rerun"
-    ],
-    "failure_evidence": [
-      "outputs/scalar_observation_inverse_attempt01.json",
-      "outputs/scalar_observation_inverse_attempt02.json",
-      "independent_integration/SESSION_FAILURES.md"
-    ],
-    "deadline_unchanged": true
+    "checkpoint_scope": "Two personally derived coupling inverses, complete focused checks and standalone PR9634; preparation/scale/physical-model caveats retained.",
+    "deadline_unchanged": true,
+    "failures_preserved": [
+      "v1 sampled p-sensitivity omitted s*F2; v2 corrected",
+      "canonical symbolic ordering exception",
+      "canonical expected derivative corrected from zero to minus one-half",
+      "cache identity changed when bytecode directory appeared; stable rerun with bytecode disabled",
+      "historical cache terminal blank line; lossless gzip packaging after independent byte verification"
+    ]
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T03:54:53.593473+00:00",
-    "commit": "153fc4ae3967615f5d52375ee0301845cc34ea57",
+    "checked_at": "2026-10-16T04:41:10.591852+00:00",
+    "commit": "48e6b3641d5d4a88914f80f2d9dcd41f9e19a1b7",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "All19checked network units, synthesis, focused checks and final observation contract/handoff; remote verified and campaign worktree clean.",
-    "source_commit": "ad9f8e62abb3685a718dd7f95c7efe3b924aaf21"
+    "scope": "Personally authored coupling and sampled inverse derivations, computations and source-bound focused checks; verified remote checkpoint."
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -426,7 +446,68 @@
     "primary_controls": 44,
     "independent_assertions": 135,
     "detected_mutations": 21,
-    "status": "focused check complete; manifest/preflight pending",
-    "empirical_validation": false
+    "status": "published and attached",
+    "empirical_validation": false,
+    "cache_status": "fresh",
+    "final_bindings": {
+      "docs/SAMPLED_COUPLING_RECONSTRUCTION_NOTE_2026-10-16.md": "d08a865fc0f13d48403c08dcfd136ab070a11e0d6362db717c0705418739056b",
+      "scripts/sampled_coupling_inverse.py": "500e86a6e7df075b785aafc9946965da70a20da4c70d0f1328eb0af4df4a8c20",
+      "scripts/sampled_coupling_math.py": "0d27f68e63d050de220e9b7b984429733ae8bcab9bcb6d68736dee28328ef6af",
+      "logs/runner-cache/sampled_coupling_inverse.txt": "8f47d26366060335d7b1fc719b95f26c4dbfe477c21765c59534dd43090b9bd4",
+      "outputs/sampled_coupling/cache_before_runner_label.txt": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd"
+    },
+    "historical_cache_storage": {
+      "checked_at": "2026-10-16T04:36:57.838850+00:00",
+      "reason": "Staged whitespace check found the preserved historical cache has a terminal blank line. Preserve exact evidence bytes in deterministic gzip instead of editing the historical output. This is packaging only.",
+      "historical_path": "outputs/sampled_coupling/cache_before_runner_label.txt",
+      "archive_path": "outputs/sampled_coupling/cache_before_runner_label.txt.gz",
+      "uncompressed_sha256": "dff97ceb18267c504d7f74e979bbaf416b2315eb3fef2a01aad20e02907099cd",
+      "archive_sha256": "05e7209ca4723be65119f281d2e6c8a2a869c743736a8b1f04231237e955d414",
+      "byte_exact_roundtrip": true,
+      "historical_manifests_unchanged": true
+    },
+    "focused_preflight": {
+      "checked_at": "2026-10-16T04:37:54.564069+00:00",
+      "canonical_bindings_verified": true,
+      "historical_cache_roundtrip_verified": true,
+      "cache_status": "fresh",
+      "staged_whitespace_exit_code": 0,
+      "staged_path_count_before_this_receipt": 107,
+      "scope_guard": "only declared source, outputs, campaign pack, runner cache and citation manifest",
+      "publication_validation": "focused checks passed; shared integrated landing validation remains pending"
+    },
+    "publication_worktree_clean": true,
+    "review": "Root read complete focused proof/code/results and verified final bindings; no formal audit verdict.",
+    "pr": {
+      "baseRefName": "main",
+      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "changedFiles": 108,
+      "headRefName": "codex/sampled-coupling-inverse-20261016",
+      "headRefOid": "09ee78488eda7950be5e18624678d709e3758fb2",
+      "isDraft": false,
+      "mergeStateStatus": "BLOCKED",
+      "mergeable": "MERGEABLE",
+      "number": 9634,
+      "state": "OPEN",
+      "title": "[physics-loop] sampled-coupling inverse bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9634",
+      "verified_at": "2026-10-16T04:39:21.109604+00:00",
+      "attached_to_current_chat": true,
+      "shared_landing_validation": "pending",
+      "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
+    },
+    "remaining_assumptions": [
+      "one linear hidden coordinate with common clamped dynamics",
+      "positive inertia and stiffness, nonnegative damping",
+      "identified source conjugacy, force readout and controlled coordinate/time",
+      "pulse fidelity and no derivative impulses",
+      "calibration rank/conditioning and nonzero response anchor",
+      "absolute normalization, visible potential, physical realization"
+    ],
+    "inputs_not_assigned_within_class": [
+      "hidden initial preparation per trial",
+      "a fixed quadratic coupling function",
+      "continuous-frequency alias choice"
+    ]
   }
 }

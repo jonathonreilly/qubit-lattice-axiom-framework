@@ -37,7 +37,7 @@ cubic grid of qubits, if every cube direction is treated alike.
 | B1 | `docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/cubic_covariant_qubit_walk_cell_classification_2026_10_16.py` (PASS=31) | One qubit per site: no unitary tick on the 27-point cell that is covariant under the proper cubic group (any of the four soldering actions) moves. T also freezes; D4 allows axial shifts only; motion in 3D survives under C3, C4, D2 only. Independent Singular re-derivation agrees. |
 | B2 | `docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/order_blind_formation_one_dependent_record_field_2026_10_16.py` (PASS=17) | Positive order-blind formation = one consistent 1-dependent record field whose full conditionals are the rule (static = formation); no long-range order, power laws or pinch points. |
 | B3 | `docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/two_qubit_cubic_dirac_tick_2026_10_16.py` (PASS=40) | A two-qubit site (parked M_4(C) fork) admits exactly O-covariant moving ticks; Clifford family classified by a Gram criterion; explicit member with one massless isotropic Dirac cone and gapped doublers; speed <= 1 with axis doublers at 2 arcsin s; unique light-speed member over Q(sqrt 5); exact chirality freezes motion; W3 = 0; quadratic (not linear) anisotropy. Independent check agrees (and corrected one statement). |
-| B6 | `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py` (PASS=11) | One amplitude per site on staggered 2x2x2 blocks: the spinorial signed corner action is two copies of spin 3/2, and it carries an exactly covariant moving Dirac tick (two Dirac fermions per block). Nearest-site locality is open. |
+| B6 | `docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py` (PASS=11) | One amplitude per site on staggered 2x2x2 blocks: the spinorial signed corner action is two copies of spin 3/2, and it carries an exactly covariant moving Dirac tick (two Dirac fermions per block). Theorem 3 (exact): no nearest-site version propagates; the minimal propagating staggered tick reaches 2 sites (with doublers), the doubler-free one 3. |
 | B7 | `docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md` | `scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py` (PASS=9) | Every spinorial cubic-orbit cell is E1/2 (x) F with F an S3 (axis-permutation) rep. Faces A1+E (triplet, no repeat), signed corners 2E, edges A1+A2+2E (C3 labels 1,1,w,w-bar). The singlet pair moves but was found only massive or degenerate. A parallel to the C3 generation programme, not a derivation. |
 
 ## Synthesis for the TOE program (implications, not adoptions)
@@ -51,10 +51,10 @@ cubic grid of qubits, if every cube direction is treated alike.
     rotations acting about the block centre (B6). This gives two Dirac
     fermions per block.
   The second keeps the one-qubit Qubit axiom and is the discrete-time
-  counterpart of the axiom memo's open staggered-Dirac gate. Open: a
-  nearest-site version. Every unitary solution found has flat bands, both
-  here (with a dispersion constraint) and in about 300 independent runs.
-  This is numerical.
+  counterpart of the axiom memo's open staggered-Dirac gate. A
+  nearest-site (Kogut–Susskind-type) one-tick version is impossible: every
+  such walk is flat (B6 Theorem 3, exact via primary decomposition). So the
+  neighbourhood electron needs hops of two or more sites per tick.
 - **Generations (interpretation).** A neighbourhood electron's copy index
   is always an axis-permutation representation (B7, exact), so cells
   produce the repository's C3 generation labels by themselves. No cell gave

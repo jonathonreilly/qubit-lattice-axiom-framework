@@ -1,0 +1,11 @@
+{
+  "scope": "Focused action-first check of a conditional physical-clock inverse; no new empirical inputs and no formal audit",
+  "author": "root personally; focused independent check requested",
+  "model": "S=int sqrt(-g)[M^2 R/2-(dphi)^2/2-V(phi)] - sum m int A(phi) ds, M>0, A>0, spatially flat Einstein FLRW, pressureless universal conformal matter",
+  "physical_metric": "gJ=A(phi)^2 gE; matter proper time tau with d tau=A dtE and aJ=A aE",
+  "proposed_registered_functions": "h(tau)=d ln aJ/dtau, b(tau)=M A_phi/A along a candidate, kappa(tau)=[V_phiphi+rho A_phiphi]/A^2 with rho=bare conserved dust density and field derivatives at fixed rho",
+  "domain": "Connected open tau interval, monotonic scalar with x=(1/M)dphi/dtau nonzero, positive Einstein dust; function smoothness to be explicitly derived for any elimination",
+  "question": "Derive necessary and sufficient history compatibility directly in matter time without supplying A(tau) or Einstein time; determine remaining normalization freedom. If two second-order equations can be combined into a first-order flow and algebraic filter, state exactly its regularity and singular-domain limits and verify the degree/leading coefficient independently. An ideal response coefficient is not automatically a measured normal-mode pole.",
+  "data_role": "Exact synthetic mathematical controls only; beta/curvature extraction and clock/source/environment registration remain obligations",
+  "requested_method": "Derive independently from the action and this neutral contract before reading any author derivation/code. Freeze the proof and calculations, then request author-source access for comparison. No model settings changes, agents, Git operations or edits outside own assigned evidence directory."
+}

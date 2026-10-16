@@ -1,0 +1,106 @@
+Direct lapse, scale-factor and scalar variation
+PASS lapse gives Friedmann with positive dust
+PASS scale-factor variation before constraints
+PASS Raychaudhuri uses acceleration minus Friedmann
+PASS particle action scalar charge sign
+PASS bare particle conservation gives Einstein exchange
+Independent jet algebra in matter time
+PASS Raychaudhuri physical-time density
+PASS Einstein dust exchange yields physical-time transport
+PASS mass transport gives retained second-order equation
+PASS dust second-order coefficients
+PASS undifferentiated scalar follows from retained equations
+PASS eliminated numerator has no velocity derivatives
+PASS independent elimination matches compact numerator
+PASS elimination identity
+PASS denominator slope is strictly positive completed square
+PASS hand numerator coefficient x^3
+PASS hand numerator coefficient x^2
+PASS hand numerator coefficient x^1
+PASS hand numerator coefficient x^0
+Polynomial construction and independent leading-balance checks
+PASS polynomial equals denominator-cleared mass equation
+PASS generic polynomial degree is six
+PASS hand degree-six leading coefficient
+PASS independent large-x mass balance
+PASS transported density numerator leading coefficient
+PASS identically zero coupling has degree at most four
+PASS unit coupling retains sixth degree
+PASS first critical squared coupling loses leading degree
+PASS second critical squared coupling loses leading degree
+PASS an isolated coupling zero may have fifth degree
+PASS isolated-zero fifth coefficient is minus bprime
+Forward power fixture regular_p2
+PASS regular_p2 Friedmann
+PASS regular_p2 Raychaudhuri
+PASS regular_p2 scalar equation
+PASS regular_p2 dust equation
+PASS regular_p2 matter clock derivative
+PASS regular_p2 transformed expansion
+PASS regular_p2 transformed scalar speed
+PASS regular_p2 transformed density
+PASS regular_p2 fixed-rho response
+PASS regular_p2 direct density
+PASS regular_p2 direct dust transport
+PASS regular_p2 direct curvature compatibility
+PASS regular_p2 polynomial necessity
+PASS regular_p2 positive density coefficient
+PASS regular_p2 nonzero velocity coefficient
+PASS regular_p2 nonzero elimination denominator
+PASS regular_p2 first-order flow
+PASS regular_p2 density-dependent curvature increment
+PASS regular_p2 wrong curvature rejects same history
+Forward power fixture singular_positive_history
+PASS singular_positive_history Friedmann
+PASS singular_positive_history Raychaudhuri
+PASS singular_positive_history scalar equation
+PASS singular_positive_history dust equation
+PASS singular_positive_history matter clock derivative
+PASS singular_positive_history transformed expansion
+PASS singular_positive_history transformed scalar speed
+PASS singular_positive_history transformed density
+PASS singular_positive_history fixed-rho response
+PASS singular_positive_history direct density
+PASS singular_positive_history direct dust transport
+PASS singular_positive_history direct curvature compatibility
+PASS singular_positive_history polynomial necessity
+PASS singular_positive_history positive density coefficient
+PASS singular_positive_history nonzero velocity coefficient
+PASS singular_positive_history singular elimination denominator
+PASS singular_positive_history singular elimination numerator
+Variable coupling fixture and all required input jets
+PASS varying fixture Friedmann
+PASS varying fixture Raychaudhuri
+PASS varying fixture scalar
+PASS varying fixture dust
+PASS varying fixture clock derivative
+PASS varying fixture expansion formula
+PASS varying fixture speed formula
+PASS varying fixture density formula
+PASS varying fixture response formula
+PASS varying direct density
+PASS varying direct dust transport
+PASS varying direct mass transport
+PASS varying local elimination chart exists
+PASS varying local physical density positive
+PASS varying local first-order flow
+PASS varying local polynomial
+PASS varying local wrong curvature fails filter
+PASS varying fixture exercises nonzero b third derivative
+PASS varying fixture exercises nonzero response derivative
+Normalization, missing integration constants and continuous ambiguity
+PASS normalization preserves coupling
+PASS normalization preserves response
+PASS normalization rescales bare comoving density
+PASS registered physical density fixes A squared
+PASS registered bare normalization fixes A squared
+PASS affine potential invisible to curvature
+PASS linear potential changes original scalar force
+PASS constant potential changes Friedmann
+PASS uncoupled family direct density
+PASS uncoupled family dust transport
+PASS uncoupled family mass compatibility
+PASS uncoupled family entire filter vanishes
+PASS uncoupled family first-order flow
+PASS uncoupled positive-speed member is physical
+PASS uncoupled negative-speed member is physical

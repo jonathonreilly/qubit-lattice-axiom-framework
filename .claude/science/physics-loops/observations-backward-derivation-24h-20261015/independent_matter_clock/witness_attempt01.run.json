@@ -1,0 +1,109 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock/witness_attempt01_author_copy/check_matter_clock_witness_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock/witness_attempt01_author_copy",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T10:07:37.558117+00:00",
+  "end_utc": "2026-10-16T10:07:37.817127+00:00",
+  "wall_seconds": 0.25803991593420506,
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 1936,
+  "stdout_sha256": "4a9592ebe5914bfef6e07671e47dd27ab5397616ddfac23fa106cfae3ddb32b9",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_parse_error": null,
+  "summary": {
+    "passed": 15,
+    "failed": 0
+  },
+  "source_binding_before": {
+    "MATTER_CLOCK_DERIVATION_v2.md": {
+      "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+      "bytes": 11616
+    },
+    "MATTER_CLOCK_REVISION_RECEIPT_v2.json": {
+      "sha256": "ec571d689cf3f8fe80432621acbccb8f0191dfa51d4eabf4b4af738085622a66",
+      "bytes": 659
+    },
+    "check_matter_clock_witness_v1.py": {
+      "sha256": "c4985ae853c21edc4ebba54f0996e4f7cbb79927d69a43bcfbd15255596cad96",
+      "bytes": 2295
+    },
+    "MATTER_CLOCK_WITNESS_CONTROLS_v1.json": {
+      "sha256": "4a9592ebe5914bfef6e07671e47dd27ab5397616ddfac23fa106cfae3ddb32b9",
+      "bytes": 1936
+    },
+    "MATTER_CLOCK_WITNESS_RUN_v1.json": {
+      "sha256": "9232528446a1658558389db2a8c531eca4e306df27c0413c51c6ef47ce7e0586",
+      "bytes": 133
+    },
+    "MATTER_CLOCK_WITNESS_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_matter_clock/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+      "bytes": 9872
+    }
+  },
+  "source_binding_after": {
+    "MATTER_CLOCK_DERIVATION_v2.md": {
+      "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+      "bytes": 11616
+    },
+    "MATTER_CLOCK_REVISION_RECEIPT_v2.json": {
+      "sha256": "ec571d689cf3f8fe80432621acbccb8f0191dfa51d4eabf4b4af738085622a66",
+      "bytes": 659
+    },
+    "check_matter_clock_witness_v1.py": {
+      "sha256": "c4985ae853c21edc4ebba54f0996e4f7cbb79927d69a43bcfbd15255596cad96",
+      "bytes": 2295
+    },
+    "MATTER_CLOCK_WITNESS_CONTROLS_v1.json": {
+      "sha256": "4a9592ebe5914bfef6e07671e47dd27ab5397616ddfac23fa106cfae3ddb32b9",
+      "bytes": 1936
+    },
+    "MATTER_CLOCK_WITNESS_RUN_v1.json": {
+      "sha256": "9232528446a1658558389db2a8c531eca4e306df27c0413c51c6ef47ce7e0586",
+      "bytes": 133
+    },
+    "MATTER_CLOCK_WITNESS_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent_matter_clock/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+      "bytes": 9872
+    }
+  },
+  "source_inputs_unchanged": true,
+  "bundle_binding_before": {
+    "AUTHOR_REVISION_SNAPSHOT_v2.json": {
+      "sha256": "24c373204676ab67db3fd7cccdf8500d8dc3470b1b3347d3ed9725a04ea5f132",
+      "bytes": 28975
+    },
+    "replay_witness_bounded_v1.py": {
+      "sha256": "20d6dde0797067cbe96493442ec0afb96267d84d1a6fef629ef3c2ac8b5a2f67",
+      "bytes": 4354
+    }
+  },
+  "bundle_binding_after": {
+    "AUTHOR_REVISION_SNAPSHOT_v2.json": {
+      "sha256": "24c373204676ab67db3fd7cccdf8500d8dc3470b1b3347d3ed9725a04ea5f132",
+      "bytes": 28975
+    },
+    "replay_witness_bounded_v1.py": {
+      "sha256": "20d6dde0797067cbe96493442ec0afb96267d84d1a6fef629ef3c2ac8b5a2f67",
+      "bytes": 4354
+    }
+  },
+  "bundle_inputs_unchanged": true,
+  "author_output_byte_identical": true,
+  "copied_sources_unchanged": true,
+  "author_script_executed_in_place": false
+}

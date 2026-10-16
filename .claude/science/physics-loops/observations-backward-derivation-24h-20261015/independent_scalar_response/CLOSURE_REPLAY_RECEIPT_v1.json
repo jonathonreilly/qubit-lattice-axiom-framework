@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "elapsed_seconds": 0.3212167080491781,
+  "timeout_seconds": 120,
+  "stdout_sha256": "ba5bf0c77e0f4e588bb0d6173e1f0ce2cc819d6f180a713106366021440c84ca",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "passed": 14,
+  "failed": 0,
+  "author_result_bytes_equal": true,
+  "source_files_unchanged": true,
+  "sources": {
+    "SCALAR_RESPONSE_CLOSURE_v1.md": {
+      "sha256": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+      "bytes": 3578
+    },
+    "check_scalar_response_closure_v1.py": {
+      "sha256": "129d7573f02e172c6e9407e11429c21b317a8d3f4dd55b3527df4970b92df28f",
+      "bytes": 4493
+    },
+    "SCALAR_RESPONSE_CLOSURE_CONTROLS_v1.json": {
+      "sha256": "ba5bf0c77e0f4e588bb0d6173e1f0ce2cc819d6f180a713106366021440c84ca",
+      "bytes": 2611
+    }
+  }
+}

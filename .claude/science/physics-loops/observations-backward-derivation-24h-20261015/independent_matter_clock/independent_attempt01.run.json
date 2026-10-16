@@ -1,0 +1,75 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock/independent_controls_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T09:57:33.302211+00:00",
+  "end_utc": "2026-10-16T09:57:35.230246+00:00",
+  "wall_seconds": 1.9273109170608222,
+  "child_user_seconds": 1.7901159999999998,
+  "child_system_seconds": 0.036289,
+  "child_peak_rss_platform_units": 68911104,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 20050,
+  "stdout_sha256": "484aff4aaaf4a99399b4b2e1868590d04297dd3a43dce5a970a9a9572fa0c4b3",
+  "stderr_bytes": 4761,
+  "stderr_sha256": "733daaea946c868eb0e404d3249c7e28ed500ce48fb8f905904bedcfd6f61ea5",
+  "input_binding_before": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "ef2a2c18f47232a8bd5d521d621b4dfabfcbf7c397e64724aa13332ddf4ef85b",
+      "bytes": 2258
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+      "bytes": 9872
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "222ee341c7c1ce819f80e10e021db5c32f5244f85d800350f60c4f1ad47e6039",
+      "bytes": 610
+    },
+    "independent_controls_v1.py": {
+      "sha256": "27ccb52b5366f8eeb8b4bc9c21f0b3f8eda0cedc8df1fe076fb94af93278b46b",
+      "bytes": 12891
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "7a5a75cbd1b02ec7b2deaaf3e3e6bc70180d59d01cf60d32130b36260552c38d",
+      "bytes": 3077
+    }
+  },
+  "input_binding_after": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "ef2a2c18f47232a8bd5d521d621b4dfabfcbf7c397e64724aa13332ddf4ef85b",
+      "bytes": 2258
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+      "bytes": 9872
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "222ee341c7c1ce819f80e10e021db5c32f5244f85d800350f60c4f1ad47e6039",
+      "bytes": 610
+    },
+    "independent_controls_v1.py": {
+      "sha256": "27ccb52b5366f8eeb8b4bc9c21f0b3f8eda0cedc8df1fe076fb94af93278b46b",
+      "bytes": 12891
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "7a5a75cbd1b02ec7b2deaaf3e3e6bc70180d59d01cf60d32130b36260552c38d",
+      "bytes": 3077
+    }
+  },
+  "inputs_unchanged": true,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 99,
+    "failed": 0
+  },
+  "author_matter_clock_sources_read": false,
+  "author_matter_clock_code_imported": false
+}

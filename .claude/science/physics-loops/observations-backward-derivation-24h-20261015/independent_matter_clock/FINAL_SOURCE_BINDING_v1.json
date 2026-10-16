@@ -1,0 +1,284 @@
+{
+  "time_utc": "2026-10-16T10:09:56.870827+00:00",
+  "scope": "Final source and evidence preservation binding, not audit status",
+  "source_pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "source_checks": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "MATTER_CLOCK_NEUTRAL_CONTRACT_v1.json": {
+        "actual": {
+          "sha256": "056306f0688a08ffb4592eaffa32b1726e2b467da85bd40eb651877e62f71cfe",
+          "bytes": 1766
+        },
+        "expected": {
+          "sha256": "056306f0688a08ffb4592eaffa32b1726e2b467da85bd40eb651877e62f71cfe",
+          "bytes": 1766
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_DERIVATION_v1.md": {
+        "actual": {
+          "sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+          "bytes": 10346
+        },
+        "expected": {
+          "sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+          "bytes": 10346
+        },
+        "matches": true
+      },
+      "check_matter_clock_v1.py": {
+        "actual": {
+          "sha256": "081198c3548fefdb796b804a620ec1532b5a51215ad12a7b62079fe7c681436e",
+          "bytes": 9326
+        },
+        "expected": {
+          "sha256": "081198c3548fefdb796b804a620ec1532b5a51215ad12a7b62079fe7c681436e",
+          "bytes": 9326
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_CONTROLS_v1.json": {
+        "actual": {
+          "sha256": "7316e39c832227c048bbcdf586026e26551f75ad621e6c40f2f7c8ba1cda08c4",
+          "bytes": 7731
+        },
+        "expected": {
+          "sha256": "7316e39c832227c048bbcdf586026e26551f75ad621e6c40f2f7c8ba1cda08c4",
+          "bytes": 7731
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_RUN_v1.json": {
+        "actual": {
+          "sha256": "39a9d625b021792b1a7552edcf8e7782e6915b13f517ca5b2db2ad137b168bd9",
+          "bytes": 273
+        },
+        "expected": {
+          "sha256": "39a9d625b021792b1a7552edcf8e7782e6915b13f517ca5b2db2ad137b168bd9",
+          "bytes": 273
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_STDERR_v1.txt": {
+        "actual": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "expected": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_AUTHOR_FREEZE_v1.json": {
+        "actual": {
+          "sha256": "011158d9344305a8059a41e889f79f6d90ce7052d7eed3901974d649d4f0e52f",
+          "bytes": 782
+        },
+        "expected": {
+          "sha256": "011158d9344305a8059a41e889f79f6d90ce7052d7eed3901974d649d4f0e52f",
+          "bytes": 782
+        },
+        "matches": true
+      }
+    },
+    "AUTHOR_REVISION_SNAPSHOT_v2.json": {
+      "MATTER_CLOCK_DERIVATION_v2.md": {
+        "actual": {
+          "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+          "bytes": 11616
+        },
+        "expected": {
+          "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+          "bytes": 11616
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_REVISION_RECEIPT_v2.json": {
+        "actual": {
+          "sha256": "ec571d689cf3f8fe80432621acbccb8f0191dfa51d4eabf4b4af738085622a66",
+          "bytes": 659
+        },
+        "expected": {
+          "sha256": "ec571d689cf3f8fe80432621acbccb8f0191dfa51d4eabf4b4af738085622a66",
+          "bytes": 659
+        },
+        "matches": true
+      },
+      "check_matter_clock_witness_v1.py": {
+        "actual": {
+          "sha256": "c4985ae853c21edc4ebba54f0996e4f7cbb79927d69a43bcfbd15255596cad96",
+          "bytes": 2295
+        },
+        "expected": {
+          "sha256": "c4985ae853c21edc4ebba54f0996e4f7cbb79927d69a43bcfbd15255596cad96",
+          "bytes": 2295
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_WITNESS_CONTROLS_v1.json": {
+        "actual": {
+          "sha256": "4a9592ebe5914bfef6e07671e47dd27ab5397616ddfac23fa106cfae3ddb32b9",
+          "bytes": 1936
+        },
+        "expected": {
+          "sha256": "4a9592ebe5914bfef6e07671e47dd27ab5397616ddfac23fa106cfae3ddb32b9",
+          "bytes": 1936
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_WITNESS_RUN_v1.json": {
+        "actual": {
+          "sha256": "9232528446a1658558389db2a8c531eca4e306df27c0413c51c6ef47ce7e0586",
+          "bytes": 133
+        },
+        "expected": {
+          "sha256": "9232528446a1658558389db2a8c531eca4e306df27c0413c51c6ef47ce7e0586",
+          "bytes": 133
+        },
+        "matches": true
+      },
+      "MATTER_CLOCK_WITNESS_STDERR_v1.txt": {
+        "actual": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "expected": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "matches": true
+      },
+      "independent_matter_clock/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+        "actual": {
+          "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+          "bytes": 9872
+        },
+        "expected": {
+          "sha256": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493",
+          "bytes": 9872
+        },
+        "matches": true
+      }
+    }
+  },
+  "embedded_snapshot_checks": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "MATTER_CLOCK_NEUTRAL_CONTRACT_v1.json": true,
+      "MATTER_CLOCK_DERIVATION_v1.md": true,
+      "check_matter_clock_v1.py": true,
+      "MATTER_CLOCK_CONTROLS_v1.json": true,
+      "MATTER_CLOCK_RUN_v1.json": true,
+      "MATTER_CLOCK_STDERR_v1.txt": true,
+      "MATTER_CLOCK_AUTHOR_FREEZE_v1.json": true
+    },
+    "AUTHOR_REVISION_SNAPSHOT_v2.json": {
+      "MATTER_CLOCK_DERIVATION_v2.md": true,
+      "MATTER_CLOCK_REVISION_RECEIPT_v2.json": true,
+      "check_matter_clock_witness_v1.py": true,
+      "MATTER_CLOCK_WITNESS_CONTROLS_v1.json": true,
+      "MATTER_CLOCK_WITNESS_RUN_v1.json": true,
+      "MATTER_CLOCK_WITNESS_STDERR_v1.txt": true,
+      "independent_matter_clock/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": true
+    }
+  },
+  "freeze_checks": {
+    "PRE_CODE_FREEZE_v1.json": {
+      "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": true,
+      "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": true
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": true,
+      "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": true,
+      "PRE_CODE_FREEZE_v1.json": true,
+      "PRE_COMPARISON_FINDINGS_v1.md": true,
+      "independent_attempt01.run.json": true,
+      "independent_attempt01.stderr.txt": true,
+      "independent_attempt01.stdout.json": true,
+      "independent_controls_v1.py": true,
+      "run_independent_bounded_v1.py": true
+    }
+  },
+  "run_stream_checks": {
+    "independent_attempt01": {
+      "stdout": true,
+      "stderr": true
+    },
+    "comparison_attempt01_formulas": {
+      "stdout": true,
+      "stderr": true
+    },
+    "comparison_attempt01_author": {
+      "stdout": true,
+      "stderr": true
+    },
+    "witness_attempt01": {
+      "stdout": true,
+      "stderr": true
+    }
+  },
+  "actual_runs": {
+    "independent_attempt01": {
+      "summary": {
+        "passed": 99,
+        "failed": 0
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 120,
+      "bytecode_disabled": true,
+      "wall_seconds": 1.9273109170608222
+    },
+    "comparison_attempt01_formulas": {
+      "summary": {
+        "passed": 15,
+        "failed": 0
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 120,
+      "bytecode_disabled": true,
+      "wall_seconds": 0.7938007498160005
+    },
+    "comparison_attempt01_author": {
+      "summary": {
+        "passed": 55,
+        "failed": 0
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 120,
+      "bytecode_disabled": true,
+      "wall_seconds": 7.3429949576966465
+    },
+    "witness_attempt01": {
+      "summary": {
+        "passed": 15,
+        "failed": 0
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 120,
+      "bytecode_disabled": true,
+      "wall_seconds": 0.25803991593420506
+    }
+  },
+  "trailing_whitespace": [],
+  "checks": {
+    "original_and_revised_author_sources_match": true,
+    "embedded_source_snapshots_match": true,
+    "pre_exposure_freezes_intact": true,
+    "all_execution_streams_match": true,
+    "all_actual_runs_successful": true,
+    "all_scientific_subprocesses_bounded_and_bytecode_disabled": true,
+    "lossless_revision_diff_intact": true,
+    "no_trailing_whitespace": true,
+    "no_generated_bytecode": true,
+    "no_raw_diff_artifacts": true,
+    "no_symlinks": true
+  },
+  "summary": {
+    "passed": 11,
+    "failed": 0
+  }
+}

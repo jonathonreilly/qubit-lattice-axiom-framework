@@ -1,0 +1,328 @@
+{
+  "author": "/root",
+  "checks": [
+    {
+      "name": "Raychaudhuri transformed without supplied clock map",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust exchange transformed with A derivatives",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "differentiated KG transformed including dust and acceleration",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar equation has displayed linear x-prime coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "eliminate x-double-prime between independently transformed equations",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "Poly((-12*b**4 + 4*b**2 - 2)*x + 12*b**3*h - 2*b*h + 4*bp, x, domain='ZZ[b,h,bp]')",
+      "name": "C affine",
+      "pass": true
+    },
+    {
+      "evidence": "3",
+      "name": "N at most cubic",
+      "pass": true
+    },
+    {
+      "name": "strictly positive slope coefficient completed square",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "denominator clearing equals differentiated first-order flow",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "6",
+      "name": "generic polynomial degree six",
+      "pass": true
+    },
+    {
+      "name": "degree six coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection C odd",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection N even",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection G odd",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection Q even",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Friedmann derivative recovers original scalar force given dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "forward power family Friedmann from specified action",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "forward power family Raychaudhuri from specified action",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "forward power family original KG off minimum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "forward power family fixed-bare-density curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "general power history physical R",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "general power history matter dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "general power history matter scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "general power history polynomial",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "1/(4*tau**2)",
+      "name": "power fixture 0 positive dust",
+      "pass": true
+    },
+    {
+      "evidence": "5/tau",
+      "name": "power fixture 0 regular eliminated chart",
+      "pass": true
+    },
+    {
+      "evidence": "135/(196*tau**2)",
+      "name": "power fixture 1 positive dust",
+      "pass": true
+    },
+    {
+      "evidence": "2047/(875*tau)",
+      "name": "power fixture 1 regular eliminated chart",
+      "pass": true
+    },
+    {
+      "evidence": "8/(49*tau**2)",
+      "name": "power fixture 2 positive dust",
+      "pass": true
+    },
+    {
+      "evidence": "1137/(14*tau)",
+      "name": "power fixture 2 regular eliminated chart",
+      "pass": true
+    },
+    {
+      "evidence": "13/(12*tau**2)",
+      "name": "power fixture 3 positive dust",
+      "pass": true
+    },
+    {
+      "evidence": "-1/tau",
+      "name": "power fixture 3 regular eliminated chart",
+      "pass": true
+    },
+    {
+      "name": "simple forward fixture x=1/(2 tau)",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "simple fixture R",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power original Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power original Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power original KG",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power R from energy density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power matter dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power matter scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "non-power polynomial at t=1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "3132*sqrt(7)/49",
+      "name": "non-power C nonzero at t=1",
+      "pass": true
+    },
+    {
+      "name": "non-power polynomial at t=2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "199*sqrt(6)/18",
+      "name": "non-power C nonzero at t=2",
+      "pass": true
+    },
+    {
+      "name": "non-power polynomial at t=4",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "51/8",
+      "name": "non-power C nonzero at t=4",
+      "pass": true
+    },
+    {
+      "name": "uncoupled continuum has identically zero polynomial",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled flow retains free x normalization",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "A-normalization rescaling leaves canonical b unchanged",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "A-normalization rescaling leaves matter curvature unchanged",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical density over F invariant under A0 rescaling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "3/2",
+      "name": "detect mutation: omit conformal q in Raychaudhuri",
+      "pass": true
+    },
+    {
+      "evidence": "3/8",
+      "name": "detect mutation: omit dust source in scalar equation",
+      "pass": true
+    },
+    {
+      "evidence": "-2",
+      "name": "detect mutation: wrong scalar acceleration sign",
+      "pass": true
+    },
+    {
+      "evidence": "-14505/196",
+      "name": "detect mutation: curvature read as mu instead of mu/A^2",
+      "pass": true
+    }
+  ],
+  "failed": 0,
+  "generic_polynomial_degree": 6,
+  "kind": "exact mathematical and synthetic controls only",
+  "leading_coefficient": "8*b**2*(6*b**2 - 1)*(12*b**2 - 7)*(6*b**4 - 2*b**2 + 1)",
+  "limitations": [
+    "No empirical data or independently registered b,kappa",
+    "C=0 histories unclassified",
+    "General identically-zero Q unclassified",
+    "No scale, action or preferred history selected"
+  ],
+  "passed": 55,
+  "power_fixtures": [
+    {
+      "C": "5/tau",
+      "R": "1/(4*tau**2)",
+      "b": "1",
+      "c": "1",
+      "p": "1"
+    },
+    {
+      "C": "2047/(875*tau)",
+      "R": "135/(196*tau**2)",
+      "b": "4/5",
+      "c": "1/2",
+      "p": "4/5"
+    },
+    {
+      "C": "1137/(14*tau)",
+      "R": "8/(49*tau**2)",
+      "b": "5/2",
+      "c": "1",
+      "p": "3/2"
+    },
+    {
+      "C": "-1/tau",
+      "R": "13/(12*tau**2)",
+      "b": "0",
+      "c": "1/2",
+      "p": "2/3"
+    }
+  ],
+  "simple_fixture_polynomial": "5*(2*tau*x - 1)*(200*tau**5*x**5 - 940*tau**4*x**4 + 1322*tau**3*x**3 - 296*tau**2*x**2 - 729*tau*x + 468)/(2*tau**6)",
+  "source_sha256": {
+    "MATTER_CLOCK_DERIVATION_v1.md": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+    "MATTER_CLOCK_NEUTRAL_CONTRACT_v1.json": "056306f0688a08ffb4592eaffa32b1726e2b467da85bd40eb651877e62f71cfe",
+    "check_matter_clock_v1.py": "081198c3548fefdb796b804a620ec1532b5a51215ad12a7b62079fe7c681436e"
+  },
+  "sympy": "1.14.0"
+}

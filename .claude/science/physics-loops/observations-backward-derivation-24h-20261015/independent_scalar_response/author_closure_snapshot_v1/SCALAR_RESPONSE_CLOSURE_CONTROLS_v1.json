@@ -1,0 +1,90 @@
+{
+  "author": "/root",
+  "checks": [
+    {
+      "name": "Hamiltonian constraint propagated",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "spatial trace follows from momentum and original equations",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical Euler theta factors",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "full matter-time response conversion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter-time damping coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical scalar perturbation remains w=u/M",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Jordan potential difference supplies b*w",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "J over b derivative retained",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "J over b second derivative retained",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "detect omitted clock damping shift",
+      "pass": true,
+      "residual": "-3*b*x"
+    },
+    {
+      "count": 105,
+      "name": "all105mode epochs inspected",
+      "pass": true
+    },
+    {
+      "count": 2940,
+      "name": "saved trajectory numeric entries finite",
+      "pass": true
+    },
+    {
+      "name": "response trajectory crosses monotonic inverse boundary",
+      "pass": true,
+      "v_after": -0.011207145433126597,
+      "v_before": 0.007354648294768831
+    },
+    {
+      "name": "well separated synthetic proxy counterexample",
+      "pass": true,
+      "proxy": 0.07874474214079606,
+      "slip": -1.6799999999999997
+    }
+  ],
+  "empirical_validation": false,
+  "failed": 0,
+  "independent_new_control_count": false,
+  "passed": 14,
+  "source_sha256": {
+    "SCALAR_RESPONSE_CLOSURE_v1.md": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+    "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+    "check_scalar_response_closure_v1.py": "129d7573f02e172c6e9407e11429c21b317a8d3f4dd55b3527df4970b92df28f",
+    "independent_scalar_response/DUST_SYSTEM_SUPPLEMENT_v1.md": "b04cb2fbb2c368e38d0c231ae5370258778ccaecd74c462da96d6b048520fcc8",
+    "independent_scalar_response/INDEPENDENT_PROOF_v1.md": "15ab2fdfd02bd1230c78001c4c4256a288a1bc21d58841dd9afc150f568c5581",
+    "independent_scalar_response/INDEPENDENT_RESULTS_v1.json": "e56779d16aa49b804da851742b660abd88dd3c390b1a120925d2a12c531780f1"
+  },
+  "stage": "post-exposure personal rederivation and integration"
+}

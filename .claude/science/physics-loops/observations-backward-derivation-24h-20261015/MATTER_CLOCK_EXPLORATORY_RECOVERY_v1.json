@@ -1,0 +1,12 @@
+{
+  "kind": "Symbolic expression representation failure during exploratory elimination",
+  "tool_chunk_id": "f1491f",
+  "actual_returncode": 1,
+  "operation": "s.Poly(s.expand(znum+C**3*(KG-z).subs(y,-N/C)),x)",
+  "exception": "PolynomialError: reciprocal of C remained syntactically in polynomial generators",
+  "diagnosis": "Direct substitution did not cancel the explicit denominator before polynomial construction. This is not a failed identity or proof of non-polynomial compatibility.",
+  "recovery": "Extract the linear x-prime coefficient B1 and constant B0, then construct the cleared numerator znum-B1*N*C**2+B0*C**3. This has no rational denominator; exact-degree check is six.",
+  "recovery_chunk_id": "4de7b1",
+  "input_functions_changed": false,
+  "science_conclusion_from_failure": null
+}

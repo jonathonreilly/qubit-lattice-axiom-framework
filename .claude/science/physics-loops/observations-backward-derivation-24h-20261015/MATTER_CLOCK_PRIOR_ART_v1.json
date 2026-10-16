@@ -1,0 +1,61 @@
+{
+  "sources": {
+    "tsujikawa2007-arxiv0705.1032v4": {
+      "sha256": "552127cd5e9334e1de30745efac466dbaff4f995cb456651a4b66e605472e4f9",
+      "bytes": 195739,
+      "pages": 11,
+      "text_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/tsujikawa2007-arxiv0705.1032v4.pages.json",
+      "url": "https://arxiv.org/pdf/0705.1032v4",
+      "pages_read": [
+        7,
+        8
+      ],
+      "visual_pages": [
+        7
+      ],
+      "usage": "Standard frame, density and force-potential distinction; not a finite-mass transfer theorem. Rendered Eq73 factor notation differs from Eq76; direct metric derivation used.",
+      "source_local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/tsujikawa2007-arxiv0705.1032v4.pdf",
+      "partial_page_read": {
+        "1": "first 1600 extracted characters; title/abstract excerpt, not full page"
+      }
+    },
+    "amendola2013-arxiv1210.0439v2": {
+      "sha256": "86757eab1e9d1d89177c231b544510b746bd83c0fdc78331f5ffda2b37c867fb",
+      "bytes": 216957,
+      "pages": 9,
+      "text_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/amendola2013-arxiv1210.0439v2.pages.json",
+      "url": "https://arxiv.org/pdf/1210.0439v2",
+      "pages_read": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "usage": "Primitive clustering/velocity/lensing channels, data-independent ratios, normalization and state assumptions. No current observational precision claims.",
+      "source_local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/amendola2013-arxiv1210.0439v2.pdf",
+      "partial_page_read": {
+        "1": "first 1600 extracted characters; title/abstract excerpt, not full page"
+      }
+    },
+    "dalang2020-arxiv1912.06117v3": {
+      "sha256": "0fcaa821a5256ff98803f5db6fbaea0e294dc554c060661b70644df6800da81d",
+      "bytes": 1133595,
+      "pages": 17,
+      "text_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/dalang2020-arxiv1912.06117v3.pages.json",
+      "url": "https://arxiv.org/pdf/1912.06117v3",
+      "pages_read": [
+        2,
+        8,
+        9
+      ],
+      "usage": "Local-endpoint tensor transport and source calibration conditions; source Eq56/69, not all Horndeski effects or a general no-go.",
+      "source_local_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/dalang2020-arxiv1912.06117v3.pdf",
+      "partial_page_read": {
+        "1": "first 1600 extracted characters; title/abstract excerpt, not full page"
+      }
+    }
+  },
+  "empirical_data_read": false,
+  "scope": "Primary-source portions explicitly listed; no full-paper review claimed",
+  "additional_abstract_only": "https://arxiv.org/abs/1906.12333v2 read abstract/version page only, not used as sole support"
+}

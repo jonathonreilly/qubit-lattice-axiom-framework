@@ -1,0 +1,15 @@
+PASS author C is minus twice independent Delta
+PASS author N is twice independent numerator
+PASS author entire Q is minus eight times independent P
+PASS author primary leading coefficient agrees with independent result
+PASS reflection of author C
+PASS reflection of author N
+PASS reflection of entire filter
+PASS author receipt simple polynomial agrees with formula
+PASS independent positive witness lies on author C zero
+PASS independent witness also has author N zero
+PASS independent witness retains positive author density
+PASS independent witness obeys author undivided scalar
+PASS independent witness obeys author filter
+PASS conditional FLRW matter-clock redshift drift
+PASS physical density over F equals author R

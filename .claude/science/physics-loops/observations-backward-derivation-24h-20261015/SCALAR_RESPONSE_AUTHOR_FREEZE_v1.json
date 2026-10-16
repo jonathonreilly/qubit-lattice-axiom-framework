@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-16T10:02:27.558791+00:00",
+  "root_read_independent_source_before_freeze": false,
+  "files": {
+    "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+    "check_scalar_response_v1.py": "72acb13dba4ad125707e3b70ce37c93cc6ce3c05c1b4997ae268b0f10a4f8ed6",
+    "SCALAR_RESPONSE_CONTROLS_v1.json": "fa2abf2b924dfd2749eea3354e05d9fa89a8738788bc7e6fa8b9a96f545bc0a8",
+    "SCALAR_RESPONSE_RUN_v1.json": "2ac0e8ce297e3b3c0010b362995cfc2cccd831337c3ccd9b308e7936d4839b04",
+    "SCALAR_RESPONSE_STDERR_v1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "scope": "Independent exact synthetic action-first matter-clock controls; no author matter-clock exposure or empirical validation",
+  "software": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "summary": {
+    "passed": 99,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "lapse gives Friedmann with positive dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scale-factor variation before constraints",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Raychaudhuri uses acceleration minus Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "particle action scalar charge sign",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "bare particle conservation gives Einstein exchange",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Raychaudhuri physical-time density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Einstein dust exchange yields physical-time transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass transport gives retained second-order equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust second-order coefficients",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "undifferentiated scalar follows from retained equations",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "eliminated numerator has no velocity derivatives",
+      "pass": true
+    },
+    {
+      "name": "independent elimination matches compact numerator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "elimination identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "denominator slope is strictly positive completed square",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "hand numerator coefficient x^3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "hand numerator coefficient x^2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "hand numerator coefficient x^1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "hand numerator coefficient x^0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "polynomial equals denominator-cleared mass equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "generic polynomial degree is six",
+      "pass": true
+    },
+    {
+      "name": "hand degree-six leading coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent large-x mass balance",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "transported density numerator leading coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "identically zero coupling has degree at most four",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "unit coupling retains sixth degree",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "first critical squared coupling loses leading degree",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "second critical squared coupling loses leading degree",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "an isolated coupling zero may have fifth degree",
+      "pass": true
+    },
+    {
+      "name": "isolated-zero fifth coefficient is minus bprime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 scalar equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 dust equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 matter clock derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 transformed expansion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 transformed scalar speed",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 transformed density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 fixed-rho response",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 direct density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 direct dust transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 direct curvature compatibility",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 polynomial necessity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 positive density coefficient",
+      "pass": true
+    },
+    {
+      "name": "regular_p2 nonzero velocity coefficient",
+      "pass": true
+    },
+    {
+      "name": "regular_p2 nonzero elimination denominator",
+      "pass": true
+    },
+    {
+      "name": "regular_p2 first-order flow",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 density-dependent curvature increment",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "regular_p2 wrong curvature rejects same history",
+      "pass": true
+    },
+    {
+      "name": "singular_positive_history Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history scalar equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history dust equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history matter clock derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history transformed expansion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history transformed scalar speed",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history transformed density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history fixed-rho response",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history direct density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history direct dust transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history direct curvature compatibility",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history polynomial necessity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history positive density coefficient",
+      "pass": true
+    },
+    {
+      "name": "singular_positive_history nonzero velocity coefficient",
+      "pass": true
+    },
+    {
+      "name": "singular_positive_history singular elimination denominator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "singular_positive_history singular elimination numerator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture clock derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture expansion formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture speed formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture density formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying fixture response formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying direct density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying direct dust transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying direct mass transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying local elimination chart exists",
+      "pass": true,
+      "detail": "-61000/2401"
+    },
+    {
+      "name": "varying local physical density positive",
+      "pass": true
+    },
+    {
+      "name": "varying local first-order flow",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying local polynomial",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "varying local wrong curvature fails filter",
+      "pass": true
+    },
+    {
+      "name": "varying fixture exercises nonzero b third derivative",
+      "pass": true,
+      "detail": "-265347072/823543"
+    },
+    {
+      "name": "varying fixture exercises nonzero response derivative",
+      "pass": true,
+      "detail": "-3145728/2401"
+    },
+    {
+      "name": "normalization preserves coupling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "normalization preserves response",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "normalization rescales bare comoving density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "registered physical density fixes A squared",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "registered bare normalization fixes A squared",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "affine potential invisible to curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "linear potential changes original scalar force",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "constant potential changes Friedmann",
+      "pass": true
+    },
+    {
+      "name": "uncoupled family direct density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled family dust transport",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled family mass compatibility",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled family entire filter vanishes",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled family first-order flow",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled positive-speed member is physical",
+      "pass": true
+    },
+    {
+      "name": "uncoupled negative-speed member is physical",
+      "pass": true
+    }
+  ],
+  "algebra": {
+    "numerator": "-6*b**5*x**3 + 12*b**4*h*x**2 - 6*b**3*b1*x**2 - 6*b**3*h**2*x + 6*b**3*h1*x + 5*b**3*x**3 + 6*b**2*b1*h*x - 6*b**2*h*h1 - 4*b**2*h*x**2 + 2*b*b1*x**2 - 3*b*h**2*x - 2*b*h1*x - b*kappa*x + b*x**3 + 2*b1*h*x + b2*x - 3*h*h1 - 3*h*x**2/2 - h2",
+    "denominator": "-b*h*(6*b**2 - 1) - 2*b1 + x*(6*b**4 - 2*b**2 + 1)",
+    "polynomial": "-216*b**11*h*x**5 + 216*b**10*b1*x**5 + 1080*b**10*h**2*x**4 + 72*b**10*h1*x**4 + 72*b**10*kappa*x**4 - 432*b**10*x**6 - 1296*b**9*b1*h*x**4 - 144*b**9*b2*x**4 - 2088*b**9*h**3*x**3 - 144*b**9*h*h1*x**3 - 288*b**9*h*kappa*x**3 + 2016*b**9*h*x**5 + 36*b**9*h2*x**3 - 36*b**9*kappa1*x**3 + 360*b**8*b1**2*x**4 + 2952*b**8*b1*h**2*x**3 - 36*b**8*b1*h1*x**3 + 72*b**8*b1*kappa*x**3 - 828*b**8*b1*x**5 + 612*b**8*b2*h*x**3 + 36*b**8*b3*x**3 + 1800*b**8*h**4*x**2 - 504*b**8*h**2*h1*x**2 + 360*b**8*h**2*kappa*x**2 - 3636*b**8*h**2*x**4 - 324*b**8*h*h2*x**2 + 72*b**8*h*kappa1*x**2 - 144*b**8*h1**2*x**2 - 36*b**8*h1*kappa*x**2 + 240*b**8*h1*x**4 - 36*b**8*h3*x**2 - 48*b**8*kappa*x**4 + 468*b**8*x**6 - 1548*b**7*b1**2*h*x**3 - 252*b**7*b1*b2*x**3 - 2880*b**7*b1*h**3*x**2 + 756*b**7*b1*h*h1*x**2 - 144*b**7*b1*h*kappa*x**2 + 3048*b**7*b1*h*x**4 + 144*b**7*b1*h2*x**2 - 792*b**7*b2*h**2*x**2 + 108*b**7*b2*h1*x**2 + 168*b**7*b2*x**4 - 72*b**7*b3*h*x**2 - 576*b**7*h**5*x + 1152*b**7*h**3*h1*x - 144*b**7*h**3*kappa*x + 3168*b**7*h**3*x**3 + 540*b**7*h**2*h2*x - 36*b**7*h**2*kappa1*x + 288*b**7*h*h1**2*x + 72*b**7*h*h1*kappa*x - 780*b**7*h*h1*x**3 + 72*b**7*h*h3*x + 168*b**7*h*kappa*x**3 - 1650*b**7*h*x**5 - 42*b**7*h2*x**3 + 24*b**7*kappa1*x**3 + 288*b**6*b1**3*x**3 + 2016*b**6*b1**2*h**2*x**2 - 288*b**6*b1**2*h1*x**2 - 696*b**6*b1**2*x**4 + 504*b**6*b1*b2*h*x**2 + 1008*b**6*b1*h**4*x - 1404*b**6*b1*h**2*h1*x + 72*b**6*b1*h**2*kappa*x - 4236*b**6*b1*h**2*x**3 - 288*b**6*b1*h*h2*x + 216*b**6*b1*h1*x**3 - 72*b**6*b1*kappa*x**3 + 840*b**6*b1*x**5 + 324*b**6*b2*h**3*x - 216*b**6*b2*h*h1*x - 480*b**6*b2*h*x**3 + 36*b**6*b3*h**2*x - 24*b**6*b3*x**3 - 576*b**6*h**4*h1 - 1236*b**6*h**4*x**2 - 252*b**6*h**3*h2 - 144*b**6*h**2*h1**2 - 36*b**6*h**2*h1*kappa + 1236*b**6*h**2*h1*x**2 - 36*b**6*h**2*h3 - 144*b**6*h**2*kappa*x**2 + 2070*b**6*h**2*x**4 + 252*b**6*h*h2*x**2 - 36*b**6*h*kappa1*x**2 + 60*b**6*h1**2*x**2 + 18*b**6*h1*kappa*x**2 - 196*b**6*h1*x**4 + 24*b**6*h3*x**2 - 4*b**6*kappa*x**4 - 222*b**6*x**6 - 576*b**5*b1**3*h*x**2 - 828*b**5*b1**2*h**3*x + 576*b**5*b1**2*h*h1*x + 2064*b**5*b1**2*h*x**3 - 252*b**5*b1*b2*h**2*x + 216*b**5*b1*b2*x**3 + 684*b**5*b1*h**3*h1 + 2520*b**5*b1*h**3*x**2 + 144*b**5*b1*h**2*h2 - 882*b**5*b1*h*h1*x**2 + 156*b**5*b1*h*kappa*x**2 - 2366*b**5*b1*h*x**4 - 108*b**5*b1*h2*x**2 + 24*b**5*b1*kappa1*x**2 + 108*b**5*b2*h**2*h1 + 348*b**5*b2*h**2*x**2 - 66*b**5*b2*h1*x**2 - 12*b**5*b2*kappa*x**2 - 40*b**5*b2*x**4 + 36*b**5*b3*h*x**2 + 96*b**5*h**5*x - 888*b**5*h**3*h1*x - 1098*b**5*h**3*x**3 - 294*b**5*h**2*h2*x + 12*b**5*h**2*kappa1*x - 96*b**5*h*h1**2*x - 54*b**5*h*h1*kappa*x + 432*b**5*h*h1*x**3 - 36*b**5*h*h3*x - 6*b**5*h*kappa**2*x - 3*b**5*h*kappa*x**3 + 619*b**5*h*x**5 - 6*b**5*h1*h2*x - 6*b**5*h2*kappa*x + 10*b**5*h2*x**3 - 16*b**5*kappa1*x**3 + 288*b**4*b1**3*h**2*x - 312*b**4*b1**3*x**3 - 288*b**4*b1**2*h**2*h1 - 1968*b**4*b1**2*h**2*x**2 + 180*b**4*b1**2*h1*x**2 - 12*b**4*b1**2*kappa*x**2 + 600*b**4*b1**2*x**4 - 420*b**4*b1*b2*h*x**2 - 24*b**4*b1*b3*x**2 - 432*b**4*b1*h**4*x + 1254*b**4*b1*h**2*h1*x - 48*b**4*b1*h**2*kappa*x + 2187*b**4*b1*h**2*x**3 + 318*b**4*b1*h*h2*x - 24*b**4*b1*h*kappa1*x + 108*b**4*b1*h1**2*x + 36*b**4*b1*h1*kappa*x - 272*b**4*b1*h1*x**3 + 24*b**4*b1*h3*x + 10*b**4*b1*kappa*x**3 - 406*b**4*b1*x**5 + 12*b**4*b2**2*x**2 - 12*b**4*b2*h**3*x + 78*b**4*b2*h*h1*x + 24*b**4*b2*h*kappa*x + 107*b**4*b2*h*x**3 - 6*b**4*b2*h2*x - 12*b**4*b3*h**2*x + 16*b**4*b3*x**3 + 96*b**4*h**4*h1 + 210*b**4*h**4*x**2 + 60*b**4*h**3*h2 - 60*b**4*h**2*h1**2 - 12*b**4*h**2*h1*kappa - 392*b**4*h**2*h1*x**2 + 12*b**4*h**2*h3 + 5*b**4*h**2*kappa*x**2 - 548*b**4*h**2*x**4 - 42*b**4*h*h1*h2 - 6*b**4*h*h2*kappa - 93*b**4*h*h2*x**2 + 16*b**4*h*kappa1*x**2 - 46*b**4*h1**2*x**2 - 8*b**4*h1*kappa*x**2 + 93*b**4*h1*x**4 - 6*b**4*h2**2 - 16*b**4*h3*x**2 + 10*b**4*kappa*x**4 + 68*b**4*x**6 + 708*b**3*b1**3*h*x**2 + 108*b**3*b1**2*b2*x**2 + 498*b**3*b1**2*h**3*x - 624*b**3*b1**2*h*h1*x - 12*b**3*b1**2*h*kappa*x - 1264*b**3*b1**2*h*x**3 - 72*b**3*b1**2*h2*x + 168*b**3*b1*b2*h**2*x - 60*b**3*b1*b2*h1*x - 122*b**3*b1*b2*x**3 + 24*b**3*b1*b3*h*x - 396*b**3*b1*h**3*h1 - 655*b**3*b1*h**3*x**2 - 174*b**3*b1*h**2*h2 - 12*b**3*b1*h*h1**2 - 12*b**3*b1*h*h1*kappa + 624*b**3*b1*h*h1*x**2 - 24*b**3*b1*h*h3 + 2*b**3*b1*h*kappa*x**2 + 772*b**3*b1*h*x**4 + 24*b**3*b1*h1*h2 + 62*b**3*b1*h2*x**2 - 8*b**3*b1*kappa1*x**2 - 18*b**3*b2**2*h*x + 36*b**3*b2*h**2*h1 - 55*b**3*b2*h**2*x**2 + 18*b**3*b2*h*h2 + 28*b**3*b2*h1*x**2 + 4*b**3*b2*kappa*x**2 + 12*b**3*b2*x**4 - 16*b**3*b3*h*x**2 + 144*b**3*h**3*h1*x + 4*b**3*h**3*kappa*x + 162*b**3*h**3*x**3 + 86*b**3*h**2*h2*x - b**3*h**2*kappa1*x + 42*b**3*h*h1**2*x + 5*b**3*h*h1*kappa*x - 123*b**3*h*h1*x**3 + 16*b**3*h*h3*x + b**3*h*kappa**2*x - 11*b**3*h*kappa*x**3 - 259*b**3*h*x**5/2 + 2*b**3*h1*h2*x + 2*b**3*h2*kappa*x - 3*b**3*h2*x**3 + 4*b**3*kappa1*x**3 - 120*b**2*b1**4*x**2 - 324*b**2*b1**3*h**2*x + 144*b**2*b1**3*h1*x + 276*b**2*b1**3*x**3 - 84*b**2*b1**2*b2*h*x + 276*b**2*b1**2*h**2*h1 + 658*b**2*b1**2*h**2*x**2 + 48*b**2*b1**2*h*h2 - 24*b**2*b1**2*h1**2 - 196*b**2*b1**2*h1*x**2 - 4*b**2*b1**2*kappa*x**2 - 254*b**2*b1**2*x**4 + 36*b**2*b1*b2*h*h1 + 118*b**2*b1*b2*h*x**2 + 8*b**2*b1*b3*x**2 + 12*b**2*b1*h**4*x - 344*b**2*b1*h**2*h1*x - 10*b**2*b1*h**2*kappa*x - 365*b**2*b1*h**2*x**3 - 90*b**2*b1*h*h2*x + 4*b**2*b1*h*kappa1*x - 12*b**2*b1*h1**2*x - 10*b**2*b1*h1*kappa*x + 124*b**2*b1*h1*x**3 - 8*b**2*b1*h3*x - 2*b**2*b1*kappa**2*x + 22*b**2*b1*kappa*x**3 + 79*b**2*b1*x**5 - 4*b**2*b2**2*x**2 - 7*b**2*b2*h**3*x - 9*b**2*b2*h*h1*x - 4*b**2*b2*h*kappa*x - 17*b**2*b2*h*x**3 + 2*b**2*b2*h2*x + b**2*b3*h**2*x - 4*b**2*b3*x**3 - 9*b**2*h**4*x**2 - 3*b**2*h**3*h2 - 12*b**2*h**2*h1**2 + 3*b**2*h**2*h1*kappa + 54*b**2*h**2*h1*x**2 - b**2*h**2*h3 + 3*b**2*h**2*kappa*x**2/2 + 60*b**2*h**2*x**4 + 3*b**2*h*h1*h2 + b**2*h*h2*kappa + 21*b**2*h*h2*x**2 - 2*b**2*h*kappa1*x**2 + 8*b**2*h1**2*x**2 + b**2*h1*kappa*x**2 - 23*b**2*h1*x**4 + 2*b**2*h2**2 + 4*b**2*h3*x**2 - 6*b**2*kappa*x**4 - 7*b**2*x**6 + 96*b*b1**4*h*x - 96*b*b1**3*h*h1 - 284*b*b1**3*h*x**2 - 28*b*b1**2*b2*x**2 - 28*b*b1**2*h**3*x + 196*b*b1**2*h*h1*x + 10*b*b1**2*h*kappa*x + 260*b*b1**2*h*x**3 + 16*b*b1**2*h2*x - 4*b*b1**2*kappa1*x + 11*b*b1*b2*h**2*x + 18*b*b1*b2*h1*x + 8*b*b1*b2*kappa*x - 2*b*b1*b2*x**3 - 4*b*b1*b3*h*x + 15*b*b1*h**3*h1 + 57*b*b1*h**3*x**2/2 + 17*b*b1*h**2*h2 - 6*b*b1*h*h1**2 - 6*b*b1*h*h1*kappa - 69*b*b1*h*h1*x**2 + 4*b*b1*h*h3 - 10*b*b1*h*kappa*x**2 - 88*b*b1*h*x**4 - 6*b*b1*h1*h2 - 2*b*b1*h2*kappa + 2*b*b1*h2*x**2 + 4*b*b1*kappa1*x**2 + 3*b*b2**2*h*x - 9*b*b2*h**2*h1 - 7*b*b2*h**2*x**2/2 - 3*b*b2*h*h2 - 5*b*b2*h1*x**2 - 2*b*b2*kappa*x**2 + 4*b*b2*x**4 + 2*b*b3*h*x**2 - 18*b*h**3*h1*x - 9*b*h**3*x**3 - 12*b*h**2*h2*x - 9*b*h*h1**2*x - 3*b*h*h1*kappa*x + 15*b*h*h1*x**3/2 - 2*b*h*h3*x + 3*b*h*kappa*x**3/2 + 21*b*h*x**5/2 - b*h1*h2*x - b*h2*kappa*x - b*h2*x**3 - b*kappa1*x**3 + 24*b1**4*x**2 + 8*b1**3*h**2*x - 24*b1**3*h1*x - 12*b1**3*kappa*x - 28*b1**3*x**3 + 6*b1**2*b2*h*x + 4*b1**2*b3*x - 30*b1**2*h**2*h1 - 17*b1**2*h**2*x**2 - 22*b1**2*h*h2 - 12*b1**2*h1**2 + 30*b1**2*h1*x**2 - 4*b1**2*h3 + 16*b1**2*kappa*x**2 + 10*b1**2*x**4 - 6*b1*b2**2*x + 18*b1*b2*h*h1 - 2*b1*b2*h*x**2 + 6*b1*b2*h2 - 4*b1*b3*x**2 + 27*b1*h**2*h1*x + 21*b1*h**2*x**3/2 + 21*b1*h*h2*x + 12*b1*h1**2*x - 12*b1*h1*x**3 + 4*b1*h3*x - 7*b1*kappa*x**3 - b1*x**5 + 2*b2**2*x**2 - 3*b2*h*h1*x + b2*h*x**3/2 - b2*h2*x + b3*x**3 - 9*h**2*h1**2 - 9*h**2*h1*x**2 - 9*h**2*x**4/4 - 6*h*h1*h2 - 6*h*h2*x**2 - 3*h1**2*x**2 + 3*h1*x**4/2 - h2**2 - h3*x**2 + kappa*x**4",
+    "degree": 6,
+    "degree_six_coefficient": "-b**2*(6*b**2 - 1)*(12*b**2 - 7)*(6*b**4 - 2*b**2 + 1)",
+    "specialized_degrees": {
+      "zero": 4,
+      "one": 6,
+      "critical_one_sixth": 4,
+      "critical_seven_twelfths": 5
+    }
+  },
+  "forward_fixtures": {
+    "regular_p2": {
+      "b": "4",
+      "delta": "-155/tau",
+      "N": "31/tau**3",
+      "density_coefficient": "3/25",
+      "curvature_coefficient": "82/25"
+    },
+    "singular_positive_history": {
+      "b": "1/2",
+      "delta": "0",
+      "N": "0",
+      "density_coefficient": "392/361",
+      "curvature_coefficient": "2410/361"
+    }
+  },
+  "variable_fixture_local_jets": {
+    "h": "192/49",
+    "h1": "-45056/2401",
+    "h2": "18087936/117649",
+    "h3": "-11500781568/5764801",
+    "b": "10/7",
+    "b1": "-2144/343",
+    "b2": "471552/16807",
+    "b3": "-265347072/823543",
+    "kappa": "4608/49",
+    "kappa1": "-3145728/2401",
+    "x": "8/7",
+    "x1": "-640/343",
+    "x2": "239616/16807"
+  },
+  "variable_fixture_local_delta": "-61000/2401",
+  "author_matter_clock_sources_read": false,
+  "author_matter_clock_code_imported": false
+}

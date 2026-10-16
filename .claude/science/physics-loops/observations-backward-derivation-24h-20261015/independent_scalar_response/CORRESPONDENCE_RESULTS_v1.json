@@ -1,0 +1,95 @@
+{
+  "source_sha256": "3bf66f86275226b555898fd845a7697734038b9f867f2a5097bd1fb53248bc83",
+  "preexposure_results_sha256": "e56779d16aa49b804da851742b660abd88dd3c390b1a120925d2a12c531780f1",
+  "scope": "Post-exposure correspondence only: Eq8 and exact ratio/error identity on pre-existing independent rows; no new trajectory or empirical input",
+  "checks": [
+    {
+      "name": "deff",
+      "pass": true,
+      "residual": 5.551115123125783e-17
+    },
+    {
+      "name": "seff",
+      "pass": true,
+      "residual": 6.245004513516506e-17
+    },
+    {
+      "name": "damping",
+      "pass": true,
+      "residual": 2.220446049250313e-16
+    },
+    {
+      "name": "response_numerator",
+      "pass": true,
+      "residual": 2.0372681319713593e-10
+    },
+    {
+      "name": "error_bound_excess",
+      "pass": true,
+      "residual": 1.5916157281026244e-12
+    },
+    {
+      "name": "positive naive denominator on finite fixture",
+      "pass": true,
+      "minimum": 0.46324121216986996
+    },
+    {
+      "name": "velocity turning preserved; not one monotonic inverse chart",
+      "pass": true,
+      "brackets": [
+        [
+          0.24999999999999997,
+          0.3
+        ]
+      ]
+    }
+  ],
+  "passed": 7,
+  "failed": 0,
+  "maxima": {
+    "deff": 5.551115123125783e-17,
+    "seff": 6.245004513516506e-17,
+    "damping": 2.220446049250313e-16,
+    "response_numerator": 2.0372681319713593e-10,
+    "error_bound_excess": 1.5916157281026244e-12
+  },
+  "minimum_denominator": 0.46324121216986996,
+  "turning_brackets": [
+    [
+      0.24999999999999997,
+      0.3
+    ]
+  ],
+  "stable_initial_counterexample": {
+    "t_E": 0.0,
+    "k_com": 0.5,
+    "a_E": 1.0,
+    "phi": 0.4,
+    "v": 0.13,
+    "H_E": 0.4767969334646576,
+    "rho_bare": 0.7,
+    "A": 1.0954880809663576,
+    "alpha": 0.256,
+    "Fforce": 0.42671146410917127,
+    "mu_fixed_bare": 0.5656135667466509,
+    "mu_minus_alpha_F": 0.45637543193470304,
+    "K_E": 0.5,
+    "chi": 0.000105,
+    "chi_dot": -2e-05,
+    "P_E": -1.6000000000000003e-05,
+    "U": 1.3333333333333335e-05,
+    "theta_physical": -3.3333333333333337e-06,
+    "delta_bare": -4.1331646327035655e-05,
+    "Psi_J": 1.0879999999999997e-05,
+    "Phi_J": -4.288e-05,
+    "slip": -1.6799999999999997,
+    "naive_static_fixed_bare_proxy": 0.07874474214079606,
+    "residuals": {
+      "friedmann": 1.1102230246251565e-16,
+      "hamiltonian": -1.6940658945086007e-21,
+      "eliminated": -1.122318655111948e-20,
+      "spatial_trace": -8.470329472543003e-22,
+      "matter_clock": -4.235164736271502e-21
+    }
+  }
+}

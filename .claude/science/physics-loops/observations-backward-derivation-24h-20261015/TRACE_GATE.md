@@ -4,7 +4,7 @@ target_blocker_text: "derive the remaining assumptions rather than supplying the
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: frontier_probe
-next_trace_action: "Derive physical clock/frame and coupled-response correspondences for the checked scalar-history inverse; preserve measurement and uncertainty imports."
+next_trace_action: "Derive or refute a joint metric-response inverse eliminating supplied coupling/curvature functions, with full physical mode and observation constraints."
 
 ## Neighborhood-evolution subcampaign
 
@@ -47,3 +47,7 @@ Next trace action: examine whether the equilibrium premise in known density-base
 ## Scalar-history compatibility — 2026-10-16T09:36:59.455687+00:00
 
 Trace remains upstream_support, reachability supports, with bounded_theorem / conditional-support in PR9638. Potential shape and minimum tracking are not inserted; exact compatible histories are tested rather than one being selected. The finite-versus-continuous classification does not retire the action, scale, measured-frame, curvature or uncertainty premises. Next action is the physical observation-to-input bridge, with no new observational data opened in this block.
+
+## Matter-clock and response bridge — 2026-10-16T10:13:06.736001+00:00
+
+Trace remains upstream_support with conditional reachability. The clock map and exact coupled response were personally derived and independently checked; action/scale and physical input registration remain open. The next candidate eliminates supplied b,kappa through multiple registered metric-potential histories. Its five-coefficient/rank proposal is not yet checked and must not be treated as a retained result. No observed force law or claim promotion.

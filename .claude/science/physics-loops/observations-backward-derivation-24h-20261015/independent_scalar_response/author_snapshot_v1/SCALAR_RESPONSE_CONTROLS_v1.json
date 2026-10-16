@@ -1,0 +1,253 @@
+{
+  "algebraic_examples": [
+    {
+      "K2": "1",
+      "S": "-776/105",
+      "identity_rhs": "6/5",
+      "naive_numerator_residual": "6/5",
+      "udd": "163/21"
+    },
+    {
+      "K2": "10",
+      "S": "-2666/105",
+      "identity_rhs": "-66/5",
+      "naive_numerator_residual": "-66/5",
+      "udd": "2327/105"
+    },
+    {
+      "K2": "100",
+      "S": "-21566/105",
+      "identity_rhs": "-786/5",
+      "naive_numerator_residual": "-786/5",
+      "udd": "17447/105"
+    }
+  ],
+  "author": "/root",
+  "checks": [
+    {
+      "name": "linear covariant Box from determinant and inverse metric",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "spatial scalar curvature perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "extrinsic Hamiltonian term",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "bare current conservation gives density and velocity equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "proper dust and scalar energy use force Vp+alpha r",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Hamiltonian ADM constraint equals displayed Fourier equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "full scalar equation follows from varied source at fixed bare rho",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "source elimination retains off-minimum force and metric derivatives",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "particle momentum gives theta friction 2H+alpha v",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "momentum constraint including scalar and dust velocity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter metric lapse potential",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter metric curvature potential",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Weyl sum unchanged",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "conditional slip ratio",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exact response identity follows without quasistatics",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "naive Yukawa residual accounting",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "uncoupled ratio zero does not require scalar zero",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter-time background force",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter-time denominator is not bare curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter-time source offset",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-minimum forward background effective denominator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "off-minimum forward background source offset",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "same forward background in matter clock denominator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "same forward background in matter clock source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=1 constraint",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=1 scalar equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=1 response identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "6/5",
+      "name": "controlled residual triangle bound K2=1",
+      "pass": true
+    },
+    {
+      "name": "algebraic source example K2=10 constraint",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=10 scalar equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=10 response identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "-66/5",
+      "name": "controlled residual triangle bound K2=10",
+      "pass": true
+    },
+    {
+      "name": "algebraic source example K2=100 constraint",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=100 scalar equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "algebraic source example K2=100 response identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "-786/5",
+      "name": "controlled residual triangle bound K2=100",
+      "pass": true
+    },
+    {
+      "evidence": "6",
+      "name": "detect mutation: omit alpha*r*u from total density",
+      "pass": true
+    },
+    {
+      "evidence": "-4",
+      "name": "detect mutation: omit lapse force term in KG",
+      "pass": true
+    },
+    {
+      "evidence": "10",
+      "name": "detect mutation: drop metric time source",
+      "pass": true
+    },
+    {
+      "evidence": "2",
+      "name": "detect mutation: identify effective denominator with mu",
+      "pass": true
+    },
+    {
+      "evidence": "9",
+      "name": "detect mutation: omit off-minimum numerator",
+      "pass": true
+    },
+    {
+      "evidence": "2",
+      "name": "detect mutation: omit mass-dependent Euler friction",
+      "pass": true
+    }
+  ],
+  "failed": 0,
+  "kind": "exact action/constraint mathematics and synthetic algebraic controls",
+  "limits": [
+    "Source elimination is necessary; not the full mode solution",
+    "No empirical measurement map completed",
+    "T not set to zero or observationally bounded",
+    "Clock/action/dust/linearization premises retained"
+  ],
+  "passed": 42,
+  "source_sha256": {
+    "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+    "SCALAR_RESPONSE_NEUTRAL_CONTRACT_v1.json": "b6ea2d55ae985026eca823d280b425be915f4d773d56d16bbb3030dab8891e4e",
+    "check_scalar_response_v1.py": "72acb13dba4ad125707e3b70ce37c93cc6ce3c05c1b4997ae268b0f10a4f8ed6"
+  },
+  "sympy": "1.14.0"
+}

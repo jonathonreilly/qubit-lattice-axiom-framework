@@ -1,0 +1,89 @@
+{
+  "author": "/root",
+  "checks": [
+    {
+      "name": "Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "bare dust scaling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "coupling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter expansion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter scalar speed",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter source",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "C zero throughout physical history",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "N zero throughout physical history",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "evidence": "392/(361*tau**2)",
+      "name": "positive R and nonzero x on T>0",
+      "pass": true
+    }
+  ],
+  "empirical_validation": false,
+  "exposure": "post-exposure; witness found by independent checker, personally rechecked here",
+  "failed": 0,
+  "passed": 15,
+  "source_sha256": {
+    "MATTER_CLOCK_DERIVATION_v2.md": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+    "check_matter_clock_witness_v1.py": "c4985ae853c21edc4ebba54f0996e4f7cbb79927d69a43bcfbd15255596cad96",
+    "independent_matter_clock/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": "9f4f510b51a938a486a8a0f81d6453be527935d47457660c95d89355a93b1493"
+  }
+}

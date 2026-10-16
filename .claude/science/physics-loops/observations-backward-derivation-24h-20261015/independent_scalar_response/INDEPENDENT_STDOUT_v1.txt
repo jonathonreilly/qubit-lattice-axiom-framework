@@ -1,0 +1,14 @@
+{
+  "passed": 27,
+  "failed": 0,
+  "max_residuals": {
+    "friedmann": 7.771561172376096e-16,
+    "hamiltonian": 3.788744491750595e-16,
+    "eliminated": 9.555209271386311e-17,
+    "trace": 1.3552527156068805e-20,
+    "matter_clock": 8.344290969991564e-17,
+    "slip_identity": 4.092726157978177e-11
+  },
+  "maximum_slip_naive_proxy_difference": 1261.2184059128504,
+  "failed_controls": []
+}

@@ -1,0 +1,90 @@
+{
+  "scope": "Post-author-exposure formula correspondence, conditional redshift kinematics, and independent singular witness; no external literature or empirical test",
+  "checks": [
+    {
+      "name": "author C is minus twice independent Delta",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "author N is twice independent numerator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "author entire Q is minus eight times independent P",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "author primary leading coefficient agrees with independent result",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection of author C",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection of author N",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reflection of entire filter",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "author receipt simple polynomial agrees with formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent positive witness lies on author C zero",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent witness also has author N zero",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent witness retains positive author density",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent witness obeys author undivided scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent witness obeys author filter",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "conditional FLRW matter-clock redshift drift",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical density over F equals author R",
+      "pass": true,
+      "residual": "0"
+    }
+  ],
+  "summary": {
+    "passed": 15,
+    "failed": 0
+  },
+  "source_note_sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+  "author_code_imported": false,
+  "software": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  }
+}

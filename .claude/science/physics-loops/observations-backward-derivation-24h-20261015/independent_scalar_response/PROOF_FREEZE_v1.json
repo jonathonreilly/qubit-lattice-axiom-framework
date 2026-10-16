@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-10-16T09:57:26.199958+00:00",
+  "contract_sha256": "b6ea2d55ae985026eca823d280b425be915f4d773d56d16bbb3030dab8891e4e",
+  "proof_sha256": "15ab2fdfd02bd1230c78001c4c4256a288a1bc21d58841dd9afc150f568c5581",
+  "author_response_note_code_read": false,
+  "author_matter_clock_note_code_read": false,
+  "normalization": "M^2 R/2 explicitly supplied in independent proof; neutral contract uses M without writing action coefficient"
+}

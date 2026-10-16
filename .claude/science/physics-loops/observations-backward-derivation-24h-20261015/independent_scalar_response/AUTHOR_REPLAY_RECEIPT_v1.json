@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "elapsed_seconds": 0.5066339997574687,
+  "timeout_seconds": 120,
+  "source_sha256": "72acb13dba4ad125707e3b70ce37c93cc6ce3c05c1b4997ae268b0f10a4f8ed6",
+  "passed": 42,
+  "failed": 0,
+  "stdout_sha256": "fa2abf2b924dfd2749eea3354e05d9fa89a8738788bc7e6fa8b9a96f545bc0a8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "author_result_bytes_equal": true,
+  "author_result_json_equal": true,
+  "source_files_unchanged": true
+}

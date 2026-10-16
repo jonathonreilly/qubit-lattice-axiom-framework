@@ -1,0 +1,137 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock/comparison_attempt01_author_copy/check_matter_clock_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_matter_clock/comparison_attempt01_author_copy",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T10:04:53.677043+00:00",
+  "end_utc": "2026-10-16T10:05:01.021033+00:00",
+  "wall_seconds": 7.3429949576966465,
+  "child_user_seconds": 7.2864770000000005,
+  "child_system_seconds": 0.044102999999999996,
+  "child_peak_rss_platform_units": 108871680,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 7731,
+  "stdout_sha256": "7316e39c832227c048bbcdf586026e26551f75ad621e6c40f2f7c8ba1cda08c4",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_parse_error": null,
+  "summary": {
+    "passed": 55,
+    "failed": 0
+  },
+  "source_binding_before": {
+    "MATTER_CLOCK_NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "056306f0688a08ffb4592eaffa32b1726e2b467da85bd40eb651877e62f71cfe",
+      "bytes": 1766
+    },
+    "MATTER_CLOCK_DERIVATION_v1.md": {
+      "sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+      "bytes": 10346
+    },
+    "check_matter_clock_v1.py": {
+      "sha256": "081198c3548fefdb796b804a620ec1532b5a51215ad12a7b62079fe7c681436e",
+      "bytes": 9326
+    },
+    "MATTER_CLOCK_CONTROLS_v1.json": {
+      "sha256": "7316e39c832227c048bbcdf586026e26551f75ad621e6c40f2f7c8ba1cda08c4",
+      "bytes": 7731
+    },
+    "MATTER_CLOCK_RUN_v1.json": {
+      "sha256": "39a9d625b021792b1a7552edcf8e7782e6915b13f517ca5b2db2ad137b168bd9",
+      "bytes": 273
+    },
+    "MATTER_CLOCK_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "MATTER_CLOCK_AUTHOR_FREEZE_v1.json": {
+      "sha256": "011158d9344305a8059a41e889f79f6d90ce7052d7eed3901974d649d4f0e52f",
+      "bytes": 782
+    }
+  },
+  "source_binding_after": {
+    "MATTER_CLOCK_NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "056306f0688a08ffb4592eaffa32b1726e2b467da85bd40eb651877e62f71cfe",
+      "bytes": 1766
+    },
+    "MATTER_CLOCK_DERIVATION_v1.md": {
+      "sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+      "bytes": 10346
+    },
+    "check_matter_clock_v1.py": {
+      "sha256": "081198c3548fefdb796b804a620ec1532b5a51215ad12a7b62079fe7c681436e",
+      "bytes": 9326
+    },
+    "MATTER_CLOCK_CONTROLS_v1.json": {
+      "sha256": "7316e39c832227c048bbcdf586026e26551f75ad621e6c40f2f7c8ba1cda08c4",
+      "bytes": 7731
+    },
+    "MATTER_CLOCK_RUN_v1.json": {
+      "sha256": "39a9d625b021792b1a7552edcf8e7782e6915b13f517ca5b2db2ad137b168bd9",
+      "bytes": 273
+    },
+    "MATTER_CLOCK_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "MATTER_CLOCK_AUTHOR_FREEZE_v1.json": {
+      "sha256": "011158d9344305a8059a41e889f79f6d90ce7052d7eed3901974d649d4f0e52f",
+      "bytes": 782
+    }
+  },
+  "source_inputs_unchanged": true,
+  "bundle_binding_before": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "b99e2457c9386156bb55432580696a8bf62cecdc013793dc68c8cf5a072e1a96",
+      "bytes": 33655
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "4669d9e48254fb345c99998442256642735076e98b033e3b9317ea22cd7d4ba7",
+      "bytes": 1807
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "484aff4aaaf4a99399b4b2e1868590d04297dd3a43dce5a970a9a9572fa0c4b3",
+      "bytes": 20050
+    },
+    "compare_author_formulas_v1.py": {
+      "sha256": "7792247b2a239d3d0cb71e7e1a88563c48346d32b583793c13cee4b3d497f713",
+      "bytes": 3991
+    },
+    "run_author_comparison_v1.py": {
+      "sha256": "afa8269e1fc98fd826668a6d45524752b50f089b29ef111497b90ea9d86dd766",
+      "bytes": 5171
+    }
+  },
+  "bundle_binding_after": {
+    "AUTHOR_SOURCE_SNAPSHOT_v1.json": {
+      "sha256": "b99e2457c9386156bb55432580696a8bf62cecdc013793dc68c8cf5a072e1a96",
+      "bytes": 33655
+    },
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "4669d9e48254fb345c99998442256642735076e98b033e3b9317ea22cd7d4ba7",
+      "bytes": 1807
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "484aff4aaaf4a99399b4b2e1868590d04297dd3a43dce5a970a9a9572fa0c4b3",
+      "bytes": 20050
+    },
+    "compare_author_formulas_v1.py": {
+      "sha256": "7792247b2a239d3d0cb71e7e1a88563c48346d32b583793c13cee4b3d497f713",
+      "bytes": 3991
+    },
+    "run_author_comparison_v1.py": {
+      "sha256": "afa8269e1fc98fd826668a6d45524752b50f089b29ef111497b90ea9d86dd766",
+      "bytes": 5171
+    }
+  },
+  "bundle_inputs_unchanged": true,
+  "author_output_byte_identical": true,
+  "author_copies_unchanged": true,
+  "author_script_executed_in_place": false
+}

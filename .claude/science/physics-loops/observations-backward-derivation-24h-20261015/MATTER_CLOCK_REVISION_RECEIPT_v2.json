@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-16T10:05:24.121187+00:00",
+  "old_source": "MATTER_CLOCK_DERIVATION_v1.md",
+  "old_sha256": "8612b734b5b0adad1b37963438a344bc2b975514cb854a885d688ea6124764e1",
+  "new_source": "MATTER_CLOCK_DERIVATION_v2.md",
+  "new_sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+  "changes": [
+    "Explicitly count x histories, excluding continuous A0 normalization freedom",
+    "Append independently found valid C=N=0 witness with attribution"
+  ],
+  "equations_changed": false,
+  "primary_v1_source_and_results_preserved": true,
+  "witness_exposure": "Root read independent frozen proof and code before this addition"
+}

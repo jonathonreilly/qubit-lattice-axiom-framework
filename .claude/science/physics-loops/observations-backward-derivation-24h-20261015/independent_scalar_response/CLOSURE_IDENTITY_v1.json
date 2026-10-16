@@ -1,0 +1,47 @@
+{
+  "created_at_utc": "2026-10-16T10:10:08.259795+00:00",
+  "scope": "Post-exposure final closure supplement, no empirical validation or audit",
+  "independent_preexposure_controls": 27,
+  "author_preexposure_controls": 42,
+  "postexposure_correspondence_controls": 7,
+  "author_postexposure_closure_controls": 14,
+  "failed": 0,
+  "files": {
+    "RESPONSE_REVIEW_v1.md": {
+      "sha256": "fbaa4c946b57cd8785068615c22ade9fe50449f22a59e6171ce54ca56dcd901a",
+      "bytes": 6803
+    },
+    "SOURCE_MANIFEST_v1.json": {
+      "sha256": "8127255f0e6c9a748b3d96fe4889394eed4c49f7543ecd09ab82d0f12fa2edce",
+      "bytes": 6626
+    },
+    "CLOSURE_COMPARISON_v1.md": {
+      "sha256": "906b40b94a92a1dacb1094ba84318bebdc7ad4ba0a8244eb7fb77e47f02a7eec",
+      "bytes": 2951
+    },
+    "CLOSURE_REPLAY_RECEIPT_v1.json": {
+      "sha256": "d79bd1d833477781fa7a8c629a933e577212338955e77eb147ae93fcbb229b17",
+      "bytes": 851
+    },
+    "CLOSURE_REPLAY_STDOUT_v1.json": {
+      "sha256": "ba5bf0c77e0f4e588bb0d6173e1f0ce2cc819d6f180a713106366021440c84ca",
+      "bytes": 2611
+    },
+    "CLOSURE_REPLAY_STDERR_v1.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "author_closure_snapshot_v1/SCALAR_RESPONSE_CLOSURE_CONTROLS_v1.json": {
+      "sha256": "ba5bf0c77e0f4e588bb0d6173e1f0ce2cc819d6f180a713106366021440c84ca",
+      "bytes": 2611
+    },
+    "author_closure_snapshot_v1/SCALAR_RESPONSE_CLOSURE_v1.md": {
+      "sha256": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+      "bytes": 3578
+    },
+    "author_closure_snapshot_v1/check_scalar_response_closure_v1.py": {
+      "sha256": "129d7573f02e172c6e9407e11429c21b317a8d3f4dd55b3527df4970b92df28f",
+      "bytes": 4493
+    }
+  }
+}

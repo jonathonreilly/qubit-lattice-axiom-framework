@@ -238,6 +238,15 @@ solution space for the constant flavor matrix C, containing a unitary to
 flavor gauge. That all two-qubit O-covariant cell walks have this form is
 supported by these seven samples and is not proved.
 
+**Local universality (numerical).** At each of the seven hits the Jacobian of
+the unitarity equations on the 56-dimensional real covariant family has
+nullity 9. At the explicit member the Clifford family's own tangent directions
+(two along the det G = 0 surface, and the flavor gauge orbit, which has
+dimension 7 and already contains the internal SO(3) rotations of (f, h1, h2))
+span exactly 9 dimensions, all in that null space. So near every sampled walk
+the solution variety coincides with the Clifford family; a separate component
+that no search reached is not excluded.
+
 ## Independent check
 
 A fresh agent context, given a neutral statement of the claims and no access

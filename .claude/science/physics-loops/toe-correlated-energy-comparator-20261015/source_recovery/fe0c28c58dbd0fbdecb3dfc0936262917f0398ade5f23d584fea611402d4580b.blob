@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate",
+  "source_sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a",
+  "source_bytes": 4664,
+  "source_at_launch": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.source_at_launch.py",
+  "started_at": "2026-10-16T00:14:13.509466+00:00",
+  "finished_at": "2026-10-16T00:14:18.235187+00:00",
+  "elapsed_seconds": 4.725605916231871,
+  "exit_code": 0,
+  "stdout_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stdout.json",
+  "stderr_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stderr.txt",
+  "stdout_sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

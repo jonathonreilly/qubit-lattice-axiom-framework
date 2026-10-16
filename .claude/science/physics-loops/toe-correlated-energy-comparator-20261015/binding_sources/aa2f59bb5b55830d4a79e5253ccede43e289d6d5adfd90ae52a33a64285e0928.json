@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T01:03:08.484268+00:00",
+  "baseRefName": "physics-loop/toe-bounded-slew-compiler-20261015",
+  "headRefName": "physics-loop/toe-restricted-spin-source-20261015",
+  "headRefOid": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "isDraft": false,
+  "number": 9629,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9629",
+  "tree": "5765c5701edfc1ccf9eb941b5366b0accb5351d7",
+  "base_head": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RESTRICTED_STATIC_FERROMAGNETIC_SPIN_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 85165,
+    "sha256": "ed8bb424c2d856aa162f9f5f2d4ab2eda051118422504dcc6a68c88dd81162fe"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/restricted_static_ferromagnetic_spin_source_2026_10_15.py",
+    "bytes": 38570,
+    "sha256": "bde4de1f51bca7983280f3b02b0d06e59f13ec3e65223ce6e2ce97bc76003c05"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/restricted_spin_source/PR_BODY.md",
+    "bytes": 3828,
+    "sha256": "71040b75f94af18b9e407ed749d41360acef9c9ef4253569d4aa7a776df68b00"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "actual_correlated_energy_comparator_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "actual_git_base": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+  "actual_branch_at_binding": "physics-loop/toe-restricted-spin-source-20261015",
+  "bound_note_sha256": "6cd949125fa75a780039a66ddc43129f2ff1c8990b6999bfe113415311bcbb47",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/02f27eb84a6f45bc7c7d0f4e13c26da0fb9c8a7e6c246ec976da68adf5ae169e.blob",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/0477441716582a22a5ab76a517610fecda6b545e005ad7f3cdfebf75ee9c43cf.py",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/12817c7b77114788460ae71c987eeaee8f47dc08b32d40c7eb1c599defb8521a.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/46b22703af34c8ac721ee2ee1890571a1a2c6124960f5ca14f0b5cf556122170.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/48c1acf07b9b1c2a50e67dfa56902e7526d9e2fa079dc15cc281c0db6ab9d82f.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/4b77d68351eb84071ea10a3d609caf4f4f9b212b5d68ff2b5e9c4fbe68b5abf8.py",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/4e0bb14a5a730be018fd083699b7fac7017582ce2caf870ccc6a79cb6ae5e0e8.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/5af054d5e6b47d155f8c5d83884fab2e6f3741302696542deac14d396e279926.blob",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/615f9d7e6551b9d74f0db29549d39d38aece0b7fb196d4ad4484cdd6a2c974a0.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/7ad79a528b186d70364642619eead22d2d667973e7d36033fd40e6da948dce05.blob",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/81b55fa25f392bca9e2d64a4aea2221309490553acaee1a507eb104304c5fd7d.blob",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/bf65f5763bcff09f0d8c2980dbef8a64d533658fd8878b74830283a6fe15b8fb.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/c722ca3f97343bd6fc3c2b24637f553b854cdc92c8ca372c4e31f595c78e56e4.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/cf5dec3968299eef910b0ea1697361e2ca40f9ae46d1cfd2843d40cd866d3eaa.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/d49d3e8bc11b60a28e2ea8c390ee4dc958d9b972bbe0c097337a149e6db9cba2.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/d611cff48c82310504c9f9f69556c731ef0df69befd135d761ee3c542bf06522.json",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/e503206b6da20bdf90a9346a5e5ff3b83134d1edc57646025eaaa67f1bdb3cc3.py"
+  ],
+  "canonical_parent_sha256": {
+    "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+    "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+  },
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-correlated-energy-comparator-20261015/binding_sources/c722ca3f97343bd6fc3c2b24637f553b854cdc92c8ca372c4e31f595c78e56e4.json",
+    "bytes": 21799,
+    "sha256": "c722ca3f97343bd6fc3c2b24637f553b854cdc92c8ca372c4e31f595c78e56e4"
+  }
+}

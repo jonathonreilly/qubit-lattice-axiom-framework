@@ -1,0 +1,29 @@
+{
+  "note": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "root_runtime_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 16846,
+      "end_byte_exclusive": 24261,
+      "bytes": 7415,
+      "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+    },
+    {
+      "name": "extended_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 24424,
+      "end_byte_exclusive": 51624,
+      "bytes": 27200,
+      "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+    },
+    {
+      "name": "exposed_comparison_body",
+      "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 51797,
+      "end_byte_exclusive": 69312,
+      "bytes": 17515,
+      "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+    }
+  ]
+}

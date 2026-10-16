@@ -1,0 +1,59 @@
+{
+  "kind": "initial independent correlated-energy source manifest",
+  "verified_utc": "2026-10-16T00:35:57.289292+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "head_observed_read_only": "9ca474a32b3a4799d2d14cfee7580d77750422b4",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "expected_sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "observed_sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "bytes": 115781,
+      "snapshot": "source_snapshots/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "complete_model_read_line_ranges": [
+        [
+          1,
+          353
+        ],
+        [
+          364,
+          584
+        ],
+        [
+          652,
+          949
+        ],
+        [
+          1139,
+          1237
+        ]
+      ],
+      "full_model_read": false
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "expected_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "observed_sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "bytes": 69312,
+      "snapshot": "source_snapshots/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "complete_model_read_line_ranges": [
+        [
+          150,
+          212
+        ],
+        [
+          223,
+          385
+        ],
+        [
+          470,
+          524
+        ]
+      ],
+      "full_model_read": false
+    }
+  ],
+  "scientific_execution": false,
+  "forbidden_candidate_exposure_before_freeze": false,
+  "notes": "Full byte copies are provenance preservation, not claims of full model read; see SOURCE_EXPOSURE.md."
+}

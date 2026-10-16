@@ -1,0 +1,3 @@
+# Recovery scope
+
+The note stores all three complete scientific bodies once, byte-for-byte. Selected original freezes, manifests/exposure, source acceptance/qualifications, author fixture/capture/receipt/full streams, actual acceptance recorder/source/streams and exposed HEAD correction are hash-deduplicated. Canonical mediator/composition parents remain external exact pins; original snapshot aliases resolve to them without duplicating their entire assembled histories. Exact parent body maps, canonical bindings and used premise intervals remain bound. Omitted historical basis-clock/predecessor snapshots are recorded in their original manifests but not recursively promised as portable recovery. No unrelated candidate is imported.

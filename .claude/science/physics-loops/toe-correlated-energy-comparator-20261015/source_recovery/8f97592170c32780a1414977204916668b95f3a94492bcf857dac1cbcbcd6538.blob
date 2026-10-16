@@ -1,0 +1,9 @@
+# Current checkpoint
+
+Task: initial independent correlated-energy comparator derivation from the two exact dispatched parents. Output is confined to this directory. No new candidate/result science has been inspected. No other files or chats were mutated.
+
+The complete derivation is in `DERIVATION.md`. It constructs a finite order-15 unitary rotation and block-diagonal polynomial, retains slow and fast branches, has exact initial bare insertion and normalization, and derives explicit full-space generator/state/first-/second-moment bounds under both exact source penalty majorants at actual runtime and size. It records the slow-only failure, complete scalar and source outputs, expensive propagation, input precision, clock integer selection, and physical preparation/calibration limits.
+
+Source identities and exact inspected ranges are in `SOURCE_MANIFEST.json` and `SOURCE_EXPOSURE.md`. Full parent bytes are preserved under `source_snapshots/`. Initial scientific derivation is complete; no scientific executable was run. The packet is ready for a separate source-exposed comparison only after its hash freeze. Such a comparison must preserve these initial files.
+
+Open obligations: independent root review of the finite-order proof; any later candidate reconciliation; any implementation of the finite coefficient algebra; any efficient propagation/local realization/preparation/detector interpretation. These are not claimed as completed by this proof. No editable prompt file changed.

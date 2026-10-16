@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-16T01:14:32.315961+00:00",
+  "refs": {
+    "HEAD": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_energy_publication_binding/stdout",
+    "bytes": 22884,
+    "sha256": "81ef0857a36d084bf7a6dd25b49ad01af6c88dd61678ee77db4c84a7f1da35be"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/fetch_energy_publication_binding/EXECUTION.json",
+      "bytes": 1226,
+      "sha256": "821cfcff02db29906cd81c0e8821ccbdec9a1e54f970f934d57f42dad30a85e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/inventory_energy_publication_binding/EXECUTION.json",
+      "bytes": 1294,
+      "sha256": "c81b7ea79f1222580add42f8a646cd684c2a36511572ed704d6ccb46f0ea10b7"
+    }
+  ],
+  "open_count": 59,
+  "delta": {
+    "added": [
+      {
+        "baseRefName": "physics-loop/toe-bounded-slew-compiler-20261015",
+        "headRefName": "physics-loop/toe-restricted-spin-source-20261015",
+        "headRefOid": "7df015aee608443b47825d6d55f6cf2dbdb793a5",
+        "isDraft": false,
+        "number": 9629,
+        "title": "[physics-loop] restricted static spin source: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9629"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "scope": "Source and open-PR identity observation only; no scientific verification."
+}

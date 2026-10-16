@@ -1,0 +1,274 @@
+{
+  "kind": "exposed correlated-comparator reconciliation source manifest",
+  "hashes_verified_and_copies_created_utc": "2026-10-16T00:46:20.652781+00:00",
+  "exposed_comparison": true,
+  "scientific_execution_count": 0,
+  "model_override": false,
+  "protected_freeze_sha256": "24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779",
+  "protected_six_members_verified_unchanged": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 22831,
+      "sha256": "e23871d47ef5b3043a903c33deab317cf5a7c14bee86f06486baa699d14a3d93"
+    },
+    {
+      "path": "SOURCE_EXPOSURE.md",
+      "bytes": 5228,
+      "sha256": "50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2029,
+      "sha256": "2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1497,
+      "sha256": "8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538"
+    },
+    {
+      "path": "source_snapshots/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "source_snapshots/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    }
+  ],
+  "protected_freeze_sha256_sidecar_sha256": "f809c11fdd39918565116058039de37b83ece2f23316e8e4a2055c049fb38ea6",
+  "author_freeze_sha256": "9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27",
+  "author_twelve_members_verified_unchanged": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 3359,
+      "sha256": "664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 20070,
+      "sha256": "3189e031950d2613d1df69523260550f8d2da5c233a748dbf59144c525850c20"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 8438,
+      "sha256": "2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011"
+    },
+    {
+      "path": "check_rotation_coefficients.py",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "path": "check_rotation_coefficients.receipt.json",
+      "bytes": 1401,
+      "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b"
+    },
+    {
+      "path": "check_rotation_coefficients.source_at_launch.py",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "path": "check_rotation_coefficients.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "check_rotation_coefficients.stdout.json",
+      "bytes": 1653,
+      "sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0"
+    },
+    {
+      "path": "sources/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    },
+    {
+      "path": "sources/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 110611,
+      "sha256": "0c3f1b569d41b75fa1c23e815e55f8481af640a9b292469e056541f698702ed1"
+    },
+    {
+      "path": "sources/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "sources/predecessor_SOURCE_COVERAGE.json",
+      "bytes": 5155,
+      "sha256": "bc77be0ef8cab3aac6c123c67dec64f7a6d27275ed1595db8e36d43641221b01"
+    }
+  ],
+  "copied_exposed_sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/DERIVATION.md",
+      "snapshot": "candidate_snapshot/DERIVATION.md",
+      "bytes": 20070,
+      "sha256": "3189e031950d2613d1df69523260550f8d2da5c233a748dbf59144c525850c20"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/SOURCE_MANIFEST.json",
+      "snapshot": "candidate_snapshot/SOURCE_MANIFEST.json",
+      "bytes": 8438,
+      "sha256": "2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/FREEZE.json",
+      "snapshot": "candidate_snapshot/FREEZE.json",
+      "bytes": 2810,
+      "sha256": "9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/CHECKPOINT.md",
+      "snapshot": "candidate_snapshot/CHECKPOINT.md",
+      "bytes": 3359,
+      "sha256": "664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.py",
+      "snapshot": "candidate_snapshot/check_rotation_coefficients.py",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.source_at_launch.py",
+      "snapshot": "candidate_snapshot/check_rotation_coefficients.source_at_launch.py",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.receipt.json",
+      "snapshot": "candidate_snapshot/check_rotation_coefficients.receipt.json",
+      "bytes": 1401,
+      "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stdout.json",
+      "snapshot": "candidate_snapshot/check_rotation_coefficients.stdout.json",
+      "bytes": 1653,
+      "sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/check_rotation_coefficients.stderr.txt",
+      "snapshot": "candidate_snapshot/check_rotation_coefficients.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "unchanged_mathematical_parents": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "protected_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/source_snapshots/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "read_coverage_reused": [
+        [
+          1,
+          353
+        ],
+        [
+          364,
+          584
+        ],
+        [
+          652,
+          949
+        ],
+        [
+          1139,
+          1237
+        ]
+      ]
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "protected_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/source_snapshots/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "read_coverage_reused": [
+        [
+          150,
+          212
+        ],
+        [
+          223,
+          385
+        ],
+        [
+          470,
+          524
+        ]
+      ]
+    }
+  ],
+  "model_read_coverage": {
+    "author_DERIVATION.md": [
+      [
+        1,
+        240
+      ],
+      [
+        241,
+        328
+      ]
+    ],
+    "author_SOURCE_MANIFEST.json": "complete",
+    "author_FREEZE.json": "complete",
+    "author_CHECKPOINT.md": "complete",
+    "author_check_rotation_coefficients.source_at_launch.py": [
+      [
+        1,
+        148
+      ]
+    ],
+    "author_check_rotation_coefficients.py": "byte-identical to fully read source_at_launch; no duplicate text reread",
+    "author_check_rotation_coefficients.receipt.json": "complete",
+    "author_check_rotation_coefficients.stdout.json": [
+      [
+        1,
+        91
+      ]
+    ],
+    "author_check_rotation_coefficients.stderr.txt": "zero bytes",
+    "author_sources/BASIS_STATE_WAVEFORM_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-15.md": "hash verification only; not newly model-read",
+    "author_sources/predecessor_SOURCE_COVERAGE.json": "hash verification only; not newly model-read",
+    "author_parent_copies": "hash verification against protected identities; protected exact coverage reused",
+    "protected_original_files": "original freeze/source manifest reread; original derivation coverage reused and all six member hashes verified; originals unchanged"
+  },
+  "head_provenance": {
+    "historical_initial_observation": {
+      "kind": "retrospective transcription from original tool result",
+      "cmd": "git rev-parse HEAD",
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+      "output_chunk": "eb0261",
+      "exit_code": 0,
+      "wall_time_seconds": 7.041e-06,
+      "returned_combined_output": "9ca474a32b3a4799d2d14cfee7580d77750422b4\n",
+      "surrounding_clock_observations_utc": [
+        "2026-10-16 00:28:10 UTC",
+        "2026-10-16 00:30:01 UTC"
+      ],
+      "exact_process_timestamps_available": false,
+      "separate_streams_available": false
+    },
+    "new_exposed_observation": {
+      "kind": "fresh read-only observation during exposed comparison",
+      "cmd": "git rev-parse HEAD",
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+      "output_chunk": "8eff11",
+      "exit_code": 0,
+      "wall_time_seconds": 7.25e-06,
+      "returned_combined_output": "23a84c17353ea13dab449ca9a37800b5e4defcb4\n",
+      "surrounding_clock_observations_utc": [
+        "2026-10-16 00:39:50 UTC",
+        "2026-10-16 00:39:50 UTC"
+      ],
+      "exact_process_timestamps_available": false,
+      "separate_streams_available": false
+    },
+    "old_manifest_verified_utc_meaning": "The 00:35:57 timestamp records mathematical source hash verification/copying, not a new HEAD command.",
+    "old_freeze_head_field_meaning": "source_head_verified records the historical observation, not a 00:38:03 HEAD check; original overbroad field preserved and clarified in COMPARISON.md.",
+    "head_not_rechecked_by_this_bookkeeping_script": true
+  },
+  "scope": "Conditional mathematical reconciliation; no audit/retained or independent model-family status."
+}

@@ -1,0 +1,615 @@
+{
+  "frozen_utc": "2026-10-16T01:06:49.427998+00:00",
+  "scope": "Exact source-only draft, selected recovery, changed-code maps and actual metadata evidence",
+  "note": {
+    "path": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 87254,
+    "sha256": "11d649d8c853143d2c68d31813c20639a80ae2ba3df693fb6ff9a8a2f2df125f"
+  },
+  "immutable_bodies": 3,
+  "direct_mathematical_parents": 2,
+  "transitive_premise_files": 0,
+  "scientific_programs_run_this_draft": 0,
+  "historical_scientific_programs_replayed": 0,
+  "primary_execution": null,
+  "actual_binding": null,
+  "publication_action": null,
+  "editable_prompt_files_changed": [],
+  "files": [
+    {
+      "path": "BUILD_RESULT.json",
+      "bytes": 496,
+      "sha256": "237b2ec31075d3e7ab7e73e4fded1368f15369d40870a14d57a1228bd21b067b"
+    },
+    {
+      "path": "CHANGED_CODE.patch",
+      "bytes": 24191,
+      "sha256": "a9562334ac623ea274a2f7d3df162918a51ba360b3aec406d141a37d18a35505"
+    },
+    {
+      "path": "CHANGED_TEXT.patch",
+      "bytes": 61900,
+      "sha256": "b42c0f3cef9d100ccba451c1f75384f9c861b0b774bc95cff5e53c8f60b45b3a"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1843,
+      "sha256": "603372dfb9dba6e8430ef762134c9f27ebe6203312569151f27bc06cc57408be"
+    },
+    {
+      "path": "COMMANDS.md",
+      "bytes": 1793,
+      "sha256": "77d80a1223c37f0f7a6bca750a4e44259d3858b81f2b9c0196e514b320b37dc9"
+    },
+    {
+      "path": "COMMAND_LOG.jsonl",
+      "bytes": 4368,
+      "sha256": "9dc3eff095c1468d602a3aace1e7cc205d99dc3c0431bfd289126e88eb3e36db"
+    },
+    {
+      "path": "DELIVERY.json",
+      "bytes": 1148,
+      "sha256": "d60983a27ca0d3a7e431d5518b94a5405cf6db94a4515db6614425d9764df5a0"
+    },
+    {
+      "path": "EDIT_FAILURE.json",
+      "bytes": 689,
+      "sha256": "e38de51622da0689d96f7dd8f00ae11ba8fe95019bad4884aac58814dec1a9bd"
+    },
+    {
+      "path": "FINAL_REVIEW_METADATA_OPERATION.json",
+      "bytes": 1138,
+      "sha256": "30cd9a8d1fd5228fc70978372a15bbfde5de113a1d215a160e1e86414eb36a21"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 1832,
+      "sha256": "429489b93ace52a75bc0efe96e7cd85b41d4b6b22a20d2ed468acb8706e948ca"
+    },
+    {
+      "path": "IMPLEMENTATION_BASIS.json",
+      "bytes": 2470,
+      "sha256": "3cbe4f8a47a5887796862c2d2a5c31bd616b6ac65eee28613c8fb4f9e4037f3d"
+    },
+    {
+      "path": "INITIAL_BINDING.json",
+      "bytes": 325,
+      "sha256": "0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb"
+    },
+    {
+      "path": "NEW_METADATA_CODE_MAP.json",
+      "bytes": 3811,
+      "sha256": "7ac7aaa7c7857644dd8c44e0d4b2101781af03cd17d8c934d1418cc16aa0d173"
+    },
+    {
+      "path": "PARENT_BINDING.json",
+      "bytes": 8802,
+      "sha256": "087534d44026519e14b268f3f03f3d9c7e6293635c65a3fd41f15b5374606100"
+    },
+    {
+      "path": "PAYLOAD_INDEX.json",
+      "bytes": 13303,
+      "sha256": "6a6c16cb68e70d649784df69881a6d50f79773bb92eec6863c0c85c379337afa"
+    },
+    {
+      "path": "READ_COVERAGE.md",
+      "bytes": 4105,
+      "sha256": "b56d869237f05684ec45c1fc17da7ecebff9677991056f2241ef879d79fee8ed"
+    },
+    {
+      "path": "REUSE_MAP.json",
+      "bytes": 38088,
+      "sha256": "2944f8d52a163f5c40c1822cf596d4a450c4d1c7342a20e6abf5fc01e8cffedd"
+    },
+    {
+      "path": "REVIEW_SURFACE.json",
+      "bytes": 10154,
+      "sha256": "ce0936bceafeebcbac0f655fff862f5fb0c8bb70a7b26c82c415798ccdbdfbf9"
+    },
+    {
+      "path": "ROOT_READ_GUIDE.md",
+      "bytes": 4878,
+      "sha256": "ddf442c328f436dd7aa27c1b64d298a30ab5df5991c22f000187e6dc4a456ad3"
+    },
+    {
+      "path": "SCAFFOLD_OPERATION.json",
+      "bytes": 486,
+      "sha256": "08a46eea1773dc1119dced869d2e4bf41b84c18db2bb1d7f60894b443be887b4"
+    },
+    {
+      "path": "SCRIPT_MAP.json",
+      "bytes": 1241,
+      "sha256": "710c774a46a28136781e93f98cedc9c9775e74f662c5f9fff5baa82cfe1f69bd"
+    },
+    {
+      "path": "SEAL_OPERATION.json",
+      "bytes": 987,
+      "sha256": "76b480a286368f51e123cf646061c7fd19e6a95f3a63c5e12b452cee59be01c8"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "bytes": 14516,
+      "sha256": "c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d"
+    },
+    {
+      "path": "SOURCE_FRESHNESS.json",
+      "bytes": 14885,
+      "sha256": "aab5fd055fa6abc24a7508af4df167d3e24e9ca0fd522626b66cce5fdf7a21f7"
+    },
+    {
+      "path": "START.json",
+      "bytes": 2554,
+      "sha256": "2997a95cf9ad0bc13bc0b67151e306eb59cb9a16119aabdfafe659827e914097"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 2197,
+      "sha256": "58853f9d0752db6cc33722d66d576a363dead8ac33660a90d3943b8e89b617a8"
+    },
+    {
+      "path": "build_proposal.py",
+      "bytes": 12314,
+      "sha256": "f7e4e003d0408615cdb02fe56347a554080d1a399db6cc575c34d0319585007e"
+    },
+    {
+      "path": "finalize_review_metadata.py",
+      "bytes": 3449,
+      "sha256": "307184eabb3e56869f0261820b9884402a2c8801fa8540e17da8817c33175a66"
+    },
+    {
+      "path": "inspect_proposal.py",
+      "bytes": 13808,
+      "sha256": "2ffefe3672c2306c8e8787dd118ef163b2898b264cbb0fe61462e1ca1469db11"
+    },
+    {
+      "path": "metadata_inputs/02b4c964e21819792b2880918e2e32814089005e9012723244c01d4d9081b09d.blob",
+      "bytes": 694,
+      "sha256": "02b4c964e21819792b2880918e2e32814089005e9012723244c01d4d9081b09d"
+    },
+    {
+      "path": "metadata_inputs/0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb.blob",
+      "bytes": 325,
+      "sha256": "0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb"
+    },
+    {
+      "path": "metadata_inputs/087534d44026519e14b268f3f03f3d9c7e6293635c65a3fd41f15b5374606100.blob",
+      "bytes": 8802,
+      "sha256": "087534d44026519e14b268f3f03f3d9c7e6293635c65a3fd41f15b5374606100"
+    },
+    {
+      "path": "metadata_inputs/0a26acd27aa719df6a5e0a6cbe03a73aef949541b50e9d32e18525903d74a84b.blob",
+      "bytes": 687,
+      "sha256": "0a26acd27aa719df6a5e0a6cbe03a73aef949541b50e9d32e18525903d74a84b"
+    },
+    {
+      "path": "metadata_inputs/15a9b5145373a719cc5f166c70f61b71533807e2248b6c19283ba6c9d13d978d.blob",
+      "bytes": 3940,
+      "sha256": "15a9b5145373a719cc5f166c70f61b71533807e2248b6c19283ba6c9d13d978d"
+    },
+    {
+      "path": "metadata_inputs/21b5ad8ddbdc7efc25a4a3cd041fcffb0df5d9de0110449713f153eaeaf65800.blob",
+      "bytes": 825,
+      "sha256": "21b5ad8ddbdc7efc25a4a3cd041fcffb0df5d9de0110449713f153eaeaf65800"
+    },
+    {
+      "path": "metadata_inputs/3cbe4f8a47a5887796862c2d2a5c31bd616b6ac65eee28613c8fb4f9e4037f3d.blob",
+      "bytes": 2470,
+      "sha256": "3cbe4f8a47a5887796862c2d2a5c31bd616b6ac65eee28613c8fb4f9e4037f3d"
+    },
+    {
+      "path": "metadata_inputs/3d3a041d906f35a9abc7aef35a9923ad06fe99cec7ec916b3791f23115c0514b.blob",
+      "bytes": 921,
+      "sha256": "3d3a041d906f35a9abc7aef35a9923ad06fe99cec7ec916b3791f23115c0514b"
+    },
+    {
+      "path": "metadata_inputs/4a64e2b8fb7791129a3db4ad4c3cab22c1c30796c6f85d347ed2756152479a4d.blob",
+      "bytes": 14252,
+      "sha256": "4a64e2b8fb7791129a3db4ad4c3cab22c1c30796c6f85d347ed2756152479a4d"
+    },
+    {
+      "path": "metadata_inputs/6939565dea3b14b91e5290316e07409a47d5cee38dd4fcec00a2b7fbc066fdfd.blob",
+      "bytes": 21931,
+      "sha256": "6939565dea3b14b91e5290316e07409a47d5cee38dd4fcec00a2b7fbc066fdfd"
+    },
+    {
+      "path": "metadata_inputs/6dd759ca29b3e210e286be6b0accfc7784f254835dcdb21d201ef737f76c0467.blob",
+      "bytes": 720,
+      "sha256": "6dd759ca29b3e210e286be6b0accfc7784f254835dcdb21d201ef737f76c0467"
+    },
+    {
+      "path": "metadata_inputs/7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf.blob",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "metadata_inputs/87a5e6940d772d6ae6e058122da3bace99ace2fd007e76838a9ba72d97e5f610.blob",
+      "bytes": 762,
+      "sha256": "87a5e6940d772d6ae6e058122da3bace99ace2fd007e76838a9ba72d97e5f610"
+    },
+    {
+      "path": "metadata_inputs/a2c3cc959427e80282acc1f6c7ee3eb20230b57f82c49d66af4f807f2757b7a9.blob",
+      "bytes": 667,
+      "sha256": "a2c3cc959427e80282acc1f6c7ee3eb20230b57f82c49d66af4f807f2757b7a9"
+    },
+    {
+      "path": "metadata_inputs/a537d8a035afe62802a5cf1020228747104de7ca50feb38128149755b2b8aab0.blob",
+      "bytes": 739,
+      "sha256": "a537d8a035afe62802a5cf1020228747104de7ca50feb38128149755b2b8aab0"
+    },
+    {
+      "path": "metadata_inputs/c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d.blob",
+      "bytes": 14516,
+      "sha256": "c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d"
+    },
+    {
+      "path": "metadata_runs/build/EXECUTION.json",
+      "bytes": 2314,
+      "sha256": "7bbe26705f913c391100ae3b72a2cbea331c091c3cada8f36824163baf73e96c"
+    },
+    {
+      "path": "metadata_runs/build/LAUNCH.json",
+      "bytes": 11729,
+      "sha256": "f45ceeae0dadf47b61e77634a7f6ee1721d61e10b37f11a183758c3e6078db39"
+    },
+    {
+      "path": "metadata_runs/build/executed_source.py",
+      "bytes": 12314,
+      "sha256": "f7e4e003d0408615cdb02fe56347a554080d1a399db6cc575c34d0319585007e"
+    },
+    {
+      "path": "metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/build/stdout",
+      "bytes": 496,
+      "sha256": "237b2ec31075d3e7ab7e73e4fded1368f15369d40870a14d57a1228bd21b067b"
+    },
+    {
+      "path": "metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2342,
+      "sha256": "8d90d3a64cc424f32244c28affb620bbe83d219f3aa50032f95e84d2395ac0cb"
+    },
+    {
+      "path": "metadata_runs/inspection/LAUNCH.json",
+      "bytes": 11736,
+      "sha256": "e6cb5f46c1a945f30778dc24f0fe1698b5e90a31bdbb1d77f9f8e4eac1eaf72a"
+    },
+    {
+      "path": "metadata_runs/inspection/executed_source.py",
+      "bytes": 13808,
+      "sha256": "2ffefe3672c2306c8e8787dd118ef163b2898b264cbb0fe61462e1ca1469db11"
+    },
+    {
+      "path": "metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_runs/inspection/stdout",
+      "bytes": 2197,
+      "sha256": "58853f9d0752db6cc33722d66d576a363dead8ac33660a90d3943b8e89b617a8"
+    },
+    {
+      "path": "packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 762,
+      "sha256": "87a5e6940d772d6ae6e058122da3bace99ace2fd007e76838a9ba72d97e5f610"
+    },
+    {
+      "path": "packet_text/BINDING_CONTRACT.md",
+      "bytes": 3940,
+      "sha256": "15a9b5145373a719cc5f166c70f61b71533807e2248b6c19283ba6c9d13d978d"
+    },
+    {
+      "path": "packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 720,
+      "sha256": "6dd759ca29b3e210e286be6b0accfc7784f254835dcdb21d201ef737f76c0467"
+    },
+    {
+      "path": "packet_text/COUNTEREXAMPLES.md",
+      "bytes": 825,
+      "sha256": "21b5ad8ddbdc7efc25a4a3cd041fcffb0df5d9de0110449713f153eaeaf65800"
+    },
+    {
+      "path": "packet_text/HANDOFF.md",
+      "bytes": 687,
+      "sha256": "0a26acd27aa719df6a5e0a6cbe03a73aef949541b50e9d32e18525903d74a84b"
+    },
+    {
+      "path": "packet_text/PR_BODY.md",
+      "bytes": 921,
+      "sha256": "3d3a041d906f35a9abc7aef35a9923ad06fe99cec7ec916b3791f23115c0514b"
+    },
+    {
+      "path": "packet_text/RECOVERY_SCOPE.md",
+      "bytes": 739,
+      "sha256": "a537d8a035afe62802a5cf1020228747104de7ca50feb38128149755b2b8aab0"
+    },
+    {
+      "path": "packet_text/REVIEW_HISTORY.md",
+      "bytes": 667,
+      "sha256": "a2c3cc959427e80282acc1f6c7ee3eb20230b57f82c49d66af4f807f2757b7a9"
+    },
+    {
+      "path": "packet_text/TRACE_GATE.md",
+      "bytes": 694,
+      "sha256": "02b4c964e21819792b2880918e2e32814089005e9012723244c01d4d9081b09d"
+    },
+    {
+      "path": "prepare_scaffold.py",
+      "bytes": 17046,
+      "sha256": "437e0e054be9a155e57e20772f107e9ce591c19a69dc2ad51a76a80933eb2b80"
+    },
+    {
+      "path": "primary_template.py",
+      "bytes": 14252,
+      "sha256": "4a64e2b8fb7791129a3db4ad4c3cab22c1c30796c6f85d347ed2756152479a4d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ACTUAL_BINDING.json",
+      "bytes": 375,
+      "sha256": "f7a40fa0b7ca5426e1ba7e862dbf7f7ba9bee53136248d42301d698cb6f56a47"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ARCHIVE_INDEX.json",
+      "bytes": 15705,
+      "sha256": "b7a3442e9d62c633e70f202da5bcd2aced1f7a73073ab171e68ca8cc8fabb4c1"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 762,
+      "sha256": "87a5e6940d772d6ae6e058122da3bace99ace2fd007e76838a9ba72d97e5f610"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/BINDING_CONTRACT.md",
+      "bytes": 3940,
+      "sha256": "15a9b5145373a719cc5f166c70f61b71533807e2248b6c19283ba6c9d13d978d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/BODY_MAP.json",
+      "bytes": 1068,
+      "sha256": "cf5dec3968299eef910b0ea1697361e2ca40f9ae46d1cfd2843d40cd866d3eaa"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/CHECK_RECEIPTS.json",
+      "bytes": 8366,
+      "sha256": "50923cd291cfef8647ac2adf7496674a8e169959e2d837e15eb617329eb5fe2f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 720,
+      "sha256": "6dd759ca29b3e210e286be6b0accfc7784f254835dcdb21d201ef737f76c0467"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/COUNTEREXAMPLES.md",
+      "bytes": 825,
+      "sha256": "21b5ad8ddbdc7efc25a4a3cd041fcffb0df5d9de0110449713f153eaeaf65800"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/DEPENDENCIES.json",
+      "bytes": 8439,
+      "sha256": "6179c044533629808e1da7dde368b4e383203ab118f657e31bd9d9ff212535af"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/HANDOFF.md",
+      "bytes": 687,
+      "sha256": "0a26acd27aa719df6a5e0a6cbe03a73aef949541b50e9d32e18525903d74a84b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/INPUT_MANIFEST.json",
+      "bytes": 12544,
+      "sha256": "910d9735d28b7c3b8928424a0a1c423e556d5791c7968a51a290654926f02ffc"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PARENT_BINDING.json",
+      "bytes": 8802,
+      "sha256": "087534d44026519e14b268f3f03f3d9c7e6293635c65a3fd41f15b5374606100"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PR_BODY.md",
+      "bytes": 921,
+      "sha256": "3d3a041d906f35a9abc7aef35a9923ad06fe99cec7ec916b3791f23115c0514b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PR_TITLE.txt",
+      "bytes": 83,
+      "sha256": "b09e6d07b6d3cd719b5165712d81e4c7ad7c125003d283918a3190960b567312"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/PUBLICATION_STATE.json",
+      "bytes": 491,
+      "sha256": "98bdbeef104b00b4d05c323b72a1edecd4d2135326cf7c1d2b6ec6fbcf6bc340"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/RECOVERY_SCOPE.md",
+      "bytes": 739,
+      "sha256": "a537d8a035afe62802a5cf1020228747104de7ca50feb38128149755b2b8aab0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/RECOVERY_SELECTION.json",
+      "bytes": 14741,
+      "sha256": "91ec67bdf67700ac39dabc6b18920d3378e011d15abbb977208173ea61c8a2b3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/REVIEW_HISTORY.md",
+      "bytes": 667,
+      "sha256": "a2c3cc959427e80282acc1f6c7ee3eb20230b57f82c49d66af4f807f2757b7a9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/SOURCE_MANIFEST.json",
+      "bytes": 32479,
+      "sha256": "4045890f9e9ee59f3609dce1de4eb13aae1b87b8c304953425c4e969756d153c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/TRACE_GATE.md",
+      "bytes": 694,
+      "sha256": "02b4c964e21819792b2880918e2e32814089005e9012723244c01d4d9081b09d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb.blob",
+      "bytes": 325,
+      "sha256": "0620fd7bd19b9b9244392ed62282b7ddf07d26a4bd01135557c0c097b147bccb"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0.blob",
+      "bytes": 1653,
+      "sha256": "17539386deec97e1e5958db41aff028e8934f5bbe78767dcf962cce50013f5f0"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a.blob",
+      "bytes": 4664,
+      "sha256": "1821d2cf74cc6abd4d450557ee8125f3a4437484c5c90a339c9338d4e4c1867a"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779.blob",
+      "bytes": 1505,
+      "sha256": "24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011.blob",
+      "bytes": 8438,
+      "sha256": "2715772159342739437f0eac6f9f7f28af5dec0bbb9dd644fa414ea4cbbf5011"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/27602e43a43294f441e7739ea7c5e40f9f42ccb6e2c446c67546f26e455be313.blob",
+      "bytes": 1064,
+      "sha256": "27602e43a43294f441e7739ea7c5e40f9f42ccb6e2c446c67546f26e455be313"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549.blob",
+      "bytes": 2029,
+      "sha256": "2d760de74266e08b122d0cab7f611ca831af8a3364538c235eb2ce79ca31b549"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f.blob",
+      "bytes": 2610,
+      "sha256": "47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067.blob",
+      "bytes": 3809,
+      "sha256": "4e3d3af077b3dd5df8b11c6a7955f960c670a39a2aa16e52f6a409fb09e78067"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503.blob",
+      "bytes": 5228,
+      "sha256": "50348e1514d9f12a8edbd5fbbcc6a2fccad6559dd5b14ee0f1e11900b3c0c503"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c.blob",
+      "bytes": 2401,
+      "sha256": "509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9.blob",
+      "bytes": 545,
+      "sha256": "60f08894c45c110dbfda6013ab2425e660940bbcdec3d5302a3b3c5b5e5826b9"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/6348161ff21ce696cae626d7173ec26beae772a8cc45b26c08115adf4ab0924e.blob",
+      "bytes": 78,
+      "sha256": "6348161ff21ce696cae626d7173ec26beae772a8cc45b26c08115adf4ab0924e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59.blob",
+      "bytes": 3359,
+      "sha256": "664046ae8e1b5cd4cee92e7d8ac3c4a34767573399f99242a5c20cb731143d59"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3.blob",
+      "bytes": 11656,
+      "sha256": "66cf432a64e8158d8aa5c638563cb76976ef0530cad4276070d4d0d4be8c71c3"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c.blob",
+      "bytes": 1041,
+      "sha256": "6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/73d8a4bbdae41d4a770ca6243bc1208d279717d311b9a7275a0be1751e3bcd7e.blob",
+      "bytes": 700,
+      "sha256": "73d8a4bbdae41d4a770ca6243bc1208d279717d311b9a7275a0be1751e3bcd7e"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8690db6370059341f45e0af1c94de65d90800fc809008df85d6650bb43914ef5.blob",
+      "bytes": 4608,
+      "sha256": "8690db6370059341f45e0af1c94de65d90800fc809008df85d6650bb43914ef5"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b.blob",
+      "bytes": 4048,
+      "sha256": "8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538.blob",
+      "bytes": 1497,
+      "sha256": "8f97592170c32780a1414977204916668b95f3a94492bcf857dac1cbcbcd6538"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27.blob",
+      "bytes": 2810,
+      "sha256": "9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.blob",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d.blob",
+      "bytes": 14516,
+      "sha256": "c2aa29e6a4aa83a33a8aba561622a23a655f92596b4f6c52c39e04281c4ac05d"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2.blob",
+      "bytes": 1776,
+      "sha256": "d2df4ad0defa67c87db1c405b5140c6f2ce85d985648eadfb8bfb25b849decb2"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477.blob",
+      "bytes": 3286,
+      "sha256": "f2a89628467327048052ae762fcf51bf2cfa07b9b99102e03a24e8b518799477"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/f809c11fdd39918565116058039de37b83ece2f23316e8e4a2055c049fb38ea6.blob",
+      "bytes": 78,
+      "sha256": "f809c11fdd39918565116058039de37b83ece2f23316e8e4a2055c049fb38ea6"
+    },
+    {
+      "path": "proposal/.claude/science/physics-loops/toe-correlated-energy-comparator-20261015/source_recovery/fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b.blob",
+      "bytes": 1401,
+      "sha256": "fe0c28c58dbd0fbdecb3dfc0936262917f0398ade5f23d584fea611402d4580b"
+    },
+    {
+      "path": "proposal/docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 87254,
+      "sha256": "11d649d8c853143d2c68d31813c20639a80ae2ba3df693fb6ff9a8a2f2df125f"
+    },
+    {
+      "path": "proposal/scripts/correlated_energy_comparator_2026_10_15.py",
+      "bytes": 21547,
+      "sha256": "02a48bb865b74a94628f5b1cb54e6b3998e8b9a76ec9ec80efc5bcfb0bc5cf2b"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2880,
+      "sha256": "7edd0d79ff5c6ca559f12b7969240047bb453c885a43c786451f332fae53becf"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 5071,
+      "sha256": "7e169a8ca4f6b879731089b0bc983d4ce21f85569955555d5fbc96b3a1069f5b"
+    },
+    {
+      "path": "wrapper.md",
+      "bytes": 21931,
+      "sha256": "6939565dea3b14b91e5290316e07409a47d5cee38dd4fcec00a2b7fbc066fdfd"
+    }
+  ]
+}

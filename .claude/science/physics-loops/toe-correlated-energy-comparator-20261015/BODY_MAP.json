@@ -1,0 +1,29 @@
+{
+  "note": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "author_order14_body",
+      "container": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 22178,
+      "end_byte_exclusive": 42248,
+      "bytes": 20070,
+      "sha256": "3189e031950d2613d1df69523260550f8d2da5c233a748dbf59144c525850c20"
+    },
+    {
+      "name": "protected_order15_body",
+      "container": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 42420,
+      "end_byte_exclusive": 65251,
+      "bytes": 22831,
+      "sha256": "e23871d47ef5b3043a903c33deab317cf5a7c14bee86f06486baa699d14a3d93"
+    },
+    {
+      "name": "exposed_reconciliation_body",
+      "container": "docs/CORRELATED_ENERGY_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 65428,
+      "end_byte_exclusive": 87332,
+      "bytes": 21904,
+      "sha256": "6d87cc9d686b895a4f5802b810943d9df6ea1304b3087cb08fa84b13272ef34d"
+    }
+  ]
+}

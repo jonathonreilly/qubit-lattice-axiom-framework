@@ -1,0 +1,3 @@
+# Root integration handoff
+
+Review the complete new wrapper, unchanged bodies and controlling qualifications, then all changed source/receipt logic through ROOT_READ_GUIDE, REUSE_MAP and CHANGED_CODE. Preserve this directory after FINAL_FREEZE. Integrate separately, obtain actual local base and source-draft review evidence, explicitly review final canonical bytes and relocated BODY_MAP/SOURCE_MANIFEST intervals, and refresh declared inputs/literal pins. Keep both exact mathematical parent files and used intervals. Later canonical primary/cache, mutation, syntax, vocabulary, graph/pipeline, publication and retained-audit outcomes must come from actual authorized root operations.

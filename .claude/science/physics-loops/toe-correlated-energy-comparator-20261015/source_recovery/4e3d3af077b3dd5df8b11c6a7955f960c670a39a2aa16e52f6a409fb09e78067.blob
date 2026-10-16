@@ -1,0 +1,69 @@
+{
+  "accepted_at_utc": "2026-10-16T00:48:45.635891+00:00",
+  "status": "conditional-support; source acceptance only, no retained audit",
+  "scope": "Distinct order-14 polar/pinched and order-15 exponential/polynomial correlated comparison isometries, same nominal K, full output and absolute first/second moment convergence under their exact specified recipes.",
+  "author_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/DERIVATION.md",
+    "bytes": 20070,
+    "sha256": "3189e031950d2613d1df69523260550f8d2da5c233a748dbf59144c525850c20"
+  },
+  "independent_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/DERIVATION.md",
+    "bytes": 22831,
+    "sha256": "e23871d47ef5b3043a903c33deab317cf5a7c14bee86f06486baa699d14a3d93"
+  },
+  "exposed_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/exposed_comparison/COMPARISON.md",
+    "bytes": 21904,
+    "sha256": "6d87cc9d686b895a4f5802b810943d9df6ea1304b3087cb08fa84b13272ef34d"
+  },
+  "root_final_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 4048,
+    "sha256": "8ac73726ce226a725d66b9324f4d155f64781d3e8c95144db08a37164f9cba7b"
+  },
+  "verified_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_comparator_candidate/FREEZE.json",
+        "bytes": 2810,
+        "sha256": "9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27"
+      },
+      "members_verified": 12
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/FREEZE.json",
+        "bytes": 1505,
+        "sha256": "24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779"
+      },
+      "members_verified": 6
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/correlated_energy_independent_check/exposed_comparison/FREEZE.json",
+        "bytes": 2610,
+        "sha256": "47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f"
+      },
+      "members_verified": 11
+    }
+  ],
+  "mathematical_parents": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    }
+  ],
+  "independence": "Protected separate derivation before author exposure; subsequent comparison exposed; shared selected model, no model-family claim.",
+  "evidence_limits": "One author exact four-dimensional degree-14 coefficient fixture; no independent scientific execution or analytic remainder test by fixture.",
+  "source_identity_qualification": "Original protected HEAD field is historical; exposed comparison supplies actual observation provenance without rewriting originals.",
+  "scientific_programs_run_this_review": 0,
+  "publication": "not yet packaged",
+  "editable_prompt_files_changed": []
+}

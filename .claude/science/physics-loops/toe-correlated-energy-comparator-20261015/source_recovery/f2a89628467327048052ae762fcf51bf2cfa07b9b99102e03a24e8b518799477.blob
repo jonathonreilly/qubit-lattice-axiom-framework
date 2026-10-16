@@ -1,0 +1,42 @@
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent
+N=D.parent
+W=N.parent/'correlation_worktree'
+def pin(p):
+    b=p.read_bytes()
+    return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p):return json.loads(p.read_text())
+def write(p,x):
+    with p.open('x') as f:json.dump(x,f,indent=2);f.write('\n')
+specs=[('correlated_energy_comparator_candidate','9a4cfd3f79fd0501a2a7c28b24d6439021bde79366ffdca78947097dbea0bb27'),
+       ('correlated_energy_independent_check','24e6963abddbb227fe1f7a49c7cae1d8c4b2c3b7b446ca1463558dddbb9c5779'),
+       ('correlated_energy_independent_check/exposed_comparison','47f4a3525e784cd544caef0e18c43f7ed7b76bae25c51b3fbe662311064e379f')]
+verified=[]
+for name,sha in specs:
+    base=N/name;f=base/'FREEZE.json';assert pin(f)['sha256']==sha
+    data=read(f);rows=data.get('files',data.get('members'))
+    for r in rows:
+        got=pin(base/r['path']);assert all(got[k]==r[k] for k in ('bytes','sha256')),r['path']
+    verified.append({'freeze':pin(f),'members_verified':len(rows)})
+parents=[]
+for name,sha in [('POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md','d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f'),('AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md','baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007')]:
+    p=W/'docs'/name;assert pin(p)['sha256']==sha;parents.append(pin(p))
+out={'accepted_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+     'status':'conditional-support; source acceptance only, no retained audit',
+     'scope':'Distinct order-14 polar/pinched and order-15 exponential/polynomial correlated comparison isometries, same nominal K, full output and absolute first/second moment convergence under their exact specified recipes.',
+     'author_derivation':pin(N/'correlated_energy_comparator_candidate/DERIVATION.md'),
+     'independent_derivation':pin(N/'correlated_energy_independent_check/DERIVATION.md'),
+     'exposed_comparison':pin(N/'correlated_energy_independent_check/exposed_comparison/COMPARISON.md'),
+     'root_final_qualifications':pin(D/'FINAL_QUALIFICATIONS.md'),
+     'verified_freezes':verified,'mathematical_parents':parents,
+     'independence':'Protected separate derivation before author exposure; subsequent comparison exposed; shared selected model, no model-family claim.',
+     'evidence_limits':'One author exact four-dimensional degree-14 coefficient fixture; no independent scientific execution or analytic remainder test by fixture.',
+     'source_identity_qualification':'Original protected HEAD field is historical; exposed comparison supplies actual observation provenance without rewriting originals.',
+     'scientific_programs_run_this_review':0,'publication':'not yet packaged','editable_prompt_files_changed':[]}
+write(D/'QUALIFIED_ACCEPTANCE.json',out)
+write(D/'FREEZE.json',{'utc':out['accepted_at_utc'],'files':[pin(D/'QUALIFIED_ACCEPTANCE.json'),pin(D/'FINAL_QUALIFICATIONS.md')],'scope':'Root completed content review and metadata identity checks only.'})
+print(json.dumps({'acceptance':pin(D/'QUALIFIED_ACCEPTANCE.json'),'freeze':pin(D/'FREEZE.json'),'verified_members':[r['members_verified'] for r in verified]}))

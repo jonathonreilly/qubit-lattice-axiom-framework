@@ -1,0 +1,3 @@
+# Assumptions and imports
+
+Import the exact polynomial mediator and autonomous composition interfaces: complete nominal finite K, positive full auxiliary gap and inverse, physical samples/counterterms/reserves, ideal bare insertion, fixed augmented H_P bound h_*, actual nonempty runtime and selected R/I penalties. Every old/reference input and physical output remains. Extra analytic smallness is explicit for each variant. Arbitrary real data require additional computability assumptions; numerical evaluation must resolve growing B^2. Preparation, calibration, leakage, release and physical energy identification remain separate. Upstream clock/compiler history is parent-owned provenance, not a new standalone imported theorem or a Git-ancestry dependency.

@@ -1,0 +1,3 @@
+# Source review and exposure
+
+Root qualified source acceptance 4e3d3af0 follows complete author/protected/comparison and fixture review at the pinned parent interfaces. Protected proof e23871d4 was frozen before author exposure; comparison 6d87cc9d is exposed. The author knew the proposed two-branch route and earlier scoped diagnostic. All share the selected model; no model-family replication or retained audit is claimed. The original protected historical HEAD field remains unchanged with the comparison's separate observation bracket, later byte refresh and fresh observation. Packaging adds no scientific execution, protected derivation or wrapper acceptance.

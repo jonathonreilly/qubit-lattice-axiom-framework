@@ -1,0 +1,182 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 115781,
+      "sha256": "d0c250c80d25065d7b2667f22d83d53ef43419088fa7484f1c157a6408ac177f",
+      "claim_id": "polynomial_path_mediator_bounded_theorem_note_2026-10-15",
+      "role": "direct_mathematical_parent",
+      "accepted_body_intervals": [
+        {
+          "name": "root_mass_m3",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 30425,
+          "end_byte_exclusive": 48979,
+          "bytes": 18554,
+          "sha256": "45c211e6c44bb694cf01ac11e15ede8a85442b95baa125dd0b01519a031ee893"
+        },
+        {
+          "name": "independent_mass_m2",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 49121,
+          "end_byte_exclusive": 84178,
+          "bytes": 35057,
+          "sha256": "0620431acdfc9b0c9e36f4ec1364cf2eaff8891ba2697aeadee37501b1e493a7"
+        },
+        {
+          "name": "source_exposed_comparison",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 84326,
+          "end_byte_exclusive": 115781,
+          "bytes": 31455,
+          "sha256": "3cc7a9d32e0019edef91c1f699e396bf84dd31fbe0642d6a32170d14538b9067"
+        }
+      ],
+      "used_premise_intervals": [
+        {
+          "name": "used_lines_1_145",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 1,
+          "line_end": 145,
+          "start_byte_inclusive": 0,
+          "end_byte_exclusive": 10308,
+          "bytes": 10308,
+          "sha256": "18067bb3da3104539a50de407d227fea8196a0115d2588cfd6b49f81b8e5a5be"
+        },
+        {
+          "name": "used_lines_364_584",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 364,
+          "line_end": 584,
+          "start_byte_inclusive": 31460,
+          "end_byte_exclusive": 48986,
+          "bytes": 17526,
+          "sha256": "b9be606a0a1cd7ccbc24b3eeb19e67603e4d4fd9e589892022918c0eacd64610"
+        },
+        {
+          "name": "used_lines_589_949",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 589,
+          "line_end": 949,
+          "start_byte_inclusive": 49121,
+          "end_byte_exclusive": 75079,
+          "bytes": 25958,
+          "sha256": "4055f7d2ea73ff417a4cb2617a0f64cb7343a36948c751306ab3f2fa9ea1f63b"
+        },
+        {
+          "name": "used_lines_1139_1237",
+          "container": "docs/POLYNOMIAL_PATH_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 1139,
+          "line_end": 1237,
+          "start_byte_inclusive": 96591,
+          "end_byte_exclusive": 102916,
+          "bytes": 6325,
+          "sha256": "326533c70a7d2eae7138e0c8b3a6472a052bd6fa33834cd6a7c4691b2d8c0ae2"
+        }
+      ],
+      "use": "Full auxiliary gap/inverse, physical coefficient/counterterm/reserve definitions, both recipe bounds, nominal norm and bare moments; no preparation/release import.",
+      "body_map": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-polynomial-path-mediator-20261015/BODY_MAP.json",
+        "bytes": 1041,
+        "sha256": "6ab51e0b1d83545d0ed1ccc0def8be768fb8e0fadb090df24309d427ee134a3c"
+      },
+      "canonical_binding": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-polynomial-path-mediator-20261015/CANONICAL_BINDING.json",
+        "bytes": 2401,
+        "sha256": "509dbbd181927e0dc69108ecbc8cedf3ca9cf158880941f78db87a86f3d9702c"
+      },
+      "source_revision_supplied": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+      "revision_evidence_limit": "Root-supplied current source base and separately preserved historical observations; this drafting task ran no Git command."
+    },
+    {
+      "path": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007",
+      "claim_id": "autonomous_compiler_composition_bounded_theorem_note_2026-10-15",
+      "role": "direct_mathematical_parent",
+      "accepted_body_intervals": [
+        {
+          "name": "root_runtime_body",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 16846,
+          "end_byte_exclusive": 24261,
+          "bytes": 7415,
+          "sha256": "f077e6eb4e942362d5cbd9eb811d17e78272ade1ed236c8c79e9bf0568e41ad8"
+        },
+        {
+          "name": "extended_body",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 24424,
+          "end_byte_exclusive": 51624,
+          "bytes": 27200,
+          "sha256": "9e97240607ed4598526da7bb00e07bcb74b4be85ee4de79fa29081686f210aa7"
+        },
+        {
+          "name": "exposed_comparison_body",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 51797,
+          "end_byte_exclusive": 69312,
+          "bytes": 17515,
+          "sha256": "d43f8ee3e438afc591a1f542c7d6d97b572199d6fbc8547bb8948841a8f9e691"
+        }
+      ],
+      "used_premise_intervals": [
+        {
+          "name": "used_lines_1_139",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 1,
+          "line_end": 139,
+          "start_byte_inclusive": 0,
+          "end_byte_exclusive": 15918,
+          "bytes": 15918,
+          "sha256": "6dacae62f6c6c9d28564838b5fe7e7f90fcec99eb19824bef7bc49b5a7daf901"
+        },
+        {
+          "name": "used_lines_150_212",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 150,
+          "line_end": 212,
+          "start_byte_inclusive": 16846,
+          "end_byte_exclusive": 24268,
+          "bytes": 7422,
+          "sha256": "e65ce8bafd8b7ab52a38b15bfed2664d35ae864f9bccba547fd98b6d58cc1f5f"
+        },
+        {
+          "name": "used_lines_223_385",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 223,
+          "line_end": 385,
+          "start_byte_inclusive": 25689,
+          "end_byte_exclusive": 37295,
+          "bytes": 11606,
+          "sha256": "023ebdcf66b40103bed5b83547c1126d55032958bf00621458f7f76418be0410"
+        },
+        {
+          "name": "used_lines_470_524",
+          "container": "docs/AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "line_start": 470,
+          "line_end": 524,
+          "start_byte_inclusive": 44043,
+          "end_byte_exclusive": 51631,
+          "bytes": 7588,
+          "sha256": "3b0ce37a60a946dec0d9e286a5583a5834f259571ebec86839d8067fce574eb3"
+        }
+      ],
+      "use": "Augmented H_P and uniform h_*, fixed-data nonempty runtime, actual tau-dependent R/I penalties and scalar/moment qualification; no preparation/release theorem imported.",
+      "body_map": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/BODY_MAP.json",
+        "bytes": 1064,
+        "sha256": "27602e43a43294f441e7739ea7c5e40f9f42ccb6e2c446c67546f26e455be313"
+      },
+      "canonical_binding": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-autonomous-compiler-composition-20261015/CANONICAL_BINDING.json",
+        "bytes": 4608,
+        "sha256": "8690db6370059341f45e0af1c94de65d90800fc809008df85d6650bb43914ef5"
+      },
+      "source_revision_supplied": "23a84c17353ea13dab449ca9a37800b5e4defcb4",
+      "revision_evidence_limit": "Root-supplied current source base and separately preserved historical observations; this drafting task ran no Git command."
+    }
+  ],
+  "transitive_premises": [],
+  "git_ancestry_is_not_mathematical_dependency": true
+}

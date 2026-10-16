@@ -1,0 +1,3 @@
+# Claim status
+
+Claim type: bounded_theorem. Current surface: conditional-support. Source acceptance 4e3d3af0 and final qualifications 8ac73726 govern distinct order-14 polar/pinched and order-15 exponential/polynomial comparators. Both are exactly normalized, begin at the ideal bare insertion, and converge in complete state and absolute first/second moments of unchanged nominal K under their own exact recipe and smallness conditions. Both retain expensive high propagation. No minimal order, favorable complexity, native implementation, common hardware cap or measured-energy theorem is claimed. This new wrapper has not inherited source acceptance. Canonical review, publication and retained audit remain unbound.

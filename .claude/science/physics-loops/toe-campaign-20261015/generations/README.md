@@ -13,3 +13,11 @@
   dispersive walks, all massive at k = 0. `twisted_massless.py`/`.log`: with
   U(0) = 1 imposed, only degenerate solutions were found (zero quasienergy on
   the axes).
+- `faces_search.py`, `faces_repro.py`, `fast_E12_H.log`: the six-neighbour
+  cell coin E1/2 + H. The first search's best residual was 4.8e-9 (trial 14
+  of the seed-0 sequence), far below the frozen floor. Polishing is in
+  progress; see `faces_repro.log`.
+- `*.npy`: raw coefficient arrays A_n (stencil order of `coinrep.stencil('cube')`).
+  They are the twisted-pair hits, the massless-constrained twisted hit, a
+  flat-band nearest-site block hit and the moving block Dirac walk.
+  `coinrep.py` and `coinfast.py` are the search code the scripts import.

@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-15T08:53:52.148195+00:00",
+  "scope": "Canonical carrier/reference affected source delta only",
+  "disposition": "Declared P restored exactly; alias-pairing repair valid; one Ka grid-sensitivity discrepancy remains deliberately preserved",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    }
+  ],
+  "working_report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+    "bytes": 7529,
+    "sha256": "0f2c33fbd01bdfffadb5880f847c2f6dd5c2f860c0ccf4c83b64459d9bacc48d"
+  },
+  "working_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+    "bytes": 10383,
+    "sha256": "219039b8d01beb6b1d36cd59e5bc818700b553b628641548ba73de432976b179"
+  },
+  "phase_repair_receipt": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/PHASE_COEFFICIENT_REPAIR_v1.json",
+    "bytes": 584,
+    "sha256": "fd00c39bab9715694e33595318bf2f85304a89ddfc3e151f8e7b86c6d2a875c2"
+  },
+  "grid_diagnostic_protocol": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/GRID_SENSITIVITY_PROTOCOL_v1.json",
+    "bytes": 660,
+    "sha256": "8b9056bdc6d8478082f5a2b6f077f9453ec242d6654968474af6171081709eca"
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_carrier_estimator.py.diff",
+      "bytes": 3422,
+      "sha256": "866eb43a25328584247b972ddd96bff3b12d5ac560a54aacd88713b0bdece9cc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/canonical_sources_v1/cassini_receiver_reference.py.diff",
+      "bytes": 2827,
+      "sha256": "15d64c3b0af1e3cd288f96e8e24a945ce7d41d173447ce9bcd1ad7bfca369215"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_PHASE_AFFECTED_CHECK_v1.json",
+      "bytes": 534,
+      "sha256": "daaaf9850c9dab2b4f2b836de608f38a1e9553c7c0eb49f3061359cb2aec0555"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_CORRESPONDENCE_v1.md",
+      "bytes": 4662,
+      "sha256": "4f354dcf807298246abfffe825a9b02cbb84553f89ffce068ac3644f9b56ec5e"
+    }
+  ],
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_CORRESPONDENCE_v1.md",
+    "bytes": 4662,
+    "sha256": "4f354dcf807298246abfffe825a9b02cbb84553f89ffce068ac3644f9b56ec5e"
+  },
+  "new_phase_function_checks": 2400,
+  "unique_X_row_timing_terms": 1200,
+  "broad_suite_rerun": false,
+  "final_envelope_binding": "pending"
+}

@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-15T05:30:28.511217+00:00",
+  "role": "Previously exposed development data; not a held-out test or a physical noise calibration",
+  "target": "Derive an observable insensitive to unspecified integer cycle histories; identify which physical calibration assumptions survive. Inspect diagnostic flags without declaring them signed corrections or certified bounds.",
+  "prior_exposure": "All day169 ODF/ATDF rows and existing reconciliation already exposed. This turn read the existing slip histogram before setting this detailed reuse protocol. No prospective statistical significance or independent empirical claim.",
+  "inputs": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "tdf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.tdf",
+      "sha256": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+      "bytes": 46335744,
+      "filename": "c32easc2002_169_0000xmmmv0.tdf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    },
+    "tdf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+      "bytes": 90858,
+      "filename": "tdf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  },
+  "derived_inputs": {
+    "outputs/cassini_doppler_bridge/all_doppler_rows.jsonl": "6973b8b57b7ecb9fc4f3ea87efbfa1e15dfe4e12349f3ad6aadd054790597f77",
+    "outputs/cassini_doppler_bridge/reconciliation.json": "52300ef640fc9b3d643c8fce268c2b40318c1c1c6726e4c2de1c7d9734f8dbab",
+    "outputs/cassini_doppler_bridge/atdf_inventory.json": "269a1075f7f7f9a76ed45a5e113f649a268b4ef3afcc4a99dda3aaaa731c9d62"
+  },
+  "planned_outputs": [
+    "All-row modulo-M and modulo-one precursor/ODF consistency using exact rational native counts; no forward lift assumption",
+    "All diagnostic strata retained, including duplicate endpoint candidates and nonzero slips",
+    "Exact integer-contrast invariance, rational/noninteger counterexamples and conditional field-energy lower bound",
+    "Descriptive third endpoint differences on metadata-defined adjacent chains; no orbit fit or gravity inference"
+  ],
+  "criteria": [
+    "Never use item87 as a signed correction or physical upper bound without a matching primary source supplier.",
+    "Raw real resets, fractional slips, phase transients and electronic/media errors remain separate unknowns.",
+    "Storage quantization is not a physical accuracy bound.",
+    "A bounded count history may be eliminated only for a quotient observable; do not claim recovery of the full unwrapped phase.",
+    "No new raw product opened; RSR/PD/later observations remain reserved."
+  ],
+  "independent_empirical_tests": 0,
+  "fitted_parameters": 0
+}

@@ -1,0 +1,37 @@
+# M10 author correspondence and preserved discrepancy, v1
+
+The independent calculation agrees with all 1200 exact amplitude-cell certificates and the complete 600-interval count/reference extraction. Spectral numerical agreement is 1199/1200, not 1200/1200: Ka second49112 exposes a real sampled-grid/local-search sensitivity. A separate tiny exact-source discrepancy in the original NCO integration has been identified and repaired in canonical source. Original independent and author working results remain preserved.
+
+## Frozen original evidence and read scope
+
+The independent pre-exposure report is 30a841356bb3c8a11d80e1eaef84bdab31aa1ae7757a0de8f0788a8265692a46, identity85e3cecedf8929cd53a16370dbd02e8eb57f941da29bae90d015f16ee270361b. All original files bound there were checked unchanged before comparison. I then read both complete author working sources, both complete summaries, and every row of both working ledgers. AUTHOR_INPUTS_v1.json and author_sources_v1 retain their exact bytes. No author code was imported or run.
+
+The working carrier source is feadce5547ce028d1e0e6ce46ffe9c23b953ec6e945ec0db4d11696ff0fd3f83, its ledger24b736832bd77411c90c9346f6b750a965a2c35a0ae44ee0a115f1de9cdfc35a. Working reference source is3f2faf19cb2f91ab2f961b4265eff78a1d27cec4b835827b38b38f7936a63870 and its ledger4259947a3ea7af9f5ee4d5d771ad04aadd33624e611f0ca7e7ba486cfceb5c2f. This report addresses those historical working bytes; canonical adaptation is a separate supplement.
+
+## All-block spectral comparison and one retained failure
+
+My source uses a complete32768-bin FFT and analytic direct-correlation Newton refinement; the author uses a complete16000-bin FFT and bounded local optimization. The predeclared frequency tolerance remains2e-5Hz and relative power tolerance5e-10. Across the1199 agreeing rows, the maximum frequency difference is2.2993617676547728e-08Hz and maximum relative correlation-power difference1.3571314408330929e-15. Raw sample identities and all10800 selected NCO/header values agree. These comparisons do not prove global continuous optimization or physical carrier accuracy.
+
+At Ka49112, the author returns+0.9251746909516783Hz, residual308885791468.9637; the independent route returns-0.5322262786634724Hz, residual308532966242.0174. The1.4574009696151506Hz discrepancy exceeds the original tolerance. Relative peak-power disagreement is0.0016406427267260802. The first comparison stopped with an assertion; its source, stdout/stderr and execution are preserved. Comparison v2 leaves the thresholds unchanged and records mismatches instead of aborting, allowing all remaining rows and exact certificates to be checked. It is not a relaxed pass.
+
+A targeted post-exposure diagnosis evaluates both candidates and neighboring frequencies using independent scalar complex exponentials and math.fsum. Both are local maxima. The negative-frequency candidate improves squared residual by352825226.94628906. The16000-grid bins near it, -0.5625 and-0.5Hz, have lower sampled correlation than the +0.9375Hz bin, so the declared one-peak rule selects the other basin. A distinct131072-grid maximum lies at-0.5340576171875Hz. This supports the denser-grid candidate's lower residual without certifying an exact global optimum or identifying a true physical carrier. TARGETED_PEAK_CHECK_v1.json preserves every direct-correlation value. The X-only count comparison is unaffected by this Ka row. No row, threshold, grid rule or output was overridden after seeing the discrepancy.
+
+## Exact cells and complete reference/metadata correspondence
+
+For every one of1200 blocks, the exact integer energy, ceil-radius sum, residual-bound numerator, radius-interval endpoints and both rejection booleans are identical. The conditional proof and all1200 rejections therefore do not depend on which local spectral peak was selected. Ideal independent unsaturated component rectangles remain a supplied analog preimage; neither rejection is a physical-noise upper bound.
+
+All13200 ODF item values (22 per row) match my independent bit extraction. All31200 ATDF endpoint-field occurrences match (26 per endpoint use). Item79 was outside my original subset and was checked afterward directly from its documented raw byte181 for all601 unique endpoints; the primary label identifies it as exciter/uplink band. That supplemental extraction is explicitly post-exposure, not part of the pre-exposure calculation. All other common fields were already frozen independently. Every endpoint alternative is retained; this selection has one at each end. Exact stored reference, converted880/221 reference, both ODF and ATDF mean sky values, and their439/1e9Hz maximum difference agree. All conditional wrap counts are zero, matching my retained raw differences; no rollover was applied here.
+
+The54 nonzero-slip endpoint uses agree exactly:27 unique endpoints,39 affected intervals. None was clipped. All2400 X sign/timing error values differ from the independent outputs by at most1.9898720893252175e-8Hz, accounted for by numerical frequency-refinement differences. No offset, timing, sign or scale was fitted in the comparison; the three per-block single-tone parameters remain explicit candidate-estimator fits, not fundamental parameter inference.
+
+## Exact phase-coefficient mismatch in the working source
+
+The prospective comparison freeze declares P(1+delta)-P(delta), but working reference source integrates separately stored F1,F2,F3. For exact archived binary64 values, F1=P2 and F2=2P3 hold on these inputs, while F3=3P4 need not hold exactly. I retain all2400 band/shift differences. In X,794 of1200 band/shift terms differ (therefore1588 of2400 sign-expanded reference candidates); the maximum is4006003/7083549724304467820544000000 cycles, about5.65536e-22. Across both bands the maximum is2.2621443518663794e-21 cycles. These are not zero rationals, although they do not alter displayed comparison conclusions.
+
+Every exact difference between the original author's nominal RSR-minus-count reference and my independent nominal reference equals precisely this P-minus-F discrepancy. This isolates the cause instead of attributing it to a physical offset. Root preserved the original F implementation/results and changed the canonical function to the declared P expression. PHASE_COEFFICIENT_REPAIR_v1.json records that action; the separate canonical supplement checks it. No physical convention or fitted constant was changed.
+
+## Scope and disposition
+
+The original source correctly describes the single-tone fit and floating grid-covering bound as conditional numerical diagnostics. The exact amplitude certificates reject a quantization-only constant-amplitude candidate; they do not exclude an approximate carrier plus noise/variation. The pre-NSP count/reference branch, local fitted-slope identification, sample versus count interval, complex sign and timing suppliers remain conditional. Ka lacks a closed-loop reference here. The lower positive-sign X development RMS is not an independent calibration certificate.
+
+All substantive comparison artifacts, the strict first failure, mismatch list, targeted diagnosis and unchanged original results are bound in AUTHOR_CORRESPONDENCE_IDENTITY_v1.json. No raw spectral extraction or optimizer sweep was repeated after exposure; only the single discrepant row received targeted direct correlations and a denser diagnostic grid. This is a source/implementation check on exposed development data, not an independent empirical physics validation or formal audit.

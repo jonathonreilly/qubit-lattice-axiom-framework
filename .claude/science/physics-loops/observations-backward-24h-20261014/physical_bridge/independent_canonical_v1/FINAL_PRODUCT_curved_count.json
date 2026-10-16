@@ -1,0 +1,428 @@
+{
+  "status": "working mathematical controls; no empirical validation",
+  "checks": [
+    {
+      "name": "conformal_field_equation",
+      "passed": true
+    },
+    {
+      "name": "moving_clock_force_weight_transform",
+      "passed": true
+    },
+    {
+      "name": "physical_initial_energy_cross_term",
+      "passed": true
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_12.001",
+      "passed": true,
+      "eigenvalues": [
+        0.800005714005847,
+        1.4999642889938531
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_16.0",
+      "passed": true,
+      "eigenvalues": [
+        0.819205080417909,
+        1.3950806338678055
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_50.0",
+      "passed": true,
+      "eigenvalues": [
+        0.8835682616796059,
+        1.178931738320394
+      ]
+    },
+    {
+      "name": "physical_energy_eigenvalues_B_1000.0",
+      "passed": true,
+      "eigenvalues": [
+        0.9698128965914459,
+        1.0331931154326022
+      ]
+    },
+    {
+      "name": "energy_norm_random_controls",
+      "passed": true,
+      "sampled_cases": 80,
+      "range": [
+        0.8288223735838783,
+        1.4646921146170608
+      ]
+    },
+    {
+      "name": "exact_curved_contrast_endpoint_sum",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_initial_position",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_station_initial_velocity",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_spacecraft_initial_velocity",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_initial_clock",
+      "passed": true
+    },
+    {
+      "name": "exact_curved_contrast_comparison_constant",
+      "passed": true
+    },
+    {
+      "name": "curved_gram_flat_limit",
+      "passed": true,
+      "expression": "(646969*H**2 - 454020*H + 98700)/(16200*pi)",
+      "angular_cuts": [
+        "-1",
+        "-2/3",
+        "2/3",
+        "1"
+      ]
+    },
+    {
+      "name": "curved_gram_direct_piecewise_control",
+      "passed": true,
+      "comparisons": [
+        [
+          0.0,
+          1.9393324547123543,
+          1.939336316536156,
+          3.861823801631914e-06
+        ],
+        [
+          0.01,
+          1.8513943755533295,
+          1.8513980619503287,
+          3.6863969992140255e-06
+        ],
+        [
+          0.05,
+          1.5250663340720993,
+          1.5250693631037864,
+          3.0290316870296152e-06
+        ],
+        [
+          0.15,
+          0.8872161564531087,
+          0.8872178524647375,
+          1.6960116288045057e-06
+        ]
+      ],
+      "classification": "finite angular quadrature diagnostic, exact polynomial is proof supplier"
+    },
+    {
+      "name": "curved_original_ode_vs_derived_count",
+      "passed": true,
+      "maximum_error": 2.1519505332378858e-10
+    },
+    {
+      "name": "curved_initial_orbit_clock_cancellation",
+      "passed": true,
+      "maximum_error": 3.8284420997391375e-10
+    },
+    {
+      "name": "potential_mode_difference_enclosure",
+      "passed": true,
+      "maximum_ratio": 0.9954713017614398
+    },
+    {
+      "name": "proper_count_endpoint_conversion",
+      "passed": true,
+      "proper_intervals": [
+        1.10525357350099,
+        1.169924133632172,
+        1.242635622140122
+      ],
+      "count_coefficients": [
+        1.09420103776598,
+        -2.1409611645468747,
+        1.0438139225977026
+      ]
+    },
+    {
+      "name": "potential_integrated_difference_supplier",
+      "passed": true
+    },
+    {
+      "name": "potential_derivative_supplier",
+      "passed": true
+    },
+    {
+      "name": "conservative_actual_weight_moments",
+      "passed": true,
+      "rows": [
+        [
+          0.0001,
+          7.598288000000001,
+          4.739184318863035,
+          12.797055999999998
+        ],
+        [
+          0.03,
+          7.086399999999999,
+          4.415345521990022,
+          11.916799999999999
+        ],
+        [
+          0.12,
+          5.5456,
+          3.4777997805706042,
+          9.267199999999999
+        ],
+        [
+          0.2,
+          4.176,
+          2.7292736125819568,
+          6.911999999999998
+        ]
+      ],
+      "classification": "finite integration control; analytic step-function proof supplies uniform bounds"
+    },
+    {
+      "name": "bogoliubov_mode_amplitude_bound",
+      "passed": true,
+      "maximum_ratio": 0.9986378227329447
+    },
+    {
+      "name": "bogoliubov_first_derivative_bound",
+      "passed": true,
+      "maximum_ratio": 0.5281447839393687
+    },
+    {
+      "name": "bogoliubov_second_derivative_bound",
+      "passed": true,
+      "maximum_ratio": 0.49828986238384654
+    },
+    {
+      "name": "explicit_curved_enclosure_values",
+      "passed": true,
+      "rows": [
+        {
+          "H": 1e-05,
+          "B": 16.0,
+          "mu0": 3.7416573867739416e-05,
+          "HT": 4.4000000000000006e-05,
+          "massless_reference_norm": 1.3925671426149087,
+          "epsilon_mass": 0.0009818460358300383,
+          "epsilon_curvature": 1.1249597298078643e-05,
+          "relative_error_enclosure": 0.0007131402161789632,
+          "potential_constants": {
+            "S": 2.7105192628475663e-13,
+            "U0": 1.2320813167709944e-13,
+            "U1": 2.8003696325271864e-14,
+            "R": 1.0000000072441675,
+            "CF": 64.00032071030365
+          }
+        },
+        {
+          "H": 0.0001,
+          "B": 16.0,
+          "mu0": 0.00037416573867739413,
+          "HT": 0.00044000000000000007,
+          "massless_reference_norm": 1.3922788833077095,
+          "epsilon_mass": 0.009877566949851266,
+          "epsilon_curvature": 0.00035584638840529165,
+          "relative_error_enclosure": 0.007350117466368882,
+          "potential_constants": {
+            "S": 2.7115931009644254e-10,
+            "U0": 1.2328135972930367e-10,
+            "U1": 2.8036992548667275e-11,
+            "R": 1.0000007247040024,
+            "CF": 64.00327107298327
+          }
+        },
+        {
+          "H": 0.001,
+          "B": 16.0,
+          "mu0": 0.0037416573867739412,
+          "HT": 0.0044,
+          "massless_reference_norm": 1.3893970769935624,
+          "epsilon_mass": 0.1006607688961417,
+          "epsilon_curvature": 0.01128624262575026,
+          "relative_error_enclosure": 0.08057236723437461,
+          "potential_constants": {
+            "S": 2.722378465247087e-07,
+            "U0": 1.240179166799149e-07,
+            "U1": 2.8372876489915455e-08,
+            "R": 1.0000727612719307,
+            "CF": 64.03915051087147
+          }
+        },
+        {
+          "H": 0.01,
+          "B": 16.0,
+          "mu0": 0.03741657386773942,
+          "HT": 0.044000000000000004,
+          "massless_reference_norm": 1.3606595369721735,
+          "epsilon_mass": 1.0680154451132458,
+          "epsilon_curvature": 0.37040971830619895,
+          "relative_error_enclosure": 1.0571528911782886,
+          "potential_constants": {
+            "S": 0.0002835146443514645,
+            "U0": 0.00013183592724217019,
+            "U1": 3.20467767205475e-05,
+            "R": 1.0076060275806336,
+            "CF": 65.08483724853859
+          }
+        },
+        {
+          "H": 0.05,
+          "B": 16.0,
+          "mu0": 0.18708286933869708,
+          "HT": 0.22000000000000003,
+          "massless_reference_norm": 1.2349357611115241,
+          "epsilon_mass": 5.93795881372204,
+          "epsilon_curvature": 6.131700549508972,
+          "relative_error_enclosure": 9.773511905078784,
+          "potential_constants": {
+            "S": 0.04343589743589745,
+            "U0": 0.022527942143326755,
+            "U1": 0.007375377197862406,
+            "R": 1.261339987293458,
+            "CF": 97.0933375156409
+          }
+        }
+      ]
+    },
+    {
+      "name": "large_enclosure_is_not_small_error_certificate",
+      "passed": true
+    }
+  ],
+  "checks_passed": 28,
+  "exact_massless_curved_count_gram": "(646969*H**2 - 454020*H + 98700)/(16200*pi)",
+  "exact_gram_coefficients": [
+    "646969/(16200*pi)",
+    "-7567/(270*pi)",
+    "329/(54*pi)"
+  ],
+  "curved_count_numeric_gram": [
+    [
+      0.0,
+      1.9393324547123543,
+      1.939336316536156,
+      3.861823801631914e-06
+    ],
+    [
+      0.01,
+      1.8513943755533295,
+      1.8513980619503287,
+      3.6863969992140255e-06
+    ],
+    [
+      0.05,
+      1.5250663340720993,
+      1.5250693631037864,
+      3.0290316870296152e-06
+    ],
+    [
+      0.15,
+      0.8872161564531087,
+      0.8872178524647375,
+      1.6960116288045057e-06
+    ]
+  ],
+  "mode_comparison_maximum_ratio": 0.9954713017614398,
+  "analytic_error_enclosures": [
+    {
+      "H": 1e-05,
+      "B": 16.0,
+      "mu0": 3.7416573867739416e-05,
+      "HT": 4.4000000000000006e-05,
+      "massless_reference_norm": 1.3925671426149087,
+      "epsilon_mass": 0.0009818460358300383,
+      "epsilon_curvature": 1.1249597298078643e-05,
+      "relative_error_enclosure": 0.0007131402161789632,
+      "potential_constants": {
+        "S": 2.7105192628475663e-13,
+        "U0": 1.2320813167709944e-13,
+        "U1": 2.8003696325271864e-14,
+        "R": 1.0000000072441675,
+        "CF": 64.00032071030365
+      }
+    },
+    {
+      "H": 0.0001,
+      "B": 16.0,
+      "mu0": 0.00037416573867739413,
+      "HT": 0.00044000000000000007,
+      "massless_reference_norm": 1.3922788833077095,
+      "epsilon_mass": 0.009877566949851266,
+      "epsilon_curvature": 0.00035584638840529165,
+      "relative_error_enclosure": 0.007350117466368882,
+      "potential_constants": {
+        "S": 2.7115931009644254e-10,
+        "U0": 1.2328135972930367e-10,
+        "U1": 2.8036992548667275e-11,
+        "R": 1.0000007247040024,
+        "CF": 64.00327107298327
+      }
+    },
+    {
+      "H": 0.001,
+      "B": 16.0,
+      "mu0": 0.0037416573867739412,
+      "HT": 0.0044,
+      "massless_reference_norm": 1.3893970769935624,
+      "epsilon_mass": 0.1006607688961417,
+      "epsilon_curvature": 0.01128624262575026,
+      "relative_error_enclosure": 0.08057236723437461,
+      "potential_constants": {
+        "S": 2.722378465247087e-07,
+        "U0": 1.240179166799149e-07,
+        "U1": 2.8372876489915455e-08,
+        "R": 1.0000727612719307,
+        "CF": 64.03915051087147
+      }
+    },
+    {
+      "H": 0.01,
+      "B": 16.0,
+      "mu0": 0.03741657386773942,
+      "HT": 0.044000000000000004,
+      "massless_reference_norm": 1.3606595369721735,
+      "epsilon_mass": 1.0680154451132458,
+      "epsilon_curvature": 0.37040971830619895,
+      "relative_error_enclosure": 1.0571528911782886,
+      "potential_constants": {
+        "S": 0.0002835146443514645,
+        "U0": 0.00013183592724217019,
+        "U1": 3.20467767205475e-05,
+        "R": 1.0076060275806336,
+        "CF": 65.08483724853859
+      }
+    },
+    {
+      "H": 0.05,
+      "B": 16.0,
+      "mu0": 0.18708286933869708,
+      "HT": 0.22000000000000003,
+      "massless_reference_norm": 1.2349357611115241,
+      "epsilon_mass": 5.93795881372204,
+      "epsilon_curvature": 6.131700549508972,
+      "relative_error_enclosure": 9.773511905078784,
+      "potential_constants": {
+        "S": 0.04343589743589745,
+        "U0": 0.022527942143326755,
+        "U1": 0.007375377197862406,
+        "R": 1.261339987293458,
+        "CF": 97.0933375156409
+      }
+    }
+  ],
+  "limits": [
+    "Fixed vacuum/action and homogeneous linear scalar perturbation only.",
+    "No actual measured H,B,Q, residual, error or energy budget.",
+    "Finite mode/quadrature probes are diagnostics; the BV/energy proof supplies the infinite-dimensional bounds."
+  ]
+}

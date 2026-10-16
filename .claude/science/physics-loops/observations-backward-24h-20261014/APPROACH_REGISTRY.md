@@ -47,3 +47,17 @@ Attacked the initial-history assumption through observation-space duality rather
 ## Accelerated coherent counts and their energy operator
 
 The root author derived fixed-proper-time endpoint variations, augmented orbital/clock adjoints, ideal multileg phase composition and the joint massless energy Gram on prescribed accelerated paths. The field and force responses are summed at common arrival phase before squaring. Exact response columns allow cancellation of full initial body/clock perturbations and constant scalar offsets within the supplied model. An exact two-body count fixture gives the same rational Gram by time overlap and original harmonic endpoint responses. This removes the previously arbitrary measurement kernel in that regime. Actual reference dynamics, calibration, physical field energy and action/potential remain open suppliers.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 mass/curvature/count route: explicit operator-distance bounds replace an unsupported massless substitution. A separated-clock interference example rejects universal mass ordering, while a four-endpoint curved proper-count contrast derives the needed weights. Route is conditional upstream support; no broad no-go closure.
+
+## Joint phase/plasma lattice and receiver representation
+
+Root personally derived the simultaneous quotient using exact integer nullspaces and torus Fourier characters. Varying-carrier temporal compatibility supplies constructive rational multi-epoch cases. A real plasma projection cannot simply be reused with a unit phase period.
+
+The receiver route was checked using stored I/Q and conditional ADC preimages. The small 19/-5 character addresses a narrower downlink nuisance target. A deterministic two-sample example shows noncommutation with voltage averaging. NCO polynomial continuity failed as a timing discriminator: both documented phase arguments give tiny internal discontinuities. No physical convention was selected from that comparison.
+
+## M10: coherent waveform feasibility and receiver reference
+
+Projection geometry gives an exact feasible set for a supplied discrepancy ball; cell geometry rejects the quantization-only constant-modulus class on all1200 exposed blocks. Documentary reconstruction supplies a conditional receiver-reference relation, not a new physical law. Independent local-search disagreement on Ka49112 blocks a global-estimator claim. The physical discrepancy/time supplier is still blocked-equivalent to the measurement-identification obligation unless new independent calibration information constrains it. Candidate next families are redundant receiver dynamics, calibrated noise/state-space models with falsifiable innovations, or a cross-domain action/scale discriminator; none is presumed true.

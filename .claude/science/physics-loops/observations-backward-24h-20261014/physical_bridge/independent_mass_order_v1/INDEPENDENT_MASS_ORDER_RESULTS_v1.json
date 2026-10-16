@@ -1,0 +1,702 @@
+{
+  "created_at": "2026-10-15T04:50:35.434054+00:00",
+  "reviewer": "/root/localized_history_check",
+  "checks_passed": 120,
+  "checks": [
+    {
+      "name": "exact_spatial_distances",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "pointwise_spatial_weight_sum",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "points_noncollinear",
+      "passed": true
+    },
+    {
+      "name": "chosen_radial_frequency",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "massless_frequency_factor",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "massive_frequency_factor",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "fixed_frequency_mass_order_fails",
+      "passed": true,
+      "exact_gap": 0.2866724917270984
+    },
+    {
+      "name": "cosine_kernel_negative_direction",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cosine_distance_matrix_indefinite",
+      "passed": true
+    },
+    {
+      "name": "closed_scalar_factor_0_0",
+      "passed": true,
+      "error": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_0_0",
+      "passed": true,
+      "error": 4.440892098500626e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_0_0",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_low_0_1",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_0_1",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_1_0",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_1_0",
+      "passed": true,
+      "error": 3.9968028886505635e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_1_0",
+      "passed": true,
+      "error": 3.1086244689504383e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_1_1",
+      "passed": true,
+      "error": 9.367506770274758e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_1_1",
+      "passed": true,
+      "error": 3.469446951953614e-18,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_1_1",
+      "passed": true,
+      "error": 5.898059818321144e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_2_0",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_2_0",
+      "passed": true,
+      "error": 4.440892098500626e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_2_0",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_2_1",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_2_1",
+      "passed": true,
+      "error": 5.329070518200751e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_2_1",
+      "passed": true,
+      "error": 6.217248937900877e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_3_0",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_3_0",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_3_0",
+      "passed": true,
+      "error": 3.552713678800501e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_3_1",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_3_1",
+      "passed": true,
+      "error": 4.440892098500626e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_3_1",
+      "passed": true,
+      "error": 3.552713678800501e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_4_0",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_4_0",
+      "passed": true,
+      "error": 1.7763568394002505e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_4_0",
+      "passed": true,
+      "error": 3.552713678800501e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_4_1",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_4_1",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_4_1",
+      "passed": true,
+      "error": 4.440892098500626e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_5_0",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_5_0",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_5_0",
+      "passed": true,
+      "error": 2.6645352591003757e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "closed_scalar_factor_5_1",
+      "passed": true,
+      "error": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "angular_sinc_low_5_1",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "angular_sinc_high_5_1",
+      "passed": true,
+      "error": 3.552713678800501e-15,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "analytic_band_ranges",
+      "passed": true
+    },
+    {
+      "name": "analytic_band_cosine_signs",
+      "passed": true
+    },
+    {
+      "name": "analytic_center_bounds",
+      "passed": true
+    },
+    {
+      "name": "analytic_band_lower_bound",
+      "passed": true,
+      "derived_lower": 0.1405082267676291
+    },
+    {
+      "name": "band_grid_consistency_only",
+      "passed": true,
+      "minimum_sampled_gap": 0.2620894951752639
+    },
+    {
+      "name": "collinear_order_0_0",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "collinear_cosine_Gram_0_0",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_0_1",
+      "passed": true,
+      "min_eigenvalue": 1.4721849751155438e-08
+    },
+    {
+      "name": "collinear_cosine_Gram_0_1",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_0_2",
+      "passed": true,
+      "min_eigenvalue": 9.674139276039909e-06
+    },
+    {
+      "name": "collinear_cosine_Gram_0_2",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_0_3",
+      "passed": true,
+      "min_eigenvalue": 8.662072686417134e-05
+    },
+    {
+      "name": "collinear_cosine_Gram_0_3",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_0_4",
+      "passed": true,
+      "min_eigenvalue": 0.0001269685596814273
+    },
+    {
+      "name": "collinear_cosine_Gram_0_4",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_1_0",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "collinear_cosine_Gram_1_0",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_1_1",
+      "passed": true,
+      "min_eigenvalue": 6.384796911007492e-08
+    },
+    {
+      "name": "collinear_cosine_Gram_1_1",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_1_2",
+      "passed": true,
+      "min_eigenvalue": 0.00019156708943801504
+    },
+    {
+      "name": "collinear_cosine_Gram_1_2",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_1_3",
+      "passed": true,
+      "min_eigenvalue": 0.06888840528296557
+    },
+    {
+      "name": "collinear_cosine_Gram_1_3",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_1_4",
+      "passed": true,
+      "min_eigenvalue": 0.18389340192933717
+    },
+    {
+      "name": "collinear_cosine_Gram_1_4",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_2_0",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "collinear_cosine_Gram_2_0",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_2_1",
+      "passed": true,
+      "min_eigenvalue": 2.2181804069194882e-06
+    },
+    {
+      "name": "collinear_cosine_Gram_2_1",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_2_2",
+      "passed": true,
+      "min_eigenvalue": 0.0010696538413027458
+    },
+    {
+      "name": "collinear_cosine_Gram_2_2",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_2_3",
+      "passed": true,
+      "min_eigenvalue": 0.24063590844632718
+    },
+    {
+      "name": "collinear_cosine_Gram_2_3",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_2_4",
+      "passed": true,
+      "min_eigenvalue": 0.7072520290005279
+    },
+    {
+      "name": "collinear_cosine_Gram_2_4",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_3_0",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "collinear_cosine_Gram_3_0",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_3_1",
+      "passed": true,
+      "min_eigenvalue": 2.8655146148284775e-05
+    },
+    {
+      "name": "collinear_cosine_Gram_3_1",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_3_2",
+      "passed": true,
+      "min_eigenvalue": 0.024437753927282726
+    },
+    {
+      "name": "collinear_cosine_Gram_3_2",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_3_3",
+      "passed": true,
+      "min_eigenvalue": 0.139544624864422
+    },
+    {
+      "name": "collinear_cosine_Gram_3_3",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_3_4",
+      "passed": true,
+      "min_eigenvalue": 0.7573656941034782
+    },
+    {
+      "name": "collinear_cosine_Gram_3_4",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_4_0",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "collinear_cosine_Gram_4_0",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_4_1",
+      "passed": true,
+      "min_eigenvalue": 7.908226699755476e-06
+    },
+    {
+      "name": "collinear_cosine_Gram_4_1",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_4_2",
+      "passed": true,
+      "min_eigenvalue": 0.12037755152199967
+    },
+    {
+      "name": "collinear_cosine_Gram_4_2",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_4_3",
+      "passed": true,
+      "min_eigenvalue": 0.40129828981164645
+    },
+    {
+      "name": "collinear_cosine_Gram_4_3",
+      "passed": true
+    },
+    {
+      "name": "collinear_order_4_4",
+      "passed": true,
+      "min_eigenvalue": 0.8890607554597512
+    },
+    {
+      "name": "collinear_cosine_Gram_4_4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_core_and_support",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "exact_summed_time_weights",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "independent_temporal_rules",
+      "passed": true,
+      "error": 2.913225216616411e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "compact_transform_vs_analytic_gaussian_with_tiny_cutoff",
+      "passed": true,
+      "error": 1.0658141036401503e-13,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "real_even_temporal_transform",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 3e-10
+    },
+    {
+      "name": "spectral_resolution_0.0",
+      "passed": true,
+      "error": 2.5579538487363607e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "direct_compact_transform_integral_0.0",
+      "passed": true,
+      "error": 5.684341886080802e-14,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "spectral_resolution_2.5110915135822642",
+      "passed": true,
+      "error": 2.6290081223123707e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "direct_compact_transform_integral_2.5110915135822642",
+      "passed": true,
+      "error": 7.105427357601002e-14,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "integrated_counterexample",
+      "passed": true,
+      "massless": 33.851821532785884,
+      "massive": 35.46813498682403,
+      "gap": 1.6163134540381492
+    },
+    {
+      "name": "gaussian_band_tail_bound",
+      "passed": true,
+      "exact_upper": 3.083451580056004e-08,
+      "elementary_upper": 3.1745586679666396e-08
+    },
+    {
+      "name": "compact_tail_L2_bound",
+      "passed": true,
+      "bound": 2.8317935046085528e-14
+    },
+    {
+      "name": "compact_quadratic_perturbation_bound",
+      "passed": true,
+      "bound": 1.7173711102759095e-12
+    },
+    {
+      "name": "analytic_strict_compact_counterexample",
+      "passed": true,
+      "strict_lower_bound": 0.7334435464894115
+    },
+    {
+      "name": "massless_spatial_phase_substitution_fails",
+      "passed": true,
+      "wrong": 5.5,
+      "correct": 6.286672491727099
+    },
+    {
+      "name": "real_Riesz_conjugate_symmetry_0.0",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "Riesz_energy_equals_observation_0.0",
+      "passed": true,
+      "error": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "independent_radial_energy_norm_0.0",
+      "passed": true,
+      "error": 1.5631940186722204e-13,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "real_Riesz_conjugate_symmetry_2.5110915135822642",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-13
+    },
+    {
+      "name": "Riesz_energy_equals_observation_2.5110915135822642",
+      "passed": true,
+      "error": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "independent_radial_energy_norm_2.5110915135822642",
+      "passed": true,
+      "error": 5.684341886080802e-14,
+      "tolerance": 3e-09
+    }
+  ],
+  "points": [
+    [
+      -0.75,
+      0.0,
+      0.0
+    ],
+    [
+      0.75,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.6614378277661477,
+      0.0
+    ]
+  ],
+  "spatial_weights": [
+    1.0,
+    1.0,
+    -2.0
+  ],
+  "omega0": 6.283185307179586,
+  "mass": 2.5110915135822642,
+  "packet_scale": 40.0,
+  "packet_core_radius": 320.0,
+  "packet_support_radius": 360.0,
+  "frequency_factors": {
+    "massless": 6.0,
+    "massive": 6.286672491727098,
+    "gap": 0.2866724917270984
+  },
+  "finite_spectral_values": {
+    "0.0": 33.851821532785884,
+    "2.5110915135822642": 35.46813498682403
+  },
+  "finite_spectral_gap": 1.6163134540381492,
+  "finite_spectral_ratio": 1.0477467202901543,
+  "analytic_bounds": {
+    "gaussian_band_tail": 3.083451580056004e-08,
+    "elementary_band_tail": 3.1745586679666396e-08,
+    "gaussian_gap_lower": 0.7334435464911289,
+    "compact_L2_difference": 2.8317935046085528e-14,
+    "compact_quadratic_error": 1.7173711102759095e-12,
+    "strict_compact_gap_lower": 0.7334435464894115
+  },
+  "field_controls": [
+    {
+      "mass": 0.0,
+      "finite_band_norm_squared": 33.8518215327861,
+      "finite_band_observation": 33.85182153278612
+    },
+    {
+      "mass": 2.5110915135822642,
+      "finite_band_norm_squared": 35.46813498682416,
+      "finite_band_observation": 35.46813498682416
+    }
+  ],
+  "source_sha256": "3d60a7a1a45fba1aefe5b532e880d2d6bf43c3c464e27fea03bda32bba09012b",
+  "precheck_sha256": "30518157177387a7d90d3c218a638ae78aa30fb8cfbab310f663d34076c3fb51",
+  "author_sources_read": false,
+  "other_reviewers_read": false,
+  "empirical_tests": 0,
+  "elapsed_seconds": 0.1254421672783792,
+  "scope": "General pure-clock fixed noncollinear-point KG functional only. Counterexample uses identical physical smooth compact temporal weights across masses and exact pointwise zero summed weights. No conclusion about a specific coherent count/force fixture."
+}

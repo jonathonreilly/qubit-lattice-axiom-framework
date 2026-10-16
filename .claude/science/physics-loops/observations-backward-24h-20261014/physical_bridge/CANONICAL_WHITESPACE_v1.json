@@ -1,0 +1,17 @@
+{
+  "changes": [
+    {
+      "path": "docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "before_sha256": "a8a1c3b16992722fcaa95b6b3dd11a42dc8b624b1c3298fbc93e1896cde0c8d9",
+      "after_sha256": "7ee8fa3338620e56be6e03b421c260d414abfa9b3d9307cee0a4fb09148ee82d",
+      "preserved": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md.BEFORE_WHITESPACE_v1"
+    },
+    {
+      "path": "scripts/scalar_mass_curvature_count_check.py",
+      "before_sha256": "5ef7ce8911bddc98ac5a39f8957639ec8a8daa0334e9e408a533793a8a330a1e",
+      "after_sha256": "76e6defceabfee840a63df313cba4e2948f325f6f697c86f23d801a89129afe1",
+      "preserved": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/scalar_mass_curvature_count_check.py.BEFORE_WHITESPACE_v1"
+    }
+  ],
+  "reason": "Own new-source final newline cleanup before freeze; no formulas changed."
+}

@@ -26,3 +26,35 @@ Fifth unit published: [PR#9586](https://github.com/jonathonreilly/qubit-lattice-
 ## Accelerated coherent-count milestone preparation
 
 One coherent sixth unit is prepared on codex/observations-backward-accelerated-20261015, based on frozen ff4a63b6f0407d40ab925ac4bc83011546886217 / codex/observations-backward-energy-20261015. Its value/cluster decision is OPEN for the derived proper-count/adjoint/coherent observation operator and accelerated massless energy Gram, including an exact composition fixture. Final delivery checking and mechanical source binding precede its regular stacked PR. Earlier five PRs remain frozen; no main merge or push.
+
+Sixth unit published: [PR#9589](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9589), regular/open,96paths, frozen head`c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee`, stacked on#9586 and attached. Complete focused science/delivery review and mechanical source/cache checks are complete for this exact tree. No integrated landing or formal audit is claimed. Continue new work on codex/observations-backward-physical-20261015; keep all six publication branches frozen.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 preparing on codex/observations-backward-physical-20261015, stacked on frozen PR9589 branchcodex/observations-backward-accelerated-20261015. No M7 PR yet; prior six milestone heads remain frozen.
+
+M7 published 2026-10-15T05:24:44.213149+00:00: PR#9591 regular/open,99paths,head`917e147109e58c5bf8b5d4a9d546077d20cfe41c`,frozen and attached. Continuation branch`codex/observations-backward-calibration-20261015`; source scope conditional-support, no merge or audit.
+
+Integer-history quotient: coherent source milestone ready for final envelope binding and publication on codex/observations-backward-calibration-20261015, stacked on frozen physical branch917e1471. Proposed typebounded_theorem, statusconditional-support. No merged or audit-ratified result is claimed.
+
+Integer-history quotient published 2026-10-15T06:21:15.381287+00:00: PR#9592, regular/open,44 paths, frozen head`f2fdc425b4a18341c95a076e58fec2d56ebc3cfa`, attached. Continuation`codex/observations-backward-channels-20261015`; conditional-support/bounded_theorem.
+
+## Joint channel calibration — working milestone
+
+Branch codex/observations-backward-channels-20261015 starts from frozen M8 head f2fdc425. There is no new PR yet: the joint-character and receiver-representation block awaits the final independent raw comparison and coherent source/evidence packaging. The existing eight PRs remain frozen and attached.
+
+The scientific scope is conditional mathematics plus exposed receiver development, with no physical gravity residual or scalar parameter fit. No merge, main push or formal audit occurred.
+
+The ninth milestone is the self-contained integer-channel calibration and receiver representation unit on codex/observations-backward-channels-20261015, stacked on the frozen M8 branch. Complete scientific checks and a fresh 59-control cache are ready. Evidence identity and delivery checks precede PR creation. No merged science or formal audit.
+
+Ninth milestone: [PR #9594](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9594), regular/open, 59 paths, frozen head `e143a32663ad58483efa73050d9344a700d91508`, stacked on M8 and attached. Final scientific and 243-member delivery reports read; exact source/cache identities agree. No merge or formal audit. New direct work continues on `codex/observations-backward-receiver-20261015`.
+
+## M10 receiver-reference milestone awaiting publication
+
+Branch codex/observations-backward-receiver-20261015, stacked on frozen M9 codex/observations-backward-channels-20261015 at e143a32663ad58483efa73050d9344a700d91508. Claim bounded_theorem; status conditional-support. Final exact-source scientific reports are complete; staged delivery and publication follow. Source unit is receiver_reference/REVIEW_RECORD_v1.md plus the canonical note/runner. No main push, merge or formal audit.
+
+M10 delivered 2026-10-15T09:36:41.401991+00:00: [PR#9597](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9597), regular/open,62paths, head`18c1fe25210d3a19a8f77530937ae7af124084f0`, baseM9e143a326. Final source frozen and attached. No publication backlog for this unit.
+
+## Error-direction unit ready for publication
+
+M11 is prepared against frozenM10head18c1fe25210d3a19a8f77530937ae7af124084f0 on codex/observations-backward-discrepancy-20261015. Source and empirical checks are complete; final explicit staging/delivery check and regular PR creation follow. No science is merged. The independent cluster judgment is OPEN. Physical supplier remains open.

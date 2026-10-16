@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-15T09:55:34.835772+00:00",
+  "stage": "before first new noise-diagnostic execution; observations were already exposed in M9/M10",
+  "primary_protocol_sha256": "77cab3aac127b3ba804feabf6cd6107c69fc7d4c3462e65c6ae589253b45a381",
+  "supplement": "Noise-direction challenge",
+  "two_sided_color_test": "After candidate-frequency derotation, use unitary DFT. High modes have abs(fftfreq)>=fs/4; low modes have 0<abs(fftfreq)<fs/4. Ranks sum N-1 and both annihilate the assumed tone exactly. Test both energy-ratio tails with quantization-safe cone distance.",
+  "levels": {
+    "per_record": 0.01,
+    "family_record": 8.333333333333334e-06,
+    "allocation": "half to rank-two carrier-frequency set, quarter to each color tail; Bonferroni requires no cross-record independence"
+  },
+  "continuous_domain_enclosure": "Use training reference g and validation R=abs(vdot(u_g/sqrt(N),z))/norm(z). The frequency cone cannot accept where |<u_f,u_g>|/N <=k and R-k>tau+q*sqrt(1+tau^2)/norm(z). Dirichlet bound k<=1/[N*sin(pi*D/fs)] excludes all alias distances >=D when its strict score is positive. Derive D conservatively; if the bound fails report no global enclosure. On the enclosed arc, a color-cone score has Lipschitz constant <=(1+tau)*2pi*norm(t*z). A fixed maximum0.01Hz mesh plus this margin can certify empty intersection in exact arithmetic; floating computations remain numerical evidence unless error budgets are checked.",
+  "not_a_fit": "No covariance learned and reapplied to claim independent test. No tracking-implied frequency chosen by sign/lag optimization.",
+  "potential_pivot": "If isotropic error direction is unsupported or contradicted, preserve failure and identify the needed independently calibrated filter/covariance supplier, then move to a distinct cross-domain reconstruction."
+}

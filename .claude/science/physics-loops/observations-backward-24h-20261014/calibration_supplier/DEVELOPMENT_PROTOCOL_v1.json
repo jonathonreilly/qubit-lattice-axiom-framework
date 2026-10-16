@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-10-15T09:51:12.629023+00:00",
+  "author": "/root direct author",
+  "target": "Eliminate supplied noise scale conditionally through projection ratios, while challenging rather than assuming the required error direction law.",
+  "target_class": "bounded conditional mathematical construction and exposed-development model diagnostic",
+  "data_role": "Both full 1335 X/Ka products were previously exposed. No independent empirical test. Later raw products remain unopened.",
+  "input_manifest": "scripts/cassini_rsr_development_inputs.json",
+  "input_manifest_sha256": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a",
+  "window": {
+    "seconds": [
+      48900,
+      49500
+    ],
+    "records_per_band": 600,
+    "sample_rate_Hz": 1000,
+    "samples_per_record": 1000,
+    "training_sample_indices": [
+      0,
+      500
+    ],
+    "validation_sample_indices": [
+      500,
+      1000
+    ]
+  },
+  "candidate_premises": [
+    "Analog validation signal is one constant-complex-amplitude tone plus error.",
+    "Conditional on training, validation error has uniform complex-sphere direction, arbitrary positive radial distribution; this is a candidate supplier, not a derived physical law. Proper independent complex Gaussian white noise is a sufficient special case.",
+    "Ideal non-saturating unit half-width ADC cells in doubled-code units; full Euclidean outer radius sqrt(2N).",
+    "Training-derived reference frequency uses only first half and fixed FFT/optimizer rule. No full-record or validation frequency result is supplied to the training algorithm."
+  ],
+  "mathematical_route": [
+    "Rank-two tone augmentation produces orthogonal energy-ratio F law at the true candidate frequency, eliminating unknown radial scale.",
+    "Quantizer-safe cone distance enlarges the acceptance region without estimating a physical deterministic noise bound.",
+    "Fixed-frequency amplitude disk follows by the same ratio geometry; any joint coverage must state levels and conditioning."
+  ],
+  "development_plan": {
+    "primary_diagnostic": "Residual autocovariance at fixed lags1,2,3,4,5,10,20 and pseudo-covariance after training-only frequency on validation; diagnostic correlations only, no exact p-value claim for fitted nuisance.",
+    "nuisance_estimation": "Validation complex amplitude may be projected out; its two real degrees and induced projection correlations are explicit.",
+    "reference_comparison": "Preserve both previously documented NCO time choices and both signs; no convention selected by data. Any validation statistic at tracking-implied frequency remains a conditional dependent-product diagnostic.",
+    "confidence_level_per_candidate": 0.99,
+    "exploratory_frequency_grid": "Numerical accepted-set profiles are approximate, not rigorous continuous frequency exclusions or simultaneous confidence intervals.",
+    "calibration_headers": "Summarize FGAIN expected Px/No and IF-bandwidth settings; never reinterpret expected setup values as measured noise power.",
+    "cross_record_dependence": "No independence across records inferred; no pooling to a calibrated confidence bound without a separate supplier.",
+    "no_clipping": "All1200 fixed records retained including competing Ka peak; flags and extremes retained."
+  },
+  "forbidden_imports": [
+    "Calling a fitted residual an upper bound on physical noise",
+    "Deriving whiteness/proper Gaussianity from sample rate or bandwidth alone",
+    "Calling chosen symmetry a retired physical assumption",
+    "Inferring scalar signal from dependent receiver products",
+    "Treating this previously exposed window as held-out validation data"
+  ],
+  "planned_synthetic_controls": [
+    "Orthogonal-ratio identities and rank degeneracies",
+    "Cone-distance constructive witness and lower bound",
+    "F-law coverage under Gaussian and non-Gaussian radial mixtures",
+    "Correlated-direction failure witness",
+    "No finite discrepancy bound without supplied law"
+  ]
+}

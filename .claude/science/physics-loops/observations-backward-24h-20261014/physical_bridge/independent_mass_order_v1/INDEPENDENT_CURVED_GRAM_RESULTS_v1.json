@@ -1,0 +1,98 @@
+{
+  "checks_passed": 10,
+  "checks": [
+    {
+      "name": "total_step_coefficient_zero",
+      "passed": true
+    },
+    {
+      "name": "all_knots_positive",
+      "passed": true
+    },
+    {
+      "name": "degree_exactly_two",
+      "passed": true
+    },
+    {
+      "name": "flat_limit_exact",
+      "passed": true,
+      "coefficient": "329/54"
+    },
+    {
+      "name": "gram_coefficient_diagonals_positive",
+      "passed": true
+    },
+    {
+      "name": "gram_cauchy_determinant_nonnegative",
+      "passed": true,
+      "determinant": "20537167/437400"
+    },
+    {
+      "name": "sorted_interval_agreement_H_0",
+      "passed": true,
+      "exact_pi_gram": "329/54",
+      "numeric_pi_gram": 6.0925925925925934,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "name": "sorted_interval_agreement_H_1/25",
+      "passed": true,
+      "exact_pi_gram": "50983969/10125000",
+      "numeric_pi_gram": 5.035453728395063,
+      "absolute_error": 8.881784197001252e-16
+    },
+    {
+      "name": "sorted_interval_agreement_H_1/10",
+      "passed": true,
+      "exact_pi_gram": "5976769/1620000",
+      "numeric_pi_gram": 3.689363580246915,
+      "absolute_error": 1.3322676295501878e-15
+    },
+    {
+      "name": "sorted_interval_agreement_H_1/5",
+      "passed": true,
+      "exact_pi_gram": "844369/405000",
+      "numeric_pi_gram": 2.084861728395062,
+      "absolute_error": 4.440892098500626e-16
+    }
+  ],
+  "pi_gram_polynomial": "646969*H**2/16200 - 7567*H/270 + 329/54",
+  "pi_gram_coefficients_ascending": [
+    "329/54",
+    "-7567/270",
+    "646969/16200"
+  ],
+  "piece_count": 84,
+  "direction_ordering_cuts": [
+    "-1",
+    "-2/3",
+    "2/3",
+    "1"
+  ],
+  "numeric_sorted_intervals": [
+    {
+      "H": "0",
+      "pi_gram": "329/54",
+      "numeric_pi_gram": 6.0925925925925934
+    },
+    {
+      "H": "1/25",
+      "pi_gram": "50983969/10125000",
+      "numeric_pi_gram": 5.035453728395063
+    },
+    {
+      "H": "1/10",
+      "pi_gram": "5976769/1620000",
+      "numeric_pi_gram": 3.689363580246915
+    },
+    {
+      "H": "1/5",
+      "pi_gram": "844369/405000",
+      "numeric_pi_gram": 2.084861728395062
+    }
+  ],
+  "source_sha256": "8ed31e5a33d937cfe5dbd66a8af0f8849b54484fec76de4e0f9f4923df168fc3",
+  "precheck_sha256": "be7bd0f52840ac47c9f3671218fc3daf45dc24775314e0628263ea32bba9b907",
+  "exposure": "No author composition note or curved implementation read before this execution.",
+  "scope": "The massless comparison operator of curved-derived weights, not the actual curved KG norm."
+}

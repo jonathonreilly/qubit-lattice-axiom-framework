@@ -1,0 +1,515 @@
+{
+  "checks_passed": 63,
+  "checks": [
+    {
+      "name": "gamma_polynomial_moment_0",
+      "passed": true
+    },
+    {
+      "name": "gamma_polynomial_moment_1",
+      "passed": true
+    },
+    {
+      "name": "gamma_polynomial_moment_2",
+      "passed": true
+    },
+    {
+      "name": "beta_sum_zero",
+      "passed": true
+    },
+    {
+      "name": "position_station_column",
+      "passed": true
+    },
+    {
+      "name": "position_craft_column",
+      "passed": true
+    },
+    {
+      "name": "velocity_station_column",
+      "passed": true
+    },
+    {
+      "name": "velocity_craft_column",
+      "passed": true
+    },
+    {
+      "name": "shared_clock_column",
+      "passed": true
+    },
+    {
+      "name": "constant_chi_moment",
+      "passed": true
+    },
+    {
+      "name": "early_force_kernel_0",
+      "passed": true
+    },
+    {
+      "name": "early_force_kernel_L",
+      "passed": true
+    },
+    {
+      "name": "early_force_kernel_2*L",
+      "passed": true
+    },
+    {
+      "name": "proper_count_endpoint_0",
+      "passed": true
+    },
+    {
+      "name": "proper_count_endpoint_1",
+      "passed": true
+    },
+    {
+      "name": "proper_count_endpoint_2",
+      "passed": true
+    },
+    {
+      "name": "proper_count_endpoint_3",
+      "passed": true
+    },
+    {
+      "name": "flat_common_field_gram_exact",
+      "passed": true,
+      "pi_times_gram": "329/54",
+      "pair_pieces": 84
+    },
+    {
+      "name": "flat_overlap_sorted_-1",
+      "passed": true,
+      "overlap": 0.0,
+      "sorted_intervals": 0.0
+    },
+    {
+      "name": "flat_overlap_sorted_-0.7",
+      "passed": true,
+      "overlap": 9.432000000000002,
+      "sorted_intervals": 9.431999999999999
+    },
+    {
+      "name": "flat_overlap_sorted_-0.25",
+      "passed": true,
+      "overlap": 16.875000000000007,
+      "sorted_intervals": 16.875000000000004
+    },
+    {
+      "name": "flat_overlap_sorted_0",
+      "passed": true,
+      "overlap": 18.000000000000007,
+      "sorted_intervals": 18.000000000000007
+    },
+    {
+      "name": "flat_overlap_sorted_0.2",
+      "passed": true,
+      "overlap": 17.280000000000005,
+      "sorted_intervals": 17.280000000000005
+    },
+    {
+      "name": "flat_overlap_sorted_0.75",
+      "passed": true,
+      "overlap": 8.437499999999984,
+      "sorted_intervals": 8.437499999999993
+    },
+    {
+      "name": "flat_overlap_sorted_1",
+      "passed": true,
+      "overlap": 3.1308289294429414e-14,
+      "sorted_intervals": 2.220446049250313e-16
+    },
+    {
+      "name": "proper_spacing_valid_0.0",
+      "passed": true,
+      "spacings": [
+        1.0,
+        1.0,
+        1.0000000000000004
+      ]
+    },
+    {
+      "name": "constant_chi_numeric_0.0",
+      "passed": true,
+      "value": -8.881784197001252e-16
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.0_trig",
+      "passed": true,
+      "prediction": -0.002805362099584372,
+      "no_nuisance": -0.002805362099961295,
+      "with_nuisance": -0.0028053620988690575
+    },
+    {
+      "name": "linear_three_proper_counts_0.0_trig",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.0_trig",
+      "passed": true,
+      "prediction": -0.002805362099584372,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        -0.002805510326053806,
+        -0.0028053991125709388,
+        -0.00280537042574025
+      ],
+      "errors": [
+        1.4822646943407972e-07,
+        3.701298656672361e-08,
+        8.326155878039115e-09
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.0_trig",
+      "passed": true,
+      "maximum_difference": 1.2212453270876722e-12
+    },
+    {
+      "name": "nonlinear_event_roots_0.0_trig",
+      "passed": true,
+      "maximum_residual": 8.881784197001252e-16
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.0_polynomial",
+      "passed": true,
+      "prediction": 0.19199999999999995,
+      "no_nuisance": 0.19199999999999012,
+      "with_nuisance": 0.19200000000000056
+    },
+    {
+      "name": "linear_three_proper_counts_0.0_polynomial",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.0_polynomial",
+      "passed": true,
+      "prediction": 0.19199999999999995,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        0.19200155451337686,
+        0.1920003886208832,
+        0.19200009717401656
+      ],
+      "errors": [
+        1.5545133769112596e-06,
+        3.8862088325153366e-07,
+        9.717401661113456e-08
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.0_polynomial",
+      "passed": true,
+      "maximum_difference": 6.661338147750939e-13
+    },
+    {
+      "name": "nonlinear_event_roots_0.0_polynomial",
+      "passed": true,
+      "maximum_residual": 1.432187701766452e-14
+    },
+    {
+      "name": "proper_spacing_valid_0.04",
+      "passed": true,
+      "spacings": [
+        1.082420143833105,
+        1.1314147897030224,
+        1.185055972364598
+      ]
+    },
+    {
+      "name": "constant_chi_numeric_0.04",
+      "passed": true,
+      "value": -1.4249018631673493e-15
+    },
+    {
+      "name": "physical_constant_distinguished_0.04",
+      "passed": true,
+      "value": 0.00020606761793495995
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.04_trig",
+      "passed": true,
+      "prediction": -0.014024408299972325,
+      "no_nuisance": -0.014024408300383095,
+      "with_nuisance": -0.014024408299956326
+    },
+    {
+      "name": "linear_three_proper_counts_0.04_trig",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.04_trig",
+      "passed": true,
+      "prediction": -0.014024408299972325,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        -0.014024488365738108,
+        -0.01402442763120959,
+        -0.014024414066504676
+      ],
+      "errors": [
+        8.006576578296898e-08,
+        1.9331237265454715e-08,
+        5.766532350584552e-09
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.04_trig",
+      "passed": true,
+      "maximum_difference": 4.996003610813204e-13
+    },
+    {
+      "name": "nonlinear_event_roots_0.04_trig",
+      "passed": true,
+      "maximum_residual": 8.881784197001252e-16
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.04_polynomial",
+      "passed": true,
+      "prediction": 0.15820800000000015,
+      "no_nuisance": 0.1582079999953825,
+      "with_nuisance": 0.15820800000414292
+    },
+    {
+      "name": "linear_three_proper_counts_0.04_polynomial",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.04_polynomial",
+      "passed": true,
+      "prediction": 0.15820800000000015,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        0.1582086351221701,
+        0.15820815874612038,
+        0.1582080395090557
+      ],
+      "errors": [
+        6.351221699396614e-07,
+        1.5874612022126477e-07,
+        3.950905555494266e-08
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.04_polynomial",
+      "passed": true,
+      "maximum_difference": 1.6653345369377348e-13
+    },
+    {
+      "name": "nonlinear_event_roots_0.04_polynomial",
+      "passed": true,
+      "maximum_residual": 2.353672812205332e-14
+    },
+    {
+      "name": "proper_spacing_valid_0.1",
+      "passed": true,
+      "spacings": [
+        1.2361395596717668,
+        1.4107859825990552,
+        1.6430305129127643
+      ]
+    },
+    {
+      "name": "constant_chi_numeric_0.1",
+      "passed": true,
+      "value": -2.0025647806676263e-15
+    },
+    {
+      "name": "physical_constant_distinguished_0.1",
+      "passed": true,
+      "value": 0.005462524827664879
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.1_trig",
+      "passed": true,
+      "prediction": -0.030852977600555127,
+      "no_nuisance": -0.03085297760040051,
+      "with_nuisance": -0.030852977600415388
+    },
+    {
+      "name": "linear_three_proper_counts_0.1_trig",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.1_trig",
+      "passed": true,
+      "prediction": -0.030852977600555127,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        -0.03085299215799253,
+        -0.030852981338647112,
+        -0.03085297864124925
+      ],
+      "errors": [
+        1.4557437404832951e-08,
+        3.738091985255876e-09,
+        1.0406941246265955e-09
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.1_trig",
+      "passed": true,
+      "maximum_difference": 4.440892098500626e-13
+    },
+    {
+      "name": "nonlinear_event_roots_0.1_trig",
+      "passed": true,
+      "maximum_residual": 8.881784197001252e-16
+    },
+    {
+      "name": "linear_ode_vs_kernel_0.1_polynomial",
+      "passed": true,
+      "prediction": 0.10751999999999964,
+      "no_nuisance": 0.1075199999971938,
+      "with_nuisance": 0.10751999999778805
+    },
+    {
+      "name": "linear_three_proper_counts_0.1_polynomial",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_fixed_proper_fd_0.1_polynomial",
+      "passed": true,
+      "prediction": 0.10751999999999964,
+      "steps": [
+        0.002,
+        0.001,
+        0.0005
+      ],
+      "derivatives": [
+        0.10751989523649641,
+        0.1075199737603505,
+        0.10751999346769736
+      ],
+      "errors": [
+        1.0476350323362915e-07,
+        2.623964914794108e-08,
+        6.532302282424851e-09
+      ]
+    },
+    {
+      "name": "nonlinear_three_proper_counts_0.1_polynomial",
+      "passed": true,
+      "maximum_difference": 7.771561172376096e-13
+    },
+    {
+      "name": "nonlinear_event_roots_0.1_polynomial",
+      "passed": true,
+      "maximum_residual": 1.1102230246251565e-15
+    }
+  ],
+  "flat_pi_gram": "329/54",
+  "nonlinear_comparisons": [
+    {
+      "H": 0.0,
+      "field": "trig",
+      "prediction": -0.002805362099584372,
+      "errors": [
+        1.4822646943407972e-07,
+        3.701298656672361e-08,
+        8.326155878039115e-09
+      ],
+      "derivatives": [
+        -0.002805510326053806,
+        -0.0028053991125709388,
+        -0.00280537042574025
+      ]
+    },
+    {
+      "H": 0.0,
+      "field": "polynomial",
+      "prediction": 0.19199999999999995,
+      "errors": [
+        1.5545133769112596e-06,
+        3.8862088325153366e-07,
+        9.717401661113456e-08
+      ],
+      "derivatives": [
+        0.19200155451337686,
+        0.1920003886208832,
+        0.19200009717401656
+      ]
+    },
+    {
+      "H": 0.04,
+      "field": "trig",
+      "prediction": -0.014024408299972325,
+      "errors": [
+        8.006576578296898e-08,
+        1.9331237265454715e-08,
+        5.766532350584552e-09
+      ],
+      "derivatives": [
+        -0.014024488365738108,
+        -0.01402442763120959,
+        -0.014024414066504676
+      ]
+    },
+    {
+      "H": 0.04,
+      "field": "polynomial",
+      "prediction": 0.15820800000000015,
+      "errors": [
+        6.351221699396614e-07,
+        1.5874612022126477e-07,
+        3.950905555494266e-08
+      ],
+      "derivatives": [
+        0.1582086351221701,
+        0.15820815874612038,
+        0.1582080395090557
+      ]
+    },
+    {
+      "H": 0.1,
+      "field": "trig",
+      "prediction": -0.030852977600555127,
+      "errors": [
+        1.4557437404832951e-08,
+        3.738091985255876e-09,
+        1.0406941246265955e-09
+      ],
+      "derivatives": [
+        -0.03085299215799253,
+        -0.030852981338647112,
+        -0.03085297864124925
+      ]
+    },
+    {
+      "H": 0.1,
+      "field": "polynomial",
+      "prediction": 0.10751999999999964,
+      "errors": [
+        1.0476350323362915e-07,
+        2.623964914794108e-08,
+        6.532302282424851e-09
+      ],
+      "derivatives": [
+        0.10751989523649641,
+        0.1075199737603505,
+        0.10751999346769736
+      ]
+    }
+  ],
+  "source_sha256": "6a4d6c3df4734a733a33f74b2267625db6de44806edce0c8b5c592a0d42eb770",
+  "precheck_sha256": "21a052975ec0a87df00e8f9dd1e704f09d7ae755fc067dc276bc0f2a248d3619",
+  "scope": "Independent exact algebra and synthetic nonlinear proper-count controls. No curved author code exposed. No KG solution or empirical calibration claim."
+}

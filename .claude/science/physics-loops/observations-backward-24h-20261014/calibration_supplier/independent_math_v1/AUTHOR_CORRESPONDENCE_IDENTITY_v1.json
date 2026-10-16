@@ -1,0 +1,69 @@
+{
+  "frozen_at": "2026-10-15T10:17:47.281735+00:00",
+  "review_type": "Focused post-exposure mathematical/source correspondence, not formal audit",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_CORRESPONDENCE_v1.md",
+    "sha256": "5f970aec3bb5ceb5495ddea8e1bdd01f277be7ed283ec2ed63ebc142bb2a1105",
+    "bytes": 13464
+  },
+  "independent_report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/INDEPENDENT_MATH_v1.md",
+    "sha256": "de40057de817a745e52beebb6a162802ff4215b862932ef5b7bad818f8a8f811",
+    "bytes": 20182
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_EXPOSURE_v1.json",
+      "sha256": "9f7620c2a98e5bb3495d0a277dd17217e31ad5fa3c15a221891b5b724af4638d",
+      "bytes": 3365
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_CORRESPONDENCE_BINDINGS_v1.json",
+      "sha256": "d3010ee6f7e2af09e6a476214ad5e24bf7f414b20d375a6087fb0c4b6a937b2e",
+      "bytes": 6949
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_CORRESPONDENCE_v1.md",
+      "sha256": "5f970aec3bb5ceb5495ddea8e1bdd01f277be7ed283ec2ed63ebc142bb2a1105",
+      "bytes": 13464
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_WORKING_DERIVATION_v1.md",
+      "sha256": "b56992df97bc2c69f579b2bc7e58cc69d8e7549f4aa10a1ee102bcc562a25656",
+      "bytes": 11336
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_direction_geometry_v1.py",
+      "sha256": "d9892abaadee8cdab6a65ac679ffd3c41b433bd5cd77202bb306b1105632ba6b",
+      "bytes": 7593
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_direction_sampling_controls_v1.py",
+      "sha256": "d9848c9cdc92e42d0b797a7ff29001109ca3b909a9f1d1302176673fc63e5f38",
+      "bytes": 5010
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_AUTHOR_GEOMETRY_CONTROLS_v1.json",
+      "sha256": "d33189172d4aaec0bc5c9b5e54b2bd08fad8ea423d55d9fd97095b63b797d8de",
+      "bytes": 2126
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_AUTHOR_SAMPLING_CONTROLS_v1.json",
+      "sha256": "050d8ac0ff3cf090da4fb00d5590b4a6b26e704fcdabebd352db644dd48f7afe",
+      "bytes": 1788
+    }
+  ],
+  "complete_author_note_and_source_read": true,
+  "complete_retained_outputs_read": true,
+  "author_code_executed": false,
+  "raw_observations_opened": false,
+  "network_used": false,
+  "new_independent_postexposure_calculation": "Integer mask count N=500, low248/high251/DC1; source/output hash bindings only",
+  "substantive_mathematical_discrepancies": [],
+  "scientific_claim_limits": [
+    "Conditional angular law and pointwise quantizer enclosure remain imports",
+    "No empirical claim was verified",
+    "No outward-rounded numerical certificate",
+    "No formal audit or publication approval"
+  ]
+}

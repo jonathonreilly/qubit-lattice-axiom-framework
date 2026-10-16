@@ -1,0 +1,15 @@
+{
+  "runner": "scripts/scalar_mass_curvature_count_check.py",
+  "cache": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_mass_curvature_count_check.txt",
+  "result": {
+    "runner": "scripts/scalar_mass_curvature_count_check.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "{\n  \"actual_current_surface_status\": \"conditional-support\",\n  \"claim_type\": \"bounded_theorem\",\n  \"checks\": {\n    \"massive_response\": 18,\n    \"mass_refinement\": 13,\n    \"curved_count\": 28\n  },\n  \"checks_passed\": 59,\n  \"source_sha256\": {\n    \"scripts/scalar_mass_curvature_count_check.py\": \"76e6defceabfee840a63df313cba4e2948f325f6f697c86f23d801a89129afe1\",\n    \"docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md\": \"19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3\",\n    \"scripts/scalar_massive_response_controls.py\": \"7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b\",\n    \"scripts/scalar_massive_refinement_controls.py\": \"f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512\",\n    \"scripts/scalar_curved_count_controls.py\": \"03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0\"\n  },\n  \"product_sha256\": {\n    \"massive_response\": \"8ecd805a23ee6aa573a44353797b8bbec62fa48fc82cb8b2667963d344c6e8d8\",\n    \"mass_refinement\": \"a2f54a2a32e978c75c450fd01450a3c3f0f2f024b43cd9df401e7e4d488033bd\",\n    \"curved_count\": \"e155d3d66cce00c08cf9cae58ef7ada9d2546066369b37a1348297db5b8bb2dd\"\n  },\n  \"external_scientific_inputs_read\": [],\n  \"observational_tests\": 0,\n  \"fitted_parameters\": 0,\n  \"physical_energy_estimates\": 0,\n  \"scope\": [\n    \"Mass comparison uses a common energy-amplitude isometry, not identical Cauchy data.\",\n    \"The variable-potential comparison preserves the same chi initial data.\",\n    \"An exact count contrast removes stated initial orbit/clock and constant-response columns.\",\n    \"Mass and curved propagation errors compose with the same curved-reference observation weights.\",\n    \"Physical energy conversion applies on the declared initial slice only.\",\n    \"No physical action, state, scale, measured residual, error or energy upper budget is derived.\",\n    \"Finite Fourier/ODE/quadrature probes are diagnostics; analytic suppliers carry the operator bounds.\",\n    \"No formal audit status, integrated landing result or independent empirical confirmation is asserted.\"\n  ]\n}\n",
+    "stderr": "",
+    "elapsed_sec": 2.7399020195007324,
+    "timeout_sec": 180,
+    "live_log": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/.in-progress/scalar_mass_curvature_count_check.txt"
+  },
+  "status": "fresh"
+}

@@ -1,0 +1,111 @@
+{
+  "role": "Exact mathematical controls under declared integer ambiguity and supplied response; no empirical validation",
+  "checks": {
+    "endpoint_integer_history_0": true,
+    "endpoint_integer_history_1": true,
+    "endpoint_integer_history_2": true,
+    "endpoint_integer_history_3": true,
+    "polynomial_nuisance_degree_0": true,
+    "polynomial_nuisance_degree_1": true,
+    "polynomial_nuisance_degree_2": true,
+    "count_endpoint_incidence": true,
+    "half_weight_fails_mod_one": true,
+    "rational_period_restored": true,
+    "nonprimitive_period": true,
+    "floating_weight_rejected": true,
+    "floating_period_rejected": true,
+    "symbolic_irrational_rejected": true,
+    "fractional_reset_not_removed": true,
+    "curved_group_H": true,
+    "curved_group_constant": true,
+    "pell_identity_0": true,
+    "pell_identity_1": true,
+    "pell_identity_2": true,
+    "pell_identity_3": true,
+    "pell_identity_4": true,
+    "pell_identity_5": true,
+    "pell_identity_6": true,
+    "pell_identity_7": true,
+    "component_rounding_not_optimal": true,
+    "lattice_translation_same_minimum": true,
+    "diagonal_gram_nearest_point": true,
+    "scalar_alias_saturation": true,
+    "physical_error_scalar_bound": true,
+    "sharp_scalar_Riesz_example": true,
+    "nonzero_error_sharp_floor": true,
+    "error_can_remove_floor": true,
+    "zero_response_compatible": true,
+    "zero_response_incompatible": true,
+    "arbitrary_integer_data_zero_signal": true,
+    "zero_period_rejected": true,
+    "singular_Gram_rejected": true
+  },
+  "passed": 38,
+  "failed": 0,
+  "two_count_Gram_example": {
+    "G_times_pi": "Matrix([[766/405, -1871/1620], [-1871/1620, 766/405]])",
+    "r": [
+      "49/100",
+      "49/100"
+    ],
+    "minimum_N_over_pi": "16132149/98124250",
+    "component_rounding_N_over_pi": "194481/298250",
+    "minimizing_lifts": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "complete_search_box": {
+      "radius_squared": "1839166/745625",
+      "radius": 2,
+      "examined": 16
+    }
+  },
+  "irrational_group_Pell_witnesses": [
+    {
+      "p": 1,
+      "q": 1,
+      "absolute_group_element": "1/(1 + sqrt(2))"
+    },
+    {
+      "p": 3,
+      "q": 2,
+      "absolute_group_element": "1/(2*sqrt(2) + 3)"
+    },
+    {
+      "p": 7,
+      "q": 5,
+      "absolute_group_element": "1/(7 + 5*sqrt(2))"
+    },
+    {
+      "p": 17,
+      "q": 12,
+      "absolute_group_element": "1/(12*sqrt(2) + 17)"
+    },
+    {
+      "p": 41,
+      "q": 29,
+      "absolute_group_element": "1/(41 + 29*sqrt(2))"
+    },
+    {
+      "p": 99,
+      "q": 70,
+      "absolute_group_element": "1/(70*sqrt(2) + 99)"
+    },
+    {
+      "p": 239,
+      "q": 169,
+      "absolute_group_element": "1/(239 + 169*sqrt(2))"
+    },
+    {
+      "p": 577,
+      "q": 408,
+      "absolute_group_element": "1/(408*sqrt(2) + 577)"
+    }
+  ]
+}

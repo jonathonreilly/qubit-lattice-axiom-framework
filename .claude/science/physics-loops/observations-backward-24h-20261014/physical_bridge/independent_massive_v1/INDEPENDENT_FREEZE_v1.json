@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-10-15T04:46:20.599307+00:00",
+  "new_author_source_opened": false,
+  "control_counts": {
+    "total": 120,
+    "passed": 120,
+    "failed": 0
+  },
+  "files": {
+    "SOURCE_IDENTITY_v1.json": {
+      "sha256": "e7185e77b879ffb4587c91068c5cf614c9aa5d8246c43fbd7a363b69a1ad9aa1",
+      "bytes": 814
+    },
+    "M6_SOURCE_SNAPSHOT_v1.md": {
+      "sha256": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+      "bytes": 32514
+    },
+    "PRECHECK_v1.md": {
+      "sha256": "4e3e9e12ea953e60e3aaf7fd0fa110192e2a90cb5913e901e28c89e79e45719e",
+      "bytes": 9842
+    },
+    "PRECHECK_FREEZE_v1.json": {
+      "sha256": "a213761f277a4e55df57f047612d1b4164f9d4a8d6f52e1601f896aec23fb550",
+      "bytes": 277
+    },
+    "independent_massive_controls_v1.py": {
+      "sha256": "136a027c9fcaf56f02014e5737959274f57bc169f16f5a9399d0f426895a36c9",
+      "bytes": 12024
+    },
+    "independent_massive_results_v1.json": {
+      "sha256": "a7997a17417b7f2c98c3e98fe21b43458e467dc847ffe5fbccf3ffa764bf40f6",
+      "bytes": 28958
+    }
+  }
+}

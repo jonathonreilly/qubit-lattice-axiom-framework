@@ -1,0 +1,13 @@
+{
+  "files": {
+    "docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e",
+    "scripts/scalar_phase_quotient_controls.py": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+    "scripts/cassini_phase_quotient_development.py": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+    "scripts/scalar_phase_quotient_check.py": "9dfd11339b89523f0f0d3fc73881c1b014852551115479064ad2c0d77624ade5"
+  },
+  "scientific_status": "conditional-support",
+  "independent_empirical_tests": 0,
+  "note": "All raw comparisons are exposed development. The math helper includes the exact-rational period guard and explicit scalar-energy bound.",
+  "version_note": "Explicit required error argument; final note records both review findings. Freeze precedes sequential cache.",
+  "created_at": "2026-10-15T05:58:56.452527+00:00"
+}

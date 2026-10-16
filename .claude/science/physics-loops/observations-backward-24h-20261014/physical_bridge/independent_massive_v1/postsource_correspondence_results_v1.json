@@ -1,0 +1,155 @@
+{
+  "created_utc": "2026-10-15T04:50:29.077803+00:00",
+  "scope": "Post-independent source correspondence; imports frozen author snapshots without executing run().",
+  "script_sha256": "8aceb911157bb26ed0caea3e42d72785bd9948939070d2a6b6f83267e804cb16",
+  "checks": [
+    {
+      "name": "closed_low_rational_identity_0.2",
+      "passed": true,
+      "author": 7.458982550367322,
+      "independent": 7.458982550367322
+    },
+    {
+      "name": "closed_low_rational_identity_0.03",
+      "passed": true,
+      "author": 0.0034486189226713908,
+      "independent": 0.0034486189226713908
+    },
+    {
+      "name": "closed_low_rational_identity_2.0",
+      "passed": true,
+      "author": 27.993599999999997,
+      "independent": 27.993599999999997
+    },
+    {
+      "name": "refinement_and_zero_cases_(0.01, 8.4, 16.0)",
+      "passed": true,
+      "value": 0.05446866542801724
+    },
+    {
+      "name": "refinement_and_zero_cases_(0.7, 0.0, 0.0)",
+      "passed": true,
+      "value": 0.1554899130365597
+    },
+    {
+      "name": "refinement_and_zero_cases_(0.4, 0.0, 7.0)",
+      "passed": true,
+      "value": 0.21426806426860354
+    },
+    {
+      "name": "refinement_and_zero_cases_(0.4, 3.0, 0.0)",
+      "passed": true,
+      "value": 0.21426806426860354
+    },
+    {
+      "name": "refinement_and_zero_cases_(0.0, 3.0, 4.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "exact_clock_zero_offset",
+      "passed": true,
+      "exact": "0"
+    },
+    {
+      "name": "exact_clock_L1",
+      "passed": true,
+      "exact": "4"
+    },
+    {
+      "name": "exact_force_L1",
+      "passed": true,
+      "exact": "4"
+    },
+    {
+      "name": "exact_common_moments_9/5",
+      "passed": true,
+      "actual_D_plus_M": "236/25",
+      "author_upper_D_plus_M": "84/5",
+      "actual_E": "716/375",
+      "author_upper_E": "32/5"
+    },
+    {
+      "name": "exact_common_moments_23/10",
+      "passed": true,
+      "actual_D_plus_M": "521/50",
+      "author_upper_D_plus_M": "104/5",
+      "actual_E": "7579/3000",
+      "author_upper_E": "42/5"
+    },
+    {
+      "name": "exact_force_outer_and_internal_TV",
+      "passed": true,
+      "station": "8",
+      "body": "8"
+    },
+    {
+      "name": "coherent_distribution_correspondence_(0.01, 0.02, -0.7)",
+      "passed": true,
+      "absolute_error": 2.854213442785149e-16
+    },
+    {
+      "name": "coherent_expanded_angular_correspondence_(0.01, 0.02)",
+      "passed": true,
+      "absolute_error": 2.984266479766351e-15
+    },
+    {
+      "name": "coherent_distribution_correspondence_(0.4, 1.2, 0.3)",
+      "passed": true,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "coherent_expanded_angular_correspondence_(0.4, 1.2)",
+      "passed": true,
+      "absolute_error": 5.773159728050814e-15
+    },
+    {
+      "name": "coherent_distribution_correspondence_(2.0, 0.03, 1.0)",
+      "passed": true,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "coherent_expanded_angular_correspondence_(2.0, 0.03)",
+      "passed": true,
+      "absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "coherent_distribution_correspondence_(0.0, 3.0, -0.4)",
+      "passed": true,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "coherent_expanded_angular_correspondence_(0.0, 3.0)",
+      "passed": true,
+      "absolute_error": 4.440892098500626e-15
+    },
+    {
+      "name": "common_epoch_retains_lag_phase",
+      "passed": true
+    },
+    {
+      "name": "mutation_rowwise_isometries_rejected",
+      "passed": true,
+      "correct_cross": 0.3006139077015564,
+      "wrong_cross": 1.4376914693559841
+    }
+  ],
+  "counts": {
+    "total": 24,
+    "passed": 24,
+    "failed": 0
+  },
+  "exact_moments": [
+    {
+      "origin": "9/5",
+      "D_plus_M": "236/25",
+      "E": "716/375"
+    },
+    {
+      "origin": "23/10",
+      "D_plus_M": "521/50",
+      "E": "7579/3000"
+    }
+  ],
+  "excluded": "No author aggregate suite or triangle mass-ordering computation rerun."
+}

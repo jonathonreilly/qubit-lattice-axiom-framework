@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-15T06:29:00.163097+00:00",
+  "author": "/root",
+  "target": "Derive the observable quotient jointly removing arbitrary whole-cycle histories, independent uplink/downlink plasma columns and arbitrary constant receiver phases for the documented three coherent radio-link architecture. Determine actual carrier-ratio and finite-error obligations before using reserved raw data.",
+  "premises": {
+    "units": "Received phase in cycles, not instantaneous-frequency-normalized phase.",
+    "instrument_ratios": "k1=880/749, k2=3344/749, k3=14/15, primary source confirmation pending.",
+    "conditional_phase_model": "Phi_i = (k1*fX_i,k2*fX_i,k3*fK_i)*G_i + (k1/fX_i,k2/fX_i,k3/fK_i)*U_i + (1/(k1*fX_i),1/(k2*fX_i),1/(k3*fK_i))*D_i + b + n_i + e_i.",
+    "variables": "fX_i,fK_i>0 supplied at matched emission events. U_i,D_i arbitrary real and independent at each endpoint. b arbitrary real constant vector within a supplied segment. n_i independent integer vectors. e_i real, no default bound.",
+    "physical_imports": "Coherent frequency/phase transfer, cold-plasma leading law, shared retarded rays/clock maps and actual electronics/calibration remain conditions; derive rather than silently import additional restrictions."
+  },
+  "success_witness": "Complete exact integer-annihilator classification and a nontrivial count-derived character retaining a common-phase functional under stated carrier conditions, or a scoped obstruction with concrete alternative. Derive observable error amplification and compare against existing format consistency without promoting it to physical error.",
+  "discriminators": [
+    "Exact rational vs irrational relative uplink frequency",
+    "Fixed vs varying relative chirp and arbitrary initial receiver phases",
+    "Exact phase weights vs real normalized weights",
+    "Finite known error set vs unsupported accuracy from storage resolution"
+  ],
+  "exposure": "No new raw observation opened. Existing day169/170 four-file archive is exposed development; metadata/literature are instrument context, not independent empirical test.",
+  "next_route_if_closed": "Calibrated bounded integer history / real receiver reset map, or a candidate-consistent invariant using actual recorded common synthesis reference. No state or error selector will be counted as a derivation.",
+  "new_obligation": "The previous real phase/plasma construction and integer quotient each work on their own domains. Their physical joint admissibility under independent chirps and finite precision has not been established; this is a synthesis/measurement test, not substitution of a new numeric example.",
+  "status": "open",
+  "trace_class": "upstream_support",
+  "reachability_to_target": "partially_closes",
+  "current_main": "92574ffe95192cc0724a27e1acad28e42d325115"
+}

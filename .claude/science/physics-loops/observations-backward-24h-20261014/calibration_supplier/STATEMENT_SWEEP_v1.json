@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-15T10:09:11.394675+00:00",
+  "ref": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "stage": "Delayed focused statement sweep after working derivation; not represented as a completed pre-derivation gate. Required before novelty/delivery judgment. Standard F/Dirichlet facts are reconstructed explicitly, not claimed new mathematics.",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(spherical.*(noise|error)|(?:noise|error).*spherical)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 128,
+      "stdout": "",
+      "stderr": "fatal: command line, '(spherical.*(noise|error)|(?:noise|error).*spherical)': repetition-operator operand invalid\n"
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(quantiz.*cone|cone.*quantiz)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "stdout": "origin/main:docs/CANONICAL_HARNESS_INDEX.md:118:| unaudited bounded microcausality support packet on supplied finite-volume Hamiltonians (nearest-neighbor cone exhibits, sequence-count and all-time walk bounds, a directional-tilt refinement, an even-CAR specialization, a weighted arbitrary-finite-support quasilocal estimate, scalar and fixed-finite-matrix-fiber gauged-kernel activity feeds, an exact matrix-fiber pair trace-norm lemma, and a finite-mode second-quantization/log bridge restricted to the supplied free `U = 1` corner surface; family-uniform use requires common finite interaction, kernel-envelope, fiber-dimension, and local-observable inputs; no fixed-background corner factorization, unbounded or uncontrolled mixed-fiber closure, gauge integration, dynamics selection, framework fermion carrier, physical velocity, generic-path novelty, or retained-grade claim) | [MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_DIRECTIONAL_TILT_AXIS_CONE_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_DIRECTIONAL_TILT_AXIS_CONE_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_FERMIONIC_EVEN_CAR_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_FERMIONIC_EVEN_CAR_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_GAUGED_KERNEL_WEIGHTED_ACTIVITY_FEED_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_GAUGED_KERNEL_WEIGHTED_ACTIVITY_FEED_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_MATRIX_FIBER_TRACE_NORM_LEMMA_AND_FEED_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_MATRIX_FIBER_TRACE_NORM_LEMMA_AND_FEED_BOUNDED_THEOREM_NOTE_2026-07-18.md), [MICROCAUSALITY_CORNER_CLASS_FACTORIZATION_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-07-18.md](MICROCAUSALITY_CORNER_CLASS_FACTORIZATION_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-07-18.md) | `microcausality_many_body_nested_commutator_lightcone_2026_07_18.py`, `microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py`, `microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py`, `microcausality_directional_tilt_axis_cone_refinement_2026_07_18.py`, `microcausality_fermionic_even_car_walk_expansion_2026_07_18.py`, `microcausality_weighted_quasilocal_class_walk_expansion_2026_07_18.py`, `microcausality_gauged_kernel_weighted_activity_feed_2026_07_18.py`, `microcausality_matrix_fiber_trace_norm_lemma_and_feed_2026_07_18.py`, `microcausality_corner_class_factorization_discharge_2026_07_18.py` |\norigin/main:docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md:161:  The theorem below quantizes the real-time cone slope. Identifying that slope\norigin/main:docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md:195:cone-slope ratio is quantized:\norigin/main:docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md:275:  expected to remove the dial there too, but the quantized 3D cone slope must\norigin/main:docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md:291:- The 3D strict Weyl enumeration producing a quantized cone slope different\norigin/main:docs/REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md:154:| the isotropic 3D matter cone | RE-OPENED POSITIVELY: an isotropic cone exists in the family at quantized slope 1/(2 sqrt 3) (E3, review-found); the H-slope (1/2) cone remains unrealized (sqrt-3 mismatch = U-T/larger-cell content) |\norigin/main:docs/historic_intake/HISTORIC_NEGATIVE_LEDGER_B10818_INTAKE_NOTE_2026-08-05.md:19:Six negatives: the four axioms do NOT uniquely select staggered/Dirac kinetics (a symmetric SWAP-Laplacian completion exists); 'locality + cubic symmetry + nonzero Hermitian dynamics select the carrier' is FALSIFIED (the graph Laplacian satisfies all three); strict local unitary ticks alone do not select the 3D matter cone (scalar ticks trivial; internal ticks leave multiple quantized drifts and no curved cone at current carrier density); direct Hamiltonian preservation of every rank-one permanent record is a REJECTED CATEGORY ERROR (commuting with every rank-one projector makes the same-site action scalar and freezes staggered hopping); unitary evolution alone does not form permanent records in a finite blank/record split; 'availability variation equals kinetic-coefficient variation' is FALSIFIED on the current text (the top-eigenspace availability rule varies while remaining independent of the kinetic law).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(carrier.*F.test|F.test.*carrier)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(Dirichlet.*frequency|frequency.*Dirichlet)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(conditional.*direction.*law|unknown.*noise.*scale)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "stdout": "origin/main:docs/ADMISSIBILITY_RULE_RECORDS_WITH_INERTIA_CONTENT_AS_DIRECTION_OF_TRAVEL_CONSERVED_MOMENTUM_STRUCTURELESS_EQUILIBRIUM_SOUND_SPEED_FORCES_NEED_CAPTURE_OR_EMISSION_BOUNDED_THEOREM_NOTE_2026-09-20.md:4:claim_scope: \"CONDITIONAL on a supplied clause that is not in the axioms memo and is not adopted: a record's content is its direction of travel. (S) streaming: each record, at rate 1, tries to step along its content; an empty target is entered, an occupied target exchanges contents with the record (the two records pass through each other), a solid site reflects it. (C) scattering: each bond, at rate gamma, re-draws the contents of its two records uniformly on their momentum class (six axes: an opposite pair becomes a uniformly random opposite pair, any other pair is exchanged with probability 1/2; sphere menu: P/2 +- r w with w uniform on the unit circle orthogonal to P = s + s', r^2 = 1 - |P|^2/4). (T1) every bulk event conserves record number and gas momentum; reflection conserves momentum only after including the body impulse,, the sum of the unit vectors of the contents, and the clause commutes with the 24 proper rotations; (T2) the uniform measure on configurations is stationary on every finite torus, with or without reflecting bodies, because every record of every configuration has exactly one streaming preimage and the scattering kernel is symmetric on each momentum class; it is not stationary if blocked attempts do nothing, nor under a head-on rule triggered by blocked attempts (1458 and 486 unbalanced configurations among the 12636 two-record configurations of the 3^3 torus); (T3) in a product state with content densities rho_d the mass current is (1 - rho) g, g the momentum density, and at isotropy the momentum flux is (rho/3) times the identity, the exchange term rho^2/3 restoring what exclusion removes from rho(1 - rho)/3, while the bond scattering carries no net momentum; the linearized conservation equations built on these currents have the speed squared (1 - rho)/3, and for the sphere menu with streaming probabilities max(0, s.e_k)/sqrt 3 the corresponding value is (1 - rho)/9; (T4) in the uniform state the mean force on a reflecting body is exactly zero for a body whose exposed faces balance in opposite directions, in the uniform gas state; (T5) the sphere menu's pair re-drawing keeps unit length and the sum. HISTORICAL AUTHOR OBSERVATIONS, NOT FRESH EVIDENCE: standing density waves oscillate at the predicted speeds; bodies that capture records attract each other and the dependence on separation; bodies that emit records. NOT claimed: a hydrodynamic limit theorem, any force law, any gravitational statement, that the clause is compatible with the Record axiom's locking sentence (the scattering re-draws contents), any adoption.\"\norigin/main:docs/BINARY_SHELL_LOCK_POSSIBILITY_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md:4:claim_scope: \"On a fully recorded binary coloring of the six axis directions, the 24 proper cubic rotations have 10 shell orbits. Under the soldered action on the six output directions, a conditional probability is covariant exactly when it is constant on the stabilizer's output orbits. The two constant shells force the uniform law of mass 1/6, whose support has six points. Every other shell has at least two output orbits, no shell has output type (1,), and singleton output orbits occur only in pairs, so no shell forces one locked direction. Under the unsoldered action on a two-label menu, there are 1024 covariant deterministic laws and 511 varying laws lock each label at each shell. No site and no rate are supplied. The bond factor and the 3x3 correlation are not used.\"\norigin/main:docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md:4:claim_scope: \"Conditional finite static-admissibility map for the supplied 3^24 support tables on the 3-torus. The exact 48-bit mask criterion, declared symmetry-normalized sweeps and all 44 digit-confined witnesses give at least 1,033,121,304 static classes and fibres at most 648. The original six-table, 305,659-configuration append-process comparison is retained: static membership and reachability differ in both directions. No membership oracle, empty-site readout, preparation ensemble or physical law is derived; arbitrary-torus refinement is unproved.\"\norigin/main:docs/REGISTERED_FRAMES_COORDINATE_LABELS_SWEEP_RIGIDITY_CORNER_PRICE_AND_SOLDERED_EMULATION_BOUNDED_THEOREM_NOTE_2026-09-22.md:4:claim_scope: \"Formation model with supplied skip-and-continue semantics, fixed external orders, fresh conditional draws, and unsoldered covariance. Letters carrying coordinate labels c in Z_4^K with a tag let the record carry the lattice frame (c(x) = c0 + sigma(x) mod 4, sigma sending the three lattice directions to generators of different axes), although the rule never sees a direction. For K=3 in a sweep, where every site forms after its three back-neighbours, the complete stationary records of the three-neighbour rule on Z^3 are exactly the frames aligned with the sweep (plaquette and frame lemmas; complete search on the torus Z_4^3 finds exactly 6 with c(0) = 0). A record with a frame carries the ice support (a link is occupied when its odd label coordinate is 1) and the parity-role letters, and emulates a soldered rule: for the soldered ice vertex-record rule on one vertex star the pulled-back law is exact in each frame. At a first formation the frame has a price set by the order: in corner growth the corner's three forward neighbours are independent and identically distributed, so the frame has probability at most (m-1)(m-2)/m^2 for m letters, and (K-1)(K-2)/K^2 for coordinate labels (2/9 at K = 3), attained; from a centre at most 1/972; a designed order reaches the frame with probability 1 on five listed boxes. No rule, reading, alphabet or order law is adopted.\"\norigin/main:docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md:4:claim_scope: \"Conditional mathematics of supplied indexed-effect families, not a physical Record-formation law. Original complete 21^6 census, exact finite ranks and abundance grids are retained. F_CONT needs an additional grading homogeneity clause; F_A gives the global pointwise Born form under the explicit additional direction-continuity hypothesis in Appendix A (per-circle a.e. form under integrable restrictions only); F_4 supplies real-scale homogeneity and the global Born form without regularity. M1/M2/M3 are chosen branch modifications, with no minimality or universal scale-reading necessity; a direction-only collinear counterexample is given. Indexed probabilities are pushed forward by summing repeated contents, and those content masses need not obey a cross-menu effect-grade clause. Rank-one refinements preserve raw sign odds; mixed menus preserve them only conditional on a directional outcome. Whole-field probability powers require a supplied independent one-shot auxiliary readout, not overwriting permanent Records. The four fixed 24x24 float64 matrices use full 1152-state eigensystems and a basis-sensitive individual-vector core criterion. No framework law, physical indexing/selection/formation, joint-law independence, regularity, tilt, or axiom-side Born forcing is derived.\"\norigin/main:docs/THE_CORNER_EIGENVECTOR_PROPERTY_IS_A_TWO_MODE_SPECTRAL_CONDITION_EXACT_ON_FLAT_BANDS_NOT_GENERAL_BOUNDED_THEOREM_NOTE_2026-09-03.md:4:claim_scope: \"Conditional finite encoding and free Slater/Born model. T1 record factorization holds on the actual cube/slab face-star incidence; uniform outcomes additionally use P_vv=1/2. T2 characterizes BOTH nonzero occupied and empty conditioned branches simultaneously, assuming Hermitian h, [h,P]=0, a separated occupied/empty spectral cut and 0<P_vv<1: h e_v lies in span(e_v,P e_v), with one direction in each of two distinct spectral eigenspaces. Flat h^2=cI, c>0, suffices but is not necessary. Original finite cube/slab/mass/perturbation and full-record-law numbers remain. Only the declared two-star tests are blind; nonadjacent disjoint pair (0,5) is an explicit nonuniform counterexample. No physical tick, parent acceptance or all-lattice spectral inference follows.\"\n",
+      "stderr": ""
+    }
+  ]
+}

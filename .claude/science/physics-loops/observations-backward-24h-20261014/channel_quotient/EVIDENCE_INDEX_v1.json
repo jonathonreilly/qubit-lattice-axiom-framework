@@ -1,0 +1,2021 @@
+{
+  "schema": "observations-backward-channel-evidence-v1",
+  "created_at": "2026-10-15T07:50:02.892510+00:00",
+  "claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "archive": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/EVIDENCE_ARCHIVE_v1.tar.gz",
+  "archive_sha256": "2d6984e0f66215bd62d535d05c907043989be0b1a4ead226943efdde6c91cd76",
+  "archive_bytes": 7789874,
+  "archive_members": [
+    {
+      "member": "channel_quotient/ADC_PHASE_CELL_EXTENSION_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/ADC_PHASE_CELL_EXTENSION_v1.md",
+      "bytes": 3355,
+      "sha256": "d8e4ccb325f8d5ede5c1f3e80c0c230a3fc27fac1e354e25d7ae7e6bf39ed8a3"
+    },
+    {
+      "member": "channel_quotient/ADC_PHASE_CELL_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/ADC_PHASE_CELL_RESULTS_v1.json",
+      "bytes": 436,
+      "sha256": "0981c522312d7f97c68fa00637f3794c94e73ad8099d3a2189d02c6f628f56b1"
+    },
+    {
+      "member": "channel_quotient/AUTHOR_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/AUTHOR_FREEZE_v1.json",
+      "bytes": 1935,
+      "sha256": "edb2953a42d8b76c1d4c5845ff9e0332fd60a985cd736d25d998ca2695a50791"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_EXECUTION_v1.json",
+      "bytes": 5794,
+      "sha256": "0c9ced7baf9a9773e2d3ed2aafbf567b9fb2a8e29944ec1ee89ce50152f260cb"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_KA_HEADERS_v1.jsonl.gz",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_MATHEMATICAL_RESULTS.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_MATHEMATICAL_RESULTS.json",
+      "bytes": 1432,
+      "sha256": "c8cbc115f8c4324b76326a4b75c37842cf1f3e4daa66247c58c55d3d2dd68d6e"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_NCO_CONTINUITY_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3467,
+      "sha256": "5e479a3917e25f9ccf079549b57ad4fe6a5c4116febfcba0e740fddd666006f3"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_RSR_DEVELOPMENT_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5474,
+      "sha256": "7749a64ea8005e8c8f555707f4288b8112d62cb5a5a50a61b58aab9343d51332"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_RSR_NCO_DIAGNOSTIC_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_RSR_NCO_DIAGNOSTIC_v1.json",
+      "bytes": 581688,
+      "sha256": "0ce5ac084b99b665891a6ffc19448fe43b2d12b1868e9844c37996b1d471ccee"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_RSR_WINDOW_DIGESTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_RSR_WINDOW_DIGESTS_v1.json",
+      "bytes": 198003,
+      "sha256": "404103e8c376de30b7a38a3e58e4ccebd19c6c755c095ce4583cec909e332a9b"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_SOURCE_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_SOURCE_FREEZE_v1.json",
+      "bytes": 3756,
+      "sha256": "fc0650b06d1c795e5051704a4e91443f9154c0d3ee752e222b924f724998b5e4"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_X_HEADERS_v1.jsonl.gz",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2"
+    },
+    {
+      "member": "channel_quotient/CANONICAL_summary.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_summary.json",
+      "bytes": 4182,
+      "sha256": "aa4b49aa7679a2f83a12a935a65e5547a529f4baf1a108c7ae972222033a92f6"
+    },
+    {
+      "member": "channel_quotient/CASSINI_SIS_SOURCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CASSINI_SIS_SOURCE_IDENTITY_v1.json",
+      "bytes": 331,
+      "sha256": "2719ec8a4965beccf183bab017c18f0efa3b068716c2f61b3eb2d2124bb85f39"
+    },
+    {
+      "member": "channel_quotient/CHANNEL_CONTROL_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CHANNEL_CONTROL_RESULTS_v1.json",
+      "bytes": 1284,
+      "sha256": "c1c64df58077d86ddd8360b9fcf116294bdf471cc34e464e3b5c8d58bbf9bd62"
+    },
+    {
+      "member": "channel_quotient/CHECKPOINT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CHECKPOINT_v1.json",
+      "bytes": 1548,
+      "sha256": "9b92ccd5414be5af0f4e2fd8377970ec80a7f19c19cceb6284d9d60deac46565"
+    },
+    {
+      "member": "channel_quotient/CHECKPOINT_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CHECKPOINT_v2.json",
+      "bytes": 3128,
+      "sha256": "61e48eaab0dd75e2dad937108a6c40a2aefda4609cb734aa9bf9ff5d7c323f6b"
+    },
+    {
+      "member": "channel_quotient/COHERENT_AVERAGING_WITNESS_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/COHERENT_AVERAGING_WITNESS_RESULTS_v1.json",
+      "bytes": 252,
+      "sha256": "acd56a5f7f869e0528d5d1762dcc77c8e7899840adc735c2620c79872e8ef128"
+    },
+    {
+      "member": "channel_quotient/COHERENT_AVERAGING_WITNESS_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/COHERENT_AVERAGING_WITNESS_v1.md",
+      "bytes": 1697,
+      "sha256": "fb9a809a717ae625f78fc18b6db78434e8d17d3071e716cfb01d14e638aade63"
+    },
+    {
+      "member": "channel_quotient/DOWNLOAD_FAILURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/DOWNLOAD_FAILURE_v1.json",
+      "bytes": 251,
+      "sha256": "1e6d1259e0681a713a1338e9c5100889f9885813a0909ea5adea257838e7bfeb"
+    },
+    {
+      "member": "channel_quotient/DOWNLOAD_FAILURE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/DOWNLOAD_FAILURE_v2.json",
+      "bytes": 435,
+      "sha256": "cca471dabc3abb5e31151d0801376fd21d700f9185b60c70542905d3dfad7420"
+    },
+    {
+      "member": "channel_quotient/EXECUTION_ENVIRONMENT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/EXECUTION_ENVIRONMENT_v1.json",
+      "bytes": 311,
+      "sha256": "88602d579c24d60d4fe1ccab9b74e6723269da2ae362fbb6b46bc734f49a4fec"
+    },
+    {
+      "member": "channel_quotient/GRAPH_DELTA_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/GRAPH_DELTA_v1.json",
+      "bytes": 1002,
+      "sha256": "f57e028b338fce55695485d0b06ef41fb703938bbe1f1d2c506ef6ed4dc5b78d"
+    },
+    {
+      "member": "channel_quotient/INTEGER_CHANNEL_WORKING_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/INTEGER_CHANNEL_WORKING_v1.md",
+      "bytes": 8247,
+      "sha256": "57f4729a1178ab0a7a2ed267c1a82c7a7764c271ce9ef238623261c404949878"
+    },
+    {
+      "member": "channel_quotient/INTEGER_CHANNEL_WORKING_v2.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/INTEGER_CHANNEL_WORKING_v2.md",
+      "bytes": 8356,
+      "sha256": "94f70dacb27bf8274bfee963852d46f0b65724c8781e1eb7cf4e2c7588bbd419"
+    },
+    {
+      "member": "channel_quotient/MAIN_PR_REFRESH_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MAIN_PR_REFRESH_v2.json",
+      "bytes": 299,
+      "sha256": "2c22dbd0f04ef9d7600fba30cff8e22130d0db56689e18d3884241a73da02cd9"
+    },
+    {
+      "member": "channel_quotient/MEASUREMENT_OBLIGATIONS_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MEASUREMENT_OBLIGATIONS_v1.md",
+      "bytes": 3614,
+      "sha256": "201b3972d42619b5c7622fdbd49dd24502ffa9f3b2f368887b2dfd34430190cb"
+    },
+    {
+      "member": "channel_quotient/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "bytes": 7815,
+      "sha256": "ba38f8ab1756ad493113381fd606e950f6330655001d622f1be90a74861d64f7"
+    },
+    {
+      "member": "channel_quotient/MUTATION_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MUTATION_RESULTS_v1.json",
+      "bytes": 9252,
+      "sha256": "a38b56740b218229cb4728afcbd5cc3395844165f40aada5a3918231e8ffbef9"
+    },
+    {
+      "member": "channel_quotient/NCO_CONTINUITY_ATTEMPT_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/NCO_CONTINUITY_ATTEMPT_v1.md",
+      "bytes": 2236,
+      "sha256": "59643d0021d3540a7380647d63627c48661fc10f41b5664b0746f6eaee6b7b3a"
+    },
+    {
+      "member": "channel_quotient/NCO_CONTINUITY_PROTOCOL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/NCO_CONTINUITY_PROTOCOL_v1.json",
+      "bytes": 1121,
+      "sha256": "6d26da3601fbdd928ac76166b6dfacca16359ad1520562248ece1138b982c92d"
+    },
+    {
+      "member": "channel_quotient/NCO_CONTINUITY_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3467,
+      "sha256": "6f926931061852e42b8f7d2b988c287c714b8640b19d70a8b2c747e0155de46c"
+    },
+    {
+      "member": "channel_quotient/REVIEW_RECORD_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/REVIEW_RECORD_v1.md",
+      "bytes": 7835,
+      "sha256": "c033e23237f4e6e3a8d7f23363623c9f38eb70f302aceb8fb042b59f2ecc3596"
+    },
+    {
+      "member": "channel_quotient/ROUTE_CONTEXT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/ROUTE_CONTEXT_v1.json",
+      "bytes": 2205,
+      "sha256": "77510b7e6294c7d64ee724e3d3b4d9926cebc95cd58f546baf94cce4dde0f787"
+    },
+    {
+      "member": "channel_quotient/RSR_DECODER_REVISION_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_DECODER_REVISION_v2.json",
+      "bytes": 312,
+      "sha256": "623ee1b48c9cf91abaeeda76fdbc0bd628535d1f5d2984d7a038fa8caf3abed5"
+    },
+    {
+      "member": "channel_quotient/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5369,
+      "sha256": "4c9e3155bf34e50f3e7169b0fbc9d716f41274c1043f8a90c8d90af1383f3eff"
+    },
+    {
+      "member": "channel_quotient/RSR_PREACCESS_PROTOCOL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_PREACCESS_PROTOCOL_v1.json",
+      "bytes": 2985,
+      "sha256": "8f85b14f328d7c0e707ef7fdb4b5bc24473aae7afea63059d410e0bbcd3ac852"
+    },
+    {
+      "member": "channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json",
+      "bytes": 1170,
+      "sha256": "c16ecb85276f5ce203925acd459f1ca9fbb41ca5c283da49b2a7aeec4856947a"
+    },
+    {
+      "member": "channel_quotient/RSR_REVISION_CORRESPONDENCE_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_REVISION_CORRESPONDENCE_v2.json",
+      "bytes": 410,
+      "sha256": "15ed52b2a8e6107a3d33f5fb130475d5e983fadc79c1d093ca0250eebecf3c4c"
+    },
+    {
+      "member": "channel_quotient/TARGET_CONTRACT_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/TARGET_CONTRACT_v1.json",
+      "bytes": 2814,
+      "sha256": "979c4d60a83329ed4781279ac36a4d1e9d24989bbcb2102f03eada3b201030ae"
+    },
+    {
+      "member": "channel_quotient/channel_controls_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/channel_controls_v1.py",
+      "bytes": 4553,
+      "sha256": "52f07a4aa69b2b5ebe889493722616bb28a7dbddb2e59b1b06f4f069a0196033"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/ADDITIONAL_HARDWARE_RETRIEVALS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/ADDITIONAL_HARDWARE_RETRIEVALS_v1.json",
+      "bytes": 968,
+      "sha256": "de8168e6b652d204e144f0be724a19593a7efdabe28d7349220618c46e6f40d4"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/ADDITIONAL_PRIMARY_RETRIEVALS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/ADDITIONAL_PRIMARY_RETRIEVALS_v1.json",
+      "bytes": 777,
+      "sha256": "015f21ec488593376f05af1b16002140b7c5fb22cb9178764bea3d9851bf9ce5"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/ARMSTRONG_PDF_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/ARMSTRONG_PDF_RETRIEVAL_v1.json",
+      "bytes": 297,
+      "sha256": "8b7f678e328b58e7f1c6af70ccd3f12dc497edfb7576e824ee8665bc58f62503"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/DESCANSO_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/DESCANSO_RETRIEVAL_v1.json",
+      "bytes": 278,
+      "sha256": "5e99350640835341ffa6054d682889ff23a823ed12f990e9f78220533fe934c0"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/INSTRUMENT_EVIDENCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_EVIDENCE_v1.json",
+      "bytes": 15226,
+      "sha256": "da0814ccf38cdda791bf1180bae77dcaa8f321aeecb1bd7f9ed68197fef2f205"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/INSTRUMENT_PREMISE_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_PREMISE_REVIEW_v1.md",
+      "bytes": 7881,
+      "sha256": "6f39332dff383544b84d51c4d8d2af66121565ae0631e123584d2ef6946fd5be"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/INSTRUMENT_REVIEW_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_REVIEW_IDENTITY_v1.json",
+      "bytes": 18456,
+      "sha256": "7415d095ffcc277c5bba4afd98d8925c6ae62e38b1f53839aa1a121ce012c85f"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/KLIORE_PDF_RETRIEVAL_v2.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/KLIORE_PDF_RETRIEVAL_v2.json",
+      "bytes": 435,
+      "sha256": "6f4fbfa795f7373d4acd0ae97161fb327f48e889da7efd09c93e13305429bd03"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/KLIORE_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/KLIORE_RETRIEVAL_v1.json",
+      "bytes": 223,
+      "sha256": "b6b196804d3352cc286271443b593e9bd40ea14417ec2fef67b110f1a7bd8406"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/PRIMARY_RETRIEVALS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/PRIMARY_RETRIEVALS_v1.json",
+      "bytes": 1298,
+      "sha256": "b9fa72b4fb2045b5cbdd0428653b136486f4ccf5ed343c4838f3e1bc2b51b5a4"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RETRIEVAL_FAILURES_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RETRIEVAL_FAILURES_v1.json",
+      "bytes": 3388,
+      "sha256": "9b1d547524633128b7b9da2267431315de7dc42e973910110504d4e609b6b5d1"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_PHASE_EVIDENCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_EVIDENCE_v1.json",
+      "bytes": 4770,
+      "sha256": "bd23d4e92c1ee445c19178f4a6c445843023e947cce61b6b35e1045c34d6bccd"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_IDENTITY_v1.json",
+      "bytes": 1241,
+      "sha256": "470d8592241c6fd6d515823a4afbd1d3935e3d5af4e0d9975a21c5cd94e80381"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_v1.md",
+      "bytes": 7829,
+      "sha256": "1ba68da8ecf67a6790ad640ae320bd0e9a7940969166d54f7f9c3b55777f2865"
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_SPEC_RETRIEVAL_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_SPEC_RETRIEVAL_v1.json",
+      "bytes": 640,
+      "sha256": "814a694a583f536ca6fa611e3cab29ad760074c2c63b70dc67830a38ecad518a"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/ADC_EXTENSION_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/ADC_EXTENSION_EXPOSURE_v1.json",
+      "bytes": 647,
+      "sha256": "74416d65bfb2e73c798a9a25648a44896dd2e6e005943d675706ab91a6c42b80"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/ADC_EXTENSION_REVIEW_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/ADC_EXTENSION_REVIEW_IDENTITY_v1.json",
+      "bytes": 1751,
+      "sha256": "69536dba5513529e0995fb9b4bfdf66c9d22b10b1b21f9832680007d9fd8d270"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/ADC_EXTENSION_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/ADC_EXTENSION_REVIEW_v1.md",
+      "bytes": 7492,
+      "sha256": "c504590c27231a6a1f64fc7c4650a8821c77422747967197e1d9fa8c5d620e51"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_ADC_PHASE_CELL_EXTENSION_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_ADC_PHASE_CELL_EXTENSION_v1.md",
+      "bytes": 3355,
+      "sha256": "d8e4ccb325f8d5ede5c1f3e80c0c230a3fc27fac1e354e25d7ae7e6bf39ed8a3"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_ADC_PHASE_CELL_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_ADC_PHASE_CELL_RESULTS_v1.json",
+      "bytes": 436,
+      "sha256": "0981c522312d7f97c68fa00637f3794c94e73ad8099d3a2189d02c6f628f56b1"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_COHERENT_AVERAGING_WITNESS_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_COHERENT_AVERAGING_WITNESS_v1.md",
+      "bytes": 1697,
+      "sha256": "fb9a809a717ae625f78fc18b6db78434e8d17d3071e716cfb01d14e638aade63"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 3349,
+      "sha256": "36e586a5f5e98a5bd0c116ee5e2cb8f86f727e8355971fdceade41245442ef65"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_CORRESPONDENCE_v1.md",
+      "bytes": 9551,
+      "sha256": "1de570d8b70360db764c0c2daf16174d9882630142e2ce683ad0a83d93ab60a9"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_IMPLEMENTATION_EXPOSURE_v1.json",
+      "bytes": 868,
+      "sha256": "dfd5022a9a9989d691cfe2138d89b0b1ab2ffce01008960d3eb7eb8ae089eb3c"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_INTEGER_CHANNEL_WORKING_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_INTEGER_CHANNEL_WORKING_v1.md",
+      "bytes": 8247,
+      "sha256": "57f4729a1178ab0a7a2ed267c1a82c7a7764c271ce9ef238623261c404949878"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_INTEGER_CHANNEL_WORKING_v2.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_INTEGER_CHANNEL_WORKING_v2.md",
+      "bytes": 8356,
+      "sha256": "94f70dacb27bf8274bfee963852d46f0b65724c8781e1eb7cf4e2c7588bbd419"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_NOTE_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_NOTE_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 2151,
+      "sha256": "c6d99789766dcc1cc4cf1720b434cc547fd9de0398bcf0a2d719d5c044947e10"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_NOTE_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_NOTE_CORRESPONDENCE_v1.md",
+      "bytes": 11287,
+      "sha256": "368f6206ec64211f9d72082f18059763118ef63d67f574bc019086726c6367d7"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_NOTE_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_NOTE_EXPOSURE_v1.json",
+      "bytes": 619,
+      "sha256": "80e09df43e88829bcf9d28541ddbc5308044e92335fd51eb5987f1acdd6c6390"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_WORKING_NOTE_v1_to_v2.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_WORKING_NOTE_v1_to_v2.diff",
+      "bytes": 1405,
+      "sha256": "dc99551afbcaa6b73a32180acdebb607a7c4283bafab207e94a304becb629922"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/AUTHOR_channel_controls_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/AUTHOR_channel_controls_v1.py",
+      "bytes": 4553,
+      "sha256": "52f07a4aa69b2b5ebe889493722616bb28a7dbddb2e59b1b06f4f069a0196033"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_IDENTITY_v1.json",
+      "bytes": 3590,
+      "sha256": "91a81fbc2acbd0035ae5aaf0d95a421e4983f92b490fda43d03a3c730604c8de"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_v1.md",
+      "bytes": 2097,
+      "sha256": "04f7482621b2972d72ccdf2a578d37d3ca3875deac7ce3ed7c9de724beadecfd"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_EXPOSURE_v1.json",
+      "bytes": 986,
+      "sha256": "c10b7929fd70937ffa8778f88b6ab7e4648a947d2628c86235031bf6edaa26fc"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_HELPER_ADAPTATION_v1.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_HELPER_ADAPTATION_v1.diff",
+      "bytes": 1267,
+      "sha256": "e4d76662ce47f19689b531e645812580b1f0ec6b3db1995404b60e46a0f96538"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_IDENTITY_v1.json",
+      "bytes": 4044,
+      "sha256": "5ee2bdef5b577927eb8b9208c62fcf04a666e4d6e94ac203ee2e9b649cc54eb2"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_v1.md",
+      "bytes": 13926,
+      "sha256": "d33dc165fdf99b9128e4cf1e5f4c7180c64bdb213806a74102786235a0ec9395"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 27107,
+      "sha256": "9f84d0166d719ef1c6c358108dd757520514769e092d1dc64fd5ce25a422eff7"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_STATIC_BINDING_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_STATIC_BINDING_v1.json",
+      "bytes": 768,
+      "sha256": "07a3ee4bbe0feb85d9e5e7cfd6be93bc156bdc77b33a4ab59b0240a6e96f1e65"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_scalar_channel_calibration_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_scalar_channel_calibration_check.py",
+      "bytes": 6183,
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CANONICAL_scalar_channel_quotient_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_scalar_channel_quotient_controls.py",
+      "bytes": 4838,
+      "sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CONTROL_SOURCE_FREEZE_v1.json",
+      "bytes": 431,
+      "sha256": "dc5fa601070c07b0da351628222b114c353d9ea01c202d1c978886caecae207a"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_EXPOSURE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_EXPOSURE_v1.json",
+      "bytes": 1497,
+      "sha256": "9aafa6c91baf8f84bf536e9b6cfd7fcc8bc8903f499462c586b0548c79ca3df5"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 27238,
+      "sha256": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.diff",
+      "bytes": 962,
+      "sha256": "82ad31865b87c9fc7d354e1569a482be1121a7183981c633a66f2db14b0779b0"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_calibration_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_calibration_check.py",
+      "bytes": 6183,
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_calibration_check.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_calibration_check.py.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_quotient_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_quotient_controls.py",
+      "bytes": 4862,
+      "sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_quotient_controls.py.diff",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CURRENT_DELTA_v1_scalar_channel_quotient_controls.py.diff",
+      "bytes": 294,
+      "sha256": "3ce06b89177d86e3ef123a1bfe1ac11e7927713ec02d70abe0b0f0d19aef6a85"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 2427,
+      "sha256": "32be25beb3ba9d6f2079c64657f289ef79b14f47f3329e0bfb893e661a45fcdd"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/INDEPENDENT_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_RESULTS_v1.json",
+      "bytes": 12368,
+      "sha256": "ab81224aad175c6cacddbb86fb2c67edb08370196786c380db916f8b6f2cad64"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 12058,
+      "sha256": "ffdd9e7de412a67b8d13df50cb7508e7fdf02575aa237f5600358f8a379fe33c"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/INDEPENDENT_RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/INDEPENDENT_RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_RUN_v1.stdout",
+      "bytes": 43,
+      "sha256": "51bdfeba7d51e06b3b549abcc7a6e4a79e6363f9992c9849a3aab28da5c15b3d"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/PRECHECK_FREEZE_v1.json",
+      "bytes": 548,
+      "sha256": "4fec7e9cba861ef30d5815beaa5924162037ca6e08448a617e8d7e5b273037dd"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/PRECHECK_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/PRECHECK_v1.md",
+      "bytes": 13400,
+      "sha256": "fad46dbd5407d5bc3b9f77d002cae9c33f2b8a1753dad457c25a32fd01c82760"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/TARGET_CONTRACT_SOURCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/TARGET_CONTRACT_SOURCE_v1.json",
+      "bytes": 2814,
+      "sha256": "979c4d60a83329ed4781279ac36a4d1e9d24989bbcb2102f03eada3b201030ae"
+    },
+    {
+      "member": "channel_quotient/independent_math_v1/independent_channel_controls_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/independent_channel_controls_v1.py",
+      "bytes": 11060,
+      "sha256": "d1c79707eca7140f6ebc53a41f78920358f420411d4f5c2a218766f2772d917f"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1a1_HEADERS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1a1_HEADERS_v1.jsonl",
+      "bytes": 10778037,
+      "sha256": "172057f8387ebe358373c975640174755821efe8124f15c873bcc53d92f4dd92"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1a1_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1a1_SUMMARY_v1.json",
+      "bytes": 19085,
+      "sha256": "6aad2b581c772089858ae4da40eb2547386053217c54fd0a55f1911ac4ac1a31"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1a1_WINDOW_RECORDS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1a1_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 395623,
+      "sha256": "9f6bcf04a723db1b4805e3ee6b1107db3a59338dd7a273bdba86d50a1e9a0fda"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1b1_HEADERS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1b1_HEADERS_v1.jsonl",
+      "bytes": 10824774,
+      "sha256": "67f55dadd75eb7f92792b31371554d9c581e441cd3acdb92e1dbd1e6f597f481"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1b1_SUMMARY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1b1_SUMMARY_v1.json",
+      "bytes": 19114,
+      "sha256": "44fbcc592624b78ead794fa2eef8bc827e20f358abaf1e4554a59af4d65801b8"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1b1_WINDOW_RECORDS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1b1_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 397589,
+      "sha256": "fd7cd45765619adfcb6374bc2cc76993e638892f2ef7a04f2752dc17da5a2f58"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_EXECUTION_v1.json",
+      "bytes": 342,
+      "sha256": "27efadac5c00c9afd8e737b0a0d00e167923d39be15a7b40147d340f6876bba2"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_COMPARISON_RUN_v1.stdout",
+      "bytes": 4740,
+      "sha256": "df8171a5a1d69efae704c28143c9f954e1f742d92cb63031d904e883901053c6"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 7337,
+      "sha256": "3beae4b1b22966fb1e7bf0c1efa9b8cef3cced4833918b8bd67746bc9b88eaea"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_RESULTS_v1.json",
+      "bytes": 4740,
+      "sha256": "df8171a5a1d69efae704c28143c9f954e1f742d92cb63031d904e883901053c6"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_CORRESPONDENCE_REVIEW_v1.md",
+      "bytes": 7433,
+      "sha256": "9d0cd5eba5dacdb452874898a552037deb4c4a3c4a91a54287218b82cc13ddb6"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_INPUTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_INPUTS_v1.json",
+      "bytes": 3935,
+      "sha256": "9208668f4c85194b7cda323358474088ca0a31a4114952d64093840e6ad169f1"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_VERSION_CORRESPONDENCE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_VERSION_CORRESPONDENCE_v1.json",
+      "bytes": 4568,
+      "sha256": "192cb0a177d80e0f311781ebb36b28f882635777aba9b71666648ce10b649bc1"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/AUTHOR_VERSION_DIFF_v1.patch",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/AUTHOR_VERSION_DIFF_v1.patch",
+      "bytes": 2610,
+      "sha256": "3eb6d1e2e0c4c36804eee581688872918f6f81637d93a0b4da4e250d6df31738"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/CANONICAL_RECEIVER_DELTA_v1.patch",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_RECEIVER_DELTA_v1.patch",
+      "bytes": 3054,
+      "sha256": "4fc40fb97f61c247579fa572a79f5f603b548c2767a194f0fac8f7f607408d06"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 11674,
+      "sha256": "5e548931a5fb5c24b44b8dff6475d1ef06db87e6d62176a5a12689ceeb250236"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_v1.md",
+      "bytes": 10900,
+      "sha256": "f5ce9dae93e6a8bbf75bcce2c39f135908047aa8ae3ebb555bfe2a2014e59a64"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/EXECUTION_v1.json",
+      "bytes": 699,
+      "sha256": "9c1e96f69e4df7656a51354bdecde2c8746725f134826091c4560d1fc1d79717"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_IDENTITY_v1.json",
+      "bytes": 10609,
+      "sha256": "c0bb7c92ee2e5fc222c4624045613b867abe7857c30aada21dab674ef9d37f33"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 3539,
+      "sha256": "1f14b5700dcb62934a9f59f63b4bd31a83a51d85d33cb8100420276a3ac48e1d"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/FINAL_IDENTITY_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_IDENTITY_v1.json",
+      "bytes": 6789,
+      "sha256": "869f984541def9f9103a5063462243a52aa337343fae70af3434c7c6a190f10b"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/INDEPENDENT_REVIEW_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 9268,
+      "sha256": "1ea7a956229b4e1ab56fc2310f2054022f7be6485a047c0ba7fa5fb90454cbb9"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/MATCHED_WINDOW_RECORDS_v1.jsonl",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/MATCHED_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 134370,
+      "sha256": "ddaad7450791678f90ddd8b14a1c527b9f708559677a52b995e14045653aad83"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_EXECUTION_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_EXECUTION_v1.json",
+      "bytes": 293,
+      "sha256": "e178892cfd43945a9ce000dcec26805f36ef25d9d51195f58143f4356bd0ba2a"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_RESULTS_v1.json",
+      "bytes": 7276,
+      "sha256": "beae131f3ec86634b119e579c34330de688a6bdf420c9702f5750c44218199e3"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_STDERR_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_STDERR_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_STDOUT_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_STDOUT_v1.txt",
+      "bytes": 107,
+      "sha256": "65d281c4c0be919c01c8c215f3b8b64c508a44f840dc65d03477ee15b81d409d"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/NCO_HEADER_SPOTCHECK_v1.py",
+      "bytes": 3232,
+      "sha256": "4b38d05c5088fe44c1477b619f4869bf8e66d45a25b4eba314cea251f403015c"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/PREACCESS_FREEZE_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/PREACCESS_FREEZE_v1.json",
+      "bytes": 2853,
+      "sha256": "0a296403a2c4f0af01e787346c360d6c2b2d1d34a140f815a5ddfa920bbf290b"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/PRECHECK_v1.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/PRECHECK_v1.md",
+      "bytes": 6159,
+      "sha256": "05e6637375d8c56f203da2ed44cd821eb20c8e08ddef331040094c32f2bafb36"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/PRIMARY_LABEL_SCHEMA_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/PRIMARY_LABEL_SCHEMA_v1.json",
+      "bytes": 26699,
+      "sha256": "3bb07115387657640d5cf10d69c27c7fecf0e92d20557c1af62197cee7ce3af7"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/RESULTS_v1.json",
+      "bytes": 49266,
+      "sha256": "e1a725bdd4ff2987ae1dbaaf6bf8e71e6f0dbe08225c270cb25afb45a96359ef"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/RUN_v1.stderr",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/RUN_v1.stdout",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/RUN_v1.stdout",
+      "bytes": 3549,
+      "sha256": "be402dca7fc82cd7e8b9cc4e4a391189169f4105e9e2bdbf791e47cd585eaeee"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/SYNTHETIC_CONTROLS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/SYNTHETIC_CONTROLS_v1.json",
+      "bytes": 920,
+      "sha256": "219c06e3d07930a8a542f21074266f395824a2cda42b473e7612be035df9a256"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_correspondence_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_correspondence_v1.py",
+      "bytes": 7609,
+      "sha256": "ee355b7f611beb2cb7276fa8508ad7564631165d65b71f47b5c35b11ea82ffe8"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/KA_HEADERS_v1.jsonl.gz",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5375,
+      "sha256": "a83031876f0d04482510caa9ae26d15f5b464886d39617221b30363784acbe92"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/RSR_WINDOW_DIGESTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/RSR_WINDOW_DIGESTS_v1.json",
+      "bytes": 198003,
+      "sha256": "404103e8c376de30b7a38a3e58e4ccebd19c6c755c095ce4583cec909e332a9b"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/X_HEADERS_v1.jsonl.gz",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/rsr_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/rsr_development_v1.py",
+      "bytes": 9794,
+      "sha256": "fbb6967ffdd9e6b4e539d0c6df2c4beaa009cd0e55381f46d9e4f32be7288b5d"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/rsr_development_v2.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/rsr_development_v2.py",
+      "bytes": 10661,
+      "sha256": "a796ec36fbbf1247353555e4f9e6ffd8f4c2022040c80bb833d43f710070141c"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/author_sources_v1/v1_RSR_DEVELOPMENT_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/author_sources_v1/v1_RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5369,
+      "sha256": "4c9e3155bf34e50f3e7169b0fbc9d716f41274c1043f8a90c8d90af1383f3eff"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/PRELIMINARY_NCO_CONTINUITY_RESULTS_v1.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/PRELIMINARY_NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3467,
+      "sha256": "5e479a3917e25f9ccf079549b57ad4fe6a5c4116febfcba0e740fddd666006f3"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/PRELIMINARY_summary.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/PRELIMINARY_summary.json",
+      "bytes": 4181,
+      "sha256": "1b285afef5946d8afbba1d37ffe9a3af388e711916b8a827e158f7256b7f57dd"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 27238,
+      "sha256": "5bd3667c7e34646e616c82498401c8c9169604ce471aeefefd3f1b1da65f6616"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_nco_continuity.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_nco_continuity.py",
+      "bytes": 1860,
+      "sha256": "f172df18e600a0a5e939c1dc9f5ad6b493404f4105f7fbe73879c27bf37c307f"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_rsr_development.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_rsr_development.py",
+      "bytes": 11336,
+      "sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_rsr_development_inputs.json",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/cassini_rsr_development_inputs.json",
+      "bytes": 1527,
+      "sha256": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/scalar_channel_calibration_check.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/scalar_channel_calibration_check.py",
+      "bytes": 6183,
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/canonical_sources_v1/scalar_channel_quotient_controls.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/canonical_sources_v1/scalar_channel_quotient_controls.py",
+      "bytes": 4862,
+      "sha256": "63722a00b46a66c6b350c64a524a6d13d49bf78c3fcd038957b46c3237b37696"
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/independent_rsr_reader_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/independent_rsr_reader_v1.py",
+      "bytes": 18655,
+      "sha256": "ee3b0475758f3033dd54c989986419d3a73adf76ad329f1c3d2068e3d52e43b5"
+    },
+    {
+      "member": "channel_quotient/nco_continuity_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/nco_continuity_v1.py",
+      "bytes": 1857,
+      "sha256": "7738ba0c5bf4dccb2950b84306ece1f01cc48ef578da474cc8cdfc81efa1271d"
+    },
+    {
+      "member": "channel_quotient/rsr_development_v1.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/rsr_development_v1.py",
+      "bytes": 9794,
+      "sha256": "fbb6967ffdd9e6b4e539d0c6df2c4beaa009cd0e55381f46d9e4f32be7288b5d"
+    },
+    {
+      "member": "channel_quotient/rsr_development_v2.py",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/rsr_development_v2.py",
+      "bytes": 10661,
+      "sha256": "a796ec36fbbf1247353555e4f9e6ffd8f4c2022040c80bb833d43f710070141c"
+    },
+    {
+      "member": "runtime/M9_CANONICAL_EXECUTION_v2.json",
+      "original_runtime": "M9_CANONICAL_EXECUTION_v2.json",
+      "bytes": 5794,
+      "sha256": "0c9ced7baf9a9773e2d3ed2aafbf567b9fb2a8e29944ec1ee89ce50152f260cb"
+    },
+    {
+      "member": "runtime/M9_CANONICAL_RUN_v1.stderr",
+      "original_runtime": "M9_CANONICAL_RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_CANONICAL_RUN_v1.stdout",
+      "original_runtime": "M9_CANONICAL_RUN_v1.stdout",
+      "bytes": 4754,
+      "sha256": "30b90d9bb20f26e5920c173d335eb5d6b663833cbff9bb31fad781040707e893"
+    },
+    {
+      "member": "runtime/M9_GRAPH_DELTA_v1.json",
+      "original_runtime": "M9_GRAPH_DELTA_v1.json",
+      "bytes": 1002,
+      "sha256": "f57e028b338fce55695485d0b06ef41fb703938bbe1f1d2c506ef6ed4dc5b78d"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/check.py",
+      "bytes": 511,
+      "sha256": "7f8d464081c1e0ae48914e53137f15e4e8cfd0c774157475c3d41510fc4d6add"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/mutated.py",
+      "bytes": 1792,
+      "sha256": "c9cda45e0f0068dd247dc190c5ab968469d2056cbdb3b86fb5886d5ca9de57d4"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3395,
+      "sha256": "35c52f8c092e2f06c294deeb2d12c45e07c8db16104295fc11f24fbbd9ca5b53"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/stderr.txt",
+      "bytes": 517,
+      "sha256": "5537e38f6f8bd57d05ada97e219d2be4cdc637437c5a359a2c691098bfe14e7e"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/check.py",
+      "bytes": 511,
+      "sha256": "7f8d464081c1e0ae48914e53137f15e4e8cfd0c774157475c3d41510fc4d6add"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/mutated.py",
+      "bytes": 1831,
+      "sha256": "6bdd1ae6789febec8f91bd271c538755ae8181deaa806ec6cd9935ea34c95cd6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3313,
+      "sha256": "08ea2aa9be9478a2155de9daf767570c13934fabc83b720236fc186974ca28c7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/stderr.txt",
+      "bytes": 401,
+      "sha256": "49f6b62a4f7a33f259ace7b96c6ecec542d33f86e64c6371f53b81bc88e027c3"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/check.py",
+      "bytes": 511,
+      "sha256": "7f8d464081c1e0ae48914e53137f15e4e8cfd0c774157475c3d41510fc4d6add"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/mutated.py",
+      "bytes": 1845,
+      "sha256": "210d4248278879ee4bd1145dc8cec2991a65f0a301c625a3672ef24baeb70530"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3586,
+      "sha256": "14f17bd03e49cf7511919c4ad0d9714ebe6996dec66d60cd11cfd2da7d0c443c"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/stderr.txt",
+      "bytes": 522,
+      "sha256": "e2ed0e26ca5a61f936b8e35addcf142f1ee2f8170a3ff311fde33517231efe33"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/character_exponent/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/character_exponent/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/character_exponent/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/character_exponent/mutated.py",
+      "bytes": 11312,
+      "sha256": "0637fb229abc2301906e084b038855c4b300c04e995236af877d16b116e6a35f"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/character_exponent/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/character_exponent/stderr.txt",
+      "bytes": 469,
+      "sha256": "88316a8e924a2ec1c4664b015048625ec3adc8196326dfa24c881f51d2851ac1"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/character_exponent/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/character_exponent/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/common_signal_ratio/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/common_signal_ratio/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/common_signal_ratio/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/common_signal_ratio/mutated.py",
+      "bytes": 4834,
+      "sha256": "74f17f0431f0962966ec8dedb8ad8895bbb00ce3347c6b6318fecf8de25d8e7b"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/common_signal_ratio/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/common_signal_ratio/stderr.txt",
+      "bytes": 601,
+      "sha256": "d2d9a2bdaf0523fd87cb16d5c7d7a3d944af626cdb936147c6aa3be5033d374d"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/common_signal_ratio/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/common_signal_ratio/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/error_box_absolute_value/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/error_box_absolute_value/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/error_box_absolute_value/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/error_box_absolute_value/mutated.py",
+      "bytes": 4833,
+      "sha256": "e540bbd89e8a476bc3f97d29c057ccbdc6333230d2c90fdf44c49c1cc6dfd57a"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/error_box_absolute_value/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/error_box_absolute_value/stderr.txt",
+      "bytes": 650,
+      "sha256": "86e664c587bbcf449c6014c63627a365cc6a7c69abd484399f69b25d70c36a61"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/error_box_absolute_value/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/error_box_absolute_value/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/negative_interval_endpoint/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/negative_interval_endpoint/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/negative_interval_endpoint/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/negative_interval_endpoint/mutated.py",
+      "bytes": 11312,
+      "sha256": "9c0d2d53005d2fbb68e35e64b3343d5b7e73753d3219af10561e35bb66cc229d"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/negative_interval_endpoint/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/negative_interval_endpoint/stderr.txt",
+      "bytes": 505,
+      "sha256": "41709d8e16a02a6ff1b0585b66bc2aa0bd84a91d3c9c2e8f7dc720071809e979"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/negative_interval_endpoint/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/negative_interval_endpoint/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/packed_quadrature_half/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/packed_quadrature_half/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/packed_quadrature_half/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/packed_quadrature_half/mutated.py",
+      "bytes": 11311,
+      "sha256": "4539461651aa1249b588322df5e0d66e07f18cb93575e89382ec934006514fd2"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/packed_quadrature_half/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/packed_quadrature_half/stderr.txt",
+      "bytes": 491,
+      "sha256": "4b59289521d159ba2edfbfc5fdc30eb9c801e0aac7f7368a7921a52f40516ac2"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/packed_quadrature_half/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/packed_quadrature_half/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/primitive_denominator/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/primitive_denominator/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/primitive_denominator/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/primitive_denominator/mutated.py",
+      "bytes": 4817,
+      "sha256": "a476ac68f69e0fe4a55a94d96355be2356ab31a4a7c357ac5096fb42d6d5c1ed"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/primitive_denominator/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/primitive_denominator/stderr.txt",
+      "bytes": 638,
+      "sha256": "fc604d0f67fa4ed2a7873523b4ea07667b74858e32ad23ec4a46fd36874a817f"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/primitive_denominator/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/primitive_denominator/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/relative_angle_orientation/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/relative_angle_orientation/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/relative_angle_orientation/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/relative_angle_orientation/mutated.py",
+      "bytes": 11312,
+      "sha256": "3f4eb47f91c3743d651c3b642befd7ef248bf6344880556194b17b6b702b185c"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/relative_angle_orientation/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/relative_angle_orientation/stderr.txt",
+      "bytes": 485,
+      "sha256": "6ecb1ada22a09b53d9d3bdaa1e6f1a459b63564ef6b7adba2a2d1dffe7ffc692"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/relative_angle_orientation/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/relative_angle_orientation/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/sample_time_order/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/sample_time_order/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/sample_time_order/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/sample_time_order/mutated.py",
+      "bytes": 11320,
+      "sha256": "833b5146ebe847ff23f98c3f3f2502a43cfce981ccd1e35ec51d0f64a602bd80"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/sample_time_order/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/sample_time_order/stderr.txt",
+      "bytes": 481,
+      "sha256": "6ff274e531479f587a12d26e667f92ab46a9c6e81026ba1401d34738069c966f"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/sample_time_order/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/sample_time_order/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/small_channel_sign/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/small_channel_sign/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/small_channel_sign/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/small_channel_sign/mutated.py",
+      "bytes": 4837,
+      "sha256": "68e98ad21ddcb610b8f5fe5b4e185797e4d4eb9b33f729bb2c29bbad55ceb3b3"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/small_channel_sign/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/small_channel_sign/stderr.txt",
+      "bytes": 623,
+      "sha256": "616453e3e342a55e45fc3c7f0fe3b8ac916cbc8941e292b8a1b7128a9fc5ba20"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/small_channel_sign/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/small_channel_sign/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/temporal_orientation/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/temporal_orientation/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/temporal_orientation/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/temporal_orientation/mutated.py",
+      "bytes": 4838,
+      "sha256": "1b3e4764a43e7fa7871529972cab62a1787a70f8e4e66836056a92bf0d6dc803"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/temporal_orientation/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/temporal_orientation/stderr.txt",
+      "bytes": 655,
+      "sha256": "1620d723db6a422c4e62a04e11088486f3ccd187887dfa164cbebd6effdc195b"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/temporal_orientation/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/temporal_orientation/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/truncation_center/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/truncation_center/check.py",
+      "bytes": 215,
+      "sha256": "6f4e7016a9cd11a69c529ed17e9ec23b650efba53438c1550a5c6788a71812a6"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/truncation_center/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/truncation_center/mutated.py",
+      "bytes": 11310,
+      "sha256": "b519ee982bf2aae886af5360d8875f7c8444128094bf422577a51c065a878f41"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/truncation_center/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/truncation_center/stderr.txt",
+      "bytes": 467,
+      "sha256": "350b95bb1f2ba0122f6f5a92b82e1e0c6576ef6737c5963fba98c1cd113aa142"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/truncation_center/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/truncation_center/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/turnaround_numerator/check.py",
+      "original_runtime": "M9_MUTATIONS_v1/turnaround_numerator/check.py",
+      "bytes": 210,
+      "sha256": "1a4ef690c43a428689f77e0e5ecac670e735c36771301681d8b048399c4eb0d7"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/turnaround_numerator/mutated.py",
+      "original_runtime": "M9_MUTATIONS_v1/turnaround_numerator/mutated.py",
+      "bytes": 4838,
+      "sha256": "1c84d0228901c37bc36409517f5fc62250be208fd84db8c187c66c9aac6aaeef"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/turnaround_numerator/stderr.txt",
+      "original_runtime": "M9_MUTATIONS_v1/turnaround_numerator/stderr.txt",
+      "bytes": 633,
+      "sha256": "fb04d2db62f0cf2d95889ef51c5a16054a8343ee2147a444a1ceb67dc84f6b9d"
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/turnaround_numerator/stdout.txt",
+      "original_runtime": "M9_MUTATIONS_v1/turnaround_numerator/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_OPEN_PRS_v1.json",
+      "original_runtime": "M9_OPEN_PRS_v1.json",
+      "bytes": 8844,
+      "sha256": "a8f034dffe383518238ba3fbf611b626a99398c7fed568122f1a29e46dd7ad48"
+    },
+    {
+      "member": "runtime/M9_OPEN_PRS_v2.json",
+      "original_runtime": "M9_OPEN_PRS_v2.json",
+      "bytes": 9983,
+      "sha256": "96b4d7b569cd934eb6ff3cac0b19644c89db283feacac32a8791d4d36231c1d1"
+    },
+    {
+      "member": "runtime/M9_PRIOR_ART_SEARCH_1_v1.txt",
+      "original_runtime": "M9_PRIOR_ART_SEARCH_1_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_PRIOR_ART_SEARCH_2_v1.txt",
+      "original_runtime": "M9_PRIOR_ART_SEARCH_2_v1.txt",
+      "bytes": 31334,
+      "sha256": "87bc50416c12ff1203b9efec7fb3f6b51ebec19bd63985e7cf1d555d55b22748"
+    },
+    {
+      "member": "runtime/M9_PRIOR_ART_SEARCH_3_v1.txt",
+      "original_runtime": "M9_PRIOR_ART_SEARCH_3_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_REFRESH_v2.json",
+      "original_runtime": "M9_REFRESH_v2.json",
+      "bytes": 299,
+      "sha256": "2c22dbd0f04ef9d7600fba30cff8e22130d0db56689e18d3884241a73da02cd9"
+    },
+    {
+      "member": "runtime/M9_RSR_RUN_v1.stderr",
+      "original_runtime": "M9_RSR_RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_RSR_RUN_v1.stdout",
+      "original_runtime": "M9_RSR_RUN_v1.stdout",
+      "bytes": 5369,
+      "sha256": "4c9e3155bf34e50f3e7169b0fbc9d716f41274c1043f8a90c8d90af1383f3eff"
+    },
+    {
+      "member": "runtime/M9_RSR_RUN_v2.stderr",
+      "original_runtime": "M9_RSR_RUN_v2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_RSR_RUN_v2.stdout",
+      "original_runtime": "M9_RSR_RUN_v2.stdout",
+      "bytes": 5375,
+      "sha256": "a83031876f0d04482510caa9ae26d15f5b464886d39617221b30363784acbe92"
+    },
+    {
+      "member": "runtime/M9_VOCAB_CORE_v1.json",
+      "original_runtime": "M9_VOCAB_CORE_v1.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "member": "runtime/M9_VOCAB_CORE_v2.json",
+      "original_runtime": "M9_VOCAB_CORE_v2.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_fix_v1.json",
+      "original_runtime": "M9_VOCAB_FINAL_fix_v1.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_fix_v1.stderr",
+      "original_runtime": "M9_VOCAB_FINAL_fix_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_fix_v1.stdout",
+      "original_runtime": "M9_VOCAB_FINAL_fix_v1.stdout",
+      "bytes": 206,
+      "sha256": "7c30ff534d6c0195a96afb437413c4458b072bd1dc605090bd09438e0e1c8c5d"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_post_v1.json",
+      "original_runtime": "M9_VOCAB_FINAL_post_v1.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_post_v1.stderr",
+      "original_runtime": "M9_VOCAB_FINAL_post_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_post_v1.stdout",
+      "original_runtime": "M9_VOCAB_FINAL_post_v1.stdout",
+      "bytes": 207,
+      "sha256": "6ed674a674b118e802bbe8d75b03a874b1b82ff8aae0786c9dd5fbff4d339c9c"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_pre_v1.json",
+      "original_runtime": "M9_VOCAB_FINAL_pre_v1.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_pre_v1.stderr",
+      "original_runtime": "M9_VOCAB_FINAL_pre_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "member": "runtime/M9_VOCAB_FINAL_pre_v1.stdout",
+      "original_runtime": "M9_VOCAB_FINAL_pre_v1.stdout",
+      "bytes": 206,
+      "sha256": "2626af85842f8b30af94e096b1787755ab71ff62f45c9f251f18ae45fca11b0d"
+    }
+  ],
+  "plain_evidence": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/REVIEW_RECORD_v1.md",
+      "bytes": 7835,
+      "sha256": "c033e23237f4e6e3a8d7f23363623c9f38eb70f302aceb8fb042b59f2ecc3596"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_SOURCE_FREEZE_v1.json",
+      "bytes": 3756,
+      "sha256": "fc0650b06d1c795e5051704a4e91443f9154c0d3ee752e222b924f724998b5e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_EXECUTION_v1.json",
+      "bytes": 5794,
+      "sha256": "0c9ced7baf9a9773e2d3ed2aafbf567b9fb2a8e29944ec1ee89ce50152f260cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_summary.json",
+      "bytes": 4182,
+      "sha256": "aa4b49aa7679a2f83a12a935a65e5547a529f4baf1a108c7ae972222033a92f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_MATHEMATICAL_RESULTS.json",
+      "bytes": 1432,
+      "sha256": "c8cbc115f8c4324b76326a4b75c37842cf1f3e4daa66247c58c55d3d2dd68d6e"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_RSR_DEVELOPMENT_RESULTS_v1.json",
+      "bytes": 5474,
+      "sha256": "7749a64ea8005e8c8f555707f4288b8112d62cb5a5a50a61b58aab9343d51332"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_NCO_CONTINUITY_RESULTS_v1.json",
+      "bytes": 3467,
+      "sha256": "5e479a3917e25f9ccf079549b57ad4fe6a5c4116febfcba0e740fddd666006f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CANONICAL_RSR_WINDOW_DIGESTS_v1.json",
+      "bytes": 198003,
+      "sha256": "404103e8c376de30b7a38a3e58e4ccebd19c6c755c095ce4583cec909e332a9b"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json",
+      "bytes": 1170,
+      "sha256": "c16ecb85276f5ce203925acd459f1ca9fbb41ca5c283da49b2a7aeec4856947a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MUTATION_RESULTS_v1.json",
+      "bytes": 9252,
+      "sha256": "a38b56740b218229cb4728afcbd5cc3395844165f40aada5a3918231e8ffbef9"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MUTATION_CURRENT_SOURCE_BINDING_v1.json",
+      "bytes": 7815,
+      "sha256": "ba38f8ab1756ad493113381fd606e950f6330655001d622f1be90a74861d64f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/CASSINI_SIS_SOURCE_IDENTITY_v1.json",
+      "bytes": 331,
+      "sha256": "2719ec8a4965beccf183bab017c18f0efa3b068716c2f61b3eb2d2124bb85f39"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/GRAPH_DELTA_v1.json",
+      "bytes": 1002,
+      "sha256": "f57e028b338fce55695485d0b06ef41fb703938bbe1f1d2c506ef6ed4dc5b78d"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MAIN_PR_REFRESH_v2.json",
+      "bytes": 299,
+      "sha256": "2c22dbd0f04ef9d7600fba30cff8e22130d0db56689e18d3884241a73da02cd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/TARGET_CONTRACT_v1.json",
+      "bytes": 2814,
+      "sha256": "979c4d60a83329ed4781279ac36a4d1e9d24989bbcb2102f03eada3b201030ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/ROUTE_CONTEXT_v1.json",
+      "bytes": 2205,
+      "sha256": "77510b7e6294c7d64ee724e3d3b4d9926cebc95cd58f546baf94cce4dde0f787"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/NCO_CONTINUITY_PROTOCOL_v1.json",
+      "bytes": 1121,
+      "sha256": "6d26da3601fbdd928ac76166b6dfacca16359ad1520562248ece1138b982c92d"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/NCO_CONTINUITY_ATTEMPT_v1.md",
+      "bytes": 2236,
+      "sha256": "59643d0021d3540a7380647d63627c48661fc10f41b5664b0746f6eaee6b7b3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/MEASUREMENT_OBLIGATIONS_v1.md",
+      "bytes": 3614,
+      "sha256": "201b3972d42619b5c7622fdbd49dd24502ffa9f3b2f368887b2dfd34430190cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 12058,
+      "sha256": "ffdd9e7de412a67b8d13df50cb7508e7fdf02575aa237f5600358f8a379fe33c"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 2427,
+      "sha256": "32be25beb3ba9d6f2079c64657f289ef79b14f47f3329e0bfb893e661a45fcdd"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_v1.md",
+      "bytes": 13926,
+      "sha256": "d33dc165fdf99b9128e4cf1e5f4c7180c64bdb213806a74102786235a0ec9395"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_MATH_REVIEW_IDENTITY_v1.json",
+      "bytes": 4044,
+      "sha256": "5ee2bdef5b577927eb8b9208c62fcf04a666e4d6e94ac203ee2e9b649cc54eb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_v1.md",
+      "bytes": 2097,
+      "sha256": "04f7482621b2972d72ccdf2a578d37d3ca3875deac7ce3ed7c9de724beadecfd"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/INDEPENDENT_REVIEW_v1.md",
+      "bytes": 9268,
+      "sha256": "1ea7a956229b4e1ab56fc2310f2054022f7be6485a047c0ba7fa5fb90454cbb9"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_IDENTITY_v1.json",
+      "bytes": 6789,
+      "sha256": "869f984541def9f9103a5063462243a52aa337343fae70af3434c7c6a190f10b"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_v1.md",
+      "bytes": 10900,
+      "sha256": "f5ce9dae93e6a8bbf75bcce2c39f135908047aa8ae3ebb555bfe2a2014e59a64"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/CANONICAL_SOURCE_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 11674,
+      "sha256": "5e548931a5fb5c24b44b8dff6475d1ef06db87e6d62176a5a12689ceeb250236"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_v1.md",
+      "bytes": 3539,
+      "sha256": "1f14b5700dcb62934a9f59f63b4bd31a83a51d85d33cb8100420276a3ac48e1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_REVIEW_IDENTITY_v1.json",
+      "bytes": 18456,
+      "sha256": "7415d095ffcc277c5bba4afd98d8925c6ae62e38b1f53839aa1a121ce012c85f"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_v1.md",
+      "bytes": 7829,
+      "sha256": "1ba68da8ecf67a6790ad640ae320bd0e9a7940969166d54f7f9c3b55777f2865"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_PHASE_REVIEW_IDENTITY_v1.json",
+      "bytes": 1241,
+      "sha256": "470d8592241c6fd6d515823a4afbd1d3935e3d5af4e0d9975a21c5cd94e80381"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_math_v1/CANONICAL_CURRENT_DELTA_CONFIRMATION_IDENTITY_v1.json",
+      "bytes": 3590,
+      "sha256": "91a81fbc2acbd0035ae5aaf0d95a421e4983f92b490fda43d03a3c730604c8de"
+    },
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/FINAL_ENVELOPE_CONFIRMATION_IDENTITY_v1.json",
+      "bytes": 10609,
+      "sha256": "c0bb7c92ee2e5fc222c4624045613b867abe7857c30aada21dab674ef9d37f33"
+    }
+  ],
+  "omitted_local_files": [
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf",
+      "bytes": 10479428,
+      "sha256": "6801596b69a6e5af2933d4e63c470c4a6937afccbe2c220f640760af265c1c7e",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf.headers",
+      "bytes": 358,
+      "sha256": "d6ea114d1de739d8118f5c445fe988217d66683fe39912b9bb7ef5da1dfa4f1a",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_PDS_reprint.pdf.text_v1.txt",
+      "bytes": 151146,
+      "sha256": "dcd85fbe4fa39621ea795e9592c100edf26c6f42d5b9d916d8912af6fd15c175",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_pmc.html",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_pmc.html",
+      "bytes": 356615,
+      "sha256": "094bccbf6150dbdd511e7b04d708eebd58f35c4b88684a94cf03bbb39e41f05b",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_pmc.html.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_pmc.html.headers",
+      "bytes": 809,
+      "sha256": "e75ca9b7682506df9389aa4048b7ba17f6bf8a7f3345b5653795eb385df9fb45",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_pmc.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_pmc.pdf",
+      "bytes": 1817,
+      "sha256": "be4f1099e40bb7a12987abc6c5016f45e55e649ad788f126bbf0dc66247e0fec",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_pmc.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_pmc.pdf.headers",
+      "bytes": 624,
+      "sha256": "c4b72f90f4681fbef34d8358b74d8c1532e7ae4629481ce05dde059fba871b8e",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong2006_pmc.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong2006_pmc.text_v1.txt",
+      "bytes": 148900,
+      "sha256": "06fa0002a84121fdfb35d1b1c0fe06fe7ae8bac3691180fc9e6983a5329de178",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Armstrong_PDFpage24.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Armstrong_PDFpage24.png",
+      "bytes": 139494,
+      "sha256": "8025c002bf77063dd01e1b85e991523113ad0020bb0b22261d41ae9a99616926",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf",
+      "bytes": 218007,
+      "sha256": "485fc4ef699e34538d59cf82eb11fbc13d4332977f76eba120b85e04358dfdf3",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf.headers",
+      "bytes": 365,
+      "sha256": "321b15e92aa0b46a240dbc6cebf16228b682f785a1b183d174127fbecfc639a5",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Asmar_etal_2005.pdf.text_v1.txt",
+      "bytes": 43398,
+      "sha256": "b82a0f83d24a158cd81b23d2ccb5f64ea28d41a2015cd10b0beee03689b04ba2",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf",
+      "bytes": 6791690,
+      "sha256": "4feb3072681da0f3026889d41864cef0c92c0beb91926278fc2d907e607c1d76",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf.headers",
+      "bytes": 505,
+      "sha256": "79a3cd8aa16c8c167d75ec6598ff998fbaa0d3ea3467860b489791683de2e638",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Cassini_Radio_Science_Users_Guide_30Sep2018.pdf.text_v1.txt",
+      "bytes": 169166,
+      "sha256": "2250fa4261a33eda0f5643c953d110bf0dc90cfcafb45746e04fdac7b227ff67",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.pdf",
+      "bytes": 444934,
+      "sha256": "1161d5d7f50134cf3994c52674af4a2d8984990b7a7c64551b6c17d5964fe32d",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/DSN_0159_Science_2001.text_v1.txt",
+      "bytes": 78820,
+      "sha256": "c9359182f3380016239d75596eed50655eaa2a9960089ad8004409869985a214",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf",
+      "bytes": 3074231,
+      "sha256": "fad37f296d4b119fab2e705c53375d502ac696d6ef98aa53f12e07507ced2b30",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf.headers",
+      "bytes": 424,
+      "sha256": "3a6ef954a95a767061c141858d26a1f57533b4a94ce3a5e4e3ed03ee8e1c81e9",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Descanso3--Cassini2.pdf.text_v1.txt",
+      "bytes": 132231,
+      "sha256": "e4d8778fb1db4c7f97f1e4dd1b7299be9ef19cecff9f06e3cb5836cf29bbf3a5",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Descanso_PDFpage34.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Descanso_PDFpage34.png",
+      "bytes": 140674,
+      "sha256": "b6550819ba081d972900a628887af0d71fe42828e9f79f4ec31230b7c2f573e5",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/JPL_122D_breadboard_excluded_excerpt_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/JPL_122D_breadboard_excluded_excerpt_v1.txt",
+      "bytes": 25675,
+      "sha256": "e2a44faa1fa6216394e8b0aecff339bb188134eb3c252ca4c9edaf14b5f8739c",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/JPL_42-122_122D.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/JPL_42-122_122D.pdf.headers",
+      "bytes": 637,
+      "sha256": "c00546f85db03b653f2f451166f3c2f32204f3e7afd92f81246cfcd381e4c5ef",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf",
+      "bytes": 176251,
+      "sha256": "d4de54423c2fb05f2cffcc24eb87b1b317a94eaf7bd43d7eadc7203705d2114d",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf.headers",
+      "bytes": 422,
+      "sha256": "d328e413d0b6801610a722c6ee611b3c39919bbaa5afe02151f307f4b0aac771",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/JPL_42-148_148L.pdf.text_v1.txt",
+      "bytes": 22260,
+      "sha256": "36a7c5623ca256b414b02fee3db513b7012fd0c138d8bd92b9f4a7b9c8bed2bb",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Kliore2004_author_pdf.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Kliore2004_author_pdf.pdf.headers",
+      "bytes": 810,
+      "sha256": "8357b610867e888f24ab27e8af41b5290551c44a8312344e0568fa5ffdfcea50",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Kliore2004_primary_web_extract_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Kliore2004_primary_web_extract_v1.txt",
+      "bytes": 53466,
+      "sha256": "183bfe1fbbc4a4bf678fa5dcf81ea07aadaf2342cb95ebc7cf83a70aaf447c05",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Kliore_author_upload.html.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Kliore_author_upload.html.headers",
+      "bytes": 810,
+      "sha256": "790b849044d7a7b0b5405375538c2f3c287b885197d7410c2ff4b95ed3fb5bd2",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Kliore_pdf_link_failure_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Kliore_pdf_link_failure_v1.txt",
+      "bytes": 325,
+      "sha256": "4939100412943836b4e0358d595dc8ea05c69dbeaa225b15a3806aeac2e5f9cf",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Kliore_web_publication_identity_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Kliore_web_publication_identity_v1.txt",
+      "bytes": 27441,
+      "sha256": "8c997fafc96ef420d57be32544a5eafc0f9d90b4eb248db840c96013bccc3f6b",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/PDS_RSS_context.html",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/PDS_RSS_context.html",
+      "bytes": 9387,
+      "sha256": "c3dffb570abeae180531d037074db0eaa8da8d8a0833418dd525737992e77495",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/PDS_RSS_context.html.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/PDS_RSS_context.html.headers",
+      "bytes": 517,
+      "sha256": "a8ef0187a2169251323eb6356b58bec39b35c9f306ba3189ccbe7571c525a9c7",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/PDS_RSS_context.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/PDS_RSS_context.text_v1.txt",
+      "bytes": 4487,
+      "sha256": "c7f39c8bd52acccfbd7a4546104c609c88e2ad8b25010d8df32dd54f32b17a22",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/PDS_obsolete_profile_failure_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/PDS_obsolete_profile_failure_v1.txt",
+      "bytes": 352,
+      "sha256": "e99e782498b00d1c64c8970bb39617ac4ca8f4fe13df71f91e5338f48fe3e2e6",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_2001_PDFpage17.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_2001_PDFpage17.png",
+      "bytes": 209185,
+      "sha256": "985d7babda5fe2a9875099f8f392eb98dd9c25ea9e03e9980b2affdfa2a15a34",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_2001_PDFpage18.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_2001_PDFpage18.png",
+      "bytes": 190804,
+      "sha256": "e853e137e5c2a9718f8b201aa2128f1b4a170ef750bda1c1fea7c29b2b496aaf",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/RSR_SPEC_HTTP_HEADERS_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/RSR_SPEC_HTTP_HEADERS_v1.txt",
+      "bytes": 355,
+      "sha256": "f048365c0f9340740234d29fcd4ab25567bc2a54d5b2057199c140e589060284",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Tyler_REX_PDFpage5.png",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Tyler_REX_PDFpage5.png",
+      "bytes": 85608,
+      "sha256": "a31b305f058c92d7baed4af2f8784c6244f7942fcb22604cf245aa04dcfc25c0",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf",
+      "bytes": 1206018,
+      "sha256": "1441897e148a407596feb42ec2fa9137db975b694eb85eb2ca116673513711d4",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf.headers",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf.headers",
+      "bytes": 1061,
+      "sha256": "8ccd474244e567779879aad5aa269edcdc952fdb05ef7dca4940b3517617fcc0",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf.text_v1.txt",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/Tyler_etal_REX_2007_preprint.pdf.text_v1.txt",
+      "bytes": 130601,
+      "sha256": "13d857c7bb93db10168657f5e79a0a4476fcd2e8c1242507c454b14f6722009f",
+      "reason": "Original downloaded document/render/text remains local; exact primary URLs, hashes and limited read scopes are in the included instrument evidence and retrieval records."
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1a1_WINDOW_IQ_i32be_v1.bin",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1a1_WINDOW_IQ_i32be_v1.bin",
+      "bytes": 4800000,
+      "sha256": "2094952c4df7757c397810a01dfd67d83e643fb8be8aff60e219fd3e1a5bce86",
+      "reason": "Regenerable duplicate decoded I/Q array remains local; per-record hashes, complete reader code and pinned raw-input retrieval are included."
+    },
+    {
+      "member": "channel_quotient/independent_rsr_v1/1b1_WINDOW_IQ_i32be_v1.bin",
+      "original": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_rsr_v1/1b1_WINDOW_IQ_i32be_v1.bin",
+      "bytes": 4800000,
+      "sha256": "e3f08dce9f664f54e80e38d44f03cbb4b34e448c56164212fc801b653794074a",
+      "reason": "Regenerable duplicate decoded I/Q array remains local; per-record hashes, complete reader code and pinned raw-input retrieval are included."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/outputs/KA_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/outputs/KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_accumulation/outputs/X_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_accumulation/outputs/X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/outputs/KA_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/outputs/KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_phase_argument/outputs/X_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_phase_argument/outputs/X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/KA_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/KA_HEADERS_v1.jsonl.gz",
+      "bytes": 984521,
+      "sha256": "237c9b49a5e7cd708949a5814ee3d91e2571e32a9640404ad5e435c779f15a10",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    },
+    {
+      "member": "runtime/M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/X_HEADERS_v1.jsonl.gz",
+      "original_runtime": "M9_MUTATIONS_v1/NCO_polynomial_degree/outputs/X_HEADERS_v1.jsonl.gz",
+      "bytes": 1005678,
+      "sha256": "64cc4ea2933b1fefc1a2b53d11a4974159f134e65cb0f48b4dbcea87bb5177c2",
+      "reason": "Duplicate immutable canonical header input; copy the matching CANONICAL_X_HEADERS or CANONICAL_KA_HEADERS file into this mutation outputs directory to rerun."
+    }
+  ],
+  "raw_inputs": "Four public scientific inputs and exact retrieval commands are in scripts/cassini_rsr_development_inputs.json and the canonical note; raw binaries are not duplicated here. Both complete products are exposed development.",
+  "regenerable_large_output": {
+    "path": "outputs/scalar_channel_calibration/RSR_CHARACTER_v1.npz",
+    "sha256": "2b24931f3e4c5441d3f558b0cc707a00afcf512c00cd683e7561ec0459dc87d1",
+    "reason": "Generated per-sample diagnostic arrays are reproducible from pinned inputs; remain local."
+  },
+  "source_documents": "CASSINI_SIS_SOURCE_IDENTITY_v1.json and independent_instrument_v1/INSTRUMENT_EVIDENCE_v1.json plus RSR_PHASE_EVIDENCE_v1.json pin primary documents and exact read scope. Full third-party texts/renderings stay local.",
+  "extract": "Use tar -xzf EVIDENCE_ARCHIVE_v1.tar.gz -C <isolated-directory>; member paths are relative and every decompressed byte identity is listed.",
+  "review_scope": "Original pre-exposure mathematics and receiver extraction are distinct from later source checks and cache identity checks. No new numerical run or independent empirical test is inferred from archiving.",
+  "mutations": "All actual deliberate wrong-source runs, checks and stdout/stderr are included. Duplicated NCO header inputs can be restored from the matching canonical headers. Metadata-only timeout changes are bound separately.",
+  "authority": "No formal audit, integrated-main validation, retained promotion, merge or physical carrier calibration.",
+  "archive_only_preservation": [
+    {
+      "path": ".claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/independent_instrument_v1/INSTRUMENT_PREMISE_REVIEW_v1.md",
+      "sha256": "6f39332dff383544b84d51c4d8d2af66121565ae0631e123584d2ef6946fd5be",
+      "reason": "Original report has a terminal extra blank line. Its exact bytes remain in the evidence archive; no authoritative reviewer text was edited."
+    }
+  ]
+}

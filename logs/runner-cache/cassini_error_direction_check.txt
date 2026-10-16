@@ -1,0 +1,416 @@
+===== runner cache v1 =====
+runner: scripts/cassini_error_direction_check.py
+runner_sha256: 57f4325cc686482d33dd41e24649d0a1d083f3fd832ef4bf61db1a583f998741
+input_fingerprint_sha256: c9cf9938417ba5d0033bb94ea01fef22917e2505b86b64e1ecbf40616914f08a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 18.50
+status: ok
+----- stdout -----
+{"band_complete": "X", "records": 600, "elapsed_seconds": 5.702052749693394}
+{"band_complete": "Ka", "records": 600, "elapsed_seconds": 17.647072167135775}
+per_element: checked: ideal complex ADC cell enlargement only; no element-level physical noise law inferred
+per_site: checked and not executed — no spatial lattice site or gravitational source is reconstructed
+per_mode: checked: orthogonal complex-mode ratios and deliberate direction-law counterexamples
+per_block: checked: all1200 exposed records; conditional continuous-frequency enclosures evaluated in floating point
+lattice_wide: checked and not executed — no lattice-wide probability, action, state or scale closure is asserted
+{
+  "status": "conditional-support",
+  "primary_sha256": "57f4325cc686482d33dd41e24649d0a1d083f3fd832ef4bf61db1a583f998741",
+  "source_inputs": {
+    "docs/CASSINI_ERROR_DIRECTION_MODEL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "571c6b8f108de2c4100653f0fd2509bf33745bb02b5bdee1d2c2b2530c7d71b3",
+    "scripts/cassini_error_direction.py": "c9b1e47cbaeaa8faf31543541e983c19f23a4e4d1fdfebae88e1e0590843e7aa",
+    "scripts/cassini_error_direction_development.py": "b2de0a9f609f852acfceb5b8adfafcc958f3c68674f6acc8dd84ea5b54575905",
+    "scripts/cassini_error_direction_sampling.py": "5cf7f2a6ef97f007b77edb1a1d055541c8546ce8a92a7ba7133049456aa4304c",
+    "scripts/cassini_error_direction_inputs.json": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/DEVELOPMENT_PROTOCOL_v1.json": "77cab3aac127b3ba804feabf6cd6107c69fc7d4c3462e65c6ae589253b45a381",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/DIRECTION_TEST_PROTOCOL_v1.json": "0ba536a617ea2f4dddcec0031a1e39c37c7aee2bda2e0c2b8213f744516ea266"
+  },
+  "role": "conditional scale elimination and exposed-development challenge of a single-tone uniform-error-direction model",
+  "geometry_controls": [
+    {
+      "control": "cone_nearest_witness",
+      "a": 4.0,
+      "b": 1.0,
+      "tau": 0.5
+    },
+    {
+      "control": "cone_nearest_witness",
+      "a": 0.0,
+      "b": 0.0,
+      "tau": 2.0
+    },
+    {
+      "control": "cone_nearest_witness",
+      "a": 3.0,
+      "b": 0.0,
+      "tau": 2.0
+    },
+    {
+      "control": "cone_nearest_witness",
+      "a": 1.0,
+      "b": 4.0,
+      "tau": 0.4
+    },
+    {
+      "control": "cone_nearest_witness",
+      "a": 2.0,
+      "b": 3.0,
+      "tau": 0.0
+    },
+    {
+      "control": "orthogonal_projection",
+      "f": 2.0,
+      "g": 2.0,
+      "rank": 1
+    },
+    {
+      "control": "orthogonal_projection",
+      "f": 2.0,
+      "g": 2.0000000001,
+      "rank": 2
+    },
+    {
+      "control": "orthogonal_projection",
+      "f": 2.0,
+      "g": 7.0,
+      "rank": 2
+    },
+    {
+      "control": "orthogonal_projection",
+      "f": -49.0,
+      "g": 49.0,
+      "rank": 2
+    },
+    {
+      "control": "rank_one_tail_formula",
+      "alpha": 0.1
+    },
+    {
+      "control": "rank_one_tail_formula",
+      "alpha": 0.01
+    },
+    {
+      "control": "rank_one_tail_formula",
+      "alpha": 1e-05
+    },
+    {
+      "control": "color_parseval_lipschitz",
+      "f": 1.0,
+      "g": 3.0
+    },
+    {
+      "control": "color_parseval_lipschitz",
+      "f": -49.0,
+      "g": 49.0
+    },
+    {
+      "control": "color_parseval_lipschitz",
+      "f": 2.0,
+      "g": 2.00000001
+    },
+    {
+      "control": "scale_equivariance",
+      "f": 1.0
+    },
+    {
+      "control": "scale_equivariance",
+      "f": 3.0
+    },
+    {
+      "control": "scale_equivariance",
+      "f": 40.0
+    },
+    {
+      "control": "isotropic_covariance_is_insufficient",
+      "dimension": 40,
+      "nominal_tail": 0.01,
+      "actual_atomic_tail": 0.025
+    },
+    {
+      "control": "pure_tone_not_rejected",
+      "f": -49.8
+    },
+    {
+      "control": "pure_tone_not_rejected",
+      "f": 0.123
+    },
+    {
+      "control": "pure_tone_not_rejected",
+      "f": 49.8
+    },
+    {
+      "control": "global_dirichlet_outer_exclusion"
+    },
+    {
+      "control": "adversarial_quantizer_boundary"
+    },
+    {
+      "control": "carrier_adc_boundary_modes"
+    },
+    {
+      "control": "amplitude_disk_attained_adc_boundary"
+    }
+  ],
+  "sampling_controls": [
+    {
+      "control": "uniform_direction_carrier_tail",
+      "trials": 50000,
+      "nominal": 0.01,
+      "observed": 0.0104,
+      "six_standard_errors": 0.0026698314553544387
+    },
+    {
+      "control": "radial_law_cancellation",
+      "law": "constant_radius",
+      "trials": 50000,
+      "rejection_rate": 0.0104
+    },
+    {
+      "control": "radial_law_cancellation",
+      "law": "lognormal_radial",
+      "trials": 50000,
+      "rejection_rate": 0.0104
+    },
+    {
+      "control": "radial_law_cancellation",
+      "law": "direction_dependent_radius",
+      "trials": 50000,
+      "rejection_rate": 0.0104
+    },
+    {
+      "control": "quantizer_outer_ball_coverage",
+      "trials": 50000,
+      "originally_accepted": 49480,
+      "lost": 0
+    },
+    {
+      "control": "nested_joint_coverage",
+      "trials": 50000,
+      "expected": 0.9801,
+      "observed": 0.97986
+    },
+    {
+      "control": "validation_selected_reference_failure",
+      "nominal": 0.01,
+      "observed": 0.35262,
+      "dirichlet_exact_probability": 0.3518716581129069,
+      "explanation": "Not the training-only procedure; deliberately violated conditioning."
+    },
+    {
+      "control": "color_complex_rank_F_tail",
+      "r": 16,
+      "s": 23,
+      "trials": 50000,
+      "observed": 0.00944
+    },
+    {
+      "control": "colored_direction_rejection_witness",
+      "observed": 0.97034,
+      "explanation": "Synthetic contrast-variance mismatch, not a fit of receiver noise."
+    }
+  ],
+  "receiver_controls": [
+    {
+      "control": "signed_iq_word_order"
+    },
+    {
+      "control": "training_known_tone",
+      "frequency_Hz": -499.98,
+      "error": -1.1092464546891279e-06
+    },
+    {
+      "control": "training_known_tone",
+      "frequency_Hz": -1.234,
+      "error": -1.240891833731439e-10
+    },
+    {
+      "control": "training_known_tone",
+      "frequency_Hz": 0.0,
+      "error": 3.464157316557248e-08
+    },
+    {
+      "control": "training_known_tone",
+      "frequency_Hz": 12.34,
+      "error": -8.354226110895979e-08
+    },
+    {
+      "control": "training_known_tone",
+      "frequency_Hz": 499.98,
+      "error": 1.1092464546891279e-06
+    }
+  ],
+  "development_checks": {
+    "all_registered_records": true,
+    "fixed_window_each_band": true,
+    "all_training_estimates_finished": true,
+    "all_records_retained_with_flags": true,
+    "expected_gain_settings_retained": true,
+    "both_nominal_allocations_retained": true,
+    "lower_tail_ranks": true,
+    "quantized_model_status_honest": true,
+    "development_not_independent_test": true,
+    "training_frequency_has_no_validation_input": true
+  },
+  "passed": 51,
+  "failed": 0,
+  "empirical_statistics": {
+    "X": {
+      "records": 600,
+      "extreme_records": 0,
+      "training_failures": 0,
+      "training_frequency_Hz": {
+        "min": -0.7759440480215858,
+        "p01": -0.41002792109708425,
+        "median": 0.29078253982049773,
+        "p99": 1.172504443796623,
+        "max": 1.6762541304750016
+      },
+      "low_over_high_per_rank": {
+        "min": 1.0603283788523266,
+        "p01": 1.1879179604718222,
+        "median": 1.6348870086326266,
+        "p99": 3.298709381142421,
+        "max": 4.458963995705169
+      },
+      "real_lag1": {
+        "min": 0.09293800247472733,
+        "p01": 0.11515702655146674,
+        "median": 0.2289104632540438,
+        "p99": 0.5279511036113012,
+        "max": 0.6310399872992388
+      },
+      "imaginary_lag1": {
+        "min": -0.09489140310819696,
+        "p01": -0.07421824808676147,
+        "median": -0.0014183549180094704,
+        "p99": 0.06515969260684955,
+        "max": 0.08335180558303225
+      },
+      "real_pseudocovariance": {
+        "min": -0.3107929711130055,
+        "p01": -0.2311438583827436,
+        "median": -0.000423643887861761,
+        "p99": 0.23317992431973047,
+        "max": 0.31154987174588933
+      },
+      "imaginary_pseudocovariance": {
+        "min": -0.45875651302491555,
+        "p01": -0.22377777909133179,
+        "median": 0.002122894528809162,
+        "p99": 0.23913097742392975,
+        "max": 0.347261509685353
+      },
+      "direction_challenge": {
+        "pointwise": {
+          "numerically_excluded": 489,
+          "no_arc": 0,
+          "normalized_minimum_score": {
+            "min": -0.06867221992778705,
+            "p01": -0.03556766976027863,
+            "median": 0.02343854978996411,
+            "p99": 0.10477727802559623,
+            "max": 0.13192958771585206
+          }
+        },
+        "family_1200": {
+          "numerically_excluded": 168,
+          "no_arc": 0,
+          "normalized_minimum_score": {
+            "min": -0.11139946828608288,
+            "p01": -0.08368449061542138,
+            "median": -0.016755952708606144,
+            "p99": 0.06971390169499435,
+            "max": 0.08519235161245452
+          }
+        }
+      }
+    },
+    "Ka": {
+      "records": 600,
+      "extreme_records": 0,
+      "training_failures": 0,
+      "training_frequency_Hz": {
+        "min": -3.278829894604371,
+        "p01": -1.1828003883843963,
+        "median": 0.9822223356449342,
+        "p99": 3.260564953151129,
+        "max": 3.9160604261244316
+      },
+      "low_over_high_per_rank": {
+        "min": 2.8055353441338036,
+        "p01": 3.5803281344839535,
+        "median": 11.525676884239292,
+        "p99": 25.845591899299084,
+        "max": 29.986438528537814
+      },
+      "real_lag1": {
+        "min": 0.4585317767421521,
+        "p01": 0.5561499485908351,
+        "median": 0.8343492492082836,
+        "p99": 0.9230591777225312,
+        "max": 0.932383352025958
+      },
+      "imaginary_lag1": {
+        "min": -0.0373859679551193,
+        "p01": -0.021186856129750395,
+        "median": 0.004554810597832025,
+        "p99": 0.02627190007360954,
+        "max": 0.03707420395269147
+      },
+      "real_pseudocovariance": {
+        "min": -0.6729347100625529,
+        "p01": -0.5525705041747643,
+        "median": 0.0017419024229705805,
+        "p99": 0.564377812126642,
+        "max": 0.6511782293987495
+      },
+      "imaginary_pseudocovariance": {
+        "min": -0.6481576737342685,
+        "p01": -0.5264910350251806,
+        "median": 0.003593547735674247,
+        "p99": 0.5561977732550548,
+        "max": 0.6086815390981315
+      },
+      "direction_challenge": {
+        "pointwise": {
+          "numerically_excluded": 592,
+          "no_arc": 8,
+          "normalized_minimum_score": {
+            "min": 0.0594411809596828,
+            "p01": 0.10267893469677379,
+            "median": 0.27425745003309576,
+            "p99": 0.5887972090485555,
+            "max": 0.6396521236713774
+          }
+        },
+        "family_1200": {
+          "numerically_excluded": 578,
+          "no_arc": 21,
+          "normalized_minimum_score": {
+            "min": -0.17190510153958338,
+            "p01": 0.0812702764278172,
+            "median": 0.2551824080143044,
+            "p99": 0.5629561399398753,
+            "max": 0.6067664087006085
+          }
+        }
+      }
+    }
+  },
+  "nominal_family_probability": 0.01,
+  "probability_interpretation": "Fixed-procedure property under supplied signal/direction/cadence/ADC premises; previously exposed observations are development, not an independent calibrated test.",
+  "outward_rounded_observational_certificate": false,
+  "physical_noise_scale_calibrated": false,
+  "physical_noise_law_derived": false,
+  "scalar_inference": false,
+  "independent_empirical_tests": 0,
+  "products": {
+    "DIRECTION_ROWS_v1.jsonl": "47c52a45a6b5015522c80749f15e644328e2817b01cf17614628b679b99a8105",
+    "DIRECTION_SUMMARY_v1.json": "575f076f87a0e6de7217aa17e68fcf8dd3c6ff0ed2c99f47644329ce0139c569",
+    "SOURCE_FREEZE_v1.json": "e7e30d9e3914af0ec77bcc609285bc5f11a19ff7dd821e33d7ba3ee58c548487"
+  }
+}
+
+----- stderr -----
+

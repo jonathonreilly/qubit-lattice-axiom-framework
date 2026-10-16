@@ -1,0 +1,15 @@
+{
+  "id": "M9-NCO-continuity-protocol-v1",
+  "frozen_at": "2026-10-15T06:56:00.061912+00:00",
+  "exposure": "Entire1335X/Ka products are exposed development, initialsamplediagnosticsalreadyread",
+  "question": "Resolve polynomial self-consistency of two documented NCO phase arguments, not physical RF/voltage-sign calibration",
+  "candidates_seconds": [
+    0,
+    0.0005
+  ],
+  "basis": "Original2001DSN0159Science phase argumentmsec/1000 versusday169labelmidpoint(msec+0.5)/1000, reported by focused primarysourcecheck",
+  "metric": "For every adjacent1second record in eachfullproduct, compare accumulatedwholephase+P(delta) atnextrecord withprevious accumulatedwholephase+P(1+delta). Use exactFraction.from_float for archived IEEE values. No fitted offset, no silent wrap; report raw and modulointeger residuals and quantiles.",
+  "selection_limit": "A smaller continuity discrepancy establishes internalmetadata consistency only. It does not establish the complete physical skyphase, analogLOhistory, I/Qfrequencyorientation or carrier extraction.",
+  "raw_products_added": [],
+  "independent_empirical_tests": 0
+}

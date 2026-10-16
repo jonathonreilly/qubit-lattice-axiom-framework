@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-15T08:44:07.752398+00:00",
+  "finder": "independent_data_v1",
+  "finding": "Working nco_increment integrated separately archived F coefficients rather than declared P polynomial; IEEE rounded F3 and3P4 are not exact rational equals.",
+  "repair": "Canonical reference helper now evaluates the exact declared P polynomial difference. Working sources/results and pre_alias_fix_canonical_v1 preserved. Added independent-rounded-field synthetic witness.",
+  "scope": "exact-source correspondence, no fitted convention change; final output identities will be rebound"
+}

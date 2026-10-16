@@ -1,0 +1,232 @@
+{
+  "scope": "Frozen row and source/cache envelope comparison only; no raw extraction, spectra, geometry or scientific aggregate rerun",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_reference_check.py",
+      "bytes": 5914,
+      "sha256": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 18934,
+      "sha256": "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_estimator.py",
+      "bytes": 7933,
+      "sha256": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_receiver_reference.py",
+      "bytes": 6752,
+      "sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_carrier_geometry_controls.py",
+      "bytes": 4839,
+      "sha256": "b1b25068e1b05487049a1f5e072de329139315816c58db4ec3d96e02b6a74232"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development.py",
+      "bytes": 11336,
+      "sha256": "4eea9fe5454b7ab8896bbada623b668da09d71d694401ecc8862b7b0651a9c00"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_odf_decode.py",
+      "bytes": 7622,
+      "sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_atdf_decode.py",
+      "bytes": 7680,
+      "sha256": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_atdf_odf_reconcile.py",
+      "bytes": 12943,
+      "sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_rsr_development_inputs.json",
+      "bytes": 1527,
+      "sha256": "e97df7132ac49fc31b2de89f7419afd82762f430fd4996de09bd1760cb1c127a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/cassini_doppler_development_inputs.json",
+      "bytes": 2565,
+      "sha256": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_v1.json",
+      "bytes": 4073,
+      "sha256": "ffce7149f810b2d600ddca1cf3d9a6c3fc55eefb22ef244dfd1cccc52a787238"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/DEVELOPMENT_PROTOCOL_SUPPLEMENT_v1.json",
+      "bytes": 992,
+      "sha256": "44c8aac5bcccd055fd91644a4a34ff80d1de809b2941207165de84241b77d358"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/REFERENCE_COMPARISON_FREEZE_v1.json",
+      "bytes": 1591,
+      "sha256": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1"
+    }
+  ],
+  "products": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608127,
+      "sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_ESTIMATES_v1.jsonl",
+      "bytes": 1608127,
+      "sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_CARRIER_SUMMARY_v1.json",
+      "bytes": 2989,
+      "sha256": "990c609882313c8bc4dd53a367803fd7aa16ec4dbad0a11dd430557b51a2f525"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_ROWS_v1.jsonl",
+      "bytes": 1659174,
+      "sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_carrier_reference/REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/CANONICAL_REFERENCE_COMPARISON_SUMMARY_v1.json",
+      "bytes": 2674,
+      "sha256": "b1c788a5932e18ac7584446b7cf869d59a6bb07f4d1de4c3f590124fde2bfb07"
+    }
+  ],
+  "cache": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/cassini_carrier_reference_check.txt",
+    "bytes": 6225,
+    "sha256": "faacc3c097c84b060188a2cc6b48fd2caaeb18d6a270bc92b0d3d5bd360fa0dc"
+  },
+  "input_fingerprint_sha256": "a232ac26a69b4b43331ac286eb304f870da245a3212da29cfc28f3ce557a3585",
+  "execution": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M10_CANONICAL_EXECUTION_v2.json",
+    "bytes": 6641,
+    "sha256": "b5c8e50c3af231aab64372ac2748431fad94d0cdcb6858f4506eeadb5cf2a2f7"
+  },
+  "execution_elapsed_sec": 3.0665459632873535,
+  "passed_aggregates": 63,
+  "geometry_aggregates": 42,
+  "carrier_controls": 9,
+  "development_aggregates": 12,
+  "v1_to_v2_summary_delta": [
+    [
+      "/source_inputs/docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "d751b57ee265a5169fa395056546724875aac46fbe04dfc47872a5c467130895",
+      "79bcdf128d8b0570cc248576ddda09d5f50edbf9851fb9dad0cd920a24f68cd9"
+    ]
+  ],
+  "all_four_numerical_products_identical_to_execution_v1": true,
+  "spectral_rows": 1200,
+  "frequency_and_grid_selection_identical_to_original_working": 1200,
+  "rows_with_allowed_alias_roundoff": 1193,
+  "alias_roundoff_leaf_counts": {
+    "/estimate/fitted_complex_amplitude/0": 1085,
+    "/estimate/fitted_complex_amplitude/1": 1092,
+    "/estimate/fitted_tone_power_fraction": 799,
+    "/estimate/residual_energy": 801
+  },
+  "alias_roundoff_max_abs": {
+    "/estimate/fitted_complex_amplitude/0": 2.432898327242583e-10,
+    "/estimate/fitted_complex_amplitude/1": 2.473825588822365e-10,
+    "/estimate/fitted_tone_power_fraction": 9.992007221626409e-16,
+    "/estimate/residual_energy": 0.00018310546875
+  },
+  "independent_comparison_tolerance_Hz": 2e-05,
+  "relative_power_tolerance": 5e-10,
+  "independent_correspondence_rows": 1199,
+  "known_retained_mismatch": [
+    {
+      "band": "Ka",
+      "second": 49112,
+      "frequency_difference_Hz": 1.4574009696151506,
+      "relative_power_difference": 0.0016406427267254989
+    }
+  ],
+  "maximum_Hz_difference_excluding_known_Ka": 2.299361767654773e-08,
+  "maximum_relative_power_difference_excluding_known_Ka": 1.5740757391229195e-15,
+  "exact_certificate_rows": 1200,
+  "exact_selected_NCO_header_fields": 10800,
+  "reference_rows": 600,
+  "exact_ODF_fields": 13200,
+  "ATDF_selected_field_occurrences": 31200,
+  "ATDF_item79_scope": "601 unique endpoint byte checks from previous post-exposure report reused by unchanged metadata; no new raw read",
+  "nonzero_slip_occurrences": 54,
+  "unique_nonzero_slip_endpoints": 27,
+  "affected_intervals": 39,
+  "exact_final_P_nominal_candidate_matches": 2400,
+  "changed_F_to_P_nominal_candidates": 1588,
+  "max_exact_F_to_P_nominal_change_Hz": "4006003/7083549724304467820544000000",
+  "maximum_final_reference_minus_independent_error_Hz": 1.9898720893252175e-08,
+  "reference_leaf_change_counts": {
+    "/candidates/0/nominal_RSR_minus_count_sky_Hz/denominator": 397,
+    "/candidates/0/nominal_RSR_minus_count_sky_Hz/numerator": 397,
+    "/candidates/1/nominal_RSR_minus_count_sky_Hz/denominator": 397,
+    "/candidates/1/nominal_RSR_minus_count_sky_Hz/numerator": 397,
+    "/candidates/2/nominal_RSR_minus_count_sky_Hz/denominator": 397,
+    "/candidates/2/nominal_RSR_minus_count_sky_Hz/numerator": 397,
+    "/candidates/3/nominal_RSR_minus_count_sky_Hz/denominator": 397,
+    "/candidates/3/nominal_RSR_minus_count_sky_Hz/numerator": 397
+  },
+  "candidate_summary_rows": {
+    "0": {
+      "RMS_Hz": 0.820417698744439,
+      "recomputed_from_frozen_rows_Hz": 0.820417698744439
+    },
+    "1": {
+      "RMS_Hz": 0.06642541944357412,
+      "recomputed_from_frozen_rows_Hz": 0.06642541944357412
+    },
+    "2": {
+      "RMS_Hz": 0.8205278083671507,
+      "recomputed_from_frozen_rows_Hz": 0.8205278083671507
+    },
+    "3": {
+      "RMS_Hz": 0.06642635395068097,
+      "recomputed_from_frozen_rows_Hz": 0.06642635395068097
+    }
+  },
+  "maximum_dependent_storage_difference_Hz": 4.39e-07,
+  "independent_empirical_gravity_tests": 0,
+  "physical_error_upper_bound_derived": false,
+  "new_fit_or_timing_choice": false,
+  "all_original_reviewed_evidence_hashes_preserved": true,
+  "original_identity_inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/INDEPENDENT_IDENTITY_v1.json",
+      "bytes": 5482,
+      "sha256": "85e3cecedf8929cd53a16370dbd02e8eb57f941da29bae90d015f16ee270361b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v1.json",
+      "bytes": 10383,
+      "sha256": "219039b8d01beb6b1d36cd59e5bc818700b553b628641548ba73de432976b179"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/receiver_reference/independent_data_v1/CANONICAL_AFFECTED_IDENTITY_v1.json",
+      "bytes": 5037,
+      "sha256": "72210f961abf0809bfdc5c25a3145f9c8b30ab1d0d6bbc3b7230e45e524c4bed"
+    }
+  ]
+}

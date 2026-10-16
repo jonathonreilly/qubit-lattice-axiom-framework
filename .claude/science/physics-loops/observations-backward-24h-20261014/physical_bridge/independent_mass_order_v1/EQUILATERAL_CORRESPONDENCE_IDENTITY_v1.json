@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-15T05:04:15.555795+00:00",
+  "reviewer": "/root/localized_history_check",
+  "scope": "Equilateral clock-kernel and smooth-limit correspondence; no full operator-distance audit",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/EQUILATERAL_CORRESPONDENCE_v1.md",
+    "sha256": "ea0bcc1d87783f280594fa88137d433c2a4aeb473a3f781acff97b64cc6dbd2b"
+  },
+  "author_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/MASSIVE_REFINEMENT_WORKING_v1.md",
+      "sha256": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/massive_refinement_controls_v1.py",
+      "sha256": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/MASSIVE_REFINEMENT_RESULTS_v1.json",
+      "sha256": "a92e03d28c8008d0c501a098c8b52455aa36b1afacd2c3c20baba92361092c74"
+    }
+  ],
+  "preserved_independent_evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/MASS_ORDER_PRECHECK_v1.md",
+      "sha256": "30518157177387a7d90d3c218a638ae78aa30fb8cfbab310f663d34076c3fb51"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/independent_mass_order_check_v1.py",
+      "sha256": "3d60a7a1a45fba1aefe5b532e880d2d6bf43c3c464e27fea03bda32bba09012b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/INDEPENDENT_MASS_ORDER_RESULTS_v1.json",
+      "sha256": "547625d491ed9c6a2d8f2f41b406c8db13246f95f0c1c1dfd5244c79eac66bbe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/MASS_ORDER_REVIEW_v1.md",
+      "sha256": "355fa24cbf0632a586139597b7505537d3c0783eb617f1035cdb42435478129e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_mass_order_v1/MASS_ORDER_REVIEW_IDENTITY_v1.json",
+      "sha256": "d8f05bbf1646acd90ca15da69d9429c51e61284f32beb7b178dec2d6b697c8a6"
+    }
+  ],
+  "author_execution_repeated": false,
+  "new_independent_controls": 0
+}

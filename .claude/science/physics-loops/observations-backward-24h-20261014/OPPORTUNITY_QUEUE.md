@@ -35,3 +35,39 @@ Next after M4: reconstruct minimum field-energy requirements from calibrated fin
 ## Next after the accelerated observation operator
 
 The accelerated massless operator and ideal coherent link are now derived conditionally; more stationary examples are lower priority. First establish an observation-supported error or energy budget, or a controlled background/source correction that makes the response usable on actual tracking data. Reconstruct or bound those quantities from independent observables instead of assigning a preferred field state or energy. Action/potential and cross-domain scale discrimination remain live alternatives. Refresh relevant main/open PR science before a new route. Day169 remains exposed development; later raw products remain unopened without a pre-access protocol.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+After M7 publication, prioritize an observation-supported reference/error or scale supplier. Use a declared pre-access protocol before later raw products; day169 remains development. Do not add further synthetic examples without a distinct inference obligation.
+
+## Re-ranked after integer-history quotient
+
+1. Derive a physically applicable integer character for simultaneous radio channels using documented turnaround/phase units, and test whether it can cancel shared phase/media terms without arbitrarily fitting an error budget. First discriminator: the exact integer nullspace and surviving scalar response, before opening reserved samples.
+2. Identify and bound real reset/fractional-error terms for this instrument through applicable calibration documentation or a separately declared calibration dataset. The unsigned slip diagnostic is not such a supplier.
+3. Relate an actually calibrated quotient residual to the earlier same-environment scalar energy/scale map. Do not substitute a minimum-energy state for the missing physical budget.
+
+These remain scientific opportunities, not accomplished derivations. No new raw product is authorized by this queue alone; preserve the pre-access protocol requirement.
+
+## Re-ranked after the receiver character checks
+
+1. Resolve the physical coherent-carrier estimator and reference map, including complex-frequency sign and the documented 0 versus 0.5 ms NCO phase argument. Use implementation provenance or a declared calibration comparison; preserve both conventions meanwhile. Derive the estimator's channel/time response before replacing pointwise characters with averaged voltages.
+2. Package one joint-character and receiver-representation milestone after the independent raw comparison and source/evidence checks. PR9592 remains frozen; this working block is unpublished.
+3. Use a physically calibrated residual supplier, or pivot to action/potential/scale discrimination from a different domain if the receiver route remains unidentifiable. Do not substitute a chosen noise budget or minimum-energy field state.
+
+The entire 13:35 X/Ka RSR pair is development-exposed. The 16:56/16:57 pair and other registered raw products remain unopened. No independent empirical test is claimed.
+
+## Re-ranked after M10 receiver/reference reconstruction
+
+1. Derive a quantitative physical discrepancy or waveform/time calibration constraint from documented instrumentation and redundant observations. The first decisive check must constrain error independently of the same fitted carrier. Explicitly challenge any stochastic independence/stationarity or receiver-dynamics premise. This could connect the exact feasible-set theorem to a physical count/error supplier.
+2. If the available calibration cannot provide that discriminator, pivot to a concrete cross-domain action/potential or scale-selection test after refreshing relevant main/open-PR science. Do not spend another milestone restating nonidentification or refining FFT digits without new physical information.
+3. Keep the0/0.5ms historical phase ambiguity and Ka49112 competing peaks as bounded unresolved applications. Later16:56/16:57 products remain unopened until an explicit preaccess protocol; opening them would test a frozen proposed model, not retroactively turn current development into a holdout.
+
+M10 source packaging is finishing; its independent science checks are complete. Physical error/energy, action, initial scalar state, scale and environment remain open. No chosen selector counts as a derivation.
+
+## Re-ranked after the error-direction challenge
+
+1. Refresh the revised scalar action/potential and scale reconstruction against current main/open PRs, and select a distinct cross-domain observational discriminator. Read the full prior proof before reusing an inverse; do not count fitted potential coefficients, a chosen vacuum or dimensional units as derived scales.
+2. Pursue receiver calibration only if a concrete matching monitor stream, transfer response or independently justified waveform supplies new physical information. Expected settings, fitted spectra, covariance isotropy and assumed Gaussianity are insufficient substitutes.
+3. Keep all current raw products development-exposed; later16:56/16:57 products remain unopened. A new empirical test needs a frozen model and declared input protocol before access.
+
+Do not generate another variant of the receiver geometry solely to refine spectral digits. This campaign remains active until its original deadline; all three older campaigns remain stopped.

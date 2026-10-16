@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-15T05:18:22.092544+00:00",
+  "author": "/root in user chat",
+  "branch": "codex/observations-backward-physical-20261015",
+  "base": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+  "source_sha256": {
+    "docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3",
+    "scripts/scalar_mass_curvature_count_check.py": "76e6defceabfee840a63df313cba4e2948f325f6f697c86f23d801a89129afe1",
+    "scripts/scalar_massive_response_controls.py": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+    "scripts/scalar_massive_refinement_controls.py": "f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512",
+    "scripts/scalar_curved_count_controls.py": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0"
+  },
+  "cache": {
+    "path": "logs/runner-cache/scalar_mass_curvature_count_check.txt",
+    "sha256": "3dc75e7dbcbc3c2f8bb7cc3f1876964fbef7cf66e6b408790fd26390fd9d5b17"
+  },
+  "canonical_controls": 59,
+  "actual_mutation_rejections": 10,
+  "empirical_tests": 0,
+  "proof_review_status": "Final complete canonical review read by root; no remaining consequential discrepancy. No formal audit or combined landing validation.",
+  "limits": "Conditional supplied action/background/calibration; no scalar state, mass, H, Q or measured energy/error upper budget selected.",
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_REVIEW_v1.md",
+    "sha256": "4f5722cb31500b8b20bae0bfd7568aba88b0c03c208be988a54a88a52529d322"
+  },
+  "canonical_identity": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/independent_canonical_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+    "sha256": "0b965386caed74bef4312c6374af537cd90043ebeea632b13ea0dd8828d78a44"
+  },
+  "archive": {
+    "path": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/IMMUTABLE_EVIDENCE_ARCHIVE_v2.json",
+    "sha256": "5529f8d85e59941d438b96e691a609da78576f1ab9a8194dbf205ef5affb3be6"
+  }
+}

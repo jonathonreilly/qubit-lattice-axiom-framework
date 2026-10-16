@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "filename": "c32easc2002_169_1335x54x25d.1a1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.1a1",
+      "sha256": "28af13233a64f7629b794cc8beaad0db2500fb09cc421cda3e82544144235a92",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "filename": "c32easc2002_169_1335x54k25d.1b1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.1b1",
+      "sha256": "9544e294be8867cb013b3d96891a413f5dddc3d5e0236e8a2b9331fe7d45a19e",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "filename": "rsr_c32easc2002_169_1335x54x25d.lbl",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.lbl",
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "role": "primary format metadata"
+    },
+    {
+      "filename": "rsr_c32easc2002_169_1335x54k25d.lbl",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.lbl",
+      "sha256": "2349b0473986f5247650fc88a5bbaf7e859786e22253b38f4a8719af3dd0c697",
+      "role": "primary format metadata"
+    }
+  ],
+  "window": "2002d16948900<=UTCsecond<49500",
+  "role": "allproducts developmentexposed beforecomparison; no independent empirical test"
+}

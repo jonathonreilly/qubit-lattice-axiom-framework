@@ -1,0 +1,73 @@
+{
+  "frozen_at": "2026-10-15T10:30:49.682484+00:00",
+  "scope": "Complete canonical note and geometry source consistency, no aggregate execution or empirical verification",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_REVIEW_v1.md",
+    "sha256": "ba2534d17187b67e6e84d15c4338b4170296ca28cbd92351bcef804af63638f5",
+    "bytes": 8319
+  },
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_REVIEW_v1.md",
+      "sha256": "ba2534d17187b67e6e84d15c4338b4170296ca28cbd92351bcef804af63638f5",
+      "bytes": 8319
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_SOURCE_FREEZE_v1.json",
+      "sha256": "ec57b0c64899fc75f7ea6e0e938a3c24b895c928fe1e258139efc216a11c6c18",
+      "bytes": 1443
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_SOURCE_v1_CASSINI_ERROR_DIRECTION_MODEL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7e4072642e778ee1295e2219d247795641a409315ca159690cca5a9ce56ac9e8",
+      "bytes": 24804
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_SOURCE_v1_cassini_error_direction.py",
+      "sha256": "c9b1e47cbaeaa8faf31543541e983c19f23a4e4d1fdfebae88e1e0590843e7aa",
+      "bytes": 9491
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_GEOMETRY_DIFF_v1.patch",
+      "sha256": "ee4d8628c803629fad2f6a547fc9de344bee5a7648b711ec20fc80e38c77de7b",
+      "bytes": 2729
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_ADAPTATION_CHECK_v1.json",
+      "sha256": "872cb00eb99b3a296e88e6803f06c45b0b7169f41007c24de487d4cc89f1f9f3",
+      "bytes": 2240
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/CANONICAL_FINDING_v1.json",
+      "sha256": "4c26f4f6eacee266ca48ce5eba9ad3232f3d2cc61f1f3f30cb0341892be5e530",
+      "bytes": 1182
+    }
+  ],
+  "complete_read_lines": {
+    "note": 421,
+    "geometry": 210
+  },
+  "production_functions_AST_unchanged": 10,
+  "control_records_inspected": 26,
+  "new_control_records_inspected": 4,
+  "independent_proof": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/INDEPENDENT_MATH_v1.md",
+    "sha256": "de40057de817a745e52beebb6a162802ff4215b862932ef5b7bad818f8a8f811",
+    "bytes": 20182
+  },
+  "prior_working_correspondence": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_supplier/independent_math_v1/AUTHOR_CORRESPONDENCE_v1.md",
+    "sha256": "5f970aec3bb5ceb5495ddea8e1bdd01f277be7ed283ec2ed63ebc142bb2a1105",
+    "bytes": 13464
+  },
+  "findings": [
+    {
+      "id": "canonical_exact_decimal_wording",
+      "formula_error": false,
+      "disposition": "Root reported repair; separate byte confirmation pending"
+    }
+  ],
+  "aggregate_run": false,
+  "raw_observations_opened": false,
+  "formal_audit": false
+}

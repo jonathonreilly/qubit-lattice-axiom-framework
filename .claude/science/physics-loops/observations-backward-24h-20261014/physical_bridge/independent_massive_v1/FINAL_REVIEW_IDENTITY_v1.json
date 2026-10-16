@@ -1,0 +1,41 @@
+{
+  "frozen_utc": "2026-10-15T04:51:39.760433+00:00",
+  "files": {
+    "INDEPENDENT_REVIEW_v1.md": {
+      "sha256": "8aa2145243f64e3d6b552ed00d08a923282cc7d8fe5f1558fabad91aa222f6d7",
+      "bytes": 8587
+    },
+    "INDEPENDENT_REVIEW_FREEZE_v1.json": {
+      "sha256": "2de98b51f1843272b56ef0c9ef8ee3b47cd4efd75ba7bdd01949256d88adaf13",
+      "bytes": 358
+    },
+    "AUTHOR_EXPOSURE_IDENTITY_v1.json": {
+      "sha256": "028dbb20caeeeba9c63bff17d8e581ee1d2b5d7ad41679ec0b5b50001b06908d",
+      "bytes": 1580
+    },
+    "postsource_correspondence_controls_v1.py": {
+      "sha256": "8aceb911157bb26ed0caea3e42d72785bd9948939070d2a6b6f83267e804cb16",
+      "bytes": 6644
+    },
+    "postsource_correspondence_results_v1.json": {
+      "sha256": "dc1d0a2ea0b614bd4145d18c2db6d9fb3709a8ce81d5380a5e9d6682f7f3d78c",
+      "bytes": 4035
+    },
+    "AUTHOR_SOURCE_COMPARISON_v1.md": {
+      "sha256": "5e4c821f3341ec12cc78c94d9ddb6433d7c98929e075b7a1bad64a275034d6da",
+      "bytes": 8305
+    }
+  },
+  "author_sources_still_match": {
+    "MASSIVE_RESPONSE_WORKING_v1.md": true,
+    "MASSIVE_REFINEMENT_WORKING_v1.md": true,
+    "massive_response_controls_v1.py": true,
+    "massive_refinement_controls_v1.py": true,
+    "MASSIVE_RESPONSE_RESULTS_v1.json": true,
+    "MASSIVE_REFINEMENT_RESULTS_v1.json": true
+  },
+  "independent_controls": 120,
+  "postsource_controls": 24,
+  "new_discrepancies_in_scoped_review": [],
+  "formal_audit": false
+}

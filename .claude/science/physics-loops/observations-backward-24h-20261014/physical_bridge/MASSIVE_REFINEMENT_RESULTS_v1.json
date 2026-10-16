@@ -1,0 +1,193 @@
+{
+  "checks": [
+    {
+      "name": "first_radial_constant_exact",
+      "passed": true,
+      "expression": "2 - pi/2"
+    },
+    {
+      "name": "second_radial_constant_exact",
+      "passed": true,
+      "expression": "-4/3 + pi/2"
+    },
+    {
+      "name": "phase_difference_identity",
+      "passed": true
+    },
+    {
+      "name": "radial_integrals_direct_quadrature",
+      "passed": true,
+      "ratios": [
+        [
+          1.0,
+          1.000000000000023
+        ],
+        [
+          0.9999999999999998,
+          1.0000000000000002
+        ],
+        [
+          0.9999999999999999,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "zero_offset_linear_rate",
+      "passed": true,
+      "sequence": [
+        {
+          "mu": 0.01,
+          "zero_offset_bound": 0.05446866542801724,
+          "nonzero_offset_bound": 0.1125303384303152
+        },
+        {
+          "mu": 0.001,
+          "zero_offset_bound": 0.005290872542614164,
+          "nonzero_offset_bound": 0.023913799094717934
+        },
+        {
+          "mu": 0.0001,
+          "zero_offset_bound": 0.0005241542908422822,
+          "nonzero_offset_bound": 0.0064215326671134745
+        },
+        {
+          "mu": 1e-05,
+          "zero_offset_bound": 5.225943508404066e-05,
+          "nonzero_offset_bound": 0.0019174364377756738
+        }
+      ]
+    },
+    {
+      "name": "zero_offset_leading_coefficient",
+      "passed": true,
+      "leading": 5.218729171269611,
+      "last": 5.2259435084040655
+    },
+    {
+      "name": "compact_clock_exact_endpoint_and_numeric_moment",
+      "passed": true,
+      "numerical_integral": 1.1102230246251565e-15,
+      "analytic_reason": "c is derivative of cos^2(pi t/(2T))*sin(t); primitive vanishes at both endpoints"
+    },
+    {
+      "name": "compact_clock_fourier_formula",
+      "passed": true,
+      "maximum_error": 1.3472192588670214e-14
+    },
+    {
+      "name": "triangle_spatial_interference",
+      "passed": true,
+      "direct": 3.6539866862653803,
+      "exact": 3.6539866862653763,
+      "ratio": 1.2179955620884588
+    },
+    {
+      "name": "finite_triangle_mass_reversal_T_31.41592653589793",
+      "passed": true,
+      "ratio": 1.2012343444691058,
+      "finite_grams": [
+        5.60684383254494,
+        6.73513337572777
+      ],
+      "quadrature_difference": 3.2874421407314e-08,
+      "analytic_each_tail_bound": 0.763140625,
+      "classification": "finite quadrature diagnostic; compact-smooth existence proved separately"
+    },
+    {
+      "name": "finite_triangle_mass_reversal_T_62.83185307179586",
+      "passed": true,
+      "ratio": 1.2138855113228115,
+      "finite_grams": [
+        11.240700756416745,
+        13.644923785329654
+      ],
+      "quadrature_difference": 4.0953906932372774e-11,
+      "analytic_each_tail_bound": 1.381408203125,
+      "classification": "finite quadrature diagnostic; compact-smooth existence proved separately"
+    },
+    {
+      "name": "finite_triangle_mass_reversal_T_125.66370614359172",
+      "passed": true,
+      "ratio": 1.2169725245282104,
+      "finite_grams": [
+        22.49532205679456,
+        27.37618887353241
+      ],
+      "quadrature_difference": 1.865174681370263e-11,
+      "analytic_each_tail_bound": 2.628164306640624,
+      "classification": "finite quadrature diagnostic; compact-smooth existence proved separately"
+    },
+    {
+      "name": "narrowband_limit_approach",
+      "passed": true,
+      "limit": 1.2179955620884586,
+      "actual": 1.2169725245282104
+    }
+  ],
+  "checks_passed": 13,
+  "status": "working mathematical controls, no empirical test",
+  "author_source_sha256": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451",
+  "working_note_sha256": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+  "compact_triangle_diagnostics": [
+    {
+      "T": 31.41592653589793,
+      "mass": 0.7453559924999299,
+      "finite_grams": [
+        5.60684383254494,
+        6.73513337572777
+      ],
+      "ratio": 1.2012343444691058,
+      "cutoff": 12,
+      "quadrature_difference": 3.2874421407314e-08,
+      "analytic_tail_bound": 0.763140625
+    },
+    {
+      "T": 62.83185307179586,
+      "mass": 0.7453559924999299,
+      "finite_grams": [
+        11.240700756416745,
+        13.644923785329654
+      ],
+      "ratio": 1.2138855113228115,
+      "cutoff": 12,
+      "quadrature_difference": 4.0953906932372774e-11,
+      "analytic_tail_bound": 1.381408203125
+    },
+    {
+      "T": 125.66370614359172,
+      "mass": 0.7453559924999299,
+      "finite_grams": [
+        22.49532205679456,
+        27.37618887353241
+      ],
+      "ratio": 1.2169725245282104,
+      "cutoff": 12,
+      "quadrature_difference": 1.865174681370263e-11,
+      "analytic_tail_bound": 2.628164306640624
+    }
+  ],
+  "zero_offset_bounds": [
+    {
+      "mu": 0.01,
+      "zero_offset_bound": 0.05446866542801724,
+      "nonzero_offset_bound": 0.1125303384303152
+    },
+    {
+      "mu": 0.001,
+      "zero_offset_bound": 0.005290872542614164,
+      "nonzero_offset_bound": 0.023913799094717934
+    },
+    {
+      "mu": 0.0001,
+      "zero_offset_bound": 0.0005241542908422822,
+      "nonzero_offset_bound": 0.0064215326671134745
+    },
+    {
+      "mu": 1e-05,
+      "zero_offset_bound": 5.225943508404066e-05,
+      "nonzero_offset_bound": 0.0019174364377756738
+    }
+  ],
+  "scope": "Flat KG prescribed response only. No action/state/mass/error/energy selection. Triangle counterexample is not the two-body coherent fixture."
+}

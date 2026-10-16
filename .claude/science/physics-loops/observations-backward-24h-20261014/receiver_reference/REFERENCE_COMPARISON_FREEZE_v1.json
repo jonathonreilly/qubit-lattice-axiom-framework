@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-15T08:29:32.875862+00:00",
+  "before_first_cross_receiver_error_computation": true,
+  "root_source_read": [
+    "Moyer2000 sections13.2.4 and13.3.1.2 Eq13-35,13-32",
+    "M2 counter/reference reconstruction primary sources and data",
+    "RSR2001 Eq in2.7",
+    "177C2009 p10 complex sign, later RSR experiment corroboration only"
+  ],
+  "frozen_candidate": "For pre-NSP Block5 receiver with level1 S-exciter reference Fstored and Xdownlink, mean received sky=(880/221)*Fstored - D. Independently use N/T-1e6 in place of D. This conditional historical processing identification is tested, not forced by the ODF label alone.",
+  "RSR_candidate": "mean received sky = LO - [P(1+delta)-P(delta)] + s*fitted_baseband_frequency, delta in{0,1/2000}seconds, s in{-1,+1}; convert archived IEEE coefficients exactly to rational before subtraction of GHz-scale quantities. Delta labels are two archived phase-polynomial readings, not a fitted time shift or calibrated pipeline delay.",
+  "finite_interval_limit": "One-second sinusoid fit estimates a best approximation to baseband voltage. Replacing its true interval mean phase derivative by the fitted slope is an additional local carrier-model assumption. Count interval [second,second+1] differs from sample support ending atsecond+.999; no small numerical comparison certifies a physical error budget.",
+  "all_comparisons": "Record all600matchedcounts,allflagsandbothsigns/timings; no fitted bias, time shift, scale or rejected rows. Ka has no matched closed-loop downlink product here and is not independently calibrated."
+}

@@ -1,0 +1,202 @@
+{
+  "cases": [
+    {
+      "name": "history_modulus",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "a48e2a1f73b1486a5cb0cd90d8352f10dd7f916a292bc9519966bd3fa6940955",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-history_modulus-wiqxa76f/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "7535f84964cfbec2ad1f883973c73bcd8e4b63b351336bb6cc08696f8a54dbe3",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: endpoint_integer_history_2"
+      ]
+    },
+    {
+      "name": "polynomial_contrast",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "f015664ca92ca5574ef7dc09c90d1275daee9cc993e95327a94b4da5656aaa80",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-polynomial_contrast-3chdx2vd/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "6c2fa26b147b694908a87969fe9b86cf09684046517f4c76bae9c165d9539732",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: endpoint_integer_history_0"
+      ]
+    },
+    {
+      "name": "projected_gcd",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "d4e4cad19f9205cf8b4086e3a25070a89b2e211afe26c6a2ec5ff11df34e894d",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-projected_gcd-ik6etsvl/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "a9a201e7ebdab7082350969eeae7c08cd048bbf586dd754ae2abeb5b5fdcfc4c",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: nonprimitive_period"
+      ]
+    },
+    {
+      "name": "nearest_component_history",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "63eaf79079eed2686f6a204a8fcbef172bc67ed975355194fa926a433b5cd3e3",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-nearest_component_history-uisvtg94/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "92cc5934ce0ff1fab903a49f2c0fb45eef14500c7d47ccf14bce029802250759",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: component_rounding_not_optimal"
+      ]
+    },
+    {
+      "name": "curved_projection",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "f10c24c80beeb4780994b75d58fa977bef28271be58b40c232b2d62c9c47de20",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-curved_projection-puk1jxiv/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "b7969a9b600934af0f71db9cae031b392865eda5ef42b7bc4e77d4763a7a8577",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: curved_group_H"
+      ]
+    },
+    {
+      "name": "physical_error_sign",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "0d70aff212c42bf60ee2f2f6d52249e1a14a55b7ec560c8a7493a45515fffe31",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-physical_error_sign-s6n2a3lo/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "89ce109014ae2c1b3127c3ed6aa2fe837c3f6a1589aef44a2d83e34e8a413c43",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: nonzero_error_sharp_floor"
+      ]
+    },
+    {
+      "name": "energy_norm_conversion",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "9e9048feac8b2cdc3a2fbe6f5afb64c51eafd5f0e7d69e7f36de7d6f2dac00b0",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-energy_norm_conversion-ek9hmjua/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "d6058ef41ca90f52b268b9b13a84b6cac654390c39350e75d364ea50af99166d",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: sharp_scalar_Riesz_example"
+      ]
+    },
+    {
+      "name": "rationality_guard",
+      "kind": "math",
+      "canonical_source_sha256": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+      "mutation_source_sha256": "e698cf8e52f4ac3641b2e8540efb2e7bd78ef3577dc758569e7b7f674e2e22b4",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-rationality_guard-q8we6azr/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "b1aae8fcdab271ae1aafe88a119617c843bedbff7b3deefec25472eb03f265b6",
+      "stderr_tail": [
+        "    if not cond:raise AssertionError(name)",
+        "                ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError: floating_weight_rejected"
+      ]
+    },
+    {
+      "name": "counter_high_part",
+      "kind": "data",
+      "canonical_source_sha256": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+      "mutation_source_sha256": "1a03e3f20fb2621f17421e30c10533fbeef438929c13e447e65ca81d6adf3341",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-counter_high_part-6ckn03w6/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "ca62ce0c5594878f74d15b6757afe6a65d8685e46162e27494272dda8fae6566",
+      "stderr_tail": [
+        "    assert abs(errM)<=diagnostic_scale and abs(err1)<=diagnostic_scale",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "oneway_reference",
+      "kind": "data",
+      "canonical_source_sha256": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+      "mutation_source_sha256": "27f0acf3387a676d35b7a54f6a24342512e51b3a0e09653e426c6b657de67809",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-oneway_reference-afzh4d3e/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "c9a770d865db9104d16264cfde2914a9d0be2407643030406b332647c0043541",
+      "stderr_tail": [
+        "    assert abs(errM)<=diagnostic_scale and abs(err1)<=diagnostic_scale",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "endpoint_metadata",
+      "kind": "data",
+      "canonical_source_sha256": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+      "mutation_source_sha256": "72b8c9ed2fccf8c03bbf8f28f19a33092094a28a42bfc26fff324846930ff99c",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-endpoint_metadata-dgscfsf9/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "d3ac36be59b4996f1e0a3e43f3fa76700c77da9411e30ac95b6030e8fcae02ec",
+      "stderr_tail": [
+        "  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_phase_quotient_check.py\", line 58, in main",
+        "    raise AssertionError(name)",
+        "AssertionError: slip_diagnostic_not_erased"
+      ]
+    },
+    {
+      "name": "third_difference",
+      "kind": "data",
+      "canonical_source_sha256": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+      "mutation_source_sha256": "636229482e1082f22f1616e8cbad93afd837d4e59a6d43b0d529fdd1e75329c3",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-third_difference-_ypdmoos/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "e6788cda795843f92649c07815ad14a8a45123c0221442767b77587713040265",
+      "stderr_tail": [
+        "  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_phase_quotient_check.py\", line 58, in main",
+        "    raise AssertionError(name)",
+        "AssertionError: third_difference_comparison"
+      ]
+    },
+    {
+      "name": "one_cycle_observable",
+      "kind": "data",
+      "canonical_source_sha256": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+      "mutation_source_sha256": "1c5580bcd3f88a8411cbcd966bbbdb53376c773990cbbfa4f458632054361e77",
+      "mutation_path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/phase-quotient-one_cycle_observable-to1n2fl8/candidate.py",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "stderr_sha256": "49f04a785908ecadf1729474f0b26df924733613345554adb65dad73084781cd",
+      "stderr_tail": [
+        "  File \"/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_phase_quotient_check.py\", line 58, in main",
+        "    raise AssertionError(name)",
+        "AssertionError: row_ledger_reproduced"
+      ]
+    }
+  ],
+  "assertion_rejected": 13,
+  "total": 13,
+  "canonical_source_modified": false
+}

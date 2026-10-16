@@ -1,0 +1,87 @@
+{
+  "role": "exposed cross-receiver development comparison under historical conversion and local carrier assumptions",
+  "source_sha256": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c",
+  "frozen_candidate_sha256": "d646bf5efd6826715506a8afb4918d438e6bfb12439ad41431f58405be8ae9f1",
+  "estimator_ledger_sha256": "eb5841d57e8f436d02c9bb7a122afa2fcc760f65699cacf0b3839b66ed5c12ea",
+  "comparison_ledger_sha256": "fa84912e2f9fa24683f7f50b9a42ce95809adce2261b1f873aa56da6f87424e7",
+  "matched_intervals": 600,
+  "ODF_bad_count": 0,
+  "ATDF_endpoint_nonzero_slip_diagnostics": 54,
+  "stored_reference_Hz": {
+    "numerator": 2117064000,
+    "denominator": 1,
+    "approximate": 2117064000.0
+  },
+  "X_reference_Hz": {
+    "numerator": 1863016320000,
+    "denominator": 221,
+    "approximate": 8429938099.547511
+  },
+  "maximum_ODF_ATDF_sky_difference_Hz": 4.39e-07,
+  "candidates": {
+    "0": {
+      "spectral_sign": -1,
+      "phase_delta_seconds": {
+        "numerator": 0,
+        "denominator": 1,
+        "approximate": 0.0
+      },
+      "min_median_max_Hz": [
+        -3.127846184856078,
+        -0.5816937136634894,
+        1.4524133095230156
+      ],
+      "mean_Hz": -0.584940154444678,
+      "RMS_Hz": 0.820417698744439
+    },
+    "1": {
+      "spectral_sign": 1,
+      "phase_delta_seconds": {
+        "numerator": 0,
+        "denominator": 1,
+        "approximate": 0.0
+      },
+      "min_median_max_Hz": [
+        -0.21701023655672214,
+        6.966959154046728e-05,
+        0.31135125106207884
+      ],
+      "mean_Hz": -0.0004016645353294351,
+      "RMS_Hz": 0.06642541944357412
+    },
+    "2": {
+      "spectral_sign": -1,
+      "phase_delta_seconds": {
+        "numerator": 1,
+        "denominator": 2000,
+        "approximate": 0.0005
+      },
+      "min_median_max_Hz": [
+        -3.128005535737177,
+        -0.5818457601133891,
+        1.4522583932284407
+      ],
+      "mean_Hz": -0.5850936027430631,
+      "RMS_Hz": 0.8205278083671507
+    },
+    "3": {
+      "spectral_sign": 1,
+      "phase_delta_seconds": {
+        "numerator": 1,
+        "denominator": 2000,
+        "approximate": 0.0005
+      },
+      "min_median_max_Hz": [
+        -0.2171652868420615,
+        -8.211507523618079e-05,
+        0.3111965002314285
+      ],
+      "mean_Hz": -0.0005551128337145778,
+      "RMS_Hz": 0.06642635395068097
+    }
+  },
+  "fitted_biases": 0,
+  "fitted_timeshifts": 0,
+  "independent_empirical_gravity_tests": 0,
+  "limit": "No comparison RMS is a certified physical carrier error. Later-RSR complex sign is supported by an external convention, and this is a development consistency check. Timing ambiguity and calibration remain open."
+}

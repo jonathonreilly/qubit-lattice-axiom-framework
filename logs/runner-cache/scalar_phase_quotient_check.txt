@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/scalar_phase_quotient_check.py
+runner_sha256: 9dfd11339b89523f0f0d3fc73881c1b014852551115479064ad2c0d77624ade5
+input_fingerprint_sha256: 9cfa7c4e53f17bde6202e927dd31d8d3e28fb6f0ed9c4d5825f3d62286ded2b7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 8.07
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "mathematical_controls": 38,
+  "development_controls": {
+    "all_rows_accounted_without_lift": true,
+    "no_quality_clipping": true,
+    "slip_diagnostic_not_erased": true,
+    "good_lock_flags_do_not_imply_zero_diagnostic": true,
+    "all_registered_chains": true,
+    "all_equal_duration_triples": true,
+    "native_modulus_comparison": true,
+    "one_cycle_comparison": true,
+    "third_difference_comparison": true,
+    "row_ledger_reproduced": true,
+    "triple_ledger_reproduced": true
+  },
+  "checks_passed": 49,
+  "source_sha256": {
+    "scripts/scalar_phase_quotient_check.py": "9dfd11339b89523f0f0d3fc73881c1b014852551115479064ad2c0d77624ade5",
+    "docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e",
+    "scripts/scalar_phase_quotient_controls.py": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+    "scripts/cassini_phase_quotient_development.py": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+    "scripts/cassini_doppler_development_inputs.json": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392",
+    "scripts/cassini_atdf_decode.py": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/DEVELOPMENT_PROTOCOL_v1.json": "b787ff131b31ac481b1da12fb812d166e4a28014bcc4bf4bf6f0c617f2a5cbfa"
+  },
+  "external_scientific_inputs_read": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "tdf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.tdf",
+      "sha256": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+      "bytes": 46335744,
+      "filename": "c32easc2002_169_0000xmmmv0.tdf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    },
+    "tdf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+      "bytes": 90858,
+      "filename": "tdf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  },
+  "product_sha256": {
+    "mathematics.json": "dd345ef49b140c5b554abdfe185c9406ca5bc055d53a35959f2ab745245906a6",
+    "QUOTIENT_DEVELOPMENT_RESULTS_v1.json": "8916e82b919e54ce9e1b5a7859652aa90d0c42605ab70659ae320fcbf6846879",
+    "QUOTIENT_ROWS_v1.jsonl.gz": "04b7af8c9911b71ec6fa011441fca25de2eb2ba262caa7f8b7b4f431d8edb59a",
+    "QUOTIENT_TRIPLES_v1.jsonl.gz": "f5f6db505b0e142728c445f8f6dc59574854fa9319462b664139ac622f05c973"
+  },
+  "independent_empirical_tests": 0,
+  "fitted_parameters": 0,
+  "physical_energy_estimates": 0,
+  "physical_error_bounds_inferred": 0,
+  "two_count_Gram_example": {
+    "G_times_pi": "Matrix([[766/405, -1871/1620], [-1871/1620, 766/405]])",
+    "r": [
+      "49/100",
+      "49/100"
+    ],
+    "minimum_N_over_pi": "16132149/98124250",
+    "component_rounding_N_over_pi": "194481/298250",
+    "minimizing_lifts": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "complete_search_box": {
+      "radius_squared": "1839166/745625",
+      "radius": 2,
+      "examined": 16
+    }
+  },
+  "scope": [
+    "No forward phase-history lift is computed or selected.",
+    "No quality or slip flag is used to discard a row.",
+    "Modulo agreement checks dependent archive products only.",
+    "Third endpoint differences still include physical orbit, clock, medium and electronics. They are not scalar residuals.",
+    "No actual scalar energy or physical error budget is inferred.",
+    "No new raw empirical file was opened."
+  ]
+}
+per_element: exact rational phase classes and all exposed Doppler rows checked; no physical noise certificate
+per_site: checked and not executed — no lattice-site measurement or physical site identification is supplied
+per_mode: exact finite Hilbert response and lattice fixtures checked; no observed scalar mode spectrum is inferred
+per_block: all exposed count intervals and adjacent triples checked; no new empirical holdout or gravity test
+lattice_wide: checked and not executed — continuum response hypotheses do not establish a microscopic TOE or state selector
+
+----- stderr -----
+

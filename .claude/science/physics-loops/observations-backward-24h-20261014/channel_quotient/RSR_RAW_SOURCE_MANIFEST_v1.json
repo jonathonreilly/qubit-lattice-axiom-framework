@@ -1,0 +1,21 @@
+{
+  "protocol_sha256": "8f85b14f328d7c0e707ef7fdb4b5bc24473aae7afea63059d410e0bbcd3ac852",
+  "products": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54x25d.1a1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.1a1",
+      "bytes": 38088660,
+      "sha256": "28af13233a64f7629b794cc8beaad0db2500fb09cc421cda3e82544144235a92",
+      "retrieved_at": "2026-10-15T06:51:41.320167+00:00",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54k25d.1b1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.1b1",
+      "bytes": 38088660,
+      "sha256": "9544e294be8867cb013b3d96891a413f5dddc3d5e0236e8a2b9331fe7d45a19e",
+      "retrieved_at": "2026-10-15T06:51:53.134368+00:00",
+      "role": "entire product exposed development; not independent test"
+    }
+  ]
+}

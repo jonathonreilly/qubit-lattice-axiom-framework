@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-15T04:35:38.169591+00:00",
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "base": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+  "source_scope": [
+    {
+      "path": "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "1eb49b6a111c0532e9ed6540e3a11ce8970cc1b9dd8cb0cd026e23bb0becd874",
+      "read_scope": "complete note"
+    },
+    {
+      "path": "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+      "read_scope": "complete note"
+    }
+  ],
+  "route": "derive a controlled positive-mass correction to the observation operator without selecting an initial state",
+  "current_status": "working; independent derivation pending",
+  "curvature_status": "complete supplied action and static curved-response source read; no dynamical curved extension adopted",
+  "data_status": "no new data; exposed day169 unchanged; reserved raw products unopened",
+  "process_check": "no detached author/supervisor or older-campaign worker found at04:30Z; matching lock refreshed04:30:50Z",
+  "deadline_unchanged": "2026-10-15T21:48:44Z"
+}

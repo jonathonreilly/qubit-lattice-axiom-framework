@@ -1,0 +1,63 @@
+{
+  "main": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "starting_head": "f2fdc425b4a18341c95a076e58fec2d56ebc3cfa",
+  "branch": "codex/observations-backward-channels-20261015",
+  "searches": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(integer.*plasma|plasma.*integer|integer.*chirp|chirp.*integer)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "scripts/*.py"
+      ],
+      "exit": 1,
+      "artifact": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_PRIOR_ART_SEARCH_1_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(quotient.*(radio|carrier)|carrier.*quotient|phase.*ambiguity.*plasma)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit": 0,
+      "artifact": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_PRIOR_ART_SEARCH_2_v1.txt",
+      "sha256": "87bc50416c12ff1203b9efec7fb3f6b51ebec19bd63985e7cf1d555d55b22748",
+      "line_count": 82
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(integer.*plasma|plasma.*integer|integer.*chirp|chirp.*integer)",
+        "HEAD",
+        "--",
+        "docs/*.md",
+        "scripts/*.py"
+      ],
+      "exit": 1,
+      "artifact": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_PRIOR_ART_SEARCH_3_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0
+    }
+  ],
+  "open_pr_snapshot": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M9_OPEN_PRS_v1.json",
+  "relevant_provisional_sources": [
+    "docs/COHERENT_RADIO_COUNT_INITIAL_PHASE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "scope": "Full new channel route uses M3 coherent-transfer and M8 quotient mathematics conditionally. Other open PR title/head inventory is context only; no result adopted from unread PRs."
+}

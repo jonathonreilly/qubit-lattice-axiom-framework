@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-15T05:12:24.272223+00:00",
+  "node": {
+    "claim_id": "scalar_mass_curvature_count_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/scalar_curved_count_controls.py",
+      "scripts/scalar_massive_refinement_controls.py",
+      "scripts/scalar_massive_response_controls.py"
+    ],
+    "note_hash": "7ee8fa3338620e56be6e03b421c260d414abfa9b3d9307cee0a4fb09148ee82d",
+    "path": "docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_mass_curvature_count_check.py",
+    "title": "Mass and curvature bounds for observation-derived scalar counts"
+  },
+  "final_note_sha256": "19898e25ef9ae34ee7949f7c688a46dda7c3160f41a69f4986acd9a7f1e998a3",
+  "graph_note_hash_difference": "Only subsequent reviewer-requested norm to squared-energy-dual-norm prose repair; canonical source/cache records bind final bytes.",
+  "manifest_sha256": "91692254fe30cd00533dbabfd898c6528558d1ae2a3344afd97a145441633707",
+  "delta": "Exactly one zero-edge canonical node added; every prior node and other top-level value unchanged except node_count."
+}

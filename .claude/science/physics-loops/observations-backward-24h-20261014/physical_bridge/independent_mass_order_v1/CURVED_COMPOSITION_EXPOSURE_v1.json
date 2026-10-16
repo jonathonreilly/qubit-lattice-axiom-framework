@@ -1,0 +1,16 @@
+{
+  "opened_after_independent_execution_utc": "2026-10-15T05:02:26.334807+00:00",
+  "sources": {
+    "CURVED_COUNT_COMPOSITION_v1.md": {
+      "sha256": "dae8894dd8740055d12a9f84b59a33146e95e9284fc2046cd132c514593c7ce3",
+      "bytes": 4167,
+      "lines": 85
+    },
+    "curved_count_controls_v1.py": {
+      "sha256": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+      "bytes": 10020,
+      "lines": 219
+    }
+  },
+  "independent_gram_result_sha256": "5c93dbd32dc2615589b036e67b087ff7bd81e365f788d75bd887cdd563f899a1"
+}

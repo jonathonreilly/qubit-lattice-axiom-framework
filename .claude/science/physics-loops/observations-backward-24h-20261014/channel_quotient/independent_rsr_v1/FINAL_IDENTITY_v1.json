@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-10-15T07:09:56.551875+00:00",
+  "stage": "Original independent extraction complete before opening author code/results/digest/header ledgers.",
+  "scope": "Both raw file identities and all 8941 headers per file; only fixed UTC48900<=t<49500 payloads; exact corrected-IQ per-record hashes; conditional ideal rectangular cell/19,-5 mathematics.",
+  "author_count_exposure": "Parent announced 8941 headers and 600-second/600000-pair selection after source freeze, before execution; these were fixed by primary labels/protocol. No numeric sample, digest or author code exposure before this identity.",
+  "reviewer_files": [
+    {
+      "filename": "1a1_HEADERS_v1.jsonl",
+      "bytes": 10778037,
+      "sha256": "172057f8387ebe358373c975640174755821efe8124f15c873bcc53d92f4dd92"
+    },
+    {
+      "filename": "1a1_SUMMARY_v1.json",
+      "bytes": 19085,
+      "sha256": "6aad2b581c772089858ae4da40eb2547386053217c54fd0a55f1911ac4ac1a31"
+    },
+    {
+      "filename": "1a1_WINDOW_IQ_i32be_v1.bin",
+      "bytes": 4800000,
+      "sha256": "2094952c4df7757c397810a01dfd67d83e643fb8be8aff60e219fd3e1a5bce86"
+    },
+    {
+      "filename": "1a1_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 395623,
+      "sha256": "9f6bcf04a723db1b4805e3ee6b1107db3a59338dd7a273bdba86d50a1e9a0fda"
+    },
+    {
+      "filename": "1b1_HEADERS_v1.jsonl",
+      "bytes": 10824774,
+      "sha256": "67f55dadd75eb7f92792b31371554d9c581e441cd3acdb92e1dbd1e6f597f481"
+    },
+    {
+      "filename": "1b1_SUMMARY_v1.json",
+      "bytes": 19114,
+      "sha256": "44fbcc592624b78ead794fa2eef8bc827e20f358abaf1e4554a59af4d65801b8"
+    },
+    {
+      "filename": "1b1_WINDOW_IQ_i32be_v1.bin",
+      "bytes": 4800000,
+      "sha256": "e3f08dce9f664f54e80e38d44f03cbb4b34e448c56164212fc801b653794074a"
+    },
+    {
+      "filename": "1b1_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 397589,
+      "sha256": "fd7cd45765619adfcb6374bc2cc76993e638892f2ef7a04f2752dc17da5a2f58"
+    },
+    {
+      "filename": "EXECUTION_v1.json",
+      "bytes": 699,
+      "sha256": "9c1e96f69e4df7656a51354bdecde2c8746725f134826091c4560d1fc1d79717"
+    },
+    {
+      "filename": "INDEPENDENT_REVIEW_v1.md",
+      "bytes": 9268,
+      "sha256": "1ea7a956229b4e1ab56fc2310f2054022f7be6485a047c0ba7fa5fb90454cbb9"
+    },
+    {
+      "filename": "MATCHED_WINDOW_RECORDS_v1.jsonl",
+      "bytes": 134370,
+      "sha256": "ddaad7450791678f90ddd8b14a1c527b9f708559677a52b995e14045653aad83"
+    },
+    {
+      "filename": "PREACCESS_FREEZE_v1.json",
+      "bytes": 2853,
+      "sha256": "0a296403a2c4f0af01e787346c360d6c2b2d1d34a140f815a5ddfa920bbf290b"
+    },
+    {
+      "filename": "PRECHECK_v1.md",
+      "bytes": 6159,
+      "sha256": "05e6637375d8c56f203da2ed44cd821eb20c8e08ddef331040094c32f2bafb36"
+    },
+    {
+      "filename": "PRIMARY_LABEL_SCHEMA_v1.json",
+      "bytes": 26699,
+      "sha256": "3bb07115387657640d5cf10d69c27c7fecf0e92d20557c1af62197cee7ce3af7"
+    },
+    {
+      "filename": "RESULTS_v1.json",
+      "bytes": 49266,
+      "sha256": "e1a725bdd4ff2987ae1dbaaf6bf8e71e6f0dbe08225c270cb25afb45a96359ef"
+    },
+    {
+      "filename": "RUN_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "filename": "RUN_v1.stdout",
+      "bytes": 3549,
+      "sha256": "be402dca7fc82cd7e8b9cc4e4a391189169f4105e9e2bdbf791e47cd585eaeee"
+    },
+    {
+      "filename": "SYNTHETIC_CONTROLS_v1.json",
+      "bytes": 920,
+      "sha256": "219c06e3d07930a8a542f21074266f395824a2cda42b473e7612be035df9a256"
+    },
+    {
+      "filename": "independent_rsr_reader_v1.py",
+      "bytes": 18655,
+      "sha256": "ee3b0475758f3033dd54c989986419d3a73adf76ad329f1c3d2068e3d52e43b5"
+    }
+  ],
+  "metadata_inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_PREACCESS_PROTOCOL_v1.json",
+      "sha256": "8f85b14f328d7c0e707ef7fdb4b5bc24473aae7afea63059d410e0bbcd3ac852",
+      "bytes": 2985
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json",
+      "sha256": "c16ecb85276f5ce203925acd459f1ca9fbb41ca5c283da49b2a7aeec4856947a",
+      "bytes": 1170
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/rsr_c32easc2002_169_1335x54x25d.lbl",
+      "sha256": "36ab671cbb83c7d04060c2a19058800a4fc50f780aa8fa6e9f77ed3089046382",
+      "bytes": 61946
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/rsr_c32easc2002_169_1335x54k25d.lbl",
+      "sha256": "2349b0473986f5247650fc88a5bbaf7e859786e22253b38f4a8719af3dd0c697",
+      "bytes": 61946
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/physical_link/casrssis.txt",
+      "sha256": "daa759b2338fc4ca53d7474d7c17f83a1068470c0c5a00bcc17cf2d17e5ad84b",
+      "bytes": 309479
+    }
+  ],
+  "raw_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54x25d.1a1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54x25d.1a1",
+      "bytes": 38088660,
+      "sha256": "28af13233a64f7629b794cc8beaad0db2500fb09cc421cda3e82544144235a92",
+      "retrieved_at": "2026-10-15T06:51:41.320167+00:00",
+      "role": "entire product exposed development; not independent test"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/rsr_development/c32easc2002_169_1335x54k25d.1b1",
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/rsr/c32easc2002_169_1335x54k25d.1b1",
+      "bytes": 38088660,
+      "sha256": "9544e294be8867cb013b3d96891a413f5dddc3d5e0236e8a2b9331fe7d45a19e",
+      "retrieved_at": "2026-10-15T06:51:53.134368+00:00",
+      "role": "entire product exposed development; not independent test"
+    }
+  ],
+  "scientific_limit": "Exposed development, not independent empirical test. No carrier/thermal-noise bound, skyphase reconstruction, fit, scalar/gravity observation or physical clipping certificate.",
+  "mathematical_domain": "Supplied unsaturated ideal midrise law and nonzero analog voltage; origin-touching cells explicitly qualified.",
+  "result_sha256": "e1a725bdd4ff2987ae1dbaaf6bf8e71e6f0dbe08225c270cb25afb45a96359ef",
+  "report_sha256": "1ea7a956229b4e1ab56fc2310f2054022f7be6485a047c0ba7fa5fb90454cbb9"
+}

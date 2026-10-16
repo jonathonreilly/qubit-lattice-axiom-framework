@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-15T04:50:35.434054+00:00",
+  "reviewer": "/root/localized_history_check",
+  "checks_passed": 120,
+  "points": [
+    [
+      -0.75,
+      0.0,
+      0.0
+    ],
+    [
+      0.75,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.6614378277661477,
+      0.0
+    ]
+  ],
+  "spatial_weights": [
+    1.0,
+    1.0,
+    -2.0
+  ],
+  "omega0": 6.283185307179586,
+  "mass": 2.5110915135822642,
+  "packet_scale": 40.0,
+  "packet_core_radius": 320.0,
+  "packet_support_radius": 360.0,
+  "frequency_factors": {
+    "massless": 6.0,
+    "massive": 6.286672491727098,
+    "gap": 0.2866724917270984
+  },
+  "finite_spectral_values": {
+    "0.0": 33.851821532785884,
+    "2.5110915135822642": 35.46813498682403
+  },
+  "finite_spectral_gap": 1.6163134540381492,
+  "finite_spectral_ratio": 1.0477467202901543,
+  "analytic_bounds": {
+    "gaussian_band_tail": 3.083451580056004e-08,
+    "elementary_band_tail": 3.1745586679666396e-08,
+    "gaussian_gap_lower": 0.7334435464911289,
+    "compact_L2_difference": 2.8317935046085528e-14,
+    "compact_quadratic_error": 1.7173711102759095e-12,
+    "strict_compact_gap_lower": 0.7334435464894115
+  },
+  "field_controls": [
+    {
+      "mass": 0.0,
+      "finite_band_norm_squared": 33.8518215327861,
+      "finite_band_observation": 33.85182153278612
+    },
+    {
+      "mass": 2.5110915135822642,
+      "finite_band_norm_squared": 35.46813498682416,
+      "finite_band_observation": 35.46813498682416
+    }
+  ],
+  "source_sha256": "3d60a7a1a45fba1aefe5b532e880d2d6bf43c3c464e27fea03bda32bba09012b",
+  "precheck_sha256": "30518157177387a7d90d3c218a638ae78aa30fb8cfbab310f663d34076c3fb51",
+  "author_sources_read": false,
+  "other_reviewers_read": false,
+  "empirical_tests": 0,
+  "elapsed_seconds": 0.1254421672783792,
+  "scope": "General pure-clock fixed noncollinear-point KG functional only. Counterexample uses identical physical smooth compact temporal weights across masses and exact pointwise zero summed weights. No conclusion about a specific coherent count/force fixture."
+}

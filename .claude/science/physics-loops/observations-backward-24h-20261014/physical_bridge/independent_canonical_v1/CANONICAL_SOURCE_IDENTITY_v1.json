@@ -1,0 +1,36 @@
+{
+  "frozen_utc": "2026-10-15T05:07:52.288625+00:00",
+  "initial_complete_note_read_sha256": "c9b85c2ea8fbfea2fb314f2eb92c3dd61790ca2a149c04fcdb4675ad86a3a97f",
+  "files": {
+    "docs/SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "a8a1c3b16992722fcaa95b6b3dd11a42dc8b624b1c3298fbc93e1896cde0c8d9",
+      "bytes": 25733,
+      "lines": 536,
+      "snapshot": "CANONICAL_SCALAR_MASS_CURVATURE_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+    },
+    "scripts/scalar_mass_curvature_count_check.py": {
+      "sha256": "5ef7ce8911bddc98ac5a39f8957639ec8a8daa0334e9e408a533793a8a330a1e",
+      "bytes": 3102,
+      "lines": 65,
+      "snapshot": "CANONICAL_scalar_mass_curvature_count_check.py"
+    },
+    "scripts/scalar_massive_response_controls.py": {
+      "sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+      "bytes": 11739,
+      "lines": 276,
+      "snapshot": "CANONICAL_scalar_massive_response_controls.py"
+    },
+    "scripts/scalar_massive_refinement_controls.py": {
+      "sha256": "f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512",
+      "bytes": 6054,
+      "lines": 123,
+      "snapshot": "CANONICAL_scalar_massive_refinement_controls.py"
+    },
+    "scripts/scalar_curved_count_controls.py": {
+      "sha256": "03c45ca24da8b56157905852971238a96822508c38ffef889b850a76939bf4c0",
+      "bytes": 13674,
+      "lines": 288,
+      "snapshot": "CANONICAL_scalar_curved_count_controls.py"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-10-15T07:31:44.548427+00:00",
+  "classification": "Focused canonical mathematical source correspondence; not formal audit, empirical review or publication approval",
+  "reviewer": "/root/force_energy_bridge_check",
+  "report_sha256": "d33dc165fdf99b9128e4cf1e5f4c7180c64bdb213806a74102786235a0ec9395",
+  "current_source_binding": {
+    "docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "9f84d0166d719ef1c6c358108dd757520514769e092d1dc64fd5ce25a422eff7",
+      "bytes": 27107,
+      "snapshot": "CANONICAL_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "current_bytes_equal_snapshot": true
+    },
+    "scripts/scalar_channel_quotient_controls.py": {
+      "sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "bytes": 4838,
+      "snapshot": "CANONICAL_scalar_channel_quotient_controls.py",
+      "current_bytes_equal_snapshot": true
+    },
+    "scripts/scalar_channel_calibration_check.py": {
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535",
+      "bytes": 6183,
+      "snapshot": "CANONICAL_scalar_channel_calibration_check.py",
+      "current_bytes_equal_snapshot": true
+    }
+  },
+  "files": {
+    "CANONICAL_MATH_REVIEW_v1.md": {
+      "sha256": "d33dc165fdf99b9128e4cf1e5f4c7180c64bdb213806a74102786235a0ec9395",
+      "bytes": 13926
+    },
+    "CANONICAL_EXPOSURE_v1.json": {
+      "sha256": "c10b7929fd70937ffa8778f88b6ab7e4648a947d2628c86235031bf6edaa26fc",
+      "bytes": 986
+    },
+    "CANONICAL_STATIC_BINDING_v1.json": {
+      "sha256": "07a3ee4bbe0feb85d9e5e7cfd6be93bc156bdc77b33a4ab59b0240a6e96f1e65",
+      "bytes": 768
+    },
+    "CANONICAL_HELPER_ADAPTATION_v1.diff": {
+      "sha256": "e4d76662ce47f19689b531e645812580b1f0ec6b3db1995404b60e46a0f96538",
+      "bytes": 1267
+    },
+    "CANONICAL_SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "9f84d0166d719ef1c6c358108dd757520514769e092d1dc64fd5ce25a422eff7",
+      "bytes": 27107
+    },
+    "CANONICAL_scalar_channel_quotient_controls.py": {
+      "sha256": "299140a274e389a3128c3aa242ce189fb749307f59451a376373f4e5f8eeb53d",
+      "bytes": 4838
+    },
+    "CANONICAL_scalar_channel_calibration_check.py": {
+      "sha256": "1a8fbc27920523da57e56b118f89462e35a434d610fe61ebf89c9fb5cc72a535",
+      "bytes": 6183
+    },
+    "INDEPENDENT_REVIEW_v1.md": {
+      "sha256": "ffdd9e7de412a67b8d13df50cb7508e7fdf02575aa237f5600358f8a379fe33c",
+      "bytes": 12058
+    },
+    "INDEPENDENT_IDENTITY_v1.json": {
+      "sha256": "32be25beb3ba9d6f2079c64657f289ef79b14f47f3329e0bfb893e661a45fcdd",
+      "bytes": 2427
+    },
+    "AUTHOR_NOTE_CORRESPONDENCE_v1.md": {
+      "sha256": "368f6206ec64211f9d72082f18059763118ef63d67f574bc019086726c6367d7",
+      "bytes": 11287
+    },
+    "AUTHOR_NOTE_CORRESPONDENCE_IDENTITY_v1.json": {
+      "sha256": "c6d99789766dcc1cc4cf1720b434cc547fd9de0398bcf0a2d719d5c044947e10",
+      "bytes": 2151
+    },
+    "ADC_EXTENSION_REVIEW_v1.md": {
+      "sha256": "c504590c27231a6a1f64fc7c4650a8821c77422747967197e1d9fa8c5d620e51",
+      "bytes": 7492
+    },
+    "ADC_EXTENSION_REVIEW_IDENTITY_v1.json": {
+      "sha256": "69536dba5513529e0995fb9b4bfdf66c9d22b10b1b21f9832680007d9fd8d270",
+      "bytes": 1751
+    },
+    "AUTHOR_IMPLEMENTATION_CORRESPONDENCE_v1.md": {
+      "sha256": "1de570d8b70360db764c0c2daf16174d9882630142e2ce683ad0a83d93ab60a9",
+      "bytes": 9551
+    },
+    "AUTHOR_IMPLEMENTATION_CORRESPONDENCE_IDENTITY_v1.json": {
+      "sha256": "36e586a5f5e98a5bd0c116ee5e2cb8f86f727e8355971fdceade41245442ef65",
+      "bytes": 3349
+    }
+  },
+  "full_note_read": true,
+  "full_math_helper_read": true,
+  "full_primary_read": true,
+  "no_go_gate_N1_N8_read": true,
+  "substantive_math_source_findings": [],
+  "unsupported_global_negative_claims_found": false,
+  "canonical_aggregate_run": false,
+  "raw_data_accessed": false,
+  "empirical_helpers_opened": false,
+  "source_bound_cache_checked": false,
+  "formal_audit": false
+}

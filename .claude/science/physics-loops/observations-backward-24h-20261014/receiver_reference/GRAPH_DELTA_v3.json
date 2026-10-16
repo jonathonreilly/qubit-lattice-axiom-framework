@@ -1,0 +1,31 @@
+{
+  "new_node": {
+    "claim_id": "cassini_carrier_reference_feasibility_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/cassini_atdf_decode.py",
+      "scripts/cassini_atdf_odf_reconcile.py",
+      "scripts/cassini_carrier_estimator.py",
+      "scripts/cassini_carrier_geometry_controls.py",
+      "scripts/cassini_odf_decode.py",
+      "scripts/cassini_receiver_reference.py",
+      "scripts/cassini_rsr_development.py"
+    ],
+    "note_hash": "ee2c6e46a235de9a2c668d6013dc830eddb160c77d218309431669b8d9ab26f8",
+    "path": "docs/CASSINI_CARRIER_REFERENCE_FEASIBILITY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/cassini_carrier_reference_check.py",
+    "title": "Cassini carrier reconstruction and a calibrated finite-voltage feasible set"
+  },
+  "manifest_added": [
+    "cassini_carrier_reference_feasibility_bounded_theorem_note_2026-10-15"
+  ],
+  "existing_manifest_dependency_entries_unchanged": true,
+  "deleted": [],
+  "edge_count": 16050,
+  "node_count": 7121,
+  "manifest_sha256": "760e41b0c96265fa81d0647f30acc4f55d4fd1f5a9e394e21a7ec796a8993ebf",
+  "scope": "Exact committed manifest comparison plus generated new node. No before-copy of complete graph was retained; no full old-node-byte equality claim."
+}

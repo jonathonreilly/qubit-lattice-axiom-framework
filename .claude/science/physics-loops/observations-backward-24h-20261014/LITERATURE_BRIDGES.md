@@ -23,3 +23,13 @@ Exact retrieved identities and exposure roles are in
 physical_link/METADATA_SUPPLIER_REVIEW_v1.json. No published precision is
 imported as a campaign error bound, and none of these sources derives the
 candidate scalar action or field state.
+
+## Receiver instrument references, current block
+
+Primary sources distinguish X/X 880/749, X/Ka 3344/749 and Ka/Ka 14/15 ideal turnaround ratios from an operational cross-uplink relation. Armstrong 2006 (revised 2016), section 4.6, and the DESCANSO ground-system sections are pinned in channel_quotient/independent_instrument_v1. The Kliore scope uses an author-uploaded text extraction; no original PDF identity is asserted. Asmar 2005 supports the standard dual-frequency contrast with common-ray qualifications.
+
+The original 2001 DSN 0159-Science PDF has SHA256 1161d5d7f50134cf3994c52674af4a2d8984990b7a7c64551b6c17d5964fe32d. Root personally read and visually verified PDF pages 17–18. It separates start-of-millisecond phase from midpoint frequency; the archive label prints midpoint for both. The specification supplies sample timing, pipeline compensation and a nominal sky-frequency relation. The reviewed sections do not fix the I+jQ frequency orientation or actual analog LO phase fluctuations. Recorded NCO predictions are distinct from measured sky phase.
+
+## M10 primary receiver/count reconstruction
+
+Moyer2000 section13.2.4 and13.3.1.2, TRK-2-18(2000), TRK-2-25(1996), the2001 RSR specification and Border/Paik2009 support separately scoped counter, band, NCO and complex-sign conventions. Exact originals, URLs and read ranges are in receiver_reference/independent_source_v1/RECEIVER_SOURCE_EVIDENCE_v1.json. The2009 experiment is later than the2002 data and does not certify software2632. Root checked the relevant Moyer text and visually inspected177C page10; the source reviewer had its own broader page scope. Historical implementation, LO phase fluctuations and actual noise remain open. These sources reconstruct measurement conventions; they do not derive the scalar theory.

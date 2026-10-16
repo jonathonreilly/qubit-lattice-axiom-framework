@@ -1,0 +1,45 @@
+[
+  {
+    "band": "Ka",
+    "second": 49112,
+    "author": {
+      "center_energy": 523586019048.0,
+      "derivative_correlation_bound": 36195948.88465036,
+      "fit_function_calls": 8,
+      "fit_success": true,
+      "fitted_complex_amplitude": [
+        -8877.842448521085,
+        11656.935319296981
+      ],
+      "fitted_tone_power_fraction": 0.4100572203387147,
+      "frequency_Hz": 0.9251746909516783,
+      "grid_cover_radius_Hz": 0.03125,
+      "grid_frequency_Hz": 0.9375,
+      "grid_peak_correlation": 14648163.324785627,
+      "note": "frequency and amplitude fit an explicitly conditional one-tone approximation; residual is not an upper bound on physical noise",
+      "numerical_global_residual_lower_bound": 274600129421.52142,
+      "residual_energy": 308885791468.9637
+    },
+    "independent": {
+      "frequency_Hz": -0.5322262786634724,
+      "grid_frequency_Hz": -0.518798828125,
+      "grid_index": 32751,
+      "grid_size": 32768,
+      "grid_peak_abs": 14659021.928566037,
+      "refined_peak_abs": 14664687.27269636,
+      "correlation_power": 215053052805982.6,
+      "residual_squared": 308532966242.0174,
+      "amplitude_real": 12602.606032588683,
+      "amplitude_imag": 7498.491447840819,
+      "derivative": -12.964860310251831,
+      "second_derivative": -1838812189048333.8,
+      "newton_displacement_Hz": -7.050671290667111e-15,
+      "iterations": 4,
+      "bracket_expansions": 0,
+      "analytic_grid_bound_numerical_residual_lower": 292201511081.70447,
+      "numerical_bound_is_interval_certificate": false
+    },
+    "difference": 1.4574009696151506,
+    "energy": 523586019048
+  }
+]

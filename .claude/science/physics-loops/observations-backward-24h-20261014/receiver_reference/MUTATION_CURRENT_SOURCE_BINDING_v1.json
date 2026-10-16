@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-15T08:52:34.377013+00:00",
+  "mutated_sources_current": true,
+  "assertion_rejections": 12,
+  "case_total": 12,
+  "source_identities": {
+    "cassini_carrier_estimator.py": "314724bf119f71a0bfe678ec5aa5e094efca251a24d871ac23957e80af18899f",
+    "cassini_receiver_reference.py": "72eec75703d5577dc97e20a5e1c96d7e46bca6d1d94c8874b1dd5ec02359c10c",
+    "cassini_carrier_geometry_controls.py": "b1b25068e1b05487049a1f5e072de329139315816c58db4ec3d96e02b6a74232",
+    "cassini_carrier_reference_check.py": "58a388ebc2a288d5535fa33a0dcb29bfc3b3dbe5e16ce3c22669211a0c7697b4"
+  },
+  "control_delta": "Geometry added principal-argument-cut witness after mutation run; all previously rejection-producing controls remain unchanged. No rerun claimed for new witness. Primary new reference-scale check was present before mutations; source math/estimator helpers unchanged.",
+  "summary_sha256": "f60c2af4292bc92bf9afcfedcfd5f1ed776f77f43b738e49882da196161dbaa9"
+}

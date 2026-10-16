@@ -1,0 +1,37 @@
+{
+  "first_author_exposure_after": "INDEPENDENT_REVIEW_FREEZE_v1.json",
+  "frozen_utc": "2026-10-15T04:48:06.306477+00:00",
+  "scope": "Entire two working notes and implementation read; triangle ordering route excluded from duplicate numerical/review work at parent request.",
+  "files": {
+    "MASSIVE_RESPONSE_WORKING_v1.md": {
+      "sha256": "4131181f0d73351ef2eaddf7b24dbcceb5d680351db1ede0ed38badbdf433e8d",
+      "bytes": 9773,
+      "snapshot": "AUTHOR_MASSIVE_RESPONSE_WORKING_v1.md"
+    },
+    "MASSIVE_REFINEMENT_WORKING_v1.md": {
+      "sha256": "448ec6ee42a4ae27c087cc05efcf940f047054228862be8fd76952c7493ce6bb",
+      "bytes": 6664,
+      "snapshot": "AUTHOR_MASSIVE_REFINEMENT_WORKING_v1.md"
+    },
+    "massive_response_controls_v1.py": {
+      "sha256": "226fbb6e5f4ef57359d1758a3fe99d5d212f357331ac2d05c1ce1ca3af74692f",
+      "bytes": 12103,
+      "snapshot": "AUTHOR_massive_response_controls_v1.py"
+    },
+    "massive_refinement_controls_v1.py": {
+      "sha256": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451",
+      "bytes": 6490,
+      "snapshot": "AUTHOR_massive_refinement_controls_v1.py"
+    },
+    "MASSIVE_RESPONSE_RESULTS_v1.json": {
+      "sha256": "f6332af784a3bdb94df24386f97e90b8890907f64ec0546d86c8e8e37677c482",
+      "bytes": 7433,
+      "snapshot": "AUTHOR_MASSIVE_RESPONSE_RESULTS_v1.json"
+    },
+    "MASSIVE_REFINEMENT_RESULTS_v1.json": {
+      "sha256": "a92e03d28c8008d0c501a098c8b52455aa36b1afacd2c3c20baba92361092c74",
+      "bytes": 5487,
+      "snapshot": "AUTHOR_MASSIVE_REFINEMENT_RESULTS_v1.json"
+    }
+  }
+}

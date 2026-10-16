@@ -51,3 +51,55 @@ next_trace_action: "Establish actual trajectory, clock and link calibration with
 ```
 
 The downstream consumer is scalar-history reconstruction from finite tracking counts. The new construction derives response weights and a joint massless energy Gram from the declared observation, including acceleration and shared-clock effects. It does not identify archived residuals with a scalar field, derive the physical action or provide the external energy/error comparison needed for exclusion.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 target scalar_mass_curvature_count, bounded_theorem / conditional-support / upstream_support. Observation: finite proper radio counts under stated link model. Derived: nuisance contrast, propagation correction, initial energy comparison. Missing downstream suppliers: actual calibration, scalar attribution, scales and independent energy/error bound. No selector counted as derivation.
+
+## Integer-history quotient (2026-10-15)
+
+trace_class: upstream_support
+target_claim_id: scalar_phase_quotient
+target_blocker_text: Derive or eliminate the revised scalar theory's remaining history and measured-gravity assumptions
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: Derive an applicable integer contrast across calibrated radio channels, or the same-instrument fractional-error/reset map.
+
+For the deliberately reduced phase observable, the quotient eliminates selection of unrestricted integer histories and yields a conditional energy bound. It does not recover integer phase, certify physical noise, identify an observed scalar residual or choose a field state. Exact source, inputs and checks are in calibration_error/REVIEW_RECORD_v1.md and the canonical note.
+
+## Integer-channel calibration (2026-10-15)
+
+trace_class: upstream_support
+target_claim_id: scalar_channel_calibration
+target_blocker_text: Derive or eliminate the measured-gravity assumptions rather than supplying them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Derive the physical carrier/reference estimator and admissible error class before interpreting a scalar residual.
+
+The character lattice is derived from the supplied phase/plasma model; it exposes the actual frequency and receiver requirements rather than choosing them. Independent raw decoding verifies representation consistency only. The conditional ADC theorem and averaging witness make a coherent estimator a concrete next supplier. They do not rule out that route or retire action, initial field state, scale or environmental assumptions.
+
+## M10 carrier-reference feasibility
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_measurement_identification
+target_blocker_text: Derive the remaining assumptions rather than supplying them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Obtain an independently justified discrepancy/time supplier or pivot to a cross-domain action/scale discriminator.
+
+The exact feasible set identifies precisely what calibrated information would constrain a carrier. Actual receiver-reference conventions are reconstructed and a restricted total-voltage class is rejected. Neither construction chooses the physical supplier or identifies a scalar residual. No theory assumption is counted as retired.
+
+## Error-direction construction trace
+
+trace_class: upstream_support
+target_claim_id: revised_scalar_measurement_identification
+target_blocker_text: Derive remaining measurement assumptions rather than supply them
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Prefer a distinct observation-driven action/potential/scale reconstruction unless an actual track-specific receiver transfer/calibration supplier supplies a new physical discriminator.
+
+The new construction conditionally removes the radial-scale input and challenges its angular replacement. Its downstream consumer is physically calibrated scalar inference. It does not identify a scalar signal or derive the real joint signal/error/measurement model.

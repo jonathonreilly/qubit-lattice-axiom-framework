@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-15T08:48:19.415206+00:00",
+  "stage": "post-comparison focused diagnostic, already exposed development",
+  "reason": "Independent32768-grid refinement found a lower-error Ka candidate than root16000-grid single-peak route at second49112; retain both without choosing true carrier.",
+  "plan": "Root direct-correlate original candidate+0.9251746909516783 and independent candidate-0.5322262786634724; refine neighborhoods independently and compare grids16000,32768,65536. Retain all outputs, root original ledgers and thresholds unchanged. This is diagnostic of local search sensitivity, not an updated physical model or independent test."
+}

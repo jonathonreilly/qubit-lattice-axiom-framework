@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-10-15T06:05:29.404022+00:00",
+  "scope": "Narrow source/product/cache identity confirmation; no numerical or raw-decoding rerun; no author modules imported.",
+  "status": "All declared identity and unchanged-output comparisons agree.",
+  "cache": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_phase_quotient_check.txt",
+    "sha256": "8e75f43ab810d290e779a792a3b88d2df58e2854ead46783b79318476a1de5f2",
+    "bytes": 5388
+  },
+  "execution_receipt": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M8_CANONICAL_EXECUTION_v2.json",
+    "sha256": "2f1c1e107d3ea8a0594fc4756931936a745ae05161b4193df151e2d1041dbe07",
+    "bytes": 673
+  },
+  "summary": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/summary.json",
+    "sha256": "6ca043e5985467092fa3cad22e5faae3082787e4deb1f74d87ba98cb13e2fc46",
+    "bytes": 4471
+  },
+  "input_fingerprint_sha256": "9cfa7c4e53f17bde6202e927dd31d8d3e28fb6f0ed9c4d5825f3d62286ded2b7",
+  "source_sha256": {
+    "scripts/scalar_phase_quotient_check.py": "9dfd11339b89523f0f0d3fc73881c1b014852551115479064ad2c0d77624ade5",
+    "docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e",
+    "scripts/scalar_phase_quotient_controls.py": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680",
+    "scripts/cassini_phase_quotient_development.py": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5",
+    "scripts/cassini_doppler_development_inputs.json": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392",
+    "scripts/cassini_atdf_decode.py": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c",
+    "scripts/cassini_odf_decode.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/DEVELOPMENT_PROTOCOL_v1.json": "b787ff131b31ac481b1da12fb812d166e4a28014bcc4bf4bf6f0c617f2a5cbfa"
+  },
+  "raw_hash_only_identities": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_doppler_inputs/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_doppler_inputs/c32easc2002_169_0000xmmmv0.tdf",
+      "sha256": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+      "bytes": 46335744
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_doppler_inputs/odf_c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/cassini_doppler_inputs/tdf_c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+      "bytes": 90858
+    }
+  ],
+  "product_identities": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/mathematics.json",
+      "sha256": "dd345ef49b140c5b554abdfe185c9406ca5bc055d53a35959f2ab745245906a6",
+      "bytes": 2881
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/QUOTIENT_DEVELOPMENT_RESULTS_v1.json",
+      "sha256": "8916e82b919e54ce9e1b5a7859652aa90d0c42605ab70659ae320fcbf6846879",
+      "bytes": 990666
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/QUOTIENT_ROWS_v1.jsonl.gz",
+      "sha256": "04b7af8c9911b71ec6fa011441fca25de2eb2ba262caa7f8b7b4f431d8edb59a",
+      "bytes": 3772716
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/QUOTIENT_TRIPLES_v1.jsonl.gz",
+      "sha256": "f5f6db505b0e142728c445f8f6dc59574854fa9319462b664139ac622f05c973",
+      "bytes": 1619974
+    }
+  ],
+  "ledgers": [
+    {
+      "filename": "QUOTIENT_ROWS_v1.jsonl.gz",
+      "compressed_sha256": "04b7af8c9911b71ec6fa011441fca25de2eb2ba262caa7f8b7b4f431d8edb59a",
+      "uncompressed_sha256": "79a0e0dff422559c0620450afdf551dbe2a4dd22c0382ba7dbe0e49873b5ae08",
+      "uncompressed_bytes": 53392932,
+      "rows": 91664
+    },
+    {
+      "filename": "QUOTIENT_TRIPLES_v1.jsonl.gz",
+      "compressed_sha256": "f5f6db505b0e142728c445f8f6dc59574854fa9319462b664139ac622f05c973",
+      "uncompressed_sha256": "c3c8738eee6c0fae6aaf6f2b11694177839068cc83261cb550d40ececc338ddf",
+      "uncompressed_bytes": 20578174,
+      "rows": 91593
+    }
+  ],
+  "development_changes_from_preliminary": [
+    {
+      "path": "/source_sha256",
+      "old": "1cddc8b9ffd65d511b273c04e2bfab9bed0fdc17484e006f49ac667e8b67cdcd",
+      "new": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5"
+    }
+  ],
+  "summary_changes_from_preliminary": [
+    {
+      "path": "/checks_passed",
+      "old": 45,
+      "new": 49
+    },
+    {
+      "path": "/mathematical_controls",
+      "old": 34,
+      "new": 38
+    },
+    {
+      "path": "/product_sha256/QUOTIENT_DEVELOPMENT_RESULTS_v1.json",
+      "old": "ae8c538440be5d1bf1867daa92f189f3c28f7997b2d65ce285f340dcd38a0c45",
+      "new": "8916e82b919e54ce9e1b5a7859652aa90d0c42605ab70659ae320fcbf6846879"
+    },
+    {
+      "path": "/product_sha256/mathematics.json",
+      "old": "3fbf6b2f416adcb0a52f09bb50e8b74c3ad13b63940b9c165822d70b9c441e20",
+      "new": "dd345ef49b140c5b554abdfe185c9406ca5bc055d53a35959f2ab745245906a6"
+    },
+    {
+      "path": "/source_sha256/docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "old": "6457e440e943bde0a3ec51ae35eb493d1afc8111e9eee91f6f700279c94c1074",
+      "new": "d333d64f1eec02799a1a03c18cb8aa3b6ad0bcfe64824c3fbd68cf356de1a12e"
+    },
+    {
+      "path": "/source_sha256/scripts/cassini_phase_quotient_development.py",
+      "old": "1cddc8b9ffd65d511b273c04e2bfab9bed0fdc17484e006f49ac667e8b67cdcd",
+      "new": "ebc2df3069731b47eb446b9ed267008af22a6d53ac230dd0b520c7c951ebc4e5"
+    },
+    {
+      "path": "/source_sha256/scripts/scalar_phase_quotient_controls.py",
+      "old": "35e2474c633576682cdcad411f7a468d15b8d22aab42623f99c06398ab82ed8f",
+      "new": "6d0f57373f34b9584ff5b6cacd00799b0b50d86f53f4fa1a6f8e1050d3f3f680"
+    }
+  ],
+  "prior_report_identity_files_verified_unchanged": 20,
+  "checks_reported_by_author_execution": {
+    "mathematics": 38,
+    "development": 11
+  },
+  "mathematical_proof_scope": "Other reviewer; this supplement binds its reported execution without rerunning or newly reviewing the proof.",
+  "boundary": "Dependent exposed archive products; zero physical noise bounds, scalar-energy estimates, fits or independent empirical tests.",
+  "checked_identity_context": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_phase_quotient_check.txt",
+      "sha256": "8e75f43ab810d290e779a792a3b88d2df58e2854ead46783b79318476a1de5f2",
+      "bytes": 5388
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M8_CANONICAL_EXECUTION_v2.json",
+      "sha256": "2f1c1e107d3ea8a0594fc4756931936a745ae05161b4193df151e2d1041dbe07",
+      "bytes": 673
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_phase_quotient/summary.json",
+      "sha256": "6ca043e5985467092fa3cad22e5faae3082787e4deb1f74d87ba98cb13e2fc46",
+      "bytes": 4471
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_REVIEW_v2.md",
+      "sha256": "e919de64201449bd8851a9a599b3aa860e5b5388e7bf4131930cfb389866ad7f",
+      "bytes": 9391
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/AUTHOR_CORRESPONDENCE_IDENTITY_v2.json",
+      "sha256": "6e8f66663e2fa8c573fbbfb088ef0e2f6fb81ea99f0bbbb6c256fc600411ce6e",
+      "bytes": 6118
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/author_correspondence_sources_v1/10_QUOTIENT_DEVELOPMENT_RESULTS_v1.json",
+      "sha256": "ae8c538440be5d1bf1867daa92f189f3c28f7997b2d65ce285f340dcd38a0c45",
+      "bytes": 990666
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/calibration_error/independent_data_v1/author_correspondence_sources_v1/11_summary.json",
+      "sha256": "3b8ce975c9edb4a4b1d9a6c1959b111cf165d448facd05ecacea5bdccaf389c4",
+      "bytes": 4471
+    }
+  ]
+}

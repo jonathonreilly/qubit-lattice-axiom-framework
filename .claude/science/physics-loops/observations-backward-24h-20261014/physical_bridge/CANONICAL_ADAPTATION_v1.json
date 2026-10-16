@@ -1,0 +1,23 @@
+[
+  {
+    "source": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/massive_response_controls_v1.py",
+    "source_sha256": "226fbb6e5f4ef57359d1758a3fe99d5d212f357331ac2d05c1ce1ca3af74692f",
+    "canonical": "scripts/scalar_massive_response_controls.py",
+    "canonical_sha256": "7213a1eb7d23a936d5388f46de0a355cd60e4dddd42b59f9d614be45d7b5814b",
+    "changes": "run_checks clears collection and returns results; fixed output writes and integrity reads moved to primary; 180s cap; scientific formulas unchanged at adaptation v1"
+  },
+  {
+    "source": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/massive_refinement_controls_v1.py",
+    "source_sha256": "9674ee5a3ec50361df27f4a63e723931085b9cae2d1dbbbc7418fe8d77a7f451",
+    "canonical": "scripts/scalar_massive_refinement_controls.py",
+    "canonical_sha256": "f3f5a8c4d560c7a4560662f7ec48ee9e811ee898eb39fda7ec64ef039620c512",
+    "changes": "run_checks clears collection and returns results; fixed output writes and integrity reads moved to primary; 180s cap; scientific formulas unchanged at adaptation v1"
+  },
+  {
+    "source": ".claude/science/physics-loops/observations-backward-24h-20261014/physical_bridge/curved_count_controls_v1.py",
+    "source_sha256": "4a272c55ab3ba6a81b51bd3c1d33519a38cd13bd3b7d3a382c600baf43f79ae2",
+    "canonical": "scripts/scalar_curved_count_controls.py",
+    "canonical_sha256": "49007150c3d8bf8f7ce51243e95d6f5eaab0aaf9ca2fae7e3722e84e9d9cbd45",
+    "changes": "run_checks clears collection and returns results; fixed output writes and integrity reads moved to primary; 180s cap; scientific formulas unchanged at adaptation v1"
+  }
+]

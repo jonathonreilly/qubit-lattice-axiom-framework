@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-15T09:17:16.337715+00:00",
+  "scope": "M10 final source/evidence staging",
+  "source_freeze": "receiver_reference/CANONICAL_SOURCE_FREEZE_v3.json",
+  "execution": "receiver_reference/CANONICAL_EXECUTION_v3.json",
+  "scientific_review": "Full math8d3e2bd1 and final data envelopeb611e5d9 plus whitespace supplement4ab2a630 read; original source review7ec1d134 read. Narrow final note delta is8trailing spaces only.",
+  "results": "63author controls;76independent math controls;12mutations rejected;1200exactcell certificates and600tracking rows independently match.1199/1200frequency estimates correspond, Ka49112 remains.",
+  "unchanged_scientific_products": true,
+  "open": "Physical error/time calibration, historical implementation, scalar action/state/scales/environment. No independent empirical test.",
+  "ownership": "Root direct author; no detached author or old campaign workers; matching lock09:03UTC",
+  "deadline": "2026-10-15T21:48:44Z",
+  "next": "Finish exact staged delivery check and publish M10; then attack an observational supplier or independent cross-domain route."
+}

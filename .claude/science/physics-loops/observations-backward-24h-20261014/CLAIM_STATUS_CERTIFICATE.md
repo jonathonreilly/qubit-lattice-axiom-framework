@@ -27,3 +27,34 @@ Claim type bounded_theorem; actual current surface status conditional-support; s
 ## Accelerated coherent-count milestone
 
 Target claim type bounded_theorem; actual current surface status conditional-support; trace class upstream_support. The proposed result derives an observation operator and a massless energy implication under stated physical hypotheses. Its canonical run contains 75 mathematical/synthetic controls and no observational tests, parameter fits or physical energy estimates. Fourteen deliberate implementation errors are assertion-rejected. Independent pre-exposure derivations, subsequent source comparisons and their limits are separately recorded. No formal audit or effective grade is asserted, and bare retained is not allowed. Combined current-main validation and independent audit remain landing work.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 proposed bounded_theorem only, actual current surface conditional-support.59 author controls,10 mutation rejections and focused independent mathematical/source checks. No independent empirical test, formal audit, integrated main landing or theory authority claimed.
+
+## Integer-history quotient certificate (2026-10-15)
+
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: Exact quotient and energy consequence under supplied ambiguity, response and error premises
+hypothetical_axiom_status: null
+admitted_observation_status: Exposed dependent archive reconstruction; no independent gravity test
+claim_type_reason: Removes a history selector for a reduced observable while preserving physical transfer and error obligations
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+The theorem, deliberate information loss, exact false-bound witnesses, receiver metadata limits and complete finite-data accounting are in docs/SCALAR_PHASE_QUOTIENT_INTEGER_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-15.md. The 49 author checks and 13 assertion-rejected mutations are separate from 114 pre-author-source mathematical controls, independent raw decoding, metadata-page checks and subsequent source correspondence. Two executable interface findings were repaired without altering the main theorem. No formal review-loop landing verdict or audit verdict is granted.
+
+## Integer-channel calibration certificate (2026-10-15)
+
+Target claim type: bounded_theorem. Actual current surface status: conditional-support. Trace class: upstream_support; reachability: supports. The exact joint character lattice, temporal receiver cancellation, conditional ADC image theorem and averaging witness do not identify a scalar residual. Two full RSR products are development-exposed; the sample calculation uses the frozen first 600 seconds. No independent empirical test, fitted physical input, carrier noise floor or formal audit grade is claimed. Physical carrier/reference calibration, waveform admissibility, action, state, scales and environment remain open. The canonical note is docs/SCALAR_INTEGER_CHANNEL_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-15.md.
+
+## M10 carrier/reference certificate
+
+Target claim type: bounded_theorem. Actual current surface status: conditional-support. Trace: upstream_support; reachability: supports. Exact finite-voltage feasibility and cell exclusion are proved within explicit hypotheses. The receiver convention is reconstructed from primary sources and checked on exposed dependent products. Canonical63 controls, twelve wrong-source rejections,76 independent mathematical controls and full independent row/source correspondence have distinct scopes. The sole Ka peak discrepancy remains unresolved as a physical choice. No physical error bound, independent empirical gravity test, retained status, formal review-loop verdict or audit grade is claimed. Independent audit remains required before any effective retained status. See receiver_reference/REVIEW_RECORD_v1.md and the canonical note.
+
+## Error-direction construction certificate
+
+Target bounded_theorem; actual surface conditional-support; trace upstream_support; reachability supports. Quantizer-safe unknown-radial-law inference is proved under supplied angular/cadence/signal hypotheses. Canonical51 controls and13 assertion-rejected variants have distinct scopes from independent51 mathematical controls and raw-data replication. The746 exclusions at the stricter nominal allocation are floating diagnostics on exposed development data, not outward-rounded certificates or independent empirical p-values. All six original numerical-tolerance failures across five Ka records remain preserved. No physical noise bound, selected scalar theory, formal audit or effective grade is asserted; bare retained is disallowed.

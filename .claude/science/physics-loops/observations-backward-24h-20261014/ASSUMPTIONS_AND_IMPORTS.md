@@ -72,3 +72,27 @@ The count-window shape is derived from calibrated kernels and vector cancellatio
 ## Accelerated coherent-count milestone
 
 The supplied conformal action, flat free massless regime, positive background, smooth timelike reference dynamics, proper-clock labels and instantaneous coherent link remain explicit conditional inputs. Within them, endpoint sensitivities, adjoint weights, initial-response columns, constant-offset response and common-field Gram are derived. Ideal coherence removes a spacecraft direct clock channel, but leaves its force response. Exact contrasts cancel specified nuisance responses without selecting their values or the physical scalar state. Numerical nullspaces alone do not cancel unbounded unknowns when calibration is uncertain. The stationary rational fixture proves exact cancellation only for its declared model. No actual error/energy budget, absolute scale, environment, positive-mass accelerated norm or scalar action/potential is derived.
+
+### M7 2026-10-15T05:11:37.925436+00:00
+
+M7 adds no state selector. Supplied action, stationary de Sitter vacuum, B>12,H,Q, ideal coherent link and calibrated reference remain conditional. Force weights require compact continuous W with Wprime BV; clocks remain L2. Derived initial-slice energy conversion and comparison errors do not supply an upper energy budget. Exact C0 cancellation is for comparison chi, not arbitrary constant physical h.
+
+## Integer-history quotient: changed obligation
+
+Arbitrary integer histories are removed only from within-segment phase modulo one cycle. Supplied segmentation, received/reference phase identification, fractional-error set and scalar response/energy conversion remain conditional. The full unwrapped count still needs a history map. No integer or energy-minimizing history is adopted as physical. The data are the already exposed four pinned day169 archive files including day170 rows; no fit, later raw sample or independent empirical test enters. ATDF unsigned item87 and qualitative flags do not supply a signed correction or quantitative error bound. Later TRK-2-34 J-1 semantics remain a separate format. Approved framework primitive roles are unchanged.
+
+## Joint integer/plasma calibration — working update
+
+The three supplied coherent turnaround ratios determine the allowed integer character and temporal receiver cancellation. Exact relative-frequency commensurability, matched propagation/time maps and unrestricted per-endpoint plasma remain explicit model inputs. A common hardware reference does not by itself prove the operational cross-uplink ratio. The 19/-5 X/Ka contrast removes the shared uplink and common nondispersive phase, including the target common gravity term; it retains downlink and electronics effects.
+
+The two preregistered 13:35 RSR products are now entirely exposed development data. The fixed 600-second window contains 600,000 paired raw voltages, with all flags retained. Ideal full-cell ADC geometry concerns voltage representation, not physical carrier noise. It identifies the need for a restricted waveform or carrier estimator before applying the large joint character. A noiseless averaging counterexample shows that independent voltage averaging is not automatically that bridge.
+
+The physical carrier/reference-phase estimator, complex sign, NCO timing implementation, analog LO history and physical error bounds remain open. No scalar action, potential, state, scale or environment assumption has been retired by this data block.
+
+## M10 assumptions disposition
+
+The finite sampled tone and arbitrary additive discrepancy are a declared candidate class. A calibrated discrepancy radius, lower amplitude, time reference or waveform law remains a supplier; no fitted residual is an upper bound. Ideal closed ADC cells imply the exact constant-modulus exclusions only within that class. Nominal LO, later-source I+iQ orientation, pre-NSP counter branch, source-derived S-exciter conversion, interval identity and archived P timing remain documented conditional measurement premises. Both 0 and0.5ms arguments and unsigned slip diagnostics survive. The three fitted real parameters per voltage block are development fits; the reference comparison fits no additional offset, timing or scale. No scalar action, state, absolute scale or environment assumption is retired. The entire13:35 pair remains development-exposed and later products unopened.
+
+## Conditional direction model disposition
+
+Unknown radial law and scale cancel from the proved ratios under conditional uniform error direction. That direction law is a new supplied and challenged premise, not retired physics. A constant tone location, actual cadence, ideal ADC enclosure and conditioning on training remain explicit. A direction-dependent radius need not give zero mean: the canonical note proves a bounded-radius nonzero-mean witness, so c*u_f is a signal/location center rather than necessarily E[y]. The observations are the same exposed first600records per band. Neither expected FGAIN settings nor fitted residuals calibrate physical noise. Scalar action, state, absolute scales and environment remain open.

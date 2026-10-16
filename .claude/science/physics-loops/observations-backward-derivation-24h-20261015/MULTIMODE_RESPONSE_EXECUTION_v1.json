@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "probe_multimode_response_v1.py"
+  ],
+  "elapsed_seconds": 0.46470450004562736,
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "runner_sha256": "9a902ab84b950ef05ad31b6f9b4508d4bfc257878302e3da573176e61d806802"
+}

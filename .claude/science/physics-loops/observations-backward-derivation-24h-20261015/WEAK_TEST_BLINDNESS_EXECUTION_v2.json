@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "probe_weak_test_blindness_v2.py"
+  ],
+  "elapsed_seconds": 0.5619184169918299,
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "runner_sha256": "a350f04276bc7d154a6ad5cc9e5e4ed51279c4a1edcb3639e50be7c82885db77",
+  "change": "Convert symbolic integer degree to native int for JSON; original serialization failure preserved."
+}

@@ -1,0 +1,27 @@
+# Focused context-loop check — frozen v1
+
+The finite transport, latitude, characteristic functions, renewal recursion, continuum error and record moment formulas are mathematically supported under their supplied assumptions. One narrow detector-domain correction is required before full-source confirmation. This is not a formal audit verdict or empirical validation.
+
+Complete source SHA256: f2f42a1335432ddd00bcc17029fe57672d55a35b702219812d66756249bff819. Complete runner SHA256: 3e58fe986fbba73ffe335855bfd38c1dc80b68641c794dcb7a27f487a1fe571b. The complete controls and execution receipt were also inspected. frozen_sources.json and author_output_hashes.json bind the originals, all checked unchanged after reproduction. The independent derivation and calculations preceded author-code inspection.
+
+## Concrete v1 finding
+
+The record section adopts block04's uniform reservoir, whose map was defined only for 0<p<1, while p(n)=[1+cos(alpha-qX)]/2 includes p=0 and p=1. This is not merely a null-set issue: q=0, alpha=0 gives p=1 for every context, and q=0, alpha=pi gives p=0. The moment formulas themselves extend correctly, but the cited detector realization has not been defined there. A sufficient explicit extension is: p=1 emits port0 and leaves the reservoir state unchanged; p=0 emits port1 and leaves it unchanged; both complementary detector states remain unchanged. Impossible zero-width branches are never evaluated. This retains uniform conditional state and all finite product laws, including deterministic factors. Alternatively restrict all probabilities to the open interval. No physical-law conclusion is affected.
+
+## Independent results
+
+The finite transport identity follows by moving each stabilizer twist through all preceding intertwiners to A0; it never commutes unrelated axes. The lambda term is exactly the stated vertex-frame coboundary for a fixed context. Edge-context changes can create a genuine sum unless they retain a vertex-difference form. The latitude phase follows from the overlap argument with positive cos(pi/N), including the two polar endpoints modulo 2pi; its signed orientation and additional kappa phase agree with direct matrix multiplication.
+
+Spherical uniformity yields sinc for a common mark and a product of sinc factors for independent marks. Those are different context ensembles. The fixed-kappa log asymptotic and its O(N^-3) remainder are correct for eventual positive factors; the sqrt(N) scaling supplies a distinct finite limit. Signed characteristic factors cannot be replaced globally by positive attenuation. Covariance fixes only the phase second moment, not a characteristic function.
+
+Conditioning on the last renewal gives the recursion exactly when renewal choices and fresh uniform marks are independent of earlier history in the declared retain-or-redraw kernel. Its endpoint rho limits and Cij=rho^abs(i-j) follow. A state-dependent renewal rate or marks correlated with the prepared state would change the argument. Conditioning on the full exogenous context sequence and an independent uniform detector reservoir produces the claimed conditional record products (with the endpoint extension above). Common context induces Var(p) covariance; independently redrawn contexts produce iid Bernoulli(mu). Context selection using hidden reservoir digits is excluded by the stated independence premise.
+
+The Poisson-context convergence bound is valid. The per-interval geometric error is <=M^2*h^2/2, and expected context-change error is <=M*h^2/ell. The total expected phase error and characteristic-function bound follow by summing and Lipschitz continuity of exp(i*x). Only C1 regularity and the speed bound are needed. The exact sampled kernel uses rho=exp(-h/ell); fixed rho under refinement describes a different environment. The displayed bound controls the extra twist, not an independently established error bound for the base geometric holonomy. These are supplied continuum/probability assumptions, not lattice-derived scales.
+
+## Evidence and scope
+
+The independent implementation uses 40-digit direct matrix products, complete renewal-pattern enumeration through nine edges, and direct moment quadrature, with code and output in this directory. It is supplementary to the general proofs in derivation_before_code.md. Its 120-second-bounded command completed successfully in about 0.07 seconds. No failures or timeouts occurred.
+
+The author runner reproduces exactly: 10 passing controls, zero failures, identical source-bound JSON. execution.json records the real 120-second-bounded reproduction (about 0.38 seconds). Only its final output write was redirected; calculations and source-path hashes were unchanged. All original source/output files remained untouched. The author's continuum numerical controls are correctly described as development checks, not a numerical proof of Poisson coupling. Its moment checks did not instantiate the reservoir at p=0 or1, so they did not cover the domain gap.
+
+No context law, correlation length, physical axis/state identification, coherent amplitude readout, detector law, initial-state selection, scalar action or microscopic lattice implementation is derived. The source makes those imports explicit and declines to fit published visibility without them. No broad literature research or unrelated blocks were redone. Await the narrow corrected source for same-session confirmation.

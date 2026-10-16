@@ -1,0 +1,1 @@
+{"transformed_stiffness": "Matrix([[4, -3/5, -4/5], [-3/5, 33/5, -1/5], [-4/5, -1/5, 22/5]])", "row_sums": ["13/5", "29/5", "17/5"], "boundary_resolvent_identity": true, "three_point_identity": true, "complex_correlated_error": {"residual": 1.2069683463803784e-05, "certificate": 0.0020841713467497783}}

@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "cases": 16,
+      "name": "uniform-gap connectors preserve matched paths",
+      "passed": true
+    },
+    {
+      "cases": 952,
+      "maximum_fraction": 0.49649786685504255,
+      "name": "pair operator sensitivity",
+      "passed": true
+    },
+    {
+      "cases": 200,
+      "maximum_fraction": 0.04325545558808537,
+      "name": "full-path and phase error certificates",
+      "passed": true
+    },
+    {
+      "cases": 200,
+      "maximum_fraction": 0.367728377555537,
+      "name": "edge context drift accounting",
+      "passed": true
+    },
+    {
+      "N": 16,
+      "geometric_coefficient": 4.592201188381076,
+      "name": "synthetic planning values",
+      "passed": true,
+      "reference_phase_error_bound": 0.0016970735172023193,
+      "vertex_error": 1e-05
+    }
+  ],
+  "empirical_validation": false,
+  "helper_sha256": "1495843bdc467731645d18ebfc6a7468d682766c27a060a78eb8fb00c5f8fbd8",
+  "note_sha256": "a219261cee69f71d24855a55f8724d02aa2fdd39979171ad222e55eb5a553344",
+  "runner_sha256": "ddb0e268da9ff3fe39e2742cf077f7f92d0567525f2b04948454594b6c326be1",
+  "summary": {
+    "failed": 0,
+    "passed": 5
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "archive_sha256": "c28eb0f075759aef620a0b2e00a70fd675ce712bc8214d11c103f5a3d29492c0",
+  "archive_md5": "342f29f8288c46575818acd2acebd535",
+  "bytes": 152913,
+  "member_sha256": {
+    "bell_open_data.txt": "5a6b1853554ad508d35c795415d64922ed9e5bc0469f6052ad222486ad3566ff",
+    "bell_open_data_analysis_example.py": "8793d31a40ff671d70056e0d715813d41c1a6ab0c931212a1e98181d8e3ce47d",
+    "bell_open_data_header.ods": "97dd50f33e4cac6e986c614e7739bdea48797acf40683abee6924b7320949a73",
+    "bell_open_data_readme.rtf": "39bdc9e658623b09ef1dff4b43897c3b793186ed3833c0d259cc7d9ece453bbe"
+  },
+  "selection_counts": [
+    4746,
+    361,
+    248,
+    245
+  ],
+  "wins": 196,
+  "matrix": [
+    [
+      23,
+      3,
+      4,
+      23
+    ],
+    [
+      33,
+      11,
+      5,
+      30
+    ],
+    [
+      22,
+      10,
+      6,
+      24
+    ],
+    [
+      4,
+      20,
+      21,
+      6
+    ]
+  ],
+  "S": 2.4224998704613707,
+  "descriptive_S_error": 0.20382659825201987,
+  "tails": {
+    "original": {
+      "q": "4687702502187/6250000000000",
+      "tail": 0.03917464355879003
+    },
+    "conditional_independent": {
+      "q": "4687567499271/6250000000000",
+      "tail": 0.039109972413714174
+    },
+    "ideal": {
+      "q": "3/4",
+      "tail": 0.03907767138965722
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "passed": 11,
+  "checks": [
+    "ramp t4",
+    "ramp t6",
+    "coefficient ratio",
+    "valley stable 5/126",
+    "valley stable 23/126",
+    "unstable valley leading sign",
+    "Fourier third harmonic",
+    "zero frequency nonidentifiability witness",
+    "runner succeeds",
+    "published full JSON matches",
+    "frozen sources unchanged"
+  ],
+  "source_finding": "omega=0 third-harmonic identification is degenerate"
+}

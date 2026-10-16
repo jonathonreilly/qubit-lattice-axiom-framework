@@ -1,0 +1,52 @@
+{
+  "source_sha256": "a4238b8902ff1cbfbf8e973622a49f04d81294d5677ffc56bd2de44adfca767d",
+  "runner_sha256": "29acf4772777dba717a6ebc4501a6255bbabd7fde47b8c83585292f812b65e88",
+  "checks": [
+    {
+      "name": "Duhamel hidden equation and both initial conditions",
+      "passed": true
+    },
+    {
+      "name": "Schur response sign and denominator",
+      "passed": true
+    },
+    {
+      "name": "different spring adjacency with identical complete boundary response",
+      "passed": true,
+      "original": "Matrix([[4, -1, 0], [-1, 5, -1], [0, -1, 6]])",
+      "rotated": "Matrix([[4, -3/5, -4/5], [-3/5, 33/5, -1/5], [-4/5, -1/5, 22/5]])"
+    },
+    {
+      "name": "full response under one interior spring intervention",
+      "passed": true,
+      "response": "theta*(y + 4)/((y**2 + 10*y + 22)*(2*theta*y + 7*theta + y**2 + 10*y + 22))"
+    },
+    {
+      "name": "division-free three-intervention identity",
+      "passed": true
+    },
+    {
+      "name": "rank-two alternative can violate the common rank-one test",
+      "passed": true,
+      "residual": "3/5600",
+      "differences": [
+        "1/5",
+        "43/140",
+        "3/8"
+      ]
+    },
+    {
+      "name": "complex and correlated error certificate controls",
+      "passed": true,
+      "cases": 2000,
+      "max_residual_over_bound": 0.7151012408338834,
+      "scope": "synthetic deterministic controls; not a data-fit or confidence calibration"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Supplied finite linear network, source, readout, state and calibrated one-coupling perturbation; no action or physical graph derived."
+}

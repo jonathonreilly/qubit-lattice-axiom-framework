@@ -1,0 +1,30 @@
+{
+  "passed": 25,
+  "checks": [
+    "noncommuting SPD base",
+    "direct complex transfer (-1/4, 1/7)",
+    "generalized spectrum (-1/4, 1/7)",
+    "direct complex transfer (-1/4, 1)",
+    "generalized spectrum (-1/4, 1)",
+    "direct complex transfer (-1/4, 5)",
+    "generalized spectrum (-1/4, 5)",
+    "direct complex transfer (0, 1/7)",
+    "generalized spectrum (0, 1/7)",
+    "direct complex transfer (0, 1)",
+    "generalized spectrum (0, 1)",
+    "direct complex transfer (0, 5)",
+    "generalized spectrum (0, 5)",
+    "direct complex transfer (2, 1/7)",
+    "generalized spectrum (2, 1/7)",
+    "direct complex transfer (2, 1)",
+    "generalized spectrum (2, 1)",
+    "direct complex transfer (2, 5)",
+    "generalized spectrum (2, 5)",
+    "series work scaling",
+    "series output equality",
+    "nonzero preparation exclusion",
+    "runner successful",
+    "published output exact",
+    "source hashes unchanged"
+  ]
+}

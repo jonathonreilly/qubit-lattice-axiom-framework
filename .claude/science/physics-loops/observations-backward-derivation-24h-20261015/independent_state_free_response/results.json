@@ -1,0 +1,18 @@
+{
+  "passed": 13,
+  "checks": [
+    "constructed hidden ODE (0, 0)",
+    "exact clamped weak integral (0, 0)",
+    "constructed hidden ODE (2, -3)",
+    "exact clamped weak integral (2, -3)",
+    "constructed hidden ODE (-1, 1/2)",
+    "exact clamped weak integral (-1, 1/2)",
+    "zero coupling spurious homogeneous solution",
+    "shared action constraints",
+    "stable coefficient equivalence",
+    "global nonzero chart for primary profiles",
+    "author succeeds",
+    "published output exactly reproduced",
+    "frozen unchanged"
+  ]
+}

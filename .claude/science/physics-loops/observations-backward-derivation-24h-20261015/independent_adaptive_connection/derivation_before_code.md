@@ -1,0 +1,15 @@
+# Independent derivation before code
+
+Complete square with alpha=g/(2C): V=C(w+alpha q²)²/2+kq²/2+(lambda4-g²/(8C))q⁴. Negative final coefficient gives V→-infinity on w=-alpha q². Nonnegative coefficient gives V>=kq²/2, so bounded sublevel sets bound q; the square then bounds w. Thus coercivity holds even at equality, although V need not be convex globally. Positive m,tau and energy conservation bound momenta and ensure global autonomous finite-energy trajectories. This does not cover arbitrary external forcing.
+
+Euler-Lagrange gives the two displayed equations. Duhamel for tau w''+Cw=-g q²/2 has negative coefficient g/(2tau Omega). Substitution multiplies by gq, giving the negative g² cubic convolution and positive g w_h q. No zero initial w assumption is needed.
+
+For imposed q=A r with shared w initial state, w=w_h+A² w_drive[r]. Force is A(mr''+kr+g w_h r)+A³(4lambda4 r³+g r w_drive[r]); normalized differences cancel the entire linear part. A1,A2 nonzero and unequal squared amplitudes are required. Opposite equal magnitudes alone do not isolate the cubic. Scaling prescribed trajectories also scales their initial q and velocity; actuator preparation/impulses remain supplied.
+
+For r=t and zero driven w data, integrate or solve polynomial forcing: w_drive=-g t²/(2C)+g tau(1-cos(Omega t))/C². Its first terms are -g t⁴/(24tau)+g C t⁶/(720tau²). Multiplication by gr gives -g² t⁵/(24tau)+g² C t⁷/(720tau²); coefficient ratio -C/(30tau) for g!=0. Initial ramp velocity is a prescribed one-sided initial condition, not a force-free start from rest.
+
+For nonzero omega away from resonance, cos²=(1+cos2omega t)/2 gives w_p=-gA²/(4C)-gA² cos2omega t/[4(C-4tau omega²)]. cos³ and cos*cos2 give cubic third harmonic lambda4-g²/[8(C-4tau omega²)] and fundamental 3lambda4-g²/(4C)-g²/[8(C-4tau omega²)]. Homogeneous w persists and adds Omega±omega sidebands, sometimes overlapping the chosen harmonic (e.g. Omega=4omega); periodic particular preparation is essential. At resonance the secular term precludes bounded forced periodic w when gA!=0.
+
+Frequency-domain finding: v1 excludes resonance but does not require nonzero omega. At omega=0 there is only a single constant line. True cubic static force is 4lambda4-g²/(2C)=4 B3(0), so B3(0) is a formal continuation, not an individually measurable third harmonic. Example C=tau=g=A=1, lambda4=1/4 (stable) gives constant cubic force 1/2 while B3(0)=1/8. Require omega>0 for harmonic identification; distinguish the static/zero-frequency limit. Reported to author before code inspection.
+
+As a function x=omega², B3=[lambda4 C-g²/8-4lambda4 tau x]/[C-4tau x] is fractional linear. Its determinant is nonzero when g!=0 and tau>0. g=0 is constant and uninformative; repeated omega² settings also degenerate. Poles excluded. Static quartic cancellation at equality is true for relaxed w=-gq²/(2C), not arbitrary hidden state. Coordinate change wnew=s w maps tau,C,g as stated and leaves g²/C and C/tau invariant, with w initial data transformed too. This hidden-coordinate convention does not replace physical q/force/time/energy calibration.

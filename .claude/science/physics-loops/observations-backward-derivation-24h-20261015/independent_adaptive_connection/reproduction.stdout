@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "completion of square and unstable direction",
+      "passed": true
+    },
+    {
+      "name": "adaptive force equations",
+      "passed": true
+    },
+    {
+      "name": "ramp memory solution and zero forced preparation",
+      "passed": true
+    },
+    {
+      "name": "delayed cubic Taylor order",
+      "passed": true
+    },
+    {
+      "name": "amplitude separation of unknown initial-state term",
+      "passed": true
+    },
+    {
+      "name": "periodic particular response",
+      "passed": true
+    },
+    {
+      "name": "fundamental and third harmonic force",
+      "passed": true
+    },
+    {
+      "name": "bare quartic removed by frequency difference",
+      "passed": true
+    },
+    {
+      "name": "common adaptive susceptibility cross ratio",
+      "passed": true
+    },
+    {
+      "name": "unobserved coordinate scaling preserves response",
+      "passed": true
+    },
+    {
+      "maximum_error": 2.3425705819590803e-12,
+      "name": "unknown-preparation amplitude subtraction from numerical ODE",
+      "passed": true
+    },
+    {
+      "maximum_energy_drift": 1.8283607960967174e-10,
+      "name": "stable-completion conserved-energy numerical control",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "e49f0c56743bee61a46e16ca619b3994fe11c783380c176e4e578270aabaa3b9",
+  "runner_sha256": "d4e272d771d6ea30cb01dad878174ab47f00b275961c08224f0738205e8dc80b",
+  "scope": "Chosen passive adaptive-connection polynomial action, explicitly conditional preparation and force/readout. Stability constrains a family; it does not select a physical potential.",
+  "summary": {
+    "failed": 0,
+    "passed": 12
+  }
+}

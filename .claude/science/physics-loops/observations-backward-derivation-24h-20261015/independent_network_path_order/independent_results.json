@@ -1,0 +1,30 @@
+[
+  {
+    "name": "chain",
+    "d": 1,
+    "mu": "-1",
+    "degree": 7,
+    "coefficient": "1/7560"
+  },
+  {
+    "name": "rotated",
+    "d": 1,
+    "mu": "1/5",
+    "degree": 7,
+    "coefficient": "1/189000"
+  },
+  {
+    "name": "equal_distance_late",
+    "d": 2,
+    "mu": "1",
+    "degree": 11,
+    "coefficient": "1/59875200"
+  },
+  {
+    "name": "equal_distance_invisible",
+    "invisible": true
+  },
+  {
+    "chain_distance_checks": "all edges for sizes2..6"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "name": "fractional-linear four-setting identity",
+      "passed": true
+    },
+    {
+      "name": "unknown common instrument and affine calibration preserve degree",
+      "passed": true
+    },
+    {
+      "curved_residual": "-7/69",
+      "name": "nonlinear calibration failure and projective ambiguity",
+      "passed": true
+    },
+    {
+      "name": "varying gain can manufacture agreement",
+      "passed": true
+    },
+    {
+      "maximum_fraction": 0.263793355421,
+      "name": "correlated complex errors",
+      "passed": true
+    },
+    {
+      "name": "opposite forcing cancels unknown preparation",
+      "passed": true
+    },
+    {
+      "maximum_fraction": 0.88781887876,
+      "name": "uniform preparation mismatch bound",
+      "passed": true
+    },
+    {
+      "cases": 20,
+      "name": "finite pulse beta-integral coefficients",
+      "passed": true
+    },
+    {
+      "maximum_fraction": 0.00151572334,
+      "name": "finite pulse spectral remainder",
+      "passed": true
+    }
+  ],
+  "data_status": "Synthetic development controls only; no new observations.",
+  "note_sha256": "bf8cf17be938e5598f28a998089490976e6418a7a6089de8b371b3aa1cd0c2f2",
+  "runner_sha256": "931ffe69ac5dcbed771a59ce34458c81883867af8893fc935775b99cca0c803a",
+  "summary": {
+    "failed": 0,
+    "passed": 9
+  }
+}

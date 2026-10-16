@@ -1,0 +1,253 @@
+{
+  "source_sha256": "f2f42a1335432ddd00bcc17029fe57672d55a35b702219812d66756249bff819",
+  "runner_sha256": "3e58fe986fbba73ffe335855bfd38c1dc80b68641c794dcb7a27f487a1fe571b",
+  "checks": [
+    {
+      "name": "latitude loop phase and transported twists",
+      "passed": true,
+      "max_phase_error": 1.1951055813095977e-14,
+      "max_twist_error": 1.4046201876350592e-15
+    },
+    {
+      "name": "uniform context characteristic function",
+      "passed": true
+    },
+    {
+      "name": "negative characteristic factor cannot be positive attenuation",
+      "passed": true
+    },
+    {
+      "name": "fixed-resolution and scaled-limit controls",
+      "passed": true,
+      "rows": [
+        {
+          "N": 16,
+          "independent": 0.9511693133968961,
+          "common": 0.47844801941319137,
+          "N3_remainder": 8.996442100591826,
+          "scaled_log_error": 0.0274771903865471
+        },
+        {
+          "N": 64,
+          "independent": 0.987054547779307,
+          "common": 0.45771154581702445,
+          "N3_remainder": 9.15490200713769,
+          "scaled_log_error": 8.51796720711158e-05
+        },
+        {
+          "N": 256,
+          "independent": 0.9967396482938197,
+          "common": 0.4564036563103554,
+          "N3_remainder": 9.164893576454912,
+          "scaled_log_error": -0.0004047297004535785
+        },
+        {
+          "N": 1024,
+          "independent": 0.9991837856943797,
+          "common": 0.4563218678396314,
+          "N3_remainder": 9.165518393087734,
+          "scaled_log_error": -0.00012771857185809164
+        },
+        {
+          "N": 4096,
+          "independent": 0.9997958819368191,
+          "common": 0.4563167558831975,
+          "N3_remainder": 9.16555744546939,
+          "scaled_log_error": -3.3586277486285136e-05
+        }
+      ],
+      "scope": "Finite controls; asymptotic justification is in the note."
+    },
+    {
+      "name": "renewal recursion versus complete pattern enumeration",
+      "passed": true,
+      "patterns_per_case": 128,
+      "cases": 4
+    },
+    {
+      "name": "renewal endpoint limits",
+      "passed": true
+    },
+    {
+      "name": "renewal covariance and phase variance",
+      "passed": true
+    },
+    {
+      "name": "slow-context record moments by independent quadrature",
+      "passed": true,
+      "rows": [
+        {
+          "q": 0.3,
+          "alpha": 0.4,
+          "mean": 0.9536535588257191,
+          "context_variance": 0.0011547401474055598,
+          "count_variance": 1.3227702273093094
+        },
+        {
+          "q": 0.3,
+          "alpha": 1.5707963267948966,
+          "mean": 0.5,
+          "context_variance": 0.0073661513760343005,
+          "count_variance": 7.799137522893035
+        },
+        {
+          "q": 1.3,
+          "alpha": 0.4,
+          "mean": 0.841344561553837,
+          "context_variance": 0.025750874164238158,
+          "count_variance": 12.455009988362876
+        },
+        {
+          "q": 1.3,
+          "alpha": 1.5707963267948966,
+          "mean": 0.5,
+          "context_variance": 0.10021628020089114,
+          "count_variance": 43.082186476338634
+        },
+        {
+          "q": 3.5,
+          "alpha": 0.4,
+          "mean": 0.4538438930892369,
+          "context_variance": 0.1310433097105307,
+          "count_variance": 54.7538499658985
+        },
+        {
+          "q": 3.5,
+          "alpha": 1.5707963267948966,
+          "mean": 0.5,
+          "context_variance": 0.1132680964514502,
+          "count_variance": 48.04187665155107
+        }
+      ]
+    },
+    {
+      "name": "piecewise context continuum integral and coupling controls",
+      "passed": true,
+      "rows": [
+        {
+          "N": 16,
+          "phase_error": 0.05590185882198351,
+          "deterministic_bound": 1.3858763501342428
+        },
+        {
+          "N": 64,
+          "phase_error": 0.04120245634067521,
+          "deterministic_bound": 0.3464690875335607
+        },
+        {
+          "N": 256,
+          "phase_error": 0.009430452704242809,
+          "deterministic_bound": 0.08661727188339018
+        },
+        {
+          "N": 1024,
+          "phase_error": 0.00151679259616877,
+          "deterministic_bound": 0.021654317970847544
+        }
+      ]
+    },
+    {
+      "name": "fixed correlation length refinement controls",
+      "passed": true,
+      "rows": [
+        {
+          "ell": 0.3,
+          "values": [
+            {
+              "N": 32,
+              "C": 0.9070582072257618,
+              "continuum_error_bound": 1.8696946695929015
+            },
+            {
+              "N": 64,
+              "C": 0.9088810895671993,
+              "continuum_error_bound": 0.9348473347964508
+            },
+            {
+              "N": 128,
+              "C": 0.9093473824864746,
+              "continuum_error_bound": 0.4674236673982254
+            },
+            {
+              "N": 256,
+              "C": 0.9094646255569965,
+              "continuum_error_bound": 0.2337118336991127
+            },
+            {
+              "N": 512,
+              "C": 0.9094939783332229,
+              "continuum_error_bound": 0.11685591684955635
+            }
+          ]
+        },
+        {
+          "ell": 1.0,
+          "values": [
+            {
+              "N": 32,
+              "C": 0.7698785094967076,
+              "continuum_error_bound": 0.7152375086800454
+            },
+            {
+              "N": 64,
+              "C": 0.768853171316209,
+              "continuum_error_bound": 0.3576187543400227
+            },
+            {
+              "N": 128,
+              "C": 0.768596934137272,
+              "continuum_error_bound": 0.17880937717001136
+            },
+            {
+              "N": 256,
+              "C": 0.7685328812302776,
+              "continuum_error_bound": 0.08940468858500568
+            },
+            {
+              "N": 512,
+              "C": 0.7685168684075017,
+              "continuum_error_bound": 0.04470234429250284
+            }
+          ]
+        },
+        {
+          "ell": 5.0,
+          "values": [
+            {
+              "N": 32,
+              "C": 0.5213091163890746,
+              "continuum_error_bound": 0.31942362493849474
+            },
+            {
+              "N": 64,
+              "C": 0.5179054759761555,
+              "continuum_error_bound": 0.15971181246924737
+            },
+            {
+              "N": 128,
+              "C": 0.5170529668501598,
+              "continuum_error_bound": 0.07985590623462369
+            },
+            {
+              "N": 256,
+              "C": 0.5168397401929024,
+              "continuum_error_bound": 0.03992795311731184
+            },
+            {
+              "N": 512,
+              "C": 0.5167864273264555,
+              "continuum_error_bound": 0.01996397655865592
+            }
+          ]
+        }
+      ],
+      "scope": "Bounds refer to the declared continuum model, not an observation fit."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Conditional transport and specified context dynamics; correlation length and physical identification are not derived."
+}

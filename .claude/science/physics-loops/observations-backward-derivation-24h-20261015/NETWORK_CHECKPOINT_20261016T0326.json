@@ -1,0 +1,86 @@
+{
+  "time": "2026-10-16T03:25:35.449312+00:00",
+  "author": "/root personally",
+  "source_bindings_verified": [
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK13_v1.md",
+      "sha256": "dbaeb7093416b71be11a6922407bcad0d9fcae1920f3402d9c4512bacdb261f2"
+    },
+    {
+      "path": "probe_action_normalization_v1.py",
+      "sha256": "8125d9293489a74aa33dd7cc7cea32e4aa1fb5b35d3eba1e8cec9614b8df0bd2"
+    },
+    {
+      "path": "ACTION_NORMALIZATION_CONTROLS_v1.json",
+      "sha256": "e1128163e795890605e11bfd48d71431785fa3f6fd9c4e2cae44f43b3921c86a"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK14_v1.md",
+      "sha256": "a219261cee69f71d24855a55f8724d02aa2fdd39979171ad222e55eb5a553344"
+    },
+    {
+      "path": "probe_context_tolerance_v1.py",
+      "sha256": "ddb0e268da9ff3fe39e2742cf077f7f92d0567525f2b04948454594b6c326be1"
+    },
+    {
+      "path": "CONTEXT_TOLERANCE_CONTROLS_v1.json",
+      "sha256": "1313ad5ecad196ec51ad9810f7e22da2f82ab00e5e88dba98c9804a9aa9fd7de"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK12_v1.md",
+      "sha256": "e5fe9458c1794b28562bd5215b090083362cda6daf472e441ba2f3e651c90f1e"
+    },
+    {
+      "path": "probe_context_echo_v2.py",
+      "sha256": "1495843bdc467731645d18ebfc6a7468d682766c27a060a78eb8fb00c5f8fbd8"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK15_v2.md",
+      "sha256": "938fd7cea467e0fbdd1ac48b0aa1a841a0584a45ccbf9aae09417851c987a6ee"
+    },
+    {
+      "path": "probe_adaptive_connection_v2.py",
+      "sha256": "fc64827e070bd9aa550e6aec0d89521172a845a8ca77255c5df196013b107b99"
+    },
+    {
+      "path": "ADAPTIVE_CONNECTION_CONTROLS_v2.json",
+      "sha256": "2e221ef0d83694b82df3b0442f7edcf1823c9804a961c5d831ecce65441cf23c"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK16_v1.md",
+      "sha256": "f6f12429db668123421e8e6bb276c02547319e858f9defbd68aff158c47c76df"
+    },
+    {
+      "path": "probe_state_free_response_v1.py",
+      "sha256": "6ceed9c233038c6c30940671942216a1c0134ee0dbd7da222135ef8fdca393f6"
+    },
+    {
+      "path": "STATE_FREE_RESPONSE_CONTROLS_v1.json",
+      "sha256": "3bf25f5e058591cc889f80ce1fbada0e0234670eddc6cc0b83af37fb34083f55"
+    }
+  ],
+  "root_read_independent_reports_proofs_code_results": true,
+  "exact_reproduction_match": true,
+  "process_conflicts": [],
+  "lock": {
+    "expires_at": "2026-10-16T04:03:16.805131+00:00",
+    "holder_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
+    "owner": "direct-author-observations-backward-derivation",
+    "pid": 84187,
+    "purpose": "observations-backward-derivation-24h-20261015",
+    "started_at": "2026-10-16T03:03:16.805131+00:00"
+  },
+  "new_science": "Action/gain normalization witness; robust matched-phase paths; adaptive connection stability inequality and delayed cubic response; finite-window response annihilates arbitrary hidden initial states across trajectories.",
+  "current_versions": {
+    "13": "v1;6primary",
+    "14": "v1;5primary",
+    "15": "v2;13primary",
+    "16": "v1;12primary"
+  },
+  "preserved_finding": "Block15v1 omitted positive-frequency requirement for separately observable harmonics. V2 fixes the domain and distinguishes static force.",
+  "empirical_status": "All new controls synthetic; earlier Hensen deposited records are exposed development reproduction. No independent empirical validation.",
+  "not_formal_audit": true,
+  "window_end": "2026-10-16T03:53:06Z",
+  "deadline_unchanged": "2026-10-16T22:36:59Z",
+  "next": "Generalize adaptive response to multiple hidden modes without selecting one oscillator; preserve tested results and synthesize a reviewable research report."
+}

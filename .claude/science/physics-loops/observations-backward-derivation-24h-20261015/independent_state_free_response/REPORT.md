@@ -1,0 +1,15 @@
+# Focused state-free response check
+
+PASS within the supplied adaptive-action and nonzero-coordinate chart. No material mathematical or code-source defect found. Complete source was read, and derivation_before_code.md was written before implementation inspection. The complete runner/output were subsequently read. Exact source binding:
+
+- NETWORK_EVOLUTION_BLOCK16_v1.md: f6f12429db668123421e8e6bb276c02547319e858f9defbd68aff158c47c76df
+- probe_state_free_response_v1.py: 6ceed9c233038c6c30940671942216a1c0134ee0dbd7da222135ef8fdca393f6
+- STATE_FREE_RESPONSE_CONTROLS_v1.json: 3bf25f5e058591cc889f80ce1fbada0e0234670eddc6cc0b83af37fb34083f55
+
+The annihilator removes arbitrary hidden homogeneous motion independently on each history. It does not predict trajectories without preparation. Signs of all six coefficients, the common-action constraints and equivalence of stable potential coefficient to c_b>=0 are correct. At g=0 the necessary equation admits extra homogeneous residuals; the source explicitly states that the original algebraic force relation must also be imposed for sufficiency. No division through q=0 or reconstruction across zeros is claimed.
+
+Clamped psi and psi-prime eliminate both integration-by-parts boundary terms, irrespective of hidden preparation. The weak formulation avoids measured force differentiation but retains calibrated q acceleration and adequate trajectory regularity. Six-column rank and conditioning remain identification requirements; constant trajectories are insufficient. The deterministic residual bound is linear for frozen candidate parameters and allows arbitrary correlations; it does not cover fit uncertainty, actuation ratios, time or quadrature without separate bounds. Both actual and reconstructed coordinates must stay away from zero when propagating primitive ratio errors.
+
+Independent check.py uses an exact exponential prescribed trajectory and analytically constructed hidden solutions with three different homogeneous preparations, including negative g. It integrates the weak residual exactly against a clamped polynomial, checks a g=0 spurious-solution witness, coefficient/stability identities and a global q>=0.81 bound for all five author waveform profiles. This global bound supplements the author's sampled minimum; no hidden zero occurs between samples. Thirteen independent assertions passed. Full author output reproduced exactly: 12 passing families, rank six, scaled condition approximately 20.4234, three development and two reserved synthetic profiles. Their reservation is numerical validation of a chosen model, not empirical independence or physical evidence.
+
+Both executions had recorded 120-second subprocess limits. Commands, timings, successful exit codes and complete stdout/stderr are preserved beside results.json. No failure or timeout occurred; all frozen source hashes remained unchanged. Earlier block15 action conditions are reused as already independently checked, not promoted to a physical action derivation. No author or canonical source was changed and no audit verdict applied.

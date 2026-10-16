@@ -1,0 +1,204 @@
+{
+  "checks": [
+    {
+      "cases": [
+        {
+          "N": 3,
+          "W": 0.10254477681449051,
+          "betaA": 0.2,
+          "betaB": 0.1418339387366005,
+          "reference_phase": -0.026286598671195982
+        },
+        {
+          "N": 3,
+          "W": 1.0782443103362551,
+          "betaA": 0.7,
+          "betaB": 0.5125606516180945,
+          "reference_phase": -0.3690201897235057
+        },
+        {
+          "N": 3,
+          "W": 1.9485571585149868,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.7967200538155793,
+          "reference_phase": -1.0004195167554961
+        },
+        {
+          "N": 3,
+          "W": 2.5230208302250987,
+          "betaA": 1.4,
+          "betaB": 1.099139951217562,
+          "reference_phase": -2.2826816093953863
+        },
+        {
+          "N": 4,
+          "W": 0.15787801199422982,
+          "betaA": 0.2,
+          "betaB": 0.1416555053400441,
+          "reference_phase": -0.04026682544057891
+        },
+        {
+          "N": 4,
+          "W": 1.6600657141995179,
+          "betaA": 0.7,
+          "betaB": 0.5041355737224026,
+          "reference_phase": -0.5298621157857566
+        },
+        {
+          "N": 4,
+          "W": 2.9999999999999996,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.7658993681434896,
+          "reference_phase": -1.2870022175865685
+        },
+        {
+          "N": 4,
+          "W": 3.884444681337316,
+          "betaA": 1.4,
+          "betaB": 1.0278634369684847,
+          "reference_phase": -2.468159762498454
+        },
+        {
+          "N": 8,
+          "W": 0.22327322576274197,
+          "betaA": 0.2,
+          "betaB": 0.1414058233128777,
+          "reference_phase": -0.056544356324758294
+        },
+        {
+          "N": 8,
+          "W": 2.3476874474515363,
+          "betaA": 0.7,
+          "betaB": 0.4937156242691346,
+          "reference_phase": -0.6871544696487506
+        },
+        {
+          "N": 8,
+          "W": 4.242640687119284,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.7336576079631622,
+          "reference_phase": -1.507836086164841
+        },
+        {
+          "N": 8,
+          "W": 5.493434350635267,
+          "betaA": 1.4,
+          "betaB": 0.9654155918762592,
+          "reference_phase": -2.579298873333996
+        },
+        {
+          "N": 16,
+          "W": 0.24166919809971474,
+          "betaA": 0.2,
+          "betaB": 0.141329893982556,
+          "reference_phase": -0.06107156012139514
+        },
+        {
+          "N": 16,
+          "W": 2.5411185818459026,
+          "betaA": 0.7,
+          "betaB": 0.49080635127178235,
+          "reference_phase": -0.7259311336868168
+        },
+        {
+          "N": 16,
+          "W": 4.592201188381076,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.7254664822313882,
+          "reference_phase": -1.5555095886222354
+        },
+        {
+          "N": 16,
+          "W": 5.946050493945926,
+          "betaA": 1.4,
+          "betaB": 0.9507459068526726,
+          "reference_phase": -2.6008615445050203
+        },
+        {
+          "N": 32,
+          "W": 0.24640377759376364,
+          "betaA": 0.2,
+          "betaB": 0.14131000871275226,
+          "reference_phase": -0.06223292359715327
+        },
+        {
+          "N": 32,
+          "W": 2.590902038008943,
+          "betaA": 0.7,
+          "betaB": 0.4900620461428964,
+          "reference_phase": -0.7355647501683427
+        },
+        {
+          "N": 32,
+          "W": 4.6821677283870775,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.7234173050453239,
+          "reference_phase": -1.5670022446914715
+        },
+        {
+          "N": 32,
+          "W": 6.062540509887469,
+          "betaA": 1.4,
+          "betaB": 0.947135137587083,
+          "reference_phase": -2.605953007606587
+        },
+        {
+          "N": 64,
+          "W": 0.24759602010544762,
+          "betaA": 0.2,
+          "betaB": 0.14130498003961756,
+          "reference_phase": -0.06252512602546467
+        },
+        {
+          "N": 64,
+          "W": 2.603438305039782,
+          "betaA": 0.7,
+          "betaB": 0.4898749414735414,
+          "reference_phase": -0.7379690121488416
+        },
+        {
+          "N": 64,
+          "W": 4.704822735818908,
+          "betaA": 1.0471975511965976,
+          "betaB": 0.722905010718031,
+          "reference_phase": -1.569849520066028
+        },
+        {
+          "N": 64,
+          "W": 6.091874550928881,
+          "betaA": 1.4,
+          "betaB": 0.9462359456396187,
+          "reference_phase": -2.60720825386944
+        }
+      ],
+      "name": "finite matched-phase matrices and contextual discriminator",
+      "passed": true
+    },
+    {
+      "axes": 3,
+      "name": "three orthogonal context components",
+      "passed": true
+    },
+    {
+      "name": "unwrapped component bound is attained",
+      "passed": true
+    },
+    {
+      "name": "modulo phase alias requires unwrapping",
+      "passed": true
+    },
+    {
+      "cases": 4,
+      "name": "conditional isotropic ensemble coherence",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "e5fe9458c1794b28562bd5215b090083362cda6daf472e441ba2f3e651c90f1e",
+  "runner_sha256": "1495843bdc467731645d18ebfc6a7468d682766c27a060a78eb8fb00c5f8fbd8",
+  "scope": "Explicit supplied contextual connection and ideal controlled paths; no derived coupling, state or physical identification.",
+  "summary": {
+    "failed": 0,
+    "passed": 5
+  }
+}

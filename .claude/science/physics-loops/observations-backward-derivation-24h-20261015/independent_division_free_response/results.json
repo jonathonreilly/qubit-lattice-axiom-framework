@@ -1,0 +1,18 @@
+{
+  "passed": 13,
+  "checks": [
+    "clamped endpoints",
+    "linear adjoint identity",
+    "pointwise across crossing (0, 0)",
+    "exact weak crossing (0, 0)",
+    "pointwise across crossing (3, -2)",
+    "exact weak crossing (3, -2)",
+    "pointwise across crossing (-1, 2/3)",
+    "exact weak crossing (-1, 2/3)",
+    "force error exact bound",
+    "identically zero blind",
+    "author succeeds",
+    "published output exact",
+    "sources unchanged"
+  ]
+}

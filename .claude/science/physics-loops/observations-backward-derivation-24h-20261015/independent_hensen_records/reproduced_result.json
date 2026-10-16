@@ -1,0 +1,93 @@
+{
+  "archive_sha256": "c28eb0f075759aef620a0b2e00a70fd675ce712bc8214d11c103f5a3d29492c0",
+  "members_sha256": {
+    "bell_open_data.txt": "5a6b1853554ad508d35c795415d64922ed9e5bc0469f6052ad222486ad3566ff",
+    "bell_open_data_analysis_example.py": "8793d31a40ff671d70056e0d715813d41c1a6ab0c931212a1e98181d8e3ce47d",
+    "bell_open_data_header.ods": "97dd50f33e4cac6e986c614e7739bdea48797acf40683abee6924b7320949a73",
+    "bell_open_data_readme.rtf": "39bdc9e658623b09ef1dff4b43897c3b793186ed3833c0d259cc7d9ece453bbe"
+  },
+  "runner_sha256": "88d1003f0b53e89dbad5a84d4ecddea29ceaeef5c80c6558a52669f928a1e9fa",
+  "data_role": "Exposed development reproduction; published aggregates were known before download. No independent empirical test or new theory fit.",
+  "rows_in_deposit": 4746,
+  "stage_counts": {
+    "original_herald_gate": 361,
+    "also_invalid_marker_gate": 248,
+    "also_no_early_excitation_click": 245,
+    "scored_trials": 245
+  },
+  "selected_line_numbers_sha256": "e94aa6c1b0699d656eaf76475a19fcdbd5409a8a980553c2d37ef229211511e8",
+  "trials": 245,
+  "wins": 196,
+  "settings_rows": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "outcome_columns": [
+    "++",
+    "+-",
+    "-+",
+    "--"
+  ],
+  "table": [
+    [
+      23,
+      3,
+      4,
+      23
+    ],
+    [
+      33,
+      11,
+      5,
+      30
+    ],
+    [
+      22,
+      10,
+      6,
+      24
+    ],
+    [
+      4,
+      20,
+      21,
+      6
+    ]
+  ],
+  "correlations": [
+    "0.73584905660377358490566037735849056603773584905660377358490566038",
+    "0.59493670886075949367088607594936708860759493670886075949367088608",
+    "0.48387096774193548387096774193548387096774193548387096774193548387",
+    "-0.60784313725490196078431372549019607843137254901960784313725490196"
+  ],
+  "S": "2.4224998704613705232318279207335376040444452702689433439577669323",
+  "S_descriptive_error_original_iid_formula": "0.20382659825201986822161262025724153523560890603309080827604582027",
+  "game_score": "2.4",
+  "tau_from_published_input_analysis": "0.0000108",
+  "conditional_win_bounds": {
+    "original_deposit_bound": "0.75003240034992",
+    "conditional_independent_bias_bound": "0.75001079988336",
+    "ideal_fresh_uniform_bound": "0.75"
+  },
+  "fixed_horizon_tails": {
+    "original_deposit_bound": "0.039174643558790027619133832684705939106706235938479316885209540411",
+    "conditional_independent_bias_bound": "0.039109972413714175306392980183583236051595007535322824554102391466",
+    "ideal_fresh_uniform_bound": "0.039077671389657220605324065003024200390388536263844868686483347785"
+  },
+  "limitations": [
+    "Original selection/calibration values adopted from deposited example, not optimized here.",
+    "Original deposited tail and tighter conditional-product-input tail use distinct bounds; neither is a posterior model probability.",
+    "S descriptive error uses the original iid-style variance formula, separate from memory-allowing tail.",
+    "CSV and fixed selection reproduction do not independently verify space-time closure, random-source calibration or latent conditional independence.",
+    "No record-order search, stop-time optimization, memory-network fitting or holdout selection."
+  ],
+  "checks": {
+    "identity_verified": true,
+    "original_counts_reproduced": true,
+    "all_rows_have_17_fields": true,
+    "all_setting_and_herald_channels_binary": true,
+    "no_selection_parameter_scan": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-16T02:26:25.986126+00:00",
+  "completed_at": "2026-10-16T02:26:26.076427+00:00",
+  "elapsed_seconds": 0.09005929064005613,
+  "timeout_seconds": 120,
+  "returncode": 0,
+  "command": [
+    "/usr/local/bin/python3",
+    "reproduce_hensen_records_v1.py",
+    "--archive",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/private_sources/hensen_data_v1.zip",
+    "--output",
+    "HENSEN_RECORD_REPRODUCTION_v1.json"
+  ]
+}

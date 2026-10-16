@@ -1,0 +1,9 @@
+# Independent derivation before code inspection
+
+Let L0[R]=q²R''-2qq'R'+(2q'²-qq'')R. For R=gqw expand R'=g(q'w+qw') and R''=g(q''w+2q'w'+qw''). The w coefficient q²q''-2q q'²+2q q'²-q²q'' vanishes; the w' coefficient 2q²q'-2q²q' vanishes; remaining term is gq³w''. Thus (L0+Omega2 q²)R+(G/2)q⁵=0 by g(w''+Omega2w)=-Gq²/2. No division or nonzero assumption appears. At q=0 the smooth algebraic equality remains defined, although pointwise observational information may degenerate.
+
+The formal adjoint against psi is (q²psi)''+(2qq'psi)'+(2q'²-qq'')psi = q²psi''+6qq'psi'+(6q'²+3qq'')psi=A. Boundary terms from R'' vanish because q²psi and its first derivative vanish at clamped endpoints, and those from R' vanish because qq'psi does. This does not constrain hidden initial data. L0[q]=0, hence integral qA=0. Substituting R=f-mq''-kq-4lambda4 q³ yields the displayed coefficients; the k integral qA term disappears and remaining kOmega2 integral q³psi has positive sign on the right. Quartic coefficient of q⁵psi is 4lambda4 Omega2-G/2.
+
+The same coefficient relations as block16 follow on the same positive-mass/frequency domain. For fixed q and parameters the residual is linear in f with kernel A+Omega2 B. Pointwise |delta f|<=eps_f gives eps_f integral|A+Omega2 B| by triangle inequality, no correlation assumption needed. Errors in q and its derivatives perturb the kernel and other columns, so are not covered by that force-only bound.
+
+This is necessary, not sufficient. q identically zero annihilates all coefficients even if reported force is nonzero, while the actual equation then demands f=0. At g=0 spurious homogeneous residuals persist. Isolated crossings are allowed without ratio blow-up, but small trajectories can suppress the signal and rank can fail. No distributional reconstruction/uniqueness result or apparatus uncertainty guarantee follows. No material defect found before reading code.

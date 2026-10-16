@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "neighborhood_network_evolution_personal_exploration",
+  "phase": "personal research; neighborhood exploration checked and packaging",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T01:53:01.590602+00:00",
+  "updated_at": "2026-10-16T03:45:08.963809+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -13,12 +13,12 @@
   "main_at_launch": "bbada1fe09b2d10d610560864d86b68c24a59713",
   "delivery": "milestone",
   "checkpoint_minutes": 30,
-  "block": 3,
-  "route": "checked primitive-input bounds and material normalization/boundary diagnostics",
+  "block": "network mechanism exploration: blocks01-19 checked",
+  "route": "Observations -> intervention and multi-history response constraints -> challenge remaining action/state/readout assumptions",
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally derive what observed record statistics can and cannot select about a deterministic neighborhood reservoir, including initial-state dependence and conditional forgetting. Three-hour exploration ends 03:53:06Z; campaign deadline 22:36:59Z unchanged.",
+  "next_action": "Finish the three-hour research-block preservation at03:53:06Z, then carry the preparation-independent common-response tests into actual calibrated environments; first establish a physical force/coordinate/time bridge and model-error budget without choosing a new action per environment.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -60,6 +60,24 @@
       "checkpoint_commit": "5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2",
       "scientific_status": "bounded_theorem / conditional-support; no empirical test",
       "shared_landing_validation": "pending"
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "changedFiles": 95,
+      "headRefName": "codex/neighborhood-evolution-20261016",
+      "headRefOid": "e97535fef2ce2da544c288fe81a7cb35a0d8914b",
+      "isDraft": false,
+      "mergeStateStatus": "BLOCKED",
+      "mergeable": "MERGEABLE",
+      "number": 9632,
+      "state": "OPEN",
+      "title": "[physics-loop] neighborhood-intervention bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632",
+      "verified_at": "2026-10-16T03:03:16.919346+00:00",
+      "attached_to_current_chat": true,
+      "shared_landing_validation": "pending",
+      "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
     }
   ],
   "owned_jobs": [],
@@ -67,7 +85,7 @@
   "worker_pid": null,
   "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
   "global_stop": null,
-  "strongest_checked_result": "A conditional relative-field inverse now has joint primitive-input error bounds and a finite radar-bin exponent bound. Known stress transports scalar normalization affinely. An explicit regular-center family retains a free central value with varying potentials, while a separately stipulated equatorial continuation yields a distinct constant branch. The action, history, absolute scale and actual observation bridge remain open.",
+  "strongest_checked_result": "In addition to the scalar inverse: exact conditional intervention discrimination between endpoint-equivalent networks; a division-free weak response identity eliminates arbitrary hidden initial states and allows coordinate crossings in a supplied adaptive-action class; passive multimode frequency constraints avoid selecting one oscillator. A finite-test counterexample exposes untested force directions. No fundamental action, Born record process or independent empirical validation derived.",
   "author_computation": {
     "core_exact_identities": 28,
     "core_mutations_detected": 3,
@@ -82,11 +100,11 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T01:41:00+00:00",
+      "time": "2026-10-16T03:45:08.963809+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "open_pr_count": 60,
-      "inventory_sha256": "99928c48415830c8d8b638f023d4609e6bcfdd781bc6aa729da8f607acd99585",
-      "scope": "Compact metadata inventory and PR9630 body read; no adoption of its proof. Main/ai-execution workflow refreshed. Full launch inventory remains separate."
+      "open_pr_count": 62,
+      "inventory_sha256": "60fa51f8149639364b5b83f48e095661bbc471e36cf30d95ad996534bfedd40c",
+      "scope": "Main and execution refs unchanged; newest open science PR identities unchanged from prior intake; current PR9632 verified open and attached."
     }
   },
   "first_block_files": [
@@ -99,17 +117,17 @@
     "BLOCK01_READOUT_INTAKE_v1.md"
   ],
   "empirical_limits": [
-    "No new raw observations opened; synthetic controls are not empirical tests.",
+    "Hensen original deposited records reproduced using frozen published selection; exposed development data. Synthetic network controls are not empirical validation.",
     "Existing Cassini products remain exposed development data.",
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "First standalone scientific milestone published as PR 9628; exact base/head/body and all 59 changed paths verified; attached to this chat. Shared integrated landing validation remains pending.",
+  "milestone_status": "PR9628 scalar inverse and PR9632 neighborhood intervention both published and attached; shared integrated landing gates pending. No merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T01:53:01.590602+00:00",
+    "time": "2026-10-16T03:45:08.963809+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Four personally authored network blocks independently checked, fifth primary passed with focused check active.",
+    "checkpoint_scope": "All19network units and full synthesis source-checked; freeze and preservation in progress.",
     "failures": [
       "symbolic min ordering in first canonical run",
       "unordered symbolic endpoints in second canonical run",
@@ -124,10 +142,10 @@
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T00:42:54.152591+00:00",
-    "commit": "5b36ccde7afc33bc295b9b3c9f70a0cff9bf62a2",
+    "checked_at": "2026-10-16T02:18:58.903973+00:00",
+    "commit": "c112da108315fc715454f85801c56aa8f7582b26",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Verified pre-publication science/evidence checkpoint. Publication bookkeeping follows in the next checkpoint; runtime status records the final pushed head."
+    "scope": "Network blocks01-04 and their focused evidence, plus prior campaign state; blocks05 onward currently uncommitted."
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -329,104 +347,22 @@
     },
     "next": "Personally derive pair-relative orientation transport, phase-sensitive reciprocity, and third-neighbor freedom; known geometric phase is prior art.",
     "latest_checkpoint": {
-      "time": "2026-10-16T01:53:01.590602+00:00",
+      "time": "2026-10-16T03:45:08.963809+00:00",
       "author": "/root personally",
-      "source_bindings_verified": [
-        {
-          "path": "NETWORK_EVOLUTION_BLOCK03_v1.md",
-          "sha256": "d13c99fd593e1b2761aa82b518d1c699b112c5e9ae4a4fc7b0fa4c159fb289e2"
-        },
-        {
-          "path": "probe_orientation_transport_v1.py",
-          "sha256": "f1e8b5964c95e26a78ceeaf5ee27b4207a7bf8a85e908241d41eda374c3c0ee5"
-        },
-        {
-          "path": "ORIENTATION_TRANSPORT_EXECUTION_v1.json",
-          "sha256": "cc0be6b0831622b2abe729866c90d578c9d68ca693c785bbd4e76ed624e84384"
-        },
-        {
-          "path": "ORIENTATION_TRANSPORT_EXECUTION_v1.stdout",
-          "sha256": "066b61d8a522079041f720b33ef52ccbc98e7879f5d4711c7c0f1c06650964f9"
-        },
-        {
-          "path": "ORIENTATION_TRANSPORT_CONTROLS_v1.json",
-          "sha256": "066b61d8a522079041f720b33ef52ccbc98e7879f5d4711c7c0f1c06650964f9"
-        },
-        {
-          "path": "ORIENTATION_TRANSPORT_EXECUTION_v1.stderr",
-          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-        },
-        {
-          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
-        },
-        {
-          "path": "docs/audit/data/axiom_premise_nodes.json",
-          "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
-        },
-        {
-          "path": "NETWORK_EVOLUTION_BLOCK04_v1.md",
-          "sha256": "f1b89c4ad03ff810a9b713e45739bbe9ad96b5f077236e037e96aacb75039f5d"
-        },
-        {
-          "path": "probe_record_reservoir_v1.py",
-          "sha256": "028188dcbbe633099088b8fd6f8ccdbe1bd76d568f0cdecc11073ab6e25b4ba3"
-        },
-        {
-          "path": "RECORD_RESERVOIR_CONTROLS_v1.json",
-          "sha256": "e271431ff5fe54aff25d953f1dafa2875084cf5124808f1cf5f343c0a550991c"
-        },
-        {
-          "path": "RECORD_RESERVOIR_EXECUTION_v1.stderr",
-          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-        },
-        {
-          "path": "RECORD_RESERVOIR_EXECUTION_v1.json",
-          "sha256": "fdf7f9b8ec4ca8e741f2666023988e74ff74635658a8d6c2901e63c759e45c51"
-        },
-        {
-          "path": "RECORD_RESERVOIR_EXECUTION_v1.stdout",
-          "sha256": "e271431ff5fe54aff25d953f1dafa2875084cf5124808f1cf5f343c0a550991c"
-        }
-      ],
-      "author_exact_reproductions": [
-        {
-          "runner": "probe_orientation_transport_v1.py",
-          "output": "ORIENTATION_TRANSPORT_CONTROLS_v1.json",
-          "sha256": "066b61d8a522079041f720b33ef52ccbc98e7879f5d4711c7c0f1c06650964f9",
-          "exact_reproduction": true,
-          "checks": {
-            "passed": 23,
-            "failed": 0
-          }
-        },
-        {
-          "runner": "probe_record_reservoir_v1.py",
-          "output": "RECORD_RESERVOIR_CONTROLS_v1.json",
-          "sha256": "e271431ff5fe54aff25d953f1dafa2875084cf5124808f1cf5f343c0a550991c",
-          "exact_reproduction": true,
-          "checks": {
-            "passed": 18,
-            "failed": 0
-          }
-        }
-      ],
-      "independent_reports_read_completely": true,
-      "independent_derivations_code_results_read_completely": true,
-      "reports": {
-        "independent_orientation_transport": "c724363461ef8bb354ef86f013dd3967cbef3419ed01357f3253cfbb9ba9e065",
-        "independent_record_reservoir": "e1756dfa24d1b64bf83c3ff24999ed7dbc954ec333334ca2b82757dfeae84126"
-      },
-      "new_unreviewed_block": {
-        "source": "NETWORK_EVOLUTION_BLOCK05_v1.md",
-        "sha256": "f2f42a1335432ddd00bcc17029fe57672d55a35b702219812d66756249bff819",
-        "author_controls": 10,
-        "status": "primary passed; independent focused check active"
-      },
-      "empirical_status": "Published geometric-phase and anticoincidence summaries are exposed development evidence; no raw independent-test data opened. All script controls synthetic.",
-      "next": "Personally derive what observed record statistics can and cannot select about a deterministic neighborhood reservoir, including initial-state dependence and conditional forgetting.",
+      "status": "Scientific sources frozen; final research-block preservation in progress",
+      "current_network_blocks": 19,
+      "focused_manifest_count": 20,
+      "verified_source_bindings": 59,
+      "report_sha256": "237f348b67212d28593439b9a285ce0539b481094d37135fab2453246fa5365a",
+      "manifest_sha256": "36112365574def334c00ddadf5fb4a37f7562505b83d6d914dbf4c176e300cca",
+      "root_read_all_current_independent_derivations_code_results": true,
+      "root_viewed_figure": true,
+      "next_action": "Finish the three-hour research-block preservation at03:53:06Z, then carry the preparation-independent common-response tests into actual calibrated environments; first establish a physical force/coordinate/time bridge and model-error budget without choosing a new action per environment.",
+      "empirical_status": "Hensen exposed development reproduction; all listed network controls synthetic. No independent empirical candidate validation.",
       "not_formal_audit": true,
-      "deadline_unchanged": true
+      "campaign_deadline_unchanged": "2026-10-16T22:36:59Z",
+      "exploration_window_end": "2026-10-16T03:53:06Z",
+      "unpublished_extension_status": "Blocks11-19 are checked exploratory evidence; only09/10 are integrated in canonical PR9632. No claim of completed canonical review for later extensions."
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-10-16T02:58:11.724448+00:00",
+  "elapsed_seconds": 0.5537173328921199,
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "runner_sha256": "1495843bdc467731645d18ebfc6a7468d682766c27a060a78eb8fb00c5f8fbd8",
+  "change_from_v1": "Correct signed-sinc label from visibility to coherence; no mathematical change. Original independent terminology finding and v1 source/output preserved."
+}

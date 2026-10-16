@@ -1,0 +1,248 @@
+{
+  "source_sha256": "09dd263d90a903a58624919dc26e0241131de696236e8ad727b5404b7db68ff1",
+  "runner_sha256": "d7938b01e343037d461a5c62e1f7c476cf1bfe19675969fa1518079fadfa08bf",
+  "checks": [
+    {
+      "name": "exact energy-conserving paths attain the support TV bound",
+      "passed": true,
+      "rows": [
+        {
+          "B": 1,
+          "N": 12,
+          "target_survival": "1/64",
+          "optimal_TV": "63/64"
+        },
+        {
+          "B": 2,
+          "N": 12,
+          "target_survival": "243/1024",
+          "optimal_TV": "781/1024"
+        },
+        {
+          "B": 3,
+          "N": 12,
+          "target_survival": "239/512",
+          "optimal_TV": "273/512"
+        }
+      ],
+      "max_depth": 12
+    },
+    {
+      "name": "absorbing spectrum and reflecting invariant lag correlation",
+      "passed": true,
+      "buffers": 8,
+      "periodicity": "two; no convergence from each state asserted"
+    },
+    {
+      "name": "finite horizon survival and variance controls",
+      "passed": true,
+      "rows": [
+        {
+          "B_in_energy_quanta": 1,
+          "trials": 10,
+          "iid_path_survival": 0.03125,
+          "minimum_TV": 0.96875,
+          "survival_norm_bound": 0.05412658773652745,
+          "reflecting_count_variance": 0.0,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 1,
+          "trials": 100,
+          "iid_path_survival": 8.881784197001252e-16,
+          "minimum_TV": 0.9999999999999991,
+          "survival_norm_bound": 1.5383701491068617e-15,
+          "reflecting_count_variance": 0.0,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 1,
+          "trials": 1000,
+          "iid_path_survival": 3.054936363499605e-151,
+          "minimum_TV": 1.0,
+          "survival_norm_bound": 5.291304995471381e-151,
+          "reflecting_count_variance": 0.0,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 2,
+          "trials": 10,
+          "iid_path_survival": 0.31640625,
+          "minimum_TV": 0.68359375,
+          "survival_norm_bound": 0.530629412629345,
+          "reflecting_count_variance": 0.5,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 2,
+          "trials": 100,
+          "iid_path_survival": 7.550955419025835e-07,
+          "minimum_TV": 0.9999992449044581,
+          "survival_norm_bound": 1.2663337209009222e-06,
+          "reflecting_count_variance": 0.5,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 2,
+          "trials": 1000,
+          "iid_path_survival": 4.5244983321661996e-63,
+          "minimum_TV": 1.0,
+          "survival_norm_bound": 7.587814376106564e-63,
+          "reflecting_count_variance": 0.5,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 4,
+          "trials": 10,
+          "iid_path_survival": 0.78125,
+          "minimum_TV": 0.21875,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 1.4375,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 4,
+          "trials": 100,
+          "iid_path_survival": 0.008564661079288705,
+          "minimum_TV": 0.9914353389207113,
+          "survival_norm_bound": 0.019849693684214083,
+          "reflecting_count_variance": 1.4999999999999982,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 4,
+          "trials": 1000,
+          "iid_path_survival": 2.081628245879581e-22,
+          "minimum_TV": 1.0,
+          "survival_norm_bound": 4.8244387796075525e-22,
+          "reflecting_count_variance": 1.5,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 8,
+          "trials": 10,
+          "iid_path_survival": 0.99609375,
+          "minimum_TV": 0.00390625,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 2.46875,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 8,
+          "trials": 100,
+          "iid_path_survival": 0.2768616216761906,
+          "minimum_TV": 0.7231383783238094,
+          "survival_norm_bound": 0.8920113033454535,
+          "reflecting_count_variance": 5.497511971957731,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 8,
+          "trials": 1000,
+          "iid_path_survival": 2.874592089675588e-07,
+          "minimum_TV": 0.999999712540791,
+          "survival_norm_bound": 9.261544774088911e-07,
+          "reflecting_count_variance": 5.499999999999996,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 16,
+          "trials": 10,
+          "iid_path_survival": 1.0,
+          "minimum_TV": 0.0,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 2.5,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 16,
+          "trials": 100,
+          "iid_path_survival": 0.8227482017723892,
+          "minimum_TV": 0.17725179822761084,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 17.72743995153805,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 16,
+          "trials": 1000,
+          "iid_path_survival": 0.01773951830340357,
+          "minimum_TV": 0.9822604816965964,
+          "survival_norm_bound": 0.07992276815524367,
+          "reflecting_count_variance": 21.499999901492814,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 32,
+          "trials": 10,
+          "iid_path_survival": 1.0,
+          "minimum_TV": 0.0,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 2.5,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 32,
+          "trials": 100,
+          "iid_path_survival": 0.9982525603261755,
+          "minimum_TV": 0.0017474396738245135,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 24.897852029621234,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 32,
+          "trials": 1000,
+          "iid_path_survival": 0.410082030271337,
+          "minimum_TV": 0.589917969728663,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 84.66613052855112,
+          "iid_count_variance": 250.0
+        },
+        {
+          "B_in_energy_quanta": 64,
+          "trials": 10,
+          "iid_path_survival": 1.0,
+          "minimum_TV": 0.0,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 2.5,
+          "iid_count_variance": 2.5
+        },
+        {
+          "B_in_energy_quanta": 64,
+          "trials": 100,
+          "iid_path_survival": 0.9999999999738041,
+          "minimum_TV": 2.6195934310635494e-11,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 24.999999997915566,
+          "iid_count_variance": 25.0
+        },
+        {
+          "B_in_energy_quanta": 64,
+          "trials": 1000,
+          "iid_path_survival": 0.9204414408064028,
+          "minimum_TV": 0.07955855919359722,
+          "survival_norm_bound": 1.0,
+          "reflecting_count_variance": 217.89098906519052,
+          "iid_count_variance": 250.0
+        }
+      ]
+    },
+    {
+      "name": "closed and externally compensated energy accounting",
+      "passed": true,
+      "paths": 16
+    },
+    {
+      "name": "balanced iid exchange fluctuation requirement",
+      "passed": true,
+      "max_depth": 10
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Conditional finite-storage extension of mathematical flux to actual energy; excludes neither powered detectors nor general network dynamics."
+}

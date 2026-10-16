@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "name": "elimination for arbitrary hidden solution",
+      "passed": true
+    },
+    {
+      "name": "shared coefficient restrictions and stability equivalence",
+      "passed": true
+    },
+    {
+      "name": "clamped test endpoints 0",
+      "passed": true
+    },
+    {
+      "name": "clamped test endpoints 1",
+      "passed": true
+    },
+    {
+      "name": "clamped test endpoints 2",
+      "passed": true
+    },
+    {
+      "name": "clamped test endpoints 3",
+      "passed": true
+    },
+    {
+      "maximum_residual": 7.742417817979685e-14,
+      "minimum_sampled_q": 0.8739505660611735,
+      "name": "all histories with unrelated hidden preparations obey weak identity",
+      "passed": true
+    },
+    {
+      "maximum_parameter_error": 3.3568703372566233e-12,
+      "name": "shared synthetic coefficients identified on declared development shapes",
+      "passed": true,
+      "rank": 6,
+      "scaled_condition_number": 20.423356765727533
+    },
+    {
+      "maximum_residual": 6.038572419875265e-14,
+      "name": "reserved synthetic shapes predict without refitting or shared preparation",
+      "passed": true,
+      "rows": 24
+    },
+    {
+      "maximum_residual": 0.0035786474273755836,
+      "name": "wrong common coefficient fails reserved synthetic identity",
+      "passed": true
+    },
+    {
+      "name": "constant-path design is not full rank",
+      "passed": true
+    },
+    {
+      "achieved": 0.00525177694887231,
+      "bound": 0.00525177694887231,
+      "name": "correlated-error weak residual certificate",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "f6f12429db668123421e8e6bb276c02547319e858f9defbd68aff158c47c76df",
+  "runner_sha256": "6ceed9c233038c6c30940671942216a1c0134ee0dbd7da222135ef8fdca393f6",
+  "scope": "Necessary finite-window response of a chosen adaptive action, arbitrary hidden initial states; physical calibration and action selection remain conditional.",
+  "summary": {
+    "failed": 0,
+    "passed": 12
+  },
+  "synthetic_fit": {
+    "fit": [
+      -2.5555555555571368,
+      1.200000000000138,
+      3.0666666666700233,
+      2.8111111111117326,
+      0.44000000000019424,
+      0.7688888888900793
+    ],
+    "initial_hidden_states": [
+      [
+        0.4,
+        -0.3
+      ],
+      [
+        -0.7,
+        0.2
+      ],
+      [
+        0.9,
+        0.1
+      ],
+      [
+        -1.1,
+        0.6
+      ],
+      [
+        0.2,
+        -0.8
+      ]
+    ],
+    "reserved_profiles": 2,
+    "training_profiles": 3,
+    "truth": [
+      -2.5555555555555554,
+      1.2,
+      3.0666666666666664,
+      2.8111111111111113,
+      0.44,
+      0.7688888888888887
+    ]
+  }
+}

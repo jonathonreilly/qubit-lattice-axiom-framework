@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "name": "polynomial elimination has no coordinate division",
+      "passed": true
+    },
+    {
+      "name": "weak adjoint coefficients",
+      "passed": true
+    },
+    {
+      "name": "linear stiffness derivative part vanishes",
+      "passed": true
+    },
+    {
+      "name": "hidden forcing closes polynomial identity",
+      "passed": true
+    },
+    {
+      "name": "signed histories cross zero",
+      "passed": true,
+      "sample_ranges": [
+        [
+          -1.0507113327112896,
+          0.8740160752980375
+        ],
+        [
+          -0.9198109229892882,
+          1.1776106713218928
+        ],
+        [
+          -1.1662885161948688,
+          1.0709023221789562
+        ],
+        [
+          -1.0122316979421477,
+          1.1896416988349592
+        ]
+      ]
+    },
+    {
+      "maximum_residual": 5.866140906363171e-14,
+      "name": "arbitrary-preparation weak identity through zeros",
+      "passed": true
+    },
+    {
+      "maximum_error": 3.873790177522096e-12,
+      "name": "common coefficients from signed synthetic development histories",
+      "passed": true,
+      "rank": 6,
+      "scaled_condition": 52.07690442837396
+    },
+    {
+      "maximum_residual": 1.3299084056228594e-13,
+      "name": "additional signed synthetic history without refit",
+      "passed": true
+    },
+    {
+      "name": "identically zero path is blind",
+      "passed": true
+    },
+    {
+      "bound": 0.0005780279309810863,
+      "name": "force-only deterministic certificate",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "fit": [
+    -2.5555555555578535,
+    1.2000000000002,
+    3.06666666667054,
+    2.811111111114351,
+    0.43999999999893646,
+    0.7688888888882387
+  ],
+  "note_sha256": "6e87f35500d2129b59b09a472764a8c6e1703c63d9c136272278800aa1cc2b94",
+  "runner_sha256": "55fe25b90f421200d6c15aa2c8c151a8e97f9aa4b56f1745c5061f63c2a60499",
+  "scope": "Necessary division-free weak response of the chosen adaptive action; zero-path blindness and physical calibration limits explicit.",
+  "summary": {
+    "failed": 0,
+    "passed": 10
+  }
+}

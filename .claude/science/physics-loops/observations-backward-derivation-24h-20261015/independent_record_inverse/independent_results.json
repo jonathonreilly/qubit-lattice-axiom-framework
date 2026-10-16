@@ -1,0 +1,14 @@
+[
+  {
+    "prefix_checks": 1022
+  },
+  {
+    "adaptive_conditional_cylinders": "126 histories; exact mass, affine reconstruction and TV bound"
+  },
+  {
+    "rare_zero_history": "19 exact checks"
+  },
+  {
+    "fourfold_map": "uniform 2n-bit finite seeds give uniform n-output words"
+  }
+]

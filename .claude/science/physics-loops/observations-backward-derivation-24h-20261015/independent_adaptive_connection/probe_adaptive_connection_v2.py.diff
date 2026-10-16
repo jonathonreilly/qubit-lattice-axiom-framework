@@ -1,0 +1,20 @@
+--- probe_adaptive_connection_v1.py
++++ probe_adaptive_connection_v2.py
+@@ -29,7 +29,8 @@
+     expected=((k-m*om*om)*A+(3*lam-g*g/(4*C)-g*g/(8*D))*A**3)*s.cos(om*t)+(lam-g*g/(8*D))*A**3*s.cos(3*om*t)
+     ck('fundamental and third harmonic force',s.trigsimp(s.expand_trig(force-expected))==0)
+     x1,x2=s.symbols('x1 x2');B=lambda x:lam-g*g/(8*(C-4*tau*x))
+-    ck('bare quartic removed by frequency difference',s.diff(s.simplify(B(x1)-B(x2)),lam)==0 and s.simplify(B(0).subs(lam,g*g/(8*C)))==0)
++    ck('bare quartic removed by frequency difference; B at zero is rational continuation',s.diff(s.simplify(B(x1)-B(x2)),lam)==0 and s.simplify(B(0).subs(lam,g*g/(8*C)))==0)
++    ck('zero frequency static cubic merges both harmonics',s.simplify((3*lam-g*g/(4*C)-g*g/(8*C))+B(0)-(4*lam-g*g/(2*C)))==0)
+     xs=s.symbols('x1:5');ys=[B(x) for x in xs]
+     poly=(xs[0]-xs[3])*(xs[1]-xs[2])*(ys[0]-ys[2])*(ys[1]-ys[3])-(xs[0]-xs[2])*(xs[1]-xs[3])*(ys[0]-ys[3])*(ys[1]-ys[2])
+     ck('common adaptive susceptibility cross ratio',s.factor(poly)==0)
+@@ -52,6 +53,6 @@
+     sol=solve_ivp(rhs,[0,30],[.8,0.,-.1,.2],rtol=1e-10,atol=1e-12,t_eval=np.linspace(0,30,1001));assert sol.success
+     qn,vn,wn,dwn=sol.y;energy=.5*mn*vn**2+.5*tn*dwn**2+.5*kn*qn**2+.5*Cn*wn**2+.5*gn*wn*qn**2+stable_lam*qn**4
+     drift=np.max(np.abs(energy-energy[0]));ck('stable-completion conserved-energy numerical control',drift<1e-8,maximum_energy_drift=float(drift))
+-    note=Path(__file__).with_name('NETWORK_EVOLUTION_BLOCK15_v1.md')
++    note=Path(__file__).with_name('NETWORK_EVOLUTION_BLOCK15_v2.md')
+     print(json.dumps({'summary':{'passed':len(rows),'failed':0},'checks':rows,'note_sha256':hashlib.sha256(note.read_bytes()).hexdigest(),'runner_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'empirical_validation':False,'scope':'Chosen passive adaptive-connection polynomial action, explicitly conditional preparation and force/readout. Stability constrains a family; it does not select a physical potential.'},indent=2,sort_keys=True))
+ if __name__=='__main__':main()

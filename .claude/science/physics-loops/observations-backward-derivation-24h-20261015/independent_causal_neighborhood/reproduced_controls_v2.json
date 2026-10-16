@@ -1,0 +1,79 @@
+{
+  "source_sha256": "8d665cdcf728a967ccbab4e60ffc6932343226d6bbf7eac0957a3df0ac1823e8",
+  "runner_sha256": "1ff4ff6325d23c924e43f3d188242ae7f4a478d668b222ed88e20494531a2804",
+  "checks": [
+    {
+      "name": "all deterministic local response tables",
+      "passed": true,
+      "tables": 16
+    },
+    {
+      "name": "conditional independent input-bias bound is sharp",
+      "passed": true,
+      "bias_pairs": 16
+    },
+    {
+      "name": "out-of-domain bias counterexample preserved",
+      "passed": true,
+      "loose_tau": "3/4"
+    },
+    {
+      "name": "fixed-horizon adversarial-memory induction",
+      "passed": true,
+      "max_horizon": 13
+    },
+    {
+      "name": "published-input tail reconstruction",
+      "passed": true,
+      "N": 245,
+      "wins": 196,
+      "tau": "0.0000108",
+      "conditional_win_bound": "0.75001079988336",
+      "tail": "0.039109972413714175306392980183583236051595007535322824554102391466",
+      "game_score": "12/5",
+      "data_role": "exposed published summary, no raw-data or independent empirical test"
+    },
+    {
+      "name": "rotation-invariant no-signaling counterfamily",
+      "passed": true,
+      "rows": [
+        {
+          "gamma": "1/2",
+          "CHSH_magnitude": "2*2**(3/4)",
+          "numeric": 3.363585661014858
+        },
+        {
+          "gamma": "1",
+          "CHSH_magnitude": "2*sqrt(2)",
+          "numeric": 2.8284271247461903
+        },
+        {
+          "gamma": "2",
+          "CHSH_magnitude": "2",
+          "numeric": 2.0
+        },
+        {
+          "gamma": "3",
+          "CHSH_magnitude": "sqrt(2)",
+          "numeric": 1.4142135623730951
+        }
+      ],
+      "scope": "Pair tables only; no multisystem composition or physical implementation asserted."
+    },
+    {
+      "name": "affine response coefficient at the reference axis",
+      "passed": true,
+      "solution": "[{c: 0, dx: 0, dy: 0, dz: 1}]"
+    },
+    {
+      "name": "two history mixtures expose the sufficient-state premise",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Known causal/game reconstruction plus explicit pair-law counterfamily and conditional affinity selector; no network law or initial state derived."
+}

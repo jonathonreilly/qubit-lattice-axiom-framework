@@ -1,0 +1,54 @@
+{
+  "time": "2026-10-16T03:03:16.919346+00:00",
+  "source_bindings_verified": [
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK11_v1.md",
+      "sha256": "bf8cf17be938e5598f28a998089490976e6418a7a6089de8b371b3aa1cd0c2f2"
+    },
+    {
+      "path": "probe_instrument_invariants_v1.py",
+      "sha256": "931ffe69ac5dcbed771a59ce34458c81883867af8893fc935775b99cca0c803a"
+    },
+    {
+      "path": "INSTRUMENT_INVARIANTS_CONTROLS_v1.json",
+      "sha256": "96f96fdb9b5f72e7a184d3a7002168ec4c8307ac7e5e37108ff6affaddbf3b4e"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK12_v1.md",
+      "sha256": "e5fe9458c1794b28562bd5215b090083362cda6daf472e441ba2f3e651c90f1e"
+    },
+    {
+      "path": "probe_context_echo_v2.py",
+      "sha256": "1495843bdc467731645d18ebfc6a7468d682766c27a060a78eb8fb00c5f8fbd8"
+    },
+    {
+      "path": "CONTEXT_ECHO_CONTROLS_v2.json",
+      "sha256": "2667d74ae009fd096568d8b359489ad6fdc2566d41bb1d770565775427340680"
+    }
+  ],
+  "root_read_independent_reports_proof_code_results": true,
+  "exact_reproduction_match": true,
+  "publication": {
+    "baseRefName": "main",
+    "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "changedFiles": 95,
+    "headRefName": "codex/neighborhood-evolution-20261016",
+    "headRefOid": "e97535fef2ce2da544c288fe81a7cb35a0d8914b",
+    "isDraft": false,
+    "mergeStateStatus": "BLOCKED",
+    "mergeable": "MERGEABLE",
+    "number": 9632,
+    "state": "OPEN",
+    "title": "[physics-loop] neighborhood-intervention bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9632",
+    "verified_at": "2026-10-16T03:03:16.919346+00:00",
+    "attached_to_current_chat": true,
+    "shared_landing_validation": "pending",
+    "scientific_status": "bounded_theorem / conditional-support; no empirical validation"
+  },
+  "new_science": "Block11 eliminates common gain/offset and affine command normalization from a necessary four-setting test; reproducible opposite sources cancel unknown initial preparation. Block12 supplies matched-reference-phase paths with a chosen contextual twist discriminator and explicit unwrapping/context assumptions. Block13 scale witness passes6authorfamilies; focused check active.",
+  "preserved_findings": "Block12v1 runner mislabeled signed coherence as visibility; v2 labels corrected, all original evidence retained.",
+  "not_formal_audit": true,
+  "deadline_unchanged": true,
+  "window_end": "2026-10-16T03:53:06Z"
+}

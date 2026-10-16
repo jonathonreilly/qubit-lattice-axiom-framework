@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-16T02:18:58.903973+00:00",
+  "author": "/root personally",
+  "source_bindings_verified": [
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK05_v2.md",
+      "sha256": "73457c30156105385624a6be11e7a07eb3123d4b15a056a02e343eca6a908af9"
+    },
+    {
+      "path": "probe_context_loops_v2.py",
+      "sha256": "8c179183e7ec47130b40e9475899549d4b4f8e2776481d925fbe68736b569235"
+    },
+    {
+      "path": "CONTEXT_LOOP_CONTROLS_v2.json",
+      "sha256": "5030b64c4c8783af56f620f0139d0773ce80b1cd7f554e01683cc98665356ae4"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK06_v1.md",
+      "sha256": "0b164537121f74de90d1db47e1766e46436c4fa1107cd9c9913dc69f09f7b9a9"
+    },
+    {
+      "path": "probe_record_inverse_v1.py",
+      "sha256": "c6efbcd9234ff38e09ef353d4f7e8ed46b959e6ff9bf6a8d4bc5e3be69e93ea3"
+    },
+    {
+      "path": "RECORD_INVERSE_CONTROLS_v1.json",
+      "sha256": "f0c61be78edff6289a2cf6e6821bc63c3c7229901a6788f54c7d885d57c1596d"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK07_v1.md",
+      "sha256": "09dd263d90a903a58624919dc26e0241131de696236e8ad727b5404b7db68ff1"
+    },
+    {
+      "path": "probe_energy_records_v1.py",
+      "sha256": "d7938b01e343037d461a5c62e1f7c476cf1bfe19675969fa1518079fadfa08bf"
+    },
+    {
+      "path": "ENERGY_RECORD_CONTROLS_v1.json",
+      "sha256": "890f0b3b3412b6edacd9c89d656b8e4780c25a93f5443728db870fc23362d720"
+    }
+  ],
+  "independent_reports_read_completely": true,
+  "independent_derivations_code_results_read_completely": true,
+  "reports": {
+    "independent_context_loops": "2d3dd1ef8f1446c2dd3e6ed91fb96ee24e44f752280a5d0a046c970d9f891ece",
+    "independent_record_inverse": "2eeaaeb6a894251784d12cb6bd4c0e6b81ab210c7ffdb73b0b470cfaff7457f4",
+    "independent_energy_records": "072355f25eb7539cdff1e2ddc35c0c3cfb3eff3e05c1ac3b14ec9a83a221072e"
+  },
+  "reproduction_evidence_verified": [
+    {
+      "original": "CONTEXT_LOOP_CONTROLS_v2.json",
+      "reproduced": "independent_context_loops/reproduced_controls_v2.json",
+      "exact_bytes_match": true,
+      "summary": {
+        "passed": 11,
+        "failed": 0
+      }
+    },
+    {
+      "original": "RECORD_INVERSE_CONTROLS_v1.json",
+      "reproduced": "independent_record_inverse/reproduced_controls.json",
+      "exact_bytes_match": true,
+      "summary": {
+        "passed": 8,
+        "failed": 0
+      }
+    },
+    {
+      "original": "ENERGY_RECORD_CONTROLS_v1.json",
+      "reproduced": "independent_energy_records/reproduced_controls.json",
+      "exact_bytes_match": true,
+      "summary": {
+        "passed": 5,
+        "failed": 0
+      }
+    }
+  ],
+  "block08_status": "v1 domain finding preserved; v2 adds 0<=tau<=1/2, passes 8 controls, narrow independent check active",
+  "empirical_status": "Published phase, anticoincidence and Bell summaries exposed as development constraints. No raw or independent-test data opened. Controls are synthetic mathematics.",
+  "next": "Personally derive hidden-neighbor memory and cross-environment controlled-connection response identities; test whether intermediate interventions constrain common mechanisms better than endpoints.",
+  "not_formal_audit": true,
+  "deadline_unchanged": true
+}

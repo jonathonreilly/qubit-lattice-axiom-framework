@@ -1,0 +1,199 @@
+{
+  "status": "literature bridge and exposed development comparator, not proof of candidate mechanism",
+  "full_sources_private": true,
+  "retrieval_metadata": [
+    {
+      "retrieved_at": "2026-10-16T01:29:24.784210+00:00",
+      "sources": [
+        {
+          "name": "berry1984",
+          "url": "https://michaelberryphysics.wordpress.com/wp-content/uploads/2013/07/berry120.pdf",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "297596e8eccfa2a36bdb2792f1cb1cea6ddfc68516582865b73af144e5fe0b80",
+          "pages": 13,
+          "text_chars": 12,
+          "rendered_pages": [
+            1,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "kwiat_chiao1991",
+          "url": "https://research.physics.illinois.edu/QI/Photonics/papers/My%20Collection.Data/PDF/Observation%20of%20a%20nonclassical%20Berry's%20phase%20for%20the%20photon.pdf",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "ade2c3d55e0023e0847ab9f915e3021b63593feff54f1ac9b631a1ac18bba93c",
+          "pages": 4,
+          "text_chars": 3,
+          "rendered_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "prior_attempts": [
+        "urllib default trust: SSL local-issuer verification failure",
+        "urllib certifi verified trust: HTTP403 on first Berry URL; second item not attempted"
+      ],
+      "scope": "No inference from retrieval failures."
+    },
+    {
+      "time": "2026-10-16T01:40:28.664547+00:00",
+      "sources": [
+        {
+          "name": "de_raedt2005",
+          "url": "https://arxiv.org/pdf/quant-ph/0501141",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "4908a7d5a62f47108d3d459bfc3f85b6a83049be77f592c3a0c934db6c6f3e8f",
+          "bytes": 250831,
+          "pdf_header": true
+        },
+        {
+          "name": "horvat_dakic2021",
+          "url": "https://arxiv.org/pdf/2003.12114",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "83134da65c5b5f6f99b69f4936371047db74c4830713a9f624d73c7bc531e2c5",
+          "bytes": 1015682,
+          "pdf_header": true
+        },
+        {
+          "name": "massa2018",
+          "url": "https://arxiv.org/pdf/1802.05102",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "80121996942dff1738e48e3b13cef7bce3f91a1b43a520b287cba3f79f653270",
+          "bytes": 2915421,
+          "pdf_header": true
+        },
+        {
+          "name": "araujo2014",
+          "url": "https://arxiv.org/pdf/1309.7976",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "00f3e0552f5c3256d9617bad167d6cddaec6e680f94da04d5174ba4f4bb2f8c4",
+          "bytes": 487376,
+          "pdf_header": true
+        },
+        {
+          "name": "bose_murray",
+          "url": "https://arxiv.org/pdf/1206.2406",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "8eb950bae432588fed475d974b59500d6c5af1103cf36710b1705ea906d6f6de",
+          "bytes": 314964,
+          "pdf_header": true
+        }
+      ]
+    },
+    {
+      "time": "2026-10-16T02:11:16.555643+00:00",
+      "sources": [
+        {
+          "name": "hensen2015",
+          "url": "https://arxiv.org/pdf/1508.05949",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "c4acd5fca880cdc64fd3273f6d80e0c7d3055954b4522f1aa89111891f212d06",
+          "bytes": 3314850
+        },
+        {
+          "name": "elkouss_wehner",
+          "url": "https://arxiv.org/pdf/1510.07233",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "47ad340ec12f03c2c1b4989412c181105bba760f8e29ced42b175ff1b698f4e5",
+          "bytes": 722049
+        },
+        {
+          "name": "toner_bacon",
+          "url": "https://arxiv.org/pdf/quant-ph/0304076",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "2ec06a5a64b418fdcbc4941d3c432b8259b3ef1f831fb5984615dc042d54cbd6",
+          "bytes": 145331
+        },
+        {
+          "name": "nist_detector_review",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=32485",
+          "returncode": 0,
+          "stderr": "",
+          "sha256": "01d84b2cbad2a08a88385711871bf6196a2d22c74b4800db5d25009f6ac87d00",
+          "bytes": 37554
+        }
+      ],
+      "read_scope": {
+        "hensen2015": "Scientific main text HTML read through discussion; no raw data or supplemental apparatus characterization reanalysis.",
+        "elkouss_wehner": "Figure1, intro and game-statistics passages, plus independent root tail proof; not all26pages.",
+        "toner_bacon": "All4pages read; reference only, no proof imported.",
+        "nist_detector_review": "Two pages read, only operating-principle contrast used."
+      }
+    }
+  ],
+  "read_scope": {
+    "berry1984.pdf": "Rendered pages 1,6,7; not all 13 pages.",
+    "kwiat_chiao1991.pdf": "All four rendered pages read by root; checker independently inspected pages3-4.",
+    "de_raedt2005.pdf": "Seven pages read via web source.",
+    "horvat_dakic2021.pdf": "Section IV parity-game equations, not whole paper.",
+    "massa2018.pdf": "Input-setting protocol and reported visibility/success summaries.",
+    "araujo2014.pdf": "All four pages text read; scope is black-box versus physically extended coherent control.",
+    "bose_murray.pdf": "Intro and construction through equations1-4; no later mixing theorem adopted."
+  },
+  "version": 2,
+  "updated_at": "2026-10-16T03:33:45.925484+00:00",
+  "hensen_deposit": {
+    "archive_sha256": "c28eb0f075759aef620a0b2e00a70fd675ce712bc8214d11c103f5a3d29492c0",
+    "archive_md5": "342f29f8288c46575818acd2acebd535",
+    "url": "https://data.4tu.nl/file/e8cf2991-3153-48ad-b67d-dfd7d7d97fd3/289c4850-6ed5-45a3-8b19-de8671f873a8",
+    "files": {
+      "bell_open_data.txt": {
+        "bytes": 431094,
+        "sha256": "5a6b1853554ad508d35c795415d64922ed9e5bc0469f6052ad222486ad3566ff"
+      },
+      "bell_open_data_analysis_example.py": {
+        "bytes": 12899,
+        "sha256": "8793d31a40ff671d70056e0d715813d41c1a6ab0c931212a1e98181d8e3ce47d"
+      },
+      "bell_open_data_header.ods": {
+        "bytes": 4169,
+        "sha256": "97dd50f33e4cac6e986c614e7739bdea48797acf40683abee6924b7320949a73"
+      },
+      "bell_open_data_readme.rtf": {
+        "bytes": 37442,
+        "sha256": "39bdc9e658623b09ef1dff4b43897c3b793186ed3833c0d259cc7d9ece453bbe"
+      }
+    },
+    "landing_url": "https://data.4tu.nl/articles/_/12703235/1",
+    "read_scope": "All deposited table rows parsed using frozen published selection; example code read as data, not executed; header XML and readme read. Original aggregate already exposed: development reproduction, not independent candidate test."
+  },
+  "web_only_sources": [
+    {
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=920602",
+      "doi": "10.1109/TMTT.2016.2627036",
+      "read_scope": "Abstract, measurement model equations1-9 and AppendixA.1-A.2; no experimental data reused. Known cross-ratio calibration context."
+    },
+    {
+      "url": "https://arxiv.org/abs/0808.3122",
+      "read_scope": "Title, authors, abstract and version metadata only; known nonlinear harmonic generation context. No full-text result imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/1612.00490",
+      "version": "v3",
+      "read_scope": "Title, authors, abstract and version metadata only; known nonlinear mechanical energy-transfer context. No full-text result imported."
+    },
+    {
+      "url": "https://doi.org/10.1143/PTP.33.423",
+      "read_scope": "Abstract only: prior memory-function projection context, no proof imported."
+    }
+  ],
+  "separation": {
+    "calibration": "No empirical fit to the new adaptive candidate. Synthetic parameters explicitly selected.",
+    "development": "Published fringe/record/Bell results already exposed; Hensen original records reproduced without tuning the published selection.",
+    "independent_empirical_test": "None performed. Synthetic withheld profiles are numerical controls only."
+  }
+}

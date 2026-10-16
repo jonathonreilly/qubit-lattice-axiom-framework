@@ -1,0 +1,13 @@
+--- probe_context_echo_v1.py
++++ probe_context_echo_v2.py
+@@ -61,8 +61,8 @@
+     for kval in [.0,.2,1.,3.]:
+         value=quad(lambda mu:math.cos(kval*W*mu/2),-1,1,epsabs=1e-12)[0]/2
+         expected=np.sinc(kval*W/(2*np.pi))
+-        assert abs(value-expected)<1e-12,'isotropic ensemble visibility'
+-    ck('conditional isotropic ensemble visibility',True,cases=4)
++        assert abs(value-expected)<1e-12,'isotropic ensemble coherence'
++    ck('conditional isotropic ensemble coherence',True,cases=4)
+     note=Path(__file__).with_name('NETWORK_EVOLUTION_BLOCK12_v1.md')
+     print(json.dumps({'summary':{'passed':len(checks),'failed':0},'checks':checks,'note_sha256':hashlib.sha256(note.read_bytes()).hexdigest(),'runner_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'empirical_validation':False,'scope':'Explicit supplied contextual connection and ideal controlled paths; no derived coupling, state or physical identification.'},indent=2,sort_keys=True))
+ if __name__=='__main__':main()

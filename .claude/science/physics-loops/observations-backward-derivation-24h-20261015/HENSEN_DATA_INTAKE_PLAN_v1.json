@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-16T02:24:55.414554+00:00",
+  "dataset": "Hensen et al 2015 4TU version1, DOI10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31",
+  "role": "Exposed development reproduction. N245 and196wins and published pvalue already read; NOT an independent test.",
+  "planned_analysis": "Read deposited README/metadata and reconstruct the original fixed event selection and game tally without tuning selection, outcomes, or thresholds. Compare with published counts. Do not fit a network or optimize postselection. Any record-order exploratory check must be labeled development and cannot refute a general history class.",
+  "prior_exposure": [
+    "published aggregate N245 and wins196",
+    "published correlation S2.42",
+    "input bias1.08e-5",
+    "published nominal tail~.039"
+  ],
+  "source_failures": [
+    "web DOI open unavailable; direct curl landing HTTP200",
+    "bs4 unavailable; standard-library HTML inspection succeeded"
+  ],
+  "publication_policy": "Commit only original analysis/metadata and exact source identities; keep original dataset private runtime until license is understood."
+}

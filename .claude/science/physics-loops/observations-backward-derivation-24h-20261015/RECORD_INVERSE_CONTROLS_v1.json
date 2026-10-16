@@ -1,0 +1,129 @@
+{
+  "source_sha256": "0b164537121f74de90d1db47e1766e46436c4fa1107cd9c9913dc69f09f7b9a9",
+  "runner_sha256": "c6efbcd9234ff38e09ef353d4f7e8ed46b959e6ff9bf6a8d4bc5e3be69e93ea3",
+  "checks": [
+    {
+      "name": "CDF conjugate branch inverse identities",
+      "passed": true,
+      "measures": 4,
+      "probabilities": 2
+    },
+    {
+      "name": "fixed and adaptive cylinders form an exact partition",
+      "passed": true,
+      "max_depth": 8
+    },
+    {
+      "name": "different invariant measures give identical record cylinders",
+      "passed": true,
+      "measures": 4,
+      "words": 32
+    },
+    {
+      "name": "nonmonotone post-map has same finite iid record law",
+      "passed": true,
+      "max_depth": 6,
+      "scope": "Exact dyadic partition enumeration; proof gives all depths."
+    },
+    {
+      "name": "integrated Lipschitz conditional-TV constant",
+      "passed": true
+    },
+    {
+      "name": "conditional forgetting bound across every controlled history",
+      "passed": true,
+      "max_depth": 8,
+      "rows": [
+        {
+          "initial_slope_parameter": "-3/4",
+          "max_actual_to_bound": "192/259"
+        },
+        {
+          "initial_slope_parameter": "1/4",
+          "max_actual_to_bound": "147456/196609"
+        },
+        {
+          "initial_slope_parameter": "3/4",
+          "max_actual_to_bound": "49152/65539"
+        }
+      ]
+    },
+    {
+      "name": "rare-history failure of uniform conditional relaxation",
+      "passed": true,
+      "rows": [
+        {
+          "n": 0,
+          "history_probability": "1",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 1,
+          "history_probability": "1/4",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 2,
+          "history_probability": "1/16",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 3,
+          "history_probability": "1/64",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 4,
+          "history_probability": "1/256",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 5,
+          "history_probability": "1/1024",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 6,
+          "history_probability": "1/4096",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 7,
+          "history_probability": "1/16384",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 8,
+          "history_probability": "1/65536",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 9,
+          "history_probability": "1/262144",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 10,
+          "history_probability": "1/1048576",
+          "next_zero_probability": "1/4"
+        },
+        {
+          "n": 11,
+          "history_probability": "1/4194304",
+          "next_zero_probability": "1/4"
+        }
+      ]
+    },
+    {
+      "name": "every finite prefix has an eventually-zero exceptional point",
+      "passed": true,
+      "max_depth": 8
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0
+  },
+  "empirical_test": false,
+  "scope": "Conditional inverse/forgetting theorems and explicit counterfamilies; no initial state, detector map or Born rule selected."
+}

@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "degree": 6,
+      "name": "selected weak test blind 0",
+      "passed": true
+    },
+    {
+      "degree": 7,
+      "name": "selected weak test blind 1",
+      "passed": true
+    },
+    {
+      "degree": 8,
+      "name": "selected weak test blind 2",
+      "passed": true
+    },
+    {
+      "degree": 9,
+      "name": "selected weak test blind 3",
+      "passed": true
+    },
+    {
+      "exact_projection": "5*Omega2/277134",
+      "name": "additional reserved test detects perturbation",
+      "passed": true
+    },
+    {
+      "name": "modified force violates same-action equation",
+      "passed": true
+    },
+    {
+      "name": "test trajectories and function endpoints admissible",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "1a20e73adb8cf110e985556852dad26386a45bdee98d1a85d88664ed8d8f3c7d",
+  "runner_sha256": "a350f04276bc7d154a6ad5cc9e5e4ed51279c4a1edcb3639e50be7c82885db77",
+  "scope": "Exact finite selected weak-test blindness witness; not a universal impossibility claim.",
+  "summary": {
+    "failed": 0,
+    "passed": 7
+  }
+}

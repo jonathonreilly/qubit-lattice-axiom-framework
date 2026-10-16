@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "probe_weak_test_blindness_v1.py"
+  ],
+  "elapsed_seconds": 0.6087038749828935,
+  "returncode": 1,
+  "timeout_seconds": 120,
+  "runner_sha256": "645c009b565795eca7fa874faeecd262fef14694ec12738663ba3f6a3f96f776"
+}

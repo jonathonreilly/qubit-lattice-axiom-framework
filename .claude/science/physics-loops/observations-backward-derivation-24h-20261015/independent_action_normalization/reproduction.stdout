@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "name": "entire frequency and command response preserved",
+      "passed": true
+    },
+    {
+      "name": "positive matrices and calibration scaling",
+      "passed": true
+    },
+    {
+      "name": "known gain distinguishes family",
+      "passed": true
+    },
+    {
+      "name": "constant-force solution and initial state",
+      "passed": true
+    },
+    {
+      "name": "physical work changes as response gain compensates",
+      "passed": true
+    },
+    {
+      "name": "delivered work equals stored mechanical energy",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "dbaeb7093416b71be11a6922407bcad0d9fcae1920f3402d9c4512bacdb261f2",
+  "runner_sha256": "8125d9293489a74aa33dd7cc7cea32e4aa1fb5b35d3eba1e8cec9614b8df0bd2",
+  "scope": "Explicit indistinguishable response family under unknown common gain and affine intervention scale; calibrated energy/force/readout routes remain open.",
+  "summary": {
+    "failed": 0,
+    "passed": 6
+  }
+}

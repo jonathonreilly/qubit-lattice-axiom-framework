@@ -1,0 +1,21 @@
+{
+  "passed": 16,
+  "checks": [
+    "Rodrigues projection 0",
+    "exact degree 0",
+    "Rodrigues projection 1",
+    "exact degree 1",
+    "Rodrigues projection 2",
+    "exact degree 2",
+    "Rodrigues projection 3",
+    "exact degree 3",
+    "Rodrigues projection 4",
+    "exact degree 4",
+    "pointwise leading obstruction",
+    "serialization-only correction",
+    "preserved original serialization failure",
+    "author succeeds",
+    "published output exact",
+    "sources unchanged"
+  ]
+}

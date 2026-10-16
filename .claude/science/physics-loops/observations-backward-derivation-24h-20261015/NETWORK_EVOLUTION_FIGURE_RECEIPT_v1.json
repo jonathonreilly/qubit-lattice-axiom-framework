@@ -1,0 +1,12 @@
+{
+  "kind": "synthetic illustration, not empirical data",
+  "script_sha256": "19c449d765916951b25a48948a4a8ceb26a72c10e8b5965bd71209629b52d6f5",
+  "sources": {
+    "NETWORK_EVOLUTION_BLOCK15_v2.md": "938fd7cea467e0fbdd1ac48b0aa1a841a0584a45ccbf9aae09417851c987a6ee",
+    "NETWORK_EVOLUTION_BLOCK16_v1.md": "f6f12429db668123421e8e6bb276c02547319e858f9defbd68aff158c47c76df"
+  },
+  "files": {
+    "NETWORK_EVOLUTION_CANDIDATE_v1.png": "1c596cfb0aa2f5440b190a5bc927d0df030b2bba3ccae58cbf669e91c10e03df",
+    "NETWORK_EVOLUTION_CANDIDATE_v1.svg": "6f24394c8aa30d32039f662f94db60f4c8e6e72d4b01e860b8408fb8e31549cd"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "local_tables": 16,
+  "biased_product_cases": 9,
+  "exposed_binomial_tail": 0.039109972413714174,
+  "q": "4687567499271/6250000000000",
+  "adaptive_tail": "139/512",
+  "binomial_bound": "12393/16384",
+  "tau_domain_counterexample": {
+    "tau": "3/4",
+    "constant_settings_win": "1",
+    "incorrect_formula_q": "15/16"
+  }
+}

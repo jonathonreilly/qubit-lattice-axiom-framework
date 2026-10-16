@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -13,7 +13,7 @@
+         psi=t*t*(1-t)**2*s.legendre(j,2*t-1)
+         K=s.expand(q*q*s.diff(psi,t,2)+6*q*s.diff(q,t)*s.diff(psi,t)+(6*s.diff(q,t)**2+3*q*s.diff(q,t,2)+Om*q*q)*psi)
+         value=s.factor(s.integrate(s.expand(delta*K),(t,0,1)))
+-        if j<4:ck('selected weak test blind '+str(j),value==0,degree=s.degree(K,t))
++        if j<4:ck('selected weak test blind '+str(j),value==0,degree=int(s.degree(K,t)))
+         else:ck('additional reserved test detects perturbation',value!=0 and value/Om>0,exact_projection=str(value))
+     point=s.expand(q*q*s.diff(delta,t,2)-2*q*s.diff(q,t)*s.diff(delta,t)+(2*s.diff(q,t)**2-q*s.diff(q,t,2)+Om*q*q)*delta)
+     ck('modified force violates same-action equation',s.degree(point,t)==12 and s.Poly(point,t).LC()==Om*s.Poly(delta,t).LC())

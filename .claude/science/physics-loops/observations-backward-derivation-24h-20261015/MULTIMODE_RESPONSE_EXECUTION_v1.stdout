@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "name": "two-column Cauchy determinant sign",
+      "passed": true
+    },
+    {
+      "name": "multimode stability completion",
+      "passed": true
+    },
+    {
+      "determinant": "0",
+      "name": "exact pole-pair determinant 0",
+      "passed": true
+    },
+    {
+      "name": "nonconstant spectral moment constraint 0",
+      "passed": true
+    },
+    {
+      "determinant": "0",
+      "name": "exact pole-pair determinant 1",
+      "passed": true
+    },
+    {
+      "name": "nonconstant spectral moment constraint 1",
+      "passed": true
+    },
+    {
+      "determinant": "15625/123875136",
+      "name": "exact pole-pair determinant 2",
+      "passed": true
+    },
+    {
+      "name": "nonconstant spectral moment constraint 2",
+      "passed": true
+    },
+    {
+      "determinant": "36104328125/196891105162752",
+      "name": "exact pole-pair determinant 3",
+      "passed": true
+    },
+    {
+      "name": "nonconstant spectral moment constraint 3",
+      "passed": true
+    },
+    {
+      "name": "common real affine scale preserves determinant sign",
+      "passed": true
+    },
+    {
+      "controls": 200,
+      "largest_error_to_bound_ratio": 0.35367341435381355,
+      "name": "correlated point errors obey finite determinant certificate",
+      "passed": true
+    },
+    {
+      "name": "negative-residue countercandidate violates sign",
+      "passed": true
+    }
+  ],
+  "empirical_validation": false,
+  "note_sha256": "540bd73f34f9c43470f4ce0b8a2d96ef48f8ce10d9cade400eea83922f176a60",
+  "runner_sha256": "9a902ab84b950ef05ad31b6f9b4508d4bfc257878302e3da573176e61d806802",
+  "scope": "Necessary passive finite multimode adaptive response; no selected mode count, physical spectrum, periodic preparation or measured response derived.",
+  "summary": {
+    "failed": 0,
+    "passed": 13
+  }
+}

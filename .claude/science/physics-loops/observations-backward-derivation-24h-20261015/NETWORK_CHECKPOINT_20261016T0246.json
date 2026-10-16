@@ -1,0 +1,94 @@
+{
+  "time": "2026-10-16T02:42:09.645147+00:00",
+  "author": "/root personally",
+  "source_bindings_verified": [
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK08_v2.md",
+      "sha256": "8d665cdcf728a967ccbab4e60ffc6932343226d6bbf7eac0957a3df0ac1823e8"
+    },
+    {
+      "path": "probe_causal_neighborhood_v2.py",
+      "sha256": "1ff4ff6325d23c924e43f3d188242ae7f4a478d668b222ed88e20494531a2804"
+    },
+    {
+      "path": "CAUSAL_NEIGHBORHOOD_CONTROLS_v2.json",
+      "sha256": "9aae84c1923e224a36197d44f1f7ef7c2bdb83c7efe2851f78faae0288c03afb"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK09_v1.md",
+      "sha256": "a4238b8902ff1cbfbf8e973622a49f04d81294d5677ffc56bd2de44adfca767d"
+    },
+    {
+      "path": "probe_network_intervention_v1.py",
+      "sha256": "29acf4772777dba717a6ebc4501a6255bbabd7fde47b8c83585292f812b65e88"
+    },
+    {
+      "path": "NETWORK_INTERVENTION_CONTROLS_v1.json",
+      "sha256": "f3a589c94ba8b53bc40f06d960e00c09e9d2b4309d2a990298da436fdd435308"
+    },
+    {
+      "path": "NETWORK_EVOLUTION_BLOCK10_v1.md",
+      "sha256": "fd8810a5d93611e9d01cfa6e1646d41943077787bef008cfc269459492c56166"
+    },
+    {
+      "path": "probe_network_path_order_v1.py",
+      "sha256": "9c0daab6c082bbaf3ebba72555735331174e20ea75b5cbc9a41037901a16bd5a"
+    },
+    {
+      "path": "NETWORK_PATH_ORDER_CONTROLS_v1.json",
+      "sha256": "bd2b960513d9c8d59d8d2864c36df973c5f3f09b56bf0a6994770ab211619e7c"
+    },
+    {
+      "path": "HENSEN_RECORD_REPRODUCTION_NOTE_v1.md",
+      "sha256": "97424be700a2c6a89ba00b7772ebf0805b4c3898d4b8a757844582b97e108f2c"
+    },
+    {
+      "path": "reproduce_hensen_records_v1.py",
+      "sha256": "88d1003f0b53e89dbad5a84d4ecddea29ceaeef5c80c6558a52669f928a1e9fa"
+    },
+    {
+      "path": "HENSEN_RECORD_REPRODUCTION_v1.json",
+      "sha256": "732f5a06a80a5574cec90b9146afe05e270b31cdecc94b914cf83af67b8121ac"
+    }
+  ],
+  "independent_reports_and_proof_code_results_read": true,
+  "report_sha256": {
+    "independent_causal_neighborhood": "1d7c830233205ade3ae86b90bf6f927efcad9cff3d0ab0aa527ba8702f2ea270",
+    "independent_network_intervention": "e5ffc0607c22dd54b263fbf9660b7d220a7e4026f13c81f7a8a3efdb779fd891",
+    "independent_network_path_order": "3e29d91c90b1a60bba37b02419e135aa83015179b15ebc4ef9bba6629e3779d8",
+    "independent_hensen_records": "0fc6d1f797bbc8a8c888fa9f3f66048cfb1e718e78068b44b3ee0ed7c83527ef"
+  },
+  "reproduction_evidence_verified": [
+    {
+      "original": "CAUSAL_NEIGHBORHOOD_CONTROLS_v2.json",
+      "reproduced": "independent_causal_neighborhood/reproduced_controls_v2.json",
+      "exact_bytes_match": true
+    },
+    {
+      "original": "NETWORK_INTERVENTION_CONTROLS_v1.json",
+      "reproduced": "independent_network_intervention/reproduced_controls.json",
+      "exact_bytes_match": true
+    },
+    {
+      "original": "NETWORK_PATH_ORDER_CONTROLS_v1.json",
+      "reproduced": "independent_network_path_order/reproduced_controls.json",
+      "exact_bytes_match": true
+    },
+    {
+      "original": "HENSEN_RECORD_REPRODUCTION_v1.json",
+      "reproduced": "independent_hensen_records/reproduced_result.json",
+      "exact_bytes_match": true
+    }
+  ],
+  "empirical_status": "Hensen deposited raw records opened under pre-access frozen reproduction plan; already exposed aggregate result, development reproduction only, not an independent test. Original fixed selection recovers245trials196wins. No fit, threshold scan or candidate test.",
+  "new_results": "Blocks08v2,09v1,10v1 and Hensen record reproduction independently checked. Conditional causal-memory limits, exact common-intervention relation and path-response order; no action/state/Born/scale derivation.",
+  "publication": {
+    "worktree": "/Users/jonBridger/.codex/worktrees/neighborhood-evolution-20261016/New Axioms Lets Go",
+    "branch": "codex/neighborhood-evolution-20261016",
+    "scope": "Standalone integration of blocks09/10; primary14controls and13scratchmutationfailures; source-bound independent integration review active; no PR yet."
+  },
+  "ownership_process_matches": [],
+  "next_action": "Complete source-bound review and publication of conditional local-intervention/path-response theorem; continue personal preparation/mechanism synthesis through03:53:06Z and carry physically justified fixed-action response into the24hour campaign.",
+  "deadline_unchanged": true,
+  "not_formal_audit": true
+}

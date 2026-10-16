@@ -1,0 +1,88 @@
+{
+  "scientific_attempts": [
+    {
+      "id": "root_exact",
+      "source_group": "local_clock_readout_window_decisive_check",
+      "receipt_alias": "local_clock_readout_window_decisive_check/commands/selected_exact_01.json",
+      "stdout_alias": "local_clock_readout_window_decisive_check/commands/selected_exact_01.stdout.txt",
+      "stderr_alias": "local_clock_readout_window_decisive_check/commands/selected_exact_01.stderr.txt",
+      "preseal_alias": "local_clock_readout_window_decisive_check/PRECONTROL_SEAL.json",
+      "preseal_time_key": "utc",
+      "preseal_members_key": "members",
+      "start_key": "started_utc",
+      "end_key": "ended_utc",
+      "expected_exit_code": 0,
+      "provenance_limit": "Self-checking preseal in the selected program, but no child-source-at-launch snapshot."
+    },
+    {
+      "id": "independent_logical",
+      "source_group": "local_clock_readout_window_independent",
+      "receipt_alias": "local_clock_readout_window_independent/runs/selected_01/EXECUTION.json",
+      "stdout_alias": "local_clock_readout_window_independent/runs/selected_01/stdout",
+      "stderr_alias": "local_clock_readout_window_independent/runs/selected_01/stderr",
+      "preseal_alias": "local_clock_readout_window_independent/PRECHECK_SEAL.json",
+      "preseal_time_key": "utc_before_selected_execution",
+      "preseal_members_key": "files",
+      "start_key": "utc_start",
+      "end_key": "utc_end",
+      "expected_exit_code": 0,
+      "provenance_limit": "Recorder hashes source/input/preseal after completion; no launch snapshot and selected script does not self-validate preseal."
+    },
+    {
+      "id": "boundary_coefficients",
+      "source_group": "local_clock_boundary_window_decisive_check",
+      "receipt_alias": "local_clock_boundary_window_decisive_check/runs/selected_01/EXECUTION.json",
+      "stdout_alias": "local_clock_boundary_window_decisive_check/runs/selected_01/stdout",
+      "stderr_alias": "local_clock_boundary_window_decisive_check/runs/selected_01/stderr",
+      "preseal_alias": "local_clock_boundary_window_decisive_check/PRECHECK_SEAL.json",
+      "preseal_time_key": "utc_before_new_scientific_execution",
+      "preseal_members_key": "files",
+      "start_key": "utc_start",
+      "end_key": "utc_end",
+      "expected_exit_code": 0,
+      "provenance_limit": "Preserved preseal and after-completion source/input receipt; no retroactive launch attestation."
+    }
+  ],
+  "root_metadata_attempts": [
+    {
+      "label": "local_clock_readout_window_candidate_seal",
+      "prefix": "actual_runs/local_clock_readout_window_candidate_seal",
+      "expected_exit_code": 0
+    },
+    {
+      "label": "local_clock_readout_window_root_sources",
+      "prefix": "actual_runs/local_clock_readout_window_root_sources",
+      "expected_exit_code": 0
+    },
+    {
+      "label": "local_clock_window_independent_domain_revision",
+      "prefix": "actual_runs/local_clock_window_independent_domain_revision",
+      "expected_exit_code": 0
+    },
+    {
+      "label": "local_clock_window_independent_root_sources",
+      "prefix": "actual_runs/local_clock_window_independent_root_sources",
+      "expected_exit_code": 0
+    },
+    {
+      "label": "local_clock_boundary_window_seal",
+      "prefix": "actual_runs/local_clock_boundary_window_seal",
+      "expected_exit_code": 0
+    },
+    {
+      "label": "local_clock_boundary_window_root_sources",
+      "prefix": "actual_runs/local_clock_boundary_window_root_sources",
+      "expected_exit_code": 1
+    },
+    {
+      "label": "local_clock_boundary_window_root_sources_retry",
+      "prefix": "actual_runs/local_clock_boundary_window_root_sources_retry",
+      "expected_exit_code": 0
+    }
+  ],
+  "scientific_attempts_count": 3,
+  "failed_scientific_attempts": 0,
+  "failed_root_metadata_attempts": 1,
+  "scope": "Exact historical evidence only; no control replay or mathematical result evaluation.",
+  "other_metadata_records": "Complete author/reviewer capture, sealing and incident records remain in their full groups; copies are not extra independent runs."
+}

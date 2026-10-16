@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-15T04:55:32.454138+00:00",
+  "stage": "root_bound_review_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-clock-word-20261015",
+  "observed_base_head": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+  "observed_base_tree": "0b053f782429a021023ca7e6c78d7b55c17521b8",
+  "base_branch": "physics-loop/toe-local-entangling-clock-cell-20261015",
+  "base_pr": 9588,
+  "base_is_mathematical_dependency": false,
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "feature_branch_created_by_this_builder": false,
+  "feature_head": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+  "source_head": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+  "publication_pr": null,
+  "root_runtime_freshness_and_feature_binding_pending": false,
+  "canonical_sources": {
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 52484,
+      "sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    }
+  },
+  "single_Pauli_mathematical_parent": {
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+  },
+  "methodological_attribution_only": {},
+  "optional_four_rail_word_instance_adopted": false,
+  "exact_source_clauses": [
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "role": "Complete root single-Pauli cell; concrete silent-cell instance and endpoint response"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "role": "Complete independent positive single-Pauli apparatus; full-space lift and exact local-cell costs"
+    }
+  ],
+  "conditional_acceptances": {
+    "local_clock_word_root_review/ACCEPTANCE.md": "654d2a2d6c5846ba63b38457dbac6eef5872c78dc9087136b7e785c209e29c94",
+    "local_clock_word_independent_root_review/ACCEPTANCE.md": "a3908a5fec53c806cdc7479c115977d2c67f56cd1b64e3dca6035405a856c0fb"
+  },
+  "new_scientific_programs_run": 0,
+  "archived_selected_fixtures": 2,
+  "archived_scientific_attempts": 2,
+  "archived_successful_attempts": 2,
+  "archived_failed_attempts": 0,
+  "archived_failed_root_metadata_attempts": 1,
+  "scope": "Two conditional ordered-word constructions with supplied compatible geometry. Optional four-rail numerical instance, window and reader imports excluded. Actual feature binding is recorded; later publication and independent retained audit remain separate."
+}

@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-15T07:37:33.378511+00:00",
+  "stage": "root_bound_review_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-clock-windows-20261015",
+  "observed_base_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+  "observed_base_tree": "9669328d461a451696d83f68010e62aeb5da2be1",
+  "base_branch": "physics-loop/toe-local-clock-word-20261015",
+  "base_pr": 9590,
+  "ancestry_alone_supplies_mathematical_premise": false,
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "feature_branch_created_by_this_builder": false,
+  "feature_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+  "source_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+  "publication_pr": null,
+  "root_runtime_freshness_and_feature_binding_pending": false,
+  "canonical_sources": {
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 66890,
+      "sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea"
+    },
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 52484,
+      "sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    }
+  },
+  "mathematical_canonical_parents": {
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+  },
+  "methodological_attribution_only": {},
+  "optional_four_rail_word_instance_adopted": false,
+  "exact_source_clauses": [
+    {
+      "alias": "premises/root_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd",
+      "role": "Silent-cell negative word, weighted path, bare residual and m=5 geometry"
+    },
+    {
+      "alias": "premises/independent_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "role": "Positive shared-head word, full-space lift, local-cell norm and resource composition"
+    },
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "role": "Literal scalar-port single-Pauli cell for both negative m=5 windows"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "role": "Positive cell response, reversed right entry and full-space bipartite norm in boundary window"
+    }
+  ],
+  "conditional_acceptances": {
+    "local_clock_readout_window_root_review/ACCEPTANCE.md": "c910531b89a54bff5343aba5289226a273e9513f3c1364d62ad5e079c3f8c03e",
+    "local_clock_readout_window_independent_root_review/ACCEPTANCE.md": "4662349b2df694154108cbf9af1af97b614f09e3128ac24a566b377e54384286",
+    "local_clock_boundary_window_root_review/ACCEPTANCE.md": "bc08f951f2912de840ff463f3db9549cb971f68ba22c5b1eea5c18bd721c83a9"
+  },
+  "new_scientific_programs_run": 0,
+  "archived_selected_fixtures": 3,
+  "archived_scientific_attempts": 3,
+  "archived_successful_attempts": 3,
+  "archived_failed_attempts": 0,
+  "archived_failed_root_metadata_attempts": 1,
+  "scope": "Three conditional finite-window constructions with distinct compatible geometries, times, phases and bounds. Concrete reader/autonomous imports excluded; the supplied-reader comparison remains conditional. Actual feature binding is recorded; later publication and independent retained audit remain separate."
+}

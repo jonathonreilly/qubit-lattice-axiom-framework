@@ -1,0 +1,7 @@
+# Driven-reader publication handoff
+
+At 2026-10-15T08:47:38.844699+00:00, complete e2212836/75cc73dd/9d623702 bodies are packaged on physics-loop/toe-local-driven-readers-20261015, base PR9593/f79cf5d36e69b78d3dcc878e2d249ad597155d1c, tree 85b386b89e07473d55096c70b0eb9e15e81d94f5. Three mathematical parents and seven exact clauses are bound. The coherent stack remains unmerged; ancestry supplies no extra theorem.
+
+Preserve the full-drift dirty-clock route, occupied-old local comparison and sharpened sector-qualified commutator/work/timing estimate separately. Arbitrary old/reference and dirty-transit tensor return are analytic statements under the complete supplied preparation/control model. All coherent output factors remain. Terminal classical observation, native preparation, reset, repeatability, energy identification and autonomous control remain outside the milestone.
+
+Actual identity-only cache, seven integrity rejections and graph preservation completed; no scientific program was replayed. PUBLICATION_EVIDENCE reconstructs all 279 original offline files and this reviewed derivative, with actual source failures and complete streams. REVIEW_HISTORY supplies twelve conformance sections; later FINAL_VERIFICATION records focused completion. The preserved original offline nulls are dated history. This is a publication handoff, not the campaign checkpoint. Editable prompt files changed: none.

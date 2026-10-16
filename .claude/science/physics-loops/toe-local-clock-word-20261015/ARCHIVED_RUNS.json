@@ -1,0 +1,79 @@
+{
+  "scientific_attempts": [
+    {
+      "id": "root_shared_head_float",
+      "source_group": "local_clock_word_decisive_check",
+      "receipt_alias": "local_clock_word_decisive_check/runs/selected_overlap_01/EXECUTION.json",
+      "stdout_alias": "local_clock_word_decisive_check/runs/selected_overlap_01/stdout.txt",
+      "stderr_alias": "local_clock_word_decisive_check/runs/selected_overlap_01/stderr.txt",
+      "program_alias": "local_clock_word_decisive_check/selected_check.py",
+      "preseal_alias": "local_clock_word_decisive_check/PRECHECK_SEAL.json",
+      "seal_time_key": "sealed_at_utc",
+      "preseal_overrides": {},
+      "expected_exit_code": 0,
+      "actual_start_utc": "2026-10-15T03:00:38.705436+00:00",
+      "actual_end_utc": "2026-10-15T03:00:39.165471+00:00",
+      "actual_stdout_sha256": "c46b9efe9a512de581f592a8bc396d2d38e9a6b49315e7676aaa03706ef250a1",
+      "actual_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "independent_exact",
+      "source_group": "local_clock_word_independent",
+      "receipt_alias": "local_clock_word_independent/commands/selected_exact_01.json",
+      "stdout_alias": "local_clock_word_independent/commands/selected_exact_01.stdout.txt",
+      "stderr_alias": "local_clock_word_independent/commands/selected_exact_01.stderr.txt",
+      "program_alias": "local_clock_word_independent/selected_control.py",
+      "preseal_alias": "local_clock_word_independent/PRECONTROL_SEAL.json",
+      "seal_time_key": "sealed_utc",
+      "preseal_overrides": {
+        "DERIVATION.md": "history/DERIVATION.precontrol_a806462b.md"
+      },
+      "expected_exit_code": 0,
+      "actual_start_utc": "2026-10-15T03:06:02.188639+00:00",
+      "actual_end_utc": "2026-10-15T03:06:02.363629+00:00",
+      "actual_stdout_sha256": "088bbf9ad344e139e7f4bd309dd86074cbb7197cec4b0d73968d25088a5c787a",
+      "actual_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "selected_fixtures": 2,
+  "attempts": 2,
+  "successful_attempts": 2,
+  "failed_scientific_attempts": 0,
+  "new_scientific_runs": 0,
+  "root_metadata_attempts": [
+    {
+      "label": "local_clock_word_candidate_seal",
+      "expected_exit_code": 0,
+      "prefix": "actual_runs/local_clock_word_candidate_seal",
+      "kind": "Root metadata/source verification only; not a scientific calculation"
+    },
+    {
+      "label": "local_clock_word_root_source_verification",
+      "expected_exit_code": 0,
+      "prefix": "actual_runs/local_clock_word_root_source_verification",
+      "kind": "Root metadata/source verification only; not a scientific calculation"
+    },
+    {
+      "label": "local_clock_word_independent_root_sources",
+      "expected_exit_code": 1,
+      "prefix": "actual_runs/local_clock_word_independent_root_sources",
+      "kind": "Root metadata/source verification only; not a scientific calculation"
+    },
+    {
+      "label": "local_clock_word_independent_root_sources_retry",
+      "expected_exit_code": 0,
+      "prefix": "actual_runs/local_clock_word_independent_root_sources_retry",
+      "kind": "Root metadata/source verification only; not a scientific calculation"
+    }
+  ],
+  "failed_root_metadata_attempts": 1,
+  "complete_independent_command_receipts": [
+    "local_clock_word_independent/commands/clarify_draft.json",
+    "local_clock_word_independent/commands/port_domain_clarification.json",
+    "local_clock_word_independent/commands/precontrol_seal.json",
+    "local_clock_word_independent/commands/selected_exact_01.json",
+    "local_clock_word_independent/commands/source_identity.json",
+    "local_clock_word_independent/commands/write_closure.json"
+  ],
+  "limits": "Both selected scripts verify their preseals before calculation; their recorders do not pin child bytes at launch. Preseal/code/recorded-stream identities are preserved, not retroactively upgraded. Independent precontrol proof pin maps to the preserved a806 body, not the clarified current body. Root outer recorders do pin executed_source.py. Scientific runs are two successes; failed 54-versus-55 member expectation is metadata only."
+}

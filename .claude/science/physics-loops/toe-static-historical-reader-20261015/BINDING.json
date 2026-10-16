@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-15T09:21:09.477563+00:00",
+  "stage": "root_bound_source_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-static-historical-reader-20261015",
+  "observed_base_head": "9054ebdc341b7fb593e38dab3880eddcd20354f7",
+  "observed_base_tree": "3689f9d7372d0ecd1e5be835e20d931c38353fef",
+  "base_branch": "physics-loop/toe-local-driven-readers-20261015",
+  "base_pr": 9595,
+  "feature_head": "9054ebdc341b7fb593e38dab3880eddcd20354f7",
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "publication_pr": null,
+  "base_is_mathematical_dependency": false,
+  "root_runtime_freshness_and_stack_binding_pending": false,
+  "feature_branch_created_by_this_builder": false,
+  "actual_feature_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/static_reader/FEATURE_BINDING.json",
+    "bytes": 1399,
+    "sha256": "2798f940ab0f7fe1cdbfcf991199540ea7c9e487023448ffecfd532e72a20ddf"
+  },
+  "actual_root_input": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/static_reader/ACTUAL_BINDING_INPUT.json",
+    "bytes": 15791,
+    "sha256": "dfc28a5ff98ed99c7d69b0003377aaa294ebe94cf3e8dfe93953243feea1dce7"
+  },
+  "canonical_sources": {
+    "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "5b035c92a858e3ae6ec6c0077441435cc39db4681708d77049b5b34277b9d519",
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+  },
+  "exact_source_clauses": [
+    {
+      "alias": "premises/four_rail.md",
+      "canonical_path": "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 12329,
+      "end": 24737,
+      "bytes": 12408,
+      "sha256": "2c95a969f8d8f40f4190ece9f25d811c7e204a4f68de722f3fe393265b2c8115",
+      "role": "Exposed four-rail primitive extended and rederived here; its six-site endpoint theorem is not composed as a black box"
+    },
+    {
+      "alias": "premises/compact_counterexample.md",
+      "canonical_path": "docs/LOCAL_ENTANGLING_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 24800,
+      "end": 46092,
+      "bytes": 21292,
+      "sha256": "6085f0118c8eb7fdac3b757f686f00e3abde4b48ea1ac6883fc42d954c42a543",
+      "role": "Counterexample/context only: compact empty-cell BC disturbance; no compact-cell reader theorem imported"
+    },
+    {
+      "alias": "premises/shared_head_method.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "role": "Attribution for global shared-head compression/gauge/bare-input method; current response, residence and all costs are rederived"
+    },
+    {
+      "alias": "premises/positive_lift_method.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "role": "Attribution for full-space operator-valued positive lift and bare-map method; no one-cell endpoint composition"
+    }
+  ],
+  "conditional_acceptances": {
+    "local_clock_autonomous_reader_root_review/ACCEPTANCE.md": "2bc76aea5d586a054a3797e59aaacfe6d6187a6e72e8705ff9a569cbca6d909d"
+  },
+  "complete_proofs": 1,
+  "archived_original_aliases": 191,
+  "archived_unique_objects": 112,
+  "archived_scientific_attempts": 1,
+  "archived_failed_scientific_attempts": 0,
+  "archived_metadata_attempts": 10,
+  "archived_failed_metadata_attempts": 1,
+  "new_scientific_programs_run": 0,
+  "reset_theorem_imported": false,
+  "finite_reservoir_imported": false,
+  "unchanged_boundary_clock_retained": false,
+  "scope": "Replacement static historical-input coherent premeasurement; supplied resources and all physical limitations remain conditional."
+}

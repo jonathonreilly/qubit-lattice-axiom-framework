@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/finite_local_clock_word_windows_2026_10_15.py
+runner_sha256: c8ee915c7a7644908f209882b8f0620cf1e4eec4f8bcefda76d4b29693a790b0
+input_fingerprint_sha256: 91564765dda704abce389f54169277733e0fd87909a486fa8a204409576cf892
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"archived_receipts": {"failed_root_metadata_attempts": 1, "failed_scientific_attempts": 0, "replayed": false, "root_metadata_attempts": 7, "scientific_attempts": 3}, "complete_proofs": 3, "dated_canonical_source_binding_complete": true, "decoded_originals": 193, "limits": "Dated actual word/cell body binding is separate from later PR status. Three distinct conditional windows, supplied preparation/vacancies and a conditional reader comparison; no concrete reader, native supply or retained audit. Source hashes are not proof.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Bytes, complete intervals and actual historical stream provenance only; no mathematical predicate executed."}
+per_element: arbitrary old input/reference; supplied one-head entry and full time-indexed output
+per_site: distinct negative m5 rays versus positive occupied-chain endpoint; actual vacancies required
+per_mode: one-excitation prepared maps separated from full-space apparatus bounds
+per_block: three signs/times/entry conventions retained; strict gap belongs only to positive apparatus
+lattice_wide: growing resources and supplied reader interface; no concrete reader, stop or native realization
+
+----- stderr -----
+

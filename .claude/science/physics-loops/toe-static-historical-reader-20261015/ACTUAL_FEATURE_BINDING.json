@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-15T09:21:08.565036+00:00",
+  "binding_complete": true,
+  "predecessor_milestone": "driven_reader",
+  "branch": "physics-loop/toe-static-historical-reader-20261015",
+  "source_head": "9054ebdc341b7fb593e38dab3880eddcd20354f7",
+  "source_tree": "3689f9d7372d0ecd1e5be835e20d931c38353fef",
+  "base_branch": "physics-loop/toe-local-driven-readers-20261015",
+  "base_pr": 9595,
+  "actual_input": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/static_reader/ACTUAL_BINDING_INPUT.json",
+    "bytes": 15791,
+    "sha256": "dfc28a5ff98ed99c7d69b0003377aaa294ebe94cf3e8dfe93953243feea1dce7"
+  },
+  "source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/static_reader/INTEGRATION_SOURCE_REVIEW.json",
+    "bytes": 6939,
+    "sha256": "be74e2d7f3ed8d2a020945ba627f08c6d5a6a35137c28948f6fd94aa1fe377b4"
+  },
+  "binding_evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/static_reader/BINDING_EVIDENCE.json",
+    "bytes": 29558,
+    "sha256": "9dd490e14d9cc27b934651aa21b0d5681263e242cc386db0ec04658978b4bc6b"
+  },
+  "feature_created_by_this_program": false,
+  "science_merged": false,
+  "new_mathematical_import_from_stack": false
+}

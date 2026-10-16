@@ -1,0 +1,111 @@
+{
+  "utc": "2026-10-15T04:55:16.597830+00:00",
+  "completed": true,
+  "scientific_programs_run": 0,
+  "review_scope": "Root read the complete accepted de69/6d45 proofs, their necessary ca1/43de premises, full selected-control code/actual streams and source-exposed assessments at their previously accepted exact identities. Reuse is confined to those unchanged contracts. Root read all thirteen current offline integration drafts, their complete current diffs, the exact shared common.py, full framing and actual source-generation/inspection/freeze receipts and streams. Both frozen draft closures and source-map identities were verified mechanically. The historical integration generator is preserved and identity-checked, not claimed as a new full-body review. Complete root-authored source/prose derivatives, the seven-case source-checker mutation program and this finalizer were reviewed. The original proofs and scientific controls were not edited or rerun. Original root revisions and full diffs are preserved; earlier metadata-display truncation was resolved for required current code, evidence and framing, not represented as manual inspection of every bulk metadata value. No optional numerical four-rail word, window or reader is imported. Publication body is prepared for the guarded post-verification submission; it is not an assertion that pending execution already occurred. Source review is conditional support, not independent retained audit or native realization.",
+  "reviewed_files": {
+    "word_common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/word_common.py",
+      "bytes": 4213,
+      "sha256": "b43ca561ba15b876e9778f4bb03e69e1caa51ab39cb4e2bb508c7fab319b0103"
+    },
+    "bind_word_branch.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/bind_word_branch.py",
+      "bytes": 977,
+      "sha256": "5463fe56d5611ab4016a2924336fe9e3ad3f57649e73b0c5ab4c52c342af1c97"
+    },
+    "build_word_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/build_word_source.py",
+      "bytes": 7300,
+      "sha256": "3e5df32c179c64e7dc85d61da3990919c75018a40833d76b485d54fbf0d8c698"
+    },
+    "word_primary.template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/word_primary.template.py",
+      "bytes": 10050,
+      "sha256": "36e550bef36fe34144d9550a521e116cb583a1b2c248e67d4469ccfa3d2b0d8e"
+    },
+    "install_word.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/install_word.py",
+      "bytes": 4362,
+      "sha256": "c5d3b9c96fde7091aa285608e1fc886df68e6cdd37a11c4185ba5ffaeb2f0b8e"
+    },
+    "execute_word_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/execute_word_cache.py",
+      "bytes": 1981,
+      "sha256": "69c75dd6060159d356886ea39546a65e534c3ac5e33028203faa983cdf5ea0c9"
+    },
+    "check_word_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_word_graph.py",
+      "bytes": 1689,
+      "sha256": "af083ca15e719f30918264150dfaf035624c9f6f114b7acf1ccc51f05ef90fb6"
+    },
+    "write_word_publication_text.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/write_word_publication_text.py",
+      "bytes": 10838,
+      "sha256": "fa231c59f947c6f8e743a1dc636138f3628b844979d99c87b2ed5a555a265264"
+    },
+    "package_word.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/package_word.py",
+      "bytes": 4947,
+      "sha256": "13a9473d235995b68e609e614b538dd1b726c3c943068d658c58e9a26b31d3bb"
+    },
+    "verify_word_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/verify_word_publication.py",
+      "bytes": 7928,
+      "sha256": "bc02c7b02bf7734b4074542b45364a5dc382ed9f77482daca530ef8a980be93f"
+    },
+    "publish_word.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/publish_word.py",
+      "bytes": 2924,
+      "sha256": "7f456e3f47b7fcd26004d00a5246ab92f953b06718e22f2a1053a4bb87889757"
+    },
+    "WORD_FRAMING.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/WORD_FRAMING.md",
+      "bytes": 18365,
+      "sha256": "a5c60d0269b8d437629c3f3c12a9a72e6eba3338ea55a2494cfede74643ec39b"
+    },
+    "WORD_PR_BODY.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/WORD_PR_BODY.md",
+      "bytes": 3294,
+      "sha256": "4adb8cbb5379c4a53c84471a5808907faffb82892aef2f7e6d17e199849697b2"
+    },
+    "common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+    }
+  },
+  "reviewed_auxiliary_files": {
+    "prepare_word_root.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/prepare_word_root.py",
+      "bytes": 6384,
+      "sha256": "5934659d4256f24eee459684a6459e537fc05542c70f17aaab5168287402cea1"
+    },
+    "check_word_primary_mutations.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_word_primary_mutations.py",
+      "bytes": 5419,
+      "sha256": "6595b0ea1ae18ac1cfe3403daf6964455c0669a524ceb51be772610892578d97"
+    },
+    "finalize_word_review.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finalize_word_review.py",
+      "bytes": 3806,
+      "sha256": "960b08036c33cb15f7b9bb7949c1ec64c1036300864460ad902b4aede01c35ee"
+    }
+  },
+  "root_derivatives": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/word/source_deltas/ROOT_DERIVATIVES.json",
+    "bytes": 7774,
+    "sha256": "bf92e2f66f6089923808ed1770175fcfb795014d12a8699721002121fa9c9a32"
+  },
+  "original_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_word_publication_draft/FINAL_FREEZE.json",
+    "bytes": 31193,
+    "sha256": "96447ca22d9f7aa0112c920dded856d63ee061e8557c27e6c7620e52b366db79"
+  },
+  "integration_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_word_integration_draft/FINAL_FREEZE.json",
+    "bytes": 13620,
+    "sha256": "0e838a5fea6cca6389bb59adc812f909857a0760b939aae16914921156aa565a"
+  },
+  "editable_prompt_files_changed": []
+}

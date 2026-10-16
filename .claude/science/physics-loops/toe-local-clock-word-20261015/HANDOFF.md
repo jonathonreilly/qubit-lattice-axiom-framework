@@ -1,0 +1,9 @@
+# Ordered-word handoff
+
+At 2026-10-15T04:58:27.058180+00:00, conditional word proofs de69e182 and6d45cddc are packaged unchanged on physics-loop/toe-local-clock-word-20261015, base PR9588/0393ca788f8bf87f9201e3f3dab911da9de162e7, tree0b053f782429a021023ca7e6c78d7b55c17521b8. The one canonical mathematical parent is the checked single-Pauli note1c14b9c2. The coherent stack includes that unmerged parent; this constituent is not a standalone landing candidate.
+
+The root contract uses14fresh sites/19ordinary edges and all six old-site neighbours. The independent contract uses11/16, five neighbours and leaves+x unused. Preserve their different signs, phases, scalar padding, apparatus gap/norm and complete old/reference targets. Compatible vacancies, one-head preparation, arbitrary installedK, increasing coefficients and timing are supplied. No window, reader, arbitrary packing, common-cap, native preparation or retained claim is imported.
+
+Actual source-only primary and seven provenance rejection tests completed, with zero new mathematical execution. All prior graph objects and roots were preserved. REVIEW_HISTORY.md gives the twelve-section source assessment; FINAL_VERIFICATION.json supplies the later focused execution/staging outcomes. PUBLICATION_EVIDENCE.json reconstructs original drafts and procedural records. Historical scientific failure count is zero; one root member-count metadata failure and its correction remain preserved.
+
+Next research may examine finite holding intervals and physical reader interfaces against this exact contract. Before landing, perform the complete cumulative current-main review and shared validation; retain independent audit ownership. No science merge or main push. The current campaign recovery checkpoint remains in the dedicated checkpoint checkout. Editable prompt files changed:none.

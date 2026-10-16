@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/static_historical_pauli_reader_2026_10_15.py
+runner_sha256: e6e64bf10738a2de3ba2ba2445e17bfc67e4578561214a2404923fbf4f16156f
+input_fingerprint_sha256: 7db6ccccd1f3a6b1f6a605e79f14c86ef410d8824edd025ba590fd7a82eff733
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"archived_attempts_not_replayed": {"failed_metadata_attempts_preserved": 1, "historical_limit": "Original scientific child launch identity is not retroactively strengthened.", "metadata_attempts_preserved": 10, "scientific_attempts_executed": 0, "scientific_attempts_preserved": 1}, "complete_proofs": 1, "dated_feature_binding_complete": true, "decoded_originals": 191, "limits": "Conditional replacement clock and historical coherent record. Supplied clean pointer/clock, full finite costs and actual time; no classical detector, reset, permanent memory or native realization. Dated feature binding is separate from later publication; ancestry supplies no mathematical premise.", "result": "source_identity_binding_completed", "scientific_programs_run": 0, "scope": "Literal source/interval and actual receipt identities only; zero mathematical predicates."}
+per_element: arbitrary old input/reference; supplied clean pointer and one-head clock
+per_site: occupied original chain retained; L+4n+18 eligible fresh sites and L+4n+27 selected ordinary edges
+per_mode: full-space apparatus positivity distinct from one-excitation prepared-map domain
+per_block: historical coherent pointer blocks retained; no postselection or physical outcome reader
+lattice_wide: fixed finite n and finite window; growing strengths, scalar and energy costs, no efficient/native closure
+
+----- stderr -----
+

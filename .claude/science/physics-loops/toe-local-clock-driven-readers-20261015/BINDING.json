@@ -1,0 +1,256 @@
+{
+  "utc": "2026-10-15T08:43:35.836296+00:00",
+  "stage": "root_bound_review_milestone",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-driven-readers-20261015",
+  "observed_base_head": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+  "observed_base_tree": "85b386b89e07473d55096c70b0eb9e15e81d94f5",
+  "base_branch": "physics-loop/toe-local-clock-windows-20261015",
+  "base_pr": 9593,
+  "ancestry_alone_supplies_mathematical_premise": false,
+  "main_observation": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "instruction_observation": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "feature_branch_created_by_this_builder": false,
+  "feature_head": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+  "source_head": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+  "publication_pr": null,
+  "root_runtime_freshness_and_feature_binding_pending": false,
+  "canonical_sources": {
+    "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 80595,
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a"
+    },
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 66890,
+      "sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea"
+    },
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "bytes": 52484,
+      "sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+    }
+  },
+  "mathematical_canonical_parents": {
+    "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+    "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256"
+  },
+  "methodological_attribution_only": {},
+  "optional_four_rail_word_instance_adopted": false,
+  "exact_source_clauses": [
+    {
+      "alias": "premises/root_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18674,
+      "end": 33077,
+      "bytes": 14403,
+      "sha256": "fc63ea1ed84f9e61f2ad0fc96ce33bdcff5779a9c0e38fa7c73d02f6a829cefc",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: negative m5 full-reference residence estimate and time convention"
+    },
+    {
+      "alias": "premises/independent_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 33181,
+      "end": 62080,
+      "bytes": 28899,
+      "sha256": "101d7778f3aaecbdb2db277c2d9857eee53cc7fae93941e444fe03d939ff36e9",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Preserved contextual clause of the dated window parent; its different ray/time/reader domain is not substituted"
+    },
+    {
+      "alias": "premises/boundary_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 62134,
+      "end": 80595,
+      "bytes": 18461,
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: positive m2 occupied-chain geometry, right entry, apparatus gap/norm and window"
+    },
+    {
+      "alias": "premises/root_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct underlying negative-word geometry and bare-input comparison"
+    },
+    {
+      "alias": "premises/independent_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct positive shared-head word and full-space lift clauses"
+    },
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct literal scalar-port cell underlying the negative m5 reader"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct positive-cell inverse/response, reversed entry and full-space bounds"
+    }
+  ],
+  "parent_clauses": [
+    {
+      "alias": "premises/root_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18674,
+      "end": 33077,
+      "bytes": 14403,
+      "sha256": "fc63ea1ed84f9e61f2ad0fc96ce33bdcff5779a9c0e38fa7c73d02f6a829cefc",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: negative m5 full-reference residence estimate and time convention"
+    },
+    {
+      "alias": "premises/independent_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 33181,
+      "end": 62080,
+      "bytes": 28899,
+      "sha256": "101d7778f3aaecbdb2db277c2d9857eee53cc7fae93941e444fe03d939ff36e9",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Preserved contextual clause of the dated window parent; its different ray/time/reader domain is not substituted"
+    },
+    {
+      "alias": "premises/boundary_window.md",
+      "canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 62134,
+      "end": 80595,
+      "bytes": 18461,
+      "sha256": "b3b6cb24b1f89396921fdcae7aea2394b4d4d7338bda0d1e1877a1a997a78be1",
+      "canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+      "role": "Direct: positive m2 occupied-chain geometry, right entry, apparatus gap/norm and window"
+    },
+    {
+      "alias": "premises/root_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct underlying negative-word geometry and bare-input comparison"
+    },
+    {
+      "alias": "premises/independent_word.md",
+      "canonical_path": "docs/ORDERED_LOCAL_CLOCK_WORD_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a",
+      "canonical_sha256": "6a0274bd8a5fd7e2367268d973e7ac50ba38b9e12d3cbfbc8652486d900b5aea",
+      "role": "Direct positive shared-head word and full-space lift clauses"
+    },
+    {
+      "alias": "premises/root_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 14202,
+      "end": 25142,
+      "bytes": 10940,
+      "sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct literal scalar-port cell underlying the negative m5 reader"
+    },
+    {
+      "alias": "premises/independent_cell.md",
+      "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start": 25189,
+      "end": 52484,
+      "bytes": 27295,
+      "sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5",
+      "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+      "role": "Direct positive-cell inverse/response, reversed entry and full-space bounds"
+    }
+  ],
+  "publication_binding_complete": true,
+  "historical_offline_binding_snapshot": "2026-10-15T07:50:58.592556+00:00",
+  "windows_canonical_path": "docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "windows_canonical_sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a",
+  "windows_canonical_intervals": {
+    "premises/root_window.md": [
+      18674,
+      33077
+    ],
+    "premises/independent_window.md": [
+      33181,
+      62080
+    ],
+    "premises/boundary_window.md": [
+      62134,
+      80595
+    ]
+  },
+  "windows_publication": {
+    "utc": "2026-10-15T07:42:55.965923+00:00",
+    "baseRefName": "physics-loop/toe-local-clock-word-20261015",
+    "headRefName": "physics-loop/toe-local-clock-windows-20261015",
+    "headRefOid": "f79cf5d36e69b78d3dcc878e2d249ad597155d1c",
+    "isDraft": false,
+    "number": 9593,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9593",
+    "tree": "85b386b89e07473d55096c70b0eb9e15e81d94f5",
+    "base_head": "88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe",
+    "commit": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/window/COMMIT.json",
+      "bytes": 586,
+      "sha256": "c212cb345fd485b1f54816fe5d3635cd2d1b57240fdbde27cf1d9f630b7f0eaa"
+    },
+    "body": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/WINDOW_PR_BODY.md",
+      "bytes": 2979,
+      "sha256": "7d850e192ac71bbdb5fb49154c7ca9dc771e6a117c193688bec1854e87ebbf03"
+    },
+    "source_note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 80595,
+      "sha256": "bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_local_clock_word_windows_2026_10_15.py",
+      "bytes": 29967,
+      "sha256": "c8ee915c7a7644908f209882b8f0620cf1e4eec4f8bcefda76d4b29693a790b0"
+    },
+    "staged_verification": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/window/STAGED_VERIFICATION.json",
+      "bytes": 335649,
+      "sha256": "85619cab7ee914737b7aee52a58d08004073633f9be930c79b6007413be46ad7"
+    },
+    "science_merged": false,
+    "main_pushed": false,
+    "retained_audit_applied": false,
+    "editable_prompt_files_changed": [],
+    "attachment_status": "Calling chat must attach created URL next."
+  },
+  "conditional_acceptances": {
+    "local_clock_physical_reader_root_review/ACCEPTANCE.md": "406dee0a10515f717b2f5741f926714621a79b3ebc5881b6fd19cb6401b506ee",
+    "local_clock_old_transit_reader_root_review/ACCEPTANCE.md": "5ba2f6941dc6310054b4d7c99247ff65c94dbedf950e3128c563f12d5e433b6b",
+    "local_clock_boundary_reader_root_review/ACCEPTANCE.md": "5c671d4ee02e48ffb57976a83f4c1cec57f3635fcb793182e181f1f3cc9bc8f0"
+  },
+  "new_scientific_programs_run": 0,
+  "archived_selected_fixtures": 3,
+  "archived_scientific_attempts": 3,
+  "archived_successful_attempts": 3,
+  "archived_failed_attempts": 0,
+  "archived_failed_root_metadata_attempts": 1,
+  "archived_root_metadata_attempts": 6,
+  "scope": "Three conditional driven coherent readers preserve distinct full-drift, local-drift and sharpened commutator domains and costs. Static readers, reset and autonomous suppliers are excluded. The dated feature/source binding is recorded; actual publication and independent retained audit remain separate."
+}

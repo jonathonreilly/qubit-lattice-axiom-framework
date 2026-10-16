@@ -1,0 +1,9 @@
+# Finite-window publication handoff
+
+At 2026-10-15T07:41:43.764522+00:00, exact accepted fc63ea1e/101d7778/b3b6cb24 bodies are packaged on physics-loop/toe-local-clock-windows-20261015, base PR9590/88a5ecbe090fefdacc7a13b6a0243aa2c0cc71fe, tree9669328d461a451696d83f68010e62aeb5da2be1. Two mathematical canonical parents are word6a0274bd and cell1c14b9c2, with four complete unique premise clauses. Reconstruct the coherent unmerged stack; no source merge or current-main adoption occurred.
+
+Preserve all three timing/sign/geometry/entry conventions. Output is the completed word followed by K at the actual time, with clock/mediators/reference retained. Only the positive boundary example retains the occupied old +x bond and has the stated strict added-apparatus gap. Every site, joint one-head input, coefficient, calibration, energy origin and any reader remain supplied. The independent finite-reader comparison is conditional and acts as identity on all heads/mediators. No concrete reader, permanent record, native supply or retained result is imported.
+
+Actual source-only cache, seven integrity rejections and graph preservation completed. They execute zero mathematical predicates. Three earlier scientific controls and all original failure/provenance histories are preserved without replay. REVIEW_HISTORY.md gives twelve-section conformance; FINAL_VERIFICATION.json records the later focused completion. PUBLICATION_EVIDENCE.json reconstructs all166 original draft files, current source derivatives and real execution streams.
+
+Next research consumer: finite-duration coherent premeasurement and physical reader backaction. Before landing, root must perform cumulative current-main validation and independent audit handoff. This static handoff is not the operational campaign checkpoint. Editable prompt files changed: none.

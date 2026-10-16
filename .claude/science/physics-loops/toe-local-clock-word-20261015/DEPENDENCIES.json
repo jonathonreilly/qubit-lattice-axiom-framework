@@ -1,0 +1,63 @@
+{
+  "mathematical_parent": {
+    "claim_id": "local_pauli_clock_cell_bounded_theorem_note_2026-10-15",
+    "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+    "complete_clauses": [
+      {
+        "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+        "raw_alias": "premises/root_cell.md",
+        "raw_interval": [
+          14202,
+          25142
+        ],
+        "raw_sha256": "ca1cd46526063dab73e3d82afb99bce6bef1a903174f46134ceeeb854106d8d6"
+      },
+      {
+        "canonical_path": "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "canonical_sha256": "1c14b9c27553d9ca4efc6103f2b4d4c76152bf94e64b40e416b28331dc2c4256",
+        "raw_alias": "premises/independent_cell.md",
+        "raw_interval": [
+          25189,
+          52484
+        ],
+        "raw_sha256": "43de02b9feab4d9127533401074cdb018b16da14ef1d57828e7d1989fc5becb5"
+      }
+    ],
+    "roles": [
+      "Root silent cell literal response for concrete single-Pauli specialization",
+      "Independent positive-cell algebra and full-space lift for compatible word construction"
+    ]
+  },
+  "canonical_markdown_targets": [
+    "docs/LOCAL_PAULI_CLOCK_CELL_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+  ],
+  "parent_publication_receipt_alias": "mathematical_parent_publication/PUBLICATION.json",
+  "publication_metadata_limit": "The receipt records the mathematical parent publication only; no present word stack base is inferred and referenced integration logs are not claimed reviewed by this draft.",
+  "procedural_template": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_entangling_clock_publication_draft",
+    "freeze_sha256": "ff5733effcea599f588a59b358325dd30625b12e679dee6f183c938a5115573a",
+    "theorem_import": false
+  },
+  "graph_status": "Expected sole single-Pauli citation edge; actual graph verification is a separate dated operation.",
+  "publication_binding": {
+    "binding_complete": true,
+    "base_branch": "physics-loop/toe-local-entangling-clock-cell-20261015",
+    "base_head": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+    "base_tree": "0b053f782429a021023ca7e6c78d7b55c17521b8",
+    "base_pr": 9588,
+    "feature_head": "0393ca788f8bf87f9201e3f3dab911da9de162e7",
+    "publication_pr": null
+  },
+  "excluded_science": [
+    "Optional four-rail numerical word instance",
+    "Compact idle-disturbing cell as silent word component",
+    "Window or physical-reader theorem",
+    "Entangler publication ancestry as an imported result"
+  ],
+  "root_source_acceptances": {
+    "local_clock_word_root_review/ACCEPTANCE.md": "654d2a2d6c5846ba63b38457dbac6eef5872c78dc9087136b7e785c209e29c94",
+    "local_clock_word_independent_root_review/ACCEPTANCE.md": "a3908a5fec53c806cdc7479c115977d2c67f56cd1b64e3dca6035405a856c0fb"
+  }
+}

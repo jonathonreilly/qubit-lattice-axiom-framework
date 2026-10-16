@@ -1,0 +1,18 @@
+{
+  "complete_proofs": [
+    {
+      "alias": "local_clock_word_candidate/DERIVATION.md",
+      "start": 18448,
+      "end": 36172,
+      "bytes": 17724,
+      "sha256": "de69e1821cb31a38e71998f116c881c177d498e6e8f373f62d4d2e31c68fb2dd"
+    },
+    {
+      "alias": "local_clock_word_independent/DERIVATION.md",
+      "start": 36233,
+      "end": 66890,
+      "bytes": 30657,
+      "sha256": "6d45cddc031e90e3667cb7de790d1f53c0b74687232023bf2e28307f8c428e0a"
+    }
+  ]
+}

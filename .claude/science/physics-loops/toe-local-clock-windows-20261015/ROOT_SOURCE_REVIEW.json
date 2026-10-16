@@ -1,0 +1,115 @@
+{
+  "completed": true,
+  "utc": "2026-10-15T07:37:12.628316+00:00",
+  "scientific_programs_run": 0,
+  "review_scope": "Root read all fifteen complete final proposed code/prose files at their final pins, plus the complete guide/report/binding/body-map/coverage/failure/refinement records, delivered-packet verifier and source recorder, and all eight actual source-attempt receipts/full stdout/stderr. All three complete accepted proof bodies and necessary word/cell premises retain earlier complete analytic and selected-control coverage at unchanged hashes. The final current programs were read in full; prior full word program coverage is reused. Nineteen textual diffs/maps are preserved as navigation, not claimed as a separate new manual read of every duplicate delta. Historical source-generation programs are retained/identity-checked as provenance, not newly claimed executable mathematical evidence. Read-only source closure checked all310 freeze members, full166-file offline recovery,192 decoded aliases,3 proofs and4 unique canonical clauses. Root reviewed this preparer and explicit-cwd graph launcher before execution. No new mathematics, retained audit, physical supply or cumulative landing verification is asserted.",
+  "reviewed_files": {
+    "WINDOW_FRAMING.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/WINDOW_FRAMING.md",
+      "bytes": 18608,
+      "sha256": "9c24fea1a5a8501583b3bb4e4e21d45f8fc1656cc026e53c46d26c8af1b3bb38"
+    },
+    "WINDOW_PR_BODY.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/WINDOW_PR_BODY.md",
+      "bytes": 2979,
+      "sha256": "7d850e192ac71bbdb5fb49154c7ca9dc771e6a117c193688bec1854e87ebbf03"
+    },
+    "bind_window_branch.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/bind_window_branch.py",
+      "bytes": 987,
+      "sha256": "662513ab548e53e1e68b3926278885b9160bea13d253b74bb11819788e74b37b"
+    },
+    "build_window_source.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/build_window_source.py",
+      "bytes": 8181,
+      "sha256": "a9fd037ee9a282b93020bac74350105ed14c8fa7f454df1706c57e4081449490"
+    },
+    "check_window_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_window_graph.py",
+      "bytes": 1705,
+      "sha256": "054f5cd8945fce1e83ee11f9bad0a80a37c93b9400f180b7e9321851fc7880a5"
+    },
+    "check_window_primary_mutations.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_window_primary_mutations.py",
+      "bytes": 5457,
+      "sha256": "8fe35515f082a82f932c75ee2d3012338e231f39ade76cad2d5041e976bf879e"
+    },
+    "common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+      "bytes": 3127,
+      "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+    },
+    "execute_window_cache.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/execute_window_cache.py",
+      "bytes": 1814,
+      "sha256": "70612d4892ab6638a0704564be7cde10c58de1c752826862e027e9dcdba04ba9"
+    },
+    "install_window.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/install_window.py",
+      "bytes": 4368,
+      "sha256": "acf1205d4d8fd02d3cd58dae6f39491ff37a66d3cc0737bae2e0c314da6ed27e"
+    },
+    "package_window.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/package_window.py",
+      "bytes": 4977,
+      "sha256": "a47c7e587e9603f6b8ba5ec82cbbee91f726901c336ba36a76db04a1a192d0c6"
+    },
+    "publish_window.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/publish_window.py",
+      "bytes": 2948,
+      "sha256": "de6f30a2cd63944fca7b88bef5314d689da9f988d5a014196f8e88a9030c12c3"
+    },
+    "verify_window_publication.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/verify_window_publication.py",
+      "bytes": 7708,
+      "sha256": "6cb58de90b581ad9fc36a448199408e7b0fc271c3ffc7b794642d6d56b816304"
+    },
+    "window_common.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/window_common.py",
+      "bytes": 6833,
+      "sha256": "dbf56b30d2fcfb74c36a9f58baacdfdc0aeab886b8556feff514bd305bbc8f29"
+    },
+    "window_primary.template.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/window_primary.template.py",
+      "bytes": 10967,
+      "sha256": "dd3ece06613436d6794467a08ff9fb3b2f0fae0ed72794c9cac1933a88cfed70"
+    },
+    "write_window_publication_text.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/write_window_publication_text.py",
+      "bytes": 10377,
+      "sha256": "1e0ec08418ac52d154faa420bcdc8ce1530cf6af0405788a2050814d0579fe14"
+    }
+  },
+  "reviewed_auxiliary_files": {
+    "prepare_window_root.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/prepare_window_root.py",
+      "bytes": 5123,
+      "sha256": "018f8e2d2cf2aeff97f710aa2124f6de8c20c910ae33dd35dc088d8a2fa0542f"
+    },
+    "run_window_graph.py": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/run_window_graph.py",
+      "bytes": 272,
+      "sha256": "40ce9f4020c6c45172942f5becf3ef5e26e20208b407ec148e8df3e2c880d139"
+    }
+  },
+  "actual_source_record_paths": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/window_frozen_source_check",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/window_ref_fetch_0736",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/window_prepare_root",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/window_prepare_root_retry",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/window/graph_build"
+  ],
+  "integration_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_window_integration_draft/FINAL_FREEZE.json",
+    "bytes": 61933,
+    "sha256": "073760c4693aba071e6a8a967272969e523dead6a646060a7d290d4f4e7b71b5"
+  },
+  "preserved_preparation_failure": {
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/window_prepare_root/EXECUTION.json",
+      "bytes": 1437,
+      "sha256": "3a6082eb0fd5a8968ceabd7fc9c114eb235ee397591142b6b647c6aed1b628c8"
+    },
+    "scope": "First preparation stopped before directory creation/canonical mutation on an incorrect original framing path. Corrected to observed baseline/offline/FRAMING.md; original source and full stderr preserved. No mathematical or proposed-program execution."
+  }
+}

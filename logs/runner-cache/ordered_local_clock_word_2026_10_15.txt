@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/ordered_local_clock_word_2026_10_15.py
+runner_sha256: 2f770c1f64cd140fe52b8b34dbe6b0b6ed6447069c7fe1c27ea5498439a6cb64
+input_fingerprint_sha256: 6bc0c2ab28dd3dc6b0ea7038890d6507042083db18ba5480aad8fa3f7a0adf40
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"archived_attempts_not_replayed": {"failed_root_metadata_attempts": 1, "failed_scientific_attempts": 0, "launch_limit": "Selected scientific receipts have no child launch pin; preseals and self-checking source are preserved without retroactive upgrade.", "root_metadata_attempts": 4, "scientific_attempts": 2, "scientific_fixtures": 2}, "complete_proofs": 2, "decoded_originals": 134, "limits": "Two distinct ordered-word contracts; supplied compatible geometry and one-head input, unchanged arbitrary K, complete endpoint phase/reference and costs. No optional four-rail numerical word acceptance, arbitrary packing, stop, window, native reader or retained audit. Dated source binding is separate from later PR and retained-audit status.", "result": "analytic_source_binding_completed", "scientific_programs_run": 0, "scope": "Source identity, complete intervals and recorded stream provenance only; zero mathematical execution."}
+per_element: arbitrary old input/reference; specified ordered single-Pauli gates and compatible cells
+per_site: root example 14 fresh sites/19 edges/all six neighbours; independent 11/16/five, +x unused
+per_mode: full-space apparatus arguments separated from one-excitation prepared-domain estimates
+per_block: distinct signs, endpoint phases, padding, positivity/gap and norm contracts retained
+lattice_wide: no arbitrary occupied-bulk packing, common-cap efficiency or stopped/native computation
+
+----- stderr -----
+

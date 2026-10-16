@@ -1,0 +1,36 @@
+{
+  "scope": "Bounded source comparison after an independently sealed derivation; not another blind derivation or audit",
+  "authorization": "Root explicitly authorized access after verifying the independent freeze acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5",
+  "independent_frozen_utc": "2026-10-15T17:55:14.035224+00:00",
+  "candidate_access": "Complete root candidate was first read after that authorization, in two untruncated tool outputs; no earlier open/list/hash/search of its protected directory",
+  "first_read_timestamp_precision": "No artificial exact first-open timestamp assigned; the second complete reading and clock observation returned 2026-10-15 17:56:35 UTC. Actual later metadata capture timestamps are in its receipts.",
+  "fully_read_current": [
+    "transverse_field_memory_root_candidate/DERIVATION.md",
+    "transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json",
+    "transverse_field_memory_root_candidate/SOURCE_PINS.json",
+    "transverse_field_memory_root_candidate/PRIMARY_OPEN_TOOL_RESPONSE.json",
+    "local_bias_memory_root_candidate/DERIVATION.md",
+    "local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md",
+    "conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md",
+    "conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md",
+    "local_bias_noncommuting_boundary_root_review/ACCEPTANCE.md"
+  ],
+  "reused_at_exact_unchanged_identity": [
+    "transverse_field_memory_independent/independent/DERIVATION.md",
+    "correlated_markov_memory_candidate/DERIVATION.md",
+    "correlated_markov_memory_independent/comparison/REPORT.md",
+    "rotated_gibbs_memory_root_candidate/DERIVATION.md",
+    "rotated_gibbs_memory_decisive_check/REPORT.md",
+    "local_bias_noncommuting_boundary_decisive_check/REPORT.md"
+  ],
+  "attribution_only_not_opened": [
+    "Other worker local-bias independent derivation 5f747f09",
+    "Other worker local-bias comparison 90ff1d5d"
+  ],
+  "external_literature": "Root publisher metadata/abstract attribution and actual failed open are preserved; this worker did not open the article or rely on a paper theorem",
+  "independence_limits": "Same inherited model and reasoning effort, prior shared research sources, same path-comparison strategy; independent history for the new derivation only",
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "new_agents": 0,
+  "editable_prompt_or_axiom_changes": []
+}

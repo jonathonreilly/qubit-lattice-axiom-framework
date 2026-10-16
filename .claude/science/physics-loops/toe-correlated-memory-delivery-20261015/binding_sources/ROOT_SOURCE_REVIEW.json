@@ -1,0 +1,181 @@
+{
+  "kind": "root_source_publication_review",
+  "reviewed_utc": "2026-10-15T16:55:51.498567+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/FINAL_FREEZE.json",
+    "bytes": 45949,
+    "sha256": "6ab1df30d82b0ee7abb39c2da9739a2d9745e120e565e55355838ab841e7f003"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/proposal/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 202829,
+    "sha256": "5d812f813a8d5f6b43e3c6911b2fc58dc943a2145869e14786a0d69ec928be90"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/proposal/scripts/correlated_memory_delivery_and_readiness_2026_10_15.py",
+    "bytes": 27666,
+    "sha256": "305244329f547248b061ddbed14db9985217e47de4f899cd1195b6b7768a1dda"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/wrapper.md",
+    "bytes": 27691,
+    "sha256": "88d8aae1bd0b07def238bdb5a1408f43a7bfe9ae7c46cf88952c45d9acf3c1f1"
+  },
+  "current_reading": "Complete 27,691-byte wrapper; entire primary template and structural literal/input expansion; complete build/record/inspect/seal programs; all seven packet Markdown files; outer handoff, coverage, read guide, delivery and actual two metadata receipts. Seven exact mathematical bodies and necessary accepted parent arguments reused from prior complete readings at unchanged identities.",
+  "sealed_members_verified": 179,
+  "body_pins": [
+    {
+      "name": "markov_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 27827,
+      "end_byte_exclusive": 75055,
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+    },
+    {
+      "name": "markov_pre_exposure",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 75197,
+      "end_byte_exclusive": 102777,
+      "bytes": 27580,
+      "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+    },
+    {
+      "name": "markov_comparison",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 102917,
+      "end_byte_exclusive": 134442,
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+    },
+    {
+      "name": "gibbs_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 134577,
+      "end_byte_exclusive": 147944,
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+    },
+    {
+      "name": "gibbs_assessment",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 148083,
+      "end_byte_exclusive": 174729,
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+    },
+    {
+      "name": "composition_author",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 174870,
+      "end_byte_exclusive": 182467,
+      "bytes": 7597,
+      "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+    },
+    {
+      "name": "composition_assessment",
+      "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 182612,
+      "end_byte_exclusive": 202829,
+      "bytes": 20217,
+      "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+    }
+  ],
+  "source_rows_verified": 144,
+  "parents": [
+    {
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "direct_mathematical_parent"
+    },
+    {
+      "path": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 51476,
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd",
+      "claim_id": "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "accepted_body_interval": {
+        "container": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 25736,
+        "end_byte_exclusive": 51476,
+        "bytes": 25740,
+        "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "metadata_receipts": [
+    {
+      "label": "build",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/metadata_runs/build/EXECUTION.json",
+        "bytes": 1714,
+        "sha256": "74b818d83dfb4ae40be6188b393a83bccfb3e2f2efbc0713df348ffc621c5fec"
+      },
+      "actual_start_utc": "2026-10-15T16:44:42.942660+00:00",
+      "actual_end_utc": "2026-10-15T16:44:43.126631+00:00",
+      "actual_exit_code": 0
+    },
+    {
+      "label": "inspection",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_publication_draft/metadata_runs/inspection/EXECUTION.json",
+        "bytes": 1730,
+        "sha256": "f56ddfd7e5898ba3df6daed419e04a0a5523ba82200dd767fa88d31536ba0244"
+      },
+      "actual_start_utc": "2026-10-15T16:50:09.732864+00:00",
+      "actual_end_utc": "2026-10-15T16:50:09.894158+00:00",
+      "actual_exit_code": 0
+    }
+  ],
+  "existing_source_acceptances": {
+    "markov": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/MARKOV_ACCEPTANCE.md",
+      "bytes": 5131,
+      "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d"
+    },
+    "gibbs": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/GIBBS_ACCEPTANCE.md",
+      "bytes": 4325,
+      "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632"
+    },
+    "composition": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_root_review/ACCEPTANCE.md",
+      "bytes": 4125,
+      "sha256": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "mandatory_interpretations": [
+    "Exact actual-marginal lemma and fixed ideal H0-aged readiness target are distinct; full-space turn-on pays the difference.",
+    "Preserve seven complete source bodies; accepted source statements do not imply independent retained audit.",
+    "Q is entrywise positive, not necessarily PSD; nonincreasing 0<=u<=1 switch, separately supplied diagonal channels and actual physical consumer duration are necessary.",
+    "Gibbs composition retains all records, full correlation phases, chronological K_Z then H0 aging, global diagonal calibration floor and distinct initial/final memory Hamiltonians.",
+    "Two canonical mathematical parents are joint readiness and finite memory resources; PR9609 is only Git ancestry.",
+    "No new local-bias or rotated-Gibbs candidate belongs to this milestone."
+  ],
+  "integration_requirement": "Create actual binding with present source/receipt identities; regenerate all affected body intervals, source recovery offsets, manifest and literal declarations after current framing changes; retain historical null publication state. Inspect every changed integration argument/code before execution.",
+  "scope": "Source integrity and publication reading only; no new independent mathematical replication or retained verdict.",
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "actual_binding": null,
+  "verification_limits": [
+    "Actual primary/cache/mutations/graph and source integration pending",
+    "Current-main cumulative-stack landing and strict full pipeline open",
+    "Independent retained audit open",
+    "Native source/controller, full program, energy/detector and reuse remain open"
+  ]
+}

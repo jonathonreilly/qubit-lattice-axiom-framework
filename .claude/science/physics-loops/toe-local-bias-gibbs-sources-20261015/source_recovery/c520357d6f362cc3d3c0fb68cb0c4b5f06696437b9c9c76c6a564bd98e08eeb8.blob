@@ -1,0 +1,33 @@
+"""Verify source freshness and actual metadata receipts; no scientific evaluation."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+OUT=Path(__file__).resolve().parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+checks=[]
+def check(n,c):
+ checks.append({'name':n,'passed':bool(c)})
+ if not c:raise AssertionError(n)
+def identity(row,n):
+ got=meta(Path(row['path']));check(n+' '+row['path'],got['bytes']==row['bytes'] and got['sha256']==row['sha256'])
+started=now();m=json.loads((OUT/'SOURCE_MANIFEST.json').read_text())
+for row in m['sources']:
+ identity(row['origin'],'current source/instruction');identity(row['recovery'],'saved source/instruction')
+f=json.loads((OUT/'source/PROPOSAL_FREEZE.json').read_text())
+for row in f['files']:
+ got=meta(OUT/'source'/row['path']);check('nested proposal member '+row['path'],got['bytes']==row['bytes'] and got['sha256']==row['sha256'])
+for p in OUT.glob('*.py'):
+ ast.parse(p.read_bytes());check('metadata source syntax '+p.name,True)
+run=OUT/'metadata_runs/capture';l=json.loads((run/'LAUNCH.json').read_text());e=json.loads((run/'EXECUTION.json').read_text())
+check('capture actual exit zero',e['exit_code']==0)
+check('capture UTC order',datetime.fromisoformat(l['started_utc'])<=datetime.fromisoformat(e['finished_utc']))
+for key,name in [('child','child_source.py'),('recorder','recorder_source.py')]:
+ got=meta(run/name);want=l[key];check('capture source-at-launch '+key,got['bytes']==want['bytes'] and got['sha256']==want['sha256'])
+for key in ['launch','stdout','stderr']:identity(e[key],'actual capture '+key)
+check('capture science/replay count zero',m['scientific_executions']==m['scientific_replays']==0)
+check('other candidates unread before boundary seal',m['rotated_candidate_opened'] is False and m['other_worker_local_bias_opened'] is False)
+result={'started_utc':started,'completed_utc':now(),'kind':'metadata source/receipt closure only','checks':checks,'check_count':len(checks),'report':meta(OUT/'REPORT.md'),'scientific_executions':0,'scientific_replays':0,'scope_limit':'All scientific verification is analytic; no numerical or symbolic fixture was run.'}
+(OUT/'CLOSING_METADATA.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='checks'},sort_keys=True))

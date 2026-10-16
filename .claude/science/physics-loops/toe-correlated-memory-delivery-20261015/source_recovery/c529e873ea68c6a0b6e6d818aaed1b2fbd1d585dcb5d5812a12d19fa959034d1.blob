@@ -1,0 +1,13 @@
+# Bounded Gibbs-interface assessment
+
+This record is written after the complete candidate and exposure-note reading and initial analytic reconstruction. It is not a preregistration and does not establish earlier run times. No scientific program has been executed. The source-capture and final-freeze scripts perform metadata bookkeeping only.
+
+The review target is the root's 13,367-byte DERIVATION.md at c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747 and its exact proposal freeze ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba. Complete scope includes its finite boundary terms, channel/scalar accounting, norm and likelihood bounds, correlated-state switch-off and actual ordered old aging, formal work/entropy interpretation, conditional permutation consumer, retained-marginal bound, and exclusions.
+
+The assessor authored the prior correlated-Markov-memory candidate and joint-readiness construction and has source-family exposure. This is a separate derivation/check of the root's new Gibbs interface, not a blind or independent revalidation of the downstream consumer. Neither unfinished Markov circuit nor native supplier is imported. The assessor has not read the separate Markov worker's derivation for this assessment.
+
+Analytic checks: telescope the transfer gauge and independently normalize the finite partition; invert the Pauli expansion and sum all endpoint/interior/scalar coefficients; maximize the likelihood-ratio chord bound with the event-TV convention; derive factorized evolution on arbitrary correlated input, its phases and ordered composition; derive formal work directly rather than by a temperature derivative; reconstruct the exact-marginal projection comparison. Preserve elementary narrow counterexamples. A terminology check will distinguish entrywise-positive transfer Q from positive-semidefinite Q.
+
+Primary literature is used only for context and convention checking. Read the complete literature-scope note, targeted Mei Yin abstract/section 3 passages, and Cohen–Fausti's explicit v2 definition and section 5.1 theorem/proof/convention passages. No entire-paper reading or immutable remote copy is claimed. No external instruction is executed.
+
+No numerical diagnostic is presently needed: each load-bearing finite calculation is explicit. No source edits outside this output directory, no original-candidate changes, no earlier-packet changes, no model override/delegation, and no Git/PR/audit/checkpoint/lock/prompt/axiom operations are part of this task. Generic skill landing/escalation steps do not apply to this explicitly bounded assessment.

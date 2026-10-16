@@ -1,0 +1,29 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "accepted_body_interval": {
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 28196,
+        "end_byte_exclusive": 75424,
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "accepted_review_interval": {
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103286,
+        "end_byte_exclusive": 134811,
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "older_joint_memory_geometry": "transitive through sole correlated-memory parent",
+  "local_bias_and_rotation_are_mathematical_dependencies": false,
+  "git_ancestry_is_not_mathematical_dependency": true
+}

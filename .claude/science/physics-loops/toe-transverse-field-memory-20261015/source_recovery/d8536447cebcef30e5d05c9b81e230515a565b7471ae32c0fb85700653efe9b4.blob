@@ -1,0 +1,32 @@
+"""One-time source freshness and pre-exposure freeze; no scientific execution."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent;target=D/'FINAL_FREEZE.json'
+assert not target.exists(),'Preserve the independent seal'
+started=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(path):
+    b=path.read_bytes()
+    return {'path':str(path),'relative_path':str(path.relative_to(D)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def verify(path,row):
+    b=path.read_bytes()
+    assert (len(b),hashlib.sha256(b).hexdigest())==(row['bytes'],row['sha256']),str(path)
+manifest=json.loads((D/'SOURCE_MANIFEST.json').read_text())
+for row in manifest['sources']:
+    verify(Path(row['path']),row)
+    if row.get('original'):verify(Path(row['original']),row)
+receipt=json.loads((D/'metadata_run/EXECUTION.json').read_text())
+assert receipt['exit_code']==0 and receipt['failure'] is None and receipt['scientific_execution'] is False
+for key in ['child_source_at_launch','recorder_at_launch','launch','stdout','stderr']:
+    row=receipt[key];verify(Path(row['path']),row)
+launch=json.loads((D/'metadata_run/LAUNCH.json').read_text())
+for row in launch['inputs']:
+    verify(Path(row['original']['path']),row['original']);verify(Path(row['captured']['path']),row['captured'])
+(D/'SEAL_OPERATION.json').write_text(json.dumps({'started_utc':started,'checked_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'actual in-process metadata closure and source freeze; no invented subprocess receipt','source_records_refreshed':len(manifest['sources']),'actual_metadata_subprocesses':1,'scientific_programs_run':0,'candidate_exposure':False,'external_mathematical_dependencies':[],'root_candidate_access':'none before this freeze'},indent=2)+'\n')
+files=[ident(p) for p in sorted(D.rglob('*')) if p.is_file() and p!=target]
+freeze={'frozen_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'independent analytic derivation before root-candidate access','root_candidate_exposure':False,'scientific_programs_run':0,'files':files}
+target.write_text(json.dumps(freeze,indent=2)+'\n')
+for row in files:verify(Path(row['path']),row)
+print(json.dumps({'freeze':ident(target),'members':len(files),'derivation':ident(D/'DERIVATION.md'),'metadata_receipt':ident(D/'metadata_run/EXECUTION.json')},indent=2))

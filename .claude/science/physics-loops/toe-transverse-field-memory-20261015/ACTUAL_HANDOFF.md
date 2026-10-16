@@ -1,0 +1,11 @@
+# Bound transverse-field source handoff
+
+Claim: bounded_theorem / conditional-support. The exact root, pre-exposure independent and exposed comparison bodies remain unchanged. Root's captured source-publication review and the exact PR9615/head492cf6670fdddcd6c091ef5c978d7519e9ba0b6f base are bound in ACTUAL_BINDING. PUBLICATION_STATE remains the dated, unexecuted proposal. Binding is not an execution, publication or audit verdict.
+
+The sole mathematical parent is the local-bias/readiness canonical note ef7f472b. Earlier correlated-memory and geometry machinery is transitive. The source input, strict local longitudinal margin, finite inverse temperature with positive lower bound, bounded onsite transverse strength and literal positive reserves remain supplied. The non-diagonal switch requires a full reduced Gibbs density or full reduced trace-distance promise, with arbitrary old/reference correlations allowed.
+
+Retain every output and the modeled unconditioned complementary marginal. Keep actual K_Z aging through source removal, then H0 aging through every preparation pulse/ramp and fully compensated guard. An uncompensated wait requires its actual chronological segment or separately paid residual. Compensation action is at most B_C A_u. Whole-lifetime isolation, full-space turn-on, restricted ideal-comparator release, centered/raw moment restoration, actual scalar phases, work endpoints and all finite costs remain explicit. Independently calibrated uncollected channels use S_unc; collected coefficients do not erase negative-edge channel costs.
+
+Rare-record event-TV, reference-conditioned, same-diagonal nonstationary and excluded transverse-pair witnesses remain. No native Gibbs supply, thermalization time, generic noncommuting result, common cap, restored bank, autonomous controller or retained audit is supplied. Same-model/shared-source agreement and literature-access limitations remain explicit.
+
+The separate actual receipts must establish the source-integrity primary/cache, named semantic mutations, focused compatibility, exact one-node/one-edge graph preservation, exact staging, regular publication and attachment. The primary checks source and evidence only. Root must review the complete canonicalization diff before installation. Current-main/cumulative-stack and independent retained audit gates remain separate.

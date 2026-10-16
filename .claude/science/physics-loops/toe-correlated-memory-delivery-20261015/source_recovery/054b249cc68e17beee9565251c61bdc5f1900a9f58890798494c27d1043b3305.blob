@@ -1,0 +1,14 @@
+{
+  "kind": "actual metadata-only subprocess receipt",
+  "started_utc": "2026-10-15T16:10:49.078579+00:00",
+  "finished_utc": "2026-10-15T16:10:49.119148+00:00",
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/capture_sources.py"
+  ],
+  "script_sha256": "366a8007085ba31abc3878d562da656c9ead8475cad0cb5f65f24f1cdce6af1a",
+  "returncode": 0,
+  "stdout": "capture_sources.stdout",
+  "stderr": "capture_sources.stderr",
+  "scientific_run": false
+}

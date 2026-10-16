@@ -1,0 +1,185 @@
+"""Source-only assembly and metadata verification; never execute science/primary."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+W = N.parent / "correlation_worktree"
+OUT = D / "proposal"
+PACK = ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015"
+NOTE = "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md"
+PRIMARY = "scripts/correlated_memory_delivery_and_readiness_2026_10_15.py"
+BASE = "1ac15c4a9116d14a7f1e9eec971aea7b0e750360"
+BODIES = [
+    ("markov_author", "correlated_markov_memory_candidate/DERIVATION.md", 47228, "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"),
+    ("markov_pre_exposure", "correlated_markov_memory_independent/independent/DERIVATION.md", 27580, "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"),
+    ("markov_comparison", "correlated_markov_memory_independent/comparison/REPORT.md", 31525, "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"),
+    ("gibbs_author", "local_gibbs_memory_interface_root_candidate/DERIVATION.md", 13367, "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"),
+    ("gibbs_assessment", "local_gibbs_memory_interface_decisive_check/REPORT.md", 26646, "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"),
+    ("composition_author", "gibbs_markov_composition_root_candidate/DERIVATION.md", 7597, "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"),
+    ("composition_assessment", "gibbs_markov_composition_decisive_check/REPORT.md", 20217, "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"),
+]
+PARENTS = [
+    ("docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md", 152470, "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e", "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15", "local_clock_joint_readiness_correction/DERIVATION.md", "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"),
+    ("docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md", 51476, "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd", "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15", "local_clock_biased_memory_candidate/DERIVATION.md", "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"),
+]
+FREEZES = [
+    ("correlated_markov_memory_candidate/FINAL_FREEZE.json", "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615"),
+    ("correlated_markov_memory_independent/independent/FINAL_FREEZE.json", "f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4"),
+    ("correlated_markov_memory_independent/comparison/FINAL_FREEZE.json", "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a"),
+    ("local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json", "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba"),
+    ("local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json", "4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67"),
+    ("correlated_memory_root_review/FINAL_FREEZE.json", "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677"),
+    ("gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json", "76d0700c7841420d06e218ff16e4a631d3f54e558903f25479577de62bc45312"),
+    ("gibbs_markov_composition_decisive_check/FINAL_FREEZE.json", "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6"),
+    ("gibbs_markov_composition_root_review/FINAL_FREEZE.json", "fbd981bcdfd03a017036a3b2de361586a9441136fdff2c6666c408bb06af47f2"),
+]
+ACCEPTANCES = {
+    "markov": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d",
+    "gibbs": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632",
+    "composition": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71",
+}
+
+def sha(b): return hashlib.sha256(b).hexdigest()
+def dump(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2) + "\n")
+def write(rel, data):
+    path=OUT/rel; path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(data if isinstance(data,bytes) else data.encode())
+def checked(path, expected=None, size=None):
+    data=path.read_bytes()
+    if expected is not None: assert sha(data)==expected, str(path)
+    if size is not None: assert len(data)==size, str(path)
+    return data
+
+if (D/"FINAL_FREEZE.json").exists():
+    raise RuntimeError("Frozen proposal must not be rebuilt in place")
+now=datetime.datetime.now(datetime.timezone.utc).isoformat()
+wrapper=(D/"wrapper.md").read_bytes()
+note=wrapper
+body_map=[]
+sources=[]
+recovery_by_sha={}
+freshness=[]
+for name,rel,size,digest in BODIES:
+    data=checked(N/rel,digest,size)
+    note += ("\n\n---\n\n## Immutable source body: "+name+"\n\nHistorical source retained exactly; current status and interpretation are given above.\n\n").encode()
+    start=len(note); note+=data; end=len(note)
+    row={"name":name,"container":NOTE,"start_byte_inclusive":start,"end_byte_exclusive":end,"bytes":size,"sha256":digest}
+    body_map.append(row)
+    recovery={"kind":"body_interval","body_name":name,"container":NOTE,"start_byte_inclusive":start,"end_byte_exclusive":end}
+    recovery_by_sha[digest]=recovery
+    sources.append({"source":"campaign/"+rel,"role":"immutable_proof_or_review_body","bytes":size,"sha256":digest,"recovery":recovery})
+    freshness.append({"original":str(N/rel),"bytes":size,"sha256":digest})
+write(NOTE,note)
+for row in body_map:
+    raw=note[row["start_byte_inclusive"]:row["end_byte_exclusive"]]
+    assert sha(raw)==row["sha256"] and note.count(raw)==1
+
+dependencies=[]
+for rel,size,digest,claim,rawrel,rawsha in PARENTS:
+    data=checked(W/rel,digest,size)
+    raw=checked(N/rawrel,rawsha)
+    assert data.count(raw)==1
+    start=data.index(raw)
+    interval={"container":rel,"start_byte_inclusive":start,"end_byte_exclusive":start+len(raw),"bytes":len(raw),"sha256":rawsha}
+    dependencies.append({"path":rel,"bytes":size,"sha256":digest,"claim_id":claim,"accepted_raw_source_sha256":rawsha,"accepted_body_interval":interval,"role":"direct_mathematical_parent"})
+    recovery_by_sha[digest]={"kind":"external_pinned","path":rel}
+    recovery_by_sha[rawsha]={"kind":"external_body_interval",**interval}
+    sources.append({"source":"repository/"+rel,"role":"direct_mathematical_parent","bytes":size,"sha256":digest,"recovery":recovery_by_sha[digest]})
+    sources.append({"source":"campaign/"+rawrel,"role":"parent_accepted_body","bytes":len(raw),"sha256":rawsha,"recovery":recovery_by_sha[rawsha]})
+    freshness.append({"original":str(W/rel),"bytes":size,"sha256":digest})
+
+objects={}
+def archive(path,role):
+    data=path.read_bytes(); digest=sha(data)
+    try: label="campaign/"+str(path.relative_to(N))
+    except ValueError: label="repository/"+str(path.relative_to(W))
+    recovery=recovery_by_sha.get(digest)
+    if recovery is None:
+        rel=PACK+"/source_recovery/"+digest+".blob"
+        write(rel,data)
+        recovery={"kind":"blob","path":rel}
+        recovery_by_sha[digest]=recovery
+        objects[digest]={"path":rel,"bytes":len(data),"sha256":digest,"aliases":[]}
+    if digest in objects: objects[digest]["aliases"].append(label)
+    sources.append({"source":label,"role":role,"bytes":len(data),"sha256":digest,"recovery":recovery})
+    freshness.append({"original":str(path),"bytes":len(data),"sha256":digest})
+
+freeze_checks=[]
+frozen_member_records=[]
+for rel,digest in FREEZES:
+    path=N/rel; payload=json.loads(checked(path,digest))
+    members=payload.get("files",payload.get("members"))
+    assert isinstance(members,list)
+    for row in members:
+        p=Path(row["path"])
+        if not p.is_absolute(): p=path.parent/p
+        checked(p,row["sha256"],row["bytes"])
+        frozen_member_records.append({"freeze":"campaign/"+rel,"original":str(p),"bytes":row["bytes"],"sha256":row["sha256"]})
+    freeze_checks.append({"source":"campaign/"+rel,"sha256":digest,"members_verified":len(members)})
+
+roots=[N/rel for rel in ["correlated_markov_memory_candidate","correlated_markov_memory_independent/independent","correlated_markov_memory_independent/comparison","local_gibbs_memory_interface_root_candidate","local_gibbs_memory_interface_decisive_check","correlated_memory_root_review","gibbs_markov_composition_root_candidate","gibbs_markov_composition_decisive_check","gibbs_markov_composition_root_review"]]
+selected={p for root in roots for p in root.iterdir() if p.is_file()}
+for rel in ["correlated_markov_memory_candidate/draft_snapshot","correlated_markov_memory_independent/independent/metadata_runs","correlated_markov_memory_independent/comparison/metadata_runs","runs/correlated_memory_root_acceptance_1628","gibbs_markov_composition_decisive_check/metadata_runs","runs/gibbs_markov_composition_root_acceptance_1640"]:
+    selected.update(p for p in (N/rel).rglob("*") if p.is_file())
+selected.update(N/rel for rel in ["joint_readiness_root_review/ACCEPTANCE.md","local_clock_biased_memory_root_review/ACCEPTANCE.md"])
+selected.add(N/"main_refresh_1622/REFS.json")
+selected.add(N/"run.py")
+body_paths={N/row[1] for row in BODIES}
+for p in sorted(selected-body_paths):
+    role="selected_historical_metadata_or_source"
+    if p.parent.name=="correlated_memory_root_review" and p.name.endswith("ACCEPTANCE.md"): role="root_conditional_source_acceptance"
+    if p.parent.name=="gibbs_markov_composition_root_review" and p.name=="ACCEPTANCE.md": role="root_conditional_source_acceptance"
+    archive(p,role)
+for key,filename in [("markov","MARKOV_ACCEPTANCE.md"),("gibbs","GIBBS_ACCEPTANCE.md")]:
+    checked(N/"correlated_memory_root_review"/filename,ACCEPTANCES[key])
+checked(N/"correlated_memory_root_review/VERIFICATION.json","3343903af4e62f2d205207213b245b047d38db47e603bfb37d2a9f690c86e56f")
+checked(N/"gibbs_markov_composition_root_review/ACCEPTANCE.md",ACCEPTANCES["composition"],4125)
+checked(N/"gibbs_markov_composition_root_review/VERIFICATION.json","664293ebf52d1112336adf34495d058ce7dcf7db0a26d63e2edb2b586209ef96")
+checked(N/"main_refresh_1622/REFS.json","c1f2d21025b1d2904b4be008d76506149b1b8f32b637e20d6e9a42bb1d688e5c",2658)
+
+instruction_rels=["AGENTS.md","docs/ai_methodology/SCIENCE_WORKFLOW.md","docs/ai_methodology/skills/physics-loop/SKILL.md","docs/ai_methodology/skills/physics-loop/references/DELIVERY.md","docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md","docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md","docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md","docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md","docs/audit/data/axiom_premise_nodes.json","docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"]
+for rel in instruction_rels: archive(W/rel,"instruction_or_premise_classification_provenance_only")
+checked(W/"docs/ai_methodology/SCIENCE_WORKFLOW.md","05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce")
+
+selection=[]
+for row in frozen_member_records:
+    recovery=recovery_by_sha.get(row["sha256"])
+    selection.append({**row,"recovery":recovery,"selection_status":"recoverable_selected_identity" if recovery else "not_selected_prior_source_snapshot","limit":None if recovery else "Historical freeze records this member; its bytes are not promised in this compact source package. Mathematical use is through the two exact canonical parents, not recursive archive closure."})
+
+def packet_json(name,value): write(PACK+"/"+name,json.dumps(value,indent=2)+"\n")
+packet_json("BODY_MAP.json",{"note":NOTE,"bodies":body_map})
+packet_json("DEPENDENCIES.json",{"dependencies":dependencies,"geometry":"transitive through joint parent","git_ancestry_is_not_mathematical_dependency":True})
+packet_json("SOURCE_MANIFEST.json",{"schema":"portable_source_recovery_v1","sources":sources,"scope":"Selected exact recovery, not recursive historical publication archives"})
+packet_json("ARCHIVE_INDEX.json",{"schema":"sha256_deduplicated_recovery_v1","objects":sorted(objects.values(),key=lambda x:x["sha256"]),"immutable_bodies_stored_only_in_note":True})
+packet_json("RECOVERY_SELECTION.json",{"current_source_freezes_checked":freeze_checks,"members":selection,"scope":"Historical frozen manifests are preserved literally; only listed recovered identities are portable package payload"})
+packet_json("CANONICAL_BINDING.json",{"kind":"observed_exact_parent_bytes_not_actual_checkout_binding","expected_git_base":BASE,"parent_sha256":{x[0]:x[2] for x in PARENTS},"actual_binding":None,"source_acceptances":ACCEPTANCES})
+packet_json("PUBLICATION_STATE.json",{"kind":"dated_source_proposal_not_actual_binding","created_utc":now,"canonical_binding":None,"git_base":None,"primary_execution":None,"cache_execution":None,"mutation_execution":None,"graph_execution":None,"publication_action":None,"retained_audit":None,"composition_source_decision":ACCEPTANCES["composition"],"scientific_programs_run":0,"historical_programs_replayed":0})
+packet_json("ACTUAL_BINDING.json",{"kind":"unbound_source_proposal","canonical_parent_binding_complete":False,"root_read_complete":None,"note_sha256":None,"parent_sha256":None,"source_acceptances":None,"git_base":None,"receipt_paths":[]})
+
+for p in sorted((D/"packet_text").glob("*")): write(PACK+"/"+p.name,p.read_bytes())
+write(PACK+"/PR_TITLE.txt","[physics-loop] correlated-memory-delivery: bounded_theorem / conditional-support\n")
+
+inputs=[]
+for p in sorted(OUT.rglob("*")):
+    if p.is_file() and str(p.relative_to(OUT)) not in {PRIMARY,PACK+"/INPUT_MANIFEST.json",PACK+"/ACTUAL_BINDING.json"}:
+        data=p.read_bytes();inputs.append({"path":str(p.relative_to(OUT)),"bytes":len(data),"sha256":sha(data)})
+manifest={"schema":"source_integrity_inputs_v1","inputs":inputs,"scope":"All package integrity reads; two external canonical parents are explicit additional inputs. No scientific execution."}
+packet_json("INPUT_MANIFEST.json",manifest)
+manifest_path=PACK+"/INPUT_MANIFEST.json"
+declared=sorted({x["path"] for x in inputs}|{manifest_path,PACK+"/ACTUAL_BINDING.json"}|{x[0] for x in PARENTS})
+template=(D/"primary_template.py").read_text()
+template=template.replace("__MANIFEST_SHA256__",sha((OUT/manifest_path).read_bytes()))
+template=template.replace("__AUDIT_INPUT_PATHS__",repr(declared))
+template=template.replace("__EXPECTED_BODIES__",repr({x[0]:x[3] for x in BODIES}))
+write(PRIMARY,template)
+ast.parse(template)
+for p in [D/"build_proposal.py",D/"primary_template.py"]: ast.parse(p.read_text())
+dump(D/"SOURCE_FRESHNESS.json",{"verified_utc":now,"identities":freshness,"freezes":freeze_checks,"scope":"Metadata identity checks only; complete reading coverage is separately described"})
+dump(D/"BUILD_RESULT.json",{"built_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"note_bytes":len(note),"note_sha256":sha(note),"immutable_bodies":len(body_map),"mathematical_parents":len(dependencies),"selected_source_records":len(sources),"unique_recovery_blobs":len(objects),"proposal_files":sum(p.is_file() for p in OUT.rglob('*')),"scientific_programs_run":0,"historical_programs_replayed":0,"primary_executed":False,"actual_binding":None,"composition_claim_imported":True,"composition_source_decision":ACCEPTANCES["composition"]})
+print((D/"BUILD_RESULT.json").read_text())

@@ -1,0 +1,28 @@
+"""Copy the exact reviewed source and unchanged instructions; no scientific evaluation."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+OUT=Path(__file__).resolve().parent;N=OUT.parent;W=N.parent/'correlation_worktree'
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+started=now()
+spec=[
+(N/'local_bias_noncommuting_boundary_root_candidate/DERIVATION.md','source/DERIVATION.md',3059,'3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e','complete source read and independently reconstructed'),
+(N/'local_bias_noncommuting_boundary_root_candidate/PROPOSAL_FREEZE.json','source/PROPOSAL_FREEZE.json',None,None,'source freeze, not scientific execution receipt'),
+(W/'AGENTS.md','instructions/AGENTS.md',1265,'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f','unchanged complete prior instruction reading reused'),
+(W/'docs/ai_methodology/SCIENCE_WORKFLOW.md','instructions/SCIENCE_WORKFLOW.md',15435,'05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce','unchanged complete prior instruction reading reused'),
+(Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'),'instructions/physics-claim-reviewer.SKILL.md',14490,'9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455','unchanged complete prior skill reading reused'),
+(Path('/Users/jonreilly/.codex/skills/workhorse/SKILL.md'),'instructions/workhorse.SKILL.md',13419,'9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb','unchanged complete prior skill reading reused; explicit task prohibits delegation')]
+rows=[]
+for src,rel,size,sha,scope in spec:
+ r=meta(src)
+ if size is not None:assert r['bytes']==size and r['sha256']==sha,str(src)
+ dst=OUT/rel;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
+ rows.append({'origin':r,'recovery':meta(dst),'scope':scope})
+freeze=json.loads((OUT/'source/PROPOSAL_FREEZE.json').read_text())
+for row in freeze['files']:
+ r=meta(OUT/'source'/row['path']);assert r['bytes']==row['bytes'] and r['sha256']==row['sha256']
+result={'started_utc':started,'completed_utc':now(),'kind':'metadata-only source capture after analytic reading','sources':rows,'proposal_members_verified':len(freeze['files']),'scientific_executions':0,'scientific_replays':0,'rotated_candidate_opened':False,'other_worker_local_bias_opened':False}
+(OUT/'SOURCE_MANIFEST.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'source_count':len(rows),'proposal_members':len(freeze['files']),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'scientific_executions':0},sort_keys=True))

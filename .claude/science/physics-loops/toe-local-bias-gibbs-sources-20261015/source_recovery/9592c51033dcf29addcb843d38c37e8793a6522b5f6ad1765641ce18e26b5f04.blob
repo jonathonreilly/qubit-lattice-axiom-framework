@@ -1,0 +1,52 @@
+"""Check exact source copies, actual metadata receipts and document structure only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast
+import hashlib
+import json
+import re
+
+OUT = Path(__file__).resolve().parent
+
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+
+def verify(record):
+    assert pin(Path(record['path'])) == record
+
+
+manifest = json.loads((OUT / 'SOURCE_MANIFEST.json').read_text())
+assert len(manifest['sources']) == 7
+for row in manifest['sources']:
+    verify(row['source'])
+    verify(row['snapshot'])
+    assert Path(row['source']['path']).read_bytes() == Path(row['snapshot']['path']).read_bytes()
+for row in manifest['unchanged_instruction_identities']:
+    verify(row)
+folder = OUT / 'receipts/capture_sources'
+receipt = json.loads((folder / 'EXECUTION.json').read_text())
+launch = json.loads((folder / 'LAUNCH.json').read_text())
+assert receipt['exit_code'] == 0
+for key in ['launch', 'stdout', 'stderr']:
+    verify(receipt[key])
+for saved, key in [('program_source.py', 'program_source_at_launch'), ('recorder_source.py', 'recorder_source_at_launch')]:
+    assert hashlib.sha256((folder / saved).read_bytes()).hexdigest() == launch[key]['sha256']
+    verify(launch[key])
+for name in ['record_metadata.py', 'capture_sources.py', 'verify_metadata.py', 'seal_packet.py']:
+    ast.parse((OUT / name).read_text())
+    assert (OUT / name).read_bytes().endswith(b'\n')
+proof = (OUT / 'DERIVATION.md').read_text()
+assert re.findall(r'^## (\d+)\.', proof, flags=re.M) == [str(i) for i in range(1, 13)]
+assert proof.endswith('\n')
+for name in ['EXPOSURE_AND_READ_COVERAGE.md', 'WEB_READING_SCOPE.md', 'HANDOFF.md']:
+    assert (OUT / name).read_bytes().endswith(b'\n')
+json.loads((OUT / 'WEB_TARGETED_TOOL_RESPONSE.json').read_text())
+result = {'completed_utc': datetime.now(timezone.utc).isoformat(), 'status': 'source and structural metadata verified',
+          'derivation': pin(OUT / 'DERIVATION.md'), 'sources_checked': 7, 'instruction_identities_checked': 3,
+          'actual_prior_metadata_exit': 0, 'scientific_programs_run': 0,
+          'limits': 'No mathematical truth check, source-candidate comparison, scientific execution or retained audit.'}
+(OUT / 'METADATA_VALIDATION.json').write_text(json.dumps(result, indent=2) + '\n')
+print(json.dumps(result, sort_keys=True))

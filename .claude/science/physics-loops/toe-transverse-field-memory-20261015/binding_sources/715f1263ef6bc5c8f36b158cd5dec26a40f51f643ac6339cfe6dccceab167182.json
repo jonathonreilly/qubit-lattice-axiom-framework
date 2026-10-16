@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T19:01:08.100166+00:00",
+  "baseRefName": "physics-loop/toe-finite-memory-bank-20261015",
+  "headRefName": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+  "headRefOid": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "isDraft": false,
+  "number": 9615,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615",
+  "tree": "62e8a00f97a327c38d248dc608375fd93a079e4a",
+  "base_head": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 166194,
+    "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_conditional_bias_and_rotated_gibbs_2026_10_15.py",
+    "bytes": 35366,
+    "sha256": "77e4383685056e54759257551f8344fdad182afbb1d07776b78f5ad5b246aa72"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_bias/PR_BODY.md",
+    "bytes": 3376,
+    "sha256": "05d42a7e2f2d8df1a329680ceb2fcfa8a42487c405f5e3fc29b5b31b8119bbd5"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

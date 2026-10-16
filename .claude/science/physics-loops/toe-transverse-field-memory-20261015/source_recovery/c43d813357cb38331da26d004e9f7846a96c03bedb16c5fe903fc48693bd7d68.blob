@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-15T18:26:57.199298+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_root_review/ACCEPTANCE.md",
+      "bytes": 4014,
+      "sha256": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_root_review/VERIFICATION.json",
+      "bytes": 2648,
+      "sha256": "44f67af24d3d92c4e7f24afd1c9c9e217cc61fe4c8c5f2b093de689a6c4c161a"
+    }
+  ],
+  "retained_audit": false
+}

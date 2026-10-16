@@ -1,0 +1,31 @@
+"""Source and receipt identity checks only; the analytic mathematics is not executed."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+OUT=Path(__file__).resolve().parent
+def sha(b):return hashlib.sha256(b).hexdigest()
+checks=[]
+def check(n,c):
+ checks.append({'name':n,'passed':bool(c)})
+ if not c:raise AssertionError(n)
+m=json.loads((OUT/'SOURCE_MANIFEST.json').read_text())
+for row in m['sources']:
+ for role in ['origin','recovery']:
+  r=row[role];b=Path(r['path']).read_bytes();check(role+' '+r['path'],len(b)==r['bytes'] and sha(b)==r['sha256'])
+for r in m['bodies']:
+ b=Path(r['container']).read_bytes()[r['start_byte_inclusive']:r['end_byte_exclusive']]
+ check('body '+r['sha256'],len(b)==r['bytes'] and sha(b)==r['sha256'])
+ if 'origin' in r:
+  b=Path(r['origin']['path']).read_bytes();check('body live origin '+r['sha256'],len(b)==r['bytes'] and sha(b)==r['sha256'])
+for p in OUT.glob('*.py'):ast.parse(p.read_bytes());check('metadata source parses '+p.name,True)
+run=OUT/'metadata_runs/snapshot';launch=json.loads((run/'LAUNCH.json').read_text());receipt=json.loads((run/'EXECUTION.json').read_text())
+check('snapshot actually exited zero',receipt['exit_code']==0)
+for key,fn in [('source_at_launch','child_source.py'),('recorder_at_launch','recorder_source.py')]:
+ b=(run/fn).read_bytes();r=launch[key];check('actual snapshot '+key,len(b)==r['bytes'] and sha(b)==r['sha256'])
+for key in ['launch','stdout','stderr']:
+ r=receipt[key];b=Path(r['path']).read_bytes();check('actual snapshot '+key,len(b)==r['bytes'] and sha(b)==r['sha256'])
+check('actual snapshot timestamp order',datetime.fromisoformat(launch['started_utc'])<=datetime.fromisoformat(receipt['finished_utc']))
+check('independent scope explicitly stated',m['new_candidate_exposed'] is False and m['scientific_executions']==m['previous_science_replays']==m['git_operations']==0)
+result={'checked_utc':datetime.now(timezone.utc).isoformat(),'kind':'metadata_source_freshness_only','checks':checks,'check_count':len(checks),'scientific_executions':0,'scientific_replays':0,'new_candidate_exposed':False,'derivation':{'bytes':len((OUT/'DERIVATION.md').read_bytes()),'sha256':sha((OUT/'DERIVATION.md').read_bytes())},'scope_limit':'No numerical or symbolic scientific diagnostic was run; mathematical claims are analytic.'}
+(OUT/'METADATA_VERIFICATION.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='checks'},sort_keys=True))

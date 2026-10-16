@@ -1,0 +1,7 @@
+# Selected portable recovery
+
+BODY_MAP.json recovers the two immutable scientific bodies once from the new canonical note. DEPENDENCIES.json binds one canonical parent and its exact Markov author/review intervals. SOURCE_MANIFEST.json maps selected decisions, source identities, exposure and actual metadata scripts/launches/streams/exits to exact intervals or SHA256 blobs. ARCHIVE_INDEX deduplicates identical payloads, including empty streams.
+
+The selection includes the finite-bank candidate freeze, the bank review's top-level bookkeeping and both actual metadata-run records, root finite-bank acceptance and shared verification/freeze, applicable instruction bytes, and selected template provenance. It does not recursively copy old publication archives, all source snapshots named by historical freezes, or unrelated acceptance bodies. RECOVERY_SELECTION.json labels every inspected frozen member as recoverable or not selected. A preserved historical freeze is not a promise that its entire recursive graph is shipped.
+
+Historical absolute paths and timestamps remain literal evidence. Runtime integrity reads use safe repository-relative paths only. The canonical parent is an external pinned input that root must ensure exists in the actual reviewed tree. Root's shared verification lists unrelated decision identities as provenance only; the primary requires exactly the finite-bank acceptance for this theorem. Metadata does not validate the science or retroactively create a missing historical receipt.

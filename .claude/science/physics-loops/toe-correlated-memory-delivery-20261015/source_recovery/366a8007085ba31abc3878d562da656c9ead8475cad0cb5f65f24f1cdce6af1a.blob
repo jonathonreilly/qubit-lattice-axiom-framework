@@ -1,0 +1,48 @@
+"""Metadata-only source capture, after initial source reading; no science run."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D = Path(__file__).resolve().parent
+N = D.parent
+W = N.parent / "correlation_worktree"
+C = N / "local_gibbs_memory_interface_root_candidate"
+rows = [
+    (C / "DERIVATION.md", "source/DERIVATION.md", "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747", "Complete candidate, including all six sections; substantive assessment target"),
+    (C / "LITERATURE_AND_SCOPE.md", "source/LITERATURE_AND_SCOPE.md", "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee", "Complete source-exposure and primary-reading note"),
+    (C / "PROPOSAL_FREEZE.json", "source/PROPOSAL_FREEZE.json", "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba", "Complete proposal freeze; verify its two members"),
+    (W / "AGENTS.md", "instructions/AGENTS.md", "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f", "Current complete read; no Git authority refresh in this bounded task"),
+    (W / "docs/ai_methodology/SCIENCE_WORKFLOW.md", "instructions/SCIENCE_WORKFLOW.md", "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce", "Prior complete read reused only after exact current hash verification"),
+    (Path("/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md"), "instructions/physics-claim-reviewer.SKILL.md", "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455", "Complete current skill read; explicit task keeps model/effort and prohibits delegation"),
+    (W / "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md", "instructions/proof-search-governance.md", "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258", "Complete current read; source/claim/evidence discipline"),
+]
+records = []
+for original, rel, expected, scope in rows:
+    data = original.read_bytes()
+    digest = hashlib.sha256(data).hexdigest()
+    if digest != expected:
+        raise RuntimeError(f"Source identity changed: {original}: {digest}")
+    dest = D / rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.exists():
+        raise RuntimeError(f"Refuse to overwrite source capture: {dest}")
+    dest.write_bytes(data)
+    records.append({"original": str(original), "snapshot": rel, "bytes": len(data), "sha256": digest, "read_scope": scope})
+proposal = json.loads((D / "source/PROPOSAL_FREEZE.json").read_text())
+for member in proposal["files"]:
+    data = (D / "source" / member["path"]).read_bytes()
+    assert len(data) == member["bytes"]
+    assert hashlib.sha256(data).hexdigest() == member["sha256"]
+manifest = {
+    "captured_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "kind": "Actual metadata source capture after initial reading, not pre-execution scientific registration",
+    "scope": "Only the root Gibbs proposal is a theorem-review dependency; prior Markov/joint authorship is exposure, not imported result",
+    "scientific_programs_run": 0,
+    "historical_programs_replayed": 0,
+    "remote_sources_byte_archived": False,
+    "files": records,
+    "proposal_freeze_members_verified": len(proposal["files"]),
+}
+(D / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+print(json.dumps({"captured_utc": manifest["captured_utc"], "source_files": len(records), "proposal_members": len(proposal["files"]), "science_runs": 0}))

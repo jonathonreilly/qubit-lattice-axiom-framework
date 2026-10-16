@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/accept_noncommuting_boundary.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-15T17:00:21.362563+00:00",
+  "end_utc": "2026-10-15T17:00:21.401606+00:00",
+  "elapsed_seconds": 0.03892862517386675,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/noncommuting_boundary_root_acceptance_1702/stdout",
+    "bytes": 810,
+    "sha256": "ee3ff9e4631d297324e20317e9f6ab79eb2b921815db2f2e699366c0c9d41c6e"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/noncommuting_boundary_root_acceptance_1702/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/bootstrap/accept_noncommuting_boundary.py",
+    "bytes": 5485,
+    "sha256": "e7ae5240c3d3e2700b375e1691b7d3c56ae11e2adb0495becd941df71debfd53"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

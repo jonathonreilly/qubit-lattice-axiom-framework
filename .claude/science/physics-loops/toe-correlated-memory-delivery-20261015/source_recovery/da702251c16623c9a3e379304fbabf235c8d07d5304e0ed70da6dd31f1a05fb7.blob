@@ -1,0 +1,28 @@
+"""Source/draft identity and textual-diff bookkeeping only. No mathematical diagnostic."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,difflib,os
+D=Path(__file__).resolve().parent
+def sha_bytes(b): return hashlib.sha256(b).hexdigest()
+def record(p):
+ b=p.read_bytes();return {'bytes':len(b),'sha256':sha_bytes(b)}
+started=datetime.now(timezone.utc).isoformat()
+manifest=json.loads((D/'SOURCE_MANIFEST.json').read_text())
+rows=[]
+for x in manifest['sources']:
+ src=Path(x['source']);dst=D/x['copy'];s=record(src);c=record(dst)
+ expected={'bytes':x['bytes'],'sha256':x['sha256']}
+ ok=s==c==expected
+ rows.append({'source':str(src),'copy':x['copy'],'expected':expected,'current_source':s,'copy_identity':c,'matches':ok})
+ if not ok: raise RuntimeError(f'identity mismatch: {src}')
+draft=json.loads((D/'DRAFT_FREEZE.json').read_text())
+for x in draft['members']:
+ if record(D/x['path'])!={'bytes':x['bytes'],'sha256':x['sha256']}:
+  raise RuntimeError(f'draft snapshot mismatch: {x["path"]}')
+before=(D/'draft_snapshot/DERIVATION.md').read_text()
+after=(D/'DERIVATION.md').read_text()
+diff=''.join(difflib.unified_diff(before.splitlines(keepends=True),after.splitlines(keepends=True),fromfile='draft_snapshot/DERIVATION.md',tofile='DERIVATION.md'))
+(D/'AUTHOR_CLARIFICATIONS.diff').write_text(diff)
+result={'kind':'metadata identity closure and exact textual diff only','started_utc':started,'completed_utc':datetime.now(timezone.utc).isoformat(),'pid':os.getpid(),'script':record(Path(__file__)),'source_rows':rows,'verified_draft_members':draft['members'],'draft_derivation':record(D/'draft_snapshot/DERIVATION.md'),'final_derivation':record(D/'DERIVATION.md'),'report':record(D/'REPORT.md'),'diff':record(D/'AUTHOR_CLARIFICATIONS.diff'),'scientific_execution':False,'scientific_run_count':0}
+(D/'CLOSING_SOURCE_CHECK.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'source_identities':len(rows),'draft_members':len(draft['members']),'derivation':result['final_derivation'],'report':result['report'],'diff':result['diff'],'scientific_execution':False}))

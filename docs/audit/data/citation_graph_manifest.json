@@ -1,6 +1,6 @@
 {
- "edge_count": 16111,
- "node_count": 7157,
+ "edge_count": 16116,
+ "node_count": 7161,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4202,6 +4202,10 @@
    "deps_hash": "d9669c5e9542",
    "out_degree": 3
   },
+  "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "df509244bb53",
+   "out_degree": 2
+  },
   "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
@@ -6669,6 +6673,10 @@
   "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
    "deps_hash": "cbfdfa9b6409",
    "out_degree": 2
+  },
+  "finite_consumed_memory_bank_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "ff390629b0d9",
+   "out_degree": 1
   },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
@@ -14394,6 +14402,10 @@
    "deps_hash": "f9e439353aad",
    "out_degree": 3
   },
+  "local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "ff390629b0d9",
+   "out_degree": 1
+  },
   "local_electric_completions_and_postbirth_field_phase_bounded_theorem_note_2026-09-24": {
    "deps_hash": "666e0b9cf11e",
    "out_degree": 4
@@ -21621,6 +21633,10 @@
   "transverse_cross_kernel_outside_six_caps_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",
    "out_degree": 2
+  },
+  "transverse_field_gibbs_memory_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "de9234246b35",
+   "out_degree": 1
   },
   "triple_stack_collapse_scaling_note": {
    "deps_hash": "e3b0c44298fc",

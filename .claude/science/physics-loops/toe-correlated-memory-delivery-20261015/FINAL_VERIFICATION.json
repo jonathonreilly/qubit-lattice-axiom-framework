@@ -1,0 +1,276 @@
+{
+  "utc": "2026-10-15T17:18:45.697173+00:00",
+  "branch": "physics-loop/toe-correlated-memory-delivery-20261015",
+  "base_head": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 203198,
+    "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_memory_delivery_and_readiness_2026_10_15.py",
+    "bytes": 38928,
+    "sha256": "c4dde1de103eeafd8cdb381a3ed0a421077efcc08e96dce976a90a4972ba6f35"
+  },
+  "cache": {
+    "utc": "2026-10-15T17:12:30.921064+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_memory_delivery_and_readiness_2026_10_15.py",
+      "bytes": 38928,
+      "sha256": "c4dde1de103eeafd8cdb381a3ed0a421077efcc08e96dce976a90a4972ba6f35"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/CANONICAL_RESULT.json",
+      "bytes": 1096,
+      "sha256": "7c2a58caf1680d1721c27d23d425e6932ea4c14f0497db9bc9d6d9a52b31e4e7"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/correlated_memory_delivery_and_readiness_2026_10_15.txt",
+      "bytes": 1046,
+      "sha256": "72d2b81c25b2a2cfc2f9d5eb5330191709668a6771bbd454ff05ab270cfaba79"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "exact bytes, recovery and binding only; no mathematical validation by execution"
+    },
+    "scope_lines": [
+      "per_element: source coefficients remain literal text; no physical element or gate run",
+      "per_site: fixed-endpoint geometry premises preserved by exact bodies, not a new site test",
+      "per_mode: arbitrary correlated-input and exact-marginal scopes preserved as source",
+      "per_block: immutable source bodies, two parents and actual binding identities checked",
+      "lattice_wide: no native supplier, full program, thermalization or audit is certified"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T17:12:43.956389+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/correlated_memory_delivery_and_readiness_2026_10_15.py",
+      "bytes": 38928,
+      "sha256": "c4dde1de103eeafd8cdb381a3ed0a421077efcc08e96dce976a90a4972ba6f35"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/MUTATION_RESULTS.json",
+      "bytes": 6619,
+      "sha256": "f36e97f990fd99fa689dd8587092fbe45a0c060f01e9c0444b7f81c778b24337"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 156,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-15T17:14:57.479989+00:00",
+    "old_nodes_preserved": 7135,
+    "old_edges_preserved": 16095,
+    "new_node": {
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+        "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/correlated_memory_delivery_and_readiness_2026_10_15.py",
+      "title": "Correlated memory delivery and complete joint readiness"
+    },
+    "new_edges": [
+      {
+        "from": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+        "to": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15"
+      },
+      {
+        "from": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+        "to": "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10455593,
+      "sha256": "12412ad2905e0fd2392ca1ac32010def1b026a8c3fde1f58ec61d2645d1daffb"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1019130,
+      "sha256": "4df3354947fcee0e28a737a8c7aa815fdd48a808851e94e028f55494323fb6f8"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "55cbd31765c1128ce553a1572dedbb394d38917c7566429b7e21b16f95d29796"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T17:12:38.081194+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 1003,
+          "sha256": "1e06dd1d995a2256895be3d0d15aec47779f15ba2c7f98d8af74628d8376f889"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 1031,
+          "sha256": "772fff8e3fbfb01b7e207904a058d7949695d2be7d487dddd2e14d6c13176bbe"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "adc05aab7b75a5ad3c0e61a3bb4c3922cf534ce8a6621707fd99a1e3b58611a2"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "9c79e638605b7c3c1e9b4630d99c8774678ee49d9c2f4d6f3ac94b29d4c4f395"
+        }
+      },
+      {
+        "case": "source_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_source_interval/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "69b276a8f91ed8dcb0e2f698d9e8f07350b1249e7b115aa1b3ed18f881127971"
+        }
+      },
+      {
+        "case": "parent_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_parent_interval/EXECUTION.json",
+          "bytes": 1026,
+          "sha256": "ae72cdb4387046d0d83b6520c05a733e2550bea6278bfe75527056efa6736f1b"
+        }
+      },
+      {
+        "case": "dependency_role",
+        "expected_failure": "Exactly two direct mathematical parents",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_dependency_role/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "934aea5166a8a9019a76e6fe6ff433f17d9251784b7dd9e73a012d62a8446afd"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical null state must remain null:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 1033,
+          "sha256": "95442be3c0d510a06af679dce4294785db2f7a9cfdc093a258f5fc2433e9f2e9"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Bound canonical note identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 1013,
+          "sha256": "aee2546dcfd482d58d51b8a7d55c18fe65dc1d4b0297c2f5168bc2893740289b"
+        }
+      },
+      {
+        "case": "live_exit",
+        "expected_failure": "live observation exit/schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_live_exit/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "dffa392fec0ea49880218577026a6e57c306b06f221941881796b1b4f586faef"
+        }
+      },
+      {
+        "case": "live_recorder",
+        "expected_failure": "live recorder source identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_live_recorder/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "d6e0313722ea6caef8ecb50b7148478a6e14f01313d291c0759bbf34d5add78f"
+        }
+      },
+      {
+        "case": "history_schema",
+        "expected_failure": "historical observation schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_history_schema/EXECUTION.json",
+          "bytes": 1022,
+          "sha256": "7e97d2326cc9d741fa8276642f6e0370f7bb8d30f961ce4586a93bfc1829d43a"
+        }
+      },
+      {
+        "case": "root_ack",
+        "expected_failure": "root reviewed source acknowledgment",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_root_ack/EXECUTION.json",
+          "bytes": 1004,
+          "sha256": "b107e71e4edb6430f44e1d0bc72807e5d8e3f03f2de72a6cfbfeaea68f8879d8"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "exact binding receipt membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 1034,
+          "sha256": "0eb54960130af7f92b81006a8f7501a3e0a8abeca924e33e94dba36ae62cdc7e"
+        }
+      },
+      {
+        "case": "failure_archive",
+        "expected_failure": "original draft and complete clarification archive",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/correlated_memory/runs/mutation_failure_archive/EXECUTION.json",
+          "bytes": 1025,
+          "sha256": "c927216f5b32cc91565ff632a5c3031da8cf8e0e663fe1c9fb7eaf8bc38865e7"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 14,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied complete correlated raw-memory diagonal, bias/mixing certificates, basis, Gibbs state/temperature, independent local channels, isolation, actual-time phases/moments, calibration, common caps and microscopic energy/detector/reuse identification; native supply and full scheduled programs remain open."
+  ]
+}

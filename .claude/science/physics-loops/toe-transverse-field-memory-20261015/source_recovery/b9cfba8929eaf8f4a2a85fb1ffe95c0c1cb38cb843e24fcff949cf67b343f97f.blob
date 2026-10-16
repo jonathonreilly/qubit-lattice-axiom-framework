@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-10-15T17:55:14.028812+00:00",
+  "checked_utc": "2026-10-15T17:55:14.033771+00:00",
+  "scope": "actual in-process metadata closure and source freeze; no invented subprocess receipt",
+  "source_records_refreshed": 15,
+  "actual_metadata_subprocesses": 1,
+  "scientific_programs_run": 0,
+  "candidate_exposure": false,
+  "external_mathematical_dependencies": [],
+  "root_candidate_access": "none before this freeze"
+}

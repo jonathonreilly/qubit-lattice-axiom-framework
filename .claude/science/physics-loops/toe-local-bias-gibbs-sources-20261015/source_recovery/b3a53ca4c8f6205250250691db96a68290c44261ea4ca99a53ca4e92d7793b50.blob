@@ -1,0 +1,12 @@
+{
+  "sealed_utc": "2026-10-15T16:44:24.496688+00:00",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+    }
+  ],
+  "status": "root finite boundary example pending separate check; no general no-go",
+  "scientific_executions": 0
+}

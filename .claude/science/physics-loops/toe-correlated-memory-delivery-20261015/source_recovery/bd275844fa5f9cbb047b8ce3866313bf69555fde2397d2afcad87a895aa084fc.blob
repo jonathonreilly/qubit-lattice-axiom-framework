@@ -1,0 +1,71 @@
+"""Closing source/receipt freshness only. Never execute mathematical or author programs."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, difflib, hashlib, json
+OUT=Path(__file__).resolve().parent
+I=OUT.parent/'independent'
+C=OUT.parents[1]/'correlated_markov_memory_candidate'
+checks=[]
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes(); return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(name,condition):
+ checks.append({'name':name,'passed':bool(condition)})
+ if not condition: raise AssertionError(name)
+def identity(row,name):
+ got=meta(Path(row['path']))
+ check(name+' '+row['path'],got['bytes']==row['bytes'] and got['sha256']==row['sha256'])
+started=now()
+m=json.loads((OUT/'SOURCE_MANIFEST.json').read_text())
+for key in ['independent_freeze','candidate_freeze','independent_sources_reused']:
+ identity(m[key],key)
+for row in m['verified_frozen_members']: identity(row,'frozen member unchanged')
+for row in m['candidate_source_origins']:
+ identity(row['origin'],'candidate source freshness')
+ identity(row['candidate_recovery'],'candidate recovery')
+for row in m['copies']+m['additional_premise_copies']:
+ identity(row['origin'],'comparison copy origin')
+ identity(row['recovery'],'comparison saved source')
+for base,key in [(I,'files'),(C,'members')]:
+ f=json.loads((base/'FINAL_FREEZE.json').read_text())
+ expected={Path(x['path']) if Path(x['path']).is_absolute() else base/x['path'] for x in f[key]}
+ actual={p for p in base.rglob('*') if p.is_file() and p!=base/'FINAL_FREEZE.json'}
+ check('no unlisted files in '+str(base),actual==expected)
+im=json.loads((I/'SOURCE_MANIFEST.json').read_text())
+for row in im['sources']:
+ identity(row['origin'],'independent instruction/source freshness')
+ identity(row['recovery'],'independent saved source')
+for row in im['bodies']:
+ b=Path(row['container']).read_bytes()[row['start_byte_inclusive']:row['end_byte_exclusive']]
+ check('exact canonical body '+row['sha256'],len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'])
+ if 'origin' in row: identity(row['origin'],'exact raw body freshness')
+before=(C/'draft_snapshot/DERIVATION.md').read_text().splitlines(keepends=True)
+after=(C/'DERIVATION.md').read_text().splitlines(keepends=True)
+diff=''.join(difflib.unified_diff(before,after,fromfile='draft_snapshot/DERIVATION.md',tofile='DERIVATION.md'))
+check('complete final diff unchanged and exact',diff==(OUT/'sources/candidate/AUTHOR_CLARIFICATIONS.diff').read_text())
+for p in OUT.glob('*.py'):
+ ast.parse(p.read_bytes()); check('metadata script parses '+p.name,True)
+run=OUT/'metadata_runs/capture'
+launch=json.loads((run/'LAUNCH.json').read_text()); receipt=json.loads((run/'EXECUTION.json').read_text())
+check('actual capture exit zero',receipt['exit_code']==0)
+check('actual capture ordered times',datetime.fromisoformat(launch['started_utc'])<=datetime.fromisoformat(receipt['finished_utc']))
+for key,name in [('source_at_launch','child_source.py'),('recorder_at_launch','recorder_source.py')]:
+ got=meta(run/name); want=launch[key]
+ check('actual capture saved '+key,got['bytes']==want['bytes'] and got['sha256']==want['sha256'])
+for key in ['launch','stdout','stderr']: identity(receipt[key],'actual capture receipt')
+cl=json.loads((C/'METADATA_LAUNCH.json').read_text()); cr=json.loads((C/'METADATA_PROCESS_RECEIPT.json').read_text())
+check('author actual metadata exit zero',cr['returncode']==0)
+check('author metadata ordered times',datetime.fromisoformat(cl['started_utc'])<=datetime.fromisoformat(cr['completed_utc']))
+for key,name in [('wrapper','seal_packet.py'),('child','verify_metadata.py'),('derivation','DERIVATION.md'),('plan','SCOPE_PLAN.md'),('source_manifest','SOURCE_MANIFEST.json'),('draft_freeze','DRAFT_FREEZE.json')]:
+ got=meta(C/name); want=cl[key]
+ check('author launched '+key,got['bytes']==want['bytes'] and got['sha256']==want['sha256'])
+for key,name in [('stdout','metadata.stdout'),('stderr','metadata.stderr'),('launch','METADATA_LAUNCH.json')]:
+ got=meta(C/name); want=cr[key]
+ check('author actual '+key,got['bytes']==want['bytes'] and got['sha256']==want['sha256'])
+for rec_name,script_name in [('SOURCE_CAPTURE_RECEIPT.json','capture_sources.py'),('DRAFT_FREEZE.json','record_draft_snapshot.py')]:
+ r=json.loads((C/rec_name).read_text())
+ check('author lightweight script pin '+rec_name,r['script_sha256']==meta(C/script_name)['sha256'])
+check('capture scoped as non-scientific',m['scientific_executions']==m['scientific_replays']==0 and m['selection_memo_semantically_read'] is False)
+result={'started_utc':started,'completed_utc':now(),'kind':'metadata source/receipt closure, not science','checks':checks,'check_count':len(checks),'report':meta(OUT/'REPORT.md'),'independent_derivation':meta(I/'DERIVATION.md'),'candidate_derivation':meta(C/'DERIVATION.md'),'scientific_executions':0,'scientific_replays':0,'scope_limit':'Analytic mathematical assessment only; no fixture or propagator was executed and metadata checks do not establish theorem truth.'}
+(OUT/'CLOSING_METADATA.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='checks'},sort_keys=True))

@@ -1,0 +1,19 @@
+{
+  "finished_utc": "2026-10-15T17:19:24.820028+00:00",
+  "exit_code": 0,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/LAUNCH.json",
+    "bytes": 1144,
+    "sha256": "001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stdout",
+    "bytes": 341,
+    "sha256": "338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

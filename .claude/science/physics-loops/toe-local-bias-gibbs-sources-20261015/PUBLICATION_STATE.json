@@ -1,0 +1,20 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T17:54:13.227580+00:00",
+  "canonical_binding": null,
+  "git_base": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "source_acceptances": {
+    "local_bias": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b",
+    "rotated_gibbs": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488",
+    "noncommuting_boundary": "5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda"
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "finite_bank_imported": false
+}

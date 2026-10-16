@@ -1,0 +1,9 @@
+{
+  "kind": "metadata-only source capture after source reading, before final derivation",
+  "started_utc": "2026-10-15T15:36:35.694832+00:00",
+  "completed_utc": "2026-10-15T15:36:35.714767+00:00",
+  "pid": 71659,
+  "script_sha256": "d66a458b15e1ffd19b2d8cab8305981e290ec249c75e91de8da1f5d0ee5ecf80",
+  "scientific_execution": false,
+  "source_count": 14
+}

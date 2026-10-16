@@ -1,0 +1,36 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "direct_mathematical_parent"
+    },
+    {
+      "path": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 51476,
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd",
+      "claim_id": "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "accepted_body_interval": {
+        "container": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 25736,
+        "end_byte_exclusive": 51476,
+        "bytes": 25740,
+        "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "geometry": "transitive through joint parent",
+  "git_ancestry_is_not_mathematical_dependency": true
+}

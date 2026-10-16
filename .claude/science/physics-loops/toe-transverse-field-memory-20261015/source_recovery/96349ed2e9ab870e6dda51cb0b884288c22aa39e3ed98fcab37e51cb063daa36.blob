@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-15T18:10:00.618206+00:00",
+  "checked_utc": "2026-10-15T18:10:00.621997+00:00",
+  "scope": "actual in-process source freshness and freeze, not an invented subprocess receipt",
+  "identities_checked": 121,
+  "actual_metadata_subprocesses": 2,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "original_candidate_and_independent_sources_unchanged": true,
+  "root_candidate_exposure": "only after independent acdce882 freeze",
+  "files_excluded": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/comparison/FINAL_FREEZE.json"
+  ]
+}

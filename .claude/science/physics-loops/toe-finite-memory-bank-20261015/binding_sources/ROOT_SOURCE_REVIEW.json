@@ -1,0 +1,135 @@
+{
+  "kind": "root_source_publication_review",
+  "utc": "2026-10-15T17:54:53.507222+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/FINAL_FREEZE.json",
+    "bytes": 81161,
+    "sha256": "da49c7c8d76ecd35ac6a02a8cfbb37a263df9f29d11bc5b7aa18369b0426274f"
+  },
+  "sealed_members_verified": 180,
+  "source_rows_verified": 63,
+  "full_current_files_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/wrapper.md",
+      "bytes": 20401,
+      "sha256": "79d10728c72fcf450086834a8587008a16725f463abe4b43556ffbf61e5d23ec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/primary_template.py",
+      "bytes": 8090,
+      "sha256": "feac515d67c7fdcf239c7867504dc22f19a96434154e046c999f564c88076f69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/build_proposal.py",
+      "bytes": 14669,
+      "sha256": "1708bd8973c91c6efaa214778a4ccd09b9a35387b3d3bcebe8e10e5987cbbe29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/inspect_proposal.py",
+      "bytes": 7533,
+      "sha256": "67a7af8e049cacee2d69c0bab132fd4ecf40915a7acb73eb1b6498b8a1bf2a6f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/record_metadata.py",
+      "bytes": 2774,
+      "sha256": "10b075e8fb1cf76d2303cfc21960c5e5e9b26d3916343162eb5d7e03f319a2c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/seal_packet.py",
+      "bytes": 3863,
+      "sha256": "ea7242efaeb00ba35cc9aee3f155796fdf3b0f2345cdbf1f9f3cc4aba71c9f73"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1622,
+      "sha256": "b08c128d2fcf3a0e0cfe38da029ba5e63ddeb4908be2debc92e1bce21fb9163e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1496,
+      "sha256": "bd3309e15c18f0cdfb2a0ec610d45162c662ebf26f5aabd5089a17238c91b2b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 1638,
+      "sha256": "70bd9b7bf4569c544af9a893dd2c074d8078a0922e5a5353e0c8655ab3c34b10"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 3227,
+      "sha256": "6024d6e7e4337cadafb9753477de4d066e3b2b3f1e2715a937a6f1f8d157e7f3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/PROVENANCE_PLAN.md",
+      "bytes": 1970,
+      "sha256": "e759dd544df26db9930b19e500a36a8cad9da9f84579906263297d435646e6cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 1762,
+      "sha256": "d38091546579dda821911ca839eb91f74fdf7e0a4a297091f2006c25f10e7443"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 1517,
+      "sha256": "729b194f4bb85721715573ce8b37c8a81df6c67b3b84f9a3deaed02b23a5aad0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3916,
+      "sha256": "c8861caeb4a697e5de423842d6b02fd8018953fd77b5ff9dc0d04ac2379e31e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 917,
+      "sha256": "eacfe6f0f22274e972b5ea1082fe75d8303c2d80f2062693568a9b5a970be59d"
+    }
+  ],
+  "reading_scope": "All current changed wrapper, module-level assembly, helper functions, primary and packet text read in full. Complete old-to-new diffs are mechanically verified; the prior correlated template reading is reused by exact identity. The first combined read was truncated at wrapper end and primary start; a second complete primary and wrapper-end read repaired that coverage before this decision.",
+  "scientific_source_reading_reused": {
+    "author": "162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521",
+    "review": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6",
+    "decision": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
+    },
+    "actual_root_receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/conditional_sources_root_acceptance_1726/EXECUTION.json",
+      "bytes": 1478,
+      "sha256": "8408ccd52714210e9ea48d96417807577e03b4a0e77e29ff3639c595edcdd9e5"
+    }
+  },
+  "existing_source_acceptances": {
+    "finite_bank": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
+    }
+  },
+  "mandatory_current_scope": [
+    "Finite supplied bank is consumed, not restored; all records retained.",
+    "One global g(delta) replacement; purity only on ideal unused blocks.",
+    "Compensation action equals norm(C) times integrated amplitude and is at most B_C times that amplitude.",
+    "Guards counted only as H0 aging remain fully compensated; other waits require ordered actual segments or comparison residuals.",
+    "Every source, intervening operation and whole bank lifetime has its own control/isolation cost.",
+    "The sole direct mathematical parent is correlated-memory canonical12bd18b0; local-bias/rotation and incidental Git ancestry are not imported."
+  ],
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 2026,
+      "sha256": "196b4074b7cf4741ce066c0b0f8a7e232c6de87f6745b6bab207635868a3492b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2047,
+      "sha256": "3305cdc80167ae0b84d817591a1a3631128233a81fe2680c2829413848a66f8b"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "remaining": "Select actual base and bind sources, execute primary/cache/schema mutations/focused checks, preserve graph, review canonical delta, publish regular PR and attach. No retained audit, native supplier or control apparatus is established."
+}

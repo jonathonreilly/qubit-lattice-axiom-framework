@@ -1,0 +1,448 @@
+# Correlated Markov memory at fixed joint-readiness endpoints
+
+Status: author-proposed conditional finite-Hamiltonian theorem, awaiting separate check. The contribution is removal of exact raw-memory product structure and raw-memory/old-system independence for an explicitly certified spatial Markov diagonal law. Bias, mixing, axes, vacancies, isolation, signed compensation, local gates and scheduling remain supplied. This is not native purity, a new physical axiom, autonomous control or recycled memory. Every physical output is retained.
+
+## 1. Exact dependencies, domain and target
+
+The current joint canonical note is SHA25600c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e. Its accepted corrected joint body is dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179, with source-side root acceptance73a10a94. It supplies the literal fixed geometry, positive compensation, restored endpoint routing and computable complex clock synthesis. The memory canonical note32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd contains the accepted independent-biased-memory body f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a, root435cf70b. We reuse its phase-exact reversible majority word, not its independent-input probability calculation or normalized-good-block target. Source-side acceptance is not a retained audit. All exact full paths, sizes, hashes, source copies and reading limits are in SOURCE_MANIFEST.json.
+
+This author wrote the single-port geometry and corrected joint-readiness sources and the preceding selection memo. Root selected that source-exposed proposal. The present derivation is author work, not independent verification of its own dependencies. No previous scientific program is replayed and no new scientific program is needed below. Source copying/hashing is metadata only.
+
+Let D be every original nonclock factor, including its apparatus and previous memory, X the original M=4q_c clock, A the complete three-component mediator register, S=A union X and s=|S|. R is an arbitrary passive reference. The unchanged original H0 acts only on D. The installed generator, with all scalars/reserves retained, is
+
+    K=H0+F_inst,
+    F_inst=K_X+Delta L+sqrt(Delta)V+C0+R0 I.                 (1)
+
+All coefficients and full-space bounds are finite computable supplied data. No commutation of H0 with F_inst is assumed. K>=0 is an additional hypothesis whenever positivity of the complete driven generator is claimed. The exact preparation comparison itself needs only finite Hermitian operators. Later interaction simulation is not imported as a premise of literal readiness.
+
+Append B={B_1,...,B_Lraw} on the same boundary ray as joint readiness. E={B_1,...,B_s} are exactly its first s reset endpoints. F=B minus E contains every other raw-memory/trash/spacing factor. There is no overlap between the symbol F for retained memory and F_inst for the installed addition. Write Z=D S R. The nominal free generator on B is zero and all unlisted interactions are absent; section9 states the full residual/static-baseline alternatives.
+
+The complete input rho_ZB is otherwise arbitrary. In particular Z/B need not factor, the B density matrix need not be diagonal, and R may purify the entire state. The sole memory-state condition is its computational-basis diagonal:
+
+    <x_1...x_L|rho_B|x_1...x_L>
+       =pi_(x_1) product_(i=1)^(L-1) P_(x_i,x_(i+1)),
+    P=[[1-a,a],[b,1-b]], pi=(1-q,q),
+    0<=a,b<=1, a+b>0, q=a/(a+b)<1/2,
+    lambda=1-a-b, |lambda|<1.                              (2)
+
+No N_X=1 or clean-A hypothesis is imposed initially. All old clock/auxiliary sectors and their correlations are admitted. The basis, Markov law and effective bias/mixing certificates are supplied state data, not an equilibrium or native state-selection claim. The product subclass occurs at lambda=0; arbitrary quantum extensions with the same diagonal are already a broader input class than a prescribed diagonal product density matrix.
+
+Let U_c be the exact finite memory-only compression permutation constructed below. Define
+
+    rho_c=(I_Z tensor U_c)rho(I_Z tensor U_c*) ,
+    omega_ZF=Tr_E rho_c,
+    sigma_c=|vac_E><vac_E| tensor omega_ZF.                  (3)
+
+Tensor ordering in such expressions is notational. The partial trace in (3) defines a comparison state only. The physical protocol performs neither a measurement nor a trace-out. It retains E,F,Z and later all reset outputs. Our target is a full-state comparison, with the exact ZF marginal of rho_c preserved. It does not claim an isometry from arbitrary dirty memory to a smaller register.
+
+## 2. Nonuniform-gap domination, with no quantum independence assumption
+
+Choose a computably certified rational q_bar with q<q_bar<1/2 and a rational lambda_bar<1 with |lambda|<=lambda_bar. Choose an integer ell>=1 such that
+
+    lambda_bar^ell <= q_bar-q                              (4)
+
+using a certified positive lower bound on q_bar-q. These choices are effective for computable a,b with the stated strict gaps. They may be expensive near zero bias or slow mixing. They are not inferred from a one-site marginal. Boundary q=0 is permitted; the stationary diagonal is then already all-vacuum, although the same finite circuit remains valid.
+
+For a chain started at x in {0,1}, its one-probability obeys p_(d+1)=a+(1-a-b)p_d. Since q=a+lambda q, induction gives
+
+    P^d(x,1)=q+lambda^d(1_(x=1)-q).                       (5)
+
+For d>=ell its deviation above q is at most |lambda|^d<=lambda_bar^ell, so (5)<=q_bar. Negative lambda and nonuniform gaps are covered; no sign-monotonicity of the original one-step chain is used.
+
+Take any ordered subset t_1<...<t_Q of sites with successive gaps >=ell. Summing the complete Markov law over unobserved sites proves that its selected bits form a nonhomogeneous Markov chain with initial probability q and transitions P^(t_(k+1)-t_k). This summation is a statement about the B marginal diagonal, not about conditional states after measuring R or Z.
+
+For an explicit coupling, let U_1,...,U_Q be independent uniform[0,1] variables. Generate Y_1=1_(U_1<=q), and then Y_k=1_(U_k<=P^gap(Y_(k-1),1)). Let T_k=1_(U_k<=q_bar). The Y vector has exactly the selected-bit law, the T_k are independent Bernoulli(q_bar), and Y_k<=T_k pointwise for every k, since every conditional threshold is at most q_bar. Consequently, for every increasing Boolean function f,
+
+    Pr[f(Y)=1] <= Pr[f(T)=1].                              (6)
+
+This proof does not assume that different selected subsets are independent. It establishes each subset's marginal upper coupling separately. There is also no requirement that the full quantum state be classical: the eventual tested event is the diagonal output of a reversible computational-basis permutation, so its probability depends only on (2).
+
+## 3. Fixed endpoints, leaf coordinates and recursive majority
+
+Choose r>=1, Q=3^r. For endpoint j in {1,...,s}, place its Q ordered logical leaves at memory-ray indices
+
+    x_(j,0)=j,
+    x_(j,t)=s+[(j-1)(Q-1)+t]ell, 1<=t<=Q-1,
+    Lraw=s+s(Q-1)ell.                                     (7)
+
+Every set includes its prescribed first physical endpoint, all leaf sets are disjoint, and the first gap is
+
+    x_(j,1)-j=ell+h_j,
+    h_j=s-j+(j-1)(Q-1)ell>=0.                             (8)
+
+Later gaps within the same set are ell. The last leaf of j=s is exactly Lraw. Spacing sites and leaves not selected as endpoints all belong to F and are retained. The nearby first s endpoints are deliberately not assumed mutually separated or independent.
+
+On three logical representative bits a,b,c apply, chronologically,
+
+    CX(a,b), CX(a,c), CCX(b,c;a).                          (9)
+
+The first output becomes a xor[(b xor a)(c xor a)]=maj(a,b,c), and the other two retain reversible garbage. Recursively apply (9) to the three child representatives of an ordered complete ternary tree. Its leaves are the ordered indices in (7), and each node retains its first representative as output. Induction proves that the final output at B_j is the iterated ternary-majority function f_r of exactly that leaf set. It is increasing in every input bit. All garbage remains and no ancilla is initialized by this word.
+
+For independent Bernoulli(q_bar) leaves, disjoint child subtrees really are independent, giving
+
+    q_0=q_bar, q_(k+1)=3q_k^2-2q_k^3.                     (10)
+
+Use that independent comparison solely in (6). For the actual correlated law, (10) is an upper bound on each endpoint error, not its actual recurrence. The full vacuum failure probability obeys
+
+    delta=1-Tr[(|vac_E><vac_E| tensor I_ZF)rho_c]
+         <=min(1,s q_r).                                  (11)
+
+This is a union bound. No product formula for the s endpoint successes is asserted. The equations remain valid for arbitrary coherences and extensions of (2), since U_c is a phase-exact basis permutation.
+
+For any epsilon_mem>0, choose the first integer r>=1 with
+
+    q_r<=epsilon_mem^2/(9s).                               (12)
+
+The rational recurrence makes this an effective finite search. For 0<q<1/2, 3q^2-2q^3<q, and its only possible limit in [0,q_bar] is0; hence it terminates. A more explicit sufficient rate follows by b_k=1-2q_k: b_(k+1)=b_k(3-b_k^2)/2 grows by at least11/8 while b_k<=1/2, and after q_k<=1/4 the estimate 3q_(k+t)<=(3/4)^(2^t) follows by induction. We do not claim an optimal or hardware-feasible compression rate.
+
+## 4. The complete marginal-preserving comparison
+
+Put Pi=|vac_E><vac_E| tensor I_ZF. A purification of rho_c can be written
+
+    |v>=sqrt(1-delta)|g>+sqrt(delta)|b>,
+
+with normalized orthogonal good/bad vectors and Pi|v>=sqrt(1-delta)|g>. The difference |v><v|-Pi|v><v|Pi is supported on their two-dimensional span and has matrix
+
+    [[0,sqrt(delta(1-delta))],
+     [sqrt(delta(1-delta)),delta]].
+
+Its trace norm is sqrt(delta(4-3delta)). Contracting the purification therefore gives
+
+    ||rho_c-Pi rho_c Pi||_1<=sqrt(delta(4-3delta)).          (13)
+
+The limiting cases delta=0,1 follow directly. Further,
+
+    omega_ZF-<vac_E|rho_c|vac_E>
+      =sum_(e!=vac) <e|rho_c|e> >=0
+
+has trace delta. Thus the difference between sigma_c of (3) and Pi rho_c Pi is positive of trace delta, and
+
+    ||rho_c-sigma_c||_1
+      <=e_mem:=min(2,sqrt(delta(4-3delta))+delta)
+      <=min(2,2sqrt(delta)+delta)
+      <=min(2,3sqrt(s q_r)).                               (14)
+
+Here and throughout norms are unhalved trace norms. Equation(12) suffices for e_mem<=epsilon_mem. The exact marginal identity Tr_E sigma_c=omega_ZF=Tr_E rho_c holds, including all old/reference/trash correlations. Also Tr_F omega_ZF=rho_Z, because U_c acts only on B. This last fact preserves the complete old Z marginal, not merely individual old one-site populations.
+
+The normalized good block Pi rho_c Pi/(1-delta) is intentionally not the target: it generally conditions and changes the old marginal. Equation(14) proves a comparison-state replacement, not physical entropy deletion. The actual compression unitary retains the entire input information in its full output. The approximate target channel of (3) need not itself preserve every memory correlation exactly; its complete output discrepancy is what (14) bounds.
+
+## 5. Exact ordinary-NN compilation and finite counts
+
+Use V=P_++iP_-, P_±=(I±X)/2, so V^2=X. The chronological word
+
+    CV(c,a), CX(b,c), CV†(c,a), CX(b,c), CV(b,a)            (15)
+
+equals CCX(b,c;a) exactly: for control bits b,c its target exponent is c-(c xor b)+b=2bc, with both controls restored. This proves the full operator identity, including phases. Each majority node uses four CX, two CV and one CV†, a total of seven logical two-qubit gates.
+
+For a logical pair at physical ray indices i<j and distance d=j-i, move the first label to j-1 by d-1 consecutive full SWAPs, apply the gate on j-1,j with the transported control/target orientation, and reverse those d-1 SWAPs. The whole word is exactly the intended pair gate on its original factors and identity on every intermediate factor. Thus it costs 2d-1 physical gates. The operator proof works on arbitrary dirty, correlated transit factors. A transit site may belong to another leaf set or already contain garbage; every completed route restores it before another logical gate begins. Original D/S factors are never memory-compression transit.
+
+At a level-k node, write d=3^(k-1). For uniformly spaced logical leaves the seven pair distances are ell times d,2d,2d,d,2d,d,d, with sum10ell d. The only deviation in (7) is the initial gap h_j. At each level exactly one node contains leaf0; precisely five of its seven pairs contain that first representative, so its distance sum acquires5h_j. Hence the exact physical count for endpoint j, and then all endpoints, is
+
+    P_c,j=(20ell r/3)Q-(7/2)(Q-1)+10r h_j,
+    sum_j h_j=(s(s-1)/2)[1+(Q-1)ell],
+    P_c=(20ell r/3)sQ-(7/2)s(Q-1)
+                    +5r s(s-1)[1+(Q-1)ell].              (16)
+
+These are integers because Q is a positive multiple of3 and Q-1 is even. The total logical-node count is N_node=s(Q-1)/2, the logical-gate count is7N_node, and the routing SWAP count is P_c-7N_node. A sufficient exact maximum logical distance is
+
+    D_c=ell[(s-1)(Q-1)+2Q/3],                             (17)
+
+attained by the last endpoint's leftmost root a-to-c pair. The recursive tree and returned-route rule emit every finite edge operation without a controllability oracle. All physical compression edges are consecutive B-ray edges. The schedule below serializes them; simultaneous addressing is not credited.
+
+Positive logarithms for these physical gates are
+
+    Lambda_SWAP=(pi/2)(I-SWAP), norm pi,
+    Lambda_CX=pi Pi_c,       norm pi,
+    Lambda_CV=(3pi/2)Pi_c,   norm3pi/2,
+    Lambda_CVdag=(pi/2)Pi_c, norm pi/2,
+    Pi_c=|1><1|_control tensor (I-X_target)/2.              (18)
+
+Their exponentials are exactly the named gates. In particular the positive CV branch is3pi/2, not a negative pi/2 pulse. All four logarithms have full two-qubit rank1 and scalar coefficient norm/4. Since a node's logical logarithm norm sum is15pi/2, the exact compression action and scalar action are
+
+    A_c=pi[P_c+s(Q-1)/4],
+    scalar_action_c=A_c/4.                                (19)
+
+The SWAP expansion is pi(I-XX-YY-ZZ)/4 and Pi_c=(I-Z_c-X_t+Z_c X_t)/4. Full SWAP/ZZ access, controlled-X/square-root-X channels and their scalars are supplied. Their phase-exact operator word is the classical permutation U_c; scalar action must not be dropped merely because the endpoint permutation has phase+1.
+
+## 6. Full enlarged occupancy and isolation
+
+Keep the exact base inventory from the accepted single-port body d4ed04f7 and joint body dcee9d6f. Its original geometry parameters are L_b>=8, Q_old=3^(r_old)>=3, n_old>=2, X_*=max(n_old-1,Q_old)+2>=5, Y_*=1-L_b<=-7 and M=4q_c. The new Q=3^r in (7) is unrelated to Q_old. In particular X_* is never recomputed from Lraw or the new compression depth.
+
+The original clock is the z=3 square with corners (X_*,Y_*), (X_*+q_c,Y_*), (X_*+q_c,Y_*+q_c), (X_*,Y_*+q_c). Auxiliary counts are
+
+    m1=M+X_*+27-Y_*, m2=M+X_*+19-Y_*,
+    m3=M+X_*+27-Y_*, m=3M+3X_*+73-3Y_*, s=m+M.
+
+Every original D factor and each of these three components stays fixed. Use the same component-2 upper-right root and extend its single ray:
+
+    root=(X_*+q_c,Y_*+q_c,4),
+    B_j=root+(j,0,0), 1<=j<=Lraw.                         (20)
+
+This is the joint alternative's one ray; the auxiliary-only alternative's three rays are not additional silently occupied sites. The first s positions in (20) are exactly the prior E positions.
+
+For the whole admitted family, D lies at z=-1,0,1. Component1 has z<=2. Component2's z=4 cycle has x<=X_*+q_c, its z=4 tail has x=X_*, and its elevated z=5 tail has x<=X_*. Component3's core/tail have x<=3 or x<=X_*-1, and its outer cycle at z=3 has x<=X_*+q_c+1. These coordinate inequalities prove that all B_j are fresh. The only new occupied NN pair besides root--B_1 and consecutive ray edges is
+
+    B_1 -- (X_*+q_c+1,Y_*+q_c,3),                         (21)
+
+to the outer component3 side. No B-D or B-X pair exists. For j>=2, x exceeds every old/auxiliary maximum; the component2 z=5 tail cannot lie above the ray. Extension past s therefore creates no further base-to-ray adjacency. Original root declared degree becomes4, old clock declared degree remains5, and internal ray degree is2. These are graph placements, not proof that unspecified couplings vanish.
+
+For the complete occupied set V_occ=D union S union B define E_geo as ALL unordered distance-one pairs having at least one endpoint in S union B. Define E_dec as the auxiliary internal edges,3M clock ports, six auxiliary-data endpoints, M clock ring edges, and the Lraw ray edges (including root--B_1). The auxiliary internal count is m+3, so
+
+    |E_dec|=m+4M+Lraw+9,
+    E_iso=E_geo minus E_dec,
+    |E_iso|<=6(s+Lraw).                                   (22)
+
+The last inequality is a conservative incidence bound, not a selected count. This set difference explicitly includes old fresh-old, same-component chords and intercomponent omissions as well as (21). Dense near-neighbor rows from the previous geometry are not erased; the outer-cycle/x=3-tail adjacencies at X_*=5 remain. No selected35/36-edge count is reused as a uniform-family proof. The exact number of physical factors is |D|+s+Lraw, with R external. The new extent is x=X_*+q_c+Lraw, y=Y_*+q_c,z=4; the complete box is the union with the unchanged base box.
+
+No additional occupied physical site beyond the literal base and (20) is silently admitted. Extra factors require a new occupancy/isolation inventory. Every unlisted interaction, new-memory onsite term, original D-D alteration or control crosstalk is either exactly absent nominally or included in the full-space residual of section9, after all coefficient/Delta scaling. A uniform omitted-edge norm nu costs at most6(s+Lraw)nu in static full norm; the exact set sum may be smaller. The coordinate proof is analytic; no selected geometry execution is represented as a general inventory proof.
+
+## 7. Paid joint readiness on the actual fixed generator
+
+For a fixed connected S routing graph choose simple internal paths from a_j in S to root of lengths ell_j<=s-1, and continue to B_j. The chronological forward SWAP word along this length ell_j+j path, followed by its reverse with the final edge omitted, exchanges its two endpoints and restores every intermediate factor. The count is2(ell_j+j)-1. Composition over all j exchanges disjoint pairs (a_j,B_j), so
+
+    P_J=s^2+2sum_j ell_j<=3s^2-2s.                        (23)
+
+This is an exact full tensor-factor permutation, even through already information-bearing E positions. It leaves F untouched. Control access on S's declared auxiliary/clock ports is supplied independently of whether a particular installed source coefficient is zero. D is never transit. The endpoint action on the comparison state sigma_c is vacuum S together with Q_SE omega_ZF Q_SE*, where Q_SE relabels the whole old S register as E. Every old D/S/R marginal is retained in D/E/R.
+
+For completeness, the accepted packet synthesis uses a computably certified nonzero pivot p with |psi_p|>1/(2sqrt(M)) for the specified normalized computable one-excitation vector psi. Such a pivot is effectively found by dovetailing certified magnitude approximations, since some amplitude is at least1/sqrt(M). Traverse the original clock NN path v_0=p+1,...,v_(M-1)=p, cutting one ring edge. Set
+
+    r_l=sqrt(sum_(k=l)^(M-1)|psi_(v_k)|^2)>0,
+    a_l=psi_(v_l)/r_l=x_l+i y_l,
+    b_l=r_(l+1)/r_l>0,
+    t_l=sqrt(b_l^2+y_l^2), theta_l=atan2(t_l,x_l) in(0,pi),
+    A_vw=i(sigma_w^+sigma_v^- -sigma_v^+sigma_w^-),
+    N_l=[b_l A_(v_l,v_(l+1))-y_l(n_(v_l)-n_(v_(l+1)))]/t_l,
+    Lambda_l=theta_l(I+N_l).                               (24)
+
+The pivot bounds all denominators away from zero. N_l is zero on pair vacuum/double occupation and has eigenvalues±1 on the one-excitation subspace; thus Lambda_l>=0 with full norm2theta_l and scalar theta_l. In basis(|10>,|01>), exp(-i theta_l N_l)=[[a_l,-b_l],[b_l,a_l*]]. The positive excitation logarithm pi(I-X_(v_0))/2 first makes one excitation exactly, and (24) successively deposits the desired amplitudes with positive remaining tail. All amplitudes, including already deposited ones on the pair vacuum, acquire the same exp(-i theta_l) factor.
+
+A final positive pulse Lambda_phi=ell_phi n_p with0<ell_phi<3pi supplies exp(-i ell_phi)=psi_p/|psi_p|. A computable branch exists without testing a zero coefficient: choose either strict chart Re z>-|z|/2 or Re z<|z|/2; the phase is respectively2atan(Im z/(|z|+Re z)) or pi+2atan(-Im z/(|z|-Re z)), and ell_phi=2pi-phase. Both denominators have a certified positive margin in their chosen charts. Hence synthesis uses M+1 pulses and sends vacuum S exactly to
+
+    exp(-i Theta)|vac_A> tensor |psi_X>, Theta=sum_l theta_l.
+
+These are supplied onsite/hopping/detuning/excitation controls, not native terms inferred from (1). No old clock packet or preimage is assumed. The displaced old X input remains in E. Whole-block positivity of a rotation is not individual positivity of its signed physical channels.
+
+For every local installed block h_alpha of F_inst choose c_alpha>=||h_alpha|| and define
+
+    C_alpha=c_alpha I-h_alpha>=0,
+    kappa=sum_alpha c_alpha,
+    C=sum_alpha C_alpha=kappa I-F_inst>=0,
+    B_F>=||F_inst||, B_C>=||C||.                           (25)
+
+The scalar identity is assigned to that same local support; H0 is absent from this dictionary and is never canceled. Safe choices are B_F=kappa, B_C=sum||C_alpha||<=2kappa. Every coefficient/opposite sign and scalar is a paid local control. B_C is only an upper bound, never an equality assertion.
+
+For the literal single-port Hamiltonian a complete sufficient c-sum is
+
+    kappa=M/a_c
+       +Delta[sum_(i,v) B_i,vv +sum_(i,{u,v})|B_i,uv|+sum_i h_i]
+       +sqrt(Delta)[sum_i q_i+sum_(i,j)(|Re z_ij|+|Im z_ij|)]
+       +sum_j S_j+sum_i d_i+S0+R0.                        (26)
+
+Here a_c=S_c/M; B_i are the actual auxiliary matrices including every loaded diagonal/root/subdivision correction; h_i>=0 are the Pe_i n_b detunings; C0=S0 I+sum_j S_j n_j-sum_i d_i Pe_i, with all these listed scalar coefficients nonnegative. Every undirected auxiliary hopping edge is counted once. The M clock b_j have full norm1/a_c, each auxiliary diagonal/hopping/detuning is priced in its full one-/two-qubit norm, and the two source quadratures share a port but both occur in (26). Scalar blocks S0 I,R0 I have zero compensator when c equals their value, but remain in kappa and in the actual original scalar. The parent dictionary has2m+8M+14 blocks; extending the zero-baseline memory ray adds gates/sites, not fictitious installed F_inst terms. If more installed terms are actually present, extend the dictionary literally.
+
+Use the fixed smooth profile b(x)=exp[-1/(x(1-x))] on(0,1), zero elsewhere, w=b/integral b and U(x)=integral_0^x w. The accepted elementary bounds are
+
+    m0=||w||_infinity<=3sqrt(e),
+    m1=||w'||_infinity<=48sqrt(e),
+    integral U=1/2, integral|w'|=2m0.                     (27)
+
+All derivatives are flat at endpoints. Let u rise by U over r_on>0, stay1 throughout every compression, routed-reset and synthesis pulse, and fall by the reversed profile over r_off>0. A serial positive logarithm Lambda_g has pulse G_g=w((t-t_g)/tau_g)Lambda_g/tau_g, tau_g>0. The complete nominal generator is
+
+    K_act(t)=K+uC+G(t)
+            =H0+(1-u)F_inst+u kappa I+G(t).               (28)
+
+All controls vanish at both endpoints, so the actual nominal installed generator returns to exactly K with B still present and degenerate. If K>=0, then (28)>=0 on the entire Hilbert space because uC,G>=0. A sufficient optional source positivity certificate is R0>=||H0+K_X||+sqrt(Delta)v+sum_i d_i, with v=sum_i(q_i+sum_j|z_ij|), provided the literal source's whole-space L>=0 is used. A scalar called a reserve without such a bound is not a certificate. Arbitrary calibration faults need their own positivity margin or physically installed reserve.
+
+Write T_c for all compression slots, T_J for routing/synthesis slots, T_pl=T_c+T_J and
+
+    T=r_on+T_pl+r_off,
+    A_u=integral u=T_pl+(r_on+r_off)/2.                   (29)
+
+These are actual elapsed durations. Plateau evolution factors as exp(-it H0) times the S/B gate word and its scalar, even for initially entangled Z/B. Commutation of their supports, not state independence, proves this factorization. It does not imply vanishing H0/control covariance.
+
+## 8. Full retained output and the three-part comparison
+
+With omega from (3), define the complete ideal endpoint
+
+    rho_*(T)=|vac_A,psi_X><vac_A,psi_X| tensor
+       (e^(-iT H0) tensor I_EFR) Q_SE omega_D S F R Q_SE*
+       (e^(iT H0) tensor I_EFR).                           (30)
+
+All D,A,X,E,F,R factors are present. The target's D/E/R marginal is exactly the original D/S/R marginal, relabeled S to E and aged on D for T; this follows from Tr_F omega=rho_Z. Its full D/E/F/R correlations are those of omega, aged and relabeled, without conditioning on a successful measurement. Actual unitary evolution retains all input records; (30) is an approximation on the full output and does not assert exact removal of the small residual E information in the comparison-state operation (3).
+
+The comparator generator H_cmp=H0+u kappa I+G has phase-exact unitary endpoint
+
+    U_cmp(T)=e^(-i kappa A_u)(e^(-iT H0) tensor I_SBR)
+                                      W_synth W_route U_c. (31)
+
+On the intermediate comparison domain with E vacuum, the reset/synthesis factor has exactly phase exp(-i Theta). Thus the prepared-map scalar phase is exp[-i(kappa A_u+Theta)]. Equation(30) is a density comparison, where that scalar cancels, but it is retained in (31) and the physical ledger. There is no claim that a pure-state isometry resets arbitrary dirty B exactly.
+
+The smaller release bound must not be applied to U_cmp's actual dirty-memory output. Use the following explicit telescoping argument instead.
+
+1. On turn-on, compare K_act with H_cmp on the complete arbitrary input. Their residual is(1-u)F_inst. Full-space Duhamel gives operator error<=B_F r_on/2 and trace error<=B_F r_on. H0 need not commute with F_inst.
+2. Propagate both states through the common exact compression plateau. At its end the comparator state is rho_c aged on D by r_on+T_c. Replace it for comparison by sigma_c with exactly the same D/S/F/R marginal. Equation(14) costs e_mem; H0 aging commutes with this comparison operation. The physical evolution does not perform this replacement.
+3. Apply the rest of the actual protocol to both states. On the substituted comparison state, routing/synthesis gives A vacuum and X=psi exactly on the plateau. During release compare with H_cmp using Gamma>=||F_inst J_ready||, uniformly over arbitrary D/E/F/R. The comparator remains in J_ready's range as H0 acts only on D. Duhamel has the full actual propagator on the left of the residual; it imposes no readiness or excitation-sector condition on the actual state. This trace price is<=Gamma r_off.
+
+Unitary contraction and the triangle inequality yield
+
+    ||rho_out(T)-rho_*(T)||_1
+       <=min(2,e_mem+B_F r_on+Gamma r_off).                (32)
+
+This proof is uniform over every quantum extension satisfying (2). In particular it neither assumes the dirty compression comparator is ready nor silently multiplies a per-sector bound by an uncontrolled leakage estimate. A full input error eta relative to a specified admitted rho and a full Hermitian implementation residual E_impl(t) give
+
+    epsilon_out<=min(2,eta+e_mem+B_F r_on+Gamma r_off
+                             +2 integral_0^T||E_impl(t)||dt). (33)
+
+With eta>0 the target refers to the specified admitted comparison input; exact old-marginal identities apply to that input, while the actual discrepancy is included in eta. There is no diamond-norm assertion on arbitrary memory outside the admitted class.
+
+For the literal source, let
+
+    T_X=K_X+sum_j S_j n_j,
+    B_D=(S0+R0)I-sum_i d_i Pe_i,
+    mu=<psi|T_X|psi>, p_j=|psi_j|^2,
+    chi=sum_i q_i^2+sum_(i,j)|z_ij|^2 p_j,
+    nu=Var_psi(T_X)+Delta chi,
+    A0=B_D+mu I.
+
+Vacuum/flip orthogonality and the distinct auxiliary flip sites give exactly
+
+    J_ready* F_inst J_ready=A0,
+    J_ready* F_inst^2 J_ready=A0^2+nu I,
+    Gamma=sqrt(||A0||^2+nu).                              (34)
+
+All D/E/F/R correlations are allowed in this operator identity. K_X psi, the clock diagonal mean and both the Pc-source and clock-source squares remain. Explicitly Var(T_X)=Var(K_X)+Var(S_X)+< {K_X-<K_X>,S_X-<S_X>} > with S_X=sum S_j n_j. It cannot be replaced by a sum with that covariance deleted. The original clock's full-Hilbert norm, not its one-excitation restriction, is used in B_F for turn-on.
+
+For any desired nominal error0<e<1, take e_mem<=e/4, r_on=e/[4(B_F+1)], r_off=e/[4(Gamma+1)] and an implementation allowance2integral||E_impl||<=e/4, with eta=0. These finite choices give error<e. Plateau durations may be any positive finite values, with their actual time and prices below. Fixed simultaneous hardware caps may make these choices infeasible; no common-cap theorem is claimed. A computable packet approximation adds its certified vector error twice, or its coefficient errors are instead charged through E_impl, without double counting.
+
+## 9. Full scalar, finite control/calibration and actual baseline
+
+The number of positive pulse blocks and exact sum of their whole-block norms are
+
+    G_tot=P_c+P_J+M+1,
+    A_gate=A_c+pi(P_J+1)+2Theta+ell_phi.                   (35)
+
+The physical scalar of F_inst on the complete D/S/B space is
+
+    s_Finst=M/(2a_c)+(Delta/2)sum_i Tr B_i
+                          +S0+(1/2)sum_j S_j+R0.          (36)
+
+Adding identity factors on B changes no scalar coefficient. Full clock, all auxiliary diagonal loads and the retained reserve are included. At time t the scalar is s_H0+(1-u)s_Finst+u kappa+s_G(t). The exact added scalar action is
+
+    (kappa-s_Finst)A_u+A_c/4+P_J pi/4+pi/2+Theta+ell_phi/2. (37)
+
+It is distinct from the comparator phase kappa A_u+Theta: the positive SWAP/CX/CV/excitation logarithms have the phase-exact endpoints already proved, including the cancellation implicit in their nonidentity parts. Centering an energy estimate never subtracts these physical scalar terms.
+
+For each pulse L_g=||Lambda_g||, its norm action is L_g, peak<=m0 L_g/tau_g, derivative peak<=m1 L_g/tau_g^2 and variation<=2m0 L_g/tau_g. Compensation peak/action/variation are at most B_C, B_C A_u and2B_C. Thus sufficient whole-added-control bounds are
+
+    action<=B_C A_u+A_gate,
+    peak<=B_C+max_g m0 L_g/tau_g,
+    derivative peak<=m0 B_C/min(r_on,r_off)
+                         +max_g m1 L_g/tau_g^2,
+    V_ctrl<=2B_C+2m0 sum_g L_g/tau_g.                     (38)
+
+All pulses are serial. For equal slots tau=T_pl/G_tot, L_g<3pi gives peak<=B_C+3pi m0 G_tot/T_pl and derivative peak<=m0 B_C/r_min+3pi m1 G_tot^2/T_pl^2; variation<=2B_C+2m0 A_gate G_tot/T_pl. These are finite sufficient prices, not minimal times or feasibility under arbitrary caps.
+
+Whole-block norms in (38) are valid only for errors certified for the complete block. For separately controlled physical channels, split the literal Hamiltonian and sum their absolute coefficient-norm loads. The compression/SWAP/excitation/phase Pauli expansions have channel norm sums equal to their stated L_g. A rotation(24), separated into identity, hopping and two occupation terms, has sum<= (1+sqrt(5))theta_l rather than2theta_l. Hence a sufficient summed pulse-channel action is
+
+    A_gate,ch<=A_gate+(sqrt(5)-1)Theta.                    (39)
+
+For compensation write each literal h_alpha=sum_mu h_alpha,mu in the actually supplied local channels, including its scalar, and set
+
+    D_C=sum_alpha [c_alpha+sum_mu||h_alpha,mu||].           (40)
+
+It bounds the summed uncompacted channel load; cancellations may lower it. For the dictionary(26), split each clock b_j into its two occupations and hopping, and all other blocks into the displayed Pauli/occupation channels. Their channel sum is at most(3/2)c_alpha for clock blocks and c_alpha for the others, so D_C<=(5/2)kappa is a safe explicit bound. This may be loose for scalar blocks whose compensator is zero. Use D_C, the actual gate-channel sums and their durations in per-channel versions of (38). Per-site loads sum only the corresponding local channels touching that site, plus the installed loads; bounded lattice degree alone does not bound their coefficients. If a different physical dictionary is supplied, (40) must be recomputed rather than using the whole-block norm silently.
+
+A common compensation envelope discrepancy delta u and independent compensation coefficient error sum zeta_C=sum||Delta C_alpha|| have integrated operator allowance
+
+    A_u zeta_C+(B_C+zeta_C)integral|delta u|.
+
+For normalized pulse envelope f_g=w((t-t_g)/tau_g)/tau_g, logarithm error||Delta Lambda_g||<=zeta_g and envelope discrepancy e_g, the allowance is
+
+    sum_g [zeta_g+(L_g+zeta_g)integral|e_g|].              (41)
+
+Multiply these operator allowances by2 in (33). For individual channels use their summed coefficient errors/loads, including both quadratures, scalars and any crosstalk. This is a full-space statement; no excitation-sector control norm is sufficient. Computable coefficients/pulses permit finite certified approximations at these accuracies, conditional on the supplied calibration mechanism, not exact hardware real numbers for free.
+
+Zero-extending envelopes, a shift d of the complete compensation schedule has integral|delta u|<=2|d| and trace allowance4B_C|d|. A shifted pulse has allowance4m0 L_g|d_g|/tau_g. Shifted supports must fit inside declared off-guards, or the actual endpoint and all durations/aging/residual integrals must be enlarged. A time-translation estimate is not an off-switch. For an actual post-return idle delta_t, comparison at the old endpoint adds2||K_base||delta_t; comparison with both states evolved under the same K_base simply preserves their error. Subsequent use starts from the actual endpoint and any actual wait.
+
+For isolation define zeta_iso(t)=sum_(e in E_iso)||E_e(t)|| after all Delta/control scaling. Add every memory onsite field, undeclared original interaction change and scalar/control error to E_impl. Their trace allowance is2integral||E_impl||, bounded by the sum of these full norms. A static error E_base present before and after the drive means the actual baseline is
+
+    K_base=K+E_base,
+
+not K. Controls that vanish at endpoints return exactly to K_base. A certified||E_base||<=zeta contributes2Tzeta to (33), with any separately counted time-dependent faults added once. Positivity then requires K_base>=0, for example an actually installed retained margin K>=zeta I. Any added reserve is included in F_inst, kappa, Gamma, moments and scalar prices; the bound itself does not install it. A switched fault-reserve control must vanish at the actual endpoint to claim return, while a retained baseline reserve must not be switched off.
+
+Alternatively known static local memory/coupling blocks can be included in an enlarged F_inst and compensated literally. Then B_F,kappa,B_C,Gamma,channel/scalar sums and moment formulas must be recomputed; Gamma=B_F remains safe. The simple scalar nu in (34) need not survive when F_inst acts on retained E/F. The gate/permutation/probability argument still applies because the plateau leaves only H0, but zero free memory is no longer the uncompensated nominal description. Uncontrolled leakage is never priced by a prepared-sector norm.
+
+## 10. Endpoint moments, correlations, work and consumption
+
+No low-energy condition is imposed on the input. Its initial moments are those of the literal installed K on rho_DS (or K_base on the full state). At the ideal endpoint, rho_D(T)=e^(-iTH0)rho_D e^(iTH0). The ready compression identities are
+
+    J_ready* K J_ready=H0+A0,
+    J_ready* K^2 J_ready=(H0+A0)^2+Q_F,
+    Q_F=J_ready* F_inst(I-J_ready J_ready*)F_inst J_ready>=0. (42)
+
+For the literal(34), Q_F=nu I. Consequently
+
+    mean_*=Tr[rho_D(T)(H0+B_D)]+mu,
+    Var_*=Var_(rho_D(T))(H0+B_D)+Var_psi(T_X)+Delta chi.    (43)
+
+Both symmetrized H0/B_D covariance and the K_X/S_X covariance in (34) remain. H0 aging preserves H0 moments, but generally not B_D moments or their covariance. Initial correlations with raw memory do not change the exact ideal D marginal, since (3) preserves the old marginal before reset. They remain in the target's retained records.
+
+For a real estimate center alpha and beta>=||K-alpha I||, full trace error epsilon implies scalar mean error<=beta epsilon, centered second-moment error<=beta^2 epsilon and scalar variance error<=3beta^2 epsilon. For retained Y=E F R, the explicitly centered ordered partial moments
+
+    M_j^[alpha](rho)=Tr_(D A X)[((K-alpha I)^j tensor I_R)rho]
+
+obey||Delta M_j^[alpha]||_1<=beta^j epsilon for j=1,2 by general bounded-test trace-norm duality. If the installed operator has been enlarged to act on E/F, these partial moments can be non-Hermitian and the proof must allow all bounded tests, not only Hermitian ones. They are linear records, not conditional variances or an energy-measurement procedure.
+
+Writing epsilon_Y=||Delta rho_Y||_1<=epsilon, raw moments retain the scalar and marginal:
+
+    Delta M_1^[0]=Delta M_1^[alpha]+alpha Delta rho_Y,
+    Delta M_2^[0]=Delta M_2^[alpha]+2alpha Delta M_1^[alpha]
+                                           +alpha^2 Delta rho_Y,
+    ||Delta M_1^[0]||_1<=beta epsilon+|alpha|epsilon_Y,
+    ||Delta M_2^[0]||_1<=(beta^2+2|alpha|beta)epsilon
+                                           +alpha^2 epsilon_Y. (44)
+
+The compression comparison preserves ZF exactly at its split, but later preparation faults need not preserve the final retained marginal. Thus that equality cannot be used to delete raw-moment terms in the actual endpoint claim. In particular K=alpha I, beta=0 and a small allowed SWAP overrotation can change rho_E, leaving a raw first-moment defect alpha Delta rho_E even though every centered moment vanishes. The corrected parent's counterexample remains intact.
+
+For an unabsorbed static E_base, these ideal formulas refer to nominal K only. For actual K_base use its ready compression in (42), or bound discrepancies conservatively with||E_base||<=zeta: mean error<=(beta+zeta)epsilon+zeta; centered second-moment error<=(beta+zeta)^2 epsilon+2beta zeta+zeta^2; variance error<=3(beta+zeta)^2 epsilon+2beta zeta+zeta^2. Static memory energy cannot disappear from an actual energy claim.
+
+At any nominal driven time, the full finite norm
+
+    ||H0||+(1-u)B_F+u kappa+||G(t)||
+
+bounds absolute means and its square bounds second moments/variance. Include full static/dynamic residual norms for actual perturbed estimates. Commutation of H0 with memory gates does not imply their covariance vanishes when the initial state is correlated. All cross anticommutators in the full variance remain; no product-state simplification is invoked.
+
+Because the same installed baseline is present at both endpoints and all controls vanish there, the finite closed-drive work identity is
+
+    W=Tr[K_base rho(T)]-Tr[K_base rho(0)]
+      =integral Tr[rho(t) d_t(uC+G+E_ctrl)]dt.             (45)
+
+Nominally |W|<=V_ctrl from (38). Differentiable switched faults add their total variation integral||dot E_ctrl||; an integrated calibration norm alone gives no variation bound. Independently, |W_actual|<=2||K_base-alpha I|| for the same finite baseline. These are finite model allowances, not minimum thermodynamic work, controller manufacture or evidence of cooling by a natural bath.
+
+The initial B diagonal entropy is the Markov Shannon entropy, but arbitrary coherences mean it is not generally the von Neumann entropy of rho_B; no iid entropy formula is used. The complete actual evolution is unitary, preserves its full information/entropy, and retains all trash/spacing/reference factors. At the final ideal comparison E holds the complete former S record. Actual E/F is not reset to the original Markov law and is not certified independent for another use. Repetition needs a newly supplied admitted raw register or a separately constructed and charged restoration mechanism.
+
+## 11. Preserved failures and a strict correlated-output witness
+
+**All-equal source:** the diagonal state (1-q)|0...0><0...0|+q|1...1><1...1| has the same individual bias q but every recursive-majority endpoint equals the common bit. Its full E failure remains q for every finite r. It is the stationary copy chain P=I with lambda=1 (and unspecified stationary q), outside(2)/(4). This is a counterexample to one-site-bias-only reasoning, not a no-go for the certified mixing class. No finite ell is justified for that chain.
+
+**False product inside the admitted class:** take0<q<1/2 and0<lambda<1, equivalently a=(1-lambda)q, b=(1-lambda)(1-q). Choose any admitted ell and s>=2. Let A_1,A_2 denote the two endpoint-failure Boolean functions after exact compression. They are increasing functions of the full Markov string. Generate the string from X_1~Bernoulli(q) and independent uniforms U_2,...,U_L using thresholds a+lambda X_(i-1). For fixed uniforms, each A_j is increasing in X_1 and in every variable1-U_i. Conditional covariance in X_1 is
+
+    q(1-q)[A_1(1)-A_1(0)][A_2(1)-A_2(0)]>=0.
+
+On the positive-probability event that every U_i lies in(a,a+lambda], all subsequent bits copy X_1, so both bracketed differences equal1. This event has probability lambda^(Lraw-1). Moreover the two conditional means E_(X_1)A_j are increasing functions of independent1-U_i. Their covariance is nonnegative: for one independent variable the identity Cov(f,g)=(1/2)E[(f(V)-f(V'))(g(V)-g(V'))]>=0 proves this, and conditioning/induction proves the product-variable version. Total covariance therefore gives the strict bound
+
+    Cov(A_1,A_2)>=q(1-q)lambda^(Lraw-1)>0.                 (46)
+
+The same positive covariance holds for their success indicators. Thus even with finite certified mixing and the exact spaced-leaf layout, the joint success probability is not the product of the marginal successes. The bound q_r is also not generally the actual marginal error. The old equality p_good=(1-q_r)^s is unjustified here for two separate reasons. Equation(11) avoids both errors.
+
+**Normalized-good-block failure:** choose interior0<a,b<1 and a reference that coherently copies the whole initial computational string, for example sum_x sqrt(p(x))|x>_B|x>_R. This is admitted by(2). Compression is a permutation, and the nontrivial good/bad E event is a function of that original string. Normalizing its good block conditions the R distribution on that event; its R marginal differs from the unconditioned one by trace norm2delta. An old/reference bit recording the event would likewise change its marginal. This proves why the normalized good target cannot replace(3), despite remaining a useful comparison in the independent-parent theorem. The prescribed marginal-preserving target and bound(14) repair this failure without physical measurement.
+
+**Other retained implementation failures:** a forward-only route does not restore dirty intermediate factors; one-excitation exchange is not full SWAP; control/target orientation cannot be inferred from geometric left/right after routing; missing positive-branch scalar terms corrupt phases; enlarging Q and recomputing X_* would move the original clock inventory; freshness does not remove omitted NN couplings; leaving F_inst active during a slow compression does not permit an H0-only target; applying Gamma to the unready compression comparator bypasses an essential error step; a field still on after T invalidates return; dropping F or treating E as reusable deletes required records. These are specific failed shortcuts, not general impossibility claims.
+
+## 12. Bounded theorem, evidence and unresolved suppliers
+
+Under(1)-(2), the literal finite geometry/control/isolation hypotheses, any computable normalized one-excitation target psi and any positive error allocation admit the finite circuit(7),(9),(15),(18),(23)-(24), paid positive compensation(25)-(29), and complete output(30) with bound(33). It uses exactly the original first s E sites, a finite extension of that same ray, preserves every original nonclock factor up to actual H0 aging, and returns to the declared actual baseline. The only retired supplier conditions are exact raw-memory product structure and initial raw-memory/old-system independence, replaced by the quantitative complete diagonal law(2) and effective mixing/bias certificates.
+
+Every new mathematical claim above is analytic author work pending separate checking. No new scientific fixture, old-fixture replay, Hamiltonian sweep or large Hilbert-space calculation was executed. The optional diagnostic contemplated by the selection memo was not needed: the nonuniform coupling, full quantum comparison, exact count and strict false-product witness have explicit proofs. This is not a count of passed tests. The dated parent 31/159 and biased-memory fixtures support only their original scopes, including their recorded defects; none is presented as evidence for this extension. Metadata capture/final source checks only establish file identity.
+
+Native bias/mixing preparation, actual interaction/control supply, independent addressability, autonomous scheduling, common-cap viability, thermodynamic reservoir manufacture, repeated-use restoration, saturated-pair access and full scheduled-pair programming remain open. The construction assumes no new physical axiom, no classical reader and no uncharged clean controller. The old fixed clock and its programmed interaction geometry are unchanged. A later simulator theorem must apply to the same actual post-generator and the complete state(30), with D already aged by the actual T and all E/F/R records retained; further common evolution propagates the readiness error, and any additional simulator error must be charged separately.

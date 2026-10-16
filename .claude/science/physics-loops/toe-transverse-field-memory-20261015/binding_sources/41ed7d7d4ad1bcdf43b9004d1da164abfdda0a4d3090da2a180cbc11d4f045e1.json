@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-15T19:14:39.587185+00:00",
+  "refs": {
+    "HEAD": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "fetch_scope": "Actual origin/main fetch19:01; instruction ref observed unchanged, not fetched anew.",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1905/EXECUTION.json",
+      "bytes": 1176,
+      "sha256": "291a8e91a8fa58422a6d13fc80f91c06e122a3ac85f6dc5416d258ba59c42190"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1905/EXECUTION.json",
+      "bytes": 1261,
+      "sha256": "a114f85b470a7e4d81a92d4bfad0fcf9a058732fede37f633b2e4ce4e057cfd8"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1905/stdout",
+    "bytes": 17516,
+    "sha256": "d74ceff0f3eb91588e50d725b4effbe31101da328f09ac626ec30825770f4bfd"
+  },
+  "previous_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1832/REFS.json",
+    "bytes": 5882,
+    "sha256": "45ca48ff9e7cc2e5cb23b13a046e67be4bfb9e58fe180174dbebf1a1e5e6d810"
+  },
+  "inventory_count": 45,
+  "inventory_delta": {
+    "new": [
+      {
+        "baseRefName": "codex/observations-backward-windows-20261015",
+        "headRefName": "codex/observations-backward-environment-20261015",
+        "headRefOid": "9a19c88e254a4d0eed3d4f4ed76ffa5e0082b6db",
+        "isDraft": false,
+        "number": 9614,
+        "title": "[physics-loop] physical-metric scalar bounds: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614"
+      },
+      {
+        "baseRefName": "physics-loop/toe-finite-memory-bank-20261015",
+        "headRefName": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+        "headRefOid": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+        "isDraft": false,
+        "number": 9615,
+        "title": "[physics-loop] local-bias-gibbs-sources: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615"
+      }
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "external_9614_scope": "New external head9a19c88e; scoped inspection pending. No source imported.",
+  "current_publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_bias/PUBLICATION.json",
+    "bytes": 1571,
+    "sha256": "715f1263ef6bc5c8f36b158cd5dec26a40f51f643ac6339cfe6dccceab167182"
+  },
+  "current_attachment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/local_bias/ATTACHMENT.json",
+    "bytes": 374,
+    "sha256": "fb47dbfcfbdc5bc525356f831e654beb9237b8d9fc2a025774cecd1796b9a6c7"
+  }
+}

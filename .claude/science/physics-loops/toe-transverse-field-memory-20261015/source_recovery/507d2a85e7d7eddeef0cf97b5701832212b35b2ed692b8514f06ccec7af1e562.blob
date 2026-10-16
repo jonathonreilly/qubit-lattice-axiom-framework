@@ -1,0 +1,184 @@
+---
+claim_id: transverse_field_gibbs_memory_bounded_theorem_note_2026-10-15
+claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+artifact_role: theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+conditional_surface_status: supplied finite Gibbs marginal and basis, strict local longitudinal margin, inverse-temperature lower bound, transverse upper bound, full positive controls, calibrated switching and compensation, full lifetime isolation
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: a restricted noncommuting finite Gibbs source supplies a uniform computational full-conditional bias and a fully retained conditional readiness input
+status: proposed_retained
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+canonical_parent_binding_complete: false
+publication_pr: null
+publication_status: source_proposal_awaiting_root_binding
+source_acceptance_status: checked_conditional_source
+upstream_dependencies: ["local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15"]
+runner: scripts/transverse_field_gibbs_memory_2026_10_15.py
+packet: .claude/science/physics-loops/toe-transverse-field-memory-20261015
+next_trace_action: bind the actual reviewed tree and selected Git base, execute source-integrity and integration gates, then prepare a regular conditional-support milestone
+---
+
+Claim type: bounded_theorem
+
+# Transverse-field Gibbs memory with a uniform computational bias
+
+**Primary-runner role: source integrity only.** The proposed 60-second primary checks the three exact mathematical bodies, one canonical consumer, selected recovery evidence and an actual root binding. It performs no physical simulation, mathematical proof test, memory preparation or audit certification. It remains unexecuted in this source-only proposal and fails closed until root supplies a separate actual binding and every declared receipt input.
+
+A finite graph with diagonal occupation interactions and onsite transverse X/Y fields can have a computational Gibbs diagonal whose every full one-bit conditional is uniformly below one half, even with signed, spatially frustrated edges. A strict local longitudinal margin, a positive inverse-temperature lower bound and a finite transverse-strength upper bound give the explicit bound below, independent of the graph size and of the probability of the conditioned computational record. On the inherited fixed memory ray this supplies the local-bias consumer's reversible compression input. A physical non-diagonal source-removal stage additionally requires its full reduced Gibbs density, or a full reduced trace-distance delivery promise. Every original factor, displaced record, reference and garbage factor remains in the comparison target.
+
+The exact root proposal 5cbafbd7, independently sealed derivation 5f716396 and subsequent exposed comparison 6693f24d are preserved below byte for byte. Actual root source acceptance 41b73666 is archived with its verification, seal and real metadata receipt. The source-only wrapper records their accepted scope; it does not rewrite their historical proposed/unreviewed labels or imply that a primary, cache, mutation, graph, repository binding, PR or retained audit has run.
+
+## Finite Hamiltonian and the sharp uniform conditional bound
+
+Let B consist of L>=1 qubits on a finite ordinary-nearest-neighbor graph. Write n_i=(I-Z_i)/2 and use the actual supplied coefficients
+
+    G = sum_i h_i n_i + sum_e(J_e n_i n_j+c_e I) + k0 I
+        + sum_i(g_i I-a_i X_i-b_i Y_i),
+    g_i=sqrt(a_i^2+b_i^2),
+    c_e>=max(0,-J_e),  k0>=0,
+    h_i-sum_(e incident i)max(0,-J_e)>=gamma>0,
+    beta>=beta_min>0,  beta finite,  0<=g_i<=g_max<infinity.
+
+Each displayed block is positive. The field-margin condition in particular implies h_i>0. Set tau_G=exp(-beta G)/Tr exp(-beta G), p(x)=<x|tau_G|x>, R_i=sqrt(gamma^2+4g_i^2), and R_max=sqrt(gamma^2+4g_max^2). Every computational record y on B without site i has positive probability, and
+
+    p(x_i=1 | x_without_i=y)
+      <= q_i = [1-(gamma/R_i)tanh(beta R_i/2)]/2
+      <= q_star = [1-(gamma/R_max)tanh(beta_min R_max/2)]/2 < 1/2.
+
+The one-qubit member h=gamma, g=g_max, beta=beta_min attains q_star, so this uniform allowance is sharp for the stated class. The result concerns the B marginal in this basis. It does not bound conditionals after measuring an arbitrary retained reference or after changing the measurement basis. Neither product input, spatial mixing, unfrustrated edges, full-output independence nor a Markov law is assumed.
+
+A local Z phase transformation makes each onsite transverse coefficient real nonnegative while preserving computational probabilities. After removing a scalar for the probability calculation, the finite product formula has a positive closed-path expansion. Condition on the entire temporal paths of all sites except i. The remaining site is a ferromagnetic temporal ring with every longitudinal field at least the field corresponding to gamma. An elementary common-uniform heat-bath coupling compares it to the constant-field ring. Averaging over the other paths conditioned on the specified endpoint record preserves the inequality. At each fixed finite L the positive-denominator ratio converges to the exact Gibbs conditional, and the constant-field ring converges to the one-qubit formula. Zero transverse fields follow by constant paths or fixed-volume continuity. This proof uses temporal order, not a spatial ferromagnetic assumption, an efficient sampler or a uniform finite-product rate for rare records. The elementary comparison process supplies no physical equilibration timescale.
+
+The independent derivation was sealed before the candidate was opened, but both derivations use this same mathematical mechanism and the same selected model/effort with shared older sources. Their agreement is not independent-method replication or a formal proof certificate. The later comparison is explicitly source-exposed.
+
+## Actual-member calibration and a concrete finite ray family
+
+A sufficient local interval certificate is
+
+    h_i^0-epsilon_i-sum_(e incident i)max(0,-J_e^0+zeta_e)>=gamma,
+    |a_i-a_i^0|<=u_i, |b_i-b_i^0|<=v_i,
+    sqrt[(|a_i^0|+u_i)^2+(|b_i^0|+v_i)^2]<=g_max.
+
+The scalar reserves must separately cover every admitted member: c_e>=max(0,-J_e) and k0>=0 throughout the class; a fixed transverse reserve t_i must satisfy t_i>=g_i. A bound on nonconstant coefficients alone does not certify these reserves. Effective finite parameter selection uses supplied computable bounds, including a certified rational q_bar with q_star<=q_bar<1/2; arbitrary inaccessible real data are not a control algorithm.
+
+For a degree-at-most-two ray, h_i in [3/2,5/2], J_e in [-1/4,1/4], c_e=1/4, g_i<=1/4, k0=0 and finite beta>=1 give gamma=1 and the uniform rational choice q_bar=3/8. This includes nonzero onsite transverse fields and nonzero diagonal pair interactions that do not commute. The source norm allowance is at most (7L-1)/2. These are a supplied finite mathematical class and an upper allowance, not inferred native couplings or equality for every member.
+
+This interval result certifies the actual member's equilibrium diagonal. It does not approximate a fixed nominal global state, coherent quench unitary, physical scalar energy, work or raw moments. A fixed nominal dynamical target still needs its own full-space residual bound. As beta_min gamma tends to zero or g_max/gamma grows without bound, the certified margin can vanish; this is a limitation of the quantified certificate, not a general impossibility theorem.
+
+## One direct consumer and the fixed-endpoint preparation contract
+
+The direct mathematical consumer is [Local-bias Gibbs memory and complete readiness](LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md), exactly 166194 bytes, SHA256 ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89, claim local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15. Its current consumer provisions supply the full-conditional-to-partial-history tower argument, stochastic domination, reversible majority compression, sharp full-marginal comparison, physical gate dictionary, fixed ray routing and complete readiness interface. The exact imported source/review intervals are recorded in DEPENDENCIES.json. The new transverse conditional theorem and non-diagonal switch algebra are proved in the three bodies here. The parent's correlated-memory, joint-readiness and geometry inputs are transitive. Git ancestry, the separately published finite-bank extension and the prior rotated-source or excluded-pair examples do not add mathematical edges to this claim.
+
+The parent was published by root as regular OPEN [PR9615](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615), at head492cf6670fdddcd6c091ef5c978d7519e9ba0b6f and tree62e8a00f97a327c38d248dc608375fd93a079e4a, according to the dated actual publication and successful attachment receipts. Its checkout bytes were observed unchanged at the identity above. This records the parent; the future transverse-field base, binding and publication remain separate root decisions.
+
+Let Z contain all original factors and the retained reference, with old reset register S=A union X of size s>=1. X is the original M-site clock and A its full auxiliary register; D denotes the other original active factors. The inherited installed generator is K_Z=H0+F_inst, with H0 supported on D. The original sites, finite clock hopping operator and admitted clock-packet synthesis domain remain exactly those of the parent. No commutation of H0 and F_inst is assumed. The ray B and all new fields must satisfy the parent's actual nearest-neighbor geometry and isolation contract. After source removal its nominal baseline is zero. Every extra source edge, occupied neighboring site, residual field and old omitted coupling is absent nominally or included in the full-space error integral over the whole physical lifetime.
+
+Choose r>=1, Q=3^r and L=sQ. The fixed first s endpoints are E={B_1,...,B_s}; F=B without E is retained. The ell=1 leaf allocation is
+
+    x_(j,0)=j,
+    x_(j,t)=s+(j-1)(Q-1)+t, 1<=j<=s, 1<=t<Q.
+
+These are labels on the parent's literal +x ray, not relocated logical qubits. Every partial-history conditional is at most q_bar by a conditional expectation of the exact full conditionals. Common-uniform threshold coupling therefore dominates the selected bits by independent Bernoulli(q_bar) variables. Recursive majority is increasing, so with t_0=q_bar and t_(u+1)=3t_u^2-2t_u^3 the union of endpoint-one events has probability delta<=min(1,s t_r). No independence of the cooled endpoints is used.
+
+The inherited completed circuit is a phase-exact reversible permutation on the whole ray. It uses the full positive NN SWAP/CX/CV logarithm dictionary and returned dirty routes, valid on entangled transit factors. Its ell=1 compression prices are
+
+    P_c=(20r/3)sQ-(7/2)s(Q-1)+5r s(s-1)Q,
+    A_c=pi[P_c+s(Q-1)/4],  scalar action=A_c/4.
+
+The parent supplies the exact distance formulas, schedule and per-pulse strength/slew prices; no new fast, polynomial or fixed-cap control claim is imported. Compression takes the actual sum of all admitted finite pulse durations. Its quantum coherences and all route outputs remain in the full state.
+
+For the modeled post-delivery state rho_q let rho_c=U_c rho_q U_c*, omega=Tr_E rho_c and sigma_c=|0_E><0_E| tensor omega. The sharp inherited comparison gives
+
+    ||rho_c-sigma_c||_1<=g(delta),
+    g(delta)=delta+sqrt(delta(4-3delta)),  0<=delta<=1.
+
+The trace norm is unhalved. This comparator preserves exactly the entire unconditioned ZF marginal of the modeled compression. It does not normalize a successful branch, physically discard a factor, replace correlations by a product source, or assert purity on a faulty actual trajectory. The later reset word exchanges each original S record with its E destination using returned routes; every displaced record and F factor remains. The specified computable normalized complex packet, including zero amplitudes, is prepared on original X, with A vacuum, under the unchanged synthesis hypotheses and costs. This is a conditional supplied one-use input, not a memory-restoration or recycling protocol.
+
+## Non-diagonal source removal and the actual chronological target
+
+If no physical source-removal evolution is claimed, a directly supplied post-delivery B diagonal satisfying the theorem's event bound is sufficient for compression. For the actual non-diagonal quench considered here, the stronger premise is
+
+    rho_B=tau_G,
+
+or a supplied full reduced trace-distance allowance (1/2)||rho_B-tau_G||_1<=d. The initial joint rho_ZB may have arbitrary coherences and arbitrary old/reference correlations. It is not required to factorize. With disjoint K_Z and a nonnegative regular nonincreasing envelope u_q from 1 to 0,
+
+    U_q=exp(-it_q K_Z) tensor exp(-i A_q G),
+    A_q=integral_0^t_q u_q(t)dt,
+    rho_q=U_q rho_ZB U_q*.
+
+The full reduced Gibbs density commutes with G, so its marginal remains tau_G. Correlations in rho_q can change. An approximate reduced-state promise remains at distance d under the ideal switch and hence changes every specified computational event by at most d. Use delta_bar=min(1,s t_r+d) in g. This is an event-TV allowance used once; it does not make the approximate input satisfy every rare full conditional. It also supplies no approximation of the whole joint input to a product state.
+
+The preparation then uses the parent's positive compensation C=kappa I-F_inst, assembled from actual positive local blocks, B_F>=||F_inst|| and B_C>=||C||. The complete nominal preparation generator is
+
+    H_p(t)=H0+(1-u_p(t))F_inst+u_p(t)kappa I+G_p(t).
+
+The installed K_Z must itself have the supplied positivity/reserve property. All gates run on the fully compensated plateau. Every pulse, both ramps and every guard contribute to the actual elapsed T_p. On the ideal comparator the completed record-transfer/synthesis map has the parent's phase exp[-i(kappa A_u+Theta)] and H0 aging for that whole T_p. The target applies the actual K_Z evolution for t_q first, then the H0-aged preparation map, to the complete rho_q/sigma_c construction. These generally cannot be collapsed to one exponential because K_Z and H0 need not commute. The source phase exp(-i a_TF A_q) and all nonconstant source phases remain in the propagator and ledger.
+
+The comparison order is full-space turn-on, the single pure-comparator replacement, and only then the ready-range release estimate Gamma>=||F_inst J_ready|| on the whole retained complement. With the parent's actual ramp durations r_on,r_off and full-space implementation residuals E_q,E_p, the sufficient final unhalved trace price is
+
+    min(2, g(delta_bar)+B_F r_on+Gamma r_off
+           +2 integral||E_q(t)||dt+2 integral||E_p(t)||dt).
+
+A separately supplied full-input comparison error adds once if a fixed different target is used. No actual faulty state is assumed ready for the restricted release bound. Omega is the exact modeled complement; replacing it by the actual faulty midpoint marginal needs its own marginal-change allowance. The finite clock release Gram/covariance calculations and the full-sector norms remain those of the unchanged parent consumer.
+
+Every interval counted solely as H0 aging must have u_p=1 throughout. An uncompensated wait must appear as its actual ordered segment in the target or contribute its comparison residual. Its elapsed time cannot be dropped because its nominal and actual idle controls happen to agree. Compensation action is exactly ||C||A_u and **at most** B_C A_u. The thermal field must vanish at the declared endpoint; otherwise the changed installed baseline, positivity, release, scalar and moment accounts must be recomputed. Integrated norm errors alone do not guarantee positivity or bound endpoint energy, bandwidth or work.
+
+## Source scalar, channel, time and work ledger
+
+For the literal positive blocks the whole-space norm allowance and independently calibrated uncollected Pauli-channel load are
+
+    kappa_TF=sum_i(h_i+2g_i)+sum_e[c_e+max(J_e,0)]+k0,
+    ||G||<=kappa_TF,
+    S_unc=sum_i[h_i+g_i+|a_i|+|b_i|]
+          +sum_e[|c_e+J_e/4|+3|J_e|/4]+k0.
+
+The full Pauli identity coefficient and fully collected operator coefficient sum are
+
+    a_TF=(1/2)sum_i h_i+sum_i g_i+sum_e(c_e+J_e/4)+k0,
+    S_col=|a_TF|+sum_i|h_i/2+(1/4)sum_(e incident i)J_e|
+          +(1/4)sum_e|J_e|+sum_i(|a_i|+|b_i|).
+
+Under the stated margin and reserve hypotheses,
+
+    S_unc-S_col=sum_e max(0,-J_e).
+
+The root ledger charges S_unc for its supplied independent channels; the independent proof's S_col describes a separately collected operator implementation. Attractive-edge cancellations cannot lower independent channel calibration costs silently. The source-phase gauge used in a probability proof cannot replace actual |a_i|+|b_i| hardware costs by g_i. The scalar removed there is C_block=k0+sum_e c_e+sum_i g_i, which is different from a_TF. Neither can be dropped from physical phases or energy accounting.
+
+A robust constant transverse reserve t_i>=g_i adds sum_i(t_i-g_i) to G, its scalar, norm allowance and channel load. It leaves tau_G and its computational probabilities unchanged while changing physical phase and work. Bounded degree and uniformly bounded h_i,J_e,c_e,g_i with k0=O(L) imply kappa_TF,S_unc=O(L). Action and slew additionally require bounded A_q and ||u_q'||_infinity. A bound on A_q does not bound t_q or eliminate old-system aging.
+
+For a regular monotone source profile with endpoints 1 and 0, the source-field action, peak, slew and total variation are respectively A_q||G||, ||G||, ||u_q'||_infinity||G|| and ||G||. A finite slew requires the stated regularity and derivative bound. These are source-field costs; old-generator, compensation, gate, isolation and all elapsed-time costs are additional. The complete inherited literal positive gate, scalar and channel budgets remain required. An operator-norm bound on the total generator is not interchangeable with separately positive physical channels.
+
+The ideal source expectation is conserved for any input because G commutes with K_Z+u_qG. Thus its formal switch work is W_q=-Tr(G rho_B(0)). Stationarity of the entire B marginal is a separate use of the full-density premise. The process starts with K_Z+G and ends with K_Z; this is not a same-Hamiltonian cycle, a free supply or a recycling certificate. Fault work must be compared using actual endpoint Hamiltonian/norm contracts or the appropriate variation/trajectory contracts. A time-integrated state-error allowance alone gives no absolute endpoint work price.
+
+For bounded retained moments, centered and raw quantities stay distinct. If K=aI+K_tilde, a centered m-th power has the ordinary norm-duality allowance ||K_tilde||^m times the full trace error. A raw m-th power requires its full binomial scalar and lower-moment terms, including a^m times any difference of the retained marginal. General operator-valued partial traces and noncommuting retained tests use the parent's general trace-norm/operator-norm duality; they are not automatically real covariances. Old/control covariance, reference records, full source scalars and the actual baseline are retained. No small centered moment claim erases a large scalar energy or a changed marginal.
+
+For fixed finite s and strict computable q_bar<1/2, the majority recurrence tends to zero and some finite r reaches any specified event budget. Arbitrary readiness accuracy additionally requires d and every implementation/ramp/isolation allowance to improve accordingly. A fixed delivery error floor or a growing unpriced lifetime residual is not removed by increasing L. No common hardware cap, efficient thermal sampler, native switch, native controller or thermodynamic preparation cost is proved.
+
+## Retained witnesses, exposure and evidence limits
+
+The narrow witnesses are part of the scope, not a broad no-go claim.
+
+- Small global event-TV does not preserve rare full conditionals. For independent g=0 Gibbs bits with p0<1/2, shift mass (1-p0)p0^(L-1) from x_i=0 to x_i=1 at the all-one complement record. The complement marginal is unchanged and total variation is arbitrarily small as L grows, but that conditional becomes 1. This explains the single additive bad-event allowance.
+- A retained reference can copy the computational record. Reference-conditioned bits may then be certain although the B marginal obeys the theorem. All records remain and no reference-conditioned q_bar is asserted.
+- A matching diagonal is insufficient before the non-diagonal quench. For G=h n+gI-gX, h,g>0, let R=sqrt(h^2+4g^2), z=(h/R)tanh(beta R/2), and rho=(I+yY+zZ)/2 with 0<y<sqrt(1-z^2). It has tau_G's diagonal, but d Tr(n exp(-iAG)rho exp(iAG))/dA at A=0 is gy>0.
+- The positive transverse-pair example h(n_1+n_2)+epsilon(I-X_1X_2) can have a rare conditional near 1. Its pair flip is outside the onsite class and destroys the specific one-site path factorization. Its scalar reserve is kept; no generic noncommuting extension is claimed.
+- The consumer's uncompensated-wait, normalized-success and faulty-midpoint retargeting witnesses remain applicable. A loose B_C bound is not an exact action. An actual unused factor is not certified pure by a comparison-state replacement.
+
+Root derived the candidate after the earlier local-bias, rotation and boundary work. The independent derivation was sealed before this candidate was opened, with shared prior machinery and the same model/effort. The comparison read the full new candidate and necessary exact premises; it reused old circuit/readiness checks only at unchanged identities. This packaging is by that same source-exposed reviewer and adds no independent mathematical review. The historical candidate sentence saying its check was pending remains verbatim in the body; the current root source decision is explicit above.
+
+The candidate cited Suzuki's 1976 imaginary-time correspondence paper from publisher search metadata and abstract only. Its attempted full article open failed with a recorded redirect/access error, and the raw search response was not captured. No complete paper reading, priority, novelty or independent literature replication is claimed. The proof needed here is supplied in the exact mathematical bodies. This packaging makes no new literature search or scientific execution.
+
+No numerical fixture, symbolic solver, old scientific replay or formal checker was run for this theorem's derivation, comparison or proposal. Actual metadata processes establish source identities, body intervals, selected recovery, AST syntax and complete changed-source mapping only. Full stdout/stderr, actual source-at-launch and any failures remain distinct from scientific evidence. The native Gibbs input, physical basis/temperature identification, complete control dictionary, timing, isolation, work identification and retained-audit authority remain supplied or unresolved obligations. No editable prompt, axiom or platform instruction was changed.
+
+## Publication boundary and recovery
+
+The sole direct canonical parent is observed at the exact bytes named above; actual publication-tree binding, Git base/stack review, root read binding, primary/cache/mutation runs, dependency graph acknowledgment, staging, commit, regular PR and attachment remain root-owned future work. The graph proposal is one new theorem note node with this note's primary runner and one edge to the local-bias consumer. Older sources and Git history are not extra theorem edges. Parent landing or cumulative stack review is required before retained audit. Dated null outcomes in the packet stay null; actual integration must be recorded in a separate bound version.
+
+The three raw bodies occur once each in this canonical proposal, with exact half-open byte intervals and hashes. Selected metadata evidence is deduplicated by hash. Source-at-launch duplicates recover through those body intervals; full parent bodies are not recopied into this note or recursively archived. Historical freeze files remain literal and may name unselected ancestral files; the recovery selection explicitly identifies that limitation. A complete reviewable proposal is not an executed primary or a publication success.

@@ -1,0 +1,41 @@
+{
+  "kind": "actual_correlated_memory_source_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+  "actual_git_base": "1ac15c4a9116d14a7f1e9eec971aea7b0e750360",
+  "actual_branch_at_binding": "physics-loop/toe-readiness-resources-20261015",
+  "bound_note_sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/historical_recorder.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/live_recorder.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/fetch_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/inventory_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/root_review_executed_source.py",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/joint_stderr",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_LAUNCH.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_stdout",
+    ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/binding_sources/memory_stderr"
+  ],
+  "canonical_parent_sha256": {
+    "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+    "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+  }
+}

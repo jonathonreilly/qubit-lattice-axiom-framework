@@ -1,0 +1,14 @@
+# Reading and exposure
+
+Root derived the finite symmetric-transfer, likelihood-ratio and switch identities before targeted primary-source lookup, then checked established attribution. This is not a novelty claim for Markov/Gibbs equivalence, the sharp total-variation inequality or gentle projection. No independent assessor has yet checked this source.
+
+Primary web reading on 2026-10-15:
+
+- Mei Yin, *A Markov chain approach to renormalization group transformations*, https://arxiv.org/abs/1205.1789, PDF https://arxiv.org/pdf/1205.1789. Read abstract and targeted section 3 passages concerning binary transition probabilities, stationary law, covariance and Markov/Gibbs mapping. No full-paper reading, infinite-volume theorem import or novelty survey is claimed. The finite endpoint construction in this candidate is proved directly.
+- Samuel N. Cohen and Eliana Fausti, *Hyperbolic contractivity and the Hilbert metric on probability measures*, explicit HTML version https://arxiv.org/html/2309.02413v2. Read introduction context, total-variation convention, section 5.1 Theorem 5.1 equation (39), and nearby normalization/sharpness remarks. The source uses unhalved variation; this candidate uses event TV and includes the factor conversion. Equation (40) is not imported. The finite chord proof is supplied in the candidate.
+
+Sources were read through the web tool; no full-paper files were downloaded, embedded or purportedly archived. These URLs and stated reading scope are provenance, not byte-frozen copies of remote works. No retrieved instruction was executed.
+
+Root has read the complete next-realization selection memo and its Markov proposal, prior accepted memory source f38d4590 and joint source dcee9d6f at their pinned revisions. Current candidate and independent Markov-circuit outputs have not been read by root for this Gibbs construction. This candidate does not accept or depend on their unfinished results: it assumes a separately checked phase-exact classical permutation with a stated failure probability. Its source-family exposure is explicit.
+
+Scientific programs run: zero. Historical programs replayed: zero. Numerical checks, independent substantive review and publication remain pending. No editable prompt, physical axiom, checkout, lock, audit or Git/PR state was changed by this source-writing task. Its freeze is a candidate-source freeze, not the campaign recovery checkpoint.

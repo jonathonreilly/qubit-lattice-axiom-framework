@@ -1,0 +1,902 @@
+{
+  "schema": "sha256_deduplicated_recovery_v1",
+  "objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/031e840bd9d880e1e26d4ee0a2e9f9e5b5f7b10bc3569688353aa9cf29a0a445.blob",
+      "bytes": 509,
+      "sha256": "031e840bd9d880e1e26d4ee0a2e9f9e5b5f7b10bc3569688353aa9cf29a0a445",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/054b249cc68e17beee9565251c61bdc5f1900a9f58890798494c27d1043b3305.blob",
+      "bytes": 562,
+      "sha256": "054b249cc68e17beee9565251c61bdc5f1900a9f58890798494c27d1043b3305",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/capture_sources.RECEIPT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "aliases": [
+        "repository/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/07898d95c68905e961d16e301f549f2a09bd1e7966d2e4a9a8aa1715dcb5dc66.blob",
+      "bytes": 396,
+      "sha256": "07898d95c68905e961d16e301f549f2a09bd1e7966d2e4a9a8aa1715dcb5dc66",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/0bbac46412c089ab08585bf0623d01bfe6206e457d35abdea4736824fbda159b.blob",
+      "bytes": 4109,
+      "sha256": "0bbac46412c089ab08585bf0623d01bfe6206e457d35abdea4736824fbda159b",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/capture_metadata.py",
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/child_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/0f339ff8941a377d442be6f5031daa6b6de2def53626fa57aa851f042e85defc.blob",
+      "bytes": 11201,
+      "sha256": "0f339ff8941a377d442be6f5031daa6b6de2def53626fa57aa851f042e85defc",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/CLOSING_SOURCE_CHECK.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/127b433b46e2593b709c94c71097348bf52a438191260b54d03ee6a020330c74.blob",
+      "bytes": 977,
+      "sha256": "127b433b46e2593b709c94c71097348bf52a438191260b54d03ee6a020330c74",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/15a4199cbc68a004bdb4fc95c6e0674fa26eeb03e661ceca112552b589c2d4a6.blob",
+      "bytes": 5460,
+      "sha256": "15a4199cbc68a004bdb4fc95c6e0674fa26eeb03e661ceca112552b589c2d4a6",
+      "aliases": [
+        "campaign/runs/correlated_memory_root_acceptance_1628/executed_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/19d1454d7e53999954aca3ba06d23a2f40f802b09e0e989f835ad89e07274d7e.blob",
+      "bytes": 1199,
+      "sha256": "19d1454d7e53999954aca3ba06d23a2f40f802b09e0e989f835ad89e07274d7e",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/1b29aafaa4d8ff10f2f863003885457f0a013d357a88c670bea25465e26f7a0f.blob",
+      "bytes": 4391,
+      "sha256": "1b29aafaa4d8ff10f2f863003885457f0a013d357a88c670bea25465e26f7a0f",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/capture_metadata.py",
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/child_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/1e42e48236afd138cdfc2057a59baa430ff6437abd1fd24eb0bd80512cc46534.blob",
+      "bytes": 2497,
+      "sha256": "1e42e48236afd138cdfc2057a59baa430ff6437abd1fd24eb0bd80512cc46534",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/child_source.py",
+        "campaign/correlated_markov_memory_independent/independent/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/24ea132dae07ea4cec95a04046e5e67c3c242a5536a16c1425ce51962281f72d.blob",
+      "bytes": 3764,
+      "sha256": "24ea132dae07ea4cec95a04046e5e67c3c242a5536a16c1425ce51962281f72d",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/DELIVERY.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/29190033f2ecbfee2604357492962f0cb4f8c1568e22e08b9273b846d41b5230.blob",
+      "bytes": 1277,
+      "sha256": "29190033f2ecbfee2604357492962f0cb4f8c1568e22e08b9273b846d41b5230",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/METADATA_LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2a884b629f370330796ab3321b8e304bf309198a4471be2188d7d866ff520e9b.blob",
+      "bytes": 2367,
+      "sha256": "2a884b629f370330796ab3321b8e304bf309198a4471be2188d7d866ff520e9b",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/seal_independent.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2bc1cc418bdf7e96d6288dad77c06e20ad2762485f421bd7b11e05a872f6b357.blob",
+      "bytes": 1261,
+      "sha256": "2bc1cc418bdf7e96d6288dad77c06e20ad2762485f421bd7b11e05a872f6b357",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2c4f69c08bb4f088f1f570ed9ae5e1c3945d264c118f0a299fe794aa0cf8e05f.blob",
+      "bytes": 379,
+      "sha256": "2c4f69c08bb4f088f1f570ed9ae5e1c3945d264c118f0a299fe794aa0cf8e05f",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/finalize_metadata.stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2c6d064841a6eb236f8c5d591276b0ec581f5a133c938ec93ae582ebc885bd48.blob",
+      "bytes": 1155,
+      "sha256": "2c6d064841a6eb236f8c5d591276b0ec581f5a133c938ec93ae582ebc885bd48",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/record_draft_snapshot.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.blob",
+      "bytes": 34639,
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "aliases": [
+        "repository/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a.blob",
+      "bytes": 16703,
+      "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/2f42134727c5eca16093fa02ace1bfb87a3c015c7b12ef133dad9f5c74253984.blob",
+      "bytes": 6705,
+      "sha256": "2f42134727c5eca16093fa02ace1bfb87a3c015c7b12ef133dad9f5c74253984",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/METADATA_VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/323b058293f2f7dbbcaa18f988884429f07c3815bcc4fac1fb5335142c141610.blob",
+      "bytes": 2464,
+      "sha256": "323b058293f2f7dbbcaa18f988884429f07c3815bcc4fac1fb5335142c141610",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/seal_review.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/3343903af4e62f2d205207213b245b047d38db47e603bfb37d2a9f690c86e56f.blob",
+      "bytes": 8568,
+      "sha256": "3343903af4e62f2d205207213b245b047d38db47e603bfb37d2a9f690c86e56f",
+      "aliases": [
+        "campaign/correlated_memory_root_review/VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/366a8007085ba31abc3878d562da656c9ead8475cad0cb5f65f24f1cdce6af1a.blob",
+      "bytes": 3445,
+      "sha256": "366a8007085ba31abc3878d562da656c9ead8475cad0cb5f65f24f1cdce6af1a",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/capture_sources.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/37af8693f04309f56be83c3433f8f2f8509ad3b50f8a1960ba13fe07b308a26e.blob",
+      "bytes": 994,
+      "sha256": "37af8693f04309f56be83c3433f8f2f8509ad3b50f8a1960ba13fe07b308a26e",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/38f68f19d6f6757c26b28c684e636112ce1976cc0647958b63e48a16a3afc76b.blob",
+      "bytes": 2807,
+      "sha256": "38f68f19d6f6757c26b28c684e636112ce1976cc0647958b63e48a16a3afc76b",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/seal_packet.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/3c2c4da753593892b1a6ba2872f24b290ce5b9758ac50d946476dc2d717debf9.blob",
+      "bytes": 5787,
+      "sha256": "3c2c4da753593892b1a6ba2872f24b290ce5b9758ac50d946476dc2d717debf9",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/REPORT.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73.blob",
+      "bytes": 46121,
+      "sha256": "3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/draft_snapshot/DERIVATION.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222.blob",
+      "bytes": 4801,
+      "sha256": "435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222",
+      "aliases": [
+        "campaign/local_clock_biased_memory_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/489602fed1664e6f7c26d824ebdc3e748a416f6888d3661edb20c40db3f2da54.blob",
+      "bytes": 873,
+      "sha256": "489602fed1664e6f7c26d824ebdc3e748a416f6888d3661edb20c40db3f2da54",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67.blob",
+      "bytes": 3822,
+      "sha256": "4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677.blob",
+      "bytes": 1001,
+      "sha256": "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677",
+      "aliases": [
+        "campaign/correlated_memory_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71.blob",
+      "bytes": 4125,
+      "sha256": "4d781ab6f4065443326a440db919f432ca5a7810ce5507e6aab7d23744d30b71",
+      "aliases": [
+        "campaign/gibbs_markov_composition_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/4f623a9bd4a1fe651c683e641425383c9bbc4d2391f4f10e24a5a5bf79f2171a.blob",
+      "bytes": 1604,
+      "sha256": "4f623a9bd4a1fe651c683e641425383c9bbc4d2391f4f10e24a5a5bf79f2171a",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/recorder_source.py",
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/recorder_source.py",
+        "campaign/correlated_markov_memory_independent/comparison/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/5161b89e645c9f33e53ddd8bd4b721963a3739f40f04384c3bf7d2aaa83f111e.blob",
+      "bytes": 45092,
+      "sha256": "5161b89e645c9f33e53ddd8bd4b721963a3739f40f04384c3bf7d2aaa83f111e",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/CLOSING_METADATA.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/51d68a855cabfa37b86f66f53b3af7b627c56d896baa03ff7c8cf028ec978b46.blob",
+      "bytes": 952,
+      "sha256": "51d68a855cabfa37b86f66f53b3af7b627c56d896baa03ff7c8cf028ec978b46",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee.blob",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/58ce1f0b8d2f0c15dc38c031307993e0cb21c5ae66f456976fd6f5610043afd1.blob",
+      "bytes": 52427,
+      "sha256": "58ce1f0b8d2f0c15dc38c031307993e0cb21c5ae66f456976fd6f5610043afd1",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/5e3c18b2578ac726d1ab52619ef099232fd1ae05f2edc8cb97d7b74a8db83d00.blob",
+      "bytes": 569,
+      "sha256": "5e3c18b2578ac726d1ab52619ef099232fd1ae05f2edc8cb97d7b74a8db83d00",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/METADATA_PROCESS_RECEIPT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.blob",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "aliases": [
+        "repository/docs/audit/data/axiom_premise_nodes.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/61e75e0a0f5b64b123ac05ab34e66e5fac586444f02bacd7471a77c4b2e77e08.blob",
+      "bytes": 1094,
+      "sha256": "61e75e0a0f5b64b123ac05ab34e66e5fac586444f02bacd7471a77c4b2e77e08",
+      "aliases": [
+        "campaign/runs/correlated_memory_root_acceptance_1628/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/664293ebf52d1112336adf34495d058ce7dcf7db0a26d63e2edb2b586209ef96.blob",
+      "bytes": 2861,
+      "sha256": "664293ebf52d1112336adf34495d058ce7dcf7db0a26d63e2edb2b586209ef96",
+      "aliases": [
+        "campaign/gibbs_markov_composition_root_review/VERIFICATION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/6c556c2acbb7129a39b0fe49612046fd6dd90c11a06bc543b020bbd30e013a76.blob",
+      "bytes": 2138,
+      "sha256": "6c556c2acbb7129a39b0fe49612046fd6dd90c11a06bc543b020bbd30e013a76",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/READING_LOG.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/700da553069fe644784dc73e1fc5652f34a97142456508c7690282b42b0f19e6.blob",
+      "bytes": 1257,
+      "sha256": "700da553069fe644784dc73e1fc5652f34a97142456508c7690282b42b0f19e6",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/70303e289216e88749e2e4775c7a5703f8121922fd5a18d68555c0f520b5746a.blob",
+      "bytes": 3180,
+      "sha256": "70303e289216e88749e2e4775c7a5703f8121922fd5a18d68555c0f520b5746a",
+      "aliases": [
+        "campaign/runs/gibbs_markov_composition_root_acceptance_1640/executed_source.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/708b5c1e3f21895914cbc1e127144823c41006dc6db0bfaa735c3abce9949cb1.blob",
+      "bytes": 1261,
+      "sha256": "708b5c1e3f21895914cbc1e127144823c41006dc6db0bfaa735c3abce9949cb1",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478.blob",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478",
+      "aliases": [
+        "campaign/joint_readiness_root_review/ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563.blob",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "aliases": [
+        "repository/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/76d0700c7841420d06e218ff16e4a631d3f54e558903f25479577de62bc45312.blob",
+      "bytes": 312,
+      "sha256": "76d0700c7841420d06e218ff16e4a631d3f54e558903f25479577de62bc45312",
+      "aliases": [
+        "campaign/gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/7c341771b4c77d1eee7cabdceca1607d77c824a8433f30b4fc0ba0999a803c8c.blob",
+      "bytes": 814,
+      "sha256": "7c341771b4c77d1eee7cabdceca1607d77c824a8433f30b4fc0ba0999a803c8c",
+      "aliases": [
+        "campaign/runs/gibbs_markov_composition_root_acceptance_1640/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.blob",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/SKILL.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf.blob",
+      "bytes": 1528,
+      "sha256": "7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/recorder_source.py",
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/recorder_source.py",
+        "campaign/gibbs_markov_composition_decisive_check/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/7f414fbbc457e61e0a5a7b8e63893bbe7bd25a4f76f5fb4843d5157bc88412a8.blob",
+      "bytes": 976,
+      "sha256": "7f414fbbc457e61e0a5a7b8e63893bbe7bd25a4f76f5fb4843d5157bc88412a8",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615.blob",
+      "bytes": 6228,
+      "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/89678b9bd660864948b9a5fbbf4cdb8a7e5f49c185841962e0394169fac615cc.blob",
+      "bytes": 2243,
+      "sha256": "89678b9bd660864948b9a5fbbf4cdb8a7e5f49c185841962e0394169fac615cc",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/seal_packet.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/89ed7a68909b2fb61168ca7d09b5c30e4a230d66d555f9972e8cf4ad0d85d9a8.blob",
+      "bytes": 3953,
+      "sha256": "89ed7a68909b2fb61168ca7d09b5c30e4a230d66d555f9972e8cf4ad0d85d9a8",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/DELIVERY.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/8f988998ee6a79f859dd816b981569e09d44884a88c004bb7e1d76207c37f44a.blob",
+      "bytes": 357,
+      "sha256": "8f988998ee6a79f859dd816b981569e09d44884a88c004bb7e1d76207c37f44a",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/SOURCE_CAPTURE_RECEIPT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8.blob",
+      "bytes": 2824,
+      "sha256": "9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/SCOPE_PLAN.md",
+        "campaign/correlated_markov_memory_candidate/draft_snapshot/SCOPE_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/992a3d241939aa852940bfe2b6cf2298bc4f24a2b2cb89dafd5cac7da9d4dfe6.blob",
+      "bytes": 1179,
+      "sha256": "992a3d241939aa852940bfe2b6cf2298bc4f24a2b2cb89dafd5cac7da9d4dfe6",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/9dea376b95ecc6380a3c537b5f819994e1f65a5bd60cd563467306bb5e5d0a61.blob",
+      "bytes": 815,
+      "sha256": "9dea376b95ecc6380a3c537b5f819994e1f65a5bd60cd563467306bb5e5d0a61",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/METADATA_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/a23b7760fbbc4a043acdaafa78550be636c0e1c30e6578c4ef16560171f5460d.blob",
+      "bytes": 1475,
+      "sha256": "a23b7760fbbc4a043acdaafa78550be636c0e1c30e6578c4ef16560171f5460d",
+      "aliases": [
+        "campaign/runs/correlated_memory_root_acceptance_1628/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/aa70b6baac22863d4993c4232f8a042d769822ec1bbc385ec2798306fd3cf1a9.blob",
+      "bytes": 2422,
+      "sha256": "aa70b6baac22863d4993c4232f8a042d769822ec1bbc385ec2798306fd3cf1a9",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/WEB_READING_SCOPE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/aec1b68f8ed11bc921b62615570898e187ca678810ccdc2950156fad1cc0573d.blob",
+      "bytes": 4404,
+      "sha256": "aec1b68f8ed11bc921b62615570898e187ca678810ccdc2950156fad1cc0573d",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/DELIVERY.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.blob",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/b4ae4a6dab807cce9e8a768da8072f4ed12970641f77189c01ef57df4c76f28f.blob",
+      "bytes": 1471,
+      "sha256": "b4ae4a6dab807cce9e8a768da8072f4ed12970641f77189c01ef57df4c76f28f",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/RESULT.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/b5421adfff8ca0adf3bb434139af5c5af94cb7b5d03fd902f917478c4eef148f.blob",
+      "bytes": 47409,
+      "sha256": "b5421adfff8ca0adf3bb434139af5c5af94cb7b5d03fd902f917478c4eef148f",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d.blob",
+      "bytes": 5131,
+      "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d",
+      "aliases": [
+        "campaign/correlated_memory_root_review/MARKOV_ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/b9b12f410eb16092c7a6c67a7132e4ba3cb6f652d9c5ab3b8b3f25d3cbf347e3.blob",
+      "bytes": 983,
+      "sha256": "b9b12f410eb16092c7a6c67a7132e4ba3cb6f652d9c5ab3b8b3f25d3cbf347e3",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/bb89c71f2a8ba808b13239217408e54f3c72eb0c23a6784f1533e56e539ab714.blob",
+      "bytes": 4666,
+      "sha256": "bb89c71f2a8ba808b13239217408e54f3c72eb0c23a6784f1533e56e539ab714",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/child_source.py",
+        "campaign/correlated_markov_memory_independent/independent/snapshot_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/bc316d52f05848291c2801dd9fb4bb571b41b20a44f370bc17d5fed8358d0bd8.blob",
+      "bytes": 1181,
+      "sha256": "bc316d52f05848291c2801dd9fb4bb571b41b20a44f370bc17d5fed8358d0bd8",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83.blob",
+      "bytes": 6542,
+      "sha256": "bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/SOURCE_MANIFEST.json",
+        "campaign/correlated_markov_memory_candidate/draft_snapshot/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/bd275844fa5f9cbb047b8ce3866313bf69555fde2397d2afcad87a895aa084fc.blob",
+      "bytes": 5230,
+      "sha256": "bd275844fa5f9cbb047b8ce3866313bf69555fde2397d2afcad87a895aa084fc",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/child_source.py",
+        "campaign/correlated_markov_memory_independent/comparison/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/bf65ff555397752acc10ba1d3eb32bdbb44a9b1292c35198d4323aca0cae643e.blob",
+      "bytes": 1536,
+      "sha256": "bf65ff555397752acc10ba1d3eb32bdbb44a9b1292c35198d4323aca0cae643e",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/finalize_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c0977b14acf64dbd9794fc4c335b990c74a15430c56e82e530b5266875575085.blob",
+      "bytes": 1953,
+      "sha256": "c0977b14acf64dbd9794fc4c335b990c74a15430c56e82e530b5266875575085",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/METADATA_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.blob",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a.blob",
+      "bytes": 11171,
+      "sha256": "c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/AUTHOR_CLARIFICATIONS.diff"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c1f2d21025b1d2904b4be008d76506149b1b8f32b637e20d6e9a42bb1d688e5c.blob",
+      "bytes": 2658,
+      "sha256": "c1f2d21025b1d2904b4be008d76506149b1b8f32b637e20d6e9a42bb1d688e5c",
+      "aliases": [
+        "campaign/main_refresh_1622/REFS.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632.blob",
+      "bytes": 4325,
+      "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632",
+      "aliases": [
+        "campaign/correlated_memory_root_review/GIBBS_ACCEPTANCE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c242b38476971b96a78f8aa5eb6711781c0834479a0e5cd0874d580a03cc5ccc.blob",
+      "bytes": 2782,
+      "sha256": "c242b38476971b96a78f8aa5eb6711781c0834479a0e5cd0874d580a03cc5ccc",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/seal_comparison.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/c529e873ea68c6a0b6e6d818aaed1b2fbd1d585dcb5d5812a12d19fa959034d1.blob",
+      "bytes": 2628,
+      "sha256": "c529e873ea68c6a0b6e6d818aaed1b2fbd1d585dcb5d5812a12d19fa959034d1",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/SCOPE_AND_PLAN.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/cc12b7f883dbfe07c37906120834b96ba31a9ccc7e05a1276fd59672182244bc.blob",
+      "bytes": 3852,
+      "sha256": "cc12b7f883dbfe07c37906120834b96ba31a9ccc7e05a1276fd59672182244bc",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/child_source.py",
+        "campaign/gibbs_markov_composition_decisive_check/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.blob",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95",
+      "aliases": [
+        "campaign/run.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/d356e6710570fa3e4863d869efada0d62a3d2460bd98a566584225f12d4869b8.blob",
+      "bytes": 823,
+      "sha256": "d356e6710570fa3e4863d869efada0d62a3d2460bd98a566584225f12d4869b8",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/DRAFT_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/d66a458b15e1ffd19b2d8cab8305981e290ec249c75e91de8da1f5d0ee5ecf80.blob",
+      "bytes": 4206,
+      "sha256": "d66a458b15e1ffd19b2d8cab8305981e290ec249c75e91de8da1f5d0ee5ecf80",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/capture_sources.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/d7a7a30287740ee2ee7e5c331ba77149ba2589148062829715d510047674c01c.blob",
+      "bytes": 1326,
+      "sha256": "d7a7a30287740ee2ee7e5c331ba77149ba2589148062829715d510047674c01c",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/ROOT_READ_EXPOSURE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/d990cdb590027ad7afad92de249000c33b6bc6e73ab0ccbf263ddb94eaeb1772.blob",
+      "bytes": 2457,
+      "sha256": "d990cdb590027ad7afad92de249000c33b6bc6e73ab0ccbf263ddb94eaeb1772",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/EXPOSURE.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/da702251c16623c9a3e379304fbabf235c8d07d5304e0ed70da6dd31f1a05fb7.blob",
+      "bytes": 2114,
+      "sha256": "da702251c16623c9a3e379304fbabf235c8d07d5304e0ed70da6dd31f1a05fb7",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/verify_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/dbb3bb49c6fac88c163e704d8437bc6503e5c1b30c9f4ff104bb842a323f6189.blob",
+      "bytes": 605,
+      "sha256": "dbb3bb49c6fac88c163e704d8437bc6503e5c1b30c9f4ff104bb842a323f6189",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/finalize_metadata.RECEIPT.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/dbdc064ae5deec4522e57500ca9c619899526a98ac54c8ee4e6728ab062375d1.blob",
+      "bytes": 11003,
+      "sha256": "dbdc064ae5deec4522e57500ca9c619899526a98ac54c8ee4e6728ab062375d1",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6.blob",
+      "bytes": 17251,
+      "sha256": "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/df17dd0572219c9d30637873a4c8823d14daf37cb2a59813dcffd72b679e8f7d.blob",
+      "bytes": 3766,
+      "sha256": "df17dd0572219c9d30637873a4c8823d14daf37cb2a59813dcffd72b679e8f7d",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/SCOPE_AND_READING.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e31500fd0d294d6433e204ec52cdf4a44f8df31be7762a6ebae2d43d4c2dff2e.blob",
+      "bytes": 6248,
+      "sha256": "e31500fd0d294d6433e204ec52cdf4a44f8df31be7762a6ebae2d43d4c2dff2e",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/READING_LOG.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.blob",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/metadata.stderr",
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/stderr",
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/closure/stderr",
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/stderr",
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/stderr",
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/stderr",
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/closure/stderr",
+        "campaign/local_gibbs_memory_interface_decisive_check/capture_sources.stderr",
+        "campaign/local_gibbs_memory_interface_decisive_check/finalize_metadata.stderr",
+        "campaign/runs/correlated_memory_root_acceptance_1628/stderr",
+        "campaign/runs/gibbs_markov_composition_root_acceptance_1640/stderr"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e4cd607b7a0c01349206a506d966d311a5f30318738fa841548db6f3347cc40a.blob",
+      "bytes": 1579,
+      "sha256": "e4cd607b7a0c01349206a506d966d311a5f30318738fa841548db6f3347cc40a",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/recorder_source.py",
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/recorder_source.py",
+        "campaign/correlated_markov_memory_independent/independent/record_metadata.py"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e56df7f780ae26421109617ac0868715c2bbfce032bebd7643003ad50836ff3e.blob",
+      "bytes": 1486,
+      "sha256": "e56df7f780ae26421109617ac0868715c2bbfce032bebd7643003ad50836ff3e",
+      "aliases": [
+        "campaign/runs/gibbs_markov_composition_root_acceptance_1640/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e6894a6ca664716340069af498d5a354696d9b6d6788158537fd3a5fadc82314.blob",
+      "bytes": 114,
+      "sha256": "e6894a6ca664716340069af498d5a354696d9b6d6788158537fd3a5fadc82314",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/capture_sources.stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/e6ac3f886c29b8f9b4358e0973fcb7198c9b814d83d1ad12853c56eba5211e36.blob",
+      "bytes": 4015,
+      "sha256": "e6ac3f886c29b8f9b4358e0973fcb7198c9b814d83d1ad12853c56eba5211e36",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/CURRENT_WRAPPER.diff"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f099814b575ec89dfe3363f9173387eb50823b3c845c263fd12529b4ff580a32.blob",
+      "bytes": 3335,
+      "sha256": "f099814b575ec89dfe3363f9173387eb50823b3c845c263fd12529b4ff580a32",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_decisive_check/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4.blob",
+      "bytes": 13921,
+      "sha256": "f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.blob",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "aliases": [
+        "repository/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f8651b9e8f42b87001ace8f7b516463457e1d5af24c21784050499a525a1e3c9.blob",
+      "bytes": 1263,
+      "sha256": "f8651b9e8f42b87001ace8f7b516463457e1d5af24c21784050499a525a1e3c9",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/comparison/metadata_runs/capture/LAUNCH.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f9366492215430a8ca56ee8fcd869310302c07f1da69c0ad936737a492701e0a.blob",
+      "bytes": 952,
+      "sha256": "f9366492215430a8ca56ee8fcd869310302c07f1da69c0ad936737a492701e0a",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/metadata_runs/capture/EXECUTION.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "aliases": [
+        "repository/AGENTS.md"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/fb8fd5556de47522532bb26678aa5827431c83770d4a46efde7951c91a9a5cbc.blob",
+      "bytes": 396,
+      "sha256": "fb8fd5556de47522532bb26678aa5827431c83770d4a46efde7951c91a9a5cbc",
+      "aliases": [
+        "campaign/correlated_markov_memory_candidate/metadata.stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/fbd981bcdfd03a017036a3b2de361586a9441136fdff2c6666c408bb06af47f2.blob",
+      "bytes": 715,
+      "sha256": "fbd981bcdfd03a017036a3b2de361586a9441136fdff2c6666c408bb06af47f2",
+      "aliases": [
+        "campaign/gibbs_markov_composition_root_review/FINAL_FREEZE.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/fd25d374f87af32d519f2a8bf8fd1eca8f3b68a06ff08b2d7390020d37abe8ce.blob",
+      "bytes": 416,
+      "sha256": "fd25d374f87af32d519f2a8bf8fd1eca8f3b68a06ff08b2d7390020d37abe8ce",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/verification/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/fe2e22c4cfcb4c865e18026a19388d467456d04425796b84c5bf1ce9c1aafc82.blob",
+      "bytes": 1857,
+      "sha256": "fe2e22c4cfcb4c865e18026a19388d467456d04425796b84c5bf1ce9c1aafc82",
+      "aliases": [
+        "campaign/correlated_markov_memory_independent/independent/metadata_runs/snapshot/stdout"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/febe3bd24d471f4328acf4017d1ffbdad4a4206c021b8c0ed74062f9d9a390e0.blob",
+      "bytes": 44374,
+      "sha256": "febe3bd24d471f4328acf4017d1ffbdad4a4206c021b8c0ed74062f9d9a390e0",
+      "aliases": [
+        "campaign/gibbs_markov_composition_decisive_check/CLOSING_METADATA.json"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-correlated-memory-delivery-20261015/source_recovery/ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba.blob",
+      "bytes": 616,
+      "sha256": "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba",
+      "aliases": [
+        "campaign/local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json"
+      ]
+    }
+  ],
+  "immutable_bodies_stored_only_in_note": true
+}

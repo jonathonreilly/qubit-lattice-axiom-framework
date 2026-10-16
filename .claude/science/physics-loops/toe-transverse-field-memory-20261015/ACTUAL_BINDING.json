@@ -1,0 +1,164 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T19:33:39.258299+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "6239c11422d342751c67d6c7530aa03bdacde1c89aa78c8bcdfab5bdcc4de624",
+  "parent_sha256": {
+    "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89"
+  },
+  "source_acceptances": {
+    "transverse_field": "41b736668534cc2f9c87f98b024e1ea349960baafdc3b354914cb0cd1ae2d49a"
+  },
+  "git_base": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "base_branch": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+  "planned_feature_branch": "physics-loop/toe-transverse-field-memory-20261015",
+  "observed_parent_prs": {
+    "base_parent": {
+      "baseRefName": "physics-loop/toe-finite-memory-bank-20261015",
+      "headRefName": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+      "headRefOid": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+      "isDraft": false,
+      "number": 9615,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9615"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "raw_bodies": [
+    {
+      "name": "transverse_root",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 24961,
+      "end_byte_exclusive": 45512,
+      "bytes": 20551,
+      "sha256": "5cbafbd7b04fa425c4b5f975c075cce33c0e7b19524917ed0a40051eea1fe5ec"
+    },
+    {
+      "name": "transverse_independent",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 45665,
+      "end_byte_exclusive": 63093,
+      "bytes": 17428,
+      "sha256": "5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f"
+    },
+    {
+      "name": "transverse_comparison",
+      "container": "docs/TRANSVERSE_FIELD_GIBBS_MEMORY_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 63245,
+      "end_byte_exclusive": 87310,
+      "bytes": 24065,
+      "sha256": "6693f24d1561fc915213c48e7debd7dd5d538ccc77686b747106ddfc1469baa8"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "path": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 166194,
+      "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "claim_id": "local_conditional_bias_and_rotated_gibbs_bounded_theorem_note_2026-10-15",
+      "accepted_raw_source_sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95",
+      "accepted_body_interval": {
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 27209,
+        "end_byte_exclusive": 37875,
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "accepted_review_interval": {
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 78220,
+        "end_byte_exclusive": 119796,
+        "bytes": 41576,
+        "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+      },
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/202a0318ca45d24f7d343a83703d2d0f4c7849d818ead438adbf5ef4d57d81ef.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/38571274f835eb63a398f28495f367e2cddd2c4bd21b6596c2f1752820f48f23.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/3ef03d83a0ac0f5038955fd9986e87ca427e965d967d063331dc46627081ab82.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/48aa32bc68cff461bf4fdf7c93e518b60a15d058837306cb552f3b5adb63f806.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/5a713d4b4ea8d7babad150e297d247661d63f3748f7511f4ed8efcd4e09bacc5.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/63e43c97ba3a85a5dd81afbddbac974727d67f69c539f4d7ddc77cb31d37ee09.blob",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/780ac9767654dedd03e09594a46b54bfdf8a1859bb28805adb274ac99404f972.blob",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e1d53683f62a68261eda2616fc60770526144e4007823c8432b8c5e364802420.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+  ],
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee.json",
+    "bytes": 108311,
+    "sha256": "96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/3ef03d83a0ac0f5038955fd9986e87ca427e965d967d063331dc46627081ab82.json",
+      "bytes": 3121,
+      "sha256": "3ef03d83a0ac0f5038955fd9986e87ca427e965d967d063331dc46627081ab82"
+    },
+    "review_freeze": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/38571274f835eb63a398f28495f367e2cddd2c4bd21b6596c2f1752820f48f23.json",
+      "bytes": 352,
+      "sha256": "38571274f835eb63a398f28495f367e2cddd2c4bd21b6596c2f1752820f48f23"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/48aa32bc68cff461bf4fdf7c93e518b60a15d058837306cb552f3b5adb63f806.json",
+      "bytes": 1447,
+      "sha256": "48aa32bc68cff461bf4fdf7c93e518b60a15d058837306cb552f3b5adb63f806"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+      "bytes": 1342,
+      "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/63e43c97ba3a85a5dd81afbddbac974727d67f69c539f4d7ddc77cb31d37ee09.blob",
+      "bytes": 592,
+      "sha256": "63e43c97ba3a85a5dd81afbddbac974727d67f69c539f4d7ddc77cb31d37ee09"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e1d53683f62a68261eda2616fc60770526144e4007823c8432b8c5e364802420.py",
+      "bytes": 5645,
+      "sha256": "e1d53683f62a68261eda2616fc60770526144e4007823c8432b8c5e364802420"
+    }
+  },
+  "base_parent_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/202a0318ca45d24f7d343a83703d2d0f4c7849d818ead438adbf5ef4d57d81ef.json",
+      "bytes": 1750,
+      "sha256": "202a0318ca45d24f7d343a83703d2d0f4c7849d818ead438adbf5ef4d57d81ef"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/5a713d4b4ea8d7babad150e297d247661d63f3748f7511f4ed8efcd4e09bacc5.py",
+      "bytes": 44419,
+      "sha256": "5a713d4b4ea8d7babad150e297d247661d63f3748f7511f4ed8efcd4e09bacc5"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/780ac9767654dedd03e09594a46b54bfdf8a1859bb28805adb274ac99404f972.blob",
+      "bytes": 313,
+      "sha256": "780ac9767654dedd03e09594a46b54bfdf8a1859bb28805adb274ac99404f972"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T19:33:39.258355+00:00",
+    "reviewed_source_sha256": "96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "extra_mathematical_dependencies_imported": false,
+  "retained_audit": false
+}

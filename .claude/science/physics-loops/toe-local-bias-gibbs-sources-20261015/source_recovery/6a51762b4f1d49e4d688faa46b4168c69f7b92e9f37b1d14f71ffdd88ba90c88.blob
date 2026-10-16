@@ -1,0 +1,60 @@
+"""Snapshot only the seven explicitly authorized accepted source files."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+OUT = Path(__file__).resolve().parent
+N = OUT.parents[1]
+W = N.parent / 'correlation_worktree'
+SOURCES = (
+    ('correlated_markov_memory_candidate/DERIVATION.md', 47228, '685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea'),
+    ('correlated_markov_memory_independent/comparison/REPORT.md', 31525, 'c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef'),
+    ('local_gibbs_memory_interface_root_candidate/DERIVATION.md', 13367, 'c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747'),
+    ('local_gibbs_memory_interface_decisive_check/REPORT.md', 26646, '2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10'),
+    ('correlated_memory_root_review/MARKOV_ACCEPTANCE.md', 5131, 'b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d'),
+    ('correlated_memory_root_review/GIBBS_ACCEPTANCE.md', 4325, 'c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632'),
+    ('correlated_memory_root_review/FINAL_FREEZE.json', 1001, '4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677'),
+)
+
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+
+source_dir = OUT / 'source'
+source_dir.mkdir(exist_ok=True)
+records = []
+for relative, count, digest in SOURCES:
+    path = N / relative
+    raw = path.read_bytes()
+    assert len(raw) == count and hashlib.sha256(raw).hexdigest() == digest, relative
+    saved = source_dir / (relative.replace('/', '__'))
+    saved.write_bytes(raw)
+    records.append({'source': pin(path), 'snapshot': pin(saved), 'scope': 'Complete source reading; provenance decision freeze is metadata, not mathematical proof.'})
+
+instructions = []
+for path, digest in (
+    (W / 'AGENTS.md', 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f'),
+    (W / 'docs/ai_methodology/SCIENCE_WORKFLOW.md', '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce'),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455'),
+):
+    identity = pin(path)
+    assert identity['sha256'] == digest
+    instructions.append(identity)
+
+freeze = json.loads((N / SOURCES[-1][0]).read_text())
+for path in (N / SOURCES[4][0], N / SOURCES[5][0]):
+    match = next(row for row in freeze['files'] if row['path'] == str(path))
+    assert pin(path) == match
+
+manifest = {'captured_utc': datetime.now(timezone.utc).isoformat(), 'timing_scope': 'After actual source reading and initial derivation; not a pre-reading commitment.',
+            'sources': records, 'unchanged_instruction_identities': instructions,
+            'root_freeze_scope': 'Exact freeze and its two selected acceptance members matched; separate VERIFICATION.json is not newly inspected or copied.',
+            'protected_new_root_candidate_access': 'No content read, directory inventory, hash or search performed.',
+            'prior_composition_exposure': {'sha256': '6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f', 'scope': 'Read during previous frozen PR9608 scope task; not reopened or used as accepted proof here.'},
+            'scientific_programs_run': 0}
+(OUT / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print(json.dumps({'sources_captured': len(records), 'instruction_identities_refreshed': len(instructions), 'root_decisions_matched': 2,
+                  'scientific_programs_run': 0}, sort_keys=True))

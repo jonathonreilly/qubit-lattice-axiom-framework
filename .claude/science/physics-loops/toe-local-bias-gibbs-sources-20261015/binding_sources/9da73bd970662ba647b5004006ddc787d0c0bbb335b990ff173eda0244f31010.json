@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-15T18:52:24.893746+00:00",
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 31093,
+    "sha256": "6dcdcf650900c3901905ffb23b0175b1bc8d390f78db223cd2d0960c8b7d9c0d"
+  },
+  "members_verified": 156,
+  "source_pins_verified": 33,
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_integration_proposal/local_bias_common.py",
+    "bytes": 41874,
+    "sha256": "586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890"
+  },
+  "primary_preview": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 30042,
+    "sha256": "70185ac98c070b04d2672f8f70bf60d09cc345744d1cb99c7d67e11e3d378b86"
+  },
+  "root_read_scope": "Complete seven changed common functions and new require_bound_base; complete preamble, primary binding diff, wrapper and packet changes, integration sections, body/handoff templates, assembly/inspection/recorder/sealer. Twenty-one prior common functions and eight prior primary helpers reused at exact identity. Template functions checked exact to reviewed common. Earlier full scientific source/wrapper review 0cada325 remains valid. Preliminary large combined tool display was truncated; all affected packet and handoff text reread in bounded complete calls.",
+  "source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_root_publication_review/ROOT_REVIEW.json",
+    "bytes": 14370,
+    "sha256": "0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49"
+  },
+  "decision": "Proceed with original prepare only, then repair the omitted RECOVERY_SELECTION body offsets and strengthen/check their semantic agreement before install. Preserve frozen proposal and failed review receipt.",
+  "science_runs": 0,
+  "editable_prompt_files_changed": [],
+  "required_repair": {
+    "local_recovery_selection_rows": 15,
+    "failed_root_preflight": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/local_bias_integration_review_1855/EXECUTION.json",
+      "bytes": 1470,
+      "sha256": "6f8e4a541dd3aaa5fb81bfde5f4a6233ca08c09d9d45b3afc48875890e4bb7d4"
+    },
+    "scope": "Packaging recovery index omission; no mathematical body change. Original SOURCE_MANIFEST and BODY_MAP relocation is correct."
+  }
+}

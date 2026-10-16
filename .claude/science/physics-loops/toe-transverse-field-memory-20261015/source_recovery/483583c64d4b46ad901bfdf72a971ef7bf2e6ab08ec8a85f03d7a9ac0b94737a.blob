@@ -1,0 +1,13 @@
+{
+  "kind": "awaiting_actual_root_canonical_parent_pins",
+  "path": null,
+  "bytes": null,
+  "sha256": null,
+  "claim_id": null,
+  "body_intervals": null,
+  "root_reported_pr": null,
+  "root_reported_head": null,
+  "actual_source_observation": null,
+  "git_base": null,
+  "mathematical_role": "sole classical-domination and full correlated-memory/readiness consumer; availability and complete import scope must be checked before build/seal"
+}

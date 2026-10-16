@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/local_conditional_bias_and_rotated_gibbs_2026_10_15.py
+runner_sha256: 77e4383685056e54759257551f8344fdad182afbb1d07776b78f5ad5b246aa72
+input_fingerprint_sha256: f49733cc9424cf7e5ba1cb6d3610c0e40fa1adfc66ad7eb16507bccb180c770b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and captured binding evidence only; no mathematical validation by execution"}
+per_element: coefficients remain source text; no physical element or gate run
+per_site: fixed-ray and local-class premises are preserved, not physically tested
+per_mode: diagonal and full-reduced-state source contracts remain distinct
+per_block: eight exact bodies, one parent and captured binding evidence checked
+lattice_wide: no native supplier, general noncommuting result, finite bank or audit certified
+
+----- stderr -----
+

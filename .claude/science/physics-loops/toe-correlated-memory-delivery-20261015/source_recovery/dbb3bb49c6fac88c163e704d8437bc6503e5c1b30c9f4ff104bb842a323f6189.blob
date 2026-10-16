@@ -1,0 +1,14 @@
+{
+  "kind": "actual metadata-only subprocess receipt",
+  "started_utc": "2026-10-15T16:20:32.696829+00:00",
+  "finished_utc": "2026-10-15T16:20:32.755017+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_decisive_check/finalize_metadata.py"
+  ],
+  "script_sha256": "bf65ff555397752acc10ba1d3eb32bdbb44a9b1292c35198d4323aca0cae643e",
+  "returncode": 0,
+  "stdout": "finalize_metadata.stdout",
+  "stderr": "finalize_metadata.stderr",
+  "scientific_run": false
+}

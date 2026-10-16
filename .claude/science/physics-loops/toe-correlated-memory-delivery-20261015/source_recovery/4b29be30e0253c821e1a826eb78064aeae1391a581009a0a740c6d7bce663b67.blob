@@ -1,0 +1,114 @@
+{
+  "frozen_utc": "2026-10-15T16:20:32.758295+00:00",
+  "status": "bounded substantive assessment; conditional equations checked; Q terminology and consumer elapsed-time scope clarified; no publication or audit verdict",
+  "assessment_source_sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747",
+  "source_exposed": true,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "metadata_verification_exit_code": 0,
+  "member_exclusion": "Only this exact root FINAL_FREEZE.json is excluded; nested freezes are members",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+    },
+    {
+      "path": "SCOPE_AND_PLAN.md",
+      "bytes": 2628,
+      "sha256": "c529e873ea68c6a0b6e6d818aaed1b2fbd1d585dcb5d5812a12d19fa959034d1"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3335,
+      "sha256": "f099814b575ec89dfe3363f9173387eb50823b3c845c263fd12529b4ff580a32"
+    },
+    {
+      "path": "WEB_READING_SCOPE.md",
+      "bytes": 2422,
+      "sha256": "aa70b6baac22863d4993c4232f8a042d769822ec1bbc385ec2798306fd3cf1a9"
+    },
+    {
+      "path": "capture_sources.RECEIPT.json",
+      "bytes": 562,
+      "sha256": "054b249cc68e17beee9565251c61bdc5f1900a9f58890798494c27d1043b3305"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 3445,
+      "sha256": "366a8007085ba31abc3878d562da656c9ead8475cad0cb5f65f24f1cdce6af1a"
+    },
+    {
+      "path": "capture_sources.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "capture_sources.stdout",
+      "bytes": 114,
+      "sha256": "e6894a6ca664716340069af498d5a354696d9b6d6788158537fd3a5fadc82314"
+    },
+    {
+      "path": "finalize_metadata.RECEIPT.json",
+      "bytes": 605,
+      "sha256": "dbb3bb49c6fac88c163e704d8437bc6503e5c1b30c9f4ff104bb842a323f6189"
+    },
+    {
+      "path": "finalize_metadata.py",
+      "bytes": 1536,
+      "sha256": "bf65ff555397752acc10ba1d3eb32bdbb44a9b1292c35198d4323aca0cae643e"
+    },
+    {
+      "path": "finalize_metadata.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "finalize_metadata.stdout",
+      "bytes": 379,
+      "sha256": "2c4f69c08bb4f088f1f570ed9ae5e1c3945d264c118f0a299fe794aa0cf8e05f"
+    },
+    {
+      "path": "instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "instructions/physics-claim-reviewer.SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "instructions/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 2807,
+      "sha256": "38f68f19d6f6757c26b28c684e636112ce1976cc0647958b63e48a16a3afc76b"
+    },
+    {
+      "path": "source/DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+    },
+    {
+      "path": "source/LITERATURE_AND_SCOPE.md",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee"
+    },
+    {
+      "path": "source/PROPOSAL_FREEZE.json",
+      "bytes": 616,
+      "sha256": "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba"
+    }
+  ],
+  "editable_prompt_files_changed": [],
+  "external_files_changed": []
+}

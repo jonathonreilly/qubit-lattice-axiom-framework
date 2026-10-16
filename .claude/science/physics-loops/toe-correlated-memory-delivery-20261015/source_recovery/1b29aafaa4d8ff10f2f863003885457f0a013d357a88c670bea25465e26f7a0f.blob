@@ -1,0 +1,54 @@
+"""Copy exact reviewed evidence and verify byte identities; no scientific evaluation."""
+from pathlib import Path
+from datetime import datetime, timezone
+import difflib, hashlib, json
+OUT=Path(__file__).resolve().parent
+N=OUT.parents[1]
+C=N/'correlated_markov_memory_candidate'
+I=OUT.parent/'independent'
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes(); return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,n,h):
+ row=meta(p); assert row['bytes']==n and row['sha256']==h, str(p); return row
+started=now()
+check(I/'DERIVATION.md',27580,'d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151')
+check(I/'FINAL_FREEZE.json',13921,'f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4')
+check(C/'draft_snapshot/DERIVATION.md',46121,'3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73')
+check(C/'DERIVATION.md',47228,'685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea')
+assert meta(C/'FINAL_FREEZE.json')['sha256']=='80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615'
+check(C/'AUTHOR_CLARIFICATIONS.diff',11171,'c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a')
+verified=[]
+for base,name,key in [(I,'FINAL_FREEZE.json','files'),(C,'FINAL_FREEZE.json','members')]:
+ f=json.loads((base/name).read_text())
+ for row in f[key]:
+  p=Path(row['path'])
+  if not p.is_absolute(): p=base/p
+  verified.append(check(p,row['bytes'],row['sha256']))
+ # Reject unlisted added files as well as byte changes.
+ expected={Path(x['path']) if Path(x['path']).is_absolute() else base/x['path'] for x in f[key]}
+ assert {p for p in base.rglob('*') if p.is_file() and p!=base/name}==expected
+source_rows=[]
+for row in json.loads((C/'SOURCE_MANIFEST.json').read_text())['sources']:
+ source_rows.append({'origin':check(Path(row['source']),row['bytes'],row['sha256']),'candidate_recovery':check(C/row['copy'],row['bytes'],row['sha256']),'semantic_reading':'See READING_LOG.md; identity verification is not argument reading.'})
+old=(C/'draft_snapshot/DERIVATION.md').read_text().splitlines(keepends=True)
+new=(C/'DERIVATION.md').read_text().splitlines(keepends=True)
+expected=''.join(difflib.unified_diff(old,new,fromfile='draft_snapshot/DERIVATION.md',tofile='DERIVATION.md'))
+assert expected==(C/'AUTHOR_CLARIFICATIONS.diff').read_text()
+names=['DERIVATION.md','draft_snapshot/DERIVATION.md','DRAFT_FREEZE.json','FINAL_FREEZE.json','AUTHOR_CLARIFICATIONS.diff','SCOPE_PLAN.md','SOURCE_MANIFEST.json','SOURCE_CAPTURE_RECEIPT.json','ROOT_READ_EXPOSURE.md','REPORT.md','CLOSING_SOURCE_CHECK.json','METADATA_LAUNCH.json','METADATA_PROCESS_RECEIPT.json','metadata.stdout','metadata.stderr','capture_sources.py','record_draft_snapshot.py','verify_metadata.py','seal_packet.py']
+copies=[]
+for name in names:
+ src=C/name
+ assert src.is_file(),str(src)
+ dst=OUT/'sources'/'candidate'/name
+ dst.parent.mkdir(parents=True,exist_ok=True)
+ dst.write_bytes(src.read_bytes())
+ copies.append({'origin':meta(src),'recovery':meta(dst)})
+extra=[]
+for name in ['local_clock_single_port_mediator_candidate/DERIVATION.md','local_clock_biased_memory_root_review/ACCEPTANCE.md','joint_readiness_root_review/ACCEPTANCE.md']:
+ src=N/name; dst=OUT/'sources'/'premises'/name
+ dst.parent.mkdir(parents=True,exist_ok=True); dst.write_bytes(src.read_bytes())
+ extra.append({'origin':meta(src),'recovery':meta(dst)})
+result={'started_utc':started,'completed_utc':now(),'kind':'post-independent-freeze metadata capture only','independent_freeze':meta(I/'FINAL_FREEZE.json'),'candidate_freeze':meta(C/'FINAL_FREEZE.json'),'verified_frozen_members':verified,'candidate_source_origins':source_rows,'copies':copies,'additional_premise_copies':extra,'independent_sources_reused':meta(I/'SOURCE_MANIFEST.json'),'exact_author_diff_reconstructed':True,'scientific_executions':0,'scientific_replays':0,'selection_memo_semantically_read':False}
+(OUT/'SOURCE_MANIFEST.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'kind':result['kind'],'frozen_members':len(verified),'candidate_source_origins':len(source_rows),'copied_files':sum('origin' in x for x in copies)+len(extra),'optional_missing':[x['requested_path'] for x in copies if 'origin' not in x],'exact_author_diff_reconstructed':True,'scientific_executions':0,'source_manifest':meta(OUT/'SOURCE_MANIFEST.json')},sort_keys=True))

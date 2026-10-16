@@ -1,0 +1,32 @@
+"""Metadata-only exact source capture; not a scientific program."""
+from pathlib import Path
+import hashlib,json,os
+from datetime import datetime,timezone
+D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/'correlation_worktree'
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def utc(): return datetime.now(timezone.utc).isoformat()
+spec=[
+('N','local_clock_biased_memory_candidate/DERIVATION.md','f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a','complete new-task read; existing circuit and input distinction'),
+('N','local_clock_biased_memory_root_review/ACCEPTANCE.md','435cf70b8b3a385add4edc73f2383e36a841c43db33559a3380b5217bd7d0222','complete new-task read; conditional dependency status'),
+('W','docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md','32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd','prior exact wrapper/relevant-body coverage reused; source f38 read completely this task'),
+('N','local_clock_joint_readiness_correction/DERIVATION.md','dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179','complete authored coverage reused; full new-task refresh with truncated aggregate tail recovered at lines212-360'),
+('N','joint_readiness_root_review/ACCEPTANCE.md',None,'complete new-task read; conditional source acceptance'),
+('W','docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md','00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e','complete current wrapper lines1-113; exact joint body dcee read separately; unrelated routed/review bodies not re-reviewed'),
+('N','local_clock_single_port_mediator_candidate/DERIVATION.md','d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25','authored full-source coverage reused; literal geometry/isolation lines179-256 refreshed'),
+('W','docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md','68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649','canonical identity bound by joint wrapper; imported exact d4ed geometry, not new simulation review'),
+('W','docs/FINITE_LOCAL_CLOCK_WORD_WINDOWS_BOUNDED_THEOREM_NOTE_2026-10-15.md','bcefbb192900b56ee937255d54d78a2aba777c1120416addc5b040147d06700a','previous exact boundary geometry lines587-643 coverage reused'),
+('N','next_realization_attack/REPORT.md','aba1989f7e2d4c95ee53b0a0466432b577f5e53278b7e9f2fc3e4a38a58c6d63','source-exposed author selection proposal, not theorem premise'),
+('N','next_realization_attack/FINAL_FREEZE.json','e4d584768186a8cec83d2c0072197a22bf934484b6f9d4b51201c659a4f20556','selection identity only; no scientific rerun'),
+('W','AGENTS.md','f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f','complete unchanged prior reading reused'),
+('W','docs/ai_methodology/SCIENCE_WORKFLOW.md','05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce','complete unchanged prior reading reused'),
+('W','docs/ai_methodology/skills/physics-loop/SKILL.md','7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4','complete unchanged immediately preceding task reading reused; installed copy previously matched'),
+]
+started=utc();rows=[]
+for authority,rel,expected,coverage in spec:
+ src={'N':N,'W':W}[authority]/rel;h=sha(src)
+ if expected is not None and h!=expected: raise RuntimeError(f'changed source {src}: {h}')
+ dst=D/'sources'/authority/rel;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(src.read_bytes())
+ rows.append({'source':str(src),'copy':str(dst.relative_to(D)),'sha256':h,'bytes':src.stat().st_size,'read_coverage':coverage})
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps({'captured_utc':utc(),'source_roles':'see individual coverage; identity/copy is not proof review','sources':rows},indent=2)+'\n')
+(D/'SOURCE_CAPTURE_RECEIPT.json').write_text(json.dumps({'kind':'metadata-only source capture after source reading, before final derivation','started_utc':started,'completed_utc':utc(),'pid':os.getpid(),'script_sha256':sha(Path(__file__)),'scientific_execution':False,'source_count':len(rows)},indent=2)+'\n')
+print(json.dumps({'sources':len(rows),'manifest_sha256':sha(D/'SOURCE_MANIFEST.json'),'scientific_execution':False}))

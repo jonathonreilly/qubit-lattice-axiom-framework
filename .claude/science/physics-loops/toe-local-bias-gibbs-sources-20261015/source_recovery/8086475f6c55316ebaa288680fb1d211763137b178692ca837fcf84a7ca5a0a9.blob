@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+"""Seal completed comparison metadata without claiming a self-execution receipt."""
+from datetime import datetime, timezone
+from hashlib import sha256
+import json
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": sha256(data).hexdigest()}
+
+
+def main():
+    assert not (HERE / "FINAL_FREEZE.json").exists()
+    validation = json.loads((HERE / "METADATA_VALIDATION.json").read_text())
+    assert identity(HERE / "REPORT.md") == validation["report"]
+    assert identity(HERE / "SOURCE_MANIFEST.json") == validation["manifest"]
+    receipts = []
+    for name in ("capture_sources", "verify_metadata"):
+        path = HERE / "metadata_runs" / name / "EXECUTION.json"
+        value = json.loads(path.read_text())
+        assert value["exit_code"] == 0 and value["timed_out"] is False
+        assert value["scientific_programs_run"] == 0
+        for key in ("source", "recorder", "stdout", "stderr"):
+            assert identity(Path(value[key]["path"])) == value[key]
+        receipts.append(identity(path))
+    source_manifest = json.loads((HERE / "SOURCE_MANIFEST.json").read_text())
+    independent = Path(source_manifest["independent_freeze"]["path"])
+    assert identity(independent) == source_manifest["independent_freeze"]
+    old = json.loads(independent.read_text())
+    for item in old["files"]:
+        actual = identity(independent.parent / item["path"])
+        assert actual["bytes"] == item["bytes"] and actual["sha256"] == item["sha256"]
+    delivery = {
+        "created_utc": datetime.now(timezone.utc).isoformat(),
+        "status": "Source-exposed conditional support with explicit wording/scope qualifications; not an audit or root acceptance.",
+        "report": identity(HERE / "REPORT.md"),
+        "source_manifest": identity(HERE / "SOURCE_MANIFEST.json"),
+        "independent_freeze": source_manifest["independent_freeze"],
+        "independent_members_unchanged": len(old["files"]),
+        "actual_metadata_receipts": receipts,
+        "seal_program": identity(Path(__file__).resolve()),
+        "seal_execution_scope": "Actual external tool completion is observed separately; no fabricated self exit receipt is included.",
+        "scientific_programs_run": 0,
+        "captured_failures": [],
+        "editable_prompt_files_changed": []
+    }
+    (HERE / "DELIVERY.json").write_text(json.dumps(delivery, indent=2) + "\n")
+    entries = []
+    for path in sorted(HERE.rglob("*")):
+        if path.is_file() and path.name != "FINAL_FREEZE.json":
+            actual = identity(path)
+            entries.append({"path": str(path.relative_to(HERE)),
+                            "bytes": actual["bytes"], "sha256": actual["sha256"]})
+    freeze = {"sealed_utc": datetime.now(timezone.utc).isoformat(),
+              "status": "Complete bounded source-exposed comparison; no scientific execution.",
+              "scientific_programs_run": 0, "files": entries,
+              "exclusions": ["FINAL_FREEZE.json cannot include its own hash."]}
+    path = HERE / "FINAL_FREEZE.json"
+    path.write_text(json.dumps(freeze, indent=2) + "\n")
+    print(json.dumps({"report": identity(HERE / "REPORT.md"),
+                      "freeze": identity(path), "members": len(entries),
+                      "scientific_programs_run": 0}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

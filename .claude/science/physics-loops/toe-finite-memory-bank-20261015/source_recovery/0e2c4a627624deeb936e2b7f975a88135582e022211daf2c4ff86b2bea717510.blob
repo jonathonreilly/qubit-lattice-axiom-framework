@@ -1,0 +1,26 @@
+{
+  "sealed_utc": "2026-10-15T17:24:26.796444+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md",
+      "bytes": 2871,
+      "sha256": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md",
+      "bytes": 2243,
+      "sha256": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/VERIFICATION.json",
+      "bytes": 8964,
+      "sha256": "6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b"
+    }
+  ],
+  "self_excluded": true
+}

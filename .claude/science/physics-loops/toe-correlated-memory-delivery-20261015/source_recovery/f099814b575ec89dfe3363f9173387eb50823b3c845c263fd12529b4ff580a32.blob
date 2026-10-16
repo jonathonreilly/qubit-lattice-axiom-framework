@@ -1,0 +1,60 @@
+{
+  "captured_utc": "2026-10-15T16:10:49.112839+00:00",
+  "kind": "Actual metadata source capture after initial reading, not pre-execution scientific registration",
+  "scope": "Only the root Gibbs proposal is a theorem-review dependency; prior Markov/joint authorship is exposure, not imported result",
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "remote_sources_byte_archived": false,
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/DERIVATION.md",
+      "snapshot": "source/DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747",
+      "read_scope": "Complete candidate, including all six sections; substantive assessment target"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md",
+      "snapshot": "source/LITERATURE_AND_SCOPE.md",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee",
+      "read_scope": "Complete source-exposure and primary-reading note"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json",
+      "snapshot": "source/PROPOSAL_FREEZE.json",
+      "bytes": 616,
+      "sha256": "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba",
+      "read_scope": "Complete proposal freeze; verify its two members"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "snapshot": "instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "read_scope": "Current complete read; no Git authority refresh in this bounded task"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "read_scope": "Prior complete read reused only after exact current hash verification"
+    },
+    {
+      "original": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "snapshot": "instructions/physics-claim-reviewer.SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "read_scope": "Complete current skill read; explicit task keeps model/effort and prohibits delegation"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "snapshot": "instructions/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_scope": "Complete current read; source/claim/evidence discipline"
+    }
+  ],
+  "proposal_freeze_members_verified": 2
+}

@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-15T17:41:02.695677+00:00",
+  "status": "root analytic candidate; independent derivation pending",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 20551,
+      "sha256": "5cbafbd7b04fa425c4b5f975c075cce33c0e7b19524917ed0a40051eea1fe5ec"
+    },
+    {
+      "path": "PRIMARY_OPEN_TOOL_RESPONSE.json",
+      "bytes": 404,
+      "sha256": "2b2565fbe3ce3626fbe4ea734316f223c104a93967e88c4e3d8559526ab9e139"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 1254,
+      "sha256": "9aae08f4c95c7b02d55e755d269c4d836384a8c0074f41fe9047c00b76068206"
+    }
+  ],
+  "scientific_programs_run": 0
+}

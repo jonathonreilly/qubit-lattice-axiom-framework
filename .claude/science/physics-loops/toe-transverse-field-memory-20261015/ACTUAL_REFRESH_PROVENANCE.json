@@ -1,0 +1,55 @@
+{
+  "kind": "captured_root_refresh_and_ancestry_metadata",
+  "evidence": {
+    "refresh": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/41ed7d7d4ad1bcdf43b9004d1da164abfdda0a4d3090da2a180cbc11d4f045e1.json",
+      "bytes": 3275,
+      "sha256": "41ed7d7d4ad1bcdf43b9004d1da164abfdda0a4d3090da2a180cbc11d4f045e1"
+    },
+    "base_publication": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/715f1263ef6bc5c8f36b158cd5dec26a40f51f643ac6339cfe6dccceab167182.json",
+      "bytes": 1571,
+      "sha256": "715f1263ef6bc5c8f36b158cd5dec26a40f51f643ac6339cfe6dccceab167182"
+    },
+    "base_attachment": {
+      "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/fb47dbfcfbdc5bc525356f831e654beb9237b8d9fc2a025774cecd1796b9a6c7.json",
+      "bytes": 374,
+      "sha256": "fb47dbfcfbdc5bc525356f831e654beb9237b8d9fc2a025774cecd1796b9a6c7"
+    },
+    "fetch": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/291a8e91a8fa58422a6d13fc80f91c06e122a3ac85f6dc5416d258ba59c42190.json",
+        "bytes": 1176,
+        "sha256": "291a8e91a8fa58422a6d13fc80f91c06e122a3ac85f6dc5416d258ba59c42190"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d.blob",
+        "bytes": 121,
+        "sha256": "f2fac13228af7cce764dd69e4f1f1ca3e165cfc2acca26a4f57965bc73aefb1d"
+      }
+    },
+    "inventory": {
+      "execution": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/a114f85b470a7e4d81a92d4bfad0fcf9a058732fede37f633b2e4ce4e057cfd8.json",
+        "bytes": 1261,
+        "sha256": "a114f85b470a7e4d81a92d4bfad0fcf9a058732fede37f633b2e4ce4e057cfd8"
+      },
+      "stdout": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/d74ceff0f3eb91588e50d725b4effbe31101da328f09ac626ec30825770f4bfd.blob",
+        "bytes": 17516,
+        "sha256": "d74ceff0f3eb91588e50d725b4effbe31101da328f09ac626ec30825770f4bfd"
+      },
+      "stderr": {
+        "path": ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "scope": "Historical fetch/inventory and base-publication provenance; the single PR observation serves stack and sole mathematical-parent provenance without adding ancestral theorem edges."
+}

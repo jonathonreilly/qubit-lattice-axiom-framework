@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-15T17:59:54.681941+00:00",
+  "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instructions": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1722/EXECUTION.json",
+      "bytes": 1076,
+      "sha256": "b1b02ceb1fe1208f449ee7f7afa1b48b629bc93e138a83146efdb80015843178"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1722_corrected/EXECUTION.json",
+      "bytes": 1196,
+      "sha256": "c1caeffcedf3ba14cbda6b90fbe614fd4fc6be6243d51872c47b90b598d06c83"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1722/EXECUTION.json",
+      "bytes": 1260,
+      "sha256": "1e8656831f56a177635d7f1dbe8a598a34e65962702b6aa7899221c34dae837a"
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1800/stdout",
+    "bytes": 15967,
+    "sha256": "c933efaf480104e4d88a0b8289283ab7b17979ff86245a324c206d0cc02ff0c1"
+  },
+  "added": [
+    {
+      "baseRefName": "codex/observations-backward-dynamics-20261015",
+      "headRefName": "codex/observations-backward-covariance-20261015",
+      "headRefOid": "44c7d3309c17380474ec253a924af6891d438b02",
+      "isDraft": false,
+      "number": 9610,
+      "title": "[physics-loop] projected scalar constraints: bounded_theorem / conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610"
+    },
+    {
+      "baseRefName": "physics-loop/toe-readiness-resources-20261015",
+      "headRefName": "physics-loop/toe-correlated-memory-delivery-20261015",
+      "headRefOid": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+      "isDraft": false,
+      "number": 9611,
+      "title": "[physics-loop] correlated-memory-delivery: bounded_theorem / conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9611"
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "failure_and_recovery": "First git fetch lacked -C because N/run.py fixes cwd to T; actual exit128 retained. Corrected explicit git -C W fetch exited0. No source changed.",
+  "external_9610_scope": "bounded separate source review in progress; no scientific theorem imported",
+  "refs": {
+    "HEAD": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "actual_fetch_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1800/EXECUTION.json",
+  "actual_inventory_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1800/EXECUTION.json",
+  "delta": "All41 open PR rows unchanged from17:20; current main and instruction ref unchanged.",
+  "prior_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1722/REFS.json",
+    "bytes": 2487,
+    "sha256": "2e716bac46de9d186b3a013600da0645d2b79d037bf662addd02986ee790de7c"
+  },
+  "fetch_scope": "origin/main refreshed; unchanged origin/ai/execution identity and current instruction source pins reused."
+}

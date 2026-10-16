@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-10-15T16:55:21.622162+00:00",
+  "status": "source and structural metadata verified",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/DERIVATION.md",
+    "bytes": 38107,
+    "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+  },
+  "sources_checked": 7,
+  "instruction_identities_checked": 3,
+  "actual_prior_metadata_exit": 0,
+  "scientific_programs_run": 0,
+  "limits": "No mathematical truth check, source-candidate comparison, scientific execution or retained audit."
+}

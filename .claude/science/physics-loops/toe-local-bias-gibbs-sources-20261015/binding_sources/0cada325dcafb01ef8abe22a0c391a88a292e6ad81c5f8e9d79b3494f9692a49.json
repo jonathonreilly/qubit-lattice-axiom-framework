@@ -1,0 +1,272 @@
+{
+  "kind": "root_source_publication_review",
+  "utc": "2026-10-15T18:02:20.983970+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/FINAL_FREEZE.json",
+    "bytes": 42844,
+    "sha256": "520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5"
+  },
+  "sealed_members_verified": 176,
+  "source_rows_verified": 129,
+  "body_pins": [
+    {
+      "name": "local_bias_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 26686,
+      "end_byte_exclusive": 37352,
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+    },
+    {
+      "name": "local_bias_qualification",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 37499,
+      "end_byte_exclusive": 39300,
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+    },
+    {
+      "name": "local_bias_pre_exposure",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 39446,
+      "end_byte_exclusive": 77553,
+      "bytes": 38107,
+      "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+    },
+    {
+      "name": "local_bias_comparison",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 77697,
+      "end_byte_exclusive": 119273,
+      "bytes": 41576,
+      "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+    },
+    {
+      "name": "noncommuting_boundary_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 119424,
+      "end_byte_exclusive": 122483,
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+    },
+    {
+      "name": "noncommuting_boundary_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 122638,
+      "end_byte_exclusive": 132980,
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+    },
+    {
+      "name": "rotated_gibbs_author",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 133123,
+      "end_byte_exclusive": 140953,
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+    },
+    {
+      "name": "rotated_gibbs_assessment",
+      "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 141100,
+      "end_byte_exclusive": 165671,
+      "bytes": 24571,
+      "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "markov_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 28196,
+          "end_byte_exclusive": 75424,
+          "bytes": 47228,
+          "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+        },
+        {
+          "name": "markov_pre_exposure",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75566,
+          "end_byte_exclusive": 103146,
+          "bytes": 27580,
+          "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+        },
+        {
+          "name": "markov_comparison",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103286,
+          "end_byte_exclusive": 134811,
+          "bytes": 31525,
+          "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+        },
+        {
+          "name": "gibbs_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 134946,
+          "end_byte_exclusive": 148313,
+          "bytes": 13367,
+          "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+        },
+        {
+          "name": "gibbs_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 148452,
+          "end_byte_exclusive": 175098,
+          "bytes": 26646,
+          "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+        },
+        {
+          "name": "composition_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 175239,
+          "end_byte_exclusive": 182836,
+          "bytes": 7597,
+          "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+        },
+        {
+          "name": "composition_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 182981,
+          "end_byte_exclusive": 203198,
+          "bytes": 20217,
+          "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "markov_author",
+        "gibbs_author",
+        "composition_author"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "existing_source_acceptances": {
+    "local_bias": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md",
+      "bytes": 2871,
+      "sha256": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b"
+    },
+    "rotated_gibbs": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md",
+      "bytes": 2243,
+      "sha256": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488"
+    },
+    "noncommuting_boundary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_review/ACCEPTANCE.md",
+      "bytes": 2782,
+      "sha256": "5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda"
+    }
+  },
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 1719,
+      "sha256": "4680cb4894346db5be69690991a78aa6bbb7fa74ca613347caab1266b8272593"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 1735,
+      "sha256": "d8a32a0130f3736bcc56847ef5ec723982a3fbe11fd284af4e65b84fe3e095d4"
+    }
+  ],
+  "full_current_files_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/wrapper.md",
+      "bytes": 26546,
+      "sha256": "3196d3c9ed2d79dd68569e5d79dc6f431b9491bfabbbc47c4212d5182c6a2645"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/primary_template.py",
+      "bytes": 12042,
+      "sha256": "d298eb13370fb5494c18b69fe09202e528f9a9303ef89552cb157befae5c3a12"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/build_proposal.py",
+      "bytes": 17036,
+      "sha256": "35f0a87bdb22bf7177e1490fc7bab772a7b17e8659125293ce72384331942b67"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/inspect_proposal.py",
+      "bytes": 12686,
+      "sha256": "536dfea53af8e91fdcbf4e2edd64b67b9e1d0ebee8011c5c5ca48a2885038727"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/record_metadata.py",
+      "bytes": 2433,
+      "sha256": "96c5ebbdcbe83ec482e8e5d3f10e42b9d738557dcb6c04c42e089e0d8fc686ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/seal_packet.py",
+      "bytes": 4812,
+      "sha256": "7226561a1dae5efbabc61f9ac941f0ec4fb31f7d5a56f2e28055ed51d2466d4d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2071,
+      "sha256": "d08dbd396ad0961e70af508af1bd491b69b3e641d28f46b19db4cd744affacfb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2516,
+      "sha256": "c97cf807801c7d755e25ecb7e3d90893086d488038cfa1241475c609fb4bbf1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1642,
+      "sha256": "ebb8f451c2bbefa223932aa1baae2ba1a6313d815712634c576ed3c71fc5ec60"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/COUNTEREXAMPLES.md",
+      "bytes": 3072,
+      "sha256": "dbaf7f0944f0c83454a3614e21db14a848ffaccac85a0bbcbbfb3fc73c27ee1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/HANDOFF.md",
+      "bytes": 2094,
+      "sha256": "5ebd24a989b67f31fbfbe34ecd1ed818814b40d9174d8ee72490cdb454b73f73"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/PR_BODY.md",
+      "bytes": 2062,
+      "sha256": "72aaea92d1c4991d1d2fd6c0a918116d32aad048065804cdcb413d5193ee4970"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/RECOVERY_SCOPE.md",
+      "bytes": 2182,
+      "sha256": "d836558868d125599a08c4bb4d600e3ae4b3cfac667beaee216289f1dccad67e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/REVIEW_HISTORY.md",
+      "bytes": 3096,
+      "sha256": "30e54a59c74e875df72147f6efeb9b4c5bae4f8a9ff846eece64365be8e21664"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_publication_draft/packet_text/TRACE_GATE.md",
+      "bytes": 1064,
+      "sha256": "b3630614fc459895701df8816be2144ab90d059e821e4c42e3232ff630602659"
+    }
+  ],
+  "reading_scope": "Complete current wrapper, all module-level assembly and helper code, primary template and all nine packet texts read. Initial combined reuse-map/wrapper output truncated; complete separate wrapper/primary read repaired coverage. Exact earlier eight scientific body and parent readings reused at verified identities. Full old-to-new code diff and all payload identities checked mechanically, not counted as a fresh independent proof.",
+  "current_qualifications": [
+    "Fixed local equilibrium-class tolerances are distinct from global delivery errors and coherent nominal-target dynamic accuracy.",
+    "Lower inverse-temperature bound, r>=1, logical Dmax and genuinely full-rank-only rank witness retained.",
+    "Collected Ising conditional formula does not transfer physical reserve/scalar/channel costs; bounded c,k0 and profile factors needed for O(L) resources.",
+    "Product-basis Gibbs family remains mutually commuting. Full reduced density or full reduced trace tolerance needed through its non-diagonal quench.",
+    "Every actual quench/guard/readiness segment, reference, record, scalar, phase, covariance and old K_Z then H0 aging retained.",
+    "Two-qubit XX boundary is narrow; it does not exclude the separate prospective onsite transverse-field class."
+  ],
+  "independence": "The independent local-bias source predates root-candidate exposure; later comparison, rotated/boundary checks and publication assembly are source exposed on the same selected model. Root authored initial proposals; this packaging review adds no independent mathematical derivation.",
+  "base_binding": "Source draft names PR9611/9369 as requested ancestry. Root may bind the coherent later checked stack after bank publication, but must explicitly update current wrapper, primary base observation and receipt schema. Sole mathematical parent remains correlated12bd18b0; no bank import.",
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding and integration remain pending.",
+  "remaining": "Actual base/source binding, primary/cache/semantic mutations/focused graph and stage gates, regular PR/attachment. No retained audit, native source/control supply or physical energy/detector identification."
+}

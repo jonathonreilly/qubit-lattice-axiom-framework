@@ -1,0 +1,76 @@
+{
+  "dependencies": [
+    {
+      "path": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 203198,
+      "sha256": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89",
+      "claim_id": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15",
+      "accepted_body_intervals": [
+        {
+          "name": "markov_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 28196,
+          "end_byte_exclusive": 75424,
+          "bytes": 47228,
+          "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+        },
+        {
+          "name": "markov_pre_exposure",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 75566,
+          "end_byte_exclusive": 103146,
+          "bytes": 27580,
+          "sha256": "d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151"
+        },
+        {
+          "name": "markov_comparison",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 103286,
+          "end_byte_exclusive": 134811,
+          "bytes": 31525,
+          "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+        },
+        {
+          "name": "gibbs_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 134946,
+          "end_byte_exclusive": 148313,
+          "bytes": 13367,
+          "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+        },
+        {
+          "name": "gibbs_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 148452,
+          "end_byte_exclusive": 175098,
+          "bytes": 26646,
+          "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+        },
+        {
+          "name": "composition_author",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 175239,
+          "end_byte_exclusive": 182836,
+          "bytes": 7597,
+          "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f"
+        },
+        {
+          "name": "composition_assessment",
+          "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+          "start_byte_inclusive": 182981,
+          "end_byte_exclusive": 203198,
+          "bytes": 20217,
+          "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+        }
+      ],
+      "required_mathematical_body_names": [
+        "markov_author",
+        "gibbs_author",
+        "composition_author"
+      ],
+      "role": "direct_mathematical_parent"
+    }
+  ],
+  "geometry": "transitive through correlated-memory parent and its stated joint/finite-memory imports",
+  "git_ancestry_is_not_mathematical_dependency": true
+}

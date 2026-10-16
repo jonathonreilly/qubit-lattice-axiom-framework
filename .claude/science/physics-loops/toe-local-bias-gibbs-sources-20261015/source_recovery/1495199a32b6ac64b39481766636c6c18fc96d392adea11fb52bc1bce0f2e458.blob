@@ -1,0 +1,60 @@
+"""Source-only capture; no scientific evaluation or previous program execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+OUT=Path(__file__).resolve().parent
+N=OUT.parent
+W=N.parent/'correlation_worktree'
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+    b=p.read_bytes()
+    return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+started=now()
+spec=[
+('rotated_gibbs_memory_root_candidate/DERIVATION.md','rotated/DERIVATION.md','30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2','complete new argument read'),
+('rotated_gibbs_memory_root_candidate/PROPOSAL_FREEZE.json','rotated/PROPOSAL_FREEZE.json','19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7','one-member proposal checked'),
+('local_bias_memory_root_candidate/DERIVATION.md','local_bias_provisional/DERIVATION.md','637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95','complete source read; provisional, not other-worker acceptance'),
+('local_bias_memory_root_candidate/PROPOSAL_FREEZE.json','local_bias_provisional/PROPOSAL_FREEZE.json','824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038','one-member proposal checked'),
+('local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md','local_bias_qualification/SCOPE_AND_PRIOR_ART.md','c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e','complete later qualification read; no external theorem imported'),
+('local_bias_memory_root_qualification/FINAL_FREEZE.json','local_bias_qualification/FINAL_FREEZE.json','5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3','one-member qualification freeze checked'),
+('correlated_markov_memory_candidate/DERIVATION.md','markov/DERIVATION.md','685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea','prior complete check reused; necessary passages reread'),
+('correlated_markov_memory_candidate/FINAL_FREEZE.json','markov/FINAL_FREEZE.json','80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615','identity only; no recursive parent archive verification'),
+('correlated_markov_memory_independent/comparison/REPORT.md','prior_reviews/MARKOV_REPORT.md','c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef','own prior complete assessment reused at exact identity'),
+('correlated_markov_memory_independent/comparison/FINAL_FREEZE.json','prior_reviews/MARKOV_FINAL_FREEZE.json','2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a','prior seal identity only'),
+('gibbs_markov_composition_decisive_check/REPORT.md','prior_reviews/COMPOSITION_REPORT.md','406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b','own prior composition check reused; target/error/work passages reread'),
+('gibbs_markov_composition_decisive_check/FINAL_FREEZE.json','prior_reviews/COMPOSITION_FINAL_FREEZE.json','de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6','prior seal identity only'),
+('local_clock_joint_readiness_correction/DERIVATION.md','joint/DERIVATION.md','dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179','prior full corrected proof check reused; unchanged readiness consumer'),
+('local_bias_noncommuting_boundary_decisive_check/REPORT.md','prior_reviews/BOUNDARY_REPORT.md','ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c','prior boundary review completed before rotated-source exposure'),
+('local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json','prior_reviews/BOUNDARY_FINAL_FREEZE.json','e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7','prior seal identity only')]
+rows=[]
+def save(src,rel,sha,scope):
+    got=meta(src)
+    assert got['sha256']==sha,str(src)
+    dst=OUT/rel
+    dst.parent.mkdir(parents=True,exist_ok=True)
+    dst.write_bytes(src.read_bytes())
+    rows.append({'origin':got,'recovery':meta(dst),'scope':scope})
+for rel,dst,sha,scope in spec: save(N/rel,'sources/'+dst,sha,scope)
+instructions=[
+(W/'AGENTS.md','AGENTS.md','f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f'),
+(W/'docs/ai_methodology/SCIENCE_WORKFLOW.md','SCIENCE_WORKFLOW.md','05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce'),
+(Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'),'physics-claim-reviewer.SKILL.md','9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455'),
+(Path('/Users/jonreilly/.codex/skills/workhorse/SKILL.md'),'workhorse.SKILL.md','9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb')]
+for p,dst,sha in instructions: save(p,'instructions/'+dst,sha,'prior complete instruction reading reused, unchanged identity; no delegation authorized')
+canon=W/'docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+c=meta(canon)
+assert c['sha256']=='00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e'
+body=canon.read_bytes()[70024:110857]
+assert body==(OUT/'sources/joint/DERIVATION.md').read_bytes()
+rows.append({'origin':c,'recovery':None,'scope':'canonical identity and exact corrected body interval [70024,110857) verified; body recovery saved separately'})
+nested=[]
+for rel in ['sources/rotated/PROPOSAL_FREEZE.json','sources/local_bias_provisional/PROPOSAL_FREEZE.json','sources/local_bias_qualification/FINAL_FREEZE.json']:
+    p=OUT/rel
+    f=json.loads(p.read_text())
+    for row in f['files']:
+        got=meta(p.parent/row['path'])
+        assert got['bytes']==row['bytes'] and got['sha256']==row['sha256']
+    nested.append({'freeze':str(p),'members':len(f['files'])})
+result={'started_utc':started,'completed_utc':now(),'kind':'metadata-only source capture after analytic reading','sources':rows,'nested_small_source_freezes':nested,'scientific_executions':0,'scientific_replays':0,'other_worker_local_bias_opened':False,'finite_bank_candidate_opened':False}
+(OUT/'SOURCE_MANIFEST.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({'source_count':len(rows),'small_freeze_members':sum(x['members'] for x in nested),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'scientific_executions':0},sort_keys=True))

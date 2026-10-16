@@ -1,0 +1,19 @@
+{
+  "kind": "actual completed metadata child process",
+  "started_utc": "2026-10-15T16:01:32.339468+00:00",
+  "completed_utc": "2026-10-15T16:01:32.434822+00:00",
+  "returncode": 0,
+  "stdout": {
+    "bytes": 396,
+    "sha256": "fb8fd5556de47522532bb26678aa5827431c83770d4a46efde7951c91a9a5cbc"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "bytes": 1277,
+    "sha256": "29190033f2ecbfee2604357492962f0cb4f8c1568e22e08b9273b846d41b5230"
+  },
+  "scientific_execution": false
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "actual_local_bias_source_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "actual_git_base": "5a78c290489676e7fcb203aa1e6fa6933c7fdc49",
+  "actual_branch_at_binding": "physics-loop/toe-finite-memory-bank-20261015",
+  "bound_note_sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0cada325dcafb01ef8abe22a0c391a88a292e6ad81c5f8e9d79b3494f9692a49.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/0ea8979c825764701f35820ab949fa576d36caebc32a035dea659fe6c1d758de.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/1cb9d9f055fffa9601ba5747a6478962824c52f8094340ba3fc43ff1a3ebed9c.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/520767eb22da03e4348edb27fa2c60550e7869aff92c3381e5d012c5192ff4f5.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/586aab12ce721c113181b0b23e30a6a879548a895285100893cf78b0c1ddb890.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/59bbe60ac11e089c887189122256bfd413d87b93f62a7ba53475074073629016.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/75ab23f8828b19895dde425a29c6549622f0470606038a7fe42b456adcbd81d2.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/95364c74ef1b9032465b5a734903ef8f076307e8f7d8a3806681fbdcdc7023fe.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/b5d3294135c8aa8a067d711dc48defe3a05b79a852b79bd7c145d765f0aebd15.json",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/binding_sources/f95c39e6fd8de082407ef67754043a4f9a17e17c4a26169f6a23ef6d4ca07e8c.blob"
+  ],
+  "canonical_parent_sha256": {
+    "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89"
+  }
+}

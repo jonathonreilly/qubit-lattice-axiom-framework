@@ -1,0 +1,270 @@
+{
+  "schema": "gibbs_markov_composition_review_v1",
+  "sealed_utc": "2026-10-15T16:35:44.932287+00:00",
+  "root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check",
+  "excluded_exact_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/FINAL_FREEZE.json",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/CLOSING_METADATA.json",
+      "bytes": 44374,
+      "sha256": "febe3bd24d471f4328acf4017d1ffbdad4a4206c021b8c0ed74062f9d9a390e0",
+      "relative_path": "CLOSING_METADATA.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/DELIVERY.json",
+      "bytes": 3953,
+      "sha256": "89ed7a68909b2fb61168ca7d09b5c30e4a230d66d555f9972e8cf4ad0d85d9a8",
+      "relative_path": "DELIVERY.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/REPORT.md",
+      "bytes": 20217,
+      "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b",
+      "relative_path": "REPORT.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/SCOPE_AND_READING.md",
+      "bytes": 3766,
+      "sha256": "df17dd0572219c9d30637873a4c8823d14daf37cb2a59813dcffd72b679e8f7d",
+      "relative_path": "SCOPE_AND_READING.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 52427,
+      "sha256": "58ce1f0b8d2f0c15dc38c031307993e0cb21c5ae66f456976fd6f5610043afd1",
+      "relative_path": "SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/capture_metadata.py",
+      "bytes": 4109,
+      "sha256": "0bbac46412c089ab08585bf0623d01bfe6206e457d35abdea4736824fbda159b",
+      "relative_path": "capture_metadata.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 952,
+      "sha256": "f9366492215430a8ca56ee8fcd869310302c07f1da69c0ad936737a492701e0a",
+      "relative_path": "metadata_runs/capture/EXECUTION.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "bytes": 1181,
+      "sha256": "bc316d52f05848291c2801dd9fb4bb571b41b20a44f370bc17d5fed8358d0bd8",
+      "relative_path": "metadata_runs/capture/LAUNCH.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/child_source.py",
+      "bytes": 4109,
+      "sha256": "0bbac46412c089ab08585bf0623d01bfe6206e457d35abdea4736824fbda159b",
+      "relative_path": "metadata_runs/capture/child_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf",
+      "relative_path": "metadata_runs/capture/recorder_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relative_path": "metadata_runs/capture/stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/capture/stdout",
+      "bytes": 396,
+      "sha256": "07898d95c68905e961d16e301f549f2a09bd1e7966d2e4a9a8aa1715dcb5dc66",
+      "relative_path": "metadata_runs/capture/stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/EXECUTION.json",
+      "bytes": 952,
+      "sha256": "51d68a855cabfa37b86f66f53b3af7b627c56d896baa03ff7c8cf028ec978b46",
+      "relative_path": "metadata_runs/closure/EXECUTION.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/LAUNCH.json",
+      "bytes": 1179,
+      "sha256": "992a3d241939aa852940bfe2b6cf2298bc4f24a2b2cb89dafd5cac7da9d4dfe6",
+      "relative_path": "metadata_runs/closure/LAUNCH.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/child_source.py",
+      "bytes": 3852,
+      "sha256": "cc12b7f883dbfe07c37906120834b96ba31a9ccc7e05a1276fd59672182244bc",
+      "relative_path": "metadata_runs/closure/child_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf",
+      "relative_path": "metadata_runs/closure/recorder_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relative_path": "metadata_runs/closure/stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/metadata_runs/closure/stdout",
+      "bytes": 873,
+      "sha256": "489602fed1664e6f7c26d824ebdc3e748a416f6888d3661edb20c40db3f2da54",
+      "relative_path": "metadata_runs/closure/stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/record_metadata.py",
+      "bytes": 1528,
+      "sha256": "7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf",
+      "relative_path": "record_metadata.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/seal_review.py",
+      "bytes": 2464,
+      "sha256": "323b058293f2f7dbbcaa18f988884429f07c3815bcc4fac1fb5335142c141610",
+      "relative_path": "seal_review.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/correlated_markov_memory_candidate/DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "relative_path": "sources/correlated_markov_memory_candidate/DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+      "bytes": 6228,
+      "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615",
+      "relative_path": "sources/correlated_markov_memory_candidate/FINAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json",
+      "bytes": 16703,
+      "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a",
+      "relative_path": "sources/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/correlated_markov_memory_independent/comparison/REPORT.md",
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef",
+      "relative_path": "sources/correlated_markov_memory_independent/comparison/REPORT.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/gibbs_markov_composition_root_candidate/DERIVATION.md",
+      "bytes": 7597,
+      "sha256": "6296fd36b048b030a07f87be41838ce1f03c1f523442b63484b239f5173f2c3f",
+      "relative_path": "sources/gibbs_markov_composition_root_candidate/DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 312,
+      "sha256": "76d0700c7841420d06e218ff16e4a631d3f54e558903f25479577de62bc45312",
+      "relative_path": "sources/gibbs_markov_composition_root_candidate/PROPOSAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json",
+      "bytes": 3822,
+      "sha256": "4b29be30e0253c821e1a826eb78064aeae1391a581009a0a740c6d7bce663b67",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/FINAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/REPORT.md",
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/REPORT.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/SCOPE_AND_PLAN.md",
+      "bytes": 2628,
+      "sha256": "c529e873ea68c6a0b6e6d818aaed1b2fbd1d585dcb5d5812a12d19fa959034d1",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/SCOPE_AND_PLAN.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 3335,
+      "sha256": "f099814b575ec89dfe3363f9173387eb50823b3c845c263fd12529b4ff580a32",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/capture_sources.RECEIPT.json",
+      "bytes": 562,
+      "sha256": "054b249cc68e17beee9565251c61bdc5f1900a9f58890798494c27d1043b3305",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/capture_sources.RECEIPT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/capture_sources.py",
+      "bytes": 3445,
+      "sha256": "366a8007085ba31abc3878d562da656c9ead8475cad0cb5f65f24f1cdce6af1a",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/capture_sources.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/capture_sources.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/capture_sources.stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/capture_sources.stdout",
+      "bytes": 114,
+      "sha256": "e6894a6ca664716340069af498d5a354696d9b6d6788158537fd3a5fadc82314",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/capture_sources.stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.RECEIPT.json",
+      "bytes": 605,
+      "sha256": "dbb3bb49c6fac88c163e704d8437bc6503e5c1b30c9f4ff104bb842a323f6189",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.RECEIPT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.py",
+      "bytes": 1536,
+      "sha256": "bf65ff555397752acc10ba1d3eb32bdbb44a9b1292c35198d4323aca0cae643e",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.stdout",
+      "bytes": 379,
+      "sha256": "2c4f69c08bb4f088f1f570ed9ae5e1c3945d264c118f0a299fe794aa0cf8e05f",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/finalize_metadata.stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_decisive_check/seal_packet.py",
+      "bytes": 2807,
+      "sha256": "38f68f19d6f6757c26b28c684e636112ce1976cc0647958b63e48a16a3afc76b",
+      "relative_path": "sources/local_gibbs_memory_interface_decisive_check/seal_packet.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_root_candidate/DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747",
+      "relative_path": "sources/local_gibbs_memory_interface_root_candidate/DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee",
+      "relative_path": "sources/local_gibbs_memory_interface_root_candidate/LITERATURE_AND_SCOPE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/sources/local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 616,
+      "sha256": "ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba",
+      "relative_path": "sources/local_gibbs_memory_interface_root_candidate/PROPOSAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/verify_metadata.py",
+      "bytes": 3852,
+      "sha256": "cc12b7f883dbfe07c37906120834b96ba31a9ccc7e05a1276fd59672182244bc",
+      "relative_path": "verify_metadata.py"
+    }
+  ],
+  "file_count": 43,
+  "all_nested_freezes_included_by_full_path": true,
+  "scientific_executions": 0,
+  "scientific_replays": 0
+}

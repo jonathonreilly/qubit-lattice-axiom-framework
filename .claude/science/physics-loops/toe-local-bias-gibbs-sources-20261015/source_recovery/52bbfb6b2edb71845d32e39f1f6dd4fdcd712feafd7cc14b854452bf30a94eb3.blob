@@ -1,0 +1,240 @@
+{
+  "started_utc": "2026-10-15T17:09:46.701924+00:00",
+  "completed_utc": "2026-10-15T17:09:46.751761+00:00",
+  "kind": "metadata source and receipt closure only",
+  "checks": [
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_root_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/PROPOSAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/SCOPE_AND_PRIOR_ART.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/joint/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_FINAL_FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "saved source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/workhorse.SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "current source/instruction /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "name": "small nested source member /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "small nested source member /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/DERIVATION.md",
+      "passed": true
+    },
+    {
+      "name": "small nested source member /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/SCOPE_AND_PRIOR_ART.md",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax record_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax seal_review.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax capture_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "metadata source syntax verify_metadata.py",
+      "passed": true
+    },
+    {
+      "name": "capture actual exit zero",
+      "passed": true
+    },
+    {
+      "name": "capture UTC order",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch child",
+      "passed": true
+    },
+    {
+      "name": "capture source-at-launch recorder",
+      "passed": true
+    },
+    {
+      "name": "actual capture launch /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "passed": true
+    },
+    {
+      "name": "actual capture stdout /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stdout",
+      "passed": true
+    },
+    {
+      "name": "actual capture stderr /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stderr",
+      "passed": true
+    },
+    {
+      "name": "capture science/replay count zero",
+      "passed": true
+    },
+    {
+      "name": "prohibited other-worker source not opened",
+      "passed": true
+    },
+    {
+      "name": "next finite-bank source not opened before rotated seal",
+      "passed": true
+    }
+  ],
+  "check_count": 56,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/REPORT.md",
+    "bytes": 24571,
+    "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b"
+  },
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "scope_limit": "Analytic scientific verification; no numerical or symbolic fixture. Parent archive identities are pins, not recursive revalidation."
+}

@@ -1,0 +1,11 @@
+# Comparison metadata plan
+
+The independent analytic derivation was sealed before candidate exposure at 2026-10-15T15:59:56 UTC. Its proof is d820b150bb4167e6a2be77477228bcbc8f907cd781b4b44ca0f38bba345bc151 and its exact 37-member freeze is f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4. That subtree will not be edited.
+
+This comparison reads the complete frozen candidate draft 3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73 and the complete final change diff c1158abd074e9c66c1943a085a5c42089f0bc0882e6c2046b465637c5bd6c44a to final source 685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea. Existing source coverage is reused only at exact unchanged identities. The independent route and candidate use different allocations and mixing estimates; their counts and probability arguments are checked separately.
+
+No scientific diagnostic or replay is proposed. Analytic derivations resolve the load-bearing questions. The only executable children in this directory will capture or verify source identities, exact textual diffs, saved receipt integrity and syntax of those metadata scripts. They do not evaluate the scientific formulas. Each child has a 60-second timeout and actual source-at-launch, command, UTC timestamps, stdout, stderr and exit receipt. Every failure will be retained.
+
+Candidate freeze members and its listed source origins may be hashed to verify recoverability; this does not imply substantive reading of the selection memo or unrelated old arguments. The selection memo remains substantively unread. Necessary exact source snapshots are retained once or referenced to the sealed independent subtree. No recursive archive of parent evidence is generated.
+
+All writes are confined to this comparison directory. No repository, Git, checkpoint, lock, audit, prompt, axiom, candidate or prior-source edits; no model change, new agent or scientific acceptance from metadata counts.

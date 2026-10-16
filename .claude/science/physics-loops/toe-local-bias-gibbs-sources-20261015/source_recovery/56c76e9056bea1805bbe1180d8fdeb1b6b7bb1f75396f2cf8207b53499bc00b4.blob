@@ -1,0 +1,40 @@
+{
+  "sealed_utc": "2026-10-15T16:57:05.319798+00:00",
+  "status": "independent construction frozen; new candidate comparison pending",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/DERIVATION.md",
+    "bytes": 38107,
+    "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/SOURCE_MANIFEST.json",
+    "bytes": 6773,
+    "sha256": "b06667c149785bbda4642b26800732609e5012663e59653caf950c1c1c3b7ebf"
+  },
+  "coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/EXPOSURE_AND_READ_COVERAGE.md",
+    "bytes": 4982,
+    "sha256": "ddfb6a228200f25b3acd38e4ee31ea5f6e2188fec408426bd0607919a263dac3"
+  },
+  "handoff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/HANDOFF.md",
+    "bytes": 2575,
+    "sha256": "804e484eb1489d77fbd9865482cae62a59c6fc184d61650c4c1d0d97c2d82306"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/EXECUTION.json",
+      "bytes": 968,
+      "sha256": "a3ec9d2d9aa185e816c463a0f60c572f8c01122017bf7f0be8b932844d03acd4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/EXECUTION.json",
+      "bytes": 968,
+      "sha256": "621f1f0519aebfe4c5a90e2eee581084a817e82313e151b222f49a840c58a332"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "editable_prompt_files_changed": [],
+  "independence_limit": "Same model and accepted prior mechanics; explicit prior composition exposure. New local-bias root candidate remains unaccessed.",
+  "execution_limit": "The seal process completion is supplied by the actual tool response, not a self-referential prior exit receipt."
+}

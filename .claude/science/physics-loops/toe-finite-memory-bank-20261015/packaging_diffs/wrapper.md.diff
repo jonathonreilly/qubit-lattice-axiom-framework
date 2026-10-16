@@ -1,0 +1,288 @@
+--- correlated_memory_publication_draft/wrapper.md
++++ finite_bank_publication_draft/wrapper.md
+@@ -1,6 +1,6 @@
+ ---
+-title: Correlated memory delivery and complete joint readiness
+-claim_id: correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15
++title: Finite consumed memory banks for repeated readiness
++claim_id: finite_consumed_memory_bank_bounded_theorem_note_2026-10-15
+ claim_type: bounded_theorem
+ target_claim_type: bounded_theorem
+ actual_current_surface_status: conditional-support
+@@ -10,10 +10,10 @@
+ target_blocker_text: null
+ source_of_blocker_text: user_goal
+ reachability_to_target: supports
+-conditional_surface_status: supplied stationary Markov diagonal, quantitative bias and mixing certificates, controlled basis, fresh isolated ray, complete local gates, compensation and timing; Gibbs state and temperature separately supplied
++conditional_surface_status: supplied full correlated memory law and basis, quantitative margins, finite fresh bank, complete local controls, compensation, whole-lifetime isolation, calibrated chronological segments
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+-claim_type_reason: finite conditional conversion of correlated raw memory to complete readiness, with separately checked finite local Gibbs delivery and actual-time composition
++claim_type_reason: finite bank consumption supports a declared number of fully retained readiness episodes under explicit source and control hypotheses
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+ status: proposed_retained
+@@ -21,190 +21,138 @@
+ publication_pr: null
+ publication_status: source_proposal_awaiting_root_binding
+ source_acceptance_status: checked_conditional_source
+-upstream_dependencies: ["routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15", "finite_local_clock_memory_resources_bounded_theorem_note_2026-10-15"]
+-runner: scripts/correlated_memory_delivery_and_readiness_2026_10_15.py
+-packet: .claude/science/physics-loops/toe-correlated-memory-delivery-20261015
+-next_trace_action: bind the exact reviewed source in an actual checkout, execute source-integrity and integration gates, and prepare a regular conditional-support milestone; native supply remains separate
++upstream_dependencies: ["correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15"]
++runner: scripts/finite_consumed_memory_bank_2026_10_15.py
++packet: .claude/science/physics-loops/toe-finite-memory-bank-20261015
++next_trace_action: bind the actual reviewed tree and selected Git base, execute source-integrity and integration gates, then prepare a regular conditional-support milestone
+ ---
+ 
+ Claim type: bounded_theorem
+ 
+-# Correlated memory delivery and complete joint readiness
++# Finite consumed memory banks for repeated readiness
+ 
+-**Primary-runner role: source integrity only.** The proposed primary checks exact proof bodies, mathematical-parent pins, selected recovery evidence and actual binding records. It does not run a physical model, prove a theorem, prepare a state or turn metadata into scientific evidence. It has not been executed in this source-only proposal. Scientific support is the analytic constructions, counterexamples and separately recorded source reviews preserved below.
++**Primary-runner role: source integrity only.** The proposed 60-second primary checks exact source/review bodies, the one canonical mathematical parent, selected recovery evidence and an actual root binding. It does not simulate a physical system, establish a theorem, prepare memory or certify an audit outcome. It is unexecuted in this source-only draft and intentionally fails closed until root supplies the actual binding and complete declared receipt inputs.
+ 
+-The first result replaces exact product raw-memory and old-memory independence assumptions by a supplied full stationary binary Markov computational diagonal, allowing arbitrary coherences and correlations with every original factor and reference. A finite reversible NN word delivers approximately pure memory at the same fixed endpoints and supports the paid complete auxiliary/original-clock readiness protocol. The second result supplies a finite positive NN Hamiltonian with exactly that diagonal Gibbs law, explicit calibration allowances and a paid field removal on arbitrary correlated inputs. The second result does not produce its initial Gibbs state. These are separately accepted conditional results; their physical suppliers remain explicit.
++For every declared finite number k of readiness episodes on a fixed old register S, one larger supplied correlated raw-memory ray can be reversibly compressed once into k approximate reset blocks. Returned routes then consume a distinct block at each episode, transfer the complete current S record there, and prepare the specified clock packet on the original sites. One full-bank comparison error is propagated through the sequence; every episode still pays its own turn-on, release, control, timing and isolation costs. The resulting full-state approximation retains all old records, used and unused bank blocks, garbage and reference factors.
+ 
+-This source-only regular-publication draft preserves seven complete historical proof/review bodies byte for byte. Current acceptance and mandatory interpretations are stated in this wrapper; historical pending statements inside attributed bodies remain unchanged. The two standalone root decisions are b62f977e and c2338e1a, sealed with verification 3343903a/freeze 4c85db1a. The separately checked composition is now accepted by decision 4d781ab6, verification 664293eb/freeze fbd981bc; its complete source and assessment are also preserved. Actual checkout/base binding, primary/cache/mutation/graph execution, publication and retained audit remain pending. No scientific program or historical science replay was performed for these new arguments or this package.
++The exact author source 162d7504 and separate assessment 16f6fbc7 are preserved below byte for byte, including historical status wording. The current source decision is root acceptance 5bf680cc, with its exact verification and freeze recorded in the packet. This wrapper applies the review's mandatory at-most compensation-action and chronological guard qualifications. It does not claim that source-only drafting has bound a checkout, executed the primary/cache/mutations/graph, opened a PR or obtained retained audit status.
+ 
+-## Exact domain and what changes
++## Quantified contract and the one mathematical parent
+ 
+-Let D contain all original nonclock factors, X the original M-site clock, A the complete three-component mediator, S=A union X, and R all passive references. Let s=|S|. Keep the first s sites E of the existing joint-readiness +x ray fixed, extend that ray to B=EF, and retain every spacer and garbage factor F. For Z=D S R, the initial rho_ZB is arbitrary except for its entire computational-basis B diagonal:
++Let D be all original nonclock factors, X the original M-site clock, A its complete auxiliary register, S=A union X with s=|S|, and R the retained reference. Keep their sites and installed finite generator fixed:
+ 
+-    p(x)=pi_(x1) product_i P_(xi,x(i+1)),
+-    P=[[1-a,a],[b,1-b]], q=a/(a+b)<1/2,
+-    pi=(1-q,q), lambda=1-a-b, |lambda|<1.
++    Z=D S R,  K_Z=H0+F_inst,  H0 acting only on D.
+ 
+-The Markov result permits its stated boundary cases, including q=0, and requires quantitative certificates for finite effective selection. The Gibbs construction has the narrower interior domain 0<a<b<1 and beta>0. Neither theorem assumes the diagonal promise conditionally on a reference outcome. No original factor is moved, no old data/apparatus record is initialized for free, and no N_X=1 hypothesis is imposed on the arbitrary initial S register. A specified normalized computable one-excitation packet is synthesized later by the paid parent controls.
++The literal F_inst and its positive local compensation, full gate dictionary, fixed connected S routing graph, ray geometry and synthesis domain are supplied by [Correlated memory delivery and complete joint readiness](CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md), exactly 203,198 bytes, SHA256 12bd18b0d2a1939639027ed51204a066744eab77d2b105a870f89bdb286b4d89. Its accepted Markov body is 685db9bd and complete comparison c001e42e. This is the sole direct mathematical parent. The older joint-readiness and memory notes are transitive through that canonical parent; their Git ancestry is not an additional theorem hypothesis. Local-bias and rotated-Gibbs results are not needed for the claim here.
+ 
+-The retired premises are exact product structure of the raw bits and independence from the old system. The full correlated diagonal, its basis, bias/mixing margins, fresh factors, controls, isolation and calibration remain supplied. A one-site bias estimate, an abstract realized-state slot, or a temperature label does not certify that full diagonal. The registered realized-state primitive is an approved reference interface; it does not supply this state-dependent distribution or its values. No axiom or primitive is added.
++H0 need not commute with F_inst. Use the literal full-space bounds B_F>=||F_inst|| and positive local blocks C_alpha=c_alpha I-h_alpha, c_alpha>=||h_alpha||, so C=sum C_alpha=kappa I-F_inst>=0 and B_C>=||C||. Positivity of the complete nominal generator also requires the supplied installed K_Z>=0. A bound on a signed fault does not install a positivity reserve. Every scalar and every coefficient is part of the physical ledger.
+ 
+-## Fixed-endpoint domination and reversible compression
++Append the existing +x memory ray B, with nominal zero memory baseline after any separately paid delivery switch. Choose a finite integer k>=1 and n=k s. The first n ray sites form E_total, partitioned into E^(a)={B_((a-1)s+j):1<=j<=s}. All remaining raw sites form F. The initial joint density on ZB can have arbitrary coherences and arbitrary old/reference correlations. Its complete computational diagonal on the entire selected ray is a supplied finite stationary Markov law
+ 
+-For q<q_bar<1/2 and |lambda|<=lambda_bar<1, choose ell>=1 with lambda_bar^ell<=q_bar-q. Directly,
++    P=[[1-a,a],[b,1-b]],  q=a/(a+b)<1/2,
++    a+b>0, 0<=a,b<=1, lambda=1-a-b, |lambda|<1,
++    p(x)=pi_(x1) product_i P_(xi,x(i+1)), pi=(1-q,q),
+ 
+-    P^d(x,1)=q+lambda^d(x-q)<=q_bar,  d>=ell.
++or differs from that certified law by a supplied global event-TV allowance d_del. Quantitative computable certificates q<q_bar<1/2 and |lambda|<=lambda_bar<1 are required for effective finite choices. The premise is on the marginal diagonal, not on every reference-conditioned input. Neither product raw memory nor initial old/memory independence is required. A realized-state reference does not supply this particular law, its parameters, controls or basis; the registered primitive retains its narrower approved role.
+ 
+-Every ordered selected set with gaps at least ell is therefore dominated by iid Bernoulli(q_bar) variables through a common independent-uniform threshold coupling. This holds for negative lambda and does not require monotonicity of the transition kernel in its previous bit. Recursive ternary majority is increasing, so its failure probability is bounded by
++The direct Markov route requires no initial source Hamiltonian or switch. If a delivery switch is included, its full contract is separately supplied and paid. For the parent's diagonal Gibbs interface, U_q=exp(-it_q K_Z) tensor exp(-i A_q G_B) retains the diagonal and all correlation phases. It ages the old system under K_Z for the actual t_q. A non-diagonal switch cannot be inferred from a diagonal-only promise; that optional extension is outside the mathematical dependency used here.
+ 
+-    q_0=q_bar, q_(k+1)=3q_k^2-2q_k^3.
++## One compression and its complete marginal
+ 
+-Choose r>=1, Q=3^r, and leaves
++Choose ell>=1 with lambda_bar^ell<=q_bar-q, r>=1 and Q=3^r. Allocate
+ 
+     x_(j,0)=j,
+-    x_(j,t)=s+[(j-1)(Q-1)+t]ell, 1<=t<Q,
+-    L_raw=s+s(Q-1)ell.
++    x_(j,t)=n+[(j-1)(Q-1)+t]ell, 1<=j<=n, 1<=t<Q,
++    L_raw=n+n(Q-1)ell.
+ 
+-The first gap is ell+h_j, h_j=s-j+(j-1)(Q-1)ell>=0; later gaps are ell. These disjoint sets retain E_j as their first representatives. A union bound gives p_bad<=min(1,s q_r). The outputs need not be independent. A different pre-exposure derivation uses interleaved uniform strides and a TV telescoping allowance; its distinct sufficient resource formula is preserved rather than silently identified with this layout.
++The first gap is ell+h_j with h_j=n-j+(j-1)(Q-1)ell>=0, and later gaps are ell. Every endpoint stays at its prescribed first ray site. The parent Markov identity P^d(x,1)=q+lambda^d(x-q) bounds each selected sequential threshold by q_bar; recursive majority is increasing. If q_0=q_bar and q_(u+1)=3q_u^2-2q_u^3, the union of n bad endpoint events has probability at most n q_r. The outputs are not assumed independent. Global event-TV changes that single diagonal bad event by at most d_del:
+ 
+-Chronological CX(a,b), CX(a,c), CCX(b,c;a) gives majority at a and reversible garbage elsewhere. The full positive two-qubit CV/CX word for CCX is phase exact. Returned SWAP routing at distance d uses 2d-1 two-qubit gates and acts as identity on all intermediate dirty, entangled factors after each completed gate. No clean routing work bit or discarded output is used. Compression extends the earlier pure-memory readiness dictionary by supplied CX/CV controls, including ZX and onsite channels; static hopping alone does not supply them.
++    delta<=delta_bar=min(1,n q_r+d_del).
+ 
+-For this nonuniform leaf layout the exact counts are
++The completed U_c is the phase-exact memory-only permutation compiled from the full positive SWAP/CX/CV dictionary and returned dirty NN routes. Its counts, with n endpoints rather than s old sites, are
+ 
+-    P_c=(20ell r/3)sQ-(7/2)s(Q-1)
+-                     +5r s(s-1)[1+(Q-1)ell],
+-    D_c=ell[(s-1)(Q-1)+2Q/3],
+-    A_c=pi[P_c+s(Q-1)/4].
++    P_c=(20ell r/3)nQ-(7/2)n(Q-1)
++         +5r n(n-1)[1+(Q-1)ell],
++    A_c=pi[P_c+n(Q-1)/4], scalar action=A_c/4.
+ 
+-There are s(Q-1)/2 logical majority nodes. Each has seven pair distances summing to 10ell 3^(k-1), with the additional five incidences of its displaced first representative charged in P_c. The positive logarithm norms are pi for full SWAP and CX, 3pi/2 for CV, and pi/2 for CV-dagger. Their physical identity coefficients total exactly A_c/4. Dropping these offsets changes the phase-exact word and scalar ledger. Full SWAP includes ZZ and applies to arbitrary old states.
++The raw law is certified on all L_raw sites; k isolated promises about separate blocks are not silently substituted. All compression pulse durations, strengths, slew, phases and errors remain priced.
+ 
+-Finite stopping follows from the majority recurrence below 1/2 and the supplied quantitative margins. The costs are not uniform as q approaches 1/2, |lambda| approaches 1, precision increases or s grows. Finite existence is not a common-cap feasibility certificate or a native method of estimating the input parameters.
++For the nominal delivered full state rho_q, set rho_c=U_c rho_q U_c*, omega=Tr_E_total rho_c and
+ 
+-## Exact actual marginal versus the ideal readiness target
++    sigma_c=|0_E_total><0_E_total| tensor omega.
+ 
+-For any actual compressed sigma_EY, Y=ZF, let p=1-Tr[(|0_E><0_E| tensor I_Y)sigma] and omega_actual=Tr_E sigma. Then
++Then ||rho_c-sigma_c||_1<=g(delta_bar), where g(d)=d+sqrt(d(4-3d)). The norm is unhalved. This comparator preserves exactly the entire unconditioned D,S,R,F marginal of the modeled compression. It does not normalize a successful branch, discard F, erase a reference or physically reset the whole bank. The k blocks are exactly pure and independent only in this mathematical comparator. No such factorization is asserted on the actual cooled output.
+ 
+-    ||sigma-|0_E><0_E| tensor omega_actual||_1
+-       <=g(p)=p+sqrt(p(4-3p))<=3sqrt(p).
++## Accessing later blocks without overwriting earlier records
+ 
+-This retains exactly the whole unconditioned Y marginal. It does not normalize a successful block, discard F, guarantee purity after conditioning on a rare reference outcome, or implement an erase channel. A purification of the allowed diagonal attains g(p), so replacing it by 2sqrt(p) is not valid for this exact-marginal target. Event TV is half classical L1; all quantum trace distances here are unhalved.
++For old a_j in S choose a simple internal path to the fixed ray root of length ell_j<=s-1. The episode-a destination is B_((a-1)s+j). A forward SWAP path followed by its reverse with the final edge omitted is precisely the endpoint transposition, with every intermediate label restored on arbitrary entangled inputs. Its length and cost are ell_j+(a-1)s+j and twice that length minus one.
+ 
+-If a physical compression output is within full trace distance d_c of the ideal output, its event probability is at most min(1,p_bound+d_c/2). The same lemma applies with that actual event and actual marginal. Alternatively, changing the ideal-marginal comparator to the actual one by triangle inequality costs at most g(p_bound)+2d_c, capped at 2. It is not g(p_bound)+d_c. A theorem keeping a fixed ideal target does not acquire an extra doubled error merely from this alternative comparison.
++The disjoint endpoint pairs exchange S with E^(a). Hence
+ 
+-For the complete compensated protocol, let omega_ideal be the marginal of the ideal memory-only compression of the stated input. The full H0-aged target uses omega_ideal: all former S records move to E, A becomes vacuum, X becomes the supplied packet, D ages under H0 for the actual complete duration T, and F/R remain. A finite actual turn-on can alter ZF through F_inst, so its midpoint marginal is generally different from H0-aged omega_ideal. The full-space turn-on allowance pays that difference. The exact-actual-marginal lemma and this ideal H0-aged endpoint contract are distinct statements.
++    P_J,a=(2a-1)s^2+2sum_j ell_j,
++    sum_a P_J,a=k^2s^2+2k sum_j ell_j<=k^2s^2+2k s(s-1).
+ 
+-Write the installed generator K=H0+F_inst and positive compensators C=sum_alpha(c_alpha I-h_alpha)=kappa I-F_inst, c_alpha>=||h_alpha||. The nominal controls give
++Earlier bank records can be temporary dirty transit. Each completed route restores them; no clean transit factor is supplied. On the ideal pure E^(a) input the current complete S record and its correlations move into E^(a), and S becomes vacuum. The parent positive excitation and complex synthesis word then prepares the specified computable normalized one-excitation psi_a on the original X with A vacuum. Different packets and schedules may be declared per episode. This does not provide a reader, feedback device or autonomous scheduler.
+ 
+-    H(t)=H0+(1-u)F_inst+u kappa I+G(t).
++The consumed E^(a) is never reused as fresh input. A separately declared operation may later alter that stored record; such a change belongs to the target and does not imply automatic archival permanence.
+ 
+-The unchanged H0 is never canceled. During turn-on, B_F>=||F_inst|| is a full-space bound. The plateau implements compression, then the pure-E comparison, then returned reset and clock synthesis. Only after that comparison may the ready-range bound Gamma>=||F_inst J_ready|| be used during release. The complete trace price is
++## Chronological dynamics and the single global error
+ 
+-    min(2,eta+e_mem+B_F r_on+Gamma r_off
+-                       +2 integral_0^T ||E_impl(t)||dt).
++Episode 1 includes all compression in its compensated plateau. Later episodes contain only their reset and synthesis words. With u_a rising to 1, staying 1 throughout the plateau and falling to 0, the nominal generator is
+ 
+-Every compression, routing, synthesis and ramp duration contributes to T and actual H0 aging. The input allowance eta is used for this fixed target; no success-sector assumption is imposed on the actual faulty trajectory. E contains displaced records afterward and is not certified fresh for reuse.
++    H_a(t)=H0+(1-u_a)F_inst+u_a kappa I+G_a(t).
+ 
+-## Full release operator, scalar and physical prices
++Every actual gate, ramp and compensated guard contributes to T_a; A_u,a is the actual integral of u_a. H0 is never canceled. The ideal episode map is H0 aging for T_a composed with its full record-transfer/synthesis map. Between episodes, the supplied complete ideal propagator V_a must act as identity on every still-unused bank block. It has its own duration, Hamiltonian/control contract, endpoints and full-space residual budget. Environmental operations require their declared physical outputs; a free trace-out, reset or operation on an otherwise passive reference is not supplied.
+ 
+-The readiness calculation retains K_X psi and the clock/source covariance. With the frozen source's
++Starting from sigma_c, the exact target is the ordered sequence C_k V_(k-1) C_(k-1) ... V_1 C_1, where C_a is the H0-aged episode comparator, and rho_q already contains the optional U_q. Episode 1's compression time is included in T_1 even though U_c is already used in sigma_c. H0 commutes by support with the memory/gate word, so this accounting does not omit or duplicate its earlier aging. The sequence generally is not one exponential of total H0 time; K_Z, H0 and V_a need not commute.
+ 
+-    T_X=K_X+sum_j S_j n_j,
+-    B_D=(S0+R0)I-sum_i d_i Pe_i,
+-    mu=<T_X>, chi=sum_i q_i^2+sum_(i,j)|z_ij|^2|psi_j|^2,
+-    nu=Var(T_X)+Delta chi, A0=B_D+mu I,
++The ideal unused-bank purity invariant is maintained by the endpoint permutation and V_a's identity support. Errors on actual trajectories propagate by contractivity; purity is never reasserted on a faulty block. Compare the first full-space turn-on before compression, make the one g replacement at the ideal compression point, then use a ready-range release after reset/synthesis. Repeat only the episode ramp comparisons, not the memory replacement. With Gamma_a>=||F_inst J_ready(psi_a)|| on the entire retained complement,
+ 
+-one has J_ready*F_inst J_ready=A0 and J_ready*F_inst^2 J_ready=A0^2+nu I, so Gamma=sqrt(||A0||^2+nu). Both data-source and clock-source squares remain. The K_X/counterterm covariance is inside Var(T_X); the H0/B_D covariance remains in endpoint moments. If the installed baseline is enlarged to act on E/F, this scalar simplification must be rederived or replaced by the safe Gamma=B_F.
++    ||rho_actual_final-rho_target||_1 <= min(2,
++      g(delta_bar)+sum_a[B_F r_on,a+Gamma_a r_off,a]
++      +2 integral||E_q||+2sum_a integral||E_a||
++      +2sum_(a<k) integral||E_V,a||).
+ 
+-The literal compensation dictionary has 2m+8M+14 blocks. Its Pauli scalar includes M/(2a_c), every auxiliary diagonal load, S0, half the clock-counterterm sum and R0. Pe is a traceless Pauli, so Pe n_b and -d Pe add no full scalar. The complete added scalar action is
++All residuals are full-space actual-minus-specified generators over the complete physical timeline. A separately specified complete input error adds once for a fixed target. Delivery event-TV is already inside delta_bar. The complementary marginal in this target is that of the modeled compression, not a retargeted faulty physical midpoint; changing that target needs its own marginal-change allowance.
+ 
+-    (kappa-s_Finst)A_u+A_c/4+P_J pi/4+pi/2+Theta+ell_phi/2,
++**Guard and wait qualification.** Guards counted solely as H0 aging must stay on a fully compensated plateau, u_a=1, and remain in T_a and A_u,a. An uncompensated interval evolves under K_Z. It must either appear as its actual ordered segment in the target, or add the relevant comparison residual integral: at most 2B_F g for a general wait of duration g, or 2Gamma_a g on the ready comparator. It is not a zero implementation fault merely because actual and nominal idle generators coincide. For H0=0, K_Z=I+X and ready |0>, an omitted idle has full trace error 2|sin g| from the H0 comparator. This witness is retained in the review; no unpriced duration is approved.
+ 
+-where A_u includes the whole compression plateau. The ideal endpoint map phase is exp[-i(kappa A_u+Theta)]; a ledger of physical identity coefficients is not a replacement for that phase-exact operator identity.
++## Full scalar, control and geometry prices
+ 
+-For the actual flat unit-area pulse w and a positive gate logarithm Lambda_g, whole-block peak, slew and variation are m0||Lambda_g||/tau_g, m1||Lambda_g||/tau_g^2 and 2m0||Lambda_g||/tau_g. Compensation peak/action/variation are at most B_C, B_C A_u and 2B_C when B_C is an upper bound. Joint routing uses P_J=s^2+2sum_j ell_j<=3s^2-2s; the total gate count is P_c+P_J+M+1 and action is A_c+pi(P_J+1)+2Theta+ell_phi.
++The readiness pulse count, excluding source delivery and intervening controls, is
+ 
+-A separately calibrated rotation has channel sum at most (1+sqrt(5))theta, rather than its whole-block norm 2theta. The corresponding equal-slot channel peak uses (1+sqrt(5))pi, not the 3pi block maximum. Literal compensation channel sum can be bounded by (5/2)kappa. All onsite, quadrature and scalar errors are summed. For simultaneous coefficient/envelope errors, the product term remains; timing translations require actual endpoint guards or repriced elapsed time. Persistent residuals are part of the actual baseline, not vanished pulses.
++    G_tot=P_c+sum_a P_J,a+k(M+1).
+ 
+-The fixed ray root is (X_*+q_c,Y_*+q_c,4), and B_j=root+(j,0,0). X_* remains determined by the old inventory. The first new site has the already identified extra adjacency to the outer z=3 cycle; later sites lie beyond the base maxima. Only consecutive ray adjacencies are newly present thereafter. The complete isolation set subtracts all declared edges from every geometric NN pair touching S or B; the declared count is m+4M+L_raw+9 and the safe omission count is at most 6(s+L_raw). Same-component chords, intercomponent and fresh-old edges, new fields and all physical scalings remain charged. Freshness is not isolation. Extra occupied factors require an enlarged actual inventory.
++With the inherited synthesis angles Theta_a and ell_phi,a, the exact gate action and scalar action are
+ 
+-For trace error epsilon and beta>=||K-alpha I||, centered scalar first/second moments and variance have bounds beta epsilon, beta^2 epsilon and 3beta^2 epsilon. Retained ordered moments are explicitly centered partial traces; general norm-duality tests are required if they are non-Hermitian. Raw moments restore alpha Delta rho_Y and 2alpha Delta M_1^c+alpha^2 Delta rho_Y. The scalar-K routing-fault witness prevents deleting these marginal terms. These linear records are not a conditional variance or a physical energy measurement.
++    A_gate=A_c+pi(sum_a P_J,a+k)+2sum_a Theta_a+sum_a ell_phi,a,
++    scalar_gate=A_c/4+(pi/4)sum_a P_J,a+k pi/2
++                  +sum_a Theta_a+(1/2)sum_a ell_phi,a.
+ 
+-Work bounds require differentiable controls and the actual endpoint baseline, plus variation/derivative information. Small integrated error alone does not bound work or slew. Commutation of a memory drive with an old generator factors evolution but does not eliminate covariance on correlated inputs. Full unitary entropy and records remain; the Markov Shannon entropy need not equal quantum entropy for coherent inputs. No consumption/recycling or controller-energy supply is derived.
++Exact compensation action is ||C||sum_a A_u,a and is **at most** B_C sum_a A_u,a. Its exact scalar action is (kappa-s_Finst)sum_a A_u,a. The prepared-map phase is exp[-i sum_a(kappa A_u,a+Theta_a)], in addition to all source-switch and intervening propagators. A physical scalar-action ledger is distinct from that phase-exact map. Historical wording in the author body calling the B_C allowance “action” is governed by this explicit qualification.
+ 
+-## Separately accepted finite Gibbs delivery interface
++The inherited serial pulse with logarithm norm L_g and duration tau_g has action L_g, peak at most m0 L_g/tau_g, derivative peak at most m1 L_g/tau_g^2 and variation at most 2m0 L_g/tau_g. Compensation action and variation add across episodes; its total variation is at most 2k B_C. Serial peak is bounded by the maximum per-episode bound. Channel costs use the literal Pauli decomposition, including its scalars; the synthesis channel-action bound adds (sqrt(5)-1)sum_a Theta_a to A_gate. Every delivery/intervening segment needs its separate ledger. Bounded lattice degree alone does not bound physical coefficients, lifetime errors or bandwidth.
+ 
+-For the interior Markov domain, define Q_xy=sqrt(pi_x)P_xy/sqrt(pi_y), with Q_00=1-a, Q_11=1-b and Q_01=Q_10=sqrt(ab). Q is **entrywise positive**; its eigenvalue lambda can be negative, so operator positivity is not assumed. With adjacent diagonal energies e_xy=-log Q_xy/beta and endpoint energies e_x=-log pi_x/(2beta),
++The fixed ray is B_j=(X_*+q_c+j,Y_*+q_c,4). Extending it changes neither the old S size s nor the original clock and auxiliary coordinates. Only B_1 has the parent's already inventoried extra old adjacency. The declared-edge count is m+4M+L_raw+9 and the safe full omitted-edge incidence bound is 6(s+L_raw), with **s**, not n. E_total is a subset of B, not an additional set of physical factors. Every old omitted edge, new memory field, unknown occupied neighbor and cross-coupling is absent nominally or charged over the whole bank lifetime. Fresh sites are not an isolation proof.
+ 
+-    H_B=sum_i h_(i,i+1)+g_1+g_L,
+-    exp(-beta H_B)=diag(p), Tr exp(-beta H_B)=1.
++Tensoring the zero-baseline bank changes no old operator norm. If actual bank fields are included in the installed baseline, recompute compensation, B_F, Gamma_a, scalar/channel and moment bounds. An operator-norm state-error budget alone does not certify positivity, work or slew. Scalar moments, old/control covariance and retained-register moments keep the parent's centered/raw distinction and marginal-restoration terms. Formal work uses the actual segment endpoint Hamiltonians and all physical scalars. An initially removed source field makes the whole process different from a same-baseline cycle.
+ 
+-The endpoint factors and scalar offsets are indispensable to this literal identity. Every local h and g is positive on its full qubit domain. Each edge is dI+u(Z_i+Z_(i+1))+v Z_i Z_(i+1), with d=(e00+2e01+e11)/4, u=(e00-e11)/4 and v=(e00-2e01+e11)/4. Endpoint g=cI+wZ gives the complete scalar (L-1)d+2c, endpoint fields u+w and interior fields 2u. Componentwise logarithms, not a matrix logarithm, are used.
++For fixed finite k,s and supplied strict margins, finite r and finite controls can reach any stated tolerance only under correspondingly improving delivery and implementation allowances. For example n q_r,d_del<=epsilon^2/72 makes g(delta_bar)<=epsilon/2; allocate the remaining entire dynamic sum at most epsilon/2. Growing k reprices n, L_raw, compression, the k^2 access count and the total lifetime. A fixed delivery or isolation-error floor is not removed by declaring more episodes. No common hardware-cap result is asserted.
+ 
+-For mu=min(1-a,1-b,sqrt(ab)), ||H_B||<=[(L-1)(-log mu)-log q]/beta. The complete literal channel allowance is (L-1)(|d|+2|u|+|v|)+2(|c|+|w|). At fixed nonsingular parameters these are O(L), with no uniform singular-limit or cap claim.
++## Review obligations, witnesses and scope
+ 
+-For strictly positive laws, event TV is bounded by tanh(R/4), R=osc log(p'/p). For an actual diagonal Gibbs generator G_B=H_B+V_B+kI at beta'>0,
++The proof obligations are: the parent's full-ray Markov domination and phase-exact circuit; the n-endpoint substitution and count sum proved in the source/review; the returned endpoint permutations; the one full-marginal g lemma; induction of purity only on the ideal unused blocks; the chronological three-part ramp proof; and complete resource/isolation accounting. No open mathematical lemma is hidden behind a desired native-supplier conclusion. The supplied physical law, state certification, basis, fresh factors, controls, compensation, timing and isolation remain hypotheses. A derivation of their native production or of bank restoration is outside this theorem, not an implicitly closed terminal step.
+ 
+-    R<=beta' osc(V_B)+|beta'-beta|osc(H_B)
+-      <=2beta' sum_j epsilon_j+|beta'-beta|kappa_B.
++The narrow witnesses retained include a forward-only dirty route that overwrites an intermediate record, a flip of an unused bank block before its turn, the uncompensated-idle example, a loose B_C bound mistaken for equality, normalized-success replacement changing the complement, and a faulty-midpoint retargeting without its marginal allowance. These identify concrete substitutions; they do not constitute an exhaustive no-go for all memory mechanisms or a fabricated route quota.
+ 
+-A delivered diagonal allowance d_prep gives d_diag<=min(1,d_prep+tanh(R/4)). This uses the complete ray and local-error sum. Noncommuting perturbations need a different stability result. A scalar reserve k affects neither the normalized diagonal nor R but remains in norms, phase and work. Engineering H_B anew while changing beta is different from temperature error in one fixed apparatus.
++After each use a new bank block contains that episode's displaced S record. F and every consumed block remain in the output. The supplied finite bank is consumed, not restored to a Markov/Gibbs law or returned for unlimited reuse. The result supplies no thermalization process, manufactured bath, native controller, measured-energy identification, permanent detector, saturated-pair result or full autonomous program. Arbitrary intervening changes to prior records are represented in the declared target.
+ 
+-For separated old K_Z and memory G_B, a supplied nonincreasing switch with 0<=u<=1 and exact endpoints u(0)=1, u(t_q)=0 gives exactly
++The separate assessment is source-exposed and uses the same inherited model/effort and prior checked machinery. Root authored the candidate and supplied the intended issues; the reviewer reconstructed the new count, induction, timing and resource steps. Packaging is performed by that same reviewer and adds no independent mathematical check. Both bodies and the exact actual root acceptance are preserved without rewriting their historical wording. No scientific program or historical fixture was executed for the bank proof, its check or this packaging.
+ 
+-    U_q=e^(-it_q K_Z) tensor e^(-i A_q G_B), A_q=integral u.
++## Recovery and integration status
+ 
+-It preserves the full memory diagonal and retains all correlation phases on arbitrary rho_ZB. A commuting Gibbs memory marginal is unchanged, not newly purified. Its field prices are action A_q||G_B||, peak ||G_B||, slew ||u'||_infinity||G_B|| and variation ||G_B||. The formal work is -Tr(G_B rho_B), including the scalar reserve. For diag(p), beta<H_B>=h(q)+(L-1)[(1-q)h(a)+qh(b)]; coherent states with the same diagonal need not have that entropy. This bookkeeping does not identify a physical work store, yield, Landauer cost or thermalization mechanism.
++BODY_MAP.json gives exact half-open byte intervals for the two immutable bodies. SOURCE_MANIFEST.json and ARCHIVE_INDEX.json recover selected source, decision, exposure and actual metadata receipts by content hash; parent proof/review bodies are recovered from exact intervals in the canonical parent. RECOVERY_SELECTION.json distinguishes selected recovery from other historical members named by preserved freezes. No recursive prior publication archive is promised. Root's shared acceptance freeze and verification contain unrelated decision identities; these are provenance, not additional theorem edges or accepted suppliers for this note.
+ 
+-A supplied phase-exact permutation consumer converts d_diag to bad probability at most delta_0+d_diag and uses the exact remaining marginal with g(delta). Its positive physical duration must bring its actual-generator, routing, phase, fault and aging contract. Abstract C_B cannot erase that duration. Subsequent H0 evolution follows the actual K_Z aging chronologically. Independently supplied calibrated onsite and NN diagonal coefficients, their signs and scalars are required: a full-SWAP gate alone does not supply independently adjustable static ZZ fields. Smooth endpoints alone do not establish the stated switch peak or variation.
++Actual canonical binding, future Git base, primary/cache/mutation/graph runs, PR creation and audit remain null in the historical source-proposal record. The root-reported current PR/head is planning context only. Root must inspect the actual final source and cumulative stack, choose and bind the real base, regenerate intervals/manifests after wrapper changes, declare every binding receipt as an input, and run the actual integration gates. Parent availability is judged on the proposed reviewed tree or landed parent; this draft makes no independent current-main reproducibility claim.
+ 
+-The finite probability machinery is established context. The source credits [Mei Yin](https://arxiv.org/abs/1205.1789) for Markov/Gibbs context and [Cohen–Fausti](https://arxiv.org/html/2309.02413v2) for the sharp likelihood-ratio bound, using equation (39) with the unhalved-to-event-TV conversion. Exact finite proofs are supplied here. Targeted primary passages, not entire papers or a comprehensive novelty survey, were read; remote papers are not purportedly byte archived. No infinite-volume boundary convention is imported.
+-
+-## Checked Gibbs-to-Markov composition and its actual target
+-
+-The separate composition source 6296fd36 and complete assessment 406f011c join the supplied interfaces on the same raw length L_raw; this follows from their own source decision, not the earlier standalone acceptances alone. The Gibbs interior domain satisfies the Markov domain, and the selected L_raw>=3 satisfies the finite Gibbs endpoint construction. The approximate delivered diagonal need not itself be Markov or stationary. Only its global event-TV distance from the designed p is used: the inverse bad-event projector of the completed exact permutation is diagonal, so
+-
+-    delta_bar=min(1,s q_r+d_diag).
+-
+-Let rho_q=(e^(-it_q K_Z) tensor e^(-iA_q G_B))rho(...)* be the nominal post-quench full state, rho_c=U_c rho_q U_c*, and omega=Tr_E rho_c. This retains the diagonal phases before compression; they cannot be deleted from the quantum target merely because the diagonal law is unchanged. The pure-E comparison preserves exactly this nominal post-quench ideal compression marginal and costs g(delta_bar).
+-
+-The compensated physical consumer has actual duration T_p, including compression, routing, synthesis and both ramps. After relabeling S into E, the original-record marginal of its ideal target is
+-
+-    e^(-i T_p H0)e^(-i t_q K_Z) rho_Z
+-                   e^(i t_q K_Z)e^(i T_p H0).
+-
+-No commutation of K_Z and H0 is assumed. Every extra wait or physical segment enters this ordered target with its actual generator and duration. A wait after field removal and before compensation contributes K_Z aging, not free H0 aging. The actual faulty midpoint marginal is a different comparator, handled by its own event probability or the safe two-sided triangle allowance above.
+-
+-For complete actual-minus-nominal residuals E_q and E_p on the entire enlarged system, the checked composed trace bound is
+-
+-    min(2,g(delta_bar)+B_F r_on+Gamma r_off
+-                    +2 integral||E_q(t)||dt
+-                    +2 integral||E_p(t)||dt).
+-
+-The full-space turn-on bound precedes the pure-E substitution; the ready-range release bound follows it. The diagonal allowance is not charged again as a full-state Gibbs approximation. Modeled V_B already belongs to G_B; additional dynamic errors must name their reference generator to avoid double counting. Any surviving endpoint memory field enters the next actual generator or its full-duration residual.
+-
+-A fixed nonzero d_diag leaves a floor in this sufficient estimate; increasing the compressor alone does not remove it. For 0<epsilon<1, sufficient allocations s q_r<=epsilon^2/72 and d_diag<=epsilon^2/72 make g(delta_bar)<=epsilon/2. Allocate the remaining dynamic/ramp terms at most epsilon/2. One compatible thermal allocation is d_prep<=epsilon^2/144 and 2beta' sum_j epsilon_j+|beta'-beta|kappa_B<=4artanh(epsilon^2/144). These are sufficient bounds, not optimality or an unavoidable physical lower bound. The raw length fixes kappa_B, so temperature and total local calibration must be budgeted after that length is selected.
+-
+-The actual nominal protocol begins with K_Z+G_B and ends with K_Z. It therefore has different initial and final memory Hamiltonians. Its formal work is W_q+W_p, where W_q=-Tr(G_B rho_B) and W_p is the readiness stage's actual same-baseline endpoint energy difference. The quench scalar a_G A_q and full readiness scalar action both remain; nominal positivity requires the stated positive baselines, decompositions and envelopes. This is not a closed same-baseline cycle, gauge-independent harvested work, thermalization process or restored raw-memory resource. Fault-dependent work needs actual endpoint and derivative information beyond a state-error integral.
+-
+-## Preserved counterexamples and remaining scope
+-
+-All witnesses remain in the immutable bodies, with their narrow quantifiers: strict positive covariance between cooled outputs inside the mixing class; the all-equal bias-only boundary and slow-mixing limit; the maximally mixed unrestricted input; full-rank obstruction to exact finite B-only purity; sharp coherent-reference cost g(p); normalized-success marginal change; forward-only dirty routing; exchange in place of full SWAP; omitted CV/identity phases; moving X_* with new memory; vacancy substituted for isolation; ready-range release used before pure-E comparison; wrong H0 aging; missing Gibbs endpoints; negative Q eigenvalue; scalar/work shifts; coherent diagonal versus entropy; raw moment marginal omissions; and reuse without restoration. They delimit named substitutions and inputs, not all alternative realizations or an exhaustive route search.
+-
+-The complete raw state and its certification, quantitative bias/mixing, controlled basis, local gates, vacancies/isolation, compensation, schedule, calibration, actual temperature and energy/controller/detector identification remain supplied. No thermalization rate, native initializer, common-cap feasibility, autonomous controller, saturated-pair solution or full scheduled-pair program is proved. Growing finite accuracy can require more memory, time, strength, slew or precision. All displaced records and reservoirs remain in the output.
+-
+-## Exact mathematical parents, review and source recovery
+-
+-Exactly two direct canonical mathematical parents are intended:
+-
+-1. [Routed auxiliary and joint readiness](ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md), 152,470 bytes, SHA256 00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e, including corrected joint body dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179. It supplies the fixed geometry, complete readiness map and its explicit controls, moments and actual-time contract.
+-2. [Finite local-clock memory resources](FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md), 51,476 bytes, SHA256 32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd, including biased-memory body f38d4590. It supplies the reversible gate machinery. Its old independent-product input promise, normalized-success target and factorization-dependent zero-covariance statement are not imported into this extension.
+-
+-Literal geometry is transitive through the joint parent. PR9609/head1ac15c4a9116d14a7f1e9eec971aea7b0e750360 is the root-specified future Git base, not an additional resource-theorem dependency or a Git observation by this packager. Exactly pinned parent bytes and accepted body intervals are checked in the source proposal; actual canonical checkout binding is null until separately recorded by root.
+-
+-The independent Markov derivation d820b150 was frozen before candidate exposure and uses a different stride/TV route. Its full comparison c001e42e was written after exposure. The author and checker share prior accepted machinery, the selected model/effort and source-family experience. Root knew the selected mechanism and read the candidate before the separate derivation. Root authored Gibbs before opening the new Markov outputs, while knowing the broader lane. The Gibbs assessor authored earlier Markov/joint work and checked the new Gibbs calculations, not its own earlier consumer independently. The composition checker had reviewed Markov and joint machinery; root authored the composition. This packager has authored and reviewed those sources; packaging adds no independent theorem validation.
+-
+-All three root decisions are source-side conditional-support decisions, not retained audits. The actual standalone acceptance run directory is named `correlated_memory_root_acceptance_1628`, while its recorded execution/acceptance time is 16:26:24 UTC. The composition run `gibbs_markov_composition_root_acceptance_1640` actually executed at 16:37:41 UTC. Historical directory names are not rewritten into fabricated launch times. Selected actual source/launch/stream/exit evidence is preserved with its original schema limits. In particular the earlier Gibbs receipts did not contain source-at-launch copies or stream digests; present frozen-byte verification is not retroactive creation of them.
+-
+-The seven source bodies occur once in this note with portable byte intervals. Selected recoverable evidence is deduplicated by SHA256; external-parent bodies can be recovered by exact intervals. The source index distinguishes this selected recovery from a recursive archive of every historical freeze member. Prior publication archives are not recursively copied. Actual binding/execution/publication fields remain null; the separate composition source decision is recorded as an actual accepted input. The proposed primary fails closed until an actual complete binding is supplied. Its future scope lines concern source integrity only, with no PASS quota or scientific rerun.
+-
+-The [handoff](../.claude/science/physics-loops/toe-correlated-memory-delivery-20261015/HANDOFF.md), [review record](../.claude/science/physics-loops/toe-correlated-memory-delivery-20261015/REVIEW_HISTORY.md), [status certificate](../.claude/science/physics-loops/toe-correlated-memory-delivery-20261015/CLAIM_STATUS_CERTIFICATE.md) and [proposed primary](../scripts/correlated_memory_delivery_and_readiness_2026_10_15.py) record the remaining binding and integration steps. No audit verdict or main-branch claim is set by this draft.
++The [handoff](../.claude/science/physics-loops/toe-finite-memory-bank-20261015/HANDOFF.md), [trace](../.claude/science/physics-loops/toe-finite-memory-bank-20261015/TRACE_GATE.md), [status certificate](../.claude/science/physics-loops/toe-finite-memory-bank-20261015/CLAIM_STATUS_CERTIFICATE.md), [review record](../.claude/science/physics-loops/toe-finite-memory-bank-20261015/REVIEW_HISTORY.md), [counterexample record](../.claude/science/physics-loops/toe-finite-memory-bank-20261015/COUNTEREXAMPLES.md) and [proposed primary](../scripts/finite_consumed_memory_bank_2026_10_15.py) state the remaining work. Exactly one canonical dependency edge is intended. A regular PR and its actual outcome belong to the later root integration, not this frozen source proposal.

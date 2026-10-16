@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/finite_consumed_memory_bank_2026_10_15.py
+runner_sha256: f164eb8dc0127105f2ee40600f0a4a33308ac2dd06562ecbcce1f43328f7b62c
+input_fingerprint_sha256: 06236a03c69f26d9dc6cad5217411ad5de52a06a6ecc59a6217ab903759e6305
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and binding only; no mathematical validation by execution"}
+per_element: literal source coefficients are preserved; no physical gate executed
+per_site: fixed old sites and finite bank geometry remain conditional source statements
+per_mode: one-global-error and ideal-unused-bank scopes are preserved as text
+per_block: two immutable bodies, one parent and actual source binding checked
+lattice_wide: no native memory, restoration, autonomous program or audit certified
+
+----- stderr -----
+

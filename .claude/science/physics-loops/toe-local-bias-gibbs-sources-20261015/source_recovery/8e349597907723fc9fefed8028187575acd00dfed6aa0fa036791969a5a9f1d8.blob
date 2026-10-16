@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+"""Capture an actual local metadata child process; not a science runner."""
+from datetime import datetime, timezone
+from hashlib import sha256
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+HERE = Path(__file__).resolve().parent
+
+
+def identity(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": sha256(data).hexdigest()}
+
+
+def main():
+    assert len(sys.argv) == 2
+    script = (HERE / sys.argv[1]).resolve()
+    assert script.parent == HERE and script.suffix == ".py"
+    run = HERE / "metadata_runs" / script.stem
+    run.mkdir(parents=True, exist_ok=False)
+    argv = [sys.executable, str(script)]
+    launch = {"argv": argv, "cwd": str(HERE),
+              "started_utc": datetime.now(timezone.utc).isoformat(),
+              "source": identity(script), "recorder": identity(Path(__file__).resolve()),
+              "timeout_seconds": 60, "scientific_programs_run": 0}
+    (run / "LAUNCH.json").write_text(json.dumps(launch, indent=2) + "\n")
+    with (run / "stdout.txt").open("wb") as out, (run / "stderr.txt").open("wb") as err:
+        try:
+            completed = subprocess.run(argv, cwd=HERE, stdout=out, stderr=err, timeout=60, check=False)
+            exit_code = completed.returncode
+            timed_out = False
+        except subprocess.TimeoutExpired:
+            exit_code = None
+            timed_out = True
+    result = {**launch, "finished_utc": datetime.now(timezone.utc).isoformat(),
+              "exit_code": exit_code, "timed_out": timed_out,
+              "stdout": identity(run / "stdout.txt"),
+              "stderr": identity(run / "stderr.txt")}
+    (run / "EXECUTION.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps({"receipt": str(run / "EXECUTION.json"),
+                      "exit_code": exit_code, "timed_out": timed_out}))
+    raise SystemExit(exit_code if exit_code is not None else 124)
+
+
+if __name__ == "__main__":
+    main()

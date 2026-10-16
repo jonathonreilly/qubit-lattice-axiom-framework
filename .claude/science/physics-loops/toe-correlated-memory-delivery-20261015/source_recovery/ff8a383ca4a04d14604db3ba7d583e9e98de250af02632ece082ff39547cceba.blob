@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-10-15T15:56:24.922650+00:00",
+  "status": "provisional conditional source, independent substantive review pending",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+    },
+    {
+      "path": "LITERATURE_AND_SCOPE.md",
+      "bytes": 2418,
+      "sha256": "5888f597e9cf1d8f0786cf4dc4542fee75b6cb3cd9bef54ca669489f9c9216ee"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "pending_markov_result_imported": false,
+  "editable_prompt_files_changed": []
+}

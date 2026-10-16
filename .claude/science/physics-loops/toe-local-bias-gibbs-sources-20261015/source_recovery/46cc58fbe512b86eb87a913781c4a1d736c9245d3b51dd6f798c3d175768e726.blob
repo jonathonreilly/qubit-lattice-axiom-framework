@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-15T16:51:31.975049+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/capture_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent",
+  "program_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/capture_sources.py",
+    "bytes": 3664,
+    "sha256": "6a51762b4f1d49e4d688faa46b4168c69f7b92e9f37b1d14f71ffdd88ba90c88"
+  },
+  "recorder_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/record_metadata.py",
+    "bytes": 1952,
+    "sha256": "135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268"
+  },
+  "timeout_seconds": 60,
+  "scope": "Local source and metadata only; no scientific program."
+}

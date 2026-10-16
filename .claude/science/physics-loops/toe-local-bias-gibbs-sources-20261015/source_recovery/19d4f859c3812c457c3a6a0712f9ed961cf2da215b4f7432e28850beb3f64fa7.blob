@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-15T16:53:12.115414+00:00",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+    }
+  ],
+  "status": "root analytic candidate; separate check pending; no scientific execution"
+}

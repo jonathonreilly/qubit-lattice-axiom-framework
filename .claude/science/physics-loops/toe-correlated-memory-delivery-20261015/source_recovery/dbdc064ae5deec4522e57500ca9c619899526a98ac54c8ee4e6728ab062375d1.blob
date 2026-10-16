@@ -1,0 +1,205 @@
+{
+  "created_utc": "2026-10-15T15:56:24.751438+00:00",
+  "source_access_boundary": "Only the explicitly listed accepted scientific/instruction sources were read by this script; new candidate and next-attack directories were not accessed.",
+  "sources": [
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 152470,
+        "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/joint_canonical.md",
+        "bytes": 152470,
+        "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+      },
+      "role": "accepted source; see reading log for precise refreshed/reused coverage"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 51476,
+        "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/memory_canonical.md",
+        "bytes": 51476,
+        "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+      },
+      "role": "accepted source; see reading log for precise refreshed/reused coverage"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_0_AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_1_SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "bytes": 34639,
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_2_REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "bytes": 34639,
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+        "bytes": 9276,
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_3_SKILL.md",
+        "bytes": 9276,
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+        "bytes": 16454,
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_4_DELIVERY.md",
+        "bytes": 16454,
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+        "bytes": 16755,
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_5_CLAIM_STATUS.md",
+        "bytes": 16755,
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_6_SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "role": "previously read exact instruction; identity refreshed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_0_SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "role": "read during this independent task"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/instruction_extra_1_SKILL_FRESHNESS_CHECK.md",
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "role": "read during this independent task"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/main_refresh_1513/REFS.json",
+        "bytes": 798,
+        "sha256": "f0bf36e19a1fde3310338ed5b524b4baf02f57fc578e461786acc71f383d63dc"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/root_prior_refresh_REFS.json",
+        "bytes": 798,
+        "sha256": "f0bf36e19a1fde3310338ed5b524b4baf02f57fc578e461786acc71f383d63dc"
+      },
+      "role": "saved root main/instruction context; HEAD is its dated pre-9607 checkout, not a new Git observation"
+    }
+  ],
+  "bodies": [
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/joint_canonical.md",
+      "start_byte_inclusive": 70024,
+      "end_byte_exclusive": 110857,
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "role": "complete prior mathematical read/check reused at exact identity; selected obligations refreshed"
+    },
+    {
+      "origin_container": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 51476,
+        "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd"
+      },
+      "container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/sources/memory_canonical.md",
+      "start_byte_inclusive": 25736,
+      "end_byte_exclusive": 51476,
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "role": "complete constructive raw body read; only explicit gate machinery reused, not its independent input or normalized-success target"
+    }
+  ],
+  "wrapper_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/CURRENT_WRAPPER.diff",
+    "bytes": 4015,
+    "sha256": "e6ac3f886c29b8f9b4358e0973fcb7198c9b814d83d1ad12853c56eba5211e36"
+  },
+  "previous_wrapper_origin": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_publication_draft/proposal/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 152152,
+    "sha256": "9854e293b99cf4c54e460ac96aa1ab7f9b9223005512a1acccac8c8e9d7b7b07"
+  },
+  "scientific_executions": 0,
+  "previous_science_replays": 0,
+  "git_operations": 0,
+  "new_candidate_exposed": false,
+  "same_model_and_prior_source_exposure": "See EXPOSURE.md; not blind to accepted prior machinery."
+}

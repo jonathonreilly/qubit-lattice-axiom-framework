@@ -1,0 +1,281 @@
+{
+  "started_utc": "2026-10-15T17:09:01.557190+00:00",
+  "completed_utc": "2026-10-15T17:09:01.622146+00:00",
+  "kind": "metadata-only source capture after analytic reading",
+  "sources": [
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_root_candidate/DERIVATION.md",
+        "bytes": 7830,
+        "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/DERIVATION.md",
+        "bytes": 7830,
+        "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2"
+      },
+      "scope": "complete new argument read"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 309,
+        "sha256": "19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/PROPOSAL_FREEZE.json",
+        "bytes": 309,
+        "sha256": "19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7"
+      },
+      "scope": "one-member proposal checked"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/DERIVATION.md",
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/DERIVATION.md",
+        "bytes": 10666,
+        "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95"
+      },
+      "scope": "complete source read; provisional, not other-worker acceptance"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 313,
+        "sha256": "824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/PROPOSAL_FREEZE.json",
+        "bytes": 313,
+        "sha256": "824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038"
+      },
+      "scope": "one-member proposal checked"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md",
+        "bytes": 1801,
+        "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/SCOPE_AND_PRIOR_ART.md",
+        "bytes": 1801,
+        "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e"
+      },
+      "scope": "complete later qualification read; no external theorem imported"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/FINAL_FREEZE.json",
+        "bytes": 331,
+        "sha256": "5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/FINAL_FREEZE.json",
+        "bytes": 331,
+        "sha256": "5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3"
+      },
+      "scope": "one-member qualification freeze checked"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/DERIVATION.md",
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/DERIVATION.md",
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "scope": "prior complete check reused; necessary passages reread"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_candidate/FINAL_FREEZE.json",
+        "bytes": 6228,
+        "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/FINAL_FREEZE.json",
+        "bytes": 6228,
+        "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615"
+      },
+      "scope": "identity only; no recursive parent archive verification"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_REPORT.md",
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "scope": "own prior complete assessment reused at exact identity"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/FINAL_FREEZE.json",
+        "bytes": 16703,
+        "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_FINAL_FREEZE.json",
+        "bytes": 16703,
+        "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a"
+      },
+      "scope": "prior seal identity only"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/REPORT.md",
+        "bytes": 20217,
+        "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_REPORT.md",
+        "bytes": 20217,
+        "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+      },
+      "scope": "own prior composition check reused; target/error/work passages reread"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/FINAL_FREEZE.json",
+        "bytes": 17251,
+        "sha256": "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_FINAL_FREEZE.json",
+        "bytes": 17251,
+        "sha256": "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6"
+      },
+      "scope": "prior seal identity only"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/joint/DERIVATION.md",
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "scope": "prior full corrected proof check reused; unchanged readiness consumer"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+        "bytes": 10342,
+        "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_REPORT.md",
+        "bytes": 10342,
+        "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c"
+      },
+      "scope": "prior boundary review completed before rotated-source exposure"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+        "bytes": 10113,
+        "sha256": "e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_FINAL_FREEZE.json",
+        "bytes": 10113,
+        "sha256": "e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7"
+      },
+      "scope": "prior seal identity only"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "scope": "prior complete instruction reading reused, unchanged identity; no delegation authorized"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "scope": "prior complete instruction reading reused, unchanged identity; no delegation authorized"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "scope": "prior complete instruction reading reused, unchanged identity; no delegation authorized"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/workhorse.SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "scope": "prior complete instruction reading reused, unchanged identity; no delegation authorized"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "bytes": 152470,
+        "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+      },
+      "recovery": null,
+      "scope": "canonical identity and exact corrected body interval [70024,110857) verified; body recovery saved separately"
+    }
+  ],
+  "nested_small_source_freezes": [
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/PROPOSAL_FREEZE.json",
+      "members": 1
+    },
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/PROPOSAL_FREEZE.json",
+      "members": 1
+    },
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/FINAL_FREEZE.json",
+      "members": 1
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "other_worker_local_bias_opened": false,
+  "finite_bank_candidate_opened": false
+}

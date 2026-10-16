@@ -1,0 +1,21 @@
+--- finite_bank_publication_draft/seal_packet.py
++++ transverse_field_memory_publication_draft/seal_packet.py
+@@ -26,15 +26,15 @@
+     receipts.append(identity(folder/"EXECUTION.json"))
+ verification=json.loads((D/"VERIFICATION.json").read_text())
+ verify(D/"proposal"/verification["note"]["path"],verification["note"])
+-assert verification["immutable_bodies"]==2 and verification["direct_mathematical_parents"]==1
++assert verification["immutable_bodies"]==3 and verification["direct_mathematical_parents"]==1
+ assert verification["actual_binding"] is None and verification["primary_execution"] is None
+ roles={"build_proposal.py":"Executed once: source assembly and exact metadata recovery","record_metadata.py":"Actual bounded recorder for the build and static inspection subprocesses","inspect_proposal.py":"Executed once: static source, AST, diff and metadata inspection","seal_packet.py":"Current in-process metadata seal; no primary or science execution","primary_template.py":"Unexecuted source-integrity primary template"}
+ scripts=[{**identity(D/name),"role":role} for name,role in roles.items()]
+ (D/"SCRIPT_MAP.json").write_text(json.dumps({"scripts":scripts,"scientific_programs_run":0,"primary_execution":None},indent=2)+"\n")
+-(D/"DELIVERY.json").write_text(json.dumps({"scope":"Source-only regular-publication proposal; not actual integration or publication","title":"[physics-loop] finite-memory-bank: bounded_theorem / conditional-support","requested_git_base":None,"note":verification["note"],"immutable_bodies":2,"mathematical_parents":1,"actual_binding":None,"primary_execution":None,"actual_publication":None,"actual_metadata_receipts":receipts,"future_integration":"Separate root-owned integration outside this frozen directory"},indent=2)+"\n")
++(D/"DELIVERY.json").write_text(json.dumps({"scope":"Source-only regular-publication proposal; not actual integration or publication","title":"[physics-loop] transverse-field-memory: bounded_theorem / conditional-support","requested_git_base":None,"note":verification["note"],"immutable_bodies":3,"mathematical_parents":1,"actual_binding":None,"primary_execution":None,"actual_publication":None,"actual_metadata_receipts":receipts,"future_integration":"Separate root-owned integration outside this frozen directory"},indent=2)+"\n")
+ (D/"SEAL_OPERATION.json").write_text(json.dumps({"started_utc":started,"checked_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Actual in-process metadata verification and seal; no invented subprocess receipt","source_identities_refreshed":len(freshness["identities"]),"actual_metadata_subprocesses":2,"scientific_programs_run":0,"primary_execution":None,"excluded_path":str(target),"nested_freezes":"Every nested freeze and other file is included by full path"},indent=2)+"\n")
+ files=[identity(p) for p in sorted(D.rglob("*")) if p.is_file() and p!=target]
+-freeze={"frozen_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Complete source-only draft, actual metadata evidence and selected exact recovery; no science execution","immutable_bodies":2,"mathematical_parents":1,"actual_binding":None,"primary_execution":None,"scientific_programs_run":0,"files":files}
++freeze={"frozen_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"scope":"Complete source-only draft, actual metadata evidence and selected exact recovery; no science execution","immutable_bodies":3,"mathematical_parents":1,"actual_binding":None,"primary_execution":None,"scientific_programs_run":0,"files":files}
+ target.write_text(json.dumps(freeze,indent=2)+"\n")
+ for row in files:verify(Path(row["path"]),row)
+ print(json.dumps({"freeze":identity(target),"members":len(files),"note":verification["note"],"scope":"metadata seal only"},indent=2))

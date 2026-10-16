@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-15T18:23:19.697985+00:00",
+  "argv": [
+    "gh",
+    "pr",
+    "view",
+    "9611",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--json",
+    "number,state,isDraft,headRefOid,headRefName,baseRefName,url"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "source_at_launch": null,
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_bank_integration_proposal/bank_common.py",
+    "bytes": 39485,
+    "sha256": "ca4afb56072401252f86358fb589055e109ccd0303aaf5ae5998e8577ce408c4"
+  },
+  "inputs_at_launch": null,
+  "timeout_seconds": 60,
+  "scientific_execution": false
+}

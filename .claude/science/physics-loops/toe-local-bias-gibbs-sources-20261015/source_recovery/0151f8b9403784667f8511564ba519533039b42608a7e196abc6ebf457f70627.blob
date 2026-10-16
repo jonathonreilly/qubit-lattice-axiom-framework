@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-10-15T17:20:16.094128+00:00",
+  "scope": "Source identities, recovery equality, immutable predecessor, metadata receipts and document structure; not a mathematical correctness test.",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/REPORT.md",
+    "bytes": 41576,
+    "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/SOURCE_MANIFEST.json",
+    "bytes": 9388,
+    "sha256": "f6ce431a3c34d84997b2d65d5dc5357e5476eef088122cd987345304f4f757ac"
+  },
+  "independent_freeze_members_unchanged": 31,
+  "capture_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/EXECUTION.json",
+    "bytes": 1747,
+    "sha256": "364806b4e7456ef28ce4a0c46da59e68d27fb303acc1c03ef16641f4cd55b214"
+  },
+  "captured_execution_failures": [],
+  "scientific_programs_run": 0
+}

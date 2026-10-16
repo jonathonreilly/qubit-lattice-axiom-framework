@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-15T17:21:12.500838+00:00",
+  "status": "Source-exposed conditional support with explicit wording/scope qualifications; not an audit or root acceptance.",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/REPORT.md",
+    "bytes": 41576,
+    "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/SOURCE_MANIFEST.json",
+    "bytes": 9388,
+    "sha256": "f6ce431a3c34d84997b2d65d5dc5357e5476eef088122cd987345304f4f757ac"
+  },
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+    "bytes": 5531,
+    "sha256": "d5863f3f2955e8c840567c37275bd6955d6a8661ad29795149985af8a8ddad27"
+  },
+  "independent_members_unchanged": 31,
+  "actual_metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/EXECUTION.json",
+      "bytes": 1747,
+      "sha256": "364806b4e7456ef28ce4a0c46da59e68d27fb303acc1c03ef16641f4cd55b214"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/EXECUTION.json",
+      "bytes": 1747,
+      "sha256": "7446cc2f8e6946280c85b6b19969bdc57e94f013ad363eaa92e646e16dc6d799"
+    }
+  ],
+  "seal_program": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/seal.py",
+    "bytes": 3444,
+    "sha256": "8086475f6c55316ebaa288680fb1d211763137b178692ca837fcf84a7ca5a0a9"
+  },
+  "seal_execution_scope": "Actual external tool completion is observed separately; no fabricated self exit receipt is included.",
+  "scientific_programs_run": 0,
+  "captured_failures": [],
+  "editable_prompt_files_changed": []
+}

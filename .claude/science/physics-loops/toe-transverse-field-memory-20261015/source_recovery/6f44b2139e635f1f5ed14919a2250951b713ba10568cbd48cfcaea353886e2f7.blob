@@ -1,0 +1,26 @@
+"""Verify comparison source/recovery metadata, not the scientific conclusions."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent
+def verify(row):
+    p=Path(row['path']);b=p.read_bytes()
+    assert (len(b),hashlib.sha256(b).hexdigest())==(row['bytes'],row['sha256']),str(p)
+m=json.loads((D/'SOURCE_MANIFEST.json').read_text());checks=0
+for row in m['sources']:
+    verify(row['original']);verify(row['captured']);checks+=2
+for block in m['original_freeze_checks']:
+    verify(block['freeze']);checks+=1
+    for row in block['verified_members']:verify(row);checks+=1
+for row in m['local_sources']:verify(row);checks+=1
+for row in m['instruction_checks']:
+    for key in ['original','captured']:
+        verify({'path':row[key],'bytes':row['bytes'],'sha256':row['sha256']});checks+=1
+run=D/'metadata_runs/capture';r=json.loads((run/'EXECUTION.json').read_text())
+assert r['exit_code']==0 and r['failure'] is None and r['scientific_execution'] is False
+for key in ['child_source_at_launch','recorder_at_launch','launch','stdout','stderr']:verify(r[key]);checks+=1
+out={'verified_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'actual metadata identity closure only; no scientific verification by execution','identity_checks':checks,'sources':len(m['sources']),'candidate_freeze_members':len(m['original_freeze_checks'][0]['verified_members']),'independent_freeze_members':len(m['original_freeze_checks'][1]['verified_members']),'scientific_programs_run':0,'historical_programs_replayed':0,'prior_originals_unchanged':True,'comparison_is_candidate_exposed':True,'publication_or_audit':None}
+(D/'VERIFICATION.json').write_text(json.dumps(out,indent=2)+'\n')
+print(json.dumps(out,indent=2))

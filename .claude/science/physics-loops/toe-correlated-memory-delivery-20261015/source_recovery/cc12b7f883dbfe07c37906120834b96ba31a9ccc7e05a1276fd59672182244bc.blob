@@ -1,0 +1,46 @@
+"""Closing metadata identity and receipt verification; no scientific formula evaluation."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+OUT=Path(__file__).resolve().parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+checks=[]
+def check(n,c):
+ checks.append({'name':n,'passed':bool(c)})
+ if not c:raise AssertionError(n)
+def identity(row,label):
+ got=meta(Path(row['path']));check(label+' '+row['path'],got['bytes']==row['bytes'] and got['sha256']==row['sha256'])
+started=now();m=json.loads((OUT/'SOURCE_MANIFEST.json').read_text())
+for group in ['sources','freezes','gibbs_review_receipts']:
+ for row in m[group]:
+  identity(row['origin'],group+' current origin');identity(row['recovery'],group+' saved source')
+for row in m['verified_input_members']:identity(row,'frozen input member')
+for row in m['reused_instruction_and_canonical_identities']:identity(row,'reused instruction/canonical identity')
+freeze_by_dir={Path(x['origin']['path']).parent.name:x['origin']['sha256'] for x in m['freezes']}
+check('pinned Gibbs assessment freeze prefix',freeze_by_dir['local_gibbs_memory_interface_decisive_check'].startswith('4b29be30'))
+check('pinned Gibbs proposal freeze',freeze_by_dir['local_gibbs_memory_interface_root_candidate']=='ff8a383ca4a04d14604db3ba7d583e9e98de250af02632ece082ff39547cceba')
+check('pinned Markov candidate freeze',freeze_by_dir['correlated_markov_memory_candidate']=='80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615')
+check('pinned Markov comparison freeze',freeze_by_dir['comparison']=='2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a')
+for p in OUT.glob('*.py'):
+ ast.parse(p.read_bytes());check('metadata syntax '+p.name,True)
+run=OUT/'metadata_runs/capture';launch=json.loads((run/'LAUNCH.json').read_text());receipt=json.loads((run/'EXECUTION.json').read_text())
+check('actual capture exit zero',receipt['exit_code']==0)
+check('actual capture UTC order',datetime.fromisoformat(launch['started_utc'])<=datetime.fromisoformat(receipt['finished_utc']))
+for key,name in [('child','child_source.py'),('recorder','recorder_source.py')]:
+ got=meta(run/name);want=launch[key]
+ check('actual source-at-launch '+key,got['bytes']==want['bytes'] and got['sha256']==want['sha256'])
+for key in ['launch','stdout','stderr']:identity(receipt[key],'actual capture '+key)
+g=OUT/'sources/local_gibbs_memory_interface_decisive_check'
+for name in ['capture_sources','finalize_metadata']:
+ r=json.loads((g/(name+'.RECEIPT.json')).read_text())
+ check('Gibbs assessor '+name+' actual exit',r['returncode']==0 and r['scientific_run'] is False)
+ check('Gibbs assessor '+name+' UTC order',datetime.fromisoformat(r['started_utc'])<=datetime.fromisoformat(r['finished_utc']))
+ check('Gibbs assessor '+name+' source pin',meta(g/(name+'.py'))['sha256']==r['script_sha256'])
+ check('Gibbs assessor '+name+' streams present',(g/r['stdout']).is_file() and (g/r['stderr']).is_file())
+ check('Gibbs assessor '+name+' stderr empty',not (g/r['stderr']).read_bytes())
+check('scope is no science/replay/root acceptance import',m['scientific_executions']==m['scientific_replays']==0 and m['root_acceptance_imported'] is False)
+result={'started_utc':started,'completed_utc':now(),'kind':'source and receipt identity closure only','check_count':len(checks),'checks':checks,'report':meta(OUT/'REPORT.md'),'source_manifest':meta(OUT/'SOURCE_MANIFEST.json'),'scientific_executions':0,'scientific_replays':0,'scope_limit':'Mathematics was checked analytically; no theorem equation, diagnostic or propagator was run.'}
+(OUT/'CLOSING_METADATA.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='checks'},sort_keys=True))

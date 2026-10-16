@@ -1,0 +1,280 @@
+{
+  "utc": "2026-10-15T18:27:52.066775+00:00",
+  "branch": "physics-loop/toe-finite-memory-bank-20261015",
+  "base_head": "9369c12d0804f170f0016f5b26d7b12e057f0664",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 58145,
+    "sha256": "b53db1786778a4ae8bf7745371f228c5823b15b4de2703642121256aba15a2d6"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_consumed_memory_bank_2026_10_15.py",
+    "bytes": 33241,
+    "sha256": "f164eb8dc0127105f2ee40600f0a4a33308ac2dd06562ecbcce1f43328f7b62c"
+  },
+  "cache": {
+    "utc": "2026-10-15T18:25:07.236745+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_consumed_memory_bank_2026_10_15.py",
+      "bytes": 33241,
+      "sha256": "f164eb8dc0127105f2ee40600f0a4a33308ac2dd06562ecbcce1f43328f7b62c"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/CANONICAL_RESULT.json",
+      "bytes": 1049,
+      "sha256": "f02f6df3015a2c6db64863fc52b39291af30aa92727080b21ea93fb4c497e016"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/finite_consumed_memory_bank_2026_10_15.txt",
+      "bytes": 1012,
+      "sha256": "db76aabf0b793e6a102eada6168acd250b583010d28d8a7ec7dbc4a5dc99a94e"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "exact bytes, recovery and binding only; no mathematical validation by execution"
+    },
+    "scope_lines": [
+      "per_element: literal source coefficients are preserved; no physical gate executed",
+      "per_site: fixed old sites and finite bank geometry remain conditional source statements",
+      "per_mode: one-global-error and ideal-unused-bank scopes are preserved as text",
+      "per_block: two immutable bodies, one parent and actual source binding checked",
+      "lattice_wide: no native memory, restoration, autonomous program or audit certified"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T18:25:15.735152+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/finite_consumed_memory_bank_2026_10_15.py",
+      "bytes": 33241,
+      "sha256": "f164eb8dc0127105f2ee40600f0a4a33308ac2dd06562ecbcce1f43328f7b62c"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/MUTATION_RESULTS.json",
+      "bytes": 6909,
+      "sha256": "c7a9541f8b019be1232a31623ff1bb47241b488fef5e28aa2af7235e78a44f34"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 120,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source compatibility/provenance only; current-main/cumulative-stack and independent audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-15T18:27:27.448659+00:00",
+    "old_nodes_preserved": 7136,
+    "old_edges_preserved": 16097,
+    "new_node": {
+      "claim_id": "finite_consumed_memory_bank_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b53db1786778a4ae8bf7745371f228c5823b15b4de2703642121256aba15a2d6",
+      "path": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/finite_consumed_memory_bank_2026_10_15.py",
+      "title": "Finite consumed memory banks for repeated readiness"
+    },
+    "new_edges": [
+      {
+        "from": "finite_consumed_memory_bank_bounded_theorem_note_2026-10-15",
+        "to": "correlated_memory_delivery_and_readiness_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10456538,
+      "sha256": "97db59a79fd7c45b850a22b9f6a4c6b86be810ea1723722551b8637ce6f3e19f"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1019253,
+      "sha256": "92cb1ef512e5c0a74b2b7569a795a5ed37e987435f0a96a644ccd7096f005b18"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "bc9b11f3d354fe11043c153800d270934a40b0b951497808cc2d81ef1ddb4d5b"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T18:25:12.751906+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 985,
+          "sha256": "33a5d9da1ffa4e05132105712e5e0af3190f1934d6ee22564c8b5e83bd4d77b9"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 1013,
+          "sha256": "828f0ac932a8056019f4863f6e709d272c00c68f5c6fc905a871a6304ef1f88f"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 1001,
+          "sha256": "8f2ff339ab7d510901c3e0decace559aa9e69011fd89f89793285ec0128e576f"
+        }
+      },
+      {
+        "case": "source_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_source_interval/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "7fe3eeafb6ebdf06ba119fb10ffe61987825534215b6a7540b7421a0248287d4"
+        }
+      },
+      {
+        "case": "selection_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_selection_interval/EXECUTION.json",
+          "bytes": 1017,
+          "sha256": "c7f7fa89b7da73ae48b86edfe58e6ff0091b50e95285d585c98bc7524ff2ecf8"
+        }
+      },
+      {
+        "case": "parent_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_parent_interval/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "eca9aed8214019aed2b55dc49ca68ab9bf26e6e468d9505d20dad5364811d91c"
+        }
+      },
+      {
+        "case": "parent_review_interval",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_parent_review_interval/EXECUTION.json",
+          "bytes": 1029,
+          "sha256": "dc9a4bf62712dad6e8a8ac2f3c8543a7e238d95b55279bf7e4f7b7892a8247c0"
+        }
+      },
+      {
+        "case": "dependency_role",
+        "expected_failure": "Parent role",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_dependency_role/EXECUTION.json",
+          "bytes": 1006,
+          "sha256": "898c632c6ca85ffff84c31066c6f50c853a6fd63325e9673915793749ac6494d"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical null state must remain null:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 1016,
+          "sha256": "cf9265d05f2be971e9aa430e956493bdccc3c8f27dfe194e8bd93fdce120a659"
+        }
+      },
+      {
+        "case": "actual_base",
+        "expected_failure": "Actual selected base",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_actual_base/EXECUTION.json",
+          "bytes": 995,
+          "sha256": "f10400364a1cb6e73c7c0d1bdcce497c4f31aebc88aa62155d52be5d9aa5c70c"
+        }
+      },
+      {
+        "case": "live_exit",
+        "expected_failure": "live observation exit/schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_live_exit/EXECUTION.json",
+          "bytes": 990,
+          "sha256": "0959a851e0b2e1345d8d6813e8d7db008887a8959d816bf4a19a025a8fd997c4"
+        }
+      },
+      {
+        "case": "live_recorder",
+        "expected_failure": "live recorder source identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_live_recorder/EXECUTION.json",
+          "bytes": 1001,
+          "sha256": "495dd737dff5c89c4b71833b1ee8c444019bcfc0a2a4f4fcd222764d67bd4a08"
+        }
+      },
+      {
+        "case": "history_schema",
+        "expected_failure": "historical observation schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_history_schema/EXECUTION.json",
+          "bytes": 1004,
+          "sha256": "9b970d22cff100032dbefa30ec4041085271e8a50a6570b056fbfe82b1cfb428"
+        }
+      },
+      {
+        "case": "root_ack",
+        "expected_failure": "root reviewed source acknowledgment",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_root_ack/EXECUTION.json",
+          "bytes": 986,
+          "sha256": "e95c200e07e3ac2af72ef14634d9e309a06a5aad0c77387ff0e6cb17b99745a7"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "exact binding receipt membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 1016,
+          "sha256": "66cae8a9d092bf0f799edb7b16548254b66b91fabcdc96ce9a183eb0d3dbcdc0"
+        }
+      },
+      {
+        "case": "failed_refresh",
+        "expected_failure": "historical observation schema",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/finite_bank/runs/mutation_failed_refresh/EXECUTION.json",
+          "bytes": 1004,
+          "sha256": "7cd39ba4ff2b487eb4de0e5375c9bef0e5eddf23690309c3e427ea0f636af78a"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 15,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied whole-bank Markov law/basis/margins, finite fresh factors, complete positive local gates and compensation, actual chronological guards and intervening segments, full-lifetime isolation, precision and scalar/moment/work accounts; native supply, restoration, autonomous scheduling, common caps and retained audit remain open."
+  ]
+}

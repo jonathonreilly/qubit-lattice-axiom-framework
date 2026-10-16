@@ -1,0 +1,483 @@
+{
+  "current_source_freezes_checked": [
+    {
+      "source": "campaign/finite_memory_bank_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f",
+      "members_verified": 1
+    },
+    {
+      "source": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "sha256": "e66dc3d4d956acffc070076bca03e2bee3677550db809ed86e56594470044f0b",
+      "members_verified": 34
+    },
+    {
+      "source": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "sha256": "0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510",
+      "members_verified": 4
+    }
+  ],
+  "members": [
+    {
+      "freeze": "campaign/finite_memory_bank_root_candidate/PROPOSAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_root_candidate/DERIVATION.md",
+      "bytes": 11745,
+      "sha256": "162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "bank_author",
+        "container": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 21005,
+        "end_byte_exclusive": 32750
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/CLOSING_METADATA.json",
+      "bytes": 7800,
+      "sha256": "dd10996065a41e9f116ebac93b135864443c823bc4210a74a3833901ac874ad5",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/dd10996065a41e9f116ebac93b135864443c823bc4210a74a3833901ac874ad5.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/DELIVERY.json",
+      "bytes": 3848,
+      "sha256": "cd8341414d4df65a10889af5e1dd0a281bfdc4cf54ab1dab8dd18eb9753513bf",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/cd8341414d4df65a10889af5e1dd0a281bfdc4cf54ab1dab8dd18eb9753513bf.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/METADATA_TEMPLATE.json",
+      "bytes": 591,
+      "sha256": "382cc76fcf42b9849bf9bea09acd942fae822f48c2351eb67a4fff7e2918652b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/382cc76fcf42b9849bf9bea09acd942fae822f48c2351eb67a4fff7e2918652b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/READ_EXPOSURE.md",
+      "bytes": 3090,
+      "sha256": "b8156831899212a51e6be24a262f593358d69da4bc1961c4a5c62dd42dab686d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/b8156831899212a51e6be24a262f593358d69da4bc1961c4a5c62dd42dab686d.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/REPORT.md",
+      "bytes": 25249,
+      "sha256": "16f6fbc729dd24fb77df435ecfe86b9545bf875ceec25067893a0ed853f811b6",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "bank_assessment",
+        "container": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 32896,
+        "end_byte_exclusive": 58145
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 9170,
+      "sha256": "24117ab2b2f9dc5500b8915641dc330447b9d041baa6c136774a44ec965eb6e3",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/24117ab2b2f9dc5500b8915641dc330447b9d041baa6c136774a44ec965eb6e3.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/capture_metadata.py",
+      "bytes": 4413,
+      "sha256": "594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/instructions/workhorse.SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 934,
+      "sha256": "bdeb8ecba472db14a87adf66e2d3ae6963a7b594a1fa14e26f0b496f58d2ac10",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/bdeb8ecba472db14a87adf66e2d3ae6963a7b594a1fa14e26f0b496f58d2ac10.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "bytes": 1144,
+      "sha256": "001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/001e55f5cfeac36e4ca9dbf80a96938f05ac60a92c8e9575761d802c734ddf1e.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/child_source.py",
+      "bytes": 4413,
+      "sha256": "594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/594691d17e1675047e27f9066725fba5568d56aede09bbe08c33be27505b772a.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/capture/stdout",
+      "bytes": 341,
+      "sha256": "338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/338a0a3199e8de397779aae38707ceb0077a2588d52c4d7ccce28e93e129ac95.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/EXECUTION.json",
+      "bytes": 934,
+      "sha256": "3add669ebcb29ab88b9049bd807a12d0732f4a6aecc0f38aabe5774850bfd02e",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/3add669ebcb29ab88b9049bd807a12d0732f4a6aecc0f38aabe5774850bfd02e.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/LAUNCH.json",
+      "bytes": 1142,
+      "sha256": "913fc4ce6f9d45d7b97c299de3a6af1522813752c2059a720e534d12356664dd",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/913fc4ce6f9d45d7b97c299de3a6af1522813752c2059a720e534d12356664dd.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/child_source.py",
+      "bytes": 2597,
+      "sha256": "7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/metadata_runs/closure/stdout",
+      "bytes": 578,
+      "sha256": "ee3c437b3752332de30d2ff49ae8a1774906663fbcb84bea873555dba767950d",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/ee3c437b3752332de30d2ff49ae8a1774906663fbcb84bea873555dba767950d.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/record_metadata.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/seal_review.py",
+      "bytes": 2762,
+      "sha256": "e0a182f7db581c1fc6051bb1dcfa7e3fd54985a24bb35a0ecc0e19a44acc69f1",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/e0a182f7db581c1fc6051bb1dcfa7e3fd54985a24bb35a0ecc0e19a44acc69f1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/bank/DERIVATION.md",
+      "bytes": 11745,
+      "sha256": "162d7504ad3951ed29add0facefc0bbdb227fcdf582e22250baad04a4f63c521",
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "bank_author",
+        "container": "docs/FINITE_CONSUMED_MEMORY_BANK_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 21005,
+        "end_byte_exclusive": 32750
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/bank/PROPOSAL_FREEZE.json",
+      "bytes": 319,
+      "sha256": "f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/f5def3706984cd0a22b403eec48483c05baa6eabfa355edfd0dba190afc2f45f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/exposure/PRIOR_ROTATED_FINAL_FREEZE.json",
+      "bytes": 14966,
+      "sha256": "7fa048ec66f485ae1f3a1e1ddee410dbf1d99354f42b6f5a7f9871000e1f021a",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/joint/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/markov/DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "recovery": {
+        "kind": "external_body_interval",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 28196,
+        "end_byte_exclusive": 75424,
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/markov/FINAL_FREEZE.json",
+      "bytes": 6228,
+      "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/prior_reviews/MARKOV_FINAL_FREEZE.json",
+      "bytes": 16703,
+      "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/sources/prior_reviews/MARKOV_REPORT.md",
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef",
+      "recovery": {
+        "kind": "external_body_interval",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103286,
+        "end_byte_exclusive": 134811,
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/finite_memory_bank_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/finite_memory_bank_decisive_check/verify_metadata.py",
+      "bytes": 2597,
+      "sha256": "7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/7a3b9dc1a67efb42a4acf579d51c5f81b5b2cd399ac247868df93387bab9d2f7.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md",
+      "bytes": 2871,
+      "sha256": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md",
+      "bytes": 2243,
+      "sha256": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488",
+      "recovery": null,
+      "selection_status": "not_selected_historical_or_unrelated_member",
+      "limit": "Historical manifest preserved; this member is not promised in the compact payload and is not an additional mathematical dependency."
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/VERIFICATION.json",
+      "bytes": 8964,
+      "sha256": "6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b",
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-finite-memory-bank-20261015/source_recovery/6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    }
+  ],
+  "scope": "Historical frozen manifests remain literal; only selected identities have portable recovery payload"
+}

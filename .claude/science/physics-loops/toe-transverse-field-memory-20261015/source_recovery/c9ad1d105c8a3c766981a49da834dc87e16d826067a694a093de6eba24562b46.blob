@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-15T17:54:53.186651+00:00",
+  "scope": "file identity and Python syntax only; no theorem verification by execution",
+  "sources": 15,
+  "instruction_original_and_snapshot_pairs": 4,
+  "prior_provenance_files": 4,
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/transverse_field_memory_independent/independent/DERIVATION.md",
+    "bytes": 17428,
+    "sha256": "5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f"
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "candidate_exposure": false,
+  "publication_or_audit": null
+}

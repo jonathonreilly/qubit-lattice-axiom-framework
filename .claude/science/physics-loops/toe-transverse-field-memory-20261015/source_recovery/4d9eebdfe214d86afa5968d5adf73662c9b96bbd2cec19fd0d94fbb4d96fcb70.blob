@@ -1,0 +1,56 @@
+"""Capture exact selected comparison sources and verify the two original freezes."""
+from pathlib import Path
+import ast
+import datetime
+import hashlib
+import json
+
+D=Path(__file__).resolve().parent;N=D.parent.parent
+def ident(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,size,digest):
+    row=ident(p);assert (row['bytes'],row['sha256'])==(size,digest),str(p);return row
+pins=[
+('transverse_field_memory_root_candidate/DERIVATION.md',20551,'5cbafbd7b04fa425c4b5f975c075cce33c0e7b19524917ed0a40051eea1fe5ec','complete current candidate read'),
+('transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json',641,'d1577da8b8796917c7660180daef846f8c0edfcce30deb70164b08354406e55e','candidate freeze'),
+('transverse_field_memory_root_candidate/SOURCE_PINS.json',1254,'9aae08f4c95c7b02d55e755d269c4d836384a8c0074f41fe9047c00b76068206','complete current provenance read'),
+('transverse_field_memory_root_candidate/PRIMARY_OPEN_TOOL_RESPONSE.json',404,'2b2565fbe3ce3626fbe4ea734316f223c104a93967e88c4e3d8559526ab9e139','actual failed publisher open; no full paper read'),
+('transverse_field_memory_independent/independent/DERIVATION.md',17428,'5f7163966dcc27159591baf80aec86ad75757fedfac2fd69390c65a4a1df0b5f','exact pre-exposure derivation reused'),
+('transverse_field_memory_independent/independent/FINAL_FREEZE.json',9055,'acdce88206ccaaec24da37c29ef1cd484ac28c11e62611d8d3cd8c76a362e8a5','pre-exposure independent freeze'),
+('local_bias_memory_root_candidate/DERIVATION.md',10666,'637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95','complete prerequisite source reread'),
+('local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md',1801,'c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e','mandatory prerequisite qualification read'),
+('conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md',2871,'2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b','complete current source decision read; not audit'),
+('conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md',2243,'bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488','complete current source decision read; not audit'),
+('local_bias_noncommuting_boundary_root_review/ACCEPTANCE.md',2782,'5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda','complete current boundary decision read'),
+('rotated_gibbs_memory_root_candidate/DERIVATION.md',7830,'30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2','prior source coverage reused at unchanged identity'),
+('rotated_gibbs_memory_decisive_check/REPORT.md',24571,'1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b','own exact prior review reused'),
+('correlated_markov_memory_candidate/DERIVATION.md',47228,'685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea','prior full circuit and geometry source coverage reused'),
+('correlated_markov_memory_independent/comparison/REPORT.md',31525,'c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef','own exact prior comparison reused'),
+('local_bias_noncommuting_boundary_decisive_check/REPORT.md',10342,'ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c','own exact prior boundary review reused')]
+assert not (D/'SOURCE_MANIFEST.json').exists(),'Preserve an earlier capture'
+rows=[]
+for rel,size,digest,role in pins:
+    p=N/rel;origin=check(p,size,digest);q=D/'source_snapshot'/rel;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(p.read_bytes());check(q,size,digest)
+    rows.append({'original':origin,'captured':ident(q),'role':role})
+for rel in ['transverse_field_memory_independent/independent/EXPOSURE.md','transverse_field_memory_independent/independent/PROBLEM.md','transverse_field_memory_independent/independent/INSTRUCTIONS.json']:
+    p=N/rel;q=D/'source_snapshot'/rel;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(p.read_bytes())
+    rows.append({'original':ident(p),'captured':ident(q),'role':'exact independent exposure/instruction record'})
+freeze_members=[]
+for rel in ['transverse_field_memory_root_candidate/PROPOSAL_FREEZE.json','transverse_field_memory_independent/independent/FINAL_FREEZE.json']:
+    p=N/rel;freeze=json.loads(p.read_text());members=[]
+    for row in freeze['files']:
+        q=Path(row['path']);q=q if q.is_absolute() else p.parent/q
+        check(q,row['bytes'],row['sha256']);members.append({'path':str(q),'bytes':row['bytes'],'sha256':row['sha256']})
+    freeze_members.append({'freeze':ident(p),'verified_members':members})
+for row in json.loads((N/'transverse_field_memory_root_candidate/SOURCE_PINS.json').read_text())['prior_decisions']:
+    check(Path(row['path']),row['bytes'],row['sha256'])
+instructions=json.loads((N/'transverse_field_memory_independent/independent/INSTRUCTIONS.json').read_text())['instructions']
+for row in instructions:
+    check(Path(row['original']),row['bytes'],row['sha256']);check(Path(row['captured']),row['bytes'],row['sha256'])
+local=[]
+for name in ['REPORT.md','READ_EXPOSURE.json','RECOVERY_SCOPE.md','capture_sources.py','verify_metadata.py','record_metadata.py','seal.py']:
+    p=D/name;local.append(ident(p))
+    if name.endswith('.py'):ast.parse(p.read_text(),filename=str(p))
+manifest={'captured_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'selected exact source snapshots, metadata freshness and frozen-member checks; no scientific execution','sources':rows,'original_freeze_checks':freeze_members,'instruction_checks':instructions,'local_sources':local,'recovery_limit':'Selected source snapshots only; original freeze members remain at their exact original paths, not recursively copied','scientific_programs_run':0}
+(D/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'sources_captured':len(rows),'original_freeze_member_counts':[len(x['verified_members']) for x in freeze_members],'local_sources':len(local),'scientific_programs_run':0},indent=2))

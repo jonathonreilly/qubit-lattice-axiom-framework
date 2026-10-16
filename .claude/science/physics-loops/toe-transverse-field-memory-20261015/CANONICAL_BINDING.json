@@ -1,0 +1,25 @@
+{
+  "kind": "actual_transverse_field_source_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "actual_git_base": "492cf6670fdddcd6c091ef5c978d7519e9ba0b6f",
+  "actual_branch_at_binding": "physics-loop/toe-local-bias-gibbs-sources-20261015",
+  "bound_note_sha256": "6239c11422d342751c67d6c7530aa03bdacde1c89aa78c8bcdfab5bdcc4de624",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/202a0318ca45d24f7d343a83703d2d0f4c7849d818ead438adbf5ef4d57d81ef.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/38571274f835eb63a398f28495f367e2cddd2c4bd21b6596c2f1752820f48f23.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/3ef03d83a0ac0f5038955fd9986e87ca427e965d967d063331dc46627081ab82.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/48aa32bc68cff461bf4fdf7c93e518b60a15d058837306cb552f3b5adb63f806.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/5a713d4b4ea8d7babad150e297d247661d63f3748f7511f4ed8efcd4e09bacc5.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/63e43c97ba3a85a5dd81afbddbac974727d67f69c539f4d7ddc77cb31d37ee09.blob",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/780ac9767654dedd03e09594a46b54bfdf8a1859bb28805adb274ac99404f972.blob",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/96e198bc616242f36fc59bb498c68d52cb4b2605fa3695f49eb4463720b43bee.json",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e1d53683f62a68261eda2616fc60770526144e4007823c8432b8c5e364802420.py",
+    ".claude/science/physics-loops/toe-transverse-field-memory-20261015/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+  ],
+  "canonical_parent_sha256": {
+    "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89"
+  }
+}

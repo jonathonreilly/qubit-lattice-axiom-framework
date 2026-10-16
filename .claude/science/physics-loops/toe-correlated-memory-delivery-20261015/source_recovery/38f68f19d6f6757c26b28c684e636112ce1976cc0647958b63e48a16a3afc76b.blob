@@ -1,0 +1,61 @@
+"""Run actual metadata verification, save its receipt, then freeze every member."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+
+D = Path(__file__).resolve().parent
+final_path = D / "FINAL_FREEZE.json"
+if final_path.exists():
+    raise RuntimeError("Refuse to overwrite an already frozen packet")
+script = D / "finalize_metadata.py"
+start = datetime.datetime.now(datetime.timezone.utc).isoformat()
+result = subprocess.run([sys.executable, str(script)], cwd=D, capture_output=True, text=True)
+end = datetime.datetime.now(datetime.timezone.utc).isoformat()
+(D / "finalize_metadata.stdout").write_text(result.stdout)
+(D / "finalize_metadata.stderr").write_text(result.stderr)
+receipt = {
+    "kind": "actual metadata-only subprocess receipt",
+    "started_utc": start,
+    "finished_utc": end,
+    "argv": [sys.executable, str(script)],
+    "script_sha256": hashlib.sha256(script.read_bytes()).hexdigest(),
+    "returncode": result.returncode,
+    "stdout": "finalize_metadata.stdout",
+    "stderr": "finalize_metadata.stderr",
+    "scientific_run": False,
+}
+(D / "finalize_metadata.RECEIPT.json").write_text(json.dumps(receipt, indent=2) + "\n")
+if result.returncode:
+    print(result.stdout)
+    print(result.stderr)
+    raise SystemExit(result.returncode)
+members = []
+for path in sorted(D.rglob("*")):
+    if not path.is_file() or path == final_path:
+        continue
+    data = path.read_bytes()
+    members.append({"path": str(path.relative_to(D)), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()})
+assert any(x["path"] == "source/PROPOSAL_FREEZE.json" for x in members)
+freeze = {
+    "frozen_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "status": "bounded substantive assessment; conditional equations checked; Q terminology and consumer elapsed-time scope clarified; no publication or audit verdict",
+    "assessment_source_sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747",
+    "source_exposed": True,
+    "scientific_programs_run": 0,
+    "historical_programs_replayed": 0,
+    "metadata_verification_exit_code": result.returncode,
+    "member_exclusion": "Only this exact root FINAL_FREEZE.json is excluded; nested freezes are members",
+    "files": members,
+    "editable_prompt_files_changed": [],
+    "external_files_changed": [],
+}
+final_path.write_text(json.dumps(freeze, indent=2) + "\n")
+for row in freeze["files"]:
+    data = (D / row["path"]).read_bytes()
+    assert len(data) == row["bytes"]
+    assert hashlib.sha256(data).hexdigest() == row["sha256"]
+print(result.stdout)
+print(json.dumps({"frozen_utc": freeze["frozen_utc"], "members": len(members), "final_freeze_sha256": hashlib.sha256(final_path.read_bytes()).hexdigest(), "all_members_verified": True}, indent=2))

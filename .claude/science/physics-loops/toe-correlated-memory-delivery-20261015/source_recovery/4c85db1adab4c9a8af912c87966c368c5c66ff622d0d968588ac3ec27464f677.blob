@@ -1,0 +1,21 @@
+{
+  "sealed_utc": "2026-10-15T16:26:24.904475+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/GIBBS_ACCEPTANCE.md",
+      "bytes": 4325,
+      "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/MARKOV_ACCEPTANCE.md",
+      "bytes": 5131,
+      "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_memory_root_review/VERIFICATION.json",
+      "bytes": 8568,
+      "sha256": "3343903af4e62f2d205207213b245b047d38db47e603bfb37d2a9f690c86e56f"
+    }
+  ],
+  "scope": "Two separate root source acceptances; no retained audit, no composition decision, no publication"
+}

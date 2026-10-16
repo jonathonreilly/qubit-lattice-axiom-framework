@@ -1,0 +1,35 @@
+"""Actual bounded recorder for source-capture and metadata-closure processes."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import subprocess
+import sys
+import time
+
+D=Path(__file__).resolve().parent
+assert len(sys.argv)==2 and sys.argv[1] in {'capture','verification'}
+phase=sys.argv[1];script=D/({'capture':'capture_sources.py','verification':'verify_metadata.py'}[phase])
+run=D/'metadata_runs'/phase;run.mkdir(parents=True,exist_ok=False)
+def ident(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+inputs=[]
+for name in ['capture_sources.py','verify_metadata.py','record_metadata.py','seal.py','REPORT.md','READ_EXPOSURE.json','RECOVERY_SCOPE.md']:
+    p=D/name;q=run/'source_at_launch'/name;q.parent.mkdir(exist_ok=True);q.write_bytes(p.read_bytes());inputs.append({'original':ident(p),'captured':ident(q)})
+argv=[sys.executable,str(script)]
+launch={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'argv':argv,'cwd':str(D),'timeout_seconds':60,'inputs':inputs,'scope':'metadata only; no science program or historical runner'}
+(run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();tick=time.monotonic();failure=None
+try:
+    p=subprocess.run(argv,cwd=D,capture_output=True,timeout=60);out,err,code=p.stdout,p.stderr,p.returncode
+except subprocess.TimeoutExpired as exc:
+    out,err,code=exc.stdout or b'',exc.stderr or b'',124;failure={'kind':'timeout','seconds':60}
+except OSError as exc:
+    out,err,code=b'',str(exc).encode(),127;failure={'kind':type(exc).__name__,'message':str(exc)}
+end=datetime.datetime.now(datetime.timezone.utc).isoformat();elapsed=time.monotonic()-tick
+(run/'stdout').write_bytes(out);(run/'stderr').write_bytes(err)
+r={'argv':argv,'cwd':str(D),'start_utc':start,'end_utc':end,'elapsed_seconds':elapsed,'exit_code':code,'failure':failure,'timeout_seconds':60,'child_source_at_launch':ident(run/'source_at_launch'/script.name),'recorder_at_launch':ident(run/'source_at_launch/record_metadata.py'),'launch':ident(run/'LAUNCH.json'),'stdout':ident(run/'stdout'),'stderr':ident(run/'stderr'),'scientific_execution':False}
+(run/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n')
+print(out.decode(errors='replace'));print(err.decode(errors='replace'),file=sys.stderr)
+print(json.dumps({'receipt':str(run/'EXECUTION.json'),'exit_code':code,'scientific_execution':False}))
+raise SystemExit(code)

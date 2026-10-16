@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-15T16:35:44.809350+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check",
+  "interpreter": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "child": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/verify_metadata.py",
+    "bytes": 3852,
+    "sha256": "cc12b7f883dbfe07c37906120834b96ba31a9ccc7e05a1276fd59672182244bc"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/gibbs_markov_composition_decisive_check/record_metadata.py",
+    "bytes": 1528,
+    "sha256": "7e3b08b58207e9415801574f0618842a88fb321883abe3e9500b58c54c963ddf"
+  },
+  "timeout_seconds": 60,
+  "kind": "metadata only; no scientific execution, replay or Git"
+}

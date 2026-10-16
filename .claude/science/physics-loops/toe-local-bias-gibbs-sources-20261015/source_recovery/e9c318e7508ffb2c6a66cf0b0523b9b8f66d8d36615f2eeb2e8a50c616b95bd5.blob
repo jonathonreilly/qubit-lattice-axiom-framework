@@ -1,0 +1,90 @@
+{
+  "started_utc": "2026-10-15T16:55:50.804690+00:00",
+  "completed_utc": "2026-10-15T16:55:50.811055+00:00",
+  "kind": "metadata-only source capture after analytic reading",
+  "sources": [
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_candidate/DERIVATION.md",
+        "bytes": 3059,
+        "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/DERIVATION.md",
+        "bytes": 3059,
+        "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e"
+      },
+      "scope": "complete source read and independently reconstructed"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_candidate/PROPOSAL_FREEZE.json",
+        "bytes": 335,
+        "sha256": "b3a53ca4c8f6205250250691db96a68290c44261ea4ca99a53ca4e92d7793b50"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/PROPOSAL_FREEZE.json",
+        "bytes": 335,
+        "sha256": "b3a53ca4c8f6205250250691db96a68290c44261ea4ca99a53ca4e92d7793b50"
+      },
+      "scope": "source freeze, not scientific execution receipt"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/AGENTS.md",
+        "bytes": 1265,
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      "scope": "unchanged complete prior instruction reading reused"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+        "bytes": 15435,
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      "scope": "unchanged complete prior instruction reading reused"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "scope": "unchanged complete prior skill reading reused"
+    },
+    {
+      "origin": {
+        "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/workhorse.SKILL.md",
+        "bytes": 13419,
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      "scope": "unchanged complete prior skill reading reused; explicit task prohibits delegation"
+    }
+  ],
+  "proposal_members_verified": 1,
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "rotated_candidate_opened": false,
+  "other_worker_local_bias_opened": false
+}

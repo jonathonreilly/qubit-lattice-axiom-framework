@@ -1,0 +1,9 @@
+# Independent result before candidate comparison
+
+The stated Markov-diagonal promise is sufficient for a conditional finite conversion on the fixed endpoints, using interleaved spaced leaves and reversible majority compression. Arbitrary coherences and original/reference correlations do not obstruct the proof: the failure projector is diagonal under the final permutation, and a full quantum estimate then supplies a pure-E comparison preserving the exact unconditioned ZF marginal.
+
+The decisive bound is g(p)=p+sqrt(4p-3p^2), with p at most s[t_r+(3^r-1)(1-q)|1-a-b|^L], clipped at one. The root sites are exactly the first s ray sites, with L>=s and total length N=s+(3^r-1)L. A Markov-law purification attains g(p), exposing why normalized-success bounds cannot be reused unchanged for this requested marginal.
+
+The explicit positive NN circuit has P_c=s[(20Lr/3)3^r-(7/2)(3^r-1)] gates and the stated full action/scalar/precision prices. All transit, garbage and reference registers remain. Composition with paid joint readiness allows arbitrary original-memory correlations. Uncompensated actual installed aging and the compensated H0-only comparison are distinguished, including the finite ramp price.
+
+These are analytic conditional findings, not a native Markov supplier or retained audit. The new candidate remains unread until this independent source freeze. See DERIVATION.md for proofs, sharp counterexamples, resource limits and exact target definitions.

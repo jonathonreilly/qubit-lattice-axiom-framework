@@ -1,0 +1,1818 @@
+{
+  "current_source_freezes_checked": [
+    {
+      "source": "campaign/local_bias_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038",
+      "members_declared": 1,
+      "members_verified": 1,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_memory_root_qualification/FINAL_FREEZE.json",
+      "sha256": "5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3",
+      "members_declared": 1,
+      "members_verified": 1,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "sha256": "d5863f3f2955e8c840567c37275bd6955d6a8661ad29795149985af8a8ddad27",
+      "members_declared": 31,
+      "members_verified": 31,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "sha256": "a91de5a5b197ae67d1f348fdecb24b2736f5d5accecfa6de2ae681485d9efe29",
+      "members_declared": 20,
+      "members_verified": 20,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_noncommuting_boundary_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "b3a53ca4c8f6205250250691db96a68290c44261ea4ca99a53ca4e92d7793b50",
+      "members_declared": 1,
+      "members_verified": 1,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "sha256": "e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7",
+      "members_declared": 27,
+      "members_verified": 27,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/local_bias_noncommuting_boundary_root_review/FINAL_FREEZE.json",
+      "sha256": "293ebb0a9ba4940343785b665ece39aa766a5e4501a834b0059c8ae121d05d5a",
+      "members_declared": 2,
+      "members_verified": 2,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/rotated_gibbs_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "sha256": "19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7",
+      "members_declared": 1,
+      "members_verified": 1,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "sha256": "7fa048ec66f485ae1f3a1e1ddee410dbf1d99354f42b6f5a7f9871000e1f021a",
+      "members_declared": 41,
+      "members_verified": 41,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    },
+    {
+      "source": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "sha256": "0e2c4a627624deeb936e2b7f975a88135582e022211daf2c4ff86b2bea717510",
+      "members_declared": 4,
+      "members_verified": 3,
+      "scope": "All listed members except the explicitly excluded finite-bank acceptance in the shared decision freeze"
+    }
+  ],
+  "members": [
+    {
+      "freeze": "campaign/local_bias_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_candidate/DERIVATION.md",
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 27209,
+        "end_byte_exclusive": 37875
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_root_qualification/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_root_qualification/SCOPE_AND_PRIOR_ART.md",
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_qualification",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 38022,
+        "end_byte_exclusive": 39823
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/DELIVERY.json",
+      "bytes": 2288,
+      "sha256": "56c76e9056bea1805bbe1180d8fdeb1b6b7bb1f75396f2cf8207b53499bc00b4",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/56c76e9056bea1805bbe1180d8fdeb1b6b7bb1f75396f2cf8207b53499bc00b4.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/DERIVATION.md",
+      "bytes": 38107,
+      "sha256": "5f747f09e50e949e6e2efa735f51252865eade9a0d85a72644cc24ad41788604",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_pre_exposure",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 39969,
+        "end_byte_exclusive": 78076
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/EXPOSURE_AND_READ_COVERAGE.md",
+      "bytes": 4982,
+      "sha256": "ddfb6a228200f25b3acd38e4ee31ea5f6e2188fec408426bd0607919a263dac3",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/ddfb6a228200f25b3acd38e4ee31ea5f6e2188fec408426bd0607919a263dac3.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/HANDOFF.md",
+      "bytes": 2575,
+      "sha256": "804e484eb1489d77fbd9865482cae62a59c6fc184d61650c4c1d0d97c2d82306",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/804e484eb1489d77fbd9865482cae62a59c6fc184d61650c4c1d0d97c2d82306.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/METADATA_VALIDATION.json",
+      "bytes": 640,
+      "sha256": "2ccc5ac05ca0853df5506132a5b0b7bc1f5c10d562e138fb4ccafc0e64ec7148",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/2ccc5ac05ca0853df5506132a5b0b7bc1f5c10d562e138fb4ccafc0e64ec7148.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/SOURCE_MANIFEST.json",
+      "bytes": 6773,
+      "sha256": "b06667c149785bbda4642b26800732609e5012663e59653caf950c1c1c3b7ebf",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/b06667c149785bbda4642b26800732609e5012663e59653caf950c1c1c3b7ebf.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/WEB_READING_SCOPE.md",
+      "bytes": 1428,
+      "sha256": "1af7cad66eb0e89982d2275e3b2dec88485944ed2b83122a2d55e4060d0ba3ed",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1af7cad66eb0e89982d2275e3b2dec88485944ed2b83122a2d55e4060d0ba3ed.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/WEB_TARGETED_TOOL_RESPONSE.json",
+      "bytes": 10416,
+      "sha256": "e7445a7f9d9fdf9509da5f35a9a040e288c2260da13d2e46abdcd45e08eb53a6",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e7445a7f9d9fdf9509da5f35a9a040e288c2260da13d2e46abdcd45e08eb53a6.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/capture_sources.py",
+      "bytes": 3664,
+      "sha256": "6a51762b4f1d49e4d688faa46b4168c69f7b92e9f37b1d14f71ffdd88ba90c88",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/6a51762b4f1d49e4d688faa46b4168c69f7b92e9f37b1d14f71ffdd88ba90c88.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/EXECUTION.json",
+      "bytes": 968,
+      "sha256": "a3ec9d2d9aa185e816c463a0f60c572f8c01122017bf7f0be8b932844d03acd4",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/a3ec9d2d9aa185e816c463a0f60c572f8c01122017bf7f0be8b932844d03acd4.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/LAUNCH.json",
+      "bytes": 1133,
+      "sha256": "46cc58fbe512b86eb87a913781c4a1d736c9245d3b51dd6f798c3d175768e726",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/46cc58fbe512b86eb87a913781c4a1d736c9245d3b51dd6f798c3d175768e726.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/program_source.py",
+      "bytes": 3664,
+      "sha256": "6a51762b4f1d49e4d688faa46b4168c69f7b92e9f37b1d14f71ffdd88ba90c88",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/6a51762b4f1d49e4d688faa46b4168c69f7b92e9f37b1d14f71ffdd88ba90c88.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/recorder_source.py",
+      "bytes": 1952,
+      "sha256": "135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/capture_sources/stdout",
+      "bytes": 122,
+      "sha256": "e41946a0f04b8039026e7a1a0692736e17c9cfec7f1de67173410373fbe93d77",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e41946a0f04b8039026e7a1a0692736e17c9cfec7f1de67173410373fbe93d77.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/EXECUTION.json",
+      "bytes": 968,
+      "sha256": "621f1f0519aebfe4c5a90e2eee581084a817e82313e151b222f49a840c58a332",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/621f1f0519aebfe4c5a90e2eee581084a817e82313e151b222f49a840c58a332.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/LAUNCH.json",
+      "bytes": 1133,
+      "sha256": "ce872a9231e0d166908cbc99530962c9036bbbbc0f583ba5e38708e3353a6d6a",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/ce872a9231e0d166908cbc99530962c9036bbbbc0f583ba5e38708e3353a6d6a.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/program_source.py",
+      "bytes": 2417,
+      "sha256": "9592c51033dcf29addcb843d38c37e8793a6522b5f6ad1765641ce18e26b5f04",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9592c51033dcf29addcb843d38c37e8793a6522b5f6ad1765641ce18e26b5f04.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/recorder_source.py",
+      "bytes": 1952,
+      "sha256": "135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/receipts/verify_metadata/stdout",
+      "bytes": 606,
+      "sha256": "78ac87b7d593f8ac634967ea2dbc9f89abbe3cbd2ee9789a4df42ad7ef6dba0b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/78ac87b7d593f8ac634967ea2dbc9f89abbe3cbd2ee9789a4df42ad7ef6dba0b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/record_metadata.py",
+      "bytes": 1952,
+      "sha256": "135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/135dcdd7405b144eeec7e2249c85b3c32641e3922bf03834c7b88d8a75884268.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/seal_packet.py",
+      "bytes": 2492,
+      "sha256": "314740fac9c53126e891f53dc417ba375c4fa766f639e0b8ef87889118aea221",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/314740fac9c53126e891f53dc417ba375c4fa766f639e0b8ef87889118aea221.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_markov_memory_candidate__DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "markov_author",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 28196,
+        "end_byte_exclusive": 75424,
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_markov_memory_independent__comparison__REPORT.md",
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "markov_comparison",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103286,
+        "end_byte_exclusive": 134811,
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__FINAL_FREEZE.json",
+      "bytes": 1001,
+      "sha256": "4c85db1adab4c9a8af912c87966c368c5c66ff622d0d968588ac3ec27464f677",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__GIBBS_ACCEPTANCE.md",
+      "bytes": 4325,
+      "sha256": "c2338e1af34ad4ca2ad53dd8137bacbda73310db57b9ffb586e1f0c368efe632",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/correlated_memory_root_review__MARKOV_ACCEPTANCE.md",
+      "bytes": 5131,
+      "sha256": "b62f977e99d9f62e2505ba99ee4b9d00aaf4379b720fd4e1a61fd4b9059a1f7d",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/local_gibbs_memory_interface_decisive_check__REPORT.md",
+      "bytes": 26646,
+      "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "gibbs_assessment",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 148452,
+        "end_byte_exclusive": 175098,
+        "bytes": 26646,
+        "sha256": "2e47f86ef30ee8b999b5ff03a652f3c89990b5c0a73f9f76a0e3653ede640d10"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/source/local_gibbs_memory_interface_root_candidate__DERIVATION.md",
+      "bytes": 13367,
+      "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "gibbs_author",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 134946,
+        "end_byte_exclusive": 148313,
+        "bytes": 13367,
+        "sha256": "c5ddeb3ee82368344e59869eac3da92239413264fd12c37b00ebb7baa2ae4747"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/independent/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/independent/verify_metadata.py",
+      "bytes": 2417,
+      "sha256": "9592c51033dcf29addcb843d38c37e8793a6522b5f6ad1765641ce18e26b5f04",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9592c51033dcf29addcb843d38c37e8793a6522b5f6ad1765641ce18e26b5f04.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/DELIVERY.json",
+      "bytes": 2246,
+      "sha256": "04c0d034a38f0e6a9943eab5339d489883c77aa937cd39788c673ee6d13bcd37",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/04c0d034a38f0e6a9943eab5339d489883c77aa937cd39788c673ee6d13bcd37.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/EXPOSURE_AND_READ_COVERAGE.md",
+      "bytes": 4060,
+      "sha256": "7c65e1c6da46abd086d6b2573f5fff9f496c55e6f11b17247714939fe82c19d9",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/7c65e1c6da46abd086d6b2573f5fff9f496c55e6f11b17247714939fe82c19d9.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/HANDOFF.md",
+      "bytes": 2449,
+      "sha256": "38051db9dcf56de3eed52493bc0b379514b133a764e434cac373e470d3049ca7",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/38051db9dcf56de3eed52493bc0b379514b133a764e434cac373e470d3049ca7.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/METADATA_VALIDATION.json",
+      "bytes": 1206,
+      "sha256": "0151f8b9403784667f8511564ba519533039b42608a7e196abc6ebf457f70627",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/0151f8b9403784667f8511564ba519533039b42608a7e196abc6ebf457f70627.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/REPORT.md",
+      "bytes": 41576,
+      "sha256": "90ff1d5dcaa1af35ad3f63c39e16232fb1e52342c4af8dbd0d4405caea49fde2",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_comparison",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 78220,
+        "end_byte_exclusive": 119796
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/SOURCE_MANIFEST.json",
+      "bytes": 9388,
+      "sha256": "f6ce431a3c34d84997b2d65d5dc5357e5476eef088122cd987345304f4f757ac",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/f6ce431a3c34d84997b2d65d5dc5357e5476eef088122cd987345304f4f757ac.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/capture_sources.py",
+      "bytes": 4055,
+      "sha256": "2cac201c05573f8de1659c0289e967a58be800112fccc647c5998b517f1c0484",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/2cac201c05573f8de1659c0289e967a58be800112fccc647c5998b517f1c0484.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/EXECUTION.json",
+      "bytes": 1747,
+      "sha256": "364806b4e7456ef28ce4a0c46da59e68d27fb303acc1c03ef16641f4cd55b214",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/364806b4e7456ef28ce4a0c46da59e68d27fb303acc1c03ef16641f4cd55b214.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/LAUNCH.json",
+      "bytes": 1047,
+      "sha256": "8da9beb4b7a5cb76be4dfb094e7c94a719401105b04df1cc362a321866de5888",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/8da9beb4b7a5cb76be4dfb094e7c94a719401105b04df1cc362a321866de5888.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/capture_sources/stdout.txt",
+      "bytes": 155,
+      "sha256": "8df4015cb5b442d7eceb8f598f1db62868ee5fab4b1f794cba891077fb4b9a39",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/8df4015cb5b442d7eceb8f598f1db62868ee5fab4b1f794cba891077fb4b9a39.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/EXECUTION.json",
+      "bytes": 1747,
+      "sha256": "7446cc2f8e6946280c85b6b19969bdc57e94f013ad363eaa92e646e16dc6d799",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/7446cc2f8e6946280c85b6b19969bdc57e94f013ad363eaa92e646e16dc6d799.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/LAUNCH.json",
+      "bytes": 1047,
+      "sha256": "88d8e34a5009a58734c3f47b555b22b6301373711094186f57fed054abcdc029",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/88d8e34a5009a58734c3f47b555b22b6301373711094186f57fed054abcdc029.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/metadata_runs/verify_metadata/stdout.txt",
+      "bytes": 137,
+      "sha256": "ac777986260e3394f71af3629db1c40799f2c189117ad11c4f9213079c7acdff",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/ac777986260e3394f71af3629db1c40799f2c189117ad11c4f9213079c7acdff.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/record_metadata.py",
+      "bytes": 1984,
+      "sha256": "8e349597907723fc9fefed8028187575acd00dfed6aa0fa036791969a5a9f1d8",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/8e349597907723fc9fefed8028187575acd00dfed6aa0fa036791969a5a9f1d8.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/seal.py",
+      "bytes": 3444,
+      "sha256": "8086475f6c55316ebaa288680fb1d211763137b178692ca837fcf84a7ca5a0a9",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/8086475f6c55316ebaa288680fb1d211763137b178692ca837fcf84a7ca5a0a9.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/source/local_bias_memory_root_candidate__DERIVATION.md",
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 27209,
+        "end_byte_exclusive": 37875
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/source/local_bias_memory_root_qualification__SCOPE_AND_PRIOR_ART.md",
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_qualification",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 38022,
+        "end_byte_exclusive": 39823
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_memory_independent/comparison/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_memory_independent/comparison/verify_metadata.py",
+      "bytes": 3859,
+      "sha256": "9f7417082315d847d3529c39b247e601787073475b2d179995e1569d6db46031",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9f7417082315d847d3529c39b247e601787073475b2d179995e1569d6db46031.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_root_candidate/PROPOSAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_candidate/DERIVATION.md",
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "noncommuting_boundary_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 119947,
+        "end_byte_exclusive": 123006
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/CLOSING_METADATA.json",
+      "bytes": 4886,
+      "sha256": "1eb5587b3f7ccb03fb3302533eb2ea082b04506586258c8833c0bed08dcc971e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1eb5587b3f7ccb03fb3302533eb2ea082b04506586258c8833c0bed08dcc971e.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/DELIVERY.json",
+      "bytes": 3970,
+      "sha256": "e93d5778163597f0817c781266bad2d587c1a60f52b53eb071cd8353d6b9f793",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e93d5778163597f0817c781266bad2d587c1a60f52b53eb071cd8353d6b9f793.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/METADATA_PLAN.md",
+      "bytes": 1143,
+      "sha256": "fbc691a9ddc5f93fb34e6790c2ce48b144dec3de9ff83a49aae6b194c5a9a194",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/fbc691a9ddc5f93fb34e6790c2ce48b144dec3de9ff83a49aae6b194c5a9a194.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/REPORT.md",
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "noncommuting_boundary_assessment",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 123161,
+        "end_byte_exclusive": 133503
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 4391,
+      "sha256": "e9c318e7508ffb2c6a66cf0b0523b9b8f66d8d36615f2eeb2e8a50c616b95bd5",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e9c318e7508ffb2c6a66cf0b0523b9b8f66d8d36615f2eeb2e8a50c616b95bd5.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/capture_metadata.py",
+      "bytes": 2728,
+      "sha256": "907d331cd809573502a6a376626c2f6488412c932bf0fa63a47597e5347f6372",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/907d331cd809573502a6a376626c2f6488412c932bf0fa63a47597e5347f6372.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/instructions/workhorse.SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 976,
+      "sha256": "963ef313dd1185c87692318a0133daf5177c0237bcf31078ef7a57ee66d99967",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/963ef313dd1185c87692318a0133daf5177c0237bcf31078ef7a57ee66d99967.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "bytes": 1200,
+      "sha256": "9d0926b2e4c983d2e6d3177f150af5c48e357603d732c874b2e30645195f0cf5",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9d0926b2e4c983d2e6d3177f150af5c48e357603d732c874b2e30645195f0cf5.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/child_source.py",
+      "bytes": 2728,
+      "sha256": "907d331cd809573502a6a376626c2f6488412c932bf0fa63a47597e5347f6372",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/907d331cd809573502a6a376626c2f6488412c932bf0fa63a47597e5347f6372.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/capture/stdout",
+      "bytes": 354,
+      "sha256": "50d7d2d35e256d26aef4e57a714219ccd27e4ca4e86875fd72a82498b81f4dc5",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/50d7d2d35e256d26aef4e57a714219ccd27e4ca4e86875fd72a82498b81f4dc5.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/EXECUTION.json",
+      "bytes": 976,
+      "sha256": "cd96ba5f3a4508b8923d869806cb7791e88b015ab969532b59bb11b8cdd23196",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/cd96ba5f3a4508b8923d869806cb7791e88b015ab969532b59bb11b8cdd23196.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/LAUNCH.json",
+      "bytes": 1198,
+      "sha256": "59a1da6897e3e60aad2b3dd542d760d83b91c784340b70362c4af1ccf8ff081f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/59a1da6897e3e60aad2b3dd542d760d83b91c784340b70362c4af1ccf8ff081f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/child_source.py",
+      "bytes": 2438,
+      "sha256": "c520357d6f362cc3d3c0fb68cb0c4b5f06696437b9c9c76c6a564bd98e08eeb8",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/c520357d6f362cc3d3c0fb68cb0c4b5f06696437b9c9c76c6a564bd98e08eeb8.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/metadata_runs/closure/stdout",
+      "bytes": 590,
+      "sha256": "b84059bb2444b5e04337781c7f4d8083091ad08ba3a037d36d2d238cb679369f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/b84059bb2444b5e04337781c7f4d8083091ad08ba3a037d36d2d238cb679369f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/record_metadata.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/seal_review.py",
+      "bytes": 2388,
+      "sha256": "672f8b316e8fa8f94724f384f81b4a086d4f71afc039b1ea850d50390d937531",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/672f8b316e8fa8f94724f384f81b4a086d4f71afc039b1ea850d50390d937531.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/DERIVATION.md",
+      "bytes": 3059,
+      "sha256": "3c8a061e0fbae87b4edd428f835187ca509288a3cad7872ff4e94e2d7421ce2e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "noncommuting_boundary_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 119947,
+        "end_byte_exclusive": 123006
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/source/PROPOSAL_FREEZE.json",
+      "bytes": 335,
+      "sha256": "b3a53ca4c8f6205250250691db96a68290c44261ea4ca99a53ca4e92d7793b50",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/b3a53ca4c8f6205250250691db96a68290c44261ea4ca99a53ca4e92d7793b50.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_decisive_check/verify_metadata.py",
+      "bytes": 2438,
+      "sha256": "c520357d6f362cc3d3c0fb68cb0c4b5f06696437b9c9c76c6a564bd98e08eeb8",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/c520357d6f362cc3d3c0fb68cb0c4b5f06696437b9c9c76c6a564bd98e08eeb8.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_review/ACCEPTANCE.md",
+      "bytes": 2782,
+      "sha256": "5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/5ed5f4bca23da4fe240f04cded99967ecb525a372942748d93c21125a6ce0eda.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/local_bias_noncommuting_boundary_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_bias_noncommuting_boundary_root_review/VERIFICATION.json",
+      "bytes": 2904,
+      "sha256": "0c2853a7c05238d64890f04be3338c05f13069d4bc98f9b67e536bd3e7c46e6d",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/0c2853a7c05238d64890f04be3338c05f13069d4bc98f9b67e536bd3e7c46e6d.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_root_candidate/PROPOSAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_root_candidate/DERIVATION.md",
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "rotated_gibbs_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 133646,
+        "end_byte_exclusive": 141476
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/CLOSING_METADATA.json",
+      "bytes": 11886,
+      "sha256": "52bbfb6b2edb71845d32e39f1f6dd4fdcd712feafd7cc14b854452bf30a94eb3",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/52bbfb6b2edb71845d32e39f1f6dd4fdcd712feafd7cc14b854452bf30a94eb3.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/DELIVERY.json",
+      "bytes": 3864,
+      "sha256": "4c03dc90b09c41c3daa6bc7448e9edc6ae9dfbd0dbe2dea8e1c0defb76432063",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/4c03dc90b09c41c3daa6bc7448e9edc6ae9dfbd0dbe2dea8e1c0defb76432063.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/METADATA_TEMPLATE.json",
+      "bytes": 593,
+      "sha256": "af1044a9dd2c920852eae326c606561ca8e6371e93756e7e45678c6931e1bdc5",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/af1044a9dd2c920852eae326c606561ca8e6371e93756e7e45678c6931e1bdc5.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/READ_EXPOSURE.md",
+      "bytes": 3436,
+      "sha256": "1188690c96aa8a2025e306931714a3554264f37c1335fcc04fcc71b7f3e1ef59",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1188690c96aa8a2025e306931714a3554264f37c1335fcc04fcc71b7f3e1ef59.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/REPORT.md",
+      "bytes": 24571,
+      "sha256": "1a292a211183f61b039dd02e9a6f8932fdac96da075f36b9f59104b948100a8b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "rotated_gibbs_assessment",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 141623,
+        "end_byte_exclusive": 166194
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 14694,
+      "sha256": "6d3affe34312e0ec0888a7b9ac887240c2f49938e1fcaffd69b5642353d7b918",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/6d3affe34312e0ec0888a7b9ac887240c2f49938e1fcaffd69b5642353d7b918.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/capture_metadata.py",
+      "bytes": 6111,
+      "sha256": "1495199a32b6ac64b39481766636c6c18fc96d392adea11fb52bc1bce0f2e458",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1495199a32b6ac64b39481766636c6c18fc96d392adea11fb52bc1bce0f2e458.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/physics-claim-reviewer.SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/instructions/workhorse.SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 940,
+      "sha256": "042c227b0b300bd740d1faceffebf553dcf51a07207e0a63e383f4df396b8e46",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/042c227b0b300bd740d1faceffebf553dcf51a07207e0a63e383f4df396b8e46.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "bytes": 1152,
+      "sha256": "39d9fb09c9cd7b2a485586562ab58f78cd0bde4de366f1972504fa25cd09ad46",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/39d9fb09c9cd7b2a485586562ab58f78cd0bde4de366f1972504fa25cd09ad46.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/child_source.py",
+      "bytes": 6111,
+      "sha256": "1495199a32b6ac64b39481766636c6c18fc96d392adea11fb52bc1bce0f2e458",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1495199a32b6ac64b39481766636c6c18fc96d392adea11fb52bc1bce0f2e458.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/capture/stdout",
+      "bytes": 348,
+      "sha256": "431c994991904b19cd945fef1d14a8ddc5788fcc432a604be8b3107d4cfaf1a9",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/431c994991904b19cd945fef1d14a8ddc5788fcc432a604be8b3107d4cfaf1a9.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/EXECUTION.json",
+      "bytes": 940,
+      "sha256": "ed7558cc0fa12d393ed604d7865443205bbd21b13c4bb2dfb06d01c05d5ba862",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/ed7558cc0fa12d393ed604d7865443205bbd21b13c4bb2dfb06d01c05d5ba862.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/LAUNCH.json",
+      "bytes": 1150,
+      "sha256": "1d36d6a8d1ed2d276f7375e9a349be273f668b8a2055149a772571ab1c288abf",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/1d36d6a8d1ed2d276f7375e9a349be273f668b8a2055149a772571ab1c288abf.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/child_source.py",
+      "bytes": 2701,
+      "sha256": "838b0b86cc87ce27c3597fd960b7ff96c37165653428ba396a6a5f6d551de94f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/838b0b86cc87ce27c3597fd960b7ff96c37165653428ba396a6a5f6d551de94f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/recorder_source.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/metadata_runs/closure/stdout",
+      "bytes": 631,
+      "sha256": "e38e2d7b052a92d4150430367094b112901afa42d33cd979a1bcab25393c7a6b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e38e2d7b052a92d4150430367094b112901afa42d33cd979a1bcab25393c7a6b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/record_metadata.py",
+      "bytes": 1528,
+      "sha256": "9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/9c30e361c4537a152c469e4e8c95d535367718ec8ad3d4509a5ee9941dae0aa1.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/seal_review.py",
+      "bytes": 2760,
+      "sha256": "34b497ba20732a0fcfc8918883d210e2a319be262ed9f86c4a0181296d73129c",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/34b497ba20732a0fcfc8918883d210e2a319be262ed9f86c4a0181296d73129c.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/joint/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/DERIVATION.md",
+      "bytes": 10666,
+      "sha256": "637ccbabb9d275bffd3bc53c857d873ecc9ab3e7fd492600ef7d819b598c9b95",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 27209,
+        "end_byte_exclusive": 37875
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_provisional/PROPOSAL_FREEZE.json",
+      "bytes": 313,
+      "sha256": "824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/824cad9360666d32729695ce82356f651a074512bfa794ab944170b7f7889038.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/FINAL_FREEZE.json",
+      "bytes": 331,
+      "sha256": "5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/5af9c2c52dbd3fa51080d2479b7f227facdb213a0bbc98408c04e45eeba97cd3.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/local_bias_qualification/SCOPE_AND_PRIOR_ART.md",
+      "bytes": 1801,
+      "sha256": "c5cc61346fe3d44bf3ec25142f9c98e480cec8678b6ca70b53f4760dbe7f153e",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "local_bias_qualification",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 38022,
+        "end_byte_exclusive": 39823
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/DERIVATION.md",
+      "bytes": 47228,
+      "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "markov_author",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 28196,
+        "end_byte_exclusive": 75424,
+        "bytes": 47228,
+        "sha256": "685db9bdbdefb04b855c28e0b45f03fae7401324b6f52589a25b2b25a045d9ea"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/markov/FINAL_FREEZE.json",
+      "bytes": 6228,
+      "sha256": "80dd4aee7427ca5e87b283ecc2685691d2c4597b8365d2bf45d43c10c792d615",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_FINAL_FREEZE.json",
+      "bytes": 10113,
+      "sha256": "e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/e2611ac1546fe0bb94a5ca0a23e92ea9a9982ec3f45c4b7b38d7fa119e43a8d7.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/BOUNDARY_REPORT.md",
+      "bytes": 10342,
+      "sha256": "ea09041f874b7685aee1d7c2d05ff7a003c31c4bb077ed54c1e1afc0a4237f7c",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "noncommuting_boundary_assessment",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 123161,
+        "end_byte_exclusive": 133503
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_FINAL_FREEZE.json",
+      "bytes": 17251,
+      "sha256": "de54ab338a81d76ace04601e2bd93edd122422a518ac86a5823c8d473f9804e6",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/COMPOSITION_REPORT.md",
+      "bytes": 20217,
+      "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "composition_assessment",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 182981,
+        "end_byte_exclusive": 203198,
+        "bytes": 20217,
+        "sha256": "406f011ca08f7c7d7bfc37ac232c11bfe7c32c1c0ae70abad0ba3a9591ded24b"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_FINAL_FREEZE.json",
+      "bytes": 16703,
+      "sha256": "2eac27db7d14018db5f700df9ac318b7a01e7b3a7a0e26620fd2ed985c555f3a",
+      "current_identity_verified": true,
+      "recovery": null,
+      "selection_status": "not_selected_prior_source_snapshot",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/prior_reviews/MARKOV_REPORT.md",
+      "bytes": 31525,
+      "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "external_body_interval",
+        "name": "markov_comparison",
+        "container": "docs/CORRELATED_MEMORY_DELIVERY_AND_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 103286,
+        "end_byte_exclusive": 134811,
+        "bytes": 31525,
+        "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/DERIVATION.md",
+      "bytes": 7830,
+      "sha256": "30d934ee3f8d6f85ff8a3643cc2af285c478d6adb892ef1c83061a74ca86efa2",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "body_interval",
+        "body_name": "rotated_gibbs_author",
+        "container": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 133646,
+        "end_byte_exclusive": 141476
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/sources/rotated/PROPOSAL_FREEZE.json",
+      "bytes": 309,
+      "sha256": "19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/19d4f859c3812c457c3a6a0712f9ed961cf2da215b4f7432e28850beb3f64fa7.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/rotated_gibbs_memory_decisive_check/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/rotated_gibbs_memory_decisive_check/verify_metadata.py",
+      "bytes": 2701,
+      "sha256": "838b0b86cc87ce27c3597fd960b7ff96c37165653428ba396a6a5f6d551de94f",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/838b0b86cc87ce27c3597fd960b7ff96c37165653428ba396a6a5f6d551de94f.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/FINITE_BANK_ACCEPTANCE.md",
+      "bytes": 2362,
+      "sha256": "5bf680ccc41224a0446210d20cbc110ef5ebd63c426ed02de72612148a22e908",
+      "current_identity_verified": false,
+      "recovery": null,
+      "selection_status": "excluded_finite_bank_member_not_opened",
+      "limit": "Historical identity only; not promised as portable recursive closure or a mathematical import."
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/LOCAL_BIAS_ACCEPTANCE.md",
+      "bytes": 2871,
+      "sha256": "2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/2aafdc687e627d9f91c0194bc115dcbb99469b0a09a2af6b1ffcb642de706f0b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/ROTATED_GIBBS_ACCEPTANCE.md",
+      "bytes": 2243,
+      "sha256": "bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/bfacf9236fda02087e208aca00f7de3d68ab4efdabcc102f9c122c52b4bfe488.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    },
+    {
+      "freeze": "campaign/conditional_sources_root_review/FINAL_FREEZE.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/conditional_sources_root_review/VERIFICATION.json",
+      "bytes": 8964,
+      "sha256": "6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b",
+      "current_identity_verified": true,
+      "recovery": {
+        "kind": "blob",
+        "path": ".claude/science/physics-loops/toe-local-bias-gibbs-sources-20261015/source_recovery/6729c8fe89f7c14b30ad818765db42314a401bab59fbb66de4c264ad0621b89b.blob"
+      },
+      "selection_status": "recoverable_selected_identity",
+      "limit": null
+    }
+  ],
+  "actual_root_acceptance_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/conditional_sources_root_acceptance_1726/EXECUTION.json",
+      "bytes": 1478,
+      "sha256": "8408ccd52714210e9ea48d96417807577e03b4a0e77e29ff3639c595edcdd9e5",
+      "actual_start_utc": "2026-10-15T17:24:26.720310+00:00",
+      "actual_end_utc": "2026-10-15T17:24:26.800840+00:00",
+      "actual_captured_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/conditional_sources_root_acceptance_1726/executed_source.py",
+      "schema_limit": "No separate LAUNCH.json; the existing executed_source.py matches the receipt source-at-launch identity and is preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/noncommuting_boundary_root_acceptance_1702/EXECUTION.json",
+      "bytes": 1474,
+      "sha256": "4a1f789ed9c1357ca7ffda67ab91191004cd93284f07c5f5131777fb9c4894d4",
+      "actual_start_utc": "2026-10-15T17:00:21.362563+00:00",
+      "actual_end_utc": "2026-10-15T17:00:21.401606+00:00",
+      "actual_captured_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/noncommuting_boundary_root_acceptance_1702/executed_source.py",
+      "schema_limit": "No separate LAUNCH.json; the existing executed_source.py matches the receipt source-at-launch identity and is preserved"
+    }
+  ],
+  "scope": "Historical freezes stay literal; only recovered listed identities are portable; one finite-bank member deliberately not opened"
+}

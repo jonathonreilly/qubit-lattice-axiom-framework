@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/transverse_field_gibbs_memory_2026_10_15.py
+runner_sha256: b253130cc73fb24a1961689f5a10e4ae2c1c65e704b2e9bef6c46efbec1ac6b5
+input_fingerprint_sha256: 7b3da07973ba7bc302e693e755e21a2f587154ce005c9706f9ead8de8e64acc4
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "exact bytes, recovery and binding only; no mathematical validation by execution"}
+per_element: literal fields, positive reserves and channel reconciliation preserved; no physical gate executed
+per_site: finite source graph and fixed consumer endpoints remain supplied premises
+per_mode: rare-record, reference and full-density quench limitations preserved as text
+per_block: three immutable bodies, one parent and actual source binding checked
+lattice_wide: no native Gibbs preparation, general noncommuting extension or audit certified
+
+----- stderr -----
+

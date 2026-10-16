@@ -1,0 +1,9 @@
+# Selected comparison recovery
+
+The report and metadata programs are new comparison artifacts. Source snapshots preserve all three candidate freeze members and its freeze, the complete independent derivation and its freeze/exposure/problem/instruction records, the local-bias source and qualification, actual root decisions, and the unchanged prior source/review bodies whose coverage is reused. The snapshot map is exact in SOURCE_MANIFEST.json.
+
+The candidate's three original frozen members and all25 original independent members are verified at their original paths and again during closure. Not every historical member is copied into this selected comparison payload. A preserved original freeze is not a claim that its recursive archive is duplicated. Both original directories remain unchanged, and the final comparison freeze names every actual nested comparison member by full path.
+
+The actual failed publisher open is preserved without converting it into a successful reading. No raw search response was supplied by the candidate, and none is fabricated here. Other-worker local-bias report identities remain attribution through the read root decision; those worker directories were not opened or copied.
+
+The only subprocesses here capture and verify metadata. Sources at launch, streams, UTC times, failures and exits are recorded. The final seal is an actual in-process metadata operation, not a scientific execution or a claimed subprocess whose receipt was never recorded. No original science program is replayed.

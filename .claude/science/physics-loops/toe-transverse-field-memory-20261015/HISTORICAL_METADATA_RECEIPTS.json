@@ -1,0 +1,42 @@
+{
+  "receipts": [
+    {
+      "source": "campaign/transverse_field_memory_independent/independent/metadata_run/EXECUTION.json",
+      "bytes": 2137,
+      "sha256": "5637cd854c837252157eb9ecf603690fa32e5d7cccc30e7f823f06dd7ae1f5c7",
+      "start_utc": "2026-10-15T17:54:53.131662+00:00",
+      "end_utc": "2026-10-15T17:54:53.193016+00:00",
+      "exit_code": 0,
+      "scope": "Actual historical metadata process; not replayed here"
+    },
+    {
+      "source": "campaign/transverse_field_memory_independent/comparison/metadata_runs/capture/EXECUTION.json",
+      "bytes": 2200,
+      "sha256": "68ad6535c26bd42f14c31f5a2aa3eeddfd636d513fcbc7e51d8e7f8be82e3356",
+      "start_utc": "2026-10-15T18:09:53.132134+00:00",
+      "end_utc": "2026-10-15T18:09:53.236196+00:00",
+      "exit_code": 0,
+      "scope": "Actual historical metadata process; not replayed here"
+    },
+    {
+      "source": "campaign/transverse_field_memory_independent/comparison/metadata_runs/verification/EXECUTION.json",
+      "bytes": 2225,
+      "sha256": "5256971fa7f3523ce9f6f99b9cd1379e2b8f288b2157a7786e45ab2612d3c3a1",
+      "start_utc": "2026-10-15T18:09:53.322570+00:00",
+      "end_utc": "2026-10-15T18:09:53.352558+00:00",
+      "exit_code": 0,
+      "scope": "Actual historical metadata process; not replayed here"
+    },
+    {
+      "source": "campaign/runs/transverse_field_root_acceptance_1830/EXECUTION.json",
+      "bytes": 1464,
+      "sha256": "cdd2a40a53d39ac8cfee8004c84e9cb7242e8f624b0eb0eb83eda247e925d71d",
+      "start_utc": "2026-10-15T18:26:57.073689+00:00",
+      "end_utc": "2026-10-15T18:26:57.205251+00:00",
+      "exit_code": 0,
+      "scope": "Actual historical metadata process; not replayed here"
+    }
+  ],
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0
+}

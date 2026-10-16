@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-10-15T15:56:24.616064+00:00",
+  "pid": 72119,
+  "kind": "analytic draft/plan/source snapshot before author clarifications; no science run planned or executed",
+  "scientific_execution": false,
+  "script_sha256": "2c6d064841a6eb236f8c5d591276b0ec581f5a133c938ec93ae582ebc885bd48",
+  "members": [
+    {
+      "path": "draft_snapshot/DERIVATION.md",
+      "bytes": 46121,
+      "sha256": "3f52db29364c2258d61575b575967692a5c1dc81742aed3611522523ec0dfa73"
+    },
+    {
+      "path": "draft_snapshot/SCOPE_PLAN.md",
+      "bytes": 2824,
+      "sha256": "9329dbf8ebd5abae8b12d5ec91d5b770a31634e38d02e70920085098c152e0c8"
+    },
+    {
+      "path": "draft_snapshot/SOURCE_MANIFEST.json",
+      "bytes": 6542,
+      "sha256": "bcfb7d8d4309c91fb7bd59c23cb9c64890b2d9179052b04495b2f3c0a16e4e83"
+    }
+  ]
+}

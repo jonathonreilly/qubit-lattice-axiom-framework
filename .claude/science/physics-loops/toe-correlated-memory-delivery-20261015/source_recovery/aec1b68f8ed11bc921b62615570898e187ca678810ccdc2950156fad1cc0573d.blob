@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-15T16:17:14.220557+00:00",
+  "status": "bounded conditional source support with explicit actual/ideal marginal interpretation; not an audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/REPORT.md",
+    "bytes": 31525,
+    "sha256": "c001e42e06fe230e0e0d990f3664fef981d1d7e869b293beb1051fb04d4da3ef"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/SOURCE_MANIFEST.json",
+    "bytes": 47409,
+    "sha256": "b5421adfff8ca0adf3bb434139af5c5af94cb7b5d03fd902f917478c4eef148f"
+  },
+  "closing_metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/CLOSING_METADATA.json",
+    "bytes": 45092,
+    "sha256": "5161b89e645c9f33e53ddd8bd4b721963a3739f40f04384c3bf7d2aaa83f111e"
+  },
+  "independent_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/independent/FINAL_FREEZE.json",
+    "bytes": 13921,
+    "sha256": "f25680414ec5bb7aa8f35e1947e2fc41709b6db9d46cdb57ef1867d604f380d4"
+  },
+  "actual_metadata_receipts": [
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1263,
+        "sha256": "f8651b9e8f42b87001ace8f7b516463457e1d5af24c21784050499a525a1e3c9"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/EXECUTION.json",
+        "bytes": 976,
+        "sha256": "7f414fbbc457e61e0a5a7b8e63893bbe7bd25a4f76f5fb4843d5157bc88412a8"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/stdout",
+        "bytes": 509,
+        "sha256": "031e840bd9d880e1e26d4ee0a2e9f9e5b5f7b10bc3569688353aa9cf29a0a445"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/capture/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/closure/LAUNCH.json",
+        "bytes": 1261,
+        "sha256": "708b5c1e3f21895914cbc1e127144823c41006dc6db0bfaa735c3abce9949cb1"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/closure/EXECUTION.json",
+        "bytes": 977,
+        "sha256": "127b433b46e2593b709c94c71097348bf52a438191260b54d03ee6a020330c74"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/closure/stdout",
+        "bytes": 1199,
+        "sha256": "19d1454d7e53999954aca3ba06d23a2f40f802b09e0e989f835ad89e07274d7e"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/correlated_markov_memory_independent/comparison/metadata_runs/closure/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "model_override": false,
+  "delegation": false,
+  "git_operations": 0,
+  "editable_prompt_files_changed": [],
+  "source_freshness": "all declared identities and both frozen input member sets rechecked at closing metadata time",
+  "scope_limit": "No native supplier, feasible common-cap, retained-audit or full autonomous theorem."
+}

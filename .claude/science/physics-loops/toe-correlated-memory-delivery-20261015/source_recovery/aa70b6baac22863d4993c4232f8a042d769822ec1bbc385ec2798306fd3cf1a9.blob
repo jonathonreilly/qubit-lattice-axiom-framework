@@ -1,0 +1,20 @@
+# Primary reading and convention record
+
+Reading occurred through the web tool on 2026-10-15 during this assessment. These are remote source identifiers and read-scope statements, not hashes or archived copies of entire papers. No external instruction was executed, no scientific program was run, and no claim of full-paper reading is made.
+
+## Mei Yin
+
+- Abstract: https://arxiv.org/abs/1205.1789
+- PDF: https://arxiv.org/pdf/1205.1789
+- Tool returned the current PDF with arXiv version marker v3, 6 December 2012; no claim about every earlier version.
+- Read the abstract and targeted section 3 passages defining the two-state transition matrix, its stationary law and covariance, and the stated Markov/Ising mapping context. The navigation output also displayed surrounding introductory material; this is not claimed as complete-paper coverage.
+- No infinite-volume theorem, limiting boundary condition, covariance identity, or mixing result from this paper is used as a premise of the assessed finite construction. The finite endpoint and partition identities are derived in REPORT.md directly.
+
+## Samuel N. Cohen and Eliana Fausti
+
+- Explicit version: https://arxiv.org/html/2309.02413v2
+- Read introduction context and targeted section 5.1: equations (37)–(38), Remark 13, Theorem 5.1 equation (39), nearby proof/maximization passages, and normalization/sharpness remarks. The nearby corollary also confirms the event-TV conversion. No full-paper reading is claimed.
+- The authors use unhalved variation: twice the supremum of event-probability differences, equal to the finite L1 distance. Their equation (39) is ||mu-nu||_TV <= 2 tanh(H(mu,nu)/4). The candidate's event TV is half that convention and obeys tanh(R/4).
+- The nearby HTML equation (40), if literally read as a supremum of sums of absolute coordinate differences over subsets, is not the event supremum: choosing the full subset gives L1. Neither the candidate nor this assessment imports that display. The check relies on equations (37)–(39) and the independent finite chord maximization. This is a narrow caution about the displayed formula, not a claim to have checked every rendition or every theorem in the paper.
+
+The report's finite probability and unitary proofs stand without any unresolved external theorem import. The prior-art attribution and factor conversion are kept separate from mathematical validation of the exact root source.

@@ -1,0 +1,46 @@
+{
+  "schema": "exact_byte_intervals_v1",
+  "note": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+  "bodies": [
+    {
+      "name": "fixed_duration_corrected_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20873,
+      "end_byte_exclusive": 31373,
+      "bytes": 10500,
+      "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+    },
+    {
+      "name": "fixed_duration_original_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 31488,
+      "end_byte_exclusive": 57233,
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "name": "fixed_duration_correction_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 57350,
+      "end_byte_exclusive": 63624,
+      "bytes": 6274,
+      "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+    },
+    {
+      "name": "fast_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 63721,
+      "end_byte_exclusive": 73307,
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794"
+    },
+    {
+      "name": "fast_full_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 73388,
+      "end_byte_exclusive": 103934,
+      "bytes": 30546,
+      "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+    }
+  ]
+}

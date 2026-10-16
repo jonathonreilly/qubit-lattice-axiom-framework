@@ -1,0 +1,20 @@
+{
+  "schema": "one_direct_mathematical_parent_v1",
+  "dependencies": [
+    {
+      "claim_id": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+      "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 72885,
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+      "role": "sole direct mathematical parent: single-port construction and original geometry",
+      "inherits": "literal inventory, fixed v0/e(v0), H0+K_X, fixed arcs, full-output and isolation premises"
+    }
+  ],
+  "excluded_direct_dependencies": [
+    "two-copy alternative",
+    "routed preparation theorem",
+    "compensation theorem"
+  ],
+  "supplied_controls_are_axioms": false,
+  "universal_no_go": false
+}

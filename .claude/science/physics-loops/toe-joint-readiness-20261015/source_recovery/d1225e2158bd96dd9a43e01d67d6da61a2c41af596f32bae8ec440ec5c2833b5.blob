@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-15T14:07:17.278238+00:00",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate/DERIVATION.md",
+    "bytes": 35766,
+    "sha256": "818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate/FINAL_FREEZE.json",
+    "bytes": 6263,
+    "sha256": "4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860"
+  },
+  "frozen_members_verified": 35,
+  "live_sources_verified": 11,
+  "actual_scientific_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate/EXECUTION_RECEIPT.json",
+    "bytes": 1015,
+    "sha256": "507a4fd506b8e4b321a6d5034478992daceab9872660d5443c904ff42aa3032d"
+  },
+  "actual_launch_utc": "2026-10-15T13:32:57.890175+00:00",
+  "actual_completion_utc": "2026-10-15T13:32:57.994716+00:00",
+  "actual_counts": {
+    "original_nonclock": 70,
+    "original_clock": 4,
+    "auxiliary": 121,
+    "S": 125,
+    "new_memory": 125,
+    "total_factors": 320,
+    "S_declared_edges": 140,
+    "sum_root_distances": 2153,
+    "swaps": 19931,
+    "all_touching_NN_edges": 307,
+    "declared_edges": 271,
+    "omitted_edges": 36,
+    "new_omitted_edges": 1
+  },
+  "actual_mutants": {
+    "forward_only_first_word_wrong_labels": 21,
+    "reverse_hopping_squared_vector_error": "1924/625"
+  },
+  "root_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/PRELIMINARY_ANALYTIC_READ.md",
+    "bytes": 4975,
+    "sha256": "6007e0d89b9c3243d0fac2f22d7011ae29e87d593d10b8cf47ca35155ea85dee"
+  },
+  "root_scientific_executions": 0,
+  "status": "Candidate provenance closed; source correction and complete separate review required before acceptance.",
+  "known_defects": [
+    "Raw retained-moment centering/marginal distinction.",
+    "B_C upper-bound wording.",
+    "Last saved pre-pivot row aliases the final state; unaffected final target comparison, no saved-row rewrite."
+  ],
+  "scope": "Read existing identities and counts only; no routing/geometry/synthesis/scientific replay."
+}

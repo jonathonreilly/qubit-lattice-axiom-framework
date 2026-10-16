@@ -1,0 +1,21 @@
+# Shared-mediator pilot work log
+
+Scope: one fixed Pauli pair, fixed original X/data sites, ordinary NN two-qubit fresh auxiliaries, unchanged H0+KX, full auxiliary/reference prepared-map comparison. Author discovery only; no independent audit status. No scientific computation has been run. At most one predeclared diagnostic is permitted.
+
+The supplied source snapshots are in SOURCE_MANIFEST.json. The two requested scientific hashes will be checked before use. Local instructions are read at these snapshots; Git/network freshness checks are excluded by the bounded-task instruction. Initial bulk display was truncated; complete source reads must be completed before judging the argument.
+
+Possible mechanism under examination: a positive shared hopping graph with local Pauli detunings, clock-conditioned source creation, and a global reduced inverse. Open obligations: kernel/positivity, exact response including unwanted one-data terms, graph placement/degree with fixed old sites, mixed excursions, noncommuting H0, full scalar accounting, and bare-input finite-time comparison.
+
+Analytic progress: a two-copy source/detuning cancellation gives a nonzero response for arbitrary signed f_j. A complete full-sector gap/global-residual proof is in DERIVATION.md. A literal matched graph has now been constructed for the v0--e(v0) reset pair using the existing clock square translated to z=4 and z=2, with equal-length external tails. The intended single-pair pilot therefore no longer relies on an unproved geometry hypothesis for that pair. The general formula is still conditional on a supplied geometry certificate for other pairs.
+
+Preserved failure: v1=(-1,0,0) has six occupied original neighbors, so this fresh-port construction fails there. No general impossibility follows. Full-SWAP/multi-axis composition remains open.
+
+Scientific executions so far: zero. Next allowed action is one predeclared exact finite fixture on the actual symbolic geometry specialized to L_b=8,Q=3,n_old=2,M=4, with exact one-particle inverse and response diagnostics. Full auxiliary-sector dynamics will remain an analytic proof, not be represented as numerically checked.
+
+2026-10-15 11:27:42 UTC: the single predeclared exact fixture completed, return code0, no stderr. It generated74 original sites and66 fresh sites (33 per graph,28 tail edges), checked all declared NN ports and matching graphs, and compared exact direct inverse responses for all one-clock and Pauli sign inputs. The preserved two-clock cross term is nonzero. Removing one mirror gives an unwanted Pc coefficient; omitting the clock counterterms leaves nonconstant clock shifts. This is a finite one-particle/geometry diagnostic, not a full auxiliary-dynamics computation.
+
+Author reread of the complete proposed argument found and corrected three prose issues after the selected execution: the old general-geometry obligation was narrowed because v1 explicitly defeats its certificate; the memory compression depth was renamed r_mem to avoid collision with hopping r=1/12; and the placement prose now says that b vertices are their own tail endpoints and separately describes the initial vertical leg. The algebra and selected fixture were not changed or rerun. Exact pre-execution DERIVATION/PLAN/INPUT and manifest bytes are preserved under runs/selected_01; the initial manifest was reconstructed from its unchanged first10 entries and verified against the pre-execution sealed hash before saving.
+
+The parent’s two mandatory scientific source hashes and autonomous FINAL_FREEZE hash39d2efbb were matched exactly. No Git, PR, audit, axiom, operational campaign checkpoint, other chat, or editable prompt was changed. All writes remain inside this candidate directory.
+
+Final source identity refresh at2026-10-15 11:38 UTC: all17 frozen source files matched their recorded hashes and their then-current source files. The complete selected result and every recorded predicate were inspected; the two-clock cross term and one-mirror Pc term were explicitly nonzero. Final derivation changes relative to the pre-execution source are preserved in POST_EXECUTION_DERIVATION.diff. Scope is a conditional positive single-pair theorem, with no program-wide completion or independent acceptance. Sealing now after approximately29 minutes of the authorized bounded45-minute block.

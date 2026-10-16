@@ -1,0 +1,83 @@
+{
+  "checked_utc": "2026-10-15T13:44:13.101012+00:00",
+  "type": "Metadata-only live-source hash comparison; no science replay",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "expected": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "observed": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "unchanged": true,
+      "bytes": 28846
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_decisive_check/REPORT.md",
+      "expected": "081d9eb9f65993fcaf11caa0c984e194a861ba5993a5bd92890d4e5e67edebf0",
+      "observed": "081d9eb9f65993fcaf11caa0c984e194a861ba5993a5bd92890d4e5e67edebf0",
+      "unchanged": true,
+      "bytes": 25855
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+      "expected": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a",
+      "observed": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a",
+      "unchanged": true,
+      "bytes": 30045
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "expected": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+      "observed": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8",
+      "unchanged": true,
+      "bytes": 48637
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "expected": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+      "observed": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+      "unchanged": true,
+      "bytes": 41771
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_autonomous_preparation_candidate/DERIVATION.md",
+      "expected": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7",
+      "observed": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7",
+      "unchanged": true,
+      "bytes": 31689
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/EXACT_RESULT.json",
+      "expected": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f",
+      "observed": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f",
+      "unchanged": true,
+      "bytes": 52672
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/sources/geometry_reservoir.md",
+      "expected": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "observed": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "unchanged": true,
+      "bytes": 27222
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/sources/geometry_memory.md",
+      "expected": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "observed": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "unchanged": true,
+      "bytes": 25740
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "expected": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "observed": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "unchanged": true,
+      "bytes": 1265
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "expected": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "observed": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "unchanged": true,
+      "bytes": 15435
+    }
+  ]
+}

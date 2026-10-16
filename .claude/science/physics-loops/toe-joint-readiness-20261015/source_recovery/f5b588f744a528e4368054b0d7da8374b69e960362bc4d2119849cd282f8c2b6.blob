@@ -1,0 +1,33 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib
+Q=Path(__file__).resolve().parent;N=Q.parent;V=N/'local_clock_joint_readiness_decisive_check';A=N/'local_clock_joint_readiness_correction'
+def read(p):return json.loads(p.read_text())
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,row):
+ m=pin(p);assert m['bytes']==row['bytes'] and m['sha256']==row['sha256'],str(p);return m
+assert pin(V/'FINAL_FREEZE.json')['sha256']=='8d5657dce2261cd8e951dc5e8446a85e9f7b45810e4856135a255b397aa57671'
+assert pin(V/'REPORT.md')['sha256']=='0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb'
+assert pin(A/'DERIVATION.md')['sha256']=='dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179'
+freeze=read(V/'FINAL_FREEZE.json');members={r['path'] for r in freeze['files']};assert len(members)==175
+assert {str(p.relative_to(V)) for p in V.rglob('*') if p.is_file()}==members|{'FINAL_FREEZE.json'}
+for row in freeze['files']:check(V/row['path'],row)
+fresh=read(V/'CORRECTED_FINAL_SOURCE_FRESHNESS.json');assert not fresh['failures'] and fresh['complete_diff_matches'] and fresh['delta_hunks']==3
+for row in fresh['records']:check(Path(row['path']),row)
+assert len(fresh['records'])==168
+binding=read(V/'REPORT_BINDING.json');lo,hi=binding['historical_body_interval_zero_based_half_open'];body=(V/'REPORT.md').read_bytes();historical=(V/'original_review_818699a3/REPORT.md').read_bytes();assert body[lo:hi]==historical
+assert hashlib.sha256(historical).hexdigest()=='74ec214987004b3dfc8fb945d798353b0bf2346f29c61fc74a341ffb57a12c99'
+receipts=[]
+for label in ['capture','closing','correction_capture','correction_closing']:
+ d=V/'metadata_runs'/label;l=read(d/'LAUNCH.json');e=read(d/'EXECUTION.json');assert e['returncode']==0 and datetime.fromisoformat(e['completed_utc'])>=datetime.fromisoformat(l['started_utc'])
+ for k in ['launch','stdout','stderr']:check(Path(e[k]['path']),e[k])
+ for k in ['code','wrapper']:check(d/Path(l[k]['path']).name,l[k])
+ out=json.loads((d/'STDOUT.log').read_text());assert not out['failures'] and (d/'STDERR.log').read_bytes()==b''
+ receipts.append({'label':label,'launch':pin(d/'LAUNCH.json'),'execution':pin(d/'EXECUTION.json'),'result':out})
+for row in read(Q/'CORRECTION_SOURCE_CLOSURE.json').get('files',[]):check(Path(row['path']),row)
+result={'utc':datetime.now(timezone.utc).isoformat(),'purpose':'Source closure only; no scientific computation or replay','candidate':pin(A/'DERIVATION.md'),'candidate_freeze':pin(A/'FINAL_FREEZE.json'),'review':pin(V/'REPORT.md'),'review_freeze':pin(V/'FINAL_FREEZE.json'),'frozen_review_members_verified':175,'live_closing_records_verified':168,'historical_report_interval_exact':True,'actual_metadata_receipts':receipts,'prior_original_closure':pin(Q/'CANDIDATE_SOURCE_CLOSURE.json'),'prior_correction_closure':pin(Q/'CORRECTION_SOURCE_CLOSURE.json'),'acceptance':pin(Q/'ACCEPTANCE.md'),'scientific_executions':0,'editable_prompt_files_changed':[]}
+(Q/'FINAL_SOURCE_CLOSURE.json').write_text(json.dumps(result,indent=2)+'\n')
+files=[pin(p) for p in sorted(Q.iterdir()) if p.is_file() and p.name!='FINAL_FREEZE.json']
+(Q/'FINAL_FREEZE.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'status':'Root conditional source acceptance; no audit verdict','files':files},indent=2)+'\n')
+print(json.dumps({'acceptance':pin(Q/'ACCEPTANCE.md'),'source_closure':pin(Q/'FINAL_SOURCE_CLOSURE.json'),'freeze':pin(Q/'FINAL_FREEZE.json'),'review_members':175,'live_records':168,'science':0}))

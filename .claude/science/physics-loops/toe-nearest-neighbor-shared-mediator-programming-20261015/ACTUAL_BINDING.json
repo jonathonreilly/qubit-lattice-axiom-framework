@@ -1,0 +1,79 @@
+{
+  "kind": "actual_canonical_source_binding",
+  "utc": "2026-10-15T13:35:48.616792+00:00",
+  "base_head": "3e647b40c1f554205aa63d97fe0b5c9bf97a9917",
+  "base_branch": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+  "planned_feature_branch": "physics-loop/toe-shared-mediator-programming-20261015",
+  "parent_pr": {
+    "baseRefName": "physics-loop/toe-local-clock-memory-resources-20261015",
+    "headRefName": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+    "headRefOid": "3e647b40c1f554205aa63d97fe0b5c9bf97a9917",
+    "isDraft": false,
+    "number": 9602,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9602"
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "canonical_note": {
+    "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 72885,
+    "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649"
+  },
+  "canonical_geometry_parents": [
+    {
+      "path": "docs/FINITE_RESERVOIR_BOUNDARY_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 41771,
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad",
+      "role": "literal original apparatus and neighboring reservoir coordinates only"
+    },
+    {
+      "path": "docs/FINITE_LOCAL_CLOCK_MEMORY_RESOURCES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 51476,
+      "sha256": "32e4ab4a49fd7d5529a4b69059e2fc9b5966ebc1e41f9e81f422326f5a2a90cd",
+      "role": "literal E/F memory-ray coordinate construction only"
+    }
+  ],
+  "raw_bodies": {
+    "two_copy": {
+      "start": 18974,
+      "end": 43879,
+      "bytes": 24905,
+      "sha256": "0f885e0c7ae6c739b971af218afdeddc693df4c720d791b8c0db7e0a95a02a29",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_shared_mediator_candidate/DERIVATION.md",
+      "start_line": 327,
+      "end_line_inclusive": 562
+    },
+    "single_port": {
+      "start": 44002,
+      "end": 72848,
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "start_line": 570,
+      "end_line_inclusive": 858
+    }
+  },
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_mediator_publication_draft/FINAL_FREEZE.json",
+    "bytes": 36865,
+    "sha256": "f519f338fa3fde92d40459baa3e579eb4ea14db57858bb00a301603ea1c8f0aa"
+  },
+  "root_source_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mediator_publication_root_review/SOURCE_CLOSURE.json",
+    "bytes": 4706,
+    "sha256": "e98cb31818829822c86d9d11bf5f9652e6bb0ce1ba18142330201f2485ed4677"
+  },
+  "fresh_fetch_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/mediator_fetch_1316/EXECUTION.json",
+    "bytes": 1167,
+    "sha256": "a18b5c5fd512479443f133c8adfc084dba1fd04a7dc938f8103f5736eb0d97e9"
+  },
+  "open_inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mediator/open_inventory_1317/stdout",
+    "bytes": 12854,
+    "sha256": "be5962534dd109721825ca17c284c41958328841c43ba71f0ae4ee8b849d0bce"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-15T13:48:06.473788+00:00",
+  "purpose": "Final deterministic hash/identity bookkeeping only, no adjacency/permutation/synthesis replay",
+  "scientific_code_unchanged": true,
+  "wrapper_unchanged": true,
+  "predeclared_plan_unchanged": true,
+  "source_manifest_unchanged": true,
+  "executed_outputs_unchanged": true,
+  "source_freshness": {
+    "path": "FINAL_SOURCE_FRESHNESS.json",
+    "bytes": 4507,
+    "sha256": "878fdd4972487f291518e4daa2cd503c644a1f0959c104c06384be38fbffe01e"
+  },
+  "derivation": {
+    "path": "DERIVATION.md",
+    "bytes": 35766,
+    "sha256": "818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7"
+  },
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 6208,
+    "sha256": "bd60a26d89dbdb2d22218ef8e84dc03d100b06bca7887ad9254d7e801c9c8d06"
+  },
+  "complete_argument_delta": {
+    "path": "POST_RUN_DERIVATION.diff",
+    "bytes": 16582,
+    "sha256": "9de0999dbaad27c3431c3b11afda624735c05a89ee8889c366690f06961d8e9d"
+  }
+}

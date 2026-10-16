@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-10-15T14:40:27.898797+00:00",
+  "kind": "metadata source identity closure, not scientific evidence",
+  "report": {
+    "bytes": 25745,
+    "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+  },
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+      "snapshot": "sources/root_resource_DERIVATION.md",
+      "bytes": 9213,
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "snapshot": "sources/root_resource_PROPOSAL_FREEZE.json",
+      "bytes": 785,
+      "sha256": "a11a3e726ad4c97465c345be1b735a3934dd022e7afe4f1a211698693d58f43e",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "snapshot": "sources/mass_DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "snapshot": "sources/mass_REPORT.md",
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "snapshot": "sources/mass_ROOT_ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "snapshot": "sources/joint_corrected_DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/CORRECTION.diff",
+      "snapshot": "sources/joint_CORRECTION.diff",
+      "bytes": 9586,
+      "sha256": "7292d920cefd2b66ef2816ebb5be9184a159293c615aeda4c9d84bddaa3d6403",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/SCOPE_EXPOSURE.md",
+      "snapshot": "sources/joint_SCOPE_EXPOSURE.md",
+      "bytes": 3005,
+      "sha256": "82a66d4c746142f0de775ef8cd10142fd055076071537cdcd18adfc6482bfb7b",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/FINAL_FREEZE.json",
+      "snapshot": "sources/joint_FINAL_FREEZE.json",
+      "bytes": 5006,
+      "sha256": "7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "snapshot": "sources/joint_ROOT_ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478",
+      "original_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/FINAL_FREEZE.json",
+      "snapshot": "sources/joint_ROOT_FINAL_FREEZE.json",
+      "bytes": 2597,
+      "sha256": "a30f5e4d99cf1305956d95ed194a4623b3cd714c466d3abe599ff0edf353cbc3",
+      "original_matches": true,
+      "snapshot_matches": true
+    }
+  ],
+  "instructions": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "unchanged": true
+    }
+  ],
+  "scientific_executions": 0,
+  "changes_outside_output_directory": false,
+  "dependency_status": "Corrected joint dcee9d6f was open at review launch. It received source-side root acceptance during this check, evidenced by joint_ROOT_ACCEPTANCE.md and joint_ROOT_FINAL_FREEZE.json. This is not audit/retained status. Frozen root resource header remains historically unchanged."
+}

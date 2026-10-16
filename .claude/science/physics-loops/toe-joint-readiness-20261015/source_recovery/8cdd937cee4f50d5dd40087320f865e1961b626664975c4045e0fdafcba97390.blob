@@ -1,0 +1,11 @@
+--- frozen/exact_fixture.py
++++ unexecuted-proposal/exact_fixture.py
+@@ -130,7 +130,7 @@
+     check('exponential algebra including signs '+str(j),calc==expectedU)
+     state=apply_pair(state,j,U)
+     bad=apply_pair(bad,j,[[a,C(b)],[C(-b),conj(a)]])
+-    records.append({'a':a,'b':b,'sin_theta':t,'N':N,'I_plus_N_principal_minors':minors,'state_before_pivot_phase':state})
++    records.append({'a':a,'b':b,'sin_theta':t,'N':N,'I_plus_N_principal_minors':minors,'state_before_pivot_phase':state.copy()})
+ phase=C(F(3,5),F(4,5));state[3]=mul(phase,state[3]);bad[3]=mul(phase,bad[3])
+ target=[C(),C(0,F(3,5)),C(F(-12,25)),C(F(48,125),F(64,125))]
+ check('selected target exactly normalized',sum(map(norm2,target))==1)

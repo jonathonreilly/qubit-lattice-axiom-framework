@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-15T14:54:34.595969+00:00",
+  "purpose": "Source/text closure only; not mathematical or empirical test",
+  "accepted_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/DERIVATION.md",
+    "bytes": 10500,
+    "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/REPORT.md",
+    "bytes": 25745,
+    "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+  },
+  "correction_check": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction_check/REPORT.md",
+    "bytes": 6274,
+    "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+  },
+  "exact_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/CORRECTION.diff",
+    "bytes": 7782,
+    "sha256": "465e95c3312a2e993888ed66b7a5b8f16abb391885d52687e4456df127d3955c"
+  },
+  "sealed_members": {
+    "polynomial_joint_readiness_correction": 4,
+    "polynomial_joint_readiness_decisive_check": 18,
+    "polynomial_joint_readiness_correction_check": 21
+  },
+  "source_records_verified": {
+    "correction": 8,
+    "original_review": 11,
+    "correction_review": 13
+  },
+  "exact_replacement_count": 5,
+  "unchanged_displayed_equations": 4,
+  "scientific_executions": 0,
+  "reviewer_receipt_limit": "In-process metadata and tool-reported completion, no independently captured launch/stdout/exit provenance asserted",
+  "acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_review/ACCEPTANCE.md",
+    "bytes": 4375,
+    "sha256": "013e3e5115fcd223b9efda51b9f062b6371ee1578c5155604ccd0777702fc6f3"
+  }
+}

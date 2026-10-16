@@ -1,0 +1,19 @@
+{
+  "sources": 12,
+  "recovery_copies": 8,
+  "candidate": {
+    "role": "candidate",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+    "bytes": 10253,
+    "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+    "recovery_copy": "sources/DERIVATION.md"
+  },
+  "proposal_freeze": {
+    "role": "candidate proposal freeze",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/PROPOSAL_FREEZE.json",
+    "bytes": 390,
+    "sha256": "5871330e1923f70f7872f02f14e0d7e70dd9c3ab27b461e55b0dcd74c0165492",
+    "recovery_copy": "sources/PROPOSAL_FREEZE.json"
+  },
+  "scientific_execution": false
+}

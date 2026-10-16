@@ -1,0 +1,16 @@
+{
+  "added": [
+    {
+      "baseRefName": "codex/observations-backward-selection-20261015",
+      "headRefName": "codex/observations-backward-growth-20261015",
+      "headRefOid": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+      "isDraft": false,
+      "number": 9605,
+      "title": "[physics-loop] growth/lensing inverse: bounded_theorem / conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9605"
+    }
+  ],
+  "removed": [],
+  "changed": [],
+  "new_count": 35
+}

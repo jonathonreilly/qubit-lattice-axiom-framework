@@ -1,0 +1,253 @@
+{
+  "utc": "2026-10-15T14:45:34.403229+00:00",
+  "branch": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+  "base_head": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 45751,
+    "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/mass_scaled_mediator_transport_2026_10_15.py",
+    "bytes": 12133,
+    "sha256": "fc416d9b2bdd8e7d58eb07684a7a84a99f9f6dfa11fb37e2deca7625439c645d"
+  },
+  "cache": {
+    "utc": "2026-10-15T14:42:43.669051+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/mass_scaled_mediator_transport_2026_10_15.py",
+      "bytes": 12133,
+      "sha256": "fc416d9b2bdd8e7d58eb07684a7a84a99f9f6dfa11fb37e2deca7625439c645d"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/CANONICAL_RESULT.json",
+      "bytes": 1030,
+      "sha256": "feb4afed19715545c64d739e9aeb3c3237dc721775bc05b11966defc6e163051"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/mass_scaled_mediator_transport_2026_10_15.txt",
+      "bytes": 990,
+      "sha256": "3c6addf0d4ca497ec6292ba9c14b30495ed928ad3bb67d9a5bbf88ab11e70f8b"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "publication_or_retained_status_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run": 0,
+      "scope": "identities and body/dependency structure only"
+    },
+    "scope_lines": [
+      "per_element: exact bytes and manifest identities only; no physical-element validation",
+      "per_site: source preserves fixed-pair and isolation premises; no new lattice computation",
+      "per_mode: N_X=1 theorem scope retained; no sector or spectral execution",
+      "per_block: two immutable bodies and one mathematical dependency checked",
+      "lattice_wide: no native supplier, global program, scientific execution or retained audit certified"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-15T14:42:57.138618+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/mass_scaled_mediator_transport_2026_10_15.py",
+      "bytes": 12133,
+      "sha256": "fc416d9b2bdd8e7d58eb07684a7a84a99f9f6dfa11fb37e2deca7625439c645d"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/MUTATION_RESULTS.json",
+      "bytes": 5598,
+      "sha256": "d422da94597fa5bec80f964956e6a2c69bbe85cd1a850ba9a1f41c00b3705280"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 44,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Provenance and compatibility only, not audit or science."
+  },
+  "graph": {
+    "utc": "2026-10-15T14:45:28.075540+00:00",
+    "old_nodes_preserved": 7132,
+    "old_edges_preserved": 16091,
+    "new_node": {
+      "claim_id": "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+      "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "runner_path": "scripts/mass_scaled_mediator_transport_2026_10_15.py",
+      "title": "Mass-scaled transport with polynomial sufficient mediator resources"
+    },
+    "new_edges": [
+      {
+        "from": "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15",
+        "to": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15"
+      }
+    ],
+    "roots_unchanged": true,
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10452136,
+      "sha256": "ee5152a938d4d15dc28440dbe77611617f317d5a8db8514a9bab9dfc32bb6519"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1018735,
+      "sha256": "9895cdba0103b2a3be40ffca0e745bf76d80ffd8c7dc8c14a179e22c91e12831"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "4b0d722c2fc74ea8ea6b5eaf32d579f40c3f57aa175d95632a2809067104a7c6"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without duplicating full graph files.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-15T14:42:53.807129+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 986,
+          "sha256": "86bfdaddec2612a8454a44288507286f3501b1ad4e9e35d742b3d12aab9c107c"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 1013,
+          "sha256": "b1baba7b495369980d8e5503a9c174dae173aff998bdfa9128e943caf3492ee2"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 1008,
+          "sha256": "ab572c66236d6565c18621640f66f938680bc1b07c65a8ba855fdd82f535ab0c"
+        }
+      },
+      {
+        "case": "binding_flag",
+        "expected_failure": "Root canonical binding required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_binding_flag/EXECUTION.json",
+          "bytes": 998,
+          "sha256": "35ddfaa6f268a2e582ccb2b2023725d0b41a1a0cb18ecda6bc9c3ec82ebe3d8e"
+        }
+      },
+      {
+        "case": "candidate_interval",
+        "expected_failure": "Body interval identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_candidate_interval/EXECUTION.json",
+          "bytes": 1016,
+          "sha256": "1b0ebaa0ca1e4178a4098baa0fc727d989fff6752a57307845dff6b6627388bd"
+        }
+      },
+      {
+        "case": "review_interval",
+        "expected_failure": "Body interval identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_review_interval/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "613ec9a6430222530bf9dd6f4a1487c000a41a6e0e7421ce10c64e9bf6e152e2"
+        }
+      },
+      {
+        "case": "dependency_endpoint",
+        "expected_failure": "Parent role",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_dependency_endpoint/EXECUTION.json",
+          "bytes": 1019,
+          "sha256": "20cc348cabd816bdf0e76359d4746a01fe514b3d905c8e807ca6b440dbff85b0"
+        }
+      },
+      {
+        "case": "parent_interval",
+        "expected_failure": "Body interval identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_parent_interval/EXECUTION.json",
+          "bytes": 1007,
+          "sha256": "6517e6cf80625d1584701b48ff5c8c85b9f9ec4e8ae52715c87308c45f279ba7"
+        }
+      },
+      {
+        "case": "invented_execution",
+        "expected_failure": "Historical outcome must remain null:",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_invented_execution/EXECUTION.json",
+          "bytes": 1015,
+          "sha256": "c16363de6e953ca3b50a6bc9d61c3b8c406db6fd38971c272655353548e908ea"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "actual note binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 996,
+          "sha256": "ac59b79cdf161fc233f9dee2cbf167637c9076d8a1f007dcf563411c09ebaefa"
+        }
+      },
+      {
+        "case": "actual_body",
+        "expected_failure": "actual body binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_actual_body/EXECUTION.json",
+          "bytes": 994,
+          "sha256": "8f4cca4008f1691301efc7fe7ea13bcc788e42d5fc064a746ccd02cc267d134d"
+        }
+      },
+      {
+        "case": "actual_parent",
+        "expected_failure": "actual parent binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_actual_parent/EXECUTION.json",
+          "bytes": 1002,
+          "sha256": "78568cae5a970b8b2c5ed26a8d236b41ea8dfc785b5213acdf747d6a927bda7d"
+        }
+      },
+      {
+        "case": "supplied_axiom",
+        "expected_failure": "supplied controls are not axioms",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/mutation_supplied_axiom/EXECUTION.json",
+          "bytes": 1004,
+          "sha256": "c75e1e3fb5ee3475bba10e5e819a14a6270122f3de0e941bf8368e0aa993bf23"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 12,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main/cumulative-stack landing checks and independent retained audit.",
+    "Supplied physical resources and microscopic energy, detector, reuse and complete-program identification."
+  ]
+}

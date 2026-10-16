@@ -1,0 +1,24 @@
+"""Contemporaneous wrapper for metadata-only execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, subprocess, sys
+OUT = Path(__file__).resolve().parent
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+    b=p.read_bytes(); return {'path': str(p), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+mode = sys.argv[1]
+run = OUT / 'metadata_runs' / mode
+run.mkdir(parents=True, exist_ok=False)
+for name in ['metadata.py','run_metadata.py']:
+    (run / name).write_bytes((OUT / name).read_bytes())
+argv = [sys.executable, str(OUT / 'metadata.py'), mode]
+launch = {'started_utc': now(), 'argv': argv, 'cwd': str(OUT), 'interpreter': sys.version,
+          'purpose': 'Source identity and evidence bookkeeping only; no science',
+          'code': meta(OUT / 'metadata.py'), 'wrapper': meta(OUT / 'run_metadata.py')}
+(run / 'LAUNCH.json').write_text(json.dumps(launch, indent=2) + '\n')
+r = subprocess.run(argv, cwd=OUT, capture_output=True)
+(run / 'STDOUT.log').write_bytes(r.stdout); (run / 'STDERR.log').write_bytes(r.stderr)
+finish = {'completed_utc': now(), 'returncode': r.returncode, 'launch': meta(run/'LAUNCH.json'),
+          'stdout': meta(run/'STDOUT.log'), 'stderr': meta(run/'STDERR.log')}
+(run / 'EXECUTION.json').write_text(json.dumps(finish, indent=2) + '\n')
+sys.stdout.buffer.write(r.stdout); sys.stderr.buffer.write(r.stderr); sys.exit(r.returncode)

@@ -1,0 +1,68 @@
+# Proposed fixed-duration polynomial price for joint readiness
+
+Root-origin analytic proposal, not separately checked or accepted. This composes the mass-scaled transport source785e56e3/root acceptance070ecbfd with the joint preparation source818699a3, whose complete-output construction is still under separate review and whose retained-moment wording and saved-row label are being corrected. No new scientific execution is declared. The proposal uses only its reset/synthesis/control-norm argument, not its disputed raw retained-moment bound. Every dependency remains explicit.
+
+## 1. Scope and resource parameters
+
+Keep the original single-port geometry, one new joint-preparation memory ray and fixed accessible old pair. Let n be the largest transport component size, M<=n, m<=3n+24 the total auxiliaries, s=m+M<=4n+24 the register S=A union X, and supply exactly s independent pure memory qubits. The original nonclock H0 is unchanged. The original H=H0+K_X has supplied full norm bound h0; K_X is exactly the positive clock in the joint source. Fix a positive preparation duration tau0, simulation horizon T_fin and accuracy allocations0<eta_sim,eta_prep<=1. Parameters and coefficients are finite computable supplied data, with certified bounds.
+
+Use the mass-scaled Delta recipe, taking a chosen finite value bounded by a fixed multiple of its displayed maximum, rather than an arbitrary larger allowed Delta. Choose the actual retained baseline reserve R0=h0+Dsum+sqrt(Delta)v. The same fixed-core bounded h0,F_max,T_fin family gives Delta=O(n^24 eta_sim^-2), v=O(n^2), counterterm norm sum O(n^5), and penalty coefficient norm sum ell_L=O(n). More general parameter growth must be priced by the explicit mass-source formulas.
+
+The preparation still assumes addressable full SWAP, excitation, complex pair logarithms, positive local compensators, independent pure memory, calibration/isolation and external scheduling. These are not derived native interactions or common fixed-cap resources. The target retains all former A/X records in E and has the nonclock state aged for exactly tau0 under H0.
+
+## 2. An explicit polynomial compensation allowance
+
+Write F=K_X+Delta L+sqrt(Delta)V+C0+R0I as the exact finite local dictionary. Choose each c_lambda from the joint source's literal full one-/two-site norm bounds, including zero compensator scalar entries, and let kappa=sum c_lambda. Then B=kappa>=||F||, B_C=2kappa>=||sum(c_lambda I-h_lambda)|| and Gamma=||F J_ready||<=kappa are safe full-space bounds.
+
+The clock dictionary sum is exactly M/a_c. The all-one clock vector is an eigenvector of every b_j with eigenvalue1/a_c, and positivity plus the triangle bound gives ||K_X||=M/a_c. Since K_X has vacuum eigenvalue0 and H0 acts on a separate tensor factor, any eigenvalue lambda of H0 gives eigenvalues lambda and lambda+||K_X|| of H. Hence ||K_X||<=2h0. Also ||H0||<=h0 by the vacuum restriction. This checks that the clock compensation price is controlled by the same supplied full-space h0 rather than a one-excitation norm.
+
+Separate real/imaginary source channels satisfy |Re z|+|Im z|<=sqrt(2)|z|. A sufficient termwise allowance is therefore
+
+    kappa <= M/a_c + Delta ell_L + sqrt(2Delta)v
+                    + (a-h0) + R0,                       (1)
+
+where a-h0=S0+sum_j S_j+Dsum is the mass-source counterterm norm sum. ell_L must include all literal penalty blocks, including Pe detunings and root/arc diagonal compensation. All components have a fixed-size Pauli decomposition. Thus in the fixed family kappa=O(n^25 eta_sim^-2). If larger reserves, redundant decompositions or additional static blocks are supplied, they must be added to (1); the recipe does not price arbitrary extra hardware for free.
+
+## 3. A complete schedule at exactly tau0
+
+The joint routed word has P=s^2+2sum ell_j<=3s^2-2s SWAP gates. Include one excitation, M-1 rotations and one final phase, so G=P+M+1<=3s^2, since M<=s and s>=1. Every positive gate logarithm has norm L_g<=3pi, with the final phase strictly below3pi. The exact scalar phases are those of the joint construction; the following prices do not drop them.
+
+Set equal turn-on/turn-off durations
+
+    r=eta_prep*tau0/[8(eta_prep+kappa*tau0)],
+    T_pl=tau0-2r,  tau_g=T_pl/G.                          (2)
+
+Then0<r<=tau0/8, T_pl>=3tau0/4 and the complete endpoint time is exactly tau0. The chosen smooth bumps and compensation ramps have disjoint ramp/gate intervals; every gate sits on the fully compensated plateau. Original H0 aging is e^(-i tau0 H0), with no effective-time reset or H0 cancellation.
+
+The nominal full-output preparation trace error is bounded by
+
+    B r+Gamma r <=2kappa r <=eta_prep/4.                  (3)
+
+This deliberately uses the safe full-space Gamma<=kappa; no disputed moment estimate or arbitrary-sector one-particle bound enters. Together with complete input memory error<=eta_prep/4 and arbitrary full-space implementation error satisfying integral_0^tau0 ||E_impl||dt<=eta_prep/4, total trace error is at most eta_prep. Such errors must vanish at the actual endpoint to claim return to the same nominal baseline, or a separate actual static baseline and continued residual allowance must be used.
+
+## 4. Norm action, peak, slew and work variation
+
+Let m0,m1 be the finite waveform constants from the joint source and A_gate=sum L_g<=3pi G. Compensation has bounds, not equalities, when B_C is only an upper bound. Since 1/tau_g<=4G/(3tau0) and 1/r=8/tau0+8kappa/eta_prep, sufficient explicit allowances are
+
+    added norm action <=2kappa tau0+3pi G,
+    added peak norm <=2kappa+4pi m0 G/tau0,
+    peak time derivative <=16m0 kappa/tau0
+                           +16m0 kappa^2/eta_prep
+                           +(16pi/3)m1 G^2/tau0^2,
+    total control variation <=4kappa+8pi m0 G^2/tau0.      (4)
+
+The derivative allowance uses a sum although ramps and pulses are serial; it is conservative. For fixed tau0 these become action/peak/variation O(n^25 eta_sim^-2) and slew O(n^50 eta_sim^-4 eta_prep^-1). The complete nominal control-work magnitude is bounded by the variation, with the same installed baseline at both endpoints. This is not a microscopic controller-energy model or a minimum work cost. Fault variation needs its own derivative allowance; a small integrated operator error does not control work variation.
+
+Physical per-site/channel loads are bounded by the full termwise sums used here, with each rotation's separate channel sum at most(1+sqrt(5))theta. That fixed factor leaves the polynomial powers unchanged. A common cap independent of n, eta_sim or eta_prep is not obtained; the price explicitly grows. Positivity of the nominal drive follows from installed K>=0 and the supplied positive control blocks. Arbitrary signed faults require a separate actual positivity margin/reserve; an error bound does not install it.
+
+## 5. Precision and composition
+
+There are O(n) compensation blocks and O(n) omitted NN edges touching the O(n) added hardware, while there are G=O(n^2) pulse blocks. A physical compensation error delta_C per block contributes at most2tau0 N_C delta_C to trace error; a logarithm error delta_Lambda per pulse contributes at most2G delta_Lambda. A physical residual edge norm nu contributes at most2tau0 N_iso nu. Split a fixed fraction of eta_prep among these and other error categories. The resulting absolute physical tolerances are inverse polynomial. Unscaled design errors must be divided by their actual Delta or sqrt(Delta) factors. Every original-H fault remains a separately supplied full-space allowance; no O(n) count for arbitrary H0 is assumed.
+
+Envelope/timing errors are charged by their actual integrated full norm and declared support. A translated pulse/ramp that extends past the nominal endpoint does not preserve exact return at tau0. It needs explicit off-guards within the schedule or a different endpoint with repriced H0 aging; (2) alone is no guard guarantee. Phase-sensitive isometry estimates retain every compensator and gate scalar. No raw retained-moment conclusion follows merely from centered moment bounds.
+
+If a separately checked full-output mass-scaled simulator applies to the ideal ready output under the same installed generator, then subsequent common evolution preserves the preparation trace error and adds its own eta_sim. The comparison starts from D already aged by e^(-i tau0 H0), with all former S records in E as retained reference/output. The total error is at most eta_prep+eta_sim plus separately budgeted subsequent faults. This does not implement an arbitrary program on the initial unaged D input, solve all scheduled-pair geometries, or turn supplied control access into a native realization.
+
+## 6. Open check obligations
+
+Separately verify the complete-clock norm argument, termwise kappa including source quadratures/scalars, exact total time, all constants in(2)-(4), physical precision decomposition and composition domain. Recheck the fixed-core polynomial assumptions rather than importing a one-excitation coefficient price. Joint preparation remains an open source dependency until its separate review and correction close. No scientific diagnostic or new literature claim accompanies this proposal.

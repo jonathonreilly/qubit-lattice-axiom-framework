@@ -1,0 +1,2 @@
+# Scope of preserved negative evidence
+This package proposes two positive conditional constructions. It preserves exact finite witnesses for particular failed source choices, missing counterterms, clock-sector extensions and occupied ports. It adopts no universal mechanism exclusion, no retained-authority absence claim and no no-go route quota. The single-port construction supplies a separate positive option rather than depending on a two-copy failure.

@@ -1,0 +1,36 @@
+{
+  "status": "actual_root_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+  "actual_git_base": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+  "bound_note_sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+  "bound_utc": "2026-10-15T15:17:23.381642+00:00",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/OPEN_DELTA.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/open_inventory_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_LAUNCH.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/geometry_stderr",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-joint-readiness-20261015/binding_sources/fetch_stderr"
+  ],
+  "canonical_sources": [
+    {
+      "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649"
+    },
+    {
+      "path": "docs/COMPENSATED_FINITE_RESERVOIR_CLOCK_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-15T13:16:17.519723+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+    "bytes": 30045,
+    "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/FINAL_FREEZE.json",
+    "bytes": 5852,
+    "sha256": "c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98"
+  },
+  "source_files": 33,
+  "live_origins": 11,
+  "launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/LAUNCH_RECEIPT.json",
+    "bytes": 3737,
+    "sha256": "4f050e92cf34cc9e074dfd9efea124ccae06418d2aba65d5638cff9e08dea9da"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/EXECUTION_RECEIPT.json",
+    "bytes": 791,
+    "sha256": "b184a74962ce6ceb6b8bd57ec366f5cdb363ef6087c027b832d357d5c30f4ee2"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/EXACT_RESULT.json",
+    "bytes": 27111,
+    "sha256": "7bd8fa877573666c52a1d118dd26e06c182c3c8e0f070d145c618354553b278f"
+  },
+  "certificate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/ROUTING_CERTIFICATE.json",
+    "bytes": 820568,
+    "sha256": "23474052cf61420d316c13253349b65455cefc0386a2199e3d62a11fc25192af"
+  },
+  "recorded_checks": 269,
+  "recorded_swaps": 9087,
+  "recorded_omitted_edges": 37,
+  "recorded_mutant_wrong_labels": 19,
+  "recorded_interval": [
+    "2026-10-15T12:49:15.664383+00:00",
+    "2026-10-15T12:49:15.683849+00:00"
+  ],
+  "preexecution_and_final_diff_verified": true,
+  "root_scientific_replays": 0,
+  "scope": "Exact source/receipt closure and inventory of recorded evidence. No fresh routing, adjacency or dynamics computation. Analytic root reading in PRELIMINARY_ANALYTIC_READ; separate review pending."
+}

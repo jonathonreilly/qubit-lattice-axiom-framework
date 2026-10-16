@@ -1,0 +1,10 @@
+{
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 8162,
+    "sha256": "75c34a4b9c7ba3127bdada73ed88ccd0baf87ffd7a194878541d7e455013496e"
+  },
+  "source_count": 20,
+  "recovery_copy_count": 10,
+  "scientific_programs_run": 0
+}

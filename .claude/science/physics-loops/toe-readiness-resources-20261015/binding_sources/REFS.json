@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-15T15:46:00.651416+00:00",
+  "refs": {
+    "HEAD": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+    "origin/main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+  },
+  "main_unchanged": true,
+  "instructions_unchanged": true,
+  "open_pr_inventory_identical_bytes": true,
+  "open_pr_count": 37,
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1545/stdout",
+    "bytes": 14431,
+    "sha256": "72d9cdfa23724657c1d63182b41386d7c23def12d4a9eddf8fb6b56a20f78934"
+  },
+  "actual_fetch_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1545/EXECUTION.json",
+  "actual_inventory_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/open_inventory_1545/EXECUTION.json"
+}

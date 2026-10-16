@@ -1,0 +1,9 @@
+# Exposure, failures and verification limits
+
+The root authored candidate785e56e3; this same-family worker authored the separate source-exposed reportcc5670ba and now packages both. Root acceptance070ecbfd was read before packaging. This is not a new independent scientific check. The distinct cut-flow derivation and source exposure timing remain in the unchanged report. No model/effort override or delegation was used.
+
+No scientific program, inherited fixture, propagator, Lean check or full-Hilbert simulation ran for the candidate, its separate check or this packaging task. Existing metadata capture/final receipts are archived exactly with their actual sources and streams; none is renamed a scientific result, cache, audit or canonical execution. Preseal recording limitations remain in the original receipt. Root source closure is an actual record, not an independently launched science run.
+
+An initial broad filename inventory used only as a locator was truncated; the selected inputs were then targeted individually. A read-only locator attempted READ_COVERAGE.json; the actual READ_COVERAGE.md was subsequently read completely. These are locator failures, not unresolved source verification. No mathematical failure witness was removed. Canonical primary has not been executed; its syntax/structure inspection is narrower than behavioral testing. Its fail-closed gate must be exercised later on actual canonical inputs.
+
+No Git/remote query, checkout mutation, stage, commit, push, PR, audit, checkpoint/lock, axiom or editable prompt change occurred in this packaging task. Parent PR/head are attributed to root, not independently verified here. Full source identities are refreshed at final metadata verification. The parent note is referenced at an exact hash; its large publication packet is not recursively copied.

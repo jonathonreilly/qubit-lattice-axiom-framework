@@ -1,0 +1,87 @@
+--- preexecution/DERIVATION.md
++++ DERIVATION.md
+@@ -122,6 +122,8 @@
+     integral G_g=Lambda_g.                                (12)
+ 
+ For routing, Lambda_swap=(pi/2)(I-Swap) is positive, has norm pi and scalar pi/4, and exp(-i Lambda_swap)=Swap exactly on all four states. Pulses do not overlap. T_pl=sum_g tau_g, T=r_on+T_pl+r_off and A_u=integral u=T_pl+(r_on+r_off)/2 are actual physical durations/actions.
++
++These are ordinary one-/two-qubit controls: Lambda_swap=(pi/4)(I-X_vX_w-Y_vY_w-Z_vZ_w), and A_vw=(X_vY_w-Y_vX_w)/2. Consequently full SWAP access includes a ZZ coefficient that need not be present in the installed hopping model. That extra control is a supplied premise, as are the onsite terms in (7),(8),(10). The scalar identity parts in these expansions are physical ledger entries.
+ 
+ ## 6. Complete prepared map and full-space bounds
+ 
+@@ -178,7 +180,7 @@
+ 
+ Dropping the anticommutator would be wrong when K_X and S_X do not commute. A clock packet being an eigenstate of one term does not justify deleting the other. All diagonal clock means and the actual I/a_c contribution remain in mu. For the three orthogonal Pe axes at the same e site, ||A0||=|S0+R0+mu|+sqrt(sum_i d_i^2); the general norm formula (17) is sufficient without using that simplification. Source and clock leakage contribute Delta chi and Var(T_X), respectively. Neither covariance with K_X nor the Pc-source square may be omitted.
+ 
+-The full Pauli scalar of F, on the entire clock/auxiliary Hilbert space, is
++The full Pauli scalar of F, on the entire D/X/A Hilbert space, is
+ 
+     s_F=M/(2a_c)+(Delta/2)sum_i Tr B_i
+                     +S0+(1/2)sum_j S_j+R0.                (19)
+@@ -205,7 +207,7 @@
+ 
+ All bounds are full one-/two-qubit bounds. The two source quadratures share a physical port but are separately priced. The aggregate dictionary has 2m+8M+14 blocks, m=|A|, including its two scalar blocks; the M clock compensators are the new original-clock cancellation resource. Constants with zero compensator still appear in kappa and the original scalar. Optional installed sampled scalar terms require their own literal compensation/moments and are not hidden here.
+ 
+-If the source's whole-space inequality L>=0 holds, a supplied h_H>=||H0+K_X|| and v=sum_i(q_i+sum_j|z_ij|) make R0>=h_H+sqrt(Delta)v+sum_i d_i a sufficient K>=0 certificate. This is conditional on the literal source positivity proof, not its independent acceptance. The independent single-port report supports that proof within its stated scope; it is neither an audit verdict nor evidence of manufactured controls. The preparation identities (17) need only the literal vacuum property and distinct flip sites.
++If the source's whole-space inequality L>=0 holds, a supplied h_H>=||H0+K_X|| and v=sum_i(q_i+sum_j|z_ij|) make R0>=h_H+sqrt(Delta)v+sum_i d_i a sufficient K>=0 certificate. This is conditional on the literal source positivity proof, not its independent acceptance. The separate source-exposed single-port report supports that proof within its stated scope; it is neither an audit verdict nor evidence of manufactured controls. The preparation identities (17) need only the literal vacuum property and distinct flip sites.
+ 
+ ## 8. Fixed geometry and complete isolation set
+ 
+@@ -240,6 +242,8 @@
+ 
+ Nominal locality requires either exact absence of the unlisted interactions or supplied control/residual bounds for every edge in (23). Let zeta_iso(t)=sum_(e in E_iso)||E_e(t)|| in the full Hilbert space after all Delta and control scaling; then it contributes 2 integral zeta_iso to (15). Unexpected onsite Hamiltonians of E, omitted control crosstalk and altered D-D interactions require additional full-space terms in E_impl. Changing the occupied inventory requires recomputing (23), not reusing an old count. If a fault positivity reserve zeta(t)I is physically installed, its scalar/action/switching must be added and it must vanish at T to claim return to K. A norm bound does not itself install that reserve.
+ 
++An actual static baseline needs a separate explicit interpretation. If unlisted fixed couplings E_base are present both before and after the drive, the actual installed generator is K_base=K+E_base, not the nominal K in (2). Controls that vanish at both endpoints return exactly to K_base; they do not switch off E_base. Equation (15) still compares its prepared output with (13), charging 2T||E_base|| in addition to the other errors. Its baseline positivity needs a certified margin K>=||E_base||I (obtained only by an actually installed retained reserve), or another full-space proof. Every fixed reserve remains present before, during and after preparation. Alternatively, known static local blocks can be included in F and compensated from the outset, extending its support to E if necessary; then B,kappa,Gamma and all scalar/moment formulas must be recomputed for that enlarged F. The abstract compression identity (27) still applies on arbitrary retained E inputs, but the simple scalar nu in (17) need not survive. This distinguishes returning to the actual static baseline from falsely claiming that isolation errors disappeared.
++
+ ## 9. Time, action, strength, slew, calibration and work
+ 
+ Let L_g=||Lambda_g||. Their exact sum is
+@@ -256,6 +260,10 @@
+ A common envelope perturbation delta u costs 2 B_C integral|delta u| in trace distance. Independent compensation coefficient errors cost 2 A_u sum||delta C_lambda||. A pulse coefficient error delta Lambda_g with normalized correct envelope costs 2||delta Lambda_g||; envelope error costs 2 L_g integral|delta w_g|. Products of simultaneous coefficient and envelope errors must be included. A time translation delta of the entire compactly supported compensation envelope gives integral|delta u|<=2|delta|, hence trace allowance 4B_C|delta|. A shifted pulse costs at most 4m0 L_g |delta|/tau_g. All errors are full-space operators. Missing scalar offsets are errors too, even though their channel action alone may be physically invisible; the phase-sensitive isometry and scalar budget retain them.
+ 
+ Nominal controls and all derivatives vanish at endpoints. A faulty implementation claiming the same installed post-generator must also turn off every residual compensation/gate/fault-reserve term at T. A persistent field gives a different generator and requires continuing norm-in-time allowance. For an extra elapsed time delta>=0 after nominal return, comparison at T costs at most 2||K||delta; if both target and actual are advanced under the same K, their endpoint trace error simply persists. Early termination during a pulse/ramp uses the full instantaneous generator norm integrated over the missing interval, not an idle timing estimate. Subsequent use of psi by a program starts after this actual preparation and includes any further wait. The theorem does not silently reset time in another protocol.
++
++Here "residual" means a field additional to the declared static baseline. Under the explicit K_base interpretation above, replace K by K_base in the idle timing and return statements, and retain its static-error contribution in the preparation comparison. A fixed installed baseline reserve is not a switched fault-reserve control and must not be turned off. Work formula (26) holds with the same K_base at both endpoints because its derivative is zero.
++
++A timing error whose support extends beyond a nominal endpoint does not satisfy exact return at that endpoint. Such errors must fit within explicitly declared off-guards, or the actual endpoint must move and T, H0 aging and the residual integrals must be repriced on the extended interval. The time-translation estimates alone do not provide a guard or restore a switched field.
+ 
+ Define work for this closed finite driven model as the change of mean of the same installed K between the endpoints. Unitary differentiation gives exactly
+ 
+@@ -265,6 +273,8 @@
+ 
+ This is an upper variation allowance, not a minimum thermodynamic cost or a microscopic controller-energy model. The supplied pure reservoir is consumed: E now holds all former S information. Later restoring E to independent vacuum is not supplied or priced as recycling. Actual H0 aging is T, including all routing, gates and ramps.
+ 
++Equation (26) is the nominal control-work bound. For differentiable control faults that vanish at the actual endpoints, add their total variation integral ||d_t E_ctrl|| to its right side; an L1 calibration error alone does not bound that derivative allowance. Irrespective of this variation estimate, endpoint work for the same finite baseline obeys |W_actual|<=2||K_base-aI||. Static E_base has zero time derivative. These separate bounds avoid attributing a nominal slew/work certificate to uncontrolled rapidly varying faults.
++
+ ## 10. Endpoint moments and retained correlations
+ 
+ For arbitrary input (1), initial moments are those of the literal K on rho_DS; no low-energy promise is made. Write rho_D(T)=exp(-i T H0)rho_D exp(i T H0). General prepared compression gives
+@@ -282,14 +292,24 @@
+ 
+ For any estimate center a and beta>=||K-aI||, trace error epsilon in (15) implies mean error<=beta epsilon, centered second-moment error<=beta^2 epsilon and variance error<=3beta^2 epsilon. The linear E/R-valued moments satisfy the corresponding beta^j epsilon trace-norm bounds for j=1,2. This follows from trace-norm duality applied to Hermitian test operators on the retained E/R factor. Center a is only a bound parameter; no physical scalar is subtracted. Large simulator coefficients demand tighter preparation precision for fixed moment tolerances.
+ 
+-During the drive, the exact variance of K+uC+G includes all K/control and intercontrol anticommutators; no covariance is declared zero merely from plateau cancellation. The finite full norm ||H0||+(1-u)B+u kappa+||G|| bounds instantaneous means and second moments, including arbitrary excited intermediate states.
+-
+-## 11. Scope, failed shortcuts and planned discriminating evidence
++For an unabsorbed static E_base with ||E_base||<=zeta, these displayed ideal moments still refer to nominal K. Actual moments of K_base instead obey the same compression identities with F replaced by F+E_base, or can be compared conservatively: mean error<=(beta+zeta)epsilon+zeta; centered second-moment error<=(beta+zeta)^2 epsilon+2beta zeta+zeta^2; variance error<=3(beta+zeta)^2 epsilon+2beta zeta+zeta^2. The last additive bound follows from Var(E_base)<=zeta^2 and the symmetrized covariance bound 2 sqrt[Var(K)Var(E_base)]<=2beta zeta. This prevents nominal isolation from silently entering an actual energy claim.
++
++During the nominal drive, the exact variance of K+uC+G includes all K/control and intercontrol anticommutators; no covariance is declared zero merely from plateau cancellation. The finite full norm ||H0||+(1-u)B+u kappa+||G|| bounds instantaneous means and second moments, including arbitrary excited intermediate states. With faults or an unabsorbed static baseline, add the corresponding full operator norms to this instantaneous bound.
++
++## 11. Scope, failed shortcuts and selected evidence
+ 
+ The construction supplies an approximate complete preparation map to auxiliary vacuum and a prescribed computable one-excitation clock packet, with actual H0 aging, no discarded output and a finite positive local control schedule. It resolves the aged-clock input obstruction conditionally by actively resetting and synthesizing X, not by claiming the preceding auxiliary-only theorem already did so. The original clock's arbitrary information remains in E.
+ 
+ This does not establish native pure-memory supply, gate/control manufacture, common strength caps, saturated-pair availability, the full preparation program, or an accepted simulator theorem. Full simultaneous-axis interaction simulation remains a dependency of later use, not of the literal reset/synthesis algebra. One can prepare a packet without having proved that the subsequent installed simulator implements the intended program.
+ 
++For later composition, the ideal starting state is the complete output (13), with D already aged by H0 for T and the displaced S records retained as part of its reference/output. If a separate full-output simulator theorem applies to that ready state under the same installed post-generator, subsequent common evolution propagates the preparation error by trace-norm contraction and its own error can be added. This does not require the actual faulty output to lie exactly in N_X=1. A theorem for nominal K cannot silently be applied to a different K_base; its static discrepancy needs the corresponding subsequent full-space error allowance. No conclusion about that separate theorem's acceptance is supplied here.
++
+ Failed shortcuts are explicit: direct fresh matching at a saturated auxiliary vertex; forward-only routing; one-excitation SWAP substituted on arbitrary qubits; assuming clean old X; resetting X while leaving K_X uncompensated without a residual bound; deleting the finite release term or its K_X/S_X covariance; dividing by zero amplitudes; dropping positive-control scalar offsets; treating fresh coordinates as an induced interaction graph; recycling information-bearing E. None of these failures is a broad no-go.
+ 
+-One selected exact diagnostic is proposed in SELECTED_PLAN.md. It will use the saved base coordinate input without rerunning its inverse or dynamics. It will check one finite routed layout and one complex four-clock synthesis identity, including zero amplitude, negative real coefficient, imaginary coefficient and final phase. The uniform geometry family, full-output Duhamel argument, source positivity and control suppliers remain analytic obligations for independent review. No numerical large-Hilbert dynamics is claimed.
++Bounded theorem: under the finite local Hamiltonian, connected routing graph, independent pure-memory and supplied-control hypotheses above, every computable normalized one-excitation packet has the finite synthesis (7)-(10). For every input (1), finite positive ramps and pulses implement the complete target (13) with (15), while returning to the declared actual installed baseline. Given a positive nominal trace tolerance e, for example r_on=e/[2(B+1)] and r_off=e/[2(Gamma+1)] make the two nominal ramp allowances sum to less than e; any positive finite pulse durations are allowed and have the prices (24)-(26). All original nonclock factors undergo actual H0 aging for the resulting T. This is an approximation theorem for readiness at a physical endpoint, with consumed supplied memory, not an exact dissipative reset or an efficient native preparation theorem.
++
++The one predeclared diagnostic in SELECTED_PLAN.md ran once at 13:32:57 UTC, with contemporaneous code/source preservation and launch receipt. It used the saved base coordinates without rerunning their inverse or dynamics. The selected layout has 70 original nonclock factors, 4 original clock factors, 121 auxiliaries and 125 new memory factors: 320 total. Its root-distance sum is 2153, giving P=19931 full SWAPs. All intermediate restoration checks and final tensor-factor permutation checks passed. The complete selected geometry has 307 NN pairs touching S/E, 271 declared and 36 omitted. Exactly one omitted edge touches the new ray, as (22) predicts; all 35 preexisting omitted edges remain in the inventory.
++
++The rational four-clock target [0,3i/5,-12/25,(48+64i)/125] is exactly normalized and the three positive pair logarithms plus pivot phase reproduce it exactly, after retaining the symbolic global phase exp(-i Theta). Exact four-by-four principal minors check positivity for these selected logarithms, and exact spectral-projector identities check full SWAP and excitation phases. The 31 named predicates are selected evidence, not independent theorem acceptance. The forward-only first routing-word mutant leaves 21 incorrect final labels; reversing the hopping sign gives squared target-vector error 1924/625. These are actual failed routes preserved in EXACT_RESULT.json.
++
++The uniform geometry family, full-output Duhamel argument, general packet synthesis, source positivity and control suppliers remain analytic claims for independent review. No waveform execution, arbitrary-H dynamics, large Hilbert matrix or new inverse was computed. The complete selected adjacency inventory and gate/path certificate are saved. Post-run analytic clarifications and actual evidence are recorded by a full diff against the contemporaneous preexecution derivation; no scientific code or input was changed or rerun.

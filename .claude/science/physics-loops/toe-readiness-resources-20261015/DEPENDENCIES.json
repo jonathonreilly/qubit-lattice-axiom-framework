@@ -1,0 +1,44 @@
+{
+  "schema": "mathematical_dependencies_and_provenance_v1",
+  "dependencies": [
+    {
+      "claim_id": "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15",
+      "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 45751,
+      "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "accepted_body_interval": {
+        "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 10141,
+        "end_byte_exclusive": 20394,
+        "bytes": 10253,
+        "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+      },
+      "role": "Chosen sufficient Delta, full-space resources and conditional same-K simulator"
+    },
+    {
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "Exact joint geometry, complete arbitrary-input word, positive logarithms, compensation and moment definitions"
+    }
+  ],
+  "excluded_direct_dependencies": [
+    "persistent_drift_candidate",
+    "fixed/fast mutual comparison",
+    "original geometry transitive parents",
+    "Git stack ancestry",
+    "old publication packages"
+  ]
+}

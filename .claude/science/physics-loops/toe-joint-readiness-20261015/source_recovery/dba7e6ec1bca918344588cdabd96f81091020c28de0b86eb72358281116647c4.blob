@@ -1,0 +1,19 @@
+"""Compose current binding around exact preserved historical review bytes."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+OUT=Path(__file__).resolve().parent
+prefix=(OUT/'CURRENT_BINDING.md').read_bytes()
+old=(OUT/'original_review_818699a3/REPORT.md').read_bytes()
+suffix=(OUT/'CORRECTION_REVIEW.md').read_bytes()
+assert len(old)==31493 and hashlib.sha256(old).hexdigest()=='74ec214987004b3dfc8fb945d798353b0bf2346f29c61fc74a341ffb57a12c99'
+body=prefix+old+suffix
+(OUT/'REPORT.md').write_bytes(body)
+binding={'bound_utc':datetime.now(timezone.utc).isoformat(),
+ 'current_source_sha256':'dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179',
+ 'historical_body_interval_zero_based_half_open':[len(prefix),len(prefix)+len(old)],
+ 'historical_body_sha256':hashlib.sha256(old).hexdigest(),
+ 'report_bytes':len(body),'report_sha256':hashlib.sha256(body).hexdigest(),
+ 'purpose':'Text binding/source metadata only; no science'}
+(OUT/'REPORT_BINDING.json').write_text(json.dumps(binding,indent=2)+'\n')
+print(json.dumps(binding))

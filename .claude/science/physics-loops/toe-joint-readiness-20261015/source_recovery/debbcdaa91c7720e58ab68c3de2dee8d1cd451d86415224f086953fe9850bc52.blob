@@ -1,0 +1,22 @@
+# Reading and reuse coverage
+
+This is the coverage of this reviewer, not a repetition of the author's coverage claims. Exact byte identities for all referenced candidate members and external continuity documents are in SOURCE_MANIFEST.json.
+
+- Routed final DERIVATION.md: all 262 lines, initially in ranges 1–240 and 241–262, then the active argument refreshed in ranges 1–135 and 136–262. No unresolved truncation.
+- Routed POST_RUN_DERIVATION.diff: complete. The final proof plus this complete delta covers the mathematical changes from the preserved pre-execution text; the pre-execution body was not independently reread as a second proof.
+- Single-port DERIVATION.md: complete, ranges 1–200 then 190–end, including geometry, full-space lift, simultaneous-axis construction, scalar and vacuum identities. Only the literal premises needed for routed preparation are adopted. Its simulated-target conclusion is not a prerequisite for the general preparation theorem.
+- Finite-reservoir raw 26220ec9: complete prior reading reused at identical bytes; lines 1–155 reread here for the exact original coordinates and memory attachment premises.
+- Existing-memory source f38d4590: section 5, lines 96–131, for the exact old rays and occupied bounds. Other compression/purity claims are outside this review.
+- Autonomous derivation b7267664: byte-pinned within the candidate but not newly read or substantively imported. The exact original-clock square used here is stated in the completely read single-port geometry; H is supplied finite and unchanged. No autonomous-program theorem is being reviewed or accepted.
+- Compensated canonical d28bb8d6: exact complete textual delta from previously prepared/read proposal 013fb90a inspected. Only binding/publication prose changed; complete e3f8 proof and separate channel-refinement body are unchanged. Prior full reading and report74cb are reused; no fresh independent review is claimed.
+- Current checkout AGENTS f9a7b412, SCIENCE_WORKFLOW 05f3ec8e and installed physics-claim-reviewer9d841edd: hashes refreshed and identical to the previously completely read instructions. No repeated Git fetch or instruction-side process was invoked.
+- Author fixture exact_route_fixture.py (9050 bytes) and run_once.py (1800 bytes): complete source reading; no execution by this reviewer.
+- Author plan, input, ROOT_EXPOSURE, source manifest, final freeze, READ_COVERAGE, REPORT, launch/output receipts, STDOUT/STDERR: read for the actual scope/provenance. All frozen members verified by byte count and hash.
+- Author EXACT_RESULT: reported fixed-input output, count/distance summaries and mutation scope inspected; individual 269 predicate records were not all independently checked. The full file is retained as an exact recovery copy.
+- Author ROUTING_CERTIFICATE: exact bytes pinned; all 37 omitted-adjacency rows extracted verbatim and read. Full path/word replay was not performed and the 9087 raw swap pairs were not individually read. The count and general transposition identity were derived separately in REPORT.md.
+- Prior single-port coordinate/result and adjacency sources: pinned recovery copies. Geometry was checked against the full analytic source and the routed certificate's complete omitted-row extraction; the earlier inverse fixture and all earlier 177 adjacency rows were not rerun or newly treated as independent evidence.
+- Separate single-port report081d9eb9: read completely at about13:16:59 UTC, after this reviewer's relevant geometry/count/full-output analyses. Its conclusion is exposure/support, not an independent audit or substitute for those calculations.
+
+No external paper/literature claim is added. No scientific diagnostic was declared or executed because no unresolved analytic risk required one. The only new executions are metadata capture/finalization, with their actual scripts, source identities and receipts retained locally.
+
+Failures: missing guessed filenames SOURCE_PINS.json, EXPOSURE.md and sources/geometry_memory_DERIVATION.md were corrected by reading the actual listed names. No scientific failure was concealed or rerun. Author pre/post-execution differences and limits remain in the source packet and report.

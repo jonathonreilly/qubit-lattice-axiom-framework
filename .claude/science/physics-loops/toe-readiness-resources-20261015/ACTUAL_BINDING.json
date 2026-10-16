@@ -1,0 +1,157 @@
+{
+  "kind": "actual_root_canonical_binding",
+  "utc": "2026-10-15T16:12:21.852098+00:00",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "note_sha256": "9158d794b13732e1c121d50ca3aa0960e2befcf7ebc4132564b3fb9fe0668122",
+  "parent_sha256": {
+    "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+    "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+  },
+  "source_acceptances": {
+    "fixed_duration": "013e3e5115fcd223b9efda51b9f062b6371ee1578c5155604ccd0777702fc6f3",
+    "fast": "494b678af6ca0c046fd93e087225b8413b16de928396be8038d1ec0b41bc19e3"
+  },
+  "git_base": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+  "base_branch": "physics-loop/toe-joint-readiness-20261015",
+  "planned_feature_branch": "physics-loop/toe-readiness-resources-20261015",
+  "observed_parent_prs": {
+    "stack": {
+      "baseRefName": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+      "headRefName": "physics-loop/toe-joint-readiness-20261015",
+      "headRefOid": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+      "isDraft": false,
+      "number": 9607,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9607"
+    },
+    "mass": {
+      "baseRefName": "physics-loop/toe-shared-mediator-programming-20261015",
+      "headRefName": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+      "headRefOid": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+      "isDraft": false,
+      "number": 9606,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9606"
+    }
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "historical_refresh_head": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+  "raw_bodies": [
+    {
+      "name": "fixed_duration_corrected_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20873,
+      "end_byte_exclusive": 31373,
+      "bytes": 10500,
+      "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+    },
+    {
+      "name": "fixed_duration_original_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 31488,
+      "end_byte_exclusive": 57233,
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "name": "fixed_duration_correction_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 57350,
+      "end_byte_exclusive": 63624,
+      "bytes": 6274,
+      "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+    },
+    {
+      "name": "fast_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 63721,
+      "end_byte_exclusive": 73307,
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794"
+    },
+    {
+      "name": "fast_full_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 73388,
+      "end_byte_exclusive": 103934,
+      "bytes": 30546,
+      "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "claim_id": "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15",
+      "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 45751,
+      "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "accepted_body_interval": {
+        "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 10141,
+        "end_byte_exclusive": 20394,
+        "bytes": 10253,
+        "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+      },
+      "role": "Chosen sufficient Delta, full-space resources and conditional same-K simulator"
+    },
+    {
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "Exact joint geometry, complete arbitrary-input word, positive logarithms, compensation and moment definitions"
+    }
+  ],
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/historical_recorder.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/live_recorder.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_executed_source.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_LAUNCH.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_stderr"
+  ],
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/FINAL_FREEZE.json",
+    "bytes": 29819,
+    "sha256": "2ef4152f629f9985ee5872fcad1fa45811561b8e82b6bb0076a7366600995ce9"
+  },
+  "root_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_root_publication_review/ROOT_REVIEW.json",
+    "bytes": 8443,
+    "sha256": "b9dcc711130524ae3c254805cefc9b823411a1ac030e48a3440bbed5e8a125ea"
+  },
+  "root_review_ack": {
+    "utc": "2026-10-15T16:12:21.852237+00:00",
+    "reviewed_source_sha256": "2ef4152f629f9985ee5872fcad1fa45811561b8e82b6bb0076a7366600995ce9"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-15T14:29:45.865157+00:00",
+  "purpose": "Identity pins for mathematical qualification; no scientific execution",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/DERIVATION.md",
+      "bytes": 30045,
+      "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+      "bytes": 25101,
+      "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_auxiliary_root_review/ACCEPTANCE.md",
+      "bytes": 3768,
+      "sha256": "3627b89ba731a8300880c5916c077dc5ea75d53b666adfc8225d3ea068ea3c27"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/routed_auxiliary_root_review/FINAL_FREEZE.json",
+      "bytes": 1247,
+      "sha256": "1849d09b387835a0c1bad65230db7e5e0d24c399966a740bc877b61bc6df0ede"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/REPORT.md",
+      "bytes": 41470,
+      "sha256": "0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478"
+    }
+  ]
+}

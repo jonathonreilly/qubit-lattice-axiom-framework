@@ -1,0 +1,12 @@
+{
+  "candidate_members_verified": 32,
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/FINAL_FREEZE.json",
+    "bytes": 5852,
+    "sha256": "c3ca576878f3955a9486e03424658def7345944872beb4ebc62ed84ab10bbf98"
+  },
+  "copied_members": 20,
+  "omitted_rows_extracted": 37,
+  "comparison_diff_bytes": 2676,
+  "science_execution": false
+}

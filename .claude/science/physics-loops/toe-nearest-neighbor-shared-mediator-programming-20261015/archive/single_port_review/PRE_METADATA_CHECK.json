@@ -1,0 +1,15 @@
+{
+  "declared_utc": "2026-10-15T12:35:31.626441+00:00",
+  "scope": "Metadata-only hashes, text diffs, saved-output labels and source freshness; no scientific or adjacency recomputation.",
+  "source": "verify_metadata.py",
+  "source_sha256": "3050ce1b8fa4da64e77b46b3c542c94c99ad1c8a434ada4cc9d50943c755663a",
+  "source_bytes": 6150,
+  "inputs": [
+    "SOURCE_MANIFEST.json",
+    "sources/final_author",
+    "sources/initial_derivation.md",
+    "FINAL_ARGUMENT_DELTA.diff",
+    "pinned live source files and read-only Git refs"
+  ],
+  "criterion": "All content identities and text deltas match; only declared adjacency metadata differs; record current refs/status. Saved PASS fields are not promoted to mathematical acceptance."
+}

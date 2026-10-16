@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-15T13:27:25.882369+00:00",
+  "scope": "Exact source integrity and recovery-member freshness only; no scientific verification or replay.",
+  "source_count": 39,
+  "copied_member_count": 20,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/REPORT.md",
+    "bytes": 25101,
+    "sha256": "fa97db9c1922c56e757de800b1f84095ea6abe229ce412c7c70280a3c520ae59"
+  },
+  "coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/READ_COVERAGE.md",
+    "bytes": 4214,
+    "sha256": "debbcdaa91c7720e58ab68c3de2dee8d1cd451d86415224f086953fe9850bc52"
+  }
+}

@@ -1,0 +1,269 @@
+# Finite biased memory for the supplied nearest-neighbour clock reset
+
+Status: provisional conditional construction, awaiting separate review. This is an explicit application of known reversible polarization compression, not a new general purification theorem. It replaces the finite-reservoir parent's fresh pure-memory assumption by a larger, initially independent biased mixed register, additional vacancies and calibrated scheduled controls. It does not derive those resources from the lattice axioms, construct a thermal bath, or identify a native cooling law.
+
+## 1. Exact imports and the endpoint to be supplied
+
+The sole mathematical parent is the complete finite-reservoir source26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4, copied as sources/finite_reservoir.md. Its conditional root acceptance, beginning51a16227, is copied exactly. The prior complete source-exposed assessment188275ad is reused at that exact identity; relevant geometry, full-space comparison and energy clauses are refreshed here. Neither the separate provisional reservoir-purity candidate nor its formulas were opened or imported.
+
+Let D be the complete original finite old system, C the parent's n=L+9 clock/mediator qubits, L>=8, and R an arbitrary passive reference. Initially sigma_DCR is arbitrary, including every C-number sector and old-clock-reference correlations. Retain the entire installed operator
+
+    H0 = K + H_app,    ||K-aI|| <= h,
+    H_app |vac_C> = 0,    0 <= H_app <= B I,
+    ||H_app|| = B,    ||H_app J_e|| = G_e,
+    J_e* H0 J_e = K+alpha0 I,
+    J_e* H0^2 J_e = (K+alpha0 I)^2+Q_e I,
+    G_e = sqrt(alpha0^2+Q_e),    Q_e=2 Lambda |z0|^2.       (1)
+
+All literal parameters, geometry and complete operator formulas are in parent equations1–7. K is arbitrary Hermitian and may fail to commute with H_app. Its scalar and any existing positivity reserve are retained. The center a is only an estimate center. The new register has engineered zero free Hamiltonian and no unlisted couplings. Any failure of this isolation must enter the full-space perturbation budget below.
+
+The parent gives n mutually disjoint ordinary NN pairs u,e(u), u in C. With fresh vacuum on E={e(u)}, its positive parallel SWAP pulse of duration t_s followed immediately by a positive entry pulse of duration t_p has complete output trace error
+
+    2B t_s + 2G_e t_p                                      (2)
+
+relative to C in its bare entry state and the entire initial C register transferred to E, while D ages under K for t_s+t_p. E is retained, including its correlations with D/R. This is a prepared-domain statement, not a channel comparison on arbitrary dirty E. We will supply the missing approximate vacuum while retaining the compression trash as well.
+
+## 2. Supplied biased input, including a passive purifier
+
+Choose an integer r>=1 and Q=3^r. At each e(u) attach Q-1 further qubits along the explicit ray in section5. Let A=E F denote all nQ memory qubits; F contains n(Q-1) trash qubits. No additional clean ancilla is used by compression. Supply
+
+    tau_q=(1-q)|0><0|+q|1><1|,    0<q<1/2,
+    Theta_AS with Tr_S Theta_AS = tau_q^(tensor nQ),
+    rho_initial = sigma_DCR tensor Theta_AS.                (3)
+
+S is any additional passive reference, possibly a purification of the mixed memory. Thus product structure is required only for the A marginal and between DCR and AS; S need not factor over individual memory qubits. A certified rational q_bar with q<=q_bar<1/2 suffices for effective choices. Bias, independence, the chosen computational axes and engineering the degenerate isolated memory remain supplied conditions. Equal one-site marginals without independence do not suffice. An initial joint-state discrepancy eta0 from (3) is charged in section9.
+
+All norms below are unhalved trace norms. Retaining S matters: the main readiness estimate is of square-root order, even though the unpurified diagonal register has a stronger linear estimate.
+
+## 3. Ancilla-free reversible compression and its finite error
+
+On three bits a,b,c perform, chronologically,
+
+    CX(a,b), CX(a,c), CCX(b,c;a).                           (4)
+
+The first two operations replace b,c by b xor a,c xor a. The final a is
+
+    a xor [(b xor a)(c xor a)] = maj(a,b,c).                (5)
+
+For a=0 this is bc, and for a=1 it is b OR c. The other outputs retain reversible garbage. Every operation is unitary, so the entire transformation is a permutation, not a many-to-one deletion or a postselected operation. Equation(5) proves the majority property on all eight basis states and hence fixes the linear operator once its gate implementation is specified.
+
+For each length-Q ray, recursively compress each of its three contiguous length-Q/3 subblocks, retaining every qubit. Then apply (4) to the first site of each subblock, with the first site of the whole block as output. Recursion stops at one site. The first physical site e(u) contains the recursively cooled bit. Write
+
+    q_0=q,    q_(j+1)=3q_j^2-2q_j^3.                      (6)
+
+At a parent node its three input subblocks have independent marginals, because each came from a disjoint initial product subblock and only internal unitaries have acted. A child output can be correlated with its own trash; this does not destroy independence between the three child marginals. Thus the output error is exactly(6). Different rays have independent A marginals. For the full compression unitary U_c,
+
+    rho_AS^c=(U_c tensor I_S)Theta_AS(U_c* tensor I_S),
+    p0=Tr[(|vac_E><vac_E| tensor I_FS)rho_AS^c]
+      =(1-q_r)^n,    p_bad=1-p0 <= n q_r.                  (7)
+
+Define omega_FS by normalized projection onto that vacuum event. This is a comparison state, not an actual measurement:
+
+    P rho_AS^c P / p0 = |vac_E><vac_E| tensor omega_FS.
+
+Purify rho_AS^c if necessary, apply P to the purification, and normalize. The overlap of the two pure vectors is sqrt(p0). Their trace distance is 2sqrt(1-p0); partial trace contracts. Hence
+
+    ||rho_AS^c-|vac_E><vac_E| tensor omega_FS||_1
+          <= delta_r := 2sqrt(1-(1-q_r)^n)
+          <= 2sqrt(n q_r).                               (8)
+
+This bound is uniform over every extension S in(3). If S is absent, the entire A output is diagonal and has orthogonal good/bad E blocks. Its exact distance to the normalized good block is 2p_bad, at most2nq_r. That stronger claim does not hold for a general purifier: for a pure Theta_AS, the projected pure comparison has distance exactly2sqrt(p_bad). We use(8) throughout the full-output theorem.
+
+To choose a finite r for any rational delta>0, iterate(6) starting from rational q_bar until q_r<=delta^2/(4n). All arithmetic can be rational; no numerical eigenproblem or undecidable equality test is needed. Termination follows directly. With b_j=1-2q_j,
+
+    b_(j+1)=b_j(3-b_j^2)/2.
+
+While b_j<=1/2 the factor is at least11/8. Thereafter q_j<=1/4, and 3q_(j+s)<=(3/4)^(2^s). Thus a finite effective certificate exists. These inequalities provide a sufficient bound, not an optimal compression rate. For fixed nonzero initial bias, Q=O([log(n/delta^2)]^(log_2 3)) as delta tends to zero, with bias-dependent constants. For small initial bias the preceding finite amplification phase must also be paid. The exact recurrence and integer stopping rule are the primary resource specification.
+
+## 4. Phase-exact two-qubit word and returned routes
+
+Let V=P_+ + iP_- with P_±=(I±X)/2; V^2=X. The chronological five-gate word
+
+    CV(c,a), CX(b,c), CV†(c,a), CX(b,c), CV(b,a)            (9)
+
+is CCX(b,c;a). For control basis bits b,c its target exponent is c-(c xor b)+b=2bc, and b,c are restored. There are no relative or common phases omitted. Combining(4) and(9) uses seven two-qubit logical gates: four CX, two CV and one CV†.
+
+Every pair gate on ray indices i<j is compiled by moving the state at i to j-1 using the consecutive SWAPs (i,i+1),...,(j-2,j-1), applying the intended ordered two-qubit gate to j-1,j, then applying the routing SWAPs in reverse order. The resulting conjugation is precisely the gate on the original i,j factors and identity on all intermediate factors. Gate control/target orientation is transported with the labels, not inferred from left/right order. This operator identity holds for arbitrary states and correlations of the intermediate factors, including trash. No clean transit assumption occurs.
+
+At recursion level j, put d=3^(j-1). The representatives have indices s,s+d,s+2d. The seven logical distances are d,2d,2d,d,2d,d,d, whose sum is10d. Compiling a distance-l gate costs2l-1 NN gates. Thus one level-j node costs20d-7 physical two-qubit gates. There are Q/3^j such nodes per ray, and the total is
+
+    P_one = sum_(j=1)^r 3^(r-j)(20*3^(j-1)-7)
+          = (20r/3)Q - (7/2)(Q-1),
+    P = n P_one.                                         (10)
+
+For r=1 this is13 gates per ray. Recursion and the routing rule constitute a finite explicit emitter for every r; no exponentially large unitary synthesis or clean work register is hidden. The construction may serialize all n rays, so only one added compression edge is active at a time. More parallel control is not assumed or credited.
+
+## 5. Literal disjoint rays on the parent's occupied-chain geometry
+
+Retain q_l=(l,0,0), 0<=l<n_old, n_old>=2, every parent C site and all original terms. Use exactly its n reservoir endpoints:
+
+| u | e(u) | ray direction d_u |
+| --- | --- | --- |
+| v0 | (0,2,1) | +x |
+| v1 | (-2,0,0) | -x |
+| v_j,2<=j<=L | (1,1-j,-1) | +x |
+| a0 | (-2,1,0) | -x |
+| b0 | (1,1,0) | +x |
+| a0' | (-2,0,1) | -x |
+| b0' | (1,0,1) | +x |
+| a1 | (-2,-1,0) | -x |
+| b1 | (1,-1,0) | +x |
+| a1' | (-2,0,-1) | -x |
+| b1' | (1,0,-1) | +x |
+
+The ray sites are a_(u,k)=e(u)+k d_u, 0<=k<Q. Negative rays have x<=-2 and distinct(y,z). Positive rays other than v0 have x>=1 and distinct(y,z); their(y,z) never equals(0,0), so they avoid the old chain. Pairs of negative/positive rays sharing(y,z) are separated by their x ranges. The v0 ray has(y,z)=(2,1), unique in the list. All parent C sites have x=-1 or0 and avoid these rays; the v0 endpoint is also outside C. This proves disjointness for every L>=8 and Q, without an all-L enumeration. Extra old sites, if any, must avoid the full enlarged rays.
+
+Every compression edge is an ordinary adjacent ray edge and every reset edge remains(u,e(u)). No wrap-around, crossing identification, new q0 neighbour, motion of physical sites or compression through the old chain is used. Including C, there are n(1+Q) added qubits and
+
+    (L+14)+n(Q-1)+n = L+14+nQ                            (11)
+
+selected edges beyond old K; entry is onsite. The occupied construction lies in
+
+    -Q-1 <= x <= max(n_old-1,Q),
+    1-L <= y <= 2,    -1 <= z <= 1.                       (12)
+
+The containing integer box has 3(L+2)[max(n_old-1,Q)+Q+2] sites. Not every site in that box must be a controlled ancilla. Supply the listed vacancies and selected interactions; absence of unlisted couplings is an isolation premise, even where rays approach the old system. This is conditional geometry and addressability, not homogeneous native implementation or a proper-cubic-covariance derivation.
+
+## 6. Positive finite pulses, full scalar and duration
+
+Each physical gate G in(10) has a positive Hermitian logarithm F_G satisfying exp(-iF_G)=G exactly. For Pi=|1><1|_control tensor P_-^target,
+
+    F_SWAP=(pi/2)(I-SWAP),    ||F_SWAP||=pi,
+    F_CX=pi Pi,              ||F_CX||=pi,
+    F_CV=(3pi/2)Pi,          ||F_CV||=3pi/2,
+    F_CV†=(pi/2)Pi,          ||F_CV†||=pi/2.               (13)
+
+In particular CV uses the positive3pi/2 branch, not a negative pi/2 pulse. The scalar component is Tr(F_G)/4=||F_G||/4 for all four rank-one logarithms. SWAP has Pauli expansion pi(I-XX-YY-ZZ)/4; Pi=(I-Z_c-X_t+Z_c X_t)/4. These are full onsite/NN two-qubit terms with their literal scalar included.
+
+Choose a finite compression time t_c>0 and equal slot duration d=t_c/P. In slot ell apply
+
+    G_c(s)=f_d(s)F_ell,    f_d(s)=(2/d)sin^2(pi s/d),
+    0<=s<=d,    integral f_d=1.                           (14)
+
+The envelope and its first derivative vanish at slot endpoints. The full installed generator H0 is active in every slot. Since all F_ell act on A alone, [H0,G_c(s)]=0 and the exact compression propagator is
+
+    U_compression = exp(-it_c H0) tensor U_c.              (15)
+
+There is no drift error for this exact factorization and no cancellation pulse. Compression does, however, age D/C under the complete H0, not generally under K alone.
+
+The exact sum of logarithm norms, called the control action A_c, is
+
+    A_c=n*pi[(20r/3)Q-(13/4)(Q-1)] <= (3pi/2)P.           (16)
+
+To obtain(16), each node has20d_node-14 routing SWAPs and logical logarithm norm total15pi/2. The exact integrated Pauli-identity coefficient is A_c/4. Removing those identity terms multiplies the total compression unitary by exp(iA_c/4); it is not the same phase-exact word.
+
+Finite sufficient compression prices are
+
+    peak full added norm = peak per-site load <= 3pi P/t_c,
+    integral ||G_c|| = A_c,
+    peak ||dot G_c|| <= 3pi^2 P^2/t_c^2,
+    integral ||dot G_c|| = 4 A_c P/t_c.                   (17)
+
+The last equality holds for these serialized pulses; the peak bounds are conservative. A fixed cap J_c requires t_c>=3pi P/J_c for this sufficient schedule. The purity recursion alone supplies no fast control or cap-independent implementation.
+
+After compression, apply exactly the parent's pulses, without idle gaps:
+
+    G_s(s)=(pi/t_s)sin^2(pi s/t_s) sum_u(I-SWAP_(u,e(u))),
+    G_p(s)=(pi/t_p)sin^2(pi s/t_p)(I-X_v0).               (18)
+
+Their exact endpoints on the comparison domains are SWAP and X, with no dropped phase. The first added full norm peaks at2n*pi/t_s, per-site at2pi/t_s; its action is n*pi and its integrated scalar n*pi/4. Entry peaks at2pi/t_p, action pi and integrated scalar pi/2. The full scheduled duration is
+
+    T_ready=t_c+t_s+t_p.                                 (19)
+
+All added pulses are positive. H_app remains positive. Thus the full instantaneous generator is positive if the already installed K is positive. For arbitrary signed K, positivity of the added controls does not make the total generator positive; no undeclared reserve is appended.
+
+## 7. Complete retained-output theorem and two aging contracts
+
+Let sigma^c=exp(-it_c H0)sigma exp(it_c H0), including R. Let T relabel the complete C register as E. With F,S retained and omega_FS defined by(8), define
+
+    rho_*^aged = |entry_C><entry_C| tensor
+       exp[-i(t_s+t_p)K] T sigma^c T*
+       exp[i(t_s+t_p)K] tensor omega_FS.                  (20)
+
+Tensor ordering is notational. The original C/R information is in E and may remain entangled with D/R; compression garbage and its purifier remain in F/S. Apply(8) after the exact factorization(15). Then apply the parent's complete prepared-domain comparison, treating F/S as extra passive references. Trace norm contracts under actual unitary evolution. Therefore the entire actual output of(14),(18) satisfies
+
+    ||rho_out-rho_*^aged||_1 <= min(2,delta_r+2Bt_s+2G_et_p). (21)
+
+This is uniform over all sigma_DCR and every Theta_AS allowed by(3), with the actual noncommuting K throughout. It is not a diamond estimate on arbitrary A input. For any fixed supplied Theta_AS it is a reference-complete comparison for the old/clock input channel. The comparison omega_FS depends on the supplied reservoir extension, not on sigma.
+
+If one instead requires the simpler old free-aging target
+
+    rho_*^free = |entry_C><entry_C| tensor
+       exp(-iT_ready K) T sigma T* exp(iT_ready K)
+       tensor omega_FS,                                  (22)
+
+then Duhamel on the full finite DC space gives
+
+    ||exp(-it_c H0)-exp(-it_c K)|| <= B t_c,
+    ||rho_out-rho_*^free||_1
+       <= min(2,delta_r+2B(t_c+t_s)+2G_et_p).              (23)
+
+The term2Bt_c is genuine. Leaving H_app installed while compressing cannot silently preserve the original old marginal or replace exp(-it_c H0) by exp(-it_cK). Contract(21) permits slow capped compression but has the actual H0-aged target. Contract(23) permits the free-old target with sufficiently short compression and the larger finite peak in(17). Neither contract removes a conflict with an insufficient fixed control cap.
+
+For positive allocations delta,epsilon_c,epsilon_s,epsilon_p, choose r as in section3 and finite
+
+    t_c <= epsilon_c/(2B),
+    t_s <= epsilon_s/(2B),    t_p <= epsilon_p/(2G_e).     (24)
+
+Then(23) is at most delta+epsilon_c+epsilon_s+epsilon_p. Certified rational upper bounds for B,G_e can replace them, giving rational durations. These bounds are finite because the literal parent has B,G_e>0. Equation(21) needs no epsilon_c allocation. No example with a chosen small error proves viability at a hardware cap.
+
+Subsequent use of the unchanged parent word must retain actual order: for(22) the old target is exp(-itK)W exp(-iT_ready K), W=exp(-i pi Z_q0/4)exp(-i pi X_q0/4), with the parent's moving clock factor. For(20), the actual initial sigma^c must remain. This does not supply a stop, permanent record, classical reader or autonomous scheduler.
+
+## 8. Whole energy, covariance, work and retained information
+
+Set beta=h+B. Because the engineered memory free Hamiltonian is zero, all its initial bias and later trash have zero contribution to the stipulated H0, without making their preparation or storage thermodynamically free. Initially the exact H0 variance contains
+
+    Var(K)+Var(H_app)+Tr rho {K-mu_K I,H_app-mu_app I}.    (25)
+
+At any driven time add Var(G) and the symmetrized covariance of H0 and G. No covariance is omitted by assumption. During nominal compression only, DC and AS remain factorized by(15), and H0 acts on DC while G acts on A; that particular covariance vanishes. During SWAP it generally does not vanish. Whole-space instantaneous estimates are
+
+    |Tr(H_total rho)-a| <= beta+||G||,
+    Tr[(H_total-aI)^2 rho] <= (beta+||G||)^2,
+    Var(H_total) <= (beta+||G||)^2.                       (26)
+
+Insert(17) or the two peaks after(18), as appropriate. The estimates apply to every actual sector; a one-head norm is not substituted for a full-space norm. All original H0 scalars and the control scalars in(13),(16),(18) remain in the actual operator and phase. Raw uncentered moments require ||H0|| or restored a-dependent terms.
+
+With each control vanishing at the stage endpoints, the exact nominal external-work identity is Delta Tr(H0 rho)=integral Tr(dot G rho). During compression this change is exactly zero, since U_compression commutes with H0. The finite variation price4A_c P/t_c in(17) is still charged and bounds an absolute-work integral; it is not a proof of zero controller-resource cost. During reset and entry the parent's sufficient absolute bounds are4n*pi/t_s and4pi/t_p. Work need not be negative. The autonomous controller, its source of precise timing and its own energy storage have not been constructed.
+
+At target(22), with controls off,
+
+    mu_* = Tr(K sigma_D)+alpha0,
+    Var_* = Var_sigma_D(K)+Q_e.                           (27)
+
+At target(20), replace sigma_D by the actual aged marginal sigma_D^c. Given complete endpoint trace error epsilon, the same installed H0 obeys
+
+    |mu_out-mu_*| <= beta epsilon,
+    |second centered moment difference| <= beta^2 epsilon,
+    |Var_out-Var_*| <= 3beta^2 epsilon.                   (28)
+
+For any retained passive subsystem of E,F,R,S, the corresponding linear reference-valued centered moment of order j=1,2 differs by at most beta^j epsilon in trace norm. This is bounded-operator duality after partial trace, not a nonlinear conditional-variance assertion or an energy measurement. Fixed energy-moment allowances can force a much smaller epsilon than trace preparation alone.
+
+The compression unitary preserves total entropy S(A)=nQ h_2(q). Its retained E marginal has entropy n h_2(q_r), so subadditivity implies S(F)>=nQ h_2(q)-n h_2(q_r); equality is not asserted. Correlations with F/S are retained, not erased. The later SWAP stores the original unrestricted n-qubit C information in E. No trash qubit or consumed E is restored to its initial biased state. Fresh repeated uses require fresh biased registers or separately supplied restoration. Even with perfect gates, q_r>0 for finite r and0<q<1/2; this construction supplies arbitrary finite approximate accuracy with growing resources, not exact vacuum from a fixed finite mixed supply.
+
+## 9. Calibration, effective data and finite storage
+
+Let the initial complete state be within eta0 of(3), and let the actual full Hermitian generator differ from the specified complete schedule by integrable F(t), with passive references untouched. For either target above, add
+
+    eta0 + 2 integral_0^T_ready ||F(t)|| dt                (29)
+
+to its displayed error, capped at2. This is full-space Duhamel and state contraction. A norm bound only on the intended excitation sector is insufficient; controls and faults may visit other sectors.
+
+If a compression pulse is f_d F_ell, with a dimensionless logarithm error ||Delta F_ell||<=zeta_ell and envelope error e_ell(s), then a sufficient integrated perturbation bound is
+
+    sum_ell [zeta_ell +(||F_ell||+zeta_ell)integral|e_ell|]. (30)
+
+Multiplying by2 gives its trace-error price. Uniform relative envelope error integral|e_ell|<=rho and uniform absolute logarithm error zeta cost at most2[P zeta+rho(A_c+P zeta)]. There are P addressed gates; a single-gate precision allowance cannot be reused without this sum. The exact coefficients in(13) are computable multiples of pi; physical finite calibration uses certified errors, not a claim of exact real settings.
+
+A shift d_ell of a zero-extended nominal compression envelope, compared in a common fixed interval, satisfies integral|f_d(s-d_ell)-f_d(s)|<=4|d_ell|/d. Thus its contribution is at most8 sum_ell ||F_ell|| |d_ell|/d, or8A_c d_max/d. This does not excuse a changed total elapsed time. The parent's corresponding swap and entry shift prices are8n*pi|d_s|/t_s and8pi|d_p|/t_p. Gaps during memory-only compression can be folded into the actual H0 aging in(20); the free target additionally charges2B times that duration. Arbitrary other gaps require their actual-generator comparison. A wrong post-pulse endpoint time dt separately costs at most2||H0|| |dt| on states, or must be reflected in the time-indexed target. Phase-sensitive maps retain the full scalar.
+
+An unwanted memory free Hamiltonian or coupling is included in F for the entire actual duration, not just gate times. A later storage disturbance of norm at mostnu for T_store adds at most2nu T_store. Engineered degeneracy/isolation, bias certification, axis selection, the nQ vacancies, switching, classical scheduling and any eventual readout remain supplied. No instantaneous reader, measurements during compression, refresh bath or microscopic reservoir law is used.
+
+All finite inputs needed by this recipe are explicit: L and the parent finite coefficients with certified upper bounds B,G_e,h; n_old; rational bias certificate q_bar<1/2; requested positive error allocations; the ray vacancy/isolation certificate; and full-space control/timing-error budgets. The rational recurrence chooses r, (10) fixes every gate count, the recursive routing rule fixes every edge, and(24),(30) give finite sufficient durations/precision. No recurrence search or generic controllability oracle is hidden.
+
+## 10. Prior machinery, selected check and unresolved supply
+
+Ticozzi–Viola, arXiv:1403.8143, physical PDF pp2–3, gives virtual-subsystem purification under initial factorization and unrestricted unitary controllability. It does not itself supply the local timed circuit here. Kaye, arXiv:quant-ph/0703194v3, sections2,3.2,4.1, treats independent biased bits, reversible three-bit majority and its recursive use; that mechanism and bias polynomial are prior art. We do not use its small-bias approximation near unit polarization. Barenco et al., arXiv:quant-ph/9503016v1, section6.1, pp14–15, supplies the standard controlled-square-root decomposition, which(9) checks directly. No optimality or general purification novelty is claimed. The fresh application is the explicit returned NN ray word, its full positive/scalar schedule and its reference-complete composition with this unchanged installed H0, with the costs and two aging targets separated.
+
+One predeclared selected calculation checks r=2,Q=9,q=1/4. It implements the compiled quantum gates using exact Gaussian rational amplitudes and compares all512 basis columns against a separate recursive Boolean permutation. It checks the full gate phase and returned dirty transit, not only output labels. CV† substitution, a missing route-return SWAP and scalar deletion are discriminators. A fully correlated all-equal input with the same one-site bias demonstrates the necessity of independence. The purified-output overlap demonstrates why the linear diagonal readiness price cannot be asserted with an arbitrary retained purifier. The general all-r/all-L statements, drift comparison and energy identities remain analytic; no parent science program is replayed.
+
+The unitary compression does not by itself prove a useful native supply. It trades fresh pure memory for a larger supplied biased product marginal, finite isolated vacancies and the paid schedule. A fixed insufficient cap can invalidate the short-time free-old target; a slow schedule retains the actual H0-aged target. Purity/trash restoration, environmental isolation, autonomous implementation, physical energy identification and classical reading are separate undeveloped interfaces. This is a bounded constructive conditional candidate, not a universal negative theorem or a closure claim.

@@ -1,0 +1,157 @@
+"""One selected exact geometry/permutation and four-clock synthesis diagnostic.
+No prior science program import or execution; no numerical matrix exponential.
+"""
+from pathlib import Path
+from collections import deque
+from fractions import Fraction as F
+from itertools import combinations, permutations
+from datetime import datetime, timezone
+import json, hashlib
+
+D=Path(__file__).resolve().parent
+started=datetime.now(timezone.utc).isoformat()
+checks=[]
+def check(name,condition):
+    checks.append({'name':name,'passed':bool(condition)})
+    if not condition: raise AssertionError(name)
+def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def edge(a,b): return tuple(sorted((tuple(a),tuple(b))))
+def nn(a,b): return sum(abs(x-y) for x,y in zip(a,b))==1
+base=D/'sources/base_geometry_result.json'
+check('saved geometry source identity',digest(base)=='b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f')
+d=json.loads(base.read_text()); O={tuple(x) for x in d['original_coordinates']}
+A=set(); ae=set(); ports=set()
+for comp in d['components']:
+    coords={tuple(x) for x in comp['coordinates']}
+    check('disjoint component '+str(comp['axis']),not (coords&A or coords&O))
+    A|=coords; ae|={edge(*e) for e in comp['auxiliary_edges']}; ports|={edge(*e) for e in comp['source_detuning_edges']}
+X=[(5,-7,3),(6,-7,3),(6,-6,3),(5,-6,3)]
+check('all selected clock factors are original',set(X)<=O)
+DD=O-set(X); S=A|set(X); r=(6,-6,4); s=len(S)
+E=[(r[0]+j,r[1],r[2]) for j in range(1,s+1)]
+check('one ray is fresh',not (set(E)&(O|A)) and len(set(E))==s and r in A)
+clock_edges={edge(X[j],X[(j+1)%4]) for j in range(4)}
+ray_edges={edge(r,E[0])}|{edge(E[j-1],E[j]) for j in range(1,s)}
+S_edges=ae|{e for e in ports if set(e)<=S}|clock_edges
+adj={a:[] for a in S}
+for a,b in S_edges: adj[a].append(b);adj[b].append(a)
+parent={r:None};dist={r:0};q=deque([r])
+while q:
+    a=q.popleft()
+    for b in sorted(adj[a]):
+        if b not in parent: parent[b]=a;dist[b]=dist[a]+1;q.append(b)
+check('joint S graph connected without D transit',set(parent)==S)
+vertices=sorted(O|A|set(E)); index={a:i for i,a in enumerate(vertices)}
+labels=list(range(len(vertices))); expected=labels.copy(); gates=[];paths=[]
+S_order=sorted(S)
+for j,a in enumerate(S_order):
+    p=[a]
+    while p[-1]!=r: p.append(parent[p[-1]])
+    p+=E[:j+1]; old=labels.copy(); inds=[index[x] for x in p]
+    word=[(inds[k],inds[k+1]) for k in range(len(inds)-1)]
+    word += [(inds[k],inds[k+1]) for k in reversed(range(len(inds)-2))]
+    for u,v in word: labels[u],labels[v]=labels[v],labels[u]
+    desired=old.copy();desired[inds[0]],desired[inds[-1]]=desired[inds[-1]],desired[inds[0]]
+    if labels!=desired: raise AssertionError('intermediate restoration at '+str(j))
+    expected[index[a]],expected[index[E[j]]]=expected[index[E[j]]],expected[index[a]]
+    paths.append({'j':j+1,'a':a,'memory':E[j],'ell':dist[a],'path_indices':inds,'swap_count':len(word)})
+    gates+=word
+check('complete route swaps every input record exactly',labels==expected)
+check('every original nonclock factor unchanged',all(labels[index[a]]==index[a] for a in DD))
+check('all gates are declared ordinary NN',all(nn(vertices[u],vertices[v]) and edge(vertices[u],vertices[v]) in (S_edges|ray_edges) for u,v in gates))
+check('exact route price',len(gates)==s*s+2*sum(dist.values()))
+mutant=list(range(len(vertices)))
+for n,rec in enumerate(paths):
+    inds=rec['path_indices'];word=[(inds[k],inds[k+1]) for k in range(len(inds)-1)]
+    if n: word +=[(inds[k],inds[k+1]) for k in reversed(range(len(inds)-2))]
+    for u,v in word: mutant[u],mutant[v]=mutant[v],mutant[u]
+mutant_defect=sum(a!=b for a,b in zip(mutant,expected))
+check('forward-only first word has retained-record defect',mutant_defect>0)
+V=set(vertices); touch=S|set(E);geo=set()
+for a in touch:
+    for k in range(3):
+        for sign in [-1,1]:
+            b=list(a);b[k]+=sign;b=tuple(b)
+            if b in V:geo.add(edge(a,b))
+dec=ae|ports|clock_edges|ray_edges;iso=geo-dec
+check('all declared supports are present NN',dec<=geo)
+new_omitted={e for e in iso if set(e)&set(E)}
+new_expected={edge(E[0],(7,-6,3))}
+check('complete new-ray omitted set is the predicted one edge',new_omitted==new_expected)
+a1=(-1,1,1);a1neighbors=sorted(b for b in V if nn(a1,b))
+check('direct matching obstruction has all six occupied neighbors',len(a1neighbors)==6)
+check('uniform conservative incidence bound covers selected case',len(iso)<=12*s)
+
+# Exact Gaussian-rational arithmetic, with full pair matrices at most 4 by 4.
+def C(a=0,b=0):return (F(a),F(b))
+def add(a,b):return (a[0]+b[0],a[1]+b[1])
+def neg(a):return (-a[0],-a[1])
+def sub(a,b):return add(a,neg(b))
+def mul(a,b):return (a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0])
+def conj(a):return (a[0],-a[1])
+def norm2(a):return a[0]**2+a[1]**2
+def eye(n):return [[C(int(i==j)) for j in range(n)] for i in range(n)]
+def mm(a,b):return [[sumc(mul(a[i][k],b[k][j]) for k in range(len(b))) for j in range(len(b[0]))] for i in range(len(a))]
+def sumc(vals):
+    out=C()
+    for x in vals:out=add(out,x)
+    return out
+def star(a):return [[conj(a[j][i]) for j in range(len(a))] for i in range(len(a[0]))]
+def madd(a,b):return [[add(x,y) for x,y in zip(ar,br)] for ar,br in zip(a,b)]
+def mscale(q,a):return [[mul(q,x) for x in row] for row in a]
+def det(a):
+    out=C();n=len(a)
+    for p in permutations(range(n)):
+        x=C((-1)**sum(p[i]>p[j] for i in range(n) for j in range(i+1,n)))
+        for i in range(n):x=mul(x,a[i][p[i]])
+        out=add(out,x)
+    return out
+def principal_minors(a):
+    out=[]
+    for k in range(1,len(a)+1):
+        for inds in combinations(range(len(a)),k):out.append(det([[a[i][j] for j in inds] for i in inds]))
+    return out
+def apply_pair(state,j,U):
+    out=state.copy();out[j]=add(mul(U[0][0],state[j]),mul(U[0][1],state[j+1]));out[j+1]=add(mul(U[1][0],state[j]),mul(U[1][1],state[j+1]));return out
+I=eye(4);proj=[[C() for _ in range(4)] for _ in range(4)];proj[1][1]=proj[2][2]=C(1)
+state=[C(1),C(),C(),C()];bad=state.copy();records=[]
+parameters=[(C(),F(1),F(1)),(C(0,F(3,5)),F(4,5),F(1)),(C(F(-3,5)),F(4,5),F(4,5))]
+for j,(a,b,t) in enumerate(parameters):
+    x,y=a;U=[[a,C(-b)],[C(b),conj(a)]]
+    N=[[C() for _ in range(4)] for _ in range(4)]
+    N[1][1]=C(-y/t);N[2][2]=C(y/t);N[1][2]=C(0,-b/t);N[2][1]=C(0,b/t)
+    minors=principal_minors(madd(I,N))
+    check('full pair positive logarithm '+str(j),star(N)==N and mm(N,N)==proj and all(v[1]==0 and v[0]>=0 for v in minors))
+    check('pair unitary and exact cosine-sine data '+str(j),mm(star(U),U)==eye(2) and x*x+t*t==1 and t>0)
+    calc=madd(madd(I,mscale(C(-1),proj)),madd(mscale(C(x),proj),mscale(C(0,-t),N)))
+    expectedU=eye(4)
+    for i in range(2):
+        for k in range(2):expectedU[i+1][k+1]=U[i][k]
+    check('exponential algebra including signs '+str(j),calc==expectedU)
+    state=apply_pair(state,j,U)
+    bad=apply_pair(bad,j,[[a,C(b)],[C(-b),conj(a)]])
+    records.append({'a':a,'b':b,'sin_theta':t,'N':N,'I_plus_N_principal_minors':minors,'state_before_pivot_phase':state})
+phase=C(F(3,5),F(4,5));state[3]=mul(phase,state[3]);bad[3]=mul(phase,bad[3])
+target=[C(),C(0,F(3,5)),C(F(-12,25)),C(F(48,125),F(64,125))]
+check('selected target exactly normalized',sum(map(norm2,target))==1)
+check('certified final pivot',norm2(target[3])>F(1,16))
+check('complex target including zero and final phase exactly synthesized',state==target)
+bad_squared=sum(norm2(sub(a,b)) for a,b in zip(bad,target))
+check('reversed hopping sign fails target',bad_squared>0)
+Swap=eye(4);Swap[1][1]=Swap[2][2]=C();Swap[1][2]=Swap[2][1]=C(1)
+Pplus=mscale(C(F(1,2)),madd(I,Swap));Pminus=mscale(C(F(1,2)),madd(I,mscale(C(-1),Swap)))
+check('full swap spectral exponential has phase plus one',mm(Pplus,Pminus)==[[C()]*4 for _ in range(4)] and madd(Pplus,mscale(C(-1),Pminus))==Swap and all(v[1]==0 and v[0]>=0 for v in principal_minors(madd(I,mscale(C(-1),Swap)))))
+X2=[[C(),C(1)],[C(1),C()]];I2=eye(2)
+Xp=mscale(C(F(1,2)),madd(I2,X2));Xm=mscale(C(F(1,2)),madd(I2,mscale(C(-1),X2)))
+check('excitation spectral exponential equals X',madd(Xp,mscale(C(-1),Xm))==X2 and all(v[1]==0 and v[0]>=0 for v in principal_minors(madd(I2,mscale(C(-1),X2)))))
+
+def encode(x):
+    if isinstance(x,F):return str(x)
+    if isinstance(x,dict):return {k:encode(v) for k,v in x.items()}
+    if isinstance(x,(list,tuple)):return [encode(v) for v in x]
+    return x
+certificate={'vertices':vertices,'S_enumeration':S_order,'memory':E,'root':r,'paths':paths,'gates_vertex_indices':gates,'declared_edges':sorted(dec),'all_geometric_edges_touching_S_E':sorted(geo),'omitted_edges':sorted(iso),'original_nonclock_vertices':sorted(DD)}
+(D/'ROUTING_GEOMETRY_CERTIFICATE.json').write_text(json.dumps(certificate,separators=(',',':'))+'\n')
+result={'started_utc':started,'finished_utc':datetime.now(timezone.utc).isoformat(),'source_sha256':digest(Path(__file__)),'base_source_sha256':digest(base),'scope':'One fixed geometry and permutation plus constant-size exact synthesis algebra; no inverse, waveform, dynamics or large Hilbert calculation.','counts':{'original_nonclock':len(DD),'original_clock':len(X),'auxiliary':len(A),'S':s,'new_memory':len(E),'total_factors':len(V),'S_declared_edges':len(S_edges),'sum_root_distances':sum(dist.values()),'swaps':len(gates),'all_touching_NN_edges':len(geo),'declared_edges':len(dec),'omitted_edges':len(iso),'new_omitted_edges':len(new_omitted)},'new_omitted_edges':sorted(new_omitted),'saturated_a1_neighbors':a1neighbors,'routing_certificate_sha256':digest(D/'ROUTING_GEOMETRY_CERTIFICATE.json'),'synthesis':{'parameters':records,'target':target,'actual':state,'global_rotation_phase':'exp(-i sum theta_l); retained symbolically','final_phase_factor':phase},'mutants':{'forward_only_first_word_wrong_labels':mutant_defect,'reverse_hopping_squared_vector_error':bad_squared},'checks':checks,'check_count':len(checks),'mathematical_execution_count':1}
+(D/'EXACT_RESULT.json').write_text(json.dumps(encode(result),indent=2)+'\n')
+print(json.dumps({'status':'completed','counts':result['counts'],'check_count':len(checks),'mutants':encode(result['mutants']),'result_sha256':digest(D/'EXACT_RESULT.json')},sort_keys=True))

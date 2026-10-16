@@ -1,0 +1,19 @@
+{
+  "launched_utc": "2026-10-15T13:37:46.891606+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/capture_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/capture_metadata.py",
+    "bytes": 3359,
+    "sha256": "cebbafe2b0b381ec1032a4b4c519c24b31ed1cb66905acb395b79a2b889a5a2f"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/record_metadata.py",
+    "bytes": 1418,
+    "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c"
+  },
+  "scientific_execution": false
+}

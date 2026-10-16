@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-15T11:27:41.876164+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_shared_mediator_candidate/selected_exact_fixture.py"
+  ],
+  "source_sha256": "58b88103daaa01c91003ccb1ccf270bc4a70ce35d2b88de64f406a19d73955ba",
+  "seal_sha256": "60348cb4ca84b2162ba5a5e808d02502761724ee064b0ccbdc53b54bbb5af526"
+}

@@ -1,0 +1,5 @@
+# Provenance and execution limits
+Two-copy: one original Fraction fixture, selected L_b=8,Q=3,n_old=2,M=4, 54 predicates, 74 original/66 fresh sites, with actual launch/execution source and streams.
+Single-port: one Fraction fixture with the same old parameters, 159 predicates and 121 fresh sites. Its self-recorded source/input/times exist, but POST_RUN_RECEIPT and recovered preexecution proof are retrospective. The separate 35-omitted-edge inventory was requested later, outside the159 checks. Preserve both raw and metadata-corrected outputs; the overly narrow bookkeeping label is corrected, not erased.
+Neither reviewer nor root replayed the scientific programs. Reviews share source exposure and selected model/family; no blind or cross-model independence is claimed. The single-port review's159 metadata predicates are unrelated to the159 author predicates.
+Historical freezes may name files outside this compact archive. They are preserved records, not claims that every historical archive member was copied. Every input of the new integrity primary is explicitly in INPUT_MANIFEST.json or the identified canonical parent tree.

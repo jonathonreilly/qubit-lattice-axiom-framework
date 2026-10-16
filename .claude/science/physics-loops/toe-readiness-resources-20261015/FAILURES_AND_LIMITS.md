@@ -1,0 +1,8 @@
+# Failures retained
+Original polynomial b34df6b7 incorrectly equated the actual counterterm sum to the upper allowance a-h0. Corrected b083c9d9 changes that relation to <= and makes four attribution/scope clarifications. The original, full diff, five replacement pairs, original review and narrow correction report remain exact. Four equation blocks and twelve big-O text occurrences are unchanged. This is a repaired source defect, not evidence against the upper recipe.
+
+The complete reports preserve finite drift, full-clock-sector, full-SWAP phase, scalar-isometry, shifted-endpoint, rapidly varying small-L1 fault, raw-moment marginal and mismatched-baseline failure witnesses. They establish no universal no-go or exhausted-route claim. No negative-claim gate or manufactured PASS quota was added.
+
+During packaging, an exploratory read assumed an immutable-body marker that differs in the mass canonical note. It returned ValueError before listing later metadata. The actual header/marker was then read directly and source identity retained; no science execution or source change occurred. One aggregated display truncated a report/format inventory; the report's missing/tail region was read in a separate complete range. The inventory is not evidence of a complete proof read.
+
+The first recorded metadata build stopped before creating proposal files with KeyError 'files': the original polynomial proposal freeze has one source record instead of a files array. The builder now handles that exact named schema explicitly. The failed launch, source, stderr and exit remain in outer metadata_runs/build; the corrected metadata run uses a distinct label. No science or primary ran in either attempt.

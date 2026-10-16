@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-15T15:23:17.336794+00:00",
+  "baseRefName": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+  "headRefName": "physics-loop/toe-joint-readiness-20261015",
+  "headRefOid": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+  "isDraft": false,
+  "number": 9607,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9607",
+  "tree": "43e1458b61f26fac2640dd580dfdc6a4912bc75f",
+  "base_head": "1fcff4c8e3cfe5b8ae5fae1a31ae882609ff5939",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 152470,
+    "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/routed_auxiliary_and_joint_readiness_2026_10_15.py",
+    "bytes": 33440,
+    "sha256": "190d979b2874cc433611fb31d8fb920690bbcc196a93da032110ef4bab5f5e8c"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/joint_readiness/PR_BODY.md",
+    "bytes": 2984,
+    "sha256": "8eb83c3340f97cccfb67b5ad107adc5d8cc2b64e76c498e3faceac7a3181f0a1"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

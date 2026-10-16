@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-15T12:14:37.066372+00:00",
+  "kind": "root conditional source acceptance, no audit",
+  "members": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 5002,
+      "sha256": "4808bc61000184199bbe1d505e2d0ce25e1fab610b995f15c477eac3ec38a0d4"
+    },
+    {
+      "path": "PRELIMINARY_ANALYTIC_READ.md",
+      "bytes": 3760,
+      "sha256": "21fb6aa57658c4ee3c221c49e5d88cc7d2c237dab6c69772b2d13e26f308ab1c"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 20850,
+      "sha256": "91a65aee6a8ea095d00cc663d2faaf1c3d69976d60aec7b5763f1a57166d75b8"
+    },
+    {
+      "path": "close_sources.py",
+      "bytes": 3781,
+      "sha256": "263900031c89d5dcd66c5b3b4fecb0328b242fc95c2c8eb293adc1479a0eb9de"
+    }
+  ],
+  "scientific_programs_run": 0
+}

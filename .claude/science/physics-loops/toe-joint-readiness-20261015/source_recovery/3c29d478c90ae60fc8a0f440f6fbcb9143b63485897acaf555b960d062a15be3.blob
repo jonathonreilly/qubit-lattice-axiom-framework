@@ -1,0 +1,256 @@
+# Routed preparation of a complete mediator register with paid compensation
+
+Status: author-proposed conditional theorem, pending independent review. The result relocates a supplied pure-memory requirement to accessible boundary rays. It does not derive native initialization, recycle that memory, accept the separate single-port simulation theorem, or prepare the original clock. Every original factor, mediator, displaced input record and passive reference is retained at the same actual elapsed time.
+
+## 1. Exact source roles and quantified problem
+
+The compensated canonical note d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8 supplies the source-exposed positive-compensation and smooth-ramp method. Its finite-reservoir parent is canonical3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad, containing the complete26220ec9 raw argument. The frozen single-port argument d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25 supplies a proposed explicit Hamiltonian and coordinate inventory; its simulation theorem remains under separate review and is not an accepted premise here. All source snapshots, hashes and prior freeze identities are in SOURCE_MANIFEST.json. The graph/permutation and preparation statements needed below are proved here. Root exposed the routing and compensation proposal; ROOT_EXPOSURE.md records that exposure.
+
+Let O denote every original factor, including the original data, apparatus, existing memory and sampled clock X. Let A be the complete mediator register to prepare and R an arbitrary passive reference. Let H=H0+K_X be the unchanged finite Hermitian generator on O, including its full scalar and existing reserves. It acts as identity on A and the new memory E. No commutation between H and the installed addition F is assumed. Write the installed generator, before and after preparation, as
+
+    K=H+F,            F=sum_lambda h_lambda.                    (1)
+
+Each displayed h_lambda is an onsite or ordinary-NN two-qubit term on O/A, or a scalar assigned to a declared site. Supply finite full-space bounds for H and these coefficients. The general theorem needs neither a gap nor positivity of F. Where whole-generator positivity is claimed, K>=0 is an explicit hypothesis, obtained in the single-port specialization by retaining its installed positive reserve.
+
+A is a union of finitely many disjoint connected declared NN graphs A_i, with m_i>=1 sites each and a chosen accessible root r_i. Append a new NN memory chain e_(i,1),...,e_(i,m_i), attached at r_i, disjoint from O, all A and every other new chain. Its free generator is exactly zero nominally. All unspecified couplings are absent or charged in full norm. The exact input is
+
+    sigma_OAR tensor |vac_E><vac_E|,                            (2)
+
+where sigma is arbitrary, including all mediator sectors and arbitrary O/A/R correlations. There is no clean original factor or N_X=1 hypothesis in (2). A full joint readiness error may be added later. Only E is supplied pure and independent. All outputs, including E, are retained.
+
+## 2. Endpoint transpositions and the exact routing count
+
+For a simple path p0,p1,...,pd with d>=1, perform chronological full qubit SWAPs on
+
+    (p0,p1),(p1,p2),...,(p_(d-1),pd),
+    (p_(d-2),p_(d-1)),...,(p0,p1).                              (3)
+
+There are 2d-1 SWAPs. Track distinct register labels: the forward sequence moves the p0 label to pd and shifts the others one step toward p0. The reverse sequence moves the old pd label to p0 and restores each p1,...,p_(d-1) label. Hence the resulting unitary is exactly the endpoint SWAP S_(p0,pd), with identity on every intermediate register. This is an operator identity on the entire tensor-product space, so it preserves arbitrary quantum superpositions, entanglement and correlations. It is not a one-excitation routing claim.
+
+Enumerate A_i as a_(i,1),...,a_(i,m_i). Choose a simple shortest declared auxiliary path from a_(i,j) to r_i, of length ell_(i,j), and continue along the memory chain to e_(i,j). The concatenation is simple, with distance d_(i,j)=ell_(i,j)+j. Equation(3) therefore realizes S_(a_(i,j),e_(i,j)). These endpoint transpositions have disjoint endpoints, so their final unitaries commute. Their physical implementations can overlap many intermediate registers; each complete word restores those intermediates before the next word. Already transferred records therefore remain valid even if they are subsequently used as transit factors.
+
+The exact serial word length for this chosen family of paths is
+
+    P_i=sum_j [2(ell_(i,j)+j)-1]
+       =m_i^2+2 sum_j ell_(i,j),             P=sum_i P_i.       (4)
+
+This is an upper construction price, not a shortest-circuit theorem. Since ell<=m_i-1, P_i<=3m_i^2-2m_i is a simple finite bound. Each step is an ordinary NN two-qubit operation. No original O factor is used as transit, moved or reset.
+
+Let W_route be the total endpoint permutation and let Q relabel the full input A register as E, leaving O/R untouched. On the exact ready input,
+
+    W_route J_E psi = |vac_A> tensor Q psi.                    (5)
+
+Q preserves every input A/O/R correlation. The E output is generally dirty and correlated. A maximally entangled A/R input transfers its Schmidt rank2^(sum m_i) to E/R; this also shows why arbitrary exact pure replacement needs an output record of at least that dimension when no other factor is available to absorb it. This is not an approximate lower bound or a thermodynamic work formula.
+
+## 3. Positive local compensation and explicit smooth controls
+
+For each installed h_lambda choose a supplied finite c_lambda>=||h_lambda||>=0 and add the independently controlled local term
+
+    C_lambda=c_lambda I_support-h_lambda >=0,
+    kappa=sum_lambda c_lambda,
+    C=sum_lambda C_lambda=kappa I-F.                          (6)
+
+The support remains that of h_lambda. These controls require the signed/opposite interactions and phases, including original-site counterterms; positive padding does not physically supply them. No term of the original H is put in this compensation dictionary. Let B>=||F|| and B_C>=||C|| be certified full-space bounds; B=sum c_lambda=kappa and B_C=sum||C_lambda||<=2kappa are always safe. Summed local norms and the norm of the summed C must be distinguished.
+
+Use the source's explicit smooth profile
+
+    b(x)=exp[-1/(x(1-x))] on 0<x<1, zero otherwise;
+    w=b/integral_0^1 b,    F_sw(x)=integral_0^x w,
+    m0=||w||_infinity<=3sqrt(e),   m1=||w'||_infinity<=48sqrt(e).
+
+Extend F_sw by0 and1 outside its interval. Its derivatives vanish at endpoints; w is symmetric and normalized, integral F_sw=1/2 and integral|w'|=2m0. These elementary bounds and the supplier meaning are retained from the compensated source, not a newly executed numerical quadrature.
+
+Choose positive finite r_on,r_off and one duration tau_l>0 for each of the P successive edge SWAPs. Let T_P=sum_l tau_l and T=r_on+T_P+r_off. The compensation envelope u rises as F_sw(t/r_on), remains1 throughout the complete serial word, and falls as1-F_sw((t-r_on-T_P)/r_off). Thus
+
+    A_u=integral u=T_P+(r_on+r_off)/2,
+    integral|u'|=2.                                          (7)
+
+During SWAP l on its declared edge, with local time s, install
+
+    gamma_l(s)=pi w(s/tau_l)/(2tau_l),
+    G_l(s)=gamma_l(s)(I-S_l)>=0.                             (8)
+
+All other G_l are zero during that interval; all G are zero on the ramps. A full SWAP has eigenvalues±1, so
+
+    exp[-i(pi/2)(I-S_l)]=S_l                                 (9)
+
+exactly, including phase. Excitation exchange is not a substitute on arbitrary input. Each pulse and every switching derivative vanishes at its endpoints, including between successive SWAPs.
+
+The actual nominal driven Hamiltonian is
+
+    K_act(t)=K+u(t)C+G(t)
+            =H+(1-u(t))F+u(t)kappa I+G(t).                 (10)
+
+The original installed terms remain literal summands; their net effect is actively canceled on the plateau by paid controls. If K>=0 then K_act>=0 on the entire Hilbert space because uC and G are positive. For arbitrary signed K only the controls are proved positive. At t=0,T every added control is zero, and the installed generator is exactly the same K. The appended memory is still present, with zero nominal free generator. No switching interval or return obligation is omitted.
+
+## 4. Full-output target and the two-ramp estimate
+
+Let J_A append the auxiliary vacuum and let
+
+    Gamma>=||F J_A||                                         (11)
+
+be a certified bound on every O input; Gamma=B is always safe. This is a prepared-vector bound for the comparator only, not an assertion that the actual state remains ready. Let U(T) be the propagator of(10). Define the complete phase-sensitive target
+
+    V_T psi=exp(-i kappa A_u) |vac_A> tensor
+              [(exp(-i T H) tensor I_ER) Q psi].              (12)
+
+H acts on O and commutes with every ideal SWAP on A/E. Therefore the comparator generated by H+u kappa I+G has exactly endpoint(12), by(3),(5),(9), even when the input O/A/R state is entangled. The original system ages for all of T, including both ramps and every serial routing step.
+
+The difference between actual and comparator generators is (1-u)F. During turn-on, the arbitrary A input requires the full-space B. The plateau has zero residual. During turn-off, the comparator has exactly vacuum A and arbitrary evolved O/E/R, so the uniform Gamma applies. Duhamel with the actual propagator on the left of the residual gives
+
+    ||U(T)J_E-V_T|| <= (B r_on+Gamma r_off)/2,
+    ||rho_actual-rho_target||_1
+       <= min(2,B r_on+Gamma r_off).                         (13)
+
+Purification establishes the unhalved trace estimate for arbitrary mixed inputs and passive references. The actual intermediate state need not be vacuum or have bounded excitation number. Finite positive bounds can be chosen above B and Gamma to avoid zero-denominator cases; r_on<=eps_on/B and r_off<=eps_off/Gamma then suffice. The plateau durations may be any positive finite values. Longer routing does increase actual aging, compensation action and calibration exposure, but causes no nominal uncompensated plateau error.
+
+If H preserves N_X, a supplied initial N_X=1 hypothesis is preserved nominally because the specialization's F and compensators do so and the SWAPs avoid O. That hypothesis is unnecessary for preparation itself. A later sampled-program theorem starts from the actually aged original state in(12). Replacing it by an unaged clock packet needs a separately supplied/charged preimage or timing construction. Restoring path intermediates does not restore the clock's age or supply its initial state.
+
+## 5. Literal three-component rays and the direct-matching failure
+
+Use the frozen single-port inventory without moving a site. Write L_b>=8,Q_mem>=3,n_old>=2, X_*=max(n_old-1,Q_mem)+2>=5, Y_*=1-L_b<=-7, and M=4q_c with integer q_c>=1. Its three connected auxiliary components have
+
+    m1=M+X_*+27-Y_*,  m2=M+X_*+19-Y_*,  m3=M+X_*+27-Y_*.
+
+The first two transport cycles are the original square at z=2 and4, with x in[X_*,X_*+q_c], y in[Y_*,Y_*+q_c]. The third is the outer square at z=3, with x in[X_*-1,X_*+q_c+1], y in[Y_*-1,Y_*+q_c+1]. Their complete fixed cores/tails, original geometry and source ports are retained in sources/single_port_DERIVATION.md; this task changes none of them.
+
+A direct fresh-neighbor matching cannot prepare every A site in this literal occupied layout. For example a1=(-1,1,1) has all six neighbors occupied:
+
+    (0,1,1) original c,    (-2,1,1) auxiliary r1,
+    (-1,0,1) original a0', (-1,2,1) auxiliary b1,
+    (-1,1,0) original a0,  (-1,1,2) auxiliary r2.              (14)
+
+Thus no additional fresh NN memory can be attached directly there without changing the premises. This excludes that matching prescription at this site; it is not a general no-go. The routed prescription uses existing dirty auxiliaries as restored transit factors.
+
+Choose roots
+
+    R1=(X_*+q_c,Y_*+q_c,2),
+    R2=(X_*+q_c,Y_*+q_c,4),
+    R3=(X_*+q_c+1,Y_*+q_c+1,3),
+
+and append e_(i,j)=R_i+(j,0,0), 1<=j<=m_i. The rays are pairwise disjoint because their z coordinates differ. For z=2,4, every new x exceeds the corresponding transport maximum and all its core/tail x coordinates, while original nonclock factors have z<=1 and original clock factors have z=3. The third ray lies beyond both the outer and original clock x maxima at z=3, and all core/tail x coordinates are smaller. Thus every new memory coordinate is fresh for all stated parameters. Distinct physical roots and unit +x steps give ordinary NN chains.
+
+The first two roots have two cycle edges and one original-clock source edge; adding one memory edge gives used degree4. The third outer corner is not a clock-source port; adding its ray gives used degree3. Every interior new memory vertex has degree2 in the selected preparation graph. No second port is required at an interior saturated auxiliary. The new pure-memory count is m_total=m1+m2+m3, with m_total new selected ray edges. The old auxiliary register remains present, so the preparation has both m_total arbitrary input auxiliaries and m_total supplied pure memory qubits.
+
+Freshness does not eliminate geometric cross-couplings. Define E_inst to contain every declared installed edge involving A, and E_route the auxiliary routing and new ray edges. On the complete recorded factor set O union A union E, let
+
+    E_iso={{v,w}: |v-w|_1=1, {v,w} intersects A union E,
+                  {v,w} not in E_inst union E_route}.        (15)
+
+This includes fresh–original, within-component, intercomponent and memory edges, without assuming any conservation law. All such nominal couplings are zero; actual residual interactions cost zeta_iso(t)=sum_(E_iso)||E_vw(t)|| in the full-space error integral. Any additional occupied factor requires a new complete inventory. A finite general bound is |E_iso|<=6(|A|+|E|); the selected count must not be extrapolated to other parameters.
+
+In this ray family, the first new vertex of each z=2 and z=4 ray neighbors the old outer-cycle vertex (X_*+q_c+1,Y_*+q_c,3). Those two edges are undeclared; the first new vertices' other non-ray neighbors lie outside the listed inventory. Later ray vertices lie farther in +x, and the z=3 ray is separated by both a y and z displacement from the other rays. Thus the two additional memory-to-auxiliary adjacency obligations are explicit. All pre-existing auxiliary omitted edges remain subject to(15), including within-component chords. The selected fixture will enumerate the complete graph, not infer isolation from ray freshness.
+
+## 6. Specialization to the complete single-port installed addition
+
+For the three-axis displayed simulator, take its full installed addition, including a retained fixed reserve R0>=0, as
+
+    F=Delta L+sqrt(Delta)V+C0+R0 I,
+    C0=S0 I+sum_j S_j n_j-sum_i d_i Pe_i,
+    V=sum_i q_i Pc_i X_(a_i)
+       +sum_(i,j) n_j[Re(z_(ij))X_(u_ij)+Im(z_(ij))Y_(u_ij)]. (16)
+
+The frozen source gives L|vac_A>=0, q_i>0, S_j>=0 and d_i>0. No acceptance of its simulated target is needed to verify these literal vacuum identities. Keep its installed R0 (for example the displayed sufficient positive reserve), rather than silently dropping or changing its scalar.
+
+One explicit termwise compensation dictionary and costs is:
+
+| Installed whole term | c_lambda | ||C_lambda|| |
+| --- | ---: | ---: |
+| Delta B_vv n_v | Delta B_vv | Delta B_vv |
+| Delta B_uv S_uv | Delta abs(B_uv) | 2 Delta abs(B_uv) |
+| Delta h_i Pe_i n_b | Delta h_i | 2 Delta h_i |
+| sqrt(Delta) q_i Pc_i X_a | sqrt(Delta) q_i | 2 sqrt(Delta) q_i |
+| sqrt(Delta) Re(z_ij) n_j X_u | sqrt(Delta) abs(Re z_ij) | twice c_lambda |
+| sqrt(Delta) Im(z_ij) n_j Y_u | sqrt(Delta) abs(Im z_ij) | twice c_lambda |
+| S_j n_j | S_j | S_j |
+| -d_i Pe_i | d_i | 2d_i |
+| S0 I or R0 I | S0 or R0 | 0 |
+
+All eigenvalue claims hold on the full one/two-qubit space. Zero coefficients contribute zero. This deliberately prices the two quadratures separately, even though they use the same physical edge. Their opposite signed coefficients are additional supplied controls. The constants S0,R0 give zero C_lambda but remain in kappa and in the original installed scalar. Summing c_lambda gives an explicit full-space B=kappa. Summing the last column gives B_C and the complete local compensation loads. For each site v, d_v=sum_(lambda:v in support)||C_lambda|| is the added compensation load. Algebraic plateau cancellation does not remove the installed load.
+
+Put B0=C0+R0 I and
+
+    S_flip=sum_i q_i^2 I+sum_(i,j)|z_(ij)|^2 n_j.
+
+Orthogonality of vacuum and the distinct one-site auxiliary flips proves, on the entire original O domain,
+
+    J_A*F J_A=B0,
+    J_A*F^2 J_A=B0^2+Delta S_flip,
+    Gamma=||B0^2+Delta S_flip||^(1/2).                       (17)
+
+A convenient full-clock bound is
+
+    b0=R0+S0+sum_j S_j+sum_i d_i,
+    Gamma<=sqrt(b0^2+Delta[sum_i q_i^2+sum_(i,j)|z_(ij)|^2]). (18)
+
+Neither a one-clock nor one-auxiliary-particle norm controls arbitrary-input turn-on. Equation(18) explicitly uses the complete clock space; the sharper N_X=1 restriction is optional only when imposed on the input and preserved nominally. It is never used for uncontrolled errors.
+
+The full Pauli scalar of(16) is
+
+    s_F=(Delta/2)sum_i Tr B_i+S0+(1/2)sum_j S_j+R0.          (19)
+
+Every auxiliary diagonal compensation, clock onsite field and scalar reserve appears. The Pe-only detunings and counterterms are traceless; their dynamical and norm costs remain. If a sampled original-clock identity term U is also installed as an addition, include its literal terms in(6),(16), replacing B0 by B0+U and updating all full-space bounds/scalars. No term of H is canceled by relabeling it as such an addition.
+
+## 7. Finite strength, action, switching, time and calibration prices
+
+With B_C bounding the norm of summed C, compensation has peak B_C, integrated norm B_C A_u, peak derivative at most B_C m0/min(r_on,r_off), and total variation2B_C. Summed local compensation action is (sum||C_lambda||)A_u, which may exceed the bound using the actual ||C||. A serial SWAP of duration tau_l has peak norm pi m0/tau_l, integrated norm pi, derivative peak pi m1/tau_l^2 and variation2pi m0/tau_l. Thus
+
+    peak added norm <= B_C+pi m0/min_l tau_l,
+    integrated added norm <= B_C A_u+pi P,
+    variation <= 2B_C+2pi m0 sum_l 1/tau_l.                 (20)
+
+The total actual duration is T=r_on+sum tau_l+r_off. At an active pulse endpoint v the added load is at most d_v+pi m0/tau_l; elsewhere it is at most d_v. A finite cap with a positive supplied margin over d_v gives a sufficient lower bound on each tau_l. If a cap includes the installed generator, its actual site loads must also be subtracted. A fixed cap or slew limit may conflict with the short-ramp accuracy prescription; no feasibility for arbitrary caps is proved.
+
+The actual instantaneous scalar is
+
+    scalar(H)+(1-u)s_F+u kappa+gamma_l/2                    (21)
+
+during pulse l, with the last term zero on ramps. The literal added scalar action is (kappa-s_F)A_u+P pi/4. The exact comparator phase is exp(-i kappa A_u), because every full positive SWAP pulse has endpoint exactly S_l; pulse identity parts cannot be dropped from the installed scalar/work ledger.
+
+For a full joint input readiness error eta_ready and arbitrary Hermitian full-space residual E_impl(t),
+
+    eps_total <= min(2, eta_ready+B r_on+Gamma r_off
+                         +2 integral_0^T ||E_impl(t)||dt).   (22)
+
+E_impl includes unlisted edges(15), memory self-Hamiltonians, coefficient/envelope errors, imperfect signed compensation, wrong scalar coefficients and unwanted original-H changes. If compensation coefficient errors are E_lambda with the correct envelope, their contribution is at most2 A_u sum||E_lambda||. A shared envelope error costs2 B_C integral|delta u|; separately controlled envelopes cost2sum||C_lambda|| integral|delta u_lambda|. Products of coefficient and envelope errors require their cross terms. A SWAP envelope error costs4integral|delta gamma_l|. These are full-space bounds, including leakage and arbitrary references, not sector samples.
+
+Zero-extend nominal waveforms on a common interval. A common compensation shift delta gives integral|u(.-delta)-u|<=2|delta|, hence trace allowance4B_C|delta|. A SWAP envelope shift delta_l costs at most4pi m0|delta_l|/tau_l. Overlap created by relative shifts is still covered by the summed full-space residual. Changed completion time requires the actual time-indexed target or an additional evolution estimate; an uncontrolled terminal interval delta_t has conservative cost2||K|| |delta_t| relative to a fixed endpoint state. It must not be disguised as clock-age cancellation.
+
+Nominal positivity follows from K>=0 and positive controls. Under faults a certified negative part bounded by zeta(t) can be covered only by a separately installed/charged scalar reserve zeta(t)I, with its scalar phase, action and switching included; otherwise faulty positivity is not claimed. Fault bounds alone do not physically supply that reserve. After nominal controls vanish the same K acts, so subsequent exact installed dynamics propagate the endpoint trace error by contraction. Sustained storage faults require their own full-space norm integral. Memory E is not restored by this theorem.
+
+## 8. Moments, covariance and actual driven work
+
+All endpoint moments refer to the same installed K in(1), including every scalar. Initially on arbitrary sigma_OAR,
+
+    mu_initial=<H>+<F>,
+    Var_initial(K)=Var(H)+Var(F)
+                     +<{H-<H>I,F-<F>I}>.                  (23)
+
+No covariance or old/auxiliary correlation is discarded. On the ideal final state define rho_O(T)=exp(-iTH) sigma_O exp(iTH). In general let A0=J_A*FJ_A and Q_F=J_A*F^2J_A-A0^2>=0. Direct multiplication, without assuming [H,F]=0, gives
+
+    J_A*KJ_A=H+A0,
+    J_A*K^2J_A=(H+A0)^2+Q_F,
+    mu_*=Tr rho_O(T)(H+A0),
+    Var_*(K)=Var_(rho_O(T))(H+A0)+Tr rho_O(T)Q_F.           (24)
+
+For(16), A0=B0 and Q_F=Delta S_flip by(17). Although H moments are invariant under its aging, B0 and its covariance with H need not be. They are evaluated on the actually aged original marginal, not on an unaged clock input. All correlations transferred to E/R are retained by the joint target; the scalar moment uses only the required marginal.
+
+For any reference center a used only in estimates and beta>=||K-aI||, endpoint trace error eps_total implies mean error<=beta eps_total, centered second-moment error<=beta^2 eps_total and variance error<=3beta^2 eps_total. The linear E/R-valued moments obey the corresponding beta^j eps_total bound for j=1,2 after tracing O/A. These are not conditional variances or physical measurement claims. Large simulator coefficients require correspondingly smaller trace error for fixed energy-moment tolerances.
+
+During the drive, K_act=K+G_tot with G_tot=uC+G, so the exact variance contains Var(K)+Var(G_tot)+<{K-<K>I,G_tot-<G_tot>I}>. Further splitting G_tot retains its own cross covariances. A complete finite norm bound is ||H||+(1-u)B+u kappa+||G||; it controls instantaneous means and second moments without assuming a clean actual mediator state.
+
+For the finite closed nominal model, added controls vanish at both endpoints and
+
+    Tr(K rho(T))-Tr(K rho(0))
+       =integral_0^T Tr[(u'(t)C+G'(t))rho(t)]dt,
+    absolute net work <= 2B_C+2pi m0 sum_l 1/tau_l.           (25)
+
+This is an upper variation allowance, not a lower work cost, monotone cooling law or identification of measured physical energy. External scheduling, finite switching rates, calibration, signed compensators, stored pure memory and later memory restoration remain supplied physical resources. The full-scalar accounting is not a derivation of the external controller's energy store.
+
+## 9. Bounded statement, preserved failures and evidence plan
+
+Conditional theorem: under(1),(2), connected finite declared NN auxiliary graphs with the appended fresh rays, the explicit signed/padded controls(6),(8), isolation and full-space coefficient access, the finite smooth schedule prepares the complete auxiliary vacuum with the full retained-output comparison(12)-(13). It returns to exactly the same installed generator after both finite ramps, preserves the arbitrary displaced input records in E, and retains actual original-H aging. If the installed generator is positive, every nominal driven generator is positive. The three explicit single-port graphs admit the ray specialization in section5, conditional on their literal finite inventory rather than an arbitrary occupied substrate.
+
+The direct matching fails at(14), while routing succeeds conditionally without moving any original site. A forward-only path word does not in general restore intermediates; full endpoint words are essential. Excitation exchange is not full SWAP. Dirty/correlated E is outside the exact ready domain, and resetting A cannot simultaneously return E as the same independent pure resource on arbitrary input. Ignoring the turn-on full-space bound, omitting finite release, deleting compensation scalar offsets, commuting H through F, ignoring dense omitted edges or replacing actual clock aging by an unaged packet would change or invalidate this argument. These are scoped failed shortcuts, not a general no-go.
+
+At most one predeclared selected permutation/geometry fixture will be used. It will track integer register labels, not form a huge Hilbert matrix or approximate continuous dynamics. The general operator identity, smooth control, arbitrary-reference error, moments and work statements are analytic arguments and remain subject to independent review. Exact execution/source receipts and every actual failure will be preserved. The earlier single-port candidate's scientific program will not be rerun, and no prior packet, canonical source, Git state, audit, axiom, prompt or operational checkpoint will be changed.

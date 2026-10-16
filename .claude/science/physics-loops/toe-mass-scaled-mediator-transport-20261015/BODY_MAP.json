@@ -1,0 +1,33 @@
+{
+  "schema": "exact_body_intervals_v1",
+  "bodies": [
+    {
+      "name": "mass_scaled_candidate",
+      "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 10141,
+      "end_byte_exclusive": 20394,
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "role": "root-origin mathematical derivation"
+    },
+    {
+      "name": "mass_scaled_review",
+      "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20696,
+      "end_byte_exclusive": 45707,
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "role": "separate same-family source-exposed analytic review"
+    }
+  ],
+  "parent_body": {
+    "container": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "start_byte_inclusive": 44002,
+    "end_byte_exclusive": 72848,
+    "bytes": 28846,
+    "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+    "role": "single-port parent body; geometry inherited through the sole direct parent"
+  }
+}

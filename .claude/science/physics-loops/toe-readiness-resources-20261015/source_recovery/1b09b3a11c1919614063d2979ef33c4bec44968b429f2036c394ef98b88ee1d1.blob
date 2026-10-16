@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-15T14:52:05.181869+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/capture_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/capture_metadata.py",
+    "bytes": 5278,
+    "sha256": "d547b02deca6a116c7787b14205248e055275f51da26079e46003a65adc14a8c"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/record_metadata.py",
+    "bytes": 1782,
+    "sha256": "6f97d4d7dcdebc0ee9e2ed6246b1e9089f71db2d9752a08fe26ddd868fd80968"
+  },
+  "scientific_execution": false,
+  "timeout_seconds": 60
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+"""Contemporaneous one-invocation source-at-launch and output recorder."""
+from pathlib import Path
+import hashlib,json,datetime,subprocess,sys
+ROOT=Path(__file__).resolve().parent
+with (ROOT/'INVOCATION_MARKER').open('x') as f: f.write(datetime.datetime.now(datetime.timezone.utc).isoformat()+'\n')
+pre=json.loads((ROOT/'PREEXEC_FREEZE.json').read_text())
+for item in pre['files']:
+    assert hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest()==item['sha256'],item['path']
+launch={'launched_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'recorder_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'python_executable':sys.executable,'python_version':sys.version,'command':[sys.executable,'exact_route_fixture.py'],'cwd':str(ROOT),'preexec_freeze_sha256':hashlib.sha256((ROOT/'PREEXEC_FREEZE.json').read_bytes()).hexdigest(),'sources_at_launch':pre['files']}
+(ROOT/'LAUNCH_RECEIPT.json').write_text(json.dumps(launch,indent=2)+'\n')
+with (ROOT/'STDOUT.log').open('wb') as out,(ROOT/'STDERR.log').open('wb') as err:
+    proc=subprocess.run([sys.executable,str(ROOT/'exact_route_fixture.py')],cwd=ROOT,stdout=out,stderr=err)
+outputs=[]
+for name in ('STDOUT.log','STDERR.log','EXACT_RESULT.json','ROUTING_CERTIFICATE.json'):
+    p=ROOT/name
+    if p.exists():
+        b=p.read_bytes(); outputs.append({'path':name,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+receipt={'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'launch_receipt_sha256':hashlib.sha256((ROOT/'LAUNCH_RECEIPT.json').read_bytes()).hexdigest(),'returncode':proc.returncode,'outputs':outputs}
+(ROOT/'EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))
+raise SystemExit(proc.returncode)

@@ -1,0 +1,15 @@
+{
+  "proposed_utc": "2026-10-15T14:11:01.548601+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+    "bytes": 9213,
+    "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783"
+  },
+  "status": "Root-origin analytic proposal; joint source correction/review and separate check outstanding.",
+  "scientific_executions": 0,
+  "dependencies": {
+    "mass_candidate": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+    "mass_root_acceptance": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf",
+    "joint_uncorrected_source": "818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7"
+  }
+}

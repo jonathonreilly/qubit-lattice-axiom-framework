@@ -1,0 +1,27 @@
+{
+  "finished_utc": "2026-10-15T12:49:15.689015+00:00",
+  "launch_receipt_sha256": "4f050e92cf34cc9e074dfd9efea124ccae06418d2aba65d5638cff9e08dea9da",
+  "returncode": 0,
+  "outputs": [
+    {
+      "path": "STDOUT.log",
+      "bytes": 1131,
+      "sha256": "fe3e868b90287e9f28b6c0229005c769666cd0fa045eb48e9c37d0d3457aa7e5"
+    },
+    {
+      "path": "STDERR.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_RESULT.json",
+      "bytes": 27111,
+      "sha256": "7bd8fa877573666c52a1d118dd26e06c182c3c8e0f070d145c618354553b278f"
+    },
+    {
+      "path": "ROUTING_CERTIFICATE.json",
+      "bytes": 820568,
+      "sha256": "23474052cf61420d316c13253349b65455cefc0386a2199e3d62a11fc25192af"
+    }
+  ]
+}

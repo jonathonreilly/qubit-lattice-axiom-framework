@@ -1,0 +1,15 @@
+# Work log
+
+2026-10-15 13:11:40 UTC: bounded task began. Existing exact-source coverage reused; clock conventions and separate review refreshed. No output directory existed.
+
+Source capture is contemporaneous before the one proposed selected diagnostic. A source retrieval used the misspelled directory renewal_61014_214309 and failed after its first read succeeded; the needed moment formulas were already covered by prior full reading. The separate review initially exceeded the output budget; its complete omitted residual argument was recovered explicitly. These are retrieval errors, not scientific runs.
+
+Analytic construction found: choose a certified nonzero target amplitude as final clock vertex. Positive two-site logarithms use complex coefficient and strictly positive remaining-tail norm without dividing by a potentially zero amplitude. One final onsite phase supplies the pivot phase. No equality oracle for a computable zero is needed.
+
+2026-10-15 13:32:57 UTC: the one predeclared scientific child ran once, exit 0, empty stderr. It recorded 31 predicates; selected geometry307 NN pairs,271 declared,36 omitted;125 S sites,125 supplied memory sites,19931 full SWAPs. Preserved failed mutants:21 wrong retained labels for the forward-only first word; reversed hopping squared vector error1924/625. Complete selected adjacency rows and reported predicates read after execution. No inverse, dynamics, waveform or large-Hilbert computation occurred.
+
+Post-run analytic editing clarified the complete Pauli control dictionary, nominal versus static actual baseline and reserve/return distinction, static-baseline moment allowances, guard/timing obligations and fault work variation. It added the explicit bounded theorem and actual selected evidence. Code and scientific inputs were unchanged. POST_RUN_DERIVATION.diff preserves every argument change from the contemporaneously saved preexecution source. The final complete argument was read in two untruncated chunks; the subsequent short final patch was inspected in full. No additional scientific run occurred.
+
+2026-10-15T13:44:13.101012+00:00: final metadata-only source freshness read performed; see FINAL_SOURCE_FRESHNESS.json. Editable prompt files changed: none. Platform instructions were not modified.
+
+2026-10-15T13:48:06.473788+00:00: final composition paragraph explicitly preserves the aged nonclock state, retained records, complete-output error propagation and actual-versus-nominal post-generator distinction. Inspected the complete short addition. Final report written; final source diff regenerated. Metadata-only checks confirm scientific code, launch wrapper, plan, source manifest and recorded outputs remain byte-identical to their sealed/executed identities. No new science was executed.

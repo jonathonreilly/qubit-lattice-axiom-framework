@@ -1,0 +1,36 @@
+{
+  "sealed_utc": "2026-10-15T12:11:27.578993+00:00",
+  "purpose": "Preexecution declaration for one selected exact scientific fixture; no execution yet",
+  "items": [
+    {
+      "path": "SELECTED_PLAN.md",
+      "bytes": 2529,
+      "sha256": "1fd4edbedabc4fe05278fab9c1904a8d101c41a71af61c7b308cf1a6f829e52c"
+    },
+    {
+      "path": "INPUT.json",
+      "bytes": 164,
+      "sha256": "5e2642664fedd9022b4c971a547cf82ae58d4e8d5354932daa53205ef87ae702"
+    },
+    {
+      "path": "exact_fixture.py",
+      "bytes": 14481,
+      "sha256": "aec83fb3d954529e5c5f9a3251aa381e10989fcb42104af3fd99c13a7c8f3a17"
+    },
+    {
+      "path": "DERIVATION.md",
+      "bytes": 23925,
+      "sha256": "c3578a5f0c1f14f7f001a13b2b960271cb8f41af6cd8fd96d4b719db7ba355fc"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2367,
+      "sha256": "a20dda7ab614b80ea1eb27760234494f56b5c0c49975367bf58bce4bde5be03f"
+    },
+    {
+      "path": "ROOT_EXPOSURE.md",
+      "bytes": 1289,
+      "sha256": "0aa6bce308d7e2b93c9950b54f83b07a56efcd30f982baf798bffeae58ec0183"
+    }
+  ]
+}

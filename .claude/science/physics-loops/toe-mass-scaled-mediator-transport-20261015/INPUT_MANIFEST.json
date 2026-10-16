@@ -1,0 +1,217 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/ACTUAL_BINDING.json",
+      "bytes": 4325,
+      "sha256": "cf26bfbf8b90ede063c2b1eb795ba559ecf188c0eed60eebd00b3590777f893f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/ARCHIVE_INDEX.json",
+      "bytes": 5107,
+      "sha256": "aafd54b06e552f7ddbca10258d78831cb818022a5b87efaa2294cc84244a5a73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/ARTIFACT_PLAN.md",
+      "bytes": 557,
+      "sha256": "077135d1c872f37fca233fad931af2c6d5576e4ce1f143f0f762ab768aa13cfa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 740,
+      "sha256": "adc658170fd7518c4cc731c00d2bd68a43a4e9d263196896f9ccf723a0933e31"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/BODY_MAP.json",
+      "bytes": 1539,
+      "sha256": "dbe6316716fd3d524958b63f912e0761f34d84385358e7aefc19fb3001688d21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 879,
+      "sha256": "f3b06d6142e5dafca95e9ee5f46249cba74fe6b0d3de2eb7428625279fc45902"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/DEPENDENCIES.json",
+      "bytes": 801,
+      "sha256": "a229a781dc5b8f4ddb84e76a42eff6dd6719c5d60f9bb09dae5b63344c7cad06"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/EXPOSURE_AND_LIMITS.md",
+      "bytes": 1834,
+      "sha256": "db48392af86e2bd04e293861059100f3226dcd5790a4eff80f9ee8a85e8e6c59"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/GOAL.md",
+      "bytes": 274,
+      "sha256": "c4e93440976ff51ab30f25225e0a2b7b61ecefe5d8dda4d4c29a679e1affa8c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/HANDOFF.md",
+      "bytes": 680,
+      "sha256": "11b73d18e4b6a3c2a4493a385b3b8c056686f2a1a47e9eab070d065c49706e21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/PR_BODY.md",
+      "bytes": 1972,
+      "sha256": "ecb9a6d5eed9502b56f99e83828abb717b460ae1caba05808084c927c9fbc49b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/PR_TITLE.txt",
+      "bytes": 85,
+      "sha256": "da668dbf98c903c8d65f39d7d7cd57ba37506d5ae65ad9ed7591a102070842b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/PUBLICATION_STATE.json",
+      "bytes": 538,
+      "sha256": "9442d83201faeadea218e7a5033a7c81cce25d9f1e0eb080edf102d7adf1d5f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/REVIEW_HISTORY.md",
+      "bytes": 3532,
+      "sha256": "6e64e5d326be50c1637a4bde9c4ea8b7ad3e37020261e7643e0cbdc6cd728e0f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/SOURCE_MANIFEST.json",
+      "bytes": 16249,
+      "sha256": "437aafed9af2a530ff1c0418a46181fce74ca2aefcf56a5d2a33291c3747450e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/TRACE_GATE.md",
+      "bytes": 504,
+      "sha256": "a7a96de5adfe6711c03f2bc168c1592f14bb7639d071ebdb5beb7d292ab5041e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/binding_sources/EXTERNAL_9605_SCOPE.json",
+      "bytes": 924,
+      "sha256": "7ab489fb97daf0e32e64633cbe31d426da6057b990882c5749ae4714dd598d98"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/binding_sources/OPEN_DELTA.json",
+      "bytes": 519,
+      "sha256": "0fad200faab521075bae9f4c0e6bef4d6f79823ca9fc66a4ec9bd8ca40f38d5f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/binding_sources/REFS.json",
+      "bytes": 747,
+      "sha256": "6d895873c53ebc2db5919703e3a415d9bdc2ab052cdf8e7db7e3ee25116308dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/070ecbfde3e9_ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/12940dac4eec_FINAL_SOURCE_RECHECK.json",
+      "bytes": 4006,
+      "sha256": "12940dac4eec8d28e6f35c0b5709b6d7074c57c51a620aaa3ed8de69498d307c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/16c557054f50_FINAL_FREEZE.json",
+      "bytes": 608,
+      "sha256": "16c557054f500abbb3e4bdd22782267daa1e9dcfc0672990eca4f2070767e03b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/494b4a1b7eaf_READ_COVERAGE.md",
+      "bytes": 3217,
+      "sha256": "494b4a1b7eaffc134875888eb0d4a3b81312d9458c6037bbee8733879b5f7368"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/4eac1e235892_stdout",
+      "bytes": 809,
+      "sha256": "4eac1e235892dce3bd3f44545c022e1eda1a79ef56f88e7b4cf933d0b288af54"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/55f84274ea10_close_review.py",
+      "bytes": 3716,
+      "sha256": "55f84274ea10237a708ddf1e44f124b02e89f6b9e0dfd9ffab769cd91ca11269"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/5871330e1923_PROPOSAL_FREEZE.json",
+      "bytes": 390,
+      "sha256": "5871330e1923f70f7872f02f14e0d7e70dd9c3ab27b461e55b0dcd74c0165492"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/7032c75133b6_FINAL_FREEZE.json",
+      "bytes": 5502,
+      "sha256": "7032c75133b61287fa22da90149a6e04654d7810cc584e76b83d90613610920b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/7d755929ed1d_stdout",
+      "bytes": 739,
+      "sha256": "7d755929ed1d8b0c7f3753cf119255143b9f038ec92a1dfd1aa444668529aa91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/8319969f2412_SEAL_RECEIPT.json",
+      "bytes": 895,
+      "sha256": "8319969f241212d43d85bc2b02974451417d737ba09f96571fd372888c71baef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/96673d1ea60d_SOURCE_CLOSURE.json",
+      "bytes": 3579,
+      "sha256": "96673d1ea60d1dbaaacbaff529a8c2ed5936a13cd84e2456bf0c5a6d2124014b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/9bad8213ab82_LAUNCH.json",
+      "bytes": 1035,
+      "sha256": "9bad8213ab8229df7ae321311eed6ced55cc8dc5ece0be743f40d73bfe1aa119"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/9ed1cf096359_recorder_source.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/c7342b78acc2_EXECUTION.json",
+      "bytes": 963,
+      "sha256": "c7342b78acc2c134b706ca335cfc85b5685c8db4cca23f556e332c9950a28d03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/cbfaec06c0e8_EXECUTION.json",
+      "bytes": 957,
+      "sha256": "cbfaec06c0e87ea7b45172e2b53ec9f4f6089cd5895eddd6e385d0740649d0e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/cebbafe2b0b3_child_source.py",
+      "bytes": 3359,
+      "sha256": "cebbafe2b0b381ec1032a4b4c519c24b31ed1cb66905acb395b79a2b889a5a2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e2a84f2ecca1_LAUNCH.json",
+      "bytes": 1033,
+      "sha256": "e2a84f2ecca1491b29ec7293156541736441d1f8ad01bbc8d270e1057d947cdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e37286b1a818_SOURCE_MANIFEST.json",
+      "bytes": 4505,
+      "sha256": "e37286b1a818774976d81f3863b9ab18b48f691bd3dfd6bf610f97be96fc909b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e3b0c44298fc_stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/f3c8bf07f6f9_child_source.py",
+      "bytes": 1196,
+      "sha256": "f3c8bf07f6f9a987fa2426067f123c33e455e4e4e51b485a1506258078025c5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/fcf66962cfe1_seal_metadata.py",
+      "bytes": 2238,
+      "sha256": "fcf66962cfe1b24050a0c22a18a9400e29649f9c3f46a1503b4cdd8b64e720e5"
+    },
+    {
+      "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 45751,
+      "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc"
+    },
+    {
+      "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 72885,
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649"
+    }
+  ],
+  "scope": "Identities and body/dependency/binding structure only; no scientific execution.",
+  "canonical_binding_required": true
+}

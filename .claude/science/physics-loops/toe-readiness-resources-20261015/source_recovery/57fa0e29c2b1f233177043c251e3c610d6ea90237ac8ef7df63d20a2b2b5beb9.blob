@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-15T14:49:38.349503+00:00",
+  "status": "Exact correction binding supported; root acceptance remains separate.",
+  "files": [
+    {
+      "path": "BINDING_RESULT.json",
+      "bytes": 6310,
+      "sha256": "44d0bea91fc53f3d0b8bcf63db103f29c852e6cc816529de1044663db8d6b97d"
+    },
+    {
+      "path": "FINAL_SOURCE_CLOSURE.json",
+      "bytes": 5074,
+      "sha256": "ad6514a827688342447cc2b2394a47643dac5d20cd680b1e23ab289692e24354"
+    },
+    {
+      "path": "METADATA_LAUNCH.json",
+      "bytes": 390,
+      "sha256": "f66b558e24c9434b6c44dde36a1b9cc5d33ce6eb929cbe54b549077727ce2e9d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6274,
+      "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+    },
+    {
+      "path": "SEAL_LAUNCH.json",
+      "bytes": 395,
+      "sha256": "cbfbd781a016865893c3eaf7ef23e8d20daadca8b6ce2806311c149bca2dac04"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4899,
+      "sha256": "a25eb0d72aeb878a93d2031f4343b1d932a817828cc90c59c47ab3ab593b701e"
+    },
+    {
+      "path": "bind_metadata.py",
+      "bytes": 4964,
+      "sha256": "034007227658952584c7069e60a0db6b8290802876128b0e6c6328bd251795da"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 1989,
+      "sha256": "4609012fafc12081d117c1418e394ece87da51d19b093f510e61c8993d0fe1f3"
+    },
+    {
+      "path": "sources/joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478"
+    },
+    {
+      "path": "sources/local_clock_joint_readiness_correction/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "path": "sources/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+    },
+    {
+      "path": "sources/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_correction/CORRECTION.diff",
+      "bytes": 7782,
+      "sha256": "465e95c3312a2e993888ed66b7a5b8f16abb391885d52687e4456df127d3955c"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_correction/DERIVATION.md",
+      "bytes": 10500,
+      "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_correction/FINAL_FREEZE.json",
+      "bytes": 1235,
+      "sha256": "ff8cf33e30c43fed1b976a22b985189110fb9ac3524cd0e8359b50e56e1497ea"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_correction/SCOPE.md",
+      "bytes": 589,
+      "sha256": "3adf7494c03a9d6a889d36d6e2fa9482cfba801b79f14af6c9fe66402480f312"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_correction/SOURCE_MANIFEST.json",
+      "bytes": 6527,
+      "sha256": "6d1f573d67167203275eeab83980a4c9c911a32d989f6d152e9dfa2757fe7561"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_decisive_check/FINAL_FREEZE.json",
+      "bytes": 3188,
+      "sha256": "99f418f191eb26bb1cc9bd2b63a32457f0a6b5b07964b30997b812b91016374e"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_decisive_check/REPORT.md",
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9213,
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783"
+    },
+    {
+      "path": "sources/polynomial_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 785,
+      "sha256": "a11a3e726ad4c97465c345be1b735a3934dd022e7afe4f1a211698693d58f43e"
+    }
+  ],
+  "nested_FINAL_FREEZE_members": [
+    "sources/polynomial_joint_readiness_correction/FINAL_FREEZE.json",
+    "sources/polynomial_joint_readiness_decisive_check/FINAL_FREEZE.json"
+  ],
+  "exclusion": "Only the exact top-level seal path is excluded; nested freeze files are included.",
+  "scientific_executions": 0
+}

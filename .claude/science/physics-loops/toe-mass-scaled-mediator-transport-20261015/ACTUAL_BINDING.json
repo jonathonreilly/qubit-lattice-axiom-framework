@@ -1,0 +1,83 @@
+{
+  "kind": "actual_canonical_source_binding",
+  "utc": "2026-10-15T14:42:08.360325+00:00",
+  "base_head": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+  "base_branch": "physics-loop/toe-shared-mediator-programming-20261015",
+  "planned_feature_branch": "physics-loop/toe-mass-scaled-mediator-transport-20261015",
+  "parent_pr": {
+    "baseRefName": "physics-loop/toe-compensated-reservoir-preparation-20261015",
+    "headRefName": "physics-loop/toe-shared-mediator-programming-20261015",
+    "headRefOid": "60d0ac6642802cdbdea27c6c2c49d0825cba48cd",
+    "isDraft": false,
+    "number": 9604,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9604"
+  },
+  "origin_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "instruction_revision": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "canonical_note": {
+    "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 45751,
+    "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc"
+  },
+  "canonical_parent": {
+    "claim_id": "nearest_neighbor_shared_mediator_programming_bounded_theorem_note_2026-10-15",
+    "path": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 72885,
+    "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+    "role": "sole direct mathematical parent: single-port construction and original geometry",
+    "inherits": "literal inventory, fixed v0/e(v0), H0+K_X, fixed arcs, full-output and isolation premises"
+  },
+  "raw_bodies": [
+    {
+      "name": "mass_scaled_candidate",
+      "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 10141,
+      "end_byte_exclusive": 20394,
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "role": "root-origin mathematical derivation"
+    },
+    {
+      "name": "mass_scaled_review",
+      "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20696,
+      "end_byte_exclusive": 45707,
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "role": "separate same-family source-exposed analytic review"
+    }
+  ],
+  "parent_body": {
+    "container": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "start_byte_inclusive": 44002,
+    "end_byte_exclusive": 72848,
+    "bytes": 28846,
+    "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+    "role": "single-port parent body; geometry inherited through the sole direct parent"
+  },
+  "source_proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_publication_draft/FINAL_FREEZE.json",
+    "bytes": 14582,
+    "sha256": "8d8ce2f8fb5600929904e0cc01963b7416cfee7ce335e7eedcea6b713b7e1230"
+  },
+  "root_source_closure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/SOURCE_CLOSURE.json",
+    "bytes": 3579,
+    "sha256": "96673d1ea60d1dbaaacbaff529a8c2ed5936a13cd84e2456bf0c5a6d2124014b"
+  },
+  "fresh_fetch_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/main_refresh_1413/EXECUTION.json",
+    "bytes": 1196,
+    "sha256": "1f6437dcc29d25770d2f2b3ec5c52102553dfdad4b79e8e53f2cc7291adb348b"
+  },
+  "parent_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/mass_scaled/runs/prepare_parent/EXECUTION.json",
+    "bytes": 974,
+    "sha256": "4cbcc5f51cc57e6933e08656cdc359b32a3b2f7d6f460469ca5d1777f50a43e9"
+  },
+  "canonical_execution_not_yet_performed": true,
+  "retained_audit": false
+}

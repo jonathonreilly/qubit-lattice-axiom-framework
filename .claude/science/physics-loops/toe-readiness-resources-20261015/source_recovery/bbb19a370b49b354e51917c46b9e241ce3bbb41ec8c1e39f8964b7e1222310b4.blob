@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-10-15T15:06:33.472212+00:00",
+  "preseal_completed_utc": "2026-10-15T15:06:33.486164+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/seal_metadata.py"
+  ],
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/seal_metadata.py",
+    "bytes": 3917,
+    "sha256": "c62cc3e50511d8b9950a01f84ec1c410563c6e2271974030f60796d1d92162b7"
+  },
+  "actual_metadata_receipts_checked": [
+    {
+      "label": "capture",
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/capture/LAUNCH.json",
+        "bytes": 1063,
+        "sha256": "1b09b3a11c1919614063d2979ef33c4bec44968b429f2036c394ef98b88ee1d1"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/capture/EXECUTION.json",
+        "bytes": 960,
+        "sha256": "42ff097cd1c0d6d3800947ee6775f0ca77321a144029fd6d1a540c8b9cb0f55e"
+      }
+    },
+    {
+      "label": "final",
+      "launch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/final/LAUNCH.json",
+        "bytes": 1065,
+        "sha256": "d17af944333edfb7d8871f41c59d90c57e5e801b6c229e1dd94ec9e1dd625404"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/final/EXECUTION.json",
+        "bytes": 954,
+        "sha256": "f557cd388260dc5c8979ac62197329cd365ec2f5cf568fdadb83a0cb867542b9"
+      }
+    }
+  ],
+  "scope": "In-process source/freshness/preseal record; final completion confirmed by successful tool exit. No independent launcher or scientific execution claimed.",
+  "scientific_programs_run": 0,
+  "historical_scientific_replays": 0
+}

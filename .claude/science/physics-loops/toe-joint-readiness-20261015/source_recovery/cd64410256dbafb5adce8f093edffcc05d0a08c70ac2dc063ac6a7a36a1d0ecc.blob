@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-10-15T14:19:07.634137+00:00",
+  "purpose": "Final source stability and complete byte binding only",
+  "all_closing_identities_still_match": true,
+  "historical_body_preserved_exactly": true,
+  "scientific_executions": 0,
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 41470,
+    "sha256": "0087deec85e8efcfdd41dfc40eb68b3ca63d7811fc039e7f0da73bd2cb855cfb"
+  },
+  "launch": {
+    "path": "CORRECTED_SEAL_LAUNCH.json",
+    "bytes": 267,
+    "sha256": "ab06e6bc72910b67550d31a4c27c55c43018866b8e9a4bff8e1636d61c8b718e"
+  }
+}

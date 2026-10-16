@@ -1,0 +1,251 @@
+{
+  "schema": "pinned_source_and_recovery_v1",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "role": "complete candidate embedded once",
+      "recovery_interval": {
+        "name": "mass_scaled_candidate",
+        "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 10141,
+        "end_byte_exclusive": 20394,
+        "bytes": 10253,
+        "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+        "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+        "role": "root-origin mathematical derivation"
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "role": "complete report embedded once",
+      "recovery_interval": {
+        "name": "mass_scaled_review",
+        "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 20696,
+        "end_byte_exclusive": 45707,
+        "bytes": 25011,
+        "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+        "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+        "role": "separate same-family source-exposed analytic review"
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 390,
+      "sha256": "5871330e1923f70f7872f02f14e0d7e70dd9c3ab27b461e55b0dcd74c0165492",
+      "role": "root candidate proposal freeze",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/5871330e1923_PROPOSAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf",
+      "role": "root conditional source acceptance",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/070ecbfde3e9_ACCEPTANCE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/SOURCE_CLOSURE.json",
+      "bytes": 3579,
+      "sha256": "96673d1ea60d1dbaaacbaff529a8c2ed5936a13cd84e2456bf0c5a6d2124014b",
+      "role": "actual root source closure record",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/96673d1ea60d_SOURCE_CLOSURE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/FINAL_FREEZE.json",
+      "bytes": 608,
+      "sha256": "16c557054f500abbb3e4bdd22782267daa1e9dcfc0672990eca4f2070767e03b",
+      "role": "root acceptance packet freeze",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/16c557054f50_FINAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/close_review.py",
+      "bytes": 3716,
+      "sha256": "55f84274ea10237a708ddf1e44f124b02e89f6b9e0dfd9ffab769cd91ca11269",
+      "role": "actual root metadata source, archived as data",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/55f84274ea10_close_review.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/FINAL_FREEZE.json",
+      "bytes": 5502,
+      "sha256": "7032c75133b61287fa22da90149a6e04654d7810cc584e76b83d90613610920b",
+      "role": "separate review packet freeze",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/7032c75133b6_FINAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/READ_COVERAGE.md",
+      "bytes": 3217,
+      "sha256": "494b4a1b7eaffc134875888eb0d4a3b81312d9458c6037bbee8733879b5f7368",
+      "role": "complete reading and analytic coverage",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/494b4a1b7eaf_READ_COVERAGE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/SOURCE_MANIFEST.json",
+      "bytes": 4505,
+      "sha256": "e37286b1a818774976d81f3863b9ab18b48f691bd3dfd6bf610f97be96fc909b",
+      "role": "review source identities and recovery map",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e37286b1a818_SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/FINAL_SOURCE_RECHECK.json",
+      "bytes": 4006,
+      "sha256": "12940dac4eec8d28e6f35c0b5709b6d7074c57c51a620aaa3ed8de69498d307c",
+      "role": "actual review freshness record",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/12940dac4eec_FINAL_SOURCE_RECHECK.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/SEAL_RECEIPT.json",
+      "bytes": 895,
+      "sha256": "8319969f241212d43d85bc2b02974451417d737ba09f96571fd372888c71baef",
+      "role": "review in-process preseal record",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/8319969f2412_SEAL_RECEIPT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/seal_metadata.py",
+      "bytes": 2238,
+      "sha256": "fcf66962cfe1b24050a0c22a18a9400e29649f9c3f46a1503b4cdd8b64e720e5",
+      "role": "review preseal metadata source",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/fcf66962cfe1_seal_metadata.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/LAUNCH.json",
+      "bytes": 1033,
+      "sha256": "e2a84f2ecca1491b29ec7293156541736441d1f8ad01bbc8d270e1057d947cdf",
+      "role": "actual reviewer metadata capture: LAUNCH.json; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e2a84f2ecca1_LAUNCH.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 963,
+      "sha256": "c7342b78acc2c134b706ca335cfc85b5685c8db4cca23f556e332c9950a28d03",
+      "role": "actual reviewer metadata capture: EXECUTION.json; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/c7342b78acc2_EXECUTION.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/child_source.py",
+      "bytes": 3359,
+      "sha256": "cebbafe2b0b381ec1032a4b4c519c24b31ed1cb66905acb395b79a2b889a5a2f",
+      "role": "actual reviewer metadata capture: child_source.py; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/cebbafe2b0b3_child_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/recorder_source.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c",
+      "role": "actual reviewer metadata capture: recorder_source.py; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/9ed1cf096359_recorder_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/stdout",
+      "bytes": 809,
+      "sha256": "4eac1e235892dce3bd3f44545c022e1eda1a79ef56f88e7b4cf933d0b288af54",
+      "role": "actual reviewer metadata capture: stdout; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/4eac1e235892_stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "actual reviewer metadata capture: stderr; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e3b0c44298fc_stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/LAUNCH.json",
+      "bytes": 1035,
+      "sha256": "9bad8213ab8229df7ae321311eed6ced55cc8dc5ece0be743f40d73bfe1aa119",
+      "role": "actual reviewer metadata final: LAUNCH.json; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/9bad8213ab82_LAUNCH.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/EXECUTION.json",
+      "bytes": 957,
+      "sha256": "cbfaec06c0e87ea7b45172e2b53ec9f4f6089cd5895eddd6e385d0740649d0e2",
+      "role": "actual reviewer metadata final: EXECUTION.json; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/cbfaec06c0e8_EXECUTION.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/child_source.py",
+      "bytes": 1196,
+      "sha256": "f3c8bf07f6f9a987fa2426067f123c33e455e4e4e51b485a1506258078025c5a",
+      "role": "actual reviewer metadata final: child_source.py; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/f3c8bf07f6f9_child_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/recorder_source.py",
+      "bytes": 1418,
+      "sha256": "9ed1cf096359b3c14ca2e9c3f3f752b54c58c252f246bbf83a9eaf581db5167c",
+      "role": "actual reviewer metadata final: recorder_source.py; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/9ed1cf096359_recorder_source.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/stdout",
+      "bytes": 739,
+      "sha256": "7d755929ed1d8b0c7f3753cf119255143b9f038ec92a1dfd1aa444668529aa91",
+      "role": "actual reviewer metadata final: stdout; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/7d755929ed1d_stdout"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/metadata_runs/final/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "actual reviewer metadata final: stderr; never replayed",
+      "recovery_path": ".claude/science/physics-loops/toe-mass-scaled-mediator-transport-20261015/source_recovery/e3b0c44298fc_stderr"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 72885,
+      "sha256": "68f0ee48bc27f86fabb19f1920cd63f8ea829b716c2fde043fe68001aa6e5649",
+      "role": "sole direct mathematical parent",
+      "recovery_path": null,
+      "recovery_note": "Canonical source referenced at exact identity; no recursive parent packet copy."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "role": "historical single-port source, inherited through canonical parent",
+      "recovery_interval": {
+        "container": "docs/NEAREST_NEIGHBOR_SHARED_MEDIATOR_PROGRAMMING_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 44002,
+        "end_byte_exclusive": 72848,
+        "bytes": 28846,
+        "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+        "role": "single-port parent body; geometry inherited through the sole direct parent"
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "role": "applicable instructions, complete prior reading reused at unchanged identity",
+      "recovery_path": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "role": "applicable instructions, complete prior reading reused at unchanged identity",
+      "recovery_path": null
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "previously applied review skill; no new audit process invoked",
+      "recovery_path": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "role": "title/body formatting excerpt only; publication process not invoked",
+      "recovery_path": null
+    }
+  ],
+  "recovery_policy": "Candidate and review each embedded once; selected small evidence deduplicated by SHA256; parent packet referenced, not recursively copied.",
+  "review_freeze_members_rechecked": 29,
+  "root_freeze_members_rechecked": 3
+}

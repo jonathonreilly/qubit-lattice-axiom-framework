@@ -1,0 +1,33 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,difflib,re
+Q=Path(__file__).resolve().parent;N=Q.parent;A=N/'polynomial_joint_readiness_correction';V=N/'polynomial_joint_readiness_decisive_check';R=N/'polynomial_joint_readiness_correction_check';O=N/'polynomial_joint_readiness_root_candidate'
+def read(p):return json.loads(p.read_text())
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(p,row):
+ v=pin(p);assert all(v[k]==row[k] for k in ['bytes','sha256']),str(p)
+assert pin(A/'DERIVATION.md')['sha256']=='b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2'
+assert pin(V/'REPORT.md')['sha256']=='aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512'
+assert pin(R/'REPORT.md')['sha256']=='0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a'
+counts={}
+for folder,expected in [(A,'ff8cf33e30c43fed1b976a22b985189110fb9ac3524cd0e8359b50e56e1497ea'),(V,'99f418f191eb26bb1cc9bd2b63a32457f0a6b5b07964b30997b812b91016374e'),(R,'57fa0e29c2b1f233177043c251e3c610d6ea90237ac8ef7df63d20a2b2b5beb9')]:
+ seal=folder/'FINAL_FREEZE.json';assert pin(seal)['sha256']==expected
+ names=set()
+ for row in read(seal)['files']:
+  p=Path(row['path']);p=p if p.is_absolute() else folder/p;check(p,row);names.add(str(p.relative_to(folder)))
+ assert {str(p.relative_to(folder)) for p in folder.rglob('*') if p.is_file()}==names|{'FINAL_FREEZE.json'}
+ counts[folder.name]=len(names)
+for row in read(A/'SOURCE_MANIFEST.json')['sources']:check(Path(row['path']),row)
+for row in read(V/'SOURCE_MANIFEST.json')['sources']:check(Path(row['path']),row);check(V/row['copy'],row)
+for row in read(R/'SOURCE_MANIFEST.json')['sources']:check(Path(row['original']),row);check(R/row['copy'],row)
+old=(O/'DERIVATION.md').read_text();new=(A/'DERIVATION.md').read_text();transformed=old
+for a,b in read(A/'SOURCE_MANIFEST.json')['exact_replacements'].items():assert transformed.count(a)==1;transformed=transformed.replace(a,b)
+assert transformed==new
+assert ''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='frozen_b34df6b7/DERIVATION.md',tofile='corrected/DERIVATION.md'))==(A/'CORRECTION.diff').read_text()
+assert re.findall(r'(?m)(?:^ {4}.*\n)+',old)==re.findall(r'(?m)(?:^ {4}.*\n)+',new)
+assert re.findall(r'O\([^)]*\)',old)==re.findall(r'O\([^)]*\)',new)
+result={'utc':datetime.now(timezone.utc).isoformat(),'purpose':'Source/text closure only; not mathematical or empirical test','accepted_source':pin(A/'DERIVATION.md'),'review':pin(V/'REPORT.md'),'correction_check':pin(R/'REPORT.md'),'exact_diff':pin(A/'CORRECTION.diff'),'sealed_members':counts,'source_records_verified':{'correction':8,'original_review':11,'correction_review':13},'exact_replacement_count':5,'unchanged_displayed_equations':4,'scientific_executions':0,'reviewer_receipt_limit':'In-process metadata and tool-reported completion, no independently captured launch/stdout/exit provenance asserted','acceptance':pin(Q/'ACCEPTANCE.md')}
+(Q/'SOURCE_CLOSURE.json').write_text(json.dumps(result,indent=2)+'\n')
+(Q/'FINAL_FREEZE.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'status':'Root conditional source acceptance; no retained audit','files':[pin(p) for p in sorted(Q.iterdir()) if p.is_file()]},indent=2)+'\n')
+print(json.dumps({'acceptance':pin(Q/'ACCEPTANCE.md'),'closure':pin(Q/'SOURCE_CLOSURE.json'),'freeze':pin(Q/'FINAL_FREEZE.json'),'members':counts,'science':0}))

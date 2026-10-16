@@ -1,0 +1,10 @@
+{
+  "retrospective_inventory_counts": {
+    "same_component_declared": 124,
+    "fresh_original_undeclared": 18,
+    "same_component_undeclared": 11,
+    "fresh_original_declared": 18,
+    "intercomponent_undeclared": 6
+  },
+  "output": "ISOLATION_ADJACENCY_INVENTORY.json"
+}

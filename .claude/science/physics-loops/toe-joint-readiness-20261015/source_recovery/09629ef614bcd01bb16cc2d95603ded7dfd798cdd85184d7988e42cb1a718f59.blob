@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-15T14:10:36.342596+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/metadata.py",
+    "closing"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check",
+  "interpreter": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "purpose": "Source identity and evidence bookkeeping only; no science",
+  "code": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/metadata.py",
+    "bytes": 4197,
+    "sha256": "503ec37e3776f30e7fb5df2da2bf7ed21fb87608ba93d19c64a711ffaa5f4041"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_decisive_check/run_metadata.py",
+    "bytes": 1440,
+    "sha256": "4e3fc7458bdb3e993f1a4e18feedb608b1350d224add04128e75b306c46cc91c"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-15T11:58:10.807306+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_shared_mediator_decisive_check/verify_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_shared_mediator_decisive_check",
+  "source_sha256": "a98eda7f7f2d628d8780333c56ea540c08d7f8c303c71f26b788a67dc78a4d6c",
+  "scope": "Final metadata freshness only; not a scientific execution."
+}

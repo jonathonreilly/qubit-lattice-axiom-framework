@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-15T14:12:06.478934+00:00",
+  "purpose": "Final review source/evidence hash seal only",
+  "code": {
+    "path": "seal.py",
+    "bytes": 2444,
+    "sha256": "62e19d1af6e92add040e677c2ee86833d08b7d32d5a7e7916c17b21b55814723"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "frozen_utc": "2026-10-15T13:48:06.508273+00:00",
+  "status": "Frozen author candidate: conditional theorem, one selected exact diagnostic; separate review required",
+  "task_started_utc": "2026-10-15T13:11:40Z",
+  "scope": "Joint A/X readiness; actual H0 aging; supplied independent memory and explicit local positive controls; complete outputs",
+  "model_effort": "Inherited selected settings; no overrides or delegation",
+  "scientific_invocations_recorded": 1,
+  "code_or_input_changed_after_run": false,
+  "post_run_argument_changes": "Complete POST_RUN_DERIVATION.diff, including actual static-baseline/return, fault work/timing and composition clarifications and selected evidence",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 35766,
+      "sha256": "818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7"
+    },
+    {
+      "path": "EXACT_RESULT.json",
+      "bytes": 12395,
+      "sha256": "22d7515b8b90b557a1278f49ebc84fbeaac72342d4047245fe8f9be051d64a0a"
+    },
+    {
+      "path": "EXECUTION_RECEIPT.json",
+      "bytes": 1015,
+      "sha256": "507a4fd506b8e4b321a6d5034478992daceab9872660d5443c904ff42aa3032d"
+    },
+    {
+      "path": "FINAL_METADATA_RECEIPT.json",
+      "bytes": 991,
+      "sha256": "18677ab4fa45ac6196201e933526e33bd4fa3e9931ba029ff6eb186071e1de31"
+    },
+    {
+      "path": "FINAL_SOURCE_FRESHNESS.json",
+      "bytes": 4507,
+      "sha256": "878fdd4972487f291518e4daa2cd503c644a1f0959c104c06384be38fbffe01e"
+    },
+    {
+      "path": "LAUNCH_RECEIPT.json",
+      "bytes": 843,
+      "sha256": "58d6c189b4d70316c782d512e1e8fe7cfff5508667e1888954ef766df3660ccb"
+    },
+    {
+      "path": "POST_RUN_DERIVATION.diff",
+      "bytes": 16582,
+      "sha256": "9de0999dbaad27c3431c3b11afda624735c05a89ee8889c366690f06961d8e9d"
+    },
+    {
+      "path": "PREEXECUTION_SEAL.json",
+      "bytes": 1209,
+      "sha256": "0df120e85ad67e8531b113a93f68957745557543f526f715542f06382c5098d4"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6208,
+      "sha256": "bd60a26d89dbdb2d22218ef8e84dc03d100b06bca7887ad9254d7e801c9c8d06"
+    },
+    {
+      "path": "ROOT_EXPOSURE.md",
+      "bytes": 1406,
+      "sha256": "bb8544603b46849cc18a1f5f0ade8bdc095f4e0f1f2f08083bfc9c8d507ea075"
+    },
+    {
+      "path": "ROUTING_GEOMETRY_CERTIFICATE.json",
+      "bytes": 265799,
+      "sha256": "c1f2008f0e3055bcec53460181cd01bb0c7ebfe24cb090a4366c2ef7689b311f"
+    },
+    {
+      "path": "SELECTED_PLAN.md",
+      "bytes": 2971,
+      "sha256": "10703fe365884a91f2a6a83fc550fd9065c9f9b17b6ce9138e8bb757052aeec7"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3927,
+      "sha256": "3735f71d88bf9813e66e337e1975a1abe5f05baab50aee4ad809611dc8793b3e"
+    },
+    {
+      "path": "STDERR.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "STDOUT.log",
+      "bytes": 531,
+      "sha256": "224fd57bb1c2c1b5b16a7f9086dda6710b4c58a907c93ae66b6acaee38c7ca4b"
+    },
+    {
+      "path": "WORK_LOG.md",
+      "bytes": 2776,
+      "sha256": "27076cfb8b974dc3a40da1c40d63af9cb9c355e9d7339bd2fa2d4560955e9592"
+    },
+    {
+      "path": "exact_fixture.py",
+      "bytes": 10171,
+      "sha256": "c5fdb1571106d70c3c7dbe44e85b21c8638956e6909740d52d5b2a9a68384af7"
+    },
+    {
+      "path": "preexecution/DERIVATION.md",
+      "bytes": 29150,
+      "sha256": "292c5de0b5b15a013d9c6895b6b8de4c794f5c284c6fc43da601ba09db606fcc"
+    },
+    {
+      "path": "preexecution/ROOT_EXPOSURE.md",
+      "bytes": 1406,
+      "sha256": "bb8544603b46849cc18a1f5f0ade8bdc095f4e0f1f2f08083bfc9c8d507ea075"
+    },
+    {
+      "path": "preexecution/SELECTED_PLAN.md",
+      "bytes": 2971,
+      "sha256": "10703fe365884a91f2a6a83fc550fd9065c9f9b17b6ce9138e8bb757052aeec7"
+    },
+    {
+      "path": "preexecution/SOURCE_MANIFEST.json",
+      "bytes": 3927,
+      "sha256": "3735f71d88bf9813e66e337e1975a1abe5f05baab50aee4ad809611dc8793b3e"
+    },
+    {
+      "path": "preexecution/exact_fixture.py",
+      "bytes": 10171,
+      "sha256": "c5fdb1571106d70c3c7dbe44e85b21c8638956e6909740d52d5b2a9a68384af7"
+    },
+    {
+      "path": "preexecution/run_once.py",
+      "bytes": 1811,
+      "sha256": "0fba9bec3607c373107b86eb196e5257a8c526e98b4a5bc3a15d293c1c487ea3"
+    },
+    {
+      "path": "run_once.py",
+      "bytes": 1811,
+      "sha256": "0fba9bec3607c373107b86eb196e5257a8c526e98b4a5bc3a15d293c1c487ea3"
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": "sources/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": "sources/autonomous_derivation.md",
+      "bytes": 31689,
+      "sha256": "b726766403bf6f4b0080172d046cf773facad028eed538d7473417683b931bb7"
+    },
+    {
+      "path": "sources/base_geometry_result.json",
+      "bytes": 52672,
+      "sha256": "b22a3143e5df11e1c15220dbe6f1ac83c1ff623dc2559733cc1c0877e4dbc56f"
+    },
+    {
+      "path": "sources/compensated_canonical.md",
+      "bytes": 48637,
+      "sha256": "d28bb8d6a39ffcdce60f61fb47414abdcdd00e2cbbbb32013c4f8277b2a72ac8"
+    },
+    {
+      "path": "sources/finite_reservoir_canonical.md",
+      "bytes": 41771,
+      "sha256": "3560cefa1c9a9e8064a11d2fc683bedd0cab3109905df5bffecdbe1999ad15ad"
+    },
+    {
+      "path": "sources/geometry_memory.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a"
+    },
+    {
+      "path": "sources/geometry_reservoir.md",
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4"
+    },
+    {
+      "path": "sources/routed_derivation.md",
+      "bytes": 30045,
+      "sha256": "d228e9e0e1d7b272bea1d52332b2b29e58e8ec52d41df6b489c5c4a5ac17ef4a"
+    },
+    {
+      "path": "sources/singleport_derivation.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+    },
+    {
+      "path": "sources/singleport_review.md",
+      "bytes": 25855,
+      "sha256": "081d9eb9f65993fcaf11caa0c984e194a861ba5993a5bd92890d4e5e67edebf0"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "checked_utc": "2026-10-15T11:38:14.253053+00:00",
+  "checks": [
+    {
+      "snapshot": "sources/AGENTS.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/SCIENCE_WORKFLOW.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/SKILL_FRESHNESS_CHECK.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/autonomous_preparation_DERIVATION.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/multi_port_THEOREM.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/LOCAL_IMPLEMENTATION_ROUTE_NOTE.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/physics_loop_SKILL.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/physics_loop_references_DISCOVERY.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/physics_loop_references_CLAIM_STATUS.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/physics_loop_references_DELIVERY.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/autonomous_preparation_FINAL_FREEZE.json",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/geometry_biased_memory.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/geometry_finite_reservoir.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/PRIMITIVE_REGISTRY_CHECK.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/axiom_premise_nodes.json",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/critical_mediator_context.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    },
+    {
+      "snapshot": "sources/finite_range_mediator_context.md",
+      "snapshot_matches": true,
+      "current_source_matches": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+"""Contemporaneous source seal and one scientific child invocation."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys
+D=Path(__file__).resolve().parent
+def now():return datetime.now(timezone.utc).isoformat()
+def meta(p):
+ b=p.read_bytes();return {'path':str(p.relative_to(D)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+assert not (D/'LAUNCH_RECEIPT.json').exists(),'No second launch allowed'
+P=D/'preexecution';P.mkdir()
+names=['DERIVATION.md','SELECTED_PLAN.md','ROOT_EXPOSURE.md','SOURCE_MANIFEST.json','exact_fixture.py','run_once.py']
+for name in names:(P/name).write_bytes((D/name).read_bytes())
+seal={'sealed_utc':now(),'status':'Contemporaneous pre-execution source preservation','files':[meta(D/n) for n in names],'input':meta(D/'sources/base_geometry_result.json')}
+(D/'PREEXECUTION_SEAL.json').write_text(json.dumps(seal,indent=2)+'\n')
+argv=[sys.executable,str(D/'exact_fixture.py')]
+launch={'launch_utc':now(),'argv':argv,'cwd':str(D),'interpreter':sys.version,'seal':meta(D/'PREEXECUTION_SEAL.json'),'driver':meta(D/'run_once.py'),'scientific_execution_ordinal':1}
+(D/'LAUNCH_RECEIPT.json').write_text(json.dumps(launch,indent=2)+'\n')
+r=subprocess.run(argv,cwd=D,capture_output=True)
+(D/'STDOUT.log').write_bytes(r.stdout);(D/'STDERR.log').write_bytes(r.stderr)
+receipt={'completed_utc':now(),'returncode':r.returncode,'launch':meta(D/'LAUNCH_RECEIPT.json'),'stdout':meta(D/'STDOUT.log'),'stderr':meta(D/'STDERR.log'),'outputs':[meta(D/n) for n in ['EXACT_RESULT.json','ROUTING_GEOMETRY_CERTIFICATE.json'] if (D/n).exists()],'post_source':meta(D/'exact_fixture.py')}
+(D/'EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+sys.stdout.buffer.write(r.stdout);sys.stderr.buffer.write(r.stderr);sys.exit(r.returncode)

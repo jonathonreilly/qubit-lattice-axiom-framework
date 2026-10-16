@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-15T12:35:44.043422+00:00",
+  "finished_utc": "2026-10-15T12:35:45.235770+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_decisive_check/verify_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_decisive_check",
+  "exit_code": 0,
+  "scope": "Metadata only; no scientific execution.",
+  "source_sha256": "3050ce1b8fa4da64e77b46b3c542c94c99ad1c8a434ada4cc9d50943c755663a",
+  "stdout_sha256": "dd6e71309891bc29a7723abc0cdbc4100daa7576927db50945198582bf6083d0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 385,
+  "stderr_bytes": 0
+}

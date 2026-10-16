@@ -1,0 +1,1302 @@
+{
+  "started_utc": "2026-10-15T12:49:15.664383+00:00",
+  "source_sha256": "e831d559bc63f11a122024346123fbf40bc1d59c4d42697d53a0ea0e3d38c2e8",
+  "input_sha256": "7b4cc7071ee05b6668f51db4a5e305d845af1cf025cdbcecb3306744c84dc936",
+  "original_count": 74,
+  "auxiliary_count": 121,
+  "pure_memory_count": 121,
+  "swap_count": 9087,
+  "component_swap_counts": [
+    3569,
+    2345,
+    3173
+  ],
+  "component_distance_sums": [
+    860,
+    560,
+    662
+  ],
+  "omitted_edges": 37,
+  "new_memory_omitted_edges": 2,
+  "all_adjacencies": 300,
+  "adjacency_counts": {
+    "same_auxiliary_component_declared": 124,
+    "auxiliary_original_omitted": 18,
+    "same_auxiliary_component_omitted": 11,
+    "auxiliary_original_declared": 18,
+    "inter_auxiliary_component_omitted": 6,
+    "memory_auxiliary_declared": 3,
+    "memory_memory_declared": 118,
+    "memory_auxiliary_omitted": 2
+  },
+  "scientific_scope": "Selected exact permutation and geometry only; no inverse, Hilbert matrix or continuous dynamics.",
+  "status": "PASS_SELECTED_ROUTING_FIXTURE",
+  "checks": [
+    {
+      "name": "literal_input_identity",
+      "pass": true
+    },
+    {
+      "name": "component0_size",
+      "pass": true,
+      "m": 43
+    },
+    {
+      "name": "component0_root_exists",
+      "pass": true
+    },
+    {
+      "name": "component0_memory_fresh",
+      "pass": true
+    },
+    {
+      "name": "component1_size",
+      "pass": true,
+      "m": 35
+    },
+    {
+      "name": "component1_root_exists",
+      "pass": true
+    },
+    {
+      "name": "component1_memory_fresh",
+      "pass": true
+    },
+    {
+      "name": "component2_size",
+      "pass": true,
+      "m": 43
+    },
+    {
+      "name": "component2_root_exists",
+      "pass": true
+    },
+    {
+      "name": "component2_memory_fresh",
+      "pass": true
+    },
+    {
+      "name": "total_factor_counts",
+      "pass": true,
+      "original": 74,
+      "auxiliary": 121,
+      "memory": 121,
+      "total": 316
+    },
+    {
+      "name": "direct_matching_saturated_a1",
+      "pass": true,
+      "neighbors": [
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          2,
+          1
+        ],
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          -1,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "component0_connected_for_routing",
+      "pass": true
+    },
+    {
+      "name": "component0_route1_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route1_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route2_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route2_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route3_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route3_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route4_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route4_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route5_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route5_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route6_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route6_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route7_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route7_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route8_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route8_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route9_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route9_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route10_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route10_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route11_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route11_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route12_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route12_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route13_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route13_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route14_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route14_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route15_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route15_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route16_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route16_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route17_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route17_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route18_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route18_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route19_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route19_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route20_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route20_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route21_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route21_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route22_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route22_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route23_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route23_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route24_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route24_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route25_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route25_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route26_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route26_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route27_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route27_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route28_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route28_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route29_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route29_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route30_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route30_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route31_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route31_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route32_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route32_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route33_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route33_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route34_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route34_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route35_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route35_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route36_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route36_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route37_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route37_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route38_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route38_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route39_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route39_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route40_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route40_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route41_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route41_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route42_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route42_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_route43_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component0_route43_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component0_exact_word_count",
+      "pass": true,
+      "actual": 3569,
+      "sum_root_distances": 860
+    },
+    {
+      "name": "component1_connected_for_routing",
+      "pass": true
+    },
+    {
+      "name": "component1_route1_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route1_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route2_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route2_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route3_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route3_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route4_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route4_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route5_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route5_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route6_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route6_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route7_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route7_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route8_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route8_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route9_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route9_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route10_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route10_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route11_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route11_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route12_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route12_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route13_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route13_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route14_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route14_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route15_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route15_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route16_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route16_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route17_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route17_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route18_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route18_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route19_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route19_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route20_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route20_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route21_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route21_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route22_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route22_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route23_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route23_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route24_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route24_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route25_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route25_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route26_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route26_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route27_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route27_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route28_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route28_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route29_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route29_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route30_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route30_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route31_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route31_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route32_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route32_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route33_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route33_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route34_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route34_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_route35_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component1_route35_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component1_exact_word_count",
+      "pass": true,
+      "actual": 2345,
+      "sum_root_distances": 560
+    },
+    {
+      "name": "component2_connected_for_routing",
+      "pass": true
+    },
+    {
+      "name": "component2_route1_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route1_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route2_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route2_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route3_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route3_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route4_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route4_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route5_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route5_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route6_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route6_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route7_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route7_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route8_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route8_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route9_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route9_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route10_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route10_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route11_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route11_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route12_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route12_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route13_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route13_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route14_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route14_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route15_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route15_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route16_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route16_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route17_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route17_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route18_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route18_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route19_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route19_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route20_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route20_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route21_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route21_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route22_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route22_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route23_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route23_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route24_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route24_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route25_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route25_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route26_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route26_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route27_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route27_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route28_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route28_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route29_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route29_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route30_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route30_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route31_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route31_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route32_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route32_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route33_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route33_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route34_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route34_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route35_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route35_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route36_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route36_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route37_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route37_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route38_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route38_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route39_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route39_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route40_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route40_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route41_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route41_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route42_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route42_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_route43_simple_fresh_NN",
+      "pass": true
+    },
+    {
+      "name": "component2_route43_restores_intermediates",
+      "pass": true
+    },
+    {
+      "name": "component2_exact_word_count",
+      "pass": true,
+      "actual": 3173,
+      "sum_root_distances": 662
+    },
+    {
+      "name": "complete_joint_permutation",
+      "pass": true,
+      "swap_count": 9087
+    },
+    {
+      "name": "all_original_factors_fixed",
+      "pass": true
+    },
+    {
+      "name": "all_auxiliary_slots_receive_memory",
+      "pass": true
+    },
+    {
+      "name": "all_input_records_retained_in_memory",
+      "pass": true
+    },
+    {
+      "name": "forward_only_mutation_detected",
+      "pass": true,
+      "mutated_endpoint_word": 0,
+      "wrong_factor_count": 19,
+      "wrong_factors": [
+        [
+          -3,
+          -11,
+          -2
+        ],
+        [
+          27,
+          -6,
+          2
+        ],
+        [
+          30,
+          -6,
+          2
+        ],
+        [
+          33,
+          -6,
+          2
+        ],
+        [
+          34,
+          -6,
+          2
+        ],
+        [
+          35,
+          -6,
+          2
+        ],
+        [
+          36,
+          -6,
+          2
+        ],
+        [
+          37,
+          -6,
+          2
+        ],
+        [
+          38,
+          -6,
+          2
+        ],
+        [
+          39,
+          -6,
+          2
+        ],
+        [
+          40,
+          -6,
+          2
+        ],
+        [
+          41,
+          -6,
+          2
+        ],
+        [
+          42,
+          -6,
+          2
+        ],
+        [
+          43,
+          -6,
+          2
+        ],
+        [
+          44,
+          -6,
+          2
+        ],
+        [
+          45,
+          -6,
+          2
+        ],
+        [
+          46,
+          -6,
+          2
+        ],
+        [
+          47,
+          -6,
+          2
+        ],
+        [
+          49,
+          -6,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "exact_new_memory_isolation_edges",
+      "pass": true,
+      "new_edges": [
+        [
+          [
+            7,
+            -6,
+            2
+          ],
+          [
+            7,
+            -6,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            -6,
+            3
+          ],
+          [
+            7,
+            -6,
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "complete_declared_edges_NN",
+      "pass": true
+    },
+    {
+      "name": "fresh_used_degree_at_most4",
+      "pass": true,
+      "max_degree": 4,
+      "root_degrees": [
+        4,
+        4,
+        3
+      ]
+    },
+    {
+      "name": "selected_complete_adjacency_counts",
+      "pass": true,
+      "total": 300,
+      "omitted": 37,
+      "counts": {
+        "same_auxiliary_component_declared": 124,
+        "auxiliary_original_omitted": 18,
+        "same_auxiliary_component_omitted": 11,
+        "auxiliary_original_declared": 18,
+        "inter_auxiliary_component_omitted": 6,
+        "memory_auxiliary_declared": 3,
+        "memory_memory_declared": 118,
+        "memory_auxiliary_omitted": 2
+      }
+    }
+  ],
+  "finished_utc": "2026-10-15T12:49:15.683849+00:00"
+}

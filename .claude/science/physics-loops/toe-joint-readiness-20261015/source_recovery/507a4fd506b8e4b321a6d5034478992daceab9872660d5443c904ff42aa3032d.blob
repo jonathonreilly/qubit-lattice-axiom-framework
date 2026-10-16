@@ -1,0 +1,36 @@
+{
+  "completed_utc": "2026-10-15T13:32:57.994716+00:00",
+  "returncode": 0,
+  "launch": {
+    "path": "LAUNCH_RECEIPT.json",
+    "bytes": 843,
+    "sha256": "58d6c189b4d70316c782d512e1e8fe7cfff5508667e1888954ef766df3660ccb"
+  },
+  "stdout": {
+    "path": "STDOUT.log",
+    "bytes": 531,
+    "sha256": "224fd57bb1c2c1b5b16a7f9086dda6710b4c58a907c93ae66b6acaee38c7ca4b"
+  },
+  "stderr": {
+    "path": "STDERR.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "outputs": [
+    {
+      "path": "EXACT_RESULT.json",
+      "bytes": 12395,
+      "sha256": "22d7515b8b90b557a1278f49ebc84fbeaac72342d4047245fe8f9be051d64a0a"
+    },
+    {
+      "path": "ROUTING_GEOMETRY_CERTIFICATE.json",
+      "bytes": 265799,
+      "sha256": "c1f2008f0e3055bcec53460181cd01bb0c7ebfe24cb090a4366c2ef7689b311f"
+    }
+  ],
+  "post_source": {
+    "path": "exact_fixture.py",
+    "bytes": 10171,
+    "sha256": "c5fdb1571106d70c3c7dbe44e85b21c8638956e6909740d52d5b2a9a68384af7"
+  }
+}

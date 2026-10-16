@@ -1,0 +1,76 @@
+{
+  "captured_utc": "2026-10-15T14:23:31.535790+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+      "copy": "sources/root_resource_DERIVATION.md",
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783",
+      "bytes": 9213
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "copy": "sources/root_resource_PROPOSAL_FREEZE.json",
+      "sha256": "a11a3e726ad4c97465c345be1b735a3934dd022e7afe4f1a211698693d58f43e",
+      "bytes": 785
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "copy": "sources/mass_DERIVATION.md",
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "bytes": 10253
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "copy": "sources/mass_REPORT.md",
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "bytes": 25011
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "copy": "sources/mass_ROOT_ACCEPTANCE.md",
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf",
+      "bytes": 3965
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "copy": "sources/joint_corrected_DERIVATION.md",
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "bytes": 40833
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/CORRECTION.diff",
+      "copy": "sources/joint_CORRECTION.diff",
+      "sha256": "7292d920cefd2b66ef2816ebb5be9184a159293c615aeda4c9d84bddaa3d6403",
+      "bytes": 9586
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/SCOPE_EXPOSURE.md",
+      "copy": "sources/joint_SCOPE_EXPOSURE.md",
+      "sha256": "82a66d4c746142f0de775ef8cd10142fd055076071537cdcd18adfc6482bfb7b",
+      "bytes": 3005
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/FINAL_FREEZE.json",
+      "copy": "sources/joint_FINAL_FREEZE.json",
+      "sha256": "7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40",
+      "bytes": 5006
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "copy": "sources/joint_ROOT_ACCEPTANCE.md",
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478",
+      "bytes": 5501
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/FINAL_FREEZE.json",
+      "copy": "sources/joint_ROOT_FINAL_FREEZE.json",
+      "sha256": "a30f5e4d99cf1305956d95ed194a4623b3cd714c466d3abe599ff0edf353cbc3",
+      "bytes": 2597
+    }
+  ],
+  "reading": "Complete root proposal and freeze, mass derivation, mass separate report and root acceptance read in this task. Complete corrected joint source authored/read in preceding coherent task; unchanged complete-source and exact correction coverage reused, with relevant equations/control/geometry/composition reread here. Complete newly issued joint root acceptance and freeze read. Author exposure disclosed; no separate independence claim for own joint theorem.",
+  "exposure": "Reviewer authored the joint preparation and its correction, and was exposed to the mass results and root resource proposal. Independence limited to new algebra/resource calculations, not a separate verification of the authored joint theorem.",
+  "science_executions": 0,
+  "dependency_status_update_utc": "2026-10-15T14:31:58.750642+00:00",
+  "dependency_status": "Corrected joint dcee9d6f was open at review launch. It received source-side root acceptance during this check, evidenced by joint_ROOT_ACCEPTANCE.md and joint_ROOT_FINAL_FREEZE.json. This is not audit/retained status. Frozen root resource header remains historically unchanged."
+}

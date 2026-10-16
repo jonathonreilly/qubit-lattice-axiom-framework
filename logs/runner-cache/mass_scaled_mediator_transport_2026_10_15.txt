@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/mass_scaled_mediator_transport_2026_10_15.py
+runner_sha256: fc416d9b2bdd8e7d58eb07684a7a84a99f9f6dfa11fb37e2deca7625439c645d
+input_fingerprint_sha256: 3526ee35aad6eb68f7659371209d9ede88d8d23aa3277040cbb51d2f5e3634fc
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "identities and body/dependency structure only"}
+per_element: exact bytes and manifest identities only; no physical-element validation
+per_site: source preserves fixed-pair and isolation premises; no new lattice computation
+per_mode: N_X=1 theorem scope retained; no sector or spectral execution
+per_block: two immutable bodies and one mathematical dependency checked
+lattice_wide: no native supplier, global program, scientific execution or retained audit certified
+
+----- stderr -----
+

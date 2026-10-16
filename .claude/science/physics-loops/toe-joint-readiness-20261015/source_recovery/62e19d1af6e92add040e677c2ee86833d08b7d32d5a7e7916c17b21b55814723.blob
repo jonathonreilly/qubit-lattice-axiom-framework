@@ -1,0 +1,33 @@
+"""Seal the completed review by hashing files only; not a scientific check."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+OUT = Path(__file__).resolve().parent
+def now(): return datetime.now(timezone.utc).isoformat()
+def meta(p):
+    b = p.read_bytes()
+    return {'path': str(p.relative_to(OUT)), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+assert not (OUT/'FINAL_FREEZE.json').exists()
+launch = {'started_utc': now(), 'purpose': 'Final review source/evidence hash seal only', 'code': meta(Path(__file__))}
+(OUT/'SEAL_LAUNCH.json').write_text(json.dumps(launch, indent=2)+'\n')
+fresh = json.loads((OUT/'FINAL_SOURCE_FRESHNESS.json').read_text())
+assert not fresh['failures']
+candidate = OUT.parent/'local_clock_joint_readiness_candidate'
+for row in json.loads((candidate/'FINAL_FREEZE.json').read_text())['files']:
+    live = candidate/row['path']; saved = OUT/'source_snapshot'/row['path']
+    assert live.read_bytes() == saved.read_bytes(), row['path']
+assert hashlib.sha256((candidate/'FINAL_FREEZE.json').read_bytes()).hexdigest() == '4d68a2cd04e5248491ac03a47a92f13810feed769938bda0541c77d1503e7860'
+receipt = {'completed_utc': now(), 'purpose': 'Final source stability and hashing only',
+           'candidate_snapshot_unchanged': True, 'scientific_executions': 0,
+           'report': meta(OUT/'REPORT.md'), 'launch': meta(OUT/'SEAL_LAUNCH.json')}
+(OUT/'SEAL_RECEIPT.json').write_text(json.dumps(receipt, indent=2)+'\n')
+files = [meta(p) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+# Include the author freeze snapshot; exclude only this directory's not-yet-written freeze.
+author_freeze = OUT/'source_snapshot'/'FINAL_FREEZE.json'
+files.append(meta(author_freeze)); files.sort(key=lambda r:r['path'])
+freeze = {'frozen_utc': now(), 'status': 'Separate source review; core conditional theorem supported with explicit retained-moment correction; not an audit verdict',
+          'source_sha256': '818699a3aaccdabba68914775b01d1c9178cd2d651e2c42d6069b88426580ca7',
+          'scientific_executions_by_reviewer': 0, 'model_effort': 'Inherited; no overrides or delegation',
+          'file_count': len(files), 'files': files}
+(OUT/'FINAL_FREEZE.json').write_text(json.dumps(freeze, indent=2)+'\n')
+print(json.dumps({'frozen_utc':freeze['frozen_utc'], 'files':len(files), 'report':meta(OUT/'REPORT.md'), 'freeze':meta(OUT/'FINAL_FREEZE.json')}))

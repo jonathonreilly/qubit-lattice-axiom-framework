@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+from urllib.parse import unquote
 
 CATEGORIES = ('runtime', 'helpers', 'parents', 'context', 'tooling')
 
@@ -45,6 +46,27 @@ def declared_review_timeout_for(repo, cache, runner):
         return cap
     except (OSError, ValueError, TypeError, AttributeError):
         return None
+
+
+def valid_source_reference(repo, graph, target, source, bound):
+    """Keep canonical citations strict; accept only receipt-bound science archives.
+
+    The citation graph intentionally resolves docs/ only. Historical campaign
+    links are useful provenance, not theorem edges or dependency authority.
+    Their exact bytes still require the receipt's hash and staged-index checks.
+    """
+    if graph.resolve_link_target(target, source) is not None:
+        return True
+    decoded = unquote(target)
+    if Path(decoded).is_absolute():
+        return False
+    try:
+        path = (source.parent / decoded).resolve()
+        relative = path.relative_to(repo.resolve()).as_posix()
+    except (ValueError, OSError, RuntimeError):
+        return False
+    return (relative.startswith('.claude/science/')
+            and relative in bound and path.is_file())
 
 
 def require_current_parent(repo, graph, ids, dependency):
@@ -337,7 +359,7 @@ def check(repo, record, require_cache=False):
             require(helpers == set(note['helpers']) and helpers <= categories['helpers'], f'undeclared/unbound packet helper: {cid}')
             for target in graph.LINK_RE.findall(body):
                 if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
-                    require(graph.resolve_link_target(target.split('#')[0], path) is not None, f'unresolved source citation: {target}')
+                    require(valid_source_reference(repo, graph, target.split('#')[0], path, bound), f'unresolved source citation: {target}')
             citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
             require(citations == set(note['citations']) and citations <= bound.keys(), f'citation path/hash mapping mismatch: {cid}')
             deps = set(note['repository_dependencies'])
@@ -396,7 +418,7 @@ def check(repo, record, require_cache=False):
             require(len(ids.get(cid, [])) == 1, 'ambiguous supporting proof ID')
             for target in graph.LINK_RE.findall(body):
                 if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
-                    require(graph.resolve_link_target(target.split('#')[0], path) is not None,
+                    require(valid_source_reference(repo, graph, target.split('#')[0], path, bound),
                             f'unresolved supporting proof citation: {target}')
             citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
             require(isinstance(item['citations'], list) and citations == set(item['citations'])

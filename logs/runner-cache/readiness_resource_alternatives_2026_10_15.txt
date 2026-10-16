@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/readiness_resource_alternatives_2026_10_15.py
+runner_sha256: 14ba23af4c982d219a9213c00d18b15dc85208599dcac6070dd98bce204ff6f7
+input_fingerprint_sha256: 1cbb3f064dae48529ab8ac600ae581db16034b9567ef2339d19406cd55b684f1
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "publication_or_retained_status_certified": false, "result": "source_integrity_verified", "scientific_programs_run": 0, "scope": "identities and body/dependency structure only"}
+per_element: source bytes and correction provenance only; no physical element validation
+per_site: exact parent geometry interface preserved; no new lattice execution
+per_mode: full-input preparation and conditional ready-sector simulation scopes retained
+per_block: five immutable bodies and two canonical mathematical dependencies checked
+lattice_wide: no native supplier, common cap, full program, scientific run or audit certified
+
+----- stderr -----
+

@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-15T13:27:54.313024+00:00",
+  "completed_utc": "2026-10-15T13:27:54.314076+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_decisive_check/seal_metadata.py"
+  ],
+  "source_at_launch": {
+    "path": "seal_metadata.py",
+    "bytes": 2096,
+    "sha256": "9e96694d946b51d7abb96a5653ca6a25372a394922b3cd9b657679e4c0ffe447"
+  },
+  "scope": "In-process final metadata seal receipt, not an independent scientific launcher.",
+  "scientific_execution": false,
+  "preseal_metadata_execution": {
+    "path": "metadata_runs/final/EXECUTION.json",
+    "bytes": 1014,
+    "sha256": "55515f1aa3032db92a4e9a16d220509605e66aa9066dc85c3f434c1e93d33b79"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "captured_utc": "2026-10-15T14:52:05.213307+00:00",
+  "scope": "Source capture/identity verification only; no scientific execution or inherited run replay.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794",
+      "role": "complete changed root candidate; fully read",
+      "recovery_copy": "sources/fast_DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 739,
+      "sha256": "7e492ac7ea2538725418f1c7435c95ef567b101e1537dcb2fefc40f18f65809a",
+      "role": "candidate proposal freeze; fully read",
+      "recovery_copy": "sources/fast_PROPOSAL_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/SOURCE_MANIFEST.json",
+      "bytes": 2430,
+      "sha256": "fb52a955202d14002c723ac727b2cf94f3534cdd18231da8708c9110583cfeca",
+      "role": "candidate dependency/provenance roles; fully read",
+      "recovery_copy": "sources/fast_SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "role": "complete corrected joint word, geometry, logarithm, bump, output and moment premises; fully read",
+      "recovery_copy": "sources/joint_DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478",
+      "role": "source-exposed root acceptance; fully read, not independent evidence",
+      "recovery_copy": "sources/joint_ROOT_ACCEPTANCE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/FINAL_FREEZE.json",
+      "bytes": 2597,
+      "sha256": "a30f5e4d99cf1305956d95ed194a4623b3cd714c466d3abe599ff0edf353cbc3",
+      "role": "joint root acceptance freeze; fully read",
+      "recovery_copy": "sources/joint_ROOT_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_candidate/ROOT_EXPOSURE.md",
+      "bytes": 1406,
+      "sha256": "bb8544603b46849cc18a1f5f0ade8bdc095f4e0f1f2f08083bfc9c8d507ea075",
+      "role": "original joint author exposure; fully read",
+      "recovery_copy": "sources/joint_ROOT_EXPOSURE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/SOURCE_MANIFEST.json",
+      "bytes": 13637,
+      "sha256": "2b3a84c7c5e63299965fa01c5808c1938abe7b8afe42eab8ee979f26f10e3cbf",
+      "role": "corrected joint source provenance manifest; fully read, old fixture not replayed",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "role": "accepted mass theorem; complete prior reading reused at exact identity",
+      "recovery_copy": "sources/mass_DERIVATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf",
+      "role": "mass scope qualifications; complete prior reading reused",
+      "recovery_copy": "sources/mass_ROOT_ACCEPTANCE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/FINAL_FREEZE.json",
+      "bytes": 608,
+      "sha256": "16c557054f500abbb3e4bdd22782267daa1e9dcfc0672990eca4f2070767e03b",
+      "role": "mass acceptance freeze; exact prior reading reused",
+      "recovery_copy": "sources/mass_ROOT_FREEZE.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_decisive_check/REPORT.md",
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e",
+      "role": "this worker earlier separate mass review, continuity not new independence",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_single_port_mediator_candidate/DERIVATION.md",
+      "bytes": 28846,
+      "sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25",
+      "role": "unchanged literal geometry and simulator premise; complete prior reading reused",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/sources/geometry_reservoir.md",
+      "bytes": 27222,
+      "sha256": "26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4",
+      "role": "unchanged original geometry; complete prior reading reused",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_routed_auxiliary_preparation_candidate/sources/geometry_memory.md",
+      "bytes": 25740,
+      "sha256": "f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a",
+      "role": "unchanged original memory geometry; prior relevant section reading reused",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/persistent_drift_candidate/DERIVATION.md",
+      "bytes": 10165,
+      "sha256": "446032348a7c1a7cdea6d70d5fc39cd5e2dad98ee8e97479c46394da7e34f628",
+      "role": "unaccepted provenance only; identity verified, proof not imported or read for this check",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9213,
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783",
+      "role": "comparison provenance only with reported <= correction outstanding; proof not imported or read for this check",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "role": "instructions: complete prior reading reused at unchanged identity",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "role": "workflow: complete prior reading reused at unchanged identity",
+      "recovery_copy": null
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "review skill: complete prior reading reused at unchanged identity",
+      "recovery_copy": null
+    }
+  ],
+  "candidate_declared_sources_verified": 8
+}

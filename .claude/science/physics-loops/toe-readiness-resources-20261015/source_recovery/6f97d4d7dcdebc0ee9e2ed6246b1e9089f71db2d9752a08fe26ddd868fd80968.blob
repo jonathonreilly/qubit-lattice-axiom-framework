@@ -1,0 +1,37 @@
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, subprocess, sys
+
+ROOT = Path(__file__).resolve().parent
+label, child = sys.argv[1:3]
+source = ROOT / child
+folder = ROOT / 'metadata_runs' / label
+folder.mkdir(parents=True, exist_ok=False)
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+def write(path, obj):
+    path.write_text(json.dumps(obj, indent=2) + '\n')
+command = [sys.executable, '-B', str(source)]
+(folder / 'child_source.py').write_bytes(source.read_bytes())
+(folder / 'recorder_source.py').write_bytes(Path(__file__).read_bytes())
+launch = {'started_utc': datetime.now(timezone.utc).isoformat(), 'command': command,
+          'cwd': str(ROOT), 'source_at_launch': pin(source),
+          'recorder_at_launch': pin(Path(__file__)), 'scientific_execution': False,
+          'timeout_seconds': 60}
+write(folder / 'LAUNCH.json', launch)
+try:
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, timeout=60)
+    code, stdout, stderr = result.returncode, result.stdout, result.stderr
+except subprocess.TimeoutExpired as exc:
+    code, stdout, stderr = 124, exc.stdout or b'', (exc.stderr or b'') + b'\nmetadata timeout\n'
+(folder / 'stdout').write_bytes(stdout)
+(folder / 'stderr').write_bytes(stderr)
+receipt = {'finished_utc': datetime.now(timezone.utc).isoformat(), 'returncode': code,
+           'launch': pin(folder / 'LAUNCH.json'),
+           'outputs': [pin(folder / 'stdout'), pin(folder / 'stderr')]}
+write(folder / 'EXECUTION.json', receipt)
+sys.stdout.buffer.write(stdout)
+sys.stderr.buffer.write(stderr)
+print(json.dumps({'metadata_receipt': str(folder / 'EXECUTION.json'), 'returncode': code}))
+raise SystemExit(code)

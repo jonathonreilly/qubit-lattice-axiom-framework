@@ -940,10 +940,18 @@ def normalize_claim_type(raw: str | None) -> str | None:
 
 def extract_claim_type_hint(body: str) -> tuple[str | None, str | None]:
     m = CLAIM_TYPE_LINE_RE.search(body) or TYPE_LINE_RE.search(body)
-    if not m:
-        return None, None
-    raw = m.group(1).strip()
-    return raw, normalize_claim_type(raw)
+    if m:
+        raw = m.group(1).strip()
+        return raw, normalize_claim_type(raw)
+    # Canonical notes may declare their type only in leading YAML metadata.
+    # Preserve existing prose precedence and reject ambiguous declarations.
+    frontmatter = re.match(r"\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)", body, re.DOTALL)
+    if frontmatter:
+        fields = re.findall(r"^claim_type:[ \t]*([^\r\n]*)$", frontmatter.group(1), re.MULTILINE)
+        if len(fields) == 1:
+            raw = fields[0].strip()
+            return raw, normalize_claim_type(raw)
+    return None, None
 
 
 def extract_title(body: str) -> str | None:

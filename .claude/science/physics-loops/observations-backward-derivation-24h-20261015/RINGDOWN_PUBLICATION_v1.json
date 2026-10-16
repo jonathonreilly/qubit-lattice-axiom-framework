@@ -1,0 +1,84 @@
+{
+  "time": "2026-10-16T05:55:17.727940+00:00",
+  "receipt": {
+    "baseRefName": "main",
+    "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+    "changedFiles": 98,
+    "headRefName": "codex/ringdown-action-inverse-20261016",
+    "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
+    "isDraft": false,
+    "mergeStateStatus": "BLOCKED",
+    "mergeable": "MERGEABLE",
+    "number": 9637,
+    "state": "OPEN",
+    "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
+    "verified_at": "2026-10-16T05:55:17.727940+00:00",
+    "attached_to_current_chat": true,
+    "shared_landing_validation": "pending",
+    "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
+  },
+  "worktree": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go",
+  "branch": "codex/ringdown-action-inverse-20261016",
+  "source_head": "de4db24e811625eeb059beb341e51a1a8487371a",
+  "canonical_sources": {
+    "docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md": "980512d7d9a5fb2f19583fbdeb7e849d0861c0299a13fa52f7bf51a059acdd86",
+    "scripts/ringdown_action_inverse.py": "1be664a62d9c1656172aa4a45f48a5cc094212d9a2a3cc7d4dd88eaae0419047",
+    "scripts/ringdown_action_math.py": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
+    "logs/runner-cache/ringdown_action_inverse.txt": "fa83203bb47579b2a9d1fad50787f3507339bb817bae5ecd34714e0da2ba7d83",
+    "outputs/ringdown_action_inverse/controls.json": "ba6be1f8c017e89b71b97bd7559103dbd09c17b4b6cba79ad2a13823d84d3c6b"
+  },
+  "primary_controls": 195,
+  "independent_assertions_by_set": [
+    268,
+    418,
+    22,
+    6
+  ],
+  "counts_overlap_not_summed": true,
+  "root_review": {
+    "checked_at": "2026-10-16T05:45:09.640549+00:00",
+    "complete_report_proof_code_results_read": true,
+    "checked_manifest": "outputs/ringdown_action_inverse/independent/final_bindings_v2.json",
+    "manifest_sha256": "6b37278350c222554a63d4762903373e68b40890aaa20f68d89b1d3df9f66276",
+    "all_bindings_verified": 57,
+    "report_sha256": "77dc96fa5991ca9781244ee39988841527287dfdf4ce629f58a5780a7bf73aee",
+    "canonical_controls": 195,
+    "independent_assertions_by_set": [
+      268,
+      418,
+      22,
+      6
+    ],
+    "counts_overlap_not_summed": true,
+    "no_formal_audit_or_empirical_validation": true
+  },
+  "preflight": {
+    "checked_at": "2026-10-16T05:53:14.767808+00:00",
+    "vocabulary": "pass; no canonical source change",
+    "whitespace": "pass",
+    "cache_freshness": "fresh",
+    "frozen_bindings_verified": 57,
+    "historical_diff_gzip_mapping_verified": true,
+    "staged_scope": "one canonical note, primary/imported helper, cache, exact support evidence, unit pack and generated citation manifest only",
+    "staged_files_before_this_receipt": 97,
+    "source_freeze": "CANONICAL_FROZEN_v2.json",
+    "shared_integrated_main_pipeline": "pending; not run",
+    "shared_strict_lint": "pending; not run",
+    "shared_changed_evidence_landing_gates": "pending; not run",
+    "formal_audit": "not invoked",
+    "merge": "not requested"
+  },
+  "mutation_scope": "Initial24mutations:23detected; midpoint miss preserved. Sharper final control detects corrected midpoint mutation; other23remain bound to original helper. Final focused check verified narrow change.",
+  "data_roles": "61synthetic development environments;3additional initial states at existing environments,60preparation-fit samples and541prediction samples each. No measured data or empirical holdout.",
+  "newly_reconstructed": "Relative hidden inertia and other action/Rayleigh coefficient functions within a supplied regular reciprocal quadratic class, up to proved coordinate and constant freedoms.",
+  "remaining_premises": [
+    "action and dissipation class",
+    "one visible coordinate and one passive hidden mode",
+    "calibrated conjugate force/coordinate/time",
+    "rest response or an independently bounded preparation bridge",
+    "mode observability and continuous feature certificates",
+    "physical identification with the scalar or quantum program"
+  ],
+  "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them."
+}

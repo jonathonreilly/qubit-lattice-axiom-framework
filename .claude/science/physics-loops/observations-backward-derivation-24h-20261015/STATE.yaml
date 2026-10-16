@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "Common-action ringdown and conditional action-function inverse checked; canonical milestone preparation",
+  "phase": "Conditional ringdown/action inverse published; preparation bridge next",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T05:31:36.754907+00:00",
+  "updated_at": "2026-10-16T05:55:17.727940+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.",
+  "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them.",
   "open_imports": [
     "single-scalar two-derivative metric action class",
     "universal physical matter metric",
@@ -96,6 +96,24 @@
       "attached_to_current_chat": true,
       "shared_landing_validation": "pending",
       "scientific_status": "bounded_theorem / conditional-support; synthetic controls only, no empirical validation"
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "changedFiles": 98,
+      "headRefName": "codex/ringdown-action-inverse-20261016",
+      "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
+      "isDraft": false,
+      "mergeStateStatus": "BLOCKED",
+      "mergeable": "MERGEABLE",
+      "number": 9637,
+      "state": "OPEN",
+      "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
+      "verified_at": "2026-10-16T05:55:17.727940+00:00",
+      "attached_to_current_chat": true,
+      "shared_landing_validation": "pending",
+      "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
     }
   ],
   "owned_jobs": [],
@@ -118,13 +136,32 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T05:15:00Z",
+      "time": "2026-10-16T05:47:14.751169+00:00",
       "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
-      "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
-      "open_pr_count": 65,
-      "inventory_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/OPEN_PRS_20261016T0515.json",
-      "inventory_sha256": "71097aa67fd9ab06e2909bfad8b1138c4647d9a3a371c369d35c7ed38fc5249f",
-      "scope": "Refreshed metadata heads; only newPR9635 background source/body inspected; no premise adopted or others work modified."
+      "open_pr_count": 66,
+      "inventory_sha256": "d80edd4ca0ce3015d34a9856027a9008e7ae561108e6f527f09488bdcb0d416c",
+      "new_pr_9636": {
+        "head": "cff01f124387b7558213de04b741e85dcd59958f",
+        "sources": [
+          {
+            "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+            "sha256": "e83d64a4ec32dfc8405ba850947f69a46985c745e2461574ca704d31ed91246b",
+            "read_scope": "first65lines, declared statement/premises; not full proof review"
+          },
+          {
+            "path": "docs/ORDER_BLIND_POSITIVE_FORMATION_IS_A_ONE_DEPENDENT_GIBBS_FIELD_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+            "sha256": "89c7d05dc3aada5476226343e019f853bd7dc30dfa68d0f052a2a3b9762a1b86",
+            "read_scope": "first65lines, declared statement/premises; not full proof review"
+          },
+          {
+            "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+            "sha256": "733a32be7b4961558f478e2828be7d075771dfae3bfba65a71879264da622039",
+            "read_scope": "first65lines, declared statement/premises; not full proof review"
+          }
+        ],
+        "disposition": "Background only; no premise or audit status adopted. These unitary-tick/formation hypotheses are distinct from calibrated force-response inversion."
+      },
+      "other_author_work_modified": false
     }
   },
   "first_block_files": [
@@ -142,21 +179,19 @@
     "Ideal static geometry, universal metric, vacuum, independent areal r and class premises remain conditional.",
     "Measured Newton coupling is not identified with 1/F."
   ],
-  "milestone_status": "PR9628,PR9632,PR9634 published and attached; exact sources preserved. Shared integrated landing gates pending; no merges or audit verdicts.",
+  "milestone_status": "PR9628,PR9632,PR9634,PR9637 published and attached; shared integrated landing gates pending; no merges or audit verdicts.",
   "checkpoint": {
-    "time": "2026-10-16T05:31:36.754907+00:00",
+    "time": "2026-10-16T05:55:17.727940+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Conditional action-function reconstruction from ideal calibrated rest response and clamped ringdown across environments",
+    "checkpoint_scope": "Published source-bound conditional action reconstruction and preserved failed mutation/control correction",
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
-    "checked_at": "2026-10-16T05:08:56.665714+00:00",
-    "commit": "6924d784cab60f977b32e89cdb4c3d387d1c599d",
-    "remote_head": "6924d784cab60f977b32e89cdb4c3d387d1c599d",
+    "checked_at": "2026-10-16T05:33:04.980136+00:00",
+    "commit": "b37b3432e3993cea4e428fc3201c95e33311e94f",
     "branch": "codex/observations-backward-derivation-20261015",
-    "scope": "Exploratory physical-port and smooth-history bridges, full focused evidence; no new PR or physical validation",
-    "worktree_clean": true
+    "scope": "Ringdown common-action and coefficient reconstruction with source-bound focused checks; exact historical diff preserved in gzip"
   },
   "block02": {
     "source": "BLOCK02_DERIVATION_v2.md",
@@ -588,5 +623,89 @@
     "next_action": "Prepare one coherent canonical milestone for the force-response/ringdown action-function inverse, with source-bound checks, prior-art and cluster/value assessment. Then challenge rest preparation and the calibrated measurement bridge using reserved moving histories or real data only after a frozen access plan. Do not supply an action selector or call a synthetic fit a physical derivation.",
     "deadline_unchanged": "2026-10-16T22:36:59Z",
     "packaging_unchanged": "2026-10-16T22:21:59Z"
+  },
+  "ringdown_publication": {
+    "time": "2026-10-16T05:55:17.727940+00:00",
+    "receipt": {
+      "baseRefName": "main",
+      "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "changedFiles": 98,
+      "headRefName": "codex/ringdown-action-inverse-20261016",
+      "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
+      "isDraft": false,
+      "mergeStateStatus": "BLOCKED",
+      "mergeable": "MERGEABLE",
+      "number": 9637,
+      "state": "OPEN",
+      "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
+      "verified_at": "2026-10-16T05:55:17.727940+00:00",
+      "attached_to_current_chat": true,
+      "shared_landing_validation": "pending",
+      "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
+    },
+    "worktree": "/Users/jonBridger/.codex/worktrees/ringdown-action-inverse-20261016/New Axioms Lets Go",
+    "branch": "codex/ringdown-action-inverse-20261016",
+    "source_head": "de4db24e811625eeb059beb341e51a1a8487371a",
+    "canonical_sources": {
+      "docs/RINGDOWN_ACTION_RECONSTRUCTION_NOTE_2026-10-16.md": "980512d7d9a5fb2f19583fbdeb7e849d0861c0299a13fa52f7bf51a059acdd86",
+      "scripts/ringdown_action_inverse.py": "1be664a62d9c1656172aa4a45f48a5cc094212d9a2a3cc7d4dd88eaae0419047",
+      "scripts/ringdown_action_math.py": "834c82d633c4653a7feb6b05ecb28871e9c70364f5a7203f31accf7167f786df",
+      "logs/runner-cache/ringdown_action_inverse.txt": "fa83203bb47579b2a9d1fad50787f3507339bb817bae5ecd34714e0da2ba7d83",
+      "outputs/ringdown_action_inverse/controls.json": "ba6be1f8c017e89b71b97bd7559103dbd09c17b4b6cba79ad2a13823d84d3c6b"
+    },
+    "primary_controls": 195,
+    "independent_assertions_by_set": [
+      268,
+      418,
+      22,
+      6
+    ],
+    "counts_overlap_not_summed": true,
+    "root_review": {
+      "checked_at": "2026-10-16T05:45:09.640549+00:00",
+      "complete_report_proof_code_results_read": true,
+      "checked_manifest": "outputs/ringdown_action_inverse/independent/final_bindings_v2.json",
+      "manifest_sha256": "6b37278350c222554a63d4762903373e68b40890aaa20f68d89b1d3df9f66276",
+      "all_bindings_verified": 57,
+      "report_sha256": "77dc96fa5991ca9781244ee39988841527287dfdf4ce629f58a5780a7bf73aee",
+      "canonical_controls": 195,
+      "independent_assertions_by_set": [
+        268,
+        418,
+        22,
+        6
+      ],
+      "counts_overlap_not_summed": true,
+      "no_formal_audit_or_empirical_validation": true
+    },
+    "preflight": {
+      "checked_at": "2026-10-16T05:53:14.767808+00:00",
+      "vocabulary": "pass; no canonical source change",
+      "whitespace": "pass",
+      "cache_freshness": "fresh",
+      "frozen_bindings_verified": 57,
+      "historical_diff_gzip_mapping_verified": true,
+      "staged_scope": "one canonical note, primary/imported helper, cache, exact support evidence, unit pack and generated citation manifest only",
+      "staged_files_before_this_receipt": 97,
+      "source_freeze": "CANONICAL_FROZEN_v2.json",
+      "shared_integrated_main_pipeline": "pending; not run",
+      "shared_strict_lint": "pending; not run",
+      "shared_changed_evidence_landing_gates": "pending; not run",
+      "formal_audit": "not invoked",
+      "merge": "not requested"
+    },
+    "mutation_scope": "Initial24mutations:23detected; midpoint miss preserved. Sharper final control detects corrected midpoint mutation; other23remain bound to original helper. Final focused check verified narrow change.",
+    "data_roles": "61synthetic development environments;3additional initial states at existing environments,60preparation-fit samples and541prediction samples each. No measured data or empirical holdout.",
+    "newly_reconstructed": "Relative hidden inertia and other action/Rayleigh coefficient functions within a supplied regular reciprocal quadratic class, up to proved coordinate and constant freedoms.",
+    "remaining_premises": [
+      "action and dissipation class",
+      "one visible coordinate and one passive hidden mode",
+      "calibrated conjugate force/coordinate/time",
+      "rest response or an independently bounded preparation bridge",
+      "mode observability and continuous feature certificates",
+      "physical identification with the scalar or quantum program"
+    ],
+    "next_action": "Personally derive the nonstationary response about an observed residual hidden ringdown and test whether measured preparation can replace the rest-preparation premise. Freeze reconstructed coefficient functions before independent moving-history controls. Keep the quadratic one-mode class, physical force/coordinate/time calibration, finite-band inference and empirical applicability explicit; this milestone has not derived them."
   }
 }

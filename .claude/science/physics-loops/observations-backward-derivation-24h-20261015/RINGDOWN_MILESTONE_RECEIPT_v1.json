@@ -1,0 +1,18 @@
+{
+  "baseRefName": "main",
+  "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "changedFiles": 98,
+  "headRefName": "codex/ringdown-action-inverse-20261016",
+  "headRefOid": "de4db24e811625eeb059beb341e51a1a8487371a",
+  "isDraft": false,
+  "mergeStateStatus": "BLOCKED",
+  "mergeable": "MERGEABLE",
+  "number": 9637,
+  "state": "OPEN",
+  "title": "[physics-loop] ringdown-action inverse bounded_theorem conditional-support",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9637",
+  "verified_at": "2026-10-16T05:55:17.727940+00:00",
+  "attached_to_current_chat": true,
+  "shared_landing_validation": "pending",
+  "scientific_status": "bounded_theorem / conditional-support; exact-class and synthetic controls only, no empirical validation"
+}

@@ -146,16 +146,17 @@ nodes come in compensating pairs.
 
 ## Numerical scan of the remaining subgroups (evidence, not proof)
 
-Least-squares searches of the unitarity identity with the moving coefficients
-pinned to unit norm (60 starts per group; scratch evidence summarized in the
-loop pack):
+Least-squares searches of the unitarity identity (60 starts per group with the
+moving coefficients pinned to unit norm, plus a scale-free rerun with a lower
+bound for D3; pinned searches can miss walks of other norm, so their positive
+findings are reliable and their negative ones are not):
 
 | H | order | moving walks found | momentum directions used |
 |---|---|---|---|
 | C3 | 3 | yes | 3 |
 | C4 | 4 | yes | 1, 2, 3 |
 | D2 (axis half-turns) | 4 | yes (exhibit above) | 3 |
-| D3 | 6 | none in a pinned-norm search (best residual 1.1e-3); rerun with a lower-bound penalty pending | – |
+| D3 | 6 | none: 300 starts with sum b^2 >= delta, best residual 2.8e-6 at delta = 0.05 (quartic valley of the constant walk) and 2.9e-4 at delta = 0.5 | – |
 | D4 | 8 | axial only (Theorem 2) | 1 |
 | T | 12 | none (Theorem 1) | – |
 | O | 24 | none (Theorem 1) | – |

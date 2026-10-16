@@ -271,10 +271,26 @@ This step relies on Singular, which the repository runners do not call. The
 scripts, the Singular input and the logs are in
 `.claude/science/physics-loops/toe-campaign-20261015/exact_extensions/`.
 
-Ranges one, two and three are therefore exact. The pattern is the same at
-each range: the lines force the trivial branch, and the unitarity ideal then
-closes it. Whether this happens at every finite range is open; no general
-argument is known.
+*Independent check.* A fresh agent context, given only the problem, proved
+the same statement by a different and fully exact route. First it
+classified the D4-covariant walks on the planes k_3 = 0, pi: 172 line cases,
+171 of them linearly inconsistent, and the last closed by a Singular
+radical. Hence V = 1 on all six planes k_j in {0, pi}. Then g vanishes there,
+so g = s_1 s_2 s_3 h. Also 1 - f >= 0 vanishes there, so
+1 - f = s_1^2 s_2^2 s_3^2 p, and unitarity becomes
+p (2 - s_1^2 s_2^2 s_3^2 p) = |h|^2. At the eight points {0, pi}^3 the
+stabilisers force h = 0, so p = 0 there. At range three p lies in the
+4-dimensional span of {1, sum c, sum cc, c1c2c3}, and these point
+conditions give p = 0. Its scripts are in
+`.claude/science/physics-loops/toe-campaign-20261015/independent_check_B6/`.
+
+Ranges one, two and three are therefore exact. In the line-branch method the
+pattern is the same at each range: the lines force the trivial branch, and
+the unitarity ideal then closes it. The checker's route reduces the 3-D
+problem to a 2-D one plus a positivity identity. It is the more promising
+path to every finite range, but it is not a proof of that: at higher ranges
+p has more freedom than eight point values can fix. Every finite range
+remains open.
 
 ## Theorem 5 — D3 on the cell: body-diagonal motion only (exact)
 

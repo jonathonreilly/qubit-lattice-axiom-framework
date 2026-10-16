@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+    "show",
+    "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/no-go-discipline/references/case-studies.md"
+  ],
+  "start_utc": "2026-10-16T20:42:45.022080+00:00",
+  "end_utc": "2026-10-16T20:42:45.041662+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "command_captures/current_source_1/stdout",
+    "bytes": 10169,
+    "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7"
+  },
+  "stderr": {
+    "path": "command_captures/current_source_1/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "kind": "read-only metadata/source read; no scientific execution"
+}

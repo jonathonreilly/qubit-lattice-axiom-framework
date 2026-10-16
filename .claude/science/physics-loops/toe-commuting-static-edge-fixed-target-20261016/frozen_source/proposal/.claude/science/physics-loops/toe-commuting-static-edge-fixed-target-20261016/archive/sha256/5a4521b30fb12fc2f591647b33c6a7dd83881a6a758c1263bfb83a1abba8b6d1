@@ -1,0 +1,39 @@
+{
+  "status": "source-only proposal, scientific attempt not authorized or executed",
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+      "snapshot": "sources/author__DERIVATION.md",
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad",
+      "coverage": "complete author/read coverage; sections4,6,7 reread for this bounded check"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/EXPOSURE.md",
+      "snapshot": "sources/author__EXPOSURE.md",
+      "bytes": 3006,
+      "sha256": "ea4199c61bc2242444c60710b69f663dc48c16d94945a41c56ff4e2d25ea9724",
+      "coverage": "complete author/read coverage at unchanged identity"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/FREEZE.json",
+      "snapshot": "sources/author__FREEZE.json",
+      "bytes": 2098,
+      "sha256": "0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2",
+      "coverage": "complete metadata read; selected source linkage checked only"
+    }
+  ],
+  "science_source": "check_static_edge.py",
+  "inputs": "INPUTS.json",
+  "scientific_recorder": "record_one_attempt.py",
+  "scientific_launches": 0,
+  "independence": "same-model author-produced fixture, not separate independent validation",
+  "wall_limit_seconds": 60,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "integer_bit_ceiling": 65536,
+  "analytic_premises": "listed explicitly in source and READ_GUIDE.md",
+  "acceptance": null,
+  "publication": null,
+  "canonical_binding": null
+}

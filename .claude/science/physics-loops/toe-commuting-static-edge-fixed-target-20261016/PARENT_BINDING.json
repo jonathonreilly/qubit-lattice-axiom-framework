@@ -1,0 +1,7 @@
+{
+  "kind": "exact_canonical_mathematical_parents",
+  "direct_canonical_parents": [],
+  "git_base": null,
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "scope": "K,W,T are explicit problem data. Self-contained static-edge proof: one new mathematical root and zero direct dependency edges. PR9653 is transport only."
+}

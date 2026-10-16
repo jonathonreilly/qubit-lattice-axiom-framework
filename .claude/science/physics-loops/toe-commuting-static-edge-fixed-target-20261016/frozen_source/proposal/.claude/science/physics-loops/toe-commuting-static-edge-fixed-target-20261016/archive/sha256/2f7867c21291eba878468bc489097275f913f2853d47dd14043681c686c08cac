@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+    "rev-parse",
+    "origin/main"
+  ],
+  "start_utc": "2026-10-16T20:42:44.887293+00:00",
+  "end_utc": "2026-10-16T20:42:44.952586+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "command_captures/observed_origin_main/stdout",
+    "bytes": 41,
+    "sha256": "451bbf496ac8aa8d4a3f2751c82c43aa6d92f736521de30240bad1a7913660a4"
+  },
+  "stderr": {
+    "path": "command_captures/observed_origin_main/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "kind": "read-only metadata/source read; no scientific execution"
+}

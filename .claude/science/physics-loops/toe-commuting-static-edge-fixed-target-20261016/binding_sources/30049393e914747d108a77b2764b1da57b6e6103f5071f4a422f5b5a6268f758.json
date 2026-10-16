@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-16T21:01:39.830799+00:00",
+  "exact_freeze_members": 179,
+  "immutable_bodies": 5,
+  "source_aliases": 153,
+  "archive_objects": 84,
+  "exact_function_reuses": 19,
+  "metadata_mutants": 40,
+  "receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3124,
+      "sha256": "9d3dc3685c3ac2311869462dab1472a4429ef60f655e470be32bf52202a0cc31"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3159,
+      "sha256": "eef826d8d7b33fca4f5e97a05126a485f4283ae1f713105a9ebcebe8a8f2c58b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3113,
+      "sha256": "37b39254d78e48deb71ad17ec7e6af33882465b8b40eedb1df7fcc25e722a79c"
+    }
+  ],
+  "complete_new_code_and_prose_read": true,
+  "complete_metadata_streams_read": true,
+  "scientific_executions": 0,
+  "required_canonical_replacements": []
+}

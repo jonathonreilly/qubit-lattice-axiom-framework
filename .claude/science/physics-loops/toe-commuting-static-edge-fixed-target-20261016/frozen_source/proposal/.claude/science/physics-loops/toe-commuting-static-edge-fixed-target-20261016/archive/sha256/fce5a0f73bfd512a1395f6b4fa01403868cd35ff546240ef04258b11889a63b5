@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""Metadata only: no scientific modules/programs are imported or executed."""
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+from datetime import datetime, timezone
+
+N = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023')
+P = N / 'commuting_target_static_edge_exposed_check/author_cross_review'
+W = N.parent / 'correlation_worktree'
+A = N / 'endpoint_finite_quantum_actuator_candidate'
+I = P.parent
+REF = '5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2'
+entries = []
+commands = []
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def read(path, expected=None):
+    data = path.read_bytes()
+    if expected is not None:
+        assert sha(data) == expected, str(path)
+    return data
+
+def save(rel, data):
+    dest = P / rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    assert not dest.exists(), str(dest)
+    dest.write_bytes(data)
+    return {'path': rel, 'bytes': len(data), 'sha256': sha(data)}
+
+def capture(path, rel, expected=None, coverage='identity/capture only'):
+    data = read(path, expected)
+    row = save(rel, data)
+    row.update(source=str(path), coverage=coverage)
+    entries.append(row)
+    assert read(path) == data, 'source changed while capturing'
+    return data
+
+def command(label, argv, allowed=(0,)):
+    start = datetime.now(timezone.utc).isoformat()
+    result = subprocess.run(argv, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)
+    out = save('command_captures/' + label + '/stdout', result.stdout)
+    err = save('command_captures/' + label + '/stderr', result.stderr)
+    record = {'argv': argv, 'start_utc': start,
+              'end_utc': datetime.now(timezone.utc).isoformat(),
+              'exit_code': result.returncode, 'stdout': out, 'stderr': err,
+              'kind': 'read-only metadata/source read; no scientific execution'}
+    save('command_captures/' + label + '/COMMAND.json',
+         (json.dumps(record, indent=2) + '\n').encode())
+    commands.append(record)
+    assert result.returncode in allowed, label
+    return result.stdout
+
+author_freeze = capture(A / 'FREEZE.json', 'sources/author/FREEZE.json',
+    '0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2', 'complete read')
+author_members = json.loads(author_freeze)['members']
+assert len(author_members) == 11
+for row in author_members:
+    rel = row['path']
+    data = capture(A / rel, 'sources/author/' + rel, row['sha256'],
+                   'complete read' if not rel.startswith('sources/') else 'inherited source; see coverage')
+    assert len(data) == row['bytes']
+for name in ['EXECUTION.json', 'source_at_launch.py', 'recorder_at_launch.py', 'stdout.txt', 'stderr.txt']:
+    capture(A / 'runs/metadata_001' / name, 'sources/author_metadata/' + name,
+            coverage='complete actual metadata source/receipt/stream inspected')
+assert read(A / 'runs/metadata_001/source_at_launch.py') == read(A / 'seal_metadata.py')
+assert read(A / 'runs/metadata_001/recorder_at_launch.py') == read(A / 'record_metadata.py')
+
+initial_freeze = capture(I / 'FREEZE.json', 'sources/initial/FREEZE.json',
+    '66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce', 'complete read; prior exposure ordering')
+initial_members = json.loads(initial_freeze)['files']
+assert len(initial_members) == 7
+for row in initial_members:
+    data = capture(I / row['path'], 'sources/initial/' + row['path'], row['sha256'],
+                   coverage='prior own frozen source; unchanged verification')
+    assert len(data) == row['bytes']
+
+observed_ref = command('observed_origin_main', ['git', '-C', str(W), 'rev-parse', 'origin/main']).decode().strip()
+assert observed_ref == REF
+source_paths = [
+ 'docs/ai_methodology/skills/no-go-discipline/SKILL.md',
+ 'docs/ai_methodology/skills/no-go-discipline/references/case-studies.md',
+ 'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md',
+ 'docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md',
+ 'docs/ai_methodology/SCIENCE_WORKFLOW.md',
+ '.claude/science/physics-loops/toe-always-on-control-20261014/NO_GO_LEDGER.md',
+ '.claude/science/physics-loops/toe-fixed-background-control-20261014/NO_GO_LEDGER.md',
+ '.claude/science/physics-loops/toe-autonomous-clock-20261014/NO_GO_LEDGER.md',
+ '.claude/science/physics-loops/toe-autonomous-record-window-20261014/NO_GO_LEDGER.md',
+]
+canonical_skill = None
+for index, path in enumerate(source_paths):
+    data = command('current_source_' + str(index), ['git', '-C', str(W), 'show', REF + ':' + path])
+    row = save('sources/current_main/' + path, data)
+    row.update(source='git:' + REF + ':' + path, coverage='complete read at this exact revision')
+    entries.append(row)
+    if index == 0:
+        canonical_skill = data
+installed = Path('/Users/jonreilly/.codex/skills/no-go-discipline/SKILL.md')
+installed_data = capture(installed, 'sources/installed_no_go/SKILL.md', coverage='initial display truncated; canonical controls')
+command('targeted_lexical_scan', ['rg', '-n', '-i', 'obvious|clearly|impossible|no.go|always|never|cannot|halt|scalar|static', str(A / 'DERIVATION.md'), str(I / 'ANALYSIS.md')])
+inventory = read(P / 'targeted_ledger_inventory.txt')
+manifest = {
+ 'utc': datetime.now(timezone.utc).isoformat(),
+ 'kind': 'source-exposed analytical review; metadata/source-integrity capture only',
+ 'current_main_observed_local_ref': REF, 'network_fetch_performed': False,
+ 'installed_skill_matches_complete_canonical': installed_data == canonical_skill,
+ 'author_members_verified': len(author_members), 'initial_members_preserved': len(initial_members),
+ 'sources': entries, 'commands': commands,
+ 'earlier_bounded_inventory': {'path': 'targeted_ledger_inventory.txt', 'bytes': len(inventory), 'sha256': sha(inventory)},
+ 'scientific_executions': 0, 'retained_audit': False, 'root_acceptance': None,
+ 'negative_packet_status': 'FAIL', 'N1': 'FAIL',
+ 'earlier_read_limits': 'READ_ATTEMPTS.md',
+}
+save('SOURCE_MANIFEST.json', (json.dumps(manifest, indent=2) + '\n').encode())
+print(json.dumps({'status': 'metadata verification complete',
+                  'author_members_verified': 11, 'initial_members_preserved': 7,
+                  'captured_source_entries': len(entries), 'read_only_commands': len(commands),
+                  'installed_skill_matches_complete_canonical': installed_data == canonical_skill,
+                  'scientific_executions': 0, 'negative_packet_status': 'FAIL', 'N1': 'FAIL'}, indent=2))

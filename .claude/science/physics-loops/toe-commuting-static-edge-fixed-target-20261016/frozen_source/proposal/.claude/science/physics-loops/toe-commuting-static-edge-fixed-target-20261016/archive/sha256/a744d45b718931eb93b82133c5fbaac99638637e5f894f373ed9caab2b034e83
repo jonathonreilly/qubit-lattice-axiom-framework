@@ -1,0 +1,129 @@
+{
+  "kind": "single exact-rational scientific fixture",
+  "recorder_invocation": [
+    "record_one_attempt.py",
+    "--go-file",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/ROOT_GO.md"
+  ],
+  "recorder_source": {
+    "bytes": 6066,
+    "sha256": "0f7c0f232a8318af78499310a848d32c0116c15d0b9677e76c514f18541a57d5"
+  },
+  "recorder_started_utc": "2026-10-16T20:43:34.623870+00:00",
+  "wall_limit_seconds": 60,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "quota_qualification": "No OS CPU or RAM quota is imposed. The checker has a conservative 65536-bit arithmetic guard.",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "resolved_executable": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "go_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/ROOT_GO.md",
+    "bytes": 1065,
+    "sha256": "bbb624ea29d51245172d7a0950be924ae50d4fa5b0892d2877f548774c2a3472"
+  },
+  "scientific_launches": 1,
+  "exit_code": 0,
+  "timeout": false,
+  "prelaunch_verified": true,
+  "prelaunch_freeze": {
+    "bytes": 1873,
+    "sha256": "68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67"
+  },
+  "original_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/check_static_edge.py",
+    "bytes": 15650,
+    "sha256": "bd4f2a14e7ac591754d1bbfff8c0c5e0bc55db0297a042688fb8762181963821"
+  },
+  "executed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/source_at_launch/check_static_edge.py",
+    "bytes": 15650,
+    "sha256": "bd4f2a14e7ac591754d1bbfff8c0c5e0bc55db0297a042688fb8762181963821"
+  },
+  "executed_inputs": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/source_at_launch/INPUTS.json",
+    "bytes": 681,
+    "sha256": "944f5d36149a2582328c80a77c229fcad7835a86789fed84f7a42c4eb0701e79"
+  },
+  "executable_identity": {
+    "bytes": 52640,
+    "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+  },
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/source_at_launch/check_static_edge.py",
+    "--inputs",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/source_at_launch/INPUTS.json",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001",
+  "start_utc": "2026-10-16T20:43:34.657018+00:00",
+  "pid": 55582,
+  "elapsed_seconds": 0.18528820807114244,
+  "end_utc": "2026-10-16T20:43:34.842313+00:00",
+  "executed_source_after": {
+    "bytes": 15650,
+    "sha256": "bd4f2a14e7ac591754d1bbfff8c0c5e0bc55db0297a042688fb8762181963821"
+  },
+  "source_unchanged": true,
+  "recorder_finished_utc": "2026-10-16T20:43:34.842614+00:00",
+  "stdout": {
+    "bytes": 3699,
+    "sha256": "3f2073e1a0465f92a5516d3dbb457c39cf8509f89fe693b5e372afce13d4480d"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "artifacts": [
+    {
+      "path": "PRELAUNCH_FREEZE_at_launch.json",
+      "bytes": 1873,
+      "sha256": "68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67"
+    },
+    {
+      "path": "PRELAUNCH_VERIFICATION.json",
+      "bytes": 3217,
+      "sha256": "25980bc099926b041bc602643ded92bcf7180d02029454782315c8431762e51e"
+    },
+    {
+      "path": "ROOT_GO_at_launch.md",
+      "bytes": 1065,
+      "sha256": "bbb624ea29d51245172d7a0950be924ae50d4fa5b0892d2877f548774c2a3472"
+    },
+    {
+      "path": "output/REPORT.json",
+      "bytes": 223715,
+      "sha256": "bb50c5f2485b4f6558710553d28099162d1e66c69b5b6c703b0b62a707826c0e"
+    },
+    {
+      "path": "recorder_at_launch.py",
+      "bytes": 6066,
+      "sha256": "0f7c0f232a8318af78499310a848d32c0116c15d0b9677e76c514f18541a57d5"
+    },
+    {
+      "path": "source_at_launch/INPUTS.json",
+      "bytes": 681,
+      "sha256": "944f5d36149a2582328c80a77c229fcad7835a86789fed84f7a42c4eb0701e79"
+    },
+    {
+      "path": "source_at_launch/check_static_edge.py",
+      "bytes": 15650,
+      "sha256": "bd4f2a14e7ac591754d1bbfff8c0c5e0bc55db0297a042688fb8762181963821"
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stdout.txt",
+      "bytes": 3699,
+      "sha256": "3f2073e1a0465f92a5516d3dbb457c39cf8509f89fe693b5e372afce13d4480d"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+#!/usr/bin/env python3
+"""One fixed exact-rational fixture. No floating point, search, or prior runner import."""
+import argparse
+import hashlib
+import itertools
+import json
+import math
+from pathlib import Path
+import traceback
+
+LIMIT = 65536
+STATS = {'maximum_integer_bits': 0, 'rational_operations': 0,
+         'integer_operations': 0}
+REPORT = {'status': 'not_started', 'checks': [], 'computed': {},
+          'analytic_premises_not_computed': [
+              'Alternating atan remainder with 32 even terms is between zero and 1/(65*q^65).',
+              'Machin identity and theta quadrant give alpha=12*atan(1/5)-3*atan(1/239)-atan(1/7).',
+              'Hermitian projector spectral calculus gives the stated exponential and operator norms.',
+              '|exp(i*x)-1|<=|x|; unitary invariance and commutation give the uniform window bound.',
+              'det(exp(A))=exp(trace(A)); the 2x2 unitary determinant is 2-Lipschitz in operator norm.',
+              'An isometry operator error gives at most twice that unhalved joint-reference trace error.',
+              'These matrix facts do not supply or authorize the existing-edge physical actuator.'
+          ]}
+OUTPUT = None
+
+class LimitFailure(RuntimeError):
+    pass
+
+def gi(n):
+    if type(n) is not int:
+        raise TypeError('Exact integer required')
+    bits = abs(n).bit_length()
+    STATS['maximum_integer_bits'] = max(STATS['maximum_integer_bits'], bits)
+    if bits > LIMIT:
+        raise LimitFailure(f'integer has {bits} bits, ceiling {LIMIT}')
+    return n
+
+def ia(a, b):
+    gi(a); gi(b)
+    if max(abs(a).bit_length(), abs(b).bit_length()) + 1 > LIMIT:
+        raise LimitFailure('conservative addition bit preflight')
+    STATS['integer_operations'] += 1
+    return gi(a+b)
+
+def im(a, b):
+    gi(a); gi(b)
+    if a and b and abs(a).bit_length()+abs(b).bit_length() > LIMIT:
+        raise LimitFailure('conservative multiplication bit preflight')
+    STATS['integer_operations'] += 1
+    return gi(a*b)
+
+def ip(a, exponent):
+    gi(a); gi(exponent)
+    if exponent < 0:
+        raise ValueError('integer negative power')
+    result = 1
+    while exponent:
+        if exponent & 1:
+            result = im(result, a)
+        exponent //= 2
+        if exponent:
+            a = im(a, a)
+    return gi(result)
+
+class Q:
+    __slots__ = ('n', 'd')
+    def __init__(self, n=0, d=1):
+        if isinstance(n, Q) and d == 1:
+            self.n, self.d = n.n, n.d
+            return
+        gi(n); gi(d)
+        if d == 0:
+            raise ZeroDivisionError('rational denominator')
+        if d < 0:
+            n, d = gi(-n), gi(-d)
+        g = math.gcd(n, d)
+        gi(g)  # Euclidean remainders cannot exceed these checked inputs.
+        self.n, self.d = gi(n//g), gi(d//g)
+    @staticmethod
+    def co(v):
+        return v if isinstance(v, Q) else Q(v)
+    def __add__(self, other):
+        b = Q.co(other); STATS['rational_operations'] += 1
+        return Q(ia(im(self.n,b.d),im(b.n,self.d)), im(self.d,b.d))
+    __radd__ = __add__
+    def __neg__(self):
+        return Q(gi(-self.n),self.d)
+    def __sub__(self, other):
+        return self + (-Q.co(other))
+    def __rsub__(self, other):
+        return Q.co(other) - self
+    def __mul__(self, other):
+        b = Q.co(other); STATS['rational_operations'] += 1
+        return Q(im(self.n,b.n), im(self.d,b.d))
+    __rmul__ = __mul__
+    def __truediv__(self, other):
+        b = Q.co(other); STATS['rational_operations'] += 1
+        return Q(im(self.n,b.d), im(self.d,b.n))
+    def __eq__(self, other):
+        b = Q.co(other)
+        return self.n == b.n and self.d == b.d
+    def __lt__(self, other):
+        b = Q.co(other)
+        return im(self.n,b.d) < im(b.n,self.d)
+    def __le__(self, other):
+        return self == other or self < other
+    def data(self):
+        return {'numerator_hex': hex(self.n), 'denominator_hex': hex(self.d),
+                'numerator_bits': abs(self.n).bit_length(), 'denominator_bits': self.d.bit_length()}
+
+class C:
+    __slots__ = ('r','i')
+    def __init__(self, r=0, i=0):
+        self.r, self.i = Q.co(r), Q.co(i)
+    @staticmethod
+    def co(v):
+        return v if isinstance(v,C) else C(v)
+    def __add__(self, other):
+        b=C.co(other); return C(self.r+b.r,self.i+b.i)
+    __radd__=__add__
+    def __neg__(self):
+        return C(-self.r,-self.i)
+    def __sub__(self, other):
+        return self+(-C.co(other))
+    def __mul__(self, other):
+        b=C.co(other)
+        return C(self.r*b.r-self.i*b.i,self.r*b.i+self.i*b.r)
+    __rmul__=__mul__
+    def __eq__(self, other):
+        b=C.co(other); return self.r==b.r and self.i==b.i
+    def conj(self):
+        return C(self.r,-self.i)
+    def abs2(self):
+        return self.r*self.r+self.i*self.i
+    def data(self):
+        return {'real':self.r.data(),'imag':self.i.data()}
+
+def eye(n):
+    return [[C(int(i==j)) for j in range(n)] for i in range(n)]
+
+def ma(a,b):
+    return [[a[i][j]+b[i][j] for j in range(len(a[0]))] for i in range(len(a))]
+
+def ms(a,c):
+    c=C.co(c); return [[c*x for x in row] for row in a]
+
+def mm(a,b):
+    if len(a[0])!=len(b):
+        raise ValueError('matrix dimensions')
+    return [[sum((a[i][k]*b[k][j] for k in range(len(b))),C())
+             for j in range(len(b[0]))] for i in range(len(a))]
+
+def md(a):
+    return [[a[j][i].conj() for j in range(len(a))] for i in range(len(a[0]))]
+
+def mt(a):
+    return sum((a[i][i] for i in range(len(a))),C())
+
+def kron(a,b):
+    return [[a[i//len(b)][j//len(b[0])]*b[i%len(b)][j%len(b[0])]
+             for j in range(len(a[0])*len(b[0]))] for i in range(len(a)*len(b))]
+
+def det(a):
+    n=len(a); value=C()
+    for p in itertools.permutations(range(n)):
+        inv=sum(p[i]>p[j] for i in range(n) for j in range(i+1,n))
+        term=C(-1 if inv%2 else 1)
+        for i in range(n):
+            term=term*a[i][p[i]]
+        value=value+term
+    return value
+
+def mdata(a):
+    return [[v.data() for v in row] for row in a]
+
+def save(status):
+    REPORT['status']=status
+    REPORT['arithmetic_statistics']=dict(STATS)
+    if OUTPUT is not None:
+        (OUTPUT/'REPORT.json').write_text(json.dumps(REPORT,indent=2)+'\n')
+
+def require(name, condition):
+    row={'name':name,'holds':bool(condition)}
+    REPORT['checks'].append(row)
+    print(json.dumps(row,sort_keys=True),flush=True)
+    if not condition:
+        raise AssertionError(name)
+
+def main():
+    global OUTPUT
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--inputs',required=True)
+    parser.add_argument('--output',required=True)
+    args=parser.parse_args()
+    destination=Path(args.output)
+    destination.mkdir(parents=True,exist_ok=False)
+    OUTPUT=destination
+    raw=Path(args.inputs).read_bytes()
+    inp=json.loads(raw)
+    REPORT['input_sha256']=hashlib.sha256(raw).hexdigest()
+    REPORT['source_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    REPORT['fixed_inputs']=inp
+    require('fixed N, q list and bit ceiling',inp['atan_terms']==32 and
+            inp['atan_denominators']==[5,239,7] and inp['integer_bit_ceiling']==LIMIT)
+    T=gi(int(inp['T_decimal'])); window=gi(inp['window'])
+    require('fixed time, window and accuracy',T==350208522228384946904887108861751911074590975328100424043350794320
+            and window==24 and inp['requested_isometry_error_power']==44)
+    require('T exact lower and upper bounds',ip(2,64)<T<ip(2,300))
+
+    series={}; denominator_products=[]; tail_denominators=[]
+    for q in inp['atan_denominators']:
+        total=Q(); terms=[]; product=1
+        for k in range(32):
+            denominator=im(2*k+1,ip(q,2*k+1))
+            product=im(product,denominator)
+            term=Q(-1 if k%2 else 1,denominator)
+            total=total+term
+            terms.append({'index':k,'term':term.data(),'partial_sum':total.data()})
+        td=im(65,ip(q,65)); tail=Q(1,td)
+        series[q]=(total,tail)
+        denominator_products.append(product); tail_denominators.append(td)
+        REPORT['computed'][f'atan_{q}']={'sum':total.data(),'tail':tail.data(),
+            'interval_lower':total.data(),'interval_upper':(total+tail).data(),'terms':terms,
+            'unreduced_sum_denominator_hex':hex(product)}
+        require(f'positive arithmetic atan interval for q={q}',Q(0)<total and Q(0)<tail)
+    s5,d5=series[5]; s239,d239=series[239]; s7,d7=series[7]
+    lower=12*s5-3*(s239+d239)-(s7+d7)
+    upper=12*(s5+d5)-3*s239-s7
+    width=upper-lower; middle=(lower+upper)/2; radius=width/2
+    b=middle/T; cap=2*b
+    quiet=2*middle*window/T
+    error=2*radius+quiet
+    require('interval width identity',width==12*d5+3*d239+d7)
+    require('width coarse and dyadic bounds',Q(0)<width and width<=Q(16,im(65,ip(5,65)))
+            and width<Q(1,ip(2,126)) and radius<Q(1,ip(2,127)))
+    require('positive alpha bracket',Q(1)<lower and lower<middle and middle<upper and upper<Q(4))
+    require('positive edge and cap2',Q(0)<b and cap<Q(2))
+    require('quiet and full uniform bounds',quiet<Q(1,ip(2,56)) and error<Q(1,ip(2,55))
+            and error<Q(1,ip(2,44)) and 2*error<Q(1,ip(2,54)))
+    REPORT['computed']['coefficient']={name:value.data() for name,value in
+        [('alpha_lower',lower),('alpha_upper',upper),('alpha_midpoint',middle),
+         ('alpha_radius',radius),('b_hat',b),('added_norm',cap),
+         ('quiet_upper',quiet),('uniform_isometry_upper',error),('joint_trace_upper',2*error)]}
+
+    ds=1; dt=1
+    for value in denominator_products: ds=im(ds,value)
+    for value in tail_denominators: dt=im(dt,value)
+    da=im(2,im(ds,dt)); db=im(da,T)
+    require('unreduced common denominator encodes midpoint',da%middle.d==0)
+    na=im(middle.n,gi(da//middle.d))
+    require('unreduced common denominator encodes b',Q(na,db)==b)
+    require('encoding bit bounds',ds<ip(2,15008) and dt<ip(2,931) and da<ip(2,15940)
+            and 0<na<ip(2,15942) and db<ip(2,16240))
+    REPORT['computed']['unreduced_encoding']={
+        'sum_denominator_product_hex':hex(ds),'tail_denominator_product_hex':hex(dt),
+        'alpha_denominator_hex':hex(da),'alpha_numerator_hex':hex(na),
+        'b_denominator_hex':hex(db),
+        'alpha_denominator_bits':da.bit_length(),'alpha_numerator_bits':na.bit_length(),
+        'b_denominator_bits':db.bit_length()}
+    require('coefficient-stage rational operations below500',STATS['rational_operations']<500)
+    REPORT['computed']['coefficient_stage_arithmetic_statistics']=dict(STATS)
+
+    i2=eye(2); x2=[[C(),C(1)],[C(1),C()]]
+    y2=[[C(),C(0,-1)],[C(0,1),C()]]; z2=[[C(1),C()],[C(),C(-1)]]
+    I=eye(4); X=kron(x2,x2); Y=kron(y2,y2); Z=kron(z2,z2)
+    X1=kron(x2,i2); X2=kron(i2,x2); K=ma(ms(I,2),Z)
+    plus=ms(ma(I,X),Q(1,2)); minus=ms(ma(I,ms(X,-1)),Q(1,2))
+    zero=ms(I,0)
+    require('Pauli commutation and covariance sign',mm(X,Z)==mm(Z,X)==ms(Y,-1))
+    require('X and Z involutions',mm(X,X)==I and mm(Z,Z)==I)
+    for label,P in [('plus',plus),('minus',minus)]:
+        require(f'{label} rank2 projector',md(P)==P and mm(P,P)==P and mt(P)==C(2))
+    require('X projectors complete orthogonal',ma(plus,minus)==I and mm(plus,minus)==zero)
+    B=ms(ma(I,X),b); H=ma(K,B)
+    require('literal K plus positive edge',H==ma(ms(I,2+b),ma(Z,ms(X,b))))
+    require('Hermiticity and commutation',md(H)==H and md(B)==B and mm(K,B)==mm(B,K))
+    joint=[]; sumP=zero; spectra=[]
+    for z,x in [(1,1),(1,-1),(-1,1),(-1,-1)]:
+        P=ms(mm(ma(I,ms(X,x)),ma(I,ms(Z,z))),Q(1,4))
+        lam=Q(2+z)+b*(1+x); edge=b*(1+x)
+        require(f'joint projector z={z},x={x}',md(P)==P and mm(P,P)==P and mt(P)==C(1))
+        require(f'complete eigen-identities z={z},x={x}',mm(K,P)==ms(P,2+z)
+                and mm(B,P)==ms(P,edge) and mm(H,P)==ms(P,lam))
+        require(f'positive spectrum z={z},x={x}',Q(1)<=lam and lam<=3+2*b and Q(0)<=edge and edge<=cap)
+        for number,old in enumerate(joint):
+            require(f'joint orthogonality {number},{len(joint)}',mm(old,P)==zero)
+        joint.append(P); sumP=ma(sumP,P)
+        spectra.append({'z':z,'x':x,'H_eigenvalue':lam.data(),'B_eigenvalue':edge.data(),'projector':mdata(P)})
+    require('joint completeness and full norm',sumP==I and spectra[0]['H_eigenvalue']==(3+2*b).data())
+    hbar=ma(Z,ms(X,b))
+    require('full variance operator identity',mm(hbar,hbar)==ma(ms(I,1+b*b),ms(Y,-2*b)))
+    require('scalar trace retained',mt(H)==C(4*(2+b)) and mt(B)==C(4*b))
+
+    D=inp['W_common_denominator']
+    W=ma(ms(I,C(Q(inp['W_identity_real_numerator'],D),Q(inp['W_identity_imag_numerator'],D))),
+         ms(X,C(Q(inp['W_XX_real_numerator'],D),Q(inp['W_XX_imag_numerator'],D))))
+    p=C(Q(inp['phase_atom_real_numerator'],inp['phase_atom_denominator']),
+        Q(inp['phase_atom_imag_numerator'],inp['phase_atom_denominator']))
+    wp=p*p
+    require('rational phase atom unit modulus',p.abs2()==Q(1))
+    require('W full unitary and commuting',mm(md(W),W)==I and mm(W,K)==mm(K,W))
+    require('W complete spectral construction',W==ma(minus,ms(plus,wp)) and wp==C(Q(-7,25),Q(24,25)))
+    mutant=ma(ms(I,Q(-3,5)),ms(X,C(0,Q(-4,5))))
+    require('full reserve phase reconstructs W',ms(mutant,-p)==W)
+    E=ma(mutant,ms(W,-1))
+    require('scalar mutant exact nonzero norm',mm(md(E),E)==ms(I,Q(16,5)) and mutant!=W)
+    require('mutant rejected at fixed tolerance',Q(1,ip(2,88))<Q(16,5))
+    require('full determinant of W',det(W)==wp*wp==C(Q(-527,625),Q(-336,625)))
+
+    # Rational orthonormal X-product bases; no sqrt(2) or numerical eigensolver.
+    sector_data=[]
+    for sign,columns in [(1,[[1,1,1,1],[1,-1,-1,1]]),
+                         (-1,[[1,-1,1,-1],[1,1,-1,-1]])]:
+        Qs=[[C(Q(columns[j][i],2)) for j in range(2)] for i in range(4)]
+        require(f'sector basis {sign}',mm(md(Qs),Qs)==i2 and mm(X,Qs)==ms(Qs,sign))
+        blocks={label:mm(mm(md(Qs),A),Qs) for label,A in [('K',K),('I',I),('X1',X1),('X2',X2),('W',W)]}
+        require(f'X-only generator invariant {sign}',mm(X,K)==mm(K,X)
+                and mm(X,X1)==mm(X1,X) and mm(X,X2)==mm(X2,X))
+        require(f'X-only trace coefficients {sign}',mt(blocks['K'])==C(4) and mt(blocks['I'])==C(2)
+                and mt(blocks['X1'])==C() and mt(blocks['X2'])==C())
+        target_det=wp*wp if sign==1 else C(1)
+        require(f'target sector determinant {sign}',det(blocks['W'])==target_det)
+        sector_data.append({'XX_sign':sign,'basis':mdata(Qs),
+                            'blocks':{k:mdata(v) for k,v in blocks.items()},'det_W_sector':target_det.data()})
+    gap=(wp*wp-C(1)).abs2()
+    require('static-X determinant gap arithmetic',gap==Q(48,25)*Q(48,25)
+            and gap==16*Q(12,25)*Q(12,25))
+    REPORT['computed']['matrices']={k:mdata(v) for k,v in
+        [('I',I),('XX',X),('YY',Y),('ZZ',Z),('K',K),('B_hat',B),('H_hat',H),('W',W),
+         ('scalar_omission_mutant',mutant),('mutant_error',E),('mutant_error_gram',mm(md(E),E))]}
+    REPORT['computed']['joint_spectrum']=spectra
+    REPORT['computed']['X_sectors']=sector_data
+    REPORT['computed']['determinant_gap_squared']=gap.data()
+    REPORT['computed']['conditional_X_only_operator_lower_bound']=Q(12,25).data()
+    require('integer ceiling respected',STATS['maximum_integer_bits']<=LIMIT)
+    save('completed_rational_checks; analytic and physical premises remain')
+    print(json.dumps({'completed':True,'checks':len(REPORT['checks']),
+                      'statistics':STATS,'report_path':str(OUTPUT/'REPORT.json')},sort_keys=True),flush=True)
+
+if __name__=='__main__':
+    try:
+        main()
+    except BaseException as exc:
+        REPORT['failure_type']=type(exc).__name__
+        REPORT['failure_message']=str(exc)
+        REPORT['traceback']=traceback.format_exc()
+        save('failed; no retry authorized')
+        raise

@@ -1,0 +1,34 @@
+{
+  "kind": "analytical_derivation_source_identity",
+  "utc": "2026-10-16T20:28:29.699072+00:00",
+  "mathematical_input_origin": "Exact root question in this worker conversation, recorded in TASK_INPUT.md",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/TASK_INPUT.md",
+      "bytes": 1291,
+      "sha256": "71e3b32e46d4310ed74188648e34cf417a14397679d5d6727743f20aee9e330c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/ANALYSIS.md",
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/SOURCE_COVERAGE.md",
+      "bytes": 2593,
+      "sha256": "d7be8406cf7bc1efe5875965f9f1b3378c4d7366587ad5d1f067610be2513b44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/CURRENT_STATUS.md",
+      "bytes": 1042,
+      "sha256": "875b34f886bad979daf7b3f8ed28d85cae145a62827608f19d16b2bff7d77dce"
+    }
+  ],
+  "optional_root_qualification_3982_read": false,
+  "new_author_candidate_read": false,
+  "prior_same_target_exposure": true,
+  "same_model_and_effort": true,
+  "science_executions": 0,
+  "proposed_scalar_check_executed": false,
+  "scope": "Static positive ordinary edge contract only; original onsite-ray contract remains distinct. Root scientific review pending."
+}

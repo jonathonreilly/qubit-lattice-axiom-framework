@@ -1,0 +1,81 @@
+{
+  "kind": "root_conditional_scientific_disposition",
+  "utc": "2026-10-16T20:48:05.947587+00:00",
+  "disposition": "accept_conditional_positive_supplied_edge_for_regular_review; preserve_negative_N1_FAIL_partial_attempt",
+  "root_complete_argument_and_checker_source_read": true,
+  "retained_audit": false,
+  "source_freezes": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/FREEZE.json",
+        "bytes": 2098,
+        "sha256": "0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2"
+      },
+      "verified_members": 11
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/FREEZE.json",
+        "bytes": 1474,
+        "sha256": "66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce"
+      },
+      "verified_members": 7
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/author_cross_review/FREEZE.json",
+        "bytes": 15554,
+        "sha256": "25c099e61df3fda1322ed2ed856e0c16773c0f139aebc45887a7560382996a67"
+      },
+      "verified_members": 85
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/PRELAUNCH_FREEZE.json",
+        "bytes": 1873,
+        "sha256": "68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67"
+      },
+      "verified_members": 10
+    }
+  ],
+  "author_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+    "bytes": 21182,
+    "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+  },
+  "initial_independent_analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/ANALYSIS.md",
+    "bytes": 17938,
+    "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/author_cross_review/REVIEW.md",
+    "bytes": 12427,
+    "sha256": "f05ddd75a45f08abc80ce2831d5e9bcc1366621d402cb7c949f5b23c06c18316"
+  },
+  "negative_checklist": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "bytes": 14270,
+    "sha256": "396969a18d95b48232ac679bf80194f4dee11a22a612501372917fd6eedc128b"
+  },
+  "actual_scientific_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/EXECUTION.json",
+    "bytes": 5396,
+    "sha256": "a744d45b718931eb93b82133c5fbaac99638637e5f894f373ed9caab2b034e83"
+  },
+  "actual_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/output/REPORT.json",
+    "bytes": 223715,
+    "sha256": "bb50c5f2485b4f6558710553d28099162d1e66c69b5b6c703b0b62a707826c0e"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 3440,
+    "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+  },
+  "scientific_executions_this_root_record": 0,
+  "author_scientific_executions": 1,
+  "independent_scientific_executions": 0,
+  "editable_prompt_files_changed": [],
+  "actual_publication": null
+}

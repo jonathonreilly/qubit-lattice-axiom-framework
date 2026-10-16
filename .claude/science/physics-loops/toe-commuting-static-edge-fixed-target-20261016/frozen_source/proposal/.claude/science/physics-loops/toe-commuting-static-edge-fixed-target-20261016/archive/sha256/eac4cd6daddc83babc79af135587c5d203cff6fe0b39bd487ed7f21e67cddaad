@@ -1,0 +1,427 @@
+# A commuting positive edge for the fixed endpoint: a conditional escape
+
+Status: proposed source-only analytical construction. Its applicability
+requires a supplied positive XX interaction on the existing old edge.
+That permission is absent from the original four-onsite-ray compiler.
+The construction therefore does not supply that compiler's microscopic
+actuator or implement its intermediate waveform. It does realize the same
+fixed full-U(4) endpoint, and its finite observation window, within the
+explicit alternative installed-edge contract below. No scientific program
+or numerical check has run for this note; separate source checking remains.
+
+The author also wrote the endpoint and gap-decision parents. During this
+turn, before any new freeze, root supplied a related commuting-edge formula.
+Both formulae are compared below. This is a source-exposed, same-model
+continuation, with no blind-independence claim.
+
+## 1. Fixed input and the changed physical permission
+
+Take exactly the two adjacent old qubits, arbitrary old/passive-reference
+input, and literal dimensionless old Hamiltonian
+
+    K=2I+Z1 Z2.
+
+Physical Hamiltonians and times are E0 times these matrices and
+(hbar/E0) times these dimensionless times. Keep the previously specified
+
+    W=[(9+12i)I+(-16+12i)X1 X2]/25,
+    T=350208522228384946904887108861751911074590975328100424043350794320,
+    w=24, eta=2^-44.
+
+T is the original actual elapsed time, not a new short gate duration. No
+chart, recurrence or target compiler is rerun or needed to prove the
+identities below; their packet supplies the *choice* of W,T. A source
+acceptance of that compiler does not by itself establish this new bridge.
+
+The original generator alphabet is K plus one of the supplied positive
+onsite rays I+X1,I+Y1,I+X2,I+Y2 at a time. It does not contain I+X1X2.
+Even an abstract nearest-neighbor geometry does not furnish a calibrated
+XX actuator on an occupied old edge. Thus distinguish two contracts:
+
+* Under the original onsite-only actuator contract, the construction below
+  is unavailable. Its replacement by a bounded local quantum source or by
+  the allowed onsite dynamics remains open here.
+* Under an **explicit additional installed-edge contract**, one may add the
+  positive two-qubit block b(I+X1X2) on that existing edge, with its identity
+  reserve and coefficient calibration included. The old 2I and Z1Z2 terms
+  remain literally installed. No old site moves, resets or disappears.
+
+Root's new task permits testing this alternative conditionally; it does not
+turn it into native supply or into a consequence of the original alphabet.
+There are no new vertices, no clock, no source ancilla and no routing. The
+graph remains the old degree-one two-vertex edge. In particular this is a
+direct endpoint realization, not a quantum clock construction disguised by
+discarding its outputs. Any apparatus that installs this interaction is
+outside the model and must remain a supplied preparation/installation
+interface.
+
+## 2. Exact Hamiltonian, transformed drift and full scalar
+
+Write X=X1X2 and Z=Z1Z2. They commute, square to I, and XZ=-Y1Y2.
+Let theta be the first-quadrant angle with
+
+    cos(theta)=3/5, sin(theta)=4/5,
+    theta=atan(4/3)=pi/4+atan(1/7),
+    alpha=pi-theta, b=alpha/T.
+
+The angle identities follow from the tangent subtraction formula and the
+specified quadrant; there is no branch-selection oracle. In particular
+pi/2<alpha<3pi/4<3, using pi<4. Define the explicit static family
+
+    B_T=b(I+X),
+    H_T=K+B_T=(2+b)I+Z+bX.                                (2.1)
+
+B_T is positive semidefinite, with eigenvalues0 and2b. Its identity reserve
+bI is part of the installed edge block, not a discarded phase convention.
+For every T>=alpha the added incident norm at each old vertex is2b<=2.
+The fixed T above is much larger than this threshold. No global rescaling
+of K, parallel counted channels, high-strength penalty or counterterm is
+used.
+
+The Bell transform gives the exact complete spectrum, in the order
+Phi+, Phi-, Psi+, Psi-:
+
+    K_Bell=diag(3,3,1,1),
+    X_Bell=diag(1,-1,1,-1),
+    (B_T)_Bell=diag(2b,0,2b,0),
+    (H_T)_Bell=diag(3+2b,3,1+2b,1).                       (2.2)
+
+Thus the transformed drift is still exactly the old K in this basis.
+There are no clock-prefix conjugates to compensate. The full norm of H_T
+is3+2b and its minimum eigenvalue is1. The old load3 and added load2b are
+separate; no claim about a separately positive decomposition of every
+historical old summand is needed for this matrix identity. The Bell basis
+change is a calculation, not a physically supplied Bell gate or a rotation
+that turns the installed ZZ interaction into a freely tunable XX actuator.
+
+By direct multiplication,
+
+    W=exp(i theta) exp(i theta X).
+
+Since exp[-i pi(I+X)]=I exactly on both X eigenspaces,
+
+    exp(-iT B_T)=exp[-i alpha(I+X)]
+               =exp(i theta)exp(i theta X)=W.             (2.3)
+
+Commutation with K then yields the exact full-U(4) endpoint
+
+    exp(-iT H_T)=W exp(-iTK).                             (2.4)
+
+The total scalar factor at time t is exp[-i(2+b)t]. The remaining factor
+is exp(-itZ)exp(-ibtX). At T the scalar is exp[-i(2T+alpha)]. Equation(2.3)
+uses its full value; no projective-unitary comparison is being made. For
+example det W=(-527-336i)/625 is retained automatically. The identity
+reserve does not become free because scalar energy differences sometimes
+cancel in a work ledger.
+
+Root suggested B_root=[(2pi-theta)I-theta X]/T. It is also positive and
+has the same endpoint, but
+
+    B_root-B_T=(pi/T)(I-X).
+
+This adds a complete2pi rotation on the X=-1 sector at T. It is not the
+same Hamiltonian or the same post-T motion. Its norm is2pi/T, versus
+2alpha/T for(2.1). We use(2.1) throughout; this comparison is exposed to
+root's suggestion, not an independent validation of it. Root subsequently
+also supplied(2.1), after this note's first body was written and before its
+freeze. No priority or independent-convergence conclusion is drawn.
+
+The added norm action over[0,T] is exactly2alpha, and its scalar action
+is alpha, although its rate is of order1/T. The total norm action is
+3T+2alpha. This differs from the original word's action because a different
+interaction permission and a different intermediate evolution are used.
+The static runtime slew is zero. This says nothing about the slew of an
+unmodeled installation event.
+
+## 3. Actual-time finite quiet window and retained outputs
+
+At actual time T+s the intended old target is
+
+    U_*(T+s)=exp(-isK) W exp(-iTK),  0<=s<=w.
+
+For(2.1), the exact discrepancy is
+
+    ||exp[-i(T+s)H_T]-U_*(T+s)||op
+       =||exp(-is B_T)-I||op
+       =2|sin(alpha s/T)| <=2alpha w/T.                  (3.1)
+
+The unchanged interaction is small over this *finite* window. It is not
+turned off, not permanently halted and not an exactly stationary controller.
+Since T>2^64 and alpha<4, w=24 gives
+
+    2alpha w/T <192/T <2^-56 <eta.                       (3.2)
+
+The integer comparison T>2^64 follows immediately from the displayed T
+(2^64=18446744073709551616); it is not a numerical simulation. No epsilon
+from the previous emitted word is added to(3.1): this is a different direct
+implementation proved against W itself, not an approximation to that word.
+
+There are no added quantum registers. The full output on any unknown
+old/reference state omega_SR is exactly
+
+    (exp[-itH_T] tensor I_R) omega_SR
+      (exp[itH_T] tensor I_R).
+
+Consequently the complete unhalved old/reference trace error against U_*
+is at most twice(3.1), without dimension, purification or postselection
+loss. Installation hardware is not silently included in this statement:
+it is an unmodeled supplied interface. If additional physical registers
+participate in installing or sustaining B_T, their outputs require an
+additional model and cannot be claimed reset by(2.4).
+
+More generally this same explicit one-parameter family obeys the cap2
+and finite-window isometry tolerance eta whenever
+
+    T>=alpha,  T>=2alpha w/eta.
+
+This is a narrow runtime/weak-edge tradeoff for this commuting target,
+not a generic old-plant controller. At fixed T it does not give an
+arbitrarily accurate quiet window merely by increasing a clock size.
+There is no clock size here; the continuing interaction in(3.1) remains.
+There is also no output flag announcing that T has arrived. The declared
+laboratory endpoint/observation time remains supplied. Finite-window
+accuracy does not by itself let the laboratory determine that time.
+
+## 4. Rational coefficient supply without an equality oracle
+
+Exact b is computable, but exact physical calibration is not a supplier.
+A fully specified finite rational nominal coefficient suffices. For q>1
+and N=32, set
+
+    S_q=sum_(k=0)^31 (-1)^k/[(2k+1)q^(2k+1)],
+    d_q=1/[65 q^65].
+
+The alternating series gives S_q<=atan(1/q)<=S_q+d_q. From Machin's
+identity pi=16atan(1/5)-4atan(1/239), already used with its quadrant proof
+in the exact target source,
+
+    alpha=12atan(1/5)-3atan(1/239)-atan(1/7).
+
+Define exact rational endpoints and their midpoint
+
+    l=12S_5-3(S_239+d_239)-(S_7+d_7),
+    u=12(S_5+d_5)-3S_239-S_7,
+    alpha_hat=(l+u)/2, b_hat=alpha_hat/T.
+
+These are formulae, not outputs of an executed rational-arithmetic program.
+They certify
+
+    u-l=12d_5+3d_239+d_7
+       <=16/(65*5^65)<2^-126,
+    |alpha_hat-alpha|<2^-127.                            (4.1)
+
+The last inequality uses5^65>4^65=2^130. Since pi>3 and
+pi/2<alpha<3pi/4<3, it follows that1<alpha_hat<4. Thus b_hat>0 and the
+entire block B_hat=b_hat(I+X) remains positive, with added norm<8/T<2.
+No near-zero support decision, equality test or transcendental branch
+choice enters this finite prescription.
+
+Against the same exact W and actual T, uniformly on0<=s<=24,
+
+    ||exp[-i(T+s)(K+B_hat)]-U_*(T+s)||op
+       <=2|alpha_hat-alpha|+2alpha_hat w/T
+       <2^-126+2^-56 <2^-55.                            (4.2)
+
+All scalar uncertainty is in this bound. The nominal old/reference trace
+allowance is therefore<2^-54. This bound is analytical and remains subject
+to checking the displayed proof; no interval library, run receipt or
+floating residual is being asserted.
+
+The common old factor exp[-i(T+s)K] cancels in these norm estimates by
+unitary invariance, not by being removed physically. No reduction of the
+huge old phase modulo2pi or numerical evaluation of exp(-iTK) is needed
+for this new proof. Old-generator and timing faults still pay their full
+actual-time prices below.
+
+An elementary unreduced rational encoding is finite and bounded. For each
+S_q take denominator product_(k=0)^31 [(2k+1)q^(2k+1)]. The sum of the
+exponents is32^2=1024 and each2k+1<2^7. Using5,7<2^3 and239<2^8, the
+product of all three S_q denominators is<2^15008. Multiplying their three
+tail denominators contributes less than2^931, and the midpoint contributes
+2. Hence an unreduced denominator for alpha_hat is<2^15940. Its numerator
+is<2^15942. The displayed T is<2^300, so b_hat has such an encoding with
+denominator<2^16240. These deliberately loose integer bounds concern data
+representation; they do not establish physical coefficient resolution or
+walltime for an arbitrary computable oracle.
+
+## 5. Calibration, timing, installation and exact energy ledger
+
+Let the actual coefficient be b_hat+delta_b, with no other defect. On the
+whole interval its additional isometry error is bounded by
+
+    2(T+w)|delta_b|.                                    (5.1)
+
+Thus a separately allocated eta_cal budget permits the sufficient absolute
+allowance |delta_b|<=eta_cal/[2(T+w)]. Relative accuracy is consequently
+of order eta_cal for this b_hat of order1/T, while *absolute* calibration
+is extremely demanding. This is sufficient, not a necessary lower bound.
+For the exact b, a multiplicative fault b_actual=b(1+delta) gives endpoint
+error2|sin(alpha delta)|<=2alpha|delta|, and whole-window additional error
+at most2alpha(1+w/T)|delta|. Replace alpha by alpha_hat for the rational
+nominal coefficient. For eta_cal<=1 the displayed absolute coefficient
+budget also preserves positivity and the cap: b_hat>1/T, the error is
+<=1/(2T), and2b_actual<9/T<2. This uses the structured scalar coefficient
+fault, not an arbitrary matrix perturbation.
+Physical b has energy factor E0. Actual old drift, extra channels, offsets,
+unlisted couplings and time-dependent faults require their full integrated
+generator defect; they are not covered by recalibrating b alone. A common
+old-drift norm error rate delta_K costs(T+w)delta_K. Positive block structure
+must be physically retained; a small norm fault alone does not guarantee it.
+
+At a fixed named endpoint a timing displacement has the safe whole-system
+upper allowance(3+2b_actual)|delta_t| in dimensionless units. If the target
+is instead updated to the actual time T+s, use the explicit comparator in
+section3, including its continuing edge phase. There is no source-clock
+precision or physical timing supplier hidden in the use of a classical T.
+
+For an arbitrary old reduced input rho, define
+
+    z=Tr(rho Z1Z2), x=Tr(rho X1X2), y=Tr(rho Y1Y2).
+
+For either exact or rational positive b, the full installed generator has
+the exact input mean and variance (in E0 and E0^2 units, respectively)
+
+    mean(H_T)=2+b+z+bx,
+    var(H_T)=1+b^2-2by-(z+bx)^2.                         (5.2)
+
+This uses XZ=-Y1Y2 and includes the covariance; it is not a sum of
+independent variances. Also
+
+    mean(B_T)=b(1+x), var(B_T)=b^2(1-x^2),
+    mean(K)=2+z,       var(K)=1-z^2.
+
+All these expectations and variances are conserved during the exact static
+evolution because K and B_T commute. The old energy change is zero for
+every input at every time, just as the selected target has zero ideal
+endpoint old work. The static model has no explicit drive-work term. It
+does not imply that manufacturing, installing or calibrating the interaction
+costs no work, or identify this model energy with an unspecified apparatus.
+
+The initial state is supplied at the declared runtime zero under the
+installed H_T. If the interaction was present earlier, that earlier old
+aging includes B_T and needs its own chronology. If it is installed by a
+supplied ramp H(t)=K+u(t)B_T, every generator still commutes: the exact
+propagator is exp(-itK)exp[-i B_T integral u]. Its ramp scalar and edge area
+must therefore be included in the actual target, not assumed instantaneous.
+The inclusive work of a monotone0-to-1 installation is exactly
+E0*b(1+x), between0 and2E0*b. This is an explicitly driven installation
+contract, not an autonomous creation of B_T or a modeled installer output.
+
+For example, if external start and stop switches are separately permitted,
+one may take unit-duration cubic ramps, a plateau between them, and zero
+control after the original T. Their total area is T-1. Choosing
+b=alpha/(T-1) gives the same exact endpoint and an exact subsequent old-only
+window. Each ramp has added operator slew<=3b E0^2/hbar, and peak norm2bE0;
+the complete cycle's modeled inclusive work is zero since u starts and ends
+at zero and x is conserved. That alternative pays two supplied switches
+and their timing/output contract. It is not a solution to autonomous halt
+and is not the static implementation claimed in sections2-4.
+
+Initial/final state inaccuracies and residual endpoint interactions must
+not be omitted from a work comparison. For equal-trace old states, each
+initial or final old comparison error delta costs at most E0*delta,
+because width(K)/2=E0. At an installed-edge baseline the interaction energy
+is part of that baseline; at a purported zero-control baseline an actual
+residual B contributes its actual endpoint expectation. Static total
+conservation alone does not identify a separate work reservoir or a source
+phase reference. None was modeled here.
+
+## 6. Preserved failed shortcut within the onsite-only contract
+
+A tempting replacement is to keep only static positive X onsite fields,
+whose scalar reserves might seem to repair the target phase. It fails for
+an exact algebraic reason. Consider the finite family
+
+    H_X=K+cI+uX1+vX2,
+
+with any real u,v,c (positivity may impose c>=|u|+|v|, but the following
+identity does not need that restriction). H_X commutes with X1X2. Its two
+X1X2 eigenspaces each have dimension2. In both sectors K has trace4,
+while X1 and X2 have trace0. Hence both sector determinants of
+exp(-iT H_X) equal exp[-iT(4+2c)].
+
+For the desired W exp(-iTK), the sector determinants are instead
+
+    w_+^2 exp(-i4T), exp(-i4T),
+    w_+=(-7+24i)/25,
+    w_+^2=(-527-336i)/625 !=1.
+
+Thus no member of this restricted static X-only family has the requested
+endpoint, including its scalar. More quantitatively, for2x2 unitaries
+|det A-det B|<=2||A-B||op: telescope the two determinant columns, or the
+two eigenphases of A^dagger B. If the complete endpoint error is delta,
+both sector errors are<=delta, so
+
+    |w_+^2-1|<=4delta,
+    |w_+^2-1|=48/25,
+    delta>=12/25.                                      (6.1)
+
+This is a failed specific substitution, not an obstruction to Y controls,
+time-dependent four-ray words, additional quantum registers, other static
+onsite directions, or the supplied XX edge. In particular, it does not
+refute the original qualified endpoint word. No broad no-go or independent
+negative-result acceptance is claimed.
+
+## 7. Proposed decisive finite check; no execution yet
+
+One small exact-rational check can attack the new arithmetic and phase risks.
+It cannot establish physical availability of the added interaction:
+
+1. Build the4x4 Gaussian-rational Pauli matrices, rank-two X projectors,
+   and rank-one joint projectors (I+xX)(I+zZ)/4 for x,z in{+1,-1}.
+   Check XZ=ZX=-Y1Y2, their ranks, the complete spectrum(2.2), positivity,
+   and every rational coefficient of W. Use the exact complex number
+   exp(i theta)=(3+4i)/5 to check(2.3) without a matrix-exponential library.
+2. Form exactly the96 alternating-series summands and three tails for
+   section4, with rational arithmetic. Check the stated enclosing endpoints,
+   positivity of b_hat, cap, fixed T bounds and complete inequality(4.2).
+   The analytic alternating remainder is a proof premise, not a rational
+   checker output magically certifying a transcendental function.
+3. Check the sector determinants and the rational squared equality
+   |w_+^2-1|^2=(48/25)^2 in(6.1). Retain identity coefficients throughout.
+4. A load-bearing mutant drops bI from the implemented edge. At T it gives
+   exp(i alpha)W instead of W, with full-isometry squared error
+   |exp(i alpha)-1|^2=16/5. The checker must reject this full-phase mutant,
+   even though its old density channel alone would not detect the scalar.
+   Its exact matrix is(-3/5)I-(4i/5)X; the difference E from W obeys
+   E^dagger E=(16/5)I, which can be checked entirely over Gaussian rationals.
+
+An implementation can use fewer than500 rational arithmetic operations
+besides the constant-size matrix identities, with a conservative65536-bit
+intermediate integer ceiling enforced as a failure condition. The displayed
+unreduced encoding bounds make such a limit plausible and reviewable; the
+actual program must either respect it or preserve its resource failure.
+A proposed execution allocation is60 seconds and256MiB, with frozen source,
+exact argv/cwd, complete streams and all failures preserved. These are
+future limits, not a claim that a run has occurred or that walltime has
+been proven. No broad target search, recurrence replay or large clock
+simulation is useful for this particular risk.
+
+## 8. Current result and surviving physical obligation
+
+Within the additional calibrated positive-edge contract, equations(2.1)-
+(5.2) give an explicit finite, bounded-degree, cap2 direct implementation
+of this fixed target, complete phase/output control, a rational coefficient
+recipe and a finite quiet-window bound. Its resources are one added block
+on an already occupied edge, zero source qubits, the unchanged huge T, and
+the stated coefficient/timing/installation precision. It proves neither
+physical supply of that block nor realization of the24Mn-slot waveform.
+
+Under the original four-onsite-ray permission alone, the missing object
+remains a finite microscopic actuator or an allowed-term construction of
+the effective edge. The X-only shortcut above fails, but the Y-containing
+compiler and other local source families remain live alternatives. Neither
+large classical time nor a simple spectral identity supplies hardware.
+
+The next decision is an admissibility decision on the explicitly different
+installed-edge contract, followed by the small exact check above if root
+chooses to pursue it. A successful source check would establish only this
+conditional mathematical bridge. Native installation, preparation and
+apparatus outputs, a clock, permanent halt, reuse, generic plants, practical
+duration and efficient compilation remain outside it.
+
+Exact source identities, read coverage and exposure are in the companion
+manifest. Only metadata may be captured for this source-only packet; there
+is no new scientific execution or numerical evidence. No previous frozen
+source, worktree, Git/PR, canonical file, audit, prompt, lock or axiom was
+modified, and no additional agent or model was used.

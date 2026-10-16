@@ -1,0 +1,52 @@
+{
+  "kind": "canonical_body_map",
+  "source_packet_freeze": "c0f7a24933d585f168b2e724911ef0707126a596daa7495c8db582c4e172fe40",
+  "bodies": [
+    {
+      "name": "original_author_derivation",
+      "source": "endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+      "start_byte": 8537,
+      "end_byte_exclusive": 29719,
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+    },
+    {
+      "name": "initial_pre_author_analysis",
+      "source": "commuting_target_static_edge_exposed_check/ANALYSIS.md",
+      "start_byte": 29786,
+      "end_byte_exclusive": 47724,
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "name": "complete_exposed_cross_review",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/REVIEW.md",
+      "start_byte": 47793,
+      "end_byte_exclusive": 60220,
+      "bytes": 12427,
+      "sha256": "f05ddd75a45f08abc80ce2831d5e9bcc1366621d402cb7c949f5b23c06c18316"
+    },
+    {
+      "name": "preserved_N1_FAIL_checklist",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "start_byte": 60287,
+      "end_byte_exclusive": 74557,
+      "bytes": 14270,
+      "sha256": "396969a18d95b48232ac679bf80194f4dee11a22a612501372917fd6eedc128b"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 74628,
+      "end_byte_exclusive": 78068,
+      "bytes": 3440,
+      "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+    }
+  ],
+  "trailer": {
+    "start_byte": 78068,
+    "end_byte_exclusive": 78243,
+    "bytes": 175,
+    "sha256": "4819d8fc914ad767dc3d3c9ae9546d91b01922f67d831928092fa753772bbaf2"
+  }
+}

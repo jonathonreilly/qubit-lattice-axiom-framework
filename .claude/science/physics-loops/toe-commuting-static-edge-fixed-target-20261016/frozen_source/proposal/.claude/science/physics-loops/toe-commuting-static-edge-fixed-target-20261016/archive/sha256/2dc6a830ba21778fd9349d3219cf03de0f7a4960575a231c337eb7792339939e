@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""One bounded metadata-only launch with complete source and stream capture."""
+from pathlib import Path
+import hashlib
+import json
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+
+P = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/author_cross_review')
+R = P / 'metadata_run'
+R.mkdir(exist_ok=False)
+source = P / 'capture_metadata.py'
+original = source.read_bytes()
+recorder = Path(__file__).read_bytes()
+(R / 'source_at_launch.py').write_bytes(original)
+(R / 'recorder_at_launch.py').write_bytes(recorder)
+argv = [sys.executable, '-B', str(R / 'source_at_launch.py')]
+start_utc = datetime.now(timezone.utc).isoformat()
+start = time.monotonic()
+timeout = False
+with (R / 'stdout').open('wb') as out, (R / 'stderr').open('wb') as err:
+    process = subprocess.Popen(argv, stdout=out, stderr=err, cwd=str(P))
+    try:
+        code = process.wait(timeout=30)
+    except subprocess.TimeoutExpired:
+        timeout = True
+        process.kill()
+        code = process.wait()
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+receipt = {'kind': 'metadata-only; no scientific execution', 'argv': argv,
+           'start_utc': start_utc, 'end_utc': datetime.now(timezone.utc).isoformat(),
+           'elapsed_seconds': time.monotonic() - start, 'wall_timeout_seconds': 30,
+           'exit_code': code, 'timeout': timeout,
+           'source_at_launch': pin(R / 'source_at_launch.py'),
+           'recorder_at_launch': pin(R / 'recorder_at_launch.py'),
+           'source_unchanged_during_run': source.read_bytes() == original,
+           'stdout': pin(R / 'stdout'), 'stderr': pin(R / 'stderr'),
+           'scientific_executions': 0}
+(R / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+print(json.dumps(receipt, indent=2))
+sys.exit(0 if code == 0 and not timeout and receipt['source_unchanged_during_run'] else 1)

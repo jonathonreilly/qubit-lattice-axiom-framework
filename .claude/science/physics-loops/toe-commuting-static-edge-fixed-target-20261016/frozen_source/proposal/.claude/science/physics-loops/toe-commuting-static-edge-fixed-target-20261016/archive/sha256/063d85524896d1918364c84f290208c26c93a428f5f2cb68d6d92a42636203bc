@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""Hash-only final closure after the recorded metadata run has completed."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+P = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/author_cross_review')
+assert not (P / 'FREEZE.json').exists()
+receipt = json.loads((P / 'metadata_run/EXECUTION.json').read_text())
+assert receipt['exit_code'] == 0 and not receipt['timeout']
+assert receipt['scientific_executions'] == 0 and receipt['source_unchanged_during_run']
+for root, freeze_name, key in [(P.parent, 'FREEZE.json', 'files'), (P / 'sources/author', 'FREEZE.json', 'members')]:
+    freeze = json.loads((root / freeze_name).read_text())
+    for row in freeze[key]:
+        data = (root / row['path']).read_bytes()
+        assert len(data) == row['bytes'] and hashlib.sha256(data).hexdigest() == row['sha256']
+members = []
+for file in sorted(P.rglob('*')):
+    if file.is_file():
+        assert not file.is_symlink()
+        data = file.read_bytes()
+        members.append({'path': str(file.relative_to(P)), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()})
+freeze = {'utc': datetime.now(timezone.utc).isoformat(),
+          'kind': 'final source-exposed analytical review with completed metadata evidence',
+          'members': members, 'scientific_executions': 0,
+          'same_model_source_exposed': True, 'initial_freeze_preserved': True,
+          'negative_packet_status': 'FAIL', 'N1': 'FAIL',
+          'negative_disposition': 'partial-attempt-with-named-untested-routes',
+          'positive_disposition': 'analytically consistent conditional supplied-XX result; root decision pending',
+          'root_acceptance': None, 'retained_audit': False, 'canonical_binding': None, 'publication': None}
+(P / 'FREEZE.json').write_text(json.dumps(freeze, indent=2) + '\n')
+for name in ['REVIEW.md', 'NO_GO_DISCIPLINE_CHECKLIST.md', 'SOURCE_MANIFEST.json', 'metadata_run/EXECUTION.json', 'FREEZE.json']:
+    data = (P / name).read_bytes()
+    print(json.dumps({'path': name, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}))
+print(json.dumps({'frozen_members': len(members), 'scientific_executions': 0}))

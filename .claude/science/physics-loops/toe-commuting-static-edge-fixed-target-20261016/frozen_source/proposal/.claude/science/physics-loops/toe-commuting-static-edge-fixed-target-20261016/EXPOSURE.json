@@ -1,0 +1,14 @@
+{
+  "source_exposed": true,
+  "same_selected_model": true,
+  "blind_independence": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "historical_author_scientific_runs": 1,
+  "independent_scientific_replications": 0,
+  "actual_author_seconds": 0.18528820807114244,
+  "wall_limit_seconds": 60,
+  "cpu_quota": null,
+  "ram_quota": null,
+  "retained_audit": false
+}

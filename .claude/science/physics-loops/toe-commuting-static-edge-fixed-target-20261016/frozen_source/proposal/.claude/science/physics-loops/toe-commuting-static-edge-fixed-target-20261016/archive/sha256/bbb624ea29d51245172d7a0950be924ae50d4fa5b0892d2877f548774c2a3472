@@ -1,0 +1,11 @@
+# Actual root authorization received before the single scientific attempt
+
+Root instruction in this thread, received after the source-only prelaunch
+freeze68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67:
+
+> Root has now fully read check_static_edge.py SHA bd4f2a14..., INPUTS944f5d36..., record_one_attempt0f7c0f23..., READ_GUIDE, frozen manifest68be4520... and reviewed the arithmetic/matrix logic. GO for exactly the one declared 60-second attempt through record_one_attempt.py, with actual ROOT_GO.md recording this instruction, source capture and full streams; no CPU/RAM quota claim, no retry or parameter change. Preserve actual outputs and report small receipt identity/status plus complete output paths. Do not edit frozen source, W/Git/PR.
+
+This records the received instruction; it does not invent another approval,
+scientific acceptance or permission to retry. The source and inputs remain
+the exact prelaunch bytes. The subsequent weak-mediator task is separate and
+authorizes source preparation only, not another scientific execution.

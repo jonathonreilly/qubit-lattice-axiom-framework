@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-16T20:28:17.414502+00:00",
+  "status": "frozen proposed source; no scientific execution",
+  "scientific_launches": 0,
+  "members": [
+    {
+      "path": "DERIVATION.md",
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 3006,
+      "sha256": "ea4199c61bc2242444c60710b69f663dc48c16d94945a41c56ff4e2d25ea9724"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 3457,
+      "sha256": "6d656ec52737aa0655a3033681f7c54db24f9b2e64b7b4ed68738a0f4ffd8921"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2096,
+      "sha256": "0d37aee756ddeed18c5c992b043e52abf7ff9e7722f63f559035d965d03b4c94"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 4646,
+      "sha256": "3863591564e9b27ac5ccc21aacea306f4da817d2b8ae3a47e5ae6b9e4835140b"
+    },
+    {
+      "path": "sources/gap_decision__GAP_DECISION.md",
+      "bytes": 19949,
+      "sha256": "ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc"
+    },
+    {
+      "path": "sources/gap_freeze__FREEZE.json",
+      "bytes": 3521,
+      "sha256": "830d2f702a69b6fc48514b35aa4bb75087efc8c317196cbf8e58e78c1c4f46b7"
+    },
+    {
+      "path": "sources/target_derivation__DERIVATION.md",
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737"
+    },
+    {
+      "path": "sources/target_freeze__FREEZE.json",
+      "bytes": 22438,
+      "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc"
+    },
+    {
+      "path": "sources/target_ledger__RESOURCE_LEDGER.json",
+      "bytes": 1311,
+      "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11"
+    },
+    {
+      "path": "sources/target_result__RESULT.md",
+      "bytes": 4930,
+      "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60"
+    }
+  ],
+  "terminal_metadata_receipt_outside_freeze": "runs/metadata_001/EXECUTION.json",
+  "acceptance": null,
+  "canonical_binding": null,
+  "publication": null
+}

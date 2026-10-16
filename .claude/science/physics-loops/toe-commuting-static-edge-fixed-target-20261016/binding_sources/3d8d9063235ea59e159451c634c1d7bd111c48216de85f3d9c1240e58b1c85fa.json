@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_root_recorder_proposal/record_static_canonical_review.py",
+    "installed",
+    "--root-reviewed",
+    "--expectations",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/commuting_static_edge/ROOT_INSTALLED_EXPECTATIONS.json",
+    "--expectations-sha",
+    "6e36fd620f95596b7946a751c6af3dd386be793b23d040ab77d07ebf1a55e5ce"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T21:28:08.340803+00:00",
+  "end_utc": "2026-10-16T21:28:11.609025+00:00",
+  "elapsed_seconds": 3.2681097080931067,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/static_canonical_review/stdout",
+    "bytes": 367,
+    "sha256": "5d932ed92a3fbfc50200ad336b603479e02040caf97a0a3f508b7795127e0b63"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/static_canonical_review/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/static_root_recorder_proposal/record_static_canonical_review.py",
+    "bytes": 11038,
+    "sha256": "71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/static_canonical_review/executed_source.py",
+    "bytes": 11038,
+    "sha256": "71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  }
+}

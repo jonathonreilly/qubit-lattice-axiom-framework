@@ -1,0 +1,79 @@
+# Exposed cross-review of the static positive edge proposal
+
+The positive construction and the new rational/energy/ramp calculations are consistent at their stated supplied-edge scope. I found no load-bearing mathematical defect. The static X-only determinant obstruction and the scalar mutant are also correct within their explicit domains. Their **negative submission packet is FAIL under N1**, because there are not five honest failed normalized approach families with retained authority for either negative domain. This procedural limitation does not invalidate the invariant proof. The negative material is preserved as a partial-attempt record; no global or retained no-go is approved. See [NO_GO_DISCIPLINE_CHECKLIST.md](NO_GO_DISCIPLINE_CHECKLIST.md) and [NO_GO_LEDGER.md](NO_GO_LEDGER.md).
+
+The author source is `DERIVATION.md`, SHA256 `eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad`, 21,182 bytes, under author freeze `0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2`. My prior derivation `ANALYSIS.md` SHA256 `4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f` was sealed in parent freeze `66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce` before this author material was viewed. Both initial bodies remain unchanged. The author discloses receiving both edge formulas from root before its own freeze; this comparison does not assert independent convergence or priority. It is same-model, source-exposed checking.
+
+## 1. Positive endpoint and window contract
+
+The author uses exactly the positive projector interaction independently derived in my initial note: with `alpha=pi-atan(4/3)` and `b=alpha/T`, add `B=b(I+XX)`. It has spectrum `{0,2b}`, commutes with literal `K=2I+ZZ`, and gives `exp(-iTB)=W` as a full matrix. The Bell spectrum, scalar action `2T+alpha`, determinant, incident norm `2b` at each old vertex and zero runtime slew are correct. The total norm action is `T(3+2b)=3T+2alpha`; the new action and initial energy are not equated with the previous pulsed word's resources.
+
+The root formula compared in the author text, `[(2pi-theta)I-theta XX]/T`, differs by `(pi/T)(I-XX)`. That difference adds a 2pi endpoint phase only on the negative-XX sector. Both endpoint identities are valid, but their Hamiltonian norms and window evolution differ. The author consistently uses the smaller positive-projector formula thereafter.
+
+At true time T+s, the exact full-matrix discrepancy is `2|sin(alpha s/T)|`. The author's bound `<192/T<2^-56` follows from alpha<4, w=24 and T>2^64. Its generic full-reference trace allowance is twice that operator bound and is valid. My initial note proves the sharper worst-case trace distance `2|sin(alpha s/T)|`; this is an optional improvement, not a disagreement or an error in the author's looser allowance. Neither comparison discards an old/reference output or optimizes away the scalar in the full-unitary statement.
+
+This supplies a direct endpoint and finite-window alternative only after granting a calibrated static XX edge. It does not realize the 24Mn-slot waveform or provide its microscopic four-onsite-ray actuator. The primitive old K is not attenuated or conjugated physically. The Bell transform is a computational basis change. The interaction is assumed installed at the declared input time, and the laboratory output-time interface is supplied. Neither positivity nor nearest-neighbor placement proves native availability or an internally timed autonomous device.
+
+## 2. The 32-term rational coefficient prescription
+
+For even N=32 and q>1, the alternating sum ends with a negative term. Thus its lower endpoint is `S_q` and the next positive term bounds the remainder by `d_q=1/(65q^65)`. The signed coefficients in
+
+    alpha = 12 atan(1/5) - 3 atan(1/239) - atan(1/7)
+
+put negative terms' upper endpoints in l and positive terms' upper endpoints in u, as the author does. Therefore `l<=alpha<=u`, and the width is exactly `12d_5+3d_239+d_7`. Since 7 and 239 exceed 5,
+
+    width <= 16/(65*5^65) < 2^-126,
+    |alpha_hat-alpha| < 2^-127.
+
+These displayed powers are conservative: `5^65>2^130` already gives a substantially smaller width. No equality oracle, support decision or transcendental branch decision is required. Since `3/2<alpha<3`, the coarse `1<alpha_hat<4` is justified. Positivity and the cap follow for the exact rational nominal coefficient `b_hat=alpha_hat/T`.
+
+The full endpoint/window comparison for the rational nominal coefficient is obtained directly from
+
+    exp[-i (alpha_hat-alpha + alpha_hat s/T)(I+XX)].
+
+It is at most `2|alpha_hat-alpha|+2alpha_hat w/T`, hence `<2^-126+2^-56<2^-55` in operator norm. The stated `<2^-54` joint trace allowance is valid. This proof compares against exact W and literal actual old aging; the previous compiler's epsilon is not added. The common old factor cancels by unitary invariance because of actual commutation, not because old dynamics or its huge phase has been physically removed.
+
+I separately reconstructed the unreduced denominator estimate. For each 32-term sum the odd-factor contribution is below `2^(7*32)=2^224` and the q exponent sum is `1+3+...+63=1024`. The two q<2^3 sums each contribute exponent 3296; the q<2^8 sum contributes 8416. Their combined exponent is 15008. The three tail denominators contribute exponents 202, 527 and 202, totaling 931. A common denominator for the midpoint therefore has exponent below `15008+931+1=15940`. Because `alpha_hat<4`, the numerator bound `2^15942` follows. Multiplication by `T<2^300` gives the asserted b_hat denominator bound `2^16240`. These are finite representation bounds; they do not certify physical coefficient resolution.
+
+No rational-arithmetic program was executed here. The proposed future 500-operation / 65536-bit / 60-second / 256MiB check remains a proposed implementation budget. The note does not supply code whose operation count or every intermediate-bit bound can be inspected. In particular, the final unreduced-denominator estimate is not automatically a bound on every possible implementation's intermediate integers. Any future executable must enforce its resource limits and preserve failures. This does not affect the analytical coefficient construction.
+
+## 3. Calibration, exact energy and optional driven ramps
+
+For a linked coefficient fault delta_b, the additional full-unitary error is at most `2(T+w)|delta_b|`. With eta_cal<=1, its displayed allocation implies `b_actual>1/(2T)` and `2b_actual<9/T<2`, so positivity and cap persist. The multiplicative endpoint formula `2|sin(alpha delta)|` follows from the same two-eigenvalue spectrum. General matrix faults are not certified positive by a small norm; the author correctly keeps structure and integrated old-drift/clock/scalar/coupling errors separate. The stated nominal-time timing bound `(3+2b_actual)|delta_t|` is safe. Actual-old-aging comparison instead keeps the continuing edge phase, as in my initial note; those timing conventions must remain distinct.
+
+Put X=XX, Z=ZZ and Y=YY. Direct Pauli multiplication gives `XZ=ZX=-Y`. Thus for `A=Z+bX`,
+
+    A^2=(1+b^2)I-2bY,
+    <H>=2+b+z+bx,
+    Var(H)=1+b^2-2by-(z+bx)^2.
+
+This confirms the covariance sign in equation (5.2). The quoted B and K mean/variance formulas follow directly and are conserved at every time. Arbitrary old/reference correlations do not alter the reduced expectations or unitary identities. Static work zero and old energy conservation do not eliminate the input-dependent installed interaction energy, construction/fabrication cost, or unmodeled installer outputs.
+
+For a separately supplied installation ramp `H(t)=K+u(t)B`, all instantaneous generators commute. Its propagator is exactly `exp(-itK) exp[-iB integral u]`, with the same integral multiplying the scalar and XX parts. Since x is conserved, the inclusive work for a monotone ramp from 0 to 1 is exactly `b(1+x)` in E0 units. It is not an autonomous preparation result.
+
+For the optional externally switched cycle, a unit-duration cubic `u(r)=3r^2-2r^3` has area 1/2 and maximum derivative 3/2. Two ramps plus plateau of length T-2 therefore have area T-1. Choosing `b=alpha/(T-1)` makes the complete endpoint, including scalar, exact at the unchanged T. The added operator derivative has maximum `2b*(3/2)=3b`, peak added norm 2b, and the subsequent zero-control window is exactly old-only. Since x is conserved and u returns to zero, net inclusive model work is zero. Both switches, their timing and their apparatus/output contract are new driven permissions; this is an out-of-domain successful alternative to the static contract, not evidence of autonomous halt. No ramp contribution may be omitted if a real installation is moved inside the declared elapsed interval.
+
+## 4. Restricted determinant obstruction and scalar mutant
+
+For `H_X=K+cI+uX1+vX2`, all coefficients real and time independent, the projectors `P_sigma=(I+sigma XX)/2` reduce H_X. Without diagonalizing any perturbed matrix,
+
+    Tr(P_sigma K)=4, Tr(P_sigma I)=2,
+    Tr(P_sigma X1)=Tr(P_sigma X2)=0.
+
+The last identities follow by Pauli orthogonality. Both two-dimensional sector traces are therefore `4+2c`, so both evolution determinants are equal. The target sector determinants differ by `w_+^2`, where `w_+^2=(-527-336i)/625`. This proves the stated exact impossibility for that entire restricted static family, even without imposing its positivity or cap restrictions.
+
+For 2x2 unitaries, determinant difference is at most twice operator difference: diagonalize `A*B` and telescope its two unit-modulus eigenvalues. Compressing the full endpoint difference into either reducing sector cannot increase its norm. The triangle inequality through the common actual determinant gives
+
+    |w_+^2-1| <= 4 delta.
+
+Here `w_+^2-1=(-1152-336i)/625`, and `1152=48*24`, `336=48*7`, `24^2+7^2=625`; hence its magnitude is exactly 48/25 and `delta>=12/25`. This is a proved invariant within the static X-only domain, not a failed numerical search. It does not restrict Y-containing or time-dependent controls, additional registers, or the newly supplied XX edge.
+
+Dropping bI yields `exp(-i alpha XX)=exp(i alpha)W`. Since `cos(alpha)=-3/5`, the full-matrix squared error is `2-2cos(alpha)=16/5`, matching `E*E=(16/5)I`. The old density channel is unchanged by this scalar. This agrees with my initial note's different positive scalar mutant `C+gamma I`, which has the conjugate scalar and the same error magnitude. The author's omitted-reserve mutant itself is not positive; it is a diagnostic of full-phase sensitivity, not an admissible replacement interaction. The initial positive mutant supplies an optional positivity-preserving diagnostic without changing the author body.
+
+## 5. Disposition, checklist and limits
+
+The positive theorem remains a conditional direct-edge statement with full phase/output, rational coefficient, energy and finite-window budgets. No independent positive result is demoted merely because a separate negative submission cannot satisfy a packet quota. Conversely, source agreement does not supply an XX actuator under the original onsite interface.
+
+The unchanged finite-window residual and the static X-only invariant remain mathematical facts at their narrow domains. They cannot be submitted here as a packet-PASS no-go: [the N1–N8 checklist](NO_GO_DISCIPLINE_CHECKLIST.md) explicitly records N1FAIL and no retained authority. The negative submission is preserved as `partial-attempt-with-named-untested-routes`; live alternatives refer to the broader implementation problem, not counterexamples falsely inserted inside the fully quantified static-X lemma. A future use of these negative statements must preserve both the proof domain and the packet limitation.
+
+The full author argument/exposure/manifest, author metadata programs and actual metadata receipt/full streams were inspected. The author's preserved failed patch is an editing failure, not a scientific execution. This reviewer ran no scientific program, no new agent, no numerical fixture and no old science replay. The current-main no-go skill, freshness guide, proof-search governance and selected historical limitation ledgers were read from one exact commit; their actual captures and coverage are recorded in SOURCE_MANIFEST.json and SOURCE_COVERAGE.md. Root owns scientific acceptance; no publication, audit, W, Git state, prompt or axiom was changed.

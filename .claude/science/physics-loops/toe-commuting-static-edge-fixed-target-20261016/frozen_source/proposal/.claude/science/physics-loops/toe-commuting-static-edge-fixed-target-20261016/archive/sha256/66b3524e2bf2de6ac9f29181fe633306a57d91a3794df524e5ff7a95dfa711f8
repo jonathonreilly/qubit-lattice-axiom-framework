@@ -1,0 +1,21 @@
+{
+  "kind": "metadata only; no scientific calculation",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/seal_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate",
+  "start_utc": "2026-10-16T20:28:17.360595+00:00",
+  "end_utc": "2026-10-16T20:28:17.418844+00:00",
+  "elapsed_seconds": 0.05800470896065235,
+  "exit_code": 0,
+  "timeout": false,
+  "wall_limit_seconds": 30,
+  "cpu_ram_limits": "no separate limits",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "3863591564e9b27ac5ccc21aacea306f4da817d2b8ae3a47e5ae6b9e4835140b",
+  "stdout_sha256": "4241ccdea3e08ac30bb35c63d2e88a1c23aebced675609fab585443d286d3bb1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

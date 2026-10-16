@@ -1,6 +1,6 @@
 {
  "edge_count": 16156,
- "node_count": 7200,
+ "node_count": 7201,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3867,6 +3867,10 @@
    "out_degree": 1
   },
   "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "commuting_static_edge_fixed_target_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

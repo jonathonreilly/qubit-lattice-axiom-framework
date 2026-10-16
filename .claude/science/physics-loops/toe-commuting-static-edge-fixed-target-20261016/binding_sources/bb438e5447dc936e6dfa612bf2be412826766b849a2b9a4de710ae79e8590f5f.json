@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T20:51:18.222004+00:00",
+  "baseRefName": "physics-loop/toe-positive-onsite-endpoint-chart-recurrence-20261016",
+  "headRefName": "physics-loop/toe-positive-onsite-target-compilation-20261016",
+  "headRefOid": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "isDraft": false,
+  "number": 9653,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9653",
+  "tree": "f329672a114bfa0643d33e222aa64fa94bd08431",
+  "base_head": "4864625c13b2f0cf44eb19ae3114a8cabafc238c",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 73223,
+    "sha256": "c64bbf88d232f2f843b21ed85b6936090bc1d252bd83e0fa4feac92ce1d7506b"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_onsite_target_compilation_2026_10_16.py",
+    "bytes": 131725,
+    "sha256": "f9fee8e994919b2d845fc95833bb6baf6fb19752f7c8436d45f01ed8747f1d77"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_target_compilation/PR_BODY.md",
+    "bytes": 1744,
+    "sha256": "bb932dbff4d1833b4a5094ac28127e1049177166e23bc8c9193bb2b021c05e1e"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

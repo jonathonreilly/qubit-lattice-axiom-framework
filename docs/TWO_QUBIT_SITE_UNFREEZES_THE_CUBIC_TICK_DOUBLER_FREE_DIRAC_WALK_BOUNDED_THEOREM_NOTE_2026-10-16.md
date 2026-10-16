@@ -139,9 +139,9 @@ quasienergy pi, while the face and corner doublers are gapped at 2.665 and
 
 **Dispersion of the light-speed member.** Exactly,
 
-    omega^2 = |k|^2 - (sqrt5/2 - 7/6) (|k|^4 - sum_a k_a^4) + O(k^6),
+    omega^2 = |k|^2 - (7/6 - sqrt5/2) (|k|^4 - sum_a k_a^4) + O(k^6),
 
-with sqrt5/2 - 7/6 ≈ 0.0486: light-like along the axes to this order and
+with 7/6 - sqrt5/2 ≈ 0.0486: light-like along the axes to this order and
 slowest along the body diagonals, where the group velocity is
 1 - 0.0486 (k a)^2. For every O-covariant walk the band functions are
 O-invariant; the O-invariant polynomials on R^3 are generated in degrees

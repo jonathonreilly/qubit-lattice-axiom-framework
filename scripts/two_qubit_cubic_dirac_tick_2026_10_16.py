@@ -153,9 +153,9 @@ def main() -> int:
     one_f = sp.expand(sp.series(1 - fe, eps, 0, 6).removeO())
     w2 = sp.expand(sp.series(2 * one_f + one_f ** 2 / 3, eps, 0, 6).removeO())
     nsq = nn[0] ** 2 + nn[1] ** 2 + nn[2] ** 2
-    kap = r5 / 2 - sp.Rational(7, 6)
+    kap = sp.Rational(7, 6) - r5 / 2
     target = eps ** 2 * nsq - kap * eps ** 4 * (nsq ** 2 - (nn[0] ** 4 + nn[1] ** 4 + nn[2] ** 4))
-    ck.check('golden member: omega^2 = |k|^2 - (sqrt5/2 - 7/6)(|k|^4 - sum k_a^4) + O(k^6) (quadratic, parity-even anisotropy)',
+    ck.check('golden member: omega^2 = |k|^2 - (7/6 - sqrt5/2)(|k|^4 - sum k_a^4) + O(k^6) (quadratic, parity-even anisotropy)',
              sp.expand(w2 - target) == 0)
     # Theorem 6: exact chirality tau3 (x) 1 commutes with the coin action
     T3 = kron(SIG[3], SIG[0])

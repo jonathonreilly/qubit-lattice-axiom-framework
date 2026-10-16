@@ -14,6 +14,7 @@ blocks:
       - "O and T covariant 27-point-cell walks are constant (Groebner over Q)."
       - "D4: only axial shifts exp(+-i sigma_z k_z)."
       - "D2 product walk: unitary, D2-covariant, isotropic Weyl cone at k=0, W3=0."
+      - "All four soldering-menu coin actions (trivial, sign, axis, full): O-covariant cell walks do not move (runner PASS=30)."
     numerical:
       - "C3, C4, D2 admit 3D moving walks; D3 none found; all W3 = 0."
       - "Independent raw-coefficient U(2) implementation (coinrep.py, spin-1/2, O): no moving walk (best residual 0.037)."
@@ -23,4 +24,5 @@ blocks:
     pending:
       - "exact D3 Groebner"
       - "residual-vs-amplitude scaling for O range 2 (DELTA 0.2, 0.5, 1.0)"
-      - "soldering-menu sign/axis actions and two-qubit / spin-3/2 coins, rerun with lower-bound penalty"
+      - "two-qubit and spin-3/2 coins under O (outside the Qubit axiom; numerical)"
+      - "independent re-derivation of O/T/D4 by a fresh agent (raw coefficients, own method)"

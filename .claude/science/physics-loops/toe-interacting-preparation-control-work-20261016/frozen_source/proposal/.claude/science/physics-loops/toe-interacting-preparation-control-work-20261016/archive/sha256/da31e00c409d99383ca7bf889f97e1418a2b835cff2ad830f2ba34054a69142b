@@ -1,0 +1,239 @@
+{
+  "utc": "2026-10-16T17:57:29.867741+00:00",
+  "kind": "exposed review selected-source capture; metadata only",
+  "candidate_freeze_sha256": "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37",
+  "candidate_members_verified": 17,
+  "source_capture_count": 26,
+  "live_parent_snapshot_matches": [
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    },
+    {
+      "live_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FREEZE.json",
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/FREEZE.json",
+      "scope": "Exact live/snapshot match; no recursive scientific replay"
+    }
+  ],
+  "sources": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/FREEZE.json",
+      "captured_path": "sources/candidate/FREEZE.json",
+      "bytes": 3352,
+      "sha256": "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37",
+      "coverage": "Complete candidate freeze inspected; all listed members verified below"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/DERIVATION.md",
+      "captured_path": "sources/candidate/DERIVATION.md",
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/EXPOSURE_AND_CHECKPOINT.md",
+      "captured_path": "sources/candidate/EXPOSURE_AND_CHECKPOINT.md",
+      "bytes": 5083,
+      "sha256": "34728017c9482f608f2927bcb1b3235655207867543b3f6cf38c904ac20ac102",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/METADATA_CHECK.stderr.txt",
+      "captured_path": "sources/candidate/METADATA_CHECK.stderr.txt",
+      "bytes": 503,
+      "sha256": "4aa269cb159c7b173e8e019dddf6fa72819750a7c172549b57979a6196241c89",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/METADATA_CHECK.stdout.txt",
+      "captured_path": "sources/candidate/METADATA_CHECK.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/METADATA_CHECK_2.stderr.txt",
+      "captured_path": "sources/candidate/METADATA_CHECK_2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/METADATA_CHECK_2.stdout.txt",
+      "captured_path": "sources/candidate/METADATA_CHECK_2.stdout.txt",
+      "bytes": 1037,
+      "sha256": "6bcb98931c82f932c8ba65857ced94188614a306de7c6102c04a6f9e30191e4b",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/SOURCE_MANIFEST.json",
+      "captured_path": "sources/candidate/SOURCE_MANIFEST.json",
+      "bytes": 8966,
+      "sha256": "6f88cc0ace6f703e2c77af836e0009b2e15f1a02818080c0c8184d8f44f3e481",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/metadata_attempt1.py",
+      "captured_path": "sources/candidate/metadata_attempt1.py",
+      "bytes": 4754,
+      "sha256": "62d9c8d2084689d3c50fe0644753026e33ffbec88945f9147f3e5be77ac755cd",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/prepare_metadata.py",
+      "captured_path": "sources/candidate/prepare_metadata.py",
+      "bytes": 5509,
+      "sha256": "27b9782421ca0f9f809a3daf31de4483e21be049145bcce95ba24b9ebe06325e",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/seal.py",
+      "captured_path": "sources/candidate/seal.py",
+      "bytes": 1154,
+      "sha256": "af2b616c9822ac0d905cb7892bc2b1c763711af6058ab93fd69fd9eb5e67b2aa",
+      "coverage": "Complete current-task read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "bytes": 5914,
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "bytes": 23761,
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "bytes": 393,
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_root_review/FREEZE.json",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/FREEZE.json",
+      "bytes": 367,
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/source_snapshot/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "captured_path": "sources/candidate/source_snapshot/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2216,
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "coverage": "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "captured_path": "sources/extra/561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2/PROPOSED_LEMMAS.md",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "coverage": "Earlier complete read reused; section1 lines1-64 re-read for actual M_i=L_i+2 battery boundary"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "captured_path": "sources/extra/b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0/FINAL_QUALIFICATIONS.md",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "coverage": "Complete immediately preceding read reused at identical bytes; controlling comb scope"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "captured_path": "sources/extra/41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2308,
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "coverage": "Earlier complete decision read reused at identical bytes"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "captured_path": "sources/extra/d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05/FREEZE.json",
+      "bytes": 705,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "coverage": "Qualified comb decision freeze identity only; no recursive membership assertion"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "captured_path": "sources/extra/71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "Earlier complete current-workflow reading reused after unchanged content refresh"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "captured_path": "sources/extra/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "Complete current read; installed entry verified byte-identical to this local source"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "captured_path": "sources/extra/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "Complete current read; explicit bounded no-Git scope prevents remote refresh"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "captured_path": "sources/extra/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "Complete current read; applicable target/premise and independent reconstruction obligations only"
+    }
+  ],
+  "scientific_executions": 0,
+  "scientific_replays": 0,
+  "independent_mathematical_acceptance_by_program": false,
+  "scope_limit": "Exact source and stream identities only. No validation of mathematical truth, unarchived ancestral freezes, prior scientific processes, physical calibration, publication or retained status. Candidate metadata provenance limits are preserved."
+}

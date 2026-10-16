@@ -1,0 +1,61 @@
+"""Actual bounded metadata launch, preserving original executable and full streams."""
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import resource
+import subprocess
+import sys
+import time
+
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def stamp():
+    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+
+def limits():
+    resource.setrlimit(resource.RLIMIT_CPU, (30, 30))
+
+
+root = Path(__file__).resolve().parent
+run = root / "runs/source_integrity"
+run.mkdir(parents=True, exist_ok=False)
+source = (root / "verify_and_capture.py").read_bytes()
+launcher = Path(__file__).read_bytes()
+(run / "executed_source.py").write_bytes(source)
+(run / "executed_launcher.py").write_bytes(launcher)
+argv = [sys.executable, "-B", str(run / "executed_source.py"), "--root", str(root)]
+receipt = {"scope": "Metadata-only identity capture; no scientific process or parent replay",
+           "launcher_orig_argv": sys.orig_argv,
+           "resolved_interpreter": sys.executable, "python": sys.version,
+           "argv": argv, "cwd": str(root), "source_sha256": digest(source),
+           "launcher_sha256": digest(launcher), "started_utc": stamp(),
+           "cpu_limit_seconds": 30, "wall_timeout_seconds": 45,
+           "scientific_executions": 0}
+(run / "LAUNCH.json").write_text(json.dumps(receipt, indent=2) + "\n")
+begin = time.monotonic()
+with (run / "stdout").open("wb") as stdout, (run / "stderr").open("wb") as stderr:
+    try:
+        process = subprocess.run(argv, cwd=root, stdout=stdout, stderr=stderr,
+                                 preexec_fn=limits, timeout=45, check=False)
+        receipt["exit_code"] = process.returncode
+        receipt["timeout"] = False
+    except subprocess.TimeoutExpired:
+        receipt["exit_code"] = None
+        receipt["timeout"] = True
+receipt["finished_utc"] = stamp()
+receipt["elapsed_seconds"] = time.monotonic() - begin
+receipt["streams"] = {name: {"bytes": (run / name).stat().st_size,
+                                   "sha256": digest((run / name).read_bytes())}
+                       for name in ("stdout", "stderr")}
+receipt["source_after_sha256"] = digest((root / "verify_and_capture.py").read_bytes())
+receipt["launcher_after_sha256"] = digest(Path(__file__).read_bytes())
+(run / "EXECUTION.json").write_text(json.dumps(receipt, indent=2) + "\n")
+print(json.dumps({"run": str(run), "exit_code": receipt["exit_code"],
+                  "timeout": receipt["timeout"], "source_sha256": receipt["source_sha256"]}))
+if receipt["exit_code"] != 0 or receipt["timeout"]:
+    raise SystemExit(1)

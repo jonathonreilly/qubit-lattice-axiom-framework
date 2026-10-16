@@ -1,0 +1,40 @@
+{
+  "kind": "source_packet_metadata_seal",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/seal_packet.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft"
+  ],
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/seal/source_and_launcher_at_launch.py",
+    "--validate",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft",
+  "started_utc": "2026-10-16T18:20:42.190974+00:00",
+  "timeout_seconds": 60,
+  "source_and_launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/seal/source_and_launcher_at_launch.py",
+    "bytes": 5420,
+    "sha256": "1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb"
+  },
+  "scientific_programs_run": 0,
+  "finished_utc": "2026-10-16T18:20:42.448469+00:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.25662483274936676,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/seal/stdout",
+    "bytes": 448,
+    "sha256": "d24de8e4690648668602056a3d0429a67a5ef0b1687d9a3ab8b9f71ce2e78c29"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/seal/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_unchanged_after": true
+}

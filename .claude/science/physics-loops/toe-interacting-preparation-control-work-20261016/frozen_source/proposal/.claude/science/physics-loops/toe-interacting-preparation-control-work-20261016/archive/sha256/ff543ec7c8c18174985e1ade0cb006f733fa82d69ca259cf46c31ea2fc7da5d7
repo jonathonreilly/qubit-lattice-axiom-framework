@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-16T18:00:48.107376+00:00",
+  "scope": "Final source identity and original reviewer receipt/stream metadata only",
+  "source_captures_verified": 26,
+  "live_parent_matches": 7,
+  "scientific_executions": 0,
+  "metadata_capture_processes": 1,
+  "original_launch_and_full_stream_hashes_verified": true,
+  "root_acceptance": null,
+  "publication": null,
+  "retained_audit": false
+}

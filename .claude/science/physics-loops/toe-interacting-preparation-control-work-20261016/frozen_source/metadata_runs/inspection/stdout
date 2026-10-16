@@ -1,0 +1,52 @@
+{
+  "kind": "source_integrity_and_metadata_mutants_only",
+  "checked": {
+    "note_sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b",
+    "body_count": 9,
+    "source_aliases": 219,
+    "archive_objects": 120,
+    "science_executions": 0
+  },
+  "direct_original_interval_comparison": true,
+  "scoped_metadata_mutants": [
+    {
+      "name": "unbound_canonical_refusal",
+      "rejected": true,
+      "reason": "UNBOUND SOURCE-ONLY PROPOSAL: actual wrapper review, base and canonical execution evidence are pending"
+    },
+    {
+      "name": "altered_original_body",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_fault_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "missing_actual_scientific_source",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_actual_scientific_source"
+    },
+    {
+      "name": "missing_preserved_failed_metadata",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_preserved_failed_metadata"
+    },
+    {
+      "name": "missing_root_actual_acceptance_source",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_root_actual_acceptance_source"
+    },
+    {
+      "name": "missing_parent_attachment",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_parent_attachment"
+    }
+  ],
+  "mathematics_tested_by_this_execution": false,
+  "historical_scientific_replays": 0,
+  "canonical_primary_execution": null,
+  "root_source_wrapper_review": null
+}

@@ -1,0 +1,1171 @@
+{
+  "schema": "source_integrity_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/ACTUAL_BINDING.json",
+      "bytes": 20767,
+      "sha256": "8af95fe893e3f0ee94abf3786993cddee5e1665f7745137a8022f9d49f359949"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/ACTUAL_REFRESH_PROVENANCE.json",
+      "bytes": 17811,
+      "sha256": "9d1bc846bd6f84b1b2f1079cab30baa1fcaf94b3ec403cebbb0a5c0f4da89832"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/BODY_MAP.json",
+      "bytes": 3845,
+      "sha256": "17dcfcb7002f3b7e1065e2977a3417697aa515d19eec41be18632d6613e296c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/CANONICAL_BINDING.json",
+      "bytes": 4693,
+      "sha256": "594807858c04ecb74ce010f2106bbabecaba955bb91e2b40872634d342b4667c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1479,
+      "sha256": "c3ac1ad0d627fd550595d9057a3f31a938311f0db30509f92819af187123db9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PARENT_BINDING.json",
+      "bytes": 734,
+      "sha256": "d0ae0e7cb2412198102d268e144ad22cecb93b8cb9fa25662a46e87456f7c0fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PR_TITLE.txt",
+      "bytes": 95,
+      "sha256": "7dd5d72650c940a77112b7096b0d1a4c332991c9a876cf1cec1ca63f16e8e4a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PUBLICATION_STATE.json",
+      "bytes": 271,
+      "sha256": "1adc2d8b811043d8dcde6efdb0442cb600f89b8cf0b83b71d53fe0cf2ba5d0a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/README.md",
+      "bytes": 326,
+      "sha256": "75e2cf33092f0c592e2051a16bc1db258933fe02989409d6893a4f4111ba9328"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/SOURCE_MANIFEST.json",
+      "bytes": 4632,
+      "sha256": "32ee11bc68a389dbf39db2f436694bab63aa94788636d52c0a045ad4667da1e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/07d855ba0c59611962b4210c2607776274f7bb0377343bdd1e1323a357a2b2b2.blob",
+      "bytes": 604,
+      "sha256": "07d855ba0c59611962b4210c2607776274f7bb0377343bdd1e1323a357a2b2b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9.blob",
+      "bytes": 339,
+      "sha256": "19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1df67c5eb806e3936b84f41d5c3b0d850842a61aa0f527aa4880d32f7a4719d2.py",
+      "bytes": 8789,
+      "sha256": "1df67c5eb806e3936b84f41d5c3b0d850842a61aa0f527aa4880d32f7a4719d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d.json",
+      "bytes": 143581,
+      "sha256": "1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6.json",
+      "bytes": 31810,
+      "sha256": "1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf.json",
+      "bytes": 5309,
+      "sha256": "2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081.blob",
+      "bytes": 41,
+      "sha256": "39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b.md",
+      "bytes": 181877,
+      "sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4942cd6f447f15dcb90c711887b3ed11311351a9356e145c3fae1427238b0ce8.py",
+      "bytes": 7447,
+      "sha256": "4942cd6f447f15dcb90c711887b3ed11311351a9356e145c3fae1427238b0ce8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4a19fba3a7191729ee180ae820d45750d6c24fd259e8c7ed559976400aa2028d.json",
+      "bytes": 1251,
+      "sha256": "4a19fba3a7191729ee180ae820d45750d6c24fd259e8c7ed559976400aa2028d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4bfa04be21d205801f1b5c941c7743c4778581a58e006ddcd75fc7dd0f31a233.json",
+      "bytes": 10015,
+      "sha256": "4bfa04be21d205801f1b5c941c7743c4778581a58e006ddcd75fc7dd0f31a233"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/518d6d64a91c47932b6ecb6b45a042eff8f0a9ac5edece44b869b166ce5e0200.blob",
+      "bytes": 174,
+      "sha256": "518d6d64a91c47932b6ecb6b45a042eff8f0a9ac5edece44b869b166ce5e0200"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2.json",
+      "bytes": 1749,
+      "sha256": "60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97.blob",
+      "bytes": 856,
+      "sha256": "61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67.json",
+      "bytes": 3698,
+      "sha256": "6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/6b214e2c70aa294b8842fbac3688ec0d5b5636ce098296c4a4893cff0c1fd736.json",
+      "bytes": 1781,
+      "sha256": "6b214e2c70aa294b8842fbac3688ec0d5b5636ce098296c4a4893cff0c1fd736"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7045458b57b1f29547f6775cedd84c0c3d3dd878ff1c1d75d989480f41b1a3d0.json",
+      "bytes": 1798,
+      "sha256": "7045458b57b1f29547f6775cedd84c0c3d3dd878ff1c1d75d989480f41b1a3d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454.py",
+      "bytes": 57414,
+      "sha256": "77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326.json",
+      "bytes": 1473,
+      "sha256": "7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4.json",
+      "bytes": 1856,
+      "sha256": "7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/924cde493f8b25d6ee33c388740f4521a3f2e376230af14af85348341d3aad08.json",
+      "bytes": 1545,
+      "sha256": "924cde493f8b25d6ee33c388740f4521a3f2e376230af14af85348341d3aad08"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4.json",
+      "bytes": 1841,
+      "sha256": "929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/9dcd298f7e2a46510423c4ad9e633390808f21738cb323e374d15c9fef68ae9e.blob",
+      "bytes": 365,
+      "sha256": "9dcd298f7e2a46510423c4ad9e633390808f21738cb323e374d15c9fef68ae9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a153505b9e7b63a45c9be2d5f438e76951fcd03c69a8ec2cbf71c775be20cacf.blob",
+      "bytes": 819,
+      "sha256": "a153505b9e7b63a45c9be2d5f438e76951fcd03c69a8ec2cbf71c775be20cacf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62.json",
+      "bytes": 318,
+      "sha256": "a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2.json",
+      "bytes": 47157,
+      "sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3.blob",
+      "bytes": 883,
+      "sha256": "a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7.md",
+      "bytes": 3499,
+      "sha256": "b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3.json",
+      "bytes": 3767,
+      "sha256": "b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1.json",
+      "bytes": 1596,
+      "sha256": "b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680.json",
+      "bytes": 1589,
+      "sha256": "bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce.json",
+      "bytes": 510,
+      "sha256": "c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/cb9d3ecef6b0b18a35d63739a07a207cc3f1fbcc1f8e1c97cc1bfbc76d093163.json",
+      "bytes": 4970,
+      "sha256": "cb9d3ecef6b0b18a35d63739a07a207cc3f1fbcc1f8e1c97cc1bfbc76d093163"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97.json",
+      "bytes": 516,
+      "sha256": "cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/d5d25c8cb6ea1ac5480804d06733c63865e29a94544e63a461382774d5f9069b.json",
+      "bytes": 1265,
+      "sha256": "d5d25c8cb6ea1ac5480804d06733c63865e29a94544e63a461382774d5f9069b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1.py",
+      "bytes": 11513,
+      "sha256": "daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/ddca3cb93d4ece6352e9710ac5733f2846c78381a4faa4fcf9b861d669f22387.json",
+      "bytes": 1907,
+      "sha256": "ddca3cb93d4ece6352e9710ac5733f2846c78381a4faa4fcf9b861d669f22387"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e201ab2d7374780becdd1fddd22eddae9327a849803c1fdf9d15a3ff8631b9c9.json",
+      "bytes": 1164,
+      "sha256": "e201ab2d7374780becdd1fddd22eddae9327a849803c1fdf9d15a3ff8631b9c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3808dc48af1b93b18f29e89b228f32d274038d6f6feb0d5473eec685557f953.json",
+      "bytes": 42345,
+      "sha256": "e3808dc48af1b93b18f29e89b228f32d274038d6f6feb0d5473eec685557f953"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225.py",
+      "bytes": 12999,
+      "sha256": "f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/fa1104a361e50482f58d7180ec9dde678656dd856f921c21985f1d6fe3df2bdc.blob",
+      "bytes": 164,
+      "sha256": "fa1104a361e50482f58d7180ec9dde678656dd856f921c21985f1d6fe3df2bdc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/AUTHORING_EVIDENCE.md",
+      "bytes": 1744,
+      "sha256": "0f20a708dd218d9e06dfdc05ec407c171d6875ba70a6ecd1eb920007e0efd659"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/BUILD_RESULT.json",
+      "bytes": 562,
+      "sha256": "f102df8a27f053d2291c9fe714d04e8d54b82c8be63a66d32f2e19d2aa6d17aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/CHECKPOINT.md",
+      "bytes": 1706,
+      "sha256": "3bd1fded357a2033947e802545a7a44c968e1f131c39d0181e0c902e84ebadcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/FREEZE.json",
+      "bytes": 47157,
+      "sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/READ_GUIDE.md",
+      "bytes": 9057,
+      "sha256": "408b96c3451a32341b65989acf48700722cc3cb82c464ec8823ae1d9ff55cab7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/REUSE_AND_READ_MAP.json",
+      "bytes": 2749,
+      "sha256": "f26a8fe25bd4411c94aca624760c74db28e4e22a8375cc0e19f96e980fa36b38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/SEAL_VERIFICATION.json",
+      "bytes": 448,
+      "sha256": "d24de8e4690648668602056a3d0429a67a5ef0b1687d9a3ab8b9f71ce2e78c29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/SOURCE_COVERAGE.md",
+      "bytes": 3100,
+      "sha256": "3cfd1b18d104ba331c0a7e17f413a90a03d074f0724532c145163f5faac93251"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/SOURCE_PLAN.json",
+      "bytes": 15097,
+      "sha256": "8e91e8a22c5003111414d684c66d5eeb19a48c4ce4b99810b2e5505e59ec8178"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/VERIFICATION.json",
+      "bytes": 1607,
+      "sha256": "f76077ddd41f490960de99a5176905b6f3427eb208f7cfb5bd5ef533c568c64b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/build_packet.py",
+      "bytes": 4863,
+      "sha256": "131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/create_sources.py",
+      "bytes": 18603,
+      "sha256": "31f14a5a1994476bfe486217e16b72b3f40ae0af9423be4b038910d02fdabd8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/inspect_packet.py",
+      "bytes": 2902,
+      "sha256": "8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/machinery_diffs/build_packet.py.diff",
+      "bytes": 12719,
+      "sha256": "edfba2fa8758015fd8c8e5a33eb4077e0e8a3e8a2a6c9125e069a12ee6662954"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/machinery_diffs/inspect_packet.py.diff",
+      "bytes": 2584,
+      "sha256": "8c8e2b1590f0f9ca0532409d65f07c6e940e68463ad999e22f3b77dcc9d54d41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/machinery_diffs/primary_template.py.diff",
+      "bytes": 11581,
+      "sha256": "7bc1ff746e05bc259344a060b0fd4a199cff1d8c1bf7fbbb0c956052817657ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/machinery_diffs/record_metadata.py.diff",
+      "bytes": 2937,
+      "sha256": "9fa0c41bfbdd709d7973669a67a7586a62ea9a9212819902b9438cdc26b391c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/EXECUTION.json",
+      "bytes": 3131,
+      "sha256": "c57bfb37f63407fd1e5cd1c422a57d8c6dfa26eadfbc34be2cf3464ebe79ca23"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "bytes": 70337,
+      "sha256": "c72c7b59b05952822b0b09cbe123e0f2aec403a3450b2ffd4790ed82885acb1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/LAUNCH.json",
+      "bytes": 2365,
+      "sha256": "240e2367738d97968c79c20798dcb6015355eee887f0d3400484c70c7641bca6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/executed_source.py",
+      "bytes": 4863,
+      "sha256": "131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/recorder_at_launch.py",
+      "bytes": 2703,
+      "sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/build/stdout",
+      "bytes": 562,
+      "sha256": "f102df8a27f053d2291c9fe714d04e8d54b82c8be63a66d32f2e19d2aa6d17aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3169,
+      "sha256": "1f978afcfaa88a639b6b3dd5c4cb4ac7d9c0ca36fbe7c6dae732f8ac2288fb29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/INPUT_IDENTITIES_AT_LAUNCH.json",
+      "bytes": 61109,
+      "sha256": "755d14499aa9459d359286942307554617245f3eedfe1ca54287521551be764b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/LAUNCH.json",
+      "bytes": 2392,
+      "sha256": "bef67281bf2ce35e84ae66b43364ef3f8b11b69d000b5d6085154b45cbe7255c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/executed_source.py",
+      "bytes": 2902,
+      "sha256": "8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/recorder_at_launch.py",
+      "bytes": 2703,
+      "sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/inspection/stdout",
+      "bytes": 1607,
+      "sha256": "f76077ddd41f490960de99a5176905b6f3427eb208f7cfb5bd5ef533c568c64b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2320,
+      "sha256": "719efd69aef92bc6abfd2e7ca506810b890eaedbf6d232071427a07c4861df9b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/seal/LAUNCH.json",
+      "bytes": 1560,
+      "sha256": "f60c6d4305247cc193e6e8b856d82993a22702342e370f488819d401356e66aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/seal/source_and_launcher_at_launch.py",
+      "bytes": 5420,
+      "sha256": "1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/seal/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/metadata_runs/seal/stdout",
+      "bytes": 448,
+      "sha256": "d24de8e4690648668602056a3d0429a67a5ef0b1687d9a3ab8b9f71ce2e78c29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/packet_text/BINDING_CONTRACT.md",
+      "bytes": 2005,
+      "sha256": "f5bfded5e7d6b70f1582d7a4d81ee082bb39a03943f4c9699554c4d431a0f0de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/packet_text/PR_BODY.md",
+      "bytes": 1557,
+      "sha256": "21c868f56549717f79e4b6af3a6130af627a05051ffb215e01ad4fa9cb4df926"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/packet_text/WRAPPER.md",
+      "bytes": 13553,
+      "sha256": "c3f11823e87314d4a34a70fad680db440ba2a3e0f15cc20b6d6a973d27764a36"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/primary_template.py",
+      "bytes": 8842,
+      "sha256": "58028fb9788df81db5bafcb45520a997c3891b6e659e5ddeb7b60ca60aed87d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/ACCEPTANCE_BINDING.json",
+      "bytes": 637,
+      "sha256": "af9e300f046873faebbd95cbc405cf5830697cd2641ee7df48d04e3d13a0f98f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/ACTUAL_BINDING.json",
+      "bytes": 162,
+      "sha256": "0307bb243389c034109786b9c561d5cd494b39c1125a744f49fa200477e78ec0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/ARCHIVE_INDEX.json",
+      "bytes": 35300,
+      "sha256": "c237176ac26a11cf1dad78d3e87f0385f31dd810233d4f3deab51c020331931f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/BINDING_CONTRACT.md",
+      "bytes": 2005,
+      "sha256": "f5bfded5e7d6b70f1582d7a4d81ee082bb39a03943f4c9699554c4d431a0f0de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/BODY_MAP.json",
+      "bytes": 3767,
+      "sha256": "b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/EXPOSURE.json",
+      "bytes": 337,
+      "sha256": "00a8a7e66a3fac1a2de5792445c4f00d581e5393f95a87209a3732ad15145d4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/FROZEN_SOURCE_CLOSURE.json",
+      "bytes": 2016,
+      "sha256": "7f186dab25530098d20ca36013134f284348675f18666ee6dc899b957c28cff4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/INPUT_MANIFEST.json",
+      "bytes": 38380,
+      "sha256": "1ffc99e336750aa83bad1c58867e2af48c1d730725edfd055cf67d22e426d5e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PARENT_BINDING.json",
+      "bytes": 984,
+      "sha256": "1cd9b7a78aef2475f93f0dd51bcb1ab209073a6a3890c5655fb7c89852152712"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PARENT_PUBLICATION_EVIDENCE.json",
+      "bytes": 239,
+      "sha256": "abfb526bf85cbf0da969cca51c512749a9538f529b62fbac4a77b494013250d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PR_BODY.md",
+      "bytes": 1557,
+      "sha256": "21c868f56549717f79e4b6af3a6130af627a05051ffb215e01ad4fa9cb4df926"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PUBLICATION_STATE.json",
+      "bytes": 318,
+      "sha256": "a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/SOURCE_MANIFEST.json",
+      "bytes": 143581,
+      "sha256": "1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "bytes": 8398,
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/0301ec9e69b13e26db9a3b951dcbb440221cffccbfdf813e054e6aa1b2cda674",
+      "bytes": 686,
+      "sha256": "0301ec9e69b13e26db9a3b951dcbb440221cffccbfdf813e054e6aa1b2cda674"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93",
+      "bytes": 9259,
+      "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/06b6d3d59500020aaae9104af154653a0a84abb8abd1054c5983f1255ea1c83c",
+      "bytes": 1391,
+      "sha256": "06b6d3d59500020aaae9104af154653a0a84abb8abd1054c5983f1255ea1c83c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "bytes": 23761,
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/0935ee92bc0bffb766b59be1ae06c6e02ba05018f79e7364770ce0c9122594a1",
+      "bytes": 260,
+      "sha256": "0935ee92bc0bffb766b59be1ae06c6e02ba05018f79e7364770ce0c9122594a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/09924490902000a9067b03f94489d8b75061d7d994111aecf41ad0ef7749395c",
+      "bytes": 248,
+      "sha256": "09924490902000a9067b03f94489d8b75061d7d994111aecf41ad0ef7749395c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/0cbc3e8b6020894222319c43ae4f1deda6f75be8a020b886982dd445e669d6e8",
+      "bytes": 1783,
+      "sha256": "0cbc3e8b6020894222319c43ae4f1deda6f75be8a020b886982dd445e669d6e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/0f2a4c02772f25d7903be5f4fbbf69bca4341ef660239ca3f65bb7caaf7dc68e",
+      "bytes": 2038,
+      "sha256": "0f2a4c02772f25d7903be5f4fbbf69bca4341ef660239ca3f65bb7caaf7dc68e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/10a4832688c81c227c74f29de239964a5d7d268000a4d7bf1babf6f8b441c4c8",
+      "bytes": 1981,
+      "sha256": "10a4832688c81c227c74f29de239964a5d7d268000a4d7bf1babf6f8b441c4c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/12ef3b5cd1ddfed61c49c032da72ed606e7e436e0acc4cbc25f19c4281638fbd",
+      "bytes": 5938,
+      "sha256": "12ef3b5cd1ddfed61c49c032da72ed606e7e436e0acc4cbc25f19c4281638fbd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/1377780a11199e6d81339b9b793888d1f67937a57309fcfd4bfcf264136c671f",
+      "bytes": 3835,
+      "sha256": "1377780a11199e6d81339b9b793888d1f67937a57309fcfd4bfcf264136c671f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/18eedbf80c3a805a2f2be4a6700abdb88cd2984e0cbeb0f5ed1fe70b5463d4aa",
+      "bytes": 211,
+      "sha256": "18eedbf80c3a805a2f2be4a6700abdb88cd2984e0cbeb0f5ed1fe70b5463d4aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/1abe364003c4ad1b8d88b290ea073251b8b63745a88081611e49f6336d2f645f",
+      "bytes": 2502,
+      "sha256": "1abe364003c4ad1b8d88b290ea073251b8b63745a88081611e49f6336d2f645f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/1d1a56015074fb73805607d0712f9954d277cb77f82aad17a18134d1d1dde1c6",
+      "bytes": 7948,
+      "sha256": "1d1a56015074fb73805607d0712f9954d277cb77f82aad17a18134d1d1dde1c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/1e62248f229de34aa15c3cb08f6034f299a59c538b75cc494f9c32e192f707cb",
+      "bytes": 2066,
+      "sha256": "1e62248f229de34aa15c3cb08f6034f299a59c538b75cc494f9c32e192f707cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/20d95eab56dba2cb00f7b5222e05fdc99f717e29b1e8bd8f66e1e6d88ee5ba15",
+      "bytes": 2490,
+      "sha256": "20d95eab56dba2cb00f7b5222e05fdc99f717e29b1e8bd8f66e1e6d88ee5ba15"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/2171eb3bc1660f96ac01810f2fc5499c5f9784da2e7cb4a33c781c0539e14be2",
+      "bytes": 6446,
+      "sha256": "2171eb3bc1660f96ac01810f2fc5499c5f9784da2e7cb4a33c781c0539e14be2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/23152a2333fb5b9433a53a08dffb31d2639e0508f5e4135bce8d43d311f7ef9b",
+      "bytes": 2628,
+      "sha256": "23152a2333fb5b9433a53a08dffb31d2639e0508f5e4135bce8d43d311f7ef9b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/24893693b3b8028fe88d6a88d45454b07a157db851a4a82c0b9ab1f6720fecc9",
+      "bytes": 2206,
+      "sha256": "24893693b3b8028fe88d6a88d45454b07a157db851a4a82c0b9ab1f6720fecc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/25d8d405079afc616d9451298330c99195c5a5054ff7c770a4ddf2a4c7601fde",
+      "bytes": 1934,
+      "sha256": "25d8d405079afc616d9451298330c99195c5a5054ff7c770a4ddf2a4c7601fde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/27b9782421ca0f9f809a3daf31de4483e21be049145bcce95ba24b9ebe06325e",
+      "bytes": 5509,
+      "sha256": "27b9782421ca0f9f809a3daf31de4483e21be049145bcce95ba24b9ebe06325e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/28beef27839601c57b99034d6d9d4bc7563568306eff9e49ebd9a9002cb30dd3",
+      "bytes": 837,
+      "sha256": "28beef27839601c57b99034d6d9d4bc7563568306eff9e49ebd9a9002cb30dd3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/2c41e0de927a82effbfc4f32049b23bba40bb0ccfde5e4c25bffb0239c725cb1",
+      "bytes": 1977,
+      "sha256": "2c41e0de927a82effbfc4f32049b23bba40bb0ccfde5e4c25bffb0239c725cb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "bytes": 4509,
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/32e1380ac66ac163a7f19b29450f8da90b3bb5b786addd4dabc0525d2b5c74f8",
+      "bytes": 1748,
+      "sha256": "32e1380ac66ac163a7f19b29450f8da90b3bb5b786addd4dabc0525d2b5c74f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/34728017c9482f608f2927bcb1b3235655207867543b3f6cf38c904ac20ac102",
+      "bytes": 5083,
+      "sha256": "34728017c9482f608f2927bcb1b3235655207867543b3f6cf38c904ac20ac102"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/3c6db1455dfa7b7e64589ba24fc05e034acdc9ddaa2b737ebee9b6e805f017e9",
+      "bytes": 3334,
+      "sha256": "3c6db1455dfa7b7e64589ba24fc05e034acdc9ddaa2b737ebee9b6e805f017e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "bytes": 1958,
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "bytes": 2308,
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/45c5dd273e59fe972687437f7caa9252f89fd3bdf9fc858c84060ccab93b640d",
+      "bytes": 5694,
+      "sha256": "45c5dd273e59fe972687437f7caa9252f89fd3bdf9fc858c84060ccab93b640d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/463f742cdf416cf53b17acf5b8a1fbcdf49ad927b327d0a1d533a0e6be8e02a1",
+      "bytes": 3187,
+      "sha256": "463f742cdf416cf53b17acf5b8a1fbcdf49ad927b327d0a1d533a0e6be8e02a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/467ae224265f62342e3597c4f8c28a71f23a38377982771a5b3ecf1c7de60088",
+      "bytes": 12070,
+      "sha256": "467ae224265f62342e3597c4f8c28a71f23a38377982771a5b3ecf1c7de60088"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/4aa269cb159c7b173e8e019dddf6fa72819750a7c172549b57979a6196241c89",
+      "bytes": 503,
+      "sha256": "4aa269cb159c7b173e8e019dddf6fa72819750a7c172549b57979a6196241c89"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f",
+      "bytes": 8086,
+      "sha256": "4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/5afad86e0cd755e0adb5d06c794d7b876fbdde32bc1aa65c8c69a72eded74390",
+      "bytes": 480,
+      "sha256": "5afad86e0cd755e0adb5d06c794d7b876fbdde32bc1aa65c8c69a72eded74390"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/5c6884db8a0a933f4c83f010c1ed25d3ce9f6aff3d7815a109b39234c23aac76",
+      "bytes": 27564,
+      "sha256": "5c6884db8a0a933f4c83f010c1ed25d3ce9f6aff3d7815a109b39234c23aac76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "bytes": 393,
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/62d9c8d2084689d3c50fe0644753026e33ffbec88945f9147f3e5be77ac755cd",
+      "bytes": 4754,
+      "sha256": "62d9c8d2084689d3c50fe0644753026e33ffbec88945f9147f3e5be77ac755cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/64754ca7d33ed0fb0da32e335cb4c47b9b77902bbf67fd109f48b55964ac2f0e",
+      "bytes": 11565,
+      "sha256": "64754ca7d33ed0fb0da32e335cb4c47b9b77902bbf67fd109f48b55964ac2f0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/65642a6d6c7fab7444a0e81d1fb70a298f6e02741c4623f87cc8d302e0577b6e",
+      "bytes": 2293,
+      "sha256": "65642a6d6c7fab7444a0e81d1fb70a298f6e02741c4623f87cc8d302e0577b6e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/67a6115c99746042e10d07411d2430bb31444b13057969a5b8582b12f8a0e8ff",
+      "bytes": 1611,
+      "sha256": "67a6115c99746042e10d07411d2430bb31444b13057969a5b8582b12f8a0e8ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/68cb509774020f43d0ec69aca80ecc6d0686eb42e80cdeda65a3697da682eb39",
+      "bytes": 3402,
+      "sha256": "68cb509774020f43d0ec69aca80ecc6d0686eb42e80cdeda65a3697da682eb39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/6bcb98931c82f932c8ba65857ced94188614a306de7c6102c04a6f9e30191e4b",
+      "bytes": 1037,
+      "sha256": "6bcb98931c82f932c8ba65857ced94188614a306de7c6102c04a6f9e30191e4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/6f88cc0ace6f703e2c77af836e0009b2e15f1a02818080c0c8184d8f44f3e481",
+      "bytes": 8966,
+      "sha256": "6f88cc0ace6f703e2c77af836e0009b2e15f1a02818080c0c8184d8f44f3e481"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/6fd82d9be7d1c8a70fb56968fd9a71c52694b61c8b71f02a0315e3a43a93ddcb",
+      "bytes": 9687,
+      "sha256": "6fd82d9be7d1c8a70fb56968fd9a71c52694b61c8b71f02a0315e3a43a93ddcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/7085ae52c53237e42ef735fb0a8e0d057ce8f4a625da5a37a23de697be3c8212",
+      "bytes": 6708,
+      "sha256": "7085ae52c53237e42ef735fb0a8e0d057ce8f4a625da5a37a23de697be3c8212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/746b566fa8a9a658b0e00bca39a1a9e79e9dc7fad4271dd831645b82fc69ad88",
+      "bytes": 375,
+      "sha256": "746b566fa8a9a658b0e00bca39a1a9e79e9dc7fad4271dd831645b82fc69ad88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37",
+      "bytes": 3352,
+      "sha256": "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/80263b847e38af6a5ec66ca8bd2d6fd0ff1b936130776793bd6ab92f73e57425",
+      "bytes": 9107,
+      "sha256": "80263b847e38af6a5ec66ca8bd2d6fd0ff1b936130776793bd6ab92f73e57425"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d",
+      "bytes": 5914,
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/841375adbc8da6fafa42aa410e791f667b47df42971591fe34d42c847a0e94e7",
+      "bytes": 91553,
+      "sha256": "841375adbc8da6fafa42aa410e791f667b47df42971591fe34d42c847a0e94e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "bytes": 2216,
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307",
+      "bytes": 7457,
+      "sha256": "866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/87be3b369906494d717e623a3778ca6eabdc723a82ae9ec694aafa9e9552f151",
+      "bytes": 1755,
+      "sha256": "87be3b369906494d717e623a3778ca6eabdc723a82ae9ec694aafa9e9552f151"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/892a8d07c6be1b2f9925399a610892e1ebf84e90b8a1271b954a4480bd8fd1f6",
+      "bytes": 7527,
+      "sha256": "892a8d07c6be1b2f9925399a610892e1ebf84e90b8a1271b954a4480bd8fd1f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/8979e23dc969b541b6540d0e4acc8424955c816bec3c1f416850306b7d449f41",
+      "bytes": 638,
+      "sha256": "8979e23dc969b541b6540d0e4acc8424955c816bec3c1f416850306b7d449f41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/8ddd2e7df18ddb8894f837d4414f3c40c0058afcb8c7a9bca5066df53a95343f",
+      "bytes": 223,
+      "sha256": "8ddd2e7df18ddb8894f837d4414f3c40c0058afcb8c7a9bca5066df53a95343f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/906cf5f7164e8595ec9b9a0c89c104a507dfcbfecd74581a0c946ae75fb2eb34",
+      "bytes": 8192,
+      "sha256": "906cf5f7164e8595ec9b9a0c89c104a507dfcbfecd74581a0c946ae75fb2eb34"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/9473beae17b85963f2de1060631c63f31e2d5eb22025aa850a714422b8991e7b",
+      "bytes": 1761,
+      "sha256": "9473beae17b85963f2de1060631c63f31e2d5eb22025aa850a714422b8991e7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/95f10d30033901b5c144368985e527b0613f38626790f14a7f756e3dd871de3e",
+      "bytes": 848,
+      "sha256": "95f10d30033901b5c144368985e527b0613f38626790f14a7f756e3dd871de3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/981c06b464ceb2ce7f702f00e8a8e64f44095ea5da2b4b08f0f748202fd3b408",
+      "bytes": 211,
+      "sha256": "981c06b464ceb2ce7f702f00e8a8e64f44095ea5da2b4b08f0f748202fd3b408"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/9cebc67df6f4a6f4bbbec35535d7cad747d83e9279407d709190af1464771e5f",
+      "bytes": 1447,
+      "sha256": "9cebc67df6f4a6f4bbbec35535d7cad747d83e9279407d709190af1464771e5f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/9d5673aa82a5cbf61a3ee3a80ee485bb26e1241a7f91b012c816b590d90de9a8",
+      "bytes": 22348,
+      "sha256": "9d5673aa82a5cbf61a3ee3a80ee485bb26e1241a7f91b012c816b590d90de9a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186",
+      "bytes": 3351,
+      "sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308",
+      "bytes": 4530,
+      "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/a942ce74a8cafdd417c1a945bc73e400f419b2b489d84848c1752b21337d5d40",
+      "bytes": 8789,
+      "sha256": "a942ce74a8cafdd417c1a945bc73e400f419b2b489d84848c1752b21337d5d40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/aade071a4d7cfa9c18944d9bcfb6a5fbdab175237fbe70087534991ea9f72c0d",
+      "bytes": 3351,
+      "sha256": "aade071a4d7cfa9c18944d9bcfb6a5fbdab175237fbe70087534991ea9f72c0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/ae400a6e7791890e23272a212c726640e767db5b54e6a1a72f003f82f598451c",
+      "bytes": 1125,
+      "sha256": "ae400a6e7791890e23272a212c726640e767db5b54e6a1a72f003f82f598451c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/af2b616c9822ac0d905cb7892bc2b1c763711af6058ab93fd69fd9eb5e67b2aa",
+      "bytes": 1154,
+      "sha256": "af2b616c9822ac0d905cb7892bc2b1c763711af6058ab93fd69fd9eb5e67b2aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1",
+      "bytes": 397,
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b656a2a0c9997f9e3a7066449d2df066a231fe49df4901bc6e2ad7a4de5f6ddd",
+      "bytes": 3126,
+      "sha256": "b656a2a0c9997f9e3a7066449d2df066a231fe49df4901bc6e2ad7a4de5f6ddd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b91db7f3769a9113ac56eb2164748ce6705701dad7a64eca9c4b28aca1d806b8",
+      "bytes": 5577,
+      "sha256": "b91db7f3769a9113ac56eb2164748ce6705701dad7a64eca9c4b28aca1d806b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b94b00e9d5261621a2563f7c643718c59781ae2b681398d3391d5b89af1068b1",
+      "bytes": 6654,
+      "sha256": "b94b00e9d5261621a2563f7c643718c59781ae2b681398d3391d5b89af1068b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc",
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680",
+      "bytes": 1589,
+      "sha256": "bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7",
+      "bytes": 2594,
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c1b81a34c4c4820051fd2611c9cbb6ba6654b9e5548193e7e3214b2d6c610e91",
+      "bytes": 2529,
+      "sha256": "c1b81a34c4c4820051fd2611c9cbb6ba6654b9e5548193e7e3214b2d6c610e91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd",
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d",
+      "bytes": 2786,
+      "sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c6cf825f5689c9eb5c5ac9b84b6d7645f1d8e198aaa752a90240b8b3b7d17653",
+      "bytes": 3440,
+      "sha256": "c6cf825f5689c9eb5c5ac9b84b6d7645f1d8e198aaa752a90240b8b3b7d17653"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce",
+      "bytes": 510,
+      "sha256": "c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c8d355246629d4287d3698a1488ac55976286f01a5ba2e2e6b38c6ffc30d1b61",
+      "bytes": 1791,
+      "sha256": "c8d355246629d4287d3698a1488ac55976286f01a5ba2e2e6b38c6ffc30d1b61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c8ec33b81953893108ccca1fe80b8ba402f3fdcfef6f463e3347ae86c2efc8f7",
+      "bytes": 880,
+      "sha256": "c8ec33b81953893108ccca1fe80b8ba402f3fdcfef6f463e3347ae86c2efc8f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/d1e77415a76ba2aa9e78d52fdf7da37f0c2a8e3d027124e92fdc33532c505fd1",
+      "bytes": 741,
+      "sha256": "d1e77415a76ba2aa9e78d52fdf7da37f0c2a8e3d027124e92fdc33532c505fd1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "bytes": 705,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5",
+      "bytes": 104822,
+      "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/da31e00c409d99383ca7bf889f97e1418a2b835cff2ad830f2ba34054a69142b",
+      "bytes": 16590,
+      "sha256": "da31e00c409d99383ca7bf889f97e1418a2b835cff2ad830f2ba34054a69142b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "bytes": 15499,
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/dfcbe616398f1f3391e431829365fe881d8092f5caedc27471771d4c87d2d5c6",
+      "bytes": 6076,
+      "sha256": "dfcbe616398f1f3391e431829365fe881d8092f5caedc27471771d4c87d2d5c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e0591529405542df63d58d9dfcc504a539c741420f04f5492ab1996ac5f06f22",
+      "bytes": 8055,
+      "sha256": "e0591529405542df63d58d9dfcc504a539c741420f04f5492ab1996ac5f06f22"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e1a160a6fbfcd14aac43a036b951585f143e0184fb3fa54bb15034d8db9e25b9",
+      "bytes": 13769,
+      "sha256": "e1a160a6fbfcd14aac43a036b951585f143e0184fb3fa54bb15034d8db9e25b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e22b2e775bde1e11825280876b573231f7e7ee2e640b9bdc14ef360b7b49d737",
+      "bytes": 2595,
+      "sha256": "e22b2e775bde1e11825280876b573231f7e7ee2e640b9bdc14ef360b7b49d737"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e82ce1c9ddbba99d5818b925e070ec355ed50f92b379703a0ca1a2487e4d14e6",
+      "bytes": 2321,
+      "sha256": "e82ce1c9ddbba99d5818b925e070ec355ed50f92b379703a0ca1a2487e4d14e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e90518e3bc1f397ad71807bd387f3542f13c1fb2b1baae9c50dcf7afb87d0af3",
+      "bytes": 375,
+      "sha256": "e90518e3bc1f397ad71807bd387f3542f13c1fb2b1baae9c50dcf7afb87d0af3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/efaabbe26e2078138ebb467c7b403cd27f6d882db0f9a6c74892d5747426d891",
+      "bytes": 5917,
+      "sha256": "efaabbe26e2078138ebb467c7b403cd27f6d882db0f9a6c74892d5747426d891"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/f0756e67261c4c925b4b2fe1c4ff38bd42a2c640f7a13874cc383fd763a18ba2",
+      "bytes": 10946,
+      "sha256": "f0756e67261c4c925b4b2fe1c4ff38bd42a2c640f7a13874cc383fd763a18ba2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8",
+      "bytes": 2133,
+      "sha256": "f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/f6ff83331b94097b8f2bb8d4a2721b58eecf9201792b7ecf67479eea2b59df42",
+      "bytes": 830,
+      "sha256": "f6ff83331b94097b8f2bb8d4a2721b58eecf9201792b7ecf67479eea2b59df42"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/fb3c5f6915af1c095f2e3afbcd06c582db3473476b86ea512923e17d19aeee7d",
+      "bytes": 199,
+      "sha256": "fb3c5f6915af1c095f2e3afbcd06c582db3473476b86ea512923e17d19aeee7d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/fb701ffbcfc71933be89744ee488b13af3c8ebec63c649196aecb8c843bac46d",
+      "bytes": 3805,
+      "sha256": "fb701ffbcfc71933be89744ee488b13af3c8ebec63c649196aecb8c843bac46d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/ff543ec7c8c18174985e1ade0cb006f733fa82d69ca259cf46c31ea2fc7da5d7",
+      "bytes": 398,
+      "sha256": "ff543ec7c8c18174985e1ade0cb006f733fa82d69ca259cf46c31ea2fc7da5d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+      "bytes": 367,
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 181877,
+      "sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/proposal/scripts/interacting_preparation_control_work_2026_10_16.py",
+      "bytes": 30714,
+      "sha256": "c3ec48fd5b100f5728a011f414229eb9ee9b1eae9bfd1806a2b993bd86053ef2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/record_metadata.py",
+      "bytes": 2703,
+      "sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/frozen_source/seal_packet.py",
+      "bytes": 5420,
+      "sha256": "1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb"
+    },
+    {
+      "path": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 104822,
+      "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+    },
+    {
+      "path": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 182128,
+      "sha256": "5534ecadb61b9b7703a91cdd30f8269f2b92f9f84cdf1b92f28c9c64f6a4b076"
+    },
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    }
+  ],
+  "scope": "Provenance only."
+}

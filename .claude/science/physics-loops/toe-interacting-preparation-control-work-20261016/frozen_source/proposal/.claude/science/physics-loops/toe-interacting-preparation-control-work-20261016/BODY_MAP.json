@@ -1,0 +1,89 @@
+{
+  "new_wrapper_bytes": [
+    0,
+    13553
+  ],
+  "bodies": [
+    {
+      "name": "bridge_original",
+      "source": "interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 13608,
+      "end_byte_exclusive": 29033,
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e"
+    },
+    {
+      "name": "bridge_exposed_review",
+      "source": "interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 29094,
+      "end_byte_exclusive": 52855,
+      "bytes": 23761,
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794"
+    },
+    {
+      "name": "bridge_controlling_qualifications",
+      "source": "interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 52928,
+      "end_byte_exclusive": 61005,
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51"
+    },
+    {
+      "name": "preparation_original",
+      "source": "interacting_preparation_chronology_candidate/DERIVATION.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 61065,
+      "end_byte_exclusive": 88806,
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc"
+    },
+    {
+      "name": "preparation_exposed_review",
+      "source": "interacting_preparation_chronology_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 88872,
+      "end_byte_exclusive": 116436,
+      "bytes": 27564,
+      "sha256": "5c6884db8a0a933f4c83f010c1ed25d3ce9f6aff3d7815a109b39234c23aac76"
+    },
+    {
+      "name": "preparation_controlling_qualifications",
+      "source": "interacting_preparation_chronology_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 116514,
+      "end_byte_exclusive": 125303,
+      "bytes": 8789,
+      "sha256": "a942ce74a8cafdd417c1a945bc73e400f419b2b489d84848c1752b21337d5d40"
+    },
+    {
+      "name": "fault_work_original",
+      "source": "interacting_local_fault_work_candidate/DERIVATION.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 125362,
+      "end_byte_exclusive": 152679,
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd"
+    },
+    {
+      "name": "fault_work_exposed_review",
+      "source": "interacting_local_fault_work_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 152744,
+      "end_byte_exclusive": 175092,
+      "bytes": 22348,
+      "sha256": "9d5673aa82a5cbf61a3ee3a80ee485bb26e1241a7f91b012c816b590d90de9a8"
+    },
+    {
+      "name": "fault_work_controlling_qualifications",
+      "source": "interacting_local_fault_work_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 175169,
+      "end_byte_exclusive": 181877,
+      "bytes": 6708,
+      "sha256": "7085ae52c53237e42ef735fb0a8e0d057ce8f4a625da5a37a23de697be3c8212"
+    }
+  ]
+}

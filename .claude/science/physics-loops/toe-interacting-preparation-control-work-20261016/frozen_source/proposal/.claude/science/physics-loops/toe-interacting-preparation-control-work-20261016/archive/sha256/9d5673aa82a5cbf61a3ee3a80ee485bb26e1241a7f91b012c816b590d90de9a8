@@ -1,0 +1,176 @@
+# Exposed check of the interacting local-fault work proposal
+
+Recommended disposition: **qualified conditional analytical support, with one source-binding correction**. I found no load-bearing algebraic defect in the signed charge balance, the old-ramp trace constants, the finite-bandwidth estimate or its first-energy work corollary. This recommendation is for the specified coherent Hamiltonian fault model and supplied quantitative certificates. Root owns acceptance; this report is not retained audit, publication or an experimental calibration result.
+
+The correction is in candidate section8.2, line351: the stated parent battery size `M=L+q` is not the current private-comb size. The qualified comb has **M=L+2 battery qubits per branch**, plus its separate terminal ancilla. The displayed counterexample is proved for every M>=L, so it already applies to the actual M=L+2 without changing its state, bound or mechanism. Correct that parent identification in downstream use; do not silently edit the frozen candidate.
+
+The physical placement of its fixed fault envelope also needs the stated idle interval to be long enough. The padded semantic-identity schedule has an idle plateau growing with L, so any fixed admissible envelope fits for all sufficiently large L. A claim for every L>=7 and arbitrarily restrictive headroom would require checking that finite interval or inserting a declared guard with recomputed phase. The asymptotic counterexample does not require that stronger claim.
+
+## 1. Exact scope, premises and exposure
+
+The complete candidate DERIVATION.md was read at SHA256 **c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd**, together with its FREEZE.json **7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37**, exposure/checkpoint, complete metadata source, failed metadata source and full saved streams. The packet contains no scientific executable or claimed scientific execution. Its metadata failure is preserved and discussed below.
+
+The complete qualified bridge proof2d4294d7, review086f5d2e, controlling qualifications502b3af3 and decision857b4ce8 were read in the immediately preceding coherent task. Their exact unchanged bytes are present in the candidate snapshot and are refreshed here. The mathematical use remains: literal finite K>=0; full A including every battery and synthesis ancilla; untouched arbitrary reference; original endpoint F0=K+Delta B; disjoint old/resource ramps; exact nominal total-number conservation on the plateau; actual forward R_+,R_-; and a separately certified full-output target contract. The positive complement permissions, locality/arity, physical cap/slew, timing and actual baseline assumptions are inherited conditions, not derived here.
+
+This is a same-model, deliberately source-exposed check. I have prior exposure to the complete bridge and its preparation/control parents, including the earlier preparation chronology work. That prior proposal is not a premise of this review and no new sibling argument was read. The author also has shared parent exposure. The reconstructions below are independently carried out after reading the candidate; they are not blind validation or different-model replication. No parent mathematical or scientific runner was replayed, and no new numerical process was needed.
+
+The new theorem's extra assumptions are substantive: E(t) is a specified finite Hermitian integrable coherent residual, R remains untouched, and its actual local support or charge bandwidth and integrated norm bounds are certified. Those facts do not follow from a small final trace error, a fixed per-site tolerance, pointwise computable entries without integration data, or a nominal decimal precision request. For a family uniform in reservoir length, q, Delta, old data and the bandwidth bound r are fixed. The full reference/output claim continues to come from the parent; a work estimate involving old marginals alone does not establish it.
+
+## 2. Signed charge identity and comparison constants
+
+For any time-independent observable Q under closed Hamiltonian evolution,
+
+    d< Q >/dt = (i/hbar) Tr sigma(t)[H(t),Q].
+
+The sign follows directly by inserting dot sigma=-(i/hbar)[H,sigma] and cycling the trace. Therefore the ramp changes of B are z_+ and z_-, because [H0,B]=0 there. On the plateau, <N>_b-<N>_a=z_p in dimensionless number units, because [H0,N]=0. Since N=S+B,
+
+    <B>_f-<B>_0 = z_+ + z_p + z_-
+                         -Tr S(sigma_b-sigma_a).
+
+Multiplying by Delta and adding the actual old K energy change gives exactly candidate equation(8), including the positive sign of Xi=Delta(z_++z_p+z_-). It uses only actual marginals. Arbitrary old/resource/reference correlations, old noncommutativity and residual terms that do not commute with each other do not invalidate the identity.
+
+I reconstructed the work comparison by eliminating the intermediate old states rather than estimating them first. Let
+
+    A_+=sigma_a-R_+ sigma_0 R_+*,
+    A_-=sigma_f-R_- sigma_b R_-*,
+    O_f=K-R_- H_* R_-*,  O_0=K-R_+* H_* R_+.
+
+Then sigma_b=R_-*(sigma_f-A_-)R_- and sigma_a=R_+sigma_0R_+*+A_+. Substitution gives
+
+    W_F0-W_V = Tr O_f(sigma_f-rho_V)-Tr O_0(sigma_0-rho)
+             +Tr(R_- H_* R_-*)A_-+Tr H_* A_+ + Xi.       (R1)
+
+Both ramp-error terms have positive signs; this agrees with candidate(11a). Every state difference in (R1) is trace-zero Hermitian. Centering a Hermitian O at the midpoint of its spectrum gives
+
+    |Tr O D| <= width(O)||D||_1/2.
+
+Also width(O_f),width(O_0)<=width(K)+qDelta, with no commutation premise, and width(H_*)=qDelta. Consequently
+
+    |W_F0-W_V| <= [width(K)+qDelta](delta_0+delta_f)/2
+                    +(qDelta/2)(e_++e_-)+|Xi|.          (R2)
+
+The factors of two are correct for the candidate's unhalved trace norms. No reservoir width has been discarded. Initial error delta_0 is necessary and cannot be inferred from final old accuracy. A passive reference can be included in the full evolution throughout this calculation; taking marginals to evaluate the displayed observables does not reset or delete it.
+
+## 3. Ramp disturbance bound with correlated incoming states
+
+On a ramp, split E=E_A+E_touch by whether each supplied support intersects an old site. The comparison Hamiltonian H_S(t)+Delta B+E_A(t) has the exact factorized propagator R_+ tensor U_A, or R_- tensor U_A on the off-ramp. It produces the corresponding old marginal R_+ sigma_in R_+* or R_- sigma_in R_-* even if sigma_in is arbitrarily entangled with A and the reference R. This is invariance of a partial trace under a local unitary on the traced factor, not a product-input assumption.
+
+For the old-touching terms, subtract their supplied scalar functions only within the comparison estimate. Their sum is a global scalar on the complete physical space. Removing that scalar by a time-dependent comparison phase leaves perturbation norm at most sum_touch b_X. The standard interaction-picture integral estimate gives an operator difference at most eta_S=(1/hbar) integral sum_touch b_X. Passing to density operators and then the old marginal gives
+
+    e_+ or e_- <= min(2,2 eta_S).                       (R3)
+
+The same argument comparing directly with H0 uses any certified g(t)>=inf_c||E(t)-cI|| and yields min(2,2 eta_ramp). It does not require commuting faults or an uncorrelated input at the off-ramp. If every old site has incident centered residual sum at most b_S, then sum_touch b_X<=q b_S: each old-touching term is counted at least once in the sum over old sites. Thus the candidate's q coefficient is valid and does not count all new sites.
+
+This scalar subtraction is solely a density/ramp-error estimate. Its phase must still appear in a vector/isometry comparison, its actual local norm still enters physical loads, and its endpoint value still enters the drive-energy ledger. Measurable midpoint scalars exist for finite Hermitian integrable E; effective integral bounds require the explicitly stated certificates. Pointwise computability alone is insufficient, as the candidate already states.
+
+## 4. Local commutators and a separate charge-block proof
+
+For Q=B or N, only Q_X on the charged sites in X enters [E_X,Q]. If r_X is their count, Q_X has spectrum in [0,r_X]. With the supplied scalar c_X,
+
+    ||[E_X,Q]||
+       =||[E_X-c_X I,Q_X-r_X I/2]||
+       <=2 b_X(r_X/2)=r_X b_X.                         (R4)
+
+Thus the local leakage bound(14) has the stated coefficient one times support size. For the two-dimensional span of 0^r and 1^r, E=b(|0^r><1^r|+h.c.) has eigenvalues +/-b and its commutator with Q is a Pauli off-diagonal block of norm rb. This verifies the claimed sharpness of (R4). A supplied structural conservation certificate can replace its upper bound with zero. No equality test for arbitrary computable entries is supplied by this observation.
+
+Here is an independent reconstruction of candidate(16) that avoids its Fourier integral. Let P_n be the possibly degenerate spectral projections of the integer-valued number operator Q. For each integer d define
+
+    E_d=sum_n P_(n+d) E P_n.
+
+For fixed nonzero d, the input blocks P_n are mutually orthogonal and so are the corresponding output blocks P_(n+d). Scalar terms have no off-diagonal charge block. Hence, for any real c and vector x,
+
+    ||E_d x||^2
+      =sum_n ||P_(n+d)(E-cI)P_n x||^2
+      <=||E-cI||^2 sum_n||P_n x||^2
+      =||E-cI||^2 ||x||^2.
+
+Therefore ||E_d||<=inf_c||E-cI||<=g, including arbitrary charge degeneracies. Charge bandwidth r means E=sum_(|d|<=r) E_d, and [Q,E_d]=d E_d. It follows that
+
+    ||[E,Q]|| <= sum_(d!=0, |d|<=r) |d| ||E_d||
+               <=2(1+...+r)g=r(r+1)g.                 (R5)
+
+This also verifies the Fourier convention: the integral in candidate(15) selects precisely the above block with charge difference d, so its stated [Q,E_d]=dE_d sign is correct. The opposite commutator has a minus sign, irrelevant to this norm estimate. No operator Bernstein theorem or optimal-constant claim is needed. For r=0 the commutator vanishes, as it should.
+
+A term supported on at most r charged qubits cannot connect Q sectors differing by more than r, since all outside occupation numbers are unchanged. A sum of arbitrarily many such terms has the same bandwidth bound; products of those terms are not being asserted to retain it. Thus bounded support implies the required fixed bandwidth for this residual sum. A full old generator may have large support without entering this argument: on ramps the nominal conserved observable is B, and on the plateau the nominal generator already commutes with N. It is the residual E whose bandwidth is constrained.
+
+## 5. Global corollary, composition and accuracy powers
+
+Integrating (R5) over the two ramps with Q=B and the plateau with Q=N gives
+
+    |Xi|<=Delta r(r+1)(eta_++eta_p+eta_-).
+
+Using (R3) in (R2), without exploiting the harmless min with2, gives exactly candidate(18): the ramp-map allowance is qDelta(eta_++eta_-), while all charge leakage carries Delta r(r+1). For onsite/edge residuals, r=2 gives coefficient6Delta for leakage and (q+6)Delta on the ramp actions. If actual old complement errors have higher arity, use that actual fixed arity; the coefficient6 cannot be retained by naming the graph nearest-neighbor.
+
+Choosing g=||E|| recovers the parent's full integrated physical error eta_H. Exact initial old input and complete final vector error e_out imply delta_f<=2e_out. Thus
+
+    |W_F0-W_V| <= [width(K)+qDelta] e_out
+                       +Delta[q+r(r+1)] eta_H.          (R6)
+
+The extra initial allowance is [width(K)+qDelta]delta_0/2. When a full initial vector readiness bound is used, delta_0<=2e_ready is valid; a trace readiness certificate must keep its own convention. The occurrence of eta_H both inside a final-state certificate and in the charge estimate describes two effects of one physical discrepancy. It does not authorize counting the same residual twice as two independent allocations inside e_out.
+
+Finite nominal compilation and target-assembly errors may enter e_out while adding no Xi, provided the implemented nominal Hamiltonians retain the disjoint-ramp and plateau-conservation structure. Physical control errors belong in E even if described informally as coefficient rounding. A global centered norm can improve a work bound, but cannot replace the full vector/isometry error certificate unless the corresponding scalar phase is separately retained. The inherited gamma comparator has not been changed by this work theorem.
+
+For T<=H' epsilon^-4, the sufficient global residual request ||E||<=hbar epsilon^5/(cH') indeed gives eta_H<=epsilon/c. With at most D/epsilon simultaneously faulty local terms, the sufficient per-term norm request hbar epsilon^6/(cDH') gives the same bound by the triangle inequality. Thus (R6) supplies O(epsilon) net-work error at fixed q,K,Delta,r. The constants have energy units and are independent of reservoir length. A fixed per-site error does not meet that summed certificate merely because its support is local.
+
+These powers are conditional calibration requests. They do not establish laboratory error magnitudes, computable-oracle wall time, a favorable compiler or an autonomous noise model. No uniform higher-energy-moment result follows. Even the final resource mean need not approach its original packet mean: the intended bridge can require a nonzero old-number transfer. The theorem controls the net first-energy functional W_V with its explicit intermediate-old-state term, not arbitrary product-comparator moments.
+
+## 6. Endpoint scalar, regularity and dissipation checks
+
+For coherent differentiable dynamics, cycling the commutator yields d Tr(H sigma)/dt=Tr(dot H sigma). Integrating, with explicit jump work if applicable, gives
+
+    W_drive=W_F0+Tr D_f sigma_f-Tr D_0 sigma_0.
+
+This confirms candidate(23). The safe bound ||D_f||+||D_0|| cannot be centered away, because these are different endpoint observables, not one observable applied to a trace-zero state difference. A scalar cI switched on at the end changes this work by c with no density or number change. A scalar that returns to zero can have zero endpoint-work change but a nontrivial accumulated vector phase. Both distinctions are necessary and retained by the source.
+
+An integrable residual alone proves the charge/baseline identities but does not by itself define integral||dot E|| or drive work as a derivative integral. Candidate section6 correctly conditions that interpretation on differentiability or an appropriate piecewise/jump convention. For absolute work, the extra norm variation of E is needed; a small integrated amplitude is not a bounded-variation certificate. Actual pointwise positivity, incident norm and derivative limits remain separate from all these integrated norm estimates.
+
+For the separately stipulated dissipator,
+
+    D_X*(Q)=(gamma_X/2)(L_X*[Q,L_X]+[L_X*,Q]L_X)
+
+follows by expanding the two commutators. Centering Q_X gives ||[Q,L_X]||<=r_X||L_X||, and the adjoint commutator has the same norm. Hence ||D_X*(Q)||<=gamma_X r_X||L_X||^2, with the candidate's coefficient. This algebra does not require L_X to be Hermitian.
+
+The energy equation becomes d<H>/dt=Tr sigma dot H+Tr H D(sigma). Thus W_drive=W_F0+endpoint-Q_bath, with the stated sign. For a fixed Delta n qubit undergoing supplied decay, W_drive=0 and W_F0=Delta(e^-gamma T-1)<0; the missing term is exactly the generator energy flow. Calling it physical heat requires the stated open-system/energy interpretation. The coherent ramp Duhamel estimates and corollary(R6) do not automatically extend to an unspecified dissipator, measurement, reset or bath. The candidate explicitly preserves that limit.
+
+## 7. Reconstructed counterexamples and the parent-size correction
+
+For the first example, the pure-state overlap with vacuum is sqrt(1-p), so the unhalved trace distance is2sqrt(p), while the Delta B mean difference is mDelta p. This is the claimed mDelta epsilon^2/4 at fixed trace error epsilon. It is an exact state-energy counterexample; it does not purport to satisfy the small integrated local-fault contract. Tensoring an unchanged old/reference state preserves its point.
+
+For the actual prefix packet, put n=L+1 and J={ceil(7n/8),...,n-1}. Its size is n-ceil(7n/8)=floor(n/8). At every j in J,
+
+    p_j=(2/n)sum_(ell=j)^(n-1) sin^2(pi ell/n)
+          <=(2/n)(n-j)<=1/4.
+
+The real packet amplitudes imply <Y_j>=0. The proposed positive residual has onsite eigenvalues0 and2hbar dot theta, and its carrier derivative is bounded by 2hbar|ddot theta|+Delta|dot theta|. In a single absolute interaction-picture clock, the residual evolution is
+
+    exp(-is theta) product_(j in J) exp(-i theta X_j).
+
+Its scalar is retained. Since every other local rotation commutes with n_j, initial intersite correlations do not obstruct evaluation of that site's number expectation. Conjugation by exp(-i theta X_j) gives
+
+    p_j,out-p_j=(1-2p_j)sin^2(theta),
+
+because the initial Y expectation vanishes. Summing yields the lower bound (s/2)sin^2(theta) on number leakage. The drift and the final number phase do not change B expectation. The global clock/preceding-phase alignment is required, as the candidate acknowledges; a reset carrier origin would be a different operation.
+
+Take C_P=I in the actual padded plateau schedule. With alpha=Delta t_a/hbar and beta=Delta(T-t_b)/hbar, the old final map is the parent's known ramp-dressed unitary
+
+    V0=R_- exp[i(alpha+beta)S] R_+,
+
+up to the separately retained scalar. Resource-only faults do not change it, and do not disturb either old ramp, so delta_0=delta_f=e_+=e_-=0 when this V0 is the declared target. The actual extra W_F0-W_V is exactly Delta times the resource leakage. A fixed nonzero theta and a fixed admissible envelope therefore give extensive extra work as L grows. This is not a claim that the full resource output remains close to its target.
+
+For this example E(t)=hbar dot theta[sI+sum_j X_j(t)]. Its eigenvalue interval is [0,2s hbar dot theta], because the onsite terms commute. Consequently its best centered norm is s hbar dot theta and its integrated centered action is s theta. The local certificate also sums to sDelta theta. Neither remains small as the site count grows. Thus the example refutes the intended false per-site substitution while remaining consistent with both the local and global bounds. Its fault family includes phase-coherent number-changing onsite directions. Changing only coefficients within an exactly number-conserving control alphabet would not realize this example; that more restricted fault family remains a valid alternative.
+
+The current qualified comb specifies M_i=L_i+2 in its section1, line21. The candidate's parenthetical M=L+q in line351 must be corrected to M=L+2 for this private branch. The proof above only needs M>=L, so all occupied prefixes and the tail set J remain within the actual battery; its separate synthesis ancilla stays included in A and untouched by these faults. No ancillary output is discarded to make the example work.
+
+Finally, the r-charge flip block has commutator/norm ratio r. Letting r grow demonstrates why no fixed coefficient follows from a global norm alone without the bandwidth hypothesis. It does not contradict (R5). These examples refute only the stated false replacements; exact conservation, fixed faulty support, a shrinking summed/global residual and properly priced dissipative sources remain valid alternatives. They establish no global physical no-go.
+
+## 8. Source evidence, limits and recommended use
+
+SOURCE_MANIFEST.json records exact source captures and coverage. The candidate's17 frozen members, plus its freeze, are preserved byte-for-byte, including the failed metadata attempt and both complete stream pairs. The parent's referenced prior scientific-run files are not in this candidate archive; no recursive closure or new inspection of those runs is claimed. The qualified parent is reused at its accepted scope, not revalidated by those hash checks.
+
+The author metadata attempt failed on the transcribed freeze prefix `eff9e1f34`; the actual pinned hash starts `ff9e1f34`. The failed script was preserved after failure and before editing, as explicitly disclosed by its source. It is not an original source-at-launch receipt. The successful metadata script and complete stdout/stderr were inspected; they copy source bytes, check identities and bind direct parent members, but prove no mathematical statement. Its argv field is assembled inside the program, rather than supplied by an independently captured launcher, so it does not itself verify interpreter flags. No missing launcher, timing record or execution receipt is reconstructed. This reviewer runs no scientific program and does not promote those metadata streams into scientific execution evidence.
+
+One actual reviewer metadata-only process ran from 2026-10-16T17:57:29.813168+00:00 to 17:57:29.898307+00:00 under 30-second CPU/45-second wall limits, exit0. It verified all 17 candidate freeze members, captured 26 selected files and matched all seven parent snapshots to their live unchanged originals. Its executed source SHA is dfcbe616398f1f3391e431829365fe881d8092f5caedc27471771d4c87d2d5c6; its actual launcher SHA is e22b2e775bde1e11825280876b573231f7e7ee2e640b9bdc14ef360b7b49d737. Original source/launcher copies were made before launch, and the actual child argv plus original launcher argv, complete 199-byte stdout, empty stderr and result are preserved under runs/source_integrity. These checks verify source integrity only.
+
+I recommend retaining equations(8), (11)-(20) under their exact coherent, endpoint, fixed-bandwidth and certificate hypotheses, with the M=L+2 source-binding correction above and the finite-idle-interval qualification for the example. Full-output correctness remains an independent parent contract; physical norm/support/slew and residual certification remain supplied. General dissipative faults, reservoir higher moments, microscopic controller accounting, native calibration and retained status remain outside this result.
+
+No original candidate, parent, canonical file, Git/PR state, audit, prompt, axiom or lock was changed. No model/effort override, subdelegation or other-chat message occurred. All deliberate writes are confined to this exposed-check directory.

@@ -1,0 +1,39 @@
+{
+  "kind": "actual_interacting_control_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "7cce8eaa5a72862e0ba884028a21e792c04a6df7",
+  "actual_git_base": "7cce8eaa5a72862e0ba884028a21e792c04a6df7",
+  "bound_note_sha256": "5534ecadb61b9b7703a91cdd30f8269f2b92f9f84cdf1b92f28c9c64f6a4b076",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9.blob",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1df67c5eb806e3936b84f41d5c3b0d850842a61aa0f527aa4880d32f7a4719d2.py",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081.blob",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b.md",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97.blob",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7045458b57b1f29547f6775cedd84c0c3d3dd878ff1c1d75d989480f41b1a3d0.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454.py",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/9dcd298f7e2a46510423c4ad9e633390808f21738cb323e374d15c9fef68ae9e.blob",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7.md",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3808dc48af1b93b18f29e89b228f32d274038d6f6feb0d5473eec685557f953.json",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225.py"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3808dc48af1b93b18f29e89b228f32d274038d6f6feb0d5473eec685557f953.json",
+    "bytes": 42345,
+    "sha256": "e3808dc48af1b93b18f29e89b228f32d274038d6f6feb0d5473eec685557f953"
+  }
+}

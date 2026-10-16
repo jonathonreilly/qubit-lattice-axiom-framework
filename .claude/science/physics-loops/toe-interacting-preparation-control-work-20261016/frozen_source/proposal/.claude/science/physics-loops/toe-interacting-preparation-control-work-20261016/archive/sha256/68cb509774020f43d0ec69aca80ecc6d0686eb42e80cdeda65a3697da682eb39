@@ -1,0 +1,76 @@
+"""Metadata-only final source refresh and immutable local packet manifest."""
+import datetime
+import hashlib
+import json
+from pathlib import Path
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+root = Path(__file__).resolve().parent
+freeze_path = root / "FREEZE.json"
+if freeze_path.exists():
+    raise SystemExit("Refusing to overwrite an existing freeze")
+manifest = json.loads((root / "SOURCE_MANIFEST.json").read_text())
+for entry in manifest["sources"]:
+    live = Path(entry["source_path"]).read_bytes()
+    copy = (root / entry["captured_path"]).read_bytes()
+    assert live == copy, entry["source_path"]
+    assert len(copy) == entry["bytes"]
+    assert sha(copy) == entry["sha256"]
+run = root / "runs" / "source_capture"
+receipt = json.loads((run / "EXECUTION.json").read_text())
+assert receipt["exit_code"] == 0 and not receipt["timeout"]
+for name, key in (("executed_source.py", "source_sha256"),
+                  ("executed_launcher.py", "launcher_sha256"),
+                  ("source_spec_at_launch.json", "source_spec_sha256")):
+    assert sha((run / name).read_bytes()) == receipt[key]
+for name in ("stdout", "stderr"):
+    data = (run / name).read_bytes()
+    assert len(data) == receipt["streams"][name]["bytes"]
+    assert sha(data) == receipt["streams"][name]["sha256"]
+assert not list(root.rglob("*.pyc"))
+assert "launcher_argv" in (root / "EVIDENCE.md").read_text()
+validation = {
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "scope": "Metadata-only final refresh of selected original/captured source identities and actual capture receipt/streams",
+    "selected_sources_unchanged": len(manifest["sources"]),
+    "actual_metadata_runs": 1,
+    "actual_scientific_runs": 0,
+    "receipt_and_launch_capture_hashes_verified": True,
+    "complete_stream_hashes_verified": True,
+    "mathematical_acceptance": None,
+    "canonical_binding": None,
+    "publication": None,
+    "retained_audit": False,
+}
+(root / "FINAL_VALIDATION.json").write_text(json.dumps(validation, indent=2) + "\n")
+members = []
+for path in sorted(root.rglob("*")):
+    if path.is_file() and path != freeze_path:
+        data = path.read_bytes()
+        members.append({"path": str(path.relative_to(root)),
+                        "bytes": len(data), "sha256": sha(data)})
+freeze = {
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "status": "frozen proposed conditional extension; separate review pending",
+    "scope": "New candidate only; no parent, canonical or publication mutation",
+    "new_scientific_executions": 0,
+    "metadata_source_capture_executions": 1,
+    "editable_prompt_files_changed": [],
+    "member_count": len(members),
+    "members": members,
+    "self_exclusion": "FREEZE.json is excluded from its own member list",
+}
+encoded = (json.dumps(freeze, indent=2) + "\n").encode()
+freeze_path.write_bytes(encoded)
+for member in members:
+    data = (root / member["path"]).read_bytes()
+    assert len(data) == member["bytes"] and sha(data) == member["sha256"]
+print(json.dumps({"freeze_sha256": sha(encoded), "member_count": len(members),
+                  "derivation_sha256": sha((root / "DERIVATION.md").read_bytes()),
+                  "derivation_bytes": (root / "DERIVATION.md").stat().st_size,
+                  "source_count": len(manifest["sources"]),
+                  "scientific_executions": 0}, sort_keys=True))

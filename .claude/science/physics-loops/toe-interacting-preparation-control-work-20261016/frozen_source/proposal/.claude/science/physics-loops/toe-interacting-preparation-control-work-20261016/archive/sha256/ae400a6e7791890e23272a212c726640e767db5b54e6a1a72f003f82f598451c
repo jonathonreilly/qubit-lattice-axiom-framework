@@ -1,0 +1,18 @@
+"""Freeze this review packet only; metadata, not a science replay."""
+from datetime import datetime,timezone
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+freeze=ROOT/'FREEZE.json'
+assert not freeze.exists(),'Do not overwrite a freeze'
+def identity(p):
+    b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+members=[{'path':str(p.relative_to(ROOT)),**identity(p)} for p in sorted(ROOT.rglob('*')) if p.is_file() and p!=freeze]
+out={'kind':'interacting_ramp_bridge_exposed_check_final_freeze','utc':datetime.now(timezone.utc).isoformat(),
+ 'status':'qualified_conditional_analytical_support_proposed_to_root',
+ 'new_scientific_processes':1,'prior_scientific_replays':0,'same_model':True,'source_exposed':True,
+ 'root_acceptance':None,'publication':None,'retained_audit':False,'members':members}
+freeze.write_text(json.dumps(out,indent=2)+'\n')
+for m in members:
+    assert identity(ROOT/m['path'])=={k:m[k] for k in ['bytes','sha256']}
+print(json.dumps({'members_verified':len(members),'freeze':identity(freeze),'review':identity(ROOT/'REVIEW.md')},indent=2))

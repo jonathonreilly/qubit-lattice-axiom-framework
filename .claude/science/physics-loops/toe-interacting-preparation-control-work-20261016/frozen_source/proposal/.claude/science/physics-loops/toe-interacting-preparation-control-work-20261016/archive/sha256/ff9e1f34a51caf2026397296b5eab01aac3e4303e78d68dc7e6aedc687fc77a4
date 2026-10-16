@@ -1,0 +1,15 @@
+{
+  "members": [
+    {
+      "path": "FINAL_QUALIFICATIONS.md",
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51"
+    },
+    {
+      "path": "QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2216,
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa"
+    }
+  ],
+  "retained_audit": false
+}

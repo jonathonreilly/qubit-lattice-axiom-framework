@@ -1,0 +1,637 @@
+{
+  "kind": "root_canonical_source_review",
+  "utc": "2026-10-16T18:54:33.524230+00:00",
+  "root_read_complete": true,
+  "git_base": "7cce8eaa5a72862e0ba884028a21e792c04a6df7",
+  "bound_note_sha256": "5534ecadb61b9b7703a91cdd30f8269f2b92f9f84cdf1b92f28c9c64f6a4b076",
+  "canonical_body_pins": [
+    {
+      "name": "bridge_original",
+      "source": "interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 29093,
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "start_byte": 13668
+    },
+    {
+      "name": "bridge_exposed_review",
+      "source": "interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 52915,
+      "bytes": 23761,
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "start_byte": 29154
+    },
+    {
+      "name": "bridge_controlling_qualifications",
+      "source": "interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 61065,
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "start_byte": 52988
+    },
+    {
+      "name": "preparation_original",
+      "source": "interacting_preparation_chronology_candidate/DERIVATION.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 88866,
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc",
+      "start_byte": 61125
+    },
+    {
+      "name": "preparation_exposed_review",
+      "source": "interacting_preparation_chronology_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 116496,
+      "bytes": 27564,
+      "sha256": "5c6884db8a0a933f4c83f010c1ed25d3ce9f6aff3d7815a109b39234c23aac76",
+      "start_byte": 88932
+    },
+    {
+      "name": "preparation_controlling_qualifications",
+      "source": "interacting_preparation_chronology_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 125363,
+      "bytes": 8789,
+      "sha256": "a942ce74a8cafdd417c1a945bc73e400f419b2b489d84848c1752b21337d5d40",
+      "start_byte": 116574
+    },
+    {
+      "name": "fault_work_original",
+      "source": "interacting_local_fault_work_candidate/DERIVATION.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 152739,
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd",
+      "start_byte": 125422
+    },
+    {
+      "name": "fault_work_exposed_review",
+      "source": "interacting_local_fault_work_exposed_check/REVIEW.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 175152,
+      "bytes": 22348,
+      "sha256": "9d5673aa82a5cbf61a3ee3a80ee485bb26e1241a7f91b012c816b590d90de9a8",
+      "start_byte": 152804
+    },
+    {
+      "name": "fault_work_controlling_qualifications",
+      "source": "interacting_local_fault_work_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 181937,
+      "bytes": 6708,
+      "sha256": "7085ae52c53237e42ef735fb0a8e0d057ce8f4a625da5a37a23de697be3c8212",
+      "start_byte": 175229
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      {
+        "path": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 104822,
+        "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+      }
+    ],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "Only local preparation6db93809 and comb/uniformd88f51f5 are direct mathematical parents; no opportunity-screen or unrelated alternative edge."
+  },
+  "source_draft_freeze_sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2",
+  "source_draft_review_sha256": "6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/interacting_preparation_control_work_2026_10_16.py",
+    "bytes": 97406,
+    "sha256": "983bb330d764049aa2f51af53a2d94a2d23c5d3f1b3d7a187bf06a358d0f0cc7"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/interacting_control_common.py",
+    "bytes": 57414,
+    "sha256": "77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454"
+  },
+  "prepared": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/PREPARED.json",
+    "bytes": 161833,
+    "sha256": "e7f4c779d9a91539a1d1efc1bbceb8dc8ebec79404b5018b3de80c57834c57ae"
+  },
+  "installed": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/INSTALLED.json",
+    "bytes": 160771,
+    "sha256": "5e23547a1c91e10e1852d44fc5086d35a59ec8397cdc0eeb06d963489134a220"
+  },
+  "root_diff_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/ROOT_DIFF_REVIEW.json",
+    "bytes": 33524,
+    "sha256": "8fbf54c1cced48effa925bbd8a22bd8e83d1a9566b640b56b39b28df35719d75"
+  },
+  "canonical_file_count": 229,
+  "root_diff_review_payload": {
+    "kind": "root_prepared_diff_review",
+    "utc": "2026-10-16T18:54:25.536095+00:00",
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/CANONICALIZATION.diff",
+      "bytes": 797106,
+      "sha256": "32f294ad73c8921835d94441e9f6279cbfa82de52ac6c05c1aac74f99bc33bbc"
+    },
+    "canonical_files": 229,
+    "unchanged_bodies": 9,
+    "primary_changed_literal_assignments": [
+      "AUDIT_INPUT_PATHS",
+      "MANIFEST_SHA256",
+      "EXPECTED_GIT_BASE",
+      "EXPECTED_BASE_PR",
+      "EXPECTED_BASE_BRANCH",
+      "EXPECTED_BASE_PARENT_BRANCH",
+      "EXPECTED_ROOT_REVIEW_SHA",
+      "EXPECTED_ROOT_REVIEW_COMMAND",
+      "EXPECTED_ROOT_EXECUTION_SHA",
+      "EXPECTED_ROOT_RECORDER_SHA"
+    ],
+    "binding_copies": [
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2.json",
+          "bytes": 47157,
+          "sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/FREEZE.json",
+          "bytes": 47157,
+          "sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67.json",
+          "bytes": 3698,
+          "sha256": "6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67.json",
+          "bytes": 3698,
+          "sha256": "6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b.md",
+          "bytes": 181877,
+          "sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "bytes": 181877,
+          "sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3.blob",
+          "bytes": 883,
+          "sha256": "a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3.blob",
+          "bytes": 883,
+          "sha256": "a8633c164d30ad2d7de764269a915b2fbb7f727d608d4d0f1122cdea3fefadb3"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97.json",
+          "bytes": 516,
+          "sha256": "cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97.json",
+          "bytes": 516,
+          "sha256": "cbf96e1bd2bf2bd75bbaadd12f0632879ffb8a5939342dc6cc9d598fe2b1dd97"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/07d855ba0c59611962b4210c2607776274f7bb0377343bdd1e1323a357a2b2b2.blob",
+          "bytes": 604,
+          "sha256": "07d855ba0c59611962b4210c2607776274f7bb0377343bdd1e1323a357a2b2b2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/interacting_integration_source_review/stdout",
+          "bytes": 604,
+          "sha256": "07d855ba0c59611962b4210c2607776274f7bb0377343bdd1e1323a357a2b2b2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4942cd6f447f15dcb90c711887b3ed11311351a9356e145c3fae1427238b0ce8.py",
+          "bytes": 7447,
+          "sha256": "4942cd6f447f15dcb90c711887b3ed11311351a9356e145c3fae1427238b0ce8"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/interacting_integration_source_review/executed_source.py",
+          "bytes": 7447,
+          "sha256": "4942cd6f447f15dcb90c711887b3ed11311351a9356e145c3fae1427238b0ce8"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9.blob",
+          "bytes": 339,
+          "sha256": "19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/runs/prepare_parent_base/stdout",
+          "bytes": 339,
+          "sha256": "19061a33029b88cc06413910a038938f44f78c30194a2d2e066eb7f21dc9ddf9"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4bfa04be21d205801f1b5c941c7743c4778581a58e006ddcd75fc7dd0f31a233.json",
+          "bytes": 10015,
+          "sha256": "4bfa04be21d205801f1b5c941c7743c4778581a58e006ddcd75fc7dd0f31a233"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/OBSERVED_SOURCE_REVIEW.json",
+          "bytes": 10015,
+          "sha256": "4bfa04be21d205801f1b5c941c7743c4778581a58e006ddcd75fc7dd0f31a233"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1.json",
+          "bytes": 1596,
+          "sha256": "b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/runs/prepare_local_base/EXECUTION.json",
+          "bytes": 1596,
+          "sha256": "b65685e3af360588625189e14ac9c888c9ad3c7de62a01e464c6003289799ef1"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a153505b9e7b63a45c9be2d5f438e76951fcd03c69a8ec2cbf71c775be20cacf.blob",
+          "bytes": 819,
+          "sha256": "a153505b9e7b63a45c9be2d5f438e76951fcd03c69a8ec2cbf71c775be20cacf"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1854/stdout",
+          "bytes": 819,
+          "sha256": "a153505b9e7b63a45c9be2d5f438e76951fcd03c69a8ec2cbf71c775be20cacf"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/6b214e2c70aa294b8842fbac3688ec0d5b5636ce098296c4a4893cff0c1fd736.json",
+          "bytes": 1781,
+          "sha256": "6b214e2c70aa294b8842fbac3688ec0d5b5636ce098296c4a4893cff0c1fd736"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/interacting_integration_source_review/EXECUTION.json",
+          "bytes": 1781,
+          "sha256": "6b214e2c70aa294b8842fbac3688ec0d5b5636ce098296c4a4893cff0c1fd736"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2.json",
+          "bytes": 1749,
+          "sha256": "60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/runs/prepare_parent_base/EXECUTION.json",
+          "bytes": 1749,
+          "sha256": "60564d42ab55242059374daffc7fe65febf11bb2bdd83a37e629d097ad7e95c2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/518d6d64a91c47932b6ecb6b45a042eff8f0a9ac5edece44b869b166ce5e0200.blob",
+          "bytes": 174,
+          "sha256": "518d6d64a91c47932b6ecb6b45a042eff8f0a9ac5edece44b869b166ce5e0200"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1854/stderr",
+          "bytes": 174,
+          "sha256": "518d6d64a91c47932b6ecb6b45a042eff8f0a9ac5edece44b869b166ce5e0200"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1.py",
+          "bytes": 11513,
+          "sha256": "daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1.py",
+          "bytes": 11513,
+          "sha256": "daa27c7ad5fc73a2bb4b956b5804e4721371ceb2e9611eeff5e9c68f854d2ad1"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/d5d25c8cb6ea1ac5480804d06733c63865e29a94544e63a461382774d5f9069b.json",
+          "bytes": 1265,
+          "sha256": "d5d25c8cb6ea1ac5480804d06733c63865e29a94544e63a461382774d5f9069b"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1854/EXECUTION.json",
+          "bytes": 1265,
+          "sha256": "d5d25c8cb6ea1ac5480804d06733c63865e29a94544e63a461382774d5f9069b"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/fa1104a361e50482f58d7180ec9dde678656dd856f921c21985f1d6fe3df2bdc.blob",
+          "bytes": 164,
+          "sha256": "fa1104a361e50482f58d7180ec9dde678656dd856f921c21985f1d6fe3df2bdc"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/interacting_base_refs_1854/stdout",
+          "bytes": 164,
+          "sha256": "fa1104a361e50482f58d7180ec9dde678656dd856f921c21985f1d6fe3df2bdc"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081.blob",
+          "bytes": 41,
+          "sha256": "39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/runs/prepare_local_base/stdout",
+          "bytes": 41,
+          "sha256": "39614316e5bff88af6eba446404ee2921203e6de0198afd839efc52092893081"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454.py",
+          "bytes": 57414,
+          "sha256": "77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/interacting_control_common.py",
+          "bytes": 57414,
+          "sha256": "77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/4a19fba3a7191729ee180ae820d45750d6c24fd259e8c7ed559976400aa2028d.json",
+          "bytes": 1251,
+          "sha256": "4a19fba3a7191729ee180ae820d45750d6c24fd259e8c7ed559976400aa2028d"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/interacting_base_refs_1854/EXECUTION.json",
+          "bytes": 1251,
+          "sha256": "4a19fba3a7191729ee180ae820d45750d6c24fd259e8c7ed559976400aa2028d"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce.json",
+          "bytes": 510,
+          "sha256": "c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce",
+          "bytes": 510,
+          "sha256": "c7a835ba9830b0f5f9cbc603925280a7ba30d574c1b0dad81342914d36a315ce"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e201ab2d7374780becdd1fddd22eddae9327a849803c1fdf9d15a3ff8631b9c9.json",
+          "bytes": 1164,
+          "sha256": "e201ab2d7374780becdd1fddd22eddae9327a849803c1fdf9d15a3ff8631b9c9"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1854/EXECUTION.json",
+          "bytes": 1164,
+          "sha256": "e201ab2d7374780becdd1fddd22eddae9327a849803c1fdf9d15a3ff8631b9c9"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326.json",
+          "bytes": 1473,
+          "sha256": "7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/BASE_OBSERVATION.json",
+          "bytes": 1473,
+          "sha256": "7976ef2c214b69d9f21eaf8751a33a44724d87f9f2d1557aa31d6629461f7326"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225.py",
+          "bytes": 12999,
+          "sha256": "f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225.py",
+          "bytes": 12999,
+          "sha256": "f370aa328ecca4f10fc9a64e7f9e547b8b2fd11ec7b27eda6b098b216afef225"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4.json",
+          "bytes": 1856,
+          "sha256": "7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4.json",
+          "bytes": 1856,
+          "sha256": "7b8559f9d4633182c07a47f74e8f42fd6dc2e1f6492fdccd25099922b2679cc4"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97.blob",
+          "bytes": 856,
+          "sha256": "61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97.blob",
+          "bytes": 856,
+          "sha256": "61fe9769f95ba586cd7500ddd91d2a79eb5e27a4e6ad51b70d5c1559f8b7de97"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680.json",
+          "bytes": 1589,
+          "sha256": "bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680",
+          "bytes": 1589,
+          "sha256": "bd8d18907ff6c1e9fa379a2832ec81391489b5e4fd6128d82d18b8b6332f9680"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4.json",
+          "bytes": 1841,
+          "sha256": "929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4.json",
+          "bytes": 1841,
+          "sha256": "929fb08d77e165e326958c6ce909c9945574e003318214da4cf47db846ee95b4"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d.json",
+          "bytes": 143581,
+          "sha256": "1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/SOURCE_MANIFEST.json",
+          "bytes": 143581,
+          "sha256": "1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/924cde493f8b25d6ee33c388740f4521a3f2e376230af14af85348341d3aad08.json",
+          "bytes": 1545,
+          "sha256": "924cde493f8b25d6ee33c388740f4521a3f2e376230af14af85348341d3aad08"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/FRESH_REFRESH.json",
+          "bytes": 1545,
+          "sha256": "924cde493f8b25d6ee33c388740f4521a3f2e376230af14af85348341d3aad08"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf.json",
+          "bytes": 5309,
+          "sha256": "2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf.json",
+          "bytes": 5309,
+          "sha256": "2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62.json",
+          "bytes": 318,
+          "sha256": "a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/PUBLICATION_STATE.json",
+          "bytes": 318,
+          "sha256": "a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3.json",
+          "bytes": 3767,
+          "sha256": "b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/BODY_MAP.json",
+          "bytes": 3767,
+          "sha256": "b601e39a6bfae3f6dc6838bef1844788bb4398bf443ab3b94be22b6a232635b3"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6.json",
+          "bytes": 31810,
+          "sha256": "1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/FINAL_FREEZE.json",
+          "bytes": 31810,
+          "sha256": "1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/ddca3cb93d4ece6352e9710ac5733f2846c78381a4faa4fcf9b861d669f22387.json",
+          "bytes": 1907,
+          "sha256": "ddca3cb93d4ece6352e9710ac5733f2846c78381a4faa4fcf9b861d669f22387"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/ROOT_BINDING_INPUT.json",
+          "bytes": 1907,
+          "sha256": "ddca3cb93d4ece6352e9710ac5733f2846c78381a4faa4fcf9b861d669f22387"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7.md",
+          "bytes": 3499,
+          "sha256": "b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/observed_source_review/b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7.md",
+          "bytes": 3499,
+          "sha256": "b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/cb9d3ecef6b0b18a35d63739a07a207cc3f1fbcc1f8e1c97cc1bfbc76d093163.json",
+          "bytes": 4970,
+          "sha256": "cb9d3ecef6b0b18a35d63739a07a207cc3f1fbcc1f8e1c97cc1bfbc76d093163"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/ROOT_INTEGRATION_REVIEW.json",
+          "bytes": 4970,
+          "sha256": "cb9d3ecef6b0b18a35d63739a07a207cc3f1fbcc1f8e1c97cc1bfbc76d093163"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/interacting_control/canonical_source/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ],
+    "scope": "All changed note wrapper and executable code reviewed. The complete prepared diff is accounted for through exact preview/source bodies, copied original evidence, all added binding fields and all ten literal assignments. Immutable source records retain nulls and failures. No scientific execution or new proof acceptance is implied by these metadata checks.",
+    "scientific_executions": 0,
+    "retained_audit": false
+  },
+  "scope": "All changed note wrapper and executable code reviewed. The complete prepared diff is accounted for through exact preview/source bodies, copied original evidence, all added binding fields and all ten literal assignments. Immutable source records retain nulls and failures. No scientific execution or new proof acceptance is implied by these metadata checks.",
+  "qualifications": "Literal interacting old K, positive complements on actual supports, exact vacuum/isolation and complete controlled schedules remain supplied. Nine unchanged bodies retain noncommuting forward ramps, full preparation aging and target L_b* V E_p* R_b*, scalar reserves and complete resource/ancilla/reference outputs. M=L+2 and sufficiently-large idle intervals control the fault example. Fixed-q nominal laboratory O(epsilon^-4) excludes classical compilation. Generator epsilon^5 versus cancellation-input epsilon^9 differ. Original F0 work includes preparation; coherent runtime fixed-bandwidth/global-action work bounds do not automatically cover preparation or arbitrary baths; moments retain width/covariance. One historical floating bridge fixture is not certified ODE; other extensions analytical. No native supply, autonomous halt, microscopic controller accounting, retained audit or indefinite reuse.",
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

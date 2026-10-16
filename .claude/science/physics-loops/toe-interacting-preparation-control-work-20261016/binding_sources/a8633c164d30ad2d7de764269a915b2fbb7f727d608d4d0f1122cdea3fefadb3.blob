@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_publication_source_review.py", line 58, in <module>
+    for row in read(r['input_identities_at_launch']['path']):same(row['path'],row)
+                                                             ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_publication_source_review.py", line 16, in same
+    def same(p,row):assert all(pin(p)[k]==row[k] for k in ('bytes','sha256')),str(p)
+                           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/CHECKPOINT.md

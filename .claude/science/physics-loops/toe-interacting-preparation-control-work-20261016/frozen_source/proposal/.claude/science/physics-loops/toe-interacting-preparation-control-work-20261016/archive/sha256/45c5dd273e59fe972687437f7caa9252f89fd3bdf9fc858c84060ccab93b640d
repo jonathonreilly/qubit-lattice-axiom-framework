@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+"""Bounded metadata capture; no mathematical or physical test is executed."""
+import argparse
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+N = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023')
+C = N / 'interacting_preparation_chronology_candidate'
+EXPECTED_CANDIDATE = {
+    'DERIVATION.md': 'ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc',
+    'FREEZE.json': '4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f',
+    'SOURCE_MANIFEST.json': '467ae224265f62342e3597c4f8c28a71f23a38377982771a5b3ecf1c7de60088',
+    'SOURCE_COVERAGE.md': '2171eb3bc1660f96ac01810f2fc5499c5f9784da2e7cb4a33c781c0539e14be2',
+    'EVIDENCE.md': 'fb701ffbcfc71933be89744ee488b13af3c8ebec63c649196aecb8c843bac46d',
+}
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def checked(path, expected, size=None):
+    raw = path.read_bytes()
+    assert sha(raw) == expected, (str(path), expected, sha(raw))
+    if size is not None:
+        assert len(raw) == size, (str(path), size, len(raw))
+    return raw
+
+def coverage(path):
+    s = str(path)
+    if path.parent == C:
+        return 'complete current read; candidate identity, argument or provenance as named'
+    if 'local_sine_preparation_root_proposal/' in s:
+        return 'complete current argument read'
+    if 'local_sine_preparation_root_review/FINAL_QUALIFICATIONS' in s:
+        return 'complete current controlling qualification read'
+    if 'local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE' in s:
+        return 'complete current source-decision read'
+    if path.name == 'FINAL_QUALIFICATIONS.md':
+        return 'complete current controlling qualification read'
+    if path.name in ('FREEZE.json', 'SOURCE_MANIFEST.json'):
+        return 'identity metadata only; no recursive parent member validation'
+    if 'interacting_ramp_bridge_exposed_check/REVIEW.md' in s:
+        return 'reviewer authored and read completely earlier; unchanged identity refreshed'
+    if 'inhomogeneous_local_control_root_proposal/' in s:
+        return 'earlier complete argument read reused; preparation section6 and scalar/work intervals reread now'
+    return 'earlier complete argument or decision read reused at unchanged identity'
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--out', required=True)
+    args = parser.parse_args()
+    out = Path(args.out).resolve()
+    assert out == N / 'interacting_preparation_chronology_exposed_check'
+    assert not (out / 'SOURCE_MANIFEST.json').exists(), 'do not overwrite a prior manifest'
+    raw_candidate = {name: checked(C/name, expected) for name,expected in EXPECTED_CANDIDATE.items()}
+    freeze = json.loads(raw_candidate['FREEZE.json'])
+    assert freeze['member_count'] == len(freeze['members']) == 39
+    for member in freeze['members']:
+        p = (C/member['path']).resolve()
+        assert p.is_relative_to(C)
+        checked(p, member['sha256'], member['bytes'])
+
+    original_manifest = json.loads(raw_candidate['SOURCE_MANIFEST.json'])
+    assert original_manifest['source_count'] == len(original_manifest['sources']) == 21
+    selected = []
+    for name, raw in raw_candidate.items():
+        selected.append((C/name, raw, coverage(C/name)))
+    omitted = []
+    for source in original_manifest['sources']:
+        p = Path(source['source_path'])
+        if p.name == 'LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md':
+            omitted.append({'path':str(p), 'sha256':source['sha256'],
+                'reason':'canonical archive is not a new science premise; necessary original bodies selected instead; its captured member identity was checked in the candidate freeze'})
+            continue
+        raw = checked(p, source['sha256'], source['bytes'])
+        selected.append((p,raw,coverage(p)))
+
+    extra = N/'inhomogeneous_uniform_word_exposed_check'/'REVIEW.md'
+    raw = checked(extra,'45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c',24426)
+    selected.append((extra,raw,'reviewer authored/read completely earlier; current selected error/constants interval reread; no new replay'))
+    entries=[]
+    for p,raw,read in selected:
+        rel = Path('sources')/sha(raw)/p.name
+        dest=out/rel
+        dest.parent.mkdir(parents=True,exist_ok=True)
+        assert not dest.exists(), str(dest)
+        dest.write_bytes(raw)
+        assert dest.read_bytes()==raw
+        entries.append({'source_path':str(p),'bytes':len(raw),'sha256':sha(raw),
+            'captured_path':str(rel),'coverage':read})
+    manifest={
+        'utc':datetime.now(timezone.utc).isoformat(),
+        'status':'selected exact source capture for exposed review; not scientific acceptance',
+        'new_scientific_executions':0,
+        'candidate_freeze_members_verified':39,
+        'source_count':len(entries),'sources':entries,'omitted_archive':omitted,
+        'scope':'Candidate39-member freeze verified; selected original source identities verified. Other parent freeze files are identities only; no recursive closure or science replay is claimed.',
+        'canonical_binding':None,'root_acceptance_of_current_review':None,
+    }
+    data=(json.dumps(manifest,indent=2)+'\n').encode()
+    (out/'SOURCE_MANIFEST.json').write_bytes(data)
+    result={'status':'metadata identities verified','candidate_members':39,
+        'selected_sources':len(entries),'manifest_sha256':sha(data),'new_scientific_executions':0}
+    (out/'runs'/'source_capture'/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps(result,sort_keys=True))
+
+if __name__=='__main__':
+    main()

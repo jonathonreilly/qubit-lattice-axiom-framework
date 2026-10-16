@@ -1,0 +1,18 @@
+"""Final source-only freeze. Does not execute scientific code."""
+from datetime import datetime,timezone
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+FREEZE=ROOT/'FREEZE.json'
+assert not FREEZE.exists(),'Never rewrite a prior freeze'
+def info(p):
+    b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+members=[{'path':str(p.relative_to(ROOT)),**info(p)} for p in sorted(ROOT.rglob('*')) if p.is_file() and p!=FREEZE]
+data={'kind':'interacting_local_fault_work_candidate_final_freeze','utc':datetime.now(timezone.utc).isoformat(),
+ 'status':'proposed_conditional_support_pending_separate_check','source_exposed_same_model':True,
+ 'new_scientific_executions':0,'scientific_replays':0,'root_acceptance':None,'publication':None,
+ 'retained_audit':False,'members':members}
+FREEZE.write_text(json.dumps(data,indent=2)+'\n')
+for member in members:assert info(ROOT/member['path'])=={k:member[k] for k in ['bytes','sha256']}
+print(json.dumps({'members_verified':len(members),'derivation':info(ROOT/'DERIVATION.md'),
+ 'manifest':info(ROOT/'SOURCE_MANIFEST.json'),'freeze':info(FREEZE)},indent=2))

@@ -1,0 +1,117 @@
+--- /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/primary_template.py
++++ /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/primary_template.py
+@@ -2,8 +2,8 @@
+ from pathlib import Path,PurePosixPath
+ import hashlib,json
+ REPO=Path(__file__).resolve().parents[1]
+-NOTE='docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-PACKET='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
++NOTE='docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++PACKET='.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016'
+ AUDIT_TIMEOUT_SEC=60
+ AUDIT_INPUT_PATHS=__AUDIT_INPUT_PATHS__
+ MANIFEST_SHA256='__MANIFEST_SHA256__'
+@@ -17,7 +17,7 @@
+  resolved=(REPO/rel).resolve();resolved.relative_to(REPO.resolve());return resolved.read_bytes()
+ def verify_payload(read):
+  raw=read(PACKET+'/INPUT_MANIFEST.json');require(digest(raw)==MANIFEST_SHA256,'Input manifest pin')
+- manifest=json.loads(raw);require(manifest['schema']=='inhomogeneous_comb_publication_inputs_v1','Input schema')
++ manifest=json.loads(raw);require(manifest['schema']=='interacting_control_publication_inputs_v1','Input schema')
+  rows=manifest['inputs'];paths=[r['path'] for r in rows]
+  require(len(paths)==len(set(paths)) and set(AUDIT_INPUT_PATHS)==set(paths)|{PACKET+'/INPUT_MANIFEST.json'},'Exact declared input closure')
+  for row in rows:identity(read(row['path']),row)
+@@ -25,7 +25,7 @@
+  for field in ['claim_type: bounded_theorem','actual_current_surface_status: conditional-support','canonical_parent_binding_complete: false','audit_required_before_effective_retained: true','bare_retained_allowed: false']:
+   require(field in header,'Draft scope field '+field)
+  maps=json.loads(read(PACKET+'/BODY_MAP.json'))['bodies']
+- require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==6,'Six unchanged body roles')
++ require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==9,'Nine unchanged body roles')
+  for row in maps:
+   a,b=row['start_byte_inclusive'],row['end_byte_exclusive']
+   require(row['container']==NOTE and isinstance(a,int) and isinstance(b,int) and 0<=a<b<=len(note),'Body interval')
+@@ -50,40 +50,57 @@
+   for row in rows:
+    p=row['path'];key=alias(p) if PurePosixPath(p).is_absolute() else f['folder']+'/'+p
+    identity(src(key),row)
+- for folder,pin in [('inhomogeneous_local_control_root_review','41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c'),('inhomogeneous_uniform_word_root_review','bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7')]:
+-  raw=src(folder+'/QUALIFIED_ACCEPTANCE.json');require(digest(raw)==pin,'Qualified acceptance pin')
+-  accepted=json.loads(raw);require(accepted['retained_audit'] is False and accepted['publication'] is None,'Historical acceptance limits')
+-  identity(src(alias(accepted['qualifications']['path'])),accepted['qualifications'])
+- for folder in ['inhomogeneous_local_control_root_exposed_check/runs/exact_species_word','inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check']:
+-  r=json.loads(src(folder+'/EXECUTION.json'));require(r['exit_code']==0 and r['argv'][1]=='-B','Historical exact run/argv')
+-  for key in ['source','launcher','precheck','stdout','stderr']:identity(src(alias(r[key]['path'])),r[key])
+-  require(src(folder+'/stderr.txt')==b'','Historical exact-run empty stderr')
+- for run in ['unequal_fixed_word_acceptance','uniform_word_acceptance']:
+-  r=json.loads(src('runs/'+run+'/EXECUTION.json'));require(r['exit_code']==0,'Actual root metadata run')
++
++ decisions=json.loads(read(PACKET+'/ACCEPTANCE_BINDING.json'))
++ require(decisions['source_wrapper_review'] is None,'Source acceptance is not wrapper approval')
++ for path,pin,qkey in decisions['qualified_source_decisions']:
++  raw=src(path);require(digest(raw)==pin,'Source acceptance identity');accepted=json.loads(raw)
++  require(accepted['retained_audit'] is False and accepted['publication'] is None,'Original source acceptance limits')
++  identity(src(alias(accepted[qkey]['path'])),accepted[qkey])
++ # Validate heterogeneous original receipt schemas without rewriting them.
++ base='interacting_ramp_bridge_exposed_check/runs/ramp_interface/'
++ r=json.loads(src(base+'EXECUTION.json'));require(r['exit_code']==0 and r['argv'][1]=='-B','Historical floating bridge execution')
++ for key in ['source','launcher','precheck','stdout','stderr']:identity(src(alias(r[key]['path'])),r[key])
++ require(json.loads(src(base+'stdout.txt'))==json.loads(src(base+'output/RESULT.json')),'Bridge recorded result equality')
++ for folder in ['interacting_preparation_chronology_candidate/runs/source_capture/','interacting_local_fault_work_exposed_check/runs/source_integrity/']:
++  r=json.loads(src(folder+'EXECUTION.json'));require(r['exit_code']==0 and r['argv'][1]=='-B','Actual metadata child argv')
++  require(digest(src(folder+'executed_source.py'))==r['source_sha256'],'Original metadata source capture')
++  require(digest(src(folder+'executed_launcher.py'))==r['launcher_sha256'],'Original metadata launcher capture')
++  for key,row in r['streams'].items():identity(src(folder+key),row)
++ folder='interacting_preparation_chronology_exposed_check/runs/source_capture/'
++ r=json.loads(src(folder+'EXECUTION.json'));require(r['exit_code']==0 and r['child_argv'][1]=='-B','Preparation review metadata')
++ for key in ['source','launcher']:identity(src(alias(r[key]['path'])),r[key])
++ for row in r['streams'].values():identity(src(alias(row['path'])),row)
++ folder='interacting_preparation_chronology_exposed_check/runs/final_validation/'
++ r=json.loads(src(folder+'EXECUTION.json'));require(r['exit_code']==0,'Preparation final metadata validation')
++ identity(src(alias(r['source_and_launcher']['path'])),r['source_and_launcher'])
++ for row in r['streams'].values():identity(src(alias(row['path'])),row)
++ # This original candidate has streams/source, but no actual execution envelope.
++ # Do not synthesize an argv, exit code or source-at-launch assertion for it.
++ failed=src('interacting_local_fault_work_candidate/METADATA_CHECK.stderr.txt')
++ require(b'AssertionError' in failed,'Preserved failed metadata pin attempt')
++ require(src('interacting_local_fault_work_candidate/METADATA_CHECK_2.stderr.txt')==b'','Corrected metadata stream retained')
++ for run in ['interacting_ramp_acceptance','interacting_preparation_acceptance','interacting_fault_work_acceptance']:
++  r=json.loads(src('runs/'+run+'/EXECUTION.json'));require(r['exit_code']==0,'Actual root source acceptance metadata')
+   for key in ['source_capture','stdout','stderr']:identity(src(alias(r[key]['path'])),r[key])
+-  require(r['child_source_at_launch']['sha256']==r['source_capture']['sha256'],'Root executed-source linkage')
++  require(r['source_capture']['sha256']==r['child_source_at_launch']['sha256'],'Root source-at-launch linkage')
+   identity(src('review_run.py'),r['recorder'])
+- for suffix,expected in [('exact_sparse_check',None),('exact_sparse_check_retry',0)]:
+-  base='local_conserving_sparse_compiler_candidate/runs/'+suffix+'/'
+-  r=json.loads(src(base+'EXECUTION.json'));require(r['exit_code'] is expected if expected is None else r['exit_code']==expected,'Preserved sparse launch outcome')
+-  require(digest(src(base+'SOURCE_AT_LAUNCH.py'))==r['source_sha256'],'Sparse executed-source capture')
+-  require(digest(src(base+'LAUNCHER_AT_LAUNCH.py'))==r['launcher_sha256'],'Sparse original launcher capture')
+-  for stream in ['stdout','stderr']:require(digest(src(base+stream+'.txt'))==r[stream+'_sha256'],'Sparse complete stream')
+  parent=json.loads(read(PACKET+'/PARENT_BINDING.json'))
+- require(parent['canonical_binding_complete'] is False and len(parent['direct_mathematical_parents'])==2,'Two source parents; canonical sparse binding pending')
+- a,b=parent['direct_mathematical_parents'];identity(src(a['source_alias']),a)
+- require(a['sha256']=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f','Published parent exact source')
+- for key in ['derivation','acceptance','qualifications']:require(digest(src(b[key+'_alias']))==b[key+'_sha256'],'Sparse source parent '+key)
+- require(b['canonical_path'] is None and b['canonical_claim_id'] is None and b['canonical_publication'] is None,'Unbound sparse canonical identity')
++ require(parent['canonical_binding_complete'] is False and len(parent['direct_mathematical_parents'])==2,'Two exact-source parents; integration unbound')
++ pins=['6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f','d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5']
++ for row,pin in zip(parent['direct_mathematical_parents'],pins):identity(src(row['source_alias']),row);require(row['sha256']==pin,'Direct parent source pin')
++ pub=json.loads(src('publication_integration/inhomogeneous_comb/PUBLICATION.json'))
++ attach=json.loads(src('publication_integration/inhomogeneous_comb/ATTACHMENT.json'))
++ require(pub['number']==9648 and pub['isDraft'] is False and pub['state']=='OPEN' and pub['source_note']['sha256']==pins[1],'Actual recorded parent publication')
++ require(attach['arguments']['url']==pub['url'] and attach['actual_result']['isError'] is False,'Actual parent attachment envelope')
+  exposure=json.loads(read(PACKET+'/EXPOSURE.json'))
+- require(exposure['new_scientific_executions']==0 and exposure['historical_new_result_executions']==2 and exposure['separate_direct_candidate_accepted'] is False and exposure['blind_independence'] is False,'Honest exposure and scope')
++ require(exposure['new_scientific_executions']==0 and exposure['historical_bridge_floating_executions']==1 and exposure['preparation_scientific_executions']==0 and exposure['fault_work_scientific_executions']==0 and exposure['blind_independence'] is False,'Exposure and evidence boundaries')
+  state=json.loads(read(PACKET+'/PUBLICATION_STATE.json'))
+- require(all(state[k] is None for k in ['source_wrapper_review','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']),'Unexecuted publication fields')
+- require(state['scientific_programs_run_this_draft']==0 and state['scientific_replays']==0,'No draft scientific replay')
+- return {'note_sha256':digest(note),'body_count':len(maps),'source_aliases':len(sources),'archive_objects':len(archive),'science_executions':0}
++ require(all(state[k] is None for k in ['source_wrapper_review','source_publication','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']),'New source and canonical publication remain unbound')
++ require(state['scientific_programs_run_this_draft']==0 and state['scientific_replays']==0,'No scientific execution/replay')
++ return dict(note_sha256=digest(note),body_count=len(maps),source_aliases=len(sources),archive_objects=len(archive),science_executions=0)
+ def verify_actual_binding(read,checked):
+- # Intentionally fail closed: root must review a separate bound integration version.
+- raise ValueError('UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending')
++ raise ValueError('UNBOUND SOURCE-ONLY PROPOSAL: actual wrapper review, base and canonical execution evidence are pending')
+ def main():
+  checked=verify_payload(disk_read);verify_actual_binding(disk_read,checked)
+ if __name__=='__main__':main()

@@ -1,0 +1,49 @@
+{
+  "kind": "actual_new_numerical_interface_check",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/SOURCE_AT_LAUNCH.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check",
+  "started_utc": "2026-10-16T17:11:07.729479+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/SOURCE_AT_LAUNCH.py",
+    "bytes": 7527,
+    "sha256": "892a8d07c6be1b2f9925399a610892e1ebf84e90b8a1271b954a4480bd8fd1f6"
+  },
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/LAUNCHER_AT_LAUNCH.py",
+    "bytes": 2066,
+    "sha256": "1e62248f229de34aa15c3cb08f6034f299a59c538b75cc494f9c32e192f707cb"
+  },
+  "precheck": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/PRECHECK_AT_LAUNCH.md",
+    "bytes": 3334,
+    "sha256": "3c6db1455dfa7b7e64589ba24fc05e034acdc9ddaa2b737ebee9b6e805f017e9"
+  },
+  "limits": {
+    "cpu_seconds": 45,
+    "wall_seconds": 90,
+    "address_space": null
+  },
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-10-16T17:11:08.223403+00:00",
+  "elapsed_wall_seconds": 0.4934534998610616,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/stdout.txt",
+    "bytes": 1977,
+    "sha256": "2c41e0de927a82effbfc4f32049b23bba40bb0ccfde5e4c25bffb0239c725cb1"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

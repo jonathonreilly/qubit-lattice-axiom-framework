@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/interacting_preparation_control_work_2026_10_16.py
+runner_sha256: c8da226920fd3571e351312b41989348b5d4c056b3f592af63b8c2d63f83f239
+input_fingerprint_sha256: bf4924e1e835eb513f170a7a20c744892ca40fd1ea103438b4197d9499ae9207
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: complementary actuators on actual supports and complete positive controls supplied
+per_site: literal interacting old K retained; original support/arity and all resource loads paid
+per_mode: fixed-q nominal laboratory counts exclude classical compilation and oracle latency
+per_block: noncommuting ramps, preparation aging, full scalar and every ancilla/reference retained
+lattice_wide: one historical floating bridge check; later analytical results, no replay or retained audit
+
+----- stderr -----
+

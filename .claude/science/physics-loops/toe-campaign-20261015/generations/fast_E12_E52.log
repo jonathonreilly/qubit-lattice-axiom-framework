@@ -1,0 +1,8 @@
+E12+E52 coin dim 4 family dim 22  jacobian check max err 7.076610838985253e-09
+  HIT trial 4: residual 2.55e-15 moving norm 1.1911
+  HIT trial 9: residual 2.99e-15 moving norm 2.8124
+  HIT trial 10: residual 3.52e-15 moving norm 2.7423
+  HIT trial 14: residual 2.13e-15 moving norm 0.4997
+  HIT trial 16: residual 2.23e-15 moving norm 0.0506
+  HIT trial 18: residual 2.74e-15 moving norm 1.7515
+E12+E52: moving unitary solutions 6/20, best residual 2.132e-15

@@ -1,0 +1,74 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/independent_controls_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T10:39:35.709635+00:00",
+  "end_utc": "2026-10-16T10:39:36.407748+00:00",
+  "wall_seconds": 0.6972334999591112,
+  "child_user_seconds": 0.569897,
+  "child_system_seconds": 0.033895,
+  "child_peak_rss_platform_units": 66224128,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 14130,
+  "stdout_sha256": "0dfa60495dcc046c5f2383b0f085eb08c61bf4f43efad730f8c45f0641204340",
+  "stderr_bytes": 5006,
+  "stderr_sha256": "853b3ec761b55ba8b6f739793f610f8e6f26074fe2adfb8795e182e611e09ed5",
+  "output_parse_error": null,
+  "summary": {
+    "passed": 111,
+    "failed": 0
+  },
+  "input_binding_before": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "d76e815cef541b1cbe759858ec34e94c399bd5d366670b5c023afaa1fc3f0944",
+      "bytes": 2665
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb",
+      "bytes": 12027
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "c274d458120cd81bf634e7bfcf419caf4758ab26fa796dd2015e99368cbd1363",
+      "bytes": 620
+    },
+    "independent_controls_v1.py": {
+      "sha256": "77cb5e8f7ca3b55a966df5f3883cf90378fe54943a97493f7e7d162185ca5142",
+      "bytes": 13533
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "b3f75961d09025af172744463646ce12bd6c3afe26754b75c3e1a46b5440b0fe",
+      "bytes": 2983
+    }
+  },
+  "input_binding_after": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "d76e815cef541b1cbe759858ec34e94c399bd5d366670b5c023afaa1fc3f0944",
+      "bytes": 2665
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb",
+      "bytes": 12027
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "c274d458120cd81bf634e7bfcf419caf4758ab26fa796dd2015e99368cbd1363",
+      "bytes": 620
+    },
+    "independent_controls_v1.py": {
+      "sha256": "77cb5e8f7ca3b55a966df5f3883cf90378fe54943a97493f7e7d162185ca5142",
+      "bytes": 13533
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "b3f75961d09025af172744463646ce12bd6c3afe26754b75c3e1a46b5440b0fe",
+      "bytes": 2983
+    }
+  },
+  "inputs_unchanged": true,
+  "new_author_mode_inverse_sources_read": false
+}

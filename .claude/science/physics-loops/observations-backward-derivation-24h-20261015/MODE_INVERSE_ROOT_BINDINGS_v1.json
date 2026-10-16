@@ -1,0 +1,134 @@
+{
+  "checked_at": "2026-10-16T10:56:08.595165+00:00",
+  "reviewer": "/root personally",
+  "manifest_verification": {
+    "INDEPENDENT_OUTPUT_FREEZE_v1.json": {
+      "sha256": "4c17c67839f02f4fe92211a5de80e49ae6f25762b6003076cb9dd4230c664a7d",
+      "files": 9
+    },
+    "MANIFEST_v1.json": {
+      "sha256": "44ad39f3c4969b1dacde2c67609cea8516e9ae3a820ca89b9c6fc4eb228b0c6b",
+      "files": 54
+    },
+    "MANIFEST_v2.json": {
+      "sha256": "669181ed61c60474880d619cdf06d17a0f3bb98c8f7a424827ef40a1c239e642",
+      "files": 85
+    }
+  },
+  "actual_author_source_bindings": {
+    "MODE_INVERSE_ROOT_FREEZE_v1.json": "9087631053ebdb6b7cc5c689219639a64a765197d3b2546a195b45df7c65b3ac",
+    "MODE_GAIN_ROOT_FREEZE_v1.json": "82cd04222ecd05db92eaac48bf353b9fb438e2de2f141a18b95bb1beaf00f820",
+    "MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+    "MODE_INVERSE_DERIVATION_v1.md": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+    "MODE_GAIN_DERIVATION_v1.md": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+    "check_mode_inverse_v1.py": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+    "check_mode_inverse_jets_v1.py": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+    "check_mode_gain_v1.py": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+    "check_mode_gain_jets_v1.py": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+    "MODE_INVERSE_CONTROLS_v1.json": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+    "MODE_INVERSE_JETS_v1.json": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+    "MODE_GAIN_CONTROLS_v1.json": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+    "MODE_GAIN_JETS_v1.json": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+    "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+    "SCALAR_RESPONSE_CLOSURE_v1.md": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+    "MATTER_CLOCK_DERIVATION_v2.md": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+    "run_mode_inverse_mutations_v1.py": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162",
+    "mode_inverse_mutations_v1/REPORT.json": "a35f9add93b26a37e490a9c92a4eae1878851aff4fcfb26f7747d976ddbe9c37",
+    "MODE_TRACE_JOINT_ROOT_FREEZE_v1.json": "eac990da9328346c3245fa0dd708c6b28a32feb08653834fab8f638af92d8b96",
+    "MODE_TRACE_ROOT_DERIVATION_v1.md": "5f428fd394f9111dc7c17da26abc5815285e71ffb81b209a4f0a094517332b86",
+    "check_mode_trace_root_v1.py": "7b16b9bff9fffe778c389872abfed5fef3bfa367ac8b613e744db1fc64d9406f",
+    "MODE_TRACE_ROOT_CONTROLS_v1.json": "1e7c19fe46f1d89960fe0a7dba9cada97fcb0910ddb3a3417d37af1dbbd355fc",
+    "MODE_JOINT_GAIN_DERIVATION_v1.md": "0715c4061be3354034806277f7b5b93c6681eb458d3645c990b5a836d5dc5132",
+    "check_mode_joint_gain_v1.py": "44d5bd656fa1e42f1f8730c47c638d418ec2c9bb4f16dbedc2afce996541ab91",
+    "MODE_JOINT_GAIN_CONTROLS_v1.json": "53e52a441a1069ea0ecfedf388ee9dd64173738edba732efbc4b78e8f4458eb0",
+    "independent_mode_inverse/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb"
+  },
+  "actual_binding_count": 26,
+  "runs": {
+    "independent_attempt01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 111,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": null
+    },
+    "author_trace_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 12,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    },
+    "comparison_attempt01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 38,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": null
+    },
+    "author_gain_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 15,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    },
+    "author_gain_jets_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 8,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    },
+    "author_joint_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 22,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    },
+    "supplement_attempt01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 62,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": null
+    },
+    "author_primary_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 40,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    },
+    "author_jets_replay01.run.json": {
+      "returncode": 0,
+      "timed_out": false,
+      "summary": {
+        "passed": 13,
+        "failed": 0
+      },
+      "stdout_byte_identical_to_expected": true
+    }
+  },
+  "failures": [],
+  "root_read_scope": "Complete independent pre-author proof/code/results and all post-exposure comparison/supplement proofs/code/results, final reports, reproduction and run records. Counts are not treated as proof.",
+  "formal_audit": false,
+  "empirical_validation": false
+}

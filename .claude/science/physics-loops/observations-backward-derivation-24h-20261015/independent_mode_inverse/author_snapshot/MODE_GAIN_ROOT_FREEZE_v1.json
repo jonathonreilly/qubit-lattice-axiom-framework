@@ -1,0 +1,14 @@
+{
+  "frozen_at": "2026-10-16T10:41:14.242296+00:00",
+  "author": "/root personally",
+  "independence": "Gain extension authored and executed before root read any independent new-unit proof or source. Checker has now reported readiness and summary of its own four-column route.",
+  "sources": {
+    "MODE_GAIN_DERIVATION_v1.md": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+    "check_mode_gain_v1.py": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+    "MODE_GAIN_CONTROLS_v1.json": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+    "check_mode_gain_jets_v1.py": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+    "MODE_GAIN_JETS_v1.json": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+    "run_mode_inverse_mutations_v1.py": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162",
+    "mode_inverse_mutations_v1/REPORT.json": "a35f9add93b26a37e490a9c92a4eae1878851aff4fcfb26f7747d976ddbe9c37"
+  }
+}

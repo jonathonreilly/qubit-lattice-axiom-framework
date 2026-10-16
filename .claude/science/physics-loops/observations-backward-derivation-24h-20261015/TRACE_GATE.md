@@ -51,3 +51,18 @@ Trace remains upstream_support, reachability supports, with bounded_theorem / co
 ## Matter-clock and response bridge — 2026-10-16T10:13:06.736001+00:00
 
 Trace remains upstream_support with conditional reachability. The clock map and exact coupled response were personally derived and independently checked; action/scale and physical input registration remain open. The next candidate eliminates supplied b,kappa through multiple registered metric-potential histories. Its five-coefficient/rank proposal is not yet checked and must not be treated as a retained result. No observed force law or claim promotion.
+
+## Joint metric-potential inverse — 2026-10-16T10:36:36.190629+00:00
+
+Trace remains upstream_support, reachability supports the user goal. Conditional coefficient reconstruction could replace supplied b,kappa and scalar velocity in the current inverse chain. Root has executed exact and original-equation forward checks; focused independent checking is pending. Ideal input/clock/derivative registration and the action class remain conditions. No existing claim is promoted.
+
+
+## Joint metric inverse checkpoint 2026-10-16T10:58:43.911428+00:00
+
+Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.
+
+Root40/13/15/8/12/22control sets and independent111/38/62sets pass, separately counted. Six copied author replays are byte-identical; root read the complete independent proofs/code/results/reports and verified85final manifest files and26actual source bindings. Eight actual source mutations were detected. Pressure-trace discovery is attributed to the focused checker; root personally rederived it and combined it with scalar response to remove the common-gain B=2/3 elimination exception. No empirical validation or formal audit.
+
+Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.
+
+Five previous PRs remain open and unchanged. Current checkpoint is commits-only; canonical milestone conformance remains to be completed. Main now5eeadf3f differs only in automated audit dispatch state; all68openPRheads unchanged. No active focused agent, detached author or owned job. Four older campaigns remain stopped. Matching lock refreshed10:57:05UTC; deadline22:36:59Z and packaging22:21:59Z unchanged.

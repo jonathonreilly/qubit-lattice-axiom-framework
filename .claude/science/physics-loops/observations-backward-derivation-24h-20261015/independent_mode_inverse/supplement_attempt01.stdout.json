@@ -1,0 +1,341 @@
+{
+  "stage": "Post-exposure correspondence to root's combined-gain suggestion; before combined author-code exposure",
+  "checks": [
+    {
+      "name": "trace common-gain transformation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "trace derivative-of-slip coefficient invariant",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical background Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical background Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical background original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical background bare dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical B exactly two thirds",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical fixed-density curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical dust density positive",
+      "pass": true,
+      "detail": "1/(4*tau)"
+    },
+    {
+      "name": "critical full mode 1/20 momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/20 positive wave number",
+      "pass": true,
+      "detail": "441/400"
+    },
+    {
+      "name": "critical full mode 1/16 momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/16 positive wave number",
+      "pass": true,
+      "detail": "6579/3904"
+    },
+    {
+      "name": "critical full mode 1/12 momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/12 positive wave number",
+      "pass": true,
+      "detail": "247/72"
+    },
+    {
+      "name": "critical full mode 1/10 momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/10 positive wave number",
+      "pass": true,
+      "detail": "7227/1075"
+    },
+    {
+      "name": "critical full mode 1/8 momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical full mode 1/8 positive wave number",
+      "pass": true,
+      "detail": "999/16"
+    },
+    {
+      "name": "critical simultaneous scalar rank five",
+      "pass": true,
+      "detail": "-183206639/408827088629760000"
+    },
+    {
+      "name": "critical simultaneous trace rank four",
+      "pass": true,
+      "detail": "7/176759280000"
+    },
+    {
+      "name": "recorded trace row 1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recorded trace row 2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recorded trace row 3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recorded trace row 4",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recorded trace row 5",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse B",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse trace G",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse q",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse q prime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse gain drift",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse gain drift prime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse kappa",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse trace damping",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse trace potential",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse trace slip",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "combined recorded-jet inverse critical denominator truly zero",
+      "pass": true,
+      "residual": "0"
+    }
+  ],
+  "summary": {
+    "passed": 62,
+    "failed": 0
+  },
+  "critical_fixture": {
+    "B": "2/3",
+    "exponents": [
+      "1/20",
+      "1/16",
+      "1/12",
+      "1/10",
+      "1/8"
+    ],
+    "scalar_rank_determinant": "-183206639/408827088629760000",
+    "trace_rank_minor": "7/176759280000",
+    "gain": "tau**(2/7)*exp(tau/11)",
+    "epoch": "2",
+    "recovered_q": "1/4",
+    "recovered_drift": "18/77",
+    "recovered_kappa": "5/16"
+  },
+  "software": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "empirical_validation": false
+}

@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-16T10:32:38.124600+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.14183v1",
+      "pdf_sha256": "3c8f2de518f5575e96f9c5807c62edc13ae7c1b9fe8f0d2764d8df22281e3a30",
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "local_pdf": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/antonopoulos2026-arxiv2608.14183v1.pdf",
+      "role": "Primary background reconstruction comparison. Canonical Jordan action, cosmographic inputs, matter density and Planck-running derivatives are supplied. Page3 explicitly distinguishes local effective gravity and invokes a small-coupling approximation; no claim of a naive unqualified equality is made here. Empirical section not read or adopted.",
+      "borrowed_empirical_values": false
+    },
+    {
+      "url": "https://arxiv.org/abs/1108.4242v2",
+      "pdf_sha256": "b03c28f88ffe669370ee68dec0347eab19016d5dba75e00e38b7a332ba40d97e",
+      "pdf_pages_read": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "local_pdf": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/defelice2011-arxiv1108.4242v2.pdf",
+      "role": "Primary full perturbation equations and subsequent quasistatic reduction context; page6 states a mode-dominance condition. General perturbation dynamics are established prior art. No numerical fit or exact formula from its broader action is substituted into this proof.",
+      "borrowed_empirical_values": false
+    }
+  ],
+  "reused_prior_read_manifest": {
+    "path": "MATTER_CLOCK_PRIOR_ART_v1.json",
+    "sha256": "b4a45a4445a24694c835cbea6be2adc52b2179f5b003217a421e142c430d7b73"
+  },
+  "scope_comparison": "Scalar-tensor inverse reconstruction is known prior art (Boisseau et al. gr-qc/0001066v1). The present campaign increment is a conditional multi-mode coefficient and full-constraint construction eliminating previously supplied b,kappa in its specified ideal potential protocol, with physical rank and derivative obligations. No priority or literature-wide novelty claim. Observability limitations in Amendola et al.1210.0439v2 remain relevant; restrict field equations and ideal input information explicitly.",
+  "search_queries": [
+    "scalar tensor reconstruction coupling potential gravitational slip full linear perturbations beyond quasistatic reconstruction observables",
+    "reconstruct scalar tensor gravity potential coupling full perturbation equations multiple wavenumbers inverse"
+  ],
+  "search_limit": "Targeted search, not exhaustive literature review. Secondary summaries, Wikipedia and Reddit results were not used as evidence."
+}

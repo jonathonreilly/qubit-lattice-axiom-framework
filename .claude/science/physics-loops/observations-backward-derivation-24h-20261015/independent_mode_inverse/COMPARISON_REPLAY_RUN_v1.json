@@ -1,0 +1,355 @@
+{
+  "records": [
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/comparison_controls_v1.py"
+      ],
+      "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse",
+      "timeout_seconds": 120,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "start_utc": "2026-10-16T10:46:01.713243+00:00",
+      "end_utc": "2026-10-16T10:46:02.071856+00:00",
+      "wall_seconds": 0.3571494580246508,
+      "child_user_seconds": 0.233835,
+      "child_system_seconds": 0.032213,
+      "child_peak_rss_platform_units": 62865408,
+      "platform": "darwin",
+      "returncode": 0,
+      "timed_out": false,
+      "stdout_bytes": 5457,
+      "stdout_sha256": "9f488f6429afae84c293ba74b1198335946d7014661f7749147da15fecd2cbe4",
+      "stderr_bytes": 1789,
+      "stderr_sha256": "a0946128deebebad48a1dba64acd94b80d5180a8d4392644b4180097fce98cd4",
+      "output_parse_error": null,
+      "summary": {
+        "passed": 38,
+        "failed": 0
+      },
+      "stage": "post-author-exposure correspondence",
+      "script_sha256": "a7c8f5516f68ac96ef83a52033262200f97cf74c0743bd0777cc879dce55d06e",
+      "expected_output": null,
+      "stdout_byte_identical_to_expected": null
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot/check_mode_inverse_v1.py"
+      ],
+      "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot",
+      "timeout_seconds": 120,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "start_utc": "2026-10-16T10:46:02.072081+00:00",
+      "end_utc": "2026-10-16T10:46:02.662341+00:00",
+      "wall_seconds": 0.5895824157632887,
+      "child_user_seconds": 0.3743099999999999,
+      "child_system_seconds": 0.071489,
+      "child_peak_rss_platform_units": 115015680,
+      "platform": "darwin",
+      "returncode": 0,
+      "timed_out": false,
+      "stdout_bytes": 95954,
+      "stdout_sha256": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_parse_error": null,
+      "summary": {
+        "passed": 40,
+        "failed": 0
+      },
+      "stage": "unchanged copied author replay",
+      "script_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "expected_output": "author_snapshot/MODE_INVERSE_CONTROLS_v1.json",
+      "stdout_byte_identical_to_expected": true
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot/check_mode_inverse_jets_v1.py"
+      ],
+      "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot",
+      "timeout_seconds": 120,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "start_utc": "2026-10-16T10:46:02.662609+00:00",
+      "end_utc": "2026-10-16T10:46:03.705330+00:00",
+      "wall_seconds": 1.042181917000562,
+      "child_user_seconds": 0.9796149999999999,
+      "child_system_seconds": 0.05635799999999999,
+      "child_peak_rss_platform_units": 122634240,
+      "platform": "darwin",
+      "returncode": 0,
+      "timed_out": false,
+      "stdout_bytes": 40177,
+      "stdout_sha256": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_parse_error": null,
+      "summary": {
+        "passed": 13,
+        "failed": 0
+      },
+      "stage": "unchanged copied author replay",
+      "script_sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "expected_output": "author_snapshot/MODE_INVERSE_JETS_v1.json",
+      "stdout_byte_identical_to_expected": true
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot/check_mode_gain_v1.py"
+      ],
+      "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot",
+      "timeout_seconds": 120,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "start_utc": "2026-10-16T10:46:03.705578+00:00",
+      "end_utc": "2026-10-16T10:46:03.890280+00:00",
+      "wall_seconds": 0.18425329076126218,
+      "child_user_seconds": 0.1572300000000002,
+      "child_system_seconds": 0.024049000000000015,
+      "child_peak_rss_platform_units": 122634240,
+      "platform": "darwin",
+      "returncode": 0,
+      "timed_out": false,
+      "stdout_bytes": 17543,
+      "stdout_sha256": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_parse_error": null,
+      "summary": {
+        "passed": 15,
+        "failed": 0
+      },
+      "stage": "unchanged copied author replay",
+      "script_sha256": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+      "expected_output": "author_snapshot/MODE_GAIN_CONTROLS_v1.json",
+      "stdout_byte_identical_to_expected": true
+    },
+    {
+      "argv": [
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot/check_mode_gain_jets_v1.py"
+      ],
+      "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/author_snapshot",
+      "timeout_seconds": 120,
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "start_utc": "2026-10-16T10:46:03.890523+00:00",
+      "end_utc": "2026-10-16T10:46:04.401404+00:00",
+      "wall_seconds": 0.5097318748012185,
+      "child_user_seconds": 0.43748200000000015,
+      "child_system_seconds": 0.046221999999999985,
+      "child_peak_rss_platform_units": 122634240,
+      "platform": "darwin",
+      "returncode": 0,
+      "timed_out": false,
+      "stdout_bytes": 32191,
+      "stdout_sha256": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_parse_error": null,
+      "summary": {
+        "passed": 8,
+        "failed": 0
+      },
+      "stage": "unchanged copied author replay",
+      "script_sha256": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+      "expected_output": "author_snapshot/MODE_GAIN_JETS_v1.json",
+      "stdout_byte_identical_to_expected": true
+    }
+  ],
+  "input_binding_before": {
+    "comparison_controls_v1.py": {
+      "sha256": "a7c8f5516f68ac96ef83a52033262200f97cf74c0743bd0777cc879dce55d06e",
+      "bytes": 6547
+    },
+    "POST_EXPOSURE_COMPARISON_DERIVATION_v1.md": {
+      "sha256": "4e47389c6fe3b78a7e86ae0210d43ed9b6b726f790e3bcd3ddda86ff2a57735f",
+      "bytes": 3655
+    },
+    "POST_EXPOSURE_PLAN_FREEZE_v1.json": {
+      "sha256": "fda3d53bc2fed10971d03b641568d5af820981784b0c200069da5a8a9af8b6e9",
+      "bytes": 299
+    },
+    "AUTHOR_SNAPSHOT_BINDING_v1.json": {
+      "sha256": "52092078563a653f566419167ea5f99355ddd4eedf7312cc27303330864014b3",
+      "bytes": 3871
+    },
+    "run_comparison_bounded_v1.py": {
+      "sha256": "6d53300686208cd9750452b23e88a501905703fdbdb5ef07ee3218854cb474fc",
+      "bytes": 4985
+    },
+    "author_snapshot/MODE_INVERSE_ROOT_FREEZE_v1.json": {
+      "sha256": "9087631053ebdb6b7cc5c689219639a64a765197d3b2546a195b45df7c65b3ac",
+      "bytes": 998
+    },
+    "author_snapshot/MODE_GAIN_ROOT_FREEZE_v1.json": {
+      "sha256": "82cd04222ecd05db92eaac48bf353b9fb438e2de2f141a18b95bb1beaf00f820",
+      "bytes": 1021
+    },
+    "author_snapshot/MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+      "bytes": 2230
+    },
+    "author_snapshot/MODE_INVERSE_DERIVATION_v1.md": {
+      "sha256": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+      "bytes": 10966
+    },
+    "author_snapshot/MODE_GAIN_DERIVATION_v1.md": {
+      "sha256": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+      "bytes": 3196
+    },
+    "author_snapshot/check_mode_inverse_v1.py": {
+      "sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "bytes": 11558
+    },
+    "author_snapshot/check_mode_inverse_jets_v1.py": {
+      "sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "bytes": 8456
+    },
+    "author_snapshot/check_mode_gain_v1.py": {
+      "sha256": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+      "bytes": 5218
+    },
+    "author_snapshot/check_mode_gain_jets_v1.py": {
+      "sha256": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+      "bytes": 4535
+    },
+    "author_snapshot/MODE_INVERSE_CONTROLS_v1.json": {
+      "sha256": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+      "bytes": 95954
+    },
+    "author_snapshot/MODE_INVERSE_JETS_v1.json": {
+      "sha256": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+      "bytes": 40177
+    },
+    "author_snapshot/MODE_GAIN_CONTROLS_v1.json": {
+      "sha256": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+      "bytes": 17543
+    },
+    "author_snapshot/MODE_GAIN_JETS_v1.json": {
+      "sha256": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+      "bytes": 32191
+    },
+    "author_snapshot/SCALAR_RESPONSE_DERIVATION_v1.md": {
+      "sha256": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+      "bytes": 7497
+    },
+    "author_snapshot/SCALAR_RESPONSE_CLOSURE_v1.md": {
+      "sha256": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+      "bytes": 3578
+    },
+    "author_snapshot/MATTER_CLOCK_DERIVATION_v2.md": {
+      "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+      "bytes": 11616
+    },
+    "author_snapshot/run_mode_inverse_mutations_v1.py": {
+      "sha256": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162",
+      "bytes": 3761
+    },
+    "author_snapshot/mode_inverse_mutations_v1/REPORT.json": {
+      "sha256": "a35f9add93b26a37e490a9c92a4eae1878851aff4fcfb26f7747d976ddbe9c37",
+      "bytes": 6303
+    }
+  },
+  "input_binding_after": {
+    "comparison_controls_v1.py": {
+      "sha256": "a7c8f5516f68ac96ef83a52033262200f97cf74c0743bd0777cc879dce55d06e",
+      "bytes": 6547
+    },
+    "POST_EXPOSURE_COMPARISON_DERIVATION_v1.md": {
+      "sha256": "4e47389c6fe3b78a7e86ae0210d43ed9b6b726f790e3bcd3ddda86ff2a57735f",
+      "bytes": 3655
+    },
+    "POST_EXPOSURE_PLAN_FREEZE_v1.json": {
+      "sha256": "fda3d53bc2fed10971d03b641568d5af820981784b0c200069da5a8a9af8b6e9",
+      "bytes": 299
+    },
+    "AUTHOR_SNAPSHOT_BINDING_v1.json": {
+      "sha256": "52092078563a653f566419167ea5f99355ddd4eedf7312cc27303330864014b3",
+      "bytes": 3871
+    },
+    "run_comparison_bounded_v1.py": {
+      "sha256": "6d53300686208cd9750452b23e88a501905703fdbdb5ef07ee3218854cb474fc",
+      "bytes": 4985
+    },
+    "author_snapshot/MODE_INVERSE_ROOT_FREEZE_v1.json": {
+      "sha256": "9087631053ebdb6b7cc5c689219639a64a765197d3b2546a195b45df7c65b3ac",
+      "bytes": 998
+    },
+    "author_snapshot/MODE_GAIN_ROOT_FREEZE_v1.json": {
+      "sha256": "82cd04222ecd05db92eaac48bf353b9fb438e2de2f141a18b95bb1beaf00f820",
+      "bytes": 1021
+    },
+    "author_snapshot/MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+      "bytes": 2230
+    },
+    "author_snapshot/MODE_INVERSE_DERIVATION_v1.md": {
+      "sha256": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+      "bytes": 10966
+    },
+    "author_snapshot/MODE_GAIN_DERIVATION_v1.md": {
+      "sha256": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+      "bytes": 3196
+    },
+    "author_snapshot/check_mode_inverse_v1.py": {
+      "sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "bytes": 11558
+    },
+    "author_snapshot/check_mode_inverse_jets_v1.py": {
+      "sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "bytes": 8456
+    },
+    "author_snapshot/check_mode_gain_v1.py": {
+      "sha256": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+      "bytes": 5218
+    },
+    "author_snapshot/check_mode_gain_jets_v1.py": {
+      "sha256": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+      "bytes": 4535
+    },
+    "author_snapshot/MODE_INVERSE_CONTROLS_v1.json": {
+      "sha256": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+      "bytes": 95954
+    },
+    "author_snapshot/MODE_INVERSE_JETS_v1.json": {
+      "sha256": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+      "bytes": 40177
+    },
+    "author_snapshot/MODE_GAIN_CONTROLS_v1.json": {
+      "sha256": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+      "bytes": 17543
+    },
+    "author_snapshot/MODE_GAIN_JETS_v1.json": {
+      "sha256": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+      "bytes": 32191
+    },
+    "author_snapshot/SCALAR_RESPONSE_DERIVATION_v1.md": {
+      "sha256": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+      "bytes": 7497
+    },
+    "author_snapshot/SCALAR_RESPONSE_CLOSURE_v1.md": {
+      "sha256": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+      "bytes": 3578
+    },
+    "author_snapshot/MATTER_CLOCK_DERIVATION_v2.md": {
+      "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+      "bytes": 11616
+    },
+    "author_snapshot/run_mode_inverse_mutations_v1.py": {
+      "sha256": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162",
+      "bytes": 3761
+    },
+    "author_snapshot/mode_inverse_mutations_v1/REPORT.json": {
+      "sha256": "a35f9add93b26a37e490a9c92a4eae1878851aff4fcfb26f7747d976ddbe9c37",
+      "bytes": 6303
+    }
+  },
+  "inputs_unchanged": true,
+  "no_parent_sources_run_in_place": true,
+  "mutation_report_inspection_only": true
+}

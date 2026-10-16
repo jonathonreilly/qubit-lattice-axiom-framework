@@ -1,0 +1,11 @@
+--- check_mode_inverse_jets_v1.py
++++ missing_coupling_curvature/check_mode_inverse_jets_v1.py
+@@ -24,7 +24,7 @@
+ b=beta+gamma*phi
+ V=s.Rational(1,2)-phi/4+s.Rational(8,100)*phi**2+phi**4/100
+ F=s.diff(V,phi)+b*r
+-mu=s.diff(V,phi,2)+(gamma+b*b)*r
++mu=s.diff(V,phi,2)+b*b*r
+ pd=(v*u-r*U)/2-H*P
+ rates=[v,-3*H*v-F,(b*v-3*H)*r,-(r+v*v)/2,a*H,
+        pi,-3*H*pi-(k2/a**2+mu)*u-b*r*delta+4*v*pd-2*F*P,

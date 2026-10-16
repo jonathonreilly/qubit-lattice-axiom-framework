@@ -1,0 +1,128 @@
+{
+  "author": "/root",
+  "purpose": "Actual source-mutant executions, separate from analytic omission witnesses in the primary script",
+  "cases": [
+    {
+      "case": "coupling_quotient_damping",
+      "script": "check_mode_inverse_v1.py",
+      "source_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "mutated_sha256": "4bf7f710eaf55811099ddd4c421c9412fe8f8338eea0e3fc5d454fded4f80bfe",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "quotient derivatives give five coefficients",
+        "speed product recovered without 4-6B denominator"
+      ],
+      "stdout_sha256": "3b23830ab35ac7c8d0a312a269b8db0a414fd6527a06704c03cde4180e8fca6f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "fixed_density_clock_curvature",
+      "script": "check_mode_inverse_v1.py",
+      "source_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "mutated_sha256": "c15e3b7e2ce6b2934d1645aa393b99dc71bb4bb2564eab317b83520b5e527ed9",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "quotient derivatives give five coefficients",
+        "fixed-bare-density curvature recovered"
+      ],
+      "stdout_sha256": "2bdccdfc56c48dd1ccfc8d93d1a7a3a6dbabda38a39b80280d7f03582cd84f52",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "clock_second_derivative",
+      "script": "check_mode_inverse_v1.py",
+      "source_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "mutated_sha256": "31cabb0ac52140c302ed3c668cf1d62520b53d2f654f35af74ce253c74acb3d9",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "coefficient recovery on all31epochs",
+        "full mode source and dust compatibility"
+      ],
+      "stdout_sha256": "2d3c3927572c2a7323bc5d7d3f522996f48e88b8d819e9c0dd5f3c1e248692b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "dust_momentum_sign",
+      "script": "check_mode_inverse_v1.py",
+      "source_sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "mutated_sha256": "71bfe4dc0e0863b9f2ded0e1c3cf19f98a4dd217e3e8968cb929421713eb5b4d",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "forward Hamiltonian propagated",
+        "coefficient recovery on all31epochs",
+        "full mode source and dust compatibility"
+      ],
+      "stdout_sha256": "44f607b959b6d545a079587d8c3473d049df42f016ac2df670b7542a47fd01cb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "missing_coupling_curvature",
+      "script": "check_mode_inverse_jets_v1.py",
+      "source_sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "mutated_sha256": "203c5937ae6e0a11e861e090f770b1480f7a381f0ebdbe59e5a671e267ee3497",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "coefficient recovered from registered potential jets",
+        "coefficient first derivative recovered from registered potential jets",
+        "coefficient second derivative recovered from registered potential jets",
+        "coupling magnitude recovered from registered potential jets",
+        "speed product recovered from registered potential jets",
+        "fixed-bare-density curvature recovered from registered potential jets",
+        "source ratio recovered from registered potential jets",
+        "original Hamiltonian propagated"
+      ],
+      "stdout_sha256": "fbe9a4418ffd59505bf3e7177ac891479a4f99fb5db42a8e1ed7c48d44ba1e98",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "coefficient_jet_cross_term",
+      "script": "check_mode_inverse_jets_v1.py",
+      "source_sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "mutated_sha256": "f44daa63b472db06172e1cc29d70df24e35ed5a017030133fd1cbe1d0fec99cb",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "coefficient second derivative recovered from registered potential jets",
+        "fixed-bare-density curvature recovered from registered potential jets",
+        "source ratio recovered from registered potential jets"
+      ],
+      "stdout_sha256": "c0a0773e0314e448750e25eabbb20c73f205d5012d512f6a25b1879bf27202f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "common_gain_curvature_transform",
+      "script": "check_mode_gain_v1.py",
+      "source_sha256": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+      "mutated_sha256": "51882c822503367560f34e83f957b79f63318cf8c3bddc07429e031fb6cbc688",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "arbitrary common gain transforms full differential identity",
+        "curvature coefficient unwarping"
+      ],
+      "stdout_sha256": "449b4e9e2a059baf7889ffff36e92ecf866719c5710d996f105b7e5f1e80fc99",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "common_gain_inverse_curvature",
+      "script": "check_mode_gain_jets_v1.py",
+      "source_sha256": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+      "mutated_sha256": "3d801d5d97a8d716c1ad76c5124bb30b0474fb60119a8636e10517054990dfc6",
+      "exit_code": 1,
+      "detected_by_failing_scientific_predicate": true,
+      "failed_checks": [
+        "kappa recovered from gain-corrupted observable jets"
+      ],
+      "stdout_sha256": "3be7ca665b84d22d383a86c63fb87e8d71e23c62421f8ace1767e1fc1923543a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "passed": 8,
+  "failed": 0,
+  "source_sha256": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162"
+}

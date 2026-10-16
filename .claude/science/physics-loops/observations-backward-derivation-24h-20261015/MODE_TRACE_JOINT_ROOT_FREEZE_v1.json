@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-16T10:50:34.357302+00:00",
+  "author": "/root",
+  "stage": "post-exposure integration of independently originated trace route; joint-gain extension personally derived by root",
+  "empirical_validation": false,
+  "sources": {
+    "MODE_TRACE_ROOT_DERIVATION_v1.md": "5f428fd394f9111dc7c17da26abc5815285e71ffb81b209a4f0a094517332b86",
+    "check_mode_trace_root_v1.py": "7b16b9bff9fffe778c389872abfed5fef3bfa367ac8b613e744db1fc64d9406f",
+    "MODE_TRACE_ROOT_CONTROLS_v1.json": "1e7c19fe46f1d89960fe0a7dba9cada97fcb0910ddb3a3417d37af1dbbd355fc",
+    "MODE_JOINT_GAIN_DERIVATION_v1.md": "0715c4061be3354034806277f7b5b93c6681eb458d3645c990b5a836d5dc5132",
+    "check_mode_joint_gain_v1.py": "44d5bd656fa1e42f1f8730c47c638d418ec2c9bb4f16dbedc2afce996541ab91",
+    "MODE_JOINT_GAIN_CONTROLS_v1.json": "53e52a441a1069ea0ecfedf388ee9dd64173738edba732efbc4b78e8f4458eb0"
+  },
+  "counts_separate": [
+    12,
+    22
+  ]
+}

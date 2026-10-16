@@ -1,0 +1,11 @@
+--- check_mode_inverse_v1.py
++++ clock_second_derivative/check_mode_inverse_v1.py
+@@ -194,7 +194,7 @@
+         du,dpi,dp,dvel,ddens = ds
+         jv = uv
+         jp = piv/tt
+-        jpp = dpi/tt**2-piv/tt**3
++        jpp = dpi/tt**2
+         pp = dp/tt
+         jkj2 = k2/tt**4
+         modeD.append([-jp,-jv,pp,jkj2*pv,pv])

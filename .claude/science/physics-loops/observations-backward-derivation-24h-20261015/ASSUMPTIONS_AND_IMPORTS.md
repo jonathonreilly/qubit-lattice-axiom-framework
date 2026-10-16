@@ -70,3 +70,8 @@ Initial displacement/velocity need not be assigned for a compact weak necessary 
 The real-probe finite-window forcing integral can cancel. Declared complex probes reduce that numerical problem in the exposed record, with more stable conditional forcing coefficients but substantial residuals. Choosing a probe functional is not selecting an action. Neither algebraic rank nor smaller residuals supplies physical calibration, a noise law or confidence level. All six-hour samples remain included, including the observed amplitude dip.
 
 Density-based mass/coupling tomography is known prior art (arXiv1111.6613v4 and1203.4812v2). Its assumed minimum-tracking history is a candidate obligation to challenge next, not an adopted physical selector. No new scalar potential is chosen from those papers.
+
+
+## Joint metric inverse 2026-10-16T10:58:43.911428+00:00
+
+Conditionally eliminated as independently supplied histories: b(tau), scalar speed x(tau) and fixed-bare-density curvature kappa(tau), provided the registered potential histories pass the derived full compatibility checks. Local A(phi),V(phi) are reconstructed along the monotonic path; a common positive amplitude drift can also be reconstructed from two equation systems. Action class, ideal potential/readout and derivative mapping, rank, clock/spatial registration, positive dust and nonzero-motion/coupling chart remain explicit premises. A0, field coordinates, off-path extension and initial-mode origin are not selected. No observed data or framework axiom was added. See MODE_INVERSE_ROOT_REVIEW_v1.md and NEXT_METRIC_READOUT_PLAN_v1.md.

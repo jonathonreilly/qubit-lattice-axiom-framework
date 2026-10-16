@@ -1,0 +1,62 @@
+PASS trace common-gain transformation
+PASS trace derivative-of-slip coefficient invariant
+PASS critical background Friedmann
+PASS critical background Raychaudhuri
+PASS critical background original scalar
+PASS critical background bare dust
+PASS critical B exactly two thirds
+PASS critical fixed-density curvature
+PASS critical dust density positive
+PASS critical full mode 1/20 momentum
+PASS critical full mode 1/20 Hamiltonian
+PASS critical full mode 1/20 spatial trace
+PASS critical full mode 1/20 scalar
+PASS critical full mode 1/20 bare continuity
+PASS critical full mode 1/20 dust Euler
+PASS critical full mode 1/20 positive wave number
+PASS critical full mode 1/16 momentum
+PASS critical full mode 1/16 Hamiltonian
+PASS critical full mode 1/16 spatial trace
+PASS critical full mode 1/16 scalar
+PASS critical full mode 1/16 bare continuity
+PASS critical full mode 1/16 dust Euler
+PASS critical full mode 1/16 positive wave number
+PASS critical full mode 1/12 momentum
+PASS critical full mode 1/12 Hamiltonian
+PASS critical full mode 1/12 spatial trace
+PASS critical full mode 1/12 scalar
+PASS critical full mode 1/12 bare continuity
+PASS critical full mode 1/12 dust Euler
+PASS critical full mode 1/12 positive wave number
+PASS critical full mode 1/10 momentum
+PASS critical full mode 1/10 Hamiltonian
+PASS critical full mode 1/10 spatial trace
+PASS critical full mode 1/10 scalar
+PASS critical full mode 1/10 bare continuity
+PASS critical full mode 1/10 dust Euler
+PASS critical full mode 1/10 positive wave number
+PASS critical full mode 1/8 momentum
+PASS critical full mode 1/8 Hamiltonian
+PASS critical full mode 1/8 spatial trace
+PASS critical full mode 1/8 scalar
+PASS critical full mode 1/8 bare continuity
+PASS critical full mode 1/8 dust Euler
+PASS critical full mode 1/8 positive wave number
+PASS critical simultaneous scalar rank five
+PASS critical simultaneous trace rank four
+PASS recorded trace row 1
+PASS recorded trace row 2
+PASS recorded trace row 3
+PASS recorded trace row 4
+PASS recorded trace row 5
+PASS combined recorded-jet inverse B
+PASS combined recorded-jet inverse trace G
+PASS combined recorded-jet inverse q
+PASS combined recorded-jet inverse q prime
+PASS combined recorded-jet inverse gain drift
+PASS combined recorded-jet inverse gain drift prime
+PASS combined recorded-jet inverse kappa
+PASS combined recorded-jet inverse trace damping
+PASS combined recorded-jet inverse trace potential
+PASS combined recorded-jet inverse trace slip
+PASS combined recorded-jet inverse critical denominator truly zero

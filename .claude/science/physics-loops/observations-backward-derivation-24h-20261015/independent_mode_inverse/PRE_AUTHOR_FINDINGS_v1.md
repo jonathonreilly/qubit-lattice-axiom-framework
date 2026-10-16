@@ -1,0 +1,18 @@
+# Independent pre-author findings
+
+This is a focused mathematical check of the neutral action/observable contract, not a formal audit or empirical result. Only the neutral contract was read for this new unit; earlier action/response work was context. The proof was frozen before control implementation. No new author plan, note, runner or result has been read.
+
+The independent route uses the pressure trace, rather than a fitted scalar mass response, to obtain a four-column relation with rows (U',U,W',W), where U=(PsiJ+PhiJ)/2 and W=(PsiJ-PhiJ)/2. On the regular rank-four chart it identifies q=A'/A and g=x/b. Positivity, the two remaining coefficient relations, background dust transport, constraints and original scalar/dust evolution must still hold. These conditions give a local common-action reconstruction with b fixed up to canonical field reflection and fixed-bare-density curvature kappa determined; they do not determine the overall A normalization.
+
+The decisive constructive example uses four distinct, nonzero wave numbers and exact power modes of a full action-consistent background. Their response determinant is 1/24752000 at tau=1 and stays nonzero for positive tau. All six original Einstein-time constraint/evolution residuals vanish for each mode. Data-only coefficient recovery gives b=1 and kappa=7/(4 tau^2). Hence rank four is attainable by complete linear modes.
+
+Changing each assigned L=k^2/4 by +1 leaves the trace fit and its reconstructed background unchanged but gives nonzero scalar and bare-dust continuity residuals. This is an explicit counterexample to treating that necessary relation as sufficient. A separate full dust-mode example with A=1, stationary phi=0 and V=mu0 phi^2/2 has identical metric readouts for arbitrary mu0>0; unconditional mass identifiability fails on that exceptional chart.
+
+Execution: independent_attempt01 completed with 111 passing controls, zero failed controls, return code 0, no timeout, and unchanged bound inputs. The child used Python 3.12.8/SymPy 1.14.0, -B and PYTHONDONTWRITEBYTECODE=1, with a 120-second timeout; measured wall time was 0.6972334999591112 seconds. Full stdout/stderr and resource metadata are preserved. There was no failed computational attempt to preserve. Shared Python/SymPy is disclosed and is not independent-CAS evidence.
+
+The controls include a direct first-order Christoffel/Ricci calculation, scalar stress and wave-operator expansion, matter-time algebra, original-equation checks, rank/recovery, a necessary-only counterexample, normalization and exceptional non-identifiability. One control named "field reflection preserves q and g" explicitly checks the product q; ratio g invariance is the elementary identity (-x)/(-b)=x/b in the proof, rather than a separate executable assertion. No claim depends on the control count alone.
+
+Surviving assumptions: ideal differentiable and independently registered scalar metric potentials; known wave-number/spatial normalization; the specified canonical universally conformal dust action; linear perturbation theory; positive density, nonzero x and b, rank four on an open chart; fixed-bare-density response meaning. The construction is not nonlinear finite-amplitude realizability, observational validation, a stable numerical inverse, or a classification of zero-coupling/turning/rank-deficient charts. Absolute density/Planck calibration, field origin and off-trajectory extensions remain free.
+
+Next obligation: compare the frozen author unit only after this output freeze, then replay unchanged author programs from allowed local copies with captured outputs and source hashes.
+

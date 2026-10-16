@@ -1,0 +1,101 @@
+{
+  "captured_utc": "2026-10-16T10:42:54.195592+00:00",
+  "source_pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "stage": "After independent proof and executable-output freeze; bounded author comparison",
+  "author_freeze_matches": {
+    "MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": true,
+    "MODE_INVERSE_DERIVATION_v1.md": true,
+    "check_mode_inverse_v1.py": true,
+    "MODE_INVERSE_CONTROLS_v1.json": true,
+    "check_mode_inverse_jets_v1.py": true,
+    "MODE_INVERSE_JETS_v1.json": true,
+    "MODE_GAIN_DERIVATION_v1.md": true,
+    "check_mode_gain_v1.py": true,
+    "MODE_GAIN_CONTROLS_v1.json": true,
+    "check_mode_gain_jets_v1.py": true,
+    "MODE_GAIN_JETS_v1.json": true,
+    "run_mode_inverse_mutations_v1.py": true,
+    "mode_inverse_mutations_v1/REPORT.json": true
+  },
+  "all_author_freeze_matches": true,
+  "files": {
+    "MODE_INVERSE_ROOT_FREEZE_v1.json": {
+      "sha256": "9087631053ebdb6b7cc5c689219639a64a765197d3b2546a195b45df7c65b3ac",
+      "bytes": 998
+    },
+    "MODE_GAIN_ROOT_FREEZE_v1.json": {
+      "sha256": "82cd04222ecd05db92eaac48bf353b9fb438e2de2f141a18b95bb1beaf00f820",
+      "bytes": 1021
+    },
+    "MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": {
+      "sha256": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+      "bytes": 2230
+    },
+    "MODE_INVERSE_DERIVATION_v1.md": {
+      "sha256": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+      "bytes": 10966
+    },
+    "MODE_GAIN_DERIVATION_v1.md": {
+      "sha256": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+      "bytes": 3196
+    },
+    "check_mode_inverse_v1.py": {
+      "sha256": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+      "bytes": 11558
+    },
+    "check_mode_inverse_jets_v1.py": {
+      "sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "bytes": 8456
+    },
+    "check_mode_gain_v1.py": {
+      "sha256": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d",
+      "bytes": 5218
+    },
+    "check_mode_gain_jets_v1.py": {
+      "sha256": "7eee6c64117f7d300cec507497c14e25472e32f7a6fb698094d770d389748f25",
+      "bytes": 4535
+    },
+    "MODE_INVERSE_CONTROLS_v1.json": {
+      "sha256": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+      "bytes": 95954
+    },
+    "MODE_INVERSE_JETS_v1.json": {
+      "sha256": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492",
+      "bytes": 40177
+    },
+    "MODE_GAIN_CONTROLS_v1.json": {
+      "sha256": "a8b085d0f3309356c632f5e506d4fcf64540bf5c84250c46e4e6934eb47d0689",
+      "bytes": 17543
+    },
+    "MODE_GAIN_JETS_v1.json": {
+      "sha256": "3119bb4486db796f4dbe506f5fa771139b6bd22236383c80b2a2070fc42fd022",
+      "bytes": 32191
+    },
+    "SCALAR_RESPONSE_DERIVATION_v1.md": {
+      "sha256": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+      "bytes": 7497
+    },
+    "SCALAR_RESPONSE_CLOSURE_v1.md": {
+      "sha256": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+      "bytes": 3578
+    },
+    "MATTER_CLOCK_DERIVATION_v2.md": {
+      "sha256": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+      "bytes": 11616
+    },
+    "run_mode_inverse_mutations_v1.py": {
+      "sha256": "0eae1d3dea478cf7d9c3ebb5d5d75dab0a6bd8f2191816e3a16385a0e64e3162",
+      "bytes": 3761
+    },
+    "mode_inverse_mutations_v1/REPORT.json": {
+      "sha256": "a35f9add93b26a37e490a9c92a4eae1878851aff4fcfb26f7747d976ddbe9c37",
+      "bytes": 6303
+    }
+  },
+  "historical_integrity_only_copies": [
+    "SCALAR_RESPONSE_DERIVATION_v1.md",
+    "SCALAR_RESPONSE_CLOSURE_v1.md",
+    "MATTER_CLOCK_DERIVATION_v2.md"
+  ],
+  "no_parent_files_modified": true
+}

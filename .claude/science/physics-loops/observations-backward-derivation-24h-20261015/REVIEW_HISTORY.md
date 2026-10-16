@@ -147,3 +147,8 @@ Geometry transport: 366 primary controls pass. Focused independent path/coupling
 ## Geometry check closure 2026-10-16T07:52:24.587592+00:00
 
 Root read the full focused derivation, code, report and results and verified 16 artifact plus 6 source bindings. All 63 independent controls and 366 unchanged author controls pass; stdout is byte-identical. Counts are separate. Receipt LAB_GEOMETRY_TRANSPORT_ROOT_VERIFICATION_v1.json. Actual geometry certification remains unresolved; no empirical validation, claim promotion or formal audit.
+
+
+## Joint metric inverse focused review 2026-10-16T10:58:43.911428+00:00
+
+MODE_INVERSE_ROOT_REVIEW_v1.md records complete source disposition, the independently originated trace result, post-exposure integration, exact source bindings, separate controls and unchanged replays. Focused mathematical disposition: pass for the stated local conditional unit. This is not milestone conformance, landing approval, formal audit or empirical validation. The final report is independent_mode_inverse/REPORT_v2.md; source hashes remain unchanged.

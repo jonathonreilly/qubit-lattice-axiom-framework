@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/supplement_controls_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse",
+  "start_utc": "2026-10-16T10:52:20.339491+00:00",
+  "end_utc": "2026-10-16T10:52:20.758791+00:00",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "wall_seconds": 0.4180411659181118,
+  "child_user_seconds": 0.29200699999999996,
+  "child_system_seconds": 0.033158,
+  "returncode": 0,
+  "timed_out": false,
+  "output_parse_error": null,
+  "summary": {
+    "passed": 62,
+    "failed": 0
+  },
+  "script_sha256": "05df27e3a16dc7091b39f85c6709c5af9970a72a5d6c4937b969b5536c12a00a",
+  "stdout_sha256": "697fd70e9a2cfb0051926558366e16b5412713d31a9cdc61533b687fcf9be358",
+  "stderr_sha256": "1e149aa550e446b0a5f86db659d595112151db956cc5f95b7efbebfb95ecdfef",
+  "combined_author_sources_read": false
+}

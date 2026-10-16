@@ -1,0 +1,11 @@
+--- check_mode_gain_jets_v1.py
++++ common_gain_inverse_curvature/check_mode_gain_jets_v1.py
+@@ -54,7 +54,7 @@
+  qp=((first[2]-6*Bp*h-6*B*hp)*denominator+6*Bp*numerator)/denominator**2
+  drift=(3*(h-q)-2*L-at)/2
+  driftp=(3*(hp-qp)-2*Lp-first[0])/2
+- physical_c=ct+at*drift+drift*drift+driftp
++ physical_c=ct+at*drift-drift*drift+driftp
+  kap=physical_c-qp-3*h*q+2*q*q-2*q*L-L*L+Lp+3*h*L
+  fphysical=f+d*drift
+  fexpected=6*B*(h-q)**2+2*(qp-q*L)+6*h*q-5*q*q

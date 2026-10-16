@@ -1,11 +1,11 @@
 {
   "campaign": "observations-backward-derivation-24h-20261015",
   "status": "active",
-  "phase": "Matter-clock and response support complete; joint observational-input inverse next",
+  "phase": "Joint metric inverse checked; deriving the observation input map next",
   "started_at": "2026-10-15T22:36:59+00:00",
   "deadline": "2026-10-16T22:36:59+00:00",
   "packaging_cutoff": "2026-10-16T22:21:59+00:00",
-  "updated_at": "2026-10-16T10:13:06.736001+00:00",
+  "updated_at": "2026-10-16T10:58:43.911428+00:00",
   "author": "/root in this chat",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
@@ -18,7 +18,7 @@
   "target_claim_type": "bounded_theorem",
   "actual_current_surface_status": "conditional-support",
   "hard_residual": "Derive controlled cross-environment scalar normalization and independently identified primitive observational inputs; neither common F overlap nor an ideal remote clock may be supplied silently.",
-  "next_action": "Personally execute NEXT_RESPONSE_INVERSE_PLAN_v1.md: from ideal registered matter-metric potentials across common-background Fourier modes, derive or refute the proposed five-coefficient response inverse and whether it eliminates supplied b,kappa. Refresh relevant main/open PR science first and compare reconstruction prior art. Test rank on full original-equation forward solutions, retain background/matter/metric constraints, critical coupling values, scale/orientation/initial-state freedom and derivative/noise obligations. Proposed formulas are not yet verified or load-bearing. Keep seven Fuchs arrays unopened; do not insert fitted ranges, a minimum or selected initial scalar state.",
+  "next_action": "Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.",
   "open_imports": [
     "canonical single-scalar/conformal pressureless action class",
     "known M and normalization",
@@ -138,7 +138,7 @@
   "worker_pid": null,
   "previous_campaigns": "all remain stopped; see runtime PREVIOUS_CAMPAIGNS_v1.json",
   "global_stop": null,
-  "strongest_checked_result": "Within the supplied canonical scalar/conformal-dust action on a monotonic positive-dust chart, H,alpha,mu are compatible exactly when a velocity satisfies the derived ODE and sixth-degree constraint throughout the interval. Outside a precisely classified uncoupled exceptional continuum there are at most six histories; local A,V follow per surviving history. No minimum, potential shape or preferred initial velocity is selected. Physical input extraction remains open.",
+  "strongest_checked_result": "Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.",
   "author_computation": {
     "core_exact_identities": 28,
     "core_mutations_detected": 3,
@@ -153,12 +153,13 @@
     "inventory_sha256": "4a945c57e010f7699de896ae70e048d64db1949a4867946a5d7877613594d148",
     "scope": "complete metadata/path inventory; latest declared science interfaces read; not complete independent review of every PR proof",
     "latest_refresh": {
-      "time": "2026-10-16T10:13:06.736001+00:00",
-      "main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+      "time": "2026-10-16T10:58:43.911428+00:00",
+      "main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
       "execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
       "open_pr_count": 68,
-      "inventory": "OPEN_PRS_20261016T1012.json",
-      "inventory_sha256": "db46dcaaa5cba32037209059543d01c639b35858f1f1e6f9a3f9acdb82c13141",
+      "inventory": "OPEN_PRS_20261016T1056.json",
+      "inventory_sha256": "b038005a8e55998faab0255df8d49f6b7ff35deba0dd3262b231bd527e8d9670",
+      "changes": "Main changed only docs/audit/data/dispatch_shadow_state.json; science and workflow unchanged. All open PR heads unchanged.",
       "five_campaign_heads_unchanged": true
     },
     "read_only_recheck": {
@@ -190,10 +191,10 @@
   ],
   "milestone_status": "PR9628,PR9632,PR9634,PR9637,PR9638 published and attached; shared landing validation pending; no science merged or audited.",
   "checkpoint": {
-    "time": "2026-10-16T10:13:06.736001+00:00",
+    "time": "2026-10-16T10:58:43.911428+00:00",
     "direct_author_only": true,
     "lock_holder": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
-    "checkpoint_scope": "Personally derived matter-clock and response bridge, focused checks and preserved source history",
+    "checkpoint_scope": "Root-authored metric inverse, common-gain closure, source-bound independent verification and readout plan",
     "deadline_unchanged": true
   },
   "last_pushed_checkpoint": {
@@ -1151,7 +1152,7 @@
     "next_action": "Refresh relevant main and open-PR science, then derive the matter-clock/frame and coupled matter/scalar response correspondence for the scalar-history inverse. Start with primitive redshift/clock and perturbative source/readout definitions; retain dust response and metric constraints before deciding whether any observable pole identifies fixed-bare-density mu. Keep clock, scale, action, gauge, background and approximation assumptions explicit; derive or eliminate them where possible. Compare with pinned Boisseau/Tsujikawa prior art. No minimum tracking, arbitrary scalar-state selector or fitted pole-to-mass identification. Keep seven Fuchs arrays unopened; do not fit a cosmological model before freezing a physical input map and data roles.",
     "deadline_unchanged": "2026-10-16T22:36:59Z"
   },
-  "last_checked_main": "bbada1fe09b2d10d610560864d86b68c24a59713",
+  "last_checked_main": "5eeadf3f10f3bcc3af4a81db71d7b39ecb14b472",
   "scalar_history_publication": {
     "baseRefName": "main",
     "baseRefOid": "bbada1fe09b2d10d610560864d86b68c24a59713",
@@ -1211,6 +1212,42 @@
     ],
     "delivery": "commits-only; five prior milestone PRs unchanged",
     "next_action": "Personally execute NEXT_RESPONSE_INVERSE_PLAN_v1.md: from ideal registered matter-metric potentials across common-background Fourier modes, derive or refute the proposed five-coefficient response inverse and whether it eliminates supplied b,kappa. Refresh relevant main/open PR science first and compare reconstruction prior art. Test rank on full original-equation forward solutions, retain background/matter/metric constraints, critical coupling values, scale/orientation/initial-state freedom and derivative/noise obligations. Proposed formulas are not yet verified or load-bearing. Keep seven Fuchs arrays unopened; do not insert fitted ranges, a minimum or selected initial scalar state.",
+    "deadline_unchanged": "2026-10-16T22:36:59Z"
+  },
+  "mode_inverse_checkpoint": {
+    "time": "2026-10-16T10:58:43.911428+00:00",
+    "status": "source-bound focused check complete and personally verified; conditional research support",
+    "root_review": "MODE_INVERSE_ROOT_REVIEW_v1.md",
+    "root_review_sha256": "7b75b2bde0df6e4c6f601bc14c81d72cf8983e549329851af4087322dfcf7386",
+    "bindings": "MODE_INVERSE_ROOT_BINDINGS_v1.json",
+    "bindings_sha256": "764588c747d485234818f28b2ddd78fea3092d8de45cd386bbd4d126b814e2e6",
+    "counts_separate": {
+      "primary_root": 40,
+      "variable_coupling_root": 13,
+      "common_gain_root": 15,
+      "gain_jets_root": 8,
+      "trace_root_post_exposure": 12,
+      "joint_gain_root": 22,
+      "independent_pre_author": 111,
+      "independent_post_author": 38,
+      "independent_joint_correspondence": 62,
+      "source_mutations_detected": 8
+    },
+    "counts_are_not_independent_experiments": true,
+    "independent_manifest_files": 85,
+    "actual_author_bindings": 26,
+    "copied_byte_identical_author_replays": 6,
+    "failed_completed_scientific_controls": 0,
+    "independent_report": "independent_mode_inverse/REPORT_v2.md",
+    "independent_report_sha256": "7290d368bc5b1d62c1313299d474c737ed8638ef539e5ab268b2bd061461ab02",
+    "independent_manifest_sha256": "669181ed61c60474880d619cdf06d17a0f3bb98c8f7a424827ef40a1c239e642",
+    "result": "Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.",
+    "empirical_validation": false,
+    "formal_audit": false,
+    "new_observational_arrays_read": false,
+    "unopened_fuchs_arrays": 7,
+    "delivery": "commits-only support toward one combined milestone; conformance not yet asserted",
+    "next_action": "Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.",
     "deadline_unchanged": "2026-10-16T22:36:59Z"
   }
 }

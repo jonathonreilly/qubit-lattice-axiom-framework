@@ -1,0 +1,2844 @@
+{
+  "author": "/root personally",
+  "checks": [
+    {
+      "name": "quotient derivatives give five coefficients",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "coupling magnitude recovered",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "log coupling derivative recovered",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "speed product recovered without 4-6B denominator",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed-bare-density curvature recovered",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "remaining d compatibility",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "remaining f compatibility",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background source without supplying b sign",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature condition from force derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Hamiltonian density restores original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reconstructed source satisfies momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "reconstructed source satisfies Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter velocity conversion cancels coupling drag",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter density continuity transformation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness original Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness original Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness original bare dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness fixed-density curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness proper matter clock",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "full physical initial-data determinant",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "initial physical coefficient a",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "initial physical coefficient c",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "initial physical coefficient d",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "initial physical coefficient e",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "initial physical coefficient f",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "same-k design loses rank",
+      "pass": true,
+      "rank": 4
+    },
+    {
+      "name": "critical B power-background scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "R_coefficient": "sqrt(6)/9 + 13/12",
+      "name": "critical B positive dust",
+      "pass": true
+    },
+    {
+      "name": "critical B inversion remains regular",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical B d alone loses q",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "small amplitude does not bound first derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "small amplitude does not bound second derivative",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "message": "The solver successfully reached the end of the integration interval.",
+      "name": "full forward original ODE succeeded",
+      "pass": true
+    },
+    {
+      "max_residual_over_epsilon": 6.776263578034402e-15,
+      "name": "forward Hamiltonian propagated",
+      "pass": true
+    },
+    {
+      "max_relative_error": 4.958370087924543e-15,
+      "name": "coefficient recovery on all31epochs",
+      "pass": true
+    },
+    {
+      "max_residual_over_epsilon": 1.6263032587282567e-14,
+      "name": "full mode source and dust compatibility",
+      "pass": true
+    },
+    {
+      "min_sigma_ratio": 0.012751247085030296,
+      "name": "physical rank stays nonzero on sampled interval",
+      "pass": true,
+      "qualification": "31 sampled epochs; analytic continuity proves a local open interval, not an interval-arithmetic global rank certificate"
+    },
+    {
+      "name": "clock second derivative omission is detectable",
+      "omitted_term": 1e-05,
+      "pass": true
+    },
+    {
+      "fixed_bare_kappa": 7,
+      "name": "naive observed curvature c is not kappa",
+      "pass": true,
+      "response_c": 9
+    }
+  ],
+  "data_role": "exact and numerical synthetic mathematical controls",
+  "empirical_validation": false,
+  "exact_initial_density_contrasts": [
+    "-epsilon",
+    "2*epsilon",
+    "-6*epsilon",
+    "-13*epsilon",
+    "-15*epsilon"
+  ],
+  "exact_initial_design": "Matrix([[-1, 0, 0, 0, 0], [0, -1, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 4, 1], [0, 0, 0, 5, 1]])",
+  "failed": 0,
+  "forward": {
+    "atol": 2e-15,
+    "epsilon": 1e-05,
+    "initial_values": [
+      0.0,
+      1e-05,
+      0.0,
+      0.0,
+      -1e-05,
+      1e-05,
+      0.0,
+      0.0,
+      1e-05,
+      2e-05,
+      0.0,
+      0.0,
+      0.0,
+      -2e-05,
+      -6.000000000000001e-05,
+      0.0,
+      0.0,
+      1e-05,
+      -2e-05,
+      -0.00013000000000000002,
+      0.0,
+      0.0,
+      1e-05,
+      -2e-05,
+      -0.00015000000000000001
+    ],
+    "max_step": 0.01,
+    "method": "DOP853",
+    "rows": [
+      {
+        "coefficients": [
+          3.0,
+          9.0,
+          10.000000000000002,
+          2.0000000000000004,
+          8.999999999999998
+        ],
+        "modes": [
+          {
+            "J": 0.0,
+            "J_prime": 1e-05,
+            "J_second": -3.0000000000000004e-05,
+            "P": 0.0,
+            "P_prime": 0.0,
+            "bare_delta": -1e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 1.0,
+            "matter_Z": 0.0
+          },
+          {
+            "J": 1e-05,
+            "J_prime": 0.0,
+            "J_second": -0.00011,
+            "P": 0.0,
+            "P_prime": 0.0,
+            "bare_delta": 2e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 2.0,
+            "matter_Z": 1e-05
+          },
+          {
+            "J": 0.0,
+            "J_prime": 0.0,
+            "J_second": 0.00010000000000000002,
+            "P": 0.0,
+            "P_prime": 1e-05,
+            "bare_delta": -6.000000000000001e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 3.0,
+            "matter_Z": -2e-05
+          },
+          {
+            "J": 0.0,
+            "J_prime": 0.0,
+            "J_second": 0.00017,
+            "P": 1e-05,
+            "P_prime": 0.0,
+            "bare_delta": -0.00013000000000000002,
+            "hamiltonian_residual": 1.6940658945086007e-21,
+            "k_com_squared": 4.0,
+            "matter_Z": -2e-05
+          },
+          {
+            "J": 0.0,
+            "J_prime": 0.0,
+            "J_second": 0.00019,
+            "P": 1e-05,
+            "P_prime": 0.0,
+            "bare_delta": -0.00015000000000000001,
+            "hamiltonian_residual": 1.6940658945086007e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2e-05
+          }
+        ],
+        "relative_recovery_error": 1.7763568394002506e-16,
+        "singular_values_in_declared_reference_units": [
+          6.555664084966108,
+          1.0,
+          1.0,
+          1.0,
+          0.1525398475332601
+        ],
+        "t_E": 1.0,
+        "tau": 0.5,
+        "truth": [
+          3.0,
+          9.0,
+          10.0,
+          2.0,
+          9.0
+        ]
+      },
+      {
+        "coefficients": [
+          2.883506343713955,
+          8.31460883423863,
+          9.611687812379856,
+          1.9999999999999893,
+          8.314608834238674
+        ],
+        "modes": [
+          {
+            "J": 1.9601470995140525e-07,
+            "J_prime": 9.41399270947276e-06,
+            "J_second": -2.8040936889043406e-05,
+            "P": 9.73715275259322e-10,
+            "P_prime": 9.419246357762759e-08,
+            "bare_delta": -9.997091636596448e-06,
+            "hamiltonian_residual": 3.3881317890172014e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -2.0063061234231236e-09
+          },
+          {
+            "J": 9.978769463162688e-06,
+            "J_prime": -2.044535368669066e-06,
+            "J_second": -9.291209118771217e-05,
+            "P": 2.8132064594044994e-09,
+            "P_prime": 2.6696011761776125e-07,
+            "bare_delta": 2.0392882827536922e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 2.0,
+            "matter_Z": 9.798125595980036e-06
+          },
+          {
+            "J": 1.9282729467957173e-08,
+            "J_prime": 1.8560776527165972e-06,
+            "J_second": 8.421807158114012e-05,
+            "P": 1.9230394595393783e-07,
+            "P_prime": 9.063857388175083e-06,
+            "bare_delta": -6.058806449638788e-05,
+            "hamiltonian_residual": 1.1779051922755114e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0002105760231118e-05
+          },
+          {
+            "J": 3.291278462555173e-08,
+            "J_prime": 3.1743932102214434e-06,
+            "J_second": 0.0001449495044289136,
+            "P": 9.997225418832325e-06,
+            "P_prime": -2.6134608442480955e-07,
+            "bare_delta": -0.0001315693167740701,
+            "hamiltonian_residual": 3.942673671672751e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.02022053770389e-05
+          },
+          {
+            "J": 3.680606690456863e-08,
+            "J_prime": 3.5508576626411613e-06,
+            "J_second": 0.00016227319639544865,
+            "P": 9.997238292341001e-06,
+            "P_prime": -2.594751246395385e-07,
+            "bare_delta": -0.0001519595270454679,
+            "hamiltonian_residual": 1.724506141050552e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.0202231967435953e-05
+          }
+        ],
+        "relative_recovery_error": 4.958370087924543e-15,
+        "singular_values_in_declared_reference_units": [
+          6.098148301789263,
+          1.089864255315844,
+          0.9655725208460523,
+          0.8089730454836512,
+          0.15187178913753868
+        ],
+        "t_E": 1.02,
+        "tau": 0.5202,
+        "truth": [
+          2.883506343713956,
+          8.314608834238628,
+          9.611687812379854,
+          2.0,
+          8.314608834238628
+        ]
+      },
+      {
+        "coefficients": [
+          2.7736686390532532,
+          7.693237719267531,
+          9.245562130177515,
+          1.9999999999999918,
+          7.6932377192675645
+        ],
+        "modes": [
+          {
+            "J": 3.841278325504186e-07,
+            "J_prime": 8.855841078041394e-06,
+            "J_second": -2.616989610240286e-05,
+            "P": 3.792751820601318e-09,
+            "P_prime": 1.7750686166786753e-07,
+            "bare_delta": -9.988719837132736e-06,
+            "hamiltonian_residual": 4.235164736271502e-22,
+            "k_com_squared": 1.0,
+            "matter_Z": -8.047660213573466e-09
+          },
+          {
+            "J": 9.91802269434508e-06,
+            "J_prime": -3.802727075006828e-06,
+            "J_second": -7.820065230458074e-05,
+            "P": 1.055526853608043e-08,
+            "P_prime": 4.750591565964462e-07,
+            "bare_delta": 2.0771133673544535e-05,
+            "hamiltonian_residual": -1.3552527156068805e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 9.592996147604922e-06
+          },
+          {
+            "J": 7.43861189580084e-08,
+            "J_prime": 3.4471829744229787e-06,
+            "J_second": 7.064286457933165e-05,
+            "P": 3.7036022483644266e-07,
+            "P_prime": 8.243787832970513e-06,
+            "bare_delta": -6.11525488612662e-05,
+            "hamiltonian_residual": 6.220398206398768e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0008838738550024e-05
+          },
+          {
+            "J": 1.2745492629048439e-07,
+            "J_prime": 5.929497016103298e-06,
+            "J_second": 0.00012310701271802418,
+            "P": 9.98974313480281e-06,
+            "P_prime": -4.540398213581771e-07,
+            "bare_delta": -0.0001330785580477869,
+            "hamiltonian_residual": 3.9148804030909694e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.0409632357736182e-05
+          },
+          {
+            "J": 1.4260199182911501e-07,
+            "J_prime": 6.637283832347693e-06,
+            "J_second": 0.00013799851870577277,
+            "P": 9.989842554735732e-06,
+            "P_prime": -4.470389885263568e-07,
+            "bare_delta": -0.0001538402163105044,
+            "hamiltonian_residual": 1.2017279939170386e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.0409844325279367e-05
+          }
+        ],
+        "relative_recovery_error": 3.7802488083431295e-15,
+        "singular_values_in_declared_reference_units": [
+          5.719233549799466,
+          1.1727759650560878,
+          0.9330995693155273,
+          0.6608066862306341,
+          0.15099498950420087
+        ],
+        "t_E": 1.04,
+        "tau": 0.5408000000000001,
+        "truth": [
+          2.773668639053254,
+          7.693237719267532,
+          9.245562130177515,
+          2.0,
+          7.693237719267532
+        ]
+      },
+      {
+        "coefficients": [
+          2.6699893200427205,
+          7.1288429691421875,
+          8.8999644001424,
+          1.9999999999999916,
+          7.128842969142216
+        ],
+        "modes": [
+          {
+            "J": 5.644630229173066e-07,
+            "J_prime": 8.325157631585806e-06,
+            "J_second": -2.439305571781305e-05,
+            "P": 8.31065873157961e-09,
+            "P_prime": 2.5097752758453925e-07,
+            "bare_delta": -9.975385780100185e-06,
+            "hamiltonian_residual": -4.235164736271502e-22,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.8151751858210612e-08
+          },
+          {
+            "J": 9.82189263963956e-06,
+            "J_prime": -5.308209303348502e-06,
+            "J_second": -6.553478704538851e-05,
+            "P": 2.2282980795623406e-08,
+            "P_prime": 6.338616627496866e-07,
+            "bare_delta": 2.1134300639767616e-05,
+            "hamiltonian_residual": -1.3552527156068805e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 9.385332765357549e-06
+          },
+          {
+            "J": 1.6145890805712332e-07,
+            "J_prime": 4.8046222066015094e-06,
+            "J_second": 5.896763465733838e-05,
+            "P": 5.357368052850823e-07,
+            "P_prime": 7.524221741901817e-06,
+            "bare_delta": -6.169395384856442e-05,
+            "hamiltonian_residual": 7.940933880509066e-22,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.002080570190788e-05
+          },
+          {
+            "J": 2.776653869820278e-07,
+            "J_prime": 8.309682199632913e-06,
+            "J_second": 0.000104075809876977,
+            "P": 9.97868967147016e-06,
+            "P_prime": -5.895768567710806e-07,
+            "bare_delta": -0.0001345297025370477,
+            "hamiltonian_residual": 5.749236129488564e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.062347220526932e-05
+          },
+          {
+            "J": 3.107930905071606e-07,
+            "J_prime": 9.306650722609616e-06,
+            "J_second": 0.00011677074897554022,
+            "P": 9.979013546683434e-06,
+            "P_prime": -5.748411962041049e-07,
+            "bare_delta": -0.0001556452203628318,
+            "hamiltonian_residual": 2.4881592825595072e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.0624184593880123e-05
+          }
+        ],
+        "relative_recovery_error": 3.933453165546718e-15,
+        "singular_values_in_declared_reference_units": [
+          5.408829613493117,
+          1.2431361336418432,
+          0.9022761781976647,
+          0.5462904123471926,
+          0.14991684414081075
+        ],
+        "t_E": 1.06,
+        "tau": 0.5618000000000001,
+        "truth": [
+          2.6699893200427196,
+          7.128842969142184,
+          8.899964400142398,
+          2.0,
+          7.128842969142184
+        ]
+      },
+      {
+        "coefficients": [
+          2.5720164609053535,
+          6.6152686751680845,
+          8.573388203017835,
+          1.9999999999999982,
+          6.615268675168093
+        ],
+        "modes": [
+          {
+            "J": 7.371665491536237e-07,
+            "J_prime": 7.821349335563437e-06,
+            "J_second": -2.2713364677505107e-05,
+            "P": 1.4389719853392303e-08,
+            "P_prime": 3.155488923142015e-07,
+            "bare_delta": -9.957554173639398e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -3.233884420860699e-08
+          },
+          {
+            "J": 9.694158325106557e-06,
+            "J_prime": -6.590708281645784e-06,
+            "J_second": -5.463123410889254e-05,
+            "P": 3.717684908049666e-08,
+            "P_prime": 7.514613548239887e-07,
+            "bare_delta": 2.14821000026001e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 9.175830362659946e-06
+          },
+          {
+            "J": 2.7698130549234023e-07,
+            "J_prime": 5.956079893277027e-06,
+            "J_second": 4.89294948572773e-05,
+            "P": 6.898225815836642e-07,
+            "P_prime": 6.891802921502968e-06,
+            "bare_delta": -6.221285093980033e-05,
+            "hamiltonian_residual": 1.0164395367051604e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.003859070199318e-05
+          },
+          {
+            "J": 4.780091214564005e-07,
+            "J_prime": 1.0354964075319745e-05,
+            "J_second": 8.750737429575716e-05,
+            "P": 9.965050043460494e-06,
+            "P_prime": -6.777113528438758e-07,
+            "bare_delta": -0.00013592476728778403,
+            "hamiltonian_residual": 5.452774597949558e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.084488127489638e-05
+          },
+          {
+            "J": 5.352233941226591e-07,
+            "J_prime": 1.1602041903472357e-05,
+            "J_second": 9.8229445957085e-05,
+            "P": 9.965790981885635e-06,
+            "P_prime": -6.532029610724102e-07,
+            "bare_delta": -0.00015737766401348024,
+            "hamiltonian_residual": 6.03510974918689e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.0846561801281494e-05
+          }
+        ],
+        "relative_recovery_error": 1.86610024168167e-15,
+        "singular_values_in_declared_reference_units": [
+          5.157256424141888,
+          1.2972588255973938,
+          0.8728132241591172,
+          0.457483810156893,
+          0.14864581889027526
+        ],
+        "t_E": 1.08,
+        "tau": 0.5832,
+        "truth": [
+          2.5720164609053495,
+          6.615268675168079,
+          8.573388203017831,
+          2.0,
+          6.615268675168079
+        ]
+      },
+      {
+        "coefficients": [
+          2.4793388429752046,
+          6.147121098285634,
+          8.264462809917353,
+          1.9999999999999964,
+          6.1471210982856475
+        ],
+        "modes": [
+          {
+            "J": 9.024026271280084e-07,
+            "J_prime": 7.343671248809763e-06,
+            "J_second": -2.113138152425861e-05,
+            "P": 2.190064536911559e-08,
+            "P_prime": 3.7208182774646424e-07,
+            "bare_delta": -9.935655543826935e-06,
+            "hamiltonian_residual": -1.6940658945086007e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -5.062239097556619e-08
+          },
+          {
+            "J": 9.53827420211407e-06,
+            "J_prime": -7.676509978693668e-06,
+            "J_second": -4.524721170142291e-05,
+            "P": 5.452571258211485e-08,
+            "P_prime": 8.347114119814865e-07,
+            "bare_delta": 2.1814389214222875e-05,
+            "hamiltonian_residual": -1.6940658945086007e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 8.96515760354512e-06
+          },
+          {
+            "J": 4.1773794931700976e-07,
+            "J_prime": 6.9260469587625665e-06,
+            "J_second": 4.030289815435672e-05,
+            "P": 8.33848762466756e-07,
+            "P_prime": 6.335053520901205e-06,
+            "bare_delta": -6.270986587034576e-05,
+            "hamiltonian_residual": 8.999725064576941e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0062754806398877e-05
+          },
+          {
+            "J": 7.233539276050725e-07,
+            "J_prime": 1.2101395419780598e-05,
+            "J_second": 7.309577608997528e-05,
+            "P": 9.949675805398446e-06,
+            "P_prime": -7.267187178323387e-07,
+            "bare_delta": -0.00013726578818144147,
+            "hamiltonian_residual": 6.331571280725895e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.107497944710545e-05
+          },
+          {
+            "J": 8.101579572548716e-07,
+            "J_prime": 1.3562569785287362e-05,
+            "J_second": 8.205469851297618e-05,
+            "P": 9.951072399960738e-06,
+            "P_prime": -6.908885772102692e-07,
+            "bare_delta": -0.0001590406284545525,
+            "hamiltonian_residual": 8.046812998915853e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.1078244147839482e-05
+          }
+        ],
+        "relative_recovery_error": 1.864061922596717e-15,
+        "singular_values_in_declared_reference_units": [
+          4.955155457079477,
+          1.3337648872868968,
+          0.8444413177418845,
+          0.38804396524868734,
+          0.14719077217811724
+        ],
+        "t_E": 1.1,
+        "tau": 0.6050000000000001,
+        "truth": [
+          2.4793388429752063,
+          6.147121098285634,
+          8.264462809917354,
+          2.0,
+          6.147121098285634
+        ]
+      },
+      {
+        "coefficients": [
+          2.3915816326530606,
+          5.719662705643482,
+          7.971938775510205,
+          1.9999999999999962,
+          5.7196627056434926
+        ],
+        "modes": [
+          {
+            "J": 1.0603494664134735e-06,
+            "J_prime": 6.891269378194344e-06,
+            "J_second": -1.964592031567078e-05,
+            "P": 3.072223048547959e-08,
+            "P_prime": 4.213599402973631e-07,
+            "bare_delta": -9.910088443232469e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -7.300960834560033e-08
+          },
+          {
+            "J": 9.357397109018351e-06,
+            "J_prime": -8.588869719323603e-06,
+            "J_second": -3.717438385505609e-05,
+            "P": 7.371334071576158e-08,
+            "P_prime": 8.894170559738672e-07,
+            "bare_delta": 2.2131143797432676e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 8.75395699098675e-06
+          },
+          {
+            "J": 5.807929712069533e-07,
+            "J_prime": 7.736196657446356e-06,
+            "J_second": 3.28941276792175e-05,
+            "P": 9.68907526061607e-07,
+            "P_prime": 5.844093172705838e-06,
+            "bare_delta": -6.318566478641773e-05,
+            "hamiltonian_residual": 1.641126335305207e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0093835996094283e-05
+          },
+          {
+            "J": 1.0089474031544136e-06,
+            "J_prime": 1.3581432029455465e-05,
+            "J_second": 6.057263756983879e-05,
+            "P": 9.933300950036802e-06,
+            "P_prime": -7.436174261771995e-07,
+            "bare_delta": -0.00013855480368553852,
+            "hamiltonian_residual": 4.277516383634217e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.1314848967889044e-05
+          },
+          {
+            "J": 1.1302638876371115e-06,
+            "J_prime": 1.5223686092020563e-05,
+            "J_second": 6.796307104954996e-05,
+            "P": 9.935629862589877e-06,
+            "P_prime": -6.953355707329339e-07,
+            "bare_delta": -0.0001606371383578402,
+            "hamiltonian_residual": 2.795208725939191e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.132045721412365e-05
+          }
+        ],
+        "relative_recovery_error": 1.8504645873607156e-15,
+        "singular_values_in_declared_reference_units": [
+          4.793557209444723,
+          1.3533448703042918,
+          0.8169160431568031,
+          0.33314523387529316,
+          0.1455600345026485
+        ],
+        "t_E": 1.12,
+        "tau": 0.6272000000000001,
+        "truth": [
+          2.391581632653061,
+          5.71966270564348,
+          7.971938775510203,
+          2.0,
+          5.71966270564348
+        ]
+      },
+      {
+        "coefficients": [
+          2.3084025854108967,
+          5.328722496331708,
+          7.694675284702987,
+          1.999999999999996,
+          5.3287224963317215
+        ],
+        "modes": [
+          {
+            "J": 1.2111959230112756e-06,
+            "J_prime": 6.463214807959523e-06,
+            "J_second": -1.8254547049476927e-05,
+            "P": 4.074099368680114e-08,
+            "P_prime": 4.640956823190561e-07,
+            "bare_delta": -9.881221566660324e-06,
+            "hamiltonian_residual": -3.3881317890172014e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -9.950200497508419e-08
+          },
+          {
+            "J": 9.1544110245017e-06,
+            "J_prime": -9.34837114894296e-06,
+            "J_second": -3.023376580371925e-05,
+            "P": 9.420673506755044e-08,
+            "P_prime": 9.204969489758017e-07,
+            "bare_delta": 2.2432437569228028e-05,
+            "hamiltonian_residual": -1.5246593050577406e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 8.542845073211469e-06
+          },
+          {
+            "J": 7.634670254061287e-07,
+            "J_prime": 8.40571488658224e-06,
+            "J_second": 2.6536633129573682e-05,
+            "P": 1.0959683189557084e-06,
+            "P_prime": 5.410402959120562e-06,
+            "bare_delta": -6.364094263834133e-05,
+            "hamiltonian_residual": 1.7152417181899582e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0132349203413354e-05
+          },
+          {
+            "J": 1.3303942947804448e-06,
+            "J_prime": 1.4824270566227206e-05,
+            "J_second": 4.970262908388393e-05,
+            "P": 9.916555922144491e-06,
+            "P_prime": -7.343566013209213e-07,
+            "bare_delta": -0.00013979384139172643,
+            "hamiltonian_residual": 5.675120746603812e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.156553364161322e-05
+          },
+          {
+            "J": 1.490590635440613e-06,
+            "J_prime": 1.661748048915308e-05,
+            "J_second": 5.570380557501527e-05,
+            "P": 9.92012473090099e-06,
+            "P_prime": -6.728500833528406e-07,
+            "bare_delta": -0.00016217015152638492,
+            "hamiltonian_residual": 3.7269449679189215e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.1574382641867987e-05
+          }
+        ],
+        "relative_recovery_error": 2.6664765257259742e-15,
+        "singular_values_in_declared_reference_units": [
+          4.664093206589018,
+          1.3581557201912344,
+          0.790024306649128,
+          0.28921366454798064,
+          0.1437600800525579
+        ],
+        "t_E": 1.1400000000000001,
+        "tau": 0.6498000000000002,
+        "truth": [
+          2.308402585410895,
+          5.328722496331705,
+          7.694675284702984,
+          2.0,
+          5.328722496331705
+        ]
+      },
+      {
+        "coefficients": [
+          2.229488703923901,
+          4.97061988092427,
+          7.4316290130796645,
+          1.9999999999999922,
+          4.970619880924293
+        ],
+        "modes": [
+          {
+            "J": 1.3551386701621308e-06,
+            "J_prime": 6.058530776042437e-06,
+            "J_second": -1.69539600923646e-05,
+            "P": 5.185080420382429e-08,
+            "P_prime": 5.009361950804674e-07,
+            "bare_delta": -9.849395765946872e-06,
+            "hamiltonian_residual": -4.658681209898652e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.3009587302583423e-07
+          },
+          {
+            "J": 8.931949780274934e-06,
+            "J_prime": -9.973241017888065e-06,
+            "J_second": -2.4271416361363798e-05,
+            "P": 1.1554590625123333e-07,
+            "P_prime": 9.321187331981568e-07,
+            "bare_delta": 2.2718425713610334e-05,
+            "hamiltonian_residual": -1.5246593050577406e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 8.332412748390791e-06
+          },
+          {
+            "J": 9.633161459598395e-07,
+            "J_prime": 8.951590544106288e-06,
+            "J_second": 2.108707852024342e-05,
+            "P": 1.2158921206843705e-06,
+            "P_prime": 5.026626561077889e-06,
+            "bare_delta": -6.40764134752763e-05,
+            "hamiltonian_residual": 2.117582368135751e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0178786468200368e-05
+          },
+          {
+            "J": 1.6836344503789726e-06,
+            "J_prime": 1.5856159150980916e-05,
+            "J_second": 4.0279463749838524e-05,
+            "P": 9.899979979827735e-06,
+            "P_prime": -7.039748867653292e-07,
+            "bare_delta": -0.00014098490694477406,
+            "hamiltonian_residual": 6.225692162319107e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.1828038328424763e-05
+          },
+          {
+            "J": 1.8865499627429358e-06,
+            "J_prime": 1.7772964266328726e-05,
+            "J_second": 4.505531338314693e-05,
+            "P": 9.905120749410615e-06,
+            "P_prime": -6.287729504625553e-07,
+            "bare_delta": -0.00016364255073959084,
+            "hamiltonian_residual": 5.929230630780102e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.184115722572529e-05
+          }
+        ],
+        "relative_recovery_error": 3.867712125835156e-15,
+        "singular_values_in_declared_reference_units": [
+          4.559266454605993,
+          1.3511179138100387,
+          0.7635911841641411,
+          0.25363371139967167,
+          0.14179339655918144
+        ],
+        "t_E": 1.1600000000000001,
+        "tau": 0.6728000000000002,
+        "truth": [
+          2.2294887039238995,
+          4.97061988092427,
+          7.431629013079665,
+          2.0,
+          4.97061988092427
+        ]
+      },
+      {
+        "coefficients": [
+          2.1545532892846877,
+          4.642099876367471,
+          7.181844297615627,
+          1.9999999999999984,
+          4.642099876367475
+        ],
+        "modes": [
+          {
+            "J": 1.4923798117598134e-06,
+            "J_prime": 5.676214048111401e-06,
+            "J_second": -1.574028055326416e-05,
+            "P": 6.395250610281606e-08,
+            "P_prime": 5.324688307533063e-07,
+            "bare_delta": -9.814925959435824e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.6478274301618746e-07
+          },
+          {
+            "J": 8.692417892077942e-06,
+            "J_prime": -1.047962541578598e-05,
+            "J_second": -1.9154790690538637e-05,
+            "P": 1.373349288337893e-07,
+            "P_prime": 9.278130754758373e-07,
+            "bare_delta": 2.2989330295836867e-05,
+            "hamiltonian_residual": -1.3552527156068805e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 8.123225650773481e-06
+          },
+          {
+            "J": 1.1781123006406707e-06,
+            "J_prime": 9.388870900811166e-06,
+            "J_second": 1.6421988579961253e-05,
+            "P": 1.32944394745247e-06,
+            "P_prime": 4.686402338162328e-06,
+            "bare_delta": -6.449280235692868e-05,
+            "hamiltonian_residual": 1.2705494208814505e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.023361719273582e-05
+          },
+          {
+            "J": 2.064921525587638e-06,
+            "J_prime": 1.6700681697784474e-05,
+            "J_second": 3.2122349880321156e-05,
+            "P": 9.884032104926818e-06,
+            "P_prime": -6.567351922023837e-07,
+            "bare_delta": -0.00014212997501913293,
+            "hamiltonian_residual": 5.463362509790237e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.2103328703869362e-05
+          },
+          {
+            "J": 2.31389591919597e-06,
+            "J_prime": 1.871633725069267e-05,
+            "J_second": 3.58219680146632e-05,
+            "P": 9.891095634384717e-06,
+            "P_prime": -5.676210366785576e-07,
+            "bare_delta": -0.00016505713747641597,
+            "hamiltonian_residual": 3.3457801416544863e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.212187236070503e-05
+          }
+        ],
+        "relative_recovery_error": 1.2593586631393813e-15,
+        "singular_values_in_declared_reference_units": [
+          4.472672461489649,
+          1.335306974748449,
+          0.7374862558592657,
+          0.22449834595428342,
+          0.13965462453085975
+        ],
+        "t_E": 1.1800000000000002,
+        "tau": 0.6962000000000002,
+        "truth": [
+          2.1545532892846877,
+          4.6420998763674675,
+          7.181844297615626,
+          2.0,
+          4.6420998763674675
+        ]
+      },
+      {
+        "coefficients": [
+          2.0833333333333335,
+          4.3402777777777795,
+          6.944444444444446,
+          1.9999999999999936,
+          4.340277777777795
+        ],
+        "modes": [
+          {
+            "J": 1.623124874047107e-06,
+            "J_prime": 5.3152516819319956e-06,
+            "J_second": -1.460927273101616e-05,
+            "P": 7.69535446222141e-08,
+            "P_prime": 5.592263250373499e-07,
+            "bare_delta": -9.778102934566056e-06,
+            "hamiltonian_residual": -3.8116482626443515e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -2.0354980507903998e-07
+          },
+          {
+            "J": 8.438009658498674e-06,
+            "J_prime": -1.08818323532154e-05,
+            "J_second": -1.4769647937967884e-05,
+            "P": 1.5923410562288126e-07,
+            "P_prime": 9.105698014116145e-07,
+            "bare_delta": 2.3245427870825266e-05,
+            "hamiltonian_residual": -1.6940658945086007e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 7.915824603629944e-06
+          },
+          {
+            "J": 1.4058255158482993e-06,
+            "J_prime": 9.730886330189545e-06,
+            "J_second": 1.2434899543886366e-05,
+            "P": 1.4373038290206862e-06,
+            "P_prime": 4.3842212080202e-06,
+            "bare_delta": -6.489083864029845e-05,
+            "hamiltonian_residual": 1.6940658945086007e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0297288478659403e-05
+          },
+          {
+            "J": 2.470802548623384e-06,
+            "J_prime": 1.737901731896209e-05,
+            "J_second": 2.5072858512551814e-05,
+            "P": 9.86910063823107e-06,
+            "P_prime": -5.96239131130599e-07,
+            "bare_delta": -0.0001432309820460943,
+            "hamiltonian_residual": 6.479802046495398e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.2392331243462992e-05
+          },
+          {
+            "J": 2.7687050735184608e-06,
+            "J_prime": 1.94712370553616e-05,
+            "J_second": 2.7831197062301798e-05,
+            "P": 9.878451340511702e-06,
+            "P_prime": -4.932076481189425e-07,
+            "bare_delta": -0.00016641662724061168,
+            "hamiltonian_residual": 1.7787691892340307e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.241757379652824e-05
+          }
+        ],
+        "relative_recovery_error": 3.3263379047286874e-15,
+        "singular_values_in_declared_reference_units": [
+          4.399101406752362,
+          1.3135352867437642,
+          0.7116281155760258,
+          0.200421632619548,
+          0.1373226610137842
+        ],
+        "t_E": 1.2,
+        "tau": 0.72,
+        "truth": [
+          2.0833333333333335,
+          4.340277777777778,
+          6.944444444444445,
+          2.0,
+          4.340277777777778
+        ]
+      },
+      {
+        "coefficients": [
+          2.0155872077398547,
+          4.062591792004546,
+          6.718624025799516,
+          1.999999999999993,
+          4.062591792004563
+        ],
+        "modes": [
+          {
+            "J": 1.747581120722683e-06,
+            "J_prime": 4.97463406705282e-06,
+            "J_second": -1.3556510282818598e-05,
+            "P": 9.076759897517812e-08,
+            "P_prime": 5.816916092569682e-07,
+            "bare_delta": -9.73919504409072e-06,
+            "hamiltonian_residual": -3.8116482626443515e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -2.463802990436239e-07
+          },
+          {
+            "J": 8.170726667461597e-06,
+            "J_prime": -1.1192544949912002e-05,
+            "J_second": -1.101742569740683e-05,
+            "P": 1.8095309642389644e-07,
+            "P_prime": 8.829190720587486e-07,
+            "bare_delta": 2.3487038889443726e-05,
+            "hamiltonian_residual": -1.8634724839594607e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 7.710726126385434e-06
+          },
+          {
+            "J": 1.644607453326318e-06,
+            "J_prime": 9.989448190637204e-06,
+            "J_second": 9.033935440571876e-06,
+            "P": 1.5400764590872212e-06,
+            "P_prime": 4.11530610109839e-06,
+            "bare_delta": -6.527125043550029e-05,
+            "hamiltonian_residual": 1.1434944787933055e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0370225531364183e-05
+          },
+          {
+            "J": 2.898098410591823e-06,
+            "J_prime": 1.791017632791243e-05,
+            "J_second": 1.8992164162671904e-05,
+            "P": 9.855511792881403e-06,
+            "P_prime": -5.255243323794123e-07,
+            "bare_delta": -0.00014428982043485845,
+            "hamiltonian_residual": 6.268043809681823e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.2695933399442416e-05
+          },
+          {
+            "J": 3.2473571889178887e-06,
+            "J_prime": 2.005897043396787e-05,
+            "J_second": 2.093086141904645e-05,
+            "P": 9.867523158839011e-06,
+            "P_prime": -4.087452243451501e-07,
+            "bare_delta": -0.00016772364624717526,
+            "hamiltonian_residual": 1.1858461261560205e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.272926165579305e-05
+          }
+        ],
+        "relative_recovery_error": 3.3333499258134986e-15,
+        "singular_values_in_declared_reference_units": [
+          4.334512682000136,
+          1.2881323941655898,
+          0.6859857270719568,
+          0.1804141543659519,
+          0.13474259871093253
+        ],
+        "t_E": 1.22,
+        "tau": 0.7442,
+        "truth": [
+          2.015587207739855,
+          4.062591792004546,
+          6.7186240257995165,
+          2.0,
+          4.062591792004546
+        ]
+      },
+      {
+        "coefficients": [
+          1.9510926118626444,
+          3.8067623800649937,
+          6.50364203954215,
+          1.999999999999997,
+          3.8067623800650012
+        ],
+        "modes": [
+          {
+            "J": 1.8659561445959279e-06,
+            "J_prime": 4.653364957453744e-06,
+            "J_second": -1.257750029219942e-05,
+            "P": 1.0531422472180453e-07,
+            "P_prime": 6.003022627822692e-07,
+            "bare_delta": -9.698449797965749e-06,
+            "hamiltonian_residual": -5.505714157152952e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -2.9325387559174784e-07
+          },
+          {
+            "J": 7.89239384058635e-06,
+            "J_prime": -1.1423008934066539e-05,
+            "J_second": -7.81300776325014e-06,
+            "P": 2.0224488658133772e-07,
+            "P_prime": 8.470000422065262e-07,
+            "bare_delta": 2.371451864958087e-05,
+            "hamiltonian_residual": -2.0328790734103208e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 7.508422985060144e-06
+          },
+          {
+            "J": 1.8927763264706575e-06,
+            "J_prime": 1.017502317476332e-05,
+            "J_second": 6.139743755282576e-06,
+            "P": 1.638299691112809e-06,
+            "P_prime": 3.875509503161882e-06,
+            "bare_delta": -6.563476005518596e-05,
+            "hamiltonian_residual": 1.6093625997831706e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0452832119301002e-05
+          },
+          {
+            "J": 3.343885319642626e-06,
+            "J_prime": 1.831121446227672e-05,
+            "J_second": 1.3758618924431852e-05,
+            "P": 9.843537179972264e-06,
+            "P_prime": -4.4714728491455494e-07,
+            "bare_delta": -0.00014530833406584324,
+            "hamiltonian_residual": 5.675120746603812e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.3014983940884942e-05
+          },
+          {
+            "J": 3.746516481137409e-06,
+            "J_prime": 2.049872698168432e-05,
+            "J_second": 1.4986905182407724e-05,
+            "P": 9.858587780610492e-06,
+            "P_prime": -3.1693300094293566e-07,
+            "bare_delta": -0.00016898072926042128,
+            "hamiltonian_residual": 3.8116482626443515e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.3057890677881743e-05
+          }
+        ],
+        "relative_recovery_error": 2.1249337951282997e-15,
+        "singular_values_in_declared_reference_units": [
+          4.275915681249676,
+          1.2608799903620502,
+          0.6605756970398129,
+          0.16382646206562732,
+          0.13178060223543145
+        ],
+        "t_E": 1.24,
+        "tau": 0.7688,
+        "truth": [
+          1.951092611862643,
+          3.806762380064991,
+          6.503642039542143,
+          2.0,
+          3.806762380064991
+        ]
+      },
+      {
+        "coefficients": [
+          1.8896447467876039,
+          3.5707572690619864,
+          6.298815822625342,
+          1.9999999999999991,
+          3.570757269061991
+        ],
+        "modes": [
+          {
+            "J": 1.9784566957248518e-06,
+            "J_prime": 4.350469079661626e-06,
+            "J_second": -1.1667774727189348e-05,
+            "P": 1.2051850793512904e-07,
+            "P_prime": 6.154546148338737e-07,
+            "bare_delta": -9.65609535402854e-06,
+            "hamiltonian_residual": -5.082197683525802e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -3.441469305822188e-07
+          },
+          {
+            "J": 7.604674136178225e-06,
+            "J_prime": -1.1583197675492624e-05,
+            "J_second": -5.082823678043926e-06,
+            "P": 2.2290048780509765e-07,
+            "P_prime": 8.046190199320696e-07,
+            "bare_delta": 2.3928249575457755e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 7.309384776646406e-06
+          },
+          {
+            "J": 2.148803051071076e-06,
+            "J_prime": 1.0296887021249748e-05,
+            "J_second": 3.6837350038375657e-06,
+            "P": 1.7324520274967595e-06,
+            "P_prime": 3.6612261981088375e-06,
+            "bare_delta": -6.598208030796387e-05,
+            "hamiltonian_residual": 1.2705494208814505e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0545491077343046e-05
+          },
+          {
+            "J": 3.805477235075187e-06,
+            "J_prime": 1.8597426974796924e-05,
+            "J_second": 9.26562275929105e-06,
+            "P": 9.833400463591401e-06,
+            "P_prime": -3.6325394272246175e-07,
+            "bare_delta": -0.00014628831486492846,
+            "hamiltonian_residual": 6.352747104407253e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.3350293431893036e-05
+          },
+          {
+            "J": 4.2631135582755205e-06,
+            "J_prime": 2.0807775745015797e-05,
+            "J_second": 9.881256517378227e-06,
+            "P": 9.851870445611144e-06,
+            "P_prime": -2.2003190756566364e-07,
+            "bare_delta": -0.0001701903184016958,
+            "hamiltonian_residual": 3.8116482626443515e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.3404370655022284e-05
+          }
+        ],
+        "relative_recovery_error": 7.772702573483169e-16,
+        "singular_values_in_declared_reference_units": [
+          4.221203018515518,
+          1.233043595977649,
+          0.6354553218452788,
+          0.1503872325927889,
+          0.1281138917918665
+        ],
+        "t_E": 1.26,
+        "tau": 0.7938000000000001,
+        "truth": [
+          1.8896447467876039,
+          3.5707572690619873,
+          6.298815822625346,
+          2.0,
+          3.5707572690619873
+        ]
+      },
+      {
+        "coefficients": [
+          1.8310546874999996,
+          3.352761268615723,
+          6.103515624999997,
+          1.9999999999999944,
+          3.3527612686157346
+        ],
+        "modes": [
+          {
+            "J": 2.0852877117510164e-06,
+            "J_prime": 4.064997789518462e-06,
+            "J_second": -1.0822956691259869e-05,
+            "P": 1.363107326930439e-07,
+            "P_prime": 6.27507510135613e-07,
+            "bare_delta": -9.612341911333448e-06,
+            "hamiltonian_residual": -2.541098841762901e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -3.990329144892588e-07
+          },
+          {
+            "J": 7.3090820225163185e-06,
+            "J_prime": -1.1681957557272102e-05,
+            "J_second": -2.7632285805037e-06,
+            "P": 2.427442784308474e-07,
+            "P_prime": 7.572988038438255e-07,
+            "bare_delta": 2.4128634639683298e-05,
+            "hamiltonian_residual": -1.1858461261560205e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 7.114058539367099e-06
+          },
+          {
+            "J": 2.411298532358429e-06,
+            "J_prime": 1.0363260118725513e-05,
+            "J_second": 1.6065796345882123e-06,
+            "P": 1.822959229598566e-06,
+            "P_prime": 3.4693188139643728e-06,
+            "bare_delta": -6.631391150818264e-05,
+            "hamiltonian_residual": 9.740878893424454e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0648564844850644e-05
+          },
+          {
+            "J": 4.280409280440821e-06,
+            "J_prime": 1.8782524214950874e-05,
+            "J_second": 5.41975590474135e-06,
+            "P": 9.82528324798013e-06,
+            "P_prime": -2.7563995798496983e-07,
+            "bare_delta": -0.0001472315002936602,
+            "hamiltonian_residual": 5.421010862427522e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.3702634825636728e-05
+          },
+          {
+            "J": 4.794328110002411e-06,
+            "J_prime": 2.1001645514567554e-05,
+            "J_second": 5.5099585575260965e-06,
+            "P": 9.847551279581928e-06,
+            "P_prime": -1.1992861081019925e-07,
+            "bare_delta": -0.00017135476276908306,
+            "hamiltonian_residual": 3.8116482626443515e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.3769567030900467e-05
+          }
+        ],
+        "relative_recovery_error": 2.7546671930769393e-15,
+        "singular_values_in_declared_reference_units": [
+          4.168974118824586,
+          1.2054517681251036,
+          0.6107122117646957,
+          0.14027959305868867,
+          0.1231036192736625
+        ],
+        "t_E": 1.28,
+        "tau": 0.8192,
+        "truth": [
+          1.8310546875,
+          3.3527612686157227,
+          6.103515625,
+          2.0,
+          3.3527612686157227
+        ]
+      },
+      {
+        "coefficients": [
+          1.7751479289940821,
+          3.1511501698119826,
+          5.917159763313608,
+          1.9999999999999964,
+          3.1511501698119893
+        ],
+        "modes": [
+          {
+            "J": 2.1866515210647882e-06,
+            "J_prime": 3.796033162206852e-06,
+            "J_second": -1.0038807244423207e-05,
+            "P": 1.526260628861756e-07,
+            "P_prime": 6.367857562421048e-07,
+            "bare_delta": -9.567383010498171e-06,
+            "hamiltonian_residual": -2.541098841762901e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -4.5788261876193207e-07
+          },
+          {
+            "J": 7.006995824437596e-06,
+            "J_prime": -1.1727136127653291e-05,
+            "J_second": -7.991201805694336e-07,
+            "P": 2.616299027766625e-07,
+            "P_prime": 7.063205927686636e-07,
+            "bare_delta": 2.4316091768945062e-05,
+            "hamiltonian_residual": -1.3552527156068805e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.9228693819012575e-06
+          },
+          {
+            "J": 2.679001997104326e-06,
+            "J_prime": 1.0381427211910958e-05,
+            "J_second": -1.430769090864011e-07,
+            "P": 1.910200158724105e-06,
+            "P_prime": 3.2970541768483555e-06,
+            "bare_delta": -6.663093909312838e-05,
+            "hamiltonian_residual": 7.623296525288703e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0762396030374346e-05
+          },
+          {
+            "J": 4.766422121794133e-06,
+            "J_prime": 1.8878790267422632e-05,
+            "J_second": 2.1391425126468245e-06,
+            "P": 9.819330286848254e-06,
+            "P_prime": -1.858021128339239e-07,
+            "bare_delta": -0.0001481395716132474,
+            "hamiltonian_residual": 3.9810548520952116e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.407274415478508e-05
+          },
+          {
+            "J": 5.337572388799146e-06,
+            "J_prime": 2.109428970557687e-05,
+            "J_second": 1.7815093257035969e-06,
+            "P": 9.845770912953455e-06,
+            "P_prime": -1.8190314231412528e-08,
+            "bare_delta": -0.00017247631873282198,
+            "hamiltonian_residual": 4.1504614415460717e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.415430163575945e-05
+          }
+        ],
+        "relative_recovery_error": 2.0326161767193695e-15,
+        "singular_values_in_declared_reference_units": [
+          4.118372389009247,
+          1.1785897614670908,
+          0.5864520572237097,
+          0.13354065491367934,
+          0.11635923080538667
+        ],
+        "t_E": 1.3,
+        "tau": 0.8450000000000001,
+        "truth": [
+          1.7751479289940826,
+          3.151150169811981,
+          5.917159763313609,
+          2.0,
+          3.151150169811981
+        ]
+      },
+      {
+        "coefficients": [
+          1.7217630853994492,
+          2.9644681222442313,
+          5.739210284664833,
+          1.9999999999999964,
+          2.9644681222442375
+        ],
+        "modes": [
+          {
+            "J": 2.282747193627382e-06,
+            "J_prime": 3.5426908282544755e-06,
+            "J_second": -9.311257304838973e-06,
+            "P": 1.6940423890944862e-07,
+            "P_prime": 6.435832722531629e-07,
+            "bare_delta": -9.521396745705439e-06,
+            "hamiltonian_residual": -1.6940658945086007e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -5.206644407816616e-07
+          },
+          {
+            "J": 6.6996690380272526e-06,
+            "J_prime": -1.172569515920235e-05,
+            "J_second": 8.572433846563157e-07,
+            "P": 2.794366599684192e-07,
+            "P_prime": 6.527596308760233e-07,
+            "bare_delta": 2.4491049096702628e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.736221125655141e-06
+          },
+          {
+            "J": 2.95077028615146e-06,
+            "J_prime": 1.0357843141982545e-05,
+            "J_second": -1.6097139385057765e-06,
+            "P": 1.9945119433710326e-06,
+            "P_prime": 3.1420488080828955e-06,
+            "bare_delta": -6.693383175459069e-05,
+            "hamiltonian_residual": 2.498747194400186e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.0887307996065113e-05
+          },
+          {
+            "J": 5.261447287671109e-06,
+            "J_prime": 1.889722613551627e-05,
+            "J_second": -6.479822385436771e-07,
+            "P": 9.815654093871605e-06,
+            "P_prime": -9.498227192212774e-08,
+            "bare_delta": -0.0001490141527999296,
+            "hamiltonian_residual": 5.421010862427522e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.4461321301276805e-05
+          },
+          {
+            "J": 5.890475506149674e-06,
+            "J_prime": 2.109823680193433e-05,
+            "J_second": -1.3846097149771445e-06,
+            "P": 9.846635462341493e-06,
+            "P_prime": 8.388832093215829e-08,
+            "bare_delta": -0.0001735571507888666,
+            "hamiltonian_residual": 1.5246593050577406e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.455935353506716e-05
+          }
+        ],
+        "relative_recovery_error": 1.9042949355782405e-15,
+        "singular_values_in_declared_reference_units": [
+          4.068946397003954,
+          1.1526889617527496,
+          0.5627863959827442,
+          0.12905011794227866,
+          0.10872399586318962
+        ],
+        "t_E": 1.32,
+        "tau": 0.8712000000000001,
+        "truth": [
+          1.7217630853994488,
+          2.96446812224423,
+          5.739210284664829,
+          2.0,
+          2.96446812224423
+        ]
+      },
+      {
+        "coefficients": [
+          1.670750723991979,
+          2.791407981719726,
+          5.569169079973266,
+          1.9999999999999911,
+          2.7914079817197393
+        ],
+        "modes": [
+          {
+            "J": 2.3737700178549523e-06,
+            "J_prime": 3.30412180982489e-06,
+            "J_second": -8.636428151899436e-06,
+            "P": 1.8658928947838305e-07,
+            "P_prime": 6.481659594550521e-07,
+            "bare_delta": -9.474546893145297e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -5.873446289735695e-07
+          },
+          {
+            "J": 6.388240700543917e-06,
+            "J_prime": -1.1683810469113256e-05,
+            "J_second": 2.2472552856969387e-06,
+            "P": 2.9606632179218865e-07,
+            "P_prime": 5.975155600612788e-07,
+            "bare_delta": 2.4653940945421727e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.554496955019719e-06
+          },
+          {
+            "J": 3.225568029086152e-06,
+            "J_prime": 1.0298226310528437e-05,
+            "J_second": -2.8318778733427778e-06,
+            "P": 2.076194555351788e-06,
+            "P_prime": 3.0022221719224255e-06,
+            "bare_delta": -6.722324000530571e-05,
+            "hamiltonian_residual": 2.0752307207730358e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.1023605455845563e-05
+          },
+          {
+            "J": 5.7635934004336105e-06,
+            "J_prime": 1.884767886734892e-05,
+            "J_second": -3.004526331412969e-06,
+            "P": 9.814339023810821e-06,
+            "P_prime": -4.204971086554747e-09,
+            "bare_delta": -0.00014985681000638718,
+            "hamiltonian_residual": 6.776263578034403e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.4869030830517503e-05
+          },
+          {
+            "J": 6.450868551221349e-06,
+            "J_prime": 2.102472736717292e-05,
+            "J_second": -4.059235792710538e-06,
+            "P": 9.85022094675686e-06,
+            "P_prime": 1.8524497939268537e-07,
+            "bare_delta": -0.00017459933286939096,
+            "hamiltonian_residual": 3.218725199566341e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.4985459971623224e-05
+          }
+        ],
+        "relative_recovery_error": 3.5139126044301125e-15,
+        "singular_values_in_declared_reference_units": [
+          4.020537227254665,
+          1.1278034593734418,
+          0.5398220057573057,
+          0.12558557863598632,
+          0.10120098897185466
+        ],
+        "t_E": 1.34,
+        "tau": 0.8978000000000002,
+        "truth": [
+          1.67075072399198,
+          2.791407981719726,
+          5.569169079973267,
+          2.0,
+          2.791407981719726
+        ]
+      },
+      {
+        "coefficients": [
+          1.6219723183391006,
+          2.6307942014583174,
+          5.406574394463672,
+          1.9999999999999956,
+          2.630794201458325
+        ],
+        "modes": [
+          {
+            "J": 2.4599110850281366e-06,
+            "J_prime": 3.079513564073495e-06,
+            "J_second": -8.010643278179986e-06,
+            "P": 2.0412925856081755e-07,
+            "P_prime": 6.507743145123893e-07,
+            "bare_delta": -9.426983960712475e-06,
+            "hamiltonian_residual": -1.6940658945086007e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -6.578875095142642e-07
+          },
+          {
+            "J": 6.073744895540366e-06,
+            "J_prime": -1.1606960117602786e-05,
+            "J_second": 3.4068269783161736e-06,
+            "P": 3.1144032702486e-07,
+            "P_prime": 5.41338293334669e-07,
+            "bare_delta": 2.4805204437264305e-05,
+            "hamiltonian_residual": -1.0164395367051604e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.378060071305307e-06
+          },
+          {
+            "J": 3.5024586287646647e-06,
+            "J_prime": 1.0207641345034896e-05,
+            "J_second": -3.842990653069189e-06,
+            "P": 2.155514866549981e-06,
+            "P_prime": 2.8757565064562374e-06,
+            "bare_delta": -6.74997951123458e-05,
+            "hamiltonian_residual": 2.710505431213761e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.117157508225449e-05
+          },
+          {
+            "J": 6.271133283769662e-06,
+            "J_prime": 1.8738957926234252e-05,
+            "J_second": -4.98563839270039e-06,
+            "P": 9.815444885324669e-06,
+            "P_prime": 8.569041563996222e-08,
+            "bare_delta": -0.0001506690514786504,
+            "hamiltonian_residual": 4.489274620447792e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.529650287697883e-05
+          },
+          {
+            "J": 7.016770527660585e-06,
+            "J_prime": 2.0883838622887533e-05,
+            "J_second": -6.304675624750312e-06,
+            "P": 9.856577202140773e-06,
+            "P_prime": 2.8501524019898465e-07,
+            "bare_delta": -0.00017560485002331548,
+            "hamiltonian_residual": 1.8634724839594607e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.5433317383454067e-05
+          }
+        ],
+        "relative_recovery_error": 2.813172892710071e-15,
+        "singular_values_in_declared_reference_units": [
+          3.973189903443642,
+          1.1038712036865754,
+          0.5176529475219968,
+          0.12256313300709815,
+          0.09419881592771594
+        ],
+        "t_E": 1.36,
+        "tau": 0.9248000000000002,
+        "truth": [
+          1.6219723183391,
+          2.6307942014583148,
+          5.406574394463667,
+          2.0,
+          2.6307942014583148
+        ]
+      },
+      {
+        "coefficients": [
+          1.5752993068683043,
+          2.481567906219763,
+          5.250997689561017,
+          1.9999999999999927,
+          2.4815679062197717
+        ],
+        "modes": [
+          {
+            "J": 2.541356965306704e-06,
+            "J_prime": 2.868090401633243e-06,
+            "J_second": -7.430433732094047e-06,
+            "P": 2.219759472252216e-07,
+            "P_prime": 6.516258054055589e-07,
+            "bare_delta": -9.37884616371957e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -7.322556959734213e-07
+          },
+          {
+            "J": 5.757119466481609e-06,
+            "J_prime": -1.150000239561183e-05,
+            "J_second": 4.367132048518062e-06,
+            "P": 3.254973064888613e-07,
+            "P_prime": 4.848500919455412e-07,
+            "bare_delta": 2.4945276646160125e-05,
+            "hamiltonian_residual": -8.470329472543003e-21,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.207254346695775e-06
+          },
+          {
+            "J": 3.7805959890528515e-06,
+            "J_prime": 1.009057225955064e-05,
+            "J_second": -4.6720440240486755e-06,
+            "P": 2.232710248738093e-06,
+            "P_prime": 2.7610622567295414e-06,
+            "bare_delta": -6.776410833939603e-05,
+            "hamiltonian_residual": 1.9481757786848908e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.1331486117624313e-05
+          },
+          {
+            "J": 6.782491907933562e-06,
+            "J_prime": 1.8578940008451964e-05,
+            "J_second": -6.63966792061628e-06,
+            "P": 9.819010139244848e-06,
+            "P_prime": 1.7402213333507464e-07,
+            "bare_delta": -0.0001514523278507518,
+            "hamiltonian_residual": 3.9810548520952116e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.5744334069842074e-05
+          },
+          {
+            "J": 7.58637509503913e-06,
+            "J_prime": 2.0684597570612727e-05,
+            "J_second": -8.17572141688424e-06,
+            "P": 9.865731350499041e-06,
+            "P_prime": 3.825030378324747e-07,
+            "bare_delta": -0.00017657560039237123,
+            "hamiltonian_residual": -3.3881317890172014e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.590358248204144e-05
+          }
+        ],
+        "relative_recovery_error": 2.933750569191602e-15,
+        "singular_values_in_declared_reference_units": [
+          3.9270851136735683,
+          1.0807604367193604,
+          0.4963555891600703,
+          0.11975290607181342,
+          0.0878059922366505
+        ],
+        "t_E": 1.3800000000000001,
+        "tau": 0.9522000000000002,
+        "truth": [
+          1.5752993068683048,
+          2.4815679062197615,
+          5.250997689561015,
+          2.0,
+          2.4815679062197615
+        ]
+      },
+      {
+        "coefficients": [
+          1.5306122448979584,
+          2.3427738442315698,
+          5.102040816326525,
+          1.9999999999999925,
+          2.3427738442315804
+        ],
+        "modes": [
+          {
+            "J": 2.6182894616696877e-06,
+            "J_prime": 2.669113416729563e-06,
+            "J_second": -6.892538618650063e-06,
+            "P": 2.400846700656296e-07,
+            "P_prime": 6.509170295376884e-07,
+            "bare_delta": -9.330260331273188e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -8.104102831286489e-07
+          },
+          {
+            "J": 5.439214005998468e-06,
+            "J_prime": -1.1367244834401743e-05,
+            "J_second": 5.155245179392414e-06,
+            "P": 3.3819089893627953e-07,
+            "P_prime": 4.285644201368975e-07,
+            "bare_delta": 2.5074592216187952e-05,
+            "hamiltonian_residual": -1.2705494208814505e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 6.042404975130972e-06
+          },
+          {
+            "J": 4.059216924427962e-06,
+            "J_prime": 9.950987243506447e-06,
+            "J_second": -5.34419646883807e-06,
+            "P": 2.3079917708585574e-06,
+            "P_prime": 2.656748284050343e-06,
+            "bare_delta": -6.801677044829291e-05,
+            "hamiltonian_residual": 1.5246593050577406e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.1503590985902343e-05
+          },
+          {
+            "J": 7.2962351323928646e-06,
+            "J_prime": 1.8374663414614484e-05,
+            "J_second": -8.009005397054103e-06,
+            "P": 9.825054729690388e-06,
+            "P_prime": 2.602424520908507e-07,
+            "bare_delta": -0.0001522080327504222,
+            "hamiltonian_residual": 5.505714157152952e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.6213088488800737e-05
+          },
+          {
+            "J": 8.158038094668232e-06,
+            "J_prime": 2.0435083594331534e-05,
+            "J_second": -9.720547123138843e-06,
+            "P": 9.877690873448994e-06,
+            "P_prime": 4.771553283797732e-07,
+            "bare_delta": -0.00017751339741903441,
+            "hamiltonian_residual": 1.8634724839594607e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.63968733773778e-05
+          }
+        ],
+        "relative_recovery_error": 3.3212627487229026e-15,
+        "singular_values_in_declared_reference_units": [
+          3.8824872489018345,
+          1.058303576429572,
+          0.47598637265306964,
+          0.11705938024631209,
+          0.0820030889571321
+        ],
+        "t_E": 1.4000000000000001,
+        "tau": 0.9800000000000002,
+        "truth": [
+          1.5306122448979589,
+          2.3427738442315693,
+          5.10204081632653,
+          2.0,
+          2.3427738442315693
+        ]
+      },
+      {
+        "coefficients": [
+          1.4878000396746676,
+          2.213548958055944,
+          4.95933346558223,
+          2.000000000000001,
+          2.2135489580559446
+        ],
+        "modes": [
+          {
+            "J": 2.6908854300224496e-06,
+            "J_prime": 2.481880039666774e-06,
+            "J_second": -6.393902053738472e-06,
+            "P": 2.5841402576050995e-07,
+            "P_prime": 6.488256724477106e-07,
+            "bare_delta": -9.281342747804132e-06,
+            "hamiltonian_residual": -3.3881317890172014e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -8.923110261022659e-07
+          },
+          {
+            "J": 5.120797182225965e-06,
+            "J_prime": -1.121250531443247e-05,
+            "J_second": 5.794691670541952e-06,
+            "P": 3.494878229292096e-07,
+            "P_prime": 3.7290206081968254e-07,
+            "bare_delta": 2.5193581381489863e-05,
+            "hamiltonian_residual": -1.3552527156068805e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.883819117517961e-06
+          },
+          {
+            "J": 4.337634195023694e-06,
+            "J_prime": 9.792396071552058e-06,
+            "J_second": -5.881286980577894e-06,
+            "P": 2.3815470412513526e-06,
+            "P_prime": 2.5615961544516435e-06,
+            "bare_delta": -6.825835141741285e-05,
+            "hamiltonian_residual": 9.317362419797304e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.168812590199329e-05
+          },
+          {
+            "J": 7.811059204634095e-06,
+            "J_prime": 1.8132412987120784e-05,
+            "J_second": -9.130817352549379e-06,
+            "P": 9.83358258980694e-06,
+            "P_prime": 3.439174480289788e-07,
+            "bare_delta": -0.00015293750365868628,
+            "hamiltonian_residual": 5.251604272976662e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.670329864143612e-05
+          },
+          {
+            "J": 8.73026583450758e-06,
+            "J_prime": 2.014252143272088e-05,
+            "J_second": -1.0981498577245868e-05,
+            "P": 9.892446334302315e-06,
+            "P_prime": 5.685403581962463e-07,
+            "bare_delta": -0.00017841997223205945,
+            "hamiltonian_residual": 2.710505431213761e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.69137707380681e-05
+          }
+        ],
+        "relative_recovery_error": 8.94239355622316e-16,
+        "singular_values_in_declared_reference_units": [
+          3.8397051935901567,
+          1.0363211346440222,
+          0.45658175543162344,
+          0.1144392567054879,
+          0.07673920401927908
+        ],
+        "t_E": 1.4200000000000002,
+        "tau": 1.0082000000000002,
+        "truth": [
+          1.4878000396746673,
+          2.213548958055942,
+          4.959333465582224,
+          2.0,
+          2.213548958055942
+        ]
+      },
+      {
+        "coefficients": [
+          1.4467592592592589,
+          2.0931123542524013,
+          4.822530864197527,
+          1.999999999999993,
+          2.0931123542524093
+        ],
+        "modes": [
+          {
+            "J": 2.7593166553607725e-06,
+            "J_prime": 2.3057233013965537e-06,
+            "J_second": -5.931667575627059e-06,
+            "P": 2.7692568125055937e-07,
+            "P_prime": 6.455122844529295e-07,
+            "bare_delta": -9.232199934057827e-06,
+            "hamiltonian_residual": -1.6940658945086007e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -9.779165058843236e-07
+          },
+          {
+            "J": 4.802563458437976e-06,
+            "J_prime": -1.103916621598777e-05,
+            "J_second": 6.305920571716387e-06,
+            "P": 3.593661742626105e-07,
+            "P_prime": 3.1820489986815807e-07,
+            "bare_delta": 2.530266833178505e-05,
+            "hamiltonian_residual": -1.4399560103323106e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.731786539098672e-06
+          },
+          {
+            "J": 4.6152301152830635e-06,
+            "J_prime": 9.617901005036774e-06,
+            "J_second": -6.302277728738062e-06,
+            "P": 2.4535427363355296e-06,
+            "P_prime": 2.474537916948223e-06,
+            "bare_delta": -6.848940034067198e-05,
+            "hamiltonian_residual": 1.2705494208814505e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.1885311475993826e-05
+          },
+          {
+            "J": 8.325780973735313e-06,
+            "J_prime": 1.785779653703539e-05,
+            "J_second": -1.003768960287127e-05,
+            "P": 9.844583859014935e-06,
+            "P_prime": 4.2470967203188976e-07,
+            "bare_delta": -0.00015364202297447215,
+            "hamiltonian_residual": 4.404571325722362e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.7215466454726708e-05
+          },
+          {
+            "J": 9.301704104369936e-06,
+            "J_prime": 1.9813365356803362e-05,
+            "J_second": -1.1995789727505024e-05,
+            "P": 9.909973787789648e-06,
+            "P_prime": 6.563290213087493e-07,
+            "bare_delta": -0.00017929697616348724,
+            "hamiltonian_residual": 8.470329472543003e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.7454818976226847e-05
+          }
+        ],
+        "relative_recovery_error": 2.727897994248762e-15,
+        "singular_values_in_declared_reference_units": [
+          3.799062953068585,
+          1.0146380991516646,
+          0.4381596498176694,
+          0.11187160242049503,
+          0.07195750688652094
+        ],
+        "t_E": 1.44,
+        "tau": 1.0368,
+        "truth": [
+          1.4467592592592593,
+          2.093112354252401,
+          4.822530864197531,
+          2.0,
+          2.093112354252401
+        ]
+      },
+      {
+        "coefficients": [
+          1.4073935072246193,
+          1.980756484178017,
+          4.691311690748731,
+          1.9999999999999987,
+          1.9807564841780188
+        ],
+        "modes": [
+          {
+            "J": 2.823749775298265e-06,
+            "J_prime": 2.1400108826974047e-06,
+            "J_second": -5.503170788485799e-06,
+            "P": 2.955841689720419e-07,
+            "P_prime": 6.411218913713078e-07,
+            "bare_delta": -9.182929371648024e-06,
+            "hamiltonian_residual": -4.235164736271502e-22,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.0671842822280567e-06
+          },
+          {
+            "J": 4.485139257376501e-06,
+            "J_prime": -1.0850222436647483e-05,
+            "J_second": 6.706712501896672e-06,
+            "P": 3.6781392227120946e-07,
+            "P_prime": 2.647477235501245e-07,
+            "bare_delta": 2.540226987515325e-05,
+            "hamiltonian_residual": -1.6940658945086007e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.586580237172229e-06
+          },
+          {
+            "J": 4.891450688630676e-06,
+            "J_prime": 9.430241949075507e-06,
+            "J_second": -6.623635846068181e-06,
+            "P": 2.5241268520818307e-06,
+            "P_prime": 2.394636872294398e-06,
+            "bare_delta": -6.871044547618458e-05,
+            "hamiltonian_residual": 1.9481757786848908e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.2095353310118918e-05
+          },
+          {
+            "J": 8.839328777756943e-06,
+            "J_prime": 1.7555813599926783e-05,
+            "J_second": -1.075819023570235e-05,
+            "P": 9.858036844350724e-06,
+            "P_prime": 5.023632914110577e-07,
+            "bare_delta": -0.0001543228192424804,
+            "hamiltonian_residual": 4.573977915173222e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.7750064274263524e-05
+          },
+          {
+            "J": 9.871127890264528e-06,
+            "J_prime": 1.9453375332676538e-05,
+            "J_second": -1.2796115915530923e-05,
+            "P": 9.930236912106217e-06,
+            "P_prime": 7.402788670377114e-07,
+            "bare_delta": -0.00018014598335806305,
+            "hamiltonian_residual": 3.3881317890172014e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.8020527448273394e-05
+          }
+        ],
+        "relative_recovery_error": 6.704343192518015e-16,
+        "singular_values_in_declared_reference_units": [
+          3.760877851389896,
+          0.9930947975992988,
+          0.4207217350554997,
+          0.10934597772219994,
+          0.06760380595975732
+        ],
+        "t_E": 1.46,
+        "tau": 1.0657999999999999,
+        "truth": [
+          1.4073935072246202,
+          1.9807564841780168,
+          4.6913116907487336,
+          2.0,
+          1.9807564841780168
+        ]
+      },
+      {
+        "coefficients": [
+          1.3696128560993421,
+          1.8758393755925977,
+          4.565376186997804,
+          1.9999999999999978,
+          1.8758393755926008
+        ],
+        "modes": [
+          {
+            "J": 2.884346243480887e-06,
+            "J_prime": 1.9841440064536416e-06,
+            "J_second": -5.105930833274581e-06,
+            "P": 3.1435669655269863e-07,
+            "P_prime": 6.357854542869023e-07,
+            "bare_delta": -9.133620175063353e-06,
+            "hamiltonian_residual": -1.6940658945086007e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.1600710348315184e-06
+          },
+          {
+            "J": 4.169088617258262e-06,
+            "J_prime": -1.064832399854402e-05,
+            "J_second": 7.0125315506008366e-06,
+            "P": 3.748275816560218e-07,
+            "P_prime": 2.1274832068108732e-07,
+            "bare_delta": 2.549279435630405e-05,
+            "hamiltonian_residual": -1.3129010682441655e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.448457057691541e-06
+          },
+          {
+            "J": 5.165800224501786e-06,
+            "J_prime": 9.231836535983627e-06,
+            "J_second": -6.859663034819532e-06,
+            "P": 2.5934307101323644e-06,
+            "P_prime": 2.3210709084555576e-06,
+            "bare_delta": -6.89219944181573e-05,
+            "hamiltonian_residual": 1.6940658945086007e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.2318442586492468e-05
+          },
+          {
+            "J": 9.350733964884695e-06,
+            "J_prime": 1.7230917282141987e-05,
+            "J_second": -1.1317362476576937e-05,
+            "P": 9.873909754708797e-06,
+            "P_prime": 5.766913510826898e-07,
+            "bare_delta": -0.000154981068508718,
+            "hamiltonian_residual": 2.541098841762901e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.8307535865635666e-05
+          },
+          {
+            "J": 1.0437431755290672e-05,
+            "J_prime": 1.906768589244886e-05,
+            "J_second": -1.3411193948026155e-05,
+            "P": 9.953188894049224e-06,
+            "P_prime": 8.202203831207936e-07,
+            "bare_delta": -0.00018096849344210377,
+            "hamiltonian_residual": 2.0328790734103208e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.8611371663926402e-05
+          }
+        ],
+        "relative_recovery_error": 9.575400366736879e-16,
+        "singular_values_in_declared_reference_units": [
+          3.725444596545075,
+          0.9715537850621307,
+          0.40425614576762303,
+          0.10685723168779575,
+          0.0636291955373555
+        ],
+        "t_E": 1.48,
+        "tau": 1.0952,
+        "truth": [
+          1.3696128560993426,
+          1.8758393755925986,
+          4.565376186997809,
+          2.0,
+          1.8758393755925986
+        ]
+      },
+      {
+        "coefficients": [
+          1.333333333333333,
+          1.7777777777777775,
+          4.44444444444444,
+          1.9999999999999991,
+          1.7777777777777786
+        ],
+        "modes": [
+          {
+            "J": 2.9412623264600236e-06,
+            "J_prime": 1.837556220047384e-06,
+            "J_second": -4.737641140637072e-06,
+            "P": 3.3321296836229597e-07,
+            "P_prime": 6.296211921537621e-07,
+            "bare_delta": -9.084353714798425e-06,
+            "hamiltonian_residual": -8.470329472543003e-22,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.2565326936521197e-06
+          },
+          {
+            "J": 3.854918382395595e-06,
+            "J_prime": -1.043581387934684e-05,
+            "J_second": 7.236829247565575e-06,
+            "P": 3.80411039329255e-07,
+            "P_prime": 1.6237613667914714e-07,
+            "bare_delta": 2.557464079418983e-05,
+            "hamiltonian_residual": -1.3129010682441655e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.317658299532077e-06
+          },
+          {
+            "J": 5.437836397687298e-06,
+            "J_prime": 9.02481572447221e-06,
+            "J_second": -7.022780396949914e-06,
+            "P": 2.6615707465329998e-06,
+            "P_prime": 2.2531180424391583e-06,
+            "bare_delta": -6.912453436947952e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.2554756644298555e-05
+          },
+          {
+            "J": 9.85912300946279e-06,
+            "J_prime": 1.6887069886811025e-05,
+            "J_second": -1.1737156287111253e-05,
+            "P": 9.892162233473847e-06,
+            "P_prime": 6.475648527304226e-07,
+            "bare_delta": -0.00015561789577342002,
+            "hamiltonian_residual": 3.7269449679189215e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.8888297413236568e-05
+          },
+          {
+            "J": 1.0999620853791474e-05,
+            "J_prime": 1.866086838085019e-05,
+            "J_second": -1.3866237623020164e-05,
+            "P": 9.978774094564573e-06,
+            "P_prime": 8.960452338023528e-07,
+            "bare_delta": -0.00018176593422413037,
+            "hamiltonian_residual": 1.6940658945086007e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.9227794496758584e-05
+          }
+        ],
+        "relative_recovery_error": 8.156740589082783e-16,
+        "singular_values_in_declared_reference_units": [
+          3.693023959230614,
+          0.9499038626869188,
+          0.38874018871890353,
+          0.10440302232668515,
+          0.05999053953458773
+        ],
+        "t_E": 1.5,
+        "tau": 1.125,
+        "truth": [
+          1.3333333333333333,
+          1.7777777777777777,
+          4.444444444444445,
+          2.0,
+          1.7777777777777777
+        ]
+      },
+      {
+        "coefficients": [
+          1.2984764542936282,
+          1.6860411023549546,
+          4.328254847645426,
+          1.9999999999999873,
+          1.6860411023549648
+        ],
+        "modes": [
+          {
+            "J": 2.994649128497565e-06,
+            "J_prime": 1.6997121055000313e-06,
+            "J_second": -4.3961598102710675e-06,
+            "P": 3.5212501830620887e-07,
+            "P_prime": 6.227357799059371e-07,
+            "bare_delta": -9.035204195063663e-06,
+            "hamiltonian_residual": -1.2705494208814505e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.356524559138679e-06
+          },
+          {
+            "J": 3.543082967666063e-06,
+            "J_prime": -1.0214761623339505e-05,
+            "J_second": 7.391307397005824e-06,
+            "P": 3.8457451826861e-07,
+            "P_prime": 1.1375968936052812e-07,
+            "bare_delta": 2.5648198207686882e-05,
+            "hamiltonian_residual": -1.4823076576950256e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.194410305471674e-06
+          },
+          {
+            "J": 5.707165713289346e-06,
+            "J_prime": 8.811055432842604e-06,
+            "J_second": -7.123774799621712e-06,
+            "P": 2.7286501076612572e-06,
+            "P_prime": 2.1901438615294686e-06,
+            "bare_delta": -6.931853249580082e-05,
+            "hamiltonian_residual": 6.776263578034403e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.280445954507048e-05
+          },
+          {
+            "J": 1.0363710185487748e-05,
+            "J_prime": 1.6527792942507817e-05,
+            "J_second": -1.2036806427855257e-05,
+            "P": 9.9127467121108e-06,
+            "P_prime": 7.149033944217907e-07,
+            "bare_delta": -0.0001562343765156677,
+            "hamiltonian_residual": 4.404571325722362e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -2.94927385124338e-05
+          },
+          {
+            "J": 1.1556802545345203e-05,
+            "J_prime": 1.8236987191182075e-05,
+            "J_second": -1.4183376387011198e-05,
+            "P": 1.0006929518967219e-05,
+            "P_prime": 9.67696178425512e-07,
+            "bare_delta": -0.0001825396644041308,
+            "hamiltonian_residual": -5.082197683525802e-21,
+            "k_com_squared": 5.0,
+            "matter_Z": -2.987020739060916e-05
+          }
+        ],
+        "relative_recovery_error": 4.218847493575595e-15,
+        "singular_values_in_declared_reference_units": [
+          3.6638351480540603,
+          0.9280619881651707,
+          0.37414287186157624,
+          0.10198255286036396,
+          0.0566501644902796
+        ],
+        "t_E": 1.52,
+        "tau": 1.1552,
+        "truth": [
+          1.298476454293629,
+          1.6860411023549544,
+          4.32825484764543,
+          2.0,
+          1.6860411023549544
+        ]
+      },
+      {
+        "coefficients": [
+          1.2649687974363295,
+          1.6001460584875167,
+          4.216562658121104,
+          1.9999999999999962,
+          1.6001460584875202
+        ],
+        "modes": [
+          {
+            "J": 3.0446526395537127e-06,
+            "J_prime": 1.5701059473394596e-06,
+            "J_second": -4.0794998750936795e-06,
+            "P": 3.7106705325540066e-07,
+            "P_prime": 6.152254336680907e-07,
+            "bare_delta": -8.9862391893141e-06,
+            "hamiltonian_residual": -2.117582368135751e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.4600014131081264e-06
+          },
+          {
+            "J": 3.2339887326794357e-06,
+            "J_prime": -9.98699322127215e-06,
+            "J_second": 7.486145567493541e-06,
+            "P": 3.8733366254434245e-07,
+            "P_prime": 6.699292487187057e-08,
+            "bare_delta": 2.5713845102272087e-05,
+            "hamiltonian_residual": -1.3976043629695956e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 5.0789250391283726e-06
+          },
+          {
+            "J": 5.9734393436498805e-06,
+            "J_prime": 8.592204662178611e-06,
+            "J_second": -7.172012161797406e-06,
+            "P": 2.7947600749863336e-06,
+            "P_prime": 2.1315906020107044e-06,
+            "bare_delta": -6.950443634474425e-05,
+            "hamiltonian_residual": 1.3552527156068805e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.3067702625138157e-05
+          },
+          {
+            "J": 1.086379076171951e-05,
+            "J_prime": 1.6156212196756625e-05,
+            "J_second": -1.2233163735958587e-05,
+            "P": 9.935609604708728e-06,
+            "P_prime": 7.786671504727083e-07,
+            "bare_delta": -0.00015683153826796903,
+            "hamiltonian_residual": 4.404571325722362e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -3.0121223151654952e-05
+          },
+          {
+            "J": 1.2108178575479929e-05,
+            "J_prime": 1.7799650552971316e-05,
+            "J_second": -1.4382023913148072e-05,
+            "P": 1.0037586113398117e-05,
+            "P_prime": 1.0351584352898944e-06,
+            "bare_delta": -0.00018329097627223977,
+            "hamiltonian_residual": 1.0164395367051604e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -3.053899155697903e-05
+          }
+        ],
+        "relative_recovery_error": 2.2203213197219458e-15,
+        "singular_values_in_declared_reference_units": [
+          3.638051201460633,
+          0.9059735903199937,
+          0.3604271317961119,
+          0.09959589246338764,
+          0.05357529283292008
+        ],
+        "t_E": 1.54,
+        "tau": 1.1858,
+        "truth": [
+          1.26496879743633,
+          1.6001460584875145,
+          4.2165626581210995,
+          2.0,
+          1.6001460584875145
+        ]
+      },
+      {
+        "coefficients": [
+          1.2327416173570014,
+          1.519651895163958,
+          4.109138724523338,
+          1.9999999999999958,
+          1.5196518951639626
+        ],
+        "modes": [
+          {
+            "J": 3.0914138023783417e-06,
+            "J_prime": 1.4482603819154856e-06,
+            "J_second": -3.7858196412849036e-06,
+            "P": 3.9001530651761947e-07,
+            "P_prime": 6.071768936509074e-07,
+            "bare_delta": -8.937520136629264e-06,
+            "hamiltonian_residual": -8.470329472543003e-22,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.566917620940828e-06
+          },
+          {
+            "J": 2.927997998396931e-06,
+            "J_prime": -9.754117688579095e-06,
+            "J_second": 7.530198178292786e-06,
+            "P": 3.887087295784514e-07,
+            "P_prime": 2.2140665629726435e-08,
+            "bare_delta": 2.5771949094254913e-05,
+            "hamiltonian_residual": -1.4399560103323106e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 4.971400647282822e-06
+          },
+          {
+            "J": 6.236349306432843e-06,
+            "J_prime": 8.369710511054862e-06,
+            "J_second": -7.175622263377063e-06,
+            "P": 2.8599813377282303e-06,
+            "P_prime": 2.0769676415261413e-06,
+            "bare_delta": -6.968267431635609e-05,
+            "hamiltonian_residual": 1.0164395367051604e-20,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.3344625034464854e-05
+          },
+          {
+            "J": 1.1358734684248807e-05,
+            "J_prime": 1.5775098081197485e-05,
+            "J_second": -1.2340985508558854e-05,
+            "P": 9.960692361207096e-06,
+            "P_prime": 8.38850003073685e-07,
+            "bare_delta": -0.00015741036222247768,
+            "hamiltonian_residual": 5.251604272976662e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -3.0774090681478535e-05
+          },
+          {
+            "J": 1.2653037790639564e-05,
+            "J_prime": 1.7352056385283608e-05,
+            "J_second": -1.4479202597150725e-05,
+            "P": 1.0070669906689187e-05,
+            "P_prime": 1.098452288975884e-06,
+            "bare_delta": -0.00018402109838099517,
+            "hamiltonian_residual": 2.541098841762901e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -3.123449915926375e-05
+          }
+        ],
+        "relative_recovery_error": 2.2912529064556146e-15,
+        "singular_values_in_declared_reference_units": [
+          3.615796872791849,
+          0.8836116402150036,
+          0.3475517168365767,
+          0.09724359536378475,
+          0.0507374275045187
+        ],
+        "t_E": 1.56,
+        "tau": 1.2168,
+        "truth": [
+          1.2327416173570018,
+          1.5196518951639568,
+          4.10913872452334,
+          2.0,
+          1.5196518951639568
+        ]
+      },
+      {
+        "coefficients": [
+          1.2017304919083474,
+          1.4441561751822798,
+          4.005768306361155,
+          1.9999999999999958,
+          1.4441561751822831
+        ],
+        "modes": [
+          {
+            "J": 3.1350685952048185e-06,
+            "J_prime": 1.3337250467852227e-06,
+            "J_second": -3.5134132429597727e-06,
+            "P": 4.089479007708854e-07,
+            "P_prime": 5.986683143723523e-07,
+            "bare_delta": -8.889102801776031e-06,
+            "hamiltonian_residual": -2.117582368135751e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.677227225719278e-06
+          },
+          {
+            "J": 2.625432736132201e-06,
+            "J_prime": -9.51755071991481e-06,
+            "J_second": 7.531165402895571e-06,
+            "P": 3.8872387735231254e-07,
+            "P_prime": -2.0756720275716717e-08,
+            "bare_delta": 2.582286665226676e-05,
+            "hamiltonian_residual": -1.6093625997831706e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 4.872022007166525e-06
+          },
+          {
+            "J": 6.495624955626943e-06,
+            "J_prime": 8.144840435561514e-06,
+            "J_second": -7.1416590127669465e-06,
+            "P": 2.924385130238367e-06,
+            "P_prime": 2.0258432134469912e-06,
+            "bare_delta": -6.985365617299834e-05,
+            "hamiltonian_residual": 0.0,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.3635354261286413e-05
+          },
+          {
+            "J": 1.1847980714092579e-05,
+            "J_prime": 1.5386902104892544e-05,
+            "J_second": -1.237319013197181e-05,
+            "P": 9.987932395032367e-06,
+            "P_prime": 8.954736641813023e-07,
+            "bare_delta": -0.0001579717848534627,
+            "hamiltonian_residual": 4.743384504624082e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -3.145165676829002e-05
+          },
+          {
+            "J": 1.3190749355821991e-05,
+            "J_prime": 1.6897033684354427e-05,
+            "J_second": -1.448982926025495e-05,
+            "P": 1.010610301468901e-05,
+            "P_prime": 1.1576267678732488e-06,
+            "bare_delta": -0.00018473119817822626,
+            "hamiltonian_residual": 1.3552527156068805e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -3.195705448032327e-05
+          }
+        ],
+        "relative_recovery_error": 1.4062824978585316e-15,
+        "singular_values_in_declared_reference_units": [
+          3.597148579229152,
+          0.8609747411008423,
+          0.33547272769691877,
+          0.09492647974493604,
+          0.04811177020660538
+        ],
+        "t_E": 1.58,
+        "tau": 1.2482000000000002,
+        "truth": [
+          1.2017304919083478,
+          1.4441561751822798,
+          4.005768306361159,
+          2.0,
+          1.4441561751822798
+        ]
+      },
+      {
+        "coefficients": [
+          1.1718749999999984,
+          1.373291015624999,
+          3.9062499999999933,
+          1.9999999999999976,
+          1.3732910156250009
+        ],
+        "modes": [
+          {
+            "J": 3.1757481270440645e-06,
+            "J_prime": 1.2260752446345998e-06,
+            "J_second": -3.260701509623823e-06,
+            "P": 4.2784471990003833e-07,
+            "P_prime": 5.897700709712211e-07,
+            "bare_delta": -8.841037701594668e-06,
+            "hamiltonian_residual": -2.541098841762901e-21,
+            "k_com_squared": 1.0,
+            "matter_Z": -1.7908840348893827e-06
+          },
+          {
+            "J": 2.3265779562843345e-06,
+            "J_prime": -9.278535752804064e-06,
+            "J_second": 7.495741499808457e-06,
+            "P": 3.8740653572889263e-07,
+            "P_prime": -6.167931772415555e-08,
+            "bare_delta": 2.586694293843011e-05,
+            "hamiltonian_residual": -1.4823076576950256e-20,
+            "k_com_squared": 2.0,
+            "matter_Z": 4.780961258430019e-06
+          },
+          {
+            "J": 6.751029759607878e-06,
+            "J_prime": 7.918702066620252e-06,
+            "J_second": -7.0762395433348864e-06,
+            "P": 2.988034248960725e-06,
+            "P_prime": 1.977837178958112e-06,
+            "bare_delta": -7.001777357869668e-05,
+            "hamiltonian_residual": 4.235164736271502e-21,
+            "k_com_squared": 3.0,
+            "matter_Z": -2.3940006642122512e-05
+          },
+          {
+            "J": 1.2331030989137052e-05,
+            "J_prime": 1.4993789586624814e-05,
+            "J_second": -1.2341080441347677e-05,
+            "P": 1.0017263899106485e-05,
+            "P_prime": 9.485826491731926e-07,
+            "bare_delta": -0.0001585166995431701,
+            "hamiltonian_residual": 4.0657581468206416e-20,
+            "k_com_squared": 4.0,
+            "matter_Z": -3.2154214330477226e-05
+          },
+          {
+            "J": 1.3720756444383888e-05,
+            "J_prime": 1.643707987208017e-05,
+            "J_second": -1.4426966719823398e-05,
+            "P": 1.0143804522223805e-05,
+            "P_prime": 1.2127542430337157e-06,
+            "bare_delta": -0.0001854223845901125,
+            "hamiltonian_residual": 3.218725199566341e-20,
+            "k_com_squared": 5.0,
+            "matter_Z": -3.2706955070454656e-05
+          }
+        ],
+        "relative_recovery_error": 1.1766949764180004e-15,
+        "singular_values_in_declared_reference_units": [
+          3.582136037155554,
+          0.8380844576366315,
+          0.32414484306122915,
+          0.09264549548765745,
+          0.04567670170196173
+        ],
+        "t_E": 1.6,
+        "tau": 1.2800000000000002,
+        "truth": [
+          1.1718749999999998,
+          1.3732910156249998,
+          3.906249999999999,
+          2.0,
+          1.3732910156249998
+        ]
+      }
+    ],
+    "rtol": 2e-12,
+    "states": "u,u_dot,P,U,bare_delta for each original-equation mode"
+  },
+  "passed": 40,
+  "runtime": {
+    "numpy": "2.4.1",
+    "python": "3.12.8",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": {
+    "MATTER_CLOCK_DERIVATION_v2.md": "c6a49fb8d656a2c87fcd6744202fe7fb505416f9656257262914576bc4511fe5",
+    "MODE_INVERSE_DERIVATION_v1.md": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+    "MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+    "SCALAR_RESPONSE_CLOSURE_v1.md": "0c3aad928348a53c79f87280ebb4b467043b1294212ce01d0992c097064db818",
+    "SCALAR_RESPONSE_DERIVATION_v1.md": "401c9c67b7aef92a7f959005b1905dc2d2f61db1c5c591d467ddb7e24180255d",
+    "check_mode_inverse_v1.py": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44"
+  },
+  "stage": "before exposure to focused new-unit checker"
+}

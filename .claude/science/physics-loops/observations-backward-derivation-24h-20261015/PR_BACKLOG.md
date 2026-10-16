@@ -21,3 +21,8 @@ original 2026-10-16T22:36:59Z deadline.
 The recursive-mechanism intake and shared-mode probe are exploratory checkpoint
 material only. They do not yet form a second milestone PR: the physical coupled
 operator, identified channels and source-bound independent check remain open.
+
+
+## Joint metric inverse prospective milestone 2026-10-16T10:58:43.911428+00:00
+
+Source mathematics and focused check are complete for the stated ideal-input charts. Preserve as coherent campaign support while defining the observation-input scope. Proposed combined deliverable: matter-clock/response plus joint metric inverse and its explicit readout contract; do not split the gain and trace variants into separate PRs. Before opening: portable canonical runner and input closure, final-source focused integration check, current-main conformance and cluster-cap value assessment. GitHub access is working; this is deliberate milestone preparation, not an operational failure or campaign stop. Five existing milestone PRs are unchanged.

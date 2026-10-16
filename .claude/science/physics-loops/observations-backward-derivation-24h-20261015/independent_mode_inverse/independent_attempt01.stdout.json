@@ -1,0 +1,641 @@
+{
+  "scope": "Independent original-equation linear-mode checks before new author exposure; synthetic only",
+  "software": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "checks": [
+    {
+      "name": "Hamiltonian geometry sign",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "momentum geometry sign",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "nonzero-k anisotropic equation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "pressure trace geometry",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric volume perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical scalar density perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical scalar momentum perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical scalar pressure perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "scalar wave operator from determinant and inverse metric",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "equal-potential scalar metric forcing",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "four-column metric trace relation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "Euler-trace equivalence after background dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "covariant particle Euler becomes matter Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "bare and Jordan continuity are equivalent",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background bare dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background physical expansion",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background coupling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "background fixed-rho curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "two-mode-system characteristic determinant",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "dispersion relation for chosen exact exponents",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "generic exact mode dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "generic exact mode dust continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "generic exact mode trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "generic exact mode scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 Einstein momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 Einstein Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 Einstein pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 original scalar perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 original bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 original particle Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 matter momentum reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 matter Hamiltonian reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/8 positive nonzero wave number",
+      "pass": true,
+      "detail": "243/80"
+    },
+    {
+      "name": "mode 1/6 Einstein momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 Einstein Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 Einstein pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 original scalar perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 original bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 original particle Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 matter momentum reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 matter Hamiltonian reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/6 positive nonzero wave number",
+      "pass": true,
+      "detail": "665/117"
+    },
+    {
+      "name": "mode 1/5 Einstein momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 Einstein Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 Einstein pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 original scalar perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 original bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 original particle Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 matter momentum reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 matter Hamiltonian reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/5 positive nonzero wave number",
+      "pass": true,
+      "detail": "728/75"
+    },
+    {
+      "name": "mode 1/4 Einstein momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 Einstein Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 Einstein pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 original scalar perturbation",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 original bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 original particle Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 matter momentum reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 matter Hamiltonian reconstruction",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mode 1/4 positive nonzero wave number",
+      "pass": true,
+      "detail": "115/4"
+    },
+    {
+      "name": "exact rank determinant formula",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "legitimate distinct-k full modes have rank four",
+      "pass": true,
+      "detail": "1/24752000"
+    },
+    {
+      "name": "wave numbers are distinct",
+      "pass": true
+    },
+    {
+      "name": "data-only scaled coefficient 0",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only scaled coefficient 1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only scaled coefficient 2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only scaled coefficient 3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only derivative consistency coefficient c",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only derivative consistency coefficient f",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "data-only background dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recovered regular kinetic product positive",
+      "pass": true
+    },
+    {
+      "name": "recovered background source positive",
+      "pass": true
+    },
+    {
+      "name": "canonical coupling recovered without supplying it",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed-density curvature recovered without supplying it",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K scalar residual formula 1/8",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K continuity residual formula 1/8",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K input fails full scalar 1/8",
+      "pass": true,
+      "detail": "-15/26"
+    },
+    {
+      "name": "wrong-K input fails full continuity 1/8",
+      "pass": true,
+      "detail": "15/13"
+    },
+    {
+      "name": "wrong-K scalar residual formula 1/6",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K continuity residual formula 1/6",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K input fails full scalar 1/6",
+      "pass": true,
+      "detail": "-13/30"
+    },
+    {
+      "name": "wrong-K input fails full continuity 1/6",
+      "pass": true,
+      "detail": "13/15"
+    },
+    {
+      "name": "wrong-K scalar residual formula 1/5",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K continuity residual formula 1/5",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K input fails full scalar 1/5",
+      "pass": true,
+      "detail": "-27/85"
+    },
+    {
+      "name": "wrong-K input fails full continuity 1/5",
+      "pass": true,
+      "detail": "54/85"
+    },
+    {
+      "name": "wrong-K scalar residual formula 1/4",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K continuity residual formula 1/4",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "wrong-K input fails full scalar 1/4",
+      "pass": true,
+      "detail": "-1/7"
+    },
+    {
+      "name": "wrong-K input fails full continuity 1/4",
+      "pass": true,
+      "detail": "2/7"
+    },
+    {
+      "name": "normalization leaves background coupling",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "normalization leaves fixed-rho response",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "normalization leaves density divided by F",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "field reflection preserves slip",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "field reflection preserves q and g",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "orientation does not change reconstructed curvature",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind background Friedmann",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind background Raychaudhuri",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind background dust",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind original scalar background",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind metric momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind metric Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind pressure trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind dust continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "mass-blind scalar perturbation at zero amplitude",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "exceptional arbitrary positive curvature does not enter readouts",
+      "pass": true
+    },
+    {
+      "name": "exceptional slip-free input does not meet rank hypothesis",
+      "pass": true,
+      "detail": "1"
+    }
+  ],
+  "summary": {
+    "passed": 111,
+    "failed": 0
+  },
+  "rank_witness": {
+    "modes": [
+      {
+        "m": "1/8",
+        "Y": "37/26",
+        "L": "243/320",
+        "k_squared": "243/80",
+        "velocity_coefficient": "-28/13",
+        "bare_contrast_coefficient": "-1311/130"
+      },
+      {
+        "m": "1/6",
+        "Y": "47/30",
+        "L": "665/468",
+        "k_squared": "665/117",
+        "velocity_coefficient": "-11/5",
+        "bare_contrast_coefficient": "-1229/78"
+      },
+      {
+        "m": "1/5",
+        "Y": "143/85",
+        "L": "182/75",
+        "k_squared": "728/75",
+        "velocity_coefficient": "-38/17",
+        "bare_contrast_coefficient": "-6151/255"
+      },
+      {
+        "m": "1/4",
+        "Y": "13/7",
+        "L": "115/16",
+        "k_squared": "115/4",
+        "velocity_coefficient": "-16/7",
+        "bare_contrast_coefficient": "-439/7"
+      }
+    ],
+    "response_matrix_at_tau_one": "Matrix([[1/8, 1, 37/208, 37/26], [1/6, 1, 47/180, 47/30], [1/5, 1, 143/425, 143/85], [1/4, 1, 13/28, 13/7]])",
+    "determinant": "1/24752000",
+    "determinant_time_exponent": "-151/120",
+    "data_recovered_scaled_coefficients": [
+      "3",
+      "5/4",
+      "1/2",
+      "3/4"
+    ]
+  },
+  "reconstructed_background": {
+    "q": "1/(2*tau)",
+    "g": "1/(2*tau)",
+    "s": "1/(4*tau**2)",
+    "x": "1/(2*tau)",
+    "b": "1",
+    "kappa": "7/(4*tau**2)"
+  },
+  "necessary_only_counterexample": [
+    {
+      "m": "1/8",
+      "scalar_residual_coefficient": "-15/26",
+      "continuity_residual_coefficient": "15/13"
+    },
+    {
+      "m": "1/6",
+      "scalar_residual_coefficient": "-13/30",
+      "continuity_residual_coefficient": "13/15"
+    },
+    {
+      "m": "1/5",
+      "scalar_residual_coefficient": "-27/85",
+      "continuity_residual_coefficient": "54/85"
+    },
+    {
+      "m": "1/4",
+      "scalar_residual_coefficient": "-1/7",
+      "continuity_residual_coefficient": "2/7"
+    }
+  ],
+  "author_mode_inverse_sources_read": false,
+  "author_code_imported": false
+}

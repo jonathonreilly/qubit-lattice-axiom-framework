@@ -1,0 +1,19 @@
+{
+  "owned_attempts": 9,
+  "failed_owned_attempts": 0,
+  "timed_out_owned_attempts": 0,
+  "full_stdout_stderr_preserved": true,
+  "attempt_records": [
+    "independent_attempt01.run.json",
+    "comparison_attempt01.run.json",
+    "author_primary_replay01.run.json",
+    "author_jets_replay01.run.json",
+    "author_gain_replay01.run.json",
+    "author_gain_jets_replay01.run.json",
+    "supplement_attempt01.run.json",
+    "author_trace_replay01.run.json",
+    "author_joint_replay01.run.json"
+  ],
+  "original_v1_closure_unchanged": true,
+  "root_mutation_report_inspection_only": true
+}

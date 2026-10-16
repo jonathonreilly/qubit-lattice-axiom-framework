@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-16T10:44:13.191406+00:00",
+  "stage": "Post-author-exposure derivation before comparison code",
+  "proof": {
+    "path": "POST_EXPOSURE_COMPARISON_DERIVATION_v1.md",
+    "sha256": "4e47389c6fe3b78a7e86ae0210d43ed9b6b726f790e3bcd3ddda86ff2a57735f",
+    "bytes": 3655
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Owned subprocess attempts; root deliberately failing source mutants are separate supplied evidence",
+  "owned_attempts": 6,
+  "failed_owned_attempts": 0,
+  "timed_out_owned_attempts": 0,
+  "all_full_stdout_stderr_preserved": true,
+  "attempt_records": [
+    "independent_attempt01.run.json",
+    "comparison_attempt01.run.json",
+    "author_primary_replay01.run.json",
+    "author_jets_replay01.run.json",
+    "author_gain_replay01.run.json",
+    "author_gain_jets_replay01.run.json"
+  ],
+  "pre_author_evidence_unchanged": true,
+  "author_mutation_report_inspected_only": "author_snapshot/mode_inverse_mutations_v1/REPORT.json"
+}

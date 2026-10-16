@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-16T10:50:46.733073+00:00",
+  "stage": "Root-suggested combined extension; before combined author-source exposure and before own supplement code",
+  "proof": {
+    "path": "SUPPLEMENT_DERIVATION_v1.md",
+    "sha256": "ffb016cf44946f798ee9ace0c148530646a271ce8f9893aba04505030501ef58",
+    "bytes": 3259
+  }
+}

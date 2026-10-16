@@ -1,0 +1,11 @@
+--- check_mode_inverse_v1.py
++++ dust_momentum_sign/check_mode_inverse_v1.py
+@@ -167,7 +167,7 @@
+     for k2, row in zip(ksquares, np.asarray(yy).reshape(5,5)):
+         uv,piv,pv,vel,dens = row
+         ke2 = k2/tt**2
+-        pd = (vv*uv-rr*vel)/2-HH*pv
++        pd = (vv*uv+rr*vel)/2-HH*pv
+         rates.extend([piv,-3*HH*piv-(ke2+mm)*uv-rr*dens+4*vv*pd-2*FF*pv,
+                       pd,-pv-uv-vv*vel,3*pd+ke2*vel])
+     return np.array(rates)

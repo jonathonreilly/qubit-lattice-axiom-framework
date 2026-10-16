@@ -1,0 +1,54 @@
+{
+  "frozen_utc": "2026-10-16T10:40:26.267371+00:00",
+  "stage": "Independent derivation and completed executable evidence before new author exposure",
+  "author_mode_inverse_note_plan_code_results_read": false,
+  "all_current_task_writes_inside": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse",
+  "shared_software": [
+    "Python 3.12.8",
+    "SymPy 1.14.0"
+  ],
+  "summary": {
+    "passed": 111,
+    "failed": 0,
+    "attempts": 1,
+    "timeouts": 0
+  },
+  "files": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "d76e815cef541b1cbe759858ec34e94c399bd5d366670b5c023afaa1fc3f0944",
+      "bytes": 2665
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb",
+      "bytes": 12027
+    },
+    "PRE_CODE_FREEZE_v1.json": {
+      "sha256": "c274d458120cd81bf634e7bfcf419caf4758ab26fa796dd2015e99368cbd1363",
+      "bytes": 620
+    },
+    "independent_controls_v1.py": {
+      "sha256": "77cb5e8f7ca3b55a966df5f3883cf90378fe54943a97493f7e7d162185ca5142",
+      "bytes": 13533
+    },
+    "run_independent_bounded_v1.py": {
+      "sha256": "b3f75961d09025af172744463646ce12bd6c3afe26754b75c3e1a46b5440b0fe",
+      "bytes": 2983
+    },
+    "independent_attempt01.stdout.json": {
+      "sha256": "0dfa60495dcc046c5f2383b0f085eb08c61bf4f43efad730f8c45f0641204340",
+      "bytes": 14130
+    },
+    "independent_attempt01.stderr.txt": {
+      "sha256": "853b3ec761b55ba8b6f739793f610f8e6f26074fe2adfb8795e182e611e09ed5",
+      "bytes": 5006
+    },
+    "independent_attempt01.run.json": {
+      "sha256": "368dd142060c81795bc398bde617b98f81c7a475a0f2c2c9eda556449ab454a0",
+      "bytes": 2845
+    },
+    "PRE_AUTHOR_FINDINGS_v1.md": {
+      "sha256": "1b73ff22450e2739fd291e02107b3ac306ff74ec0b1178ecc19de9a5745caced",
+      "bytes": 3634
+    }
+  }
+}

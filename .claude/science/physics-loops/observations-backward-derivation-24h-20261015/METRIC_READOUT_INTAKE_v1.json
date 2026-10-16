@@ -1,0 +1,47 @@
+{
+  "time": "2026-10-16T10:54:37.985962+00:00",
+  "status": "source intake and next-action plan; no passed measurement bridge",
+  "sources": [
+    {
+      "title": "Imaging the 3-D cosmological mass distribution with weak gravitational lensing",
+      "author": "A. N. Taylor",
+      "url": "https://arxiv.org/abs/astro-ph/0111605v1",
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0111605v1",
+      "local_runtime_path": "/Users/jonBridger/.codex/campaigns/observations-backward-derivation-24h-20261015/sources/taylor2001-astro-ph0111605v1.pdf",
+      "sha256": "7195d9506d556dffc0e85f53e6399943833218a4095fe6229f6887e72bf1b3c9",
+      "bytes": 123166,
+      "pages": 4,
+      "read_scope": "Complete web-extracted primary text; pages1-2 visually inspected. Figure1 not interpreted. Known inverse equations3-4 and input/boundary conditions; no empirical values imported.",
+      "role": "prior art and conditional observation-operator comparator; not retained framework authority"
+    },
+    {
+      "title": "Redshift Drift in Relativistic N-Body Simulations",
+      "url": "https://arxiv.org/abs/2505.04731v2",
+      "journal_url": "https://astro.theoj.org/article/147178-redshift-drift-in-relativistic-n-body-simulations",
+      "read_scope": "journal and arXiv abstract only",
+      "role": "candidate primary source for next block; no formula adopted"
+    }
+  ],
+  "retrieval_events": [
+    {
+      "route": "web guessed Taylor v2 PDF",
+      "result": "404; archive confirms only v1; corrected to v1"
+    },
+    {
+      "route": "web guessed https://arxiv.org/html/2510.08919v1",
+      "result": "unrelated PHyCLIP neural-network paper; excluded from this physics input map"
+    },
+    {
+      "route": "Python urllib default TLS trust",
+      "result": "certificate verify failed; no file written; no scientific conclusion"
+    },
+    {
+      "route": "system curl with ordinary TLS verification and 30s bound",
+      "result": "success; exact v1 PDF bound above"
+    }
+  ],
+  "next_action_plan": "NEXT_METRIC_READOUT_PLAN_v1.md",
+  "new_observational_arrays_read": false,
+  "unopened_fuchs_trace_arrays": 7,
+  "empirical_validation": false
+}

@@ -1,0 +1,48 @@
+{
+  "captured_utc": "2026-10-16T10:53:37.037075+00:00",
+  "source_pack": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015",
+  "files": {
+    "MODE_TRACE_JOINT_ROOT_FREEZE_v1.json": {
+      "sha256": "eac990da9328346c3245fa0dd708c6b28a32feb08653834fab8f638af92d8b96",
+      "bytes": 937
+    },
+    "MODE_TRACE_ROOT_DERIVATION_v1.md": {
+      "sha256": "5f428fd394f9111dc7c17da26abc5815285e71ffb81b209a4f0a094517332b86",
+      "bytes": 4305
+    },
+    "check_mode_trace_root_v1.py": {
+      "sha256": "7b16b9bff9fffe778c389872abfed5fef3bfa367ac8b613e744db1fc64d9406f",
+      "bytes": 6006
+    },
+    "MODE_TRACE_ROOT_CONTROLS_v1.json": {
+      "sha256": "1e7c19fe46f1d89960fe0a7dba9cada97fcb0910ddb3a3417d37af1dbbd355fc",
+      "bytes": 20851
+    },
+    "MODE_JOINT_GAIN_DERIVATION_v1.md": {
+      "sha256": "0715c4061be3354034806277f7b5b93c6681eb458d3645c990b5a836d5dc5132",
+      "bytes": 3393
+    },
+    "check_mode_joint_gain_v1.py": {
+      "sha256": "44d5bd656fa1e42f1f8730c47c638d418ec2c9bb4f16dbedc2afce996541ab91",
+      "bytes": 6831
+    },
+    "MODE_JOINT_GAIN_CONTROLS_v1.json": {
+      "sha256": "53e52a441a1069ea0ecfedf388ee9dd64173738edba732efbc4b78e8f4458eb0",
+      "bytes": 17431
+    },
+    "MODE_GAIN_DERIVATION_v1.md": {
+      "sha256": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+      "bytes": 3196
+    },
+    "check_mode_inverse_jets_v1.py": {
+      "sha256": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+      "bytes": 8456
+    },
+    "independent_mode_inverse/DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb",
+      "bytes": 12027
+    }
+  },
+  "all_freeze_matches": true,
+  "stage": "After own supplement output freeze; unchanged author trace and joint-gain replay"
+}

@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-10-16T10:30:32.295588+00:00",
+  "author": "/root personally",
+  "exposure": "Root has not read any independent_mode_inverse results or received its substantive derivation. Focused check ongoing.",
+  "sources": {
+    "MODE_INVERSE_NEUTRAL_CONTRACT_v1.json": "cc2480bda651208a7dcc811e1aa32588228d3cabbfb1dd5d5f19e5fa8ce115c6",
+    "MODE_INVERSE_DERIVATION_v1.md": "5fa2865362829cfa36edc40b2af5cc7e2dcad682b5122db4c364ab436549599b",
+    "check_mode_inverse_v1.py": "764f5d2d938242f1c420c77fbcda1d9d29e3bc8a9d67050a809932c3c8346f44",
+    "MODE_INVERSE_CONTROLS_v1.json": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+    "check_mode_inverse_jets_v1.py": "95dbccb44fc966428151cf45c2867a600ca77001f7b544c4946e7799a57bf2b3",
+    "MODE_INVERSE_JETS_v1.json": "bf5f2435c854dd55471de850cad11a1948320653a4f162b00879653f16d08492"
+  },
+  "root_controls_separate": [
+    40,
+    13
+  ],
+  "empirical_validation": false,
+  "no_independent_model_or_code_claim": true
+}

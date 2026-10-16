@@ -1,0 +1,122 @@
+Linearized Einstein geometry from the metric
+PASS Hamiltonian geometry sign
+PASS momentum geometry sign
+PASS nonzero-k anisotropic equation
+PASS pressure trace geometry
+PASS metric volume perturbation
+Scalar stress and wave operator
+PASS canonical scalar density perturbation
+PASS canonical scalar momentum perturbation
+PASS canonical scalar pressure perturbation
+PASS scalar wave operator from determinant and inverse metric
+PASS equal-potential scalar metric forcing
+Matter-time transformations and source elimination
+PASS four-column metric trace relation
+PASS Euler-trace equivalence after background dust
+PASS covariant particle Euler becomes matter Euler
+PASS bare and Jordan continuity are equivalent
+Exact background reconstructed from the action
+PASS background Friedmann
+PASS background Raychaudhuri
+PASS background original scalar
+PASS background bare dust
+PASS background physical expansion
+PASS background coupling
+PASS background fixed-rho curvature
+PASS two-mode-system characteristic determinant
+PASS dispersion relation for chosen exact exponents
+PASS generic exact mode dust Euler
+PASS generic exact mode dust continuity
+PASS generic exact mode trace
+PASS generic exact mode scalar
+Full original-equation mode 1/8
+PASS mode 1/8 Einstein momentum
+PASS mode 1/8 Einstein Hamiltonian
+PASS mode 1/8 Einstein pressure trace
+PASS mode 1/8 original scalar perturbation
+PASS mode 1/8 original bare continuity
+PASS mode 1/8 original particle Euler
+PASS mode 1/8 matter momentum reconstruction
+PASS mode 1/8 matter Hamiltonian reconstruction
+PASS mode 1/8 positive nonzero wave number
+Full original-equation mode 1/6
+PASS mode 1/6 Einstein momentum
+PASS mode 1/6 Einstein Hamiltonian
+PASS mode 1/6 Einstein pressure trace
+PASS mode 1/6 original scalar perturbation
+PASS mode 1/6 original bare continuity
+PASS mode 1/6 original particle Euler
+PASS mode 1/6 matter momentum reconstruction
+PASS mode 1/6 matter Hamiltonian reconstruction
+PASS mode 1/6 positive nonzero wave number
+Full original-equation mode 1/5
+PASS mode 1/5 Einstein momentum
+PASS mode 1/5 Einstein Hamiltonian
+PASS mode 1/5 Einstein pressure trace
+PASS mode 1/5 original scalar perturbation
+PASS mode 1/5 original bare continuity
+PASS mode 1/5 original particle Euler
+PASS mode 1/5 matter momentum reconstruction
+PASS mode 1/5 matter Hamiltonian reconstruction
+PASS mode 1/5 positive nonzero wave number
+Full original-equation mode 1/4
+PASS mode 1/4 Einstein momentum
+PASS mode 1/4 Einstein Hamiltonian
+PASS mode 1/4 Einstein pressure trace
+PASS mode 1/4 original scalar perturbation
+PASS mode 1/4 original bare continuity
+PASS mode 1/4 original particle Euler
+PASS mode 1/4 matter momentum reconstruction
+PASS mode 1/4 matter Hamiltonian reconstruction
+PASS mode 1/4 positive nonzero wave number
+Data-only rank and common-coefficient recovery
+PASS exact rank determinant formula
+PASS legitimate distinct-k full modes have rank four
+PASS wave numbers are distinct
+PASS data-only scaled coefficient 0
+PASS data-only scaled coefficient 1
+PASS data-only scaled coefficient 2
+PASS data-only scaled coefficient 3
+PASS data-only derivative consistency coefficient c
+PASS data-only derivative consistency coefficient f
+PASS data-only background dust
+PASS recovered regular kinetic product positive
+PASS recovered background source positive
+PASS canonical coupling recovered without supplying it
+PASS fixed-density curvature recovered without supplying it
+Necessary-only counterexample with altered known wave numbers
+PASS wrong-K scalar residual formula 1/8
+PASS wrong-K continuity residual formula 1/8
+PASS wrong-K input fails full scalar 1/8
+PASS wrong-K input fails full continuity 1/8
+PASS wrong-K scalar residual formula 1/6
+PASS wrong-K continuity residual formula 1/6
+PASS wrong-K input fails full scalar 1/6
+PASS wrong-K input fails full continuity 1/6
+PASS wrong-K scalar residual formula 1/5
+PASS wrong-K continuity residual formula 1/5
+PASS wrong-K input fails full scalar 1/5
+PASS wrong-K input fails full continuity 1/5
+PASS wrong-K scalar residual formula 1/4
+PASS wrong-K continuity residual formula 1/4
+PASS wrong-K input fails full scalar 1/4
+PASS wrong-K input fails full continuity 1/4
+Normalization, orientation and mass-blind exceptional full modes
+PASS normalization leaves background coupling
+PASS normalization leaves fixed-rho response
+PASS normalization leaves density divided by F
+PASS field reflection preserves slip
+PASS field reflection preserves q and g
+PASS orientation does not change reconstructed curvature
+PASS mass-blind background Friedmann
+PASS mass-blind background Raychaudhuri
+PASS mass-blind background dust
+PASS mass-blind original scalar background
+PASS mass-blind metric momentum
+PASS mass-blind metric Hamiltonian
+PASS mass-blind pressure trace
+PASS mass-blind dust Euler
+PASS mass-blind dust continuity
+PASS mass-blind scalar perturbation at zero amplitude
+PASS exceptional arbitrary positive curvature does not enter readouts
+PASS exceptional slip-free input does not meet rank hypothesis

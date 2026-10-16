@@ -487,3 +487,22 @@ The conditional matter-time compatibility system removes a supplied clock-map fu
 Personally execute NEXT_RESPONSE_INVERSE_PLAN_v1.md: from ideal registered matter-metric potentials across common-background Fourier modes, derive or refute the proposed five-coefficient response inverse and whether it eliminates supplied b,kappa. Refresh relevant main/open PR science first and compare reconstruction prior art. Test rank on full original-equation forward solutions, retain background/matter/metric constraints, critical coupling values, scale/orientation/initial-state freedom and derivative/noise obligations. Proposed formulas are not yet verified or load-bearing. Keep seven Fuchs arrays unopened; do not insert fitted ranges, a minimum or selected initial scalar state.
 
 Known theory support remains commits-only. Five earlier PRs are unchanged and attached; no main mutation or formal audit. No active focused agent, detached author or owned research job. Older campaigns remain stopped, and deadline22:36:59Z/packaging22:21:59Z remain fixed.
+
+## Joint potential inverse active checkpoint 2026-10-16T10:36:36.190629+00:00
+
+Root personally derived the coefficient inverse and full physical compatibility. Forty primary and thirteen varying-coupling controls pass, including original Einstein-time forward modes and analytic observable jets. New-unit focused independent derivation is active; no final independent finding has been read. The primary source was frozen before checker exposure. A fifteen-control conditional common-gain calibration probe also passes; its derivative role is explicit and it has not yet been independently checked.
+
+Finish focused source-bound check, physically challenge the gain-calibration extension and derivative/rank requirements, then decide whether a coherent milestone or further observation-protocol integration has higher value. Keep five earlier PRs frozen.
+
+Action, ideal input extraction, derivative/error control and normalization remain explicit premises. No new observations, no reopened Fuchs array, no earlier campaign restart, and no formal audit. Deadline and packaging cutoff unchanged.
+
+
+## Joint metric inverse checkpoint 2026-10-16T10:58:43.911428+00:00
+
+Conditional on the canonical scalar/conformal-dust action and compatible rich smooth matter-metric mode histories, the coupling, scalar velocity product and fixed-bare-density curvature are reconstructed instead of supplied. Local A,V follow on the monotonic positive-dust chart, with full original-equation residuals. A common amplitude drift is recoverable by combining trace and scalar relations, including B=2/3. Action selection, physical input extraction, derivative/rank control and absolute normalization remain open.
+
+Root40/13/15/8/12/22control sets and independent111/38/62sets pass, separately counted. Six copied author replays are byte-identical; root read the complete independent proofs/code/results/reports and verified85final manifest files and26actual source bindings. Eight actual source mutations were detected. Pressure-trace discovery is attributed to the focused checker; root personally rederived it and combined it with scalar response to remove the common-gain B=2/3 elimination exception. No empirical validation or formal audit.
+
+Personally execute NEXT_METRIC_READOUT_PLAN_v1.md: derive which lensing/tracer records supply the ideal metric histories, separating light-cone from equal-time derivatives, angular/source calibration, mode rank and derivative errors. Freeze a synthetic input protocol before testing it; no new real-array access without declared roles. Then package one coherent matter-clock/response/joint-inverse milestone with final input scope, portable cache closure, focused final review, conformance and cluster-cap value assessment. Keep the five prior PRs frozen and seven Fuchs arrays unopened.
+
+Five previous PRs remain open and unchanged. Current checkpoint is commits-only; canonical milestone conformance remains to be completed. Main now5eeadf3f differs only in automated audit dispatch state; all68openPRheads unchanged. No active focused agent, detached author or owned job. Four older campaigns remain stopped. Matching lock refreshed10:57:05UTC; deadline22:36:59Z and packaging22:21:59Z unchanged.

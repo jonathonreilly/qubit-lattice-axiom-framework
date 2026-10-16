@@ -1,0 +1,11 @@
+--- check_mode_gain_v1.py
++++ common_gain_curvature_transform/check_mode_gain_v1.py
+@@ -11,7 +11,7 @@
+ a,c,d,e,f,k=s.symbols('a c d e f k',real=True)
+ drift=s.diff(g,tau)/g
+ at=a-2*drift
+-ct=c-a*drift-s.diff(drift,tau)+drift**2
++ct=c-a*drift+s.diff(drift,tau)+drift**2
+ ft=f-d*drift
+ original=s.diff(J,tau,2)+k*J+a*s.diff(J,tau)+c*J-d*s.diff(P,tau)-e*k*P-f*P
+ trans=s.diff(g*J,tau,2)+k*g*J+at*s.diff(g*J,tau)+ct*g*J-d*s.diff(g*P,tau)-e*k*g*P-ft*g*P

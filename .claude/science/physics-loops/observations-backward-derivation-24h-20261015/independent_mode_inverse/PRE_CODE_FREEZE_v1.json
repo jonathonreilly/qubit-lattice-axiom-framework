@@ -1,0 +1,16 @@
+{
+  "time_utc": "2026-10-16T10:32:56.287712+00:00",
+  "phase": "Independent full-equation multi-mode derivation and controls frozen before implementation and new author-source exposure",
+  "files": {
+    "NEUTRAL_CONTRACT_SNAPSHOT_v1.json": {
+      "sha256": "d76e815cef541b1cbe759858ec34e94c399bd5d366670b5c023afaa1fc3f0944",
+      "bytes": 2665
+    },
+    "DERIVATION_BEFORE_AUTHOR_EXPOSURE_v1.md": {
+      "sha256": "1fbed83d7b8ed5b4855e47ce35c6ac91aa9d1a4e09c836f66f5ac0b124f672bb",
+      "bytes": 12027
+    }
+  },
+  "new_author_mode_inverse_files_read": false,
+  "earlier_action_and_response_context_known": true
+}

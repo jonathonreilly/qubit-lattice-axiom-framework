@@ -1,0 +1,38 @@
+PASS original scalar gives author coefficient a
+PASS original scalar gives author coefficient c
+PASS original scalar gives author coefficient d
+PASS original scalar gives author coefficient e
+PASS original scalar gives author coefficient f
+PASS damping gives q without critical-B division
+PASS curvature inverse from original scalar
+PASS common source ratio equals independent s
+PASS field reflection preserves independent ratio
+PASS inverse differentiation gives gain coefficient a
+PASS inverse differentiation gives gain coefficient c
+PASS inverse differentiation gives gain coefficient d
+PASS inverse differentiation gives gain coefficient e
+PASS inverse differentiation gives gain coefficient f
+PASS curvature unwarping
+PASS force coefficient unwarping
+PASS independent exact full modes attain author rank five
+PASS five-coefficient solve on independent modes a
+PASS five-coefficient solve on independent modes c
+PASS five-coefficient solve on independent modes d
+PASS five-coefficient solve on independent modes e
+PASS five-coefficient solve on independent modes f
+PASS fifth mode original momentum
+PASS fifth mode original Hamiltonian
+PASS fifth mode original spatial trace
+PASS fifth mode original scalar
+PASS fifth mode original bare continuity
+PASS fifth mode original dust Euler
+PASS recorded exact matrix remains full rank
+PASS independent gain recorded-jet inverse B
+PASS independent gain recorded-jet inverse L
+PASS independent gain recorded-jet inverse L prime
+PASS independent gain recorded-jet inverse q
+PASS independent gain recorded-jet inverse q prime
+PASS independent gain recorded-jet inverse gain drift
+PASS independent gain recorded-jet inverse gain drift prime
+PASS independent gain recorded-jet inverse kappa
+PASS independent gain recorded-jet inverse remaining f

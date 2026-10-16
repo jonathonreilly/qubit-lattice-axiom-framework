@@ -1,0 +1,11 @@
+--- check_mode_inverse_v1.py
++++ fixed_density_clock_curvature/check_mode_inverse_v1.py
+@@ -35,7 +35,7 @@
+ w = J/b
+ deff = kap+b*s.diff(x, tau)+3*b*h*x-2*q*q
+ aa = 3*ell-2*L
+-cc = deff+L*L-s.diff(L, tau)-3*ell*L
++cc = deff+L*L+s.diff(L, tau)-3*ell*L
+ dd = 6*b*b*ell+4*q
+ ee = 2*b*b
+ ff = 6*b*b*ell*ell+2*b*s.diff(x, tau)+6*h*q-5*q*q

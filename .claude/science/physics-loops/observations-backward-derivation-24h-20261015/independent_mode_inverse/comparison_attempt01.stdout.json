@@ -1,0 +1,251 @@
+{
+  "stage": "After author exposure; correspondence and alternative exact fixtures",
+  "author_imports_or_runtime_reads": false,
+  "software": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "checks": [
+    {
+      "name": "original scalar gives author coefficient a",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "original scalar gives author coefficient c",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "original scalar gives author coefficient d",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "original scalar gives author coefficient e",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "original scalar gives author coefficient f",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "damping gives q without critical-B division",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature inverse from original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "common source ratio equals independent s",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "field reflection preserves independent ratio",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse differentiation gives gain coefficient a",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse differentiation gives gain coefficient c",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse differentiation gives gain coefficient d",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse differentiation gives gain coefficient e",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "inverse differentiation gives gain coefficient f",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature unwarping",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "force coefficient unwarping",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent exact full modes attain author rank five",
+      "pass": true,
+      "detail": "-71611/2558119200000"
+    },
+    {
+      "name": "five-coefficient solve on independent modes a",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "five-coefficient solve on independent modes c",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "five-coefficient solve on independent modes d",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "five-coefficient solve on independent modes e",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "five-coefficient solve on independent modes f",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original momentum",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original Hamiltonian",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original spatial trace",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original scalar",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original bare continuity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "fifth mode original dust Euler",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "recorded exact matrix remains full rank",
+      "pass": true,
+      "detail": "-71611/40929907200000"
+    },
+    {
+      "name": "independent gain recorded-jet inverse B",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse L",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse L prime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse q",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse q prime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse gain drift",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse gain drift prime",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse kappa",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent gain recorded-jet inverse remaining f",
+      "pass": true,
+      "residual": "0"
+    }
+  ],
+  "summary": {
+    "passed": 38,
+    "failed": 0
+  },
+  "rank_five_fixture": {
+    "exponents": [
+      "1/10",
+      "1/8",
+      "1/6",
+      "1/5",
+      "1/4"
+    ],
+    "determinant_tau_one": "-71611/2558119200000",
+    "recovered_coefficients": [
+      "3/2",
+      "9/4",
+      "5",
+      "2",
+      "9/4"
+    ]
+  },
+  "gain_fixture": {
+    "gain": "tau**(2/7)*exp(tau/11)",
+    "epoch": "2",
+    "recovered_coefficient_jets": [
+      [
+        "87/308",
+        "48689/94864",
+        "5/2",
+        "2",
+        "-27/1232"
+      ],
+      [
+        "-13/56",
+        "-4537/8624",
+        "-5/4",
+        "0",
+        "-113/1232"
+      ],
+      [
+        "13/56",
+        "13793/17248",
+        "5/4",
+        "0",
+        "479/2464"
+      ]
+    ],
+    "recovered_gain_drift": "18/77",
+    "recovered_gain_drift_prime": "-1/14",
+    "recovered_kappa": "7/16"
+  }
+}

@@ -1,0 +1,11 @@
+--- check_mode_inverse_jets_v1.py
++++ coefficient_jet_cross_term/check_mode_inverse_jets_v1.py
+@@ -123,7 +123,7 @@
+     y0,y1,y2=[np.asarray(y)/epsilon for y in ys]
+     th0=np.linalg.solve(d0,y0)
+     th1=np.linalg.solve(d0,y1-d1@th0)
+-    th2=np.linalg.solve(d0,y2-d2@th0-2*d1@th1)
++    th2=np.linalg.solve(d0,y2-d2@th0-d1@th1)
+     tv=np.asarray(truth_function(*bg,*np.asarray(yy[5:]).reshape(5,5)[0],kvalues[0]),float)
+     tj=tv[:15].reshape(5,3)
+     true_b,true_q,true_kappa,true_x,true_R=tv[15:]

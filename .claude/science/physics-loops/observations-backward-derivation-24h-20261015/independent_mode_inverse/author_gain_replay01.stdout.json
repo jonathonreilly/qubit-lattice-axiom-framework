@@ -1,0 +1,565 @@
+{
+  "author": "/root personally",
+  "checks": [
+    {
+      "name": "arbitrary common gain transforms full differential identity",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature coefficient unwarping",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "source coefficient unwarping",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "speed product from unshifted gradient coefficient",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "common gain drift reconstructed",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain design column 1",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain design column 2",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain design column 3",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain design column 4",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain design column 5",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "name": "gain column-map determinant",
+      "pass": true,
+      "residual": "0"
+    },
+    {
+      "max_relative_error": 6.540453454216965e-15,
+      "name": "gain-corrupted coefficients recovered on31epochs",
+      "pass": true
+    },
+    {
+      "max_absolute_error": 1.4432899320127035e-14,
+      "name": "physical q recovered despite nonconstant common gain",
+      "pass": true
+    },
+    {
+      "max_absolute_error": 2.257916076331412e-14,
+      "name": "gain logarithmic drift recovered",
+      "pass": true
+    },
+    {
+      "max_absolute_error": 2.3092638912203256e-14,
+      "name": "curvature recovered with derivative inputs stated",
+      "pass": true
+    }
+  ],
+  "empirical_validation": false,
+  "failed": 0,
+  "integrity_reads": [
+    "check_mode_gain_v1.py",
+    "MODE_GAIN_DERIVATION_v1.md",
+    "MODE_INVERSE_CONTROLS_v1.json"
+  ],
+  "numerical_derivative_role": "Exact prescribed smooth coefficient derivatives for the synthetic gain-corrupted power witness; not inferred from noisy samples.",
+  "passed": 15,
+  "rows": [
+    {
+      "fitted_record_coefficients": [
+        2.8600000000000003,
+        8.6549,
+        10.000000000000002,
+        1.9999999999999998,
+        8.299999999999999
+      ],
+      "recovered_fixed_bare_kappa": 7.000000000000006,
+      "recovered_gain_log_derivative": 0.07000000000000184,
+      "recovered_q": 0.9999999999999987,
+      "tau": 0.5,
+      "true_fixed_bare_kappa": 7.0,
+      "true_gain_log_derivative": 0.07
+    },
+    {
+      "fitted_record_coefficients": [
+        2.7378503437139554,
+        7.969912751822629,
+        9.611687812379852,
+        1.9999999999999931,
+        7.614608834238658
+      ],
+      "recovered_fixed_bare_kappa": 6.466917982185613,
+      "recovered_gain_log_derivative": 0.0728280000000141,
+      "recovered_q": 0.9611687812379763,
+      "tau": 0.5202,
+      "true_fixed_bare_kappa": 6.4669179821856,
+      "true_gain_log_derivative": 0.072828
+    },
+    {
+      "fitted_record_coefficients": [
+        2.6222446390532537,
+        7.348970026211535,
+        9.245562130177513,
+        1.9999999999999978,
+        6.993237719267541
+      ],
+      "recovered_fixed_bare_kappa": 5.983629337208084,
+      "recovered_gain_log_derivative": 0.075712000000004,
+      "recovered_q": 0.9245562130177489,
+      "tau": 0.5408000000000001,
+      "true_fixed_bare_kappa": 5.98362933720808,
+      "true_gain_log_derivative": 0.07571200000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        2.5126853200427175,
+        6.785029106246186,
+        8.899964400142396,
+        1.9999999999999885,
+        6.4288429691422255
+      ],
+      "recovered_fixed_bare_kappa": 5.544655642666162,
+      "recovered_gain_log_derivative": 0.07865200000002259,
+      "recovered_q": 0.8899964400142254,
+      "tau": 0.5618000000000001,
+      "true_fixed_bare_kappa": 5.544655642666143,
+      "true_gain_log_derivative": 0.07865200000000001
+    },
+    {
+      "fitted_record_coefficients": [
+        2.4087204609053527,
+        6.271935071072083,
+        8.573388203017839,
+        1.9999999999999971,
+        5.915268675168096
+      ],
+      "recovered_fixed_bare_kappa": 5.1452089695751955,
+      "recovered_gain_log_derivative": 0.0816480000000086,
+      "recovered_q": 0.8573388203017764,
+      "tau": 0.5832,
+      "true_fixed_bare_kappa": 5.145208969575172,
+      "true_gain_log_derivative": 0.08164800000000001
+    },
+    {
+      "fitted_record_coefficients": [
+        2.309938842975206,
+        5.804295188285636,
+        8.264462809917353,
+        1.9999999999999925,
+        5.447121098285661
+      ],
+      "recovered_fixed_bare_kappa": 4.781094187555502,
+      "recovered_gain_log_derivative": 0.08470000000001265,
+      "recovered_q": 0.8264462809917272,
+      "tau": 0.6050000000000001,
+      "true_fixed_bare_kappa": 4.781094187555493,
+      "true_gain_log_derivative": 0.08470000000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        2.215965632653061,
+        5.377372950507482,
+        7.97193877551021,
+        1.9999999999999984,
+        5.019662705643486
+      ],
+      "recovered_fixed_bare_kappa": 4.44862654883384,
+      "recovered_gain_log_derivative": 0.08780800000000744,
+      "recovered_q": 0.7971938775510155,
+      "tau": 0.6272000000000001,
+      "true_fixed_bare_kappa": 4.448626548833818,
+      "true_gain_log_derivative": 0.08780800000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        2.126458585410896,
+        4.986998401115708,
+        7.694675284702985,
+        1.9999999999999947,
+        4.628722496331725
+      ],
+      "recovered_fixed_bare_kappa": 4.144561941591336,
+      "recovered_gain_log_derivative": 0.09097200000000916,
+      "recovered_q": 0.769467528470292,
+      "tau": 0.6498000000000002,
+      "true_fixed_bare_kappa": 4.144561941591326,
+      "true_gain_log_derivative": 0.09097200000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        2.0411047039239008,
+        4.62949201378827,
+        7.431629013079665,
+        1.999999999999995,
+        4.270619880924288
+      ],
+      "recovered_fixed_bare_kappa": 3.8660376851633287,
+      "recovered_gain_log_derivative": 0.09419200000000827,
+      "recovered_q": 0.7431629013079605,
+      "tau": 0.6728000000000002,
+      "true_fixed_bare_kappa": 3.8660376851633202,
+      "true_gain_log_derivative": 0.09419200000000004
+    },
+    {
+      "fitted_record_coefficients": [
+        1.9596172892846868,
+        4.301599887391469,
+        7.181844297615627,
+        2.0000000000000004,
+        3.9420998763674677
+      ],
+      "recovered_fixed_bare_kappa": 3.610522126063589,
+      "recovered_gain_log_derivative": 0.097468,
+      "recovered_q": 0.7181844297615629,
+      "tau": 0.6962000000000002,
+      "true_fixed_bare_kappa": 3.610522126063586,
+      "true_gain_log_derivative": 0.09746800000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        1.8817333333333333,
+        4.000438417777779,
+        6.944444444444442,
+        1.9999999999999931,
+        3.6402777777777966
+      ],
+      "recovered_fixed_bare_kappa": 3.3757716049382744,
+      "recovered_gain_log_derivative": 0.10080000000000833,
+      "recovered_q": 0.6944444444444389,
+      "tau": 0.72,
+      "true_fixed_bare_kappa": 3.3757716049382718,
+      "true_gain_log_derivative": 0.1008
+    },
+    {
+      "fitted_record_coefficients": [
+        1.807211207739855,
+        3.7234469313485468,
+        6.718624025799514,
+        1.9999999999999878,
+        3.362591792004574
+      ],
+      "recovered_fixed_bare_kappa": 3.1597936160035442,
+      "recovered_gain_log_derivative": 0.10418800000001649,
+      "recovered_q": 0.6718624025799407,
+      "tau": 0.7442,
+      "true_fixed_bare_kappa": 3.1597936160035354,
+      "true_gain_log_derivative": 0.104188
+    },
+    {
+      "fitted_record_coefficients": [
+        1.735828611862644,
+        3.4683470274889925,
+        6.5036420395421475,
+        1.9999999999999942,
+        3.106762380065007
+      ],
+      "recovered_fixed_bare_kappa": 2.9608151844950066,
+      "recovered_gain_log_derivative": 0.10763200000001116,
+      "recovered_q": 0.6503642039542066,
+      "tau": 0.7688,
+      "true_fixed_bare_kappa": 2.9608151844949924,
+      "true_gain_log_derivative": 0.10763200000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        1.6673807467876036,
+        3.2331075904859876,
+        6.298815822625344,
+        1.9999999999999984,
+        2.8707572690619934
+      ],
+      "recovered_fixed_bare_kappa": 2.777255653714877,
+      "recovered_gain_log_derivative": 0.11113200000000079,
+      "recovered_q": 0.629881582262534,
+      "tau": 0.7938000000000001,
+      "true_fixed_bare_kappa": 2.777255653714879,
+      "true_gain_log_derivative": 0.11113200000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        1.6016786875,
+        3.015914605959724,
+        6.103515625,
+        1.999999999999992,
+        2.6527612686157407
+      ],
+      "recovered_fixed_bare_kappa": 2.6077032089233487,
+      "recovered_gain_log_derivative": 0.114688000000011,
+      "recovered_q": 0.6103515624999927,
+      "tau": 0.8192,
+      "true_fixed_bare_kappa": 2.60770320892334,
+      "true_gain_log_derivative": 0.11468800000000001
+    },
+    {
+      "fitted_record_coefficients": [
+        1.5385479289940829,
+        2.815145059811983,
+        5.917159763313612,
+        1.9999999999999987,
+        2.4511501698119864
+      ],
+      "recovered_fixed_bare_kappa": 2.45089457652044,
+      "recovered_gain_log_derivative": 0.11830000000000429,
+      "recovered_q": 0.5917159763313579,
+      "tau": 0.8450000000000001,
+      "true_fixed_bare_kappa": 2.4508945765204295,
+      "true_gain_log_derivative": 0.11830000000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        1.477827085399449,
+        2.6293443152682316,
+        5.739210284664831,
+        1.9999999999999962,
+        2.2644681222442387
+      ],
+      "recovered_fixed_bare_kappa": 2.3056974284121847,
+      "recovered_gain_log_derivative": 0.12196800000000574,
+      "recovered_q": 0.5739210284664791,
+      "tau": 0.8712000000000001,
+      "true_fixed_bare_kappa": 2.305697428412179,
+      "true_gain_log_derivative": 0.12196800000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        1.4193667239919805,
+        2.457206460583727,
+        5.5691690799732685,
+        1.9999999999999916,
+        2.091407981719741
+      ],
+      "recovered_fixed_bare_kappa": 2.1710950968931284,
+      "recovered_gain_log_derivative": 0.12569200000001135,
+      "recovered_q": 0.5569169079973191,
+      "tau": 0.8978000000000002,
+      "true_fixed_bare_kappa": 2.17109509689312,
+      "true_gain_log_derivative": 0.12569200000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        1.3630283183390997,
+        2.2975572002423155,
+        5.406574394463668,
+        1.9999999999999925,
+        1.9307942014583266
+      ],
+      "recovered_fixed_bare_kappa": 2.0461732678009197,
+      "recovered_gain_log_derivative": 0.1294720000000107,
+      "recovered_q": 0.5406574394463597,
+      "tau": 0.9248000000000002,
+      "true_fixed_bare_kappa": 2.0461732678009117,
+      "true_gain_log_derivative": 0.12947200000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        1.3086833068683044,
+        2.1493389290837626,
+        5.250997689561016,
+        1.9999999999999902,
+        1.7815679062197745
+      ],
+      "recovered_fixed_bare_kappa": 1.9301083715042675,
+      "recovered_gain_log_derivative": 0.1333080000000122,
+      "recovered_q": 0.5250997689560936,
+      "tau": 0.9522000000000002,
+      "true_fixed_bare_kappa": 1.9301083715042588,
+      "true_gain_log_derivative": 0.13330800000000004
+    },
+    {
+      "fitted_record_coefficients": [
+        1.2562122448979587,
+        2.011597684231571,
+        5.102040816326529,
+        1.9999999999999931,
+        1.6427738442315807
+      ],
+      "recovered_fixed_bare_kappa": 1.8221574344023355,
+      "recovered_gain_log_derivative": 0.13720000000000698,
+      "recovered_q": 0.5102040816326484,
+      "tau": 0.9800000000000002,
+      "true_fixed_bare_kappa": 1.8221574344023317,
+      "true_gain_log_derivative": 0.13720000000000004
+    },
+    {
+      "fitted_record_coefficients": [
+        1.2055040396746681,
+        1.8834717159599448,
+        4.959333465582229,
+        1.9999999999999978,
+        1.5135489580559485
+      ],
+      "recovered_fixed_bare_kappa": 1.7216491895990775,
+      "recovered_gain_log_derivative": 0.1411480000000055,
+      "recovered_q": 0.4959333465582185,
+      "tau": 1.0082000000000002,
+      "true_fixed_bare_kappa": 1.7216491895990662,
+      "true_gain_log_derivative": 0.14114800000000005
+    },
+    {
+      "fitted_record_coefficients": [
+        1.1564552592592587,
+        1.7641814573564014,
+        4.822530864197532,
+        1.9999999999999978,
+        1.3931123542524042
+      ],
+      "recovered_fixed_bare_kappa": 1.6279762755296476,
+      "recovered_gain_log_derivative": 0.14515200000000295,
+      "recovered_q": 0.48225308641975134,
+      "tau": 1.0368,
+      "true_fixed_bare_kappa": 1.6279762755296452,
+      "true_gain_log_derivative": 0.145152
+    },
+    {
+      "fitted_record_coefficients": [
+        1.1089695072246188,
+        1.653020705122017,
+        4.691311690748729,
+        1.999999999999997,
+        1.2807564841780215
+      ],
+      "recovered_fixed_bare_kappa": 1.540588376582896,
+      "recovered_gain_log_derivative": 0.1492119999999999,
+      "recovered_q": 0.46913116907487395,
+      "tau": 1.0657999999999999,
+      "true_fixed_bare_kappa": 1.5405883765829023,
+      "true_gain_log_derivative": 0.14921199999999998
+    },
+    {
+      "fitted_record_coefficients": [
+        1.062956856099342,
+        1.5493488511765994,
+        4.565376186997807,
+        1.9999999999999976,
+        1.1758393755926024
+      ],
+      "recovered_fixed_bare_kappa": 1.4589861810164653,
+      "recovered_gain_log_derivative": 0.15332800000000146,
+      "recovered_q": 0.4565376186997801,
+      "tau": 1.0952,
+      "true_fixed_bare_kappa": 1.4589861810164655,
+      "true_gain_log_derivative": 0.15332800000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        1.0183333333333322,
+        1.4525840277777773,
+        4.4444444444444375,
+        1.9999999999999927,
+        1.0777777777777844
+      ],
+      "recovered_fixed_bare_kappa": 1.3827160493827089,
+      "recovered_gain_log_derivative": 0.15750000000000275,
+      "recovered_q": 0.4444444444444429,
+      "tau": 1.125,
+      "true_fixed_bare_kappa": 1.382716049382716,
+      "true_gain_log_derivative": 0.15750000000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        0.9750204542936279,
+        1.362197048338954,
+        4.328254847645422,
+        1.999999999999985,
+        0.9860411023549673
+      ],
+      "recovered_fixed_bare_kappa": 1.3113653018316271,
+      "recovered_gain_log_derivative": 0.1617280000000096,
+      "recovered_q": 0.4328254847645368,
+      "tau": 1.1552,
+      "true_fixed_bare_kappa": 1.3113653018316311,
+      "true_gain_log_derivative": 0.161728
+    },
+    {
+      "fitted_record_coefficients": [
+        0.9329447974363295,
+        1.2777060426315165,
+        4.2165626581211,
+        1.999999999999995,
+        0.9001460584875208
+      ],
+      "recovered_fixed_bare_kappa": 1.244558045490295,
+      "recovered_gain_log_derivative": 0.16601200000000588,
+      "recovered_q": 0.4216562658121062,
+      "tau": 1.1858,
+      "true_fixed_bare_kappa": 1.2445580454902894,
+      "true_gain_log_derivative": 0.16601200000000002
+    },
+    {
+      "fitted_record_coefficients": [
+        0.8920376173570017,
+        1.1986716990679573,
+        4.109138724523339,
+        1.9999999999999993,
+        0.8196518951639595
+      ],
+      "recovered_fixed_bare_kappa": 1.1819514740164097,
+      "recovered_gain_log_derivative": 0.17035199999999973,
+      "recovered_q": 0.4109138724523342,
+      "tau": 1.2168,
+      "true_fixed_bare_kappa": 1.1819514740164108,
+      "true_gain_log_derivative": 0.17035200000000003
+    },
+    {
+      "fitted_record_coefficients": [
+        0.8522344919083478,
+        1.1246930386862797,
+        4.005768306361157,
+        1.9999999999999971,
+        0.7441561751822829
+      ],
+      "recovered_fixed_bare_kappa": 1.1232325806973256,
+      "recovered_gain_log_derivative": 0.17474800000000068,
+      "recovered_q": 0.4005768306361155,
+      "tau": 1.2482000000000002,
+      "true_fixed_bare_kappa": 1.1232325806973287,
+      "true_gain_log_derivative": 0.17474800000000004
+    },
+    {
+      "fitted_record_coefficients": [
+        0.813474999999999,
+        1.0554036556249993,
+        3.9062499999999947,
+        2.0,
+        0.6732910156250004
+      ],
+      "recovered_fixed_bare_kappa": 1.068115234374994,
+      "recovered_gain_log_derivative": 0.17919999999999697,
+      "recovered_q": 0.3906250000000022,
+      "tau": 1.2800000000000002,
+      "true_fixed_bare_kappa": 1.0681152343749996,
+      "true_gain_log_derivative": 0.17920000000000005
+    }
+  ],
+  "scientific_input_reads": [
+    "MODE_INVERSE_CONTROLS_v1.json: author synthetic original-equation forward trajectories"
+  ],
+  "source_sha256": {
+    "MODE_GAIN_DERIVATION_v1.md": "50dbec35c1b4e36bec3561c4882c1522eb4a1d774646b2b2a18c6131d8911ca0",
+    "MODE_INVERSE_CONTROLS_v1.json": "b6c0f9d1f4dc41e49ae8fc276b47743251bfa33cb51d73fd23f38870e3c275e7",
+    "check_mode_gain_v1.py": "6ac2a287a50c64b47bb5da166ff3e7e8fd3482ac20c7450f7821d54597722e7d"
+  },
+  "stage": "before new-unit checker exposure"
+}

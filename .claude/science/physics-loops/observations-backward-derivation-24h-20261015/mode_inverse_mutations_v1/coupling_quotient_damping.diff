@@ -1,0 +1,11 @@
+--- check_mode_inverse_v1.py
++++ coupling_quotient_damping/check_mode_inverse_v1.py
+@@ -34,7 +34,7 @@
+ L = s.diff(b, tau)/b
+ w = J/b
+ deff = kap+b*s.diff(x, tau)+3*b*h*x-2*q*q
+-aa = 3*ell-2*L
++aa = 3*ell-L
+ cc = deff+L*L-s.diff(L, tau)-3*ell*L
+ dd = 6*b*b*ell+4*q
+ ee = 2*b*b

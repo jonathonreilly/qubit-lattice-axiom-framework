@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse/comparison_controls_v1.py"
+  ],
+  "cwd": "/Users/jonBridger/.codex/worktrees/observations-backward-derivation-24h-20261015/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-derivation-24h-20261015/independent_mode_inverse",
+  "timeout_seconds": 120,
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "start_utc": "2026-10-16T10:46:01.713243+00:00",
+  "end_utc": "2026-10-16T10:46:02.071856+00:00",
+  "wall_seconds": 0.3571494580246508,
+  "child_user_seconds": 0.233835,
+  "child_system_seconds": 0.032213,
+  "child_peak_rss_platform_units": 62865408,
+  "platform": "darwin",
+  "returncode": 0,
+  "timed_out": false,
+  "stdout_bytes": 5457,
+  "stdout_sha256": "9f488f6429afae84c293ba74b1198335946d7014661f7749147da15fecd2cbe4",
+  "stderr_bytes": 1789,
+  "stderr_sha256": "a0946128deebebad48a1dba64acd94b80d5180a8d4392644b4180097fce98cd4",
+  "output_parse_error": null,
+  "summary": {
+    "passed": 38,
+    "failed": 0
+  },
+  "stage": "post-author-exposure correspondence",
+  "script_sha256": "a7c8f5516f68ac96ef83a52033262200f97cf74c0743bd0777cc879dce55d06e",
+  "expected_output": null,
+  "stdout_byte_identical_to_expected": null
+}

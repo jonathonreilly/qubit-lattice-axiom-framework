@@ -206,6 +206,21 @@ The doubler-free tick of Theorem 2 reaches three.
 - **Taste basis.** That the eight sites of a cube carry two Dirac flavors is
   standard for Kogut–Susskind fermions in 3+1 dimensions (Hamiltonian
   formulation; see e.g. arXiv:2511.06198).
+  In this repository the continuous-time unit-hop census
+  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
+  finds 8 = spin 2 x chirality 2 x flavor 2, i.e. N_f = 2 vector-like Dirac
+  tastes. Theorem 2 gives the same content for a single exactly covariant
+  unitary tick. That census also notes that the two tastes are identical
+  copies with no generation label; nothing here changes that.
+- **Hierarchy programme.** `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`
+  uses the 4D Euclidean 2^4 block, whose naive count is 16, in a Matsubara
+  setting rather than a unitary tick. Its own no-go
+  `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10`
+  finds the count regulator-dependent. The one-tick results here add data
+  points for that gate (B3b), not a resolution:
+  - two light Dirac fermions per staggered block (Theorem 2);
+  - one per two-qubit site;
+  - no nearest-site staggered tick at all (Theorem 3).
 - **Staggered walks.** Staggered discrete-time quantum walks and their
   relation to Kogut–Susskind fermions have been studied mainly in lower
   dimensions (arXiv:1807.08303, arXiv:1906.04483).

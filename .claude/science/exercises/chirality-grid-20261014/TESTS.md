@@ -674,3 +674,15 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **Neither reading establishes a gap, SMG or GPR.**
 
 **F4/X1 referee.** The codex referee checks F4-L1, L2 and L3, and X1's Lemmas E and Z. These lemmas are unrefereed, and the outside ask cites L2.
+
+**F4/X1 lemma referee (codex gpt-5.6-sol; recorded 11:31Z 10-17).**
+- **Verdicts:** F4-L1 confirmed with corrections. **F4-L2 NOT CONFIRMED. F4-L3 NOT CONFIRMED. X1 Lemma E NOT CONFIRMED.** X1 Lemma Z confirmed with corrections.
+- **L2 (route 3's "far-wall zero or gapless composite").**
+  - Step 4 is false as a matrix statement: a zero of one correlator block can disappear once interpolators are added.
+  - "Non-kinematical" is unproved.
+  - The biconditional with Golterman–Shamir is invalid.
+  - The compensating object need not sit on the far surface.
+  - What survives is only a conditional pole–zero alternative for a fixed, regular, complete interpolator set (Nielsen–Ninomiya applied to the enlarged matrix). See `campaign/F4X1/referee/REFEREE.md:89-95`.
+- **L3:** a heuristic case analysis for the listed implementations, not a no-go "for every inflow geometry". The 10⁴⁶-layer figure is conditional on a model, so E6 does not follow.
+- **Lemma E:** a conditional obligation map (E3 is the missing bulk–boundary theorem), not an equivalence theorem.
+- **Consequence:** route 3's central lemma is weaker than SUMMARY §2 and §3 imply. SUMMARY needs a scope correction at close.

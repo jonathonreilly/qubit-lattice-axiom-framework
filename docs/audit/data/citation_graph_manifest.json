@@ -1,6 +1,6 @@
 {
- "edge_count": 16209,
- "node_count": 7232,
+ "edge_count": 16211,
+ "node_count": 7233,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21800,6 +21800,10 @@
   },
   "three_register_companion_input_circuit_cycle789_bounded_theorem_note_2026-07-30": {
    "deps_hash": "cd89a6235e20",
+   "out_degree": 2
+  },
+  "three_site_product_source_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e8ba976e1d1a",
    "out_degree": 2
   },
   "three_state_clock_endpoint_reflection_sector_energy_and_ground_defect_bound_bounded_theorem_note_2026-09-15": {

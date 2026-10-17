@@ -51,11 +51,23 @@ site rotation reproduces the edge rotation exactly?
      stabilizer under the edge action;
    - orbit sizes 4, 6 and 12.
 4. **Transfer.** The encoding is an isometry that intertwines the two
-   actions. So the companion notes' statements hold verbatim for this
-   site-local model with the bare site action:
+   actions. So the companion notes' statements hold for this site-local
+   model with the bare site action:
    - a fermionic point charge;
-   - no O-invariant code, with minimal orbit four;
+   - no O-invariant code among these 60, with minimal orbit four;
    - the spin-1/2 fractionalization class under bare rotations.
+
+   Three qualifications:
+   - **The charge.** B_v alone is not the gauge-invariant charge here. An
+     X on a single half-edge flips B_v together with an R. The charge in a
+     region is the product of B_v over the region times the product of R
+     on the edges inside it.
+   - **The realization.** As in the companion note, the class belongs to
+     the bare site action. The dressing W = prod_v exp(-i pi B_v / 4) is
+     also site-local and gives the trivial class.
+   - **The scope.** "No O-invariant code" refers to the half-edge images
+     of the 60 BKSF codes only, not to six-qubit-per-site codes in
+     general.
 
 ## How this bears on the lane (interpretation, not a claim)
 
@@ -72,6 +84,17 @@ site rotation reproduces the edge rotation exactly?
   searches found no coherently mobile fermion. Here the fermion appears
   once the conditions include plaquettes, a slightly larger neighbourhood.
 
+## Independent check
+
+A fresh-context agent (same model family) wrote its own code without first
+reading the runner.
+- **Items 1–3: confirmed.** It found dimension 3 at L = 6 for all 60 codes,
+  and covariance on 3,317,760 edge checks.
+- **Item 4: confirmed directly** in the half-edge model, with phases.
+- **Wording.** It asked for the three qualifications above.
+
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/`.
+
 ## Premises
 
 - **Axioms used.** Lattice (Z^3, unit translations, proper cubic rotations
@@ -85,8 +108,12 @@ site rotation reproduces the edge rotation exactly?
 
 - BKSF: Bravyi and Kitaev, Ann. Phys. 298, 210 (2002).
 - Generalized superfast encodings with qubits attached to vertices: Setia,
-  Bravyi, Mezzacapo and Whitfield, PRR 1, 033033 (2019). The repetition
-  encoding of edge qubits into half-edges is elementary.
+  Bravyi, Mezzacapo and Whitfield, PRR 1, 033033 (2019).
+  - That encoding uses d/2 qubits per vertex: three per site here, half as
+    many as the present encoding.
+  - In it a site rotation permutes the local Majoranas, which is in
+    general an on-site Clifford, not a bare qubit permutation.
+  - The repetition encoding of edge qubits into half-edges is elementary.
 - **New here.** The observation that the framework's site rotation acts
   exactly as the edge rotation for this encoding, so that the campaign's
   BKSF results transfer to a site-local model.
@@ -99,6 +126,13 @@ site rotation reproduces the edge rotation exactly?
 - **N2/N3 — scope.** One encoding of one family.
 - **N4 — inputs.** Exact GF(2) checks. The transfer in item 4 is the
   intertwining identity of item 2.
+  - The runner tests the unsigned structure only.
+  - The independent check tested the signed statements directly in the
+    half-edge model:
+    - T-junction -1 in all 60 codes;
+    - sign sectors as in the edge model;
+    - pair test +1 for all 108 pairs, with either sign of R;
+    - control -1.
 - **N5 — wording.** "Site-local" means qubits on sites. It does not mean
   star-supported generators.
 - **N6/N7 — strongest objection.** The six qubits per site and the

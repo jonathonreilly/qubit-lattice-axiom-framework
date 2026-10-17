@@ -1,0 +1,32 @@
+{
+  "root_fixture_determinant": "33/4096",
+  "root_fixture_theta": [
+    "1",
+    "1",
+    "1/4",
+    "0"
+  ],
+  "constant_H_rank": 3,
+  "constant_H_lift_nullspace": [
+    [
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "constant_H_nonlinear_solutions": [
+    {
+      "c0": "0",
+      "h0": "0",
+      "k": "-1"
+    },
+    {
+      "c0": "1",
+      "h0": "1",
+      "k": "0"
+    }
+  ],
+  "physical_unique": "H0=1,L^-2=1,k=0; H0=0 solution excluded by L^-2>0",
+  "all_assertions_pass": true
+}

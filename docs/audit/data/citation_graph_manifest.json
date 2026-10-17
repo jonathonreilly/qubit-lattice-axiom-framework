@@ -1,6 +1,6 @@
 {
- "edge_count": 16188,
- "node_count": 7221,
+ "edge_count": 16189,
+ "node_count": 7222,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19521,6 +19521,10 @@
   "scalar_accelerated_coherent_count_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "scalar_background_observations_note_2026-10-17": {
+   "deps_hash": "1cc67ba7f4de",
+   "out_degree": 1
   },
   "scalar_cosmological_inverse_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",

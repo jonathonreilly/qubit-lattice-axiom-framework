@@ -1,0 +1,16 @@
+loop: scalar-background-observations-20261017
+mode: direct
+owner: root
+base: 84ec6fdfe5861a42ef9ee9448f111098cdd3816f
+runtime: null
+scheduler: false
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: partially_closes
+phase: milestone-published
+active_route: distance-drift kinematics and original-action twins
+next_action: direct local endpoint/source matching for the two fixed candidates
+open_imports: [FLRW observational map, clock calibration, distance shape gain, continuum error envelopes, scalar perturbation and environment identification]
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9670
+owned_research_jobs: []

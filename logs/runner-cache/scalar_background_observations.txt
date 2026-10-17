@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/scalar_background_observations.py
+runner_sha256: 330db200edfca64b886451dab5d8588300c1991aeb65fd41881acbe5363fca29
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+PASS: lift_expansion
+PASS: rank_four
+PASS: recovered_parameters
+PASS: continuum_compatibility
+PASS: distance_ODE
+PASS: drift_identity
+PASS: flat_integral
+PASS: fifth_point
+PASS: wrong_scale_rejected
+PASS: drift_sign_mutation_rejected
+PASS: curvature_sign_control
+PASS: coasting_family
+PASS: coasting_rank_two
+PASS: ratio_derivative_kernel
+PASS: inverse_smallness
+PASS: inverse_bound
+PASS: clock_gain_symmetry
+PASS: central_cubic_error
+PASS: baseline_optimum
+PASS: twin_1/2_equation_0
+PASS: twin_1/2_equation_1
+PASS: twin_1/2_equation_2
+PASS: twin_1/2_equation_3
+PASS: twin_1/2_metric
+PASS: twin_1/2_density
+PASS: twin_1/2_F_positive
+PASS: twin_1/2_V_positive
+PASS: twin_1/2_F_monotone
+PASS: twin_1/2_V_scaled_monotone
+PASS: twin_1/4_equation_0
+PASS: twin_1/4_equation_1
+PASS: twin_1/4_equation_2
+PASS: twin_1/4_equation_3
+PASS: twin_1/4_metric
+PASS: twin_1/4_density
+PASS: twin_1/4_F_positive
+PASS: twin_1/4_V_positive
+PASS: twin_1/4_F_monotone
+PASS: twin_1/4_V_scaled_monotone
+PASS: distinct_scalar_histories
+PASS: canonical_matter_slopes_distinct
+PASS: rank_three_physical_unique
+PASS: twins_same_drift
+PASS: tensor_canonical_mode
+PASS: tensor_q_1/2
+PASS: tensor_F_recovery_1/2
+PASS: tensor_Q_recovery_1/2
+PASS: tensor_E_recovery_1/2
+PASS: tensor_q_1/4
+PASS: tensor_F_recovery_1/4
+PASS: tensor_Q_recovery_1/4
+PASS: tensor_E_recovery_1/4
+PASS: tensor_twins_distinct
+PASS: endpoint_compensation_example
+TOTAL: PASS=54 FAIL=0
+
+----- stderr -----
+

@@ -600,7 +600,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - "About 18 counterterms" is suggested only. The tuning at tree level stays about 1e-27.
 - **Strongest correct statement (referee).** Class S removes exact corner conservation, and it permits cubic- and gauge-symmetric light–light density and kinetic operators, including three new CPT-even kinetic tensors. Their coefficients are not forced to equal the CKM Yukawa's, but they are generically unprotected and disastrously large without extra structure. So: CLS-PRICE, with a candidate Θ plus about 1e-27 kinetic tuning, within one-body proxies and a toy loop. The many-body SMG fate stays open.
 
-**QMC-1 result (17:03Z; same family; referee launched).** Mechanical reading OPEN, because the pre-registered gap estimator E1 fails at strong coupling. Every replacement estimator able to resolve an open gap at both sizes gives GPR-PILOT (E2, E3, E3w, declared in follow-ups D and E before the L6 results). Worker's reading: GPR-PILOT, conditional on the estimator.
+**QMC-1 result (17:03Z; same family; referee launched).** Mechanical reading OPEN, because the pre-registered gap estimator E1 fails at strong coupling. Every replacement estimator able to resolve an open gap at both sizes gives GPR-PILOT (E2, E3, E3w, declared in follow-ups D and E before the L6 results). Worker's reading: GPR-PILOT, conditional on the estimator. [Referee: CONFIRMED WITH CORRECTIONS. The correct fixed reading is OPEN. See below.]
 - **Validation gate: all four items passed.**
   - (i) W = 0 matches the free G to 6e-14.
   - (ii) Phase ≤ 3e-9 on every proposal.
@@ -620,3 +620,19 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **1+1D, L = 8 and 16:** at W = 1 the mirror gap is open (about 2.0) and stable, and S10 does not grow. NT-3's near-light soft mode is not tested.
 - **Cost:** 2+1D L = 8 is about 93 core-hours per 1000 sweeps per W; 3+1D L = 6 about 3.6e3; 3+1D L = 8 about 4.7e4 and 128–208 GB.
 - **Gauge links:** Spin(8) links containing SU(3)_c × U(1)_{B−L} keep the construction sign-free (suggested). SU(2)_L and hypercharge need a new construction, or reweighting.
+
+**QMC-1 referee (codex gpt-5.6-sol, xhigh; returned 2026-10-15 after 17:05Z; recorded 2026-10-17 10:59Z, delayed by the usage-limit stop): CONFIRMED WITH CORRECTIONS. The correct fixed reading is OPEN.**
+- **Confirmed.**
+  - **The engine:** the λ1 = 0 Hamiltonian, the 64-channel Fierz identity, the HS transformation, the determinant weight, the pCN acceptance and the Woodbury updates.
+  - **S10's normalisation.**
+  - **The size ratios at strong coupling** (0.616(23) at W = 1, then 0.984(51), 1.351(262), 0.868(103) at W = 2, 4, 8). They differ robustly from short-range scaling, especially at W = 2.
+  - **Validation (iii).** The archived corrected gate-(iii) QMC data were missing, so the referee ran an independent 3,000-sweep check. It reproduced all three ED observables within 1σ.
+- **Corrections.**
+  - **No replacement estimator measures the gap.** E1 fails. E2 measures a finite-time decay scale. E3 and E3w bound low-energy spectral weight. None measures the spectral gap, and none excludes a gapless mode with low residue.
+  - **The run lengths limit precision.** 45–60 sweeps on single chains are inadequate for precision claims.
+  - **Systematics are large.** Finite-Δτ Spin(10) pinning is substantial, and β = 4 is a finite temperature, where Mermin–Wagner excludes a true continuous condensate. "ξ ≳ 6" is a heuristic, not a measured bound.
+  - **The side claims are unequal.**
+    - The singlet-sector factorisation is correct on even periodic square lattices, but production did not use it.
+    - The Spin(8) link construction is algebraically sound but untested.
+    - The cost model is a reasonable order-of-magnitude extrapolation.
+- **Strongest correct statement (referee).** A validated sign-free AFQMC pilot shows strong 10-vector correlations spanning the box once the mirror propagator is strongly suppressed. That suggests a GPR-like crossover. It does not establish a mirror spectral gap, GPR mass generation, or SMG.

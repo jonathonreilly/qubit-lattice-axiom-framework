@@ -1,0 +1,76 @@
+kernel bracket: 48 entries; on-site kappa in [-0.01164, -0.01115]; all variants in [-0.01164, -0.00390]
+
+===== Yukawas low-scale =====
+(a1) SVD of constructed Y_u, Y_d: max rel mass error 2.9e-12; max ||V|-|V_in|| 1.0e-15; J 3.115724e-05 vs input 3.115724e-05
+
+-- kappa = -0.01164 (on-site max|k|)   [C3 basis independence of B rows: max rel diff 4.7e-48]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -8.733e-07 dR -8.733e-07 -> c-ring u +0.000e+00, d +8.733e-07; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +2.015e-07 dL -6.718e-07; worst ratio 3.36e+15  (rows: u_c 3.4e+15, u_d 3.4e+15, d_c 3.4e+15, d_d 3.4e+15, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 1.54e-34
+     + H_u only          : worst B ratio 1.01e+12
+     + H_d only          : worst B ratio 3.36e+15
+     + H_u, H_d (n=2)    : worst B ratio 1.54e-34
+  structure spreads (d_L - u_L): H_u 7.5058e-05, H_d -2.2601e-08, H_u+H_d 7.5036e-05
+  tuning (B): |dc_u|/|k| <= 3.0e-16; |dc_d|/|k| <= 9.9e-13; combined <= 3.0e-16
+  residual dv per eigenstate after per-field counterterms (B): uL:u +2.0e-07, uL:c -4.4e-07, uL:t -1.1e-02, uR:u +0.0e+00, uR:c -1.2e-06, uR:t -2.3e-02, dL:d -6.7e-07, dL:s -2.0e-05, dL:b -1.1e-02, dR:d +0.0e+00, dR:s -6.7e-09, dR:b -1.3e-05, eL:e +0.0e+00, eL:m -4.3e-09, eL:t -1.2e-06, eR:e +0.0e+00, eR:m -8.6e-09, eR:t -2.4e-06, nL:1 -3.0e-07, nL:2 -4.1e-07, nL:3 -5.1e-07, nR:1 +0.0e+00, nR:2 -5.7e-29, nR:3 -1.9e-27
+
+-- kappa = -0.01115 (on-site min|k|)   [C3 basis independence of B rows: max rel diff 8.1e-48]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -8.369e-07 dR -8.369e-07 -> c-ring u +0.000e+00, d +8.369e-07; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +1.931e-07 dL -6.438e-07; worst ratio 3.22e+15  (rows: u_c 3.2e+15, u_d 3.2e+15, d_c 3.2e+15, d_d 3.2e+15, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 2.45e-34
+     + H_u only          : worst B ratio 9.70e+11
+     + H_d only          : worst B ratio 3.22e+15
+     + H_u, H_d (n=2)    : worst B ratio 2.45e-34
+  structure spreads (d_L - u_L): H_u 7.5058e-05, H_d -2.2601e-08, H_u+H_d 7.5036e-05
+  tuning (B): |dc_u|/|k| <= 3.1e-16; |dc_d|/|k| <= 1.0e-12; combined <= 3.1e-16
+  residual dv per eigenstate after per-field counterterms (B): uL:u +1.9e-07, uL:c -4.2e-07, uL:t -1.1e-02, uR:u +0.0e+00, uR:c -1.2e-06, uR:t -2.2e-02, dL:d -6.4e-07, dL:s -1.9e-05, dL:b -1.1e-02, dR:d +0.0e+00, dR:s -6.4e-09, dR:b -1.3e-05, eL:e +0.0e+00, eL:m -4.1e-09, eL:t -1.2e-06, eR:e +0.0e+00, eR:m -8.2e-09, eR:t -2.3e-06, nL:1 -2.8e-07, nL:2 -3.9e-07, nL:3 -4.9e-07, nR:1 +0.0e+00, nR:2 -5.4e-29, nR:3 -1.8e-27
+
+-- kappa = -0.00390 (variant min|k|)   [C3 basis independence of B rows: max rel diff 6.0e-48]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -2.925e-07 dR -2.925e-07 -> c-ring u +0.000e+00, d +2.925e-07; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +6.750e-08 dL -2.250e-07; worst ratio 1.12e+15  (rows: u_c 1.1e+15, u_d 1.1e+15, d_c 1.1e+15, d_d 1.1e+15, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 6.72e-34
+     + H_u only          : worst B ratio 3.39e+11
+     + H_d only          : worst B ratio 1.13e+15
+     + H_u, H_d (n=2)    : worst B ratio 6.72e-34
+  structure spreads (d_L - u_L): H_u 7.5058e-05, H_d -2.2601e-08, H_u+H_d 7.5036e-05
+  tuning (B): |dc_u|/|k| <= 8.9e-16; |dc_d|/|k| <= 3.0e-12; combined <= 8.9e-16
+  residual dv per eigenstate after per-field counterterms (B): uL:u +6.7e-08, uL:c -1.5e-07, uL:t -3.8e-03, uR:u +0.0e+00, uR:c -4.2e-07, uR:t -7.7e-03, dL:d -2.2e-07, dL:s -6.6e-06, dL:b -3.8e-03, dR:d +0.0e+00, dR:s -2.2e-09, dR:b -4.5e-06, eL:e +0.0e+00, eL:m -1.4e-09, eL:t -4.1e-07, eR:e +0.0e+00, eR:m -2.9e-09, eR:t -8.1e-07, nL:1 -9.9e-08, nL:2 -1.4e-07, nL:3 -1.7e-07, nR:1 +0.0e+00, nR:2 -1.9e-29, nR:3 -6.4e-28
+
+===== Yukawas x0.45 =====
+(a1) SVD of constructed Y_u, Y_d: max rel mass error 1.5e-12; max ||V|-|V_in|| 9.7e-15; J 3.115724e-05 vs input 3.115724e-05
+
+-- kappa = -0.01164 (on-site max|k|)   [C3 basis independence of B rows: max rel diff 1.2e-47]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -1.769e-07 dR -1.769e-07 -> c-ring u +0.000e+00, d +1.769e-07; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +4.081e-08 dL -1.360e-07; worst ratio 6.80e+14  (rows: u_c 6.8e+14, u_d 6.8e+14, d_c 6.8e+14, d_d 6.8e+14, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 7.82e-34
+     + H_u only          : worst B ratio 2.05e+11
+     + H_d only          : worst B ratio 6.80e+14
+     + H_u, H_d (n=2)    : worst B ratio 7.82e-34
+  structure spreads (d_L - u_L): H_u 1.5199e-05, H_d -4.5767e-09, H_u+H_d 1.5195e-05
+  tuning (B): |dc_u|/|k| <= 1.5e-15; |dc_d|/|k| <= 4.9e-12; combined <= 1.5e-15
+  residual dv per eigenstate after per-field counterterms (B): uL:u +4.1e-08, uL:c -8.8e-08, uL:t -2.3e-03, uR:u +0.0e+00, uR:c -2.5e-07, uR:t -4.6e-03, dL:d -1.4e-07, dL:s -4.0e-06, dL:b -2.3e-03, dR:d +0.0e+00, dR:s -1.4e-09, dR:b -2.7e-06, eL:e +0.0e+00, eL:m -8.7e-10, eL:t -2.5e-07, eR:e +0.0e+00, eR:m -1.7e-09, eR:t -4.9e-07, nL:1 -6.0e-08, nL:2 -8.3e-08, nL:3 -1.0e-07, nR:1 +0.0e+00, nR:2 -1.2e-29, nR:3 -3.9e-28
+
+-- kappa = -0.01115 (on-site min|k|)   [C3 basis independence of B rows: max rel diff 8.4e-48]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -1.695e-07 dR -1.695e-07 -> c-ring u +0.000e+00, d +1.695e-07; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +3.911e-08 dL -1.304e-07; worst ratio 6.52e+14  (rows: u_c 6.5e+14, u_d 6.5e+14, d_c 6.5e+14, d_d 6.5e+14, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 2.13e-34
+     + H_u only          : worst B ratio 1.96e+11
+     + H_d only          : worst B ratio 6.52e+14
+     + H_u, H_d (n=2)    : worst B ratio 2.13e-34
+  structure spreads (d_L - u_L): H_u 1.5199e-05, H_d -4.5767e-09, H_u+H_d 1.5195e-05
+  tuning (B): |dc_u|/|k| <= 1.5e-15; |dc_d|/|k| <= 5.1e-12; combined <= 1.5e-15
+  residual dv per eigenstate after per-field counterterms (B): uL:u +3.9e-08, uL:c -8.4e-08, uL:t -2.2e-03, uR:u +0.0e+00, uR:c -2.4e-07, uR:t -4.4e-03, dL:d -1.3e-07, dL:s -3.8e-06, dL:b -2.2e-03, dR:d +0.0e+00, dR:s -1.3e-09, dR:b -2.6e-06, eL:e +0.0e+00, eL:m -8.3e-10, eL:t -2.4e-07, eR:e +0.0e+00, eR:m -1.7e-09, eR:t -4.7e-07, nL:1 -5.7e-08, nL:2 -7.9e-08, nL:3 -9.9e-08, nR:1 +0.0e+00, nR:2 -1.1e-29, nR:3 -3.7e-28
+
+-- kappa = -0.00390 (variant min|k|)   [C3 basis independence of B rows: max rel diff 1.7e-47]
+  A (literal, printed rows): dv uL +0.000e+00 uR +0.000e+00 | dL -5.923e-08 dR -5.923e-08 -> c-ring u +0.000e+00, d +5.923e-08; d-ring u +0.0e+00, d +0.0e+00; worst ratio 0.00e+00
+  B (two-sided per component), per-field counterterms only: dv uL +1.367e-08 dL -4.556e-08; worst ratio 2.28e+14  (rows: u_c 2.3e+14, u_d 2.3e+14, d_c 2.3e+14, d_d 2.3e+14, e 0.0e+00)
+     + H_u+H_d (n_min=1) : worst B ratio 1.84e-34
+     + H_u only          : worst B ratio 6.86e+10
+     + H_d only          : worst B ratio 2.28e+14
+     + H_u, H_d (n=2)    : worst B ratio 1.84e-34
+  structure spreads (d_L - u_L): H_u 1.5199e-05, H_d -4.5767e-09, H_u+H_d 1.5195e-05
+  tuning (B): |dc_u|/|k| <= 4.4e-15; |dc_d|/|k| <= 1.5e-11; combined <= 4.4e-15
+  residual dv per eigenstate after per-field counterterms (B): uL:u +1.4e-08, uL:c -3.0e-08, uL:t -7.8e-04, uR:u +0.0e+00, uR:c -8.4e-08, uR:t -1.6e-03, dL:d -4.6e-08, dL:s -1.3e-06, dL:b -7.7e-04, dR:d +0.0e+00, dR:s -4.5e-10, dR:b -9.1e-07, eL:e +0.0e+00, eL:m -2.9e-10, eL:t -8.2e-08, eR:e +0.0e+00, eR:m -5.8e-10, eR:t -1.6e-07, nL:1 -2.0e-08, nL:2 -2.8e-08, nL:3 -3.5e-08, nR:1 +0.0e+00, nR:2 -3.9e-30, nR:3 -1.3e-28
+
+saved gen1_assembly_archive.npz
+watchdog peak RSS 39280 KB

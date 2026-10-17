@@ -1,0 +1,23 @@
+=== (a2) filter f_Gamma and exact decoupling at Gamma ===
+f_Gamma at corners: {'000': np.float64(0.0), '001': np.float64(1.0), '010': np.float64(1.0), '011': np.float64(2.0), '100': np.float64(1.0), '101': np.float64(2.0), '110': np.float64(2.0), '111': np.float64(3.0)}
+41^3 grid: min f_Gamma = 0.000e+00; min f_Gamma at |k| > 0.3 = 2.447e-02  (zero only at Gamma)
+f_Gamma real-space support (L=4): 7 nonzero offsets
+max over 24 spin-lifted rotations |[R, X]|: {'HW': '1.2e-16', 'FG': '9.9e-16'}  translations: {'HW': '0.0e+00', 'FG': '0.0e+00'}
+Fock L=2, filtered (f_Gamma): ||H_N=3|| = 6.05; max|[H, psi(Gamma)]| = 0.00e+00; max|[H, psi(mirror corners)]| = 6.05e+00
+Fock L=2, control: unfiltered (f=1): ||H_N=3|| = 0.16; max|[H, psi(Gamma)]| = 1.55e-01; max|[H, psi(mirror corners)]| = 1.55e-01
+(walker vanishes identically on the L=2 torus: sin(0) = sin(pi) = 0, so H = W.Q there, as in X2 T2)
+
+=== (a3) cyclic Z16 gates over corner sets (chi_c = (-1)^hw, X2 convention), nu_g = d*Ngen*sum_c chi_c (-1)^{g.c} mod 16 ===
+  X2' mirror (7 corners, x3 gens), d=16: nu_g over g in Z2^3 = [0, 0, 0, 0, 0, 0, 0, 0]
+  X2' mirror (7 corners, x3 gens), d=15: nu_g over g in Z2^3 = [3, 3, 3, 3, 3, 3, 3, 11]
+  X2' light (Gamma, x3 gens), d=16: nu_g over g in Z2^3 = [0, 0, 0, 0, 0, 0, 0, 0]
+  X2' light (Gamma, x3 gens), d=15: nu_g over g in Z2^3 = [13, 13, 13, 13, 13, 13, 13, 13]
+  X2 mirror (5 corners), d=16: nu_g over g in Z2^3 = [0, 0, 0, 0, 0, 0, 0, 0]
+  X2 mirror (5 corners), d=15: nu_g over g in Z2^3 = [13, 15, 15, 1, 15, 1, 1, 11]
+  Spin(10) minimal instanton: 4 zero modes per 16 (T(16)=2); phase of the 't Hooft vertex under g.i^F at corner c is i^(4 * Ngen * sum chi (+-1)) = 1 for every g and corner set: True
+
+=== (a4) first-order traceless strain at a corner: multiplicity of (E+T2)|_little in operator spaces ===
+  Gamma: |little group| = 24; mult(E+T2 in End C^2) = 0.000; mult(E+T2 in pairing C^2xC^2) = 0.000  (flavour index internal: x 9 for any 3x3 flavour data)
+  hw1 (pi,0,0): |little group| = 8; mult(E+T2 in End C^2) = 2.000; mult(E+T2 in pairing C^2xC^2) = 2.000  (flavour index internal: x 9 for any 3x3 flavour data)
+done (10s)
+watchdog peak RSS 251840 KB

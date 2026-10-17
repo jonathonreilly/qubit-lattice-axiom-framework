@@ -701,3 +701,20 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
   - Side finding: at Lx = 4 with the hard weight, even the Wilson kernel has an unresolved negative λ_min.
 
 **Referee queue (recorded 11:46Z 10-17).** The codex account hit its usage limit; it resets 2026-10-22 02:13. The TOR-1 referee failed at start (`ref_TOR1/codex_run.log`). Queued for the other-vendor referee once codex resets: TOR-1, GEN-1, QMC-1b. Until then these results are same-family and unrefereed, and are labelled so.
+
+**GEN-1 result (11:47Z 10-17; same family; referee queued for codex reset): GEN-CONE(n). n ≤ 8 under every counting rule (literal 0, two-sided 2, all-terms ≤ 8).**
+- **X2′ places 3×16 at Γ as an internal label; a1–a5 hold.**
+  - CKM is free: the Yukawa sector is the SM's.
+  - Tree-level ΔF = 2 is SM-only (NFC).
+  - X2-L1 and L2 hold at Γ (checked: the commutator is 0.00).
+  - Z₁₆ needs ν_R. The mixed Z₂³ anomaly vanishes by a twist argument, which rests on recalled bordism values. The same argument closes X2's 5-corner mirror item.
+  - No first-order strain channel (the little group is O).
+- **One-loop LV.**
+  - The structure is proved: Q ∝ κ(H_u + H_d), and so on.
+  - No texture escape: a zero needs a permutation CKM.
+  - The d_L–u_L spread is 0.6–8.7e-7, ×1e14–1e15 over the clean rows, two-sided.
+  - Removing it takes 2 covariant counterterms, H_u and H_d, tuned to 3e-16 – 4e-15.
+  - Under the one-sided rows exactly as printed it passes with n = 0, but only through a subluminal d quark (unchecked loophole).
+- **Side findings.** A two-loop spread of about 1e-8 needs counterterms at each order. All-orders exclusion of flavour-dependent on-site offsets needs a Θ-type lattice CPT.
+- **Cost.** 96 modes per site, and the "3" is put in by hand.
+- **Reading (supervisor).** X2′ swaps the corner package's FCNC and lattice-scale-breaking prices for the generic set-C Lorentz-violation tuning class: the same wall as gravity's matter light cones.

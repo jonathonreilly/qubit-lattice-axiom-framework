@@ -1,0 +1,86 @@
+[
+  {
+    "id": "J:derive:review-20261017-cubic-fractional-doublet-localization:a1",
+    "problem": "review-20261017-cubic-fractional-doublet-localization",
+    "title": "Construct a genuine cubic symmetry action and localize a fractional fermion doublet",
+    "type": "judgment",
+    "lane": "review-science-20261017",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Advance one precise interface toward a bosonic site-local cubic code with a genuine proper-cubic O action, ordinary local excitations, and a fermionic charge with an internal representation of dimension at least two whose localized symmetry carries w2. Choose ONE new construction, exact localization lemma, compatible vacuum construction or rigorously scoped obstruction. State the full Hilbert-space group action and group law, the charge/local-operator quotient and admissible dressings, and the vacuum reference. A central extension acting nontrivially on local excitations is not a genuine O action; the supplied C15 matter-only 2O action and clean-pair signs do not solve this target. For a positive fractionalization result, construct the localized operators and prove their composition/gauge equivalence and representative invariance, including the D2 restrictions; a multiplication of pair eigenvalues alone is insufficient. For a vacuum result, distinguish an invariant code subspace or ray from a common phase-one vector for a consistently phased group representation, and state finite-volume, boundary and any infinite-volume scope. A useful exact partial result or counterexample is welcome; identify the first remaining obstruction without turning finite search failure into a universal exclusion.",
+    "what": "Advance one precise interface toward a bosonic site-local cubic code with a genuine proper-cubic O action, ordinary local excitations, and a fermionic charge with an internal representation of dimension at least two whose localized symmetry carries w2. Choose ONE new construction, exact localization lemma, compatible vacuum construction or rigorously scoped obstruction. State the full Hilbert-space group action and group law, the charge/local-operator quotient and admissible dressings, and the vacuum reference. A central extension acting nontrivially on local excitations is not a genuine O action; the supplied C15 matter-only 2O action and clean-pair signs do not solve this target. For a positive fractionalization result, construct the localized operators and prove their composition/gauge equivalence and representative invariance, including the D2 restrictions; a multiplication of pair eigenvalues alone is insufficient. For a vacuum result, distinguish an invariant code subspace or ray from a common phase-one vector for a consistently phased group representation, and state finite-volume, boundary and any infinite-volume scope. A useful exact partial result or counterexample is welcome; identify the first remaining obstruction without turning finite search failure into a universal exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. Known starting evidence: corrected occupation parities, D=B_link P_up P_dn, exact matter exterior-algebra action, finite fermionic junction signs, local-spinor representative dependence and finite invariant-ray tests. Repeating those or relabelling an inherited spinor is not a new HIT. The five-qubit model is supplied, not derived from the one-qubit framework; state every physical import. Keep C12 representative caveats, C8 conditional D3/single-C2 inference and open D2 localization, and prior unadopted exclusion candidates intact. Before work, reconcile active claims/current main and related signed-corner task; this target is an interacting charged-sector/localization problem, not a second corner-walk classification.",
+    "source_branch": {
+      "name": "main",
+      "head": "a3fbc858bc08bd5e152effc4e681062652367840",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+      ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/README.md",
+      "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py",
+      "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+        "sha256": "b59642396f48c846435003365fe8869126b845526d029e1314f5e9f9486c1847",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
+        "sha256": "a7a6dd0a4d5e3af188cda818c3cbb070095982e0b2024dd8022ea06d21be9a40",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/README.md",
+        "sha256": "8360246d7fbc2eaaf3904a7b87208a2bc93804ab778f83011ee0934bf3390914",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "sha256": "0a9afc47c2a0f07cb2ee3ed084035752a9789ee128e709426f95f8a2110a28c9",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "sha256": "b9cdc90d3a9b49a067a528c476cf95c6eab4feae775ea48997b9b1bb7bb06717",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "sha256": "23ef3bdac1bd0bc49624846cef99d8a3d212d9547fb4323b2f9e315f7d2626ff",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py",
+        "sha256": "2bada2e18c5e4cf0783a6b5e0c3c4deadc05b55213df6ad51fd4c43d5c53d48e",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      },
+      {
+        "path": "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py",
+        "sha256": "053cbe8d3cf02759988b941c19b18e1720b4252c50b2f3c299461b803c3ffc60",
+        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+      }
+    ],
+    "related_tasks": [
+      "J:derive:review-20261016-signed-corner-extensions:a1"
+    ]
+  }
+]

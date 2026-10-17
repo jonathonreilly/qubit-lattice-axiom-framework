@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.08680045790970325,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/tradeoff_validation/mutation_weighted_derivative/stdout.txt",
+      "bytes": 7854,
+      "sha256": "4c47ba5770bc633579e3a98a79a2f894ad19dbcfdeaeeacac1df7b7ffd5f889b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/tradeoff_validation/mutation_weighted_derivative/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

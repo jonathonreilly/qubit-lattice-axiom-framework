@@ -254,6 +254,48 @@
       "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/SOURCE_PINS.json"
     },
     {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/CONJUGATE_PACKET_QUALIFICATION.md.txt",
+      "bytes": 1401,
+      "sha256": "e7d5f9920fcdf5666dc5e09e55a609234b95d3fefa355f60d4b823871ff59032",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/CONJUGATE_PACKET_QUALIFICATION.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/ENDPOINT_COLUMN_QUALIFICATION.md.txt",
+      "bytes": 1165,
+      "sha256": "130cf97149689ec0d91d960595ef9a5e207e8b07932943463b7c200742fadc8e",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/ENDPOINT_COLUMN_QUALIFICATION.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_independent_check/REVIEW.md.txt",
+      "bytes": 13817,
+      "sha256": "5df64d41d870b25589e2c783151857c241c301eb2a37e22c054a9102e0322f34",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/conjugate_packet_independent_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_tradeoff_proposal/PROPOSAL.md.txt",
+      "bytes": 17254,
+      "sha256": "c49c0f7cd3af2c939085cee80883f4a36024b4979992bba1ee7628eb4b8961ac",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/conjugate_packet_tradeoff_proposal/PROPOSAL.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/endpoint_column_independent_check/REVIEW.md.txt",
+      "bytes": 15772,
+      "sha256": "bc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_column_independent_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/weighted_core_derivative_proposal/PROPOSAL.md.txt",
+      "bytes": 11846,
+      "sha256": "08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e",
+      "role": "Frozen conditional tradeoff derivation/review; not executed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/weighted_core_derivative_proposal/PROPOSAL.md"
+    },
+    {
       "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt",
       "bytes": 39464,
       "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",

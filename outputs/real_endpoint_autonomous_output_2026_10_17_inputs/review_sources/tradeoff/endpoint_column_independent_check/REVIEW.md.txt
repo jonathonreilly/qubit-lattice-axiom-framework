@@ -1,0 +1,190 @@
+# Independent check of the endpoint-column inverse refinement
+
+## Finding
+
+The proposed endpoint-column refinement is supported under the exact canonical note's supplied model and qualified kernel/Schur premises. I found no counterexample, missing norm factor, reference-plane mismatch, or endpoint compensation error. The interface in proposal equations (1)–(3) is valid for the actual 896-coordinate background and 904-coordinate completed core. Its claimed inverse, weighted derivative, pointwise trace and localized bounds follow with strict margins.
+
+This is a conditional mathematical refinement, not a new physical premise, retained audit, whole-device simulation or onset promotion. The published T=10^42 theorem is unchanged. No original calibration certificate or publication runner was rerun.
+
+## Exact sources and exposure
+
+The complete proposal reviewed is `sources/PROPOSAL.md`, SHA256 `08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e`, from the parent's `weighted_core_derivative_proposal/PROPOSAL.md`.
+
+The complete canonical note reviewed is `sources/CANONICAL_NOTE.md`, SHA256 `b1d71a544a399ad3b908fd3c85d576769fece6a95247c64d4505523a481c0d4c`, obtained by `git show b9ac0cddb3e82650137df9cec41fb24124d539e9:docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`. The Git object, not a moving worktree file, controls this review. `SOURCE_PINS.json` gives byte lengths, exact original identities, preserved copies and read scopes.
+
+AGENTS.md, SCIENCE_WORKFLOW.md, physics-claim-reviewer/SKILL.md, SKILL_FRESHNESS_CHECK.md and proof-search-governance.md at that same commit were verified byte-identical to this reviewer's complete earlier reads at 84ec6fdfe5861a42ef9ee9448f111098cdd3816f. Those prior reads were reused. The reviewer skill applies to this mathematical claim review; no audit or landing workflow was invoked.
+
+This reviewer previously checked the original real two-port structural and quantitative (A)–(E) argument, with disclosed source exposure. The present proposal and canonical argument were read before reconstruction; this is not blind or model-diverse review. The author's previous WEIGHTED_REVIEW.md, cited in the proposal, was not opened: the canonical note itself contains the necessary current weighted/spectral premises and their argument. No author or publication checker, output cache, mutation report or historical program was opened. No scientific executable was run; arithmetic below was checked analytically. File reads, git show, source copying, hashing and bookkeeping are the only executions.
+
+## 1. Scope of the pre-deletion block bound
+
+The needed `G(s,end)` and `G(s,b)` are physical 8-by-8 internal blocks of the intermediate two-port operator before input termination, where s ranges over the 112 background core head positions. The canonical note's lines 417–425 do cover this full scope, not merely two external open-channel amplitudes.
+
+Here is an independent reconstruction of that coverage. For one bare arm, the 16-dimensional contact matching inverse bounds core/core blocks by 166. The core/tail blocks follow from the recurrence as R E1 Q^(n-1), or their transpose, so their norms are at most 166 because ||Q||=1. A tail/tail block is A Q^|n-m|+Q^(n-1)Tg Q^(m-1), of norm at most 40+206=246. Thus every bare physical site-to-site block, including contact sites and arbitrarily distant sites, is below 250.
+
+For the two-site filter, each map from one physical site to the two perturbation sites has norm at most sqrt(2)*250. The local perturbation norm is below 1/20 and its full 16-dimensional response inverse is below 2000. Its contribution to any site-to-site kernel therefore has norm below
+
+    2*250^2*(1/20)*2000=12,500,000.
+
+Adding the bare block gives 12,500,250<13,000,000. The other arm is unchanged. A physical coordinate after the real lead mixing is a linear combination of at most two orthonormal head coordinates. At each of the two block ends the coefficient absolute sum is at most sqrt(2), so a factor two suffices even without exploiting zeros in the arm direct sum. Every required mixed physical block is therefore below 26,000,000<30,000,000. This applies uniformly to both end=20 and b=21 on the input port and to every retained arm, input or output-zero site s. No source degree of freedom was dropped.
+
+The filter response and bare inverse are inherited qualified bounds; this argument verifies their use and coordinate coverage rather than independently recalibrating them.
+
+## 2. Endpoint column and reference plane
+
+Use the canonical port coordinates m,n>=0, with end=ell=20 and b=ell+1=21. Its full internal kernel is
+
+    G(m,n)=A Q^|m-n|+Q^m T_aa Q^n.
+
+Set X=Q^ell T_aa Q^ell. Since A and Q commute, but T_aa need not commute with Q,
+
+    G(b,end)=AQ+Q^(ell+1)T_aa Q^ell=Q(A+X),
+    G(end,b)=(A+X)Q.
+
+Both are exact physical Green blocks. No scattering-amplitude normalization, traveling-wave reference-plane shift, or commutation of T_aa through Q is used. The canonical bounds imply
+
+    ||A+X|| <=40+40*(12e-6)+1e-28 <41,
+    ||G(b,end)||<41.
+
+This is the particular neighboring block that the generic bound had overestimated. Keeping only the scalar open component here would have been invalid; the identity and bound above retain all eight internal components.
+
+At positive imaginary spectral part, removing b is the ordinary block resolvent deletion. Taking the already controlled retarded limit gives
+
+    Gtr(s,end)=G(s,end)-G(s,b)Gbb^-1 G(b,end).
+
+Removal of b disconnects its outer tail; that disconnected component does not change the retained-side kernel. The canonical uniform bound ||Gbb^-1||<22 guarantees this is well-defined. Consequently
+
+    ||Gtr(s,end)|| <3e7(1+22*41)=2.709e10<3e10.
+
+This confirms proposal (1). The endpoint is still the old input site ell at this stage; the deleted b has not yet been reintroduced as a different emitter block. Confusing those stages would invalidate this calculation, but the proposal keeps them separate.
+
+## 3. Literal background core and endpoint compensation
+
+The retained background has 45+45 arm sites, 21 input sites m=0,...,20, and output site m=0: 112 head positions. Each parity fiber is eight-dimensional, giving 896 coordinates. The completed core adds the eight-dimensional emitter fiber, giving 113*8=904 coordinates. The output sites m>=1 are eliminated by the same retarded free-tail self-energy in both problems. The source/old subsystem is an internal fiber shared across head positions; it does not add separate head sites or double this count.
+
+Let E be the real coordinate inclusion at input end into this 896-dimensional background. Its columns are orthonormal, E*=E^T and ||E||=1. The background finite matching matrix is the compression of the terminated Hamiltonian with the output self-energy included. Its inverse R_bg is exactly the 896-coordinate restriction of Gtr: eliminating an unchanged free output tail and taking the finite core kernel are the same Schur operation. The uniform retarded kernel construction supplies invertibility here; no bounded inverse on the entire continuous-spectrum Hilbert space is claimed.
+
+There is a potentially consequential compensation issue, and it checks correctly. Deleting the ordinary end-to-b bond while preserving the Dirichlet compression leaves end's diagonal 2J, implemented in the background by one remaining ordinary bond plus J n_end. When the emitter is installed, Q(-kappa) contributes +kappa on end and +kappa on the emitter. The added (J-kappa)n_end and (E0-kappa)n_e yield total diagonals 2J and E0 respectively. Thus the end diagonal of the completed core's background compression remains exactly the same 2J. Removing the emitter coordinate algebraically does not remove the +kappa diagonal contribution already in that compression.
+
+There is no extra vacancy scalar in this installation. B acts once as the common internal operator and c_new is unchanged. The emitter coupling to background is precisely -kappa E in H and +kappa E in lambda-H. The old input location b may be reused geometrically for the emitter without identifying its original free-site diagonal or -J bond with the new E0 diagonal or -kappa bond.
+
+## 4. Block norms and complex transpose
+
+For any y=(y_1,...,y_112) with y_s in C^8, the generic bound ||(R_bg)_st||<2e16 gives
+
+    ||(R_bg y)_s|| <=2e16 sum_t ||y_t||,
+    ||R_bg|| <112*2e16=2.24e18.
+
+For any v in C^8, the newly bounded endpoint column gives
+
+    ||R_bg E v||^2=sum_s ||Gtr(s,end)v||^2
+                   <112*(3e10)^2 ||v||^2,
+    ||R_bg E||^2<1.008e23.
+
+These are operator block estimates, not entrywise scalar estimates. No additional factor of eight belongs in either line. A factor eight will be needed later when taking a trace over an eight-dimensional diagonal block.
+
+The real physical Hamiltonian is symmetric in the fixed real basis. Its retarded self-energy JQ is complex symmetric, because Q is a complex linear combination of fixed real symmetric orthogonal projectors. Thus the finite matching matrix and R_bg are complex symmetric; Hermiticity is neither true nor required. Since E is real,
+
+    E^T R_bg=(R_bg E)^T.
+
+For any rectangular complex V, V^T=conjugate(V*) and entrywise conjugation is an antiunitary isometry on the domain and codomain. Hence ||V^T||=||V*||=||V|| in the Euclidean operator norm. This does not say V^T=V* or make V^T V positive. The proposal uses the transpose only in the exact symmetric Schur identity and uses V*V separately to compute its norm, which is the correct distinction.
+
+## 5. Complete emitter Schur update
+
+In background/emitter order the actual matching matrix is
+
+    M=[[R_bg^-1,kappa E],[kappa E^T,Dbare]],
+    Dbare=(lambda-E0)I-B,
+    De=Dbare-kappa^2 E^T R_bg E.
+
+This De agrees with the canonical eight-dimensional emitter Schur complement because E^T R_bg E=Gtr(end,end). The source bounds its full inverse by 1e23, including the seven complementary internal directions.
+
+Direct block elimination, keeping every internal direction, gives
+
+    M^-1=[[R_bg+kappa^2 R_bg E De^-1 E^T R_bg,
+                   -kappa R_bg E De^-1],
+          [-kappa De^-1 E^T R_bg,De^-1]]
+         =diag(R_bg,0)+V De^-1 V^T,
+    V=[-kappa R_bg E; I8].
+
+The signs can also be checked by multiplying M into its displayed emitter column. The update has at most rank eight; no rank-one emitter approximation is used.
+
+Now V*V=I+kappa^2(R_bg E)*(R_bg E), a positive Hermitian matrix. Therefore
+
+    ||V||^2=1+kappa^2||R_bg E||^2<1.1008,
+    ||M^-1||<2.24e18+1.1008e23
+             =1.1008224e23<1.2e23.
+
+The margin to 1.2e23 is 0.0991776e23. This confirms proposal (4) and the primary inverse lemma on the actual orthonormal 904-coordinate core. It needs neither an averaged inverse nor a derivative of De^-1.
+
+## 6. Weighted derivative and full localized column
+
+The physical incoming vector u=P_out u_j is fixed and real. At each selected old energy, lambda=b_j+E(k); b_j and all physical coefficients are k-independent. Differentiating Mx=iE'u gives exactly
+
+    x'=M^-1(iE''u-M'x).
+
+The original bounds ||M'||<.1, |E''|<.061, integral|f|<.002 and integral|f|||x||<86 apply to this same x and f. The last follows from the canonical finite-core spectral measure and normalized f: integral||x||^2<=2pi*904<7232<86^2, followed by Cauchy–Schwarz. It is not a change of generalized-column normalization. Thus
+
+    integral|f|||x'||<1.2e23(.061*.002+.1*86)
+                       =1.03201464e24<1.1e24.
+
+The localized remainder subtracts 1+R only at output core coordinate m=0. Its finite derivative therefore costs at most ||x'||+|R'|. On the sole output tail m>=1, the closed coordinates are Qc^m Pc x_out. All seven projections are fixed; the geometric series and its derivative give the source coefficients 1/6 and 1/20. Consequently
+
+    integral|f|||C'|| <=(7/6)integral|f|||x'||
+                        +integral|f||R'|+(1/20)integral|f|||x||
+                      <(7/6)*1.1e24+1e15+4.3<1.3e24.
+
+The margin between 1.3e24 and (7/6)*1.1e24 is (1/60)*1e24, much larger than 1e15+4.3. The imported integrated reflection-derivative estimate remains the canonical corrected <1e15 result using pi<10/3. No reflection-phase derivative was dropped or hidden in C.
+
+## 7. Pointwise trace and localized integration by parts
+
+For each of the 112 background diagonal blocks, the exact update in section 5 implies
+
+    ||(M^-1)_ss||<2e16+kappa^2*(3e10)^2*1e23
+                  =9.002e19<1e20.
+
+The emitter diagonal is exactly De^-1, bounded by 1e23. To independently fix the trace normalization, M-M*=iE' uu* and x=iE'M^-1u imply
+
+    M^-1-(M^-1)*=-(i/E')xx*,
+    ||x||^2=-2E' Im tr(M^-1).
+
+This is the rank-one open-channel jump, not a rank-one emitter assumption. Bounding each trace by eight times its 8-by-8 operator norm now correctly gives
+
+    ||x||^2<.122*8*(112*1e20+1e23)
+             =1.085312e23<1.1e23<(4e11)^2.
+
+There is no extra factor two for parity: the calculation fixes one parity/old-energy channel. Thus ||x||<4e11, and the complete localized column, including its closed tail, obeys
+
+    ||C||<(7/6)*4e11+2<5e11.
+
+For a_in=omega_p f/R, the norm of the localized integration-by-parts numerator is bounded by
+
+    L <= C0 Vedge(f)+integral|f|||C'||
+           +C0 integral|f||R'|+(.061/.025)C0 integral|f|.
+
+The endpoint values in Vedge(f) are retained. With the new C0=5e11 and weighted derivative bound, but unchanged Vedge(f)<2e12 and integrated |R'| bound,
+
+    L <1e24+1.3e24+5e26+2.44e9
+       =5.023e26+2.44e9<6e26.
+
+The term 5e26 explicitly pays the derivative of 1/R and dominates this loose ceiling. Fourier normalization and the two potentially overlapping old-energy localized columns in one parity give factor sqrt(2)/sqrt(2pi)=1/sqrt(pi). Hence the complete localized operator is bounded by
+
+    L/(sqrt(pi) v t)<1e27/(v t).
+
+The four old columns do not require factor two here: the other parity is orthogonal. The scalar open incoming/outgoing estimates use orthogonal vacuum fibers and are unchanged. None of this removes the seed's off-band or point-spectrum remainder or changes the elapsed old phase, reference waveform or prepared state.
+
+## Scope and disposition
+
+The proposed claims
+
+    ||Mcore^-1||<1.2e23,
+    integral|f|||x'||<1.1e24,
+    integral|f|||C'||<1.3e24,
+    ||C||<5e11,
+    complete localized operator <1e27/(vt)
+
+survive this independent analytical check under the pinned canonical premises. The source's conditional kernel, emitter inverse, normalized local spectral measure, and integrated reflection-derivative estimates remain explicit dependencies. This review checks the changed argument completely, including its physical interfaces, rather than claiming to re-establish every ancestral premise or qualify unexamined canonical execution claims.
+
+No correction is required for the reviewed proposal. A subsequent refinement must carry these source identities and unchanged scalar escape/preparation terms into its own pinned integration; this report does not promote a new onset or alter the published T42 result. Practical cost, native Hamiltonian/state supply, robustness, thermal readiness, reset/reuse, physical identification and retained audit remain outside the result.
+
+The initial aggregate tool display truncated the canonical note. Its complete 1–220, 221–450, 451–700 and 701–end ranges were then read without truncation. No partial display is counted as complete review. No scientific computation or unchanged check was rerun; no failure was hidden. Only endpoint_column_independent_check was written. Previous reports, the proposal, canonical note, Git state, prompts, axioms, audits, root checkpoint and other chats remain unchanged. Source identities and final report identity are recorded in SOURCE_PINS.json and RECEIPT.json.

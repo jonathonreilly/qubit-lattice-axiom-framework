@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: bd710e0589907cb40a90d17dd609c6cf332e32bb3e7bc2a4c4d232de9ad542f4
-input_fingerprint_sha256: ab579fe16797e9b334240520271907cefc5720ed73ae60d01e0e9899566ac8d3
+runner_sha256: 3d9f8e0b65eb89f02353855abd2f1420f0ca5400ff9eab07e9ef1b89e87404b6
+input_fingerprint_sha256: 10864607b892122e4ea4626c1ae481a39c7fd602eb5e3953946c20aece680110
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
@@ -163,6 +163,34 @@ PASS arithmetic: weighted onset escape arithmetic
 PASS arithmetic: weighted onset infinite complete ceiling
 PASS arithmetic: weighted onset finite exponent margin
 PASS arithmetic: weighted onset finite complete ceiling
+PASS arithmetic: endpoint selected column
+PASS arithmetic: endpoint full core inverse
+PASS arithmetic: endpoint background diagonal
+PASS arithmetic: endpoint jump trace
+PASS arithmetic: endpoint complete localized norm
+PASS arithmetic: endpoint weighted x derivative
+PASS arithmetic: endpoint weighted C derivative
+PASS arithmetic: conjugate packet outgoing identity fixture
+PASS arithmetic: conjugate packet outgoing ceiling
+PASS arithmetic: contour strip range
+PASS arithmetic: contour complex velocity ceiling
+PASS arithmetic: contour vertical denominator floor
+PASS arithmetic: contour coefficient ceiling
+PASS arithmetic: contour bottom squared bound
+PASS arithmetic: conjugate localized complete expansion
+PASS arithmetic: conjugate localized numerator
+PASS arithmetic: conjugate localized Fourier aggregation squared
+PASS arithmetic: tradeoff time denominator squared
+PASS arithmetic: tradeoff incoming ceiling
+PASS arithmetic: positive normalization squared identity fixture
+PASS arithmetic: positive normalization squared cost fixture
+PASS arithmetic: tradeoff target nonzero
+PASS arithmetic: tradeoff normalization cost
+PASS arithmetic: tradeoff localized ceiling
+PASS arithmetic: tradeoff five-term budget
+PASS arithmetic: tradeoff infinite complete ceiling
+PASS arithmetic: tradeoff finite exponent margin
+PASS arithmetic: tradeoff finite complete ceiling
 {
   "checks": [
     {
@@ -1070,6 +1098,174 @@ PASS arithmetic: weighted onset finite complete ceiling
       "name": "weighted onset finite complete ceiling",
       "relation": "<",
       "rhs": "23/10000"
+    },
+    {
+      "lhs": "27090000000",
+      "name": "endpoint selected column",
+      "relation": "<",
+      "rhs": "30000000000"
+    },
+    {
+      "lhs": "110082240000000000000000",
+      "name": "endpoint full core inverse",
+      "relation": "<",
+      "rhs": "120000000000000000000000"
+    },
+    {
+      "lhs": "90020000000000000000",
+      "name": "endpoint background diagonal",
+      "relation": "<",
+      "rhs": "100000000000000000000"
+    },
+    {
+      "lhs": "108531200000000000000000",
+      "name": "endpoint jump trace",
+      "relation": "<",
+      "rhs": "160000000000000000000000"
+    },
+    {
+      "lhs": "1400000000006/3",
+      "name": "endpoint complete localized norm",
+      "relation": "<",
+      "rhs": "500000000000"
+    },
+    {
+      "lhs": "1032014640000000000000000",
+      "name": "endpoint weighted x derivative",
+      "relation": "<",
+      "rhs": "1100000000000000000000000"
+    },
+    {
+      "lhs": "38500000030000000000000129/30",
+      "name": "endpoint weighted C derivative",
+      "relation": "<",
+      "rhs": "1300000000000000000000000"
+    },
+    {
+      "lhs": "(-8/5)+i*(6/5)",
+      "name": "conjugate packet outgoing identity fixture",
+      "relation": "=",
+      "rhs": "(-8/5)+i*(6/5)"
+    },
+    {
+      "lhs": "47/31250",
+      "name": "conjugate packet outgoing ceiling",
+      "relation": "=",
+      "rhs": "47/31250"
+    },
+    {
+      "lhs": "1/1000000",
+      "name": "contour strip range",
+      "relation": "<=",
+      "rhs": "1"
+    },
+    {
+      "lhs": "15010553553519752638388379/250000000000000000000000000",
+      "name": "contour complex velocity ceiling",
+      "relation": "<",
+      "rhs": "31/500"
+    },
+    {
+      "lhs": "3/125000000",
+      "name": "contour vertical denominator floor",
+      "relation": "<",
+      "rhs": "375263609926957808881/15010553553516000000000000000"
+    },
+    {
+      "lhs": "527/12",
+      "name": "contour coefficient ceiling",
+      "relation": "<",
+      "rhs": "44"
+    },
+    {
+      "lhs": "121/7812500000000000",
+      "name": "contour bottom squared bound",
+      "relation": "<",
+      "rhs": "169/10000000000000000"
+    },
+    {
+      "lhs": "[1000000000000000000000000, 1300000000000000000000000, Fraction(2440000000, 1)]",
+      "name": "conjugate localized complete expansion",
+      "relation": "=",
+      "rhs": "[1000000000000000000000000, 1300000000000000000000000, 2440000000]"
+    },
+    {
+      "lhs": "2300000000000002440000000",
+      "name": "conjugate localized numerator",
+      "relation": "<",
+      "rhs": "2400000000000000000000000"
+    },
+    {
+      "lhs": "5760000000000000000000000000000000000000000000000",
+      "name": "conjugate localized Fourier aggregation squared",
+      "relation": "<",
+      "rhs": "6750000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "40000000000000000000000000000",
+      "name": "tradeoff time denominator squared",
+      "relation": "<",
+      "rhs": "75000000000000000000000000000"
+    },
+    {
+      "lhs": "3250000000011/25000000000000000000",
+      "name": "tradeoff incoming ceiling",
+      "relation": "<",
+      "rhs": "1/5000000"
+    },
+    {
+      "lhs": "1/5",
+      "name": "positive normalization squared identity fixture",
+      "relation": "=",
+      "rhs": "1/5"
+    },
+    {
+      "lhs": "1/5",
+      "name": "positive normalization squared cost fixture",
+      "relation": "<=",
+      "rhs": "9/25"
+    },
+    {
+      "lhs": "3/200",
+      "name": "tradeoff target nonzero",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "9/40000",
+      "name": "tradeoff normalization cost",
+      "relation": "<=",
+      "rhs": "9/40000"
+    },
+    {
+      "lhs": "3/50000",
+      "name": "tradeoff localized ceiling",
+      "relation": "<=",
+      "rhs": "3/50000"
+    },
+    {
+      "lhs": "14551/5000000",
+      "name": "tradeoff five-term budget",
+      "relation": "=",
+      "rhs": "14551/5000000"
+    },
+    {
+      "lhs": "14551/5000000",
+      "name": "tradeoff infinite complete ceiling",
+      "relation": "<",
+      "rhs": "3/1000"
+    },
+    {
+      "lhs": "43200000000000000000000000000009",
+      "name": "tradeoff finite exponent margin",
+      "relation": "<",
+      "rhs": "50000000000000000000000000000023"
+    },
+    {
+      "lhs": "19551/5000000",
+      "name": "tradeoff finite complete ceiling",
+      "relation": "<",
+      "rhs": "1/250"
     }
   ],
   "dense_dimension_max": 4,
@@ -1119,6 +1315,12 @@ PASS arithmetic: weighted onset finite complete ceiling
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/RECEIPT.json.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/SOURCE_PINS.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/CONJUGATE_PACKET_QUALIFICATION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/ENDPOINT_COLUMN_QUALIFICATION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_independent_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_tradeoff_proposal/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/endpoint_column_independent_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/weighted_core_derivative_proposal/PROPOSAL.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt",
@@ -1132,6 +1334,10 @@ PASS arithmetic: weighted onset finite complete ceiling
     "self_integrity": []
   },
   "scope": "Scalar corroboration of conditional bounds; no proof or audit status.",
+  "tradeoff_finite_ceiling": ".004",
+  "tradeoff_infinite_ceiling": ".003",
+  "tradeoff_onset": "1000000000000000000000000000000",
+  "tradeoff_output_sites": "50000000000000000000000000000000",
   "weighted_onset": "1000000000000000000000000000000000000000000",
   "weighted_output_sites": "50000000000000000000000000000000000000000000"
 }

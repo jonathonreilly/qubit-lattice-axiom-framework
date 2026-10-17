@@ -1,0 +1,197 @@
+# Conjugate comparison packet: a conditional error/runtime tradeoff
+
+Status: new author proposal awaiting independent check. The canonical T=10^42, infinite-error <.0013 theorem is unchanged. This proposal deliberately accepts a larger error ceiling. It uses the exact same supplied dynamics, kappa=10^-12, sigma=10^-6, real product seed, full complex target waveform and old operation. The endpoint-column derivative estimates were provisional during derivation and received separate conditional root acceptance before this proposal froze; the new tradeoff itself remains unreviewed.
+
+## Proposed statement
+
+Under the canonical theorem's assumptions and the additional *conditionally accepted mathematical estimates* in `../weighted_core_derivative_proposal/PROPOSAL.md`, the same infinite apparatus obeys complete operator error <.003 for all t>=10^30 against the same normalized common-profile target. Its single finite truncation with M=50*10^30=5e31 output sites, selected before delivery, has complete error <.004 on [10^30,2*10^30]. The device has M+116 qubits under the unchanged counting convention.
+
+These are a candidate runtime/tolerance tradeoff, not the canonical theorem's .0013/.0023 tolerance at an earlier time. No physical premise, actual coefficient or dynamics is changed. Only an intermediate spectral comparison packet is changed; its outgoing discrepancy is paid explicitly. No physical apparatus of this size was simulated or constructed.
+
+## Sources, exposure and status boundaries
+
+Canonical PR9668 source supplied for this task: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`, unchanged SHA256 `b1d71a544a399ad3b908fd3c85d576769fece6a95247c64d4505523a481c0d4c`. Its complete relevant profile, spectral, matching, weighted-variation, geometry and finite-transfer arguments were previously read; the coefficient/seed comparison was reread for this task. The source bytes, rather than an unchecked PR-head claim, identify the scientific input. No Git or remote PR operation was performed.
+
+New mathematical dependency, initially provisional during this derivation: `../weighted_core_derivative_proposal/PROPOSAL.md`, SHA256 `08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e`. Specifically this proposal uses its ||C||<5e11 and integral|f|||C'||<1.3e24. These bounds are not independently qualified by this document. After the complete argument below was drafted, I read `../ENDPOINT_COLUMN_QUALIFICATION.md`, SHA256 `130cf97149689ec0d91d960595ef9a5e207e8b07932943463b7c200742fadc8e`. It records root acceptance after separate review `../endpoint_column_independent_check/REVIEW.md`, SHA256 `bc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47` (hash verified here; review body not reread by this author). Root identifies the canonical PR9668 commit as `b9ac0cddb3e82650137df9cec41fb24124d539e9`. That acceptance covers the endpoint interface and derivative estimates, not this new packet, contour or normalization proof. It is conditional scientific review, not retained audit or physical identification.
+
+Earlier frozen profile/tail evidence: `../positive_jump_onset_check/WEIGHTED_REVIEW.md`, SHA256 `99b91967f2aace33c2bbc80b75c4dc9eec49d3e6646ce86242a9ea2ce5f23a66`; unchanged. Current correlation_worktree SCIENCE_WORKFLOW remains `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`, matching its prior complete read. Current AGENTS and referenced reviewer guidance remain pinned in ADDENDUM_REVIEW.md.
+
+The root proposed the conjugate packet, contour direction, prospective exponent and tolerance; it also supplied candidate rectangle constants and the squared normalization-cost observation during development. I reconstructed the algebra, contour and budgets below with that exposure. This is an author proposal, not blind or independent verification of the root's idea or my endpoint-column proposal. No scientific executable, numerical experiment, parameter sweep or simulation was run. File reads/hashes and this prose write are the only operations. No prior report, W, prompt, axiom, Git state or publication file was changed; model and effort were preserved.
+
+## 1. Exact alternative comparison and its initial error
+
+For each real old basis column j in a fixed parity, write omega=omega_p and
+
+    g_j=omega f,
+    a0,j=conjugate(g_j)=conjugate(omega) conjugate(f).
+
+Use the same unit-incoming generalized column Phi_j, with actual reflection R_j and localized remainder C_j. The proposed intermediate spectral packet has incoming coefficient a0,j and outgoing coefficient R_j a0,j. Since integral|f|^2 dk=1, a0,j is normalized in the unchanged local multiplicity-one synthesis isometry. No new state preparation is prescribed: the packet is only a mathematical comparison to the actual delivered seed.
+
+The canonical source gives, pointwise on I,
+
+    |F_j/Fref-omega|<epsilon_F=.000752,
+    f=Fref/sqrt(p0), 1-1.6e-9<=p0<=1,
+    F_j=R_j conjugate(F_j), |R_j|=1.
+
+For a real basis seed, its actual incoming spectral coefficient is conjugate(F_j). Therefore the in-band state comparison obeys
+
+    ||conjugate(F_j)-a0,j||_L2=||F_j-g_j||_L2
+      <=epsilon_F sqrt(p0)+(1-sqrt(p0))
+      <.0007520016.
+
+The unchanged outside-band amplitude is <=4e-5, including the allowed point spectrum. Adding it gives <.000792002 per column. The source's sqrt(2)<1.415 aggregation for the two potentially overlapping old-energy error vectors yields <.001121 for the preparation-to-alternative-packet operator. Parities are orthogonal. This derivation preserves the original preparation ceiling directly; it does not add the alternative packet to the old comparison by a triangle inequality and accidentally pay the outgoing defect twice. General complex old/reference inputs follow by linear extension of these real basis-column estimates.
+
+## 2. Explicit outgoing profile defect
+
+Let e_j=F_j/sqrt(p0)-g_j. Then |e_j(k)|<epsilon_F |f(k)|. Since p0 is positive real, the exact real-seed identity also gives
+
+    F_j/sqrt(p0)=R_j conjugate(F_j/sqrt(p0)),
+    R_j a0,j-g_j=e_j-R_j conjugate(e_j).
+
+Hence pointwise and in L2,
+
+    |R_j a0,j-g_j|<=2epsilon_F |f|,
+    ||R_j a0,j-g_j||_L2<.001504.                    (1)
+
+No division by 1-epsilon_F or removal of a column phase is needed. The outgoing full-line Fourier map is isometric, and restriction to physical m>=0 is a contraction. At every time the physical outgoing defect is therefore <.001504 per column. Its images lie in mutually orthogonal open internal output fibers u_j for the different old columns. Consequently (1) is also the complete operator ceiling; it does not acquire sqrt(2). The factors exp(-it b_j), omega_p and exp(-it c_new) retain the same actual elapsed old phase and scalar. This step pays a permanent waveform discrepancy of the *intermediate packet*, while leaving the requested final common target g_j unchanged.
+
+## 3. Incoming coefficient and pole-free rectangle
+
+Use k_L=k0-sigma, k_R=k0+sigma, h=sigma/2=5e-7. Write alpha_D=kappa^2/J, E(z)=2J(1-cos z), and
+
+    Dbar(z)=E(z)-E0+alpha_D exp(-iz),
+    a0,j(z)=conjugate(omega zeta0) A_f E'(z) exp(-i113z)/Dbar(z),
+    A_f=kappa/[sqrt(2pi)J sqrt(p0)]<17 kappa.
+
+This is a holomorphic continuation of the actual conjugate coefficient on the real interval, with all constants fixed. For z=x-iy, x in [k_L,k_R], 0<=y<=h,
+
+    Im Dbar(x-iy)
+      =-sin(x)[2J sinh(y)+alpha_D exp(-y)] <0.        (2)
+
+**Sign detail:** exp(-i(x-iy))=exp(-y)exp(-ix). Thus the alpha_D term in (2) is exp(-y), not cosh(y). The proposed cosh form would correspond to retaining only the cosine part of that exponential and is not the exact imaginary part. Both expressions happen to be negative, but this proof uses the exact expression. The no-pole conclusion and constants below do not need a lower bound from the positive alpha_D term at y>0.
+
+Because sin(x)>.4 and alpha_D>0, (2) is strictly negative even at y=0. Therefore Dbar has no zero anywhere on the closed rectangle, and contour deformation of the incoming integral is valid. The numerator is entire. The exact lower-strip Fourier/time factor has modulus
+
+    |exp[-imz-itE(z)-i113z]|
+      =exp[-(m+113)y-2Jt sin(x)sinh(y)]
+      <=exp[-(m+113+vt)y],                         (3)
+
+where E'(x)=2J sin(x)>v=.025 and sinh(y)>=y. The 113 propagation phase is kept, not stripped as a constant.
+
+The upper real-axis integral is thus bounded by the lower horizontal integral plus the two vertical edge integrals. Those vertical terms are precisely the cost of the hard cutoff; neither endpoint is set to zero.
+
+## 4. Explicit rectangle constants
+
+For this tiny strip, cosh(y)-1<=y^2 and cosh(y)<=1+y^2. Since 2J<.061,
+
+    |E'(x-iy)|=2J|sin(x-iy)|<=2J cosh(y)<.062.      (4)
+
+At either real endpoint x=k_L or k_R, |E(x)-E0|>=v sigma. The exact real part is
+
+    Re Dbar(x-iy)
+      =E(x)-E0-2J cos(x)(cosh(y)-1)
+         +alpha_D exp(-y)cos(x).
+
+Thus, using exp(-y)<=1 and alpha_D<kappa^2/.03,
+
+    |Re Dbar(x-iy)|
+      >=v sigma-.061h^2-alpha_D
+      >.024 sigma.                                (5)
+
+Indeed v sigma=2.5e-8, .061h^2=1.525e-14 and alpha_D<3.334e-23; their subtraction exceeds 2.4e-8. Using the looser alpha_D cosh(h) bound suggested during development would also suffice, but is unnecessary.
+
+Equations (4)-(5) imply the vertical-side coefficient bound
+
+    A_f |E'(z)|/|Dbar(z)|
+      <17*.062*kappa/(.024sigma)<44 kappa/sigma.
+
+After (3), integrating y from zero to h and enlarging to [0,infinity), both vertical sides together contribute at site m>=0 at most
+
+    [88 kappa/sigma]/(m+113+vt)
+      <=[88 kappa/sigma]/(m+vt).
+
+The same lattice sum and Fourier normalization as in the canonical proof give vertical incoming norm
+
+    <=88 kappa/[sigma sqrt(pi vt)].                 (6)
+
+On the horizontal bottom, (2) gives |Dbar(x-ih)|>=2J sin(x)sinh(h)>v h. Consequently the weaker convenient bound is
+
+    A_f|E'(x-ih)|/|Dbar(x-ih)|<44 kappa/h.
+
+Its length is 2sigma. Summing exp(-2mh) exactly over m>=0, retaining the Fourier normalization, gives bottom norm
+
+    <= [88 kappa sigma/h] exp(-vth)
+          /sqrt[2pi(1-exp(-2h))].
+
+For 0<2h<=1, 1-exp(-2h)>=h, and sqrt(2pi)>2. Therefore
+
+    bottom norm <44 kappa sigma/(h sqrt(h)) exp(-vth)
+                 =88 kappa/sqrt(h) exp(-vth)
+                 <1.3e-7 exp(-vth)<=1.3e-7.         (7)
+
+The final numeric inequality can be checked without evaluating any enormous exponential: (88e-12)^2/(5e-7)=1.5488e-14<(1.3e-7)^2=1.69e-14. Dropping the nonnegative-time decay in (7) is conservative. At t>=10^30, sqrt(pi vt)>2e14, so (6) is <4.4e-19. Thus the total incoming operator norm is <2e-7. Open fibers are orthogonal across old columns, so again no sqrt(2) is required. This bound retains all finite cutoff effects and is valid uniformly for the stated all-future domain.
+
+## 5. Localized packet with no reflection denominator
+
+The alternative localized packet is the actual integral of a0,j C_j exp(-itE), not a rephasing of the former coefficient f/R. Its derivative has terms a0,j' C_j and a0,j C_j'. Since a0,j=conjugate(omega f) on the real interval,
+
+    |a0,j|=|f|, Vedge(a0,j)=Vedge(f)<2e12.
+
+There is no 1/R here because the intermediate packet genuinely changed; its outgoing mismatch was paid in (1). Removing 1/R while pretending the outgoing coefficient stayed exactly omega f would be false.
+
+Using the separately conditionally accepted endpoint-column proposal's ||C_j||<5e11 and integral|f|||C_j'||<1.3e24, integration by parts, including both endpoints and the derivative of 1/E', gives the per-column numerator
+
+    L0<=5e11 Vedge(f)+integral|f|||C_j'||
+           +(.061/v)*5e11*.002
+       <1e24+1.3e24+2.44e9<2.4e24.
+
+This C_j' includes the derivative of the subtracted actual reflection wave and all closed tails; the integral bound already pays that |R_j'| term. It is not dropped merely because a0,j has no R_j denominator. With the usual sqrt(2) aggregation for potentially overlapping localized old-energy error vectors and 1/sqrt(2pi) Fourier normalization,
+
+    complete localized norm <2.4e24/[sqrt(pi)vt]
+                              <1.5e24/(vt).
+
+At t>=10^30 this is <6e-5. All seven closed channels, every finite emitter/source/head coordinate, old aging and passive-reference extension are retained. This is the only new derivative estimate used; it remains dependent on that separately checked conditional endpoint-column result and its original hypotheses.
+
+## 6. Positive normalization of the unchanged target profile
+
+Let b_t be the original full-line Fourier profile from f, p_t its restriction to m>=0, and q_t the norm of its restriction to negative sites. Full-line Parseval gives ||p_t||^2+q_t^2=1. The canonical outgoing tail estimate, without any new outgoing contour argument, is
+
+    q_t<3e12/sqrt(pi vt)<.015  for t>=10^30.
+
+The target is still beta_t=p_t/||p_t|| with positive normalization. Its correction from p_t has exact norm
+
+    ||p_t-beta_t||=1-||p_t||
+      =1-sqrt(1-q_t^2)=q_t^2/[1+sqrt(1-q_t^2)]
+      <=q_t^2<.000225.                              (8)
+
+The negative tail itself need not be paid as a physical state error: the physical comparison only contains m>=0, and the full-line profile was an auxiliary Fourier construction. Equation (8) is precisely its positive-normalization cost on that physical space, not postselection of the actual apparatus. Its norm is nonzero by the same inequality. The actual emitted state and its residual spectrum are never renormalized or conditioned.
+
+## 7. Complete error and finite apparatus
+
+At every t>=T=10^30, sum the five operator contributions in their actual physical spaces:
+
+| Contribution | Ceiling |
+|---|---:|
+| Actual seed to the alternative spectral packet, with residual mass | .001121 |
+| Alternative outgoing component to the original common outgoing target before normalization | .001504 |
+| Positive normalization of the original physical output profile | .000225 |
+| Entire localized alternative packet | .000060 |
+| Incoming alternative packet, including both cutoff sides | .0000002 |
+| Total | .0029102 < .003 |
+
+The estimates persist for all later times: the local and vertical-side terms decrease, the outgoing-normalization tail ceiling decreases, the bottom ceiling is constant only because a decreasing exponential was discarded, and the preparation/profile mismatch ceilings are time-independent. All composition factors have been paid where needed. The outgoing and incoming terms occupy orthogonal internal fibers across old columns; only general preparation and localized errors needed the source's sqrt(2) within each parity. Tensoring with an arbitrary passive reference preserves the operator bounds.
+
+For the same finite-transfer argument with M=50T=5e31, t<=2T and graph distance d_M=M+23, the exponent is bounded by
+
+    -d_M+18t sinh(1)<=-[50-36 sinh(1)]T-23<-6.8T-23.
+
+The canonical comparison is therefore <.001 throughout [T,2T]. Adding it gives finite error <.0039102<.004 against the embedded original infinite-profile target. The finite truncation is fixed before delivery and is not claimed to halt forever. The infinite point-spectrum residual remains in the preparation estimate; the finite spectrum being entirely point spectrum does not change the interpretation of this comparison. Corresponding unhalved trace-distance ceilings would be .006 and .008, not the canonical theorem's smaller ceilings.
+
+## Failed shortcuts and smallest next obligations
+
+1. Merely omitting the 1/R derivative in the old packet fails, as the earlier frozen review showed. The present packet actually changes its incoming coefficient and pays the exact outgoing discrepancy. No same-tolerance improvement is asserted.
+2. Bounding the incoming conjugate packet only by its real-axis variation would retain the large 1e12 numerator and be unhelpful at T=10^30. The rectangle separates exponentially decaying bottom terms from cutoff sides of order kappa/sigma. Both sides must be kept.
+3. The suggested Im Dbar formula with alpha_D cosh(y) is not exact; exp(-y) is correct. Negativity, horizontal denominator bounds and the vertical constants survive, as shown explicitly above. No unproved cancellation or absent pole was assumed.
+4. A similar automatic pole-free lower shift for the original outgoing f is not justified by (2), because its denominator has exp(+iz), with the opposite imaginary contribution. This route was not used. The existing outgoing tail estimate plus the exact squared normalization cost is enough, so no resonance-pole or outgoing-contour theorem is imported.
+
+The next independent check should use the now separately conditionally accepted endpoint-column interface as an explicit dependency, then independently verify this comparison-packet identity and the contour rectangle, including exp(-y), the hard-cutoff sides, fiber orthogonality and positive-normalization cost. All needed constants and exact source identities are above. No new physical premise or large scientific run is needed to check this proposed implication. Until that new check completes, this remains an explicitly provisional tolerance/runtime candidate and does not change PR9668's theorem or its evidence status.

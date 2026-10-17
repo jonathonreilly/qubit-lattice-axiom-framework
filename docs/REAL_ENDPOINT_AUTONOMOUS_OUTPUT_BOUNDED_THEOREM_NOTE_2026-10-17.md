@@ -50,10 +50,18 @@ specified common-profile isometry with operator error <0.0013 for every
 `M=50T=5e43` output sites, fixed before delivery, has error <0.0023 for every
 `t in [T,2T]`, after embedding into the infinite output space.
 
+A second, separately checked tolerance/runtime tradeoff below gives infinite
+error <.003 for all t>=10^30 and finite error <.004 on [10^30,2*10^30]
+with M=5e31. Each finite M is fixed before delivery; these are two choices
+of device, not a size change during operation. The smaller-error T42 theorem
+is preserved. The final common waveform and supplied physical premises are
+the same in both regimes; the tradeoff changes an intermediate proof packet.
+
 The bounds include arbitrary old inputs entangled with any passive reference,
 all emitter/clock/source outputs, the actual common scalar, full complex output
-phase, and old aging for the entire elapsed time. Corresponding complete
-unhalved trace-distance bounds are <0.0026 and <0.0046. The finite apparatus
+phase, and old aging for the entire elapsed time. For the smaller-error T42 regime, complete
+unhalved trace-distance bounds are <0.0026 and <0.0046; the T30 tradeoff
+has bounds <.006 and <.008, respectively. The finite apparatus
 has M+116 qubits. No apparatus of this size has been allocated or simulated.
 The sufficient onset is not a minimum, linewidth estimate, or practical size.
 
@@ -829,7 +837,8 @@ its receipt preserves that failure and no memory-cap success is claimed.
 
 The source package pins the unchanged mathematical interval/kernel premises,
 complete proposal and correction history, and exposed review reports. The
-canonical cache binds the current runner and all43 declared inputs; separate
+initial publication cache bound its runner and43 declared inputs. The refined
+runner declares49 inputs; its current cache and separate
 postexecution evidence preserves actual streams, caps and mutation failures.
 Independent audit and combined current-main landing gates remain future work.
 This regular review PR does not grant retained status or authorize a merge.
@@ -844,3 +853,201 @@ No native physical Hamiltonian, coefficient/state supplier, Record map,
 robustness/tolerance composition, practical size, thermal preparation,
 all-future finite halt, capture, reset, or reuse result is established here.
 These are limits of the present positive theorem, not impossibility claims.
+
+
+## Additional checked tolerance/runtime tradeoff
+
+The following refinement retains the exact infinite model, kappa=10^-12,
+sigma=10^-6, delivered product seed, old K/W, complex target f and beta_t,
+scalar c_new, full elapsed aging and residual spectrum defined above. It
+proves a different tolerance: complete operator error <.003 for every
+`t>=T30=10^30`. The one fixed truncation `M30=50T30=5e31` has error <.004
+only on [T30,2T30], with M30+116 qubits. Unhalved trace ceilings are .006
+and .008. This does not assert the .0013/.0023 tolerance at the shorter time.
+
+### Selected endpoint column and full emitter inverse
+
+Before input termination, use the actual physical internal blocks
+G(m,n)=A Q^|m-n|+Q^m T_aa Q^n, end=ell, b=ell+1 and
+X=Q^ell T_aa Q^ell. Since A commutes with Q, without commuting T_aa,
+
+    G(b,end)=Q(A+X), ||A+X||<41.
+
+The previously proved <3e7 site-block ceiling includes every retained arm,
+input and output-zero position against end and b. With ||Gbb^-1||<22,
+Dirichlet deletion therefore gives, for every retained site s,
+
+    ||Gtr(s,end)||<3e7(1+22*41)=2.709e10<3e10.
+
+There are112 retained background head positions, each with eight internal
+coordinates in one parity, before adding the emitter. Let R_bg be this
+896-coordinate matching inverse with the unchanged output-tail self-energy,
+and E the real endpoint inclusion C^8 -> C^896. The generic terminated
+block bound <2e16 and the selected column bound give
+
+    ||R_bg||<112*2e16=2.24e18,
+    ||R_bg E||^2<112*(3e10)^2=1.008e23.
+
+No factor eight belongs in these block-operator norms. The actual endpoint
+compensation leaves its background diagonal2J: its remaining J bond plus
+the new kappa bond and (J-kappa)n_end give2J. The emitter diagonal is E0.
+Consequently the actual904-coordinate matching inverse is exactly
+
+    M^-1=diag(R_bg,0)+V De^-1 V^T,
+    V=[-kappa R_bg E; I8].
+
+R_bg is complex symmetric in the fixed real physical basis; V^T is not V*.
+Nevertheless ||V^T||=||V|| in Euclidean norm, and the separate positive
+identity V*V=I+kappa^2(R_bg E)*(R_bg E) gives ||V||^2<1.1008. Using the full
+eight-dimensional ||De^-1||<1e23, including complementary directions,
+
+    ||M^-1||<2.24e18+1.1008e23=1.1008224e23<1.2e23.
+
+The unchanged x'=M^-1(iE''u-M'x), ||M'||<.1 and spectral bound
+integral|f|||x||<86 yield
+
+    integral|f|||x'||<1.2e23(.061*.002+.1*86)<1.1e24,
+    integral|f|||C'||<(7/6)*1.1e24+1e15+86/20<1.3e24.
+
+This last C' still includes the derivative of the subtracted actual
+reflected open wave and every closed tail. For pointwise C, each background
+diagonal block of M^-1 is <2e16+kappa^2*(3e10)^2*1e23<1e20, while its
+emitter diagonal is De^-1. The same positive spectral jump now gives
+
+    ||x||^2<.122*8*(112*1e20+1e23)=1.085312e23<(4e11)^2,
+    ||C||<(7/6)*4e11+2<5e11.
+
+Here the factor eight is required for the trace. These are finite-coordinate
+bounds, not whole continuous-spectrum resolvent norms.
+
+### A different comparison packet with a paid outgoing discrepancy
+
+For each real old basis column put g_j=omega_p f and a0,j=conjugate(g_j).
+This is a scalar coefficient multiplying the same generalized column; no
+arbitrary old-input amplitude is conjugated. Actual input coefficients are
+conjugate(F_j). Their L2 difference from a0,j is
+
+    <=epsilon_F sqrt(p0)+1-sqrt(p0)<.0007520016.
+
+Adding the actual outside-band amplitude4e-5 and the same sqrt(2) within
+parity gives the unchanged complete seed-to-packet bound <.001121.
+The comparison packet is mathematical only; it is not newly prepared.
+
+Set e_j=F_j/sqrt(p0)-g_j. The exact real-seed identity
+F_j=R_j conjugate(F_j), |R_j|=1, implies
+
+    R_j a0,j-g_j=e_j-R_j conjugate(e_j),
+    ||R_j a0,j-g_j||_L2<2epsilon_F=.001504.
+
+This discrepancy is paid once. Fourier evolution and positive-half-line
+restriction are contractions, and distinct old columns have orthogonal
+open output fibers. Thus .001504 is the operator bound without another
+sqrt(2). The final target remains the original common g_j and beta_t.
+
+### Pole-free incoming contour, including both cutoff sides
+
+Write h=sigma/2, alpha=kappa^2/J and analytically continue the conjugate
+real-axis coefficient by
+
+    a0,j(z)=conjugate(omega_p zeta0) A_f E'(z) exp(-i113z)/Dbar(z),
+    Dbar(z)=E(z)-E0+alpha exp(-iz), A_f<17kappa.
+
+For z=x-iy with x in I and 0<=y<=h, its exact imaginary part is
+
+    Im Dbar=-sin(x)[2J sinh(y)+alpha exp(-y)]<0.
+
+The alpha term is exp(-y), not cosh(y); the latter was an incorrect
+intermediate suggestion, corrected before independent review. This proves
+holomorphicity with no denominator zero on the closed rectangle, including
+y=0. It is not the non-holomorphic operation of conjugating f at complex z.
+The full numerator/propagation phase obeys
+
+    |exp[-imz-itE(z)-i113z]|<=exp[-(m+113+vt)y].
+
+For y<=h, cosh(y)-1<=y^2 and |E'(z)|<=2J cosh(y)<.062. At both cutoff
+sides x=k0+/-sigma, reverse triangle inequality gives
+
+    |Re Dbar|>=v sigma-.061h^2-alpha>.024sigma.
+
+Thus the coefficient without its phase is <44kappa/sigma on each side.
+Keeping both vertical segments, their site-m integral is bounded by
+88kappa/[sigma(m+113+vt)]. After Fourier normalization and the lattice sum,
+
+    vertical norm<=88kappa/[sigma sqrt(pi vt)].
+
+On the bottom |Dbar|>=2J sin(x)sinh(h)>vh, so the corresponding coefficient
+is <44kappa/h. Its length2sigma and sum_m exp(-2mh) give
+
+    bottom norm<=88kappa sigma exp(-vth)
+                    /[h sqrt(2pi(1-exp(-2h)))]
+               <88kappa exp(-vth)/sqrt(h)<1.3e-7 exp(-vth).
+
+We used 1-exp(-2h)>=h and sqrt(2pi)>2. The numerical comparison follows by
+squaring: (88e-12)^2/(5e-7)=1.5488e-14<1.69e-14. At t>=T30,
+sqrt(pi vt)>2e14; the vertical term is <4.4e-19. Dropping the bottom's
+decay still yields incoming norm <2e-7. No endpoint is set to zero, and no
+resonance-pole location or outgoing-contour assertion is imported. Orthogonal
+open fibers again prevent an extra old-column aggregation factor.
+
+### Localized remainder and squared target normalization cost
+
+The actual new localized integrand is a0,j C_j. Since |a0|=|f| and
+Vedge(a0)=Vedge(f)<2e12, its integration-by-parts numerator is
+
+    L0<=5e11 Vedge(f)+integral|f|||C'||+(.061/v)*5e11*.002
+       <1e24+1.3e24+2.44e9<2.4e24.
+
+There is no 1/R in this new coefficient; removing it without changing the
+packet and paying the outgoing discrepancy would be invalid. The R' already
+inside C' remains paid. Fourier normalization and sqrt(2) within parity give
+
+    localized operator<2.4e24/[sqrt(pi)vt]<1.5e24/(vt)<6e-5.
+
+For the unchanged full-line Fourier profile b_t, let p_t be its physical
+restriction to m>=0 and q_t its negative-half-line norm. Parseval and the
+existing tail bound give ||p_t||^2+q_t^2=1 and q_t<.015 at t>=T30.
+The positive normalization of the target therefore costs exactly
+
+    ||p_t-beta_t||=1-sqrt(1-q_t^2)
+      =q_t^2/[1+sqrt(1-q_t^2)]<=q_t^2<.000225.
+
+Only the physical target restriction is normalized; no actual state or
+residual branch is conditioned. A separate linear q_t cost is not needed
+because physical outgoing components already have m>=0 support.
+
+The five complete operator costs sum to
+
+    .001121+.001504+.000225+.000060+.0000002=.0029102<.003.
+
+Every term is bounded uniformly for t>=T30. Tensoring passive references
+preserves the operator bounds. All finite/internal/closed-channel outputs,
+old aging exp(-itK)W and scalar exp(-ic_new t) remain included.
+
+For the separately fixed M30=50T30 truncation, the unchanged polynomial
+transfer has exponent <=-[50-36sinh(1)]T30-23<-6.8T30-23, hence difference
+<.001 on[T30,2T30]. Adding it gives .0039102<.004. There is no all-future
+finite-device guarantee, native supplier or practical-scale claim.
+
+### Refinement review and execution scope
+
+The endpoint-column and conjugate-packet proposals and separate reviews are
+frozen under `review_sources/tradeoff/` in the input package. Proposal hashes
+are08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e and
+c49c0f7cd3af2c939085cee80883f4a36024b4979992bba1ee7628eb4b8961ac; review hashes
+arebc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47 and
+5df64d41d870b25589e2c783151857c241c301eb2a37e22c054a9102e0322f34.
+Root read the full proposals and reviews and qualified their conditional
+composition. Checks were same-model and source-exposed, not blind,
+model-diverse or retained audit. The corrected contour identity and earlier
+failed derivative routes remain preserved. The primary runner adds only
+bounded exact algebra/constant substitutions; it does not compute spectral
+integrals or certify contour deformation. Current execution evidence is
+recorded separately from the original151-check publication run.
+
+The refinement execution passed 179 scoped arithmetic checks and the current
+49-input integrity check (exit 0; 0.08790898323059082 seconds). Thirteen new
+mathematical mutations failed at their intended checks under Python -O.
+Full streams, runtime/source prelaunch identities and resource receipts are
+preserved in `outputs/real_endpoint_autonomous_output_2026_10_17_tradeoff_validation/`.
+The older mutation results remain historical evidence, not repeated runs.
+No whole-apparatus simulation, retained audit or combined-main gate is claimed.

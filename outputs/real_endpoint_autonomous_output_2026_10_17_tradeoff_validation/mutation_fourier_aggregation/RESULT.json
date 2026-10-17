@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.12756908405572176,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/tradeoff_validation/mutation_fourier_aggregation/stdout.txt",
+      "bytes": 8459,
+      "sha256": "302093cffdfc2c12188c0a665838dd21f84cfac0ce7ad5861a0e2c41201b5ada"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/tradeoff_validation/mutation_fourier_aggregation/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

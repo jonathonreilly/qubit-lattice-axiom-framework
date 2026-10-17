@@ -1,0 +1,7 @@
+# Root qualification: endpoint-column Schur refinement
+
+Root read the complete PROPOSAL.md (08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e) and separate independent REVIEW.md (bc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47). The review reconstructs the physical112-site background, all eight internal directions, pre-deletion endpoint identity, exact compensation, symmetric Schur update and Euclidean transpose factors. No defect or new physical premise found.
+
+Accepted conditional refinement on canonical PR9668 commit b9ac0cddb3e82650137df9cec41fb24124d539e9: core inverse<1.2e23, weighted xprime integral<1.1e24, weighted Cprime<1.3e24, pointwise C<5e11; existing omega*f/R localized operator<1e27/(vt). The scalar incoming term is unchanged; no shorter onset follows merely by replacing the localized bound.
+
+Same-model source-exposed selective analytical review, no blind/model-diverse/retained audit or numerical dynamics. Canonical published T42 remains unchanged. Subsequent packet tradeoff is a distinct proposal requiring an independent check of comparator, contour and normalization, not covered by this acceptance.

@@ -52,6 +52,12 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/RECEIPT.json.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/REVIEW.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/SOURCE_PINS.json.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/CONJUGATE_PACKET_QUALIFICATION.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/ENDPOINT_COLUMN_QUALIFICATION.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_independent_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/conjugate_packet_tradeoff_proposal/PROPOSAL.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/endpoint_column_independent_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/tradeoff/weighted_core_derivative_proposal/PROPOSAL.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt',
@@ -413,9 +419,58 @@ def check_arithmetic(params):
     lt('weighted onset infinite complete ceiling',F(1121,10**6)+weighted_escape,F(13,10**4))
     lt('weighted onset finite exponent margin',18*(2*Tweighted)*F(6,5)+9,Mweighted+23)
     lt('weighted onset finite complete ceiling',F(1121,10**6)+weighted_escape+F(1,1000),F(23,10**4))
+    # Separately reviewed endpoint-column refinement and conjugate-packet tradeoff.
+    # These scalar substitutions do not prove contour deformation or Schur identities.
+    lt('endpoint selected column',3*10**7*(1+22*41),3*10**10)
+    endpoint_col_sq=112*(3*10**10)**2
+    emitter_update_norm=112*2*10**16+(1+kap**2*endpoint_col_sq)*10**23
+    lt('endpoint full core inverse',emitter_update_norm,12*10**22)
+    lt('endpoint background diagonal',2*10**16+kap**2*(3*10**10)**2*10**23,10**20)
+    lt('endpoint jump trace',2*E2*8*(112*10**20+10**23),(4*10**11)**2)
+    lt('endpoint complete localized norm',F(7,6)*4*10**11+2,5*10**11)
+    lt('endpoint weighted x derivative',12*10**22*(E2*fL1+derivative*86),11*10**23)
+    lt('endpoint weighted C derivative',F(7,6)*11*10**23+10**15+F(86,20),13*10**23)
+    # A nontrivial exact algebra fixture for F=R conjugate(F); not spectral data.
+    fixture_F=C(3,4);fixture_g=C(2,1);fixture_R=fixture_F/fixture_F.conj()
+    fixture_e=fixture_F-fixture_g
+    eq('conjugate packet outgoing identity fixture',fixture_R*fixture_g.conj()-fixture_g,
+       fixture_e-fixture_R*fixture_e.conj())
+    outgoing_tradeoff=2*eF
+    eq('conjugate packet outgoing ceiling',outgoing_tradeoff,F(1504,10**6))
+    strip_h=sig/2
+    le('contour strip range',2*strip_h,1)
+    lt('contour complex velocity ceiling',2*J*(1+strip_h**2),F(62,1000))
+    lt('contour vertical denominator floor',F(24,1000)*sig,
+       v*sig-E2*strip_h**2-kap**2/J)
+    lt('contour coefficient ceiling',17*F(62,1000)/F(24,1000),44)
+    lt('contour bottom squared bound',(88*kap)**2/strip_h,F(13,10**8)**2)
+    localized_tradeoff_terms=[5*10**11*weighted_fvar,13*10**23,(E2/v)*5*10**11*fL1]
+    eq('conjugate localized complete expansion',localized_tradeoff_terms,
+       [10**24,13*10**23,244*10**7])
+    lt('conjugate localized numerator',sum(localized_tradeoff_terms),24*10**23)
+    lt('conjugate localized Fourier aggregation squared',(24*10**23)**2,3*(15*10**23)**2)
+    Ttradeoff=10**30;Mtradeoff=50*Ttradeoff
+    lt('tradeoff time denominator squared',(2*10**14)**2,3*v*Ttradeoff)
+    contour_incoming=F(13,10**8)+88*kap/(sig*2*10**14)
+    lt('tradeoff incoming ceiling',contour_incoming,F(2,10**7))
+    # Exact positive-normalization fixture p=4/5,q=3/5: 1-p=q^2/(1+p).
+    fixture_p=F(4,5);fixture_q=F(3,5)
+    eq('positive normalization squared identity fixture',1-fixture_p,fixture_q**2/(1+fixture_p))
+    le('positive normalization squared cost fixture',1-fixture_p,fixture_q**2)
+    target_tail=F(3*10**12,2*10**14)
+    lt('tradeoff target nonzero',target_tail,1)
+    le('tradeoff normalization cost',target_tail**2,F(225,10**6))
+    le('tradeoff localized ceiling',F(15*10**23)/(v*Ttradeoff),F(60,10**6))
+    tradeoff_total=F(1121,10**6)+outgoing_tradeoff+F(225,10**6)+F(60,10**6)+F(2,10**7)
+    eq('tradeoff five-term budget',tradeoff_total,F(29102,10**7))
+    lt('tradeoff infinite complete ceiling',tradeoff_total,F(3,1000))
+    lt('tradeoff finite exponent margin',18*(2*Ttradeoff)*F(6,5)+9,Mtradeoff+23)
+    lt('tradeoff finite complete ceiling',tradeoff_total+F(1,1000),F(4,1000))
     return {'checks': rows,
             'historical_onsets': {'original':str(T), 'corrected_pointwise':str(Tpoint),
                                  'integrated_spectral_mass':str(Tnew)},
+            'tradeoff_onset':str(Ttradeoff), 'tradeoff_output_sites':str(Mtradeoff),
+            'tradeoff_infinite_ceiling':'.003', 'tradeoff_finite_ceiling':'.004',
             'weighted_onset': str(Tweighted), 'weighted_output_sites': str(Mweighted),
             'executed_geometry_vertices':len(head)+4, 'dense_dimension_max':4,
             'large_matching_matrices_executed':False}

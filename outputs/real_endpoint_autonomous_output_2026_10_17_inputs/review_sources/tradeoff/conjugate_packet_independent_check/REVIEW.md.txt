@@ -1,0 +1,152 @@
+# Independent check: conjugate-packet runtime/tolerance tradeoff
+
+## Finding
+
+The proposed implication survives this independent analytical check under the pinned canonical assumptions and the separately accepted endpoint-column bounds. I found no counterexample, missing phase, lost hard-cutoff term, missing old-column norm factor, or unproved pole-free step. The resulting sufficient complete operator ceilings are <.003 for all t>=10^30 on the infinite apparatus, and <.004 on [10^30,2*10^30] for its one fixed truncation M=50*10^30. These are different tolerances from the canonical .0013/.0023 theorem at T=10^42. No same-tolerance acceleration follows from this argument.
+
+The new proof changes only an auxiliary comparison packet; it does not change the delivered seed, Hamiltonian, coefficients, old operation, target profile, or elapsed aging. The endpoint-column premise is used conditionally at its accepted scope. This report does not independently re-certify ancestral calibration computations, grant retained/audit status, or establish native physical supply.
+
+## Scope, exposure and sources
+
+I read the complete new PROPOSAL, complete endpoint-column proposal, complete separate endpoint-column REVIEW and complete root qualification. I read the canonical note's exact target/imports/model/interval, full spectral and weighted-escape argument, finite-transfer argument and complete spectral-interface/comparator argument. Unchanged structural-scattering and geometry certificates were not rerun or re-reviewed. All scientific source hashes matched the supplied pins, including the worktree canonical bytes matching the specified PR9668 commit source identity. I made no Git call, so I do not independently assert the current remote PR head or its state.
+
+The preceding endpoint spectral check in this agent's history was against an older route. Its scalar normalization conventions were prior exposure, not a substitute for reading the new canonical sections. The new proposal and requested review targets exposed the intended construction, numerical targets, author's derivation and corrected exponential identity before this reconstruction. This is source-exposed same-model review, not blind/model-diverse verification. The earlier weighted review and author/publication checkers/results were not opened. No scientific executable, quadrature, parameter sweep or numerical dynamics was run. File reads, hashes and this document write were the only operations. No agents were launched and no model/effort override was used.
+
+Applicable AGENTS, SCIENCE_WORKFLOW, physics-claim-reviewer and proof-search guidance were read in this agent's earlier bounded task; hashes checked here match those earlier complete reads. They apply to checking the changed mathematics, not to starting audit/landing work. No W, canonical source, proposal, previous report, checkpoint, prompts, axioms, Git state or audit record was changed.
+
+## 1. Seed-to-packet comparison and the outgoing discrepancy
+
+Use the canonical unit-incoming synthesis convention
+
+    S_j a = (2pi)^(-1/2) integral_I a(k) Phi_j(k) dk,
+    Phi_j(m)=u_j[e^(-imk)+R_j(k)e^(imk)]+C_j(m,k).
+
+S_j is isometric on L2(I). The actual real basis seed has incoming coefficient conjugate(F_j), with its outside-band component retained. Define g_j=omega_p f and a0,j=conjugate(g_j). Both have L2 norm one. Then
+
+    ||conjugate(F_j)-a0,j||_2 = ||F_j-g_j||_2
+      <=epsilon_F sqrt(p0)+1-sqrt(p0).
+
+Since p0>=1-1.6e-9, 1-sqrt(p0)<=1.6e-9. Adding the actual off-band amplitude 4e-5 gives <.000792002 per column. The two old-energy residual vectors inside each parity may overlap, so their aggregate costs sqrt(2); different parities are orthogonal. The preparation operator ceiling <.001121 is therefore unchanged. Complex old/reference inputs are obtained by linear extension of real basis-column comparisons, not by conjugating the arbitrary input amplitudes.
+
+Let e_j=F_j/sqrt(p0)-g_j. The pointwise canonical estimate gives |e_j|<epsilon_F|f|. The real-seed relation F_j=R_j conjugate(F_j), with |R_j|=1, implies exactly
+
+    R_j conjugate(g_j)-g_j=e_j-R_j conjugate(e_j).
+
+Thus the new packet's outgoing coefficient differs from the original target by <2epsilon_F|f|, and its L2 error is <.001504. Fourier evolution and restriction to m>=0 do not increase this norm. Every such error is supported in its corresponding fixed orthogonal open internal fiber u_j, so its full operator norm is the maximum column bound, not its sqrt(2) aggregate. This discrepancy is paid once, after comparing the seed directly to the new packet. Comparing through the former packet first would unnecessarily double-count an error.
+
+## 2. Holomorphic continuation and contour signs
+
+From the canonical exact profile,
+
+    f(k)=zeta0 A_f E'(k) exp(i113k)/Dref(k),
+    Dref(k)=E(k)-E0+alpha exp(ik), alpha=kappa^2/J>0,
+    A_f=kappa/[sqrt(2pi)J sqrt(p0)]<17kappa,
+
+the continuation of a0,j from the real interval is
+
+    a0,j(z)=conjugate(omega_p zeta0) A_f E'(z)
+                 exp(-i113z)/Dbar(z),
+    Dbar(z)=2J(1-cos z)-E0+alpha exp(-iz).
+
+This is a holomorphic function, not the non-holomorphic operation of conjugating f at arbitrary complex z. On z=x-iy, 0<=y<=h=sigma/2,
+
+    Im Dbar(z)=-sin(x)[2J sinh(y)+alpha exp(-y)]<0.
+
+I independently obtain exp(-y) by multiplying -i(x-iy)=-ix-y. The cosh alternative is false. The exact formula is strictly negative on the closed rectangle, including its real upper boundary, because sin(x)>.4 and alpha>0. It proves no zeros without an argument-principle computation or an assumed resonance-pole location.
+
+The incoming propagation and numerator phase have modulus
+
+    |exp[-imz-itE(z)-i113z]|
+      =exp[-(m+113)y-2Jt sin(x)sinh(y)]
+      <=exp[-(m+113+vt)y]
+
+for t>=0, using E'(x)>v. The direction of contour deformation is therefore correct. The corresponding statement for the original outgoing denominator would not follow; the proposal does not use it.
+
+## 3. Both vertical edges and the bottom
+
+The strip derivative obeys |E'(x-iy)|<=2J cosh(y)<.062. At x=k0+/-sigma the real-axis distance is |E(x)-E0|>=v sigma. The continued real part has corrections bounded by .061h^2+alpha, since cosh(y)-1<=y^2 and exp(-y)<=1. Hence at both sides
+
+    |Dbar(x-iy)|>=|Re Dbar(x-iy)|
+      >=v sigma-.061h^2-alpha>.024sigma.
+
+This covers either sign of E(x)-E0: reverse triangle inequality is sufficient, with no assumed reinforcing sign. Thus A_f|E'|/|Dbar|<44 kappa/sigma. Integrating each side vertically and keeping both gives, before Fourier normalization,
+
+    |vertical contribution at m|<=88 kappa/[sigma(m+113+vt)].
+
+For s=vt>=1, sum_(m>=0)(m+s)^(-2)<=2/s; multiplying by 1/sqrt(2pi) gives vertical norm <=88 kappa/[sigma sqrt(pi vt)]. This confirms the factor 88 already includes both hard-cutoff endpoints. Neither endpoint value is artificially zero.
+
+On the bottom, |Dbar(x-ih)|>=2J sin(x)sinh(h)>vh. The loose coefficient ceiling 44 kappa/h is valid. Bounding the integral by its length 2sigma and summing exp(-2mh) yields
+
+    bottom norm <=88 kappa sigma/h * exp(-vth)
+                   /sqrt[2pi(1-exp(-2h))].
+
+The inequalities 1-exp(-2h)>=h and sqrt(2pi)>2 imply a ceiling 88 kappa/sqrt(h)*exp(-vth)<1.3e-7*exp(-vth). The final comparison follows by squaring positive quantities: 1.5488e-14<1.69e-14. It does not need evaluating the huge exponential.
+
+At t>=10^30, sqrt(pi vt)>2e14. The vertical bound is <4.4e-19 and the bottom is <1.3e-7 even after discarding all its time decay. Their sum is <2e-7. These incoming waves again live in orthogonal u_j fibers. No cross-column sqrt(2) is needed for this term. Triangle inequalities between the bottom and sides are conservative; no cancellation is assumed.
+
+## 4. Localized integral and its actual dependency
+
+The accepted endpoint-column interface gives, for the actual canonical unit-incoming Phi_j and its complete remainder C_j,
+
+    sup_I ||C_j||<5e11,
+    integral_I |f| ||C_j'|| <1.3e24.
+
+The separate review confirms that C_j includes all finite head/internal coordinates, all closed tails, and subtraction of the actual reflected open wave; its derivative estimate already includes the |R_j'| term. The normalization, reference plane, eight-dimensional internal blocks and endpoint compensation are those of the canonical model. No changed scattering column or new physical assumption is imported here.
+
+The new a0 is the conjugate of the scalar target on the real line, so |a0|=|f| and Vedge(a0)=Vedge(f)<2e12. Integration by parts differentiating a0 C/E' gives the norm bound
+
+    [sup||C|| Vedge(a0) + integral|a0| ||C'||
+       +(sup|E''|/v) sup||C|| ||a0||_1]/[sqrt(2pi)vt].
+
+Both hard-cutoff endpoint norms appear in Vedge. The numerator is <1e24+1.3e24+2.44e9<2.4e24. There is no derivative of 1/R in this integrand because the incoming comparison coefficient has genuinely changed. The derivative of R still present inside C' is already paid by the endpoint-column premise; these are different terms.
+
+Localized outputs from the two old energies may overlap, so sqrt(2) gives the complete ceiling 2.4e24/[sqrt(pi)vt]<1.5e24/(vt). At T=10^30 this is <6e-5. Parity orthogonality prevents an additional factor, and tensoring an arbitrary passive reference preserves this norm. This confirms precisely which new premise is load-bearing; without the accepted C/C' estimates the proposed onset does not follow.
+
+## 5. Normalizing only the physical target restriction
+
+The canonical outgoing-tail estimate concerns the full-line Fourier transform b_t of the normalized f. Let p=P_(m>=0)b_t and q=||P_(m<0)b_t||. Parseval gives ||p||=sqrt(1-q^2). At t>=10^30 the inherited bound q<3e12/sqrt(pi vt)<.015 ensures p is nonzero. Its positive normalization costs exactly
+
+    ||p-p/||p||||=1-sqrt(1-q^2)
+                 =q^2/[1+sqrt(1-q^2)]<=q^2<.000225.
+
+No missing linear q term belongs in this physical comparison: the outgoing component of the actual spectral packet is already restricted to m>=0. The proof does not compare a physical state to the entire auxiliary full-line wave. Only the target p is normalized; no actual state, point-spectrum component or emitted branch is conditioned away. The final target remains the canonical beta_t, with all complex phase intact.
+
+## 6. Sum, aging and finite transfer
+
+The five complete operator ceilings add to
+
+    .001121 + .001504 + .000225 + .000060 + .0000002
+       =.0029102 < .003.
+
+Preparation and outgoing discrepancy are time-independent bounds. The side, localized and normalization bounds decrease, while the bottom bound was made constant by discarding a decreasing exponential. Hence the statement holds for every t>=10^30, not merely a selected time.
+
+The common scalar exp(-ic_new t) and old factors exp(-ib_j t) multiply all components with unit modulus. The final outgoing coefficient remains omega_p f, so old evolution is exp(-itK)W for the full elapsed t. No propagation-time subtraction or commutation of K through the interacting Hamiltonian is needed.
+
+For the same canonical finite compression, the spectrum-radius and polynomial-distance hypotheses are unchanged by the auxiliary packet. At M=50T, d=M+23 and 0<=t<=2T, its seed-subspace evolution difference is
+
+    <=4 exp[-d+18t sinh(1)]/(1-exp(-1))
+    <=4 exp[-(50-36sinh(1))T-23]/(1-exp(-1)).
+
+Using sinh(1)<1.2 gives 50-36sinh(1)>6.8, enough for <.001 at T=10^30. This norm is already on the full seed subspace and requires no new column factor. Adding it gives <.0039102<.004 on [T,2T], against the embedded infinite target. M+116 qubits is inherited from the unchanged geometry. No finite all-future or finite point-spectrum suppression conclusion is drawn. Doubling the complete isometry ceilings yields the stated sufficient unhalved trace-distance bounds .006/.008.
+
+## Disposition and limits
+
+No source correction is necessary for the reviewed implication. Preserve the corrected exp(-y) identity and explicitly keep the endpoint-column estimate as a separately checked mathematical dependency. The new onset is a tolerance/runtime tradeoff, not a replacement of the canonical theorem's smaller-error guarantee. Practical size, native Hamiltonian/state supply, robustness, thermal readiness, reset/reuse and physical identification remain unresolved supplied-model issues. No numerical or author-runner validation is claimed here.
+
+## Exact source identities
+
+Base N = /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+Base W = /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree.
+These aliases identify absolute paths, not movable repository refs.
+
+| Source | SHA256 |
+|---|---|
+| N/conjugate_packet_tradeoff_proposal/PROPOSAL.md | c49c0f7cd3af2c939085cee80883f4a36024b4979992bba1ee7628eb4b8961ac |
+| W/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md (canonical PR9668 commit supplied: b9ac0cddb3e82650137df9cec41fb24124d539e9) | b1d71a544a399ad3b908fd3c85d576769fece6a95247c64d4505523a481c0d4c |
+| N/weighted_core_derivative_proposal/PROPOSAL.md | 08cf51274fce1209a92c551487ed168ddaf0a1a4eb2edbf99eb2602ab35cf78e |
+| N/endpoint_column_independent_check/REVIEW.md | bc10c35ec7a16af2b9b218d7077a0f37bbe2dedcbdb807cfa3ca5cbfb62b1a47 |
+| N/ENDPOINT_COLUMN_QUALIFICATION.md | 130cf97149689ec0d91d960595ef9a5e207e8b07932943463b7c200742fadc8e |
+| W/AGENTS.md | febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0 |
+| W/docs/ai_methodology/SCIENCE_WORKFLOW.md | 71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3 |
+| /Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md | 9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455 |
+| /Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md | be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258 |

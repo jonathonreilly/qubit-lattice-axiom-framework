@@ -1,0 +1,15 @@
+# Root check of one sufficient family example
+
+Conditional support for ace7ba613e71aa9c6068b2c150f304ec2fb2b3878699948d2a9bacd297491bae, read completely. Root selected the parameters and exposed a rough expected bound, but did not author the example derivation. This is exposed separate-author arithmetic checking, not blind independence or a new dynamics experiment. The checked uniform/scaling sources and ancestry remain unchanged and were fully read in this coherent task.
+
+H=1e6,L=1e8,kappa0=1e-10 imply gamma0=1e-20/j, g0=1e-12/j, h0=asin(1e-14/(2j²)), T0=40j/1e-20. Across .0027<j<.003, the stated upper bounds g0<3.704e-10 and h0<7e-10 follow; the latter arcsin argument is below6.86e-10. Domain H/L=.01 and all positive upper limits hold. The product g0T0=4e9 is exact, not rounded.
+
+The transcendental witnesses are sufficient: 2.7^7>1040 implies e^28>1040^4>1e12+1, hence log(1+H²)<28. Also e^15>2.7*(1000)^2>2000001, bounding asinh(H). The gamma-dependent floor is explicitly retained, with upper bound2.52e-20 in eta. Its variable part is at most(1.05/3.14)*7.321e-9*28; this plus the floor is below6.86e-8. Thus the squared omitted ceiling is below8.172e-7, less than .000905².
+
+For the actual explicit moment upper envelopes, UD2<.68 gamma0²H follows from the uniform moment identity and h/sin h bound, not from a fixed numerical moment. Its square root is below825gamma0. The exact relation U2=UD2*(h0/sin h0)²/(4j²) therefore gives400sqrt(U2)<2.3e-10 using j>.0027 and gamma0<3.704e-18. The transmitted outgoing term is below1.01*825/L, independent of j. Paying sqrt2<1.415, calibration and wrong-window terms yields Eout_bar<1.18e-5 as stated. The incoming bound .001095 follows from sqrt(.68/H)<.000825.
+
+IG<3.56e8 retains ample slack beyond1.27e7*28=3.556e8 and its positive tiny floor. IL<123631 follows from8242*15=123630 and the remaining term<.040744. The displayed full-inverse formulas give Ecore<6.1e-13, Bcore<2.031e-6, hence the two-window square-sum<4.1e-6. No selected inverse constant or fixed local budget is substituted.
+
+For the outgoing curve, e^19>2.7^19>1e8 can be witnessed by 2.7^5>100 and 2.7^7>1000, since19=5+7+7. Together with pbar*40>36 this gives Cbar<1.6e-7 and Rbar>.9999993. The finite cut exponent is below-8e8 by sinh1<1.2; the loose Dcut<1e-9 is valid. Summing all component ceilings gives .002027701<.00204. The probability lower bound follows from (1-.0020407)²>1-.0040814>.9959; .004081*.9999993>.00408 proves the stated normalized vector bound. The complete finite .064 ceiling follows from .0040814<.004096.
+
+All common bounds apply to every positive scaling member via the independently checked sufficient-envelope corollary; exact masses are not asserted monotone. Counts M+241 and2M+277 yield the stated inventory. The larger receiver and much longer wait relative to PR9676 are expressly disclosed. This is a nonempty sufficient-condition example, not optimization, necessary resource/precision, native supply, permanent halt or a quantitative onset for the sharper infinite asymptotic theorem. No numerical runner, W/Git, audit or prompt change forms part of this check.

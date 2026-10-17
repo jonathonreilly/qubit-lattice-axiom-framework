@@ -1,6 +1,6 @@
 {
- "edge_count": 16207,
- "node_count": 7231,
+ "edge_count": 16209,
+ "node_count": 7232,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4380,6 +4380,10 @@
   },
   "critical_mediator_clock_data_bounded_theorem_note_2026-10-14": {
    "deps_hash": "bd801cbe187b",
+   "out_degree": 2
+  },
+  "critical_product_source_spectral_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "36f55076a973",
    "out_degree": 2
   },
   "cross_code_equivalence_cycle727_bounded_theorem_note_2026-07-28": {

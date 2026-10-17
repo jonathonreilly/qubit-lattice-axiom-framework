@@ -76,9 +76,9 @@ adopted; every result is unaudited bounded support with a declared model.
   - Test: put two fermions at points swapped by a half-turn. The plain
     permutation gives this pair eigenvalue +1. For fermions that means a
     half-turn done twice acts as fermion parity, the spin-1/2 behaviour.
-    This holds for all 108 (code, half-turn) cases. For every code the full
-    sign pattern under its rotation symmetry is exactly that of a spin-1/2
-    particle.
+    This holds for all 108 (code, half-turn) cases. It is clean-proven for
+    72 of them, including every most-symmetric code; the other 36 rely on
+    a dressed test and are strong evidence rather than proof.
   - An independent check refuted the first version of this note, which had
     the opposite sign; the note is corrected.
   - The answer depends on how the rotation acts. Moving the qubits gives
@@ -105,13 +105,17 @@ adopted; every result is unaudited bounded support with a declared model.
     pure qubit relabelling. How the framework's rotations act on a site's
     qubits is therefore a real modelling choice with physical
     consequences.
-  - The spin behaviour of this fermion is still being computed.
+  - Spin: with the plain on-site action this fermion is spinless. Adding
+    an on-site phase built from the site parities, which does nothing in
+    the ground state, makes it carry the spin-1/2 sign pattern under all
+    24 rotations. This gives one fermion species with full cube symmetry
+    and spin-1/2 behaviour.
 
 ## Blocks
 
 | Block | Note | Runner | Headline |
 |---|---|---|---|
-| C12 | `docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py` (PASS=7) | Three qubits per site, six Majoranas: one fermion species, covariant under all 24 rotations with on-site Cliffords; group law is a central extension by fermion parity. |
+| C12 | `docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py` (PASS=8) | Three qubits per site, six Majoranas: one fermion species covariant under all 24 rotations (on-site Cliffords, group A4 x| Z4); spinless under U_R, spin-1/2 class w2 on all of O under U_R W. |
 | C11 | `docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py` (PASS=6) | Six direction qubits per site: framework site rotation = edge rotation exactly; C6/C8 transfer to a site-local model. |
 | C8 | `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py` (PASS=9) | Zero- and pi-flux sectors are rotation-symmetric with bare-permutation action; swapped-pair test gives eta_f(C2,C2) = -1 for all 108 (code, C2) pairs under the bare permutation: the spin-1/2 class w2 on every code's rotation stabilizer; realization-dependent. |
 | C6 | `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py` (PASS=8) | 60 translation-invariant BKSF codes, all with a fermionic charge; none rotation-invariant; minimal orbit 4 (D3, body diagonals). |

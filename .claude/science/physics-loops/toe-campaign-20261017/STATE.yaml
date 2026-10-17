@@ -56,6 +56,7 @@ blocks:
     runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py (PASS=9, ~3.5 min)
     exact: ["8 translation-invariant sign sectors valid for all 60 codes", "sectors (0,0,0)/(1,1,1) = flux 0/pi; every stabilizing rotation acts by bare permutation there", "mixed sectors need sign corrections (control)"]
     pair_test_check: "second round CONFIRMED (own general pair test, L=8/10; toric controls; cohomology by GF(2))"
+    pair_test_scope: "72 covered pairs clean (robust); 36 uncovered need flux-dressed creators: +1 is evidence, D2 (order-4) class conditional"
     pair_test: "all 108 (code,C2) pairs (general method, L=8; C10): lambda=+1 -> eta_f(C2,C2) = -1 under bare permutation P_R; per code the class on its rotation stabilizer = w2 restricted (D3 nontrivial, D2 = Q8 class, Z2 nontrivial); P_R*prod exp(-i pi B/4) gives trivial class (realization-dependent); AB control returns -1"
     independent_check: "claims 1-4 CONFIRMED (L=4,6); first-version claim eta_f=+1 REFUTED (restriction of P_R to a region is not a valid localization); pair test + Majorana form + W dressing adopted; note rewritten and renamed"
     trace_class: frontier_discovery
@@ -71,9 +72,9 @@ blocks:
   C12-majorana-per-direction-O-covariant:
     status: delivered_to_branch
     note: docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
-    runner: scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py (PASS=7, ~1.5 min)
+    runner: scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py (PASS=8, ~2 min)
     exact: ["3 qubits/site, 6 Majoranas: dims 3, fermion (T-junction -1 x20)", "all 24 rotations x 32 sign choices preserve uniform signed sectors: one species, full O with on-site Clifford", "group law: 128 choices give order-48 central extension by fermion parity; axis C2 lifts^2=+1, edge C2 lifts^2=-1"]
-    open: "fractionalization class of the emergent fermion (pair test at L=12 running)"
+    fractionalization: "clean pair test (consistent action): eta_f(C2axis)=eta_f(C2edge)=+1 -> trivial class on O; U_R*prod exp(-i pi B/4) gives w2 on all of O (single species, spin-1/2 class, full O)"
     independent_check: "items 1-4 CONFIRMED (+ odd-L caveat, improper elements, group = A4xZ4 sign-pullback); prior art Li-Po arXiv:2107.14083 added; interpretation softened; pair test with clean creators: eta_f(C2axis)=eta_f(C2edge)=+1 (author rerun pending)"
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

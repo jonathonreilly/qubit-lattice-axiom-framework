@@ -107,6 +107,107 @@ def mats(G, n):
     return np.array([np.concatenate([g[0], g[1]]) for g in G])
 
 
+def site_table():
+    """bits (x3, z3) -> (subset of Majoranas, k) with gamma_subset (increasing order) = i^k X^x Z^z."""
+    tab = {}
+    for r in range(7):
+        for sub in itertools.combinations(range(6), r):
+            P = [np.zeros(3, np.uint8), np.zeros(3, np.uint8), 0]
+            for d in sub:
+                xb, zb, kk = JW[d]
+                Q = [np.array(xb, np.uint8), np.array(zb, np.uint8), kk]
+                sg = int(P[1].astype(int) @ Q[0].astype(int)) % 2
+                P = [P[0] ^ Q[0], P[1] ^ Q[1], (P[2] + Q[2] + 2 * sg) % 4]
+            tab[(tuple(P[0]), tuple(P[1]))] = (sub, P[2])
+    return tab
+
+
+TAB = site_table()
+
+
+def map_pauli(code, P, M, eps):
+    """Image of a Pauli under the site rotation M with gamma_{v,d} -> eps(d) gamma_{Mv,Rd}."""
+    n, L = code.n, code.L
+    out = [np.zeros(n, np.uint8), np.zeros(n, np.uint8), P[2]]
+    for s in sorted(set((np.flatnonzero(P[0] | P[1]) // 3).tolist())):
+        v = (s // (L * L), (s // L) % L, s % L)
+        sub, k = TAB[(tuple(P[0][3 * s:3 * s + 3]), tuple(P[1][3 * s:3 * s + 3]))]
+        sgn = int(np.prod([eps[d] for d in sub])) if sub else 1
+        W = code.word([(tuple(int(x) for x in M @ np.array(v)), bk.rotdir(M, d)) for d in sub])
+        add = [W[0], W[1], (W[2] - k + (0 if sgn == 1 else 2)) % 4]
+        sg = int(out[1].astype(int) @ add[0].astype(int)) % 2
+        out = [out[0] ^ add[0], out[1] ^ add[1], (out[2] + add[2] + 2 * sg) % 4]
+    return out
+
+
+def clean_pair_eigenvalue(code, G, lab, M, eps, x):
+    """Clean pair test: S flips exactly B_x and B_Rx and commutes with every other generator (window solve);
+    lambda = sign of S^dag S^R in the signed group (S^R under the on-site Clifford rotation)."""
+    n, L = code.n, code.L
+    Rx = tuple(int(c) for c in M @ np.array(x))
+    lo = tuple(min(x[i], Rx[i]) - 1 for i in range(3))
+    hi = tuple(max(x[i], Rx[i]) + 1 for i in range(3))
+    cols = np.array(sorted({3 * code.s(p) + t for p in itertools.product(*[range(lo[i], hi[i] + 1) for i in range(3)]) for t in range(3)}))
+    wrap = lambda p: tuple(((c + L // 2) % L) - L // 2 for c in p)
+    rows, rhs = [], []
+    for g, l in zip(G, lab):
+        cg = np.concatenate([g[1][cols], g[0][cols]])
+        if not cg.any():
+            continue
+        rows.append(cg)
+        rhs.append(1 if (l[0] == 'B' and wrap(l[1]) in (wrap(x), wrap(Rx))) else 0)
+    A = np.concatenate([np.array(rows, np.uint8), np.array(rhs, np.uint8)[:, None]], 1)
+    m, nn = A.shape[0], 2 * len(cols)
+    piv, r = [], 0
+    for c in range(nn):
+        nz = np.flatnonzero(A[r:, c])
+        if nz.size == 0:
+            continue
+        pr = r + nz[0]
+        A[[r, pr]] = A[[pr, r]]
+        rr = np.flatnonzero(A[:, c])
+        rr = rr[rr != r]
+        A[rr] ^= A[r]
+        piv.append(c)
+        r += 1
+        if r == m:
+            break
+    if A[r:, -1].any():
+        return 'no S'
+    sol = np.zeros(nn, np.uint8)
+    for i, c in enumerate(piv):
+        sol[c] = A[i, -1]
+    Sx = np.zeros(n, np.uint8)
+    Sz = np.zeros(n, np.uint8)
+    Sx[cols] = sol[:len(cols)]
+    Sz[cols] = sol[len(cols):]
+    S = [Sx, Sz, int(Sx.astype(int) @ Sz.astype(int)) % 4]
+    T = rb.mulp(rb.dag(S), map_pauli(code, S, M, eps))
+    rb.L, rb.N = L, n
+    f = rb.phase_in_group(G, T)
+    return None if f is None else {0: 1, 2: -1}.get(f, 'imaginary')
+
+
+def _generate(gens_, key):
+    el = {key(np.eye(6, dtype=int)): np.eye(6, dtype=int)}
+    fr = [np.eye(6, dtype=int)]
+    while fr and len(el) <= 200:
+        nf = []
+        for A in fr:
+            for g in gens_:
+                B = g @ A
+                if key(B) not in el:
+                    el[key(B)] = B
+                    nf.append(B)
+        fr = nf
+    return el
+
+
+def _order48(a, b, key):
+    el = _generate([a, b], key)
+    return len(el) == 48 and key(-np.eye(6, dtype=int)) in el
+
+
 def main() -> int:
     ck = c1.Checks()
     c4 = Code(4)
@@ -223,6 +324,32 @@ def main() -> int:
     print('group-law choices:', dict(stats))
     ck.check('group law: 128 of 1024 generator sign choices give an order-48 group containing -1 (central extension of O by fermion parity); in all, axis-C2 lifts square to +1 and edge-C2 lifts to -1',
              stats.get((('C2axis', 1), ('C2edge', -1)), 0) == 128)
+    # clean pair test for one consistent group action (L = 8): one axis C2 and one edge C2, both sectors
+    e4, e3 = next((a, b) for a in adm(C4) for b in adm(C3) if True and _order48(mat(C4, a), mat(C3, b), key))
+    el = _generate([mat(C4, e4), mat(C3, e3)], key)
+    c8 = Code(8)
+    lam = Counter()
+    for s_ in ((0, 0, 0), (1, 1, 1)):
+        G8, lab8, _ = c8.gens(s_)
+        done = set()
+        for B in el.values():
+            perm = [int(np.flatnonzero(B[:, d])[0]) for d in range(6)]
+            Mr = np.zeros((3, 3), int)
+            for a in range(3):
+                b, s2 = DIRS[perm[a]]
+                Mr[b, a] = s2
+            kd = bk.kind(Mr)
+            if kd not in ('C2axis', 'C2edge') or kd in done:
+                continue
+            done.add(kd)
+            eps = tuple(int(B[perm[d], d]) for d in range(6))
+            xs = [x for x in itertools.product(range(-2, 3), repeat=3)
+                  if 2 <= max(abs(x[i] - int(c)) for i, c in enumerate(Mr @ np.array(x))) <= 3][:2]
+            for x in xs:
+                lam[(s_, kd, clean_pair_eigenvalue(c8, G8, lab8, Mr, eps, x))] += 1
+    print('clean pair test (sector, rotation, lambda): count', dict(lam))
+    ck.check('clean pair test (L = 8, consistent group action): lambda = -1 for the axis C2 and the edge C2 in both sectors, so eta_f = +1 for both (trivial class on O)',
+             set(k[2] for k in lam) == {-1} and len(lam) == 4)
     print('per_element: 8 sign sectors; 24 rotations x 32 sign choices; 1024 generator choices')
     print('per_site: three qubits per site (six local Majoranas)')
     print('per_mode: not applicable')

@@ -1,13 +1,13 @@
 ---
 claim_id: majorana_per_direction_cubic_fermion_code_has_one_species_covariant_under_all_cubic_rotations_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: three qubits per site of Z^3 carrying six local Majorana operators gamma_{v,d}, one per direction d (fixed Jordan-Wigner choice inside each site; Majoranas at different sites commute). Generators: site parity B_v = (-i)^3 gamma_{v,0}...gamma_{v,5} and plaquettes S_p = product of the four edge operators A_(v,a) = gamma_{v,+a} gamma_{v+e_a,-a} around a plaquette, with one sign per plaquette orientation. Rotations act by permuting sites together with the on-site Clifford gamma_{v,d} -> eps(d) gamma_{Rv,Rd}, prod eps = sign of the direction permutation. Exact: on even tori all 8 translation-invariant sign sectors are valid commuting stabilizer groups with log2 code dimension 3 (L = 4; also L = 6 for the two uniform sectors; on odd tori only the all-plus sector is valid); the B-violations are moved by the edge operators and have Levin-Wen T-junction sign -1 for all 20 triples of straight legs (L = 6); every one of the 24 rotations, with every admissible sign choice (32 each), maps the signed groups of the two uniform sectors to themselves (L = 4). So the code carries a single fermion species and is covariant under the full proper cubic group, with an on-site Clifford action. Group law: 128 of the 1024 sign choices on a C4 and a C3 generate an order-48 signed-permutation group containing -1, a central extension of O by fermion parity isomorphic to A4 x| Z4 (the extension pulled back from the sign character O = S4 -> Z2; not the spin double cover); in all of them the lifts of axis C2 square to +1 and those of edge C2 to -1. Not claimed: the fractionalization class of the emergent fermion (under study), bare-permutation realizations (a bare qubit permutation does not implement the Majorana permutation), the relation to Admissibility, dynamics, or any physical identification."
+claim_scope: "Supplied model: three qubits per site of Z^3 carrying six local Majorana operators gamma_{v,d}, one per direction d (fixed Jordan-Wigner choice inside each site; Majoranas at different sites commute). Generators: site parity B_v = (-i)^3 gamma_{v,0}...gamma_{v,5} and plaquettes S_p = product of the four edge operators A_(v,a) = gamma_{v,+a} gamma_{v+e_a,-a} around a plaquette, with one sign per plaquette orientation. Rotations act by permuting sites together with the on-site Clifford gamma_{v,d} -> eps(d) gamma_{Rv,Rd}, prod eps = sign of the direction permutation. Exact: on even tori all 8 translation-invariant sign sectors are valid commuting stabilizer groups with log2 code dimension 3 (L = 4; also L = 6 for the two uniform sectors; on odd tori only the all-plus sector is valid); the B-violations are moved by the edge operators and have Levin-Wen T-junction sign -1 for all 20 triples of straight legs (L = 6); every one of the 24 rotations, with every admissible sign choice (32 each), maps the signed groups of the two uniform sectors to themselves (L = 4). So the code carries a single fermion species and is covariant under the full proper cubic group, with an on-site Clifford action. Group law: 128 of the 1024 sign choices on a C4 and a C3 generate an order-48 signed-permutation group containing -1, a central extension of O by fermion parity isomorphic to A4 x| Z4 (the extension pulled back from the sign character O = S4 -> Z2; not the spin double cover); in all of them the lifts of axis C2 square to +1 and those of edge C2 to -1. Fractionalization (clean pair creators, consistent group action): every axis C2 and every edge C2 gives pair eigenvalue -1, so eta_f(C2, C2) = +1 for both conjugacy classes and the fermion's class on O is trivial (H^2(O; Z2) = Z2^2 is detected by the two involution classes); the on-site-dressed realization U_R W with W = prod_v exp(-i pi B_v / 4) (on-site, constant on the code space) multiplies every two-fermion eigenvalue by -1 and so carries the spin-1/2 class w2 on all of O. Not claimed: bare-permutation realizations (a bare qubit permutation does not implement the Majorana permutation), the relation to Admissibility, dynamics, or any physical identification."
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
 runner: scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py
 ---
 
-# A Majorana-per-direction cubic fermion code has one fermion species covariant under all cubic rotations
+# A Majorana-per-direction cubic fermion code has one fermion species covariant under all cubic rotations (and can carry the spin-1/2 class)
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
@@ -71,6 +71,38 @@ permutation?
      - an edge C2 is an odd permutation (three transpositions), so the
        determinant condition forces its square to flip every Majorana.
 
+4. **Fractionalization (exact, pair test).** Use the consistent group
+   action of item 3.
+   - Solve for a clean pair creator S: it flips exactly B_x and B_Rx and
+     commutes with every other generator.
+   - This is possible here because the plaquettes map to plaquettes
+     exactly, so S^R is clean as well.
+   - λ = sign(S^dagger S^R) in the signed group.
+   - **Result.** At L = 8 in the runner and at L = 10 in exploration, in
+     both sectors, λ = -1 for every axis C2 and every edge C2,
+     consistently across positions and conjugate elements. So
+     eta_f(C2, C2) = +1 for both classes.
+   - H^2(O; Z2) = Z2^2 is detected by these two classes, so the fermion's
+     class under this action is trivial. It is not spinorial.
+   - The independent check found the same for all 128 consistent group
+     choices, with both lifts of each element.
+5. **A spin-1/2 realization (from 4).**
+   - Let W = prod_v exp(-i pi B_v / 4). It is on-site (B_v acts on one
+     site), commutes with every generator, and is constant on the code
+     space.
+   - On a state with fermions at x and Rx, it contributes a relative phase
+     (e^{i pi / 2})^2 = -1.
+   - So the realization U_R W multiplies every pair eigenvalue by -1:
+     λ = +1 and eta_f(C2, C2) = -1 for every C2. Its class on O is then
+     w2, the spin-1/2 class.
+   - (U_R W)(U_S W) = U_R U_S W^2, with W^2 = const (-1)^F. So this is
+     again an action up to fermion parity.
+6. **Caution, from the exploration.** An earlier solver let S also create
+   flux excitations next to the endpoints. It gave λ = +1 for the axis C2.
+   - Reason: a small flux loop around an edge on the string's path links
+     the closed loop S^dagger S^R and changes its sign.
+   - Only clean creators give the sector invariant here.
+
 ## How this bears on the lane (interpretation, not a claim)
 
 - **A single cubic-covariant species exists once on-site Cliffords are
@@ -85,9 +117,15 @@ permutation?
   site's qubits by bare relabelling or by such an on-site unitary is a
   declared reading of the Lattice axiom. The two readings give different
   species counts.
-- **The spin question is open here.** How the emergent fermion's
-  fractionalization class depends on the realization is under study (loop
-  pack, c12).
+- **A single, fully cubic-covariant, spin-1/2-class fermion.** With the
+  on-site action U_R W, this code carries one emergent fermion species
+  with the spin-1/2 fractionalization class on the whole rotation group.
+  - The ingredients are three qubits per site, plaquette-range conditions
+    and an on-site Clifford-plus-phase rotation action.
+  - With the plain Clifford action U_R, the same fermion is spinless.
+  - So "spin" is again a property of how rotations act on the site's
+    qubits. The framework would have to fix that action to make a
+    prediction.
 
 ## Independent check
 
@@ -95,6 +133,9 @@ A fresh-context agent (same model family) wrote its own code before
 reading the runner.
 - **Items 1–4: confirmed.** It added the odd-L caveat, the improper
   elements and the A4 x| Z4 identification.
+- **Item 4 (pair test): confirmed** independently, with clean creators:
+  λ = -1 for both classes, for all 128 consistent choices, at L = 10 and
+  L = 12. It also identified the flux-dressing pitfall of item 6.
 - **Prior art.** It found the Li–Po prior art, and noted that the
   Wu–Arovas–Hung 3D example is on the diamond lattice.
 - **Interpretation.** It flagged the overreach that is corrected above.
@@ -142,8 +183,11 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c12_majorana_per_dir
 - **N4 — inputs.** Exact Pauli algebra with phases at L = 4 and L = 6.
   The statistics run uses L = 6, so that opposite legs do not meet across
   the torus.
-- **N5 — wording.** "One species" means one type of B-violation, the only
-  point charge type.
+- **N5 — wording.**
+  - "One species" means one type of B-violation, the only point charge
+    type.
+  - "Spin-1/2 class" means eta_f = w2 on O for the stated realization. It
+    is not an emergent SU(2) doublet; each fermion here is a single state.
 - **N6/N7 — strongest objection.** On-site Cliffords are not bare
   relabellings. This is stated in item 2 and in the interpretation.
 - **N8 — earlier claims.** Consistent with the BKSF orbit note, whose
@@ -155,7 +199,7 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c12_majorana_per_dir
 python3 scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py
 ```
 
-Expected: `TOTAL: PASS=7 FAIL=0` (about 1.5 minutes).
+Expected: `TOTAL: PASS=8 FAIL=0` (about 2 minutes).
 
 ## Load-bearing sources
 

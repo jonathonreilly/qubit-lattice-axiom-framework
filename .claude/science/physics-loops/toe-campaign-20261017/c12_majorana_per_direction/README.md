@@ -16,4 +16,5 @@
 - The independent check used strictly clean pair creators and found lambda = -1 for both types
   (eta_f = +1, +1). It also showed that a flux-dressed creator gives +1 for the axis C2. `gse_conj3.py`
   reruns with clean creators (L = 10).
-- The fractionalization class is not yet claimed.
+- Clean result (`gse_conj3.py`, L = 10; runner, L = 8): lambda = -1 for both classes, so eta_f = +1 and +1
+  (the trivial class on O). The dressing W = prod exp(-i pi B/4) flips this to w2 (see the note).

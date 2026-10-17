@@ -1,7 +1,7 @@
 ---
 claim_id: bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact on the L = 4 torus (Pauli algebra with phases): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is +, respectively -, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact: for 72 of the 108 (code, C2) pairs (all three edge C2 of every D3 code, one edge C2 of each order-4 code, the edge C2 of 24 of the 36 single-C2 codes) there is an ordering whose plaquette span P_R preserves, and in both sectors the state with fermions at x and Rx has P_R-eigenvalue +1 relative to the vacuum for every tested off-axis x (control: +1 for the bosonic toric-code charge). With exchange sign -1 this gives eta_f(C2, C2) = -1 under P_R: the bare permutation acts on the emergent fermion spinorially, C2^2 = (-1)^F. The realization P_R W with W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) gives +1, so the class belongs to the realization, not to the code alone. Not claimed: the 36 remaining pairs, C3 (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin)."
+claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact on the L = 4 torus (Pauli algebra with phases): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is +, respectively -, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact: for 72 of the 108 (code, C2) pairs (all three edge C2 of every D3 code, one edge C2 of each order-4 code, the edge C2 of 24 of the 36 single-C2 codes) there is an ordering whose plaquette span P_R preserves, and in both sectors the state with fermions at x and Rx has P_R-eigenvalue +1 relative to the vacuum for every tested off-axis x (control: +1 for the bosonic toric-code charge). With exchange sign -1 this gives eta_f(C2, C2) = -1 under P_R: the bare permutation acts on the emergent fermion spinorially, C2^2 = (-1)^F. For each D3 code, since H^2(D3; Z2) = Z2 is detected by any C2, the fermion's class under P_R equals the restriction of the spin-1/2 class w2 to D3; for the 24 covered single-C2 codes likewise for their Z2. The realization P_R W with W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) gives +1, so the class belongs to the realization, not to the code alone. Not claimed: the 36 remaining pairs, C3 (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin)."
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
 runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
@@ -78,6 +78,20 @@ for P_R.
    - The independent check also derived this from the Majorana form: P_R
      maps A_e to plus or minus A_{Re} B_tail B_head (times plaquettes), so
      the encoded fermion goes as c_v -> -i s_v c_{Rv}.
+   - **For the D3 codes this is exactly the spin-1/2 class (group
+     cohomology).**
+     - H^2(D3; Z2) = Z2, since H_1(D3) = Z2 and H_2(D3) = 0. Its nontrivial
+       class is detected by the square of any C2.
+     - The restriction of the spin-1/2 class w2 of SO(3) to D3 is that
+       nontrivial class: in SU(2), a lift of a pi rotation squares to -1, and
+       the preimage of D3 is the binary dihedral group of order 12.
+     - All three edge C2 of every D3 code give eta_f = -1. So under P_R, the
+       fermion's fractionalization class for the code's whole rotation
+       stabilizer equals w2 restricted to D3: the class of a spin-1/2
+       particle.
+     - For a single-C2 code the same holds for its Z2.
+     - For the order-4 codes (D2 = Z2 x Z2, H^2 = Z2^3) only one edge C2 is
+       covered, so the class is not determined.
 6. **The class belongs to the realization.**
    - Let W = prod_v exp(-i pi B_v / 4). It is a function of the
      stabilizers, so it is constant on the code space. On a state with

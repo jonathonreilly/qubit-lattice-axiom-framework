@@ -14,5 +14,16 @@ Findings so far (L = 4 unless stated; exploratory scripts in this folder):
 - `splaq.py`: for every ordering of a D3 code, span(S^o) (the flux-free convention defining clean
   hops) is preserved by only 2 of the 6 stabilizing rotations (E and one edge C2). Orbit-6 codes:
   1 or 2 of 4; orbit-12 codes: 1 or 2 of 2.
-- `fluxconv.py`: search for a D3-invariant flux convention F = span(S^o_p * beta_c(p)) with beta
-  supported on plaquette corners (running).
+- `fluxconv.py`: 8 of 4096 corner-supported dressings beta give a D3-invariant flux convention
+  F = span(S^o_p * beta_c(p)) (L = 4; confirmed D3-invariant at L = 6).
+- `cleanhop.py` (run with LL=6 via the *L.py variants): for 2 of the 8 (beta = ([0,1],[0,3],[1,3]) and
+  ([1,3],[0,1,2,3],[0,1])), rank F = 430 = reference and local clean hops exist in all three
+  directions (L = 6 window, no wrapping). So a D3-symmetric clean hop system exists for the D3 code
+  (`symhopL.py`: rotations map hops to hops times F*B elements, as required).
+  (At L = 4 the window covered the whole torus; those runs are not meaningful.)
+- `symstack2.py`, `cquad.py`: building the O-covariant 4-copy stack from these symmetric hops, the quad
+  operators do NOT commute: at a vertex they anticommute in the complete bipartite pattern
+  {+-z} vs {+-x, +-y} (all triangles even, so a switching by odd vertex terms would fix it, but the
+  switching class singles out z and is not O-invariant), and some non-adjacent quads also anticommute.
+- Status: O-covariant local Pauli condensation of the quad boson is not achieved by either route
+  (mixed-type hops: nonlocal commutant; symmetric hops: noncommuting quads). Open.

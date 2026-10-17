@@ -140,20 +140,10 @@ reason the codes built so far could not reach it? If so, what must change?
   required.
 
   Otherwise the action must mix degenerate terms, as in the spinful code.
-- **One qubit per connecting direction.** The six directions are the
-  smallest even orbit of single positions at a site. Orbits of extended
-  supports can be smaller: a tetrahedron of octants has orbit 2. A charge carried by the six direction
-  qubits, with no site term, is the minimal shell allowed by the rule.
-  - If its class is w2, the six states form a doublet plus a quartet,
-    2 + 4. The doublet is E1/2 or E5/2.
-  - If its class is trivial and the stabilizer character is trivial
-    (k = 0), they form A1 + E + T1.
-  - This is the familiar p-shell count: three orbitals times two spin
-    states splits as j = 1/2 plus j = 3/2. Here it arises from six
-    positions, with no spin degree of freedom put in.
-- **Not shown.** A code with a direction-carried charge and class w2. Nor
-  that the doublet is the lowest state, which depends on the sign of
-  hopping around the shell.
+- **One qubit per connecting direction. Superseded: see the corner-code note.**
+  - **What this note said.** The six directions are the smallest even orbit of single positions at a site, and a direction-carried charge with no site term would be the minimal allowed shell. If its class were w2, the six states would split as 2 + 4 (E1/2 or E5/2, plus G3/2). The group theory of item 4 stands.
+  - **Why the route fails.** The direction positions lie on C4 axes. Under Clifford or PSG realizations, the phase at a C4-fixed position is a fourth root of unity, so the class is trivial on that C4. So a direction-carried charge cannot carry w2 in those realizations.
+  - **What replaced it.** The lane now uses the 12 corners per site, which lie only on C2 axes. That is the corner-code note.
 
 ## Independent check
 

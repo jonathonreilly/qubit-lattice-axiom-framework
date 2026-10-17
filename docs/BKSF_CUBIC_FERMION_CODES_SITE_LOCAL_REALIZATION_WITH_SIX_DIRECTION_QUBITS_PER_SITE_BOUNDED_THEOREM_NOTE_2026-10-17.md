@@ -12,8 +12,12 @@ runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realizat
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
-**Status:** bounded support, unaudited. Exact for the stated encoding.
-Nothing is adopted.
+**Status:** SUPERSEDED for the emergent-electron lane by
+`CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+and `CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md`.
+- **Why.** A fermion on the six direction positions sits on C4 axes, and so does one at the site. Under realizations that map terms to terms, its class is then trivial on C4, so this model cannot carry the spin-1/2 class.
+- **What replaced it.** The lane now uses the 12 corners per site. Those notes also show that the qubit count per site is not physical for a fermion much larger than the grid.
+- **What still stands.** The statements below remain valid bounded support for the stated encoding. Nothing is adopted.
 
 ## Question
 

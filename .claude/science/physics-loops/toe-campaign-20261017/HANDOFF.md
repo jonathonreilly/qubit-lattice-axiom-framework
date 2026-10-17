@@ -8,6 +8,29 @@ Branch `claude/toe-campaign-12h-20261017`, cut from
 excitation of neighbourhood conditions (owner's direction). Nothing here is
 adopted; every result is unaudited bounded support with a declared model.
 
+## The arc in one paragraph (for the owner; interpretation, not a claim)
+
+- **Nearest-neighbour rules give no fermion.** Simple symmetric rules on
+  one, two or three qubits per site, with each condition on a site's
+  nearest-neighbour star, never produce a freely moving fermion (C1–C4).
+- **Fermions appear one step up.** Once conditions span a plaquette and
+  each site carries several direction-labelled qubits, fermions appear
+  (BKSF, C6; site-local version, C11).
+- **What spin they carry depends on how a rotation acts on a site's
+  qubits.**
+  - If rotations only move qubits around, the fermions are spin-1/2-like
+    (C8). But no single fermion type is then fully cube-symmetric: at
+    least four come together (C6).
+  - If a rotation may also apply a fixed local unitary inside each site,
+    one fermion type can be fully cube-symmetric (C12). Its spin is then
+    0 or 1/2 depending on an extra local phase that does nothing in the
+    ground state.
+  - Pure Majorana-type dynamics prefers the spinless choice.
+    Charge-conserving dynamics ties the choice to the electric charge, as
+    in the electron's spin-charge relation.
+- **Next.** To make a prediction, the framework has to fix how rotations
+  act inside a site, and whether there is a conserved charge.
+
 ## Plain-language summary (for the owner)
 
 - **The supplied one-qubit Pauli stabilizer class has no three-dimensionally

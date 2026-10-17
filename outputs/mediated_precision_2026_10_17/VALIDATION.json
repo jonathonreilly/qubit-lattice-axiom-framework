@@ -1,0 +1,47 @@
+{
+  "status": "Conditional analytical resource/precision milestone; selectively checked, unaudited",
+  "note_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_precision_publication/NOTE.md",
+      "destination": "docs/MEDIATED_SCALAR_BOND_TOLERANCE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "d9825f0b3262ad0f49c1589274706ea811146a7b9e691b09ad757db197bceb5c",
+      "bytes": 19131
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_precision_publication/SCALAR_NOTE.md",
+      "destination": "docs/MEDIATED_EARLIER_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "9ca07c5e4fdc86f29d4560e9fb3222b28181d86e62d8ce5696251dc8df7b35f0",
+      "bytes": 11981
+    }
+  ],
+  "manifest_sha256": "10da3424c98db832e39fa40484e3abfff732d4cedd4a7217353be5e4266446fb",
+  "reviews": {
+    "SCALAR_INTEGRATION_REVIEW.md": "d6bae01f113bc5f5b740f3c95fa97a0aead338c1b327054a11d70ddcf8588db3",
+    "PRECISION_INTEGRATION_REVIEW.md": "a1d6d0ef1ded2440d40652e2719a600ee372787cf30d63f4d4d45bb31f326942"
+  },
+  "post_review_edits": [],
+  "new_files": 10,
+  "inherited_mappings": 235,
+  "inherited_false_proof_flags": 12,
+  "historical_notes": 15,
+  "current_context_notes": 12,
+  "inherited_manifests": 12,
+  "note_links": 25,
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "mediated_earlier_window_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "69844311c4ae",
+        "out_degree": 1
+      },
+      "mediated_scalar_bond_tolerance_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "b7130df5f13f",
+        "out_degree": 1
+      }
+    },
+    "node_count": 7248,
+    "edge_count": 16242,
+    "added_edges": 2
+  },
+  "limits": "No new scientific numerical execution. Prior interval enclosures reused; new Taylor/rational arithmetic and full-source composition distinctly checked. No numerical epsilon or combination of tolerance with performance point; no dynamics/sweep/fullpipeline/retainedaudit/native realization."
+}

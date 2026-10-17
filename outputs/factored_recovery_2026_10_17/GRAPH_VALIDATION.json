@@ -1,0 +1,12 @@
+{
+  "old_nodes_unchanged": true,
+  "new_nodes": {
+    "factored_recovery_complete_output_bounded_theorem_note_2026-10-17": {
+      "deps_hash": "04931d62b721",
+      "out_degree": 3
+    }
+  },
+  "node_count": 7237,
+  "edge_count": 16219,
+  "added_edges": 3
+}

@@ -1,0 +1,24 @@
+# Distinct root check: direct original-core derivative
+
+Conditional support for the original unconverted finite physical recovery derivative, with no necessary correction found. Target cfca9422163b4f4694a2efddbbff6779bd3c354bbd505e90af4d16189d1e40be was read completely. Root refreshed canonical endpoint71c65d72 physical matching/filter passages175–319 and complex-disk passages1386–1518 in full, and reused the exact checked dwell/value sources within their scope. This is not a new calibration or numerical inverse validation.
+
+The canonical recurrence replaces the inverse root in the second diagonal M16 block by lambda-2J-B+JQ. Its derivative is bounded by .062+.031*1.001<.1, without differentiating a large inverse closed root. The explicit continued inverse167 and incoming RHS .063/.125 give the contact derivative167²*.1*.063+167*.125<205. The projectors are fixed. Both open and decaying closed components are retained.
+
+The finite geometry is two arms of45 original positions plus41 buffer positions, hence86 per arm and172 after the fixed junction unitary. That unitary and the coordinate reordering do not differentiate. The operator norm of their direct sum is the maximum of the arm norms; no unjustified dimension factor is removed from a nonorthogonal sum. On each free site the open derivative is bounded by2*86+1000, and the closed derivative by205+11*86*.125; their sum is below2000. The contact derivative itself is smaller. Thus sqrt(86)*2000<20000 and sqrt(2)*2000<4000 justify the bare full and filter-restriction derivative bounds. Only decaying powers occur; powers were differentiated before taking norms.
+
+For the free/image Green kernel, the free derivative is at most110+86*1.001*41. The image derivative is at most105*1.001*208+3000. Their sum is below30000. Its real value is at most41+208<300. Contact-to-filter recovery follows the finite M16 inverse block with the outward physical Q^(m-2) factor; its derivative bound167²*.1+19*167*1.001<7000 fits the same envelope. This use is within the canonical matching convention and does not introduce an incoming growing closed wave. The86-by2 block column consequently has norm<4000 and derivative<400000 by the safe square-sum estimate; all internal fibers are covered by the block operator norms.
+
+For the constant filter V, differentiate x=(I-Gf V)^-1 yf exactly to obtain x'=(I-Gf V)^-1(yf'+Gf' V x). The order Gf' V is essential and is correct. The independent dwell/value result bounds the actual filtered x by30 on the real band. It is not differentiated as an inequality. Canonical real inverse2000 and derivativeGf<30000 then give x'<98,000,000. The exterior reconstruction derivative y'+C' V x+C V x' is below20,000+600,000+19,600,000,000<2e10. No positivity or unitarity off the real axis is used for this step.
+
+Changing the incoming origin to the outer planes adds at most86*30<3000 to the real k derivative. The separately paid margin2.1e10 is safe even if some phases were already included in the finite-site envelope. Dividing by the physical old E'(k)>.025 gives8.4e11<1e12. This establishes the stated conservative bound on the original172-head finite map, on each physical window and both lips by fixed real conjugation, including passive references.
+
+The source correctly distinguishes this map from converter-loaded Phi_old P. The decomposition Psi_B u+H_C v and its four product-rule terms are exact under the cited physical plane convention. Values u<.5,v<1e-44,H_C<160 alone do not supply their derivatives. The source leaves them explicit; its1e12 result must not replace arbitrary new-port forcing, infinite closed-tail derivatives, input-cap/gate derivatives, full Lprime or the resonant source inverse derivativeD3. There is no new runtime or device certificate.
+
+Root suggested this route and authored other source/local/outgoing interfaces, but did not author this direct-core derivation. The finite equations, counts, product rules and arithmetic above were reconstructed from the stated canonical passages. The unchanged calibration and earlier dwell checks are source-exposed premises with shared ancestry, not blindly revalidated or promoted to retained audit status. No scientific program, dynamics, numerical inverse, integration or sweep was run. Only this review was written; no canonical, Git, prompt or axiom changes occurred.
+
+Exact premises:
+- prepared_core_direct_derivative/PROPOSAL.md: cfca9422163b4f4694a2efddbbff6779bd3c354bbd505e90af4d16189d1e40be.
+- prepared_core_recovery/PROPOSAL.md: cce29994b7141df161ca12f377765fdaf760f7e64fc56043bbf370e2cd437ea9.
+- prepared_core_dwell_check/REVIEW.md: 88274b8b49e583bdb9b5f933f7406b1a96a6ca79049e57b83e8030c834d16819.
+- prepared_core_composition_check/REVIEW.md: 52edba6061be49eef40b5c06754a7425b5f7f62671f175cc72a093d4a60de65c.
+- docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md: 71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff.

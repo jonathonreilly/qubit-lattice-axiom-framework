@@ -1,0 +1,27 @@
+{
+  "original_head": "ca2dfdfa01a23605e5460d3b584934ebb3b79b32",
+  "original_note_sha256": "d18f41d78e08096d45d85b331271175d8116b1d4a67cb93d4fdb4021fe6e06f0",
+  "original_note_recovery": "outputs/all_late_complete_2026_10_17/landing/original-note.md.txt",
+  "final_note_sha256": "0734048fd88806fe4e02dc9de440f0fa87a82a76d5ef4d1967c38b4de9dc71dd",
+  "runner": "scripts/all_late_three_site_complete_output_2026_10_17.py",
+  "runner_sha256": "57f4588812243457fc46f7506eef32f268494fb45f23ad428d8892609d1f93ab",
+  "original_pin_count": 186,
+  "current_parent_count": 12,
+  "provenance_manifest_count": 9,
+  "declared_input_count": 211,
+  "inherited_parent_transport": [
+    "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+  ],
+  "scope": "Author package only. No primary execution or independent approval."
+}

@@ -1,0 +1,12 @@
+{
+  "old_nodes_unchanged": true,
+  "new_nodes": {
+    "all_late_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+      "deps_hash": "a56a18f03b30",
+      "out_degree": 3
+    }
+  },
+  "node_count": 7238,
+  "edge_count": 16222,
+  "added_edges": 3
+}

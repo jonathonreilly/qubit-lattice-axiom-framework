@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/all_late_three_site_complete_output_2026_10_17.py
+runner_sha256: 57f4588812243457fc46f7506eef32f268494fb45f23ad428d8892609d1f93ab
+input_fingerprint_sha256: 28508d918a1b43910d6d4943b604c606f453990dd9d023e03324fe357d902d4f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.27
+status: ok
+----- stdout -----
+[PASS] 186 original pins,12 current parents and9 mapping manifests match
+[PASS] q3 cubic correction identity and physical derivative retain complex Weyl load
+[PASS] physical numerator logarithmic derivative including half-angle factor; omitted-factor mutant detected
+[PASS] full coefficient phase/numerator/denominator derivative identity
+[PASS] hard-edge IBP equals direct finite integral with both endpoints
+[PASS] omitting hard edges is detected
+[PASS] integer halfline sums distinguish incoming n>=0 from excluded outgoing n>=1
+[PASS] using outgoing bound for incoming and dropping m=0 is detected
+[PASS] generic six-threshold onset allocates four decreasing allowances and ensures r>0
+[PASS] raw normalization pays fixed mass deficit once plus decaying halfline correction
+[PASS] fixed scalar mass deficit need not vanish at late times
+Scope: symbolic scalar identities, finite hard-edge integral and generic sum/onset controls. No numerical apparatus onset or finite-receiver all-future promise. Full conditional proof and supplied physical premises remain controlling; historical53f571b6 is not adopted.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

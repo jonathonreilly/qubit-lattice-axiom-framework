@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "fd5point": true,
+    "author_Kubo": true,
+    "author_degenerate": true,
+    "four_node_states": true,
+    "equal_singular_values": true,
+    "author_node": true,
+    "node_not_all_degenerate": true,
+    "static_threshold_index": true
+  },
+  "chi": 7.157298788740817,
+  "degenerate": 1.0811934946903061,
+  "node": 1.026761227590889,
+  "singular_values": [
+    1.4040589577986065,
+    1.4040589577986051
+  ],
+  "fd5point": {
+    "0.001": 7.157298767177198,
+    "0.0003": 7.157298788600521,
+    "0.0001": 7.157298796284701
+  }
+}

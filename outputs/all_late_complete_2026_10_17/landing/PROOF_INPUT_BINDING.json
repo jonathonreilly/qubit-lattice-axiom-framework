@@ -1,0 +1,1057 @@
+{
+  "scope": "Original proof/source pins and recursive mapping metadata preserved. Current parents separately bound. Historical53f571b6 is contextual, not adopted numerical premise.",
+  "pins": [
+    {
+      "path": "outputs/all_late_complete_2026_10_17/proofs/three_site_all_late_reference__PROPOSAL.md",
+      "sha256": "7044e77bcf2d944a3f1b4286b885691fd9f88e733a6ab49514111af5acbc5966",
+      "role": "new argument/check; historical author labels not authority"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/proofs/three_site_all_late_reference_check__REVIEW.md",
+      "sha256": "4ba80afbbc2301fbb4e23aafe59f85b3a85ebdab160101f970774d0383139247",
+      "role": "new argument/check; historical author labels not authority"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/proofs/three_site_all_late_complete__PROPOSAL.md",
+      "sha256": "053d8bd41ee8e16884b303b2b6bc2c8073fd840e7d4087205faa0279d4ddc693",
+      "role": "new argument/check; historical author labels not authority"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/proofs/three_site_all_late_complete_check__REVIEW.md",
+      "sha256": "cf275f3fa8598a2d9705ca6493a76d6ec23f3af7f44f93c6e260614342ee7f49",
+      "role": "new argument/check; historical author labels not authority"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_converter_composition/PROPOSAL.md",
+      "sha256": "1cc6fec524a8184f844711a4fa6d72fcc7cd13a4c8b413cbc064cd4b2201df78",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_converter_composition_check/REVIEW.md",
+      "sha256": "f1653ba00c0f3d10d8846c1f010ad6dcddcd25535837dd87d17b9e655019a15c",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_converter_endpoint/PROPOSAL.md",
+      "sha256": "22e7b4a9363a0c010ebce59f3235891708fd40eb5a5fa18f91b1a8878fe99c5a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_converter_endpoint_check/REVIEW.md",
+      "sha256": "200268709480f1533050f5d197a4bed7a2acaefa5f4a22a662938ddb504619c6",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_reference_measure_check/REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_weighted_profile/PROPOSAL.md",
+      "sha256": "ab3b7cbfb3ff8159541564ca088b23072f42c075149225b34318d11d581a9ed0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_weighted_profile_check/REVIEW.md",
+      "sha256": "d2ac8183a6531cce4ed96da1b841b99d31e1340de4b9422507b82f5da7bb9071",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_weighted_profile/ENDPOINT_ERRATUM_REVIEW.md",
+      "sha256": "f307230fd3609e89e761d8dd6d240c55be870490e3d77cfcd6e02713389b36f1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_bandwidth_extension/PROPOSAL.md",
+      "sha256": "d79a1e9abbf0508a05169d4588539063854f0604ba8db933cf878496aa7328a2",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_bandwidth_check/REVIEW.md",
+      "sha256": "3f721b75911630e0aec48688893c6bae84a182cafaa1012c977e9e262d6e180d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_resources/PROPOSAL.md",
+      "sha256": "96d6fdfa01631c17bd43c62c3a11f8754d2b31836740cc11f5a663172e3b37e7",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/bandcenter_resources_check/REVIEW.md",
+      "sha256": "01b87c7557a3d7c6c34f6a2cb1b6d7bfb61416cf3ca1d982e6aa704280352efd",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/autonomous_record_route/PROPOSAL.md",
+      "sha256": "93445d7d52e32859c980f0a0ebc6024238bedc7571d09e145ab1b128d8292f56",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/autonomous_record_route_check/REVIEW.md",
+      "sha256": "c5f3e1d7cef939e1bfa95df19f970e4da454cd12a74f068147b6cd50cdf51d5a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_kernel/PROPOSAL.md",
+      "sha256": "fbc1315e90a3980f71b1580de992b64602d5085f7a8aa1a50b90683da9ce9457",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_kernel_check/REVIEW.md",
+      "sha256": "7df395639ea91083d9321fd05f91ffbae94eb3ae87256beb09f7f4474fa2b005",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_closed_spectrum/PROPOSAL.md",
+      "sha256": "9450be53fb37c9971618218a4e806d0d3a01e94914df69932673ef5c66679646",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_closed_spectrum_check/REVIEW.md",
+      "sha256": "0fac60ea97220be6412db3c9474020fa9658cc66c77710a92ba70bc3c05fa109",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse/PROPOSAL.md",
+      "sha256": "3fb72f1629c0136531a41424683279a1b42f3a54bda4785359a367c018756c82",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse_check/REVIEW.md",
+      "sha256": "cebb4153f1f1f75001614110ad7597fcf5b835ddad2ab15e0d57c1e089f0f67f",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse/check.py",
+      "sha256": "776b43328bae8d0e27566e54f1145a0acf1e904fe3991b2ed127e45e24026aa1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse/RESULT.json",
+      "sha256": "84f1bc21d92da92081c925c7f7d10132f167d1d2e2633ff4125f84bc6482b358",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse_check/continuant_check.py",
+      "sha256": "a01658d605253094b0d5a400226e38729cc9a267ed849019ff3d6d4fabde9351",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse_check/continuant_stdout.txt",
+      "sha256": "0c36db0e4a8a1b7602eff89c00a3e8940ebdb2f188a50692a3e56a9cb108d7fb",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_gate_center_inverse_check/EVIDENCE.md",
+      "sha256": "5faca6fa3a7fcd04a403ee01d4a42c6903d68976637534fa3ba3ef02f69b7a40",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_emitter_bound/PROPOSAL.md",
+      "sha256": "2b2161aabb84d533ac884d4199a72d6c4ff6745cd00599a20abe547b9c9caea9",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_emitter_bound_check/REVIEW.md",
+      "sha256": "30bb3f38752c5d6fc2b036042315c7ccb82f2f932805e04476e9a886822b6fa3",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_seed_matrix_mass/PROPOSAL.md",
+      "sha256": "e1abe3233bfe4b0e3d5e623240df9df9e80a35f7f3d081ab3e41944f06c6dd5d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_seed_matrix_mass_check/REVIEW.md",
+      "sha256": "825c69bad1436e83523b2d901325ee2661c6128cd6fd73d4ee77a1bf2b6f5712",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_seed_mass/PROPOSAL.md",
+      "sha256": "be7ff80c9667e80dd87d104e9bd03766b5fa14265deecab0a9b800278579a3dc",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_seed_mass_check/REVIEW.md",
+      "sha256": "e3e40799fe208c336612c9f35805051f4fde468772cb9f0e7796be1835780999",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_core_operator_difference/PROPOSAL.md",
+      "sha256": "69aa54015825bd6e240b1da5f856cb062157e2686d5403698592315fa4d529ac",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_core_operator_difference_check/REVIEW.md",
+      "sha256": "ad38a71087013fcee8f9ef7f00f62177d053c7ff03ba5573b524bbc3f9993357",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_recovery_bound/PROPOSAL.md",
+      "sha256": "395bad394b141cf6495b6c2505bc9c9be560f9e388867461b4f594388e05f1fe",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_recovery_sharp/PROPOSAL.md",
+      "sha256": "07320d9a2e7c4db6c7479be0c59064749dcd73209d0847db8327b1963465ef11",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_recovery_sharp_check/REVIEW.md",
+      "sha256": "cbd5dfd29fbe67ad36c3ffc97a896f55ea30b8a5af367930c48a080589523430",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_outgoing_profile/PROPOSAL.md",
+      "sha256": "52bd25106f95d06b1d06b741f1183a492d169e5a4c6e85aa40ebca88404d1788",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_outgoing_profile_check/REVIEW.md",
+      "sha256": "44c697a5169b5cdb665e44c8b62787c2164f72537e082523e492ad535a29f026",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_incoming_alltime/PROPOSAL.md",
+      "sha256": "1def426f0919789b6a1a8c4048756c3a95a6a2b9ed4b5223c90e0ca321db8bf7",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_incoming_alltime_check/REVIEW.md",
+      "sha256": "8ea2e16b8683ecc1eb9c2f92397d372d9ddb55cdc87c780bcd1755677cb76caf",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_alltime_composition/PROPOSAL.md",
+      "sha256": "7b618a13d8094d0535ca399025ca872b54b8fdb2c9a307a0b31f521306c18e73",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_alltime_composition_check/REVIEW.md",
+      "sha256": "46731f1c73c5654d2fb529bc89ae3d59ed86ab335da9de947e0267f58547a86c",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_reference_outgoing_onset/PROPOSAL.md",
+      "sha256": "3a554c4edf266a8e53cd43b57bb03c280dcf601b4eb3da502fa6a3d33bfc5fe0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_reference_outgoing_onset_check/REVIEW.md",
+      "sha256": "5214b69489f05d23a48d63a80418cd32dfa5839817a43228633c46d81cea99f4",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_finite_herald_transfer/PROPOSAL.md",
+      "sha256": "73478afb718ad7083f37673bb851900fecbbcd47d8814e12034cce22c5c35ee1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_finite_herald_transfer_check/REVIEW.md",
+      "sha256": "fd84c785b908ac331413749a9903654e5beef25a1fc6ff8a7a11f3e174bdcc9b",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/output_lead_weight/PROPOSAL.md",
+      "sha256": "58f99248986aebe14b4cd87f46237a293ed0c86ab720dd37a497c5b2a64a06cf",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/output_lead_weight_check/REVIEW.md",
+      "sha256": "1c72e347fed86c96fcc491c550c136d08f3b7720d52ec1534af94066056d59dd",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_outgoing_profile/PROPOSAL_v1.md",
+      "sha256": "c9ded793a4e196ae646e175e69c22ba180d5dbe8b9db708ae51034b59daeba13",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_recovery_bound/PROPOSAL_v1.md",
+      "sha256": "46785c5a9a9dbdec43d8457dd7c2361eb834431918d4bbdc81fcd4b5fca2ea98",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_finite_herald_transfer/PROPOSAL_v1.md",
+      "sha256": "7cf936b3b55d922a9cda30b761594a3f2bd9051e40fe750b9cdb2f45b6194034",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/source_checks/record_attached_alltime_composition_check/REVIEW_v1.md",
+      "sha256": "c5c8bedeaf0b51381b89f19ed153650f0748cae8fb2e336d4b80fcfde17b34db",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/same_carrier_slow_lead/PROPOSAL.md",
+      "sha256": "a9795085bd36acbdaee9de8e46709f1a61c5065d5c6f0dadc37f8bb151f962e4",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/same_carrier_slow_lead_check/REVIEW.md",
+      "sha256": "ecec86951cdb2f36011e196fe8266bffec29f55a6d0ec8f67e4bfe5684a578fb",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_gate_load/PROPOSAL.md",
+      "sha256": "c1e1fe95ca3c9d390df0fad468c80c93d4c1c2aa1e3fee4c93c4326f44b0e61d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_gate_load_check/REVIEW.md",
+      "sha256": "8fb22bfddeeda9dd8abd1f3c90bafe4fd34916ec385d47aa017c99b08b221a65",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_emitter/PROPOSAL.md",
+      "sha256": "53916c906eda8cd5a1c8c6228c54002f4f74fe7986bee301d3162124d40544c0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_emitter_check/REVIEW.md",
+      "sha256": "23c228886a96e29071beabf5e3ae1f6c9caee8544eee4e5b5ddc38f854fda707",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_recovery/PROPOSAL.md",
+      "sha256": "f0f39510b65133d8399720c53ce2822bfe60a378ab2e50e1773a3dc8d0fe880f",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_recovery_check/REVIEW.md",
+      "sha256": "488d0a9e8871f77f40d44803ee9bfe7fda25388c66b367944eea3376f51f5195",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_outgoing_profile/PROPOSAL.md",
+      "sha256": "6f9ebabb3405b124e52582c313c342889c9146e0040306d0ec7b72e8e8371b17",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_outgoing_profile_check/REVIEW.md",
+      "sha256": "aeb147ff7d430562ff27ab7cbfc276e8066b48199ed6c9a163ee281357ecf528",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_reference_packet/PROPOSAL.md",
+      "sha256": "e6a9706d497d7c6abb5590d2baae0940efdf628e81101f5f4cfd91885e93ea8e",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_reference_packet_check/REVIEW.md",
+      "sha256": "6fb89d66d0a79e5c66c6dabd00c030ddb603308485f60c857b95f0e791b1a5f5",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_resources/PROPOSAL.md",
+      "sha256": "84b76d1ec9b1e45811b74ecd2594a0622dfb01ef69d1acadf98931c0ed3f9967",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_resources_check/REVIEW.md",
+      "sha256": "dd944d8803da24fdfbccfd010e2fd865196aa08ac244605303093a605fef22fe",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_alltime_composition/PROPOSAL.md",
+      "sha256": "ab552c4002af8388d5e223cf81390cdcbaa74685affda5c263048cbea73cdb2a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/source_checks/slow_lead_alltime_composition_check/REVIEW.md",
+      "sha256": "c6d82eaf1e4789f6b4f6b6f5c0fe97a0201fce1dbe7e99b294995d76e516a628",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_endpoint/PROPOSAL.md",
+      "sha256": "c8d2b7681f2059ec986bc3e41bf0a3eea8fefbc43c86addc17539b2f258bb887",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_endpoint_check/REVIEW.md",
+      "sha256": "f3e449109bc4bac6b4e4692d0db5f40c4d282d663b32f3b89a7ff1065ded28e0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_reference/PROPOSAL.md",
+      "sha256": "5f2026dc3f63a757f13cf58bc468f05de10cfca9f04fda9c6615b816c9b94907",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_reference_check/REVIEW.md",
+      "sha256": "338e554834f994741982842c555589db5e62dba9ad121233989ce60068f26c93",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_composition/PROPOSAL.md",
+      "sha256": "8cd26edcb7941d8254494480455d17c137652ec779e37e78901de5a04e71ac9e",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_uniform_composition_check/REVIEW.md",
+      "sha256": "b873ac37d8a327f27491f36e80dfe5e8aeef7eb0d7b405bba6b70a6ffb9e71a7",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_fixed_dimensionless_scaling/PROPOSAL.md",
+      "sha256": "36fac7f06cd3ca8506aa658f1715669c700bccde5468a1245f051084c03e9433",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_fixed_dimensionless_scaling_check/REVIEW.md",
+      "sha256": "375a887f22375527c7b5fa5525725dae41742bf0ec690175efefdbec6f95e475",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_coefficient_robustness/PROPOSAL.md",
+      "sha256": "f057da16b1a81ba024721c0b7ca22d6f5a95ce56e7e284b891ab22f5605f0fe1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_coefficient_robustness_check/REVIEW.md",
+      "sha256": "01201de14cb86c6655e7ae105e8826e4ac6f9254e8a16152ae8043799d897034",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_family_example/PROPOSAL.md",
+      "sha256": "ace7ba613e71aa9c6068b2c150f304ec2fb2b3878699948d2a9bacd297491bae",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/source_checks/slow_lead_family_example_check/REVIEW.md",
+      "sha256": "8269c536cd47819c6b6bded9f8dd472c3428778b70cf1cae36b6c4a7e061c9a8",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_complete_onset_frontier/PROPOSAL.md",
+      "sha256": "c590e093e7a4ca6abc1e147414f5ee5b08e725fa1a881b266fae7271b56e0d46",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_complete_onset_frontier_check/REVIEW.md",
+      "sha256": "5f8b8a3b4aea4008c07d9d8e59b53a7c58bf4cb0deead4d7da66be84a2c4a32b",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_background_derivative/PROPOSAL.md",
+      "sha256": "603919c05d1ade774f478474b0d09ee781bf298918d3ebc19b37e7eac6c22020",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_background_derivative_check/REVIEW.md",
+      "sha256": "687242ac0b73a11911261959a55026296f1b5dcb5725501e27686816b3ab1900",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_forced_derivative_sharp/PROPOSAL.md",
+      "sha256": "662b64aa1d7714746abaa585f8e1af17ece308771b5c9de25f88fde03bb787c0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_forced_derivative_sharp_check/REVIEW.md",
+      "sha256": "41f8ad9e18d7c1910f8a2c9b7cc70a2cb6b5a89ecbad47d52fd555b694718d4d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_direct_forcing_refinement/PROPOSAL.md",
+      "sha256": "f9fdcaa59e3b2d58805d295cb2dd63d4c7c763917ee8099b90afb2ec3c0db909",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_direct_forcing_refinement_check/REVIEW.md",
+      "sha256": "ea62892ef0105008e9aaebf80d53bb5a6f143b86425d8d3c6ec1c417f76e1e47",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_incoming_late/PROPOSAL.md",
+      "sha256": "59e2786a7174d06e3d95b3c6b7c8b08dd58cf8de63b9c596d5cfb6e5c3dfe6b5",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_incoming_late_check/REVIEW.md",
+      "sha256": "22b0c43d6c2c8cb7e0ff506b65e6d720cdb6c7e27f9cb7467ce39a24a220044b",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_complete_quantitative/PROPOSAL.md",
+      "sha256": "15c300185b43ba6b4a79a24c848e5665326e7febedf3d370f21861389b6e3b3f",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/source_checks/slow_lead_complete_quantitative_check/REVIEW.md",
+      "sha256": "cc7e7cb82aa8c30467cef829cb4d28a5a98c26f0ae4f5ef7360a79a5bf5d1b4a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wider_receiver_band/PROPOSAL.md",
+      "sha256": "5b667173cd9ee3d8faa285e5856e8a89e8a83ae87f09207664cc5115e247ee57",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wider_receiver_band_check/REVIEW.md",
+      "sha256": "9c32a1c901300c32cb6d0630cfef19e9aa33b9438274b6ab8dc561ccc2a38b0d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_endpoint/PROPOSAL.md",
+      "sha256": "c4c99408686166ba4d80bc973f5c22afdd1185bbf38e4539512dc26afd5cd5e3",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_endpoint_check/REVIEW.md",
+      "sha256": "c6cc2ed747956e70bba1a7af3a5d65d3d36a7f708367727cb6f5e8a74386feb5",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_reference/PROPOSAL.md",
+      "sha256": "c2d7a0cbc06e2669b6e42fca50f3c902dc889b5fb02bc891aaf7d94ab6eff4fd",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_reference_check/REVIEW.md",
+      "sha256": "61f1796d3f192301a4b88483bf496b2a84304a424dd5b70b4d8df4f2c0e9cced",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_outgoing/PROPOSAL.md",
+      "sha256": "593ed5c43008a40101cfc5a9c8243d7190ea7a3f822becbd9644f30b5f74d606",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_outgoing_check/REVIEW.md",
+      "sha256": "55de89b5d0536b0ce8028e4a346feb29bcf073f6012dd9cb9e6c01a5d76ead77",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_derivative/PROPOSAL.md",
+      "sha256": "c2b9d6917db45faa1e9974cb69ef9bc683f45147bcb47b3588df36e94b630f2a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_derivative_check/REVIEW.md",
+      "sha256": "c74a8118cccafe3e64dc6f4aa499fc7fa9abb194dae5cedbb2c253fb06054c79",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_complete/PROPOSAL.md",
+      "sha256": "5275860cb241a358d53460e88183879009a9899de7172c7c3b2e75629eb42fba",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_complete_check/REVIEW.md",
+      "sha256": "8675ccad6f0b6b09142b09d65f909d3322ff0bb58f16ab739fe1eecd930de383",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_seed_mass/PROPOSAL.md",
+      "sha256": "6fbb3c481796165f49d8fa4f5224916b1ef2f32727b22ae2d102dbfa049eee04",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_seed_mass_check/REVIEW.md",
+      "sha256": "7b0a243a389d6becf5996631329fabcc80be67ce1a8369415e736ac61044655a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_centered_background/PROPOSAL.md",
+      "sha256": "7b585c9b5d3ef6ece111b9009dfb3f7f92c1aa044f3d7cad2c8d5d3dab2b02aa",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_centered_background_check/REVIEW.md",
+      "sha256": "e8f739bec1c623584442269da26eb28245768ed84bcafdf47b6516f54e770823",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_sharp/PROPOSAL.md",
+      "sha256": "a0f6c357273e6c6f0f0de65c4a60a8832e9bda1d2281e999839c0b10faa220a6",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_sharp_check/REVIEW.md",
+      "sha256": "6007c29fe1c373a41200eadcc0728069f964b7a5f5b4bafbacd8d3c6b47c6337",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wider_receiver_band/PROPOSAL_v1.md",
+      "sha256": "f96583f14efd54d52ac6a84bdc022077bd47eaf68ac7c161c50ae9087a72abd3",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/source_checks/slow_lead_wide_endpoint/PROPOSAL_v1.md",
+      "sha256": "5d927676667ad725b5e4775e6a4011b4efd48fa9b572c41196b3a6f2d5965aef",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_product_source/PROPOSAL.md",
+      "sha256": "a89025dafcb588459e88c14fa802e9e9ce2e5184aa42d9d22f6521a1dadb4823",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_product_source_check/REVIEW.md",
+      "sha256": "c161daea2f3a126ad84baaa63d975b5d80fd3243f11ca3b1075673f62530245b",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_loaded_inverse/PROPOSAL.md",
+      "sha256": "7a154f66dd52ce70745e010641eaa98cffab8ededbeb9972139c3cbd10135672",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_loaded_inverse_check/REVIEW.md",
+      "sha256": "8ddded69f6c5758650c166c8adbc3c05346478e81d4636b8bc5e226f365c9ca2",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_actual_attachment/PROPOSAL.md",
+      "sha256": "4278633f3436008a770088331a2424d3f42dda06d08853dfe18d9b8a6554f006",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/three_site_actual_attachment_check/REVIEW.md",
+      "sha256": "ede902f9c1bebc768147e459894f98610689f33655f87d01d91d07531cbd157d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_actual_attachment/PROPOSAL.md",
+      "sha256": "2c0e8fe8dac3dd70f50fbc945aa0fd29a5eacbac63468ff5983cc7abd5343f49",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_actual_attachment_check/REVIEW.md",
+      "sha256": "c047ecef01b5512e21555d7de4deeae38660ecb83b4c2c98ec4e7353e5c56b8e",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_loaded_mass/PROPOSAL.md",
+      "sha256": "f2b34e07c37ee4a72b1a0301eb6f364431c71055a0a1a5b2ade90159dee9c39f",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_loaded_mass_check/REVIEW.md",
+      "sha256": "741d1383bca161ff72afbb4c0c86066724326937a5ea697874607d09a356df12",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_loaded_inverse/PROPOSAL.md",
+      "sha256": "33b4f11058bd8953f6ea1cc03e85fde8f884f2ac2cf2eadd22f509f0b390ca4d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_loaded_inverse_check/REVIEW.md",
+      "sha256": "b402f4203cb283cbd2e44fa39f73df77b566051fb189a4f219be1ed6b9df29b8",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_product_source/PROPOSAL.md",
+      "sha256": "8892741e6a14bca4565aef77d5913a3afca43a850c202c43dc2afb8ed3d9e303",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/source_checks/two_site_product_source_check/REVIEW.md",
+      "sha256": "52f720da63c0667ee528f074df78c6ca29046d14ce20052ef4d14fc0d280d9e7",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-pins/feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+      "sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+      "role": "inherited proof",
+      "original_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/INTEGRATION_REVIEW.md",
+      "sha256": "af131bc4fa01f5e349a20c547a34490cb95c1c7482a112351e3ebd577cafce76",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_outgoing__PROPOSAL.md",
+      "sha256": "af580b44fc2ebfc35eb014ffc63b8bae17464150677ede4a8b8315886f6f36ac",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_outgoing_check__REVIEW.md",
+      "sha256": "721a183db3e42527d7cb5bdda697e6c6d81312a94cf047dd7ea15897cb4c2f02",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_local_escape__PROPOSAL.md",
+      "sha256": "0340895610d3a5ef709dd8a03c1bc5872c8f34cf00f21053c00adcc3d706468d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_local_escape_check__REVIEW.md",
+      "sha256": "e19767c8092fb856a3c24cb279f621deea38d69d65c41bef4a1aea44bad23074",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_traveling_interface__PROPOSAL.md",
+      "sha256": "75b1ba68fae3f34e54c15df80b3a39a165240b1759f8fc84eb2b24677cc7f9e3",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_traveling_interface_check__REVIEW.md",
+      "sha256": "9cb7655b688a61ce32b950f2d95024762023770380a6e5df8afaa1939744230a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_reference_time__PROPOSAL.md",
+      "sha256": "d21632c8660f92e9478433bb564b357fe623aaa86c465d82537cfb28b77b315f",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_reference_tail__PROPOSAL.md",
+      "sha256": "92a14fa12ccb489bfe311278683b6aa12b67b6549449273ba181383f5f779fb1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_reference_time_check__REVIEW.md",
+      "sha256": "0439d990a12b51561257038b1ef14aeb88302adf12bb546de0f00571ac44a553",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_weighted_reference_time__PROPOSAL.md",
+      "sha256": "d41e468ffec769a9f5a36a7796999366fddf04ff2b42c1a8083c20e46f243d36",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_weighted_reference_time_check__REVIEW.md",
+      "sha256": "809c0e0b452b4d913d5750f3aa184473c4d4b20132de7a73b919e8d0be5415ac",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/prepared_core_recovery__PROPOSAL.md",
+      "sha256": "cce29994b7141df161ca12f377765fdaf760f7e64fc56043bbf370e2cd437ea9",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/prepared_core_dwell_check__REVIEW.md",
+      "sha256": "88274b8b49e583bdb9b5f933f7406b1a96a6ca79049e57b83e8030c834d16819",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/prepared_core_composition_check__REVIEW.md",
+      "sha256": "52edba6061be49eef40b5c06754a7425b5f7f62671f175cc72a093d4a60de65c",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_complete_candidate__PROPOSAL.md",
+      "sha256": "b64b5a073aeedf47c8d1f3b604763af43edd0ac0d61ac572638a6bfac2ab0e5a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_complete_candidate_check__REVIEW.md",
+      "sha256": "b660546cf354778d99dc08c7277e386069aa62ab9ef9efba5fb44596a19cc821",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_compact_receiver__PROPOSAL.md",
+      "sha256": "a170bcffaa3defccb50fdae85527f36e90832a2b89e980683e7af8227a94911d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/proofs/three_site_compact_receiver_check__REVIEW.md",
+      "sha256": "8e89c1e6a90aef5abf9c484988beb3997e3ea5be92d890e827ea4ab2468ef7d0",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_prepared_inverse_derivative__PROPOSAL.md",
+      "sha256": "25052bad1d500f52d4e4f4d3913f0bf8a0a57d69801688b7109a549ac3756d84",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_prepared_inverse_derivative_check__REVIEW.md",
+      "sha256": "3a76d76895c01dcbd7cf7e5b566f7146ae683ddc4568352df06c19224e59aa1c",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_cubic_derivative_cancellation__PROPOSAL.md",
+      "sha256": "d57ca3702567780319131cdcadd824588364b93d77575e26b56e00565fd292ac",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_cubic_derivative_cancellation_check__REVIEW.md",
+      "sha256": "c65696bec16ece9a1080fd24100fb8d7130821f76136f35810d3d148c155d5d4",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/prepared_background_ibp__PROPOSAL.md",
+      "sha256": "90d42e3699496e7694ddda630672af778a506b795865118757ab1e57da4a9c5a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/prepared_background_ibp_check__REVIEW.md",
+      "sha256": "5c4c1e2b8930be39195181681c563cd0c150611ad07a201316f3096e5a55ea12",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_faster_nominal__PROPOSAL.md",
+      "sha256": "48cdce93fd998d94334182866a37d29bf69b674f58d84dd653e9cea5590f1263",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/proofs/three_site_faster_nominal_check__REVIEW.md",
+      "sha256": "f28828c93e59f281ae2a8d813ba3d6a88b4088bbbb855fcc265a6e88e0dee433",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/input_cap_factored_forcing__PROPOSAL.md",
+      "sha256": "95755c3a08b6434a7ec7f86897a80f975c7575be747d1a9f09cdf34c9cce4376",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/input_cap_factored_forcing_check__REVIEW.md",
+      "sha256": "85ad12b8df4b15a4abeeded5b28e84d1413f9ab848122ca0e45e0e09eece66d3",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_core_direct_derivative__PROPOSAL.md",
+      "sha256": "cfca9422163b4f4694a2efddbbff6779bd3c354bbd505e90af4d16189d1e40be",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_core_direct_derivative_check__REVIEW.md",
+      "sha256": "75563597ec6edd1b688bfd81b51b4dc5b1adab7033d9f78a860f759cf5e70729",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_converter_direct_derivative__PROPOSAL.md",
+      "sha256": "a444e105c88fcfad8fcae59b7f72d9dd9247e2b83ada73edeb7b97a849b33653",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_converter_direct_derivative_check__REVIEW.md",
+      "sha256": "283494e3a50b12b77bf9d4be184452b49b582627fac20c802087e00e4d69e11d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/input_cap_scattering_derivative__PROPOSAL.md",
+      "sha256": "909fef0047e8380d00e1807cf9d88b74b0ff6704600414c0192ab296cb96069b",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/complementary_converter_recovery_derivative__PROPOSAL.md",
+      "sha256": "ba7616be0df86880d68192641376422752d4a8bbcfc9f120fa62d196824361ec",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/input_cap_derivative_bridge_check__REVIEW.md",
+      "sha256": "a9d60f8dd222af929c1d94cd860e4f51d2cd53b54a036a2e3480e0aa5a90a3d8",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_full_recovery_factored_derivative__PROPOSAL.md",
+      "sha256": "09606913b6bd71637b089ded04180b3afa6934ae39fa85926cb05d4e1f69423a",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_full_recovery_factored_derivative_check__REVIEW.md",
+      "sha256": "1a00c38e88361c0ca0e825ee4e339f5c419c1d9a16ec4d6495e34802d0835244",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_gate_load_action__PROPOSAL.md",
+      "sha256": "89f04354d21d2ff9cb996dade6f1f92afb0f3f584ead81037978bc53055f5252",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_gate_load_action_check__REVIEW.md",
+      "sha256": "fb5967fae2d36ba44dd8de92321b77ad5b78286e22a66a6ff5582b7d7b673275",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/factored_recovery_complete_point__PROPOSAL.md",
+      "sha256": "7299cbf0dcfe9e3af93f64c1b17c8f906fac43ef9186200c489b760be49aecb1",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/factored_recovery_complete_point_check__REVIEW.md",
+      "sha256": "c9de3941b6a3eb580e021e385550112221547033767ab0c39ebb64724d36b94d",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/factored_recovery_2026_10_17/proofs/prepared_full_recovery_derivative__PROPOSAL.md",
+      "sha256": "53f571b6c4408eafff777d81262864cab2987fb219b808dd79c3f93dff58dad7",
+      "role": "inherited proof"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "735ec540842018f17ecde72b43d102f52dd76f9df65682eaaeec64498628c429",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "f8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "fe9c64423e058791d4c9d4f26aeecf2d1ba7d9240988691e7e535316829095f7",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "49f53a9ab571c7784158d64a4b206e43e570b6c4252f294ec854015d99ba7027",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "455a12b8f1bf33cc653402f87e555cd01aee9ffa49cca5cae4d2a9ecf1bb7412",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "9664da772e44fda23f62ba098d393f6b00676717e83fc75f2cce1caae126ae3c",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "cf1125b7b5e43c8fe65607f1f62c1ecc176257113a0ed78c497d4f6217b87d62",
+      "role": "historical canonical source"
+    },
+    {
+      "path": "outputs/all_late_complete_2026_10_17/landing/historical-parents/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_path": "docs/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "8e371a92befcc528bee765c282ae0f422239b71bf69b409c80e2203b1fa2e33e",
+      "role": "historical canonical source"
+    }
+  ],
+  "current_parents": [
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "79c4b2867e6ce4a2e8039ce04390c4a8cca6c8e83819c6ad2561dbadafde5126",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "c92af90565e637ed30481a69f511b13b75eb09ec2175185c5546a109bed28478",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "ba58b0d9363f8c3f3a62207ff408a76f78478ddb2a38e86d0c878eb2a249c111",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "502633b09f587570498478df8791433e334ee25fd19787857cb535bdb1434369",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "570065faf38bc65015bf285c54062592cc77775b31a8d34f92bfe909f7e417e2",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "1a6a825fa71e3a1a8c0d5e9bd3507afec7141db076a3b8b6233f9ceb9807a61a",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "0e77defa8b2d2a3d8db2361179ba599586d0e05c12e42a71c3f61defa6740eb4",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "e273e59d57c3155e5505fbea8736827332711fddc57c6857d307f6ff9ac43f44",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "ce59c2adf3884ba9e01206e77185965dbbd4c75f656082fc8e7fb67f5656e405",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/FASTER_THREE_SITE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "1f0907d4af92ecb190528529959beae7fb1d673bad54ba30258e2259dda0e2e5",
+      "role": "reviewed current parent, separately bound"
+    },
+    {
+      "path": "docs/FACTORED_RECOVERY_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "a531d8f8835d15f0e9c42ef8f76a28a1321f8e152c59eadfe992737bfa97d004",
+      "role": "reviewed current parent, separately bound"
+    }
+  ],
+  "provenance_manifests": [
+    {
+      "path": "outputs/factored_recovery_2026_10_17/SOURCES.json",
+      "sha256": "aed9f9e3a3615eabea11ab694e628db468216e21f2a01b1bd4fe20165c3f1341",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/faster_three_site_2026_10_17/SOURCES.json",
+      "sha256": "d1e5b22e5dd0b7016e7796ae9eaadad258d3691c5e4b99124de883fe7d5299fd",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/three_site_temporal_2026_10_17/SOURCES.json",
+      "sha256": "ab5a23aeb7cdd7fdc61c09e3dbdc5e09334c027cae03250ab40237f1f14adcfd",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/critical_source_2026_10_17/SOURCES.json",
+      "sha256": "e9cce48f948a3a655b84350bdfb5cc37bff4b04af77fa3b2df20fd1f9b66d561",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/slow_wide_2026_10_17/SOURCES.json",
+      "sha256": "05dbb100eeea527701611a24eee4c1964838f5ee28ce27aab01a314540b203c4",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/slow_complete_2026_10_17/SOURCES.json",
+      "sha256": "ae6af68aa81b5928852f6a3ebaace68c5328ba48e2f8f75f3a4d8d290c11799d",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/slow_family_2026_10_17/SOURCES.json",
+      "sha256": "5b1b4c8ce340e062054ae404993fbfc1dbae05f4edc7fe7ac7f6f62a40627a0b",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/slow_record_2026_10_17/SOURCES.json",
+      "sha256": "2bbb2380c208fe46e76d4727221d82aa1056510e6fa0b2b8d0ea8df9de342e07",
+      "role": "provenance mapping metadata only"
+    },
+    {
+      "path": "outputs/attached_record_2026_10_17/SOURCES.json",
+      "sha256": "9e1515b0f478bc6ce569b4c827126560a063fd902643c40a056de1defc5eaad5",
+      "role": "provenance mapping metadata only"
+    }
+  ]
+}

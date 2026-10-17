@@ -1,0 +1,14 @@
+{
+  "original_head": "b98af99c51d3c78c55f235335636b46c96efd0ec",
+  "original_note_sha256": "2999a80428c6adf26119d0512f7fe855ea1adb1b0741e69e8608e82535fc9916",
+  "original_note_recovery": "outputs/collective_corner_response/landing/original-note.md.txt",
+  "final_note_sha256": "89bc4b0780ccf3d748c3c6b9047cc8d7834536222f4b617eaf782d00dd8f972c",
+  "runner": "scripts/collective_corner_response.py",
+  "runner_sha256": "50d5e6149515d710509e1fc71a10c50ff50cea187211bd64a8254b972ecef83f",
+  "scope": "Publication metadata and canonical provenance links only. Mathematical text and supplied candidate unchanged; historical reviews remain provenance, not current certification.",
+  "reversal": {
+    "remove_inserted_header": "**Type:** bounded_theorem\n**Status:** conditional mathematical and numerical support; unaudited.\n\nRunner: [collective_corner_response.py](../scripts/collective_corner_response.py).\n\nSupplied-model provenance: [corner-model Weyl-pair and pseudoscalar-mass note](CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md). The frozen numerical arrays below are the actual calculation inputs; this citation does not derive their physical realization or adopt a scalar interpretation.\n\n",
+    "replace_current_prior_work_link": "[corrected finite Hartree response note](THE_GENERATED_STAGGERED_MASS_RESPONDS_TO_THE_DIAGONAL_METRIC_AND_TO_NO_SHEAR_A_LENGTH_DRESSED_NN_LAW_IS_SHEAR_BLIND_AND_THE_VACUUMS_EVEN_SUM_TRANSLATIONS_FORBID_ANY_NN_T2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md)",
+    "with_original_prior_work_reference": "`docs/THE_GENERATED_STAGGERED_MASS_RESPONDS_TO_THE_DIAGONAL_METRIC_AND_TO_NO_SHEAR_A_LENGTH_DRESSED_NN_LAW_IS_SHEAR_BLIND_AND_THE_VACUUMS_EVEN_SUM_TRANSLATIONS_FORBID_ANY_NN_T2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md`"
+  }
+}

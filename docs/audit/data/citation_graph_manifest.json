@@ -1,6 +1,6 @@
 {
- "edge_count": 16230,
- "node_count": 7241,
+ "edge_count": 16238,
+ "node_count": 7244,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1841,6 +1841,10 @@
   "ai_methodology_note_2026-04-25": {
    "deps_hash": "d9d9486f55b0",
    "out_degree": 19
+  },
+  "all_late_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "a56a18f03b30",
+   "out_degree": 3
   },
   "all_time_energy_comparison_bounded_theorem_note_2026-10-13": {
    "deps_hash": "ddd47276b74a",
@@ -3813,6 +3817,10 @@
   "coherent_radio_count_initial_phase_elimination_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "collective_corner_response_note_2026-10-17": {
+   "deps_hash": "f9f1b8de80df",
+   "out_degree": 2
   },
   "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06": {
    "deps_hash": "57580a0f4742",
@@ -6625,6 +6633,10 @@
   "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "factored_recovery_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "04931d62b721",
+   "out_degree": 3
   },
   "family_companion_compare_note": {
    "deps_hash": "d65483554fad",

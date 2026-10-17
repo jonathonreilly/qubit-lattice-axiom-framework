@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/factored_recovery_complete_output_2026_10_17.py
+runner_sha256: 8a6ed5b61b278764dd9f9d8524dd7ab66d5de6f0972309db547e632ee7a7ff10
+input_fingerprint_sha256: 766ece4a04fe5e4200761cd3bfa9a5b435d03664e2a600b77f8160da7f744042
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[PASS] 181 original pins, 11 current parents and 8 provenance manifests match
+[PASS] noncommuting cap factorization retains sign/order/21-step phase
+[PASS] all 21 retained input products cancel growing powers before estimation
+[PASS] wrong order and 20-step phase are detected
+[PASS] ordered gate action equals direct driven load
+[PASS] channel-preserving gate has two-step plane; omitted phase and noncommuting shortcut mutants detected
+[PASS] frozen-root derivative plus physical correction matches direct inverse differentiation
+[PASS] discarding physical slow-root derivative is detected
+[PASS] new-point ordered-loading ceiling and denominator margin
+[PASS] gate action, ordered four-term partial derivative and restored full ceiling arithmetic
+[PASS] installed sixth moment includes port term and full-input outside allowance
+[PASS] recomputed inverse derivative and background IBP arithmetic
+[PASS] seven complete contributions total .0007582734 below certificate
+[PASS] finite receiver cut exponent and nominal apparatus counts
+[PASS] record failure and normalized successful-vector arithmetic
+Scope: finite noncommuting cap/gate identities, three slow-root derivative samples and supplied-ceiling arithmetic. Full235-head and continuum proofs, calibration and physical premises remain separate. Historical53f571b6 is not adopted.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

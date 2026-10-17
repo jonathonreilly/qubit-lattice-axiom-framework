@@ -637,3 +637,10 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
     - The cost model is a reasonable order-of-magnitude extrapolation.
 - **Supervisor note on the "missing" gate-(iii) data.** That was a packaging error: the supervisor left `gate3_*.npz` out of the referee's folder. The corrected files (`gate3_dt005.npz`, `gate3_dt010.npz`) are archived on the branch under `campaign/QMC1/scripts/runs/`. The referee's independent replacement check is archived as `referee/ref_gate3.npz`.
 - **Strongest correct statement (referee).** A validated sign-free AFQMC pilot shows strong 10-vector correlations spanning the box once the mirror propagator is strongly suppressed. That suggests a GPR-like crossover. It does not establish a mirror spectral gap, GPR mass generation, or SMG.
+
+**Campaign stop and resume (recorded 2026-10-17T11:01Z).**
+- **The stop.** At about 17:05Z on 2026-10-15 the account's weekly usage limit stopped every Claude agent: TOR-1 and all five panel E lenses, which had just been launched. The codex referee (another vendor) finished.
+- **Work time used so far:** about 6 h of the 24 (00:26–00:47Z and 11:22–17:05Z on 10-15).
+- **The resume.** Jon said "Try again" on 2026-10-17. Panel E is re-convened and TOR-1 is resumed from its saved transcript.
+- **New close:** about 05:00Z on 2026-10-18, which restores the 24 working hours.
+- No reading or pre-registration was changed.

@@ -739,3 +739,10 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
   - A c6 failure reads **DIR-PRICE** if a floating, translation-covariant cell law avoids it.
   - Otherwise it reads **DIR-FAIL**.
 - The other readings are unchanged.
+
+**GEN-2 result (21:15Z 10-17; same family; unrefereed; a symmetry-level pass of about 20 min): DIR-PRICE.**
+- **Hold:** c1, c2 and c5.
+- **c3, strain channel.** The generation rep is P = A1g + Eg. Rotation-blind (circulant) Yukawas commute, so CKM is trivial (checked). Real CKM therefore needs an Eg vacuum order, and the first-order Eg strain channel is then forced, with tree level allowed. The clock row is about (180–3800)·r × the bound, where r is the uncomputed tree coefficient.
+- **c4, speed terms.** There are 5 cubic-covariant speed structures per field (3 anisotropic rod terms at tree level), against 1 in GEN-1. The Eg order also needs non-covariant speed counterterms, so n ≥ 7 against GEN-1's 2.
+- **c6, cell crystals.** At even period c, every corner folds onto Γ and the folded index is 0. At odd period c, or with floating cells, it is safe.
+- **Reading (supervisor).** Generations as orientations bring back the corner package's strain and Lorentz-violation problems, because rotations act on the label. Generations as an internal label (GEN-1, X2′) stays the better placement.

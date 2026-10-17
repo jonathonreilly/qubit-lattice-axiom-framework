@@ -1,6 +1,6 @@
 {
- "edge_count": 16201,
- "node_count": 7226,
+ "edge_count": 16204,
+ "node_count": 7227,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4242,9 +4242,13 @@
    "deps_hash": "48ebef824880",
    "out_degree": 6
   },
+  "corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "de83b23f3129",
+   "out_degree": 2
+  },
   "corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17": {
-   "deps_hash": "b104afee3eda",
-   "out_degree": 4
+   "deps_hash": "c5f36a0bc285",
+   "out_degree": 5
   },
   "corner_kernel_cubic_carriers_c3_split_and_registered_block_weights_bounded_theorem_note_2026-09-02": {
    "deps_hash": "c8eee4235fc9",

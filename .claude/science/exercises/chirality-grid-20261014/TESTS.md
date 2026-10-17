@@ -732,3 +732,10 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
   - **DIR-PRICE:** c1, c2 and c5 hold, but the clock row is > 10× or n exceeds GEN-1's.
   - **DIR-FAIL:** c1, c2 or c5 fails.
   - **OPEN:** otherwise.
+
+**GEN-2 amendment (2026-10-17T19:09Z, before any GEN-2 run; Jon: the other thread now studies a "large" fermion spread over many sites instead of 6 qubits per site).**
+- **Change.** The generation label is the orientation (x, y or z) of an extended fermion cell, as with COL-1's rods, not per-site direction qubits. Items c1–c5 are unchanged.
+- **Added (c6).** If the cells form a crystal of period c, mirror corners fold onto Γ under the residual translations. Compute the allowed light–mirror mixing and whether it gaps or modifies the light sector, as in CLS-1.
+  - A c6 failure reads **DIR-PRICE** if a floating, translation-covariant cell law avoids it.
+  - Otherwise it reads **DIR-FAIL**.
+- The other readings are unchanged.

@@ -35,7 +35,7 @@ blocks:
     note: docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py (PASS=8; --full adds axis-C2 enumeration)
     exact: ["alphabet lemma", "soldered rotation-fixed class: no bounded rule with free-variable-preserving motion", "unsoldered C4/C3: 36 bounded maximal rules, all toric-code-type, bosonic"]
-    independent_check: running
+    independent_check: "CONFIRMED all three (own backtracking enumeration, full unsoldered survey, own statistics); wording fix on the 34927/70999 count"
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

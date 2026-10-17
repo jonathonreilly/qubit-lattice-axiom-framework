@@ -1,7 +1,7 @@
 ---
 claim_id: three_axis_qubit_symmetric_stabilizer_rules_fermion_search_finds_no_coherently_mobile_fermion_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied stabilizer model with three axis-indexed qubits per site of Z^3 (O permutes them as axes; Pauli labels unsoldered or fully soldered); star-supported signed Pauli rules closed under O. Exact lemma: if every generator label lies in a single-site abelian alphabet A that is its own single-site commutant, then either A lies in the group (product state) or every operator commuting with all free single-site variables commutes with every generator. Exact (soldered): among all star strings fixed by some nontrivial rotation (34927 strings, 4319 sign-consistent orbits; the axis-C2 part of the enumeration is reproduced in the runner's --full mode), every rule either lies in the alphabet <X_x, Y_y, Z_z> (lemma applies), or lies in one of eight valid 3-orbit fracton rules (no three-dimensionally mobile charge), or lies in one of two sets whose unions contain -1 and whose valid sub-rules have code dimension at least 32, 48 at L = 4, 6. So no such soldered rule has bounded code dimension together with a charge moved by free-variable-preserving operators. Exact within the search (unsoldered): among C4/C3-fixed strings, the valid maximal commuting sets with equal nonzero code dimension at L = 4, 6 are 36 rules, all with log2 dimension 24, and every same-site charge pattern that moves by 2e_x, 2e_y, 2e_z is a boson (Levin-Wen T-junction). Not claimed: strings with trivial stabilizer, non-maximal bounded rules, charge patterns spread over several sites, non-Pauli rules, dynamics, or any physical identification."
+claim_scope: "Supplied stabilizer model with three axis-indexed qubits per site of Z^3 (O permutes them as axes; Pauli labels unsoldered or fully soldered); star-supported signed Pauli rules closed under O. Exact lemma: if every generator label lies in a single-site abelian alphabet A that is its own single-site commutant, then either A lies in the group (product state) or every operator commuting with all free single-site variables commutes with every generator. Exact (soldered): among all star strings fixed by some nontrivial rotation (34927 strings fixed by one of four representative rotations, 70999 after closing under O, forming 4319 sign-consistent orbits; the axis-C2 part of the enumeration is reproduced in the runner's --full mode), every rule either lies in the alphabet <X_x, Y_y, Z_z> (lemma applies), or lies in one of eight valid 3-orbit fracton rules (no three-dimensionally mobile charge), or lies in one of two sets whose unions contain -1 and whose valid sub-rules have code dimension at least 32, 48 at L = 4, 6. So no such soldered rule has bounded code dimension together with a charge moved by free-variable-preserving operators. Exact within the search (unsoldered): among C4/C3-fixed strings, the valid maximal commuting sets with equal nonzero code dimension at L = 4, 6 are 36 rules, all with log2 dimension 24, and every same-site charge pattern that moves by 2e_x, 2e_y, 2e_z is a boson (Levin-Wen T-junction). Not claimed: strings with trivial stabilizer, non-maximal bounded rules, charge patterns spread over several sites, non-Pauli rules, dynamics, or any physical identification."
 upstream_dependencies:
   - three_axis_qubit_site_stabilizer_rules_unsoldered_toric_codes_move_soldered_maximal_rules_do_not_bounded_theorem_note_2026-10-17
 runner: scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py
@@ -38,9 +38,11 @@ fermions.
    - This unifies the Bell family of the two-qubit note and the 187-orbit
      family of the three-axis-qubit note.
 2. **Soldered, all rotation-fixed strings (exact).**
-   - **Count.** 34927 star strings are fixed by some nontrivial rotation and
-     commute with all translates of all rotated images. They form 4319
-     sign-consistent orbits.
+   - **Count.** 34927 star strings are fixed by one of four representative
+     rotations (C2 about z, C2 about (1, 1, 0), C4 about z, C3 about
+     (1, 1, 1)) and commute with all translates of all rotated images. After
+     closing under O there are 70999 strings, forming 4319 sign-consistent
+     orbits.
    - **Alphabet orbits.** 4259 orbits use only the alphabet <X_x, Y_y, Z_z>,
      so the lemma applies to them.
    - **Outsider orbits.** The 60 others lie in exactly ten maximal commuting
@@ -87,6 +89,25 @@ Known constructions of emergent fermions in three dimensions use string
 operators that need extra structure, such as a framing, an orientation or
 larger supports. Whether some such structure can be made compatible with
 the framework's site-centred cubic covariance is the natural next question.
+
+## Independent check
+
+A fresh-context agent (same model family) wrote its own code without reading
+these scripts. It confirmed all three claims:
+- **Lemma.** Confirmed by proof.
+- **Soldered class.** It confirmed this with a pruned backtracking
+  enumeration, cross-checked against brute force on random slices. It found
+  exactly ten outsider sets: the eight 3-orbit sets are valid with no
+  three-dimensionally mobile charge, and the 43- and 47-orbit sets contain
+  -1 under any re-signing.
+- **Unsoldered class.** It recomputed all 1233 maximal sets, finding exactly
+  36 bounded ones. In each, its own statistics code found a one-dimensional
+  space of three-dimensionally mobile same-site charges, a boson, stable
+  under other legs and box sizes.
+- **Wording.** It corrected one count, now fixed: 34927 counts the
+  representative-fixed strings, and 70999 is the count after closing under O.
+
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c4_fermion_search/independent_check/`.
 
 ## Premises
 

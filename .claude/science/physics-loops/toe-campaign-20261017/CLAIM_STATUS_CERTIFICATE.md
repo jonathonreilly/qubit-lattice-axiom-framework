@@ -41,6 +41,6 @@
 - Runner: `scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py` (PASS=8)
 - Status: bounded support, unaudited. Exact within the supplied model and
   the stated search restrictions.
-- Independent check: running.
+- Independent check: confirmed all claims, with one count wording fixed.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.

@@ -69,4 +69,4 @@ adopted; every result is unaudited bounded support with a declared model.
 
 ## Next decision
 - C3 independent check: done. It corrected the validity of three large unions (they contain -1); the conclusions are restated through the rank bound.
-- C4 independent check (running). Next: C5, low-symmetry generators.
+- C4 independent check: confirmed. Next: C5, low-symmetry generators (framed fermion codes).

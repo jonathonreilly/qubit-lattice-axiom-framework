@@ -98,6 +98,15 @@ blocks:
     conditional: "lambda = theta eta localization; w2 needs the twisted (number-conserving) realization"
     open: ["mobile doublet ground state (band minimum leaves symmetric momenta in scanned family)", "dynamics selection", "framework derivation of corners/fluxes"]
     independent_check: "items 1,2,4 CONFIRMED (exact operator identity 576/576; 252+216 creators; full checks); corrections applied: octants also avoid C4, E1/2 vs E5/2 is twist convention, link-orbit wording, title narrowed (spin-1/2 class under the U(1)-twisted action), twist not on-site; new caveat: space-group fractionalization differs from spin-1/2 (C4 T C4^-1 T^-1 = -1, bond-centred C2 lambda=-1)"
+  C18-large-fermion-long-wavelength:
+    status: delivered_to_branch
+    note: docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py (PASS=12, ~25 s)
+    exact: ["affine action k -> Rk + pi s_R; for square=plaquette=tube=pi the O-fixed momenta are exactly +-k* = (pi/2)(1,-1,1)", "48 local qubits = two free O-orbits; equivariant placement in a 5^3 block of one qubit per fine site; 77 spectators orbit-closed"]
+    numerical: ["global band minimum a single 2-fold level at k* (5 parameter sets)", "every band 2-fold everywhere", "isotropic mass (Hessian spread <1e-8); quartic anisotropy 5e-4 at |dk|=0.1", "L=4: minimum doublet is E1/2 (lambda<0) / E5/2 (lambda>0)"]
+    corrects: "C17 note: the band minimum does not leave the symmetric momenta; earlier scan tested Gamma and R only"
+    open: ["uniform one-qubit rule (unit fine translations) producing the block structure", "Dirac/relativistic structure, charge"]
+    independent_check: "in progress"
 scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
 campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
 next_action: "C17 independent check; then a mobile E1/2 doublet (band minimum at a symmetric momentum) and the U(1)/spin-charge selection of the twisted realization"

@@ -11,7 +11,7 @@ adopted; every result is unaudited bounded support with a declared model.
 ## Final state (2026-10-17T15:46Z)
 
 - The campaign is closed and the hourly task is deleted.
-- C1–C15 are on main. C16 and C17 are in PR #9671.
+- C1–C15 are on main. C16, C17 and C18 are in PR #9671.
 - **Next:** queue item 0++, a direction-carried charge with no site term.
 
 ## The arc in one paragraph (for the owner; interpretation, not a claim)
@@ -22,6 +22,13 @@ adopted; every result is unaudited bounded support with a declared model.
 - Supplied conditional dynamics distinguish the rotation realizations. Majorana-only and number-conserving hopping are modeling choices; no physical electric charge or electron spin-charge relation is derived.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
+
+## C18: the large fermion (owner's "electron much larger than the grid")
+
+- **One spin-1/2 doublet at long wavelengths.** For square = plaquette = tube = π, the site rotations fix exactly two crystal momenta, ±k* (affine action from the PSG). The corner fermion's band minimum is a single 2-fold level there. It has an isotropic mass, with anisotropy only at δk^4, and carries spin-1/2 (E1/2).
+- **The effective theory.** A wavepacket much larger than the grid is a nonrelativistic spin-1/2 particle. Lattice corrections are of order (a/w)^2.
+- **The qubit count.** The 48 qubits per site embed equivariantly into 5^3 blocks of one qubit per fine site.
+- **Open.** A uniform one-qubit rule producing the blocks; Dirac structure; charge.
 
 ## C17: a qubit code whose emergent fermion carries the spin-1/2 class under a genuine cube-rotation action
 

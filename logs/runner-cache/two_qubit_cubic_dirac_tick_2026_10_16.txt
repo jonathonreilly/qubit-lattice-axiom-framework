@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
-runner_sha256: ddba5b0396d445028dbedffd1e3ece5b570c695f83b6fc3410e486d9a3e29ca6
-input_fingerprint_sha256: 8e08c6012c30ffb1cb95b8140a1b5bb106542e2e15629e0c154a9e5f68ebc251
+runner_sha256: 804c66dff722a49fc328ebe3ab30aa6b773302fde86ab228bd7710bfd54532a2
+input_fingerprint_sha256: 5244a909bf28891e2433f69076cc530205916335de590e7124d75fbde8dafe37
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 11.23
+elapsed_sec: 11.83
 status: ok
 ----- stdout -----
 PASS tau1(x)1, tau2(x)1, tau3(x)sigma_a are five anticommuting Hermitian involutions
@@ -28,6 +28,7 @@ PASS staggered, epsilon = +1: with b0 = b2 = 0, G33 = 0 and G13 = -b1^2, so G >=
 PASS det G(b) is even in b1, so det = 0 is a quartic in u = b1^2
 PASS at b* = (11/30, sqrt(u*), 3/20): det G = 0 exactly (the minimal polynomial of u* divides the quartic)
 PASS at b*: e1, e2, e3 of G are positive, so the three nonzero eigenvalues are positive (G >= 0, rank 3)
+PASS light-speed member: at X = (pi,0,0) a massless pi-mode cone, (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 (uniaxial, v_perp = sqrt5 - 2 = phi^-3)
 PASS phi0^T G phi0 = 1 identically in b: the massless member has f = phi0^T G phi(k)
 PASS massless member: omega^2 = s^2 |k|^2 + alpha(b) |k|^4 + beta(b) sum k_a^4 + O(k^6), beta = -s (b0 - b1 - 2 b2)/3
 PASS alpha(b) = s (s^3 + 3 b0 - 6 b1 - 9 b2)/12
@@ -53,7 +54,7 @@ per_site: checked and not executed — no interacting site dynamics
 per_mode: exact dispersion series plus explicitly numerical sampled band tests
 per_block: supplied four-component Clifford coin
 lattice_wide: checked and not executed — no global numerical certificate or general irreducible-coin theorem
-TOTAL: PASS=40 FAIL=0
+TOTAL: PASS=41 FAIL=0
 
 ----- stderr -----
 

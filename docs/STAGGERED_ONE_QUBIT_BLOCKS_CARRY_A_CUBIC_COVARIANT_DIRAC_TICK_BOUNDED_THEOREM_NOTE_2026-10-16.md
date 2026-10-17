@@ -1,7 +1,7 @@
 ---
 claim_id: staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "One amplitude per site of Z^3, grouped into 2x2x2 blocks (translations by two sites), with the proper cubic rotations acting about block centres by signed permutations of the eight corners (staggered phases). For monomial representations of the binary octahedral group 2O with the central element acting as -1, the signed corner representation is induced from the unique real spinorial character of its C6 stabilizer and decomposes as two copies of spin 3/2. For the spinorial class there is a unitary, exactly block-covariant, moving one-tick walk with hops of at most one block, obtained by transporting the two-qubit Dirac walk U_2q (x) 1_E through an intertwiner. Numerically it has a single isotropic massless cone at k = 0 carrying eight components (two Dirac fermions) and no other band touching on a grid. Not claimed: that the integer classes freeze, that a nearest-site (KS-type) version exists, any continuum identification beyond the cone."
+claim_scope: "One amplitude per site of Z^3, grouped into 2x2x2 blocks (translations by two sites), with the proper cubic rotations acting about block centres by signed permutations of the eight corners (staggered phases). For monomial representations of the binary octahedral group 2O with the central element acting as -1, the signed corner representation is induced from the unique real spinorial character of its C6 stabilizer and decomposes as two copies of spin 3/2. For the spinorial class there is a unitary, exactly block-covariant, moving one-tick walk with hops of at most one block, obtained by transporting the two-qubit Dirac walk U_2q (x) 1_E through an intertwiner. Numerically it has a single isotropic massless cone at k = 0 carrying eight components (two Dirac fermions) and no other band touching on a grid. Unadopted proof candidate: nearest-site flatness is supported by saved decomposition and real-locus/trace arguments, but independent certification of exhaustive minimal-prime coverage remains open. Not claimed: that the integer classes freeze, or any continuum identification beyond the cone."
 upstream_dependencies:
   - minimal_axioms
   - two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
@@ -131,16 +131,24 @@ On nearest-site locality:
 
 Scripts are in `.claude/science/physics-loops/toe-campaign-20261015/independent_check_B7/`.
 
+## Nearest-site nonpropagation: preserved proof candidate
+
+The original computer-assisted argument, real-locus reduction, independent
+trace-power proposal and historical N1–N8 text remain intact in the
+[preserved proof candidate](../.claude/science/physics-loops/toe-campaign-20261015/nearest_site/REVIEW_PROOF_CANDIDATE.md).
+All original CAS sources and outputs remain in `nearest_site/` and
+`independent_check_B8/` in the campaign packet. Independent review matched the
+specified eleven-dimensional families and their exact equations; it did not
+reproduce completeness of the eight minimal-prime decompositions. Thus nearest-
+site nonpropagation is not an accepted theorem here, and no minimum propagating
+hop distance follows. The trace and real-locus implications remain useful proof
+work conditional on an exhaustive verified decomposition.
+
 ## What did not work, or was not tested
 
-- **Nearest-site locality.** Kogut–Susskind fermions hop to nearest sites
-  only. Restricting the spinorial block walk to hops of one site per axis
-  leaves an 11-dimensional covariant family. Unitary solutions found there
-  have flat bands: the spectrum does not depend on k, so nothing propagates.
-  This holds for 20 dispersion-constrained starts here and about 300
-  independent runs; it is numerical, not proved. The tick of Theorem 2 needs
-  hops of up to three sites per axis. The independent check's two-layer walks
-  need two, but they have doublers.
+- **Nearest-site locality.** Open as an accepted theorem. Numerical flat hits
+  and the preserved exact proof candidate motivate further certification;
+  neither the current runner nor this review establishes exhaustive flatness.
 - **Integer classes.** The independent search reported dispersive walks in
   this sector. No freeze is inferred from the absence of a spinorial
   irreducible summand; the linear-cone question has a separate scope.
@@ -151,6 +159,21 @@ Scripts are in `.claude/science/physics-loops/toe-campaign-20261015/independent_
 - **Taste basis.** That the eight sites of a cube carry two Dirac flavors is
   standard for Kogut–Susskind fermions in 3+1 dimensions (Hamiltonian
   formulation; see e.g. arXiv:2511.06198).
+  In this repository the continuous-time unit-hop census
+  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
+  finds 8 = spin 2 x chirality 2 x flavor 2, i.e. N_f = 2 vector-like Dirac
+  tastes. Theorem 2 gives the same content for a single exactly covariant
+  unitary tick. That census also notes that the two tastes are identical
+  copies with no generation label; nothing here changes that.
+- **Hierarchy programme.** `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`
+  uses the 4D Euclidean 2^4 block, whose naive count is 16, in a Matsubara
+  setting rather than a unitary tick. Its own no-go
+  `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10`
+  finds the count regulator-dependent. The one-tick results here add data
+  points for that gate (B3b), not a resolution:
+  - two light Dirac fermions per staggered block (Theorem 2);
+  - one per two-qubit site;
+  - a preserved nearest-site flatness proof candidate, not an accepted no-go.
 - **Staggered walks.** Staggered discrete-time quantum walks and their
   relation to Kogut–Susskind fermions have been studied mainly in lower
   dimensions (arXiv:1807.08303, arXiv:1906.04483).
@@ -162,11 +185,13 @@ Scripts are in `.claude/science/physics-loops/toe-campaign-20261015/independent_
   - an exactly block-covariant one-tick unitary walk with one amplitude per
     site that carries a massless isotropic Dirac pair.
 
-## No-Go Discipline Gate
+## Negative proof-candidate status
 
-The nearest-site negative searches are not impossibility results. See the
-[review scope checklist](../.claude/science/review-fixes/review-drain-20261016/CUBIC_TICK_SCOPE.md)
-for the exact group, finite stencil and numerical boundaries.
+Nearest-site nonpropagation remains unadopted. The preserved historical packet
+is not a current no-go PASS: its route and residual accounting needs completion
+without inventing failed approaches. This procedural limitation is separate
+from the unresolved independent verification of minimal-prime exhaustion.
+The canonical runner does not execute that decomposition or certify this claim.
 
 ## Verification
 

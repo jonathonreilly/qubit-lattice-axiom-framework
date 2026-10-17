@@ -184,6 +184,37 @@ individual band through a degeneracy, or the previously asserted O(k^9)
 band-parity bound. The one-qubit D2 example instead has a linear, handed
 relative correction near its cone.
 
+## Corollary to Theorem 5 — at light speed the hw=1 triplet becomes massless
+
+At the light-speed member b_gold the three axis points X = (pi,0,0),
+(0,pi,0), (0,0,pi) carry massless Dirac cones at quasienergy pi (exact). Near
+(pi,0,0), writing q_par along the axis and q_perp across it,
+
+    (omega - pi)^2 = q_par^2 + (sqrt5 - 2)^2 q_perp^2 + ...,
+
+a uniaxial cone with v_par = 1 and v_perp = sqrt5 - 2 = phi^-3, where phi is
+the golden ratio. The axis permutations (S3, with C3 cycling x -> y -> z)
+permute the three cones. The face points M and corner point R stay gapped
+(2.665 and 2.455 rad, Theorem 5).
+
+At light speed these are four identified massless nodes: one isotropic cone
+at k = 0 and an S3 triplet of uniaxial pi-mode cones at the hw=1 points.
+This local result does not exhaust the whole torus or identify physical species. For
+s < 1 the triplet is gapped at theta_X = 2 arcsin s, and its splitting from
+the k = 0 cone is fixed by the speed (Theorem 4 and the Wilson-gap
+corollary).
+
+Bearing on the repository's generation lane (information, not a claim). The
+lane takes the hw=1 triplet with an unbroken S3 as the generation candidate
+(`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`). Its physical
+positivity bridge from S3 to C3 remains open; this cone calculation supplies
+neither that bridge nor a physical generation identification.
+- In this one-tick family the triplet is massless only at the unique
+  light-speed member.
+- There it is a degenerate S3 triplet of pi-mode Dirac cones, anisotropic
+  with transverse speed phi^-3, and distinct from the k = 0 fermion.
+- Nothing here splits the triplet or attaches charges.
+
 ## Theorem 7 — isotropy at order k^4 and the sqrt(2/3) bound
 
 *Massless dispersion.* At k = 0, g = 0 and the Gram identity give
@@ -481,7 +512,7 @@ Numerical non-findings remain numerical and supply no impossibility proof.
 python3 scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
 ```
 
-Expected: `TOTAL: PASS=40 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=41 FAIL=0` (under a minute).
 
 ## Load-bearing sources
 

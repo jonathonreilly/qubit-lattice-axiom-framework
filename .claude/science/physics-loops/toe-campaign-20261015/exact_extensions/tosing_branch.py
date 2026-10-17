@@ -2,11 +2,11 @@
 import pickle, sys, sympy as sp
 d = pickle.load(open(sys.argv[1], 'rb'))
 free, red = d['free'], d['red']
-Y = sp.symbols(f'y0:{len(free)}', real=True)
+Y = sp.symbols(f'zz0:{len(free)}', real=True)
 sub = dict(zip(free, Y))
 out = set()
 for e in red:
-    P = sp.Poly(sp.expand(e.subs(sub)), *Y)
+    P = sp.Poly(sp.expand(e.subs(sub, simultaneous=True)), *Y)
     re = sum(sp.re(c) * sp.prod([y ** k for y, k in zip(Y, m)]) for m, c in P.terms())
     im = sum(sp.im(c) * sp.prod([y ** k for y, k in zip(Y, m)]) for m, c in P.terms())
     for part in (re, im):

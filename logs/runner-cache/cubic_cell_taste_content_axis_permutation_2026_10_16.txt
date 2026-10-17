@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py
 runner_sha256: e1ca1f04bce3f8774862398bc82b93a52808d1afd6a7e8d37f85c6f01127b31a
-input_fingerprint_sha256: 148fd8c6e46548894bdd542db4e2948dd6327c0763c71a8096054d010abbabe8
+input_fingerprint_sha256: a31d45f1c4b56961167b6086d16174430e9acca845feeb9e72169703ab89896a
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 PASS exact cyclic restrictions give all face, corner and edge spinorial multiplicities

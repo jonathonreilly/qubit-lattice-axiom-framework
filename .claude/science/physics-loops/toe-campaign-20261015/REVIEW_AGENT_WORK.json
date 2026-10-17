@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "open",
+  "source_pr": 9658,
+  "source_head": "d96f5bacd9644de3114b01c990df370de1ed23a5",
+  "adoption": "none; proof candidates and verification tasks only",
+  "tasks": [
+    {
+      "id": "J-9658-1",
+      "status": "open",
+      "acceptance": "Regenerate both nearest-site eleven-dimensional families and exact unitarity ideals from declared signed generators; verify all polynomial coefficients independently."
+    },
+    {
+      "id": "J-9658-2",
+      "status": "open",
+      "acceptance": "Certify minimal-prime coverage over Q or provide a direct exhaustive elimination certificate; independently verify all real-locus and trace reductions. Preserve exact source/input/execution identities and a truthful no-go packet without fabricated routes."
+    },
+    {
+      "id": "J-9658-3",
+      "status": "open",
+      "acceptance": "Reconcile the specified signed-generator conventions and central extensions; do not infer a classification of every projective action from trace signatures."
+    },
+    {
+      "id": "J-9658-4",
+      "status": "open",
+      "acceptance": "Replace the twisted-pair numerical branch prefilter with exact exhaustive filtering, then produce independently checked characteristic-zero cofactor/unit-ideal certificates; include simultaneous-variable-converter mutation controls."
+    },
+    {
+      "id": "J-9658-5",
+      "status": "open",
+      "acceptance": "Certify a whole-torus node census for each stated algebraic Dirac member; local X-point cones and finite grids alone do not prove exhaustion."
+    }
+  ]
+}

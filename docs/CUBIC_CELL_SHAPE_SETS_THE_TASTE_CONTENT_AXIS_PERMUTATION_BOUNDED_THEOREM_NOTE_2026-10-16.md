@@ -1,7 +1,7 @@
 ---
 claim_id: cubic_cell_shape_sets_the_taste_content_axis_permutation_bounded_theorem_note_2026-10-16
 claim_type: bounded_theorem
-claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. This is not a derivation of three generations."
+claim_scope: "Cells formed by an orbit of the proper cubic group around a centre (6 face centres, 8 corners, 12 edge midpoints), one amplitude per point, with the binary octahedral group acting by monomial matrices (signs or phases). Exact (characters): every spinorial such representation contains only E1/2, E5/2 and H = E (x) E1/2, so it equals E1/2 (x) F with F a representation of S3, the permutation group of the three axes. The copy ('taste') content is F = A1 + E or A2 + E for face centres (the axis triplet, no repeated summand), 2E for signed corners, A1 + A2 + E for phased corners, and A1 + A2 + 2E for edges (phased only). Under the threefold axis cycle C3, A1 and A2 carry 1 and E carries omega + omega-bar. Exact: wherever F contains F' + F', the two-qubit Dirac walk tensored with 1_F' is a moving covariant tick with dim F' Dirac copies. Numerical: the pair E1/2 + E5/2 admits moving unitary walks, but those found are massive, and with U(0) = 1 imposed the solution found is degenerate (zero quasienergy along axis lines); no clean massless singlet copy was found. Algebraic evidence (cell walks, U(0) = 1): of the nine line branches that pass a numerical linear prefilter, the eight that move along an axis give the unit ideal (Groebner basis mod 32003, and over Q by Singular's multi-prime modStd), and the saved axis-flat branch is reported to have a 4-dimensional component. Exact exhaustive branch selection and characteristic-zero cofactor certificates remain pending; no universal axis-flatness or cone exclusion follows. The six-neighbour coin E1/2 + H showed no moving walk (residuals rise steeply with the motion bound, a high-order valley). This is not a derivation of three generations."
 upstream_dependencies:
   - staggered_one_qubit_blocks_carry_a_cubic_covariant_dirac_tick_bounded_theorem_note_2026-10-16
   - two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16
@@ -57,13 +57,33 @@ hypothesis is that three generations might be the three spatial axes.
    imposed, the one solution found is degenerate: zero quasienergy along the
    axis lines and a doubler at X. No clean massless Dirac copy from this pair
    was found.
+   **Algebraic evidence (mod p, labelled).** The line lemma reduces the
+   U(0) = 1 cell walks to branches: along the x axis,
+   U(t e_x) = sum_k z^(m_k) P_k on the four J_x eigenlines (eigenvalues
+   distinct), with m_k in {-1, 0, 1}, plus monomials on the body diagonal.
+   Nine branches pass a numerical linear-consistency prefilter, each with
+   32 free unknowns and 336 real unitarity equations. The results:
+   - The eight branches with nonzero axis exponents give the unit ideal.
+     A Groebner basis mod 32003 (slimgb) is {1}, and Singular's multi-prime
+     modular method over Q (modStd) also returns {1}. For a unit result,
+     modStd does not itself certify 1 in I; an explicit lift (a cofactor
+     certificate) would.
+   - Within the saved candidate list, the axis-flat branch (0, 0, 0, 0) is
+     reported to have a Krull-dimension-4 component, mod p and by modStd.
+   These outputs are consistent with the degenerate numerical solution.
+   They establish neither exhaustive branch selection nor a universal
+   axis-flatness or Dirac-cone exclusion. Exact filtering and characteristic-
+   zero cofactor certificates remain pending. The inputs and outputs are in
+   `.claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/`.
 5. **Under the threefold axis cycle C3.** A1 and A2 carry the character 1, and
    E carries omega + omega-bar.
    - The twelve-link cell therefore carries copies with C3 labels
      {1, 1, omega, omega-bar} plus a repeat of the E pair.
    - The two E copies inherit the constructed massless cone; absence of
      additional band touching has only the companion's finite-grid support.
-   - The singlet pair gave only massive or degenerate walks in the searches.
+   - The singlet pair gave only massive or degenerate walks in the searches,
+     and the saved U(0) = 1 branch computations report an axis-flat survivor
+     among numerically selected candidates (evidence only, item 4).
 
 ## How this bears on generations (interpretation, not a claim)
 
@@ -78,8 +98,17 @@ hypothesis is that three generations might be the three spatial axes.
   - No cell gives exactly three clean, light, doubler-free Dirac copies with
     the triplet labels.
   - The six-neighbour cell has the triplet but no repeated summand, so the
-    U_2q mechanism does not apply. Whether another mechanism moves it is
-    being searched numerically; nothing has been found yet.
+    U_2q mechanism does not apply. Searches with the coin E1/2 + H found no
+    moving walk (numerical). The best residuals rise steeply with the lower
+    bound on motion:
+
+    | motion bound | 0.02 | 0.05 | 0.2 | 0.4 |
+    |---|---|---|---|---|
+    | best residual | 2e-10 | 4e-10 | 7.9e-5 | 1.3e-3 |
+
+    These optimization results suggest a high-order valley near a constant
+    walk. Local optimization need not find an existing moving family or
+    reach machine zero, so no nonexistence inference follows.
   - The twelve-link cell has the right C3 labels, but its singlet looks
     massive or degenerate. This could be read as "one heavy plus two light",
     but nothing here fixes masses or rules out other cells.
@@ -121,14 +150,26 @@ types, not every orbit of a generic point about the cube centre. ∎
 - Staggered-fermion taste counting is standard: 2^(d/2) tastes in d
   Euclidean dimensions, and 2 per eight-site cube in the 3+1 Hamiltonian
   form.
+- In this repository, `STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23`
+  shows the hw=1 triplet of the standard staggered lattice carries an
+  unbroken S3: the eta-convention asymmetry is gauge. The generation lane
+  builds on that triplet.
+  `EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03`
+  finds N_f = 2 identical tastes on the cube with no generation label. The
+  table here is consistent with both: signed corners give 2E, two tastes.
 - New here: the classification of the taste content of the three listed cubic-orbit
   cells. It shows the taste index is always an axis-permutation
-  representation, with the table above.
+  representation, with the table above. This is a statement about copy
+  spaces and is separate from the hw=1 momentum-space triplet of the
+  generation lane. The two-qubit note's light-speed corollary is where the
+  hw=1 triplet appears in the one-tick setting.
 
 ## No-Go Discipline Gate
 
 No impossibility claim is made. The singlet-pair statements are numerical
-and labelled as such.
+or mod-p evidence and are labelled as such. Promoting item 4 to a no-go
+would need the branch prefilter done exactly and cofactor certificates
+for the eight unit ideals, then the N1-N8 gate.
 
 ## Verification
 

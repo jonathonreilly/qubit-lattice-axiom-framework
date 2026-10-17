@@ -1,0 +1,15 @@
+{
+  "main": "f389e89fe84e2584ee85047f08da88c1443eb163",
+  "proposal": {
+    "number": 9671,
+    "head": "16ae120ee46a1186b5ca81cd7d393396089e77d6",
+    "source": "scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+    "sha256": "b69088de08e2c1f17715cbaa87e379f28adfb0c8004656e54ba414cce350c911",
+    "coverage": "Complete large-feature note and runner Part2; earlier corner source read; no independent reproduction of all parent claims."
+  },
+  "files": {
+    "docs/LARGE_FEATURE_SPECTRAL_RECONSTRUCTION_NOTE_2026-10-17.md": "a8717ef750d2b27fd751cd3745b175f613e968de7bd25b26ceccbe8c6ffd8303",
+    "scripts/large_feature_spectral_response.py": "2050cf84738d979e3f152ffb875583bcc31caf1243fa1600e78ab076558ec10b",
+    "outputs/large_feature_spectral_response/result.json": "19ed8b4875e5426425dad5bbc69975756a922b94a407e839ff1f069d2402d860"
+  }
+}

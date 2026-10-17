@@ -1,0 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/large_feature_spectral_response.py
+runner_sha256: 2050cf84738d979e3f152ffb875583bcc31caf1243fa1600e78ab076558ec10b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+{"checks_passed": 99, "checks_total": 99, "curvature": 0.04322336788931125, "mutations_detected": 3, "reference_gaps": [2.7335482027815443, 3.1112698372208096, 6.377721634439265], "scope": "Supplied band model; no measured spectra, physical scalar or universal coupling derived"}
+
+----- stderr -----
+

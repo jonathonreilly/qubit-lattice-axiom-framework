@@ -359,7 +359,8 @@ def shell(vec, label):
     v = np.array(vec)
     Ht = [k for k in range(N2) if (ROT[proj[k]] @ v == v).all()]
     size = N2 // len(Ht)
-    gen = max(Ht, key=lambda k: order_of2(k))
+    # generator convention: maximal order, then largest real trace (trace +sqrt 2 for Z8)
+    gen = max(Ht, key=lambda k: (order_of2(k), round(np.real(np.trace(G2[k])), 9)))
     n = order_of2(gen)
     assert n == len(Ht), "stabilizer lift must be cyclic"
     powers = {}

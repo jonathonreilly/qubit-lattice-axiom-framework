@@ -1,0 +1,16 @@
+[A] half-edge L=4, 3 orderings x 24 rotations about v=0:
+[A]   bare P_R: B_v -> +B_v failures: 0
+[A]   V_R P_R:  B_v -> +B_v failures: 0
+[A]   V_R P_R:  generator -> +generator (same type) failures: 0 of 13608 checks
+[B] edge BKSF L=4: 720 orderings -> 60 distinct codes; orderings per code: [12]
+[B] intertwining P_R A^o_e = A^(Ro)_(Re) (sampled): failures 0
+[B] stabilizer orders: {6: 12, 2: 36, 4: 12}
+[B] codes by stabilizer: {'D3': 12, 'C2': 36, 'D2': 12}
+[B] (code,C2) pairs where SOME ordering's plaquette term set is P_R-invariant: {'D3': 36, 'C2': 24, 'D2': 12} of {'D3': 36, 'C2': 36, 'D2': 36}
+[B] codes with an ordering whose term set {B}u{S^o} is invariant under the WHOLE stabilizer (bare P_R): {'C2': 24} of {'D3': 12, 'C2': 36, 'D2': 12}
+[B] bare P_R, L=8: clean fermion at v (only B_v violated w.r.t. H^o) mapped to a pattern with plaquette violations within distance 2 of v, count/(tested) by (stabilizer, element):
+[B]    ('C2', 'C2edge'): 10/12
+[B]    ('D2', 'C2axis'): 12/12
+[B]    ('D2', 'C2edge'): 19/24
+[B]    ('D3', 'C2edge'): 24/36
+[B]    ('D3', 'C3'): 24/24

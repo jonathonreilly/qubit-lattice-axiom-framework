@@ -27,10 +27,15 @@ adopted; every result is unaudited bounded support with a declared model.
   - For O this kernel is {0, w1^2}, never w2.
   - w2 forces degeneracy exactly for D2, D4, T and O. Cyclic groups and D3
     do not, which is consistent with C8.
-- **Why this applies to every campaign code.** The single-site charge term
-  B_v is fixed by every vacuum-preserving realization: bare permutation
-  and the CZ-network Cliffords alike. This explains the spinless results
-  for C12 and C13.
+- **Where it applies.** Under the on-site Clifford realizations, the
+  single-site charge pattern (B_v violated) is invariant: every generator
+  maps to plus a generator. This explains the spinless results for C12 and
+  C13.
+- **Where it does not (independent check).** Under the bare permutation the
+  term set is not preserved. The single-fermion pattern picks up plaquette
+  violations near v, including for all 12 axis C2 of the order-4 codes. So
+  the obstruction does not apply there. That is a concrete candidate
+  resolution of the order-4 tension, not a proof.
 - **The sharpened target needs one of two things.**
   - No charge term whose support is O- or D4-invariant about a site, so no
     site-centred charge term like B_v.

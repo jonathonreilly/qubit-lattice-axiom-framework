@@ -1,0 +1,65 @@
+[O] dim Z^2=25 dim B^2=23 dim H^2(O;Z2)=2
+[O] w2, w1^2 cocycles; independent mod B^2: True (so they span H^2)
+[O] class 0       : 1-dim rep with z->-1 exists (U(1)-trivial): True; axis-C2 lift^2 {'+'}, edge-C2 lift^2 {'+'}
+[O] class w1^2    : 1-dim rep with z->-1 exists (U(1)-trivial): True; axis-C2 lift^2 {'+'}, edge-C2 lift^2 {'-'}
+[O] class w2      : 1-dim rep with z->-1 exists (U(1)-trivial): False; axis-C2 lift^2 {'-'}, edge-C2 lift^2 {'-'}
+[O] class w2+w1^2 : 1-dim rep with z->-1 exists (U(1)-trivial): False; axis-C2 lift^2 {'-'}, edge-C2 lift^2 {'+'}
+[O] u(g)=i^w1(g) gives du = (-1)^(w1 cup w1): True
+[O] w1 (sign on six directions) == sign on four body diagonals (S4 sign): True
+[O] w1 by class: {'C2axis': [0], 'C2edge': [1], 'C3': [0], 'C4': [1], 'e': [0]}
+[sub] subgroups: 30, conjugacy classes: 11
+[sub] C1                 |H|= 1 #conj= 1 index=24  w2|H forces dim>=2: False  |[H~,H~]|= 1  dim H^2(H;Z2)=0
+[sub] C2(axis)           |H|= 2 #conj= 3 index=12  w2|H forces dim>=2: False  |[H~,H~]|= 1  dim H^2(H;Z2)=1
+[sub] C2(edge)           |H|= 2 #conj= 6 index=12  w2|H forces dim>=2: False  |[H~,H~]|= 1  dim H^2(H;Z2)=1
+[sub] C3                 |H|= 3 #conj= 4 index= 8  w2|H forces dim>=2: False  |[H~,H~]|= 1  dim H^2(H;Z2)=0
+[sub] C4                 |H|= 4 #conj= 3 index= 6  w2|H forces dim>=2: False  |[H~,H~]|= 1  dim H^2(H;Z2)=1
+[sub] D2(1 axis+2 edge)  |H|= 4 #conj= 3 index= 6  w2|H forces dim>=2: True  |[H~,H~]|= 2  dim H^2(H;Z2)=3
+[sub] D2(axis)           |H|= 4 #conj= 1 index= 6  w2|H forces dim>=2: True  |[H~,H~]|= 2  dim H^2(H;Z2)=3
+[sub] D3                 |H|= 6 #conj= 4 index= 4  w2|H forces dim>=2: False  |[H~,H~]|= 3  dim H^2(H;Z2)=1
+[sub] D4                 |H|= 8 #conj= 3 index= 3  w2|H forces dim>=2: True  |[H~,H~]|= 4  dim H^2(H;Z2)=3
+[sub] T                  |H|=12 #conj= 1 index= 2  w2|H forces dim>=2: True  |[H~,H~]|= 8  dim H^2(H;Z2)=1
+[sub] O                  |H|=24 #conj= 1 index= 1  w2|H forces dim>=2: True  |[H~,H~]|=24  dim H^2(H;Z2)=2
+[sub] w2 forces degeneracy exactly for: ['D2(1 axis+2 edge)', 'D2(axis)', 'D4', 'O', 'T']
+[orbit] subgroups of odd index (odd O-orbits): ['D4', 'O']
+[D2axis] dim H^2=3; patterns realized: 8
+[D2axis] pattern ('+', '+', '+') #minus=0  1-dim: {True}
+[D2axis] pattern ('+', '+', '-') #minus=1  1-dim: {False}
+[D2axis] pattern ('+', '-', '+') #minus=1  1-dim: {False}
+[D2axis] pattern ('+', '-', '-') #minus=2  1-dim: {True}
+[D2axis] pattern ('-', '+', '+') #minus=1  1-dim: {False}
+[D2axis] pattern ('-', '+', '-') #minus=2  1-dim: {True}
+[D2axis] pattern ('-', '-', '+') #minus=2  1-dim: {True}
+[D2axis] pattern ('-', '-', '-') #minus=3  1-dim: {False}
+[D2axis] w2 restricted pattern: ('-', '-', '-')
+[2O] irrep A1    dim=1 homomorphism=True <chi,chi>=1.000000 chi(-1)=+1
+[2O] irrep A2    dim=1 homomorphism=True <chi,chi>=1.000000 chi(-1)=+1
+[2O] irrep E     dim=2 homomorphism=True <chi,chi>=1.000000 chi(-1)=+2
+[2O] irrep T1    dim=3 homomorphism=True <chi,chi>=1.000000 chi(-1)=+3
+[2O] irrep T2    dim=3 homomorphism=True <chi,chi>=1.000000 chi(-1)=+3
+[2O] irrep E1/2  dim=2 homomorphism=True <chi,chi>=1.000000 chi(-1)=-2
+[2O] irrep E5/2  dim=2 homomorphism=True <chi,chi>=1.000000 chi(-1)=-2
+[2O] irrep G3/2  dim=4 homomorphism=True <chi,chi>=1.000000 chi(-1)=-4
+[2O] character orthonormality: True; sum dim^2 = 48
+[2O] on g=lift(+90deg about z) (trace +1.4142): chi_E1/2=+1.4142 chi_E5/2=-1.4142 chi_G3/2=+0.0000
+[induce] six directions: |stab|=4, lift Z8, generator = continuous lift of the right-handed C4 about (np.int64(0), np.int64(0), np.int64(1)) (trace +1.4142)
+[induce]    k=0 (linear): A1 + E + T1
+[induce]    k=1 (spinorial): E1/2 + G3/2
+[induce]    k=2 (linear): T1 + T2
+[induce]    k=3 (spinorial): E5/2 + G3/2
+[induce]    k=4 (linear): A2 + E + T2
+[induce]    k=5 (spinorial): E5/2 + G3/2
+[induce]    k=6 (linear): T1 + T2
+[induce]    k=7 (spinorial): E1/2 + G3/2
+[induce]    (with generator -g = g^5 instead, k -> 5k mod 8: odd labels 1<->5, 3<->7 swap)
+[induce] eight octants: |stab|=3, lift Z6, generator = continuous lift of the right-handed C3 about (np.int64(1), np.int64(1), np.int64(1)) (trace +1.0000)
+[induce]    k=0 (linear): A1 + A2 + T1 + T2
+[induce]    k=1 (spinorial): E1/2 + E5/2 + G3/2
+[induce]    k=2 (linear): E + T1 + T2
+[induce]    k=3 (spinorial): 2 G3/2
+[induce]    k=4 (linear): E + T1 + T2
+[induce]    k=5 (spinorial): E1/2 + E5/2 + G3/2
+[induce] twelve face diagonals: |stab|=2, lift Z4, generator = continuous lift of the right-handed C2edge about (np.int64(1), np.int64(1), np.int64(0)) (trace +0.0000)
+[induce]    k=0 (linear): A1 + E + T1 + 2 T2
+[induce]    k=1 (spinorial): E1/2 + E5/2 + 2 G3/2
+[induce]    k=2 (linear): A2 + E + 2 T1 + T2
+[induce]    k=3 (spinorial): E1/2 + E5/2 + 2 G3/2

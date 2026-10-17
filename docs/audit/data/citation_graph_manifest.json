@@ -1,6 +1,6 @@
 {
- "edge_count": 16211,
- "node_count": 7233,
+ "edge_count": 16213,
+ "node_count": 7234,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20965,6 +20965,10 @@
   "structured_mirror_bornsafe_scan_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "structured_source_tolerance_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e809197d8377",
+   "out_degree": 2
   },
   "structureless_dag_gravity_harness_note": {
    "deps_hash": "e3b0c44298fc",

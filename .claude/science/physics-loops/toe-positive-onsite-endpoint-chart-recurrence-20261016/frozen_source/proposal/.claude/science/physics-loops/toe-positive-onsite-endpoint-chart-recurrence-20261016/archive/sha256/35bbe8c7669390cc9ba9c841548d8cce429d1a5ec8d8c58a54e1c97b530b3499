@@ -1,0 +1,24 @@
+# Current checkpoint
+
+One bounded fresh recurrence computation completed at
+2026-10-16T19:03:36.177576Z, exit 0, empty stderr, 12.999407208058983 seconds.
+Executed source: c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771.
+Original recurrence certificate:
+380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314.
+
+The single selected positive integer is
+98611368294597721931914764889297593425141587534996842205.
+Directed integer powering plus analytic amplification establishes the
+candidate bound ||U0^n-I||op<10^-13<r/4 for r=25/231211008.
+Full scalar, literal K and all positive reserves are retained.
+
+No failed candidate, old-science replay or second attempt occurred. All
+heuristic alternatives were merely the five bounded lattice rows examined
+before selecting the one tested integer; all are preserved in the output.
+The current open obligations are separate analytical/code checking and root
+decision. The parent chart remains provisional. No physical implementation
+or arbitrary-target compilation was run. DERIVATION.md preserves the rejected
+shortcuts, filesystem cleanup disclosure and exact physical limitations.
+
+Final stored-artifact validation and source freeze finish this packet.
+No further recurrence computation or automatic adjustment is planned here.

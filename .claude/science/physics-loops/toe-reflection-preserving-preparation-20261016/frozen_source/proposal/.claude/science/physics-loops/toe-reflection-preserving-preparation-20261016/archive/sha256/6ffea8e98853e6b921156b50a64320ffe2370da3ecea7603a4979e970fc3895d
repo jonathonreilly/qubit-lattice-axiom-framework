@@ -1,0 +1,321 @@
+{
+  "schema": "scoped-exposed-physics-review-sources-v1",
+  "captured_at_utc": "2026-10-16T18:38:18.635896+00:00",
+  "proposal_status": "unaccepted root proposal; this review recommends qualified conditional analytical support",
+  "sources": [
+    {
+      "id": "proposal",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+        "bytes": 15258,
+        "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal.md",
+        "bytes": 15258,
+        "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        15258
+      ],
+      "coverage": "Complete mathematical argument, read before fixture exposure."
+    },
+    {
+      "id": "proposal_manifest",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/SOURCE_MANIFEST.json",
+        "bytes": 1420,
+        "sha256": "2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal_manifest.json",
+        "bytes": 1420,
+        "sha256": "2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        1420
+      ],
+      "coverage": "Complete source map; zero executions is historical prelaunch status."
+    },
+    {
+      "id": "proposal_freeze",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/FREEZE.json",
+        "bytes": 526,
+        "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/proposal_freeze.json",
+        "bytes": 526,
+        "sha256": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        526
+      ],
+      "coverage": "Complete freeze; every member checked below."
+    },
+    {
+      "id": "author_check_source",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/author_check.py",
+        "bytes": 4522,
+        "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_check_source.py",
+        "bytes": 4522,
+        "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        4522
+      ],
+      "coverage": "Complete code read after PRE_FIXTURE_FINDINGS; never executed by reviewer."
+    },
+    {
+      "id": "parent_wrapper",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_wrapper.md",
+        "bytes": 14706,
+        "sha256": "241dbcc2a6f4715df2ef322b4007ad816f954867b1ce47c1d4c61e71517a7388"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        14706
+      ],
+      "coverage": "Complete wrapper read for scope and distinct runtime inventories; no complete new runtime/archive validation."
+    },
+    {
+      "id": "parent_preparation_argument",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_argument.md",
+        "bytes": 15501,
+        "sha256": "6fc70e269a55d0f13e63416cb0ce4d1e600d1509c2753ab2db9c2d44a402fde1"
+      },
+      "original_byte_interval_half_open": [
+        123493,
+        138994
+      ],
+      "coverage": "Complete explicit preparation body read; runtime import not newly revalidated."
+    },
+    {
+      "id": "parent_preparation_review",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_review.md",
+        "bytes": 22831,
+        "sha256": "97570aecc29faf3dc3aba4228622cd1ea7565b01b7a3bfaae6943e9ba0e45735"
+      },
+      "original_byte_interval_half_open": [
+        139054,
+        161885
+      ],
+      "coverage": "Complete preparation review read; initially truncated combined display repaired by exact rereads. Historical fixture not replayed."
+    },
+    {
+      "id": "parent_preparation_qualifications",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/parent_preparation_qualifications.md",
+        "bytes": 8547,
+        "sha256": "0c85e9294e4f8c93bc12cde5788e64051916a10612b939b66b280e6d6dddf153"
+      },
+      "original_byte_interval_half_open": [
+        161957,
+        170504
+      ],
+      "coverage": "Complete controlling preparation qualifications read."
+    },
+    {
+      "id": "ordered_angle_proposal",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+        "bytes": 14391,
+        "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_proposal.md",
+        "bytes": 14391,
+        "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        14391
+      ],
+      "coverage": "Complete read as comparison context; not needed as a premise of the independently reconstructed symmetry proof."
+    },
+    {
+      "id": "ordered_angle_qualifications",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 8080,
+        "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_qualifications.md",
+        "bytes": 8080,
+        "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        8080
+      ],
+      "coverage": "Complete controlling qualifications read; preserves accepted scope and correction."
+    },
+    {
+      "id": "ordered_angle_acceptance",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/ACCEPTANCE.json",
+        "bytes": 2430,
+        "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/ordered_angle_acceptance.json",
+        "bytes": 2430,
+        "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        2430
+      ],
+      "coverage": "Complete acceptance record read; its historical metadata failure is retained in the source."
+    },
+    {
+      "id": "author_execution",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/EXECUTION.json",
+        "bytes": 1780,
+        "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_execution.json",
+        "bytes": 1780,
+        "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        1780
+      ],
+      "coverage": "Complete actual receipt read; child argv/cwd and source/stream pins inspected."
+    },
+    {
+      "id": "author_executed_source",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/executed_source.py",
+        "bytes": 4522,
+        "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_executed_source.py",
+        "bytes": 4522,
+        "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        4522
+      ],
+      "coverage": "Byte-identical to read author code; linked to actual receipt, not replayed."
+    },
+    {
+      "id": "author_stdout",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stdout",
+        "bytes": 2218,
+        "sha256": "8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_stdout.txt",
+        "bytes": 2218,
+        "sha256": "8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        2218
+      ],
+      "coverage": "Complete numerical results read."
+    },
+    {
+      "id": "author_stderr",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        0
+      ],
+      "coverage": "Empty stream verified."
+    },
+    {
+      "id": "author_recorder",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+        "bytes": 1536,
+        "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/sources/author_recorder.py",
+        "bytes": 1536,
+        "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+      },
+      "original_byte_interval_half_open": [
+        0,
+        1536
+      ],
+      "coverage": "Complete recorder source read. No child timeout/resource limit or resolved runtime versions recorded."
+    }
+  ],
+  "proposal_freeze_members_verified": 3,
+  "author_evidence": {
+    "existing_scientific_executions": 1,
+    "reviewer_scientific_executions": 0,
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/EXECUTION.json",
+      "bytes": 1780,
+      "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f"
+    },
+    "elapsed_seconds_recorded": 2.0954038333147764,
+    "child_wall_limit_recorded": null,
+    "resolved_python_version_recorded": null,
+    "numpy_scipy_versions_recorded": null,
+    "limits": "One complex128 M=6 battery endpoint fixture. No interval/ODE, general-n, full old-reference matrix, physical slew or independent execution certification. Its tau is a recurrence, so final phase is not a discriminating mutant."
+  },
+  "coverage_qualifications": [
+    "Complete new proposal read and analytical findings recorded before author-fixture source/stream exposure.",
+    "All selected preparation bodies and qualifications read. A combined display was truncated; exact missing intervals were reread. The complete runtime archive and imported synthesis proof were not revalidated.",
+    "Old ordered-angle result is comparison context with its controlling qualifications, not an independent proof premise for symmetry.",
+    "No new literature search was needed: the new calculation is finite algebra with supplied complete source premises.",
+    "No existing scientific program was replayed, no new scientific program executed, and no lost launch/resource limit or runtime version was reconstructed."
+  ],
+  "editable_prompt_files_changed": [],
+  "canonical_binding": null,
+  "publication": null,
+  "retained_audit": false
+}

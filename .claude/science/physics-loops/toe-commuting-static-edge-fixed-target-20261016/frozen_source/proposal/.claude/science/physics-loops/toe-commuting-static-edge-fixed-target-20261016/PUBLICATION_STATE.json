@@ -1,0 +1,17 @@
+{
+  "source_wrapper_review": null,
+  "source_publication_binding": null,
+  "canonical_integration": null,
+  "current_base_observation": null,
+  "canonical_review": null,
+  "staged_review": null,
+  "primary_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "scientific_programs_run_this_draft": 0,
+  "scientific_replays": 0,
+  "actual_scientific_source_acceptance": {
+    "source": "commuting_static_edge_root_review/ACCEPTANCE.json",
+    "sha256": "f954c36d04380ee49edac71a5dd7cb10e31142d3f3ca03f4da71f5609c04446b"
+  }
+}

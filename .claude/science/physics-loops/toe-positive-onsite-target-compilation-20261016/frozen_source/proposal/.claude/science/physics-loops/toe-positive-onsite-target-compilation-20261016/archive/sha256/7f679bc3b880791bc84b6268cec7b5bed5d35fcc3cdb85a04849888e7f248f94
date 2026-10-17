@@ -1,0 +1,497 @@
+#!/usr/bin/env python3
+"""One independent Fraction reconstruction of saved target evidence.
+
+No author import, local Taylor/ODE integration, nominal endpoint replay,
+recurrence search or n-power replay. The immutable input binding is supplied
+only after the author attempt and root's explicit execution authorization.
+"""
+from fractions import Fraction as F
+from pathlib import Path
+from math import factorial, isqrt
+from datetime import datetime
+import hashlib
+import json
+import sys
+
+S = 2**768
+GRID = 2**128
+N = 98611368294597721931914764889297593425141587534996842205
+M = 147975046
+T = 350208522228384946904887108861751911074590975328100424043350794320
+EPS = F(1, 2**40)
+BALL = F(25, 229376)
+RADIUS = F(25, 231211008)
+END_ERROR = F(31104, 2**321)
+POWER_ERROR = 2*N*END_ERROR
+G_ERROR = END_ERROR*(1+END_ERROR)+END_ERROR
+AUTHOR_SOURCE = '52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80'
+PRELAUNCH = 'f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43'
+RECORDER = '84692be35e50ea4189721a0f77a6b0382fd2a7d05ed2150a298f31401e460a8f'
+SELECTED = [1,21,4,3,7,5,2,6,8,10,11,12,17,9,19,13]
+INPUT_HASHES = {
+ 'inputs/SELECTED_INPUT.json':'c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80',
+ 'inputs/CHART_CERTIFICATE.json':'d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509',
+ 'inputs/NOMINAL_ENDPOINT.json':'454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de',
+ 'inputs/RECURRENCE_CERTIFICATE.json':'380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314'}
+
+
+def require(test, message):
+    if not test:
+        raise ValueError(message)
+
+
+def pin(path):
+    path=Path(path); raw=path.read_bytes()
+    return {'path':str(path),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+
+def same(path, row):
+    actual=pin(path)
+    require(all(actual[k]==row[k] for k in ('bytes','sha256')), 'Identity mismatch: '+str(path))
+
+
+def load(path):
+    return json.loads(Path(path).read_text())
+
+
+def write(path, value):
+    Path(path).write_text(json.dumps(value,indent=2)+'\n')
+
+
+def rational(row):
+    require(set(row)=={'numerator','denominator'}, 'Invalid rational object')
+    require(type(row['numerator']) is int and type(row['denominator']) is int and row['denominator']>0, 'Invalid fraction')
+    return F(row['numerator'],row['denominator'])
+
+
+def rational_list(rows):
+    return [rational(x) for x in rows]
+
+
+def record_fraction(x):
+    return {'numerator':x.numerator,'denominator':x.denominator}
+
+
+def floor_fraction(x):
+    return x.numerator//x.denominator
+
+
+def ceil_fraction(x):
+    return -floor_fraction(-x)
+
+
+def nearest_fraction(x):
+    return floor_fraction(x+F(1,2))
+
+
+def real_interval(a,b):
+    a,b=F(a),F(b);require(a<=b,'Reversed real interval');return (a,b)
+
+
+def real_add(a,b):
+    return (a[0]+b[0],a[1]+b[1])
+
+
+def real_neg(a):
+    return (-a[1],-a[0])
+
+
+def real_sub(a,b):
+    return real_add(a,real_neg(b))
+
+
+def real_scale(a,k):
+    ends=(a[0]*k,a[1]*k);return (min(ends),max(ends))
+
+
+def real_product(a,b):
+    ends=[x*y for x in a for y in b];return (min(ends),max(ends))
+
+
+def snap(a,denominator=S):
+    return (F(floor_fraction(a[0]*denominator),denominator),F(ceil_fraction(a[1]*denominator),denominator))
+
+
+def exact_complex(real=0,imaginary=0):
+    return ((F(real),F(real)),(F(imaginary),F(imaginary)))
+
+
+ZERO=exact_complex(); ONE=exact_complex(1)
+
+
+def complex_add(a,b):
+    return (real_add(a[0],b[0]),real_add(a[1],b[1]))
+
+
+def complex_sub(a,b):
+    return (real_sub(a[0],b[0]),real_sub(a[1],b[1]))
+
+
+def complex_product(a,b):
+    real=real_sub(real_product(a[0],b[0]),real_product(a[1],b[1]))
+    imag=real_add(real_product(a[0],b[1]),real_product(a[1],b[0]))
+    return (snap(real),snap(imag))
+
+
+def gaussian_scale(a,r,i):
+    return (real_sub(real_scale(a[0],r),real_scale(a[1],i)),
+            real_add(real_scale(a[1],r),real_scale(a[0],i)))
+
+
+def complex_divide(a,d):
+    require(d>0,'Nonpositive divisor')
+    return (snap(real_scale(a[0],F(1,d))),snap(real_scale(a[1],F(1,d))))
+
+
+def decode_complex(row):
+    require(len(row)==4 and all(type(x) is int for x in row),'Invalid integer rectangle')
+    return (real_interval(F(row[0],S),F(row[1],S)),real_interval(F(row[2],S),F(row[3],S)))
+
+
+def encode_complex(value):
+    scaled=[x*S for interval in value for x in interval]
+    require(all(x.denominator==1 for x in scaled),'Off-grid rectangle')
+    return [x.numerator for x in scaled]
+
+
+def decode_matrix(rows):
+    require(len(rows)==16,'Matrix dimension');return [decode_complex(row) for row in rows]
+
+
+def encode_matrix(matrix):
+    return [encode_complex(value) for value in matrix]
+
+
+def matrix_identity():
+    return [ONE if i==j else ZERO for i in range(4) for j in range(4)]
+
+
+def matrix_product(a,b):
+    result=[]
+    for row in range(4):
+        for col in range(4):
+            total=ZERO
+            for k in range(4):
+                total=complex_add(total,complex_product(a[4*row+k],b[4*k+col]))
+            result.append(total)
+    return result
+
+
+def matrix_adjoint(a):
+    return [(a[4*j+i][0],real_neg(a[4*j+i][1])) for i in range(4) for j in range(4)]
+
+
+def matrix_equal(actual, expected, label):
+    require(encode_matrix(actual)==expected,label+' matrix arithmetic mismatch')
+
+
+def gaussian_product(a,b):
+    return (a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0])
+
+
+def gaussian_matrix_product(a,b):
+    out=[]
+    for i in range(4):
+        for j in range(4):
+            parts=[gaussian_product(a[4*i+k],b[4*k+j]) for k in range(4)]
+            out.append((sum(p[0] for p in parts),sum(p[1] for p in parts)))
+    return out
+
+
+def tensor(a,b):
+    return [gaussian_product(a[2*(i//2)+j//2],b[2*(i%2)+j%2]) for i in range(4) for j in range(4)]
+
+
+ID2=[(1,0),(0,0),(0,0),(1,0)]
+PX=[(0,0),(1,0),(1,0),(0,0)]
+PY=[(0,0),(0,-1),(0,1),(0,0)]
+PZ=[(1,0),(0,0),(0,0),(-1,0)]
+ID4=tensor(ID2,ID2); XX=tensor(PX,PX); ZZ=tensor(PZ,PZ)
+PAULIS=[tensor(a,b) for a in (ID2,PX,PY,PZ) for b in (ID2,PX,PY,PZ)]
+
+
+def q_interval(rows):
+    require(len(rows)==2,'Rational interval dimension');return real_interval(rational(rows[0]),rational(rows[1]))
+
+
+def interval_matches(expected, saved, label):
+    require(expected==q_interval(saved),label+' rational interval mismatch')
+
+
+def arctangent_bounds(q):
+    total=F(0);den=q;sign=1
+    for index in range(128):
+        total+=F(sign,(2*index+1)*den);den*=q*q;sign=-sign
+    remainder=F(1,257*den)
+    return (total,total+remainder),total,remainder
+
+
+def exponential(angle, saved):
+    require(-4<angle[0]<=angle[1]<4,'Exponential domain')
+    interval_matches(angle,saved['angle_interval'],'Exponential input')
+    z=(real_interval(0,0),snap(angle));poly=ONE
+    for denominator in range(256,0,-1):
+        poly=complex_add(ONE,complex_divide(complex_product(z,poly),denominator))
+    require(encode_complex(poly)==saved['truncated_interval'],'Exponential polynomial mismatch')
+    tail=F(81*4**257,factorial(257));pad=ceil_fraction(S*tail)
+    require(rational(saved['tail_operator_bound'])==tail and saved['tail_padding_integer_per_component']==pad,'Exponential analytic pad')
+    error=F(pad,S);answer=((poly[0][0]-error,poly[0][1]+error),(poly[1][0]-error,poly[1][1]+error))
+    require(encode_complex(answer)==saved['analytic_exponential_interval'],'Padded exponential mismatch')
+    return answer
+
+
+def phases(record, progress):
+    require(record['scale_denominator']==S and record['scale_bits']==768,'Phase scale')
+    bounds={}
+    require(len(record['arctangent_certificates'])==3,'Arctangent list')
+    for q,saved in zip((5,239,7),record['arctangent_certificates']):
+        interval,partial,tail=arctangent_bounds(q);bounds[q]=interval
+        require(saved['q']==q and saved['terms']==128 and rational(saved['partial'])==partial and rational(saved['alternating_remainder_upper'])==tail,'Arctangent certificate')
+    pi_raw=real_sub(real_scale(bounds[5],16),real_scale(bounds[239],4));pi=snap(pi_raw,2**512)
+    interval_matches(pi_raw,record['pi_raw_interval'],'Raw pi');interval_matches(pi,record['pi_dyadic_interval'],'Dyadic pi')
+    require(3<pi[0]<pi[1]<4 and pi[1]-pi[0]<=F(1,2**508),'Pi width/domain')
+    require(rational(record['pi_width'])==pi[1]-pi[0],'Pi recorded width')
+    midpoint=(pi[0]+pi[1])/2;k=nearest_fraction(F(T)/(2*midpoint));theta=real_sub((F(T),F(T)),real_scale(pi,2*k))
+    require(record['T_reduction_integer']==k and -4<theta[0]<=theta[1]<4,'Time phase branch')
+    interval_matches(theta,record['theta_interval'],'Theta')
+    phi_w=real_add(real_scale(pi,F(1,2)),real_scale(bounds[7],2));interval_matches(phi_w,record['phi_w_interval'],'W phase')
+    require(len(record['root_branches'])==4,'Root branch count');rooted=[ZERO]*16
+    expected_progress=[]
+    for (z,x),saved in zip(((1,1),(1,-1),(-1,1),(-1,-1)),record['root_branches']):
+        raw=real_scale(theta,-(2+z))
+        if x==1:raw=real_add(raw,phi_w)
+        m=nearest_fraction((raw[0]+raw[1])/(4*midpoint));phase=real_sub(raw,real_scale(pi,2*m))
+        require(saved['z']==z and saved['x']==x and saved['phase_reduction_integer']==m,'Root branch integer')
+        interval_matches(phase,saved['phase_interval'],'Root phase');require(-4<phase[0]<=phase[1]<4,'Root phase domain')
+        eig=exponential(real_scale(phase,F(1,M)),saved['exponential'])
+        left=[(a[0]+z*b[0],a[1]+z*b[1]) for a,b in zip(ID4,ZZ)]
+        right=[(a[0]+x*b[0],a[1]+x*b[1]) for a,b in zip(ID4,XX)]
+        numerator=gaussian_matrix_product(left,right)
+        require([list(v) for v in numerator]==saved['projector_gaussian_numerator'] and saved['projector_denominator']==4,'Projector numerator')
+        rooted=[complex_add(v,complex_divide(gaussian_scale(eig,*p),4)) for v,p in zip(rooted,numerator)]
+        expected_progress.append({'z':z,'x':x,'reduction_integer':m,'phase_interval':saved['phase_interval']})
+    matrix_equal(rooted,record['root_actual_unitary_interval'],'Root sum')
+    zeta=exponential(real_neg(theta),record['direct_zeta']);zeta3=complex_product(complex_product(zeta,zeta),zeta)
+    diagonal=[zeta3,zeta,zeta,zeta3];target=[]
+    for i in range(4):
+        for j in range(4):
+            pos=4*i+j;r=9*ID4[pos][0]-16*XX[pos][0];im=12*ID4[pos][0]+12*XX[pos][0]
+            target.append(complex_divide(gaussian_scale(diagonal[j],r,im),25))
+    matrix_equal(target,record['direct_actual_target_interval'],'Direct target')
+    require(record['analytic_exponential_tails_included'] is True,'Target-tail declaration')
+    for field in ('arctangent_certificates','pi_raw_interval','pi_dyadic_interval','T_reduction_integer','theta_interval'):
+        require(progress[field]==record[field],'Phase progress linkage: '+field)
+    require(progress['branches']==expected_progress,'Phase progress branch linkage')
+    # Exact target algebra uses Gaussian rationals, not floating matrices.
+    wmat=[(F(9*a[0]-16*b[0],25),F(12*a[0]+12*b[0],25)) for a,b in zip(ID4,XX)]
+    wstar=[(wmat[4*j+i][0],-wmat[4*j+i][1]) for i in range(4) for j in range(4)]
+    require(gaussian_matrix_product(wmat,wstar)==ID4,'Exact W unitarity')
+    require(gaussian_product((F(-7,25),F(24,25)),(F(-7,25),F(24,25)))==(F(-527,625),F(-336,625)),'Exact determinant')
+    require(all((([3,1,1,3][i]-[3,1,1,3][j])*wmat[4*i+j][0]==0 and ([3,1,1,3][i]-[3,1,1,3][j])*wmat[4*i+j][1]==0) for i in range(4) for j in range(4)),'Target commutation')
+    return rooted,target
+
+
+def pauli_coordinates(matrix,analytic_error):
+    pad=ceil_fraction(S*analytic_error);out=[]
+    for pauli in PAULIS:
+        value=ZERO
+        for i in range(4):
+            for j in range(4):
+                value=complex_add(value,gaussian_scale(matrix[4*j+i],*pauli[4*i+j]))
+        value=complex_divide(value,4);entry=encode_complex(value)
+        out.append([entry[2]-pad,entry[3]+pad])
+    return out,pad
+
+
+def midpoints(coords):
+    require(len(coords)==16,'Coordinate count');out=[]
+    for lo,hi in coords:
+        require(type(lo) is int and type(hi) is int and lo<=hi,'Coordinate shape')
+        require(F(hi-lo,2*S)<=F(1,2**110),'Padded coordinate radius')
+        out.append(F(lo+hi,2*S))
+    return out
+
+
+def check_y(record,coords,pad):
+    require(record['scale_denominator']==S and record['padded_coordinates']==coords,'Padded y coordinates')
+    require(rational(record['analytic_operator_error'])==POWER_ERROR and record['pad_integer']==pad,'y analytic allowance')
+    require(record['target_analytic_errors_already_inside_rectangle'] is True,'y target error declaration')
+
+
+def endpoint_from_slots(record,index,amplitudes):
+    require(record['iterate']==index and record['scale_denominator']==S and record['order']==320,'Endpoint metadata')
+    require(rational_list(record['amplitudes'])==amplitudes and all(F(1,4)<=a<=F(3,4) for a in amplitudes),'Endpoint amplitudes')
+    require(rational(record['separate_analytic_operator_error'])==END_ERROR,'Endpoint analytic allowance')
+    require(len(record['all_slot_intervals'])==24,'Endpoint slot count');endpoint=matrix_identity()
+    for slot in record['all_slot_intervals']:
+        endpoint=matrix_product(decode_matrix(slot),endpoint)
+    matrix_equal(endpoint,record['truncated_endpoint_interval'],'New endpoint '+str(index))
+    return endpoint
+
+
+def check_iteration_output(record,values,numerators):
+    require(rational_list(record['unrounded_map_value'])==values,'Unrounded inverse map')
+    require(record['output_displacement_numerators']==numerators and record['displacement_denominator']==GRID,'Rounded displacement')
+
+
+def power_trace(block,trace):
+    require(trace['scale_denominator']==S and trace['exponent']==M,'Final power metadata')
+    current=matrix_identity();base=block;remaining=M;bit=0;products=0
+    while remaining:
+        require(bit<len(trace['steps']),'Missing final power step');step=trace['steps'][bit];used=bool(remaining%2)
+        if used:current=matrix_product(base,current);products+=1
+        remaining//=2
+        if remaining:base=matrix_product(base,base);products+=1
+        require(step['bit']==bit and step['multiply_used'] is used and step['remaining']==remaining,'Final power chronology')
+        matrix_equal(current,step['result'],'Power result '+str(bit))
+        if remaining:matrix_equal(base,step['next_base'],'Power base '+str(bit))
+        else:require(step['next_base'] is None,'Unexpected final square')
+        bit+=1
+    require(len(trace['steps'])==bit and trace['products']==products,'Final power counts')
+    return current,products
+
+
+def read_binding(path):
+    binding=load(path);require(binding['status']=='bound_immutable_author_evidence','Unbound evidence input')
+    root=Path(binding['author_bundle_root']).resolve();freeze_row=binding['author_final_freeze'];same(freeze_row['path'],freeze_row)
+    freeze=load(freeze_row['path']);key=binding['freeze_member_key'];require(key in ('members','files'),'Unknown freeze schema')
+    rows=freeze[key];membership={}
+    for row in rows:
+        relative=row['path'];require(not Path(relative).is_absolute() and '..' not in Path(relative).parts,'Nonportable freeze member')
+        require(relative not in membership,'Duplicate member');target=root/relative;require(target.resolve().is_relative_to(root),'Escaping author member')
+        same(target,row);membership[relative]=row
+    def file(relative):
+        require(relative in membership,'Required file absent from immutable author bundle: '+relative)
+        return root/relative
+    require(pin(file('PRELAUNCH_FREEZE.json'))['sha256']==PRELAUNCH,'Prelaunch changed')
+    prelaunch=load(file('PRELAUNCH_FREEZE.json'))
+    for row in prelaunch['members']:
+        require(row['path'] in membership,'Prelaunch member omitted');same(file(row['path']),row)
+    require(pin(file('compile_target.py'))['sha256']==AUTHOR_SOURCE,'Author source changed')
+    for relative,digest in INPUT_HASHES.items():require(pin(file(relative))['sha256']==digest,'Parent input changed')
+    receipt_path=file('runs/target_001/EXECUTION.json');same(receipt_path,binding['author_execution'])
+    receipt=load(receipt_path)
+    require(receipt['kind']=='scientific' and receipt['exit_code']==0 and receipt['timed_out'] is False,'Original attempt did not succeed')
+    require(receipt['wall_timeout_seconds']==600 and receipt['cpu_ram_limits'] is None,'Original attempt resource schema')
+    require(receipt['cwd']==str(root),'Original cwd mismatch')
+    require(datetime.fromisoformat(receipt['start_utc'])>=datetime.fromisoformat(prelaunch['utc']) and datetime.fromisoformat(receipt['end_utc'])>=datetime.fromisoformat(receipt['start_utc']),'Original chronology')
+    for field,relative in [('source_at_launch','runs/target_001/source_at_launch.py'),('recorder_at_launch','runs/target_001/recorder_at_launch.py'),('stdout','runs/target_001/stdout'),('stderr','runs/target_001/stderr')]:
+        same(file(relative),receipt[field]);require(Path(receipt[field]['path']).resolve()==file(relative).resolve(),'Original receipt path')
+    require(receipt['source_at_launch']['sha256']==AUTHOR_SOURCE and receipt['original_source']['sha256']==AUTHOR_SOURCE,'Executed-source pin')
+    require(receipt['recorder_at_launch']['sha256']==RECORDER,'Author recorder changed')
+    require(receipt['argv'][1:]==[str(file('runs/target_001/source_at_launch.py')),str(root),str(root/'target_001_output')],'Original argv mismatch')
+    require(file('runs/target_001/stderr').read_bytes()==b'','Unexpected original stderr')
+    return binding,root,file,receipt
+
+
+def expect_rejection(thunk,label):
+    try:thunk()
+    except (ValueError,AssertionError):return label
+    raise ValueError('Corrupted control unexpectedly accepted: '+label)
+
+
+def main():
+    require(len(sys.argv)==3,'Usage: checker binding.json new_output_directory')
+    binding_path=Path(sys.argv[1]).resolve();output=Path(sys.argv[2]).resolve()
+    require('endpoint_target_compilation_exposed_check' in output.parts,'Checker output outside assigned packet')
+    output.mkdir(parents=True,exist_ok=False)
+    binding,root,file,receipt=read_binding(binding_path)
+    def saved(name):return load(file('target_001_output/'+name))
+    require(T==24*M*N and T<2**220 and M==(16/RADIUS).__floor__()+1 and F(4,M)<RADIUS/4,'Fixed timing/constants')
+    spec=load(file('ATTEMPT.json'))
+    require((spec['n'],spec['M'],spec['T'],spec['iterations'],spec['displacement_bits'],spec['interval_bits'],spec['endpoint_order'],spec['substeps_per_slot'],spec['phase_dyadic_bits'],spec['arctan_terms'],spec['exponential_order'])==(N,M,T,32,128,768,320,8,512,128,256),'Fixed attempt specification')
+    require(spec['W_identity_gaussian_numerator']==[9,12] and spec['W_XX_gaussian_numerator']==[-16,12] and spec['W_denominator']==25 and spec['epsilon_denominator']==2**40,'Fixed target specification')
+    data=load(file('inputs/SELECTED_INPUT.json'));chart=load(file('inputs/CHART_CERTIFICATE.json'));nominal=load(file('inputs/NOMINAL_ENDPOINT.json'));recurrence=load(file('inputs/RECURRENCE_CERTIFICATE.json'))
+    nums=[192+(73*j+41)%128 for j in range(24)];amplitude0=[F(x,512) for x in nums]
+    require(data['amplitude_numerators']==nums and data['amplitude_denominator']==512 and data['selected_zero_based_indices']==SELECTED and data['pulse_channels']==[j%4 for j in range(24)],'Nominal contract')
+    require(chart['inverse_numerators']==data['rational_inverse_numerators'] and chart['inverse_denominator']==data['rational_inverse_denominator']==2**40,'Inverse identity')
+    inverse=[[F(v,2**40) for v in row] for row in data['rational_inverse_numerators']]
+    require(len(inverse)==16 and all(len(row)==16 for row in inverse),'Inverse dimensions')
+    require(rational(chart['residual_frobenius_square_upper'])<F(1,2**76) and sum(v*v for row in inverse for v in row)<=63**2,'Qualified inverse bounds')
+    require(rational(chart['inverse_frobenius_square_exact'])==sum(v*v for row in inverse for v in row),'Exact inverse norm metadata')
+    require(nominal['scale_denominator']==recurrence['scale_denominator']==S and nominal['taylor_order']==recurrence['taylor_order']==320,'Qualified truncation scale/order')
+    require(rational(nominal['global_endpoint_operator_error'])==rational(recurrence['endpoint_analytic_error'])==END_ERROR and rational(recurrence['analytic_power_error'])==POWER_ERROR,'Qualified errors')
+    require(recurrence['positive_integer_n']==N and rational(recurrence['strict_decimal_operator_norm_bound'])<=F(1,10**13),'Qualified recurrence')
+    uhat=decode_matrix(nominal['truncated_endpoint_interval']);dhat=decode_matrix(recurrence['full_U4_power_interval'])
+    rooted,target=phases(saved('TARGET_ENCLOSURES.json'),saved('PHASE_PROGRESS.json'))
+    ycoords,ypad=pauli_coordinates(matrix_product(matrix_adjoint(dhat),rooted),POWER_ERROR);yrecord=saved('Y_COORDINATES.json');check_y(yrecord,ycoords,ypad);ymid=midpoints(ycoords)
+    print('CHECKED_PHASES_AND_PADDED_Y',flush=True)
+    x=[F(0)]*16;endpoints=0;last_step=None;last_values=None;last_numerators=None
+    for iteration in range(32):
+        step=saved('ITERATION_%02d.json'%iteration);require(step['iteration']==iteration and rational_list(step['input_x'])==x,'Iteration continuity')
+        require(rational(step['input_squared_norm'])==sum(v*v for v in x)<=BALL**2,'Input domain')
+        amplitudes=amplitude0.copy()
+        for j,value in zip(SELECTED,x):amplitudes[j]+=value
+        if iteration:
+            endpoint=endpoint_from_slots(saved('ENDPOINT_%02d.json'%iteration),iteration,amplitudes);endpoints+=1
+            coords,pad=pauli_coordinates(matrix_product(matrix_adjoint(uhat),endpoint),G_ERROR)
+        else:coords,pad=[[0,0] for _ in range(16)],0
+        require(step['G_padded_coordinates']==coords and step['G_pad_integer']==pad,'Padded G coordinates')
+        require(rational(step['G_analytic_operator_error'])==(G_ERROR if iteration else 0) and step['coordinate_scale_denominator']==S and step['G_at_zero_exact'] is (iteration==0),'G analytic/zero metadata')
+        gmid=midpoints(coords)
+        require(rational_list(step['y_midpoints'])==ymid and rational_list(step['G_midpoints'])==gmid,'Recorded midpoint')
+        values=[x[i]+sum(inverse[i][j]*(ymid[j]-gmid[j]) for j in range(16)) for i in range(16)]
+        numerators=[nearest_fraction(value*GRID) for value in values];check_iteration_output(step,values,numerators)
+        new_x=[F(v,GRID) for v in numerators]
+        require(rational(step['output_squared_norm'])==sum(v*v for v in new_x)<=(BALL/2)**2 and step['coordinate_radius_checks_succeeded'] is True,'Output domain/check flag')
+        last_step,last_values,last_numerators=step,values,numerators;x=new_x
+        print('CHECKED_ITERATION',iteration+1,flush=True)
+    amplitudes=amplitude0.copy()
+    for j,value in zip(SELECTED,x):amplitudes[j]+=value
+    fhat=endpoint_from_slots(saved('ENDPOINT_32.json'),32,amplitudes);endpoints+=1
+    require(endpoints==32,'New endpoint count')
+    block=matrix_product(matrix_product(dhat,matrix_adjoint(uhat)),fhat)
+    powered,products=power_trace(block,saved('FINAL_POWER_TRACE.json'))
+    residual=[complex_sub(a,b) for a,b in zip(powered,target)]
+    square=sum(max(abs(v[0][0]),abs(v[0][1]))**2+max(abs(v[1][0]),abs(v[1][1]))**2 for v in residual)
+    beta=POWER_ERROR*(1+END_ERROR)**2+END_ERROR*(1+END_ERROR)+END_ERROR;allowance=2*M*beta;margin=EPS-allowance
+    require(M*beta<F(1,2) and margin>0 and square<margin**2,'Strict full-word residual')
+    scaled_square=square*S*S;require(scaled_square.denominator==1,'Residual normalization');integer_root=isqrt(scaled_square.numerator)
+    if integer_root**2<scaled_square:integer_root+=1
+    total=F(integer_root,S)+allowance;require(total<EPS,'Explicit residual ceiling')
+    certificate=saved('TARGET_CERTIFICATE.json')
+    require(certificate['n']==N and certificate['M']==M and certificate['T']==T and rational(certificate['epsilon'])==EPS and certificate['scale_denominator']==S,'Final target metadata')
+    require(certificate['fixed_W']=={'I':[9,12],'XX':[-16,12],'denominator':25},'Final W')
+    require(certificate['full_comparator']=='W exp(-i T K), with every scalar retained' and certificate['independent_validation'] is False,'Final comparator/exposure declaration')
+    for actual,field in [(fhat,'final_calibrated_truncated_endpoint'),(block,'auxiliary_truncated_block'),(powered,'auxiliary_truncated_power'),(target,'actual_target_interval_including_all_tails'),(residual,'residual_rectangle')]:matrix_equal(actual,certificate[field],field)
+    contraction=BALL/F(4)**32+F(4,3)*F(1,2**100);word_error=4*F(16,15)*M*contraction
+    require(F(1,2**38)+63*F(4096,225)*BALL<F(1,4) and 63*2*F(1,2**108)+F(1,2**127)<F(1,2**100)<BALL/32 and word_error<F(1,2**45)<EPS,'Contraction constants')
+    for field,value in [('residual_frobenius_square_upper',square),('block_analytic_error_beta',beta),('power_analytic_allowance',allowance),('positive_margin',margin),('explicit_total_operator_error_upper',total),('contraction_solution_distance_upper',contraction),('contraction_word_error_upper',word_error)]:require(rational(certificate[field])==value,'Final bound field: '+field)
+    require(certificate['final_power_products']==products and certificate['new_endpoint_evaluations']==32 and certificate['exact_iterations']==32 and certificate['target_tails_included_before_subtraction'] is True,'Final counts/tails')
+    require(certificate['checks']=={'strict_complete_residual':True,'integer_sqrt_upper_below_epsilon':True,'all_amplitudes_legal':True},'Original final checks')
+    schedule=saved('SCHEDULE.json');alpha0=48+F(8,15)*sum(amplitude0);alpha=M*N*alpha0+F(8*M,15)*sum(x)
+    require(alpha0==F(13027,240),'Nominal scalar')
+    require(schedule['tree']=={'repeat':M,'chronological_children':[{'template':'calibrated','slots':24},{'repeat':N-1,'template':'nominal','slots_each':24}]},'Physical chronology')
+    require(schedule['old_K']=='2I+ZZ, literally present throughout' and schedule['matrix_order']=='(U0^(n-1) F(a))^M = (D U0^dagger F(a))^M' and schedule['slot_shape']=='psi(s)=16*s^2*(1-s)^2 on 0<=s<=1','Physical generator and pulse declaration')
+    require(schedule['slot_duration']==1 and schedule['exact_duration']==schedule['slot_count']==T and schedule['nominal_template_count']==M*(N-1) and schedule['calibrated_template_count']==M,'Actual duration/count')
+    require(schedule['positive_rays']==['I+X1','I+Y1','I+X2','I+Y2'] and schedule['pulse_channels']==[j%4 for j in range(24)] and schedule['selected_indices']==SELECTED,'Schedule controls/order')
+    require(rational_list(schedule['nominal_amplitudes'])==amplitude0 and rational_list(schedule['calibrated_amplitudes'])==amplitudes and all(F(1,4)<=a<=F(3,4) for a in amplitudes),'Schedule amplitudes')
+    require(schedule['displacement_numerators']==[int(v*GRID) for v in x] and schedule['displacement_denominator']==GRID,'Schedule displacements')
+    require(rational(schedule['alpha0'])==alpha0 and rational(schedule['full_scalar_action'])==alpha and schedule['scalar_removed_or_normalized'] is False and schedule['negative_time_operations']==0,'Full scalar/forward time')
+    require(schedule['added_incident_cap']==2 and schedule['slew_cap']==16 and schedule['original_old_load']==3,'Modeled loads')
+    ledger=saved('RESOURCE_LEDGER.json');fault_multiplier=F(16,15)*T;example=fault_multiplier*F(1,2**300)
+    require(ledger['duration_and_slot_count']==T and ledger['whole_templates']==M*N and ledger['absolute_control_variation_upper_E0_units']==72*M*N,'Resource counts')
+    require(ledger['added_cap_E0_units']==2 and ledger['slew_E0_squared_over_hbar_units']==16 and ledger['post_off_timing_upper_multiplier']==3,'Resource caps/timing')
+    require(rational(ledger['uniform_amplitude_fault_multiplier'])==fault_multiplier and rational(ledger['sufficient_example_amplitude_error'])==F(1,2**300) and rational(ledger['example_integrated_amplitude_error_upper'])==example<F(1,2**79),'Fault ledger')
+    require(ledger['net_ideal_work_for_selected_W']==0 and ledger['initial_and_final_trace_error_energy_multiplier_E0_units_each']==1 and rational(ledger['full_reference_trace_error_upper'])==2*EPS,'Ideal work/trace ledger')
+    require(ledger['external_drive_quantum_outputs_modeled'] is False and ledger['efficiency_native_supply_autonomous_halt_reuse_claimed'] is False,'Scope flags')
+    # Validate child stream/output linkage, not a stand-alone PASS count.
+    lines=file('runs/target_001/stdout').read_text().splitlines();endpoint_lines=[line for line in lines if line.startswith('ENDPOINT_SAVED ')];iteration_lines=[line for line in lines if line.startswith('CALIBRATION_ITERATION_COMPLETE ')];final_lines=[line for line in lines if line.startswith('FINAL_CERTIFICATE ')];pin_lines=[line for line in lines if line.startswith('OUTPUT_PIN ')]
+    require(len(endpoint_lines)==32 and len(iteration_lines)==32 and len(final_lines)==1 and len(pin_lines)==4,'Actual stdout evidence count')
+    for index,line in enumerate(endpoint_lines,1):
+        _,number,row=line.split(' ',2);require(int(number)==index,'Actual endpoint stream order');same(file('target_001_output/ENDPOINT_%02d.json'%index),json.loads(row))
+    require([int(line.split()[-1]) for line in iteration_lines]==list(range(1,33)),'Actual iteration stream order')
+    final_message=json.loads(final_lines[0].split(' ',1)[1]);require(final_message['checks']==certificate['checks'] and rational(final_message['explicit_total_operator_error_upper'])==total and rational(final_message['epsilon'])==EPS,'Actual final stream linkage')
+    expected_names=['TARGET_ENCLOSURES.json','SCHEDULE.json','TARGET_CERTIFICATE.json','RESOURCE_LEDGER.json']
+    for name,line in zip(expected_names,pin_lines):same(file('target_001_output/'+name),json.loads(line.split(' ',1)[1]))
+    # Three narrow corruption controls: they test these checks, not the theorem.
+    wrong_y=dict(yrecord);wrong_y['pad_integer']=0;wrong_y['analytic_operator_error']=record_fraction(F(0));wrong_y['padded_coordinates']=[[lo+ypad,hi-ypad] for lo,hi in ycoords]
+    bad_step=dict(last_step);bad_step['output_displacement_numerators']=last_numerators.copy();bad_step['output_displacement_numerators'][0]+=1
+    wrong_power=[row.copy() for row in encode_matrix(powered)];wrong_power[0][0]+=1;wrong_power[0][1]+=1
+    controls=[expect_rejection(lambda:check_y(wrong_y,ycoords,ypad),'omitted_analytic_y_pad'),expect_rejection(lambda:check_iteration_output(bad_step,last_values,last_numerators),'changed_one_displacement'),expect_rejection(lambda:matrix_equal(powered,wrong_power,'corrupt power'),'changed_one_power_interval')]
+    result={'status':'SAVED_TARGET_ARITHMETIC_VERIFIED_WITH_EXPLICIT_LIMITS','binding':pin(binding_path),'author_execution':pin(file('runs/target_001/EXECUTION.json')),'author_source_sha256':AUTHOR_SOURCE,'new_endpoints_checked_as_24_saved_slot_products':32,'slot_products_checked':32*24,'iteration_records_checked':32,'final_power_products_checked':products,'phase_and_target_enclosures_reconstructed':True,'all_analytic_coordinate_pads_checked':True,'full_scalar_and_actual_time_checked':True,'explicit_total_operator_error_upper':record_fraction(total),'epsilon':record_fraction(EPS),'corrupted_controls_rejected':controls,'scope':'Fraction saved-evidence arithmetic, source-exposed same-model. No author imports, local Taylor/ODE, nominal endpoint or n-power replay.','physical_trace_qualification':'Recorded 2 epsilon is ideal only; actual bound additionally includes initial trace error and 2 eta_drive.','trusted_local_slot_enclosures':'Inspected author source and its actual one execution; not regenerated here.','retained_audit':False}
+    write(output/'RESULT.json',result);print(json.dumps(result,indent=2),flush=True)
+
+
+if __name__=='__main__':
+    main()

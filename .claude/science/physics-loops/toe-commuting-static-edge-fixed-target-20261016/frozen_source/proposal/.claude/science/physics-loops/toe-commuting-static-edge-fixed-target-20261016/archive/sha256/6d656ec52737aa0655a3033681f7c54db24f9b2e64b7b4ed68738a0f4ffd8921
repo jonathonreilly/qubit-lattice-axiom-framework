@@ -1,0 +1,61 @@
+{
+  "scope": "source-only conditional commuting-edge alternative",
+  "scientific_executions": 0,
+  "mathematical_status": "proposed analytical derivation; separate checking pending",
+  "extra_physical_permission": "calibrated positive I+XX block on the existing old edge",
+  "strict_four_onsite_ray_supplier": "not established",
+  "sources": [
+    {
+      "label": "target_derivation",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/DERIVATION.md",
+      "snapshot": "sources/target_derivation__DERIVATION.md",
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737",
+      "read_coverage": "complete earlier author/read coverage; target, phase and resource sections reread this turn; used as input specification, not proof of new result"
+    },
+    {
+      "label": "target_ledger",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output/RESOURCE_LEDGER.json",
+      "snapshot": "sources/target_ledger__RESOURCE_LEDGER.json",
+      "bytes": 1311,
+      "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11",
+      "read_coverage": "complete reread this turn; unchanged actual saved ledger; no replay"
+    },
+    {
+      "label": "target_result",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/RESULT.md",
+      "snapshot": "sources/target_result__RESULT.md",
+      "bytes": 4930,
+      "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60",
+      "read_coverage": "complete author/read coverage reused at unchanged bytes; historical status not rewritten"
+    },
+    {
+      "label": "target_freeze",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/FREEZE.json",
+      "snapshot": "sources/target_freeze__FREEZE.json",
+      "bytes": 22438,
+      "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc",
+      "read_coverage": "metadata identity and selected source linkage; not a recursive science check"
+    },
+    {
+      "label": "gap_decision",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_physical_gap_decision/GAP_DECISION.md",
+      "snapshot": "sources/gap_decision__GAP_DECISION.md",
+      "bytes": 19949,
+      "sha256": "ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc",
+      "read_coverage": "complete earlier author/read coverage reused; cap, geometry and finite-window interface revisited"
+    },
+    {
+      "label": "gap_freeze",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_physical_gap_decision/FREEZE.json",
+      "snapshot": "sources/gap_freeze__FREEZE.json",
+      "bytes": 3521,
+      "sha256": "830d2f702a69b6fc48514b35aa4bb75087efc8c317196cbf8e58e78c1c4f46b7",
+      "read_coverage": "metadata identity and selected source linkage"
+    }
+  ],
+  "parent_chat_exposure": "Both commuting-edge suggestions received before freeze; see EXPOSURE.md",
+  "canonical_binding": null,
+  "acceptance": null,
+  "publication": null
+}

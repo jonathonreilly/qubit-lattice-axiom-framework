@@ -1,0 +1,27 @@
+# Saved-certificate arithmetic check proposal
+
+This is an unexecuted, source-only proposal for one 60-second, single-attempt check of both scenarios in the already executed compiler's REPORT.json (SHA256 0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564). Root GO is absent. No arithmetic outcome is claimed. Only source syntax and evidence identities have been checked while preparing this packet.
+
+The new implementation uses exact integer multiplication/comparison and Fraction arithmetic. It never imports or executes the author's compiler, calls isqrt, regenerates atan summands/partial sums, evaluates exponentials or simulates a Hamiltonian. The saved atan endpoints are conditional inputs. It checks their ordering and the algebra connecting those endpoints to pi, theta, Delta and the two positive radicands. This does not independently establish that those intervals enclose the mathematical constants.
+
+For each declared scenario, it checks the saved quotient floor inequalities, square-root integer inequalities, corresponding coefficient numerator/denominator and reduced forms, direct square brackets, saved strict-upper cross-products, and the Delta lower-floor and strict-upper inequalities. These yield conditional lower replacements with errors strictly below two grid steps. It recomputes the actual four-port scalar rhat=2(gxhat+gyhat), source/old added incident loads, old total load 3+rhat, actual scalar phase arguments, positivity, source gap and the stored conditional budget formulas. It does not infer a cap of 2 for the total old load. The actual phase uses rhat; no ideal scalar substitution is made.
+
+The fine-grid scenario has m=44, T=2^120, p=171, n=179, window24. The structured scenario has port p=117, source p=58, n=125, window2^68. Their conditional isometry allocations are respectively <13epsilon/32 and <7epsilon/16; these are assertions to be tested, not current results. The effective-Hamiltonian/resolvent and analytic remainder arguments remain in separately qualified analytical reviews. The initial-state extension requires an independent supplied source or an actual full initial joint trace bound. Marginal source closeness alone is insufficient.
+
+This is a same-model, report-derived independent implementation after exposure to the proposal, analytical proofs and saved report. It is neither a blind review nor an independent physical or analytic proof. Compiler implementation bytes are preserved for provenance without being imported, executed or used as implementation source. Shared standard-library Fraction/integer arithmetic is a computational trust assumption.
+
+## Root command contract
+
+Review both new programs and this scope before authorizing. Create a separate actual GO JSON from ROOT_GO_TEMPLATE.json, filling the exact FINAL_FREEZE and validator hashes after inspecting them. The template is not approval. Run record_one_attempt.py once with --go-file pointing to that external record. The recorder creates the fixed sibling weak_mediator_saved_certificate_check_execution/runs/check_001 and refuses to overwrite it. It copies its own source, validator source, complete input report/parameters, freeze and GO before launching the captured validator; argv[3] is that exact captured source. It preserves full stdout/stderr, output and exit/timeout or prelaunch failure. It imposes a 60-second wall timeout and no CPU/RAM quota. No retry, fallback run or compiler execution is authorized.
+
+Expected command, only after actual root GO:
+
+    python3 /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/record_one_attempt.py --go-file /absolute/path/to/actual_root_go.json
+
+A failed guard or timeout is a result to preserve. The immutable proposal is not edited to erase a failure. Root will decide any later work separately.
+
+## Read and evidence map
+
+Read validate_saved_certificate.py and record_one_attempt.py completely: both are newly authored, with no copied author functions. SOURCE_MANIFEST.json maps each captured original byte sequence to its original absolute path. author_run contains the single actual compiler execution receipt, original captured source/parameters, full streams/report and prelaunch records; no recursive publication archive is included. The original parameter status saying source-only is historical and remains unchanged. This proposal makes no root source acceptance, canonical approval, retained audit, implementation/physical realization or publication claim.
+
+inspect_sources.py and record_metadata.py only validate syntax, declared imports and byte identities. Their actual receipt is not a scientific check. CONSTRUCTION_EVENTS.md records a failed tool-call parse before any files were written. No prompt, canonical, Git, PR, cache, graph, audit or source science files were changed.

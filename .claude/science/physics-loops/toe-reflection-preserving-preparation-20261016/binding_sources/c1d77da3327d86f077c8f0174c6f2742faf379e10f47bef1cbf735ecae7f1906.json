@@ -1,0 +1,22 @@
+{
+  "tool": "mcp__codex_app__attach_artifact",
+  "arguments": {
+    "artifact_type": "pull_request",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9650"
+  },
+  "actual_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"artifact_type\":\"pull_request\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9650\"}"
+      }
+    ],
+    "isError": false
+  },
+  "original_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ATTACHMENT.json",
+    "bytes": 377,
+    "sha256": "bd9b102ce3483c81b07d74542a5a5e233edb63a5f2d76237254db928be178d6c"
+  },
+  "scope": "Tool name and actual arguments added to original successful tool result; no tool replay or invented result."
+}

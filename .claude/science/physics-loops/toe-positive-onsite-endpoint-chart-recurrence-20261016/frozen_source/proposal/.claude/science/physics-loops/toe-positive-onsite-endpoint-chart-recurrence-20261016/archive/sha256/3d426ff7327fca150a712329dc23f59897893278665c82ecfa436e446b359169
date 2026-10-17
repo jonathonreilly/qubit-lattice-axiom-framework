@@ -1,0 +1,101 @@
+# Proposed explicit positive-onsite endpoint chart
+
+Status: proposed construction and certification plan, not an accepted certificate. This follows the quantitative question in positive_local_actuator_replacement_screen/DECISION.md (92f5d2fb), which is itself a proposed screen. None of its unreviewed claims is treated as a theorem premise. The finite argument below is self-contained once a concrete full-rank numerical enclosure is actually supplied and separately checked. No physical axioms or native suppliers are changed.
+
+## Literal plant and finite family
+
+Use exactly two old qubits, arbitrary old/reference input, no new quantum resource. In units hbar=1 and energy unit1, retain literal K=2I+Z tensor Z>=I. Supply the four positive onsite rays P=(I+X1,I+Y1,I+X2,I+Y2), each norm2, with its identity part present. During pulse j, j=0,...,23, use the next cyclic ray and
+
+    H_j(s)=K+a_j psi(s)P_j, 0<=s<=1,
+    psi(s)=16s^2(1-s)^2.
+
+The 24 unit-duration pulses meet with control and its first derivative zero. The baseline K remains installed. At a nominal rational vector choose
+
+    a_j=[192+((73j+41) mod128)]/512.
+
+Every nominal amplitude lies in[3/8,5/8). We will select16 of the24 amplitudes by one bounded floating Jacobian inspection; unselected amplitudes are then fixed. This inspection is a candidate selection, not a rank proof. The exact selected indices and a rational approximate inverse must be frozen before an enclosure computation. If the selected minor fails certification, preserve that failure and do not assert a chart.
+
+For a selected parameter displacement with Euclidean norm t<=1/8, all amplitudes lie in[1/4,3/4]. The actual added norm is at most3/2<2, and ||dot C||<=12<16 since |psi'|<=8. Only one onsite ray is active, so these are global and incident caps. Add old load3 to a full operator norm cap. Controls are positive, C1, and vanish with derivative at every join. This is one fixed-cap example, not a claim that this same numerical certificate works for arbitrary smaller caps. In physical units choose a supplied energy E0, K=E0(2I+ZZ), P=E0(I+sigma), slot duration hbar/E0, control cap2E0 and slew cap16E0^2/hbar. Timing, coefficient accuracy, isolation, onsite addressing and a microscopic drive are supplied.
+
+Let F(a) be the complete4-by4 endpoint, with every scalar retained; tau0=24. No projective identification is permitted. The reference is passive. All matrix derivatives concern real amplitudes in this actual pulse family.
+
+## A chart without a logarithm branch
+
+Write U0=F(a0). Use the16 Hermitian two-qubit Pauli matrices P_mu, including I, with Tr(P_mu P_nu)=4 delta_mu,nu. For a Hermitian X, its real coefficients x_mu=Tr(P_mu X)/4 satisfy ||x||2=||X||F/2<=||X||op. Define the real coordinate map
+
+    G(a)=coeff[(U0*F(a)-F(a)*U0)/(2i)].
+
+Then G(a0)=0 and its real16-by16 Jacobian has columns
+
+    A_mu,j=Tr[P_mu(-i U0* partial_j F(a0))]/4.       (1)
+
+The expression is real because U0* partial_j F is skew-Hermitian. The center direction is included in the minor and scalar derivatives are not discarded.
+
+Each pulse has integrated derivative norm c=2 integral psi=16/15. Complete-unitary Duhamel formulas give ||partial_j F||<=c and ||partial_j partial_k F||<=c^2 for every selected pair, including j=k. For repeated derivatives in one pulse the two time orderings cancel the simplex factor1/2. Unitary factors before/after the pulse do not change these bounds. With m=16 selected parameters, the real-coordinate derivative obeys
+
+    ||DG(a)-DG(b)||2<= L ||a-b||2,  L=m c^2,        (2)
+
+on the box. Indeed the matrix second directional derivative is bounded by c^2||u||1||v||1<=m c^2||u||2||v||2, and taking the Hermitian part and normalized Pauli coordinates cannot increase that bound.
+
+Suppose an actual rational certificate gives sigma_min(A)>=s>0. Choose a positive rational
+
+    t<=min(1/8, s/(2L), 1/(4c sqrt(m))),
+    rho=s t/2,   0<r<=min(rho/2,1/8).              (3)
+
+Since sqrt(m)=4, all these constants can be rational. For ||y||2<=rho, the fixed-point map x -> A^{-1}[y-G(a0+x)+Ax] maps the radius-t ball to itself and has contraction at most Lt/s<=1/2: its image norm is at most t/2+Lt^2/(2s)<=3t/4. Thus G covers that real coordinate ball, with parameter displacement strictly inside the allowed box.
+
+Also ||F(a0+x)-U0||<=c sqrt(m)t<=1/4. Any target unitary V with ||V-U0||<r has ||G(V)||2<=r<rho and ||U0*V-I||<1/8. Both U0*F and U0*V then have positive definite real Hermitian part. A unitary with a given imaginary Hermitian part B and positive real Hermitian part is unique: unitarity implies [Re U,Im U]=0 and Re U=sqrt(I-B^2). Therefore equality of G coordinates implies F(a)=V. This proves the full-U(4) endpoint-ball inclusion once s is actually certified. It does not infer a radius from a floating determinant alone.
+
+## A rigorous finite enclosure route
+
+All nominal amplitudes, pulse polynomial coefficients, K and P are rational complex matrices. A candidate selector may use complex128, but the actual certificate should use directed rational or integer interval operations, with original executable source frozen before launch. No empirically chosen ODE tolerance is a theorem premise.
+
+Divide each unit pulse into8 steps of length h=1/8. On a step starting at x0 in[0,7/8], expand psi(x0+z)=sum_(k=0)^4 p_k z^k exactly. Uniform coefficient bounds are |p0|<=1, |p1|<=8, |p2|<=16, |p3|<=32 and |p4|=16. For the local unitary U and its amplitude derivative D use the8-by8 block ODE with generator
+
+    B(z)=[[ -i(K+aP psi), -iP psi ],[0,-i(K+aP psi) ]].
+
+Its fundamental block is [[U,D],[0,U]]. Taylor coefficients C_n obey C_0=I and
+
+    C_(n+1)=(1/(n+1)) sum_(k=0)^min(4,n) B_k C_(n-k).
+
+Equivalently compute coupled4-by4 U,D recurrences. With a<=1, ||B_k|| is bounded by coefficients of
+
+    b(z)=7+32z+64z^2+128z^3+64z^4.
+
+The positive majorant exp(integral_0^z b) bounds the norm of each Taylor coefficient. At R=1/4 its exponent is less than4. Truncation after degree N at h=R/2 therefore has operator-norm error at most
+
+    epsilon_step=81 / 2^(N+1),                    (4)
+
+because exp(4)<3^4=81 and the positive-coefficient tail at R/2 is bounded by2^(-N-1) times the whole sum at R. The full block, including the derivative, has this bound. Select N=80 before the enclosure run. Directed interval arithmetic encloses the exact truncated polynomial; (4) separately pays the analytic tail.
+
+For one selected amplitude, only its pulse has an off-diagonal derivative source. Any exact partial augmented propagator through the entire word has norm at most1+c<3, since its derivative norm is bounded by c and its two diagonal blocks are unitary. With at most n_steps=192 approximate steps, each error at most epsilon_step, exact/approximate telescoping gives
+
+    E_n <=3 epsilon_step sum_(k=0)^(n-1)(3+E_k)
+        <=9n epsilon_step exp(3n epsilon_step)
+        <=18n epsilon_step <=4096 epsilon_step.       (5)
+
+The second bound follows by the geometric recurrence; 3n epsilon_step<=1/2 is easily satisfied at N80. This applies to the word assembled from the computed local U,D blocks as well: inserting zero derivative blocks on other pulses gives the identical polynomial product. Let e=4096 epsilon_step. Both total U and each derivative D_j have operator error<=e. Since ||D_j||<=c and e<1, the approximate product -i U_approx* D_approx differs from (1)'s Hermitian matrix by at most e(c+e)+e<4e. Every normalized Pauli coefficient therefore has additional real uncertainty at most
+
+    e_A=4e=16384 epsilon_step.                     (6)
+
+Quantization/rounding intervals are additional enclosures already propagated in the arithmetic, never silently identified with (6). No claimed general validity of a floating SVD is needed.
+
+Freeze a rational approximate inverse R from the preliminary selector. Using interval entries for the actual A, certify an upper bound ||I-RA||F<=1/2, and a positive integer B>=||R||F. Sums of squared rational upper entry bounds suffice; no square-root oracle is needed. Then ||I-RA||2<=1/2 and
+
+    sigma_min(A)>=1/(2B).
+
+We may take the conservative rational s=1/(4B). The certificate must report its exact R, all selected indices and nominal amplitudes, polynomial order/step count, analytic error constants, residual/rounding enclosures and the final rational s,t,r. Failure of either residual or norm assertion is an actual failed route. Rechecking interval code and the analytic tail is a separate load-bearing obligation.
+
+## Uniform physical duration conditional on the certificate
+
+If the ball radius r is obtained, choose integer Q>16pi/r. Simultaneous phase pigeonhole approximation of the four eigenphases of U0 supplies some1<=n<=Q^4 with ||U0^n-I||<r/8. This is an existence argument using full phases, not an instruction to diagonalize at an equality boundary. A strict certified search through finite powers can find n with a certified bound<r/4. The emitted template F(a) followed by n-1 fixed U0 templates has fixed duration n tau0 and image containing every unitary within r/2 of I.
+
+Choose integer M>4pi/r. Any full U(4) target is a product of M equal unitary steps within r/4 of I, by existence of a Hermitian logarithm of norm<=pi. A discontinuous logarithm branch need not be computed: strict parameter-grid search with certified endpoint enclosures can find an approximation with any positive error, because all required preimages are interior and the map is continuous. The resulting uniform physical duration is T_*=Mn tau0, independent of target accuracy. For an actual-time-relative target choose T_* first and compile V exp(-iT_*K) at this same duration. There is no duration/target circularity.
+
+These bounds can be enormous. The certificate would establish a finite timing interface for this fixed two-qubit plant, not favorable practical cost or polynomial scaling in system size. Numerical/parameter search effort is separate. All actual pulse amplitudes stay in the box; small requested accuracy raises numerical/control precision without changing the declared finite word duration. A uniform generator defect needs integrated error over this actual T_*, including identity components. No nonzero fixed hardware error floor is assumed away by the mathematics.
+
+## Energy and scope
+
+This closed driven two-qubit model has no added quantum reservoir. Net modeled drive work is Tr K(rho_f-rho_i) at the same zero-control endpoints, so initial/final trace errors cost width(K)(delta_i+delta_f)/2. Nominal absolute drive variation is sum_j2a_j||P_j|| per template and is paid over every repeated template; at most72 for one24-pulse template on the[1/4,3/4] box. Full scalar phase, old incident load and physical action are retained. A post-off comparison evolves under the same K and is not a halt. The external controller, clock, waveform generator and their outputs are not microscopic degrees of freedom in this model. Native control emergence, autonomous release/halt and indefinite reuse remain open.
+
+Planned evidence: one bounded floating selector, then a distinct exact/directed enclosure calculation if warranted, followed by a separate analytical/code check. No result is certified before those actual processes and checks. Do not replay unrelated science, alter the physical plant/target to hide a failed minor, or treat many metadata checks as independent scientific validation.

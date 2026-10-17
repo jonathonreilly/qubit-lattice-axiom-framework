@@ -1,0 +1,40 @@
+{
+  "kind": "actual_commuting_static_edge_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "actual_git_base": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "bound_note_sha256": "6788f1d4bec485917038b7aa275b5a1659bacb1e39992034d4a7d287738414fd",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/057a27d1325bacb1e51291504b2d7c36e93c224d9c6190e749ac33b0dc10aef4.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/30049393e914747d108a77b2764b1da57b6e6103f5071f4a422f5b5a6268f758.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3d8d9063235ea59e159451c634c1d7bd111c48216de85f3d9c1240e58b1c85fa.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3faa52f729e44ce3e0668c773a550dc66515da0e150ef390ddea0c7156615bfa.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/49c6a3c04f3edcb71e2cfb02a103051956523b10b795fefd383968f598b7af2f.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4bc13bc5845f0fcb376f9166150ae5f54d61722a10ecb03fb155084c66d98e24.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4e70a4b282ba0ca601eaafa3d02b98ab7fc91a41e4f57b05dd6b47d0f3d6caf5.md",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5d932ed92a3fbfc50200ad336b603479e02040caf97a0a3f508b7795127e0b63.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5ff42f07df150ccc6dce92c340f2b2e723a9a87a4aee8295c228e51836d406ca.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/606d8ea1c341b569caf234fd6e3a06d9efc5f6d55b34242175460253c2eab5e5.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6141045278a5f642b3ba681e634fa0473739fab73f8540f0a811271e9580d4b7.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6c26489f58f1f8eefb7af1d1941b01c6f0f3502ce261665c3eef0c5baa9e95b9.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/8c734556a0ffab117468cbcc993cb95f61ad32bb0b1f123c4ea549fffa182d3b.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9c5ade251b972ef23fc66b79f56e83157a8e021f53e7cab93066720e5516f89c.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9cd569d7137c4410b3d7f4a998884e710eb16d0e1bbf357cd6c29f38ff2df567.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/a873e808effc9938fee1d61c9d06fbe0f8d5de25cd2b0661e4443afb77346936.md",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c0f7a24933d585f168b2e724911ef0707126a596daa7495c8db582c4e172fe40.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c3e413c72d02b7a0ca78f70e89cb298d4dfcaaeee5e83418092f82a201aac6d3.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/fcfa38c57b1bbc6b50e5f434fcb0a892c44fb02a7adae5bac3fd1fd0225b4c9c.json"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe.json",
+    "bytes": 46165,
+    "sha256": "86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe"
+  }
+}

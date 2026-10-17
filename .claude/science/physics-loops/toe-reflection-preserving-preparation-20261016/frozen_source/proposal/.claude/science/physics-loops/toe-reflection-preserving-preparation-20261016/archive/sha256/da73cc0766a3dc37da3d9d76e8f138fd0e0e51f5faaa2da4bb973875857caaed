@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Capture an actual final metadata validation and freeze this review packet."""
+from pathlib import Path
+import datetime,hashlib,json,platform,shutil,subprocess,sys
+OUT=Path(__file__).resolve().parent; RUN=OUT/'metadata_runs/final_validation'
+RUN.mkdir(parents=True,exist_ok=False)
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+source=OUT/'validate_packet.py';copy=RUN/'source_at_launch.py'
+shutil.copyfile(source,copy);shutil.copyfile(Path(__file__),RUN/'recorder_at_launch.py')
+argv=[sys.executable,'-c',"from pathlib import Path; import sys; p=Path(sys.argv[1]); exec(compile(p.read_bytes(),sys.argv[2],'exec'),{'__name__':'__main__','__file__':sys.argv[2]})",str(copy),str(source)]
+start=now();timed_out=False
+try:
+ p=subprocess.run(argv,cwd=OUT,capture_output=True,timeout=60)
+ code=p.returncode;stdout=p.stdout;stderr=p.stderr
+except subprocess.TimeoutExpired as e:
+ timed_out=True;code=None;stdout=e.stdout or b'';stderr=e.stderr or b''
+(RUN/'stdout').write_bytes(stdout);(RUN/'stderr').write_bytes(stderr)
+receipt={'kind':'final-source-identity-validation-only','start_utc':start,'end_utc':now(),
+ 'argv':argv,'cwd':str(OUT),'python':sys.version,'platform':platform.platform(),
+ 'wall_timeout_seconds':60,'timed_out':timed_out,'exit_code':code,
+ 'source_at_launch':ident(copy),'recorder_at_launch':ident(RUN/'recorder_at_launch.py'),
+ 'stdout':ident(RUN/'stdout'),'stderr':ident(RUN/'stderr'),'new_scientific_runs':0}
+(RUN/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+if code!=0:
+ print(json.dumps(receipt,indent=2));raise SystemExit(code or 1)
+ex=OUT/'EXPOSURE.md';body=ex.read_text()
+old='The next final metadata seal will refresh those identities and retain its own actual receipt.'
+new='Final metadata validation completed at '+receipt['end_utc']+', exit zero; its actual source/recorder/argv/cwd/streams and receipt are in `metadata_runs/final_validation/`.'
+assert old in body;ex.write_text(body.replace(old,new))
+result={'disposition':'QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT_RECOMMENDED_TO_ROOT',
+ 'proposal_sha256':'9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd',
+ 'blocking_defect_found':False,
+ 'qualifications':['Three-local filtered flips and distant matched simultaneous mirror controls are supplied.',
+  'Exact initialization and endpoint/clock model are material; generic faults retain width-dependent costs.',
+  'J-commuting comparison applies only after filling through spreading in the interaction picture.',
+  'Restricted norm-one angle error is not a full-space residual bound.',
+  'Higher-moment and phase precision remain paid; mean energy alone does not verify packet state.',
+  'New inventory is not silently bound to an accepted runtime.',
+  'Author floating fixture was inspected, not replayed; its endpoint is already a recurrence.'],
+ 'reviewer_scientific_executions':0,'existing_author_scientific_executions':1,
+ 'metadata':json.loads(stdout),'canonical_acceptance':None,'publication':None,'retained_audit':False,
+ 'editable_prompt_files_changed':[]}
+(OUT/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+(OUT/'CHECKPOINT.md').write_text('# Final checkpoint\n\nSealed '+now()+'.\n\n'
+ 'Read `REVIEW.md`: qualified conditional analytical support is recommended; root owns acceptance. No blocking algebraic defect found in proposal9e28d441. The stronger three-local matched-control contract, exact initialization/phase boundary, invariant-domain norm, positive reserves, full old/reference chronology, work/variance and actual load costs are explicit. Exact analytic mutants preserve the missing-phase, wrong-sign/normalization and unmatched-error risks.\n\n'
+ 'Author fixture code/receipt/full streams were inspected after saved analytical findings, not replayed. It is one floating M=6 calculation, with a recurrence endpoint that does not discriminate final phase. This reviewer ran zero science programs and two actual metadata processes, with complete recorded source/launcher/streams. Sixteen records from thirteen distinct original files are captured with exact identities. No parent, canonical, Git, audit, lock, prompt or axiom was changed. Preserve this freeze; put subsequent evidence or decisions in separate packets.\n')
+members=[]
+for p in sorted(OUT.rglob('*')):
+ if p.is_file() and p.name!='FREEZE.json':
+  assert not p.is_symlink()
+  row=ident(p);row['path']=str(p.relative_to(OUT));members.append(row)
+freeze={'schema':'exposed-review-freeze-v1','utc':now(),'root':str(OUT),
+ 'primary':'REVIEW.md','source_manifest':'SOURCE_MANIFEST.json','result':'RESULT.json',
+ 'status':'review recommendation only; root acceptance pending','reviewer_scientific_executions':0,
+ 'actual_metadata_executions':2,'members':members}
+(OUT/'FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+print(json.dumps({'frozen':True,'members':len(members),'review':ident(OUT/'REVIEW.md'),
+ 'manifest':ident(OUT/'SOURCE_MANIFEST.json'),'freeze':ident(OUT/'FREEZE.json'),
+ 'actual_metadata_result':result['metadata']},indent=2))

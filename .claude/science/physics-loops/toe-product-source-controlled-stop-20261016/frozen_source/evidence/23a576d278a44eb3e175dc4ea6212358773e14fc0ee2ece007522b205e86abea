@@ -1,0 +1,15 @@
+{
+  "members": [
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 5168,
+      "sha256": "a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 4506,
+      "sha256": "218ddfbed74e18f18dc30c8103a6a10acadb7a50daeb0d10dd0ee5f4e207ab9a"
+    }
+  ],
+  "scope": "Separate completed root stop/C1 acceptance and controlling qualification; publication remains separate."
+}

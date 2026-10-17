@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+"""Record a metadata-only child and then freeze its completed evidence."""
+import datetime as dt
+import hashlib
+import json
+import pathlib
+import shutil
+import subprocess
+import sys
+import time
+
+ROOT = pathlib.Path(__file__).resolve().parent
+
+
+def pin(path):
+    data = pathlib.Path(path).read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def write_json(path, value):
+    pathlib.Path(path).write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
+
+
+def main():
+    run = ROOT / "runs" / "metadata_inspection"
+    run.mkdir(parents=True, exist_ok=False)
+    script = ROOT / "inspect_sources.py"
+    launched_source = pin(script)
+    capture = run / "executed_source.py"
+    recorder = run / "recorder_source.py"
+    shutil.copyfile(script, capture)
+    shutil.copyfile(__file__, recorder)
+    argv = [sys.executable, str(script)]
+    started = dt.datetime.now(dt.timezone.utc).isoformat()
+    monotonic = time.monotonic()
+    with (run / "stdout").open("wb") as stdout, (run / "stderr").open("wb") as stderr:
+        completed = subprocess.run(argv, cwd=ROOT, stdout=stdout, stderr=stderr, check=False)
+    elapsed = time.monotonic() - monotonic
+    finished = dt.datetime.now(dt.timezone.utc).isoformat()
+    receipt = {
+        "purpose": "metadata-only source/exposure and prior-freeze inspection; no scientific execution",
+        "argv": argv,
+        "cwd": str(ROOT),
+        "started_at": started,
+        "completed_at": finished,
+        "elapsed_seconds": elapsed,
+        "exit_code": completed.returncode,
+        "child_source_at_launch": launched_source,
+        "source_capture": pin(capture),
+        "recorder_source": pin(recorder),
+        "stdout": pin(run / "stdout"),
+        "stderr": pin(run / "stderr"),
+        "child_source_unchanged": launched_source == pin(script),
+        "captured_source_matches": launched_source["sha256"] == pin(capture)["sha256"],
+    }
+    write_json(run / "EXECUTION.json", receipt)
+    if completed.returncode or not receipt["child_source_unchanged"] or not receipt["captured_source_matches"]:
+        raise SystemExit(completed.returncode or 1)
+    target = ROOT / "FINAL_FREEZE.json"
+    assert not target.exists(), "Never overwrite frozen review evidence"
+    members = []
+    for path in sorted(ROOT.rglob("*")):
+        if path.is_file():
+            row = pin(path)
+            row["path"] = str(path.relative_to(ROOT))
+            members.append(row)
+    write_json(target, {
+        "status": "Separate source-exposed analytic review with metadata evidence; no root approval, compiler execution or retained verdict",
+        "sealed_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "files": members,
+        "metadata_execution": pin(run / "EXECUTION.json"),
+    })
+    print(json.dumps({"freeze": pin(target), "members": len(members), "receipt": pin(run / "EXECUTION.json"), "review": pin(ROOT / "REVIEW.md")}, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

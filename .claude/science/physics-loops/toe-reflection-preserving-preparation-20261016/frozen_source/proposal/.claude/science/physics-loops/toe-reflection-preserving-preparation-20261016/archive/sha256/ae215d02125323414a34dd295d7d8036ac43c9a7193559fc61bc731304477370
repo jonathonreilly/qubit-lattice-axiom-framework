@@ -1,0 +1,15 @@
+# Analytical findings before author-fixture exposure
+
+Recorded after the clock reading 2026-10-16T18:30:56Z, before author-fixture exposure; exact metadata-launch time will be recorded separately. The complete root proposal 9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd was read before any author check code, receipt or streams. Parent preparation body and controlling qualifications were read from canonical 6db93809, together with the accepted ordered-angle proposal and qualifications for comparison.
+
+No blocking algebraic defect identified so far. Independently reconstructed:
+
+* J maps each prefix p_m to p_(M-m), maps B to M-B on the full space, and sends F_j to -F_(M+1-j).
+* G_0 has sqrt(2) matrix elements on the even quotient; later G_k have coefficient one. The minus sign makes both branches move outward with +i. The whole prefix span is invariant for each filtered F, and the restricted even support is invariant for every matched angle.
+* The two full identity reserves give 4pi I even on overlapping triples. Simultaneous identical envelopes implement the sum, not a product of the noncommuting center terms.
+* The full interaction-picture output is e^(-i lambda B) C_delta U_fill; the laboratory factor R_B(tau) cancels the final phase on the full battery. Old K factors unchanged. M=L+1 differs from the author's earlier M=L+2q runtime buffer; no runtime compatibility should be inferred.
+* Exact mean n and odd centered moments follow from J-even output, without closeness. Reverse hybrids have ideal earlier gates and actual suffix; their diagonal response is w_k(A_k-f(k)) times the change in sin^2. This gives the stated linear coefficient and eta^2 remainder. The first spreading angle contributes linearly.
+* Two overlapping driven terms at the center are paid. Carrier commutator norm is at most pi per local term; the stated h makes their summed derivative at most sigma/2. The absolute-work bound is safe, with unused headroom.
+* The symmetry-defect identity applies only from the state after filling through spreading in the global interaction picture. Filling and the final number phase do not commute with J. Exact/B-conserving subsequent phase preserves the mean; arbitrary residuals there need separate energy-transfer or endpoint-trace terms.
+
+Remaining review work: inspect the actual author-fixture source/launch/streams without replay; write the complete review, explicit quantitative requests and controlling fault/runtime qualifications; capture exact sources and freeze. No scientific computation has been executed by this reviewer.

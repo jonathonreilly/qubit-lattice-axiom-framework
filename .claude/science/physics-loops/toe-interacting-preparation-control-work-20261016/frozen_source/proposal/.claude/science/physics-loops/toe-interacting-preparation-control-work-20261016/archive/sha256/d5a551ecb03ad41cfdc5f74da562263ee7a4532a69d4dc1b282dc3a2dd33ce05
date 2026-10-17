@@ -1,0 +1,16 @@
+{
+  "kind": "root_unequal_gap_fixed_word_qualification_freeze",
+  "utc": "2026-10-16T16:31:16.832606+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2308,
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c"
+    }
+  ]
+}

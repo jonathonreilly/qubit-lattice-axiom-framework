@@ -1,0 +1,85 @@
+# Product-source hopping mediator — root proposal awaiting separate check
+
+This is a new conditional construction, not an accepted extension of the frozen Bell-source packet. It replaces the supplied entangled initial source by two independently prepared zero qubits, while supplying a different positive two-qubit source Hamiltonian. It retains literal old K, arbitrary old references, both source outputs and the full scalar phase. It does not derive the new couplings from microscopic axioms.
+
+## Model and phase target
+
+Old qubits1,2 have K=2I+Z1Z2 and W=((9+12i)I+(-16+12i)X1X2)/25. Source A,B lies on the opposite edge of the square. Write B=|00>, J0 psi=psi tensor B, theta=atan(4/3), and
+
+`j=2theta/pi`, `u=1/2`, `g=sqrt((pi^2-theta^2)/(pi T))`, `lambda=(pi-theta)/T`.
+
+Let `L=(XA XB+YA YB)/2`, acting as a swap on the one-excitation source space and zero on00,11. Supply
+
+`Hc=j(I-L)+u |11><11|`,
+
+`Hphys=K+Hc+g(I+X1XA)+g(I+X2XB)+lambda I_old`.
+
+Every displayed added block is positive. Both old/source ports are XX; there are no YY ports. The lambda identity may be represented by the two original positive complementary onsite rays, with their separate norm sum2lambda if counted separately. The complete microscopic permission for Hc and the ports remains supplied.
+
+The source spectrum of Hc is `j,0,2j,j+u` on00,Psi+,Psi−,11. Thus B is a known excited eigenstate, not a ground state; its source energy is j. Since 1/2<j<2/3 and j>u, the combined source-block norm is2j. If its two positive terms are counted separately, a conservative source incident load is `2j+u+2g`. Old added incident load is at most `2g+2lambda`. These are below2 for the runtime family below. The old norm-3 K remains an additional load. All coefficients are static and runtime slew is zero.
+
+The source-to-old embedding gap must be checked on the *full* Q complement. The u|11><11| term is essential: without it,11 is degenerate with00 and the second Sylvester step can be resonant. That failed simpler hopping route is preserved here; no gap is claimed for u=0.
+
+## Effective operator and exact scalar accounting
+
+For the proof subtract the uniform j from the unperturbed generator: `H0=K+Hc-jI`, `V=g(X1XA+X2XB)`, P=J0J0*, Q=I-P. Then H0J0=J0K, J0*VJ0=0, and ||V||=2g (the two port Paulis commute). All Q-to-P spectral differences belong to
+
+`±j`, `±j±2`, `u`, `u±2`.
+
+Their minimum absolute value is u=1/2. This uses j>1/2 and j<2/3; no globally-lowest-band assumption is made.
+
+VJ0 flips old ZZ parity and creates one source excitation. For an old ZZ eigenvalue z and XX eigenvalue x, its source excitation lies in the L eigenvalue x sector. The norm squared of VJ0 on every unit old input is2g^2: cross source overlaps vanish on00. The first Sylvester corrector therefore gives the exact second-order eigenvalue
+
+`h2(z,x)=-2g^2/(-jx-2z)=2g^2/(2z+jx)`.
+
+Equivalently,
+
+`H2=2g^2 (2ZZ-jXX)/(4-j^2)=(pi ZZ-theta XX)/T`.
+
+The first equality and its signs require a separate check; XX and ZZ commute, so the expression is Hermitian and commutes with K. The chosen extra positive old identity is purposeful phase control:
+
+`T(H2+lambda I)=pi ZZ-theta XX+(pi-theta)I`,
+
+`exp[-iT(H2+lambda I)]=exp(i theta) exp(i theta XX)=W`.
+
+Both minus signs exp(-i pi ZZ)=-I and exp(-i pi I)=-I are included. Lambda is not silently dropped into the source reserve. Without lambda, the endpoint is `exp[i(pi-theta)]W`, not the chosen full-phase W.
+
+For t=T+s the exact intended full comparator is
+
+`J0 exp[-i(j+2g)t] exp(-isK) W exp(-iTK)`.
+
+The scalar j is the prepared source eigenenergy and2g is the two positive port reserve. Lambda belongs to the explicitly generated old effective operation H2+lambda I. In the full physical Hamiltonian the total uniform contribution includes all three; the endpoint phase equality above accounts for lambda. No output is discarded or rephased without displaying the phase.
+
+## Residual proof and scalable ideal bound
+
+Use the same finite-dimensional Sylvester construction as in the checked Bell-source derivation, with gap delta0=1/2 and input dimension4. Define S1 in Q by `H0S1-S1K=-VJ0`, H2=J0*VS1, and S2 in Q by `H0S2-S2K=-QVS1`. With F=J0+S1+S2,
+
+`(H0+V)F-F(K+H2)=VS2-S1H2-S2H2`.
+
+The lambda identity cancels from both sides when added to both actual and comparison generators. Thus the same Duhamel proof, requiring no isometry property for F, gives
+
+`||actual_embedding - effective_embedding|| <= 2||F-J0||+t||residual||`.
+
+With v=2g<4/sqrt(T), the bounds are S1<=2v/delta0, S2<=2v^2/delta0^2, and residual<=6v^3/delta0^2+4v^4/delta0^3. For t<=2T their sum is bounded by
+
+`Rprod(T)=3104/sqrt(T)+16640/T`.
+
+The effective drift satisfies `||H2+lambda I||<=2pi/T<8/T`. Set integer m>=0, epsilon=2^-m, `T=2^(2m+32)`, and `w=epsilon T/256=2^(m+24)`. Then Rprod(T)<epsilon/16 (check3104/65536+16640/2^32<1/16), while8w/T=epsilon/32. Consequently the proposed full-isometry error is below3epsilon/32 and unhalved full joint trace error below3epsilon/16 throughout[T,T+w]. The comparison keeps actual old aging and is not a fixed-state plateau.
+
+The cap claim uses g<2/sqrt(T), lambda<4/T and j<2/3: the source sum is less than4/3+1/2+4/65536<2, and old added load is less than4/65536+8/2^32<2. Units remain explicit: physical time hbar*T/E0 for physical energies E0 times the displayed matrices.
+
+## Preliminary finite-coefficient route, not an executed compiler
+
+Let jhat,ghat,lambdahat be positive lower dyadic approximations with each error below2h, h=2^-p, p=3m+39; u=1/2 stays exact. The actual source phase in the comparator must be `exp[-i(jhat+2ghat)t]`. After subtracting those actual source/port scalars, the nonscalar-plus-purposeful-old-identity generator difference is
+
+`-(jhat-j)L+(ghat-g)(X1XA+X2XB)+(lambdahat-lambda)I`,
+
+of norm below8h. Its t<2T Duhamel cost is below16Th=epsilon/8. Combined with the ideal bound this gives below7epsilon/32 isometry and7epsilon/16 joint trace. Positivity of the source blocks is automatic for nonnegative jhat; port/lambda positivity must be certified by the finite interval compiler. Actual caps decrease under the specified lower replacements. This route uses the full-generator estimate and does not assume a tuned effective model survives rounding.
+
+Rational interval formulas from the already checked theta/pi enclosures can bound j=2theta/pi, g^2=(pi^2-theta^2)/(pi T), and lambda=(pi-theta)/T, followed by the equality-safe lower integer-square-root construction for g. This paragraph is an open finite-compilation obligation: no emitted coefficients, concrete interval-width proof or resource count for this new model is claimed yet.
+
+## Energy, initialization and reuse limits
+
+For an arbitrary initial old/reference density and independent source B, the proposed initial mean is Tr(rho K)+j+2g+lambda and variance Var_rho(K)+2g^2. Hc is sharp on B, the port first moment is zero, and J0*V^2J0=2g^2I. These complete-static-Hamiltonian moments are conserved; old K energy alone need not be. Source preparation now asks for two product zero states, not an entangled Bell input, but independent initialization, installation, physical couplings, calibration and timing remain real interfaces.
+
+If a full per-interval isometry bound is checked, the existing hybrid proof can apply to a prescribed finite number of source-retaining uses. No such statement supplies indefinite reuse, final halt/reset or autonomous interleaved operations. A marginal source error alone is still insufficient for a full joint initial error budget. No retained status, scientific execution, PR or microscopic supplier derivation is claimed by this proposal.

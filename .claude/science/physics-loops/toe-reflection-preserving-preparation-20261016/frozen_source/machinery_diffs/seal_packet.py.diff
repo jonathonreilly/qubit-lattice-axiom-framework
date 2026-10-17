@@ -1,0 +1,48 @@
+--- actual_interacting_source/seal_packet.py
++++ proposed_reflection_source/seal_packet.py
+@@ -3,7 +3,7 @@
+ from datetime import datetime,timezone
+ import hashlib,json,subprocess,sys,time
+ D=Path(sys.argv[-1]).resolve();P=D/'proposal'
+-PK='.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016'
++PK='.claude/science/physics-loops/toe-reflection-preserving-preparation-20261016'
+ def utc():return datetime.now(timezone.utc).isoformat()
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def pin(p):
+@@ -17,7 +17,7 @@
+  sources=json.loads((P/PK/'SOURCE_MANIFEST.json').read_text())['sources']
+  for row in sources:
+   same(Path(row['original_path']),row);same(P/row['recovery_path'],row)
+- maps=json.loads((P/PK/'BODY_MAP.json').read_text());note=P/'docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md';raw=note.read_bytes()
++ maps=json.loads((P/PK/'BODY_MAP.json').read_text());note=P/'docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md';raw=note.read_bytes()
+  assert raw[:maps['new_wrapper_bytes'][1]]==(D/'packet_text/WRAPPER.md').read_bytes()
+  for row in maps['bodies']:
+   body=raw[row['start_byte_inclusive']:row['end_byte_exclusive']]
+@@ -29,15 +29,16 @@
+   for k in ['child_source_at_launch','recorder_at_launch','input_identities_at_launch','stdout','stderr']:same(Path(r[k]['path']),r[k])
+   same(Path(r['original_source_at_launch']['path']),r['original_source_at_launch'])
+   assert (folder/'stderr').read_bytes()==b''
++  for row in json.loads(Path(r['input_identities_at_launch']['path']).read_text()):same(Path(row['path']),row)
+  template=(D/'primary_template.py').read_text()
+  generated=template.replace('__MANIFEST_SHA256__',sha((P/PK/'INPUT_MANIFEST.json').read_bytes())).replace('__AUDIT_INPUT_PATHS__',repr([r['path'] for r in manifest['inputs']]+[PK+'/INPUT_MANIFEST.json'])).replace('__EXPECTED_BODIES__',repr({r['name']:r['sha256'] for r in maps['bodies']}))
+- primary=P/'scripts/interacting_preparation_control_work_2026_10_16.py';assert primary.read_bytes()==generated.encode()
++ primary=P/'scripts/reflection_preserving_preparation_2026_10_16.py';assert primary.read_bytes()==generated.encode()
+  result=json.loads((D/'VERIFICATION.json').read_text());assert result==json.loads((D/'metadata_runs/inspection/stdout').read_text())
+- assert result['mathematics_tested_by_this_execution'] is False and len(result['scoped_metadata_mutants'])==7 and all(x['rejected'] for x in result['scoped_metadata_mutants'])
++ assert result['mathematics_tested_by_this_execution'] is False and len(result['scoped_metadata_mutants'])==9 and all(x['rejected'] for x in result['scoped_metadata_mutants'])
+  reuse=json.loads((D/'REUSE_AND_READ_MAP.json').read_text())
+  for row in reuse['exact_function_comparison']:
+   assert sha((D/row['name']).read_bytes())==row['new_sha256'] and sha(Path(row['template']).read_bytes())==row['template_sha256']
+- out=dict(utc=utc(),kind='final_source_metadata_validation_only',input_files=len(manifest['inputs']),source_aliases=len(sources),unchanged_bodies=len(maps['bodies']),metadata_receipts_verified=['build','inspection'],scoped_refusals=7,current_original_sources_match=True,generated_primary_matches_template=True,scientific_executions=0,source_wrapper_review=None,canonical_integration=None)
++ out=dict(utc=utc(),kind='final_source_metadata_validation_only',input_files=len(manifest['inputs']),source_aliases=len(sources),unchanged_bodies=len(maps['bodies']),metadata_receipts_verified=['build','inspection'],scoped_refusals=9,current_original_sources_match=True,generated_primary_matches_template=True,scientific_executions=0,source_wrapper_review=None,canonical_integration=None)
+  dump(D/'SEAL_VERIFICATION.json',out);print(json.dumps(out,indent=2))
+ if '--validate' in sys.argv:
+  validate();raise SystemExit(0)
+@@ -55,6 +56,6 @@
+ dump(run/'EXECUTION.json',receipt)
+ assert code==0 and not timeout and receipt['source_unchanged_after'],receipt
+ members=[dict(path=str(p.relative_to(D)),bytes=p.stat().st_size,sha256=sha(p.read_bytes())) for p in sorted(D.rglob('*')) if p.is_file() and p!=D/'FREEZE.json']
+-freeze=dict(kind='source_only_interacting_preparation_control_work_publication_draft',frozen_utc=utc(),member_count=len(members),scientific_programs_run=0,scientific_replays=0,source_wrapper_review=None,source_publication=None,current_base=None,canonical_integration=None,canonical_review=None,primary_execution=None,publication=None,retained_audit=None,editable_prompt_files_changed=[],members=members)
++freeze=dict(kind='source_only_reflection_preserving_preparation_publication_draft',frozen_utc=utc(),member_count=len(members),scientific_programs_run=0,scientific_replays=0,source_wrapper_review=None,source_publication=None,current_base=None,canonical_integration=None,canonical_review=None,primary_execution=None,publication=None,retained_audit=None,editable_prompt_files_changed=[],members=members)
+ dump(D/'FREEZE.json',freeze)
+ print(json.dumps(dict(freeze=pin(D/'FREEZE.json'),members=len(members),metadata_exit_code=code,scientific_executions=0),indent=2))

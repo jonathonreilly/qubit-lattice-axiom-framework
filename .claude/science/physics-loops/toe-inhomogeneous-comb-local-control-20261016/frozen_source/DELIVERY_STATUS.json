@@ -1,0 +1,16 @@
+{
+  "kind": "source_only_publication_draft",
+  "canonical_source": null,
+  "canonical_integration": null,
+  "source_wrapper_review": null,
+  "current_git_base": null,
+  "canonical_review": null,
+  "primary_canonical_execution": null,
+  "pull_request": null,
+  "publication": null,
+  "retained_audit": null,
+  "scientific_executions_this_draft": 0,
+  "scientific_replays": 0,
+  "editable_prompt_files_changed": [],
+  "pending_parent_binding": "qualified sparse compiler canonical source and actual claim identifier"
+}

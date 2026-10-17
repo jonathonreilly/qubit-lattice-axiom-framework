@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+"""Metadata-only source capture and exact prior-review identity validation."""
+import hashlib
+import json
+import pathlib
+import shutil
+
+ROOT = pathlib.Path(__file__).resolve().parent
+SOURCE = ROOT.parent / "weak_mediator_candidate" / "FINITE_COMPILER_ADDENDUM.md"
+PRIOR = ROOT.parent / "weak_mediator_exposed_check"
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def main():
+    source = pin(SOURCE)
+    assert source["sha256"] == "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8"
+    prior_freeze = pin(PRIOR / "FINAL_FREEZE.json")
+    assert prior_freeze["sha256"] == "ef8dce286398c515be38142b54917e2b82d8ea3363709f78f37e70f11a71511c"
+    frozen = json.loads((PRIOR / "FINAL_FREEZE.json").read_text())
+    assert len(frozen["files"]) == 23
+    expected_paths = {row["path"] for row in frozen["files"]}
+    actual_paths = {str(p.relative_to(PRIOR)) for p in PRIOR.rglob("*") if p.is_file() and p != PRIOR / "FINAL_FREEZE.json"}
+    assert expected_paths == actual_paths
+    for row in frozen["files"]:
+        actual = pin(PRIOR / row["path"])
+        assert actual["sha256"] == row["sha256"]
+        assert actual["bytes"] == row["bytes"]
+    prior_reviews = [pin(PRIOR / name) for name in ("REVIEW.md", "ADDENDUM_REVIEW.md", "ORIGINAL_REVIEW_FREEZE.json")]
+    assert prior_reviews[0]["sha256"] == "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b"
+    assert prior_reviews[1]["sha256"] == "1c6381a591322773e27917734af034aeec39bb48c82aed3ce377f673b8068ac2"
+    assert prior_reviews[2]["sha256"] == "42def22e10aa3e120a3bdf0ae4e2d7d8b8bc151f240543cfcb5ee82d18b34192"
+    copies = ROOT / "sources"
+    copies.mkdir(exist_ok=False)
+    captured = copies / SOURCE.name
+    shutil.copyfile(SOURCE, captured)
+    assert pin(captured)["sha256"] == source["sha256"]
+    result = {
+        "scope": "Separate source-exposed analytic finite-compiler review; no compiler or physics execution",
+        "original_source": source,
+        "source_copy": pin(captured),
+        "review": pin(ROOT / "REVIEW.md"),
+        "prior_review_final_freeze": prior_freeze,
+        "prior_review_selected_dependencies": prior_reviews,
+        "prior_review_verified_members": len(frozen["files"]),
+        "prior_archive_copied": False,
+        "exposure": "Complete root finite-compiler addendum read after the prior review packet was sealed; this reviewer had previously proposed the lower-endpoint strategy and extra scaling bit",
+        "scientific_execution": False,
+        "coefficient_computation": False,
+        "blind_review": False,
+        "root_approval": None,
+        "retained_audit_verdict": None,
+        "metadata_controls": [
+            "source SHA256 equals supplied pin",
+            "new source copy is byte-identical",
+            "prior final freeze SHA256 unchanged",
+            "prior frozen membership remains exact",
+            "all 23 prior frozen byte counts and hashes match",
+            "selected original and addendum review pins unchanged",
+        ],
+    }
+    (ROOT / "SOURCE_EXPOSURE.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(result, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

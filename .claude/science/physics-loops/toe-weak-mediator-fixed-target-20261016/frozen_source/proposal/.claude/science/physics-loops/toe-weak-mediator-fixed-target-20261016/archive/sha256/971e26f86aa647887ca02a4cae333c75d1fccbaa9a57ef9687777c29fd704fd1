@@ -1,0 +1,65 @@
+{"holds": true, "name": "fixed source parameters", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "fixed family identities", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "exact square runtime and observation endpoint", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive ordered atan interval 5", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive ordered atan interval 239", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive ordered atan interval 7", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "Machin interval rational guards", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "angle interval rational guards", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "pi and theta width guards", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive Delta interval guards", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive radicand intervals", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "derived interval width guards", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "root interval width sufficient guard", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "exact final quotient 1", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gx integer isqrt certificate", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gx exact lower endpoint square bracket", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gx strict upper endpoint two-step square guard", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gx positive numerator", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "exact final quotient 2", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gy integer isqrt certificate", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gy exact lower endpoint square bracket", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gy strict upper endpoint two-step square guard", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "gy positive numerator", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "exact final quotient 3", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "Delta strict upper endpoint two-step guard", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "Delta positive lower approximation", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "actual lower dyadic added incident caps", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "coefficient description bit bounds", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "ideal conditional analytic error allowance", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "rounded coefficient Duhamel allowance", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "total conditional full isometry and trace allowances", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "positive margin sufficient comparison", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "fixed mathematical operation counts", "scenario": "uniform_grid_p171_n179_window24"}
+{"holds": true, "name": "fixed mixed-grid scenario", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "fixed mixed-grid family identities", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid two-step errors match allowed bounds", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "longer actual window identity", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "positive ordered atan interval 5", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "positive ordered atan interval 239", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "positive ordered atan interval 7", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid Machin and angle guards", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid initial widths", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid positive interval guards", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid derived width guards", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid root and source width sufficient guards", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "exact final quotient 4", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gx integer isqrt certificate", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gx exact lower endpoint square bracket", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gx strict upper endpoint two-step square guard", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gx positive numerator", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "exact final quotient 5", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gy integer isqrt certificate", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gy exact lower endpoint square bracket", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gy strict upper endpoint two-step square guard", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "gy positive numerator", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "exact final quotient 6", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid Delta two-step upper guard", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "actual source gap domain after coarse rounding", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "mixed-grid actual positivity and added incident caps", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "separate coefficient encoding bounds", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "structured phase allowance arithmetic", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "structured residual and quiet allowances", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "structured full isometry and trace allowances", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"holds": true, "name": "both fixed scenario operation counts", "scenario": "structured_grid_pg117_pD58_n125_window2pow68"}
+{"completed": true, "report": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_proposal/runs/compiler_001/output/REPORT.json", "statistics": {"final_rounding_quotients": 6, "first_omitted_terms": 6, "guarded_integer_operations": 6111, "isqrt_calls": 4, "max_integer_bits": 20857, "max_rational_denominator_bits": 14105, "max_rational_numerator_bits": 13145, "rational_additions": 967, "rational_comparisons": 79, "rational_divisions": 30, "rational_multiplications": 39, "summed_terms": 912}}

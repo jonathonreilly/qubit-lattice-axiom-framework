@@ -1,0 +1,83 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T19:30:24.744756+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/FINAL_FREEZE.json",
+    "bytes": 90117,
+    "sha256": "735041bb46ddf510b3971985485951d70891c924218cbca5cd6477c7ab8e6218"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/preparation_angle_moment_common.py",
+    "bytes": 61464,
+    "sha256": "243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/proposed_primary_unbound.py",
+    "bytes": 33318,
+    "sha256": "942d1e8ebe16cf5bbdb9f8fda074d10f528331539c25c162e79823d7c7826dd4"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.json",
+    "bytes": 3737,
+    "sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2865,
+    "sha256": "f5760588f11e1e70a413304d730f30bc66095714a296c5276e50a0961f6c6913"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2397,
+      "sha256": "94820ffee8e492191d9bad2a3b8d8708bea31238d3102ccb937ebea4bad4941d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2414,
+      "sha256": "002721fda0a4c7894d19f197dda907875c43b0e3dfebb389321d4799c04bb7fc"
+    }
+  ],
+  "local_members": 429,
+  "immutable_bodies": 3,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    }
+  ],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_preparation_publication_source_review.py",
+    "angle"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "recovery_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/recovery/RECOVERY_RESULT.json",
+    "bytes": 1529,
+    "sha256": "29ff8a62d52dde1fe3408cb23d9926e756746d90c7c22806795972c3d318796f"
+  },
+  "recovery_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/recovery/ROOT_RECOVERY_REVIEW.json",
+    "bytes": 2240,
+    "sha256": "55fe577ad8517b97ce4f39d4a97546b00a5e8d9609565f95826cd9279d5827f0"
+  },
+  "recovery_actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_runner_recovery/EXECUTION.json",
+      "bytes": 1716,
+      "sha256": "b06566443f60e85b8eb96b28ff051d25da206381103cc62fd0ba436674663223"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_runner_recovery_v2/EXECUTION.json",
+      "bytes": 1729,
+      "sha256": "93e003c83b5d450f90b7e2ed1fde2c71fa53cc018fc0dd728c00e76084f97855"
+    }
+  ],
+  "scope": "Complete changed common/guards/parser and build/validate/record/seal code, narrow note/interval/recovery/PR prose and both actual metadata streams reviewed. Original primary, three mathematical bodies and sole preparation parent unchanged. Old graph action failed despite graph builder exit0, all old evidence preserved. Exact152 owned files backed up and removed, baseline graph restored by byte identity, failed branch retained. First root recovery record stopped before mutations on an overly broad unchanged-PR assertion; distinct v2 included the fully read failure-disclosure paragraph and completed recovery. Fresh regular OPEN9649 base and source/authority refs observed. No scientific replay, new proof acceptance, future canonical success or retained status asserted."
+}

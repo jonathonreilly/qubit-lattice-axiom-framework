@@ -1,0 +1,217 @@
+{
+  "utc": "2026-10-16T15:58:34.838744+00:00",
+  "kind": "metadata_only_explicit_source_capture",
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "capture": "sources/local_control/body.md",
+      "bytes": 31922,
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60",
+      "read_coverage": "Complete prior source read and reviewed; unchanged identity reused."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/local_control/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5279,
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509",
+      "read_coverage": "Complete current decision read; conditional status only."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/local_control/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "read_coverage": "Complete current controlling qualifications read."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "capture": "sources/sparse/body.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "read_coverage": "Complete prior source read and reviewed; unchanged proofs reused with new CZ gate count derived separately."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/FREEZE.json",
+      "capture": "sources/sparse/FREEZE.json",
+      "bytes": 3916,
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9",
+      "read_coverage": "Identity record; its whole member closure is not recopied by this script."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/sparse/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3678,
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "read_coverage": "Complete current decision read; exact full SHA captured here."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/sparse/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "read_coverage": "Complete current controlling qualifications read."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "capture": "sources/sine_preparation/body.md",
+      "bytes": 15499,
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "read_coverage": "Complete eight-section mathematical source read in this task; exact q=1 application per rail."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/FINAL_FREEZE.json",
+      "capture": "sources/sine_preparation/FINAL_FREEZE.json",
+      "bytes": 2349,
+      "sha256": "928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108",
+      "read_coverage": "Identity record; no historical scientific run replay or complete archive recapture."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/sine_preparation/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4509,
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "read_coverage": "Complete current decision read; exact full SHA captured here."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "capture": "sources/sine_preparation/FINAL_QUALIFICATIONS.md",
+      "bytes": 8398,
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "read_coverage": "Complete current controlling qualifications read."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+      "capture": "sources/prior_exposure/sparse_REVIEW.md",
+      "bytes": 25079,
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "read_coverage": "Own prior exposed analytical review; identity and coverage reused."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/FREEZE.json",
+      "capture": "sources/prior_exposure/sparse_FREEZE.json",
+      "bytes": 6731,
+      "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9",
+      "read_coverage": "Own prior review identity; no new independent evidence."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "capture": "sources/scope/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md",
+      "bytes": 48394,
+      "sha256": "2e8ec4a860739a5edfc1cae9817a1bef5e074a7059794bfb78a203b5aa343576",
+      "read_coverage": "Scope screen: lines 1-171, complete current wrapper; full reproduced proof and primary papers not imported or revalidated."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "capture": "sources/scope/INTERACTING_CONTROLLER_HISTORY_APPLICATION.md",
+      "bytes": 46778,
+      "sha256": "241e2b2cecbe991767e57ae65b8783e313b8b75df4e8803a2f9da30bcfc6e831",
+      "read_coverage": "Scope screen: lines 1-77 complete current wrapper. Some following enlarged-source text was exposed, but no complete imported controller proof is used."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "capture": "sources/instructions/AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "capture": "sources/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "bytes": 13419,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "capture": "sources/instructions/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/axiom_premise_nodes.json",
+      "capture": "sources/instructions/docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_coverage": "Current local instruction snapshot read; parent assigned bounded worker scope overrides generic campaign mutation/landing procedures. No Git refresh or complete campaign intake performed."
+    }
+  ],
+  "skill_identity_checks": [
+    {
+      "skill": "physics-loop",
+      "installed_matches_local_repository_source": true,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "skill": "workhorse",
+      "installed_matches_local_repository_source": true,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    }
+  ],
+  "scope_screens": [
+    {
+      "full_capture": "sources/scope/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md",
+      "screen_capture": "ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_SCREEN.txt",
+      "one_based_lines": [
+        1,
+        171
+      ],
+      "screen_sha256": "0e46e9ab2d4f890a9d830d7d92546700d8c2f0436a8c41dc5cf1be0eed1baad7"
+    },
+    {
+      "full_capture": "sources/scope/INTERACTING_CONTROLLER_HISTORY_APPLICATION.md",
+      "screen_capture": "INTERACTING_CONTROLLER_HISTORY_APPLICATION_SCREEN.txt",
+      "one_based_lines": [
+        1,
+        77
+      ],
+      "screen_sha256": "0f0bfd346a505b0898c4598c2f808f133215ab47e0df4d8895a835a80210227b"
+    }
+  ],
+  "scientific_programs_executed": 0,
+  "concurrent_root_inhomogeneous_source_read": false,
+  "other_new_worker_results_read": false,
+  "scope_limit": "Bounded parent-authorized source task; no Git/main refresh or broad PR/novelty sweep. Exact local source bytes are the identity authority for these screens, not a claimed exhaustive repository result."
+}

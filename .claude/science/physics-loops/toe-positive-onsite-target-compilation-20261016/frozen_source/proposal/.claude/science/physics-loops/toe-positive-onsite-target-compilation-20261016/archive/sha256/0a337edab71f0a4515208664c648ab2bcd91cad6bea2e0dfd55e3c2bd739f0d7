@@ -1,0 +1,7 @@
+# Checker preparation checkpoint
+
+Root authorized preparing one independent Fraction saved-evidence checker, not running it. Initial analytical freeze f5c4bd4b and source-review freeze 6f972529 are unchanged. Candidate source 52e53faf/prelaunch f453d826 was already fully reviewed; no target_001 output or successful residual details were inspected while writing this checker.
+
+Source is complete. It reconstructs exact phase, 32 endpoint products of 24 saved slots, y/G pads, 32 calibration steps, final block/M-power/residual and full scalar/time/resources. No local Taylor/ODE, nominal endpoint or n-power replay, author import or adaptive retry. Fixed180-second recorder and unbound input template are included. Source-only syntax/inventory/freeze follows; no checker execution has occurred.
+
+Pending: root full source/scope review; immutable author bundle and actual input binding; then a separate explicit root GO before any run. Any failed author/check attempt must remain visible. No parent/canonical/Git/PR/audit/cache/graph/lock/prompt/axiom change or model override.

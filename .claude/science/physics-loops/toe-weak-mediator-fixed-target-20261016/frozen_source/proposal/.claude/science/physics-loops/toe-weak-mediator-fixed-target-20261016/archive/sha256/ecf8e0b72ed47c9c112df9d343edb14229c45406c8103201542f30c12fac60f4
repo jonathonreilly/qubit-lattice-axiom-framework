@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "bytes": 1175,
+      "path": "README.md",
+      "sha256": "63c7d3ef1c795bce0d55dc5f0955d79d285bc759f6d92364c6a99e836ec35248"
+    },
+    {
+      "bytes": 13549,
+      "path": "REVIEW.md",
+      "sha256": "45332a1c97e4709f848afea4dc887b624889bcc90ba77d970f3a5e1e29f173cc"
+    },
+    {
+      "bytes": 2854,
+      "path": "SOURCE_EXPOSURE.json",
+      "sha256": "de56dda422b41bc89a12f5ca552ea53c6c9588692dc399f54e518fdde2d6371d"
+    },
+    {
+      "bytes": 3032,
+      "path": "capture_metadata.py",
+      "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+    },
+    {
+      "bytes": 3315,
+      "path": "inspect_sources.py",
+      "sha256": "44ea2da77c117bce23bf689b5e06efc0057b522f0420bb9c138f036829a9e0df"
+    },
+    {
+      "bytes": 2245,
+      "path": "runs/metadata_inspection/EXECUTION.json",
+      "sha256": "cafcaf615a78b4727f89eb7f37dd3df4c12dceef74a9bb925d87f5c61f358a68"
+    },
+    {
+      "bytes": 3315,
+      "path": "runs/metadata_inspection/executed_source.py",
+      "sha256": "44ea2da77c117bce23bf689b5e06efc0057b522f0420bb9c138f036829a9e0df"
+    },
+    {
+      "bytes": 3032,
+      "path": "runs/metadata_inspection/recorder_source.py",
+      "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/metadata_inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2642,
+      "path": "runs/metadata_inspection/stdout",
+      "sha256": "528fdb696f239a18e58d089f7c6435ea9cba5ecd3320c2a79d985d319b28c327"
+    },
+    {
+      "bytes": 4295,
+      "path": "sources/FINITE_COMPILER_ADDENDUM.md",
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8"
+    }
+  ],
+  "metadata_execution": {
+    "bytes": 2245,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection/EXECUTION.json",
+    "sha256": "cafcaf615a78b4727f89eb7f37dd3df4c12dceef74a9bb925d87f5c61f358a68"
+  },
+  "sealed_at": "2026-10-16T21:05:10.526983+00:00",
+  "status": "Separate source-exposed analytic review with metadata evidence; no root approval, compiler execution or retained verdict"
+}

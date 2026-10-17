@@ -1,0 +1,16 @@
+{
+  "kind": "source_packet_byte_seal_only",
+  "argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "seal_packet.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft",
+  "started_utc": "2026-10-16T17:09:48.157533+00:00",
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/executed_source.py",
+    "bytes": 4530,
+    "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308"
+  },
+  "scientific_programs_run": 0
+}

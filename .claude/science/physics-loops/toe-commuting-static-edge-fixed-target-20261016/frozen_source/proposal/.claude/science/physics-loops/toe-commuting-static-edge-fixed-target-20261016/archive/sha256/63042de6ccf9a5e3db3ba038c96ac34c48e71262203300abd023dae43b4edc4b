@@ -1,0 +1,20 @@
+{
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/FREEZE.json",
+    "bytes": 1474,
+    "sha256": "66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce"
+  },
+  "members": 7,
+  "analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/ANALYSIS.md",
+    "bytes": 17938,
+    "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/SOURCE_MANIFEST.json",
+    "bytes": 1722,
+    "sha256": "61a428f8460e74aaa17ac3e565ccd4b163150c969913de7869e375364d053b99"
+  },
+  "scientific_executions": 0,
+  "new_author_candidate_read": false
+}

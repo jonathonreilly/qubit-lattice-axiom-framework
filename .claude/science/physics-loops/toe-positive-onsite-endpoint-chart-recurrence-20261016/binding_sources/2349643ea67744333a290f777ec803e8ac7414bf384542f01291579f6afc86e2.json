@@ -1,0 +1,689 @@
+{
+  "kind": "root_canonical_source_review",
+  "utc": "2026-10-16T20:08:44.345441+00:00",
+  "root_read_complete": true,
+  "git_base": "9d5cd6d2fe59cd95d226e97e3ae818112256c32f",
+  "bound_note_sha256": "ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8",
+  "canonical_body_pins": [
+    {
+      "name": "chart_original_derivation",
+      "source": "endpoint_chart_certificate_candidate/DERIVATION.md",
+      "start_byte": 5698,
+      "end_byte_exclusive": 27204,
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "name": "chart_pre_enclosure_reconstruction",
+      "source": "endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+      "start_byte": 27278,
+      "end_byte_exclusive": 42526,
+      "bytes": 15248,
+      "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+    },
+    {
+      "name": "chart_exposed_review",
+      "source": "endpoint_chart_exposed_check/REVIEW.md",
+      "start_byte": 42586,
+      "end_byte_exclusive": 46974,
+      "bytes": 4388,
+      "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+    },
+    {
+      "name": "chart_complete_code_review",
+      "source": "endpoint_chart_exposed_check/CODE_REVIEW.md",
+      "start_byte": 47040,
+      "end_byte_exclusive": 60959,
+      "bytes": 13919,
+      "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+    },
+    {
+      "name": "chart_controlling_root_qualifications",
+      "source": "endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 61036,
+      "end_byte_exclusive": 67469,
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "name": "recurrence_original_derivation",
+      "source": "endpoint_recurrence_candidate/DERIVATION.md",
+      "start_byte": 67539,
+      "end_byte_exclusive": 85259,
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    },
+    {
+      "name": "recurrence_exposed_review",
+      "source": "endpoint_recurrence_exposed_check/REVIEW.md",
+      "start_byte": 85324,
+      "end_byte_exclusive": 89455,
+      "bytes": 4131,
+      "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+    },
+    {
+      "name": "recurrence_complete_analytic_code_review",
+      "source": "endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md",
+      "start_byte": 89535,
+      "end_byte_exclusive": 106615,
+      "bytes": 17080,
+      "sha256": "5081d935a4d62c855adbb8c2b8060d16a613234e592288347f8441730acc742d"
+    },
+    {
+      "name": "recurrence_controlling_root_qualifications",
+      "source": "endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 106697,
+      "end_byte_exclusive": 112789,
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "Self-contained chart and recurrence in one note. No direct canonical mathematical parent; exactly one new root and zero new edges."
+  },
+  "source_draft_freeze_sha256": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326",
+  "source_draft_review_sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c",
+  "prebinding_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py",
+    "bytes": 116427,
+    "sha256": "d81a844d7b94b227197bf8e5056576b9e14837ae101554cbb31e7f2d91b40432"
+  },
+  "integration_common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/endpoint_chart_recurrence_common.py",
+    "bytes": 62970,
+    "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+  },
+  "prepared": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/PREPARED.json",
+    "bytes": 200787,
+    "sha256": "402ed6a900740f3860ca043f4f6893af1a13c723ff800adcf02b2b93c49fc466"
+  },
+  "installed": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/INSTALLED.json",
+    "bytes": 199696,
+    "sha256": "a1ddcd065538577e82beaa0d0fb0763f1d3964eae0ba3fe18548105ccb1e19bc"
+  },
+  "root_diff_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ROOT_DIFF_REVIEW.json",
+    "bytes": 38078,
+    "sha256": "036023e2dc67b09ff758bf7480757a98c85c45008e5d556700c76183c6726083"
+  },
+  "canonical_file_count": 274,
+  "root_diff_review_payload": {
+    "kind": "root_prepared_diff_review",
+    "utc": "2026-10-16T20:08:09.664095+00:00",
+    "diff": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/CANONICALIZATION.diff",
+      "bytes": 802001,
+      "sha256": "b3e6d1efc42d0c8bf4e177c934e830aaadd3f88ccd6901f13de83c8c9dfc8aa1"
+    },
+    "canonical_files": 274,
+    "unchanged_bodies": 9,
+    "primary_changed_literal_assignments": [
+      "AUDIT_INPUT_PATHS",
+      "MANIFEST_SHA256",
+      "EXPECTED_GIT_BASE",
+      "EXPECTED_BASE_PR",
+      "EXPECTED_BASE_BRANCH",
+      "EXPECTED_BASE_PARENT_BRANCH",
+      "EXPECTED_ROOT_REVIEW_SHA",
+      "EXPECTED_ROOT_REVIEW_COMMAND",
+      "EXPECTED_ROOT_EXECUTION_SHA",
+      "EXPECTED_ROOT_RECORDER_SHA"
+    ],
+    "binding_copies": [
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/67847488129185fdbc0fa0f4c71e52f8c8ea157851ff4427ac089f79c7a715fb.blob",
+          "bytes": 175,
+          "sha256": "67847488129185fdbc0fa0f4c71e52f8c8ea157851ff4427ac089f79c7a715fb"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_2005/stderr",
+          "bytes": 175,
+          "sha256": "67847488129185fdbc0fa0f4c71e52f8c8ea157851ff4427ac089f79c7a715fb"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd.json",
+          "bytes": 1625,
+          "sha256": "f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_local_base/EXECUTION.json",
+          "bytes": 1625,
+          "sha256": "f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9.json",
+          "bytes": 1780,
+          "sha256": "5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_publication_source_review/EXECUTION.json",
+          "bytes": 1780,
+          "sha256": "5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19.json",
+          "bytes": 1779,
+          "sha256": "fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_parent_base/EXECUTION.json",
+          "bytes": 1779,
+          "sha256": "fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e8e8fae6a936626caf14911ddf3984cb3a8bdc0f86a9a529987a7731523cf0fb.json",
+          "bytes": 1437,
+          "sha256": "e8e8fae6a936626caf14911ddf3984cb3a8bdc0f86a9a529987a7731523cf0fb"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_head/EXECUTION.json",
+          "bytes": 1437,
+          "sha256": "e8e8fae6a936626caf14911ddf3984cb3a8bdc0f86a9a529987a7731523cf0fb"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178.blob",
+          "bytes": 579,
+          "sha256": "b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_publication_source_review/stdout",
+          "bytes": 579,
+          "sha256": "b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/cffe03775c9c7767efe75e160bfe8604623074b796ec2a2249e6f11fc4928721.json",
+          "bytes": 2876,
+          "sha256": "cffe03775c9c7767efe75e160bfe8604623074b796ec2a2249e6f11fc4928721"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ACTUAL_BASE_BINDING_INPUT.json",
+          "bytes": 2876,
+          "sha256": "cffe03775c9c7767efe75e160bfe8604623074b796ec2a2249e6f11fc4928721"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9daad36e4bfdb9165439c78199a32de08a86e4759695b75f01777f5788a6bd08.json",
+          "bytes": 1449,
+          "sha256": "9daad36e4bfdb9165439c78199a32de08a86e4759695b75f01777f5788a6bd08"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_branch/EXECUTION.json",
+          "bytes": 1449,
+          "sha256": "9daad36e4bfdb9165439c78199a32de08a86e4759695b75f01777f5788a6bd08"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/0358e563f26554f0bb18b6a0cf045e2208b3e2a81419d5abe22598bed94d1128.json",
+          "bytes": 1633,
+          "sha256": "0358e563f26554f0bb18b6a0cf045e2208b3e2a81419d5abe22598bed94d1128"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/PUBLICATION.json",
+          "bytes": 1633,
+          "sha256": "0358e563f26554f0bb18b6a0cf045e2208b3e2a81419d5abe22598bed94d1128"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/a8523d02c3bda22fe2ba2bb495b561aa9549196d40361da47832fba0aae4e19f.blob",
+          "bytes": 41,
+          "sha256": "a8523d02c3bda22fe2ba2bb495b561aa9549196d40361da47832fba0aae4e19f"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_tree/stdout",
+          "bytes": 41,
+          "sha256": "a8523d02c3bda22fe2ba2bb495b561aa9549196d40361da47832fba0aae4e19f"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/d546d6eca0dc6a66ef60d1d5dbc45fe3fbe891b9bcb13563cc8be71ffae0bde8.json",
+          "bytes": 500,
+          "sha256": "d546d6eca0dc6a66ef60d1d5dbc45fe3fbe891b9bcb13563cc8be71ffae0bde8"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/ATTACHMENT.json",
+          "bytes": 500,
+          "sha256": "d546d6eca0dc6a66ef60d1d5dbc45fe3fbe891b9bcb13563cc8be71ffae0bde8"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7c677f50b53ddd1dff5ea2a03986addd724c6bfdffaae6d847ca3904373ac775.json",
+          "bytes": 1766,
+          "sha256": "7c677f50b53ddd1dff5ea2a03986addd724c6bfdffaae6d847ca3904373ac775"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_integration_source_review/EXECUTION.json",
+          "bytes": 1766,
+          "sha256": "7c677f50b53ddd1dff5ea2a03986addd724c6bfdffaae6d847ca3904373ac775"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b1026640d39a287645387e030ae97222a753fe50a0b00ac431f7e520513925b2.blob",
+          "bytes": 879,
+          "sha256": "b1026640d39a287645387e030ae97222a753fe50a0b00ac431f7e520513925b2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_integration_source_review/stdout",
+          "bytes": 879,
+          "sha256": "b1026640d39a287645387e030ae97222a753fe50a0b00ac431f7e520513925b2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b54a4bd4fba37c4232b12a1bb40f888b3e11a11b66acdbcd673bcfb6984089fb.json",
+          "bytes": 1525,
+          "sha256": "b54a4bd4fba37c4232b12a1bb40f888b3e11a11b66acdbcd673bcfb6984089fb"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/FRESH_REFRESH.json",
+          "bytes": 1525,
+          "sha256": "b54a4bd4fba37c4232b12a1bb40f888b3e11a11b66acdbcd673bcfb6984089fb"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326.json",
+          "bytes": 58634,
+          "sha256": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/FINAL_FREEZE.json",
+          "bytes": 58634,
+          "sha256": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e.json",
+          "bytes": 1578,
+          "sha256": "6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+          "bytes": 1578,
+          "sha256": "6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/1e8e97646baa70f59e713bf3ce302422a4e0a871cfa228e39fb1f4fcb0915155.json",
+          "bytes": 1260,
+          "sha256": "1e8e97646baa70f59e713bf3ce302422a4e0a871cfa228e39fb1f4fcb0915155"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2005/EXECUTION.json",
+          "bytes": 1260,
+          "sha256": "1e8e97646baa70f59e713bf3ce302422a4e0a871cfa228e39fb1f4fcb0915155"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/2bce2d1d4f0667ac8e7497ee00cd5fba9d8953148ca465441548c8bbb6f08c43.json",
+          "bytes": 1455,
+          "sha256": "2bce2d1d4f0667ac8e7497ee00cd5fba9d8953148ca465441548c8bbb6f08c43"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_status/EXECUTION.json",
+          "bytes": 1455,
+          "sha256": "2bce2d1d4f0667ac8e7497ee00cd5fba9d8953148ca465441548c8bbb6f08c43"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/033b1bb98cc52d1e954654359fdef82a6862165331eb555d05d88cf5245867ec.json",
+          "bytes": 1603,
+          "sha256": "033b1bb98cc52d1e954654359fdef82a6862165331eb555d05d88cf5245867ec"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_parent_pr/EXECUTION.json",
+          "bytes": 1603,
+          "sha256": "033b1bb98cc52d1e954654359fdef82a6862165331eb555d05d88cf5245867ec"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982.json",
+          "bytes": 326,
+          "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/PUBLICATION_STATE.json",
+          "bytes": 326,
+          "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/228665528ba59815360bc7cd79be331a1890608cf1eb213bc20c064767c5cca7.json",
+          "bytes": 2830,
+          "sha256": "228665528ba59815360bc7cd79be331a1890608cf1eb213bc20c064767c5cca7"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ROOT_BINDING_INPUT.json",
+          "bytes": 2830,
+          "sha256": "228665528ba59815360bc7cd79be331a1890608cf1eb213bc20c064767c5cca7"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9fa845024b60c835b0c1891ac3cf409d0ad115cbb2ad63e4430d2b0c227bb5b1.blob",
+          "bytes": 74,
+          "sha256": "9fa845024b60c835b0c1891ac3cf409d0ad115cbb2ad63e4430d2b0c227bb5b1"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_branch/stdout",
+          "bytes": 74,
+          "sha256": "9fa845024b60c835b0c1891ac3cf409d0ad115cbb2ad63e4430d2b0c227bb5b1"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7b42753f93c96c626221560a541996ecedcfbae6ab8c38d5d63ae553f7d94dfd.blob",
+          "bytes": 2108,
+          "sha256": "7b42753f93c96c626221560a541996ecedcfbae6ab8c38d5d63ae553f7d94dfd"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2005/stdout",
+          "bytes": 2108,
+          "sha256": "7b42753f93c96c626221560a541996ecedcfbae6ab8c38d5d63ae553f7d94dfd"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+          "bytes": 1536,
+          "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9.json",
+          "bytes": 1493,
+          "sha256": "de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/BASE_OBSERVATION.json",
+          "bytes": 1493,
+          "sha256": "de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a.blob",
+          "bytes": 364,
+          "sha256": "0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_parent_base/stdout",
+          "bytes": 364,
+          "sha256": "0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7484db2ae7f2c0948364654214a565c71188510b5b31426a970d4fe4fad5c73d.py",
+          "bytes": 9401,
+          "sha256": "7484db2ae7f2c0948364654214a565c71188510b5b31426a970d4fe4fad5c73d"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_integration_source_review/executed_source.py",
+          "bytes": 9401,
+          "sha256": "7484db2ae7f2c0948364654214a565c71188510b5b31426a970d4fe4fad5c73d"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c.json",
+          "bytes": 516,
+          "sha256": "c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/FREEZE.json",
+          "bytes": 516,
+          "sha256": "c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c.json",
+          "bytes": 4068,
+          "sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/REVIEW.json",
+          "bytes": 4068,
+          "sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11.py",
+          "bytes": 9377,
+          "sha256": "a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_publication_source_review/executed_source.py",
+          "bytes": 9377,
+          "sha256": "a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/0d90b916f9c55572cef74dd2004711bda0a8c3e70987acab46d48f037fb8912f.json",
+          "bytes": 1196,
+          "sha256": "0d90b916f9c55572cef74dd2004711bda0a8c3e70987acab46d48f037fb8912f"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_2005/EXECUTION.json",
+          "bytes": 1196,
+          "sha256": "0d90b916f9c55572cef74dd2004711bda0a8c3e70987acab46d48f037fb8912f"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/c294939852114cc4c37e51098b648cdcd73e2092d49a0ceaf0df33e121ecf1fa.json",
+          "bytes": 5479,
+          "sha256": "c294939852114cc4c37e51098b648cdcd73e2092d49a0ceaf0df33e121ecf1fa"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ROOT_INTEGRATION_REVIEW.json",
+          "bytes": 5479,
+          "sha256": "c294939852114cc4c37e51098b648cdcd73e2092d49a0ceaf0df33e121ecf1fa"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+          "bytes": 1342,
+          "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/mutation_scratch/historical_outcome/.claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95.py",
+          "bytes": 1342,
+          "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872.blob",
+          "bytes": 41,
+          "sha256": "66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/runs/prepare_local_base/stdout",
+          "bytes": 41,
+          "sha256": "66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df.json",
+          "bytes": 3823,
+          "sha256": "1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/BODY_MAP.json",
+          "bytes": 3823,
+          "sha256": "1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb.md",
+          "bytes": 112757,
+          "sha256": "f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+          "bytes": 112757,
+          "sha256": "f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461.py",
+          "bytes": 62970,
+          "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/endpoint_chart_recurrence_common.py",
+          "bytes": 62970,
+          "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2.json",
+          "bytes": 139760,
+          "sha256": "5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/SOURCE_MANIFEST.json",
+          "bytes": 139760,
+          "sha256": "5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103.py",
+          "bytes": 1577,
+          "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_refs/recorder_at_launch.py",
+          "bytes": 1577,
+          "sha256": "876b0aa51f90bafd2a9cfc3f988bb472cad380ff21b2ef500a77f336762d3103"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/d071ed687fe52ef3b5e0252f7b102114d25e260277fec42af0155694cf1e2900.json",
+          "bytes": 1502,
+          "sha256": "d071ed687fe52ef3b5e0252f7b102114d25e260277fec42af0155694cf1e2900"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_refs/EXECUTION.json",
+          "bytes": 1502,
+          "sha256": "d071ed687fe52ef3b5e0252f7b102114d25e260277fec42af0155694cf1e2900"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/da8f347c25d8f896ff74c379d5c727d331cd8cbede01ae91226d9991c490496f.blob",
+          "bytes": 164,
+          "sha256": "da8f347c25d8f896ff74c379d5c727d331cd8cbede01ae91226d9991c490496f"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_refs/stdout",
+          "bytes": 164,
+          "sha256": "da8f347c25d8f896ff74c379d5c727d331cd8cbede01ae91226d9991c490496f"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9cc19127f2453a3f2e9d2e2684cb74faf61d70ee8a8fb087d9c6436ad37371c4.json",
+          "bytes": 1443,
+          "sha256": "9cc19127f2453a3f2e9d2e2684cb74faf61d70ee8a8fb087d9c6436ad37371c4"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/chart_base_tree/EXECUTION.json",
+          "bytes": 1443,
+          "sha256": "9cc19127f2453a3f2e9d2e2684cb74faf61d70ee8a8fb087d9c6436ad37371c4"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e9d70efe7dde9f4174ad46c75d025da3c0ca32c0cff3f1752787a5d4d0d5e150.json",
+          "bytes": 72553,
+          "sha256": "e9d70efe7dde9f4174ad46c75d025da3c0ca32c0cff3f1752787a5d4d0d5e150"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/FINAL_FREEZE.json",
+          "bytes": 72553,
+          "sha256": "e9d70efe7dde9f4174ad46c75d025da3c0ca32c0cff3f1752787a5d4d0d5e150"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "copy": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/canonical_source/.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a.md",
+          "bytes": 2808,
+          "sha256": "dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a"
+        },
+        "original": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/REVIEW.md",
+          "bytes": 2808,
+          "sha256": "dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a"
+        }
+      }
+    ],
+    "scope": "Reviewed complete changed scientific wrapper, source adapter and all binding declarations. Nine unchanged bodies retain exact qualified status; canonical wrapper now limits calibration-floor statement to the stated worst-case certificate. Programmatic correspondence checks every274 canonical path, frozen source member, binding copy and ten actual literal assignments. Self-contained root has no mathematical parent. Fresh parser discovers staged primary. Actual canonical/staged reviews remain distinct; no science replay or new physical validation.",
+    "scientific_executions": 0,
+    "retained_audit": false
+  },
+  "scope": "Reviewed complete changed scientific wrapper, source adapter and all binding declarations. Nine unchanged bodies retain exact qualified status; canonical wrapper now limits calibration-floor statement to the stated worst-case certificate. Programmatic correspondence checks every274 canonical path, frozen source member, binding copy and ten actual literal assignments. Self-contained root has no mathematical parent. Fresh parser discovers staged primary. Actual canonical/staged reviews remain distinct; no science replay or new physical validation.",
+  "qualifications": "Finite supplied q2 K2I+ZZ and positive onsite rays, full U4 scalar and old/reference inputs. Exact chart and enormous full-U4 recurrence retain local-enclosure and source-exposed downstream arithmetic limits. No second ODE, blind replication, generic compiled target, practical runtime or native controller. Effective synthesis assumes computable targets/oracles. Calibration upper bounds are sufficient; no universal floor impossibility. Net work, absolute variation and microscopic expenditure remain distinct. No retained audit, autonomous halt or reuse",
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,115 @@
+"""Metadata-only capture of the exact reviewed packet and necessary source identities."""
+import argparse
+import datetime
+import hashlib
+import json
+from pathlib import Path
+
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+args = argparse.ArgumentParser()
+args.add_argument("--root", required=True)
+opt = args.parse_args()
+root = Path(opt.root).resolve()
+n = root.parent
+w = n.parent / "correlation_worktree"
+candidate = n / "interacting_local_fault_work_candidate"
+freeze_bytes = (candidate / "FREEZE.json").read_bytes()
+assert digest(freeze_bytes) == "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37"
+freeze = json.loads(freeze_bytes)
+records = []
+
+
+def capture(source, relative, expected, coverage, expected_size=None):
+    source = Path(source)
+    data = source.read_bytes()
+    assert digest(data) == expected, source
+    if expected_size is not None:
+        assert len(data) == expected_size, source
+    target = root / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if target.exists():
+        assert target.read_bytes() == data, target
+    else:
+        target.write_bytes(data)
+    assert target.read_bytes() == source.read_bytes(), source
+    records.append({"source_path": str(source), "captured_path": str(relative),
+                    "bytes": len(data), "sha256": expected, "coverage": coverage})
+
+
+capture(candidate / "FREEZE.json", Path("sources/candidate/FREEZE.json"),
+        digest(freeze_bytes), "Complete candidate freeze inspected; all listed members verified below")
+for member in freeze["members"]:
+    rel = Path(member["path"])
+    assert not rel.is_absolute() and ".." not in rel.parts, rel
+    coverage = "Complete current-task read"
+    if rel.parts[0] == "source_snapshot":
+        coverage = "Qualified parent source previously completely read; exact current bytes refreshed; historical freezes identity-only"
+    capture(candidate / rel, Path("sources/candidate") / rel,
+            member["sha256"], coverage, member["bytes"])
+
+parent_matches = []
+author_manifest = json.loads((candidate / "SOURCE_MANIFEST.json").read_text())
+for item in author_manifest["sources"]:
+    live = Path(item["path"]).read_bytes()
+    snap = (candidate / item["snapshot"]).read_bytes()
+    assert live == snap and digest(live) == item["sha256"], item["path"]
+    parent_matches.append({"live_path": item["path"], "sha256": item["sha256"],
+                           "captured_path": str(Path("sources/candidate") / item["snapshot"]),
+                           "scope": "Exact live/snapshot match; no recursive scientific replay"})
+
+extra = [
+    (n / "inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+     "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+     "Earlier complete read reused; section1 lines1-64 re-read for actual M_i=L_i+2 battery boundary"),
+    (n / "inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+     "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+     "Complete immediately preceding read reused at identical bytes; controlling comb scope"),
+    (n / "inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+     "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+     "Earlier complete decision read reused at identical bytes"),
+    (n / "inhomogeneous_local_control_root_review/FREEZE.json",
+     "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+     "Qualified comb decision freeze identity only; no recursive membership assertion"),
+    (w / "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+     "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+     "Earlier complete current-workflow reading reused after unchanged content refresh"),
+    (w / "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+     "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+     "Complete current read; installed entry verified byte-identical to this local source"),
+    (w / "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+     "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+     "Complete current read; explicit bounded no-Git scope prevents remote refresh"),
+    (w / "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+     "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+     "Complete current read; applicable target/premise and independent reconstruction obligations only"),
+]
+for path, expected, coverage in extra:
+    capture(path, Path("sources/extra") / expected / path.name, expected, coverage)
+assert Path("/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md").read_bytes() == (
+    w / "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md").read_bytes()
+manifest = {
+    "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "kind": "exposed review selected-source capture; metadata only",
+    "candidate_freeze_sha256": digest(freeze_bytes),
+    "candidate_members_verified": len(freeze["members"]),
+    "source_capture_count": len(records),
+    "live_parent_snapshot_matches": parent_matches,
+    "sources": records,
+    "scientific_executions": 0,
+    "scientific_replays": 0,
+    "independent_mathematical_acceptance_by_program": False,
+    "scope_limit": "Exact source and stream identities only. No validation of mathematical truth, "
+                   "unarchived ancestral freezes, prior scientific processes, physical calibration, "
+                   "publication or retained status. Candidate metadata provenance limits are preserved.",
+}
+encoded = (json.dumps(manifest, indent=2) + "\n").encode()
+(root / "SOURCE_MANIFEST.json").write_bytes(encoded)
+result = {"candidate_members_verified": len(freeze["members"]),
+          "source_captures": len(records), "live_parent_matches": len(parent_matches),
+          "manifest_sha256": digest(encoded), "scientific_executions": 0}
+Path(__file__).with_name("RESULT.json").write_text(json.dumps(result, indent=2) + "\n")
+print(json.dumps(result, sort_keys=True))

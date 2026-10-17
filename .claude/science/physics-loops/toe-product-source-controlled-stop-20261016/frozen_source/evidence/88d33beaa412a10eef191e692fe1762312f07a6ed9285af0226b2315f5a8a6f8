@@ -1,0 +1,48 @@
+{
+  "sources_captured": 14,
+  "prior_freezes": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "members": 18,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "members": 23,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "capture": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb",
+      "members": 166,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "members": 2,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_external_stop_exposed_check/FREEZE.json",
+      "bytes": 5781,
+      "sha256": "b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55",
+      "members": 30,
+      "all_members_unchanged": true
+    }
+  ],
+  "scientific_executions": 0,
+  "root_c1_acceptance": null,
+  "scope": "source byte and frozen inventory verification only"
+}

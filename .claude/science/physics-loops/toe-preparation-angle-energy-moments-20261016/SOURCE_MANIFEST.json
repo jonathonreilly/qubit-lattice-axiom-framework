@@ -1,0 +1,36 @@
+{
+  "kind": "canonical_body_recovery",
+  "source_packet_freeze": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3",
+  "current_body_recovery_intervals": [
+    {
+      "note": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "original_proposal",
+      "source": "preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 22475,
+      "bytes": 14391,
+      "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced",
+      "start_byte": 8084
+    },
+    {
+      "note": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "exposed_analytical_review",
+      "source": "preparation_angle_moment_exposed_check/REVIEW.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 42511,
+      "bytes": 19971,
+      "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49",
+      "start_byte": 22540
+    },
+    {
+      "note": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "controlling_root_qualifications",
+      "source": "preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 50662,
+      "bytes": 8080,
+      "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a",
+      "start_byte": 42582
+    }
+  ]
+}

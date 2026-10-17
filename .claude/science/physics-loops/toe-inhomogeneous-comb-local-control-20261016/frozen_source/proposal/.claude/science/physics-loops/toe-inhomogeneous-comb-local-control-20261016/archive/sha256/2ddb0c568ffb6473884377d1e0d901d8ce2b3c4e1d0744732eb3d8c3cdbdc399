@@ -1,0 +1,82 @@
+{
+  "accepted": [
+    "Complete finite physical battery preparation from supplied independent vacuum with literal free evolution.",
+    "Positive reserve phases, rotating-carrier derivative and simultaneous final phase-slot costs.",
+    "Finite norm error, preparation work and weighted moment bounds.",
+    "Composition with W=V exp(i tau_p K_S/hbar), retaining gamma(W) in vector comparisons."
+  ],
+  "actual_review_metadata_execution": {
+    "bytes": 2253,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/metadata_runs/capture_and_verify/EXECUTION.json",
+    "sha256": "ea00d3e487317dcc4398ae72b40cfc1b6b207c006d9fbd7df4c196ab8d8ae387"
+  },
+  "canonical_acceptance": null,
+  "complete_arguments_read": true,
+  "controlling_qualifications": {
+    "bytes": 8398,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+    "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc"
+  },
+  "editable_prompt_files_changed": [],
+  "historical_author_exact_execution": {
+    "bytes": 1783,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/local_sine_preparation_exact_01/EXECUTION.json",
+    "sha256": "7d8ea9a5f8c43db3458ef81b4d04fadbbcdd7a8bb0387de2a97b36f454736963"
+  },
+  "historical_author_scientific_executions": 1,
+  "metadata_scope": "Receipt/source identity and actual streams inspected; source-copy success is not mathematical proof.",
+  "new_candidates_not_accepted": [
+    "local_conserving_sparse_compiler_candidate",
+    "local_conserving_sparse_compiler_fixture"
+  ],
+  "new_scientific_executions": 0,
+  "preserved_failures": [
+    "Reviewer draft [n,Y] sign error corrected analytically before first freeze; original correction record retained.",
+    "Original source discovery limitations are preserved and not counted as failed scientific executions."
+  ],
+  "publication": null,
+  "required_qualifications": [
+    "Nonconserving local preparation controls and phase-locked external quadrature are additional suppliers.",
+    "Full ancilla readiness and norm if included; no fresh purity substitution.",
+    "Actual positivity/slew/support separate from small norm error; waveform jitter must be priced.",
+    "Mean/variance accuracy requires dimension-dependent preparation precision.",
+    "Root runtime qualifications7a696aff including imperfect initial-energy and same-F storage/work boundaries apply."
+  ],
+  "retained_audit": false,
+  "review_exposure": "Source-exposed same-model analytic reconstruction; reviewer knew author fixture results and runtime interface, not a blind test.",
+  "runtime_acceptance": {
+    "bytes": 5279,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json",
+    "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509"
+  },
+  "sources": [
+    {
+      "body": {
+        "bytes": 15499,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+        "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826"
+      },
+      "freeze": {
+        "bytes": 2349,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/FINAL_FREEZE.json",
+        "sha256": "928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108"
+      },
+      "verified_members": 14
+    },
+    {
+      "body": {
+        "bytes": 22829,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/REVIEW.md",
+        "sha256": "f4addfc95983ebd497bfb44ac7224afdd1b5d342a9241ea11696e97804eab022"
+      },
+      "freeze": {
+        "bytes": 7771,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_exposed_check/FINAL_FREEZE.json",
+        "sha256": "81bb0f67dcf788c55546b6ac58ae3433b3836471bdbe6f14a543366769a367b8"
+      },
+      "verified_members": 40
+    }
+  ],
+  "status": "qualified conditional driven preparation and runtime-interface composition support",
+  "utc": "2026-10-16T15:13:35.540614+00:00"
+}

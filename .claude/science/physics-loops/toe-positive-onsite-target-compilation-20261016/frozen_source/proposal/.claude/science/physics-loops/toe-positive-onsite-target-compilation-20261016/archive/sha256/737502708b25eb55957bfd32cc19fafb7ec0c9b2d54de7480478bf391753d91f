@@ -1,0 +1,195 @@
+"""Metadata-only closing of the one actual run; no science function imported."""
+from pathlib import Path
+import datetime, hashlib, json, sys
+
+out = Path(sys.argv[1]).resolve()
+assert out.name == 'endpoint_target_compilation_candidate'
+assert not (out/'FREEZE.json').exists()
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path.relative_to(out)), 'bytes': len(raw),
+            'sha256': hashlib.sha256(raw).hexdigest()}
+
+def write(path, data):
+    assert not path.exists(), str(path)
+    path.write_text(json.dumps(data, indent=2)+'\n')
+
+pre = out/'PRELAUNCH_FREEZE.json'
+assert hashlib.sha256(pre.read_bytes()).hexdigest() == 'f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43'
+for member in json.loads(pre.read_text())['members']:
+    p = pin(out/member['path'])
+    assert p == member, member['path']
+receipt_path = out/'runs/target_001/EXECUTION.json'
+receipt = json.loads(receipt_path.read_text())
+assert receipt['source_at_launch']['sha256'] == '52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80'
+assert receipt['wall_timeout_seconds'] == 600
+assert len(list((out/'runs').glob('target_*'))) == 1
+certificate_path = out/'target_001_output/TARGET_CERTIFICATE.json'
+certificate = json.loads(certificate_path.read_text()) if certificate_path.exists() else None
+success = (receipt['exit_code'] == 0 and not receipt['timed_out'] and certificate is not None
+           and all(certificate['checks'].values()))
+artifacts = [pin(path) for directory in (out/'target_001_output', out/'runs/target_001')
+             for path in sorted(directory.rglob('*')) if path.is_file()]
+iterations = sorted((out/'target_001_output').glob('ITERATION_*.json'))
+endpoints = sorted((out/'target_001_output').glob('ENDPOINT_*.json'))
+manifest = {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            'kind': 'actual-output-and-execution-identity-manifest-no-science-replay',
+            'prelaunch_members_unchanged': 33, 'scientific_launches': 1,
+            'new_derivative_or_recurrence_runs': 0, 'metadata_only': True,
+            'parent_manifest': pin(out/'SOURCE_MANIFEST.json'),
+            'iteration_files': len(iterations), 'new_endpoint_files': len(endpoints),
+            'artifacts': artifacts, 'candidate_result': 'strict_certificate_checks_succeeded' if success else 'single_attempt_failed_or_incomplete',
+            'independent_validation': False, 'root_scientific_acceptance': None,
+            'canonical_binding': None, 'publication': None, 'editable_prompt_files_changed': []}
+write(out/'OUTPUT_MANIFEST.json', manifest)
+result = {'status': manifest['candidate_result'], 'execution': receipt,
+          'output_manifest': pin(out/'OUTPUT_MANIFEST.json'),
+          'certificate': pin(certificate_path) if certificate else None,
+          'checks_reported_by_scientific_program': certificate['checks'] if certificate else None,
+          'one_scientific_run_no_retry': True, 'prelaunch_source_unchanged': True,
+          'programmed_trace_bound_only': '2*epsilon',
+          'physical_trace_bound': '2*(epsilon+eta_drive)+delta_initial; add post-off time error when applicable',
+          'no_new_physical_supplier': True, 'same_author_model_parent_exposure': True,
+          'separate_validation_and_root_acceptance_pending': True}
+write(out/'RESULT.json', result)
+status = ('The single exact-arithmetic attempt completed and its strict complete-word residual checks succeeded.'
+          if success else 'The single authorized attempt failed or remained incomplete; no retry was performed.')
+checks = json.dumps(certificate['checks']) if certificate else 'No completed certificate was emitted.'
+cert_pin = pin(certificate_path) if certificate else None
+schedule_path = out/'target_001_output/SCHEDULE.json'
+schedule_pin = pin(schedule_path) if schedule_path.exists() else None
+report = f'''# Actual candidate outcome
+
+{status} This is an author-produced computer-assisted candidate, not
+independent validation, root scientific acceptance, publication or retained audit.
+
+The source was frozen before execution, root read it and gave GO, and all33
+prelaunch members were verified unchanged before launch. The actual source
+SHA256 is52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80.
+The prelaunch freeze isf453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43.
+The metadata closure again found every one of those33 members unchanged.
+
+Actual execution: start {receipt['start_utc']}; end {receipt['end_utc']};
+elapsed {receipt['elapsed_seconds']}seconds; exit {receipt['exit_code']};
+timeout {receipt['timed_out']}; wall limit600seconds, no separate CPU/RAM quota.
+There was exactly one scientific launch, no precision/parameter change,
+no alternate target, no derivative calculation and no recurrence replay.
+The output contains{len(iterations)} iteration records and{len(endpoints)} new endpoint records.
+Full original stdout/stderr and executable/source/recorder identities are
+in runs/target_001. Their hashes are in OUTPUT_MANIFEST.json.
+
+The program reported these checks: {checks}
+
+The unchanged prescribed comparator is
+
+    W exp(-iTK), K=2I+ZZ,
+    W=[(9+12i)I+(-16+12i)XX]/25,
+    epsilon=2^-40,
+    n=98611368294597721931914764889297593425141587534996842205,
+    M=147975046,
+    T=350208522228384946904887108861751911074590975328100424043350794320.
+
+On successful checks, the frozen analytic/code argument and emitted exact
+intervals support operator error<epsilon for the serialized positive-time
+word, including the full scalar. The final certificate contains all entries
+of the residual and the exact rational squared Frobenius comparison, analytic
+allowance and integer-square-root upper bound. It is not a floating residual
+or interval-library precision claim. Its source/code/integer execution and
+the qualified parents remain premises to be separately checked.
+
+The specified word is repeat M of: one calibrated24-slot template followed
+by n-1 nominal24-slot templates. When emitted, SCHEDULE.json contains the16 actual dyadic
+displacement numerators, denominator2^128, every nominal/calibrated amplitude,
+positive repetition counts, entire scalar action and actual duration.
+Certificate pin: {json.dumps(cert_pin)}
+Schedule pin: {json.dumps(schedule_pin)}
+
+DERIVATION.md and PRELAUNCH.md are immutable records written before the
+calculation; their historical 'awaiting execution' statements are resolved
+by this additive result, not rewritten. On successful completion, the frozen
+program executed exactly32 calibration iterations; its32 new endpoints consist of iterates1
+through31 and final iterate32, with G(0)=0 used exactly. Every y/G interval
+was analytically padded before width/midpoint use. The direct target
+rectangle includes its analytic exponential tail before final subtraction.
+
+The added supplied cap remains2E0 and slew16E0^2/hbar, with literal old
+load3E0 and all identity reserves. Physical duration is(hbar/E0)T, not
+the classical execution time or compressed file size. The nominal schedule's
+128-bit encoding does not supply128-bit physical accuracy over that duration.
+All-template amplitude faults cost at most(16/15)T delta_a; all drift,
+waveform, clock and isolation errors require their actual integrated budget.
+The ledger's full_reference_trace_error_upper=2*epsilon concerns the ideal
+programmed model only. Full physical joint trace error is bounded by
+2(epsilon+eta_drive)+delta_initial, plus any separately compared post-off
+timing error. The timing expression3|delta_T| is an upper budget only.
+
+All old/passive-reference inputs and outputs of the two-qubit model are
+retained. External controller outputs and their microscopic energy are
+unmodeled. This W commutes with K, so ideal modeled net work is zero, but
+absolute control variation may be as large as72MnE0. Initial/final old
+trace errors and residual endpoint controls retain their separate energy
+costs. No generic compiler, efficient runtime, arbitrary old plant, native
+control, conservative microscopic apparatus, autonomous halt or reuse is
+claimed. Source/exposed parent qualification is not a retained audit.
+
+No parent, worktree, canonical file, Git/PR, audit, prompt, model, axiom or
+lock was changed. No failed scientific execution was omitted. If the
+actual receipt indicates failure, its complete artifacts remain the result;
+the conditional success wording above is not an override of that receipt.
+'''
+assert not (out/'RESULT.md').exists()
+(out/'RESULT.md').write_text(report)
+guide = '''# Read guide and recovery checkpoint
+
+1. RESULT.md and RESULT.json give the actual single-run outcome and limits.
+2. DERIVATION.md is the complete pre-execution analytic/code argument.
+3. PRELAUNCH.md, PRELAUNCH_FREEZE.json, ROOT_GO.md and
+   PRELAUNCH_VERIFICATION.json establish the source/authorization chronology.
+4. compile_target.py is byte-identical to runs/target_001/source_at_launch.py.
+   runs/target_001/LAUNCH.json and EXECUTION.json record actual execution;
+   stdout and stderr are full original streams.
+5. target_001_output/TARGET_ENCLOSURES.json includes exact phase reductions
+   and all analytic exponential tails. Y_COORDINATES.json and ITERATION_00
+   through ITERATION_31 contain every padded coordinate and actual iterate.
+   ENDPOINT_01 through ENDPOINT_32 contain each new full endpoint and24 slots.
+6. SCHEDULE.json is the emitted exact positive-time word; TARGET_CERTIFICATE.json
+   and FINAL_POWER_TRACE.json are its full residual/powering evidence.
+   RESOURCE_LEDGER.json separates physical duration/fault/work budgets.
+7. SOURCE_MANIFEST.json maps bounded exact mathematical inputs and current
+   parent qualifications. OUTPUT_MANIFEST.json maps actual new evidence.
+   FREEZE.json seals this packet, excluding only itself and the still-running
+   terminal metadata receipt, whose actual files remain in runs/final_freeze.
+
+Open obligation: separate analytical/code/evidence check and root disposition.
+The author wrote the chart, recurrence and plan parents; no blind or independent
+validation claim applies. No further scientific attempt is authorized here.
+No automatic retry or broader compiler/physical-supplier conclusion is licensed.
+'''
+assert not (out/'READ_GUIDE.md').exists()
+(out/'READ_GUIDE.md').write_text(guide)
+(out/'CURRENT_STATUS.md').write_text(
+    '# Recovery checkpoint\n\nThe single scientific attempt is complete. '+status+'\n\n'
+    'Read RESULT.md, RESULT.json and READ_GUIDE.md for the current outcome. '
+    'Source52e53faf and prelaunch freezef453d826 are unchanged; the actual '
+    'receipt is runs/target_001/EXECUTION.json. No retry or further scientific '
+    'calculation is authorized. Separate exposed checking and root disposition '
+    'remain open. This final metadata process is sealing all actual artifacts '
+    'in FREEZE.json; its own terminal receipt remains in runs/final_freeze.\n')
+members = []
+for path in sorted(out.rglob('*')):
+    if not path.is_file() or path == out/'FREEZE.json':
+        continue
+    if str(path.relative_to(out)).startswith('runs/final_freeze/'):
+        continue
+    members.append(pin(path))
+freeze = {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          'status': 'FROZEN_SOURCE_EXPOSED_CANDIDATE_PENDING_SEPARATE_CHECK',
+          'actual_scientific_launches': 1, 'actual_science_exit_code': receipt['exit_code'],
+          'members': members, 'terminal_metadata_receipt_outside_freeze': 'runs/final_freeze/EXECUTION.json',
+          'canonical_binding': None, 'publication': None, 'root_acceptance': None}
+write(out/'FREEZE.json', freeze)
+print(json.dumps({'freeze': pin(out/'FREEZE.json'), 'result': pin(out/'RESULT.md'),
+                  'scientific_receipt': pin(receipt_path), 'certificate': cert_pin,
+                  'schedule': schedule_pin, 'members': len(members),
+                  'actual_science_success_reported': success}, indent=2))

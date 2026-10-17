@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-16T18:53:11.173254+00:00",
+  "kind": "root_integration_source_review",
+  "root_read_complete_for_changed_implementation": true,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 31810,
+    "sha256": "1f8cb53bc0108c7cdd19a4963d92d7f872eb2cd4d83efa87a4e4a9ef427f0eb6"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/interacting_control_common.py",
+    "bytes": 57414,
+    "sha256": "77491c6e14004cd08ed47b98d6fde4dcce284e3be2fa7830b1ac66d6b16f7454"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 48630,
+    "sha256": "4938336940fd5fa70cdc5161b82928387425bb1d56c4f620dbfd5744847b00bb"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_interacting_control_qualified_publication_review/REVIEW.json",
+    "bytes": 3698,
+    "sha256": "6359efd97be3f28ed504430a501269027ad279fd2738a258a9d222d801f47f67"
+  },
+  "members_verified": 158,
+  "unchanged_source_members": 176,
+  "unchanged_mathematical_bodies": 9,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "path": "docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 104822,
+      "sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5"
+    }
+  ],
+  "function_reuse": [
+    {
+      "group": "common",
+      "exact": 26,
+      "changed": [
+        "bind_runtime",
+        "finish",
+        "parent_query",
+        "prepare",
+        "publish",
+        "require_bound_base",
+        "require_staged_review",
+        "verify_actual_review_execution"
+      ]
+    },
+    {
+      "group": "extension",
+      "exact": 3,
+      "changed": [
+        "canonical_validate",
+        "main",
+        "verify_source_packet"
+      ]
+    }
+  ],
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/assemble/EXECUTION.json",
+      "bytes": 2752,
+      "sha256": "a3d713cce0934d9711d88cfb2fa5276fe9b7219e0e94f627dd29c17508777a43"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/capture_review/EXECUTION.json",
+      "bytes": 2794,
+      "sha256": "bc1b88668b16dbbd3e2efc6d758bd83d124b368b40489df90f70c50ff0f6a539"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/finalize_source/EXECUTION.json",
+      "bytes": 2793,
+      "sha256": "a34dec0e7691d47ca09a06f6b2d8a5ded3c9fa73177b7321091565e235fc32e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2771,
+      "sha256": "1dc3eefdab9d412f172854c01f4df87c0660dc297d7b42370b82d03b5eb91285"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2750,
+      "sha256": "54277a4a26b6fea097394c45ebb967e680cac9a016558b23745dd22a42bb8071"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_integration_proposal/metadata_runs/validate_final/EXECUTION.json",
+      "bytes": 2804,
+      "sha256": "1998a09b95e8dc80eb8c32e8d2bd28060e8e9261c16cc64ac23967b3a5af001b"
+    }
+  ],
+  "actual_canonical_acceptance": null,
+  "retained_audit": false,
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": [],
+  "scope": "Complete changed common/extension functions and globals, all new metadata source/recorders, wrapper/certificate/PR text, actual complete six metadata streams and source-review failure recovery inspected. Exact unchanged code and proof bodies reuse recorded prior review, with their identities rechecked. Fixed OPEN parent only; closure requires separate transport review. Canonical, staged and publication actions remain pending. Source-review checkpoint evolution does not imply recovery of unavailable historical bytes. Metadata checks are not mathematical or physical verification."
+}

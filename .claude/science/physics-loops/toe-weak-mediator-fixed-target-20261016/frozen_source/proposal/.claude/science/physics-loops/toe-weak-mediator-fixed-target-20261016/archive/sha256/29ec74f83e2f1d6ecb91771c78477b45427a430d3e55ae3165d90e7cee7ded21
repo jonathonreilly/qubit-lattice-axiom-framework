@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Source-only metadata: copy pinned mathematical sources, parse AST and freeze."""
+import ast
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parent
+parent=root.parent/'weak_mediator_candidate'
+def identity(path):
+    raw=path.read_bytes()
+    return {'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+expected={
+ 'STRUCTURED_COEFFICIENT_ADDENDUM.md':'052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395',
+ 'FINITE_COMPILER_ADDENDUM.md':'7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8',
+ 'SCALING_ADDENDUM.md':'7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda',
+ 'PROPOSAL.md':'22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b',
+ 'DYADIC_ADDENDUM.md':'2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517'}
+folder=root/'sources';folder.mkdir(exist_ok=False)
+sources=[]
+for name,sha in expected.items():
+    f=parent/name;item=identity(f)
+    if item['sha256']!=sha:raise RuntimeError('source pin mismatch: '+name)
+    with (folder/name).open('xb') as stream:stream.write(f.read_bytes())
+    if identity(folder/name)!=item:raise RuntimeError('snapshot mismatch')
+    sources.append({'original_path':str(f),'snapshot':'sources/'+name,**item,
+                    'read_coverage':'complete body; preceding coherent-task read reused only at unchanged exact identity' if name in ['PROPOSAL.md','DYADIC_ADDENDUM.md'] else 'complete body in this task',
+                    'status':'root-proposed mathematical parent; no acceptance inferred by this packet'})
+syntax=[]
+for name in ['compile_coefficients.py','record_one_attempt.py','seal_metadata.py','record_metadata.py']:
+    ast.parse((root/name).read_text(),filename=str(root/name))
+    syntax.append({'path':name,'AST_parse':'completed; scientific source not imported or evaluated',**identity(root/name)})
+params=json.loads((root/'PARAMETERS.json').read_text())
+if params['finite_compiler_source_sha256']!=expected['FINITE_COMPILER_ADDENDUM.md'] or params['scaling_source_sha256']!=expected['SCALING_ADDENDUM.md'] or params['structured_source_sha256']!=expected['STRUCTURED_COEFFICIENT_ADDENDUM.md']:
+    raise RuntimeError('parameter source pin mismatch')
+manifest={'status':'source-only fixed m=44 coefficient compiler; no scientific execution',
+          'created_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'sources':sources,
+          'syntax_metadata':syntax,'actual_scientific_execution':None,'root_go':None,'acceptance':None,
+          'recorder_text_ancestor':{'path':str(root.parent/'weak_mediator_check_proposal/record_one_attempt.py'),
+                                    'sha256':'ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87',
+                                    'role':'metadata recorder adaptation only; no scientific source import'},
+          'exposure':'source-exposed same-model author; see EXPOSURE.md',
+          'metadata_runs_outside_freeze':'runs/metadata_001/'}
+with (root/'SOURCE_MANIFEST.json').open('x') as stream:
+    json.dump(manifest,stream,indent=2);stream.write('\n')
+members=[]
+for f in sorted(root.rglob('*')):
+    if not f.is_file():continue
+    rel=f.relative_to(root).as_posix()
+    if rel=='PRELAUNCH_FREEZE.json' or rel.startswith('runs/'):continue
+    members.append({'path':rel,**identity(f)})
+freeze={'status':'source-only prospective single coefficient-compiler attempt',
+        'created_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'scientific_execution_count':0,
+        'metadata_runs_excluded':'runs/','files':members}
+out=root/'PRELAUNCH_FREEZE.json'
+with out.open('x') as stream:
+    json.dump(freeze,stream,indent=2);stream.write('\n')
+print(json.dumps({'metadata_only':True,'source_snapshots':len(sources),'AST_files':len(syntax),
+                  'freeze':str(out),'members':len(members),**identity(out)},sort_keys=True))

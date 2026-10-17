@@ -1,0 +1,20 @@
+{
+  "kind": "bounded_actual_source_and_receipt_metadata_verification",
+  "utc": "2026-10-16T17:16:57.149096+00:00",
+  "sources_verified": 13,
+  "direct_freeze_members_verified": 6,
+  "actual_receipt": {
+    "receipt_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/EXECUTION.json",
+    "bytes": 2490,
+    "sha256": "20d95eab56dba2cb00f7b5222e05fdc99f717e29b1e8bd8f66e1e6d88ee5ba15",
+    "exit_code": 0,
+    "started_utc": "2026-10-16T17:11:07.729479+00:00",
+    "finished_utc": "2026-10-16T17:11:08.223403+00:00",
+    "source_and_stream_identities_checked": true,
+    "stdout_matches_saved_result": true
+  },
+  "manifest": {
+    "bytes": 8055,
+    "sha256": "e0591529405542df63d58d9dfcc504a539c741420f04f5492ab1996ac5f06f22"
+  }
+}

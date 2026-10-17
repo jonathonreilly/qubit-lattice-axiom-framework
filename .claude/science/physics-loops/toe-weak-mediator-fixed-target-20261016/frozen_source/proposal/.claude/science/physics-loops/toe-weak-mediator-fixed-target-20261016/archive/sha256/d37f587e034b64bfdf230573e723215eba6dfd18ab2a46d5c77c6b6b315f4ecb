@@ -1,0 +1,61 @@
+{"holds": true, "name": "fixed cost and arithmetic limits"}
+{"holds": true, "name": "fixed target duration and window"}
+{"holds": true, "name": "fixed exact duration brackets"}
+{"holds": true, "name": "unnormalized injection Gram"}
+{"holds": true, "name": "source projector and complement"}
+{"holds": true, "name": "Bell projectors complete"}
+{"holds": true, "name": "Bell rank-one projector phi_plus"}
+{"holds": true, "name": "Bell rank-one projector phi_minus"}
+{"holds": true, "name": "Bell rank-one projector psi_plus"}
+{"holds": true, "name": "Bell rank-one projector psi_minus"}
+{"holds": true, "name": "four positive-block decomposition"}
+{"holds": true, "name": "port involution and projector 0"}
+{"holds": true, "name": "port involution and projector 1"}
+{"holds": true, "name": "port involution and projector 2"}
+{"holds": true, "name": "port involution and projector 3"}
+{"holds": true, "name": "source positive block zero state"}
+{"holds": true, "name": "literal generator injection"}
+{"holds": true, "name": "full Hermiticity"}
+{"holds": true, "name": "zero first-order compression"}
+{"holds": true, "name": "old parity projector 1"}
+{"holds": true, "name": "H0 full spectral cell (1, 'phi_plus')"}
+{"holds": true, "name": "H0 full spectral cell (1, 'phi_minus')"}
+{"holds": true, "name": "H0 full spectral cell (1, 'psi_plus')"}
+{"holds": true, "name": "H0 full spectral cell (1, 'psi_minus')"}
+{"holds": true, "name": "old parity projector -1"}
+{"holds": true, "name": "H0 full spectral cell (-1, 'phi_plus')"}
+{"holds": true, "name": "H0 full spectral cell (-1, 'phi_minus')"}
+{"holds": true, "name": "H0 full spectral cell (-1, 'psi_plus')"}
+{"holds": true, "name": "H0 full spectral cell (-1, 'psi_minus')"}
+{"holds": true, "name": "excited Bell source amplitudes"}
+{"holds": true, "name": "full V squared compression signs"}
+{"holds": true, "name": "first corrector Q support"}
+{"holds": true, "name": "first Sylvester identity"}
+{"holds": true, "name": "second corrector Q support"}
+{"holds": true, "name": "second RHS preserves old parity"}
+{"holds": true, "name": "second Sylvester identity"}
+{"holds": true, "name": "second-order cleared formula"}
+{"holds": true, "name": "second-order Hermitian and K commuting"}
+{"holds": true, "name": "P cancellation identity"}
+{"holds": true, "name": "complete cleared isometry residual"}
+{"holds": true, "name": "joint old projector (1, 1)"}
+{"holds": true, "name": "second-order eigenvalue numerator (1, 1)"}
+{"holds": true, "name": "joint old projector (1, -1)"}
+{"holds": true, "name": "second-order eigenvalue numerator (1, -1)"}
+{"holds": true, "name": "joint old projector (-1, 1)"}
+{"holds": true, "name": "second-order eigenvalue numerator (-1, 1)"}
+{"holds": true, "name": "joint old projector (-1, -1)"}
+{"holds": true, "name": "second-order eigenvalue numerator (-1, -1)"}
+{"holds": true, "name": "full U4 target phase and unitarity"}
+{"holds": true, "name": "full initial mean identity"}
+{"holds": true, "name": "full initial second moment identity"}
+{"holds": true, "name": "scalar reserve trace retained"}
+{"holds": true, "name": "wrong Y2B sign rejected"}
+{"holds": true, "name": "bare Delta denominator rejected"}
+{"holds": true, "name": "proposed residual constants"}
+{"holds": true, "name": "incident norm sufficient inequality"}
+{"holds": true, "name": "ideal residual and quiet bounds"}
+{"holds": true, "name": "dyadic perturbation and rounded bounds"}
+{"holds": true, "name": "dyadic positive lower-margin arithmetic"}
+{"holds": true, "name": "dyadic denominator and maximal numerator encoding bits"}
+{"checks": 60, "completed": true, "report": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/runs/weak_001/output/REPORT.json", "statistics": {"convolution_pairs": 9010, "integer_operations": 81633, "matrix_products": 113, "maximum_integer_bits": 665, "maximum_polynomial_degree": 12, "maximum_polynomial_terms": 16}}

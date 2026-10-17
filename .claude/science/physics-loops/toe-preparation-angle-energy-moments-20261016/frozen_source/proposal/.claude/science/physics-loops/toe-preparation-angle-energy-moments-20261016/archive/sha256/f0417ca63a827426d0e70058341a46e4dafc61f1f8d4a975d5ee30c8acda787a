@@ -1,0 +1,27 @@
+{
+  "direct_mathematical_parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  "new_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 14391,
+    "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+  },
+  "context_only_not_mathematical_premises": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/DERIVATION.md",
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/DERIVATION.md",
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd"
+    }
+  ],
+  "source_exposure": "Root read the two context candidates before deriving this separate preparation-specific interface. No claim of blind independence.",
+  "scientific_executions": 0,
+  "status": "proposed_pending_separate_check"
+}

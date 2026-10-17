@@ -1,0 +1,48 @@
+# Proposed equality-safe finite coefficient compiler
+
+Root-original extension of SCALING_ADDENDUM.md7a48fcff, written2026-10-16 after the independent checker proposed lower-endpoint rounding. This algorithm and its bounds are proposed for separate review; no execution or coefficient certificate is asserted here. Earlier frozen proposals remain unchanged.
+
+## Initial-state qualification
+
+The additive delta_init trace statement requires an independent supplied source state sigma with ||sigma-|Phi+><Phi+|||_1<=delta_init, tensored with the arbitrary old/reference input, or directly a bound delta_init on the full initial old/reference/source state relative to that product. A source-marginal error alone does not bound arbitrary pre-existing source correlations by delta_init. This corrects the insufficiently qualified sentence in the original scaling addendum.
+
+## Finite rational construction
+
+For integer m>=0, take epsilon=2^-m, T=2^(2m+32), p=3m+39, h=2^-p, and n=p+8. The extra bit relative to the earlier floor-defined version pays for the safe two-h approximation error. For a in {5,239,7}, form the exact rational
+
+S_a(n)=sum_{j=0}^{n-1} (-1)^j/((2j+1)a^(2j+1)).
+
+The alternating-series interval for atan(1/a) has endpoints S_a(n) and S_a(n)+(-1)^n/((2n+1)a^(2n+1)); sort them as L_a,U_a. Form
+
+pi_L=16L_5-4U_239, pi_U=16U_5-4L_239,
+theta_L=pi_L/4+L_7, theta_U=pi_U/4+U_7.
+
+Machin's identity and theta=pi/4+atan(1/7) give certified enclosures for pi and theta. With n=p+8 and p>=39, both interval widths are <w=2^-(2p+12): each is bounded by20*5^-(2n+1), which is <20*2^-(4n+2)<2^-(2p+12). The same enclosures also have pi_L>3 and 0<theta_L<theta_U<1; these coarse inequalities follow already from the first terms and their alternating remainder bounds, or can be checked as rational guards.
+
+Set
+
+Delta_L=2-theta_U/pi_L, Delta_U=2-theta_L/pi_U,
+y_L=theta_L/T, y_U=theta_U/T,
+x_L=theta_L*Delta_L/(2T), x_U=theta_U*Delta_U/(2T).
+
+The true values Delta, gy^2, gx^2 lie in these respective intervals. The guards0<Delta_L<=Delta_U<2 and0<theta_L<theta_U<1 hold. Since pi_L>3, the Delta width is <w/3+w/9<w/2. The y width is <w/T; the x width is <(2w+w/2)/(2T)<2w/T. These conservative bounds suffice without computing a square root of an interval width.
+
+For a positive rational a=A/B, define
+
+k_p(a)=isqrt(floor(2^(2p) A/B)).
+
+Here isqrt is the exact integer floor square root. Then k_p(a)/2^p is a lower dyadic approximation to sqrt(a) with error <h. Because |sqrt(u)-sqrt(l)|<=sqrt(u-l), the x and y intervals have square-root width <sqrt(2w/T)<h/2. Define
+
+gxhat=k_p(x_L)/2^p,
+gyhat=k_p(y_L)/2^p,
+Deltahat=floor(2^p Delta_L)/2^p.
+
+All three values are lower approximants to the ideal coefficients with error <2h. The earlier lower bound gx,gy>2^-(m+17), together with2h<2^-(m+17), ensures strictly positive values. Lower rounding preserves every added incident cap, including Deltahat+2(gxhat+gyhat)<2. Each coefficient numerator uses at mostp+1 bits, and the common denominator2^p usesp+1 bits. The algorithm uses exactly3n alternating-series terms, rational arithmetic, three integer divisions and two integer floor square roots after the enclosures are built; it has no equality oracle, adaptive floor decision, floating-point approximation or unbounded convergence search. This is not a bit-complexity optimum claim.
+
+Retain rhat=2(gxhat+gyhat) exactly in the comparison source phase. The nonscalar generator defect is <10h. Thus on[T,T+24] its Duhamel contribution is
+
+10(T+24)h<20*2^(2m+32)*2^-(3m+39)=(5/32)epsilon.
+
+Combining with A(T)<epsilon/4 gives full-isometry error<13epsilon/32 and generic unhalved joint-reference trace error<epsilon. The constants and resource statements of the original scaling corollary remain, with sufficient precision O(epsilon^3) and coefficient bit lengths O(log(1/epsilon)). No actual coefficient list is claimed until an execution is separately reviewed and recorded.
+
+The compiler supplies mathematical rational coefficients. Physical calibration, new microscopic port/source permissions, product-state initialization, installation, external timing and final halt/reuse remain independent premises or obligations. It does not identify these interactions with the original four onsite positive control rays or modify any framework axiom.

@@ -1,0 +1,41 @@
+{
+  "start_utc": "2026-10-16T18:51:20.463941+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/metadata_runs/pre_enclosure_capture/source_at_launch.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/capture_pre_enclosure.py",
+    "bytes": 2189,
+    "sha256": "ba0118d4b298b0f3234f901c00f5f121fdad161323bfd729b55fc19b821936c0"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/metadata_runs/pre_enclosure_capture/source_at_launch.py",
+    "bytes": 2189,
+    "sha256": "ba0118d4b298b0f3234f901c00f5f121fdad161323bfd729b55fc19b821936c0"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/metadata_runs/pre_enclosure_capture/recorder_at_launch.py",
+    "bytes": 1912,
+    "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+  },
+  "expected_exit": 0,
+  "timeout_seconds": 60,
+  "scope": "New source-only packaging metadata; no historical science execution",
+  "end_utc": "2026-10-16T18:51:20.503030+00:00",
+  "elapsed_seconds": 0.038695957977324724,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/metadata_runs/pre_enclosure_capture/stdout",
+    "bytes": 640,
+    "sha256": "8a8783d664775e8233f66f8378849907780b2ff5aa8976cfaf92fdbb1677a4e8"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/metadata_runs/pre_enclosure_capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

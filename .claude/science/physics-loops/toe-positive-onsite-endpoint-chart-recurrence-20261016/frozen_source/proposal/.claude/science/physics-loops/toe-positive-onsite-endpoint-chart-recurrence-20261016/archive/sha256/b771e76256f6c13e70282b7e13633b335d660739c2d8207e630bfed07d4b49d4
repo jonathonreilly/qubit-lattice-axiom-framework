@@ -1,0 +1,309 @@
+"""One saved-evidence Fraction cross-check; no ODE or full enclosure replay."""
+from pathlib import Path
+from fractions import Fraction as F
+from datetime import datetime, timezone
+from math import comb, lcm
+import ast, hashlib, json, itertools
+O = Path.cwd()
+assert O.name == 'endpoint_chart_exposed_check'
+C = O / 'sources/candidate'
+S = 1 << 128
+
+def pin(p):
+    b = p.read_bytes()
+    return dict(path=str(p), bytes=len(b), sha256=hashlib.sha256(b).hexdigest())
+
+def rat(x):
+    x = F(x)
+    return dict(numerator=x.numerator, denominator=x.denominator)
+
+def parse_rat(x):
+    return F(x['numerator'], x['denominator'])
+
+def ir(a, b=None):
+    return F(a), F(a if b is None else b)
+
+def add(a, b):
+    return a[0] + b[0], a[1] + b[1]
+
+def neg(a):
+    return -a[1], -a[0]
+
+def sub(a, b):
+    return add(a, neg(b))
+
+def mul(a, b):
+    products = [x * y for x in a for y in b]
+    return min(products), max(products)
+
+def cp(r=0, i=0):
+    return ir(r), ir(i)
+
+def ca(a, b):
+    return add(a[0], b[0]), add(a[1], b[1])
+
+def cm(a, b):
+    return sub(mul(a[0], b[0]), mul(a[1], b[1])), add(mul(a[0], b[1]), mul(a[1], b[0]))
+
+def cj(a):
+    return a[0], neg(a[1])
+
+def dec(x):
+    assert len(x) == 4 and all(type(v) is int for v in x)
+    assert x[0] <= x[1] and x[2] <= x[3]
+    return ir(F(x[0], S), F(x[1], S)), ir(F(x[2], S), F(x[3], S))
+
+def contained(outer, inner):
+    return outer[0] <= inner[0] <= inner[1] <= outer[1]
+
+def cc(outer, inner):
+    return contained(outer[0], inner[0]) and contained(outer[1], inner[1])
+
+def total(xs):
+    z = cp()
+    for x in xs:
+        z = ca(z, x)
+    return z
+
+def mm(a, b):
+    return [[total(cm(a[i][k], b[k][j]) for k in range(4)) for j in range(4)] for i in range(4)]
+
+def ma(a):
+    return [[cj(a[j][i]) for j in range(4)] for i in range(4)]
+
+def scale_matrix(a, x):
+    return [[cm(x, v) for v in row] for row in a]
+
+def matrix(x):
+    assert len(x) == 16
+    return [[dec(x[4 * i + j]) for j in range(4)] for i in range(4)]
+
+def assert_matrix_enclosed(stored, reference):
+    got = matrix(stored)
+    for i in range(4):
+        for j in range(4):
+            assert cc(got[i][j], reference[i][j]), (i, j)
+
+def kron2(a, b):
+    return [[cm(a[i // 2][j // 2], b[i % 2][j % 2]) for j in range(4)] for i in range(4)]
+
+I2 = [[cp(1), cp()], [cp(), cp(1)]]
+X = [[cp(), cp(1)], [cp(1), cp()]]
+Y = [[cp(), cp(0, -1)], [cp(0, 1), cp()]]
+Z = [[cp(1), cp()], [cp(), cp(-1)]]
+I = kron2(I2, I2)
+paulis = [kron2(a, b) for a in [I2, X, Y, Z] for b in [I2, X, Y, Z]]
+rays = [[[ca(v, I[i][j]) for j, v in enumerate(row)] for i, row in enumerate(p)]
+        for p in [kron2(X, I2), kron2(Y, I2), kron2(I2, X), kron2(I2, Y)]]
+
+def gaussian_flat(a):
+    result = []
+    for row in a:
+        for re, im in row:
+            assert re[0] == re[1] and im[0] == im[1]
+            assert re[0].denominator == im[0].denominator == 1
+            result.append((int(re[0]), int(im[0])))
+    return result
+
+src = C / 'enclose_chart.py'
+assert pin(src)['sha256'] == 'af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9'
+tree = ast.parse(src.read_text())
+allowed = {'ceildiv', 'interval_scale', 'cadd', 'cdiv', 'cgaussian', 'rprod', 'cmul',
+           'ident', 'madd', 'mmul', 'adjoint', 'gmul', 'kron', 'coefficients',
+           'left_accumulate', 'pauli_coefficient'}
+extracted = [x for x in tree.body if isinstance(x, ast.FunctionDef) and x.name in allowed]
+assert {x.name for x in extracted} == allowed
+assert not any(x.name in {'main', 'step_polynomial'} for x in extracted)
+ns = dict(S=S, ZERO=(0, 0, 0, 0), ONE=(S, S, 0, 0), Q=F, lcm=lcm, KDIAG=[3, 1, 1, 3])
+exec(compile(ast.Module(body=extracted, type_ignores=[]), str(src) + ':isolated_arithmetic_only', 'exec'), ns)
+print('EXTRACTED_PURE_FUNCTIONS', sorted(allowed), flush=True)
+
+# Finite boundary cases include negative non-divisible integers and scale boundaries.
+pairs = [(-3*S-1, -S), (-S, -S), (-2, -1), (-1, 0), (-1, 1), (0, 0),
+         (0, 1), (1, 2), (S-1, S), (S, 2*S+3)]
+rects = [(a, b, c, d) for k, (a, b) in enumerate(pairs) for c, d in [pairs[(3*k+1) % len(pairs)]]]
+counts = dict(complex_product_cases=0, positive_division_cases=0, gaussian_multiplier_cases=0,
+              signed_scale_cases=0, coefficient_matrices=0, cached_global_matrices=0,
+              raw_complex_coordinates=0, jacobian_entries=0, residual_entries=0)
+for a, b in itertools.product(rects, repeat=2):
+    got = dec(ns['cmul'](a, b)); exact = cm(dec(a), dec(b))
+    assert cc(got, exact)
+    for g, e in zip(got, exact):
+        assert 0 <= e[0]-g[0] < F(1, S) and 0 <= g[1]-e[1] < F(1, S)
+    counts['complex_product_cases'] += 1
+for a in rects:
+    for d in [1, 2, 3, 7, 8, 17, S+1]:
+        got = dec(ns['cdiv'](a, d)); exact = cm(dec(a), cp(F(1, d)))
+        assert cc(got, exact)
+        for g, e in zip(got, exact):
+            assert 0 <= e[0]-g[0] < F(1, S) and 0 <= g[1]-e[1] < F(1, S)
+        counts['positive_division_cases'] += 1
+    for r, i in itertools.product([-3, -1, 0, 1, 2], repeat=2):
+        assert dec(ns['cgaussian'](a, r, i)) == cm(dec(a), cp(r, i))
+        counts['gaussian_multiplier_cases'] += 1
+for pair, k in itertools.product(pairs, [-3, -1, 0, 1, 2]):
+    got = ns['interval_scale'](pair, k)
+    assert tuple(F(v) for v in got) == mul(ir(*pair), ir(k))
+    counts['signed_scale_cases'] += 1
+print('DIRECTED_PRIMITIVES_CHECKED', counts, flush=True)
+
+# Independent binomial shift, exact literal matrix generators. No Taylor recursion executed.
+data = json.loads((C/'inputs/SELECTED_INPUT.json').read_text())
+nums = data['amplitude_numerators']
+for j, numerator in enumerate(nums):
+    amp = F(numerator, 512)
+    ray = rays[j % 4]
+    for step in range(8):
+        aa, ee, den = ns['coefficients'](amp, gaussian_flat(ray), step)
+        x = F(step, 8)
+        poly = [sum(F(base) * comb(n, k) * x ** (n-k)
+                    for n, base in enumerate([0, 0, 16, -32, 16]) if n >= k) for k in range(5)]
+        for k in range(5):
+            for kind, sparse in [('A', aa[k]), ('E', ee[k])]:
+                reconstructed = [[cp() for _ in range(4)] for _ in range(4)]
+                for row, entries in enumerate(sparse):
+                    for col, re, im in entries:
+                        reconstructed[row][col] = cp(F(re, den), F(im, den))
+                for row in range(4):
+                    for col in range(4):
+                        value = cm(ray[row][col], cp(poly[k] * (amp if kind == 'A' else 1)))
+                        if kind == 'A' and k == 0 and row == col:
+                            value = ca(value, cp([3, 1, 1, 3][row]))
+                        expected = cm(cp(0, -1), value)
+                        assert reconstructed[row][col] == expected
+                counts['coefficient_matrices'] += 1
+print('ALL_SHIFTED_GENERATOR_COEFFICIENTS_CHECKED', counts['coefficient_matrices'], flush=True)
+
+cert_path = C/'enclosure_001_output/certificate.json'
+pulse_path = C/'enclosure_001_output/pulse_intervals.json'
+assert pin(cert_path)['sha256'] == 'd4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509'
+assert pin(pulse_path)['sha256'] == '5d67868778e34ac003216906de643ce559a27bb025892ce878c3d10e59c5332b'
+cert, pulse = json.loads(cert_path.read_text()), json.loads(pulse_path.read_text())
+assert cert['scale_denominator'] == pulse['scale_denominator'] == S
+assert cert['pauli_order'] == [a+b for a in 'IXYZ' for b in 'IXYZ']
+assert len(pulse['pulse_U']) == len(pulse['pulse_D']) == 24
+pu = [matrix(a) for a in pulse['pulse_U']]
+pd = [matrix(a) for a in pulse['pulse_D']]
+prefix = [I]
+for a in pu:
+    prefix.append(mm(a, prefix[-1]))
+suffix = [None] * 25
+suffix[24] = I
+for j in range(23, -1, -1):
+    suffix[j] = mm(suffix[j+1], pu[j])
+u = prefix[-1]
+assert_matrix_enclosed(cert['global_truncated_U'], u)
+counts['cached_global_matrices'] += 1
+assert cert['selected_zero_based_indices'] == data['selected_zero_based_indices']
+assert len(cert['global_truncated_selected_derivatives']) == len(cert['raw_pauli_coordinates_by_column']) == 16
+pad = F(81, 1 << 67)
+assert parse_rat(cert['analytic_jacobian_entry_pad']) == pad
+for col, j in enumerate(cert['selected_zero_based_indices']):
+    d = mm(mm(suffix[j+1], pd[j]), prefix[j])
+    assert_matrix_enclosed(cert['global_truncated_selected_derivatives'][col], d)
+    counts['cached_global_matrices'] += 1
+    h = scale_matrix(mm(ma(u), d), cp(0, -1))
+    for row, p in enumerate(paulis):
+        ph = mm(p, h)
+        coeff = cm(total(ph[k][k] for k in range(4)), cp(F(1, 4)))
+        raw = cert['raw_pauli_coordinates_by_column'][col][row]
+        assert cc(dec(raw), coeff)
+        assert F(raw[2], S)-pad <= 0 <= F(raw[3], S)+pad
+        counts['raw_complex_coordinates'] += 1
+        lo, hi = cert['jacobian_real_intervals'][row][col]
+        assert (lo, hi) == (raw[0]-81*(1<<61), raw[1]+81*(1<<61))
+        assert contained(ir(F(lo,S), F(hi,S)), (coeff[0][0]-pad, coeff[0][1]+pad))
+        counts['jacobian_entries'] += 1
+print('CACHED_PULSE_TO_GLOBAL_AND_COORDINATES_CHECKED', counts, flush=True)
+
+# A fresh exact-Fraction residual implementation on the saved A, independent of candidate helpers.
+J = [[ir(F(lo, S), F(hi, S)) for lo, hi in row] for row in cert['jacobian_real_intervals']]
+rn, rd = cert['inverse_numerators'], cert['inverse_denominator']
+assert rn == data['rational_inverse_numerators'] and rd == data['rational_inverse_denominator'] == 1 << 40
+R = [[F(x, rd) for x in row] for row in rn]
+
+def residual(a):
+    rows = []
+    for i in range(16):
+        row = []
+        for j in range(16):
+            value = ir(0)
+            for k in range(16):
+                value = add(value, mul(ir(R[i][k]), a[k][j]))
+            row.append(sub(ir(int(i == j)), value))
+        rows.append(row)
+    return rows
+
+def square_bounds(a):
+    lower, upper = F(0), F(0)
+    for row in a:
+        for lo, hi in row:
+            lower += (F(0) if lo <= 0 <= hi else min(abs(lo),abs(hi))) ** 2
+            upper += max(abs(lo), abs(hi)) ** 2
+    return lower, upper
+
+actual_res = residual(J)
+assert len(cert['inverse_residual_intervals']) == 16
+for i, row in enumerate(cert['inverse_residual_intervals']):
+    assert len(row) == 16
+    for j, (lo, hi) in enumerate(row):
+        stored = ir(F(lo, S), F(hi, S))
+        assert contained(stored, actual_res[i][j])
+        assert 0 <= actual_res[i][j][0]-stored[0] < F(1,S)
+        assert 0 <= stored[1]-actual_res[i][j][1] < F(1,S)
+        counts['residual_entries'] += 1
+stored_res = [[ir(F(lo,S),F(hi,S)) for lo,hi in row] for row in cert['inverse_residual_intervals']]
+res_lower, res_upper = square_bounds(stored_res)
+assert res_upper == parse_rat(cert['residual_frobenius_square_upper']) < F(1,1<<76) < F(1,4)
+inv_square = sum(x*x for row in R for x in row)
+assert inv_square == parse_rat(cert['inverse_frobenius_square_exact'])
+assert 62**2 < inv_square <= 63**2 and cert['integer_B'] == 63
+assert all(contained(v, ir(F(-8,15))) for v in J[0])
+constants = {'certified_lower_sigma': F(1,126), 'chosen_s': F(1,252),
+             'chosen_t': F(25,229376), 'image_coordinate_rho': F(25,115605504),
+             'chosen_r': F(25,231211008), 'second_derivative_lipschitz_L': F(4096,225),
+             'analytic_step_error': F(81,1<<81), 'analytic_global_augmented_error': F(81,1<<69)}
+for name, value in constants.items():
+    assert parse_rat(cert[name]) == value
+c, L, s, t, radius = F(16,15), constants['second_derivative_lipschitz_L'], constants['chosen_s'], constants['chosen_t'], constants['chosen_r']
+assert t == min(F(1,8), s/(2*L), 1/(16*c))
+assert L*t/s == F(1,2) and 4*c*t <= F(1,4) and radius == s*t/4 <= F(1,8)
+assert sum(F(v,512) for v in nums) == F(1507,128)
+assert 48+F(8,15)*sum(F(v,512) for v in nums) == F(13027,240)
+majorant = sum(F(v)*F(1,4)**(k+1)/F(k+1) for k,v in enumerate([7,32,64,128,64]))
+assert majorant == F(773,240) < 4
+assert 3*192*F(81,1<<81) < F(1,2)
+
+# Perturb only the saved mathematical object; not a replay or modified physical trajectory.
+mutants = {}
+zero_center = [row[:] for row in J]; zero_center[0] = [ir(0) for _ in range(16)]
+mutants['omitted_identity_coordinate'] = zero_center
+mutants['opposite_derivative_sign'] = [[neg(x) for x in row] for row in J]
+mutants['trace_normalization_one_half_instead_of_one_quarter'] = [[mul(x,ir(2)) for x in row] for row in J]
+duplicate = [row[:] for row in J]
+for row in duplicate:
+    row[1] = row[0]
+mutants['duplicated_selected_column'] = duplicate
+control_results = {}
+for name, altered in mutants.items():
+    lower, upper = square_bounds(residual(altered))
+    assert lower > F(1,4), name
+    control_results[name] = dict(residual_square_lower=rat(lower), residual_square_upper=rat(upper),
+                                 rigorous_half_norm_gate_rejected=True, physical_ODE_reexecuted=False)
+print('ALL_FOUR_WRONG_OBJECT_CONTROLS_REJECTED', list(control_results), flush=True)
+Qbound = int(F(64,1)/radius) + 1
+Mbound = int(F(16,1)/radius) + 1
+result = dict(utc=datetime.now(timezone.utc).isoformat(),status='SCOPED_SAVED_EVIDENCE_CHECK_COMPLETED',
+    source=pin(src),certificate=pin(cert_path),pulse_intervals=pin(pulse_path),input=pin(C/'inputs/SELECTED_INPUT.json'),
+    counts=counts,extracted_function_names=sorted(allowed),
+    exact_residual_frobenius_square_upper=rat(res_upper),inverse_frobenius_square=rat(inv_square),
+    inverse_integer_bound=63,constants={k:rat(v) for k,v in constants.items()},
+    all_16_center_intervals_contain_minus_8_over_15=True,all_256_imaginary_coordinates_contain_zero_after_analytic_pad=True,
+    controls=control_results,existential_integer_bounds=dict(Q=Qbound,M=Mbound,n_upper=Qbound**4,T_star_upper=24*Mbound*Qbound**4,n_searched=False),
+    new_scoped_check_executions=1,full_enclosure_replays=0,selector_replays=0,ODE_steps_executed=0,
+    limitations='Finite arithmetic tests plus exact stored-evidence reconstruction; original pulse/Taylor enclosures not regenerated. Full source and analytic proof review remains essential. No formal runtime/hardware verification, root approval, audit, recurrence execution, target compilation or physical implementation.')
+assert not (O/'SCOPED_CHECK_RESULT.json').exists()
+(O/'SCOPED_CHECK_RESULT.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(result=pin(O/'SCOPED_CHECK_RESULT.json'),counts=counts,integer_B=63,
+                     sigma_lower='1/126',s='1/252',t='25/229376',r='25/231211008',
+                     four_controls_rejected=True,ODE_steps_executed=0),indent=2),flush=True)

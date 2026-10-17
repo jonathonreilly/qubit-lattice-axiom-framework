@@ -1,0 +1,7 @@
+# Current checkpoint
+
+ANALYSIS.md contains a proposed exact endpoint construction C=(pi-arctan(4/3))(I+XX)/T with full scalar. Its finite-window operator and worst joint trace errors are exactly 2 sin(24 gamma), below 2^-40 for the supplied T. All full-space cap, energy/moment, timing/precision, installation and physical-permission qualifications are explicit.
+
+The derivation is complete; FREEZE.json records its initial source seal after the metadata operation. Root review remains pending. No scientific code was run and the proposed scalar discriminator is unexecuted. The new author candidate has not been read. No prior frozen source was changed.
+
+Key remaining boundary: this supplies a static XX edge as a new actuator; it does not implement that edge from the four original onsite rays or supply a native apparatus. The generator remains on, with only a finite approximate quiet window; installation, input/output timing interfaces and indefinite halt/reuse remain separate. No canonical/publication/audit consequence is asserted.

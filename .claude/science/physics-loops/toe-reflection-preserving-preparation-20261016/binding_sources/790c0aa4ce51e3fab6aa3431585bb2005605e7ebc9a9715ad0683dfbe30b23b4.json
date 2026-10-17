@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T19:45:29.430384+00:00",
+  "baseRefName": "physics-loop/toe-interacting-preparation-control-work-20261016",
+  "headRefName": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+  "headRefOid": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+  "isDraft": false,
+  "number": 9650,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9650",
+  "tree": "1a4649b2fbce34536c4429fdc984754ad0879450",
+  "base_head": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 50813,
+    "sha256": "4b50362515e7a33c75e594be4bcf9c4e2191906d252b714cdb91aa610b33445a"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_angle_energy_moments_2026_10_16.py",
+    "bytes": 60716,
+    "sha256": "e282958658c5e12e8a4f7feb89740e4a9030e18ce3895803798494d6e2a0d75f"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/PR_BODY.md",
+    "bytes": 2078,
+    "sha256": "ec1d6f5cb1592b32ca4b135e32fbc455c70a630b1a5453478c36a93c5f5186b5"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

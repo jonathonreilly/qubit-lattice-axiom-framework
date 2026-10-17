@@ -1,0 +1,10 @@
+author_BOUNDED_SLEW_INSTALLATION_ADDENDUM.md: byte-identical, 5436 bytes, SHA256 47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6; no source diff.
+author_INSTALLATION_WORK_ADDENDUM.md: byte-identical, 2888 bytes, SHA256 398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f; no source diff.
+author_EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md: byte-identical, 6927 bytes, SHA256 18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0; no source diff.
+author_C1_MINIMUM_DURATION_RAMPS_ADDENDUM.md: byte-identical, 4521 bytes, SHA256 212571bcf9ed6837808f6d8347eb0c74ef1fab394b6672658018a27ba561d15b; no source diff.
+review_installation: byte-identical, 14347 bytes, SHA256 dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15; no source diff.
+review_installation_work: byte-identical, 11562 bytes, SHA256 81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a; no source diff.
+review_external_stop: byte-identical, 17827 bytes, SHA256 57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def; no source diff.
+review_c1_ramps: byte-identical, 13042 bytes, SHA256 5b4e50abaf3150c3089cc40e377f381659f21ffe89426c5ee2842032e90e331b; no source diff.
+controlling_product_source_mediator_installation_work_root_review: byte-identical, 3392 bytes, SHA256 43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977; no source diff.
+controlling_product_source_mediator_stop_c1_root_review: byte-identical, 4506 bytes, SHA256 218ddfbed74e18f18dc30c8103a6a10acadb7a50daeb0d10dd0ee5f4e207ab9a; no source diff.

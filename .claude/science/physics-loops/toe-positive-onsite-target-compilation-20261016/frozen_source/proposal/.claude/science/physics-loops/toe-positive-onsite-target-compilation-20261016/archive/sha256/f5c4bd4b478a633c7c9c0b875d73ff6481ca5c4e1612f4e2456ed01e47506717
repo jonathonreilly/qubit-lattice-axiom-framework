@@ -1,0 +1,154 @@
+{
+  "kind": "initial_analytical_reconstruction_before_new_candidate_program_exposure",
+  "utc": "2026-10-16T19:39:42.542142+00:00",
+  "files": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1661,
+      "sha256": "55f981e23d8abe889fb5c018a11b974c54ff0640b569af0e96dc04aa1bd3a863"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 17670,
+      "sha256": "b66cca6fa6e02bb93e7a7374a43f4ffee804dca24a5efed9297a75bce02ea845"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 2590,
+      "sha256": "b3a63fb0380c2691194043b935c53d70be11ea6483d847f1a1311991834d0afc"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 5313,
+      "sha256": "925036e8be9911e9e3f27353e243ccb2eb1e4a3cae393897b25375716df6c445"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 2591,
+      "sha256": "b5cb60e305f0c604b09e468b36ea77c7aaf3ac467a7a2b1729a800a7810e48ba"
+    },
+    {
+      "path": "metadata_run/EXECUTION.json",
+      "bytes": 2283,
+      "sha256": "8189d72c23588bb45198e35a047b292cecad1ee5ba58a5015b531bb3578c3d5e"
+    },
+    {
+      "path": "metadata_run/LAUNCH.json",
+      "bytes": 1554,
+      "sha256": "dfda32845e969e6aaa951b7156e8673d13a54815594ef62e9b8bc416d934ec63"
+    },
+    {
+      "path": "metadata_run/launcher_at_launch.py",
+      "bytes": 1405,
+      "sha256": "d36b56096556934fb3ddb5f4bfb7d14825dce53ec4036267b20199699d4f698d"
+    },
+    {
+      "path": "metadata_run/source_at_launch.py",
+      "bytes": 2591,
+      "sha256": "b5cb60e305f0c604b09e468b36ea77c7aaf3ac467a7a2b1729a800a7810e48ba"
+    },
+    {
+      "path": "metadata_run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata_run/stdout",
+      "bytes": 440,
+      "sha256": "222485a22ee7cefc5383d71c7e382d73c258b536a426833ada80a0781c3ec4ef"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1405,
+      "sha256": "d36b56096556934fb3ddb5f4bfb7d14825dce53ec4036267b20199699d4f698d"
+    },
+    {
+      "path": "seal_initial.py",
+      "bytes": 1689,
+      "sha256": "fc41c547b896a1cbaec762b0d0b6b59e10e6aace2fa6da0fed52f53a9ed7f32e"
+    },
+    {
+      "path": "sources/endpoint_chart_root_review/ACCEPTANCE.json",
+      "bytes": 6372,
+      "sha256": "112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7"
+    },
+    {
+      "path": "sources/endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "path": "sources/endpoint_chart_root_review/FREEZE.json",
+      "bytes": 375,
+      "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223"
+    },
+    {
+      "path": "sources/endpoint_recurrence_root_review/ACCEPTANCE.json",
+      "bytes": 6390,
+      "sha256": "36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e"
+    },
+    {
+      "path": "sources/endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+    },
+    {
+      "path": "sources/endpoint_recurrence_root_review/FREEZE.json",
+      "bytes": 375,
+      "sha256": "7e4268b5f1a848dda65213917045427fc56b68732a71d1a18c6fb99118b63065"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/CURRENT_SOURCE_MANIFEST.json",
+      "bytes": 3147,
+      "sha256": "9fef4c23bd764f87a3df822c2ee7f4725792f397d670a7accb8c27be1321d671"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/CURRENT_STATUS.md",
+      "bytes": 2510,
+      "sha256": "a8a9452cabe58e6aa54880c1a21e2fb1e8df4bb222631923400cd19bfa384f82"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/FREEZE.json",
+      "bytes": 6189,
+      "sha256": "c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/PROPOSAL.md",
+      "bytes": 15372,
+      "sha256": "9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/READ_GUIDE.md",
+      "bytes": 1707,
+      "sha256": "405c6a1b85e30fa0a963bb5905819439bf5d473cd5a1862030727500522632d8"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/SOURCE_MANIFEST.json",
+      "bytes": 11251,
+      "sha256": "c81e6097ae6afd03703b2eb643b82477325991369ac679f0002bb399d94d464b"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/sources/CHART_DERIVATION.md",
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "path": "sources/endpoint_target_compilation_proposal/sources/RECURRENCE_DERIVATION.md",
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    }
+  ],
+  "proposal_freeze": "c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/REVIEW.md",
+    "bytes": 17670,
+    "sha256": "b66cca6fa6e02bb93e7a7374a43f4ffee804dca24a5efed9297a75bce02ea845"
+  },
+  "candidate_source_or_output_viewed": false,
+  "scientific_executions": 0,
+  "metadata_child_executions": 1,
+  "actual_root_acceptance": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": [],
+  "seal_scope": "Tool-invoked deterministic source seal; no separate child-seal receipt or scientific execution claimed."
+}

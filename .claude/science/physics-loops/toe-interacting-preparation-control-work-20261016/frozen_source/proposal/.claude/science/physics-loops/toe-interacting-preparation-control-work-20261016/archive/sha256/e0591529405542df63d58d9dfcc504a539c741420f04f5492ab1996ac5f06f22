@@ -1,0 +1,138 @@
+{
+  "kind": "bounded_actual_source_and_receipt_metadata_verification",
+  "utc": "2026-10-16T17:16:57.149096+00:00",
+  "source_count": 13,
+  "source_records": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot_path": "sources/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "coverage": "new proposal: full read and independently reconstructed"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/SOURCE_MANIFEST.json",
+      "snapshot_path": "sources/interacting_ramp_bridge_root_proposal/SOURCE_MANIFEST.json",
+      "bytes": 2133,
+      "sha256": "f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8",
+      "coverage": "full read; declarations are not endorsements of unread source-screen material"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "snapshot_path": "sources/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "bytes": 393,
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "coverage": "full read and direct members checked"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot_path": "sources/inhomogeneous_uniform_word_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7",
+      "coverage": "full read this task; root decision, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot_path": "sources/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "coverage": "full read this task; controlling uniform compiler conditions"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "snapshot_path": "sources/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "bytes": 397,
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1",
+      "coverage": "full read and direct members checked"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot_path": "sources/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "coverage": "full read in preceding review; unchanged qualified mathematical parent reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "snapshot_path": "sources/inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "coverage": "self-authored earlier exposed review; full prior coverage; unchanged parent reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "snapshot_path": "sources/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2308,
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "coverage": "full read this task; comb decision, not new science"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "snapshot_path": "sources/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "coverage": "full read this task; controlling comb conditions; historical pending uniform status superseded by later uniform decision"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "snapshot_path": "sources/inhomogeneous_local_control_root_review/FREEZE.json",
+      "bytes": 705,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "coverage": "full read and direct members checked"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "snapshot_path": "sources/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "coverage": "full read in preceding comb review; unchanged qualified mathematical parent reused"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "snapshot_path": "sources/inhomogeneous_local_control_root_exposed_check/REVIEW.md",
+      "bytes": 24388,
+      "sha256": "71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e",
+      "coverage": "self-authored earlier exposed review; full prior coverage; unchanged parent reused"
+    }
+  ],
+  "freeze_checks": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "direct_members_verified": 2,
+      "recursive_archive_traversal": false
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "direct_members_verified": 2,
+      "recursive_archive_traversal": false
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "direct_members_verified": 2,
+      "recursive_archive_traversal": false
+    }
+  ],
+  "actual_new_scientific_execution": {
+    "receipt_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/EXECUTION.json",
+    "bytes": 2490,
+    "sha256": "20d95eab56dba2cb00f7b5222e05fdc99f717e29b1e8bd8f66e1e6d88ee5ba15",
+    "exit_code": 0,
+    "started_utc": "2026-10-16T17:11:07.729479+00:00",
+    "finished_utc": "2026-10-16T17:11:08.223403+00:00",
+    "source_and_stream_identities_checked": true,
+    "stdout_matches_saved_result": true
+  },
+  "scientific_runs_this_task": 1,
+  "prior_scientific_runs_replayed": 0,
+  "failed_scientific_launches_this_task": 0,
+  "read_coverage_is_not_claimed_from_hashes": true,
+  "all_recursive_prior_evidence_archives_copied": false,
+  "source_exposed": true,
+  "same_model": true,
+  "shared_parent_author": true,
+  "root_acceptance_of_this_review": null,
+  "retained_audit": false,
+  "publication": null,
+  "editable_prompt_files_changed": [],
+  "parent_mutations": []
+}

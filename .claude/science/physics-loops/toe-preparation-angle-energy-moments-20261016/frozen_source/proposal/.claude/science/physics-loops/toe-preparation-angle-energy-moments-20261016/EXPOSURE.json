@@ -1,0 +1,12 @@
+{
+  "same_model_source_exposed": true,
+  "source_exposed": true,
+  "prior_preparation_and_integration_exposure": true,
+  "blind_independence": false,
+  "different_model_replication": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_executions_for_result": 0,
+  "historical_root_metadata_failed_runs": 1,
+  "historical_root_metadata_successful_runs": 1,
+  "retained_audit": false
+}

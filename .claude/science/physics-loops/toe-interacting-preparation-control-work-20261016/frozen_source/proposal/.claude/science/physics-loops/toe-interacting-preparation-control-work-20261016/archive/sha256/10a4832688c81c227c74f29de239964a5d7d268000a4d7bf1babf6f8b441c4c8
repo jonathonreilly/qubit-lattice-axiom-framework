@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-16T18:05:58.571157+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/DERIVATION.md",
+    "bytes": 27317,
+    "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/FREEZE.json",
+    "bytes": 3352,
+    "sha256": "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check/REVIEW.md",
+    "bytes": 22348,
+    "sha256": "9d5673aa82a5cbf61a3ee3a80ee485bb26e1241a7f91b012c816b590d90de9a8"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check/FREEZE.json",
+    "bytes": 8192,
+    "sha256": "906cf5f7164e8595ec9b9a0c89c104a507dfcbfecd74581a0c946ae75fb2eb34"
+  },
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 6708,
+    "sha256": "7085ae52c53237e42ef735fb0a8e0d057ce8f4a625da5a37a23de697be3c8212"
+  },
+  "root_read_complete": true,
+  "corrections": [
+    "Private comb M=L+2, not M=L+q; proof already valid for M>=L.",
+    "Fixed admissible fault envelope must fit the declared idle interval; asymptotic sufficiently-large-L realization only without a separate finite guard."
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "canonical_acceptance": null,
+  "publication": null,
+  "editable_prompt_files_changed": []
+}

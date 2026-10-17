@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-16T15:31:41.358318+00:00",
+  "kind": "exact_structural_inspection_and_floating_saved_matrix_reanalysis",
+  "fixture_freeze_member_count": 22,
+  "captured_source_records": 23,
+  "source_and_receipt_hashes_verified": true,
+  "compiler_imported_or_replayed": false,
+  "gate_emission_executed": false,
+  "gate_propagation_executed": false,
+  "new_interval_certificate": false,
+  "route_inspection": [
+    {
+      "word": "routed",
+      "logical_gates": 6384,
+      "physical_gates": 24720,
+      "counts": {
+        "A": 5040,
+        "SWAP": 18336,
+        "Z": 1344
+      },
+      "all_route_groups_exactly_checked": true,
+      "operand_order_and_return_permutation_exact": true,
+      "A_distance_histogram": {
+        "1": 1008,
+        "2": 1056,
+        "3": 816,
+        "4": 2160
+      },
+      "A_operand_pair_histogram": {
+        "0,1": 288,
+        "0,2": 288,
+        "0,3": 288,
+        "1,0": 240,
+        "1,2": 48,
+        "1,3": 48,
+        "1,4": 144,
+        "2,0": 384,
+        "2,1": 48,
+        "2,3": 48,
+        "2,4": 288,
+        "3,0": 384,
+        "3,1": 48,
+        "3,2": 48,
+        "3,4": 288,
+        "4,0": 2160
+      }
+    },
+    {
+      "word": "mutant_routed",
+      "logical_gates": 1824,
+      "physical_gates": 4320,
+      "counts": {
+        "SWAP": 2496,
+        "A": 1440,
+        "Z": 384
+      },
+      "all_route_groups_exactly_checked": true,
+      "operand_order_and_return_permutation_exact": true,
+      "A_distance_histogram": {
+        "1": 576,
+        "2": 480,
+        "3": 384
+      },
+      "A_operand_pair_histogram": {
+        "0,1": 288,
+        "0,2": 288,
+        "0,3": 288,
+        "1,0": 96,
+        "1,2": 48,
+        "1,3": 48,
+        "2,0": 96,
+        "2,1": 48,
+        "2,3": 48,
+        "3,0": 96,
+        "3,1": 48,
+        "3,2": 48
+      }
+    }
+  ],
+  "complete_target_saved_arrays_match": true,
+  "nominal_saved_matrix_residuals": {
+    "complete_isometry_operator_norm": 2.9508448902312835e-13,
+    "complete_isometry_frobenius_norm": 8.930355179806793e-13,
+    "maximum_column_l2_error": 2.9506123471984577e-13,
+    "identity_off_selected_operator_norm": 2.950835855960473e-13,
+    "ancilla_one_leakage_operator_norm": 1.203455149051588e-14,
+    "isometry_defect_operator_norm": 5.90018483444466e-13
+  },
+  "additional_saved_matrix_findings": {
+    "logical_and_routed_saved_matrices_equal": true,
+    "mutant_saved_operator_error": 1.8461538461538018,
+    "mutant_difference_from_24_over_13": 4.440892098500626e-14,
+    "positive_saved_operator_error": 3.6647411565014315e-12,
+    "endpoint_saved_operator_error": 5.44294855010996e-12,
+    "all_columns_l2_error": [
+      3.1421469200065623e-15,
+      1.1613677119556264e-13,
+      1.1737183164600005e-13,
+      2.154179083864807e-13,
+      1.8308819397203657e-13,
+      1.8053680791003691e-13,
+      1.9018169482760744e-13,
+      2.639257964863744e-13,
+      2.0299638897097793e-13,
+      2.9506123471984577e-13,
+      2.9384529929187803e-13,
+      2.728726305573165e-13,
+      2.666700492417471e-13,
+      2.6706803667515757e-13,
+      2.680824530002518e-13,
+      2.2025760166249095e-13
+    ],
+    "saved_full_routed_unitarity_defect": 5.904525925507249e-13
+  },
+  "matrix_shapes": {
+    "target_v": [
+      2,
+      2
+    ],
+    "givens": [
+      2,
+      2
+    ],
+    "target_u": [
+      16,
+      16
+    ],
+    "input_j": [
+      32,
+      16
+    ],
+    "expected": [
+      32,
+      16
+    ],
+    "logical_u": [
+      32,
+      32
+    ],
+    "routed_u": [
+      32,
+      32
+    ],
+    "routed_isometry": [
+      32,
+      16
+    ],
+    "mutant_isometry": [
+      32,
+      16
+    ],
+    "positive_isometry": [
+      32,
+      16
+    ],
+    "endpoint": [
+      32,
+      16
+    ]
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "macOS-26.6.2-arm64-arm-64bit"
+}

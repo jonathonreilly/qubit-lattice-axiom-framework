@@ -1,0 +1,147 @@
+# Analytical reconstruction of one complete actual-time target word
+
+Disposition before candidate-program exposure: the proposed conditional contraction and final direct-word certificate are mathematically consistent with the specified qualified chart and recurrence premises. I found no blocking defect. This does **not** establish an emitted calibrated word, successful interval computation, hardware supplier or generic compiler. The fixed degree, dyadic scale and 600-second limit are proposed execution choices; contraction does not guarantee their success. The exact program and any output remain unseen at this freeze.
+
+This is a same-model, source-exposed analytical check of proposal `9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f`, freeze `c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3`. It uses qualified parent facts without replaying or independently regenerating their ODE certificates. No numerical/scientific program was executed here. The only subprocess captured in this packet performs source copying and identity checks.
+
+## 1. Exact premises and current status
+
+Use the literal dimensionless plant K=2I+ZZ, four positive onsite rays I+X1, I+Y1, I+X2, I+Y2, the exact 24 nominal rational amplitudes and selected coordinate order in the chart. Every slot has length one and envelope psi(s)=16s^2(1-s)^2. The selected vector is real, 16-dimensional, with Euclidean norm. Pauli coefficients are Tr(P_mu H)/4 for Hermitian H; their norm is ||H||F/2<=||H||op. No scalar row or reserve may be removed.
+
+The imported chart facts are ||I-R A||op<=||I-R A||F<2^-38, ||R||op<=||R||F<=B=63, L=4096/225, c=16/15, t=25/229376=1/(8BL), r=25/231211008=t/(16B), and Lipschitz endpoint bound ||F(a0+x)-F(a0+x')||<=4c||x-x'||. The exact R and ordering must come from the qualified certificate, not a regenerated numerical inverse.
+
+The imported recurrence is D=U0^n, ||D-I||op<10^-13, with the specified positive n. Its fresh degree320/eight-step/scale2^768 rectangle contains the exact product Uhat of truncated Taylor steps; ||Uhat-U0||<=e0=31104/2^321. Its saved power rectangle contains the exact matrix Dhat=Uhat^n, with ||Dhat-D||<=eta_D=2n e0. A rectangle is not a unitary matrix, and arbitrary members of it are not required to satisfy these analytic bounds.
+
+Chart acceptance112ecd184b and qualification6cf3c69fa2 are current. Recurrence acceptance36e72537f8 and qualification69af491dcc are later than the proposal's preserved pending label and now control its premise use. This review does not rewrite historical labels or extend either acceptance. Exact complete identities and captures are in SOURCE_IDENTITIES.json.
+
+## 2. Target, projector phases and fixed chronology
+
+Let s=(3+4i)/5 and V=(3I+4iXX)/5. Since (XX)^2=I, VV*=I and |s|=1. The proposed W=sV is exactly Gaussian rational and unitary. In the XX eigenbasis, its eigenvalues are w=s^2=(-7+24i)/25 on x=+1 and 1 on x=-1, each twice. Thus det W=w^2=(-527-336i)/625. On |00>, its two coefficients have moduli3/5 and4/5; it is genuinely entangling on that product input. Because XX commutes with ZZ, W commutes with K. This is a deliberately restricted target and has zero ideal modeled net work; neither arbitrary targets nor nonzero target work are demonstrated.
+
+The commuting independent Pauli involutions ZZ and XX give P_(z,x)=(I+zZZ)(I+xXX)/4. Each is a projector; its trace is one; they are orthogonal and sum to I. K acts on it by2+z and W by w when x=+1 or1 when x=-1. These exact projectors avoid numerical eigenspace or equality decisions.
+
+The multiplication defining duration is internally consistent: 24M=3,551,401,104 for M=147,975,046, and long multiplication gives exactly the displayed T=24Mn. The base1000 output groups, from highest to lowest, are
+
+    350|208|522|228|384|946|904|887|108|861|751|911|074|590|975|328|100|424|043|350|794|320.
+
+This is paper reconstruction, not an executed arithmetic check. The later program should still assert the exact integer identity. Also16/r=147,975,045+3/25, so M=floor(16/r)+1 and4/M<r/4 strictly. M<2^28, n<2^187 and therefore T=24Mn<2^220.
+
+All n,M,T are fixed before forming V_T=W exp(-iTK). In each block apply varied F first, then n-1 nominal templates. Chronological left multiplication gives
+
+    B=U0^(n-1) F=D U0* F.
+
+The dagger is solely an algebraic rewrite. The implemented word has only forward time and repeats that same block M times, so its endpoint is B^M in exactly24Mn slots. One may not reverse the block order, replace U0* by a physical inverse, or identify a compressed repetition tree with short elapsed time. No target-dependent slot lengths enter, so there is no time/target circularity. Noncommutation of D and Z is harmless because the proof never interchanges them.
+
+For any integers k,m_(z,x), with theta=T-2pi k and phi_(z,x)=1_(x=+1)phi_w-(2+z)theta-2pi m_(z,x), define Z=sum P_(z,x) exp(i phi_(z,x)/M). Then, exactly,
+
+    Z^M=sum P_(z,x) exp(i phi_(z,x))=W exp(-iTK)=V_T.
+
+The integer shifts disappear because2+z is an integer. No determinant normalization is involved. If all |phi|<4, ||Z-I||<=max|phi|/M<r/4.
+
+## 3. A separate derivation of the phase construction and tail bounds
+
+The tangent addition identity gives atan(4/3)=pi/4+atan(1/7), with both sides in(0,pi/2). Thus phi_w=pi/2+2atan(1/7)=2atan(4/3), and exp(i phi_w)=(-7+24i)/25. Its quadrant and sine/cosine select the intended w, including its sign.
+
+Put S_m(q)=sum_(j=0)^(m-1) (-1)^j/[(2j+1)q^(2j+1)]. For q>1 and even m=128, the alternating-series bounds are
+
+    S_128(q) <= atan(1/q) <= S_128(q)+1/[257 q^257].
+
+Equality is unnecessary; the displayed rational closed bounds suffice. tan(2atan(1/5))=5/12 and tan(4atan(1/5))=120/119. Subtraction of atan(1/239) has tangent1 and angle in(0,pi/2), yielding the exact Machin identity pi=16atan(1/5)-4atan(1/239). Signed interval subtraction must reverse the second interval's endpoints.
+
+Before rounding, the pi interval width is at most16/[257*5^257]+4/[257*239^257]. Since5>4 and257>256, it is less than20*2^-522<2^-517. Rounding both endpoints outward to denominator2^512 adds at most2^-511. Hence the stated width<=2^-508 is conservative. The same128 terms for atan(1/7) have still smaller unrounded remainder. This proves a sufficient analytic width, without inspecting a future implementation or producing its actual huge rationals.
+
+For an exact rational midpoint p, nearest-integer k to T/(2p) satisfies |T-2pk|<=p. From3<pi<4, T<2^220 and the tiny enclosure, |k|<2^218. Replacing p by pi adds at most |k| times the pi interval width; the complete theta interval has width below2^-289 and lies strictly within(-4,4). The subsequent nearest-integer reductions of the four bounded raw phases have tiny uncertainty and the same open margin from pi to4. Any deterministic rational tie choice works. No transcendental equality, principal-branch classification or floating remainder is required. Nevertheless the actual saved interval containment must be checked for the chosen integers.
+
+For every real |u|<=4, the degree256 exponential polynomial has remainder at most
+
+    exp(4)*4^257/257! <81*4^257/257!.
+
+This follows by the absolute factorial-series tail or integral remainder. Even the crude bound257!>=128^130 shows this remainder is below2^-389, far below the requested coordinate accuracy. Directed evaluation must include this tail and input-interval uncertainty; a polynomial midpoint alone is insufficient.
+
+For the direct target, form zeta=exp(-i theta), then diag(zeta^3,zeta,zeta,zeta^3), then left-multiply exact W. This uses the |theta|<4 tail. Applying that same |u|<=4 formula directly to -3theta without reduction would not be justified; the proposed cubing route avoids that error. The final target enclosure must contain the exact V_T, independently of whether Z was chosen or calibrated correctly.
+
+## 4. Contraction, exact solution and approximate iterations
+
+Use G(x)=coeff Im(U0*F(a0+x)) and y=coeff Im(D*Z). The norm of coeff Im(M) is <=||M||op. Thus
+
+    ||y||<=||D*Z-I||<=||D-I||+||Z-I||<10^-13+r/4<r/2.
+
+The last strict inequality has a wide margin since r/4=25/924844032. For Phi_y(x)=x+R[y-G(x)],
+
+    ||D Phi_y(x)||<=||I-RA||+||R|| ||DG(x)-A||
+                  <2^-38+B L t=2^-38+1/8<1/4.
+
+Also Phi_y(0)=Ry and ||Ry||<Br/2=t/32. Hence the closed t-ball maps inside radius9t/32 and is a contraction. Banach gives one interior fixed point x*. Since RA is invertible and square, R is invertible, so the fixed-point equation forces G(x*)=y rather than merely R(G-y)=0.
+
+The endpoint difference is <=4c||x*||<=4ct<1/4. Both U0*F(a0+x*) and D*Z are therefore unitary with strictly positive real Hermitian part. Writing such a unitary A+iB, the two unitarity equations give[A,B]=0 and A^2=I-B^2. Positivity forces A=(I-B^2)^(1/2), uniquely. Equality of the16 imaginary coordinates therefore identifies the complete unitary, not just its imaginary part or projective class. Consequently
+
+    F(a0+x*)=U0 D* Z,    D U0* F(a0+x*)=Z.
+
+For an implemented iteration, suppose both y and G(x_k) have certified vector error<=2^-108. Coordinate radii<=2^-110 suffice because there are16 coordinates. R is applied exactly. Nearest rounding of each result to2^-128 gives coordinate error<=2^-129 and vector error<=2^-127. Thus the map defect is
+
+    d<=63*(2*2^-108)+2^-127<2^-100<t/32.
+
+The exact map plus this defect sends the t-ball inside10t/32<t/2. Starting at zero, all approximate iterates stay inside the valid ball. Their errors obey E_(k+1)<=E_k/4+d and E_0<=t. Hence
+
+    E_32<=t*4^-32+(4/3)*2^-100.
+
+Telescoping the M unitary blocks costs at most M times the single-block error, and the endpoint Lipschitz constant is4c. Therefore
+
+    ||B(x_32)^M-V_T||<=4cM[t*4^-32+(4/3)*2^-100].
+
+Since M<2^28,4c<5,t<2^-13, the first term is<5*2^-49<2^-46 and the second<2^-69. The total is<2^-45<epsilon=2^-40. No additional n multiplies this parameter-fit error: only M varied templates are inaccurate relative to the exact calibrated template. Physical faults in the nominal templates have a separate Mn amplification below.
+
+G(0)=0 exactly, so the32 iterations require evaluations at x1 through x31 and one final endpoint at x32: at most32 new endpoints. This count does not prove that the fixed degree/scale or wall limit meets every certified-width requirement.
+
+## 5. Necessary enclosure obligations and the decisive final test
+
+The widths requested for y and G must include analytic endpoint errors, not only rectangle rounding. If a G calculation uses the fresh truncated Uhat and Fhat, its analytic matrix difference from U0*F is bounded by
+
+    e0(1+e_a)+e_a,    e_a=e0.
+
+This is also a valid conservative per-coordinate pad after Im and normalized Pauli projection. For y, if the target/root rectangle already contains the exact Z, multiplication with the exact truncated Dhat requires the additional eta_D pad. If an unpadded truncated Zhat is used instead, its own analytic error e_Z must also be included, giving eta_D(1+e_Z)+e_Z. The old degree80 endpoint is not an adequate unnoticed substitute for a requested2^-108 accuracy. The supplied R remains valid because its inverse-residual premise concerns the true Jacobian.
+
+The fixed degree320 tail remains valid for the calibrated templates: all amplitudes remain in[1/4,3/4], hence below1, exactly the bound needed by the parent's conservative majorant. The same192-step U-only telescoping gives e_a=e0. An actual implementation must separately demonstrate its directed widths; this analytical tail does not bound every possible interval wrapping width.
+
+At the exact-matrix level define Dhat=Uhat^n and Bhat=Dhat Uhat* Fhat. The difference from B=D U0*F is bounded, without any commutation or unitarity assumption on hatted matrices, by
+
+    beta=eta_D(1+e0)(1+e_a)+e0(1+e_a)+e_a.
+
+This follows by changing Dhat first, then Uhat*, then Fhat, retaining the norms of the remaining approximate factors. Repeated use of a shared uncertain matrix can widen a rectangle; it cannot exclude this particular exact product if every interval operation is outward.
+
+Because B is unitary and ||Bhat-B||<=beta,
+
+    ||Bhat^M-B^M||<=M beta(1+beta)^(M-1)<2M beta
+
+whenever M beta<1/2. A simple independent size check uses n<2^187 and31104<2^15: e0<2^-306, eta_D<2^-118. The displayed beta is then<2^-117, so M beta<2^-89 and2M beta<2^-88. These are conservative symbolic bounds, not a replacement for the later exact rational checks.
+
+Let the computed difference rectangle contain the exact Bhat^M-V_T. For scale S, summing the squared largest absolute real and imaginary integer endpoints and dividing by S^2 bounds its squared Frobenius norm, hence its squared operator norm. Thus the strict test
+
+    epsilon-2M beta>0,
+    D_res^2<(epsilon-2M beta)^2
+
+is sufficient for ||B^M-V_T||<epsilon. It includes every entry and global phase. It remains sufficient even if the contraction iteration has an internal selection defect, provided the emitted amplitudes are legal and the final endpoint, product, target and error enclosures are independently correct. Conversely an unpadded midpoint, omitted scalar, reversed product, missing scale S^2 or an assumed unitary Bhat would invalidate this inference. No such future source has yet been inspected here.
+
+## 6. Scalar, physical errors and resources
+
+The complete scalar action per nominal template is alpha0=48+(8/15)sum a0=13027/240. Each varied template adds(8/15)sum_selected x_j. There are M varied and M(n-1) nominal templates, so
+
+    alpha_total=Mn alpha0+(8M/15)sum_selected x_j.
+
+All of exp(-i alpha_total) remains in the endpoint. The comparator contains det W and det exp(-iTK)=exp(-8iT). The U(4) chart's identity coordinate is essential; no scalar is restored for free or discarded because endpoint density-operator energy is phase-insensitive.
+
+All calibrated amplitudes remain positive. At most one ray is active, every envelope and first derivative vanishes at the joins, and the parent cap family is preserved: added norm<=3/2 and slew<=12 in dimensionless units, fitting caps2 and16. The literal old norm3 stays installed. In supplied physical units the caps are2E0 and16E0^2/hbar; these are not claims for arbitrary smaller prescribed caps. Duration is T_lab=(hbar/E0)T, pulse count24Mn and absolute modeled control variation<=72Mn E0. A short serialization is not a small physical resource bound.
+
+For actual errors define eta_drive=(1/hbar)integral||H_actual-H_programmed||dt in physical units (the factor is one in the dimensionless convention). Duhamel adds eta_drive to the compiled operator error. Uniform amplitude error delta_a over all24Mn pulses costs c(24Mn)delta_a, including reserve errors. The illustrative sufficient allocation delta_a<=2^-300 gives a contribution<2^-79 from T<2^220 and c<2. This is not a necessary precision lower bound, a hardware supply or a claim that128-bit emitted displacements alone ensure the full physical accuracy. In-pulse timing, clock, drift, waveform and spillover defects require their actual integrated generator budget. A post-off timing mismatch admits the conservative upper bound ||K|| |delta_T|; it need not produce that much error because recurrence cancellation is possible.
+
+Tensoring a passive reference leaves the operator norm bound unchanged. On any unknown joint old/reference state, unhalved trace error is <=2(epsilon+eta_drive), plus an explicitly compared initial trace error. There are no new quantum registers, so no omitted quantum battery/ancilla output within this two-qubit model. External controller outputs are outside the supplied model, not proved restored.
+
+At zero-control endpoints, modeled net work is Tr K(rho_f-rho_i). Since[W,K]=0, the ideal V_T preserves K expectation on every input. Initial/final comparator errors cost width(K)(delta_i+delta_f)/2; width(K)=2 dimensionlessly or2E0 physically. Residual endpoint controls add their own actual expectation or norm allowances. Zero ideal net work does not imply zero absolute variation, microscopic drive cost, autonomous timing/halt or indefinite reuse.
+
+## 7. Remaining obligations and exposure limit
+
+The remaining substantive witness is the exact16 dyadic displacements, legal amplitude list, phase-reduction integers/enclosures, intermediate certified widths/domains, final calibrated endpoint and complete residual certificate. The fixed-order/precision/wall supplier may stop honestly on failure. It has not succeeded merely because the analytical contraction has a solution. The direct residual is the final robust acceptance condition, with separate source/receipt inspection and any later authorized arithmetic check.
+
+The chosen W is one exact commuting entangler; a successful witness would not be an efficient arbitrary-matrix compiler, a new many-qubit result, an improved existential recurrence-duration bound or a native controller. The explicit n is larger than the parent's existential Q^4 scale. Same-model exposure, trusted parent ODE/code/runtime and the lack of formal proof-assistant or retained-audit status persist.
+
+I read the complete new proposal/current-status text, both complete qualified parent decisions/qualifications and the complete captured chart/recurrence derivations. I reused their qualified finite certificates rather than revalidating their source/execution. I did not read endpoint_target_compilation_candidate or any of its source/output, inspect another new target review, run a science calculation, change a parent, or alter W/Git/PR/audit/lock/prompt/axiom state. Exact metadata evidence and reading limits are recorded in SOURCE_COVERAGE.md. This initial reconstruction is sealed before any separately authorized program exposure.

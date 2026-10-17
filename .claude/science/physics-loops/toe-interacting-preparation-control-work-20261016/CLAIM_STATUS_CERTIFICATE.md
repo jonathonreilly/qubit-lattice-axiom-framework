@@ -1,0 +1,7 @@
+# Claim status certificate
+
+Conditional-support bounded theorem with supplied literal interacting K, positive complements on actual supports, independent vacuum/isolation, complete runtime and number-changing preparation controls, phase references and calibrated schedules. Nine complete original/review/qualification bodies remain unchanged. M=L+2 and the sufficiently-large idle-interval restriction control the fault example.
+
+Exact noncommuting forward ramps, full E_p aging and A=L_b* V E_p* R_b* order, actual scalar, every old/resource/ancilla/reference output, positive reserves, incident strength/slew and original F0 energy remain explicit. Fixed-q nominal O(epsilon^-4) time excludes classical compilation. Phase-generator epsilon^5 and cancellation-input epsilon^9 requests differ. Full energy moments retain growing widths and covariance.
+
+Coherent runtime charge/work bounds need actual fixed bandwidth and global/summed residual certificates; they do not silently cover number-changing preparation, arbitrary baths or higher moments. Endpoint scalar corrections and absolute work are separate. One historical floating bridge discriminator is not certified ODE/physical synthesis; two later extensions are analytical. Failed metadata attempts and exposure limits remain preserved. No science replay, blind replication, physical supply, autonomous halt/reuse or retained audit is claimed. Source/canonical/staged approvals must be separately bound before execution.

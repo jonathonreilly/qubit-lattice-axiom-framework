@@ -1,0 +1,66 @@
+{
+  "kind": "root_qualified_source_publication_review",
+  "utc": "2026-10-16T18:35:06.431258+00:00",
+  "root_read_complete": true,
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/FREEZE.json",
+    "bytes": 47157,
+    "sha256": "a82254aa003e3de63109e532adca46c771ec122d910528e9f9ff0f9e2e8996e2"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 181877,
+    "sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/scripts/interacting_preparation_control_work_2026_10_16.py",
+    "bytes": 30714,
+    "sha256": "c3ec48fd5b100f5728a011f414229eb9ee9b1eae9bfd1806a2b993bd86053ef2"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-interacting-preparation-control-work-20261016/SOURCE_MANIFEST.json",
+    "bytes": 143581,
+    "sha256": "1e449fa38c072d38701c67e1fdb91d7b5c6f502604caf3bc2ef556073315994d"
+  },
+  "source_wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 13553,
+    "sha256": "c3f11823e87314d4a34a70fad680db440ba2a3e0f15cc20b6d6a973d27764a36"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_interacting_control_qualified_publication_review/REVIEW.md",
+    "bytes": 3499,
+    "sha256": "b2212f5774a67bc54838030f161ea534cdee112073a3cc755755f8541587d7a7"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_interacting_control_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+    "bytes": 5309,
+    "sha256": "2003f463c73b9df92850cb3cc2e267c90490e5ec216b0bb90eef713fd06790bf"
+  },
+  "immutable_bodies": 9,
+  "source_aliases": 219,
+  "archive_objects": 120,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3131,
+      "sha256": "c57bfb37f63407fd1e5cd1c422a57d8c6dfa26eadfbc34be2cf3464ebe79ca23"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3169,
+      "sha256": "1f978afcfaa88a639b6b3dd5c4cb4ac7d9c0ca36fbe7c6dae732f8ac2288fb29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2320,
+      "sha256": "719efd69aef92bc6abfd2e7ca506810b890eaedbf6d232071427a07c4861df9b"
+    }
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

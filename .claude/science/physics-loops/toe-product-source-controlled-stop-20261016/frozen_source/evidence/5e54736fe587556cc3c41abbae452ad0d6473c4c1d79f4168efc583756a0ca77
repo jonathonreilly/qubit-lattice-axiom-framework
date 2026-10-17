@@ -1,0 +1,28 @@
+"""Metadata-only source capture; no scientific or mathematical program run."""
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+N=ROOT.parent
+SOURCES=[('product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md', 2888, '398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f', 'complete new source read'), ('product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md', 5436, '47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6', 'complete necessary premise reread'), ('product_source_mediator_candidate/PROPOSAL.md', 7613, 'aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248', 'previous full read reused at exact identity'), ('product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md', 4274, 'afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065', 'previous full read reused at exact identity'), ('product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md', 3322, '8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f', 'complete necessary premise reread'), ('product_source_mediator_root_review/QUALIFICATION.md', 4414, 'e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7', 'previous full read reused at exact identity'), ('product_source_mediator_pauli_root_review/QUALIFICATION.md', 2333, '1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9', 'previous full read reused at exact identity'), ('product_source_mediator_installation_exposed_check/REVIEW.md', 14347, 'dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15', 'own completed sealed review reused, not fresh independence')]
+FREEZES=[
+ ('product_source_mediator_installation_exposed_check/FREEZE.json','119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1'),
+ ('product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json','454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb')]
+def ident(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+records=[]
+for rel,size,digest,coverage in SOURCES:
+ source=N/rel;b=source.read_bytes();assert ident(b)=={'bytes':size,'sha256':digest},rel
+ dest=ROOT/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);assert not dest.exists();dest.write_bytes(b)
+ assert dest.read_bytes()==b and source.read_bytes()==b
+ records.append({'original':str(source),'capture':str(dest.relative_to(ROOT)),**ident(b),'coverage':coverage})
+freezes=[]
+for rel,digest in FREEZES:
+ source=N/rel;b=source.read_bytes();assert ident(b)['sha256']==digest,rel
+ frozen=json.loads(b)
+ for row in frozen['members']:
+  assert ident((source.parent/row['path']).read_bytes())=={k:row[k] for k in ['bytes','sha256']},row['path']
+ dest=ROOT/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);assert not dest.exists();dest.write_bytes(b)
+ freezes.append({'original':str(source),'capture':str(dest.relative_to(ROOT)),**ident(b),'members':len(frozen['members']),'all_members_unchanged':True})
+manifest={'schema':'installation_work_source_exposed_analytic_review_v1','sources':records,'prior_freezes':freezes,
+ 'scientific_executions':0,'same_model':True,'source_exposed':True,'root_work_acceptance':None}
+(ROOT/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'sources_captured':len(records),'prior_freezes':freezes,'scientific_executions':0,'root_work_acceptance':None,'scope':'source byte and frozen inventory verification only'},indent=2))

@@ -1,0 +1,25 @@
+{
+  "kind": "actual_metadata_only_execution",
+  "scientific_execution": false,
+  "start_utc": "2026-10-16T15:07:23.810483+00:00",
+  "end_utc": "2026-10-16T15:07:24.238226+00:00",
+  "argv": [
+    "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/runs/source_capture/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check",
+  "timeout_seconds": 60,
+  "exit_code": 0,
+  "source_original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/capture_sources.py",
+  "source_at_launch_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/runs/source_capture/executed_source.py",
+  "source_sha256": "66392c780fba2b318af1cbb27f9ea8df507ab3913efb504b771c30695b224ad1",
+  "launcher_original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/run_metadata_capture.py",
+  "launcher_at_launch_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/runs/source_capture/launcher_source.py",
+  "launcher_sha256": "7485f0b7f9b1915c4d1bb6ab7ad83b06e3d7fde4b2b11006a369ad50eeeb26af",
+  "stdout_bytes": 1378,
+  "stdout_sha256": "9e1fdfa53d65a55333e755c0a8ccbb75ae6e169eba8e355f8eee652c23806916",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Verify and copy frozen author sources and historical run evidence, extract authorized primary text, bind prior review identity. No scientific checker launched."
+}

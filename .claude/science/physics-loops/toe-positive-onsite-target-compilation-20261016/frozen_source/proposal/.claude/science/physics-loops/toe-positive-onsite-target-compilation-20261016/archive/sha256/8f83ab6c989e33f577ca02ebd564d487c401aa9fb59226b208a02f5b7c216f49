@@ -1,0 +1,19 @@
+{
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/CHECKER_SOURCE_FREEZE.json",
+    "bytes": 2626,
+    "sha256": "78fe6aabbc5691a3fa4f04149ddf360c7f7fa4751bc693ecb1bc5eb7bf8983f9"
+  },
+  "checker": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/check_saved_evidence.py",
+    "bytes": 31600,
+    "sha256": "7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/record_check.py",
+    "bytes": 2813,
+    "sha256": "b883de16a549b62f789b3625b6aa050b1275c7603fcdaa273d243c1137f77fb0"
+  },
+  "members": 9,
+  "checker_executed": false
+}

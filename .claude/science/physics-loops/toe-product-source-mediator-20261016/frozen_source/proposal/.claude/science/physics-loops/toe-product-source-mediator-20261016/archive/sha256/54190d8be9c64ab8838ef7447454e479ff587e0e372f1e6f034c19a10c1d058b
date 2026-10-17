@@ -1,0 +1,31 @@
+"""Metadata-only exact source capture. No scientific code is imported or run."""
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent
+N = ROOT.parent
+SOURCES = [
+    ("product_source_mediator_candidate/PROPOSAL.md", 7613, "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"),
+    ("weak_mediator_candidate/PROPOSAL.md", 5883, "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"),
+    ("weak_mediator_exposed_check/REVIEW.md", 17330, "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b"),
+]
+
+def identity(data):
+    return {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+records = []
+for rel, size, digest in SOURCES:
+    original = N / rel
+    data = original.read_bytes()
+    assert identity(data) == {"bytes": size, "sha256": digest}, rel
+    captured = ROOT / "sources" / rel
+    captured.parent.mkdir(parents=True, exist_ok=True)
+    assert not captured.exists(), str(captured)
+    captured.write_bytes(data)
+    assert captured.read_bytes() == data
+    assert original.read_bytes() == data, "source changed during capture: " + rel
+    records.append({"original": str(original), "capture": str(captured.relative_to(ROOT)), **identity(data), "read_completely": True})
+manifest = {"schema": "source-exposed-analytical-review-v1", "renewal_root": str(N), "scientific_executions": 0, "metadata_only": True, "sources": records}
+(ROOT / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+print(json.dumps({"status": "SOURCE_IDENTITY_VERIFIED", "sources": len(records), "scientific_executions": 0, "scope": "exact bytes and capture only"}, indent=2))

@@ -1,0 +1,54 @@
+# Fixed target attempt: prelaunch boundary
+
+This packet implements the root-reviewed specification in proposal SHA256
+9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f.
+Root authorized preparing one bounded candidate attempt, not a theorem,
+publication or physical implementation. The program and exact inputs must
+be frozen and exposed to root before launch. A separate root GO is required.
+At this prelaunch writing no new scientific execution has occurred.
+
+The parameters remain exactly those fixed by that proposal: 32 calibration
+iterations; 128-bit dyadic displacements; endpoint order320 with8 substeps
+per slot and integer interval scale2^768;128-term arctangent series with
+512-bit dyadic pi; degree256 exponential; the same W,epsilon,n,M,T. The
+root's phrase '32-bitstep' was explicitly corrected to32 iterations with
+128-bit displacements. No precision increase or alternative target is allowed.
+
+The one intended command, only after root GO, is
+
+    /opt/homebrew/opt/python@3.13/bin/python3.13 record.py target_001 compile_target.py 600 /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/target_001_output
+
+The cwd is this packet directory. The recorder copies the executable source
+and itself, records executable identity, argv/cwd/version/platform/start,
+then captures full streams and the actual exit or timeout. Wall limit600s;
+no separate CPU or RAM limit is imposed. Exactly one scientific launch is
+allowed. Any assertion, timeout or failed residual is retained; no automatic
+retry, altered precision, extra iteration, replacement target or hidden
+nominal-endpoint/recurrence replay follows.
+
+Source capture, AST syntax checking and source freezing are metadata-only
+processes. They do not execute the scientific program or establish its
+inequalities. The new source uses only standard-library integer/Fraction
+operations. No floating point, SVD, eigenphase solver, LLL or numerical
+derivative is imported. Parent rectangles are exact-identity inputs, with
+their separately qualified analytic errors, not silently exact unitaries.
+
+Every y/G proof-facing interval is saved with its analytic padding before
+its width test and midpoint. Every new endpoint's24 slot rectangles and
+complete endpoint are saved, as are all32 iterate records, phase intervals,
+final binary-power rectangles, full schedule and residual. Internal Taylor
+coefficient/Horner temporaries are reproduced by the frozen recurrence code,
+not exhaustively serialized. The output does not claim a second independent
+ODE integration of the nominal parent or formal proof-assistant checking.
+
+Root chart acceptance112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7
+and controlling qualifications6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86
+are current. Root recurrence acceptance36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e
+and controlling qualifications69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55
+were read before this freeze. Their qualification is conditional source
+acceptance, not retained audit. The new target witness remains unaccepted.
+
+The author wrote the chart, recurrence and target-plan parents. This is
+source-exposed same-model continuation, not independent parent validation.
+Only this new packet is written. No parent, worktree, canonical file,
+Git/PR, audit, prompt, model, axiom or lock is changed.

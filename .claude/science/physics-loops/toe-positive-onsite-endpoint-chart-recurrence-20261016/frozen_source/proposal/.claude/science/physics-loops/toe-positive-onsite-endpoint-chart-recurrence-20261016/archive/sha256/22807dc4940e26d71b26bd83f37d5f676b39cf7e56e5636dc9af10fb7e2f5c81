@@ -1,0 +1,118 @@
+{
+  "amplified_analytic_error": {
+    "denominator": 16687398718132110018711107079449625895333629080911349765211262561111091607661254297054391304192,
+    "numerator": 23962562495587246429455287868099315202309405771004232655815
+  },
+  "analytic_endpoint_error": {
+    "denominator": 33374797436264220037422214158899251790667258161822699530422525122222183215322508594108782608384,
+    "numerator": 243
+  },
+  "analytic_step_tail": {
+    "denominator": 4271974071841820164790043412339104229205409044713305539894083215644439451561281100045924173873152,
+    "numerator": 81
+  },
+  "artifacts": {
+    "ENDPOINT_ENCLOSURE.json": {
+      "bytes": 217372,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/recurrence_001_output/ENDPOINT_ENCLOSURE.json",
+      "sha256": "454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de"
+    },
+    "HEURISTIC_PROPOSAL.json": {
+      "bytes": 6228,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/recurrence_001_output/HEURISTIC_PROPOSAL.json",
+      "sha256": "4429fa4361c376ed6bc159a120da54563abb325ee0bf0f9097c1a4e8baad4a61"
+    },
+    "POWER_TRACE.json": {
+      "bytes": 5963253,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/recurrence_001_output/POWER_TRACE.json",
+      "sha256": "2f848fc960ee957e3a97767b191f0fc732a5bff401a9d43d5aab25ea25d5055b"
+    },
+    "RECURRENCE_CERTIFICATE.json": {
+      "bytes": 32606,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/recurrence_001_output/RECURRENCE_CERTIFICATE.json",
+      "sha256": "380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314"
+    }
+  },
+  "controls": {
+    "corrupted_first_trace_entry_rejected": true,
+    "old_degree_80_tail_fails_amplification_and_target_gate": true,
+    "wrong_global_phase_minus_identity_has_operator_error_above_one": true
+  },
+  "counts": {
+    "coefficient_matrices": 960,
+    "complex_products": 100,
+    "gaussian_products": 250,
+    "parent_consistency_real_intervals": 32,
+    "positive_divisions": 70,
+    "residual_complex_entries": 16,
+    "saved_slot_products": 24,
+    "signed_scales": 50,
+    "trace_selected_products": 88,
+    "trace_squares": 186,
+    "trace_steps": 187
+  },
+  "explicit_total_operator_upper": {
+    "denominator": 1552518092300708935148979488462502555256886017116696611139052038026050952686376886330878408828646477950487730697131073206171580044114814391444287275041181139204454976020849905550265285631598444825262999193716468750892846853816057856,
+    "numerator": 85734189856318427938326305324475688728472390070133160621628732293694892683565235238130321801467868330202660454796131022782900101363141310011163674428201059029091633738076645245774153149640541206866742063546420501599909
+  },
+  "extracted_pure_functions": [
+    "add",
+    "ceildiv",
+    "coefficients",
+    "divide",
+    "gaussian",
+    "multiply",
+    "rprod",
+    "scale"
+  ],
+  "formal_audit_status": null,
+  "input": {
+    "bytes": 6579,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/inputs/SELECTED_INPUT.json",
+    "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+  },
+  "limitations": "Exposed same-model check. Exact Fraction checks saved trace operations and coefficients; fresh degree-320 Taylor enclosures are not regenerated. Their soundness still depends on full source/analytic review, original recorded execution, Python runtime and hardware. No arbitrary-target compilation or physical execution.",
+  "new_Taylor_steps": 0,
+  "new_eigenphase_selections": 0,
+  "new_recurrence_candidates": 0,
+  "new_scoped_check_executions": 1,
+  "positive_integer_n": 98611368294597721931914764889297593425141587534996842205,
+  "provisional_chart_threshold": {
+    "denominator": 924844032,
+    "numerator": 25
+  },
+  "residual_frobenius_square_upper": {
+    "denominator": 75322263341282268393128643938384816028502913998302779729989844970789293487243850020908907003354564051982773946277750149620700530587342447655300405871586707857975416855675788274086939934927546864901423223043369376799917058059518722170668347565609623906181738791946896175921042352550544637868567623993308449074030284663174748220444750361336201565018112120340656053590383858645207224422345743902292974445640820218526184334561594141432603887538530839281398760603648,
+    "numerator": 229698478447476675730486355305893707542946818245515245907731281161897857993486090250982691753043365278719706344653524831083383043722336454376484957990616794462781119727225595631679789302601847191212861363787008550988376539609920684111257859790010269778839836605099181396161349684271482217109923514867645007911636847939414169611816748147610906167518295839750385031050452339699727120840268746564365459073489797098029184382511406613900695
+  },
+  "resource_arithmetic": {
+    "M": 147975046,
+    "absolute_control_variation_upper": 7100018517211035979097863072029426726610194302519772638760,
+    "amplitude_error_lipschitz_coefficient": {
+      "denominator": 1,
+      "numerator": 2524451028341701681457017981166018391683624640895919160448
+    },
+    "conditional_uniform_duration": 350208522228384946904887108861751911074590975328100424043350794320,
+    "n_exceeds_parent_Q_fourth": true,
+    "nominal_scalar_action": {
+      "denominator": 48,
+      "numerator": 256922058954744904721410728442575949909863892163680772680907
+    },
+    "parent_Q": 591900181,
+    "parent_Q_fourth": 122742196581907154765214515864883121,
+    "recurrence_duration": 2366672839070345326365954357343142242203398100839924212920
+  },
+  "root_acceptance": null,
+  "saved_trace_matrix_products_verified": 274,
+  "source": {
+    "bytes": 12700,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/certify_recurrence.py",
+    "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771"
+  },
+  "status": "SCOPED_SAVED_RECURRENCE_ARITHMETIC_CHECK_COMPLETED",
+  "strict_total_operator_upper": {
+    "denominator": 10000000000000,
+    "numerator": 1
+  },
+  "utc": "2026-10-16T19:18:37.500451+00:00"
+}

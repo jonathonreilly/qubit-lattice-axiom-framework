@@ -1,0 +1,40 @@
+{
+  "scope": "Metadata-only identity capture; no scientific process or parent replay",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check/run_metadata.py"
+  ],
+  "resolved_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check/runs/source_integrity/executed_source.py",
+    "--root",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_exposed_check",
+  "source_sha256": "dfcbe616398f1f3391e431829365fe881d8092f5caedc27471771d4c87d2d5c6",
+  "launcher_sha256": "e22b2e775bde1e11825280876b573231f7e7ee2e640b9bdc14ef360b7b49d737",
+  "started_utc": "2026-10-16T17:57:29.813168+00:00",
+  "cpu_limit_seconds": 30,
+  "wall_timeout_seconds": 45,
+  "scientific_executions": 0,
+  "exit_code": 0,
+  "timeout": false,
+  "finished_utc": "2026-10-16T17:57:29.898307+00:00",
+  "elapsed_seconds": 0.08465208439156413,
+  "streams": {
+    "stdout": {
+      "bytes": 199,
+      "sha256": "fb3c5f6915af1c095f2e3afbcd06c582db3473476b86ea512923e17d19aeee7d"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "source_after_sha256": "dfcbe616398f1f3391e431829365fe881d8092f5caedc27471771d4c87d2d5c6",
+  "launcher_after_sha256": "e22b2e775bde1e11825280876b573231f7e7ee2e640b9bdc14ef360b7b49d737"
+}

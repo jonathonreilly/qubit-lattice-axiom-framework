@@ -1,0 +1,75 @@
+"""Record completed root proof/code review and exact evidence identities, no science replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+from fractions import Fraction as Q
+N=Path(__file__).resolve().parents[1]
+O=N/'endpoint_chart_root_review'
+C=N/'endpoint_chart_certificate_candidate'
+R=N/'endpoint_chart_exposed_check'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,row):assert all(pin(p)[k]==row[k] for k in ('bytes','sha256')),str(p)
+def write(p,v):
+ with Path(p).open('x') as f:f.write(json.dumps(v,indent=2)+'\n')
+assert not O.exists()
+freezes=[(N/'endpoint_chart_root_proposal/FREEZE.json','f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd',2),
+ (C/'FREEZE.json','485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf',45),
+ (R/'FINAL_FREEZE.json','dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991',116)]
+for p,h,count in freezes:
+ assert pin(p)['sha256']==h
+ rows=read(p)['members'];assert len(rows)==count and len({x['path'] for x in rows})==count
+ for row in rows:same(p.parent/row['path'],row)
+receipts=[]
+for folder,keys,expected_timeout in [(C/'runs/enclosure_001',('source_at_launch','original_source','recorder_at_launch','stdout','stderr'),240),(R/'scoped_runs/saved_arithmetic_001',('source_at_launch','source_original','recorder_at_launch','stdout','stderr'),180)]:
+ r=read(folder/'EXECUTION.json');assert r['exit_code']==0 and not r['timed_out'] and r['start_utc']<r['end_utc']
+ assert r.get('wall_timeout_seconds',r.get('timeout_seconds'))==expected_timeout
+ for key in keys:same(r[key]['path'],r[key])
+ assert r['source_at_launch']['path'] in r['argv']
+ original=r.get('original_source',r.get('source_original'))
+ assert original['sha256']==r['source_at_launch']['sha256'] and original['path']!=r['source_at_launch']['path']
+ assert Path(r['stderr']['path']).read_bytes()==b''
+ receipts.append(pin(folder/'EXECUTION.json'))
+assert read(C/'SCIENCE_SOURCE_FREEZE.json')['created_utc']<read(C/'runs/enclosure_001/EXECUTION.json')['start_utc']
+terminal=[]
+for folder in [C/'runs/final_freeze',R/'metadata_runs/final_seal']:
+ for p in sorted(folder.iterdir()):
+  if p.is_file():terminal.append(pin(p))
+ r=read(folder/'EXECUTION.json');assert r['exit_code']==0
+ for key in ('stdout','stderr'):same(r[key]['path'],r[key])
+cert=read(C/'enclosure_001_output/certificate.json');check=read(R/'SCOPED_CHECK_RESULT.json')
+q=lambda x:Q(x['numerator'],x['denominator'])
+assert cert['integer_B']==check['inverse_integer_bound']==63
+assert q(cert['residual_frobenius_square_upper'])==q(check['exact_residual_frobenius_square_upper'])<Q(1,2**76)
+assert q(cert['chosen_r'])==Q(25,231211008) and q(cert['chosen_t'])==Q(25,229376)
+assert q(cert['certified_lower_sigma'])==Q(1,126)
+assert check['ODE_steps_executed']==0 and check['new_scoped_check_executions']==1
+assert all(x['rigorous_half_norm_gate_rejected'] for x in check['controls'].values())
+prose='''# Controlling root qualification: positive-onsite endpoint chart
+
+Disposition: qualified conditional theorem for the one specified driven two-qubit plant. The exact finite enclosure, separate exposed analytical/code check and scoped saved-evidence arithmetic check discharge this finite chart's rank obligation. This source decision is separate from a publication review, canonical integration, independent audit or retained status. All original proposed/pending labels remain immutable historical records.
+
+The literal plant is K=2I+ZZ, with no added quantum resource and arbitrary passive-reference input. The four supplied positive onsite rays are I+X1, I+Y1, I+X2 and I+Y2, including their identity reserves. The 24 unit slots use psi(s)=16s^2(1-s)^2 and the exact frozen nominal amplitudes, selected indices and rational approximate inverse. The derivative and actual waveform joins are continuous and vanish at slot boundaries. On the selected radius1/8 parameter box, added norm<=3/2 and slew<=12 fit the stated caps2 and16. These are added-control caps; the full old load3 remains installed. In supplied energy units E0, slot time is hbar/E0, added cap2E0 and slew16E0^2/hbar. No arbitrary smaller-cap, generic many-qubit or native-actuator conclusion follows.
+
+Root read the complete original proposal, candidate derivation, prelaunch and exposure statements, entire executed enclosure source, separate pre-enclosure reconstruction, full code review, distinct arithmetic checker and all scientific/scoped-check original streams and launch records. The analytical argument retains Pauli coefficient normalization Tr(PX)/4, the sign -i U0* partial F, all16 center-containing coordinates, and Hessian Lipschitz bound4096/225. The coefficient majorant exponent773/240 at radius1/4 bounds the degree80 tail by81/2^81. One selected derivative source, the exact contiguous augmented norm<3 and192-step telescoping justify4096 times that tail, and81/2^67 per-coordinate pad. Directed integer widths are additional, never replaced by the tail. Chronology, derivative product rule, adjoint and signed interval operations were read. No extra dimension factor is omitted from the residual calculation.
+
+Exact ODE-derived intervals and rational R give ||I-RA||F<2^-38 and ||R||F<=63, hence sigma_min(A)>=1/126. The conservative constants s=1/252, t=25/229376, rho=25/115605504 and r=25/231211008 yield the complete U(4) ball ||V-U0||op<r in duration24. The contraction preimage is interior, and positive real parts make equal imaginary Hermitian parts determine the full unitary. The identity row is exactly-8/15. This is a full scalar statement and is not licensed by a projective rank test.
+
+The author executed one captured integer enclosure in7.94seconds with a240-second wall limit. The separate same-model reviewer froze its analytical reconstruction before viewing enclosure code/output, after the author's run already existed. It then executed one6.67-second scoped Fraction check under180seconds. That check covered all1920 shifted coefficient matrices, saved24 local U/D matrices and downstream17 global matrices,256 coordinates/Jacobian/residual entries, constants and four deliberately wrong saved objects. It did not regenerate local Taylor/ODE output or replay the selector. This is useful explicit separation, not blind replication, a different model, formal proof-assistant checking or a second ODE implementation. The original local calculation and Python/parser/runtime/hardware remain trusted computational infrastructure. Exact source hashes and identity checks do not by themselves establish mathematics.
+
+The full-U(4) recurrence/finite timing corollary is an existence and effective approximation interface. Pigeonhole arguments provide some n<=Q^4 for Q=591900181 with a strict margin. M=147975046 suffices for small logarithmic factors. A certified search is effective only for a computably supplied target or effective error-bounded target oracle; arbitrary mathematical targets have an existence statement. Fix n,M and T*=24Mn before supplying target W exp(-iT*K). The order gives U(T*)exp(+iT*K) approximately W. No arbitrary-target word or practical/classical cost bound was executed for this chart. Any later explicit recurrence, including one larger than Q^4, is a separate result and does not improve this existential upper bound automatically.
+
+Complete scalar alpha(a)=48+(8/15)sum a_j is retained; nominal alpha0=13027/240. Every repeated template pays its real duration and all scalar/old phase. Compilation error and integrated full-norm generator defect add, with trace factor2 uniformly after tensoring a passive reference. Uniform per-pulse amplitude faults cost(16/15)sum|delta a|; waveform, drift, clock and spillover faults require their actual full integrated budget. A fixed nonzero fault floor does not permit arbitrary final accuracy.
+
+One wording in candidate section8 is controlled here: ||K|| |delta_T| is a conservative UPPER bound/budget for an added post-off timing comparison, from ||exp(-iK delta_T)-I||<=||K|| |delta_T|. It is not a necessary lower bound on actual error; recurrences can make that error vanish. Generic in-pulse timing faults need the full generator-defect treatment. The original phrase 'priced at least by' must not be promoted to a lower-bound theorem.
+
+At zero-control endpoints modeled net work is Tr K(rho_f-rho_i), with initial and final comparison errors costed separately by width(K)(delta_i+delta_f)/2. Use the actual-time target's conjugation order. Residual endpoint controls require their own expectation/norm terms. Absolute modeled control variation<=72 per template is distinct from net work and from an omitted drive's microscopic resource cost. The scalar contributes to full-unitary error despite cancellation in endpoint density-operator energy differences.
+
+Onsite addressing, supplied exact plant/rays, isolation, precision, clock and smooth waveform generators remain premises. All quantum outputs of the stated two-qubit-plus-passive-reference model are retained; external drive outputs are outside this model. Native physical control supply, conservative microscopic controller realization, autonomous release/halt and indefinite reuse remain open. The motivating actuator screen and Git ancestry are not mathematical parents. No science merge, main push, audit verdict, physical axiom or editable prompt change accompanies this decision.
+'''
+O.mkdir();(O/'FINAL_QUALIFICATIONS.md').write_text(prose)
+record=dict(kind='root_qualified_conditional_source_acceptance',utc=datetime.now(timezone.utc).isoformat(),disposition='QUALIFIED_CONDITIONAL_ENDPOINT_CHART',source_freezes=[pin(p) for p,h,count in freezes],source_derivation=pin(C/'DERIVATION.md'),source_program=pin(C/'enclose_chart.py'),separate_review=pin(R/'REVIEW.md'),independent_check_scope='Same-model exposed analytic/code review and one saved-evidence Fraction check; no second ODE, no blind replication.',original_execution_receipts=receipts,terminal_freeze_evidence=terminal,controlling_qualifications=pin(O/'FINAL_QUALIFICATIONS.md'),scientific_executions_by_root=0,historical_scientific_replays=0,root_read_complete=True,canonical_binding=None,publication=None,retained_audit=False,editable_prompt_files_changed=[])
+write(O/'ACCEPTANCE.json',record)
+write(O/'FREEZE.json',dict(utc=datetime.now(timezone.utc).isoformat(),members=[dict(pin(O/p),path=p) for p in ['ACCEPTANCE.json','FINAL_QUALIFICATIONS.md']]))
+print(json.dumps(dict(acceptance=pin(O/'ACCEPTANCE.json'),qualification=pin(O/'FINAL_QUALIFICATIONS.md'),freeze=pin(O/'FREEZE.json'),scientific_executions=0)))

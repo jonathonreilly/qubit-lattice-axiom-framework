@@ -1,0 +1,87 @@
+{
+  "captured_originals": 10,
+  "checker_scientific_launches": 0,
+  "root_GO": null,
+  "scope": "Metadata and syntax only; validator never imported or executed",
+  "source_programs": [
+    {
+      "functions": [
+        "require",
+        "rat",
+        "interval",
+        "coefficient",
+        "sqrt_certificate",
+        "scenario",
+        "main"
+      ],
+      "imports": [
+        "argparse",
+        "fractions",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "traceback"
+      ],
+      "path": "validate_saved_certificate.py",
+      "sha256": "8f2f5c444b65db8f154050d041a506a5cb2e659d43f81daf177ecc4afbda6ae7"
+    },
+    {
+      "functions": [
+        "pin",
+        "save",
+        "need",
+        "main"
+      ],
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "shutil",
+        "signal",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback"
+      ],
+      "path": "record_one_attempt.py",
+      "sha256": "9638572944a63478fe028a12ac3f54be20a61e629ff0199c09372a5a1d5a8c3c"
+    },
+    {
+      "functions": [
+        "sha",
+        "main"
+      ],
+      "imports": [
+        "ast",
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "path": "inspect_sources.py",
+      "sha256": "4833248a3e1484859e20b27578ffa9adc3f9b4b3f3b8d37224a78f36a743ab51"
+    },
+    {
+      "functions": [
+        "pin",
+        "save",
+        "main"
+      ],
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "path": "record_metadata.py",
+      "sha256": "549ac3bdac9e1e28fb211e1f2d14c1d0482bf4748f9d1a22863a4ac648b27087"
+    }
+  ]
+}

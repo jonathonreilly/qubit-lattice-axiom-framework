@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T18:38:41.916343+00:00",
+  "status": "PROPOSED_BEFORE_SELECTION",
+  "members": [
+    {
+      "path": "PROPOSED_LEMMAS.md",
+      "bytes": 11358,
+      "sha256": "3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169"
+    },
+    {
+      "path": "select_chart.py",
+      "bytes": 2767,
+      "sha256": "3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449"
+    }
+  ]
+}

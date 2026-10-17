@@ -1,0 +1,15 @@
+{
+  "members": [
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 4043,
+      "sha256": "f954c36d04380ee49edac71a5dd7cb10e31142d3f3ca03f4da71f5609c04446b"
+    },
+    {
+      "path": "FINAL_QUALIFICATIONS.md",
+      "bytes": 3440,
+      "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+    }
+  ],
+  "scope": "Root disposition and controlling qualifications; actual metadata execution receipt remains outside this freeze."
+}

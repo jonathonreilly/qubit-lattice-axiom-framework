@@ -1,0 +1,24 @@
+{
+  "sources_captured": 8,
+  "prior_freezes": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "capture": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "members": 18,
+      "all_members_unchanged": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "capture": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb",
+      "members": 166,
+      "all_members_unchanged": true
+    }
+  ],
+  "scientific_executions": 0,
+  "root_work_acceptance": null,
+  "scope": "source byte and frozen inventory verification only"
+}

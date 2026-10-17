@@ -1,0 +1,9 @@
+# Weak-mediator source-exposed check
+
+Read `REVIEW.md` for the complete reconstruction of the original ideal four-qubit proposal. It was sealed before reading either addendum; `ORIGINAL_REVIEW_FREEZE.json` binds its exact bytes and the original source/metadata evidence. Its required correction replaces “source triplets” with “the orthogonal Bell complement,” without changing the Hamiltonian.
+
+Then read `ADDENDUM_REVIEW.md` for the separately exposed dyadic and accuracy-scaled corollaries. Their bounds check out with certified approximants. This review records the floor equality limitation, a one-bit scaling variant for a terminating lower-endpoint interval construction, and the independence/full-joint-error premise required for the imperfect-source trace allowance.
+
+`sources/` contains only the three original proposal texts and the original source freeze, copied without modification. `SOURCE_MANIFEST_ORIGINAL.json` and `SOURCE_MANIFEST_ADDENDA.json` give exact origins, exposure order and metadata coverage. `runs/` contains actual metadata-only child launches, source-at-launch pins, distinct copied sources, complete stdout/stderr and receipts. Those programs hash and copy files; they do not evaluate physics, coefficients, matrix dynamics or a scientific program.
+
+`FINAL_FREEZE.json` seals the complete review packet, including the unchanged initial review freeze. Original provisional source statuses remain historical. This packet does not generate a root approval or retained verdict. No original sources, editable prompts, repository state, canonical files, Git refs, cache, graph, PR or audit record were changed.

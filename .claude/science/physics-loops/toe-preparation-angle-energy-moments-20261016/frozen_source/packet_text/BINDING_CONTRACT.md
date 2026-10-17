@@ -1,0 +1,9 @@
+# Future binding contract
+
+This packet is source-only. Root source acceptance applies to the preserved mathematics and controlling qualifications; it is not approval of this new wrapper, metadata primary, future canonical note or PR. PUBLICATION_STATE and ACTUAL_BINDING preserve null future fields. The default primary verifies the source payload and then raises an unbound refusal. No supplied path or boolean can convert it into a canonical success.
+
+A separately reviewed integration proposal must bind this actual final freeze, the actual root wrapper/code review and its captured execution, fresh observed base/HEAD and tools, the actual source note/primary and sole mathematical parent, canonical body-map intervals, and a later separate canonical review. That contract must verify exact argv with original executed source paths and distinct captures where the original recorder provides them, plus recorder and full streams. Historical source-only nulls remain immutable. Staged review/publication require actual subsequent records; neither is generated here.
+
+The sole intended parent is docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md at 6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f. Its archive copy establishes source identity only. No current Git base is selected, and no current parent observation or canonical binding is claimed. Interacting candidates, comb and Git ancestors are not mathematical parents.
+
+If the future wrapper changes offsets, preserve all three body bytes and recompute canonical BODY_MAP and note/source pins. A short trailing wrapper is already supplied to avoid blank-at-EOF without changing any body. No whitespace or audit exceptions are proposed. Metadata success establishes provenance checks only, never mathematical proof or independent retained status.

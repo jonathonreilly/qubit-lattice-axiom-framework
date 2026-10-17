@@ -1,0 +1,11 @@
+{
+  "same_model_source_exposed": true,
+  "blind_independence": false,
+  "different_model_replication": false,
+  "shared_parent_authorship": true,
+  "new_scientific_executions": 0,
+  "historical_bridge_floating_executions": 1,
+  "preparation_scientific_executions": 0,
+  "fault_work_scientific_executions": 0,
+  "retained_audit": false
+}

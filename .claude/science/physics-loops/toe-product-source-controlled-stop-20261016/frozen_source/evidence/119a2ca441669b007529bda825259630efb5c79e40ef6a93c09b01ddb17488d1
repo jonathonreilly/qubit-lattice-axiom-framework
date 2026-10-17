@@ -1,0 +1,101 @@
+{
+  "schema": "immutable_source_exposed_installation_review_v1",
+  "created_at": "2026-10-16T22:05:51.913133+00:00",
+  "scope": "analytical review; metadata capture only; no scientific execution; root disposition separate",
+  "source_exposed": true,
+  "same_model": true,
+  "root_acceptance": null,
+  "scientific_executions": 0,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1206,
+      "sha256": "7e3ec44f7223679c5ce9ec6ab683c4ee9f13ef97171c86480104e90a7ca2537b"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 1904,
+      "sha256": "5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2985,
+      "sha256": "f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8"
+    },
+    {
+      "path": "inspect_sources.py",
+      "bytes": 2454,
+      "sha256": "42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f"
+    },
+    {
+      "path": "metadata/EXECUTION.json",
+      "bytes": 909,
+      "sha256": "91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492"
+    },
+    {
+      "path": "metadata/executed_source.py",
+      "bytes": 2454,
+      "sha256": "42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f"
+    },
+    {
+      "path": "metadata/launcher_source.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata/stdout",
+      "bytes": 197,
+      "sha256": "e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 1077,
+      "sha256": "da2201d0744b85493aa974741920a7f3b25919b2ae1e5263082ac7fed95c2bff"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "path": "sources/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    {
+      "path": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    }
+  ]
+}

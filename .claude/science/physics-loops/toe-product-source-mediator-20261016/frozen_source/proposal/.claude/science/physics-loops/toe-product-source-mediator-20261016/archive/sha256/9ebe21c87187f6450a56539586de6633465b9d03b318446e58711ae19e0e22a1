@@ -1,0 +1,54 @@
+"""Record root's completed product-source analytical acceptance; metadata only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1]
+O=N/'product_source_mediator_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def read(p):return json.loads(Path(p).read_text())
+def put(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+assert not O.exists()
+original=N/'product_source_mediator_exposed_check'
+reviews=[]
+for folder,name,digest,count in [(original,'ORIGINAL_FREEZE.json','97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116',15),(original/'finite_compiler_addendum','FREEZE.json','c0f663eb320fb96172ba94e7a4be221111a38ed4d285a0dde8b587084bdc22dc',16)]:
+ f=folder/name;assert pin(f)['sha256']==digest
+ members=read(f)['members'];assert len(members)==count
+ for row in members:same(folder/row['path'],row)
+ manifest=read(folder/'SOURCE_MANIFEST.json')
+ for row in manifest['sources']:same(row['original'],row);same(folder/row['capture'],row)
+ r=read(folder/'metadata/EXECUTION.json')
+ assert r['exit_code']==0 and r['timed_out'] is False and r['scientific_executions']==0 and r['timeout_seconds']==30
+ assert r['argv'][1:]==['-B',str(folder/'inspect_sources.py')] and r['cwd']==str(folder)
+ assert r['started_at']<r['finished_at'] and r['elapsed_seconds']>=0 and r['source_unchanged_during_run']
+ assert pin(folder/'inspect_sources.py')['sha256']==pin(folder/'metadata/executed_source.py')['sha256']==r['source_sha256']
+ assert pin(folder/'metadata/launcher_source.py')['sha256']==r['launcher_sha256']
+ assert (folder/'metadata/stderr').read_bytes()==b''
+ reviews.append(dict(freeze=pin(f),review=pin(folder/'REVIEW.md'),execution=pin(folder/'metadata/EXECUTION.json'),stdout=pin(folder/'metadata/stdout'),stderr=pin(folder/'metadata/stderr'),actual_original_launched=str(folder/'inspect_sources.py'),separate_source_capture=pin(folder/'metadata/executed_source.py'),scientific_executions=0))
+sources=[]
+for name,h in [('PROPOSAL.md','aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248'),('FINITE_COMPILER_ADDENDUM.md','afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065')]:
+ p=N/'product_source_mediator_candidate'/name;assert pin(p)['sha256']==h;sources.append(pin(p))
+qualification="""# Root qualification: product-source mediator
+
+Root accepts the displayed u=1/2 construction and its finite parameter algorithm as a conditional mathematical result, after completely reading both source arguments and both independently written, source-exposed reviews. The original proposed/open wording stays frozen historical evidence. The later compiler review resolves finite mathematical construction; no program emitted new-model coefficients or measured its resource usage.
+
+The supplied square has literal K=2I+ZZ, an independent |00> source, positive j(I-L)+u|11><11| on the source edge, two positive XX ports and a purposeful positive old identity lambda I. Here j=2theta/pi, g=sqrt((pi^2-theta^2)/(pi T)), lambda=(pi-theta)/T, theta=atan(4/3), u=1/2. The source input is an excited eigenstate with energy j. Product preparation replaces the Bell-state premise; it does not derive couplers, independent initialization, installation, timing or calibration from microscopic axioms.
+
+The review independently reconstructed the full Q-to-P gap1/2 and an exact three-dimensional invariant block. It obtained H2=(pi ZZ-theta XX)/T, the full phase exp[-iT(H2+lambda I)]=W, and the full source-retaining comparison using actual source/port phase. The finite-dimensional corrector residual is exact, with no lowest-band assumption or isometry requirement on the corrector F. Its conservative bound3104/sqrt(T)+16640/T is below epsilon/16 for epsilon=2^-m and T=2^(2m+32). On w=epsilon*T/256 the ideal isometry bound is3epsilon/32. All comparisons retain arbitrary old/reference states and actual old aging.
+
+The complete finite algorithm uses the three signed atan enclosures at n=p+8,p=3m+39, then positive rational interval maps for j,lambda,g^2 and exact floor/isqrt. Equality-safe lower outputs have error<2*2^-p; the actual-to-ideal full-generator defect, after subtracting actual jhat+2ghat, is<8*2^-p. Thus total isometry error<7epsilon/32 and unhalved full joint trace error<7epsilon/16. Three final floor quotients and one isqrt describe selected operations, not total arithmetic or bit complexity. No concrete coefficients, runtime or new science execution is claimed.
+
+The source conservative incident sum is2j+u+2g<2 and old added sum is at most2g+2lambda<2; the literal norm-three old interaction remains additional. Static runtime slew is zero, but installation ramps and boundary controls are unspecified. Complete Hamiltonian initial mean<K>+j+2g+lambda and variance Var(K)+2g^2 are conserved during static runtime; old K alone need not be. The prepared excited-source energy and physical hbar/E0 time conversion remain explicit. Runtime zero drive work does not price preparation or installation.
+
+The exact u=0 second-corrector obstruction is preserved narrowly: the |11> right-hand side is nonzero at a zero Sylvester denominator. It is a failed proof route, not a global impossibility result or a no-go submission. Known finite reuse is not asserted by this packet; any extension must retain joint correlations and budget interventions. Indefinite reuse, reset, final halt, an internal clock, arbitrary additional faults and native supply remain open.
+
+The corrector and transcendental interval machinery are explicit mathematical dependencies from the weak-mediator result; any later publication should cite its exact note/source identity as one direct parent or reproduce and check the complete machinery. Git transport is separate. Bell-specific sharper precision and entangled-state assumptions are not imported into the product-source conclusion. The product result cannot retroactively become a parent of the Bell-source theorem.
+
+Independent means a separately written analytic reconstruction here. Both author and reviewer use the same selected model; exposure was complete. No blind or model-independent check, physical experiment, retained audit, canonical integration, publication or science merge is inferred. The two actual source-capture metadata runs and original argv are preserved; their executed_source.py files are separately captured bytes, not falsely named as the launched path. Source hashes and metadata do not prove mathematics. Root read the source, launcher, original receipts and complete streams; receipt stream hashes were absent originally, so new pins supplement rather than rewrite them. No editable prompt, physical axiom, model or reasoning setting changed.
+"""
+O.mkdir();(O/'QUALIFICATION.md').write_text(qualification)
+r=dict(kind='root_product_source_mediator_science_acceptance',utc=datetime.now(timezone.utc).isoformat(),status='QUALIFIED_CONDITIONAL_SOURCE_ACCEPTED_PUBLICATION_PENDING',sources=sources,analytic_reviews=reviews,qualification=pin(O/'QUALIFICATION.md'),root_complete_arguments_read=True,source_exposed_checks=True,blind_review=False,scientific_executions=0,canonical_integration=None,publication=None,retained_audit=False,required_mathematical_dependencies=['weak mediator exact finite-dimensional corrector and three-atan interval machinery at explicit source revisions'],editable_prompt_files_changed=[])
+put(O/'ACCEPTANCE.json',r);put(O/'FREEZE.json',dict(utc=datetime.now(timezone.utc).isoformat(),files=[dict(pin(O/name),path=name) for name in ['QUALIFICATION.md','ACCEPTANCE.json']]))
+print(json.dumps(dict(acceptance=pin(O/'ACCEPTANCE.json'),qualification=pin(O/'QUALIFICATION.md'),freeze=pin(O/'FREEZE.json'),scientific_executions=0)))
+

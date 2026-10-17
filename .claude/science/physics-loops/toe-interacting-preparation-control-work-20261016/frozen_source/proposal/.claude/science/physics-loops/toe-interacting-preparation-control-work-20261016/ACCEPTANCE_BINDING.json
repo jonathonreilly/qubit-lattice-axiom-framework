@@ -1,0 +1,20 @@
+{
+  "qualified_source_decisions": [
+    [
+      "interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "qualifications"
+    ],
+    [
+      "interacting_preparation_chronology_root_review/ACCEPTANCE.json",
+      "0cbc3e8b6020894222319c43ae4f1deda6f75be8a020b886982dd445e669d6e8",
+      "controlling_qualifications"
+    ],
+    [
+      "interacting_local_fault_work_root_review/ACCEPTANCE.json",
+      "10a4832688c81c227c74f29de239964a5d7d268000a4d7bf1babf6f8b441c4c8",
+      "controlling_qualifications"
+    ]
+  ],
+  "source_wrapper_review": null
+}

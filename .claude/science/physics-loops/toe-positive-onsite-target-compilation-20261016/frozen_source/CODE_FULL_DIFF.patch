@@ -1,0 +1,421 @@
+--- machinery_reference/build_packet.py
++++ build_packet.py
+@@ -1,35 +1,27 @@
+-"""Build one source-only combined packet; never execute historical science."""
++"""Build one source-only fixed-target packet; never execute historical science."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import hashlib,json,sys
+ D=Path(sys.argv[1]).resolve();N=D.parent
+-P=D/'proposal';PK='.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016'
+-NOTE='docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py'
++P=D/'proposal';PK='.claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016'
++NOTE='docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++SCRIPT='scripts/positive_onsite_target_compilation_2026_10_16.py'
+ ROOTS={
+- 'endpoint_chart_root_proposal':('FREEZE.json','f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd','complete'),
+- 'endpoint_chart_certificate_candidate':('FREEZE.json','485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf','complete'),
+- 'endpoint_chart_exposed_check':('FINAL_FREEZE.json','dab6af16cf9977a9b20d3438a7db2da68a5ef632bd883c5b0c7b9bd77fceb991','review_selection'),
+- 'endpoint_chart_root_review':('FREEZE.json','d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223','complete'),
+- 'endpoint_recurrence_candidate':('FREEZE.json','33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c','complete'),
+- 'endpoint_recurrence_exposed_check':('FINAL_FREEZE.json','453b32503e06a569a361414984b96e808e34b267dec077b209d926fe7ed84204','review_selection'),
+- 'endpoint_recurrence_root_review':('FREEZE.json','7e4268b5f1a848dda65213917045427fc56b68732a71d1a18c6fb99118b63065','complete'),
++ 'endpoint_target_compilation_candidate':('FREEZE.json','0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc','members'),
++ 'endpoint_target_compilation_exposed_check':('FINAL_FREEZE.json','857c60addbcd5882635a5b2178ec6014b65e40e364f35a01e62d1e04499d1722','files'),
++ 'endpoint_target_compilation_root_review':('FREEZE.json','2a1abb6395600909f76649cfe68ed1010012ef2d1273a6018cbd92aa9c1c391c','members'),
+ }
+-ROOT_RUNS=['endpoint_chart_selection','endpoint_chart_acceptance','endpoint_recurrence_acceptance']
+-ACCEPTANCES={
+- 'endpoint_chart_root_review/ACCEPTANCE.json':'112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7',
+- 'endpoint_recurrence_root_review/ACCEPTANCE.json':'36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e',
+-}
++ROOT_RUNS=['endpoint_target_acceptance','endpoint_target_acceptance_correct_schema']
++ACCEPTANCES={'endpoint_target_compilation_root_review/ACCEPTANCE.json':'949d009ac768e72401c005b5cc7b0161ec93bbfdefdf004dc4b8300e0f140514'}
++PARENT_NOTE='docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++PARENT_SHA='ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8'
+ BODIES=[
+- ('chart_original_derivation','endpoint_chart_certificate_candidate/DERIVATION.md'),
+- ('chart_pre_enclosure_reconstruction','endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md'),
+- ('chart_exposed_review','endpoint_chart_exposed_check/REVIEW.md'),
+- ('chart_complete_code_review','endpoint_chart_exposed_check/CODE_REVIEW.md'),
+- ('chart_controlling_root_qualifications','endpoint_chart_root_review/FINAL_QUALIFICATIONS.md'),
+- ('recurrence_original_derivation','endpoint_recurrence_candidate/DERIVATION.md'),
+- ('recurrence_exposed_review','endpoint_recurrence_exposed_check/REVIEW.md'),
+- ('recurrence_complete_analytic_code_review','endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md'),
+- ('recurrence_controlling_root_qualifications','endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md'),
++ ('original_target_derivation','endpoint_target_compilation_candidate/DERIVATION.md'),
++ ('pre_program_analytic_review','endpoint_target_compilation_exposed_check/REVIEW.md'),
++ ('complete_prelaunch_source_review','endpoint_target_compilation_exposed_check/program_exposed/REVIEW.md'),
++ ('completed_saved_arithmetic_review','endpoint_target_compilation_exposed_check/ARITHMETIC_REVIEW.md'),
++ ('saved_arithmetic_coverage','endpoint_target_compilation_exposed_check/ARITHMETIC_SOURCE_COVERAGE.md'),
++ ('controlling_root_qualifications','endpoint_target_compilation_root_review/FINAL_QUALIFICATIONS.md'),
+ ]
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def put(rel,b):
+@@ -38,34 +30,34 @@
+ def ident(b):return {'bytes':len(b),'sha256':sha(b)}
+ def read(p):return json.loads(p.read_text())
+ sources={};objects={};freeze_rows=[]
+-def add(path,alias=None,role='historical_source'):
+- path=path.resolve();b=path.read_bytes();alias=alias or str(path.relative_to(N));h=sha(b)
++def add(path,alias=None,role='historical_source',captured_bytes=None,recovered_from=None):
++ path=path.resolve();b=path.read_bytes() if captured_bytes is None else captured_bytes;alias=alias or str(path.relative_to(N));h=sha(b)
+  r={'source':alias,'original_path':str(path),'role':role,**ident(b),'recovery_path':PK+'/archive/sha256/'+h}
++ if recovered_from is not None:r['historical_version_recovered_from']=str(recovered_from)
+  if alias in sources:assert sources[alias]['sha256']==h
+  else:sources[alias]=r
+  objects[h]={'path':r['recovery_path'],**ident(b)}
+  if not (P/r['recovery_path']).exists():put(r['recovery_path'],b)
+  return b
+ assert not P.exists(),'Refuse overwrite of an existing proposal'
+-for folder,(filename,pin,mode) in ROOTS.items():
++for folder,(filename,pin,key) in ROOTS.items():
+  f=N/folder/filename;raw=add(f,role='source_freeze');assert sha(raw)==pin
+- rows=read(f)['members'];selected=[]
++ rows=read(f)[key];selected=[]
+  assert len({r['path'] for r in rows})==len(rows)
+  for row in rows:
+   rel=row['path'];path=N/folder/rel;path.resolve().relative_to(N)
+   b=path.read_bytes();assert ident(b)=={'bytes':row['bytes'],'sha256':row['sha256']},str(path)
+-  keep=mode=='complete' or '/' not in rel or rel.startswith(('scoped_runs/','metadata_runs/'))
+-  if keep:add(path);selected.append(rel)
+- for terminal in ['runs/final_freeze','metadata_runs/final_seal']:
++  add(path);selected.append(rel)
++ for terminal in ['runs/final_freeze','closure_metadata_run']:
+   for p in sorted((N/folder/terminal).glob('*')):
+    if p.is_file():add(p,role='original_terminal_freeze_evidence')
+  freeze_rows.append({'folder':folder,'alias':folder+'/'+filename,'sha256':pin,'members':len(rows),
+-  'complete_members':mode=='complete','selected_members':selected,'all_original_members_verified_at_build':True})
++  'key':key,'complete_members':True,'selected_members':selected,'all_original_members_verified_at_build':True})
+ for name in ROOT_RUNS:
+  for p in sorted((N/'runs'/name).iterdir()):
+   if p.is_file():add(p,role='actual_root_metadata_or_heuristic_evidence')
+ 
+-# Preserve original paths named by every selected receipt. No result is rerun.
++# Preserve literal launch paths and separately captured versions; no source is executed.
+ contracts=[];processed=set()
+ while True:
+  pending=[alias for alias in sources if alias.endswith('/EXECUTION.json') and alias not in processed]
+@@ -73,22 +65,36 @@
+  for alias in pending:
+   processed.add(alias);r=read(Path(sources[alias]['original_path']))
+   if 'child_source_at_launch' in r:
+-   schema='root_original_and_capture';original,capture,recorder='child_source_at_launch','source_capture','recorder';index=1
++   original,capture,recorder='child_source_at_launch','source_capture','recorder'
+   else:
+-   schema='captured_source_execution';original='original_source' if 'original_source' in r else 'source_original'
+-   capture,recorder='source_at_launch','recorder_at_launch';index=2 if r['argv'][1]=='-B' else 1
+-  for key in [original,capture,recorder,'stdout','stderr']:
+-   b=add(Path(r[key]['path']),role='actual_launch_source_or_complete_stream')
+-   assert ident(b)=={'bytes':r[key]['bytes'],'sha256':r[key]['sha256']}
+-  assert r['exit_code']==0
+-  contract={'alias':alias,'schema':schema,'original_key':original,'executed_argv_index':index,
+-   'exit_code':r['exit_code'],'argv':r['argv'],'source_sha256':r[original]['sha256'],
+-   'original_alias':str(Path(r[original]['path']).relative_to(N)),
+-   'capture_alias':str(Path(r[capture]['path']).relative_to(N)),
+-   'stdout_sha256':r['stdout']['sha256'],'stderr_sha256':r['stderr']['sha256']}
+-  for key in ['wall_timeout_seconds','timeout_seconds']:
+-   if key in r:contract[key]=r[key]
++   original='original_source' if 'original_source' in r else 'source_original'
++   capture='source_at_launch';recorder='recorder_at_launch' if 'recorder_at_launch' in r else 'launcher_at_launch'
++  source_raw=Path(r[capture]['path']).read_bytes();assert ident(source_raw)=={k:r[original][k] for k in ['bytes','sha256']}
++  original_path=Path(r[original]['path']);original_alias=str(original_path.relative_to(N))
++  if original_path.read_bytes()!=source_raw:
++   original_alias='historical_at_launch/'+r[original]['sha256']+'/'+original_alias
++   add(original_path,alias=original_alias,role='preserved_superseded_original_source',captured_bytes=source_raw,recovered_from=r[capture]['path'])
++  else:add(original_path,role='actual_original_launch_source')
++  for field in [capture,recorder,'stdout','stderr','checker_source_freeze','original_input_binding','input_binding_at_launch']:
++   if field not in r:continue
++   raw=add(Path(r[field]['path']),role='actual_capture_binding_or_full_stream')
++   assert ident(raw)=={k:r[field][k] for k in ['bytes','sha256']}
++  index=2 if r['argv'][1]=='-B' else 1
++  executed=original if r['argv'][index]==r[original]['path'] else capture
++  assert r['argv'][index]==r[executed]['path'] and r[original]['path']!=r[capture]['path']
++  fields=[original,capture,recorder,'stdout','stderr']
++  aliases={field:(original_alias if field==original else str(Path(r[field]['path']).relative_to(N))) for field in fields}
++  for field in ['checker_source_freeze','original_input_binding','input_binding_at_launch']:
++   if field in r:fields.append(field);aliases[field]=str(Path(r[field]['path']).relative_to(N))
++  temporal={k:r[k] for k in ['start_utc','end_utc','started_utc','finished_utc','elapsed_seconds','timed_out','wall_timeout_seconds','timeout_seconds','cpu_ram_limits','source_unchanged','source_unchanged_during_run'] if k in r}
++  contract={'alias':alias,'original_key':original,'capture_key':capture,'recorder_key':recorder,
++   'executed_key':executed,'executed_argv_index':index,'argv':r['argv'],'cwd':r['cwd'],
++   'exit_code':r['exit_code'],'temporal_and_limits':temporal,'source_sha256':r[original]['sha256'],
++   'field_aliases':aliases,'field_pins':{field:r[field] for field in fields},
++   'execution_scope':'Original path launched with separate preserved snapshot' if executed==original else 'Captured copy actually launched'}
+   contracts.append(contract)
++parent_raw=add(N.parent/'correlation_worktree'/PARENT_NOTE,alias='canonical_parent/'+PARENT_NOTE,role='sole_direct_mathematical_parent_exact_source')
++assert sha(parent_raw)==PARENT_SHA
+ for alias,h in ACCEPTANCES.items():assert sha((N/alias).read_bytes())==h
+ note=(D/'packet_text/WRAPPER.md').read_bytes();wrapper_len=len(note);maps=[]
+ for name,alias in BODIES:
+@@ -99,14 +105,14 @@
+ note+=b'\n\nPublication scope remains conditional support under the premises and verification limits above; retained status requires the independent audit path.\n'
+ put(NOTE,note)
+ js(PK+'/BODY_MAP.json',{'new_wrapper_bytes':[0,wrapper_len],'trailing_wrapper_bytes':[trailer_start,len(note)],'bodies':maps})
+-js(PK+'/SOURCE_MANIFEST.json',{'schema':'endpoint_chart_recurrence_source_archive_v1','sources':list(sources.values()),
+- 'archive_rule':'Complete candidate source closures plus bounded review/acceptance selections; no recursive prior publication archives.'})
++js(PK+'/SOURCE_MANIFEST.json',{'schema':'endpoint_target_compilation_source_archive_v1','sources':list(sources.values()),
++ 'archive_rule':'Complete candidate132/checker256/root inventories, terminal metadata and exact execution version aliases; shared bytes deduplicated once, no prior publication archive traversal.'})
+ js(PK+'/ARCHIVE_INDEX.json',{'objects':list(objects.values()),'recursive_prior_publication_archives':False})
+ js(PK+'/FROZEN_SOURCE_CLOSURE.json',{'roots':freeze_rows})
+ js(PK+'/EXECUTION_CONTRACTS.json',{'receipts':contracts,'new_scientific_executions':0})
+-js(PK+'/PARENT_BINDING.json',{'canonical_binding_complete':False,'direct_mathematical_parents':[],
+- 'internal_argument_dependency':'The recurrence-based universal-duration consequence uses the chart qualified within this combined packet.',
+- 'git_ancestry_is_not_mathematical_dependency':True})
++js(PK+'/PARENT_BINDING.json',{'canonical_binding_complete':False,'direct_mathematical_parents':[
++ {'path':PARENT_NOTE,'source_alias':'canonical_parent/'+PARENT_NOTE,**ident(parent_raw)}],
++ 'intended_graph_delta':{'new_roots':0,'direct_edges':1},'git_ancestry_is_not_mathematical_dependency':True})
+ state={k:None for k in ['source_wrapper_review','source_publication_binding','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']}
+ state.update(scientific_programs_run_this_draft=0,scientific_replays=0)
+ js(PK+'/PUBLICATION_STATE.json',state)
+@@ -114,12 +120,13 @@
+ for name in ['PR_BODY.md','BINDING_CONTRACT.md','CLAIM_STATUS_CERTIFICATE.md','EVIDENCE_SCOPE.md']:put(PK+'/'+name,(D/'packet_text'/name).read_bytes())
+ js(PK+'/EXPOSURE.json',{'source_exposed':True,'same_selected_model':True,'blind_independence':False,
+  'second_ODE_implementation':False,'new_scientific_executions':0,'historical_scientific_replays':0,
+- 'historical_author_enclosure_commands':2,'historical_separate_saved_evidence_checks':2,
+- 'historical_chart_selector_is_heuristic_only':True,'retained_audit':False})
++ 'historical_author_target_commands':1,'historical_separate_saved_evidence_checks':1,
++ 'author_elapsed_seconds':461.2228046669625,'checker_elapsed_seconds':10.38794649997726,
++ 'checker_recomputed_local_ODE_slots':False,'new_scientific_attempts':0,'retained_audit':False})
+ inputs=[]
+ for p in sorted(P.rglob('*')):
+  if p.is_file():inputs.append({'path':str(p.relative_to(P)),**ident(p.read_bytes())})
+-js(PK+'/INPUT_MANIFEST.json',{'schema':'endpoint_chart_recurrence_publication_inputs_v1','inputs':inputs})
++js(PK+'/INPUT_MANIFEST.json',{'schema':'endpoint_target_compilation_publication_inputs_v1','inputs':inputs})
+ msha=sha((P/PK/'INPUT_MANIFEST.json').read_bytes())
+ replacements={'__MANIFEST_SHA256__':msha,'__AUDIT_INPUT_PATHS__':repr([r['path'] for r in inputs]+[PK+'/INPUT_MANIFEST.json']),
+  '__EXPECTED_BODIES__':repr({r['name']:r['sha256'] for r in maps}),
+--- machinery_reference/primary_template.py
++++ primary_template.py
+@@ -2,8 +2,8 @@
+ from pathlib import Path,PurePosixPath
+ import hashlib,json
+ REPO=Path(__file__).resolve().parents[1]
+-NOTE='docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-PACKET='.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016'
++NOTE='docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++PACKET='.claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016'
+ AUDIT_TIMEOUT_SEC=60
+ AUDIT_INPUT_PATHS=__AUDIT_INPUT_PATHS__
+ MANIFEST_SHA256='__MANIFEST_SHA256__'
+@@ -26,31 +26,22 @@
+ def verify_receipt(src,contract):
+  r=json.loads(src(contract['alias']))
+  require(r['exit_code']==contract['exit_code'],'Original exit status preserved')
+- require(r['argv']==contract['argv'],'Exact original full argv')
+- require(r['start_utc']<r['end_utc'] and r['elapsed_seconds']>=0,'Actual execution chronology')
+- if contract['schema']=='root_original_and_capture':
+-  original,capture,recorder='child_source_at_launch','source_capture','recorder'
+-  require(r['argv'][1]==r[original]['path'],'Root launched original source path')
+- else:
+-  original=contract['original_key'];capture='source_at_launch';recorder='recorder_at_launch'
+-  require(r['argv'][contract['executed_argv_index']]==r[capture]['path'],'Actually launched captured source path')
+-  require(r['timed_out'] is False,'Original no-timeout status')
+- require(r[original]['path']!=r[capture]['path'],'Original source and executed capture remain distinct')
+- require(r[original]['sha256']==r[capture]['sha256']==contract['source_sha256'],'Original/executed source identity')
+- require(r[original]['bytes']==r[capture]['bytes'],'Original/executed source length')
+- require(renewal_alias(r[original]['path'])==contract['original_alias'],'Original source path identity')
+- require(renewal_alias(r[capture]['path'])==contract['capture_alias'],'Actual capture path identity')
+- for key in [original,capture,recorder,'stdout','stderr']:identity(src(renewal_alias(r[key]['path'])),r[key])
+- for key in ['stdout','stderr']:
+-  require(r[key]['sha256']==contract[key+'_sha256'],'Complete original '+key+' identity')
+- if 'wall_timeout_seconds' in contract:
+-  require(r['wall_timeout_seconds']==contract['wall_timeout_seconds'],'Actual original wall limit')
+- if 'timeout_seconds' in contract:
+-  require(r['timeout_seconds']==contract['timeout_seconds'],'Actual original wall limit')
++ require(r['argv']==contract['argv'] and r['cwd']==contract['cwd'],'Exact original full argv and cwd')
++ for key,value in contract['temporal_and_limits'].items():require(r[key]==value,'Original chronology, status and limits')
++ start=r.get('start_utc',r.get('started_utc'));end=r.get('end_utc',r.get('finished_utc'))
++ require(start<end and r['elapsed_seconds']>=0,'Actual execution chronology')
++ original,capture=contract['original_key'],contract['capture_key']
++ require(r['argv'][contract['executed_argv_index']]==r[contract['executed_key']]['path'],'Actually launched original or captured path')
++ require(r[original]['path']!=r[capture]['path'],'Original source and separate snapshot remain distinct')
++ require(r[original]['sha256']==r[capture]['sha256']==contract['source_sha256'],'Original and captured source identity')
++ require(r[original]['bytes']==r[capture]['bytes'],'Original and captured source length')
++ for key,alias in contract['field_aliases'].items():
++  require(r[key]==contract['field_pins'][key],'Exact recorded field identity')
++  identity(src(alias),r[key])
+  return r
+ def verify_payload(read):
+  raw=read(PACKET+'/INPUT_MANIFEST.json');require(digest(raw)==MANIFEST_SHA256,'Input manifest pin')
+- manifest=json.loads(raw);require(manifest['schema']=='endpoint_chart_recurrence_publication_inputs_v1','Input schema')
++ manifest=json.loads(raw);require(manifest['schema']=='endpoint_target_compilation_publication_inputs_v1','Input schema')
+  rows=manifest['inputs'];paths=[r['path'] for r in rows]
+  require(len(paths)==len(set(paths)) and set(AUDIT_INPUT_PATHS)==set(paths)|{PACKET+'/INPUT_MANIFEST.json'},'Exact declared input closure')
+  for row in rows:identity(read(row['path']),row)
+@@ -58,9 +49,9 @@
+  for field in ['claim_type: bounded_theorem','actual_current_surface_status: conditional-support','canonical_parent_binding_complete: false','audit_required_before_effective_retained: true','bare_retained_allowed: false']:
+   require(field in header,'Draft scope field '+field)
+  require(b'Claim type: bounded_theorem.' in note,'Explicit prose claim type')
+- require(b'**Primary runner:** `scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py`' in note,'Explicit primary runner label')
++ require(b'**Primary runner:** `scripts/positive_onsite_target_compilation_2026_10_16.py`' in note,'Explicit primary runner label')
+  maps=json.loads(read(PACKET+'/BODY_MAP.json'))['bodies']
+- require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==9,'Nine unchanged body roles')
++ require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==6,'Six unchanged body roles')
+  previous=-1
+  for row in maps:
+   a,b=row['start_byte_inclusive'],row['end_byte_exclusive']
+@@ -80,7 +71,7 @@
+  require({f['alias']:f['sha256'] for f in roots}==EXPECTED_FREEZES,'Exact bounded frozen source roots')
+  for f in roots:
+   raw=src(f['alias']);require(digest(raw)==f['sha256'],'Actual frozen source identity')
+-  members=json.loads(raw)['members'];require(len(members)==f['members'],'Original freeze member count')
++  members=json.loads(raw)[f['key']];require(len(members)==f['members'],'Original freeze member count')
+   table={r['path']:r for r in members};require(len(table)==len(members),'Unique original freeze members')
+   require(set(f['selected_members'])<=set(table),'Selected source membership')
+   if f['complete_members']:require(set(f['selected_members'])==set(table),'Complete candidate/root closure')
+@@ -95,8 +86,22 @@
+   require(decision['root_read_complete'] is True and decision['retained_audit'] is False,'Qualified source decision only')
+   require(decision['canonical_binding'] is None and decision['publication'] is None,'Original source decision nulls')
+   q=decision['controlling_qualifications'];identity(src(renewal_alias(q['path'])),q)
++ author=json.loads(src('endpoint_target_compilation_candidate/runs/target_001/EXECUTION.json'))
++ checker=json.loads(src('endpoint_target_compilation_exposed_check/saved_arithmetic_001/EXECUTION.json'))
++ require(author['exit_code']==checker['exit_code']==0 and author['timed_out'] is checker['timed_out'] is False,'Original successful single scientific runs')
++ require(author['elapsed_seconds']==461.2228046669625 and author['wall_timeout_seconds']==600,'Actual author process limits')
++ require(checker['elapsed_seconds']==10.38794649997726 and checker['wall_timeout_seconds']==180,'Actual checker process limits')
++ failed=json.loads(src('runs/endpoint_target_acceptance/EXECUTION.json'));corrected=json.loads(src('runs/endpoint_target_acceptance_correct_schema/EXECUTION.json'))
++ require(failed['exit_code']==1 and corrected['exit_code']==0,'Preserved failed root metadata and distinct successful correction')
++ require(b"KeyError: 'members'" in src(renewal_alias(failed['stderr']['path'])),'Exact initial schema failure remains')
++ successful=json.loads(src(renewal_alias(corrected['stdout']['path'])))
++ identity(src('endpoint_target_compilation_root_review/ACCEPTANCE.json'),successful['acceptance'])
+  parent=json.loads(read(PACKET+'/PARENT_BINDING.json'))
+- require(parent['canonical_binding_complete'] is False and parent['direct_mathematical_parents']==[],'No direct canonical mathematical parents; future binding unset')
++ require(parent['canonical_binding_complete'] is False and len(parent['direct_mathematical_parents'])==1,'One mathematical parent; canonical binding remains pending')
++ parent_row=parent['direct_mathematical_parents'][0]
++ require(parent_row['path']=='docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md' and parent_row['sha256']=='ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8','Exact sole chart/recurrence parent')
++ identity(src(parent_row['source_alias']),parent_row)
++ require(parent['intended_graph_delta']=={'new_roots':0,'direct_edges':1},'One parent edge, no new root')
+  exposure=json.loads(read(PACKET+'/EXPOSURE.json'))
+  require(exposure['new_scientific_executions']==0 and exposure['blind_independence'] is False and exposure['source_exposed'] is True,'Honest packaging exposure')
+  require(exposure['second_ODE_implementation'] is False,'No independent ODE claim')
+--- machinery_reference/inspect_packet.py
++++ inspect_packet.py
+@@ -2,9 +2,9 @@
+ from pathlib import Path
+ import ast,copy,difflib,hashlib,json,re,runpy,sys
+ D=Path(sys.argv[1]).resolve();P=D/'proposal'
+-PK='.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016'
+-NOTE='docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py'
++PK='.claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016'
++NOTE='docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++SCRIPT='scripts/positive_onsite_target_compilation_2026_10_16.py'
+ api=runpy.run_path(str(P/SCRIPT),run_name='source_metadata_inspection')
+ read=lambda rel:(P/rel).read_bytes()
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+@@ -29,11 +29,11 @@
+ else:raise AssertionError('Unbound proposed primary main accepted')
+ targets={
+  'altered_original_body':NOTE,
+- 'altered_chart_qualification':source['endpoint_chart_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
+- 'altered_recurrence_qualification':source['endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
+- 'missing_original_power_trace':source['endpoint_recurrence_candidate/recurrence_001_output/POWER_TRACE.json']['recovery_path'],
+- 'missing_original_science_capture':source['endpoint_recurrence_candidate/runs/recurrence_001/source_at_launch.py']['recovery_path'],
+- 'missing_complete_chart_stdout':source['endpoint_chart_certificate_candidate/runs/enclosure_001/stdout']['recovery_path'],
++ 'altered_root_qualification':source['endpoint_target_compilation_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
++ 'missing_saved_power_trace':source['endpoint_target_compilation_candidate/target_001_output/FINAL_POWER_TRACE.json']['recovery_path'],
++ 'missing_original_science_capture':source['endpoint_target_compilation_candidate/runs/target_001/source_at_launch.py']['recovery_path'],
++ 'missing_complete_checker_stdout':source['endpoint_target_compilation_exposed_check/saved_arithmetic_001/stdout']['recovery_path'],
++ 'missing_failed_root_stderr':source['runs/endpoint_target_acceptance/stderr']['recovery_path'],
+  'altered_direct_parent_binding':PK+'/PARENT_BINDING.json',
+  'invented_future_approval':PK+'/ACTUAL_BINDING.json',
+ }
+@@ -49,19 +49,21 @@
+ src=lambda alias:read(source[alias]['recovery_path'])
+ contracts=json.loads(read(PK+'/EXECUTION_CONTRACTS.json'))['receipts']
+ selected=[next(r for r in contracts if r['alias']==alias) for alias in [
+- 'endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json',
+- 'endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json',
+- 'runs/endpoint_recurrence_acceptance/EXECUTION.json']]
++ 'endpoint_target_compilation_candidate/runs/target_001/EXECUTION.json',
++ 'endpoint_target_compilation_exposed_check/metadata_run/EXECUTION.json',
++ 'endpoint_target_compilation_exposed_check/closure_metadata_run/EXECUTION.json',
++ 'runs/endpoint_target_acceptance/EXECUTION.json',
++ 'runs/endpoint_target_acceptance_correct_schema/EXECUTION.json']]
+ semantic=[]
+ for contract in selected:
+  for field in ['exit_code','argv','capture_path','source_hash','missing_stderr','chronology']:
+   altered=copy.deepcopy(json.loads(src(contract['alias'])))
+-  original=contract['original_key'];capture='source_capture' if contract['schema']=='root_original_and_capture' else 'source_at_launch'
+-  if field=='exit_code':altered['exit_code']=1
++  original=contract['original_key'];capture=contract['capture_key']
++  if field=='exit_code':altered['exit_code']=1-altered['exit_code']
+   elif field=='argv':altered['argv']=altered['argv']+['unrecorded-argument']
+   elif field=='capture_path':altered[capture]['path']=altered[original]['path']
+   elif field=='source_hash':altered[original]['sha256']='0'*64
+-  elif field=='chronology':altered['end_utc']=altered['start_utc']
++  elif field=='chronology':altered['end_utc' if 'end_utc' in altered else 'finished_utc']=altered.get('start_utc',altered.get('started_utc'))
+   def changed(alias,altered=altered,contract=contract,field=field):
+    if alias==contract['alias']:return json.dumps(altered).encode()
+    if field=='missing_stderr' and alias==api['renewal_alias'](altered['stderr']['path']):raise FileNotFoundError('Missing complete stderr')
+@@ -96,7 +98,7 @@
+  diffs.extend(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='machinery_reference/'+name,tofile=name))
+  assert not any(line.rstrip()!=line for line in new.splitlines()),name
+ ast.parse((P/SCRIPT).read_text())
+-(D/'CODE_REUSE_MAP.json').write_text(json.dumps({'baseline':'preparation_angle_moment_qualified_publication_draft',
++(D/'CODE_REUSE_MAP.json').write_text(json.dumps({'baseline':'endpoint_chart_recurrence_qualified_publication_draft',
+  'scope':'Exact function source identity only; changed globals and whole-module paths remain separately reviewed.',
+  'functions':function_rows},indent=2)+'\n')
+ (D/'CODE_FULL_DIFF.patch').write_text(''.join(diffs))
+--- machinery_reference/record_metadata.py
++++ record_metadata.py
+@@ -19,20 +19,21 @@
+ if mode=='build':
+  tree=ast.parse(source.read_text())
+  literals={t.id:ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) for t in n.targets if isinstance(t,ast.Name) and t.id in {'ROOTS','ROOT_RUNS'}}
+- for folder,(filename,expected,selection) in literals['ROOTS'].items():
++ for folder,(filename,expected,key) in literals['ROOTS'].items():
+   f=N/folder/filename;input_paths.add(f);v=json.loads(f.read_text())
+   assert sha(f.read_bytes())==expected
+-  for row in v['members']:
++  for row in v[key]:
+    p=Path(row['path']);input_paths.add(p if p.is_absolute() else N/folder/p)
+-  for terminal in ['runs/final_freeze','metadata_runs/final_seal']:
++  for terminal in ['runs/final_freeze','closure_metadata_run']:
+    input_paths.update(p for p in (N/folder/terminal).glob('*') if p.is_file())
+  for name in literals['ROOT_RUNS']:
+   input_paths.update(p for p in (N/'runs'/name).iterdir() if p.is_file())
+  for p in list(input_paths):
+   if p.name=='EXECUTION.json':
+    r=json.loads(p.read_text())
+-   for key in ['original_source','source_original','source_at_launch','child_source_at_launch','source_capture','recorder_at_launch','recorder','stdout','stderr']:
++   for key in ['original_source','source_original','source_at_launch','child_source_at_launch','source_capture','recorder_at_launch','launcher_at_launch','recorder','stdout','stderr']:
+     if key in r:input_paths.add(Path(r[key]['path']))
++input_paths.add(W/'docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md')
+ inputs=[pin(p) for p in sorted(input_paths)]
+ (run/'INPUT_IDENTITIES_AT_LAUNCH.json').write_text(json.dumps(inputs,indent=2)+'\n')
+ argv=[sys.executable,'-B',str(capture),str(D)]
+@@ -50,7 +51,7 @@
+  for p in sorted(D.rglob('*')):
+   if p.is_file():
+    v=pin(p);v['path']=str(p.relative_to(D));members.append(v)
+- frozen={'kind':'source_only_qualified_endpoint_chart_recurrence_publication_draft','frozen_utc':datetime.now(timezone.utc).isoformat(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'source_wrapper_review':None,'source_publication_binding':None,'canonical_integration':None,'current_base':None,'canonical_review':None,'primary_execution':None,'publication':None,'retained_audit':None,'members':members}
++ frozen={'kind':'source_only_qualified_endpoint_target_compilation_publication_draft','frozen_utc':datetime.now(timezone.utc).isoformat(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'source_wrapper_review':None,'source_publication_binding':None,'canonical_integration':None,'current_base':None,'canonical_review':None,'primary_execution':None,'publication':None,'retained_audit':None,'members':members}
+  (D/'FINAL_FREEZE.json').write_text(json.dumps(frozen,indent=2)+'\n')
+  r={'completed_metadata_execution':pin(run/'EXECUTION.json'),'freeze':pin(D/'FINAL_FREEZE.json'),'members':len(members),'exit_code':r['exit_code']}
+ print(json.dumps(r,indent=2));sys.exit(r['exit_code'])
+--- machinery_reference/seal_packet.py
++++ seal_packet.py
+@@ -2,7 +2,7 @@
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import ast,hashlib,json,sys
+-D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016'
++D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016'
+ def utc():return datetime.now(timezone.utc).isoformat()
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def pin(p):
+@@ -31,11 +31,11 @@
+  '__EXPECTED_ACCEPTANCES__':repr(acceptances)}
+ generated=(D/'primary_template.py').read_text()
+ for key,value in replacements.items():generated=generated.replace(key,value)
+-assert (P/'scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py').read_bytes()==generated.encode()
++assert (P/'scripts/positive_onsite_target_compilation_2026_10_16.py').read_bytes()==generated.encode()
+ v=json.loads((D/'VERIFICATION.json').read_text())
+ assert v['mathematics_tested_by_this_execution'] is False and all(x['rejected'] for x in v['scoped_metadata_mutants']+v['direct_receipt_predicate_mutants'])
+ assert v==json.loads((D/'metadata_runs/inspection/stdout').read_text())
+-assert v['graph_parser_primary_resolution']['resolved_primary']=='scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py'
++assert v['graph_parser_primary_resolution']['resolved_primary']=='scripts/positive_onsite_target_compilation_2026_10_16.py'
+ for name in ['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py']:
+  text=(D/name).read_text();ast.parse(text)
+  assert not any(line.rstrip()!=line for line in text.splitlines()),name

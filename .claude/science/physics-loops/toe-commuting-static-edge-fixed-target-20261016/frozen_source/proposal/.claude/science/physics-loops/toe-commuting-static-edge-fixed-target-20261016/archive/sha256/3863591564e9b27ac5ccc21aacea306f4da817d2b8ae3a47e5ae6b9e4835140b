@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""Source provenance only. No matrix, trigonometric or other science calculation."""
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parent
+N = root.parent
+P = N/'endpoint_target_compilation_candidate'
+G = N/'endpoint_physical_gap_decision'
+
+def ident(path):
+    data = path.read_bytes()
+    return {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}, data
+
+specs = [
+    ('target_derivation', P/'DERIVATION.md', 'ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737', 'complete earlier author/read coverage; target, phase and resource sections reread this turn; used as input specification, not proof of new result'),
+    ('target_ledger', P/'target_001_output/RESOURCE_LEDGER.json', 'cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11', 'complete reread this turn; unchanged actual saved ledger; no replay'),
+    ('target_result', P/'RESULT.md', 'c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60', 'complete author/read coverage reused at unchanged bytes; historical status not rewritten'),
+    ('target_freeze', P/'FREEZE.json', '0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc', 'metadata identity and selected source linkage; not a recursive science check'),
+    ('gap_decision', G/'GAP_DECISION.md', 'ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc', 'complete earlier author/read coverage reused; cap, geometry and finite-window interface revisited'),
+    ('gap_freeze', G/'FREEZE.json', '830d2f702a69b6fc48514b35aa4bb75087efc8c317196cbf8e58e78c1c4f46b7', 'metadata identity and selected source linkage'),
+]
+snap = root/'sources'
+snap.mkdir(exist_ok=False)
+entries = []
+for label, path, sha, coverage in specs:
+    meta, data = ident(path)
+    assert meta['sha256'] == sha, (label, meta)
+    dest = snap/(label+'__'+path.name)
+    dest.write_bytes(data)
+    entries.append({'label': label, 'original_path': str(path),
+                    'snapshot': str(dest.relative_to(root)), **meta,
+                    'read_coverage': coverage})
+    print(json.dumps({'verified_source': label, **meta}, sort_keys=True), flush=True)
+
+for parent, freeze_label, labels in [
+    (P, 'target_freeze', ('target_derivation','target_ledger','target_result')),
+    (G, 'gap_freeze', ('gap_decision',)),
+]:
+    f = next(e for e in entries if e['label'] == freeze_label)
+    old = json.loads((root/f['snapshot']).read_text())
+    index = {e['path']: e for e in old['members']}
+    for label in labels:
+        source = next(e for e in entries if e['label'] == label)
+        rel = str(Path(source['original_path']).relative_to(parent))
+        for key in ('bytes','sha256'):
+            assert index[rel][key] == source[key], (label,key)
+        print('Verified selected parent-freeze linkage: '+label, flush=True)
+
+manifest = {'scope': 'source-only conditional commuting-edge alternative',
+            'scientific_executions': 0,
+            'mathematical_status': 'proposed analytical derivation; separate checking pending',
+            'extra_physical_permission': 'calibrated positive I+XX block on the existing old edge',
+            'strict_four_onsite_ray_supplier': 'not established',
+            'sources': entries,
+            'parent_chat_exposure': 'Both commuting-edge suggestions received before freeze; see EXPOSURE.md',
+            'canonical_binding': None, 'acceptance': None, 'publication': None}
+(root/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2)+'\n')
+members = []
+for path in sorted(root.rglob('*')):
+    if not path.is_file():
+        continue
+    rel = str(path.relative_to(root))
+    if rel == 'FREEZE.json' or rel.startswith('runs/metadata_001/'):
+        continue
+    meta, _ = ident(path)
+    members.append({'path': rel, **meta})
+freeze = {'utc': dt.datetime.now(dt.timezone.utc).isoformat(),
+          'status': 'frozen proposed source; no scientific execution',
+          'scientific_launches': 0, 'members': members,
+          'terminal_metadata_receipt_outside_freeze': 'runs/metadata_001/EXECUTION.json',
+          'acceptance': None, 'canonical_binding': None, 'publication': None}
+(root/'FREEZE.json').write_text(json.dumps(freeze, indent=2)+'\n')
+for member in members:
+    meta, _ = ident(root/member['path'])
+    assert meta == {key: member[key] for key in ('bytes','sha256')}
+freeze_meta, _ = ident(root/'FREEZE.json')
+print(json.dumps({'frozen_members_verified': len(members), 'freeze': freeze_meta}, sort_keys=True), flush=True)
+print('Metadata only: no new mathematical fixture or previous science was executed.', flush=True)

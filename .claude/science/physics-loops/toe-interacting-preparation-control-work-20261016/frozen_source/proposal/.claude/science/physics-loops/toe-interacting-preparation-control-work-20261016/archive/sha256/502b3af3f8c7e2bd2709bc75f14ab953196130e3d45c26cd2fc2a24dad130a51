@@ -1,0 +1,40 @@
+# Final qualifications: interacting old generator with supplied positive complements
+
+Root accepts qualified conditional analytical support for the ready-input bridge in original proposal2d4294d7, as reconstructed in exposed review086f5d2e. Root read the complete new review, precheck, numerical source/launcher, receipt/full streams and source coverage. The original argument was authored and frozen before exposure. Earlier comb and uniform-word hypotheses are reused at their qualified source identities. This is same-model source-exposed checking by a reviewer who authored some parent results; it is not blind evidence, model-independent replication, retained audit or a physical demonstration.
+
+## Literal physical premises
+
+The actual old Hamiltonian remains K=E_base I+sum_X h_X>=0. Supply positive controls C_X=c_X I_X-h_X>=0 on their actual old supports, with c_X>=||h_X||, so C=sum_X C_X=kappa I-K and kappa=E_base+sum_X c_X. Since K+C=kappa I, kappa>=lambda_max(K)>=0; E_base need not separately be nonnegative. Every local identity reserve, support, arity and incident load remains paid. This new permission is not derived from the smaller comb control domain and does not turn a general old graph into a degree-three nearest-neighbor graph.
+
+Supply the common added gap Delta>0, H*=Delta N_S, matched reservoir/ancilla fields, parent local controls, complete independently ready packet/clean-ancilla interface, and external timing/phase references. During the ramps the old operator is (1-u)K+u(kappa I+H*), with u=3s^2-2s^3 or its reverse. A safe added static-plus-driven incidence is max_v sum_{X contains v}||C_X||+Delta+g/2. Add the specified old decomposition for the full load. Ramp derivative is bounded by 3[sum_{X contains v}||C_X||+Delta]/(2r). A longer fixed ramp can meet a positive slew allowance; it cannot lower the required complement amplitude. Physical positivity/support/incidence/slew certificates are separate from a small norm-error integral.
+
+## Exact chronology, target and full scalar
+
+Let alpha=Delta r_on/hbar, beta=Delta r_off/hbar. Use the actual forward time-ordered old ramp propagators R_on and R_off, including all scalar phases. Turn-off is not an inverse ramp, and number phases cannot commute through a noncommuting old ramp. For a complete conserving word C_P with [C_P,N_S+N_A]=0 and plateau U_p=gamma exp(-i phi(N_S+N_A)) C_P, require phi+alpha+beta=2pi k. Then on the entire Hilbert space,
+
+    U_off U_p U_on = gamma (R_off exp(i beta N_S) tensor I)
+                    C_P (exp(i alpha N_S) R_on tensor I).
+
+Compile A=exp(-i beta N_S) R_off* V R_on* exp(-i alpha N_S). The complete ready-input comparator is gamma J_beta V, including arbitrary reference systems and all outputs. The phase is gamma=exp[-i(kappa tau/hbar+Phi)] with the emitted word's actual paid reserve Phi. It is not fitted, discarded or asserted equal to one. The off-code action remains the actual word product.
+
+Finite old matrix enclosures for the fixed ramps can be obtained from a controlled Dyson series. The qualified uniform logical bound preselects Gbar=R(q)(1+131328 L^4), tau=h(Gbar+1), before target compilation. A rational approximation within1/4 of Delta(tau+r_on+r_off)/(2pi hbar), then k=floor(rho)+2, yields 3pi/2<lambda<=9pi/2. All old, battery and ancilla sites receive the final correction. Include guards before computing these phases. Compile the true unitary through certified enclosures, not an arbitrary rounded nonunitary array. Classical compilation must precede the unknown input or its actual waiting evolution must be included. No polynomial classical-time claim is made.
+
+## Error and work ledgers
+
+For a supplied full-isometry readiness error, the vector budget is e_ready+2 sum_i d_i+eta_program+eta_compile+eta_H+eta_t; joint unhalved trace distance is at most twice this sum. If readiness is supplied only in trace distance, use that trace allowance directly plus twice the other vector terms. Preparation under the interacting K has not been composed here.
+
+Hamiltonian error includes all ramps and the full plateau exposure, especially complementary-control residuals held for tau. Numerical target assembly belongs in eta_program; physical residuals in eta_H. Resolved contributions are not charged again as a second copy of the same integral. Fixed-parameter nominal laboratory time remains O(epsilon^-4) plus fixed ramps; global static/complement residual requests can be O(epsilon^5), per-new-field requests O(epsilon^6), final phase-generator allowance O(epsilon^5), cancellation-input requests O(epsilon^9), and post-off timing O(epsilon^2). These are sufficient requests under the declared error model, not microscopic precision guarantees. A reported approximation to gamma separately pays (tau/hbar)|delta kappa|+|kappa||delta(tau/hbar)|+|delta Phi| plus the product term; giving its exact computable expression is distinct from supplying a certified decimal value.
+
+The fixed endpoint observable is F0=K+Delta N_A, not the plateau surrogate. For exact nominal ramps (disjoint from resource charge) and an exact N-conserving nominal plateau, let rho_a,rho_b be old marginals at plateau entry/exit and rho_f the final marginal. Then
+
+    W=Tr K(rho_f-rho)-Tr H*(rho_b-rho_a).
+
+This prescribed-drive work is generally nonzero. It includes the resource-energy change. The target functional uses rho_f,V=V rho V* and rho_b,V=R_off* rho_f,V R_off. A complete nominal vector error e_int gives |W-W_V|<=(width(K)+q Delta)e_int. This bound has no reservoir-width factor precisely because of the exact conservation and ramp assumptions. It must not absorb arbitrary nonconserving calibration or readiness errors through the same e_int without additional proof. Under those exact dynamics, the review's extension to an actual initially correlated state is valid with (width(K)+q Delta)(delta_final+delta_initial)/2; this does not itself provide readiness or control delta_final.
+
+For general physical faults retain charge-transfer or full-observable-width allowances. The suggested integrated commutator route is an open refinement here, not a completed structured-fault theorem. Moment comparisons on a common positive interval of width W0 use W0^r epsilon_trace/2; W0 may grow with the resource. Plateau conservation does not imply preservation of F0's distribution. Absolute work retains two ramp variations, at most2 sum_X||C_X||+2q Delta, plus the parent's full pulse/scalar variation. No microscopic actuator state return, thermodynamic cycle or autonomous closure follows.
+
+## Actual finite evidence and unresolved interfaces
+
+One new scientific process ran17:11:07.729479 through17:11:08.223403UTC, exit0, source892a8d07, launcher1e62248f, CPU45s/wall90s, with all16384 output rows/four old columns retained. It uses noncommuting interacting q=2 K, three complete branch lifts and old CZ, L=3. The chronological phase-interface residual is3.8018e-16; wrong-order and omitted-resource-phase mutants are0.06888 and1.86715. Direct F0 work is-1.43968815 and agrees with the intermediate-marginal identity to1.36e-13; old energy alone misses the-1.00909221 resource contribution. These are complex128 observations. The midpoint ramp refinements are not certified ODE enclosures; the algebraic identity is independent of their numerical integration error. The fixed semantic word induces the test target, and reserve0.37 is prescribed rather than derived from an emitted physical word. Packet error0.89984 and bound3.06147 do not demonstrate a useful accurate controller. No independent replay, general arbitrary-target executable compiler or elementary physical synthesis was performed.
+
+The complete source, launcher, precheck, matrices, outputs, receipt and qualifications remain immutable. Native complementary-control/readiness/clock suppliers, actual interaction-support feasibility, interacting-old preparation/release, structured charge errors, microscopic conservative driving and autonomous halt/reuse remain open. This decision creates no canonical theorem, PR, audit verdict or editable prompt change.

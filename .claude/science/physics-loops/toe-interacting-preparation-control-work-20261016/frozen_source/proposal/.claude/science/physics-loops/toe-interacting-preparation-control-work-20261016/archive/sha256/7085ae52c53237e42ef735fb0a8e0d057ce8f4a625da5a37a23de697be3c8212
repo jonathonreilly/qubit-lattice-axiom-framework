@@ -1,0 +1,49 @@
+# Controlling qualifications: coherent local faults and interacting work
+
+Root accepts the proposed signed charge identity and work comparison as conditional analytical results, with the source-binding and interval corrections below. Complete candidate c3bd7cda and source-exposed review9d5673aa remain immutable. This is no retained audit or physical calibration observation.
+
+## Scope and exact identity
+
+Retain the qualified interacting ready-input bridge: finite literal K>=0 on q old qubits, passive arbitrary reference, every battery and synthesis ancilla in A, F0=K+Delta B, disjoint nominal old/resource ramps, and exact nominal plateau conservation of N=S+B. Positive complementary actuators, original support/arity, caps/slew, readiness, clocks and complete-output target accuracy are supplied premises. The present extension assumes an actual finite Hermitian integrable residual E(t) with certified integrated norm and fixed charge-bandwidth bounds. It does not extend those certificates to arbitrary laboratory errors or unknown baths.
+
+With actual number transfer z_+, z_p, z_- on the two ramps and plateau, Xi=Delta(z_++z_p+z_-), the exact baseline change is
+
+    W_F0 = Tr K(sigma_f-sigma_0)
+              -Tr H_*(sigma_b-sigma_a) + Xi,
+    H_*=Delta S.
+
+The target W_V uses the actual forward ramps R_+,R_- in the stated order. For unhalved old trace errors delta_0,delta_f and ramp deviations e_+,e_-,
+
+    |W_F0-W_V| <= (width(K)+q Delta)(delta_0+delta_f)/2
+                   +q Delta(e_++e_-)/2 + |Xi|.
+
+No product reset at the second ramp is assumed. Resource-only ramp evolution preserves the exact old marginal for arbitrarily correlated inputs. Old-touching residual terms give e_+<=2 eta_+ and e_-<=2 eta_- with the supplied integrated centered norm or incident old-touching sum. Scalar centering is permitted in this density/work estimate only; it does not remove physical load, accumulated isometry phase or endpoint work.
+
+## Local charge and global calibration
+
+For support containing r_X charged sites, ||[E_X,Q]||<=r_X inf_c||E_X-cI|| for Q=B or N. The finite-charge decomposition gives ||[E,Q]||<=r(r+1)g whenever E has charge bandwidth at most the fixed integer r and g>=inf_c||E-cI||. The review separately reconstructs this from orthogonal charge blocks. This conservative constant is not claimed optimal. A sum of arbitrarily many bounded-arity terms retains the same bandwidth; its global norm must still be bounded.
+
+Thus |Xi|<=Delta r(r+1)(eta_++eta_p+eta_-). Using the uncentered parent action eta_H and exact initial old input, a complete final vector-error certificate e_out implies
+
+    |W_F0-W_V| <= (width(K)+q Delta)e_out
+                   +Delta(q+r(r+1))eta_H.
+
+One physical error can affect both final state and charge. These terms do not license a second independent allocation of that error inside e_out. Exact nominal compilation errors preserve conservation and may affect e_out without charge leakage; physical coefficient errors require their actual residual classification.
+
+For fixed q,K,Delta,r and nominal T=O(epsilon^-4), a certified global residual O(epsilon^5) suffices for O(epsilon) action/work error. With O(epsilon^-1) simultaneously faulty local terms, the displayed sufficient per-term request becomes O(epsilon^6). These are requests under quantitative integration data, not observed tolerances or necessary optimal exponents. Initial error remains separately paid. No uniform higher-energy-moment bound is proved. Preparation involves number-changing gates and requires a separate estimate; this runtime result must not be carried backward through preparation without proof.
+
+## Corrections controlling the examples
+
+Candidate section8.2 incorrectly identifies the qualified private battery as M=L+q. The actual comb parent has M=L+2 battery qubits per branch plus a separate synthesis ancilla. The example is proved for every M>=L and hence applies to M=L+2. All resources and the ancilla remain included in A; nothing is discarded.
+
+The fixed positive onsite fault envelope must fit the actual declared idle interval. The padded identity schedule supplies a growing idle plateau, so any fixed admissible envelope fits for all sufficiently large L. The algebraic tail estimate holds for L>=7, but no physical timing realization for every such L under arbitrary caps is asserted. A shorter finite schedule would need a separately checked guard and recalculated phase.
+
+For that coherent number-changing fault family, s=floor((L+1)/8) tail sites have occupation at most1/4. Exact resonant rotations give extra work at least Delta s sin^2(theta)/2, while old marginals and ramp-map errors can remain exact. Its global centered action is s theta, which grows. It refutes substituting fixed per-site tolerance for the global/summed certificate; it does not satisfy the latter. Exactly conserving coefficient faults, fixed faulty support, shrinking summed residuals and compensated controls remain alternative regimes. This is no universal physical obstruction.
+
+## Endpoints, drive work and verification limits
+
+W_F0 is baseline energy change. Drive work equals it only when the actual endpoints restore F0, with differentiability or explicit jump conventions. Endpoint deviations add Tr D_f sigma_f-Tr D_0 sigma_0; their safe allowance is ||D_f||+||D_0||, including scalars. Absolute work additionally needs integral||dot E|| plus jumps. A small integrated amplitude proves no bounded-variation, positivity, locality or slew certificate.
+
+The separate stipulated dissipator identity includes explicit generator energy flow. Its local commutator algebra is valid, but the coherent ramp comparison and global work corollary do not thereby extend to arbitrary dissipation, measurement or reset. No native environment/controller supply, autonomous halt or indefinite reuse is established.
+
+Root read the complete candidate and review and reconstructed the signed identity, centered trace constants, local commutator bound, finite-bandwidth norm estimate, epsilon substitution and counterexample scope. The reviewer is same-model and source-exposed with earlier bridge-parent exposure; no blindness, different-model independence or empirical confirmation is claimed. No scientific executable or historical propagation was run for this result. Metadata verifies source integrity only. Candidate failed source-pin transcription and its corrected metadata pass remain distinct original records; the failed source was captured after failure and no missing launcher is invented. The actual reviewer metadata process has separately captured source/launcher/streams. Parent floating ramp evidence retains its prior limits and is not revalidated here.

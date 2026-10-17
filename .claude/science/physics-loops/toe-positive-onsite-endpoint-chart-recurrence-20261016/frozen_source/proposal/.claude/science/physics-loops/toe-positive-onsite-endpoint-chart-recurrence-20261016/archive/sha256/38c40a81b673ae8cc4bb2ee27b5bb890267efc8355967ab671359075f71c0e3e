@@ -1,0 +1,30 @@
+# One scoped saved-trace arithmetic check
+
+Written before the new check. The complete candidate derivation and executable
+were read, including the original source-at-launch copy and full streams. The
+candidate's own metadata validator checks stored shapes and reported inequalities;
+it does not independently reconstruct all saved matrix multiplications. That is
+the specific load-bearing gap addressed here.
+
+The single new check will use Python Fraction intervals to verify all 274 saved
+binary-power transitions, starting from the saved fresh endpoint, and the final
+full-U(4) residual, analytic amplification, strict bounds, and resource numbers.
+It will independently reconstruct the endpoint from its 24 saved slot intervals,
+compare all 960 shifted generator coefficient matrices against binomial expansion,
+and test signed/outward arithmetic on finite boundary cases. Only pure arithmetic
+and coefficient functions will be extracted from the candidate source; the Taylor
+solver, selector, lattice reducer, certification routine, and main will not run.
+
+The fresh endpoint plus analytic tail will be compared with the earlier chart
+enclosure as a consistency check. This does not regenerate the 192 new Taylor
+steps or prove their execution independently. Full source inspection and the
+analytic induction are still required. Three negative controls will exercise a
+corrupted trace transition, a missing complete scalar phase, and using the old
+degree-80 global tail with the enormous actual exponent. These are saved-object
+or bound controls, not new physical trajectories or additional candidate searches.
+
+This is an exposed same-model check after seeing the candidate's claims. It is
+not blind, a formal proof, root acceptance, an audit verdict, or a physical run.
+The prior chart review is reused at its exact frozen identity, not promoted to
+root acceptance. All source, full streams, actual times, and exit status will be
+preserved under scoped_runs/saved_trace_001, including any failure.

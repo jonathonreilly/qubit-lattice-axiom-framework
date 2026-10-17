@@ -1,0 +1,523 @@
+{
+  "utc": "2026-10-16T20:42:45.215247+00:00",
+  "kind": "source-exposed analytical review; metadata/source-integrity capture only",
+  "current_main_observed_local_ref": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "network_fetch_performed": false,
+  "installed_skill_matches_complete_canonical": true,
+  "author_members_verified": 11,
+  "initial_members_preserved": 7,
+  "sources": [
+    {
+      "path": "sources/author/FREEZE.json",
+      "bytes": 2098,
+      "sha256": "0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/FREEZE.json",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/DERIVATION.md",
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/EXPOSURE.md",
+      "bytes": 3006,
+      "sha256": "ea4199c61bc2242444c60710b69f663dc48c16d94945a41c56ff4e2d25ea9724",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/EXPOSURE.md",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/SOURCE_MANIFEST.json",
+      "bytes": 3457,
+      "sha256": "6d656ec52737aa0655a3033681f7c54db24f9b2e64b7b4ed68738a0f4ffd8921",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/SOURCE_MANIFEST.json",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/record_metadata.py",
+      "bytes": 2096,
+      "sha256": "0d37aee756ddeed18c5c992b043e52abf7ff9e7722f63f559035d965d03b4c94",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/record_metadata.py",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/seal_metadata.py",
+      "bytes": 4646,
+      "sha256": "3863591564e9b27ac5ccc21aacea306f4da817d2b8ae3a47e5ae6b9e4835140b",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/seal_metadata.py",
+      "coverage": "complete read"
+    },
+    {
+      "path": "sources/author/sources/gap_decision__GAP_DECISION.md",
+      "bytes": 19949,
+      "sha256": "ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/gap_decision__GAP_DECISION.md",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author/sources/gap_freeze__FREEZE.json",
+      "bytes": 3521,
+      "sha256": "830d2f702a69b6fc48514b35aa4bb75087efc8c317196cbf8e58e78c1c4f46b7",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/gap_freeze__FREEZE.json",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author/sources/target_derivation__DERIVATION.md",
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/target_derivation__DERIVATION.md",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author/sources/target_freeze__FREEZE.json",
+      "bytes": 22438,
+      "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/target_freeze__FREEZE.json",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author/sources/target_ledger__RESOURCE_LEDGER.json",
+      "bytes": 1311,
+      "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/target_ledger__RESOURCE_LEDGER.json",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author/sources/target_result__RESULT.md",
+      "bytes": 4930,
+      "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/sources/target_result__RESULT.md",
+      "coverage": "inherited source; see coverage"
+    },
+    {
+      "path": "sources/author_metadata/EXECUTION.json",
+      "bytes": 1140,
+      "sha256": "66b3524e2bf2de6ac9f29181fe633306a57d91a3794df524e5ff7a95dfa711f8",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/runs/metadata_001/EXECUTION.json",
+      "coverage": "complete actual metadata source/receipt/stream inspected"
+    },
+    {
+      "path": "sources/author_metadata/source_at_launch.py",
+      "bytes": 4646,
+      "sha256": "3863591564e9b27ac5ccc21aacea306f4da817d2b8ae3a47e5ae6b9e4835140b",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/runs/metadata_001/source_at_launch.py",
+      "coverage": "complete actual metadata source/receipt/stream inspected"
+    },
+    {
+      "path": "sources/author_metadata/recorder_at_launch.py",
+      "bytes": 2096,
+      "sha256": "0d37aee756ddeed18c5c992b043e52abf7ff9e7722f63f559035d965d03b4c94",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/runs/metadata_001/recorder_at_launch.py",
+      "coverage": "complete actual metadata source/receipt/stream inspected"
+    },
+    {
+      "path": "sources/author_metadata/stdout.txt",
+      "bytes": 1220,
+      "sha256": "4241ccdea3e08ac30bb35c63d2e88a1c23aebced675609fab585443d286d3bb1",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/runs/metadata_001/stdout.txt",
+      "coverage": "complete actual metadata source/receipt/stream inspected"
+    },
+    {
+      "path": "sources/author_metadata/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/runs/metadata_001/stderr.txt",
+      "coverage": "complete actual metadata source/receipt/stream inspected"
+    },
+    {
+      "path": "sources/initial/FREEZE.json",
+      "bytes": 1474,
+      "sha256": "66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/FREEZE.json",
+      "coverage": "complete read; prior exposure ordering"
+    },
+    {
+      "path": "sources/initial/ANALYSIS.md",
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/ANALYSIS.md",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/CURRENT_STATUS.md",
+      "bytes": 1042,
+      "sha256": "875b34f886bad979daf7b3f8ed28d85cae145a62827608f19d16b2bff7d77dce",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/CURRENT_STATUS.md",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/SOURCE_COVERAGE.md",
+      "bytes": 2593,
+      "sha256": "d7be8406cf7bc1efe5875965f9f1b3378c4d7366587ad5d1f067610be2513b44",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/SOURCE_COVERAGE.md",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/SOURCE_MANIFEST.json",
+      "bytes": 1722,
+      "sha256": "61a428f8460e74aaa17ac3e565ccd4b163150c969913de7869e375364d053b99",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/SOURCE_MANIFEST.json",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/TASK_INPUT.md",
+      "bytes": 1291,
+      "sha256": "71e3b32e46d4310ed74188648e34cf417a14397679d5d6727743f20aee9e330c",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/TASK_INPUT.md",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/freeze_metadata.py",
+      "bytes": 2107,
+      "sha256": "2146c73b7f2cbb4fe586e2fcf15f86ff17ae2612e3771b7917e66895ede16311",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/freeze_metadata.py",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/initial/record_metadata.py",
+      "bytes": 1860,
+      "sha256": "f15581835c8526fc38ae257c65a383a741fc5689910a62ca910dbc7afbd7e6b2",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/record_metadata.py",
+      "coverage": "prior own frozen source; unchanged verification"
+    },
+    {
+      "path": "sources/current_main/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+      "bytes": 10169,
+      "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/.claude/science/physics-loops/toe-always-on-control-20261014/NO_GO_LEDGER.md",
+      "bytes": 668,
+      "sha256": "6683e1134982e2249aeb5c8dafd0f877b21bd55a839dc65a57d9976dbb6f4432",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-always-on-control-20261014/NO_GO_LEDGER.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/.claude/science/physics-loops/toe-fixed-background-control-20261014/NO_GO_LEDGER.md",
+      "bytes": 639,
+      "sha256": "dd5a8ca3a0eaaecf1fd382b25c11be6fc5070627f5aa2c78919d3c28c2987ff0",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-fixed-background-control-20261014/NO_GO_LEDGER.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/.claude/science/physics-loops/toe-autonomous-clock-20261014/NO_GO_LEDGER.md",
+      "bytes": 796,
+      "sha256": "87634cc26845a0c3b96852090ba5d9e125cd1a12baa0136ae1e5c56de8fc0d90",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-autonomous-clock-20261014/NO_GO_LEDGER.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/current_main/.claude/science/physics-loops/toe-autonomous-record-window-20261014/NO_GO_LEDGER.md",
+      "bytes": 277,
+      "sha256": "d94fec7398734d2f80d628fb630f68272050fc0334de8b23bf55d138c1f409b3",
+      "source": "git:5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-autonomous-record-window-20261014/NO_GO_LEDGER.md",
+      "coverage": "complete read at this exact revision"
+    },
+    {
+      "path": "sources/installed_no_go/SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "source": "/Users/jonreilly/.codex/skills/no-go-discipline/SKILL.md",
+      "coverage": "initial display truncated; canonical controls"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "rev-parse",
+        "origin/main"
+      ],
+      "start_utc": "2026-10-16T20:42:44.887293+00:00",
+      "end_utc": "2026-10-16T20:42:44.952586+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/observed_origin_main/stdout",
+        "bytes": 41,
+        "sha256": "451bbf496ac8aa8d4a3f2751c82c43aa6d92f736521de30240bad1a7913660a4"
+      },
+      "stderr": {
+        "path": "command_captures/observed_origin_main/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/no-go-discipline/SKILL.md"
+      ],
+      "start_utc": "2026-10-16T20:42:44.952769+00:00",
+      "end_utc": "2026-10-16T20:42:45.021617+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_0/stdout",
+        "bytes": 16941,
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_0/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/no-go-discipline/references/case-studies.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.022080+00:00",
+      "end_utc": "2026-10-16T20:42:45.041662+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_1/stdout",
+        "bytes": 10169,
+        "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_1/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.041978+00:00",
+      "end_utc": "2026-10-16T20:42:45.063325+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_2/stdout",
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_2/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.063590+00:00",
+      "end_utc": "2026-10-16T20:42:45.088536+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_3/stdout",
+        "bytes": 4975,
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_3/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.089303+00:00",
+      "end_utc": "2026-10-16T20:42:45.112419+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_4/stdout",
+        "bytes": 11788,
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_4/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-always-on-control-20261014/NO_GO_LEDGER.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.112703+00:00",
+      "end_utc": "2026-10-16T20:42:45.139453+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_5/stdout",
+        "bytes": 668,
+        "sha256": "6683e1134982e2249aeb5c8dafd0f877b21bd55a839dc65a57d9976dbb6f4432"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_5/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-fixed-background-control-20261014/NO_GO_LEDGER.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.139848+00:00",
+      "end_utc": "2026-10-16T20:42:45.156123+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_6/stdout",
+        "bytes": 639,
+        "sha256": "dd5a8ca3a0eaaecf1fd382b25c11be6fc5070627f5aa2c78919d3c28c2987ff0"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_6/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-autonomous-clock-20261014/NO_GO_LEDGER.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.156375+00:00",
+      "end_utc": "2026-10-16T20:42:45.173176+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_7/stdout",
+        "bytes": 796,
+        "sha256": "87634cc26845a0c3b96852090ba5d9e125cd1a12baa0136ae1e5c56de8fc0d90"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_7/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+        "show",
+        "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:.claude/science/physics-loops/toe-autonomous-record-window-20261014/NO_GO_LEDGER.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.173463+00:00",
+      "end_utc": "2026-10-16T20:42:45.191050+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/current_source_8/stdout",
+        "bytes": 277,
+        "sha256": "d94fec7398734d2f80d628fb630f68272050fc0334de8b23bf55d138c1f409b3"
+      },
+      "stderr": {
+        "path": "command_captures/current_source_8/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "-i",
+        "obvious|clearly|impossible|no.go|always|never|cannot|halt|scalar|static",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_target_static_edge_exposed_check/ANALYSIS.md"
+      ],
+      "start_utc": "2026-10-16T20:42:45.191801+00:00",
+      "end_utc": "2026-10-16T20:42:45.214964+00:00",
+      "exit_code": 0,
+      "stdout": {
+        "path": "command_captures/targeted_lexical_scan/stdout",
+        "bytes": 15710,
+        "sha256": "30d8d6a2f80b7c01300195535932d5988bc8c012cd93c7999757f7e301665336"
+      },
+      "stderr": {
+        "path": "command_captures/targeted_lexical_scan/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "kind": "read-only metadata/source read; no scientific execution"
+    }
+  ],
+  "earlier_bounded_inventory": {
+    "path": "targeted_ledger_inventory.txt",
+    "bytes": 23604,
+    "sha256": "652735492083cb1961bc23c11615a63937569e7981591476e83fc8cb8669c50d"
+  },
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "root_acceptance": null,
+  "negative_packet_status": "FAIL",
+  "N1": "FAIL",
+  "earlier_read_limits": "READ_ATTEMPTS.md"
+}

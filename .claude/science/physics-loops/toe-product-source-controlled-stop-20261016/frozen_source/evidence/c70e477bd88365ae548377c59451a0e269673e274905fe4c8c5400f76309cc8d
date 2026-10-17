@@ -1,0 +1,171 @@
+{
+  "schema": "immutable_source_exposed_c1_ramp_review_v1",
+  "created_at": "2026-10-16T22:21:11.577952+00:00",
+  "scope": "analytical review; metadata capture only; no scientific execution; root disposition separate",
+  "source_exposed": true,
+  "same_model": true,
+  "root_acceptance": null,
+  "scientific_executions": 0,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 888,
+      "sha256": "3132d331cf7c1d4cf1765310872eacd8910f936163745091d92003aae0fc96dc"
+    },
+    {
+      "path": "CODE_REUSE.md",
+      "bytes": 942,
+      "sha256": "00d0e0945928439a754465294f23702ffc488f4e71438ae906ed6bfb554efbd5"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 13042,
+      "sha256": "5b4e50abaf3150c3089cc40e377f381659f21ffe89426c5ee2842032e90e331b"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 1402,
+      "sha256": "b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 9393,
+      "sha256": "987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66"
+    },
+    {
+      "path": "inspect_sources.py",
+      "bytes": 5742,
+      "sha256": "4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33"
+    },
+    {
+      "path": "metadata/EXECUTION.json",
+      "bytes": 901,
+      "sha256": "b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15"
+    },
+    {
+      "path": "metadata/executed_source.py",
+      "bytes": 5742,
+      "sha256": "4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33"
+    },
+    {
+      "path": "metadata/launcher_source.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata/stdout",
+      "bytes": 2406,
+      "sha256": "88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 1067,
+      "sha256": "328a398d2911c23ea45bc114cb4dbb5e044a736f27c3385572fb4b50bc82d04a"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/C1_MINIMUM_DURATION_RAMPS_ADDENDUM.md",
+      "bytes": 4521,
+      "sha256": "212571bcf9ed6837808f6d8347eb0c74ef1fab394b6672658018a27ba561d15b"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md",
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "path": "sources/product_source_mediator_external_stop_exposed_check/FREEZE.json",
+      "bytes": 5781,
+      "sha256": "b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55"
+    },
+    {
+      "path": "sources/product_source_mediator_external_stop_exposed_check/REVIEW.md",
+      "bytes": 17827,
+      "sha256": "57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/REVIEW.md",
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_exposed_check/REVIEW.md",
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/ACCEPTANCE.json",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/QUALIFICATION.md",
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    },
+    {
+      "path": "sources/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    {
+      "path": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    {
+      "path": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    }
+  ]
+}

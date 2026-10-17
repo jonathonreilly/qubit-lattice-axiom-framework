@@ -1,0 +1,79 @@
+# Source-only check proposal: awaiting separate root GO
+
+No scientific source, recorder or fixture in this packet has been executed.
+No syntax-only launch is represented as a mathematical check. Only the
+separate metadata freezer may run now. The frozen author packet remains
+unchanged. This checker is written by its author in the same model/context;
+it is not the separate independent review.
+
+Read check_static_edge.py, INPUTS.json and record_one_attempt.py. The check
+uses only Python standard-library integer arithmetic and an explicit small
+rational/complex/matrix layer. It imports no historical compiler, ODE,
+recurrence or chart code. There is no floating arithmetic, parameter search,
+adaptive precision, alternative target or retry.
+
+The following claims remain analytic premises, listed in the report:
+the alternating atan remainder; Machin's identity and angle quadrant;
+commuting exponential/projector spectral calculus; the sine/operator-norm
+bound; the determinant-exponential and2x2 determinant-continuity lemmas;
+and the isometry-to-reference-trace bound. The program computes finite
+rational identities and inequalities to which those facts apply. It does
+not evaluate transcendental functions or certify physical installation.
+
+Actual computed evidence, if root authorizes the one attempt, will include:
+
+- All96 atan summands/partial sums, three interval tails, the alpha interval,
+  rational midpoint/coefficient, cap and complete uniform error upper bound.
+- Unreduced denominator products and the actual encoding bit lengths.
+- Complete4x4 Gaussian-rational matrices, all four rank-one joint projectors,
+  spectra, Hermiticity, commutation and covariance-sign identities.
+- The full W, its determinant, exact scalar-omission mutant and error Gram.
+- Rational orthonormal bases for both XX sectors, complete restricted
+  generator/target matrices and their trace/determinant arithmetic.
+
+REPORT.json stores rationals as signed hexadecimal numerator and positive
+hexadecimal denominator, avoiding Python's decimal-string digit ceiling.
+Every rational input and intermediate numerator/denominator is checked.
+Addition and multiplication have conservative bit preflights; a possibly
+oversized intermediate is rejected even if subsequent cancellation could
+reduce it. Euclidean normalization uses checked integers and remainders no
+larger than those inputs. The ceiling is65536 bits. Small fixed loop/control
+indices are separately bounded by the fixed source. The guard is not a RAM
+quota or a theorem about Python interpreter memory.
+
+The coefficient-stage rational operation count is checked below500, before
+the matrix stage. Whole-run operation counts and maximum integer size are
+emitted. Any failed assertion, bit preflight or unexpected exception writes
+a partial REPORT when possible and a full traceback; no retry is authorized.
+
+The scientific recorder allows exactly one runs/edge_001 directory and
+checks every PRELAUNCH_FREEZE member before launch. It captures the original
+source and inputs, then actually executes those captured bytes with
+Python -I -B, closed stdin and full stdout/stderr files. The exact interpreter
+path/version/platform/hash, argv, cwd, source identities, start/end/elapsed,
+exit code and timeout are recorded. The wall timeout is60 seconds.
+**No CPU or RAM quota is imposed.** The author's earlier256MiB allocation
+was proposed, not enforced evidence, and is not claimed by this recorder.
+
+After separate root GO only, preserve that actual instruction in ROOT_GO.md
+and invoke the following once (the file itself is not authorization):
+
+    /opt/homebrew/opt/python@3.13/bin/python3.13 record_one_attempt.py --go-file /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/ROOT_GO.md
+
+The working directory is this packet. The recorder's actual scientific cwd
+is its new runs/edge_001 directory. It rejects an existing attempt directory.
+No current ROOT_GO.md or scientific attempt directory is being fabricated.
+
+Success would be one author-produced exact-rational fixture under the stated
+analytic premises, not a general compiler certificate, independent review,
+physical supplier, native energy identification, halt or reuse result. The
+extra calibrated positive XX edge remains outside the original four-onsite
+actuator alphabet. The static-X negative statement is restricted to the
+displayed family; independent N1-N8 review is a separate disposition and
+is not a gate on evaluating the positive matrix construction.
+
+SOURCE_MANIFEST.json pins copied mathematical sources. PRELAUNCH_FREEZE.json
+seals code, inputs, this guide and selected source snapshots. The metadata
+freezer does not import or execute check_static_edge.py. Its completed
+receipt lies outside the freeze it creates, in runs/metadata_001. No earlier
+source, worktree, Git/PR, prompt, lock, audit, axiom or model was changed.

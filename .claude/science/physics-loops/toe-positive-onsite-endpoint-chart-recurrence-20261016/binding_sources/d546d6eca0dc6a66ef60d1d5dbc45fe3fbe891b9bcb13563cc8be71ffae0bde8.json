@@ -1,0 +1,17 @@
+{
+  "tool": "mcp__codex_app__attach_artifact",
+  "arguments": {
+    "artifact_type": "pull_request",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9651"
+  },
+  "actual_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"artifact_type\":\"pull_request\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9651\"}"
+      }
+    ],
+    "isError": false
+  },
+  "recorded_utc": "2026-10-16T20:04:41.101538+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "root_unequal_gap_fixed_word_qualified_acceptance",
+  "utc": "2026-10-16T16:31:16.832352+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT_FIXED_SUPPLIED_WORD_ONLY",
+  "inputs": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/FREEZE.json",
+        "bytes": 764,
+        "sha256": "26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d"
+      },
+      "members": 2,
+      "exact_member_identity_checked": true
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_exposed_check/FREEZE.json",
+        "bytes": 5186,
+        "sha256": "13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21"
+      },
+      "members": 27,
+      "exact_member_identity_checked": true
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate/FREEZE.json",
+        "bytes": 9014,
+        "sha256": "7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737"
+      },
+      "members": 47,
+      "exact_member_identity_checked": true
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_exposed_comparison/FREEZE.json",
+        "bytes": 18699,
+        "sha256": "fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b"
+      },
+      "members": 91,
+      "exact_member_identity_checked": true
+    }
+  ],
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 6058,
+    "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+  },
+  "scientific_executions_by_this_review": 0,
+  "historical_scientific_executions_replayed": 0,
+  "retained_audit": false,
+  "publication": null,
+  "uniform_matrix_word_extension_accepted": false,
+  "separate_direct_candidate_accepted": false,
+  "editable_prompt_files_changed": []
+}

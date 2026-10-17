@@ -1,0 +1,5 @@
+# Read coverage and evidence
+
+The complete new proposal, its source manifest and freeze were read. The analytical reconstruction is in REVIEW.md. Necessary parent proof coverage is reused only at exact unchanged identities; SOURCE_MANIFEST.json records each case. A combined current reread truncated, so it is not counted as fresh complete coverage. The independently authored sibling mathematical body was not read or used; only its exposed-ancestor hash was checked. No new primary literature result is imported.
+
+The new exact checker source and launcher were read in full, and actual source/launcher/precheck-at-launch match. Full stdout and empty stderr were read. Saved exact matrices and chronological labels are retained; metadata checked their shape/count without rerunning the algebra. The actual calculation checks the named small matrix identities and two mutants, not the full physical compiler. Prior counterexamples and physical qualifications remain in the complete prior review. Same-model/shared-source and same-author parent exposure are explicit.

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-16T20:20:17.686432+00:00",
+  "note": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "note_sha256": "61a8d7df9faedbab75893a141d6d815faab032e2f5fa11d71f3fc1abc36de808",
+  "primary_sha256": "90690a811d6507558f4f36a571a0003ece443bb4290fb7abc26620c4109a2a91",
+  "unchanged_bodies": 6,
+  "source_aliases": 417,
+  "unique_archive_objects": 192,
+  "source_receipts": 19,
+  "input_manifest_sha256": "d0522abdd18aba96ff81bdd8a86bf33fdb3c003593445ea658d6d2c5ea0aad4e",
+  "science_executions": 0,
+  "canonical_execution": null
+}

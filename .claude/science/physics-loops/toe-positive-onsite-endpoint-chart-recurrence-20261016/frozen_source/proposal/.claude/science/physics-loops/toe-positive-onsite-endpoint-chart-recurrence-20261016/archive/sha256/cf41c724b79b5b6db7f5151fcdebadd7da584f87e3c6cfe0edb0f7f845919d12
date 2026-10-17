@@ -1,0 +1,67 @@
+"""Build deterministic review coverage and scope metadata; no science execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, hashlib, json
+O=Path.cwd(); assert O.name=='endpoint_recurrence_exposed_check'
+C=O/'sources/candidate'; P=O.parent/'endpoint_chart_exposed_check'
+def pin(p):
+ b=p.read_bytes(); return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p): return json.loads(p.read_text())
+def function_rows(p):
+ text=p.read_text(); lines=text.splitlines(keepends=True); rows=[]
+ for node in ast.parse(text).body:
+  if isinstance(node,(ast.FunctionDef,ast.AsyncFunctionDef)):
+   b=''.join(lines[node.lineno-1:node.end_lineno]).encode()
+   rows.append(dict(name=node.name,line=node.lineno,end_line=node.end_lineno,bytes=len(b),
+     sha256=hashlib.sha256(b).hexdigest(),ast_sha256=hashlib.sha256(ast.dump(node,include_attributes=False).encode()).hexdigest()))
+ return rows
+source=C/'certify_recurrence.py'; old=C/'inputs/PARENT_ENCLOSURE_SOURCE.py'
+assert pin(source)['sha256']=='c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771'
+assert pin(old)['sha256']=='af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9'
+groups={
+ 'directed_arithmetic':{'ceildiv','scale','add','divide','gaussian','rprod','multiply','ident','mmul'},
+ 'literal_generator_and_new_Taylor_recurrence':{'gmul','kron','coefficients','step_polynomial'},
+ 'heuristic_only':{'dot','gram_schmidt','bounded_lll','propose_integer'},
+ 'exact_power_certificate_and_actual_entrypoint':{'certify_power','main'},
+ 'serialization_provenance':{'ration','write','pin'}}
+rows=function_rows(source); prior=function_rows(old)
+assert set(x['name'] for x in rows)==set().union(*groups.values())
+for row in rows:
+ row['review_group']=next(k for k,v in groups.items() if row['name'] in v)
+ row['coverage']='Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md'
+ row['exact_prior_source_functions']=[x['name'] for x in prior if x['sha256']==row['sha256']]
+ row['exact_prior_AST_functions']=[x['name'] for x in prior if x['ast_sha256']==row['ast_sha256']]
+checks=function_rows(O/'check_saved_recurrence.py'); oldchecks=function_rows(P/'check_saved_certificate.py')
+for row in checks:
+ row['exact_prior_checker_source_functions']=[x['name'] for x in oldchecks if x['sha256']==row['sha256']]
+ row['exact_prior_checker_AST_functions']=[x['name'] for x in oldchecks if x['ast_sha256']==row['ast_sha256']]
+coverage=dict(source=pin(source),prior_enclosure_source=pin(old),module_scope='Imports, constants, matrix literals, top-level guard, and every function read completely.',
+ candidate_functions=rows,checker_source=pin(O/'check_saved_recurrence.py'),
+ prior_checker_source=pin(P/'check_saved_certificate.py'),checker_functions=checks,
+ exact_identity_rule='Exact source hashes and complete AST hashes, including function names; no renamed or adapted function is labeled exact.',
+ independence_limit='Prior Fraction helper reuse is explicit. New trace traversal, fresh coefficient correspondence and bound/resource validation are separate from candidate fixed-point arithmetic. Same model and campaign; not blind.')
+(O/'CODE_COVERAGE.json').write_text(json.dumps(coverage,indent=2,sort_keys=True)+'\n')
+r=read(O/'scoped_runs/saved_trace_001/EXECUTION.json'); s=read(O/'SCOPED_CHECK_RESULT.json')
+assert r['exit_code']==0 and r['timed_out'] is False
+result=dict(utc=datetime.now(timezone.utc).isoformat(),status='EXPOSED_SCOPED_REVIEW_NO_BLOCKING_DEFECT_FOUND',
+ candidate_freeze=pin(C/'FREEZE.json'),candidate_derivation=pin(C/'DERIVATION.md'),candidate_executed_source=pin(C/'runs/recurrence_001/source_at_launch.py'),
+ candidate_certificate=pin(C/'recurrence_001_output/RECURRENCE_CERTIFICATE.json'),prior_review_freeze=pin(O/'sources/prior_review/FINAL_FREEZE.json'),
+ review=pin(O/'REVIEW.md'),full_analysis=pin(O/'ANALYTIC_CODE_REVIEW.md'),coverage=pin(O/'CODE_COVERAGE.json'),
+ scoped_check_result=pin(O/'SCOPED_CHECK_RESULT.json'),scoped_check_execution=pin(O/'scoped_runs/saved_trace_001/EXECUTION.json'),
+ claim=dict(positive_integer_n=s['positive_integer_n'],full_U4=True,strict_operator_error=s['strict_total_operator_upper'],
+  endpoint_analytic_error=s['analytic_endpoint_error'],amplified_error=s['amplified_analytic_error'],
+  plant='K=2I+ZZ on exactly two old qubits, fixed rational nominal 24-slot positive-onsite template'),
+ required_corrections=[],review_limitations=[
+  'Fresh 192 Taylor steps not regenerated; source proof and recorded source execution remain premises.',
+  'No formal verification of Python, arithmetic runtime, JSON parser or hardware.',
+  'Separate same-model exposed review; no blind or statistical/model-diversity independence.',
+  'Conditional fixed-time arbitrary-target consequence additionally requires the chart theorem.',
+  'No arbitrary-target compilation, physical execution, efficiency, native supply, autonomous controller or indefinite reuse.'],
+ new_scoped_arithmetic_runs=1,new_science_program_replays=0,new_Taylor_steps=0,new_heuristic_runs=0,
+ root_acceptance=None,audit_verdict=None,canonical_binding=None,publication=None,
+ changed_editable_prompt_files=[],other_paths_modified=[],external_messages_sent=0)
+(O/'RESULT.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status='REVIEW_METADATA_WRITTEN',coverage=pin(O/'CODE_COVERAGE.json'),result=pin(O/'RESULT.json'),
+ candidate_function_count=len(rows),exact_prior_source_functions=sum(bool(x['exact_prior_source_functions']) for x in rows),
+ checker_function_count=len(checks),exact_prior_checker_functions=sum(bool(x['exact_prior_checker_source_functions']) for x in checks),
+ scientific_execution=False),indent=2))

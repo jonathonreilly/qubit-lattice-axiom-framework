@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-16T19:25:12.265633+00:00",
+  "status": "SOURCE_ONLY_TARGET_PLAN; CHART_ROOT_QUALIFIED; RECURRENCE_AND_NEW_BRIDGE_PENDING",
+  "initial_source_manifest_unchanged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/SOURCE_MANIFEST.json",
+    "bytes": 11251,
+    "sha256": "c81e6097ae6afd03703b2eb643b82477325991369ac679f0002bb399d94d464b"
+  },
+  "current_status": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/CURRENT_STATUS.md",
+    "bytes": 2510,
+    "sha256": "a8a9452cabe58e6aa54880c1a21e2fb1e8df4bb222631923400cd19bfa384f82"
+  },
+  "source_addition": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/ACCEPTANCE.json",
+        "bytes": 6372,
+        "sha256": "112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/qualified_chart_sources/ACCEPTANCE.json",
+        "bytes": 6372,
+        "sha256": "112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+        "bytes": 6433,
+        "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/qualified_chart_sources/FINAL_QUALIFICATIONS.md",
+        "bytes": 6433,
+        "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/FREEZE.json",
+        "bytes": 375,
+        "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223"
+      },
+      "capture": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/qualified_chart_sources/FREEZE.json",
+        "bytes": 375,
+        "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223"
+      }
+    }
+  ],
+  "coverage": "Complete root acceptance, controlling qualifications and freeze read; identities verified; no science replay.",
+  "new_science_runs": 0,
+  "target_calibration_launched": false,
+  "target_certificate_launched": false,
+  "timing_qualification": "Conservative upper sufficient error budgets only, not necessity or lower bounds.",
+  "canonical_binding": null,
+  "publication": null,
+  "current_metadata_receipt": "runs/current_status_capture/EXECUTION.json (written after this source exits)"
+}

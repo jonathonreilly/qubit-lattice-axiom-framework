@@ -1,0 +1,59 @@
+{
+  "roots": [
+    {
+      "folder": "interacting_ramp_bridge_root_proposal",
+      "key": "members",
+      "members": 2,
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a"
+    },
+    {
+      "folder": "interacting_ramp_bridge_exposed_check",
+      "key": "members",
+      "members": 31,
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d"
+    },
+    {
+      "folder": "interacting_ramp_bridge_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4"
+    },
+    {
+      "folder": "interacting_preparation_chronology_candidate",
+      "key": "members",
+      "members": 39,
+      "sha256": "4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f"
+    },
+    {
+      "folder": "interacting_preparation_chronology_exposed_check",
+      "key": "members",
+      "members": 47,
+      "sha256": "6fd82d9be7d1c8a70fb56968fd9a71c52694b61c8b71f02a0315e3a43a93ddcb"
+    },
+    {
+      "folder": "interacting_preparation_chronology_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "e90518e3bc1f397ad71807bd387f3542f13c1fb2b1baae9c50dcf7afb87d0af3"
+    },
+    {
+      "folder": "interacting_local_fault_work_candidate",
+      "key": "members",
+      "members": 17,
+      "sha256": "7951d1048a2d6a9f882f672de5f6ce036dc87adc927e88d540329a97e648ee37"
+    },
+    {
+      "folder": "interacting_local_fault_work_exposed_check",
+      "key": "members",
+      "members": 41,
+      "sha256": "906cf5f7164e8595ec9b9a0c89c104a507dfcbfecd74581a0c946ae75fb2eb34"
+    },
+    {
+      "folder": "interacting_local_fault_work_root_review",
+      "key": "members",
+      "members": 2,
+      "sha256": "746b566fa8a9a658b0e00bca39a1a9e79e9dc7fad4271dd831645b82fc69ad88"
+    }
+  ],
+  "closure_rule": "Exactly each of nine specified freeze member sets plus explicit extras; no recursive traversal of captured parent freeze references or prior publication archives."
+}

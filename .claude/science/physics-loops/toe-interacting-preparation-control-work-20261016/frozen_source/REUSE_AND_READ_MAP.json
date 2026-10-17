@@ -1,0 +1,65 @@
+{
+  "exact_function_comparison": [
+    {
+      "name": "build_packet.py",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/build_packet.py",
+      "template_sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93",
+      "new_sha256": "131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8",
+      "unchanged_functions": [
+        "put",
+        "js",
+        "ident",
+        "add"
+      ],
+      "changed_or_new_functions": [],
+      "removed_functions": [],
+      "top_level_code_review_required": true
+    },
+    {
+      "name": "primary_template.py",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/primary_template.py",
+      "template_sha256": "866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307",
+      "new_sha256": "58028fb9788df81db5bafcb45520a997c3891b6e659e5ddeb7b60ca60aed87d0",
+      "unchanged_functions": [
+        "require",
+        "digest",
+        "identity",
+        "disk_read",
+        "main"
+      ],
+      "changed_or_new_functions": [
+        "verify_payload",
+        "verify_actual_binding"
+      ],
+      "removed_functions": [],
+      "top_level_code_review_required": true
+    },
+    {
+      "name": "inspect_packet.py",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/inspect_packet.py",
+      "template_sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d",
+      "new_sha256": "8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d",
+      "unchanged_functions": [
+        "expect_rejected"
+      ],
+      "changed_or_new_functions": [],
+      "removed_functions": [],
+      "top_level_code_review_required": true
+    },
+    {
+      "name": "record_metadata.py",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/record_metadata.py",
+      "template_sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186",
+      "new_sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192",
+      "unchanged_functions": [
+        "pin"
+      ],
+      "changed_or_new_functions": [],
+      "removed_functions": [],
+      "top_level_code_review_required": true
+    }
+  ],
+  "originals_not_modified": true,
+  "archive_reuse": "Only five source machinery files; no prior publication archive copied.",
+  "seal": "New local-only seal; prior Git-show methodology stage intentionally omitted."
+}

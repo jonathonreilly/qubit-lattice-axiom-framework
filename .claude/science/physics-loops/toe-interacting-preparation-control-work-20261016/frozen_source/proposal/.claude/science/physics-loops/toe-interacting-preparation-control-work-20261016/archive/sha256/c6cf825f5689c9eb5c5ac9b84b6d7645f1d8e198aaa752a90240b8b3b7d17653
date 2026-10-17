@@ -1,0 +1,19 @@
+# Actual evidence and limits
+
+The mathematical evidence is the analytical reconstruction in REVIEW.md. Its exact wrong-clock inner product is zero; no symbolic or numerical runner is claimed for that calculation. No new scientific process was executed, no prior scientific process was replayed, and no independent parent experiment is claimed. A new finite fixture was unnecessary for the identified chronology and scale checks. Root still owns source acceptance.
+
+One bounded metadata subprocess ran from 2026-10-16T17:59:45.507578+00:00 through 2026-10-16T17:59:45.576547+00:00, with CPU limit30seconds and wall timeout45seconds. It exited0, verified the candidate's39 freeze members and captured26 selected sources. It produced211bytes of stdout and empty stderr. Complete launch/receipt/streams, source-at-launch and launcher-at-launch are under runs/source_capture. This is source-identity bookkeeping, not a scientific test.
+
+The exact tool invocation was:
+
+    /opt/homebrew/opt/python@3.13/bin/python3.13 -B /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check/record_metadata.py
+
+Its cwd was the review directory. The receipt preserves sys.orig_argv including -B; macOS/Python reports a resolved framework executable in that launcher field. The child argv is the exact list passed to subprocess.run and also includes -B. No missing execution was reconstructed. Source and launcher were copied before the child ran, and their original hashes still matched afterward.
+
+Executed metadata source:45c5dd273e59fe972687437f7caa9252f89fd3bdf9fc858c84060ccab93b640d,5694bytes. Executed launcher:24893693b3b8028fe88d6a88d45454b07a157db851a4a82c0b9ab1f6720fecc9,2206bytes. Resulting source manifest:e1a160a6fbfcd14aac43a036b951585f143e0184fb3fa54bb15034d8db9e25b9. The receipt and source manifest contain full absolute paths and additional stream identities.
+
+No scientific or metadata launch failed in this review. Source fetches with truncated displays were completed by the separate reads documented in SOURCE_COVERAGE.md. The candidate's own immutable EVIDENCE.md records its historical mechanical patch failure and interpreter-argv annotation limitation; those records were preserved unchanged and do not become new executions by this reviewer.
+
+The separate final metadata validation uses seal_packet.py, invoked with the same interpreter and -B in the review directory. Its exact source/launcher is saved before its validation subprocess, which has CPU30seconds/wall45seconds limits. Actual launch/receipt/full streams are under runs/final_validation. It rechecks the selected originals and captured copies, the candidate's39 members, and the first run's actual streams/source identities before writing FINAL_VALIDATION.json. A failed validation would retain its streams and prevent the freeze. The top-level FREEZE.json is written only after the successful validation receipt; it includes captured parent freeze files and excludes only itself.
+
+Final validation and the local freeze only check the packet's files and source identities. They do not validate physical apparatus, coefficient-oracle speed, strict interval numerics, microscopic work storage, publication binding or retained status. No numerical error threshold or desired PASS count replaces the analytical argument. The complete source keeps all formal conditions and counterexamples.

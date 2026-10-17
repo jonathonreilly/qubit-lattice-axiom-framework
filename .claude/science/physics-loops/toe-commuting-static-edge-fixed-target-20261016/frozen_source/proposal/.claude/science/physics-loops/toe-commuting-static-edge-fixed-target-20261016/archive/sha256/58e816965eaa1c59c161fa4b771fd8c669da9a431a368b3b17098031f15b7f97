@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""Metadata only: never import or execute the scientific checker or its recorder."""
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parent
+parent=root.parent/'endpoint_finite_quantum_actuator_candidate'
+
+def ident(path):
+    data=path.read_bytes()
+    return {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()},data
+
+if (root/'runs/edge_001').exists() or (root/'ROOT_GO.md').exists():
+    raise RuntimeError('This proposal must be sealed before root GO and the scientific attempt.')
+sources=root/'sources'
+sources.mkdir(exist_ok=False)
+entries=[]
+for name,sha,coverage in [
+    ('DERIVATION.md','eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad','complete author/read coverage; sections4,6,7 reread for this bounded check'),
+    ('EXPOSURE.md','ea4199c61bc2242444c60710b69f663dc48c16d94945a41c56ff4e2d25ea9724','complete author/read coverage at unchanged identity'),
+    ('FREEZE.json','0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2','complete metadata read; selected source linkage checked only'),
+]:
+    meta,data=ident(parent/name)
+    assert meta['sha256']==sha,(name,meta)
+    target=sources/('author__'+name)
+    target.write_bytes(data)
+    entries.append({'original_path':str(parent/name),'snapshot':str(target.relative_to(root)),
+                    **meta,'coverage':coverage})
+    print(json.dumps({'verified_source':name,**meta},sort_keys=True),flush=True)
+old=json.loads((sources/'author__FREEZE.json').read_text())
+index={item['path']:item for item in old['members']}
+for entry in entries[:2]:
+    name=Path(entry['original_path']).name
+    assert all(entry[key]==index[name][key] for key in ('bytes','sha256'))
+manifest={'status':'source-only proposal, scientific attempt not authorized or executed',
+          'sources':entries,'science_source':'check_static_edge.py','inputs':'INPUTS.json',
+          'scientific_recorder':'record_one_attempt.py',
+          'scientific_launches':0,'independence':'same-model author-produced fixture, not separate independent validation',
+          'wall_limit_seconds':60,'cpu_quota':None,'ram_quota':None,
+          'integer_bit_ceiling':65536,'analytic_premises':'listed explicitly in source and READ_GUIDE.md',
+          'acceptance':None,'publication':None,'canonical_binding':None}
+(root/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+members=[]
+for path in sorted(root.rglob('*')):
+    if not path.is_file():continue
+    rel=str(path.relative_to(root))
+    if rel=='PRELAUNCH_FREEZE.json' or rel.startswith('runs/metadata_001/'):continue
+    meta,_=ident(path); members.append({'path':rel,**meta})
+freeze={'utc':dt.datetime.now(dt.timezone.utc).isoformat(),
+        'status':'frozen source-only proposal awaiting separate root GO',
+        'scientific_launches':0,'members':members,
+        'terminal_metadata_receipt_outside_freeze':'runs/metadata_001/EXECUTION.json',
+        'acceptance':None,'publication':None,'canonical_binding':None}
+(root/'PRELAUNCH_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+for item in members:
+    meta,_=ident(root/item['path'])
+    assert meta=={key:item[key] for key in ('bytes','sha256')}
+meta,_=ident(root/'PRELAUNCH_FREEZE.json')
+print(json.dumps({'verified_prelaunch_members':len(members),'prelaunch_freeze':meta},sort_keys=True),flush=True)
+print('No checker or scientific recorder was imported, syntax-launched, or executed.',flush=True)

@@ -1,0 +1,80 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T19:52:13.805403+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_runner_repair_proposal/FINAL_FREEZE.json",
+    "bytes": 72609,
+    "sha256": "8ed91d6ba2af859d93a1f683ccaf7b94cf3234bbf15057093301e3dce177e09f"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_runner_repair_proposal/reflection_preparation_common.py",
+    "bytes": 61447,
+    "sha256": "6851262eac91f1c6e2826b04f643244a373ff2da27c2584aced922d1d74f9567"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_runner_repair_proposal/proposed_primary_unbound.py",
+    "bytes": 34373,
+    "sha256": "087f732598a5060a5241543db4d899349993113a2e377e05461bf58a15a95bfd"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_reflection_preparation_qualified_publication_review/REVIEW.json",
+    "bytes": 3714,
+    "sha256": "1ab9703c29f0bdaafccc8367a60ec86079441a5f8a39885788a9f9fc59554b39"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2922,
+    "sha256": "37800becbacfd5033206130d8469016a7d17112b2ea0b46efe236ad384f2ed36"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_runner_repair_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2381,
+      "sha256": "56bd9c25a871db47341a0062844a793c0c6b73beef43a205d0f8f56d51e1a7c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_runner_repair_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2397,
+      "sha256": "1631fc84558c81d190474d6b8a9a7e5d0df6367824e15a82c36a878010079b26"
+    }
+  ],
+  "local_members": 340,
+  "immutable_bodies": 3,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    }
+  ],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_reflection_publication_source_review.py"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "scope": "Root read complete original adapter changed common/extension/assembly/validation/recording/seal and original metadata, then complete new common/runner-only diffs, builder/validator/sealer and both actual metadata streams. Primary/extension and three bodies unchanged. Same staged parser helper as reviewed angle recovery. Source freeze/current mathematical qualification retained. Corrected diagnosis: original reflection syntax resolves if primary exists; earlier W-only None was absent primary, not a demonstrated syntax defect. New label/preflight is proactive. No reflection worktree recovery or scientific replay. Actual canonical and staged review remain distinct; no retained or future success asserted. Distinct v2 corrects base attachment envelope metadata and exact explicit-repository observation after a guard refusal before phases. Original successful attachment result, old contracts and actual guard observation preserved. No code or science changed. Runtime input filenames are fixed by the unchanged adapter; suffixed inputs were refused before phase execution. Original inputs now archived byte-exactly; corrected base activated at required path. New root input will bind this actual review execution.",
+  "previous_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/ROOT_INTEGRATION_REVIEW.json",
+    "bytes": 3689,
+    "sha256": "7fd18fe21a2ec8b2ddeb0cd7ec317ceaf371c7a05020a4880f74718741981c1a"
+  },
+  "prephase_guard_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/ROOT_PREPHASE_GUARD_OBSERVATION.json",
+    "bytes": 1844,
+    "sha256": "6f8c8118f8fa4af2a5ff64c45c580b41d45ed2c38dbc0d9407366a7395c0df76"
+  },
+  "runtime_path_correction": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/ROOT_PATH_GUARD_OBSERVATION.json",
+    "bytes": 855,
+    "sha256": "df4d701e6a29f254244f2258241c8349f7c1c8c27421fc453267f4a807368291"
+  },
+  "preserved_original_runtime_contracts": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/reflection_preparation_runner_repair/superseded_runtime_contracts/PRESERVATION.json",
+    "bytes": 1667,
+    "sha256": "695105ce81ce8c47fdbb4f4056e4f9dcf30c0915dadd01773166fcd5d1598149"
+  }
+}

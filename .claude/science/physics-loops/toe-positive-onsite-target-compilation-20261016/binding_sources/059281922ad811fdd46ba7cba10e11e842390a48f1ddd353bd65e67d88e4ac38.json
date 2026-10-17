@@ -1,0 +1,27 @@
+{
+  "observed_commit": "4864625c13b2f0cf44eb19ae3114a8cabafc238c",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016/binding_sources/05520e745057d4c6467fe083adf028f00abc5ea19397c2bee2acc0f0151b3407.json",
+      "bytes": 1636,
+      "sha256": "05520e745057d4c6467fe083adf028f00abc5ea19397c2bee2acc0f0151b3407"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016/binding_sources/e7a53253bc2fbd99a1b14fe58d21c5829b3a64b478624916a43a58074dcd0566.py",
+      "bytes": 64442,
+      "sha256": "e7a53253bc2fbd99a1b14fe58d21c5829b3a64b478624916a43a58074dcd0566"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016/binding_sources/e07447ae1885c5984fdd2f3732526574d11b6b9a600714da472f631124a94bc6.blob",
+      "bytes": 41,
+      "sha256": "e07447ae1885c5984fdd2f3732526574d11b6b9a600714da472f631124a94bc6"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-target-compilation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

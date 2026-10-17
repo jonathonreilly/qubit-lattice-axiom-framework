@@ -1,0 +1,82 @@
+"""Bounded metadata capture with actual executable/launcher/streams, then freeze."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+import subprocess
+import sys
+import time
+
+OUT = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_exposed_comparison')
+sha = lambda raw: hashlib.sha256(raw).hexdigest()
+assert not (OUT / 'FREEZE.json').exists()
+run = OUT / 'runs/source_capture'
+run.mkdir(parents=True, exist_ok=False)
+executed = run / 'executed_source.py'
+executed.write_bytes((OUT / 'capture_and_verify.py').read_bytes())
+launcher = run / 'launcher_source.py'
+launcher.write_bytes(Path(__file__).read_bytes())
+argv = [sys.executable, '-B', str(executed)]
+env = dict(os.environ)
+env['PYTHONDONTWRITEBYTECODE'] = '1'
+receipt = {'kind': 'actual_metadata_only_source_capture_and_verification',
+           'scientific_execution': False, 'argv': argv, 'cwd': str(OUT),
+           'start_utc': datetime.now(timezone.utc).isoformat(), 'timeout_seconds': 60,
+           'source_sha256': sha(executed.read_bytes()),
+           'launcher_sha256': sha(launcher.read_bytes())}
+(run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+start = time.monotonic()
+try:
+    result = subprocess.run(argv, cwd=OUT, env=env, capture_output=True, timeout=60)
+    stdout, stderr = result.stdout, result.stderr
+    receipt['exit_code'] = result.returncode
+except Exception as exc:
+    stdout = getattr(exc, 'stdout', None) or b''
+    stderr = (getattr(exc, 'stderr', None) or b'') + repr(exc).encode()
+    receipt['exit_code'] = None
+    receipt['exception'] = repr(exc)
+(run / 'stdout').write_bytes(stdout)
+(run / 'stderr').write_bytes(stderr)
+receipt.update(end_utc=datetime.now(timezone.utc).isoformat(),
+               elapsed_seconds=time.monotonic()-start,
+               stdout_bytes=len(stdout), stdout_sha256=sha(stdout),
+               stderr_bytes=len(stderr), stderr_sha256=sha(stderr))
+(run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+if receipt['exit_code'] != 0:
+    print(json.dumps(receipt, indent=2))
+    sys.exit(1)
+assert stderr == b''
+assert json.loads(stdout)['scientific_programs_executed_by_this_task'] == 0
+members = []
+for path in sorted(OUT.rglob('*')):
+    assert not path.is_symlink()
+    if not path.is_file():
+        continue
+    rel = path.relative_to(OUT).as_posix()
+    if rel in {'FREEZE.json', 'FREEZE.sha256'}:
+        continue
+    raw = path.read_bytes()
+    members.append({'path': rel, 'bytes': len(raw), 'sha256': sha(raw)})
+freeze = {'kind': 'frozen_source_exposed_analytical_comparison',
+          'utc': datetime.now(timezone.utc).isoformat(),
+          'disposition': 'qualified analytical support for root fixed-word interface; mandatory static-load correction; separate direct matrix contract remains pending independent review',
+          'same_inherited_model_and_effort': True, 'retained_audit': False,
+          'new_scientific_executions': 0,
+          'historical_scientific_source_inspected_not_replayed': True,
+          'original_candidate_freeze_preserved': '7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737',
+          'member_count': len(members), 'members': members,
+          'excluded_exact_root_paths': ['FREEZE.json', 'FREEZE.sha256'],
+          'nested_source_freezes_included': True,
+          'canonical_git_or_prompt_mutations': False}
+raw = (json.dumps(freeze, indent=2) + '\n').encode()
+(OUT / 'FREEZE.json').write_bytes(raw)
+(OUT / 'FREEZE.sha256').write_text(sha(raw) + '  FREEZE.json\n')
+for item in members:
+    actual = (OUT / item['path']).read_bytes()
+    assert len(actual) == item['bytes'] and sha(actual) == item['sha256']
+print(json.dumps({'frozen': True, 'utc': freeze['utc'], 'member_count': len(members),
+                  'freeze_sha256': sha(raw),
+                  'review_sha256': sha((OUT / 'REVIEW.md').read_bytes()),
+                  'metadata_exit_code': receipt['exit_code'],
+                  'new_scientific_executions': 0}, indent=2))

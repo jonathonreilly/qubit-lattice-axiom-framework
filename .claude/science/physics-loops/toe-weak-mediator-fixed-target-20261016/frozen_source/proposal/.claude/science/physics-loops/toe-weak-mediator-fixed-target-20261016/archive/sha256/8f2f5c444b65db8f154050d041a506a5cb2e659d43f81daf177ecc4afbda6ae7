@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+"""Report-derived independent arithmetic; no compiler imports, series or isqrt."""
+import argparse
+from fractions import Fraction
+import hashlib
+import json
+from math import gcd
+from pathlib import Path
+import traceback
+
+REPORT_SHA = "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564"
+AUTHOR_SHA = "f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14"
+PARAMETERS_SHA = "3186e024ab84f2df95da2c91c29cf575912042f69d36e8904ef907e91bf52a52"
+SCENARIOS = {
+    "uniform_grid_p171_n179_window24": (171, 171, 179, 24),
+    "structured_grid_pg117_pD58_n125_window2pow68": (117, 58, 125, 1 << 68),
+}
+CHECKS = []
+
+
+def require(value, label):
+    if not value:
+        raise ValueError(label)
+    CHECKS.append(label)
+
+
+def rat(row, label):
+    require(set(row) == {"numerator_hex", "denominator_hex", "numerator_bits", "denominator_bits"}, label + ": rational schema")
+    n, d = int(row["numerator_hex"], 16), int(row["denominator_hex"], 16)
+    require(d > 0 and gcd(n, d) == 1, label + ": reduced positive denominator")
+    require(abs(n).bit_length() == row["numerator_bits"] and d.bit_length() == row["denominator_bits"], label + ": bit lengths")
+    return Fraction(n, d)
+
+
+def interval(row, label):
+    lo, hi = rat(row["lower"], label + "/lower"), rat(row["upper"], label + "/upper")
+    require(lo < hi and rat(row["width"], label + "/width") == hi - lo, label + ": ordered interval and exact width")
+    return lo, hi
+
+
+def coefficient(row, exponent, label):
+    k, d = int(row["common_numerator_decimal"]), int(row["common_denominator_decimal"])
+    require(k > 0 and d == 1 << exponent, label + ": positive numerator and designated denominator")
+    require(k.bit_length() == row["common_numerator_bits"] and d.bit_length() == row["common_denominator_bits"], label + ": common bit lengths")
+    v = rat(row["reduced_value"], label + "/value")
+    require(v == Fraction(k, d), label + ": common/reduced identity")
+    return k, d, v
+
+
+def sqrt_certificate(row, ends, coeff, label):
+    lo, hi = ends
+    k, d, v = coeff
+    require(rat(row["lower_radicand"], label + "/lower") == lo and rat(row["upper_radicand"], label + "/upper") == hi, label + ": endpoint correspondence")
+    require(int(row["common_dyadic_numerator_decimal"]) == k and int(row["common_dyadic_denominator_decimal"]) == d, label + ": emitted dyadic identity")
+    require(rat(row["reduced_value"], label + "/value") == v, label + ": reduced value")
+    a, b = int(row["scaled_lower_numerator_hex"], 16), int(row["scaled_lower_denominator_hex"], 16)
+    q = int(row["final_floor_quotient_hex"], 16)
+    require(a >= 0 and b > 0 and a * lo.denominator == b * d * d * lo.numerator, label + ": scaled lower rational identity")
+    require(q >= 0 and q * b <= a < (q + 1) * b, label + ": floor inequalities")
+    require(int(row["isqrt_hex"], 16) == k and k * k <= q < (k + 1) * (k + 1), label + ": isqrt inequalities without isqrt")
+    require(int(row["square_lower_hex"], 16) == k * k and int(row["square_next_hex"], 16) == (k + 1) * (k + 1), label + ": recorded squares")
+    require(k * k * lo.denominator <= d * d * lo.numerator < (k + 1) * (k + 1) * lo.denominator, label + ": direct lower-endpoint bracket")
+    left, right = hi.numerator * d * d, (k + 2) * (k + 2) * hi.denominator
+    require(int(row["upper_guard_left_hex"], 16) == left and int(row["upper_guard_right_hex"], 16) == right and left < right, label + ": stored strict upper guard")
+    require(v * v <= lo and hi < (v + Fraction(2, d)) ** 2, label + ": conditional lower replacement and two-step error")
+
+
+def scenario(name, s):
+    pg, pd, n, window = SCENARIOS[name]
+    t, rt, eps = 1 << 120, 1 << 60, Fraction(1, 1 << 44)
+    duration = s["fixed_duration"]
+    require(duration["T_exponent"] == 120 and int(duration["T_decimal"]) == t, name + ": runtime")
+    require(duration["window"] == 24 if pg == 171 else duration["window_exponent"] == 68 and int(duration["window_decimal"]) == window, name + ": window")
+    e = {key: interval(row, name + "/" + key) for key, row in s["enclosures"].items()}
+    require(set(e) == {"pi", "theta", "Delta", "gx_squared", "gy_squared"}, name + ": enclosure set")
+    at = {}
+    for denominator in (5, 239, 7):
+        row = s["atan_intervals"][str(denominator)]
+        require(row["n"] == n, name + ": saved truncation " + str(denominator))
+        at[denominator] = interval(row, name + "/atan" + str(denominator))
+    pl, pu = e["pi"]
+    tl, tu = e["theta"]
+    dl, du = e["Delta"]
+    require((pl, pu) == (16 * at[5][0] - 4 * at[239][1], 16 * at[5][1] - 4 * at[239][0]), name + ": saved Machin endpoint algebra")
+    require((tl, tu) == (pl / 4 + at[7][0], pu / 4 + at[7][1]), name + ": theta endpoint algebra")
+    require(3 < pl < pu < Fraction(22, 7) and 0 < tl < tu < 1, name + ": rational endpoint guards")
+    require((dl, du) == (2 - tu / pl, 2 - tl / pu) and Fraction(5, 3) < dl < du < 2, name + ": Delta endpoints")
+    require(e["gx_squared"] == (tl * dl / (2 * t), tu * du / (2 * t)), name + ": gx product endpoints")
+    require(e["gy_squared"] == (tl / t, tu / t), name + ": gy endpoints")
+    c = s["coefficients"]
+    require(set(c) == {"gxhat", "gyhat", "Deltahat", "rhat"}, name + ": coefficient set")
+    gx, gy = coefficient(c["gxhat"], pg, name + "/gx"), coefficient(c["gyhat"], pg, name + "/gy")
+    delta, reserve = coefficient(c["Deltahat"], pd, name + "/Delta"), coefficient(c["rhat"], pg, name + "/r")
+    for key, coeff in (("gx", gx), ("gy", gy)):
+        sqrt_certificate(s["sqrt_certificates"][key], e[key + "_squared"], coeff, name + "/" + key)
+    k, d, dv = delta
+    require(k * dl.denominator <= d * dl.numerator < (k + 1) * dl.denominator, name + ": Delta floor inequalities")
+    left, right = du.numerator * d, (k + 2) * du.denominator
+    row = s["Delta_rounding_certificate"]
+    require(int(row["upper_guard_left_hex"], 16) == left and int(row["upper_guard_right_hex"], 16) == right and left < right, name + ": Delta stored strict upper guard")
+    require(0 < dv <= dl < du < dv + Fraction(2, d), name + ": Delta conditional replacement/error")
+    gv, yv, rv = gx[2], gy[2], reserve[2]
+    require(rv == 2 * (gv + yv), name + ": actual four-port scalar")
+    for key, expected in (("old_added_incident", rv), ("old_total_incident_including_literal_K", 3 + rv), ("source_added_incident", dv + rv)):
+        require(rat(s["actual_loads"][key], name + "/" + key) == expected, name + ": " + key)
+    require(0 < gv < Fraction(1, rt) and 0 < yv < Fraction(1, rt) and 0 < rv < 1, name + ": positive small ports")
+    require(dv + rv < 2 and Fraction(3, 2) < dv < 2 and 2 - dv > Fraction(1, 4), name + ": actual added caps and denominators")
+    phase = s["retained_source_phase_arguments"]
+    end_key = "at_T_plus_24" if pg == 171 else "at_T_plus_window"
+    require(rat(phase["at_T"], name + "/phaseT") == rv * t and rat(phase[end_key], name + "/phaseEnd") == rv * (t + window), name + ": actual scalar phase arguments")
+    residual, drift = Fraction(12352, rt) + Fraction(132096, t), Fraction(16 * window, t)
+    if pg == 171:
+        h = Fraction(1, 1 << pg)
+        ideal, rounding = residual + drift, 10 * h * (t + window)
+        total = ideal + rounding
+        expected = {"epsilon": eps, "coefficient_absolute_error_upper": 2 * h, "ideal_isometry_upper": ideal, "rounding_Duhamel_upper": rounding, "full_isometry_upper": total, "unhalved_joint_trace_upper": 2 * total}
+        require(ideal < eps / 4 and rounding < 5 * eps / 32 and total < 13 * eps / 32, name + ": conditional uniform allocation")
+    else:
+        hg, hd = Fraction(1, 1 << 116), Fraction(1, 1 << 57)
+        effective = 128 * hg / rt + 256 * hd / t
+        phase_error = (t + window) * effective
+        total = residual + drift + phase_error
+        expected = {"epsilon": eps, "ports_absolute_error_upper": hg, "source_absolute_error_upper": hd, "actual_model_residual_upper": residual, "effective_H2_difference_upper": effective, "effective_phase_upper": phase_error, "ideal_window_drift_upper": drift, "full_isometry_upper": total, "unhalved_joint_trace_upper": 2 * total}
+        require(residual < eps / 4 and drift == eps / 16 and phase_error < eps / 8 and total < 7 * eps / 16, name + ": conditional structured allocation")
+    for key, value in expected.items():
+        require(rat(s["conditional_error_budget"][key], name + "/budget/" + key) == value, name + ": budget identity " + key)
+    require(2 * total < eps, name + ": conditional unhalved full joint trace allowance")
+    return {"scenario": name, "conditional_isometry_upper": str(total), "conditional_trace_upper": str(2 * total), "actual_reserve": str(rv), "source_incident_load": str(dv + rv)}
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--parameters", type=Path, required=True)
+    parser.add_argument("--output", type=Path, required=True)
+    args = parser.parse_args()
+    args.output.mkdir(parents=False, exist_ok=False)
+    result = {"status": "started", "scope": "Same-model source-exposed report-derived independent arithmetic implementation. Saved endpoint truth, effective-Hamiltonian proof and physical realization remain separate conditional premises.", "author_compiler_imported_or_reexecuted": False, "series_reconstructed": False, "scenarios": [], "error": None}
+    code = 1
+    try:
+        data, params = args.report.read_bytes(), args.parameters.read_bytes()
+        require(hashlib.sha256(data).hexdigest() == REPORT_SHA, "exact saved report SHA256")
+        require(hashlib.sha256(params).hexdigest() == PARAMETERS_SHA, "exact captured parameters SHA256")
+        report = json.loads(data)
+        require(report["source_sha256"] == AUTHOR_SHA and report["parameters_sha256"] == PARAMETERS_SHA, "report source/parameter identities")
+        require(report["parameters"] == json.loads(params) and report["error"] is None, "parameters and completed report schema")
+        require(set(report["computed_scenarios"]) == set(SCENARIOS), "exact two scenarios")
+        for name in SCENARIOS:
+            result["scenarios"].append(scenario(name, report["computed_scenarios"][name]))
+        result["status"] = "saved-certificate arithmetic verified within stated conditional scope"
+        code = 0
+    except Exception as error:
+        result["status"] = "failed; no retry authorized"
+        result["error"] = {"type": type(error).__name__, "message": str(error)}
+        traceback.print_exc()
+    result["checks"], result["check_count"] = CHECKS, len(CHECKS)
+    (args.output / "RESULT.json").write_text(json.dumps(result, sort_keys=True, indent=2) + "\n")
+    print(json.dumps({"status": result["status"], "checks": len(CHECKS), "scenarios_completed": len(result["scenarios"]), "error": result["error"]}, sort_keys=True))
+    return code
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

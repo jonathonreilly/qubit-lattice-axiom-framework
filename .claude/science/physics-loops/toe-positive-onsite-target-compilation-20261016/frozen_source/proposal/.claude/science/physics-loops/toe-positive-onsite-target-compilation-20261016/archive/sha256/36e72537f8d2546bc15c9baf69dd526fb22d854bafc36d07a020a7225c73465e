@@ -1,0 +1,119 @@
+{
+  "kind": "root_qualified_conditional_source_acceptance",
+  "utc": "2026-10-16T19:28:49.231053+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_FULL_U4_RECURRENCE",
+  "source_freezes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/FREEZE.json",
+      "bytes": 7086,
+      "sha256": "33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/FINAL_FREEZE.json",
+      "bytes": 18005,
+      "sha256": "453b32503e06a569a361414984b96e808e34b267dec077b209d926fe7ed84204"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/FREEZE.json",
+      "bytes": 375,
+      "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223"
+    }
+  ],
+  "source_derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/DERIVATION.md",
+    "bytes": 17720,
+    "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+  },
+  "source_program": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/certify_recurrence.py",
+    "bytes": 12700,
+    "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771"
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/REVIEW.md",
+    "bytes": 4131,
+    "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+  },
+  "independent_check_scope": "Exposed same-model analytic/source review and a separate Fraction check of saved power/coefficient arithmetic; no second Taylor/ODE integration.",
+  "original_execution_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/recurrence_001/EXECUTION.json",
+      "bytes": 2510,
+      "sha256": "82f4aa516d9c393a2b2e839525b644675ba04296ed8f4cc3653b33147d552dd8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "bytes": 2273,
+      "sha256": "17a6a8af1615ded34fe1e02dda26ac373b84f1a2661a8174f28da4121caf6b19"
+    }
+  ],
+  "terminal_freeze_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/final_freeze/EXECUTION.json",
+      "bytes": 2315,
+      "sha256": "78b2e48ed12a16602ccb0edc4244121e1a52aae9a31ef2a231956ebf1cc37425"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/final_freeze/recorder_at_launch.py",
+      "bytes": 1662,
+      "sha256": "e464cff48a195288bc84a87cc14a1437ce5bbbb11a89ac3e3633831bb09d9cc5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/final_freeze/source_at_launch.py",
+      "bytes": 1200,
+      "sha256": "36f8474d8d4bc5b78f9bae0d7f05570eb8f4072d7151469ceab9fb0def80b09c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/final_freeze/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/runs/final_freeze/stdout",
+      "bytes": 261,
+      "sha256": "7239e5f41c08b7052a7ad490b7e26ff582b8d5ca42e9875c442297bdd1bc137c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/EXECUTION.json",
+      "bytes": 2184,
+      "sha256": "2dd0c6516334ab7759617c33c5ee7cdfa8d505fe505679703ec9007f120b9a64"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/LAUNCH.json",
+      "bytes": 1480,
+      "sha256": "71256c594fa672ec6f480305598aa2c3ec2d6b617657b8d310b40147e734e3b1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/recorder_at_launch.py",
+      "bytes": 1912,
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/source_at_launch.py",
+      "bytes": 2460,
+      "sha256": "3da6cfd8dca6f389a2eeccebcdad9329d50ab2054c72d68953cf6b4dc735442e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/metadata_runs/final_seal/stdout",
+      "bytes": 392,
+      "sha256": "7f4b632a7ea4075b25977b81bfe730cc9fd3e4141ea2942ef0feb57ec67b1a76"
+    }
+  ],
+  "controlling_qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 6092,
+    "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+  },
+  "scientific_executions_by_root": 0,
+  "historical_scientific_replays": 0,
+  "root_read_complete": true,
+  "canonical_binding": null,
+  "publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,9 @@
+# Current conditional-support certificate
+
+This is a self-contained finite conditional theorem for the explicit K,W,T and a supplied positive XX interaction on the existing two-qubit edge. The original author, initial analytical derivation, exposed cross-review, N1–N8 checklist and controlling root qualification remain five complete unchanged bodies. Actual scientific acceptance f954c36d and source-wrapper review 8c734556 do not replace later integration, canonical, staged or retained-audit decisions.
+
+The original four-onsite microscopic supplier remains open. All scalar action, arbitrary correlated old/reference output, incident strength, finite quiet-window, state-dependent energy/covariance, coefficient/timing precision, installation and physical supply assumptions remain explicit. Optional externally switched ramps are a different contract. No native controller, autonomous halt/reset, indefinite reuse or mediator composition is claimed.
+
+One historical author exact-rational fixture is preserved without replay:60 finite checks,0.18528820807114244 seconds under60 seconds wall time, no imposed OS CPU/RAM quota. Analytical premises and same-model source exposure remain explicit. The narrow static-X invariant is confined to its displayed family; its negative packet remains N1FAIL partial-attempt material, not a broader no-go or retained negative authority.
+
+The frozen source PUBLICATION_STATE preserves historical nulls. Actual source, integration, base and canonical evidence belongs to separate binding records. Staged review and publication are later operations. The primary checks provenance only. There are zero direct mathematical parents, one new graph root and zero dependency edges; Git transport PR9653 is not a premise. All old graph nodes, edges, roots and manifest entries must be preserved. Retained status belongs to the independent audit path.

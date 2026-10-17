@@ -1,0 +1,322 @@
+# Decision: a bounded local quantum actuator for the emitted endpoint word
+
+Status: source-only frontier selection and proposed certificate interface,
+not an existence theorem, physical supplier, independent check, publication
+or retained result. The author wrote the endpoint candidate and earlier
+related bus/preparation work. This is a source-exposed, same-model analysis.
+
+The highest-leverage next object is a finite quantum clock and actuator
+whose *complete installed Hamiltonian* realizes this word's endpoint and a
+finite idle window, with literal old drift, bounded local strength and an
+explicit retained controller output. The important new requirement is the
+microscopic actuator under those simultaneous constraints. External bounded
+slew, an abstract history clock, and an idle window by themselves are already
+covered or are insufficient. This decision does not claim that the desired
+actuator exists, or that no other route can supply it.
+
+## Exact comparison and status
+
+The following selected sources were read completely at the identities in
+SOURCE_MANIFEST.json. The autonomous and bounded-slew notes include their
+embedded arguments and qualifications; they were not treated as theorem
+titles alone. Source snapshots preserve the bytes actually compared.
+
+| Source | What is available conditionally | Interface it does not supply |
+|---|---|---|
+| A: AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md, 69312 bytes, SHA256 baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007, PR9624 source | A supplied finite plant, polynomial certificate, positive path, waveform samples, controller launch and installed coefficients give a static nearest-neighbor qubit realization. The old/reference domain is arbitrary; clock, mediators and scalar phase are retained over a finite observation window. Preparation-to-runtime release has a separate paid contract. | No common added incident-strength cap, native coefficient/state/clock supplier, final isolation, restored source or reuse. The release is not a post-runtime halt. Full-generator moments are conserved, but trace closeness does not establish moment closeness to the product comparator. |
+| B: BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md, 56587 bytes, SHA256 e6bb3a0dacd3ac6a2161e4471155b1d269137470bd84dffb5758b8e8675636ba, PR9627 source | Fixed positive amplitude and first-derivative caps permit qualitative external positive-time compilation under its supplied plant/path/Lie-certificate contract. Scalar and actual-time order are explicit. The protected SU(d) proof and separate full-U(d) variant retain different phase conventions. | The waveform, timing, isolation and coefficient delivery remain external. No polynomial runtime, hard bandwidth, minimum pulse width, autonomous source or common bound for a subsequently installed clock/mediator is obtained. |
+| C: endpoint_target_compilation_candidate/DERIVATION.md, RESULT.md and target_001_output/RESOURCE_LEDGER.json; historical final freeze 0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc | One emitted positive-time full-U(4) word has an author-produced exact-arithmetic endpoint certificate. The single actual execution and its limitations are recorded in RESULT.md. This analysis conditionally uses that result; it does not upgrade its review status. | No added quantum source registers or their outputs are modeled. The classical compressed repetition tree does not supply physical program storage, a repeated-clock mechanism, energy source, hardware precision or halt. |
+
+This is a nondeduplication decision relative to A, B and C, not an exhaustive
+novelty assertion over the repository or literature. The older conditioned
+compiler wrapper was also screened through line150; it is not a new premise
+or a completely reread source in this task. No other open construction or
+unshared root sketch was imported. Earlier campaign results remembered by
+the author are not being silently substituted for a missing source theorem.
+
+In A's displayed construction, the positive binomial clock has
+Omega=pi/(2 tau), n >= L_C^2 tau^4/(2 eta_X^2), and full norm
+Omega n(n+1). More decisively, both actual mediator families install
+Delta L_A+sqrt(Delta)V and positive source reserves. Their sufficient
+penalties are M_R m^12/eta_med^2 and M_I m^8/eta_med^2, with the *actual*
+tau-dependent M_R or M_I. These multiply physical edge/onsite terms; they
+are not merely a large sum of independently weak distant components.
+The nonscalar port counterterm and all reserves remain. A bounded external
+waveform in B therefore does not turn A into a common-cap construction.
+This observation concerns those sufficient recipes, not all possible
+quantum actuators. Merely rescaling A also rescales the old drift or the
+laboratory timeline and does not implement the present contract.
+
+## The particular endpoint that exposes the missing object
+
+Use dimensionless units E0=hbar=1 until physical units are restored. C fixes
+
+    K=2I+Z1 Z2,
+    P_r in {I+X1,I+Y1,I+X2,I+Y2},
+    psi(u)=16u^2(1-u)^2,
+    W=[(9+12i)I+(-16+12i)X1 X2]/25,
+    epsilon=2^-40,
+    n=98611368294597721931914764889297593425141587534996842205,
+    M=147975046,
+    T=24Mn
+     =350208522228384946904887108861751911074590975328100424043350794320.
+
+The chronological word repeats M times: one calibrated24-slot template,
+then n-1 nominal24-slot templates. Its actual endpoint is compared with
+W exp(-iTK), retaining det W=(-527-336i)/625. Its entire scalar action is
+
+    alpha_total=Mn*(13027/240)+(8M/15)*sum(selected displacements).
+
+No scalar is removed physically. Each slot has a positive onsite drive;
+the added external norm and slew allowances are2E0 and16E0^2/hbar, with
+literal old norm3E0. The actual legal amplitude checks improve these to
+3E0/2 and12E0^2/hbar. Pulse values and first derivatives vanish at joins.
+Physical duration is (hbar/E0)T, not the computation time or serialization
+length. Nominal hardware faults occur over *all*24Mn slots, with sufficient
+uniform amplitude allowance (16/15)T delta_a in isometry norm. The128-bit
+calibration encoding is not a128-bit hardware-accuracy supplier.
+
+The old/reference comparator after control switch-off is
+
+    U_*(T+s)=exp(-isK) W exp(-iTK).
+
+For this W only, [W,K]=0, so its ideal endpoint net old energy change is
+zero for every input. That does not remove the noncommuting drives during
+the word, their absolute variation (bounded by72MnE0), or source energy
+and phase-coherence requirements. An autonomous implementation could take
+a different internal path; reproducing the waveform pointwise is a stronger
+requirement and is not necessary for this endpoint problem.
+
+## One next construction target, with an honest finite certificate
+
+First test the *fixed* instance above at an additional isometry allowance
+eta=2^-44, a declared idle window w=24, and added incident cap J_*=2E0
+at every vertex, including the source interior. These are proposed
+specifications, not parameters of a calculation already performed. The cap
+matches C's external upper allowance; its realizability by a microscopic
+source is precisely not inferred. Choosing A's large finite penalty as a
+new cap would evade this target. A follow-on accuracy family may claim the
+same J_* only after proving it works independently of eta; this packet does
+not infer that from a single instance. In the dimensionless formulas below
+the cap is2; multiply all Hamiltonians and energies by E0 for physical units.
+
+The requested object is a finite explicit qubit graph, initial source state
+chi0, and static Hamiltonian
+
+    H_tot=I_C tensor K+H_C tensor I_S+V_CS,
+    J0 psi=chi0 tensor psi.
+
+Every added onsite/ordinary-nearest-neighbor block, scalar reserve,
+counterterm, program cell and switch interaction must be specified and
+included in the added incident norm sum. All added blocks are positive;
+their sums at each vertex are at most J_*. The literal old K is not
+rescaled or replaced by a clock-dependent conjugate. Any added term that
+cancels its action must itself have allowed support and be explicitly paid
+in the positivity, incident-cap and scalar ledgers. Old K's
+positivity as a whole is not an assertion that each historical summand has
+a separate positive decomposition. Occupied old sites cannot be used as
+free routing space. The source cap concerns physical sums, not a relabeling
+of many channels as one edge.
+
+The geometry allowed for this first question has the old two-qubit edge
+and an explicitly declared ancillary attachment at each old site, with a
+bounded-degree path/comb outside it. This is the two-port interface needed
+by C's four onsite rays, not an inference that A's single accessible port
+or a generic old geometry supplies it. Any full SWAP, three-body term,
+long-range edge or effective interaction must be synthesized and paid,
+not granted by the word notation. A stricter one-port construction would
+be a further result.
+
+Preparation of chi0 and installation of the declared terms remain explicit
+supplied conditions. No pulse-by-pulse external intervention is allowed
+after the stated launch. The launch convention, previous old aging and
+initial source/old/reference correlations need their own contracts if the
+input is not actually supplied as J0 at time zero. A successful construction
+would replace the external waveform assumption by this particular modeled
+finite apparatus. It would still not derive that apparatus or its physical
+energy identification from native axioms.
+
+A useful proof-facing certificate consists of an explicit differentiable
+comparison isometry Q(t), Q(0)=J0, and its full-output defect, with operator
+norm from the entire old input space into the complete source/old space,
+
+    R(t)=i Q'(t)-H_tot Q(t),
+    integral_0^(T+w) ||R(t)||op dt <= eta_res.
+
+Q must be independently specified from the proposed clock/program/source
+mechanism, with computable bounds; defining it to be the unknown exact
+evolution is not a construction. All source, routing and program outputs
+remain in Q. Its endpoint certificate is
+
+    sup_(0<=s<=w) ||Q(T+s)
+       -exp[-i Phi(T+s)] chi_(T+s) tensor U_*(T+s)||op <= eta_out,
+    eta_res+eta_out <= eta.
+
+The full scalar Phi and the possibly moving source vector chi must be
+calculated from the *installed* terms. Alternatively an explicitly specified
+correlated output isometry can be retained with its own old-channel
+comparison; it cannot be silently discarded. The displayed product form
+is a sufficient finite-output test, not an assertion of exact decoupling or
+accurate source moments. If one builds Q from C's emitted driven propagator,
+its epsilon endpoint error must be added, not spent again as eta_out.
+
+Duhamel gives
+
+    ||exp(-it H_tot)J0-Q(t)||op <= integral_0^t ||R(v)||op dv.
+
+Indeed, differentiation of exp(it H_tot)Q(t) gives -i exp(it H_tot)R(t).
+This proves the displayed bound with no approximation, and tensoring an
+arbitrary passive reference changes no norm. The complete unhalved trace
+allowance is at most2(eta_res+eta_out), or2(epsilon+eta_res+eta_out)
+when the emitted nominal endpoint is used as the intermediate target.
+Initial joint trace error and actual integrated Hamiltonian defects add
+separately. A physical constant error rate must be integrated for T+w;
+a large total norm is not a reason to replace that integral by a favorable
+relative calibration number. If a proposed source has p installed unit-norm
+coefficient channels, a sufficient common absolute coefficient tolerance is
+eta_phys/[p(T+w)] after allocating a separate eta_phys budget; every scalar
+and old-drift defect is included. This is an upper error budget, not a
+necessary precision lower bound or a supplied device capability.
+Fixed-target timing also keeps the source
+motion and all phases, rather than only K's3|delta_t| old-only bound.
+
+This residual implication is standard finite-dimensional variation of
+constants, supplied here to identify the precise certificate to obtain.
+No H_C,V_CS,chi0,Q meeting it under the chosen local cap has been constructed
+in this packet. It is the remaining design equation, not a concluded wall.
+No polynomial number of source sites, stored instructions, physical time,
+precision requests or classical construction time is claimed. In particular,
+the compressed M,n notation is not a finite counter mechanism at zero cost.
+
+## Microscopic work must use the boundary interaction
+
+There is a more useful work check than multiplying trace error by the
+entire growing reservoir norm. Write V_CS for all added terms touching the
+old system; put all other source terms, including their reserves, in H_C.
+Then the static model gives the exact identity, for every actual input,
+
+    Delta <H_C> = -Delta <K> -Delta <V_CS>.
+
+This is an operator-energy balance in the stated model. Its identification
+with a physical energy observable is still a supplied identification, not
+an axiom derived here. If every old vertex has added incident sum<=J_*,
+then ||V_CS||<=2J_* for this two-qubit plant, independently of source size.
+Term splitting cannot improve this bound or evade the incident accounting.
+
+Let delta_i and delta_f be the actual old-state trace errors against the
+specified ideal initial/final old states. Suppose actual initial and final
+interaction expectations, relative to the same declared scalar v0, have
+bounds beta_i and beta_f: |<V_CS>-v0|<=beta at each endpoint. A constant
+reserve cancels in this energy *difference*, but remains fully installed,
+counted in the cap, source moments and coherent phase. At a zero-control
+endpoint of the external model, its ideal work is W_* = Delta<K>_ideal.
+Because width(K)/2=1 in E0 units,
+
+    |Delta<H_C>+W_*|
+       <= E0*(delta_i+delta_f)+beta_i+beta_f.                 (1)
+
+Both initial and final errors are required. For the present W, W_*=0.
+If a comparison state certifies a boundary expectation beta^Q relative to
+v0, and its full trace discrepancy is d, the actual bound is
+beta^Q+||V_CS||d, since the equal-trace states cancel v0. A stronger
+state-action estimate ||(V_CS-v0 I)Q(t)|| also bounds the corresponding
+ideal expectation. Thus a finite post-runtime quiet
+window needs an actual small-coupling-on-the-delivered-state certificate,
+not a claim that the programmed external waveform is zero. Residual
+controls and interaction energy are not removed by naming a baseline.
+
+Equation(1) prices net source mean-energy transfer through bounded boundary
+observables. It does *not* estimate source variance, all energy moments,
+source phase coherence or an energy distribution from trace distance. Those
+need explicit initial moments and appropriate output observables or weighted
+error estimates. A's full-generator mean and variance are conserved, while
+the source subsystem's moments need not be. In particular, a product/free-
+clock comparison can be close in trace yet hide finite energy transfer in
+a growing-energy tail. The actual interaction and conservation identity,
+not an unproved moment comparison to chi(t), must carry this ledger.
+
+This makes the next obligation narrower than a demand to prove all source
+thermodynamics at once: construct the local source, retain its output,
+certify the boundary interaction at the two endpoints/window, and give its
+actual prepared moments and conserved total generator. An unlimited work
+reservoir, phase reference, reset bath or erased output is not supplied.
+
+## Decisive first test and alternatives
+
+Before attempting a large clock, test any proposed history-clock attachment
+against the literal old drift. If G=sum_j |j><j| tensor V_j gauges a program
+history hopping Hamiltonian into H_clock tensor I, then exactly
+
+    G^dagger (I tensor K) G
+       =sum_j |j><j| tensor (V_j^dagger K V_j).              (2)
+
+Consequently adding I tensor K to a convenient history-clock construction
+does not leave a free clock plus the same old K unless the relevant prefix
+conjugates agree with K. Equation(2) is a direct block multiplication, not
+a numerical diagnostic or a general impossibility theorem.
+
+For the concrete old system, [K,I+X1]=2i Y1 Z2. As a transparent algebraic
+probe, V_j=exp(-i theta X1) gives
+
+    V_j^dagger K V_j
+       =2I+cos(2theta) Z1 Z2+sin(2theta) Y1 Z2.
+
+At theta=pi/4 the old interaction has become Y1 Z2 in that clock block.
+The isolated X rotation is a probe of the clock identity, not an available
+negative-drift operation. The actual first driven segment has
+d(U(t)^dagger K U(t))/dt=i U(t)^dagger[K+a psi(t)P,K]U(t),
+whose noncommuting control contribution is nonzero during its onset.
+Thus the desired word's noncommuting prefixes cannot simply be ignored
+because its final W commutes with K. Prefix drift terms can also be counted
+twice if literal K is appended to gates that already include its evolution.
+
+The proposed next decisive check is therefore **term-level and exact**:
+derive the gauge transform for the proposed minimal local source, retain
+the Y1 Z2 clock-conditioned term in (2), and verify on the complete space
+how its effect is represented or canceled, with every physical term, reserve,
+added incident norm and output included. Then derive the residual integral
+and endpoint interaction bounds above. An encoded-sector-only equality,
+an unpaid large penalty, or a three-body clock-controlled old edge would
+fail this specific certificate. This test has not been executed as a new
+fixture here; the displayed algebra is the analytical specification.
+
+There are live alternatives. One may redesign the autonomous source in the
+literal-drift interaction picture and explicitly price the resulting
+clock-dependent interactions; use a direct local actuator with an
+energy-carrying comparison state; or accept a different runtime and compile
+its actual-time target with all new timing costs. These are proposed routes,
+not routes attempted and ruled out. A supplied Feynman clock is not by
+itself a solution to their locality, cap, energy and source-delivery
+obligations. Similarly A remains a valid alternative if its growing
+strengths are allowed. None of these observations establishes a universal
+lower bound or an inability to realize a finite quantum controller.
+
+Finite-window accuracy may include a moving source. It implies neither a
+stationary output for all later times nor a reusable restored program.
+Exact permanent halting, erasure and unlimited repetition are excluded from
+this first specification. A successful finite-window source and equation(1)
+would be a useful conditional milestone without those extra claims.
+
+## Coverage, execution and next decision
+
+Only A, B and the specified endpoint packet establish the scientific source
+comparison above. Complete current-note reads were performed; one initial
+combined output truncation was repaired by bounded reads before use. The
+old conditioned wrapper's partial coverage is explicit. Governance uses the
+campaign's unchanged captured SCIENCE_WORKFLOW/workhorse revision, under
+the parent's narrower no-Git/no-publication task. No editable prompt changed.
+
+There was no scientific execution, waveform evaluation, compiler replay,
+literature/parameter search, new agent, model override or physical experiment.
+Local rg located relevant passages. The metadata-only capture checks bytes
+and SHA256 identities, records its actual command/streams, and preserves
+selected source snapshots. It does not independently validate any theorem,
+endpoint code or prior execution. The prior endpoint freeze remains intact.
+
+Next decision: commission the concrete local source only after selecting
+its graph and term family; demand (2) before a large calculation and the
+full residual/boundary-energy certificate before claiming an implementation.
+If no such family is specified, the honest result is this open supplied-
+actuator interface, not a newly proved no-go. Parent review, actual physical
+identification, source preparation and all publication/audit authority remain
+outside this packet.

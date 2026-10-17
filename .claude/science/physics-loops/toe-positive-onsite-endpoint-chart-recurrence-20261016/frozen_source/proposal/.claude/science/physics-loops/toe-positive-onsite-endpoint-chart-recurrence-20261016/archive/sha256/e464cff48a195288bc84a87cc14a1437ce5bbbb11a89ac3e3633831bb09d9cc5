@@ -1,0 +1,25 @@
+from pathlib import Path
+import datetime,hashlib,json,platform,shutil,subprocess,sys,time
+OUT=Path(__file__).resolve().parent
+label=sys.argv[1];src=Path(sys.argv[2]).resolve();limit=int(sys.argv[3]);args=sys.argv[4:]
+assert '/' not in label and src.parent==OUT and limit>0
+D=OUT/'runs'/label;D.mkdir(parents=True,exist_ok=False)
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+shutil.copyfile(src,D/'source_at_launch.py');shutil.copyfile(Path(__file__),D/'recorder_at_launch.py')
+argv=[sys.executable,str(D/'source_at_launch.py')]+args
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();t=time.monotonic();timed_out=False
+try:
+ p=subprocess.run(argv,cwd=OUT,capture_output=True,timeout=limit)
+ code=p.returncode;stdout=p.stdout;stderr=p.stderr
+except subprocess.TimeoutExpired as e:
+ timed_out=True;code=None;stdout=e.stdout or b'';stderr=e.stderr or b''
+(D/'stdout').write_bytes(stdout);(D/'stderr').write_bytes(stderr)
+r={'kind':'new-recurrence-science' if label.startswith('recurrence') else 'metadata','argv':argv,'cwd':str(OUT),
+ 'start_utc':start,'end_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'elapsed_seconds':time.monotonic()-t,
+ 'python':sys.version,'platform':platform.platform(),'wall_timeout_seconds':limit,'timed_out':timed_out,'exit_code':code,
+ 'source_at_launch':pin(D/'source_at_launch.py'),'original_source':pin(src),'recorder_at_launch':pin(D/'recorder_at_launch.py'),
+ 'stdout':pin(D/'stdout'),'stderr':pin(D/'stderr')}
+(D/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n')
+print(json.dumps(r,indent=2))
+if code!=0:raise SystemExit(code or 1)

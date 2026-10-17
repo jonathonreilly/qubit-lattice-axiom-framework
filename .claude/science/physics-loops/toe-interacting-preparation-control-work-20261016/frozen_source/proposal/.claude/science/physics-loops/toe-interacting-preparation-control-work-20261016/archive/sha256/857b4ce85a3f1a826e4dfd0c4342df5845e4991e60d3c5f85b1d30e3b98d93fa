@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-16T17:25:04.057386+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_READY_INPUT_INTERACTING_RAMP_BRIDGE",
+  "original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 15425,
+    "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e"
+  },
+  "original_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+    "bytes": 393,
+    "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a"
+  },
+  "exposed_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/REVIEW.md",
+    "bytes": 23761,
+    "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794"
+  },
+  "exposed_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/FREEZE.json",
+    "bytes": 5914,
+    "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 8077,
+    "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51"
+  },
+  "actual_finite_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/runs/ramp_interface/EXECUTION.json",
+    "bytes": 2490,
+    "sha256": "20d95eab56dba2cb00f7b5222e05fdc99f717e29b1e8bd8f66e1e6d88ee5ba15"
+  },
+  "scientific_programs_run_by_this_record": 0,
+  "reviewer_scientific_runs": 1,
+  "root_replayed_scientific_runs": 0,
+  "source_exposed_same_model": true,
+  "blind_independence": false,
+  "shared_parent_authorship": true,
+  "frozen_members_verified": [
+    2,
+    31
+  ],
+  "publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

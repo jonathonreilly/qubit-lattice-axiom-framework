@@ -1,0 +1,152 @@
+"""Ground-up finite ramp/semantic-word interface and original-baseline work.
+
+The old target is induced by a fixed logical word; no arbitrary dressed-target
+compiler is implemented. Actual full output isometries have all 16384 rows.
+No old checker is imported. Floating values are not interval certificates.
+"""
+import json
+from pathlib import Path
+import platform
+import sys
+import numpy as np
+
+OUT=Path(sys.argv[1]);OUT.mkdir(exist_ok=False)
+TOL=1e-8;MUTANT_MIN=1e-5
+I=np.eye(2,dtype=complex);X=np.array([[0,1],[1,0]],complex);Y=np.array([[0,-1j],[1j,0]],complex);Z=np.diag([1,-1]).astype(complex)
+I4=np.eye(4,dtype=complex);Ns=np.diag([0,1,1,2]).astype(complex)
+K=2*I4+.6*np.kron(X,X)+.4*np.kron(Z,I)+.25*np.kron(I,X)
+Delta=.7;kappa=3.25;Hstar=Delta*Ns;C=kappa*I4-K
+ron=.4;roff=.65;tau=1.3;reserve=.37;hbar=1.;q=2;L=3;M=5;n=14;D=2**n
+alpha=Delta*ron;beta=Delta*roff;integer_k=2;lam=2*np.pi*integer_k-Delta*(tau+ron+roff)
+assert 1.5*np.pi<lam<=4.5*np.pi
+assert np.linalg.eigvalsh(K).min()>0 and np.linalg.eigvalsh(C).min()>0
+comm_norm=float(np.linalg.norm(K@Ns-Ns@K,2));assert comm_norm>.1
+
+def exp_h(H,t):
+    vals,vecs=np.linalg.eigh(H)
+    return (vecs*np.exp(-1j*t*vals))@vecs.conj().T
+
+def ramp(duration,up,steps):
+    R=I4.copy();dt=duration/steps
+    for j in range(steps):
+        s=(j+.5)/steps;u=3*s*s-2*s*s*s
+        if not up:u=1-u
+        H=(1-u)*K+u*(kappa*I4+Hstar)
+        R=exp_h(H,dt)@R
+    return R
+
+ramps={s:(ramp(ron,True,s),ramp(roff,False,s)) for s in [256,512,1024]}
+refinements={}
+for name,index in [('on',0),('off',1)]:
+    a=float(np.linalg.norm(ramps[512][index]-ramps[256][index],2))
+    b=float(np.linalg.norm(ramps[1024][index]-ramps[512][index],2))
+    refinements[name]={'difference_256_512':a,'difference_512_1024':b,'observed_ratio':a/b}
+    assert b<1e-5
+Ron,Roff=ramps[1024]
+
+def local_left(mat,sites,state):
+    sites=list(sites);other=[j for j in range(n) if j not in sites]
+    perm=sites+other+[n];inverse=np.argsort(perm)
+    shaped=state.reshape([2]*n+[state.shape[1]])
+    front=shaped.transpose(perm).reshape(2**len(sites),-1)
+    applied=(mat@front).reshape([2]*n+[state.shape[1]])
+    return applied.transpose(inverse).reshape(D,-1)
+
+def prefix(r):return ((1<<r)-1)<<(M-r)
+
+def lift(U):
+    out=np.eye(2**(M+1),dtype=complex)
+    for a in range(1,M+1):
+        indices=[prefix(a),(1<<M)+prefix(a-1)]
+        out[np.ix_(indices,indices)]=U
+    return out
+
+U1=(3*I+4j*X)/5
+U2=np.exp(1j*np.pi/7)*(5*I+12j*Y)/13
+U3=(8*I+15j*Z)/17
+CZ=np.diag([1,1,1,-1]).astype(complex)
+P=np.kron(U3,I)@CZ@np.kron(I,U2)@np.kron(U1,I)
+branch0=[0]+list(range(2,7));branch1=[1]+list(range(7,12))
+word=[(lift(U1),branch0),(lift(U2),branch1),(CZ,[0,1]),(lift(U3),branch0)]
+
+def apply_word(state):
+    for mat,sites in word:state=local_left(mat,sites,state)
+    return state
+
+J=np.zeros((D,4),complex)
+coeff=np.sqrt(2/(L+1))*np.sin(np.pi*np.arange(1,L+1)/(L+1))
+for x in range(4):
+    for a in range(1,L+1):
+        for b in range(1,L+1):
+            row=(((x<<M)|prefix(a))<<M)|prefix(b);row<<=2
+            J[row,x]=coeff[a-1]*coeff[b-1]
+labels=np.arange(D,dtype=np.uint64)
+NA=np.array([int(x&((1<<(n-2))-1)).bit_count() for x in labels],float)
+NS=np.array([int(x>>(n-2)).bit_count() for x in labels],float)
+N=NA+NS
+def phase(diagonal,angle,state):return np.exp(-1j*angle*diagonal)[:,None]*state
+
+# Direct chronological left side: old numerical propagator + resource drift,
+# full conserving semantic word, free/correction plateau phases, then turn-off.
+after_on=phase(NA,alpha,local_left(Ron,[0,1],J))
+after_word=apply_word(after_on)
+gamma=np.exp(-1j*(kappa*tau+reserve));phi=Delta*tau+lam
+before_off=gamma*phase(N,phi,after_word)
+actual=phase(NA,beta,local_left(Roff,[0,1],before_off))
+
+# Independently built rewritten comparator. No ramp/word matrices are derived
+# from this comparator, and the direct propagation above does not use it.
+Eon=np.diag(np.exp(1j*alpha*np.diag(Ns)))
+Eoff=np.diag(np.exp(1j*beta*np.diag(Ns)))
+rhs=gamma*local_left(Roff@Eoff,[0,1],apply_word(local_left(Eon@Ron,[0,1],J)))
+wrong_order=gamma*local_left(Roff@Eoff,[0,1],apply_word(local_left(Ron@Eon,[0,1],J)))
+wrong_lambda=2*np.pi*integer_k-Delta*tau
+wrong_phase=phase(NA,beta,local_left(Roff,[0,1],gamma*phase(N,Delta*tau+wrong_lambda,after_word)))
+
+V=Roff@Eoff@P@Eon@Ron
+target=gamma*J@V
+op=lambda a:float(np.linalg.norm(a,2))
+interface_error=op(actual-rhs);program_packet_error=op(actual-target)
+order_mutant=op(actual-wrong_order);phase_mutant=op(actual-wrong_phase)
+assert interface_error<TOL and order_mutant>MUTANT_MIN and phase_mutant>MUTANT_MIN
+unitarity=max(op(R.conj().T@R-I4) for R in [Ron,Roff,V])
+assert unitarity<TOL
+
+# Work is first computed directly on the fixed original baseline F0.
+psi=np.array([1,0,0,0],complex)
+initial=J@psi;va=after_on@psi;vb=before_off@psi;vf=actual@psi
+def old_rho(v):
+    x=v.reshape(4,-1)
+    return x@x.conj().T
+def real(x):return float(np.real(x))
+def old_expect(A,v):return real(np.vdot(v,local_left(A,[0,1],v[:,None])[:,0]))
+def baseline(v):return old_expect(K,v)+Delta*real(np.vdot(v,NA*v))
+rho=np.outer(psi,psi.conj());ra=old_rho(va);rb=old_rho(vb);rf=old_rho(vf)
+work=baseline(vf)-baseline(initial)
+work_identity=real(np.trace(K@(rf-rho))-np.trace(Hstar@(rb-ra)))
+resource_change=Delta*real(np.vdot(vf,NA*vf)-np.vdot(initial,NA*initial))
+charge_balance=resource_change+real(np.trace(Hstar@(rb-ra)))
+rho_target=V@rho@V.conj().T;rb_target=Roff.conj().T@rho_target@Roff
+work_target=real(np.trace(K@(rho_target-rho))-np.trace(Hstar@(rb_target-ra)))
+widthK=float(np.ptp(np.linalg.eigvalsh(K)));widthstar=2*Delta
+allowance=(widthK+widthstar)*program_packet_error
+assert abs(work-work_identity)<TOL and abs(charge_balance)<TOL and abs(work)>MUTANT_MIN
+assert abs(work-work_target)<=allowance+TOL
+assert abs(work-old_expect(K,vf)+old_expect(K,initial))>MUTANT_MIN
+
+report={'kind':'numerical_noncommuting_ramp_and_original_baseline_interface','python':sys.version,'numpy':np.__version__,
+ 'platform':platform.platform(),'q':q,'L':L,'M_per_branch':M,'total_qubits':n,'full_isometry_shape':list(actual.shape),
+ 'K_Ns_commutator_norm':comm_norm,'ramp_refinements':refinements,'unitarity_defect':unitarity,
+ 'phase_data':{'r_on':ron,'r_off':roff,'tau':tau,'Delta':Delta,'kappa':kappa,'k':integer_k,'lambda':lam,'prescribed_scalar_reserve':reserve,'gamma':[gamma.real,gamma.imag]},
+ 'complete_phase_interface_error':interface_error,'wrong_right_phase_order_error':order_mutant,
+ 'omitted_resource_ramp_phases_error':phase_mutant,'complete_packet_target_error':program_packet_error,
+ 'packet_vector_bound':float(4*2*np.sin(np.pi/(2*(L+1)))),
+ 'work':{'direct_original_baseline':work,'intermediate_old_identity':work_identity,'identity_residual':abs(work-work_identity),
+         'resource_energy_change':resource_change,'charge_balance_residual':abs(charge_balance),
+         'target_functional':work_target,'functional_error':abs(work-work_target),'width_independent_allowance':allowance,
+         'old_energy_change_only':old_expect(K,vf)-old_expect(K,initial)},
+ 'limits':'Complex128 midpoint-product evidence; no interval/ODE certificate, arbitrary-target compiler, elementary pulse synthesis or small-error packet certification.'}
+np.savez_compressed(OUT/'FULL_PACKET_MATRICES.npz',K=K,C=C,Hstar=Hstar,Ron=Ron,Roff=Roff,logical_word=P,target_V=V,
+ J=J,after_on=after_on,before_off=before_off,actual=actual,rewritten=rhs,wrong_order=wrong_order,wrong_phase=wrong_phase,target=target)
+(OUT/'RESULT.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps(report,indent=2))

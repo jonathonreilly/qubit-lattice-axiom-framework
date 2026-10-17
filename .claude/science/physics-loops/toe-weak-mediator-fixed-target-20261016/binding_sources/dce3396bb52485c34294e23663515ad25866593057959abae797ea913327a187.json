@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-16T21:45:18.854079+00:00",
+  "exact_freeze_members": 206,
+  "immutable_bodies": 12,
+  "source_aliases": 179,
+  "archive_objects": 107,
+  "source_freezes": 9,
+  "exact_function_reuses": 21,
+  "metadata_mutants": 61,
+  "receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/prepare/EXECUTION.json",
+      "bytes": 3152,
+      "sha256": "f31219d99de6625e0058ce0c990c5623164cf1ffb7113fd8eb3b1f0e28d5ebca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3139,
+      "sha256": "fc068509db7a0da76caf8fcdfa44f006369bbdf96dca153e7dbe9c5029b56c83"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3174,
+      "sha256": "9360f42a3748e0f7d3012fe4c85c57d02b886ef481f290eb5da3f543c25e3499"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3128,
+      "sha256": "823f5aef55b3237e24e56812d2cca254131925b2c501dcf7e9a3ed2a0f4fb4c4"
+    }
+  ],
+  "complete_new_code_and_prose_read": true,
+  "complete_metadata_streams_read": true,
+  "scientific_executions": 0,
+  "required_canonical_replacements": [],
+  "editorial_input_deltas": [
+    {
+      "run": "build",
+      "historical_input_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+        "bytes": 1273,
+        "sha256": "00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be"
+      },
+      "final_editorial_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+        "bytes": 1276,
+        "sha256": "fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe"
+      }
+    },
+    {
+      "run": "build",
+      "historical_input_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+        "bytes": 942,
+        "sha256": "3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b"
+      },
+      "final_editorial_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+        "bytes": 1737,
+        "sha256": "84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240"
+      }
+    },
+    {
+      "run": "inspection",
+      "historical_input_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+        "bytes": 1273,
+        "sha256": "00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be"
+      },
+      "final_editorial_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+        "bytes": 1276,
+        "sha256": "fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe"
+      }
+    },
+    {
+      "run": "inspection",
+      "historical_input_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+        "bytes": 942,
+        "sha256": "3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b"
+      },
+      "final_editorial_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+        "bytes": 1737,
+        "sha256": "84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240"
+      }
+    }
+  ],
+  "historical_receipts": 13,
+  "historical_successes": 12,
+  "historical_metadata_failures": 1,
+  "historical_author_scientific_executions": 2,
+  "historical_saved_certificate_executions": 1,
+  "review_expectations": {
+    "kind": "weak_mediator_source_review_expectations",
+    "root_completed_actual_read": true,
+    "source_freeze_sha256": "32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f",
+    "review_markdown": "# Root source-publication review: supplied weak mediator\n\nRoot approves qualified source integration at source freeze32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f. This decision concerns the wrapper and its provenance machinery. Actual base, adapter, canonical and staged review remain separate, as do publication and retained audit.\n\nRoot read the complete new wrapper, PR body, binding contract, claim certificate and evidence scope; the complete builder, primary template, inspector, metadata recorder, sealer and preparation copier; the read/reuse guides, final checkpoint and recovery disclosure; and all four actual prepare/build/inspection/seal receipts with complete streams. Exact generated-primary substitution and frozen member/source closure are checked mechanically by this recording process. The twelve unchanged scientific/review/qualification bodies reuse the already complete scientific acceptance ba201403, qualification e367c861 and original source identities. Large exact-integer reports are preserved and hashed, not claimed manually reread digit by digit or scientifically replayed.\n\nThe displayed theorem is conditional on two independent Bell-source qubits, the specified source projector and simultaneous positive XX/YY ports. Literal K, arbitrary old/reference inputs and all source outputs remain. The full comparator retains actual rhat; source initialization requires independence or a full joint preparation error allowance. The exact corrector residual, finite observation window and known finite source-retaining reuse keep their stated bounds and intervention assumptions. Structured calibration applies only to lower changes of the three shared coefficients in the same Pauli family; generic faults still need the full generator allowance. Runtime zero drive work does not price preparation, installation or timing.\n\nThe original phrase source triplets is explicitly corrected to the orthogonal Bell complement, including the singlet reached by the YY ports. All historical bodies remain unchanged. The later saved-certificate check is additive evidence, not a rewrite of root acceptance chronology. Two author scientific executions (symbolic identities and the two fixed coefficient scenarios) and one separately implemented saved-certificate arithmetic check remain distinct. All three actual 60-second wall limits, no OS CPU/RAM quotas, source captures, argv, full streams and implementation exposure are preserved. Same-model source exposure and shared Python arithmetic are not blind or model-independent validation; saved endpoints remain an analytical premise of the latter check.\n\nThe four wrapper runs and61 controls verify metadata only. The historical metadata_001 path-schema failure, its corrected distinct source and original complete streams remain visible. Final CHECKPOINT.md and BOOKKEEPING_RECOVERY.md editorial updates made after build/inspection are preserved at their actual historical and final identities; no claim is made that final files were already the earlier inputs. No source or scientific outcome is retrospectively edited.\n\nThe complete displayed finite proof is self-contained from K,W and the supplied finite matrices. One new mathematical root with zero direct theorem-parent edges is appropriate; prior static-edge and onsite theorems are contextual transport, not premises. The subsequent product-source construction is a different permission set and is not imported here. No substantive scientific correction is required in canonical integration. Binding/status and receipt-linkage changes require separate review. Native microscopic supply, independent source preparation, installation, timing, generic faults, final halt/reset and indefinite fixed-device reuse remain unresolved.\n\nNo physical axiom, editable prompt, model or reasoning setting changed. This source decision does not authorize a main push, science merge or retained audit.\n\n",
+    "editorial_input_deltas": [
+      {
+        "run": "build",
+        "historical_input_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+          "bytes": 1273,
+          "sha256": "00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be"
+        },
+        "final_editorial_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+          "bytes": 1276,
+          "sha256": "fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe"
+        }
+      },
+      {
+        "run": "build",
+        "historical_input_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+          "bytes": 942,
+          "sha256": "3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b"
+        },
+        "final_editorial_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+          "bytes": 1737,
+          "sha256": "84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240"
+        }
+      },
+      {
+        "run": "inspection",
+        "historical_input_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+          "bytes": 1273,
+          "sha256": "00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be"
+        },
+        "final_editorial_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md",
+          "bytes": 1276,
+          "sha256": "fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe"
+        }
+      },
+      {
+        "run": "inspection",
+        "historical_input_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+          "bytes": 942,
+          "sha256": "3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b"
+        },
+        "final_editorial_identity": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md",
+          "bytes": 1737,
+          "sha256": "84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240"
+        }
+      }
+    ],
+    "required_canonical_replacements": [],
+    "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+    "proposed_graph_disposition": "one_new_root_zero_direct_parent_edges"
+  },
+  "review_expectation_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/weak_mediator_source_expectations.json",
+    "bytes": 7119,
+    "sha256": "041a47bff177101c161ba412526d20d282f7c345054bbec96c84b101a9104e11"
+  },
+  "review_expectations_original_utf8": "{\n  \"kind\": \"weak_mediator_source_review_expectations\",\n  \"root_completed_actual_read\": true,\n  \"source_freeze_sha256\": \"32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f\",\n  \"review_markdown\": \"# Root source-publication review: supplied weak mediator\\n\\nRoot approves qualified source integration at source freeze32b3edb257c7695c24242b6ef36680468e31e5d8ee6d1156936fb2b44128fa0f. This decision concerns the wrapper and its provenance machinery. Actual base, adapter, canonical and staged review remain separate, as do publication and retained audit.\\n\\nRoot read the complete new wrapper, PR body, binding contract, claim certificate and evidence scope; the complete builder, primary template, inspector, metadata recorder, sealer and preparation copier; the read/reuse guides, final checkpoint and recovery disclosure; and all four actual prepare/build/inspection/seal receipts with complete streams. Exact generated-primary substitution and frozen member/source closure are checked mechanically by this recording process. The twelve unchanged scientific/review/qualification bodies reuse the already complete scientific acceptance ba201403, qualification e367c861 and original source identities. Large exact-integer reports are preserved and hashed, not claimed manually reread digit by digit or scientifically replayed.\\n\\nThe displayed theorem is conditional on two independent Bell-source qubits, the specified source projector and simultaneous positive XX/YY ports. Literal K, arbitrary old/reference inputs and all source outputs remain. The full comparator retains actual rhat; source initialization requires independence or a full joint preparation error allowance. The exact corrector residual, finite observation window and known finite source-retaining reuse keep their stated bounds and intervention assumptions. Structured calibration applies only to lower changes of the three shared coefficients in the same Pauli family; generic faults still need the full generator allowance. Runtime zero drive work does not price preparation, installation or timing.\\n\\nThe original phrase source triplets is explicitly corrected to the orthogonal Bell complement, including the singlet reached by the YY ports. All historical bodies remain unchanged. The later saved-certificate check is additive evidence, not a rewrite of root acceptance chronology. Two author scientific executions (symbolic identities and the two fixed coefficient scenarios) and one separately implemented saved-certificate arithmetic check remain distinct. All three actual 60-second wall limits, no OS CPU/RAM quotas, source captures, argv, full streams and implementation exposure are preserved. Same-model source exposure and shared Python arithmetic are not blind or model-independent validation; saved endpoints remain an analytical premise of the latter check.\\n\\nThe four wrapper runs and61 controls verify metadata only. The historical metadata_001 path-schema failure, its corrected distinct source and original complete streams remain visible. Final CHECKPOINT.md and BOOKKEEPING_RECOVERY.md editorial updates made after build/inspection are preserved at their actual historical and final identities; no claim is made that final files were already the earlier inputs. No source or scientific outcome is retrospectively edited.\\n\\nThe complete displayed finite proof is self-contained from K,W and the supplied finite matrices. One new mathematical root with zero direct theorem-parent edges is appropriate; prior static-edge and onsite theorems are contextual transport, not premises. The subsequent product-source construction is a different permission set and is not imported here. No substantive scientific correction is required in canonical integration. Binding/status and receipt-linkage changes require separate review. Native microscopic supply, independent source preparation, installation, timing, generic faults, final halt/reset and indefinite fixed-device reuse remain unresolved.\\n\\nNo physical axiom, editable prompt, model or reasoning setting changed. This source decision does not authorize a main push, science merge or retained audit.\\n\\n\",\n  \"editorial_input_deltas\": [\n    {\n      \"run\": \"build\",\n      \"historical_input_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md\",\n        \"bytes\": 1273,\n        \"sha256\": \"00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be\"\n      },\n      \"final_editorial_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md\",\n        \"bytes\": 1276,\n        \"sha256\": \"fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe\"\n      }\n    },\n    {\n      \"run\": \"build\",\n      \"historical_input_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md\",\n        \"bytes\": 942,\n        \"sha256\": \"3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b\"\n      },\n      \"final_editorial_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md\",\n        \"bytes\": 1737,\n        \"sha256\": \"84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240\"\n      }\n    },\n    {\n      \"run\": \"inspection\",\n      \"historical_input_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md\",\n        \"bytes\": 1273,\n        \"sha256\": \"00e4926048160512275bf6275e6601a1a5697aca12eeb282973360162ba160be\"\n      },\n      \"final_editorial_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/BOOKKEEPING_RECOVERY.md\",\n        \"bytes\": 1276,\n        \"sha256\": \"fbd6b103c49843b074f6704fd62f795c7537b86083aa540881284f7bf0cdaebe\"\n      }\n    },\n    {\n      \"run\": \"inspection\",\n      \"historical_input_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md\",\n        \"bytes\": 942,\n        \"sha256\": \"3fe4ff993b8df810ce39d298fcb349d7ee5d629707deac7aedc40048162a4a2b\"\n      },\n      \"final_editorial_identity\": {\n        \"path\": \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_qualified_publication_draft/CHECKPOINT.md\",\n        \"bytes\": 1737,\n        \"sha256\": \"84961edf816f9ba8f1d154d28689621e7b44b10d35ca6fdc0b8cbb7993fc4240\"\n      }\n    }\n  ],\n  \"required_canonical_replacements\": [],\n  \"disposition\": \"QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING\",\n  \"proposed_graph_disposition\": \"one_new_root_zero_direct_parent_edges\"\n}\n"
+}

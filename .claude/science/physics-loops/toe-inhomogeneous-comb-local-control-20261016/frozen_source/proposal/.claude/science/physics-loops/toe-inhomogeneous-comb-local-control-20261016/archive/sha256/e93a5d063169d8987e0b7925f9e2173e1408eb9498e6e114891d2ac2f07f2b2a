@@ -1,0 +1,208 @@
+#!/usr/bin/env python3
+"""One exact finite semantic discriminator; no elementary compiler replay.
+
+q=2, L1=L2=1, M1=M2=3. Data order S1,B11,B12,B13,S2,B21,B22,B23.
+Each input column and every output coefficient of the full 256-dimensional
+piecewise lifted word are represented exactly. Runtime ancilla synthesis is
+an accepted parent interface, not numerically retested by this script.
+"""
+import argparse
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as s
+
+I = s.I
+DIM = 256
+PREFIX = {0: 0b000, 1: 0b100, 2: 0b110, 3: 0b111}
+PAIRS = {a: (PREFIX[a], 8 + PREFIX[a - 1]) for a in range(1, 4)}
+LOOKUP = {index: (a, x) for a, pair in PAIRS.items() for x, index in enumerate(pair)}
+X = s.Matrix([[0, 1], [1, 0]])
+Y = s.Matrix([[0, -I], [I, 0]])
+U1 = (3 * s.eye(2) + 4 * I * X) / 5
+U2 = (5 + 12 * I) * (3 * s.eye(2) + 4 * I * Y) / 65
+U3 = s.diag(1, I)
+WORD = [("one", 0, U1), ("one", 1, U2), ("CZ", None, None), ("one", 0, U3)]
+CZ = s.diag(1, 1, 1, -1)
+V = s.kronecker_product(U3, s.eye(2)) * CZ * s.kronecker_product(U1, U2)
+
+
+def clean(state):
+    return {row: s.expand(value) for row, value in state.items() if s.expand(value) != 0}
+
+
+def local_outputs(index, u):
+    if index not in LOOKUP:
+        return {index: s.Integer(1)}
+    a, x = LOOKUP[index]
+    return {PAIRS[a][y]: u[y, x] for y in range(2) if u[y, x] != 0}
+
+
+def apply_word(initial):
+    state = initial
+    for kind, species, u in WORD:
+        next_state = {}
+        for column, value in state.items():
+            left, right = divmod(column, 16)
+            if kind == "CZ":
+                phase = -1 if left >= 8 and right >= 8 else 1
+                next_state[column] = next_state.get(column, 0) + phase * value
+            elif species == 0:
+                for new, coefficient in local_outputs(left, u).items():
+                    row = new * 16 + right
+                    next_state[row] = next_state.get(row, 0) + coefficient * value
+            else:
+                for new, coefficient in local_outputs(right, u).items():
+                    row = left * 16 + new
+                    next_state[row] = next_state.get(row, 0) + coefficient * value
+        state = clean(next_state)
+    return state
+
+
+def difference(a, b):
+    return clean({key: a.get(key, 0) - b.get(key, 0) for key in set(a) | set(b)})
+
+
+def norm2(state):
+    return s.simplify(sum(s.conjugate(x) * x for x in state.values()))
+
+
+def code_index(a1, a2, logical):
+    x1, x2 = divmod(logical, 2)
+    return (8 * x1 + PREFIX[a1 - x1]) * 16 + 8 * x2 + PREFIX[a2 - x2]
+
+
+def counts(index):
+    left, right = divmod(index, 16)
+    return left.bit_count(), right.bit_count()
+
+
+def energy(index):
+    n1, n2 = counts(index)
+    return s.Rational(1, 3) + n1 + s.sqrt(2) * n2
+
+
+def physical_old_swap(index):
+    return index ^ 0b10001000 if bool(index & 0b10000000) != bool(index & 0b00001000) else index
+
+
+def zero_matrix(matrix):
+    return all(s.simplify(x) == 0 for x in matrix)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, required=True)
+    args = parser.parse_args()
+    args.output.mkdir(parents=True, exist_ok=True)
+    columns = [apply_word({column: s.Integer(1)}) for column in range(DIM)]
+    checks = {"target_unitarity": zero_matrix(V.H * V - s.eye(4))}
+    lift_checks = []
+    for u in (U1, U2, U3):
+        lift = s.zeros(16)
+        for col in range(16):
+            for row, value in local_outputs(col, u).items():
+                lift[row, col] = value
+        lift_checks.append(zero_matrix(lift.H * lift - s.eye(16)))
+    checks["all_full_local_lifts_unitary"] = all(lift_checks)
+    residuals = {}
+    selected = set()
+    for a1 in range(1, 4):
+        for a2 in range(1, 4):
+            total = 0
+            for x in range(4):
+                col = code_index(a1, a2, x)
+                selected.add(col)
+                expected = {code_index(a1, a2, y): V[y, x] for y in range(4)}
+                total += norm2(difference(columns[col], expected))
+            residuals[f"{a1},{a2}"] = str(s.simplify(total))
+    checks["all_nine_complete_blocks"] = all(value == "0" for value in residuals.values())
+    checks["complete_subspace_and_complement_invariant"] = all(
+        all((row in selected) == (col in selected) for row in state)
+        for col, state in enumerate(columns))
+    comm_n = [s.Integer(0), s.Integer(0)]
+    comm_f = s.Integer(0)
+    for col, state in enumerate(columns):
+        before = counts(col)
+        for row, value in state.items():
+            after = counts(row)
+            for species in range(2):
+                change = (after[species] - before[species]) * value
+                comm_n[species] += s.conjugate(change) * change
+            change = (energy(row) - energy(col)) * value
+            comm_f += s.conjugate(change) * change
+    comm_n = [s.simplify(x) for x in comm_n]
+    comm_f = s.simplify(comm_f)
+    checks["both_species_charges_conserved_full_space"] = comm_n == [0, 0]
+    checks["irrational_gap_F_conserved_full_space"] = comm_f == 0
+    off_code = 0b10101010  # Both batteries are nonprefix 010, both old bits are one.
+    checks["actual_off_code_CZ_phase_retained"] = columns[off_code] == {off_code: -s.Integer(1)}
+    off_identity_error = norm2(difference(columns[off_code], {off_code: s.Integer(1)}))
+    translation_residual = 0
+    for x in range(4):
+        x1, x2 = divmod(x, 2)
+        initial = (8 * x1 + PREFIX[1]) * 16 + 8 * x2 + PREFIX[1]
+        predicted = {}
+        for y in range(4):
+            y1, y2 = divmod(y, 2)
+            row = (8 * y1 + PREFIX[1 + x1 - y1]) * 16 + 8 * y2 + PREFIX[1 + x2 - y2]
+            predicted[row] = V[y, x]
+        translation_residual += norm2(difference(columns[initial], predicted))
+    checks["finite_translation_formula_all_old_columns"] = translation_residual == 0
+    # The logical |00> output is entangled: its 2x2 amplitude determinant is nonzero.
+    amplitude_determinant = s.simplify(s.Matrix(2, 2, list(V[:, 0])).det())
+    checks["word_has_entangling_output"] = amplitude_determinant != 0
+
+    swap_comm_f = s.simplify(sum((energy(physical_old_swap(col)) - energy(col)) ** 2 for col in range(DIM)))
+    checks["bad_unequal_gap_physical_swap_detected"] = swap_comm_f != 0
+    checks["bad_swap_commutator_exact_value"] = s.simplify(swap_comm_f - 128 * (3 - 2 * s.sqrt(2))) == 0
+    bad_block_residual = 0
+    for x in range(4):
+        x1, x2 = divmod(x, 2)
+        actual = {physical_old_swap(code_index(1, 1, x)): s.Integer(1)}
+        desired = {code_index(1, 1, 2 * x2 + x1): s.Integer(1)}
+        bad_block_residual += norm2(difference(actual, desired))
+    checks["bad_swap_fails_same_block_logical_swap"] = bad_block_residual == 4
+    # tau=hbar=1, rational r_i=0, k_i=2. Since sqrt(2)<3/2<pi/2,
+    # each r_i is within 1/4 of Delta_i/(2pi). Include ancilla charge 0..5.
+    lam1, lam2 = 4 * s.pi - 1, 4 * s.pi - s.sqrt(2)
+    phase_values = [s.simplify(s.exp(-I * (s.Rational(1, 3) + a + s.sqrt(2) * b + lam1 * a + lam2 * b))
+                               - s.exp(-I / 3)) for a in range(6) for b in range(6)]
+    checks["separate_species_phase_cancellation_all_charge_values"] = all(value == 0 for value in phase_values)
+
+    entries = [[row, col, str(s.re(value)), str(s.im(value))]
+               for col, state in enumerate(columns) for row, value in sorted(state.items())]
+    (args.output / "full_word_sparse_entries.json").write_text(json.dumps({
+        "dimension": DIM, "entry_format": ["row", "column", "exact_real", "exact_imaginary"],
+        "entries": entries}, indent=2) + "\n")
+    report = {
+        "scope": "One exact full finite semantic word; not an elementary compiler replay, pulse simulation, general theorem or L=1 accuracy guarantee.",
+        "python": sys.version, "sympy": s.__version__, "platform": platform.platform(),
+        "parameters": {"q": 2, "L1": 1, "L2": 1, "M1": 3, "M2": 3,
+                       "data_qubits": 8, "data_dimension": DIM,
+                       "gaps": ["1", "sqrt(2)"], "E0": "1/3"},
+        "chronological_word": ["U1 on old 1", "U2 on old 2", "physical CZ", "U3 on old 1"],
+        "U1": str(U1), "U2": str(U2), "U3": str(U3), "V": str(V),
+        "checks": checks,
+        "evidence": {"selected_basis_count": len(selected), "full_nonzero_entries": len(entries),
+                     "complete_block_residual_squared": residuals,
+                     "charge_commutator_frobenius_squared": [str(x) for x in comm_n],
+                     "F_commutator_frobenius_squared": str(comm_f),
+                     "off_code_witness_decimal": off_code,
+                     "off_code_identity_residual_squared": str(off_identity_error),
+                     "translation_residual_squared": str(translation_residual),
+                     "logical_output_amplitude_determinant": str(amplitude_determinant),
+                     "bad_physical_SWAP_F_commutator_frobenius_squared": str(swap_comm_f),
+                     "bad_physical_SWAP_same_block_residual_squared": str(bad_block_residual),
+                     "separate_phase_charge_pairs_checked": len(phase_values),
+                     "species_lambda": [str(lam1), str(lam2)]},
+    }
+    (args.output / "RESULT.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(report, indent=2, sort_keys=True), flush=True)
+    if not all(checks.values()):
+        raise AssertionError("A declared finite discriminator failed")
+
+
+if __name__ == "__main__":
+    main()

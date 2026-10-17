@@ -1,0 +1,86 @@
+"""Run final metadata verification with actual captures, then seal the packet."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+import subprocess
+import sys
+import time
+
+OUT = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate')
+sha = lambda data: hashlib.sha256(data).hexdigest()
+assert not (OUT / 'FREEZE.json').exists()
+assert not (OUT / 'FREEZE.sha256').exists()
+run = OUT / 'runs/final_verification'
+run.mkdir(parents=True, exist_ok=False)
+executed = run / 'executed_source.py'
+executed.write_bytes((OUT / 'verify_sources.py').read_bytes())
+launcher = run / 'launcher_source.py'
+launcher.write_bytes(Path(__file__).read_bytes())
+argv = [sys.executable, '-B', str(executed)]
+env = dict(os.environ)
+env['PYTHONDONTWRITEBYTECODE'] = '1'
+receipt = {'kind': 'actual_metadata_only_final_verification',
+           'scientific_execution': False, 'argv': argv, 'cwd': str(OUT),
+           'start_utc': datetime.now(timezone.utc).isoformat(),
+           'timeout_seconds': 60, 'source_sha256': sha(executed.read_bytes()),
+           'launcher_sha256': sha(launcher.read_bytes())}
+(run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+start = time.monotonic()
+try:
+    result = subprocess.run(argv, cwd=OUT, env=env, capture_output=True, timeout=60)
+    stdout, stderr = result.stdout, result.stderr
+    receipt['exit_code'] = result.returncode
+except Exception as exc:
+    stdout = getattr(exc, 'stdout', None) or b''
+    stderr = (getattr(exc, 'stderr', None) or b'') + repr(exc).encode()
+    receipt['exit_code'] = None
+    receipt['exception'] = repr(exc)
+(run / 'stdout').write_bytes(stdout)
+(run / 'stderr').write_bytes(stderr)
+receipt.update(end_utc=datetime.now(timezone.utc).isoformat(),
+               elapsed_seconds=time.monotonic()-start,
+               stdout_bytes=len(stdout), stdout_sha256=sha(stdout),
+               stderr_bytes=len(stderr), stderr_sha256=sha(stderr))
+(run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+if receipt['exit_code'] != 0:
+    print(json.dumps(receipt, indent=2))
+    sys.exit(1)
+assert stdout == (OUT / 'SEAL_VERIFICATION.json').read_bytes()
+assert stderr == b''
+members = []
+for path in sorted(OUT.rglob('*')):
+    assert not path.is_symlink(), str(path)
+    if not path.is_file():
+        continue
+    rel = path.relative_to(OUT).as_posix()
+    if rel in {'FREEZE.json', 'FREEZE.sha256'}:
+        continue
+    raw = path.read_bytes()
+    members.append({'path': rel, 'bytes': len(raw), 'sha256': sha(raw)})
+freeze = {'kind': 'original_author_proposal_freeze_before_comparison',
+          'utc': datetime.now(timezone.utc).isoformat(),
+          'scientific_status': 'unaccepted conditional proposed construction',
+          'exposure': 'accepted-parent source exposed; same inherited model and effort',
+          'concurrent_root_inhomogeneous_proposal_read': False,
+          'other_new_worker_result_read': False,
+          'scientific_programs_executed': 0,
+          'actual_metadata_runs': ['runs/source_capture/EXECUTION.json',
+                                   'runs/final_verification/EXECUTION.json'],
+          'member_count': len(members), 'members': members,
+          'excluded_exact_root_paths': ['FREEZE.json', 'FREEZE.sha256'],
+          'nested_source_freezes_included': True,
+          'editable_prompts_changed': [],
+          'canonical_or_git_mutations': False}
+freeze_raw = (json.dumps(freeze, indent=2) + '\n').encode()
+(OUT / 'FREEZE.json').write_bytes(freeze_raw)
+(OUT / 'FREEZE.sha256').write_text(sha(freeze_raw) + '  FREEZE.json\n')
+for item in members:
+    raw = (OUT / item['path']).read_bytes()
+    assert len(raw) == item['bytes'] and sha(raw) == item['sha256']
+print(json.dumps({'frozen': True, 'utc': freeze['utc'], 'member_count': len(members),
+                  'freeze_sha256': sha(freeze_raw),
+                  'derivation_sha256': sha((OUT / 'DERIVATION.md').read_bytes()),
+                  'final_verification_exit_code': receipt['exit_code'],
+                  'scientific_programs_executed': 0}, indent=2))

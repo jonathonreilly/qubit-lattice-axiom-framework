@@ -1,0 +1,128 @@
+--- /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/build_packet.py
++++ /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/build_packet.py
+@@ -1,32 +1,9 @@
+-"""Build a source-only publication proposal; no science code or Git is run."""
++"""Build only the scoped source publication proposal; no science, Git or canonical writes."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import hashlib,json,sys
+-D=Path(sys.argv[1]).resolve();N=D.parent;W=N.parent/'correlation_worktree'
+-P=D/'proposal';PK='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
+-NOTE='docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/inhomogeneous_comb_local_control_2026_10_16.py'
+-ROOTS={
+- 'inhomogeneous_local_control_root_proposal':'26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d',
+- 'inhomogeneous_local_control_root_exposed_check':'13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21',
+- 'inhomogeneous_local_control_independent_candidate':'7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737',
+- 'inhomogeneous_local_control_exposed_comparison':'fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b',
+- 'inhomogeneous_local_control_root_review':'d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05',
+- 'inhomogeneous_uniform_word_root_proposal':'55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e',
+- 'inhomogeneous_uniform_word_exposed_check':'36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598',
+- 'inhomogeneous_uniform_word_root_review':'b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1',
+- 'local_conserving_sparse_compiler_candidate':'1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9',
+- 'local_conserving_sparse_compiler_exposed_check':'54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9',
+- 'local_conserving_sparse_compiler_root_review':'d8774291d4919e586499a97faafb0e1579a91f1e2e342b876b9b4557645a750e',
+-}
+-BODIES=[
+- ('comb_original','inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md'),
+- ('comb_exposed_review','inhomogeneous_local_control_root_exposed_check/REVIEW.md'),
+- ('comb_controlling_qualifications','inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md'),
+- ('uniform_original','inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md'),
+- ('uniform_exposed_review','inhomogeneous_uniform_word_exposed_check/REVIEW.md'),
+- ('uniform_controlling_qualifications','inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md'),
+-]
++D=Path(sys.argv[1]).resolve();N=D.parent;P=D/'proposal'
++plan=json.loads((D/'SOURCE_PLAN.json').read_text());PK=plan['packet'];NOTE=plan['note'];SCRIPT=plan['script']
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def put(rel,b):
+  p=P/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
+@@ -40,62 +17,38 @@
+  else:sources[alias]=r
+  objects[h]={'path':r['recovery_path'],**ident(b)};put(r['recovery_path'],b)
+  return b
+-assert not P.exists(),'Refuse overwrite of an existing proposal'
+-for folder,pin in ROOTS.items():
+- f=N/folder/'FREEZE.json';raw=add(f,role='source_freeze');assert sha(raw)==pin,folder
+- freeze=json.loads(raw);key='members' if 'members' in freeze else 'files'
+- rows=freeze[key]
++
++assert not P.exists(),'Refuse overwrite of existing proposal'
++for folder,pin in plan['roots'].items():
++ raw=add(N/folder/'FREEZE.json',role='source_freeze');assert sha(raw)==pin,folder
++ frozen=json.loads(raw);key='members' if 'members' in frozen else 'files';rows=frozen[key]
+  for row in rows:
+-  p=Path(row['path']);p=p if p.is_absolute() else N/folder/p
+-  p.relative_to(N);b=add(p)
+-  assert ident(b)=={'bytes':row['bytes'],'sha256':row['sha256']},str(p)
+- freeze_rows.append({'folder':folder,'key':key,'members':len(rows),'sha256':pin})
+-for run in ['unequal_fixed_word_acceptance','uniform_word_acceptance']:
+- for p in sorted((N/'runs'/run).iterdir()):
+-  if p.is_file():add(p,role='actual_root_metadata_acceptance_evidence')
+-for name in ['primary_template.py','record_metadata.py']:
+- add(N/'bus_joint_energy_publication_draft'/name,role='packaging_machinery_template_only')
+-add(N/'review_run.py',role='current_recovery_copy_of_root_recorder_not_a_launch_capture')
+-parent_name='docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-raw=add(W/parent_name,'canonical_parent/'+parent_name,'direct_mathematical_parent')
+-assert sha(raw)=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f'
+-for rel in ['docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md','docs/ai_methodology/skills/workhorse/SKILL.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/WRITING_VOICE_GUIDE_2026-04-25.md']:
+- add(W/rel,'authority/'+rel,'read_methodology_snapshot_no_science_premise')
++  p=Path(row['path']);p=p if p.is_absolute() else N/folder/p;p.relative_to(N)
++  raw=add(p);assert ident(raw)=={'bytes':row['bytes'],'sha256':row['sha256']},str(p)
++ freeze_rows.append(dict(folder=folder,key=key,members=len(rows),sha256=pin))
++for row in plan['extra']:
++ raw=add(Path(row['path']),row['alias'],row['role']);assert ident(raw)=={'bytes':row['bytes'],'sha256':row['sha256']}
+ note=(D/'packet_text/WRAPPER.md').read_bytes();wrapper_len=len(note);maps=[]
+-for name,alias in BODIES:
++for name,alias in plan['bodies']:
+  raw=(N/alias).read_bytes();note+=('\n\n<!-- Unchanged complete source: '+name+' -->\n\n').encode();start=len(note);note+=raw
+- maps.append({'name':name,'source':alias,'container':NOTE,'start_byte_inclusive':start,'end_byte_exclusive':len(note),**ident(raw)})
++ maps.append(dict(name=name,source=alias,container=NOTE,start_byte_inclusive=start,end_byte_exclusive=len(note),**ident(raw)))
+ put(NOTE,note)
+-js(PK+'/BODY_MAP.json',{'new_wrapper_bytes':[0,wrapper_len],'bodies':maps})
+-js(PK+'/SOURCE_MANIFEST.json',{'schema':'inhomogeneous_comb_source_archive_v1','sources':list(sources.values())})
+-js(PK+'/ARCHIVE_INDEX.json',{'objects':list(objects.values())})
+-js(PK+'/FROZEN_SOURCE_CLOSURE.json',{'roots':freeze_rows})
+-parent={'schema':'qualified_source_parents_v1','canonical_binding_complete':False,'direct_mathematical_parents':[
+- {'role':'local_conserving_runtime_and_driven_preparation','canonical_path':parent_name,'canonical_claim_id':'local_conserving_preparation_bounded_theorem_note_2026-10-16','source_alias':'canonical_parent/'+parent_name,**ident((W/parent_name).read_bytes())},
+- {'role':'sparse_q1_compiler','canonical_path':None,'canonical_claim_id':None,'proposed_identifier':'local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16','derivation_alias':'local_conserving_sparse_compiler_candidate/DERIVATION.md','derivation_sha256':'6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b','acceptance_alias':'local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json','acceptance_sha256':'999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda','qualifications_alias':'local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md','qualifications_sha256':'83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e','canonical_publication':None}],
+- 'excluded_as_mathematical_parents':['inhomogeneous_local_control_independent_candidate','inhomogeneous_local_control_exposed_comparison','interacting_positive_complement_scope_screen'],'git_ancestry_is_not_mathematical_dependency':True}
+-js(PK+'/PARENT_BINDING.json',parent)
+-state={k:None for k in ['source_wrapper_review','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']}
+-state.update(scientific_programs_run_this_draft=0,scientific_replays=0)
++js(PK+'/BODY_MAP.json',dict(new_wrapper_bytes=[0,wrapper_len],bodies=maps))
++js(PK+'/SOURCE_MANIFEST.json',dict(schema='interacting_control_source_archive_v1',sources=list(sources.values())))
++js(PK+'/ARCHIVE_INDEX.json',dict(objects=list(objects.values())))
++js(PK+'/FROZEN_SOURCE_CLOSURE.json',dict(roots=freeze_rows,closure_rule=plan['closure_rule']))
++js(PK+'/PARENT_BINDING.json',dict(canonical_binding_complete=False,direct_mathematical_parents=plan['parents'],git_ancestry_is_not_mathematical_dependency=True))
++js(PK+'/ACCEPTANCE_BINDING.json',dict(qualified_source_decisions=plan['acceptances'],source_wrapper_review=None))
++js(PK+'/PARENT_PUBLICATION_EVIDENCE.json',dict(publication_alias='publication_integration/inhomogeneous_comb/PUBLICATION.json',attachment_alias='publication_integration/inhomogeneous_comb/ATTACHMENT.json',applies_to='parent_only',this_source_publication=None))
++state={k:None for k in ['source_wrapper_review','source_publication','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']};state.update(scientific_programs_run_this_draft=0,scientific_replays=0)
+ js(PK+'/PUBLICATION_STATE.json',state)
+-js(PK+'/ACTUAL_BINDING.json',{'kind':'unbound_source_only_proposal','source_review':None,'base_observation':None,'canonical_review':None,'canonical_parent_binding':None})
++js(PK+'/ACTUAL_BINDING.json',dict(kind='unbound_source_only_proposal',source_review=None,base_observation=None,canonical_review=None,canonical_parent_binding=None))
+ for name in ['PR_BODY.md','BINDING_CONTRACT.md']:put(PK+'/'+name,(D/'packet_text'/name).read_bytes())
+-js(PK+'/EXPOSURE.json',{'same_model_source_exposed':True,'blind_independence':False,'different_model_replication':False,'new_scientific_executions':0,'historical_new_result_executions':2,'sparse_parent_scientific_execution':1,'sparse_parent_failed_launches':1,'separate_direct_candidate_accepted':False,'comparison_is_historical_only':True,'retained_audit':False})
+-inputs=[]
+-for p in sorted(P.rglob('*')):
+- if p.is_file():inputs.append({'path':str(p.relative_to(P)),**ident(p.read_bytes())})
+-manifest={'schema':'inhomogeneous_comb_publication_inputs_v1','inputs':inputs}
+-js(PK+'/INPUT_MANIFEST.json',manifest)
+-msha=sha((P/PK/'INPUT_MANIFEST.json').read_bytes())
+-template=(D/'primary_template.py').read_text()
++js(PK+'/EXPOSURE.json',dict(same_model_source_exposed=True,blind_independence=False,different_model_replication=False,shared_parent_authorship=True,new_scientific_executions=0,historical_bridge_floating_executions=1,preparation_scientific_executions=0,fault_work_scientific_executions=0,retained_audit=False))
++inputs=[dict(path=str(p.relative_to(P)),**ident(p.read_bytes())) for p in sorted(P.rglob('*')) if p.is_file()]
++js(PK+'/INPUT_MANIFEST.json',dict(schema='interacting_control_publication_inputs_v1',inputs=inputs))
++msha=sha((P/PK/'INPUT_MANIFEST.json').read_bytes());template=(D/'primary_template.py').read_text()
+ generated=template.replace('__MANIFEST_SHA256__',msha).replace('__AUDIT_INPUT_PATHS__',repr([r['path'] for r in inputs]+[PK+'/INPUT_MANIFEST.json'])).replace('__EXPECTED_BODIES__',repr({r['name']:r['sha256'] for r in maps}))
+ put(SCRIPT,generated.encode())
+-reuse={'template_sources':[sources['bus_joint_energy_publication_draft/primary_template.py'],sources['bus_joint_energy_publication_draft/record_metadata.py']],
+- 'primary_reuse':'Adapted portable read/identity/archive/body/refusal pattern; source-specific predicates replaced. No bus science imported.',
+- 'recorder_reuse':'Adapted source-at-launch, actual child argv, launch/result/full-stream capture pattern; only named metadata programs allowed.',
+- 'new_code':['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py'],
+- 'new_prose':['packet_text/WRAPPER.md','packet_text/PR_BODY.md','packet_text/BINDING_CONTRACT.md','READ_GUIDE.md'],
+- 'unchanged_math_bodies':maps}
+-(D/'REUSE_AND_READ_MAP.json').write_text(json.dumps(reuse,indent=2)+'\n')
+-(D/'BUILD_RESULT.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'note':NOTE,'note_sha256':sha(note),'unchanged_bodies':len(maps),'source_aliases':len(sources),'unique_archive_objects':len(objects),'input_manifest_sha256':msha,'science_executions':0,'canonical_execution':None},indent=2)+'\n')
+-print((D/'BUILD_RESULT.json').read_text())
++result=dict(utc=datetime.now(timezone.utc).isoformat(),note=NOTE,note_sha256=sha(note),unchanged_bodies=len(maps),source_aliases=len(sources),unique_archive_objects=len(objects),freeze_member_counts=[r['members'] for r in freeze_rows],input_manifest_sha256=msha,scientific_executions=0,canonical_execution=None)
++(D/'BUILD_RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

@@ -1,0 +1,398 @@
+# Proposed local-fault work theorem for the interacting ramp bridge
+
+Status: **conditional-support proposal, pending separate mathematical review**. This source extends the qualified ready-input bridge `2d4294d7`, exposed review `086f5d2e`, and root decision `857b4ce8` controlled by qualifications `502b3af3`. It does not change their physical premises or their frozen text. The new result is a finite-dimensional stability theorem for an explicitly specified coherent local-Hamiltonian fault model. It supplies neither that fault model nor its calibration in a laboratory.
+
+The main proposed conclusion is affirmative under a precise additional hypothesis: **bounded charge bandwidth plus an integrated global residual-norm certificate removes the reservoir-width factor from the net first-energy work estimate.** Bounded local support implies bounded charge bandwidth. A bound on each local fault separately does not control their sum uniformly as the reservoir grows. Numerical program errors, physical Hamiltonian residuals, dissipation and residual endpoint controls have different roles and cannot be interchanged.
+
+No scientific program is executed for this note. The decisive examples and all constants below are derived analytically. Metadata commands only bind sources and freeze the packet. This is same-model source-exposed author work; the author also wrote the parent exposed review. Separate checking is pending, and no retained audit or publication status is claimed.
+
+## 1. Fixed physical quantities and the fault contract
+
+Let the old register contain fixed \(q\) qubits with its literal Hamiltonian \(K\geq0\). Let \(A\) contain any finite number \(m_A\) of reservoir and ancillary qubits; all their outputs remain part of the system. A reference \(R\) is arbitrary and untouched. Define
+
+\[
+S=\sum_{j\in S_{\rm sites}}n_j,\quad
+B=\sum_{j\in A}n_j,\quad N=S+B,
+\quad H_*=\Delta S,\quad F_0=K+\Delta B,\quad\Delta>0.
+\tag{1}
+\]
+
+The symbol \(S\) in formulas denotes the old number operator; \(S_{\rm sites}\) denotes its sites. Keep \(\hbar\) and all physical energy units. This specified \(F_0\) is the original endpoint baseline. It is not the plateau surrogate.
+
+Choose declared laboratory times \(0<t_a<t_b<T\). On the two ramp intervals \(I_+=[0,t_a]\) and \(I_-=[t_b,T]\), the nominal Hamiltonian is disjoint:
+
+\[
+H_0(t)=H_{S,\pm}(t)+\Delta B.
+\tag{2}
+\]
+
+The old operators are the actual time-ordered positive-complement ramps of the parent. Their propagators are \(R_+\) and \(R_-\). In particular the turn-off map is forward evolution, not an inverse. On the plateau \(I_p=[t_a,t_b]\), require the parent's exact nominal property
+
+\[
+[H_0(t),N]=0.
+\tag{3}
+\]
+
+This includes finite nominal compiled pulses, free scalar drift, all paid scalar reserves and final number-phase correction. Their exact phases and dressed target remain the parent's; this work theorem does not replace the complete-output comparator.
+
+The actual closed-system Hamiltonian is
+
+\[
+H(t)=H_0(t)+E(t),\qquad E(t)=\sum_X E_X(t),
+\tag{4}
+\]
+
+with finite Hermitian, integrable residuals supported on their actual site sets \(X\). Piecewise continuously differentiable controls suffice; energy-work formulas below include finite jumps if present. The literal term \(K\) is retained in \(H_0\); \(E\) records discrepancies of the additional controls or explicitly specified transient perturbations. It is not a redefinition of the old generator. A permanently mismatched installed field is an endpoint residual unless it is included in the actually specified baseline from the outset.
+
+For local estimates supply nonnegative integrable bounds \(b_X(t)\) and real scalar functions \(c_X(t)\) such that
+
+\[
+\|E_X(t)-c_X(t)I_X\|\leq b_X(t).
+\tag{5}
+\]
+
+Taking \(c_X=0\), \(b_X=\|E_X\|\) always suffices. For a Hermitian term its half spectral width is the best such bound. Subtracting a scalar in (5) is only a commutator/density-error estimate: the actual scalar, its control load, phase and endpoint energy are never removed from the physical model.
+
+The theorem requires no random-noise average and allows arbitrary coherent correlations between residual terms. Actual positive-control realizability, support, incident strength and slew remain separately supplied certificates. If \(a_X(t)\geq\|E_X(t)\|\) and \(s_X(t)\geq\|\dot E_X(t)\|\), then safe incident bounds are
+
+\[
+J_{\rm actual}(v)\leq J_0(v)+\sum_{X\ni v}a_X(t),\qquad
+S_{\rm actual}(v)\leq S_0(v)+\sum_{X\ni v}s_X(t).
+\tag{6}
+\]
+
+Positivity does not follow from a small norm error and must be checked for the actual supplied controls. The complement loads already paid in the parent are part of \(J_0\). For onsite/edge residuals on a nearest-neighbor graph, \(|X|\leq2\); for higher-arity supplied old complements, use their actual fixed arity. No support splitting removes a physical incident load.
+
+Analytical existence of the integrals below is not an effective certificate by itself. Effective use requires supplied verified integral/supremum bounds or effective regularity and quadrature certificates. Pointwise computable coefficient values alone are not silently treated as an integration oracle or as a bound on its wall time.
+
+## 2. Exact balance with physical charge leakage
+
+Let \(\sigma(t)\) be the actual state on \(S A R\), with arbitrary initial correlations. Its old marginals at \(0,t_a,t_b,T\) are \(\sigma_0,\sigma_a,\sigma_b,\sigma_f\). Define the signed dimensionless transfers
+
+\[
+z_+=\frac{i}{\hbar}\int_{I_+}\operatorname{Tr}\sigma(t)[E(t),B]dt,
+\quad
+z_p=\frac{i}{\hbar}\int_{I_p}\operatorname{Tr}\sigma(t)[E(t),N]dt,
+\quad
+z_-=\frac{i}{\hbar}\int_{I_-}\operatorname{Tr}\sigma(t)[E(t),B]dt.
+\tag{7}
+\]
+
+These are real, since \(i[E,Q]\) is Hermitian. On a ramp \([H_0,B]=0\), and on the plateau \([H_0,N]=0\). The Heisenberg expectation identity thus gives
+
+\[
+\langle B\rangle_a-\langle B\rangle_0=z_+,
+\quad
+\langle B\rangle_b-\langle B\rangle_a
+  =z_p-\operatorname{Tr}S(\sigma_b-\sigma_a),
+\quad
+\langle B\rangle_f-\langle B\rangle_b=z_-.
+\]
+
+Therefore, with \(\Xi=\Delta(z_++z_p+z_-)\),
+
+\[
+\boxed{\;
+W_{F_0}:=\langle F_0\rangle_f-\langle F_0\rangle_0
+=\operatorname{Tr}K(\sigma_f-\sigma_0)
+ -\operatorname{Tr}H_*(\sigma_b-\sigma_a)+\Xi.
+\;}
+\tag{8}
+\]
+
+This identity uses actual intermediate marginals, not ideal inputs. It is valid with entanglement, an initially correlated reservoir, coherent faults and arbitrary references. Taking marginals in its proof does not discard or reset any physical output. It does not yet identify \(W_{F_0}\) with actual prescribed-drive work when endpoint residuals or dissipation are present.
+
+## 3. Work comparison from actual old errors and ramp errors
+
+Let \(\rho\) be the declared old input and \(V\) the parent's target. Write \(\rho_V=V\rho V^*\). The nominal target work functional is exactly
+
+\[
+W_V=\operatorname{Tr}K(\rho_V-\rho)
+ -\operatorname{Tr}H_*\big(R_-^*\rho_VR_--R_+\rho R_+^*\big).
+\tag{9}
+\]
+
+Define unhalved trace errors
+
+\[
+\delta_0=\|\sigma_0-\rho\|_1,\qquad
+\delta_f=\|\sigma_f-\rho_V\|_1,
+\]
+
+\[
+e_+=\|\sigma_a-R_+\sigma_0R_+^*\|_1,\qquad
+e_-=\|\sigma_f-R_-\sigma_bR_-^*\|_1.
+\tag{10}
+\]
+
+These are properties or certified bounds of the actual protocol, not requests to measure an unknown input. They are meaningful for every allowed initial/reference state. Small old-marginal errors suffice for this work estimate; they do not certify correct old/reference correlations or full resource output. Those retain the parent's separate complete-isometry requirement. Triangle inequality and unitary invariance give
+
+\[
+\|\sigma_a-R_+\rho R_+^*\|_1\leq e_++\delta_0,
+\quad
+\|\sigma_b-R_-^*\rho_VR_-\|_1\leq e_-+\delta_f.
+\]
+
+For a Hermitian observable \(O\) and trace-zero Hermitian \(D\),
+\(|\operatorname{Tr}OD|\leq\operatorname{width}(O)\|D\|_1/2\), by subtracting the midpoint of the spectral interval. Let \(\omega_K=\operatorname{width}(K)\) and \(\omega_*=q\Delta\). Subtracting (9) from (8) proves
+
+\[
+\boxed{\;
+|W_{F_0}-W_V|
+\leq\frac{\omega_K+q\Delta}{2}(\delta_0+\delta_f)
+  +\frac{q\Delta}{2}(e_++e_-)+|\Xi|.
+\;}
+\tag{11}
+\]
+
+No reservoir width or dimension appears in these coefficients. The new task is to bound \(\Xi\) and \(e_\pm\) from a concrete fault contract; their actual size must not be presumed uniform.
+
+An alternative observable calculation checks both the signs and coefficients. Put \(O_f=K-R_-H_*R_-^*\), \(O_0=K-R_+^*H_*R_+\), \(A_+=\sigma_a-R_+\sigma_0R_+^*\), and \(A_-=\sigma_f-R_-\sigma_bR_-^*\). Direct substitution in (8) gives
+
+\[
+W_{F_0}-W_V=\operatorname{Tr}O_f(\sigma_f-\rho_V)
+-\operatorname{Tr}O_0(\sigma_0-\rho)
++\operatorname{Tr}(R_-H_*R_-^*)A_-
++\operatorname{Tr}H_*A_++\Xi.
+\tag{11a}
+\]
+
+Each difference has trace zero, \(\operatorname{width}(O_j)\leq\omega_K+q\Delta\), and \(\|A_\pm\|_1=e_\pm\), again yielding (11).
+
+### Old ramp disturbances need only old-touching residuals
+
+During a ramp split \(E=E_A+E_{\rm touch}\), where \(E_A\) sums terms with \(X\cap S_{\rm sites}=\varnothing\). Use the comparison generator \(H_{S,\pm}(t)+\Delta B+E_A(t)\). Its propagator is \(R_\pm\otimes U_A\), so its old marginal is exactly \(R_\pm\sigma R_\pm^*\) even for correlated input. Unitary Duhamel and partial-trace contraction yield
+
+\[
+e_\pm\leq\min\{2,2\eta_{S,\pm}\},\qquad
+\eta_{S,\pm}=\frac1\hbar\int_{I_\pm}
+             \sum_{X:X\cap S_{\rm sites}\ne\varnothing}b_X(t)dt.
+\tag{12}
+\]
+
+The scalar sums in (5) only change a global comparison phase and do not affect density matrices. A global bound \(g(t)\geq\inf_c\|E(t)-cI\|\) instead gives \(e_\pm\leq\min\{2,2\eta_\pm\}\), \(\eta_\pm=\hbar^{-1}\int_{I_\pm}g(t)dt\). Either valid estimate can be used. If old-site incident residual bounds obey \(\sum_{X\ni j}b_X(t)\leq b_S(t)\), (12) gives \(\eta_{S,\pm}\leq q\hbar^{-1}\int_{I_\pm}b_S(t)dt\), independently of \(m_A\). This counts each old-touching term at least once; it makes no claim that the corresponding sum over all reservoir sites is bounded.
+
+## 4. Local charge certificates with explicit support dependence
+
+For either number operator \(Q=B\) or \(Q=N\), define its charged sites \(T_Q\) and \(r_X^Q=|X\cap T_Q|\). Only \(Q_X=\sum_{j\in X\cap T_Q}n_j\) enters \([E_X,Q]\). Since \(Q_X\) has spectrum in \([0,r_X^Q]\),
+
+\[
+\|[E_X,Q]\|
+=\|[E_X-c_XI,Q_X-r_X^QI/2]\|
+\leq r_X^Q b_X.
+\tag{13}
+\]
+
+Thus a supplied sharper certificate \(a_X^Q(t)\geq\|i[E_X(t),Q]\|\), including the exact value zero for a structurally conserving term, can replace \(r_X^Qb_X\). One bound is
+
+\[
+|\Xi|\leq\Lambda_{\rm loc}:=\frac{\Delta}{\hbar}
+\left[\int_{I_+\cup I_-}\sum_X a_X^B(t)dt
+      +\int_{I_p}\sum_X a_X^N(t)dt\right].
+\tag{14}
+\]
+
+The coefficient in (13) is one, not two times the support size; the charge centering is essential to that improvement. It is sharp: on \(r\) charged qubits, \(E=b(|0^r\rangle\langle1^r|+|1^r\rangle\langle0^r|)\) has norm \(b\) and commutator norm \(rb\). For a nearest-neighbor edge this already realizes the \(r=2\) factor.
+
+In particular, \(N\)-conserving plateau residuals have zero leakage even if their number or total norm is extensive. Examples include amplitude/phase errors in exchange terms \(z\sigma_i^+\sigma_j^-+\bar z\sigma_i^-\sigma_j^+\), diagonal number fields, diagonal CZ generators, and a full SWAP generator between the designated qubits. This is charge conservation, not conservation of an incorrectly substituted physical energy baseline. On a ramp old-only errors have zero \(B\)-leakage but can produce the old ramp errors in (12). Number-changing resource errors need their nonzero certificates. Exact conservation is recognized from a supplied structural expression or certificate; the theorem does not provide an equality oracle for arbitrary computable matrix entries.
+
+### A separate global-norm certificate without a reservoir-width factor
+
+Suppose a residual \(E(t)\) has charge bandwidth at most the integer \(r_Q\geq0\): its matrix elements between \(Q\)-eigenspaces vanish when their integer eigenvalues differ by more than \(r_Q\). A sum of terms supported on at most \(r\) qubits has this property with \(r_Q\leq r\), regardless of the number of summands or graph size. The family conclusion requires a common finite \(r\) independent of reservoir size. Define its finite charge-Fourier components by
+
+\[
+E_d=\frac1{2\pi}\int_0^{2\pi}
+     e^{i\theta Q}E e^{-i\theta Q}e^{-id\theta}d\theta.
+\tag{15}
+\]
+
+For \(d\ne0\), scalar subtraction gives \(\|E_d\|\leq\inf_c\|E-cI\|\leq g\). Also \([Q,E_d]=dE_d\), and only \(-r_Q\leq d\leq r_Q\) occur. Therefore the elementary finite sum gives
+
+\[
+\boxed{\ \|[E,Q]\|\leq r_Q(r_Q+1)g.\ }
+\tag{16}
+\]
+
+This constant is deliberately conservative; no optimal operator Bernstein inequality is imported. The proof uses only finite integer-charge decomposition and unitary norm invariance. It is valid for noncommuting residual terms and does not require simultaneous diagonalization of \(E\) or \(K\).
+
+With a common bandwidth bound \(r\), and \(\eta_j=\hbar^{-1}\int_{I_j}g(t)dt\),
+
+\[
+|\Xi|\leq\Lambda_{\rm glob}:=
+\Delta r(r+1)(\eta_++\eta_p+\eta_-).
+\tag{17}
+\]
+
+The stronger available estimate among (14), (17), or their pointwise minimum can be used. A global norm is not the sum of the local residual norms: \(\inf_c\|E-cI\|\leq\sum_X b_X\), so choosing \(g=\sum_Xb_X\) is sufficient, potentially loose. A separately certified global bound may be tighter. Equation (16) is what permits a supplied small global norm to give a width-independent charge estimate under bounded bandwidth. Without that structural hypothesis, the trivial bound involves the full charge width instead.
+
+Combining (11), (12) with its global alternative, and (17) proves the main directly usable corollary:
+
+\[
+\boxed{\begin{aligned}
+|W_{F_0}-W_V|\leq{}
+ &\frac{\omega_K+q\Delta}{2}(\delta_0+\delta_f)\\
+ &+q\Delta(\eta_++\eta_-)
+  +\Delta r(r+1)(\eta_++\eta_p+\eta_-).
+\end{aligned}}\tag{18}
+\]
+
+For genuinely onsite/nearest-neighbor residuals \(r=2\) suffices, so the last coefficient is \(6\Delta\), and the ramp coefficient is \((q+6)\Delta\). None depends on the reservoir length. The result is conditional on the residual norms and fixed support/bandwidth; it is not an estimate from final trace error alone.
+
+## 5. What this supplies to the parent accuracy family
+
+Let the parent's actual full-Hamiltonian discrepancy certificate be
+
+\[
+\eta_H=\frac1\hbar\int_0^T\|E(t)\|dt.
+\tag{19}
+\]
+
+For this corollary choose \(g(t)=\|E(t)\|\) in the preceding estimates, so \(\eta_++\eta_p+\eta_-=\eta_H\). Thus for exact initial old input and a final complete-output vector error \(e_{\rm out}\), the parent gives \(\delta_f\leq2e_{\rm out}\), and (18) implies
+
+\[
+|W_{F_0}-W_V|\leq(\omega_K+q\Delta)e_{\rm out}
+   +\Delta[q+r(r+1)]\eta_H.
+\tag{20}
+\]
+
+An actual initial old trace error adds \((\omega_K+q\Delta)\delta_0/2\). If only full readiness vector error \(e_{\rm ready}\) is known, \(\delta_0\leq2e_{\rm ready}\) gives that allowance. The same physical discrepancy can influence both final-state error and charge transfer; (20) combines those two consequences of one certificate. It does not invent two independent fault budgets or re-add \(\eta_H\) inside the parent's state estimate.
+
+Numerical target assembly, finite logical search, numerical ramp matrices and a finite nominal compiled word contribute to \(e_{\rm out}\). If their actual nominal Hamiltonians still obey (2)–(3), they contribute no separate \(\Xi\). A physical coefficient or waveform discrepancy belongs in \(E\), including complement residuals throughout their long plateau exposure. A computed decimal tolerance is not a physical discrepancy certificate. The retained global scalar of the parent is unchanged as a comparator convention. A physical scalar-phase discrepancy remains paid by the full-isometry error certificate; choosing a centered bound for the work calculation does not remove that phase. Energy estimates also retain actual scalar endpoint controls.
+
+For fixed \(q,K,\Delta\), fixed arity and the parent's \(T\leq H'\epsilon^{-4}\), a global physical bound
+
+\[
+\sup_t\|E(t)\|\leq \hbar\epsilon^5/(cH')
+\]
+
+gives \(\eta_H\leq\epsilon/c\). Hence (20) is an \(O(\epsilon)\) work-error bound with a fixed energy coefficient. This is the precise additional proof missing from the prior generic-fault statement.
+
+If at most \(M(\epsilon)\leq D/\epsilon\) local terms have simultaneous residual norm at most \(b(\epsilon)\), then the safe estimate \(\|E\|\leq M b\) requests
+
+\[
+b(\epsilon)\leq\hbar\epsilon^6/(cDH').                 \tag{21}
+\]
+
+The exponent-six per-term request therefore remains visible. A fixed per-site bound cannot be substituted for (19). If only a fixed number of terms violate charge conservation, (14) can give a better leakage allowance while the other terms still affect logical/full-output accuracy. For old-only complementary-control errors during the plateau, the number of terms is fixed but the exposure is \(O(\epsilon^{-4})\), giving the familiar exponent-five sufficient request. Such bounds are nominal calibration requests, not source-oracle runtime bounds or hardware implementations.
+
+Nothing here makes the full resource's higher energy moments width-independent. The theorem concerns the net first-energy balance and the old work functional. Moment estimates and full output correctness retain their own accepted contracts.
+
+## 6. Endpoint controls and actual driven work
+
+For closed coherent dynamics with a differentiable prescribed Hamiltonian,
+
+\[
+W_{\rm drive}=\int_0^T\operatorname{Tr}\sigma(t)\dot H(t)dt
+ =\operatorname{Tr}H(T)\sigma(T)-\operatorname{Tr}H(0)\sigma(0),
+\tag{22}
+\]
+
+with the corresponding jump-work terms for piecewise controls. If \(H(0)=F_0+D_0\), \(H(T)=F_0+D_f\), then
+
+\[
+W_{\rm drive}=W_{F_0}
+ +\operatorname{Tr}D_f\sigma(T)-\operatorname{Tr}D_0\sigma(0).
+\tag{23}
+\]
+
+Therefore every bound above becomes a bound on \(|W_{\rm drive}-W_V|\) after adding the absolute value of that actual endpoint term, or the safe allowance \(\|D_f\|+\|D_0\|\). For local endpoint decompositions, summing their actual norms is sufficient. No trace-zero centering removes their scalar parts because the operators differ at the two endpoints. Exact restoration \(D_0=D_f=0\) makes \(W_{F_0}=W_{\rm drive}\).
+
+A field detuning \(\sum_j\delta_jn_j\) conserves number but, if left installed at the endpoints, is a real \(D\). It cannot be silently absorbed into an exactly equal-gap baseline. Similarly, a positive scalar switched from zero to \(cI\) changes prescribed-drive work by \(c\) while changing no density matrix or charge. This exact one-term example disproves dropping (23).
+
+For absolute rather than net work, add the following safe residual allowance to the nominal norm-variation bound \(\int\|\dot H_0(t)\|dt\):
+
+\[
+\int_0^T\!\|\dot E(t)\|dt\leq\sum_X\int_0^T\!\|\dot E_X(t)\|dt,
+\tag{24}
+\]
+
+plus jumps. A small integrated amplitude does not control this variation. Constant incident strength/slew certificates such as (6), and the actual count of simultaneously driven sites, must be retained if an absolute-work bound is requested. The present fixed coefficients for net work do not imply constant total control effort.
+
+## 7. Dissipation is a different energy ledger
+
+The theorem above is for coherent Hamiltonian faults. It does not model loss, measurement, reset or a bath by an effective Hermitian residual. If a separately supplied open-system model is
+
+\[
+\dot\sigma=-(i/\hbar)[H,\sigma]+\mathcal D_t(\sigma),
+\]
+
+then charge balances acquire \(\operatorname{Tr}\sigma\mathcal D_t^*(Q)\) in addition to the Hamiltonian terms in (7). For a specified local jump term \(\mathcal D_X(\sigma)=\gamma_X(L_X\sigma L_X^*-\{L_X^*L_X,\sigma\}/2)\) with nonnegative rate \(\gamma_X\), direct expansion gives
+
+\[
+\mathcal D_X^*(Q)
+ =\tfrac{\gamma_X}{2}\big(L_X^*[Q,L_X]+[L_X^*,Q]L_X\big),
+\quad
+\|\mathcal D_X^*(Q)\|\leq\gamma_X r_X^Q\|L_X\|^2.
+\tag{25}
+\]
+
+The last bound follows from charge centering as in (13). This is a conditional algebraic observation for the supplied model, not a derivation or supplier of a dissipator. It can bound baseline energy transfer, but actual prescribed-drive work now also needs the heat term
+
+\[
+Q_{\rm bath}=\int_0^T\operatorname{Tr}H(t)\mathcal D_t(\sigma(t))dt,
+\quad
+W_{\rm drive}=W_{F_0}+\text{endpoint term}-Q_{\rm bath}.
+\tag{26}
+\]
+
+For example, a single qubit with fixed Hamiltonian \(\Delta n\), no drive, initial excited state and a supplied decay law \(p(t)=e^{-\gamma t}\) has \(W_{F_0}=\Delta(e^{-\gamma T}-1)\), while \(W_{\rm drive}=0\); the difference is heat. A Hamiltonian-norm certificate cannot pay this missing term. Equation (11) remains an algebraic comparison if the actual old ramp errors and all extra charge sources are supplied, but (12), (18) and the drive interpretation cannot be imported unchanged into an unspecified open-system model.
+
+Calling the generator energy-flow term in (26) physical bath heat requires the supplied open-system model and its energy identification. The algebraic identity does not construct or identify a microscopic bath.
+
+## 8. Exact counterexamples to stronger replacements
+
+### 8.1 Small full trace error alone does not control energy uniformly
+
+On \(m\) resource qubits compare \(|0^m\rangle\) with
+\(|\psi\rangle=\sqrt{1-p}|0^m\rangle+\sqrt p|1^m\rangle\). The unhalved trace distance of their pure-state density matrices is \(2\sqrt p\), while their \(\Delta B\) means differ by \(m\Delta p\). With fixed trace error \(\varepsilon=2\sqrt p\), the discrepancy is \(m\Delta\varepsilon^2/4\). Tensoring an unchanged old/reference state leaves all old errors zero. This refutes a universal work/energy replacement by trace error alone; it says nothing against (18), whose physical residual/bandwidth budget has not been supplied for these states.
+
+### 8.2 Constant local fault strength can give extensive leakage on the actual sine packet
+
+This example uses the parent's real prefix packet, not an unmentioned vacuum replacement. On a branch with \(L\geq7\), \(M\geq L\) (in particular the parent's \(M=L+q\)), let
+
+\[
+|\beta\rangle=\sqrt{\frac2{L+1}}\sum_{\ell=1}^L
+ \sin\frac{\pi\ell}{L+1}|1^\ell0^{M-\ell}\rangle.
+\]
+
+Set \(n=L+1\), \(J=\{\lceil7n/8\rceil,\ldots,L\}\), so \(s=|J|=\lfloor n/8\rfloor\). For \(j\in J\), its occupation \(p_j\) obeys
+
+\[
+p_j=\frac2n\sum_{\ell=j}^L\sin^2(\pi\ell/n)
+\leq\frac2n(L-j+1)\leq\frac14.
+\tag{27}
+\]
+
+The packet is real in the number basis, so \(\langle Y_j\rangle=0\). During a nominal conserving idle plateau choose a smooth nonnegative envelope \(\dot\theta(t)\) of total area \(\theta\in(0,\pi/2)\), zero at both ends, and resource-only positive onsite residuals
+
+\[
+E_j(t)=\hbar\dot\theta(t)\left[I+
+ e^{-i\Delta t n_j/\hbar}X_j e^{i\Delta t n_j/\hbar}\right],
+\quad j\in J.
+\tag{28}
+\]
+
+An absolute-time phase shift accounts for any preceding resource drift; equivalently begin this formula in the known interaction-picture coordinate of the packet. Place the envelope inside an idle interval and end it before the final number-phase slot. This is an explicit coherent fault example, not a claim that the required reference is native. Its onsite blocks are positive, have norm \(2\hbar\dot\theta\), and obey \(\|\dot E_j\|\leq2\hbar|\ddot\theta|+\Delta|\dot\theta|\). A fixed smooth envelope therefore gives common finite amplitude/slew bounds independent of \(L\); it can fit any specified positive headroom by choosing its fixed duration and amplitude accordingly. All residuals vanish at the endpoints. In the interaction picture they implement, with an explicit scalar phase \(e^{-is\theta}\), the product \(\prod_{j\in J}e^{-i\theta X_j}\). Hence
+
+\[
+\langle B\rangle_f-\langle B\rangle_0
+ =\sin^2\theta\sum_{j\in J}(1-2p_j)
+ \geq\tfrac{s}{2}\sin^2\theta.
+\tag{29}
+\]
+
+Choose a nominal semantic identity word so the old state is unaffected by these resource-only faults; its dressed old target includes the fixed nominal ramps. Then \(\delta_0=\delta_f=e_+=e_-=0\), while actual extra same-baseline work is at least \(s\Delta\sin^2\theta/2\), growing with \(L\). The retained full resource output is changed, not erased. This refutes replacing (14) or (19) by a constant per-site allowance with no count. It is consistent with both bounds: the local leakage allowance is \(s\Delta\theta\), and the global centered residual action is \(s\theta\). Neither is uniformly small. Exact number-conserving faults, a fixed number of faulty sites, or an appropriately shrinking summed residual remain valid alternatives.
+
+### 8.3 Bounded bandwidth is additional information
+
+The \(r\)-qubit operator following (13) changes charge by \(r\) and saturates \(\|[E,Q]\|=r\|E\|\). Allowing its support/charge bandwidth to grow with the reservoir invalidates a fixed coefficient inferred from global norm alone. Conversely, many local terms may have a small *certified global sum* through cancellations, and (16) remains valid for that sum with fixed bandwidth. The theorem does not assume either worst-case summation or cancellation without the corresponding certificate.
+
+These are exact counterexamples to specified false substitutions, not a general no-go for local accuracy families. The positive alternatives are (14), (17), exact charge conservation, fixed faulty support, and structurally controlled dissipative energy transfer with an explicit heat ledger. No route failure is promoted to a universal impossibility claim.
+
+## 9. Scope, claim status and next check
+
+The proposed theorem closes the structured **coherent** charge-error estimate under a declared bounded-support/bandwidth model and quantitative residual certificates. Its global-norm route can reuse the parent's actual \(\eta_H\) without a reservoir-width multiplier, after adding the explicit fixed coefficient in (20). Its local route can exploit exactly conserving errors or a bounded number of charge-violating terms. Both retain initial-energy allowances, literal \(K\), actual endpoint timing and the original baseline, and remain valid when all output correlations are retained. They do not certify that those outputs or correlations are close to target; that is the parent's separate full-output contract.
+
+It does not establish those error certificates experimentally, give a polynomial classical oracle runtime, make trace error alone an energy certificate, remove total site-count calibration cost, certify reservoir higher moments, close interacting-old preparation, or supply a microscopic actuator/bath/clock. The remaining mathematical action is a separate check of (8), the ramp Duhamel reduction (12), the charge-Fourier estimate (16), and the parent composition (20), including the endpoint and packet counterexamples. No numerical run was needed to decide these finite identities; a later checker should choose a concrete risk rather than replay an unrelated compiler fixture.
+
+Claim fields: `actual_current_surface_status=conditional-support`; `target_claim_type=bounded_theorem`; `trace_class=direct_blocker_closure`; `reachability_to_target=closes` for the explicitly structured coherent interface, not generic physical realization; `hypothetical_axiom_status=null`; `admitted_observation_status=null`; `bare_retained_allowed=false`; separate review and audit status remain pending. No new framework axiom or registered primitive is used or modified.

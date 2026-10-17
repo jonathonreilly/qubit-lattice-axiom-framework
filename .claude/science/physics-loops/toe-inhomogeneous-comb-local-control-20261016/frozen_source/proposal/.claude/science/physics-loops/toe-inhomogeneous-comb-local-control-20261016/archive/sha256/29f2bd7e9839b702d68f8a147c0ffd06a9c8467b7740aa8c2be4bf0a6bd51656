@@ -1,0 +1,96 @@
+"""Metadata-only selected-source capture, receipt verification and final seal.
+
+No old science replay or automatic acceptance. Every selected source is copied
+literally; older seal files are identity records, not recursive archive claims.
+"""
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+
+ROOT=Path(__file__).resolve().parent;N=ROOT.parent
+SOURCES=[
+ ('inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md','source/uniform_proposal/PROPOSED_LEMMAS.md','7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b','Complete new argument read and reconstructed.'),
+ ('inhomogeneous_uniform_word_root_proposal/SOURCE_MANIFEST.json','source/uniform_proposal/SOURCE_MANIFEST.json','07833281338beca8322fb11c9bcc08f8ee13a909ae4faab2c48d511597a127d9','Complete new source/exposure manifest read.'),
+ ('inhomogeneous_uniform_word_root_proposal/FREEZE.json','source/uniform_proposal/FREEZE.json','55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e','Complete seal read; its two members captured and verified.'),
+ ('inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md','source/unequal_parent/PROPOSED_LEMMAS.md','561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2','Prior complete argument read reused at unchanged identity; current selected physical sections reread. Combined current output truncated, not a fresh complete-read claim.'),
+ ('inhomogeneous_local_control_root_proposal/FREEZE.json','source/unequal_parent/FREEZE.json','26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d','Prior seal identity record only; its entire older archive is not copied.'),
+ ('inhomogeneous_local_control_root_exposed_check/REVIEW.md','source/prior_exposed_check/REVIEW.md','71be6f797e20fae811da54e62ea382cb4dcbc076f847422602d74dbe3db05d9e','Same-author prior complete proof check, including static-load correction, counterexamples and physical budgets; reused at unchanged identity.'),
+ ('inhomogeneous_local_control_root_exposed_check/FREEZE.json','source/prior_exposed_check/FREEZE.json','13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21','Prior freeze identity record only; no old scientific replay or recursive archive copy.'),
+ ('local_conserving_sparse_compiler_candidate/DERIVATION.md','source/sparse_parent/DERIVATION.md','6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b','Authorial full proof coverage reused; full-input branch-isometry and uniform q=1 count are necessary premises.'),
+ ('local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md','source/sparse_parent/FINAL_QUALIFICATIONS.md','83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e','Complete controlling qualification body previously read and freshly identity-verified.'),
+ ('local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json','source/sparse_parent/QUALIFIED_ACCEPTANCE.json','999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda','Qualified source-decision identity; no retained or new-wrapper acceptance inferred.'),
+ ('local_conserving_control_root_review/FINAL_QUALIFICATIONS.md','source/runtime_parent/FINAL_QUALIFICATIONS.md','9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305','Complete earlier controlling phase, initial/final energy, timing and physical permissions reused at identical hash.'),
+]
+def sha(raw):return hashlib.sha256(raw).hexdigest()
+def info(p):
+ raw=p.read_bytes();return {'path':str(p.relative_to(ROOT)),'bytes':len(raw),'sha256':sha(raw)}
+def put(name,value):
+ with (ROOT/name).open('x') as f:f.write(json.dumps(value,indent=2)+'\n')
+
+assert not (ROOT/'FREEZE.json').exists()
+records=[]
+for original,copy,expected,coverage in SOURCES:
+ p=N/original;raw=p.read_bytes();assert sha(raw)==expected,(original,sha(raw))
+ dest=ROOT/copy;dest.parent.mkdir(parents=True,exist_ok=True)
+ with dest.open('xb') as f:f.write(raw)
+ assert dest.read_bytes()==raw
+ records.append({'original_path':str(p),'packet_path':copy,'bytes':len(raw),'sha256':expected,'coverage':coverage})
+uniform=json.loads((ROOT/'source/uniform_proposal/FREEZE.json').read_text())
+by_original={r['original_path']:r for r in records}
+for member in uniform['members']:
+ captured=by_original[member['path']]
+ assert member['sha256']==captured['sha256'] and member['bytes']==captured['bytes']
+unread=N/'inhomogeneous_local_control_independent_candidate/DERIVATION.md';raw=unread.read_bytes()
+assert sha(raw)=='4bd3d22a785bacedddf66b1ddfecceedf61d1ebb88c92301971b2c0edf9d6e6b'
+put('SOURCE_MANIFEST.json',{'utc':datetime.now(timezone.utc).isoformat(),'kind':'selected_sources_for_exposed_uniform_word_check',
+ 'captured_sources':records,'unread_ancestor_identity_only':{'path':str(unread),'bytes':len(raw),'sha256':sha(raw),'argument_read':False,'used_as_premise':False,'copied':False},
+ 'exposure':'Same selected model and effort; reviewer authored sparse/control parents and prior comb check. Root had read those and a separate candidate before proposing this result. No blindness or retained-audit claim.',
+ 'source_scope':'Complete new proposal closure plus selected necessary immutable parent bodies/seal identities. Not recursive historical evidence closure.',
+ 'scientific_executions_in_this_review':1,'old_scientific_replays':0,'other_agents_spawned':0,'model_override':None,
+ 'canonical_acceptance':None,'publication':None,'editable_prompt_files_changed':[],'physical_axioms_changed':[]})
+run=ROOT/'runs/exact_logical_check';receipt=json.loads((run/'EXECUTION.json').read_text())
+assert receipt['exit_code']==0
+for role in ['source','launcher','precheck','stdout','stderr']:
+ row=receipt[role];raw=Path(row['path']).read_bytes()
+ assert len(raw)==row['bytes'] and sha(raw)==row['sha256']
+assert (ROOT/'exact_logical_check.py').read_bytes()==(run/'SOURCE_AT_LAUNCH.py').read_bytes()
+assert (ROOT/'run_exact_check.py').read_bytes()==(run/'LAUNCHER_AT_LAUNCH.py').read_bytes()
+assert (ROOT/'PRECHECK_FINDINGS.md').read_bytes()==(run/'PRECHECK_AT_LAUNCH.md').read_bytes()
+assert (run/'stderr.txt').read_bytes()==b''
+assert json.loads((run/'stdout.txt').read_text())==json.loads((run/'output/RESULT.json').read_text())
+arrays=json.loads((run/'output/EXACT_MATRICES.json').read_text())
+for key,group in arrays.items():
+ dim=8 if key=='route' else 4
+ for matrix in group.values():assert len(matrix)==dim and all(len(row)==dim for row in matrix)
+labels=json.loads((run/'output/CHRONOLOGICAL_WORD_LABELS.json').read_text())
+assert {k:len(v) for k,v in labels.items()}=={'controlled_SU2_b0':14,'controlled_SU2_b1':14,'phase':10,'route':19}
+put('SEAL_VERIFICATION.json',{'kind':'metadata_only_source_and_actual_execution_binding_check','utc':datetime.now(timezone.utc).isoformat(),
+ 'captured_source_count':len(records),'new_proposal_freeze_members_verified':len(uniform['members']),
+ 'receipt':info(run/'EXECUTION.json'),'source_launcher_precheck_and_full_stream_bindings_verified':True,
+ 'stdout_equals_saved_result':True,'saved_matrix_shapes_and_label_counts_checked':True,
+ 'scientific_calculation_replayed_during_seal':False,'source_bodies_unchanged':True})
+with (ROOT/'SOURCE_COVERAGE.md').open('x') as f:
+ f.write('# Read coverage and evidence\n\nThe complete new proposal, its source manifest and freeze were read. The analytical reconstruction is in REVIEW.md. Necessary parent proof coverage is reused only at exact unchanged identities; SOURCE_MANIFEST.json records each case. A combined current reread truncated, so it is not counted as fresh complete coverage. The independently authored sibling mathematical body was not read or used; only its exposed-ancestor hash was checked. No new primary literature result is imported.\n\n')
+ f.write('The new exact checker source and launcher were read in full, and actual source/launcher/precheck-at-launch match. Full stdout and empty stderr were read. Saved exact matrices and chronological labels are retained; metadata checked their shape/count without rerunning the algebra. The actual calculation checks the named small matrix identities and two mutants, not the full physical compiler. Prior counterexamples and physical qualifications remain in the complete prior review. Same-model/shared-source and same-author parent exposure are explicit.\n')
+with (ROOT/'CHECKPOINT.md').open('x') as f:
+ f.write('# Final checkpoint\n\nQualified analytical support for the proposed uniform R(q), with a full reconstruction and an explicit separated fixed-q physical budget. Clarify generator error O(epsilon^5) versus cancellation-sensitive input requests O(epsilon^9). Retain the already adopted added-static-load correction, all control/readiness/clock premises, and no polynomial classical walltime claim.\n\n')
+ f.write('One new exact small check completed at exit 0: both 14-letter control polarities, ten-letter determinant phase and nineteen-letter adjacent logical route. Omitted scalar and return-route mutants fail with exact squared errors 8-4sqrt(2) and 8. Source, launcher, precheck, argv/cwd/limits, complete streams and exact matrices/labels are retained. No old science rerun occurred.\n\n')
+ f.write('The original proposal and all parents remain unchanged. Root acceptance/publication are pending; no retained audit or native supplier is claimed. This checkpoint precedes the final seal; FREEZE.json establishes successful sealing. No other directories, Git/canonical/audit/cache/graph/lock/prompt/axiom surface or other chats were changed.\n')
+members=[]
+for p in sorted(ROOT.rglob('*')):
+ assert not p.is_symlink(),p
+ if p.is_file():members.append(info(p))
+put('FREEZE.json',{'kind':'exposed_uniform_logical_word_review_freeze','frozen_utc':datetime.now(timezone.utc).isoformat(),
+ 'members':members,'member_count':len(members),'exact_excluded_root_paths':['FREEZE.json'],
+ 'proposal_sha256':'7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b',
+ 'disposition':'qualified analytical support with explicit physical/error/precision conditions',
+ 'source_exposed_same_model':True,'scientific_executions':1,'old_scientific_replays':0,
+ 'retained_audit':False,'root_acceptance':None,'publication':None})
+actual={str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file()}
+assert actual=={r['path'] for r in members}|{'FREEZE.json'}
+for row in members:
+ p=ROOT/row['path'];assert info(p)==row
+print(json.dumps({'freeze':info(ROOT/'FREEZE.json'),'review':info(ROOT/'REVIEW.md'),
+ 'manifest':info(ROOT/'SOURCE_MANIFEST.json'),'members_verified':len(members),
+ 'exact_inventory_verified':True,'scientific_executions':1,'old_scientific_replays':0},indent=2))

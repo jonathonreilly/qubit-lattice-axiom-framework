@@ -1,0 +1,24 @@
+{
+  "scope": "final metadata validation only; no science execution",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check/seal_packet.py"
+  ],
+  "child_argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check/runs/final_validation/source_and_launcher_at_launch.py",
+    "--validate"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check",
+  "source_and_launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check/runs/final_validation/source_and_launcher_at_launch.py",
+    "bytes": 5938,
+    "sha256": "12ef3b5cd1ddfed61c49c032da72ed606e7e436e0acc4cbc25f19c4281638fbd"
+  },
+  "cpu_limit_seconds": 30,
+  "wall_timeout_seconds": 45,
+  "started_utc": "2026-10-16T18:04:34.614689+00:00",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+}

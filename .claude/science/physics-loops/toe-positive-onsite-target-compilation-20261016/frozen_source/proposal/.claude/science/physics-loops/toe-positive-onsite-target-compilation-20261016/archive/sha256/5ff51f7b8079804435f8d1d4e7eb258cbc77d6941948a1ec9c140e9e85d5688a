@@ -1,0 +1,349 @@
+# An explicit positive recurrence for the complete 24-slot endpoint
+
+Status: one proposed computer-assisted recurrence certificate, from one
+successful fresh exact-arithmetic enclosure and powering execution. Separate
+analytical/code checking and root acceptance are pending. This author also
+authored the provisional endpoint-chart parent: this is source-exposed
+same-model continuation, not independent validation.
+
+## 1. Concrete outcome
+
+For the exact complete endpoint U0 of the parent's literal two-qubit,
+24-slot nominal pulse template, the selected positive integer is
+
+    n = 98611368294597721931914764889297593425141587534996842205.       (1)
+
+The original emitted exact comparisons establish, conditional on the
+enclosure argument and code being correct,
+
+    ||U0^n-I||_op < 1/10^13 < 25/924844032 = r/4,
+    r = 25/231211008.                                               (2)
+
+The full U(4) scalar is retained. No determinant normalization or projective
+comparison occurs. The radius r is the numerical threshold from the still
+provisional chart parent. The norm statement (2) concerns this actual
+endpoint independently of whether that parent's inverse-function argument
+is accepted; using it to establish a universal-duration interface also needs
+the chart result and its physical qualifications.
+
+The integer was proposed from high-precision eigenphases and one bounded
+lattice reduction, then checked by a direct matrix-power enclosure. The
+proof of (2) does not use the heuristic eigenvalues, their multiplicities,
+phase accuracy, lattice quality, or a floating residual. Only the integer
+in (1) crosses from selection into certification.
+
+The single science execution took 12.999407208058983 seconds, exited 0,
+and had empty stderr. It used a 240-second wall limit, with no separate
+CPU/RAM quota. There was no failed candidate, retry, precision adjustment,
+old selector replay or old enclosure replay. The displayed runtime is a
+classical instance calculation, emphatically not the physical recurrence
+duration 24n, and establishes no complexity theorem.
+
+## 2. Exact endpoint and source dependency
+
+In units hbar=1 and energy unit 1, the old generator is kept literally
+
+    K=2I+Z tensor Z=diag(3,1,1,3).
+
+In slot j=0,...,23, with local time s in [0,1], apply
+
+    H_j(s)=K+a_j psi(s)P_(j mod 4),
+    psi(s)=16s^2(1-s)^2,
+    P=(I+X1,I+Y1,I+X2,I+Y2),
+    a_j=[192+((73j+41) mod 128)]/512.
+
+All rays are positive of norm 2. No amplitude is varied in this recurrence
+task: U0 is the full nominal endpoint. There are no added quantum degrees
+of freedom. The eight inactive chart coordinates and its selected minor
+are irrelevant to this new endpoint computation; the exact nominal input
+file is reused only for the fixed amplitudes/channel order.
+
+The parent derivation is SHA256
+`b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef`,
+its freeze is
+`485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf`,
+and its complete certificate is
+`d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509`.
+The input-capture process verified all 45 parent freeze members, preserved
+the selected exact bodies and their original identities, and ran no parent
+science. Parent source and derivation had already been read/authored in full;
+their identities are refreshed rather than their result being revalidated.
+The parent still has s=1/252 and t=25/229376; neither is a numerical input
+to the new power calculation. All parent files remain unchanged.
+
+## 3. Fresh exact dyadic endpoint enclosure
+
+Set S=2^768 and N=320, with eight steps of length 1/8 in each slot. These
+choices were frozen before execution. A complex rectangle is represented
+by four integer endpoints divided by S, ordered
+(real_lo,real_hi,imag_lo,imag_hi). Addition is exact. Real interval products
+take minima/maxima of the four integer corner products; complex products
+enclose ac-bd and ad+bc, then divide outward by S. Division by positive d
+uses floor n//d and ceiling -((-n)//d). Multiplication by a signed Gaussian
+integer first swaps endpoints as required by the signs, with no rounding.
+All integer arithmetic uses arbitrary-precision Python integers.
+
+At step start x=k/8, the shifted quartic has exact coefficients
+
+    p0=16x^2(1-x)^2,
+    p1=32x(1-x)(1-2x),
+    p2=16-96x+96x^2,
+    p3=-32+64x, p4=16.
+
+Writing A(z)=-i[K+a psi(x+z)P], its coefficients are exact Gaussian
+rationals. The code selects their common positive denominator, stores
+sparse Gaussian-integer numerators, and uses the exact recurrence
+
+    U_0=I,
+    (m+1)U_(m+1)=sum_(k=0)^min(4,m) A_k U_(m-k).                    (3)
+
+Each sparse left product and sum is accumulated in integers before one
+outward division by denominator*(m+1). Thus induction encloses the exact
+Taylor coefficients, not approximations with empirically estimated error.
+Horner evaluation at 1/8 divides outward at each stage. Steps compose by
+left multiplication in chronological order, then all 24 slot endpoints
+compose in the same order. Associativity identifies the resulting exact
+truncated product Uhat with the ordered product of the 192 truncated steps.
+Arithmetic enclosures may overestimate dependencies but never identify
+independently varying rectangle entries with a smaller uncertainty set.
+
+The analytic tail is priced separately. The conservative polynomial
+
+    b(z)=7+32z+64z^2+128z^3+64z^4
+
+majorizes ||A_k||: ||K||=3, ||P||=2, a<1, and the shifted coefficient
+bounds are 1,8,16,32,16. This is looser than needed for the U-only problem
+but remains valid. The scalar solution f(z)=exp(integral_0^z b) has
+nonnegative coefficients and majorizes all matrix coefficient norms in
+(3). At R=1/4,
+
+    integral_0^R b=773/240<4,   f(R)<e^4<81.
+
+The elementary factorial-series bound e<3 suffices. At h=R/2, every
+omitted term past degree 320 gains at least 2^-321, so
+
+    ||U_step-P_320(h)|| <= delta=81/2^321.                         (4)
+
+The exact U-only segment propagators are unitary, including all scalar
+phases. Telescoping approximate prefixes against exact suffixes gives
+
+    E_m <= delta sum_(k=0)^(m-1)(1+E_k)
+         <=(1+delta)^m-1
+         <=m delta exp(m delta)<2m delta,        m<=192.
+
+Here m delta<1/2 and exp(1/2)<2. Consequently
+
+    ||Uhat-U0|| <= e0=384delta=31104/2^321.                         (5)
+
+The stored rectangle encloses Uhat itself; its rounding width is already
+present and is not absorbed into, or omitted from, e0. All 24 slot
+rectangles and the complete endpoint rectangle are retained. No entry from
+the old degree-80 endpoint enclosure was used in this fresh computation.
+
+## 4. Bounded selection of the single integer
+
+The heuristic midpoint matrix was passed to mpmath 1.3.0 at 110 decimal
+digits. Its four complete phase coordinates were alpha_j=arg(lambda_j)/(2pi).
+The code neither removed the determinant phase nor presumed a special-unitary
+spectrum. It formed one 5 by 5 integer lattice with first row
+
+    [1,round(10^70 alpha_1),...,round(10^70 alpha_4)]
+
+and four rows [0,10^70 e_j]. A deterministic LLL-style reduction used
+exact Fraction Gram–Schmidt coefficients, nearest-integer size reductions,
+the delta=3/4 Lovasz comparison, and a 10000-iteration cap. It completed in
+627 iterations with 342 swaps and 456 integer size reductions.
+
+There were exactly five eligible nonzero row-first-coordinates, all with
+absolute value <=10^80. The program selected the positive absolute value
+with smallest heuristic residual max_j |exp(2pi i n alpha_j)-1|. That
+selected value is (1). The complete input/reduced bases, eigenvalues,
+phases, all five candidate scores, precision and selection rule were
+written before the exact power test, in HEURISTIC_PROPOSAL.json.
+
+This bounded computation is only a proposal mechanism. No LLL theorem,
+certified eigenvalue solver or computed phase precision is a load-bearing
+premise. Incorrect heuristic phases or reduction quality could make the
+single final test fail; they cannot make its direct integer comparison
+valid for a wrong integer. The fresh Uhat rectangle is not mutated by
+the heuristic function; only the returned Python integer n enters the
+certification routine. No candidate other than (1) was powered/tested.
+
+## 5. Controlled powering of the exact endpoint
+
+The distinction between U0 and Uhat matters because n is large. From (5),
+||Uhat||<=1+e0. Noncommutative telescoping against unitary U0 gives
+
+    ||Uhat^n-U0^n||
+       <=e0 sum_(j=0)^(n-1)(1+e0)^j
+       <=n e0(1+e0)^(n-1)
+       <=2n e0=:eta,                                               (6)
+
+provided n e0<1/2. The code checks that condition for the actual integer.
+For this n, eta=62208n/2^321; it is far smaller than the recurrence margin.
+No claim that Uhat is unitary is used.
+
+Binary powering starts with result I and base Uhat. For every bit, it
+multiplies result by base if that bit is set and squares base for the next
+bit. At the exact-matrix level, result and base are known powers of the
+same Uhat; at the rectangle level, each multiplication encloses all allowed
+products. Reusing the same endpoint rectangle can widen intervals because
+correlations are ignored, but does not exclude the actual Uhat^n. All
+rounding is directed. The actual computation used 187 bits and 274 interval
+matrix multiplications. POWER_TRACE.json retains every step's result/base
+rectangles, used bit and remaining exponent, not just a final scalar claim.
+
+Let the computed residual rectangle enclose Uhat^n-I. For each entry, let
+b_R and b_I be the maximum absolute integer real and imaginary endpoints.
+Then the exact rational
+
+    D^2=sum_entries (b_R^2+b_I^2)/S^2                              (7)
+
+is a squared Frobenius upper bound and therefore a squared operator upper
+bound. With positive m=r/4-eta, the decisive exact test is D^2<m^2. The
+program also computes an integer ceiling of sqrt(sum(b_R^2+b_I^2)), giving
+a separate explicit rational bound D_upper+eta<r/4. Both tests succeeded.
+Finally the exact comparison against (10^-13-eta)^2 succeeded, yielding
+(2). All fractions and every residual interval remain in the output.
+
+This is a directed integer proof calculation conditional on the analytic
+argument and code, not a floating residual measurement. Python integer
+arithmetic, source integrity and runtime correctness are still trust
+assumptions; no formal proof-assistant or independently checked status is
+claimed. The same author constructed the method, program and explanation.
+
+## 6. Actual artifacts and launch
+
+The science source certify_recurrence.py is 12700 bytes, SHA256
+`c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771`.
+It and its inputs were frozen before execution in SCIENCE_SOURCE_FREEZE.json,
+SHA256 `73a1d91e7eaef7eb1cdb59f87c77aa065bb067f4620750675949ef69b47aab19`.
+The actually executed source copy, recorder, complete streams and receipt
+are in runs/recurrence_001/.
+
+    start: 2026-10-16T19:03:23.177860+00:00
+    end:   2026-10-16T19:03:36.177576+00:00
+    exit: 0; timeout: false; wall limit: 240 seconds
+    Python: 3.13.5; macOS-26.6.2-arm64-arm-64bit-Mach-O
+
+Original full stdout is 2922 bytes, SHA256
+`af35c2df94ee52ae5b9c564a47596c1b21e69b367eed69f587f8403eb7d5e30b`;
+stderr is empty. Actual argv/cwd and source/recorder identities are in the
+receipt, with no invented historical execution or limit.
+
+The complete original artifacts under recurrence_001_output/ are:
+
+| File | Bytes | SHA256 |
+|---|---:|---|
+| ENDPOINT_ENCLOSURE.json | 217372 | 454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de |
+| HEURISTIC_PROPOSAL.json | 6228 | 4429fa4361c376ed6bc159a120da54563abb325ee0bf0f9097c1a4e8baad4a61 |
+| POWER_TRACE.json | 5963253 | 2f848fc960ee957e3a97767b191f0fc732a5bff401a9d43d5aab25ea25d5055b |
+| RECURRENCE_CERTIFICATE.json | 32606 | 380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314 |
+
+All arrays have exact integer endpoints. The source/evidence manifest and
+read guide identify the complete selected closure. Post-run metadata checks
+only inspect stored values, hashes and exact elementary inequalities; they
+do not rerun endpoint integration, eigenphase selection or powering.
+
+## 7. What this supplies to the provisional chart
+
+Suppose the chart parent's full U(4) ball of radius r around U0 is accepted
+with its supplied-control assumptions. Apply its varied template F(a)
+first, then n-1 nominal U0 templates. The complete endpoint is
+
+    U0^(n-1) F(a),
+
+and its image contains the radius-r ball about U0^n. By (2), that image
+contains the radius-r/2 ball about I. The actual positive duration is
+24n, now with an explicit n rather than only an existential recurrence.
+
+This n is not claimed minimal or <=Q^4 for the parent's particular
+pigeonhole bound Q. It is much larger than that bound's scale. Thus this
+result replaces the need to discover a witness, not the existential cost
+bound by a better cost bound. A concrete witness can be worse than the
+best guaranteed witness. There is no efficiency or favorable-duration claim.
+
+For a conditional uniform-duration interface one may choose, explicitly,
+
+    M=floor(16/r)+1=147975046,
+    T*=24 M n,
+
+using pi<4 so M>4pi/r. The parent's unitary-root existence and rational
+parameter-search argument then applies at this fixed T*. Fix T* before
+forming an actual-time target W exp(-iT*K). This avoids a circular target
+dependence. No root, parameter word, arbitrary-target compilation, repeated
+physical pulse schedule or physical run was emitted here. The only newly
+executed scientific task was certification of (1)–(2).
+
+## 8. Full scalar, inputs, calibration and work
+
+The identity terms of K and every P are included in both the fresh endpoint
+and its power. A nominal template has scalar action
+
+    alpha0=48+(8/15)sum a_j=13027/240.
+
+The recurrence therefore retains alpha_rec=13027n/240 and its full phase
+exp(-i alpha_rec), together with the traceless endpoint. No isolated scalar
+is asserted to recur by itself; (2) concerns their complete product. In
+physical units multiply durations by hbar/E0 and keep K=E0(2I+ZZ), with
+control cap 2E0 and slew 16E0^2/hbar. Repetition preserves these caps and
+the zero-control, zero-first-derivative joins. Physical action, pulse count
+and elapsed duration grow with n.
+
+The ideal operator bound tensoring any passive reference remains (2).
+For every unknown old/reference state the final joint trace-norm error
+from identity is <2*10^-13. This retains all modeled quantum outputs:
+the two old qubits and arbitrary reference. External timing/waveform drive,
+isolation and apparatus outputs remain outside this supplied driven model.
+No recovery, erasure, autonomous halt or indefinitely repeatable controller
+is established by a finite endpoint recurrence.
+
+If the actual full Hamiltonian differs from the programmed one with
+integrated norm defect eta_drive over the actual interval 24n, Duhamel
+adds eta_drive to (2). Scalar defects count. Since a pulse's integrated
+amplitude derivative norm is c=16/15, uniform amplitude error delta_a
+over all 24n pulses contributes at most (128/5)n delta_a. Hence a fixed
+hardware error floor cannot simply be ignored because the ideal recurrence
+is explicit. Timing, shape and drift faults require their actual integrated
+bound and the stated laboratory endpoint. Actual endpoint controls must be
+zero for a same-baseline work comparison.
+
+With those endpoints, modeled net drive work is Tr K(rho_f-rho_i). Relative
+to the ideal input/final comparator, trace errors delta_i,delta_f cost at
+most width(K)(delta_i+delta_f)/2=delta_i+delta_f. For the ideal recurrence
+itself, (2) implies |W|<2*10^-13 in these units, although absolute modeled
+work variation can be as large as 72n by the parent's paid pulse-variation
+bound. Small net work is not small drive expenditure. Residual controls
+at either endpoint add their actual expectation terms (bounded by their
+norms); the microscopic drive's energy and outputs are not supplied here.
+
+## 9. Failed shortcuts and honest boundary
+
+The following routes were rejected analytically, not run as extra science:
+
+- Powering the parent's original degree-80 enclosure with its old error
+  allowance does not establish the required smallness after multiplication
+  by this n. That is why the endpoint was recomputed at N320/S768.
+- A small floating eigenphase residual alone is not a certificate for a
+  large n. Phase error can be amplified by n, and scalar removal changes
+  the comparator. Here direct interval powering replaces that inference.
+- Normalizing to determinant one can give a false full-phase recurrence:
+  for U=exp(i phi)I, such normalization removes the entire evolution while
+  ||U^n-I||=2|sin(n phi/2)| need not be small. The actual source performs
+  no such normalization.
+- Naively treating Uhat as exactly unitary would omit (6). The code prices
+  its norm growth and checks the actual amplification condition.
+- Choosing a favorable row after a failed rigorous power test would be a
+  second attempt. No such retry occurred; only one selected n was tested.
+
+No universal obstruction is inferred from any rejected shortcut. The new
+result closes only a finite mathematical witness-selection interface for
+this exact nominal endpoint, subject to separate checking.
+
+An initial read-only directory probe returned "not found" before this new
+directory was created. During writing, an unused one-line guard file was
+accidentally placed under a mistyped sibling run directory; it and the
+newly created empty directories were immediately removed before any
+execution. No preexisting file was touched. These were filesystem/metadata
+events, not failed scientific runs or hidden adjustments to the method.
+No parent, canonical, Git, PR, audit, prompt, axiom or lock files changed.

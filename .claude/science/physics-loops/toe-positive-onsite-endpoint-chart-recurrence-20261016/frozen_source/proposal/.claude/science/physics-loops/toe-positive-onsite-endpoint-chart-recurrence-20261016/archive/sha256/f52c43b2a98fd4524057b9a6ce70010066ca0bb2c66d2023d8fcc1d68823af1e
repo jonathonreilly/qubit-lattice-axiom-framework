@@ -1,0 +1,10 @@
+{
+  "status": "SEALED_SOURCE_AND_ACTUAL_RECEIPTS_CAPTURED",
+  "files": 51,
+  "metadata": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/CANDIDATE_EXPOSURE.json",
+    "bytes": 38653,
+    "sha256": "1941e520564e608dde94c811aa7e720af74f3a4926583391b6a27d60e7b3c8d3"
+  },
+  "science_executed_here": 0
+}

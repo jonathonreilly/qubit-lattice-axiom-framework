@@ -1,0 +1,18 @@
+{
+  "status": "REVIEW_METADATA_WRITTEN",
+  "coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/CODE_COVERAGE.json",
+    "bytes": 20808,
+    "sha256": "5425ab91a2780d1cad99ba9d0ae275b857a0fbb592d9970b8541af3800f7d7b3"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/RESULT.json",
+    "bytes": 4785,
+    "sha256": "e2c28379fd2d276860e4372d1c4e419376439cce5f4a8df8759b7686748ba7a3"
+  },
+  "candidate_function_count": 22,
+  "exact_prior_source_functions": 1,
+  "checker_function_count": 20,
+  "exact_prior_checker_functions": 17,
+  "scientific_execution": false
+}

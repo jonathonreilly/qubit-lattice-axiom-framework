@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+"""Final bounded identity validation; no author code or science is executed."""
+from pathlib import Path
+import hashlib,json
+OUT=Path(__file__).resolve().parent
+def verify(row):
+ p=Path(row['path']); b=p.read_bytes()
+ assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],str(p)
+ return b
+m=json.loads((OUT/'SOURCE_MANIFEST.json').read_text())
+for row in m['sources']:
+ original=verify(row['original']); capture=verify(row['capture'])
+ start,end=row['original_byte_interval_half_open']; assert capture==original[start:end],row['id']
+receipt=json.loads((OUT/'metadata_runs/source_capture/EXECUTION.json').read_text())
+assert receipt['exit_code']==0 and receipt['timed_out'] is False
+for key in ('source_at_launch','recorder_at_launch','stdout','stderr'):verify(receipt[key])
+assert (OUT/'capture_sources.py').read_bytes()==Path(receipt['source_at_launch']['path']).read_bytes()
+assert (OUT/'record_capture.py').read_bytes()==Path(receipt['recorder_at_launch']['path']).read_bytes()
+out=json.loads(Path(receipt['stdout']['path']).read_text());verify(out['manifest'])
+assert out['source_records']==16 and out['proposal_freeze_members_verified']==3
+assert m['author_evidence']['reviewer_scientific_executions']==0
+assert (OUT/'REVIEW.md').read_text().count('## ')==8
+assert (OUT/'PRE_FIXTURE_FINDINGS.md').is_file() and (OUT/'EXPOSURE.md').is_file()
+print(json.dumps({'status':'source and evidence identities matched','source_records_refreshed':16,
+ 'distinct_original_files':13,'capture_ranges_byte_matched':16,
+ 'proposal_freeze_members_previously_verified':3,'existing_author_science_runs':1,
+ 'reviewer_science_runs':0,'actual_reviewer_capture_receipts_verified':1,
+ 'interpretation':'Provenance checks only; not theorem, numerical-precision or physical realization certification.'},indent=2))

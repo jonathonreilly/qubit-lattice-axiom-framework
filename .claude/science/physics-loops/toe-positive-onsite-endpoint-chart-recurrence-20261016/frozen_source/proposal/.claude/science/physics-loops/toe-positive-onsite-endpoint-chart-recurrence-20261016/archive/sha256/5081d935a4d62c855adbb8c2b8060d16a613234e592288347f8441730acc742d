@@ -1,0 +1,297 @@
+# Analytic reconstruction and complete executable review
+
+## 1. Scope and exposure
+
+The full recurrence derivation, source and original evidence were read before the
+new arithmetic check. Its claimed integer and successful result were already
+known. I previously reviewed the parent endpoint chart with the same selected
+model. The present author is a separate checker from the recurrence author, but
+this is exposed same-model checking, not blind validation or diverse-model
+agreement. No root acceptance, formal audit, experimental status or native
+physical realization is inferred.
+
+The exact candidate identities are: derivation
+`5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a`,
+executed source
+`c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771`,
+certificate
+`380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314`,
+and final freeze
+`33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c`.
+The capture process verified all 42 final-freeze members, all five original
+receipt bundles, the prelaunch science freeze, the original input captures, and
+the complete prior-review freeze. All 48 candidate files, including the terminal
+freeze receipt supplement, are copied byte exactly. Only six selected prior
+review files are copied; the prior archive is not recursively duplicated.
+
+The reviewed parent has exactly the same nominal input and literal plant.
+Its Pauli normalization, positive controls, chart radius and physical caveats
+remain reusable. Its degree-80 numerical allowance is insufficient for this
+exponent. The fresh degree-320 tail, U-only global error, large-power propagation
+and all saved power transitions were therefore treated as new obligations.
+
+## 2. Literal plant, exact input and scalar
+
+The plant is K=diag(3,1,1,3)=2I+ZZ. The four control rays are
+I+X1, I+Y1, I+X2, I+Y2. Each is positive semidefinite of norm 2, and the
+complete generator remains positive because K has minimum eigenvalue 1.
+The 24 rational amplitudes and cyclic channels are checked against an exact
+input hash and their explicit arithmetic formula. No selected-minor or inverse
+entry determines this new endpoint. The input's historical degree-80 setting
+does not override the new source constants ORDER=320 and BITS=768.
+
+The real and imaginary signs in the literal Y matrix, tensor ordering and
+Gaussian matrix products are correct. `coefficients` constructs
+A(z)=-i[K+a psi(x+z)P], including K's diagonal and each ray's identity part.
+There is no trace subtraction, determinant normalization, SU(4) projection or
+scalar correction. `main` composes new segments on the left, preserving
+Schrodinger chronological order.
+
+The pulse psi(s)=16s^2(1-s)^2 is nonnegative, peaks at 1, and has zero value
+and first derivative at both ends. Repetition therefore preserves C1 joins
+and the stated supplied amplitude/slew caps. The current nominal amplitudes
+stay inside the earlier chart's permitted interval. No old load is removed
+and no physical quantum degrees of freedom are added.
+
+The exact scalar action per nominal template is
+48+(8/15)sum(a_j)=13027/240. Repetition carries this to 13027n/240.
+It is the complete product of this scalar and the traceless endpoint that
+recurs. The isolated scalar is not separately shown to recur. The independent
+check includes a minus-sign global phase control: multiplying the saved complete
+power by -1 makes its error from I exceed 1 after analytic padding. A projective
+gate could miss this distinction; the actual full matrix gate rejects it.
+
+## 3. Fresh local Taylor tail
+
+At x=k/8 the quartic expansion has coefficients
+
+    p0=16x^2(1-x)^2,
+    p1=32x(1-x)(1-2x),
+    p2=16-96x+96x^2,
+    p3=-32+64x,
+    p4=16.
+
+For x in [0,7/8], the bounds 1,8,16,32,16 follow already on [0,1]:
+x(1-x)<=1/4, |1-2x|<=1, p2=16-96x(1-x) lies in [-8,16], and the
+last two coefficients are immediate. With a<1 and ||P||=2, the U-only
+coefficient bounds are at most 5,16,32,64,32. The candidate deliberately
+retains the looser earlier majorant b(z)=7+32z+64z^2+128z^3+64z^4.
+Using an augmented-system bound here is conservative, not an invalid import.
+
+The exact coefficient identity is
+(m+1)U_(m+1)=sum_(k=0)^min(4,m) A_k U_(m-k), U_0=I.
+The scalar series f(z)=exp(integral_0^z b) has nonnegative coefficients and
+majorizes the matrix coefficient norms inductively. At R=1/4 its exponent
+is exactly 773/240<4, hence f(R)<e^4<81. The elementary factorial estimate
+e<3 suffices; no floating exponential bound is required.
+
+Since h=1/8=R/2, every omitted term beyond degree 320 contributes a factor
+at most 2^-321 relative to its value at R. Thus the operator tail per segment
+is bounded by delta=81/2^321. This is a bound for the exact truncated
+polynomial, separate from all arithmetic enclosure width. There is no missing
+factorial or geometric-tail multiplier: the positive tail sum at R is already
+at most the full f(R).
+
+`step_polynomial` implements exactly that recurrence. It accumulates Gaussian
+integer left products over a common positive denominator, then divides once
+outward by den*(m+1). Horner evaluation divides outward by 8 and adds the
+next coefficient. The initial identity, degree convention, 320 recurrence
+iterations, reversed Horner ordering, and final matrix dimension all agree
+with the proof. The source has no imported numeric ODE tolerance.
+
+No new Taylor segment was executed by this checker. All 960 A_k matrices
+were separately compared against a binomial expansion of the polynomial and
+independently constructed literal generators. That checks the source's time,
+amplitude, sign and matrix conventions for every actual step without replaying
+the recurrence.
+
+## 4. Endpoint product error and saved input correspondence
+
+Let the exact segment propagators be V_j and exact truncated segment matrices
+be P_j. Each V_j is unitary and ||P_j-V_j||<=delta. If E_m is the error after
+m segments, then either direct induction or telescoping with exact suffixes
+gives E_m<=(1+delta)^m-1. In particular,
+
+    E_m <= m delta exp(m delta) < 2m delta,  m<=192,
+
+because 192delta<1/2 and exp(1/2)<2. The complete truncated product Uhat
+therefore obeys ||Uhat-U0||<=e0=384delta=31104/2^321. This sharper U-only
+propagation legitimately uses unitary exact segments. It would not transfer
+unchanged to all derivative blocks of the parent calculation.
+
+The stored endpoint rectangle encloses Uhat, not U0. Analytic error e0 is
+added only in the later inequalities. Within each slot, all eight fresh segment
+polynomials are composed in time order. The 24 slot products then compose in
+time order; associativity identifies their exact value with the 192-factor
+truncated product used by the bound. The source neither reads the old endpoint
+rectangle nor substitutes a heuristic midpoint for the certified input.
+
+The independent Fraction calculation reconstructs the product from all 24 saved
+slot rectangles and confirms containment in the saved complete endpoint. It
+also checks that every real/imaginary component of the fresh endpoint, widened
+by e0, lies in the earlier chart endpoint widened by its 81/2^69 bound.
+These 32 component comparisons establish consistency for the same plant.
+They do not make the old coarse error valid for powering, or independently
+regenerate the fresh 192-step enclosure.
+
+## 5. Exact arithmetic primitives and powering
+
+Signed endpoint multiplication, four-corner real products, complex products,
+outward division and matrix addition all preserve inclusions. Python `//`
+floors negative numerators and -((-a)//b) ceilings them for positive b.
+`gaussian` swaps endpoints according to the multiplier sign and retains the
+minus sign in the real imaginary-product term. The source's 4 by 4 multiplication
+sums over the correct shared index. Tuple values are immutable; reassignment
+of result/base does not mutate earlier retained trace rows.
+
+The fresh arithmetic uses S=2^768. The separate check exercises 100 rectangle
+products, 70 positive divisions, 250 signed Gaussian multipliers and 50 signed
+real scalings on explicit boundary cases, including negative non-divisible
+integers. Expected intervals are computed using Fraction, not candidate fixed
+point arithmetic. These finite tests support the general source proof; their
+count alone is not a proof of all integer cases.
+
+The distinction between Uhat and U0 is essential. Since U0 is unitary,
+||Uhat||<=1+e0. The noncommutative telescoping identity gives
+
+    ||Uhat^n-U0^n|| <= e0 sum_(j=0)^(n-1)(1+e0)^j
+                    <= n e0 exp(n e0) <= 2n e0 = eta,
+
+when n e0<1/2. This uses neither normality nor unitarity of Uhat. For the
+actual n the check confirms eta<10^-35. Omitting this term would be wrong even
+though it is small here. With the parent's old 81/2^69 global error, the
+amplification hypothesis and target margin both fail decisively; that rejected
+shortcut was tested as a bound control, not run as another physical candidate.
+
+Binary powering starts at I and base Uhat. If the current low bit is set,
+the source multiplies base by result, then shifts the exponent and squares
+base if another bit remains. Algebraically all factors are powers of the same
+Uhat. Enclosing each occurrence by a fresh rectangular copy can overestimate
+dependencies but cannot exclude the actual correlated power. No exact
+commutation of arbitrary matrices in the interval boxes is assumed.
+
+The new Fraction check traverses the complete saved trace. For each selected
+product and square it computes an independent interval product from the
+previous saved inputs and checks inclusion in the next saved output. Unused
+result fields must be unchanged; bit positions, parity, remaining exponent and
+final null base are checked exactly. Local inclusion at every step is the
+induction needed to certify the final saved power from the initial rectangle.
+There are 187 bit rows, 88 selected products and 186 squares, totaling 274.
+This does recompute all saved power-operation enclosures independently; it
+does not run the candidate's power routine or repeat endpoint/heuristic work.
+The first selected result shifted by one real unit fails containment, as
+required by the corruption control.
+
+## 6. Final residual and strict inequalities
+
+The residual subtracts S from the real diagonal endpoints only. For every
+complex entry it uses both maximum absolute real and imaginary endpoints.
+Their squared sum divided by S^2 bounds the Frobenius norm squared, hence
+the operator norm squared. No factor of two, dimension four or square root
+is silently lost. The Fraction check reconstructs all 16 residual entries and
+the exact saved rational square D^2.
+
+The positive margin r/4-eta is checked before squaring. The exact inequality
+D^2<(r/4-eta)^2 therefore proves sqrt(D^2)+eta<r/4. The separately computed
+integer ceiling of sqrt(the integer numerator) gives a rational upper bound
+which is also below r/4 and below 10^-13. Finally the saved decimal selector
+is checked against all its 31 tested powers: its strongest reported one is
+10^-13. The complete analytic plus arithmetic bound, not the heuristic
+eigenphase score, is the basis of the recurrence claim.
+
+The radius r=25/231211008 is a supplied numerical threshold for this check.
+Whether the chart theorem is accepted does not alter the concrete norm claim
+relative to I. It does determine whether the chart-dependent construction in
+the next section can be used as a theorem.
+
+## 7. Selection, conditional timing and operational limits
+
+The mpmath eigenvalues, sorted phases, lattice quality, selected float score and
+LLL-style reduction are heuristic only. The full source was read: `propose_integer`
+constructs a new midpoint matrix without mutating the saved rectangle, writes
+its complete proposal, and returns one integer. Only that integer reaches the
+rigorous test. It retains all four phases. The exact Gram-Schmidt and bounded
+reduction routines need not satisfy a theorem of optimal lattice reduction for
+the subsequent matrix certificate to be sound.
+
+The original record reports 627 reduction iterations, 342 swaps and 456 integer
+reductions, with a 10000-iteration bound. Five eligible row integers and their
+scores were saved; one was chosen before any exact power test. The checked
+source performs no rigorous retry or post-failure adjustment. I did not replay
+the eigenphase or lattice calculation. Its claimed classical runtime is not
+a theorem about complexity or a physical resource budget.
+
+Conditional on the parent's radius-r ball around U0, applying F(a) first and
+n-1 nominal copies afterwards gives U0^(n-1)F(a). Left multiplication is an
+operator-norm isometry, so this image contains the radius-r ball about U0^n.
+Since ||U0^n-I||<r/4, it contains the radius-r/2 ball around I. The order
+cannot be casually reversed for varied F(a).
+
+M=floor(16/r)+1=147975046 exceeds 4pi/r using pi<4. A unitary logarithm
+of norm at most pi supplies M identical roots within r/4 of I; this is an
+existence argument. Dense rational parameter tuples and strict-margin endpoint
+enclosures give the parent's finite search for a computable supplied target
+and positive error. The present packet does not execute that search or select
+a logarithm branch. Fixing n and M first fixes T*=24Mn before forming the
+actual-time target W exp(-iT*K); this preserves the parent's comparator order
+and avoids duration-target circularity.
+
+The exact ledger gives recurrence duration 24n and conditional duration 24Mn.
+This n exceeds Q^4 for Q=591900181. It is therefore an explicit witness larger
+than the parent's existential bound, not an improvement of that cost bound.
+No minimality, favorable scaling or practical pulse-count assertion follows.
+Astronomical duration, huge calibrated action and unbounded classical target
+search costs remain explicit.
+
+The full operator bound survives tensoring any passive reference, and the
+unhalved joint trace norm is bounded by twice the operator error. Thus ideal
+recurrence gives less than 2*10^-13 for arbitrary old/reference input. This
+includes all quantum outputs in the stated two-qubit model; external timing,
+drive, isolation and apparatus outputs are not modeled as returned resources.
+
+For a full Hamiltonian defect with integrated operator norm eta_drive, Duhamel
+adds eta_drive to the operator bound. Scalar error counts. Uniform amplitude
+error delta_a over the 24n pulses has sufficient bound
+(16/15)(24n)delta_a=(128/5)n delta_a. This is a worst-case sufficient
+allocation, not a necessary lower bound for every structured error. Timing,
+shape, drift and spillover require actual integrated-error control over the
+actual interval. A fixed nonzero device error floor cannot be hidden by the
+ideal recurrence. There is no microscopic conservative controller, autonomous
+halt or indefinite-reuse result.
+
+At zero-control endpoints, net modeled work is Tr K(rho_f-rho_i). Shifting
+K by its midpoint 2I leaves an operator of norm 1; the difference has trace
+zero. Therefore the ideal trace bound gives |W|<2*10^-13. For initial/final
+comparator errors delta_i and delta_f, the correction is at most
+delta_i+delta_f, not merely a final-state error. Residual endpoint controls
+add their actual expectation terms or corresponding norm allowances.
+The inherited 72-per-template absolute control-variation bound gives 72n.
+It is an upper bound on absolute modeled work variation, not the actual net
+work and not the microscopic energy consumption of an omitted drive.
+
+## 8. Evidence, checks not performed and disposition
+
+The candidate science source was frozen before launch and exactly matches
+the captured executed source. Its argv points to that captured source; the
+original path is separately preserved, not reconstructed as if executed.
+The scientific receipt records 19:03:23.177860–19:03:36.177576 UTC,
+12.999407208058983 seconds, exit 0, no timeout, a 240-second wall limit,
+Python 3.13.5 and its platform. It imposes no separate CPU/RAM quota. All
+2922 stdout bytes and empty stderr are retained. The original four metadata
+executions also remain distinct. The candidate's disclosed absent-directory
+probe and corrected mistyped temporary path are preserved historical metadata
+events, not hidden failed science or authority to alter source boundaries.
+
+The one checker computation uses its own captured source and full streams:
+19:18:29.002657–19:18:37.575195 UTC, 8.572152290958911 seconds, exit 0,
+no timeout, 180-second wall limit, no separate CPU/RAM quota. It does not
+certify the language runtime or hardware, reconstruct every fresh Taylor
+coefficient, rerun the heuristic, or test a physical apparatus. Metadata
+validation and sealing are separately recorded packaging actions.
+
+No blocking error or required correction was found. The review supports the
+bounded conditional recurrence and its precisely conditional chart consequence,
+with the limitations above. It does not create root acceptance, canonical
+publication, retained status, or an audit verdict. No source proposal, canonical
+file, W, Git state, prompt, axiom or lock was modified. Editable prompt files
+changed: none.

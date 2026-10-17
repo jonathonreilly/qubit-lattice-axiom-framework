@@ -1,0 +1,38 @@
+"""Record root's separate completed Pauli realization review; metadata only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];D=N/'product_source_mediator_exposed_check/pauli_block_addendum';O=N/'product_source_mediator_pauli_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def rd(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256'])
+def put(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+assert not O.exists()
+assert pin(D/'FREEZE.json')['sha256']=='353d5c54b12d105c852b7abbe0960c5a85cebb83414890d929dbe6abcd3102f3'
+f=rd(D/'FREEZE.json');assert len(f['members'])==15
+for r in f['members']:same(D/r['path'],r)
+for r in rd(D/'SOURCE_MANIFEST.json')['sources']:same(r['original'],r);same(D/r['capture'],r)
+r=rd(D/'metadata/EXECUTION.json');assert r['exit_code']==0 and not r['timed_out'] and r['scientific_executions']==0
+assert r['argv'][1:]==['-B',str(D/'inspect_sources.py')] and r['cwd']==str(D) and r['started_at']<r['finished_at']
+assert pin(D/'inspect_sources.py')['sha256']==pin(D/'metadata/executed_source.py')['sha256']==r['source_sha256']
+assert pin(D/'metadata/launcher_source.py')['sha256']==r['launcher_sha256']
+assert (D/'metadata/stderr').read_bytes()==b''
+prior=N/'product_source_mediator_root_review/ACCEPTANCE.json';assert pin(prior)['sha256']=='9505e42b907fdb9031f42b02b4609965ef7980af536e9197c4864aba124119f5'
+text="""# Controlling root qualification for positive-Pauli realization
+
+Root accepts this separate conditional implementation identity after reading the complete new addendum and independently written review4335ef2a, plus the actual metadata source, receipt and complete streams. Original source acceptance9505e42b remains unchanged; this is additive and has no retroactive effect.
+
+The five positive Pauli blocks sum exactly to the previous Hc plus u/2 times identity. Hence full installed propagation differs by exp(-itu/2) on every old/source/reference state; the comparator includes this scalar, the source mean increases by u/2 and variance is unchanged. The previous corrector/gap and finite algorithm bounds apply exactly after this shift. Source incident load remains2j+u+2g: both hopping blocks and ZZ edge plus that site's own Z block and old/source port. Every simultaneous primitive remains a supplied physical permission.
+
+Two qualifications control the historical wording. The old model supplied the particular projector |11><11|, not an arbitrary-projector actuator. The new fixed Pauli list is an explicit alternative realization with the stated scalar and load, not a proved strict inclusion, resource improvement or ordering of actuator models. Also expanding jhat/2 or lambdahat/2 can need one additional dyadic grid bit. The p+1 output bound applies only to the named emitted jhat,ghat,lambdahat, not every expanded amplitude or matrix entry.
+
+The new source requires I-XX,I-YY,I+ZZ edge blocks and local I-Z directions. It does not reduce to the original four onsite rays or derive these controls from microscopic axioms. Preparation, installation, physical coefficient errors, internal timing, final halt/reset and indefinite reuse remain open. Constant-shift phase accounting is not a work-cost claim. The u=0 result remains a narrow failed proof route. All old/source/reference outputs and the independent product input premise remain.
+
+No scientific program was run for this identity or the product-source model. Its verification is analytical and source-exposed, using the same model; metadata captures add provenance only. No blind/model-independent or retained audit is claimed. Canonical/source-wrapper/staged review and publication remain separate. No physical axiom, editable prompt or model setting changed.
+"""
+O.mkdir();(O/'QUALIFICATION.md').write_text(text)
+v=dict(kind='root_product_source_pauli_addendum_acceptance',utc=datetime.now(timezone.utc).isoformat(),status='QUALIFIED_CONDITIONAL_ADDENDUM_ACCEPTED_PUBLICATION_PENDING',source=pin(N/'product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md'),review=pin(D/'REVIEW.md'),review_freeze=pin(D/'FREEZE.json'),metadata_execution=pin(D/'metadata/EXECUTION.json'),prior_acceptance=pin(prior),qualification=pin(O/'QUALIFICATION.md'),scientific_executions=0,source_exposed=True,blind_review=False,canonical_integration=None,publication=None,retained_audit=False,editable_prompt_files_changed=[])
+put(O/'ACCEPTANCE.json',v);put(O/'FREEZE.json',dict(files=[dict(pin(O/x),path=x) for x in ['QUALIFICATION.md','ACCEPTANCE.json']]))
+print(json.dumps(dict(acceptance=pin(O/'ACCEPTANCE.json'),qualification=pin(O/'QUALIFICATION.md'),freeze=pin(O/'FREEZE.json'),scientific_executions=0)))
+

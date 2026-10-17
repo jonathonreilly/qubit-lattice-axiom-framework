@@ -1,0 +1,127 @@
+{
+  "files": [
+    {
+      "bytes": 13896,
+      "path": "ADDENDUM_REVIEW.md",
+      "sha256": "1c6381a591322773e27917734af034aeec39bb48c82aed3ce377f673b8068ac2"
+    },
+    {
+      "bytes": 2331,
+      "path": "ORIGINAL_REVIEW_FREEZE.json",
+      "sha256": "42def22e10aa3e120a3bdf0ae4e2d7d8b8bc151f240543cfcb5ee82d18b34192"
+    },
+    {
+      "bytes": 1646,
+      "path": "README.md",
+      "sha256": "3165b30a923827030b0354849c4712679b8db751d9dc922ef784389f8e475257"
+    },
+    {
+      "bytes": 17330,
+      "path": "REVIEW.md",
+      "sha256": "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b"
+    },
+    {
+      "bytes": 3618,
+      "path": "SOURCE_MANIFEST_ADDENDA.json",
+      "sha256": "ec7a120f49dae33ebf0b95382e06d241a9dd489d322b9e58aab0d0ab1f9934d4"
+    },
+    {
+      "bytes": 1456,
+      "path": "SOURCE_MANIFEST_ORIGINAL.json",
+      "sha256": "05132aeee2095035e7ba4beab359c275ba34b95fcc08e1794b17e8ba9fc16379"
+    },
+    {
+      "bytes": 3441,
+      "path": "capture_metadata.py",
+      "sha256": "3b947c592ed852846ddeeb617b65b03b944bc468d6eb471a83c074c141f8126b"
+    },
+    {
+      "bytes": 4420,
+      "path": "inspect_addendum.py",
+      "sha256": "8e267370b4b904c0d274b3925c020e6ff95cdacd1a1055ec3d12e83c540dbb66"
+    },
+    {
+      "bytes": 2257,
+      "path": "inspect_original.py",
+      "sha256": "6f5f64cc31ad99d0beb9a3e063a016c7208cb87ee160f98be24160a97877062a"
+    },
+    {
+      "bytes": 2146,
+      "path": "runs/addendum_inspection/EXECUTION.json",
+      "sha256": "68504694f7291c1649f370aee55f1684ff23a6dda16bf5a385caf2a6bbf8f408"
+    },
+    {
+      "bytes": 4420,
+      "path": "runs/addendum_inspection/executed_source.py",
+      "sha256": "8e267370b4b904c0d274b3925c020e6ff95cdacd1a1055ec3d12e83c540dbb66"
+    },
+    {
+      "bytes": 3441,
+      "path": "runs/addendum_inspection/recorder_source.py",
+      "sha256": "3b947c592ed852846ddeeb617b65b03b944bc468d6eb471a83c074c141f8126b"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/addendum_inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3288,
+      "path": "runs/addendum_inspection/stdout",
+      "sha256": "2d7724544394797b01e4bdde165f2ae6a95085c5f3d38a3a6468b79fd7ab7ba1"
+    },
+    {
+      "bytes": 2146,
+      "path": "runs/original_inspection/EXECUTION.json",
+      "sha256": "bd055a6234c44783d5003b55606c0cbfb3547ec6bc45f2d074bde29c852cc7cc"
+    },
+    {
+      "bytes": 2257,
+      "path": "runs/original_inspection/executed_source.py",
+      "sha256": "6f5f64cc31ad99d0beb9a3e063a016c7208cb87ee160f98be24160a97877062a"
+    },
+    {
+      "bytes": 3441,
+      "path": "runs/original_inspection/recorder_source.py",
+      "sha256": "3b947c592ed852846ddeeb617b65b03b944bc468d6eb471a83c074c141f8126b"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/original_inspection/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1338,
+      "path": "runs/original_inspection/stdout",
+      "sha256": "55a60f4eb0515a6edaa8a247cc52f5ef48e86de3d800012866916ef811b8317a"
+    },
+    {
+      "bytes": 2959,
+      "path": "sources/DYADIC_ADDENDUM.md",
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"
+    },
+    {
+      "bytes": 5883,
+      "path": "sources/PROPOSAL.md",
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"
+    },
+    {
+      "bytes": 3405,
+      "path": "sources/SCALING_ADDENDUM.md",
+      "sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda"
+    },
+    {
+      "bytes": 416,
+      "path": "sources/SOURCE_FREEZE.json",
+      "sha256": "551fab5e4c1876dfff3d807ebf837a8c23f3d28724a554049faa8b6ab92d3f9c"
+    }
+  ],
+  "metadata_execution": {
+    "bytes": 2146,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/runs/addendum_inspection/EXECUTION.json",
+    "sha256": "68504694f7291c1649f370aee55f1684ff23a6dda16bf5a385caf2a6bbf8f408"
+  },
+  "scope": "original sealed reconstruction plus separately exposed addendum review",
+  "sealed_at": "2026-10-16T20:58:31.428046+00:00",
+  "status": "source-exposed analytical review; metadata evidence only; no root approval or retained verdict"
+}

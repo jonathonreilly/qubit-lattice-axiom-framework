@@ -1,0 +1,43 @@
+{
+  "kind": "root_original_proposal_sources",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_positive_complement_scope_screen/FREEZE.json",
+      "bytes": 23684,
+      "sha256": "dfb3495e8d9b25bdbf22a8bf7467d4ac99ad85b1585e44f95ea493c344266081"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_positive_complement_scope_screen/OPPORTUNITY.md",
+      "bytes": 11028,
+      "sha256": "1ee6fa6bd6cc537466de580676d56bf18353fb9dabc424d21a47ce8f6a093f8a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "bytes": 705,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "bytes": 397,
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c"
+    }
+  ],
+  "new_scientific_executions": 0,
+  "status": "proposed_unchecked",
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,144 @@
+{
+  "utc": "2026-10-16T19:34:27.011269+00:00",
+  "purpose": "Source-only candidate; parent science reused, not rerun.",
+  "source_exposure": "Same author/model as chart, recurrence and plan; no independent-validation claim.",
+  "members": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/PROPOSAL.md",
+      "copy": "sources/target_proposal.md",
+      "bytes": 15372,
+      "sha256": "9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f",
+      "coverage": "Complete proposed derivation reread; fixed attempt specification."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/CURRENT_STATUS.md",
+      "copy": "sources/target_proposal_status.md",
+      "bytes": 2510,
+      "sha256": "a8a9452cabe58e6aa54880c1a21e2fb1e8df4bb222631923400cd19bfa384f82",
+      "coverage": "Historical additive status; current root qualifications below control."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_proposal/FREEZE.json",
+      "copy": "sources/target_proposal_freeze.json",
+      "bytes": 6189,
+      "sha256": "c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3",
+      "coverage": "Metadata identity, not science replay."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_proposal/PROPOSED_LEMMAS.md",
+      "copy": "sources/chart_root_proposal.md",
+      "bytes": 11358,
+      "sha256": "3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169",
+      "coverage": "Complete argument already read; retained at same identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/DERIVATION.md",
+      "copy": "sources/chart_derivation.md",
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef",
+      "coverage": "Authored/read complete parent; source-exposed reuse, not fresh independent validation."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/FREEZE.json",
+      "copy": "sources/chart_freeze.json",
+      "bytes": 7500,
+      "sha256": "485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf",
+      "coverage": "Metadata identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/inputs/SELECTED_INPUT.json",
+      "copy": "inputs/SELECTED_INPUT.json",
+      "bytes": 6579,
+      "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80",
+      "coverage": "Complete exact nominal amplitudes, selected coordinates and rational inverse."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_certificate_candidate/enclosure_001_output/certificate.json",
+      "copy": "inputs/CHART_CERTIFICATE.json",
+      "bytes": 154227,
+      "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509",
+      "coverage": "Saved strengthened residual used; no Jacobian recomputation."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/ACCEPTANCE.json",
+      "copy": "sources/chart_acceptance.json",
+      "bytes": 6372,
+      "sha256": "112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7",
+      "coverage": "Root source qualification read in prior continuation."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "copy": "sources/chart_qualifications.md",
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86",
+      "coverage": "Complete controlling qualifications reread."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_root_review/FREEZE.json",
+      "copy": "sources/chart_review_freeze.json",
+      "bytes": 375,
+      "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223",
+      "coverage": "Metadata identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/DERIVATION.md",
+      "copy": "sources/recurrence_derivation.md",
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a",
+      "coverage": "Authored/read complete parent; relevant tail/power argument reread."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/certify_recurrence.py",
+      "copy": "sources/recurrence_program.py",
+      "bytes": 12700,
+      "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771",
+      "coverage": "Complete source reread; U-only interval routines adapted, not executed."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/FREEZE.json",
+      "copy": "sources/recurrence_freeze.json",
+      "bytes": 7086,
+      "sha256": "33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c",
+      "coverage": "Metadata identity."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/ENDPOINT_ENCLOSURE.json",
+      "copy": "inputs/NOMINAL_ENDPOINT.json",
+      "bytes": 217372,
+      "sha256": "454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de",
+      "coverage": "Saved N320/S768 endpoint and all slots; no nominal reintegration."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/recurrence_001_output/RECURRENCE_CERTIFICATE.json",
+      "copy": "inputs/RECURRENCE_CERTIFICATE.json",
+      "bytes": 32606,
+      "sha256": "380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314",
+      "coverage": "Saved full power and analytic error; no n-power rerun."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_root_review/ACCEPTANCE.json",
+      "copy": "sources/recurrence_acceptance.json",
+      "bytes": 6390,
+      "sha256": "36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e",
+      "coverage": "Complete root source qualification read before freeze."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "copy": "sources/recurrence_qualifications.md",
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55",
+      "coverage": "Complete controlling qualifications read before freeze."
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_root_review/FREEZE.json",
+      "copy": "sources/recurrence_review_freeze.json",
+      "bytes": 375,
+      "sha256": "7e4268b5f1a848dda65213917045427fc56b68732a71d1a18c6fb99118b63065",
+      "coverage": "Prefix supplied by root; full identity captured, plus exact members checked below."
+    }
+  ],
+  "canonical_binding": null,
+  "publication": null,
+  "new_scientific_runs_at_capture": 0,
+  "editable_prompt_files_changed": []
+}

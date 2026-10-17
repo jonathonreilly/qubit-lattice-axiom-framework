@@ -1,0 +1,169 @@
+{
+  "roots": [
+    {
+      "folder": "product_source_mediator_exposed_check",
+      "alias": "product_source_mediator_exposed_check/ORIGINAL_FREEZE.json",
+      "sha256": "97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116",
+      "members": 15,
+      "key": "members",
+      "complete_members": true,
+      "selected_members": [
+        "CHECKPOINT.md",
+        "REVIEW.md",
+        "SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json",
+        "inspect_sources.py",
+        "metadata/EXECUTION.json",
+        "metadata/executed_source.py",
+        "metadata/launcher_source.py",
+        "metadata/stderr",
+        "metadata/stdout",
+        "record_metadata.py",
+        "seal_original.py",
+        "sources/product_source_mediator_candidate/PROPOSAL.md",
+        "sources/weak_mediator_candidate/PROPOSAL.md",
+        "sources/weak_mediator_exposed_check/REVIEW.md"
+      ],
+      "member_aliases": {
+        "CHECKPOINT.md": "product_source_mediator_exposed_check/CHECKPOINT.md",
+        "REVIEW.md": "product_source_mediator_exposed_check/REVIEW.md",
+        "SOURCE_COVERAGE.md": "product_source_mediator_exposed_check/SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json": "product_source_mediator_exposed_check/SOURCE_MANIFEST.json",
+        "inspect_sources.py": "product_source_mediator_exposed_check/inspect_sources.py",
+        "metadata/EXECUTION.json": "product_source_mediator_exposed_check/metadata/EXECUTION.json",
+        "metadata/executed_source.py": "product_source_mediator_exposed_check/metadata/executed_source.py",
+        "metadata/launcher_source.py": "product_source_mediator_exposed_check/metadata/launcher_source.py",
+        "metadata/stderr": "product_source_mediator_exposed_check/metadata/stderr",
+        "metadata/stdout": "product_source_mediator_exposed_check/metadata/stdout",
+        "record_metadata.py": "product_source_mediator_exposed_check/record_metadata.py",
+        "seal_original.py": "product_source_mediator_exposed_check/seal_original.py",
+        "sources/product_source_mediator_candidate/PROPOSAL.md": "product_source_mediator_exposed_check/sources/product_source_mediator_candidate/PROPOSAL.md",
+        "sources/weak_mediator_candidate/PROPOSAL.md": "product_source_mediator_exposed_check/sources/weak_mediator_candidate/PROPOSAL.md",
+        "sources/weak_mediator_exposed_check/REVIEW.md": "product_source_mediator_exposed_check/sources/weak_mediator_exposed_check/REVIEW.md"
+      },
+      "all_original_members_verified_at_build": true
+    },
+    {
+      "folder": "product_source_mediator_exposed_check/finite_compiler_addendum",
+      "alias": "product_source_mediator_exposed_check/finite_compiler_addendum/FREEZE.json",
+      "sha256": "c0f663eb320fb96172ba94e7a4be221111a38ed4d285a0dde8b587084bdc22dc",
+      "members": 16,
+      "key": "members",
+      "complete_members": true,
+      "selected_members": [
+        "CHECKPOINT.md",
+        "REVIEW.md",
+        "SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json",
+        "inspect_sources.py",
+        "metadata/EXECUTION.json",
+        "metadata/executed_source.py",
+        "metadata/launcher_source.py",
+        "metadata/stderr",
+        "metadata/stdout",
+        "record_metadata.py",
+        "seal.py",
+        "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+        "sources/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+        "sources/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+        "sources/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md"
+      ],
+      "member_aliases": {
+        "CHECKPOINT.md": "product_source_mediator_exposed_check/finite_compiler_addendum/CHECKPOINT.md",
+        "REVIEW.md": "product_source_mediator_exposed_check/finite_compiler_addendum/REVIEW.md",
+        "SOURCE_COVERAGE.md": "product_source_mediator_exposed_check/finite_compiler_addendum/SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json": "product_source_mediator_exposed_check/finite_compiler_addendum/SOURCE_MANIFEST.json",
+        "inspect_sources.py": "product_source_mediator_exposed_check/finite_compiler_addendum/inspect_sources.py",
+        "metadata/EXECUTION.json": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/EXECUTION.json",
+        "metadata/executed_source.py": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/executed_source.py",
+        "metadata/launcher_source.py": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/launcher_source.py",
+        "metadata/stderr": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/stderr",
+        "metadata/stdout": "product_source_mediator_exposed_check/finite_compiler_addendum/metadata/stdout",
+        "record_metadata.py": "product_source_mediator_exposed_check/finite_compiler_addendum/record_metadata.py",
+        "seal.py": "product_source_mediator_exposed_check/finite_compiler_addendum/seal.py",
+        "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": "product_source_mediator_exposed_check/finite_compiler_addendum/sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+        "sources/weak_mediator_candidate/DYADIC_ADDENDUM.md": "product_source_mediator_exposed_check/finite_compiler_addendum/sources/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+        "sources/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": "product_source_mediator_exposed_check/finite_compiler_addendum/sources/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+        "sources/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md": "product_source_mediator_exposed_check/finite_compiler_addendum/sources/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md"
+      },
+      "all_original_members_verified_at_build": true
+    },
+    {
+      "folder": "product_source_mediator_root_review",
+      "alias": "product_source_mediator_root_review/FREEZE.json",
+      "sha256": "3a7e1e2b179e85f779c92a7720ee160f235ed398b9b6041a91e53f8ed7313495",
+      "members": 2,
+      "key": "files",
+      "complete_members": true,
+      "selected_members": [
+        "QUALIFICATION.md",
+        "ACCEPTANCE.json"
+      ],
+      "member_aliases": {
+        "QUALIFICATION.md": "product_source_mediator_root_review/QUALIFICATION.md",
+        "ACCEPTANCE.json": "product_source_mediator_root_review/ACCEPTANCE.json"
+      },
+      "all_original_members_verified_at_build": true
+    },
+    {
+      "folder": "product_source_mediator_exposed_check/pauli_block_addendum",
+      "alias": "product_source_mediator_exposed_check/pauli_block_addendum/FREEZE.json",
+      "sha256": "353d5c54b12d105c852b7abbe0960c5a85cebb83414890d929dbe6abcd3102f3",
+      "members": 15,
+      "key": "members",
+      "complete_members": true,
+      "selected_members": [
+        "REVIEW.md",
+        "SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json",
+        "inspect_sources.py",
+        "metadata/EXECUTION.json",
+        "metadata/executed_source.py",
+        "metadata/launcher_source.py",
+        "metadata/stderr",
+        "metadata/stdout",
+        "record_metadata.py",
+        "seal.py",
+        "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+        "sources/product_source_mediator_candidate/PROPOSAL.md",
+        "sources/product_source_mediator_exposed_check/REVIEW.md",
+        "sources/product_source_mediator_root_review/QUALIFICATION.md"
+      ],
+      "member_aliases": {
+        "REVIEW.md": "product_source_mediator_exposed_check/pauli_block_addendum/REVIEW.md",
+        "SOURCE_COVERAGE.md": "product_source_mediator_exposed_check/pauli_block_addendum/SOURCE_COVERAGE.md",
+        "SOURCE_MANIFEST.json": "product_source_mediator_exposed_check/pauli_block_addendum/SOURCE_MANIFEST.json",
+        "inspect_sources.py": "product_source_mediator_exposed_check/pauli_block_addendum/inspect_sources.py",
+        "metadata/EXECUTION.json": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+        "metadata/executed_source.py": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/executed_source.py",
+        "metadata/launcher_source.py": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/launcher_source.py",
+        "metadata/stderr": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/stderr",
+        "metadata/stdout": "product_source_mediator_exposed_check/pauli_block_addendum/metadata/stdout",
+        "record_metadata.py": "product_source_mediator_exposed_check/pauli_block_addendum/record_metadata.py",
+        "seal.py": "product_source_mediator_exposed_check/pauli_block_addendum/seal.py",
+        "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md": "product_source_mediator_exposed_check/pauli_block_addendum/sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+        "sources/product_source_mediator_candidate/PROPOSAL.md": "product_source_mediator_exposed_check/pauli_block_addendum/sources/product_source_mediator_candidate/PROPOSAL.md",
+        "sources/product_source_mediator_exposed_check/REVIEW.md": "product_source_mediator_exposed_check/pauli_block_addendum/sources/product_source_mediator_exposed_check/REVIEW.md",
+        "sources/product_source_mediator_root_review/QUALIFICATION.md": "product_source_mediator_exposed_check/pauli_block_addendum/sources/product_source_mediator_root_review/QUALIFICATION.md"
+      },
+      "all_original_members_verified_at_build": true
+    },
+    {
+      "folder": "product_source_mediator_pauli_root_review",
+      "alias": "product_source_mediator_pauli_root_review/FREEZE.json",
+      "sha256": "977899e86e3c11c516bb16c8afae406ddfb625208118ebd5ee6db39fa570ba48",
+      "members": 2,
+      "key": "files",
+      "complete_members": true,
+      "selected_members": [
+        "QUALIFICATION.md",
+        "ACCEPTANCE.json"
+      ],
+      "member_aliases": {
+        "QUALIFICATION.md": "product_source_mediator_pauli_root_review/QUALIFICATION.md",
+        "ACCEPTANCE.json": "product_source_mediator_pauli_root_review/ACCEPTANCE.json"
+      },
+      "all_original_members_verified_at_build": true
+    }
+  ]
+}

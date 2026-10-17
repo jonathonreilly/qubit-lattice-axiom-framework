@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-16T18:10:55.031206+00:00",
+  "argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal_source_at_launch.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check",
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal_review.py",
+    "bytes": 3865,
+    "sha256": "3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal_source_at_launch.py",
+    "bytes": 3865,
+    "sha256": "3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "process_exit": null,
+  "expected_process_exit": 0,
+  "scope": "Actual metadata seal launch; process completion is evidenced by the invoking tool, not self-certified",
+  "completed_metadata_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/EXECUTION.json",
+    "bytes": 2381,
+    "sha256": "5aba6a6d5e5ac796eabbd463c7156228e701ca00aba6b30b56f9230ba39206ca"
+  }
+}

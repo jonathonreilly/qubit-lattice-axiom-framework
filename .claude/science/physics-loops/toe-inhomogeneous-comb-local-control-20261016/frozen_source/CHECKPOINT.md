@@ -1,0 +1,7 @@
+# Current checkpoint
+
+Source-only packaging of qualified unequal-gap comb and uniform-word results. No canonical, Git, publication, audit, lock or prompt mutations are authorized. Original mathematical bodies and controlling qualifications will be embedded unchanged; comparison/direct-candidate material stays historical source evidence. Two historical scientific executions are to be preserved, not replayed. Parent sparse-compiler evidence includes its earlier pre-execution launcher failure.
+
+Read completely in this task: both root proofs, both current qualifications/decisions, full uniform exposed review, both scientific sources/launchers/prechecks/receipts/streams, and sparse controlling qualifications. Prior complete comb/comparison and parent readings are reused at pinned identities. The separate direct candidate is not accepted by either decision. New wrappers and metadata code await root review. Canonical source/base/PR bindings remain null.
+
+The proposal has been built with six unchanged complete bodies,288 source aliases and126 distinct archive objects. Build and both metadata inspections exited0; the first inspection's over-specific mutation name was corrected in inspection_02, with both source versions and all receipts retained. The current inspector alters an actual byte inside an original body. No scientific program was run. Final read guide, null delivery status and byte seal complete the source-only deliverable. Root still owns all substantive wrapper/code review and any integration decision.

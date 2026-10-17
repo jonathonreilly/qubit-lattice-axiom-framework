@@ -1,0 +1,89 @@
+"""Metadata-only pinned source capture. No scientific program is imported or run."""
+import argparse
+import datetime
+import hashlib
+import json
+from pathlib import Path
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", required=True)
+    parser.add_argument("--spec", required=True)
+    args = parser.parse_args()
+    root = Path(args.root).resolve()
+    spec_path = Path(args.spec).resolve()
+    spec_bytes = spec_path.read_bytes()
+    spec = json.loads(spec_bytes)
+    records = []
+    for item in spec["sources"]:
+        source = Path(item["source_path"])
+        data = source.read_bytes()
+        assert len(data) == item["bytes"], source
+        assert sha(data) == item["sha256"], source
+        relative = Path("sources") / item["sha256"] / source.name
+        target = root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if target.exists():
+            assert target.read_bytes() == data, target
+        else:
+            target.write_bytes(data)
+        assert source.read_bytes() == data, ("source changed while capturing", source)
+        assert target.read_bytes() == data, target
+        records.append({**item, "captured_path": str(relative)})
+
+    by_source = {entry["source_path"]: entry for entry in records}
+    canonical_entry = next(entry for entry in records if entry["source_path"].endswith(
+        "/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md"))
+    canonical = (root / canonical_entry["captured_path"]).read_bytes()
+    body_matches = []
+    for suffix in (
+        "/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+        "/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+    ):
+        entry = next(entry for path, entry in by_source.items() if path.endswith(suffix))
+        body = (root / entry["captured_path"]).read_bytes()
+        assert canonical.count(body) == 1, ("expected unique unchanged body", suffix)
+        offset = canonical.index(body)
+        body_matches.append({
+            "source_path": entry["source_path"],
+            "source_sha256": entry["sha256"],
+            "canonical_sha256": canonical_entry["sha256"],
+            "byte_start_inclusive": offset,
+            "byte_end_exclusive": offset + len(body),
+            "start_line_one_based": canonical[:offset].count(b"\n") + 1,
+            "unchanged_exact_bytes": True,
+        })
+    manifest = {
+        "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "evidence_kind": "metadata-only source identity capture",
+        "scientific_programs_executed": 0,
+        "source_spec_sha256": sha(spec_bytes),
+        "executed_metadata_source_sha256": sha(Path(__file__).read_bytes()),
+        "source_count": len(records),
+        "sources": records,
+        "canonical_unchanged_body_matches": body_matches,
+        "scope_limit": "Only these selected source bytes and body intervals are verified. "
+                       "Parent freeze identities are captured; no recursive validation of "
+                       "uncaptured members, scientific theorem, historical execution or "
+                       "publication binding is asserted.",
+    }
+    encoded = (json.dumps(manifest, indent=2) + "\n").encode()
+    (root / "SOURCE_MANIFEST.json").write_bytes(encoded)
+    result = {
+        "status": "selected source identities and two canonical body intervals verified",
+        "source_count": len(records),
+        "body_match_count": len(body_matches),
+        "manifest_sha256": sha(encoded),
+        "scientific_programs_executed": 0,
+    }
+    (spec_path.parent / "RESULT.json").write_text(json.dumps(result, indent=2) + "\n")
+    print(json.dumps(result, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,49 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "decision": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/REVIEW.json",
+    "bytes": 4068,
+    "sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c"
+  },
+  "review_text": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/REVIEW.md",
+    "bytes": 2808,
+    "sha256": "dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_chart_recurrence_qualified_publication_review/FREEZE.json",
+    "bytes": 516,
+    "sha256": "c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_publication_source_review/EXECUTION.json",
+    "bytes": 1780,
+    "sha256": "5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9"
+  },
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/FRESH_REFRESH.json",
+    "bytes": 1525,
+    "sha256": "b54a4bd4fba37c4232b12a1bb40f888b3e11a11b66acdbcd673bcfb6984089fb"
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ROOT_INTEGRATION_REVIEW.json",
+    "bytes": 5479,
+    "sha256": "c294939852114cc4c37e51098b648cdcd73e2092d49a0ceaf0df33e121ecf1fa"
+  },
+  "integration_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/endpoint_integration_source_review/EXECUTION.json",
+    "bytes": 1766,
+    "sha256": "7c677f50b53ddd1dff5ea2a03986addd724c6bfdffaae6d847ca3904373ac775"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 72553,
+    "sha256": "e9d70efe7dde9f4174ad46c75d025da3c0ca32c0cff3f1752787a5d4d0d5e150"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2876,
+    "sha256": "cffe03775c9c7767efe75e160bfe8604623074b796ec2a2249e6f11fc4928721"
+  }
+}

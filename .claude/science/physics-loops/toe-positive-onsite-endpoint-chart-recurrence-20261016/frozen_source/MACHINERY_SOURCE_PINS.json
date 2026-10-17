@@ -1,0 +1,39 @@
+{
+  "baseline_freeze_sha256": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3",
+  "files": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/build_packet.py",
+      "copy": "machinery_reference/build_packet.py",
+      "bytes": 6917,
+      "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/primary_template.py",
+      "copy": "machinery_reference/primary_template.py",
+      "bytes": 10891,
+      "sha256": "2d93d4a4ecd8c31f307aa3b7c46328d552fae8611db06c635c36bb504c8e1ec2"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/inspect_packet.py",
+      "copy": "machinery_reference/inspect_packet.py",
+      "bytes": 6013,
+      "sha256": "28d59dc27cd993217597a8e8ec09b83f4ed463e5e35040b7497e3c13b8732ffb"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/record_metadata.py",
+      "copy": "machinery_reference/record_metadata.py",
+      "bytes": 4150,
+      "sha256": "36245c149b62e5e0c845621572e6e6cc30890414afd67b7a41748233e801f74f"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/seal_packet.py",
+      "copy": "machinery_reference/seal_packet.py",
+      "bytes": 3137,
+      "sha256": "f3acc51a10374774096a65613259b87807461d14ee19bd5bb60eb8aec19933ee"
+    }
+  ],
+  "current_local_origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instructions": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "fresh_network_fetch_performed": false,
+  "scope": "Read-only local authority snapshot; live integration freshness remains root-owned."
+}

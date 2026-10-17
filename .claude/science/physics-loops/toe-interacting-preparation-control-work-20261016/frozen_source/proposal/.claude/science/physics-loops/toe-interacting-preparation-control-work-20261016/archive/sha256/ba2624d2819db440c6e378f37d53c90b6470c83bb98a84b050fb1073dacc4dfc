@@ -1,0 +1,283 @@
+# Proposed preparation chronology for the interacting positive-complement bridge
+
+Status: **proposed conditional extension requiring separate review**. This is a source-exposed analytical composition of the qualified interacting ramp bridge with the already qualified driven sine preparation. It is not a retained result, a new finite-lift core theorem, a microscopic supplier or a publication decision. The positive complement actuators, branch hardware, independent vacuum, phase reference and external scheduling remain supplied physical premises.
+
+The proposed route prepares every private battery **before switching on either old complementary field**. During preparation the old generator may be interacting and need not commute with old excitation number. Its exact factorization follows from isolation between old and new registers, not from a noninteracting formula for the old generator. The bridge then compiles the ordered target that removes this actual preparation age. At the final switch-off endpoint all old, battery, synthesis-ancilla and reference registers remain in the comparison. Batteries are compared with their sine packets, not with their initial vacuum.
+
+## 1. Exact premises and output contract
+
+Let S contain q>=1 old qubits and let R be an arbitrary passive reference. Retain the literal supplied finite computable positive operator
+
+    K = E_base I + sum_X h_X >= 0.
+
+The old interaction supports and their incident loads are part of the supplied data. For every old term supply the actual positive complementary actuator
+
+    C_X = c_X I_X - h_X >= 0,  c_X >= ||h_X||,
+    C = sum_X C_X = kappa I - K,
+    kappa = E_base + sum_X c_X.
+
+Thus kappa>=lambda_max(K)>=0. Every identity reserve counts. A k-body old term still requires its k-body complement on that actual support. No reduction to two-body or bounded-degree old access follows from this identity. The old line and private branches of the qualified comb, including the old-line diagonal CZ and actual full within-branch SWAP permissions, are additional supplied geometry/control access. The old interaction graph can have additional edges. The union must satisfy any requested degree or incident cap; the construction does not prove that it does.
+
+Choose a supplied common gap Delta>0. At each old site i attach a private battery B_i of M=L+2 qubits and a terminal synthesis ancilla a_i. Write B for all qM battery qubits, a for the q ancillas, and A=B a. Put
+
+    N_S=sum_old n_j,  N_B=sum_battery n_j,  N_a=sum_ancilla n_j,
+    N_A=N_B+N_a,  N=N_S+N_A,  H_*=Delta N_S,
+    F0=K+Delta N_A.
+
+F0 is the same actual free generator at the start, at the preparation release endpoint, and after the final old switch-off. Its resource/ancilla terms are installed throughout. Initially there are no uncontrolled S/A or interbranch interactions beyond the declared F0; imperfections require an explicit full-generator error allowance. Literal K keeps coefficient one at every time.
+
+The exact initial isometry is J0 psi=psi_SR tensor 0_B tensor 0_a. Arbitrary rho_SR is allowed, including arbitrary old/reference entanglement. A joint initial trace mismatch epsilon_0 may replace this exact product input; marginal vacuum promises alone do not suffice. Independent vacuum and isolation are supplied, not prepared by this protocol.
+
+In each branch define p_m=1^m 0^(M-m) and
+
+    b_l=sqrt(2/(L+1)) sin(pi l/(L+1)),  1<=l<=L,
+    beta_i=sum_l b_l p_l,  beta_B=tensor_i beta_i.
+
+Let J_beta adjoin beta_B and vacuum a. For a supplied computable V in U(2^q), the target at the declared final time is the full isometry gamma J_beta V. The scalar gamma is reported below; it is not fitted away. Density comparisons are to J_beta V rho_SR V* J_beta*. There is no promise of a common scalar for coherently superposed different programs. The actual output need not be a product and no resource or ancilla is traced out in this contract.
+
+## 2. Actual preparation before the old switch
+
+During 0<=t<=tau_p all C_X and H_* drives are zero. The actual nominal generator is
+
+    F_p(t)=K+Delta(N_B+N_a)+H_p(t).
+
+The preparation controls act only on B. On each branch use the q=1 specialization of the qualified preparation: one flip, then L-1 controlled rotations, all on its battery path. The integrated positive generators are
+
+    Q_flip=2pi I+(pi/2)Y,
+    Q_i=n_i(2pi I+theta_i Y_(i+1)),
+    w_i=sum_(l=i)^L b_l^2,
+    theta_i=arccos(b_i/sqrt(w_i)),  1<=i<L.
+
+The usual prefix induction leaves stopped amplitude b_i and continuing amplitude sqrt(w_(i+1)); it gives beta_i on all declared vacuum inputs. L=1 has only the flip. Both local reserve exponentials are exactly identity on the complete local space, exp(-i2pi I)=exp(-i2pi n)=I. They remain positive Hamiltonian loads and work contributions during the pulse. The full battery circuit P_B is an actual unitary on all physical states, not just its prefix restriction.
+
+Prepare branches sequentially with G_p=qL rotation slots. Choose Q_*=6pi and one fixed slot duration
+
+    h_p >= max(4 hbar Q_*/g,
+               sqrt(8pi hbar Q_*/sigma), 4pi Delta/sigma).
+
+Use f_h(s)=(1-cos(2pi s/h))/h on [0,h], zero outside. All carriers use one protocol clock whose origin is the admission of the unknown state. A slot beginning at t_j on branch i has the laboratory control
+
+    hbar f_(h_p)(t-t_j)
+       exp(-it Delta N_(B_i)/hbar) Q exp(+it Delta N_(B_i)/hbar).       (1)
+
+The carrier time is t, not t-t_j or the elapsed time since starting that branch. The latter would change the prepared relative phases. Already prepared branches age freely while later branches are prepared.
+
+Fix tau_p=(G_p+1)h_p before selecting the last slot. Set x_p=Delta tau_p/hbar. Choose a rational r_p with |r_p-x_p/(2pi)|<=1/4, let k_p=floor(r_p)+2, and choose
+
+    lambda_p=2pi k_p-x_p,  3pi/2<lambda_p<=9pi/2.
+
+In the final slot simultaneously drive hbar f_(h_p) lambda_p n_j on every BATTERY site. This layer is battery-only; ancillas remain in vacuum. All envelopes and their first derivatives vanish at the preparation release time.
+
+Here is the factorization for interacting K, without using [K,N_S]=0. For all times [K,H_p(t)]=[K,N_A]=0 because the supports are disjoint. The exact interaction picture of K+Delta N_A therefore gives the time-independent local generators Q in (1). If P_B denotes their ordered circuit, the full-space preparation propagator is exactly
+
+    U_p = exp(-i tau_p K/hbar) tensor
+          [exp(-i(x_p+lambda_p)N_B) P_B] tensor
+          exp(-i x_p N_a)
+        = E_p tensor P_B tensor exp(-i x_p N_a),
+    E_p=exp(-i tau_p K/hbar).                            (2)
+
+Only the final equality uses integer spectrum of N_B. On the specified input domain,
+
+    U_p J0 = J_beta E_p.                                (3)
+
+This derivation admits noncommuting terms within K. It does not admit unpriced couplings to B or a. The full-space ancilla phase in (2) is not silently replaced by identity: it vanishes on the stipulated vacuum and must be retained for an occupied-input extension. K's complete scalar is in E_p. There is no additional preparation scalar, since the actual positive reserve exponentials equal identity exactly.
+
+## 3. Switching and plateau chronology
+
+Immediately after (3), with no unmodeled waiting interval, start the qualified old on-ramp of duration r_on. Its interpolation u(s)=3s^2-2s^3, s in [0,1], produces the nominal old generator
+
+    (1-u)K+u(kappa I+Delta N_S).
+
+The complement drives and added old number field are held on for the plateau, then switched off by the specified forward off-ramp of duration r_off. The old time-ordered propagators are R_on and R_off. Neither is presumed to be an inverse of the other. In general the old ramp Hamiltonians at different times do not commute:
+
+    [H_old(t),H_old(t')]=(u(t')-u(t))[K,Delta N_S].
+
+Let alpha=Delta r_on/hbar and beta=Delta r_off/hbar. The full ramps are
+
+    U_on=R_on tensor exp(-i alpha N_A),
+    U_off=R_off tensor exp(-i beta N_A).
+
+Choose the qualified target-independent bound R(q), padded gate count
+
+    Gbar=R(q)(1+131328 L^4),  tau=h(Gbar+1),
+
+and the qualified fixed runtime slot h before target-dependent gate angles. Runtime controls have the accepted positive conserving generators. They commute with N on the entire physical space; their word-dependent action outside complete charge blocks is retained. The final simultaneous phase slot covers EVERY old, battery and ancilla site. Its coefficient is
+
+    lambda_b=2pi k_b-Delta(tau+r_on+r_off)/hbar,
+
+with k_b selected by the same rational-enclosure rule and lambda_b in (3pi/2,9pi/2]. The complete preparation duration is NOT included a second time: equation (3) has already released the real packets at its endpoint.
+
+Let C_P be the actual conserving semantic word, with its certified physical approximation treated separately. The nominal plateau has
+
+    U_plateau=gamma exp(-i phi N) C_P,
+    phi=Delta tau/hbar+lambda_b=2pi k_b-alpha-beta,
+    gamma=exp[-i(kappa tau/hbar+Phi)].                    (4)
+
+Phi is the actual emitted positive-pulse reserve sum from the qualified compiler, including all circuit/global-phase conventions. In its accepted notation Phi=(pi/4)N_sqrt+sum_actual_Z |phi_j|. Full SWAP and CZ have unit endpoint reserve phase but their physical reserves still count in all loads and work. A compiler that supplies an additional scalar certificate must multiply that scalar into gamma; it may not be dropped.
+
+Define
+
+    L_b=R_off exp(+i beta N_S),
+    R_b=exp(+i alpha N_S) R_on.
+
+The qualified full-space bridge identity, reconstructed by transferring only total-N phases through C_P, is
+
+    U_off U_plateau U_on
+       =gamma (L_b tensor I_A) C_P (R_b tensor I_A).     (5)
+
+Combining (3) and (5), the correct logical target to compile is
+
+    A_target=L_b* V E_p* R_b*
+      =exp(-i beta N_S) R_off* V exp(+i tau_p K/hbar)
+                           R_on* exp(-i alpha N_S).      (6)
+
+Indeed L_b A_target R_b E_p=V, with precisely the displayed order. The unknown old input first ages by E_p, then encounters R_on. There is no interchange of E_p with R_on, R_off, N_S or V. Suppressing or commuting the preparation factor would change the target for generic interacting K. Reversing an on-ramp profile would not repair that error.
+
+The complete nominal laboratory duration is
+
+    T=tau_p+r_on+tau+r_off.                             (7)
+
+At T all added controls vanish and F0 is restored. A later storage time s is compared with exp(-isF0/hbar) gamma J_beta V. In particular the old output then ages under K and the packets under their installed number fields. The packets are not frozen after release, and no autonomous clock, halt or repeated-use conclusion is asserted.
+
+## 4. Full output and correlated inputs
+
+For the nominal ready-input comb, d_L=2 sin(pi/[2(L+1)]) gives the complete packet isometry error 2q d_L, independent of ideal logical word length. Applying it to the old input R_b E_p psi and multiplying by L_b proves
+
+    ||U_off U_plateau U_on U_p J0 - gamma J_beta V||
+       <=2q d_L+eta_program+eta_compile                 (8)
+
+with the qualified compiler's complete-input, clean-ancilla estimates. All finite nominal emitted pulses are used; no actual correlated synthesis ancilla is reset between gates. Equation (8) tensor-extends to any R and hence bounds arbitrary mixed correlated rho_SR by purification. The actual word's off-code action remains its actual product, not a newly chosen identity extension.
+
+Let eta_p be a vector-norm bound for preparation implementation on the same complete domain, eta_b the integrated bridge implementation error, and eta_t a separately allocated post-off timing error. An initial joint trace error epsilon_0 gives
+
+    epsilon_out <= epsilon_0+2eta_p+4q d_L
+             +2(eta_program+eta_compile+eta_b+eta_t).    (9)
+
+A preparation supplied directly with a complete trace error epsilon_release may replace epsilon_0+2eta_p. The actual imperfect output of preparation is propagated through the actual subsequent channel; (9) does not reinsert a pure packet at the interface. Pure-vector readiness and joint trace readiness are not conflated.
+
+One sufficient allocation for 0<epsilon<=1 is epsilon_0<=epsilon/8, eta_p<=epsilon/16, 4pi q/(L+1)<=epsilon/4, and each of eta_program, eta_compile, eta_b, eta_t<=epsilon/16. It gives epsilon_out<=epsilon. L can be selected by a rational upper enclosure with slack, avoiding an exact computable-real ceiling. This allocation is illustrative, not an optimized constant.
+
+## 5. Finite offline choice order and precision
+
+First fix all physical data, computable enclosures/norm bounds, gaps, the declared graph, available caps, profiles, ramp durations and slot durations. Next choose L and all error/moment allowances. Then tau_p, alpha, beta, Gbar and tau are fixed, independent of target angles. Compute the preparation sine angles and lambda_p; enclose E_p and the two time-ordered old ramps; form the true computable unitary (6); and perform the qualified strict-margin finite search for a word within R(q). Compile its branch gates within the padded Gbar, retain its actual Phi and select lambda_b. Finish all classical work before admitting the unknown state. If a guard or actual wait is added, its chronology, old propagator, time and phase coefficients must be recomputed.
+
+R(q) applies to every U(2^q) target, including the generally entangling (6). It is not justified to append only q onsite inverse-aging phases for interacting K. The uniform matrix-input theorem, rather than the noninteracting fixed-word preparation shortcut, is the needed parent here. Its finite-grid search assumes computable entry enclosures and a genuine unitary promise. It has no polynomial classical-time, memory or oracle-cost guarantee. Exact-zero/Euler-branch decisions are not assumed.
+
+For the old ramps one may use the parent's norm-enclosed Dyson series for the polynomial profile. For E_p use an enclosed matrix exponential. An old-data approximation obeys the Duhamel request
+
+    ||delta E_p|| <= (tau_p/hbar)||delta K||
+                 +||K|| |delta(tau_p/hbar)|
+                 +the corresponding product allowances.            (10)
+
+This is numerical target-assembly error and belongs in eta_program. It is not permission to ignore physical old/complement mismatches held throughout the plateau. Those contribute to eta_b through the actual integrated full-generator discrepancy.
+
+The nominal preparation uses its exact computable angles. Finite angle approximations and physical deviations are charged in eta_p, rather than silently redefining its exact release state. The preparation can use
+
+    eta_p <= sum_rotation |delta theta_j|
+                      +qM |delta lambda_p|+eta_p,other,              (11)
+
+where reserve errors, carriers, envelopes, undesired couplings and timing not separately priced are in eta_p,other. Alternatively use the single complete integral hbar^(-1) integral||F_actual-F_nominal||. These are alternative decompositions, not independent copies to add twice. Small norm error does not establish actual positivity, support, strength or slew.
+
+For fixed q,K,Delta and supplied control constants, L=O(epsilon^-1), tau_p=O(epsilon^-1), m=q(L+4)=O(epsilon^-1), and tau=O(epsilon^-4). The added preparation and fixed ramps therefore preserve the parent's nominal laboratory-duration exponent O(epsilon^-4). Constants can be large and depend on the supplied data. No classical complexity conclusion follows.
+
+Sufficient preparation angle/generator and final lambda_p tolerances are O(epsilon^2). For a carrier phase error delta_phi(t), a rotation contributes at most theta sup|delta_phi(t)|, because ||[N_B,Q]||=theta<=pi/2. Summing O(epsilon^-1) rotations permits an O(epsilon^2) phase allowance; an initial phase plus frequency error accumulated over tau_p gives a sufficient frequency request O(epsilon^3). Computing lambda_p amplifies Delta and pi input errors by tau_p and k_p=O(epsilon^-1), giving sufficient O(epsilon^3) cancellation-input requests. All hbar, timing and product errors still require their allocated terms. Resolving small sine tails remains necessary and costs no promised polynomial arithmetic time. Equation (10) allows a separate O(epsilon^2) numerical old-K request for fixed data; the bridge's physical accuracy request can be stronger.
+
+Keep the qualified bridge distinctions: a global static residual held for O(epsilon^-4) time needs O(epsilon^5) norm accuracy for an O(epsilon) vector allowance; dividing among O(epsilon^-1) new fields gives a sufficient O(epsilon^6) per-field request. Its final phase-generator allowance O(epsilon^5) is distinct from sufficient cancellation-sensitive Delta/pi input tolerances O(epsilon^9). Preparing first adds shorter exposure, but all preparation and bridge budgets must still sum as in (9). The same parameter error cannot spend each allocation independently. The reported scalar gamma also needs its own certified phase allowance, including (tau/hbar)|delta kappa|+|kappa||delta(tau/hbar)|+|delta Phi| and product terms, if a numerical scalar is asserted instead of its exact computable expression. Equations (8)-(9) use the exact computable gamma. Replacing it by a numerical gamma_hat adds |gamma_hat-gamma| to the vector budget, or must consume a separately reserved part of an existing allocation; it is not a free extra allowance.
+
+After every control is off, eta_t<=||F0|| |delta t|/hbar, with ||F0||<=||K||+Delta q(L+3). A sufficient fixed-parameter timing tolerance is O(epsilon^2). Sampling during a pulse or moving the ramp/slot boundaries requires a full schedule-discrepancy bound, not this free-aging estimate. Storage preserves an existing trace error when both states use the same actual F0; a persistent field discrepancy over storage is paid again.
+
+## 6. Positivity, incident loads and modeled slew
+
+During preparation K>=0 and Delta N_A>=0 are retained. Every laboratory control (1) is positive by unitary conjugation of its positive Q. Its carrier derivative is essential:
+
+    ||H_p||<=2hbar Q_*/h_p<=g/2,
+    ||dot H_p||<=2pi hbar Q_*/h_p^2+pi Delta/h_p<=sigma/2.             (12)
+
+Only one rotation support is active at a time. The parallel final battery phase has incident norm <=g/2 and derivative <=sigma/4 at each site; its full norm grows with qM. All controls and their first derivatives are zero at both ends of each slot. No hard bandwidth assertion follows from a first-derivative cap.
+
+For c(v)=sum_(X containing v)||C_X||, a safe nominal added static-plus-driven incident bound throughout the combined protocol is
+
+    J_added <= max_v c(v)+Delta+g/2.                    (13)
+
+The full incident load additionally includes the stated old decomposition and scalar assignment. A separate preparation and runtime g can be replaced by their maximum in (13). The old ramp derivative at v is at most 3[c(v)+Delta]/(2r). Fixed sufficiently long r_on,r_off meet a prescribed positive slew budget, with margins selected before scheduling. This cannot lower the amplitude in (13). Actual pointwise positivity/support/incident/slew certificates are independent requirements; an error-integral certificate is not a substitute.
+
+The complete full-space norm during preparation is bounded by
+
+    ||K||+Delta q(M+1)+qM g/2,                          (14)
+
+where the last term safely covers its simultaneous final phase. Use actual smaller serial bounds when appropriate. During the bridge a safe bound adds sum_X||C_X||+qDelta and the actual global pulse norm. No old noninteracting norm formula E0+(q+M)Delta is imported for K. All idle synthesis ancillas remain in full-space norms and energy widths even though their ideal occupation is zero.
+
+## 7. Original F0 energy, moments and complete work
+
+Set
+
+    mu_B=q Delta (L+1)/2,
+    Var_beta(Delta N_B)<=q Delta^2 (L-1)^2/4,
+    W_B=qM Delta,  W_A=q(M+1)Delta.
+
+The variance sum uses the ideal product of branch packets. During exact preparation the old distribution of K is unchanged, since its factor is E_p. At release the old state is rho_p=E_p rho E_p*, with rho the original old marginal, and the new state is beta_B tensor vacuum_a. Thus exact preparation has net prescribed-drive work mu_B, initial new energy zero, and zero old/new covariance at that ideal release endpoint. This does not assert zero covariance for arbitrary actual errors.
+
+Let rho_a=R_on rho_p R_on* be the old marginal just before the plateau, rho_b its actual nominal marginal just after the plateau, and rho_f=R_off rho_b R_off* its final marginal. The nominal ramps act only on S and phase A; the plateau conserves N exactly, including its finite compiled pulses. Therefore, with no discarded ancilla contribution,
+
+    <Delta N_A>_f=mu_B-Tr[H_*(rho_b-rho_a)].             (15)
+
+Since controls vanish at initial and final endpoints, the complete same-endpoint work is
+
+    W_total=<F0>_f-<F0>_0
+      =mu_B+Tr[K(rho_f-rho)]-Tr[H_*(rho_b-rho_a)].       (16)
+
+Here Tr K rho_p=Tr K rho has been used; no commutation of K with N_S has been used. This identity includes preparation, both old ramps, the plateau, all reserves and every resource/ancilla. It is generally neither zero nor merely mu_B plus the old target energy change.
+
+For rho_V=V rho V*, put rho_b,V=R_off* rho_V R_off and define the target work functional
+
+    W_V=mu_B+Tr[K(rho_V-rho)]
+                    -Tr[H_*(rho_b,V-rho_a)].            (17)
+
+If e_int is the nominal full-isometry error in (8), then exact nominal turn-off and number conservation give
+
+    |W_total-W_V| <= (width(K)+qDelta)e_int.             (18)
+
+To see the constant directly, center K-R_off H_* R_off* against rho_f-rho_V; its width is at most width(K)+qDelta, and the marginal trace distance is at most 2e_int. Also |W_V-mu_B|<=width(K)+qDelta. The nonzero resource transfer term is important even when the resource trace distance tends to zero. Its dimension and energy width grow as L grows.
+
+Equation (18) has the same restricted nominal scope as its qualified parent. Replacing e_int with the entire physical/readiness budget in (9) would be unjustified. A generic safe work comparison to the nominal same-input protocol is
+
+    |W_actual-W_nominal|
+       <=[width(K)+W_A](delta_f+delta_0)/2,              (19)
+
+provided the actual and nominal initial/final observables really are the same F0. Here delta_0,delta_f are their complete endpoint trace distances. Nonvanishing endpoint controls or a different physical baseline require their actual endpoint observable errors. A more favorable charge-structured fault estimate is a separate obligation, not inferred from small trace distance.
+
+At preparation release, a full trace error epsilon_release gives resource mean and raw second-moment errors <=W_A epsilon_release/2 and W_A^2 epsilon_release/2. A safe variance allowance is 3W_A^2 epsilon_release. Battery-only observables can use W_B, but full resources include a. For a full positive F0 interval [0,Fmax], Fmax=||K||+W_A, the corresponding jth-moment allowance is Fmax^j epsilon_trace/2; retain actual covariance. The ideal final product comparator has Var(F0)=Var_(rho_V)(K)+Var_beta(Delta N_B), but (9) alone does not make the actual moments uniformly close as L grows.
+
+Additional release-only mean/second-moment/variance tolerances u1,u2,uvar can be paid by choosing
+
+    epsilon_release<=min(e_release,
+               2u1/W_A, 2u2/W_A^2, uvar/(3W_A^2)).      (20)
+
+This refines the preparation/readiness precision; it does not remove the intrinsic runtime resource transfer in (15) or supply arbitrary runtime target-moment accuracy. If the chosen L or schedule is changed, tau_p, E_p, target (6), both cancellation coefficients and all dependent tolerances must be recomputed. Simply tightening a nominal amplitude tolerance while keeping an incompatible old target is not a composition proof.
+
+For prescribed-drive absolute work, the preparation contributes at most
+
+    g(G_p+qM)+(pi/2)Delta G_p.
+
+The pair of monotone ramps adds at most 2(sum_X||C_X||+qDelta). Add the accepted plateau's actual full pulse-variation sum, including simultaneous all-site phase and scalar reserves. These bounds follow from integral||dot H_drive|| and do not assert constant control expectation. The combined bound is O(epsilon^-4) at fixed parameters. Net work (16) and absolute work are distinct. No microscopic driver state, battery-return-to-vacuum promise, work-fluctuation law or measured laboratory-energy identification is derived.
+
+## 8. A decisive exact chronology discriminator, without a runner
+
+The single new finite discriminator here is analytical. Take two branches, L=2, hence beta_i=(p_1+p_2)/sqrt(2). Let the second branch begin at t0 after the first branch's rotation slots. If every carrier in that branch is incorrectly reset to its local time t-t0, then in the correct global interaction picture each of its generators is conjugated by exp(+it0 Delta N_(B_2)/hbar). The entire incorrect circuit is therefore
+
+    P_bad=exp(+it0 Delta N_(B_2)/hbar) P
+                                      exp(-it0 Delta N_(B_2)/hbar).
+
+After the stated complete-duration final battery phase, its vacuum output is exp(+it0 Delta N_(B_2)/hbar) beta_2. Choose Delta t0/hbar=pi modulo 2pi. The result is (-p_1+p_2)/sqrt(2), exactly orthogonal to beta_2. This is compatible with arbitrarily large allowed slots: t0=2h_p and h_p=(2k+1)pi hbar/(2Delta), with k large enough to meet every lower bound. Thus correct positive pulse areas and a complete-duration phase layer do not repair a reset carrier clock.
+
+This witness concerns only the intentionally wrong chronology. The proposed schedule (1) uses the global clock and avoids it. It does not establish a broader obstruction to other calibrated schedules. No numerical or symbolic scientific process was needed or run. Historical parent calculations are not replayed and are not counted as new evidence.
+
+## 9. Scope and open obligations
+
+Under the stated control/isolation/vacuum premises, equations (2)-(6) propose a complete preparation-to-switch-off interface for an interacting K. The extra preparation permission is number-changing, phase-locked onsite Y and adjacent nY control on the new batteries. Old complement access, old number-field switching, full branch SWAP, old-line CZ, simultaneous local phase correction and a calibrated external timer are retained premises. No addition to a native physical axiom is made.
+
+The changed point is the actual chronological composition and its original-F0 work ledger. The preparation itself, finite lift, sparse branch compiler, uniform logical-word bound and ready-input ramp bridge are reused only within their controlling qualifications. Their imported synthesis theorem is not re-proved, and this note is not a new independent verification of those parents. An earlier noninteracting onsite inverse-aging shortcut is explicitly not used.
+
+This note does not cover preparation overlapping an old ramp by pretending its old propagator is E_p. Such a route would need its actual time-ordered old propagator; it is not ruled out. Unlisted old/new couplings, unavailable complement supports, missing independent vacuum or rotating quadratures are unresolved physical interfaces. The resource output is a packet with possible residual correlation, not a vacuum reset. Moment accuracy beyond the explicit growing-width allowances, an autonomous release mechanism, microscopic driver accounting and indefinite reuse remain open. A separate root/independent mathematical check is required before acceptance.
+
+No editable prompt, axiom, canonical file, worktree, Git state, publication, audit state or lock was changed. Exact source identity, coverage and actual metadata-only verification are recorded separately.

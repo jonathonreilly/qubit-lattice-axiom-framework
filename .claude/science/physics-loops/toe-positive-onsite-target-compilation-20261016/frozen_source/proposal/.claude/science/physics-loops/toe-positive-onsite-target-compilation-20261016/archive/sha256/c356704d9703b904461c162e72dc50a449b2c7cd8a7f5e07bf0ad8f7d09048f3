@@ -1,0 +1,185 @@
+{
+  "created_utc": "2026-10-16T19:25:44.947750+00:00",
+  "kind": "source-only proposed target compilation specification; no target science executed",
+  "current_status": "Chart root-qualified; recurrence/new target construction pending.",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1156,
+      "sha256": "8598151f5ce0610a6a82332d9789ee689f4fc196cc19025307c90bb212d26a0e"
+    },
+    {
+      "path": "CURRENT_SOURCE_MANIFEST.json",
+      "bytes": 3147,
+      "sha256": "9fef4c23bd764f87a3df822c2ee7f4725792f397d670a7accb8c27be1321d671"
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "bytes": 2510,
+      "sha256": "a8a9452cabe58e6aa54880c1a21e2fb1e8df4bb222631923400cd19bfa384f82"
+    },
+    {
+      "path": "PROPOSAL.md",
+      "bytes": 15372,
+      "sha256": "9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f"
+    },
+    {
+      "path": "READ_GUIDE.md",
+      "bytes": 1707,
+      "sha256": "405c6a1b85e30fa0a963bb5905819439bf5d473cd5a1862030727500522632d8"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 11251,
+      "sha256": "c81e6097ae6afd03703b2eb643b82477325991369ac679f0002bb399d94d464b"
+    },
+    {
+      "path": "capture_current_status.py",
+      "bytes": 2139,
+      "sha256": "c8b9f5b65e36b4157161dc78a2d659ee987fce28ea05a26bf7bf60ee9e3c569f"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 4046,
+      "sha256": "6dd025a892a76173c091e5821d6983283826564872eb96b63e056638249b95c0"
+    },
+    {
+      "path": "final_seal.py",
+      "bytes": 2177,
+      "sha256": "209db5a843d04a195e984ff4867f006e0c3deb06d2d5dc47c6c89b2d95563935"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 846,
+      "sha256": "f3a37f127114b8d53be6272b23d7dec9e983b3b7a1208324dfcf1a69c2d9d770"
+    },
+    {
+      "path": "qualified_chart_sources/ACCEPTANCE.json",
+      "bytes": 6372,
+      "sha256": "112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7"
+    },
+    {
+      "path": "qualified_chart_sources/FINAL_QUALIFICATIONS.md",
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "path": "qualified_chart_sources/FREEZE.json",
+      "bytes": 375,
+      "sha256": "d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223"
+    },
+    {
+      "path": "record.py",
+      "bytes": 1603,
+      "sha256": "0c99759cf4a921de62d3ed8c799f48e5a8cdbe2713e60023148baadc2f709e3f"
+    },
+    {
+      "path": "runs/current_status_capture/EXECUTION.json",
+      "bytes": 2425,
+      "sha256": "73a27fe672d47c9c25c0fac200faae27f001d7d13aeee755a8b4fc1054ec5bf3"
+    },
+    {
+      "path": "runs/current_status_capture/recorder_at_launch.py",
+      "bytes": 1603,
+      "sha256": "0c99759cf4a921de62d3ed8c799f48e5a8cdbe2713e60023148baadc2f709e3f"
+    },
+    {
+      "path": "runs/current_status_capture/source_at_launch.py",
+      "bytes": 2139,
+      "sha256": "c8b9f5b65e36b4157161dc78a2d659ee987fce28ea05a26bf7bf60ee9e3c569f"
+    },
+    {
+      "path": "runs/current_status_capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/current_status_capture/stdout",
+      "bytes": 2517,
+      "sha256": "9a3e2e70cc50d054285917be5f43b1e044ef49bfa350ede5e102101d7070564b"
+    },
+    {
+      "path": "runs/source_capture/EXECUTION.json",
+      "bytes": 2377,
+      "sha256": "1adadde0f959a56b2878f53cc20a57580aa807f51657195231ce1a3b89d8f233"
+    },
+    {
+      "path": "runs/source_capture/recorder_at_launch.py",
+      "bytes": 1603,
+      "sha256": "0c99759cf4a921de62d3ed8c799f48e5a8cdbe2713e60023148baadc2f709e3f"
+    },
+    {
+      "path": "runs/source_capture/source_at_launch.py",
+      "bytes": 4046,
+      "sha256": "6dd025a892a76173c091e5821d6983283826564872eb96b63e056638249b95c0"
+    },
+    {
+      "path": "runs/source_capture/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/source_capture/stdout",
+      "bytes": 1853,
+      "sha256": "12c188b027b77cbb12f6057f260013ca5a8deeeb3ed76948e59b39c643472029"
+    },
+    {
+      "path": "sources/CHART_CERTIFICATE.json",
+      "bytes": 154227,
+      "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+    },
+    {
+      "path": "sources/CHART_DERIVATION.md",
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "path": "sources/CHART_FREEZE.json",
+      "bytes": 7500,
+      "sha256": "485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf"
+    },
+    {
+      "path": "sources/RECURRENCE_CERTIFICATE.json",
+      "bytes": 32606,
+      "sha256": "380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314"
+    },
+    {
+      "path": "sources/RECURRENCE_DERIVATION.md",
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    },
+    {
+      "path": "sources/RECURRENCE_ENDPOINT.json",
+      "bytes": 217372,
+      "sha256": "454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de"
+    },
+    {
+      "path": "sources/RECURRENCE_FREEZE.json",
+      "bytes": 7086,
+      "sha256": "33f7d3b47e70451af22e3d8058b92b948833ecee4e25f30f746be794d24e1e9c"
+    },
+    {
+      "path": "sources/RECURRENCE_RESOURCE_LEDGER.json",
+      "bytes": 1297,
+      "sha256": "622601a418686bde94cad74e4c9bc3a116a72f4af3b9fec7869bbd52f3791df0"
+    },
+    {
+      "path": "sources/ROOT_FREEZE.json",
+      "bytes": 412,
+      "sha256": "f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd"
+    },
+    {
+      "path": "sources/ROOT_PROPOSAL.md",
+      "bytes": 11358,
+      "sha256": "3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169"
+    },
+    {
+      "path": "sources/SELECTED_INPUT.json",
+      "bytes": 6579,
+      "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+    }
+  ],
+  "self_hash_excluded": true,
+  "terminal_recorder_excluded": "runs/final_freeze",
+  "metadata_identity_checks": "Both actual source-capture receipts and initial/current source maps verified; no science run."
+}

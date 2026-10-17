@@ -1,0 +1,25 @@
+# Read guide and recovery checkpoint
+
+1. RESULT.md and RESULT.json give the actual single-run outcome and limits.
+2. DERIVATION.md is the complete pre-execution analytic/code argument.
+3. PRELAUNCH.md, PRELAUNCH_FREEZE.json, ROOT_GO.md and
+   PRELAUNCH_VERIFICATION.json establish the source/authorization chronology.
+4. compile_target.py is byte-identical to runs/target_001/source_at_launch.py.
+   runs/target_001/LAUNCH.json and EXECUTION.json record actual execution;
+   stdout and stderr are full original streams.
+5. target_001_output/TARGET_ENCLOSURES.json includes exact phase reductions
+   and all analytic exponential tails. Y_COORDINATES.json and ITERATION_00
+   through ITERATION_31 contain every padded coordinate and actual iterate.
+   ENDPOINT_01 through ENDPOINT_32 contain each new full endpoint and24 slots.
+6. SCHEDULE.json is the emitted exact positive-time word; TARGET_CERTIFICATE.json
+   and FINAL_POWER_TRACE.json are its full residual/powering evidence.
+   RESOURCE_LEDGER.json separates physical duration/fault/work budgets.
+7. SOURCE_MANIFEST.json maps bounded exact mathematical inputs and current
+   parent qualifications. OUTPUT_MANIFEST.json maps actual new evidence.
+   FREEZE.json seals this packet, excluding only itself and the still-running
+   terminal metadata receipt, whose actual files remain in runs/final_freeze.
+
+Open obligation: separate analytical/code/evidence check and root disposition.
+The author wrote the chart, recurrence and plan parents; no blind or independent
+validation claim applies. No further scientific attempt is authorized here.
+No automatic retry or broader compiler/physical-supplier conclusion is licensed.

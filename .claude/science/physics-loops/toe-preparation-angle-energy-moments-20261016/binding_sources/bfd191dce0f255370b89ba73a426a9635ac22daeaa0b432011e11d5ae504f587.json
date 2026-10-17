@@ -1,0 +1,27 @@
+{
+  "observed_commit": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/04bf801dfb399b181e42c00cfb97d7785e497736d5ed652a3e682e187f9a147a.json",
+      "bytes": 1665,
+      "sha256": "04bf801dfb399b181e42c00cfb97d7785e497736d5ed652a3e682e187f9a147a"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e.py",
+      "bytes": 61464,
+      "sha256": "243618e0a54b9c0b74c92a615423123814bcc2988281b93b2f9e5d909d9d193e"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/f73e5d1296834362a2c432c0f77922e6d33adc187360f19f5fafaa6c78df547b.blob",
+      "bytes": 41,
+      "sha256": "f73e5d1296834362a2c432c0f77922e6d33adc187360f19f5fafaa6c78df547b"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

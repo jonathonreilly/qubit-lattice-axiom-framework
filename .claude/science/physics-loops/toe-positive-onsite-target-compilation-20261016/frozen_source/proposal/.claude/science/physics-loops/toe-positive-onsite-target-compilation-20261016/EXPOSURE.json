@@ -1,0 +1,15 @@
+{
+  "source_exposed": true,
+  "same_selected_model": true,
+  "blind_independence": false,
+  "second_ODE_implementation": false,
+  "new_scientific_executions": 0,
+  "historical_scientific_replays": 0,
+  "historical_author_target_commands": 1,
+  "historical_separate_saved_evidence_checks": 1,
+  "author_elapsed_seconds": 461.2228046669625,
+  "checker_elapsed_seconds": 10.38794649997726,
+  "checker_recomputed_local_ODE_slots": false,
+  "new_scientific_attempts": 0,
+  "retained_audit": false
+}

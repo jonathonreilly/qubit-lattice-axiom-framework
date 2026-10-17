@@ -1,0 +1,18 @@
+{
+  "T_decimal": "350208522228384946904887108861751911074590975328100424043350794320",
+  "window": 24,
+  "requested_isometry_error_power": 44,
+  "atan_terms": 32,
+  "atan_denominators": [5, 239, 7],
+  "integer_bit_ceiling": 65536,
+  "W_identity_real_numerator": 9,
+  "W_identity_imag_numerator": 12,
+  "W_XX_real_numerator": -16,
+  "W_XX_imag_numerator": 12,
+  "W_common_denominator": 25,
+  "phase_atom_real_numerator": 3,
+  "phase_atom_imag_numerator": 4,
+  "phase_atom_denominator": 5,
+  "parent_derivation_sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad",
+  "parent_freeze_sha256": "0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2"
+}

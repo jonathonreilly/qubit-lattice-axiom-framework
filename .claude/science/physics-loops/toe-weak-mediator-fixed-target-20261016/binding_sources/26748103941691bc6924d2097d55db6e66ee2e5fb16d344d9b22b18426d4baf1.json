@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T21:39:16.288590+00:00",
+  "baseRefName": "physics-loop/toe-positive-onsite-target-compilation-20261016",
+  "headRefName": "physics-loop/toe-commuting-static-edge-fixed-target-20261016",
+  "headRefOid": "cd646f075af86b54a8c5b948ee82e5e6f0f39066",
+  "isDraft": false,
+  "number": 9654,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9654",
+  "tree": "53a8032c67f576bb3ba61e2eac0b78337155b5c4",
+  "base_head": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 78243,
+    "sha256": "6788f1d4bec485917038b7aa275b5a1659bacb1e39992034d4a7d287738414fd"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/commuting_static_edge_fixed_target_2026_10_16.py",
+    "bytes": 93764,
+    "sha256": "8a31b225852e341229d70b125bc9ac6a48e58d74664735ede4e7883aed67d97d"
+  },
+  "body": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/commuting_static_edge/PR_BODY.md",
+    "bytes": 1817,
+    "sha256": "75794b9cecf06b8bbd8c72a4ffef8c619ee2151ee4ea8c9d0268f881b75fef60"
+  },
+  "science_merged": false,
+  "main_pushed": false,
+  "audit_applied": false,
+  "editable_prompt_files_changed": [],
+  "attachment_status": "Root must immediately call attach_artifact with this created PR URL."
+}

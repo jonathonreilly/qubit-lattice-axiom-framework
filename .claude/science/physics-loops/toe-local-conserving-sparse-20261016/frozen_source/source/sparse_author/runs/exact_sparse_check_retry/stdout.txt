@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "complex_SU2_commutator": true,
+    "controlled_xy_bit_0": true,
+    "controlled_xy_bit_1": true,
+    "forward_sqrt_inverse_seven": true,
+    "forward_sqrt_order_eight": true,
+    "givens_reconstructs_complex_target": true,
+    "omitted_inverse_mutant_detected": true,
+    "one_residual_phase": true,
+    "paper_F_unitarity": true,
+    "paper_control_generator_all_angles": true,
+    "phase_pairs_conserve_total_number": true,
+    "prefix_equal_weight_and_distance": true,
+    "prefix_support_count": true,
+    "shared_phase_partner_clean_ancilla": true,
+    "six_givens_determinant_one": true,
+    "split_control_pattern_10": true,
+    "variable_xy_generator_conjugation": true,
+    "wrong_S_adjoint_mutant_detected": true
+  },
+  "computed_evidence": {
+    "Givens_count_d4": 6,
+    "omitted_inverse_mutant_frobenius_squared": "32/5",
+    "prefix_case": {
+      "L": 1,
+      "M": 5,
+      "maximum_pair_hamming_distance": 4,
+      "q": 2,
+      "sectors": 4,
+      "selected_basis_count": 16
+    },
+    "residual_phase": "-I",
+    "wrong_S_adjoint_mutant_frobenius_squared": "16"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "scope": "Exact small matrix/finite enumeration discriminator; not a proof of the general compiler, runtime, preparation or physical permissions.",
+  "sympy": "1.14.0"
+}

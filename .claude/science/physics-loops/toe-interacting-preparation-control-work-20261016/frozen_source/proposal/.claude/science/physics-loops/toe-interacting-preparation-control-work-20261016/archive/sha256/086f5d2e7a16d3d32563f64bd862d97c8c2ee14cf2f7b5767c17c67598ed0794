@@ -1,0 +1,274 @@
+# Exposed check of the interacting-old-generator ramp bridge
+
+Disposition proposed to root: **qualified conditional analytical support** for the ready-input, externally driven bridge in source `2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e`. No algebraic defect was found in its ramp identity, target order or original-baseline work identity. The result requires the added positive complementary controls on their actual old supports, supplied resource readiness and the accepted comb controls. It neither derives those permissions nor makes an interacting generator accessible through the original smaller control domain. Root makes the acceptance decision; this review is not retained audit or publication.
+
+The main controlling limitation is substantive: the work-error bound without a reservoir-width factor uses exact nominal conservation and exact disjoint ramp action. It must not be obtained by substituting the complete physical error budget into that bound. The generic physical-fault and moment ledgers still require their own energy allowances. The original proposal already states this restriction. Below I make its proof and the additional precision bookkeeping explicit.
+
+## 1. Sources, exposure and coverage
+
+I read the entire new proposal, its source manifest and freeze. I read the complete current comb and uniform-word root qualifications, acceptances and freezes. The exact uniform derivation and exposed review, and the comb derivation and exposed review, were read completely in earlier coherent tasks; this task refreshes their identities and reuses their qualified results rather than rerunning their checks. The source manifest records exact bytes, hashes, roles and coverage. The uniform root decision `bfb3169a` with qualifications `217aa264` supersedes the earlier comb qualification's historical statement that the uniform extension was pending. It does not retrospectively change that historical file.
+
+This is a source-exposed same-model check. I authored the earlier comb/uniform exposed reviews and some earlier accepted parents. The new calculation below was reconstructed and authored for this interface; it is not blind evidence or a model-independent replication. I did not read the separate unequal-gap candidate's argument or any new sibling proposal. The opportunity-screen argument named in the root manifest is not a premise of this mathematical check and was not read; no novelty or exhaustive duplication claim is made. No new external mathematical theorem is imported.
+
+## 2. Conditional physical contract and positive loads
+
+Retain the literal finite old Hamiltonian
+
+\[
+K=E_{\rm base}I+\sum_Xh_X\geq0,
+\quad C_X=c_XI_X-h_X\geq0,
+\quad c_X\geq\|h_X\|,
+\quad C=\sum_XC_X=\kappa I-K.
+\]
+
+Here \(\kappa=E_{\rm base}+\sum_Xc_X\). The specified decomposition, all physical supports and every local identity reserve are part of the premise. In particular \(\kappa I=K+C\geq0\), so \(\kappa\geq\lambda_{\max}(K)\geq0\); separate positivity of \(E_{\rm base}\) is not needed. No scalar cancellation can be used to remove the counted loads of the individually driven \(C_X\).
+
+Let \(S=N_S\), \(B=N_A\), \(N=S+B\), and \(H_* =\Delta S\). The fixed endpoint observable is
+
+\[
+F_0=K+\Delta B.
+\]
+
+During a ramp with \(0\leq u\leq1\), the actual old Hamiltonian is
+
+\[
+H_{\rm old}(t)=(1-u(t))K+u(t)(\kappa I+\Delta S)\geq0.
+\]
+
+The plateau is obtained by holding the complementary controls and additional old field on: \(K+C+\Delta S=\kappa I+\Delta S\). This is literal cancellation by supplied additional terms, not a rescaling or substitution of the old term. The allowed complement amplitudes are only \([0,1]\) here; no amplitude-two recovery permission is needed. A \(k\)-body old term still needs its \(k\)-body complement. An arbitrary graph is not made a degree-three nearest-neighbor comb by this identity.
+
+For clarity, put \(c(v)=\sum_{X\ni v}\|C_X\|\), zero on added sites. If the qualified parent provides a driven incident load at most \(g/2\), a safe nominal added static-plus-driven bound on this bridge is
+
+\[
+J_{\rm added}\leq\max_v c(v)+\Delta+g/2.                 \tag{1}
+\]
+
+On old sites the \(\Delta\) term is the added old field; on new sites it is the installed resource/ancilla field. The full load adds the specified old decomposition's incident load. A requested cap below these actual loads is not supplied by the proof. For the cubic ramp the incident derivative is at most
+
+\[
+\frac{3}{2r}\,[c(v)+\Delta]\quad\text{on old sites}.       \tag{2}
+\]
+
+The parent pulse slew certificate applies on the plateau with the constant background retained. Taking fixed ramp durations large enough can meet a positive slew allowance but cannot lower (1). Actual positivity, support, amplitude and derivative certificates are separate from a small operator-error integral.
+
+The required controls include the full private-branch SWAP permissions and old-line diagonal CZ permissions of the comb, all-site final number rotations, independently ready product sine packets and vacuum ancillas, and an external phase/time reference. The old interaction graph may have additional edges or greater degree. Complement and old-field switching access is stronger than the accepted comb's original noninteracting-old premise. This is the explicit interface being added, not native supply.
+
+## 3. Reconstruction of the noncommuting ramp identity
+
+Write
+
+\[
+\alpha=\Delta r_{\rm on}/\hbar,\qquad
+\beta=\Delta r_{\rm off}/\hbar.
+\]
+
+Let \(R_{\rm on}\) and \(R_{\rm off}\) be the time-ordered old propagators of their actual forward ramps, including scalars. Since the resource drift is disjoint,
+
+\[
+U_{\rm on}=R_{\rm on}\otimes e^{-i\alpha B},\qquad
+U_{\rm off}=R_{\rm off}\otimes e^{-i\beta B}.
+\]
+
+In general
+
+\[
+[H_{\rm old}(t),H_{\rm old}(t')]
+  =(u(t')-u(t))[K,H_*].                                 \tag{3}
+\]
+
+Thus a reversed profile is not an inverse propagator, and old number rotations must not be moved through either ramp. The proof uses no such interchange.
+
+Let \(C_P\) denote the actual full-space semantic word, with \([C_P,N]=0\). Its off-code action is its actual product, not a chosen identity extension. With the paid compiler scalar retained, the plateau is
+
+\[
+U_p=\gamma e^{-i\phi N}C_P,
+\quad\gamma=e^{-i(\kappa\tau/\hbar+\Phi)},
+\quad\phi=2\pi k-\alpha-\beta.                           \tag{4}
+\]
+
+Starting directly from \(U_{\rm off}U_pU_{\rm on}\), the only phase transferred through \(C_P\) is a function of the total number:
+
+\[
+e^{-i\alpha B}=e^{-i\alpha N}e^{i\alpha S}.
+\]
+
+The resource exponent becomes \(\phi+\alpha+\beta=2\pi k\), whose exponential is the identity because the full finite number operator has integer spectrum. The old exponent is \(-(\phi+\alpha)S\), equal modulo \(2\pi\) to \(\beta S\). Consequently the exact whole-space identity is
+
+\[
+U_{\rm off}U_pU_{\rm on}
+ =\gamma(L\otimes I_A)C_P(R\otimes I_A),\qquad
+L=R_{\rm off}e^{i\beta S},\quad
+R=e^{i\alpha S}R_{\rm on}.                              \tag{5}
+\]
+
+Both orders in (5) are load-bearing. No purity, packet restriction, old input state or old commutation hypothesis enters this identity.
+
+For a target \(V\in U(2^q)\), the needed logical target is exactly
+
+\[
+A=L^*VR^*=e^{-i\beta S}R_{\rm off}^*V
+               R_{\rm on}^*e^{-i\alpha S}.              \tag{6}
+\]
+
+Let \(J_\beta\) adjoin the supplied resource packets and clean ancillas. Applying the comb's uniform ready-subspace estimate to input \(R|\psi\rangle\) proves the full comparator \(\gamma J_\beta V\), because old-only unitaries commute with adjoining that fixed resource state. The same argument includes arbitrary reference systems. It does not discard final reservoir, ancilla or correlation outputs.
+
+Each nominal compiled pulse also commutes with \(N\). Therefore (5) applies to its actual finite compiled word as well; the separate implementation estimate can be telescoped on the ideal ready prefixes, as in the qualified parent. It does not require resetting an actually correlated ancilla. The program-dependent \(\Phi\) and the plateau's \(\kappa\tau/\hbar\) must remain in \(\gamma\). Ramp scalar phases already occur in \(R_{\rm on/off}\) and hence (6). No scalar-one target or free scalar correction follows.
+
+## 4. Effective choice order and calibration accounting
+
+For fixed finite old data, supplied norm bounds and the specified polynomial ramp profiles, old propagators are computable matrices with norm enclosures. One explicit route is the Dyson series. If \(M\) bounds \(\int\|H_{\rm old}(t)\|dt/\hbar\), its tail after degree \(p\) is bounded by \(\sum_{j>p}M^j/j!\). Finite ordered integrals of the polynomial coefficient matrices can be approximated effectively. Computing a larger certified upper bound on \(M\) suffices. No equality oracle or polynomial classical runtime is implicit.
+
+The accepted finite-search compiler is applied to the true unitary (6), supplied by these enclosures. A rounded nonunitary array is not silently granted that promise. If approximate assembly is used, its error belongs inside \(\eta_{\rm program}\); for unitary factors a sufficient sum bound is
+
+\[
+\delta_A\leq\delta_{R_{\rm on}}+\delta_{R_{\rm off}}+
+\delta_V+q(|\delta\alpha|+|\delta\beta|).               \tag{7}
+\]
+
+Corresponding nonunitary approximants need their actual norm factors or an independently justified correction. The enclosure/search formulation avoids this issue entirely.
+
+A noncircular schedule is:
+
+1. Fix \(K,C_X,\Delta\), the actual graph/control bounds, \(r_{\rm on/off}\) and the slot shape/duration \(h\).
+2. Select \(L\) from the desired packet/error budget. Use the qualified uniform \(R(q)\) to set \(\overline G=R(q)(1+131328L^4)\) and \(\tau=h(\overline G+1)\), with every guard already included.
+3. Enclose \(x=\Delta(\tau+r_{\rm on}+r_{\rm off})/(2\pi\hbar)\) by a rational \(\rho\) with \(|\rho-x|\leq1/4\), set \(k=\lfloor\rho\rfloor+2\) and \(\lambda=2\pi k-\Delta(\tau+r_{\rm on}+r_{\rm off})/\hbar\). Then \(3\pi/2<\lambda\leq9\pi/2\). There is no undecidable exact-floor problem: the floor is of a rational and the margin is robust.
+4. Compute/certify a logical word for (6), emit its physical approximation within the padded count and retain its actual scalar \(\Phi\). The literal target (6) depends on the fixed ramps and \(V\), not on a self-consistently unknown compiler runtime. The final scalar may depend on the emitted word without affecting the padded time.
+5. Complete offline classical compilation before receiving the unknown state. A subsequent wait has actual old evolution and cannot be omitted.
+
+The final phase must cover all old, battery and ancilla sites. Its simultaneous local action is covered by the parent's bounded pulse-shape and generator certificate; increasing the number of sites increases the global norm but does not require increasing the incident cap.
+
+The vector/isometry estimate is precisely
+
+\[
+e_{\rm total}\leq e_{\rm ready}+2\sum_i d_i+
+\eta_{\rm program}+\eta_{\rm compile}+\eta_H+\eta_t.       \tag{8}
+\]
+
+The resulting unhalved trace error is at most \(2e_{\rm total}\). Here readiness must have the stated full-isometry contract. If only a joint trace-distance readiness bound \(\epsilon_{\rm ready}\) is supplied, the valid state estimate instead starts with \(\epsilon_{\rm ready}\), followed by twice the remaining vector budget. A trace readiness promise is not automatically a same-sized vector promise. The proposal explicitly specifies the stronger contract and leaves its physical preparation uncomposed.
+
+For physical Hamiltonians,
+
+\[
+\eta_H\leq\hbar^{-1}\int_0^{r_{\rm on}+\tau+r_{\rm off}}
+                \|H_{\rm actual}(t)-H_{\rm nominal}(t)\|dt. \tag{9}
+\]
+
+This includes all actual complement residuals, ramps, field errors, scalars and control errors. If separately summed pulse contributions are used to bound (9), the same integral is not charged again independently. A complement coefficient discrepancy held during the plateau has exposure \(\tau\), not just the ramp duration.
+
+For \(0<\epsilon\leq1\), fixed parameters and fixed-fraction budgets, there are explicit fixed parent constants \(A,D,B,H\) with \(L\leq A/\epsilon\), total physical sites \(m\leq D/\epsilon\), \(\overline G\leq B\epsilon^{-4}\) and \(\tau\leq H\epsilon^{-4}\). With \(r=r_{\rm on}+r_{\rm off}\), replace \(H\) by \(H'=H+r\) in exposure bounds. For an allocation \(\eta_H\leq\epsilon/c\), a sufficient global static mismatch is
+
+\[
+\sup_t\|\delta H(t)\|\leq\hbar\epsilon^5/(cH').         \tag{10}
+\]
+
+Dividing a bound of this kind among \(m=O(\epsilon^{-1})\) installed fields gives the stated \(O(\epsilon^6)\) per-field requests. The number of old complementary terms is fixed; their total residual still needs (10). Final phase/generator and pulse-angle allowances scale as \(O(\epsilon^5)\) after the \(O(\epsilon^{-4})\) word count/global-number factor is priced. The final phase's input calculation contains \(\tau+r\) and \(k=O(\epsilon^{-4})\). Sufficient numerical requests \(\delta\Delta,\delta\pi=O(\epsilon^9)\) pay an \(O(\epsilon^5)\) output phase tolerance. Errors in the other factors, including \(\tau/\hbar\), must also be allocated; these are not additional free allowances.
+
+The retained scalar has its own transparent data bound. If reporting an approximation to \(\gamma\), require
+
+\[
+|\delta\gamma|\leq|\delta\vartheta|,\qquad
+\vartheta=\kappa\tau/\hbar+\Phi,
+\]
+
+\[
+|\delta\vartheta|\leq(\tau/\hbar)|\delta\kappa|
+ +|\kappa|\,|\delta(\tau/\hbar)|+|\delta\Phi|
+ +|\delta\kappa|\,|\delta(\tau/\hbar)|.                 \tag{11}
+\]
+
+For fixed parameters this again permits \(O(\epsilon^5)\) accuracy for \(\kappa\), with the other errors paid inside the selected scalar budget. The sum of emitted scalar-area errors belongs in \(\delta\Phi\), or in (9) when they are physical discrepancies. Giving the exact computable expression (4) avoids claiming that an uncertified decimal phase is exact. This is extra bookkeeping, not a change to the original theorem.
+
+After actual switch-off,
+
+\[
+\|F_0\|\leq\|K\|+\Delta m_A\leq F_*/\epsilon,
+\quad\eta_t\leq\|F_0\||\delta t|/\hbar,                \tag{12}
+\]
+
+so \(|\delta t|\leq\hbar\epsilon^2/(cF_*)\) is sufficient for \(\eta_t\leq\epsilon/c\). Storage evolves under this restored \(F_0\), not the surrogate. Constant ramp times add no intrinsic approximation error because their exact propagators enter the target. The nominal laboratory duration is \(O(\epsilon^{-4})+r\), conditional on the fixed control certificates. None of these precision requests bounds a computable entry oracle's wall time or supplies microscopic calibration.
+
+## 5. Original-baseline work and its exact scope
+
+Consider the exact nominal driven protocol, including finite nominal compiled pulses, all of which conserve \(N\). The initial old marginal is \(\rho\). Let \(\rho_a,\rho_b,\rho_f\) be the old marginals at plateau entry, plateau exit and the final endpoint. Then
+
+\[
+\rho_a=R_{\rm on}\rho R_{\rm on}^*,\quad
+\rho_f=R_{\rm off}\rho_bR_{\rm off}^*.
+\]
+
+The ramps conserve \(B\) exactly. The plateau conserves \(N\) exactly, including its scalar reserves and the final number phase. Consequently
+
+\[
+\Delta\big(\langle B\rangle_f-\langle B\rangle_0\big)
+ =-\operatorname{Tr}H_*(\rho_b-\rho_a).                 \tag{13}
+\]
+
+No product or no-correlation assertion about intermediate outputs is used. Since added controls vanish at both endpoints, the prescribed-drive work on the actual baseline is
+
+\[
+W=\langle F_0\rangle_f-\langle F_0\rangle_0
+ =\operatorname{Tr}K(\rho_f-\rho)
+       -\operatorname{Tr}H_*(\rho_b-\rho_a).             \tag{14}
+\]
+
+It is generally nonzero. The resource-energy term is essential even when the resource state is close in trace norm to its input. Replacing (14) by just the old energy change, or by the plateau's zero net work on a different baseline, is invalid.
+
+Let \(\rho_V=V\rho V^*\) and \(\rho_{b,V}=R_{\rm off}^*\rho_VR_{\rm off}\). Define \(W_V\) by substituting these target old marginals into (14), leaving the exact \(\rho_a\) and initial \(\rho\). Centering a Hermitian observable gives \(|\operatorname{Tr}O\delta\rho|\leq\operatorname{width}(O)\|\delta\rho\|_1/2\). If the full vector/isometry error is \(e_{\rm int}\), then \(\|\rho_f-\rho_V\|_1\leq2e_{\rm int}\), and exact turn-off gives the same bound before turn-off. Hence
+
+\[
+|W-W_V|\leq(\omega_K+q\Delta)e_{\rm int}.               \tag{15}
+\]
+
+An equivalent direct derivation centers \(K-R_{\rm off}H_*R_{\rm off}^*\) against \(\rho_f-\rho_V\); its spectral width is at most \(\omega_K+q\Delta\). This proves the source's constant with no reservoir-width factor. Also \(|W_V|\leq\omega_K+q\Delta\). This bounded work functional is state-dependent, not a zero-work conclusion.
+
+The conservation identity (14) itself extends to an initially correlated resource if \(\rho\) is its actual old marginal. If it is compared with a separately declared initial old state \(\rho_0\), let \(\delta_0\) be their trace distance and \(\delta_f\) the final old trace distance to \(V\rho_0V^*\). Exact nominal dynamics then give the useful qualified extension
+
+\[
+|W-W_V(\rho_0)|\leq(\omega_K+q\Delta)(\delta_f+\delta_0)/2.\tag{16}
+\]
+
+This does not grant a readiness interface or control (\(\delta_f\)); it merely prices actual initial and final old errors when the exact conservation laws hold.
+
+For a physically nonconserving perturbation, (13) acquires an actual charge-transfer term. One possible sufficient estimate is its integrated commutator expectation, bounded by \(\Delta\hbar^{-1}\int\|[\delta H(t),N]\|dt\) on the plateau, plus the analogous resource-charge terms on the ramps. Such a structural error certificate might improve on a reservoir-width bound. A small full-Hamiltonian norm error by itself only gives the corresponding global-width estimate and does not establish (15) with \(e_{\rm total}\). This review makes no universal impossibility claim about better structured fault models.
+
+For moments on a common positive interval \([0,W_0]\), the centered-observable bound yields \(W_0^r\epsilon_{\rm tr}/2\) for an \(r\)-th-moment comparison. Here a valid width ceiling is \(W_0=\|K\|+\Delta m_A\), which grows with \(L\). Small trace error alone does not imply small absolute energy-moment error. No equality of \(F_0\) distributions follows from plateau number conservation.
+
+The prescribed-drive absolute-work bound retains every scalar:
+
+\[
+\int\!|\operatorname{Tr}\rho(t)\dot H_{\rm drive}(t)|dt
+\leq\int\!\|\dot H_{\rm drive}(t)\|dt.
+\]
+
+Each monotone ramp contributes at most \(\sum_X\|C_X\|+q\Delta\), giving twice this quantity for the pair. Add the parent's actual pulse-variation sum, including the simultaneous all-site phase and all positive reserves. At fixed parameters it is \(O(\overline G+m)=O(\epsilon^{-4})\). This is a prescribed classical-drive ledger. It provides no microscopic driver state, entropy accounting, autonomous timing, permanent halt or indefinite reuse.
+
+## 6. One new finite discriminator and its limits
+
+The analytical reconstruction and expected mutants were recorded before source launch in `PRECHECK_FINDINGS.md`; that exact text, the executable and the launcher were copied into the run directory before execution. No prior scientific checker was imported or replayed. The new process ran once, exited zero, and produced empty stderr. The source, actual argv/cwd, CPU/wall limits, timestamps and all streams are in `runs/ramp_interface/EXECUTION.json` and adjacent files. There were no failed launches in this task.
+
+The test uses \(q=2\), \(K=2I+(3/5)XX+(2/5)ZI+(1/4)IX\), \(\Delta=7/10\), \(\kappa=13/4\). Both \(K\) and \(C=\kappa I-K\) are positive; this can also be certified analytically by \(\|K-2I\|\leq5/4\). A positive local decomposition is \((3/5)(I-XX)+(2/5)(I-ZI)+(1/4)(I-IX)\), so the test need not hide a nonlocal many-body complement. The measured \(\|[K,N_S]\|=1.25\) confirms the selected instance is genuinely noncommuting.
+
+Actual old ramp Hamiltonians are integrated by midpoint products of Hermitian exponentials, with 256, 512 and 1024 slices. The finest successive differences are \(1.664\times10^{-8}\) and \(4.371\times10^{-8}\), with observed ratios near four. These observations are not rigorous ODE error enclosures. The algebraic interface residual for the matrices obtained this way is meaningful independently of that integration accuracy: (5) must hold for any correctly ordered old unitaries.
+
+The independently built full-space conserving semantic word has three private-branch lifts and a physical old CZ. Each branch has \(L=3,M=5\), and two clean ancillary qubits are retained. All 16,384 rows of the four-column input isometry are computed. Nonprefix sectors receive the actual word product; no projector truncation is used. The direct propagation follows the ramps, resource phases and conserving word chronologically. The comparison separately constructs (5). The fixed word induces the test's small target \(V\); this is not a new compiler for an independently supplied arbitrary target. The scalar reserve area \(0.37\) is prescribed explicitly; it is not fitted and is not claimed to be the scalar of a newly emitted elementary physical word.
+
+| Quantity | Actual complex128 result |
+|---|---:|
+| Full phase-interface operator residual | \(3.802\times10^{-16}\) |
+| Wrong order \(R_{\rm on}e^{i\alpha S}\) mutant | \(0.0688813\) |
+| Omitting resource ramp phases from final correction | \(1.86715\) |
+| Full packet target operator error | \(0.899839\) |
+| Direct original-baseline work for old \(|00\rangle\) | \(-1.43968815\) |
+| Work identity residual | \(1.359\times10^{-13}\) |
+| Resource energy change | \(-1.00909221\) |
+| Old energy change alone | \(-0.43059594\) |
+| Work-target functional discrepancy | \(0.1083293\) |
+| Bound (15) for this packet | \(3.0074606\) |
+
+The packet bound is larger than two at this small \(L\), so this is not evidence of a useful high-accuracy controller. The full isometry calculation, rather than old-state sampling, tests the interface with arbitrary old/reference inputs; the work example intentionally uses one named state to exhibit nonzero work and the missing resource term. Saved full matrices are in `runs/ramp_interface/output/FULL_PACKET_MATRICES.npz`. Numerical residuals are neither interval certificates nor proofs of the general construction, physical elementary synthesis, actual laboratory calibration or native readiness.
+
+## 7. Final scope and unresolved interfaces
+
+The conditional ready-input bridge survives the checks above. No repair of the displayed ramp or work equations is required. Any downstream theorem must retain: actual positive complement access and incident loads; full old time ordering; target (6); scalar (4); all output registers; preselected padded duration and actual post-off sampling; distinct numerical-program versus physical-Hamiltonian error; and the restricted hypotheses of (15). Equations (1), (11), (12) and the readiness distinction make useful explicit qualifications rather than new hardware claims.
+
+The current result does not compose a number-changing preparation under interacting old \(K\), supply complement actuators or matched branch hardware, reduce interaction arity, remove external references, synthesize a microscopic conservative driver, or establish automatic halt/reuse. A useful next interface is an explicit preparation chronology with the old \(K\) evolution and all release phases retained, or a specified physical fault model with a controlled charge-transfer integral. Those are separate tasks. Original sources and counterexamples remain unchanged. No editable prompt, axiom, canonical file, worktree, Git object, publication, audit state or lock was changed.

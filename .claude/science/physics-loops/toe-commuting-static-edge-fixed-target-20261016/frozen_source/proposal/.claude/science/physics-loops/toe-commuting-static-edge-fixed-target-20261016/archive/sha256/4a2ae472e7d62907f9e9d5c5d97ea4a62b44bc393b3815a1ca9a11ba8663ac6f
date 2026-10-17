@@ -1,0 +1,197 @@
+# Static positive edge realization of the fixed commuting target
+
+**Proposed conclusion.** Yes, under the explicitly enlarged implementation contract that supplies one static positive interaction on the existing two-qubit edge. The construction below gives the requested endpoint exactly, including its scalar, and a uniform finite-window bound far smaller than `2^-40`. It introduces no quantum register and needs no change of Hamiltonian at launch. It does require the interaction to be installed already, the declared input/time interface, and the stated coefficient accuracy. It is not an implementation using only the four original onsite rays, a native-hardware claim, or an indefinite halt/reuse result.
+
+This is an analytical derivation from the equations in the root's question. It was written and frozen before reading `endpoint_finite_quantum_actuator_candidate` or any new author's argument. The model and effort are unchanged. The root question and earlier endpoint/chart/recurrence work were known; this is independence in derivation order at a source-exposed same-model scope, not blind or model-family independence. No scientific code was run. The root qualification referred to as `3982` was not needed or newly read as a premise.
+
+## 1. Exact interaction and endpoint
+
+Let `D` be the existing two-qubit system and let `R` be any passive reference, of arbitrary dimension and arbitrarily correlated with D. In dimensionless units the supplied old generator and target are
+
+    K = 2 I + ZZ,
+    W = [(9+12i) I + (-16+12i) XX]/25,
+    T = 350208522228384946904887108861751911074590975328100424043350794320.
+
+Write `Q = XX`, and define the positive real numbers
+
+    theta = arctan(4/3),
+    a = pi - theta = 3 pi/4 - arctan(1/7),
+    gamma = a/T.
+
+The displayed arctangent equality follows from `tan(pi/4 + arctan(1/7)) = 4/3`, with both angles in `(0,pi/2)`. Thus `pi/2 < a < 3pi/4`. Supply the single ordinary edge term
+
+    C = gamma (I + Q) = 2 gamma P_+,
+    P_+ = (I+XX)/2,
+    H = K + C.
+
+Here C is positive semidefinite on the entire physical two-qubit Hilbert space. Its identity part is an actual scalar reserve, not discarded or introduced as a gauge convention. The problem's usual positive-ray convention allows zero eigenvalues; if strict positive definiteness is required instead, section 7 states the corresponding extra reserve explicitly.
+
+Since `XX` commutes with `ZZ`, `[K,C]=0`. Since `Q^2=I`,
+
+    exp(-i T C) = exp(-i a) [cos(a) I - i sin(a) Q].
+
+Now `cos(a)=-3/5`, `sin(a)=4/5`, and `exp(-i a)=(-3-4i)/5`. Multiplication gives
+
+    I coefficient:  (-3-4i)(-3)/25 = (9+12i)/25,
+    Q coefficient:  (-3-4i)(-4i)/25 = (-16+12i)/25.
+
+Consequently `exp(-i T C)=W` **as a full matrix**, and
+
+    exp(-i T H) = exp(-i T K) W = W exp(-i T K).
+
+Equivalently, the two `Q=+1` eigenvalues of C are `2 gamma`, and the two `Q=-1` eigenvalues are zero. Their endpoint phases are respectively
+
+    exp(-2 i a) = (-7+24i)/25,     1,
+
+which are exactly the corresponding eigenvalues of W. The total scalar action at T is `2T+a`. In particular,
+
+    det exp(-i T H) = exp[-i(8T+4a)]
+                   = det(W) exp(-8iT),
+    det(W) = (-527-336i)/625.
+
+Both the `2I` old reserve and the `gamma I` added reserve remain in H throughout. There is no negative time, algebraic reversal of old K, or removed phase.
+
+In particular `gamma T=a>pi/2` is not small. The endpoint identity is exact because of commutation, not a perturbative assertion that the long-time additional evolution is negligible. Only `gamma w` is small in the output window. Old K is not rescaled.
+
+## 2. Locality, incident cap and whole-space load
+
+C is one two-qubit term supported on the already existing edge. No extra vertices, clock, battery, ancilla or history register appear. Its full-space operator norm is
+
+    ||C|| = 2 gamma = 2a/T < 3pi/(2T).
+
+The displayed T is much larger than 36. Thus the norm is less than the stipulated **added** incident cap 2 at each endpoint of this edge. The same one term is counted at each incident site; it is not divided by two to evade the cap. It is constant in time, so its modeled first derivative is exactly zero. This does not identify a hard-bandwidth or hardware supplier.
+
+The old generator has eigenvalues 1 and 3. In the simultaneous Bell basis of `ZZ` and `XX`, the total eigenvalues are
+
+    1, 1+2gamma, 3, 3+2gamma.
+
+Hence H is positive and `||H||=3+2gamma`. The old load 3 is additional to the new incident load; the statement is not a total-load cap of 2. All norm statements concern the complete two-qubit space, with no code subspace or omitted noncode sector.
+
+For physical energy unit `E0`, the added interaction is `E0 C`, its cap is `2E0`, and elapsed laboratory time is `(hbar/E0)T`. The dimensionless derivative zero remains zero in physical units. The very long specified T is not replaced by the size of this formula or the time required to compute its coefficient.
+
+## 3. Exact finite quiet-window error, all outputs and references
+
+For `0 <= s <= w=24`, define the desired and actual full-system maps
+
+    V(s) = exp(-i s K) W exp(-i T K),
+    U(s) = exp[-i(T+s) H].
+
+Commutation and the endpoint identity give `U(s)=V(s) exp(-i s C)`. Therefore the **full matrix** error, without optimizing away a phase, is exactly
+
+    ||U(s)-V(s)|| = ||exp(-i s C)-I||
+                  = 2 |sin(gamma s)|.
+
+Because `24 gamma < pi/2`, this increases on the specified interval. The uniform bound is
+
+    eta_w = 2 sin(24 gamma)
+          <= 48 gamma
+          < 36pi/T
+          < 144/T
+          < 2^-40.
+
+The last inequality uses only `pi<4` and the obvious `T > 2^48`; no transcendental numerical evaluation is needed. The exact attainable finite-window error for this construction is eta_w, not an arbitrarily adjustable zero at the already fixed T and w.
+
+Tensoring the unitaries with `I_R` leaves this operator norm unchanged. At the endpoint, the two joint output states are exactly equal for every initial density operator on `D R`. For the quiet window, the unhalved trace-norm error admits the sharper exact uniform maximum
+
+    sup_rho || U(s) rho U(s)* - V(s) rho V(s)* ||_1
+        = 2 |sin(gamma s)|.
+
+To see this, purify any input for the proof only and put `p = <P_+>`. The overlap of the two purifications, after removing the common V(s), is
+
+    (1-p) + p exp(-2i gamma s).
+
+Its squared modulus is `1 - 4p(1-p) sin^2(gamma s)`. The pure-state trace distance is therefore `4 sqrt[p(1-p)] |sin(gamma s)| <= 2 |sin(gamma s)|`; partial trace cannot increase it. Equality is attained by a coherent balanced superposition of a `Q=+1` state and a `Q=-1` state. The mathematical purification is not an added physical register in the implementation. A looser generic bound `2||U-V||` would also be valid, but is unnecessary for this exact two-eigenvalue comparison.
+
+Every old output and the entire original reference are retained. No output is traced out to obtain the claimed state comparison. The reserve phase is kept in the stronger full-unitary statement even though a common scalar cancels in density operators.
+
+## 4. Energy, moments and installation ledger
+
+Since `[K,C]=0`, both K and C are individually conserved by H. For every arbitrary correlated input, all moments of K, C and H are constant during the evolution, including their variances and covariance. The same holds for the target: `[W,K]=0` and also `[W,C]=0`. Thus the ideal old-energy and old-variance differences between actual and target outputs are zero throughout, even while their states differ slightly in the quiet window.
+
+No time-dependent work is delivered by the declared model during this static interval: `dH/dt=0`. This is not a zero-cost installation claim. Relative to the original K-only energy convention, the installed interaction adds the input-dependent initial expectation
+
+    0 <= Tr(C rho_D) <= 2 gamma.
+
+The corresponding full-H second-moment change at the same input obeys the whole-space operator inequalities
+
+    0 <= H^2-K^2 = 2KC+C^2 <= (12gamma+4gamma^2) I.
+
+For variance at the same input,
+
+    Var(H)-Var(K) = 2 Cov(K,C)+Var(C),
+    |Var(H)-Var(K)| <= 2gamma+gamma^2.
+
+Indeed the commuting observables have ranges 2 and `2gamma`, so `|Cov(K,C)| <= gamma` and `Var(C) <= gamma^2`. These are modeled initial-energy/moment allowances, not measured microscopic actuator energy. In physical units the mean allowance is multiplied by E0 and the second-moment/variance allowances by `E0^2`.
+
+If C were switched from zero to its installed value at an identified launch event, that would be a launch intervention, with input-dependent quench work `Tr(C rho_D)`. It is **not** part of this construction. Likewise removal at the endpoint is neither performed nor assumed. The interaction remains present throughout and after the quiet window. Its installation, the initial arbitrary old/reference state with H already installed, and the physical availability and stability of this edge term are separate supplied premises. The original K remains literally included, but the endpoint total Hamiltonian is K+C rather than K alone.
+
+For a perturbed output state with unhalved marginal trace discrepancy delta from an ideal comparison, old mean-energy error is at most `delta` dimensionlessly, using width(K)/2=1. Since `K-2I=ZZ` and `(ZZ)^2=I`, old variance is `1-<ZZ>^2`, so its discrepancy is at most `2delta`. These bounds control implementation/preparation errors when present; the exact static model itself has zero such discrepancy. They do not convert small state error into accuracy for an unrelated unbounded apparatus observable.
+
+## 5. Coefficient precision, drift and two timing conventions
+
+The exact coefficient gamma is a supplied positive **computable real**. The expression `3pi/4-atan(1/7)` and, for example, rational alternating bounds for the arctangent together with a convergent computable representation of pi make approximation effective. Exact endpoint equality is the mathematical statement for this exact coefficient. A finite-precision coefficient approximation is a different implementation; its endpoint error is bounded explicitly below and is not assumed zero. A finite algorithm describing an exact computable real must not be confused with a finite-precision physical setting.
+
+For a linked scalar/XX coefficient error, install
+
+    C_hat = (gamma+d) (I+XX),     gamma+d >= 0.
+
+At the same true elapsed time `t=T+s`, the exact full-matrix comparison is
+
+    || exp[-it(K+C_hat)] - V(s) ||
+        = 2 |sin[gamma s + d(T+s)]|
+        <= eta_w + 2(T+w)|d|.
+
+The same exact two-eigenvalue argument gives this trace-norm upper bound on arbitrary correlated inputs, with any separately compared initial trace discrepancy added. The linked parametrization guarantees positivity when `gamma+d>=0`; a small arbitrary additive matrix error alone does not guarantee positivity of C, whose negative-Q eigenspace has eigenvalue zero.
+
+For any requested operator tolerance epsilon exceeding eta_w, one sufficient nonzero accuracy allocation is
+
+    |d| <= min{gamma/2, (epsilon-eta_w)/[4(T+w)]}.
+
+It keeps the amplitude positive, respects the added cap, and gives strict total error below epsilon. A computable rational coefficient can meet such an explicit positive tolerance. In relative terms the sufficient allocation is `|d|/gamma <= min{1/2, (epsilon-eta_w) T/[4a(T+w)]}`. The available margin is epsilon-eta_w; when that margin is a fixed fraction of epsilon, absolute accuracy is of order epsilon/T and relative accuracy of order epsilon. This does not provide an engineering supply for extremely weak, stable couplings, or allow old-generator drift to be omitted.
+
+More generally, let the actual static generator be `H_hat = H+E`, with `||E||<=e`, retaining a separately verified positive allowed added term. E may include scalar, coupling-axis, strength and old-K calibration errors and need not commute with H. Duhamel gives the safe fixed-time ledger
+
+    operator error <= eta_w + (T+w)e,
+    joint trace error <= eta_w + 2(T+w)e + delta_initial.
+
+The trace inequality uses the exact ideal-window bound followed by the generic perturbation bound. For time-dependent implementation discrepancy, replace `t e` by the actual integrated full-generator norm error. Positivity and the stated control permissions remain separate requirements on that implementation, not consequences of this error estimate.
+
+Timing must name its comparator. If the actual elapsed time is `T+s+tau` and the comparator preserves **actual old aging**, namely `W exp[-i(T+s+tau)K]`, the ideal static error is
+
+    2 |sin[gamma(s+tau)]| <= 2 gamma (w+|tau|).
+
+For the linked coefficient perturbation, replace the sine argument by `gamma(s+tau)+d(T+s+tau)`. In this convention old-K evolution is correctly retained and does not generate an extra `3|tau|` penalty.
+
+If instead the comparator remains at the nominal time `T+s`, a safe full-unitary bound is
+
+    eta_w + (T+w)e + (3+2gamma+e)|tau|,
+
+using `||H_hat|| <= 3+2gamma+e`. The trace bound can be taken as the ideal eta_w plus twice the two perturbation terms and delta_initial. These are different specifications; no favorable timing convention is silently substituted for the question's fixed-time/window comparison. Physical time and energy factors restore hbar/E0 in the usual way.
+
+## 6. What this does and does not meet
+
+The endpoint and finite-window mathematical specification is satisfied by a preinstalled time-independent generator on the original two-qubit Hilbert space. No pulse, launch switch, programmed reversal, reset or conditional intervention occurs at time zero. Arbitrary input means an arbitrary state of the already installed system at the declared start time; the same statement applies from any chosen time origin. Preparing/delivering that input and accessing the declared output time are external interfaces, not an internally constructed autonomous clock or halt mechanism.
+
+This construction has a new actuator permission. A term proportional to XX is absent from the original cone of the four onsite positive rays `I+X1`, `I+Y1`, `I+X2`, `I+Y2`. Their linear span contains only I and onsite Paulis; it has zero XX coefficient by Pauli orthogonality. The fact that pulsed controls may generate larger effective dynamics does not make this static edge term an already supplied actuator. Its availability, arbitrary weakness and calibration are expressly additional implementation premises. Positivity and location on an existing edge do not prove native hardware realization.
+
+The quiet window is approximate and finite. In this construction the residual is nonconstant `exp(-is C)`. Exact equality with the desired freely aging output over any nonempty time interval would force its derivative at zero to vanish, hence C=0, contradicting this W. At `s = pi/(2gamma)`, the operator error is 2 and a balanced input has trace error 2. This is a statement about the present static construction, not a no-go for every control architecture. With T and w fixed, eta_w is fixed and positive; no arbitrary-epsilon or indefinite halt claim follows.
+
+There is no free reset to a reusable idle generator, no demonstration of safe repeated input handoffs, no restored microscopic controller, and no discarded environmental output. The absent ancillary registers remove one modeled storage obligation; they do not establish an autonomous apparatus or unlimited reuse. If the implementation contract instead requires that only K be installed before launch, or that the added interaction vanish afterwards, the construction does not meet that stronger contract without additional switching work and permissions.
+
+## 7. Scalar discriminator and one proposed bounded check
+
+The algebra already gives a decisive exact check without numerical evolution. A future authorized symbolic fixture could form explicit two-qubit Pauli matrices and use the exact Gaussian rationals `cos(a)=-3/5`, `sin(a)=4/5` to multiply
+
+    [(-3-4i)/5] [(-3/5)I - (4i/5)XX]
+
+and verify all 16 entries against W, both projector phases, full determinant, and the norm of the positive edge term symbolically. It should preserve the original scalar-bearing form rather than testing only density channels. The uniform window inequality is analytical; sampling a few times would not certify it.
+
+A useful scalar mutant stays positive: `C_bad = 2gamma I + gamma XX = C+gamma I`. It still has a small full-space cap but produces `exp(-i T C_bad)=exp(-ia)W`, not W. Its full-matrix endpoint error is
+
+    |exp(-ia)-1| = 4/sqrt(5),
+
+even though its endpoint density channel is identical. This demonstrates why a channel-only endpoint test would miss the specified scalar error. The mutant is an analytical counterexample, not an executed fixture.
+
+If strictly positive C is separately demanded, put `b=2pi/T` and use the deliberate reserve `C_strict=C+bI`. Its eigenvalues are b and `b+2gamma`, both positive, still below cap 2. Its endpoint matrix remains W because the new endpoint scalar is `exp(-2pi i)=1`. Its full-unitary window bound must include that extra reserve, for example `w ||C_strict|| < 84pi/T`; its density-channel window bound is unchanged by the common scalar. The initial added mean energy lies in `[b,b+2gamma]`, the added second moment is bounded between zero and `6(b+2gamma)+(b+2gamma)^2`, and the variance-difference bound remains `2gamma+gamma^2` because a constant scalar does not alter variance. The full scalar action at T has gained `2pi`. This optional variant is not silently substituted into the main result or its sharper constants.
+
+No scientific executable, matrix routine or numerical fixture was launched for this note. Only source identity capture and the final metadata freeze are permitted here. The proposed check remains unexecuted and requires separate authorization. This proposed result still requires root review; it changes no canonical theorem, scientific parent, prompt, axiom or publication status.

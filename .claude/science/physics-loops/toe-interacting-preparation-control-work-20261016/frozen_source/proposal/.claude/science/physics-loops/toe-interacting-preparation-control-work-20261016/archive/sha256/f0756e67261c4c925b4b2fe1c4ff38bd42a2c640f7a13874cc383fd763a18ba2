@@ -1,0 +1,85 @@
+"""Record root's actual conditional preparation disposition; metadata only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];S=N/'interacting_preparation_chronology_candidate';R=N/'interacting_preparation_chronology_exposed_check';D=N/'interacting_preparation_chronology_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+assert pin(S/'DERIVATION.md')['sha256']=='ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc'
+assert pin(R/'REVIEW.md')['sha256']=='5c6884db8a0a933f4c83f010c1ed25d3ce9f6aff3d7815a109b39234c23aac76'
+assert pin(S/'FREEZE.json')['sha256']=='4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f'
+assert pin(R/'FREEZE.json')['sha256']=='6fd82d9be7d1c8a70fb56968fd9a71c52694b61c8b71f02a0315e3a43a93ddcb'
+for root in (S,R):
+ f=read(root/'FREEZE.json');members=f.get('members',f.get('files'));assert isinstance(members,list)
+ for row in members:same(root/row['path'],row)
+D.mkdir(exist_ok=False)
+text='''# Controlling qualifications: interacting vacuum preparation and chronology
+
+Root accepts the complete conditional chronological composition in candidate ba2624d2 with source-exposed review5c6884db. No frozen parent or candidate correction is required. The distinctions below control downstream use; this is not retained audit or a physical realization observation.
+
+## Exact construction and order
+
+Use fixed finite q, literal supplied K>=0, actual positive complements C_X=c_X I_X-h_X on their original supports, and kappa=E_base+sum c_X. Their mathematical existence does not supply the actuators. The control graph includes those supports plus the supplied old line, private matched branches and control alphabet; no degree-three geometry for arbitrary interacting K follows. Each private battery has M=L+2 qubits and its separate synthesis ancilla, for m=q(L+4) total qubits. Include all new qubits and the arbitrary passive reference in every output and energy statement.
+
+The admission isometry J0 adjoins independent vacuum. During preparation K acts on the old system and the new controls are disjoint from it. qL sequential rotations use one absolute carrier clock, followed by the battery-only phase layer. Fix tau_p=(qL+1)h_p before choosing the final phase. The exact full preparation is E_p tensor P_B tensor exp(-ix_p N_a), with E_p=exp(-i tau_p K/hbar) and x_p=Delta tau_p/hbar, after cancelling battery free phase. Its input-isometry consequence is
+
+    U_p J0 = J_beta E_p.
+
+The occupied-ancilla phase is not silently removed on the whole Hilbert space. Vacuum alone makes it trivial on the promised domain. The old K-energy distribution is preserved. The actual imperfect release is propagated through the actual later channel; it is never replaced by a freshly pure packet.
+
+Let alpha=Delta r_on/hbar, beta=Delta r_off/hbar, with actual forward time-ordered R_on and R_off. Put L_b=R_off exp(i beta N_S), R_b=exp(i alpha N_S) R_on. Both the semantic word and finite emitted conserving word satisfy the exact ramp/phase interface, with their approximation charged only on the promised input domain. The true matrix target is
+
+    A_target=L_b* V E_p* R_b*.
+
+The cancellation L_b A_target R_b E_p=V fixes the order. E_p* generally cannot be commuted or replaced by onsite phases. The finite computable unitary supplier must enclose the true unitary target, not assert arbitrary rounded matrices are unitary. The scalar gamma=exp[-i(kappa tau/hbar+Phi)] retains the actual reserve phases and every compiler scalar certificate; no phase is fitted from an output overlap. Preparation reserves have unit residual phase but retain their load and work variation.
+
+The final bridge phase covers the two ramps and plateau only. Preparation already releases real packets and must not be counted twice. Total nominal time is tau_p+r_on+tau+r_off. New guards or physical waits require a new chronology. Post-off comparison evolves under the actual F0 and is not a halt or frozen memory.
+
+## Error and resource claims
+
+For unhalved joint trace norms and separately named vector allowances,
+
+    epsilon_out <= epsilon_0+2 eta_p+4q d_L
+                   +2(eta_program+eta_compile+eta_b+eta_t),
+    d_L=2 sin(pi/[2(L+1)]).
+
+A release trace certificate replaces epsilon_0+2 eta_p. All other errors telescope without actual resets, preserving arbitrary correlations/reference outputs. The stated allocation sums to epsilon. The uniform padded bound fixes tau before target angles and gives fixed-q nominal laboratory time O(epsilon^-4), with sites and preparation time O(epsilon^-1). No classical compilation, oracle or arithmetic time bound is claimed.
+
+The review supplies explicit sufficient constants for all asymptotic requests. Preparation generator/area and phase-generator requests scale as epsilon^2; carrier-frequency and cancellation-input requests can require epsilon^3. Runtime common generator precision epsilon^5 differs from cancellation-input precision epsilon^9. A global long-hold residual epsilon^5 divides to per-field epsilon^6 over O(epsilon^-1) simultaneous sites. A global preparation residual is not a per-site allowance. Old-K numerical target compensation and physical hold mismatch are different channels. Shared parameters must meet the sum of their allocated effects. A numerical gamma approximation costs its own vector allowance; the exact computable expression does not provide free numerical precision. These are sufficient certified requests, not demonstrated hardware tolerances or optimized necessities.
+
+The positive envelope construction includes the rotating-carrier commutator in its derivative bound. The final parallel phase layer includes every driven site. Static complement load c(v), added Delta fields, and dynamic g/2 remain distinct; original old load is added for full incidence. Actual positivity/support/norm/slew need their own certificates and do not follow from a small integrated perturbation, especially at a positive term's kernel. A derivative bound is not a hard spectral-bandwidth theorem.
+
+## Work, moments and counterexamples
+
+Exact preparation costs net modeled drive work mu_B=q Delta(L+1)/2. At ideal release the old/new covariance vanishes; the old state is E_p rho E_p*, and all ancillas are vacuum. Complete resource width is W_A=q(M+1)Delta, not battery-only width W_B=qMDelta. Faulted release correlations and covariance remain paid.
+
+For exact preparation and the finite nominal disjoint-ramp, conserving-plateau protocol,
+
+    W_total=mu_B+Tr K(rho_f-rho)-Tr H_*(rho_b-rho_a),
+    rho_a=R_on E_p rho E_p* R_on*.
+
+Define W_V using rho_V=V rho V* and rho_b,V=R_off* rho_V R_off, keeping the same actual rho_a. Then
+
+    |W_total-W_V| <= (width(K)+q Delta)e_int.
+
+This width-independent first-energy comparison is nominal. It does not absorb all physical/readiness errors from the joint output bound. A separately qualified structured-fault theorem may supply additional charge-transfer estimates; it is not silently a premise here. Generic complete endpoint trace errors cost [width(K)+W_A](delta_0+delta_f)/2 for identical actual F0. Endpoint controls require explicit corrections. A small trace error alone cannot give a coefficient independent of growing resource width; the review's all-occupied mixture verifies this at the actual packet comparator without asserting a local-fault realization.
+
+Preparation release mean/raw-second errors are bounded by W_A e/2 and W_A^2 e/2. The source's variance allowance 3W_A^2 e is conservative (a direct bound gives 3W_A^2 e/2). Do not upgrade it to a uniform later moment claim or erase covariance. General F0 moments retain their actual positive support width. Smaller moment tolerances require stronger preparation precision than the illustrative trace budget.
+
+Absolute work is separately bounded by pulse envelope/carrier variation, all simultaneous phase sites and actual complement ramps. Its fixed-q O(epsilon^-4) bound does not make net work, O(epsilon^-1) preparation energy, fluctuations, microscopic actuator energy and resource return identical.
+
+The q=2,L=2 wrong-clock example is exact: a second branch beginning at t0=2h_p and using an uncompensated local clock produces exp(i t0 Delta N_B/hbar) beta. For Delta t0/hbar=pi it is orthogonal to beta. Arbitrarily large allowed h_p meet the cap/slew conditions, so the example is physically consistent with its stated supplied controls. A calibrated local-clock equivalent with the correct starting phase remains possible. No universal no-go follows.
+
+## Verification and remaining physical supply
+
+Root read the complete new candidate and review, checked the induction and full preparation factorization, noncommuting target order, scalar, error allocation, time/count and calibration substitutions, pulse derivative, centered work identity and wrong-clock algebra. No scientific program or historical fixture was run for this extension. The same-model checker authored the prior bridge review and earlier compiler material; shared history and source exposure limit independence. Its captured metadata checks verify identities only. Original bridge floating propagation retains its existing non-certified-ODE and non-useful small-packet accuracy limits; it is neither replayed nor upgraded here.
+
+Independent vacuum, isolation, complement actuators, matched new gaps, phase-locked number-changing preparation, complete runtime alphabet, final simultaneous layers, external timing and physical support/positivity/incidence/slew are still supplied. Native suppliers, restricted-port controllability, autonomous preparation/release/halt, microscopic work storage and indefinite reuse remain open. No audit verdict, main push, science merge, physical axiom or editable prompt changes occur in this decision.
+'''
+(D/'FINAL_QUALIFICATIONS.md').write_text(text)
+r=dict(utc=datetime.now(timezone.utc).isoformat(),disposition='QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT',candidate=pin(S/'DERIVATION.md'),candidate_freeze=pin(S/'FREEZE.json'),exposed_review=pin(R/'REVIEW.md'),review_freeze=pin(R/'FREEZE.json'),controlling_qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),root_read_complete=True,corrections=[],scientific_executions=0,retained_audit=False,canonical_acceptance=None,publication=None,editable_prompt_files_changed=[])
+(D/'ACCEPTANCE.json').write_text(json.dumps(r,indent=2)+'\n')
+(D/'FREEZE.json').write_text(json.dumps(dict(utc=datetime.now(timezone.utc).isoformat(),members=[{**pin(D/n),'path':n} for n in ('FINAL_QUALIFICATIONS.md','ACCEPTANCE.json')]),indent=2)+'\n')
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),freeze=pin(D/'FREEZE.json'),scientific_executions=0)))

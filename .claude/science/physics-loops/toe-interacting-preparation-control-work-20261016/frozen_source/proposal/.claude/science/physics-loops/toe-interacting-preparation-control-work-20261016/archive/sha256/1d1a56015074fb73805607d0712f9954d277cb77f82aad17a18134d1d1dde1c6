@@ -1,0 +1,131 @@
+{
+  "scope": "selected exact necessary sources; no recursive imported theorem revalidation",
+  "sources": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "bytes": 15425,
+      "coverage": "complete current read; ready-input bridge proof"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/SOURCE_MANIFEST.json",
+      "sha256": "f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8",
+      "bytes": 2133,
+      "coverage": "identity metadata; not blanket validation of listed ancestors"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "bytes": 393,
+      "coverage": "parent source freeze"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "bytes": 23761,
+      "coverage": "complete current read; exposed review and work-bound qualification"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d",
+      "bytes": 5914,
+      "coverage": "identity-only historical review freeze; scientific runs not replayed"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "bytes": 8077,
+      "coverage": "complete current read; controlling bridge scope"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "bytes": 2216,
+      "coverage": "complete current read; conditional source decision"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FREEZE.json",
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+      "bytes": 367,
+      "coverage": "controlling bridge decision freeze"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "bytes": 170504,
+      "coverage": "canonical wrapper lines1-108 read; necessary preparation bodies read at original sources; other historical bodies captured not newly revalidated"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "bytes": 15499,
+      "coverage": "complete current read; explicit preparation supplier and arbitrary decoupled old factorization"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "bytes": 8398,
+      "coverage": "complete current read; preparation controlling conditions"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "bytes": 4509,
+      "coverage": "previous complete read reused after exact identity refresh"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FREEZE.json",
+      "sha256": "d1e77415a76ba2aa9e78d52fdf7da37f0c2a8e3d027124e92fdc33532c505fd1",
+      "bytes": 741,
+      "coverage": "identity-only preparation decision freeze"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "bytes": 19803,
+      "coverage": "previous complete read reused; section6 re-read in full for private-branch preparation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "bytes": 6058,
+      "coverage": "complete current read; supplied-word parent scope and historical pending uniform status"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "bytes": 2308,
+      "coverage": "previous complete read reused at same identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "bytes": 705,
+      "coverage": "identity-only comb decision freeze"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "bytes": 12165,
+      "coverage": "previous complete read reused at same identity; uniform target-matrix word bound"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "bytes": 6625,
+      "coverage": "complete current read; uniform target count, finite search and precision distinctions"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7",
+      "bytes": 2594,
+      "coverage": "previous complete read reused at same identity; supersedes parent historical pending statement"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1",
+      "bytes": 397,
+      "coverage": "identity-only uniform decision freeze"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Proposed accuracy-scaled weak-mediator family
+New root-original corollary to PROPOSAL.md22e62c14 and DYADIC_ADDENDUM.md2ad3573f. UNCHECKED until separately reviewed. The same fixed old K and fixed full target W are retained, but the runtime is now chosen independently of the earlier external target word.
+
+For each integer m>=0 set epsilon=2^-m and T_m=2^(2m+32), w=24. Keep theta=atan(4/3), delta=theta/pi, Delta=2-delta, q=theta/T_m, gx=sqrt(q Delta/2), gy=sqrt(q), r=2(gx+gy), and the same positive four-port plus Bell-complement Hamiltonian. All extra microscopic coupling permissions, supplied Bell state, input/time interface and native-identification limits remain.
+
+The ideal residual proof requires only T>=24, delta>1/4, v<4/sqrt(T), and the stated spectral identities. Its actual comparator error on [T,T+24] is bounded by
+A(T)=12352/sqrt(T)+132480/T,
+where132480=132096+384 includes the quiet-window effective drift.
+
+For T=T_m,
+A(T_m)/epsilon <= 12352/2^16 +132480/2^32 <1/4.
+The second summand has an extra2^-m factor, bounded by1. Thus the full ideal isometry error is <epsilon/4 for every m>=0. Since r<4/2^(m+16)<=2^-14<delta, source and old added incident caps remain<2. The old total incident load includes the fixed norm3 K block. The exact endpoint H2 and scalar proof remain valid at this T_m; no recurrence integer or huge target word is needed.
+
+Let p=3m+38. Supply positive lower dyadic approximants gxhat,gyhat,Deltahat with common denominator2^p and absolute error<=2^-p. The floor-defined coefficients are one mathematical choice; a concrete equality-safe interval compiler has not yet been supplied. gx,gy>2^-(m+17), so the lower rounded coefficients remain positive. Coefficient numerators need at mostp+1 bits and the common denominator hasp+1 bits. Lower rounding preserves added incident caps.
+
+Retain actual reserve rhat=2(gxhat+gyhat) in source output chihat(t)=exp(-irhat t)Phi+. The nonscalar Hamiltonian defect is at most5*2^-p. Since t<=T_m+24<2T_m, its Duhamel allowance is
+5(T_m+24)2^-p <10*2^(2m+32)*2^-(3m+38)=(5/32)epsilon.
+Hence total full-isometry error is <(1/4+5/32)epsilon=(13/32)epsilon<epsilon/2, and the generic unhalved joint-reference trace error is <epsilon. The initial supplied source may instead have unhalved trace defect delta_init, yielding final trace error<epsilon+delta_init by contractivity and the triangle inequality; no source is discarded.
+
+Consequently this supplied-model family uses exactly two source qubits, constant positive incident caps, zero runtime slew, time T_m=2^32 epsilon^-2, couplings O(epsilon), and sufficient absolute coefficient accuracy O(epsilon^3), with O(log(1/epsilon)) rational bit lengths. These are conditional asymptotic resource statements for a fixed target, not efficient physical implementation or necessary calibration laws. No actually computed dyadic coefficient list, native coupling supplier, Bell preparation, internal clock, exact halt or reuse is claimed. The large numeric prefactor and unspecified physical E0/time units remain explicit.
+
+For epsilon=2^-44, T_m=2^120, smaller than the prior fixed target duration. This is a changed runtime contract, not a correction or optimization of the earlier external positive-onsite word. The unchanged full-energy initial moment formulas and static conservation apply at each m; resource comparisons must keep new interaction permissions visible.
+

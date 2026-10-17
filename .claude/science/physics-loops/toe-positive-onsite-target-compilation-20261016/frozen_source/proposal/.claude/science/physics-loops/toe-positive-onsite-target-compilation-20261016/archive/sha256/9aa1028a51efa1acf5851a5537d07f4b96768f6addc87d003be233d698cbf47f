@@ -1,0 +1,307 @@
+# One compressed actual-time target word: proposed next certificate
+
+Status: a source-only plan and conditional calibration lemma. No target
+calibration, new endpoint integration, word certification or physical run
+was launched. The root chart, chart certificate and explicit recurrence
+are provisional dependencies, not accepted premises silently promoted here.
+The same author wrote the two numerical parent candidates; this is exposed
+continuation, not independent validation.
+
+## Decision: one local calibration is enough
+
+The smallest addition justified here from these exact parents is one list of 16 rational amplitude
+displacements, together with a rigorous complete-word residual against a
+specified actual-time target. It does not require another Jacobian, another
+recurrence search, a generic matrix logarithm oracle, or a list of millions
+of different calibrated blocks. All identical blocks can use one calibrated
+template, then be represented by exact positive repetition counts.
+
+For a bounded first instance, fix the exact Gaussian-rational target
+
+    W = ((3+4i)/5) (3I+4i X tensor X)/5
+      = [(9+12i)I+(-16+12i)XX]/25.                             (1)
+
+This target was chosen before any calibration. It is not a retrospective
+name for an emitted endpoint. W is unitary, maps |00> to a superposition
+of |00> and |11> with nonzero Schmidt magnitudes 3/5 and 4/5, and has
+determinant (-527-336i)/625, not 1. Literal K=2I+ZZ is diagonal and cannot
+produce that mixing by free evolution alone. W commutes with K; that
+restriction deliberately makes the first root certificate simple and does
+not establish a generic matrix compiler or a nonzero-work target.
+
+Reuse exactly
+
+    n=98611368294597721931914764889297593425141587534996842205,
+    M=147975046=floor(16/r)+1,
+    r=25/231211008,
+    T=24Mn
+     =350208522228384946904887108861751911074590975328100424043350794320.
+
+Fix these numbers BEFORE forming V_T=W exp(-iTK). The requested ideal
+laboratory endpoint is this actual-time comparator, with proposed operator
+error epsilon=2^-40. In physical units the laboratory duration is
+T_lab=(hbar/E0)T and K_phys=E0(2I+ZZ), so the comparator is unchanged in
+dimensionless notation. The explicit n is much larger than the parent's
+existential Q^4 scale: it improves explicitness only, not duration bounds.
+
+## Exact compressed word and order
+
+Let a0 be the frozen 24 nominal amplitudes, F(a) the complete template
+endpoint, U0=F(a0), and D=U0^n. If one calibrated template F(a) has been
+found, emit the chronological schedule
+
+    repeat M times:
+        calibrated 24-slot template F(a)
+        repeat n-1 times: nominal 24-slot template U0.
+
+Its complete matrix is B(a)^M, where
+
+    B(a)=U0^(n-1)F(a)=D U0^dagger F(a).                       (2)
+
+The adjoint in the second expression is an algebraic identity for checking;
+the physical word has only the positive-time schedule in the first
+expression. No inverse-time actuator is requested. The proposed serialized
+word is an exact repetition tree, one nominal amplitude list, one calibrated
+list and the integers M,n-1. Compression does not compress physical time.
+
+## A root with explicit phase intervals and no equality oracle
+
+Because XX and ZZ commute, the four rank-one projectors
+
+    P_(z,x)=(I+zZZ)(I+xXX)/4,  z,x in {+1,-1},
+
+are exact and sum to I. W has eigenvalue w=(-7+24i)/25 for x=+1 and
+1 for x=-1. Define
+
+    phi_w=pi/2+2 atan(1/7),     exp(i phi_w)=w.
+
+Indeed atan(4/3)=pi/4+atan(1/7), and the half-angle formula gives
+exp(2i atan(4/3))=(3+4i)^2/25. Thus no numerical spectral basis is needed.
+
+Choose integers k and m_(z,x) and certified phase intervals for
+
+    theta=T-2pi k,
+    phi_(z,x)=1_(x=+1) phi_w-(2+z)theta-2pi m_(z,x),
+    |phi_(z,x)|<4.                                             (3)
+
+Then the exact unitary
+
+    Z=sum_(z,x) P_(z,x) exp(i phi_(z,x)/M)
+
+satisfies Z^M=V_T, including the scalar, and
+
+    ||Z-I||<=max|phi_(z,x)|/M<4/M<r/4.                         (4)
+
+These are open interval certifications, not principal-branch equalities.
+A concrete finite construction uses 512-bit dyadic intervals for pi from
+Machin's formula 16 atan(1/5)-4 atan(1/239), with 128 terms of each
+alternating arctangent series and exact remainder bounds. The identity can
+be checked from tan(4 atan(1/5))=120/119 and the subtraction formula with
+atan(1/239), together with its quadrant. Use the same 128-term series for
+atan(1/7). This is a proposed implementation, not a library precision claim.
+
+Take k as the nearest integer to T/(2 pi_mid), using an exact rational
+midpoint, and similarly reduce each small phase by a nearest integer.
+Tie choices may be deterministic; no exact transcendental equality must
+be decided. Since T<2^220, the absolute phase uncertainty from a pi interval
+of width <=2^-508 is far below 2^-280. Form the arctangent partial sums and
+remainders exactly, then round the combined pi interval outward to 512-bit
+endpoints; the proposed width bound has ample rounding allowance. Rounding to the nearest approximate
+multiple leaves a central angle near [-pi,pi], with a generous open margin
+to (-4,4). The certificate must actually verify the interval containments
+in (3), rather than infer them from an unverified decimal reduction.
+
+For direct comparison, the same theta interval supplies zeta=exp(-iT)
+=exp(-i theta). Then exp(-iTK)=diag(zeta^3,zeta,zeta,zeta^3), so V_T has a
+direct exact target enclosure independent of a root branch. Taylor order
+256 for exp(iu), |u|<=4, has tail bounded by 81*4^257/257!; directed integer
+evaluation and this tail suffice for the proposed phase-enclosure stage.
+The exact target W is rational, not a floating approximation to (1).
+
+## Conditional bounded calibration lemma
+
+Use the parent's exact rational approximate inverse, here denoted R_inv
+to distinguish it from any target root. Its frozen residual fraction gives
+
+    ||I-R_inv A||<=2^-38,    ||R_inv||<=B=63,
+    L=4096/225, c=16/15,
+    t=25/229376=1/(8BL),     r=t/(16B).
+
+The strengthened 2^-38 bound is from the chart's actual squared residual
+intervals, not its weaker nominal acceptance threshold 1/2. It is an explicit
+provisional dependency and must survive separate checking.
+
+Write G(x)=coeff Im(U0^dagger F(a0+x)), with the original selected-coordinate
+order, and set y=coeff Im(D^dagger Z). The recurrence gives ||D-I||<10^-13,
+and (4) gives ||D^dagger Z-I||<r/2, hence ||y||<r/2. Define
+
+    Phi_y(x)=x+R_inv[y-G(x)].                                 (5)
+
+On the radius-t ball,
+
+    ||D Phi_y||<=||I-R_inv A||+B L t
+                 <=2^-38+1/8<1/4=:q_bound.
+
+Also ||Phi_y(0)||<=Br/2=t/32. Therefore Phi_y maps that ball within
+radius (1/4+1/32)t=9t/32. It has a unique fixed point x*, with ||x*||<t.
+R_inv is invertible because R_inv A is invertible, so G(x*)=y. Both
+U0^dagger F(a0+x*) and D^dagger Z have positive definite real part; the
+parent's imaginary-part uniqueness argument gives
+
+    F(a0+x*)=U0 D^dagger Z,   B(a0+x*)=Z.
+
+Thus one exact local solution suffices for the repeated target word.
+
+There is a bounded numerical supplier proposal for this one solution:
+start x0=0 and take exactly 32 approximate iterations of (5). Enclose y
+and each G(x_k) with vector 2-norm error <=2^-108; for example require
+each of their 16 coordinate radii <=2^-110, and take exact rational
+midpoints. Apply the exact rational R_inv and round every new displacement
+to a multiple of 2^-128. The rounding vector norm is <=2^-127. Therefore
+the error of each implemented map value is at most
+
+    d <=63*(2*2^-108)+2^-127 <2^-100.
+
+Since d<t/32, every iterate remains strictly inside the radius-t ball
+(in fact the radius-t/2 ball), and contraction gives
+
+    ||x_32-x*||<=t*4^-32+(4/3)*2^-100.                       (6)
+
+The exact emitted word then satisfies
+
+    ||B(a0+x_32)^M-V_T||
+       <=4cM [t*4^-32+(4/3)*2^-100] <2^-45<epsilon.          (7)
+
+For the last inequality it suffices that M<2^28, 4c<5 and t<2^-13:
+the first term is <5*2^-49<2^-46, and the second is <2^-69.
+No new Jacobian is needed. G(0)=0 is exact, so at most 32 new template
+endpoint evaluations suffice: 31 intermediate nonzero iterates and the
+final template. The actual program must certify the widths and domain at
+every stage; this plan does not assert those executions already exist.
+
+The selected-coordinate precision is distinct from the old nominal repeat
+precision. Parameter-fit/rounding error in the varied template is repeated
+M times, not Mn times. In contrast a physical fault in every nominal
+template is repeated Mn times and needs the separate full-duration budget.
+
+## Minimal final acceptance test, independent of solver success rhetoric
+
+The additional certificate should contain the 16 exact dyadic displacements,
+the phase-reduction integers/intervals, calibrated full template enclosure,
+complete schedule tree and a direct whole-word residual. The finite iteration
+log shows how the witness was obtained; final acceptance should primarily
+use the emitted word's full matrix comparison, not a claimed solver tolerance.
+
+Reuse the recurrence's fresh degree-320, scale-2^768 endpoint rectangle
+Uhat and power rectangle Dhat=Uhat^n. Their separate analytic errors are
+
+    ||Uhat-U0||<=e0=384*81/2^321,
+    ||Dhat-D||<=eta_D=2n e0.
+
+Enclose the final calibrated template Fhat with the same N320/8-step/S768
+method, so ||Fhat-F||<=e_a=e0 for amplitudes in the permitted box. Form the
+auxiliary interval product Bhat=Dhat Uhat^dagger Fhat. Its exact-product
+analytic error from B in (2) is at most the explicit rational
+
+    beta=eta_D(1+e0)(1+e_a)+e0(1+e_a)+e_a.                  (8)
+
+All interval rounding is already enclosed, and is additional to (8).
+Binary-power Bhat to M. Since B is unitary, if M beta<1/2 then
+
+    ||Bhat^M-B^M||<=2M beta.                                (9)
+
+The existing parent's eta_D is <10^-35, so this stage has ample analytic
+margin for epsilon=2^-40; nevertheless check the actual rational inequality.
+No enormous power n needs to be recomputed: Dhat is an immutable input.
+
+Subtract a direct enclosure of V_T from the final power rectangle. If D_res^2
+is the sum of squared maximum absolute real and imaginary entry endpoints,
+the decisive finite strict test is
+
+    epsilon-2M beta>0,
+    D_res^2 < (epsilon-2M beta)^2.                           (10)
+
+The normalized dyadic scale must be included in D_res^2. This tests every
+old input and reference, including global phase. It remains valid even if
+the proposed contraction implementation has a selection defect, provided
+the final enclosure and legal amplitude checks are independently sound.
+It is the smallest new substantive certification obligation: an actual
+rational calibrated word with (10), not another existence theorem.
+
+## Bounded executable specification — not launched
+
+One future frozen program may perform, in order:
+
+1. Verify the exact parent identities, R_inv, nominal input, Uhat and Dhat.
+   Fix n,M,T,W and epsilon before any calibration or target-dependent step.
+2. Construct the rational/directed phase certificates in (3), Z and direct
+   V_T. Preserve all reduction integers, tail bounds and full rectangles.
+3. Execute exactly 32 iterations with the stated midpoint/rounding rule,
+   checking every coordinate radius and each squared radius-t domain test.
+   Use N320, eight steps per slot, S768 for the new endpoint evaluations.
+   Save every exact iterate and enclosure; stop on the first failed bound.
+4. Emit the exact schedule tree and calibrated amplitude list. Use (8)–(10)
+   to check the complete compressed word, retaining every final powering
+   rectangle and all actual source/argv/cwd/stream/exit records.
+
+Proposed limit: one 600-second-wall attempt, no unbounded search, no automatic
+precision/iteration increase, no alternate target after failure. This is
+a specification for a possible next authorized task, not a launch request
+or a claim that the code exists. Any failure should distinguish insufficient
+interval width, convergence/rounding, illegal amplitude, and final residual;
+retain it before diagnosing a changed attempt. No desired PASS count is used.
+
+## Scalar, physical accuracy and resource ledger
+
+For the calibrated displacement x, the nominal scalar action is
+alpha0=13027/240, and the exact whole-word scalar action is
+
+    alpha_total=Mn alpha0+(8M/15)sum_(selected j) x_j.        (11)
+
+The full endpoint contains exp(-i alpha_total); no scalar is discarded or
+corrected for free. The final comparator includes det W and the old scalar
+from exp(-iTK). All pulse coefficients, old terms and positive reserves
+remain literal. Controls still have common added incident cap 2E0 and slew
+16E0^2/hbar, with zero controls/derivatives at joins. The word has 24Mn
+pulses and duration T_lab; it is not physically short because its encoding
+is short. Its absolute modeled control variation is <=72Mn E0.
+
+If the actual generator has integrated full-norm defect eta_drive over this
+actual duration, Duhamel adds eta_drive to epsilon. Uniform amplitude error
+delta_a on all 24Mn pulses costs <=c(24Mn)delta_a. Identity faults count.
+Clock, waveform and old-drift faults need their actual integrated bound;
+an endpoint-time mismatch adds the corresponding old-evolution error.
+The exact 128-bit displacement representation is not a claim that physical
+128-bit calibration over the enormous total duration suffices. For example,
+T<2^220 and c<2 make delta_a<=2^-300 sufficient for an amplitude-only
+contribution <2^-79, but no device supplying that accuracy is provided.
+
+The operator comparator extends to arbitrary unknown old/reference inputs,
+with joint trace error <=2(epsilon+eta_drive), plus any initial trace error.
+There are no added quantum registers; external controller outputs are
+unmodeled, not silently restored. At zero-control endpoints the actual work
+is Tr K(rho_f-rho_i). Both initial/final trace errors cost
+width(K)(delta_i+delta_f)/2. This chosen W commutes with K, so its ideal
+actual-time comparator has zero net work for every input, despite entangling
+and mixing computational states. The enormous absolute work-variation
+allowance remains; zero net work is not zero apparatus cost. Residual
+endpoint controls require their own expectation terms. Nothing here supplies
+autonomous timing, microscopic drive bookkeeping, halt or infinite reuse.
+
+## Scope and recovery
+
+No mathematical obstruction to this restricted next certificate was found.
+The surviving concrete obligation is to produce the 16 displacements and
+actual enclosures, then separately check them. The phase reduction and
+32-step contraction are proposed derived machinery, not executed evidence.
+The chosen commuting entangler avoids a generic target-logarithm problem;
+success would remain a one-target fixture and would not certify a uniform
+efficient compiler for arbitrary W or arbitrary old K.
+
+The root proposal 3d426ff... was reread completely. The exact chart freeze
+485d29... and recurrence freeze 33f7d3... and the necessary immutable bodies
+are mapped in SOURCE_MANIFEST.json. Their complete arguments were already
+authored/read and are reused only at these identities. The source capture
+refreshes hashes without rerunning either science process. No sibling review
+or new proposal was inspected. No numerical target computation was launched.
+No parent, W, Git, canonical, PR, audit, prompt, model, axiom or lock changed.

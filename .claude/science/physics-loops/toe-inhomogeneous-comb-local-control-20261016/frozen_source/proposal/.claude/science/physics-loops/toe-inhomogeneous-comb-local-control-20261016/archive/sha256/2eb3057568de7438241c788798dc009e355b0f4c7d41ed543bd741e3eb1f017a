@@ -1,0 +1,142 @@
+{
+  "kind": "metadata_only_final_source_verification",
+  "utc": "2026-10-16T16:12:24.997186+00:00",
+  "scientific_execution": false,
+  "argv": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate/runs/final_verification/executed_source.py"
+  ],
+  "executed_source_sha256": "1457dea79ec1f7a65d189a567c7d82e513bc81b0de0a79a1403a931ede4b9869",
+  "source_files_verified": 25,
+  "source_identities": [
+    {
+      "capture": "sources/local_control/body.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/local_control/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/local_control/FINAL_QUALIFICATIONS.md",
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sparse/body.md",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sparse/FREEZE.json",
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sparse/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sparse/FINAL_QUALIFICATIONS.md",
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sine_preparation/body.md",
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sine_preparation/FINAL_FREEZE.json",
+      "sha256": "928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sine_preparation/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/sine_preparation/FINAL_QUALIFICATIONS.md",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/prior_exposure/sparse_REVIEW.md",
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/prior_exposure/sparse_FREEZE.json",
+      "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/scope/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md",
+      "sha256": "2e8ec4a860739a5edfc1cae9817a1bef5e074a7059794bfb78a203b5aa343576",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/scope/INTERACTING_CONTROLLER_HISTORY_APPLICATION.md",
+      "sha256": "241e2b2cecbe991767e57ae65b8783e313b8b75df4e8803a2f9da30bcfc6e831",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "current_original_matches": true
+    },
+    {
+      "capture": "sources/instructions/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "current_original_matches": true
+    }
+  ],
+  "source_capture_receipt_and_full_stream_hashes_verified": true,
+  "scope_screen_extractions_verified": true,
+  "scientific_programs_executed_in_task": 0,
+  "mathematical_truth_certified_by_this_script": false,
+  "root_comparison_exposure_before_original_freeze": false
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "basis_pair": [
+      4,
+      8
+    ],
+    "givens_count": 608,
+    "givens_start": 1520,
+    "phase_count": 1520,
+    "phase_start": 0,
+    "sector": 1
+  },
+  {
+    "basis_pair": [
+      6,
+      12
+    ],
+    "givens_count": 608,
+    "givens_start": 3648,
+    "phase_count": 1520,
+    "phase_start": 2128,
+    "sector": 2
+  },
+  {
+    "basis_pair": [
+      7,
+      14
+    ],
+    "givens_count": 608,
+    "givens_start": 5776,
+    "phase_count": 1520,
+    "phase_start": 4256,
+    "sector": 3
+  }
+]

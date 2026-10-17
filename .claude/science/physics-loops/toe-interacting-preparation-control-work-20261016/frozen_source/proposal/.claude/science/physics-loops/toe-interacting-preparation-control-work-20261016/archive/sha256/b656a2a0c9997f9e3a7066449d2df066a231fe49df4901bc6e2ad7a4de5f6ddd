@@ -1,0 +1,78 @@
+"""Bounded actual launcher for metadata capture, with immutable launch snapshots."""
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import resource
+import subprocess
+import sys
+import time
+
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def stamp():
+    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+
+def limits():
+    resource.setrlimit(resource.RLIMIT_CPU, (30, 30))
+
+
+def main():
+    root = Path(__file__).resolve().parent
+    run = root / "runs" / "source_capture"
+    run.mkdir(parents=True, exist_ok=False)
+    source = (root / "capture_sources.py").read_bytes()
+    launcher = Path(__file__).read_bytes()
+    spec = (root / "SOURCE_SPEC.json").read_bytes()
+    (run / "executed_source.py").write_bytes(source)
+    (run / "executed_launcher.py").write_bytes(launcher)
+    (run / "source_spec_at_launch.json").write_bytes(spec)
+    argv = [sys.executable, "-B", str(run / "executed_source.py"),
+            "--root", str(root), "--spec", str(run / "source_spec_at_launch.json")]
+    receipt = {
+        "scope": "Metadata-only source copying, SHA256 identity and unchanged-body checking; no science replay.",
+        "launcher_argv": [sys.executable, *sys.argv],
+        "argv": argv,
+        "cwd": str(root),
+        "source_sha256": digest(source),
+        "launcher_sha256": digest(launcher),
+        "source_spec_sha256": digest(spec),
+        "python": sys.version,
+        "cpu_limit_seconds": 30,
+        "wall_timeout_seconds": 45,
+        "started_utc": stamp(),
+        "scientific_programs_executed": 0,
+    }
+    (run / "LAUNCH.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    begin = time.monotonic()
+    with (run / "stdout").open("wb") as stdout, (run / "stderr").open("wb") as stderr:
+        try:
+            proc = subprocess.run(argv, cwd=root, stdout=stdout, stderr=stderr,
+                                  timeout=45, check=False, preexec_fn=limits)
+            receipt["exit_code"] = proc.returncode
+            receipt["timeout"] = False
+        except subprocess.TimeoutExpired:
+            receipt["exit_code"] = None
+            receipt["timeout"] = True
+    receipt["finished_utc"] = stamp()
+    receipt["elapsed_seconds"] = time.monotonic() - begin
+    receipt["streams"] = {name: {"bytes": (run / name).stat().st_size,
+                                      "sha256": digest((run / name).read_bytes())}
+                          for name in ("stdout", "stderr")}
+    receipt["source_after_sha256"] = digest((root / "capture_sources.py").read_bytes())
+    receipt["launcher_after_sha256"] = digest(Path(__file__).read_bytes())
+    receipt["spec_after_sha256"] = digest((root / "SOURCE_SPEC.json").read_bytes())
+    (run / "EXECUTION.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    print(json.dumps({"run": str(run), "exit_code": receipt["exit_code"],
+                      "timeout": receipt["timeout"],
+                      "source_sha256": receipt["source_sha256"]}, sort_keys=True))
+    if receipt["exit_code"] != 0 or receipt["timeout"]:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

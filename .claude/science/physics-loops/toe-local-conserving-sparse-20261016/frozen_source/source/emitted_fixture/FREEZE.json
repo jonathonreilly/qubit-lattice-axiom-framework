@@ -1,0 +1,116 @@
+{
+  "frozen_utc": "2026-10-16T15:20:21.811671+00:00",
+  "members": [
+    {
+      "bytes": 2076,
+      "path": "EXPOSURE.md",
+      "sha256": "78380cac22dc307263ef4b15f7f5375687554f6fd47f587ceb7a19ff852d59d6"
+    },
+    {
+      "bytes": 1174,
+      "path": "LAUNCH_CONTEXT.md",
+      "sha256": "c2e0892b6bab53ce18e817a4918a8ec776f1a07bc7c6abaaa45806a9ba9120f4"
+    },
+    {
+      "bytes": 12442,
+      "path": "REVIEW.md",
+      "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649"
+    },
+    {
+      "bytes": 2347,
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "7e1e3a54d00c7128d575ccec5113c0e073f95b58751ce07c8a014d8fd808312a"
+    },
+    {
+      "bytes": 17836,
+      "path": "emitted_word_fixture.py",
+      "sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8"
+    },
+    {
+      "bytes": 2261,
+      "path": "run_fixture.py",
+      "sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5"
+    },
+    {
+      "bytes": 2130,
+      "path": "runs/attempt_01/EXECUTION.json",
+      "sha256": "fb0fa13bec56ba4560fd7bd3a59671a0a0e4cc3f293cd3f4834f7b9d6895f145"
+    },
+    {
+      "bytes": 2261,
+      "path": "runs/attempt_01/launcher_at_launch.py",
+      "sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5"
+    },
+    {
+      "bytes": 4652,
+      "path": "runs/attempt_01/output/RESULT.json",
+      "sha256": "c71e4452d2e05b6758b94766b7ecc8784df1de00f458357aa19bbf3a27935611"
+    },
+    {
+      "bytes": 13288,
+      "path": "runs/attempt_01/output/complete_matrices.npz",
+      "sha256": "de8316769e13fde208e22bea19adab8c9d593ba0d82f547dbe01b853876248fd"
+    },
+    {
+      "bytes": 438291,
+      "path": "runs/attempt_01/output/logical_word.json",
+      "sha256": "c6a7240b290facabd2b0bab76e1f28cae596bee628c3abcc203dee69b2d65313"
+    },
+    {
+      "bytes": 125451,
+      "path": "runs/attempt_01/output/mutant_logical_word.json",
+      "sha256": "ff4c9bac0ad56d910836b9fb1669c3f9799d5c57cda8beba38ba0ba2195c14da"
+    },
+    {
+      "bytes": 525853,
+      "path": "runs/attempt_01/output/mutant_routed_word.json",
+      "sha256": "91fe3512c8480f31391a629125c036fffc8b008109c31c56ae7ee6b944aba8fd"
+    },
+    {
+      "bytes": 2998963,
+      "path": "runs/attempt_01/output/routed_word.json",
+      "sha256": "cef2bddf3c37c903361aac2d8cf60b27a39ac3b4fbd8d2772fb4318c729cf289"
+    },
+    {
+      "bytes": 512,
+      "path": "runs/attempt_01/output/segments.json",
+      "sha256": "ee9413961e254449a22c67cbc2980330cbe897e84e4088760742a27e0cec5b04"
+    },
+    {
+      "bytes": 17836,
+      "path": "runs/attempt_01/source_at_launch.py",
+      "sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/attempt_01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4727,
+      "path": "runs/attempt_01/stdout.txt",
+      "sha256": "4e279574f87ea9dfabf4f98de5db201801892f93f6f1258fcbc098f7277a9ba9"
+    },
+    {
+      "bytes": 4670,
+      "path": "seal_packet.py",
+      "sha256": "182d427fa2ef5d16b17f83b338296ad52ba0568fe5a988bd6f977a96003fe780"
+    },
+    {
+      "bytes": 31922,
+      "path": "sources/control_DERIVATION.md",
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60"
+    },
+    {
+      "bytes": 30201,
+      "path": "sources/sparse_DERIVATION.md",
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "bytes": 3916,
+      "path": "sources/sparse_FREEZE.json",
+      "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+    }
+  ],
+  "status": "Frozen numerical evidence only; parent source unchanged and sparse acceptance pending."
+}

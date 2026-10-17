@@ -1,0 +1,71 @@
+"""Record root's qualified analytical disposition; metadata only, no scientific replay."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1];S=N/'reflection_preparation_root_proposal';R=N/'reflection_preparation_exposed_check';D=N/'reflection_preparation_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+assert not D.exists()
+assert pin(S/'PROPOSED_LEMMAS.md')['sha256']=='9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd'
+assert pin(S/'FREEZE.json')['sha256']=='280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68'
+assert pin(R/'REVIEW.md')['sha256']=='7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01'
+assert pin(R/'FREEZE.json')['sha256']=='ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa'
+for root in (S,R):
+ for row in read(root/'FREEZE.json')['members']:same(root/row['path'],row)
+for mode,original,launcher in [('source_capture','capture_sources.py','record_capture.py'),('final_validation','validate_packet.py','seal_review.py')]:
+ r=read(R/'metadata_runs'/mode/'EXECUTION.json')
+ assert r['exit_code']==0 and r['timed_out'] is False and r['wall_timeout_seconds']==60 and r['new_scientific_runs']==0
+ assert r['argv'][1]=='-c' and r['argv'][3]==r['source_at_launch']['path'] and r['argv'][4]==str(R/original)
+ for key in ('source_at_launch','recorder_at_launch','stdout','stderr'):same(r[key]['path'],r[key])
+ same(R/original,r['source_at_launch']);same(R/launcher,r['recorder_at_launch'])
+ assert Path(r['stderr']['path']).read_bytes()==b''
+for row in read(R/'SOURCE_MANIFEST.json')['sources']:
+ same(row['original']['path'],row['original']);same(row['capture']['path'],row['capture'])
+ a,b=row['original_byte_interval_half_open'];assert Path(row['original']['path']).read_bytes()[a:b]==Path(row['capture']['path']).read_bytes()
+author=read(N/'runs/reflection_preparation_author_check/EXECUTION.json');assert author['exit_code']==0
+for key in ('child_source_at_launch','source_capture','recorder','stdout','stderr'):same(author[key]['path'],author[key])
+assert author['argv']==['python3',str(S/'author_check.py')] and Path(author['stderr']['path']).read_bytes()==b''
+D.mkdir()
+text='''# Controlling qualifications: reflection-preserving preparation
+
+Root accepts proposal9e28d441 equations(1)-(14) as a conditional analytical construction after complete exposed review7a85a100. The review's explicit finite discriminators and careful error-domain distinctions are adopted within the scope below. This is not retained audit or native physical realization. Original proposal, author source/evidence and review remain unchanged.
+
+Use an even core M=2n>=4, L=M-1, literal positive Delta B, independently admitted vacuum, arbitrary finite decoupled positive old K and arbitrary passive reference. The initial n onsite pi/2 flips, scalar reserves, absolute carriers and endpoint number phase are exact in the exact-mean theorem. The new supplied operators are genuinely three-local F_j=n_(j-1)Y_j(1-n_(j+1)). They are not derived from the earlier two-local alphabet. Opposite-sign mirror pairs are simultaneous with identical envelopes and matched angle errors. The center normalization sqrt(2), full identity reserves and actual overlap at the center are essential.
+
+Each F_j preserves the whole prefix span and JF_jJ=-F_(M+1-j), where J is mathematical reverse-plus-bit-flip. J is not a supplied physical gate. A_k has norm1 on the promised even prefix span; a safe global bound is2/nu_k (and later disjoint pairs actually attain2). Thus eta=sum|delta_k| gives promised input-isometry error<=eta and unhalved complete trace error<=2eta, but global integrated discrepancy is only bounded by2sum|delta_k|/nu_k. Never substitute the restricted eta for a full-operator error budget on arbitrary faulty inputs.
+
+After exact central filling, every matched spreading gate preserves J-evenness. Mean B=n and all odd centered B moments are exact for any matched angles. The physical family additionally assumes |delta_k|<=1, preserving positive complete Q generators and the stated fixed cap. Additive residuals need not be positive. Algebraic symmetry does not certify independently calibrated coefficients, envelopes or initialization.
+
+The literal laboratory carrier R_B(t) uses one absolute clock. With tau_p=Mh fixed first and lambda=2pi k-Delta tau_p/hbar selected by a rational enclosure, full battery free evolution and the final phase cancel to the left of the full spreading/filling word. Complete old aging E_p=exp(-i tau_p K/hbar), including its scalar, remains. U_pJ0=J_beta_delta E_p holds for arbitrary old/reference inputs; there is no preparation promise from arbitrary battery states. Extra idle factors keep their off-domain phases. Known compilers have different shared/private buffer inventories; this M=L+1 core is not automatically bound to any runtime interface, including private M=L+2. A separate exact embedding/composition could be checked later; none is asserted here.
+
+With Q_*=6pi, h>=max(8hbar Q_*/g,sqrt(16pi hbar Q_*/sigma),16pi Delta/sigma) pays both overlapping incident terms and rotating carrier derivative, yielding driven norm<=g/2 and slew<=sigma/2. Baseline incidence and global parallel-phase load remain additional. Every envelope and first derivative vanishes at joins. No hard bandwidth or microscopic waveform supplier follows.
+
+Exact net modeled preparation work is Delta n, since controls vanish at the same F0 endpoints and old K-energy is unchanged. It includes the extensive mean energy supplied in filling. Absolute drive-work variation remains bounded by g[n+2(n-1)+M]+pi Delta[n+2(n-1)], with reserves and final layers paid. Neither quantity models microscopic driver storage, complete controller output or work fluctuations.
+
+The reverse hybrid uses earlier nominal and later actual gates on the even quotient chain. For any diagonal f(|B-n|) with range width F, the error is at most2F sqrt(2/n)eta+F eta^2. In particular
+
+    |Delta Var(B)|<=2sqrt(2/n)(n-1)^2 eta+(n-1)^2 eta^2.
+
+For dimensionless variance tolerance t_v, a sufficient eta is min[t_v/(4sqrt(2/n)(n-1)^2),sqrt(t_v/(2(n-1)^2))]. Divide physical variance tolerance by Delta^2. Intersect with the state allocation and the per-angle premise; eta<=1 suffices for the latter. At fixed physical constants and L=Theta(epsilon^-1), total matched eta=O(epsilon) gives O(epsilon) full state error while mean work stays exact. Uniform per-angle O(epsilon^2) suffices. Absolute variance O(epsilon) still has sufficient total eta=O(epsilon^(5/2)), uniform per-angle O(epsilon^(7/2)). These are sufficient allocations, not general necessities. Actual product structure preserves old K moments and zero covariance; generic coupled faults reopen full F0 cross-moment and covariance obligations.
+
+The symmetry-defect identity uses the full width:
+
+    |Tr[(B-n)sigma]|<=M/4||sigma-Jsigma J||1.
+
+Its Duhamel bound costs initial post-fill symmetry defect plus(2/hbar)integral||E-JEJ||. Apply it only after filling and through spreading in the global interaction picture. Filling and the final number phase do not commute with J. An exact or B-commuting post-spreading phase preserves the resulting mean bound, but a number-changing residual there needs its own commutator integral or trace-width allowance. Generic integrated action zeta gives a sufficient mean error M zeta; an initial trace discrepancy has its own initial energy correction in net work. Old-system coupling and residual endpoint controls retain their actual additional energy terms.
+
+Finite filling, reserve, carrier, endpoint and timing faults must be budgeted, even though matched spreading alone preserves mean. Review equationR7 is a sufficient full-output bound with named disjoint errors; it does not claim exact mean for the enlarged class. Phase-only errors can preserve moments while spoiling the coherent state. The bounded lambda coefficient does not eliminate cancellation precision: M|delta_lambda| and underlying inputs of order epsilon/M^2 can remain necessary sufficient requests for the chosen allocation. This is not a lower bound or a hardware certificate.
+
+Root independently reconstructed the signs, center quotient, scalar, factorization, incident/derivative constants, work identity and reverse-hybrid argument before recording this decision, and read the complete review and its evidence. The M=4 wrong-sign and unmatched-pair calculations show that mean alone does not verify the desired packet and that matching is load-bearing. The omitted-phase M=4 endpoint at odd pi is orthogonal to target despite exact mean. These are analytic discriminators, not additional executed simulations.
+
+There is exactly one supplied author scientific run, on the complete64-dimensional M=6 battery, with complex128 exponentials. Matched eta.22 gives vector error about.15074 and mean3; an unmatched pair gives mean3.03351; wrong center normalization gives error.39313. The nominal residual is2.82e-13. Its chosen endpoint is already a free-number recurrence, so the fixture does not test omission of the final phase, actual absolute carrier or laboratory ODE. The general phase argument and analytic nonrecurrence witness supply that check. It also does not test arbitrary old/reference matrices or general-n/variance/slew claims numerically. No interval, formal or independent numerical validation is asserted.
+
+The author recorder lacked an enforced wall limit and resolved runtime/package versions; its observed2.095-second duration is not an imposed resource cap. Those missing details are not reconstructed. The reviewer read complete supplied code/streams and ran only two bounded metadata identity processes, without replay. Review is same-selected-model, source-exposed with shared parent authorship, not blind replication. Root recording is also metadata only. No canonical source, publication, audit verdict, physical axiom or editable prompt change is implied. Native vacuum/control/clock/measurement suppliers, autonomous release/halt and indefinite reuse remain open.
+'''
+(D/'FINAL_QUALIFICATIONS.md').write_text(text)
+decision=dict(utc=datetime.now(timezone.utc).isoformat(),disposition='QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT',candidate=pin(S/'PROPOSED_LEMMAS.md'),candidate_freeze=pin(S/'FREEZE.json'),exposed_review=pin(R/'REVIEW.md'),review_freeze=pin(R/'FREEZE.json'),controlling_qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),author_execution=pin(N/'runs/reflection_preparation_author_check/EXECUTION.json'),root_read_complete=True,source_exposed=True,blind_independence=False,existing_author_scientific_executions=1,new_scientific_executions=0,reviewer_scientific_executions=0,scientific_replays=0,retained_audit=False,canonical_acceptance=None,publication=None,editable_prompt_files_changed=[])
+(D/'ACCEPTANCE.json').write_text(json.dumps(decision,indent=2)+'\n')
+(D/'FREEZE.json').write_text(json.dumps(dict(utc=datetime.now(timezone.utc).isoformat(),members=[dict(pin(D/n),path=n) for n in ('FINAL_QUALIFICATIONS.md','ACCEPTANCE.json')]),indent=2)+'\n')
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),freeze=pin(D/'FREEZE.json'),new_scientific_executions=0)))

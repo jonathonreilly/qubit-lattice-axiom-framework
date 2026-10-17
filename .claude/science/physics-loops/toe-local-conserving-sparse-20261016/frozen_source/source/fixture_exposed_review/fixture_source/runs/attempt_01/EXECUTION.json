@@ -1,0 +1,42 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/source_at_launch.py",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/source_at_launch.py",
+    "sha256": "e7dc44e6493fb9d847390161e109d3fe58d5124fb1ce8e308eeec4dfd93bb7c8",
+    "bytes": 17836
+  },
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/launcher_at_launch.py",
+    "sha256": "fd9229b989b33e4a3959dc42fcbadcc016b82dc0ef56cccd6436b672cf03deb5",
+    "bytes": 2261
+  },
+  "started_utc": "2026-10-16T15:14:50.930833+00:00",
+  "limits": {
+    "CPU_seconds": 90,
+    "wall_seconds": 120,
+    "address_space": "not imposed"
+  },
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "returncode": 0,
+  "elapsed_wall_seconds": 1.0034517091698945,
+  "finished_utc": "2026-10-16T15:14:51.934683+00:00",
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/stdout.txt",
+    "sha256": "4e279574f87ea9dfabf4f98de5db201801892f93f6f1258fcbc098f7277a9ba9",
+    "bytes": 4727
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/runs/attempt_01/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

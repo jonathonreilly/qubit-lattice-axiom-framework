@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/inhomogeneous_comb_local_control_2026_10_16.py
+runner_sha256: 31fa09e877db85ae4532ee2ced4676024b91959bb8b0cbb851ef2e9e57c20ec5
+input_fingerprint_sha256: 15c1199e828168706372db65f23c5a12712cb031200f2773bfdf983aeab48138
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: matched branches, within-species full SWAP and diagonal cross-species controls supplied
+per_site: literal noninteracting unequal-gap old K and degree-three comb remain supplied
+per_mode: uniform fixed-q logical and laboratory counts exclude classical compilation
+per_block: product-charge-block semantics and word-dependent off-code action retain all outputs
+lattice_wide: two historical exact finite discriminators; no replay, physical test or retained audit
+
+----- stderr -----
+

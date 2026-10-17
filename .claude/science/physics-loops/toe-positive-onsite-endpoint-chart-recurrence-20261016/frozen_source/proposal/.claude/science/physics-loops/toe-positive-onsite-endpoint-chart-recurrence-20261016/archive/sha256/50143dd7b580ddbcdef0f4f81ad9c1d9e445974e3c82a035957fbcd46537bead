@@ -1,0 +1,121 @@
+"""Inspect stored artifacts and elementary ledger arithmetic; no science replay."""
+from pathlib import Path
+from fractions import Fraction as Q
+from datetime import datetime,timezone
+import hashlib,json,sys
+
+out=Path(sys.argv[1]).resolve()
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def check(row,p=None):
+ got=pin(Path(p or row['path']));assert got['bytes']==row['bytes'] and got['sha256']==row['sha256']
+def rat(x):
+ return Q(x['numerator'],x['denominator'])
+def pair(q):
+ q=Q(q);return {'numerator':q.numerator,'denominator':q.denominator}
+
+inp=json.loads((out/'INPUT_MANIFEST.json').read_text())
+for row in inp['sources']:
+ check(row['original']);check(row['capture']);assert row['original']['sha256']==row['capture']['sha256']
+for row in json.loads((out/'SCIENCE_SOURCE_FREEZE.json').read_text())['members']:
+ check(row,out/row['path'])
+receipts=[]
+for label in ('input_capture','source_freeze','recurrence_001'):
+ p=out/'runs'/label/'EXECUTION.json';r=json.loads(p.read_text())
+ assert r['exit_code']==0 and r['timed_out'] is False
+ for key in ('source_at_launch','original_source','recorder_at_launch','stdout','stderr'):check(r[key])
+ assert r['source_at_launch']['sha256']==r['original_source']['sha256']
+ receipts.append(pin(p))
+
+base=out/'recurrence_001_output'
+specs={'ENDPOINT_ENCLOSURE.json':'454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de',
+ 'HEURISTIC_PROPOSAL.json':'4429fa4361c376ed6bc159a120da54563abb325ee0bf0f9097c1a4e8baad4a61',
+ 'POWER_TRACE.json':'2f848fc960ee957e3a97767b191f0fc732a5bff401a9d43d5aab25ea25d5055b',
+ 'RECURRENCE_CERTIFICATE.json':'380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314'}
+artifacts={}
+for name,h in specs.items():
+ assert pin(base/name)['sha256']==h
+ artifacts[name]=json.loads((base/name).read_text())
+endpoint,heuristic,trace,cert=[artifacts[k] for k in specs]
+s=1<<768
+def matrix(a):
+ assert len(a)==16
+ for entry in a:
+  assert len(entry)==4 and all(type(x) is int for x in entry)
+  assert entry[0]<=entry[1] and entry[2]<=entry[3]
+assert endpoint['scale_denominator']==trace['scale_denominator']==cert['scale_denominator']==s
+assert endpoint['taylor_order']==cert['taylor_order']==320
+matrix(endpoint['truncated_endpoint_interval'])
+assert len(endpoint['all_slot_intervals'])==24
+for a in endpoint['all_slot_intervals']:matrix(a)
+n=98611368294597721931914764889297593425141587534996842205
+assert cert['positive_integer_n']==heuristic['selected_positive_integer']==n
+assert len(heuristic['bounded_candidates'])==5
+assert heuristic['reduction_statistics']['iterations']==627
+remaining=n;count=0
+assert len(trace['steps'])==n.bit_length()==187
+previous=None
+for bit,step in enumerate(trace['steps']):
+ assert step['bit_position']==bit and step['multiply_used']==bool(remaining&1)
+ if remaining&1:count+=1
+ elif previous is not None:assert step['result']==previous
+ remaining>>=1
+ assert step['remaining_exponent']==remaining
+ matrix(step['result'])
+ if remaining:
+  matrix(step['next_base']);count+=1
+ else:assert step['next_base'] is None
+ previous=step['result']
+assert remaining==0 and count==cert['interval_matrix_multiplications']==274
+assert trace['steps'][-1]['result']==cert['full_U4_power_interval']
+matrix(cert['full_U4_power_interval']);matrix(cert['power_minus_identity_interval'])
+for k,(power,residual) in enumerate(zip(cert['full_U4_power_interval'],cert['power_minus_identity_interval'])):
+ shift=s if k//4==k%4 else 0
+ assert residual==[power[0]-shift,power[1]-shift,power[2],power[3]]
+sq=Q(sum(max(abs(v[0]),abs(v[1]))**2+max(abs(v[2]),abs(v[3]))**2
+         for v in cert['power_minus_identity_interval']),s*s)
+assert sq==rat(cert['truncated_power_residual_frobenius_square_upper'])
+e0=384*Q(81,1<<321);eta=2*n*e0;r=Q(25,231211008)
+assert e0==rat(endpoint['global_endpoint_operator_error'])==rat(cert['endpoint_analytic_error'])
+assert n*e0<Q(1,2) and eta==rat(cert['analytic_power_error'])<Q(1,10**35)
+assert sq<(Q(1,10**13)-eta)**2 and eta<Q(1,10**13)
+assert rat(cert['explicit_total_operator_norm_upper'])<Q(1,10**13)<r/4
+assert all(cert['checks'].values())
+assert cert['determinant_or_scalar_normalization'] is False
+assert heuristic['determinant_or_scalar_normalization'] is False
+M=16//r+1;Qp=64//r+1
+assert M==147975046 and n>Qp**4
+ledger={'positive_integer_n':n,'recurrence_slot_duration':24*n,
+ 'uniform_duration_M':M,'conditional_uniform_slot_duration':24*M*n,
+ 'nominal_scalar_action_recurrence':pair(Q(13027*n,240)),
+ 'recurrence_absolute_control_variation_upper':72*n,
+ 'analytic_power_error':pair(eta),'analytic_power_error_less_than':pair(Q(1,10**35)),
+ 'strict_total_operator_bound':pair(Q(1,10**13)),
+ 'r_over_4':pair(r/4),'parent_pigeonhole_Q_example':Qp,
+ 'this_n_exceeds_that_Q_fourth_power':True,
+ 'physical_duration_unit':'hbar/E0 per slot; no physical run performed',
+ 'actual_old_and_control_scalar_retained':True}
+(out/'RESOURCE_LEDGER.json').write_text(json.dumps(ledger,indent=2)+'\n')
+files=['DERIVATION.md','READ_GUIDE.md','CHECKPOINT.md','PRELAUNCH.md','certify_recurrence.py',
+ 'record.py','capture_inputs.py','freeze.py','validate_metadata.py','INPUT_MANIFEST.json',
+ 'SCIENCE_SOURCE_FREEZE.json','RESOURCE_LEDGER.json']
+manifest={'created_utc':datetime.now(timezone.utc).isoformat(),
+ 'status':'SOURCE_EXPOSED_RECURRENCE_CANDIDATE_PENDING_SEPARATE_CHECK_AND_ROOT_DECISION',
+ 'parent_status':'Endpoint chart remains provisional in this packet; no later decision inferred.',
+ 'canonical_binding':None,'actual_git_base':None,'publication':None,
+ 'candidate_files':[pin(out/name) for name in files],
+ 'original_source_and_capture_map':inp['sources'],
+ 'science_artifacts':[pin(base/name) for name in specs],
+ 'completed_execution_receipts_before_this_metadata_run':receipts,
+ 'new_science_runs':1,'failed_science_runs':0,'old_science_replays':0,'rigorously_powered_candidates':1,
+ 'heuristic_candidates_considered_before_selection':5,
+ 'coverage':{'analytic':'Complete fresh tail/product/power argument reconstructed in DERIVATION.md.',
+  'code':'Complete authored source, captured before execution; separate code checking pending.',
+  'stored_outputs':'All JSON structures read, all interval endpoints ordered, all 187 trace shapes/bit counts checked; final stored bound arithmetic checked.',
+  'not_recomputed':'No Taylor recurrence, interval matrix product, eigenphase or lattice reduction reexecuted by this validator.',
+  'exposure':'Same author/model as provisional chart, parent exact files known; no sibling science read.'},
+ 'current_metadata_receipt':'runs/metadata_validation/EXECUTION.json (written after this source exits)',
+ 'final_freeze':'FREEZE.json; terminal final_freeze recorder excluded from recursive member closure'}
+(out/'SOURCE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'stored_artifact_validation':'completed','science_reexecuted':False,
+ 'ledger':ledger,'manifest':pin(out/'SOURCE_MANIFEST.json'),'derivation':pin(out/'DERIVATION.md')},indent=2))

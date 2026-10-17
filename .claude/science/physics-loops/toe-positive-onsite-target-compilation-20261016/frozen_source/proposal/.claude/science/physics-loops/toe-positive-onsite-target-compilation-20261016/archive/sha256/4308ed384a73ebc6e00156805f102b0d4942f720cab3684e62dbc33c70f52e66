@@ -1,0 +1,29 @@
+{
+  "freeze": {
+    "path": "FREEZE.json",
+    "bytes": 22438,
+    "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc"
+  },
+  "result": {
+    "path": "RESULT.md",
+    "bytes": 4930,
+    "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60"
+  },
+  "scientific_receipt": {
+    "path": "runs/target_001/EXECUTION.json",
+    "bytes": 2777,
+    "sha256": "4b8f622e076acee771ebd466c96fda8f6fba3b37196dbe45296f86ff3e83bb1a"
+  },
+  "certificate": {
+    "path": "target_001_output/TARGET_CERTIFICATE.json",
+    "bytes": 70692,
+    "sha256": "0849c174b6944ed4514073979c49f38feec98ee057bb6447c6297c88bb4ef866"
+  },
+  "schedule": {
+    "path": "target_001_output/SCHEDULE.json",
+    "bytes": 6629,
+    "sha256": "ccdd7b4c6c1bd5d3a47ee42a5bb8e62a38f4d1567093af54a8131fecd561655c"
+  },
+  "members": 132,
+  "actual_science_success_reported": true
+}

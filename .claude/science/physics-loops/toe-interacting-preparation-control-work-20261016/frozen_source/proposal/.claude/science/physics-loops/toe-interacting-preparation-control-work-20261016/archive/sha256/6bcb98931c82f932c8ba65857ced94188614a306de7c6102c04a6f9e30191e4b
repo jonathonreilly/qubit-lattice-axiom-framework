@@ -1,0 +1,19 @@
+{
+  "kind": "actual_metadata_only_source_capture",
+  "utc": "2026-10-16T17:45:16.437837+00:00",
+  "source_identities_verified": 7,
+  "direct_parent_members_verified": 4,
+  "science_executions": 0,
+  "root_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FREEZE.json",
+    "snapshot": "source_snapshot/interacting_ramp_bridge_root_review/FREEZE.json",
+    "bytes": 367,
+    "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+    "dispatch_identity": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+    "read_coverage": "Complete current-task read. An extra leading e was mistakenly transcribed into the first metadata script from the compact dispatch fragment; failed metadata attempt is preserved. Actual full hash and both independently pinned members checked."
+  },
+  "manifest": {
+    "bytes": 8966,
+    "sha256": "6f88cc0ace6f703e2c77af836e0009b2e15f1a02818080c0c8184d8f44f3e481"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-16T14:47:07.956544+00:00",
+  "parents": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/DERIVATION.md",
+      "bytes": 31922,
+      "sha256": "c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60",
+      "copy": "sources/LOCAL_CONTROL_PARENT.md",
+      "coverage": "Complete argument read and authored in immediately preceding task, then reused unchanged with identity refreshed in this continuation. Current analysis specifically depends on buffered-prefix definition, geometry/control permission, all-output norm bound, fixed-slot phase identity, physical error and work ledger."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_candidate/sources/BAI_MARVIAN_2309.11051v3.pdf",
+      "bytes": 687654,
+      "sha256": "add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8",
+      "copy": "sources/BAI_MARVIAN_2309.11051v3.pdf",
+      "coverage": "Primary v3 PDF, Theorem 1/equation 2 and strict-path qualification already read in parent task; current task read elementary definitions, section III two-qubit reduction, complete relevant section IV exchange and controlled-SU(2) argument through equation 57, and reused the same-version complete relevant section V split-control, same-weight reduction and phase-ancilla arguments through equation 80. Finite base identities were separately checked from Pauli matrices. The entire 38-page article and unrelated appendices are not claimed read or independently validated."
+    }
+  ],
+  "executions": [
+    {
+      "receipt": "runs/exact_sparse_check/EXECUTION.json",
+      "exit_code": null,
+      "started_utc": "2026-10-16T14:33:10.095990+00:00",
+      "finished_utc": "2026-10-16T14:33:10.099525+00:00",
+      "source_sha256": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+      "status": "Launch failed before scientific source execution"
+    },
+    {
+      "receipt": "runs/exact_sparse_check_retry/EXECUTION.json",
+      "exit_code": 0,
+      "started_utc": "2026-10-16T14:33:31.332582+00:00",
+      "finished_utc": "2026-10-16T14:33:32.814989+00:00",
+      "source_sha256": "2ede311427e4e765dfa0f75ac3ad7feeb4af31f5873f42a5bb1c787216c7d565",
+      "status": "Exact finite discriminator completed; general theorem remains analytical and pending review"
+    }
+  ],
+  "precheck_record": "PRECHECK_FINDINGS.md is a byte copy, made after execution, of the provisional checkpoint written before source construction/launch. It was not cryptographically sealed before the check; no such claim is made.",
+  "exposure": "Same author/model continuation; no independent parent validation, no root proposal or review-directory exposure.",
+  "unchanged_parents": true
+}

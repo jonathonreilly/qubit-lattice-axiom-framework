@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-16T17:09:48.286965+00:00",
+  "proposal_input_files_verified": 137,
+  "unchanged_bodies": 6,
+  "metadata_run_receipts_verified": [
+    "build",
+    "inspection",
+    "inspection_02"
+  ],
+  "pinned_methodology_source_comparisons": [
+    {
+      "source": "authority/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "exact_main_object_match": true
+    },
+    {
+      "source": "authority/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "exact_main_object_match": true
+    },
+    {
+      "source": "authority/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "exact_main_object_match": true
+    },
+    {
+      "source": "authority/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "exact_main_object_match": true
+    }
+  ],
+  "current_generated_primary_matches_template": true,
+  "scientific_programs_run": 0,
+  "retained_audit": false
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "source_packet_metadata_seal",
+  "launcher_orig_argv": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/seal_packet.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft"
+  ],
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/metadata_runs/seal/source_and_launcher_at_launch.py",
+    "--validate",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft",
+  "started_utc": "2026-10-16T18:51:43.551249+00:00",
+  "timeout_seconds": 60,
+  "source_and_launcher_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/metadata_runs/seal/source_and_launcher_at_launch.py",
+    "bytes": 5519,
+    "sha256": "14d4d559c9414e0add5568dfe4b81b10c099b1aa6f2c6dd395ce8dc9ab1da61d"
+  },
+  "scientific_programs_run": 0
+}

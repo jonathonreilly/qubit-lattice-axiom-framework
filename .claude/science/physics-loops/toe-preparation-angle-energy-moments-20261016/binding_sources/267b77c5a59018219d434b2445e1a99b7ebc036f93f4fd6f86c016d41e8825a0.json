@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-16T18:33:41.107630+00:00",
+  "family": "angle",
+  "exact_freeze_members": 91,
+  "immutable_bodies": 3,
+  "source_aliases": 45,
+  "archive_objects": 32,
+  "packaging_metadata_mutants": 14,
+  "receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3151,
+      "sha256": "570a65658dfc27238efdc1488451cc2adfaecdefb2d1699e2caf8b958acc4a40"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3189,
+      "sha256": "9e25e98158a6775badea54860abe9eb43e126edbfdb9fef1c2555938441323b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3143,
+      "sha256": "4df30f14c33d258814b2b9521b3ac751e4d404aedea1bac2985157fe89b02ba5"
+    }
+  ],
+  "code": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/build_packet.py",
+      "bytes": 6917,
+      "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/primary_template.py",
+      "bytes": 10891,
+      "sha256": "2d93d4a4ecd8c31f307aa3b7c46328d552fae8611db06c635c36bb504c8e1ec2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/inspect_packet.py",
+      "bytes": 6013,
+      "sha256": "28d59dc27cd993217597a8e8ec09b83f4ed463e5e35040b7497e3c13b8732ffb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/record_metadata.py",
+      "bytes": 4150,
+      "sha256": "36245c149b62e5e0c845621572e6e6cc30890414afd67b7a41748233e801f74f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/seal_packet.py",
+      "bytes": 3137,
+      "sha256": "f3acc51a10374774096a65613259b87807461d14ee19bd5bb60eb8aec19933ee"
+    }
+  ],
+  "unchanged_body_map": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/BODY_MAP.json",
+    "bytes": 1328,
+    "sha256": "0fa8a4f61fb7a9cc138d085f240f078dc42b3adb2dadfea8bbb4dcb7477fc9cc"
+  },
+  "full_stdout_read": true,
+  "stderr_empty": true,
+  "scientific_executions": 0,
+  "historical_scientific_replays": 0
+}

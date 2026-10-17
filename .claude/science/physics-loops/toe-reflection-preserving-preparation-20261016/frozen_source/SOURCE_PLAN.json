@@ -1,0 +1,211 @@
+{
+  "packet": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016",
+  "note": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "script": "scripts/reflection_preserving_preparation_2026_10_16.py",
+  "roots": {
+    "reflection_preparation_root_proposal": "280d0564306f548990b0a342a45676d331997539ff3cd59f7809f8671a281b68",
+    "reflection_preparation_exposed_check": "ddb52f94cb711d5cdea1271dec89a1e1b22002d055d89676c3f94cec01dc13aa",
+    "reflection_preparation_root_review": "c0fc236512c4b57b10a27edcbccc824e83112b9e6c8e195a89ed2511c017d827",
+    "reflection_preparation_root_review_v2": "dc4838051396e454d6fdccc6c9d3cd6df8b87a3ffdc7ffcd7d0924e8e44fe9b5"
+  },
+  "extra": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stdout",
+      "bytes": 2218,
+      "sha256": "8a7052c02977aa51fd6daf9b4d485d4ca2504eb92ba623c88ee603a634edb61d",
+      "alias": "runs/reflection_preparation_author_check/stdout",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alias": "runs/reflection_preparation_author_check/stderr",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/executed_source.py",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "alias": "runs/reflection_preparation_author_check/executed_source.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_author_check/EXECUTION.json",
+      "bytes": 1780,
+      "sha256": "7262d9cc214a977cb42e60a274eb5a121c1f6b20a0578d11d40fe653918cd87f",
+      "alias": "runs/reflection_preparation_author_check/EXECUTION.json",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_root_proposal/author_check.py",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831",
+      "alias": "reflection_preparation_root_proposal/author_check.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "alias": "review_run.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/stdout",
+      "bytes": 816,
+      "sha256": "3149e0e46fc9a3a264c87282dc25e616222de6078039bfde628d3f8ffc774635",
+      "alias": "runs/reflection_preparation_acceptance/stdout",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alias": "runs/reflection_preparation_acceptance/stderr",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/executed_source.py",
+      "bytes": 11464,
+      "sha256": "6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7",
+      "alias": "runs/reflection_preparation_acceptance/executed_source.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_acceptance/EXECUTION.json",
+      "bytes": 1756,
+      "sha256": "dc551736d3aeac18fdf945d21373c4d89a1453929323de0a0d76b5c349d03076",
+      "alias": "runs/reflection_preparation_acceptance/EXECUTION.json",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/accept_reflection_preparation.py",
+      "bytes": 11464,
+      "sha256": "6f6d0f69ae32b84e6c5a01d0aaebbc4eb3e4d7cc81e0adfa53362100952a00f7",
+      "alias": "bootstrap/accept_reflection_preparation.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/stdout",
+      "bytes": 825,
+      "sha256": "009bfbd7dbe5cb8295d26c1898bd911c484af95c024a029e45eb9b6219389956",
+      "alias": "runs/reflection_preparation_qualification_clarification/stdout",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alias": "runs/reflection_preparation_qualification_clarification/stderr",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/executed_source.py",
+      "bytes": 1995,
+      "sha256": "cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e",
+      "alias": "runs/reflection_preparation_qualification_clarification/executed_source.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/reflection_preparation_qualification_clarification/EXECUTION.json",
+      "bytes": 1811,
+      "sha256": "2fa9804e93e1daeebf5e666f830bc8230610c712dcb0586b0b5513513d3f4a0c",
+      "alias": "runs/reflection_preparation_qualification_clarification/EXECUTION.json",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/clarify_reflection_qualification.py",
+      "bytes": 1995,
+      "sha256": "cb70b1595b99f441445a78e62370f801725ff056f02369912a1590b92a68d07e",
+      "alias": "bootstrap/clarify_reflection_qualification.py",
+      "role": "actual_evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "alias": "canonical_source/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "role": "direct_canonical_math_parent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/build_packet.py",
+      "bytes": 4863,
+      "sha256": "131ef659b79ee205e008b4535de6ec5764ce78b9f1444659b13b6b8d0c56f0f8",
+      "alias": "interacting_control_qualified_publication_draft/build_packet.py",
+      "role": "packaging_machinery_only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/primary_template.py",
+      "bytes": 8842,
+      "sha256": "58028fb9788df81db5bafcb45520a997c3891b6e659e5ddeb7b60ca60aed87d0",
+      "alias": "interacting_control_qualified_publication_draft/primary_template.py",
+      "role": "packaging_machinery_only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/inspect_packet.py",
+      "bytes": 2902,
+      "sha256": "8388e3d6521cd39a7d7d0c142bd2b63eea3161488132136acdb6dea273f0d76d",
+      "alias": "interacting_control_qualified_publication_draft/inspect_packet.py",
+      "role": "packaging_machinery_only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/record_metadata.py",
+      "bytes": 2703,
+      "sha256": "3f7c8d6234fc0ec1fcf7a9b41959fbe0284d4f03820f32a56acfb147367a0192",
+      "alias": "interacting_control_qualified_publication_draft/record_metadata.py",
+      "role": "packaging_machinery_only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_control_qualified_publication_draft/seal_packet.py",
+      "bytes": 5420,
+      "sha256": "1b3bab5e75e68ee26be2145b21803d556aeb2bb967e68d560b9abbbd5ab523cb",
+      "alias": "interacting_control_qualified_publication_draft/seal_packet.py",
+      "role": "packaging_machinery_only"
+    }
+  ],
+  "bodies": [
+    [
+      "original_proposal",
+      "reflection_preparation_root_proposal/PROPOSED_LEMMAS.md"
+    ],
+    [
+      "complete_exposed_review",
+      "reflection_preparation_exposed_check/REVIEW.md"
+    ],
+    [
+      "current_controlling_qualifications",
+      "reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md"
+    ]
+  ],
+  "parents": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "source_alias": "canonical_source/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "canonical_path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    }
+  ],
+  "acceptances": [
+    [
+      "reflection_preparation_root_review_v2/ACCEPTANCE.json",
+      "e66487255904aa97e24e27a9643c14a128c9188e2153d56142347b86eea1e724",
+      "controlling_qualifications"
+    ]
+  ],
+  "closure_rule": "Four complete bounded freezes plus actual author/acceptance/clarification original and captured sources/recorder/fullstreams, one exact math parent, five machinery sources. No recursive publication archive.",
+  "exposure": {
+    "same_model_source_exposed": true,
+    "blind_independence": false,
+    "different_model_replication": false,
+    "shared_parent_authorship": true,
+    "new_scientific_executions": 0,
+    "historical_author_floating_executions": 1,
+    "reviewer_scientific_executions": 0,
+    "fixture_tests_final_phase": false,
+    "analytic_M4_nonrecurrence_discriminator": true,
+    "runtime_composition_claimed": false,
+    "retained_audit": false
+  }
+}

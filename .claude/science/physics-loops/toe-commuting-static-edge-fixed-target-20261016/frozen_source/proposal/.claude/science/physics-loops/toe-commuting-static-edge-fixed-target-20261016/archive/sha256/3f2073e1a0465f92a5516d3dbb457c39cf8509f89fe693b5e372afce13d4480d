@@ -1,0 +1,61 @@
+{"holds": true, "name": "fixed N, q list and bit ceiling"}
+{"holds": true, "name": "fixed time, window and accuracy"}
+{"holds": true, "name": "T exact lower and upper bounds"}
+{"holds": true, "name": "positive arithmetic atan interval for q=5"}
+{"holds": true, "name": "positive arithmetic atan interval for q=239"}
+{"holds": true, "name": "positive arithmetic atan interval for q=7"}
+{"holds": true, "name": "interval width identity"}
+{"holds": true, "name": "width coarse and dyadic bounds"}
+{"holds": true, "name": "positive alpha bracket"}
+{"holds": true, "name": "positive edge and cap2"}
+{"holds": true, "name": "quiet and full uniform bounds"}
+{"holds": true, "name": "unreduced common denominator encodes midpoint"}
+{"holds": true, "name": "unreduced common denominator encodes b"}
+{"holds": true, "name": "encoding bit bounds"}
+{"holds": true, "name": "coefficient-stage rational operations below500"}
+{"holds": true, "name": "Pauli commutation and covariance sign"}
+{"holds": true, "name": "X and Z involutions"}
+{"holds": true, "name": "plus rank2 projector"}
+{"holds": true, "name": "minus rank2 projector"}
+{"holds": true, "name": "X projectors complete orthogonal"}
+{"holds": true, "name": "literal K plus positive edge"}
+{"holds": true, "name": "Hermiticity and commutation"}
+{"holds": true, "name": "joint projector z=1,x=1"}
+{"holds": true, "name": "complete eigen-identities z=1,x=1"}
+{"holds": true, "name": "positive spectrum z=1,x=1"}
+{"holds": true, "name": "joint projector z=1,x=-1"}
+{"holds": true, "name": "complete eigen-identities z=1,x=-1"}
+{"holds": true, "name": "positive spectrum z=1,x=-1"}
+{"holds": true, "name": "joint orthogonality 0,1"}
+{"holds": true, "name": "joint projector z=-1,x=1"}
+{"holds": true, "name": "complete eigen-identities z=-1,x=1"}
+{"holds": true, "name": "positive spectrum z=-1,x=1"}
+{"holds": true, "name": "joint orthogonality 0,2"}
+{"holds": true, "name": "joint orthogonality 1,2"}
+{"holds": true, "name": "joint projector z=-1,x=-1"}
+{"holds": true, "name": "complete eigen-identities z=-1,x=-1"}
+{"holds": true, "name": "positive spectrum z=-1,x=-1"}
+{"holds": true, "name": "joint orthogonality 0,3"}
+{"holds": true, "name": "joint orthogonality 1,3"}
+{"holds": true, "name": "joint orthogonality 2,3"}
+{"holds": true, "name": "joint completeness and full norm"}
+{"holds": true, "name": "full variance operator identity"}
+{"holds": true, "name": "scalar trace retained"}
+{"holds": true, "name": "rational phase atom unit modulus"}
+{"holds": true, "name": "W full unitary and commuting"}
+{"holds": true, "name": "W complete spectral construction"}
+{"holds": true, "name": "full reserve phase reconstructs W"}
+{"holds": true, "name": "scalar mutant exact nonzero norm"}
+{"holds": true, "name": "mutant rejected at fixed tolerance"}
+{"holds": true, "name": "full determinant of W"}
+{"holds": true, "name": "sector basis 1"}
+{"holds": true, "name": "X-only generator invariant 1"}
+{"holds": true, "name": "X-only trace coefficients 1"}
+{"holds": true, "name": "target sector determinant 1"}
+{"holds": true, "name": "sector basis -1"}
+{"holds": true, "name": "X-only generator invariant -1"}
+{"holds": true, "name": "X-only trace coefficients -1"}
+{"holds": true, "name": "target sector determinant -1"}
+{"holds": true, "name": "static-X determinant gap arithmetic"}
+{"holds": true, "name": "integer ceiling respected"}
+{"checks": 60, "completed": true, "report_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_check_proposal/runs/edge_001/output/REPORT.json", "statistics": {"integer_operations": 115492, "maximum_integer_bits": 16241, "rational_operations": 38343}}

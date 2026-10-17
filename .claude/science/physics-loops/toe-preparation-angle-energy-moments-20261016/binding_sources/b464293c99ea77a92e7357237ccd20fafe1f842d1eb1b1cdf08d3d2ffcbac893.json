@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-16T18:33:41.108411+00:00",
+  "members": [
+    {
+      "path": "REVIEW.md",
+      "bytes": 2995,
+      "sha256": "2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2"
+    },
+    {
+      "path": "MECHANICAL_EVIDENCE.json",
+      "bytes": 3158,
+      "sha256": "267b77c5a59018219d434b2445e1a99b7ebc036f93f4fd6f86c016d41e8825a0"
+    },
+    {
+      "path": "REVIEW.json",
+      "bytes": 3737,
+      "sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90"
+    }
+  ]
+}

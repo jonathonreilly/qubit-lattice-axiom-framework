@@ -1,0 +1,17 @@
+{
+  "kind": "root_proposed_uniform_logical_word_freeze",
+  "utc": "2026-10-16T16:27:31.004610+00:00",
+  "members": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/SOURCE_MANIFEST.json",
+      "bytes": 2238,
+      "sha256": "07833281338beca8322fb11c9bcc08f8ee13a909ae4faab2c48d511597a127d9"
+    }
+  ],
+  "accepted": false
+}

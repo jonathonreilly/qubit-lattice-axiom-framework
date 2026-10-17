@@ -1,0 +1,15 @@
+{
+  "kind": "interacting_ramp_bridge_proposal_before_exposure",
+  "members": [
+    {
+      "path": "PROPOSED_LEMMAS.md",
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2133,
+      "sha256": "f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8"
+    }
+  ]
+}

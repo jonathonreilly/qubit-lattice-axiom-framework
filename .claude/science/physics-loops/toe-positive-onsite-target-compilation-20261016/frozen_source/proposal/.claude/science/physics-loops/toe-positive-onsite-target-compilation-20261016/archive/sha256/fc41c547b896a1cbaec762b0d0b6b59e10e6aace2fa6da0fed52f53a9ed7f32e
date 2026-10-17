@@ -1,0 +1,17 @@
+"""Deterministic metadata seal of the pre-program-exposure analytical reconstruction."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+O=Path(__file__).resolve().parent
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(p.read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256']),str(p)
+assert not (O/'INITIAL_FREEZE.json').exists()
+r=read(O/'metadata_run/EXECUTION.json');assert r['exit_code']==0 and r['timed_out'] is False and r['source_unchanged'] is True
+for key in ['original_source','source_at_launch','launcher_at_launch','stdout','stderr']:same(Path(r[key]['path']),r[key])
+assert Path(r['stderr']['path']).read_bytes()==b''
+for row in read(O/'SOURCE_IDENTITIES.json')['sources']:same(O/row['capture'],row)
+files=[dict(pin(p),path=str(p.relative_to(O))) for p in sorted(O.rglob('*')) if p.is_file()]
+freeze=dict(kind='initial_analytical_reconstruction_before_new_candidate_program_exposure',utc=datetime.now(timezone.utc).isoformat(),files=files,proposal_freeze='c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3',review=pin(O/'REVIEW.md'),candidate_source_or_output_viewed=False,scientific_executions=0,metadata_child_executions=1,actual_root_acceptance=None,retained_audit=False,editable_prompt_files_changed=[],seal_scope='Tool-invoked deterministic source seal; no separate child-seal receipt or scientific execution claimed.')
+(O/'INITIAL_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n');print(json.dumps(dict(freeze=pin(O/'INITIAL_FREEZE.json'),review=pin(O/'REVIEW.md'),members=len(files)),indent=2))

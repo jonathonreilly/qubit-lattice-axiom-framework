@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/product_source_controlled_stop_2026_10_16.py
+runner_sha256: 17e9c395f7f5c6377375b90870cbf811d90479fe788c45b57f21c88ce7816f95
+input_fingerprint_sha256: 1493a240ff860b5641785ac334d676d334f359753fc74b7626a75669a8447b04
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{
+  "scope": "source identities and historical metadata only; not proof or scientific execution",
+  "bodies": 10,
+  "evidence_aliases": 59,
+  "selected_freeze_members": 96,
+  "unrepresented_historical_member_references": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/CHECKPOINT.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/seal.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/CHECKPOINT.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/CODE_REUSE.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/seal.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/CHECKPOINT.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/CODE_REUSE.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/seal.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/CHECKPOINT.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/CODE_REUSE.md",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/seal.py"
+  ],
+  "unrepresented_members_are_not_validated": true,
+  "historical_metadata_runs": 6,
+  "scientific_executions": 0,
+  "wrapper_root_approval": null,
+  "canonical_execution": null,
+  "publication": null,
+  "metadata_verification": "verified"
+}
+
+----- stderr -----
+

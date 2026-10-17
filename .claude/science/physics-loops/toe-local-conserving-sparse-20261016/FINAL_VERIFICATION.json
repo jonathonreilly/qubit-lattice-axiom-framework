@@ -1,0 +1,334 @@
+{
+  "utc": "2026-10-16T17:23:46.379539+00:00",
+  "branch": "physics-loop/toe-local-conserving-sparse-20261016",
+  "base_head": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 126779,
+    "sha256": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_conserving_sparse_2026_10_16.py",
+    "bytes": 56587,
+    "sha256": "0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8"
+  },
+  "cache": {
+    "utc": "2026-10-16T17:20:27.155511+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_conserving_sparse_2026_10_16.py",
+      "bytes": 56587,
+      "sha256": "0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/CANONICAL_RESULT.json",
+      "bytes": 1062,
+      "sha256": "f67490574f78931b7f19d8dbf2a110cc3e7ba04d8d6255be2086ea6947b079d7"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/local_conserving_sparse_2026_10_16.txt",
+      "bytes": 1029,
+      "sha256": "75297d4be8df4e3d316b3ac124e775e2103c6b0200cf8dbdf6ec22096b07231c"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "Exact source/body/review/base/receipt provenance only"
+    },
+    "scope_lines": [
+      "per_element: positive reserves, full SWAP and actual phase corrections remain supplied",
+      "per_site: literal equal-gap old K and all-site connected-path access remain explicit",
+      "per_mode: fixed-q laboratory count does not bound classical compiler time or memory",
+      "per_block: complete complement, determinant phase, ancilla and reference outputs retained",
+      "lattice_wide: one qualified floating fixture; no interval certificate, physical test or retained audit"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T17:20:42.775084+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/local_conserving_sparse_2026_10_16.py",
+      "bytes": 56587,
+      "sha256": "0e40a726997a704ce1acb3dcf27836bdd348440c20053f858e557443ed6dabf8"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/MUTATION_RESULTS.json",
+      "bytes": 9901,
+      "sha256": "a48d8e1677533c0b80fbf17a9983a5f21446b686c55769e780094d36c8dd40b8"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 214,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source/provenance only; current-main/cumulative-stack and audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T17:23:03.197291+00:00",
+    "old_nodes_preserved": 7156,
+    "old_edges_preserved": 16123,
+    "new_node": {
+      "claim_id": "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem. Current status: conditional-support.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "local_conserving_preparation_bounded_theorem_note_2026-10-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50",
+      "path": "docs/LOCAL_CONSERVING_SPARSE_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "runner_path": "scripts/local_conserving_sparse_2026_10_16.py",
+      "title": "Fixed-q sparse conserving compilation with qualified finite fixture evidence"
+    },
+    "new_edges": [
+      {
+        "from": "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16",
+        "to": "local_conserving_preparation_bounded_theorem_note_2026-10-16"
+      }
+    ],
+    "old_roots_preserved": true,
+    "new_roots": [],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10477278,
+      "sha256": "98d9950d65a879a89616d8083c50abd2c068e5f471c10a3157820daf4d6bc7d6"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1021751,
+      "sha256": "58acae3738a23a85d67c7a6bb80374e79299b81381f6cffcc9d120c10424390a"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "8b3e13404b046838b4ec53df3a392272cdb19e0b473d029cd386ba7e16fbe548"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T17:20:38.686134+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2258,
+          "sha256": "4d746127f0eccc77430a9cdaa5fe55b79fa66b524961cb81463a40ab558923d4"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2312,
+          "sha256": "55a0882bd42e473cf074d9f9461eda9faa6e47c49abfe7821410866f671c1008"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2301,
+          "sha256": "54c3d796268e297d8b60c99bc6f8b2f2efd20ed8954fe054cbb03c345ff67e87"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Canonical body identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2288,
+          "sha256": "f9d86d80dc1fdb668476a54fbc18b9dd5b1de1a0e0d0a7e97dcca3da193b2f11"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2313,
+          "sha256": "aab8664fdb7b8151c8b090e1b9b7dd0dad4ecf89e753f3682a427c75da53065d"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical publication state",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2319,
+          "sha256": "02b123b1d23e82d6492239c65c19071d3f1851b56b593f1eb65c73b8ce953c91"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2277,
+          "sha256": "92a1c85aa0dafaaba0e51ebe7f6b1c5da2d190634029dc67d0d849caf510f3b1"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Successful captured execution",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2307,
+          "sha256": "6e18133b05aea68f0256d229150337dd8ecb89a55da6fe8c57bb10bd5f1fd4fa"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2337,
+          "sha256": "7913aed18bd6b544172d5e3a7702fa7c8adccc19462a40b572cb2399869514f7"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2325,
+          "sha256": "eed49a1da90204d8b836ab5b573c203fb95cabd82ce47b927943d2f7a3d9a08a"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2283,
+          "sha256": "c76c2c4f642ad12851cf5e3d0bbd0796d34772835fdefc9fe45dde15f96b3f6c"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2289,
+          "sha256": "cb16d7c5f489e7d40a9dfb0e97cc910e75bf1aa46f993e8dcee1a0c3b135c719"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2318,
+          "sha256": "bc6256d6c386bfc7c710ebbb99c56657b0e15360529ec16f1ff2237e1ffdf19d"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2361,
+          "sha256": "05f37626b567722991242ea03a9e73cbeced86a65a7c850f80ca8565195fbc2d"
+        }
+      },
+      {
+        "case": "root_capture_schema",
+        "expected_failure": "Explicit captured source required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_root_capture_schema/EXECUTION.json",
+          "bytes": 2325,
+          "sha256": "385350d8183657aaa60e70a85bbd822adaaa8c86c95947ba6f3b5959c936ab04"
+        }
+      },
+      {
+        "case": "recovery_interval",
+        "expected_failure": "Canonical recovery interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_recovery_interval/EXECUTION.json",
+          "bytes": 2313,
+          "sha256": "398c2dacf2534acdcfbda9cf107a829c146050a2158e6328cd20c9fc4faa9727"
+        }
+      },
+      {
+        "case": "root_capture_alias",
+        "expected_failure": "Distinct original and captured source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_root_capture_alias/EXECUTION.json",
+          "bytes": 2319,
+          "sha256": "6e0c59e46bb4f5eb8e3f0a2748dfb48f71b9c753b755272e767f3b247e957761"
+        }
+      },
+      {
+        "case": "canonical_capture_alias",
+        "expected_failure": "Distinct original and captured source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_canonical_capture_alias/EXECUTION.json",
+          "bytes": 2346,
+          "sha256": "624beaaefd7370b577ce93bbdb23e7de0da636961f3be0af6a45d35d6bbd9e12"
+        }
+      },
+      {
+        "case": "canonical_execution_identity",
+        "expected_failure": "Exact canonical execution identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_canonical_execution_identity/EXECUTION.json",
+          "bytes": 2379,
+          "sha256": "20948603cfada831a2a48d4cbeb2b1f51930e0a5de55631341ba01b35cc80ac6"
+        }
+      },
+      {
+        "case": "canonical_certificate",
+        "expected_failure": "Canonical certificate identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_canonical_certificate/EXECUTION.json",
+          "bytes": 2337,
+          "sha256": "4eb6d5056ad5e8974584674a7ea60cb8457272434a2dc6105cadcd66c9d3b347"
+        }
+      },
+      {
+        "case": "wrapper_trailer",
+        "expected_failure": "Canonical closing wrapper",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_wrapper_trailer/EXECUTION.json",
+          "bytes": 2301,
+          "sha256": "e9b66aaf24f0f153752d8401b2fb7c9ceb5f37223f2a9a2b027583b884b5d97a"
+        }
+      },
+      {
+        "case": "source_packet_extra",
+        "expected_failure": "Final packet inventory",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/mutation_source_packet_extra/EXECUTION.json",
+          "bytes": 2325,
+          "sha256": "0206a16672db06b05bca8d4547e93979543968054b1be889fde9c711255fc17f"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 21,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Integrated-current-main and independent audit remain separate. Fixed-q laboratory count does not bound classical compilation. Ready input, literal equal-gap old K, connected all-site path, full SWAP, positive reserves, external timing and calibration remain supplied. The fixture is one floating propagation plus saved-artifact inspection, not independent propagation or interval certification. No q>1 fixture, new preparation composition, autonomous halt, microscopic driver or indefinite reuse is established."
+  ]
+}

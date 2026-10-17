@@ -1,0 +1,69 @@
+{
+  "accepted_scope": [
+    "Full selected-block lift with identity complement and clean-ancilla exact isometry.",
+    "Explicit forward-gate and full-SWAP path count G<=K_q L^4 for fixed q.",
+    "Computable-input finite-error certificate search termination without polynomial classical runtime.",
+    "Nominal runtime, calibration and optional guarded start-shift budgets with physical permission premises."
+  ],
+  "canonical_acceptance": null,
+  "complete_changed_derivation_and_review_read": true,
+  "controlling_qualifications": {
+    "bytes": 8609,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+    "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+  },
+  "editable_prompt_files_changed": [],
+  "evidence_limit": "One successful author exact finite discriminator, one preserved pre-execution launcher failure; no general emitted compiler evidence imported here.",
+  "finite_source_launchers_receipts_full_streams_read": true,
+  "independence_limit": "Source-exposed same-selected-model analytical check sharing primary references; no blind review or scientific replay.",
+  "mandatory_qualifications": [
+    "Initial old-energy allowance under imperfect readiness.",
+    "Post-pulse sampling or explicit control contribution in endpoint timing.",
+    "Actual positivity, locality, slew and support require separate certification.",
+    "Ready coherent packet and compiled program are inputs to nominal runtime.",
+    "Fixed q only; no efficient classical compiler or generic-H/autonomous closure."
+  ],
+  "parent_acceptance": {
+    "bytes": 5279,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json",
+    "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509"
+  },
+  "publication": null,
+  "retained_audit": false,
+  "scientific_executions_by_root": 0,
+  "separately_pending": [
+    "local_conserving_sparse_compiler_fixture",
+    "local_conserving_sparse_fixture_exposed_check"
+  ],
+  "source_exposed_check": true,
+  "source_packets": [
+    {
+      "body": {
+        "bytes": 30201,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+        "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+      },
+      "freeze": {
+        "bytes": 3916,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/FREEZE.json",
+        "sha256": "1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9"
+      },
+      "verified_members": 21
+    },
+    {
+      "body": {
+        "bytes": 25079,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+        "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a"
+      },
+      "freeze": {
+        "bytes": 6731,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/FREEZE.json",
+        "sha256": "54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9"
+      },
+      "verified_members": 36
+    }
+  ],
+  "status": "qualified conditional analytical support for fixed-q nominal laboratory polynomial resource bounds",
+  "utc": "2026-10-16T15:31:22.977941+00:00"
+}

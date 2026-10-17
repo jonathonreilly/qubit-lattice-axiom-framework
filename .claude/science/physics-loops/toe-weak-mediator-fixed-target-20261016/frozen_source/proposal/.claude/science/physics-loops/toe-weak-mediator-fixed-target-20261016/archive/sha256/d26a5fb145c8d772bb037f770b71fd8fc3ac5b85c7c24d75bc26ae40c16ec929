@@ -1,0 +1,157 @@
+{
+  "utc": "2026-10-16T21:09:45.956715+00:00",
+  "scope": "Completed single exact symbolic/rational check with all source/metadata/full-stream evidence; no replay or retained verdict.",
+  "scientific_launches": 1,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1739,
+      "sha256": "5db0ff74822232b043e5fe3ef634d9f017d35f0333463bf403b628eca2c7144c"
+    },
+    {
+      "path": "CHECK_PLAN.md",
+      "bytes": 11640,
+      "sha256": "0ce58af212c66f8c65ec2478a9d15cbe50dafb6952fa3e1db8aace102bfe77d1"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 2751,
+      "sha256": "de2c6157e0fdd2cb537b53627ad44aea56e81e0349f700f5d9761018d339a1db"
+    },
+    {
+      "path": "INPUTS.json",
+      "bytes": 755,
+      "sha256": "6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8"
+    },
+    {
+      "path": "PRELAUNCH_FREEZE.json",
+      "bytes": 2214,
+      "sha256": "986fd5995dbe87b4fb2fc24033819136ab66af0dc0e7e7448594a47cff4bb889"
+    },
+    {
+      "path": "READ_GUIDE.md",
+      "bytes": 2921,
+      "sha256": "a564ad8995e3ff756981d66d4a6128c0804c52413ab4a26a0b47c247cd3b6ba1"
+    },
+    {
+      "path": "ROOT_GO.md",
+      "bytes": 1448,
+      "sha256": "33c7a0922775752a12c761a1174451cbf3cd87f8d7b6db9d879ccfaca09c040e"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2836,
+      "sha256": "a5a30d7dd36abbc79435fb95c09bc8a9220af3fe354b73af2c547bce6b988654"
+    },
+    {
+      "path": "check_weak_mediator.py",
+      "bytes": 20204,
+      "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1985,
+      "sha256": "edb0703da5347e3d17699b9ad635b63453e665d1823a35f73603ad48e60a929e"
+    },
+    {
+      "path": "record_one_attempt.py",
+      "bytes": 5703,
+      "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87"
+    },
+    {
+      "path": "runs/metadata_001/EXECUTION.json",
+      "bytes": 1171,
+      "sha256": "0ad4ec0e2248091425fc649e892fff1d3a9f868546314977c534ec3885b741b3"
+    },
+    {
+      "path": "runs/metadata_001/recorder_at_launch.py",
+      "bytes": 1985,
+      "sha256": "edb0703da5347e3d17699b9ad635b63453e665d1823a35f73603ad48e60a929e"
+    },
+    {
+      "path": "runs/metadata_001/source_at_launch.py",
+      "bytes": 3698,
+      "sha256": "eac2199a99623241f8c18ddc48c07b7b36b8c1cf6dc2d3b481d28ce352be31fa"
+    },
+    {
+      "path": "runs/metadata_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/metadata_001/stdout.txt",
+      "bytes": 331,
+      "sha256": "f85a8cb6f740f0f88aa4b0b7fa73b829ce100a9818d6863839e71a82ea3b877c"
+    },
+    {
+      "path": "runs/weak_001/EXECUTION.json",
+      "bytes": 4959,
+      "sha256": "9f95d935cb479c8f85646f42206c40e8036a1ebc9a39685f42803c178f38145c"
+    },
+    {
+      "path": "runs/weak_001/PRELAUNCH_FREEZE_at_launch.json",
+      "bytes": 2214,
+      "sha256": "986fd5995dbe87b4fb2fc24033819136ab66af0dc0e7e7448594a47cff4bb889"
+    },
+    {
+      "path": "runs/weak_001/PRELAUNCH_VERIFICATION.json",
+      "bytes": 2130,
+      "sha256": "5b7c06cbffc054c454f77c323f787998dc2f350d872025eff74f3cb8efbce690"
+    },
+    {
+      "path": "runs/weak_001/ROOT_GO_at_launch.md",
+      "bytes": 1448,
+      "sha256": "33c7a0922775752a12c761a1174451cbf3cd87f8d7b6db9d879ccfaca09c040e"
+    },
+    {
+      "path": "runs/weak_001/output/REPORT.json",
+      "bytes": 247777,
+      "sha256": "4369fa1d5a970bf4e01ea00cc7db000779cab1d1f26be9bcbd26e1c4bc292a7d"
+    },
+    {
+      "path": "runs/weak_001/recorder_at_launch.py",
+      "bytes": 5703,
+      "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87"
+    },
+    {
+      "path": "runs/weak_001/source_at_launch/INPUTS.json",
+      "bytes": 755,
+      "sha256": "6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8"
+    },
+    {
+      "path": "runs/weak_001/source_at_launch/check_weak_mediator.py",
+      "bytes": 20204,
+      "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab"
+    },
+    {
+      "path": "runs/weak_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/weak_001/stdout.txt",
+      "bytes": 3972,
+      "sha256": "d37f587e034b64bfdf230573e723215eba6dfd18ab2a46d5c77c6b6b315f4ecb"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 3698,
+      "sha256": "eac2199a99623241f8c18ddc48c07b7b36b8c1cf6dc2d3b481d28ce352be31fa"
+    },
+    {
+      "path": "sources/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"
+    },
+    {
+      "path": "sources/PROPOSAL.md",
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"
+    },
+    {
+      "path": "sources/SOURCE_FREEZE.json",
+      "bytes": 416,
+      "sha256": "551fab5e4c1876dfff3d807ebf837a8c23f3d28724a554049faa8b6ab92d3f9c"
+    }
+  ]
+}

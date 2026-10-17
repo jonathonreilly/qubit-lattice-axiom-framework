@@ -1,0 +1,40 @@
+{
+  "kind": "actual_product_source_mediator_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "50e567424771a7af433fd73e2b38b79bed635b6c",
+  "actual_git_base": "50e567424771a7af433fd73e2b38b79bed635b6c",
+  "bound_note_sha256": "4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/0c95244a19a0fabf534a1d3b5e033c273114b6a42f0941454078abdc91cdef89.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/1202391ed066f1de3be78f34675f22a0ca882cea88b4dfc2038aa61db9663a57.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/35e5f8664ddd7834c11763c3263e25461abb2724587260ac945e413e41f5f6f0.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/39febb67cc82668b8907b590232fd2eca496ff363aa3d221c1affe11cd97cd2e.md",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/3c62c7dae1dcf92b8067c656dab47ac0cbbe2cf7d9b20cf1f573f7d067836d7f.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4c63f26acdd8bb4cf0cfb1372e37ba53271f03de2d109fa79a5a7ba0f841abe1.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/4e8c0777ad42b62c4ceb9697c2b79873afa1b74fbc59df1fadaf6f867e4a633e.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/54108d905a959f58d833ebfe0dab83448ffa1496cdfb8b2bcb650f091b95df4a.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/5c39ca7c3dfddc0c8ef7a70dd7865c85f39faa0a82ba73fed679a4309c5a808b.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/79c5742918a9640c269ac1e7521b7cf2c22786729d3592c09a0fb0c37391e7a2.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/a658039ce10b2f5d7773c78f75f265fd460a793cda6c844958da07e222e3238b.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/a84d5f075a241481d8f6ceacd284c54d7b078c979f36663998fd27d967313fba.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/be9b9cce7ac12216a01be7da7eef562d3c8c4d59491f9c29c19d652fcf4840e0.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/c050486e012deecee711f25b8d51c643e0a04ef87daff57d0a2064f958f6b2f7.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/cf890790853901688d50f589cea654c53c1cf899f051216f7d489832a0eb68cc.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1.py",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e1f490fe58a9815fcbd48abf1b3e17e45b752a69e065453a085d505d3e2fcaaf.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/e902abdb87b3ff6e40216b7b7a0f09400a810167026bcb8152edf81d74abb45a.json",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/ef33a6f7cc5492eef6c53293759474c08e9f2e69bbbc9c65f6235e727fcf3873.md",
+    ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/f82342ab5064eb7bac1591a3b69ccd32b2e4c5ab29e26437116e020901ff4a66.blob"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb.json",
+    "bytes": 59684,
+    "sha256": "07b43e7368ed39ece79ae1d2200dec867acd0cacc82433d3067f159a6756bbcb"
+  }
+}

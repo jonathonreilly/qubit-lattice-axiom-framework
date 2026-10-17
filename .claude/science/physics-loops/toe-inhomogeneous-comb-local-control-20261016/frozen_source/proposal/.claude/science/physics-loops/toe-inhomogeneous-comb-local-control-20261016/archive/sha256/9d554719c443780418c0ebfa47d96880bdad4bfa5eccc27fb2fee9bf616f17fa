@@ -1,0 +1,34 @@
+"""Capture the one new exact finite check and all actual streams/failures."""
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+import os
+import resource
+import shutil
+import subprocess
+import sys
+import time
+ROOT=Path(__file__).resolve().parent;RUN=ROOT/'runs/exact_logical_check';RUN.mkdir(parents=True,exist_ok=False)
+def info(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def cpu():resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+for src,dst in [('exact_logical_check.py','SOURCE_AT_LAUNCH.py'),('run_exact_check.py','LAUNCHER_AT_LAUNCH.py'),('PRECHECK_FINDINGS.md','PRECHECK_AT_LAUNCH.md')]:
+ shutil.copyfile(ROOT/src,RUN/dst)
+argv=[sys.executable,'-B',str(RUN/'SOURCE_AT_LAUNCH.py'),str(RUN/'output')]
+env=dict(os.environ);env.update(PYTHONDONTWRITEBYTECODE='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1')
+r={'kind':'actual_exact_finite_discriminator','argv':argv,'cwd':str(ROOT),'started_utc':datetime.now(timezone.utc).isoformat(),
+   'source':info(RUN/'SOURCE_AT_LAUNCH.py'),'launcher':info(RUN/'LAUNCHER_AT_LAUNCH.py'),'precheck':info(RUN/'PRECHECK_AT_LAUNCH.md'),
+   'limits':{'cpu_seconds':30,'wall_seconds':60,'address_space':None},
+   'environment_overrides':{'PYTHONDONTWRITEBYTECODE':'1','OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1'}}
+(RUN/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n');start=time.monotonic()
+try:
+ p=subprocess.run(argv,cwd=ROOT,env=env,capture_output=True,timeout=60,preexec_fn=cpu)
+ stdout,stderr=p.stdout,p.stderr;r['exit_code']=p.returncode
+except Exception as exc:
+ stdout=getattr(exc,'stdout',None) or b'';stderr=(getattr(exc,'stderr',None) or b'')+repr(exc).encode();r['exit_code']=None;r['exception']=repr(exc)
+(RUN/'stdout.txt').write_bytes(stdout);(RUN/'stderr.txt').write_bytes(stderr)
+r.update(finished_utc=datetime.now(timezone.utc).isoformat(),elapsed_wall_seconds=time.monotonic()-start,
+         stdout=info(RUN/'stdout.txt'),stderr=info(RUN/'stderr.txt'))
+(RUN/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2),flush=True)
+sys.exit(0 if r['exit_code']==0 else 1)

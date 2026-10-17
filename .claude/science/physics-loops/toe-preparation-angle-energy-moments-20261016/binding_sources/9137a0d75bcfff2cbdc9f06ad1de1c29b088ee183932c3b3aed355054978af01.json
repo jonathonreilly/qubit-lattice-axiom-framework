@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T19:30:24.743961+00:00",
+  "refs": {
+    "HEAD": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "active_tree": "ca0b288f84bc004590fba03e913817912b2826b5",
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/stdout",
+    "bytes": 1218,
+    "sha256": "99e9cdd8514368ad557965eb7de7a4f7acfcde24cdb33b8d2a6aa8fe296e0252"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_1929/EXECUTION.json",
+      "bytes": 1163,
+      "sha256": "6578009d6c58882d4cb05d417e5e876eff49e29307941cb36af396ece9ab37ae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_1929/EXECUTION.json",
+      "bytes": 1260,
+      "sha256": "a4887943bf998691351bad3b85dedcf508be7f642f834187ecaab2d75e1c75a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_base_refs/EXECUTION.json",
+      "bytes": 1243,
+      "sha256": "687deeb936df08dbc27d54d1544f03f0d206ede9f06bf3e58a5e80c1769b9397"
+    }
+  ],
+  "scope": "Actual19:29 fetch, refs and inventory; main/authority unchanged, selected regular PR9649. New unrelated remote campaign branch is not adopted."
+}

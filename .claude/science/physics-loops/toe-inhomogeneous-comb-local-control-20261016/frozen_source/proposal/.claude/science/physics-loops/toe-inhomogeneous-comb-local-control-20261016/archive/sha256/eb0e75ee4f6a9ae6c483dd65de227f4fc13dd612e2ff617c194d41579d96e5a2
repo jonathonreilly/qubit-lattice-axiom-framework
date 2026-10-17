@@ -1,0 +1,49 @@
+{
+  "kind": "actual_exact_finite_discriminator",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/SOURCE_AT_LAUNCH.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check",
+  "started_utc": "2026-10-16T16:34:22.461248+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/SOURCE_AT_LAUNCH.py",
+    "bytes": 4390,
+    "sha256": "f63ea77bfb72132b54d8e3e269c35e8d2f0ef0100e156074b06fe426fc6d3982"
+  },
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/LAUNCHER_AT_LAUNCH.py",
+    "bytes": 2163,
+    "sha256": "9d554719c443780418c0ebfa47d96880bdad4bfa5eccc27fb2fee9bf616f17fa"
+  },
+  "precheck": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/PRECHECK_AT_LAUNCH.md",
+    "bytes": 2744,
+    "sha256": "417d2ac2c509508d4864f48ea586a99caf8903bbf07e9b681eb5a9027dcc0d2b"
+  },
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 60,
+    "address_space": null
+  },
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-10-16T16:34:24.227431+00:00",
+  "elapsed_wall_seconds": 1.7653311248868704,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/stdout.txt",
+    "bytes": 1012,
+    "sha256": "c5b8409f0e82eb546166e82318d90ac9a3535e2ca9e5481b47f66379837e02e0"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

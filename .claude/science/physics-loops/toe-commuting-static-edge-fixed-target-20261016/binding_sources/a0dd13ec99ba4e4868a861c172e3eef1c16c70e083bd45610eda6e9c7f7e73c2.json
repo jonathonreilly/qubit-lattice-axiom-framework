@@ -1,0 +1,67 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T21:24:44.163046+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 80837,
+    "sha256": "23bc904d202993554d09795b0783968b6f494768b9091bff1321a754ee1527a6"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/commuting_static_edge_common.py",
+    "bytes": 63588,
+    "sha256": "01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 46332,
+    "sha256": "42f847c2407232bed73980cc26bad5436c6a270bbbbe97a37cff7b300ed75ab4"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_commuting_static_edge_qualified_publication_review/REVIEW.json",
+    "bytes": 3828,
+    "sha256": "8c734556a0ffab117468cbcc993cb95f61ad32bb0b1f123c4ea549fffa182d3b"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/commuting_static_edge/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2841,
+    "sha256": "e80955e464ba04b0a9604c8784fa6f1f707db32934673d12a46bac03a5caea06"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2359,
+      "sha256": "39795382b87afda91c0b03c6f4b9f35d52df9a747e54c528f7d1a94eda103f50"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/metadata_runs/capture_review/EXECUTION.json",
+      "bytes": 2411,
+      "sha256": "45d133dac271fab90a53a31f4254035efdbc721a1838ac3e30b17b9ccb067790"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2378,
+      "sha256": "551e3eae06750a1fe148509165f05b0d4a9bd30480642bd06fb34372a1ad48ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/commuting_static_edge_integration_proposal/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2352,
+      "sha256": "45cbadca442eca226dd743306edd5538acefb4231478a5bf3cf10a57576ae2e0"
+    }
+  ],
+  "local_members": 391,
+  "immutable_bodies": 5,
+  "direct_mathematical_parents": [],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_static_publication_source_review.py"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "verified_reuse_functions": 50,
+  "source_captures": 249,
+  "required_canonical_replacements": [],
+  "scope": "Root completed review of the exact static adapter, full changed functions/globals, wrapper/status/certificate/PR scope, actual metadata source/receipts/full streams and copied evidence. Four actual adapter metadata runs; five scientific/source bodies unchanged. All249 primary source records,57 selected additional implementation/freshness records and391 adapter freeze members checked. Zero mathematical parents, one new root, no new edges; preserve every old graph datum.21 future canonical mutants;12 graph and7 receipt-predicate metadata corruptions. Supplied extra positive XX edge with full scalar and finite output window; original four-onsite microscopic supplier unresolved. N1FAIL partial negative material preserved. Exact clean OPEN9653 transport, current main/authority unchanged. Integration review is distinct from pending canonical/staged review. No science replay, native supply, mediator, autonomous halt/reuse or retained audit claim."
+}

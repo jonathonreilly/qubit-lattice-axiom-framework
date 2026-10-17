@@ -1,0 +1,46 @@
+{
+  "baseline_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/FREEZE.json",
+    "bytes": 50131,
+    "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+  },
+  "baseline_archive_recursively_copied": false,
+  "baseline_source_files": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/build_packet.py",
+      "recovery_path": "machinery_reference/build_packet.py",
+      "bytes": 9259,
+      "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93",
+      "exact_member_of_baseline_freeze": true
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/primary_template.py",
+      "recovery_path": "machinery_reference/primary_template.py",
+      "bytes": 7457,
+      "sha256": "866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307",
+      "exact_member_of_baseline_freeze": true
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/inspect_packet.py",
+      "recovery_path": "machinery_reference/inspect_packet.py",
+      "bytes": 2786,
+      "sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d",
+      "exact_member_of_baseline_freeze": true
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/record_metadata.py",
+      "recovery_path": "machinery_reference/record_metadata.py",
+      "bytes": 3351,
+      "sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186",
+      "exact_member_of_baseline_freeze": true
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/seal_packet.py",
+      "recovery_path": "machinery_reference/seal_packet.py",
+      "bytes": 4530,
+      "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308",
+      "exact_member_of_baseline_freeze": true
+    }
+  ],
+  "limits": "Exact source function reuse only; no prior scientific result or wrapper approval transferred."
+}

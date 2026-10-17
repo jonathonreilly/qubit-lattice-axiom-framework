@@ -1,0 +1,276 @@
+# Analytical review of the proposed finite rational coefficient compiler
+
+Source: `weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md`, SHA256 `7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8`. The complete source was read before this reconstruction. The prior review packet, final freeze `ef8dce286398c515be38142b54917e2b82d8ea3363709f78f37e70f11a71511c`, remains unchanged.
+
+**Finding.** The proposed finite construction has valid rational enclosures, a valid equality-safe integer-square-root rounding rule, positive lower coefficients, and the claimed scaling error budget. No mathematical counterexample to those statements was found. The operation count requires a precise qualification: there are `3n` terms in the three partial sums **plus three first-omitted remainder terms** used to form the intervals. If “exactly 3n terms” means all evaluated term values, it is incomplete. The three integer divisions are the three explicit final floor-quotient calls, rather than the total divisions performed by rational arithmetic or an implementation of `isqrt`. These accounting issues do not alter the coefficient error bound.
+
+This is a source-exposed analytic check, not a run of the compiler or a certificate for actual output numerators. The reviewer previously proposed the lower-endpoint rounding strategy and the extra scaling bit; thus this is not an independent invention of that strategy or a blind review. The root's new fixed-term arctangent construction, interval algebra and integer-square-root realization are reconstructed below. No scientific program, coefficient computation or evolution was executed. Root qualification, physical implementation and retained audit status remain separate.
+
+## 1. Definitions and reused mathematical premises
+
+For integer `m>=0`, the addendum sets
+
+\[
+\epsilon=2^{-m},\quad T=2^{2m+32},\quad p=3m+39,
+\quad h=2^{-p},\quad n=p+8.
+\]
+
+The fixed target uses `theta=atan(4/3)`, `delta=theta/pi`, `Delta=2-delta`, and
+
+\[
+g_y^2=\theta/T,\qquad g_x^2=\theta\Delta/(2T).
+\]
+
+The earlier source-exposed reconstruction established, under the supplied Bell-projector/port Hamiltonian and product Bell source, the ideal full-isometry bound
+
+\[
+A(T)=12352/\sqrt T+132480/T,
+\qquad A(T)/\epsilon<1/4,
+\tag{1}
+\]
+
+on the entire window `[T,T+24]`. Its source pins are recorded as an explicit bounded reference rather than recursively copying the prior evidence archive. The present check does not assume a root acceptance verdict for these premises. It reuses the exact prior analytic identities at their unchanged hashes; no earlier science process is replayed.
+
+## 2. Alternating intervals and Machin signs
+
+For `a` equal to 5, 239 or 7, define the positive term
+
+\[
+t_{a,j}=\frac{1}{(2j+1)a^{2j+1}}.
+\]
+
+The terms decrease strictly to zero. The alternating-series theorem gives
+
+\[
+\arctan(1/a)-S_a(n)
+\text{ has sign }(-1)^n
+\quad\text{and magnitude }<t_{a,n}.
+\]
+
+Therefore sorting `S_a(n)` and `S_a(n)+(-1)^n t_{a,n}` indeed gives a strict enclosure `[L_a,U_a]`, of exact width `t_{a,n}`. These endpoints are the two consecutive partial sums `S_a(n),S_a(n+1)`. No decision about a transcendental equality is involved.
+
+The Machin identity can be checked directly, including its branch. Let `a0=atan(1/5)` and `b0=atan(1/239)`. Tangent doubling gives
+
+\[
+\tan(2a_0)=5/12,\qquad \tan(4a_0)=120/119.
+\]
+
+Thus
+
+\[
+\tan(4a_0-b_0)=
+\frac{120/119-1/239}{1+120/(119\cdot239)}=1,
+\]
+
+since both numerator and denominator, on common denominator `119*239`, are `28561`. Also `4a0-b0>0` using `a0>1/5-1/375` and `b0<1/239`, while `4a0-b0<4/5<pi/2`. The angle is consequently `pi/4`, proving `pi=16 atan(1/5)-4 atan(1/239)` with the displayed signs. Similarly, the first-quadrant tangent addition formula proves `theta=pi/4+atan(1/7)`.
+
+Positive and negative coefficients must use opposite enclosure endpoints. The proposed
+
+\[
+\pi_L=16L_5-4U_{239},\qquad
+\pi_U=16U_5-4L_{239}
+\]
+
+have exactly that ordering. Adding the positive arctangent term then gives the stated valid `theta_L,theta_U`.
+
+## 3. Widths and rational guards
+
+Write `k=2n+1`. The exact pi width is
+
+\[
+16t_{5,n}+4t_{239,n}<20\,5^{-k}.
+\]
+
+The theta width is one fourth of this width plus `t_{7,n}`; it is also smaller than the common bound `20*5^-k` (a constant 6 would already suffice). Since `5>4`,
+
+\[
+20\,5^{-(2n+1)}<20\,2^{-(4n+2)}
+<2^{-(2p+12)}=:w.
+\tag{2}
+\]
+
+For the last inequality, substitute `n=p+8`: the ratio of the preceding bound to `w` is `20*2^(-2p-22)<1`. This is valid in particular for `p>=39`. The value `w` here is an interval-width bound, distinct from the physical window length 24.
+
+The guards are provable without running a rational test. Since `n>=47`, the alternating partial-sum ordering gives
+
+\[
+L_5\ge1/5-1/375=74/375,
+\quad U_{239}\le1/239,
+\quad U_5\le1/5,
+\quad L_{239}>0,
+\quad 0<L_7<U_7\le1/7.
+\]
+
+It follows that
+
+\[
+\pi_L\ge16(74/375)-4/239>3,
+\qquad \pi_U<16/5.
+\]
+
+The first strict comparison reduces to `59/375>4/239`. Consequently
+
+\[
+0<\theta_L<\theta_U<4/5+1/7=33/35<1.
+\tag{3}
+\]
+
+In fact `theta_L>3/4`, which is more than is needed for interval ordering. These facts justify all positive divisions below. They could also be retained as exact rational runtime guards without changing the mathematics.
+
+## 4. Delta and product intervals
+
+For positive numerator and denominator intervals, the minimum of `theta/pi` uses `theta_L/pi_U` and the maximum uses `theta_U/pi_L`. Thus
+
+\[
+\Delta_L=2-\theta_U/\pi_L,
+\qquad \Delta_U=2-\theta_L/\pi_U
+\]
+
+correctly enclose `Delta`. Moreover `Delta_L>2-1/3=5/3>0`, and `Delta_U<2`. The interval is ordered. Its width obeys
+
+\[
+\begin{aligned}
+\Delta_U-\Delta_L
+&=\frac{\theta_U-\theta_L}{\pi_L}
+ +\frac{\theta_L(\pi_U-\pi_L)}{\pi_L\pi_U}\\
+&<w/3+w/9=4w/9<w/2.
+\end{aligned}
+\tag{4}
+\]
+
+Both factors in `theta Delta` are positive throughout their intervals. Their correlation does not invalidate interval multiplication: the containing rectangle still contains the true pair. Hence
+
+\[
+y_L=\theta_L/T\le g_y^2\le\theta_U/T=y_U,
+\]
+
+\[
+x_L=\theta_L\Delta_L/(2T)\le g_x^2
+\le\theta_U\Delta_U/(2T)=x_U.
+\]
+
+The widths satisfy
+
+\[
+y_U-y_L<w/T,
+\]
+
+\[
+x_U-x_L
+=\frac{\Delta_U(\theta_U-\theta_L)+\theta_L(\Delta_U-\Delta_L)}{2T}
+<\frac{2w+w/2}{2T}<2w/T.
+\tag{5}
+\]
+
+In particular, no unproved monotonicity of the composite function `theta(2-theta/pi)` is needed; the positive interval product is sufficient.
+
+## 5. Exact nested floor and square root
+
+Let the positive rational lower endpoint be `a=A/B`, with positive integers `A,B`, and set `D=2^p`, `z=D^2 A/B`, `N=floor(z)`, `k=isqrt(N)`. Then
+
+\[
+k^2\le N<(k+1)^2.
+\]
+
+The upper endpoint is an integer, so `N+1<=(k+1)^2`. Since `N<=z<N+1`,
+
+\[
+k^2\le z<(k+1)^2,
+\qquad k/D\le\sqrt a<(k+1)/D.
+\tag{6}
+\]
+
+Thus `k_p(a)/2^p` is a lower approximation with error **strictly below** `h`. This proves the nested-floor identity rather than assuming that two floors can generally be interchanged. It remains valid when the rational argument is a perfect square, when `D^2 a` is an integer, and when the coefficient is exactly on a grid boundary. Only integer comparisons/division and the integer floor square root are required.
+
+For positive interval endpoints, `sqrt(u)-sqrt(l)<=sqrt(u-l)`. Equation (5) and `T>=2^32` give
+
+\[
+2w/T\le h^2 2^{-43}<h^2/4,
+\]
+
+so both square-root intervals have width strictly below `h/2`. Combining that uncertainty with (6) yields
+
+\[
+0\le g_x-\widehat g_x<3h/2<2h,
+\qquad 0\le g_y-\widehat g_y<3h/2<2h.
+\tag{7}
+\]
+
+The direct rational floor for Delta satisfies
+
+\[
+0\le\Delta-\widehat\Delta
+<(\Delta_U-\Delta_L)+h<w/2+h<2h.
+\tag{8}
+\]
+
+This is a finite equality-safe realization of the previously proposed lower-endpoint strategy. It does not require computing the floor of an irrational coefficient itself, detecting its equality to a dyadic number, or iterating an analytic enclosure until such a decision becomes possible.
+
+## 6. Positivity, caps and output bit lengths
+
+The previously derived bounds follow here from `theta>3/4`, `Delta>3/2` and the exact `T`:
+
+\[
+g_x>3\,2^{-(m+18)}>2^{-(m+17)},
+\qquad g_y>\sqrt3\,2^{-(m+17)}>2^{-(m+17)}.
+\]
+
+Since `2h=2^(-3m-38)<2^(-m-17)` for every `m>=0`, equations (7) and (8) leave all three coefficients strictly positive. For Delta, its lower bound above `3/2` is much larger than `2h`; this covers the third coefficient separately. The exact lower ordering gives
+
+\[
+\widehat r=2(\widehat g_x+\widehat g_y)\le r,
+\qquad \widehat\Delta+\widehat r\le\Delta+r<2.
+\]
+
+At `m=0`, `r<2^-14<delta`, so there is no small-`m` cap exception. These are added-block incident caps. The old vertex also has the distinct norm-3 literal `K`; the total old incident sum is not below 2.
+
+Each reported scalar coefficient is positive and less than 2. When expressed on denominator `D=2^p`, its numerator is an integer less than `2D=2^(p+1)`, and therefore uses at most `p+1` bits; `D` itself uses `p+1` bits. The two ports admit an even smaller numerator bound because their coefficients are below 1. This proves the stated uniform output encoding bound. It does not bound intermediate rational numerators/denominators, nor every expanded Hamiltonian matrix-entry denominator: the fixed Bell projector contains a factor `1/2`.
+
+## 7. Error allocation, scalar and initial state
+
+After separating the actual `rhat I`, the three nonscalar error operators have norms 1, 2 and 2. Equations (7) and (8) therefore give
+
+\[
+\|\widehat A-A\|<10h.
+\]
+
+For `t in [T,T+24]`, one has `t<2T`, and the Hermitian Duhamel bound gives
+
+\[
+t\|\widehat A-A\|<20T h
+=20\,2^{2m+32-(3m+39)}
+=\frac5{32}\epsilon.
+\tag{9}
+\]
+
+The comparison uses the actual source vector `exp(-i rhat t)Phi+`. Multiplying both nonscalar evolutions by that common actual scalar is legitimate; no reserve phase has been silently discarded. The ideal second-order tuning need not survive rounding, because (9) compares the full Hamiltonians.
+
+For completeness the reused ideal allocation is
+
+\[
+\frac{A(T)}\epsilon
+\le\frac{12352}{2^{16}}+\frac{132480}{2^{32}}
+=\frac{6325259}{33554432}<\frac14.
+\]
+
+Combining it with (9) proves full-isometry error below `13 epsilon/32`. Tensoring with an arbitrary reference preserves the operator norm, and the unhalved joint trace error is at most twice the isometry error, hence below `13 epsilon/16<epsilon`. All four system/source qubits remain in the comparison.
+
+The initial-state qualification now states the correct premise: an independent supplied source state with trace defect `delta_init`, or directly a full initial old/reference/source trace defect bound. Unitary invariance and the triangle inequality then add at most `delta_init`. The earlier marginal-only correlated-source counterexample is excluded by that premise. Exact initial mean/variance identities continue to apply to the intended exact Bell input and the actual rounded Hamiltonian; an imperfect source is covered by the trace-error extension, not by an assertion that its exact initial moments are unchanged.
+
+## 8. Operation accounting and remaining obligations
+
+There are three partial sums, each containing `n` terms, so **3n summed terms** is correct. Each interval also needs its first omitted term `t_(a,n)`. Thus a count of evaluated alternating-series term values is `3n+3`, not just `3n`. With `n=3m+47`, these counts are `9m+141` summed terms and three additional remainder terms. Power or denominator recurrences can reuse arithmetic, but they do not remove the need to evaluate the three remainder magnitudes.
+
+Once the rational lower endpoints have been built, final rounding makes exactly three explicit floor-quotient calls:
+
+1. `floor(2^(2p) A_x/B_x)`;
+2. `floor(2^(2p) A_y/B_y)`;
+3. `floor(2^p A_Delta/B_Delta)`.
+
+It also makes two `isqrt` calls. This is a valid high-level count of these final primitives. It is not a count of every integer division in the whole implementation: forming rational sums, quotients, common denominators or gcd reductions, and implementing `isqrt`, can require further divisions and other operations. A particular integer-square-root routine may have a finite discrete loop; the claim that survives is the absence of an open-ended **real-enclosure equality search**, not the absence of loops inside arithmetic primitives.
+
+The fixed term count and exact rational/integer operations do specify a finite mathematical algorithm. The output coefficient bit lengths are `O(log(1/epsilon))`; that does not by itself establish an `O(log(1/epsilon))` running time, an intermediate bit-size bound, or a bit-complexity optimum. No actual coefficient numerator or output certificate was generated by this review. Source/exposure capture and hash validation are metadata evidence only.
+
+The conditional physical boundaries remain unchanged: the Bell-projector source block and the four port interactions are newly supplied permissions, not consequences of the original positive onsite rays. Source preparation, installation, exact-to-physical calibration, energy/time units, external timing and halt/reset/reuse remain independent premises or obligations. The fixed-target time and precision bounds are sufficient upper bounds in this supplied model, not universal lower bounds or native availability claims. No original source, previous review, repository state, prompt, audit record, cache, graph, Git ref or publication was modified.
+
+The analytic conclusion supports the finite compiler formulas with the operation-count qualifications above. It is not a root acceptance record, an execution certificate, or a retained-status verdict.

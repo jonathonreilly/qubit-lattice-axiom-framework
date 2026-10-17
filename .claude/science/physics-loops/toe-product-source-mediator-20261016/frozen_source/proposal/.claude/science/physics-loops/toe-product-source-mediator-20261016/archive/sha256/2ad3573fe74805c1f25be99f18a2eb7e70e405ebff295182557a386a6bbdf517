@@ -1,0 +1,19 @@
+# Root correction and proposed finite dyadic coefficient corollary
+Source extension to PROPOSAL.md22e62c14, written after the independent checker reported its initial reconstruction. This addendum remains provisional until separately reviewed.
+
+## Terminology correction
+Replace the original phrase "source triplets" by "excited Bell states" or "the orthogonal Bell complement." VJ reaches Psi+ and Psi-, and Psi- is the spin singlet. The exact declared Hc=Delta(I-|Phi+><Phi+|) already assigns the same energy Delta to all three orthogonal Bell states; no Hamiltonian or denominator is changed. The original frozen proposal remains immutable and records this wording defect. The added incident norm is <2; total old-site incident norm including its literal norm3 K block is3+r.
+
+## Finite coefficient representation proposed for checking
+Let D0=2^400 and set gxhat=floor(D0 gx)/D0, gyhat=floor(D0 gy)/D0, Deltahat=floor(D0 Delta)/D0. This specifies exact dyadic rationals; it is not yet a concrete interval implementation that decides a floor at an equality boundary. Alternatively, any supplied lower dyadic approximants with absolute error <=2^-400 suffice, so no equality oracle is a physical premise of the approximation theorem.
+
+Because3/4<theta<1,3/2<Delta<7/4 and T<2^300, gx,gy>2^-151. Thus the displayed rounded values are strictly positive. They do not increase the incident norm: rhat=2(gxhat+gyhat)<=r and Deltahat+rhat<=Delta+r<2. All positive port blocks and positive source block retain their stated supports. Each rational numerator has at most401 bits and common denominator2^400 has401 bits. All blocks remain static.
+
+Use the retained source comparison chihat(t)=exp(-irhat t)Phi+. Separate the actual scalar rhat exactly. The nonscalar generator differs from the ideal H0+V by
+E=(Deltahat-Delta)Qc+(gxhat-gx)(X1XA+X2XB)+(gyhat-gy)(Y1YA-Y2YB),
+so ||E||<=5*2^-400. Duhamel adds at most5(T+w)2^-400<10*2^-100<2^-96 on [T,T+24], using T<2^300 and T+24<2T. Combined with the ideal proposed <2^-48 bound, the rounded full-isometry error is <2^-47<2^-44. The generic unhalved joint-reference trace bound is twice that.
+
+These dyadic coefficients need not preserve the exact H2 cancellation; the full-Hamiltonian Duhamel comparison handles their changes. The source reserve phase is the actual rhat, not an untracked deletion. Exact full initial mean/variance formulas apply with rhat,gxhat,gyhat and the actual Deltahat because Phi+ remains the exact source-block zero state.
+
+A finite supplied coefficient description is obtained, conditional on a correct approximant certificate. This does not establish physically achievable precision, a runtime-efficient parameter compiler, Bell preparation, native ports, internal timing or reset. A source-only exact checker may verify the symbolic formulas/bounds; do not silently claim it computed these actual400-bit coefficients unless a separately authorized recorded computation actually does so.
+

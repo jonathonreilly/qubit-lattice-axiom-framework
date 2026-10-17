@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""Do not invoke before separate root GO. One fixed wall-limited attempt, no retries."""
+import argparse
+import datetime as dt
+import hashlib
+import json
+import os
+from pathlib import Path
+import platform
+import subprocess
+import sys
+import time
+import traceback
+
+ROOT=Path(__file__).resolve().parent
+
+def ident(path):
+    data=path.read_bytes()
+    return {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+
+def stamp():
+    return dt.datetime.now(dt.timezone.utc).isoformat()
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--go-file',required=True)
+    args=parser.parse_args()
+    go=Path(args.go_file).resolve()
+    if go.parent!=ROOT or not go.is_file():
+        raise ValueError('An actual root GO record must first be supplied inside this packet.')
+    run=ROOT/'runs/edge_001'
+    run.mkdir(parents=True,exist_ok=False)
+    receipt={'kind':'single exact-rational scientific fixture',
+             'recorder_invocation':sys.argv,'recorder_source':ident(Path(__file__)),
+             'recorder_started_utc':stamp(),'wall_limit_seconds':60,
+             'cpu_quota':None,'ram_quota':None,
+             'quota_qualification':'No OS CPU or RAM quota is imposed. The checker has a conservative 65536-bit arithmetic guard.',
+             'python_version':sys.version,'executable':sys.executable,
+             'resolved_executable':str(Path(sys.executable).resolve()),
+             'platform':platform.platform(),'go_record':{'path':str(go),**ident(go)},
+             'scientific_launches':0,'exit_code':None,'timeout':False,
+             'prelaunch_verified':False}
+    stdout_path=run/'stdout.txt'; stderr_path=run/'stderr.txt'
+    stdout_path.write_bytes(b''); stderr_path.write_bytes(b'')
+    (run/'ROOT_GO_at_launch.md').write_bytes(go.read_bytes())
+    (run/'recorder_at_launch.py').write_bytes(Path(__file__).read_bytes())
+    status=1
+    proc=None
+    try:
+        frozen=ROOT/'PRELAUNCH_FREEZE.json'
+        receipt['prelaunch_freeze']=ident(frozen)
+        body=json.loads(frozen.read_text())
+        expected_index={item['path']:{key:item[key] for key in ('bytes','sha256')} for item in body['members']}
+        checks=[]
+        for item in body['members']:
+            actual=ident(ROOT/item['path'])
+            expected={key:item[key] for key in ('bytes','sha256')}
+            checks.append({'path':item['path'],'expected':expected,'actual':actual,'matches':actual==expected})
+        (run/'PRELAUNCH_VERIFICATION.json').write_text(json.dumps(checks,indent=2)+'\n')
+        if not all(c['matches'] for c in checks):
+            raise ValueError('Prelaunch source mismatch; preserve this failed attempt without execution.')
+        receipt['prelaunch_verified']=True
+        captured=run/'source_at_launch'
+        captured.mkdir()
+        for name in ('check_static_edge.py','INPUTS.json'):
+            (captured/name).write_bytes((ROOT/name).read_bytes())
+        (run/'PRELAUNCH_FREEZE_at_launch.json').write_bytes(frozen.read_bytes())
+        source=captured/'check_static_edge.py'; inputs=captured/'INPUTS.json'
+        if ident(source)!=expected_index['check_static_edge.py'] or ident(inputs)!=expected_index['INPUTS.json']:
+            raise ValueError('Captured executable/input bytes differ from the frozen prelaunch source.')
+        receipt['original_source']={'path':str(ROOT/'check_static_edge.py'),**ident(ROOT/'check_static_edge.py')}
+        receipt['executed_source']={'path':str(source),**ident(source)}
+        receipt['executed_inputs']={'path':str(inputs),**ident(inputs)}
+        receipt['executable_identity']=ident(Path(sys.executable).resolve())
+        argv=[sys.executable,'-I','-B',str(source),'--inputs',str(inputs),'--output',str(run/'output')]
+        receipt['argv']=argv; receipt['cwd']=str(run)
+        tic=time.monotonic(); receipt['start_utc']=stamp()
+        with stdout_path.open('wb') as out, stderr_path.open('wb') as err:
+            proc=subprocess.Popen(argv,cwd=run,stdin=subprocess.DEVNULL,stdout=out,stderr=err,
+                                  start_new_session=True)
+            receipt['scientific_launches']=1; receipt['pid']=proc.pid
+            try:
+                proc.communicate(timeout=60)
+            except subprocess.TimeoutExpired:
+                receipt['timeout']=True
+                proc.kill()
+                proc.communicate()
+            receipt['exit_code']=proc.returncode
+        receipt['elapsed_seconds']=time.monotonic()-tic
+        receipt['end_utc']=stamp()
+        receipt['executed_source_after']=ident(source)
+        receipt['source_unchanged']=(receipt['executed_source_after']==expected_index['check_static_edge.py']
+                                      and ident(ROOT/'check_static_edge.py')==expected_index['check_static_edge.py'])
+        status=0 if proc.returncode==0 and not receipt['timeout'] and receipt['source_unchanged'] else 1
+    except BaseException as exc:
+        if proc is not None and proc.poll() is None:
+            proc.kill()
+            proc.communicate()
+            receipt['exit_code']=proc.returncode
+        receipt['recorder_failure_type']=type(exc).__name__
+        receipt['recorder_failure_message']=str(exc)
+        with stderr_path.open('ab') as err:
+            err.write(traceback.format_exc().encode())
+    finally:
+        receipt['recorder_finished_utc']=stamp()
+        receipt['stdout']=ident(stdout_path); receipt['stderr']=ident(stderr_path)
+        receipt['artifacts']=[{'path':str(p.relative_to(run)),**ident(p)}
+                              for p in sorted(run.rglob('*')) if p.is_file() and p.name!='EXECUTION.json']
+        (run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+        print(json.dumps({'receipt':str(run/'EXECUTION.json'),'scientific_launches':receipt['scientific_launches'],
+                          'exit_code':receipt['exit_code'],'timeout':receipt['timeout'],
+                          'recorder_status':status},sort_keys=True),flush=True)
+    return status
+
+if __name__=='__main__':
+    raise SystemExit(main())

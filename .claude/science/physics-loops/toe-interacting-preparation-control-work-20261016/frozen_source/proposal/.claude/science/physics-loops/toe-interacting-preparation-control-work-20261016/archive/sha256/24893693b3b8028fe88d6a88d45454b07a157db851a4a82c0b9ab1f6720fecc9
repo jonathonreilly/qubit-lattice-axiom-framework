@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Capture the exact metadata source before executing it; retain all streams."""
+import hashlib
+import json
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime,timezone
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parent
+RUN=ROOT/'runs'/'source_capture'
+def sha(raw): return hashlib.sha256(raw).hexdigest()
+def utc(): return datetime.now(timezone.utc).isoformat()
+def limits(): resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+def describe(p):
+    raw=p.read_bytes()
+    return {'path':str(p),'bytes':len(raw),'sha256':sha(raw)}
+
+assert not RUN.exists(),'retain previous attempts in separate directories'
+RUN.mkdir(parents=True)
+src=ROOT/'verify_sources.py'
+launcher=ROOT/'record_metadata.py'
+exe=RUN/'source_at_launch.py'
+saved_launcher=RUN/'launcher_at_launch.py'
+exe.write_bytes(src.read_bytes())
+saved_launcher.write_bytes(launcher.read_bytes())
+argv=[sys.executable,'-B',str(exe),'--out',str(ROOT)]
+launch={'scope':'metadata only; no science execution',
+    'launcher_orig_argv':sys.orig_argv,'child_argv':argv,'cwd':str(ROOT),
+    'python':sys.version,'source':describe(exe),'launcher':describe(saved_launcher),
+    'cpu_limit_seconds':30,'wall_timeout_seconds':45,'started_utc':utc()}
+(RUN/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+t=time.monotonic()
+timed_out=False
+try:
+    p=subprocess.run(argv,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
+        timeout=45,preexec_fn=limits,check=False)
+    rc,stdout,stderr=p.returncode,p.stdout,p.stderr
+except subprocess.TimeoutExpired as e:
+    rc,stdout,stderr=None,e.stdout or b'',e.stderr or b''
+    timed_out=True
+(RUN/'stdout').write_bytes(stdout)
+(RUN/'stderr').write_bytes(stderr)
+receipt={**launch,'finished_utc':utc(),'elapsed_seconds':time.monotonic()-t,
+    'exit_code':rc,'timeout':timed_out,'new_scientific_executions':0,
+    'streams':{'stdout':describe(RUN/'stdout'),'stderr':describe(RUN/'stderr')},
+    'source_after':describe(src),'launcher_after':describe(launcher)}
+(RUN/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+sys.stdout.buffer.write(stdout)
+sys.stderr.buffer.write(stderr)
+sys.exit(rc if rc is not None else 124)

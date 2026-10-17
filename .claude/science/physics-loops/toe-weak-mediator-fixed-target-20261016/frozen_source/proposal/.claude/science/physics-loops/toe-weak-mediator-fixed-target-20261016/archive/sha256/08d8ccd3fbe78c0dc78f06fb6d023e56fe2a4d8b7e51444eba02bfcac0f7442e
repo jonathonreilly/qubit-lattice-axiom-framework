@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/inspect_sources.py"
+  ],
+  "captured_source_matches": true,
+  "child_source_at_launch": {
+    "bytes": 3190,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/inspect_sources.py",
+    "sha256": "cf3d421232adde4a21cd18d5487c64b654f965cff94044688bc8e7322734599a"
+  },
+  "child_source_unchanged": true,
+  "completed_at": "2026-10-16T21:10:53.435872+00:00",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check",
+  "elapsed_seconds": 0.05438833311200142,
+  "exit_code": 0,
+  "purpose": "metadata-only source/exposure and prior-freeze inspection; no scientific execution",
+  "recorder_source": {
+    "bytes": 3032,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/runs/metadata_inspection/recorder_source.py",
+    "sha256": "09c1c3c52b227ae912cf6cbbdbd8ec950f71f68dc43b76481f5cb37032c6a047"
+  },
+  "source_capture": {
+    "bytes": 3190,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/runs/metadata_inspection/executed_source.py",
+    "sha256": "cf3d421232adde4a21cd18d5487c64b654f965cff94044688bc8e7322734599a"
+  },
+  "started_at": "2026-10-16T21:10:53.381138+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/runs/metadata_inspection/stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 3073,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_window_reuse_exposed_check/runs/metadata_inspection/stdout",
+    "sha256": "e3aa9455885b73f281760ef9cb4a9b2aa3b10e6b7f76e16a625849911b9da2b1"
+  }
+}

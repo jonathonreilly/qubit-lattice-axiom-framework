@@ -1,0 +1,78 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T20:45:02.145985+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "retained_audit": false,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/FINAL_FREEZE.json",
+    "bytes": 95394,
+    "sha256": "739861728d983b8ab1942e59af87f349e9332df346648710b171308a4a30810f"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/endpoint_target_compilation_common.py",
+    "bytes": 64442,
+    "sha256": "e7a53253bc2fbd99a1b14fe58d21c5829b3a64b478624916a43a58074dcd0566"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/proposed_primary_unbound.py",
+    "bytes": 60480,
+    "sha256": "93e88485ab3957fba1e0fb81bf71954d3ca53f8435e989c18a64e4ed3eb9fb81"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_endpoint_target_compilation_qualified_publication_review/REVIEW.json",
+    "bytes": 3817,
+    "sha256": "899f433630e38ebfc90eeb3577777dab6db294cd5e2a1836cafb28e1b90a1f07"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_target_compilation/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2856,
+    "sha256": "cf52e825fd39407917ea8185294f13648924b37810abe00b34527f19b0f0c11d"
+  },
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/metadata_runs/build/EXECUTION.json",
+      "bytes": 2406,
+      "sha256": "0a0adccc6c8b67bcc19744d865a0d6638bf886eb4cfa62047ba0d3d334fe4e98"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/metadata_runs/capture_review/EXECUTION.json",
+      "bytes": 2459,
+      "sha256": "9f1c0e51d92efb05986b9a6b98ffeb30ceced448ced4a1514133c31a96ccc58f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/metadata_runs/build_v2/EXECUTION.json",
+      "bytes": 2421,
+      "sha256": "ffe64585ccc7258e458fac13ce27a4998f7d53b4651cfcc91475da52da809a6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/metadata_runs/validate/EXECUTION.json",
+      "bytes": 2426,
+      "sha256": "3b22ad3ad1ee94eea4d6cb38064dbd117c77b0e929f1277cdbd045896e19f6b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_integration_proposal/metadata_runs/seal/EXECUTION.json",
+      "bytes": 2400,
+      "sha256": "cc6fa86d5f7e533badf038e2dddce3afe6433ee4c2d7565e7f8e67c52ee53fb4"
+    }
+  ],
+  "local_members": 457,
+  "immutable_bodies": 6,
+  "direct_mathematical_parents": [
+    {
+      "path": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 112940,
+      "sha256": "ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8"
+    }
+  ],
+  "source_review_command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_target_publication_source_review.py"
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "editable_prompt_files_changed": [],
+  "verified_reuse_functions": 50,
+  "source_captures": 340,
+  "required_canonical_replacements": [],
+  "scope": "Complete new adapter builder/validator/capture/recorder/seal, changed common/extension functions and binding constants, note/status/report/PR prose reviewed; exact unchanged function reuse mechanically checked. Five actual metadata receipts and full streams checked. Six original scientific bodies remain unchanged and qualified. All340 capture objects and457 frozen adapter members checked. One existing chart/recurrence parent edge and zero new roots required;22 future canonical mutants;12 graph and7 receipt-predicate metadata corruptions. No substantive source wording replacement required. Exact selected clean9652 with completed publication and actual attachment; current main and authority unchanged at actual20:25 refresh. Source/integration review distinct; canonical/staged phases pending. No ODE, science rerun, native physical validation or retained-audit claim."
+}

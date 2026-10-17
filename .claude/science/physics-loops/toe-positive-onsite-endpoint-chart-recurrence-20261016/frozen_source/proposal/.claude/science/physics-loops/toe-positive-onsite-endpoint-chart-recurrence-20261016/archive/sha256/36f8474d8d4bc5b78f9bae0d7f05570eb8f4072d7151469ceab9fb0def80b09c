@@ -1,0 +1,19 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,sys
+out=Path(sys.argv[1]).resolve();name=sys.argv[2]
+assert name in ('SCIENCE_SOURCE_FREEZE.json','FREEZE.json')
+paths=sorted(p for p in out.rglob('*') if p.is_file() and p.name!='FREEZE.json'
+             and 'final_freeze' not in p.parts and 'source_freeze' not in p.parts)
+if name=='FREEZE.json':
+ paths=sorted(p for p in out.rglob('*') if p.is_file() and p.name!='FREEZE.json' and 'final_freeze' not in p.parts)
+members=[]
+for p in paths:
+ b=p.read_bytes();members.append({'path':str(p.relative_to(out)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+dest=out/name;assert not dest.exists()
+dest.write_text(json.dumps({'created_utc':datetime.now(timezone.utc).isoformat(),
+ 'kind':'pre-execution source/input freeze' if name.startswith('SCIENCE') else 'source-exposed candidate final freeze',
+ 'members':members,'self_hash_excluded':True,
+ 'terminal_record_excluded':'runs/source_freeze' if name.startswith('SCIENCE') else 'runs/final_freeze'},indent=2)+'\n')
+b=dest.read_bytes()
+print(json.dumps({'path':str(dest),'members':len(members),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()},indent=2))

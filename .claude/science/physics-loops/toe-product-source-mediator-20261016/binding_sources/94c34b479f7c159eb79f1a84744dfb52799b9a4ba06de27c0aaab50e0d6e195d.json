@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-16T22:13:32.910540+00:00",
+  "refs": {
+    "HEAD": "50e567424771a7af433fd73e2b38b79bed635b6c",
+    "origin/main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "active_tree": "5ccabd2c966ba12d0a30181ddf967bfdf8a689ec",
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/stdout",
+    "bytes": 3834,
+    "sha256": "155f3ac1f141a1cfa4309351c2ed9637bb61d5824ea0ca16227fd850a83fe336"
+  },
+  "actual_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/source_fetch_2200/EXECUTION.json",
+      "bytes": 1162,
+      "sha256": "1bb011c7d1da0137838bfb5ae3f6c3ae5f70700001c87c3191a754c6cddc98a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/open_inventory_2200/EXECUTION.json",
+      "bytes": 1260,
+      "sha256": "4f203768e03d1e81858768217400acf85b41c7e710cdd00b8084da580695cf38"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_base_refs/EXECUTION.json",
+      "bytes": 1477,
+      "sha256": "6ce4beea36e4a7ba18281cd4e4c9bb12b77597adda83c8f64f5e2ed856bf60a4"
+    }
+  ],
+  "scope": "Root read the complete changed common and primary arguments, all new adapter metadata programs including final validator84b798d5/seal9aa02d8c, all four final root-recorder sources and the distinct context-contract correction. Accepted eight source bodies are reused unchanged with both controlling qualifications. Five metadata actions actually exited0; build_v2 strengthens the full five-field context guard without erasing original successful build. Controls are provenance/parser/synthetic graph only. Historical weak-mediator source/action records are implementation lineage, not product science. Captured BASE_CONTEXT facts are distinct from the actual root context bound here; the recorder now compares these real observations instead of incorrectly requiring null observed facts. This corrects a source review finding before any failed recorder execution. Parent is exact note b3df6a2b only for corrector/residual and finite-atan machinery, with no Bell physical permissions or sharper precision/reuse import. Current selected transport is actual regular OPEN attached PR9655 at50e56742; main5b0e1cc4 and instruction56c5c0ab remain. Full captured streams were inspected at relevant fields; repetitive hash inventories are mechanically verified, not claimed line-by-line mathematical proof. No canonical, staged, science execution or retained decision follows yet. No editable prompts or axioms changed."
+}

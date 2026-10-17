@@ -1,0 +1,34 @@
+{
+  "kind": "exact_finite_logical_phase_and_route_discriminator",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy": "1.14.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "findings": [
+    {
+      "case": "controlled_SU2_b0",
+      "letters": 14,
+      "exact_squared_frobenius_error": "0"
+    },
+    {
+      "case": "controlled_SU2_b1",
+      "letters": 14,
+      "exact_squared_frobenius_error": "0"
+    },
+    {
+      "case": "determinant_projector_phase",
+      "letters": 10,
+      "exact_squared_frobenius_error": "0",
+      "omitted_scalar_squared_error": "8 - 4*sqrt(2)",
+      "predicted_mutant_squared_error": "8-4sqrt(2)"
+    },
+    {
+      "case": "adjacent_logical_route_CZ02",
+      "letters": 19,
+      "exact_squared_frobenius_error": "0",
+      "omitted_return_squared_error": "8"
+    }
+  ],
+  "arithmetic": "exact SymPy rational/radical matrices",
+  "physical_circuit_compiler_executed": false,
+  "general_theorem_certificate": false
+}

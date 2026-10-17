@@ -1,0 +1,140 @@
+{
+  "utc": "2026-10-16T18:10:21.936819+00:00",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/FREEZE.json",
+    "bytes": 513,
+    "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+  },
+  "members": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/FREEZE.json",
+        "bytes": 513,
+        "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+      },
+      "captured": {
+        "path": "sources/proposal/FREEZE.json",
+        "bytes": 513,
+        "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+      },
+      "scope": "Complete unchanged proposed source packet; historical pending status preserved"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+        "bytes": 14391,
+        "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+      },
+      "captured": {
+        "path": "sources/proposal/PROPOSED_LEMMAS.md",
+        "bytes": 14391,
+        "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+      },
+      "scope": "Complete unchanged proposed source packet; historical pending status preserved"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/SOURCE_MANIFEST.json",
+        "bytes": 1444,
+        "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+      },
+      "captured": {
+        "path": "sources/proposal/SOURCE_MANIFEST.json",
+        "bytes": 1444,
+        "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+      },
+      "scope": "Complete unchanged proposed source packet; historical pending status preserved"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "captured": {
+        "path": "sources/parent/LOCAL_CONSERVING_PREPARATION_NOTE.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      },
+      "scope": "Sole mathematical parent; full byte capture, preparation-specific proof coverage stated separately"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "captured": {
+        "path": "methodology/physics_claim_reviewer.md",
+        "bytes": 14490,
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+      },
+      "scope": "Methodology source identity; explicit root task restricts this to one source-exposed check with no model override or publication"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/review-loop/SKILL.md",
+        "bytes": 20052,
+        "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+      },
+      "captured": {
+        "path": "methodology/focused_review_contract.md",
+        "bytes": 20052,
+        "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+      },
+      "scope": "Methodology source identity; explicit root task restricts this to one source-exposed check with no model override or publication"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "captured": {
+        "path": "methodology/skill_freshness.md",
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "scope": "Methodology source identity; explicit root task restricts this to one source-exposed check with no model override or publication"
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "bytes": 4975,
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+      },
+      "captured": {
+        "path": "methodology/proof_search_governance.md",
+        "bytes": 4975,
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+      },
+      "scope": "Methodology source identity; explicit root task restricts this to one source-exposed check with no model override or publication"
+    }
+  ],
+  "direct_mathematical_parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  "context_only_not_read_or_imported": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/DERIVATION.md",
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_local_fault_work_candidate/DERIVATION.md",
+      "bytes": 27317,
+      "sha256": "c3bd7cdae9704e2bf6d867dd5f27bb433690c8b5028d2d069b63376ea5fd7ecd"
+    }
+  ],
+  "read_coverage": {
+    "new_proposal": "Complete 158 lines",
+    "parent": "Relevant original preparation source, exposed calculation and controlling qualifications; earlier parent packet exposure explicitly disclosed",
+    "methodology": "Claim-reviewer and proof/freshness references; focused review-loop contract only, no execution of a PR/audit loop"
+  },
+  "prior_source_exposure": true,
+  "blind_independence": false,
+  "scientific_executions": 0,
+  "historical_replays": 0
+}

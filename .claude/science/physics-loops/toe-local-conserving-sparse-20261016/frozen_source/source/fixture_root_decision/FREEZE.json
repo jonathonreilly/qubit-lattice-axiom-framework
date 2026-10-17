@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "bytes": 4390,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc"
+    },
+    {
+      "bytes": 3444,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "449fed271fe190a1065c25c0fdf94fc75992e2a0511f35e258a7c6bd95b86021"
+    }
+  ],
+  "retained_audit": false,
+  "root_scientific_executions": 0,
+  "utc": "2026-10-16T15:51:19.016894+00:00"
+}

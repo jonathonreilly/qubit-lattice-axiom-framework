@@ -1,0 +1,57 @@
+{
+  "kind": "root_uniform_word_qualified_acceptance",
+  "utc": "2026-10-16T16:54:04.735021+00:00",
+  "disposition": "QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT_UNIFORM_FIXED_Q_WORD_AND_NOMINAL_RUNTIME",
+  "inputs": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/FREEZE.json",
+        "bytes": 712,
+        "sha256": "55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e"
+      },
+      "members_verified": 2
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/FREEZE.json",
+        "bytes": 5485,
+        "sha256": "36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598"
+      },
+      "members_verified": 29
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+        "bytes": 705,
+        "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05"
+      },
+      "members_verified": 2
+    }
+  ],
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 12165,
+    "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+    "bytes": 24426,
+    "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c"
+  },
+  "actual_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/EXECUTION.json",
+    "bytes": 2546,
+    "sha256": "eb0e75ee4f6a9ae6c483dd65de227f4fc13dd612e2ff617c194d41579d96e5a2"
+  },
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 6625,
+    "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+  },
+  "historical_new_check_count": 1,
+  "scientific_executions_by_root_record": 0,
+  "scientific_replays": 0,
+  "retained_audit": false,
+  "publication": null,
+  "editable_prompt_files_changed": []
+}

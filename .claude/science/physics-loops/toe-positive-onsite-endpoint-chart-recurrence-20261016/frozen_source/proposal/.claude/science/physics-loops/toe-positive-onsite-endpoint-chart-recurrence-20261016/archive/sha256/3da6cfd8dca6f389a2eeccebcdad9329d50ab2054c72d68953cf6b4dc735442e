@@ -1,0 +1,40 @@
+"""Seal completed review members; exclude self-referential terminal receipt only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+O=Path.cwd(); assert O.name=='endpoint_recurrence_exposed_check'
+def pin(p):
+ b=p.read_bytes(); return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p): return json.loads(p.read_text())
+def check(p,r):
+ q=pin(p); assert (q['bytes'],q['sha256'])==(r['bytes'],r['sha256']),str(p)
+assert not (O/'FINAL_FREEZE.json').exists()
+validation=read(O/'METADATA_VALIDATION.json')
+assert validation['status']=='SOURCE_AND_RECEIPT_METADATA_VERIFIED'
+receipt=read(O/'metadata_runs/validation/EXECUTION.json')
+assert receipt['exit_code']==0 and receipt['timed_out'] is False
+for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:
+ check(Path(receipt[key]['path']),receipt[key])
+for row in read(O/'EXPOSURE_AND_SOURCE_CAPTURE.json')['sources']:
+ check(Path(row['original']['path']),row['original']); check(Path(row['copy']['path']),row['copy'])
+for key in ['review','full_analysis','coverage','scoped_check_result','scoped_check_execution']:
+ row=read(O/'RESULT.json')[key]; check(Path(row['path']),row)
+members=[]
+for p in sorted(O.rglob('*')):
+ if not p.is_file(): continue
+ rel=p.relative_to(O).as_posix()
+ if rel.startswith('metadata_runs/final_seal/'): continue
+ assert rel!='FINAL_FREEZE.json'
+ row=pin(p); row['path']=rel; members.append(row)
+assert len(members)==len({r['path'] for r in members})
+freeze=dict(kind='source_exposed_recurrence_review_freeze',created_utc=datetime.now(timezone.utc).isoformat(),
+ candidate_freeze=pin(O/'sources/candidate/FREEZE.json'),
+ source_review=pin(O/'REVIEW.md'),scoped_result=pin(O/'SCOPED_CHECK_RESULT.json'),
+ members=members,member_count=len(members),
+ excluded=['FINAL_FREEZE.json','metadata_runs/final_seal/**'],
+ exclusion_reason='The actual final-seal run is a subsequent terminal receipt and cannot recursively hash itself. Its captured source, recorder, launch, streams and execution remain alongside this freeze.',
+ root_acceptance=None,audit_verdict=None,canonical_binding=None,publication=None)
+out=O/'FINAL_FREEZE.json'; out.write_text(json.dumps(freeze,indent=2,sort_keys=True)+'\n')
+for row in members: check(O/row['path'],row)
+print(json.dumps(dict(status='REVIEW_PACKET_SEALED',freeze=pin(out),members=len(members),
+ root_acceptance=None,scientific_execution=False),indent=2))

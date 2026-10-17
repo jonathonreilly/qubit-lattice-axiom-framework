@@ -1,0 +1,747 @@
+{
+  "scope": "Portable byte identity recovery only; historical approval fields carry no authority. Unrepresented historical freeze members are inventory references, not validated evidence.",
+  "recovered": {
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 8539,
+      "end": 13975,
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 14049,
+      "end": 16937,
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 17023,
+      "end": 23950,
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/C1_MINIMUM_DURATION_RAMPS_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 24032,
+      "end": 28553,
+      "bytes": 4521,
+      "sha256": "212571bcf9ed6837808f6d8347eb0c74ef1fab394b6672658018a27ba561d15b"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 28610,
+      "end": 42957,
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 43019,
+      "end": 54581,
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 54639,
+      "end": 72466,
+      "bytes": 17827,
+      "sha256": "57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 72519,
+      "end": 85561,
+      "bytes": 13042,
+      "sha256": "5b4e50abaf3150c3089cc40e377f381659f21ffe89426c5ee2842032e90e331b"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 85664,
+      "end": 89056,
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_stop_c1_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 89149,
+      "end": 93655,
+      "bytes": 4506,
+      "sha256": "218ddfbed74e18f18dc30c8103a6a10acadb7a50daeb0d10dd0ee5f4e207ab9a"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/SOURCE_MANIFEST.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8",
+      "bytes": 2985,
+      "sha256": "f4c16256c1d3240f0a7b2bc4615f65777b74c51abf343c85c9b6c2204cfea0c8"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/SOURCE_COVERAGE.md": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b",
+      "bytes": 1904,
+      "sha256": "5c31726ca5a62ef238acdebfe71070d40003deffaa854d548055e522682dc22b"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492",
+      "bytes": 909,
+      "sha256": "91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/inspect_sources.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f",
+      "bytes": 2454,
+      "sha256": "42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/record_metadata.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f",
+      "bytes": 2454,
+      "sha256": "42a2524cd78d9725babef58d5c05c52b1d814e2ec3a5186a85e9a1a20a7fce6f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/launcher_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3",
+      "bytes": 197,
+      "sha256": "e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/SOURCE_MANIFEST.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052",
+      "bytes": 4605,
+      "sha256": "06c05c23983a6faff6621569519a9eb6bb8ebaaebb5e8215bd565cebb08ac052"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/SOURCE_COVERAGE.md": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236",
+      "bytes": 1729,
+      "sha256": "939664ca9184b142592c038b4248cb7e6c8ca0d6451161020f1baafad3d03236"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729",
+      "bytes": 919,
+      "sha256": "f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/inspect_sources.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77",
+      "bytes": 3465,
+      "sha256": "5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/record_metadata.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77",
+      "bytes": 3465,
+      "sha256": "5e54736fe587556cc3c41abbae452ad0d6473c4c1d79f4168efc583756a0ca77"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/launcher_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285",
+      "bytes": 1074,
+      "sha256": "5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55",
+      "bytes": 5781,
+      "sha256": "b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/SOURCE_MANIFEST.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01",
+      "bytes": 7578,
+      "sha256": "4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/SOURCE_COVERAGE.md": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9",
+      "bytes": 2419,
+      "sha256": "2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/metadata/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec",
+      "bytes": 911,
+      "sha256": "60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/inspect_sources.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7",
+      "bytes": 4769,
+      "sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/record_metadata.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/metadata/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7",
+      "bytes": 4769,
+      "sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/metadata/launcher_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/metadata/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8",
+      "bytes": 1976,
+      "sha256": "36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/metadata/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d",
+      "bytes": 6241,
+      "sha256": "c70e477bd88365ae548377c59451a0e269673e274905fe4c8c5400f76309cc8d"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/SOURCE_MANIFEST.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66",
+      "bytes": 9393,
+      "sha256": "987c8dbc1026df5320c024253853739d5a1309b8256195cbdb8f80fbb7cdcd66"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/SOURCE_COVERAGE.md": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70",
+      "bytes": 1402,
+      "sha256": "b80195fcd0e428daa78b982b43ff631839ca71355c8402fe28b7f0da49d49c70"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/metadata/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15",
+      "bytes": 901,
+      "sha256": "b1b7166303125df1eeb1393233ec3632b4f8e4cab55aa1c650c94e4416316f15"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/inspect_sources.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33",
+      "bytes": 5742,
+      "sha256": "4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/record_metadata.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/metadata/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33",
+      "bytes": 5742,
+      "sha256": "4d3e3391feb76365b5eab741966749c845a5f7f91e84e01d29991fb3de49dc33"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/metadata/launcher_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-product-source-mediator-20261016/archive/sha256/8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/metadata/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8",
+      "bytes": 2406,
+      "sha256": "88d33beaa412a10eef191e692fe1762312f07a6ed9285af0226b2315f5a8a6f8"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/metadata/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/ROOT_CONTEXT_MESSAGE.txt": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0",
+      "bytes": 886,
+      "sha256": "b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/ACCEPTANCE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_stop_c1_root_review/ACCEPTANCE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9",
+      "bytes": 5168,
+      "sha256": "a69b51ac54fb2586100072eba45492473970ef612a57c53c02184f56af84eca9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_stop_c1_root_review/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/23a576d278a44eb3e175dc4ea6212358773e14fc0ee2ece007522b205e86abea",
+      "bytes": 441,
+      "sha256": "23a576d278a44eb3e175dc4ea6212358773e14fc0ee2ece007522b205e86abea"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_installation_work_root_acceptance/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/6b1217325caec3546178d49b66a831554c77bbc2215d8eca89f33fffb39c2f35",
+      "bytes": 1806,
+      "sha256": "6b1217325caec3546178d49b66a831554c77bbc2215d8eca89f33fffb39c2f35"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_installation_work_root_acceptance/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9",
+      "bytes": 6826,
+      "sha256": "61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_installation_work_root_acceptance/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/771f936632daa2542448185484d084d5c62d2de8307847cf8d361e8a16da83a5",
+      "bytes": 861,
+      "sha256": "771f936632daa2542448185484d084d5c62d2de8307847cf8d361e8a16da83a5"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_installation_work_root_acceptance/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_product_installation_work_acceptance.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9",
+      "bytes": 6826,
+      "sha256": "61196218703721934aae4e568f1edd6637db08badbe2536ea3bd25eb8decb4c9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_stop_c1_root_acceptance/EXECUTION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/7d41ab561988e1b2544db30b7ec33fbe4f8010a1f1d4d6c905d14aea6c619cef",
+      "bytes": 1756,
+      "sha256": "7d41ab561988e1b2544db30b7ec33fbe4f8010a1f1d4d6c905d14aea6c619cef"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_stop_c1_root_acceptance/executed_source.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f",
+      "bytes": 8141,
+      "sha256": "81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_stop_c1_root_acceptance/stdout": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/08b6235f297125c7b3b9bd95730677c67b6e359cf04d3a62ef718316fe1d2438",
+      "bytes": 831,
+      "sha256": "08b6235f297125c7b3b9bd95730677c67b6e359cf04d3a62ef718316fe1d2438"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_stop_c1_root_acceptance/stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_product_stop_c1_acceptance.py": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f",
+      "bytes": 8141,
+      "sha256": "81086682cd7acabe2a2b472b49f3f6f381490103b07a946946231479bc28ea7f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/PUBLICATION.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/c4515e42d1e849c00fe402365948abcf1ef5d48ff31df2c81c2bd8a6d3877e7c",
+      "bytes": 1547,
+      "sha256": "c4515e42d1e849c00fe402365948abcf1ef5d48ff31df2c81c2bd8a6d3877e7c"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/ATTACHMENT.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/5eea5e976c259c29bf3c8f2ebb9046bee7e490a852a4db2c7b7f0fbeb7bf1760",
+      "bytes": 446,
+      "sha256": "5eea5e976c259c29bf3c8f2ebb9046bee7e490a852a4db2c7b7f0fbeb7bf1760"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/product_source/canonical_source/docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 63977,
+      "sha256": "4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 8539,
+      "end": 13975,
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 18406,
+      "end": 22680,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 51509,
+      "end": 54831,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_candidate/PROPOSAL.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 10729,
+      "end": 18342,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_pauli_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 61491,
+      "end": 63824,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/sources/product_source_mediator_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 47029,
+      "end": 51443,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 8539,
+      "end": 13975,
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 18406,
+      "end": 22680,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 14049,
+      "end": 16937,
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 51509,
+      "end": 54831,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_candidate/PROPOSAL.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 10729,
+      "end": 18342,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_installation_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_installation_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 28610,
+      "end": 42957,
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_pauli_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 61491,
+      "end": 63824,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/sources/product_source_mediator_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 47029,
+      "end": 51443,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 8539,
+      "end": 13975,
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 17023,
+      "end": 23950,
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 18406,
+      "end": 22680,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 14049,
+      "end": 16937,
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 51509,
+      "end": 54831,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_candidate/PROPOSAL.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 10729,
+      "end": 18342,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 28610,
+      "end": 42957,
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_work_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_work_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 43019,
+      "end": 54581,
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_work_root_review/ACCEPTANCE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_work_root_review/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_installation_work_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 85664,
+      "end": 89056,
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_pauli_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 61491,
+      "end": 63824,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/sources/product_source_mediator_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 47029,
+      "end": 51443,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 8539,
+      "end": 13975,
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/C1_MINIMUM_DURATION_RAMPS_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 24032,
+      "end": 28553,
+      "bytes": 4521,
+      "sha256": "212571bcf9ed6837808f6d8347eb0c74ef1fab394b6672658018a27ba561d15b"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 17023,
+      "end": 23950,
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 18406,
+      "end": 22680,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 14049,
+      "end": 16937,
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 51509,
+      "end": 54831,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_candidate/PROPOSAL.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 10729,
+      "end": 18342,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_external_stop_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55",
+      "bytes": 5781,
+      "sha256": "b1812e62ba2a64b0d2f61acd1070bf3266bafc00c6c10f8b37aca45f96e5ed55"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_external_stop_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 54639,
+      "end": 72466,
+      "bytes": 17827,
+      "sha256": "57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 28610,
+      "end": 42957,
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_work_exposed_check/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_work_exposed_check/REVIEW.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 43019,
+      "end": 54581,
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_work_root_review/ACCEPTANCE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_work_root_review/FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-controlled-stop-20261016/frozen_source/evidence/92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_installation_work_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 85664,
+      "end": 89056,
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_pauli_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 61491,
+      "end": 63824,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json": {
+      "path": ".claude/science/physics-loops/toe-product-source-mediator-20261016/binding_sources/454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/sources/product_source_mediator_root_review/QUALIFICATION.md": {
+      "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start": 47029,
+      "end": 51443,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    }
+  },
+  "unrepresented_historical_members": {
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/CHECKPOINT.md": {
+      "bytes": 1206,
+      "sha256": "7e3ec44f7223679c5ce9ec6ab683c4ee9f13ef97171c86480104e90a7ca2537b"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/seal.py": {
+      "bytes": 1077,
+      "sha256": "da2201d0744b85493aa974741920a7f3b25919b2ae1e5263082ac7fed95c2bff"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/CHECKPOINT.md": {
+      "bytes": 1036,
+      "sha256": "66e67b278557f1a29f81fd85b811f53d4401e4396657a0d93d139c9b5148d1a7"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/CODE_REUSE.md": {
+      "bytes": 913,
+      "sha256": "f1c3f5140c9b92374b217afd47a7cc7f91370a486b9b273dc97590a81b737d58"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/seal.py": {
+      "bytes": 1087,
+      "sha256": "7d46a1634c2f3e5f136c86007fc293e14f98e7972a36397efdf96723cb1aa50a"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/CHECKPOINT.md": {
+      "bytes": 1147,
+      "sha256": "7fa130146fcc619f5fa7ed9eb110a8f6c59f1b45198fd41398fd283fc00f9415"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/CODE_REUSE.md": {
+      "bytes": 953,
+      "sha256": "e278799545dd51279d1cb21e6514b1531acfa2e73ec11439a24ce38c5ccc35d2"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/seal.py": {
+      "bytes": 1079,
+      "sha256": "4cf7b4c92de2b20ee10ef56a7eb526e822c11ccfe09e0678bb4dc8534304c5bf"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/CHECKPOINT.md": {
+      "bytes": 888,
+      "sha256": "3132d331cf7c1d4cf1765310872eacd8910f936163745091d92003aae0fc96dc"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/CODE_REUSE.md": {
+      "bytes": 942,
+      "sha256": "00d0e0945928439a754465294f23702ffc488f4e71438ae906ed6bfb554efbd5"
+    },
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_c1_ramps_exposed_check/seal.py": {
+      "bytes": 1067,
+      "sha256": "328a398d2911c23ea45bc114cb4dbb5e044a736f27c3385572fb4b50bc82d04a"
+    }
+  }
+}

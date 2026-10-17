@@ -1,0 +1,5 @@
+This milestone supplies a checked full-U(4) endpoint neighborhood and an explicit positive recurrence for the literal two-qubit plant K=2I+ZZ under supplied smooth positive onsite rays. It preserves complete arguments, separate exposed checks, exact integer/rational evidence and controlling root source qualifications.
+
+The full scalar, old load and all modeled quantum outputs remain in scope. The exhibited recurrence has enormous physical duration; no arbitrary-target physical implementation, native controller, favorable complexity or fixed-fault-floor arbitrary precision is claimed. Net work and absolute modeled work variation are separate.
+
+The proposed primary validates provenance only. Source-only packaging receipts and negative provenance controls will be supplied by the completed frozen draft. Actual canonical checks, graph changes, staged review, Git base and publication must be recorded separately; this text makes no claim that they have occurred. No direct canonical mathematical parent is imported by this self-contained combined argument. Retained status requires the independent audit path.

@@ -1,0 +1,24 @@
+"""Metadata-only initial derivation seal; no scientific arithmetic or imports."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+
+P=Path(__file__).resolve().parent
+
+def pin(path):
+    raw=Path(path).read_bytes();return {'path':str(path),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+def write(path,value):Path(path).write_text(json.dumps(value,indent=2)+'\n')
+
+assert not (P/'FREEZE.json').exists()
+for name in ['freeze_metadata.py','record_metadata.py']:ast.parse((P/name).read_text(),filename=name)
+source_files=['TASK_INPUT.md','ANALYSIS.md','SOURCE_COVERAGE.md','CURRENT_STATUS.md']
+manifest={'kind':'analytical_derivation_source_identity','utc':datetime.now(timezone.utc).isoformat(),'mathematical_input_origin':'Exact root question in this worker conversation, recorded in TASK_INPUT.md','sources':[pin(P/name) for name in source_files],'optional_root_qualification_3982_read':False,'new_author_candidate_read':False,'prior_same_target_exposure':True,'same_model_and_effort':True,'science_executions':0,'proposed_scalar_check_executed':False,'scope':'Static positive ordinary edge contract only; original onsite-ray contract remains distinct. Root scientific review pending.'}
+write(P/'SOURCE_MANIFEST.json',manifest)
+files=[]
+for path in sorted(P.rglob('*')):
+    if not path.is_file() or 'metadata_run' in path.relative_to(P).parts:continue
+    files.append(dict(pin(path),path=str(path.relative_to(P))))
+freeze={'kind':'initial_analytical_derivation_before_new_author_exposure','utc':datetime.now(timezone.utc).isoformat(),'files':files,'scientific_executions':0,'same_model_source_exposed':True,'new_author_candidate_read':False,'root_acceptance':None,'retained_audit':False,'terminal_metadata_receipt':'metadata_run/EXECUTION.json is written after this seal and is outside its inventory.'}
+write(P/'FREEZE.json',freeze)
+print(json.dumps({'freeze':pin(P/'FREEZE.json'),'members':len(files),'analysis':pin(P/'ANALYSIS.md'),'source_manifest':pin(P/'SOURCE_MANIFEST.json'),'scientific_executions':0,'new_author_candidate_read':False},indent=2))

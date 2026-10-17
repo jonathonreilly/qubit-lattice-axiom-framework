@@ -1,0 +1,80 @@
+[
+  {
+    "path": "CHECKPOINT.md",
+    "bytes": 1739,
+    "sha256": "5db0ff74822232b043e5fe3ef634d9f017d35f0333463bf403b628eca2c7144c",
+    "matches": true
+  },
+  {
+    "path": "CHECK_PLAN.md",
+    "bytes": 11640,
+    "sha256": "0ce58af212c66f8c65ec2478a9d15cbe50dafb6952fa3e1db8aace102bfe77d1",
+    "matches": true
+  },
+  {
+    "path": "EXPOSURE.md",
+    "bytes": 2751,
+    "sha256": "de2c6157e0fdd2cb537b53627ad44aea56e81e0349f700f5d9761018d339a1db",
+    "matches": true
+  },
+  {
+    "path": "INPUTS.json",
+    "bytes": 755,
+    "sha256": "6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8",
+    "matches": true
+  },
+  {
+    "path": "READ_GUIDE.md",
+    "bytes": 2921,
+    "sha256": "a564ad8995e3ff756981d66d4a6128c0804c52413ab4a26a0b47c247cd3b6ba1",
+    "matches": true
+  },
+  {
+    "path": "SOURCE_MANIFEST.json",
+    "bytes": 2836,
+    "sha256": "a5a30d7dd36abbc79435fb95c09bc8a9220af3fe354b73af2c547bce6b988654",
+    "matches": true
+  },
+  {
+    "path": "check_weak_mediator.py",
+    "bytes": 20204,
+    "sha256": "4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab",
+    "matches": true
+  },
+  {
+    "path": "record_metadata.py",
+    "bytes": 1985,
+    "sha256": "edb0703da5347e3d17699b9ad635b63453e665d1823a35f73603ad48e60a929e",
+    "matches": true
+  },
+  {
+    "path": "record_one_attempt.py",
+    "bytes": 5703,
+    "sha256": "ae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87",
+    "matches": true
+  },
+  {
+    "path": "seal_metadata.py",
+    "bytes": 3698,
+    "sha256": "eac2199a99623241f8c18ddc48c07b7b36b8c1cf6dc2d3b481d28ce352be31fa",
+    "matches": true
+  },
+  {
+    "path": "sources/DYADIC_ADDENDUM.md",
+    "bytes": 2959,
+    "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+    "matches": true
+  },
+  {
+    "path": "sources/PROPOSAL.md",
+    "bytes": 5883,
+    "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+    "matches": true
+  },
+  {
+    "path": "sources/SOURCE_FREEZE.json",
+    "bytes": 416,
+    "sha256": "551fab5e4c1876dfff3d807ebf837a8c23f3d28724a554049faa8b6ab92d3f9c",
+    "matches": true
+  }
+]

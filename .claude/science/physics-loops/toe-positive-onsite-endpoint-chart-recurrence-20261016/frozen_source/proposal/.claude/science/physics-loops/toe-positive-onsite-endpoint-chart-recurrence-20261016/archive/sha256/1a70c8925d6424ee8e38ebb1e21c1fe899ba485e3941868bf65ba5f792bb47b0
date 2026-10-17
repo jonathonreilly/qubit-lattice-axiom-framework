@@ -1,0 +1,45 @@
+{
+  "stored_artifact_validation": "completed",
+  "science_reexecuted": false,
+  "ledger": {
+    "positive_integer_n": 98611368294597721931914764889297593425141587534996842205,
+    "recurrence_slot_duration": 2366672839070345326365954357343142242203398100839924212920,
+    "uniform_duration_M": 147975046,
+    "conditional_uniform_slot_duration": 350208522228384946904887108861751911074590975328100424043350794320,
+    "nominal_scalar_action_recurrence": {
+      "numerator": 256922058954744904721410728442575949909863892163680772680907,
+      "denominator": 48
+    },
+    "recurrence_absolute_control_variation_upper": 7100018517211035979097863072029426726610194302519772638760,
+    "analytic_power_error": {
+      "numerator": 23962562495587246429455287868099315202309405771004232655815,
+      "denominator": 16687398718132110018711107079449625895333629080911349765211262561111091607661254297054391304192
+    },
+    "analytic_power_error_less_than": {
+      "numerator": 1,
+      "denominator": 100000000000000000000000000000000000
+    },
+    "strict_total_operator_bound": {
+      "numerator": 1,
+      "denominator": 10000000000000
+    },
+    "r_over_4": {
+      "numerator": 25,
+      "denominator": 924844032
+    },
+    "parent_pigeonhole_Q_example": 591900181,
+    "this_n_exceeds_that_Q_fourth_power": true,
+    "physical_duration_unit": "hbar/E0 per slot; no physical run performed",
+    "actual_old_and_control_scalar_retained": true
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/SOURCE_MANIFEST.json",
+    "bytes": 9905,
+    "sha256": "0bfef07f8f9531adcfbb9f5e81d8880d3ea6ee5acd1b9375ec74e0a46141f538"
+  },
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_candidate/DERIVATION.md",
+    "bytes": 17720,
+    "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+  }
+}

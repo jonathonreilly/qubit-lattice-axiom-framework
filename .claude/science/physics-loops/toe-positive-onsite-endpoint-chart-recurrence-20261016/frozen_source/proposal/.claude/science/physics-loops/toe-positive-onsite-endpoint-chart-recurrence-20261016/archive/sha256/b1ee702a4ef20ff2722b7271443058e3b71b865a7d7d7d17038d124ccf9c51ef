@@ -1,0 +1,428 @@
+# One finite positive-onsite endpoint-chart certificate candidate
+
+Status: a proposed computer-assisted certificate, with one successful exact
+integer enclosure execution and a complete analytic error argument below.
+Separate analytical/code checking and root acceptance remain pending. This
+is source-exposed same-model authorship, not independent validation. The
+floating selector is used only for its frozen rational inputs and ordering.
+
+## 1. Actual result and its limits
+
+For the literal two-qubit Hamiltonian K=2I+Z tensor Z, the supplied positive
+onsite controls and fixed 24-slot template below, the enclosure calculation
+produced intervals satisfying
+
+    ||I-RA||_F <= 1/2,       ||R||_F <= B=63.
+
+Consequently sigma_min(A)>=1/126, conditional on the analytic enclosure and
+implementation being correct. A conservative set of exact chart constants is
+
+    s = 1/252,
+    L = 4096/225,
+    t = 25/229376,
+    rho = 25/115605504,
+    r = 25/231211008.
+
+Every target U with ||U-U0||_op<r is attained by the ideal pulse family in
+duration 24 with a selected-amplitude displacement of Euclidean norm <t.
+This is a full U(4) statement, including the scalar, not projective rank.
+The statement is a concrete candidate for checking, not a retained theorem.
+
+Only this finite chart enclosure was executed. No recurrence word, arbitrary
+target compilation, physical waveform, experimental calibration, or microscopic
+controller was constructed. The theoretical finite-duration consequence in
+section 7 has no efficiency claim. No assertion for a generic old Hamiltonian,
+more qubits, smaller prescribed caps, or native positive actuators follows.
+
+## 2. Exact input and physical contract
+
+Units are hbar=1 and energy unit 1. Let X,Y,Z be the usual Pauli matrices and
+the four rays, in order, be
+
+    P0=I+X1, P1=I+Y1, P2=I+X2, P3=I+Y2.
+
+All are positive semidefinite of norm 2. Keep K=2I+ZZ=diag(3,1,1,3) literally
+installed throughout. For slot j=0,...,23, local time s in [0,1], apply
+
+    H_j(s)=K+a_j psi(s)P_(j mod 4),   psi(s)=16s^2(1-s)^2.
+
+The nominal rational amplitudes have denominator 512 and numerators
+
+    [233,306,251,196,269,214,287,232,305,250,195,268,
+     213,286,231,304,249,194,267,212,285,230,303,248].
+
+The selected amplitude indices, in Jacobian column order, are exactly
+
+    [1,21,4,3,7,5,2,6,8,10,11,12,17,9,19,13].
+
+The other eight amplitudes remain fixed. All nominal amplitudes are in
+[3/8,5/8). A displacement of Euclidean norm <=1/8 leaves every amplitude in
+[1/4,3/4]. Then the added onsite term has norm <=3/2 and derivative norm
+<=12 because |psi'|<=8. One ray is active at a time. Thus added incident
+caps 2 and slew 16 are valid; K has full operator norm 3 and remains paid.
+The zero value and zero first derivative at every slot boundary make the
+global waveform C1. There are no instantaneous switches hidden in this word.
+
+Restoring a supplied energy E0>0 gives K=E0(2I+ZZ), rays E0(I+sigma), slot
+duration hbar/E0, added incident cap 2E0, and slew cap 16E0^2/hbar. K's
+scalar is part of its physical Hamiltonian. Assigning any identity terms to
+sites for an incident ledger must count them; the quoted added bound already
+counts the full onsite ray. No old term has been rescaled away or cancelled.
+
+The actuator assumptions are explicit: two individually addressable onsite
+X/Y positive rays with their positive identity reserves, a supplied absolute
+clock, precision and isolation, and the ability to realize the stated smooth
+waveforms. There is no new quantum ancilla or reservoir. The external drive's
+microscopic outputs are absent from this driven model; they are not claimed
+to have been returned or retained by a conservative dilation.
+
+## 3. Reconstructed chart argument
+
+Let F(a) be the chronologically ordered complete endpoint and U0=F(a0).
+Write P_mu for the 16 two-qubit Paulis in order
+
+    II,IX,IY,IZ,XI,XX,XY,XZ,YI,YX,YY,YZ,ZI,ZX,ZY,ZZ.
+
+For Hermitian X, coeff(X)_mu=Tr(P_mu X)/4 is real and has Euclidean norm
+||X||_F/2<=||X||_op. Define
+
+    G(a)=coeff(Im(U0^dagger F(a))),
+    Im M=(M-M^dagger)/(2i).
+
+G(a0)=0. Since U0^dagger partial_j F is skew-Hermitian, its Jacobian is
+
+    A_mu,j=Tr[P_mu(-i U0^dagger partial_j F)]/4.             (1)
+
+The sign is minus i: applying a positive scalar makes a negative phase.
+The code preserves this sign and the center coordinate.
+
+Duhamel expansion with unitary intervening factors gives
+
+    ||partial_j F||<=c=2 integral_0^1 psi=16/15,
+    ||partial_j partial_k F||<=c^2.
+
+For j=k the second derivative contains two ordered insertions. Their factor
+2 cancels the half-square integration domain, giving exactly the same bound.
+For real unit directions u,v, summing selected derivatives bounds the second
+directional derivative by c^2||u||_1||v||_1<=16c^2. Taking Im and normalized
+Pauli coordinates cannot increase that bound. Thus DG is L-Lipschitz on the
+convex parameter ball, L=16c^2=4096/225.
+
+The exact inverse-residual calculation in section 6 proves ||A^-1||<=126.
+Using the weaker ||A^-1||<=1/s=252, choose the t,r above. They obey
+
+    t<=1/8,       Lt/s<=1/2,       4ct<=1/4,
+    rho=st/2,    r=rho/2<=1/8.
+
+For ||y||<=rho, the map
+
+    Phi_y(x)=A^-1[y-G(a0+x)+Ax]
+
+has Lipschitz constant <=Lt/s<=1/2 on the closed radius-t ball and maps it
+within radius t/2+Lt^2/(2s)<=3t/4. Banach's contraction theorem supplies an
+interior preimage. Also ||F(a0+x)-U0||<=4ct<=1/4.
+
+For a unitary V with ||V-U0||<r, its imaginary coordinate y has norm <rho.
+Both U0^dagger F and U0^dagger V have positive definite real Hermitian part.
+If a unitary U=A+iB has A>0, its two unitarity identities imply [A,B]=0 and
+A^2=I-B^2; therefore A is the unique positive square root of I-B^2. Equality
+of imaginary coordinates forces equality of the complete unitary. This
+establishes the stated U(4) ball conditional on the computed enclosure.
+No discontinuous logarithm or exact spectral equality test is used here.
+
+## 4. Analytic enclosure, reconstructed independently of floating output
+
+There are eight steps per slot and 192 steps in the full word. For a step
+starting at x=k/8, expand psi(x+z). The five exact coefficients are
+
+    [16x^2(1-x)^2, 32x(1-x)(1-2x),
+     16-96x+96x^2, -32+64x, 16].
+
+Let A(z)=-i[K+a psi(x+z)P], E(z)=-i psi(x+z)P and
+
+    B(z) = [[A(z),E(z)],[0,A(z)]].
+
+Its fundamental matrix is [[U,D],[0,U]], where D is the derivative of the
+local U with respect to that slot's amplitude. With u0=I,d0=0,
+
+    (n+1)u_(n+1)=sum A_k u_(n-k),
+    (n+1)d_(n+1)=sum [A_k d_(n-k)+E_k u_(n-k)],
+
+where k=0,...,min(4,n). These are exact coefficient identities.
+
+For x in [0,7/8] and a<=1, the polynomial coefficients of the augmented
+generator are bounded in operator norm by
+
+    b(z)=7+32z+64z^2+128z^3+64z^4.
+
+Indeed ||B_k||<=||A_k||+||E_k||, while |psi_k| are bounded by
+1,8,16,32,16. The scalar nonnegative Taylor series
+f(z)=exp(integral_0^z b) majorizes the augmented matrix Taylor coefficients,
+by induction in the same recurrence with f0=1. At R=1/4,
+
+    integral_0^R b = 773/240 <4,     f(R)<e^4<81.
+
+Here e<3 follows from the factorial series, so no numerical exponential
+estimate is imported. For h=R/2=1/8, the degree-80 tail satisfies
+
+    delta := ||C(h)-sum_(n=0)^80 C_n h^n|| <=81/2^81.       (2)
+
+This applies to the full 8 by 8 block. The positive-coefficient tail gains
+2^-81 from every omitted term. The interval program encloses the exact
+truncated polynomial; its arithmetic widths are not identified with (2).
+
+For one selected amplitude, only that slot has a derivative source. Across
+any contiguous portion of the entire physical word, its derivative norm is
+at most c. Hence the exact augmented segment norm is <=1+c<3. If E_n is
+the product error after n approximate steps, telescope with exact suffixes
+and approximate prefixes:
+
+    E_n<=3 delta sum_(k=0)^(n-1)(3+E_k)
+       <=3[(1+3delta)^n-1]
+       <=9n delta exp(3n delta)
+       <18n delta <=4096delta=:e,      n<=192.             (3)
+
+The inequality exp(3n delta)<2 follows from 3n delta<1/2 and e<3. For slots
+other than the selected slot, the augmented step is block diagonal; their
+computed U is the same upper-left Taylor block. Caching a D for every slot
+does not activate the unwanted derivatives in the selected product.
+
+With exact endpoint U,D and the exact truncated-product values Uhat,Dhat,
+both block errors are <=e. Because ||D||<=c and ||U||=1,
+
+    ||-i Uhat^dagger Dhat + i U^dagger D||
+       <=e(c+e)+e <4e.                                    (4)
+
+For any matrix M, |Tr(P_mu M)|/4<=||M||, including non-Hermitian M. Thus each
+real Jacobian interval is padded by
+
+    e_A=4e=16384delta=81/2^67.
+
+The actual coordinate is real by exact unitarity. The stored raw complex
+coordinate rectangles are retained before this analytic pad. The program
+also checks that the final identity row contains the independently known
+value -8/15, since Tr(P)/4=1 and integral psi=8/15.
+
+## 5. Arithmetic implementation and chronology
+
+`enclose_chart.py` is 11860 bytes, SHA256
+`af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9`.
+It uses only Python integers, Fraction, integer square root, and standard
+metadata/JSON facilities. No float enters its enclosure arithmetic.
+
+A complex rectangle is (real_lo,real_hi,imag_lo,imag_hi)/S with S=2^128.
+Real products use the extrema of all four integer corner products. Complex
+products enclose ac-bd and ad+bc before outward division by S. Division by
+positive d uses floor n//d and ceiling -((-n)//d). Exact Gaussian-integer
+left multiplication uses signed endpoint order and no rounding. All five
+A/E coefficient matrices have an exact common rational denominator; the
+recurrence first accumulates the sparse Gaussian-integer numerators, then
+divides outward once by denominator*(n+1). Horner evaluation at 1/8 divides
+outward at every stage. These operations inductively enclose each exact
+coefficient, value and product, without an assumption of independent errors.
+
+Chronological composition within a slot is
+
+    U_new=U_step U_old,
+    D_new=D_step U_old+U_step D_old.
+
+The program evaluates D_new before replacing U_old. For global products,
+prefix[j]=U_(j-1)...U_0 and suffix[j]=U_23...U_j. Thus
+
+    D_global,j=suffix[j+1] D_slot,j prefix[j].
+
+It constructs -i U_global^dagger D_global,j, using a genuine conjugate
+transpose. Pauli traces use Tr(PH)=sum_(i,k)P_(i,k)H_(k,i), not a bilinear
+entrywise product. These ordering, adjoint and scalar conditions are all
+load-bearing; a successful residual inequality cannot substitute for their
+separate source review.
+
+## 6. Original emitted intervals and exact comparisons
+
+The full output is `enclosure_001_output/certificate.json`, 154227 bytes,
+SHA256 `d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509`.
+It contains every real Jacobian interval, all 256 inverse-residual intervals,
+all raw complex Pauli coordinates, global U and all selected D matrices,
+the exact rational inverse, selected indices, and the rational bounds.
+`pulse_intervals.json` retains all 24 slot U/D rectangles (104993 bytes,
+SHA256 `5d67868778e34ac003216906de643ce559a27bb025892ce878c3d10e59c5332b`).
+No endpoint or derivative entries are omitted from the recoverable evidence.
+
+The supplied R has denominator 2^40. Every entry of I-RA is enclosed using
+exact signed rational left multiplication of the padded A intervals. If
+b_ij is the maximum absolute endpoint integer, the exact reported squared
+Frobenius upper bound is
+
+    277663866025211806662864381956311784496443347173953313
+    ---------------------------------------------------------------------
+    28948022309329048855892746252171976963317496166410141009864396001978282409984.
+
+This is sum b_ij^2/S^2 reduced as a rational; it is <=1/4. The code checks
+the equivalent integer inequality 4 sum b_ij^2<=S^2. It computes an integer
+B by integer square root and exact final comparison, then verifies
+sum Rnum_ij^2<=B^2*(2^40)^2; the resulting B is 63. Thus RA is invertible,
+A is square and invertible, and
+
+    A^-1=(RA)^-1 R,      ||A^-1||<=2||R||<=126.
+
+The identity-row containment is also true. These are original integer
+outputs, not floating SVD residuals or interval claims inferred from an ODE
+tolerance. They depend on the enclosure argument/code already specified.
+
+Actual sole enclosure execution:
+
+    start 2026-10-16T18:50:09.584660+00:00
+    end   2026-10-16T18:50:17.525382+00:00
+    elapsed 7.941587333101779 seconds; exit 0; timeout false
+    Python 3.13.5; macOS-26.6.2-arm64-arm-64bit-Mach-O
+    wall limit 240 seconds; no separate CPU/RAM quota imposed.
+
+The exact argv, cwd, source-at-launch, recorder, complete stdout and empty
+stderr are in `runs/enclosure_001/`. The source was frozen at 18:50:01 UTC
+before launch, in `SCIENCE_SOURCE_FREEZE.json` SHA256
+`32f932f7f25c271b6418cf981818ff4530e731e637912b6f28e904c2e721eeff`.
+There was no failed or adjusted enclosure run and no selector replay.
+
+## 7. Conditional finite timing and effective search, not executed
+
+The root's recurrence argument can be made precise without numerical
+eigenvalue equality tests. Choose integers Q>16pi/r and M>4pi/r, for example
+Q=floor(64/r)+1 and M=floor(16/r)+1, using pi<4. Simultaneous pigeonhole
+approximation of the four complete eigenphases gives some 1<=n<=Q^4 with
+||U0^n-I||_op<r/8. A finite dovetailed certified search can find an n with
+||U0^n-I||_F<r/4: the witness's Frobenius norm is at most twice its operator
+norm, leaving a strict margin. This requires computable endpoint entries,
+which this rational polynomial ODE supplies by effective enclosures. It
+does not require a decidable exact degeneracy or equality oracle.
+
+Execute F(a) first and then n-1 copies of U0. The endpoint is U0^(n-1)F(a),
+whose image contains the radius-r ball around U0^n, hence the radius-r/2
+ball around I. Its duration is 24n. Every U in U(4) has an existing
+Hermitian logarithm with norm<=pi, so U is a product of M identical factors
+within r/4 of I. This is an existence proof only; no logarithm branch is
+assumed effectively selected. Rational parameter tuples interior to the
+M local parameter balls are dense around those preimages. Enumerating them
+and dovetailing rigorous endpoint/target enclosures gives a finite successful
+search for any strictly positive requested error and computable supplied
+unitary U. This is not a polynomial classical algorithm or an equality test.
+
+Fix n and M first, obtaining T*=24Mn, independent of target/error. For an
+actual-time target W exp(-iT*K), then supply that complete unitary to the
+search at exactly T*. This order removes duration/target circularity.
+The n search itself has not been executed, so this packet contains no
+explicit physical word for an arbitrary target and no practical cost claim.
+In physical units multiply every duration by hbar/E0. T*<=24M Q^4 in those
+slot units. The enormous but finite ideal duration is distinct from
+classical search time and from physical calibration demands.
+
+## 8. Scalar, calibration, reference and work ledger
+
+All scalar phases are retained by (1) and the full matrix comparator. In
+one template the identity part contributes exactly
+
+    alpha(a)=48+(8/15)sum_(j=0)^23 a_j,
+    F(a)=exp(-i alpha(a)) times its traceless-Hamiltonian endpoint.
+
+At the nominal point sum a_j=1507/128, so alpha0=13027/240. This is not
+silently dropped when templates are repeated; total alpha is the sum over
+every actual template. The determinant phase is exp(-4i alpha). No separate
+scalar actuator, phase-modulo convention, or zero-cost global correction
+is introduced.
+
+If a compiled whole word has operator error epsilon_comp and its actual
+Hamiltonian satisfies an integrated full-norm defect eta_drive, Duhamel
+gives endpoint error <=epsilon_comp+eta_drive. Full identity defects count.
+In dimensionless units, amplitude errors on N_p=24Mn pulses contribute at
+most c sum_(p=1)^N_p |delta a_p|, c=16/15, if the waveforms/times otherwise
+match. Thus a uniform amplitude tolerance delta_a costs c N_p delta_a;
+it cannot be held nonzero while arbitrarily reducing final error. A waveform
+shape defect is priced by sum 2|a_p| integral|delta psi_p|. General clock,
+drive, drift and spillover faults must be included in eta_drive over the
+actual laboratory interval. A declared endpoint-time mismatch delta_T is
+additionally priced at least by ||K|| |delta_T| for the post-off comparator;
+it is not hidden by relabeling T*. The fixed-duration ideal statement is
+conditional on the specified clock/endpoint, and does not supply them.
+
+For any unknown input on the old system and an arbitrary passive reference,
+the operator bound holds after tensoring identity. If trace norm is used,
+the final joint-state error relative to the ideal input/output is at most
+delta_i+2(epsilon_comp+eta_drive), where delta_i is initial joint trace error.
+Every quantum output in this two-qubit-plus-reference model is retained.
+The external apparatus is explicitly outside this model.
+
+At initial/final zero-control endpoints, actual modeled net drive work is
+
+    W_actual=Tr K(rho_f-rho_i).
+
+If an ideal comparator has initial/final marginal trace errors delta_i,
+delta_f, then |W_actual-W_ideal|<=width(K)(delta_i+delta_f)/2
+=delta_i+delta_f in these units. For the actual-time target the comparator
+is rho_f^id=W e^(-iT*K)rho_i^id e^(iT*K)W^dagger; it is not generally
+W rho_i^id W^dagger. Both endpoint errors must be priced. With residual
+controls at either endpoint, also add their actual expectation terms, or
+the norm bound ||C_f||+||C_i||; the same-baseline formula does not apply
+unchanged. A phase error has no direct state-energy effect but still enters
+the full-unitary accuracy contract.
+
+The absolute control-variation bound per pulse is 2a||P||<=3, because psi
+rises once from 0 to 1 then falls to 0. Thus one template costs at most 72
+and Mn templates at most 72Mn in energy units E0. This bounds the absolute
+modeled work variation, not the energy consumption of an omitted drive.
+Physical elapsed action, old drift phase and full control phase all grow
+with the actual duration. Continuing after controls are off simply applies
+the same old K; it is not a halt, erasure or reuse theorem.
+
+## 9. Challenges, corrections and surviving review obligations
+
+No blocking defect was found in the proposed finite chart or its analytic
+tail. The following distinctions are controlling rather than optional:
+
+1. The original approximate inverse and floating singular value are only
+   proposals. The current residual calculation is a distinct enclosure,
+   not a replay or tolerance reinterpretation of the selector.
+2. Local derivative tails must be propagated as augmented blocks. A naive
+   product of local norm bounds would be needlessly worse; the exact
+   contiguous-segment bound is justified because only one global parameter
+   is differentiated. It would not automatically apply to all 16 sources
+   simultaneously in one larger augmented norm.
+3. All normalizations, real/complex dimensions, chronological orders and
+   adjoints are essential. The literal identity reserves create the scalar
+   row; omitting them would invalidate this full U(4) certificate.
+4. The root's effective recurrence step needs a strict-margin search, not
+   exact eigenphase classification. The Frobenius search above supplies one.
+5. A fixed ideal duration does not supply arbitrary accuracy with a fixed
+   physical fault floor. All calibration is over the actual long duration.
+6. Work uses the actual original baseline and actual-time target order.
+   Initial error and residual endpoint controls cannot be omitted.
+
+Separate review must check the source-at-launch line by line, the analytic
+tail/global bound and every arithmetic primitive, then inspect all emitted
+intervals and receipts. This author has not certified Python, hardware or
+the JSON parser as a formal proof assistant. Exact integer arithmetic is a
+substantive improvement over floating residual evidence, but an incorrect
+enclosure implementation would still invalidate the mathematical inference.
+No independent, retained, experimental or native-supplier status is claimed.
+
+## 10. Source exposure and recovery
+
+The controlling proposal 3d426ff... was read completely before coding; its
+freeze f0ad2c... and selector 3ee0b9... were captured. The actual floating
+stdout ba21dae6..., original receipt and empty stderr were read and retained.
+INPUT_MANIFEST.json gives original paths, bytes and full hashes; the copied
+proposal is self-contained and no earlier screen claim is imported as a
+proof premise. The author previously drafted the motivating actuator screen
+and other campaign material; this is not blind checking or a fresh independent
+model. No sibling's proof or review was read before this candidate froze.
+
+One initial read command reported the absence of a root SOURCE_MANIFEST.json;
+the existing root FREEZE.json was used instead. This was a read-only metadata
+discovery, not a failed science run. A newly written metadata freezer was
+briefly placed one directory above the assigned output, then immediately
+moved into this output before any execution; no parent source was overwritten
+or changed. All final writes and executed sources reside in this directory.
+No prompt, canonical, Git, PR, lock, audit or axiom files were edited.
+
+The read guide names the complete closure, original launch records and final
+freeze. Post-run inventory/verification only checks stored artifacts and
+identities; it never reruns the enclosure or selector. Root controls the
+decision and any subsequent publication.

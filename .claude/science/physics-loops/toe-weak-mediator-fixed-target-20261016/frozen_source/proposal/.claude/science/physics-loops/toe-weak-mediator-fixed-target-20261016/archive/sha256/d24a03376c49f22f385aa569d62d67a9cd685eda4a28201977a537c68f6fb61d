@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+"""Prospective recorder. Do not invoke without a new explicit root GO.
+
+Creates one non-overwritable run, verifies the frozen packet, executes the
+captured source, and retains all failures. No CPU/RAM quota is claimed.
+"""
+import argparse
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+import platform
+import subprocess
+import sys
+import time
+import traceback
+
+def stamp():
+    return dt.datetime.now(dt.timezone.utc).isoformat()
+
+def identity(path):
+    b=path.read_bytes()
+    return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--go-file',required=True)
+    args=parser.parse_args()
+    root=Path(__file__).resolve().parent
+    go=Path(args.go_file).resolve()
+    if not go.is_relative_to(root) or not go.is_file():
+        raise ValueError('an actual explicit GO record inside this packet is required')
+    run=root/'runs/compiler_001'
+    run.mkdir(parents=True,exist_ok=False)
+    receipt={'kind':'one exact Fraction/isqrt execution with two predeclared fixed coefficient scenarios',
+             'recorder_started_utc':stamp(),'recorder_invocation':sys.argv,
+             'wall_limit_seconds':60,'cpu_quota':None,'ram_quota':None,
+             'quota_qualification':'No OS CPU/RAM quota. Arithmetic/output guards are separate finite caps.',
+             'executable':sys.executable,'resolved_executable':str(Path(sys.executable).resolve()),
+             'python_version':sys.version,'platform':platform.platform(),
+             'scientific_launches':0,'argv':None,'cwd':None,
+             'exit_code':None,'timeout':False,'prelaunch_verified':False}
+    status=1
+    child=None
+    try:
+        receipt['executable_identity']=identity(Path(sys.executable).resolve())
+        receipt['go_record']={'path':str(go),**identity(go)}
+        (run/'ROOT_GO_at_launch.md').write_bytes(go.read_bytes())
+        (run/'recorder_at_launch.py').write_bytes(Path(__file__).read_bytes())
+        freeze_path=root/'PRELAUNCH_FREEZE.json'
+        freeze=json.loads(freeze_path.read_text())
+        receipt['prelaunch_freeze']=identity(freeze_path)
+        (run/'PRELAUNCH_FREEZE_at_launch.json').write_bytes(freeze_path.read_bytes())
+        verification=[]
+        for item in freeze['files']:
+            f=(root/item['path']).resolve()
+            if not f.is_relative_to(root): raise ValueError('freeze path escapes packet')
+            found=identity(f)
+            ok=all(found[k]==item[k] for k in ['bytes','sha256'])
+            verification.append({'path':item['path'],**found,'matches':ok})
+            if not ok: raise RuntimeError('frozen member changed: '+item['path'])
+        (run/'PRELAUNCH_VERIFICATION.json').write_text(json.dumps(verification,indent=2)+'\n')
+        receipt['prelaunch_verified']=True
+        captured=run/'source_at_launch'
+        captured.mkdir()
+        for name in ['compile_coefficients.py','PARAMETERS.json']:
+            (captured/name).write_bytes((root/name).read_bytes())
+            if identity(captured/name)!=identity(root/name): raise RuntimeError('capture mismatch')
+        receipt['original_source']={'path':str(root/'compile_coefficients.py'),**identity(root/'compile_coefficients.py')}
+        receipt['executed_source']={'path':str(captured/'compile_coefficients.py'),**identity(captured/'compile_coefficients.py')}
+        receipt['executed_inputs']={'path':str(captured/'PARAMETERS.json'),**identity(captured/'PARAMETERS.json')}
+        argv=[sys.executable,'-I','-B',str(captured/'compile_coefficients.py'),
+              '--output',str(run/'output')]
+        receipt['argv']=argv; receipt['cwd']=str(run)
+        with (run/'stdout.txt').open('wb') as out, (run/'stderr.txt').open('wb') as err:
+            receipt['start_utc']=stamp()
+            tic=time.monotonic()
+            child=subprocess.Popen(argv,cwd=run,stdin=subprocess.DEVNULL,stdout=out,stderr=err)
+            receipt['scientific_launches']=1; receipt['pid']=child.pid
+            try:
+                child.wait(timeout=60)
+            except subprocess.TimeoutExpired:
+                receipt['timeout']=True
+                child.kill(); child.wait()
+            except BaseException:
+                child.kill(); child.wait()
+                raise
+            finally:
+                receipt['elapsed_seconds']=time.monotonic()-tic
+                receipt['end_utc']=stamp()
+                receipt['exit_code']=child.returncode
+        receipt['executed_source_after']=identity(captured/'compile_coefficients.py')
+        receipt['source_unchanged']=receipt['executed_source_after']=={k:receipt['original_source'][k] for k in ['bytes','sha256']}
+        if not receipt['source_unchanged']: raise RuntimeError('executed source changed')
+        status=0 if receipt['exit_code']==0 and not receipt['timeout'] else 1
+    except BaseException as exc:
+        receipt['recorder_error']=repr(exc)
+        (run/'recorder_error.txt').write_text(traceback.format_exc())
+    finally:
+        receipt['recorder_finished_utc']=stamp()
+        artifacts=[]
+        for f in sorted(run.rglob('*')):
+            if f.is_file() and f.name!='EXECUTION.json':
+                artifacts.append({'path':f.relative_to(run).as_posix(),**identity(f)})
+        receipt['artifacts']=artifacts
+        (run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+        print(json.dumps({'receipt':str(run/'EXECUTION.json'),'scientific_launches':receipt['scientific_launches'],
+                          'exit_code':receipt['exit_code'],'timeout':receipt['timeout'],'recorder_status':status},sort_keys=True))
+    return status
+
+if __name__=='__main__':
+    sys.exit(main())

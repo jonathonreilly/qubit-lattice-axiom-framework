@@ -1,0 +1,11 @@
+{
+  "kind": "source_authoring_not_scientific_execution",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_qualified_publication_draft/create_sources.py",
+    "bytes": 13907,
+    "sha256": "13ab7b4b2527ef49b22ad36dd87677b684ae1954b28c21e1b256ede558071a5f"
+  },
+  "scope": "This deterministic generation script was invoked directly through the tool. No separate prelaunch recorder envelope is claimed for authoring. Actual build/inspection/seal metadata executions use preserved launch sources and full streams.",
+  "canonical_changes": false,
+  "scientific_executions": 0
+}

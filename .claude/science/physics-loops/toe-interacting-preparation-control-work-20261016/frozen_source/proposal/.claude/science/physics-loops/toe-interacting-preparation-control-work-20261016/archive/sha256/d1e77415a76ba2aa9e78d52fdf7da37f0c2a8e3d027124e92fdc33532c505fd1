@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 8398,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc"
+    },
+    {
+      "bytes": 4509,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399"
+    }
+  ],
+  "kind": "qualified preparation root decision",
+  "new_scientific_executions": 0,
+  "retained_audit": false,
+  "utc": "2026-10-16T15:13:35.540614+00:00"
+}

@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Capture one metadata inspection; seal only successful completed evidence."""
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+import time
+
+ROOT = Path(__file__).resolve().parent
+
+
+def pin(path):
+    data = Path(path).read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def save(path, data):
+    path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
+
+
+def main():
+    run = ROOT / "runs/metadata_002"
+    run.mkdir(parents=True, exist_ok=False)
+    source = ROOT / "inspect_sources.py"
+    original = pin(source)
+    shutil.copyfile(source, run / "source_at_launch.py")
+    shutil.copyfile(__file__, run / "recorder_at_launch.py")
+    argv = [sys.executable, "-I", "-B", str(source)]
+    start = dt.datetime.now(dt.timezone.utc).isoformat()
+    clock = time.monotonic()
+    with (run / "stdout").open("wb") as stdout, (run / "stderr").open("wb") as stderr:
+        result = subprocess.run(argv, cwd=ROOT, stdout=stdout, stderr=stderr, check=False)
+    record = {"scope": "Metadata only. No validator or scientific source import/execution.", "argv": argv, "cwd": str(ROOT), "started_at": start, "completed_at": dt.datetime.now(dt.timezone.utc).isoformat(), "elapsed_seconds": time.monotonic() - clock, "exit_code": result.returncode, "child_source_at_launch": original, "source_capture": pin(run / "source_at_launch.py"), "recorder_source": pin(run / "recorder_at_launch.py"), "stdout": pin(run / "stdout"), "stderr": pin(run / "stderr"), "source_unchanged": pin(source) == original}
+    save(run / "EXECUTION.json", record)
+    if result.returncode or not record["source_unchanged"]:
+        raise SystemExit(result.returncode or 1)
+    target = ROOT / "FINAL_FREEZE.json"
+    assert not target.exists()
+    files = []
+    for path in sorted(ROOT.rglob("*")):
+        if path.is_file():
+            row = pin(path)
+            row["path"] = str(path.relative_to(ROOT))
+            files.append(row)
+    save(target, {"status": "Source-only saved-certificate arithmetic proposal; scientific execution and root GO absent", "sealed_at": dt.datetime.now(dt.timezone.utc).isoformat(), "files": files, "root_GO": None, "checker_scientific_execution": None, "metadata_execution": pin(run / "EXECUTION.json")})
+    print(json.dumps({"freeze": pin(target), "validator": pin(ROOT / "validate_saved_certificate.py"), "recorder": pin(ROOT / "record_one_attempt.py"), "members": len(files)}, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

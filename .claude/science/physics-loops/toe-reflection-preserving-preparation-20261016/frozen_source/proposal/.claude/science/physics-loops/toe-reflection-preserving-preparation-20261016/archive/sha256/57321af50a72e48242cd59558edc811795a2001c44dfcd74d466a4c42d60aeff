@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+"""Actual bounded metadata launch; executes only copied source-capture code."""
+from pathlib import Path
+import datetime,hashlib,json,platform,shutil,subprocess,sys
+OUT=Path(__file__).resolve().parent; RUN=OUT/'metadata_runs/source_capture'
+RUN.mkdir(parents=True,exist_ok=False)
+def now(): return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def ident(p):
+ b=p.read_bytes(); return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+source=OUT/'capture_sources.py'; copy=RUN/'source_at_launch.py'
+shutil.copyfile(source,copy); shutil.copyfile(Path(__file__),RUN/'recorder_at_launch.py')
+argv=[sys.executable,'-c',"from pathlib import Path; import sys; p=Path(sys.argv[1]); exec(compile(p.read_bytes(),sys.argv[2],'exec'),{'__name__':'__main__','__file__':sys.argv[2]})",str(copy),str(source)]
+start=now(); timeout=False
+try:
+ p=subprocess.run(argv,cwd=OUT,capture_output=True,timeout=60)
+ code=p.returncode; stdout=p.stdout; stderr=p.stderr
+except subprocess.TimeoutExpired as e:
+ timeout=True; code=None; stdout=e.stdout or b''; stderr=e.stderr or b''
+(RUN/'stdout').write_bytes(stdout); (RUN/'stderr').write_bytes(stderr)
+receipt={'kind':'source-capture-and-existing-evidence-verification-only','start_utc':start,'end_utc':now(),
+ 'argv':argv,'cwd':str(OUT),'python':sys.version,'platform':platform.platform(),
+ 'wall_timeout_seconds':60,'timed_out':timeout,'exit_code':code,
+ 'source_at_launch':ident(copy),'recorder_at_launch':ident(RUN/'recorder_at_launch.py'),
+ 'stdout':ident(RUN/'stdout'),'stderr':ident(RUN/'stderr'),'new_scientific_runs':0}
+(RUN/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))
+if code!=0: raise SystemExit(code or 1)

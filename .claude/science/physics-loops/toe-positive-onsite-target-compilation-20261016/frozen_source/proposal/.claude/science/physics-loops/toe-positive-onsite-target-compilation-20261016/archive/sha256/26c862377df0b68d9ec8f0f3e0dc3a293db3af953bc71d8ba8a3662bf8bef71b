@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/record_endpoint_target_acceptance.py", line 18, in <module>
+    rows=read(p)['members'];assert len(rows)==count and len({r['path'] for r in rows})==count
+         ~~~~~~~^^^^^^^^^^^
+KeyError: 'members'

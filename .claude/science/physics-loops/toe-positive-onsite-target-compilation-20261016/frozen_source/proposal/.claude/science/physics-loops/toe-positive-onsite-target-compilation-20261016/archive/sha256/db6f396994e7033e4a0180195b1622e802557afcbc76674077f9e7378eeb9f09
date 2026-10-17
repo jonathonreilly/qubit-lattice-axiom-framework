@@ -1,0 +1,52 @@
+{
+  "kind": "scoped_saved_evidence_arithmetic",
+  "start_utc": "2026-10-16T20:02:43.852244+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/source_at_launch.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/INPUT_BINDING_AT_LAUNCH.json",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/output"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001",
+  "wall_timeout_seconds": 180,
+  "cpu_ram_limits": null,
+  "source_original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/check_saved_evidence.py",
+    "bytes": 31600,
+    "sha256": "7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94"
+  },
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/source_at_launch.py",
+    "bytes": 31600,
+    "sha256": "7f679bc3b880791bc84b6268cec7b5bed5d35fcc3cdb85a04849888e7f248f94"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/recorder_at_launch.py",
+    "bytes": 2813,
+    "sha256": "b883de16a549b62f789b3625b6aa050b1275c7603fcdaa273d243c1137f77fb0"
+  },
+  "checker_source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/checker_proposal/CHECKER_SOURCE_FREEZE.json",
+    "bytes": 2626,
+    "sha256": "78fe6aabbc5691a3fa4f04149ddf360c7f7fa4751bc693ecb1bc5eb7bf8983f9"
+  },
+  "original_input_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/execution_binding/INPUT_BINDING.json",
+    "bytes": 827,
+    "sha256": "eda27de47d353685b918d334144fcdff832b36ee4c5b08aab34056c9c74bca2d"
+  },
+  "input_binding_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/INPUT_BINDING_AT_LAUNCH.json",
+    "bytes": 827,
+    "sha256": "eda27de47d353685b918d334144fcdff832b36ee4c5b08aab34056c9c74bca2d"
+  },
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "executable": {
+    "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "bytes": 52640,
+    "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+  },
+  "scope": "One Fraction saved-arithmetic check; no author import, local Taylor/ODE, nominal endpoint or n-power replay."
+}

@@ -1,0 +1,274 @@
+# A fixed compressed full-U(4) target certificate candidate
+
+Status at source freeze: proposed exact-arithmetic implementation awaiting
+root GO and one bounded execution. No target witness or successful residual
+is claimed before that execution. The original plan and historical parent
+statuses remain immutable; the copied root qualifications control reuse.
+The source author also wrote the chart and recurrence parents. This is a
+same-model, source-exposed continuation requiring a separate check.
+
+## Fixed mathematical target and chronological schedule
+
+Keep K=2I+ZZ literally installed, in units E0=hbar=1. In slot j use
+K+a_j psi(s)P_(j mod4), where psi(s)=16s^2(1-s)^2 and the positive rays
+are I+X1,I+Y1,I+X2,I+Y2. All scalar reserves are included. The nominal
+a_j=[192+((73j+41)mod128)]/512 and16 varied indices are the exact frozen
+SELECTED_INPUT.json. One template has24 unit-time slots and endpoint F(a).
+Write U0=F(a0), D=U0^n, where the qualified recurrence supplies
+
+    n=98611368294597721931914764889297593425141587534996842205,
+    ||D-I||op<10^-13.
+
+The target and all timing data were fixed before calibration:
+
+    W=[(9+12i)I+(-16+12i)XX]/25,
+    epsilon=2^-40, r=25/231211008, M=147975046=floor(16/r)+1,
+    T=24Mn
+     =350208522228384946904887108861751911074590975328100424043350794320.
+
+W is unitary, entangling and has determinant(-527-336i)/625. It commutes
+with K but is not an old free-evolution endpoint. The prescribed laboratory
+comparator is V_T=W exp(-iTK), with its entire scalar. This first example
+does not establish compilation of arbitrary matrices or nonzero net work.
+
+For one dyadic calibrated vector x, the compressed chronological word is
+
+    repeat M:
+        calibrated template F(a0+x);
+        repeat n-1: nominal template U0.
+
+Thus its actual endpoint is B(x)^M, with
+B(x)=U0^(n-1)F(a0+x)=D U0^dagger F(a0+x). The adjoint is only an algebraic
+checking identity. Every physical slot has positive duration. The exact
+24Mn-slot count equals T, not the small size of its serialized repetition
+tree. This n is larger than the parent's existential Q^4 bound; explicitness
+is the only improvement claimed.
+
+## Analytic target enclosure, including exponential tails
+
+Let P_(z,x)=(I+zZZ)(I+xXX)/4, z,x=+/-1. These are orthogonal rank-one
+projectors. W has eigenvalue w=(-7+24i)/25 for x=+1 and1 for x=-1.
+Set phi_w=pi/2+2atan(1/7); the half-angle and addition formulas give
+exp(i phi_w)=w. Machin's identity pi=16atan(1/5)-4atan(1/239) follows
+from tan(4atan(1/5))=120/119, tangent subtraction and the first quadrant.
+
+For each positive q, the128-term arctangent sum ends with a negative term.
+Its exact value is therefore below atan(1/q), and the omitted positive term
+1/[257 q^257] bounds the remainder from above. The program forms these
+Fraction endpoints before any rounding, and combines the signed Machin
+formula correctly. It rounds pi outward to dyadic denominator2^512 and
+requires width<=2^-508. Using the rational midpoint, it selects an integer
+k nearest to T/(2pi_mid) and encloses theta=T-2pi k. It actually checks
+theta subset(-4,4), rather than assuming branch selection accuracy.
+
+For each z,x it similarly chooses integer m_(z,x) and encloses
+
+    phi_(z,x)=1_(x=+1)phi_w-(2+z)theta-2pi m_(z,x)
+
+strictly in(-4,4). No transcendental equality oracle or principal-branch
+decision is required. Then
+
+    Z=sum P_(z,x) exp(i phi_(z,x)/M),
+    Z^M=V_T, ||Z-I||op<4/M<r/4.
+
+The code evaluates exp(iu) by degree256 Horner nesting at the outward angle
+rectangle. For every real |u|<4 the analytic tail is at most
+
+    e^4*4^257/257! < 81*4^257/257!.
+
+It adds the ceiling of that rational bound times2^768 to BOTH real and
+imaginary component intervals. Thus the returned exponential rectangle
+already encloses the analytic exponential, not only its polynomial. The
+same rule applies to every root eigenvalue and the direct target.
+
+The direct comparator independently uses zeta=exp(-i theta)=exp(-iT),
+exp(-iTK)=diag(zeta^3,zeta,zeta,zeta^3), and right-multiplies W by that
+diagonal. Its rectangle retains theta's pi/arctangent uncertainty, every
+exponential tail and all directed product errors. No spectral/logarithm
+library or floating phase is used. TARGET_ENCLOSURES.json records every
+reduction integer, exact series/remainder, angle and proof-facing rectangle.
+
+## Qualified local chart and the fixed contraction
+
+The exact parent certificate and root qualification provide, in Pauli
+coefficient coordinates Tr(PH)/4 ordered II,IX,IY,IZ,XI,...,ZZ,
+
+    ||I-R_inv A||op<=||I-R_inv A||F<2^-38,
+    ||R_inv||op<=||R_inv||F<=63=:B,
+    L=4096/225, c=16/15,
+    t=25/229376=1/(8BL), r=t/(16B).
+
+R_inv is the supplied exact Gaussian-real rational16x16 matrix with
+denominator2^40. The new program checks its identity against the stored
+chart matrix and uses the chart's exact squared residual and norm bounds.
+It does not recompute derivatives or extrapolate a floating singular value.
+
+Define G(x)=coeff Im(U0^dagger F(a0+x)) and y=coeff Im(D^dagger Z).
+The operator bound10^-13+4/M<r/2 implies ||y||2<r/2. The normalized
+Hermitian coefficient norm equals Frobenius norm/2 and is bounded by the
+operator norm in dimension4. On the radius-t ball, the exact map
+
+    Phi(x)=x+R_inv(y-G(x))
+
+has derivative norm at most2^-38+BLt<1/4. Also ||Phi(0)||<=Br/2=t/32,
+so Phi maps that ball into its radius9t/32 subball. The contraction fixed
+point x* exists and is unique there. R_inv is invertible because R_inv A is
+invertible. Hence G(x*)=y. Both relevant unitaries have positive definite
+real parts: the parent's derivative bound keeps U0^dagger F close to I,
+and D^dagger Z is within r/2 of I. A unitary with positive real part is
+uniquely determined by its imaginary Hermitian part, because that real
+part is the positive square root of I-Im(U)^2. Therefore B(x*)=Z.
+
+Exactly32 iterations start at x0=0. Each uses exact rational midpoints of
+enclosures for y and G(x_k), whose16 coordinate radii must each be<=2^-110.
+The corresponding vector errors are<=2^-108. Applying exact R_inv and
+rounding each displacement to the nearest multiple of2^-128 changes a
+map value by at most
+
+    d<=63*(2*2^-108)+2^-127<2^-100<t/32.
+
+The rule at a half-grid tie is deterministic upward; either nearest point
+has the same bound. All iterates stay inside radius t/2 and are explicitly
+checked there by exact squared norms. Contraction yields
+
+    ||x32-x*||2 <= t*4^-32+(4/3)*2^-100,
+    ||B(x32)^M-V_T||op <=4cM[t*4^-32+(4/3)*2^-100]<2^-45.
+
+These strict rational inequalities are also checked at launch. G(0)=0
+exactly, so iteration0 needs no template integration. Iterations1 through31
+and the final F(x32) require exactly32 new endpoints. No early-success stop,
+extra iteration, target change or precision adjustment is implemented.
+
+## Integer endpoint calculus and mandatory coordinate padding
+
+S=2^768 rectangles have four integer endpoints divided by S in the order
+(real_lo,real_hi,imag_lo,imag_hi). Real products take extrema over all four
+corners. Complex products use ac-bd and ad+bc, then floor/ceiling division
+by positive S. Signed exact Gaussian-integer multiplication swaps endpoints
+where needed. All16 matrix entries, including identity phases, are retained.
+
+At substep start h=k/8 the shifted waveform coefficients are exactly
+
+    16h^2(1-h)^2, 32h(1-h)(1-2h),
+    16-96h+96h^2, -32+64h, 16.
+
+For A(z)=-i[K+a psi(h+z)P], all A_j are exact Gaussian rationals. The
+code accumulates sparse left products with common denominator d and uses
+
+    U_0=I, (m+1)U_(m+1)=sum_(j<=min(4,m)) A_j U_(m-j).
+
+One outward division by d(m+1) follows the integer sum. Horner evaluation
+at1/8 and chronological left multiplication enclose the exact truncated
+product, by induction, including rounding. Legal amplitudes lie in[1/4,3/4]
+and in particular are below1, so the accepted scalar majorant
+7+32z+64z^2+128z^3+64z^4 applies. Its integral at1/4 is773/240<4; its
+solution has value<81. Consequently a degree320 segment tail is bounded
+by delta=81/2^321. Comparing192 approximate segments to exact unitary
+segments gives the uniform endpoint error
+
+    e0=384delta=31104/2^321.
+
+The saved nominal rectangle encloses an exact truncated matrix Uhat with
+||Uhat-U0||<=e0. The saved power encloses Dhat=Uhat^n with
+||Dhat-D||<=eta_D=2ne0. This is qualified parent evidence, not a new power
+calculation. A new endpoint rectangle encloses Fhat, ||Fhat-F||<=e0.
+
+For G the interval product Uhat^dagger Fhat differs from the true product
+by at most gamma=e0(1+e0)+e0. For y, Dhat^dagger Z differs from D^dagger Z
+by at most eta_D, because the exact Z is unitary and its full analytic
+enclosure is already in the root rectangle. Each normalized Pauli trace
+error is bounded by the operator error: |Tr(PE)/4|<=||E||op. Thus the
+program adds ceil(S gamma) or ceil(S eta_D) to each imaginary-coordinate
+side BEFORE saving, testing its width or taking its midpoint. Analytic
+tails are not replaced by small integer rounding widths.
+
+The identity Im Tr(PU)/4=Tr(P Im U)/4 follows from Hermiticity of P and
+cyclicity of trace, even when P has imaginary entries. The code computes
+the full complex trace with transposed matrix indices, then takes its
+imaginary interval. It does not take entrywise imaginary parts first.
+
+## Decisive full-word residual
+
+The final product Bhat=Dhat Uhat^dagger Fhat has error from the true
+unitary B bounded by
+
+    beta=eta_D(1+e0)^2+e0(1+e0)+e0.
+
+This follows by telescoping one factor at a time, using
+||Uhat||,||Fhat||<=1+e0. No truncated matrix or arbitrary rectangle member
+is assumed unitary. If M beta<1/2 then
+||Bhat^M-B^M||<=M beta exp(M beta)<2M beta.
+
+Binary powering encloses Bhat^M, retaining every used bit, intermediate
+result and next base. Subtract the DIRECT analytic V_T rectangle. Let
+D_res^2 be the sum of squares of maximum absolute real and imaginary
+entry endpoints, divided by S^2. It bounds the squared Frobenius norm
+and hence the squared operator norm. The finite acceptance test is
+
+    epsilon-2M beta>0,
+    D_res^2<(epsilon-2M beta)^2.
+
+An integer square-root ceiling gives a second explicit rational upper
+bound below epsilon. No scalar/determinant normalization is permitted.
+The direct test can reject the whole candidate even if the iteration
+checks succeeded. The actual schedule and exact displacements are still
+preserved on a final residual failure. A code/enclosure defect remains
+possible and needs the separate source check; successful assertions alone
+do not constitute independent acceptance.
+
+## Physical and resource qualifications
+
+The scalar action per nominal template is alpha0=48+(8/15)sum a_j
+=13027/240. The entire word has exact scalar action
+
+    alpha_total=Mn alpha0+(8M/15)sum x_j.
+
+Its exp(-i alpha_total) factor is never removed. The comparator includes
+both det W and the literal old scalar. All controls are positive onsite
+terms, with added incident norm at most2E0 and slew at most16E0^2/hbar;
+the original old load3E0 is separately installed. The actual legal-amplitude
+checks even give norm<=3E0/2 and slew<=12E0^2/hbar. Waveform and first
+derivative vanish at every join. Duration is T_lab=(hbar/E0)T.
+
+Uniform amplitude error delta_a over ALL24Mn pulses has sufficient integrated
+full-norm budget(16/15)(24Mn)delta_a. This includes identity faults. The
+compiled16-coordinate fit error repeats only M times, whereas hardware
+faults in all nominal templates repeat Mn times. The128-bit displacement
+encoding is therefore not a claim of sufficient128-bit physical calibration.
+For example T<2^220 makes delta_a<=2^-300 sufficient for amplitude-only
+error<2^-79; this is an upper budget, not a necessary lower bound or supplied
+device capability. Drift, waveform, spillover and in-pulse clock faults
+require their actual integrated generator defect eta_drive. Post-off timing
+adds at most3|delta_T| in dimensionless units, never a universal lower bound.
+
+The complete operator comparator implies joint unhalved trace error
+<=2(epsilon+eta_drive), plus initial joint trace error, for every unknown
+old/passive-reference state. There are no added quantum registers in this
+driven model. External controller outputs are unmodeled, not assumed reset.
+At exact zero-control endpoints the modeled net work is Tr K(rho_f-rho_i).
+Initial and final trace comparison errors each cost width(K)/2=1 in E0
+units. Since this W commutes with K, ideal net work is zero for every input.
+Absolute modeled control variation is nevertheless bounded above by72MnE0.
+Endpoint residual controls add their actual expectation terms. Microscopic
+drive energy, native supply, autonomous timing/halt and indefinite reuse
+are not furnished by this endpoint certificate.
+
+## Exposure, failure handling and source coverage
+
+SOURCE_MANIFEST.json pins the bounded inputs, mathematical parents and
+current controlling qualifications. The proposal was reread completely;
+the earlier authored chart/recurrence arguments are reused at exact pinned
+identities, with their relevant tail and power arguments reread. Both
+current controlling qualification files were read completely. Source
+capture is metadata and does not revalidate old science. No sibling new
+proposal or unshared root sketch was read.
+
+The one planned600-second execution must retain source-at-launch, recorder,
+exact argv/cwd/platform/executable, full stdout/stderr, timeout/exit and all
+proof-facing output intervals. There is no automatic retry. Possible failure
+labels remain distinct: wrong input identity, phase branch width, coordinate
+width, illegal iterate/amplitude, timeout, or final full residual. A failed
+route would concern this fixed candidate, not a general impossibility.
+Python integers/parser/runtime/hardware and the inspected code remain
+trusted infrastructure; this is not a formal proof-assistant certificate.
+No scientific result is asserted in this pre-execution derivation.

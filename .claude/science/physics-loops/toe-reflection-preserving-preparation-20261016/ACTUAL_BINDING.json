@@ -1,0 +1,253 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T19:53:36.761775+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "02d008c2c4286955a5360a9c92f0fd9b2bee68930fbebe12810762c72a3e39fa",
+  "git_base": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+  "base_branch": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+  "source_body_pins": [
+    {
+      "name": "original_proposal",
+      "source": "reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 7906,
+      "end_byte_exclusive": 23164,
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+    },
+    {
+      "name": "complete_exposed_review",
+      "source": "reflection_preparation_exposed_check/REVIEW.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 23227,
+      "end_byte_exclusive": 49084,
+      "bytes": 25857,
+      "sha256": "7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01"
+    },
+    {
+      "name": "current_controlling_qualifications",
+      "source": "reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 49158,
+      "end_byte_exclusive": 57076,
+      "bytes": 7918,
+      "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "original_proposal",
+      "source": "reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 23425,
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd",
+      "start_byte": 8167
+    },
+    {
+      "name": "complete_exposed_review",
+      "source": "reflection_preparation_exposed_check/REVIEW.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 49345,
+      "bytes": 25857,
+      "sha256": "7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01",
+      "start_byte": 23488
+    },
+    {
+      "name": "current_controlling_qualifications",
+      "source": "reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 57337,
+      "bytes": 7918,
+      "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438",
+      "start_byte": 49419
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      }
+    ],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "Exactly local conserving preparation6db93809 is the direct mathematical parent. Ordered-angle comparison and Git ancestry are context, not additional premise edges."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/84e7d1bbdd6b343b9452e4b7d8513aebdc37a5a302470d15a85842dc92cddfe2.json",
+    "bytes": 26493,
+    "sha256": "84e7d1bbdd6b343b9452e4b7d8513aebdc37a5a302470d15a85842dc92cddfe2"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/6e82e11bb8037bf2731f12825319c59b9955c19e7fd95e5133fd522b59b9399a.json",
+    "bytes": 1273,
+    "sha256": "6e82e11bb8037bf2731f12825319c59b9955c19e7fd95e5133fd522b59b9399a"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/8d9d8abe3c0c9fd8cf8f9b94fd525df9713609f9b06f61a2afa0a55a6f6596b2.md",
+    "bytes": 57076,
+    "sha256": "8d9d8abe3c0c9fd8cf8f9b94fd525df9713609f9b06f61a2afa0a55a6f6596b2"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/37040d4cb9d481916b8512970c1e891ca4ebb202a2ce3869c92cc14c70d8bcf7.json",
+    "bytes": 40424,
+    "sha256": "37040d4cb9d481916b8512970c1e891ca4ebb202a2ce3869c92cc14c70d8bcf7"
+  },
+  "source_draft_state": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62.json",
+    "bytes": 318,
+    "sha256": "a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/1ab9703c29f0bdaafccc8367a60ec86079441a5f8a39885788a9f9fc59554b39.json",
+      "bytes": 3714,
+      "sha256": "1ab9703c29f0bdaafccc8367a60ec86079441a5f8a39885788a9f9fc59554b39"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/39ea66490d4586ad4eb2d911c92b8d840960bffb2664bccf40e5f9bcc1f63697.md",
+      "bytes": 3343,
+      "sha256": "39ea66490d4586ad4eb2d911c92b8d840960bffb2664bccf40e5f9bcc1f63697"
+    },
+    "evidence": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/f682e00186dc17979b82d67cddd2864f6862355b56085df7ba28d4bbcb7bb54c.json",
+      "bytes": 3145,
+      "sha256": "f682e00186dc17979b82d67cddd2864f6862355b56085df7ba28d4bbcb7bb54c"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/67ff34498d5b6646434ab0eaa23bef8d92db1ea4df5f6e19ac55304688e2e6a4.json",
+      "bytes": 516,
+      "sha256": "67ff34498d5b6646434ab0eaa23bef8d92db1ea4df5f6e19ac55304688e2e6a4"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/158de78c9b8a5780d1ba901e9e2ef7b73b4d1a93707760908795783e9ac384e9.json",
+      "bytes": 1790,
+      "sha256": "158de78c9b8a5780d1ba901e9e2ef7b73b4d1a93707760908795783e9ac384e9"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/9a7b78e92f5fe1f5eb4ec96e5c62d4194d8853a7f15b9d97ff0be4d00a04073e.blob",
+      "bytes": 865,
+      "sha256": "9a7b78e92f5fe1f5eb4ec96e5c62d4194d8853a7f15b9d97ff0be4d00a04073e"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/c8fd02e5cb6caed5c10fe71cc20c2f7f96e83f617a642283a150674f9089afb3.py",
+      "bytes": 9939,
+      "sha256": "c8fd02e5cb6caed5c10fe71cc20c2f7f96e83f617a642283a150674f9089afb3"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/123ce1b251f1aade0c34a00aee2b68dfdf64a103ad4b5b13efb985db9a625290.json",
+      "bytes": 43818,
+      "sha256": "123ce1b251f1aade0c34a00aee2b68dfdf64a103ad4b5b13efb985db9a625290"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/8976425c1a758cdb99c7f49c2787fa1f16558f951002f5abcfc072a6c623a757.json",
+      "bytes": 1792,
+      "sha256": "8976425c1a758cdb99c7f49c2787fa1f16558f951002f5abcfc072a6c623a757"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/9e21a55e084928d3881ec476aba03d6f5aa2e7e959b56cfd217fe8d30d91b89f.py",
+      "bytes": 9120,
+      "sha256": "9e21a55e084928d3881ec476aba03d6f5aa2e7e959b56cfd217fe8d30d91b89f"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/092747860cdbabe6c4b0926ed7c14e422b9bc15e4bf3cffecfc7a0d90f13db45.blob",
+      "bytes": 382,
+      "sha256": "092747860cdbabe6c4b0926ed7c14e422b9bc15e4bf3cffecfc7a0d90f13db45"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/30f923faefbb0c7e076957494e0b0362e8ba1b14dca66a74cf5c117192a9dbeb.json",
+    "bytes": 1461,
+    "sha256": "30f923faefbb0c7e076957494e0b0362e8ba1b14dca66a74cf5c117192a9dbeb"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/91d2d1c6f337a7e8a50b58b9524cd112c3e47eb9b3753e43aad790fd497f9953.json",
+      "bytes": 1808,
+      "sha256": "91d2d1c6f337a7e8a50b58b9524cd112c3e47eb9b3753e43aad790fd497f9953"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/6851262eac91f1c6e2826b04f643244a373ff2da27c2584aced922d1d74f9567.py",
+      "bytes": 61447,
+      "sha256": "6851262eac91f1c6e2826b04f643244a373ff2da27c2584aced922d1d74f9567"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/595f13ee8cc092a42d20dd0d3d280fbece1881c60c707a9bd5f0c6189fa8e398.blob",
+      "bytes": 353,
+      "sha256": "595f13ee8cc092a42d20dd0d3d280fbece1881c60c707a9bd5f0c6189fa8e398"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-interacting-preparation-control-work-20261016",
+      "headRefName": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+      "headRefOid": "14780b5daec83ba275aff97934c2ed075d6c0a42",
+      "isDraft": false,
+      "number": 9650,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9650"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/092747860cdbabe6c4b0926ed7c14e422b9bc15e4bf3cffecfc7a0d90f13db45.blob",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/123ce1b251f1aade0c34a00aee2b68dfdf64a103ad4b5b13efb985db9a625290.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/158de78c9b8a5780d1ba901e9e2ef7b73b4d1a93707760908795783e9ac384e9.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/1ab9703c29f0bdaafccc8367a60ec86079441a5f8a39885788a9f9fc59554b39.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/2555db2aa8721f26189d5e3b352e5ac43e55b4ad8f07ac07d5b30102e8c99291.blob",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/30f923faefbb0c7e076957494e0b0362e8ba1b14dca66a74cf5c117192a9dbeb.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/37040d4cb9d481916b8512970c1e891ca4ebb202a2ce3869c92cc14c70d8bcf7.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/39ea66490d4586ad4eb2d911c92b8d840960bffb2664bccf40e5f9bcc1f63697.md",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/595f13ee8cc092a42d20dd0d3d280fbece1881c60c707a9bd5f0c6189fa8e398.blob",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/67ff34498d5b6646434ab0eaa23bef8d92db1ea4df5f6e19ac55304688e2e6a4.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/6851262eac91f1c6e2826b04f643244a373ff2da27c2584aced922d1d74f9567.py",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/6e82e11bb8037bf2731f12825319c59b9955c19e7fd95e5133fd522b59b9399a.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/84e7d1bbdd6b343b9452e4b7d8513aebdc37a5a302470d15a85842dc92cddfe2.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/8976425c1a758cdb99c7f49c2787fa1f16558f951002f5abcfc072a6c623a757.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/8d9d8abe3c0c9fd8cf8f9b94fd525df9713609f9b06f61a2afa0a55a6f6596b2.md",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/91d2d1c6f337a7e8a50b58b9524cd112c3e47eb9b3753e43aad790fd497f9953.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/9a7b78e92f5fe1f5eb4ec96e5c62d4194d8853a7f15b9d97ff0be4d00a04073e.blob",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/9e21a55e084928d3881ec476aba03d6f5aa2e7e959b56cfd217fe8d30d91b89f.py",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/a2103104abc0d7b0d659918b10c0188c1458456065d2efa0389be771c4885a62.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/c8fd02e5cb6caed5c10fe71cc20c2f7f96e83f617a642283a150674f9089afb3.py",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/c995f1a7691c12572c6944e2f9935383cca32da1cb2074c7757dd6b3195600dd.json",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-reflection-preserving-preparation-20261016/binding_sources/f682e00186dc17979b82d67cddd2864f6862355b56085df7ba28d4bbcb7bb54c.json"
+  ],
+  "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

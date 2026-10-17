@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+"""Verify frozen original review and copy two separately exposed source addenda."""
+import hashlib
+import json
+import pathlib
+import shutil
+
+ROOT = pathlib.Path(__file__).resolve().parent
+SOURCE = ROOT.parent / "weak_mediator_candidate"
+
+
+def pin(path):
+    data = path.read_bytes()
+    return {"path": str(path), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def verify_receipt(path):
+    receipt = json.loads(path.read_text())
+    assert receipt["exit_code"] == 0
+    assert receipt["child_source_unchanged"] is True
+    assert receipt["source_capture_bytes_match"] is True
+    assert receipt["argv"][1] == receipt["child_source_at_launch"]["path"]
+    assert receipt["source_capture"]["path"] != receipt["child_source_at_launch"]["path"]
+    for key in ("child_source_at_launch", "source_capture", "recorder_source", "stdout", "stderr"):
+        row = receipt[key]
+        assert pin(pathlib.Path(row["path"])) == row
+    assert receipt["source_capture"]["sha256"] == receipt["child_source_at_launch"]["sha256"]
+    assert receipt["stderr"]["bytes"] == 0
+    return receipt
+
+
+def main():
+    original = ROOT / "ORIGINAL_REVIEW_FREEZE.json"
+    assert pin(original)["sha256"] == "42def22e10aa3e120a3bdf0ae4e2d7d8b8bc151f240543cfcb5ee82d18b34192"
+    frozen = json.loads(original.read_text())
+    assert len(frozen["files"]) == 11
+    for row in frozen["files"]:
+        actual = pin(ROOT / row["path"])
+        assert actual["bytes"] == row["bytes"]
+        assert actual["sha256"] == row["sha256"]
+    original_manifest = json.loads((ROOT / "SOURCE_MANIFEST_ORIGINAL.json").read_text())
+    for row in original_manifest["original_sources"]:
+        assert pin(pathlib.Path(row["path"])) == row
+    assert original_manifest["review"]["sha256"] == "0c2f97d373ec11c7cc4089330a184ec24e332ccae4c934c2d7dba33c8458137b"
+    receipt = verify_receipt(ROOT / "runs" / "original_inspection" / "EXECUTION.json")
+    sources = []
+    for name, expected in (
+        ("DYADIC_ADDENDUM.md", "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"),
+        ("SCALING_ADDENDUM.md", "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda"),
+    ):
+        row = pin(SOURCE / name)
+        assert row["sha256"] == expected
+        target = ROOT / "sources" / name
+        assert not target.exists()
+        shutil.copyfile(SOURCE / name, target)
+        assert pin(target)["sha256"] == expected
+        sources.append({"original": row, "copy": pin(target)})
+    result = {
+        "scope": "Metadata-only closure; original analytical proof sealed before separate addendum exposure",
+        "original_review_freeze": pin(original),
+        "original_review": pin(ROOT / "REVIEW.md"),
+        "addendum_review": pin(ROOT / "ADDENDUM_REVIEW.md"),
+        "original_metadata_receipt": pin(ROOT / "runs" / "original_inspection" / "EXECUTION.json"),
+        "original_metadata_completed_at": receipt["completed_at"],
+        "addendum_sources": sources,
+        "new_scientific_execution": False,
+        "actual_coefficient_computation": False,
+        "root_approval": None,
+        "canonical_review": None,
+        "retained_audit_verdict": None,
+        "actual_metadata_controls": [
+            "all 11 original frozen members retain exact byte counts and hashes",
+            "original proposal and original source freeze still match original paths",
+            "original review SHA unchanged",
+            "original metadata launch exit code and source-at-launch equality verified",
+            "original distinct source capture and recorder bytes verified",
+            "original complete stdout/stderr pins verified",
+            "both new source addenda match supplied exact SHA256 pins",
+            "bounded addendum copies match originals",
+        ],
+        "analytical_limits": [
+            "source-exposed, not blind",
+            "no evolution or coefficient computation",
+            "original exact ideal model and supplied microscopic permissions remain conditional",
+            "fixed-grid floor equality is not solved by its symbolic definition",
+            "initial-source allowance needs product source or full joint initial defect",
+        ],
+    }
+    (ROOT / "SOURCE_MANIFEST_ADDENDA.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(result, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

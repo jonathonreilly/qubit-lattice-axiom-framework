@@ -1,0 +1,517 @@
+--- machinery_reference/build_packet.py
++++ build_packet.py
+@@ -3,29 +3,20 @@
+ from datetime import datetime,timezone
+ import hashlib,json,sys
+ D=Path(sys.argv[1]).resolve();N=D.parent;W=N.parent/'correlation_worktree'
+-P=D/'proposal';PK='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
+-NOTE='docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/inhomogeneous_comb_local_control_2026_10_16.py'
++P=D/'proposal';PK='.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016'
++NOTE='docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++SCRIPT='scripts/preparation_angle_energy_moments_2026_10_16.py'
+ ROOTS={
+- 'inhomogeneous_local_control_root_proposal':'26c2ec347a3c7dd906140cc79e8bb76540ddb3b323bc9acbebf5d1a08a18fd6d',
+- 'inhomogeneous_local_control_root_exposed_check':'13a0d145beac7f5fb59cee959ab22fc64306a910c82fa9ec4c6e014189a99a21',
+- 'inhomogeneous_local_control_independent_candidate':'7eff36b61ad01bd3fc5bd1c2459ffa324945ec97890ba3cf0149e682c53f5737',
+- 'inhomogeneous_local_control_exposed_comparison':'fcacd4867591a1f437a3d8ddd6d12e23ea9fca4359889653b1714966a7e2886b',
+- 'inhomogeneous_local_control_root_review':'d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05',
+- 'inhomogeneous_uniform_word_root_proposal':'55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e',
+- 'inhomogeneous_uniform_word_exposed_check':'36a1ef58262468746a9434c887d32ecbd302a7408696914e64536e5d17804598',
+- 'inhomogeneous_uniform_word_root_review':'b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1',
+- 'local_conserving_sparse_compiler_candidate':'1fd6b69f78b2b9e270e1dc4655ef9c6da9c6d4290a3e2867ebfac42fc23ac0c9',
+- 'local_conserving_sparse_compiler_exposed_check':'54c2e39507456f530ae87534d58ed24412b5de0bfe1669f7ba6600781ae55fe9',
+- 'local_conserving_sparse_compiler_root_review':'d8774291d4919e586499a97faafb0e1579a91f1e2e342b876b9b4557645a750e',
++ 'preparation_angle_moment_root_proposal':('FREEZE.json','b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef'),
++ 'preparation_angle_moment_exposed_check':('FINAL_FREEZE.json','be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be'),
++ 'preparation_angle_moment_root_review':('FREEZE.json','2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51'),
+ }
++EXTRA_INPUTS=['review_run.py','bootstrap/accept_preparation_angle_moments.py','bootstrap/accept_preparation_angle_moments_v2.py']
++ROOT_RUNS=['preparation_angle_moments_acceptance','preparation_angle_moments_acceptance_v2']
+ BODIES=[
+- ('comb_original','inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md'),
+- ('comb_exposed_review','inhomogeneous_local_control_root_exposed_check/REVIEW.md'),
+- ('comb_controlling_qualifications','inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md'),
+- ('uniform_original','inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md'),
+- ('uniform_exposed_review','inhomogeneous_uniform_word_exposed_check/REVIEW.md'),
+- ('uniform_controlling_qualifications','inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md'),
++ ('original_proposal','preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md'),
++ ('exposed_analytical_review','preparation_angle_moment_exposed_check/REVIEW.md'),
++ ('controlling_root_qualifications','preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md'),
+ ]
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def put(rel,b):
+@@ -41,61 +32,51 @@
+  objects[h]={'path':r['recovery_path'],**ident(b)};put(r['recovery_path'],b)
+  return b
+ assert not P.exists(),'Refuse overwrite of an existing proposal'
+-for folder,pin in ROOTS.items():
+- f=N/folder/'FREEZE.json';raw=add(f,role='source_freeze');assert sha(raw)==pin,folder
+- freeze=json.loads(raw);key='members' if 'members' in freeze else 'files'
+- rows=freeze[key]
++for folder,(filename,pin) in ROOTS.items():
++ f=N/folder/filename;raw=add(f,role='source_freeze');assert sha(raw)==pin,folder
++ freeze=json.loads(raw);key='members';rows=freeze[key]
+  for row in rows:
+   p=Path(row['path']);p=p if p.is_absolute() else N/folder/p
+   p.relative_to(N);b=add(p)
+   assert ident(b)=={'bytes':row['bytes'],'sha256':row['sha256']},str(p)
+- freeze_rows.append({'folder':folder,'key':key,'members':len(rows),'sha256':pin})
+-for run in ['unequal_fixed_word_acceptance','uniform_word_acceptance']:
+- for p in sorted((N/'runs'/run).iterdir()):
+-  if p.is_file():add(p,role='actual_root_metadata_acceptance_evidence')
+-for name in ['primary_template.py','record_metadata.py']:
+- add(N/'bus_joint_energy_publication_draft'/name,role='packaging_machinery_template_only')
+-add(N/'review_run.py',role='current_recovery_copy_of_root_recorder_not_a_launch_capture')
++ freeze_rows.append({'folder':folder,'alias':folder+'/'+filename,'key':key,'members':len(rows),'sha256':pin})
++for run in ROOT_RUNS:
++ for filename in ['EXECUTION.json','executed_source.py','stdout','stderr']:
++  add(N/'runs'/run/filename,role='actual_root_metadata_acceptance_evidence')
++for rel in EXTRA_INPUTS:add(N/rel,role='original_source_recovery_copy_checked_against_actual_launch_receipt')
+ parent_name='docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+ raw=add(W/parent_name,'canonical_parent/'+parent_name,'direct_mathematical_parent')
+ assert sha(raw)=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f'
+-for rel in ['docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md','docs/ai_methodology/skills/workhorse/SKILL.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/WRITING_VOICE_GUIDE_2026-04-25.md']:
+- add(W/rel,'authority/'+rel,'read_methodology_snapshot_no_science_premise')
+ note=(D/'packet_text/WRAPPER.md').read_bytes();wrapper_len=len(note);maps=[]
+ for name,alias in BODIES:
+  raw=(N/alias).read_bytes();note+=('\n\n<!-- Unchanged complete source: '+name+' -->\n\n').encode();start=len(note);note+=raw
+  maps.append({'name':name,'source':alias,'container':NOTE,'start_byte_inclusive':start,'end_byte_exclusive':len(note),**ident(raw)})
++trailer_start=len(note)
++note+=b'\n\nPublication scope remains conditional support under the premises and verification limits above; retained status requires the independent audit path.\n'
+ put(NOTE,note)
+-js(PK+'/BODY_MAP.json',{'new_wrapper_bytes':[0,wrapper_len],'bodies':maps})
+-js(PK+'/SOURCE_MANIFEST.json',{'schema':'inhomogeneous_comb_source_archive_v1','sources':list(sources.values())})
+-js(PK+'/ARCHIVE_INDEX.json',{'objects':list(objects.values())})
++js(PK+'/BODY_MAP.json',{'new_wrapper_bytes':[0,wrapper_len],'trailing_wrapper_bytes':[trailer_start,len(note)],'bodies':maps})
++js(PK+'/SOURCE_MANIFEST.json',{'schema':'preparation_angle_moment_source_archive_v1','sources':list(sources.values()),'context_only_paths_not_imported':['interacting_preparation_chronology_candidate','interacting_local_fault_work_candidate']})
++js(PK+'/ARCHIVE_INDEX.json',{'objects':list(objects.values()),'recursive_prior_publication_archives':False})
+ js(PK+'/FROZEN_SOURCE_CLOSURE.json',{'roots':freeze_rows})
+ parent={'schema':'qualified_source_parents_v1','canonical_binding_complete':False,'direct_mathematical_parents':[
+- {'role':'local_conserving_runtime_and_driven_preparation','canonical_path':parent_name,'canonical_claim_id':'local_conserving_preparation_bounded_theorem_note_2026-10-16','source_alias':'canonical_parent/'+parent_name,**ident((W/parent_name).read_bytes())},
+- {'role':'sparse_q1_compiler','canonical_path':None,'canonical_claim_id':None,'proposed_identifier':'local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16','derivation_alias':'local_conserving_sparse_compiler_candidate/DERIVATION.md','derivation_sha256':'6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b','acceptance_alias':'local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json','acceptance_sha256':'999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda','qualifications_alias':'local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md','qualifications_sha256':'83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e','canonical_publication':None}],
+- 'excluded_as_mathematical_parents':['inhomogeneous_local_control_independent_candidate','inhomogeneous_local_control_exposed_comparison','interacting_positive_complement_scope_screen'],'git_ancestry_is_not_mathematical_dependency':True}
++ {'role':'ordered_vacuum_prefix_preparation_only','canonical_path':parent_name,'canonical_claim_id':'local_conserving_preparation_bounded_theorem_note_2026-10-16','source_alias':'canonical_parent/'+parent_name,**ident((W/parent_name).read_bytes())}],
++ 'excluded_as_mathematical_parents':['interacting_preparation_chronology_candidate','interacting_local_fault_work_candidate','Git ancestry','inhomogeneous comb'],
++ 'git_ancestry_is_not_mathematical_dependency':True}
+ js(PK+'/PARENT_BINDING.json',parent)
+-state={k:None for k in ['source_wrapper_review','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']}
++state={k:None for k in ['source_wrapper_review','source_publication_binding','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']}
+ state.update(scientific_programs_run_this_draft=0,scientific_replays=0)
+ js(PK+'/PUBLICATION_STATE.json',state)
+-js(PK+'/ACTUAL_BINDING.json',{'kind':'unbound_source_only_proposal','source_review':None,'base_observation':None,'canonical_review':None,'canonical_parent_binding':None})
+-for name in ['PR_BODY.md','BINDING_CONTRACT.md']:put(PK+'/'+name,(D/'packet_text'/name).read_bytes())
+-js(PK+'/EXPOSURE.json',{'same_model_source_exposed':True,'blind_independence':False,'different_model_replication':False,'new_scientific_executions':0,'historical_new_result_executions':2,'sparse_parent_scientific_execution':1,'sparse_parent_failed_launches':1,'separate_direct_candidate_accepted':False,'comparison_is_historical_only':True,'retained_audit':False})
++js(PK+'/ACTUAL_BINDING.json',{'kind':'unbound_source_only_proposal','source_review':None,'base_observation':None,'canonical_review':None,'canonical_parent_binding':None,'publication':None})
++for name in ['PR_BODY.md','BINDING_CONTRACT.md','CLAIM_STATUS_CERTIFICATE.md','EVIDENCE_SCOPE.md']:put(PK+'/'+name,(D/'packet_text'/name).read_bytes())
++js(PK+'/EXPOSURE.json',{'same_model_source_exposed':True,'source_exposed':True,'prior_preparation_and_integration_exposure':True,'blind_independence':False,'different_model_replication':False,'new_scientific_executions':0,'historical_scientific_executions_for_result':0,'historical_root_metadata_failed_runs':1,'historical_root_metadata_successful_runs':1,'retained_audit':False})
+ inputs=[]
+ for p in sorted(P.rglob('*')):
+  if p.is_file():inputs.append({'path':str(p.relative_to(P)),**ident(p.read_bytes())})
+-manifest={'schema':'inhomogeneous_comb_publication_inputs_v1','inputs':inputs}
++manifest={'schema':'preparation_angle_moment_publication_inputs_v1','inputs':inputs}
+ js(PK+'/INPUT_MANIFEST.json',manifest)
+ msha=sha((P/PK/'INPUT_MANIFEST.json').read_bytes())
+ template=(D/'primary_template.py').read_text()
+ generated=template.replace('__MANIFEST_SHA256__',msha).replace('__AUDIT_INPUT_PATHS__',repr([r['path'] for r in inputs]+[PK+'/INPUT_MANIFEST.json'])).replace('__EXPECTED_BODIES__',repr({r['name']:r['sha256'] for r in maps}))
+ put(SCRIPT,generated.encode())
+-reuse={'template_sources':[sources['bus_joint_energy_publication_draft/primary_template.py'],sources['bus_joint_energy_publication_draft/record_metadata.py']],
+- 'primary_reuse':'Adapted portable read/identity/archive/body/refusal pattern; source-specific predicates replaced. No bus science imported.',
+- 'recorder_reuse':'Adapted source-at-launch, actual child argv, launch/result/full-stream capture pattern; only named metadata programs allowed.',
+- 'new_code':['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py'],
+- 'new_prose':['packet_text/WRAPPER.md','packet_text/PR_BODY.md','packet_text/BINDING_CONTRACT.md','READ_GUIDE.md'],
+- 'unchanged_math_bodies':maps}
+-(D/'REUSE_AND_READ_MAP.json').write_text(json.dumps(reuse,indent=2)+'\n')
+-(D/'BUILD_RESULT.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'note':NOTE,'note_sha256':sha(note),'unchanged_bodies':len(maps),'source_aliases':len(sources),'unique_archive_objects':len(objects),'input_manifest_sha256':msha,'science_executions':0,'canonical_execution':None},indent=2)+'\n')
++(D/'BUILD_RESULT.json').write_text(json.dumps({'utc':datetime.now(timezone.utc).isoformat(),'note':NOTE,'note_sha256':sha(note),'primary_sha256':sha(generated.encode()),'unchanged_bodies':len(maps),'source_aliases':len(sources),'unique_archive_objects':len(objects),'input_manifest_sha256':msha,'science_executions':0,'canonical_execution':None},indent=2)+'\n')
+ print((D/'BUILD_RESULT.json').read_text())
+--- machinery_reference/primary_template.py
++++ primary_template.py
+@@ -2,12 +2,21 @@
+ from pathlib import Path,PurePosixPath
+ import hashlib,json
+ REPO=Path(__file__).resolve().parents[1]
+-NOTE='docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-PACKET='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
++NOTE='docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++PACKET='.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016'
+ AUDIT_TIMEOUT_SEC=60
+ AUDIT_INPUT_PATHS=__AUDIT_INPUT_PATHS__
+ MANIFEST_SHA256='__MANIFEST_SHA256__'
+ EXPECTED_BODIES=__EXPECTED_BODIES__
++EXPECTED_FREEZES={
++ 'preparation_angle_moment_root_proposal/FREEZE.json':'b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef',
++ 'preparation_angle_moment_exposed_check/FINAL_FREEZE.json':'be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be',
++ 'preparation_angle_moment_root_review/FREEZE.json':'2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51',
++}
++ROOT_RUNS={
++ 'preparation_angle_moments_acceptance':(1,'04de78019cc4d95d9810d3b0e75c7bcdc92f912b3a12010f741717156d4628de'),
++ 'preparation_angle_moments_acceptance_v2':(0,'4fab2230a6e338bfb5c0bb227983e5de0346cee87786ce8b9bc9d0d3db1816fc'),
++}
+ def require(ok,message):
+  if not ok:raise ValueError(message)
+ def digest(data):return hashlib.sha256(data).hexdigest()
+@@ -15,21 +24,67 @@
+ def disk_read(rel):
+  p=PurePosixPath(rel);require(not p.is_absolute() and '..' not in p.parts,'Unsafe input path')
+  resolved=(REPO/rel).resolve();resolved.relative_to(REPO.resolve());return resolved.read_bytes()
++def renewal_alias(path):
++ marker='/renewal_20261015_224023/'
++ require(isinstance(path,str) and path.count(marker)==1,'Expected renewal source path')
++ alias=path.split(marker,1)[1];p=PurePosixPath(alias)
++ require(not p.is_absolute() and '..' not in p.parts,'Safe historical source alias')
++ return alias
++def verify_root_record(src,run_name,expected_exit,expected_source):
++ prefix='runs/'+run_name+'/'
++ r=json.loads(src(prefix+'EXECUTION.json'))
++ require(r['exit_code']==expected_exit,'Preserved root metadata exit code')
++ require(len(r['argv'])==2 and r['argv'][0]=='python3' and r['argv'][1]==r['child_source_at_launch']['path'],'Exact original root child argv')
++ require(renewal_alias(r['source_capture']['path'])==prefix+'executed_source.py','Distinct actual root capture location')
++ require(r['source_capture']['path']!=r['child_source_at_launch']['path'],'Root original source and capture are distinct')
++ require(r['child_source_at_launch']['sha256']==r['source_capture']['sha256']==expected_source,'Root executed-source hash')
++ suffix='_v2' if run_name.endswith('_v2') else ''
++ require(renewal_alias(r['child_source_at_launch']['path'])=='bootstrap/accept_preparation_angle_moments'+suffix+'.py','Original root source path')
++ for key in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:identity(src(renewal_alias(r[key]['path'])),r[key])
++ require(r['child_source_at_launch']['bytes']==r['source_capture']['bytes'],'Root source/capture lengths')
++ require(r['start_utc']<r['end_utc'] and r['elapsed_seconds']>=0,'Actual root chronology')
++ if expected_exit==1:
++  require(src(prefix+'stdout')==b'','Original failed root stdout')
++  error=src(prefix+'stderr')
++  require(b'FileNotFoundError' in error and b'preparation_angle_moment_exposed_check/FREEZE.json' in error,'Original seal-lookup failure retained')
++ else:
++  require(src(prefix+'stderr')==b'','Actual successful root stderr')
++  output=json.loads(src(prefix+'stdout'))
++  require(output['scientific_executions']==0,'Root metadata was not science execution')
++  for key in ['acceptance','qualifications','freeze']:identity(src(renewal_alias(output[key]['path'])),output[key])
++ return r
++def verify_review_record(src):
++ folder='preparation_angle_moment_exposed_check/'
++ r=json.loads(src(folder+'metadata_runs/source_capture/EXECUTION.json'))
++ require(r['exit_code']==0 and r['timed_out'] is False,'Historical exposed-review metadata completion')
++ require(len(r['argv'])==4 and r['argv'][1]=='-B' and r['argv'][2]==r['source_at_launch']['path'],'Original review capture argv')
++ for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:identity(src(renewal_alias(r[key]['path'])),r[key])
++ require(r['source_original']['sha256']==r['source_at_launch']['sha256'],'Review executed-source linkage')
++ require(src(folder+'metadata_runs/source_capture/stderr')==b'','Review metadata stderr')
++ result=json.loads(src(folder+'RESULT.json'))
++ require(result['scientific_executions']==0 and result['historical_replays']==0 and result['metadata_only'] is True,'Exposed review metadata scope')
++ require(result['root_acceptance'] is None and result['canonical_integration'] is None and result['publication'] is None and result['retained_audit'] is False,'Historical reviewer nulls preserved')
++ seal=json.loads(src(folder+'SEAL_OPERATION.json'))
++ require(seal['process_exit'] is None,'Historical self-recorded seal does not invent process exit')
++ return r
++
+ def verify_payload(read):
+  raw=read(PACKET+'/INPUT_MANIFEST.json');require(digest(raw)==MANIFEST_SHA256,'Input manifest pin')
+- manifest=json.loads(raw);require(manifest['schema']=='inhomogeneous_comb_publication_inputs_v1','Input schema')
++ manifest=json.loads(raw);require(manifest['schema']=='preparation_angle_moment_publication_inputs_v1','Input schema')
+  rows=manifest['inputs'];paths=[r['path'] for r in rows]
+  require(len(paths)==len(set(paths)) and set(AUDIT_INPUT_PATHS)==set(paths)|{PACKET+'/INPUT_MANIFEST.json'},'Exact declared input closure')
+  for row in rows:identity(read(row['path']),row)
+  note=read(NOTE);header=note.split(b'---',2)[1].decode().splitlines()
+  for field in ['claim_type: bounded_theorem','actual_current_surface_status: conditional-support','canonical_parent_binding_complete: false','audit_required_before_effective_retained: true','bare_retained_allowed: false']:
+   require(field in header,'Draft scope field '+field)
++ require(b'Claim type: bounded_theorem.' in note,'Explicit prose claim type')
+  maps=json.loads(read(PACKET+'/BODY_MAP.json'))['bodies']
+- require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==6,'Six unchanged body roles')
++ require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==3,'Three unchanged body roles')
++ previous=-1
+  for row in maps:
+   a,b=row['start_byte_inclusive'],row['end_byte_exclusive']
+-  require(row['container']==NOTE and isinstance(a,int) and isinstance(b,int) and 0<=a<b<=len(note),'Body interval')
+-  body=note[a:b];identity(body,row);require(note.count(body)==1,'Unique unchanged body')
++  require(row['container']==NOTE and isinstance(a,int) and isinstance(b,int) and 0<=a<b<=len(note) and a>previous,'Ordered body interval')
++  body=note[a:b];identity(body,row);require(note.count(body)==1,'Unique unchanged body');previous=b
+  sources=json.loads(read(PACKET+'/SOURCE_MANIFEST.json'))['sources']
+  require(len({r['source'] for r in sources})==len(sources),'Unique source aliases')
+  archive=json.loads(read(PACKET+'/ARCHIVE_INDEX.json'))['objects']
+@@ -40,47 +95,35 @@
+  for row in sources:
+   raw=read(row['recovery_path']);identity(raw,row);recovered[row['source']]=raw
+  def src(alias):require(alias in recovered,'Missing source alias '+alias);return recovered[alias]
+- def alias(path):
+-  require('/renewal_20261015_224023/' in path,'Expected renewal source path')
+-  return path.split('/renewal_20261015_224023/',1)[1]
+  freezes=json.loads(read(PACKET+'/FROZEN_SOURCE_CLOSURE.json'))['roots']
++ require({f['alias']:f['sha256'] for f in freezes}==EXPECTED_FREEZES and len(freezes)==3,'Exact bounded source freeze set')
+  for f in freezes:
+-  raw=src(f['folder']+'/FREEZE.json');require(digest(raw)==f['sha256'],'Frozen source pin')
+-  rows=json.loads(raw)[f['key']];require(len(rows)==f['members'],'Freeze member count')
+-  for row in rows:
+-   p=row['path'];key=alias(p) if PurePosixPath(p).is_absolute() else f['folder']+'/'+p
++  raw=src(f['alias']);require(digest(raw)==f['sha256'],'Frozen source pin')
++  members=json.loads(raw)[f['key']];require(len(members)==f['members'],'Freeze member count')
++  for row in members:
++   p=row['path'];key=renewal_alias(p) if PurePosixPath(p).is_absolute() else f['folder']+'/'+p
+    identity(src(key),row)
+- for folder,pin in [('inhomogeneous_local_control_root_review','41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c'),('inhomogeneous_uniform_word_root_review','bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7')]:
+-  raw=src(folder+'/QUALIFIED_ACCEPTANCE.json');require(digest(raw)==pin,'Qualified acceptance pin')
+-  accepted=json.loads(raw);require(accepted['retained_audit'] is False and accepted['publication'] is None,'Historical acceptance limits')
+-  identity(src(alias(accepted['qualifications']['path'])),accepted['qualifications'])
+- for folder in ['inhomogeneous_local_control_root_exposed_check/runs/exact_species_word','inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check']:
+-  r=json.loads(src(folder+'/EXECUTION.json'));require(r['exit_code']==0 and r['argv'][1]=='-B','Historical exact run/argv')
+-  for key in ['source','launcher','precheck','stdout','stderr']:identity(src(alias(r[key]['path'])),r[key])
+-  require(src(folder+'/stderr.txt')==b'','Historical exact-run empty stderr')
+- for run in ['unequal_fixed_word_acceptance','uniform_word_acceptance']:
+-  r=json.loads(src('runs/'+run+'/EXECUTION.json'));require(r['exit_code']==0,'Actual root metadata run')
+-  for key in ['source_capture','stdout','stderr']:identity(src(alias(r[key]['path'])),r[key])
+-  require(r['child_source_at_launch']['sha256']==r['source_capture']['sha256'],'Root executed-source linkage')
+-  identity(src('review_run.py'),r['recorder'])
+- for suffix,expected in [('exact_sparse_check',None),('exact_sparse_check_retry',0)]:
+-  base='local_conserving_sparse_compiler_candidate/runs/'+suffix+'/'
+-  r=json.loads(src(base+'EXECUTION.json'));require(r['exit_code'] is expected if expected is None else r['exit_code']==expected,'Preserved sparse launch outcome')
+-  require(digest(src(base+'SOURCE_AT_LAUNCH.py'))==r['source_sha256'],'Sparse executed-source capture')
+-  require(digest(src(base+'LAUNCHER_AT_LAUNCH.py'))==r['launcher_sha256'],'Sparse original launcher capture')
+-  for stream in ['stdout','stderr']:require(digest(src(base+stream+'.txt'))==r[stream+'_sha256'],'Sparse complete stream')
++ for row in maps:require(note[row['start_byte_inclusive']:row['end_byte_exclusive']]==src(row['source']),'Original body byte recovery')
++ accepted=json.loads(src('preparation_angle_moment_root_review/ACCEPTANCE.json'))
++ require(digest(src('preparation_angle_moment_root_review/ACCEPTANCE.json'))=='d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4','Actual source acceptance pin')
++ require(accepted['disposition']=='QUALIFIED_CONDITIONAL_ANALYTICAL_SUPPORT' and accepted['root_read_complete'] is True,'Qualified source decision')
++ require(accepted['scientific_executions']==0 and accepted['retained_audit'] is False and accepted['canonical_acceptance'] is None and accepted['publication'] is None,'Source acceptance limits')
++ for key in ['candidate','candidate_freeze','exposed_review','review_freeze','controlling_qualifications','prior_failed_metadata_execution']:identity(src(renewal_alias(accepted[key]['path'])),accepted[key])
++ require(renewal_alias(accepted['review_freeze']['path']).endswith('/FINAL_FREEZE.json'),'Actual reviewer seal filename')
++ for name,(status,pin) in ROOT_RUNS.items():verify_root_record(src,name,status,pin)
++ verify_review_record(src)
+  parent=json.loads(read(PACKET+'/PARENT_BINDING.json'))
+- require(parent['canonical_binding_complete'] is False and len(parent['direct_mathematical_parents'])==2,'Two source parents; canonical sparse binding pending')
+- a,b=parent['direct_mathematical_parents'];identity(src(a['source_alias']),a)
+- require(a['sha256']=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f','Published parent exact source')
+- for key in ['derivation','acceptance','qualifications']:require(digest(src(b[key+'_alias']))==b[key+'_sha256'],'Sparse source parent '+key)
+- require(b['canonical_path'] is None and b['canonical_claim_id'] is None and b['canonical_publication'] is None,'Unbound sparse canonical identity')
++ require(parent['canonical_binding_complete'] is False and len(parent['direct_mathematical_parents'])==1,'Sole source parent; canonical binding pending')
++ row=parent['direct_mathematical_parents'][0];identity(src(row['source_alias']),row)
++ require(row['sha256']=='6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f' and row['canonical_path']=='docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md','Exact direct preparation parent')
+  exposure=json.loads(read(PACKET+'/EXPOSURE.json'))
+- require(exposure['new_scientific_executions']==0 and exposure['historical_new_result_executions']==2 and exposure['separate_direct_candidate_accepted'] is False and exposure['blind_independence'] is False,'Honest exposure and scope')
++ require(exposure['new_scientific_executions']==0 and exposure['historical_scientific_executions_for_result']==0 and exposure['blind_independence'] is False and exposure['source_exposed'] is True,'Honest exposure and scope')
+  state=json.loads(read(PACKET+'/PUBLICATION_STATE.json'))
+- require(all(state[k] is None for k in ['source_wrapper_review','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']),'Unexecuted publication fields')
++ require(all(state[k] is None for k in ['source_wrapper_review','source_publication_binding','canonical_integration','current_base_observation','canonical_review','primary_execution','publication_action','retained_audit']),'Unexecuted publication fields')
+  require(state['scientific_programs_run_this_draft']==0 and state['scientific_replays']==0,'No draft scientific replay')
+- return {'note_sha256':digest(note),'body_count':len(maps),'source_aliases':len(sources),'archive_objects':len(archive),'science_executions':0}
++ binding=json.loads(read(PACKET+'/ACTUAL_BINDING.json'))
++ require(binding['kind']=='unbound_source_only_proposal' and all(binding[k] is None for k in ['source_review','base_observation','canonical_review','canonical_parent_binding','publication']),'Unbound future contract')
++ return {'note_sha256':digest(note),'body_count':len(maps),'source_aliases':len(sources),'archive_objects':len(archive),'historical_failed_root_metadata_runs':1,'historical_successful_root_metadata_runs':1,'science_executions':0}
+ def verify_actual_binding(read,checked):
+  # Intentionally fail closed: root must review a separate bound integration version.
+  raise ValueError('UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending')
+--- machinery_reference/inspect_packet.py
++++ inspect_packet.py
+@@ -1,9 +1,9 @@
+ """Metadata/source inspection only; no original scientific program is imported."""
+ from pathlib import Path
+-import hashlib,json,runpy,sys
+-D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
+-NOTE='docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-script=P/'scripts/inhomogeneous_comb_local_control_2026_10_16.py'
++import ast,copy,hashlib,json,runpy,sys
++D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016'
++NOTE='docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++script=P/'scripts/preparation_angle_energy_moments_2026_10_16.py'
+ api=runpy.run_path(str(script),run_name='source_metadata_inspection')
+ read=lambda rel:(P/rel).read_bytes()
+ checked=api['verify_payload'](read)
+@@ -20,14 +20,15 @@
+   else:api['verify_actual_binding'](reader,checked)
+  except (ValueError,FileNotFoundError) as exc:return {'name':label,'rejected':True,'reason':str(exc)}
+  raise AssertionError('Metadata mutation was accepted: '+label)
+-mutants=[]
+-mutants.append(expect_rejected('unbound_canonical_refusal',read,'binding'))
++mutants=[expect_rejected('unbound_canonical_refusal',read,'binding')]
+ targets={
+  'altered_original_body':NOTE,
+- 'altered_uniform_qualification':source['inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
+- 'missing_actual_scientific_source':source['inhomogeneous_uniform_word_exposed_check/runs/exact_logical_check/SOURCE_AT_LAUNCH.py']['recovery_path'],
+- 'missing_preserved_failed_launch':source['local_conserving_sparse_compiler_candidate/runs/exact_sparse_check/EXECUTION.json']['recovery_path'],
+- 'missing_root_actual_acceptance_source':source['runs/uniform_word_acceptance/executed_source.py']['recovery_path'],
++ 'altered_controlling_qualification':source['preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
++ 'missing_preserved_failed_root_receipt':source['runs/preparation_angle_moments_acceptance/EXECUTION.json']['recovery_path'],
++ 'missing_successful_v2_source_capture':source['runs/preparation_angle_moments_acceptance_v2/executed_source.py']['recovery_path'],
++ 'missing_failed_root_full_stderr':source['runs/preparation_angle_moments_acceptance/stderr']['recovery_path'],
++ 'altered_parent_binding':PK+'/PARENT_BINDING.json',
++ 'altered_future_approval':PK+'/ACTUAL_BINDING.json',
+ }
+ for name,path in targets.items():
+  def mutant(rel,path=path,name=name):
+@@ -38,5 +39,43 @@
+    return read(rel)+b'\nSCOPED METADATA MUTANT\n'
+   return read(rel)
+  mutants.append(expect_rejected(name,mutant))
+-result={'kind':'source_integrity_and_metadata_mutants_only','checked':checked,'direct_original_interval_comparison':True,'scoped_metadata_mutants':mutants,'mathematics_tested_by_this_execution':False,'historical_scientific_replays':0,'canonical_primary_execution':None,'root_source_wrapper_review':None}
++# These tests target receipt predicates directly, independently of manifest hashes.
++src=lambda alias:read(source[alias]['recovery_path'])
++semantic=[]
++for label,run_name,field,value in [
++ ('failed_exit_relabelled_success','preparation_angle_moments_acceptance','exit_code',0),
++ ('successful_exit_relabelled_failure','preparation_angle_moments_acceptance_v2','exit_code',1),
++ ('wrong_original_child_argv','preparation_angle_moments_acceptance_v2','argv',['python3','/wrong.py']),
++ ('wrong_capture_location','preparation_angle_moments_acceptance_v2','source_capture',None),
++ ('wrong_executed_source_hash','preparation_angle_moments_acceptance_v2','child_source_at_launch',None),
++ ('missing_full_stream','preparation_angle_moments_acceptance','missing_stream',None),
++]:
++ target='runs/'+run_name+'/EXECUTION.json';r=copy.deepcopy(json.loads(src(target)))
++ if field=='source_capture':r[field]['path']=r['child_source_at_launch']['path']
++ elif field=='child_source_at_launch':r[field]['sha256']='0'*64
++ elif field!='missing_stream':r[field]=value
++ def altered(alias,r=r,target=target,field=field,run_name=run_name):
++  if alias==target:return json.dumps(r).encode()
++  if field=='missing_stream' and alias=='runs/'+run_name+'/stderr':raise FileNotFoundError('Removed actual complete stderr')
++  return src(alias)
++ status,pin=api['ROOT_RUNS'][run_name]
++ try:api['verify_root_record'](altered,run_name,status,pin)
++ except (ValueError,FileNotFoundError) as exc:semantic.append({'name':label,'rejected':True,'reason':str(exc)})
++ else:raise AssertionError('Semantic receipt mutation accepted: '+label)
++# Parse every new executable source and compare exact selected baseline functions.
++function_rows=[];diffs=[]
++import difflib
++for name in ['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py']:
++ old=(D/'machinery_reference'/name).read_text();new=(D/name).read_text()
++ a=ast.parse(old);b=ast.parse(new)
++ old_functions={n.name:ast.get_source_segment(old,n) for n in ast.walk(a) if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef))}
++ for n in ast.walk(b):
++  if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef)):
++   text=ast.get_source_segment(new,n);previous=old_functions.get(n.name)
++   function_rows.append({'file':name,'function':n.name,'first_line':n.lineno,'last_line':n.end_lineno,'source_sha256':sha(text.encode()),'baseline_source_sha256':sha(previous.encode()) if previous is not None else None,'exact_source_reuse':text==previous,'ast_sha256':sha(ast.dump(n,include_attributes=False).encode())})
++ diffs.extend(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='machinery_reference/'+name,tofile=name))
++ast.parse(script.read_text())
++(D/'CODE_REUSE_MAP.json').write_text(json.dumps({'baseline':'inhomogeneous_comb_qualified_publication_draft','scope':'source function identity only; changed globals and source-specific predicates require review','functions':function_rows},indent=2)+'\n')
++(D/'CODE_FULL_DIFF.patch').write_text(''.join(diffs))
++result={'kind':'source_integrity_and_metadata_mutants_only','checked':checked,'direct_original_interval_comparison':True,'scoped_metadata_mutants':mutants,'direct_receipt_predicate_mutants':semantic,'function_rows':len(function_rows),'exact_source_function_reuses':sum(r['exact_source_reuse'] for r in function_rows),'mathematics_tested_by_this_execution':False,'historical_scientific_replays':0,'canonical_primary_execution':None,'root_source_wrapper_review':None}
+ (D/'VERIFICATION.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+--- machinery_reference/record_metadata.py
++++ record_metadata.py
+@@ -1,38 +1,51 @@
+-"""Bounded metadata launcher, adapted from the preserved joint-energy recorder."""
++"""Bounded metadata launcher with actual captures; never run historical science."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import ast,hashlib,json,subprocess,sys,time
+ D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/'correlation_worktree'
+-mode=sys.argv[1];assert mode in {'build','inspection'}
+-source=D/({'build':'build_packet.py','inspection':'inspect_packet.py'}[mode])
++mode=sys.argv[1];assert mode in {'build','inspection','seal'}
++source=D/({'build':'build_packet.py','inspection':'inspect_packet.py','seal':'seal_packet.py'}[mode])
+ label=sys.argv[2] if len(sys.argv)>2 else mode
+ assert label.replace('_','').isalnum() and '/' not in label
++assert not (D/'FINAL_FREEZE.json').exists(),'Frozen packet is immutable'
+ run=D/'metadata_runs'/label;run.mkdir(parents=True,exist_ok=False)
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def pin(p):
+  b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+ capture=run/'executed_source.py';capture.write_bytes(source.read_bytes())
+ recorder=run/'recorder_at_launch.py';recorder.write_bytes(Path(__file__).read_bytes())
+-input_paths={p for p in D.rglob('*') if p.is_file() and 'metadata_runs' not in p.relative_to(D).parts and p.name not in {'BUILD_RESULT.json','VERIFICATION.json','REUSE_AND_READ_MAP.json'}}
++outputs={'BUILD_RESULT.json','VERIFICATION.json','SEAL_RESULT.json'}
++input_paths={p for p in D.rglob('*') if p.is_file() and 'metadata_runs' not in p.relative_to(D).parts and p.name not in outputs}
+ if mode=='build':
+- tree=ast.parse(source.read_text());roots=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='ROOTS' for t in n.targets))
+- for folder in roots:
+-  f=N/folder/'FREEZE.json';input_paths.add(f);v=json.loads(f.read_text())
+-  for row in v.get('members',v.get('files',[])):
++ tree=ast.parse(source.read_text())
++ literals={t.id:ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) for t in n.targets if isinstance(t,ast.Name) and t.id in {'ROOTS','EXTRA_INPUTS','ROOT_RUNS'}}
++ for folder,(filename,expected) in literals['ROOTS'].items():
++  f=N/folder/filename;input_paths.add(f);v=json.loads(f.read_text())
++  assert sha(f.read_bytes())==expected
++  for row in v['members']:
+    p=Path(row['path']);input_paths.add(p if p.is_absolute() else N/folder/p)
+- for run_name in ['unequal_fixed_word_acceptance','uniform_word_acceptance']:
+-  input_paths.update(p for p in (N/'runs'/run_name).iterdir() if p.is_file())
+- input_paths.add(N/'review_run.py')
+- for name in ['primary_template.py','record_metadata.py']:input_paths.add(N/'bus_joint_energy_publication_draft'/name)
+- for rel in ['docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md','docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md','docs/ai_methodology/skills/workhorse/SKILL.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/WRITING_VOICE_GUIDE_2026-04-25.md']:input_paths.add(W/rel)
++ for run_name in literals['ROOT_RUNS']:
++  input_paths.update(N/'runs'/run_name/f for f in ['EXECUTION.json','executed_source.py','stdout','stderr'])
++ input_paths.update(N/rel for rel in literals['EXTRA_INPUTS'])
++ input_paths.add(W/'docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md')
+ inputs=[pin(p) for p in sorted(input_paths)]
+ (run/'INPUT_IDENTITIES_AT_LAUNCH.json').write_text(json.dumps(inputs,indent=2)+'\n')
+ argv=[sys.executable,'-B',str(capture),str(D)]
+-r={'kind':'publication_packaging_metadata_only','argv':argv,'cwd':str(D),'started_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'child_source_at_launch':pin(capture),'original_source_at_launch':pin(source),'recorder_at_launch':pin(recorder),'input_identities_at_launch':pin(run/'INPUT_IDENTITIES_AT_LAUNCH.json'),'scientific_programs_run':0}
++r={'kind':'publication_packaging_metadata_only','argv':argv,'cwd':str(D),'started_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'child_source_at_launch':pin(capture),'original_source_at_launch':pin(source),'source_capture':pin(capture),'recorder_at_launch':pin(recorder),'input_identities_at_launch':pin(run/'INPUT_IDENTITIES_AT_LAUNCH.json'),'scientific_programs_run':0}
+ (run/'LAUNCH.json').write_text(json.dumps(r,indent=2)+'\n');t=time.monotonic()
+ with (run/'stdout').open('wb') as out,(run/'stderr').open('wb') as err:
+  try:
+   p=subprocess.run(argv,cwd=D,stdin=subprocess.DEVNULL,stdout=out,stderr=err,timeout=60);r.update(exit_code=p.returncode,timed_out=False)
+  except subprocess.TimeoutExpired:r.update(exit_code=124,timed_out=True)
+ r.update(finished_utc=datetime.now(timezone.utc).isoformat(),elapsed_seconds=time.monotonic()-t,stdout=pin(run/'stdout'),stderr=pin(run/'stderr'),inputs_unchanged_after_run=all(pin(Path(x['path']))==x for x in inputs))
+-(run/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2));sys.exit(r['exit_code'])
++(run/'EXECUTION.json').write_text(json.dumps(r,indent=2)+'\n')
++if mode=='seal' and r['exit_code']==0:
++ assert r['inputs_unchanged_after_run'] is True and r['timed_out'] is False
++ members=[]
++ for p in sorted(D.rglob('*')):
++  if p.is_file():
++   v=pin(p);v['path']=str(p.relative_to(D));members.append(v)
++ frozen={'kind':'source_only_qualified_preparation_angle_energy_moments_publication_draft','frozen_utc':datetime.now(timezone.utc).isoformat(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'source_wrapper_review':None,'source_publication_binding':None,'canonical_integration':None,'current_base':None,'canonical_review':None,'primary_execution':None,'publication':None,'retained_audit':None,'members':members}
++ (D/'FINAL_FREEZE.json').write_text(json.dumps(frozen,indent=2)+'\n')
++ r={'completed_metadata_execution':pin(run/'EXECUTION.json'),'freeze':pin(D/'FINAL_FREEZE.json'),'members':len(members),'exit_code':r['exit_code']}
++print(json.dumps(r,indent=2));sys.exit(r['exit_code'])
+--- machinery_reference/seal_packet.py
++++ seal_packet.py
+@@ -1,50 +1,34 @@
+-"""Seal already inspected source artifacts and actual metadata receipts only."""
++"""Verify completed metadata receipts; the parent recorder seals after this exits."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+-import hashlib,json,subprocess,sys
+-D=Path(__file__).resolve().parent;P=D/'proposal';PK='.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016'
+-run=D/'metadata_runs/seal';run.mkdir(parents=True,exist_ok=False)
++import ast,hashlib,json,sys
++D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016'
+ def utc():return datetime.now(timezone.utc).isoformat()
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def pin(p):
+  b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+ def dump(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+-start=utc();cap=run/'executed_source.py';cap.write_bytes(Path(__file__).read_bytes())
+-launch={'kind':'source_packet_byte_seal_only','argv':list(sys.orig_argv),'cwd':str(D),'started_utc':start,'source_at_launch':pin(cap),'scientific_programs_run':0}
+-dump(run/'LAUNCH.json',launch)
+-source_rows=json.loads((P/PK/'SOURCE_MANIFEST.json').read_text())['sources']
+-authority=[]
+-for row in source_rows:
+- if not row['source'].startswith('authority/'):continue
+- rel=row['source'][len('authority/'):];d=run/('authority_'+str(len(authority)));d.mkdir()
+- argv=['git','show','dd16171663343dbdeb21adea70ab5e08b3a3a8df:'+rel];t=utc()
+- r=subprocess.run(argv,cwd=D.parent.parent/'correlation_worktree',capture_output=True,timeout=30)
+- (d/'stdout').write_bytes(r.stdout);(d/'stderr').write_bytes(r.stderr)
+- receipt={'kind':'read-only pinned-methodology-source comparison','argv':argv,'cwd':str(D.parent.parent/'correlation_worktree'),'started_utc':t,'finished_utc':utc(),'exit_code':r.returncode,'stdout':pin(d/'stdout'),'stderr':pin(d/'stderr')}
+- dump(d/'EXECUTION.json',receipt)
+- assert r.returncode==0 and r.stderr==b'' and sha(r.stdout)==row['sha256']
+- authority.append({'source':row['source'],'sha256':row['sha256'],'exact_main_object_match':True})
+-for mode in ['build','inspection','inspection_02']:
++for mode in ['build','inspection']:
+  d=D/'metadata_runs'/mode;r=json.loads((d/'EXECUTION.json').read_text());l=json.loads((d/'LAUNCH.json').read_text())
+  assert all(r[k]==v for k,v in l.items())
+  assert r['exit_code']==0 and r['timed_out'] is False and r['scientific_programs_run']==0 and r['inputs_unchanged_after_run'] is True
+- for key in ['child_source_at_launch','recorder_at_launch','input_identities_at_launch','stdout','stderr']:
++ for key in ['child_source_at_launch','original_source_at_launch','source_capture','recorder_at_launch','input_identities_at_launch','stdout','stderr']:
+   assert pin(Path(r[key]['path']))==r[key],(mode,key)
++ assert r['argv'][2]==r['child_source_at_launch']['path']==r['source_capture']['path']
++ assert r['original_source_at_launch']['sha256']==r['child_source_at_launch']['sha256']
+  assert (d/'stderr').read_bytes()==b''
+ manifest=json.loads((P/PK/'INPUT_MANIFEST.json').read_text())
+ for row in manifest['inputs']:
+  b=(P/row['path']).read_bytes();assert len(b)==row['bytes'] and sha(b)==row['sha256'],row['path']
+ maps=json.loads((P/PK/'BODY_MAP.json').read_text())['bodies']
+ template=(D/'primary_template.py').read_text();generated=template.replace('__MANIFEST_SHA256__',sha((P/PK/'INPUT_MANIFEST.json').read_bytes())).replace('__AUDIT_INPUT_PATHS__',repr([r['path'] for r in manifest['inputs']]+[PK+'/INPUT_MANIFEST.json'])).replace('__EXPECTED_BODIES__',repr({r['name']:r['sha256'] for r in maps}))
+-assert (P/'scripts/inhomogeneous_comb_local_control_2026_10_16.py').read_bytes()==generated.encode()
+-v=json.loads((D/'VERIFICATION.json').read_text());assert v['mathematics_tested_by_this_execution'] is False and all(x['rejected'] for x in v['scoped_metadata_mutants'])
+-assert v==json.loads((D/'metadata_runs/inspection_02/stdout').read_text())
+-assert (D/'SEAL_STDOUT.txt').read_bytes()==b'' and (D/'SEAL_STDERR.txt').read_bytes()==b''
+-receipt={**launch,'exit_code':0,'finished_utc':utc(),'stdout':pin(D/'SEAL_STDOUT.txt'),'stderr':pin(D/'SEAL_STDERR.txt'),'source_unchanged_after':Path(__file__).read_bytes()==cap.read_bytes()}
+-dump(run/'EXECUTION.json',receipt)
+-dump(D/'SEAL_VERIFICATION.json',{'utc':utc(),'proposal_input_files_verified':len(manifest['inputs']),'unchanged_bodies':len(maps),'metadata_run_receipts_verified':['build','inspection','inspection_02'],'pinned_methodology_source_comparisons':authority,'current_generated_primary_matches_template':True,'scientific_programs_run':0,'retained_audit':False})
+-members=[]
+-for p in sorted(D.rglob('*')):
+- if p.is_file() and p.name!='FREEZE.json':
+-  b=p.read_bytes();members.append({'path':str(p.relative_to(D)),'bytes':len(b),'sha256':sha(b)})
+-dump(D/'FREEZE.json',{'kind':'source_only_qualified_comb_uniform_word_publication_draft','frozen_utc':utc(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'canonical_integration':None,'current_base':None,'primary_execution':None,'publication':None,'root_source_wrapper_review':None,'retained_audit':None,'members':members})
++assert (P/'scripts/preparation_angle_energy_moments_2026_10_16.py').read_bytes()==generated.encode()
++v=json.loads((D/'VERIFICATION.json').read_text())
++assert v['mathematics_tested_by_this_execution'] is False and all(x['rejected'] for x in v['scoped_metadata_mutants']+v['direct_receipt_predicate_mutants'])
++assert v==json.loads((D/'metadata_runs/inspection/stdout').read_text())
++for name in ['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py']:
++ text=(D/name).read_text();ast.parse(text)
++ assert not any(line.rstrip()!=line for line in text.splitlines()),name
++assert (D/'ROOT_READ_GUIDE.md').is_file() and (D/'CODE_REUSE_MAP.json').is_file() and (D/'CODE_FULL_DIFF.patch').is_file()
++result={'utc':utc(),'kind':'completed_metadata_verification_before_parent_recorded_seal','proposal_inputs':len(manifest['inputs']),'immutable_bodies':len(maps),'packaging_metadata_receipts_verified':['build','inspection'],'metadata_mutants_rejected':len(v['scoped_metadata_mutants'])+len(v['direct_receipt_predicate_mutants']),'generated_primary_matches_template':True,'scientific_programs_run':0,'canonical_primary_executed':False,'root_wrapper_review':None}
++dump(D/'SEAL_RESULT.json',result);print(json.dumps(result,indent=2))

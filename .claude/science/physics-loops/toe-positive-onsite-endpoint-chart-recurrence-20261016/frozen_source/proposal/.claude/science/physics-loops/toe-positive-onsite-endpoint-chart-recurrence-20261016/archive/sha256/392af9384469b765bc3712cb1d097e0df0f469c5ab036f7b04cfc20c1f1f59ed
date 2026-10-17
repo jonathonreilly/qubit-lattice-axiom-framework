@@ -1,0 +1,11 @@
+{
+  "status": "SEALED_SOURCES_CAPTURED",
+  "candidate_members": 42,
+  "captured_aliases": 54,
+  "exposure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/EXPOSURE_AND_SOURCE_CAPTURE.json",
+    "bytes": 40113,
+    "sha256": "df90f4995bcfef983eee7e23137364fafe0229d317d18bb38b844d874cee8e43"
+  },
+  "scientific_execution": false
+}

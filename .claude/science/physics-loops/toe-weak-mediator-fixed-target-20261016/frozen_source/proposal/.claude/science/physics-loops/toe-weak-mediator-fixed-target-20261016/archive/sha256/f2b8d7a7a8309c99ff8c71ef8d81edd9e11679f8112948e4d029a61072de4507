@@ -1,0 +1,202 @@
+# Analytical check of the enlarged window and finite coherent reuse
+
+The complete root-authored `WINDOW_REUSE_ADDENDUM.md`, SHA256 `fb9c0e08fbfa8337fe9c8c64cac29c216f0424046846e7361174f3681950dc33`, was read before this reconstruction. The original weak-mediator and finite-compiler review packets remain frozen and unchanged. This is a separate source-exposed analytic check, not a blind review, a numerical experiment, an execution of the compiler, a root approval, or a retained verdict.
+
+**Finding.** The enlarged-window allocation `15 epsilon/32`, the full-reference telescoping bound with the source retained, and the stated sufficient finite-use runtime bounds follow. The reuse proof does not assume that the actual source is exactly restored or uncorrelated after a use. It does require the initial product-source interface (or a separately budgeted full initial-state defect), and each supplied intervention must act as the identity on the source. The window compares against literal old aging at the actual elapsed time, not a time-independent output plateau. Runtime bounds count the Hamiltonian intervals; physical implementations of the optional intervention interfaces need their own duration and error budgets.
+
+I found no mathematical defect in the stated window/reuse inequalities under these qualifications. The result is a finite-budget, fixed-target statement within the newly supplied interaction model. It does not provide permanent halt, an internal clock, native arbitrary controls, exact reset, or a fixed device that can be reused indefinitely at a fixed error allowance.
+
+## 1. Exact reused scope
+
+The initial old/source embedding remains `J psi=psi tensor Phi+`, where the source consists of two qubits. The literal old Hamiltonian is `K=2I+ZZ`, with eigenvalues 1 and 3, and `W=e^(i theta)e^(i theta XX)` commutes with `K`. The actual rounded Hamiltonian `Hhat` has positive lower dyadic coefficients and an actual identity reserve `rhat I`. Its source comparison phase is `exp(-i rhat t)Phi+`.
+
+The prior analytic proofs establish the residual, effective Hamiltonian, positivity/caps and equality-safe coefficient error without running the model. Their exact review and freeze identities are recorded in `SOURCE_EXPOSURE.json`. The current check reuses those unchanged proofs rather than asserting an author or audit verdict. It does not import a different target, microscopic plant or physical controller.
+
+For `m` a nonnegative integer, put
+
+\[
+\epsilon=2^{-m},\quad T=2^{2m+32},\quad p=3m+39,
+\quad w_m=\epsilon T/256=2^{m+24}.
+\]
+
+Then `w_m>=2^24>24` and `w_m/T=epsilon/256<=1/256<1`. Thus every allowed `t=T+s`, `0<=s<=w_m`, is strictly less than `2T`. No previous step of the bare residual proof depended on an upper window length of 24 except when its separate effective drift was estimated.
+
+## 2. Window constants and retained scalar
+
+The bare residual and endpoint-correction bound is
+
+\[
+R(T)=12352/\sqrt T+132096/T.
+\]
+
+It is below the previously checked `A(T)=R(T)+384/T`, so `R(T)<epsilon/4`. Direct substitution also checks this independently:
+
+\[
+\frac{R(T)}\epsilon
+\le\frac{193}{1024}+\frac{1032}{2^{25}}
+=\frac{6325256}{33554432}<\frac14.
+\tag{1}
+\]
+
+The ideal second-order Hamiltonian has norm `4pi/T<16/T`. Therefore its extra drift on the larger window is bounded by
+
+\[
+s\|H_2\|<16w_m/T=\epsilon/16.
+\tag{2}
+\]
+
+The finite compiler yields a lower error strictly below `2*2^-p` in each of three scalar coefficients. After separating the actual `rhat I`, the nonscalar generator defect is strictly below `10*2^-p`. Duhamel on `t<2T` gives
+
+\[
+t\|\widehat A-A\|<20T2^{-p}
+=20\,2^{2m+32-(3m+39)}
+=5\epsilon/32.
+\tag{3}
+\]
+
+Adding (1), (2) and (3) proves the proposed uniform full-isometry bound
+
+\[
+\left\|e^{-i(T+s)\widehat H}J
+-J e^{-i\widehat r(T+s)}e^{-isK}W e^{-iTK}\right\|
+<\eta,\qquad \eta=15\epsilon/32.
+\tag{4}
+\]
+
+The coefficient of `epsilon` is exactly `1/4+1/16+5/32=15/32`. The actual reserve phase multiplies both nonscalar comparisons; it has not been dropped. Since both maps are isometries, their unhalved joint-reference trace discrepancy is at most twice the norm difference, hence below `15epsilon/16<epsilon`.
+
+The parameters `T,p` and all coefficient/positivity/cap constructions are unchanged by extending the window. At `m=44`, the exponents give `T=2^120` and `w_m=2^68`, as claimed. These are in the same dimensionless units; no physical clock precision or energy unit is supplied by the exponent arithmetic.
+
+## 3. Actual elapsed aging is load-bearing
+
+Since `W` commutes with `K`, the ideal old factor in (4) can be written as
+
+\[
+U_s=e^{-i\widehat r(T+s)}W e^{-i(T+s)K}.
+\tag{5}
+\]
+
+Thus the gate is compared relative to the old evolution for the actual duration `T+s`. The literal `2I` inside `K` and the actual reserve both retain their full scalar phases. The statement does not imply closeness, uniformly in `s`, to the single fixed vector `W exp(-iTK) psi`, nor does it identify different observation times.
+
+There is a simple exact counterexample to the stronger fixed-output interpretation. Choose an old input with equal norm in the two `K` eigenspaces, for example `(|00>+|01>)/sqrt(2)`. The commuting `W exp(-iTK)` preserves these weights. Ignoring only a common scalar in the inner product, the two ideal outputs at `s=0` and `s=pi/2` have overlap
+
+\[
+\tfrac12(e^{-i3\pi/2}+e^{-i\pi/2})=0.
+\]
+
+Their density states are orthogonal and have unhalved trace distance 2. Both observation times lie in every stated window. This is not a counterexample to (4); it establishes why the aging term cannot be suppressed even at the density-channel level. A separate fixed-time clock or compensation contract must account for old drift and the full phases.
+
+The enlarged window is finite. Its estimate does not describe switched-off interactions, an exactly stationary output, permanent halt, or arbitrary late observation times.
+
+## 4. Source-retaining telescoping argument
+
+Let `R` denote all retained reference registers, and `J_R` append the fixed Bell source to the arbitrary old/reference input. Extend each actual runtime unitary by the identity on `R`, and each ideal `U_j=U_(s_j)` by the identity on `R`. Equation (4) gives
+
+\[
+\|V_jJ_R-J_RU_j\|<\eta
+\tag{6}
+\]
+
+for every specified `s_j` in the allowed window. Tensoring with a reference preserves the operator norm.
+
+For an old/reference-only unitary `A_j`, put `Atilde_j=A_j tensor I_source`. The exact intertwining identity is
+
+\[
+\widetilde A_j J_R=J_R A_j.
+\tag{7}
+\]
+
+Let `M_j` be the actual isometry after `j` runtime intervals and the intervening supplied unitaries; let `N_j` be the corresponding ideal old/reference unitary. With `M_0=J_R`, `N_0=I`, and `A_0=I`, the recursions are
+
+\[
+M_j=V_j\widetilde A_{j-1}M_{j-1},
+\qquad N_j=U_j A_{j-1}N_{j-1}.
+\]
+
+Using (7) gives the exact difference identity
+
+\[
+\begin{aligned}
+M_j-J_RN_j
+={}&V_j\widetilde A_{j-1}(M_{j-1}-J_RN_{j-1})\\
+&+(V_jJ_R-J_RU_j)A_{j-1}N_{j-1}.
+\end{aligned}
+\tag{8}
+\]
+
+The operators multiplying the two differences have norm 1. Iterating (8), starting from zero initial difference, proves
+
+\[
+\|M_L-J_RN_L\|<L\eta
+\tag{9}
+\]
+
+for every positive finite integer `L`. This is the telescoping product proof in recursive form.
+
+Crucially, (6) is applied to the **ideal embedded prefix** in the second line of (8). It is not applied directly to a potentially correlated actual source. All actual source errors and correlations are contained in the first-line difference and propagated by a unitary. Consequently no exact source reset, independence or fresh Bell preparation between uses is assumed. The source is retained throughout. Arbitrary old/reference entanglement, including that created by earlier supplied `A_j`, is already within the domain of (6).
+
+The composed maps are isometries. Therefore the unhalved full joint trace error is strictly below `2Leta=(15/16)Lepsilon<Lepsilon`, with mixed inputs handled by purification. No source or reference register is discarded to obtain this bound.
+
+If the initial product-source state is imperfect, a full initial joint trace defect `delta_init` adds only once to the whole sequence by unitary invariance and the triangle inequality. An independent imperfect source is a sufficient way to provide that bound. A source-marginal defect alone is not sufficient when pre-existing source correlations are allowed. The stated final allowance without an extra term assumes the exact initial Bell source; an imperfect-source allowance must be reserved separately.
+
+## 5. No-intervention case and ordered interfaces
+
+With no interventions, the actual unitaries are generated by the same constant Hamiltonian, so their product is exactly
+
+\[
+\exp\left[-i\left(\sum_j(T+s_j)\right)\widehat H\right].
+\]
+
+Because the corresponding ideal interval factors commute in this special case, their product is
+
+\[
+e^{-i\widehat r\sum_j(T+s_j)}W^L
+e^{-iK\sum_j(T+s_j)}.
+\tag{10}
+\]
+
+For all `s_j=0`, this is exactly the proposed `exp(-i rhat LT)(W exp(-iTK))^L`. The isometry embedding and retained source remain present. This is a repeated fixed-gate/power guarantee; it does not supply an arbitrary programmable target family.
+
+With interventions, their order in `N_L=U_L A_(L-1) ... U_2 A_1 U_1` must be preserved. Generic `A_j` do not commute with `K` or `W`, so (10) cannot then be used. Each interface is explicitly a supplied unitary on old plus retained reference, with identity on the source. A physical intervention performed while the mediator interaction remains on need not have that form. A finite-duration realization must include its full action, old aging, reserve phase, source disturbance and errors in a separate interface contract. Its duration is not silently part of the `L` mediator intervals.
+
+The proof covers common specified unitary interfaces and interval durations. Source-acting operations, discarded measurement outputs, or unmodeled adaptive timing mechanisms require an enlarged model and an error budget. The optional reference registers and supplied controllers are also not included in the claim that the **source** contains exactly two qubits.
+
+## 6. Finite-use accuracy and resource scaling
+
+Take `m0` to be a nonnegative integer, `epsilon0=2^-m0`, and `L` a positive integer. Set `k=ceil(log2 L)`, equivalently the least nonnegative integer with `2^k>=L`, and let `m=m0+k`. No floating-point logarithm is required to define or determine that integer.
+
+Then
+
+\[
+\epsilon=\epsilon_0/2^k\le\epsilon_0/L.
+\]
+
+Equation (9) gives a final unhalved joint trace error strictly below `(15/16)Lepsilon<=15epsilon0/16<epsilon0`, assuming the exact initial source and exact supplied intervention interfaces. The controller parameters are chosen for this known finite use budget; they are not fixed independently of arbitrary future `L`.
+
+The coefficient precision is `p=3(m0+k)+39`. Since `2^k<2L` for every `L>=1`, including `L=1`,
+
+\[
+T=2^{32}2^{2k}\epsilon_0^{-2},\qquad
+LT<2^{34}L^3\epsilon_0^{-2}.
+\tag{11}
+\]
+
+The strict bound indeed holds for `L=1`: the exact endpoint duration is `2^32 epsilon0^-2`, less than the stated `2^34` upper bound. For durations chosen anywhere in their enlarged windows,
+
+\[
+\sum_j(T+s_j)\le L(T+w_m)<2LT
+<2^{35}L^3\epsilon_0^{-2}.
+\tag{12}
+\]
+
+Equations (11) and (12) count mediator-evolution time. They exclude implementation time for the optional supplied interventions, preparation, installation, measurement/reset or other external operations. This qualification is necessary if “total runtime” is used on a physical publication surface.
+
+The source count remains two; the added incident caps and zero slew during each runtime interval remain valid. With the finite budget specified in advance, the port couplings scale as `O(epsilon0/L)`, sufficient coefficient accuracy as `O((epsilon0/L)^3)`, and coefficient bit lengths as `O(log(1/epsilon0)+log L)`. These are upper bounds within the supplied model, not optimality, necessary precision or a proof of an efficient physical implementation.
+
+At fixed `m`, the bound grows with `L` and eventually ceases to give a small error. Choosing a new `m` for a larger planned `L` is a family of finite-budget constructions, not indefinite reuse of one fixed implementation. No exact reset or autonomous stopping mechanism follows.
+
+## 7. Exposure and verification limits
+
+The whole new argument was checked analytically after exposure to the root's proposal. Prior exact residual and compiler proofs are reused at their pinned identities. No compiler, Hamiltonian evolution, numerical coefficient generation, simulation or scientific source import occurred. The newly announced structured-coefficient proposal was not read before this window/reuse review was completed and sealed.
+
+Only metadata scripts copy the new source, verify prior freezes and record this packet's exact identities, source-at-launch captures and complete streams. They are not physical experiments, mathematical proof assistants or author approvals. The original candidate, both previous review packets, repository files, editable prompts, Git state, cache, graph, PRs and audit records remain unchanged.

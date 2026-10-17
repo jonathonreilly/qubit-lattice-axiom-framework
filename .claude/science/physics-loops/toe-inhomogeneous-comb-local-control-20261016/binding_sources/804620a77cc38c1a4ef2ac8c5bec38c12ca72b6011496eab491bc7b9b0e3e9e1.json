@@ -1,0 +1,61 @@
+{
+  "kind": "root_qualified_source_publication_review",
+  "utc": "2026-10-16T17:22:01.239573+00:00",
+  "root_read_complete": true,
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/FREEZE.json",
+    "bytes": 50131,
+    "sha256": "25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/proposal/docs/INHOMOGENEOUS_COMB_LOCAL_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 104577,
+    "sha256": "71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/proposal/scripts/inhomogeneous_comb_local_control_2026_10_16.py",
+    "bytes": 29217,
+    "sha256": "162f6bd35fd24e7e82f1c649cb8fe0848030e122d8fe7b9891719aba9eedfdab"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/SOURCE_MANIFEST.json",
+    "bytes": 186563,
+    "sha256": "713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad"
+  },
+  "source_wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 10737,
+    "sha256": "4b6a6eb28e806cba3970ff91b1af094fbd41913a0037890deb1c6d56ec6eab8a"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_inhomogeneous_comb_qualified_publication_review/REVIEW.md",
+    "bytes": 2883,
+    "sha256": "9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928"
+  },
+  "immutable_bodies": 6,
+  "source_aliases": 288,
+  "archive_objects": 126,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 2774,
+      "sha256": "2cafc678ff96d906383b1a3b5dae0e6e552eb45d266f4403e88ebe1fc82637e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2805,
+      "sha256": "282e9e413f8cbee1820410ddb9f59887bc7fba1187bd008f726dcc5a46e65633"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/inspection_02/EXECUTION.json",
+      "bytes": 2825,
+      "sha256": "c91c4b1c818202e7c876f641d895e3fbc333c1c36029d163c4d4e313531ac7fc"
+    }
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

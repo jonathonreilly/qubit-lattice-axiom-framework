@@ -1,0 +1,13 @@
+{
+  "kind": "exact_canonical_mathematical_parents",
+  "direct_canonical_parents": [
+    {
+      "path": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 112940,
+      "sha256": "ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8"
+    }
+  ],
+  "git_base": null,
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "scope": "Sole direct chart/recurrence parent. One new nonroot node, one direct edge and zero new roots."
+}

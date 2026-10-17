@@ -1,0 +1,9 @@
+# Emitted-word fixture exposed-check checkpoint
+
+Active bounded review of fixture REVIEW.md c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649 and FREEZE.json 2b62a1ba9241999824241c41f191674c3a66c0829185e5bc6ea76052fcc40582. Complete new scientific source, launcher, review, metadata and actual streams have been read. A combined read initially truncated metadata; all affected metadata/streams were reread without truncation. Prior sparse proof/review identities are unchanged premises, not new independent corroboration.
+
+Current analytical finding: correct target, chronological phase/Givens order, full spectator logic and route structure; floating-point evidence is not a certified instance. Targeted remaining risk is consistency of saved route records, all emitted counts and saved complete matrices with the reports. An independently written artifact inspector will consume those artifacts without importing or executing the author source and without replaying circuit propagation. Its exact route validation and floating saved-matrix reanalysis will be disclosed separately from author execution and from proof.
+
+Completed: REVIEW.md and SOURCE_COVERAGE.md record qualified support for the numerical fixture, without a rigorous residual certification or independent circuit propagation claim. The actual independent artifact inspection exited zero. It checked every route and count, exact mutation segments, all target/matrix artifacts and residual/report consistency; it did not import or run the author compiler. Full source/launcher/receipt/streams and author captures are present. No load-bearing implementation defect was found. Final sealing binds this completed result.
+
+Only this new review directory was written. No parent/canonical/Git/PR/audit/cache/lock/prompt/axiom mutation, other-chat message or model change. Existing source qualifications remain unchanged; root owns acceptance and publication.

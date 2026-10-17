@@ -1,0 +1,573 @@
+{
+  "candidate_functions": [
+    {
+      "ast_sha256": "04119af0e6f493936090f0f77b405ca04c2ece4b86aa608ac8036707105e7285",
+      "bytes": 60,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 23,
+      "exact_prior_AST_functions": [
+        "ceildiv"
+      ],
+      "exact_prior_source_functions": [
+        "ceildiv"
+      ],
+      "line": 21,
+      "name": "ceildiv",
+      "review_group": "directed_arithmetic",
+      "sha256": "bb8db78a6449e67f7a12a643d04bee0a548309161616c8b5f73e206b12cf827d"
+    },
+    {
+      "ast_sha256": "eb8884c91d80d3b3d60dc46708d2729712352de08d5ab3f07bb0a520ee773569",
+      "bytes": 92,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 28,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 26,
+      "name": "scale",
+      "review_group": "directed_arithmetic",
+      "sha256": "6357587caa07c2ef14e784d42cce1d4a138c19aff94f2116dec8cd3e5869d0de"
+    },
+    {
+      "ast_sha256": "9dd94e817c60c470620f4300bbb66b990df020dba00fb1abe4a0349e27e13778",
+      "bytes": 63,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 32,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 31,
+      "name": "add",
+      "review_group": "directed_arithmetic",
+      "sha256": "3bd450525e649a0e225e8b1896b5ff72e771254dd7a2d4750ede457335cb290e"
+    },
+    {
+      "ast_sha256": "afae02765cbdffcac44a2643a6af83580170af30426b80b20df31238aa9cb88b",
+      "bytes": 105,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 37,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 35,
+      "name": "divide",
+      "review_group": "directed_arithmetic",
+      "sha256": "27dcec80659a7d4cd87534ddb18ad2fea92ae9e1547da82f5e21e4e6e112db8b"
+    },
+    {
+      "ast_sha256": "78e300c0676b41f4e9ca820db3f2b168eeab9af1d25c7ad2cbc4c46754d7e222",
+      "bytes": 175,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 42,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 40,
+      "name": "gaussian",
+      "review_group": "directed_arithmetic",
+      "sha256": "5d62b60d79724811b811ba661d7ddac49a8339ddcf9a46b9a19bbc3ba409135a"
+    },
+    {
+      "ast_sha256": "c6939249d23989e5338c902c5086525a0d5f2c5856816fdcea994004a6aa60b9",
+      "bytes": 96,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 47,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 45,
+      "name": "rprod",
+      "review_group": "directed_arithmetic",
+      "sha256": "5f57628d5633cad0e9ba3f8d7fa64df7588a887019616b918b5377905e2b39eb"
+    },
+    {
+      "ast_sha256": "ddbb9ae7a90e247ce512e316611bb0928e9814dfc3078d5154460d57b54671c4",
+      "bytes": 236,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 54,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 50,
+      "name": "multiply",
+      "review_group": "directed_arithmetic",
+      "sha256": "8d5dc6a763bb10a19450fcf90049bc4f9559adc9886d1fb1d1670344fce80239"
+    },
+    {
+      "ast_sha256": "4de45003fa73b343a9a99f35bd410bc16aab08f7d611a1b9fb6292e0590bb690",
+      "bytes": 84,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 58,
+      "exact_prior_AST_functions": [
+        "ident"
+      ],
+      "exact_prior_source_functions": [],
+      "line": 57,
+      "name": "ident",
+      "review_group": "directed_arithmetic",
+      "sha256": "c759dd90ac77e26bee1e46c0f99d9737483cd032ce3b556a433409926d45fdeb"
+    },
+    {
+      "ast_sha256": "41e1f77eeb53308e84a880f98e91aaa1c450c692d5fac172cee180717253f3dc",
+      "bytes": 238,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 69,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 61,
+      "name": "mmul",
+      "review_group": "directed_arithmetic",
+      "sha256": "8c42eb01f6165402600efb0a49df5e6298d3050b3e197d006e62ddfa645319d1"
+    },
+    {
+      "ast_sha256": "96567ba3e1726b11f7206ac5666a0c65c9554d9cf9e545bf147d99deab573506",
+      "bytes": 70,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 73,
+      "exact_prior_AST_functions": [
+        "gmul"
+      ],
+      "exact_prior_source_functions": [],
+      "line": 72,
+      "name": "gmul",
+      "review_group": "literal_generator_and_new_Taylor_recurrence",
+      "sha256": "d59092b55ba959bdaf7ced3516c649053dd05137dd0d7cb25bfddd24369e82e0"
+    },
+    {
+      "ast_sha256": "264c082fc250c9b919dc9c2c3b53a48fed1a729557f876496c84d6d8f0d0d3e0",
+      "bytes": 103,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 77,
+      "exact_prior_AST_functions": [
+        "kron"
+      ],
+      "exact_prior_source_functions": [],
+      "line": 76,
+      "name": "kron",
+      "review_group": "literal_generator_and_new_Taylor_recurrence",
+      "sha256": "9c277053ff4f9ccf341fba9930a928610e3e9efae68954ea2e84c8554852baf1"
+    },
+    {
+      "ast_sha256": "168171d225e94592e2c21a96c6453764fab622d39909477ba53f3bd53b978da1",
+      "bytes": 1015,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 119,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 90,
+      "name": "coefficients",
+      "review_group": "literal_generator_and_new_Taylor_recurrence",
+      "sha256": "289913acf97c0de9a4eba344594f0678b6e64ac256305e488a2b6918e7f0c4ff"
+    },
+    {
+      "ast_sha256": "a5dca3b973c0aab4acbda711c6f0cb9afdff94563371c453e45139578b22d97e",
+      "bytes": 694,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 140,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 122,
+      "name": "step_polynomial",
+      "review_group": "literal_generator_and_new_Taylor_recurrence",
+      "sha256": "df72b803a9c4a353328437f4a9503c9ef384eb6c9c0d56bd150387d0f7f3dcf9"
+    },
+    {
+      "ast_sha256": "3baf61f10608d43d31a93b2b3f83da91c2207c447bf46e4ba965776d1c1d59df",
+      "bytes": 54,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 144,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 143,
+      "name": "dot",
+      "review_group": "heuristic_only",
+      "sha256": "57d1c71b9798efbb50b1b9a187ffe62ae67e5ef867e33f532b828e53f6ed44aa"
+    },
+    {
+      "ast_sha256": "b2faee2f592f18e40f191768e41f07a7fc5250b13cb670371ebb3fdf1b39d54d",
+      "bytes": 356,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 155,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 147,
+      "name": "gram_schmidt",
+      "review_group": "heuristic_only",
+      "sha256": "5a2d94311800af388d0a434aa899bfed52afacbc0b410e5be8efa0cfe8df6b02"
+    },
+    {
+      "ast_sha256": "254860e3e803042d2845cde085dbf447a697619f1e535c9ec05cd852077c9d15",
+      "bytes": 902,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 177,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 158,
+      "name": "bounded_lll",
+      "review_group": "heuristic_only",
+      "sha256": "3eebd7e22c7a6dc618af7917d02686831bb6045f001a4217ed9ba5334ba52b21"
+    },
+    {
+      "ast_sha256": "547fb6b14d2bf61e52f74d0c122e47b986cabbb08bd5ebdbfaad5b1a2160a74d",
+      "bytes": 1912,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 217,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 180,
+      "name": "propose_integer",
+      "review_group": "heuristic_only",
+      "sha256": "da23a028a3bd3cce460c48d897d9cc9105c64dd7641d6790e70d102b3d61ed87"
+    },
+    {
+      "ast_sha256": "a496223fa5c27ca81d6ee4b867c1c391e7ae70b2419833a32be317c992e142cc",
+      "bytes": 87,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 221,
+      "exact_prior_AST_functions": [
+        "ration"
+      ],
+      "exact_prior_source_functions": [],
+      "line": 220,
+      "name": "ration",
+      "review_group": "serialization_provenance",
+      "sha256": "f34f0718b9072679b4971511272e59f8a04ff9b0b17c86003d77e7b154d70074"
+    },
+    {
+      "ast_sha256": "750c97f09f31c988add463d472f33db02e1787c1ad612bd238e361641bc916cd",
+      "bytes": 72,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 225,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 224,
+      "name": "write",
+      "review_group": "serialization_provenance",
+      "sha256": "b22b8306258c658b9928b9aa6303ff04565e96e6ceaf6b7195bf016405683762"
+    },
+    {
+      "ast_sha256": "09758c18a653afe2a384a2194b33b3ffb6b19c2c4d49a8ce305fa9bafb3eb5a8",
+      "bytes": 119,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 229,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 228,
+      "name": "pin",
+      "review_group": "serialization_provenance",
+      "sha256": "3613bce649cac0dbe29a2b0f6853344194eddd4f2a24bb39cf1b3af84bc19efc"
+    },
+    {
+      "ast_sha256": "b7dbaefd743b844a5e41ec0d64e95d40a8eab21af31a70bff15069da962a139b",
+      "bytes": 3658,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 292,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 232,
+      "name": "certify_power",
+      "review_group": "exact_power_certificate_and_actual_entrypoint",
+      "sha256": "b14ac5301176c500b15a2dc083921c5d565f8a6f1edcea633387924a46bfc6df"
+    },
+    {
+      "ast_sha256": "f1a669970d2c4e16fdb724ecbdc31ad96c56e474035da31357986bf3894ad428",
+      "bytes": 1708,
+      "coverage": "Complete source read; substantive reasoning in ANALYTIC_CODE_REVIEW.md",
+      "end_line": 322,
+      "exact_prior_AST_functions": [],
+      "exact_prior_source_functions": [],
+      "line": 295,
+      "name": "main",
+      "review_group": "exact_power_certificate_and_actual_entrypoint",
+      "sha256": "701cc483f996584a055f764fd900a0842a75a26e8796ee693a4ef2a8866dbd4a"
+    }
+  ],
+  "checker_functions": [
+    {
+      "ast_sha256": "fcaed09ce266e6f4b7e81b95c44c4dd0fbf936222c09e939459542ddf2039e53",
+      "bytes": 116,
+      "end_line": 15,
+      "exact_prior_checker_AST_functions": [
+        "pin"
+      ],
+      "exact_prior_checker_source_functions": [
+        "pin"
+      ],
+      "line": 13,
+      "name": "pin",
+      "sha256": "a37891f4ffb10d1db9639619c85206abea6f4d4d31a6012d5e178199136c3098"
+    },
+    {
+      "ast_sha256": "ec8b3f708f381adbfa4162e2cba21ec9e536896fcb1dc22605d367fa51c6c2fc",
+      "bytes": 91,
+      "end_line": 19,
+      "exact_prior_checker_AST_functions": [
+        "rat"
+      ],
+      "exact_prior_checker_source_functions": [
+        "rat"
+      ],
+      "line": 17,
+      "name": "rat",
+      "sha256": "95ef3b9d9a221175c51e86fe1a47af2e3d0553f84b2a1c187ec025f2ef027fce"
+    },
+    {
+      "ast_sha256": "2f33ad4eb0da437d479358f41d935b69f13112f00efb583b3e4a0113a6f45364",
+      "bytes": 65,
+      "end_line": 22,
+      "exact_prior_checker_AST_functions": [
+        "parse_rat"
+      ],
+      "exact_prior_checker_source_functions": [
+        "parse_rat"
+      ],
+      "line": 21,
+      "name": "parse_rat",
+      "sha256": "38d9e7e4a42270a3f015ac1fba24e10e9962f04508f4b9e9db1b139de69459a1"
+    },
+    {
+      "ast_sha256": "92c4cbf50deeb2017443ae24e93f07f243836bf19b74f5a061f24e688b4b0a88",
+      "bytes": 61,
+      "end_line": 25,
+      "exact_prior_checker_AST_functions": [
+        "ir"
+      ],
+      "exact_prior_checker_source_functions": [
+        "ir"
+      ],
+      "line": 24,
+      "name": "ir",
+      "sha256": "98de89bef3a772f2297b7bd8ca0e84cdef42f799feb7916fadd1b68a6e7d189f"
+    },
+    {
+      "ast_sha256": "adb178996866cb7211e248461df1b7fd5b1c8b53d6c058a3feda80f6c2951270",
+      "bytes": 51,
+      "end_line": 28,
+      "exact_prior_checker_AST_functions": [
+        "add"
+      ],
+      "exact_prior_checker_source_functions": [
+        "add"
+      ],
+      "line": 27,
+      "name": "add",
+      "sha256": "23e1150085d3fe1a5d74d2299831c98dd48f86eb9930a91b18600fc30d590845"
+    },
+    {
+      "ast_sha256": "100e03db1c36ad628ad265996e19a7d1b6462bd41a3d6dd440cd1594209c8972",
+      "bytes": 36,
+      "end_line": 31,
+      "exact_prior_checker_AST_functions": [
+        "neg"
+      ],
+      "exact_prior_checker_source_functions": [
+        "neg"
+      ],
+      "line": 30,
+      "name": "neg",
+      "sha256": "7f7c8cb6ea41ea38bda49db120a6d2cd2848779150281160c8d32c61b566b46e"
+    },
+    {
+      "ast_sha256": "e57f42845efc5124f405f9ea81828519dc8ac2719f6f6ffb83d538aae87933d2",
+      "bytes": 41,
+      "end_line": 34,
+      "exact_prior_checker_AST_functions": [
+        "sub"
+      ],
+      "exact_prior_checker_source_functions": [
+        "sub"
+      ],
+      "line": 33,
+      "name": "sub",
+      "sha256": "8ede6d264f328eaf6a282f1fbf02d60c898279d680fa292d6630d91647df113f"
+    },
+    {
+      "ast_sha256": "6d8da61f65c017a6cdfeca121a4b102688be4d6ae571c3be3cf0eedd508b0145",
+      "bytes": 100,
+      "end_line": 38,
+      "exact_prior_checker_AST_functions": [
+        "mul"
+      ],
+      "exact_prior_checker_source_functions": [
+        "mul"
+      ],
+      "line": 36,
+      "name": "mul",
+      "sha256": "2f7ab69da19ea004a62b39b79171c3c8661265882a8f38ce5d5a02f6c692c3f0"
+    },
+    {
+      "ast_sha256": "1ea90faaa472f7e8bdc0bb2906b44e1fe35532cdb3c8b237f86aab3bedc5652c",
+      "bytes": 42,
+      "end_line": 41,
+      "exact_prior_checker_AST_functions": [
+        "cp"
+      ],
+      "exact_prior_checker_source_functions": [
+        "cp"
+      ],
+      "line": 40,
+      "name": "cp",
+      "sha256": "d751cbf1aba3d6a326f3a0abd3950e3097b4ff2bf0f07d58edea1d4721bc703e"
+    },
+    {
+      "ast_sha256": "2154981a8a9d236f4acc125ba4d06ee892bc78ac63d0a4057fb94a993d687c16",
+      "bytes": 58,
+      "end_line": 44,
+      "exact_prior_checker_AST_functions": [
+        "ca"
+      ],
+      "exact_prior_checker_source_functions": [
+        "ca"
+      ],
+      "line": 43,
+      "name": "ca",
+      "sha256": "2fcdc09a3429b4ac6406f119b87d1af16f67cf1019ddb88eada128b38d408020"
+    },
+    {
+      "ast_sha256": "3ba6403f44b15d808e1000e9d251285b4c08c61a45af50fc2d9054f19d2db770",
+      "bytes": 102,
+      "end_line": 47,
+      "exact_prior_checker_AST_functions": [
+        "cm"
+      ],
+      "exact_prior_checker_source_functions": [
+        "cm"
+      ],
+      "line": 46,
+      "name": "cm",
+      "sha256": "14282eaebe213ec6a9176d0d1336011a8de4c1c63af16d1850736802d3b50cf1"
+    },
+    {
+      "ast_sha256": "bdf980d19d82c32e9c79bf07d809ef9401ef9f01c2ce789f17836108c0f262be",
+      "bytes": 232,
+      "end_line": 52,
+      "exact_prior_checker_AST_functions": [],
+      "exact_prior_checker_source_functions": [],
+      "line": 49,
+      "name": "dec",
+      "sha256": "a6616bdd340c27aede865631c32c1a9df8592a983b80fc765b73787182b37f46"
+    },
+    {
+      "ast_sha256": "d3a5edb69cc4b475993fdf464553e74455b3859c7dfdfd88fdda380b371543ca",
+      "bytes": 85,
+      "end_line": 55,
+      "exact_prior_checker_AST_functions": [
+        "contained"
+      ],
+      "exact_prior_checker_source_functions": [
+        "contained"
+      ],
+      "line": 54,
+      "name": "contained",
+      "sha256": "0316e37b1280f2429467467b7db2586e5791c8d09b50e8d1936a6b23a29bcc1d"
+    },
+    {
+      "ast_sha256": "2f40efc96c0004e30d3c0c5786be59d234460fc0aa6b97fc0ff99cb4b7ea8b77",
+      "bytes": 97,
+      "end_line": 58,
+      "exact_prior_checker_AST_functions": [
+        "cc"
+      ],
+      "exact_prior_checker_source_functions": [
+        "cc"
+      ],
+      "line": 57,
+      "name": "cc",
+      "sha256": "94da1f3dab49c9ed01deb84422c6699eea449365f913a0fbd40e8edc2d8ad173"
+    },
+    {
+      "ast_sha256": "b21ff5a8dad7e49072d8268a7d1acfb4e3d5290fc62563b36549f13948966672",
+      "bytes": 79,
+      "end_line": 64,
+      "exact_prior_checker_AST_functions": [
+        "total"
+      ],
+      "exact_prior_checker_source_functions": [
+        "total"
+      ],
+      "line": 60,
+      "name": "total",
+      "sha256": "420634ca9a867b6209bd1dfe8ddaae18db4a80bff27b875993d615637689435d"
+    },
+    {
+      "ast_sha256": "68b24e0b03135ef5a2c29a92d3d9ceb793477214b5ff6e82c6d40ea62893fbdf",
+      "bytes": 111,
+      "end_line": 67,
+      "exact_prior_checker_AST_functions": [
+        "mm"
+      ],
+      "exact_prior_checker_source_functions": [
+        "mm"
+      ],
+      "line": 66,
+      "name": "mm",
+      "sha256": "3b0ae8e7d2e8f0574a43fe760ed2100e3893fbd1189a99be46117fa7074eaf2e"
+    },
+    {
+      "ast_sha256": "ddf2ea60146eed08dbbd60ed1b76d43ae95c173580a1e77bd3805a3fdf7836ce",
+      "bytes": 136,
+      "end_line": 71,
+      "exact_prior_checker_AST_functions": [],
+      "exact_prior_checker_source_functions": [],
+      "line": 69,
+      "name": "matrix",
+      "sha256": "81b43e0d93bd11bb5c762777736e6cb14daa523659b3008aa7dc77106c40cae6"
+    },
+    {
+      "ast_sha256": "fed427d909a3423aadf0a4298de338b1de22b4b3b36770059cc75587844f5601",
+      "bytes": 148,
+      "end_line": 75,
+      "exact_prior_checker_AST_functions": [],
+      "exact_prior_checker_source_functions": [],
+      "line": 73,
+      "name": "matrix_encloses",
+      "sha256": "8258a6ed4673ad8ad80299a3cb2d873fb3857b0dee45d0457191bf387581ad01"
+    },
+    {
+      "ast_sha256": "4e36ab4f5419b88d2716e99dc2390cc33c53d9813df93560f9041971fc0257ab",
+      "bytes": 107,
+      "end_line": 78,
+      "exact_prior_checker_AST_functions": [
+        "kron2"
+      ],
+      "exact_prior_checker_source_functions": [
+        "kron2"
+      ],
+      "line": 77,
+      "name": "kron2",
+      "sha256": "aa876a46298876ad651ba7f2a6f5474ceea59fac7026f2b31df8d1c0e11966e0"
+    },
+    {
+      "ast_sha256": "716cd329dd5055084ecfb628e633caa268116a9299df1f86604d4d9e4ab2690d",
+      "bytes": 269,
+      "end_line": 87,
+      "exact_prior_checker_AST_functions": [
+        "gaussian_flat"
+      ],
+      "exact_prior_checker_source_functions": [
+        "gaussian_flat"
+      ],
+      "line": 80,
+      "name": "gaussian_flat",
+      "sha256": "c2c3ca55556c397f6004032752b45dfbaed5885b523509ac19f15263a0f00848"
+    }
+  ],
+  "checker_source": {
+    "bytes": 15085,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/check_saved_recurrence.py",
+    "sha256": "76c42811fabb27297714e4a91c14090b40ff0229640af077ad4f45a940adc393"
+  },
+  "exact_identity_rule": "Exact source hashes and complete AST hashes, including function names; no renamed or adapted function is labeled exact.",
+  "independence_limit": "Prior Fraction helper reuse is explicit. New trace traversal, fresh coefficient correspondence and bound/resource validation are separate from candidate fixed-point arithmetic. Same model and campaign; not blind.",
+  "module_scope": "Imports, constants, matrix literals, top-level guard, and every function read completely.",
+  "prior_checker_source": {
+    "bytes": 14457,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/check_saved_certificate.py",
+    "sha256": "b771e76256f6c13e70282b7e13633b335d660739c2d8207e630bfed07d4b49d4"
+  },
+  "prior_enclosure_source": {
+    "bytes": 11860,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/inputs/PARENT_ENCLOSURE_SOURCE.py",
+    "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+  },
+  "source": {
+    "bytes": 12700,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/sources/candidate/certify_recurrence.py",
+    "sha256": "c62b5b6c7c9d81dbcbe01511bbc7be7be1ede9eb77eef2b753e5d86a68ae7771"
+  }
+}

@@ -1,0 +1,12 @@
+{"bytes": 13857, "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737", "verified_source": "target_derivation"}
+{"bytes": 1311, "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11", "verified_source": "target_ledger"}
+{"bytes": 4930, "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60", "verified_source": "target_result"}
+{"bytes": 22438, "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc", "verified_source": "target_freeze"}
+{"bytes": 19949, "sha256": "ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc", "verified_source": "gap_decision"}
+{"bytes": 3521, "sha256": "830d2f702a69b6fc48514b35aa4bb75087efc8c317196cbf8e58e78c1c4f46b7", "verified_source": "gap_freeze"}
+Verified selected parent-freeze linkage: target_derivation
+Verified selected parent-freeze linkage: target_ledger
+Verified selected parent-freeze linkage: target_result
+Verified selected parent-freeze linkage: gap_decision
+{"freeze": {"bytes": 2098, "sha256": "0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2"}, "frozen_members_verified": 11}
+Metadata only: no new mathematical fixture or previous science was executed.

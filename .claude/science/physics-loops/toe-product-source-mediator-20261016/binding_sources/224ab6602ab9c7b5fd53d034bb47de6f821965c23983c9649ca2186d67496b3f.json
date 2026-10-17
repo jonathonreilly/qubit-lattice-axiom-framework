@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_recorder_v2_proposal/record_product_source_integration_review_v2.py",
+    "--root-reviewed",
+    "--expectations",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/product_source_integration_expectations.json",
+    "--expectations-sha",
+    "3b2fd84857fcc86ef613aa28d1c5834d27a564612f6a337f3c18f7277447f329"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T22:13:30.524875+00:00",
+  "end_utc": "2026-10-16T22:13:32.919068+00:00",
+  "elapsed_seconds": 2.393950916826725,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_integration_review/stdout",
+    "bytes": 847,
+    "sha256": "924f74b4c99a7c60c67d27e400e504dfcda2712941143ddc404891e146770e1d"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_integration_review/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_integration_recorder_v2_proposal/record_product_source_integration_review_v2.py",
+    "bytes": 14851,
+    "sha256": "b7441dbcac6b48de4900da3a039e97bd0315a4eb79669b141c7ab41b19149b0a"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_integration_review/executed_source.py",
+    "bytes": 14851,
+    "sha256": "b7441dbcac6b48de4900da3a039e97bd0315a4eb79669b141c7ab41b19149b0a"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "bound_actual_root_publication_review",
+  "decision": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.json",
+    "bytes": 3737,
+    "sha256": "c5b71bbf62eeffeb26d4a0ba0c51690eac3e5d4600b78897675daa7d4846eb90"
+  },
+  "review_text": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.md",
+    "bytes": 2995,
+    "sha256": "2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/FREEZE.json",
+    "bytes": 516,
+    "sha256": "b464293c99ea77a92e7357237ccd20fafe1f842d1eb1b1cdf08d3d2ffcbac893"
+  },
+  "execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_moment_source_publication_review/EXECUTION.json",
+    "bytes": 1814,
+    "sha256": "f77dd31670c1ef293d4ecab7b2a00753bddb1bae092d3b02118325b9c86bf112"
+  },
+  "refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/FRESH_REFRESH.json",
+    "bytes": 1547,
+    "sha256": "9137a0d75bcfff2cbdc9f06ad1de1c29b088ee183932c3b3aed355054978af01"
+  },
+  "integration_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ROOT_INTEGRATION_REVIEW.json",
+    "bytes": 5009,
+    "sha256": "9b6b4046bb6353e03c6f98afc56148b193e35b294275e275664ee1d37a5cdd01"
+  },
+  "integration_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/angle_repair_integration_source_review/EXECUTION.json",
+    "bytes": 1786,
+    "sha256": "e7edc6ff14d3bd141c15fa1a6d16f1a0716f5e878a7a052a35cc627dc31f1f77"
+  },
+  "integration_proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_runner_repair_proposal/FINAL_FREEZE.json",
+    "bytes": 90117,
+    "sha256": "735041bb46ddf510b3971985485951d70891c924218cbca5cd6477c7ab8e6218"
+  },
+  "actual_base_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/ACTUAL_BASE_BINDING_INPUT.json",
+    "bytes": 2865,
+    "sha256": "f5760588f11e1e70a413304d730f30bc66095714a296c5276e50a0961f6c6913"
+  }
+}

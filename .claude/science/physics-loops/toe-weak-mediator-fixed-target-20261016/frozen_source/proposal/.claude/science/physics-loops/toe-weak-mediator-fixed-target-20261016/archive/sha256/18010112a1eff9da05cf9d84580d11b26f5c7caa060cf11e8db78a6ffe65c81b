@@ -1,0 +1,40 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/inspect_sources.py"
+  ],
+  "child_source_at_launch": {
+    "bytes": 3064,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/inspect_sources.py",
+    "sha256": "4833248a3e1484859e20b27578ffa9adc3f9b4b3f3b8d37224a78f36a743ab51"
+  },
+  "completed_at": "2026-10-16T21:26:12.579896+00:00",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal",
+  "elapsed_seconds": 0.05745283281430602,
+  "exit_code": 0,
+  "recorder_source": {
+    "bytes": 2600,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/runs/metadata_002/recorder_at_launch.py",
+    "sha256": "549ac3bdac9e1e28fb211e1f2d14c1d0482bf4748f9d1a22863a4ac648b27087"
+  },
+  "scope": "Metadata only. No validator or scientific source import/execution.",
+  "source_capture": {
+    "bytes": 3064,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/runs/metadata_002/source_at_launch.py",
+    "sha256": "4833248a3e1484859e20b27578ffa9adc3f9b4b3f3b8d37224a78f36a743ab51"
+  },
+  "source_unchanged": true,
+  "started_at": "2026-10-16T21:26:12.522253+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/runs/metadata_002/stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 1802,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_saved_certificate_check_proposal/runs/metadata_002/stdout",
+    "sha256": "48a61d45392c6d9e1b1dc18f03134010b5e2ca0d155e8d285d9b145cf9fb6c8c"
+  }
+}

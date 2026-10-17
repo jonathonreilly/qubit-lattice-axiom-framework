@@ -1,0 +1,341 @@
+#!/usr/bin/env python3
+"""Proposed fixed exact compiler, m=44; do not execute before separate GO.
+
+Uses Fraction and isqrt, two separately fixed grids and integer inequalities.
+No float, transcendental library, adaptive loop or parameter search exists.
+"""
+import argparse
+from fractions import Fraction
+import hashlib
+from math import isqrt
+import json
+from pathlib import Path
+import sys
+import traceback
+
+BIT_CAP=65536
+OP_CAP=500000
+REPORT_CAP=16777216
+M=44
+P=171
+N=179
+WINDOW=24
+STATS={'guarded_integer_operations':0,'rational_additions':0,
+       'rational_multiplications':0,'rational_divisions':0,'rational_comparisons':0,
+       'summed_terms':0,'first_omitted_terms':0,'final_rounding_quotients':0,
+       'isqrt_calls':0,'max_integer_bits':0,'max_rational_numerator_bits':0,
+       'max_rational_denominator_bits':0}
+DATA={}
+SCENARIOS={}
+ACTIVE_SCENARIO=None
+CHECKS=[]
+OUTPUT=None
+
+def integer(x):
+    if not isinstance(x,int): raise TypeError('integer required')
+    bits=abs(x).bit_length()
+    STATS['max_integer_bits']=max(STATS['max_integer_bits'],bits)
+    if bits>BIT_CAP: raise RuntimeError('integer bit ceiling')
+    return x
+
+def tick():
+    STATS['guarded_integer_operations']+=1
+    if STATS['guarded_integer_operations']>OP_CAP: raise RuntimeError('integer operation ceiling')
+
+def mul(x,y):
+    integer(x);integer(y);tick()
+    if x and y and abs(x).bit_length()+abs(y).bit_length()>BIT_CAP:
+        raise RuntimeError('conservative integer multiplication preflight')
+    return integer(x*y)
+
+def add(x,y):
+    integer(x);integer(y);tick()
+    if x and y and max(abs(x).bit_length(),abs(y).bit_length())+1>BIT_CAP:
+        raise RuntimeError('conservative integer addition preflight')
+    return integer(x+y)
+
+def pow2(n):
+    if not isinstance(n,int) or n<0 or n+1>BIT_CAP: raise RuntimeError('fixed power preflight')
+    tick()
+    return integer(1<<n)
+
+def Q(n,d=1):
+    integer(n);integer(d)
+    if not d: raise ZeroDivisionError
+    q=Fraction(n,d)
+    integer(q.numerator);integer(q.denominator)
+    STATS['max_rational_numerator_bits']=max(STATS['max_rational_numerator_bits'],abs(q.numerator).bit_length())
+    STATS['max_rational_denominator_bits']=max(STATS['max_rational_denominator_bits'],q.denominator.bit_length())
+    return q
+
+def qa(x,y):
+    STATS['rational_additions']+=1
+    return Q(add(mul(x.numerator,y.denominator),mul(y.numerator,x.denominator)),mul(x.denominator,y.denominator))
+
+def neg(x):
+    return Q(-x.numerator,x.denominator)
+
+def qs(x,y):
+    return qa(x,neg(y))
+
+def qm(x,y):
+    STATS['rational_multiplications']+=1
+    return Q(mul(x.numerator,y.numerator),mul(x.denominator,y.denominator))
+
+def qd(x,y):
+    STATS['rational_divisions']+=1
+    if not y.numerator: raise ZeroDivisionError
+    return Q(mul(x.numerator,y.denominator),mul(x.denominator,y.numerator))
+
+def cmp(x,y):
+    STATS['rational_comparisons']+=1
+    u=mul(x.numerator,y.denominator);v=mul(y.numerator,x.denominator)
+    return (u>v)-(u<v)
+
+def lt(x,y): return cmp(x,y)<0
+def le(x,y): return cmp(x,y)<=0
+
+def wire(x):
+    return {'numerator_hex':hex(x.numerator),'denominator_hex':hex(x.denominator),
+            'numerator_bits':abs(x.numerator).bit_length(),'denominator_bits':x.denominator.bit_length()}
+
+def check(name,holds,detail=None):
+    row={'scenario':ACTIVE_SCENARIO,'name':name,'holds':bool(holds)}
+    if detail is not None:row['detail']=detail
+    CHECKS.append(row);print(json.dumps(row,sort_keys=True),flush=True)
+    if not holds:raise AssertionError(name)
+
+def atan_interval(base,n):
+    total=Q(0); power=integer(base); base2=mul(base,base); terms=[]
+    for j in range(n):
+        denominator=mul(2*j+1,power)
+        term=Q(1 if j%2==0 else -1,denominator)
+        total=qa(total,term)
+        STATS['summed_terms']+=1
+        terms.append({'index':j,'term':wire(term),'partial_sum':wire(total)})
+        power=mul(power,base2)
+    tail=Q(1 if n%2==0 else -1,mul(2*n+1,power))
+    STATS['first_omitted_terms']+=1
+    other=qa(total,tail)
+    lower,upper=(total,other) if le(total,other) else (other,total)
+    width=qs(upper,lower)
+    check('positive ordered atan interval '+str(base),lt(Q(0),lower) and lt(lower,upper))
+    DATA.setdefault('atan_intervals',{})[str(base)]={'n':n,'sum':wire(total),
+        'signed_first_omitted_term':wire(tail),'lower':wire(lower),'upper':wire(upper),
+        'width':wire(width),'summed_terms_and_partial_sums':terms}
+    return lower,upper
+
+def floor_quotient(A,B):
+    integer(A);integer(B)
+    if A<0 or B<=0:raise ValueError('positive quotient inputs')
+    tick();STATS['final_rounding_quotients']+=1
+    z=integer(A//B)
+    check('exact final quotient '+str(STATS['final_rounding_quotients']),mul(z,B)<=A<mul(add(z,1),B))
+    return z
+
+def sqrt_lower(name,lower,upper,den):
+    scale2=mul(den,den)
+    A=mul(scale2,lower.numerator);B=lower.denominator
+    floor_scaled=floor_quotient(A,B)
+    tick();STATS['isqrt_calls']+=1
+    k=integer(isqrt(floor_scaled))
+    k1=add(k,1);k2=add(k,2)
+    ksq=mul(k,k);k1sq=mul(k1,k1);k2sq=mul(k2,k2)
+    check(name+' integer isqrt certificate',ksq<=floor_scaled<k1sq)
+    check(name+' exact lower endpoint square bracket',mul(ksq,B)<=A<mul(k1sq,B))
+    upper_lhs=mul(scale2,upper.numerator);upper_rhs=mul(k2sq,upper.denominator)
+    check(name+' strict upper endpoint two-step square guard',upper_lhs<upper_rhs)
+    check(name+' positive numerator',k>0)
+    value=Q(k,den)
+    DATA.setdefault('sqrt_certificates',{})[name]={'lower_radicand':wire(lower),'upper_radicand':wire(upper),
+        'scaled_lower_numerator_hex':hex(A),'scaled_lower_denominator_hex':hex(B),
+        'final_floor_quotient_hex':hex(floor_scaled),'isqrt_hex':hex(k),
+        'square_lower_hex':hex(ksq),'square_next_hex':hex(k1sq),
+        'upper_guard_left_hex':hex(upper_lhs),'upper_guard_right_hex':hex(upper_rhs),
+        'common_dyadic_numerator_decimal':str(k),'common_dyadic_denominator_decimal':str(den),
+        'reduced_value':wire(value)}
+    return k,value
+
+def run(parameters):
+    expected={'m':44,'T_exponent':120,'p':171,'n':179,'window':24,
+              'atan_denominators':[5,239,7],'integer_bit_ceiling':65536,
+              'guarded_integer_operation_ceiling':500000,'report_byte_ceiling':16777216,
+              'wall_limit_seconds':60}
+    check('fixed source parameters',all(parameters[k]==v for k,v in expected.items()))
+    check('fixed family identities',P==3*M+39 and N==P+8 and 120==2*M+32)
+    den=pow2(P);T=pow2(120);eps=Q(1,pow2(M));h=Q(1,den);width_goal=Q(1,pow2(2*P+12))
+    sqrt_T=pow2(M+16)
+    check('exact square runtime and observation endpoint',mul(sqrt_T,sqrt_T)==T and T>=24 and T+24<mul(2,T))
+    intervals={base:atan_interval(base,N) for base in [5,239,7]}
+    L5,U5=intervals[5];L239,U239=intervals[239];L7,U7=intervals[7]
+    piL=qs(qm(Q(16),L5),qm(Q(4),U239))
+    piU=qs(qm(Q(16),U5),qm(Q(4),L239))
+    thetaL=qa(qd(piL,Q(4)),L7);thetaU=qa(qd(piU,Q(4)),U7)
+    piwidth=qs(piU,piL);thetawidth=qs(thetaU,thetaL)
+    check('Machin interval rational guards',lt(Q(3),piL) and lt(piL,piU) and lt(piU,Q(22,7)))
+    check('angle interval rational guards',lt(Q(3,4),thetaL) and lt(thetaL,thetaU) and lt(thetaU,Q(1)))
+    check('pi and theta width guards',lt(piwidth,width_goal) and lt(thetawidth,width_goal))
+    DeltaL=qs(Q(2),qd(thetaU,piL));DeltaU=qs(Q(2),qd(thetaL,piU))
+    yL=qd(thetaL,Q(T));yU=qd(thetaU,Q(T))
+    xL=qd(qm(thetaL,DeltaL),Q(mul(2,T)));xU=qd(qm(thetaU,DeltaU),Q(mul(2,T)))
+    dwidth=qs(DeltaU,DeltaL);xwidth=qs(xU,xL);ywidth=qs(yU,yL)
+    check('positive Delta interval guards',lt(Q(3,2),DeltaL) and lt(DeltaL,DeltaU) and lt(DeltaU,Q(7,4)))
+    check('positive radicand intervals',lt(Q(0),xL) and lt(xL,xU) and lt(Q(0),yL) and lt(yL,yU))
+    check('derived interval width guards',lt(dwidth,qd(width_goal,Q(2))) and lt(ywidth,qd(width_goal,Q(T))) and lt(xwidth,qd(qm(Q(2),width_goal),Q(T))))
+    half_h_squared=qd(qm(h,h),Q(4))
+    check('root interval width sufficient guard',lt(xwidth,half_h_squared) and lt(ywidth,half_h_squared))
+    for name,l,u in [('pi',piL,piU),('theta',thetaL,thetaU),('Delta',DeltaL,DeltaU),('gx_squared',xL,xU),('gy_squared',yL,yU)]:
+        DATA.setdefault('enclosures',{})[name]={'lower':wire(l),'upper':wire(u),'width':wire(qs(u,l))}
+    kx,gx=sqrt_lower('gx',xL,xU,den)
+    ky,gy=sqrt_lower('gy',yL,yU,den)
+    kd=floor_quotient(mul(den,DeltaL.numerator),DeltaL.denominator)
+    Delta=Q(kd,den)
+    dupper_lhs=mul(den,DeltaU.numerator);dupper_rhs=mul(add(kd,2),DeltaU.denominator)
+    check('Delta strict upper endpoint two-step guard',dupper_lhs<dupper_rhs)
+    check('Delta positive lower approximation',kd>0 and le(Delta,DeltaL))
+    rn=mul(2,add(kx,ky));r=Q(rn,den)
+    source_incident=qa(Delta,r)
+    check('actual lower dyadic added incident caps',lt(Q(0),r) and lt(r,Q(2)) and lt(source_incident,Q(2)))
+    check('coefficient description bit bounds',all(integer(k).bit_length()<=P+1 for k in [kx,ky,kd]) and den.bit_length()==P+1)
+    DATA['coefficients']={name:{'common_numerator_decimal':str(k),'common_denominator_decimal':str(den),
+                              'common_numerator_bits':k.bit_length(),'common_denominator_bits':den.bit_length(),
+                              'reduced_value':wire(value)}
+                          for name,k,value in [('gxhat',kx,gx),('gyhat',ky,gy),('Deltahat',kd,Delta),('rhat',rn,r)]}
+    DATA['Delta_rounding_certificate']={'upper_guard_left_hex':hex(dupper_lhs),'upper_guard_right_hex':hex(dupper_rhs)}
+    DATA['actual_loads']={'old_added_incident':wire(r),'source_added_incident':wire(source_incident),
+                          'old_total_incident_including_literal_K':wire(qa(Q(3),r))}
+    DATA['installed_model']={'literal_old':'K=2I+Z1Z2; unchanged',
+        'positive_added_blocks':[
+            {'support':['A','B'],'operator':'I-|Phi+><Phi+|','coefficient':'Deltahat'},
+            {'support':['S1','A'],'operator':'I+X1 XA','coefficient':'gxhat'},
+            {'support':['S2','B'],'operator':'I+X2 XB','coefficient':'gxhat'},
+            {'support':['S1','A'],'operator':'I+Y1 YA','coefficient':'gyhat'},
+            {'support':['S2','B'],'operator':'I-Y2 YB','coefficient':'gyhat'}],
+        'scalar_accounting':'rhat is already the sum of the four port scalar reserves, not an additional installed block'}
+    DATA['retained_source_phase_arguments']={'at_T':wire(qm(r,Q(T))),'at_T_plus_24':wire(qm(r,Q(T+24))),
+                                             'formula':'exp(-i*rhat*t) Phi+; no exponential is evaluated'}
+    A=qa(Q(12352,sqrt_T),Q(132480,T))
+    perturb=qm(Q(mul(10,T+24)),h)
+    total=qa(A,perturb)
+    check('ideal conditional analytic error allowance',lt(A,qd(eps,Q(4))))
+    check('rounded coefficient Duhamel allowance',lt(perturb,qm(Q(5,32),eps)))
+    check('total conditional full isometry and trace allowances',lt(total,qm(Q(13,32),eps)) and lt(qm(Q(2),total),eps))
+    check('positive margin sufficient comparison',lt(qm(Q(2),h),Q(1,pow2(M+17))))
+    check('fixed mathematical operation counts',STATS['summed_terms']==3*N and STATS['first_omitted_terms']==3 and STATS['final_rounding_quotients']==3 and STATS['isqrt_calls']==2)
+    DATA['conditional_error_budget']={'epsilon':wire(eps),'coefficient_absolute_error_upper':wire(qm(Q(2),h)),
+        'ideal_isometry_upper':wire(A),'rounding_Duhamel_upper':wire(perturb),
+        'full_isometry_upper':wire(total),'unhalved_joint_trace_upper':wire(qm(Q(2),total))}
+    DATA['fixed_duration']={'T_decimal':str(T),'T_exponent':120,'window':24,
+                           'physical_time':'hbar*T/E0 if the source uses physical Hamiltonian E0*K'}
+
+def run_structured(parameters):
+    expected={'ports_p':117,'source_p':58,'n':125,'window_exponent':68,
+              'ports_error_exponent':116,'source_error_exponent':57}
+    check('fixed mixed-grid scenario',parameters['structured_scenario']==expected)
+    pg=117;pd=58;n=125
+    check('fixed mixed-grid family identities',pg==2*M+29 and pd==M+14 and n==max(pg,pd)+8)
+    dg=pow2(pg);dd=pow2(pd);T=pow2(120);sqrt_T=pow2(60);w=pow2(68)
+    eps=Q(1,pow2(M));hg=Q(1,pow2(116));hD=Q(1,pow2(57));width_goal=Q(1,pow2(2*pg+12))
+    check('mixed-grid two-step errors match allowed bounds',qm(Q(2),Q(1,dg))==hg and qm(Q(2),Q(1,dd))==hD)
+    check('longer actual window identity',Q(w)==qd(qm(eps,Q(T)),Q(256)) and T+w<mul(2,T))
+    intervals={base:atan_interval(base,n) for base in [5,239,7]}
+    L5,U5=intervals[5];L239,U239=intervals[239];L7,U7=intervals[7]
+    piL=qs(qm(Q(16),L5),qm(Q(4),U239));piU=qs(qm(Q(16),U5),qm(Q(4),L239))
+    thetaL=qa(qd(piL,Q(4)),L7);thetaU=qa(qd(piU,Q(4)),U7)
+    check('mixed-grid Machin and angle guards',lt(Q(3),piL) and lt(piL,piU) and lt(piU,Q(22,7)) and lt(Q(3,4),thetaL) and lt(thetaL,thetaU) and lt(thetaU,Q(1)))
+    check('mixed-grid initial widths',lt(qs(piU,piL),width_goal) and lt(qs(thetaU,thetaL),width_goal))
+    DeltaL=qs(Q(2),qd(thetaU,piL));DeltaU=qs(Q(2),qd(thetaL,piU))
+    yL=qd(thetaL,Q(T));yU=qd(thetaU,Q(T))
+    xL=qd(qm(thetaL,DeltaL),Q(mul(2,T)));xU=qd(qm(thetaU,DeltaU),Q(mul(2,T)))
+    dwidth=qs(DeltaU,DeltaL);xwidth=qs(xU,xL);ywidth=qs(yU,yL)
+    check('mixed-grid positive interval guards',lt(Q(3,2),DeltaL) and lt(DeltaL,DeltaU) and lt(DeltaU,Q(7,4)) and lt(Q(0),xL) and lt(xL,xU) and lt(Q(0),yL) and lt(yL,yU))
+    check('mixed-grid derived width guards',lt(dwidth,qd(width_goal,Q(2))) and lt(ywidth,qd(width_goal,Q(T))) and lt(xwidth,qd(qm(Q(2),width_goal),Q(T))))
+    root_width_goal=Q(1,mul(4,mul(dg,dg)))
+    check('mixed-grid root and source width sufficient guards',lt(xwidth,root_width_goal) and lt(ywidth,root_width_goal) and lt(dwidth,Q(1,dd)))
+    for name,l,u in [('pi',piL,piU),('theta',thetaL,thetaU),('Delta',DeltaL,DeltaU),('gx_squared',xL,xU),('gy_squared',yL,yU)]:
+        DATA.setdefault('enclosures',{})[name]={'lower':wire(l),'upper':wire(u),'width':wire(qs(u,l))}
+    kx,gx=sqrt_lower('gx',xL,xU,dg);ky,gy=sqrt_lower('gy',yL,yU,dg)
+    kd=floor_quotient(mul(dd,DeltaL.numerator),DeltaL.denominator);Delta=Q(kd,dd)
+    upper_lhs=mul(dd,DeltaU.numerator);upper_rhs=mul(add(kd,2),DeltaU.denominator)
+    check('mixed-grid Delta two-step upper guard',upper_lhs<upper_rhs and le(Delta,DeltaL))
+    check('actual source gap domain after coarse rounding',lt(Q(3,2),Delta) and lt(Delta,Q(7,4)))
+    rn=mul(2,add(kx,ky));r=Q(rn,dg);source_incident=qa(Delta,r)
+    check('mixed-grid actual positivity and added incident caps',kx>0 and ky>0 and kd>0 and lt(Q(0),r) and lt(r,Q(2)) and lt(source_incident,Q(2)))
+    check('separate coefficient encoding bounds',all(k.bit_length()<=pg+1 for k in [kx,ky]) and kd.bit_length()<=pd+1 and dg.bit_length()==pg+1 and dd.bit_length()==pd+1)
+    DATA['coefficients']={name:{'common_numerator_decimal':str(k),'common_denominator_decimal':str(d),
+                              'common_numerator_bits':k.bit_length(),'common_denominator_bits':d.bit_length(),
+                              'reduced_value':wire(value)}
+                         for name,k,d,value in [('gxhat',kx,dg,gx),('gyhat',ky,dg,gy),('Deltahat',kd,dd,Delta),('rhat',rn,dg,r)]}
+    DATA['Delta_rounding_certificate']={'upper_guard_left_hex':hex(upper_lhs),'upper_guard_right_hex':hex(upper_rhs)}
+    DATA['actual_loads']={'old_added_incident':wire(r),'source_added_incident':wire(source_incident),
+                          'old_total_incident_including_literal_K':wire(qa(Q(3),r))}
+    DATA['retained_source_phase_arguments']={'at_T':wire(qm(r,Q(T))),'at_T_plus_window':wire(qm(r,Q(T+w))),
+                                             'formula':'exp(-i*rhat*t) Phi+; no exponential is evaluated'}
+    R=qa(Q(12352,sqrt_T),Q(132096,T))
+    h2_difference=qa(qd(qm(Q(128),hg),Q(sqrt_T)),qd(qm(Q(256),hD),Q(T)))
+    actual_phase_upper=qm(Q(T+w),h2_difference)
+    coarse_phase_upper=qa(qm(Q(mul(256,sqrt_T)),hg),qm(Q(512),hD))
+    quiet=Q(mul(16,w),T);total=qa(qa(R,actual_phase_upper),quiet)
+    check('structured phase allowance arithmetic',coarse_phase_upper==qd(eps,Q(8)) and lt(actual_phase_upper,coarse_phase_upper))
+    check('structured residual and quiet allowances',lt(R,qd(eps,Q(4))) and quiet==qd(eps,Q(16)))
+    check('structured full isometry and trace allowances',lt(total,qm(Q(7,16),eps)) and lt(qm(Q(2),total),qm(Q(7,8),eps)) and lt(qm(Q(2),total),eps))
+    DATA['conditional_error_budget']={'epsilon':wire(eps),'ports_absolute_error_upper':wire(hg),'source_absolute_error_upper':wire(hD),
+        'actual_model_residual_upper':wire(R),'effective_H2_difference_upper':wire(h2_difference),
+        'effective_phase_upper':wire(actual_phase_upper),'ideal_window_drift_upper':wire(quiet),
+        'full_isometry_upper':wire(total),'unhalved_joint_trace_upper':wire(qm(Q(2),total)),
+        'restriction':'only lower replacements of the same three positive coefficients; not a bound for generic Hamiltonian faults'}
+    DATA['fixed_duration']={'T_decimal':str(T),'T_exponent':120,'window_decimal':str(w),'window_exponent':68}
+    DATA['installed_model']='Same five positive blocks and literal K as the uniform-grid scenario, with this scenario\'s separate exact coefficients; rhat is already included in the ports.'
+    check('both fixed scenario operation counts',STATS['summed_terms']==3*179+3*125 and STATS['first_omitted_terms']==6 and STATS['final_rounding_quotients']==6 and STATS['isqrt_calls']==4)
+
+PREMISES=[
+ 'The alternating atan remainder and Machin/quadrant identities place the true pi and theta inside the rational intervals. They are analytic premises, not numerical library results.',
+ 'Positive monotonic interval operations enclose Delta, gx squared and gy squared. Integer-square certificates then enclose the true positive roots without equality-oracle decisions.',
+ 'The proposed four-qubit residual, exact phase, positivity and norm results underlie the conditional A(T) error. This compiler does not independently prove those matrix or norm statements.',
+ 'The mixed-grid scenario additionally assumes the separately proposed structured three-coefficient effective-Hamiltonian bound and actual-model residual. It does not apply that bound to generic Hamiltonian faults.',
+ 'Duhamel and the full-reference factor 2 turn the coefficient guards into the stated conditional error budget. The actual scalar rhat stays in the complete source comparator.',
+ 'An additional preparation trace error requires a product supplied source independent of the arbitrary old/reference input, or an explicit full joint-state error bound; a marginal error alone is insufficient.',
+ 'Prepared Bell input, new positive source/XX/YY port permissions, installation, physical calibration, timing and reset/reuse remain physical premises. This is mathematical coefficient emission only.'
+]
+
+def report(status,parameters,error=None):
+    data={'status':status,'checks':CHECKS,'computed_scenarios':SCENARIOS,'active_scenario':ACTIVE_SCENARIO,'statistics':STATS,
+          'parameters':parameters,'analytic_and_physical_premises':PREMISES,
+          'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+          'parameters_sha256':hashlib.sha256(Path(__file__).with_name('PARAMETERS.json').read_bytes()).hexdigest(),
+          'count_qualification':'Counters describe guarded source-level operations; Fraction gcd/reduction and isqrt internals are not individually counted. Output bit lengths are not intermediate bit complexity.',
+          'error':error}
+    count=0
+    with (OUTPUT/'REPORT.json').open('x') as stream:
+        for piece in json.JSONEncoder(indent=2,sort_keys=True).iterencode(data):
+            count+=len(piece.encode())
+            if count+1>REPORT_CAP:raise RuntimeError('report byte ceiling; partial file preserved')
+            stream.write(piece)
+        stream.write('\n')
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',required=True)
+    args=parser.parse_args()
+    params={}
+    try:
+        params=json.loads(Path(__file__).with_name('PARAMETERS.json').read_text())
+        out=Path(args.output);out.mkdir(parents=False,exist_ok=False);OUTPUT=out
+        ACTIVE_SCENARIO='uniform_grid_p171_n179_window24'
+        SCENARIOS[ACTIVE_SCENARIO]=DATA
+        DATA['statistics_before']=dict(STATS)
+        run(params)
+        DATA['statistics_after']=dict(STATS)
+        ACTIVE_SCENARIO='structured_grid_pg117_pD58_n125_window2pow68'
+        DATA={};SCENARIOS[ACTIVE_SCENARIO]=DATA
+        DATA['statistics_before']=dict(STATS)
+        run_structured(params)
+        DATA['statistics_after']=dict(STATS)
+        report('completed two predeclared fixed coefficient scenarios in one execution; conditional premises remain',params)
+        print(json.dumps({'completed':True,'report':str(OUTPUT/'REPORT.json'),'statistics':STATS},sort_keys=True),flush=True)
+    except BaseException as exc:
+        traceback.print_exc()
+        if OUTPUT is not None and not (OUTPUT/'REPORT.json').exists():
+            try:report('failed; no retry',params,repr(exc))
+            except BaseException:traceback.print_exc()
+        sys.exit(1)

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-16T18:17:15.116499+00:00",
+  "note": "docs/INTERACTING_PREPARATION_CONTROL_WORK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "note_sha256": "3c070e58826943e0c85f0e34627e6f00fc48bdd7c554183c8bc3aab53d14f12b",
+  "unchanged_bodies": 9,
+  "source_aliases": 219,
+  "unique_archive_objects": 120,
+  "freeze_member_counts": [
+    2,
+    31,
+    2,
+    39,
+    47,
+    2,
+    17,
+    41,
+    2
+  ],
+  "input_manifest_sha256": "1ffc99e336750aa83bad1c58867e2af48c1d730725edfd055cf67d22e426d5e8",
+  "scientific_executions": 0,
+  "canonical_execution": null
+}

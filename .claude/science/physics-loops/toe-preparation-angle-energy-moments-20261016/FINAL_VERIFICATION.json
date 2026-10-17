@@ -1,0 +1,343 @@
+{
+  "utc": "2026-10-16T19:36:16.196389+00:00",
+  "branch": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+  "base_head": "ff46be4883eb97457adc4d4c17af08ddbb05f20c",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 50813,
+    "sha256": "4b50362515e7a33c75e594be4bcf9c4e2191906d252b714cdb91aa610b33445a"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_angle_energy_moments_2026_10_16.py",
+    "bytes": 60716,
+    "sha256": "e282958658c5e12e8a4f7feb89740e4a9030e18ce3895803798494d6e2a0d75f"
+  },
+  "cache": {
+    "utc": "2026-10-16T19:33:01.146708+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_angle_energy_moments_2026_10_16.py",
+      "bytes": 60716,
+      "sha256": "e282958658c5e12e8a4f7feb89740e4a9030e18ce3895803798494d6e2a0d75f"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/CANONICAL_RESULT.json",
+      "bytes": 1083,
+      "sha256": "f277a7c67cd4ef9408d5dac72080122c177f9dd3c3fa025d84c62b596f5921c3"
+    },
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/preparation_angle_energy_moments_2026_10_16.txt",
+      "bytes": 1041,
+      "sha256": "2c50f2a70c0f663279cc6e542709a3df1a17ab7014e49553529250dd64890ecc"
+    },
+    "timeout_seconds": 60,
+    "cache_fresh": true,
+    "summary": {
+      "historical_programs_replayed": 0,
+      "mathematics_or_retention_certified": false,
+      "result": "source_integrity_verified",
+      "scientific_programs_run_this_primary": 0,
+      "scope": "Exact source/body/review/base/receipt provenance only"
+    },
+    "scope_lines": [
+      "per_element: deterministic angle increments; positive complete pulses, indefinite additive residual",
+      "per_site: exact vacuum, isolation, gap, carrier, clocks and final phase remain supplied",
+      "per_mode: raw moments, full F0 cross moments and variance constants remain distinct",
+      "per_block: full old/battery/reference output; vector eta and unhalved trace2eta",
+      "lattice_wide: finite mean sharpness only; no generic-fault, native-resource or retained-audit claim"
+    ],
+    "scientific_programs_run": 0,
+    "child_stream_limit": "runner_cache merges child stderr into stdout; result.stderr is not a separate child-stderr capture."
+  },
+  "source_verification": {
+    "utc": "2026-10-16T19:33:13.658003+00:00",
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/preparation_angle_energy_moments_2026_10_16.py",
+      "bytes": 60716,
+      "sha256": "e282958658c5e12e8a4f7feb89740e4a9030e18ce3895803798494d6e2a0d75f"
+    },
+    "mutations": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/MUTATION_RESULTS.json",
+      "bytes": 10691,
+      "sha256": "1a8739148f8efee729d482c73b25dda4bab6ff3afa00cec4ef1eb01e80fe403d"
+    },
+    "focused_checker": {
+      "base": "HEAD",
+      "changed_path_count": 155,
+      "checked": [],
+      "control_failures": [],
+      "diff_scope": "committed_and_worktree",
+      "failures": [],
+      "schema": "changed_audit_evidence_readiness_v1"
+    },
+    "index_preserved": true,
+    "vocabulary_source_changes": false,
+    "historical_bytes_untouched": true,
+    "scientific_programs_run": 0,
+    "scope": "Source/provenance only; current-main/cumulative-stack and audit remain separate."
+  },
+  "graph": {
+    "utc": "2026-10-16T19:35:37.939322+00:00",
+    "old_nodes_preserved": 7196,
+    "old_edges_preserved": 16153,
+    "new_node": {
+      "claim_id": "preparation_angle_energy_moments_bounded_theorem_note_2026-10-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem. Current surface: conditional support; actual source and canonical review evidence must accompany integration, and independent audit remains pending.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "local_conserving_preparation_bounded_theorem_note_2026-10-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4b50362515e7a33c75e594be4bcf9c4e2191906d252b714cdb91aa610b33445a",
+      "path": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "runner_path": "scripts/preparation_angle_energy_moments_2026_10_16.py",
+      "title": "Preparation-angle errors and energy moments: bounded conditional theorem"
+    },
+    "new_edges": [
+      {
+        "from": "preparation_angle_energy_moments_bounded_theorem_note_2026-10-16",
+        "to": "local_conserving_preparation_bounded_theorem_note_2026-10-16"
+      }
+    ],
+    "old_roots_preserved": true,
+    "new_roots": [],
+    "graph": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+      "bytes": 10519978,
+      "sha256": "4355cab1ae5a92d506c9f52868828905ae0665832b1591b80f92c0ec32376bcc"
+    },
+    "manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1026759,
+      "sha256": "8cb393fe7966b5ee6bc08d146e420ab57f4634c64e600bf74d36a4ef1cc7e7fe"
+    },
+    "baseline": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/GRAPH_BASELINE.json",
+      "bytes": 922,
+      "sha256": "f9cf73589df073ed388346a0e90ef5b684dc3114e90be36816e4322a3b8e967e"
+    },
+    "method": "Canonical object digests preserve every old node/edge/root without copying full graphs.",
+    "graph_json_ignored_not_staged": true
+  },
+  "mutations": {
+    "utc": "2026-10-16T19:33:08.802087+00:00",
+    "cases": [
+      {
+        "case": "baseline",
+        "expected_failure": null,
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_baseline/EXECUTION.json",
+          "bytes": 2367,
+          "sha256": "7babfb714877294c14ccda9a65492dac1afe77f9f26243d992e251caeae96204"
+        }
+      },
+      {
+        "case": "manifest_identity",
+        "expected_failure": "Input manifest identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_manifest_identity/EXECUTION.json",
+          "bytes": 2422,
+          "sha256": "cbde1bac2685ce9c4b16f7b83be43a3cce236a5c558f491c20575b5d756e01ec"
+        }
+      },
+      {
+        "case": "source_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_source_identity/EXECUTION.json",
+          "bytes": 2411,
+          "sha256": "9f8645634de3f7e163a9e7d693f09432387434a8d28c226be7358fbc16f79068"
+        }
+      },
+      {
+        "case": "body_interval",
+        "expected_failure": "Canonical body identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_body_interval/EXECUTION.json",
+          "bytes": 2398,
+          "sha256": "a25b34ef527e47a103069bf4cc0e7d9ec516c0ba7201e97ea3d29c1ed8e3f06b"
+        }
+      },
+      {
+        "case": "unexpected_parent",
+        "expected_failure": "Exact parent binding",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_unexpected_parent/EXECUTION.json",
+          "bytes": 2423,
+          "sha256": "4965969413d085ba8f42154cf958e311a2b73faae6b161eb25f5c88be13a5a20"
+        }
+      },
+      {
+        "case": "historical_outcome",
+        "expected_failure": "Historical publication state",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_historical_outcome/EXECUTION.json",
+          "bytes": 2429,
+          "sha256": "5630635524233f55ef828bb5497992df936c8d7abd731c47dd4e52a7128ef6cd"
+        }
+      },
+      {
+        "case": "actual_note",
+        "expected_failure": "Actual note/base linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_actual_note/EXECUTION.json",
+          "bytes": 2386,
+          "sha256": "0a0005995151fa017e02f406dec9d541cdb9a92098f1cc8a73a697d50d110911"
+        }
+      },
+      {
+        "case": "root_review_exit",
+        "expected_failure": "Successful captured execution",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_root_review_exit/EXECUTION.json",
+          "bytes": 2416,
+          "sha256": "f6fb4631f4d4e9f6689ced356505239174ad12dff2a0d7e8d47208b28bbc471f"
+        }
+      },
+      {
+        "case": "root_source_at_launch",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_root_source_at_launch/EXECUTION.json",
+          "bytes": 2446,
+          "sha256": "c51ebb955bb1becc39e753757f9a3ae500499ac2b458be975d845d82d140bc62"
+        }
+      },
+      {
+        "case": "root_output_linkage",
+        "expected_failure": "Actual review output linkage",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_root_output_linkage/EXECUTION.json",
+          "bytes": 2435,
+          "sha256": "92164c42da8f6f30af8aaeb564de498c9aae4b30d6a9664740a0528442c4ec78"
+        }
+      },
+      {
+        "case": "base_command",
+        "expected_failure": "Actual base observation command",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_base_command/EXECUTION.json",
+          "bytes": 2392,
+          "sha256": "d6e49400f031f2ef84ee66bca1f2f530094272e6e9fec17dc4e4bdd06deda872"
+        }
+      },
+      {
+        "case": "base_identity",
+        "expected_failure": "Actual base PR identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_base_identity/EXECUTION.json",
+          "bytes": 2398,
+          "sha256": "c6801549bf35efc9fa78eacc49b2786917526d41aba4f1895163fe7cc83f80f3"
+        }
+      },
+      {
+        "case": "receipt_membership",
+        "expected_failure": "Exact binding evidence membership",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_receipt_membership/EXECUTION.json",
+          "bytes": 2428,
+          "sha256": "1a231989c16f0751109cdc2d94bb4e8bece71ec94eb4a87cff1ca827cf55c490"
+        }
+      },
+      {
+        "case": "canonical_review_identity",
+        "expected_failure": "Exact canonical review identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_canonical_review_identity/EXECUTION.json",
+          "bytes": 2470,
+          "sha256": "721f436b4b4501fc5342f635efbe830e9b6488b7e3fc43ed3ae2d3501a799868"
+        }
+      },
+      {
+        "case": "root_capture_schema",
+        "expected_failure": "Explicit captured source required",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_root_capture_schema/EXECUTION.json",
+          "bytes": 2435,
+          "sha256": "705da9de5ee2627ad2b468ddc637a671cd51308bfb7ab25b4e13fb295664122f"
+        }
+      },
+      {
+        "case": "recovery_interval",
+        "expected_failure": "Canonical recovery interval",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_recovery_interval/EXECUTION.json",
+          "bytes": 2423,
+          "sha256": "7a565c633aa5d77a1659a9e295118289941a2d9f497b79c1f55400c2f736b9ed"
+        }
+      },
+      {
+        "case": "root_capture_alias",
+        "expected_failure": "Distinct original and captured source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_root_capture_alias/EXECUTION.json",
+          "bytes": 2428,
+          "sha256": "1f0640565ba22f9b2d74f81e9c713e14e7b74bf50ec31f5972969582e468d2a4"
+        }
+      },
+      {
+        "case": "canonical_capture_alias",
+        "expected_failure": "Distinct original and captured source",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_canonical_capture_alias/EXECUTION.json",
+          "bytes": 2458,
+          "sha256": "1a269be1acef8ce06330d4a1ed5366867a341e2d5c7d2ab2a27042dc8da1ca92"
+        }
+      },
+      {
+        "case": "canonical_execution_identity",
+        "expected_failure": "Exact canonical execution identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_canonical_execution_identity/EXECUTION.json",
+          "bytes": 2488,
+          "sha256": "15167583b1d77f3a1ac2cef2999067f04c99add813a2584db68b30fb4f3d0321"
+        }
+      },
+      {
+        "case": "canonical_certificate",
+        "expected_failure": "Canonical certificate identity",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_canonical_certificate/EXECUTION.json",
+          "bytes": 2446,
+          "sha256": "944a11b636b6bb2003ff2941c6745baccd4c7efda32815c093f83420146c2cdc"
+        }
+      },
+      {
+        "case": "wrapper_trailer",
+        "expected_failure": "Canonical closing wrapper",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_wrapper_trailer/EXECUTION.json",
+          "bytes": 2410,
+          "sha256": "fab3633959aca9bf8dcd52cc20038634828fbd96ff16382adf85e8ef8d055c5f"
+        }
+      },
+      {
+        "case": "source_packet_extra",
+        "expected_failure": "Final packet inventory",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_source_packet_extra/EXECUTION.json",
+          "bytes": 2434,
+          "sha256": "e498fc02e00ec26a8c11c78967ec331c51e55fce0dcee1469a9f022f21131c69"
+        }
+      },
+      {
+        "case": "sole_parent_identity",
+        "expected_failure": "Input identity mismatch",
+        "receipt": {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/preparation_angle_moment_runner_repair/runs/mutation_sole_parent_identity/EXECUTION.json",
+          "bytes": 2441,
+          "sha256": "4e295652366fec44a607848ba8ee9f5ff862925d9dfe38b479cc25c43e14328d"
+        }
+      }
+    ],
+    "baseline_exit": 0,
+    "mutants_rejected": 22,
+    "scientific_programs_run": 0
+  },
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "remaining": [
+    "Independent audit and any later current-main integration remain separate. This is the independent-vacuum, isolated, deterministic angle-only prefix preparation class. Positive angle increments and positive complete reserved pulses do not make the additive delta nY residual positive. Full-reference vector/trace factors, full F0 cross moments, distinct raw/variance constants, sufficient calibration and finite mean sharpness limits remain. Signed net modeled work is not absolute/controller work. Generic faults, native vacuum/quadrature/timing/control, autonomous release/halt and indefinite reuse remain outside scope. Historical failed and successful root metadata attempts are preserved without replay."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-16T18:27:34.540939+00:00",
+  "members": [
+    {
+      "path": "PROPOSED_LEMMAS.md",
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd"
+    },
+    {
+      "path": "author_check.py",
+      "bytes": 4522,
+      "sha256": "45da91b6224d2fdd569a26e84a712ab0eeba1280bbe0f2362fdd391f9eb24831"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 1420,
+      "sha256": "2906985b3fc20e92da279462656010f378600d84ffc6346778e1ee6cccf96996"
+    }
+  ]
+}

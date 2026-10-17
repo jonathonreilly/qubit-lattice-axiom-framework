@@ -1,0 +1,45 @@
+"""Run only explicitly named packaging metadata programs with byte captures."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys,time
+
+D=Path(__file__).resolve().parent
+mode=sys.argv[1]
+assert mode in {'build','inspection'}
+source=D/({'build':'build_packet.py','inspection':'inspect_packet.py'}[mode])
+run=D/'metadata_runs'/mode
+run.mkdir(parents=True,exist_ok=False)
+sha=lambda b:hashlib.sha256(b).hexdigest()
+def pin(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+capture=run/'executed_source.py';capture.write_bytes(source.read_bytes())
+recorder=run/'recorder_at_launch.py';recorder.write_bytes(Path(__file__).read_bytes())
+inputs=[]
+for p in sorted(D.rglob('*')):
+ if p.is_file() and 'metadata_runs' not in p.relative_to(D).parts and p.name not in {'BUILD_RESULT.json','VERIFICATION.json'}:
+  inputs.append(pin(p))
+if mode=='build':
+ N=D.parent
+ for folder,key in [('bus_joint_energy_root_proposal','files'),('bus_joint_energy_independent_check','members'),('bus_joint_energy_root_review','files')]:
+  f=N/folder/'FREEZE.json';inputs.append(pin(f))
+  for row in json.loads(f.read_bytes())[key]:
+   p=Path(row['path']);p=p if p.is_absolute() else N/folder/p;inputs.append(pin(p))
+ for rel in ['strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json','strongly_regular_bus_root_review/FINAL_QUALIFICATIONS.md','publication_integration/strongly_regular_bus/PUBLICATION.json']:
+  inputs.append(pin(N/rel))
+ inputs.append(pin(N.parent/'correlation_worktree/docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md'))
+(run/'INPUT_IDENTITIES_AT_LAUNCH.json').write_text(json.dumps(inputs,indent=2)+'\n')
+argv=[sys.executable,'-B',str(capture),str(D)]
+receipt={'kind':'packaging_metadata_only','argv':argv,'cwd':str(D),'start_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'child_source_at_launch':pin(capture),'original_source_at_launch':pin(source),'recorder':pin(recorder),'input_identities_at_launch':pin(run/'INPUT_IDENTITIES_AT_LAUNCH.json'),'scientific_programs_run':0}
+(run/'LAUNCH.json').write_text(json.dumps(receipt,indent=2)+'\n')
+start=time.monotonic()
+with (run/'stdout').open('wb') as out,(run/'stderr').open('wb') as err:
+ try:
+  result=subprocess.run(argv,cwd=D,stdout=out,stderr=err,timeout=60)
+  receipt.update(exit_code=result.returncode,timed_out=False)
+ except subprocess.TimeoutExpired:
+  receipt.update(exit_code=124,timed_out=True)
+receipt.update(end_utc=datetime.now(timezone.utc).isoformat(),elapsed_seconds=time.monotonic()-start,stdout=pin(run/'stdout'),stderr=pin(run/'stderr'))
+receipt['inputs_unchanged_after_run']=all(pin(Path(r['path']))==r for r in inputs)
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))
+sys.exit(receipt['exit_code'])

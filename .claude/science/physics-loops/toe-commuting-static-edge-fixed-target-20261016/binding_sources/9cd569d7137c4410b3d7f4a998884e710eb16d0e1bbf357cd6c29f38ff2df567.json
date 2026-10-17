@@ -1,0 +1,27 @@
+{
+  "observed_commit": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/057a27d1325bacb1e51291504b2d7c36e93c224d9c6190e749ac33b0dc10aef4.json",
+      "bytes": 1605,
+      "sha256": "057a27d1325bacb1e51291504b2d7c36e93c224d9c6190e749ac33b0dc10aef4"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7.py",
+      "bytes": 63588,
+      "sha256": "01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/606d8ea1c341b569caf234fd6e3a06d9efc5f6d55b34242175460253c2eab5e5.blob",
+      "bytes": 41,
+      "sha256": "606d8ea1c341b569caf234fd6e3a06d9efc5f6d55b34242175460253c2eab5e5"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

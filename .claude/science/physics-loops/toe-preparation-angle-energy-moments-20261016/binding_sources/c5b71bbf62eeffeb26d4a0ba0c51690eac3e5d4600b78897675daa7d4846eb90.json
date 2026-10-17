@@ -1,0 +1,66 @@
+{
+  "kind": "root_qualified_source_publication_review",
+  "utc": "2026-10-16T18:33:41.108024+00:00",
+  "root_read_complete": true,
+  "disposition": "QUALIFIED_SOURCE_INTEGRATION_APPROVED_CANONICAL_CHECKS_PENDING",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/FINAL_FREEZE.json",
+    "bytes": 20808,
+    "sha256": "6c55ee7b38717a52a8784d058d996989eecf6b1e3171bf88adacf168a1a007a3"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 50484,
+    "sha256": "f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5"
+  },
+  "source_validator": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/scripts/preparation_angle_energy_moments_2026_10_16.py",
+    "bytes": 17631,
+    "sha256": "acd213df3c04b213a571042efdb271feb4ac5693eebb0a6bbccb39082a132213"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/proposal/.claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/SOURCE_MANIFEST.json",
+    "bytes": 27162,
+    "sha256": "3e2465e8fb4856f55011a715ec1a922c69da8dad1a59f249a374e07508811504"
+  },
+  "source_wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 7698,
+    "sha256": "dfd9f85fe58db5baf36b01cff31782289b96fec396773a229b4a71a757a41c98"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/REVIEW.md",
+    "bytes": 2995,
+    "sha256": "2c583e959d7cd77da6215fca0b76e5f44062688bfef4e1725b14b072ed262cc2"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_preparation_angle_moment_qualified_publication_review/MECHANICAL_EVIDENCE.json",
+    "bytes": 3158,
+    "sha256": "267b77c5a59018219d434b2445e1a99b7ebc036f93f4fd6f86c016d41e8825a0"
+  },
+  "immutable_bodies": 3,
+  "source_aliases": 45,
+  "archive_objects": 32,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/build/EXECUTION.json",
+      "bytes": 3151,
+      "sha256": "570a65658dfc27238efdc1488451cc2adfaecdefb2d1699e2caf8b958acc4a40"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 3189,
+      "sha256": "9e25e98158a6775badea54860abe9eb43e126edbfdb9fef1c2555938441323b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/metadata_runs/seal/EXECUTION.json",
+      "bytes": 3143,
+      "sha256": "4df30f14c33d258814b2b9521b3ac751e4d404aedea1bac2985157fe89b02ba5"
+    }
+  ],
+  "scientific_executions": 0,
+  "actual_canonical_acceptance": null,
+  "actual_publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

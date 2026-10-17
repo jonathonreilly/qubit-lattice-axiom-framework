@@ -1,0 +1,278 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T21:24:59.833565+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "6788f1d4bec485917038b7aa275b5a1659bacb1e39992034d4a7d287738414fd",
+  "git_base": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+  "base_branch": "physics-loop/toe-positive-onsite-target-compilation-20261016",
+  "source_body_pins": [
+    {
+      "name": "original_author_derivation",
+      "source": "endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+      "container": "docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 8448,
+      "end_byte_exclusive": 29630,
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+    },
+    {
+      "name": "initial_pre_author_analysis",
+      "source": "commuting_target_static_edge_exposed_check/ANALYSIS.md",
+      "container": "docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 29697,
+      "end_byte_exclusive": 47635,
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "name": "complete_exposed_cross_review",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/REVIEW.md",
+      "container": "docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 47704,
+      "end_byte_exclusive": 60131,
+      "bytes": 12427,
+      "sha256": "f05ddd75a45f08abc80ce2831d5e9bcc1366621d402cb7c949f5b23c06c18316"
+    },
+    {
+      "name": "preserved_N1_FAIL_checklist",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "container": "docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 60198,
+      "end_byte_exclusive": 74468,
+      "bytes": 14270,
+      "sha256": "396969a18d95b48232ac679bf80194f4dee11a22a612501372917fd6eedc128b"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 74539,
+      "end_byte_exclusive": 77979,
+      "bytes": 3440,
+      "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "original_author_derivation",
+      "source": "endpoint_finite_quantum_actuator_candidate/DERIVATION.md",
+      "start_byte": 8537,
+      "end_byte_exclusive": 29719,
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+    },
+    {
+      "name": "initial_pre_author_analysis",
+      "source": "commuting_target_static_edge_exposed_check/ANALYSIS.md",
+      "start_byte": 29786,
+      "end_byte_exclusive": 47724,
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "name": "complete_exposed_cross_review",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/REVIEW.md",
+      "start_byte": 47793,
+      "end_byte_exclusive": 60220,
+      "bytes": 12427,
+      "sha256": "f05ddd75a45f08abc80ce2831d5e9bcc1366621d402cb7c949f5b23c06c18316"
+    },
+    {
+      "name": "preserved_N1_FAIL_checklist",
+      "source": "commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "start_byte": 60287,
+      "end_byte_exclusive": 74557,
+      "bytes": 14270,
+      "sha256": "396969a18d95b48232ac679bf80194f4dee11a22a612501372917fd6eedc128b"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 74628,
+      "end_byte_exclusive": 78068,
+      "bytes": 3440,
+      "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "K,W,T are explicit problem data. Self-contained static-edge proof: one new mathematical root and zero direct dependency edges. PR9653 is transport only."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c0f7a24933d585f168b2e724911ef0707126a596daa7495c8db582c4e172fe40.json",
+    "bytes": 43572,
+    "sha256": "c0f7a24933d585f168b2e724911ef0707126a596daa7495c8db582c4e172fe40"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6141045278a5f642b3ba681e634fa0473739fab73f8540f0a811271e9580d4b7.json",
+    "bytes": 2217,
+    "sha256": "6141045278a5f642b3ba681e634fa0473739fab73f8540f0a811271e9580d4b7"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4e70a4b282ba0ca601eaafa3d02b98ab7fc91a41e4f57b05dd6b47d0f3d6caf5.md",
+    "bytes": 78154,
+    "sha256": "4e70a4b282ba0ca601eaafa3d02b98ab7fc91a41e4f57b05dd6b47d0f3d6caf5"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6c26489f58f1f8eefb7af1d1941b01c6f0f3502ce261665c3eef0c5baa9e95b9.json",
+    "bytes": 99654,
+    "sha256": "6c26489f58f1f8eefb7af1d1941b01c6f0f3502ce261665c3eef0c5baa9e95b9"
+  },
+  "source_draft_state": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3faa52f729e44ce3e0668c773a550dc66515da0e150ef390ddea0c7156615bfa.json",
+    "bytes": 547,
+    "sha256": "3faa52f729e44ce3e0668c773a550dc66515da0e150ef390ddea0c7156615bfa"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/8c734556a0ffab117468cbcc993cb95f61ad32bb0b1f123c4ea549fffa182d3b.json",
+      "bytes": 3828,
+      "sha256": "8c734556a0ffab117468cbcc993cb95f61ad32bb0b1f123c4ea549fffa182d3b"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/a873e808effc9938fee1d61c9d06fbe0f8d5de25cd2b0661e4443afb77346936.md",
+      "bytes": 3394,
+      "sha256": "a873e808effc9938fee1d61c9d06fbe0f8d5de25cd2b0661e4443afb77346936"
+    },
+    "evidence": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/30049393e914747d108a77b2764b1da57b6e6103f5071f4a422f5b5a6268f758.json",
+      "bytes": 1316,
+      "sha256": "30049393e914747d108a77b2764b1da57b6e6103f5071f4a422f5b5a6268f758"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c3e413c72d02b7a0ca78f70e89cb298d4dfcaaeee5e83418092f82a201aac6d3.json",
+      "bytes": 516,
+      "sha256": "c3e413c72d02b7a0ca78f70e89cb298d4dfcaaeee5e83418092f82a201aac6d3"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/fcfa38c57b1bbc6b50e5f434fcb0a892c44fb02a7adae5bac3fd1fd0225b4c9c.json",
+      "bytes": 1772,
+      "sha256": "fcfa38c57b1bbc6b50e5f434fcb0a892c44fb02a7adae5bac3fd1fd0225b4c9c"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5ff42f07df150ccc6dce92c340f2b2e723a9a87a4aee8295c228e51836d406ca.blob",
+      "bytes": 571,
+      "sha256": "5ff42f07df150ccc6dce92c340f2b2e723a9a87a4aee8295c228e51836d406ca"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4bc13bc5845f0fcb376f9166150ae5f54d61722a10ecb03fb155084c66d98e24.py",
+      "bytes": 10370,
+      "sha256": "4bc13bc5845f0fcb376f9166150ae5f54d61722a10ecb03fb155084c66d98e24"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe.json",
+      "bytes": 46165,
+      "sha256": "86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3d8d9063235ea59e159451c634c1d7bd111c48216de85f3d9c1240e58b1c85fa.json",
+      "bytes": 2102,
+      "sha256": "3d8d9063235ea59e159451c634c1d7bd111c48216de85f3d9c1240e58b1c85fa"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de.py",
+      "bytes": 11038,
+      "sha256": "71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5d932ed92a3fbfc50200ad336b603479e02040caf97a0a3f508b7795127e0b63.blob",
+      "bytes": 367,
+      "sha256": "5d932ed92a3fbfc50200ad336b603479e02040caf97a0a3f508b7795127e0b63"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9cd569d7137c4410b3d7f4a998884e710eb16d0e1bbf357cd6c29f38ff2df567.json",
+    "bytes": 1465,
+    "sha256": "9cd569d7137c4410b3d7f4a998884e710eb16d0e1bbf357cd6c29f38ff2df567"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9c5ade251b972ef23fc66b79f56e83157a8e021f53e7cab93066720e5516f89c.json",
+      "bytes": 1759,
+      "sha256": "9c5ade251b972ef23fc66b79f56e83157a8e021f53e7cab93066720e5516f89c"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7.py",
+      "bytes": 63588,
+      "sha256": "01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/49c6a3c04f3edcb71e2cfb02a103051956523b10b795fefd383968f598b7af2f.blob",
+      "bytes": 346,
+      "sha256": "49c6a3c04f3edcb71e2cfb02a103051956523b10b795fefd383968f598b7af2f"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-positive-onsite-endpoint-chart-recurrence-20261016",
+      "headRefName": "physics-loop/toe-positive-onsite-target-compilation-20261016",
+      "headRefOid": "8b7b8b4768e2831b273bada5bcebf2b4175583f4",
+      "isDraft": false,
+      "number": 9653,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9653"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/01b686aa6c48c10dd2aebba73979c6bb6afc937715b160fb6af243036315b1e7.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/057a27d1325bacb1e51291504b2d7c36e93c224d9c6190e749ac33b0dc10aef4.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/30049393e914747d108a77b2764b1da57b6e6103f5071f4a422f5b5a6268f758.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3d8d9063235ea59e159451c634c1d7bd111c48216de85f3d9c1240e58b1c85fa.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/3faa52f729e44ce3e0668c773a550dc66515da0e150ef390ddea0c7156615bfa.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/49c6a3c04f3edcb71e2cfb02a103051956523b10b795fefd383968f598b7af2f.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4bc13bc5845f0fcb376f9166150ae5f54d61722a10ecb03fb155084c66d98e24.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/4e70a4b282ba0ca601eaafa3d02b98ab7fc91a41e4f57b05dd6b47d0f3d6caf5.md",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5d932ed92a3fbfc50200ad336b603479e02040caf97a0a3f508b7795127e0b63.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/5ff42f07df150ccc6dce92c340f2b2e723a9a87a4aee8295c228e51836d406ca.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/606d8ea1c341b569caf234fd6e3a06d9efc5f6d55b34242175460253c2eab5e5.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6141045278a5f642b3ba681e634fa0473739fab73f8540f0a811271e9580d4b7.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/6c26489f58f1f8eefb7af1d1941b01c6f0f3502ce261665c3eef0c5baa9e95b9.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/71e4179567fbd4ac2d40d5dc751128c2f6eb25a3949a6ad65e9b2d84ce8773de.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/86944c6cc5ed9274f8fc7c389c1544c4f231b8a714329f8e86ca5ceb8621dcfe.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/8c734556a0ffab117468cbcc993cb95f61ad32bb0b1f123c4ea549fffa182d3b.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9c5ade251b972ef23fc66b79f56e83157a8e021f53e7cab93066720e5516f89c.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/9cd569d7137c4410b3d7f4a998884e710eb16d0e1bbf357cd6c29f38ff2df567.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/a873e808effc9938fee1d61c9d06fbe0f8d5de25cd2b0661e4443afb77346936.md",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c0f7a24933d585f168b2e724911ef0707126a596daa7495c8db582c4e172fe40.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/c3e413c72d02b7a0ca78f70e89cb298d4dfcaaeee5e83418092f82a201aac6d3.json",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/binding_sources/fcfa38c57b1bbc6b50e5f434fcb0a892c44fb02a7adae5bac3fd1fd0225b4c9c.json"
+  ],
+  "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

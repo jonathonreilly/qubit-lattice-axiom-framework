@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-16T18:10:21.938929+00:00",
+  "kind": "source_exposed_analytical_review_record",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/FREEZE.json",
+    "bytes": 513,
+    "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/SOURCE_MANIFEST.json",
+    "bytes": 1444,
+    "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+  },
+  "proposal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 14391,
+    "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+  },
+  "parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/REVIEW.md",
+    "bytes": 19971,
+    "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49"
+  },
+  "exposure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/EXPOSURE.md",
+    "bytes": 2466,
+    "sha256": "bcd78fc50cbafc0564f3ac74803815e3ad96aaeea75d0c37b4842ef6282dd526"
+  },
+  "capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/SOURCE_CAPTURE.json",
+    "bytes": 6816,
+    "sha256": "62a5e99ba53e009c3dbc89aec00ddcfd88f305047ea8ce71142f3da9a3f37680"
+  },
+  "mathematical_observation": "No blocking algebraic defect identified in equations (1)-(7) under the stated model; positive angle versus positive additive operator requires explicit wording clarification",
+  "required_wording_clarification": "Line150: delta is positive and actual Q remains positive; delta nY is indefinite",
+  "quantitative_reuse_limits": [
+    "Equation5 prices raw moments; use equation4 constants for variance",
+    "Sufficient uniform per-angle and higher-moment exponents are not proved necessary by the single-angle mean witness",
+    "Exact vacuum and deterministic angle-only errors are retained"
+  ],
+  "source_proposal_unchanged": true,
+  "scientific_executions": 0,
+  "historical_replays": 0,
+  "metadata_only": true,
+  "root_acceptance": null,
+  "canonical_integration": null,
+  "publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

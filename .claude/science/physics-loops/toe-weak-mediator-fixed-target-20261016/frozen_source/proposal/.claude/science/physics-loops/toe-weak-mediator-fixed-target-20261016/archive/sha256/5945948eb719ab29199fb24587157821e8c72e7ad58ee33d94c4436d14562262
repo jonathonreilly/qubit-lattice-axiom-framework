@@ -1,0 +1,193 @@
+# Fixed m=44 finite coefficient compiler — source only
+
+This separate packet implements the proposed equality-safe algorithm of
+`FINITE_COMPILER_ADDENDUM.md`, SHA256
+`7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8`.
+No scientific compiler execution has occurred. No coefficient list or successful
+certificate is claimed before a separately authorized run. The prior symbolic
+checker and all its frozen sources remain unchanged.
+
+Both cases fix m=44, epsilon=2^-44 and T=2^120. The original uniform-grid
+case uses p=171, n=179 and window 24. A second, explicitly distinct case uses
+port grid p_g=117, source grid p_D=58, n=125 and window 2^68, under the separate
+structured-coefficient proposal 052bcf3f. Both outputs are planned before any
+execution; the second is not a retry or replacement of the original case.
+These are literal source constants, cross-checked against frozen
+`PARAMETERS.json`. There is no generic scientific CLI or adaptive choice.
+The sole scientific CLI argument selects the fresh output directory.
+This runtime differs from the older explicit endpoint-word runtime; no claim
+is made to reproduce that external control word.
+
+## Algorithm and exact certificate
+
+`compile_coefficients.py` uses only Python's standard library, with exact
+`Fraction` coefficients and integer `isqrt`. No float pi, atan, square root,
+SVD, numerical Hamiltonian evolution or historical science import is present.
+For each a in {5,239,7}, the original case forms 179 signed terms and partial sums,
+then one first-omitted signed term. Because n=179 is odd, its sum is the upper
+endpoint and subtracting the next positive magnitude gives the lower endpoint;
+the implementation sorts these exact rationals instead of hard-coding that
+parity conclusion. Every term, partial sum and remainder is emitted exactly.
+
+The Machin/quadrant identities yield the proposed intervals for pi and theta.
+The program checks the rational guards `3<pi_L<pi_U<22/7` and
+`3/4<theta_L<theta_U<1`, along with both width bounds
+`w0=2^-(2p+12)`. The analytic alternating-series remainder and the identities
+themselves remain explicit premises; no finite sum proves them on its own.
+
+Positive interval arithmetic constructs Delta, gy squared and gx squared
+exactly as in the source. The code verifies `3/2<Delta_L<Delta_U<7/4`, positive
+radicands and all proposed width bounds. It then computes the two roots using
+
+    k = isqrt(floor(2^(2p) A/B)), for lower radicand A/B.
+
+For each root, the output includes the quotient, the `isqrt` result and the
+complete integer comparisons certifying
+
+    k^2 B <= 2^(2p) A < (k+1)^2 B,
+    2^(2p) A_upper < (k+2)^2 B_upper.
+
+Together with the analytic enclosure and the nonnegative square-root branch,
+these prove that the emitted k/2^p lies below the true coefficient with error
+strictly less than 2*2^-p. They do not need an equality decision about a true
+transcendental coefficient. The Delta coefficient is checked by the analogous
+integer division bracket at its lower endpoint and the strict `(k+2)` upper
+endpoint guard. All three computed coefficients must be strictly positive.
+
+For each scenario separately, the report emits gxhat, gyhat, Deltahat and the actual reserve
+`rhat=2(gxhat+gyhat)`, each with exact decimal common numerator/denominator,
+reduced hexadecimal rational form, and bit lengths. It emits the actual
+incident loads and exact rational source-phase arguments rhat*T and
+rhat*(T+24). No exponential of those phase arguments is evaluated.
+
+## Conditional Hamiltonian and error scope
+
+The literal old generator remains `K=2I+Z1Z2`. The rounded installed model is
+
+    K + Deltahat (I-|Phi+><Phi+|)
+      + gxhat(I+X1 XA) + gxhat(I+X2 XB)
+      + gyhat(I+Y1 YA) + gyhat(I-Y2 YB).
+
+The source block acts on A-B, and the ports on S1-A and S2-B. The actual reserve
+rhat is already included in the four positive port blocks; it is not a sixth
+added block. The program checks `rhat<2` on each old vertex and
+`Deltahat+rhat<2` on each source vertex. Total old-site incident load includes
+the literal norm-3 K block and is reported as `3+rhat`.
+
+The target remains `W=((9+12i)I+(-16+12i)XX)/25`. Conditional on the proposed
+mediator residual/phase proof, the full comparator for 0<=s<=24 is
+
+    exp(-i(T+s)Hhat) J
+      versus J exp(-irhat(T+s)) exp(-isK) W exp(-iTK),
+    J psi = psi tensor Phi+.
+
+All four output qubits and any arbitrary old reference are retained. The code
+checks the following exact rational error ledger for the original uniform-grid case
+
+    A(T)=12352/2^60+132480/2^120 < epsilon/4,
+    10(T+24)2^-171 < (5/32)epsilon,
+    A(T)+10(T+24)2^-171 < (13/32)epsilon,
+    2[A(T)+10(T+24)2^-171] < epsilon.
+
+The second term is justified analytically by a nonscalar generator defect
+strictly less than 10*2^-171. The retained comparator uses the actual rhat,
+so the scalar reserve is not silently deleted. The norm bounds, Duhamel and
+the reference trace factor 2 are separate analytic premises. This finite
+compiler does not prove the 16-dimensional residual theorem. The initial
+source error can be added only under a product preparation independent of
+the unknown old/reference input, or an explicit full joint initial-state
+error bound. A source marginal alone is insufficient.
+
+The coefficients are mathematical supplied parameters. Prepared Bell input,
+new source/XX/YY port couplings, installation, physical calibration, external
+timing and final reset remain unprovided physical interfaces. Runtime slew is
+zero for the specified static model. A finite quiet window does not establish
+permanent halt or reuse. If energies are E0 times these dimensionless blocks,
+physical runtime is hbar*T/E0; the old K is not rescaled to obtain a cap.
+
+## Separate mixed-grid output
+
+The second scenario implements the separate proposed
+`STRUCTURED_COEFFICIENT_ADDENDUM.md`, SHA256
+`052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395`.
+It constructs fresh 125-term intervals at the fixed maximum grid exponent
+117, applies the root roundings at denominator 2^117 and the Delta rounding
+at denominator 2^58. The same explicit integer upper guards certify port
+errors below 2^-116 and source-coefficient error below 2^-57. It checks the
+actual rounded Delta still exceeds 3/2 and all added incident caps hold.
+The output stores each coefficient with its own denominator; it does not
+pretend that the source and port grids coincide.
+
+This scenario separately assumes the structured three-coefficient proof:
+the rounded residual estimate still holds, and
+
+    ||H2hat-H2|| < 128 h_g/sqrt(T)+256 h_D/T,
+    h_g=2^-116, h_D=2^-57.
+
+These are analytic premises under review, not consequences of this coefficient
+compiler or its integer guards. The code evaluates the associated rational
+upper bounds at the distinct longer window `w=epsilon*T/256=2^68`:
+
+    R(T)=12352/2^60+132096/2^120 < epsilon/4,
+    (T+w)[128 h_g/2^60+256 h_D/T] < epsilon/8,
+    16w/T=epsilon/16.
+
+Their sum is checked below 7epsilon/16, and twice the sum below
+7epsilon/8<epsilon. The source comparator uses this scenario's actual rhat
+and its own coefficients throughout [T,T+2^68]. This sharper ledger is
+restricted to lower replacements of the same three coefficient parameters.
+It is not applied to arbitrary Hamiltonian faults, support/sign changes,
+dissipation or a general control-calibration law. Additional self-adjoint
+fault E outside this family retains its separate `(T+w)||E||` isometry cost.
+
+Both cases are explicit sequential outputs of one execution. Their reports,
+check labels, coefficient lists, window contracts and error ledgers are
+separated by scenario names. If the first or second fails, partial output is
+preserved and the process fails; the second case is not an automatic recovery
+or alternate-target strategy.
+
+## Resource accounting and proposed execution
+
+The original case has exactly 537 summed terms plus three first-omitted
+remainders; the mixed-grid case has 375 summed terms plus three remainders.
+Across both predeclared outputs, there are 912 summed terms, six remainders,
+six final rounding quotients and four integer `isqrt` calls. Each case uses
+three final rounding quotients and two `isqrt` calls after its interval
+construction. These counts exclude rational normalization,
+GCD, internal integer divisions and the internal work of `isqrt`. The code
+separately instruments source-level rational arithmetic/comparisons and guarded
+integer operations. It records maximum observed integer size and maximum
+rational numerator/denominator sizes. Both scenarios preserve before/after
+counter snapshots. The uniform p+1=172-bit coefficient description bound and
+the mixed-grid 118-bit port/59-bit source bounds are not bounds on intermediate
+integer size or total bit complexity.
+No optimality or efficient general parameter-compiler claim follows.
+
+The prospective attempt has a 60-second wall limit, 65536-bit conservative
+integer guards, at most 500000 guarded integer operations and a 16-MiB report
+ceiling. Addition/multiplication sizes are checked before allocation in the
+guarded arithmetic. Exact quotient and `isqrt` operands/results are guarded;
+their internal library steps or implementation-private temporary sizes are
+not individually counted or given a separate hard quota. There is no OS
+CPU or RAM quota. Failure at a guard or timeout is a recorded failure, not
+authorization to retry or increase precision. The term loops are fixed; no
+unbounded convergence or adaptive floor search occurs.
+
+After root reviews this frozen source and supplies a new explicit GO, the
+single proposed command, from this directory, is:
+
+    /opt/homebrew/opt/python@3.13/bin/python3.13 record_one_attempt.py --go-file /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_finite_compiler_proposal/ROOT_GO.md
+
+The recorder creates only `runs/compiler_001`, verifies all prelaunch members,
+captures and executes the source copy with Python `-I -B`, and preserves exact
+argv/cwd, interpreter identity/version, full stdout/stderr, status, elapsed
+wall time and every complete or partial artifact. No retry or alternate target
+is permitted. `output/REPORT.json` is the prospective full coefficient and
+certificate output; no such science result exists at this freeze.
+
+Read `EXPOSURE.md` for lineage and limits, and `SOURCE_MANIFEST.json` for exact
+selected source identities. `PRELAUNCH_FREEZE.json` seals the source-only
+packet. The actual `runs/metadata_001/` receipt records AST parsing, source
+hash verification and snapshot/freeze creation only, without importing or
+executing `compile_coefficients.py`. It is outside the prelaunch freeze to
+avoid self-reference. No canonical, Git, PR, prompt, axiom or lock changed.

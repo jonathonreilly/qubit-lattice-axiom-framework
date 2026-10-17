@@ -1,0 +1,346 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T20:06:51.702721+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8",
+  "git_base": "9d5cd6d2fe59cd95d226e97e3ae818112256c32f",
+  "base_branch": "physics-loop/toe-reflection-preserving-preparation-runner-repair-20261016",
+  "source_body_pins": [
+    {
+      "name": "chart_original_derivation",
+      "source": "endpoint_chart_certificate_candidate/DERIVATION.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 5515,
+      "end_byte_exclusive": 27021,
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "name": "chart_pre_enclosure_reconstruction",
+      "source": "endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 27095,
+      "end_byte_exclusive": 42343,
+      "bytes": 15248,
+      "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+    },
+    {
+      "name": "chart_exposed_review",
+      "source": "endpoint_chart_exposed_check/REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 42403,
+      "end_byte_exclusive": 46791,
+      "bytes": 4388,
+      "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+    },
+    {
+      "name": "chart_complete_code_review",
+      "source": "endpoint_chart_exposed_check/CODE_REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 46857,
+      "end_byte_exclusive": 60776,
+      "bytes": 13919,
+      "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+    },
+    {
+      "name": "chart_controlling_root_qualifications",
+      "source": "endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 60853,
+      "end_byte_exclusive": 67286,
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "name": "recurrence_original_derivation",
+      "source": "endpoint_recurrence_candidate/DERIVATION.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 67356,
+      "end_byte_exclusive": 85076,
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    },
+    {
+      "name": "recurrence_exposed_review",
+      "source": "endpoint_recurrence_exposed_check/REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 85141,
+      "end_byte_exclusive": 89272,
+      "bytes": 4131,
+      "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+    },
+    {
+      "name": "recurrence_complete_analytic_code_review",
+      "source": "endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 89352,
+      "end_byte_exclusive": 106432,
+      "bytes": 17080,
+      "sha256": "5081d935a4d62c855adbb8c2b8060d16a613234e592288347f8441730acc742d"
+    },
+    {
+      "name": "recurrence_controlling_root_qualifications",
+      "source": "endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 106514,
+      "end_byte_exclusive": 112606,
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "name": "chart_original_derivation",
+      "source": "endpoint_chart_certificate_candidate/DERIVATION.md",
+      "start_byte": 5698,
+      "end_byte_exclusive": 27204,
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "name": "chart_pre_enclosure_reconstruction",
+      "source": "endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+      "start_byte": 27278,
+      "end_byte_exclusive": 42526,
+      "bytes": 15248,
+      "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+    },
+    {
+      "name": "chart_exposed_review",
+      "source": "endpoint_chart_exposed_check/REVIEW.md",
+      "start_byte": 42586,
+      "end_byte_exclusive": 46974,
+      "bytes": 4388,
+      "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+    },
+    {
+      "name": "chart_complete_code_review",
+      "source": "endpoint_chart_exposed_check/CODE_REVIEW.md",
+      "start_byte": 47040,
+      "end_byte_exclusive": 60959,
+      "bytes": 13919,
+      "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+    },
+    {
+      "name": "chart_controlling_root_qualifications",
+      "source": "endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 61036,
+      "end_byte_exclusive": 67469,
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "name": "recurrence_original_derivation",
+      "source": "endpoint_recurrence_candidate/DERIVATION.md",
+      "start_byte": 67539,
+      "end_byte_exclusive": 85259,
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    },
+    {
+      "name": "recurrence_exposed_review",
+      "source": "endpoint_recurrence_exposed_check/REVIEW.md",
+      "start_byte": 85324,
+      "end_byte_exclusive": 89455,
+      "bytes": 4131,
+      "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+    },
+    {
+      "name": "recurrence_complete_analytic_code_review",
+      "source": "endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md",
+      "start_byte": 89535,
+      "end_byte_exclusive": 106615,
+      "bytes": 17080,
+      "sha256": "5081d935a4d62c855adbb8c2b8060d16a613234e592288347f8441730acc742d"
+    },
+    {
+      "name": "recurrence_controlling_root_qualifications",
+      "source": "endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 106697,
+      "end_byte_exclusive": 112789,
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_canonical_mathematical_parents",
+    "direct_canonical_parents": [],
+    "git_base": null,
+    "git_ancestry_is_not_mathematical_dependency": true,
+    "scope": "Self-contained chart and recurrence in one note. No direct canonical mathematical parent; exactly one new root and zero new edges."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326.json",
+    "bytes": 58634,
+    "sha256": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df.json",
+    "bytes": 3823,
+    "sha256": "1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb.md",
+    "bytes": 112757,
+    "sha256": "f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2.json",
+    "bytes": 139760,
+    "sha256": "5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2"
+  },
+  "source_draft_state": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982.json",
+    "bytes": 326,
+    "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c.json",
+      "bytes": 4068,
+      "sha256": "9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a.md",
+      "bytes": 2808,
+      "sha256": "dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a"
+    },
+    "evidence": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e.json",
+      "bytes": 1578,
+      "sha256": "6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c.json",
+      "bytes": 516,
+      "sha256": "c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9.json",
+      "bytes": 1780,
+      "sha256": "5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178.blob",
+      "bytes": 579,
+      "sha256": "b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11.py",
+      "bytes": 9377,
+      "sha256": "a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/2349643ea67744333a290f777ec803e8ac7414bf384542f01291579f6afc86e2.json",
+      "bytes": 45535,
+      "sha256": "2349643ea67744333a290f777ec803e8ac7414bf384542f01291579f6afc86e2"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/98019d96251530d9f6b7297a97dd147ede4a49e82c2e739e9b4a7b9cdc527aa1.json",
+      "bytes": 1781,
+      "sha256": "98019d96251530d9f6b7297a97dd147ede4a49e82c2e739e9b4a7b9cdc527aa1"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/62bc457c72a7a852ff875c3b47c9baace28cb6f453a046e4e992918c8c57450a.py",
+      "bytes": 8865,
+      "sha256": "62bc457c72a7a852ff875c3b47c9baace28cb6f453a046e4e992918c8c57450a"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7028247cebd50db3bb53f9a53db3eea01016f8b2d055fd00696b3f92c692ca8b.blob",
+      "bytes": 371,
+      "sha256": "7028247cebd50db3bb53f9a53db3eea01016f8b2d055fd00696b3f92c692ca8b"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9.json",
+    "bytes": 1493,
+    "sha256": "de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19.json",
+      "bytes": 1779,
+      "sha256": "fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461.py",
+      "bytes": 62970,
+      "sha256": "7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a.blob",
+      "bytes": 364,
+      "sha256": "0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "physics-loop/toe-preparation-angle-energy-moments-runner-repair-20261016",
+      "headRefName": "physics-loop/toe-reflection-preserving-preparation-runner-repair-20261016",
+      "headRefOid": "9d5cd6d2fe59cd95d226e97e3ae818112256c32f",
+      "isDraft": false,
+      "number": 9651,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9651"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/0f852d89b515e4d84caad7bbe7b1720d6a477a8602ee3fffdfd0db8a8265f89a.blob",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/1e0048b7c8a5de10d475bc41de61e331a8a74cd55dbdeef60b379c3dc66e95df.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/2349643ea67744333a290f777ec803e8ac7414bf384542f01291579f6afc86e2.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5360f8379644c6022833a2e8f355e0f8feeba35de9177a878fcfc6c4d3bad8b9.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/5cebf1ff0e6b0fe365864a3053c8d0b90db0ee7633f193fa1ae612db90d2c9e2.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/62bc457c72a7a852ff875c3b47c9baace28cb6f453a046e4e992918c8c57450a.py",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/66976fed220839b1cbde5a00cbe7c31648cacd521f2dc93933359068ceb44872.blob",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/6e6bdd0cc3532af56457e1f29dc29b89c8022082b8175eef3c16b87f9e172f9e.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7028247cebd50db3bb53f9a53db3eea01016f8b2d055fd00696b3f92c692ca8b.blob",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/7cf50237e24fa410d36d397be79958cfdf0516c401d72d041267102e0988a461.py",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/98019d96251530d9f6b7297a97dd147ede4a49e82c2e739e9b4a7b9cdc527aa1.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/9e1c630af138b3c4e8a5846f6063ae2ff8f048b23b7d36bb6bb26499b2c3969c.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/a752d47eb72af3f8d6cba6bf2598cec438b016eb5e50bf54ed143555180b1f11.py",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/b60cea54ef6f1f2115e9ce8890d4e93e3e9f2774d74b321a472084dfa3b49178.blob",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/c3c362b26c3598b8da049a11cf26812ddca45a18dd216c7f8c1ff6b5e110f13c.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/dd8231931e69da12c3a0955612bbf597d2043497f5d75f89de5d65521e4b7d4a.md",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/de82404c4be3535a6efe8903782dbf7d4b1d2dceb5b0a4ff925cdf60c47aa5a9.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f1ab062487fab62b1669c7fa7642bd125eb654038d727bfdaea790305037b1fd.json",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb.md",
+    ".claude/science/physics-loops/toe-positive-onsite-endpoint-chart-recurrence-20261016/binding_sources/fe3ce4997d5f9f99aa2891e59d34636a8888ca9b059ca79db5bf7f9a7de88f19.json"
+  ],
+  "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

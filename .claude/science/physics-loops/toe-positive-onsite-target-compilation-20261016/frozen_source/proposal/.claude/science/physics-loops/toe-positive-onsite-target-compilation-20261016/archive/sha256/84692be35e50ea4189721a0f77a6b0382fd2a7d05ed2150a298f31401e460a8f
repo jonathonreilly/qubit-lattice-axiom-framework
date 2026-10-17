@@ -1,0 +1,44 @@
+"""Capture one process, its immutable executable source and full streams."""
+from pathlib import Path
+import datetime, hashlib, json, platform, shutil, subprocess, sys, time
+
+OUT = Path(__file__).resolve().parent
+label, source_name, limit_text, *args = sys.argv[1:]
+source = Path(source_name).resolve()
+limit = int(limit_text)
+assert '/' not in label and source.parent == OUT and limit > 0
+run = OUT / 'runs' / label
+run.mkdir(parents=True, exist_ok=False)
+
+def pin(path):
+    data = path.read_bytes()
+    return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+
+shutil.copyfile(source, run / 'source_at_launch.py')
+shutil.copyfile(Path(__file__), run / 'recorder_at_launch.py')
+argv = [sys.executable, str(run / 'source_at_launch.py')] + args
+start = datetime.datetime.now(datetime.timezone.utc).isoformat()
+launch = {'argv': argv, 'cwd': str(OUT), 'start_utc': start,
+          'python': sys.version, 'executable': pin(Path(sys.executable).resolve()),
+          'platform': platform.platform(), 'wall_timeout_seconds': limit,
+          'cpu_ram_limits': None, 'source_at_launch': pin(run / 'source_at_launch.py'),
+          'original_source': pin(source), 'recorder_at_launch': pin(run / 'recorder_at_launch.py')}
+(run / 'LAUNCH.json').write_text(json.dumps(launch, indent=2) + '\n')
+t0 = time.monotonic()
+timed_out = False
+try:
+    result = subprocess.run(argv, cwd=OUT, capture_output=True, timeout=limit)
+    code, stdout, stderr = result.returncode, result.stdout, result.stderr
+except subprocess.TimeoutExpired as error:
+    timed_out, code = True, None
+    stdout, stderr = error.stdout or b'', error.stderr or b''
+(run / 'stdout').write_bytes(stdout)
+(run / 'stderr').write_bytes(stderr)
+receipt = dict(launch, kind='scientific' if label.startswith('target_') else 'metadata',
+               end_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+               elapsed_seconds=time.monotonic()-t0, timed_out=timed_out, exit_code=code,
+               stdout=pin(run / 'stdout'), stderr=pin(run / 'stderr'))
+(run / 'EXECUTION.json').write_text(json.dumps(receipt, indent=2) + '\n')
+print(json.dumps(receipt, indent=2))
+if code != 0:
+    raise SystemExit(code or 1)

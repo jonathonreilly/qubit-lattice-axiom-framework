@@ -1,0 +1,51 @@
+"""Record root's completed exposed analytical review; metadata only."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1]
+D=N/'product_source_mediator_installation_work_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def read(p):return json.loads(Path(p).read_text())
+def write(p,v):
+ with p.open('x') as f:f.write(json.dumps(v,indent=2)+'\n')
+assert not D.exists()
+selected=[('product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md','47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6'),('product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md','398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f')]
+sources=[]
+for rel,h in selected:
+ r=pin(N/rel);assert r['sha256']==h;sources.append(r)
+packets=[]
+for name,h,rh in [('product_source_mediator_installation_exposed_check','119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1','dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15'),('product_source_mediator_installation_work_exposed_check','f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11','81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a')]:
+ d=N/name;f=read(d/'FREEZE.json');assert pin(d/'FREEZE.json')['sha256']==h and pin(d/'REVIEW.md')['sha256']==rh
+ for row in f['members']:same(d/row['path'],row)
+ e=read(d/'metadata/EXECUTION.json');assert e['exit_code']==0 and not e['timed_out'] and e['scientific_executions']==0 and e['source_unchanged_during_run'] is True
+ assert e['argv'][1:]==['-B',str(d/'inspect_sources.py')] and e['cwd']==str(d) and e['timeout_seconds']==30
+ assert e['started_at']<=e['finished_at'] and (d/'metadata/stderr').read_bytes()==b''
+ assert pin(d/'inspect_sources.py')['sha256']==pin(d/'metadata/executed_source.py')['sha256']==e['source_sha256']
+ assert pin(d/'record_metadata.py')['sha256']==pin(d/'metadata/launcher_source.py')['sha256']==e['launcher_sha256']
+ for row in read(d/'SOURCE_MANIFEST.json')['sources']:
+  same(row['original'],row);same(d/row['capture'],row)
+ packets.append(dict(freeze=pin(d/'FREEZE.json'),review=pin(d/'REVIEW.md'),execution=pin(d/'metadata/EXECUTION.json'),stdout=pin(d/'metadata/stdout'),stderr=pin(d/'metadata/stderr'),original_receipt_fields_preserved=True,scientific_executions=0))
+qualification='''# Root qualification of installation and mean-work extensions
+
+Root accepts the two unchanged arguments as conditional analytical support after reading both complete source-exposed reviews, reconstructing the load-bearing Duhamel/composition and energy-balance arguments, and reviewing the actual metadata sources and receipts. This is not retained audit, blind replication, different-model replication, numerical evolution or executed coefficient compilation.
+
+The old K=2I+ZZ remains literal and continuously installed. Independently initialized |00>, the five positive source Pauli blocks, two XX ports and an exact complementary same-site scalar pair are supplied. Source blocks use one common envelope; ports and scalar use theirs. Unmatched ramps, endpoint calibration errors, absent physical interactions, additional source drift or a source-marginal-only initialization guarantee are not covered. Source initialization is not produced by installing its Hamiltonian.
+
+The piecewise-linear control is absolutely continuous, with incident derivative-norm bounds almost everywhere. It does not establish C1 endpoints, hard bandwidth, autonomous timing or a native waveform source. The literal old norm-three load remains additional to the stated added-load cap. Actual model coefficients and any finer primitive actuator grid remain distinct.
+
+The launch estimate delta=ghat tau_g prices actual generated correlations through a full-joint isometry comparison. It does not replace the actual source by a fresh product state. The source phase kappa=jhat+u/2, port reserve and purposeful lambda scalar are retained; old aging includes the entire installation duration. The displayed L threshold must hold for the actual selected m. An arbitrary small L at fixed m need not satisfy the target error. Exact timing or a usable certified rate model remains a supplied interface.
+
+Mean drive work refers solely to the prescribed closed time-dependent Hamiltonian convention. W_c=kappa, 0<=W_g<=4ghat+lambdahat and |W_g-(2ghat+lambdahat)|<=4ghat^2 tau_g/3 are supported; the stronger positivity lower bound W_g>=lambdahat is an explicitly reviewed optional consequence. Time-dependent identity reserves cannot be omitted from that ledger. This is not apparatus work, fluctuations, thermodynamic recovery or zero-cost preparation.
+
+The actual state after launch is generally correlated. Fresh-product static mean and variance formulas must not be reused as exact post-launch equalities. The work allowance controls the actual complete installed mean; trace estimates give separate conservative moment allowances. Only the actual total static-Hamiltonian moments are then conserved, not old K alone.
+
+These two accepted local extensions stop at entry into the still-coupled static runtime. Final decoupling, externally stopped operation, source reuse, permanent autonomous halt and physical supplier remain separate obligations. The subsequently proposed external-stop addendum is not accepted by this record and is not silently included in the frozen eight-body publication.
+
+Original metadata schemas, absent fields, exact sources and full streams are preserved. The two actual metadata runs only capture source identities; they are not mathematical computations. No editable prompt or physical axiom changed, no science merged, and no main push or audit verdict is authorized by this acceptance.
+'''
+D.mkdir();(D/'QUALIFICATION.md').write_text(qualification)
+write(D/'ACCEPTANCE.json',dict(kind='root_conditional_analytical_acceptance',utc=datetime.now(timezone.utc).isoformat(),sources=sources,review_packets=packets,root_full_changed_arguments_read=True,status='conditional_local_support_publication_pending',qualifications=pin(D/'QUALIFICATION.md'),unaccepted_external_stop=True,independent_check_limits='same-model source-exposed analytical reconstruction; metadata only, not blind or retained',scientific_executions=0,editable_prompt_files_changed=[]))
+write(D/'FREEZE.json',dict(members=[dict(pin(p),path=p.name) for p in sorted(D.iterdir()) if p.is_file()],scope='Completed root acceptance and qualification of two separate local extensions; no publication.'))
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualification=pin(D/'QUALIFICATION.md'),freeze=pin(D/'FREEZE.json'),scientific_executions=0)))

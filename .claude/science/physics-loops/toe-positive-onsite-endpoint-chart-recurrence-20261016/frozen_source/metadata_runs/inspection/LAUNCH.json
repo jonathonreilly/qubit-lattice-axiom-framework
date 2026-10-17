@@ -1,0 +1,38 @@
+{
+  "kind": "publication_packaging_metadata_only",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft",
+  "started_utc": "2026-10-16T19:33:58.727056+00:00",
+  "timeout_seconds": 60,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/executed_source.py",
+    "bytes": 7652,
+    "sha256": "ca386f3f120849c9e046f30461ba8fe96a7beb4a2200ebd5b8ba8f51e9b557a5"
+  },
+  "original_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/inspect_packet.py",
+    "bytes": 7652,
+    "sha256": "ca386f3f120849c9e046f30461ba8fe96a7beb4a2200ebd5b8ba8f51e9b557a5"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/executed_source.py",
+    "bytes": 7652,
+    "sha256": "ca386f3f120849c9e046f30461ba8fe96a7beb4a2200ebd5b8ba8f51e9b557a5"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/recorder_at_launch.py",
+    "bytes": 4401,
+    "sha256": "4245b94d64739103f126d463d64b00e1ae84c4a9b72021d265d131093254a166"
+  },
+  "input_identities_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_recurrence_qualified_publication_draft/metadata_runs/inspection/INPUT_IDENTITIES_AT_LAUNCH.json",
+    "bytes": 78505,
+    "sha256": "eb153f7246538965609e4fb029a9ca9df11a7afdc80efdf543ac3484268a6318"
+  },
+  "scientific_programs_run": 0
+}

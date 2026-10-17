@@ -1,0 +1,38 @@
+"""Metadata-only additive source capture and original-freeze verification."""
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parent
+ORIGINAL = ROOT.parent
+N = ORIGINAL.parent
+SOURCES = [
+    ("product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md", 4274, "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065", "new complete argument"),
+    ("weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md", 4295, "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8", "necessary complete interval construction"),
+    ("weak_mediator_candidate/DYADIC_ADDENDUM.md", 2959, "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517", "additional complete contextual exposure"),
+    ("weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md", 3953, "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395", "additional complete contextual exposure; sharper Bell conclusion not imported"),
+]
+
+def identity(data):
+    return {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+original_freeze = ORIGINAL / "ORIGINAL_FREEZE.json"
+freeze_bytes = original_freeze.read_bytes()
+assert hashlib.sha256(freeze_bytes).hexdigest() == "97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116"
+frozen = json.loads(freeze_bytes)
+for member in frozen["members"]:
+    assert identity((ORIGINAL / member["path"]).read_bytes()) == {k: member[k] for k in ("bytes", "sha256")}, member["path"]
+records = []
+for rel, size, digest, role in SOURCES:
+    original = N / rel
+    data = original.read_bytes()
+    assert identity(data) == {"bytes": size, "sha256": digest}, rel
+    captured = ROOT / "sources" / rel
+    captured.parent.mkdir(parents=True, exist_ok=True)
+    assert not captured.exists()
+    captured.write_bytes(data)
+    assert captured.read_bytes() == data and original.read_bytes() == data
+    records.append({"original": str(original), "capture": str(captured.relative_to(ROOT)), **identity(data), "read_completely": True, "role": role})
+manifest = {"schema": "additive-source-exposed-analytical-review-v1", "renewal_root": str(N), "scientific_executions": 0, "metadata_only": True, "original_freeze": {"path": str(original_freeze), **identity(freeze_bytes), "all_members_unchanged": True}, "sources": records}
+(ROOT / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+print(json.dumps({"status": "SOURCE_IDENTITY_VERIFIED", "sources": len(records), "original_frozen_members_unchanged": len(frozen["members"]), "scientific_executions": 0, "scope": "exact bytes and capture only"}, indent=2))

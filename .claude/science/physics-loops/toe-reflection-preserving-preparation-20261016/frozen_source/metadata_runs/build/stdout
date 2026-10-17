@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-16T18:51:13.638391+00:00",
+  "note": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "note_sha256": "8d9d8abe3c0c9fd8cf8f9b94fd525df9713609f9b06f61a2afa0a55a6f6596b2",
+  "unchanged_bodies": 3,
+  "source_aliases": 68,
+  "unique_archive_objects": 48,
+  "freeze_member_counts": [
+    3,
+    36,
+    2,
+    2
+  ],
+  "input_manifest_sha256": "abe2beea9806371f92fe866711806d1fbb8bc338ab6d22fb2f8a4e1abd145cdf",
+  "scientific_executions": 0,
+  "canonical_execution": null
+}

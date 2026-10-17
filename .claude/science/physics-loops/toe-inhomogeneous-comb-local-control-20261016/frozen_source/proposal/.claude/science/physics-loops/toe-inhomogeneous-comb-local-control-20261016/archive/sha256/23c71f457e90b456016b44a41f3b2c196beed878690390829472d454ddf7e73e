@@ -1,0 +1,59 @@
+{
+  "captured_sources": 25,
+  "scientific_programs_executed": 0,
+  "scope_screens": [
+    {
+      "full_capture": "sources/scope/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER.md",
+      "screen_capture": "ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_SCREEN.txt",
+      "one_based_lines": [
+        1,
+        171
+      ],
+      "screen_sha256": "0e46e9ab2d4f890a9d830d7d92546700d8c2f0436a8c41dc5cf1be0eed1baad7"
+    },
+    {
+      "full_capture": "sources/scope/INTERACTING_CONTROLLER_HISTORY_APPLICATION.md",
+      "screen_capture": "INTERACTING_CONTROLLER_HISTORY_APPLICATION_SCREEN.txt",
+      "one_based_lines": [
+        1,
+        77
+      ],
+      "screen_sha256": "0f0bfd346a505b0898c4598c2f808f133215ab47e0df4d8895a835a80210227b"
+    }
+  ],
+  "skill_identity_checks": [
+    {
+      "skill": "physics-loop",
+      "installed_matches_local_repository_source": true,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "skill": "workhorse",
+      "installed_matches_local_repository_source": true,
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    }
+  ],
+  "exact_parent_acceptance_identities": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/local_control/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 5279,
+      "sha256": "7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509",
+      "read_coverage": "Complete current decision read; conditional status only."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/sparse/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 3678,
+      "sha256": "999446a20afe1516069bdd7abebba103e5cd16be70762c85b221e5d2e75d4cda",
+      "read_coverage": "Complete current decision read; exact full SHA captured here."
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "capture": "sources/sine_preparation/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4509,
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "read_coverage": "Complete current decision read; exact full SHA captured here."
+    }
+  ]
+}

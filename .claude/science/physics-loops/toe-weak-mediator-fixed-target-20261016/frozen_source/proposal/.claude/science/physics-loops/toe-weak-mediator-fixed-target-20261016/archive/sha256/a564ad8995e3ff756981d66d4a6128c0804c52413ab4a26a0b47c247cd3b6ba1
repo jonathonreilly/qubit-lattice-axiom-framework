@@ -1,0 +1,47 @@
+# Read guide — source only
+
+Start with `CHECK_PLAN.md`, which gives the independent reparameterization,
+cleared denominators, full residual, analytic bounds, phase/energy scope,
+two predicted mutants and execution limits. Then inspect
+`check_weak_mediator.py` and the fixed `INPUTS.json`. The mathematical source
+is the original 16-dimensional tensor Hamiltonian; no numerical eigenbasis,
+scientific package or historical runner is used.
+
+`sources/PROPOSAL.md`, `sources/SOURCE_FREEZE.json` and
+`sources/DYADIC_ADDENDUM.md` preserve the exposed root sources. Their exact
+original locations, hashes and read coverage are in `SOURCE_MANIFEST.json`.
+The base proposal's frozen terminology defect remains present; its later
+correction is kept separately. `EXPOSURE.md` controls independence claims.
+
+`PRELAUNCH_FREEZE.json` seals the prospective checker, recorder, input,
+analytical specification and selected source snapshots. The only execution
+performed during preparation of this packet is metadata-only sealing via
+`record_metadata.py`: AST parsing, hashing, copying pinned source bytes and
+writing the manifest/freeze. Its actual receipt and full streams are in
+`runs/metadata_001/`. That directory is outside the prelaunch freeze to avoid
+self-referential hashes. Metadata success is not a scientific result.
+
+There is no authorized scientific launch yet. The future single command,
+only after a fresh explicit root GO recorded in `ROOT_GO.md`, is:
+
+    /opt/homebrew/opt/python@3.13/bin/python3.13 record_one_attempt.py --go-file /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/ROOT_GO.md
+
+Its cwd must be this packet directory. The recorder will verify every frozen
+member, capture source and inputs, and run exactly one `runs/weak_001` attempt
+with a 60-second wall limit. It records the actual interpreter binary/version,
+argv/cwd, source identities, streams, exit/timeout and full or partial output.
+There is no claimed CPU or RAM quota, no retry and no parameter search.
+An existing `runs/weak_001` prevents another attempt. The checker has separate
+explicit arithmetic, polynomial, matrix-product and report-size ceilings.
+
+Expected future artifacts are `runs/weak_001/EXECUTION.json`,
+`source_at_launch/`, `stdout.txt`, `stderr.txt` and `output/REPORT.json`.
+These are prospective names, not evidence that those files or results exist.
+The report will emit all principal polynomial matrices, both complete
+cleared residual sides, all source amplitudes, both mutant defects and exact
+rational bound data. Any failed comparison or ceiling remains in the report
+and full streams. Analytic inequalities and supplied physical permissions
+are explicitly listed as premises not computed.
+
+No canonical source, Git state, PR, audit, lock, prompt or axiom was changed.
+This packet does not include or revalidate the earlier static-edge execution.

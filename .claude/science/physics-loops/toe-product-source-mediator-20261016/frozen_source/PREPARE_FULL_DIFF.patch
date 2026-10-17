@@ -1,0 +1,13 @@
+--- machinery_reference/prepare_sources.py
++++ prepare_sources.py
+@@ -1,8 +1,8 @@
+-"""Capture and adapt the exact current static publication machinery, metadata only."""
++"""Capture and adapt the exact frozen weak-mediator publication machinery, metadata only."""
+ from pathlib import Path
+ import ast,hashlib,json,sys
+ D=Path(sys.argv[1]).resolve();N=D.parent
+-B=N/'commuting_static_edge_qualified_publication_draft'
++B=N/'weak_mediator_qualified_publication_draft'
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def ident(b):return {'bytes':len(b),'sha256':sha(b)}
+ def put(p,b):

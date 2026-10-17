@@ -1,0 +1,58 @@
+"""Record root's analytical/source/actual-evidence disposition; no scientific execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+N=Path(__file__).resolve().parents[1]
+A=N/'endpoint_finite_quantum_actuator_candidate'
+I=N/'commuting_target_static_edge_exposed_check'
+X=I/'author_cross_review'
+C=N/'commuting_static_edge_check_proposal';R=C/'runs/edge_001'
+D=N/'commuting_static_edge_root_review'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def rd(p):return json.loads(Path(p).read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ('bytes','sha256')),str(p)
+def wr(p,x):
+ with Path(p).open('x') as f:f.write(json.dumps(x,indent=2)+'\n')
+frozen=[]
+for root,filename,want in [(A,'FREEZE.json','0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2'),(I,'FREEZE.json','66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce'),(X,'FREEZE.json','25c099e61df3fda1322ed2ed856e0c16773c0f139aebc45887a7560382996a67'),(C,'PRELAUNCH_FREEZE.json','68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67')]:
+ p=root/filename;assert pin(p)['sha256']==want
+ f=rd(p);rows=f.get('members',f.get('files'));assert isinstance(rows,list)
+ for row in rows:same(root/row['path'],row)
+ frozen.append(dict(freeze=pin(p),verified_members=len(rows)))
+e=rd(R/'EXECUTION.json');assert e['scientific_launches']==1 and e['exit_code']==0 and e['timeout'] is False
+assert e['prelaunch_verified'] is True and e['source_unchanged'] is True and e['wall_limit_seconds']==60
+assert e['cpu_quota'] is None and e['ram_quota'] is None
+assert e['start_utc']<=e['end_utc']<=e['recorder_finished_utc'] and e['elapsed_seconds']<60
+assert e['argv'][1:3]==['-I','-B'] and e['argv'][3]==e['executed_source']['path']
+assert e['argv'][5]==e['executed_inputs']['path'] and e['cwd']==str(R)
+for key in ('original_source','executed_source','executed_inputs','go_record'):same(e[key]['path'],e[key])
+assert e['original_source']['sha256']==e['executed_source']['sha256']=='bd4f2a14e7ac591754d1bbfff8c0c5e0bc55db0297a042688fb8762181963821'
+same(R/'recorder_at_launch.py',e['recorder_source'])
+for field,name in [('stdout','stdout.txt'),('stderr','stderr.txt')]:same(R/name,e[field])
+assert (R/'stderr.txt').read_bytes()==b''
+for row in e['artifacts']:same(R/row['path'],row)
+q=rd(R/'output/REPORT.json')
+assert q['source_sha256']==e['executed_source']['sha256'] and q['input_sha256']==e['executed_inputs']['sha256']
+assert len(q['checks'])==60 and all(row['holds'] for row in q['checks'])
+assert q['arithmetic_statistics']==dict(maximum_integer_bits=16241,rational_operations=38343,integer_operations=115492)
+assert q['computed']['coefficient_stage_arithmetic_statistics']['rational_operations']==127
+D.mkdir(exist_ok=False)
+qual="""# Controlling root qualifications: supplied static positive XX edge
+
+Conditional positive result accepted for regular review publication, not retained-audit status. For the fixed two-qubit K=2I+ZZ, fixed full W and fixed T in the source, the explicitly supplied positive edge b(I+XX) realizes the target including scalar phase. The 32-term rational coefficient prescription provides a finite nominal encoding and the stated uniform T-to-T+24 error. The old K is retained literally. This new calibrated XX coupling is an additional interaction permission; it is not supplied by the original four positive onsite rays. No microscopic native actuator, generic compiler, internal clock, Bell/ancilla source, autonomous installation, exact permanent halt or indefinite reuse is established.
+
+Root read the complete author argument and source-only independent analytical reconstructions, all load-bearing checker and recorder code, then actual complete stdout/stderr and receipt. Independent scope is same-model analytical reconstruction before author exposure, followed by exposed comparison. The author had received root formulas. The single exact-rational fixture is author-produced, not an independent scientific replication, and does not compute transcendental exponentials or supply hardware. Its analytic premises remain the alternating atan remainder, Machin identity with the declared branch, finite Hermitian spectral calculus, determinant continuity and isometry-to-unhalved-reference-trace bound.
+
+The actual one attempt ran from20:43:34.657018 to20:43:34.842313 UTC, elapsed0.18528820807114244 seconds, exit0/no timeout under60-second wall limit. It used Python3.13.5, captured executed bytes, full streams and65536-bit guards. Actual maximum integer size16241 bits; coefficient-stage127 rational operations; whole fixture38343 rational and115492 instrumented integer operations. No OS CPU/RAM quota was imposed. The original author/reviewer256MiB and future-run statements remain historical proposals, superseded only by this explicit actual evidence. Sixty assertions are source coverage, not sixty independent scientific results. Large exact report integers are preserved and linked; manual review did not reread every hexadecimal digit.
+
+The restricted constant real X-only family has a valid sector-determinant lower bound12/25, and the omitted-scalar diagnostic has squared full-unitary error16/5. The N1–N8 packet explicitly fails N1: insufficient honest failed approach families and retained authority. Preserve this negative material as partial-attempt-with-named-untested-routes, with its checklist and live escapes; no packet-PASS, broad no-go or retained negative conclusion. This procedural limitation neither invalidates its narrow algebra nor closes the positive onsite supply gap. The review's pre-run N5 absence remains historical, not a denial of the later author fixture.
+
+Full scalar, arbitrary old/reference input, finite quiet window, incident-load accounting, covariance sign and actual-old-aging versus fixed-time comparators remain explicit. Sufficient integrated calibration budgets are not necessary precision thresholds. Runtime dH/dt=0, old-energy conservation, installation energy and unmodeled microscopic expense remain distinct. Optional switched ramps are a separately supplied driven construction, not autonomous halt. No physical axiom, editable prompt, model or retained audit verdict changed.
+"""
+(D/'FINAL_QUALIFICATIONS.md').write_text(qual)
+a=dict(kind='root_conditional_scientific_disposition',utc=datetime.now(timezone.utc).isoformat(),disposition='accept_conditional_positive_supplied_edge_for_regular_review; preserve_negative_N1_FAIL_partial_attempt',root_complete_argument_and_checker_source_read=True,retained_audit=False,source_freezes=frozen,author_derivation=pin(A/'DERIVATION.md'),initial_independent_analysis=pin(I/'ANALYSIS.md'),exposed_review=pin(X/'REVIEW.md'),negative_checklist=pin(X/'NO_GO_DISCIPLINE_CHECKLIST.md'),actual_scientific_execution=pin(R/'EXECUTION.json'),actual_report=pin(R/'output/REPORT.json'),qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),scientific_executions_this_root_record=0,author_scientific_executions=1,independent_scientific_executions=0,editable_prompt_files_changed=[],actual_publication=None)
+wr(D/'ACCEPTANCE.json',a)
+wr(D/'FREEZE.json',dict(members=[dict(pin(p),path=p.name) for p in sorted(D.iterdir()) if p.is_file()],scope='Root disposition and controlling qualifications; actual metadata execution receipt remains outside this freeze.'))
+print(json.dumps(dict(acceptance=pin(D/'ACCEPTANCE.json'),qualifications=pin(D/'FINAL_QUALIFICATIONS.md'),freeze=pin(D/'FREEZE.json'),new_scientific_execution=0)))
+

@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Final metadata validation with captured child execution, then local freeze."""
+import hashlib
+import json
+import resource
+import subprocess
+import sys
+import time
+from datetime import datetime,timezone
+from pathlib import Path
+
+ROOT=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_exposed_check')
+C=ROOT.parent/'interacting_preparation_chronology_candidate'
+def sha(raw): return hashlib.sha256(raw).hexdigest()
+def utc(): return datetime.now(timezone.utc).isoformat()
+def desc(p):
+    raw=p.read_bytes()
+    return {'bytes':len(raw),'sha256':sha(raw)}
+def check(p,h,size=None):
+    r=p.read_bytes()
+    assert sha(r)==h,(str(p),h,sha(r))
+    if size is not None: assert len(r)==size,(str(p),size,len(r))
+    return r
+def limits(): resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+
+def validate():
+    raw=check(ROOT/'SOURCE_MANIFEST.json','e1a160a6fbfcd14aac43a036b951585f143e0184fb3fa54bb15034d8db9e25b9')
+    manifest=json.loads(raw)
+    assert manifest['source_count']==len(manifest['sources'])==26
+    for s in manifest['sources']:
+        original=check(Path(s['source_path']),s['sha256'],s['bytes'])
+        captured=check(ROOT/s['captured_path'],s['sha256'],s['bytes'])
+        assert original==captured
+    frozen=json.loads(check(C/'FREEZE.json','4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f'))
+    assert len(frozen['members'])==39
+    for s in frozen['members']:
+        check(C/s['path'],s['sha256'],s['bytes'])
+    receipt=json.loads((ROOT/'runs/source_capture/EXECUTION.json').read_text())
+    assert receipt['exit_code']==0 and not receipt['timeout']
+    for kind in ('stdout','stderr'):
+        s=receipt['streams'][kind]
+        check(Path(s['path']),s['sha256'],s['bytes'])
+    for actual,saved,key in [('verify_sources.py','source_at_launch.py','source'),
+                             ('record_metadata.py','launcher_at_launch.py','launcher')]:
+        s=receipt[key]
+        check(ROOT/actual,s['sha256'],s['bytes'])
+        check(ROOT/'runs/source_capture'/saved,s['sha256'],s['bytes'])
+    report={
+        'utc':utc(),'status':'metadata identity validation only',
+        'review':desc(ROOT/'REVIEW.md'),'selected_sources_verified':26,
+        'candidate_freeze_members_verified':39,
+        'source_capture_receipt':desc(ROOT/'runs/source_capture/EXECUTION.json'),
+        'complete_streams_and_launch_copies_verified':True,
+        'new_scientific_executions':0,'root_acceptance':None,'canonical_binding':None,
+        'limits':'No theorem, physical apparatus, scientific numerical or interval test performed by this script.'}
+    (ROOT/'FINAL_VALIDATION.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps(report,sort_keys=True))
+
+def capture_and_seal():
+    assert Path.cwd().resolve()==ROOT
+    assert not (ROOT/'FREEZE.json').exists(),'do not rewrite a frozen packet'
+    run=ROOT/'runs/final_validation'
+    assert not run.exists(),'retain all earlier attempts'
+    run.mkdir(parents=True)
+    source=ROOT/'seal_packet.py'
+    launchcopy=run/'source_and_launcher_at_launch.py'
+    launchcopy.write_bytes(source.read_bytes())
+    argv=[sys.executable,'-B',str(launchcopy),'--validate']
+    started=utc()
+    launch={'scope':'final metadata validation only; no science execution',
+        'launcher_orig_argv':sys.orig_argv,'child_argv':argv,'cwd':str(ROOT),
+        'source_and_launcher':{'path':str(launchcopy),**desc(launchcopy)},
+        'cpu_limit_seconds':30,'wall_timeout_seconds':45,'started_utc':started,
+        'python':sys.version}
+    (run/'LAUNCH.json').write_text(json.dumps(launch,indent=2)+'\n')
+    t=time.monotonic()
+    timeout=False
+    try:
+        p=subprocess.run(argv,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
+            timeout=45,preexec_fn=limits,check=False)
+        rc,stdout,stderr=p.returncode,p.stdout,p.stderr
+    except subprocess.TimeoutExpired as e:
+        rc,stdout,stderr=None,e.stdout or b'',e.stderr or b''
+        timeout=True
+    (run/'stdout').write_bytes(stdout)
+    (run/'stderr').write_bytes(stderr)
+    receipt={**launch,'finished_utc':utc(),'elapsed_seconds':time.monotonic()-t,
+        'exit_code':rc,'timeout':timeout,'new_scientific_executions':0,
+        'streams':{name:{'path':str(run/name),**desc(run/name)} for name in ('stdout','stderr')},
+        'source_after':desc(source)}
+    (run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+    sys.stdout.buffer.write(stdout)
+    sys.stderr.buffer.write(stderr)
+    if rc!=0 or timeout: sys.exit(rc if rc is not None else 124)
+    assert desc(source)==desc(launchcopy)
+    members=[]
+    for p in sorted(ROOT.rglob('*')):
+        if p.is_file() and p.name!='FREEZE.json':
+            members.append({'path':str(p.relative_to(ROOT)),**desc(p)})
+        elif p.is_file() and p!=ROOT/'FREEZE.json':
+            # Captured parent freezes are ordinary immutable members too.
+            members.append({'path':str(p.relative_to(ROOT)),**desc(p)})
+    packet={'utc':utc(),'status':'frozen exposed conditional mathematical review; root decision pending',
+        'member_count':len(members),'members':members,
+        'new_scientific_executions':0,'captured_metadata_subprocesses':2,
+        'editable_prompt_files_changed':[],
+        'root_acceptance':None,'canonical_binding':None,'publication':None,'retained_audit':False,
+        'self_exclusion':'Only this top-level FREEZE.json is excluded.'}
+    raw=(json.dumps(packet,indent=2)+'\n').encode()
+    (ROOT/'FREEZE.json').write_bytes(raw)
+    print(json.dumps({'freeze_sha256':sha(raw),'members':len(members),
+        'review':desc(ROOT/'REVIEW.md'),'source_manifest':desc(ROOT/'SOURCE_MANIFEST.json')},sort_keys=True))
+
+if __name__=='__main__':
+    if sys.argv[1:]==['--validate']:
+        validate()
+    else:
+        assert not sys.argv[1:],sys.argv
+        capture_and_seal()

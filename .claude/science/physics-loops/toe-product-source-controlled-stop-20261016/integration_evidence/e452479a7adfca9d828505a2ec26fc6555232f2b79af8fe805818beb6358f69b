@@ -1,0 +1,33 @@
+{
+  "kind": "root_source_wrapper_review",
+  "utc": "2026-10-16T22:29:30.046012+00:00",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_controlled_stop_publication_draft/FINAL_FREEZE.json",
+    "bytes": 13267,
+    "sha256": "6a27f2d74b00ad306ff99dd1e25b7cd92d8c54cb9cce2d6ef6a707463c435802"
+  },
+  "source_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_controlled_stop_publication_draft/proposal/docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 93333,
+    "sha256": "137bdaec6bcfeff047bc31b5467d0d06c076269b5d2e0f6bb991abb9bb3793d6"
+  },
+  "source_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_controlled_stop_publication_draft/proposal/scripts/product_source_controlled_stop_2026_10_16.py",
+    "bytes": 5647,
+    "sha256": "14f998b28da31ab9a6bf8c6cf3221c11904e0248f603cf917b52c356a0de509b"
+  },
+  "base": {
+    "utc": "2026-10-16T22:29:29.963219+00:00",
+    "head": "6cd71718e16ef60505a210ff0a47559970753ab8",
+    "tree": "3870e41eeb21adbd4b61f428432af7988c625db2",
+    "branch": "physics-loop/toe-product-source-mediator-20261016",
+    "origin_main": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+    "instructions": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "disposition": "approve conditional source wrapper and the explicit canonical changes below for milestone integration",
+  "read_coverage": "Complete new wrapper, helper, builders, finalizer, recorder, packet prose and both complete execution receipts/stdout/stderr read. Ten source argument/review/qualification bodies reused by exact hash after prior complete reads and separate root decisions. No truncated substantive argument accepted.",
+  "scientific_executions": 0,
+  "independence": "Four same-model source-exposed analytical reviews; not blind or a retained audit.",
+  "limits": "Exact supplied controls, independent input, arbitrary reference, full scalar and old aging; linear64/C196 thresholds and 4/3 versus36/35 mean-work constants; exact-off persistence only in free-old interaction picture. Residual tail needs separate certified eta. No autonomous halt, apparatus cost, native supplier, exact reset or indefinite reuse.",
+  "editable_prompt_files_changed": []
+}

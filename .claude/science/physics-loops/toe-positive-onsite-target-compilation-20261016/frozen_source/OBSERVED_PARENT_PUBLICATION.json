@@ -1,0 +1,31 @@
+{
+  "kind": "bounded_copy_of_actual_parent_publication_records",
+  "copied_utc": "2026-10-16T20:24:57.609284+00:00",
+  "sources": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/PUBLICATION.json",
+      "copy": "parent_publication_context/PUBLICATION.json",
+      "bytes": 1635,
+      "sha256": "8188b7c44823410479d4a7e1f9f43f2e2a34622151223eeb18c94e95cf55fb16"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/endpoint_chart_recurrence/ATTACHMENT.json",
+      "copy": "parent_publication_context/ATTACHMENT.json",
+      "bytes": 491,
+      "sha256": "04cf236c0cb4f7af03a1d5e75655d1c72de22f73cf57c12c9d5ec5cb12c44161"
+    }
+  ],
+  "parent_pr": 9652,
+  "recorded_head": "4864625c13b2f0cf44eb19ae3114a8cabafc238c",
+  "recorded_tree": "b4f5c3fa4ed26bac3a82838c5275834add14d50f",
+  "recorded_branch": "physics-loop/toe-positive-onsite-endpoint-chart-recurrence-20261016",
+  "parent_note_sha256": "ab8fd20fb48aae14c9ae22df2b38de97755d717131195d0d4ad25f7236d475a8",
+  "scope": "Root-supplied selected transport base, observed from the two exact completed parent records. No fresh remote query, worktree phase, target binding or new approval is implied.",
+  "historical_attachment_pending_text_preserved": true,
+  "separate_actual_attachment_result_present": true,
+  "new_target_current_base_binding": null,
+  "new_source_wrapper_review": null,
+  "new_canonical_review": null,
+  "new_staged_review": null,
+  "new_target_publication": null
+}

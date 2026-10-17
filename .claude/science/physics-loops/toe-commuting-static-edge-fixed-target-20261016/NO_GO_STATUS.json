@@ -1,0 +1,8 @@
+{
+  "packet_status": "FAIL",
+  "N1": "FAIL",
+  "disposition": "partial-attempt-with-named-untested-routes",
+  "narrow_invariant_validity_separate": true,
+  "positive_theorem_separate": true,
+  "new_retained_negative_authority": false
+}

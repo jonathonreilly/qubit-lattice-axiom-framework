@@ -1,0 +1,92 @@
+# One bounded positive recurrence attempt
+
+The parent chart radius r=25/231211008 is a provisional, checked-later
+premise. Parent frozen files are captured and unchanged. No parent selector
+or enclosure is replayed. This new task computes only a fresh endpoint at
+higher precision for a different purpose: a concrete positive recurrence.
+
+One frozen program will (i) enclose the exact 24-slot endpoint afresh, (ii)
+select one positive integer from a bounded five-dimensional lattice reduction
+heuristic, and (iii) certify that single power or preserve its failure.
+No unbounded integer scan, parameter adjustment or automatic retry is allowed.
+
+## Analytic layer before execution
+
+Use the same literal K=diag(3,1,1,3), positive onsite I+X/I+Y rays, rational
+amplitudes and quartic smooth pulses. Retain all scalar terms. There is no
+determinant normalization, centering of eigenphases or projective distance.
+
+Use 8 substeps per slot, degree N=320 and dyadic scale S=2^768. The exact
+shifted coefficients and U recurrence are those derived in the chart note:
+
+    A(z)=-i(K+a psi(x+z)P),
+    (n+1)U_(n+1)=sum_(k=0)^min(4,n) A_k U_(n-k), U_0=I.
+
+The previously derived majorant b(z)=7+32z+64z^2+128z^3+64z^4 remains a
+valid, conservative U-only bound. At R=1/4, its integral is 773/240<4.
+The scalar nonnegative coefficient majorant has value <81. At h=1/8,
+the degree-320 operator tail is therefore delta=81/2^321.
+
+Let Uhat be the exact product of the 192 truncated step polynomials. All
+exact U-only segment propagators are unitary. Exact-suffix telescoping gives
+
+    E_m<=delta sum_(k=0)^(m-1)(1+E_k)
+        <=(1+delta)^m-1<=m delta exp(m delta)<2m delta.
+
+Thus ||Uhat-U0||<=e0=384delta. Interval rounding is separately propagated
+and encloses Uhat itself. All subsequent matrix powers use this same Uhat
+rectangle, with outward rounding at every multiplication.
+
+For any positive n, ||Uhat||<=1+e0 and
+
+    ||Uhat^n-U0^n||<=n e0(1+e0)^(n-1)<=2n e0
+
+provided n e0<1/2 (using e^(1/2)<2). This condition is checked exactly for
+the selected n. The program admits only n<=10^80, but success still requires
+the exact actual inequality, not an asymptotic estimate.
+
+Let the emitted interval power residual enclose Uhat^n-I, and let D^2 be
+the sum of squared maximum absolute real and imaginary endpoints divided
+by S^2. This bounds its Frobenius norm squared, and therefore operator norm
+squared. With eta=2n e0 and positive margin m=r/4-eta, the final decisive
+test is the exact rational strict comparison D^2<m^2. A separate integer
+square-root ceiling also provides an explicit rational total norm bound.
+
+The induction for complex rectangles is the same exact integer endpoint
+arithmetic described in the parent. Sparse Gaussian-rational left products
+use a common denominator and one outward division after exact accumulation.
+General interval matrix multiplication is used only for polynomial-step,
+slot and binary-power products. No floating approximation enters this layer.
+
+## Heuristic layer, not a premise
+
+Use mpmath at 110 decimal digits on the midpoint of the fresh enclosure to
+propose four complete U(4) phase coordinates alpha_j=arg(lambda_j)/(2pi). Form the integer lattice
+with first row [1,round(10^70 alpha_1),...,round(10^70 alpha_4)] and four
+remaining diagonal rows [0,10^70 e_j]. A deterministic exact-Fraction LLL
+style reduction (delta=3/4) is bounded by 10000 loop iterations. Among the
+at most five resulting nonzero first coordinates of magnitude <=10^80,
+choose the positive absolute value with smallest heuristic phase residual.
+This is a bounded selection rule; neither LLL quality nor eigenphase accuracy
+is needed to validate the subsequent direct matrix-power certificate.
+
+The selector writes its full phase/lattice/basis/statistics output before
+power certification. If selection or certification fails, retain that run;
+do not silently increase precision/order, alter the template or choose a
+second candidate. Only the integer n crosses into the rigorous final test.
+
+## Execution and exposure
+
+One new scientific command, 240-second wall limit, no separate CPU or memory
+quota. The recorder captures actual executable source, argv/cwd, Python and
+platform identifiers, timestamps, full streams and exit/timeout. The source
+and captured exact inputs are frozen before launch. Full endpoint intervals,
+heuristic proposal, every binary-power step and final power intervals remain
+on disk. This is same-model source-exposed candidate authorship, not independent
+checking or acceptance. A later separate check must review analytic bounds,
+arithmetic primitives, order, source and emitted intervals.
+
+A successful recurrence has duration 24n in the parent slot units. It is
+not a practical recurrence, target compiler, physical experiment, efficient
+algorithm, or microscopic work/timing supplier. All positive reserves and
+full scalar phase remain in the endpoint used for the certificate.

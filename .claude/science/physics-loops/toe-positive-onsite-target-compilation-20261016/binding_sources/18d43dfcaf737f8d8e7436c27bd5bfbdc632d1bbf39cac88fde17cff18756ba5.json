@@ -1,0 +1,66 @@
+{
+  "new_wrapper_bytes": [
+    0,
+    6584
+  ],
+  "trailing_wrapper_bytes": [
+    72899,
+    73050
+  ],
+  "bodies": [
+    {
+      "name": "original_target_derivation",
+      "source": "endpoint_target_compilation_candidate/DERIVATION.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 6650,
+      "end_byte_exclusive": 20507,
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737"
+    },
+    {
+      "name": "pre_program_analytic_review",
+      "source": "endpoint_target_compilation_exposed_check/REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 20574,
+      "end_byte_exclusive": 38244,
+      "bytes": 17670,
+      "sha256": "b66cca6fa6e02bb93e7a7374a43f4ffee804dca24a5efed9297a75bce02ea845"
+    },
+    {
+      "name": "complete_prelaunch_source_review",
+      "source": "endpoint_target_compilation_exposed_check/program_exposed/REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 38316,
+      "end_byte_exclusive": 50141,
+      "bytes": 11825,
+      "sha256": "686331f66fd406c6a63b6c2332a8e0445cbb4f918c8e6086e238aea092ccfbcd"
+    },
+    {
+      "name": "completed_saved_arithmetic_review",
+      "source": "endpoint_target_compilation_exposed_check/ARITHMETIC_REVIEW.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 50214,
+      "end_byte_exclusive": 60873,
+      "bytes": 10659,
+      "sha256": "864a89b20138cff1a53669e3c07b136d448e37e087ee8549d2722ad212eb7238"
+    },
+    {
+      "name": "saved_arithmetic_coverage",
+      "source": "endpoint_target_compilation_exposed_check/ARITHMETIC_SOURCE_COVERAGE.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 60938,
+      "end_byte_exclusive": 65405,
+      "bytes": 4467,
+      "sha256": "b44ffb18cacd268e5681206a672be306ba9a6c39994fd1c1f2d772edca046683"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "source": "endpoint_target_compilation_root_review/FINAL_QUALIFICATIONS.md",
+      "container": "docs/POSITIVE_ONSITE_TARGET_COMPILATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 65476,
+      "end_byte_exclusive": 72899,
+      "bytes": 7423,
+      "sha256": "3982bea887803282a172ab7dfac449d8f6f01c515b939f30ebe565fbf053295b"
+    }
+  ]
+}

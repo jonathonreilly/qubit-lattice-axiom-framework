@@ -1,0 +1,5 @@
+# Claim status certificate
+
+Current surface: conditional-support, claim type bounded_theorem. Root analytical and fixture decisions are qualified source acceptance, not retained audit. Seven complete arguments/reviews/qualifications remain unchanged. The fixed-q laboratory gate/time count is distinct from classical compiler complexity. Ready input, connected path through all sites, full SWAP, equal gaps, complete outputs, determinant phase, positive reserves, actual calibration and external timing remain supplied.
+
+The finite fixture is one complex128 propagation plus structural route inspection and saved-array reanalysis. It is not independent propagation, interval certification, pulse integration, q>1 coverage or a general executable compiler. Historical failure and unknown cause remain explicit. Original source bindings stay null; actual source/canonical/staged records are separate. No science is rerun by this primary. No microscopic driver, autonomous halt, new preparation composition or indefinite reuse is established.

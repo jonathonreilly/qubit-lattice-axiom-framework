@@ -1,0 +1,68 @@
+"""Source identities and read coverage only; no scientific execution."""
+from datetime import datetime,timezone
+from pathlib import Path
+import hashlib,json,shutil,sys
+
+ROOT=Path(__file__).resolve().parent
+N=ROOT.parent
+W=N.parent/'correlation_worktree'
+SPECS=[
+('interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md','2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e','Complete argument read in immediately preceding check; unchanged exact premise reused.'),
+('interacting_ramp_bridge_root_proposal/FREEZE.json','6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a','Prior full read; identity refresh. Direct original members checked below.'),
+('interacting_ramp_bridge_exposed_check/REVIEW.md','086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794','Self-authored, fully read immediately before prior freeze; unchanged mathematical interface reused, not independent validation.'),
+('interacting_ramp_bridge_exposed_check/FREEZE.json','83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d','Prior author freeze; identity refresh only, no recursive evidence archive or scientific replay.'),
+('interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json','857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa','Complete current-task read; qualified parent decision, not acceptance of this candidate.'),
+('interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md','502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51','Complete current-task read; controlling physical and error qualifications.'),
+('interacting_ramp_bridge_root_review/FREEZE.json','ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4','Complete current-task read. An extra leading e was mistakenly transcribed into the first metadata script from the compact dispatch fragment; failed metadata attempt is preserved. Actual full hash and both independently pinned members checked.'),
+]
+
+def ident(p):
+    b=p.read_bytes();return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+
+records=[]
+for rel,expected,coverage in SPECS:
+    src=N/rel;info=ident(src)
+    assert info['sha256'].startswith(expected),(rel,expected,info)
+    dest=ROOT/'source_snapshot'/rel
+    dest.parent.mkdir(parents=True,exist_ok=True)
+    if dest.exists():assert dest.read_bytes()==src.read_bytes(),str(dest)
+    else:shutil.copyfile(src,dest)
+    records.append({'path':str(src),'snapshot':str(dest.relative_to(ROOT)),**info,'dispatch_identity':expected,'read_coverage':coverage})
+
+direct=[]
+for rel in ['interacting_ramp_bridge_root_proposal/FREEZE.json','interacting_ramp_bridge_root_review/FREEZE.json']:
+    p=N/rel;members=json.loads(p.read_text())['members']
+    for member in members:
+        m=Path(member['path'])
+        if not m.is_absolute():m=p.parent/m
+        got=ident(m)
+        assert got['bytes']==member['bytes'] and got['sha256']==member['sha256'],str(m)
+    direct.append({'freeze':str(p),'members_verified':len(members),'recursive':False})
+
+base=N/'bootstrap/sources/docs/ai_methodology'
+instruction_paths=[base/'SCIENCE_WORKFLOW.md',base/'skills/SKILL_FRESHNESS_CHECK.md',
+base/'skills/physics-loop/SKILL.md',base/'skills/physics-loop/references/DISCOVERY.md',
+base/'skills/physics-loop/references/CLAIM_STATUS.md',base/'skills/physics-loop/references/DELIVERY.md',
+base/'skills/PRIMITIVE_REGISTRY_CHECK.md',W/'docs/audit/data/axiom_premise_nodes.json']
+installed=Path('/Users/jonreilly/.codex/skills/physics-loop/SKILL.md')
+assert installed.read_bytes()==(base/'skills/physics-loop/SKILL.md').read_bytes()
+
+report={'kind':'actual_metadata_only_source_capture','utc':datetime.now(timezone.utc).isoformat(),
+ 'argv':[sys.executable,'-B',str(Path(__file__).resolve())],'cwd':str(Path.cwd()),
+ 'sources':records,'direct_parent_freeze_checks':direct,
+ 'selected_source_snapshots_only':True,'recursive_prior_archive_closure_claimed':False,
+ 'instruction_revision_supplied_by_campaign':'3a4b2c66a1ead7a1c48b4359627e968f681e3c39',
+ 'instruction_identities':[{'path':str(p),**ident(p)} for p in instruction_paths],
+ 'installed_entrypoint_matches_captured_revision':True,
+ 'instruction_scope_override':'Exact bounded source-only dispatch; no Git, lock, audit, PR, canonical or broad campaign mutation.',
+ 'metadata_attempts':[
+  {'attempt':1,'exit_code':1,'source_preserved_after_failure_before_edit':'metadata_attempt1.py','stdout':'METADATA_CHECK.stdout.txt','stderr':'METADATA_CHECK.stderr.txt','failure':'Author transcribed the parent freeze prefix with an extra leading e; actual file matches the parent exact acceptance and qualification members.'},
+  {'attempt':2,'source':'prepare_metadata.py','stdout':'METADATA_CHECK_2.stdout.txt','stderr':'METADATA_CHECK_2.stderr.txt','action':'Use observed full freeze hash and check both exact pinned member identities.'}],
+ 'new_scientific_executions':0,'old_scientific_replays':0,'new_external_science_sources':0,
+ 'source_exposed':True,'same_model':True,'shared_parent_author':True,
+ 'separate_check':'pending','root_acceptance':None,'publication':None,'retained_audit':False,
+ 'editable_prompt_files_changed':[],'parents_mutated':[]}
+(ROOT/'SOURCE_MANIFEST.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({'kind':report['kind'],'utc':report['utc'],'source_identities_verified':len(records),
+ 'direct_parent_members_verified':sum(x['members_verified'] for x in direct),'science_executions':0,
+ 'root_freeze':records[-1],'manifest':ident(ROOT/'SOURCE_MANIFEST.json')},indent=2))

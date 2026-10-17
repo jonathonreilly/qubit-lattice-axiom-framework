@@ -1,0 +1,7 @@
+# Root authorization for one bounded symbolic check
+
+Root read the complete CHECK_PLAN, EXPOSURE, INPUTS, scientific source and recorder, and verified all13 frozen members before this authorization. The fixed source is check_weak_mediator.py20204bytes SHA4ab8eb09b0b01e34243d40d3e28a69fea54be7f94084de5143afc8ab974e2eab; recorder5703bytes SHAae6bec328a78d383fbadc90d7491c9fde0816ef5a3a56e98ea92525a14c4fd87; inputs755bytes SHA6c6e984010cf2f4f8cbdf03a2ee7982c54f96896545590e2c7f3cbc5340a4bf8. Prelaunch freeze986fd5995dbe87b4fb2fc24033819136ab66af0dc0e7e7448594a47cff4bb889 remains immutable.
+
+GO for exactly one runs/weak_001 execution through that recorder with60-second wall limit and the unchanged arithmetic, matrix, polynomial and report ceilings. No OSCPU/RAM quota is claimed. Preserve actual source/input/recorder/interpreter/argv/cwd, all output and any failure. No automatic repair, retry, parameter expansion, external dynamics solver or scientific import is authorized.
+
+This check targets the exposed ideal polynomial identities and fixed-T rational error budgets. It does not compute transcendental coefficients, prove analytic propagation/trace facts, test the later scaling or finite-compiler addenda, identify native coupling supply, or confer scientific acceptance/publication/audit status. Same selected model and reasoning effort are retained. The full scalar source phase, added-only caps and all four outputs remain explicit.

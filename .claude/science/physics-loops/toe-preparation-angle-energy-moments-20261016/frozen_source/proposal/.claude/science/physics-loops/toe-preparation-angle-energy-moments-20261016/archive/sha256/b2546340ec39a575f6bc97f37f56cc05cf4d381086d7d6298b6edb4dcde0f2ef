@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-16T17:56:59.123699+00:00",
+  "status": "proposed_pending_separate_check",
+  "members": [
+    {
+      "path": "PROPOSED_LEMMAS.md",
+      "bytes": 14391,
+      "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 1444,
+      "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+    }
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "canonical_publication": null
+}

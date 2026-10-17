@@ -1,0 +1,5 @@
+# Separate addendum checkpoint
+
+Analytic review complete. No defect found in the finite interval maps, width constants, equality-safe floor/isqrt construction, positive lower coefficients, retained actual scalar phase or 8h full-generator defect. The addendum resolves finite compilation as a terminating exact-rational algorithm, without any executed list, runtime or bit-complexity claim. All initial-state, control-permission, preparation/installation, calibration/timing and reuse qualifications persist.
+
+The original main review/freeze remain unchanged. Final step is exact metadata capture/verification and this subpacket's own immutable freeze. Root decides acceptance; no science execution or publication has occurred here.

@@ -1,0 +1,193 @@
+{
+  "kind": "source_integrity_and_metadata_mutants_only",
+  "checked": {
+    "note_sha256": "f3ae7c5d37c1aa1b0d26c2291550fb5640d070dac4ae0a308be34bcd891a1aeb",
+    "body_count": 9,
+    "source_aliases": 231,
+    "archive_objects": 148,
+    "original_receipts": 24,
+    "new_scientific_executions": 0
+  },
+  "direct_original_interval_comparison": true,
+  "scoped_metadata_mutants": [
+    {
+      "name": "unbound_canonical_refusal",
+      "rejected": true,
+      "reason": "UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending"
+    },
+    {
+      "name": "altered_original_body",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_chart_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_recurrence_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "missing_original_power_trace",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_original_power_trace"
+    },
+    {
+      "name": "missing_original_science_capture",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_original_science_capture"
+    },
+    {
+      "name": "missing_complete_chart_stdout",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_complete_chart_stdout"
+    },
+    {
+      "name": "altered_direct_parent_binding",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "invented_future_approval",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    }
+  ],
+  "direct_receipt_predicate_mutants": [
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Original exit status preserved"
+    },
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original full argv"
+    },
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "capture_path",
+      "rejected": true,
+      "reason": "Actually launched captured source path"
+    },
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "source_hash",
+      "rejected": true,
+      "reason": "Original/executed source identity"
+    },
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "missing_stderr",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "endpoint_chart_certificate_candidate/runs/enclosure_001/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Actual execution chronology"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Original exit status preserved"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original full argv"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "capture_path",
+      "rejected": true,
+      "reason": "Actually launched captured source path"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "source_hash",
+      "rejected": true,
+      "reason": "Original/executed source identity"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "missing_stderr",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "endpoint_recurrence_exposed_check/scoped_runs/saved_trace_001/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Actual execution chronology"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "exit_code",
+      "rejected": true,
+      "reason": "Original exit status preserved"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "argv",
+      "rejected": true,
+      "reason": "Exact original full argv"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "capture_path",
+      "rejected": true,
+      "reason": "Original source and executed capture remain distinct"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "source_hash",
+      "rejected": true,
+      "reason": "Original/executed source identity"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "missing_stderr",
+      "rejected": true,
+      "reason": "Missing complete stderr"
+    },
+    {
+      "receipt": "runs/endpoint_recurrence_acceptance/EXECUTION.json",
+      "mutation": "chronology",
+      "rejected": true,
+      "reason": "Actual execution chronology"
+    }
+  ],
+  "default_refusal": {
+    "proposed_copy_entrypoint_refused": true,
+    "reason": "UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending",
+    "canonical_file_executed": false
+  },
+  "graph_parser_primary_resolution": {
+    "parser_sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e",
+    "functions": [
+      "extract_runner",
+      "first_runner_path",
+      "normalize_runner_path",
+      "runner_paths"
+    ],
+    "resolved_primary": "scripts/positive_onsite_endpoint_chart_recurrence_2026_10_16.py",
+    "proposal_tree_only": true,
+    "graph_build_executed": false,
+    "canonical_graph_written": false
+  },
+  "function_rows": 23,
+  "exact_source_function_reuses": 16,
+  "mathematics_tested_by_this_execution": false,
+  "historical_scientific_replays": 0,
+  "canonical_primary_execution": null,
+  "root_source_wrapper_review": null
+}

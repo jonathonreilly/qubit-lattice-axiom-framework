@@ -1,0 +1,162 @@
+{
+  "utc": "2026-10-16T21:21:33.228490+00:00",
+  "scope": "One completed fixed two-scenario exact coefficient compiler with all original source, metadata, receipt and full streams; no replay.",
+  "scientific_launches": 1,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1508,
+      "sha256": "4e9bf9f99da1dacced201e5c1f0f1250171ad2595f0db7f8eacdc855c9ce8823"
+    },
+    {
+      "path": "EXPOSURE.md",
+      "bytes": 3249,
+      "sha256": "9110060f5b04ab08da339b8dd4337f77490e4b66cdde484cabbbcb54099dfa1b"
+    },
+    {
+      "path": "PARAMETERS.json",
+      "bytes": 799,
+      "sha256": "3186e024ab84f2df95da2c91c29cf575912042f69d36e8904ef907e91bf52a52"
+    },
+    {
+      "path": "PRELAUNCH_FREEZE.json",
+      "bytes": 2410,
+      "sha256": "418458ae2fd6ecec19320cc79240756b97fa116629badb701a0672ee2e720bc0"
+    },
+    {
+      "path": "READ_GUIDE.md",
+      "bytes": 10745,
+      "sha256": "5945948eb719ab29199fb24587157821e8c72e7ad58ee33d94c4436d14562262"
+    },
+    {
+      "path": "ROOT_GO.md",
+      "bytes": 1524,
+      "sha256": "359a9f3170b3d77b4e2a776cf8359c074df37424c79c72d831751514b4cd27b6"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4157,
+      "sha256": "9de3992565cc1842aaa2791269711603d22f54bbcb87c3a4dd9a06d9056a9159"
+    },
+    {
+      "path": "compile_coefficients.py",
+      "bytes": 20971,
+      "sha256": "f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1956,
+      "sha256": "b65dd790bb97f3a6717dd605ed6d79c6edd884b4a0c6be9d474d9a75adc9e9cc"
+    },
+    {
+      "path": "record_one_attempt.py",
+      "bytes": 5717,
+      "sha256": "d24a03376c49f22f385aa569d62d67a9cd685eda4a28201977a537c68f6fb61d"
+    },
+    {
+      "path": "runs/compiler_001/EXECUTION.json",
+      "bytes": 4917,
+      "sha256": "6401cdf28fab79fe669d2d5dd2a1e4d502e1607e2e860d0dbe3fcd853989b186"
+    },
+    {
+      "path": "runs/compiler_001/PRELAUNCH_FREEZE_at_launch.json",
+      "bytes": 2410,
+      "sha256": "418458ae2fd6ecec19320cc79240756b97fa116629badb701a0672ee2e720bc0"
+    },
+    {
+      "path": "runs/compiler_001/PRELAUNCH_VERIFICATION.json",
+      "bytes": 2347,
+      "sha256": "82ee450e1f4b6814235ef3942a1a3b4f8cf7db5f09234daabc7ea1ce95ef42ed"
+    },
+    {
+      "path": "runs/compiler_001/ROOT_GO_at_launch.md",
+      "bytes": 1524,
+      "sha256": "359a9f3170b3d77b4e2a776cf8359c074df37424c79c72d831751514b4cd27b6"
+    },
+    {
+      "path": "runs/compiler_001/output/REPORT.json",
+      "bytes": 1188206,
+      "sha256": "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564"
+    },
+    {
+      "path": "runs/compiler_001/recorder_at_launch.py",
+      "bytes": 5717,
+      "sha256": "d24a03376c49f22f385aa569d62d67a9cd685eda4a28201977a537c68f6fb61d"
+    },
+    {
+      "path": "runs/compiler_001/source_at_launch/PARAMETERS.json",
+      "bytes": 799,
+      "sha256": "3186e024ab84f2df95da2c91c29cf575912042f69d36e8904ef907e91bf52a52"
+    },
+    {
+      "path": "runs/compiler_001/source_at_launch/compile_coefficients.py",
+      "bytes": 20971,
+      "sha256": "f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14"
+    },
+    {
+      "path": "runs/compiler_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/compiler_001/stdout.txt",
+      "bytes": 7917,
+      "sha256": "971e26f86aa647887ca02a4cae333c75d1fccbaa9a57ef9687777c29fd704fd1"
+    },
+    {
+      "path": "runs/metadata_001/EXECUTION.json",
+      "bytes": 1176,
+      "sha256": "f1fb7f56881bb11eac5cc3e84f14c02603f502fabb6214b97b01d8cde4370c3e"
+    },
+    {
+      "path": "runs/metadata_001/recorder_at_launch.py",
+      "bytes": 1956,
+      "sha256": "b65dd790bb97f3a6717dd605ed6d79c6edd884b4a0c6be9d474d9a75adc9e9cc"
+    },
+    {
+      "path": "runs/metadata_001/source_at_launch.py",
+      "bytes": 3923,
+      "sha256": "29ec74f83e2f1d6ecb91771c78477b45427a430d3e55ae3165d90e7cee7ded21"
+    },
+    {
+      "path": "runs/metadata_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/metadata_001/stdout.txt",
+      "bytes": 334,
+      "sha256": "3c7333e3a44b2592358fbc9286341d274a64a20022d54f285f6c5c5075a7301d"
+    },
+    {
+      "path": "seal_metadata.py",
+      "bytes": 3923,
+      "sha256": "29ec74f83e2f1d6ecb91771c78477b45427a430d3e55ae3165d90e7cee7ded21"
+    },
+    {
+      "path": "sources/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517"
+    },
+    {
+      "path": "sources/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4295,
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8"
+    },
+    {
+      "path": "sources/PROPOSAL.md",
+      "bytes": 5883,
+      "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b"
+    },
+    {
+      "path": "sources/SCALING_ADDENDUM.md",
+      "bytes": 3405,
+      "sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda"
+    },
+    {
+      "path": "sources/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "bytes": 3953,
+      "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395"
+    }
+  ]
+}

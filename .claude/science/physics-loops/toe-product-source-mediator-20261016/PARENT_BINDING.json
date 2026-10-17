@@ -1,0 +1,14 @@
+{
+  "kind": "exact_canonical_mathematical_parents",
+  "direct_canonical_parents": [
+    {
+      "path": "docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 118368,
+      "sha256": "b3df6a2b7ead5e12dc76c273ceca26db0baf7b7ffcfd7bf98403f16306acac05"
+    }
+  ],
+  "git_base": null,
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "physical_Bell_permissions_imported": false,
+  "scope": "Only exact corrector/residual and equality-safe finite-atan machinery. Expected bytes come from the frozen weak-mediator proposal; prepare must verify the actual installed canonical note and existing graph node. Bell controls and its structured-precision/reuse constants are not product premises."
+}

@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/product_source_controlled_stop_2026_10_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"scope\": \"source identities and historical metadata only; not proof or scientific execution\",\n  \"bodies\": 10,\n  \"evidence_aliases\": 59,\n  \"selected_freeze_members\": 107,\n  \"historical_metadata_runs\": 6,\n  \"scientific_executions\": 0,\n  \"wrapper_root_approval\": null,\n  \"canonical_execution\": null,\n  \"publication\": null,\n  \"metadata_verification\": \"verified\"\n}\n",
+  "stderr": "",
+  "elapsed_sec": 0.13240385055541992,
+  "timeout_sec": 60,
+  "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/product_source_controlled_stop_2026_10_16.txt"
+}

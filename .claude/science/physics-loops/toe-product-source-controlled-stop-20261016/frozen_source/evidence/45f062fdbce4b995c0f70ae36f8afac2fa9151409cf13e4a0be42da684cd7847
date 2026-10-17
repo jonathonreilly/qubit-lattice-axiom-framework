@@ -1,0 +1,87 @@
+{
+  "kind": "root_conditional_analytical_acceptance",
+  "utc": "2026-10-16T22:13:04.509596+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    }
+  ],
+  "review_packets": [
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/FREEZE.json",
+        "bytes": 3377,
+        "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+      },
+      "review": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/REVIEW.md",
+        "bytes": 14347,
+        "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/EXECUTION.json",
+        "bytes": 909,
+        "sha256": "91974646449a8e6399275cbf4a019fe51151b3fcbd065b801612872c63763492"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/stdout",
+        "bytes": 197,
+        "sha256": "e62749facb62241aeffe864034a06dcf0ee0ee7d8af27ea4544b033d0d77f9d3"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_exposed_check/metadata/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "original_receipt_fields_preserved": true,
+      "scientific_executions": 0
+    },
+    {
+      "freeze": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+        "bytes": 4358,
+        "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+      },
+      "review": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/REVIEW.md",
+        "bytes": 11562,
+        "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+      },
+      "execution": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/EXECUTION.json",
+        "bytes": 919,
+        "sha256": "f839daba89b84304804fa377e4c40d840f878573bed656541395e889b77fd729"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/stdout",
+        "bytes": 1074,
+        "sha256": "5956bd6666a7bc21c79148ba2d8f01f8a3828f204d6ca0c87c78d78ffc0fd285"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_exposed_check/metadata/stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "original_receipt_fields_preserved": true,
+      "scientific_executions": 0
+    }
+  ],
+  "root_full_changed_arguments_read": true,
+  "status": "conditional_local_support_publication_pending",
+  "qualifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_installation_work_root_review/QUALIFICATION.md",
+    "bytes": 3392,
+    "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+  },
+  "unaccepted_external_stop": true,
+  "independent_check_limits": "same-model source-exposed analytical reconstruction; metadata only, not blind or retained",
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": []
+}

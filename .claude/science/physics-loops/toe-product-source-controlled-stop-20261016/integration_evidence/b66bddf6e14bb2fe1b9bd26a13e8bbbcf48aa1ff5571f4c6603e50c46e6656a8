@@ -1,0 +1,11 @@
+--- initial_canonical_note
++++ qualified_canonical_note
+@@ -40,7 +40,7 @@
+ 
+ Put A_T=8+16/sqrt(T). The sufficient linear condition L>=64*A_T/(epsilon*T), or C1 condition L>=96*A_T/(epsilon*T), yields delta<epsilon/64, isometry error<epsilon/4 and unhalved complete trace error<epsilon/2. Check the condition for the selected m and L. Every fixed positive L eventually meets it along the stated family, with the larger runtime, complete ramp durations and coefficient precision retained. For C1, delta=max(b,3b(b+c)/L); the fixed minimum duration is compatible with b<epsilon/32768. No polynomial synthesis or favorable runtime claim follows.
+ 
+-At exact final zero added controls, the endpoint Hamiltonian is K with zero source drift. Common later free-old evolution preserves the bound for every later v>=0, with the comparator's left old factor exp[-i(tau+s+v)K]. This is a persistent operation in the free-old interaction picture, not a stationary state, autonomous halt, exact source reset, or indefinite reuse. A full initial-state error needs its own budget. A small source-marginal error alone does not control arbitrary initial correlations.
++At exact final zero added controls, the endpoint Hamiltonian is K with zero source drift. Common later free-old evolution preserves the bound for every later v>=0, with the comparator's left old factor exp[-i(tau+s+v)K]. This is a persistent operation in the free-old interaction picture, not a stationary state, autonomous halt, exact source reset, or indefinite reuse. A full initial-state error needs its own budget. A source-marginal error cannot be substituted for the required full-joint budget without a separate conversion bound.
+ 
+ ## Prescribed signed mean work
+ 

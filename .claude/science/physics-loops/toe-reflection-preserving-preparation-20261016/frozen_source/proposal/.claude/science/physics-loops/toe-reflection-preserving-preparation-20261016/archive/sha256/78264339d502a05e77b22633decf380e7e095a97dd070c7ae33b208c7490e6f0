@@ -1,0 +1,12 @@
+{
+  "source_records": 16,
+  "original_distinct_files": 13,
+  "proposal_freeze_members_verified": 3,
+  "existing_author_receipts_verified": 1,
+  "reviewer_scientific_runs": 0,
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/reflection_preparation_exposed_check/SOURCE_MANIFEST.json",
+    "bytes": 15399,
+    "sha256": "6ffea8e98853e6b921156b50a64320ffe2370da3ecea7603a4979e970fc3895d"
+  }
+}

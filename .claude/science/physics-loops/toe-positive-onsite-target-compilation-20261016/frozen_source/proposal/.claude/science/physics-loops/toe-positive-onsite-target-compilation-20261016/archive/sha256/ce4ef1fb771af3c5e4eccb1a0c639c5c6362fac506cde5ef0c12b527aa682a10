@@ -1,0 +1,453 @@
+{
+  "functions": [
+    {
+      "file": "check_saved_evidence.py",
+      "name": "require",
+      "start_line": 38,
+      "end_line": 40,
+      "bytes": 79,
+      "sha256": "7bbb0b36219cdf8ede14e8b52da0ed34144e000a574a7a10c96ce8eefcf65fdc"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "pin",
+      "start_line": 43,
+      "end_line": 45,
+      "bytes": 146,
+      "sha256": "883982a2afb1901db40aa566c62a2cd8f83c93c8407c0a8abda67170f14c9844"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "same",
+      "start_line": 48,
+      "end_line": 50,
+      "bytes": 139,
+      "sha256": "5283c6c5842205a8b3bed0c5f5ab54f45a22a5bdf0399abae07da619fbcb2e89"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "load",
+      "start_line": 53,
+      "end_line": 54,
+      "bytes": 62,
+      "sha256": "3c0bc764b79f19918a88e7b099c0ebb2eeba52f05e8d8e1b54a0e6c3452ef51e"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "write",
+      "start_line": 57,
+      "end_line": 58,
+      "bytes": 83,
+      "sha256": "04296400d750653acfe9e775acd1acedbf93fd2daf95d7830a78d592039134c5"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "rational",
+      "start_line": 61,
+      "end_line": 64,
+      "bytes": 271,
+      "sha256": "54ff77a9459763dc431b3aa7261d9f7e2e99e68b74fa2afee44296190dfb86d2"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "rational_list",
+      "start_line": 67,
+      "end_line": 68,
+      "bytes": 64,
+      "sha256": "8dbc2e8a86b4d23088bc39a85c7c96cae11e5b847e6370fa17c2377ca1d586e3"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "record_fraction",
+      "start_line": 71,
+      "end_line": 72,
+      "bytes": 89,
+      "sha256": "304a1bb1f93de26e8a6083f99f4219a8a534fbada77f9080815feed022cb98f2"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "floor_fraction",
+      "start_line": 75,
+      "end_line": 76,
+      "bytes": 61,
+      "sha256": "910711173146f3b52ef8fc5047d748ec67ae9520881c5588b5644d3b42ac7883"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "ceil_fraction",
+      "start_line": 79,
+      "end_line": 80,
+      "bytes": 53,
+      "sha256": "f7b1c978ae8e493e1a2232ce08c6ad3302fac070af2fe82f5d7e87f7b2002c8e"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "nearest_fraction",
+      "start_line": 83,
+      "end_line": 84,
+      "bytes": 61,
+      "sha256": "250a90bd235d76720c156f89ec55e9f8fa7a2232a1b480ed86f4f01099e4678a"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_interval",
+      "start_line": 87,
+      "end_line": 88,
+      "bytes": 94,
+      "sha256": "b558ad993d990144f4e3ccde6ea7bf7a662bd8d8e718bf234b6e185363c6c104"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_add",
+      "start_line": 91,
+      "end_line": 92,
+      "bytes": 52,
+      "sha256": "3357b4286c1ca8930c76446c934b012d91bc680704749631ebdbb9b4c4b3ae77"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_neg",
+      "start_line": 95,
+      "end_line": 96,
+      "bytes": 42,
+      "sha256": "b0828bc1dc7b7de22e56496f6872e2461c2af86513b2fb334123a43c403549d4"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_sub",
+      "start_line": 99,
+      "end_line": 100,
+      "bytes": 54,
+      "sha256": "e9f9a07f649774a4c5adef85751f1885286e93f66cbebc40272df5dbdceb1ced"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_scale",
+      "start_line": 103,
+      "end_line": 104,
+      "bytes": 75,
+      "sha256": "26cc5c5ad126d2ec5d3ba44e0ad5fc5bd68d510cbb915eccdcc4525ccd31a9be"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "real_product",
+      "start_line": 107,
+      "end_line": 108,
+      "bytes": 89,
+      "sha256": "7ac6be1edecc9e8c83fe0b78b2f980ee021624515ba526d89a7d6e0714cadc97"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "snap",
+      "start_line": 111,
+      "end_line": 112,
+      "bytes": 135,
+      "sha256": "c5f045779f673b720976faac038fbf9c4cf19b27ffce0823f35db8c9980f16ce"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "exact_complex",
+      "start_line": 115,
+      "end_line": 116,
+      "bytes": 98,
+      "sha256": "79cf70c9980a94662acc5d5cfceb299c76c49872284fa17c339827c25f6a368e"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "complex_add",
+      "start_line": 122,
+      "end_line": 123,
+      "bytes": 75,
+      "sha256": "0b0262aa7e32c2309fb0680efa242bc8f5316b64fe8fb84bb9b93884317a7132"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "complex_sub",
+      "start_line": 126,
+      "end_line": 127,
+      "bytes": 75,
+      "sha256": "716b177e9c21ca5bdbf9a0ce618576b4344e87e67dd7246c997dc8d5e1fc996c"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "complex_product",
+      "start_line": 130,
+      "end_line": 133,
+      "bytes": 195,
+      "sha256": "c770e2b5488601803ef405db81687b0dda066d50ecf61f934b5abcfd9b73ba82"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "gaussian_scale",
+      "start_line": 136,
+      "end_line": 138,
+      "bytes": 149,
+      "sha256": "c99586dab9ebcd9a6df9bc7730c696fb9462364940bd2f7d7bc62c0bf3936781"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "complex_divide",
+      "start_line": 141,
+      "end_line": 143,
+      "bytes": 137,
+      "sha256": "fafcf8c34242b48ec41b3286a6e39d82dd1527e59cd3869a1379f6b03a0f4836"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "decode_complex",
+      "start_line": 146,
+      "end_line": 148,
+      "bytes": 206,
+      "sha256": "292eb14c05511df37010dc111164dad7ad7da929a103b0f673a70bde7557ed15"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "encode_complex",
+      "start_line": 151,
+      "end_line": 154,
+      "bytes": 197,
+      "sha256": "e6a9e1115115e85130845acc76e463109133c9603740261c277cd78817ed664d"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "decode_matrix",
+      "start_line": 157,
+      "end_line": 158,
+      "bytes": 116,
+      "sha256": "301f2a590e8fc5a3c22f7a3130a785b1077691b02089d244c6c87ce7c6ae4cf7"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "encode_matrix",
+      "start_line": 161,
+      "end_line": 162,
+      "bytes": 82,
+      "sha256": "8945416c1e5712cbdecc668099e93d84aa63e883a54d3c45e9604e07c1d6a210"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "matrix_identity",
+      "start_line": 165,
+      "end_line": 166,
+      "bytes": 94,
+      "sha256": "231c77dfba31910cac36a7ce7f630d8b326391aecd702c76104fb5a63f5cd77e"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "matrix_product",
+      "start_line": 169,
+      "end_line": 177,
+      "bytes": 278,
+      "sha256": "1fca1bb6f547e69e36517a8c499001988808258411b1d7e0c3e146b60f68443c"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "matrix_adjoint",
+      "start_line": 180,
+      "end_line": 181,
+      "bytes": 108,
+      "sha256": "5f77b26027fda61885b3320e11e68ac27d8ecb3b829e1fefffe18bef1cc1d586"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "matrix_equal",
+      "start_line": 184,
+      "end_line": 185,
+      "bytes": 124,
+      "sha256": "b729d68a1adf86189f95029f64ab342961f68d475fa49de0b6e7f439070edd6b"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "gaussian_product",
+      "start_line": 188,
+      "end_line": 189,
+      "bytes": 80,
+      "sha256": "8d402190440faf41900a75221db88e3b2a56b76e59892c2317a263ea3e1beb9f"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "gaussian_matrix_product",
+      "start_line": 192,
+      "end_line": 198,
+      "bytes": 260,
+      "sha256": "cb3ec64a145705d6eaff2a6f4b0a9497b0eb46c1248edfb91ceb65b88de886a4"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "tensor",
+      "start_line": 201,
+      "end_line": 202,
+      "bytes": 116,
+      "sha256": "b6981a62578b7b12ab7c41ff9eff5a9dd3b891892ec9e38441ed8ead345f9d26"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "q_interval",
+      "start_line": 213,
+      "end_line": 214,
+      "bytes": 136,
+      "sha256": "6b2caeb2773aba29bf70eb671e457ce209bdb105a6d12f4ed3cc268576492639"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "interval_matches",
+      "start_line": 217,
+      "end_line": 218,
+      "bytes": 123,
+      "sha256": "0e94c415a6c6af5ef226a5fbd0f83a95e6c06fb4fef190e6effe32e9d67da91a"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "arctangent_bounds",
+      "start_line": 221,
+      "end_line": 226,
+      "bytes": 220,
+      "sha256": "087769fd98bfaf14e92d102ba2d5ea5ca8348372d0117506a534abc952f0b38f"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "exponential",
+      "start_line": 229,
+      "end_line": 240,
+      "bytes": 853,
+      "sha256": "cde22f3dced372eef2e6350d7de904219184b8b37ef9a1c402d6ba11c8f1b899"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "phases",
+      "start_line": 243,
+      "end_line": 291,
+      "bytes": 4038,
+      "sha256": "3f8806c021fb07a0641e18b03b9a6f2b8c111050b78b3f857f2c46cbc1ebe4b8"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "pauli_coordinates",
+      "start_line": 294,
+      "end_line": 303,
+      "bytes": 413,
+      "sha256": "75b9f0baf1e1ad0de16dd05902144bc637389ac9fa96b72d740fdfce70cd06bc"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "midpoints",
+      "start_line": 306,
+      "end_line": 312,
+      "bytes": 304,
+      "sha256": "9ce2880d094e2258cd66a0cce540778c84a2042bf723a7c8a1a06a333b831350"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "check_y",
+      "start_line": 315,
+      "end_line": 318,
+      "bytes": 372,
+      "sha256": "61d16e05e49fd356824a7d438e064399da3ad3f59d8cbcddc7487fb4dd716391"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "endpoint_from_slots",
+      "start_line": 321,
+      "end_line": 329,
+      "bytes": 725,
+      "sha256": "4e2b66f6c216455801936cf45334304327cc26813d0f948a41d315df5d577284"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "check_iteration_output",
+      "start_line": 332,
+      "end_line": 334,
+      "bytes": 278,
+      "sha256": "320556d6a4142abf6ad76c03e51ac92b8fe6e7b1a0df6d6877dc5dc9bb9256d5"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "power_trace",
+      "start_line": 337,
+      "end_line": 351,
+      "bytes": 964,
+      "sha256": "8e2a097cb7d9cef51f6176e762a88a6261ca7dbbec4190604cb93540c2ce915a"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "read_binding",
+      "start_line": 354,
+      "end_line": 384,
+      "bytes": 2986,
+      "sha256": "aa9346983d331bf592b0d0220b2dc871b46306cc22b66dbf47eaa856cfecf052"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "expect_rejection",
+      "start_line": 387,
+      "end_line": 390,
+      "bytes": 175,
+      "sha256": "b152db5b91c1f5921452c7a13a23655416b3016320577b60c9a14e28c87e116b"
+    },
+    {
+      "file": "check_saved_evidence.py",
+      "name": "main",
+      "start_line": 393,
+      "end_line": 493,
+      "bytes": 14010,
+      "sha256": "93e9dcf7f7c7e37f0e6c5fb8edac1745b7b2429e6c928315bb10e95ce2fa5e14"
+    },
+    {
+      "file": "record_check.py",
+      "name": "pin",
+      "start_line": 7,
+      "end_line": 8,
+      "bytes": 135,
+      "sha256": "81e9739259eb5dc8ff3d3f883caccc65794bcb4deea4e0e6b9143fac26f291c9"
+    },
+    {
+      "file": "record_check.py",
+      "name": "now",
+      "start_line": 10,
+      "end_line": 10,
+      "bytes": 56,
+      "sha256": "cfeba74fb44c1d3d845b6e24206d7c7deb6ccaff77dfa195290154fed20ce565"
+    },
+    {
+      "file": "record_check.py",
+      "name": "write",
+      "start_line": 12,
+      "end_line": 12,
+      "bytes": 77,
+      "sha256": "edbca91277a475dcedc501b4937a970bea75ff635f4c40dcabbece98966d5d47"
+    },
+    {
+      "file": "freeze_source.py",
+      "name": "pin",
+      "start_line": 7,
+      "end_line": 8,
+      "bytes": 123,
+      "sha256": "fdc6ea556a30b75ec82b35ddf5ae813eb6c0c2445a3d18d4b088f3310579d7cf"
+    },
+    {
+      "file": "record_source_freeze.py",
+      "name": "pin",
+      "start_line": 16,
+      "end_line": 18,
+      "bytes": 142,
+      "sha256": "5df0c6216ecf822d6d55719732769705e71c2502c32668c75d80ca620680f109"
+    },
+    {
+      "file": "record_source_freeze.py",
+      "name": "now",
+      "start_line": 21,
+      "end_line": 22,
+      "bytes": 61,
+      "sha256": "f34344d0eeb6b443b60f2d70aacc4d33844254b0d6829e57abf992dca6415ca2"
+    },
+    {
+      "file": "record_source_freeze.py",
+      "name": "write",
+      "start_line": 25,
+      "end_line": 26,
+      "bytes": 86,
+      "sha256": "98215f9bc6ce3293dbfce44c38a6cabc861d006a8afc7720ce15c06af74681fb"
+    }
+  ],
+  "scope": "AST syntax and exact source inventory only; no program import or arithmetic execution."
+}

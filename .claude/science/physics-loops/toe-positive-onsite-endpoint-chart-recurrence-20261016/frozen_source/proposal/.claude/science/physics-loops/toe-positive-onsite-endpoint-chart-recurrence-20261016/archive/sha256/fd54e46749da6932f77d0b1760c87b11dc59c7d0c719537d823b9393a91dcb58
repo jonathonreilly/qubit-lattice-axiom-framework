@@ -1,0 +1,120 @@
+"""Final review identity checks only; no arithmetic check or scientific source replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, hashlib, json, shutil
+O = Path.cwd()
+assert O.name == 'endpoint_chart_exposed_check'
+N = O.parent
+
+def pin(p):
+    b = p.read_bytes()
+    return dict(path=str(p), bytes=len(b), sha256=hashlib.sha256(b).hexdigest())
+
+def read(p):
+    return json.loads(p.read_text())
+
+def check(p, row):
+    got = pin(p)
+    assert got['bytes'] == row['bytes'] and got['sha256'] == row['sha256'], str(p)
+
+def write(p, obj):
+    assert not p.exists()
+    p.write_text(json.dumps(obj, indent=2, sort_keys=True) + '\n')
+
+assert pin(O/'PRE_ENCLOSURE_FREEZE.json')['sha256'] == 'bd6e3042dce21422bd2d3c8d387c7b36ebb58f4f788146802973332239eacd05'
+for row in read(O/'PRE_ENCLOSURE_FREEZE.json')['members']:
+    check(Path(row['path']), row)
+source_rows = []
+for name in ['PRE_EXPOSURE.json', 'SELECTOR_EXPOSURE.json', 'CANDIDATE_EXPOSURE.json']:
+    for row in read(O/name)['sources']:
+        check(Path(row['original']['path']), row['original'])
+        check(Path(row['copy']['path']), row['copy'])
+        assert row['original']['sha256'] == row['copy']['sha256']
+        source_rows.append(row)
+C = O/'sources/candidate'
+for row in read(C/'FREEZE.json')['members']:
+    check(C/row['path'], row)
+assert pin(C/'FREEZE.json')['sha256'] == '485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf'
+receipt_rows = []
+for folder, label in [('metadata_runs','pre_enclosure_capture'),('metadata_runs','selector_capture'),
+                      ('metadata_runs','candidate_capture'),('scoped_runs','saved_arithmetic_001')]:
+    d = O/folder/label
+    r = read(d/'EXECUTION.json')
+    assert r['exit_code'] == 0 and not r['timed_out']
+    assert r['argv'][2] == r['source_at_launch']['path'] and r['argv'][1] == '-B'
+    for key in ['source_original','source_at_launch','recorder_at_launch','stdout','stderr']:
+        check(Path(r[key]['path']), r[key])
+    assert r['source_original']['sha256'] == r['source_at_launch']['sha256']
+    receipt_rows.append(dict(label=label,receipt=pin(d/'EXECUTION.json'),source=pin(d/'source_at_launch.py'),
+                             stdout=pin(d/'stdout'),stderr=pin(d/'stderr'),scope=r['scope']))
+assert pin(O/'SCOPED_CHECK_RESULT.json')['sha256'] == 'c645a85f698d47609eb3a2d85c16680a23bab7f333af7eece480a76c047f5fa0'
+scoped = read(O/'SCOPED_CHECK_RESULT.json')
+assert scoped['status'] == 'SCOPED_SAVED_EVIDENCE_CHECK_COMPLETED'
+assert scoped['ODE_steps_executed'] == scoped['full_enclosure_replays'] == scoped['selector_replays'] == 0
+assert scoped['new_scoped_check_executions'] == 1
+assert len(list((O/'scoped_runs').iterdir())) == 1
+
+# Complete deterministic function-source map; this is parsing, not executing candidate code.
+programs = ['enclose_chart.py','capture_inputs.py','record.py','metadata_freeze.py','validate_metadata.py']
+functions = []
+for rel in programs:
+    p = C/rel
+    text = p.read_text()
+    parsed = ast.parse(text)
+    for node in ast.walk(parsed):
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            segment = ast.get_source_segment(text, node)
+            functions.append(dict(file=rel,name=node.name,start_line=node.lineno,end_line=node.end_lineno,
+                                  source_sha256=hashlib.sha256(segment.encode()).hexdigest(),
+                                  ast_sha256=hashlib.sha256(ast.dump(node,include_attributes=False).encode()).hexdigest()))
+functions.sort(key=lambda x:(x['file'],x['start_line']))
+write(O/'CODE_FUNCTION_MAP.json',dict(files=[pin(C/p) for p in programs],functions=functions,
+                                  coverage='Complete source read; function inventory is navigational, not proof.'))
+# The same selected methodology references already read in this review.
+methodology = []
+prior = N/'preparation_angle_moment_exposed_check/methodology'
+for name in ['skill_freshness.md','focused_review_contract.md','proof_search_governance.md']:
+    p = prior/name
+    q = O/'methodology'/name
+    q.parent.mkdir(parents=True,exist_ok=True)
+    assert not q.exists()
+    shutil.copyfile(p,q)
+    methodology.append(dict(original=pin(p),copy=pin(q)))
+p = Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md')
+q = O/'methodology/physics_claim_reviewer.md'
+shutil.copyfile(p,q)
+methodology.append(dict(original=pin(p),copy=pin(q)))
+assert pin(p)['sha256'] == '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455'
+for p in O.glob('*.py'):
+    ast.parse(p.read_text())
+coverage = dict(complete_root_proposal_read=True,pre_exposure_analysis_sealed=True,
+                complete_selector_source_and_original_streams_read=True,
+                complete_candidate_derivation_and_programs_read=True,
+                all_candidate_intervals_traversed_in_scoped_check=True,
+                original_candidate_and_own_receipts_verified=True,
+                candidate_ODE_rerun=False,selector_replay=False,recurrence_executed=False,
+                target_compilation_executed=False,physical_controls_realized=False)
+result = dict(utc=datetime.now(timezone.utc).isoformat(),kind='source_exposed_analytic_and_code_review',
+    disposition='No blocking analytic or implementation defect found; finite conditional chart supported by reviewed evidence.',
+    mathematical_authority=pin(O/'REVIEW.md'),analytical_reconstruction=pin(O/'PRE_ENCLOSURE_ANALYSIS.md'),
+    code_review=pin(O/'CODE_REVIEW.md'),root_approval=None,formal_retained_status=None,audit_verdict=None,
+    source_exposed=True,blind=False,same_selected_model_and_effort=True,
+    new_scoped_arithmetic_checks=1,original_candidate_scientific_runs=1,checker_full_science_replays=0,
+    singular_lower_bound='1/126',chosen_s='1/252',chosen_t='25/229376',chosen_r='25/231211008',
+    qualifications=['Literal two-qubit plant and supplied positive controls only; all scalar terms retained.',
+                    'Effective target access for algorithmic approximation; arbitrary-target existence is distinct.',
+                    'No recurrence index, target word, efficient compiler or microscopic controller supplied.',
+                    'Timing mismatch norm expression is a sufficient upper-error budget, not an error lower bound.',
+                    'No native, autonomous, generic-system-size, arbitrary-cap, infinite-use or audited-retained result.'],
+    coverage=coverage,scoped_result=pin(O/'SCOPED_CHECK_RESULT.json'),editable_prompt_files_changed=[])
+write(O/'RESULT.json',result)
+write(O/'SOURCE_AND_EVIDENCE.json',dict(utc=datetime.now(timezone.utc).isoformat(),sources=source_rows,
+    completed_review_receipts=receipt_rows,methodology=methodology,source_function_map=pin(O/'CODE_FUNCTION_MAP.json'),
+    result=pin(O/'RESULT.json'),review=pin(O/'REVIEW.md'),coverage=coverage,
+    exposure_qualification='Root proposal first; pre-enclosure analysis saved before candidate exposure, not before original computation. Parent author-result summary arrived only after analysis seal. Shared campaign/model/source context disclosed.',
+    failures=dict(scientific=0,scoped_check=0,metadata_programs=0,
+                  read_only_lookup='One tool read of nonexistent prior record.py; actual record_metadata.py subsequently read. Candidate author bookkeeping events remain in unchanged DERIVATION.md.'),
+    terminal_receipts='This metadata process and final seal receipts are written by their recorders after child exit; they are actual subsequent evidence, not self-hashed predictions.'))
+print(json.dumps(dict(status='REVIEW_METADATA_VALIDATED',source_aliases=len(source_rows),
+                      function_rows=len(functions),result=pin(O/'RESULT.json'),
+                      evidence=pin(O/'SOURCE_AND_EVIDENCE.json'),scientific_reexecution=False),indent=2))

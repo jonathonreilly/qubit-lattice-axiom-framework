@@ -1,0 +1,47 @@
+{
+  "kind": "source_integrity_and_metadata_mutants_only",
+  "checked": {
+    "note_sha256": "71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1",
+    "body_count": 6,
+    "source_aliases": 288,
+    "archive_objects": 126,
+    "science_executions": 0
+  },
+  "independent_interval_comparison": true,
+  "scoped_metadata_mutants": [
+    {
+      "name": "unbound_canonical_refusal",
+      "rejected": true,
+      "reason": "UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending"
+    },
+    {
+      "name": "altered_original_body",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "altered_uniform_qualification",
+      "rejected": true,
+      "reason": "Byte identity mismatch"
+    },
+    {
+      "name": "missing_actual_scientific_source",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_actual_scientific_source"
+    },
+    {
+      "name": "missing_preserved_failed_launch",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_preserved_failed_launch"
+    },
+    {
+      "name": "missing_root_actual_acceptance_source",
+      "rejected": true,
+      "reason": "Scoped metadata removal: missing_root_actual_acceptance_source"
+    }
+  ],
+  "mathematics_tested_by_this_execution": false,
+  "historical_scientific_replays": 0,
+  "canonical_primary_execution": null,
+  "root_source_wrapper_review": null
+}

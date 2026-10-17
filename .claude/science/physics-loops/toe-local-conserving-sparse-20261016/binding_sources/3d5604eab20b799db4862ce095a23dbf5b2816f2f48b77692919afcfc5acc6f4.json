@@ -1,0 +1,27 @@
+{
+  "observed_commit": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "source_revision_verified": true,
+  "execution_evidence": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2e9392fd3b68228839cf8959b72abc792474c0515e3e8881a0593946dcae942.json",
+      "bytes": 1619,
+      "sha256": "b2e9392fd3b68228839cf8959b72abc792474c0515e3e8881a0593946dcae942"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527.py",
+      "bytes": 56255,
+      "sha256": "9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0da27d48c154171d0fd975bcf554d3f10862c9414925157481ae26fbc2b02433.blob",
+      "bytes": 41,
+      "sha256": "0da27d48c154171d0fd975bcf554d3f10862c9414925157481ae26fbc2b02433"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "scope": "Actual clean stacked base checked at prepare; main/instructions independently pinned."
+}

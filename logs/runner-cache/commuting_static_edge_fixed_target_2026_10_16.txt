@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/commuting_static_edge_fixed_target_2026_10_16.py
+runner_sha256: 8e997f3021968fa25a1b357b1370a664815c24ed260390c5e45f85601ce7936c
+input_fingerprint_sha256: d667643098de9a45df5bd3f782eb3f299e1cd7fb88d5915fd7923fbe406e0d61
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_note_reconstructed_for_original_receipts": true, "historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "publication_link_repair_verified": true, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: literal K=2I+ZZ; supplied positive XX edge with its full scalar reserve
+per_site: incident edge cap2; calibration, installation and readout timing remain supplied
+per_mode: full U(4) scalar phase and arbitrary old/reference input; no determinant normalization
+per_block: one fixed commuting target and finite quiet window; no automatic halt or reuse
+lattice_wide: one historical author rational fixture, analytical exposed checks and N1FAIL partial negative material; no replay or native supply
+
+----- stderr -----
+

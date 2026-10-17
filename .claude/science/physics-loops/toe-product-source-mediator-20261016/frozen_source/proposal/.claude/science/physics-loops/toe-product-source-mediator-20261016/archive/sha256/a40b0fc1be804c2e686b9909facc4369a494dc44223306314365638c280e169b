@@ -1,0 +1,46 @@
+{
+  "schema": "additive-source-exposed-analytical-review-v1",
+  "renewal_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023",
+  "scientific_executions": 0,
+  "metadata_only": true,
+  "original_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/ORIGINAL_FREEZE.json",
+    "bytes": 2736,
+    "sha256": "97b89284b05f95c00065bec70bfd8d38e1bcd366ea49f058384f585f9056e116",
+    "all_members_unchanged": true
+  },
+  "sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "capture": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065",
+      "read_completely": true,
+      "role": "new complete argument"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "capture": "sources/weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4295,
+      "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8",
+      "read_completely": true,
+      "role": "necessary complete interval construction"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "capture": "sources/weak_mediator_candidate/DYADIC_ADDENDUM.md",
+      "bytes": 2959,
+      "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+      "read_completely": true,
+      "role": "additional complete contextual exposure"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "capture": "sources/weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+      "bytes": 3953,
+      "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395",
+      "read_completely": true,
+      "role": "additional complete contextual exposure; sharper Bell conclusion not imported"
+    }
+  ]
+}

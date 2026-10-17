@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 11344,
+      "sha256": "e367c861fe7496575ee4ba84d0f7178b10fc0992ffe31d4dd89a82e632e2a98e"
+    },
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 7833,
+      "sha256": "ba201403a60d1c94751d1550f14d59622c86920ced74ebae21f5f51f5752731b"
+    }
+  ],
+  "scope": "Root actual qualification after complete argument/source/receipt review; subsequent checks and publication separate."
+}

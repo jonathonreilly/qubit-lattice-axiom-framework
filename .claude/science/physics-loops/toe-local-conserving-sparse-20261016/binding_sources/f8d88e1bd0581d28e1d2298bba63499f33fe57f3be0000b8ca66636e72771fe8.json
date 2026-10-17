@@ -1,0 +1,92 @@
+{
+  "kind": "root_integration_source_review",
+  "utc": "2026-10-16T17:16:26.467979+00:00",
+  "root_read_complete_for_changed_implementation": true,
+  "proposal_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/FINAL_FREEZE.json",
+    "bytes": 65169,
+    "sha256": "f38656fd0e2834d73a86a31606e3285f2c1ac59f5966c9ad1d790e9f5e336702"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/local_conserving_sparse_common.py",
+    "bytes": 56255,
+    "sha256": "9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527"
+  },
+  "primary_unbound": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/proposed_primary_unbound.py",
+    "bytes": 26373,
+    "sha256": "c47f04d7feb8e3d8e37af8a7dd76deac7002d0f070264c9fdbaa79f6df1004c3"
+  },
+  "source_publication_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/root_local_conserving_sparse_qualified_publication_review/REVIEW.json",
+    "bytes": 3159,
+    "sha256": "9927849edd289e7ce206e0abb06d0908a9cc760d0b3dc749c7961c096e607f18"
+  },
+  "disposition": "APPROVED_NARROW_PARENT_REFRESH_RECOVERY_FOR_SEQUENTIAL_CANONICAL_CHECKS",
+  "original_integration": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/ROOT_INTEGRATION_REVIEW.json",
+    "bytes": 8454,
+    "sha256": "fa3dd1bdf1db3faad83ddd05a1450b352c66c1b88a9d1bf224e3f1b883fa8552"
+  },
+  "original_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/ROOT_BINDING_INPUT.json",
+    "bytes": 1589,
+    "sha256": "3abe5c0b5cbf33a422e80d198bfc3ff6d62494317f41652fc6ad8024effc7569"
+  },
+  "original_failed_prepare": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/actions/prepare/EXECUTION.json",
+    "bytes": 958,
+    "sha256": "361e33c2f227668ba2a81a55e5228852d8f3af44c01bd9ac930c873a42e308e6"
+  },
+  "actual_live_parent_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/publication_integration/local_conserving_sparse/runs/prepare_parent_base/stdout",
+    "bytes": 277,
+    "sha256": "a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d"
+  },
+  "actual_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/sparse_parent_refresh/BINDING_REFS.json",
+    "bytes": 4391,
+    "sha256": "962d832756b0a7bd27b7a364cc389edf8ace7af33236041f6e424c90cf273881"
+  },
+  "review_scope": [
+    "Full common diff and five complete changed functions, new metadata builders/inspectors/delivery, narrow sealer delta, binding/phase/closure contracts and all five actual receipts/full streams reviewed. Truncated aggregate read was followed by complete targeted code reads.",
+    "28 common functions and 40 directly required inputs verified byte-identical. Note2f21c524, primaryc47f04d7, seven bodies and sole mathematical parent6db93809 remain unchanged; original actual source integration review fa3dd1bd supplies unchanged scope.",
+    "Current parent main is explicitly separate from the immutable historical PR publication parent. The original failed prepare remains exit1; successful saved gh observation remains exit0 with null Python child role. Recovery uses exclusive action and observation labels.",
+    "Six saved-JSON parent mutations and missing-recovery-receipt refusal are metadata checks, not phase or scientific execution. No retained audit or new mathematical acceptance.",
+    "Exact freshness962d8327 records main de540f645a and unchanged authority56c5. Worktree tools remain pinned. Current-main parser compatibility on the actual prepared note is still required before install.",
+    "The source seal has process_exit=null; full completed produced inventory and actual successful final inspection verified. No invented completion receipt. Canonical and staged review are still separate."
+  ],
+  "frozen_members_verified": 294,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/metadata_runs/bind_actual_refresh/EXECUTION.json",
+      "bytes": 2480,
+      "sha256": "36a50b9e184c1bafda2fffda45114ab450482a120bf1a56778906a78424666d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/metadata_runs/build_recovery/EXECUTION.json",
+      "bytes": 2450,
+      "sha256": "b22e7143e4844774671ab602e66e6ef7990b69c9a6ad0b4f12a9b3b3fdbdb299"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/metadata_runs/final_inspection/EXECUTION.json",
+      "bytes": 2458,
+      "sha256": "ba32acb80688075aec037ad6fb719ee5db8fc91bfd90e46221c6e9bb04806756"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/metadata_runs/inspection/EXECUTION.json",
+      "bytes": 2431,
+      "sha256": "d4d0dbb09649268469d717e0ee65e29abb50c21e3435e805f8d4d95af1cd6339"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_parent_refresh_recovery/metadata_runs/write_delivery/EXECUTION.json",
+      "bytes": 2453,
+      "sha256": "7f8ff488b085e8e5db545b3c775e2b02504b8f18469804ce3e775a767787bd1f"
+    }
+  ],
+  "scientific_executions": 0,
+  "retained_audit": false,
+  "actual_canonical_acceptance": null,
+  "actual_staged_acceptance": null,
+  "editable_prompt_files_changed": []
+}

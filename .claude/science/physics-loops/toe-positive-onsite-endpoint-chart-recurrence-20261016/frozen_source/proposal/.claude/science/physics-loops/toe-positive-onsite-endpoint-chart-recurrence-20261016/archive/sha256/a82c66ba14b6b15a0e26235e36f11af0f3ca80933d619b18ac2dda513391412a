@@ -1,0 +1,131 @@
+"""Stored-artifact checks only. Never imports or executes science source."""
+from datetime import datetime, timezone
+from fractions import Fraction as Q
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+out = Path(sys.argv[1]).resolve()
+
+
+def pin(p):
+    b = p.read_bytes()
+    return {"path": str(p), "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+
+
+def check_pin(row, path=None):
+    p = Path(path or row["path"])
+    got = pin(p)
+    assert got["bytes"] == row["bytes"] and got["sha256"] == row["sha256"], str(p)
+
+
+def q(obj):
+    return Q(obj["numerator"], obj["denominator"])
+
+
+input_manifest = json.loads((out / "INPUT_MANIFEST.json").read_text())
+for row in input_manifest["sources"]:
+    check_pin(row["original"])
+    check_pin(row["capture"])
+    assert row["original"]["sha256"] == row["capture"]["sha256"]
+check_pin(input_manifest["selected_input"])
+for freeze_name in ("INPUT_FREEZE.json", "SCIENCE_SOURCE_FREEZE.json"):
+    freeze = json.loads((out / freeze_name).read_text())
+    for row in freeze["members"]:
+        p = Path(row["path"])
+        check_pin(row, p if p.is_absolute() else out / p)
+
+receipts = []
+for label in ("input_capture", "source_freeze", "enclosure_001"):
+    p = out / "runs" / label / "EXECUTION.json"
+    receipt = json.loads(p.read_text())
+    assert receipt["exit_code"] == 0 and receipt["timed_out"] is False
+    for key in ("source_at_launch", "original_source", "recorder_at_launch", "stdout", "stderr"):
+        check_pin(receipt[key])
+    assert receipt["source_at_launch"]["sha256"] == receipt["original_source"]["sha256"]
+    receipts.append(pin(p))
+
+cert_path = out / "enclosure_001_output/certificate.json"
+pulse_path = out / "enclosure_001_output/pulse_intervals.json"
+assert pin(cert_path)["sha256"] == "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+assert pin(pulse_path)["sha256"] == "5d67868778e34ac003216906de643ce559a27bb025892ce878c3d10e59c5332b"
+cert, pulse = json.loads(cert_path.read_text()), json.loads(pulse_path.read_text())
+s = 1 << 128
+assert cert["scale_denominator"] == pulse["scale_denominator"] == s
+
+
+def complex_matrix(a):
+    assert len(a) == 16
+    for entry in a:
+        assert len(entry) == 4 and all(type(x) is int for x in entry)
+        assert entry[0] <= entry[1] and entry[2] <= entry[3]
+
+
+complex_matrix(cert["global_truncated_U"])
+assert len(cert["global_truncated_selected_derivatives"]) == 16
+for a in cert["global_truncated_selected_derivatives"]:
+    complex_matrix(a)
+assert len(cert["raw_pauli_coordinates_by_column"]) == 16
+for column in cert["raw_pauli_coordinates_by_column"]:
+    complex_matrix(column)  # same 16-rectangle shape, not a matrix interpretation
+for key in ("pulse_U", "pulse_D"):
+    assert len(pulse[key]) == 24
+    for a in pulse[key]:
+        complex_matrix(a)
+for key in ("jacobian_real_intervals", "inverse_residual_intervals"):
+    assert len(cert[key]) == 16
+    for row in cert[key]:
+        assert len(row) == 16
+        for lo, hi in row:
+            assert type(lo) is int and type(hi) is int and lo <= hi
+
+# Re-express existing interval endpoint bounds; no ODE/product reconstruction.
+res_sq = Q(sum(max(abs(lo), abs(hi)) ** 2 for row in cert["inverse_residual_intervals"]
+               for lo, hi in row), s * s)
+assert res_sq == q(cert["residual_frobenius_square_upper"]) <= Q(1, 4)
+rn, rd = cert["inverse_numerators"], cert["inverse_denominator"]
+inverse_sq = Q(sum(x*x for row in rn for x in row), rd*rd)
+assert inverse_sq == q(cert["inverse_frobenius_square_exact"]) <= 63**2
+assert cert["integer_B"] == 63
+assert q(cert["chosen_s"]) == Q(1, 252)
+assert q(cert["chosen_t"]) == Q(25, 229376)
+assert q(cert["chosen_r"]) == Q(25, 231211008)
+assert q(cert["image_coordinate_rho"]) == Q(25, 115605504)
+assert all(cert["checks"].values())
+assert all(15*lo <= -8*s <= 15*hi for lo,hi in cert["jacobian_real_intervals"][0])
+assert res_sq < Q(1, 1 << 76)
+assert not (out.parent / "metadata_freeze.py").exists()
+
+files = ["DERIVATION.md", "EXPOSURE_AND_QUALIFICATIONS.md", "READ_GUIDE.md", "CHECKPOINT.md",
+         "PRELAUNCH.md", "enclose_chart.py", "record.py", "capture_inputs.py", "metadata_freeze.py",
+         "validate_metadata.py", "INPUT_MANIFEST.json", "INPUT_FREEZE.json", "SCIENCE_SOURCE_FREEZE.json"]
+manifest = {
+    "created_utc": datetime.now(timezone.utc).isoformat(),
+    "status": "SOURCE_EXPOSED_CANDIDATE_AWAITING_SEPARATE_CHECK_AND_ROOT_DECISION",
+    "canonical_binding": None, "actual_git_base": None, "publication": None,
+    "candidate_files": [pin(out / name) for name in files],
+    "original_source_and_capture_map": input_manifest["sources"],
+    "rational_input": pin(out / "inputs/SELECTED_INPUT.json"),
+    "scientific_outputs": [pin(cert_path), pin(pulse_path)],
+    "completed_execution_receipts_before_this_metadata_run": receipts,
+    "executed_science_count": 1, "selector_replays": 0, "science_failures": 0,
+    "source_coverage": {
+        "root_proposal": "Complete argument read and reconstructed; no earlier screen used as a proof premise.",
+        "selector": "Complete original source, full stdout/stderr and receipt read; output only selected rational inputs.",
+        "enclosure": "Complete authored code/analytic argument; all output shapes, endpoint bounds and hashes checked by this stored-artifact process.",
+        "independence": "Same-model exposed authorship; no sibling proof/code read; separate acceptance pending."},
+    "metadata_only_comparisons": {
+        "input_and_source_freezes": True, "original_sources_match_captures": True,
+        "all_completed_receipt_stream_pins": True, "all_interval_shapes_and_endpoint_order": True,
+        "stored_residual_square_recomputed": True, "stored_residual_F_less_than_2_to_minus_38": True,
+        "stored_inverse_and_chart_rationals_checked": True,
+        "ODE_or_selector_reexecuted": False},
+    "current_metadata_run_receipt": "runs/metadata_validation/EXECUTION.json (written by recorder after this source exits)",
+    "final_freeze": "FREEZE.json; its terminal recorder bundle is explicitly outside the recursive member list",
+    "limits": "One 240-second-wall enclosure, completed in 7.94 seconds; no imposed CPU/RAM quota. No independent or formal-proof-assistant certification.",
+}
+(out / "SOURCE_MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+print(json.dumps({"stored_artifact_validation": "completed", "science_reexecuted": False,
+                  "manifest": pin(out / "SOURCE_MANIFEST.json"), "science_outputs": manifest["scientific_outputs"],
+                  "candidate_derivation": pin(out / "DERIVATION.md"), "sibling_sources_read": False}, indent=2))

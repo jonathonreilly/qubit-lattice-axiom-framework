@@ -1,6 +1,6 @@
 {
- "edge_count": 16148,
- "node_count": 7194,
+ "edge_count": 16158,
+ "node_count": 7205,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3867,6 +3867,10 @@
    "out_degree": 1
   },
   "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "commuting_static_edge_fixed_target_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -12566,6 +12570,10 @@
    "deps_hash": "7680adde7def",
    "out_degree": 2
   },
+  "inhomogeneous_comb_local_control_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "eeda1c4cc023",
+   "out_degree": 2
+  },
   "initial_cube_energy_layer_and_exact_band_balance_bounded_theorem_note_2026-09-24": {
    "deps_hash": "df104289a7d7",
    "out_degree": 7
@@ -12609,6 +12617,10 @@
   "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "interacting_preparation_control_work_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "76a875ff0fa3",
+   "out_degree": 2
   },
   "interacting_rp_fixed_a_u_integrated_bridge_bounded_note_2026-06-05": {
    "deps_hash": "1700fe450277",
@@ -14456,6 +14468,10 @@
   },
   "local_conserving_preparation_bounded_theorem_note_2026-10-16": {
    "deps_hash": "1e4bf801d7dc",
+   "out_degree": 1
+  },
+  "local_conserving_sparse_compiler_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
    "out_degree": 1
   },
   "local_electric_completions_and_postbirth_field_phase_bounded_theorem_note_2026-09-24": {
@@ -17602,6 +17618,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "positive_onsite_endpoint_chart_recurrence_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "positive_onsite_target_compilation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "dd54caf086db",
+   "out_degree": 1
+  },
   "positive_open_path_clock_bounded_theorem_note_2026-10-14": {
    "deps_hash": "5def4db2d325",
    "out_degree": 7
@@ -17822,6 +17846,10 @@
    "deps_hash": "116e59c3d1df",
    "out_degree": 2
   },
+  "preparation_angle_energy_moments_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
+   "out_degree": 1
+  },
   "prepared_driven_state_bounded_theorem_note_2026-10-13": {
    "deps_hash": "4315a3953007",
    "out_degree": 7
@@ -17889,6 +17917,14 @@
   "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
    "deps_hash": "cbe42f571241",
    "out_degree": 3
+  },
+  "product_source_controlled_stop_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "7b36ba3a5261",
+   "out_degree": 1
+  },
+  "product_source_mediator_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "139c8712094c",
+   "out_degree": 1
   },
   "program_content_order_attempt_cycle755_bounded_theorem_note_2026-07-28": {
    "deps_hash": "ec452f68be4a",
@@ -18793,6 +18829,10 @@
   "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "reflection_preserving_preparation_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "b4fc7f0460f7",
+   "out_degree": 1
   },
   "refusal_wrapped_controller_cycle723_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
@@ -22605,6 +22645,10 @@
   "weak_field_wave_packets_from_mobile_record_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1ab84217dcde",
    "out_degree": 3
+  },
+  "weak_mediator_fixed_target_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "weak_scalar_limit_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,11 @@
+{
+  "status": "metadata verification complete",
+  "author_members_verified": 11,
+  "initial_members_preserved": 7,
+  "captured_source_entries": 35,
+  "read_only_commands": 11,
+  "installed_skill_matches_complete_canonical": true,
+  "scientific_executions": 0,
+  "negative_packet_status": "FAIL",
+  "N1": "FAIL"
+}

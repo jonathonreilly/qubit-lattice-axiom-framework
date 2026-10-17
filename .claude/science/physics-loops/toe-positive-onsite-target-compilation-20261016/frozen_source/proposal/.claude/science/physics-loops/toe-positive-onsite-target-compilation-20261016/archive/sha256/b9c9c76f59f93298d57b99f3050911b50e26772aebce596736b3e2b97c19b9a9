@@ -1,0 +1,16 @@
+{
+  "initial_analytical_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/INITIAL_FREEZE.json",
+    "bytes": 5602,
+    "sha256": "f5c4bd4b478a633c7c9c0b875d73ff6481ca5c4e1612f4e2456ed01e47506717"
+  },
+  "candidate_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_candidate/compile_target.py",
+    "bytes": 23763,
+    "sha256": "52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80"
+  },
+  "captured_files": 40,
+  "complete_functions": 33,
+  "scientific_executions": 0,
+  "scientific_result_viewed": false
+}

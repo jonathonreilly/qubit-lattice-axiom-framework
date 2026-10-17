@@ -1,0 +1,47 @@
+{
+  "kind": "initial_analytical_derivation_before_new_author_exposure",
+  "utc": "2026-10-16T20:28:29.700547+00:00",
+  "files": [
+    {
+      "path": "ANALYSIS.md",
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "bytes": 1042,
+      "sha256": "875b34f886bad979daf7b3f8ed28d85cae145a62827608f19d16b2bff7d77dce"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 2593,
+      "sha256": "d7be8406cf7bc1efe5875965f9f1b3378c4d7366587ad5d1f067610be2513b44"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 1722,
+      "sha256": "61a428f8460e74aaa17ac3e565ccd4b163150c969913de7869e375364d053b99"
+    },
+    {
+      "path": "TASK_INPUT.md",
+      "bytes": 1291,
+      "sha256": "71e3b32e46d4310ed74188648e34cf417a14397679d5d6727743f20aee9e330c"
+    },
+    {
+      "path": "freeze_metadata.py",
+      "bytes": 2107,
+      "sha256": "2146c73b7f2cbb4fe586e2fcf15f86ff17ae2612e3771b7917e66895ede16311"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1860,
+      "sha256": "f15581835c8526fc38ae257c65a383a741fc5689910a62ca910dbc7afbd7e6b2"
+    }
+  ],
+  "scientific_executions": 0,
+  "same_model_source_exposed": true,
+  "new_author_candidate_read": false,
+  "root_acceptance": null,
+  "retained_audit": false,
+  "terminal_metadata_receipt": "metadata_run/EXECUTION.json is written after this seal and is outside its inventory."
+}

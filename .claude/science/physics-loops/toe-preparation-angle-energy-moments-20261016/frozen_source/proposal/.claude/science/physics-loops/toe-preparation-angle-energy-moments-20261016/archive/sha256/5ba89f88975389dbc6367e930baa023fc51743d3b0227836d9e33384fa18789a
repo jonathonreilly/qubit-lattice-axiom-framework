@@ -1,0 +1,63 @@
+# Controlling qualifications: preparation angle errors and energy moments
+
+Root accepts equations(1)-(7) of proposal fd847fb0 as conditional analytical results after exposed review2c12dc8f. Original proposal and review remain unchanged. The wording correction, quantitative distinctions and supplied physical premises below control future use. This is not retained audit or a hardware calibration result.
+
+## Exact class and preparation-specific bound
+
+The sole mathematical parent is local conserving preparation6db93809. This theorem uses its prefix preparation, not its runtime synthesis claims. Use one M>=L battery prepared from independent vacuum, the specified ordered flip and conditional rotations, exact reserves/carriers/envelopes/timing/endpoint phase, and real deterministic angle errors delta_0,...,delta_(L-1). The old/reference input is arbitrary, but the battery input is not. Actual old/battery dynamics are exactly decoupled. An arbitrary finite self-adjoint old K factors out as E_p; positivity of the total free generator additionally requires the stated K>=0. Idle sites remain included in full outputs and energy. M>=L here does not establish a runtime protocol with smaller buffers.
+
+The actual vacuum trajectory only reaches prefixes of lengths0 throughL. This is not a claim that every conditional gate leaves the entire prefix subspace invariant on arbitrary battery inputs. Each gate remains a unitary on its full physical support; no output projection is used. The exact probability distribution, including signs of amplitudes and the faulty first-flip vacuum component, underlies the proof.
+
+Let eta=sum_i|delta_i|. Full circuit telescoping gives vector/isometry error at most eta and unhalved joint trace error at most2eta. The actual integrated full-operator Hamiltonian residual equals eta for the stated nonoverlapping angle-only slots. At each reverse hybrid, earlier gates remain nominal and later ones actual, so the incoming continuing weight is w_i. The exact response of a diagonal f(B) is
+
+    w_i[A_i-f(i)] [sin^2(theta_i+delta_i)-sin^2(theta_i)].
+
+For f(0)=0 and0<=f(m)<=F on0,...,L, the source's bound follows without replacing the actual suffix by a fresh ideal state. Thus for positive integer r,
+
+    |Delta <B^r>| <= B_r(L,eta)
+       :=2sqrt(2)L^(r-1/2)eta+L^r eta^2,
+    |Delta Var(B)| <=6sqrt(2)L^(3/2)eta+3L^2 eta^2.
+
+Upper bounds include L=1, where the displayed linear term is conservative. Physical raw-energy moments multiply B_r by Delta^r; energy variance multiplies the variance bound by Delta^2. The old K distribution is identical and covariance zero only because the actual dynamics retain exact product structure. For complete F0=K+Delta B, retain the binomial cross-moment terms:
+
+    |Delta <F0^r>| <= sum_(k=1)^r binom(r,k)
+                         |<K^(r-k)>| Delta^k B_k(L,eta).
+
+The complete F0 variance error equals the battery-energy variance error in this particular exact product class. Generic initial/coupled faults require actual covariance and full width, potentially M rather than L. Context interacting-preparation and runtime-fault candidates are not premises of this proof.
+
+## Physical positivity and the correction
+
+For |delta_i|<=1, each complete actual generator has its original2pi reserve and is positive, with norm below Q_*=6pi. The derivative includes the rotating-carrier term and satisfies the stated cap for
+
+    h>=max(4hbar Q_*/g, sqrt(8pi hbar Q_*/sigma),
+                                      8pi Delta/sigma).
+
+This yields local driven norm<=g/2 and derivative<=sigma/2; the final phase layer is also paid per site and globally over all M sites. Actual positivity/support/slew follow from this specified family, not from a general integrated-norm bound. Vacuum, isolation, exact free gap, phase-locked quadratures and timing remain supplied.
+
+Proposal line150's phrase positive perturbation must mean a positive angle increment. The complete actual pulse generator remains positive, but its additive difference delta nY has eigenvalues plus and minus delta and is indefinite. Correct downstream wording to: one positive angle increment of a controlled rotation, with the complete actual integrated generator remaining positive. No obstruction is proved for a class requiring the additive Hamiltonian perturbation itself to be positive. The immutable original wording is retained solely as historical source, controlled by this correction.
+
+## Calibration, work and the sharpness family
+
+For a dimensionless raw-moment tolerance t_r, a sufficient request is
+
+    eta<=min(t_r/[4sqrt(2)L^(r-1/2)],sqrt[t_r/(2L^r)]).
+
+For a dimensionless variance tolerance t_v use the distinct constants
+
+    eta<=min(t_v/[12sqrt(2)L^(3/2)],sqrt[t_v/(6L^2)]).
+
+Divide physical tolerances by the appropriate Delta power. Intersect with the standing per-angle condition; eta<=1 is one simple sufficient global guarantee of |delta_i|<=1. These allowances are not additional independent budgets on top of the already spent output eta.
+
+At fixed Delta and L=Theta(epsilon^-1), O(epsilon) mean/work accuracy has the displayed sufficient total request eta=O(epsilon^(3/2)); raw second moment or variance accuracy has eta=O(epsilon^(5/2)), with appropriately small constants. The conservative uniform per-angle allocations add one power, epsilon^(5/2) and epsilon^(7/2), respectively. These are sufficient worst-case allocations, not universal optimized necessities.
+
+Controls vanish at the same F0 endpoints, old K-energy is unchanged and initial battery is vacuum. Therefore signed net modeled preparation work is Delta<B> and its error is Delta Delta<B>. This identity does not include microscopic controller outputs, absolute work or temporary control-energy load. Reserves remain installed and counted in those separate ledgers.
+
+For even L=2n>=16 the exact middle-gate perturbation has response coefficient at least sqrt(L)/192. The checked finite sums and Taylor remainder give Delta<B>>=sqrt(L)delta/384 for0<delta<=1/(384sqrt(L)). Taking even L>=384^2, epsilon=1/L and delta=epsilon yields vector error<=epsilon with work error>=Delta sqrt(epsilon)/384. For an unhalved trace target epsilon instead, delta=epsilon/2 gives trace error<=epsilon and work error>=Delta sqrt(epsilon)/768. Every other physical premise of the specified pulse family remains enforced.
+
+The witness shows that a reservoir-size-independent mean-energy coefficient cannot be inferred from this preparation's small integrated/full-output error. It supports the square-root-L growth of the worst-case linear mean coefficient for this circuit. It does not prove necessity of every per-angle, raw-second or variance allocation, and does not exclude known signed compensation, other schedules, different resources, feedback or conserving error classes. Runtime charge-conservation bounds do not apply backward through a number-changing preparation suffix without a new argument.
+
+## Evidence and limits
+
+Root read the complete proposal and exposed review, checked the reverse hybrid, exact distribution, physical carrier derivative, mean/variance and full-F0 expansion, finite lower-witness arithmetic and its trace convention. The check is same-selected-model and source-exposed; the reviewer had prior preparation/integration exposure. It is not blind or empirical replication. No scientific computation, old fixture replay or formal verification was needed or performed for this result. Captured metadata verifies source identities and complete packet membership only.
+
+An exact-in-form diagonal phase error preserves B moments but can still spoil the coherent output. Reserve, timing, carrier, vacuum, isolation, controller coupling and generic local faults need separate budgets. No native source, autonomous preparation/release/halt, microscopic work storage or indefinite reuse is established. Any change to this fault class, input domain, observable or necessity quantifier reopens the proof obligation. No canonical acceptance, publication, audit verdict or editable prompt/axiom change is implied by this source decision.

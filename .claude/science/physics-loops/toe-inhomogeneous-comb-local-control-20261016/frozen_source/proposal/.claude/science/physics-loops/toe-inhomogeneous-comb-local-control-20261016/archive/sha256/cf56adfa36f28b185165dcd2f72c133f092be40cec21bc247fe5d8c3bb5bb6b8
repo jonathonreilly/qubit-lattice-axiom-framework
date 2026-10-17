@@ -1,0 +1,173 @@
+"""Source-integrity only: no scientific calculation, simulation or proof test."""
+from pathlib import Path, PurePosixPath
+import hashlib
+import json
+
+REPO = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 60
+NOTE = 'docs/BUS_JOINT_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+PACKET = '.claude/science/physics-loops/toe-bus-joint-energy-moments-20261016'
+PARENT_NOTE = 'docs/STRONGLY_REGULAR_BUS_BOUNDED_THEOREM_NOTE_2026-10-15.md'
+EXPECTED_ACCEPTANCE = '530e64f0a12506eb1f99f84ceb4ac2ab3b55e2f9b518b4121a46f2e9f4cae74a'
+EXPECTED_PARENT_ACCEPTANCE = 'cc2e519d8c4de174cc98137a8f9c5e2ae7df6a782adfd93d7389d1eac346c726'
+EXPECTED_BODIES = {'root_proposal': '86a830e180dae0afba7d13f64bb0d906096e307eb5e3dc5d6e43bf1b52d794c1', 'exposed_review': '498017c60000572ea30408602904cacbafde77e41dc167012a1fb66ac0d582b1'}
+EXPECTED_PARENT_SHA256 = '1733b2962df77699f6dcf13538916cc0a9780802ea82a93a8c56c373a717700b'
+EXPECTED_GIT_BASE = None
+MANIFEST_SHA256 = '__MANIFEST_SHA256__'
+AUDIT_INPUT_PATHS = __AUDIT_INPUT_PATHS__
+METADATA_CHECK_COUNTS = {'passed': 0, 'failed': 0}
+
+def require(ok, message):
+    METADATA_CHECK_COUNTS['passed' if ok else 'failed'] += 1
+    if not ok:
+        raise ValueError(message)
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+def identity(data, row):
+    require(len(data) == row['bytes'] and digest(data) == row['sha256'], 'Byte identity mismatch')
+
+def disk_read(rel):
+    path = PurePosixPath(rel)
+    require(not path.is_absolute() and '..' not in path.parts, 'Unsafe declared path')
+    resolved = (REPO / rel).resolve()
+    resolved.relative_to(REPO.resolve())
+    return resolved.read_bytes()
+
+def verify_payload(read):
+    """Portable metadata checks, callable by the distinct draft inspector."""
+    manifest_path = PACKET + '/INPUT_MANIFEST.json'
+    raw = read(manifest_path)
+    require(digest(raw) == MANIFEST_SHA256, 'Input manifest pin')
+    manifest = json.loads(raw)
+    require(manifest['schema'] == 'joint_moment_source_inputs_v1', 'Manifest schema')
+    rows = manifest['inputs']
+    paths = [row['path'] for row in rows]
+    require(len(paths) == len(set(paths)), 'Unique declared inputs')
+    require(set(AUDIT_INPUT_PATHS) == set(paths) | {manifest_path, PACKET + '/ACTUAL_BINDING.json', PARENT_NOTE}, 'Exact input closure')
+    for row in rows:
+        identity(read(row['path']), row)
+    note = read(NOTE)
+    header = note.split(b'---', 2)[1].decode().splitlines()
+    for field in ('claim_type: bounded_theorem', 'actual_current_surface_status: conditional-support', 'audit_required_before_effective_retained: true', 'bare_retained_allowed: false'):
+        require(field in header, 'Scope field: ' + field)
+    require('upstream_dependencies: ["strongly_regular_bus_bounded_theorem_note_2026-10-15"]' in header, 'One actual mathematical parent')
+    body_map = json.loads(read(PACKET + '/BODY_MAP.json'))['bodies']
+    require({r['name']: r['sha256'] for r in body_map} == EXPECTED_BODIES and len(body_map) == 2, 'Exact two immutable body roles')
+    for row in body_map:
+        a, b = row['start_byte_inclusive'], row['end_byte_exclusive']
+        require(row['container'] == NOTE and isinstance(a, int) and isinstance(b, int) and 0 <= a < b <= len(note), 'Body interval')
+        raw = note[a:b]
+        identity(raw, row)
+        require(note.count(raw) == 1, 'Body occurs exactly once')
+    sources = json.loads(read(PACKET + '/SOURCE_MANIFEST.json'))['sources']
+    require(len({r['source'] for r in sources}) == len(sources), 'Unique source aliases')
+    recovered = {}
+    archive = json.loads(read(PACKET + '/ARCHIVE_INDEX.json'))['objects']
+    require(len({r['sha256'] for r in archive}) == len(archive), 'Deduplicated archive')
+    require({r['sha256'] for r in archive} == {r['sha256'] for r in sources}, 'Exact archive/source closure')
+    for row in archive:
+        identity(read(row['path']), row)
+    for row in sources:
+        raw = read(row['recovery_path'])
+        identity(raw, row)
+        recovered[row['source']] = raw
+    def src(name):
+        require(name in recovered, 'Known source alias: ' + name)
+        return recovered[name]
+    def historical_freeze(folder, key):
+        freeze = json.loads(src(folder + '/FREEZE.json'))
+        for row in freeze[key]:
+            p = PurePosixPath(row['path'])
+            alias = str(p) if not p.is_absolute() else str(p).split('/renewal_20261015_224023/', 1)[1]
+            if not p.is_absolute():
+                alias = folder + '/' + alias
+            identity(src(alias), row)
+    historical_freeze('bus_joint_energy_root_proposal', 'files')
+    historical_freeze('bus_joint_energy_independent_check', 'members')
+    historical_freeze('bus_joint_energy_root_review', 'files')
+    acceptance = src('bus_joint_energy_root_review/QUALIFIED_ACCEPTANCE.json')
+    require(digest(acceptance) == EXPECTED_ACCEPTANCE, 'Qualified source acceptance')
+    accepted = json.loads(acceptance)
+    require(accepted['retained_audit'] is False and accepted['native_realization'] is False, 'Accepted scope retained')
+    for key in ('proposal', 'exposed_review', 'qualifications', 'bus_parent_acceptance'):
+        row = accepted[key]
+        alias = row['path'].split('/renewal_20261015_224023/', 1)[1]
+        identity(src(alias), row)
+    for row in accepted['actual_evidence']:
+        identity(src(row['path'].split('/renewal_20261015_224023/', 1)[1]), row)
+    rbase = 'bus_joint_energy_independent_check/exact_check/run_01/'
+    launch = json.loads(src(rbase + 'LAUNCH.json'))
+    receipt = json.loads(src(rbase + 'EXECUTION.json'))
+    require(all(receipt[k] == v for k, v in launch.items()), 'Unchanged launch/result linkage')
+    require(receipt['exit_code'] == 0 and receipt.get('timed_out', False) is False, 'Actual original result')
+    require(receipt['argv'][1] == '-B' and len(receipt['argv']) == 3 and receipt['argv'][2] == receipt['source_at_launch'], 'Actual child argv with interpreter flag')
+    require(Path(receipt['argv'][0]).name.startswith('python'), 'Historical Python interpreter')
+    require(digest(src(rbase + 'check_joint_moments.at_launch.py')) == receipt['source_sha256'], 'Executed scientific source capture')
+    require(digest(src(rbase + 'launcher.at_launch.py')) == receipt['launcher_source_sha256'], 'Original launcher capture')
+    require(digest(src(rbase + 'SOURCE_MANIFEST.at_launch.json')) == receipt['source_manifest_sha256'], 'Launch-time source manifest')
+    for key, filename in [('stdout', 'stdout.json'), ('stderr', 'stderr.txt')]:
+        require(digest(src(rbase + filename)) == receipt[key + '_sha256'], 'Historical complete stream ' + key)
+    require(src(rbase + 'stderr.txt') == b'', 'Historical empty error stream')
+    require('-B' not in receipt['launcher_argv'], 'Historical secondary annotation remains uncorrected')
+    disclosure = src('bus_joint_energy_independent_check/SOURCE_EXPOSURE.md')
+    require(b'retrospective' in disclosure and b'python3 -B run_exact_check.py' in disclosure, 'Separate provenance disclosure retained')
+    parents = json.loads(read(PACKET + '/PARENT_BINDING.json'))
+    require(len(parents['canonical_parents']) == 1 and parents['transitive_premises'] == [], 'One direct parent; no unrelated imports')
+    parent = parents['canonical_parents'][0]
+    require(parent['path'] == PARENT_NOTE and parent['sha256'] == EXPECTED_PARENT_SHA256, 'Published canonical parent pin')
+    identity(read(PARENT_NOTE), parent)
+    require(digest(src('strongly_regular_bus_root_review/QUALIFIED_ACCEPTANCE.json')) == EXPECTED_PARENT_ACCEPTANCE, 'Parent qualification')
+    publication = json.loads(src('publication_integration/strongly_regular_bus/PUBLICATION.json'))
+    require(publication['number'] == 9631 and publication['headRefOid'] == '68c531309ac6dae96289aab964213b8c5f55969b' and publication['isDraft'] is False, 'Actual dependency regular-PR receipt')
+    require(publication['source_note']['sha256'] == EXPECTED_PARENT_SHA256, 'Publication/parent source linkage')
+    state = json.loads(read(PACKET + '/PUBLICATION_STATE.json'))
+    require(all(state[k] is None for k in ('canonical_integration', 'current_base_observation', 'primary_execution', 'publication_action', 'retained_audit')), 'Historical draft placeholders stay null')
+    require(state['scientific_programs_run_this_draft'] == 0, 'No scientific replay')
+    return {'body_map': body_map, 'parent_binding': parents, 'note_sha256': digest(note), 'source_count': len(sources), 'archive_count': len(archive)}
+
+def verify_actual_binding(read, checked):
+    require(isinstance(EXPECTED_GIT_BASE, str) and len(EXPECTED_GIT_BASE) == 40 and all(c in '0123456789abcdef' for c in EXPECTED_GIT_BASE), 'Actual base and root review are unbound')
+    actual = json.loads(read(PACKET + '/ACTUAL_BINDING.json'))
+    require(actual['kind'] == 'root_reviewed_canonical_binding' and actual['root_read_complete'] is True, 'Actual root canonical review required')
+    require(actual['note_sha256'] == checked['note_sha256'] and actual['git_base'] == EXPECTED_GIT_BASE, 'Canonical note/base linkage')
+    require(actual['source_acceptance_sha256'] == EXPECTED_ACCEPTANCE, 'Current source decision linkage')
+    def pinned(row):
+        require(row['path'] in AUDIT_INPUT_PATHS, 'Declared binding evidence')
+        raw = read(row['path']); identity(raw, row); return raw
+    freeze = json.loads(pinned(actual['source_proposal_freeze']))
+    require(freeze['scientific_programs_run_this_draft'] == 0 and freeze['primary_execution'] is None, 'Frozen draft scope')
+    review = json.loads(pinned(actual['root_review']))
+    require(review['root_read_complete'] is True and review['draft_freeze_sha256'] == actual['source_proposal_freeze']['sha256'], 'Draft substantive review linkage')
+    canonical = json.loads(pinned(actual['canonical_review']))
+    require(canonical['root_read_complete'] is True and canonical['note_sha256'] == checked['note_sha256'] and canonical['body_map'] == checked['body_map'] and canonical['parent_binding'] == checked['parent_binding'], 'Final canonical review and intervals')
+    base = json.loads(pinned(actual['base_observation']))
+    require(base['observed_commit'] == EXPECTED_GIT_BASE and base['source_revision_verified'] is True, 'Actual current-base observation')
+    execution = json.loads(pinned(base['execution']))
+    stdout = pinned(base['stdout']); stderr = pinned(base['stderr'])
+    require(execution['exit_code'] == 0 and [Path(execution['argv'][0]).name, *execution['argv'][1:]] == ['git', 'rev-parse', 'HEAD'], 'Actual base command')
+    identity(stdout, execution['stdout']); identity(stderr, execution['stderr'])
+    require(stdout.decode().strip() == EXPECTED_GIT_BASE and stderr == b'', 'Actual observed base stream')
+    require(b'canonical_parent_binding_complete: true\n' in read(NOTE).split(b'---', 2)[1], 'Bound canonical header')
+
+def main():
+    checked = verify_payload(disk_read)
+    verify_actual_binding(disk_read, checked)
+    print(json.dumps({'result': 'source_integrity_verified', 'scientific_programs_run_this_primary': 0, 'mathematics_or_retention_certified': False, **checked}, sort_keys=True))
+    print('per_element: exact source identities only; no physical element executed')
+    print('per_site: complete-space text preserved; no physical site measured')
+    print('per_mode: same-installed-K moment contract retained; no science replay')
+    print('per_block: historical executed source and unchanged streams verified only')
+    print('lattice_wide: native suppliers and independent retained audit remain separate')
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception:
+        if METADATA_CHECK_COUNTS['failed'] == 0:
+            METADATA_CHECK_COUNTS['failed'] += 1
+        raise
+    finally:
+        print('metadata_check_counts_only: identities and provenance, not scientific proof')
+        print(f"TOTAL: PASS={METADATA_CHECK_COUNTS['passed']} FAIL={METADATA_CHECK_COUNTS['failed']}")

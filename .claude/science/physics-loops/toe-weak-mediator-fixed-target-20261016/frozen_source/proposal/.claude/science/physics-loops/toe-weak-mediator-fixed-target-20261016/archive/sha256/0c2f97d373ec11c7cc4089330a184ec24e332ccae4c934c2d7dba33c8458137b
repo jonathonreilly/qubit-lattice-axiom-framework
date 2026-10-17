@@ -1,0 +1,285 @@
+# Source-exposed analytical review of the four-qubit weak mediator
+
+This is an analytical reconstruction of the root-authored proposal at SHA256 `22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b`. It is not a blind check, numerical experiment, retained-status verdict, or approval of a native physical implementation. I read the complete proposal before reconstructing the calculation. I did not execute or import scientific source, simulate the evolution, or use a numerical result to establish the argument below. The root retains the decision about qualification and publication.
+
+**Finding.** Under the explicitly supplied Bell-projector source block, the four specified port blocks, exact coefficients, and the supplied initial Bell state, the stated finite-dimensional approximation follows. The second-order signs, scalar phase, Sylvester cancellation, norm constants, full-reference scope, and initial energy identities check out. One literal terminology correction is required: “source triplets” must be replaced by “the orthogonal Bell complement” or “excited Bell states.” The coupling reaches the spin singlet as well as a spin triplet. This correction changes no Hamiltonian or bound.
+
+The proof does not supply the new interactions from the original positive onsite rays, prepare the Bell state, realize the exact coefficients with finite hardware, provide autonomous timing, or establish an exact halt or reusable controller. The cap below applies to **added** incident blocks; it does not bound the old vertex's literal `K` plus additions by 2. The external-drive work identity does not assert that the old subsystem's energy remains constant at intermediate times.
+
+## 1. Exact scope and conventions
+
+The old two-qubit Hilbert space has dimension four. The source also has dimension four; tensor order is `S1,S2,A,B`. Use the standard Pauli convention `Y|0> = i|1>`, `Y|1> = -i|0>`, and define
+
+\[
+\Phi_\pm=(|00\rangle\pm|11\rangle)/\sqrt2,
+\qquad \Psi_\pm=(|01\rangle\pm|10\rangle)/\sqrt2.
+\]
+
+The embedding is `J psi = psi tensor Phi+`; `P=JJ*`, `Q=I-P`. The actual old Hamiltonian is `K=2I+Z1 Z2`, with eigenvalues 1 and 3. The source penalty is exactly `Hc=Delta(I-|Phi+><Phi+|)`, rather than an unspecified isotropic triplet penalty. Set
+
+\[
+\theta=\arctan(4/3),\quad \delta=\theta/\pi,\quad
+\Delta=2-\delta,\quad q=\theta/T,
+\quad g_x^2=q\Delta/2,\quad g_y^2=q,
+\quad r=2(g_x+g_y),
+\]
+
+where the positive square roots are used and the supplied exact integer is
+
+`T=350208522228384946904887108861751911074590975328100424043350794320`.
+
+The target is `W=e^(i theta) e^(i theta X1 X2)`, exactly the rational complex matrix written in the proposal, since `cos(theta)=3/5` and `sin(theta)=4/5`. The target and `K` commute. This is therefore a particular energy-preserving target with respect to the literal old `K`, not an arbitrary energy-changing operation. The previously selected duration is a fixed input here; no endpoint compilation schedule or its proof is executed or imported into this construction. The unused definition `alpha=pi-theta` has no role in this proof.
+
+## 2. Bell channels and the terminology correction
+
+Directly applying each source Pauli gives
+
+\[
+X_A\Phi_+=X_B\Phi_+=\Psi_+,
+\qquad Y_A\Phi_+=-i\Psi_-,\quad Y_B\Phi_+=i\Psi_-.
+\]
+
+Consequently the actual signed port operator satisfies
+
+\[
+VJ=g_x(X_1+X_2)\otimes\Psi_+
+       -i g_y(Y_1+Y_2)\otimes\Psi_-.
+\tag{1}
+\]
+
+The two source output states in (1) are orthogonal and both have source energy `Delta`. In the usual spin terminology `Psi-` is the singlet; hence “source triplets” is not literally correct. The three-dimensional complement of `Phi+` contains it. The stated projector `Hc` already assigns the right common energy, so the correction is prose only. Replacing `Hc` by a different physical “triplet penalty” without adjusting the proof would not be justified.
+
+Equation (1) proves `J*VJ=0` and, by taking its Gram operator,
+
+\[
+J^*V^2J=g_x^2(X_1+X_2)^2+g_y^2(Y_1+Y_2)^2
+=2g_x^2(I+XX)+2g_y^2(I+YY).
+\tag{2}
+\]
+
+The minus sign in the second physical port and the opposite signs of `Y_A Phi+` and `Y_B Phi+` are both essential to the plus sign before `YY` in (2). The vanishing mixed terms follow from source-state orthogonality, rather than an assumption about the old input state.
+
+For a second direct check of all four old sectors, (1) gives
+
+| Old input | `VJ` applied to that input |
+| --- | --- |
+| `Phi+` | `2 gx Psi+ tensor Psi+` |
+| `Phi-` | `2 gy Psi+ tensor Psi-` |
+| `Psi+` | `2 gx Phi+ tensor Psi+ - 2 gy Phi- tensor Psi-` |
+| `Psi-` | `0` |
+
+Here the first ket in each product is old and the second is source. These are analytical identities, not output from a matrix program. In particular, the old singlet is an exact dark input, a useful check on the zero effective eigenvalue below.
+
+## 3. Spectral denominators and the full second-order Hamiltonian
+
+Write `P_z` for the old `ZZ` parity projector, `z=+1,-1`. Every term of `V` flips old parity. Thus `VJP_z` has unperturbed energy `2-z+Delta`, whereas `JP_z` has energy `2+z`. Their difference is
+
+\[
+D_z=\Delta-2z.
+\]
+
+It is **negative** for the even sector (`D_+=-delta`) and positive for the odd sector (`D_-=Delta+2`). The `P` block is not the globally lowest spectral band: a `Q` level `1+Delta` lies below the old level 3. No low-energy ordering assumption is used. What is needed is separation of the spectra of `H0|Q` and `K` as sets. Every difference belongs to `{Delta,Delta-2,Delta+2}`, and every absolute value is at least `delta`.
+
+The equation `H0 S1-S1 K=-VJ` therefore has the stated solution
+
+\[
+S_1P_z=-\frac{VJP_z}{D_z}.
+\tag{3}
+\]
+
+Using (2), `YY=-ZZ XX`, and the fact that the compressed square preserves parity,
+
+\[
+H_2|_z=-\frac{2(g_x^2+g_y^2)}{D_z}I
+       -\frac{2(g_x^2-zg_y^2)}{D_z}XX.
+\tag{4}
+\]
+
+The `XX` numerator in (4) is `q(Delta-2z)`, so its coefficient is exactly `-q`. The scalar coefficients in the two sectors are
+
+\[
+a_+=q(\Delta+2)/\delta=4\pi/T-q,
+\qquad a_-=-q.
+\]
+
+Their half-sum and half-difference yield
+
+\[
+H_2=(2\pi-\theta)I/T+(2\pi/T)ZZ-(\theta/T)XX.
+\tag{5}
+\]
+
+This verifies the proposed `s0` and `d`, proves Hermiticity, and proves commutation with `K`. The old Bell basis gives, in order `Phi+,Phi-,Psi+,Psi-`,
+
+\[
+\operatorname{spec}(H_2)=
+\{(4\pi-2\theta)/T,\ 4\pi/T,\ -2\theta/T,\ 0\}.
+\]
+
+Thus `||H2||=4pi/T<16/T`. Because all three terms of (5) commute,
+
+\[
+e^{-iTH_2}=e^{-i(2\pi-\theta)}e^{-i2\pi ZZ}e^{i\theta XX}
+=e^{i\theta}e^{i\theta XX}=W.
+\tag{6}
+\]
+
+The scalar is not dispensable. If one deletes `s0 I` from (5), the resulting full isometry differs at the target time by the non-small factor `|e^(i theta)-1|=2 sin(theta/2)`. Ordinary density channels would hide that error; the requested vector/isometry comparison does not.
+
+## 4. Exact residual cancellation, including the projected term
+
+The global Sylvester inverse on maps from the old space into `Q` exists by the spectral separation above. Define `S2` in `Q` by
+
+\[
+H_0S_2-S_2K=-QVS_1.
+\]
+
+For `F=J+S1+S2`, `G=K+H2`, expansion gives
+
+\[
+\begin{aligned}
+(H_0+V)F-FG
+&=(H_0J-JK)+(H_0S_1-S_1K+VJ)\\
+&\quad +(H_0S_2-S_2K+VS_1-JH_2)
+       +VS_2-S_1H_2-S_2H_2\\
+&=VS_2-S_1H_2-S_2H_2=:R.
+\end{aligned}
+\tag{7}
+\]
+
+The third bracket vanishes because `-QVS1+VS1=PVS1=J(J*VS1)=JH2`. This is the cancellation that would be lost by forgetting either the projection in the `S2` equation or the `JH2` term. No claim that `F` is an isometry is required.
+
+Both `A=H0+V` and `G` are Hermitian. Exact variation of constants gives
+
+\[
+e^{-itA}F-Fe^{-itG}
+=-i\int_0^t e^{-i(t-u)A}R e^{-iuG}\,du.
+\]
+
+Adding the two endpoint corrections for `F-J` proves
+
+\[
+\|e^{-itA}J-Je^{-itG}\|
+\le 2\|F-J\|+t\|R\|\quad(t\ge0).
+\tag{8}
+\]
+
+This proof uses unitarity of the two evolution operators, not invertibility, normalization, or spectral completeness of `F`.
+
+## 5. Norm proof and integer constants
+
+Let `v=||V||`. The triangle inequality gives `v<=2(gx+gy)=r`. In eigenbases of `H0|Q` and `K`, the Sylvester inverse divides each matrix entry by a real number of magnitude at least `delta`. Its Frobenius-norm bound is therefore `1/delta`. This is a Frobenius argument; it does not silently assume an operator-norm Schur multiplier bound.
+
+Since `J` has four orthonormal columns,
+
+\[
+\|VJ\|_F\le2v,\quad
+\|S_1\|\le\|S_1\|_F\le2v/\delta,
+\quad \|S_2\|\le\|S_2\|_F\le2v^2/\delta^2.
+\]
+
+Also `||H2||<=||J*V|| ||S1||<=2v^2/delta`. Applying these bounds to the three terms in (7) gives respectively `2v^3/delta^2`, `4v^3/delta^2`, and `4v^4/delta^3`, hence
+
+\[
+\|R\|\le6v^3/\delta^2+4v^4/\delta^3.
+\tag{9}
+\]
+
+Equations (8) and (9) reproduce the proposed error bound exactly. For `t<=2T`, `v<4/sqrt(T)` and `1/delta<4`, the four contributions are bounded by
+
+| Contribution | Bound |
+| --- | --- |
+| `4v/delta` | `64/sqrt(T)` |
+| `4v^2/delta^2` | `1024/T` |
+| `t 6v^3/delta^2` | `12288/sqrt(T)` |
+| `t 4v^4/delta^3` | `131072/T` |
+
+The sums are `12352/sqrt(T)+132096/T`, as written. The supplied decimal integer exceeds `2^128` and 24. Therefore `T+24<=2T`. Since `12352<2^14` and `132096<2^18`, this sum is strictly smaller than `2^-50+2^-110<2^-49`. No floating-point estimate is needed for these inequalities.
+
+## 6. Full output, retained scalar and reference systems
+
+For `t=T+s`, `0<=s<=24`, equations (5) and (6) give
+
+\[
+e^{-itG}=e^{-isK}W e^{-iTK}e^{-isH_2}.
+\]
+
+Dropping only the last factor costs at most `s||H2||<384/T<2^-119`. Since `Hphys=A+rI`, multiplying both comparisons by `e^(-irt)` preserves every norm. Thus the desired full-isometry error is uniformly bounded by
+
+\[
+\epsilon_*(T):=12352/\sqrt T+132480/T<2^{-48}.
+\tag{10}
+\]
+
+The source comparison vector is exactly `chi(t)=e^(-irt)Phi+`. Assigning the common scalar to this source vector fixes the stated comparison convention; it does not make a global scalar observable in an ordinary density experiment or supply a source clock. In particular, the proof has not erased `rT`.
+
+Tensoring an operator difference with an identity on an arbitrary reference preserves its operator norm. For every normalized old/reference input, (10) bounds the full four-qubit/reference output vector error. Both comparison maps are isometries, so the unhalved joint trace-norm error is at most `2 epsilon_*(T)<2^-47`. Purification and partial trace extend this to mixed old/reference inputs. The source is retained in this statement; no measurement, successful branch, source trace-out, or postselection is used to obtain it.
+
+The dark old input `Psi-` gives the exact evolution `exp[-it(1+r)] J Psi-`, and the target comparator gives the same vector. This independently checks the zero effective eigenvalue and scalar convention in one sector. The uniform argument above, rather than this particular input, supplies the arbitrary-input guarantee.
+
+The window is finite. No estimate for arbitrary later times, exact switch-off, indefinite source reuse, or accumulated error after repeated uses follows from (10).
+
+## 7. Positivity, geometry, and what the cap actually counts
+
+The angle identity `theta=pi/4+atan(1/7)` follows from the tangent addition formula in the correct first-quadrant branch. Hence `pi/4<theta<pi/2`, and using `atan(x)<x`, `pi<22/7` gives `theta<11/14+1/7=13/14<1`. It follows that `1/4<delta<1/2` and `3/2<Delta<7/4`.
+
+Each of `XX` and `YY` on a port is a Hermitian involution. Thus `g(I+P)` and `g(I-P)` have eigenvalues 0 and `2g`, for positive `g`. Their sum is exactly `rI+V`, with no missing or doubled identity reserve. The source projector term is positive with norm `Delta`; literal `K` is positive with norm 3. Therefore the full displayed Hamiltonian is positive.
+
+Each old vertex has two added incident blocks with norm sum `2gx+2gy=r`. Each source vertex has the source block and two ports, with sum `Delta+r`. Since `gx<1/sqrt(T)` and `gy<1/sqrt(T)`, `r<4/sqrt(T)<2^-62<delta`, proving `Delta+r<2`. The old added sum is also below 2. If literal `K` is counted, the old incident sum is **3+r**, so a total per-vertex cap of 2 would be false. The proposal correctly distinguishes the old block; that distinction must survive packaging.
+
+All interaction supports are among the stated square edges. No direct old-edge `XX` term is present. Constant coefficients have zero runtime slew, and `Delta<7/4` is not an arbitrarily large penalty. These facts do not derive the Bell-projector interaction or either `XX/YY` port from the original four positive onsite rays. Their availability is an additional microscopic permission. Bell preparation, installation, parameter setting, external timing, and reset remain separate obligations.
+
+## 8. Energy and work identities
+
+Let `C=K+rI`. On the initial embedded subspace, `Hphys J=JC+VJ`, with `J*VJ=0`. Taking the compression and the Gram operator gives exactly
+
+\[
+J^*H_{\rm phys}J=C,
+\qquad J^*H_{\rm phys}^2J=C^2+J^*V^2J.
+\]
+
+For any old density operator (the reduced state of any old/reference input), subtraction of the square of the mean yields
+
+\[
+\operatorname{Var}(H_{\rm phys})
+=\operatorname{Var}_\rho(K)
+ +2g_x^2(1+\langle XX\rangle_\rho)
+ +2g_y^2(1+\langle YY\rangle_\rho).
+\tag{11}
+\]
+
+This is the variance in the full initial state `rho tensor |Phi+><Phi+|`, not an operator-valued variance or a claim that every pure input has the same variance. All full-Hamiltonian moments are conserved by the static evolution. The scalar `r` changes the mean, as specified, and cancels from the variance.
+
+Because the ideal old output commutes with `K`, its old energy expectation equals the input expectation. The actual output obeys
+
+\[
+|\Delta\langle K\rangle|
+\le \|\rho_{\rm actual}-\rho_{\rm comparator}\|_1
+\le 2\epsilon_*(T),
+\]
+
+using `K-2I=ZZ` of norm 1, i.e. half the spectral width 2. This bound holds for the old marginal as well by contraction. It is an output-window estimate, not exact old-energy conservation.
+
+For an explicit counterexample to that stronger interpretation, take the old input `|00>`. Equation (2) gives `||VJ|00>||^2=2(gx^2+gy^2)`, all in old parity minus. At small physical time `u`, ordinary Taylor expansion therefore gives
+
+\[
+\langle K\rangle_u=3-4(g_x^2+g_y^2)u^2+O(u^3).
+\]
+
+The old energy changes even though the total Hamiltonian is static. Zero modeled drive work means the prescribed-Hamiltonian term `integral Tr(rho(t) dHphys/dt) dt` vanishes. It does not set internal energy exchange, absolute energy variation, Bell preparation work, or switching/installation work to zero. Those distinctions are consistent with the proposal and necessary for its use.
+
+## 9. Precision and limitations of the reconstruction
+
+For a static bounded **self-adjoint** perturbation `E`, Duhamel gives `||exp[-it(Hphys+E)]-exp(-it Hphys)||<=t||E||`. Thus the stated `(T+24)||E||` addition is a sufficient absolute error budget. It is not a necessity result. Nor does it prove that a perturbed realization preserves the specified positivity, local support, or caps; those are separate checks for an actual realization. The exact initial energy identities refer to the stated ideal Hamiltonian.
+
+A concrete cancellation example shows why necessity must not be inferred: let `E=(2pi/T) I`. At `t=T+s` the extra scalar is `exp(-i2pi s/T)`, so the uniform isometry difference on the window is at most `48pi/T`, despite the crude Duhamel budget being about `2pi`. This example concerns the stronger necessity claim, not a failure of the proposal's explicitly sufficient bound.
+
+This review checks the exact ideal coefficients and the displayed error proof. It does not compute or certify finite representations of `pi`, `atan`, square roots, `gx`, `gy`, or `r`; derive a calibration algorithm; assess hardware noise or source preparation error; run a second evolution solver; or certify native microscopic availability. A Bell-preparation error is a separate input-embedding error, not automatically included in `E`. The existing exact irrational-parameter model and its conditional approximation are analytically supported within these limits.
+
+## 10. Disposition and source exposure
+
+No internal algebraic or bound counterexample was found under the stated assumptions. The required textual correction is “source triplets” to “the orthogonal Bell complement”; the operator definitions and constants need no change on this reconstruction. The full-isometry scalar, added-only cap, fixed target, finite window, new port/source permissions, supplied Bell state and timing, and energy/work qualifications are load-bearing scope boundaries.
+
+This agent had prior exposure to the campaign's endpoint target and duration through earlier packaging work. For this check, the complete new root proposal was exposed before analysis; no author computation or independent numerical check of this new model was available or used. The derivation and counterexamples above were reconstructed analytically. Hashing, copying and freezing this review are metadata actions only. The metadata receipt is not a scientific test or an author's root approval. No original source, repository file, prompt, audit record, Git state, cache, graph, or publication was changed.
+
+The review is sealed before reading the separately announced dyadic addendum. Any later addendum assessment is an additive document with separate exposure and pins; it does not rewrite this original reconstruction.

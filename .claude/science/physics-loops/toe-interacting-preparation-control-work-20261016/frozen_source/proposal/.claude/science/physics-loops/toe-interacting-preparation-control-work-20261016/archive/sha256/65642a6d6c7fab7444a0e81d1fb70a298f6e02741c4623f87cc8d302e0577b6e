@@ -1,0 +1,42 @@
+{
+  "scope": "Metadata-only source copying, SHA256 identity and unchanged-body checking; no science replay.",
+  "launcher_argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/record_metadata.py"
+  ],
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/runs/source_capture/executed_source.py",
+    "--root",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate",
+    "--spec",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/runs/source_capture/source_spec_at_launch.json"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate",
+  "source_sha256": "1377780a11199e6d81339b9b793888d1f67937a57309fcfd4bfcf264136c671f",
+  "launcher_sha256": "b656a2a0c9997f9e3a7066449d2df066a231fe49df4901bc6e2ad7a4de5f6ddd",
+  "source_spec_sha256": "1d1a56015074fb73805607d0712f9954d277cb77f82aad17a18134d1d1dde1c6",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "cpu_limit_seconds": 30,
+  "wall_timeout_seconds": 45,
+  "started_utc": "2026-10-16T17:38:10.699713+00:00",
+  "scientific_programs_executed": 0,
+  "exit_code": 0,
+  "timeout": false,
+  "finished_utc": "2026-10-16T17:38:10.775191+00:00",
+  "elapsed_seconds": 0.07523216726258397,
+  "streams": {
+    "stdout": {
+      "bytes": 248,
+      "sha256": "09924490902000a9067b03f94489d8b75061d7d994111aecf41ad0ef7749395c"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "source_after_sha256": "1377780a11199e6d81339b9b793888d1f67937a57309fcfd4bfcf264136c671f",
+  "launcher_after_sha256": "b656a2a0c9997f9e3a7066449d2df066a231fe49df4901bc6e2ad7a4de5f6ddd",
+  "spec_after_sha256": "1d1a56015074fb73805607d0712f9954d277cb77f82aad17a18134d1d1dde1c6"
+}

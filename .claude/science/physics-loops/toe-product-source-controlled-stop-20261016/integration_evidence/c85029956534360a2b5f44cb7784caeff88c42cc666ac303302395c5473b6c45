@@ -1,0 +1,67 @@
+"""Preserve actual limited evidence, stage exact milestone files; no science execution."""
+from pathlib import Path
+import ast,datetime,difflib,hashlib,json,os,shutil,subprocess,sys
+N=Path(__file__).resolve().parents[1];T=N.parent;W=T/'correlation_worktree';D=N/'publication_integration/controlled_stop'
+P='.claude/science/physics-loops/toe-product-source-controlled-stop-20261016'
+S=N/'product_source_controlled_stop_publication_draft';NOTE='docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md';HELPER='scripts/product_source_controlled_stop_2026_10_16.py'
+def pin(p):
+ p=Path(p);b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(Path(p).read_bytes())
+def write(p,x):Path(p).write_text(json.dumps(x,indent=2)+'\n')
+def git(*args):return subprocess.check_output(['git','-C',str(W),*args])
+def same(p,r):assert {k:pin(p)[k] for k in ('bytes','sha256')}=={k:r[k] for k in ('bytes','sha256')},str(p)
+for name in ['controlled_stop_prepare','controlled_stop_check','controlled_stop_refine','controlled_stop_qualified_check']:
+ e=read(N/'runs'/name/'EXECUTION.json');assert e['exit_code']==0
+ for k in ('stdout','stderr'):same(e[k]['path'],e[k])
+prepared=read(D/'FINAL_CANONICAL.json');same(W/NOTE,prepared['note']);same(W/HELPER,prepared['primary'])
+for p,r in prepared['files'].items():same(W/p,r)
+assert git('rev-parse','HEAD').decode().strip()=='6cd71718e16ef60505a210ff0a47559970753ab8'
+assert git('diff','--cached','--name-only')==b'' and git('diff','--name-only').decode().splitlines()==['docs/audit/data/citation_graph_manifest.json']
+for row in read(W/P/'CANONICAL_BODY_MAP.json'):
+ b=(W/NOTE).read_bytes()[row['start_byte']:row['end_byte']];assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256']
+captured={}
+selected=[D/n for n in ['BASE.json','ROOT_WRAPPER_REVIEW.json','PREPARED.json','CANONICAL_NOTE.diff','CANONICAL_RESULT.json','CANONICAL_EXECUTION.json','GRAPH_VERIFICATION.json']]
+selected+=[N/'bootstrap/integrate_controlled_stop.py',Path(__file__),N/'run.py']
+selected+=[N/'bootstrap/integrate_controlled_stop_qualified.py',N/'bootstrap/refine_controlled_stop_wrapper.py',D/'FINAL_CANONICAL.json',D/'WRAPPER_REFINEMENT.diff']
+selected+=[p for p in (D/'qualified_checks').rglob('*') if p.is_file() and p.name not in ['GRAPH_BEFORE.json','MANIFEST_BEFORE.json']]
+selected += [p for p in (D/'runs').rglob('*') if p.is_file()]
+selected += [p for name in ['controlled_stop_prepare','controlled_stop_check','controlled_stop_refine','controlled_stop_qualified_check'] for p in (N/'runs'/name).iterdir() if p.is_file()]
+for p in selected:
+ r=pin(p);rel=P+'/integration_evidence/'+r['sha256'];q=W/rel;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes(p.read_bytes());captured[str(p)]={**r,'stored_path':rel}
+write(W/P/'PUBLICATION_EVIDENCE.json',dict(originals=captured,scope='Selected actual integration evidence; no recursive archive or scientific replay. Full graph baseline remains in the local renewal directory.'))
+review='''# Integration review and recovery
+
+Root reviewed the complete new wrapper, source helper, assembly/finalization code, source receipts and streams. Ten full previously accepted mathematical arguments, analytical reviews and controlling qualifications remain byte-identical; CANONICAL_BODY_MAP binds their actual moved offsets. The separate exposed checks use the selected model and known source arguments. They are not blind checks or retained audit.
+
+The only primary changes are its default frozen-packet directory and the explicit audit input list. Every function AST is unchanged. The primary verifies the historical source packet; its null approval/canonical/publication fields describe that historical packet. Those fields neither veto nor supply the root's separate actual decisions here. The new note changes wrapper status, its primary label and one reviewed marginal-error sentence. The final exposed wrapper review correctly flagged that proximity to a pure source marginal can imply a separately priced full-joint conversion. Root narrowed the wording to require that separate conversion bound; no theorem constants or immutable bodies changed. Initial and qualified checks remain separate actual records. Its sole direct mathematical parent is the product-source theorem at SHA2564e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20, selected base PR9656/head6cd71718e16ef60505a210ff0a47559970753ab8. Weak-mediator machinery is transitive.
+
+Actual source metadata verification and intentional approval-refusal results are preserved unchanged. Actual canonical execution is provenance only, with full cache result. It checks ten bodies,59 evidence aliases,107 selected freeze members and six historical metadata receipts. There is no new scientific program, coefficient emission, simulation or experiment. The cache combines child stderr into stdout. The current helper deliberately requires the pinned original local evidence and saved parent paths; the frozen packet is a selected recovery archive, not a standalone portable science replay.
+
+Exact graph comparison preserves every previous node, edge and root and adds one nonroot child with one product-source dependency. Vocabulary and whitespace/readiness checks have their stated narrow scope and are not mathematical evidence. Complete raw receipts are preserved by hash; original fields were not invented or rewritten. Publication is conditional-support; independent audit remains open.
+
+Linear and C1 installation/stopping are distinct externally controlled schedules. All scalar phases, literal old generator, total old age, old/source/reference outputs and actual intermediate correlations remain. Exact final switch-off and zero source drift supply persistent accuracy in the free-old interaction picture. The separately attributed integrable-tail implication needs its own certified allowance. Signed mean drive work does not price source production, clock/apparatus recovery or thermodynamic fluctuations. Native controls, autonomous halt, exact source reset and indefinite reuse remain unresolved. No editable prompt, physical axiom, model setting, main branch or audit verdict changed.
+'''
+(W/P/'INTEGRATION_REVIEW.md').write_text(review)
+body='''Bounded-slew installation and externally scheduled switch-off now compose with the supplied product-source mediator. The complete output bound retains source correlations, scalar phases and actual old-system aging. A separate cubic C1 schedule imposes a fixed minimum ramp duration; linear and cubic schedules retain their distinct slew thresholds and signed mean-work constants.
+
+This regular milestone PR depends on #9656. Source preparation, matched positive controls, timing and exact final switch-off remain premises. Persistence is in the free-old interaction picture. Autonomous halt, native control hardware, exact reset, indefinite reuse and apparatus work costs remain open.
+
+Validation: four source-exposed same-model analytical checks, two controlling root source decisions, complete wrapper review and ten unchanged bodies. The canonical provenance helper and exact graph checks passed; saved metadata is not a scientific simulation or retained audit. Original local evidence paths are still required by that helper. Full source and integration receipts accompany the note. No science merge, main push, editable prompt or physical axiom change.
+'''
+(D/'PR_BODY.md').write_text(body)
+paths=sorted([str(p.relative_to(W)) for p in (W/P).rglob('*') if p.is_file()]+[NOTE,HELPER,'docs/audit/data/citation_graph_manifest.json','logs/runner-cache/product_source_controlled_stop_2026_10_16.txt'])
+# Preserve historical whitespace only at exact archived paths; never normalize original evidence.
+whitespace=[]
+for rel in paths:
+ if '/frozen_source/' not in rel and '/integration_evidence/' not in rel:continue
+ b=(W/rel).read_bytes()
+ if any(x.rstrip(b'\r\n').endswith((b' ',b'\t')) for x in b.splitlines(keepends=True)) or b.endswith(b'\n\n'):whitespace.append(rel)
+if whitespace:
+ a=W/'.gitattributes';prior=a.read_text();(D/'GITATTRIBUTES_BEFORE').write_text(prior)
+ a.write_text(prior+'\n# Exact historical evidence for controlled-stop milestone.\n'+''.join(p+' whitespace=-blank-at-eol,-blank-at-eof\n' for p in whitespace));paths.append('.gitattributes')
+write(D/'HISTORICAL_WHITESPACE.json',dict(paths=whitespace,original_bytes_preserved=True))
+subprocess.run(['git','-C',str(W),'add','--',*paths],check=True)
+assert set(git('diff','--cached','--name-only').decode().splitlines())==set(paths)
+assert git('diff','--name-only')==b'' and git('ls-files','--others','--exclude-standard')==b''
+write(D/'STAGED.json',dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),base=git('rev-parse','HEAD').decode().strip(),index_sha256=hashlib.sha256(git('ls-files','--stage','-z')).hexdigest(),paths={p:pin(W/p) for p in sorted(paths)},scientific_executions=0,editable_prompt_files_changed=[]))
+print(json.dumps(dict(staged_paths=len(paths),staged=pin(D/'STAGED.json'),historical_whitespace_paths=len(whitespace),pr_body=pin(D/'PR_BODY.md'))))

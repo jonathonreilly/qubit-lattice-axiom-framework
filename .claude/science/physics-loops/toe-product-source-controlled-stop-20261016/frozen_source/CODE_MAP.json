@@ -1,0 +1,156 @@
+{
+  "files": [
+    {
+      "path": "build_packet.py",
+      "bytes": 5428,
+      "sha256": "a0d429f880b1b1d238b27f115c953130073a1ecaa4f8ddeea32c432bb1a0db80",
+      "functions": [
+        {
+          "name": "ident",
+          "start_line": 6,
+          "end_line": 6,
+          "sha256": "9d9ebe72d11fcec9ced4ab6c9ecd60ac67ce795b3c8b1a55a119c22327a711ef",
+          "reuse": "exact ident function from exposed review inspectors"
+        },
+        {
+          "name": "write",
+          "start_line": 7,
+          "end_line": 8,
+          "sha256": "d63eebdb3fed5db8b2fc792b0079fe8b6a268fd6531c965bae87dfce7fa81019",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "js",
+          "start_line": 9,
+          "end_line": 9,
+          "sha256": "651a7a45cc945bbd7dff5a7d710d9b421d32e47697a458876071ad29e41a20df",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "capture",
+          "start_line": 29,
+          "end_line": 31,
+          "sha256": "265427fa4b2aafc7ae2b0cf1c05729f79e96fb532575260cb0c89657d8215e9f",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        }
+      ],
+      "module_changes": "all module setup/control flow new for this scoped packet"
+    },
+    {
+      "path": "proposal/scripts/product_source_controlled_stop_2026_10_16.py",
+      "bytes": 5647,
+      "sha256": "14f998b28da31ab9a6bf8c6cf3221c11904e0248f603cf917b52c356a0de509b",
+      "functions": [
+        {
+          "name": "ident",
+          "start_line": 6,
+          "end_line": 6,
+          "sha256": "9d9ebe72d11fcec9ced4ab6c9ecd60ac67ce795b3c8b1a55a119c22327a711ef",
+          "reuse": "exact ident function from exposed review inspectors"
+        },
+        {
+          "name": "require",
+          "start_line": 7,
+          "end_line": 8,
+          "sha256": "edfd63747ec3e30edd37a7065b2f160633cabf0b0864f4dabd0d3f8fb254d35f",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "same",
+          "start_line": 9,
+          "end_line": 9,
+          "sha256": "cb05e062a4964a7efe25fa61eb572edb2d38a946347dfba2a1e694485e503c83",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "local",
+          "start_line": 10,
+          "end_line": 11,
+          "sha256": "e58d4affdd3e6eaeba1a24576759ed7a17c564b972727908bf0489a56a14fe63",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "verify",
+          "start_line": 13,
+          "end_line": 60,
+          "sha256": "952777eb3b5bfeb83d9a5775316a6646a8801da7725c770e6e9680c5d804a4fc",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "saved",
+          "start_line": 25,
+          "end_line": 25,
+          "sha256": "0ba1823c5775f04e1a6255aec1b2cd06d893f32ed571db047d18b9c817e9a5cb",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "original_and_saved",
+          "start_line": 26,
+          "end_line": 27,
+          "sha256": "e3f5cec5be2c43e22ae31b94a378a74e6627e2ca44e789832bd04360d019f9a2",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "main",
+          "start_line": 62,
+          "end_line": 74,
+          "sha256": "6f22389191c90165a4a5e3c6dc31f02fe031e5875a7aa3976094861e3720bd48",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        }
+      ],
+      "module_changes": "all module setup/control flow new for this scoped packet"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1776,
+      "sha256": "fc5f8d75de948cf8fd6363dc8da6e03608a692cf05fde1507a36ee589cf711b6",
+      "functions": [
+        {
+          "name": "pin",
+          "start_line": 9,
+          "end_line": 10,
+          "sha256": "c435c8b1374d2a1ac030df1451c5a07c02df27161eca095022816dba6e2b1b2c",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        }
+      ],
+      "module_changes": "all module setup/control flow new for this scoped packet"
+    },
+    {
+      "path": "finalize_packet.py",
+      "bytes": 8947,
+      "sha256": "4afb935ef820025434503af5ba38ba347ab98a03e2427e0b1a5a9d7af568b82e",
+      "functions": [
+        {
+          "name": "pin",
+          "start_line": 6,
+          "end_line": 7,
+          "sha256": "eeb30f4da2c2171892d5baad64a85bf55d1100b82c0c52de05a7d31ac7ad821e",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        },
+        {
+          "name": "dump",
+          "start_line": 8,
+          "end_line": 8,
+          "sha256": "548d9742e1bb14757224107559183b6dad65e6e87edfe7f4671be6750bcc96f6",
+          "reuse": "new scoped metadata code; no scientific function reuse"
+        }
+      ],
+      "module_changes": "all module setup/control flow new for this scoped packet"
+    }
+  ],
+  "reuse": {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_external_stop_exposed_check/inspect_sources.py",
+    "source_sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7",
+    "function": "ident",
+    "source_lines": [
+      8,
+      8
+    ],
+    "function_sha256": "9d9ebe72d11fcec9ced4ab6c9ecd60ac67ce795b3c8b1a55a119c22327a711ef",
+    "exact_targets": [
+      "build_packet.py:ident",
+      "proposal/scripts/product_source_controlled_stop_2026_10_16.py:ident"
+    ],
+    "all_other_code": "new bounded metadata bookkeeping; not copied or scientifically executed"
+  }
+}

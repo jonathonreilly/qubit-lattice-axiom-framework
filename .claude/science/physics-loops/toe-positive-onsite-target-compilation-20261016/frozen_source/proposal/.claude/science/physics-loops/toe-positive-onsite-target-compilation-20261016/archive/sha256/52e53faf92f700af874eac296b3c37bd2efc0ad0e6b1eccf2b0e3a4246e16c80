@@ -1,0 +1,516 @@
+#!/usr/bin/env python3
+"""One fixed 32-iteration target attempt, exact integer/Fraction enclosures.
+
+No floating arithmetic, numerical derivative, new recurrence or adaptive retry.
+Saved rectangles enclose exact truncated products. Analytic tails are added
+explicitly before coordinates are used and before the final residual decision.
+"""
+from fractions import Fraction as Q
+from math import factorial, isqrt, lcm
+from pathlib import Path
+import hashlib
+import json
+import sys
+
+BITS = 768
+S = 1 << BITS
+ORDER = 320
+DISP = 1 << 128
+N_RECUR = 98611368294597721931914764889297593425141587534996842205
+M_REPEAT = 147975046
+T_END = 350208522228384946904887108861751911074590975328100424043350794320
+EPS = Q(1, 1 << 40)
+CHART_T = Q(25, 229376)
+CHART_R = Q(25, 231211008)
+E0 = Q(384*81, 1 << 321)
+ETA_D = 2*N_RECUR*E0
+ZERO = (0, 0, 0, 0)
+ONE = (S, S, 0, 0)
+
+
+def ceildiv(a, b):
+    assert b > 0
+    return -((-a)//b)
+
+
+def scale(a, k):
+    lo, hi = a
+    return (k*lo, k*hi) if k >= 0 else (k*hi, k*lo)
+
+
+def add(a, b):
+    return tuple(a[j]+b[j] for j in range(4))
+
+
+def divide(a, b):
+    assert b > 0
+    return (a[0]//b, ceildiv(a[1], b), a[2]//b, ceildiv(a[3], b))
+
+
+def gaussian(a, r, i):
+    ar, bi = scale(a[:2], r), scale(a[2:], i)
+    ai, br = scale(a[2:], r), scale(a[:2], i)
+    return (ar[0]-bi[1], ar[1]-bi[0], ai[0]+br[0], ai[1]+br[1])
+
+
+def rprod(a, b):
+    values = [a[0]*b[0], a[0]*b[1], a[1]*b[0], a[1]*b[1]]
+    return min(values), max(values)
+
+
+def multiply(a, b):
+    ac, bd = rprod(a[:2], b[:2]), rprod(a[2:], b[2:])
+    ad, bc = rprod(a[:2], b[2:]), rprod(a[2:], b[:2])
+    return ((ac[0]-bd[1])//S, ceildiv(ac[1]-bd[0], S),
+            (ad[0]+bc[0])//S, ceildiv(ad[1]+bc[1], S))
+
+
+def ident():
+    return [ONE if i == j else ZERO for i in range(4) for j in range(4)]
+
+
+def mmul(a, b):
+    result = []
+    for i in range(4):
+        for j in range(4):
+            value = ZERO
+            for k in range(4):
+                value = add(value, multiply(a[4*i+k], b[4*k+j]))
+            result.append(value)
+    return result
+
+
+def adjoint(a):
+    result = []
+    for i in range(4):
+        for j in range(4):
+            rl, rh, il, ih = a[4*j+i]
+            result.append((rl, rh, -ih, -il))
+    return result
+
+
+def subtract(a, b):
+    return [(v[0]-w[1], v[1]-w[0], v[2]-w[3], v[3]-w[2]) for v, w in zip(a, b)]
+
+
+def gmul(a, b):
+    return (a[0]*b[0]-a[1]*b[1], a[0]*b[1]+a[1]*b[0])
+
+
+def kron(a, b):
+    return [gmul(a[2*(i//2)+j//2], b[2*(i%2)+j%2]) for i in range(4) for j in range(4)]
+
+
+I2 = [(1,0),(0,0),(0,0),(1,0)]
+X = [(0,0),(1,0),(1,0),(0,0)]
+Y = [(0,0),(0,-1),(0,1),(0,0)]
+Z2 = [(1,0),(0,0),(0,0),(-1,0)]
+I4 = kron(I2, I2)
+XX, ZZ = kron(X, X), kron(Z2, Z2)
+PAULIS = [kron(a, b) for a in (I2,X,Y,Z2) for b in (I2,X,Y,Z2)]
+RAYS = []
+for p in (kron(X,I2), kron(Y,I2), kron(I2,X), kron(I2,Y)):
+    RAYS.append([(p[k][0]+I4[k][0], p[k][1]+I4[k][1]) for k in range(16)])
+KDIAG = [3,1,1,3]
+
+
+def coefficients(amplitude, ray, step):
+    x = Q(step, 8)
+    p = [16*x*x*(1-x)**2, 32*x*(1-x)*(1-2*x),
+         16-96*x+96*x*x, -32+64*x, Q(16)]
+    matrices, den = [], 1
+    for k in range(5):
+        matrix = []
+        for row in range(4):
+            for col in range(4):
+                pr, pi = ray[4*row+col]
+                ar, ai = amplitude*p[k]*pi, -amplitude*p[k]*pr
+                if k == 0 and row == col:
+                    ai -= KDIAG[row]
+                matrix.append((ar, ai))
+                den = lcm(den, ar.denominator, ai.denominator)
+        matrices.append(matrix)
+    result = []
+    for matrix in matrices:
+        rows = []
+        for row in range(4):
+            entries = []
+            for col in range(4):
+                r, i = matrix[4*row+col]
+                nr, ni = r*den, i*den
+                assert nr.denominator == ni.denominator == 1
+                if nr or ni:
+                    entries.append((col, nr.numerator, ni.numerator))
+            rows.append(entries)
+        result.append(rows)
+    return result, den
+
+
+def step_polynomial(amplitude, ray, step):
+    aa, den = coefficients(amplitude, ray, step)
+    uu = [ident()]
+    for n in range(ORDER):
+        un = [ZERO]*16
+        for k in range(min(4,n)+1):
+            right = uu[n-k]
+            for row, entries in enumerate(aa[k]):
+                for col in range(4):
+                    pos, value = 4*row+col, un[4*row+col]
+                    for j, r, i in entries:
+                        value = add(value, gaussian(right[4*j+col], r, i))
+                    un[pos] = value
+        uu.append([divide(value, den*(n+1)) for value in un])
+    value = uu[-1]
+    for coefficient in reversed(uu[:-1]):
+        value = [add(divide(v, 8), a) for v, a in zip(value, coefficient)]
+    return value
+
+
+def ration(value):
+    value = Q(value)
+    return {'numerator': value.numerator, 'denominator': value.denominator}
+
+
+def unrat(value):
+    return Q(value['numerator'], value['denominator'])
+
+
+def write(path, value):
+    path.write_text(json.dumps(value, indent=2) + '\n')
+
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+
+def interval_q(value):
+    return [ration(value[0]), ration(value[1])]
+
+
+def qadd(a, b):
+    return a[0]+b[0], a[1]+b[1]
+
+
+def qscale(a, k):
+    return (k*a[0], k*a[1]) if k >= 0 else (k*a[1], k*a[0])
+
+
+def dyadic_interval(a, bits):
+    denominator = 1 << bits
+    low, high = a[0]*denominator, a[1]*denominator
+    return Q(low.numerator//low.denominator, denominator), Q(ceildiv(high.numerator, high.denominator), denominator)
+
+
+def nearest(a):
+    return (2*a.numerator+a.denominator)//(2*a.denominator)
+
+
+def atan_reciprocal(q):
+    partial = sum((Q((-1)**k, (2*k+1)*q**(2*k+1)) for k in range(128)), Q(0))
+    tail = Q(1, 257*q**257)
+    return (partial, partial+tail), {'q': q, 'terms': 128,
+                                   'partial': ration(partial), 'alternating_remainder_upper': ration(tail)}
+
+
+def exp_i(angle):
+    assert -4 < angle[0] <= angle[1] < 4
+    lo, hi = dyadic_interval(angle, BITS)
+    z = (0, 0, int(lo*S), int(hi*S))
+    value = ONE
+    for k in range(256, 0, -1):
+        value = add(ONE, divide(multiply(z, value), k))
+    tail = Q(81*4**257, factorial(257))
+    pad = ceildiv(tail.numerator*S, tail.denominator)
+    padded = (value[0]-pad, value[1]+pad, value[2]-pad, value[3]+pad)
+    return padded, {'angle_interval': interval_q(angle), 'truncated_interval': value,
+                    'tail_operator_bound': ration(tail), 'tail_padding_integer_per_component': pad,
+                    'analytic_exponential_interval': padded}
+
+
+def target_enclosures(output):
+    a5, c5 = atan_reciprocal(5)
+    a239, c239 = atan_reciprocal(239)
+    a7, c7 = atan_reciprocal(7)
+    pi_raw = qadd(qscale(a5, 16), qscale(a239, -4))
+    pi = dyadic_interval(pi_raw, 512)
+    phase_progress = {'arctangent_certificates': [c5,c239,c7],
+                      'pi_raw_interval': interval_q(pi_raw), 'pi_dyadic_interval': interval_q(pi)}
+    write(output/'PHASE_PROGRESS.json', phase_progress)
+    assert 3 < pi[0] < pi[1] < 4 and pi[1]-pi[0] <= Q(1, 1 << 508)
+    pi_mid = sum(pi)/2
+    k = nearest(Q(T_END)/(2*pi_mid))
+    theta = qadd((Q(T_END), Q(T_END)), qscale(pi, -2*k))
+    phase_progress.update({'T_reduction_integer': k, 'theta_interval': interval_q(theta), 'branches': []})
+    write(output/'PHASE_PROGRESS.json', phase_progress)
+    assert -4 < theta[0] <= theta[1] < 4
+    phi_w = qadd(qscale(pi, Q(1,2)), qscale(a7, 2))
+    rooted, branches = [ZERO]*16, []
+    for zsign in (1,-1):
+        for xsign in (1,-1):
+            raw = qscale(theta, -(2+zsign))
+            if xsign == 1:
+                raw = qadd(raw, phi_w)
+            m = nearest((sum(raw)/2)/(2*pi_mid))
+            phase = qadd(raw, qscale(pi, -2*m))
+            phase_progress['branches'].append({'z': zsign, 'x': xsign,
+                                               'reduction_integer': m, 'phase_interval': interval_q(phase)})
+            write(output/'PHASE_PROGRESS.json', phase_progress)
+            assert -4 < phase[0] <= phase[1] < 4
+            exponential, certificate = exp_i(qscale(phase, Q(1,M_REPEAT)))
+            # Exact numerator of (I+z ZZ)(I+x XX)/4, in Gaussian integers.
+            left = [(I4[j][0]+zsign*ZZ[j][0], I4[j][1]+zsign*ZZ[j][1]) for j in range(16)]
+            right = [(I4[j][0]+xsign*XX[j][0], I4[j][1]+xsign*XX[j][1]) for j in range(16)]
+            projector = []
+            for row in range(4):
+                for col in range(4):
+                    terms = [gmul(left[4*row+j], right[4*j+col]) for j in range(4)]
+                    projector.append((sum(v[0] for v in terms), sum(v[1] for v in terms)))
+            rooted = [add(old, divide(gaussian(exponential, pr, pii), 4))
+                      for old, (pr, pii) in zip(rooted, projector)]
+            branches.append({'z': zsign, 'x': xsign, 'phase_reduction_integer': m,
+                             'phase_interval': interval_q(phase), 'projector_gaussian_numerator': projector,
+                             'projector_denominator': 4, 'exponential': certificate})
+    zeta, zeta_certificate = exp_i(qscale(theta, -1))
+    zeta3 = multiply(multiply(zeta, zeta), zeta)
+    diagonal = [zeta3, zeta, zeta, zeta3]
+    target = []
+    for row in range(4):
+        for col in range(4):
+            j = 4*row+col
+            wr = 9*I4[j][0]-16*XX[j][0]
+            wi = 12*I4[j][0]+12*XX[j][0]
+            target.append(divide(gaussian(diagonal[col], wr, wi), 25))
+    certificate = {'scale_bits': BITS, 'scale_denominator': S,
+                   'arctangent_certificates': [c5,c239,c7], 'pi_raw_interval': interval_q(pi_raw),
+                   'pi_dyadic_interval': interval_q(pi), 'pi_width': ration(pi[1]-pi[0]),
+                   'T_reduction_integer': k, 'theta_interval': interval_q(theta),
+                   'phi_w_interval': interval_q(phi_w), 'root_branches': branches,
+                   'root_actual_unitary_interval': rooted, 'direct_zeta': zeta_certificate,
+                   'direct_actual_target_interval': target, 'analytic_exponential_tails_included': True}
+    write(output/'TARGET_ENCLOSURES.json', certificate)
+    return rooted, target
+
+
+def coordinates(matrix, analytic_error):
+    """Enclose coeff Im(matrix_true), incl. every analytic operator error."""
+    pad = ceildiv(analytic_error.numerator*S, analytic_error.denominator)
+    result = []
+    for pauli in PAULIS:
+        value = ZERO
+        for row in range(4):
+            for col in range(4):
+                pr, pi = pauli[4*row+col]
+                value = add(value, gaussian(matrix[4*col+row], pr, pi))
+        value = divide(value, 4)
+        result.append((value[2]-pad, value[3]+pad))
+    return result, pad
+
+
+def checked_midpoints(coords):
+    assert len(coords) == 16
+    for low, high in coords:
+        assert low <= high and Q(high-low, 2*S) <= Q(1, 1 << 110), 'coordinate-radius bound failed'
+    return [Q(low+high, 2*S) for low, high in coords]
+
+
+def endpoint(amplitudes, output, iteration):
+    global_u, pulses = ident(), []
+    for j, amplitude in enumerate(amplitudes):
+        assert Q(1,4) <= amplitude <= Q(3,4)
+        local = ident()
+        for k in range(8):
+            local = mmul(step_polynomial(amplitude, RAYS[j%4], k), local)
+        global_u = mmul(local, global_u)
+        pulses.append(local)
+    path = output/f'ENDPOINT_{iteration:02d}.json'
+    write(path, {'iterate': iteration, 'scale_denominator': S, 'order': ORDER,
+                 'amplitudes': [ration(a) for a in amplitudes],
+                 'all_slot_intervals': pulses, 'truncated_endpoint_interval': global_u,
+                 'separate_analytic_operator_error': ration(E0)})
+    print('ENDPOINT_SAVED', iteration, json.dumps(pin(path)), flush=True)
+    return global_u
+
+
+def power(matrix, exponent, output):
+    result, base, remaining, bit = ident(), matrix, exponent, 0
+    trace, products = [], 0
+    while remaining:
+        used = bool(remaining & 1)
+        if used:
+            result = mmul(base, result)
+            products += 1
+        remaining >>= 1
+        if remaining:
+            base = mmul(base, base)
+            products += 1
+        trace.append({'bit': bit, 'multiply_used': used, 'remaining': remaining,
+                      'result': result, 'next_base': base if remaining else None})
+        bit += 1
+    write(output/'FINAL_POWER_TRACE.json', {'scale_denominator': S, 'exponent': exponent,
+                                           'products': products, 'steps': trace})
+    return result, products
+
+
+def load_pinned(path, sha):
+    raw = path.read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == sha, str(path)
+    return json.loads(raw)
+
+
+def main():
+    packet, output = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
+    assert packet.name == 'endpoint_target_compilation_candidate' and output.parent == packet
+    output.mkdir(exist_ok=False)
+    spec = json.loads((packet/'ATTEMPT.json').read_text())
+    assert (spec['n'],spec['M'],spec['T'],spec['iterations'],spec['displacement_bits']) == (N_RECUR,M_REPEAT,T_END,32,128)
+    assert spec['W_identity_gaussian_numerator'] == [9,12] and spec['W_XX_gaussian_numerator'] == [-16,12]
+    assert spec['W_denominator'] == 25 and spec['epsilon_denominator'] == 1 << 40
+    assert (spec['interval_bits'],spec['endpoint_order'],spec['substeps_per_slot'],spec['phase_dyadic_bits'],
+            spec['arctan_terms'],spec['exponential_order']) == (768,320,8,512,128,256)
+    assert T_END == 24*M_REPEAT*N_RECUR and T_END < 1 << 220
+    assert M_REPEAT == (16/CHART_R).__floor__()+1 and Q(4,M_REPEAT) < CHART_R/4
+    data = load_pinned(packet/'inputs/SELECTED_INPUT.json', 'c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80')
+    chart = load_pinned(packet/'inputs/CHART_CERTIFICATE.json', 'd4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509')
+    nominal = load_pinned(packet/'inputs/NOMINAL_ENDPOINT.json', '454d338285d0bf91c51b50ddbc23e2b3dc21732e3092ace5b1ed2aaea76878de')
+    recurrence = load_pinned(packet/'inputs/RECURRENCE_CERTIFICATE.json', '380442c9eeac834fd353512a451e6fa098eeec82c6d0fdc1906f4d39f1622314')
+    assert unrat(chart['residual_frobenius_square_upper']) < Q(1,1 << 76)
+    assert unrat(chart['inverse_frobenius_square_exact']) <= 63**2
+    assert chart['inverse_numerators'] == data['rational_inverse_numerators']
+    assert chart['inverse_denominator'] == data['rational_inverse_denominator'] == 1 << 40
+    assert nominal['scale_denominator'] == recurrence['scale_denominator'] == S
+    assert nominal['taylor_order'] == recurrence['taylor_order'] == ORDER
+    assert unrat(nominal['global_endpoint_operator_error']) == E0
+    assert unrat(recurrence['endpoint_analytic_error']) == E0 and unrat(recurrence['analytic_power_error']) == ETA_D
+    assert recurrence['positive_integer_n'] == N_RECUR
+    assert unrat(recurrence['strict_decimal_operator_norm_bound']) <= Q(1,10**13)
+    nums = data['amplitude_numerators']
+    selected = data['selected_zero_based_indices']
+    assert nums == [192+((73*j+41)%128) for j in range(24)] and data['amplitude_denominator'] == 512
+    assert selected == [1,21,4,3,7,5,2,6,8,10,11,12,17,9,19,13]
+    assert data['pulse_channels'] == [j%4 for j in range(24)]
+    inverse = [[Q(v,1 << 40) for v in row] for row in data['rational_inverse_numerators']]
+    uhat, dhat = nominal['truncated_endpoint_interval'], recurrence['full_U4_power_interval']
+    assert Q(1,10**13)+Q(4,M_REPEAT) < CHART_R/2
+    assert Q(1,1 << 38)+63*Q(4096,225)*CHART_T < Q(1,4)
+    d_bound = 63*2*Q(1,1 << 108)+Q(1,1 << 127)
+    assert d_bound < Q(1,1 << 100) and d_bound < CHART_T/32
+    contraction_error = CHART_T*Q(1,4)**32+Q(4,3)*Q(1,1 << 100)
+    assert 4*Q(16,15)*M_REPEAT*contraction_error < Q(1,1 << 45) < EPS
+    print('FIXED_TARGET_ATTEMPT_START iterations=32 displacement_bits=128 interval_bits=768 order=320', flush=True)
+    rooted, target = target_enclosures(output)
+    y_coords, y_pad = coordinates(mmul(adjoint(dhat), rooted), ETA_D)
+    write(output/'Y_COORDINATES.json', {'scale_denominator': S, 'padded_coordinates': y_coords,
+                                      'analytic_operator_error': ration(ETA_D), 'pad_integer': y_pad,
+                                      'target_analytic_errors_already_inside_rectangle': True})
+    y_mid = checked_midpoints(y_coords)
+    gamma = E0*(1+E0)+E0
+    x = [Q(0)]*16
+    for iteration in range(32):
+        assert sum(v*v for v in x) <= CHART_T**2
+        amplitudes = [Q(v,512) for v in nums]
+        for j, value in zip(selected, x):
+            amplitudes[j] += value
+        if iteration == 0:
+            g_coords, g_pad, g_endpoint = [(0,0)]*16, 0, None
+        else:
+            g_endpoint = endpoint(amplitudes, output, iteration)
+            g_coords, g_pad = coordinates(mmul(adjoint(uhat), g_endpoint), gamma)
+        # Preserve every padded interval before checking widths or taking midpoints.
+        step = {'iteration': iteration, 'input_x': [ration(v) for v in x],
+                'input_squared_norm': ration(sum(v*v for v in x)), 'G_padded_coordinates': g_coords,
+                'G_analytic_operator_error': ration(gamma if iteration else 0), 'G_pad_integer': g_pad,
+                'coordinate_scale_denominator': S, 'G_at_zero_exact': iteration == 0}
+        step_path = output/f'ITERATION_{iteration:02d}.json'
+        write(step_path, step)
+        g_mid = checked_midpoints(g_coords)
+        value = [x[i]+sum(inverse[i][j]*(y_mid[j]-g_mid[j]) for j in range(16)) for i in range(16)]
+        new_x = [Q(nearest(v*DISP), DISP) for v in value]
+        step.update({'y_midpoints': [ration(v) for v in y_mid], 'G_midpoints': [ration(v) for v in g_mid],
+                     'unrounded_map_value': [ration(v) for v in value],
+                     'output_displacement_numerators': [int(v*DISP) for v in new_x],
+                     'displacement_denominator': DISP, 'output_squared_norm': ration(sum(v*v for v in new_x)),
+                     'coordinate_radius_checks_succeeded': True})
+        write(step_path, step)
+        assert sum(v*v for v in new_x) <= (CHART_T/2)**2, 'iterate left certified interior'
+        x = new_x
+        print('CALIBRATION_ITERATION_COMPLETE', iteration+1, flush=True)
+    amplitudes = [Q(v,512) for v in nums]
+    for j, value in zip(selected, x):
+        amplitudes[j] += value
+    assert all(Q(1,4) <= a <= Q(3,4) for a in amplitudes)
+    fhat = endpoint(amplitudes, output, 32)
+    block = mmul(mmul(dhat, adjoint(uhat)), fhat)
+    beta = ETA_D*(1+E0)*(1+E0)+E0*(1+E0)+E0
+    assert M_REPEAT*beta < Q(1,2)
+    powered, products = power(block, M_REPEAT, output)
+    residual = subtract(powered, target)
+    square_numerator = sum(max(abs(v[0]),abs(v[1]))**2+max(abs(v[2]),abs(v[3]))**2 for v in residual)
+    square = Q(square_numerator, S*S)
+    allowance = 2*M_REPEAT*beta
+    margin = EPS-allowance
+    success = margin > 0 and square < margin**2
+    root = isqrt(square_numerator)
+    if root*root < square_numerator:
+        root += 1
+    total_bound = Q(root,S)+allowance
+    alpha0 = Q(48)+Q(8,15)*sum(Q(v,512) for v in nums)
+    assert alpha0 == Q(13027,240)
+    alpha = M_REPEAT*N_RECUR*alpha0+Q(8*M_REPEAT,15)*sum(x)
+    schedule = {'kind': 'exact_compressed_chronological_positive_time_schedule',
+                'old_K': '2I+ZZ, literally present throughout',
+                'slot_shape': 'psi(s)=16*s^2*(1-s)^2 on 0<=s<=1', 'slot_duration': 1,
+                'positive_rays': ['I+X1','I+Y1','I+X2','I+Y2'], 'pulse_channels': data['pulse_channels'],
+                'nominal_amplitudes': [ration(Q(v,512)) for v in nums],
+                'selected_indices': selected, 'displacement_numerators': [int(v*DISP) for v in x],
+                'displacement_denominator': DISP, 'calibrated_amplitudes': [ration(v) for v in amplitudes],
+                'tree': {'repeat': M_REPEAT, 'chronological_children': [
+                    {'template': 'calibrated', 'slots': 24},
+                    {'repeat': N_RECUR-1, 'template': 'nominal', 'slots_each': 24}]},
+                'exact_duration': T_END, 'slot_count': 24*M_REPEAT*N_RECUR,
+                'nominal_template_count': M_REPEAT*(N_RECUR-1), 'calibrated_template_count': M_REPEAT,
+                'matrix_order': '(U0^(n-1) F(a))^M = (D U0^dagger F(a))^M',
+                'negative_time_operations': 0, 'alpha0': ration(alpha0), 'full_scalar_action': ration(alpha),
+                'scalar_removed_or_normalized': False, 'added_incident_cap': 2, 'slew_cap': 16,
+                'physical_duration': '(hbar/E0)*exact_duration', 'original_old_load': 3}
+    write(output/'SCHEDULE.json', schedule)
+    certificate = {'status': 'CANDIDATE_EXACT_CERTIFICATE_PENDING_SEPARATE_REVIEW' if success else 'FAILED_SINGLE_ATTEMPT',
+                   'fixed_W': {'I': [9,12], 'XX': [-16,12], 'denominator': 25},
+                   'n': N_RECUR, 'M': M_REPEAT, 'T': T_END, 'epsilon': ration(EPS),
+                   'full_comparator': 'W exp(-i T K), with every scalar retained',
+                   'scale_denominator': S, 'final_calibrated_truncated_endpoint': fhat,
+                   'auxiliary_truncated_block': block, 'auxiliary_truncated_power': powered,
+                   'actual_target_interval_including_all_tails': target, 'residual_rectangle': residual,
+                   'residual_frobenius_square_upper': ration(square), 'block_analytic_error_beta': ration(beta),
+                   'power_analytic_allowance': ration(allowance), 'positive_margin': ration(margin),
+                   'explicit_total_operator_error_upper': ration(total_bound),
+                   'contraction_solution_distance_upper': ration(contraction_error),
+                   'contraction_word_error_upper': ration(4*Q(16,15)*M_REPEAT*contraction_error),
+                   'final_power_products': products, 'new_endpoint_evaluations': 32,
+                   'exact_iterations': 32, 'checks': {'strict_complete_residual': success,
+                     'integer_sqrt_upper_below_epsilon': total_bound < EPS,
+                     'all_amplitudes_legal': all(Q(1,4) <= a <= Q(3,4) for a in amplitudes)},
+                   'target_tails_included_before_subtraction': True, 'independent_validation': False}
+    write(output/'TARGET_CERTIFICATE.json', certificate)
+    ledger = {'duration_and_slot_count': T_END, 'whole_templates': M_REPEAT*N_RECUR,
+              'added_cap_E0_units': 2, 'slew_E0_squared_over_hbar_units': 16,
+              'absolute_control_variation_upper_E0_units': 72*M_REPEAT*N_RECUR,
+              'uniform_amplitude_fault_multiplier': ration(Q(16,15)*T_END),
+              'sufficient_example_amplitude_error': ration(Q(1,1 << 300)),
+              'example_integrated_amplitude_error_upper': ration(Q(16,15)*T_END*Q(1,1 << 300)),
+              'post_off_timing_upper_multiplier': 3, 'net_ideal_work_for_selected_W': 0,
+              'initial_and_final_trace_error_energy_multiplier_E0_units_each': 1,
+              'full_reference_trace_error_upper': ration(2*EPS),
+              'external_drive_quantum_outputs_modeled': False,
+              'efficiency_native_supply_autonomous_halt_reuse_claimed': False}
+    write(output/'RESOURCE_LEDGER.json', ledger)
+    print('FINAL_CERTIFICATE', json.dumps({'checks': certificate['checks'],
+           'explicit_total_operator_error_upper': ration(total_bound), 'epsilon': ration(EPS)}), flush=True)
+    for name in ('TARGET_ENCLOSURES.json','SCHEDULE.json','TARGET_CERTIFICATE.json','RESOURCE_LEDGER.json'):
+        print('OUTPUT_PIN', json.dumps(pin(output/name)), flush=True)
+    if not all(certificate['checks'].values()):
+        raise SystemExit('SINGLE_TARGET_ATTEMPT_FAILED; no automatic retry, precision increase or alternate target')
+
+
+if __name__ == '__main__':
+    main()

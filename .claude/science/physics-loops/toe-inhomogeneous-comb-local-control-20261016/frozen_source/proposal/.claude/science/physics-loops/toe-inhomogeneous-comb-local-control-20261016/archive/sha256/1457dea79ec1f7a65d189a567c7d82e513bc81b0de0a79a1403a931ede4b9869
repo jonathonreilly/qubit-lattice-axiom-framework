@@ -1,0 +1,55 @@
+"""Final metadata verification only: no scientific calculation or replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import sys
+
+OUT = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate')
+sha = lambda data: hashlib.sha256(data).hexdigest()
+manifest = json.loads((OUT / 'SOURCE_MANIFEST.json').read_text())
+rows = []
+for item in manifest['sources']:
+    captured = (OUT / item['capture']).read_bytes()
+    original = Path(item['original_path']).read_bytes()
+    assert len(captured) == item['bytes']
+    assert sha(captured) == item['sha256']
+    assert original == captured, item['original_path']
+    rows.append({'capture': item['capture'], 'sha256': item['sha256'],
+                 'current_original_matches': True})
+for item in manifest['scope_screens']:
+    full = (OUT / item['full_capture']).read_text().splitlines(keepends=True)
+    first, last = item['one_based_lines']
+    screen = (OUT / item['screen_capture']).read_bytes()
+    assert screen == ''.join(full[first-1:last]).encode()
+    assert sha(screen) == item['screen_sha256']
+run = OUT / 'runs/source_capture'
+receipt = json.loads((run / 'EXECUTION.json').read_text())
+assert receipt['exit_code'] == 0 and receipt['scientific_execution'] is False
+for file, hashkey in [('executed_source.py', 'source_sha256'),
+                      ('launcher_source.py', 'launcher_sha256'),
+                      ('stdout', 'stdout_sha256'), ('stderr', 'stderr_sha256')]:
+    assert sha((run / file).read_bytes()) == receipt[hashkey], file
+assert (run / 'executed_source.py').read_bytes() == (OUT / 'capture_sources.py').read_bytes()
+assert (run / 'launcher_source.py').read_bytes() == (OUT / 'run_capture.py').read_bytes()
+assert len((run / 'stdout').read_bytes()) == receipt['stdout_bytes']
+assert len((run / 'stderr').read_bytes()) == receipt['stderr_bytes'] == 0
+assert json.loads((run / 'stdout').read_text())['captured_sources'] == len(rows)
+assert not manifest['concurrent_root_inhomogeneous_source_read']
+assert not manifest['other_new_worker_results_read']
+assert manifest['scientific_programs_executed'] == 0
+for name in ['DERIVATION.md', 'SOURCE_COVERAGE.md', 'PROOF_OBLIGATIONS.md', 'CHECKPOINT.md']:
+    assert (OUT / name).is_file() and (OUT / name).stat().st_size > 0
+result = {'kind': 'metadata_only_final_source_verification',
+          'utc': datetime.now(timezone.utc).isoformat(),
+          'scientific_execution': False,
+          'argv': sys.argv,
+          'executed_source_sha256': sha(Path(__file__).read_bytes()),
+          'source_files_verified': len(rows), 'source_identities': rows,
+          'source_capture_receipt_and_full_stream_hashes_verified': True,
+          'scope_screen_extractions_verified': True,
+          'scientific_programs_executed_in_task': 0,
+          'mathematical_truth_certified_by_this_script': False,
+          'root_comparison_exposure_before_original_freeze': False}
+(OUT / 'SEAL_VERIFICATION.json').write_text(json.dumps(result, indent=2) + '\n')
+print(json.dumps(result, indent=2))

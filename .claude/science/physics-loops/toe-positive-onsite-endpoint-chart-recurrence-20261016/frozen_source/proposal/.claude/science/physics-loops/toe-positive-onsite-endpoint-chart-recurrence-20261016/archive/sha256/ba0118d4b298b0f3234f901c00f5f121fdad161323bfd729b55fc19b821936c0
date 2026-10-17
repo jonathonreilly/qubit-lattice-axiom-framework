@@ -1,0 +1,27 @@
+"""Capture the analytically read proposal before any enclosure inspection."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib,json,shutil
+O=Path.cwd()
+assert O.name=='endpoint_chart_exposed_check'
+N=O.parent
+S=N/'endpoint_chart_root_proposal'
+def pin(p):
+ b=p.read_bytes(); return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def write(p,obj):
+ assert not p.exists(); p.write_text(json.dumps(obj,indent=2,sort_keys=True)+'\n')
+expected={'PROPOSED_LEMMAS.md':'3d426ff7327fca150a712329dc23f59897893278665c82ecfa436e446b359169','FREEZE.json':'f0ad2c52437a6ac63e55a8c8d13d2bb7636c76049430653c83c3f55f253f3ccd'}
+rows=[]
+for name,sha in expected.items():
+ p=S/name; assert pin(p)['sha256']==sha
+ q=O/'sources/proposal'/name; q.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(p,q)
+ rows.append(dict(original=pin(p),copy=pin(q),exposure='complete text read before enclosure'))
+record=dict(utc=datetime.now(timezone.utc).isoformat(),kind='source_exposed_analytical_checkpoint_before_enclosure',sources=rows,
+ analysis=pin(O/'PRE_ENCLOSURE_ANALYSIS.md'),selector_source_metadata_only=dict(path=str(S/'select_chart.py'),bytes=2767,sha256='3ee0b9cf7d257ed6802d8ac96f2aa1743427ba27ea4da0208d789d21b1fd5449'),
+ selector_content_read=False,selector_output_read=False,enclosure_source_read=False,enclosure_output_read=False,
+ root_approval=None,formal_retained_status=None,rank_status='pending uninspected enclosure',scientific_executions=0,
+ prior_exposure='Same campaign and model; author of earlier packaging and source-exposed preparation reviews. Root argument read before this reconstruction. Not blind or a fresh-model audit.',
+ recorder_reuse=pin(O/'record_metadata.py'))
+write(O/'PRE_EXPOSURE.json',record)
+write(O/'PRE_ENCLOSURE_FREEZE.json',dict(utc=datetime.now(timezone.utc).isoformat(),members=[pin(O/'PRE_ENCLOSURE_ANALYSIS.md'),pin(O/'PRE_EXPOSURE.json')]+[r['copy'] for r in rows],scope='Immutable pre-enclosure analytical checkpoint; later review is additive'))
+print(json.dumps(dict(status='CAPTURED',checkpoint=pin(O/'PRE_ENCLOSURE_FREEZE.json'),analysis=record['analysis'],rank_status=record['rank_status']),indent=2))

@@ -1,0 +1,30 @@
+{
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/FINAL_FREEZE.json",
+    "bytes": 49662,
+    "sha256": "857c60addbcd5882635a5b2178ec6014b65e40e364f35a01e62d1e04499d1722"
+  },
+  "members": 256,
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/ARITHMETIC_REVIEW.md",
+    "bytes": 10659,
+    "sha256": "864a89b20138cff1a53669e3c07b136d448e37e087ee8549d2722ad212eb7238"
+  },
+  "evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/ARITHMETIC_EVIDENCE.json",
+    "bytes": 54342,
+    "sha256": "e6e2b04531a5d56a21670da345a89e8144d61bcaa7c6699c0f46e4bf1e5ac212"
+  },
+  "checker_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/EXECUTION.json",
+    "bytes": 4068,
+    "sha256": "6b1ae5a10e6afea74c745ee49c61abe297253e853178e2bd2f4494e6cae95fc4"
+  },
+  "checker_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_target_compilation_exposed_check/saved_arithmetic_001/output/RESULT.json",
+    "bytes": 2361,
+    "sha256": "b105a7aa484d9ef696e5eee3f05ae0e0252773861df18024b79eb37d460a81bb"
+  },
+  "prior_freezes_unchanged": true,
+  "metadata_only_no_science_execution": true
+}

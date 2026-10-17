@@ -1,0 +1,26 @@
+"""Capture the metadata-only source seal, never a scientific program."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,platform,shutil,subprocess,sys,time
+P=Path(__file__).resolve().parent;R=P/'metadata_run'
+
+def pin(path):
+    raw=Path(path).read_bytes();return {'path':str(path),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+
+def now():return datetime.now(timezone.utc).isoformat()
+
+def write(path,value):Path(path).write_text(json.dumps(value,indent=2)+'\n')
+
+R.mkdir(exist_ok=False)
+source=P/'freeze_metadata.py';captured=R/'source_at_launch.py';shutil.copyfile(source,captured)
+shutil.copyfile(Path(__file__),R/'recorder_at_launch.py')
+argv=[sys.executable,'-B',str(source)]
+launch={'kind':'metadata_only','start_utc':now(),'argv':argv,'cwd':str(P),'wall_timeout_seconds':30,'cpu_ram_limits':None,'source_original':pin(source),'source_at_launch':pin(captured),'recorder_at_launch':pin(R/'recorder_at_launch.py'),'python':sys.version,'platform':platform.platform(),'scope':'AST parsing and source hashes/inventory only; zero scientific executions.'}
+write(R/'LAUNCH.json',launch);start=time.monotonic();timed_out=False
+with (R/'stdout').open('wb') as stdout,(R/'stderr').open('wb') as stderr:
+    try:result=subprocess.run(argv,cwd=P,stdout=stdout,stderr=stderr,timeout=30);code=result.returncode
+    except subprocess.TimeoutExpired:timed_out=True;code=None
+receipt=dict(launch,end_utc=now(),elapsed_seconds=time.monotonic()-start,exit_code=code,timed_out=timed_out,source_after=pin(source),stdout=pin(R/'stdout'),stderr=pin(R/'stderr'))
+receipt['source_unchanged_during_run']=receipt['source_after']['sha256']==launch['source_at_launch']['sha256']
+write(R/'EXECUTION.json',receipt);print(json.dumps(receipt,indent=2))
+if code!=0 or not receipt['source_unchanged_during_run']:raise SystemExit(code or 1)

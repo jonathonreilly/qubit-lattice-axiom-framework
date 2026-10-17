@@ -1,0 +1,33 @@
+{
+  "kind": "publication_packaging_metadata_only",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/executed_source.py",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft",
+  "started_utc": "2026-10-16T17:02:54.033120+00:00",
+  "timeout_seconds": 60,
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/executed_source.py",
+    "bytes": 9259,
+    "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+  },
+  "original_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/build_packet.py",
+    "bytes": 9259,
+    "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+  },
+  "recorder_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/recorder_at_launch.py",
+    "bytes": 3243,
+    "sha256": "6070dd6d7b05b945e262476b39b07b4b70edd8c08209b283295f8c2ccf152f7e"
+  },
+  "input_identities_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/build/INPUT_IDENTITIES_AT_LAUNCH.json",
+    "bytes": 89248,
+    "sha256": "a5faa5bf961de9c5888a06a93fe3cc714b0e3063eb44d0a20842cbc400f13050"
+  },
+  "scientific_programs_run": 0
+}

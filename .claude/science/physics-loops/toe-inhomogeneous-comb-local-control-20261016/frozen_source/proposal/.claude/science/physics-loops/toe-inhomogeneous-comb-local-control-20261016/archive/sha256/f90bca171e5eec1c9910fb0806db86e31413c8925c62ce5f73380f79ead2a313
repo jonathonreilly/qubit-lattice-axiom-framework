@@ -1,0 +1,21 @@
+{
+  "kind": "actual_metadata_only_final_verification",
+  "scientific_execution": false,
+  "argv": [
+    "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate/runs/final_verification/executed_source.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate",
+  "start_utc": "2026-10-16T16:12:24.916212+00:00",
+  "timeout_seconds": 60,
+  "source_sha256": "1457dea79ec1f7a65d189a567c7d82e513bc81b0de0a79a1403a931ede4b9869",
+  "launcher_sha256": "ee68e6e3b9bcd90dcb74f7f05c963656fbdbe1e9ec5d7f9710302f12ba5f56a9",
+  "exit_code": 0,
+  "end_utc": "2026-10-16T16:12:25.000481+00:00",
+  "elapsed_seconds": 0.08257079217582941,
+  "stdout_bytes": 5989,
+  "stdout_sha256": "2eb3057568de7438241c788798dc009e355b0f4c7d41ed543bd741e3eb1f017a",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

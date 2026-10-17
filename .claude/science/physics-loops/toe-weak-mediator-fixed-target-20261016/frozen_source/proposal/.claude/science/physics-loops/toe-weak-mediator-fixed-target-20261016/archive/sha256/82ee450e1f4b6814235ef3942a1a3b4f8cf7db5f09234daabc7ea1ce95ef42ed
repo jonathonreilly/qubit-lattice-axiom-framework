@@ -1,0 +1,86 @@
+[
+  {
+    "path": "CHECKPOINT.md",
+    "bytes": 1508,
+    "sha256": "4e9bf9f99da1dacced201e5c1f0f1250171ad2595f0db7f8eacdc855c9ce8823",
+    "matches": true
+  },
+  {
+    "path": "EXPOSURE.md",
+    "bytes": 3249,
+    "sha256": "9110060f5b04ab08da339b8dd4337f77490e4b66cdde484cabbbcb54099dfa1b",
+    "matches": true
+  },
+  {
+    "path": "PARAMETERS.json",
+    "bytes": 799,
+    "sha256": "3186e024ab84f2df95da2c91c29cf575912042f69d36e8904ef907e91bf52a52",
+    "matches": true
+  },
+  {
+    "path": "READ_GUIDE.md",
+    "bytes": 10745,
+    "sha256": "5945948eb719ab29199fb24587157821e8c72e7ad58ee33d94c4436d14562262",
+    "matches": true
+  },
+  {
+    "path": "SOURCE_MANIFEST.json",
+    "bytes": 4157,
+    "sha256": "9de3992565cc1842aaa2791269711603d22f54bbcb87c3a4dd9a06d9056a9159",
+    "matches": true
+  },
+  {
+    "path": "compile_coefficients.py",
+    "bytes": 20971,
+    "sha256": "f79abfaee25476fcbf681067caa0b360be5bed251fe184a1c67afa369879cb14",
+    "matches": true
+  },
+  {
+    "path": "record_metadata.py",
+    "bytes": 1956,
+    "sha256": "b65dd790bb97f3a6717dd605ed6d79c6edd884b4a0c6be9d474d9a75adc9e9cc",
+    "matches": true
+  },
+  {
+    "path": "record_one_attempt.py",
+    "bytes": 5717,
+    "sha256": "d24a03376c49f22f385aa569d62d67a9cd685eda4a28201977a537c68f6fb61d",
+    "matches": true
+  },
+  {
+    "path": "seal_metadata.py",
+    "bytes": 3923,
+    "sha256": "29ec74f83e2f1d6ecb91771c78477b45427a430d3e55ae3165d90e7cee7ded21",
+    "matches": true
+  },
+  {
+    "path": "sources/DYADIC_ADDENDUM.md",
+    "bytes": 2959,
+    "sha256": "2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517",
+    "matches": true
+  },
+  {
+    "path": "sources/FINITE_COMPILER_ADDENDUM.md",
+    "bytes": 4295,
+    "sha256": "7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8",
+    "matches": true
+  },
+  {
+    "path": "sources/PROPOSAL.md",
+    "bytes": 5883,
+    "sha256": "22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b",
+    "matches": true
+  },
+  {
+    "path": "sources/SCALING_ADDENDUM.md",
+    "bytes": 3405,
+    "sha256": "7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda",
+    "matches": true
+  },
+  {
+    "path": "sources/STRUCTURED_COEFFICIENT_ADDENDUM.md",
+    "bytes": 3953,
+    "sha256": "052bcf3f2b5577ab5f8d4988f42d25cbb0f52ec6d61999a7a269072f44f14395",
+    "matches": true
+  }
+]

@@ -1,0 +1,43 @@
+"""Capture one sealed candidate and verify source/receipt identity without execution."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,shutil
+O=Path.cwd();assert O.name=='endpoint_chart_exposed_check'; C=O.parent/'endpoint_chart_certificate_candidate'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def check(p,row):
+ a=pin(p);assert a['bytes']==row['bytes'] and a['sha256']==row['sha256'],str(p)
+def parse(p):return json.loads(p.read_text())
+assert pin(O/'PRE_ENCLOSURE_FREEZE.json')['sha256']=='bd6e3042dce21422bd2d3c8d387c7b36ebb58f4f788146802973332239eacd05'
+assert pin(C/'FREEZE.json')['sha256']=='485d29b8c62083a9d3754a1245ef65889f46cf343f6e76557bfadfe8fe6c37cf'
+f=parse(C/'FREEZE.json');assert len(f['members'])==45
+for row in f['members']:check(C/row['path'],row)
+extras=['FREEZE.json']+['runs/final_freeze/'+x for x in ['EXECUTION.json','source_at_launch.py','recorder_at_launch.py','stdout','stderr']]
+paths=[r['path'] for r in f['members']]+extras
+assert len(paths)==len(set(paths))
+assert set(paths)=={str(p.relative_to(C)) for p in C.rglob('*') if p.is_file()}
+receipts=[]
+for label in ['input_capture','source_freeze','enclosure_001','metadata_validation','final_freeze']:
+ r=parse(C/'runs'/label/'EXECUTION.json');assert r['exit_code']==0 and r['timed_out'] is False
+ assert r['argv'][1]==r['source_at_launch']['path'];assert r['source_at_launch']['sha256']==r['original_source']['sha256']
+ for key in ['source_at_launch','original_source','recorder_at_launch','stdout','stderr']:check(Path(r[key]['path']),r[key])
+ receipts.append(dict(label=label,receipt=pin(C/'runs'/label/'EXECUTION.json'),argv=r['argv'],start_utc=r['start_utc'],end_utc=r['end_utc'],exit_code=r['exit_code'],kind=r['kind']))
+pre=parse(C/'SCIENCE_SOURCE_FREEZE.json');run=parse(C/'runs/enclosure_001/EXECUTION.json')
+assert pre['created_utc']<run['start_utc']<run['end_utc']<f['created_utc']
+for row in pre['members']:check(C/row['path'],row)
+for row in parse(C/'INPUT_FREEZE.json')['members']:check(Path(row['path']),row)
+inputrow=next(r for r in pre['members'] if r['path']=='inputs/SELECTED_INPUT.json')
+assert inputrow['sha256']=='c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80'
+selected=parse(C/'inputs/SELECTED_INPUT.json');selector=parse(C/'inputs/selection_stdout.json')
+for k in ['amplitude_numerators','amplitude_denominator','selected_zero_based_indices','rational_inverse_numerators','rational_inverse_denominator','pulse_channels','nominal_duration']:assert selected[k]==selector[k]
+rows=[]
+for rel in paths:
+ p=C/rel;q=O/'sources/candidate'/rel;q.parent.mkdir(parents=True,exist_ok=True);assert not q.exists();shutil.copyfile(p,q);rows.append(dict(original=pin(p),copy=pin(q)))
+record=dict(utc=datetime.now(timezone.utc).isoformat(),kind='sealed_candidate_exposure_after_analytical_checkpoint',
+ first_exposure_order=['root proposal','immutable analytical checkpoint','selector code and output','sealed candidate code/proof/output'],
+ checkpoint=pin(O/'PRE_ENCLOSURE_FREEZE.json'),candidate_freeze=pin(C/'FREEZE.json'),sources=rows,receipts=receipts,
+ original_scientific_runs=1,checker_full_science_replays=0,source_freeze_precedes_enclosure=True,
+ note='The original enclosure ran before this checker saved its analysis, but neither its code nor its result was read before that checkpoint. This is pre-exposure separation, not pre-computation preregistration.',
+ approval=None,formal_retained_status=None)
+(O/'CANDIDATE_EXPOSURE.json').write_text(json.dumps(record,indent=2,sort_keys=True)+'\n')
+print(json.dumps(dict(status='SEALED_SOURCE_AND_ACTUAL_RECEIPTS_CAPTURED',files=len(rows),metadata=pin(O/'CANDIDATE_EXPOSURE.json'),science_executed_here=0),indent=2))

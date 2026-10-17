@@ -1,0 +1,1773 @@
+---
+title: Conditional local conserving schedules with explicit driven sine preparation
+claim_id: local_conserving_preparation_bounded_theorem_note_2026-10-16
+claim_type: bounded_theorem
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+artifact_role: theorem
+trace_class: upstream_support
+conditional_surface_status: supplied equal-gap noninteracting old register, connected control path, full SWAP, independent vacuum, phase reference and externally calibrated schedules
+status: proposed_retained
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+canonical_parent_binding_complete: true
+upstream_dependencies:
+  - finite_energy_supply_for_marked_collision_dynamics_bounded_theorem_note_2026-09-24
+runner: scripts/local_conserving_preparation_2026_10_16.py
+next_trace_action: independent retained audit; current conditional-support scope and actual integration evidence remain explicit
+---
+
+Claim type: bounded_theorem. Current status: conditional-support. The qualified source mathematics and actual wrapper/code and canonical reviews have separate evidence in ACTUAL_BINDING.json; no retained-audit verdict is supplied.
+
+This packet combines two distinct local conserving runtime schedules with an explicit driven preparation of the real buffered sine battery. The old generator remains the actual noninteracting equal-gap operator `K_S=E0 I+Delta N_S`, with `E0>=0`, `Delta>0` and `q>=1`. A connected controlled path through every old, battery and synthesis-ancilla site, full adjacent SWAP, XY exchange, onsite phase control, independent vacuum, external timing and complete calibration are supplied. Preparation additionally uses number-changing rotating quadratures. No native apparatus, microscopic controller output or arbitrary interacting-old-H runtime is derived.
+
+Runtime acceptance **7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509**, controlled by qualifications **9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305**, and later preparation acceptance **2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399**, controlled by **0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc**, govern the eight complete unchanged bodies below. Earlier pending-status and open-preparation statements are historical: the later decision supplies this particular driven preparation under stronger permissions. It does not remove the independent-vacuum, phase-reference or microscopic-driver obligations. Neither mathematical source decision by itself approves this wrapper/code, a Git base, canonical integration, publication or retained status. Original pending fields remain unchanged; ACTUAL_BINDING.json separately binds actual source-wrapper, canonical and base evidence.
+
+## 1. Existing core and imported synthesis
+
+The direct mathematical parent is the [existing finite energy-supply construction](FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md), SHA256 **fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42**. Its complete-sector conserving lift and zero-extended sine estimate are existing mathematics. This packet addresses restricted spatial scheduling and preparation; it does not republish a new finite-lift core claim or import the parent's collision/GKLS application.
+
+Bai–Marvian, [arXiv:2309.11051v3](https://arxiv.org/pdf/2309.11051v3), supplies a finite conserving-circuit theorem with one clean ancilla returned on all target-register inputs. The exact PDF is **add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8**. Necessary theorem, geometry, ancillary-return and determinant-phase passages were inspected in the source reviews; the entire 38-page synthesis proof was not independently revalidated. Full SWAP is an additional interaction permission, not a consequence of strict-path XY+Z. The identity complement and vacuum/global phases in diagonal corrections must be retained, as the complete reviews explain.
+
+The interface is a complete input-isometry certificate `||C J_A-zeta J_A U_L(W)||<=eta_C`, not selected-state fidelity. Exact gate existence does not provide a practical compiler. Positive-tolerance certifying search terminates only under computable input/oracle and enclosure assumptions; `eta_C=0` is not thereby an effective algorithm. Generic classical time, memory, emitted gate counts and physical duration may be very large. The separate sparse-compiler result and its fixture are excluded from this milestone, are not archived as premises here, and supply no promised complexity improvement or target-specific certificate.
+
+## 2. Two runtime schedules that must not be interchanged
+
+Both specialize the complete finite lift to prefix battery states and retain all nonprefix/complement states. With `d_L=2 sin(pi/[2(L+1)])`, the complete reference-uniform packet errors are at most `2q d_L` in vector norm and `4q d_L<=4pi q/(L+1)` in unhalved joint trace norm. The actual output can remain correlated with the battery and ancilla; approximate product comparison is not exact catalytic return.
+
+| Runtime | Battery and units | Endpoint scheduling | Implementation scalar |
+| --- | --- | --- | --- |
+| Author fixed-duration phase layer | `M=L+2q`, `m=q+M+1`, explicit hbar | G serial slots plus one simultaneous onsite phase slot on all m sites | `gamma=exp[-i(E0 tau/hbar+Phi)] zeta` |
+| Root period wait | `M=L+2q-1`, source uses hbar=1 | Finish its own circuit and wait under the literal free generator to a declared common number period | `exp(-i chi)`, `chi=E0 tau+Theta-theta_circ` |
+
+For the author route, positive integrated generators are `(pi/4)(I-R_xy)`, `abs(phi)I-phi Z`, and `(pi/2)(I-SWAP)`. Their product is `exp(-i Phi) C`, where `Phi=(pi/4)N_sqrt+sum|phi|`; full SWAP has no residual endpoint scalar but its reserve still counts. Use `Q_*=6pi`, `f_h(t)=(1-cos(2pi t/h))/h`, and
+
+    h >= max(4 hbar Q_*/g, sqrt(4pi hbar Q_*/sigma)).
+
+Fix `tau=(G+1)h` before choosing the final coefficient. Put `x=Delta tau/hbar`, choose rational `r` with `|r-x/(2pi)|<=1/4`, set `k=floor(r)+2` and `lambda=2pi k-x`. Then `3pi/2<lambda<=9pi/2`. Simultaneous `lambda n` pulses on all sites cancel the complete number phase at the endpoint. Parallel availability is essential to this duration, and its full norm/work scale with m. The nominal local caps are `g/2,sigma/2`; stated calibrated added headroom is `Delta+2g,sigma`, with safe full incident cap `E0+Delta+2g` when the old scalar is included.
+
+The root route has its own positive pulse areas and scalar sum Theta. It synthesizes first and waits afterward, selecting a common-period integer by a rational enclosure with slack. Its principal-angle convention requires certified branch representatives. The exposed review supplies a distinct effective variant `alpha=2phi+2pi in (0,4pi]`, with fixed slots and enlarged `8pi` duration constants, avoiding an undecidable modulo/zero test. This is not silently substituted into the original `4pi` convention. Battery size, hbar convention, scalars and duration formulas cannot be transplanted between the two rows.
+
+## 3. Explicit preparation and the checked composition
+
+The preparation uses the author's `M=L+2q` battery and directly composes with that fixed-duration runtime. This packet does not silently adapt the same preparation theorem to the root route's different M. The period-wait runtime remains a separately qualified alternative.
+
+Starting from the complete independent vacuum, q flips and `L-1` conditional rotations prepare
+
+    beta=sum_(l=1)^L b_l |1>^(q+l-1)|0>^(M-q-l+1),
+    b_l=sqrt(2/(L+1)) sin(pi l/(L+1)),
+    w_i=sum_(l=i)^L b_l^2, theta_i=arccos(b_i/sqrt(w_i)).
+
+The positive integrated generators are `2pi I+(pi/2)Y` and `n_control(2pi I+theta_i Y_target)`. All reserve phases are exactly one on the whole local spaces. Replacing the controlled reserve by a merely positive smaller one can introduce a relative branch phase. The convention is `Y|0>=i|1>` and `[n,Y]=iX`. `L=1` has no conditional gates. Preparation alone factors for any declared finite decoupled self-adjoint old K, but its equal-gap positive-generator norm formulas and later conserving runtime retain their restricted premises.
+
+There are `G_p=q+L-1` serial rotation slots. With `Q_*=6pi`, choose
+
+    h_p >= max(4 hbar Q_*/g, sqrt(8pi hbar Q_*/sigma),
+                                      4pi Delta/sigma).
+
+The actual laboratory rotation control is
+
+    hbar f_(h_p)(t-t_j) exp(-it H_B/hbar) Q exp(it H_B/hbar).
+
+Literal `H_B=Delta N_B` remains installed. The interaction-picture control is `hbar f Q`. The derivative includes both envelope and carrier terms, bounded by `2pi hbar Q_*/h_p^2+pi Delta/h_p`; ignoring the carrier would underprice slew. Append one simultaneous battery-only number-phase slot of the same duration. Fix `tau_p=(G_p+1)h_p` first, then select its positive lambda by the same rational-enclosure rule. The exact full preparation isometry is
+
+    U_prep J_vac = J_beta E,  E=exp(-i tau_p K_S/hbar).
+
+To implement V on the original old input, request `W=V E*` from the author runtime. Then `WE=V`. The combined vector comparator retains `gamma(W)V`; density comparisons cancel that global scalar and have complete S/B/ancilla/R trace error at most `e_prep+e_runtime`. Reversing the order can give an orthogonal output, as the preserved `E=Z,V=Hadamard` witness shows. No common phase for coherently controlled programs with different W is asserted. The imperfect actual preparation is propagated through the actual runtime; it is not replaced by a fresh pure battery.
+
+## 4. Precision, energy and work corrections
+
+Initial readiness is joint, including old/reference correlations and any included ancilla. A later appended ancilla needs exact independent vacuum or its own joint allowance. The preparation bound is `eta_ready+2eta_H`, where eta_H is the full integrated Hamiltonian discrepancy divided by hbar. An alternative resolved bound is
+
+    e_prep <= eta_ready+2 sum_j|delta theta_j|
+                        +2M|delta lambda|+2eta_other.
+
+Reserve, carrier, waveform, timing and coupling errors must be priced without counting the same discrepancy twice. The source allocation spends at most `3e/4`, leaving a specified timing reserve. Actual positivity, support, incident strength and derivative bounds require separate certificates; small operator/trace error cannot guarantee them, especially on the nominal generators' kernels. Finite arithmetic includes small sine tails, Delta/hbar/time errors and `2|k|` times the pi error. No oracle-walltime bound follows.
+
+For the author runtime the complete trace bound is `4pi q/(L+1)+epsilon_p+2eta_C+2eta_H+2eta_t`. Its solved budget and actual G-dependent calibration requests remain in the bodies. Effective integer choices may use strict upper enclosures rather than exact computable-real ceilings. Pure free-aging timing bounds apply only after all pulses are off; waveform jitter and premature sampling require a full schedule discrepancy. Storage preserves error only if actual and comparator subsequently use the same actual free generator. A persistent field discrepancy over storage is paid again.
+
+For either ideal conserving runtime, the distribution of the same fixed free energy F is conserved. The required corrected transfer bound, for actual initial old mismatch `epsilon_S0` and final old error `e_out`, is
+
+    |actual old energy change - declared target old energy change|
+       <= (q Delta/2)(e_out+epsilon_S0).
+
+The final-only formula requires the actual initial old marginal to equal the declared one. The preserved q=1 mixed-input counterexample gives discrepancy `2 Delta delta` and prevents extending that formula to arbitrary imperfect readiness. E0 cancels from this difference, while remaining in full means, generator loads and vector phases. All correlations and residual ancilla energy remain in moment accounting.
+
+The prepared battery mean is `mu_B=Delta[q+(L-1)/2]`, variance at most `Delta^2(L-1)^2/4`, and full norm `M Delta`. Each flip adds Delta and edge i adds `Delta w_(i+1)`; the final number-phase layer changes no number. Ideal preparation therefore has net modeled drive work `mu_B` and absolute-work bound `g(G_p+M)+(pi/2)Delta G_p`. A nominal conserving runtime with the same F at both endpoints adds zero net drive work. Its author-route absolute-work bound is `(4hbar/h)(sum||Q_j||+m lambda)<=g(G+m)`. Calibrated work bounds require the stated supports, slew and same-endpoint-observable conditions; a persistent added endpoint field needs an additional term.
+
+For preparation trace error e and `a=M Delta`, mean and raw second-moment errors are at most `ae/2` and `a^2 e/2`; retain the conservative variance allowance `3a^2 e`. Small trace error does not imply fixed moment accuracy as L grows. These are prescribed-drive functionals, not physical controller energy, returned-driver-state or work-fluctuation theorems.
+
+## 5. Evidence and remaining boundary
+
+The two runtime constructions and their exposed reviews contain no scientific numerical execution. Their shared-model/source exposure and partial imported-theorem review limits remain explicit. Preparation has one historical author SymPy fixture on the entire 32-dimensional `q=1,L=3` battery; it discriminates omitted final phase, a wrong conditional reserve, reversed Y axes and lost positivity. It is neither independent execution, a general-L proof nor a time-dependent ODE simulation. The exposed preparation review ran no scientific program. All original source captures, commands, full streams, warnings, missing-history qualifications and null statuses are preserved.
+
+The root review's initial incomplete direct seal and additive closure correction, the identical-decoded-regex search-history qualification, and the preparation reviewer's corrected draft commutator sign remain visible. No lost launcher, timestamp or failed scientific run is reconstructed. The canonical executable primary checks source identities and provenance only, requires actual source and canonical review evidence, and runs no historical scientific code. Its unbound proposal refuses canonical certification.
+
+The inherited assumptions do not imply an efficient generic compiler, microscopic vacuum/drive supplier, measured-energy identification, arbitrary interacting-old-H or inaccessible-port theorem, autonomous clock, permanent halt or indefinite fresh-system reuse. Separate sparse compilation and its fixture remain excluded from this milestone. The eight unchanged arguments, complete checks and controlling qualification bodies now follow; their byte maps distinguish them from this new wrapper.
+
+
+<!-- Unchanged source body: Root period-wait argument -->
+
+# Proposed local conservative control for an equal-gap qubit register
+
+Unaccepted root bridge, 2026-10-16. The finite spectral lift is existing
+repository mathematics, not a new result of this campaign. The present target
+is its missing spatial implementation on a deliberately restricted physical
+domain. The supplied controls, coherent initial battery, exact frequencies,
+timing and accessible path are conditions, not newly adopted physical axioms.
+There is no claim for an interacting arbitrary old Hamiltonian.
+
+## Sources and selection
+
+The complete canonical finite-energy-supply note was read at SHA256
+fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42.
+Its finite-sector argument and whole-output sine bound are reused, not its
+collision/GKLS application. The new finite_energy_reservoir_candidate
+DERIVATION ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195
+was read, including its prefix encoding; its root acceptance remains pending.
+This root proposal is source-exposed to both and to the following literature.
+
+The imported synthesis statement is Bai and Marvian, [arXiv:2309.11051v3,
+Theorem1, gate set1 and the ancillary return convention in equation2](https://arxiv.org/pdf/2309.11051v3):
+an n-qubit unitary commuting with total Z has a finite circuit of
+sqrt(iSWAP) and single-site Z rotations, using one initially vacuum ancilla
+returned to vacuum, up to a global phase. The theorem is an existing
+mathematical result. Its arbitrary-pair geometry is handled below with
+explicit nearest-neighbor SWAP access. The paper's page3 warning about a
+strict path with only XY and Z applies; SWAP is an additional allowed control
+here. The complete synthesis proof is not re-proved or claimed independently
+verified by this root sketch; the theorem's statement and relevant geometry
+qualification have been checked in the primary PDF. The imported statement
+is separate from the new positive-pulse, free-drift and resource bridge.
+
+A corrected repo search for Marvian/semi-universality and the three exact
+arXiv identifiers found only the unrelated actual-cube Fisher/coherence note.
+A broader determinant search was truncated and supplies no absence evidence.
+This is a bounded novelty screen, not an exhaustive novelty theorem.
+
+## 1. Explicit restricted domain and one buffered battery
+
+Let S consist of q>=1 qubits with the *actual supplied* old Hamiltonian
+
+    K_S=E0 I+Delta N_S,   N_S=sum_(j=1)^q n_j,
+    E0>=0, Delta>0, n_j=|1><1|_j.
+
+Fix an arbitrary unitary V on S, arbitrary reference R, and complete unknown
+rho_SR. The sites of S, a new battery and one new ancillary qubit can be
+ordered on an accessible nearest-neighbor path. Arbitrary selected positive
+onsite and edge controls of the particular forms below are permitted.
+All free ancillary/battery qubits have the same gap Delta. No additional
+uncontrolled interactions are present; K_S keeps coefficient one throughout.
+
+For an integer L>=1 set M=L+2q-1. Encode battery level m=0,...,M by
+the prefix string |1>^m|0>^(M-m) on M qubits. Its positive free Hamiltonian
+is H_B=Delta sum_(j=1)^M n_j. On the prefix subspace this is Delta m.
+Supply the coherent sine packet
+
+    beta=sum_(l=1)^L sqrt(2/(L+1)) sin(pi*l/(L+1))
+                 |q+l-1>_prefix.
+
+The initial battery mean is Delta[q+(L-1)/2]. Its full physical norm is
+Delta M. Its number variance is the usual sine variance, bounded by
+(L-1)^2/4. The unknown S/R input is initially independent of this specified
+packet and the ancilla |0>; imperfect readiness is a separate joint trace
+allowance, not a product assumption on actual imperfect marginals.
+
+Write P_k for the S projector to k excitations, k=0,...,q. Label each
+S/prefix-battery basis vector by t=m+k. For q<=t<=M all S basis vectors
+occur, with battery index t-k. On each such complete sector apply V under
+that identification. On every other prefix-label sector and all nonprefix
+battery states apply identity. Call this full physical unitary U_L(V).
+Prefix projections commute with H_B, so the construction is unitary on all
+2^(q+M) states and exactly commutes with N_S+N_B. It acts as identity on
+the total vacuum, including when q=L=1. All initially populated sectors
+are complete: q<=m+k<=L+2q-1=M.
+
+The finite action on this input agrees with F^*(V tensor I)F on an auxiliary
+bilateral ladder, F=sum_k P_k tensor T^k. This infinite notation is only a
+norm estimate. The one-step sine displacement is
+
+    a_L=2 sin(pi/[2(L+1)])<=pi/(L+1).
+
+Telescoping translations gives ||(T^k-I)beta||<=k*a_L<=q*a_L.
+Orthogonality of P_k gives the same q*a_L bound for F-I on arbitrary
+reference-entangled S input. The two controlled factors give isometry error
+<=2q*a_L, hence whole S/B/R trace error
+
+    e_bat<=min(2,4q*a_L)<=min(2,4*pi*q/(L+1)).
+
+The product comparator retains the original beta and transformed S/R state.
+It does not assert that the actual correlated battery returns exactly. A
+choice L+1>=4*pi*q/e_bat suffices. This reduction to one ladder uses the
+equally spaced *actual* old spectrum. It cannot be substituted for an
+arbitrary interacting Hamiltonian by an unimplemented basis change.
+
+## 2. Exact finite circuit and spatial routing
+
+Apply the stated synthesis theorem to the n=q+M physical qubits and target
+U_L(V). Its hypotheses are met: the map is a full unitary, exactly
+number-conserving, including the nonprefix and boundary states. It supplies
+a finite circuit and a vacuum ancillary qubit returned to vacuum, on every
+input of the n-qubit system, not just the coherent battery input.
+
+An arbitrary-pair gate is routed by adjacent full SWAPs, the selected gate,
+then the inverse permutation. On the path of n+1 sites this costs at most a
+linear factor in n per nonlocal gate, preserves total number, and returns
+every physical register to its original labeling. No uncounted movable
+ancilla or long-range edge is assumed. The abstract circuit count G after
+routing is finite; a conservative generic bound from the imported theorem
+is O(4^n n^(5/2)). No practical efficiency is claimed.
+
+Let its elementary operations be A) sqrt(iSWAP), B) exp(i*phi*Z) with
+phi in (-pi,pi], and C) SWAP. Preserve the actual resulting global phase
+theta_circ in the exact circuit identity C|psi,0>=exp(i*theta_circ)
+U_L(V)|psi> tensor |0>. A numerical approximation to V or the circuit
+requires an explicit isometry/operator allowance; phase equivalence alone
+does not justify deleting theta_circ from an amplitude comparator.
+
+## 3. Positive local pulses with bounded modeled strength and slew
+
+Define R=(X tensor X+Y tensor Y)/2. Its eigenvalues are 0,0,+1,-1,
+so I-R>=0 with norm2. The following integrated controls implement the
+three gate families while keeping every local control positive:
+
+    sqrt(iSWAP):  A=I-R, area alpha=pi/4,
+       exp(-i alpha A)=exp(-i*pi/4) sqrt(iSWAP).
+    SWAP:         A=(I-SWAP)/2, alpha=pi,
+       exp(-i*pi*A)=SWAP exactly, ||A||=1.
+    exp(i phi Z): A=n, alpha in [0,2pi) congruent to 2phi modulo2pi,
+       exp(-i alpha n)=exp(-i phi) exp(i phi Z).
+
+For the last formula Z=I-2n. Alpha=0 permits omission of the pulse;
+retain its algebraic scalar convention if the gate itself is represented.
+There is no negative amplitude or negative elapsed time. Every generator
+commutes with total excitation number. The controls are supplied permitted
+operators on their declared onsite/nearest-neighbor supports.
+
+Use a fixed nonnegative normalized C1 profile f on [0,1], zero with zero
+first derivative at both endpoints. Let c0=max f and c1=max |f'|. For a
+gate with area alpha<=2pi and duration tau0, its coefficient is
+alpha*f(t/tau0)/tau0. Since ||A||<=2, choosing
+
+    tau0>=4*pi*c0/g,
+    tau0>=sqrt(4*pi*c1/sigma)
+
+ensures control norm<=g and derivative norm<=sigma. Execute gates
+sequentially. Endpoint-zero profiles concatenate into C1 controls; idle
+intervals preserve that property. The incident control strength/slew are
+bounded independently of G,L and target accuracy. The complete incident
+strength bound includes the old scalar: J<=E0+Delta+g, with E0 assigned
+to an actual old onsite term. Battery and ancilla contribute Delta onsite.
+These are modeled bounds, not a hardware amplitude/derivative certificate.
+
+Let Theta be the sum of pi/4 over sqrt(iSWAP) pulses and phi over Z gates.
+The installed control-only propagator on the initialized ancilla is exactly
+exp(-i*Theta+i*theta_circ) U_L(V), with the ancilla returned to |0>.
+The full actual scalar is recorded rather than replaced by an upper bound.
+
+## 4. Literal free drift and a noncircular declared endpoint
+
+The permanently installed free generator is
+
+    H0=E0 I+Delta(N_S+N_B+n_anc).
+
+Every instantaneous control commutes with H0, so the laboratory propagator
+factors as exp(-it H0) times its time-ordered control propagator, exactly.
+First synthesize the circuit for U_L(V), fix its pulses and determine its
+actual duration t_p=G*tau0 (or the sum of selected durations). None of
+these steps depends on a drift-compensated unknown final time.
+
+Then wait with controls zero until tau=2*pi*k/Delta>=t_p for an integer k.
+Mathematically the least such integer works; an effective prescription must
+use certified strict margins rather than decide a computable-real equality.
+For example a finite rational enclosure of t_p*Delta/(2*pi) of width<1/4
+allows an integer strictly above its upper endpoint, with waiting less than
+2*(2*pi/Delta). Thus tau is fixed after circuit synthesis, not used to
+resynthesize the circuit. All integer excitation phases return exactly.
+
+On the initialized ancilla the final laboratory map is therefore
+
+    exp[-i chi] U_L(V),     chi=E0*tau+Theta-theta_circ.
+
+The battery reference at that instant is beta, with no omitted free phase.
+The original E0 is retained. This uses one common exact free gap and an
+exact declared timing prescription. It is not a clock supplier. If the
+sampling time is displaced, keep the corresponding free evolution and its
+joint norm-weighted allowance; the apparatus does not stop evolving forever.
+
+## 5. Error and free-energy ledger
+
+For total joint readiness error eta_ready and nominal implemented isometry
+error nu (including target/circuit approximation), the full S/B/ancilla/R
+trace error is at most e_bat+eta_ready+2nu. A full physical-generator error
+E(t) adds at most 2*integral ||E(t)||dt. These are complete joint allowances;
+fresh marginal purities are not inserted after the cycle. Scalar errors in
+an amplitude claim need their separate phase allowance.
+
+The exact nominal evolution conserves H0 at every time, even during
+switching: all control terms commute with H0. With controls zero at both
+endpoints, the modeled total mean-energy change vanishes. Thus the nominal
+external-work integral for H0+Hcontrol is zero over the complete cycle.
+This does not imply that a microscopic actuator, its preparation, timing,
+recording or reset has no cost; that actuator and its complete output are
+not modeled here. The battery supplies the change of the old qubit energy.
+The ancilla returns to its vacuum free energy. The whole conserved variance
+must retain S/B correlations, not just separate marginal variances.
+
+The trace comparison permits finite battery energy transfer despite small
+state error because ||H_B||=Delta*M grows. Its mean loss differs from
+Tr[K_S(V rho_S V^*-rho_S)] by at most
+||K_S-cI|| times the exact nominal output trace allowance. Imperfect
+readiness/implementation and imperfect energy conservation require their
+own initial/final observable bounds; state precision is not a free energy
+moment certificate. Existing scalar/mean conventions are not erased.
+
+## 6. Open checks and next decision
+
+Decisive checks: buffer indices and all-state completion; generalized
+q-step sine norm bound; imported gate theorem's ancillary/global-phase
+scope; routed positive pulse identities and actual scalar signs; exact
+factorization and noncircular waiting; complete output and free-energy
+accounting. A finite gate fixture may distinguish phase or commutator errors
+but cannot validate the imported general circuit theorem by sampling.
+
+This would supply a driven local conservative endpoint on an equal-gap
+noninteracting register if those checks pass. It leaves arbitrary interacting
+old H, coherent battery preparation, physical permission for these gates,
+noise/long-time calibration, autonomous scheduling/halt, microscopic control
+outputs and measured-energy identification unresolved. The generic large
+gate count is an honest cost. No scientific execution has occurred for this
+root proposal; no root acceptance, independent check or publication is yet
+claimed. Editable prompt files changed: none.
+
+
+<!-- Unchanged source body: Root period-wait exposed review -->
+
+# Exposed analytical review: local conserving control on an equal-gap register
+
+Status: **qualified support for the restricted endpoint construction; no counterexample found in the reviewed bridge.** This is an exposed, same-model analytical review of the frozen root proposal, not a blind replication, retained audit, proof of the complete imported synthesis theorem, or physical apparatus certificate. The review does not assert a new finite-reservoir theorem. Root acceptance and any publication decision remain separate.
+
+## 1. Exact scope and exposure
+
+The complete proposed argument reviewed here is `local_conserving_control_root_proposal/PROPOSED_LEMMAS.md`, 12642 bytes, SHA256 `be48d2010c68561df8d2a48a924602cd797625345b8e7934e50ac05cd99c3bde`. Its supplied `FREEZE.json` has SHA256 `1ea6d4edcfff8d4c098f1318ce046da667f831749a16880b53ccb926f26fcb13`. The saved primary source is Bai and Marvian, arXiv:2309.11051v3, 38-page PDF, SHA256 `add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8` ([primary paper](https://arxiv.org/pdf/2309.11051v3)). Exact captures and actual metadata-only capture receipts accompany this review.
+
+The proposal, freeze, and saved PDF are the only newly consulted scientific/provenance sources. The separate author's directory and messages were not read. The freeze's third member, `SOURCE_AND_EXPOSURE.json`, was not opened or independently validated; it is outside the assigned source list. All proposal sections were read completely. Primary-paper coverage sufficient for the import comprises page 3, equation (2), Theorem 1 gate set 1 and geometry discussion; page 4's strict-path limitation and SWAP exception; and page 16, Proposition 13 and Section V Step 4, equations (79)–(82). These pages were reread through nonlayout extraction without output truncation. Page 13's overview and partial pages 14–15 were additionally inspected, but their complete proof is not credited as verified. The paper's underlying two-level synthesis lemmas remain an imported theorem dependency, not an independently established result of this review.
+
+Earlier exposure includes the canonical finite-energy-supply theorem and both earlier finite-reservoir proposals/reviews. Their bodies were not reread for this task and supply no fresh novelty claim. The present review reconstructs the displayed finite-register arguments directly. There was no new scientific executable or numerical fixture: no particular disputed finite calculation required one. Metadata extraction and hash/copy operations are not science executions. No editable prompt files changed.
+
+## 2. Buffer completion is unitary on every physical state
+
+Let `H_S=(C^2)^tensor q`, and denote a computational string by `x`, with weight `w(x)`. Let `p_m=|1>^m|0>^(M-m)` for `0<=m<=M`, where `M=L+2q-1`. These prefix strings are orthonormal eigenstates of `N_B`, with eigenvalues `m`. For each `t` define
+
+```
+H_t^pre = span{ |x> |p_(t-w(x))> : 0<=t-w(x)<=M }.
+```
+
+Different `t` give orthogonal eigenspaces of `N_S+N_B` within the prefix code. For `q<=t<=M`, the map
+
+```
+J_t |x> = |x> |p_(t-w(x))>
+```
+
+is an isometry from the *entire* `2^q`-dimensional system space onto `H_t^pre`: since `0<=w(x)<=q`, both battery inequalities hold. Define the full physical map as the orthogonal direct sum of `J_t V J_t*` over these complete sectors, identity on the other prefix sectors, and identity on all states whose battery component is nonprefix. Each summand is unitary on its own subspace. The nonprefix complement is invariant under `N_B` because every prefix projector is diagonal in the computational basis, even when prefix and nonprefix states have the same number. Thus this direct sum is a unitary on all `2^(q+M)` states and commutes exactly with `N_S+N_B`. It is not merely a code-space isometry.
+
+For the specified initial packet, `m=q+l-1` with `1<=l<=L`. Therefore
+
+```
+q <= m+w(x) <= q+L-1+q = M.
+```
+
+Every populated input belongs to a complete sector. Every output shift `m+w(x)-w(y)` lies between `0` and `M`, including the extreme transitions. The exact vacuum is in the incomplete sector `t=0` and is fixed. The smallest case `q=L=1` has `M=2`; its populated sectors are `t=1,2`, while the total vacuum is still separate. There is no boundary exception at this case.
+
+The equal-gap premise does all the work in using a *single* ladder: the exact free energy is `E0+Delta t`. Arbitrary degeneracies within a fixed Hamming weight cause no problem. Unequal gaps or uncontrolled interacting terms do not meet these hypotheses merely because one can relabel their eigenstates.
+
+## 3. Independent sine and whole-output calculation
+
+Put `theta=pi/(L+1)` and `b_l=sqrt(2/(L+1))*sin(l theta)` for `1<=l<=L`, extended by zero to every other integer. The elementary Dirichlet recurrence is
+
+```
+b_(l-1)+b_(l+1)=2 cos(theta) b_l,
+b_0=b_(L+1)=0,  sum_l b_l^2=1.
+```
+
+Multiplying by `b_l`, summing, and dividing by two yields
+
+```
+sum_(l=1)^(L-1) b_l b_(l+1)=cos(theta).
+```
+
+For the bilateral unit shift `T`, this implies exactly
+
+```
+||(T-I) beta||^2 = 2-2 cos(theta),
+a_L = 2 sin(theta/2) <= pi/(L+1).
+```
+
+For every integer `0<=k<=q`, `T^k-I=sum_(j=0)^(k-1) T^j(T-I)`, so the triangle inequality and unitarity give `||(T^k-I)beta||<=k a_L`. The same bound holds for `T^(-k)`. This is a norm estimate on an auxiliary bilateral space, not a bilateral physical battery.
+
+Write `F=sum_k P_k tensor T^k`. For any normalized system/reference vector `psi`, including arbitrary entanglement,
+
+```
+||(F-I)(psi tensor beta)||^2
+ = sum_k ||(P_k tensor I_R)psi||^2 ||(T^k-I)beta||^2
+ <= q^2 a_L^2.
+```
+
+The analogous estimate for `F*` is identical. On the actual initialized battery support the finite lift agrees with `F*(V tensor I)F`. The identity
+
+```
+F* V F - V = F* V(F-I) + (F*-I)V
+```
+
+then gives isometry error at most `2q a_L`, uniformly in `R`. The two terms each have norm at most `q a_L`; the second uses the same projector calculation on `(V tensor I_R)psi`, whose norm is one. Purification and trace-distance contraction yield the entire `S/B/R` density-operator trace-norm bound
+
+```
+e_bat <= min(2,4q a_L) <= min(2,4 pi q/(L+1)).
+```
+
+Adding a returned vacuum ancilla does not change it. There is no hidden sum over amplitudes or dimension factor. For a requested budget `epsilon_bat>0`, it suffices to choose the integer `L` with `L+1>=4 pi q/epsilon_bat`; the proposal's use of `e_bat` on both sides should be read as a requested budget, not an equation defining the realized error.
+
+Packet normalization follows from the same sine eigenvector identity. Reflection `l -> L+1-l` gives mean `l=(L+1)/2`, hence mean battery number `q+(L-1)/2`. Its support has width `L-1`, so the elementary bounded-variable variance estimate gives `Var(N_B)<=(L-1)^2/4`. The physical norm is `||H_B||=Delta M`, including the nonprefix states. The state remains approximately, not exactly, reusable: no exact catalytic return follows from this bound.
+
+## 4. What the imported theorem supplies
+
+For `n=q+M>=3`, the target just constructed is a full unitary satisfying `[U_L(V),sum_j Z_j]=0`, because `sum Z=nI-2(N_S+N_B)`. This is precisely Theorem 1's hypothesis. Gate set 1 is `sqrt(iSWAP)=exp(i pi R/4)` and `exp(i phi Z)`, with one ancilla. Equation (2) and Section V Step 4 establish return of an initially `|0>` ancilla for **every** input of the `n`-qubit target register, not just for computational basis states or the chosen packet. Therefore the identity extends to arbitrary external reference correlations.
+
+An independent check of the relevant ancilla mechanism is useful. For a nonvacuum basis vector `b`, choose one occupied bit and remove it to obtain `b'`. The operator
+
+```
+Q_b=|b,0><b,0|-|b',1><b',1|
+```
+
+acts within one fixed total-number sector, is traceless there, and has Hamming distance two between its supported basis vectors. Its exponential, restricted to ancilla `0`, applies exactly a phase to `b` and leaves that ancilla unchanged. This verifies the use of the ancilla as a sector-determinant correction, conditional on the paper's two-level synthesis result. It does not require a coherent or energy-bearing ancilla state.
+
+More explicitly, because our `U_L(V)` fixes the vacuum, one may choose in each nonzero-number sector a basis vector `b_m`, put `theta_m=arg det U^(m)`, and use the *full* diagonal unitary
+
+```
+D = I + sum_(m=1)^n (exp(i theta_m)-1)|b_m><b_m|.
+```
+
+Then `D* U_L(V)` has determinant one in each sector, and the preceding `Q_b` construction supplies `D` using the same single ancilla. This elementary determinant bookkeeping explains why a phase or omitted-complement convention in an abbreviated display cannot obstruct this vacuum-fixing target. The printed page-16 display (81), if read literally as only its displayed rank-one terms, omits the identity on unselected basis vectors; it must be completed as above. Likewise, for a general target with vacuum phase `theta_0`, sector dimension `d_m` requires `arg det U^(m)-d_m theta_0`, not subtraction of just `theta_0`. Here `theta_0=0`, so that general-phase bookkeeping issue is absent. These are localized formula qualifications, not a disproof of the theorem or the proposal.
+
+The theorem's generic count `O(4^n n^(3/2))` is imported, not independently established by our finite calculation. The paper explicitly warns that a strict path with only XY and Z controls, including the ancilla on that path, loses universality. The proposal meets the theorem through an *additional full SWAP control*; it cannot omit this premise. Its exact result is not obtained by treating the paper's approximate nearest-neighbor corollary as an exact theorem.
+
+## 5. Explicit routing and positive pulse calculation
+
+Suppose a logical two-site gate is needed between physical locations `i<j` in the `n+1`-site path. Adjacent swaps `(i,i+1),...,(j-2,j-1)` bring the state at `i` beside the state at `j`. Apply the gate at `(j-1,j)`, then undo those swaps in reverse order. This realizes the desired gate on the original labeled registers for every input, including entangled inputs; the remaining registers are restored. There are `2(j-i-1)` routing SWAPs, at most `2(n-1)`. A gate already adjacent needs none. Onsite gates need no routing. This route neither moves an uncounted ancillary system nor assumes an unlisted nonlocal edge. The resulting count `O(4^n n^(5/2))` is a valid conservative upper bound.
+
+Using `R=|01><10|+|10><01|`, its spectrum is `0,0,+1,-1`; hence `A_XY=I-R` is positive and has norm two. Since its identity part commutes with `R`,
+
+```
+exp[-i(pi/4)(I-R)]=exp(-i pi/4) exp(i pi R/4).
+```
+
+For the full swap `S`, its symmetric/antisymmetric eigenvalues are `+1,-1`, so `(I-S)/2` is the antisymmetric projector. Thus
+
+```
+exp[-i pi (I-S)/2] = P_sym-P_asym=S
+```
+
+exactly, with no omitted scalar. This is a two-site positive interaction; in Pauli form it is `(I-XX-YY-ZZ)/4`, a supplied extra permission beyond pure XY and Z.
+
+Finally `n=(I-Z)/2`, so for `alpha=2 phi mod 2pi` in `[0,2pi)`,
+
+```
+exp(-i alpha n)=diag(1,exp(-2i phi))
+                 =exp(-i phi) exp(i phi Z).
+```
+
+This includes negative `phi` with positive area, and `phi=pi`, for which `alpha=0`: the omitted physical pulse is the identity, while its abstract gate and the recorded scalar are both minus signs. Dropping only one of those signs would be an error. No such deletion occurs in the proposal.
+
+Let the abstract routed circuit obey `C J_anc=exp(i theta_circ) J_anc U_L(V)`. Multiplying the physical pulse identities gives the control-only action
+
+```
+U_ctrl J_anc = exp[-i Theta+i theta_circ] J_anc U_L(V),
+Theta = (pi/4) N_sqrt + sum_Z phi.
+```
+
+This scalar is independently checkable on the all-zero input: all abstract square-root iSWAPs and SWAPs fix vacuum, while a Z gate multiplies it by `exp(i phi)`. Since `U_L(V)` fixes vacuum, `theta_circ=sum_Z phi mod 2pi`. Therefore the final physical control scalar can also be expressed as `exp[-i pi N_sqrt/4]`. This provides a useful exact cross-check, not permission to drop `E0` or the scalar ledger. An approximate circuit needs its own uniform isometry and phase bounds; exact vacuum phase identities should not silently replace those bounds.
+
+## 6. Strength, first derivative, and free drift
+
+For an explicitly normalized nonnegative profile `f`, write a pulse as
+
+```
+H_c(t)=(alpha/tau0) f(t/tau0) A,  0<=t<=tau0.
+```
+
+Here `alpha<=2pi`, `||A||<=2`, `c0=max f`, and `c1=max|f'|`. Directly,
+
+```
+||H_c(t)|| <= 4 pi c0/tau0,
+||dot H_c(t)|| <= 4 pi c1/tau0^2.
+```
+
+The stated two lower bounds on `tau0` therefore imply the fixed positive caps `g` and `sigma`. Such a profile exists, for example `f(s)=30s^2(1-s)^2`, with unit integral and zero value and derivative at both endpoints. One pulse at a time implies the same incident sum bound at either site of an edge; multiple gates do not add simultaneous load. The piecewise pulses and idle interval concatenate into a globally `C^1` control. The endpoint derivative requirement is satisfied and is not a hard-bandwidth statement.
+
+The free onsite load is `Delta` at every site. Assign the actual global old scalar as `E0 I_j` at one designated old site, so the complete maximum incident norm bound is `E0+Delta+g`. All free and control summands are positive. The scalar assignment is a bookkeeping representation of the actual `E0 I`, not its removal. The derivative of the free part is zero. If a hardware perturbation is later introduced, a trace-norm calibration budget alone does not certify that these exact strength/slew caps survive; explicit margin or separate local control-error bounds would be needed.
+
+Every generator used above commutes with total number, hence with `H0=E0 I+Delta(N_S+N_B+n_anc)`. Defining `W(t)=exp(i t H0)U_lab(t)` gives `dot W=-i H_c(t)W` exactly. Therefore
+
+```
+U_lab(t)=exp(-i t H0) U_ctrl(t)
+```
+
+even though different control pulses need not commute with each other. Literal old `K_S` remains in the generator with coefficient one throughout. Equal free gaps are essential to SWAP's commutation with this literal free Hamiltonian.
+
+## 7. Endpoint selection and scalar order are noncircular
+
+First fix the target finite lift, a circuit for it, the pulse shapes and actual durations; only then compute `t_p`. Choose a rational enclosure `[a,b]` for `x=t_p Delta/(2pi)` with `b-a<1/4`, and set `k=floor(b)+1`. This has a computable strict margin `k>b>=x`. Moreover
+
+```
+0 < k-x <= 1+(b-x) < 5/4 < 2.
+```
+
+The waiting time `2pi(k-x)/Delta` is therefore positive and less than two periods, including the case where `x` itself is an integer. There is no equality decision and no need to synthesize a target depending on the final time. Exact `tau=2pi k/Delta` gives `exp[-i tau Delta(N_S+N_B+n_anc)]=I` on the entire physical Hilbert space, not just on the code. Thus
+
+```
+U_lab(tau) J_anc = exp[-i chi] J_anc U_L(V),
+chi=E0 tau+Theta-theta_circ.
+```
+
+The order of the target and free evolution has been handled by exact factorization, followed by an exact common period. This does not assume that a non-energy-conserving `V` commutes with `K_S`. At the endpoint the battery comparator really is `beta`, rather than an unmentioned free-aged packet. At another sampling time the corresponding free evolution and phase remain. There is no permanent halt.
+
+The effective enclosure step presupposes computable supplied `Delta>0` and actual `t_p`, or certified enclosures for them. Arbitrary mathematical `V` with arbitrary real matrix entries gives an existence theorem, not automatically a finite algorithm on an unspecified representation of those entries. An effective implementation must supply a circuit/angles or a computable target and certified synthesis/precision data. The proposal already conditions exact frequencies and timing, but this distinction should remain explicit in any algorithmic wording. The imported finite gate count does not by itself provide a wall-clock computation or precision guarantee.
+
+There is a related small representation issue: exact reduction of arbitrary computable real angles into the discontinuous interval `[0,2pi)` need not be uniformly computable at a branch boundary. Supplied branch-certified angles/areas suffice for the stated nominal prescription. This is not an obstruction to positive bounded pulses. As a separately attributed effective variant, for a supplied computable `phi in (-pi,pi]`, simply use `alpha=2phi+2pi in (0,4pi]`, which has the same exponential and avoids the modulo decision; replace the two pulse-duration constants `4pi` by `8pi`. Keep a fixed duration slot even for an area known to vanish, so no zero-test is required to calculate `t_p`. This variant is not substituted silently into the frozen proposal, whose `[0,2pi)` choice is mathematically valid. It illustrates the distinction between exact existence and a representation-complete compiler.
+
+## 8. Complete output and energy budgets
+
+Let `J_beta` prepare the exact independent battery packet and vacuum ancilla while leaving arbitrary `S/R` input untouched. The nominal full output satisfies the preceding uniform isometry/trace estimates. If the *actual complete initial state* is within trace norm `eta_ready` of the declared `rho_SR tensor beta tensor |0><0|`, evolve both with the same full unitary. Their final trace distance is still at most `eta_ready`. This uses no fresh product assumption at the output and no replacement of an actual correlated battery by its marginal.
+
+If the nominal implemented isometry differs from the target isometry by at most `nu`, the resulting density-operator bound is `2nu`, uniformly in `R`. The stated full-output budget
+
+```
+e_bat + eta_ready + 2nu
+```
+
+therefore holds, with the optional universal cap two. For a self-adjoint full-generator discrepancy `E(t)`, Duhamel gives operator error at most `integral ||E(t)||dt` and hence adds at most twice that integral to the trace bound. A many-gate control prescription must keep this *total* allowance small; a fixed per-pulse tolerance cannot be silently reused without accumulation. Scalar errors matter separately for amplitude/isometry comparators even when invisible to density matrices. None of these statements supplies a physical clock, pulse calibration, packet preparation or controller output model.
+
+For the exact nominal trajectory, `[H0,H_c(t)]=0` implies conservation of `H0` and every function of `H0` at every time. In particular its first and second moments and variance are conserved for any initial state. The time-dependent *total* generator `H0+H_c(t)` is not generally conserved during a pulse. It equals `H0` at both endpoints. Differentiating its expectation gives
+
+```
+d/dt <H0+H_c(t)> = <dot H_c(t)>.
+```
+
+Integration over the complete cycle therefore gives zero modeled net external work. This is a statement about the given time-dependent Hamiltonian and its defined work functional. It is not evidence for a costless physical actuator or for conservation of the full energy of an omitted microscopic controller.
+
+With exact packet/ancilla initialization and exact endpoint ancilla return, let `rho'_S` be the actual nominal final system marginal. Conservation gives
+
+```
+<H_B>_initial-<H_B>_final = Tr K_S(rho'_S-rho_S).
+```
+
+Consequently the discrepancy from the desired system-energy change is
+
+```
+|battery loss - Tr K_S(V rho_S V* - rho_S)|
+ = |Tr (K_S-cI)(rho'_S-V rho_S V*)|
+ <= ||K_S-cI|| e_bat.
+```
+
+The centered choice `c=E0+Delta q/2` gives `Delta q e_bat/2`. The scalar `E0` cancels only in this difference of equal-trace states; it remains in the actual generator, the incident cap, absolute means and `chi`.
+
+Since `||H_B||=Delta M` grows with packet width, small output trace error is consistent with finite energy transfer. For the joint conserved variance, the exact endpoint identity is
+
+```
+Var_final(K_S)+Var_final(H_B)+2 Cov_final(K_S,H_B)
+ = Var_initial(K_S)+Var_initial(H_B),
+```
+
+where the initial covariance is zero only for the declared ideal product initialization, and the ancilla has zero energy at both exact endpoints. Intermediate ancilla occupation is permitted. For correlated imperfect readiness the initial covariance, and for imperfect return the ancillary terms, must be retained. Thus no separate marginal-variance conservation is claimed.
+
+A trace error `delta` controls a specified moment only with its observable norm: `|Tr H0^j(rho-sigma)|<=||H0||^j delta`, and `||H0||=E0+Delta(q+M+1)`. More precise centering can improve first-moment bounds but cannot erase these precision obligations. Calibration errors that fail to commute with `H0` can additionally violate exact conservation. Separate initial/final observable and conservation allowances are necessary, as the proposal acknowledges.
+
+## 9. Qualified disposition and remaining obligations
+
+The reviewed construction supports a **driven, local, positive-control, fixed modeled strength/slew, finite endpoint approximation to arbitrary `V` on the specified equal-gap noninteracting old register**, with a supplied coherent finite battery and one vacuum ancilla. It preserves the full-output comparator and literal old scalar/forward drift as derived above. There is no mathematical defect in its buffer completion, q-step estimate, positive pulse signs, explicit route, free-period ordering or nominal energy ledger identified by this review.
+
+The following qualifications control that statement:
+
+1. Import Theorem 1 at the supplied version and its all-input ancilla-return convention. Do not call its full synthesis proof independently revalidated here. The direct sector determinant calculation above resolves the relevant vacuum-fixing phase bookkeeping; unqualified literal use of the abbreviated page-16 displays would be unsafe.
+2. Keep full SWAP/projector control on the accessible path as an additional physical permission. Pure nearest-neighbor XY and Z with an ancillary site on the same path do not inherit this conclusion.
+3. Keep exact common gaps, no additional uncontrolled interactions, literal `E0`, a supplied coherent packet, and exact declared timing in the nominal premise list. An effective target/circuit data representation and accumulated calibration budget are extra implementation obligations, not consequences of an existence theorem.
+4. Distinguish nominal control bounds and energy conservation from their perturbed versions. Preserve moment-weighted readiness/calibration allowances and the correlated full output.
+5. Retain the very large generic gate/duration cost, endpoint-only sampling, and absence of an autonomous clock, permanent halt, measured-energy identification or microscopic controller-output accounting. This does not establish the arbitrary interacting-old-H case.
+
+No failed scientific executable or numerical outcome was suppressed, because none was run. The metadata history includes unavailable native PDF extraction discovery, unavailable optional PyMuPDF, a resulting missing-image view attempt, and extraction/truncation limitations, followed by successful targeted primary-page reads and a fallback page-16 render. The latter exited zero with a CoreGraphics warning; its full streams are retained. Those limits are recorded in `SOURCE_COVERAGE.md`. The earlier finite lift is existing mathematics. This packet is a bounded exposed check of the stated bridge, not a broad physical no-go or a claim of independent model-family confirmation.
+
+
+<!-- Unchanged source body: Author fixed-duration argument -->
+
+# A conditional local, conserving endpoint with positive bounded controls
+
+**Proposed source theorem; not independently reviewed or accepted.** On the explicitly strengthened geometry and gate permissions below, a finite coherent reservoir and supplied positive nearest-neighbor controls implement an arbitrary unitary on the old qubits at a declared laboratory endpoint, uniformly on arbitrary old/reference inputs and retaining every reservoir and ancillary output. The old Hamiltonian remains literally installed. The common added incident-strength bound and the slew bound do not grow with accuracy. The number of sites, duration, energy and precision requests do grow and are accounted for below.
+
+The finite spectral lift is existing mathematics, already present in the repository; it is not this note's discovery. The new interface proposed here is its local driven implementation for **identical qubit energy gaps**, with an explicit noncircular endpoint phase correction. The result requires full SWAP access in addition to XY and onsite phase controls. An ancillary path attached to only one old site does not by itself give the required access to all old qubits. No native preparation, microscopic model of the external driver, autonomous timing, permanent halt or indefinite repeatability is asserted.
+
+## 1. Sources and exact domain
+
+The pinned predecessor is `finite_energy_reservoir_candidate/DERIVATION.md`, SHA256 `ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195`; its relevant finite-block, full-output, energy and phase arguments were refreshed. It explicitly identifies the earlier canonical finite-energy-supply note as the source of the lift. Its unresolved local implementation interface is the present target.
+
+The imported circuit-existence theorem is Bai–Marvian, [*Synthesis of energy-conserving quantum circuits with XY interaction*, arXiv:2309.11051v3](https://arxiv.org/pdf/2309.11051v3), Theorem 1 and equation (2). In the form used here, XY exchange and continuous local Z rotations, with one initially zero ancilla, realize conserving unitaries up to a global phase and return that ancilla. The theorem initially allows arbitrary pairs. The paper's pages 3–4 explicitly distinguish a strict nearest-neighbor path with XY+Z alone from access to full SWAP; Corollary 3 includes SWAP. This distinction is a hypothesis here, not an inferred implementation of SWAP by path XY+Z. Its circuit count is not used as a numerical certificate. The imported theorem and the following wrapper remain separately identifiable.
+
+The scoped Markdown search under `W/docs`, excluding audit and work-history directories, found no occurrence of the paper identifier, author pair or title pattern. It does not prove repository-wide absence. A corrected receipt preserves an initially overescaped numeric search alternative. The known spectral-lift duplication is acknowledged irrespective of that search.
+
+Fix q>=1 old qubits S, with supplied, physically identified energy operator
+
+    K = E0 I + Delta N_S,     N_S=sum_(j=1)^q n_j,
+    n=|1><1|=(I-Z)/2,        E0>=0, Delta>0.                  (1)
+
+Keep Planck's constant hbar explicit; Schrödinger evolution is exp(-itH/hbar). No old term in (1) is deleted, multiplied by an accuracy-dependent coefficient, or assigned a different energy zero. Let V be any supplied unitary on S, with its scalar phase included. R is an arbitrary passive reference, possibly entangled with all of S.
+
+The additional supplied physical conditions are:
+
+* A finite simple nearest-neighbor path containing every old qubit, M new reservoir qubits and one new synthesis ancilla. Each path edge permits the positive generators in section 4; each site permits its onsite generators. More generally a supplied connected finite routing graph works with its actual routing lengths, but no graph-independent constant is asserted. Occupied-site permission for these new interactions, including old-old edges if used, is explicit.
+* All new qubits have the installed onsite energy Delta n, with the same physical gap as (1). The reservoir's prepared coherent state and the ancilla's zero state are supplied at laboratory time zero and independent of S/R. Their preparation and phase-reference costs are not derived here.
+* Calibrated, externally timed, nonnegative pulses of the explicitly listed generators are available. Full SWAP exchange is included as a separate interaction permission. The actuator, clock and their output states are external to the finite quantum model proved below.
+
+These are conditional control permissions, not new framework axioms. The proof neither infers them from generic controllability nor substitutes a branched XY/free-fermion model.
+
+Throughout, positive means positive semidefinite. No strictly positive identity floor is assumed and then omitted from the accounting.
+
+## 2. Identical-gap reservoir and the complete finite unitary
+
+Choose an integer L>=1 and set
+
+    M=L+2q,       n_sys=q+M,       m=q+M+1.                  (2)
+
+Use the unary reservoir code
+
+    |r>_B = |1>^r |0>^(M-r),       0<=r<=M,
+    H_B=Delta sum_(j=1)^M n_j.                             (3)
+
+Its code energy is exactly Delta r; its full physical Hilbert space is retained. For each k=0,...,q let P_k project onto the old Hamming-weight-k subspace. For an integer a with q<=a<=M, the subspace
+
+    F_a = direct_sum_(k=0)^q [P_k S tensor |a-k>_B]
+
+is a complete copy of S. Its actual total energy is E0+Delta a. Identify it with S and let U_L(V) act as V on it. On all other unary-code energy subspaces and the whole orthogonal complement of the unary code, set U_L(V)=I. Thus U_L(V) is a unitary on all n_sys physical qubits, and
+
+    [U_L(V), K+H_B]=0.                                     (4)
+
+No cyclic shift, discarded boundary or unspecified noncode output is used. Repeated total energies outside these chosen subspaces are harmless: the chosen blocks refine energy eigenspaces. All relevant weights and degeneracies here are known integers; no exact-real spectral equality oracle is invoked.
+
+Supply the normalized coherent vector
+
+    beta_L = sqrt(2/(L+1)) sum_(r=q)^(q+L-1)
+                  sin(pi(r-q+1)/(L+1)) |r>_B.              (5)
+
+For every old input weight k, the occupied total labels r+k lie in [q,L+2q-1], contained in the complete interval [q,M]. Hence the actual action on every prepared input is
+
+    U_L(V)(psi tensor beta_L)
+       = sum_(l,k) P_l V P_k psi tensor T^(k-l) beta_L,     (6)
+
+where the bilateral shift T is only a proof device. All actual final ladder values in (6) lie in [0,M]. The new synthesis ancilla A starts in |0>, with H_A=Delta n_A.
+
+## 3. Uniform full-output approximation
+
+For the zero-extended sine packet,
+
+    d_L=||(T-I)beta_L||=2 sin(pi/[2(L+1)]).
+
+The path eigenvector identity gives <beta_L,T beta_L>=cos(pi/(L+1)); translating the support does not change it. Telescoping shifts gives ||(T^k-I)beta_L||<=k d_L. With the bilateral controlled shift C_+=sum_k P_k tensor T^k, orthogonality of the P_k gives, even with an arbitrary reference,
+
+    ||(C_+-I)(psi_SR tensor beta_L)|| <= q d_L.
+
+Equation (6) equals C_+^*(V tensor I)C_+ on the prepared subspace. Inserting V tensor beta_L between its two factors proves the isometry bound
+
+    ||U_L(V)J_beta - J_beta V|| <= 2q d_L.                (7)
+
+Here J_beta adjoins beta_L; the notation respects the chosen ordering of tensor factors. Purification gives the **unhalved** joint trace bound on S/B/R
+
+    error <= 4q d_L <= 4pi q/(L+1).                        (8)
+
+The comparator returns beta_L in product form. The actual reservoir generally changes and remains correlated with S/R; no subsystem is traced out in (8). Exact return is not claimed. The bound is uniform in V, the old state and the dimension of R. For fixed q, M=O(epsilon^-1) suffices for this part of the error, independently of compilation cost.
+
+## 4. Circuit certificate and positive local gate realizations
+
+Apply the imported conserving circuit theorem to U_L(V) on n_sys qubits. For precise finite accounting use a circuit C and a unit scalar zeta satisfying
+
+    || C J_A - zeta J_A U_L(V) || <= eta_C,                (9)
+
+where J_A appends |0>_A. The exact existence theorem permits eta_C=0. The gate list specifies every pair, every onsite angle and zeta; a finite-precision certificate may instead establish strict (9). A matrix residual certificate on the full input isometry, rather than a reduced channel or selected test states, is the controlling requirement.
+
+Take the arbitrary-pair elementary list from the theorem to consist of sqrt(iSWAP)=exp(i pi R_xy/4), R_xy=(XX+YY)/2, and exp(i phi Z), with -pi<phi<=pi. Route each two-qubit gate by adjacent **full** SWAPs: move one logical qubit next to the other, apply the gate, and undo the movement. On a path of m sites, one such gate uses at most 2(m-2)+1 physical gates. Onsite gates require no routing. Undoing each route restores all physical wire assignments, including unknown inputs and the coherent reservoir; this is an exact permutation identity on the full Hilbert space.
+
+Let the resulting adjacent/onsite list have G gates. Record its actual gate list and count before using the duration below. If the original list has G_1 onsite and G_2 pair gates, the safe explicit bound is
+
+    G <= G_1 + (2m-3)G_2.                                 (10)
+
+For an elementary desired gate g, the following dimensionless positive Q implements it, with the stated scalar:
+
+| Desired gate | Positive integrated generator Q | exp(-iQ) |
+|---|---|---|
+| sqrt(iSWAP) | (pi/4)(I-R_xy) | exp(-i pi/4) sqrt(iSWAP) |
+| exp(i phi Z) | abs(phi) I-phi Z | exp(-i abs(phi)) exp(i phi Z) |
+| full SWAP S_w | (pi/2)(I-S_w) | S_w |
+
+R_xy has eigenvalues -1,0,0,1. S_w has eigenvalues +/-1. Thus these Q are positive semidefinite and have norms at most pi/2, 2pi and pi respectively. Every identity reserve in this table is a real installed pulse term and is included in its norm. In particular
+
+    I-S_w = (I-XX-YY-ZZ)/2
+
+is an allowed positive singlet projector times two; its ZZ component is an additional interaction beyond path XY+Z. This is the precise gate-permission enlargement. Positivity does not make it a consequence of the weaker permission.
+
+Let Phi be pi/4 times the number of sqrt(iSWAP) gates plus sum|phi| over the onsite rotations, counted in the routed list. Full SWAP contributes no endpoint scalar in this convention: its reserve gives exp(-i pi/2), while exp(i pi S_w/2)=i S_w, so the two scalar factors cancel exactly. Its reserve energy and work still count. The product of these positive gate propagators is exactly exp(-i Phi) C.
+
+### Effective certificate selection versus finite-real existence
+
+No numerical G, zeta or control-angle certificate has been produced for an unspecified input V. For supplied computable V and Delta, a terminating but potentially enormous prescription is available from the imported universality theorem: enumerate finite words with rational onsite angles, the exact sqrt(iSWAP) gate, and a rational-angle candidate scalar. Dovetail finite-precision interval evaluations of the full residual in (9), accepting only a certified upper bound strictly below eta_C>0. Rational angles are dense; a finite exact word from the theorem and its global phase can be approximated with a margin. Consequently some word certifies. A Frobenius bound on the isometry residual suffices; there is no need to decide whether any entry is exactly zero. Route the returned word and retain its actual finite certificate.
+
+This proves effective termination under computable input oracles and the imported theorem. The later effective pulse/scalar prescription also requires computable timing, energy and unit constants with certified enclosures; it is not an exact-real oracle supplied by the circuit theorem. It supplies neither an efficient synthesis algorithm nor an oracle-walltime bound. For arbitrary supplied noncomputable V the statement is finite-real existence only. The paper's asymptotic gate bound and its sparse-support refinement are not converted here into numerical counts or a polynomial-in-accuracy runtime claim.
+
+## 5. Fixed strength and slew, with a noncircular laboratory endpoint
+
+Fix desired positive constants g (energy units) and sigma (energy/time units), independent of epsilon. Set Q_*=6pi. Choose one supplied duration h satisfying
+
+    h >= max(4 hbar Q_*/g, sqrt(4pi hbar Q_*/sigma)).       (11)
+
+For a slot of length h use
+
+    f_h(t)=(1-cos(2pi t/h))/h,       0<=t<=h,
+    H_control(t)=hbar f_h(t) Q.                            (12)
+
+Outside its slot the pulse is zero. Its area is one, its maximum is 2/h and its derivative maximum is 2pi/h^2. Both pulse and derivative vanish at either endpoint. Hence every local pulse has norm at most g/2 and derivative norm at most sigma/2. The reserves in Q count in these bounds.
+
+Execute the routed gates serially in G such slots. Reserve **one more slot** for simultaneous onsite number phases on all m qubits. Fix
+
+    tau=(G+1)h,          x=Delta tau/hbar.                  (13)
+
+Now, and only now, choose a rational r satisfying |r-x/(2pi)|<=1/4, set k=floor(r)+2 and set
+
+    lambda=2pi k-x.                                       (14)
+
+The floor is of a rational, hence decidable; no exact-real rounding oracle is used. The inequalities give 3pi/2<lambda<=9pi/2<Q_*. During the final slot apply Q=lambda n at each site. These simultaneous onsite pulses satisfy the same **per-site** strength/slew bounds. Their global norm, which is not their incident norm, grows with m. Since the duration of that slot was fixed before lambda was selected, (13)–(14) are not a target/duration fixed-point equation. Approximate evaluation of lambda is priced in section 7.
+
+The full installed free Hamiltonian is
+
+    F=K+H_B+H_A=E0 I+Delta N_tot.                          (15)
+
+All table generators and all final generators commute with F. F remains present throughout every ramp, slot and routing SWAP. Thus the complete laboratory propagator is exactly
+
+    U_lab(tau)
+       = exp[-i E0 tau/hbar] exp[-i(x+lambda)N_tot]
+                          exp(-i Phi) C
+       = exp[-i(E0 tau/hbar+Phi)] C.                       (16)
+
+The integer spectrum of N_tot, not an energy rescaling or a discarded drift interval, proves the last equality. The positive final pulses add forward number phase until an integer multiple of 2pi is reached. They do not remove K from the generator. If lambda n is expanded as (lambda/2)(I-Z), its identity and Z phases are both already included in exp(-i lambda N_tot); neither is discarded separately. The old scalar E0 tau/hbar is retained. Define
+
+    gamma=exp[-i(E0 tau/hbar+Phi)] zeta.                    (17)
+
+For every pure old/reference input the vector comparator is
+
+    gamma (V tensor I_R)|psi_SR> tensor beta_L tensor |0>_A,
+
+and its vector error is at most 2q d_L+eta_C. Mixed-input joint trace error is at most 4q d_L+2eta_C. The scalar in V is already part of V; (17) is the additional implementation scalar, not permission to erase the target's phase.
+
+The ideal **added** incident local norm is bounded by Delta+g/2 at any site: the new fixed field is at most Delta, and at most one serial interaction or one final onsite pulse is active there. Old sites retain their original Delta n as old terms; counting Delta there again only enlarges this safe bound. The literal E0 identity is old, not an unpriced new reserve. The ideal added incident slew is at most sigma/2. With independently certified local calibration headroom, section 7 gives Delta+2g and sigma as safe common bounds. Parallel final pulses are counted per site and globally; no unbounded port load is split into fictitious channels.
+
+This is an externally scheduled endpoint. If every control is off after tau, then at tau+s the comparator becomes
+
+    gamma [(exp(-isK/hbar)V) tensor I_R] psi_SR
+               tensor exp(-isH_B/hbar)beta_L tensor |0>_A. (18)
+
+The same ideal error bound holds for any specified s, since the subsequent actual evolution is exactly free. The old extra phase exp(-isE0/hbar) is inside (18). This does not keep the reservoir stationary or establish a halt or a fresh ready state for another gate.
+
+## 6. Energy, scalar reserves and external work accounting
+
+The retained quantum model is S+B+A+R. The externally prescribed actuator is not a modeled extra reservoir. For every time-dependent ideal pulse schedule above, [H_lab(t),F]=0. Therefore the **entire distribution of F**, including all moments, is conserved exactly at all times, not only at tau. The Hamiltonian H_lab(t)=F+H_control(t) is positive semidefinite because E0>=0, Delta>0 and every pulse is positive.
+
+Initially A has zero energy and
+
+    mu_B=Delta [q+(L-1)/2],
+    Var(H_B)=Delta^2 (2/(L+1)) sum_(a=1)^L
+                (a-(L+1)/2)^2 sin^2(pi a/(L+1))
+              <=Delta^2 (L-1)^2/4,
+    0<=H_B<=M Delta I,     <H_B^2>=mu_B^2+Var(H_B).        (19)
+
+The initial total mean is Tr(K rho_S)+mu_B and its variance is Var_(rho_S)(K)+Var(H_B). All final covariances are retained. Conservation gives the exact mean balance
+
+    change <H_B+H_A> = -change <K>.                       (20)
+
+In the exact compilation A returns to zero. With approximate compilation its energy remains part of (20). For joint trace error e relative to the comparator, the difference between the actual old energy transfer and that of V is at most (q Delta/2)e. The product comparator's unchanged battery mean cannot justify discarding the actual finite energy transfer: the reservoir's range M Delta grows with accuracy.
+
+If moment accuracy is separately required, for any actual observable O its expectation error is at most ||O-cI|| e; for O=(H_B+H_A)^p the safe centered range bound is ((M+1)Delta)^p e/2. This may fail to vanish with the state-error schedule and must be budgeted separately. Conservation of F moments is exact and does not imply independent conservation of reservoir moments.
+
+There is also an explicit classical work functional for this supplied drive:
+
+    W_drive = integral Tr[rho(t) dH_lab(t)/dt] dt.
+
+Within one serial slot the expectation of Q is constant because the only nonconstant term is proportional to Q and [F,Q]=0. The same statement holds for the sum of commuting final onsite Q's. Since every pulse begins and ends at zero,
+
+    W_drive=0,
+    integral |Tr[rho(t) dH_lab(t)/dt]| dt
+       <=(4 hbar/h)[sum_(j=1)^G ||Q_j|| + m lambda]
+       <= g(G+m).                                        (21)
+
+For the last inequality use the headroom choice (11), so 4 hbar Q_*/h<=g. Each slot has positive work during its rising half and compensating negative work during its falling half; the peak temporarily stored control energy is at most g/2 for a serial slot and m g/2 for the final parallel slot. Identity reserves contribute to this real work and its scalar phase. The global peak installed energy is bounded by E0+m Delta+m g/2, while the local incident cap remains fixed.
+
+Equation (21) prices the state-dependent work functional of the externally prescribed Hamiltonian. It does **not** construct a finite microscopic clock/actuator returning its own state, bound its work fluctuations or preparation energy, or identify a source of phase coherence. A closed conservative dilation of the driver itself is a further problem; it is not solved by zero net value of this work functional.
+
+For a calibrated schedule with the same active supports, all pulses zero at the endpoints and actual incident slew <=sigma, the coarser robust absolute-work bound is sigma h(G+m). If the same physical F is installed, its net work differs from zero by at most m Delta eta_H, using the centered range of F and the Duhamel estimate below. If every actual perturbation commutes with F, that net work is exactly zero. These statements do not cover a different physical energy observable silently substituted for F.
+
+## 7. Physical calibration, phase readiness and an error allocation
+
+Let an actual preparation satisfy
+
+    ||rho_initial - rho_SR tensor beta_L beta_L^* tensor |0><0|_A||_1
+          <=epsilon_p,                                   (22)
+
+uniformly in the supplied unknown rho_SR. This includes all initial unwanted correlations and phase errors. Let an actual calibrated Hamiltonian on the same time interval satisfy
+
+    eta_H=(1/hbar) integral_0^tau ||H_actual(t)-H_lab(t)||dt. (23)
+
+The Duhamel bound gives operator error <=eta_H and joint trace error <=2eta_H. It does not require a known old state. It also does not by itself guarantee positivity, locality, strength or slew: actual admissibility must be certified separately by the supplied control families and local bounds. For example, parameterized positive pulses with added incident norm errors <=g/2, incident derivative errors <=sigma/2, and new static field errors <=g give the safe common cap Delta+2g and slew sigma. A safe corresponding global installed norm is E0+m Delta+2mg. The old K itself remains literal; (23) must not redefine the target K to absorb an old drift change.
+
+For concrete numerical requests, suppose the actual pulse in slot j is hbar (1+a_j) f_h(t) Q_tilde_j with the same prescribed shape and support, generator norm error delta_j and actual generator norm <=Q_*. Suppose the final onsite angle error on each site is at most delta_lambda, its common shape is multiplied by 1+a_f, and the additional static Hamiltonian error is <=b. Then a sufficient integrated error bound is
+
+    eta_H <= tau b/hbar
+             + sum_(j=1)^G (delta_j+Q_* |a_j|)
+             + m(delta_lambda+Q_* |a_f|),                 (24)
+
+with an additional integrated term if shapes, overlaps or edge orientations differ beyond this description. Uniform requests
+
+    b <= hbar eta_H_budget/(3 tau),
+    delta_j,delta_lambda <= eta_H_budget/[3(G+m)],
+    |a_j|,|a_f| <= eta_H_budget/[3Q_*(G+m)]                (25)
+
+spend at most eta_H_budget in (24). Exact conservation holds for the ideal matched-energy model. It also holds for actual perturbations commuting with the same physically identified F. Arbitrary noncommuting errors satisfy the state bound, not an exact conservation claim. A physical mismatch of reservoir gaps must not be called exact conservation of its different measured free energy.
+
+The final lambda can be requested to the absolute accuracy in (25). From lambda=2pi k-Delta tau/hbar, evaluation requests for Delta and tau must account for tau delta_Delta/hbar, Delta delta_tau/hbar and their cross term. The integer k is fixed from the coarse certified rational in (14); refining the final angle does not require selecting a discontinuous principal argument. The large value of k requires enough precision in pi to control 2k delta_pi as well. Computable pi has effective evaluation; arbitrary supplied physical coefficient-oracle walltime is not bounded here.
+
+If the reported endpoint has an additional timing error t_e after all pulses are off, take
+
+    eta_t <= (E0+m Delta)|t_e|/hbar.                       (26)
+
+This conservative vector bound includes the old scalar. A tighter density-only bound may remove E0, but no such removal is used in the displayed budget. Timing jitter during pulses belongs in (23), not solely in (26).
+
+For phase readiness, an aged reservoir beta_theta=exp(-i theta N_B)beta_L changes the target of the lift to
+
+    V_theta=exp(-i theta N_S) V exp(+i theta N_S).           (27)
+
+Thus a phase reference error is physically relevant. A known age t has theta=Delta t/hbar; it can be incorporated before circuit selection by compiling exp(+i theta N_S) V exp(-i theta N_S). If the comparator retains the actual beta_theta, the additional target trace error is at most 2q|theta|. If the comparator requires beta_L itself, apply (22) instead: its readiness trace error is at most 2 sigma_N |theta|<= (L-1)|theta|, where sigma_N is the square root of the finite variance in (19) divided by Delta. These are alternative comparison conventions, not errors to double count. Preparing the sine amplitudes, their phases and the initial product with S/R remains supplied.
+
+Combining all errors, for arbitrary rho_SR and retaining S/B/A/R,
+
+    trace error <= 4pi q/(L+1)+epsilon_p
+                         +2eta_C+2eta_H+2eta_t.            (28)
+
+For 0<epsilon<=1, one sufficient solved allocation is
+
+    L >= max(1,ceil(20pi q/epsilon)-1),
+    epsilon_p<=epsilon/5,
+    eta_C, eta_H, eta_t <= epsilon/10.                    (29)
+
+Choose L, construct the finite lift, select/certify the circuit, route and count G, choose h once from fixed g/sigma, set tau, choose k/lambda, then request coefficients and timing to (25)–(26). This is the complete order of choice; no target depending on an unknown duration is passed back into the compilation. The scalar gamma in (17) is retained as a unit complex number. Any desired tolerance for reporting that scalar adds the corresponding bound on E0 tau/hbar, Phi and zeta; a global phase error affects the vector comparator even though it cancels from (28).
+
+## 8. Resource and limitation ledger
+
+| Resource or promise | Explicit price or qualification |
+|---|---|
+| New qubits | M+1=L+2q+1, including one synthesis ancilla |
+| Reservoir code dimension | M+1; full physical reservoir dimension 2^M retained |
+| Total modeled qubits | m=L+3q+1 |
+| Coherent initial energy/moments | Equation (19), not a free readiness supplier |
+| Added incident strength/slew | Ideal Delta+g/2, sigma/2; stated calibrated headroom Delta+2g, sigma |
+| Global nominal installed and pulse energy | E0+m Delta+m g/2; real reserves retained |
+| Actual laboratory duration | tau=(G+1)h for the returned routed gate certificate |
+| Routing | Equation (10), with full SWAP as an additional interaction |
+| Integrated calibration | Equations (24)–(25); precision requests depend on actual G and tau |
+| Complete output and target phase | Equations (17), (18), (28); no partial trace used |
+| Drive work functional | Net zero in ideal model, absolute work bounded by (21) |
+| Microscopic driver, clock and preparation | Supplied/open physical interfaces; no native closure |
+| Effective synthesis | Terminating certificate search for computable input, no efficient walltime or polynomial accuracy-cost claim |
+
+Only the new sites and reservoir energy are explicitly polynomial in 1/epsilon here. No inference from dimension to runtime is made. The paper has more structured synthesis results; extracting and checking a concrete sparse-code compiler with a certified count is a useful next task, not a result silently imported into this ledger.
+
+If the only permitted controlled edges form an ancillary path touching old qubit 1 while old qubit 2 has no controlled edge or transverse onsite control, the Hamiltonian factors across qubit 2, with a diagonal one-qubit factor there. For q=2 its n_2 expectation is constant. V=I_1 tensor X_2 on an initial |0>_2 instead requires a |1>_2 output, giving trace distance 2 on that qubit. This is an exact witness that the weaker access description does not imply the present geometry. It does not rule out enlarging access, adding old interactions, or a different architecture.
+
+## 9. Failed shortcuts and narrow negative-claim discipline
+
+The following are scope tests within a positive conditional construction, not a general no-go submission. The no-go-discipline skill was applied to prevent the geometry and gate caveats from becoming broader impossibility claims. No five-family negative packet, negative audit status or publication is requested.
+
+* **N1, actual routes:** strict-path XY+Z alone was screened against the paper's explicit qualification; full positive SWAP is the successful enlarged route here. A coherent-reservoir endpoint without local synthesis is the known predecessor, insufficient by itself for the requested implementation. Adding an unpriced negative free drift was rejected in favor of the paid phase layer. An ancilla with access to every chain site is an alternative permission in the primary source, not investigated here. These are the actual routes; no five failed families are invented and no negative-packet PASS is claimed.
+* **N2, dependence:** no independent-wall count is asserted. Connectivity and full-SWAP access enter the single routing permission. Coherent readiness and calibrated timing enter the supplied driven model; their mutual derivability is not established.
+* **N3, hidden conditions:** exact equal gaps, physical identification of energy, control access at every path site, the full SWAP generator, the one clean ancilla, coherent initial product, pulse calibration, imported circuit theorem and optional computable-input oracles are all explicit. None follows from a generic Lie certificate.
+* **N4, matching:** the paper's caveat concerns XY+Z with the ancilla confined to the same strict path. The two-old-qubit witness concerns an actually disconnected control site. Neither is applied to the successful full-SWAP connected-path permission.
+* **N5, resolution:** the old-site witness is a factorization calculation for that stated geometry. Gate positivity, commutation and local cap calculations apply per generator and per site; the full-output estimate applies to the entire finite S/B/A/R model. There is no assertion about all spatial architectures or a fundamental energy-conservation obstruction.
+* **N6, partial closure:** the positive exchange permission and explicit phase slot close the local endpoint interface conditionally without changing axioms. They do not retire physical preparation or driver suppliers. No claim that a new axiom is required is made.
+* **N7, steelman:** a more economical sparse-code compiler, another connected graph with certified routes, or supplied ancilla access outside a strict path may reduce resources or avoid this particular full-SWAP assumption. Those possibilities remain open. They do not invalidate the displayed conditional schedule; they defeat any attempted universal obstruction based on its caveats.
+* **N8, prior echo:** the exact finite-reservoir predecessor already separates an abstract conserving gate from physical local control and timing. This note uses a restricted homogeneous-energy domain and stronger supplied controls to address that interface. Its old general-H absence of a local construction is not treated as an impossibility result.
+
+No scientific numerical runner was launched. The independent checks still required before acceptance are the finite-block/reference proof, gate and routing phases, the fixed-slot endpoint identity and the physical scope of the supplied control graph. A useful next finite discriminator is a nontrivial two-old-qubit target with complex amplitudes: certify its complete isometry, include both full SWAP and a fermionic-SWAP mutant, and verify (16) with an elapsed phase not equal to a multiple of 2pi. That proposed check has not been executed and is not evidence in this packet.
+
+## 10. Exposure and handoff
+
+The author previously constructed the exposed reservoir and bus/preparation/memory notes. This is same-model continuation, not an independent validation of those parents. The root's separate `local_conserving_control_root_proposal` was not read. The primary paper's theorem statements, path qualification and relevant synthesis argument were inspected; the entire 38-page paper and all circuit identities were not independently re-proved. Consequently the circuit theorem remains an attributed imported premise, and the explicit finite certificate (9) is the effective acceptance interface.
+
+Only this assigned directory was written. Existing freezes, canonical notes, worktrees, Git, publication, audit files, locks, prompts and axioms were not changed. The source manifest distinguishes current reads from earlier author exposure. The final freeze binds the proposed source and provenance; it is not a scientific acceptance or a claim of independent review.
+
+
+<!-- Unchanged source body: Author fixed-duration exposed review -->
+
+# Exposed review of the author's fixed-duration local conserving endpoint
+
+**Disposition: qualified support for the stated equal-gap, noninteracting, externally driven construction.** No load-bearing defect was found in the finite lift, parallel endpoint phase correction, scalar/ancilla interface, pulse bounds, certificate-search termination or ideal work calculation. The qualification about initial energy under imperfect readiness below is necessary if section 6's nominal transfer estimate is used in the perturbed setting. Parallel onsite actuation is an explicit physical requirement of this route. A separate metadata limitation affects the claimed search-correction history, not the mathematical construction.
+
+This is a same-model, source-exposed analytical check. It follows the reviewer's already frozen exposure to the root's different period-wait proposal. It is not blind, a different-model replication, a retained audit, root acceptance, or verification of a microscopic driver. The period-wait construction is **not used** to prove the author's endpoint. No scientific numerical program or old checker was run.
+
+## 1. Source identity and coverage
+
+The complete ten-section author argument is `local_conserving_control_candidate/DERIVATION.md`, 31922 bytes, SHA256 `c7f0e58c79b7e05f7fe79374a8bbe52a290c0371392a0b0ddcdb98d3dbb49e60`. Its `FREEZE.json` has SHA256 `3128a438f020588eb8e8e945b1cbe9f4e6d64f5524831e19e530ff28a1e08c9b`. All 12 listed members and that freeze were independently hash-checked and copied without modification into `author_source/`. The full author check, source manifest, checkpoint, retrieval/search records and streams were inspected. The author reports no scientific execution; the frozen packet contains no such executable evidence.
+
+Necessary source identities are unchanged: the captured finite-reservoir predecessor is SHA256 `ee90d960f0db9f30c861d837c53e306a50a855c7af251a748e655749a8a9a195`; the saved Bai–Marvian arXiv:2309.11051v3 PDF is SHA256 `add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8`. The predecessor was completely reviewed earlier; the present specialization is independently reconstructed below rather than accepted from its provenance alone. The PDF's equation (2), Theorem 1 gate set 1, strict-path qualification on pages 3–4, and Proposition 13/clean-ancilla mechanism on page 16 were completely inspected during the immediately prior root-only review. Their verified coverage is reused at the identical bytes. The entire 38-page circuit proof is not independently revalidated here. The earlier canonical finite lift is prior mathematics, not a new result of either current proposal.
+
+The earlier root-only review remains unchanged: REVIEW SHA256 `70d14b789941483c88d39e582195485f5230528415197ad763183fab6407ebc4`, final freeze `f17710dd8d161053aa6f8168496dc739aeea8488105c422d834e274a2cc043cd`, sealed before author exposure. This review has not read another new root review or worker result. Exact coverage, captured identities, actual metadata source at launch, launcher, full stdout/stderr and receipt accompany this packet. Metadata verification is not scientific execution evidence.
+
+## 2. Physical finite lift and arbitrary-reference norm
+
+The author uses `M=L+2q`, one reservoir qubit more than the minimum two-sided buffer used in the earlier root construction. This spare site is harmless. For each prefix `p_r=|1>^r|0>^(M-r)` and old computational string `x`, total number is `a=r+w(x)`. For `q<=a<=M`,
+
+```
+J_a |x> = |x> |p_(a-w(x))>
+```
+
+is an isometry onto a full `2^q`-dimensional copy of the old system. Different `a` are orthogonal total-number sectors. The direct sum of `J_a V J_a*`, identity on all incomplete prefix sectors, and identity on the nonprefix battery complement is a full physical unitary. The nonprefix complement is invariant under the number operator because every code projector is diagonal in the computational basis. Degenerate energies do not invalidate this finer block decomposition. Therefore `[U_L(V),K+H_B]=0` on the entire physical space, not merely the initialized code.
+
+The packet has `q<=r<=q+L-1`; hence `q<=r+k<=L+2q-1<M` for `0<=k<=q`. Every populated sector is complete. An output shift by `k-l` gives `0<=r+k-l<=L+2q-1<=M`. There is no wraparound or discarded output. The total vacuum is in an identity sector, so `U_L(V)` fixes it. This remains true for `q=L=1`, where `M=3`.
+
+For `theta=pi/(L+1)`, the normalized zero-extended amplitudes `b_j=sqrt(2/(L+1))sin(j theta)` obey `b_(j-1)+b_(j+1)=2cos(theta)b_j` and vanish at `j=0,L+1`. Multiplying by `b_j` and summing gives `sum b_j b_(j+1)=cos(theta)`. Thus
+
+```
+d_L^2=||(T-I)beta||^2=2-2cos(theta),
+d_L=2sin(theta/2)<=pi/(L+1).
+```
+
+Telescoping gives `||(T^k-I)beta||<=k d_L` for `0<=k<=q`, and the same estimate for negative shifts. If `C_+=sum_k P_k tensor T^k`, then for any normalized `psi_SR`,
+
+```
+||(C_+-I)(psi_SR tensor beta)||^2
+ =sum_k ||(P_k tensor I_R)psi_SR||^2 ||(T^k-I)beta||^2
+ <=q^2 d_L^2.
+```
+
+Apply the same calculation to `C_+*` and to `(V tensor I_R)psi_SR`. The decomposition
+
+```
+C_+* V C_+ - V = C_+* V(C_+-I)+(C_+*-I)V
+```
+
+proves isometry error `2q d_L`, hence unhalved full-output trace error `4q d_L`, with an optional cap of two. Reference dimension never enters. The bilateral shift is used only for this estimate; the physical action has already been completed unitarily. This establishes the author's factors without importing a reduced-channel comparison or assuming fresh reservoir purity after the operation.
+
+## 3. Imported synthesis, effective certificate and routing
+
+For `n_sys=q+M`, the target is a full unitary commuting with total number, equivalently with `sum Z`. Bai–Marvian's exact theorem supplies a circuit in square-root iSWAP and continuous onsite Z rotations using one initially vacuum ancilla returned to vacuum on every target-register input, up to one global scalar. Equation (9) is consequently the appropriate interface:
+
+```
+||C J_A-zeta J_A U_L(V)||<=eta_C.
+```
+
+It is an isometry norm on the whole `S+B` input space. Tensoring with an arbitrary reference preserves that bound. It does not claim a particular action on an initially excited synthesis ancilla; imperfect initialization is handled by the complete readiness distance.
+
+The relevant clean-ancilla mechanism can also be checked directly. For a nonvacuum basis string `b`, remove one excitation to obtain `b'`; the operator `|b,0><b,0|-|b',1><b',1|` is a traceless two-level operator within one total-number sector. Its exponential changes the phase of `b` on ancilla-zero inputs while returning that ancilla. Together with the imported sector-special-unitary synthesis this corrects determinant phases one sector at a time. Since this target fixes vacuum, a fully defined correcting diagonal is `D=I+sum_m(exp(i theta_m)-1)|b_m><b_m|`, with `theta_m=arg det U^(m)`. This avoids literal dependence on the abbreviated identity-complement/general-vacuum-phase displays noted in the earlier primary-source review. The imported general circuit theorem remains an attributed dependency; this elementary check does not re-prove all its gate identities.
+
+The proposed effective search is valid for a supplied computable unitary and positive requested `eta_C`. The finite target matrix is computable directly from known integer code labels and the old matrix entries; no support or spectral-equality decision is needed. Approximate an existing exact finite word and its scalar by rational onsite angles and a rational-angle scalar. Continuity of a finite product makes the full residual arbitrarily small. In particular it can be made smaller than a strict fraction of `eta_C` in Frobenius norm, despite its possibly enormous finite dimension. Dovetailed interval evaluations can eventually certify a strict upper bound below `eta_C` for such a word. Trials exactly on a threshold need not terminate because the search is dovetailed. Unit-modulus scalar candidates are represented as exponentials, not arbitrary approximate complex numbers incorrectly assumed unitary.
+
+This proves termination, conditional on computable input oracles and the imported existence theorem. It does not produce an executed target-specific certificate, an efficient algorithm, exact-zero residual certification, or a polynomial runtime. `eta_C=0` belongs to finite-real existence; the stated search requires `eta_C>0`. Arbitrary noncomputable target matrices receive only the existence statement. A conservative integer strictly above a certified upper enclosure can be used when selecting `L`; no implementation needs to decide exact equality in a computable-real ceiling formula.
+
+For a path of `m=q+M+1` physical sites, a pair at positions `i<j` is routed by `j-i-1` adjacent full SWAPs, the desired adjacent gate, and the reverse sequence. Every original wire assignment is restored on every input, including unknown correlations. The maximum is `2(m-2)+1=2m-3` physical gates per original pair gate. Thus `G<=G_1+(2m-3)G_2`. Full SWAP is an additional permitted interaction; it cannot be inferred from pure XY+Z on a strict path whose ancilla is confined to that path. The paper's approximate nearest-neighbor corollary is not being silently treated as an exact synthesis result.
+
+## 4. Positive pulse and scalar calculation
+
+Let `R_xy=|01><10|+|10><01|`. It has eigenvalues `0,0,+1,-1`, so `(pi/4)(I-R_xy)` is positive with norm `pi/2`, and
+
+```
+exp[-i(pi/4)(I-R_xy)] = exp(-i pi/4) sqrt(iSWAP).
+```
+
+For an onsite rotation, `Q_phi=abs(phi)I-phi Z` has eigenvalues `abs(phi)-phi` and `abs(phi)+phi`, both nonnegative, with norm `2abs(phi)<=2pi`. Its exponential is exactly `exp(-i abs(phi)) exp(i phi Z)`. This is a continuous, computable positive-generator formula for computable `phi`; it avoids the root period-wait proposal's principal-angle reduction. For rational angles in the effective gate search, even its sign is directly decidable. A negative angle uses an onsite pulse that charges the vacuum component; that scalar is included in `Phi`, not free.
+
+For a full SWAP `S_w`, `(I-S_w)/2` is the antisymmetric projector. Therefore `Q_swap=(pi/2)(I-S_w)` has eigenvalues `0,pi` and `exp(-iQ_swap)=S_w`, exactly. The Pauli expansion is `I-S_w=(I-XX-YY-ZZ)/2`. The identity reserve's scalar and the exchange scalar cancel at the endpoint, but neither its installed norm nor its work is removed.
+
+Multiplying the gate identities in their actual chronological order gives
+
+```
+U_serial = exp(-i Phi) C,
+Phi=(pi/4)N_sqrt + sum_on_site abs(phi).
+```
+
+No commutation between successive gates is required for this scalar multiplication. As an independent exact-limit cross-check, the abstract circuit multiplies vacuum by `exp(i sum phi)`, while the lifted target fixes vacuum. For an exact isometry certificate, `zeta=exp(i sum phi)`. The physical serial vacuum phase is therefore `exp[-i(pi N_sqrt/4+sum(abs(phi)-phi))]`, exactly what the positive generators produce. For approximate compilation retain the certified `zeta` and `eta_C`; do not impose that equality without its error.
+
+## 5. Fixed-duration parallel phase layer
+
+The cosine profile has integral one, maximum `2/h`, derivative maximum `2pi/h^2`, and both value and derivative zero at each endpoint. For `H_c=hbar f_h Q` with `||Q||<=Q_*=6pi`,
+
+```
+||H_c||<=2 hbar Q_*/h,
+||dot H_c||<=2pi hbar Q_*/h^2.
+```
+
+Equation (11) gives the half-caps `g/2` and `sigma/2`. The serial pulses are disjoint, and joining them or a zero interval preserves `C^1` regularity. The last slot has one onsite pulse at every site, so these remain the per-site incident bounds. Its global pulse norm can reach `m` times a local bound; the candidate explicitly pays that factor.
+
+Fix `tau=(G+1)h` **before** computing the correction. Put `y=Delta tau/(2pi hbar)`. If rational `r` satisfies `|r-y|<=1/4`, then for `k=floor(r)+2`,
+
+```
+k-y=(floor(r)-r)+2+(r-y) in (3/4,9/4].
+```
+
+Hence `lambda=2pi(k-y)` lies in `(3pi/2,9pi/2]`, safely below `Q_*`. This bound is uniform even if `G`, `tau` and the integer `k` are huge. The floor is of a rational and has no undecidable real-equality branch. Computing the final angle does not change the duration of its already reserved slot. No free-period wait is inserted.
+
+All serial and final controls commute with the literal installed
+
+```
+F=E0 I+Delta N_tot.
+```
+
+Consequently the interaction-picture factorization is exact, even for noncommuting serial gates. On the whole physical Hilbert space,
+
+```
+U_lab(tau)=exp(-i E0 tau/hbar) exp[-i x N_tot]
+                       exp[-i lambda N_tot] exp(-i Phi) C,
+x=Delta tau/hbar.
+```
+
+Since `x+lambda=2pi k` and every physical number eigenvalue is an integer, the number-phase product is exactly identity, including noncode states and an excited ancilla. There is no residual parity or half-gap scalar. Expanding `lambda n=(lambda/2)(I-Z)` does not license discarding its identity half; both halves combine to the same number phase. The remaining scalar is exactly
+
+```
+gamma=exp[-i(E0 tau/hbar+Phi)] zeta.
+```
+
+Combining the full-isometry circuit certificate with section 2 gives vector error `2q d_L+eta_C` and joint trace error `4q d_L+2eta_C` on `S/B/A/R`. An approximate circuit can leave the ancilla excited within this error; neither its state nor its energy is removed. The target's scalar already belongs to `V`, and `gamma` is an additional implementation scalar.
+
+This route requires **simultaneous onsite actuation on all modeled qubits during the final slot**, in addition to individual gate availability and connected full-SWAP routing. The candidate describes that layer explicitly. It must remain a supplied permission in the accepted scope; a rule allowing at most one active control globally would not imply this schedule. The layer adds positive controlled onsite energy on old sites while their original `K` remains present with coefficient one. It is an extra control action, not cancellation or deletion of the old drift.
+
+## 6. Physical admissibility, precision and complete output
+
+Nominal added incident norm is at most `Delta+g/2`: only new sites need a new free field, and at an active site there is either one serial term or one final onsite pulse. Including `Delta` again at an old site only makes this added bound conservative. The complete global nominal norm is at most `E0+mDelta+mg/2`. If local pulse-norm error is at most `g/2`, new static local-field error at most `g`, and derivative error at most `sigma/2`, the quoted added bound `Delta+2g` and slew `sigma` follow. The old scalar belongs in the complete generator and global bound; it is not asserted to be an added reserve.
+
+If a complete rather than added incident norm is reported, include the old terms. With the actual scalar assigned as `E0 I` on one old onsite summand, the displayed decomposition has a safe full incident bound `E0+Delta+2g`. This does not remove or shift the scalar. The common cap is independent of target accuracy, while depending on the supplied fixed old plant and chosen control caps.
+
+A small operator error alone does not keep a positive semidefinite generator positive: these generators have zero eigenvalues. Actual positivity and support must therefore come from the supplied positive parameterized families or an independent admissibility certificate, just as the candidate states. Likewise, a Duhamel integral is not a local slew certificate. Nominal and calibrated caps are conditional modeled bounds, not hardware guarantees.
+
+For a same-shape, same-support serial pulse, write `Q_tilde=Q+Delta Q`, with `||Delta Q||<=delta` and `||Q_tilde||<=Q_*`. Then
+
+```
+(1+a)Q_tilde-Q = Delta Q+a Q_tilde,
+integral ||hbar f_h[(1+a)Q_tilde-Q]||dt /hbar
+ <=delta+Q_*|a|.
+```
+
+Summing serial slots, all final onsite terms, and a static norm error `b` gives exactly equation (24). The three categories in (25) spend at most one third of `eta_H_budget` each. In particular the common final amplitude error is multiplied by `m`, and the finite precision must be requested after the actual circuit count is known.
+
+The norm cap in this algebra is a cap on `Q_tilde` before the amplitude multiplier. The displayed small-error allocation supplies ample headroom: every nominal final generator has norm at most `9pi/2`, below `6pi`, and every serial generator at most `2pi`. For the solved `epsilon<=1` budget the requested generator errors are far smaller than the gap to `Q_*`, and the requested amplitude errors are smaller than one. Thus positivity-compatible parameter families can maintain nonnegative pulse coefficients and the stated headroom. Arbitrary shape changes, temporal overlap, edge-orientation errors or extra actuated supports require their own integrated terms; merely matching the pulse area is insufficient.
+
+Once `k` is fixed from the coarse rational estimate, `lambda` is a computable real under the stated data assumptions. The precision cost includes the growth of `2k` multiplying the error in pi, the terms `tau delta_Delta/hbar` and `Delta delta_tau/hbar`, their cross term, and any uncertainty in the supplied unit constant if that is not exact. There is no new principal-argument selection. A bounded pulse angle need not be cheap to calculate accurately after cancellation of two large terms. The candidate correctly declines a coefficient-oracle walltime bound.
+
+For the complete preparation error in (22), contractivity under the actual full unitary preserves the initial trace allowance. Duhamel on the whole system gives operator error at most `eta_H`, hence joint trace error at most `2eta_H`, independently of old/reference correlations. Timing error occurring **after all pulses are off** gives vector error at most `(E0+mDelta)|t_e|/hbar`, hence the doubled trace term. If a displaced sampling time is inside a pulse, or the pulse timing itself changes, that discrepancy belongs in the full generator integral instead. Exact old `K` is not redefined to absorb a free-field mismatch.
+
+These steps yield equation (28). The solved allocation gives five trace contributions, each at most `epsilon/5`: packet, readiness, circuit, Hamiltonian and endpoint timing. No hidden sixth state-error term is needed. Reporting the phase as a numerical complex scalar needs its own precision in `E0 tau/hbar`, `Phi` and `zeta`; this is distinct from the density-matrix trace budget.
+
+## 7. Phase readiness and storage order
+
+Let `beta_theta=exp(-i theta N_B)beta`. The shift identity is
+
+```
+T^d exp(-i theta N_B)=exp(i theta d) exp(-i theta N_B)T^d.
+```
+
+Inserting `d=k-l` in the finite action gives
+
+```
+U_L(V)(psi tensor beta_theta)
+ =(I tensor exp(-i theta N_B))
+      U_L(exp(-i theta N_S)V exp(+i theta N_S))(psi tensor beta).
+```
+
+Thus the author's conjugation signs are correct. Compiling `exp(+i theta N_S)V exp(-i theta N_S)` compensates a known packet age, before circuit selection. If the comparator retains the aged packet, the target-unitary change is bounded in operator norm by `q|theta|`: center `N_S` by `q/2`, or integrate `dV_theta/dtheta=-i[N_S,V_theta]` and use `||[N_S,V_theta]||<=q`. Its joint trace contribution is consequently at most `2q|theta|`.
+
+If the comparator instead demands the unaged packet, center `N_B` by its mean in the prepared packet. Integrating its state-vector derivative gives distance, up to a global scalar, at most `sigma_N|theta|`, and pure-state trace distance at most `2sigma_N|theta|<=(L-1)|theta|`. These are different comparator conventions. They must not be simultaneously charged as though both errors were intrinsic, nor used to erase a specified phase reference.
+
+After the nominal endpoint, with exactly `F` remaining and all controls off,
+
+```
+exp(-isF/hbar)[gamma V psi tensor beta tensor |0>]
+ =gamma [exp(-isK/hbar)V psi] tensor exp(-isH_B/hbar)beta tensor |0>.
+```
+
+The order is `exp(-isK/hbar)V`, not `V exp(-isK/hbar)`. Common free evolution preserves the existing error for every specified `s`; it does not freeze the packet or return a fresh clock/reference. The same statement holds for a calibrated endpoint error if subsequent actual evolution is exactly the same free evolution. Persistent static error or noise during storage requires a further storage-time integral; equation (18) is not a uniform robustness claim under arbitrary continuing perturbations. In particular the possible static error `b` from calibration cannot silently persist for an unbounded storage interval at no additional cost.
+
+## 8. Energy and prescribed-drive work
+
+For the ideal schedule every instantaneous generator commutes with `F`, so `U(t)*F U(t)=F`, and the entire distribution of this *fixed free-energy observable* is conserved. This includes approximate compiled words: every available gate still conserves number exactly even when its endpoint target is approximate. It does not imply that the time-varying total Hamiltonian is constant during a pulse.
+
+The sine distribution has mean reservoir number `q+(L-1)/2` by reflection symmetry. Its variance is the displayed finite sum and is at most `(L-1)^2/4` from the support width. The full physical reservoir norm is `MDelta`, including noncode states. The initial mean/variance formulas in (19) and the uncorrelated initial total-variance sum hold for the declared exact product preparation. They are not exact moment formulas for an arbitrary state merely close in trace norm.
+
+Exact conservation gives `Delta<H_B+H_A>=-Delta<K>`. For approximate compilation, the ancillary term remains in this identity; for exact compilation it vanishes at both endpoints. Final covariance terms are indispensable. The energy width of `K` is `qDelta`, so if the *initial old marginal is exactly the declared rho_S*, final trace error `e` bounds the energy-transfer discrepancy from `V` by `(qDelta/2)e`, after centering at `E0+qDelta/2`. This is the nominal section-6 estimate.
+
+**Required extension under imperfect readiness.** Equation (22) alone does not assert that the actual initial old marginal equals the declared `rho_S`. If `rho_0` is the actual full input, `rho_tau` its output, `epsilon_S0=||rho_(0,S)-rho_S||_1`, and `e_out` bounds the final comparison, the safe bound is
+
+```
+| Tr K(rho_(tau,S)-rho_(0,S))
+        - Tr K(V rho_S V* - rho_S) |
+ <= (qDelta/2)(e_out+epsilon_S0)
+ <= (qDelta/2)(e_out+epsilon_p).
+```
+
+Both terms follow by subtracting the two initial/final differences and centering `K`. The initial term may be omitted only if the old marginal is exactly fixed, or if the comparator is defined using the actual initial marginal with an appropriate readiness statement. An output trace bound alone cannot generally control a change relative to a different actual input. This is a qualification on extending the nominal energy ledger, not a failure of the endpoint trace theorem. Corresponding initial covariances and moment allowances must be retained for imperfect preparation.
+
+A direct witness shows why this distinction is substantive. Take `q=1`, declared input `|0><0|`, target `V=X`, and actual old input `(1-delta)|0><0|+delta|1><1|`, with the exact packet and ancilla independently adjoined. Its readiness distance is `2delta`. Use the exact nominal conserving implementation of the lift. It flips the old basis state exactly in each mixture component, so the actual old mean-energy gain is `Delta(1-2delta)` while the declared target gain is `Delta`: their discrepancy is `2Delta delta`. The complete output error is at most `e_bat+2delta`. Choose `L` so `e_bat<2delta`. Then `(Delta/2)(e_bat+2delta)<2Delta delta`; the final-only estimate fails if extended to this readiness model. The corrected initial-plus-final estimate holds. This is an analytical counterexample to the overextended interpretation, not a numerical execution or a counterexample to the nominal exact-input theorem.
+
+For any specified observable and equal-trace states, `|Tr O(rho-sigma)|<=||O-cI|| ||rho-sigma||_1`. Since `H_B+H_A` ranges from zero to `(M+1)Delta`, its positive integer power has the centered range bound `((M+1)Delta)^p/2`. These errors can grow with accuracy-dependent `M`, so trace readiness alone is not a moment-accuracy certificate. The scalar `E0` cancels from differences of equal-trace energy expectations but remains in absolute means, the actual generator and all amplitude phases.
+
+For one serial slot, `[F,Q]=0` and `H_c(t)` is proportional to `Q`, so the expectation of `Q` is constant throughout the slot for every entering state. The cosine profile has total variation `4/h`. Therefore
+
+```
+integral_slot |Tr rho(t) dot H_c(t)|dt
+ = (4hbar/h)<Q> <= (4hbar/h)||Q||.
+```
+
+The same argument applies to `Q_final=lambda N_tot`, whose norm is `m lambda`. Summing yields `(4hbar/h)(sum_j||Q_j||+m lambda)<=g(G+m)`. Every pulse starts and ends at zero, so each slot's signed work is zero. The peak temporary control energy is at most `g/2` in a serial slot and `mg/2` in the parallel slot. Together with the free norm this gives `E0+mDelta+mg/2`. Identity reserves contribute to the expectation, positive rising work, negative falling work and endpoint scalar; no reserve has been removed.
+
+For the calibrated absolute-work estimate `sigma h(G+m)`, interpret “same active supports” literally: one controlled term on its declared support in a serial slot, and at most one term per site in the final slot, with the specified incident derivative sum bound. Then the global derivative norms integrate to `sigma h` per serial slot and `m sigma h` for the final slot. If a calibration model introduces further independently actuated supports, their contributions must be added; a local cap alone is not a support-count-independent global work bound.
+
+For calibrated net work, require that the actual total Hamiltonian equals the **same physical F at both endpoints**. Then work is the change in its expectation. Compare actual and ideal trajectories starting from the same actual input. The ideal one conserves `F` for that input, and Duhamel gives final trace difference at most `2eta_H`. Centering `F`, whose spectral width is `mDelta`, gives `|W_actual|<=mDelta eta_H`, exactly as stated. If all actual perturbations commute with `F`, it is zero. A persistent additional free field changes the endpoint observable and is not automatically covered by this formula; the candidate's same-physical-F condition must be retained.
+
+These are work functionals of a prescribed classical schedule. Neither zero net work nor finite absolute work supplies a microscopic actuator, clock, reservoir preparation, work-fluctuation bound or returned driver output. Those are outside the retained finite quantum model.
+
+## 9. Provenance finding and disposition boundaries
+
+The metadata-only comparison found that `RETRIEVAL.json` and `SCOPE_SCREEN_CORRECTED.json` contain **identical decoded regex argv strings**. Both have a single backslash before the period in `2309\.11051`. Thus the claimed earlier overescaped numeric argv and a different corrected argv cannot be reconstructed from those two frozen records. This does not prove that no earlier mistake occurred; it limits what the saved records establish. Both original records, streams and annotations are preserved unchanged. No missing launcher or historical argv has been invented, and no search has been replayed. The bounded novelty screen is not used to prove any mathematical step or broad absence claim.
+
+The accepted scope, if root chooses to accept, should retain:
+
+1. The actual old Hamiltonian `E0 I+Delta N_S`, identical new free gaps, no extra uncontrolled interactions, supplied physical energy identification and coherent readiness. Arbitrary interacting old Hamiltonians are excluded.
+2. Full SWAP as an additional positive edge permission, a connected controlled route through every old site, and simultaneous addressed onsite final pulses. This is not a single-active-port theorem.
+3. Imported conserving synthesis plus either a supplied full-isometry certificate or the positive-tolerance computable-input search. Existence, effective termination, physical coefficient requests and walltime are different claims.
+4. Full `S/B/A/R` output, the actual scalar `gamma`, energy covariances, moment-weighted readiness and calibration allowances, the additional initial-energy term where required, and storage-time errors when free evolution is imperfect.
+5. Fixed *modeled local* strength/slew, with global phase-layer energy/work and duration/precision growth paid. No autonomous timing, halt, indefinite reservoir reuse, microscopic drive closure or independently established measured-energy identification.
+
+The inaccessible-old-qubit example is a valid narrow factorization witness: if qubit 2 has only diagonal free/onsite dynamics and no controlled connection, `n_2` is constant, whereas `I tensor X` takes its initial `|0>` to `|1>`, producing marginal trace distance two. It does not extend to the successful connected full-SWAP permission or exclude different architectures.
+
+No scientific failed route or negative numerical result is hidden: none was run in this check. The nominal positive construction survives the analytical checks above. The initial-energy extension and metadata limitation are reported explicitly rather than converted into blanket acceptance of every possible perturbed or algorithmic reading. Root retains the acceptance decision. No canonical file, prior freeze, Git state, publication, retained audit, prompt, axiom or lock was changed.
+
+
+<!-- Unchanged source body: Controlling runtime qualifications -->
+
+# Controlling qualifications: local conserving control
+
+The root accepts two conditional local-control constructions for further composition and a coherent review milestone. This is source-exposed analytical acceptance, not retained audit, a physical implementation, or an independently executed circuit certificate. The period-wait root route and the author's fixed-duration parallel phase route must remain separate.
+
+## Restricted physical premises
+
+The old generator is the actual noninteracting equal-gap operator K_S=E0 I+Delta N_S, with E0>=0, Delta>0 and q>=1. The physical computational basis, matched new gaps, a connected path containing all old, battery and synthesis-ancilla sites, full adjacent SWAP, arbitrary onsite phase control, XY exchange, initial coherent sine packet, a clean synthesis ancilla, isolation and externally prescribed timing are supplied. These are additional permissions. A strict path with only XY and Z is not silently granted full SWAP. Neither an arbitrary interacting old H nor an inaccessible old site is covered.
+
+All actual positive reserves, including E0, remain in the Hamiltonian. The author quotes added incident cap Delta+2g with calibration headroom; if old scalar load is included the corresponding safe full cap is E0+Delta+2g. The nominal bounds may be smaller. The site's decomposition and scalar allocation must be stated. A numerical bound on modeled coefficients does not identify microscopic physical energy or slew.
+
+The author also requires simultaneous final onsite control on every site. Replacing this with a single active port changes the stated duration. The root period-wait route has a different scheduling premise.
+
+## Finite packet, full completion and conditional synthesis
+
+For the author route M=L+2q battery qubits encode prefix strings, and m=q+M+1 includes the clean ancilla. The sine packet is supported on charges q through q+L-1. Complete total-charge blocks a=q,...,M carry V; identity acts on the entire complementary physical Hilbert space. Full reference and apparatus outputs remain in the comparison. The checked packet estimate is vector error at most 2q d_L and joint trace error at most 4q d_L<=4*pi*q/(L+1).
+
+The root route uses M=L+2q-1 with its own complete-block indexing. Do not substitute one route's M, pulse convention or scalar into the other.
+
+Bai and Marvian, arXiv:2309.11051v3, supplies the finite one-clean-ancilla conserving synthesis theorem. The exact PDF SHA is add4e97c6c0a1939d159924088c45481d54c2c54646d5cfebbbc7faa471154e8. Necessary theorem, geometry and ancilla passages were inspected; the full 38-page theorem proof was not revalidated. In the diagonal phase mechanism retain the identity complement and all relevant vacuum/global phases; an abbreviated sum of selected projectors is not a full unitary by itself. The current target fixes vacuum, which is used explicitly. This statement does not assert a defect in the imported theorem.
+
+The original local-control source gives finite gate existence and a generic, potentially exponential count. A positive-error certifying search is effective only with computable target data and certified enclosures. It proves neither an eta_C=0 algorithm nor favorable classical runtime or memory. The separate sparse-compiler candidate has not been accepted by this decision.
+
+## Author's fixed-duration phase route
+
+The primitive positive integrated generators produce forward sqrt(iSWAP), onsite Z(phi) and full SWAP, with Q_*=6*pi a safe bound. The actual drive is hbar*f_h Q, with f_h=(1-cos(2*pi*t/h))/h over a slot. Choose
+
+h >= max(4*hbar*Q_*/g, sqrt(4*pi*hbar*Q_*/sigma)).
+
+Each nominal active term then has cap at most g/2 and slew at most sigma/2. The full-SWAP pulse includes its reserve. Forward exchange and onsite phase pulses have the accumulated scalar Phi=(pi/4)*N_sqrt+sum|phi|.
+
+For G serial circuit slots and one simultaneous onsite phase slot, tau=(G+1)h. With x=Delta*tau/hbar, choose a rational r satisfying |r-x/(2*pi)|<=1/4, set k=floor(r)+2 and lambda=2*pi*k-x. Then 3*pi/2<lambda<=9*pi/2<6*pi. The final layer uses lambda*n at every site, including the ancilla. Its duration is fixed before choosing lambda, so no target-synthesis/time circularity is introduced.
+
+If the circuit satisfies C J_A approximately zeta J_A U_L(V), the full vector comparator has scalar
+
+gamma=exp[-i(E0*tau/hbar+Phi)] zeta.
+
+A density-matrix estimate does not determine this scalar. Every subsequent vector composition must preserve gamma. For a later supplier that proves zeta=1, that is an additional separately checked fact.
+
+The joint trace bound is
+
+e <= 4*pi*q/(L+1) + epsilon_p + 2*eta_C + 2*eta_H + 2*eta_t.
+
+The stated solved budget uses L>=max(1,ceil(20*pi*q/epsilon)-1), epsilon_p<=epsilon/5 and each eta<=epsilon/10. An effective implementation chooses a strict integer upper enclosure when the exact ceiling of an arbitrary computable number is undecidable.
+
+Under the declared pulse shape/support model,
+
+eta_H <= tau*b/hbar + sum_j(delta_j+Q_*|a_j|)
+                         + m(delta_lambda+Q_*|a_f|).
+
+Static error, pulse generator error, pulse area and all simultaneous sites must be counted. Other waveform/start-time errors need their own integral norm budget. Small Duhamel error does not imply actual positivity, incident bounds or derivative bounds; actual calibrated families must separately satisfy those constraints.
+
+## Root's period-wait route
+
+In the root's hbar=1 convention, use its own positive XY, onsite and SWAP pulses with scalar sum Theta. Complete a finite circuit, then retain free evolution until a declared multiple tau=2*pi*k/Delta. A rational enclosure with slack chooses k without exact-real equality tests. The total-number phase vanishes and the complete scalar is chi=E0*tau+Theta-theta_circ. Literal old evolution and the waiting interval remain paid.
+
+The modulo reduction of an arbitrary computable angle is not uniformly computable at a branch cut. Either supply certified branch representatives, or use the reviewer's explicit continuously represented alternative alpha=2*phi+2*pi in (0,4*pi], retaining fixed slots and the enlarged 8*pi pulse-area constant. Zero angles must not trigger an undecidable branch or an unpaid deleted slot. This alternative is an explicitly reviewed variant, not silently part of the original 4*pi convention.
+
+The root route does not inherit the author's fixed-duration phase layer or its hbar conventions. Both routes need phase, readiness, energy and calibration qualifications below.
+
+## Readiness, storage and energy-transfer correction
+
+Initial readiness is a complete joint input statement, including old/reference correlations, coherent packet and ancilla. Subsequent uses cannot resupply actual purity for free.
+
+A packet aged by number phase theta changes the effective old target by conjugation exp(-i*theta*N_S)V exp(i*theta*N_S). Comparing against the equally aged packet gives the stated 2q|theta| allowance; comparing the packet itself against its original phase convention uses a different, typically (L-1)|theta| allowance. These are alternative interfaces and should not be double-counted or treated as equal.
+
+After controls end, error remains unchanged only when both actual and comparator evolve under the same actual free generator F. A persistent static discrepancy b over an additional storage interval requires an additional integrated error. No indefinite robustness to nonzero b follows.
+
+For declared initial old state rho_S and actual initial old marginal rho_0,S, let epsilon_S0=||rho_0,S-rho_S||_1, and let e_out bound the final old marginal error from V rho_S V*. Then
+
+|Tr K_S(rho_tau,S-rho_0,S)
+       -Tr K_S(V rho_S V*-rho_S)|
+ <= (q*Delta/2)(e_out+epsilon_S0)
+ <= (q*Delta/2)(e_out+epsilon_p).
+
+The final-only allowance (q*Delta/2)e_out is valid only when the actual initial old marginal is exactly the declared one. The scalar E0 cancels in this energy difference, but remains elsewhere in the generator and vector phase.
+
+The review's q=1 witness must remain: declared |0>, V=X, actual mixture (1-delta)|0><0|+delta|1><1|. Its initial trace mismatch is 2delta, and its exact old-energy gain is Delta(1-2delta), differing by 2Delta*delta from the declared target gain Delta. A final-only allowance can undercount this discrepancy even when the battery error is made smaller than 2delta. This refutes that overextended formula, not the nominal endpoint theorem.
+
+## Work and moments
+
+For the nominal conserving control, [F,Q_j]=0 and the initial and final installed generator are the same F. Therefore the modeled net drive work is zero for any actual input, not just the ideal packet. The author's absolute-work bound is at most
+
+(4*hbar/h)(sum_j||Q_j||+m*lambda) <= g(G+m).
+
+The coarser calibrated bound sigma*h(G+m) assumes the actual prescribed supports, derivative bound and same endpoint F. The net-work bound m*Delta*eta_H uses that same actual endpoint observable. If an extra static field remains at an endpoint, a separate observable/work term is required.
+
+The packet mean is Delta[q+(L-1)/2], its variance is at most Delta^2(L-1)^2/4, and ||H_B||=M*Delta. Trace error alone does not give a small energy or second-moment error uniformly as M grows. Full operator weights, actual covariances and all output registers, including any residual ancilla energy, remain in energy accounting. External prescribed-drive work is not a microscopic finite controller returned to its original state.
+
+## Evidence, failed routes and scope
+
+Root read the complete two constructions and complete two exposed analytical reviews. The root period-wait construction and its review were frozen before exposure to the separate author result. The later author check was exposed to the earlier root route. Same-model/shared-source limitations remain; no claim of blind review is made. These two local-control constructions and checks ran no scientific numerical program. Metadata captures establish source identity only.
+
+The author search records RETRIEVAL.json and SCOPE_SCREEN_CORRECTED.json contain identical decoded regex argv strings. They do not establish the annotated earlier overescaping/different-argv history. Preserve both original records and this qualification; do not reconstruct missing search history or infer broad novelty/absence.
+
+The earlier finite-reservoir core already exists in the repository. This acceptance concerns restricted local scheduling and complete physical ledgers, not a new claim to that core theorem. The inaccessible-site and strict-alphabet limitations are scope witnesses, not universal impossibility claims.
+
+Preparation, target-specific compilation/certificate execution, general interacting H, restricted-port access, native local energy/control identification, controller outputs, autonomous halt and indefinite reuse remain open. The root's sine-preparation proposal and the author's sparse-count proposal are separate pending sources and are not promoted by this acceptance. No editable prompts or physical axioms changed.
+
+
+
+<!-- Unchanged source body: Explicit sine preparation argument -->
+
+# Local driven preparation of the buffered sine battery
+
+Status: unaccepted root proposal, not a retained theorem or a native apparatus
+identification. This is a proposed supplier for the coherent input in the
+restricted equal-gap conserving-control construction. The finite reservoir
+lift is existing mathematics. The present argument concerns an explicit
+preparation circuit, its positive laboratory generator, and its prices.
+
+## 1. Domain and supplied permissions
+
+Let q,L be positive integers, M=L+2q, and let B be an M-qubit path with actual
+free Hamiltonian H_B=Delta N_B, N_B=sum_j n_j, n_j=(I-Z_j)/2, Delta>0.
+An old q-qubit system S has its literal K_S=E0 I+Delta N_S, E0>=0, and an
+arbitrary passive reference R. For preparation only, the calculation also
+works for an arbitrary old self-adjoint K_S that is decoupled from B. There
+are no unpriced old/battery interactions. The intended later conserving
+runtime retains the more restrictive equal-gap old Hamiltonian.
+
+The complete initial state is rho_SR tensor |0^M><0^M|_B. A stated joint trace
+error from this product may replace exact readiness; separate local purity
+claims do not suffice. A later vacuum runtime ancilla can be kept independently
+in its number-zero state throughout. No cooling or purity supplier is proved.
+
+Allowed driven terms are positive onsite and nearest-neighbor terms on B with
+the explicit matrices below, including a phase-locked rotating Y quadrature.
+They can change excitation number, so they are an additional control
+permission beyond the conserving runtime's XY/Z/SWAP family. Every free
+onsite term remains installed with coefficient one. The external time,
+frequency/phase reference, calibrated control coefficients, accessible path,
+and finite interval of isolation are supplied. The driver has no microscopic
+quantum Hamiltonian or output register in this model. Positivity of the
+matrices is not a physical derivation of these permissions.
+
+Write |p_m>=|1>^m|0>^(M-m), and define
+
+    b_l=sqrt(2/(L+1)) sin(pi l/(L+1)), 1<=l<=L,
+    |beta>=sum_l b_l |p_(q+l-1)>.
+
+The target is the real, phase-aligned packet used by the local conserving
+candidate, at a declared finite preparation endpoint. Hbar is retained.
+
+## 2. An explicit nearest-neighbor circuit
+
+First rotate the first q qubits from 0 to 1 with q separate onsite gates
+exp[-i(pi/2)Y_j]. Their action on |0> is exactly |1>, since Y|0>=i|1>.
+Then use L-1 gates. Set w_i=sum_(l=i)^L b_l^2 and, for 1<=i<L, choose
+
+    c_i=b_i/sqrt(w_i), s_i=sqrt(w_(i+1)/w_i),
+    theta_i=arccos(c_i) in (0,pi/2),
+    R_i=exp[-i theta_i n_(q+i-1) Y_(q+i)].
+
+The edge for i=1 uses site q, already in state 1. Induction on i gives, after
+the ith edge, the stopped amplitudes b_1,...,b_i and the continuing amplitude
+sqrt(w_(i+1)). A stopped branch has the predecessor of each later gate equal
+to zero, so it stays stopped. Each new target qubit is initially zero. After
+the final edge the complete state is beta, with no unmentioned branch phase.
+All other B qubits are still zero. The gate count is
+
+    G=q+L-1.
+
+For L=1 there are no edge gates and beta=p_q. No conditional denominator or
+angle is evaluated in that case. There are q onsite supports and L-1 adjacent
+edge supports, all within the first q+L-1 sites of the stated path.
+
+For each flip use the integrated dimensionless generator
+
+    Q_j=2pi I+(pi/2)Y_j.
+
+For edge i use
+
+    Q_i=n_(q+i-1) [2pi I+theta_i Y_(q+i)].                (1)
+
+The onsite spectrum is 2pi +/- pi/2. The edge spectrum consists of zeros and
+2pi +/- theta_i. Hence all Q are positive, ||Q||<=5pi/2. Since exp(-i2pi n)=I,
+their exact exponentials are the desired gates, with no scalar left over.
+The reserve 2pi in (1) cannot be omitted from the Hamiltonian ledger even
+though its exponential is identity. Replacing it by theta_i keeps positivity
+but produces an undesired phase on the active control branch; a generic
+controlled rotation is sensitive to that distinction.
+
+This is a finite explicit construction, not an invocation of an unrestricted
+state-preparation oracle. For computable parameters the angles can be
+approximated with certified intervals. Their strict domain follows from all
+b_l>0. A useful condition estimate is b_(i+1)/b_i>=1/2 for i<L: this follows
+from the sine recurrence and the minimum ratio at the end of the chain.
+Consequently s_i>=1/sqrt(5), and arccos has derivative at most sqrt(5) on the
+relevant c_i interval. This does not make w_i independent of L; small tails
+still have to be resolved, and no arithmetic walltime bound is claimed.
+
+## 3. Literal installed free evolution and positive smooth pulses
+
+Fix positive modeled per-site control caps g and sigma. Put Q_*=6pi and choose
+one slot length h satisfying
+
+    h >= max(4 hbar Q_*/g,
+             sqrt(8pi hbar Q_*/sigma), 4pi Delta/sigma).   (2)
+
+Let f_h(s)=(1-cos(2pi s/h))/h on [0,h], zero outside. It has integral one,
+maximum 2/h, derivative bound 2pi/h^2, and both f_h and its first derivative
+vanish at the endpoints. Schedule the G rotation gates in separate slots.
+For a gate Q active at absolute time t, use the actual laboratory control
+
+    H_c(t)=hbar f_h(t-t_j) exp(-it H_B/hbar) Q
+                                      exp(it H_B/hbar).  (3)
+
+Conjugation in (3) preserves positivity and support. It only rotates the Y
+quadrature on the target site; the number projector on the control site is
+unchanged. It does not replace, cancel or change H_B. In the exact interaction
+picture for K_S+H_B, the control is hbar f_h Q. Thus the ordered interaction
+picture circuit is precisely Section 2, while the old system evolves under
+its full K_S for the entire actual duration.
+
+For every rotation Q, ||[N_B,Q]||=theta<=pi/2. Direct differentiation yields
+
+    ||H_c|| <= 2 hbar Q_*/h <= g/2,
+    ||dot H_c|| <= 2pi hbar Q_*/h^2 + pi Delta/h
+                 <= sigma/2.                            (4)
+
+The last two lower bounds in (2) allocate sigma/4 to each displayed derivative
+term. The carrier derivative is essential: an envelope-only bound would be
+wrong. One rotation support is active at a time, so these are also the
+incident sum bounds at every battery site. Fixed Delta,g,sigma give an h
+independent of L and q. If these parameters vary, (2) must be recomputed.
+
+## 4. A noncircular endpoint phase correction
+
+Append one slot of the SAME length h, so tau=(G+1)h is known before choosing
+its phase-correction coefficient. Put x=Delta tau/hbar. Choose a rational r
+with |r-x/(2pi)|<=1/4, set k=floor(r)+2, and set lambda=2pi k-x. Then
+
+    3pi/2 < lambda <= 9pi/2 < Q_*.
+
+No exact equality or modular branch decision is needed. In the last slot put
+the onsite control hbar f_h lambda n_j on every one of the M battery sites.
+These commuting onsite terms have per-site norm <=g/2 and derivative <=sigma/4
+by (2). The parallel FULL norm is M times the single-site norm and is not
+mistaken for g/2. At the endpoint the full map on the declared initial domain is
+
+    U_prep(tau)(psi_SR tensor 0_B)
+       = [exp(-i tau K_S/hbar) psi_SR] tensor beta_B.       (5)
+
+Indeed exp[-i(x+lambda)N_B]=I on the entire physical battery space, while the
+interaction circuit prepares beta. The first q flip reserves and every edge
+reserve exponentiate to identity exactly. There is no omitted old scalar:
+E0 is present in exp(-i tau K_S/hbar). The nominal controls and their first
+derivatives vanish at the preparation endpoint.
+
+With the noninteracting equal-gap S used later, the complete incident load is
+at most E0+Delta+g/2 after assigning E0 to one designated old site. A safer
+bound E0+Delta+g may be used for separately certified implementation margins.
+The old sites are idle in this preparation. The total generator norm is at
+most E0+(q+M)Delta+Mg/2 (and add the idle ancilla's Delta to a full-space norm
+when that factor is included). These are nominal bounds, not consequences of
+a trace-distance calibration certificate.
+
+## 5. Energy, covariance and modeled work
+
+In the target beta the exact mean is
+
+    mu_B=Delta [q+(L-1)/2],
+    Var_beta(H_B)<=Delta^2 (L-1)^2/4,
+    ||H_B||=M Delta.                                    (6)
+
+Reflection of the sine probabilities proves the mean; their range proves
+the variance bound. Initial battery energy is zero. The old system is
+decoupled and its own energy distribution is unchanged. Since the controls
+vanish at both ends, the exact time-dependent Hamiltonian work identity gives
+
+    W_prep = integral Tr rho(t) dot H_c(t) dt = mu_B.      (7)
+
+Thus the drive supplies extensive energy as the packet widens. This is not
+energy-conserving preparation from vacuum. It is also not a thermodynamic
+cost claim for an omitted physical control device. The actual full generator
+and all its identity reserves are included in (7).
+
+For each rotation slot, integration of the norm derivative gives
+
+    integral ||dot H_c|| <= 4 hbar ||Q||/h + Delta theta.
+
+For the final parallel slot the bound is 4 hbar M lambda/h. Therefore a safe
+absolute modeled-work bound is
+
+    integral |Tr rho dot H_c| <= g(G+M)+(pi/2)Delta G.    (8)
+
+The control state changes during a nonconserving rotation, so no constancy of
+its expectation is used to derive (8). The bound follows solely from the
+full norm derivative. At the ideal endpoint the old/battery covariance is
+zero because (5) is a product with a pure battery for every old/reference
+input. During the process or with imperfect readiness/implementation the
+actual full covariance must be retained. The full instantaneous second moment
+is bounded by the square of the full generator norm above; no separate
+marginal conservation follows from (7).
+
+## 6. Finite precision and full-output comparison
+
+Let eta_ready be the trace distance of the complete actual initial state
+from the specified old/reference state tensor independent vacuum. Let
+eta_H=(1/hbar) integral ||H_actual(t)-H_nominal(t)||dt on the full Hilbert
+space and same time interval. Unitary Duhamel and initial-state contraction
+give endpoint trace error at most eta_ready+2eta_H relative to (5), uniformly
+over all old/reference inputs. This prices unlisted couplings and carrier
+phase/frequency errors only when their actual operator discrepancy is included.
+
+A more decomposed certified implementation may add circuit angle errors and
+final phase errors separately. On the interaction circuit, replacing theta_j
+by theta_j+delta_j changes the gate norm by at most |delta_j|, since the
+rotation generators Y or nY have norm one. Errors in the nominal 2pi reserves
+must additionally be counted; they are not innocuous by approximate intent.
+Replacing lambda by lambda+delta_lambda changes the parallel final unitary
+norm by at most M |delta_lambda|. If such errors are accounted for here they
+must not be counted a second time inside eta_H. A sufficient budget is
+
+    e_prep <= eta_ready + 2 sum_j |delta_j|
+                  + 2 M |delta_lambda| + 2 eta_other.    (9)
+
+Here eta_other is the integrated operator error for everything NOT already
+priced in the two sums. Choosing each |delta_j| and |delta_lambda| no larger
+than e/(8(G+M)), eta_ready<=e/4, eta_other<=e/8 makes (9)<=3e/4; the unused
+quarter is available for timing or storage. This conservative allocation is
+not an efficiency optimum. Positivity, incident cap and slew of actual
+controls require separate certificates with the nominal margins in (4).
+
+Computable x and a coarse enclosure choose the integer k first. Refining
+lambda then needs finite precision for Delta,tau,hbar and pi; no exact
+rounding oracle is assumed. For example, uncertainty in x must include the
+product errors of Delta and tau and any hbar uncertainty, and the 2pi k term
+includes 2|k| times the pi error. Actual endpoint timing displacement after
+all controls are off adds at most 2||K_S+H_B|| |delta_t|/hbar to trace error
+against the fixed-time target, or must be represented by an explicitly aged
+target. An idle vacuum ancilla requires its full-space term if errors can
+populate it. Carrier errors during active pulses belong in eta_other.
+
+For a release error e_prep, the battery mean error is at most M Delta e_prep/2
+by centering its spectral interval. Raw second-moment error is at most
+(M Delta)^2 e_prep/2, and the convenient variance bound 3(M Delta)^2 e_prep
+is safe. For arbitrary reference-valued or full-generator moments use the
+actual corresponding observable norm and retain old terms/covariance. Small
+trace error alone does not give a fixed energy-moment accuracy as L grows.
+
+## 7. Conditional composition with the runtime
+
+Suppose the separately checked conserving runtime supplies its stated
+full-output endpoint approximation to any requested system unitary W using
+the REAL beta and a supplied vacuum ancilla. Its restrictions and costs,
+including full SWAP access, actual equal gaps and the calibrated timer, remain
+premises. To realize V on the ORIGINAL old input, first fix this preparation
+and its tau, then request
+
+    W=V exp(i tau K_S/hbar).                             (10)
+
+Equation (5) gives W exp(-i tau K_S/hbar)=V in the correct order, including
+the E0 phase. The runtime duration may depend on this W; preparation tau does
+not depend on that duration. There is no timing self-consistency equation.
+The final error on S/B/ancilla/R is at most e_prep+e_runtime by contraction
+and the triangle inequality. No pure battery is silently reinserted after an
+imperfect stage. A finite storage interval needs its own aging/calibration
+contract. The ideal conserving runtime has zero net modeled drive work;
+therefore the combined ideal preparation-plus-runtime drive work is (7).
+Battery transfer during runtime still obeys the previously stated conserved
+total energy and correlated moment formulas.
+
+This replaces the sine-packet supplier with q+L-1 explicit local rotations
+and one parallel phase slot under new driven permissions. It does not supply
+the initial vacuum, the microscopic phase reference, autonomous scheduling,
+an interacting-old-H theorem, permanent halt, indefinite reuse or measured
+laboratory-energy identification. It does not make an exponential generic
+runtime compiler efficient.
+
+## 8. Evidence and remaining check
+
+The author/root has read the local conserving candidate c7f0e58c and the
+root-only exposed review70d14b78 before writing this proposal. The preparation
+proof is not a blind independent check of those sources. Its algebra is
+self-contained; their runtime conclusions in Section 7 remain conditional
+imports until root acceptance. The canonical September24 finite-supply note
+fcc92808 already contains the finite lift and sine estimate. The September13
+native-feedback finite-apparatus note was read fully and leaves battery
+preparation supplied. The October15 boundary-clock preparation note was only
+screened in part for scope; it concerns a different retained-memory/clock-entry
+construction and is not a proof premise here. A bounded lexical search and its
+full streams are preserved; it does not establish novelty or exhaustiveness.
+
+One selected author exact fixture is proposed to inspect the conditional
+rotation phase, physical positivity and omitted final free-phase errors for
+q=1,L=3. It does not establish the general theorem, a laboratory pulse
+trajectory, a microscopic driver or an independent review. Actual execution
+source/receipt/full streams will be preserved separately; no run has occurred
+at the writing of this paragraph. A separate source-exposed review of the
+complete argument remains required before root source acceptance.
+
+
+<!-- Unchanged source body: Preparation exposed review -->
+
+# Source-exposed analytic check of local sine preparation
+
+The preparation argument in `PROPOSED_LEMMAS.md` **db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826** has no blocking mathematical defect identified in this check, under its stated finite-dimensional, externally driven permissions. The circuit, literal-free-Hamiltonian pulse construction, endpoint, work and error estimates support a conditional preparation result. This is a source-exposed analytic review, not an audit verdict, a native apparatus construction, a new numerical validation, or acceptance of the runtime.
+
+One clarification must survive any combined **vector** statement: the conditional runtime c7f0e58c returns its requested unitary multiplied by its implementation scalar `gamma(W)`. The combined vector comparator is therefore `gamma(W) V psi` tensor the returned ideal battery and ancilla, not literally `V psi` with no scalar. The preparation itself has the exact scalar accounting claimed in equation (5). The proposal's section 7 states a joint **trace-norm** error sum, for which `gamma(W)` cancels; that estimate is correct. This clarification does not require changing the preparation construction or claiming the runtime has been accepted.
+
+The remaining physical assumptions are substantive: independent vacuum readiness, supplied number-changing onsite/edge controls, a phase-locked rotating quadrature, absolute timing and coefficient calibration, isolation during the finite schedule, and an external drive with no microscopic output register. Actual positivity/local cap/slew need their own certificates. No state-distance estimate proves those admissibility properties. The runtime's equal-gap, access, full-SWAP and compilation premises remain separate conditional imports.
+
+## Exact target and evidence scope
+
+The checked target is: for every positive integer `q,L`, `M=L+2q`, positive `Delta,g,sigma,hbar`, and the declared decoupled old Hamiltonian, the supplied controls on the M-site battery path prepare the real sine packet from the independent vacuum at a declared finite time. The old/reference input is arbitrary; the complete battery and any idle ancilla remain in the comparison. Literal old and battery free terms remain installed. The stronger equal-gap restriction is necessary for the later runtime, not for the preparation factorization alone.
+
+The entire preparation proposal, all 289 lines, was read. The entire c7f0e58c runtime derivation was read to identify its interface, phase, work and error conventions, not to accept its imported circuit theorem or independently certify its implementation. Its freeze **3128a438f020588eb8e8e945b1cbe9f4e6d64f5524831e19e530ff28a1e08c9b** and the exact derivation are captured separately. The runtime's other upstream files are not represented as newly checked here.
+
+All 14 members of preparation freeze **928ca72cfe15b8c716ab18b609725a451b80a8d2bf117f331aafa2c89eb07108** were hash-verified and copied unchanged. The author fixture, its recorder, original source-at-launch, distinct execution capture, receipt and complete streams were inspected and linked to their original files. The author run is one historical exact finite test, not an independent run by this reviewer. No scientific program was rerun. `SOURCE_CAPTURE.json`, `EXPOSURE.md` and the actual metadata receipt give the evidence boundary. `DRAFT_CORRECTION.md` preserves a reviewer-draft commutator-sign error caught by explicit matrix multiplication and corrected before this first freeze; the source's norm claim was unaffected.
+
+Line references below refer to the frozen preparation source, captured at `sources/preparation/PROPOSED_LEMMAS.md`. This review uses unhalved joint trace norm throughout.
+
+## 1. Circuit, signs and positive reserves (lines 34–88)
+
+Put `alpha=pi/(L+1)`. The finite trigonometric identity
+
+    sum_(l=1)^L sin^2(l alpha) = (L+1)/2
+
+normalizes the amplitudes. It follows by writing `sin^2=(1-cos(2 l alpha))/2` and summing the nontrivial `(L+1)`st roots of unity. In particular `w_1=1`, all `b_l,w_l` are positive, and `c_i^2+s_i^2=1`.
+
+With the stated convention `Y|0>=i|1>`, the action is
+
+    exp(-i theta Y)|0> = cos(theta)|0> + sin(theta)|1>.
+
+Thus the q flips give exactly `p_q`, with no `i^q` phase. A useful explicit induction state before conditional gate i is
+
+    sum_(l<i) b_l p_(q+l-1) + sqrt(w_i) p_(q+i-1).
+
+Every stopped term has its site `q+i-1` zero. Only the last term has that control site one, and its fresh target site `q+i` is zero. The gate replaces this last term by
+
+    b_i p_(q+i-1) + sqrt(w_(i+1)) p_(q+i).
+
+This proves the asserted state and relative signs through `i=L-1`; the last continuing amplitude is `sqrt(w_L)=b_L`. No branch is dropped. The largest occupied prefix has length `q+L-1<M`; the unused buffer sites stay zero. `L=1` correctly uses q flips alone, never evaluates an undefined conditional angle, and has zero sine-packet variance. The count `G=q+L-1` is exact for this schedule.
+
+The onsite generator has eigenvalues `2pi +/- pi/2`. On the edge, the control-zero block is zero and the control-one block is `2pi I+theta_i Y`, with eigenvalues `2pi +/- theta_i`. All are nonnegative and the largest is at most `5pi/2`. Since the reserve and rotation commute, their exponentials factor. `exp(-i2pi I)=I` and `exp(-i2pi n)=I` on the **entire** relevant local spaces; no phase is erased by restricting to the prepared state. A reserve `theta_i n` instead of `2pi n` would leave `exp(-i theta_i)` on the active branch. Positivity by itself does not fix that error.
+
+For the conditioning claim, when `L>=2`,
+
+    b_(i+1)/b_i = cos(alpha) + cot(i alpha) sin(alpha).
+
+The cotangent is decreasing on this interval, so the smallest adjacent ratio is `sin(alpha)/sin(2alpha)=1/(2cos(alpha))>=1/2`. Hence `w_(i+1)>=b_(i+1)^2>=b_i^2/4` and
+
+    s_i^2 = w_(i+1)/(b_i^2+w_(i+1)) >= 1/5.
+
+It follows that `|d arccos(c)/dc|=1/sqrt(1-c^2)<=sqrt(5)` on the actual angle domain. This controls the inverse trigonometric step, not the cost of obtaining a certified small tail `w_i`; the source explicitly retains that distinction.
+
+## 2. Literal free evolution, carrier derivative and caps (lines 90–154)
+
+Let `R_B(t)=exp(-it H_B/hbar)` and let the free propagator on S/B/R be `exp(-it K_S/hbar) tensor R_B(t) tensor I_R`. For the proposed laboratory control
+
+    H_c(t)=hbar f_h(t-t_j) R_B(t) Q R_B(t)^*,
+
+conjugation by the **adjoint** free propagator in the interaction picture gives exactly `hbar f_h Q`. This confirms the sign in (3). On the target qubit its nonconstant quadrature is
+
+    R_B(t) Y R_B(t)^* = cos(Delta t/hbar) Y
+                                  + sin(Delta t/hbar) X.
+
+The number projector on the control qubit is unchanged. Positivity and the one-/two-site support are preserved. The free battery Hamiltonian has not been subtracted; its evolution appears again in the laboratory propagator. Reversing these conjugations would give a twice-rotating interaction-picture control, not the claimed fixed Q.
+
+Directly, `nY-Yn=[[0,i],[i,0]]=iX`. Thus the commutator norm is `theta` for a flip or controlled rotation, including its reserve. Differentiation gives
+
+    dot H_c = hbar f_h' R_B Q R_B^*
+                     - i f_h R_B [H_B,Q] R_B^*.
+
+The carrier part has norm at most `(2/h) Delta theta`, so
+
+    ||dot H_c|| <= 2pi hbar Q_*/h^2 + pi Delta/h.
+
+Both contributions are needed. The three stated lower bounds on h respectively imply `||H_c||<=g/2`, an envelope derivative contribution at most `sigma/4`, and a carrier contribution at most `sigma/4`. They have the correct time units. The smooth envelope has integral one, maximum `2/h`, total variation `4/h`, and vanishing value and first derivative at both endpoints; adjoining it to zero creates no derivative jump. Serial rotation supports give the claimed incident sum bound, independently of q and L when `Delta,g,sigma` are fixed.
+
+The final number-phase slot commutes with the free Hamiltonian, so it has no carrier contribution. Per-site bounds are `g/2` and `sigma/4`; the global control norm grows with M. A norm error certificate alone cannot guarantee positivity of an actual pulse: the nominal edge and number generators have kernels. This is why the proposal's separate admissibility requirement must remain explicit even when the Hamiltonian Duhamel error is small.
+
+The full equal-gap generator bound `E0+(q+M)Delta+Mg/2` is safe. During a rotation only one support is active; during the final slot there are M parallel onsite terms. The bound overcounts rather than discards those terms. An included idle ancilla contributes `Delta` to a full-space operator norm even though its ideal state has zero energy. The extension to an arbitrary decoupled old self-adjoint K_S preserves factorization, but does not import this particular equal-gap norm formula or total-Hamiltonian positivity outside its stated domain.
+
+## 3. Fixed endpoint and noncircular phase choice (lines 125–146)
+
+Write `a=x/(2pi)` and `d=r-a`, where `|d|<=1/4`. For `k=floor(r)+2`,
+
+    k-a = floor(r)-r + 2+d belongs to (3/4,9/4].
+
+Therefore `3pi/2<lambda<=9pi/2<6pi`. The floor is of a rational. A computable a can be enclosed coarsely before selecting k; no decision of exact equality to a multiple of `2pi` is required. Subsequent refinement of lambda retains that same integer. Even very small positive x poses no exceptional branch.
+
+Let C be the ordered rotation circuit. Time ordering places the phase slot **after** C in the interaction propagator. The complete battery propagator is
+
+    exp(-ix N_B) exp(-i lambda N_B) C = C,
+
+since `x+lambda=2pi k` and `N_B` has integer spectrum on all `2^M` physical basis states. No commutation of C with `N_B` is assumed or needed. The old free propagator factors separately. Thus the asserted exact isometry is
+
+    U_prep J_vac = J_beta exp(-i tau K_S/hbar),
+
+with identity action on the passive reference. This is an exact full-space propagation calculation followed by the specified vacuum input; it is not a reduced-channel or selected-input check. In particular the old E0 scalar is included, and the flip/edge reserve phases are exactly one.
+
+The dependency order is acyclic: `q,L,Delta,g,sigma` determine a permitted h and G; they determine `tau=(G+1)h`; tau determines x, then k and lambda. The uniform prechosen `Q_*=6pi` covers every resulting lambda. There is no feedback from lambda to its slot duration. A later runtime duration may depend on its requested gate, but it never enters this preparation-time choice.
+
+## 4. Energy, work and covariance (lines 156–192)
+
+The sine probabilities are invariant under `l -> L+1-l`. Their mean index is `(L+1)/2`, so the exact battery mean is `Delta[q+(L-1)/2]`. Their number support has range length `L-1`; the elementary range-variance bound gives the stated `Delta^2(L-1)^2/4`. The operator norm is nevertheless `M Delta`, because the whole physical battery, not only the prepared support, is retained.
+
+There is a second direct check of the work mean that does not infer it solely from the final target. For a slot let `A(s)=integral_0^s f_h(u)du`. A flip increases the target occupation by `sin^2((pi/2)A(s))` and contributes Delta at completion. Before edge i the active branch has probability `w_i`; during the edge its new occupation is `w_i sin^2(theta_i A(s))`. At completion the increase is
+
+    w_i sin^2(theta_i) = w_(i+1).
+
+Thus all rotation slots supply the free-energy increase
+
+    Delta [q+sum_(i=1)^(L-1) w_(i+1)]
+       = Delta [q+sum_(l=1)^L (l-1)b_l^2]
+       = Delta [q+(L-1)/2].
+
+The final number-phase slot changes no number expectation. This also handles `L=1`, when the empty sum is zero.
+
+For the full Schrödinger evolution, `d Tr(rho H)/dt=Tr(rho dot H)`. The old Hamiltonian commutes with the entire preparation schedule and its energy distribution is unchanged. Controls vanish at both boundaries. The net modeled work is therefore exactly the free-energy increase above. Equivalently, within each rotation slot the interaction-picture expectation of Q is constant; the envelope part of its work integrates to zero, while the carrier part is the derivative of the free battery energy. This does not remove the identity reserves from the installed Hamiltonian or from peak/absolute work.
+
+Using the derivative formula and nonnegative envelope gives
+
+    integral ||dot H_c|| <= 4 hbar ||Q||/h + Delta theta.
+
+The final parallel slot contributes at most `4 hbar M lambda/h`. Since `4 hbar Q_*/h<=g` and each `theta<=pi/2`, the claimed bound `g(G+M)+(pi/2)Delta G` follows. The exact net work can be much smaller than this absolute-work bound. Neither quantity is a microscopic driver energy or a bound on work fluctuations.
+
+In the ideal preparation the Hamiltonian factors across S/R and B, so their product structure, and hence their energy covariance zero, actually holds at every preparation time. The proposal only needs its endpoint consequence. With initial correlations or implementation couplings, no such inference is permitted; the joint error and actual covariance must be used. Runtime correlations are also retained. The instantaneous second moment of the full generator is at most its norm squared. It is not independently conserved during this nonconserving preparation.
+
+## 5. Precision, timing and moments (lines 194–238)
+
+Duhamel on the same full space and interval gives `||U_actual-U_nominal||<=eta_H`. Appending an arbitrary passive reference does not change this operator norm. Initial-state contraction followed by the unitary channel estimate gives `eta_ready+2eta_H` in unhalved trace norm. The readiness condition must be the joint product comparison; marginal purity estimates alone would not prove it. If the runtime ancilla is already included, the joint readiness and Hamiltonian-error domains include it. If it is appended later, its assumed exact independent vacuum or its separate readiness error must be included in the runtime contract; a battery-only readiness bound does not price an unspecified ancilla.
+
+For any self-adjoint A with `||A||<=1`, the integral derivative of its exponential gives `||exp(-i(theta+delta)A)-exp(-i theta A)||<=|delta|`. This applies to Y and nY on their entire spaces. A telescoping product bounds all G rotations without an unknown-state assumption. The final phase generator is `N_B`, with norm M, so its unitary error is at most `M|delta_lambda|`. Adding the separately defined residual integrated error proves (9). Reserve errors are genuine terms of that residual unless explicitly included elsewhere; identity reserves on controlled edges cannot be silently ignored. The sum and the full eta_H description are alternative decompositions, not two budgets to add twice.
+
+The proposed allocation spends
+
+    e/4 + 2(G+M)e/[8(G+M)] + 2e/8 = 3e/4.
+
+This leaves the stated quarter. Positivity, support, local strength and slew remain additional obligations for the actual controls. Finite precision in Delta, tau, hbar and pi must be propagated through x and `2pi k`; the factor `2|k|` in the pi error matters even though lambda itself is bounded. Small sine tails also need certified arithmetic. There is no arithmetic-walltime claim to validate here.
+
+After controls are off, the fixed-time comparison acquires at most `2||K_S+H_B|| |delta_t|/hbar`. This is a safe full-norm estimate including E0; it need not be tight for density operators. It applies only to free aging after the controlled schedule has ended. Jitter during a pulse, or an observation before the final pulse is complete, belongs in a schedule/Hamiltonian error certificate, not in a free-aging shortcut. An imperfectly occupied idle ancilla must be included in that full norm.
+
+For `0<=H_B<=a I`, `a=M Delta`, centering gives `|delta mean|<=a e_prep/2` and `|delta second moment|<=a^2 e_prep/2`. Also
+
+    |mu_actual^2-mu_ideal^2| <= 2a |mu_actual-mu_ideal|
+                             <= a^2 e_prep.
+
+Thus `3a^2 e_prep/2` would already bound the variance difference; the displayed `3a^2 e_prep` is conservative. Its growth with M is essential. The state-accuracy schedule does not automatically yield fixed mean/variance accuracy as the reservoir widens. Bounded reference-valued or full-generator observables require their own actual operator norms and correlations.
+
+## 6. Conditional runtime composition (lines 240–267)
+
+Let `E=exp(-i tau K_S/hbar)`. Immediately after ideal preparation the old/reference state is `E rho_SR E^*`, independent of beta and the vacuum ancilla. The runtime must be invoked with `W=V E^*`, so `W E=V`. The order is load-bearing. For example, with one qubit, `E=Z` and `V=H` (the Hadamard), the reversed choice `W=E^*V` yields `ZHZ`; on `|0>` this gives `|->` instead of the required `|+>`, an orthogonal output. This is an analytic witness against a reversed-order shortcut, not a failure of the proposal's correctly ordered equation (10).
+
+The c7f0e58c interface defines its vector comparator as `gamma(W) W psi` and retains `gamma` in its equations (17)–(18). Substitution therefore gives `gamma(W) V psi` for the combined vector comparator. A publication that asserts literal vector equality to V without this factor would overstate the referenced interface. In the density-operator comparison used in the proposal, the global scalar cancels even when the old state is entangled with an arbitrary passive reference. This is not a claim about coherently controlled programs with different runtime scalars.
+
+Apply the same actual runtime channel to actual and ideal preparation outputs. Trace-norm contraction bounds their difference by `e_prep`; the conditional runtime guarantee on the ideal prepared input contributes `e_runtime`. The triangle inequality gives the displayed full S/B/ancilla/R error sum. This reasoning never reinitializes or replaces the actual battery after an imperfect preparation. The runtime guarantee can be instantiated with zero initial-readiness error on that ideal intermediate state, while retaining its finite-reservoir, compilation, calibration and timing errors. Adding an already included preparation allowance again would only enlarge the bound; it must not be confused with a tighter total error allocation.
+
+For the ideal conditional runtime, all controls commute with its same physically identified free energy F and are off at the endpoints. Its net modeled drive work is zero for any input. The combined ideal drive work is consequently the preparation mean above. This statement imports the runtime's conserving-control premise; it does not certify that premise or assert zero work for arbitrary noncommuting implementation errors. A storage gap also needs the source's explicitly aged-state or calibration contract. The preparation time is fixed before W is specified, so the dependence of runtime compilation duration on W creates no circularity.
+
+## 7. Author fixture and rejected shortcuts
+
+The historical author execution has source **ec098c06310c1dde2864c020f8311ea2833bf09c0da31da268d863776564fbc4**, receipt **7d8ea9a5f8c43db3458ef81b4d04fadbbcdd7a8bb0387de2a97b36f454736963**, exit 0 and complete stdout/stderr. It uses the actual 32-dimensional physical battery for `q=1,L=3`, not a proxy code-space matrix. Its independent target literal within that author script is `(1/2,1/sqrt(2),1/2)` on prefixes 1,2,3. The recurrence yields exactly the declared angles. Hard-coding this target is appropriate for testing a target-state synthesis fixture; it is not an empirical prediction or evidence that all L were computed.
+
+Its discriminators can also be checked analytically without rerunning the script. Omitting the final correction at `x=pi/2` gives overlap `-1/2`, hence squared pure-state trace norm 3. Giving only the second active branch an extra `exp(-i theta_2)` phase gives overlap `1/4+(3/4)exp(-i theta_2)`, hence squared trace norm `3/2-sqrt(6)/2>0`. Reversing both conditional Y axes gives overlap `1/4-1/2+1/4=0`, hence squared trace norm 4. Removing a positive reserve yields the local eigenvalue `-a` for `a>0`. These are discriminating phase/sign/positivity checks, with the parameter restriction on the intended positive generator supplied by the analytic theta domain. They are not a general continuous-time pulse simulation.
+
+The checked failed shortcuts are therefore: an unpriced removal of the free drift; reversing or omitting the rotating carrier; using a merely positive but branch-phased conditional reserve; dropping the final number phase; reversing the old-time compensation order; treating parallel M-site load as one-site load; inferring moment accuracy or positivity from small trace error; and replacing an imperfect actual battery by a fresh pure one. The source avoids these shortcuts. This is a scoped error analysis, not a universal no-go theorem against different control families.
+
+Historical discovery limitations remain in the captured author manifest: an earlier broad repository search encountered a missing checkpoint path and truncated output, a guessed finite-reservoir receipt path was absent before correction, and environment import discovery preceded the one author run. Those events are not failed scientific executions or evidence of novelty. The captured corrected lexical search is bounded; no new exhaustive novelty or literature review is claimed here. The author's pre-execution statement in lines 283–288 is preserved as dated history alongside its later actual result; it is not interpreted as a current assertion that no author run exists.
+
+## Disposition and reopening conditions
+
+The reviewed preparation source supports a conditional, explicit finite-time preparation construction with the resources and errors stated. There is no unresolved algebraic calculation identified in sections 1–6 by this check. Keep the runtime as a conditional interface until its separate root review concludes, and retain its scalar when writing a combined vector comparator. No formal retained status, audit verdict, native driver, physical vacuum supplier, autonomous clock, interacting-old-H runtime, permanent halt, indefinite reuse, or efficient generic compiler follows from this review.
+
+Reopen the affected steps if the pulse quadrature/sign, reserve coefficients, locality permissions, energy identification, initial product contract, phase-slot timing, actual error model, or runtime interface changes. A modified source hash is not covered automatically. All writes in this task are confined to this review directory; canonical science, Git refs, PRs, locks, audit state, prompts and axioms were not changed. The record has **zero new scientific executions** and one actual source-capture/metadata verification execution. Metadata success attests file and receipt linkage only; the mathematical evidence is the displayed analytic reconstruction.
+
+
+<!-- Unchanged source body: Controlling preparation qualifications -->
+
+# Controlling qualifications: local sine preparation
+
+The root accepts the fixed finite-time preparation of the buffered sine packet as a conditional driven construction. Source proposal db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826 and exposed analytical review f4addfc95983ebd497bfb44ac7224afdd1b5d342a9241ea11696e97804eab022 remain unchanged. Their original pending-status statements are historical. The related runtime now has separate root acceptance 7a696aff18e51fd5d83548a49944a95ab3ccb180a6daf01b8629d8cad5578509, controlled by qualifications 9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305. This decision does not accept the separate sparse-count candidate or a target-specific compiler.
+
+For q,L>=1, M=L+2q physical battery qubits carry H_B=Delta N_B. Starting from independent vacuum, q onsite flips and L-1 conditional rotations prepare the real amplitudes b_l=sqrt(2/(L+1)) sin(pi*l/(L+1)) on prefixes of lengths q+l-1. The number of serial rotation slots is G=q+L-1. The actual old Hamiltonian remains installed and decoupled during preparation.
+
+The preparation factorization alone allows any declared finite self-adjoint old K_S. Total-generator positivity, equal-gap full norm and later runtime formulas require their own positive/equal-gap premises. Do not transplant the runtime's E0+(q+M)Delta formula to arbitrary interacting or indefinite K_S. If an idle ancillary qubit is included in the physical space, its free term counts in the full operator norm even when its ideal occupation is zero.
+
+The supplied controls are stronger than the runtime's conserving alphabet: number-changing local Y rotations and n-controlled Y rotations with a phase-locked rotating laboratory quadrature are required. The positive integrated generators are 2pi I+(pi/2)Y and n(2pi I+theta Y), with theta in (0,pi/2). The reserves have exact whole-space unit phase exp(-i2pi I)=exp(-i2pi n)=I. Replacing the conditional reserve by theta n leaves a branch phase and is not equivalent. Pure independent vacuum, waveform generation, absolute timing, isolation, coefficients and physical energy/slew identification remain supplied.
+
+With Q_*=6pi, choose the fixed slot length
+
+h >= max(4 hbar Q_*/g, sqrt(8pi hbar Q_*/sigma), 4pi Delta/sigma).
+
+For every serial rotation use the laboratory control
+hbar f_h(t-t_j) exp(-it H_B/hbar) Q exp(it H_B/hbar),
+where f_h=(1-cos(2pi t/h))/h on its support. Its interaction-picture generator is hbar f_h Q while literal H_B remains present. The derivative includes the rotating-carrier term: 2pi hbar Q_*/h^2+pi Delta/h. Both contributions are paid. The stated choices bound a nominal active local term by g/2 and its derivative by sigma/2.
+
+A final simultaneous phase slot on every battery site gives tau_p=(G+1)h. Set x=Delta*tau_p/hbar, choose rational r with |r-x/(2pi)|<=1/4, k=floor(r)+2 and lambda=2pi*k-x in (3pi/2,9pi/2]. This one parallel layer implements exp(-i lambda N_B), so the exact battery free factor cancels at the declared endpoint on the entire physical space. Its global norm is of order M even though its incident norm per site is bounded. The chosen tau_p precedes lambda; no phase-duration fixed-point assumption is used.
+
+The complete ideal preparation isometry is
+
+U_prep J_vac = J_beta exp(-i tau_p K_S/hbar).
+
+All old/reference correlations are included. E0 is retained in the old scalar. No selected-code-space approximation replaces the actual physical battery evolution. L=1 is included with no conditional angles.
+
+To compose with the separately accepted runtime, set E=exp(-i tau_p K_S/hbar) and request W=V E*. The order gives W E=V. The reversed order can give an orthogonal output (E=Z,V=Hadamard on |0> is the review's witness). The runtime comparator contains gamma(W), so the combined vector comparator contains gamma(W)V, including all runtime reserve and circuit phases. The density-matrix comparison has error at most e_prep+e_runtime because the global scalar cancels. This does not establish a common phase for coherently controlled programs with different W.
+
+The actual imperfect preparation is propagated through the same subsequent runtime channel. It is not replaced by a fresh pure battery. If the ancilla is present initially, its complete readiness and dynamics are included; if appended later, independent exact vacuum or its separate joint readiness allowance must be supplied. A battery-only marginal estimate cannot price an unspecified ancilla. Storage gaps require the applicable phase-age and actual-generator error budget.
+
+For the original joint readiness eta_ready and integrated Hamiltonian error eta_H, the complete joint trace error is at most eta_ready+2eta_H. An alternative resolved estimate is
+
+e_prep <= eta_ready + 2 sum_j |delta theta_j|
+                         + 2M |delta lambda| + 2eta_other.
+
+The full integral and this resolved decomposition are alternative accounting conventions, not two independent errors to add twice. Errors in the positive reserves, carrier frequency/phase, timing and waveform shape need explicit allocations. Nominal edge/number generators have kernels: actual positivity, support, incident cap and slew do not follow from a small norm perturbation and require separate certificates.
+
+The source's allocation eta_ready<=e/4, every displayed angle error<=e/[8(G+M)], eta_other<=e/8 spends at most 3e/4. The remaining quarter can price a stated timing model. A post-schedule free-aging allowance 2||K_S+H_B|| |delta_t|/hbar is valid only after all pulses have ended, and must include any imperfectly occupied idle ancilla. Jitter during pulses or sampling before completion is not a free-aging error. Input precision in Delta, hbar, tau_p and pi must include cancellation-sensitive terms tau_p*delta_Delta/hbar and 2|k|*delta_pi, plus cross terms and schedule arithmetic. Small sine tails still require certified arithmetic; the bounded arccos derivative does not supply an oracle-runtime guarantee.
+
+The ideal battery mean is mu_B=Delta[q+(L-1)/2], and its variance is at most Delta^2(L-1)^2/4. Each edge i adds Delta*w_(i+1) of free energy, while each initial flip adds Delta. This independently reconstructs the same net modeled preparation work. The final phase slot changes no number expectation. Controls vanish at both endpoints; the old energy distribution is unchanged during preparation. Thus net modeled work is mu_B, with absolute work bounded by g(G+M)+(pi/2)Delta G. This is the externally prescribed-drive functional, not a microscopic controller-energy or work-fluctuation theorem. If the conditional nominal runtime has the same matched F at both endpoints, its extra net drive work is zero. Noncommuting implementation errors need the runtime's actual work/error conditions.
+
+With a=M Delta and complete preparation trace error e_prep, the mean and raw second-moment errors are at most a e_prep/2 and a^2 e_prep/2. Retain the conservative variance allowance 3a^2 e_prep. Small trace error alone does not imply fixed moment accuracy as L grows. Actual covariances and all modeled output registers remain. The original product comparator gives zero old-battery covariance; no zero-covariance assumption may be made for an actual correlated input or implementation.
+
+Evidence consists of the complete analytical source and a separate source-exposed reconstruction. The original author exact SymPy fixture at q=1,L=3 acts on all32 battery basis states. Its source SHA ec098c06310c1dde2864c020f8311ea2833bf09c0da31da268d863776564fbc4, execution SHA7d8ea9a5f8c43db3458ef81b4d04fadbbcdd7a8bb0387de2a97b36f454736963 and full streams remain unchanged. It distinguishes omitted phase correction, wrong branch reserve, wrong Y sign and lost positivity. It is one author finite calculation, not an independent rerun, a general-L computer proof or a time-dependent ODE simulation. The exposed reviewer ran no scientific program and preserved a corrected reviewer-draft commutator-sign error. The correct identity is [n,Y]=iX. All original failed discovery paths and limitations remain historical.
+
+This acceptance permits separate milestone packaging and conditional composition only. It supplies no retained audit, native vacuum or drive, physical parameter measurement, interacting-old-H runtime, favorable generic classical compiler, autonomous clock/halt or indefinite reuse. No editable prompts or axioms changed.
+
+Publication scope remains conditional support under the premises and verification limits above; retained status requires the independent audit path.

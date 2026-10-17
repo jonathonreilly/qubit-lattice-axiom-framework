@@ -1,0 +1,30 @@
+EXTRACTED_PURE_FUNCTIONS ['adjoint', 'cadd', 'cdiv', 'ceildiv', 'cgaussian', 'cmul', 'coefficients', 'gmul', 'ident', 'interval_scale', 'kron', 'left_accumulate', 'madd', 'mmul', 'pauli_coefficient', 'rprod']
+DIRECTED_PRIMITIVES_CHECKED {'complex_product_cases': 100, 'positive_division_cases': 70, 'gaussian_multiplier_cases': 250, 'signed_scale_cases': 50, 'coefficient_matrices': 0, 'cached_global_matrices': 0, 'raw_complex_coordinates': 0, 'jacobian_entries': 0, 'residual_entries': 0}
+ALL_SHIFTED_GENERATOR_COEFFICIENTS_CHECKED 1920
+CACHED_PULSE_TO_GLOBAL_AND_COORDINATES_CHECKED {'complex_product_cases': 100, 'positive_division_cases': 70, 'gaussian_multiplier_cases': 250, 'signed_scale_cases': 50, 'coefficient_matrices': 1920, 'cached_global_matrices': 17, 'raw_complex_coordinates': 256, 'jacobian_entries': 256, 'residual_entries': 0}
+ALL_FOUR_WRONG_OBJECT_CONTROLS_REJECTED ['omitted_identity_coordinate', 'opposite_derivative_sign', 'trace_normalization_one_half_instead_of_one_quarter', 'duplicated_selected_column']
+{
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/SCOPED_CHECK_RESULT.json",
+    "bytes": 6752,
+    "sha256": "c645a85f698d47609eb3a2d85c16680a23bab7f333af7eece480a76c047f5fa0"
+  },
+  "counts": {
+    "complex_product_cases": 100,
+    "positive_division_cases": 70,
+    "gaussian_multiplier_cases": 250,
+    "signed_scale_cases": 50,
+    "coefficient_matrices": 1920,
+    "cached_global_matrices": 17,
+    "raw_complex_coordinates": 256,
+    "jacobian_entries": 256,
+    "residual_entries": 256
+  },
+  "integer_B": 63,
+  "sigma_lower": "1/126",
+  "s": "1/252",
+  "t": "25/229376",
+  "r": "25/231211008",
+  "four_controls_rejected": true,
+  "ODE_steps_executed": 0
+}

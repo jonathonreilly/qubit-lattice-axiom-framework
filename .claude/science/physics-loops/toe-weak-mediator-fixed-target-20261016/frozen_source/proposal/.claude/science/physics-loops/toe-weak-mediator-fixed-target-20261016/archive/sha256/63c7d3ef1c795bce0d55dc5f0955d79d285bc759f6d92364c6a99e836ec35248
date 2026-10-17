@@ -1,0 +1,7 @@
+# Finite weak-mediator compiler: separate exposed check
+
+`REVIEW.md` reconstructs the complete proposed finite compiler and its error budget without executing it. The mathematical construction checks out. Read its operation-count qualification: `3n` summed series terms plus three first-omitted remainder terms, and three explicit final rounding divisions rather than a total integer-operation count.
+
+`sources/FINITE_COMPILER_ADDENDUM.md` is an exact copy of the root's proposed source at SHA256 `7c54639374626757ac9aa4d32a5bf23b317a62e2560d8ed4c4c1651f15babed8`. `SOURCE_EXPOSURE.json` pins that source and the unchanged prior review packet, which is referenced without recursively copying its archive. The current reviewer previously proposed the lower-endpoint strategy; this limitation on independence is explicit.
+
+`runs/metadata_inspection/` preserves the actual metadata-only child source at launch, a separate source copy, recorder source, complete stdout/stderr and execution receipt. `FINAL_FREEZE.json` binds this complete new packet. No coefficient computation, scientific execution, original-source edit, canonical change, Git mutation or publication occurred.

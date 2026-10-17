@@ -1,0 +1,161 @@
+{
+  "schema": "immutable_source_exposed_external_stop_review_v1",
+  "created_at": "2026-10-16T22:17:41.538096+00:00",
+  "scope": "analytical review; metadata capture only; no scientific execution; root disposition separate",
+  "source_exposed": true,
+  "same_model": true,
+  "root_acceptance": null,
+  "scientific_executions": 0,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1147,
+      "sha256": "7fa130146fcc619f5fa7ed9eb110a8f6c59f1b45198fd41398fd283fc00f9415"
+    },
+    {
+      "path": "CODE_REUSE.md",
+      "bytes": 953,
+      "sha256": "e278799545dd51279d1cb21e6514b1531acfa2e73ec11439a24ce38c5ccc35d2"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 17827,
+      "sha256": "57f52ff14bec371aaafcb6afa6c20742d228947d9a0fcd676b85b74b588c9def"
+    },
+    {
+      "path": "ROOT_CONTEXT_MESSAGE.txt",
+      "bytes": 886,
+      "sha256": "b30283288f79ae2471703bdb0d14319c688b2350e2e1ea40de838a88db2c67d0"
+    },
+    {
+      "path": "SOURCE_COVERAGE.md",
+      "bytes": 2419,
+      "sha256": "2df82ada50c6b192786c0343ea392ab4b8b1ce2b18756ba38aaa8b436da660c9"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 7578,
+      "sha256": "4516c072df3ec333caba4b44bb8a0e34eaedc0a3fe7ac805c752346d4a579a01"
+    },
+    {
+      "path": "inspect_sources.py",
+      "bytes": 4769,
+      "sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7"
+    },
+    {
+      "path": "metadata/EXECUTION.json",
+      "bytes": 911,
+      "sha256": "60c2480310954770e4c2950eb6430ca35686cd44f9fc684bed27a0cc09dfbfec"
+    },
+    {
+      "path": "metadata/executed_source.py",
+      "bytes": 4769,
+      "sha256": "211e746f3b5ac7dd2b379c719289348a3e083a02a38a7d9c4298ae6c9c2b14c7"
+    },
+    {
+      "path": "metadata/launcher_source.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "metadata/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "metadata/stdout",
+      "bytes": 1976,
+      "sha256": "36c3f4e1b55c25742b8604f816af6e86f05b7883ee7fb567bf8db133d2db52c8"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 1429,
+      "sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6"
+    },
+    {
+      "path": "seal.py",
+      "bytes": 1079,
+      "sha256": "4cf7b4c92de2b20ee10ef56a7eb526e822c11ccfe09e0678bb4dc8534304c5bf"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/BOUNDED_SLEW_INSTALLATION_ADDENDUM.md",
+      "bytes": 5436,
+      "sha256": "47a40af19554e87c7d4f1af4ce034487b8d63c0b3bb032a3f15f4ee1eda414e6"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/EXTERNAL_STOP_AND_WORK_RETURN_ADDENDUM.md",
+      "bytes": 6927,
+      "sha256": "18cd2458fc84e1132c2b31b3774e64d4c5f6f4d4389e283130d7deccc7007ce0"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/INSTALLATION_WORK_ADDENDUM.md",
+      "bytes": 2888,
+      "sha256": "398ddef66cd7965c687882f4a356170863723a096978b89346b7cb5e008c546f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "path": "sources/product_source_mediator_candidate/PROPOSAL.md",
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/FREEZE.json",
+      "bytes": 3377,
+      "sha256": "119a2ca441669b007529bda825259630efb5c79e40ef6a93c09b01ddb17488d1"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_exposed_check/REVIEW.md",
+      "bytes": 14347,
+      "sha256": "dc3f2e653f5df472c7440d37def34db1545d34334d2d86f4ee01be4fced89b15"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_exposed_check/FREEZE.json",
+      "bytes": 4358,
+      "sha256": "f3d0d62274ee0ac1ce04789b896dd510e4a92c6909e20755f70009e7c0199b11"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_exposed_check/REVIEW.md",
+      "bytes": 11562,
+      "sha256": "81f1914b3ab465f6c230725827d09bbf60f3afd5f9218dba219cf4686dd2411a"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/ACCEPTANCE.json",
+      "bytes": 4672,
+      "sha256": "45f062fdbce4b995c0f70ae36f8afac2fa9151409cf13e4a0be42da684cd7847"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/FREEZE.json",
+      "bytes": 431,
+      "sha256": "92ccea720ffd25ca8d10ff0639ee89bd37c7be62c647a5536ec4c683cb01c35f"
+    },
+    {
+      "path": "sources/product_source_mediator_installation_work_root_review/QUALIFICATION.md",
+      "bytes": 3392,
+      "sha256": "43ab4e6cdd919c5d214d92bef15f398cd7aaf57d0eeb598bc7448cce55e8a977"
+    },
+    {
+      "path": "sources/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    {
+      "path": "sources/product_source_mediator_qualified_publication_draft/FINAL_FREEZE.json",
+      "bytes": 36405,
+      "sha256": "454a8314303086e43da24a8e447b684308d65037218080b4163d01d800f556eb"
+    },
+    {
+      "path": "sources/product_source_mediator_root_review/QUALIFICATION.md",
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    }
+  ]
+}

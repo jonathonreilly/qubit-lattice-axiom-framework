@@ -1,0 +1,25 @@
+"""Metadata-only source syntax/inventory/freeze. Never imports the checker."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,hashlib,json
+P=Path(__file__).resolve().parent
+
+def pin(path):
+    raw=path.read_bytes();return dict(path=str(path),bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())
+
+assert not (P/'CHECKER_SOURCE_FREEZE.json').exists()
+functions=[]
+for name in ['check_saved_evidence.py','record_check.py','freeze_source.py','record_source_freeze.py']:
+    source=(P/name).read_text();tree=ast.parse(source,filename=name)
+    for node in tree.body:
+        if isinstance(node,ast.FunctionDef):
+            raw=''.join(source.splitlines(True)[node.lineno-1:node.end_lineno]).encode();functions.append(dict(file=name,name=node.name,start_line=node.lineno,end_line=node.end_lineno,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest()))
+(P/'CODE_MAP.json').write_text(json.dumps(dict(functions=functions,scope='AST syntax and exact source inventory only; no program import or arithmetic execution.'),indent=2)+'\n')
+for filename in ['INITIAL_FREEZE.json','program_exposed/SOURCE_REVIEW_FREEZE.json']:
+    path=P.parent/filename;data=json.loads(path.read_text());base=path.parent
+    for row in data['files']:
+        actual=pin(base/row['path']);assert all(actual[k]==row[k] for k in ['bytes','sha256'])
+assert all(v is None for v in json.loads((P/'INPUT_BINDING_TEMPLATE.json').read_text()).values())
+files=[dict(pin(path),path=str(path.relative_to(P))) for path in sorted(P.rglob('*')) if path.is_file()]
+freeze=dict(kind='unexecuted_independent_fraction_saved_evidence_checker_source',utc=datetime.now(timezone.utc).isoformat(),files=files,initial_analytical_freeze=pin(P.parent/'INITIAL_FREEZE.json'),source_review_freeze=pin(P.parent/'program_exposed/SOURCE_REVIEW_FREEZE.json'),author_source_sha256='52e53faf92f700af874eac296b3c37bd2efc0ad0e6b1eccf2b0e3a4246e16c80',author_prelaunch_sha256='f453d8268c170f725cfc376dafbc8988ffff742baf3e95e8d1dc25100df22a43',actual_author_output_binding=None,actual_execution_authorization=None,scientific_checker_executions=0,author_scientific_output_viewed=False,syntax_only_no_checker_import=True,fixed_wall_timeout_seconds=180,automatic_retry=False,retained_audit=False)
+(P/'CHECKER_SOURCE_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n');print(json.dumps(dict(freeze=pin(P/'CHECKER_SOURCE_FREEZE.json'),checker=pin(P/'check_saved_evidence.py'),recorder=pin(P/'record_check.py'),members=len(files),checker_executed=False),indent=2))

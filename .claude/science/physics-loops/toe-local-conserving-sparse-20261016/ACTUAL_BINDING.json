@@ -1,0 +1,311 @@
+{
+  "kind": "root_reviewed_canonical_binding",
+  "utc": "2026-10-16T17:16:38.470788+00:00",
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "canonical_parent_binding_complete": true,
+  "note_sha256": "2f21c5244592af37d48f69a9e7c163fabf1a6372a3ed80cdf70446f3aa892d50",
+  "git_base": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+  "base_branch": "physics-loop/toe-local-conserving-preparation-20261016",
+  "source_body_pins": [
+    {
+      "body_id": "sparse_derivation",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_path": "source/sparse_author/DERIVATION.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b"
+    },
+    {
+      "body_id": "sparse_analytical_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+      "packet_path": "source/sparse_exposed_review/REVIEW.md",
+      "bytes": 25079,
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a"
+    },
+    {
+      "body_id": "sparse_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/sparse_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e"
+    },
+    {
+      "body_id": "runtime_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/control_parent_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305"
+    },
+    {
+      "body_id": "fixture_report",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/REVIEW.md",
+      "packet_path": "source/emitted_fixture/REVIEW.md",
+      "bytes": 12442,
+      "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649"
+    },
+    {
+      "body_id": "fixture_exposed_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/REVIEW.md",
+      "packet_path": "source/fixture_exposed_review/REVIEW.md",
+      "bytes": 21515,
+      "sha256": "c1f7a257fbb824d868c3ca25c7ba9fc8d7504f2e532ca83b8851427afdae305d"
+    },
+    {
+      "body_id": "fixture_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/fixture_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 4390,
+      "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc"
+    }
+  ],
+  "raw_bodies": [
+    {
+      "body_id": "sparse_derivation",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_candidate/DERIVATION.md",
+      "packet_path": "source/sparse_author/DERIVATION.md",
+      "bytes": 30201,
+      "sha256": "6b1e1ecd6afcf53dd05411493c18ceb9db258fcc279dc3c24072a516a5a76c3b",
+      "label": "sparse_derivation",
+      "start_byte": 13189,
+      "end_byte_exclusive": 43390
+    },
+    {
+      "body_id": "sparse_analytical_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_exposed_check/REVIEW.md",
+      "packet_path": "source/sparse_exposed_review/REVIEW.md",
+      "bytes": 25079,
+      "sha256": "2af89ecefd2d682259e967cc96ef1f5965c37500de4d3cc9261cb39d50254a2a",
+      "label": "sparse_analytical_review",
+      "start_byte": 43421,
+      "end_byte_exclusive": 68500
+    },
+    {
+      "body_id": "sparse_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/sparse_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 8609,
+      "sha256": "83b913c6b47ee8625cc15914759886e642515d02f284dc84a6b92d8e3ed54d3e",
+      "label": "sparse_qualifications",
+      "start_byte": 68528,
+      "end_byte_exclusive": 77137
+    },
+    {
+      "body_id": "runtime_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_control_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/control_parent_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 11037,
+      "sha256": "9fb1514db57464c15de3156916922f405e80e3dc56b6d7624d2e9531b011f305",
+      "label": "runtime_qualifications",
+      "start_byte": 77166,
+      "end_byte_exclusive": 88203
+    },
+    {
+      "body_id": "fixture_report",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_compiler_fixture/REVIEW.md",
+      "packet_path": "source/emitted_fixture/REVIEW.md",
+      "bytes": 12442,
+      "sha256": "c9e99e725b3efd8dabbf551c315e983113129de0ed12d5f9028c207f93fe9649",
+      "label": "fixture_report",
+      "start_byte": 88224,
+      "end_byte_exclusive": 100666
+    },
+    {
+      "body_id": "fixture_exposed_review",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_exposed_check/REVIEW.md",
+      "packet_path": "source/fixture_exposed_review/REVIEW.md",
+      "bytes": 21515,
+      "sha256": "c1f7a257fbb824d868c3ca25c7ba9fc8d7504f2e532ca83b8851427afdae305d",
+      "label": "fixture_exposed_review",
+      "start_byte": 100695,
+      "end_byte_exclusive": 122210
+    },
+    {
+      "body_id": "fixture_qualifications",
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_conserving_sparse_fixture_root_review/FINAL_QUALIFICATIONS.md",
+      "packet_path": "source/fixture_root_decision/FINAL_QUALIFICATIONS.md",
+      "bytes": 4390,
+      "sha256": "e2bf8af1a8c90068c33d833604717762cb1207e008ad52b3c330986cd470a4bc",
+      "label": "fixture_qualifications",
+      "start_byte": 122239,
+      "end_byte_exclusive": 126629
+    }
+  ],
+  "parent_binding": {
+    "kind": "exact_direct_mathematical_parent_binding",
+    "direct_canonical_parents": [
+      {
+        "path": "docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "bytes": 170504,
+        "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+      }
+    ],
+    "git_base": null,
+    "scope": "The author fixed-duration local-control argument and its qualifications are in this parent. Existing finite-lift core is transitive; no preparation/runtime composition is newly claimed."
+  },
+  "source_proposal_freeze": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c.json",
+    "bytes": 31807,
+    "sha256": "8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c"
+  },
+  "source_draft_body_map": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/ef66b9de63abdb41c735e3f26e17f05a77f92d9c2fd43dc0e9abe85b540340e4.json",
+    "bytes": 2843,
+    "sha256": "ef66b9de63abdb41c735e3f26e17f05a77f92d9c2fd43dc0e9abe85b540340e4"
+  },
+  "source_draft_note": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4d0d6b112e46ec0a20b4aad89637f7245aea141d6420bb6a4d781220a644f9c6.md",
+    "bytes": 10520,
+    "sha256": "4d0d6b112e46ec0a20b4aad89637f7245aea141d6420bb6a4d781220a644f9c6"
+  },
+  "source_draft_manifest": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0c87d3be9af2418d0de0175251998f83dbc1a3cd46a2b943640410dd81990394.json",
+    "bytes": 59056,
+    "sha256": "0c87d3be9af2418d0de0175251998f83dbc1a3cd46a2b943640410dd81990394"
+  },
+  "source_draft_provenance": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/354a3b8a1605759b74708a45c33aafe27fdb622ad7b402c0efaa6c29330f9606.json",
+    "bytes": 2613,
+    "sha256": "354a3b8a1605759b74708a45c33aafe27fdb622ad7b402c0efaa6c29330f9606"
+  },
+  "root_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9927849edd289e7ce206e0abb06d0908a9cc760d0b3dc749c7961c096e607f18.json",
+      "bytes": 3159,
+      "sha256": "9927849edd289e7ce206e0abb06d0908a9cc760d0b3dc749c7961c096e607f18"
+    },
+    "review_text": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a66128973140423a4a080e08411dfbb450ee8f1145e7b9342473609d4b5ec299.md",
+      "bytes": 2883,
+      "sha256": "a66128973140423a4a080e08411dfbb450ee8f1145e7b9342473609d4b5ec299"
+    },
+    "freeze": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4db683d3c480902089122fdd83c2365ecf5fe43d72bc4aabc9c76c9ff006e81b.json",
+      "bytes": 719,
+      "sha256": "4db683d3c480902089122fdd83c2365ecf5fe43d72bc4aabc9c76c9ff006e81b"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8efb46edb72d27350474575a9123325593d686bc7045ed5c0396270fa6ac97ae.json",
+      "bytes": 1761,
+      "sha256": "8efb46edb72d27350474575a9123325593d686bc7045ed5c0396270fa6ac97ae"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8628a1a473daf3c17bae6f48ed1dfd528e3d81a482162218f3bb1345fcf6f989.blob",
+      "bytes": 1290,
+      "sha256": "8628a1a473daf3c17bae6f48ed1dfd528e3d81a482162218f3bb1345fcf6f989"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/7d8b52e99b020407bd908ca63e7a4d43fcaa965e10805be47d1adf8848036d94.py",
+      "bytes": 6537,
+      "sha256": "7d8b52e99b020407bd908ca63e7a4d43fcaa965e10805be47d1adf8848036d94"
+    }
+  },
+  "canonical_review_evidence": {
+    "review": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0.json",
+      "bytes": 92467,
+      "sha256": "60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0"
+    },
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/1921469ba53746b85df3d36febffd3f1213f5c66cf59514825c065232ecbf4b7.json",
+      "bytes": 1772,
+      "sha256": "1921469ba53746b85df3d36febffd3f1213f5c66cf59514825c065232ecbf4b7"
+    },
+    "source": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/61a639668b2e4e1b98234a6ac2cf9ab9cc2c5c152444315554c6db948ee2c050.py",
+      "bytes": 11279,
+      "sha256": "61a639668b2e4e1b98234a6ac2cf9ab9cc2c5c152444315554c6db948ee2c050"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4ed7f802f5edf2b7b3ba8dcfc13decac3d07bd2285be11c635e62d4f440b180e.blob",
+      "bytes": 369,
+      "sha256": "4ed7f802f5edf2b7b3ba8dcfc13decac3d07bd2285be11c635e62d4f440b180e"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "base_observation": {
+    "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3d5604eab20b799db4862ce095a23dbf5b2816f2f48b77692919afcfc5acc6f4.json",
+    "bytes": 1421,
+    "sha256": "3d5604eab20b799db4862ce095a23dbf5b2816f2f48b77692919afcfc5acc6f4"
+  },
+  "parent_pr_observation": {
+    "execution": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a.json",
+      "bytes": 1796,
+      "sha256": "3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a"
+    },
+    "recorder": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527.py",
+      "bytes": 56255,
+      "sha256": "9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527"
+    },
+    "stdout": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d.blob",
+      "bytes": 277,
+      "sha256": "a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d"
+    },
+    "stderr": {
+      "path": ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "observed_parent_prs": {
+    "base": {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-local-conserving-preparation-20261016",
+      "headRefOid": "98c9eaf1702d74f5f19649f8140e9fbdc83a2345",
+      "isDraft": false,
+      "number": 9645,
+      "state": "OPEN",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9645"
+    }
+  },
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0c87d3be9af2418d0de0175251998f83dbc1a3cd46a2b943640410dd81990394.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/0da27d48c154171d0fd975bcf554d3f10862c9414925157481ae26fbc2b02433.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/1921469ba53746b85df3d36febffd3f1213f5c66cf59514825c065232ecbf4b7.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/354a3b8a1605759b74708a45c33aafe27fdb622ad7b402c0efaa6c29330f9606.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3d5604eab20b799db4862ce095a23dbf5b2816f2f48b77692919afcfc5acc6f4.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/3da24ce3e7c2af1db5160917d51e06931493b97f0826d3ea158124430a997e1a.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4d0d6b112e46ec0a20b4aad89637f7245aea141d6420bb6a4d781220a644f9c6.md",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4db683d3c480902089122fdd83c2365ecf5fe43d72bc4aabc9c76c9ff006e81b.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/4ed7f802f5edf2b7b3ba8dcfc13decac3d07bd2285be11c635e62d4f440b180e.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/60bb5adbcb8f346d870cc555bacf3f236b0c2af0c0d5b9eceb5f3f311bff70d0.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/61a639668b2e4e1b98234a6ac2cf9ab9cc2c5c152444315554c6db948ee2c050.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/7d8b52e99b020407bd908ca63e7a4d43fcaa965e10805be47d1adf8848036d94.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8628a1a473daf3c17bae6f48ed1dfd528e3d81a482162218f3bb1345fcf6f989.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8efb46edb72d27350474575a9123325593d686bc7045ed5c0396270fa6ac97ae.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/8f59a94d8583f02f04b1df7824a47496de789e12d8a4094affc54a38da0b954c.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9927849edd289e7ce206e0abb06d0908a9cc760d0b3dc749c7961c096e607f18.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/9b40206f122539c7865c3cb2ff1bd808a7a358d00a62774f1528ccd646a1d527.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a407e2abef03167078857852ef67877be31f1cb1bdf2f4195acb7b26fac9bb4d.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/a66128973140423a4a080e08411dfbb450ee8f1145e7b9342473609d4b5ec299.md",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/b2e9392fd3b68228839cf8959b72abc792474c0515e3e8881a0593946dcae942.json",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-local-conserving-sparse-20261016/binding_sources/ef66b9de63abdb41c735e3f26e17f05a77f92d9c2fd43dc0e9abe85b540340e4.json"
+  ],
+  "origin_main": "de540f645a284854753e19f5b5f954cb41185b6e",
+  "instruction_revision": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "new_scientific_execution": false,
+  "retained_audit": false
+}

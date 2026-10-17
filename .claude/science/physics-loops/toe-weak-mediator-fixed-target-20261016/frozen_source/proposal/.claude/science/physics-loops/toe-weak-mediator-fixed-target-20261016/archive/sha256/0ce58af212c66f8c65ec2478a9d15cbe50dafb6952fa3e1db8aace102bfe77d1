@@ -1,0 +1,231 @@
+# Exact weak-mediator check specification
+
+This packet is a source-only candidate check. Its scientific code has not been
+executed, and no outcome is presumed. It follows complete exposure to root's
+5883-byte proposal, SHA256
+`22e62c1408387329d172d7c3b1e6dc5591fc550b639756db7f92f1e3b159649b`,
+and the separately added dyadic note, SHA256
+`2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517`.
+The checker author worked on earlier endpoint/static-edge material with the
+same model. This is a different algebraic representation of exposed formulas,
+not blind or model-independent validation. No historical science runner is
+imported or repeated. Root owns any later authorization and acceptance.
+
+## Scope, corrected terminology, and representations
+
+The tested system is precisely four qubits in order S1,S2,A,B on the square
+with edges S1-S2, S1-A, S2-B, A-B. The old block is the unchanged
+`K=2I+Z1 Z2`. The two sources start in Phi+ and all four qubits remain in the
+output. The source term and the four XX/YY positive port blocks are new
+supplied microscopic permissions. This is not a realization from the four
+original onsite rays, nor a preparation, clock, installation or reset theorem.
+
+The original phrase “source triplets” is false: VJ reaches Psi+ and the spin
+singlet Psi-. The addendum corrects it to the orthogonal Bell complement.
+The actual source Hamiltonian already gives all three orthogonal Bell states
+the same energy; no coupling or denominator changes. The checker exposes
+the complete four source amplitudes instead of treating the phrase as a premise.
+
+Use two real indeterminates h,a and substitute
+
+    gy=a, gx=ah, Delta=2h^2, q=a^2, delta=2-Delta, r=2a(h+1).
+
+Every declared Hamiltonian entry is then a polynomial in the exact ring
+`Q[i,h,a]/(i^2+1)`. The physical point is
+`h=sqrt(Delta/2)>0, a=sqrt(theta/T)>0`, with
+`theta=atan(4/3), delta=theta/pi, 3/2<Delta<7/4`.
+No square root or transcendental coefficient is evaluated. This substitution
+is faithful to the chosen relation `gx^2=q Delta/2, gy^2=q` and positive roots;
+it is not a test of arbitrary independent gx,gy,Delta.
+
+Let E be the 16-by-4 injection with unnormalized source column `(1,0,0,1)`.
+Thus `J=E/sqrt(2)`, `E*E=2I`, and `P=EE*/2`, `Q=I-P` have rational entries.
+The checker uses the full matrices in the computational tensor basis. It
+constructs Y with entries -i and i explicitly, and conjugates i under adjoint.
+It does not use a predeclared Bell-basis effective Hamiltonian as its input.
+
+## Independent cleared-denominator derivation to be checked
+
+Write Z=Z1Z2, X=X1X2, D=Delta^2-4 and D2=Delta D. On the stated domain
+Delta, D, and D2 are nonzero. In unnormalized coordinates set
+
+    N1 = -V E (Delta I+2Z),
+    N2 = -Q V N1,
+    A1 = N1/D = sqrt(2) S1,
+    A2 = N2/(Delta D) = sqrt(2) S2,
+    Nh = E* V N1/2,
+    H2 = Nh/D.
+
+The second denominator Delta is sufficient here because V flips old Z parity
+and V N1 restores it; the code separately checks that the second right-hand
+side preserves parity. Both full Sylvester identities are tested before the
+formula is used:
+
+    H0 N1-N1 K+D V E=0,
+    H0 N2-N2 K+Delta Q V N1=0.
+
+Q-support and E*-orthogonality of both numerators are checked. The exact
+second-order formula to compare against independently constructed matrices is
+
+    Nh = -q(Delta+2)(Delta I+2Z) - q D X.
+
+Dividing by D yields
+`H2=q Delta/(2-Delta) I + 2q/(2-Delta) Z-qX`.
+The checker tests Hermiticity, commutation with K, and `P V N1=E Nh`.
+
+For the complete residual, define
+
+    Fnum=Delta D E+Delta N1+N2,
+    Gnum=D K+Nh.
+
+The load-bearing polynomial identity is
+
+    D (H0+V) Fnum - Fnum Gnum
+      = D V N2 - Delta N1 Nh - N2 Nh.
+
+Dividing by `sqrt(2) Delta D^2` gives exactly
+`(H0+V)F-F(K+H2)=V S2-S1 H2-S2 H2` for `F=J+S1+S2`.
+Both complete 16-by-4 sides are emitted, not only a residual norm or one state.
+F is not normalized, and no normalization premise is needed below.
+
+The code also checks the full H0 spectral cells formed from old Z parity and
+all four Bell projectors. On P their energies are 2+z; on Q they are
+2+z+Delta. Thus every cross-spectrum difference is one of
+`Delta, Delta-2, Delta+2`. Their absolute values are at least delta on the
+physical domain. This validates the finite Sylvester inverse in Frobenius
+norm without classifying arbitrary additional resonances.
+
+## Phases, norm bounds, and what the arithmetic does not prove
+
+The elementary Bell identities give the compression
+
+    J*V^2J=2a^2 h^2(I+XX)+2a^2(I+YY).
+
+The independent matrix construction tests this identity and all signs. The
+four joint Z,X eigenvalues of H2, after using the analytic link between
+q,Delta,theta,pi,T, are
+
+    (4pi-2theta)/T, 4pi/T, -2theta/T, 0
+
+in order (z,x)=(+,+),(+,-),(-,+),(-,-). Therefore their time-T phases are
+`p^2,1,p^2,1`, where `p=(3+4i)/5`. The program reconstructs the complete
+Gaussian-rational target `W=p(3I+4iXX)/5` from those projectors and checks
+unitarity and commutation with K. The conversion of the eigenvalues to these
+exponential phases is an explicit analytic step, not a computed exponential.
+
+The four positive port terms sum to `r I+V`. Each has norm twice its positive
+coefficient; their onsite incident sum is r on each old vertex and Delta+r
+on each source vertex. The code checks their projectors and decomposition.
+The full static norm has the elementary bound `||Hphys||<=3+Delta+2r`.
+The added cap is less than 2; the old-site total including the literal K block
+is `3+r`. No positive scalar reserve or source interaction is omitted.
+
+From `theta<1, Delta<2`, one has `v=||V||<=r<4/sqrt(T)`.
+From `delta>1/4` and `T>2^128`, `r<delta`, hence the added cap. These are
+analytic inequalities, while the program checks the relevant rational powers
+at the fixed saved T. For the Sylvester inverse and `||J||F=2`,
+
+    ||S1|| <= 2v/delta,
+    ||S2|| <= 2v^2/delta^2,
+    ||H2|| <= 2v^2/delta,
+    ||R|| <= 6v^3/delta^2+4v^4/delta^3.
+
+Hermiticity of H0+V and K+H2 gives, by variation of constants,
+
+    ||exp(-it(H0+V))J-J exp(-it(K+H2))||
+       <=2||F-J||+t||R||.
+
+For `t<=T+24<2T`, the substitutions give
+`12352/sqrt(T)+132096/T`. The code uses the rigorous rational larger bound
+`12352/2^64+132096/T` and checks it is below 2^-49. The extra effective
+window error is at most `24||H2||<384/T`; the emitted rational sum is tested
+below 2^-48 and hence below 2^-44. This checks arithmetic, not the preceding
+functional-analysis facts. The exact actual-time comparator, including the
+complete source output, remains
+
+    exp(-i(T+s)Hphys)J
+      versus J exp(-ir(T+s)) exp(-isK) W exp(-iTK), 0<=s<=24.
+
+Multiplying by the scalar phase does not change the error. It is retained
+explicitly, not discarded as a density-channel gauge. The reference system
+is arbitrary, untouched, and the unhalved joint trace error is at most twice
+the isometry error. No permanent halt or indefinite reuse follows.
+
+## Energy and finite dyadic extension
+
+The code independently multiplies the full Hphys and Hphys squared and checks
+
+    J*Hphys J=K+rI,
+    J*Hphys^2 J=(K+rI)^2+J*V^2J.
+
+These give the proposed initial mean and variance for every old reduced state,
+including inputs entangled with a reference. Static full-Hphys moments are
+then conserved analytically. Old K need not commute with V; its output mean
+error is bounded by the unhalved joint trace error times half its spectral
+width, namely 1 in dimensionless units. Runtime drive work is zero for this
+static mathematical Hamiltonian, but installation, Bell preparation and reset
+are not modeled or declared free. Physical energy/time units remain those of
+the source; multiplying Hamiltonians by E0 gives physical time hbar*T/E0.
+
+The addendum assumes supplied lower dyadic approximants at precision 400 bits,
+each with absolute error at most 2^-400. It does not compute them or authorize
+an equality oracle for deciding floors. The exact inequalities
+`gx,gy>2^-151` follow from `theta>3/4, Delta>3/2,T<2^300` by squaring;
+the checker verifies the finite rational comparisons used in that argument.
+The rounded coefficients remain positive and do not increase the cap. A
+coefficient below 2 has a lower 400-bit dyadic numerator at most 401 bits;
+the common denominator 2^400 also has 401 bits. These are description bounds,
+not emitted values or a certified approximant-construction runtime.
+
+After factoring the actual scalar `rhat=2(gxhat+gyhat)` into the retained
+source comparator, the nonscalar generator perturbation has norm at most
+`5*2^-400` (source projector coefficient 1 and two port sums of norm at most 2).
+The program checks `5(T+24)2^-400<2^-96` and that its sum with the rational
+ideal bound is below 2^-47. No exact second-order cancellation is asserted
+for the rounded model; full-Hamiltonian Duhamel controls its error. The mean
+and second-moment identities persist with the actual rounded coefficients
+because Phi+ remains an exact source zero state. The latter general-coefficient
+statement is derived analytically; the formal code uses the ideal relation.
+
+## Two predeclared discriminators
+
+Changing the minus sign in `-Y2 YB` to plus changes the cleared H2 numerator by
+`4q YY(Delta I+2Z)`. The program emits that full nonzero matrix and checks the
+formula. On old positive parity it has a nonzero coefficient because q>0 and
+Delta+2>0, so rejection is valid at the physical point, not merely at generic
+formal parameters.
+
+Replacing the first Sylvester denominator by bare Delta ignores the old drift.
+For `Abare=-VE/Delta`, the cleared Sylvester defect is `2VEZ`, which the code
+checks explicitly. VE is nonzero on this domain, Z is invertible, and Delta is
+nonzero. This mutation must be rejected at the physical point. Neither mutant
+is a broad no-go statement about other physical couplings or constructions.
+
+## Single proposed execution and failure policy
+
+After a new explicit root GO, invoke `record_one_attempt.py --go-file ROOT_GO.md`.
+The recorder creates only `runs/weak_001`, verifies every prelaunch member,
+captures original and actually executed source plus inputs, then executes the
+capture with Python `-I -B`. It records exact argv/cwd, interpreter binary and
+version, timestamps, actual duration/exit/timeout, full stdout/stderr, partial
+or complete report, and all artifact hashes. It kills the sole child after
+60 seconds. The checker launches no subprocesses. No retry, changed parameter,
+alternative numerical method, or automatic precision increase is authorized.
+
+The fixed cost ceilings are: 16-by-16 maximum matrices; at most 256 matrix
+products; polynomial degree 32 and 256 monomials per entry; two million
+convolution pairs; 30 million guarded integer operations; 65536-bit guarded
+integer operands/results; and 16 MiB report bytes. The ring implementation
+uses exact canonical Fraction coefficients, explicit i^2=-1, and no floats.
+Integer products and sums in coefficient arithmetic are conservatively
+checked before allocation. GCD normalization only reduces their sizes.
+The few fixed rational comparisons can internally cross-multiply at most
+roughly 800-bit integers; this is below the declared integer ceiling and is
+not included in the guarded-operation counter. No OS CPU or RAM quota is
+imposed. These ceilings make failure explicit; no success-time claim is made.
+
+The scientific source has not been imported, executed, or tested by this
+packet. Metadata validation may parse its AST, hash bytes and verify copied
+sources. Such metadata evidence must not be represented as mathematical
+execution. A failed bound, source defect, timeout, or cap exhaustion is to be
+preserved and diagnosed rather than silently repaired and rerun.

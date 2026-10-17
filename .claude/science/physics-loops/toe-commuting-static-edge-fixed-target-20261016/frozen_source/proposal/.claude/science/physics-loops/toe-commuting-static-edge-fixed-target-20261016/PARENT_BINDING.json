@@ -1,0 +1,15 @@
+{
+  "canonical_binding_complete": false,
+  "direct_mathematical_parents": [],
+  "explicit_problem_data": [
+    "K=2I+ZZ",
+    "fixed W",
+    "fixed T",
+    "w=24",
+    "supplied calibrated positive XX edge"
+  ],
+  "prior_target_theorem_is_context_only": true,
+  "canonical_graph_disposition": null,
+  "git_ancestry_is_not_mathematical_dependency": true,
+  "mediator_proposal_composed": false
+}

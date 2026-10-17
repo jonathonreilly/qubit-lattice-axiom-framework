@@ -1,0 +1,564 @@
+--- machinery_reference/build_packet.py
++++ build_packet.py
+@@ -1,31 +1,41 @@
+-"""Build one supplied-static-edge source packet; never execute historical science."""
++"""Build one self-contained weak-mediator source packet; never replay science."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import hashlib,json,sys
+ D=Path(sys.argv[1]).resolve();N=D.parent
+-P=D/'proposal';PK='.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016'
+-NOTE='docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/commuting_static_edge_fixed_target_2026_10_16.py'
++P=D/'proposal';PK='.claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016'
++NOTE='docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++SCRIPT='scripts/weak_mediator_fixed_target_2026_10_16.py'
+ ROOTS={
+- 'endpoint_finite_quantum_actuator_candidate':('FREEZE.json','0677ed775ee782608fa5bccdf6e3e24891f1cf2833394196ec240b309a5ad0b2','members'),
+- 'commuting_target_static_edge_exposed_check':('FREEZE.json','66f573eeada95e368ae1ac464cf2ebdb5f20abd951804e48554662f67b2789ce','files'),
+- 'commuting_target_static_edge_exposed_check/author_cross_review':('FREEZE.json','25c099e61df3fda1322ed2ed856e0c16773c0f139aebc45887a7560382996a67','members'),
+- 'commuting_static_edge_check_proposal':('PRELAUNCH_FREEZE.json','68be4520b91aff3614ff436dad0c16bc550170dd6e36e623af85b9325a540b67','members'),
+- 'commuting_static_edge_root_review':('FREEZE.json','151c7b3c3e3cd9ad88670fb5606f8bde54f1b0d22b32b33ea874d22e966d4b58','members'),
++ 'weak_mediator_candidate':('SOURCE_FREEZE.json','551fab5e4c1876dfff3d807ebf837a8c23f3d28724a554049faa8b6ab92d3f9c','files'),
++ 'weak_mediator_exposed_check':('FINAL_FREEZE.json','ef8dce286398c515be38142b54917e2b82d8ea3363709f78f37e70f11a71511c','files'),
++ 'weak_mediator_finite_compiler_exposed_check':('FINAL_FREEZE.json','ecf8e0b72ed47c9c112df9d343edb14229c45406c8103201542f30c12fac60f4','files'),
++ 'weak_mediator_window_reuse_exposed_check':('FINAL_FREEZE.json','0f0edb6a806a238ef2dfaf01f52ca97b2bae1eb73f8871eed05d9ac5a05fe6d7','files'),
++ 'weak_mediator_structured_coefficients_exposed_check':('FINAL_FREEZE.json','724d308b4222f082dff7d6d4044f1806541d0741e3f57917e6d583e886217a79','files'),
++ 'weak_mediator_check_proposal':('OUTPUT_FREEZE.json','d26a5fb145c8d772bb037f770b71fd8fc3ac5b85c7c24d75bc26ae40c16ec929','members'),
++ 'weak_mediator_finite_compiler_proposal':('OUTPUT_FREEZE.json','96b363b56e2b42b11352b8204492c98f0da36be5b98ccb190d476da802054e57','members'),
++ 'weak_mediator_root_review':('FREEZE.json','44dc1eff1e1107f2253d32cf64cdfb6fcff7307e74ec75debde1d671accac12b','files'),
++ 'weak_mediator_saved_certificate_check_proposal':('FINAL_FREEZE.json','c7a2385348e6e73f604cac4c91aceab03c2c704462bc5ed1d078f7646e1309e9','files'),
+ }
+-EXTRA_DIRS=['endpoint_finite_quantum_actuator_candidate/runs/metadata_001',
+- 'commuting_target_static_edge_exposed_check/metadata_run',
+- 'commuting_static_edge_check_proposal/runs/metadata_001',
+- 'commuting_static_edge_check_proposal/runs/edge_001','runs/static_edge_root_acceptance']
+-EXTRA_FILES=['commuting_static_edge_check_proposal/ROOT_GO.md',
+- 'bootstrap/record_commuting_static_edge_acceptance.py','review_run.py']
+-ACCEPTANCES={'commuting_static_edge_root_review/ACCEPTANCE.json':'f954c36d04380ee49edac71a5dd7cb10e31142d3f3ca03f4da71f5609c04446b'}
++EXTRA_DIRS=['runs/weak_mediator_root_acceptance','weak_mediator_saved_certificate_check_execution/runs/check_001']
++EXTRA_FILES=['bootstrap/record_weak_mediator_acceptance.py','review_run.py','weak_mediator_saved_certificate_check_GO.json',
++ 'weak_mediator_candidate/DYADIC_ADDENDUM.md','weak_mediator_candidate/SCALING_ADDENDUM.md',
++ 'weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md','weak_mediator_candidate/WINDOW_REUSE_ADDENDUM.md',
++ 'weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md']
++ACCEPTANCES={'weak_mediator_root_review/ACCEPTANCE.json':'ba201403a60d1c94751d1550f14d59622c86920ced74ebae21f5f51f5752731b'}
+ BODIES=[
+- ('original_author_derivation','endpoint_finite_quantum_actuator_candidate/DERIVATION.md'),
+- ('initial_pre_author_analysis','commuting_target_static_edge_exposed_check/ANALYSIS.md'),
+- ('complete_exposed_cross_review','commuting_target_static_edge_exposed_check/author_cross_review/REVIEW.md'),
+- ('preserved_N1_FAIL_checklist','commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md'),
+- ('controlling_root_qualifications','commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md'),
++ ('original_proposal','weak_mediator_candidate/PROPOSAL.md'),
++ ('dyadic_addendum','weak_mediator_candidate/DYADIC_ADDENDUM.md'),
++ ('scaling_addendum','weak_mediator_candidate/SCALING_ADDENDUM.md'),
++ ('finite_compiler_addendum','weak_mediator_candidate/FINITE_COMPILER_ADDENDUM.md'),
++ ('window_reuse_addendum','weak_mediator_candidate/WINDOW_REUSE_ADDENDUM.md'),
++ ('structured_coefficient_addendum','weak_mediator_candidate/STRUCTURED_COEFFICIENT_ADDENDUM.md'),
++ ('original_analytic_review','weak_mediator_exposed_check/REVIEW.md'),
++ ('dyadic_scaling_analytic_review','weak_mediator_exposed_check/ADDENDUM_REVIEW.md'),
++ ('finite_compiler_analytic_review','weak_mediator_finite_compiler_exposed_check/REVIEW.md'),
++ ('window_reuse_analytic_review','weak_mediator_window_reuse_exposed_check/REVIEW.md'),
++ ('structured_analytic_review','weak_mediator_structured_coefficients_exposed_check/REVIEW.md'),
++ ('controlling_root_qualification','weak_mediator_root_review/QUALIFICATION.md'),
+ ]
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+ def put(rel,b):
+@@ -45,43 +55,40 @@
+ assert not P.exists(),'Refuse overwrite of an existing proposal'
+ for folder,(filename,pin,key) in ROOTS.items():
+  f=N/folder/filename;raw=add(f,role='source_freeze');assert sha(raw)==pin
+- rows=read(f)[key];selected=[]
++ rows=read(f)[key];selected=[];member_aliases={}
+  assert len({r['path'] for r in rows})==len(rows)
+  for row in rows:
+-  rel=row['path'];path=N/folder/rel;path.resolve().relative_to(N/folder)
++  original=row['path'];path=(N/folder/original).resolve();path.relative_to(N/folder)
+   b=path.read_bytes();assert ident(b)=={k:row[k] for k in ['bytes','sha256']},str(path)
+-  add(path);selected.append(rel)
++  alias=str(path.relative_to(N));add(path);selected.append(original);member_aliases[original]=alias
+  freeze_rows.append({'folder':folder,'alias':folder+'/'+filename,'sha256':pin,'members':len(rows),
+-  'key':key,'complete_members':True,'selected_members':selected,'all_original_members_verified_at_build':True})
++  'key':key,'complete_members':True,'selected_members':selected,'member_aliases':member_aliases,'all_original_members_verified_at_build':True})
+ for folder in EXTRA_DIRS:
+  for p in sorted((N/folder).rglob('*')):
+   if p.is_file():add(p,role='actual_terminal_source_receipt_or_full_stream')
+ for path in EXTRA_FILES:add(N/path,role='actual_original_source_or_go_record')
+ 
+-# Six actual executions, not duplicate aliases from copied inventories.
++# Ten distinct original executions: two author science, seven source metadata, one root record.
+ specs=[
+- ('endpoint_finite_quantum_actuator_candidate/runs/metadata_001','legacy_metadata',
+-  'endpoint_finite_quantum_actuator_candidate/seal_metadata.py','source_at_launch.py',1),
+- ('commuting_target_static_edge_exposed_check/metadata_run','initial_metadata',
+-  'commuting_target_static_edge_exposed_check/freeze_metadata.py','source_at_launch.py',2),
+- ('commuting_target_static_edge_exposed_check/author_cross_review/metadata_run','captured_metadata',
+-  'commuting_target_static_edge_exposed_check/author_cross_review/capture_metadata.py','source_at_launch.py',2),
+- ('commuting_static_edge_check_proposal/runs/metadata_001','legacy_metadata',
+-  'commuting_static_edge_check_proposal/seal_metadata.py','source_at_launch.py',1),
+- ('commuting_static_edge_check_proposal/runs/edge_001','scientific_edge',
+-  'commuting_static_edge_check_proposal/check_static_edge.py','source_at_launch/check_static_edge.py',3),
+- ('runs/static_edge_root_acceptance','root_review_run',
+-  'bootstrap/record_commuting_static_edge_acceptance.py','executed_source.py',1),
++ ('weak_mediator_exposed_check/runs/original_inspection','analytic_metadata','weak_mediator_exposed_check/inspect_original.py','executed_source.py',1),
++ ('weak_mediator_exposed_check/runs/addendum_inspection','analytic_metadata','weak_mediator_exposed_check/inspect_addendum.py','executed_source.py',1),
++ ('weak_mediator_finite_compiler_exposed_check/runs/metadata_inspection','analytic_metadata','weak_mediator_finite_compiler_exposed_check/inspect_sources.py','executed_source.py',1),
++ ('weak_mediator_window_reuse_exposed_check/runs/metadata_inspection','analytic_metadata','weak_mediator_window_reuse_exposed_check/inspect_sources.py','executed_source.py',1),
++ ('weak_mediator_structured_coefficients_exposed_check/runs/metadata_inspection','analytic_metadata','weak_mediator_structured_coefficients_exposed_check/inspect_sources.py','executed_source.py',1),
++ ('weak_mediator_check_proposal/runs/metadata_001','legacy_metadata','weak_mediator_check_proposal/seal_metadata.py','source_at_launch.py',3),
++ ('weak_mediator_finite_compiler_proposal/runs/metadata_001','legacy_metadata','weak_mediator_finite_compiler_proposal/seal_metadata.py','source_at_launch.py',3),
++ ('weak_mediator_check_proposal/runs/weak_001','scientific_symbolic','weak_mediator_check_proposal/check_weak_mediator.py','source_at_launch/check_weak_mediator.py',3),
++ ('weak_mediator_finite_compiler_proposal/runs/compiler_001','scientific_compiler','weak_mediator_finite_compiler_proposal/compile_coefficients.py','source_at_launch/compile_coefficients.py',3),
++ ('runs/weak_mediator_root_acceptance','root_review_run','bootstrap/record_weak_mediator_acceptance.py','executed_source.py',1),
+ ]
+ contracts=[]
+ for folder,schema,original,snapshot,index in specs:
+  alias=folder+'/EXECUTION.json';r=read(N/alias)
+  assert alias in sources and r['exit_code']==0
+  source=add(N/original,role='original_source_of_actual_execution')
+- captured=add(N/folder/snapshot,role='actual_source_at_launch')
+- assert source==captured
+- executed=folder+'/'+snapshot if schema in {'captured_metadata','scientific_edge'} else original
+- assert r['argv'][index]==str(N/executed)
++ captured=add(N/folder/snapshot,role='actual_source_at_launch');assert source==captured
++ executed=folder+'/'+snapshot if schema.startswith('scientific_') else original
++ assert r['argv'][index]==str(N/executed),(folder,r['argv'])
+  files=[]
+  for p in sorted((N/folder).rglob('*')):
+   if p.is_file() and p.name!='EXECUTION.json':
+@@ -89,11 +96,12 @@
+  if schema=='root_review_run':
+   b=add(N/'review_run.py');files.append({'alias':'review_run.py',**ident(b)})
+   assert ident(b)=={k:r['recorder'][k] for k in ['bytes','sha256']}
+- start=r['start_utc'];end=r['end_utc'];assert start<end and r['elapsed_seconds']>=0
++ start=r.get('start_utc',r.get('started_at'));end=r.get('end_utc',r.get('completed_at'))
++ assert start<end and r['elapsed_seconds']>=0
+  contracts.append({'alias':alias,'schema':schema,'record':r,'original_alias':original,
+   'snapshot_alias':folder+'/'+snapshot,'executed_alias':executed,'argv_source_index':index,
+   'source_sha256':sha(source),'files':files,
+-  'scope':'single author scientific fixture' if schema=='scientific_edge' else 'metadata only',
++  'scope':'single author scientific execution' if schema.startswith('scientific_') else 'metadata only',
+   'recorded_cwd':r.get('cwd'),'cwd_missing_in_original_receipt':'cwd' not in r})
+ for alias,h in ACCEPTANCES.items():assert sha((N/alias).read_bytes())==h
+ note=(D/'packet_text/WRAPPER.md').read_bytes();wrapper_len=len(note);maps=[]
+@@ -102,40 +110,47 @@
+  note+=('\n\n<!-- Unchanged complete source: '+name+' -->\n\n').encode();start=len(note);note+=raw
+  maps.append({'name':name,'source':alias,'container':NOTE,'start_byte_inclusive':start,'end_byte_exclusive':len(note),**ident(raw)})
+ trailer_start=len(note)
+-note+=b'\n\nThe controlling wrapper and root qualifications govern scope. Negative material remains N1FAIL partial-attempt; no retained status or new publication approval is conferred.\n'
++note+=b'\n\nThe new wrapper and final root qualification control the historical status and scope. Source integrity is not proof, native supply, canonical binding or retained status.\n'
+ put(NOTE,note)
+ js(PK+'/BODY_MAP.json',{'new_wrapper_bytes':[0,wrapper_len],'trailing_wrapper_bytes':[trailer_start,len(note)],'bodies':maps})
+-js(PK+'/SOURCE_MANIFEST.json',{'schema':'commuting_static_edge_source_archive_v1','sources':list(sources.values()),
++js(PK+'/SOURCE_MANIFEST.json',{'schema':'weak_mediator_source_archive_v1','sources':list(sources.values()),
+  'archive_rule':'Complete selected original freeze inventories and bounded actual execution closure; bytes deduplicated. No prior publication archive traversal.'})
+ js(PK+'/ARCHIVE_INDEX.json',{'objects':list(objects.values()),'recursive_prior_publication_archives':False})
+ js(PK+'/FROZEN_SOURCE_CLOSURE.json',{'roots':freeze_rows})
+-js(PK+'/EXECUTION_CONTRACTS.json',{'receipts':contracts,'new_scientific_executions':0,'unique_historical_scientific_runs':1})
++js(PK+'/EXECUTION_CONTRACTS.json',{'receipts':contracts,'new_scientific_executions':0,'unique_historical_author_scientific_runs':2})
++additional=[]
++for folder,expected_exit,purpose in [
++ ('weak_mediator_saved_certificate_check_proposal/runs/metadata_001',1,'preserved metadata artifact-path schema failure'),
++ ('weak_mediator_saved_certificate_check_proposal/runs/metadata_002',0,'corrected metadata inspection, no science'),
++ ('weak_mediator_saved_certificate_check_execution/runs/check_001',0,'separate saved-certificate arithmetic, no compiler or series replay')]:
++ alias=folder+'/EXECUTION.json';record=read(N/alias);assert record['exit_code']==expected_exit
++ additional.append({'alias':alias,'record':record,'expected_exit_code':expected_exit,'purpose':purpose,
++  'files':[{'alias':str(p.relative_to(N)),**ident(add(p))} for p in sorted((N/folder).rglob('*')) if p.is_file() and p.name!='EXECUTION.json']})
++js(PK+'/ADDITIONAL_EVIDENCE.json',{'records':additional,'root_acceptance_predates_this_arithmetic_check':True,
++ 'saved_certificate_scientific_executions':1,'author_programs_replayed':0,'independence':'source-exposed report-derived implementation; same model/shared Python integers; saved endpoint truth remains conditional',
++ 'checker_receipt_sha256':'73c9f6544f7530f3e8106b6f4f1dc523098e2bf107312bae88644bf8a88358a0',
++ 'checker_result_sha256':'ea2b9b99c64e6e3eecadde5a9eec34a50a589afb26a0ce40f1e378d0dab3fdb5'})
+ js(PK+'/PARENT_BINDING.json',{'canonical_binding_complete':False,'direct_mathematical_parents':[],
+- 'explicit_problem_data':['K=2I+ZZ','fixed W','fixed T','w=24','supplied calibrated positive XX edge'],
+- 'prior_target_theorem_is_context_only':True,'canonical_graph_disposition':None,
+- 'git_ancestry_is_not_mathematical_dependency':True,'mediator_proposal_composed':False})
++ 'explicit_problem_data':['K=2I+ZZ','W=((9+12i)I+(-16+12i)XX)/25','specified T or T_m=2^(2m+32)',
++ 'supplied Bell source and four positive XX/YY ports on a square'],
++ 'self_contained_conditional_root_theorem':True,'canonical_graph_disposition':None,
++ 'git_ancestry_is_not_mathematical_dependency':True,'other_campaign_theorems_composed':False})
+ state={k:None for k in ['source_wrapper_review','source_publication_binding','canonical_integration','current_base_observation','canonical_review','staged_review','primary_execution','publication_action','retained_audit']}
+ state.update(scientific_programs_run_this_draft=0,scientific_replays=0,
+- actual_scientific_source_acceptance={'source':'commuting_static_edge_root_review/ACCEPTANCE.json','sha256':next(iter(ACCEPTANCES.values()))})
++ actual_scientific_source_acceptance={'source':'weak_mediator_root_review/ACCEPTANCE.json','sha256':next(iter(ACCEPTANCES.values()))})
+ js(PK+'/PUBLICATION_STATE.json',state)
+ js(PK+'/ACTUAL_BINDING.json',{'kind':'unbound_source_only_proposal','source_review':None,'base_observation':None,'canonical_review':None,'canonical_parent_binding':None,'staged_review':None,'publication':None})
+-js(PK+'/NO_GO_STATUS.json',{'packet_status':'FAIL','N1':'FAIL','disposition':'partial-attempt-with-named-untested-routes',
+- 'narrow_invariant_validity_separate':True,'positive_theorem_separate':True,'new_retained_negative_authority':False})
+ for name in ['PR_BODY.md','BINDING_CONTRACT.md','CLAIM_STATUS_CERTIFICATE.md','EVIDENCE_SCOPE.md']:put(PK+'/'+name,(D/'packet_text'/name).read_bytes())
+-# Keep the exact checklist linkable as a sidecar as well as an immutable body.
+-put(PK+'/NO_GO_DISCIPLINE_CHECKLIST.md',(N/BODIES[3][1]).read_bytes())
+-for name in ['APPROACH_REGISTRY.md','NO_GO_LEDGER.md']:
+- put(PK+'/'+name,(N/'commuting_target_static_edge_exposed_check/author_cross_review'/name).read_bytes())
+-skill_rel='sources/current_main/docs/ai_methodology/skills/no-go-discipline/SKILL.md'
+-put(PK+'/'+skill_rel,(N/'commuting_target_static_edge_exposed_check/author_cross_review'/skill_rel).read_bytes())
+ js(PK+'/EXPOSURE.json',{'source_exposed':True,'same_selected_model':True,'blind_independence':False,
+- 'new_scientific_executions':0,'historical_scientific_replays':0,'historical_author_scientific_runs':1,
+- 'independent_scientific_replications':0,'actual_author_seconds':0.18528820807114244,
+- 'wall_limit_seconds':60,'cpu_quota':None,'ram_quota':None,'retained_audit':False})
++ 'new_scientific_executions':0,'historical_scientific_replays':0,'historical_author_scientific_runs':2,
++ 'independent_scientific_replications':0,'actual_author_seconds':[0.2838803748600185,0.131953792180866],
++ 'separate_saved_certificate_check_runs':1,'saved_certificate_check_seconds':0.07717579184100032,
++ 'separate_scopes':['finite symbolic algebra','fixed two-scenario rational coefficients'],
++ 'wall_limit_seconds_each':60,'cpu_quota':None,'ram_quota':None,'retained_audit':False})
+ inputs=[]
+ for p in sorted(P.rglob('*')):
+  if p.is_file():inputs.append({'path':str(p.relative_to(P)),**ident(p.read_bytes())})
+-js(PK+'/INPUT_MANIFEST.json',{'schema':'commuting_static_edge_publication_inputs_v1','inputs':inputs})
++js(PK+'/INPUT_MANIFEST.json',{'schema':'weak_mediator_publication_inputs_v1','inputs':inputs})
+ msha=sha((P/PK/'INPUT_MANIFEST.json').read_bytes())
+ replacements={'__MANIFEST_SHA256__':msha,'__AUDIT_INPUT_PATHS__':repr([r['path'] for r in inputs]+[PK+'/INPUT_MANIFEST.json']),
+  '__EXPECTED_BODIES__':repr({r['name']:r['sha256'] for r in maps}),
+--- machinery_reference/primary_template.py
++++ primary_template.py
+@@ -2,8 +2,8 @@
+ from pathlib import Path,PurePosixPath
+ import hashlib,json
+ REPO=Path(__file__).resolve().parents[1]
+-NOTE='docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-PACKET='.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016'
++NOTE='docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++PACKET='.claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016'
+ AUDIT_TIMEOUT_SEC=60
+ AUDIT_INPUT_PATHS=__AUDIT_INPUT_PATHS__
+ MANIFEST_SHA256='__MANIFEST_SHA256__'
+@@ -25,11 +25,12 @@
+  return alias
+ def verify_receipt(src,contract):
+  r=json.loads(src(contract['alias']))
+- require(r==contract['record'],'Exact heterogeneous original receipt, including all recorded limits')
+- require(r['exit_code']==0 and r['start_utc']<r['end_utc'] and r['elapsed_seconds']>=0,'Actual successful chronology')
++ require(r==contract['record'],'Exact heterogeneous original receipt, including recorded limits')
++ start=r.get('start_utc',r.get('started_at'));end=r.get('end_utc',r.get('completed_at'))
++ require(isinstance(start,str) and isinstance(end,str) and r['exit_code']==0 and start<end and r['elapsed_seconds']>=0,'Actual successful chronology')
+  require(r.get('timeout',r.get('timed_out',False)) is False,'Original timeout state')
+  require(renewal_alias(r['argv'][contract['argv_source_index']])==contract['executed_alias'],'Actually launched source path and argv position')
+- require(r.get('cwd')==contract['recorded_cwd'] and ('cwd' not in r)==contract['cwd_missing_in_original_receipt'],'Do not fabricate absent historical cwd')
++ require(r.get('cwd')==contract['recorded_cwd'] and ('cwd' not in r)==contract['cwd_missing_in_original_receipt'],'Do not invent absent historical cwd')
+  original=src(contract['original_alias']);snapshot=src(contract['snapshot_alias'])
+  require(original==snapshot and digest(original)==contract['source_sha256'],'Actual original and separately captured source bytes')
+  for row in contract['files']:identity(src(row['alias']),row)
+@@ -37,19 +38,24 @@
+  if schema=='legacy_metadata':
+   require(digest(snapshot)==r['source_sha256'],'Legacy source hash field')
+   for name in ['stdout','stderr']:require(digest(src(folder+'/'+name+'.txt'))==r[name+'_sha256'],'Legacy full stream hash')
+- elif schema in {'initial_metadata','captured_metadata'}:
+-  for field in ['source_at_launch','recorder_at_launch','stdout','stderr']:
++ elif schema=='analytic_metadata':
++  for field in ['child_source_at_launch','source_capture','recorder_source','stdout','stderr']:
+    identity(src(renewal_alias(r[field]['path'])),r[field])
+-  require(r['source_unchanged_during_run'] is True,'Metadata source unchanged during actual run')
+- elif schema=='scientific_edge':
+-  require(r['scientific_launches']==1 and r['prelaunch_verified'] is True and r['source_unchanged'] is True,'Exactly one actual author fixture')
+-  require(r['argv'][1:3]==['-I','-B'] and r['argv'][5]==r['executed_inputs']['path'],'Captured isolated source and input argv')
++  require(r['child_source_unchanged'] is True,'Analytic metadata source unchanged')
++  require(r.get('captured_source_matches',r.get('source_capture_bytes_match')) is True,'Captured source equality')
++ elif schema in {'scientific_symbolic','scientific_compiler'}:
++  require(r['scientific_launches']==1 and r['prelaunch_verified'] is True and r['source_unchanged'] is True,'One actual author execution per program')
++  require(r['argv'][1:3]==['-I','-B'],'Isolated captured source launch')
++  if schema=='scientific_symbolic':require(r['argv'][4:6]==['--inputs',r['executed_inputs']['path']],'Symbolic input supplied by argv')
++  else:require(r['argv'][4]=='--output' and r['executed_inputs']['path'].endswith('/source_at_launch/PARAMETERS.json'),'Compiler fixed sibling parameters, not an invented argv input')
+   require(r['wall_limit_seconds']==60 and r['cpu_quota'] is None and r['ram_quota'] is None,'Actual wall limit; no CPU/RAM quota')
+   for field in ['original_source','executed_source','executed_inputs','go_record']:
+    identity(src(renewal_alias(r[field]['path'])),r[field])
+-  identity(src(folder+'/recorder_at_launch.py'),r['recorder_source'])
++  identity(src(folder+'/PRELAUNCH_FREEZE_at_launch.json'),r['prelaunch_freeze'])
+   for row in r['artifacts']:identity(src(folder+'/'+row['path']),row)
+-  for name in ['stdout','stderr']:identity(src(folder+'/'+name+'.txt'),r[name])
++  recorder_row=next(x for x in r['artifacts'] if x['path']=='recorder_at_launch.py')
++  identity(src(folder+'/recorder_at_launch.py'),recorder_row)
++  require(r['executed_source_after']=={k:r['executed_source'][k] for k in ['bytes','sha256']},'Actual unchanged source after execution')
+  elif schema=='root_review_run':
+   for field in ['child_source_at_launch','source_capture','recorder','stdout','stderr']:
+    identity(src(renewal_alias(r[field]['path'])),r[field])
+@@ -58,7 +64,7 @@
+  return r
+ def verify_payload(read):
+  raw=read(PACKET+'/INPUT_MANIFEST.json');require(digest(raw)==MANIFEST_SHA256,'Input manifest pin')
+- manifest=json.loads(raw);require(manifest['schema']=='commuting_static_edge_publication_inputs_v1','Input schema')
++ manifest=json.loads(raw);require(manifest['schema']=='weak_mediator_publication_inputs_v1','Input schema')
+  rows=manifest['inputs'];paths=[r['path'] for r in rows]
+  require(len(paths)==len(set(paths)) and set(AUDIT_INPUT_PATHS)==set(paths)|{PACKET+'/INPUT_MANIFEST.json'},'Exact declared input closure')
+  for row in rows:identity(read(row['path']),row)
+@@ -66,9 +72,9 @@
+  for field in ['claim_type: bounded_theorem','actual_current_surface_status: conditional-support','source_science_acceptance_complete: true','canonical_parent_binding_complete: false','audit_required_before_effective_retained: true','bare_retained_allowed: false']:
+   require(field in header,'Draft scope field '+field)
+  require(b'Claim type: bounded_theorem.' in note,'Explicit prose claim type')
+- require(b'**Primary runner:** `scripts/commuting_static_edge_fixed_target_2026_10_16.py`' in note,'Explicit primary runner label')
++ require(b'**Primary runner:** `scripts/weak_mediator_fixed_target_2026_10_16.py`' in note,'Explicit primary runner label')
+  maps=json.loads(read(PACKET+'/BODY_MAP.json'))['bodies']
+- require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==5,'Five unchanged body roles')
++ require({r['name']:r['sha256'] for r in maps}==EXPECTED_BODIES and len(maps)==12,'Twelve unchanged body roles')
+  previous=-1
+  for row in maps:
+   a,b=row['start_byte_inclusive'],row['end_byte_exclusive']
+@@ -91,49 +97,75 @@
+   members=json.loads(raw)[f['key']];require(len(members)==f['members'],'Original freeze member count')
+   table={r['path']:r for r in members};require(len(table)==len(members),'Unique original freeze members')
+   require(set(f['selected_members'])==set(table) and f['complete_members'] is True,'Complete selected original inventories')
+-  for path in f['selected_members']:identity(src(f['folder']+'/'+path),table[path])
++  for path in f['selected_members']:
++   alias=renewal_alias(path) if path.startswith('/') else f['folder']+'/'+path
++   require(f['member_aliases'][path]==alias and alias.startswith(f['folder']+'/'),'Literal original freeze paths normalized within root')
++   identity(src(alias),table[path])
+  for row in maps:require(note[row['start_byte_inclusive']:row['end_byte_exclusive']]==src(row['source']),'Original body recovery')
+- require(read(PACKET+'/NO_GO_DISCIPLINE_CHECKLIST.md')==src('commuting_target_static_edge_exposed_check/author_cross_review/NO_GO_DISCIPLINE_CHECKLIST.md'),'Complete unchanged negative sidecar')
+  contracts=json.loads(read(PACKET+'/EXECUTION_CONTRACTS.json'))['receipts']
+- require(len(contracts)==6 and len({r['alias'] for r in contracts})==6,'Six unique historical execution contracts')
++ require(len(contracts)==10 and len({r['alias'] for r in contracts})==10,'Ten unique historical execution contracts')
+  for contract in contracts:verify_receipt(src,contract)
+- require(sum(c['schema']=='scientific_edge' for c in contracts)==1,'One historical scientific execution, no duplicate alias counting')
+- acceptance_alias='commuting_static_edge_root_review/ACCEPTANCE.json'
+- require(EXPECTED_ACCEPTANCES=={acceptance_alias:'f954c36d04380ee49edac71a5dd7cb10e31142d3f3ca03f4da71f5609c04446b'},'Exact actual positive disposition')
++ require(sum(c['schema'].startswith('scientific_') for c in contracts)==2,'Two distinct author scientific executions')
++ additional=json.loads(read(PACKET+'/ADDITIONAL_EVIDENCE.json'))
++ require(len(additional['records'])==3 and additional['root_acceptance_predates_this_arithmetic_check'] is True,'Separate additive evidence chronology')
++ for item in additional['records']:
++  r=json.loads(src(item['alias']));require(r==item['record'] and r['exit_code']==item['expected_exit_code'],'Preserve exact success and failure records')
++  for row in item['files']:identity(src(row['alias']),row)
++  if 'source_capture' in r:identity(src(renewal_alias(r['source_capture']['path'])),r['source_capture'])
++  if 'scope' in r:
++   require(r['started_at']<r['completed_at'] and r['source_unchanged'] is True,'Actual saved-check metadata chronology')
++   identity(src(renewal_alias(r['source_capture']['path'])),r['child_source_at_launch'])
++   for field in ['recorder_source','stdout','stderr']:identity(src(renewal_alias(r[field]['path'])),r[field])
++   require(r['argv'][3]==r['child_source_at_launch']['path'],'Original metadata argv, failed source recovered from capture')
++  else:
++   require(digest(src(item['alias']))==additional['checker_receipt_sha256']=='73c9f6544f7530f3e8106b6f4f1dc523098e2bf107312bae88644bf8a88358a0','Actual separate checker receipt')
++   require(r['scientific_launches']==r['maximum_attempts']==1 and r['timeout'] is False and r['error'] is None,'One completed saved-certificate check')
++   require(r['launch_started_at']<r['launch_completed_at'] and r['elapsed_seconds']==0.07717579184100032,'Actual separate checker elapsed time')
++   require(r['wall_limit_seconds']==60 and r['cpu_quota'] is None and r['ram_quota'] is None,'Checker actual limits')
++   for field in ['original_source_at_launch','executed_source_at_launch','recorder_capture','recorder_source','report_capture','parameters_capture','root_go','root_go_capture','proposal_freeze']:
++    identity(src(renewal_alias(r[field]['path'])),r[field])
++   require(r['argv'][3]==r['executed_source_at_launch']['path'] and r['argv'][5]==r['report_capture']['path'] and r['argv'][7]==r['parameters_capture']['path'],'Checker captured argv')
++   for row in r['artifacts']:identity(src(renewal_alias(row['path'])),row)
++   result_raw=src('weak_mediator_saved_certificate_check_execution/runs/check_001/output/RESULT.json')
++   require(digest(result_raw)==additional['checker_result_sha256']=='ea2b9b99c64e6e3eecadde5a9eec34a50a589afb26a0ce40f1e378d0dab3fdb5','Exact additive result')
++   result=json.loads(result_raw)
++   require(result['check_count']==429 and len(result['checks'])==429 and len(result['scenarios'])==2 and result['error'] is None,'Recorded arithmetic-check result only')
++   require(result['author_compiler_imported_or_reexecuted'] is False and result['series_reconstructed'] is False,'Separate conditional endpoint check scope')
++ acceptance_alias='weak_mediator_root_review/ACCEPTANCE.json'
++ require(EXPECTED_ACCEPTANCES=={acceptance_alias:'ba201403a60d1c94751d1550f14d59622c86920ced74ebae21f5f51f5752731b'},'Exact actual root disposition')
+  decision_raw=src(acceptance_alias);require(digest(decision_raw)==EXPECTED_ACCEPTANCES[acceptance_alias],'Actual root science decision pin')
+  decision=json.loads(decision_raw)
+- require(decision['root_complete_argument_and_checker_source_read'] is True and decision['retained_audit'] is False,'Qualified source decision only')
+- require(decision['actual_publication'] is None and decision['independent_scientific_executions']==0,'No publication or independent fixture invented')
+- require(decision['disposition']=='accept_conditional_positive_supplied_edge_for_regular_review; preserve_negative_N1_FAIL_partial_attempt','Positive/negative dispositions kept separate')
+- for field in ['qualifications','actual_scientific_execution','actual_report']:
+-  identity(src(renewal_alias(decision[field]['path'])),decision[field])
+- root_receipt=json.loads(src('runs/static_edge_root_acceptance/EXECUTION.json'))
+- actual_root_output=json.loads(src(renewal_alias(root_receipt['stdout']['path'])))
+- identity(decision_raw,actual_root_output['acceptance'])
+- identity(src('commuting_static_edge_root_review/FREEZE.json'),actual_root_output['freeze'])
+- fixture=json.loads(src('commuting_static_edge_check_proposal/runs/edge_001/EXECUTION.json'))
+- require(fixture['elapsed_seconds']==0.18528820807114244,'Preserve actual author elapsed time')
+- report=json.loads(src('commuting_static_edge_check_proposal/runs/edge_001/output/REPORT.json'))
+- require(report['source_sha256']==fixture['executed_source']['sha256'] and report['input_sha256']==fixture['executed_inputs']['sha256'],'Report actual source/input bindings')
+- require(len(report['checks'])==60 and all(r['holds'] for r in report['checks']),'Recorded assertions only, no arithmetic replay')
+- require(report['arithmetic_statistics']=={'maximum_integer_bits':16241,'rational_operations':38343,'integer_operations':115492},'Actual whole-run statistics')
+- require(report['computed']['coefficient_stage_arithmetic_statistics']['rational_operations']==127,'Coefficient count is not whole-run count')
+- require(len(report['analytic_premises_not_computed'])==7,'Analytic-premise boundary preserved')
++ require(decision['status']=='QUALIFIED_CONDITIONAL_SOURCE_ACCEPTED_PUBLICATION_PENDING' and decision['retained_audit'] is False,'Qualified source decision only')
++ require(decision['publication'] is None and decision['canonical_integration'] is None,'No publication or canonical binding invented')
++ require(decision['source_exposed_checks'] is True and decision['blind_review'] is False,'Actual source exposure')
++ identity(src(renewal_alias(decision['qualification']['path'])),decision['qualification'])
++ root_receipt=json.loads(src('runs/weak_mediator_root_acceptance/EXECUTION.json'))
++ root_output=json.loads(src(renewal_alias(root_receipt['stdout']['path'])))
++ for key in ['acceptance','qualification','freeze']:identity(src(renewal_alias(root_output[key]['path'])),root_output[key])
++ require(root_output['scientific_replays']==0,'Root acceptance metadata did not replay science')
++ for row in decision['sources']:identity(src(renewal_alias(row['path'])),row)
++ for row in decision['analytic_reviews']:
++  for key in ['freeze','review','addendum_review']:
++   if key in row:identity(src(renewal_alias(row[key]['path'])),row[key])
++ for row in decision['actual_scientific_executions']:
++  for key in ['receipt','output_freeze','report']:identity(src(renewal_alias(row[key]['path'])),row[key])
++  r=json.loads(src(renewal_alias(row['receipt']['path'])));report=json.loads(src(renewal_alias(row['report']['path'])))
++  require(r['elapsed_seconds']==row['elapsed_seconds'],'Actual author duration')
++  require(report['source_sha256']==r['executed_source']['sha256'],'Report actual source binding')
++  require(len(report['checks'])==row['checks'] and all(x['holds'] for x in report['checks']),'Recorded author assertions; no arithmetic replay')
+  parent=json.loads(read(PACKET+'/PARENT_BINDING.json'))
+  require(parent['canonical_binding_complete'] is False and parent['direct_mathematical_parents']==[] and parent['canonical_graph_disposition'] is None,'No invented dependency or graph disposition')
+- require(parent['prior_target_theorem_is_context_only'] is True and parent['mediator_proposal_composed'] is False,'No unrequested theorem composition')
+- negative=json.loads(read(PACKET+'/NO_GO_STATUS.json'))
+- require(negative['packet_status']==negative['N1']=='FAIL' and negative['disposition']=='partial-attempt-with-named-untested-routes','Negative packet remains N1FAIL partial')
++ require(parent['self_contained_conditional_root_theorem'] is True and parent['other_campaign_theorems_composed'] is False,'No other theorem composition')
+  exposure=json.loads(read(PACKET+'/EXPOSURE.json'))
+  require(exposure['new_scientific_executions']==0 and exposure['blind_independence'] is False and exposure['source_exposed'] is True,'Honest packaging exposure')
+- require(exposure['historical_author_scientific_runs']==1 and exposure['independent_scientific_replications']==0,'Single author fixture only')
++ require(exposure['historical_author_scientific_runs']==2 and exposure['independent_scientific_replications']==0,'Two author programs only')
+  state=json.loads(read(PACKET+'/PUBLICATION_STATE.json'))
+  require(all(state[k] is None for k in ['source_wrapper_review','source_publication_binding','canonical_integration','current_base_observation','canonical_review','staged_review','primary_execution','publication_action','retained_audit']),'Unexecuted publication fields')
+  require(state['actual_scientific_source_acceptance']=={'source':acceptance_alias,'sha256':EXPECTED_ACCEPTANCES[acceptance_alias]},'Actual science acceptance distinguished from future approvals')
+  require(state['scientific_programs_run_this_draft']==0 and state['scientific_replays']==0,'No packaging science replay')
+  binding=json.loads(read(PACKET+'/ACTUAL_BINDING.json'))
+  require(binding['kind']=='unbound_source_only_proposal' and all(binding[k] is None for k in ['source_review','base_observation','canonical_review','canonical_parent_binding','staged_review','publication']),'Unbound future contract')
+- return {'note_sha256':digest(note),'body_count':len(maps),'source_aliases':len(sources),'archive_objects':len(archive),'original_receipts':len(contracts),'new_scientific_executions':0,'negative_packet_status':'N1FAIL'}
++ return {'note_sha256':digest(note),'body_count':len(maps),'source_aliases':len(sources),'archive_objects':len(archive),'original_receipts':len(contracts),'new_scientific_executions':0}
+ def verify_actual_binding(read,checked):
+  # Intentionally fail closed: root must review a separate bound integration version.
+  raise ValueError('UNBOUND SOURCE-ONLY PROPOSAL: canonical source/base/parent/review execution evidence is pending')
+--- machinery_reference/inspect_packet.py
++++ inspect_packet.py
+@@ -2,9 +2,9 @@
+ from pathlib import Path
+ import ast,copy,difflib,hashlib,json,re,runpy,sys
+ D=Path(sys.argv[1]).resolve();P=D/'proposal'
+-PK='.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016'
+-NOTE='docs/COMMUTING_STATIC_EDGE_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
+-SCRIPT='scripts/commuting_static_edge_fixed_target_2026_10_16.py'
++PK='.claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016'
++NOTE='docs/WEAK_MEDIATOR_FIXED_TARGET_BOUNDED_THEOREM_NOTE_2026-10-16.md'
++SCRIPT='scripts/weak_mediator_fixed_target_2026_10_16.py'
+ api=runpy.run_path(str(P/SCRIPT),run_name='source_metadata_inspection')
+ read=lambda rel:(P/rel).read_bytes()
+ sha=lambda b:hashlib.sha256(b).hexdigest()
+@@ -29,14 +29,15 @@
+ else:raise AssertionError('Unbound proposed primary main accepted')
+ targets={
+  'altered_original_body':NOTE,
+- 'altered_root_qualification':source['commuting_static_edge_root_review/FINAL_QUALIFICATIONS.md']['recovery_path'],
+- 'missing_scientific_report':source['commuting_static_edge_check_proposal/runs/edge_001/output/REPORT.json']['recovery_path'],
+- 'missing_actual_science_capture':source['commuting_static_edge_check_proposal/runs/edge_001/source_at_launch/check_static_edge.py']['recovery_path'],
+- 'missing_complete_science_stdout':source['commuting_static_edge_check_proposal/runs/edge_001/stdout.txt']['recovery_path'],
+- 'missing_root_acceptance_capture':source['runs/static_edge_root_acceptance/executed_source.py']['recovery_path'],
++ 'altered_root_qualification':source['weak_mediator_root_review/QUALIFICATION.md']['recovery_path'],
++ 'missing_symbolic_report':source['weak_mediator_check_proposal/runs/weak_001/output/REPORT.json']['recovery_path'],
++ 'missing_compiler_report':source['weak_mediator_finite_compiler_proposal/runs/compiler_001/output/REPORT.json']['recovery_path'],
++ 'missing_compiler_capture':source['weak_mediator_finite_compiler_proposal/runs/compiler_001/source_at_launch/compile_coefficients.py']['recovery_path'],
++ 'missing_symbolic_stdout':source['weak_mediator_check_proposal/runs/weak_001/stdout.txt']['recovery_path'],
++ 'missing_compiler_stdout':source['weak_mediator_finite_compiler_proposal/runs/compiler_001/stdout.txt']['recovery_path'],
++ 'missing_root_acceptance_capture':source['runs/weak_mediator_root_acceptance/executed_source.py']['recovery_path'],
+  'invented_dependency':PK+'/PARENT_BINDING.json',
+  'invented_future_approval':PK+'/ACTUAL_BINDING.json',
+- 'invented_negative_PASS':PK+'/NO_GO_STATUS.json',
+ }
+ for name,path in targets.items():
+  def mutant(rel,path=path,name=name):
+@@ -55,7 +56,9 @@
+   altered=copy.deepcopy(json.loads(src(contract['alias'])))
+   if field=='exit_code':altered['exit_code']=1
+   elif field=='argv':altered['argv']=altered['argv']+['unrecorded-argument']
+-  elif field=='chronology':altered['end_utc']=altered['start_utc']
++  elif field=='chronology':
++   if 'end_utc' in altered:altered['end_utc']=altered['start_utc']
++   else:altered['completed_at']=altered['started_at']
+   stream=next(r['alias'] for r in contract['files'] if r['alias'].endswith(('/stderr','/stderr.txt')))
+   def changed(alias,altered=altered,contract=contract,field=field,stream=stream):
+    if alias==contract['alias']:return json.dumps(altered).encode()
+@@ -66,15 +69,14 @@
+   except (ValueError,FileNotFoundError) as exc:semantic.append({'receipt':contract['alias'],'mutation':field,'rejected':True,'reason':str(exc)})
+   else:raise AssertionError('Receipt predicate mutation accepted '+field)
+ 
+-# Pure parser fixture on the proposed file tree; no graph build or W mutation.
++# Four isolated parser functions on the proposed tree; no graph build or W write.
+ parser_path=D/'methodology/build_citation_graph.py';text=parser_path.read_text();tree=ast.parse(text)
+ names={'normalize_runner_path','runner_paths','first_runner_path','extract_runner'}
+ functions=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name in names]
+ constants=[n for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id in {'RUNNER_LABEL_RE','RUNNER_PATH_RE','RUNNER_SECTION_RE','RUNNER_VERIFICATION_SECTION_RE','HEADING_RE'} for t in n.targets)]
+ ns={'Path':Path,'re':re,'REPO_ROOT':P}
+ exec(compile(ast.Module(body=constants+functions,type_ignores=[]),str(parser_path)+':isolated_runner_resolution','exec'),ns)
+-resolved=ns['extract_runner'](note.decode(),NOTE.removeprefix('docs/'))
+-assert resolved==SCRIPT
++resolved=ns['extract_runner'](note.decode(),NOTE.removeprefix('docs/'));assert resolved==SCRIPT
+ parser_check={'parser_sha256':sha(parser_path.read_bytes()),'functions':sorted(names),'resolved_primary':resolved,
+  'proposal_tree_only':True,'graph_build_executed':False,'canonical_graph_written':False}
+ function_rows=[];diffs=[]
+@@ -91,7 +93,7 @@
+  diffs.extend(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='machinery_reference/'+name,tofile=name))
+  assert not any(line.rstrip()!=line for line in new.splitlines()),name
+ ast.parse((P/SCRIPT).read_text())
+-(D/'CODE_REUSE_MAP.json').write_text(json.dumps({'baseline':'endpoint_target_compilation_qualified_publication_draft',
++(D/'CODE_REUSE_MAP.json').write_text(json.dumps({'baseline':'commuting_static_edge_qualified_publication_draft',
+  'scope':'Exact function source identity only; changed globals and full module logic need review.',
+  'functions':function_rows},indent=2)+'\n')
+ (D/'CODE_FULL_DIFF.patch').write_text(''.join(diffs))
+--- machinery_reference/record_metadata.py
++++ record_metadata.py
+@@ -1,10 +1,10 @@
+-"""Bounded metadata launcher with actual captures; never run historical science."""
++"""Bounded metadata launcher; never execute either historical scientific program."""
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import ast,hashlib,json,subprocess,sys,time
+ D=Path(__file__).resolve().parent;N=D.parent
+-mode=sys.argv[1];assert mode in {'build','inspection','seal'}
+-source=D/({'build':'build_packet.py','inspection':'inspect_packet.py','seal':'seal_packet.py'}[mode])
++mode=sys.argv[1];assert mode in {'prepare','build','inspection','seal'}
++source=D/({'prepare':'prepare_sources.py','build':'build_packet.py','inspection':'inspect_packet.py','seal':'seal_packet.py'}[mode])
+ label=sys.argv[2] if len(sys.argv)>2 else mode
+ assert label.replace('_','').isalnum() and '/' not in label
+ assert not (D/'FINAL_FREEZE.json').exists(),'Frozen packet is immutable'
+@@ -16,19 +16,25 @@
+ recorder=run/'recorder_at_launch.py';recorder.write_bytes(Path(__file__).read_bytes())
+ outputs={'BUILD_RESULT.json','VERIFICATION.json','SEAL_RESULT.json','CODE_REUSE_MAP.json','CODE_FULL_DIFF.patch'}
+ input_paths={p for p in D.rglob('*') if p.is_file() and 'metadata_runs' not in p.relative_to(D).parts and p.name not in outputs}
++if mode=='prepare':
++ b=N/'commuting_static_edge_qualified_publication_draft'
++ input_paths.add(b/'FINAL_FREEZE.json')
++ for name in ['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py','MACHINERY_SOURCE_PINS.json']:
++  input_paths.add(b/name)
++ for folder in ['metadata_runs/build','metadata_runs/inspection','metadata_runs/seal','methodology']:
++  input_paths.update(p for p in (b/folder).rglob('*') if p.is_file())
+ if mode=='build':
+  tree=ast.parse(source.read_text())
+  literals={t.id:ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) for t in n.targets if isinstance(t,ast.Name) and t.id in {'ROOTS','EXTRA_DIRS','EXTRA_FILES'}}
+  for folder,(filename,expected,key) in literals['ROOTS'].items():
+-  f=N/folder/filename;input_paths.add(f);v=json.loads(f.read_text())
+-  assert sha(f.read_bytes())==expected
++  f=N/folder/filename;input_paths.add(f);v=json.loads(f.read_text());assert sha(f.read_bytes())==expected
+   for row in v[key]:input_paths.add(N/folder/row['path'])
+  for folder in literals['EXTRA_DIRS']:input_paths.update(p for p in (N/folder).rglob('*') if p.is_file())
+  for path in literals['EXTRA_FILES']:input_paths.add(N/path)
+ inputs=[pin(p) for p in sorted(input_paths)]
+ (run/'INPUT_IDENTITIES_AT_LAUNCH.json').write_text(json.dumps(inputs,indent=2)+'\n')
+ argv=[sys.executable,'-B',str(capture),str(D)]
+-r={'kind':'publication_packaging_metadata_only','argv':argv,'cwd':str(D),'started_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'child_source_at_launch':pin(capture),'original_source_at_launch':pin(source),'source_capture':pin(capture),'recorder_at_launch':pin(recorder),'input_identities_at_launch':pin(run/'INPUT_IDENTITIES_AT_LAUNCH.json'),'scientific_programs_run':0}
++r={'kind':'publication_packaging_metadata_only','argv':argv,'cwd':str(D),'started_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'python_version':sys.version,'child_source_at_launch':pin(capture),'original_source_at_launch':pin(source),'source_capture':pin(capture),'recorder_at_launch':pin(recorder),'input_identities_at_launch':pin(run/'INPUT_IDENTITIES_AT_LAUNCH.json'),'scientific_programs_run':0}
+ (run/'LAUNCH.json').write_text(json.dumps(r,indent=2)+'\n');t=time.monotonic()
+ with (run/'stdout').open('wb') as out,(run/'stderr').open('wb') as err:
+  try:
+@@ -42,7 +48,7 @@
+  for p in sorted(D.rglob('*')):
+   if p.is_file():
+    v=pin(p);v['path']=str(p.relative_to(D));members.append(v)
+- frozen={'kind':'source_only_qualified_commuting_static_edge_publication_draft','frozen_utc':datetime.now(timezone.utc).isoformat(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'actual_science_acceptance':'f954c36d04380ee49edac71a5dd7cb10e31142d3f3ca03f4da71f5609c04446b','source_wrapper_review':None,'source_publication_binding':None,'canonical_integration':None,'current_base':None,'canonical_review':None,'staged_review':None,'primary_execution':None,'publication':None,'retained_audit':None,'negative_packet_status':'N1FAIL','members':members}
++ frozen={'kind':'source_only_qualified_weak_mediator_publication_draft','frozen_utc':datetime.now(timezone.utc).isoformat(),'scientific_programs_run_this_draft':0,'historical_scientific_replays':0,'actual_science_acceptance':'ba201403a60d1c94751d1550f14d59622c86920ced74ebae21f5f51f5752731b','source_wrapper_review':None,'source_publication_binding':None,'canonical_integration':None,'current_base':None,'canonical_review':None,'staged_review':None,'primary_execution':None,'publication':None,'retained_audit':None,'members':members}
+  (D/'FINAL_FREEZE.json').write_text(json.dumps(frozen,indent=2)+'\n')
+  r={'completed_metadata_execution':pin(run/'EXECUTION.json'),'freeze':pin(D/'FINAL_FREEZE.json'),'members':len(members),'exit_code':r['exit_code']}
+ print(json.dumps(r,indent=2));sys.exit(r['exit_code'])
+--- machinery_reference/seal_packet.py
++++ seal_packet.py
+@@ -2,13 +2,13 @@
+ from pathlib import Path
+ from datetime import datetime,timezone
+ import ast,hashlib,json,sys
+-D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016'
++D=Path(sys.argv[1]).resolve();P=D/'proposal';PK='.claude/science/physics-loops/toe-weak-mediator-fixed-target-20261016'
+ def utc():return datetime.now(timezone.utc).isoformat()
+ def sha(b):return hashlib.sha256(b).hexdigest()
+ def pin(p):
+  b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':sha(b)}
+ def dump(p,v):p.write_text(json.dumps(v,indent=2)+'\n')
+-for mode in ['build','inspection']:
++for mode in ['prepare','build','inspection']:
+  d=D/'metadata_runs'/mode;r=json.loads((d/'EXECUTION.json').read_text());l=json.loads((d/'LAUNCH.json').read_text())
+  assert all(r[k]==v for k,v in l.items())
+  assert r['exit_code']==0 and r['timed_out'] is False and r['scientific_programs_run']==0 and r['inputs_unchanged_after_run'] is True
+@@ -31,17 +31,17 @@
+  '__EXPECTED_ACCEPTANCES__':repr(acceptances)}
+ generated=(D/'primary_template.py').read_text()
+ for key,value in replacements.items():generated=generated.replace(key,value)
+-assert (P/'scripts/commuting_static_edge_fixed_target_2026_10_16.py').read_bytes()==generated.encode()
++assert (P/'scripts/weak_mediator_fixed_target_2026_10_16.py').read_bytes()==generated.encode()
+ v=json.loads((D/'VERIFICATION.json').read_text())
+ assert v['mathematics_tested_by_this_execution'] is False and all(x['rejected'] for x in v['scoped_metadata_mutants']+v['direct_receipt_predicate_mutants'])
+ assert v==json.loads((D/'metadata_runs/inspection/stdout').read_text())
+-assert v['graph_parser_primary_resolution']['resolved_primary']=='scripts/commuting_static_edge_fixed_target_2026_10_16.py'
++assert v['graph_parser_primary_resolution']['resolved_primary']=='scripts/weak_mediator_fixed_target_2026_10_16.py'
+ for name in ['build_packet.py','primary_template.py','inspect_packet.py','record_metadata.py','seal_packet.py']:
+  text=(D/name).read_text();ast.parse(text)
+  assert not any(line.rstrip()!=line for line in text.splitlines()),name
+ assert (D/'ROOT_READ_GUIDE.md').is_file() and (D/'CODE_REUSE_MAP.json').is_file() and (D/'CODE_FULL_DIFF.patch').is_file()
+ result={'utc':utc(),'kind':'completed_metadata_verification_before_parent_recorded_seal','proposal_inputs':len(manifest['inputs']),
+- 'immutable_bodies':len(maps),'packaging_metadata_receipts_verified':['build','inspection'],
++ 'immutable_bodies':len(maps),'packaging_metadata_receipts_verified':['prepare','build','inspection'],
+  'metadata_mutants_rejected':len(v['scoped_metadata_mutants'])+len(v['direct_receipt_predicate_mutants']),
+  'generated_primary_matches_template':True,'explicit_primary_resolved_by_actual_parser':True,
+  'scientific_programs_run':0,'canonical_primary_executed':False,'root_wrapper_review':None}

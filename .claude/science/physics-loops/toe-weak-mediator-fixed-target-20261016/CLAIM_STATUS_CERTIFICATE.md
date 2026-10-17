@@ -1,0 +1,11 @@
+# Claim status and verification scope
+
+Claim type: bounded_theorem. Current source disposition: conditional-support. Root science acceptance ba201403 and controlling qualification e367c861 support the supplied finite Bell weak-mediator construction for the stated fixed K and W. Formal retained status remains the independent audit's decision.
+
+All twelve original argument, exposed-review and qualification bodies remain byte exact. Zero direct mathematical parents and one new graph root reflect the self-contained finite matrix argument; the selected Git transport base is not a mathematical premise.
+
+Two distinct author programs supply exact symbolic and coefficient records. One separate, report-derived arithmetic implementation checks saved integer/rational certificate fields. All three actual sources, launches, inputs, streams, outcomes and scopes remain distinct. The latter shares the model and Python trust base, and does not independently enclose the atan constants. Original source-only nulls and the failed checker metadata inspection remain historical.
+
+The canonical provenance primary binds exact source/body/review/base/receipt identities. It does not rerun scientific programs, prove the analytic norm bounds or establish native physical supply. Source review, integration review, canonical review and staged review require distinct actual records. The frozen source's null-state publication record is historical; actual bindings live in ACTUAL_BINDING.json, CANONICAL_BINDING.json and ACTUAL_REFRESH_PROVENANCE.json. Publication and audit are later records.
+
+The Bell source and projector, paired positive XX/YY ports, literal K, full actual scalar rhat, arbitrary old/reference output and actual-time window remain explicit. Initial source error is additive only under a product-source or full initial joint trace-distance condition. Structured coefficient error is restricted to the stated paired lower replacements. Generic Hamiltonian faults, physical precision, preparation, installation, timing, optional interface duration and reset costs remain separate. Known finite reuse does not establish permanent halt or indefinite reuse of one fixed device. The added cap does not erase old total load 3+rhat.

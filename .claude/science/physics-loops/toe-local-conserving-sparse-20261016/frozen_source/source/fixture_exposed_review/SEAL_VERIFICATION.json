@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-16T15:38:14.713258+00:00",
+  "kind": "actual_metadata_seal_verification",
+  "argv": [
+    "seal_review.py"
+  ],
+  "fixture_sources_and_captures_unchanged": true,
+  "fixture_freeze_members_verified": 22,
+  "source_record_count": 23,
+  "prior_review_and_mathematical_parents_unchanged": true,
+  "author_receipt_bindings_verified": true,
+  "reviewer_inspection_receipt_source_launcher_streams_verified": true,
+  "reviewer_inspection_receipt_sha256": "d21c5a582c4a4833c09436c3833fdd25dbd99651dd7218ece774368f525ce9bb",
+  "review_bytes": 21515,
+  "review_sha256": "c1f7a257fbb824d868c3ca25c7ba9fc8d7504f2e532ca83b8851427afdae305d",
+  "coverage_sha256": "74bfecdee3edeb1c25ea91ccf19fc99416a69987d6a0a93016be99840056301a",
+  "compiler_replay": false,
+  "circuit_propagation": false,
+  "scope": "Metadata sealing only. Earlier inspection includes exact JSON/permutation validation and floating saved-matrix reanalysis, not new circuit execution."
+}

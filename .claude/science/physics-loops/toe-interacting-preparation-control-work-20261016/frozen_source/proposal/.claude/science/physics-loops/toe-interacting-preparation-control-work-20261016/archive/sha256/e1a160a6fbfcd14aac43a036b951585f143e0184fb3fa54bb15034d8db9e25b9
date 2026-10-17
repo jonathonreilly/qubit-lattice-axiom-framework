@@ -1,0 +1,201 @@
+{
+  "utc": "2026-10-16T17:59:45.571427+00:00",
+  "status": "selected exact source capture for exposed review; not scientific acceptance",
+  "new_scientific_executions": 0,
+  "candidate_freeze_members_verified": 39,
+  "source_count": 26,
+  "sources": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/DERIVATION.md",
+      "bytes": 27741,
+      "sha256": "ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc",
+      "captured_path": "sources/ba2624d2819db440c6e378f37d53c90b6470c83bb98a84b050fb1073dacc4dfc/DERIVATION.md",
+      "coverage": "complete current read; candidate identity, argument or provenance as named"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/FREEZE.json",
+      "bytes": 8086,
+      "sha256": "4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f",
+      "captured_path": "sources/4fbed25fe83d4ea4f0550848493755496e03c932dc549e745c1189e799ba9b2f/FREEZE.json",
+      "coverage": "complete current read; candidate identity, argument or provenance as named"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/SOURCE_MANIFEST.json",
+      "bytes": 12070,
+      "sha256": "467ae224265f62342e3597c4f8c28a71f23a38377982771a5b3ecf1c7de60088",
+      "captured_path": "sources/467ae224265f62342e3597c4f8c28a71f23a38377982771a5b3ecf1c7de60088/SOURCE_MANIFEST.json",
+      "coverage": "complete current read; candidate identity, argument or provenance as named"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/SOURCE_COVERAGE.md",
+      "bytes": 6446,
+      "sha256": "2171eb3bc1660f96ac01810f2fc5499c5f9784da2e7cb4a33c781c0539e14be2",
+      "captured_path": "sources/2171eb3bc1660f96ac01810f2fc5499c5f9784da2e7cb4a33c781c0539e14be2/SOURCE_COVERAGE.md",
+      "coverage": "complete current read; candidate identity, argument or provenance as named"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_preparation_chronology_candidate/EVIDENCE.md",
+      "bytes": 3805,
+      "sha256": "fb701ffbcfc71933be89744ee488b13af3c8ebec63c649196aecb8c843bac46d",
+      "captured_path": "sources/fb701ffbcfc71933be89744ee488b13af3c8ebec63c649196aecb8c843bac46d/EVIDENCE.md",
+      "coverage": "complete current read; candidate identity, argument or provenance as named"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 15425,
+      "sha256": "2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e",
+      "captured_path": "sources/2d4294d7f5c33bcc459624857a473d28c2f7099755e376d27999830b2362e10e/PROPOSED_LEMMAS.md",
+      "coverage": "earlier complete argument or decision read reused at unchanged identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/SOURCE_MANIFEST.json",
+      "bytes": 2133,
+      "sha256": "f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8",
+      "captured_path": "sources/f24d845e09aa1fa7483ffba9f00d2b62a5d4f41227a531dc642fe8c85858c8a8/SOURCE_MANIFEST.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_proposal/FREEZE.json",
+      "bytes": 393,
+      "sha256": "6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a",
+      "captured_path": "sources/6020f7ad4f5382dd63cb6732952c9ae8c0dcd37583963cddb94a585a5f56405a/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/REVIEW.md",
+      "bytes": 23761,
+      "sha256": "086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794",
+      "captured_path": "sources/086f5d2e7a16d3d32563f64bd862d97c8c2ee14cf2f7b5767c17c67598ed0794/REVIEW.md",
+      "coverage": "reviewer authored and read completely earlier; unchanged identity refreshed"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_exposed_check/FREEZE.json",
+      "bytes": 5914,
+      "sha256": "83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d",
+      "captured_path": "sources/83bf3031df5ff937a51f51a1a9739af292ae9c4c6b08ecdb11f173774dbc791d/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 8077,
+      "sha256": "502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51",
+      "captured_path": "sources/502b3af3f8c7e2bd2709bc75f14ab953196130e3d45c26cd2fc2a24dad130a51/FINAL_QUALIFICATIONS.md",
+      "coverage": "complete current controlling qualification read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2216,
+      "sha256": "857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa",
+      "captured_path": "sources/857b4ce85a3f1a826e4dfd0c4342df5845e4991e60d3c5f85b1d30e3b98d93fa/QUALIFIED_ACCEPTANCE.json",
+      "coverage": "earlier complete argument or decision read reused at unchanged identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/interacting_ramp_bridge_root_review/FREEZE.json",
+      "bytes": 367,
+      "sha256": "ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4",
+      "captured_path": "sources/ff9e1f34a51caf2026397296b5eab01aac3e4303e78d68dc7e6aedc687fc77a4/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 15499,
+      "sha256": "db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826",
+      "captured_path": "sources/db759157520cfb3b56777d6540461b6453b0bbfe352034a3ba5514a58edea826/PROPOSED_LEMMAS.md",
+      "coverage": "complete current argument read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 8398,
+      "sha256": "0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc",
+      "captured_path": "sources/0229e90fb41e4d7078906b475d6e8b6a1c39a0727daf37216db0d2ce36d19adc/FINAL_QUALIFICATIONS.md",
+      "coverage": "complete current controlling qualification read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 4509,
+      "sha256": "2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399",
+      "captured_path": "sources/2ddb0c568ffb6473884377d1e0d901d8ce2b3c4e1d0744732eb3d8c3cdbdc399/QUALIFIED_ACCEPTANCE.json",
+      "coverage": "complete current source-decision read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/local_sine_preparation_root_review/FREEZE.json",
+      "bytes": 741,
+      "sha256": "d1e77415a76ba2aa9e78d52fdf7da37f0c2a8e3d027124e92fdc33532c505fd1",
+      "captured_path": "sources/d1e77415a76ba2aa9e78d52fdf7da37f0c2a8e3d027124e92fdc33532c505fd1/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 19803,
+      "sha256": "561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2",
+      "captured_path": "sources/561e01542afa50bc476a2b7d11134d3ec59a74e1b875bcbcb69987ab0254f5c2/PROPOSED_LEMMAS.md",
+      "coverage": "earlier complete argument read reused; preparation section6 and scalar/work intervals reread now"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6058,
+      "sha256": "b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0",
+      "captured_path": "sources/b8e88b7456bd89e44863fc349c57892347fb51e43a79d1451215c35cf08d56f0/FINAL_QUALIFICATIONS.md",
+      "coverage": "complete current controlling qualification read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2308,
+      "sha256": "41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c",
+      "captured_path": "sources/41e4139b7fb4e69fd14ecdd12504bc2e4cd93724f21733b8cab41e5b99967e0c/QUALIFIED_ACCEPTANCE.json",
+      "coverage": "earlier complete argument or decision read reused at unchanged identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_root_review/FREEZE.json",
+      "bytes": 705,
+      "sha256": "d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05",
+      "captured_path": "sources/d5a551ecb03ad41cfdc5f74da562263ee7a4532a69d4dc1b282dc3a2dd33ce05/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_proposal/PROPOSED_LEMMAS.md",
+      "bytes": 12165,
+      "sha256": "7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b",
+      "captured_path": "sources/7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b/PROPOSED_LEMMAS.md",
+      "coverage": "earlier complete argument or decision read reused at unchanged identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FINAL_QUALIFICATIONS.md",
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780",
+      "captured_path": "sources/217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780/FINAL_QUALIFICATIONS.md",
+      "coverage": "complete current controlling qualification read"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7",
+      "captured_path": "sources/bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7/QUALIFIED_ACCEPTANCE.json",
+      "coverage": "earlier complete argument or decision read reused at unchanged identity"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_root_review/FREEZE.json",
+      "bytes": 397,
+      "sha256": "b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1",
+      "captured_path": "sources/b351b6118c7ad31141a72040aced6d6f674d844e0d5189eb11232bd8470e71e1/FREEZE.json",
+      "coverage": "identity metadata only; no recursive parent member validation"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_uniform_word_exposed_check/REVIEW.md",
+      "bytes": 24426,
+      "sha256": "45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c",
+      "captured_path": "sources/45c2dbf0199af2131125de9ff08024d18a5c3ba29e75245bbc769a1916db6c7c/REVIEW.md",
+      "coverage": "reviewer authored/read completely earlier; current selected error/constants interval reread; no new replay"
+    }
+  ],
+  "omitted_archive": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "reason": "canonical archive is not a new science premise; necessary original bodies selected instead; its captured member identity was checked in the candidate freeze"
+    }
+  ],
+  "scope": "Candidate39-member freeze verified; selected original source identities verified. Other parent freeze files are identities only; no recursive closure or science replay is claimed.",
+  "canonical_binding": null,
+  "root_acceptance_of_current_review": null
+}

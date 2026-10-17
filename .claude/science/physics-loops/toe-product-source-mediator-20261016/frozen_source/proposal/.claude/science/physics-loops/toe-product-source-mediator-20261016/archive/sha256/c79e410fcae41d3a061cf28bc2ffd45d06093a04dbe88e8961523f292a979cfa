@@ -1,0 +1,42 @@
+{
+  "kind": "root_product_source_pauli_addendum_acceptance",
+  "utc": "2026-10-16T21:46:00.745210+00:00",
+  "status": "QUALIFIED_CONDITIONAL_ADDENDUM_ACCEPTED_PUBLICATION_PENDING",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+    "bytes": 3322,
+    "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/pauli_block_addendum/REVIEW.md",
+    "bytes": 6528,
+    "sha256": "4335ef2a21127fb0658c9b39de94e127fba95b3ebbaa3a68ef7d2ed4a898e7c0"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/pauli_block_addendum/FREEZE.json",
+    "bytes": 2787,
+    "sha256": "353d5c54b12d105c852b7abbe0960c5a85cebb83414890d929dbe6abcd3102f3"
+  },
+  "metadata_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/pauli_block_addendum/metadata/EXECUTION.json",
+    "bytes": 924,
+    "sha256": "95050f993177cbdcce29d9c73962d57c27e3ec828b542509cf07e94161316e40"
+  },
+  "prior_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_root_review/ACCEPTANCE.json",
+    "bytes": 5738,
+    "sha256": "9505e42b907fdb9031f42b02b4609965ef7980af536e9197c4864aba124119f5"
+  },
+  "qualification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_pauli_root_review/QUALIFICATION.md",
+    "bytes": 2333,
+    "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+  },
+  "scientific_executions": 0,
+  "source_exposed": true,
+  "blind_review": false,
+  "canonical_integration": null,
+  "publication": null,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

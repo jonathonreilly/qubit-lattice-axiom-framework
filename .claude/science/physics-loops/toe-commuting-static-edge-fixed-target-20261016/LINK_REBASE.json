@@ -1,0 +1,71 @@
+{
+  "scope": "Publication links only; original science and historical receipts unchanged. No scientific execution or approval.",
+  "original_note": {
+    "bytes": 78243,
+    "sha256": "6788f1d4bec485917038b7aa275b5a1659bacb1e39992034d4a7d287738414fd"
+  },
+  "current_note": {
+    "bytes": 79129,
+    "sha256": "0a434569a0542f150da3c1834eb06fd57c8aaa335bfb8c0830b448fd10cb5810"
+  },
+  "transformations": [
+    {
+      "old": "(NO_GO_DISCIPLINE_CHECKLIST.md)",
+      "new": "(../.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/NO_GO_DISCIPLINE_CHECKLIST.md)",
+      "count": 2
+    },
+    {
+      "old": "(NO_GO_LEDGER.md)",
+      "new": "(../.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/NO_GO_LEDGER.md)",
+      "count": 1
+    },
+    {
+      "old": "(APPROACH_REGISTRY.md)",
+      "new": "(../.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/APPROACH_REGISTRY.md)",
+      "count": 1
+    },
+    {
+      "old": "(sources/current_main/docs/ai_methodology/skills/no-go-discipline/SKILL.md)",
+      "new": "(../.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/frozen_source/proposal/.claude/science/physics-loops/toe-commuting-static-edge-fixed-target-20261016/sources/current_main/docs/ai_methodology/skills/no-go-discipline/SKILL.md)",
+      "count": 1
+    }
+  ],
+  "appended_explanation": "\n\n## Publication link repair\n\nFive historical relative link destinations are rebased to the companion packet.\nAll scientific prose is unchanged. The pinned `LINK_REBASE.json` records current\nbody intervals and reconstructs the exact historical note for provenance checks.\nHistorical review receipts certify their original bytes, not this publication\nrepair or the current review.\n",
+  "current_bodies": [
+    {
+      "name": "original_author_derivation",
+      "start_byte": 8537,
+      "end_byte_exclusive": 29719,
+      "bytes": 21182,
+      "sha256": "eac4cd6daddc83babc79af135587c5d203cff6fe0b39bd487ed7f21e67cddaad"
+    },
+    {
+      "name": "initial_pre_author_analysis",
+      "start_byte": 29786,
+      "end_byte_exclusive": 47724,
+      "bytes": 17938,
+      "sha256": "4a2ae472e7d62907f9e9d5c5d97ea4a62b44bc393b3815a1ca9a11ba8663ac6f"
+    },
+    {
+      "name": "complete_exposed_cross_review",
+      "start_byte": 47793,
+      "end_byte_exclusive": 60463,
+      "bytes": 12670,
+      "sha256": "8a343a6d70a942a5688714e1085d3b5e498b0054ed75f504299de4603328e2a6"
+    },
+    {
+      "name": "preserved_N1_FAIL_checklist",
+      "start_byte": 60530,
+      "end_byte_exclusive": 75063,
+      "bytes": 14533,
+      "sha256": "c27266dd01ab28dc993864aee4e65ecfde9d4596da962ed3e8871c7db4fb01ff"
+    },
+    {
+      "name": "controlling_root_qualifications",
+      "start_byte": 75134,
+      "end_byte_exclusive": 78574,
+      "bytes": 3440,
+      "sha256": "ef9f0787383c5f297fa7fa16b6d8fd5f7801b6827904c43a7e28a3f0b3b7c003"
+    }
+  ]
+}

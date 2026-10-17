@@ -1,0 +1,302 @@
+[
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_CONSERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/accept_preparation_angle_moments.py",
+    "bytes": 10433,
+    "sha256": "04de78019cc4d95d9810d3b0e75c7bcdc92f912b3a12010f741717156d4628de"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/accept_preparation_angle_moments_v2.py",
+    "bytes": 11278,
+    "sha256": "4fab2230a6e338bfb5c0bb227983e5de0346cee87786ce8b9bc9d0d3db1816fc"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/EXPOSURE.md",
+    "bytes": 2466,
+    "sha256": "bcd78fc50cbafc0564f3ac74803815e3ad96aaeea75d0c37b4842ef6282dd526"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/FINAL_FREEZE.json",
+    "bytes": 6134,
+    "sha256": "be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/README.md",
+    "bytes": 542,
+    "sha256": "2d690b21dd02f31acafaa3d68790afba6d2f248ba0ba1e9710dfdb1eb22177c4"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/RESULT.json",
+    "bytes": 2977,
+    "sha256": "74247a4b93e506a1aa44b250e7726c1ef677e38d46d8dfb80b33b0eab5292249"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/REVIEW.md",
+    "bytes": 19971,
+    "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/SEAL_OPERATION.json",
+    "bytes": 2262,
+    "sha256": "f847661ceab121363e9cb8c492836398704a450a53efb896793b8a0b742de896"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/SOURCE_CAPTURE.json",
+    "bytes": 6816,
+    "sha256": "62a5e99ba53e009c3dbc89aec00ddcfd88f305047ea8ce71142f3da9a3f37680"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/capture_and_check.py",
+    "bytes": 5311,
+    "sha256": "a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/EXECUTION.json",
+    "bytes": 2381,
+    "sha256": "5aba6a6d5e5ac796eabbd463c7156228e701ca00aba6b30b56f9230ba39206ca"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/LAUNCH.json",
+    "bytes": 1658,
+    "sha256": "1fa1f822782b7ae7c37d959f1aaef13e694ce355e382bd585f49e1a82ff3322d"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/recorder_at_launch.py",
+    "bytes": 1912,
+    "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/source_at_launch.py",
+    "bytes": 5311,
+    "sha256": "a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/metadata_runs/source_capture/stdout",
+    "bytes": 614,
+    "sha256": "c2ffe7dc8c0792a5590e7d1ee6557cb3b72489ea7c4d855ed96b0afb45756566"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/methodology/focused_review_contract.md",
+    "bytes": 20052,
+    "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/methodology/physics_claim_reviewer.md",
+    "bytes": 14490,
+    "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/methodology/proof_search_governance.md",
+    "bytes": 4975,
+    "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/methodology/skill_freshness.md",
+    "bytes": 2180,
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/record_metadata.py",
+    "bytes": 1912,
+    "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal_review.py",
+    "bytes": 3865,
+    "sha256": "3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/seal_source_at_launch.py",
+    "bytes": 3865,
+    "sha256": "3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/sources/parent/LOCAL_CONSERVING_PREPARATION_NOTE.md",
+    "bytes": 170504,
+    "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/sources/proposal/FREEZE.json",
+    "bytes": 513,
+    "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/sources/proposal/PROPOSED_LEMMAS.md",
+    "bytes": 14391,
+    "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_exposed_check/sources/proposal/SOURCE_MANIFEST.json",
+    "bytes": 1444,
+    "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/build_packet.py",
+    "bytes": 6917,
+    "sha256": "8e0079c0266317ae903ee0e9a94bfcac77884ea34ba319d29f8a81e90477ebda"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/inspect_packet.py",
+    "bytes": 6013,
+    "sha256": "28d59dc27cd993217597a8e8ec09b83f4ed463e5e35040b7497e3c13b8732ffb"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/machinery_reference/build_packet.py",
+    "bytes": 9259,
+    "sha256": "033632d164269072fe6bc9049343aa397cdefa04d2a301232c3bab57287a5d93"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/machinery_reference/inspect_packet.py",
+    "bytes": 2786,
+    "sha256": "c4034da8d6e386c54d4e245692ae9c3b5f27d6d564105ff13e73fbc65b11eb1d"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/machinery_reference/primary_template.py",
+    "bytes": 7457,
+    "sha256": "866bf2829562f0df1a7074511c79781fef8ffeda22cef7e44f2031659edad307"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/machinery_reference/record_metadata.py",
+    "bytes": 3351,
+    "sha256": "a50dc683cf577f8a3e45b19a5cd44c17dda44eb8e9cb24293c80263b91283186"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/machinery_reference/seal_packet.py",
+    "bytes": 4530,
+    "sha256": "a78c7c51a5376e2bf4aca3f487980aaf29f6f24ed72c88566be56935ac729308"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/BINDING_CONTRACT.md",
+    "bytes": 1840,
+    "sha256": "a0d88a2659ff592dfa1332ea4459dc93452a2aba636ba959cc76c79813b1bea7"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/CLAIM_STATUS_CERTIFICATE.md",
+    "bytes": 990,
+    "sha256": "c89d55310d181cc18a03b4dee339942fb6404e5d9e9e4216e7e5895a799ae025"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/EVIDENCE_SCOPE.md",
+    "bytes": 1578,
+    "sha256": "3e5db862d215778b58e91a393e367e12863d792896861c303bc75383d201f5de"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/PR_BODY.md",
+    "bytes": 1356,
+    "sha256": "aa37ba10ec412e482a384e7887ec84e6c96afa32294d3490d972c95b7c6dd0f6"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/packet_text/WRAPPER.md",
+    "bytes": 7698,
+    "sha256": "dfd9f85fe58db5baf36b01cff31782289b96fec396773a229b4a71a757a41c98"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/primary_template.py",
+    "bytes": 10891,
+    "sha256": "2d93d4a4ecd8c31f307aa3b7c46328d552fae8611db06c635c36bb504c8e1ec2"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/record_metadata.py",
+    "bytes": 4150,
+    "sha256": "36245c149b62e5e0c845621572e6e6cc30890414afd67b7a41748233e801f74f"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_qualified_publication_draft/seal_packet.py",
+    "bytes": 3137,
+    "sha256": "f3acc51a10374774096a65613259b87807461d14ee19bd5bb60eb8aec19933ee"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/FREEZE.json",
+    "bytes": 513,
+    "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/PROPOSED_LEMMAS.md",
+    "bytes": 14391,
+    "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_proposal/SOURCE_MANIFEST.json",
+    "bytes": 1444,
+    "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/ACCEPTANCE.json",
+    "bytes": 2430,
+    "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/FINAL_QUALIFICATIONS.md",
+    "bytes": 8080,
+    "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/preparation_angle_moment_root_review/FREEZE.json",
+    "bytes": 375,
+    "sha256": "2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance/EXECUTION.json",
+    "bytes": 1772,
+    "sha256": "66228959ca28222a2fa07a5fce462822ec9e7252e7e88d402ea51c0dc4974486"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance/executed_source.py",
+    "bytes": 10433,
+    "sha256": "04de78019cc4d95d9810d3b0e75c7bcdc92f912b3a12010f741717156d4628de"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance/stderr",
+    "bytes": 1332,
+    "sha256": "76a5ef112dfeea37d65e6c9797aa208d454c57cb69955e90751be18a48748187"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance_v2/EXECUTION.json",
+    "bytes": 1786,
+    "sha256": "ad7611e1d74c5063985a04f4cdbe156e59afcea0a8c2da376e7af25d6d632369"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance_v2/executed_source.py",
+    "bytes": 11278,
+    "sha256": "4fab2230a6e338bfb5c0bb227983e5de0346cee87786ce8b9bc9d0d3db1816fc"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance_v2/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/preparation_angle_moments_acceptance_v2/stdout",
+    "bytes": 818,
+    "sha256": "ea1d2bdb8f7a8783dec20dc9945dfb0cd36cf94e74ee6cead60f62fde5a77158"
+  }
+]

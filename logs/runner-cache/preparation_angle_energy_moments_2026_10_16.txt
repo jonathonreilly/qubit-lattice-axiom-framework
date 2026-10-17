@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/preparation_angle_energy_moments_2026_10_16.py
+runner_sha256: e282958658c5e12e8a4f7feb89740e4a9030e18ce3895803798494d6e2a0d75f
+input_fingerprint_sha256: 9fc8881c50780cdff72f7ef4daf8aa822aaa1bb7c88acd8395a3346da1351492
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: deterministic angle increments; positive complete pulses, indefinite additive residual
+per_site: exact vacuum, isolation, gap, carrier, clocks and final phase remain supplied
+per_mode: raw moments, full F0 cross moments and variance constants remain distinct
+per_block: full old/battery/reference output; vector eta and unhalved trace2eta
+lattice_wide: finite mean sharpness only; no generic-fault, native-resource or retained-audit claim
+
+----- stderr -----
+

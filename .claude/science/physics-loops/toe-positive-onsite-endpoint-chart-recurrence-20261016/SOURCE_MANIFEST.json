@@ -1,0 +1,87 @@
+{
+  "kind": "canonical_body_recovery",
+  "source_packet_freeze": "996e7619f1bd198225d245a211d48420c8d6ef6ed0ffe10f21743966c59cc326",
+  "current_body_recovery_intervals": [
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "chart_original_derivation",
+      "source": "endpoint_chart_certificate_candidate/DERIVATION.md",
+      "start_byte": 5698,
+      "end_byte_exclusive": 27204,
+      "bytes": 21506,
+      "sha256": "b1ee702a4ef20ff2722b7271443058e3b71b865a7d7d7d17038d124ccf9c51ef"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "chart_pre_enclosure_reconstruction",
+      "source": "endpoint_chart_exposed_check/PRE_ENCLOSURE_ANALYSIS.md",
+      "start_byte": 27278,
+      "end_byte_exclusive": 42526,
+      "bytes": 15248,
+      "sha256": "54a1b1993e1ad87cd8000149034ff0a582a182109921f79c52531ad2ea13742e"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "chart_exposed_review",
+      "source": "endpoint_chart_exposed_check/REVIEW.md",
+      "start_byte": 42586,
+      "end_byte_exclusive": 46974,
+      "bytes": 4388,
+      "sha256": "b9fd729aad4be1e7473f122b1abe8cc79ae647b9a968b0f9bc2679089484083a"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "chart_complete_code_review",
+      "source": "endpoint_chart_exposed_check/CODE_REVIEW.md",
+      "start_byte": 47040,
+      "end_byte_exclusive": 60959,
+      "bytes": 13919,
+      "sha256": "0c0415683b3508a306908a92ac786f99cbd05d6221a2f1cb2f3cdcf7baaf581b"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "chart_controlling_root_qualifications",
+      "source": "endpoint_chart_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 61036,
+      "end_byte_exclusive": 67469,
+      "bytes": 6433,
+      "sha256": "6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "recurrence_original_derivation",
+      "source": "endpoint_recurrence_candidate/DERIVATION.md",
+      "start_byte": 67539,
+      "end_byte_exclusive": 85259,
+      "bytes": 17720,
+      "sha256": "5ff51f7b8079804435f8d1d4e7eb258cbc77d6941948a1ec9c140e9e85d5688a"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "recurrence_exposed_review",
+      "source": "endpoint_recurrence_exposed_check/REVIEW.md",
+      "start_byte": 85324,
+      "end_byte_exclusive": 89455,
+      "bytes": 4131,
+      "sha256": "ba612ac16114b189703a3114c9c7d5051ec073d2c0822023b852b5ef807c2f50"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "recurrence_complete_analytic_code_review",
+      "source": "endpoint_recurrence_exposed_check/ANALYTIC_CODE_REVIEW.md",
+      "start_byte": 89535,
+      "end_byte_exclusive": 106615,
+      "bytes": 17080,
+      "sha256": "5081d935a4d62c855adbb8c2b8060d16a613234e592288347f8441730acc742d"
+    },
+    {
+      "note": "docs/POSITIVE_ONSITE_ENDPOINT_CHART_RECURRENCE_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "recurrence_controlling_root_qualifications",
+      "source": "endpoint_recurrence_root_review/FINAL_QUALIFICATIONS.md",
+      "start_byte": 106697,
+      "end_byte_exclusive": 112789,
+      "bytes": 6092,
+      "sha256": "69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55"
+    }
+  ]
+}

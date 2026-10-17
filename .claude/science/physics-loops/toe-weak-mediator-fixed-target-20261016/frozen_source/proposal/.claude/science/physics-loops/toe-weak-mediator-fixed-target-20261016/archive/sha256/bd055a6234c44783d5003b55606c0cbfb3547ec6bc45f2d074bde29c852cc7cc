@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/inspect_original.py"
+  ],
+  "child_source_at_launch": {
+    "bytes": 2257,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/inspect_original.py",
+    "sha256": "6f5f64cc31ad99d0beb9a3e063a016c7208cb87ee160f98be24160a97877062a"
+  },
+  "child_source_unchanged": true,
+  "completed_at": "2026-10-16T20:52:29.485351+00:00",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check",
+  "elapsed_seconds": 0.03676504222676158,
+  "exit_code": 0,
+  "purpose": "metadata-only source identity, exposure and closure inspection; not a scientific execution",
+  "recorder_source": {
+    "bytes": 3441,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/runs/original_inspection/recorder_source.py",
+    "sha256": "3b947c592ed852846ddeeb617b65b03b944bc468d6eb471a83c074c141f8126b"
+  },
+  "source_capture": {
+    "bytes": 2257,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/runs/original_inspection/executed_source.py",
+    "sha256": "6f5f64cc31ad99d0beb9a3e063a016c7208cb87ee160f98be24160a97877062a"
+  },
+  "source_capture_bytes_match": true,
+  "started_at": "2026-10-16T20:52:29.447036+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/runs/original_inspection/stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 1338,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_exposed_check/runs/original_inspection/stdout",
+    "sha256": "55a60f4eb0515a6edaa8a247cc52f5ef48e86de3d800012866916ef811b8317a"
+  }
+}

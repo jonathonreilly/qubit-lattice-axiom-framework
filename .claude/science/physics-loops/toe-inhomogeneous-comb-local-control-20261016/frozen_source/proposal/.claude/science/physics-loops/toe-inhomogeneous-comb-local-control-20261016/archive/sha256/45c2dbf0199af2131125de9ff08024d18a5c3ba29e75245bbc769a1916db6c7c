@@ -1,0 +1,166 @@
+# Exposed check of a uniform logical-word bound
+
+**Disposition: qualified analytical support.** The proposal's logical construction supplies the stated finite, target-independent R(q), with literal matrix phases. I found no load-bearing defect in the 14-letter controlled gate, control recursion, arbitrary-pair reduction, determinant phase, adjacent logical routing, or strict finite-search argument. On the corrected comb premises, a uniform fixed-q nominal laboratory duration O(epsilon^-4) follows. This is not a polynomial classical compiler or a physical supplier.
+
+Two qualifications should accompany any current statement. First, the old comb's g/2 bound concerns driven controls; installed new fields require added incidence Delta_max+g/2, with the previously supplied calibrated full headroom. The new proposal explicitly adopts this correction. Second, distinguish an O(epsilon^5) final phase-generator error allowance from the O(epsilon^9) numerical input requests that can realize it after cancellation of O(epsilon^-4) terms. Section 7's phrase “common cancellation-amplitude tolerance” is ambiguous unless this distinction is stated; imposing O(epsilon^9) directly on the generator would be a stronger sufficient request, not the derived allowance. Explicit constants and separate error budgets are given below.
+
+The checked proposal is the complete 12,165-byte body at SHA256 `7b3be653187f3695934cd68d28812aa36e9e527d5cd33afad37df63a42fa501b`, frozen at `55dd1ab8f9027afd6022a86b56ca47e92cfdf46192b4515698dd9a17cbb0099e`. It remains unchanged. This is a same-model, source-exposed check. I authored relevant local-control/sparse parents and the preceding comb review. Root had read that review and the separate candidate before proposing this strengthening. No blind independence or retained audit is claimed.
+
+## 1. The complete controlled gate and recurrence
+
+For a computational control value c in {0,1}, CZ restricts to Z^c on the target. Therefore the four factors in section 2 restrict to
+
+    exp(i theta X/2) Z^c exp(i (-1)^b theta X/2) Z^c
+      = exp{i[1+(-1)^(b+c)]theta X/2}.
+
+This is exp(i theta X) exactly when c=b and identity otherwise. The formula works for both polarities without extra X gates or phase corrections. Since S=diag(1,i) obeys SXS*=Y, conjugating the entire four-letter word by target S and S* costs six and remains identity on the failed control sector. The U(2) phases of these conjugators cancel literally; they are not discarded.
+
+For U=aI+i(bX+cY+dZ) in SU(2), with real coefficients and a^2+b^2+c^2+d^2=1, multiplication gives the XYX formulas
+
+    a+ib=cos(beta) exp[i(gamma+alpha)],
+    c-id=sin(beta) exp[i(gamma-alpha)]
+
+for exp(i gamma X)exp(i beta Y)exp(i alpha X). Choose cos(beta)=sqrt(a^2+b^2), sin(beta)=sqrt(c^2+d^2) and the two arguments when nonzero; choose arbitrary unused arguments at zeros. This proves finite-real coverage, including the degenerate cases. It does not assert computability of these particular branch choices. Three controlled factors cost 4+6+4=14 and have the desired full control-block action. No ancillary flag is used.
+
+For the recursion write U=exp(i theta v.sigma). With perpendicular unit w, A=i w.sigma is in SU(2), B=exp(-i theta v.sigma/2), and A(v.sigma)A*=-v.sigma. Hence ABA*=B* and ABA*B*=exp(i theta v.sigma). The same choices cover U=I and -I with an arbitrary axis and theta=0 or pi. Condition A,A* on one group and B,B* on the other. The four control-pattern classes give respectively U, AA*=I, BB*=I and I. All control qubits remain unchanged. Their projectors commute with target operations and with the other group's controls, so the argument is valid on superpositions, not only classical control inputs.
+
+Costs are therefore 14T(k), where T(1)=1 and T(k)=2T(floor(k/2))+2T(ceil(k/2)). Independently, let c_k=1 for odd k and 4 for even k. The stronger bound
+
+    T(k)<=(9k^2-c_k)/8
+
+holds by induction. For odd k the two children have opposite parity, so their subtractions sum to five and produce (9k^2-1)/8. For even k the two equal children give subtraction at least four. The base k=1 is equality. This proves the quoted T(k)<=9k^2/8. The no-control case is separately one U(2) letter; no undefined T(0) is used.
+
+## 2. Arbitrary pairs and all complementary states
+
+Choose a differing pivot p and orient the pair so b_p=1, b'_p=0. The CNOTs p→j at every other mismatch leave b' fixed and flip precisely the differing spectator bits of b. Their product K is a permutation with no phases, is its own inverse, and maps the pair to the two states with one common spectator pattern. A controlled target SU(2) then acts on exactly that pair. Conjugation back is identity on every other basis vector. If the ordered original pair is reversed, conjugate its 2-by-2 target matrix by X; its determinant remains one.
+
+There are t-1 CNOTs each way at Hamming distance t. Each CNOT is H_target CZ H_target exactly, with three allowed logical letters. Thus the cost is 14T(q-1)+6(t-1) for q>=2. Neither the permutation nor the controlled gate uses clean logical scratch space. Logical number-changing operations in this argument are later represented by conserving reservoir-assisted physical operations; they are not asserted to conserve the bare old charge by themselves.
+
+For QR, left multiplication by the displayed SU(2) matrix sends (a,b) to (sqrt(|a|^2+|b|^2),0). One must still apply it for r>0 when b=0 and a has a phase. Skipping every already-zero lower entry would fail to make the completed pivot +1. The proposed rule tests r=0, not b=0, and is correct as a finite-real existence construction. Previously completed columns remain fixed because their relevant entries are zero. Unitarity then makes each completed pivot +1 and leaves the final diagonal entry det V. At most d(d-1)/2 pair operations suffice. To emit the resulting V, apply D first, then the elimination adjoints in reverse chronological order.
+
+For the residual phase, the commuting expansion of P_b=|b><b| is exact. A one-qubit scalar unitary implements the empty-subset scalar on the entire logical register. For nonempty J, CNOT(j,t) conjugates Z_t to Z_jZ_t; successive distinct controls multiply these factors without phases. The cost is
+
+    1 + sum_(J nonempty)[6(|J|-1)+1]
+      = (3q-5)2^q+6.
+
+The scalar is essential to the stipulated matrix comparator. The one-qubit logical alphabet really includes U(2), so it is an allowed single letter. On the physical comb, its conserving lift has the corresponding phase on the complete blocks and its stated full-space completion; it is not silently replaced by a scalar on all apparatus states.
+
+The resulting R_full(q) in section 4 follows. At q=1, use V itself as one U(2) letter, R_full(1)=R(1)=1. As a consistency check, q=2 gives T(1)=1, R_full=6(14+6)+10=130 and the deliberately loose R(2)=37*130=4810. No q=1 call to a controlled-gate recurrence is necessary.
+
+## 3. Logical routing is not unequal-gap physical SWAP
+
+At logical distance ell, conjugate CZ by a permutation moving one operand ell-1 steps toward the other and then undo the permutation. The neighboring logical SWAP is exactly three CNOTs and therefore nine adjacent-alphabet letters. The cost is 18(ell-1)+1<=18(q-2)+1 for q>=2. Every other logical wire returns, and no occupation-dependent phase occurs. The common multiplier 18q+1 exceeds this bound and also exceeds the cost of leaving an onsite letter unchanged. Therefore R(q)=(18q+1)R_full(q) is sufficient, though far from tight.
+
+Each logical CNOT or SWAP is subsequently implemented as its word of lifted one-qubit gates and physical diagonal old-site CZs. Those factors commute with every physical species charge N_i. This does not grant physical SWAP between unequal-gap old sites. The prior exact witness remains relevant: such a literal physical SWAP has commutator norm |Delta_i-Delta_j| with the old energy and gives the wrong encoded block action. The new routing argument never uses it.
+
+The comb representation applies on the shared complete product blocks J_a. On each such block, every lifted one-qubit gate and physical CZ agrees with its logical factor, so the whole routed word agrees with V_grid. Outside those blocks, the operator is the actual product of the specified full factors; it need not be identity. Logical global phases and logical routing do not change that qualification.
+
+## 4. Finite search with a strict margin
+
+Every U(2) is a scalar times SU(2), and the preceding XYX representation supplies the four periodic angle parameters. Finite grids in fixed compact 2pi-periodic ranges are enough. For example choose an integer K from a certified upper bound on pi so the largest wrapped nearest-grid error is below the chosen rational h. Grid entries and their exponentials are computable without extracting any angle from V. This avoids zero/pivot, argument and branch-cut decisions about the target.
+
+Replacing the four parameters of a letter by grid values changes its operator by at most 4h, using the norm-one generators I,X,Y and telescoping. A word of at most R letters therefore changes by at most 4Rh. Choose h<eta_program/[16 sqrt(d) max(1,R)]. Some enumerated grid word is then within eta_program/4 in Frobenius norm. The candidate set is finite: choose word length, site/edge labels and four grid indices for each onsite gate. For every candidate, certified entry enclosures converge to its full matrix and the supplied computable V. Refining an upper enclosure for the squared Frobenius norm eventually proves the strict test for at least one candidate. Dovetailing across the finite set prevents a boundary candidate from blocking termination.
+
+The full matrix, including global phase, is tested. A Frobenius certificate is legitimate here because the grid was made finer by sqrt(d); it is not the rejected coarse-grid shortcut in the earlier growing physical-space compiler. This search proves finite-error computable supply under its oracle hypotheses. It gives no exact-real eta=0 algorithm, polynomial classical runtime/memory, favorable oracle latency, or certificate for a target that was never supplied with certified entries. The small test below is not an implementation of this general search.
+
+## 5. Complete composition and noncircular target selection
+
+Take all branch lengths equal to L. The qualified q=1 branch compiler covers every S_i B_i input and returns A_i clean on its comparator, with exact logical scalar one. Each logical onsite factor costs at most K1 L^4, K1=131328. Physical adjacent old CZ costs one pulse. Thus an integer padded bound chosen independently of target angles is
+
+    Gbar = R(q)(1+K1 L^4),    G<=Gbar.
+
+For approximate branch compilation, insert ideal factors on the right of each telescoping replacement and actual unitaries on its left. Every ideal prefix returns the relevant ancilla to zero, including between intervening physical CZs. The full-input isometry estimate therefore applies at each replacement even if the actual state has leakage or correlations. Allocate eta_letter<=eta_compile/max(1,R) to each of at most R branch letters. No actual reset or new product reservoir is introduced.
+
+On the initial product packet, all complete-block evolutions are the same word representation. The final ideal translation bound is 2 sum_i d_i in operator norm, with d_i=2 sin(pi/[2(L+1)]). It depends on initial/final logical indices, not word length. This is separate from the implementation telescoping sum. Likewise, replacing V_grid by V contributes at most eta_program once on the full input isometry and hence 2eta_program in unhalved trace norm. It is not an allowance to spend again on branch gates or physical calibration.
+
+For the driven-preparation variant define E=exp(-i tau_p K_S/hbar) and W=V E*. The correct order is W E=V. The uniform bound R(q) applies to this accuracy-dependent W, so it removes the previous fixed-word resource caveat for the computable-input domain. One may instead prepend q compensation U(2) gates, absorbing exp(i E0 tau_p/hbar) into one gate; this uses R(q)+q and leaves the exponent unchanged.
+
+The order of choices can be explicit: fix q, the supplied physical bounds and slot lengths; choose epsilon and L; fix preparation duration and the target-independent padded runtime; form computable W; synthesize a certified logical grid word; synthesize/certify its branch words; pad; and compute the separate final species phases from the already fixed runtime. The final phases can also be computed earlier. Nothing in this order requires a timing fixed point. All classical searches occur before the declared unknown-input experiment, unless actual waiting/storage is separately modeled.
+
+The complete nominal comparator for preparation followed by runtime is
+
+    U_runtime U_prep J_vac approximately
+      gamma(P,compiled_word) J_(beta,all A=0) V,
+    gamma=exp[-i(E0 tau/hbar+Phi)],
+    Phi=(pi/4)N_A+sum_actual_Z |phi|.
+
+Here gamma is computed from the actual selected emitted word, not fitted after comparison. The E0 preparation phase is inside E and compensated through W. Full SWAP and CZ have endpoint scalar one under their paid positive generators. The final lambda_i n layers already include their scalar parts. All old, battery, ancilla and reference outputs remain present; the comparator does not demand that the actual reservoir be uncorrelated exactly.
+
+## 6. One fully separated uniform resource budget
+
+The following explicit constants demonstrate the claimed exponent without inferring it from dimension alone. Fix all physical data and q, set 0<epsilon<=1, and include imperfect initial vacuum/readiness in the complete preparation allowance e_prep. Allocate
+
+    e_prep<=epsilon/6,
+    4pi q/(L+1)<=epsilon/6,
+    eta_program, eta_compile, eta_H, eta_t <=epsilon/12.
+
+Then the total unhalved trace error is at most
+
+    e_prep+4pi q/(L+1)
+      +2eta_program+2eta_compile+2eta_H+2eta_t <=epsilon.
+
+For a ready-input-only experiment, replace e_prep by its complete readiness allowance. Do not add either quantity again after it has already been included.
+
+Choose rational rho within 1/4 of 24pi q/epsilon and L=floor(rho)+2. With
+
+    A=24pi q+3, D=q(A+4),
+    B=R(q)(1+131328 A^4), H=h(B+1),
+
+one has L<=A/epsilon, total sites m<=D/epsilon, Gbar<=B epsilon^-4 and tau<=H epsilon^-4. The fixed h is the parent's positive-pulse choice using Q*=6pi, g and sigma. Sequential preparation has G_p=qL and tau_p=(qL+1)h_p<=H_p/epsilon, H_p=h_p(qA+1). Therefore total preparation plus runtime is at most (H+H_p)epsilon^-4. Constants depend on q and the fixed supplied physical data, not V or epsilon; this is the precise meaning of O_q here. R(q) is not a favorable q-complexity claim.
+
+Using the parent's resolved Hamiltonian discrepancy integral, sufficient uniform requests are
+
+    b <= hbar epsilon^5/(36H),
+    delta_Q,delta_lambda <= epsilon^5/[36(B+D)],
+    delta_area <= epsilon^5/[36Q*(B+D)].
+
+The three categories contribute at most epsilon/36 each: tau b/hbar, the generator-error sum, and the area-error sum. There are at most Gbar+m generator uses, including all parallel final sites. Dividing b among O(epsilon^-1) new fields gives a sufficient per-field request O(epsilon^6). Actual positivity, locality, incidence and slew still require their independent certificates; these norm-error requests do not establish them.
+
+For the cancellation arithmetic, k_i=floor(r_i)+2 with |r_i-Delta_i tau/(2pi hbar)|<=1/4 satisfies k_i<=K epsilon^-4 for a fixed safe K, for example any certified K>=Delta_max H/(2pi hbar)+3. The actual generator allowance above is delta_lambda=O(epsilon^5). With exact nominal time and units, its two input-error terms are
+
+    |delta lambda_i| <= (tau/hbar)|delta Delta_i|+2|k_i| delta_pi.
+
+For example the sufficient requests
+
+    delta_Delta <= hbar epsilon^9/[144H(B+D)],
+    delta_pi <= epsilon^9/[288K(B+D)]
+
+each use at most one quarter of the displayed delta_lambda allowance, leaving room for other numerical terms. If nominal time or units are also evaluated approximately, include Delta_i delta_tau/hbar, the corresponding hbar term and product errors in the remaining allowance. Accumulated slot-clock errors require their own translation/support bounds; the exponent alone is no clock theorem. This is the precise O(epsilon^9) input interpretation of the proposal's cancellation statement.
+
+For post-off timing, let F_* be a supplied uniform constant with ||F_actual||<=F_*/epsilon. Under the displayed global static budget, a sufficient example is F_*=E0+D Delta_max+hbar/(36H), including that possible endpoint discrepancy. Then |delta_t|<=hbar epsilon^2/(12F_*) gives eta_t<=epsilon/12. Sampling must actually occur after all controls turn off. Otherwise include their integral or use the separately qualified guards, recomputing tau and every lambda_i consistently.
+
+The matrix used to define W needs certified compensation data too. An old-generator numerical error delta_K gives at most tau_p delta_K/hbar, plus time/unit terms; O(epsilon^2) requests suffice at tau_p=O(epsilon^-1). This goes inside eta_program, possibly split between target assembly and search, rather than becoming a free extra error. Runtime input requests can be stricter, but numerical enclosures are not automatically physical calibration certificates.
+
+Reporting a vector scalar to error O(epsilon) separately pays tau delta_E0/hbar, E0 delta_tau/hbar, N_A delta_pi/4, all onsite-angle uncertainties and unit/explicit-scalar errors. An E0 numerical request O(epsilon^5) and a per-angle request O(epsilon^5) are sufficient at these counts. None permits changing the literal old E0 or Delta_i terms. Requested bits for fixed computable coefficients are not their oracle walltime.
+
+Preparation has its own resolved errors and phase-locked number-changing drives. The accepted carrier estimate is proportional to G_p(delta_phi0+tau_p delta_omega). Thus O(epsilon^2) initial carrier-phase and O(epsilon^3) frequency requests suffice for a fixed allocated O(epsilon) error, while preparation generator/area/global-static requests can be O(epsilon^2), with O(epsilon^3) cancellation-sensitive gap/pi inputs for its O(epsilon^2) final phases. These are distinct physical/numerical quantities. Using the full preparation discrepancy integral and then adding all its resolved pieces again would double-count them. The proof relies on the existing preparation contract rather than constructing a phase reference or source of purity.
+
+## 7. Strength, energy and retained limitations
+
+At every pulse the literal old K_S remains installed. The controls are positive onsite/two-body terms on the stipulated comb. Branch routes are equal-gap full SWAPs; cross-branch pulses are positive diagonal CZ. Their fixed h preserves driven cap/slew independent of epsilon. New static branch fields contribute Delta_max at a site even in vacuum. Thus nominal added incidence is at most Delta_max+g/2, and the supplied actual full headroom E0+Delta_max+2g remains the safe stated version. Global norm, number of coefficients and energy range grow; fixed incidence does not fix global resources.
+
+Every ideal runtime term commutes with every N_i. Each independent final lambda_i cancels its own free number phase on the whole apparatus space. No common recurrence, rational relation or unequal-gap swap is required. Runtime conserves the complete distribution of F, not the time-varying controlled Hamiltonian. Modeled net runtime drive work is zero with both endpoint observables F, while absolute work is bounded by g(Gbar+m)=O(epsilon^-4). Preparation supplies the known product mean sum_i Delta_i(L+1)/2 and absolute-work bound g(G_p+sum_i M_i)+(pi/2)sum_i Delta_i L, of order epsilon^-1. These are prescribed-drive ledgers, not microscopic driver return statements.
+
+Old energy transfer retains the controlling allowance (sum_i Delta_i/2)(e_out+epsilon_S0). The initial old error cannot be removed. Moment estimates retain the growing battery/ancilla observable norms and actual covariance; nominal product variance does not describe arbitrary correlated actual output. Later equal errors require the same actual free evolution; persistent mismatch/noise adds a storage integral.
+
+The uniform logical-word result strengthens one missing classical-input interface of the conditional comb construction. It does not supply arbitrary interacting old H, restricted-port access, a matched physical gap identification, free sites on an occupied lattice, vacuum/purity, autonomous controls, microscopic work/phase resources, automatic halt or indefinite reuse. No broad impossibility statement is made about these remaining interfaces.
+
+## 8. Actual exact discriminator and evidence boundary
+
+`PRECHECK_FINDINGS.md` was written before the source and captured before launch. The single new program imports no prior scientific checker. It multiplies actual small one-qubit/CZ factors using exact SymPy rational/radical arithmetic and compares them with separately constructed matrices, without phase fitting.
+
+- For both control polarities, a noncommuting XYX target uses rational half-angle data (3/5,4/5), (5/13,12/13), (8/17,15/17). Both complete 4-by-4 controlled matrices have exact squared Frobenius error zero and exactly 14 factors.
+- The two-qubit projector phase for b=10 and theta=pi has ten factors and equals diag(1,1,-1,1) exactly. Omitting its empty-subset scalar has exact squared Frobenius error 8-4sqrt(2)>0, as predicted before launch.
+- A three-qubit adjacent logical route for CZ(0,2) has nineteen factors and exact squared error zero. Omitting the inverse return SWAP gives exact squared error 8, also predicted beforehand.
+
+The finite checks distinguish the named order/phase failures; they are not a proof of arbitrary-q recurrence/search termination, a physical comb compiler run, pulse simulation, interval result or independent validation of old parent science. The general claims above rest on the analytical argument with explicit premises. Complete exact matrices and chronological factor labels are saved alongside RESULT.json.
+
+One launch completed at exit 0, 2026-10-16T16:34:22.461248Z to 16:34:24.227431Z, elapsed about 1.76533 seconds, CPU limit 30 seconds, wall limit 60 seconds, no address-space limit. Python 3.13.5 and SymPy 1.14.0 were used. Source SHA256 is `f63ea77bfb72132b54d8e3e269c35e8d2f0ef0100e156074b06fe426fc6d3982`, launcher `9d554719c443780418c0ebfa47d96880bdad4bfa5eccc27fb2fee9bf616f17fa`, precheck `417d2ac2c509508d4864f48ea586a99caf8903bbf07e9b681eb5a9027dcc0d2b`. Full stdout is `c5b8409f0e82eb546166e82318d90ac9a3535e2ca9e5481b47f66379837e02e0`; stderr is empty. Exact argv/cwd, source/launcher/precheck at launch and complete streams are retained. There was no failed scientific launch in this review; the intentional mutants are negative comparisons, not process failures.
+
+## 9. Source exposure and scope of this disposition
+
+The full new proposal, manifest and freeze were read. Necessary prior argument coverage is reused at unchanged identities: comb proposal `561e0154...`, my exposed check `71be6f79...`, sparse derivation `6b1e1ecd...`, sparse controlling qualifications `83b913c6...`, and runtime qualifications `9fb1514d...`. A combined reread output truncated; it is not claimed as fresh complete coverage. Earlier full read coverage remains valid at the pinned identities, and affected current beginning/end passages were read separately. The new elementary proof was reconstructed above. No fresh primary-paper or physical-premise validation is claimed.
+
+Root's other candidate `4bd3d22a...` is an exposed ancestor in its manifest. I checked its bytes/hash only and did not read or use its mathematical body for this review. Its presence in root's background is not an accepted premise here. The source map records this distinction. Earlier counterexamples to off-code identity and physical unequal-gap SWAP remain in the complete copied prior review; no old science was rerun.
+
+Root owns any acceptance and publication. This report supports the uniform finite program lemma and its conditional laboratory consequence with the qualifications above. It does not upgrade the parent or this source to retained audit. Only the new review directory was written; no proposal, prior freeze, canonical file, Git/PR, cache/graph/audit/lock, prompt or axiom was changed. No other chat was messaged, no agent was spawned and no model override was used.

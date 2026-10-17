@@ -1,0 +1,230 @@
+{
+  "schema": "preparation_angle_moment_publication_inputs_v1",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/ACTUAL_BINDING.json",
+      "bytes": 185,
+      "sha256": "a311fc673bd4f81d40629be1f3bbdcfaba020ebd99c4a837cdd5de476b1586db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/ARCHIVE_INDEX.json",
+      "bytes": 9351,
+      "sha256": "93c95003d99182acfb40d273312a574b45bf3818a68e7ce5bd5a2b8dae4dc7ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/BINDING_CONTRACT.md",
+      "bytes": 1840,
+      "sha256": "a0d88a2659ff592dfa1332ea4459dc93452a2aba636ba959cc76c79813b1bea7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/BODY_MAP.json",
+      "bytes": 1328,
+      "sha256": "0fa8a4f61fb7a9cc138d085f240f078dc42b3adb2dadfea8bbb4dcb7477fc9cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 990,
+      "sha256": "c89d55310d181cc18a03b4dee339942fb6404e5d9e9e4216e7e5895a799ae025"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/EVIDENCE_SCOPE.md",
+      "bytes": 1578,
+      "sha256": "3e5db862d215778b58e91a393e367e12863d792896861c303bc75383d201f5de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/EXPOSURE.json",
+      "bytes": 398,
+      "sha256": "498df45005468e5f91bf644c6a446cbc9ca98bfe7204fb2c0280ce9f62417818"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/FROZEN_SOURCE_CLOSURE.json",
+      "bytes": 824,
+      "sha256": "55c5a2a56291e899a816d3241ac918091ee03f3462b403e0ea78c9cd83b9efe4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/PARENT_BINDING.json",
+      "bytes": 841,
+      "sha256": "58b95ba0974427273d52d2586401e7957a68f7648537fa67189c7fff91e551ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/PR_BODY.md",
+      "bytes": 1356,
+      "sha256": "aa37ba10ec412e482a384e7887ec84e6c96afa32294d3490d972c95b7c6dd0f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/PUBLICATION_STATE.json",
+      "bytes": 326,
+      "sha256": "cdb079df5fe657748a584107916a864d566e4ebb5ea1b6b0269525bc0ce05982"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/SOURCE_MANIFEST.json",
+      "bytes": 27162,
+      "sha256": "3e2465e8fb4856f55011a715ec1a922c69da8dad1a59f249a374e07508811504"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/04de78019cc4d95d9810d3b0e75c7bcdc92f912b3a12010f741717156d4628de",
+      "bytes": 10433,
+      "sha256": "04de78019cc4d95d9810d3b0e75c7bcdc92f912b3a12010f741717156d4628de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/1fa1f822782b7ae7c37d959f1aaef13e694ce355e382bd585f49e1a82ff3322d",
+      "bytes": 1658,
+      "sha256": "1fa1f822782b7ae7c37d959f1aaef13e694ce355e382bd585f49e1a82ff3322d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51",
+      "bytes": 375,
+      "sha256": "2960f00e3b45f2c38bd4ccf4a673d5d2f610fecf43a82f40c39e239a33303e51"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49",
+      "bytes": 19971,
+      "sha256": "2c12dc8f0e3ab8f607f7681124fe0244c330c264414a2b2bc497adaf42cf1a49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/2d690b21dd02f31acafaa3d68790afba6d2f248ba0ba1e9710dfdb1eb22177c4",
+      "bytes": 542,
+      "sha256": "2d690b21dd02f31acafaa3d68790afba6d2f248ba0ba1e9710dfdb1eb22177c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9",
+      "bytes": 3865,
+      "sha256": "3319576ec0caf002d6219cee3a3a0b661f98f29ac56474d4d497a2e89d01ebd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/4fab2230a6e338bfb5c0bb227983e5de0346cee87786ce8b9bc9d0d3db1816fc",
+      "bytes": 11278,
+      "sha256": "4fab2230a6e338bfb5c0bb227983e5de0346cee87786ce8b9bc9d0d3db1816fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/5aba6a6d5e5ac796eabbd463c7156228e701ca00aba6b30b56f9230ba39206ca",
+      "bytes": 2381,
+      "sha256": "5aba6a6d5e5ac796eabbd463c7156228e701ca00aba6b30b56f9230ba39206ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a",
+      "bytes": 8080,
+      "sha256": "5ba89f88975389dbc6367e930baa023fc51743d3b0227836d9e33384fa18789a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/62a5e99ba53e009c3dbc89aec00ddcfd88f305047ea8ce71142f3da9a3f37680",
+      "bytes": 6816,
+      "sha256": "62a5e99ba53e009c3dbc89aec00ddcfd88f305047ea8ce71142f3da9a3f37680"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/66228959ca28222a2fa07a5fce462822ec9e7252e7e88d402ea51c0dc4974486",
+      "bytes": 1772,
+      "sha256": "66228959ca28222a2fa07a5fce462822ec9e7252e7e88d402ea51c0dc4974486"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f",
+      "bytes": 170504,
+      "sha256": "6db93809f12315668f720006c6a443301ad682381ce5629c173b1ff1c6d66a7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/74247a4b93e506a1aa44b250e7726c1ef677e38d46d8dfb80b33b0eab5292249",
+      "bytes": 2977,
+      "sha256": "74247a4b93e506a1aa44b250e7726c1ef677e38d46d8dfb80b33b0eab5292249"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/76a5ef112dfeea37d65e6c9797aa208d454c57cb69955e90751be18a48748187",
+      "bytes": 1332,
+      "sha256": "76a5ef112dfeea37d65e6c9797aa208d454c57cb69955e90751be18a48748187"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76",
+      "bytes": 5311,
+      "sha256": "a57fec5012d5af54b2cec9748b416dd73e6ca071c6db0f04ea2c8bbf6b07ae76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/ad7611e1d74c5063985a04f4cdbe156e59afcea0a8c2da376e7af25d6d632369",
+      "bytes": 1786,
+      "sha256": "ad7611e1d74c5063985a04f4cdbe156e59afcea0a8c2da376e7af25d6d632369"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359",
+      "bytes": 1912,
+      "sha256": "b08bce8924387b5faf54911ea7e761a974ec08280dce7c819877257209713359"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428",
+      "bytes": 1536,
+      "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef",
+      "bytes": 513,
+      "sha256": "b2546340ec39a575f6bc97f37f56cc05cf4d381086d7d6298b6edb4dcde0f2ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/bcd78fc50cbafc0564f3ac74803815e3ad96aaeea75d0c37b4842ef6282dd526",
+      "bytes": 2466,
+      "sha256": "bcd78fc50cbafc0564f3ac74803815e3ad96aaeea75d0c37b4842ef6282dd526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be",
+      "bytes": 6134,
+      "sha256": "be6b88899f262bc5961fc5ad1916d69185aad53ca84ce6909269afdc0a82c4be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/c2ffe7dc8c0792a5590e7d1ee6557cb3b72489ea7c4d855ed96b0afb45756566",
+      "bytes": 614,
+      "sha256": "c2ffe7dc8c0792a5590e7d1ee6557cb3b72489ea7c4d855ed96b0afb45756566"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4",
+      "bytes": 2430,
+      "sha256": "d32049fc5fe1f8ec166d333ace01e5b1738991e51773eebb5085eeff172ecec4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/ea1d2bdb8f7a8783dec20dc9945dfb0cd36cf94e74ee6cead60f62fde5a77158",
+      "bytes": 818,
+      "sha256": "ea1d2bdb8f7a8783dec20dc9945dfb0cd36cf94e74ee6cead60f62fde5a77158"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a",
+      "bytes": 1444,
+      "sha256": "f0417ca63a827426d0e70058341a46e4dafc61f1f8d4a975d5ee30c8acda787a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/f847661ceab121363e9cb8c492836398704a450a53efb896793b8a0b742de896",
+      "bytes": 2262,
+      "sha256": "f847661ceab121363e9cb8c492836398704a450a53efb896793b8a0b742de896"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-preparation-angle-energy-moments-20261016/archive/sha256/fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced",
+      "bytes": 14391,
+      "sha256": "fd847fb098e1fa15f13a309065e99065128c2be6adaf2a6c336c3a38e5a9aced"
+    },
+    {
+      "path": "docs/PREPARATION_ANGLE_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 50484,
+      "sha256": "f9ab65c31e9a8daea0c368dd9acb99b055132aa2504c4c567df92a363078a9d5"
+    }
+  ]
+}

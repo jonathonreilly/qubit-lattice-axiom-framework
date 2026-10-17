@@ -1,0 +1,9 @@
+{
+  "authorization": null,
+  "proposal_freeze_sha256": null,
+  "validator_sha256": null,
+  "report_sha256": "0b108a9605e02b8b907ea13b364875b6282fc727c368dbed862ecb5d67149564",
+  "wall_limit_seconds": 60,
+  "attempts": 1,
+  "note": "Planning template only. Root supplies a separate actual authorization record; no GO exists here."
+}

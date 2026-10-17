@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-16T18:51:43.666921+00:00",
+  "kind": "final_source_metadata_validation_only",
+  "input_files": 61,
+  "source_aliases": 68,
+  "unchanged_bodies": 3,
+  "metadata_receipts_verified": [
+    "build",
+    "inspection"
+  ],
+  "scoped_refusals": 9,
+  "current_original_sources_match": true,
+  "generated_primary_matches_template": true,
+  "scientific_executions": 0,
+  "source_wrapper_review": null,
+  "canonical_integration": null
+}

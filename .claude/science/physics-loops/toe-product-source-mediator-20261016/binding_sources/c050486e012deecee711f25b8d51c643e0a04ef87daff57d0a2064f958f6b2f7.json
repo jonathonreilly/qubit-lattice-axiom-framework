@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_root_recorder_proposal/record_product_source_publication_source_review.py",
+    "--root-reviewed",
+    "--expectations",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/bootstrap/product_source_wrapper_expectations.json",
+    "--expectations-sha",
+    "2720db9f553a20906c316b2606414cfd3ca091915cbce70ce9d003d51526891c"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-16T21:59:44.730631+00:00",
+  "end_utc": "2026-10-16T21:59:45.039427+00:00",
+  "elapsed_seconds": 0.30857408279553056,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_wrapper_review/stdout",
+    "bytes": 557,
+    "sha256": "5c39ca7c3dfddc0c8ef7a70dd7865c85f39faa0a82ba73fed679a4309c5a808b"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_wrapper_review/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_root_recorder_proposal/record_product_source_publication_source_review.py",
+    "bytes": 11700,
+    "sha256": "d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1"
+  },
+  "source_capture": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/runs/product_source_wrapper_review/executed_source.py",
+    "bytes": 11700,
+    "sha256": "d6f25837eabb0ad9243629461d49c9b0bb422eb27e9ea0f4665e515d97eb37f1"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/review_run.py",
+    "bytes": 1536,
+    "sha256": "b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428"
+  }
+}

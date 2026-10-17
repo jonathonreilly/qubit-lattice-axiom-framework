@@ -1,0 +1,84 @@
+{
+  "new_wrapper_bytes": [
+    0,
+    10429
+  ],
+  "trailing_wrapper_bytes": [
+    63581,
+    63734
+  ],
+  "bodies": [
+    {
+      "name": "original_proposal",
+      "source": "product_source_mediator_candidate/PROPOSAL.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 10486,
+      "end_byte_exclusive": 18099,
+      "bytes": 7613,
+      "sha256": "aa1be4b5bef9450cc9e5d6bd94feb440f15ebbb6ac8f38a309dfa5af35de2248"
+    },
+    {
+      "name": "finite_compiler_addendum",
+      "source": "product_source_mediator_candidate/FINITE_COMPILER_ADDENDUM.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 18163,
+      "end_byte_exclusive": 22437,
+      "bytes": 4274,
+      "sha256": "afe663938b30c750d8a5097b876b3e557212e5e6480fcfa19c466a5483188065"
+    },
+    {
+      "name": "original_analytic_review",
+      "source": "product_source_mediator_exposed_check/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 22501,
+      "end_byte_exclusive": 38628,
+      "bytes": 16127,
+      "sha256": "517b3714e8b73bb082ed95b8fab1b5bc07f8c4490f4c2fc8f56816fa0681bf53"
+    },
+    {
+      "name": "finite_compiler_analytic_review",
+      "source": "product_source_mediator_exposed_check/finite_compiler_addendum/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 38699,
+      "end_byte_exclusive": 46716,
+      "bytes": 8017,
+      "sha256": "c6ac427900ab13bf671f607b393a94d52f2361b6435ae80f3a959c836458abf6"
+    },
+    {
+      "name": "controlling_root_qualification",
+      "source": "product_source_mediator_root_review/QUALIFICATION.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 46786,
+      "end_byte_exclusive": 51200,
+      "bytes": 4414,
+      "sha256": "e34377a876885c892d436a2c0fd1c0d32803d332782464c217d004f10eb02ff7"
+    },
+    {
+      "name": "pauli_realization_addendum",
+      "source": "product_source_mediator_candidate/PAULI_BLOCK_ADDENDUM.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 51266,
+      "end_byte_exclusive": 54588,
+      "bytes": 3322,
+      "sha256": "8d166d5c44512350dd0aa193bb94d28d7a9c9534b9d0958d73ed4decb7d2275f"
+    },
+    {
+      "name": "pauli_analytic_review",
+      "source": "product_source_mediator_exposed_check/pauli_block_addendum/REVIEW.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 54649,
+      "end_byte_exclusive": 61177,
+      "bytes": 6528,
+      "sha256": "4335ef2a21127fb0658c9b39de94e127fba95b3ebbaa3a68ef7d2ed4a898e7c0"
+    },
+    {
+      "name": "controlling_pauli_qualification",
+      "source": "product_source_mediator_pauli_root_review/QUALIFICATION.md",
+      "container": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "start_byte_inclusive": 61248,
+      "end_byte_exclusive": 63581,
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    }
+  ]
+}

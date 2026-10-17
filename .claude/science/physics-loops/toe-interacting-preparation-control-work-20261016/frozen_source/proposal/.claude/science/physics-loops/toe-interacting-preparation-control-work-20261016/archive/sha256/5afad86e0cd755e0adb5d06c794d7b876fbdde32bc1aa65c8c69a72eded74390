@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-16T17:47:16.709438+00:00",
+  "scope": "Metadata-only final refresh of selected original/captured source identities and actual capture receipt/streams",
+  "selected_sources_unchanged": 21,
+  "actual_metadata_runs": 1,
+  "actual_scientific_runs": 0,
+  "receipt_and_launch_capture_hashes_verified": true,
+  "complete_stream_hashes_verified": true,
+  "mathematical_acceptance": null,
+  "canonical_binding": null,
+  "publication": null,
+  "retained_audit": false
+}

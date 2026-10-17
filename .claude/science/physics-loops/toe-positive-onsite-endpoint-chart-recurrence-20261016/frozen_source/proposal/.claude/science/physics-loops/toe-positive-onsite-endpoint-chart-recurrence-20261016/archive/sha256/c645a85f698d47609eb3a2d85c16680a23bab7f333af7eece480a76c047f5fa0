@@ -1,0 +1,160 @@
+{
+  "ODE_steps_executed": 0,
+  "all_16_center_intervals_contain_minus_8_over_15": true,
+  "all_256_imaginary_coordinates_contain_zero_after_analytic_pad": true,
+  "certificate": {
+    "bytes": 154227,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/enclosure_001_output/certificate.json",
+    "sha256": "d4df628f9a021ee7adb9b289df51161adae6bdc6aa793f8692240528deb48509"
+  },
+  "constants": {
+    "analytic_global_augmented_error": {
+      "denominator": 590295810358705651712,
+      "numerator": 81
+    },
+    "analytic_step_error": {
+      "denominator": 2417851639229258349412352,
+      "numerator": 81
+    },
+    "certified_lower_sigma": {
+      "denominator": 126,
+      "numerator": 1
+    },
+    "chosen_r": {
+      "denominator": 231211008,
+      "numerator": 25
+    },
+    "chosen_s": {
+      "denominator": 252,
+      "numerator": 1
+    },
+    "chosen_t": {
+      "denominator": 229376,
+      "numerator": 25
+    },
+    "image_coordinate_rho": {
+      "denominator": 115605504,
+      "numerator": 25
+    },
+    "second_derivative_lipschitz_L": {
+      "denominator": 225,
+      "numerator": 4096
+    }
+  },
+  "controls": {
+    "duplicated_selected_column": {
+      "physical_ODE_reexecuted": false,
+      "residual_square_lower": {
+        "denominator": 139984046386112763159840142535527767382602843577165595931249318810236991948760059086304843329475444736,
+        "numerator": 279968092772277187466537751818304046173241231404105348011333535925694662379509742728424995823616702163
+      },
+      "residual_square_upper": {
+        "denominator": 34996011596528190789960035633881941845650710894291398982812329702559247987190014771576210832368861184,
+        "numerator": 69992023193069307752825766060716114722102717768354244068010961723792065781724586409929902899391145823
+      },
+      "rigorous_half_norm_gate_rejected": true
+    },
+    "omitted_identity_coordinate": {
+      "physical_ODE_reexecuted": false,
+      "residual_square_lower": {
+        "denominator": 139984046386112763159840142535527767382602843577165595931249318810236991948760059086304843329475444736,
+        "numerator": 124874373897279791009585342964480363494451704563583884576058419308480098064473925288513414501100669054587
+      },
+      "residual_square_upper": {
+        "denominator": 139984046386112763159840142535527767382602843577165595931249318810236991948760059086304843329475444736,
+        "numerator": 124874373897279797840477436456749792432612715534153822910256177379391357489851414092038654167746766142613
+      },
+      "rigorous_half_norm_gate_rejected": true
+    },
+    "opposite_derivative_sign": {
+      "physical_ODE_reexecuted": false,
+      "residual_square_lower": {
+        "denominator": 34996011596528190789960035633881941845650710894291398982812329702559247987190014771576210832368861184,
+        "numerator": 2239744742177775040971511582254340047364793479747888820187267876090936558802004730607431410412100467173
+      },
+      "residual_square_upper": {
+        "denominator": 69992023193056381579920071267763883691301421788582797965624659405118495974380029543152421664737722368,
+        "numerator": 4479489484355550299793816367181828465458215301194009869953145391570022666428873520073556173041064131719
+      },
+      "rigorous_half_norm_gate_rejected": true
+    },
+    "trace_normalization_one_half_instead_of_one_quarter": {
+      "physical_ODE_reexecuted": false,
+      "residual_square_lower": {
+        "denominator": 8749002899132047697490008908470485461412677723572849745703082425639811996797503692894052708092215296,
+        "numerator": 139984046386105470763357719616050599062802800583120485796139367632390528767744204522203280491852020197
+      },
+      "residual_square_upper": {
+        "denominator": 17498005798264095394980017816940970922825355447145699491406164851279623993595007385788105416184430592,
+        "numerator": 279968092772210995989413740088091940926139789486052579474493451212667473747376037779463187446303997063
+      },
+      "rigorous_half_norm_gate_rejected": true
+    }
+  },
+  "counts": {
+    "cached_global_matrices": 17,
+    "coefficient_matrices": 1920,
+    "complex_product_cases": 100,
+    "gaussian_multiplier_cases": 250,
+    "jacobian_entries": 256,
+    "positive_division_cases": 70,
+    "raw_complex_coordinates": 256,
+    "residual_entries": 256,
+    "signed_scale_cases": 50
+  },
+  "exact_residual_frobenius_square_upper": {
+    "denominator": 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+    "numerator": 277663866025211806662864381956311784496443347173953313
+  },
+  "existential_integer_bounds": {
+    "M": 147975046,
+    "Q": 591900181,
+    "T_star_upper": 435906772448370095858681692439371430750365584,
+    "n_searched": false,
+    "n_upper": 122742196581907154765214515864883121
+  },
+  "extracted_function_names": [
+    "adjoint",
+    "cadd",
+    "cdiv",
+    "ceildiv",
+    "cgaussian",
+    "cmul",
+    "coefficients",
+    "gmul",
+    "ident",
+    "interval_scale",
+    "kron",
+    "left_accumulate",
+    "madd",
+    "mmul",
+    "pauli_coefficient",
+    "rprod"
+  ],
+  "full_enclosure_replays": 0,
+  "input": {
+    "bytes": 6579,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/inputs/SELECTED_INPUT.json",
+    "sha256": "c708c0ad2b6aafb9da9c309c53c0d7847b05540386ba679ec4ec288cc1de1f80"
+  },
+  "inverse_frobenius_square": {
+    "denominator": 1208925819614629174706176,
+    "numerator": 4666470369165541193611714243
+  },
+  "inverse_integer_bound": 63,
+  "limitations": "Finite arithmetic tests plus exact stored-evidence reconstruction; original pulse/Taylor enclosures not regenerated. Full source and analytic proof review remains essential. No formal runtime/hardware verification, root approval, audit, recurrence execution, target compilation or physical implementation.",
+  "new_scoped_check_executions": 1,
+  "pulse_intervals": {
+    "bytes": 104993,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/enclosure_001_output/pulse_intervals.json",
+    "sha256": "5d67868778e34ac003216906de643ce559a27bb025892ce878c3d10e59c5332b"
+  },
+  "selector_replays": 0,
+  "source": {
+    "bytes": 11860,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_chart_exposed_check/sources/candidate/enclose_chart.py",
+    "sha256": "af32cd53c37df6d21c9dfc75fc0abc6d6f4477aa20322efbd7f55a34315232d9"
+  },
+  "status": "SCOPED_SAVED_EVIDENCE_CHECK_COMPLETED",
+  "utc": "2026-10-16T19:02:44.545501+00:00"
+}

@@ -1,0 +1,23 @@
+"""Identity/capture metadata only; no scientific arithmetic or candidate-source access."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,sys
+O=Path(sys.argv[1]).resolve();N=O.parent;P=N/'endpoint_target_compilation_proposal'
+def pin(p):
+ b=p.read_bytes();return dict(path=str(p),bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+def read(p):return json.loads(p.read_text())
+def same(p,r):assert all(pin(p)[k]==r[k] for k in ['bytes','sha256']),str(p)
+assert pin(P/'FREEZE.json')['sha256']=='c356704d9703b904461c162e72dc50a449b2c7cd8a7f5e07bf0ad8f7d09048f3'
+assert pin(P/'PROPOSAL.md')['sha256']=='9aa1028a51efa1acf5851a5537d07f4b96768f6addc87d003be233d698cbf47f'
+parent_members=read(P/'FREEZE.json')['members']
+for r in parent_members:same(P/r['path'],r)
+rows=[]
+selected=[P/x for x in ['PROPOSAL.md','CURRENT_STATUS.md','FREEZE.json','SOURCE_MANIFEST.json','CURRENT_SOURCE_MANIFEST.json','READ_GUIDE.md','sources/CHART_DERIVATION.md','sources/RECURRENCE_DERIVATION.md']]
+for folder,accept,qual,freeze in [('endpoint_chart_root_review','112ecd184bf4e0fbb76814c73bffe0fa911b35ba808825e09bb574c790f6faf7','6cf3c69fa21a34985fbe1dba646e0512693e65729b373c9d8cfe380e10048f86','d2c3cce2cde80aad2b105ead8a12671bdc8682d90fdc774fe0737e6390aae223'),('endpoint_recurrence_root_review','36e72537f8d2546bc15c9baf69dd526fb22d854bafc36d07a020a7225c73465e','69af491dcc68b0bb96eae71e3b0bef44a9d78a7380d0d388ccc2f233c5db6d55','7e4268')]:
+ root=N/folder
+ for name,expected in [('ACCEPTANCE.json',accept),('FINAL_QUALIFICATIONS.md',qual),('FREEZE.json',freeze)]:assert pin(root/name)['sha256'].startswith(expected);selected.append(root/name)
+ for r in read(root/'FREEZE.json')['members']:same(root/r['path'],r)
+for p in selected:
+ r=pin(p);rel=str(p.relative_to(N));dest=O/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(p.read_bytes());same(dest,r);rows.append(dict(**r,capture=str(dest.relative_to(O))))
+result=dict(kind='analytical_review_source_identity_capture',utc=datetime.now(timezone.utc).isoformat(),proposal_members_identity_verified=len(parent_members),selected_complete_source_files=len(rows),sources=rows,scientific_executions=0,candidate_source_or_output_viewed=False,W_or_Git_mutations=0)
+(O/'SOURCE_IDENTITIES.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(dict(selected_complete_source_files=len(rows),proposal_members_identity_verified=len(parent_members),recurrence_freeze=pin(N/'endpoint_recurrence_root_review/FREEZE.json'),scientific_executions=0,candidate_source_or_output_viewed=False),indent=2))

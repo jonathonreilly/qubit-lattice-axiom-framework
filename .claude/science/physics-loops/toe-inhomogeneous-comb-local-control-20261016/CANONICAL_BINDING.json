@@ -1,0 +1,39 @@
+{
+  "kind": "actual_inhomogeneous_comb_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "source_draft_read_complete": true,
+  "actual_checkout_head": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+  "actual_git_base": "781c50e5391a0e8b9c855154c8e7c1bf5d384aa2",
+  "bound_note_sha256": "d88f51f5d90abca373a312d20580c3fe9dd3e999d1965ec70bd26466fe1670c5",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/0b764c7a3424f8389ff5bbcbe6e533db8eb9b03895ea0db9bee0b137a5eb1bbe.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/169a64730228de2924e03ef8765a77f8835871770f0167ef22ff72969470ba6d.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/182893b9a6c216b33bf4923bb7a308d12e8ec8703769230b8af9164f945ac383.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/25812bc2fb455c702fb471fefaafee254667e6d0907bdc95d68358d0a46d0a1e.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/38150996bde1f5e9001c0dd3a4868389b770f23d78c74d97ecb1f3f29ace7034.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/6319c667e87ca54a3ce4cc6cc65e283934bb49174dbdee9bd1e1c24716584cd5.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/713e7b9c909f79dbb0748427be6067bee68f593b4718f16a39239fc480a07fad.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/71e0a6122c23ee48b7b07a955bd0e1183c494f710b7cd648688ecbddbe17e9f1.md",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/804620a77cc38c1a4ef2ac8c5bec38c12ca72b6011496eab491bc7b9b0e3e9e1.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/83f83335a635675b2413b14fd71a8da05602027173aa37ebf9403a06efc366d1.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/99e7085cb95d29f21921e6284b12b490b07e01fba8f03b42d4744f6117ea5d43.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/9c1f039b4859779ccd2706aed53f83afc6bd92eb5ba7068023d9139c5e7d7928.md",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/a845f91de69f987476ea733f0eaa597ddffe0ed880ea68bfce8f8d4f5a8bc268.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b077d18b62d5ac4835fbdb5f0238a4f722a29fefd95fff7103c9e54e5cb722ae.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/b2161150997749c72ad1e0867a4fcf519ebdbfa07bd526d1faa552eb1f567428.py",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/cad5e13d4f998afdc9bf037517f34e4beef695a6128b4ca38620d3a2987a57c2.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d7108dc3ea4a489ef1cd0810ebfe574157971eff9f990630325d40899b10cb4a.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/d775fe2422c3e18d811bc269380f5563e73fe3ea0ff750b654492561338030eb.json",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/da39a69e6dc83d79d3eedcf99822bbaf0383975e2a6fb5cce6984f577f9ca8ab.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f01b624ea67460da171a37948375b40e1385d1e84ada45fdea5482afcfb6f149.blob",
+    ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/f6e5c80aa44e74788d3cb5507264c935dadec670add64b67d09bc5b2186c7a78.json"
+  ],
+  "canonical_review": {
+    "path": ".claude/science/physics-loops/toe-inhomogeneous-comb-local-control-20261016/binding_sources/51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a.json",
+    "bytes": 43619,
+    "sha256": "51fdc38d9618517e82109cf425951c82b653e4edfa0154d4f69fc569de96041a"
+  }
+}

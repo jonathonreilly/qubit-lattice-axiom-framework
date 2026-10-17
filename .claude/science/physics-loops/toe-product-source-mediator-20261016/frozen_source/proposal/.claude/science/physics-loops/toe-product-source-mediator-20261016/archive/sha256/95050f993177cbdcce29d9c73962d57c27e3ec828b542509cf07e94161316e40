@@ -1,0 +1,19 @@
+{
+  "scope": "metadata only; no scientific execution",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/pauli_block_addendum/inspect_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/product_source_mediator_exposed_check/pauli_block_addendum",
+  "started_at": "2026-10-16T21:44:18.657283+00:00",
+  "finished_at": "2026-10-16T21:44:18.732474+00:00",
+  "elapsed_seconds": 0.0748663330450654,
+  "exit_code": 0,
+  "timeout_seconds": 30,
+  "timed_out": false,
+  "source_sha256": "85bf5c491574d901c18bf186ae9fb41d113dc5ef578d11e79f90ba532829894d",
+  "launcher_sha256": "8d7c03799d95f281c4a9802bb40d4bdcbc40cac74ee83e5b0b04d1080073e4e6",
+  "source_unchanged_during_run": true,
+  "scientific_executions": 0
+}

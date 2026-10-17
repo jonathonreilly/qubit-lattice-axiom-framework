@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-16T22:31:38.650601+00:00",
+  "old_nodes_preserved": 7203,
+  "old_edges_preserved": 16157,
+  "new_node": {
+    "claim_id": "product_source_controlled_stop_bounded_theorem_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "product_source_mediator_bounded_theorem_note_2026-10-16"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "49788e6b786164a4b34946e465e6f26337c51f356447cc9a1cdc6d6d312e530f",
+    "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "runner_path": "scripts/product_source_controlled_stop_2026_10_16.py",
+    "title": "Product-source installation, mean work and supplied external stopping"
+  },
+  "new_edges": 1,
+  "new_roots": 0,
+  "graph": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph.json",
+    "bytes": 10526786,
+    "sha256": "708b5149059048507cefa061aef2a4578115c1915a46f40a0252ad12e81ccdb9"
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+    "bytes": 1027652,
+    "sha256": "9b76a53a569bcbdbcaabdebd65d9ad8eedaa36375d3b369054422036c3eae52f"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "root_uniform_word_qualified_decision_freeze",
+  "members": [
+    {
+      "path": "FINAL_QUALIFICATIONS.md",
+      "bytes": 6625,
+      "sha256": "217aa264b321a2350613bcd1349bf394151c4485d0a47a58f44d380b548fb780"
+    },
+    {
+      "path": "QUALIFIED_ACCEPTANCE.json",
+      "bytes": 2594,
+      "sha256": "bfb3169ad9f09e65d510378f23379ead74224b37c6cafe9f1a0112da01da36a7"
+    }
+  ]
+}

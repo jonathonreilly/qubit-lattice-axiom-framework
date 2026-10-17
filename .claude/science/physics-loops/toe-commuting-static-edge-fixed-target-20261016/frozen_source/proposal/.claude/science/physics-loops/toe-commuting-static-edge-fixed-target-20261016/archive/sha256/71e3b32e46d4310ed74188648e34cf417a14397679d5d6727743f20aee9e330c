@@ -1,0 +1,11 @@
+# Exact root-supplied question used here
+
+Derive or obstruct a preinstalled static positive ordinary edge interaction for the existing two-qubit plant
+
+    K=2I+ZZ,
+    W=[(9+12i)I+(-16+12i)XX]/25,
+    T=350208522228384946904887108861751911074590975328100424043350794320.
+
+The requested endpoint is W exp(-iTK), including scalar. The requested finite output window is exp(-isK) W exp(-iTK), 0<=s<=24. The added incident cap is 2. Keep all old/reference outputs and add no quantum registers or launch interventions. Supplying an XX edge is a new implementation contract, distinct from the original four onsite positive rays, and is not a native-hardware proof. Installation/readiness, exact versus approximate inputs, energy/timing/precision and indefinite halt/reuse limits must remain explicit.
+
+This is a bounded analytical task. No scientific code, prior-science replay, Git/W/PR mutation, other agents or model change is authorized. Do not read endpoint_finite_quantum_actuator_candidate before the initial derivation freeze. The optional existing root qualification prefix3982 is context only and was not used here. The exact parent message was received in this worker's conversation; this file records its mathematical input and restrictions, not a fabricated external source receipt.

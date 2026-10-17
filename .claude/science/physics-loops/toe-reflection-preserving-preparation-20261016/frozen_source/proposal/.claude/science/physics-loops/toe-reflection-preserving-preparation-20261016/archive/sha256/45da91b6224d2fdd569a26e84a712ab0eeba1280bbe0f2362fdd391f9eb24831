@@ -1,0 +1,69 @@
+"""One complex128 full 6-qubit interaction-picture fixture; no ODE/interval certification."""
+from pathlib import Path
+import hashlib,json,math,numpy as np
+from scipy.linalg import expm
+M=6;n=M//2;L=M-1;d=2**M
+I2=np.eye(2,dtype=complex);Y=np.array([[0,-1j],[1j,0]],complex);N2=np.diag([0,1]).astype(complex)
+I=np.eye(d,dtype=complex)
+def embed(ops):
+ z=np.array([[1]],complex)
+ for j in range(1,M+1):z=np.kron(z,ops.get(j,I2))
+ return z
+N=[embed({j:N2}) for j in range(1,M+1)];B=sum(N)
+F={j:embed({j-1:N2,j:Y,j+1:I2-N2}) for j in range(2,M)}
+prefix=[]
+for m in range(M+1):
+ p=np.zeros(d,complex);p[((1<<m)-1)<<(M-m)]=1;prefix.append(p)
+P=np.column_stack(prefix);J=np.zeros((d,d),complex)
+for a in range(d):
+ reverse=int(format(a,'0'+str(M)+'b')[::-1],2);J[(d-1)^reverse,a]=1
+S=np.column_stack([prefix[n]]+[(prefix[n-k]+prefix[n+k])/np.sqrt(2) for k in range(1,n)])
+G=[(F[n+k+1]-F[n-k])/(np.sqrt(2) if k==0 else 1) for k in range(n-1)]
+coeff=np.array([np.sqrt(2/M)]+[np.sqrt(4/M)*np.cos(np.pi*k/M) for k in range(1,n)])
+theta=np.array([np.arccos(coeff[k]/np.linalg.norm(coeff[k:])) for k in range(n-1)])
+beta=sum(np.sqrt(2/M)*np.sin(np.pi*m/M)*prefix[m] for m in range(1,M))
+norm=lambda a:float(np.linalg.norm(a,2))
+symmetry=max(norm(J@f@J+F[M+1-j]) for j,f in F.items())
+prefix_leak=max(norm((I-P@P.conj().T)@f@P) for f in F.values())
+restricted=[]
+for k,A in enumerate(G):
+ y=np.zeros((n,n),complex);y[k+1,k]=1j;y[k,k+1]=-1j
+ restricted.append(norm(S.conj().T@A@S-y))
+assert symmetry<1e-12 and prefix_leak<1e-12 and max(restricted)<1e-12
+assert norm(J@B@J-(M*I-B))<1e-12
+assert max(norm(J@A-A@J) for A in G)<1e-12
+vac=prefix[0];v=vac.copy()
+for j in range(1,n+1):v=expm(-1j*(2*np.pi*I+(np.pi/2)*embed({j:Y})))@v
+assert norm(v-prefix[n])<1e-12
+h=max(8*6*np.pi,np.sqrt(16*np.pi*6*np.pi),16*np.pi);tau=M*h
+# This fixture has exact intended tau/(2pi)=144; enclose by rational144, k146.
+assert abs(tau/(2*np.pi)-144)<1e-10
+lam=2*np.pi*146-tau;assert 1.5*np.pi<lam<=4.5*np.pi
+free=expm(-1j*tau*B);phase=expm(-1j*lam*B)
+def circuit(errors,unmatched=False,wrong_center=False):
+ z=v.copy();minimum=[];global_action_bound=0
+ for k,delta in enumerate(errors):
+  nu=np.sqrt(2) if k==0 else 1
+  if wrong_center:nu=1
+  cp=(theta[k]+delta)/nu;cm=(theta[k]+(0 if unmatched else delta))/nu
+  Qp=2*np.pi*I+cp*F[n+k+1];Qm=2*np.pi*I-cm*F[n-k]
+  minimum.extend([float(np.linalg.eigvalsh(Qp)[0]),float(np.linalg.eigvalsh(Qm)[0])])
+  z=expm(-1j*(Qp+Qm))@z
+  global_action_bound+=2*abs(delta)/nu
+ return free@phase@z,min(minimum),global_action_bound
+def stats(z):
+ mean=float(np.vdot(z,B@z).real);second=float(np.vdot(z,B@B@z).real)
+ return dict(norm=float(np.linalg.norm(z)),mean=mean,variance=second-mean**2,vector_error=norm(z-beta),prefix_leak=norm((I-P@P.conj().T)@z),reflection_error=norm(J@z-z))
+nominal,m0,_=circuit([0.,0.]);matched,m1,action=circuit([.13,-.09]);unmatched,m2,_=circuit([0.,.11],unmatched=True);badnorm,m3,_=circuit([0.,0.],wrong_center=True)
+results={key:stats(z) for key,z in [('nominal',nominal),('matched_angle_errors',matched),('unmatched_second_pair',unmatched),('omitted_center_normalization',badnorm)]}
+eta=.22;variance_bound=2*np.sqrt(2/n)*(n-1)**2*eta+(n-1)**2*eta**2
+assert results['nominal']['vector_error']<1e-10
+assert results['matched_angle_errors']['vector_error']<=eta+1e-10
+assert abs(results['matched_angle_errors']['mean']-n)<1e-10
+assert results['matched_angle_errors']['reflection_error']<1e-10
+assert abs(results['matched_angle_errors']['variance']-results['nominal']['variance'])<=variance_bound+1e-10
+assert abs(results['unmatched_second_pair']['mean']-n)>1e-3
+assert results['omitted_center_normalization']['vector_error']>.1
+assert min(m0,m1,m2,m3)>0
+result=dict(scope='One floating complete 64-dimensional interaction-picture pulse fixture, with exact-analytic lab carrier/phase relation evaluated numerically. No time discretization, interval bounds, physical supplier, general-n proof or independent replay.',M=M,L=L,n=n,theta=theta.tolist(),actual_scalar_reserves='Two simultaneous 2pi identities on every paired spreading slot; exact full exp of their sum, including overlapping center.',prefix_leak=prefix_leak,reflection_operator_residual=symmetry,restricted_generator_residuals=restricted,initial_fill_error=norm(v-prefix[n]),tau=tau,lambda_final=lam,results=results,positive_minima=[m0,m1,m2,m3],matched_eta=eta,matched_full_operator_action_upper_bound=action,variance_error_bound=variance_bound,scientific_executions=1,independent_validation=False)
+print(json.dumps(result,indent=2))

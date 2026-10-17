@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/positive_onsite_target_compilation_2026_10_16.py
+runner_sha256: f9fee8e994919b2d845fc95833bb6baf6fb19752f7c8436d45f01ed8747f1d77
+input_fingerprint_sha256: 737c3730f860d2517c8afad56cd157d808392eb8f58fc8eca31906bc0b9ca5c0
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{"historical_programs_replayed": 0, "mathematics_or_retention_certified": false, "result": "source_integrity_verified", "scientific_programs_run_this_primary": 0, "scope": "Exact source/body/review/base/receipt provenance only"}
+per_element: literal K=2I+ZZ; complete positive onsite rays and all identity reserves
+per_site: two-qubit plant, external clocks, precision, isolation and smooth controls remain supplied
+per_mode: full U(4) scalar phase and arbitrary old/reference input; no determinant normalization
+per_block: one fixed entangling target, exact positive-time word and astronomical duration
+lattice_wide: one historical author run and one saved-arithmetic Fraction check; no replay, second ODE or native controller
+
+----- stderr -----
+

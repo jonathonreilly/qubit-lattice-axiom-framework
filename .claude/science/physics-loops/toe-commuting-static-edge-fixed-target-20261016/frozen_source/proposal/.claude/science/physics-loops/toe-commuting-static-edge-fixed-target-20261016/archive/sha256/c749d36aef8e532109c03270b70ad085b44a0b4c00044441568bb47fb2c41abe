@@ -1,0 +1,11 @@
+# Read-attempt limits preserved from this session
+
+These are retrospective descriptions of tool calls observed in this review, not fabricated execution receipts. Actual new metadata commands have separate full command outputs and receipts.
+
+1. An unfiltered read-only git ls-tree inventory over docs and .claude was too large for the tool display (approximately 5.7 MB; truncated). It was not treated as inspected. The later filename-filtered targeted_ledger_inventory.txt is the retained bounded inventory; four selected ledgers were read completely.
+2. A git rev-parse attempt compared the current workflow blob with 56c5c0ab64f532c5784e895b2f9aa6894fa334e0 as though that instruction identity were an appropriate tree. It exited 128. The current workflow blob was observed as bea573caf2b0ea43a2c6519c9a474d7a10d82965; the complete current workflow was then read. No conclusion depends on the invalid comparison.
+3. An author metadata read guessed stdout/stderr without their .txt extensions. Those two files did not exist; the command exited 1 after displaying other requested source/receipt bytes. The actual stdout.txt and stderr.txt were subsequently read completely and are captured unchanged.
+4. The installed no-go skill display was truncated by the requested output limit. The complete canonical skill at the explicitly selected current commit was read and is controlling. The metadata check records installed/canonical identity without treating a truncated display as full coverage.
+5. The author EXPOSURE.md records its own failed patch due to context mismatch and subsequent corrected edit. That preserved editing history is not counted as a failed scientific family or launch.
+
+There was no scientific launch, timeout, retry or scientific result generated during this cross-review. Missing historical full tool streams are not reconstructed or claimed to exist.

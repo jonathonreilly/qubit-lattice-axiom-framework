@@ -1,0 +1,7 @@
+# Weak-mediator window and reuse: separate exposed check
+
+`REVIEW.md` reconstructs the larger-window constants, the source-retaining telescoping proof, the literal-aging timing boundary and finite-use resource bounds. The conditional inequalities check out. No compiler or physical evolution was executed.
+
+The proof permits actual source correlations accumulated during reuse, because its local estimate is applied to an ideal prefix. It requires source-identity intervention interfaces and an exact initial Bell source or separately budgeted full initial-state error. Its window is relative to actual old aging; its time bounds count mediator intervals, excluding physical implementations of optional interventions.
+
+`sources/WINDOW_REUSE_ADDENDUM.md` is an exact captured source. `SOURCE_EXPOSURE.json` pins the unchanged earlier review packets without recursively copying their archives. `runs/metadata_inspection/` contains the actual metadata launch, distinct executed source copy, recorder, full stdout/stderr and receipt. `FINAL_FREEZE.json` seals this new packet. No root approval, retained verdict or publication is generated here.

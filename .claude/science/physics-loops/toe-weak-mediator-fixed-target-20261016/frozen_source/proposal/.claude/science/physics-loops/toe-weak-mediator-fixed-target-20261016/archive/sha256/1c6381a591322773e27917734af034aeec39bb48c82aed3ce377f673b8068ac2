@@ -1,0 +1,197 @@
+# Separate analytical review of finite coefficients and the scaled family
+
+The original reconstruction in `REVIEW.md` was completed and sealed as `ORIGINAL_REVIEW_FREEZE.json`, SHA256 `42def22e10aa3e120a3bdf0ae4e2d7d8b8bc151f240543cfcb5ee82d18b34192`, before either addendum was read. That reconstruction remains unchanged. This document separately reviews:
+
+- `DYADIC_ADDENDUM.md`, SHA256 `2ad3573fe74805c1f25be99f18a2eb7e70e405ebff295182557a386a6bbdf517`;
+- `SCALING_ADDENDUM.md`, SHA256 `7a48fcff7b3b4c27fbf4f4e01f280293b79b69b3f11421e14118ba06be773dda`.
+
+Both complete root-authored texts were exposed before their respective analysis. No coefficient list, interval computation, Hamiltonian evolution, or scientific program was executed. The scalar, residual and full-reference facts used below are reconstructed in the separately sealed original review, rather than inherited from a root acceptance verdict.
+
+**Finding.** The fixed-duration dyadic bound and the accuracy-scaled error allocations are valid under the stated certified-approximant interface. A floor expression does not constitute a computed coefficient list or a uniformly terminating interval-floor algorithm at equality. An explicit lower-endpoint interval variant avoids that boundary issue by allowing twice the grid spacing as error; its constants are given below. The scaling addendum's initial-source trace allowance additionally needs an independent supplied source state, or a bound on the full initial joint-state error. A source-marginal trace bound alone is insufficient if arbitrary initial correlations are admitted. Neither qualification changes the exact ideal Hamiltonian.
+
+## 1. Fixed-duration dyadic parameters
+
+Let `h=2^-400`, with the original fixed `T`, and suppose the three coefficients satisfy
+
+\[
+0\le g_x-\widehat g_x\le h,\quad
+0\le g_y-\widehat g_y\le h,\quad
+0\le\Delta-\widehat\Delta\le h.
+\tag{A1}
+\]
+
+The floor definitions have strict error below `h` and are one mathematical choice. The more general certified lower approximants in (A1) are also sufficient.
+
+The displayed integer `T` has 22 groups of three decimal digits. Thus `10^65<=T<10^66`, and certainly `T<2^300`: `2^300=(2^10)^30>10^90`. Its lower bound `T>2^128` used in the original review also follows, for example from `2^128<2^130=(2^13)^10<10^40`. These are comparisons of the supplied literal integer, not numerical evolution or coefficient computation.
+
+Since `theta>pi/4>3/4` and `Delta>3/2`,
+
+\[
+g_x^2=\frac{\theta\Delta}{2T}>\frac9{16T},\qquad
+g_y^2=\frac\theta T>\frac3{4T}.
+\]
+
+Using `T<2^300` gives `gx>3*2^-152>2^-151` and `gy>sqrt(3)*2^-151>2^-151`. Thus subtracting at most `2^-400` cannot make either coefficient zero or negative. The source coefficient is also strictly positive. Lower rounding preserves every added incident cap because
+
+\[
+\widehat r=2(\widehat g_x+\widehat g_y)\le r,
+\qquad \widehat\Delta+\widehat r\le\Delta+r<2.
+\]
+
+The same supports, positive-block form and zero runtime slew therefore remain valid.
+
+The tunable coefficients `gxhat,gyhat,Deltahat` have denominator `2^400`. Since each is less than 2, their integer numerators have at most 401 bits; the denominator also has 401 bits. The smaller port coefficients in fact need fewer numerator bits. This is an encoding statement for those scalar coefficients. If the complete matrix entries are expanded, the fixed Bell projector has factors of `1/2`, so an additional denominator bit can appear. That does not invalidate the coefficient claim or the finite encoding statement, but one must not identify the coefficient denominator with every expanded matrix-entry denominator without this distinction.
+
+## 2. Scalar separation and the rounded error budget
+
+Define the actual rounded nonscalar generator
+
+\[
+\widehat A=K+\widehat\Delta Q_c
+ +\widehat g_x(X_1X_A+X_2X_B)
+ +\widehat g_y(Y_1Y_A-Y_2Y_B),
+\]
+
+where `Qc=I-|Phi+><Phi+|` on the source, and the actual full Hamiltonian is `Hhat=Ahat+rhat I`. The ideal nonscalar generator is `A=H0+V`. The three operator factors in `E=Ahat-A` have norms 1, 2 and 2 respectively: the two terms within each port sum commute, and the triangle bound already suffices. Hence (A1) proves
+
+\[
+\|E\|\le (1+2+2)h=5h.
+\tag{A2}
+\]
+
+Multiplying both comparisons by the actual scalar `exp(-i rhat t)` gives
+
+\[
+\begin{aligned}
+&\|e^{-it\widehat H}J-J e^{-i\widehat r t}e^{-isK}W e^{-iTK}\|\\
+&\qquad\le \|e^{-it\widehat A}J-e^{-itA}J\|+\epsilon_*(T)
+\le 5th+\epsilon_*(T).
+\end{aligned}
+\tag{A3}
+\]
+
+This explicitly justifies why the scalar rounding error is absent from (A2): the required source comparison is `chihat(t)=exp(-i rhat t)Phi+`. It has not been deleted from the actual evolution. If the specification instead insisted on the original `exp(-irt)Phi+`, one would need the additional scalar difference bound; that is a different output specification.
+
+On `T<=t<=T+24<2T`,
+
+\[
+5th<10\,2^{300}2^{-400}=10\,2^{-100}<2^{-96}.
+\]
+
+Combining this with the already proved ideal `epsilon_*(T)<2^-48` yields a rounded full-isometry error strictly below `2^-47`, as claimed. The unhalved joint-reference trace error is at most twice this isometry error, hence below `2^-46`. All source qubits and the reference remain in that comparison.
+
+The rounded coefficients need not satisfy the exact second-order tuning equation. Equation (A3) compares the two full Hamiltonians, so it does not assume that the ideal effective `H2` is unchanged after rounding. The exact initial mean and variance nevertheless retain their stated forms with hats: `Hhat J=J(K+rhat I)+Vhat J`, while the source block still annihilates `Phi+`. Full moments are conserved by the actual static `Hhat`. These conclusions require the same supplied source preparation and do not price its preparation or installation work.
+
+## 3. Equality boundary: what is established and what is not
+
+The real-number expression `floor(2^400 x)/2^400` defines a rational number. It does not exhibit its numerator or certify that a particular computed integer is correct. Computability of a real number alone does not give a general terminating method for deciding its floor at a grid boundary from successively narrower enclosing intervals.
+
+Allowing a lower `h`-grid approximant with error **at most** `h` still does not, by itself, solve that algorithmic issue. At `x=k h`, the valid grid choices are `(k-1)h` and `kh`; in a strict interval that straddles `kh`, values just below the boundary require the former and values just above require the latter. No single candidate can be certified for both sides with error at most `h`. Thus an interval procedure whose stopping criterion requires that certificate need not terminate at equality. The addendum correctly leaves its coefficient certification conditional and explicitly disclaims a concrete floor implementation.
+
+There is a simple constructive **variant**, with a slightly relaxed coefficient error, that does not need an equality decision. Compute a certified rational interval `[L,U]` containing `x`, of width at most `h`, and set
+
+\[
+a=h\lfloor L/h\rfloor.
+\]
+
+Rational floor is an ordinary exact integer operation. Then
+
+\[
+a\le L\le x,\qquad x-a\le U-L+(L-a)<2h.
+\tag{A4}
+\]
+
+This always terminates once a width-`h` enclosure is supplied, including when `x` is exactly a grid point. Certified arbitrarily narrow enclosures for the specific coefficients can in principle be obtained by rational arithmetic, alternating-series enclosures for arctangents (including `pi/4=atan(1)`), and rational square-root bisection on positive intervals. This is an existence recipe, with no runtime-efficiency claim and no actual evaluation performed here.
+
+For the fixed-duration problem, using (A4) with the same 400-bit grid gives `||E||<10*2^-400` and Duhamel error below `20*2^-100<2^-95`. The final full-isometry bound is still below `2^-47`; positivity and lower-rounding caps also survive. Thus a theorem using error below twice the grid spacing has an equality-safe construction and keeps the same scalar-coefficient bit limit. Alternatively, a 401-bit grid and a width-`2^-401` enclosure preserve the original absolute error `2^-400`, at the cost of one extra grid bit. Neither alternative is a claim that its actual coefficient integers have been computed, certified, or supplied to hardware.
+
+## 4. Accuracy-scaled family and the changed runtime contract
+
+The scaling addendum changes the runtime from the previous fixed external-word duration to
+
+\[
+\epsilon=2^{-m},\quad T_m=2^{2m+32},\quad m\in\mathbb Z_{\ge0},
+\qquad w=24.
+\]
+
+It keeps the same fixed `K`, `W`, `theta`, `delta`, source Hamiltonian form and port permissions, with `q=theta/T_m`. The exact spectral and scalar identities in the original reconstruction are algebraic in `T` and hold at this new positive `T_m`. The residual proof itself needs `T>=24`, not `T>2^128`; the latter was only a convenient numerical error bound for the old duration. Already at `m=0`, `T_m=2^32>24`.
+
+With `A(T)=12352/sqrt(T)+132480/T`, direct division gives
+
+\[
+\frac{A(T_m)}\epsilon
+=\frac{12352}{2^{16}}+\frac{132480}{2^{32}}2^{-m}
+\le \frac{193}{1024}+\frac{1035}{2^{25}}
+=\frac{6325259}{33554432}<\frac14.
+\tag{A5}
+\]
+
+The last strict inequality compares the numerator with `8388608`. It includes the entire window contribution `384/T`; that term has not been omitted or counted twice.
+
+The ideal port norm sum satisfies
+
+\[
+r<4/\sqrt{T_m}=2^{-(m+14)}\le2^{-14}<\delta.
+\]
+
+Thus the caps are valid even at `m=0`; the old total still includes its separate norm-3 `K`. The coefficients satisfy
+
+\[
+g_x>3\,2^{-(m+18)}>2^{-(m+17)},
+\qquad g_y>\sqrt3\,2^{-(m+17)}>2^{-(m+17)}.
+\]
+
+For `p=3m+38`, the proposed lower coefficient error `2^-p` is strictly smaller than either port coefficient for all `m>=0`. Hence the rounded positive blocks remain strictly positive in their nonzero eigenvalue and retain the same supports. Their scalar numerators have at most `p+1` bits because the coefficients are below 2.
+
+For certified lower errors at most `2^-p`, (A2) and `t<2T_m` give
+
+\[
+5t2^{-p}<10\,2^{2m+32}2^{-(3m+38)}
+=\frac5{32}\epsilon.
+\]
+
+Together with (A5), this yields
+
+\[
+\text{full-isometry error}<\frac{13}{32}\epsilon<\frac\epsilon2,
+\qquad
+\text{unhalved joint trace error}<\frac{13}{16}\epsilon<\epsilon.
+\tag{A6}
+\]
+
+These constants are correct. With the equality-safe lower-endpoint algorithm (A4), use instead `p=3m+39` and interval width at most `2^-p`. Its error is below `2*2^-p`; consequently `||E||<10*2^-p`, and
+
+\[
+t\|E\|<20\,2^{2m+32}2^{-(3m+39)}
+=\frac5{32}\epsilon,
+\]
+
+preserving (A6). This one-bit variant is an explicit algorithmic adjustment, not an assertion that the original `p=3m+38` floor procedure has already been implemented. No list of actual rounded coefficients is part of this review.
+
+## 5. Initial-source defect and arbitrary references
+
+The addendum's extra `delta_init` allowance is valid when the supplied source is an independent state `tau_AB` with
+
+\[
+\|\tau_{AB}-|\Phi_+\rangle\langle\Phi_+|\|_1\le\delta_{\rm init},
+\]
+
+and the full initial state is `rho_SR tensor tau_AB`. The product trace norm equals the source trace norm, and the common unitary on old plus source (tensored with the identity on the reference) preserves the difference. The triangle inequality with (A6) then gives final unhalved joint trace error below `epsilon+delta_init`. The same reasoning works if a bound of `delta_init` on the **full** initial old/reference/source deviation from the intended product state is supplied directly.
+
+If only the source marginal is controlled while arbitrary pre-existing correlations are allowed, that linear allowance is not justified. For example, choose an orthogonal source vector `Xi` and let
+
+\[
+|\Omega\rangle=\sqrt{1-\eta}\,|0\rangle_S|\Phi_+\rangle
+ +\sqrt\eta\,|1\rangle_S|\Xi\rangle,
+\qquad 0<\eta<1/2.
+\]
+
+Its source marginal has trace defect `2 eta`. The full state differs from `rho_S tensor |Phi+><Phi+|` by at least `2 sqrt(eta(1-eta))` in trace norm: the norm-1 Hermitian witness `|0,Phi+><1,Xi|+|1,Xi><0,Phi+|` has that expectation difference. This is larger than `2 eta` for the stated range. Consequently source-marginal closeness alone cannot be substituted for the full initial error bound. This example does not contradict the original product-source embedding; it identifies the assumption needed when extending it to an imperfect source.
+
+## 6. Resource and decision limits
+
+For this fixed target in the newly supplied interaction model, `gx` and `gy` are constant multiples of `epsilon`, `T_m=2^32 epsilon^-2`, and the sufficient absolute coefficient tolerance is a constant multiple of `epsilon^3`. The bit lengths are `O(log(1/epsilon))` as `epsilon` tends to zero. These are constructive upper bounds within the conditional model, not optimality, necessary precision, efficient parameter synthesis, laboratory availability, or preparation/reset bounds. The fixed numerical prefactors and the unassigned physical energy/time units must remain visible.
+
+At `epsilon=2^-44`, `T_m=2^120` follows from `2m+32=120`. This is smaller than the old supplied duration, but it changes the runtime and interaction contract. It does not shorten or re-execute the earlier positive-onsite target word, and it does not realize the new port/source interactions from those onsite rays. The ideal target still commutes with `K`; the full energy identities and static work qualifications remain those of the original review, with actual rounded coefficients where applicable.
+
+The addenda are therefore analytically supported with the certified-approximant/equality-boundary and initial-source independence qualifications above. The optional interval construction has been proved symbolically here, but it has not been run. Root qualification, actual coefficient computation, physical realization, canonical integration, publication and retained audit status remain outside this review.

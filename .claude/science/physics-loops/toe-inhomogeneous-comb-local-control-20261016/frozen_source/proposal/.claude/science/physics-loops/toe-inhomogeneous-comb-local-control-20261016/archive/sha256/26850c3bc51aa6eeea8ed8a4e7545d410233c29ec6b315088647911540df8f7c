@@ -1,0 +1,29 @@
+"""Bounded metadata source capture, preserving the actual executable and streams."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+import subprocess
+import sys
+import time
+OUT=Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_local_control_independent_candidate')
+run=OUT/'runs/source_capture';run.mkdir(parents=True,exist_ok=False)
+executed=run/'executed_source.py';executed.write_bytes((OUT/'capture_sources.py').read_bytes())
+launcher=run/'launcher_source.py';launcher.write_bytes(Path(__file__).read_bytes())
+sha=lambda raw:hashlib.sha256(raw).hexdigest()
+argv=[sys.executable,'-B',str(executed)]
+env=dict(os.environ);env['PYTHONDONTWRITEBYTECODE']='1'
+receipt={'kind':'actual_metadata_only_source_capture','scientific_execution':False,'argv':argv,'cwd':str(OUT),'start_utc':datetime.now(timezone.utc).isoformat(),'timeout_seconds':60,'source_sha256':sha(executed.read_bytes()),'launcher_sha256':sha(launcher.read_bytes())}
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+start=time.monotonic()
+try:
+ result=subprocess.run(argv,cwd=OUT,env=env,capture_output=True,timeout=60)
+ stdout,stderr=result.stdout,result.stderr;receipt['exit_code']=result.returncode
+except Exception as exc:
+ stdout=getattr(exc,'stdout',None) or b'';stderr=(getattr(exc,'stderr',None) or b'')+repr(exc).encode()
+ receipt['exit_code']=None;receipt['exception']=repr(exc)
+(run/'stdout').write_bytes(stdout);(run/'stderr').write_bytes(stderr)
+receipt.update(end_utc=datetime.now(timezone.utc).isoformat(),elapsed_seconds=time.monotonic()-start,stdout_bytes=len(stdout),stdout_sha256=sha(stdout),stderr_bytes=len(stderr),stderr_sha256=sha(stderr))
+(run/'EXECUTION.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2));sys.exit(0 if receipt['exit_code']==0 else 1)

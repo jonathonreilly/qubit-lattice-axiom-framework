@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-16T20:13:09.777176+00:00",
+  "status": "source-only proposed gap decision; no construction or no-go theorem",
+  "scientific_launches": 0,
+  "metadata_capture_exit_code": 0,
+  "scope": "selected exact-source comparison and analytical certificate specification",
+  "source_exposure": "same-model author continuation",
+  "members": [
+    {
+      "path": "GAP_DECISION.md",
+      "bytes": 19949,
+      "sha256": "ab3343008daee6c56e6c773041f036516604a027b0cbb8629061876db33a10bc"
+    },
+    {
+      "path": "READ_GUIDE.md",
+      "bytes": 2453,
+      "sha256": "8b28007370850f1047c79159c4d5e0360caa2c80535d173485b0274e832f4e71"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6489,
+      "sha256": "db3794fe7253b5e992c7b159382e8aa0237000daad341abb6217cf5d8765ced8"
+    },
+    {
+      "path": "capture_sources.py",
+      "bytes": 3888,
+      "sha256": "6ea645d7c7b34d1fef879f580b88a36b4c907bf29ee7d61aa2cc416810424e26"
+    },
+    {
+      "path": "freeze_packet.py",
+      "bytes": 2632,
+      "sha256": "81d8e41f120d6ee0f02afda9082a8c95ac75bbb58bc2847248be095fc6910ebe"
+    },
+    {
+      "path": "record_metadata.py",
+      "bytes": 2091,
+      "sha256": "aa653543df8a50ff62888c710bbb05c572f53422a2b2ef92f4596b79549cb663"
+    },
+    {
+      "path": "runs/capture_001/EXECUTION.json",
+      "bytes": 1119,
+      "sha256": "759d96557ed5b03cb7065072a8b1cb996ec27e8a6a5a0acfcb4ea1eb91b93d78"
+    },
+    {
+      "path": "runs/capture_001/recorder_at_launch.py",
+      "bytes": 2091,
+      "sha256": "aa653543df8a50ff62888c710bbb05c572f53422a2b2ef92f4596b79549cb663"
+    },
+    {
+      "path": "runs/capture_001/source_at_launch.py",
+      "bytes": 3888,
+      "sha256": "6ea645d7c7b34d1fef879f580b88a36b4c907bf29ee7d61aa2cc416810424e26"
+    },
+    {
+      "path": "runs/capture_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/capture_001/stdout.txt",
+      "bytes": 1579,
+      "sha256": "202d17bc3b3b20780797bfda60842b14d183fc88755ffe27a4626df44a03148b"
+    },
+    {
+      "path": "sources/A__AUTONOMOUS_COMPILER_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 69312,
+      "sha256": "baea95d22b229fad3c0aa166bff5608f9edfe7ea973ff0252fbc5cd9b1389007"
+    },
+    {
+      "path": "sources/B__BOUNDED_SLEW_POSITIVE_TIME_COMPILER_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 56587,
+      "sha256": "e6bb3a0dacd3ac6a2161e4471155b1d269137470bd84dffb5758b8e8675636ba"
+    },
+    {
+      "path": "sources/C_derivation__DERIVATION.md",
+      "bytes": 13857,
+      "sha256": "ee155a4c0d28f86a3d8edaac60fadf21acf9886cbb0e765bc5a2aff08ae71737"
+    },
+    {
+      "path": "sources/C_freeze__FREEZE.json",
+      "bytes": 22438,
+      "sha256": "0f61e1040c491541eb24e4f94396d805c1b6a251202485c276570af1491d31fc"
+    },
+    {
+      "path": "sources/C_ledger__RESOURCE_LEDGER.json",
+      "bytes": 1311,
+      "sha256": "cdcd39086328fbaf5da3e252550dbd3e12dc314e7eba80aaaebf4bd4cd9c7c11"
+    },
+    {
+      "path": "sources/C_result__RESULT.md",
+      "bytes": 4930,
+      "sha256": "c0524a452d887dbcd0afe45a122c52c02dc29b2eb2714d55af9a1a1ad6b9be60"
+    },
+    {
+      "path": "sources/C_schedule__SCHEDULE.json",
+      "bytes": 6629,
+      "sha256": "ccdd7b4c6c1bd5d3a47ee42a5bb8e62a38f4d1567093af54a8131fecd561655c"
+    }
+  ],
+  "acceptance": null,
+  "canonical_binding": null,
+  "publication": null,
+  "terminal_metadata_receipt_outside_freeze": "runs/freeze_001/EXECUTION.json"
+}

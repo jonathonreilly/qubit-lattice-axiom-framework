@@ -1,0 +1,36 @@
+{
+  "kind": "canonical_body_recovery",
+  "source_packet_freeze": "84e7d1bbdd6b343b9452e4b7d8513aebdc37a5a302470d15a85842dc92cddfe2",
+  "current_body_recovery_intervals": [
+    {
+      "note": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "original_proposal",
+      "source": "reflection_preparation_root_proposal/PROPOSED_LEMMAS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 23425,
+      "bytes": 15258,
+      "sha256": "9e28d4418c7e5711d048424875cbbd45619c16d6429cfcb894fd5907c455a5dd",
+      "start_byte": 8167
+    },
+    {
+      "note": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "complete_exposed_review",
+      "source": "reflection_preparation_exposed_check/REVIEW.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 49345,
+      "bytes": 25857,
+      "sha256": "7a85a100cc613d964ae3d69474a3cfd51ae61123d62c13d183eeea504324df01",
+      "start_byte": 23488
+    },
+    {
+      "note": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "name": "current_controlling_qualifications",
+      "source": "reflection_preparation_root_review_v2/FINAL_QUALIFICATIONS.md",
+      "container": "docs/REFLECTION_PRESERVING_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "end_byte_exclusive": 57337,
+      "bytes": 7918,
+      "sha256": "4474c5cd6f9707e4bf761bf361b67b2e9ea1e9ca2dd2b489c23ab0ecd3aa2438",
+      "start_byte": 49419
+    }
+  ]
+}

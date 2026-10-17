@@ -1,0 +1,24 @@
+{
+  "kind": "metadata only; no mathematical source imported or executed",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal/seal_metadata.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/weak_mediator_check_proposal",
+  "start_utc": "2026-10-16T20:59:50.658981+00:00",
+  "end_utc": "2026-10-16T20:59:50.729215+00:00",
+  "elapsed_seconds": 0.0692971246317029,
+  "exit_code": 0,
+  "timeout": false,
+  "wall_limit_seconds": 30,
+  "cpu_ram_limits": "none",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "eac2199a99623241f8c18ddc48c07b7b36b8c1cf6dc2d3b481d28ce352be31fa",
+  "source_unchanged": true,
+  "stdout_sha256": "f85a8cb6f740f0f88aa4b0b7fa73b829ce100a9818d6863839e71a82ea3b877c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

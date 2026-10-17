@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 2333,
+      "sha256": "1285dde8589a8cb5e923b2cb59028556461d99327a622477812c8cdbe55a58f9"
+    },
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 2150,
+      "sha256": "c79e410fcae41d3a061cf28bc2ffd45d06093a04dbe88e8961523f292a979cfa"
+    }
+  ]
+}

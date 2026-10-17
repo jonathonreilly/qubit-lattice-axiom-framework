@@ -1,0 +1,22 @@
+{
+  "kind": "read-only pinned-methodology-source comparison",
+  "argv": [
+    "git",
+    "show",
+    "dd16171663343dbdeb21adea70ab5e08b3a3a8df:docs/WRITING_VOICE_GUIDE_2026-04-25.md"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "started_utc": "2026-10-16T17:09:48.242599+00:00",
+  "finished_utc": "2026-10-16T17:09:48.258489+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_3/stdout",
+    "bytes": 1958,
+    "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/inhomogeneous_comb_qualified_publication_draft/metadata_runs/seal/authority_3/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

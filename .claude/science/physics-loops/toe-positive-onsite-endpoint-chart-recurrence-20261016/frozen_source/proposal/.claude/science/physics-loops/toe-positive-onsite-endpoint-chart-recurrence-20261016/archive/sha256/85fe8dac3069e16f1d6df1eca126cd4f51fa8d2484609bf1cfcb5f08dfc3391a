@@ -1,0 +1,30 @@
+DIRECTED_BOUNDARY_ARITHMETIC_CHECKED {'complex_products': 100, 'positive_divisions': 70, 'gaussian_products': 250, 'signed_scales': 50, 'coefficient_matrices': 0, 'saved_slot_products': 0, 'trace_steps': 0, 'trace_selected_products': 0, 'trace_squares': 0, 'residual_complex_entries': 0, 'parent_consistency_real_intervals': 0}
+ALL_960_SHIFTED_COEFFICIENT_MATRICES_CHECKED
+SAVED_SLOTS_ENDPOINT_AND_PARENT_CONSISTENCY_CHECKED
+ALL_187_TRACE_STEPS_AND_274_MATRIX_PRODUCTS_CHECKED
+THREE_NEGATIVE_CONTROLS_REJECTED {'corrupted_first_trace_entry_rejected': True, 'wrong_global_phase_minus_identity_has_operator_error_above_one': True, 'old_degree_80_tail_fails_amplification_and_target_gate': True}
+{
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261015_224023/endpoint_recurrence_exposed_check/SCOPED_CHECK_RESULT.json",
+    "bytes": 6546,
+    "sha256": "22807dc4940e26d71b26bd83f37d5f676b39cf7e56e5636dc9af10fb7e2f5c81"
+  },
+  "counts": {
+    "complex_products": 100,
+    "positive_divisions": 70,
+    "gaussian_products": 250,
+    "signed_scales": 50,
+    "coefficient_matrices": 960,
+    "saved_slot_products": 24,
+    "trace_steps": 187,
+    "trace_selected_products": 88,
+    "trace_squares": 186,
+    "residual_complex_entries": 16,
+    "parent_consistency_real_intervals": 32
+  },
+  "strict_operator_bound": "1/10^13",
+  "amplified_analytic_error_less_than": "1/10^35",
+  "all_three_controls_rejected": true,
+  "new_Taylor_steps": 0,
+  "new_eigenphase_selections": 0
+}

@@ -74,24 +74,32 @@ anticommutes with the fermion's hopping legs.
   here.** In this family, a fermion that respects the lattice rotations
   carries integer lattice angular momentum. A spin-1/2 would have to be
   emergent.
-- **The pi-flux sector is rotation-symmetric.** In it, the charge hopping
-  with the edge operators sees pi flux on every plaquette. That
-  single-particle problem is the Kogut–Susskind staggered-fermion hopping
-  problem.
-  - Its low-energy limit is two four-component Dirac fermions ("tastes").
-  - Lattice rotations act on spin times taste, a product that is integer
-    (1/2 x 1/2 = 0 + 1). This matches item 5.
-- **The resulting picture.** A cubic-covariant lattice fermion that becomes
-  a Dirac spin-1/2 at low energy, with spin locked to an internal taste
-  label. Wen's string-net programme uses pi-flux fermions of this kind as
-  emergent massless fermions. The new content here is the rotation-action
-  computation in the cubic BKSF family, not the staggered physics.
+- **The pi-flux sector is a rotation-symmetric code space.** In that
+  sector, the hop products of one ordering's edge operators around each
+  plaquette give pi. That single-particle problem is the Kogut–Susskind
+  staggered-fermion hopping problem: at low energy, two four-component
+  Dirac fermions ("tastes"), with lattice rotations acting on spin times
+  taste, which is integer (1/2 x 1/2 = 0 + 1).
+- **Caveat: the hop system is less symmetric than the code.** A follow-up
+  computation (loop pack, c9) finds that the hop operators of a fixed
+  ordering are not covariant under the code's whole stabilizer.
+  - For every ordering of a D3 code, the plaquette subgroup span(S^o) is
+    preserved by only the identity and one edge C2.
+  - A rotation then maps the hopping operators of the ordering to those of
+    another ordering in the same class. These differ by local flux-creating
+    factors.
+  - So the stabilizer group (the code space and its sign sectors) is
+    rotation-symmetric. The hopping Hamiltonian built from one ordering's
+    edge operators is not.
+  - Whether some D3-symmetric clean hop system exists is open.
 - **Not computed.**
   - The projected hopping Hamiltonian is a dynamics choice, outside the
     axioms.
   - Gap stability and the continuum limit are not computed.
   - Whether the taste count interacts with the four-species minimum of the
     orbit note is open.
+  - Item 5 concerns superselection sectors and does not depend on the
+    choice of hop system.
 
 ## Premises
 

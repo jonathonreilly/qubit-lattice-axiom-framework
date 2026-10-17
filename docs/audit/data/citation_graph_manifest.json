@@ -1,6 +1,6 @@
 {
- "edge_count": 16173,
- "node_count": 7211,
+ "edge_count": 16180,
+ "node_count": 7214,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2472,6 +2472,14 @@
   },
   "bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17": {
    "deps_hash": "b49585dcd91f",
+   "out_degree": 3
+  },
+  "bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "cc803153f655",
+   "out_degree": 2
+  },
+  "bksf_cubic_fermion_codes_site_local_realization_with_six_direction_qubits_per_site_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "3ff959929c4b",
    "out_degree": 3
   },
   "bksf_holonomy_compression_cycle728_bounded_theorem_note_2026-07-28": {
@@ -14689,6 +14697,10 @@
   "main_open_cubic_validation_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "majorana_per_direction_cubic_fermion_code_has_one_species_covariant_under_all_cubic_rotations_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "cc803153f655",
+   "out_degree": 2
   },
   "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17": {
    "deps_hash": "b810717681ab",

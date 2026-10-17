@@ -1,5 +1,13 @@
 # QMC-1 report: sign-free simulation pilot of X2's mirror gapping
 
+> **Referee (codex gpt-5.6-sol): CONFIRMED WITH CORRECTIONS. The correct fixed reading is OPEN.**
+> - **Confirmed:** the engine and the validation (an independent 3,000-sweep gate check).
+> - **Not a gap measurement:** E2, E3 and E3w are not spectral-gap measurements.
+> - **Limits:** the statistics are short, Δτ pinning is large, and β = 4 is a finite temperature.
+> - **What it supports:** a GPR-like crossover. It does not establish a mirror gap, GPR mass generation or SMG.
+>
+> See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Reading.** OPEN by the pre-registered gap estimator, which fails at strong coupling. GPR-PILOT by every replacement estimator able to resolve an open gap at both sizes; these were declared in follow-ups D and E, before the L = 6 results were seen. The worker reads GPR-PILOT, conditional on the estimator, and leaves to the referee whether E2, E3 and E3w are admissible.
 
 **Provenance.**

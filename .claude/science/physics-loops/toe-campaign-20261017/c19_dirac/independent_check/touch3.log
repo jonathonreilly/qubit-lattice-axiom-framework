@@ -1,0 +1,40 @@
+  t2=+0.806 delta=0.061: extra touchings 38 at E-E_d [0.5119 0.5689 0.6241]; band0 overshoot +6.47e-01, band1 undershoot -1.33e-14
+  t2=+0.968 delta=0.414: extra touchings 38 at E-E_d [0.294]; band0 overshoot +2.94e-01, band1 undershoot -1.15e-14
+  t2=+0.271 delta=0.298: extra touchings 12 at E-E_d [-1.4785]; band0 overshoot +1.74e-01, band1 undershoot +1.62e+00
+  t2=-0.918 delta=0.192: extra touchings 40 at E-E_d [-0.0198]; band0 overshoot +4.19e-01, band1 undershoot +1.99e-02
+  t2=+0.905 delta=0.064: extra touchings 27 at E-E_d [0.0023 0.0151]; band0 overshoot +5.28e-01, band1 undershoot -4.88e-15
+  t2=+0.255 delta=0.181: extra touchings 40 at E-E_d [0.0918]; band0 overshoot +1.12e-01, band1 undershoot -1.55e-14
+  t2=-0.365 delta=0.325: extra touchings 22 at E-E_d [-1.6472]; band0 overshoot +1.91e-01, band1 undershoot +1.74e+00
+  t2=+0.332 delta=0.130: extra touchings 40 at E-E_d [-0.1315]; band0 overshoot +9.19e-02, band1 undershoot +1.86e-01
+  t2=+0.801 delta=0.098: extra touchings 38 at E-E_d [0.5017]; band0 overshoot +5.62e-01, band1 undershoot -1.11e-14
+  t2=-0.048 delta=0.062: extra touchings 40 at E-E_d [-0.0802]; band0 overshoot -1.47e-14, band1 undershoot +9.36e-02
+  t2=-0.671 delta=0.119: extra touchings  0 at E-E_d []; band0 overshoot +2.41e-01, band1 undershoot -8.44e-15
+  t2=-0.710 delta=0.160: extra touchings 40 at E-E_d [0.2952]; band0 overshoot +3.50e-01, band1 undershoot -7.99e-15
+  t2=+0.601 delta=0.132: extra touchings 16 at E-E_d [0.0194]; band0 overshoot +2.39e-01, band1 undershoot -9.33e-15
+  t2=+0.579 delta=0.051: extra touchings 40 at E-E_d [0.3152]; band0 overshoot +4.10e-01, band1 undershoot -9.33e-15
+  t2=+0.232 delta=0.163: extra touchings 40 at E-E_d [-0.4657]; band0 overshoot +1.45e-02, band1 undershoot +7.56e-01
+  t2=-0.820 delta=0.471: extra touchings  0 at E-E_d []; band0 overshoot +3.91e-01, band1 undershoot +1.30e+00
+  t2=-0.064 delta=0.618: extra touchings 40 at E-E_d [-3.0483]; band0 overshoot -7.99e-15, band1 undershoot +3.67e+00
+  t2=+0.473 delta=0.319: extra touchings 40 at E-E_d [-1.2425 -0.586 ]; band0 overshoot +1.74e-01, band1 undershoot +1.25e+00
+  t2=-0.458 delta=0.248: extra touchings 40 at E-E_d [-0.387]; band0 overshoot +1.38e-01, band1 undershoot +4.39e-01
+  t2=-0.720 delta=0.252: extra touchings 40 at E-E_d [-0.4778]; band0 overshoot +8.72e-02, band1 undershoot +4.78e-01
+  t2=+0.849 delta=0.370: extra touchings 40 at E-E_d [-1.1284 -0.7438 -0.6028]; band0 overshoot -6.66e-15, band1 undershoot +1.13e+00
+  t2=-0.533 delta=0.774: extra touchings  0 at E-E_d []; band0 overshoot -6.66e-15, band1 undershoot +1.88e+00
+  t2=+0.406 delta=0.178: extra touchings 40 at E-E_d [0.0506]; band0 overshoot +5.05e-02, band1 undershoot -7.99e-15
+  t2=-0.649 delta=0.874: extra touchings 40 at E-E_d [-2.3015 -2.2972 -2.2108]; band0 overshoot -4.44e-15, band1 undershoot +2.30e+00
+  t2=+0.614 delta=0.110: extra touchings 40 at E-E_d [0.2876]; band0 overshoot +4.24e-01, band1 undershoot -7.99e-15
+  t2=-0.720 delta=0.756: extra touchings 40 at E-E_d [-1.9298]; band0 overshoot -7.99e-15, band1 undershoot +2.63e+00
+  t2=+0.331 delta=0.292: extra touchings 18 at E-E_d [-0.5825]; band0 overshoot -7.55e-15, band1 undershoot +5.83e-01
+  t2=-0.525 delta=0.054: extra touchings 40 at E-E_d [0.3976]; band0 overshoot +4.10e-01, band1 undershoot -1.20e-14
+  t2=-0.523 delta=0.094: extra touchings 32 at E-E_d [0.3529 0.3689]; band0 overshoot +3.64e-01, band1 undershoot -8.44e-15
+  t2=-0.377 delta=0.184: extra touchings 40 at E-E_d [-0.2326]; band0 overshoot +7.77e-02, band1 undershoot +3.63e-01
+  t2=-0.355 delta=0.052: extra touchings 32 at E-E_d [0.2632 0.3519]; band0 overshoot +3.76e-01, band1 undershoot -7.99e-15
+  t2=-0.389 delta=0.122: extra touchings 40 at E-E_d [0.1858 0.2142]; band0 overshoot +2.14e-01, band1 undershoot -1.38e-14
+  t2=-0.312 delta=0.173: extra touchings 40 at E-E_d [0.2092 0.2443]; band0 overshoot +2.55e-01, band1 undershoot -8.44e-15
+  t2=-0.839 delta=0.126: extra touchings  4 at E-E_d [0.3127]; band0 overshoot +5.10e-01, band1 undershoot -8.88e-15
+  t2=+0.621 delta=0.072: extra touchings 32 at E-E_d [0.029  0.1742]; band0 overshoot +5.25e-01, band1 undershoot -7.99e-15
+  t2=+0.754 delta=0.460: extra touchings 40 at E-E_d [-1.3073 -0.8617 -0.8058]; band0 overshoot -8.88e-15, band1 undershoot +1.31e+00
+  t2=-0.878 delta=0.060: extra touchings 38 at E-E_d [0.4846 0.4875]; band0 overshoot +4.87e-01, band1 undershoot -8.44e-15
+  t2=-0.063 delta=0.288: extra touchings 40 at E-E_d [-0.7001]; band0 overshoot -9.33e-15, band1 undershoot +7.33e-01
+  t2=+0.522 delta=0.678: extra touchings 40 at E-E_d [-4.1064]; band0 overshoot -6.22e-15, band1 undershoot +4.94e+00
+{'n': 39, 'touch': 36, 'clean': np.int64(0)}

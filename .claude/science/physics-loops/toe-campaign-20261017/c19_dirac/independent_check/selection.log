@@ -1,0 +1,52 @@
+E1/2 and E5/2 isotypic subspaces of the 12-dim shell: dims 2 2
+complex conjugation maps E1/2 subspace onto E5/2 subspace: True
+
+== staggered (momentum Q) terms: max |matrix element| between the k* doublet and the -k* doublet
+  Q_onsite_re_A1     dim   4: max coupling 4.07e-16; real rank of coupling map 0
+  Q_onsite_re_A2     dim   1: max coupling 3.17e-17; real rank of coupling map 0
+  Q_onsite_im_A1     dim   2: max coupling 7.30e-16; real rank of coupling map 0
+  Q_onsite_im_A2     dim   5: max coupling 2.00e+00; real rank of coupling map 2
+  Q_r1_re_A1         dim  22: max coupling 8.30e-16; real rank of coupling map 0
+  Q_r1_re_A2         dim  13: max coupling 3.17e-17; real rank of coupling map 0
+  Q_r1_im_A1         dim  20: max coupling 7.84e-16; real rank of coupling map 0
+  Q_r1_im_A2         dim  29: max coupling 3.46e+00; real rank of coupling map 2
+  Q_l1<=2_re_A1      dim  76: max coupling 8.62e-16; real rank of coupling map 0
+  Q_l1<=2_re_A2      dim  55: max coupling 3.17e-17; real rank of coupling map 0
+  Q_l1<=2_im_A1      dim  74: max coupling 8.53e-16; real rank of coupling map 0
+  Q_l1<=2_im_A2      dim  95: max coupling 4.00e+00; real rank of coupling map 2
+  Q_cube_re_A1       dim  88: max coupling 8.62e-16; real rank of coupling map 0
+  Q_cube_re_A2       dim  61: max coupling 3.17e-17; real rank of coupling map 0
+  Q_cube_im_A1       dim  74: max coupling 8.53e-16; real rank of coupling map 0
+  Q_cube_im_A2       dim 101: max coupling 4.00e+00; real rank of coupling map 2
+
+== momentum-0 O-invariant terms: diagonal blocks within each doublet are multiples of 1 (Schur)
+  P0_onsite_re_O    : max deviation from scalar / max off-diagonal 4.4e-16
+  P0_onsite_im_O    : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_r1_re_O        : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_r1_im_O        : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_l1<=2_re_O     : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_l1<=2_im_O     : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_cube_re_O      : max deviation from scalar / max off-diagonal 1.3e-15
+  P0_cube_im_O      : max deviation from scalar / max off-diagonal 1.3e-15
+
+== Dirac mass from an imaginary A2 staggered on-site term (random element, max-entry normalized)
+  m = 0.002: lowest four at k*: [-0.006608 -0.006608  0.006608  0.006608];  m_D/m = 3.30410; centre shift +1.33e-15
+  m = 0.005: lowest four at k*: [-0.016521 -0.016521  0.016521  0.016521];  m_D/m = 3.30410; centre shift +0.00e+00
+  m = 0.010: lowest four at k*: [-0.033041 -0.033041  0.033041  0.033041];  m_D/m = 3.30410; centre shift +4.44e-16
+  m = 0.020: lowest four at k*: [-0.066082 -0.066082  0.066082  0.066082];  m_D/m = 3.30410; centre shift +4.44e-16
+  m = 0.050: lowest four at k*: [-0.165205 -0.165205  0.165205  0.165205];  m_D/m = 3.30410; centre shift +4.44e-16
+  m = 0.100: lowest four at k*: [-0.33041  -0.33041   0.235275  0.235275];  m_D/m = 2.82843; centre shift -4.76e-02
+  m = 0.200: lowest four at k*: [-0.660821 -0.660821 -0.095135 -0.095135];  m_D/m = 1.41421; centre shift -3.78e-01
+  projected coupling singular values (per unit m): [3.3041 3.3041]
+  t2=0.2, delta=0.3, new X: m_D/m at m=0.01 = 3.30410
+  t2=-0.4, delta=0.1, new X: m_D/m at m=0.01 = 3.30410
+
+== Dirac dispersion E - E_N = +-sqrt(v^2 q^2 + m_D^2): v = Weyl velocity at m = 0
+  Weyl node: E = E_N +- v_W |q| with v_W = 0.06722  (runner divides its 'vel' by 2 before the Dirac fit)
+  m=0.005: m_D=0.01652; q up to 4 m_D/v_W = 0.983; vs sqrt with v_W   : max rel dev 3.12e-01; angular spread at fixed |q| (x=.25..4): [3.0000e-05 4.0500e-04 3.8400e-03 2.2080e-02 8.6197e-02]
+  m=0.005: m_D=0.01652; q up to 4 m_D/v_W = 0.983; vs sqrt with v_W/2 : max rel dev 1.42e+00; angular spread at fixed |q| (x=.25..4): [3.0000e-05 4.0500e-04 3.8400e-03 2.2080e-02 8.6197e-02]
+  m=0.02: m_D=0.06608; q up to 4 m_D/v_W = 3.933; vs sqrt with v_W   : max rel dev 4.61e-01; angular spread at fixed |q| (x=.25..4): [0.000454 0.005554 0.04345  0.132236 0.449071]
+  m=0.02: m_D=0.06608; q up to 4 m_D/v_W = 3.933; vs sqrt with v_W/2 : max rel dev 1.23e+00; angular spread at fixed |q| (x=.25..4): [0.000454 0.005554 0.04345  0.132236 0.449071]
+  m=0.05: m_D=0.16521; q up to 4 m_D/v_W = 9.831; vs sqrt with v_W   : max rel dev 9.02e-01; angular spread at fixed |q| (x=.25..4): [0.002024 0.013815 0.988779 1.021233 1.180274]
+  m=0.05: m_D=0.16521; q up to 4 m_D/v_W = 9.831; vs sqrt with v_W/2 : max rel dev 8.19e-01; angular spread at fixed |q| (x=.25..4): [0.002024 0.013815 0.988779 1.021233 1.180274]
+  fitted Dirac velocity at m=0.01 (E^2 vs q^2, 4 dirs): [0.08693 0.09481 0.09455 0.08875]  vs v_W = 0.06722

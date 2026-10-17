@@ -1,0 +1,33 @@
+(a) survey, t1 = -1, lowest doublet at k*
+  t2=-0.208 delta=0.484: no extra touching found
+  t2=-0.291 delta=0.053: 18 extra touchings of bands 0/1; energies - E_d: [0.2491]; sample k/(pi/2) [3.596 3.    2.404]
+  t2=-0.154 delta=0.069: 18 extra touchings of bands 0/1; energies - E_d: [0.04682]; sample k/(pi/2) [3.5661 3.     3.5661]
+  t2=-0.205 delta=0.041: 12 extra touchings of bands 0/1; energies - E_d: [0.11618]; sample k/(pi/2) [2.3636 0.3636 1.    ]
+  t2=-0.150 delta=0.127: 18 extra touchings of bands 0/1; energies - E_d: [0.04603 0.05718]; sample k/(pi/2) [3.4419 1.4419 1.    ]
+  t2=+0.157 delta=0.041: 12 extra touchings of bands 0/1; energies - E_d: [0.11747]; sample k/(pi/2) [1.6826 1.     1.6826]
+  t2=+0.259 delta=0.076: 22 extra touchings of bands 0/1; energies - E_d: [0.09843 0.22501]; sample k/(pi/2) [1.8714 1.     1.8714]
+  t2=-0.396 delta=0.118: 24 extra touchings of bands 0/1; energies - E_d: [0.12948]; sample k/(pi/2) [3.    2.485 0.485]
+  t2=-0.411 delta=0.105: 18 extra touchings of bands 0/1; energies - E_d: [0.17786]; sample k/(pi/2) [3.     3.6279 0.3721]
+  t2=-0.481 delta=0.315: 13 extra touchings of bands 0/1; energies - E_d: [-0.53004 -0.45625]; sample k/(pi/2) [0.565 1.    3.   ]
+  t2=+0.070 delta=0.092: 24 extra touchings of bands 0/1; energies - E_d: [-0.23454]; sample k/(pi/2) [3.6244 3.     3.6244]
+  t2=+0.447 delta=0.088: 16 extra touchings of bands 0/1; energies - E_d: [0.02305 0.08074 0.31567]; sample k/(pi/2) [0.0935 2.0935 0.0935]
+  t2=-0.088 delta=0.270: 18 extra touchings of bands 0/1; energies - E_d: [-0.92278]; sample k/(pi/2) [1.     0.3988 2.3988]
+  t2=-0.152 delta=0.306: 28 extra touchings of bands 0/1; energies - E_d: [-1.04331 -1.0315  -0.11057]; sample k/(pi/2) [0.6462 2.6462 0.6462]
+  -> extra touchings in 13/14 sets
+
+(b) runner H: 18 extra touchings at E - E_d = +0.08924; Berry flux of band 0 around each: [np.float64(1.0), np.float64(-1.0), np.float64(-1.0), np.float64(-1.0), np.float64(1.0), np.float64(1.0), np.float64(-1.0), np.float64(-1.0), np.float64(1.0), np.float64(-1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(-1.0), np.float64(1.0), np.float64(-1.0), np.float64(1.0), np.float64(-1.0)]; sum 0.0
+    set closed under k -> k + Q: True
+
+(c) candidates with mass: global gap vs 2 m_D
+  t2=-0.0405 delta=0.0744 m=3e-04: m_D=5.23e-04; global gap +2.27e-04 (2 m_D = 1.05e-03)
+  t2=-0.0405 delta=0.0744 m=1e-03: m_D=1.74e-03; global gap +7.98e-04 (2 m_D = 3.49e-03)
+  t2=-0.0405 delta=0.0744 m=3e-03: m_D=5.23e-03; global gap +2.43e-03 (2 m_D = 1.05e-02)
+  t2=-0.0405 delta=0.0744 m=1e-02: m_D=1.74e-02; global gap +3.85e-03 (2 m_D = 3.49e-02)
+  t2=+0.0843 delta=0.0882 m=3e-04: m_D=5.23e-04; global gap -2.65e-03 (2 m_D = 1.05e-03)
+  t2=+0.0843 delta=0.0882 m=1e-03: m_D=1.74e-03; global gap -1.36e-03 (2 m_D = 3.49e-03)
+  t2=+0.0843 delta=0.0882 m=3e-03: m_D=5.23e-03; global gap -6.97e-04 (2 m_D = 1.05e-02)
+  t2=+0.0843 delta=0.0882 m=1e-02: m_D=1.74e-02; global gap -4.04e-04 (2 m_D = 3.49e-02)
+  t2=-0.0712 delta=0.0807 m=3e-04: m_D=5.23e-04; global gap -3.09e-03 (2 m_D = 1.05e-03)
+  t2=-0.0712 delta=0.0807 m=1e-03: m_D=1.74e-03; global gap -1.75e-03 (2 m_D = 3.49e-03)
+  t2=-0.0712 delta=0.0807 m=3e-03: m_D=5.23e-03; global gap +1.24e-03 (2 m_D = 1.05e-02)
+  t2=-0.0712 delta=0.0807 m=1e-02: m_D=1.74e-02; global gap +3.98e-03 (2 m_D = 3.49e-02)

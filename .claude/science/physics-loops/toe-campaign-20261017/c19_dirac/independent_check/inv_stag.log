@@ -1,0 +1,8 @@
+Q_onsite_re_A1   dim   4: inversion-even elements 2, inversion-odd 0
+Q_onsite_im_A1   dim   2: inversion-even elements 0, inversion-odd 2
+Q_r1_re_A1       dim  22: inversion-even elements 4, inversion-odd 2
+Q_r1_im_A1       dim  20: inversion-even elements 3, inversion-odd 5
+Q_onsite_im_A2   dim   5: inversion-even elements 2, inversion-odd 1
+Q_onsite_re_A2   dim   1: inversion-even elements 0, inversion-odd 1
+X_r1             dim   9: inversion-even elements 9, inversion-odd 0
+P0_onsite_im_O   dim   2: inversion-even elements 0, inversion-odd 2

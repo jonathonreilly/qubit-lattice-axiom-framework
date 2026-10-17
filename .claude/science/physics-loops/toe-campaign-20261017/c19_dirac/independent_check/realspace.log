@@ -1,0 +1,31 @@
+Hb, M Hermitian: True True ; M odd under K: True
+Hb invariant under 24 site rotations, inversion, all translations: True True True
+node space dim (lowest level of Hb on L=4): 4  E_N = -2.2828427124746193
+  momentum labels of node states (T_x+2T_y+3T_z eigenvalues): [-0.-2.j  0.-2.j  0.+2.j  0.+2.j]
+
+== O-only invariant operators WITHOUT translation symmetry (random, site range <= 2, complex), symmetrized over the 24 rotations about site 0
+  trial 0: |A| = 0.99; node-space off-diagonal (k* <-> -k*) max 3.2e-14; diagonal blocks non-scalar part 7.5e-15, 1.8e-14; diagonal scalars +0.6924, -0.0866
+  trial 1: |A| = 0.72; node-space off-diagonal (k* <-> -k*) max 3.3e-14; diagonal blocks non-scalar part 4.2e-14, 1.5e-14; diagonal scalars +0.6073, +0.1729
+  trial 2: |A| = 0.88; node-space off-diagonal (k* <-> -k*) max 1.5e-14; diagonal blocks non-scalar part 1.3e-14, 6.7e-15; diagonal scalars +0.0632, -0.7150
+  A2-symmetrized (no translation symmetry): off-diagonal 1.53e-17, diagonal 1.0e-17, 2.8e-18
+
+== massive model symmetries (m = 0.05)
+  T about site: True; w1-odd site rotations broken: 12/12; even translations kept: True; odd translations kept: 0/32
+  site inversion kept: False;  inversion x odd translation kept: False
+  p - R p is an odd translation exactly for the 12 w1-odd R (asserted); all 24 cube-centre rotations n -> R(n-p)+p commute with H_massive: True
+  geometric check: each cube-centre operator moves corner points by the rotation about p (mod L): True
+
+== projective class of the fermion under the cube-centre O (full one-fermion space and massive doublets)
+  site O: products proportional to the product element: True; multipliers in [np.float64(-1.0), np.float64(1.0)]; C2x C2y C2x^-1 C2y^-1 = -1.000 * 1  (-1 = spin-1/2 class w2, +1 = linear up to phases)
+     no twist: lifts to a linear rep of 2O (central -1 acting as -1): False
+     twist i^w1: lifts to a linear rep of 2O (central -1 acting as -1): True
+  cube-centre O: products proportional to the product element: True; multipliers in [np.float64(-1.0), np.float64(1.0)]; C2x C2y C2x^-1 C2y^-1 = -1.000 * 1  (-1 = spin-1/2 class w2, +1 = linear up to phases)
+     no twist: lifts to a linear rep of 2O (central -1 acting as -1): True
+     twist i^w1: lifts to a linear rep of 2O (central -1 acting as -1): False
+  site C4z T_x C4z^-1 T_y^-1 = -1.0 * 1
+  lowest massive levels: [-0.112073 -0.112073 -0.059744 -0.059744 -0.059744 -0.059744 -0.059744
+ -0.059744]
+  lower doublet (dim 2, E - E_N = -0.11207): site-T D2 commutator -1.0
+     invariant under cube-centre O: True; cube-centre D2 commutator -1.0; 2O lifts/labels: {'none': [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}], 'i^w1': []}
+  upper doublet (dim 6, E - E_N = -0.05974): site-T D2 commutator -1.0
+     invariant under cube-centre O: True; cube-centre D2 commutator -1.0; 2O lifts/labels: {'none': [{'E1/2': 0, 'E5/2': 1, 'G3/2': 1}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 1}], 'i^w1': []}

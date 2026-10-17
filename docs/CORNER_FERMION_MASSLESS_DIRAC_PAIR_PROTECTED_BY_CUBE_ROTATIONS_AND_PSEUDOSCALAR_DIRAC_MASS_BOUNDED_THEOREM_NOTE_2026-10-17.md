@@ -56,6 +56,9 @@ A massive Dirac fermion is a closer analogue of the electron. Can the corner mod
   - Whether the mass can arise spontaneously, for example from interactions, is open.
 - **Not shown.**
   - That the Dirac point is the global low-energy feature, so that filling the lower bands gives a clean Dirac vacuum.
+    - An optimization over the 9-dimensional space was run (exploration, loop pack `c19_dirac/ideal3.log`), with t2 ≥ 0.05, Weyl velocity fixed to 0.05 and |coefficients| ≤ 3.
+    - It found no ideal node: the best excess on a 24^3 grid was 0.05. Unbounded searches exploit coarse grids.
+    - Longer-range terms are untested.
   - The qubit construction of the new terms.
   - Charge.
 

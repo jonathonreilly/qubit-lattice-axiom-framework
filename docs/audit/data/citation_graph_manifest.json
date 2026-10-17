@@ -1,6 +1,6 @@
 {
- "edge_count": 16192,
- "node_count": 7224,
+ "edge_count": 16197,
+ "node_count": 7225,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20065,6 +20065,10 @@
   "site_license_tick_dichotomy_all_periods_bounded_theorem_note_2026-06-11": {
    "deps_hash": "71548c1b3e14",
    "out_degree": 7
+  },
+  "site_localizable_stabilizer_code_fermion_cannot_carry_the_spin_half_class_direction_shell_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "1192f68881e8",
+   "out_degree": 5
   },
   "site_phase_cube_shift_intertwiner_note": {
    "deps_hash": "e3b0c44298fc",

@@ -31,6 +31,25 @@ adopted; every result is unaudited bounded support with a declared model.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
 
+## Realization dictionary: the emergent fermion's half-turn signs
+
+The rotation class eta_f is detected by the squares of the half-turns. In each entry, "+" means
+C2^2 = +1 on the fermion (spinless) and "-" means C2^2 = (-1)^F (spin-1/2-like). The pair-test sign
+lambda = -eta_f.
+
+| Code | How rotations act | Group covered | Axis C2 | Edge C2 | Class |
+|---|---|---|---|---|---|
+| BKSF, edge or half-edge (C8, C11) | bare permutation | the code's stabilizer (D3, D2 or Z2) | - | - | w2 restricted (spin-1/2) |
+| BKSF, D3 or single-C2 code | bare permutation, twisted by W on the C2 (sign character) | stabilizer | n/a | + | trivial |
+| BKSF, order-4 code | bare permutation, twisted by W along a character | D2 | two of the three C2 flip | | (+,+,-)-type; trivial not reachable |
+| BKSF, half-edge (C13) | on-site CZ network times permutation (Majorana permutation) | all of O | + | + | trivial |
+| Majorana-per-direction (C12) | on-site signed Majorana permutation U_R | all of O | + | + | trivial |
+| Majorana-per-direction (C12) | U_R twisted by W on odd elements | all of O | + | - | sign-pullback |
+| Either family | any W-twist | all of O | | | w2 on all of O not reachable |
+
+Here W = prod_v exp(-i pi B_v / 4). In BKSF, W = const * e^{i pi N / 2}, a quarter-turn of fermion number.
+Majorana-only hopping selects the trivial-class realizations. A single species with w2 on all of O is open.
+
 ## Plain-language summary (for the owner)
 
 - **The supplied one-qubit Pauli stabilizer class has no three-dimensionally

@@ -4,18 +4,23 @@ Done in this campaign: C1–C4 (star-supported no-gos), C6 (BKSF orbits, four-sp
 permutations), C8/C10 (bare-permutation spin-1/2 class), C11 (site-local half-edge realization) and C12
 (one O-covariant species with on-site Cliffords; spinless under U_R, w2 under U_R W).
 
-1. **Which realization does the dynamics select?**
+0. **A single species with w2 on all of O.** No realization found so far gives it (see the HANDOFF
+   dictionary): W-twists cannot, and the on-site Majorana actions give the trivial class. Either find an
+   on-site action that does, or prove an obstruction for these codes. This is the sharpest open question
+   for an electron-like spin-1/2 with full cubic symmetry.
+1. **Which realization does the dynamics select?** (partly answered: Majorana-only hopping selects the
+   trivial class, in both families)
    - The spin class is a property of the rotation's action on excited states. The on-site phase
      W = prod exp(-i pi B/4) toggles eta by w2 and is invisible in the ground space.
    - Determine which realization is a symmetry of natural hopping Hamiltonians (Majorana vs
      number-conserving) in both families.
    - Determine whether a U(1) charge with a spin-charge relation (Spin^c-like) forces the w2 choice.
      This is the sharpest route to an electron-like spin-1/2 prediction.
-2. **Settle the 36 dressed BKSF pairs.** Find R-invariant flux conventions with clean hops, or prove that
-   the dressing cannot link the string. This decides the order-4 codes' D2 class (C8).
-3. **O-covariant condensation of the four-copy BKSF stack under bare permutations (C7/C9).** Both
-   routes tried fail, either through a nonlocal commutant or through noncommuting quads. A no-go, or a
-   construction with on-site Cliffords, would close the species question for bare actions.
+2. ~~Settle the 36 dressed BKSF pairs.~~ Done: the independent check proved lambda = +1 on the whole
+   space of dressed creators.
+3. **O-covariant condensation of the four-copy BKSF stack under bare permutations (C7/C9).** With
+   on-site Cliffords the species question is closed: one code is already O-invariant (C13). For bare
+   actions both routes tried fail, so a no-go is open.
 4. **Low-energy theory of the O-symmetric pi-flux sector.** In the C12 code: Dirac nodes, and how U_R and
    U_R W act on the low-energy spinors (spin times taste).
 5. **Star-supported gaps (C4).** Multi-site charge patterns and non-maximal bounded rules; non-Pauli

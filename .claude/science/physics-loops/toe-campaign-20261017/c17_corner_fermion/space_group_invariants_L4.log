@@ -1,0 +1,18 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+cycle-space dim 1537 rank of listed cycles 1534 (3 torus holonomies expected missing)
+{'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': '0'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx 1
+{'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx 1
+{'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': '0'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} TxTy comm -1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 -1  C2z.Tx.C2z^-1.Tx -1
+{'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} TxTy comm 1  C4z.Tz.C4z^-1.Tz^-1 1  C2z.Tx.C2z^-1.Tx -1

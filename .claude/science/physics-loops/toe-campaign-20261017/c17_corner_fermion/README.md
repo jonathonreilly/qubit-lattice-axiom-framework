@@ -29,3 +29,21 @@ So a mobile doublet ground state is not established. The class and the localized
 A fermion position fixed by a C4 rotation gets real PSG signs, possibly times i^{w1}. Then M(C4)^4 = +1 on it, so the class is trivial on that C4.
 
 The direction positions (half-edges) lie on C4 axes. The corners lie only on edge-C2 axes.
+
+## Space group (`sg.py`, `space_group_invariants_L4.log`)
+- **The 16 patterns are all of them.** The listed cycles span the contractible cycle space: rank 1534 = 1537 − 3 torus holonomies. So the 16 uniform patterns are all the space-group-invariant flux patterns.
+- **Invariants (pullback of a spin-1/2 class needs all three = +1):**
+  - I1 = Tx Ty Tx^-1 Ty^-1;
+  - I2 = C4z Tz C4z^-1 Tz^-1;
+  - I3 = C2z Tx C2z^-1 Tx.
+- **Result.** Square flux π, needed for C4^4 = −1 about a site, forces I3 = −1 in every pattern. So a bond-centred C2 squares to +1.
+  - Square = plaquette = tube = π gives I1 = I2 = +1, but still I3 = −1.
+  - Adding vertices or edges cannot change this. I3 is a global sign fixed by the fluxes of existing cycles.
+- **Conclusion.** No flux pattern on the corner graph gives the pullback (ordinary spin-1/2) space-group fractionalization.
+
+## Large-fermion view (`lowk.py`, `low_energy_valleys.log`)
+For square = plaquette = tube = π, triangle 0, t1 = -1, chiral -0.5 and t2 = ±0.1, ±0.3:
+- The lowest band minima sit at the 8 momenta (±π/2, ±π/2, ±π/2), each 2-fold degenerate.
+- So a fermion much larger than the grid would carry an 8-valued valley label times a doublet. The lattice-scale space-group data then appear as which momenta the valleys sit at, as with staggered-fermion tastes.
+
+Next: band-engineer a single doublet minimum at Γ or R. Then derive its k·p theory: in O without inversion, the E1/2 doublet allows a k·σ term.

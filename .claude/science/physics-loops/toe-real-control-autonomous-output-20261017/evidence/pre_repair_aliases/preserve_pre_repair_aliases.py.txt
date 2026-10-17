@@ -1,0 +1,23 @@
+"""Redirect historical draft aliases to exact pre-repair bytes, never current inputs."""
+from validate_packet import *
+DP=N/'real_control_publication_draft'
+m=Q/'evidence/PUBLICATION_DRAFT_MAP.json';before=m.read_bytes()
+(D/'PUBLICATION_DRAFT_MAP_BEFORE_EOF_REPAIR.json').write_bytes(before)
+j=json.loads(before);changes=[]
+for row in j['files']:
+ p=W/row['path']
+ if p.exists() and digest(p.read_bytes())=={k:row[k] for k in ('bytes','sha256')}:continue
+ old=DP/'canonical'/row['path'];raw=old.read_bytes()
+ assert digest(raw)=={'bytes':row['raw_bytes'],'sha256':row['raw_sha256']}
+ packed=gzip.compress(raw,mtime=0)
+ dest=Q/'evidence/pre_repair_storage'/(row['raw_sha256']+'.gz');dest.parent.mkdir(parents=True,exist_ok=True)
+ if dest.exists():assert dest.read_bytes()==packed
+ else:dest.write_bytes(packed)
+ changes.append({'old_path':row['path'],'new_path':str(dest.relative_to(W)),'raw_sha256':row['raw_sha256']})
+ row.update(path=str(dest.relative_to(W)),compression='gzip',**digest(packed))
+assert len(changes)==16 and len({r['old_path'] for r in changes})==4
+j['post_integration_storage_redirects']='Two raw header EOFs stored losslessly; source-map/manifest historical versions retained separately. Raw source identities are unchanged. See root LOSSLESS_EOF_REPAIR.'
+write(m,j);write(D/'PRE_REPAIR_ALIAS_REDIRECTS.json',{'changes':changes,'raw_identity_changes':[]})
+archive('pre_repair_aliases',D,[D/'preserve_pre_repair_aliases.py',D/'PUBLICATION_DRAFT_MAP_BEFORE_EOF_REPAIR.json',D/'PRE_REPAIR_ALIAS_REDIRECTS.json'])
+validate_archives();validate_inputs()
+print(json.dumps({'redirected_historical_rows':16,'distinct_exact_historical_files':4,'all_live_archives_valid':True},indent=2))

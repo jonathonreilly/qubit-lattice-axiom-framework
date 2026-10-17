@@ -1,0 +1,32 @@
+# Selective preparation/release review plan
+
+Review the complete frozen real_coupling_preparation_candidate/CANDIDATE.md
+(SHA256 57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c)
+and exact necessary premises. Its FREEZE.json pin is
+41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49.
+Write only in this sibling review directory. Preserve the same model/effort
+and prior exposure; no delegation, network research, other-chat messaging,
+source/W/Git/PR/checkpoint/prompt/axiom/audit changes.
+
+First derive the supported three-site isolation, pulse phase, ramp residual,
+literal old aging, complete-output composition and resource formulas without
+reading the new author checker, launcher or scientific output. Save and freeze
+that derivation. Then inspect the complete author code/evidence, including
+all failed attempts and genuine prelaunch/runtime records. No author checker
+will be imported or replayed as independent evidence.
+
+Direct algebra and operator estimates suffice; zero new scientific runs are
+planned. All scripts in this review are hash/copy/inventory bookkeeping.
+If a new scientific calculation becomes necessary, it requires an amended
+plan, declared dimension/CPU/wall caps, serialized/fsynced prelaunch binding,
+and preserved full streams before execution. No numerical grid or dynamics
+simulation is being used as a uniform proof.
+
+The prior realifier review is source-exposed and not root-qualified at this
+task's start; retain that provisional dependency. The qualified resonance
+source is reused by exact identity, with its own independent-check limits.
+The root-private real_phase_preparation_idea directory must not be read and
+is not an input. Current workflow and the physics-claim-reviewer skill were
+already read in this conversation; the same pinned workflow is applicable.
+The task is selective review, not publication approval or retained audit.
+Deadline remains 2026-10-17T23:07:27Z.

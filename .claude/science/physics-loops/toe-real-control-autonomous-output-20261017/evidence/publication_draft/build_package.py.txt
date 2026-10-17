@@ -1,0 +1,261 @@
+"""Mechanical publication builder. Does not import/execute scientific programs."""
+from pathlib import Path
+import ast,copy,datetime,difflib,gzip,hashlib,json,os,re
+D=Path(__file__).resolve().parent;N=D.parent;W=N.parent/'correlation_worktree';C=D/'canonical'
+I=Path('outputs/real_control_autonomous_output_2026_10_17_inputs');Q=Path('.claude/science/physics-loops/toe-real-control-autonomous-output-20261017')
+PRIMARY=Path('scripts/real_control_autonomous_output_2026_10_17.py');NOTE=Path('docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md')
+NOW=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def sha(b):return hashlib.sha256(b).hexdigest()
+def dig(b):return {'bytes':len(b),'sha256':sha(b)}
+def save(p,b):
+ p.parent.mkdir(parents=True,exist_ok=True)
+ with p.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+def write(p,x):save(p,(json.dumps(x,indent=2)+'\n').encode())
+def read(p):return json.loads(p.read_bytes())
+def dump(n):return ast.dump(n,include_attributes=False)
+def resolve(rel):return C/rel if (C/rel).is_file() else W/rel
+pins={'real_coupling_halt_route/ROUTE.md':'c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018','real_coupling_preparation_candidate/CANDIDATE.md':'57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c','real_control_root_review/ACCEPTANCE.json':'98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852','real_control_root_review/QUALIFICATION.md':'4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4','real_control_root_review/FREEZE.json':'af9a2ab1843a8d026265a6c326002c1003cdff5e7ad4382c73a060de4cb7d3f1'}
+for rel,pin in pins.items():assert sha((N/rel).read_bytes())==pin,rel
+# Finite published dependency candidates; no Git or directory-wide speculative fallback.
+parent_paths=set()
+pt=ast.parse((W/'scripts/thermal_resonance_halt_2026_10_17.py').read_bytes())
+for node in pt.body:
+ if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in node.targets):parent_paths.update(ast.literal_eval(node.value))
+pm=read(W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/PACKAGING_MAP.json')
+parent_paths.update(r['path'] for r in pm['files'])
+process_paths=['docs/ai_methodology/SCIENCE_WORKFLOW.md','docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md','docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md','docs/ai_methodology/skills/physics-loop/references/DELIVERY.md','docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md','docs/WRITING_VOICE_GUIDE_2026-04-25.md']
+parent_paths.update(process_paths);parent_paths.update(['docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md','docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'])
+index={};parent_inventory=[]
+for rel in sorted(parent_paths):
+ p=Path(rel);assert not p.is_absolute() and '..' not in p.parts
+ b=(W/p).read_bytes();row={'path':rel,**dig(b),'compression':'none','raw_bytes':len(b),'raw_sha256':sha(b)}
+ if rel.endswith('.gz'):
+  raw=gzip.decompress(b);row.update(compression='gzip',raw_bytes=len(raw),raw_sha256=sha(raw))
+ parent_inventory.append(row);index.setdefault(row['raw_sha256'],row)
+write(D/'PARENT_INPUT_INDEX.json',{'reported_parent':'67108090f68ed9b2bc62eee23701b2d3d71dce4a','Git_read_or_refresh':False,'finite_sources':'Parent thermal primary input tuple, parent packaging map and explicit process/parent-note files','files':parent_inventory})
+source_rows=[];scope_rows=[];new_bytes={};raw_by_label={};source_lookup={};capture=[]
+def capture_one(src,label,expected=None):
+ raw=src.read_bytes()
+ if expected:assert dig(raw)=={k:expected[k] for k in ('bytes','sha256')},label
+ raw_by_label[label]=raw
+ h=sha(raw)
+ if h in index:
+  dest=copy.deepcopy(index[h]);transport='reuse_exact_parent_bytes'
+ elif h in new_bytes:dest=copy.deepcopy(new_bytes[h]);transport='reuse_identical_new_bytes'
+ else:
+  target=I/'frozen_sources'/label
+  if target.suffix=='.md':target=Path(str(target)+'.txt')
+  trailing=not b'\x00' in raw and any(line.endswith((b' ',b'\t')) for line in raw.splitlines())
+  stored=gzip.compress(raw,mtime=0) if trailing else raw
+  if trailing:target=Path(str(target)+'.gz')
+  save(C/target,stored)
+  dest={'path':str(target),**dig(stored),'compression':'gzip' if trailing else 'none','raw_bytes':len(raw),'raw_sha256':h};new_bytes[h]=copy.deepcopy(dest)
+  transport='lossless_gzip_of_exact_source' if trailing else 'byte_preserved_copy'
+ st=src.stat();row={'source_label':label,'historical_source':str(src),**dest,'transport':transport,'captured_identity':{'bytes':len(raw),'sha256':h,'device':st.st_dev,'inode':st.st_ino,'mtime_ns':st.st_mtime_ns}}
+ source_rows.append(row);source_lookup[label]=row;capture.append({'path':str(src),'label':label,**row['captured_identity']})
+for scope in ['real_coupling_halt_route','real_coupling_route_review','real_coupling_preparation_candidate','real_coupling_preparation_review','real_control_root_review']:
+ root=N/scope;fr=read(root/'FREEZE.json')
+ if scope=='real_coupling_preparation_candidate':members=read(root/'FILE_MANIFEST.json')['members'];additional=['FILE_MANIFEST.json','FREEZE.json']
+ else:members=fr['files'];additional=['FREEZE.json']
+ seen=set()
+ for row in members:
+  rel=Path(row['path']);rel=rel.relative_to(root) if rel.is_absolute() else rel
+  assert '..' not in rel.parts and not rel.is_absolute();seen.add(str(rel));capture_one(root/rel,str(Path(scope)/rel),row)
+ for rel in additional:
+  if rel not in seen:capture_one(root/rel,scope+'/'+rel)
+ scope_rows.append({'scope':scope,'freeze_sha256':sha((root/'FREEZE.json').read_bytes()),'manifest_member_count':len(members),'captured_count':sum(r['source_label'].startswith(scope+'/') for r in source_rows)})
+for rel in process_paths:capture_one(W/rel,'process/'+Path(rel).name)
+# The root pre-code reading is chronology, not a new mathematical premise. Its
+# private source directory is not accessed; separate complete reviewers are captured.
+write(C/I/'SOURCE_MAP.json',{'created_utc':NOW,'parent_commit':'67108090f68ed9b2bc62eee23701b2d3d71dce4a','scope':'Finite frozen author/reviewer/root scopes; historical absolute labels are provenance only, never a resolver fallback. Stored and raw identities distinct for gzip.','scopes':scope_rows,'files':source_rows,'uncopied_chronology_reference':'Root ACCEPTANCE names its source-exposed pre-code read in a separately private directory; this non-load-bearing chronology pointer is preserved, that private directory is not accessed.'})
+write(D/'CAPTURE_BINDINGS.json',{'created_utc':NOW,'sources':capture})
+# Role aliases use exact finite rows, including explicit decompression only when declared.
+def alias(label):return {k:source_lookup[label][k] for k in ('path','bytes','sha256','compression','raw_bytes','raw_sha256')}
+roles={
+ 'realifier_author':{'function':'run_realifier_author','program':'real_coupling_halt_route/check_route.py','historical_limits':{'cpu_soft_hard_seconds':[20,20],'external_wall_seconds':30},'aliases':{'__original_program__':alias('real_coupling_halt_route/check_route.py'),'SOURCE_MANIFEST.json':alias('real_coupling_halt_route/SOURCE_MANIFEST.json'),'SCALAR_INPUTS.json':alias('real_coupling_halt_route/SCALAR_INPUTS.json')}},
+ 'preparation_author':{'function':'run_preparation_author','program':'real_coupling_preparation_candidate/check_preparation.py','historical_limits':{'cpu_soft_hard_seconds':[20,20],'external_wall_seconds':30},'aliases':{'__original_program__':alias('real_coupling_preparation_candidate/check_preparation.py'),'inputs/parameters.json':alias('real_coupling_preparation_candidate/inputs/parameters.json')}}}
+for r in json.loads(raw_by_label['real_coupling_halt_route/SOURCE_MANIFEST.json'])['entries']:roles['realifier_author']['aliases'][r['snapshot']]=alias('real_coupling_halt_route/'+r['snapshot'])
+write(C/I/'INPUT_MAP.json',{'format':'Finite role/logical label to integrity-checked repository-relative stored/raw bytes','no_absolute_fallback':True,'roles':roles,'canonical_shared_plan':{'cpu_soft_hard_seconds':[30,30],'external_wall_seconds':45,'maximum_dense_dimension':6}})
+# Build reversible AST transport. Each mutation is selected from exact original AST.
+ledger=[];function_text=[]
+def paths(n,path=()):
+ if isinstance(n,ast.AST):
+  yield path,n
+  for k,v in ast.iter_fields(n):yield from paths(v,path+(k,))
+ elif isinstance(n,list):
+  for j,v in enumerate(n):yield from paths(v,path+(j,))
+def get(n,path):
+ for x in path:n=n[x] if isinstance(x,int) else getattr(n,x)
+ return n
+for role in roles:
+ label=roles[role]['program'];source=raw_by_label[label].decode();orig=ast.parse(source);changes={};events=[];tail=[]
+ def edit(path,code,reason,expr=False):
+  node=get(orig,path);replacement=ast.parse(code,mode='eval').body if expr else ast.parse(code).body
+  assert path not in changes;changes[path]=replacement
+  events.append({'event_id':len(events),'source_ast_path':list(path),'kind':'expression' if expr else 'statement','reason':reason,'original_source':ast.get_source_segment(source,node),'original_ast':dump(node),'replacement_source':code})
+ if role=='realifier_author':
+  for path,node in paths(orig):
+   if len(path)==2 and isinstance(node,ast.Assign) and len(node.targets)==1 and isinstance(node.targets[0],ast.Name) and node.targets[0].id in ('ap','args','D'):
+    edit(path,'pass','Historical CLI/directory setup replaced by finite input aliases and external actual prelaunch.')
+   elif len(path)==2 and isinstance(node,ast.Expr) and isinstance(node.value,ast.Call) and isinstance(node.value.func,ast.Attribute) and isinstance(node.value.func.value,ast.Name) and node.value.func.value.id=='ap':edit(path,'pass','Historical CLI parsing removed.')
+   elif isinstance(node,ast.Assign) and ast.unparse(node).startswith('manifest = json.loads('):edit(path,"manifest=json.loads(inputs.read_text('realifier_author','SOURCE_MANIFEST.json'))",'Finite exact source manifest read.')
+   elif isinstance(node,ast.Assign) and ast.unparse(node).startswith('digest = sha256((D / entry['):edit(path,"digest=sha256(inputs.read_bytes('realifier_author',entry['snapshot'])).hexdigest()",'Finite source snapshot alias; original scientific and raw digest checks retained.')
+   elif isinstance(node,ast.Assign) and ast.unparse(node).startswith('pre = json.loads('):edit(path,'pass','Historical prelaunch is preserved evidence; actual runner owns current prelaunch.')
+   elif isinstance(node,ast.For) and ast.unparse(node.iter)=="pre['bindings']":edit(path,'pass','Do not pretend historical device/path bindings describe the portable execution.')
+   elif isinstance(node,ast.Assign) and ast.unparse(node).startswith('inp = json.loads('):edit(path,"inp=json.loads(inputs.read_text('realifier_author','SCALAR_INPUTS.json'))",'Exact scalar input route only.')
+   elif isinstance(node,ast.Expr) and isinstance(node.value,ast.Call) and isinstance(node.value.func,ast.Name) and node.value.func.id=='print':
+    original_dict=copy.deepcopy(node.value.args[0].args[0].args[0]);assert isinstance(original_dict,ast.Dict)
+    for j,k in enumerate(original_dict.keys):
+     if k.value=='source_sha256':k.value='executed_primary_sha256'
+     if k.value=='prelaunch_sha256':k.value='actual_prelaunch_binding';original_dict.values[j]=ast.Constant('See separate root-owned actual canonical execution record; historical receipts are not this run.')
+    original_dict.keys.append(ast.Constant('original_program_sha256'));original_dict.values.append(ast.parse("sha256(inputs.original_program_bytes('realifier_author')).hexdigest()",mode='eval').body)
+    code='report=encode('+ast.unparse(original_dict)+")\nreport['_canonical_execution']=inputs.execution_metadata('realifier_author')\nif not ok:\n print(json.dumps(report,indent=2),flush=True)"
+    edit(path,code,'Return success through outer coordinator, preserve failure stream and exception propagation; distinguish original program/current primary/external prelaunch.')
+  tail=ast.parse('return report').body
+ elif role=='preparation_author':
+  for path,node in paths(orig):
+   if isinstance(node,ast.Assign) and len(node.targets)==1 and isinstance(node.targets[0],ast.Name) and node.targets[0].id=='ROOT':edit(path,'pass','Historical directory removed; finite parameter alias supplied.')
+   elif isinstance(node,ast.Call) and isinstance(node.func,ast.Attribute) and node.func.attr=='read_text' and 'ROOT' in ast.unparse(node):edit(path,"inputs.read_text('preparation_author','inputs/parameters.json')",'Parameter path only, exact symbolic conversion unchanged.',True)
+   elif isinstance(node,ast.Dict):
+    keys=[k.value if isinstance(k,ast.Constant) else None for k in node.keys]
+    if 'cpu_soft_hard_seconds' in keys:
+     j=keys.index('cpu_soft_hard_seconds');edit(path+('values',j),"inputs.shared_limits()['cpu_soft_hard_seconds']",'Actual shared CPU limits replace historical hardcoded report; history retained in metadata.',True)
+     j=keys.index('external_wall_seconds');edit(path+('values',j),"inputs.shared_limits()['external_wall_cap_seconds']",'Actual external wall plan replaces historical report.',True)
+   elif isinstance(node,ast.Expr) and isinstance(node.value,ast.Call) and isinstance(node.value.func,ast.Name) and node.value.func.id=='print':
+    edit(path,"out['_canonical_execution']=inputs.execution_metadata('preparation_author')\nout['historical_check_interpretation']={'ramp_error_and_complete_trace_ceiling':'Original first comparison is budget arithmetic only, not independent ramp validation. Gram/Duhamel proof and substantive Gram/profile identities supply the ramp support. Mathematical clause and check count are unchanged.'}\nreturn out",'Successful report returned; explicit root-qualified scope of non-discriminating historical budget clause, without changing its mathematics or check count.')
+ def transform(n,path=()):
+  if path in changes:return copy.deepcopy(changes[path])
+  if isinstance(n,ast.AST):
+   out=copy.copy(n);out._origin=path
+   for k,v in ast.iter_fields(n):setattr(out,k,transform(v,path+(k,)))
+   return out
+  if isinstance(n,list):
+   ans=[]
+   for j,v in enumerate(n):
+    z=transform(v,path+(j,));ans.extend(z) if isinstance(z,list) else ans.append(z)
+   return ans
+  return n
+ adapted=transform(orig);adapted.body.extend(tail)
+ # A multiline top docstring must be rendered with repr, or indentation changes its value.
+ body=copy.deepcopy(adapted.body);prefix=''
+ if body and isinstance(body[0],ast.Expr) and isinstance(body[0].value,ast.Constant) and isinstance(body[0].value.value,str):prefix=repr(body.pop(0).value.value)+'\n'
+ rendered=prefix+ast.unparse(ast.Module(body=body,type_ignores=[]))
+ ftext='def '+roles[role]['function']+'(inputs):\n'+'\n'.join('    '+line if line else '' for line in rendered.splitlines())+'\n'
+ actual=ast.Module(body=ast.parse(ftext).body[0].body,type_ignores=[]);assert dump(actual)==dump(adapted),'literal drift:'+role
+ mapped={getattr(n,'_origin'):path for path,n in paths(adapted) if isinstance(n,ast.stmt) and hasattr(n,'_origin')}
+ records=[]
+ for path,node in paths(orig):
+  if not isinstance(node,ast.stmt):continue
+  dest=mapped.get(path);a=get(adapted,dest) if dest is not None else None
+  records.append({'source_ast_path':list(path),'source_lines':[node.lineno,node.end_lineno],'source_ast_sha256':sha(dump(node).encode()),'adapted_ast_path':list(dest) if dest is not None else None,'adapted_ast_sha256':sha(dump(a).encode()) if a is not None else None,'status':'unchanged_AST' if a is not None and dump(a)==dump(node) else 'contains_or_is_explicit_transport_edit'})
+ ledger.append({'role':role,'function':roles[role]['function'],'source':alias(label),'original_module_ast_sha256':sha(dump(orig).encode()),'adapted_body_ast_sha256':sha(dump(adapted).encode()),'events':events,'added_tail_statements':[ast.unparse(x) for x in tail],'tail_reason':'Return after finally, never inside it, so exceptions are not suppressed.' if tail else None,'statements':records,'statement_count':len(records),'scientific_expressions_assertions':'Preserved outside explicit transport-only source/report/cap changes; weak historical budget clause deliberately not repaired.'})
+ function_text.append(ftext)
+ save(D/('DIFF_'+role+'.patch'),''.join(difflib.unified_diff(ast.unparse(orig).splitlines(True),ast.unparse(adapted).splitlines(True),fromfile=label,tofile=roles[role]['function'])).encode())
+write(C/I/'TRANSPORT_EDIT_LEDGER.json',{'created_utc':NOW,'source_to_function':ledger,'actual_shared_limits':{'cpu_soft_hard_seconds':[30,30],'external_wall_seconds':45},'scope':'Two source-exposed author corroboration bodies only. No original checker imported. Original ASTs reconstruct by reversing explicit events and removing declared tail statements.'})
+head='''"""Portable source-exposed author corroboration; import is inert.
+Two preserved programs corroborate local algebra and a scoped counterexample.
+They do not independently re-prove inherited scattering or the ramp theorem.
+"""
+from pathlib import Path
+import gzip
+import hashlib
+import json
+import resource
+import time
+AUDIT_TIMEOUT_SEC = 45
+REPO = Path(__file__).resolve().parents[1]
+INPUT_ROOT = REPO / 'outputs/real_control_autonomous_output_2026_10_17_inputs'
+
+class FrozenInputs:
+    def __init__(self, repo, table_path):
+        self.repo=Path(repo).resolve()
+        self.table=json.loads(Path(table_path).read_text(encoding='utf-8'))
+        self.reads=[]
+    def read_bytes(self, role, logical):
+        row=self.table['roles'][role]['aliases'][str(logical)]
+        rel=Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts and rel.as_posix()==row['path']
+        path=self.repo/rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        assert not any(p.is_symlink() for p in path.parents if p!=self.repo and self.repo in p.parents)
+        path.resolve().relative_to(self.repo)
+        stored=path.read_bytes()
+        assert len(stored)==row['bytes'] and hashlib.sha256(stored).hexdigest()==row['sha256'], row['path']
+        assert row['compression'] in ('none','gzip') and 0<=row['raw_bytes']<=16777216
+        raw=gzip.decompress(stored) if row['compression']=='gzip' else stored
+        assert len(raw)==row['raw_bytes'] and hashlib.sha256(raw).hexdigest()==row['raw_sha256'], row['path']
+        self.reads.append({'role':role,'logical':str(logical),'path':row['path'],'kind':'finite declared source/integrity input','stored_sha256':row['sha256'],'raw_sha256':row['raw_sha256']})
+        return raw
+    def read_text(self, role, logical):
+        return self.read_bytes(role,logical).decode('utf-8')
+    def original_program_bytes(self, role):
+        return self.read_bytes(role,'__original_program__')
+    def shared_limits(self):
+        return {'cpu_soft_hard_seconds':list(resource.getrlimit(resource.RLIMIT_CPU)), 'external_wall_cap_seconds':45, 'wall_enforcement':'Required external canonical runner; this class does not implement wall timeout.'}
+    def execution_metadata(self, role):
+        return {'historical_original_limits':self.table['roles'][role]['historical_limits'],'actual_shared_process_limits':self.shared_limits(),'original_program_sha256':hashlib.sha256(self.original_program_bytes(role)).hexdigest(),'interpretation':'Historical source status/receipts remain historical. Current source qualification and actual execution are separate records; no independent science status is inferred.'}
+
+def verify_artifacts():
+    manifest=json.loads((INPUT_ROOT/'ARTIFACT_MANIFEST.json').read_text(encoding='utf-8'))
+    for row in manifest['files']:
+        rel=Path(row['path'])
+        assert not rel.is_absolute() and '..' not in rel.parts and rel.as_posix()==row['path']
+        path=REPO/rel
+        assert path.is_file() and not path.is_symlink(), row['path']
+        assert not any(p.is_symlink() for p in path.parents if p!=REPO and REPO in p.parents)
+        path.resolve().relative_to(REPO)
+        raw=path.read_bytes()
+        assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256'], row['path']
+
+'''
+main='''
+def main():
+    if not __debug__:
+        raise RuntimeError('Normal Python assertions must be active; no -O/PYTHONOPTIMIZE.')
+    resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+    started=time.monotonic()
+    verify_artifacts()
+    inputs=FrozenInputs(REPO,INPUT_ROOT/'INPUT_MAP.json')
+    reports={'realifier_author':run_realifier_author(inputs),'preparation_author':run_preparation_author(inputs)}
+    output={'scope':'Two source-exposed author corroborations only; original narrow counterexample uses 10^6/kappa^2. New preparation composition uses separately qualified resonance premise. Historical ramp-budget first clause is arithmetic, not independent ramp validation.', 'reports':reports, 'actual_shared_process_limits':inputs.shared_limits(),'maximum_dense_dimension':6,'maximum_graph_vertices':46,'elapsed_seconds':time.monotonic()-started,'input_sha256':{name:hashlib.sha256((REPO/name).read_bytes()).hexdigest() for name in AUDIT_INPUT_PATHS},'resolved_reads':inputs.reads,'integrity_reads':'Artifact/source manifests, exact source snapshots, originals and executing-primary self-hashes; no historical absolute path fallback. Scientific scalar/parameter inputs are separately identified by the roles.','limits':'No huge apparatus, dynamics, Gibbs evolution, calibration box, parameter grid, inherited checker replay, native supply, independent theorem review or retained audit.'}
+    (REPO/'outputs/real_control_autonomous_output_2026_10_17.json').write_text(json.dumps(output,indent=2)+'\\n',encoding='utf-8')
+    print(json.dumps({'status':'completed source-exposed corroboration','author_bodies':2,'shared_limits':inputs.shared_limits(),'maximum_dense_dimension':6,'weak_historical_clause':'budget arithmetic only'},indent=2))
+    print('per_element: checked positive real local cells and explicit signed-core identities; no native physical realization was executed.')
+    print('per_site: checked finite site loads and ordinary NN prefixes; arbitrary-size geometry follows the separately preserved proof.')
+    print('per_mode: checked chiral sectors, literal old witnesses and local exit Gram identities; inherited spectral modes were not replayed.')
+    print('per_block: checked exact finite local matrices and sparse Pauli columns; the supported ramp theorem is analytical, not the budget clause.')
+    print('lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.')
+
+'''
+# Source body links are the only permitted body edits.
+wrapper=(D/'WRAPPER.template.md').read_text()
+for token,label in [('ROOT_QUALIFICATION','real_control_root_review/QUALIFICATION.md'),('ROOT_ACCEPTANCE','real_control_root_review/ACCEPTANCE.json')]:wrapper=wrapper.replace('{{'+token+'}}','../'+source_lookup[label]['path'])
+for a,b in [('below0.','below 0.'),('above0.','above 0.'),('spectrum0,','spectrum 0,'),('Gram2I','Gram 2I'),('uses2M','uses 2M'),('and2M','and 2M'),('are27.','are 27.'),('and22.','and 22.'),('below9','below 9'),('below20','below 20'),('below33','below 33'),('has10^','has 10^'),('most6x6','most 6x6'),('a46-','a 46-'),('most4x4','most 4x4'),('of2*kappa','of 2*kappa')]:wrapper=wrapper.replace(a,b)
+save(D/'WRAPPER.md',wrapper.encode());note=wrapper.encode();bodies=[]
+for title,label in [('Real local apparatus and unprepared-seed counterexample','real_coupling_halt_route/ROUTE.md'),('Real local preparation and autonomous-output composition','real_coupling_preparation_candidate/CANDIDATE.md')]:
+ raw=raw_by_label[label];embedded=raw;edits=[]
+ for mat in re.finditer(rb'\]\(([^\n)]+)\)',raw):
+  target=mat.group(1).decode();clean=target.strip('<>')
+  if clean.startswith(('https:','http:','#')):continue
+  logical=str(Path(label).parent/clean);assert logical in source_lookup,(label,clean)
+  replacement='../'+source_lookup[logical]['path'];rep=('<'+replacement+'>' if target.startswith('<') else replacement).encode()
+  edits.append({'original_start':mat.start(1),'original_end':mat.end(1),'original_target':target,'replacement_target':rep.decode(),'resolved_repository_path':source_lookup[logical]['path']})
+ for e in reversed(edits):embedded=embedded[:e['original_start']]+e['replacement_target'].encode()+embedded[e['original_end']:]
+ delta=0
+ for e in edits:e['embedded_start']=e['original_start']+delta;e['embedded_end']=e['embedded_start']+len(e['replacement_target'].encode());delta+=len(e['replacement_target'].encode())-(e['original_end']-e['original_start'])
+ note+=('\n\n<!-- BEGIN PRESERVED SOURCE: '+label+' -->\n\n## Preserved source: '+title+'\n\n').encode();start=len(note);note+=embedded;end=len(note);note+=('\n\n<!-- END PRESERVED SOURCE: '+label+' -->\n').encode()
+ bodies.append({'title':title,'source_label':label,'original':alias(label),'note_byte_start_inclusive':start,'note_byte_end_exclusive':end,'embedded_sha256':sha(embedded),'bytes':len(embedded),'link_target_edits':edits,'all_non_target_bytes_unchanged':True})
+save(C/NOTE,note);write(C/I/'PROOF_BODY_MAP.json',{'note':str(NOTE),'bodies':bodies,'allowed_changes':'Explicit Markdown destinations only; no mathematical, historical status or whitespace content rewritten.'})
+write(C/I/'PUBLICATION_STATUS.json',{'created_utc':NOW,'scope':'Frozen mechanical drafting history; later actual state lives in external Q records','source_math':'Root-qualified conditional support, exact source acceptance preserved','transport_review':'pending separate source-transport check','canonical_scientific_execution':'not performed by this draft','mutations':'not performed by this draft','publication':'not performed by this draft','retained_audit':'not performed','no_status_promotion':True,'editable_prompt_files_changed':[]})
+write(C/I/'REPRODUCTION_PLAN.json',{'scope':'Two mechanically transported author programs; no scientific or mutation execution in draft','runner':str(PRIMARY),'canonical_execution':'scripts.runner_cache.execute_and_write_cache with declared AUDIT_TIMEOUT_SEC45; do not treat raw stdout as cache','cpu_shared_soft_hard_seconds':[30,30],'external_wall_seconds':45,'maximum_dense_dimension':6,'maximum_graph_vertices':46,'no_optimized_python':True,'prelaunch':'Root must serialize/fsync interpreter, actual launcher, primary, every declared input and selected runtime identities before spawn, compare after and preserve full streams including failures. Partial runtime pins must be labeled.','historical_limits':{r:roles[r]['historical_limits'] for r in roles},'scope_warning':'Historical preparation ramp-budget first clause remains non-discriminating budget arithmetic. Do not count it as an independent ramp check. Exact small fixtures do not prove all-length/all-time claims.','future_checks':'Separate transport review, canonical actual execution/cache, distinct fault families, source/vocabulary/diff/changed-evidence checks; integrated-main gates later.'})
+# All source/review bytes are declared, as are maps/proofs/note and parent load-bearing notes.
+audit={r['path'] for r in source_rows}
+audit.update(str(p.relative_to(C)) for p in (C/I).rglob('*') if p.is_file());audit.add(str(NOTE));audit.add('docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md');audit.add('docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md');audit.add(str(I/'ARTIFACT_MANIFEST.json'))
+audit=tuple(sorted(audit));primary=head+'\n\n'.join(function_text)+main+'AUDIT_INPUT_PATHS = '+repr(audit)+"\n\nif __name__ == '__main__':\n    main()\n";save(C/PRIMARY,primary.encode())
+manifest=[]
+for rel in audit:
+ if rel==str(I/'ARTIFACT_MANIFEST.json'):continue
+ b=resolve(rel).read_bytes();manifest.append({'path':rel,**dig(b)})
+write(C/I/'ARTIFACT_MANIFEST.json',{'scope':'Exact calculation input closure excluding primary and this manifest; those are independently bound by canonical prelaunch/cache. Later Q decisions excluded to prevent self-reference.','files':manifest})
+write(D/'BUILD_RESULT.json',{'created_utc':NOW,'source_scopes':scope_rows,'source_labels':len(source_rows),'new_unique_stored_sources':len(new_bytes),'reused_parent_labels':sum(r['transport']=='reuse_exact_parent_bytes' for r in source_rows),'deduplicated_new_labels':sum(r['transport']=='reuse_identical_new_bytes' for r in source_rows),'declared_inputs':len(audit),'transport_events':sum(len(x['events']) for x in ledger),'added_tail_statements':sum(len(x['added_tail_statements']) for x in ledger),'original_statement_records':sum(x['statement_count'] for x in ledger),'proof_target_edits':sum(len(b['link_target_edits']) for b in bodies),'primary':dig(primary.encode()),'note':dig(note),'scientific_runs':0})
+print((D/'BUILD_RESULT.json').read_text())

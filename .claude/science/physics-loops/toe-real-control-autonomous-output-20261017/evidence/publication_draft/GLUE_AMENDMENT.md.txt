@@ -1,0 +1,15 @@
+# Outer-glue refusal correction before final freeze
+
+The original draft main used assert __debug__. Optimized Python removes that
+assertion along with the scientific assertions, so it was not a dependable
+refusal. The final outer main now uses if not __debug__: raise RuntimeError.
+This changes only new adapter glue, not either transported body, event ledger,
+proof, source map or declared input. The builder source received the same edit.
+Static attempt03 verifies the isolated guard under compile(optimize=1), without
+calling main or importing/executing mathematical bodies. The explicit refusal
+precedes resource mutation, input reads and scientific invocation.
+
+One apply_patch tool attempt was rejected before edits with:
+"apply_patch verification failed: invalid hunk at line 12, Update file hunk ...
+is empty". The malformed empty third hunk was removed and the patch applied.
+No scientific attempt occurred. Earlier static01/02 evidence remains exact.

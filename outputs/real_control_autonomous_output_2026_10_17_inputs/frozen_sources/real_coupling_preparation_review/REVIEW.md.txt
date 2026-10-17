@@ -1,0 +1,640 @@
+# Selective review: real local preparation and release
+
+The new five-unit controlled preparation and its conditional runtime
+composition are supported. I found no required mathematical correction to
+the candidate. The exact supported isolation, pulse product, two ramp
+estimates and literal old aging give setup operator error at most
+`sqrt(2) kappa`. For the stated exact coupling interval, the qualified
+resonance interface then gives complete finite operator error below
+`.00483202` and unhalved trace distance below `.00966404` on the stated
+release-time window `[T,2T]`, using the same literal `M=ceil(50T)` apparatus.
+
+The realifier remains an explicit provisional dependency here: its prior
+selective review has not been promoted to root qualification by this report.
+Exact product seed/vacuum delivery and real classical controls with the
+specified pulse areas remain supplied permissions. This is not a thermal
+delivery theorem, native supplier, autonomous preparer, publication approval
+or retained audit.
+
+| Claim | Selective disposition |
+|---|---|
+| Nine real positive local isolation blocks, full-qubit positivity | Supported; exact supported core identity holds for every M>=16. |
+| Pulse signs, spectator phases, C1 switch-on/off and setup duration 5 | Supported; reversing the second exchange prepares the opposite chirality. |
+| Complete setup error <=sqrt(2)kappa, common Phi and exp(-i5K) | Supported by the scaled-isometry exit Gram and supported Duhamel proof, with all leakage retained. |
+| Realifier-to-resonance interface, actual waveform/scalar and finite horizon | Supported conditionally at the exact source identities; no change of M or old-age reset occurs. |
+| Block/site counts, incident loads/slew, identity coefficients and work bound | Supported as the stated full positive-block accounting; no all-site cap two or optimality claim follows. |
+| Pure-seed, thermal/native supply and autonomous setup | Remain external/open; not supplied by this schedule. |
+| Author checker as proof of the ramp theorem | Not sufficient alone; one final scalar clause is non-discriminating. This is a nonblocking coverage finding, detailed below. |
+
+The complete new argument was read before any author executable/output.
+The independently derived analytical result was frozen as
+`PRECHECK_ANALYSIS.md`, 21411 bytes, SHA256
+`9339ba255e6de6c6751ab840b953d0c02ee7f829272e146c64e4189d7539fe40`.
+Its `ANALYTIC_FREEZE.json` SHA256 is
+`8cf616fb8f956f5a2129d247f610e44e51a0859cc23f588e80e9135cff04fc9d`.
+All 24 entries remained unchanged at post-exposure verification. The full
+frozen derivation is reproduced verbatim below; its final then-pending
+code-inspection paragraph is historical. The completed evidence comparison
+and the checker coverage finding follow it. No mathematical conclusion
+was changed after author-code exposure.
+
+Controlling exact source identities are:
+
+| Source | SHA256 |
+|---|---|
+| New CANDIDATE.md, 28103 bytes | 57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c |
+| New FREEZE.json | 41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49 |
+| New SOURCE_MAP.json | c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9 |
+| Provisional realifier ROUTE | c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018 |
+| Provisional realifier FREEZE | 16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b |
+| Exact coupling-family body | 9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac |
+| Family root acceptance | a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325 |
+| Resonance-family body | 401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0 |
+| Resonance-family root acceptance | bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686 |
+| Resonance-family root qualification | 88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84 |
+| Exact parameter container | a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251 |
+
+`SOURCE_BINDINGS.json` gives all twenty initial copies, including seventeen
+inherited snapshots and their original paths. `author_packet/` preserves
+all forty-three author packet files, including failed-attempt records.
+The source-exposed same-model reviewer has prior authorship/checking of
+the local/installed emitter, generic/interval bridges, family and resonance
+arguments. Those unchanged identities are reused transparently, not counted
+as a blind rederivation. The root-private preparation idea was not accessed.
+
+---
+
+
+# Independent analytical review before author-code exposure
+
+This analysis was written after reading the entire 28103-byte candidate,
+its freeze and source map, but before viewing the new author checker,
+launchers, scalar execution, receipts or streams. Freeze metadata discloses
+one import failure followed by success; those actual records have not yet
+been read. No scientific program has run in this review. The root-private
+preparation idea was not accessed.
+
+## Disposition and controlling scope
+
+The local preparation and release argument is supported as stated. I find
+no required mathematical correction in the new supported identities, pulse
+phase, setup residual, runtime interface, or resource/scalar accounting.
+Its conclusion is conditional on the specified exact apparatus, pure blank
+product seed and supplied real time-dependent controls. The pending
+realifier remains a provisional dependency, not an accepted theorem by
+label. I independently reconstruct the required algebra below; the prior
+realifier review does not thereby acquire root qualification.
+
+The result is a controlled five-unit setup followed by autonomous runtime,
+not an autonomous preparer or a native seed/controller supply theorem. It
+does not inherit the earlier product-preparation Gibbs construction merely
+by citing that work. Exact pulse areas and the real signed coupling values
+are supplied permissions. All branches and preparation leakage remain in
+the complete old/source/clock/emitter/reference estimate.
+
+The new candidate pin is
+57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c;
+its freeze pin is
+41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49.
+SOURCE_MAP.json has pin
+c1a701881fdeb81ce3f878b7851f9f6f0b36f15d04b879f213d2fb76f902f1f9.
+Its seventeen unchanged source snapshots are preserved in this review.
+The decisive mathematical sources are the realifier c1cf729c..., exact
+family 9bcf538e..., and resonance family 401e5c23..., with root resonance
+acceptance bb280c96... and qualification 88db9d4d.... The full exact pins
+and original paths are in the byte binding inventory, not rounded numerical
+substitutes. Prior full spectral checking is reused by identity and scope.
+
+## 1. Positive cells, geometry and supported core
+
+For real h the full two-qubit hopping cell is diagonal on 00 and 11 with
+values 0 and 2|h|, and has the one-head block
+[[|h|,h],[h,|h|]]. Its spectrum is 0,0,2|h|,2|h|.
+Thus both Q(h) and 2|h|I-Q(h) are real PSD and have norm 2|h| on the
+entire local Hilbert space. This is sufficient for full-qubit positivity
+of every isolation complement; no one-head restriction is used for that
+claim. The pin (E0-kappa)n_m is positive throughout the stated interval.
+For example 4<q0<5 and .03<J<.031 give
+E0=4J/(q0^2+1)>.12/26>3*10^-8>=3kappa.
+Also c,s>0, c^2+s^2=1 and d=1+c+s<3.
+
+All eight isolation edges are already installed. The active path is
+e0=(8,2,1), m=(9,2,1), e1=(9,3,1), whose two edges have Manhattan length
+one. The other five support sites listed in the candidate are the remaining
+attachment/neighbor sites (eight sites total, including the three path sites
+and five other sites). Explicitly e0 is adjacent to c12,0 and c14,1; e1
+is adjacent to c12,1 and c14,1; m is adjacent to c13,0 and c15,0. Together
+with e0--m and e1--m these are exactly the eight required edges. There is
+no direct e0--e1 hopping, diagonal edge or controlled three-body flag term.
+M>=16 places c15,0 in the finite graph. The pre-existing whole graph's
+selected-edge cubic embedding is reused; unintended geometric neighbors
+are not automatically installed interactions.
+
+The six emitter edges have total absolute hopping 2kappa d, and the two
+clock edges incident to m have total absolute hopping 2J. Consequently
+their complement constants sum to
+
+    Sb = sum_edges 2|h| = 4J+4kappa d.
+
+In the runtime one-head representation the common scalar is
+cR=2nu+2kappa d, the emitter diagonal is E0, and m's clock diagonal is 2J.
+The complements cancel the six emitter hoppings and two m-clock hoppings
+as full operators. At either emitter they subtract occupation kappa d.
+At m they subtract 2J+kappa(c+s). The pin then adds E0-kappa at m.
+All three core diagonals after these subtractions/pin equal E0-kappa d.
+After the common constant cR+Sb is restored they are
+
+    Ciso = E0+cR+4J+3kappa d
+         = E0+2nu+4J+5kappa d.
+
+There is no head at clock sites 0 or 1 in this subspace. Both source
+qubits are in their vacuum, so C and G annihilate the source and only
+literal K acts internally. This proves the full supported identity
+
+    (HR+R) E_S = E_S (K tensor I_3+Ciso I)
+
+for all four old basis columns and arbitrary complex old coefficients,
+not just one old energy. It proves invariance of that specified core.
+It is not a claim that every source-excited or many-head state is isolated
+from the old pair. All local cells are PSD on those other sectors, but the
+comparison theorem starts in the stipulated one-head, vacuum-source sector.
+When M=16, the far-end onsite at c15,0 still acts as zero on E_S; this
+does not change the core identity.
+
+For either emitter, the runtime and control actions are
+
+    HR E_eq = E_eq(K+cseed)+kappa Vq,
+    R E_eq = r E_eq-kappa Vq,
+    cseed=E0+cR, r=4J+3kappa d.
+
+The two V columns have coefficients (1,-c,-s) and (1,s,-c) on their
+listed three clock positions. Their shared rows are m and c14,1. Their
+inner product is -cs+sc=0 and each squared norm is 1+c^2+s^2=2.
+Since each row acts as the same vacuum embedding on the old system,
+
+    (V0,V1)^*(V0,V1)=2I_old tensor I_rail.
+
+This is a scaled isometry of norm sqrt(2). Losing that factor would give
+an incorrect setup bound. It also proves the same bound with a passive
+reference and for the later chiral emitter superposition.
+
+## 2. Controls, phases and exact five-unit chronology
+
+For q(x)=30x^2(1-x)^2, direct integration gives integral q=1.
+The maximum is q(1/2)=15/8. Since q'=60x(1-x)(1-2x), its extrema in
+magnitude occur at x=(3+/-sqrt(3))/6 and equal 10sqrt(3)/3. Both q
+and q' vanish at endpoints. The ramp u=3x^2-2x^3 has integral 1/2,
+u'=6x(1-x), maximum derivative 3/2, and zero endpoint derivatives.
+The downward ramp is 1-u. Joining them to the constant-on and zero
+segments gives C1 nonnegative real controls, all zero at setup start
+and after time 5. The installed runtime HR is never switched off.
+
+The first pair pulse plus its spectator onsite has one-head core matrix
+
+    P1=[[1,1,0],[1,1,0],[0,0,1]]=I+X_(e0,m).
+
+The second is
+
+    P2=[[1,0,0],[0,1,-1],[0,-1,1]]=I-X_(m,e1),
+
+and P3=diag(0,0,1). Their full physical realizations are positive two-site
+Q(+1), Q(-1), and positive one-site occupation terms, with the displayed
+nonnegative weights. Positivity is not being inferred from these 3-by-3
+restrictions alone.
+
+On the invariant core, K+Ciso is an identity in position and therefore
+commutes with each generator. Inside each separate pulse window the
+generator is fixed, so time ordering reduces to its exact pulse area:
+a1=pi/4, a2=pi/2, a3=pi/2. Starting from e0,
+
+    exp(-ia1 P1)e0 = exp(-i pi/4)(e0-i m)/sqrt(2),
+    exp(-ia2 P2)(e0-i m)/sqrt(2)
+        =exp(-i pi/2)(e0+e1)/sqrt(2),
+    exp(-ia3 P3)(e0+e1)/sqrt(2)=(e0-i e1)/sqrt(2).
+
+Thus the pulse common phase is exp(-3pi i/4), and the final head sector
+is exactly xi_plus. The sign of the negative second exchange is essential.
+Using the opposite sign sends m to -i e1 instead of +i e1 and gives
+xi_minus after the final phase pulse. Those two states are orthogonal.
+The onsite spectators make the displayed core generators have a common
+identity part on all three positions. For this particular ideal initial
+path, the first spectator acts on an unoccupied e1 during the first pulse;
+its inclusion is a convenient full-core identity/cost, not a demonstrated
+minimum control requirement. No claim of optimality is made.
+
+Omitting the ninth isolation pin changes m's diagonal relative to the
+emitters by -(E0-kappa), which is nonzero. Then the simple isolated pulse
+product does not have the asserted flat-core premise. A retuned or different
+control protocol is not thereby excluded; the candidate properly records
+only failure of this simpler calculation.
+
+## 3. Supported Duhamel estimate and all actual outputs
+
+For a fixed unit rail vector z, define the comparison map during a ramp by
+
+    Az(t)=exp[-i integral_0^t(cseed+r u(v))dv] Ez exp(-itK).
+
+Differentiation gives i Az'=(cseed+r u)Az+Az K, and the supported actions
+above give
+
+    (HR+uR)Az-i Az'
+        =kappa(1-u) exp[-i integral(cseed+r u)] Vz exp(-itK).
+
+The residual operator norm is exactly sqrt(2)kappa|1-u|. The usual
+variation-of-constants identity for the actual time-dependent unitary
+therefore gives error at most its time integral. No extensive norm of HR
+is invoked. The finite one-head Hamiltonian is bounded; on the infinite
+one-head representation the same argument uses a bounded static operator
+and finitely supported bounded controls. Both ramps have integral(1-u)=1/2,
+so each contributes kappa/sqrt(2).
+
+After the first ramp, propagate its entire error through the exact three
+pulse unitaries and the final ramp. Apply the ideal core pulse result only
+to the ideal comparison vector. The second ramp comparison starts from
+the normalized fixed z=xi_plus and carries the same error bound. This
+proves the sum sqrt(2)kappa without assuming that the leaked actual part
+remains in the core, without a source trace-out, and without orthogonality
+of any leaked columns. Every old/reference input is covered by operator
+norm and unitarity. The actual source may become entangled with the old
+pair on an error branch; that branch is retained.
+
+Each ramp's supported scalar integral is cseed+r/2. The three middle
+windows have base scalar 3(cseed+r) and pulse scalar 3pi/4. The whole
+setup scalar is consequently
+
+    Phi=5cseed+4r+3pi/4.
+
+K contributes its actual five units on the ideal comparison state:
+
+    ||Usetup E_e0-exp(-iPhi) Echi exp(-i5K)||<=sqrt(2)kappa.
+
+This does not factorize the exact actual state or commute K through its
+source coupling. It leaves the literal K term installed and controls the
+complete discrepancy from the correctly aged ideal state. The 2I part of
+K is already inside exp(-i5K) and must not be added again to Phi.
+
+The asserted control-perturbation estimate is the ordinary full operator
+Duhamel bound integral||DeltaA(t)||dt. Finite support of DeltaA gives an
+M-independent norm bound; admissible positivity/reality and slew remain
+separate requirements. No unquoted tolerance is included in the numerical
+setup budget.
+
+## 4. Realifier/resonance interface and fixed finite apparatus
+
+Reconstruct the needed realifier identity from Hplus=A+iD with A real
+symmetric and D real antisymmetric. With Jf=[[0,-1],[1,0]],
+Jf(1,-i)^T=i(1,-i)^T. Thus A tensor I+D tensor Jf reduces to Hplus in
+the xi_plus sector. The clock-row/emitter-column block at site14 is
+-kappa c I-kappa s Jf, giving exactly the two same-rail -kappa c edges
+and cross signs +kappa s and -kappa s in the candidate. The six positive
+cells and onsite/vacancy terms leave the actual scalar cR=2nu+2kappa d.
+B acts once, not twice. This algebra is independent of the slower onset
+used in the original realifier's failure argument and holds for both
+infinite rails and the finite compression at every M>=16.
+
+The exact resonance source has Htilde=Hplus with identical J, q0, source
+parameters, L=12, band sigma=10^-6 and kappa interval [10^-12,10^-8].
+Its physical operator adds nu+2kappa. Removing precisely that scalar gives
+the candidate's equation (22). Mapping its seed/output into the xi_plus
+sector of HR restores the different actual scalar exp(-icR t), not the
+original exp[-i(nu+2kappa)t]. The output profile is the same actual
+coupling-dependent normalized infinite-half-line Fourier wave of f_kappa
+rho_kappa. There is no replacement by a nominal waveform, a conjugate
+profile, an extra E0 phase, or a finite truncated/renormalized packet.
+The exact inherited zeta=-exp(-4ik0)alpha is used; no old-column phases
+are fitted. The fixed central residual below 1.76*10^-13 stays paid.
+
+For each chosen kappa, choose the single literal finite apparatus
+M=ceil(50/kappa^2) before setup. Both the preparation proof and runtime
+theorem use this same HR,M, including its far-end onsite. Setup error is
+controlled exactly on that M and is subsequently propagated by its actual
+unitary. The inherited finite comparison is applied only to the ideal
+localized Echi seed at release. Therefore it needs a runtime horizon 2T,
+not 2T+5; no uncharged finite-size approximation occurred during the first
+five units. In particular no proof on one M is silently composed with
+runtime on another M.
+
+The composition gives before reordering the ideal old factors
+
+    zeta exp[-i(Phi+cR t)] B_t^R exp(-itK) W exp(-i5K).
+
+Since [W,K]=0 (X1X2 commutes with Z1Z2), this is the candidate's
+B_t^R exp[-i(t+5)K]W. Only these two ideal operators are commuted. All
+actual source/emitter/rail states and errors are retained. Tensoring an
+arbitrary passive reference leaves both norm bounds unchanged.
+
+The qualified resonance bounds are .003832 for every t>=T=kappa^-2
+on the infinite apparatus, and .004832 for the fixed finite M only on
+[T,2T]. Adding sqrt(2)kappa<=sqrt(2)*10^-8<2*10^-8 gives the strict
+ceilings .00383202 and .00483202. The latter induces unhalved trace
+distance below .00966404 by the two-isometry expansion. Actual elapsed
+time is 5+t; the output clock is appropriately beta_t because t is time
+after preparing the ideal localized release seed, not because an actual
+clock or old system was reset. Earlier emitted leakage stays in the
+setup error. The older family can alternatively be composed at its
+explicitly larger T=10^6/kappa^2, not conflated with the new onset.
+
+An initial state at unhalved trace distance delta from the stipulated
+product seed adds at most delta under the entire unitary protocol. This
+is true for reference correlations and sectors outside the ideal one-head
+space, since it is a full-state trace-norm estimate. It does not derive
+such a delta or convert a pure-seed assumption into thermal preparation.
+A pure auxiliary marginal indeed forces factorization with its extension;
+this says nothing about how to supply that marginal. No Gibbs device,
+cooling theorem or native controller is imported from the earlier product
+preparation source.
+
+## 5. Full resources, incident loads and scalar coefficients
+
+Counting actual positive blocks excluding K:
+
+| Contribution | Two-qubit blocks | Onsite blocks |
+|---|---:|---:|
+| C and G | 4 | 2 |
+| Two rail clocks and four endpoints | 2M-2 | 4 |
+| Four source/clock contacts plus mu0 and nu terms | 4 | 4 |
+| Six emitter bonds and their compensators | 6 | 6 |
+| Total runtime | 2M+12 | 16 |
+| Isolation | 8 | 1 |
+| Three pulses, counting spectator terms separately | 2 | 3 |
+
+Thus runtime has 2M+28 blocks excluding K; adding fourteen local control
+term channels gives 2M+42. There are only four shared time profiles
+(the common isolation ramp/hold function and three pulse weights), but
+fourteen distinct supported terms have been counted and paid. These are
+not fourteen new qubits or fourteen independent clock devices. The device
+itself still has 2M+6 qubits, one-head dimension 16(2M+2), full dimension
+2^(2M+6). The support union has eight sites and eight installed edges.
+
+The isolation norm sum is Aiso=Sb+E0-kappa=4J+4kappa d+E0-kappa.
+The elementary bounds J<.031, q0>4, d<3 give
+Aiso<.124+.124/17+11*10^-8<1/7. Each emitter sees isolation norm 2kappa d;
+m sees 4J+2kappa(c+s)+E0-kappa; c14,1 sees 2kappa(c+s); each c12 sees
+2kappa; c13,0 and c15,0 each see 2J. All constants in the complements
+contribute to these full positive-block norms.
+
+Add these to the runtime loads. Pulse maxima are
+w1,max=15pi/32 and w2,max=w3,max=15pi/16. At m and e1 the largest
+incident pulse is 2w2,max=15pi/8. At e0 either 2w1,max or w2,max gives
+15pi/16. Taking maxima across disjoint windows, rather than summing
+nonconcurrent peaks, gives exactly the candidate's three active-site
+rows. The other affected rows follow from the isolation additions;
+c15 has runtime 3J when M=16, so its setup peak is 5J there instead of
+6J. The untouched source/contact and old loads remain those of the
+realifier. In particular only added old-site loads satisfy cap two;
+the highest source load is 27.936224853155858<28.
+
+The largest full control norm sum occurs in pulse two and is bounded by
+Aiso+3w2,max=Aiso+45pi/16<9. During a ramp every incident derivative
+norm sum is bounded by (3/2)Aiso<3/14. During pulses the maximum is
+2*(pi/2)*max|q'|=10pi sqrt(3)/3<20. Using pi<22/7 and sqrt(3)<7/4
+already proves that last strict inequality. Coefficients and derivatives
+are continuous at the joins; no switching delta function is being hidden.
+
+The full Pauli identity coefficient is normalized trace on the full
+finite qubit space. For Q(h) it is |h|; for its complement it is also
+|h|; for n it is 1/2. Applying these elementary coefficients to every
+runtime cell gives
+
+    alpha_R=2+(DeltaA+DeltaB+gA+gB)/2+hAB+u/4
+        +2JM+lambdaA+lambdaB+mu0+nu+E0+2kappa d.
+
+The clock contribution is 2J(M-1)+2J=2JM, including four endpoints.
+The six emitter cells, onsite pins and vacancy terms together contribute
+E0+2kappa d. These are full-space identity coefficients, not their action
+on the prepared seed.
+
+The corresponding norm sum follows by full cell norms, not by trace:
+
+    S_M=DeltaA+DeltaB+2hAB+u+2(gA+gB)+4JM
+        +4(lambdaA+lambdaB)+2mu0+2nu+2E0+4kappa d.
+
+For isolation alpha_iso=Sb/2+(E0-kappa)/2. Each of the first two
+pair-plus-spectator pulses has identity coefficient 3w/2, and the last
+has w/2. Isolation's total time area is four. The pulse identity area
+is (3/2)(pi/4+pi/2)+(1/2)(pi/2)=11pi/8. This proves the setup identity
+integral 5alpha_R+4alpha_iso+11pi/8. It must not replace Phi: nonidentity
+terms have nonzero prepared-state action and cancel extensive vacuum
+identity contributions. The candidate correctly distinguishes those objects.
+
+## 6. Work, extreme scales and surviving obligations
+
+On a finite apparatus with actual unitary state rho(t), differentiation
+of Tr[(HR+A(t))rho(t)] leaves Tr[A'(t)rho(t)] because the commutator
+term vanishes. A(0)=A(5)=0 gives the stated endpoint work identity.
+During the onset ramp A'=u'R is PSD, so its work is nonnegative and at
+most Aiso; the descending ramp gives a nonpositive contribution of
+magnitude at most Aiso. On the ideal isolated core, each separate pulse
+has conserved generator expectation, so its rise and fall have zero
+net work. This is not asserted of the actual leaked component.
+
+The total variation of a nonnegative unimodal pulse w is 2 max w.
+Full pair-plus-spectator generator norm is at most three (in fact three),
+and the last onsite norm is one. Therefore
+
+    |Wsetup|<=2Aiso+6w1,max+6w2,max+2w3,max
+            =2Aiso+165pi/16<33.
+
+The estimate is uniform in M and counts all full-space control norms.
+It is a bound on modeled Hamiltonian work, not fabrication/heat/controller
+reset cost. At kappa=10^-8, T=10^16, M=5*10^17 and 2M+6=10^18+6,
+so release-to-onset and release-to-window-end become total times
+5+10^16 and 5+2*10^16. These are Hamiltonian time units, not seconds.
+No all-future finite-device or optimal-resource statement follows.
+
+Countercases explicitly checked in this derivation are omission of the pin,
+reversal of the second exchange, use of the old single-rail scalar,
+forgetting the sqrt(2) Gram factor, resetting the old age at release,
+and treating finite setup leakage as a discarded branch. Each changes
+a load-bearing premise or yields the wrong stated output. The correct
+schedule avoids them. These are tests of this construction, not no-go
+claims for alternatives. In particular a real Hamiltonian can create
+relative complex phases through ordinary unitary time evolution.
+
+Remaining external obligations are the exact product seed/vacuum supplier,
+native realization of the finite real controls and their prescribed areas,
+physical identification of the Hamiltonian, any thermal or correlated
+delivery bound, fabrication/reset/reuse and practical resources. A joint
+calibration/static box, arbitrary exact accuracy, an autonomous preparer
+or a proof independent of the whole prior source graph is not supplied.
+
+## 7. Exposure and pending record inspection
+
+The reviewer previously authored or checked parts of the installed/local
+emitter and packet bridges, and separately checked the exact family and
+resonance sources. The immediately preceding realifier review supports
+its narrow conditional result but was not root-qualified when this task
+began. This is substantial same-model source exposure, not a blind or
+model-diverse check. No private root proposal was read. The current task
+adds a distinct direct derivation of the new preparation/release algebra
+and interface, without a new numerical program.
+
+After this document is frozen, inspect the author code and both actual
+attempts. Record any post-exposure disagreement separately; do not silently
+rewrite this frozen analysis. The attempted full display of inherited
+parameters.json was truncated; only its complete exact_parameters object
+was needed and was then separately extracted/read. No complete fresh
+reading of that inherited numerical-output object is claimed or required
+for the unchanged spectral premise. All new candidate prose was read fully.
+
+
+---
+
+## Post-exposure code and execution review
+
+After the analytical freeze, I read the entire checker, both launchers,
+bootstrap, plans and retry amendment, both prelaunch records and receipts,
+the full first-run traceback, complete successful stdout, execution summary,
+source-coverage statement and finalizer. I checked the author inventory
+against actual bytes. The empty first stdout and successful stderr are
+preserved. No scientific checker was imported or executed by this reviewer.
+
+The mathematical code path matches the candidate. Its rational input
+parameters and symbolic positive kappa are used to construct actual sparse
+Pauli operators for the runtime and isolator. The Pauli action gives the
+correct Y phases and leaves the old bits literal. It checks all twelve
+old/core columns for each M=16 and 17, rather than checking only an ideal
+3-by-3 hand-written matrix. Its emitter residuals and Gram check agree
+with the pre-frozen derivation. The full-cell characteristic polynomial
+tests use explicit real symmetric 4-by-4 matrices, so their roots establish
+PSD for both hopping signs and both complements. The pulse matrices,
+common phase and two wrong-construction discriminators are consistent with
+the physical terms. Runtime Pauli identity coefficients, block norm sums,
+old/source preservation and NN supports match the candidate.
+
+These fixtures corroborate the new local formulas. They do not establish
+all-M behavior merely by testing M=16 and 17, nor do they integrate the
+ramps or reprove scattering. The analytic support comes from the arbitrary-M
+edge cancellation and Duhamel argument already frozen in this review.
+The actual setup uses one-head/source-vacuum input; full-cell positivity
+on other sectors does not turn the invariant-core identity into an
+all-input preparation theorem. The code/prose distinction is sound.
+
+### Nonblocking checker-coverage finding
+
+At `check_preparation.py:284`, the first clause of the check named
+`ramp_error_and_complete_trace_ceiling` is
+
+    2*kp < 2/10**8 + 1/10**30,
+
+with kp fixed to 1/10**8. It is therefore a comparison of an endpoint to
+itself plus a positive slack. It does not test the sqrt(2) ramp residual,
+the area of |1-u|, or the Duhamel implication. The second clause does
+correctly check the displayed rounded trace-budget arithmetic.
+
+Disposition: do not count that first clause as independent ramp validation.
+If this checker is later transported to a canonical verification surface,
+replace it with a meaningful assertion linking the already computed Gram
+and ramp integrals to `sqrt(2)*kp < 2/10**8`, or label it only as budget
+arithmetic. The supported Gram checks and smooth-profile integrals earlier
+in the same code are substantive; the full operator proof was independently
+derived before code exposure. Thus this coverage issue does not invalidate
+the mathematical theorem and does not require altering the frozen candidate
+or pretending that an extra numerical run is necessary. No frozen source
+was edited. Ninety passing records are not ninety independent proofs.
+
+The two intended countercases are effective: without the ninth pin, the
+actual sparse supported m diagonal has error -(E0-kappa); changing the
+second exchange sign produces a unit state orthogonal to xi_plus. They
+match the reviewer's earlier hand derivation. They are tests inside the
+author implementation, not separate reviewer mutation executions.
+
+## Preserved failure chronology and actual resources
+
+Both launchers serialize and fsync the exact executed source and prelaunch
+JSON, fsync the run directory (and packet directory), and only then call
+Popen. Both impose CPU20/20 and wall30 limits. The first child cannot import
+SymPy under isolated mode and fails before scientific assertions. The
+second preserves `-I`, adds an explicit bootstrap pointing to the already
+installed SymPy package parent, and executes the unchanged checker. The
+retry amendment was written after the first failure and before the second
+prelaunch. There is no scientific tuning, package installation or hidden
+additional attempt in the inspected packet.
+
+| Item | Attempt 1 | Attempt 2 |
+|---|---|---|
+| Prelaunch captured UTC | 2026-10-17T04:57:40.033133+00:00 | 2026-10-17T04:58:27.317683+00:00 |
+| Started UTC | 2026-10-17T04:57:40.053170+00:00 | 2026-10-17T04:58:27.339722+00:00 |
+| Completed UTC | 2026-10-17T04:57:40.101451+00:00 | 2026-10-17T04:58:27.837500+00:00 |
+| Result | Exit 1, SymPy import failure before science | Exit 0, exact local checks completed |
+| External wall seconds | 0.04669991694390774 | 0.4957573749125004 |
+| User CPU seconds | 0.022975 | 0.37763599999999997 |
+| System CPU seconds | 0.007796999999999998 | 0.045882 |
+| Maximum RSS, Darwin bytes | 22052864 | 66846720 |
+| Input bindings / selected runtime bindings | 24 / 4 | 26 / 4 |
+
+The successful runtime is Python3.13.5, SymPy1.14.0 on macOS26.6.2 arm64.
+The program-only time after imports, .24057466676458716 seconds, is not
+substituted for the external wall or CPU cost. Its largest dense matrix is
+4-by-4. Sparse fixtures M=16/17 correspond to 38/40 physical qubits and
+twelve core columns per fixture; no full Hilbert-space array is allocated.
+Symbolic kappa is used, with no point grid, optimizer, quadrature, time
+integration or inherited-checker replay. The declared two-attempt allowance
+is exhausted by the preserved import failure and successful retry.
+
+No OS memory cap or measured thread count is claimed. The requested thread
+environment is recorded; that is not a measurement of actual threads.
+The four runtime pins cover the executable, fractions module, SymPy entry
+module and distribution METADATA, not every transitive library or OS file.
+In particular the bootstrap inserts an existing package-parent directory;
+the evidence is source-bound but not a hermetic runtime image.
+
+My deterministic verification checked the actual current content and
+generation metadata of all 28 first-run and 30 second-run bound files
+against both prelaunch and after-run records. All matched. Both checker
+copies and the inspected original are byte-identical, and the complete
+candidate was unchanged across both attempts. All seventeen original/source
+snapshot pairs matched in bytes and generation fields. All forty-one
+manifest members plus FILE_MANIFEST and FREEZE matched and were copied.
+The source/root-status pins have not been inferred from titles or PASS counts.
+The current review's twenty-four pre-exposure frozen entries also match.
+
+`PROVENANCE.json`, SHA256
+`4ecdcc2e79db2f4bdeed0715c56f34a60958e539265b27db1af7281021986d65`,
+contains these full records and chronology; `PROVENANCE_SUMMARY.json` gives
+the counts. These are bookkeeping checks, not new scientific executions.
+The exact author execution identities include:
+
+| Artifact | SHA256 |
+|---|---|
+| check_preparation.py and both executed copies | 70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0 |
+| launch_check.py | 3cf8834d377e20553c4d979967b45b868ab245b620395a07b826b5693579cafe |
+| launch_check_v2.py | 01aea125363730584637792cd33773e5ed3cc081b29fd748fb34e660e2712e66 |
+| run02/import_bootstrap.py | ef9ce7914a1a91b6ad66546d1f3c6e2b8d90caf8b06a446ada0862bfafafb954 |
+| RESOURCE_PLAN.json | 43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e |
+| RETRY_AMENDMENT.md | 3fdd04be15d4f0f7f5a2fa4793183aa6e9d7d886f950c72d107a25a462977dbc |
+| run01/PRELAUNCH.json | dab1aad62baf91606f756a2ed196a4d1637c3abadda9cf2898cb170a60bd44b0 |
+| run01/RECEIPT.json | 72523278579e95f68383ff7bd367b4b731f244ff99ac8dfabf53910574e4bce0 |
+| run01/stderr.txt | 8a01c7c16c240ac8c4bc7a0b7c9afe912da43f0e5eb88e049627c96edca15b2b |
+| run02/PRELAUNCH.json | ece64c03346f6b886d5ae665ac0b4938158d4f48e6b8a93360a6f9872d079197 |
+| run02/RECEIPT.json | 4e2bcee5a4fee720317edda68204bf65f5902d6e6720bed99fa837f1f375c2c5 |
+| run02/stdout.json | 6d61182e1ee3e5fc9b5fbe6c774e487589092c390e9e40a692461ee66fc06646 |
+| run01/stdout.json and run02/stderr.txt, empty | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 |
+
+## Final scope and open obligations
+
+The local setup, exact scalar, complete residual and conditional interface
+survive the selective check. No changed theorem or source repair is required.
+Retain the nonblocking code-coverage note when assessing or transporting the
+corroborating runner. Root disposition, the provisional realifier's eventual
+status, canonical execution/publication and retained audit remain separate.
+
+The setup is externally timed real control of existing sites. It exchanges
+a complex static hopping permission for specific real static coefficients,
+pure product input and finite classical pulse/ramp permissions. It does not
+derive their native manufacture. A thermal/correlated seed supplier requires
+its own complete trace-distance budget. A physical autonomous controller,
+reset/reuse and practical resource account require additional work. The
+large source/contact loads, actual phase Phi+cR*t, total old age t+5,
+coupling-dependent clock waveform, nonzero target residual and finite-window
+restriction must remain in every downstream statement. No general real-device
+impossibility or arbitrary-accuracy theorem is implied.
+
+The reviewer performed zero scientific executions and no new network search.
+The only incomplete read was the initial large display of an inherited
+parameter container; its required exact_parameters object was then read
+completely, and the full container is preserved. No new mathematical argument
+or author execution stream was accepted from truncated output. No failure
+or countercase was erased. No source, W, Git, PR, current checkpoint, prompt,
+physical axiom or audit record was edited, and no model/effort override,
+subdelegation or other-chat messaging was used. No editable prompt files changed.

@@ -1,0 +1,31 @@
+Proposed title: [physics-loop] real-control-autonomous-output bounded_theorem conditional-support
+
+The exact emitter's complex hopping is replaced by an explicit positive real
+nearest-neighbor two-rail apparatus and a five-unit real controlled setup from
+one excited physical emitter and auxiliary vacuum. After release the unchanged
+runtime is autonomous. The complete finite operator error is below 0.00483202,
+unhalved trace below 0.00966404, on [T,2T] with T=kappa^-2 and M=ceil(50T), retaining
+all outputs, actual scalar and old age. The cost remains 2M+6 qubits and supplied
+pure seed/exact real controls. Thermal/native preparation of this doubled device,
+reset and practical costs remain open.
+
+The two complete proofs, separate source-exposed analytical reviews/freezes,
+root qualification and original failed evidence are preserved. The earlier
+unprepared-seed counterexample keeps its slower 10^6/kappa² onset and narrow
+scope. No general real-coupling no-go or retained verdict is requested.
+
+See `docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`,
+`scripts/real_control_autonomous_output_2026_10_17.py`, the finite input source
+map, and `.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/`
+HANDOFF,TRACE_GATE,CLAIM_STATUS_CERTIFICATE and REVIEW_HISTORY.
+
+Verification before opening: complete the separate transport review; actual
+canonical execution/cache and discriminating fault tests; focused vocabulary,
+diff, tracked-link and changed-evidence checks. The historical ramp-budget first
+clause is only arithmetic and is explicitly labeled, not counted as independent
+ramp validation. This draft supplies no scientific execution/mutation PASS.
+Intended stacked parent: PR9666 head 67108090f68ed9b2bc62eee23701b2d3d71dce4a.
+Integrated-current-main and independent retained-audit gates remain separate.
+
+Root should replace this pending verification paragraph with actual pinned
+outcomes before opening a regular review PR. No PR was created by the drafter.

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/driver.py", line 7, in <module>
+    result=ns['run_realifier_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/mutated.py", line 199, in run_realifier_author
+    demand('six_real_edge_signs', all((HR[i][j] == z(h) for (i, j), h in expected.items())), {str(edge): h for edge, h in expected.items()})
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/mutated.py", line 80, in demand
+    raise AssertionError(name)
+AssertionError: six_real_edge_signs

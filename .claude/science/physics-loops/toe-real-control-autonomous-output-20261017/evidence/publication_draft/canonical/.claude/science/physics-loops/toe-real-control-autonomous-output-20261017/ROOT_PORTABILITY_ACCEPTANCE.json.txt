@@ -1,0 +1,7 @@
+{
+  "state": "pending separate root source-transport decision",
+  "source_science": "Root-qualified conditional support; this placeholder is not transport approval",
+  "canonical_execution": "not performed by mechanical drafter",
+  "publication": "not performed by mechanical drafter",
+  "history": "Actual root decision replaces this external companion; it is outside calculation inputs."
+}

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/real_control_autonomous_output_2026_10_17.py
+runner_sha256: 87ed66a14a21e20a7d747454cca1854d6adcd52ffb00f1532e78b33967d4af29
+input_fingerprint_sha256: 9a1f94a4d6b0d165b4d754d4e5b8cff61f3273d5af4cb2c7c237276a4dc3287d
+timeout_sec: 45
+exit_code: 0
+elapsed_sec: 0.82
+status: ok
+----- stdout -----
+{
+  "status": "completed source-exposed corroboration",
+  "author_bodies": 2,
+  "shared_limits": {
+    "cpu_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_cap_seconds": 45,
+    "wall_enforcement": "Required external canonical runner; this class does not implement wall timeout."
+  },
+  "maximum_dense_dimension": 6,
+  "weak_historical_clause": "budget arithmetic only"
+}
+per_element: checked positive real local cells and explicit signed-core identities; no native physical realization was executed.
+per_site: checked finite site loads and ordinary NN prefixes; arbitrary-size geometry follows the separately preserved proof.
+per_mode: checked chiral sectors, literal old witnesses and local exit Gram identities; inherited spectral modes were not replayed.
+per_block: checked exact finite local matrices and sparse Pauli columns; the supported ramp theorem is analytical, not the budget clause.
+lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.
+
+----- stderr -----
+

@@ -1,0 +1,52 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "FAULT_PAYLOAD_DIFFS.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/FAULT_PAYLOAD_DIFFS.json.txt",
+      "bytes": 3847,
+      "sha256": "6215dea53bb2253964597e12ef32b4ad80c24f43fc578c3a6904e51cdc91427c",
+      "compression": "none",
+      "raw_bytes": 3847,
+      "raw_sha256": "6215dea53bb2253964597e12ef32b4ad80c24f43fc578c3a6904e51cdc91427c"
+    },
+    {
+      "original_path": "compare_reports.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/compare_reports.py.txt",
+      "bytes": 4602,
+      "sha256": "ccddf07b3d9ad8e70397c90fd9a3da15be21ac89470b3bdd952907c1eeed5a3c",
+      "compression": "none",
+      "raw_bytes": 4602,
+      "raw_sha256": "ccddf07b3d9ad8e70397c90fd9a3da15be21ac89470b3bdd952907c1eeed5a3c"
+    },
+    {
+      "original_path": "preserve_execution.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/preserve_execution.py.txt",
+      "bytes": 6576,
+      "sha256": "115d9703fc955a8678189e825a4a0006c2c675808c5a5d545dced85629e65953",
+      "compression": "none",
+      "raw_bytes": 6576,
+      "raw_sha256": "115d9703fc955a8678189e825a4a0006c2c675808c5a5d545dced85629e65953"
+    },
+    {
+      "original_path": "run_canonical.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_canonical.py.txt",
+      "bytes": 7326,
+      "sha256": "025c15fbefa58fdf9dc6b7d8561bbddd533bc0bc68f6e88b76130e30a9f785cd",
+      "compression": "none",
+      "raw_bytes": 7326,
+      "raw_sha256": "025c15fbefa58fdf9dc6b7d8561bbddd533bc0bc68f6e88b76130e30a9f785cd"
+    },
+    {
+      "original_path": "run_mutations.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_mutations.py.txt",
+      "bytes": 7438,
+      "sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6",
+      "compression": "none",
+      "raw_bytes": 7438,
+      "raw_sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6"
+    }
+  ],
+  "count": 5
+}

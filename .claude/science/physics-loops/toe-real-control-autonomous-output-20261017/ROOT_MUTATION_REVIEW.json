@@ -1,0 +1,196 @@
+{
+  "reviewed_utc": "2026-10-17T05:39:08.552669+00:00",
+  "plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/PLAN.json",
+    "bytes": 8248,
+    "sha256": "4aa1f3ebad58cfe552041d6aca31ccf86e197178aec13b5a4c3456b47e73047f"
+  },
+  "cases": [
+    {
+      "label": "cross_sign",
+      "started_utc": "2026-10-17T05:39:07.148070+00:00",
+      "finished_utc": "2026-10-17T05:39:07.230915+00:00",
+      "elapsed_seconds": 0.07821499975398183,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.056907,
+      "system_cpu_seconds": 0.015889,
+      "launcher_children_peak_rss_bytes_macos_so_far": 26968064,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/PRELAUNCH.json",
+        "bytes": 39209,
+        "sha256": "ce4f39dc3bec1d60df179d7206e0ca9a333de313242234126aa0e1e596dcf26f"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/stdout",
+        "bytes": 12868,
+        "sha256": "21a1799451364d368890881643b2a59c69ede2bb0958d6ec633dd28e9d42e421"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/cross_sign/stderr",
+        "bytes": 970,
+        "sha256": "e79fd2adeb1b8bb962112e3cb8d07078f7d43f70fccdf39503a46d28daaa78c4"
+      }
+    },
+    {
+      "label": "positive_pair_diagonal",
+      "started_utc": "2026-10-17T05:39:07.235359+00:00",
+      "finished_utc": "2026-10-17T05:39:07.317939+00:00",
+      "elapsed_seconds": 0.07727429177612066,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.056977,
+      "system_cpu_seconds": 0.015559999999999997,
+      "launcher_children_peak_rss_bytes_macos_so_far": 27213824,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/PRELAUNCH.json",
+        "bytes": 39257,
+        "sha256": "6c030de76d2125d036489b2254d2b830a5f9a7259f65bf5aef58dec53da347bb"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/stdout",
+        "bytes": 15155,
+        "sha256": "69084876239c5967ca3d2d1dddb19f0bb9599b0f6d3089853fcf478e06de936d"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/stderr",
+        "bytes": 1061,
+        "sha256": "4e3b8c54f5c5672bd71f6278c4e4150de516061e1d1a49e17b93d2bad38651c3"
+      }
+    },
+    {
+      "label": "old_target_phase",
+      "started_utc": "2026-10-17T05:39:07.323770+00:00",
+      "finished_utc": "2026-10-17T05:39:07.421032+00:00",
+      "elapsed_seconds": 0.09279987495392561,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.06058999999999999,
+      "system_cpu_seconds": 0.018022999999999997,
+      "launcher_children_peak_rss_bytes_macos_so_far": 27213824,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/PRELAUNCH.json",
+        "bytes": 39233,
+        "sha256": "494f1614f33f5d50e1b35cbd1b827a7dedf0458b4b9258600e79b0eb5d5d1821"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/stdout",
+        "bytes": 21921,
+        "sha256": "a35fa171463adc9629af3dbb6beb682118ed8e3b457b0ef58325aae76fbc4562"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/old_target_phase/stderr",
+        "bytes": 1247,
+        "sha256": "0be79342c982172b5d5d7a1fa3006fafeb2b0a0c16796ec583d3ad9885c88581"
+      }
+    },
+    {
+      "label": "isolation_pin",
+      "started_utc": "2026-10-17T05:39:07.426142+00:00",
+      "finished_utc": "2026-10-17T05:39:07.827618+00:00",
+      "elapsed_seconds": 0.39742566691711545,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.34626899999999994,
+      "system_cpu_seconds": 0.041394999999999994,
+      "launcher_children_peak_rss_bytes_macos_so_far": 69058560,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/PRELAUNCH.json",
+        "bytes": 39221,
+        "sha256": "df2e1d9add54ee0cca9268d4beea75bbad353f8a30385e370fd7324ef25598b2"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/isolation_pin/stderr",
+        "bytes": 1011,
+        "sha256": "37683f0070e9752b9e99a4608d09885c766d8ffd4ee604d88f273ab57eb494ab"
+      }
+    },
+    {
+      "label": "pulse_chirality",
+      "started_utc": "2026-10-17T05:39:07.831676+00:00",
+      "finished_utc": "2026-10-17T05:39:08.170744+00:00",
+      "elapsed_seconds": 0.3350193747319281,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.285443,
+      "system_cpu_seconds": 0.036372,
+      "launcher_children_peak_rss_bytes_macos_so_far": 69058560,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/PRELAUNCH.json",
+        "bytes": 39229,
+        "sha256": "27472e67f0576590bc9bdfb8f0d7fd6bf02a13827a309a6f49ef3cff9cda6a56"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/stderr",
+        "bytes": 1067,
+        "sha256": "ec9bf0a95962408ae4d156b275352924a7a108cc7575d75d79343f2bfd0e9d26"
+      }
+    },
+    {
+      "label": "exit_coupling",
+      "started_utc": "2026-10-17T05:39:08.175003+00:00",
+      "finished_utc": "2026-10-17T05:39:08.552021+00:00",
+      "elapsed_seconds": 0.3728419169783592,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.3279170000000001,
+      "system_cpu_seconds": 0.034781000000000006,
+      "launcher_children_peak_rss_bytes_macos_so_far": 70549504,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/PRELAUNCH.json",
+        "bytes": 39221,
+        "sha256": "df047326cf430d9d84764a46f98121a1f5dfe42dd465a8514b7c82f409a9a6fe"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/exit_coupling/stderr",
+        "bytes": 943,
+        "sha256": "d4552cfa3f9030beeb2a7975dd47692ad88e007ea886a033ab2f887d223c9c4d"
+      }
+    }
+  ],
+  "case_count": 6,
+  "unexpected_failures": 0,
+  "canonical_source_unchanged": true,
+  "scope": "Fault sensitivity, not independent proof. Three realifier faults and three real preparation faults; no all-premise coverage claim. No full many-body or time dynamics calculation.",
+  "all_initial_attempts": true,
+  "root_full_failure_stream_read": "All six complete stderr tracebacks inspected; no checksum failure. Realifier stdout payloads compared against the exact canonical prefix, changed fields separately exposed. Preparation failures have empty stdout and exact scientific assertion tracebacks. No complete-premise coverage claim.",
+  "payload_differences": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/FAULT_PAYLOAD_DIFFS.json",
+    "bytes": 3847,
+    "sha256": "6215dea53bb2253964597e12ef32b4ad80c24f43fc578c3a6904e51cdc91427c"
+  },
+  "later_storage_repair": "Only two declared historical header paths and their stored-source manifest changed after these fault runs. Exact original inputs/primary preserved in frozen draft and canonical01; mathematical bodies and actual scientific input bytes unchanged. See LOSSLESS_EOF_REPAIR.json."
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/driver.py", line 7, in <module>
+    result=ns['run_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/mutated.py", line 441, in run_preparation_author
+    check('three_real_positive_pulses_exact_chiral_state_and_common_phase', zero(U3 * U2 * U1 * seed - sp.exp(-3 * sp.I * sp.pi / 4) * chiral))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/pulse_chirality/mutated.py", line 352, in check
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: three_real_positive_pulses_exact_chiral_state_and_common_phase

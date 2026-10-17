@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_faults_01",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_faults_01/EXECUTION.json.txt",
+      "bytes": 1432,
+      "sha256": "fd0fc44c25276c0282fbbeb0552b5281d774c328b281ad83cb93150081661524",
+      "compression": "none",
+      "raw_bytes": 1432,
+      "raw_sha256": "fd0fc44c25276c0282fbbeb0552b5281d774c328b281ad83cb93150081661524"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_mutations.py.txt",
+      "bytes": 7438,
+      "sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6",
+      "compression": "none",
+      "raw_bytes": 7438,
+      "raw_sha256": "916d935607994dcb1432aaddf3a47b2261b7afebe0efd1ca5e284a52bc7b46c6"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_faults_01/stdout.txt",
+      "bytes": 88,
+      "sha256": "057538227f2f212a9f1542ccfad8efdb22f8ff9a940263da7dc93631e1d13f2a",
+      "compression": "none",
+      "raw_bytes": 88,
+      "raw_sha256": "057538227f2f212a9f1542ccfad8efdb22f8ff9a940263da7dc93631e1d13f2a"
+    }
+  ],
+  "count": 4
+}

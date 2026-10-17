@@ -1,0 +1,1 @@
+{"roles": {"fixture": {"aliases": {"x": {"path": "valid.txt", "bytes": 15, "sha256": "5dd857d5aeb12deba498580baecf65b9e42f1ae4587696cf4aaef65ea85c43b1", "compression": "none", "raw_bytes": 15, "raw_sha256": "5dd857d5aeb12deba498580baecf65b9e42f1ae4587696cf4aaef65ea85c43b1"}}}}}

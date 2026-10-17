@@ -1,0 +1,36 @@
+{
+  "pre_edit_identity_captured_before_mutation": {
+    "bytes": 1186,
+    "sha256": "aa96382c04d2c251b3b6af5cfe9ef4be7136e0befacc6b080de2e84330e13119"
+  },
+  "pre_edit_unchanged": true,
+  "changes": [
+    {
+      "path": "canonical/scripts/real_control_autonomous_output_2026_10_17.py",
+      "before": {
+        "bytes": 47124,
+        "sha256": "389f0b214acc64d3c8c86a9b0c62cb50743d6da6f3a0ce241c8e51a5f218eeb0"
+      },
+      "after": {
+        "bytes": 47127,
+        "sha256": "b7d63ff04babbf0cf4abd6fde6056a8d7a14684eadb66a2773f645cdea430bc5"
+      },
+      "exact_single_literal_replacement": true
+    },
+    {
+      "path": "build_package.py",
+      "before": {
+        "bytes": 28693,
+        "sha256": "c9f7e2682f4084fd7740b405e89b5d59594af7c695bfca82da56aca89a670f90"
+      },
+      "after": {
+        "bytes": 28696,
+        "sha256": "62452ae47e2165393f2597e692598dd1c7babf1aaf63575fd697025226962dbb"
+      },
+      "exact_single_literal_replacement": true
+    }
+  ],
+  "static_evidence_relation": "static03 covers exact immediately preceding primary; final primary differs only in one printed coverage string inside main. Neither author body, resolver, imports, refusal, input list, source/proof maps nor note changes. Full static checker not rerun after this presentation-only delta. Root owns independent final verification.",
+  "scientific_executions": 0,
+  "additional_full_static_attempts": 0
+}

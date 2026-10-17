@@ -1,0 +1,505 @@
+# Selective review of the real-coupling route
+
+The frozen route's local implementation and narrow failure theorem are
+supported within the stated qualified-family premises. I found no required
+mathematical correction. With its prescribed e0 product seed, this two-rail
+apparatus has complete operator-isometry distance greater than .53 from any
+old-independent ancillary waveform times W for every t>=10^6/kappa^2.
+With M=ceil(50T) sites on each rail, the finite distance is greater than .52
+throughout [T,2T]. This is a failure of this preparation/apparatus contract,
+not a general obstruction to real-coupling quantum computation or a proof
+that a real autonomous preparer cannot succeed.
+
+| Reviewed claim | Disposition |
+|---|---|
+| Real positive ordinary-NN two-body realization, literal old qubits | Supported, with selected installed edges and the stated one-head restriction; full-cell positivity holds on all qubits. |
+| Product seed populates conjugate sectors equally | Supported; the conserved rail generator fixes the weights for this Hamiltonian. |
+| Reverse sector gives identity output with error <.044 | Supported by the backwards intertwining and full localized family bound, including point-spectrum seed error. |
+| Complete-output lower bounds >.53 / >.52 | Supported for the infinite all-future / finite stated-window quantifiers, respectively. |
+| Scalar, seed moments, site loads and finite counts | Supported; cR=2nu+2kappa(1+cos phi+sin phi), and there is no all-site cap two. |
+| Squared reflection-ratio condition for a redesigned real one-port emitter | Supported only as the stated conditional necessary phase relation; no new emitter certificate follows. |
+| Closure of native real product-seed halt, universal no-go, or publication approval | Not established and not requested. Live alternatives remain open. |
+
+The source reviewed is ROUTE.md, 32324 bytes, SHA256
+`c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018`.
+Its FREEZE.json is
+`16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b`.
+The author packet is copied byte-for-byte under `author_packet/`; the
+pre-exposure snapshots are under `inputs/`. `SOURCE_BINDINGS.json` and
+`PROVENANCE.json` give complete exact identities and original paths.
+
+The analytical derivation below was fixed before reading any author checker,
+launcher, scalar input, stdout or receipt. `PRECHECK_ANALYSIS.md` has SHA256
+`304de79345438661d683b2acc700e2478f76fce18bea0b32732c92c9553d2828`;
+`ANALYTIC_FREEZE.json` has SHA256
+`9fe434cde6c6c6a9966fdde7bdf30e9fb6a5eaa5eabaaea6e9dbee6c753ac93e`.
+All 23 entries in that analytical freeze remained unchanged when the later
+provenance check ran. The full frozen analytical document is reproduced
+verbatim next, including its then-pending post-checker step. The completed
+post-exposure review follows it. No mathematical conclusion changed after
+checker exposure.
+
+This is same-model selective checking with substantial inherited source
+authorship/exposure. In particular I previously authored or checked the
+generic/interval bridge, local/installed emitter and family/moment/resonance
+interfaces. This is not a blind review of their entire dependency graph,
+model diversity, formal verification or retained audit. The later resonance
+onset, preparation and calibration results are not imported into this route.
+
+---
+
+
+# Analytical result before author-checker exposure
+
+This entire argument is written after reading the frozen ROUTE and necessary
+source interfaces, but before reading the author's checker, scalar input,
+launcher, scientific output or execution receipt. Their hashes/metadata in
+the route and freeze were visible. No scientific program has run in this
+review. A separate byte inventory binds this document before that exposure.
+
+## Disposition and scope
+
+The new realification and its narrow failure bound are supported, conditional
+on the qualified exact family interfaces explicitly quoted below. No material
+mathematical correction has been found. The result is useful route-pruning:
+it supplies a local real positive implementation while proving that this
+implementation with the specified real product seed does not supply the
+complete target gate at the declared late times. It does not settle the
+existence of another real product-seed apparatus, preparer, earlier transient
+operation, encoded computation or multiport scheme.
+
+The controlling candidate is ROUTE.md SHA256
+c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018,
+with FREEZE.json SHA256
+16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b.
+The exact family source is
+9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac;
+its root qualification and acceptance are respectively
+27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814 and
+a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325.
+The new source manifest pins all inherited snapshots; those bytes will be
+preserved in this review. Prior full checking of those unchanged dependencies
+is reused, not counted as an independent new derivation.
+
+## 1. Exact realification and local implementation
+
+Use the physical internal computational basis. Hplus=A+iD with A^T=A and
+D^T=-D real. For Jf=[[0,-1],[1,0]], direct multiplication gives
+Jf(1,-i)^T=i(1,-i)^T and Jf(1,i)^T=-i(1,i)^T. Therefore
+HRtilde=A tensor I+D tensor Jf is real symmetric and its two complex-linear
+restrictions are A+iD and A-iD. The one-head position space, doubled into
+rails, is unitarily position tensor C^2. There is no doubling or conjugation
+of the old/source input space and no anti-linear operation on arbitrary old
+or passive-reference amplitudes.
+
+The clock-emitter matrix element at L+2 is -kappa(c+i s). Its real part is
+-kappa c on each rail. Its D entry is -kappa s, so the clock-row/emitter-column
+2-by-2 rail block is -kappa c I-kappa s Jf:
+
+    [[-kappa c, +kappa s],[-kappa s,-kappa c]].
+
+This independently fixes both opposite cross signs in the route. At L the
+block is kappa I. Symmetric reverse edges give all six real hoppings. Flipping
+only one cross sign destroys this block and the claimed conjugate-sector
+intertwining; the sign is substantive, not a gauge convention left unfixed.
+The common internal operator B acts as B tensor I on the rail factor. It must
+be included once. Duplicating B would change both branches and old aging.
+
+For an arbitrary real hopping h, the full-qubit cell Q has diagonal entries
+0, |h|, |h|, 2|h| in the 00,01,10,11 basis, with the single off-diagonal
+exchange h between 01 and 10. Its spectrum is 0,0,2|h|,2|h|. This proves
+positivity on the entire two-qubit Hilbert space, not just the head sector.
+The incident absolute hopping sum is kappa d at each emitter, kappa at each
+c_L, and kappa(c+s) at each c_(L+2), d=1+c+s. Adding the route's onsite and
+vacancy terms cancels every attachment occupation coefficient, leaves E0 at
+each emitter, and leaves exactly 2kappa d I. This is a full-space identity.
+Since c,s>0 and d<3, E0>3*10^-8 and kappa<=10^-8 make the emitter onsite
+coefficients positive. These center inequalities are particularly slack:
+q0 lies between 4 and 5, cos k0=(q0^2-1)/(q0^2+1), and
+E0=4J/(q0^2+1)>4*.03/26, which already exceeds 3*10^-8.
+Also 0<phi=4 arctan(1/q0)<pi/2, so c,s>0 and c+s<=sqrt(2)<2.
+
+Each rail's B-contact vacancy term contributes nu I. Both rails therefore
+add 2nu I, not nu I. In the invariant one-head sector the physical operator
+is exactly HRtilde+cR I, cR=2nu+2kappa(1+c+s). Relative to the old physical
+branch scalar nu+2kappa this is the additional scalar nu+2kappa(c+s).
+This scalar affects actual time-dependent output phase and seed mean energy;
+it cannot be discarded as a harmless unrecorded constant.
+
+The remaining cells are positive: K=2I+Z1Z2 has eigenvalues 1,3; the source
+exchange is a cell of the preceding type; all positive occupation terms and
+g n_source(I+X_old), lambda n_clock(I+X_source) are products of commuting
+positive factors on their displayed one or two sites. Head number is
+conserved by all cells. The one-head realification is not a many-head
+realification theorem. Infinite bounded-degree clock hopping has bounded
+restriction in each finite head-number sector; the finite source/contact
+terms and scalar reserves are bounded. Their direct sum gives the stated
+finite-excitation selfadjoint representation. No infinite collection of
+vacancy constants is being summed.
+
+The displayed cubic embedding can be checked without a finite graph test.
+Each piecewise rail segment is an axis path, and the joining pairs are at
+distance one. For the six emitter bonds: e0=(8,2,1) neighbors c12,0=(8,1,1),
+c14,0=(9,2,1), c14,1=(8,3,1); e1=(9,3,1) neighbors c12,1=(9,3,0),
+c14,1 and c14,0. A and B each neighbor their two rail contacts at z=+/-1.
+The old/source square edges are all unit edges. The two infinite tails lie
+on x>=10,y=2,z=1 and x=8,y>=4,z=1, respectively, and are disjoint from
+each other and the finite core. The intermediate axis segments have distinct
+coordinates as well. Incidental geometric neighbors must remain uninstalled,
+as the route expressly assumes. This is a permitted selected-edge device,
+not a theorem for a uniform all-neighbor interaction.
+
+The load table follows from actual positive-cell norms. Old added loads are
+2gA and 2gB, and the existing old edge contributes norm 3 separately. Relative
+to the inherited source loads, A gains 2lambdaA and B gains 2lambdaB because
+the boundary contacts are duplicated. At c0, the sum is 3J+2lambdaA+mu0;
+at c1 it is 4J+2lambdaB+nu. At c12 and c14 the increments are 3kappa and
+3kappa(c+s). Each emitter has 2kappa d+(E0-kappa d)=E0+kappa d. A finite
+far end has one bond of norm 2J plus its compensating onsite J. These match
+all displayed decimal sums and formulas. There is no all-site cap two.
+The counts 2M+6 qubits, one-head dimension 16(2M+2), and full dimension
+2^(2M+6) are correct. A matching block from each conjugate branch is reused;
+the physical model is not certified by a purported new small matrix inverse.
+
+At the supplied seed, B iota=iota K and only e0 is occupied. Its three
+outgoing amplitudes have squared norm kappa^2(1+c^2+s^2)=2kappa^2 and
+are in orthogonal head positions. This gives both compressed moment
+identities (12), including cR, without commuting K through the interaction.
+
+## 2. Seed sectors and the reverse-time packet
+
+The literal e0 seed is (e xi_plus+e xi_minus)/sqrt(2). Orthogonality of the
+flag eigenvectors fixes both weights at one half; the Hamiltonian commutes
+with Jf and cannot change them. For a real rail vector the two projections
+have equal norm by complex conjugation. Such a real superposition generally
+is not a product state of the two emitter qubits. The successful-sector seed
+(10-i01)/sqrt(2) is an entangled one-head state with an extra phase resource.
+
+The required family premise is an exact isometric packet Gamma_0 with
+||E-Gamma_0||<.003, exact intertwining at arbitrary positive and negative
+times, f in H1_0(I), ||f||2=1, kappa^2||f'||2<.01, and
+|R_j'|<1000/kappa^2. The full localized operator packet has bound
+3/(sqrt(2pi)kappa^2 v|t|). Family equations (49)-(50) explicitly retain
+two potentially aligned columns in each parity and orthogonal parity blocks;
+the 3 already includes the necessary sqrt(2). No new per-column orthogonality
+may be assigned to localized source/emitter coordinates.
+
+Starting from the backwards intertwining identity,
+exp(+itHplus)Gamma_0=Gamma_-t exp(+itDb), complex conjugation in a real
+Bell/input and physical internal basis gives
+
+    exp(-itHminus) conjugate(Gamma_0)
+        = conjugate(Gamma_-t) exp(-itDb).
+
+Because E is real, the norm distance from E to conjugate(Gamma_0) is exactly
+the original .003 seed bound. Matrix conjugation here still defines a
+complex-linear isometry on all input coefficients. It is not conjugation
+of the state being processed. In particular arbitrary passive references
+are covered by the same operator norm.
+
+Writing out the two plane waves after this conjugation gives
+
+    [conjugate(f)e^(+ikn)+conjugate(f R_j)e^(-ikn)]e^(-itE).
+
+The first wave propagates to positive n and is common to all old channels.
+The second propagates toward negative n and becomes a small unwanted
+restriction on n>=0. This verifies the signs independently: the old reflected
+amplitude appears on the incoming, discarded-in-the-bound wave, not on the
+leading reverse outgoing wave. The latter carries the identity, not W*,
+W or an input-conjugating map.
+
+For the unwanted second term, |R_j|=1 and ||f||2=1 give derivative norm
+less than (1000+.01)/kappa^2<1001/kappa^2. Its open vacuum columns are
+orthogonal, so their operator bound is the maximum column error. For the
+first term the outgoing negative-tail estimate uses .01/kappa^2. The
+positive-real normalization of its retained half-line part costs
+1-sqrt(1-q^2)<=q, not an unjustified whole-line normalization identity.
+The endpoint trace remains zero after conjugation/multiplication. Its tail
+bound at onset is .01/25000+2.5*10^-6=2.9*10^-6<1/2, so beta_minus exists.
+
+The localized integration-by-parts proof applies at -t and under
+conjugation because its absolute value/Hilbert norms and |t| denominator
+are unchanged. It retains all seven complementary emitter coordinates,
+all closed tails and both old-energy columns in each parity. The .003 seed
+distance also retains any point-spectrum component. No completeness or
+absence-of-bound-states assumption is newly introduced.
+
+At T=10^6/kappa^2, v=1/40 gives (kappa^2 vT)^-1=1/25000. The complete
+reverse error is bounded by
+
+    .003+(1001+.01+1.5)/25000+5*10^-6
+      =.0431054=215527/5000000<.044.
+
+All variable terms decrease as t grows; the spread allowance remains
+bounded by the stated constant. This proves equation (18) for every t>=T,
+uniformly in the exact kappa family. It also explains why merely conjugating
+the late forward result at the same sign of time would have given a wrong
+answer: the backward identity is essential.
+
+## 3. Complete-output separation
+
+Let a=zeta xi_plus beta_plus tensor Omega and b=xi_minus beta_minus tensor
+Omega. They are unit and orthogonal regardless of the two actual profiles.
+The branch errors belong to the corresponding orthogonal flag subspaces,
+so the actual complete output, after removing only e^(-it cR) and the literal
+old e^(-itK), is within sqrt[(.004^2+.044^2)/2]=sqrt(61)/250 of
+
+    Vx=(a tensor W x+b tensor x)/sqrt(2).
+
+This root-sum-square uses flag orthogonality, not assumed orthogonality of
+closed source columns. A less sharp triangle error would still be small,
+but the displayed sharper expression is justified. The seed approximation
+errors, including point spectrum, stay inside their flag sectors.
+
+After applying W* on the old output, take the two real P=X1X2 parity
+eigenvectors (01+/-10)/sqrt(2). They both have K energy 1, and W eigenvalues
+omega_plus=(-7+24i)/25 and omega_minus=1. The corresponding ancillary states
+are (a+conjugate(omega_plus)b)/sqrt(2) and (a+b)/sqrt(2). Their distance is
+|omega_plus-1|/sqrt(2)=8/(5sqrt(2)). For every common eta (even without unit
+normalization, or outside their span), the triangle inequality forces one
+error to be at least half this distance. Consequently the requested operator
+distance is at least 4/(5sqrt(2))-sqrt(61)/250.
+
+The exact rational margins are sound: (4/(5sqrt(2)))^2=8/25 is greater
+than (9/16)^2; sqrt(61)<8. Their difference exceeds
+9/16-8/250=1061/2000=.5305>.53. A common phase, old-independent emitted or
+returned waveform, or additional source/emitter support in eta cannot cure
+this bound. Testing only one gate eigenvector would miss it, because that
+one vector has its own usable ancillary state. Allowing a different eta for
+each old input, tracing the flag, measuring/postselecting it, or supplying
+the chiral seed changes the contract. The bound is an operator-isometry
+statement and persists when tensoring an arbitrary passive reference. It
+does not say every particular input has large reduced-old-state error.
+
+## 4. Finite clocks and exact scope of the horizon
+
+Unitary flag decomposition gives the same one-head spectral radius 19 as
+the original family, centered at 2J+10.5 before the actual cR shift. Complex
+conjugation preserves spectrum. The finite operator, including J at each
+far end, is the true compression with the same scalar; its numerical range
+remains in this interval. No extensive full-Hilbert norm is substituted.
+
+From e0 there is a nonzero edge to c14 on each rail, since c,s>0. Any first
+arrival at a site with index larger than 14 must then traverse consecutive
+clock edges; every cross edge has index at most 14. Thus the first omitted
+site cM is at distance 1+(M-14)=M-13. Internal source/old motion leaves the
+head coordinate fixed and cannot shorten it. This proves the distance for
+the full infinite geometry, not by extending a finite adjacency sample.
+Low-degree polynomial actions agree for degrees below this distance.
+
+The inherited Chebyshev bound can therefore be applied without an extra
+factor for the two rails: it is already an operator bound on the whole seed
+space. At M=ceil(50T), t<=2T, use sinh(1)<6/5 to get
+
+    dM-19 t sinh(1)-9 >=(22/5)T-22>0.
+
+Since e>8/3, e^-1<3/8 and (1-e^-1)^-1<8/5. The remaining tail is less than
+(32/5)(3/8)^9=19683/20971520<.001. Triangle subtraction from the infinite
+lower bound gives >.5295>.52 for t in [T,2T]. The comparison is made after
+embedding the finite output in the infinite ancillary space, which only
+enlarges the allowed common comparator set and cannot strengthen the claim
+improperly. The formula M=ceil(50T) is sites per rail; total qubits remain
+2M+6. At kappa=10^-8, T=10^22, M=5*10^23; at kappa=10^-12, T=10^30.
+No all-future finite claim, optimized failure time or resonance improvement
+has been assumed.
+
+## 5. Attempted falsifiers, repairs and live alternatives
+
+The principal attempted counterarguments above were: reverse the cross sign;
+conjugate the forward instead of backward evolution; identify the reverse
+output with W*; fit separate ancillary phases on the two old eigenvectors;
+use the original scalar instead of the doubled vacancy scalar; count localized
+columns as orthogonal; use one rail's finite distance without checking cross
+shortcuts; and extend the finite horizon to all times. They respectively
+change the matrix, get the propagation direction wrong, change the target
+contract, or omit a required cost. None falsifies the stated narrow result.
+
+There is also a concrete counterexample to an overbroad real-state barrier.
+For two neighboring preparation qubits, the real positive exchange cell
+g(n0+n1+a0^dagger a1+a1^dagger a0) evolves |10> at time pi/(4g) to
+e^(-i pi/4)(|10>-i|01>)/sqrt(2). Real coefficients do not force evolved
+states to remain real. This is not a completed repair: the current e0/e1
+positions are not neighbors, the extra interaction breaks this route's
+conserved Jf, and timed switching/handoff or an autonomous preparer must be
+implemented with its full outputs and elapsed old age. It explains why the
+route correctly leaves that preparation architecture open.
+
+Equation (25) is exactly a free-lead form-factor identity for real scalar
+weights. It prevents a one-sided zero in that substitution, not all
+directionality with multiports or feedback. Equation (26) follows because
+the inverse of a real symmetric matrix at real energy is real symmetric;
+the restriction E outside the eliminated spectrum is essential. Open-channel
+retarded elimination, a change of encoding/basis, time dependence or explicit
+extra outputs is outside that same-basis closed-channel assertion.
+
+For equation (27), define y_j=<real seed_j,Phi_j> with the conjugate-linear
+first-slot inner product. Unique real-energy matching and one open channel
+give Phi_j=R_j conjugate(Phi_j) and therefore y_j=R_j conjugate(y_j).
+In the spectral expansion the outgoing coefficient is proportional to
+R_j< Phi_j,seed_j>=R_j conjugate(y_j)=y_j (any flux factor is real positive).
+If y_j=omega_j h for a common nonzero h and unit-modulus target omega_j,
+then R_j=(omega_j/conjugate(omega_j))(h/conjugate(h)); dividing channels
+gives R_j/R_l=(omega_j/omega_l)^2. This is a correct conditional necessary
+phase relation. It does not certify common magnitudes, uniqueness, seed
+normalization, closed tails, finite-time errors, or a new one-port emitter.
+At zeros of h the division is unavailable, as the source correctly states.
+
+Live alternatives include chiral-sector preparation with an accounted
+handoff, a real one-port emitter satisfying the squared-reflection phase
+condition plus magnitudes, real multiport transmission with all ports
+retained, encoded real quantum walks with a decoder and complete-output
+proof, a different multi-excitation mechanism, or replacing the existing
+real boundary apparatus's supplied packet and three-body permission.
+No search of these alternatives was performed here. No minimum number of
+failed routes or formal no-go status is claimed. The standard realification
+and free-chain moment argument remain credited prior work. Detailed external
+literature correctness is not a new checked dependency of this mathematical
+review.
+
+## 6. Remaining verification and independence limits
+
+After this analytical freeze, inspect the actual author implementation and
+its claimed bounded execution/provenance, without importing or replaying it.
+Any disagreement must be reported as a separate post-exposure finding rather
+than silently rewriting this pre-exposure derivation. This review does not
+recertify the full spectral family, physical-law identification, supply of
+exact real coefficients/selected edges/vacuum/product seed, a calibration
+box, fabrication, reset or optimal resources. Same-model prior authorship
+and repeated source exposure are substantial. Separate source-level work
+is not blind proof independence or retained audit. No scientific program
+or dynamics demonstration is needed for the analytic support given here.
+
+
+---
+
+## Post-exposure implementation and provenance review
+
+After freezing the preceding derivation, I read the complete author checker,
+launcher, plans, exact scalar inputs, source preparer, freeze program,
+PRELAUNCH.json, RECEIPT.json and 38604-byte stdout. The executed checker copy
+has identical bytes to the inspected source. I also read the complete author
+failure/limitation log and literature search notes. The 74301-byte raw lexical
+repository search is preserved and hashed, but I do not claim to have read
+every hit or to have independently repeated the literature search. No external
+theorem from that search is needed for the new derivation checked here.
+
+The code is consistent with the note, with these specific scope limits:
+
+1. It uses standard-library Fraction pairs for complex arithmetic. The largest
+   matrix is the 6-by-6 local emitter/attachment realification; it does not
+   solve the full installed matching system or simulate the device.
+2. Its core algebra is evaluated exactly at kappa=10^-8. The uniform family
+   transfer uses the analytical homogeneity and monotone positivity bounds
+   proved in the text. The immutable output's `scientific_parameter_samples: 0`
+   is explicitly qualified in the note as no sampling study, not symbolic
+   execution at all kappa. No correction of the preserved output is needed.
+3. The physical edge-sign table is checked against the matrix lift. Reversing
+   only one cross sign produces two exact nonzero intertwining entries, of
+   magnitude 2kappa sin(phi), with the expected real/imaginary components.
+   This is a discriminating sign check. It does not supply the full packet
+   theorem; the latter was independently derived above from the pinned family.
+4. The cell tests check Q^2=2Q and selfadjointness for both normalized hopping
+   signs. Together with the explicitly displayed matrix (trace four), this
+   supports the stated spectrum and full-cell positivity. The occupation
+   coefficient sum, scalar reserve, target K/W and same-energy old falsifier
+   are represented directly and agree with the derivation.
+5. The graph check contains 46 vertices and 52 installed support edges. It
+   checks unit edge lengths, no coordinate collision and distance six to
+   c19 on either rail. The infinite-tail strings and general M-13 distance
+   are not established merely by checking that prefix; the analytical axis
+   construction and index argument above provide those steps.
+6. Scalar budget inputs such as the family seed and derivative constants
+   are imported assumptions bound to the source snapshots. Their successful
+   arithmetic comparison is not an independent spectral certificate. Some
+   constants are written literally in the checker; it is a check of these
+   exact frozen parameters, not a general certified parameter-input API.
+
+The full output reports the same exact reverse budget 215527/5000000,
+branch-error square 61/62500, conservative infinite separation 1061/2000,
+finite separation 1059/2000 and finite correction 19683/20971520. These
+agree with the independent hand derivation fixed before viewing the output.
+There is no code/prose drift affecting the supported result. No reviewer
+scientific program, author-code replay/import, optimizer, quadrature, grid
+or time evolution ran. Hash/copy/record-consistency scripts are bookkeeping.
+
+### Actual author run and binding evidence
+
+The inspected launcher writes the executed source first, serializes and
+fsyncs the PRELAUNCH file, closes it, fsyncs its directory, and only then
+creates the subprocess. The receipt records:
+
+| Event or cost | Actual value |
+|---|---|
+| Prelaunch created | 2026-10-17T04:20:42.971168+00:00 |
+| Prelaunch fsync completed | 2026-10-17T04:20:43.022554+00:00 |
+| Subprocess created after | 2026-10-17T04:20:43.022700+00:00 |
+| Finished | 2026-10-17T04:20:43.106334+00:00 |
+| Exit / timeout | 0 / false |
+| Wrapper wall | 0.08358712494373322 seconds |
+| Child user / system CPU | 0.033349 / 0.011493999999999999 seconds |
+| Peak child RSS on Darwin | 22921216 bytes |
+| CPU soft/hard caps | 20 / 20 seconds |
+| External scientific subprocess wall cap | 30 seconds |
+| Declared / actual matrix dimension | <=6 / 6 |
+| Declared / actual graph vertices | <=64 / 46 |
+| Attempt allowance / actual attempts | <=2 / 1 |
+
+The OS CPU limits and wall timeout are imposed in the inspected launch path.
+There is no OS memory cap, measured thread-count claim, or complete transitive
+runtime dependency inventory. Requested thread environment variables were
+one; the selected seven runtime files identify Python 3.13.5 and relevant
+standard-library/native modules. The code binds 31 files in all: eight
+program/plan/input identities, sixteen source snapshots and seven runtime
+identities. My bookkeeping independently checked their current content and
+generation fields against both PRELAUNCH and the receipt, not just the
+receipt's boolean summaries. All 31 matched. All sixteen original/snapshot
+pairs matched, and all 33 author-freeze entries plus FREEZE itself matched.
+The chronology of prelaunch, run, author freeze and this review's analytic
+freeze is consistent with the claimed order. This is source/runtime binding
+evidence, not proof of physical realizability or an independent process monitor.
+
+Decisive execution identities are:
+
+| Artifact | SHA256 |
+|---|---|
+| check_route.py and run01/executed_source.py | 7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0 |
+| launch_check.py | 46c89bc4707cf3d8a0deac0a63976330c7efc1087dc3981e2b922612462b48da |
+| RESOURCE_PLAN.json | b774d6fa0678c00111717654d56edae469599c86a1793e018deafdd86d480d63 |
+| SCALAR_INPUTS.json | 9249fd95d793dcb2c2ba6e89517576fb3418d3ece965233a11c810bec6c1668d |
+| SOURCE_MANIFEST.json | 717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a |
+| run01/PRELAUNCH.json | 36e0d3ece73b96d92ca631447ddd5207ac0ab438935dee8c598e90801a450274 |
+| run01/RECEIPT.json | 1562bea003bbc74b364b4c03dc5bf20cf7a409b4097c3a576f9b0a6982a364c5 |
+| run01/stdout.json | e7e6ce5349dd0cd6aa0c41164c3b38f8b802e3dc5df3379ee2b10e300719c2a6 |
+| run01/stderr.txt, empty | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 |
+| Review PROVENANCE.json | 88b810629d7c9e75e9ad0e558340722447bca217e4efb835765b382f473c5ccf |
+
+`PROVENANCE.json` retains every binding, current original/snapshot pair,
+author inventory entry, cost and chronology; `PROVENANCE_SUMMARY.json` gives
+the compact counts. The only reviewer read error was an initial attempt to
+open nonexistent `check_realification.py`; the shell returned `No such file
+or directory`. The actual `check_route.py` was then read completely. No
+scientific run failed, and no attempted counterexample or result was erased.
+
+## Remaining scope and repair obligations
+
+There is no required source correction within this selective mathematical
+scope. The explicit qualified-family dependency, exact phase relations,
+selected-edge geometry, supplied vacuum/product seed and finite-window
+restrictions must remain if this result is reused. The true physical scalar
+and full old aging must remain in all comparators and energy accounts.
+The source's historical `unqualified-author-candidate` label is not edited
+by this separate review. Root disposition and publication are separate.
+
+A proposed successful repair must provide an actual changed mechanism and
+its complete-output theorem. Supplying the chiral seed alone changes the
+readiness premise. A real preparer must account for its own time, controls,
+couplings, source/clock outputs and handoff, including the old evolution
+during preparation. A redesigned real one-port or multiport apparatus must
+check common spectral magnitudes, phases and all rejected/returned channels;
+equation (27) alone is not enough. A different multi-excitation or encoded
+architecture is outside the conserved two-rail proof. None is excluded here.
+
+All reviewer writes are confined to this review directory. No prior frozen
+source, W, Git, PR, shared checkpoint, prompt, physical axiom or audit record
+was edited. No model/effort override, subdelegation, other-chat message or
+scientific network retrieval occurred. No editable prompt files changed.

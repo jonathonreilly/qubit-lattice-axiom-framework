@@ -1,0 +1,217 @@
+{
+  "created_utc": "2026-10-17T04:39:19.323110+00:00",
+  "entries": [
+    {
+      "bytes": 32324,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/ROUTE.md",
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+      "snapshot": "inputs/ROUTE.md"
+    },
+    {
+      "bytes": 11001,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/FREEZE.json",
+      "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b",
+      "snapshot": "inputs/FREEZE.json"
+    },
+    {
+      "bytes": 8399,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/SOURCE_MANIFEST.json",
+      "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a",
+      "snapshot": "inputs/SOURCE_MANIFEST.json"
+    },
+    {
+      "bytes": 39464,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family.md",
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "snapshot": "inputs/inherited/family.md",
+      "upstream_current": {
+        "bytes": 39464,
+        "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/CANDIDATE.md"
+    },
+    {
+      "bytes": 2896,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family_qualification.md",
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "snapshot": "inputs/inherited/family_qualification.md",
+      "upstream_current": {
+        "bytes": 2896,
+        "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "bytes": 10085,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family_acceptance.json",
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325",
+      "snapshot": "inputs/inherited/family_acceptance.json",
+      "upstream_current": {
+        "bytes": 10085,
+        "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "bytes": 27328,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/local_emitter.md",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1",
+      "snapshot": "inputs/inherited/local_emitter.md",
+      "upstream_current": {
+        "bytes": 27328,
+        "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "bytes": 30796,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/installed.md",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee",
+      "snapshot": "inputs/inherited/installed.md",
+      "upstream_current": {
+        "bytes": 30796,
+        "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "bytes": 27028,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/generic_v2.md",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+      "snapshot": "inputs/inherited/generic_v2.md",
+      "upstream_current": {
+        "bytes": 27028,
+        "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM_V2.md"
+    },
+    {
+      "bytes": 31244,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/moment.md",
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "snapshot": "inputs/inherited/moment.md",
+      "upstream_current": {
+        "bytes": 31244,
+        "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "bytes": 23457,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/interval.md",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "snapshot": "inputs/inherited/interval.md",
+      "upstream_current": {
+        "bytes": 23457,
+        "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_bridge/CANDIDATE.md"
+    },
+    {
+      "bytes": 13239,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/reflection_v2.md",
+      "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36",
+      "snapshot": "inputs/inherited/reflection_v2.md",
+      "upstream_current": {
+        "bytes": 13239,
+        "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/CANDIDATE_V2.md"
+    },
+    {
+      "bytes": 4856,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/reflection_finite.md",
+      "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f",
+      "snapshot": "inputs/inherited/reflection_finite.md",
+      "upstream_current": {
+        "bytes": 4856,
+        "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/FINITE_READINESS_ADDENDUM.md"
+    },
+    {
+      "bytes": 50396,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/family_wrapper.md",
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "snapshot": "inputs/inherited/family_wrapper.md",
+      "upstream_current": {
+        "bytes": 50396,
+        "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "bytes": 32779,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/reflection_wrapper.md",
+      "sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11",
+      "snapshot": "inputs/inherited/reflection_wrapper.md",
+      "upstream_current": {
+        "bytes": 32779,
+        "sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    },
+    {
+      "bytes": 11788,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/workflow.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "snapshot": "inputs/inherited/workflow.md",
+      "upstream_current": {
+        "bytes": 11788,
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "bytes": 16941,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/no_go_discipline.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "snapshot": "inputs/inherited/no_go_discipline.md",
+      "upstream_current": {
+        "bytes": 16941,
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/no-go-discipline/SKILL.md"
+    },
+    {
+      "bytes": 6416,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/primitive_registry.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "snapshot": "inputs/inherited/primitive_registry.json",
+      "upstream_current": {
+        "bytes": 6416,
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/axiom_premise_nodes.json"
+    },
+    {
+      "bytes": 5313,
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/inputs/realized_state_primitive.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "snapshot": "inputs/inherited/realized_state_primitive.md",
+      "upstream_current": {
+        "bytes": 5313,
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      "upstream_matches_snapshot": true,
+      "upstream_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+    }
+  ],
+  "purpose": "Read/copy/hash bookkeeping only; not a scientific execution",
+  "source_exposure": "Author argument and frozen inventory read; no author checker, launcher, scalar inputs or outputs read yet"
+}

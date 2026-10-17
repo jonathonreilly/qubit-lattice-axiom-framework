@@ -1,6 +1,6 @@
 {
- "edge_count": 16166,
- "node_count": 7211,
+ "edge_count": 16167,
+ "node_count": 7212,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18457,6 +18457,10 @@
   "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06": {
    "deps_hash": "9c7f3a5777fd",
    "out_degree": 4
+  },
+  "real_control_autonomous_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "4b9bf6e861bd",
+   "out_degree": 1
   },
   "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",

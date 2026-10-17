@@ -1,0 +1,19 @@
+{
+  "status": "completed source-exposed corroboration",
+  "author_bodies": 2,
+  "shared_limits": {
+    "cpu_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_cap_seconds": 45,
+    "wall_enforcement": "Required external canonical runner; this class does not implement wall timeout."
+  },
+  "maximum_dense_dimension": 6,
+  "weak_historical_clause": "budget arithmetic only"
+}
+per_element: checked positive real local cells and explicit signed-core identities; no native physical realization was executed.
+per_site: checked finite site loads and ordinary NN prefixes; arbitrary-size geometry follows the separately preserved proof.
+per_mode: checked chiral sectors, literal old witnesses and local exit Gram identities; inherited spectral modes were not replayed.
+per_block: checked exact finite local matrices and sparse Pauli columns; the supported ramp theorem is analytical, not the budget clause.
+lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.

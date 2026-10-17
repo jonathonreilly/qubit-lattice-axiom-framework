@@ -1,0 +1,22 @@
+--- real_coupling_preparation_candidate/check_preparation.py
++++ run_preparation_author
+@@ -13,8 +13,8 @@
+ from pathlib import Path
+ import sympy as sp
+ START = time.monotonic()
+-ROOT = Path(__file__).resolve().parent.parent
+-p = {k: sp.Rational(v) for k, v in json.loads((ROOT / 'inputs/parameters.json').read_text())['exact_parameters'].items()}
++pass
++p = {k: sp.Rational(v) for k, v in json.loads(inputs.read_text('preparation_author', 'inputs/parameters.json'))['exact_parameters'].items()}
+ kappa = sp.Symbol('kappa', positive=True)
+ J, E0 = (p['J'], p['epsilon'])
+ c = p['cos_k'] ** 2 - p['sin_k'] ** 2
+@@ -222,5 +222,7 @@
+ check('five_unit_supported_scalar_phase', zero(2 * (cseed + r / 2) + 3 * Ciso - (5 * cseed + 4 * r)))
+ check('full_identity_integrated_pulse_scalar', sp.Rational(3, 2) * (theta1 + theta2) + theta3 / 2 == 11 * sp.pi / 8)
+ check('ramp_error_and_complete_trace_ceiling', 2 * kp < sp.Rational(2, 10 ** 8) + sp.Rational(1, 10 ** 30) and 2 * (sp.Rational(4832, 10 ** 6) + 2 * kp) == sp.Rational(966404, 10 ** 8), 'sqrt(2)*kappa < 2*kappa <= 2e-8; final trace ceiling .00966404')
+-out = {'status': 'exact local corroboration passed; conditional theorem still requires separate review', 'checks': checks, 'fixtures': fixtures, 'exact_constants': {'c': str(c), 's': str(s), 'd': str(d), 'E0': str(E0), 'cR': str(cR), 'cseed': str(cseed), 'r': str(r), 'Ciso': str(Ciso), 'Aiso': str(Aiso), 'setup_error_upper': 'sqrt(2)*kappa', 'setup_scalar': '5*cseed+4*r+3*pi/4'}, 'limits': {'cpu_soft_hard_seconds': [20, 20], 'external_wall_seconds': 30, 'max_dense_dimension': 4, 'sparse_clock_lengths': [16, 17], 'max_physical_qubits': 40, 'seed_columns_per_fixture': 12, 'scientific_point_grids': 0, 'optimizers': 0, 'quadrature': 0, 'dynamics_steps': 0, 'inherited_scientific_checker_replays': 0, 'symbolic_kappa': True}, 'runtime': {'python': sys.version, 'executable': sys.executable, 'platform': platform.platform(), 'sympy': sp.__version__, 'elapsed_seconds_after_import': time.monotonic() - START}, 'executed_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), 'scope': 'Finite exact corroboration and discriminators; not an independent scattering replay or a substitute for all-M analytical proof.'}
+-print(json.dumps(out, indent=2))+out = {'status': 'exact local corroboration passed; conditional theorem still requires separate review', 'checks': checks, 'fixtures': fixtures, 'exact_constants': {'c': str(c), 's': str(s), 'd': str(d), 'E0': str(E0), 'cR': str(cR), 'cseed': str(cseed), 'r': str(r), 'Ciso': str(Ciso), 'Aiso': str(Aiso), 'setup_error_upper': 'sqrt(2)*kappa', 'setup_scalar': '5*cseed+4*r+3*pi/4'}, 'limits': {'cpu_soft_hard_seconds': inputs.shared_limits()['cpu_soft_hard_seconds'], 'external_wall_seconds': inputs.shared_limits()['external_wall_cap_seconds'], 'max_dense_dimension': 4, 'sparse_clock_lengths': [16, 17], 'max_physical_qubits': 40, 'seed_columns_per_fixture': 12, 'scientific_point_grids': 0, 'optimizers': 0, 'quadrature': 0, 'dynamics_steps': 0, 'inherited_scientific_checker_replays': 0, 'symbolic_kappa': True}, 'runtime': {'python': sys.version, 'executable': sys.executable, 'platform': platform.platform(), 'sympy': sp.__version__, 'elapsed_seconds_after_import': time.monotonic() - START}, 'executed_source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), 'scope': 'Finite exact corroboration and discriminators; not an independent scattering replay or a substitute for all-M analytical proof.'}
++out['_canonical_execution'] = inputs.execution_metadata('preparation_author')
++out['historical_check_interpretation'] = {'ramp_error_and_complete_trace_ceiling': 'Original first comparison is budget arithmetic only, not independent ramp validation. Gram/Duhamel proof and substantive Gram/profile identities supply the ramp support. Mathematical clause and check count are unchanged.'}
++return out

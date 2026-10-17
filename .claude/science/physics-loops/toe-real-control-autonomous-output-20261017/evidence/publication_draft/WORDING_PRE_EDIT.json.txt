@@ -1,0 +1,22 @@
+{
+  "captured_utc": "2026-10-17T05:36:49.159867+00:00",
+  "purpose": "Root-authorized exact coverage-print wording edit after static03; not another scientific or static-checker execution",
+  "executing_edit_source": {
+    "bytes": 3055,
+    "sha256": "10be1b2b73b004d533db982b0e87e8bda5f384e9d785e11941ce8af49b8dea3d"
+  },
+  "inputs": {
+    "canonical/scripts/real_control_autonomous_output_2026_10_17.py": {
+      "bytes": 47124,
+      "sha256": "389f0b214acc64d3c8c86a9b0c62cb50743d6da6f3a0ce241c8e51a5f218eeb0"
+    },
+    "build_package.py": {
+      "bytes": 28693,
+      "sha256": "c9f7e2682f4084fd7740b405e89b5d59594af7c695bfca82da56aca89a670f90"
+    }
+  },
+  "old_literal": "lattice_wide: checked and not executed \u2014 enormous finite/infinite dynamics were not simulated; full-output horizons use the preserved analytical premises.",
+  "new_literal": "lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.",
+  "remaining_bytes": "unchanged by bytes.replace(old,new,1)",
+  "authorization": "Root message requests this exact lattice_wide coverage wording before freeze."
+}

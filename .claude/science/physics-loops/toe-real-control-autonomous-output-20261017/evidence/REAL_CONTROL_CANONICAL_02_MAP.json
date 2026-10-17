@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_canonical_02",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_canonical_02/EXECUTION.json.txt",
+      "bytes": 1460,
+      "sha256": "176a4ee0235901247583043077e56792393b8e9bd8078afee77467ce26315648",
+      "compression": "none",
+      "raw_bytes": 1460,
+      "raw_sha256": "176a4ee0235901247583043077e56792393b8e9bd8078afee77467ce26315648"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/integration_programs/run_canonical.py.txt",
+      "bytes": 7326,
+      "sha256": "025c15fbefa58fdf9dc6b7d8561bbddd533bc0bc68f6e88b76130e30a9f785cd",
+      "compression": "none",
+      "raw_bytes": 7326,
+      "raw_sha256": "025c15fbefa58fdf9dc6b7d8561bbddd533bc0bc68f6e88b76130e30a9f785cd"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/canonical_final/EXECUTION.json.txt",
+      "bytes": 2519,
+      "sha256": "8c11fae5f87145f65ca71a85aa5f41da9b00f47fcad25e72131ec669b7d7c069",
+      "compression": "none",
+      "raw_bytes": 2519,
+      "raw_sha256": "8c11fae5f87145f65ca71a85aa5f41da9b00f47fcad25e72131ec669b7d7c069"
+    }
+  ],
+  "count": 4
+}

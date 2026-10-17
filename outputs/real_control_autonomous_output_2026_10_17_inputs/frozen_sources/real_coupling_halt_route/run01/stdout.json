@@ -1,0 +1,1663 @@
+{
+  "status": "completed",
+  "author_corroboration_only": true,
+  "source_sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+  "prelaunch_sha256": "36e0d3ece73b96d92ca631447ddd5207ac0ab438935dee8c598e90801a450274",
+  "program_wall_seconds": 0.006094916723668575,
+  "records": [
+    {
+      "test": "snapshot:inputs/family.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_qualification.md",
+      "result": {
+        "satisfied": true,
+        "detail": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_acceptance.json",
+      "result": {
+        "satisfied": true,
+        "detail": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+      }
+    },
+    {
+      "test": "snapshot:inputs/local_emitter.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+      }
+    },
+    {
+      "test": "snapshot:inputs/installed.md",
+      "result": {
+        "satisfied": true,
+        "detail": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+      }
+    },
+    {
+      "test": "snapshot:inputs/generic_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+      }
+    },
+    {
+      "test": "snapshot:inputs/moment.md",
+      "result": {
+        "satisfied": true,
+        "detail": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+      }
+    },
+    {
+      "test": "snapshot:inputs/interval.md",
+      "result": {
+        "satisfied": true,
+        "detail": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_finite.md",
+      "result": {
+        "satisfied": true,
+        "detail": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11"
+      }
+    },
+    {
+      "test": "snapshot:inputs/workflow.md",
+      "result": {
+        "satisfied": true,
+        "detail": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      }
+    },
+    {
+      "test": "snapshot:inputs/no_go_discipline.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      }
+    },
+    {
+      "test": "snapshot:inputs/primitive_registry.json",
+      "result": {
+        "satisfied": true,
+        "detail": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    },
+    {
+      "test": "snapshot:inputs/realized_state_primitive.md",
+      "result": {
+        "satisfied": true,
+        "detail": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      }
+    },
+    {
+      "test": "prelaunch:checker",
+      "result": {
+        "satisfied": true,
+        "detail": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0"
+      }
+    },
+    {
+      "test": "prelaunch:executed_copy",
+      "result": {
+        "satisfied": true,
+        "detail": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0"
+      }
+    },
+    {
+      "test": "prelaunch:launcher",
+      "result": {
+        "satisfied": true,
+        "detail": "46c89bc4707cf3d8a0deac0a63976330c7efc1087dc3981e2b922612462b48da"
+      }
+    },
+    {
+      "test": "prelaunch:resource_plan",
+      "result": {
+        "satisfied": true,
+        "detail": "b774d6fa0678c00111717654d56edae469599c86a1793e018deafdd86d480d63"
+      }
+    },
+    {
+      "test": "prelaunch:original_plan",
+      "result": {
+        "satisfied": true,
+        "detail": "45fae2702bfae4556b706df67447735492b4945f6737a74431c4c0363974e630"
+      }
+    },
+    {
+      "test": "prelaunch:scalar_inputs",
+      "result": {
+        "satisfied": true,
+        "detail": "9249fd95d793dcb2c2ba6e89517576fb3418d3ece965233a11c810bec6c1668d"
+      }
+    },
+    {
+      "test": "prelaunch:source_manifest",
+      "result": {
+        "satisfied": true,
+        "detail": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot_preparer",
+      "result": {
+        "satisfied": true,
+        "detail": "7196e54b4753abb45afe5615d9f330d2a407e0795c6400f2e721e58e5ef32e7d"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/family.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/family_qualification.md",
+      "result": {
+        "satisfied": true,
+        "detail": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/family_acceptance.json",
+      "result": {
+        "satisfied": true,
+        "detail": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/local_emitter.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/installed.md",
+      "result": {
+        "satisfied": true,
+        "detail": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/generic_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/moment.md",
+      "result": {
+        "satisfied": true,
+        "detail": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/interval.md",
+      "result": {
+        "satisfied": true,
+        "detail": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/reflection_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/reflection_finite.md",
+      "result": {
+        "satisfied": true,
+        "detail": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/family_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/reflection_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/workflow.md",
+      "result": {
+        "satisfied": true,
+        "detail": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/no_go_discipline.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/primitive_registry.json",
+      "result": {
+        "satisfied": true,
+        "detail": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    },
+    {
+      "test": "prelaunch:snapshot:inputs/realized_state_primitive.md",
+      "result": {
+        "satisfied": true,
+        "detail": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:interpreter",
+      "result": {
+        "satisfied": true,
+        "detail": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:fractions",
+      "result": {
+        "satisfied": true,
+        "detail": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:numbers",
+      "result": {
+        "satisfied": true,
+        "detail": "ac381960a3dc1db0498b0bd43d8ef278d6599713121a186b153ff09d9552e0db"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:decimal",
+      "result": {
+        "satisfied": true,
+        "detail": "ed070025c9742f71f7ea92ec1a3d24f85b3199dd79b9d15a141716154e647989"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:_decimal",
+      "result": {
+        "satisfied": true,
+        "detail": "012ccc5fc549ca1da531e00957e6f1807e364971fcd55209f51d5545d788e585"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:json",
+      "result": {
+        "satisfied": true,
+        "detail": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5"
+      }
+    },
+    {
+      "test": "prelaunch:runtime:collections",
+      "result": {
+        "satisfied": true,
+        "detail": "2347f647577b6c11b82fc48fa4a1744f7af1af87f15942f92b7cc4410f0a817b"
+      }
+    },
+    {
+      "test": "central_phase_unit_circle",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "cos_phi": "18299308669488507201693501138731582334670664139372522141370801/28470942580001221460551733349533582334670664139372522141370801",
+          "sin_phi": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801"
+        }
+      }
+    },
+    {
+      "test": "central_phase_and_positive_onsite",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "d": "68581483988895114434201249868802662729989454576745044282741602/28470942580001221460551733349533582334670664139372522141370801",
+          "E0_minus_3kappa_max": "3002094703252334230928611712651683797/533581695525635712942911610540100000000"
+        }
+      }
+    },
+    {
+      "test": "chiral_flag_eigenvalues",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "J": [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "v_plus_unnormalized": [
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          ],
+          "v_minus_unnormalized": [
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "product_flag_half_weights",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "plus": [
+            "1/2",
+            "0"
+          ],
+          "minus": [
+            "1/2",
+            "0"
+          ]
+        }
+      }
+    },
+    {
+      "test": "six_by_six_sector_intertwining",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "H": [
+            [
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+              ]
+            ],
+            [
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "HR": [
+            [
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "six_real_edge_signs",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "(2, 0)": "1/100000000",
+          "(3, 1)": "1/100000000",
+          "(4, 0)": "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+          "(5, 1)": "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+          "(4, 1)": "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+          "(5, 0)": "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+        }
+      }
+    },
+    {
+      "test": "wrong_cross_sign_is_detected",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "nonzero_defect_entries": [
+            [
+              1,
+              2,
+              [
+                "-436224654788107715439120307610749961212962525960000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ]
+            ],
+            [
+              4,
+              0,
+              [
+                "0",
+                "436224654788107715439120307610749961212962525960000000/28470942580001221460551733349533582334670664139372522141370801"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "positive_cell_polynomial_sign_-1",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "Q": [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ]
+          ],
+          "spectrum_by_polynomial_and_trace": [
+            0,
+            0,
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "test": "positive_cell_polynomial_sign_1",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "Q": [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ]
+          ],
+          "spectrum_by_polynomial_and_trace": [
+            0,
+            0,
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "test": "full_occupation_identity",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "remaining_number_coefficients": [
+            "30021107107032000000000000000/5335816955256357129429116105401",
+            "30021107107032000000000000000/5335816955256357129429116105401",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "contact_vacancy_scalar": "34290741994447557217100624934401331364994727288372522141370801/711773564500030536513793333738339558366766603484313053534270025000000",
+          "complete_scalar": "41564525138291307825392028486495301737162460286877030327659547592151637326169/14235471290000610730275866674766791167335332069686261070685400500000000000000",
+          "difference_from_original_physical_scalar": "41564525254687296114318743617473133434517440893358293307659547592151637326169/28470942580001221460551733349533582334670664139372522141370801000000000000000"
+        }
+      }
+    },
+    {
+      "test": "seed_second_moment",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "variance_addition": "1/5000000000000000"
+        }
+      }
+    },
+    {
+      "test": "literal_target_unitary_and_old_commutation",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "K": [
+            [
+              [
+                "3",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ]
+          ],
+          "W": [
+            [
+              [
+                "9/25",
+                "12/25"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-16/25",
+                "12/25"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "9/25",
+                "12/25"
+              ],
+              [
+                "-16/25",
+                "12/25"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-16/25",
+                "12/25"
+              ],
+              [
+                "9/25",
+                "12/25"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-16/25",
+                "12/25"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "9/25",
+                "12/25"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "same_energy_real_old_falsifier",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "u_plus_unnormalized": [
+            [
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "u_minus_unnormalized": [
+            [
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "omega_plus": [
+            "-7/25",
+            "24/25"
+          ]
+        }
+      }
+    },
+    {
+      "test": "common_output_separation",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "environment_separation_squared": "32/25",
+          "minimax_lower_bound_squared": "8/25"
+        }
+      }
+    },
+    {
+      "test": "cubic_NN_embedding",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "vertices": {
+            "old1": [
+              0,
+              0,
+              0
+            ],
+            "old2": [
+              1,
+              0,
+              0
+            ],
+            "A": [
+              0,
+              1,
+              0
+            ],
+            "B": [
+              1,
+              1,
+              0
+            ],
+            "e0": [
+              8,
+              2,
+              1
+            ],
+            "e1": [
+              9,
+              3,
+              1
+            ],
+            "c0,0": [
+              0,
+              1,
+              1
+            ],
+            "c1,0": [
+              1,
+              1,
+              1
+            ],
+            "c2,0": [
+              1,
+              1,
+              2
+            ],
+            "c3,0": [
+              1,
+              1,
+              3
+            ],
+            "c4,0": [
+              2,
+              1,
+              3
+            ],
+            "c5,0": [
+              3,
+              1,
+              3
+            ],
+            "c6,0": [
+              4,
+              1,
+              3
+            ],
+            "c7,0": [
+              5,
+              1,
+              3
+            ],
+            "c8,0": [
+              6,
+              1,
+              3
+            ],
+            "c9,0": [
+              7,
+              1,
+              3
+            ],
+            "c10,0": [
+              8,
+              1,
+              3
+            ],
+            "c11,0": [
+              8,
+              1,
+              2
+            ],
+            "c12,0": [
+              8,
+              1,
+              1
+            ],
+            "c13,0": [
+              9,
+              1,
+              1
+            ],
+            "c14,0": [
+              9,
+              2,
+              1
+            ],
+            "c15,0": [
+              10,
+              2,
+              1
+            ],
+            "c16,0": [
+              11,
+              2,
+              1
+            ],
+            "c17,0": [
+              12,
+              2,
+              1
+            ],
+            "c18,0": [
+              13,
+              2,
+              1
+            ],
+            "c19,0": [
+              14,
+              2,
+              1
+            ],
+            "c0,1": [
+              0,
+              1,
+              -1
+            ],
+            "c1,1": [
+              1,
+              1,
+              -1
+            ],
+            "c2,1": [
+              2,
+              1,
+              -1
+            ],
+            "c3,1": [
+              3,
+              1,
+              -1
+            ],
+            "c4,1": [
+              4,
+              1,
+              -1
+            ],
+            "c5,1": [
+              5,
+              1,
+              -1
+            ],
+            "c6,1": [
+              6,
+              1,
+              -1
+            ],
+            "c7,1": [
+              7,
+              1,
+              -1
+            ],
+            "c8,1": [
+              8,
+              1,
+              -1
+            ],
+            "c9,1": [
+              9,
+              1,
+              -1
+            ],
+            "c10,1": [
+              9,
+              2,
+              -1
+            ],
+            "c11,1": [
+              9,
+              3,
+              -1
+            ],
+            "c12,1": [
+              9,
+              3,
+              0
+            ],
+            "c13,1": [
+              8,
+              3,
+              0
+            ],
+            "c14,1": [
+              8,
+              3,
+              1
+            ],
+            "c15,1": [
+              8,
+              4,
+              1
+            ],
+            "c16,1": [
+              8,
+              5,
+              1
+            ],
+            "c17,1": [
+              8,
+              6,
+              1
+            ],
+            "c18,1": [
+              8,
+              7,
+              1
+            ],
+            "c19,1": [
+              8,
+              8,
+              1
+            ]
+          },
+          "installed_support_edges": [
+            [
+              "old1",
+              "old2"
+            ],
+            [
+              "old1",
+              "A"
+            ],
+            [
+              "old2",
+              "B"
+            ],
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "c0,0"
+            ],
+            [
+              "B",
+              "c1,0"
+            ],
+            [
+              "A",
+              "c0,1"
+            ],
+            [
+              "B",
+              "c1,1"
+            ],
+            [
+              "c0,0",
+              "c1,0"
+            ],
+            [
+              "c1,0",
+              "c2,0"
+            ],
+            [
+              "c2,0",
+              "c3,0"
+            ],
+            [
+              "c3,0",
+              "c4,0"
+            ],
+            [
+              "c4,0",
+              "c5,0"
+            ],
+            [
+              "c5,0",
+              "c6,0"
+            ],
+            [
+              "c6,0",
+              "c7,0"
+            ],
+            [
+              "c7,0",
+              "c8,0"
+            ],
+            [
+              "c8,0",
+              "c9,0"
+            ],
+            [
+              "c9,0",
+              "c10,0"
+            ],
+            [
+              "c10,0",
+              "c11,0"
+            ],
+            [
+              "c11,0",
+              "c12,0"
+            ],
+            [
+              "c12,0",
+              "c13,0"
+            ],
+            [
+              "c13,0",
+              "c14,0"
+            ],
+            [
+              "c14,0",
+              "c15,0"
+            ],
+            [
+              "c15,0",
+              "c16,0"
+            ],
+            [
+              "c16,0",
+              "c17,0"
+            ],
+            [
+              "c17,0",
+              "c18,0"
+            ],
+            [
+              "c18,0",
+              "c19,0"
+            ],
+            [
+              "e0",
+              "c12,0"
+            ],
+            [
+              "e0",
+              "c14,0"
+            ],
+            [
+              "e0",
+              "c14,1"
+            ],
+            [
+              "c0,1",
+              "c1,1"
+            ],
+            [
+              "c1,1",
+              "c2,1"
+            ],
+            [
+              "c2,1",
+              "c3,1"
+            ],
+            [
+              "c3,1",
+              "c4,1"
+            ],
+            [
+              "c4,1",
+              "c5,1"
+            ],
+            [
+              "c5,1",
+              "c6,1"
+            ],
+            [
+              "c6,1",
+              "c7,1"
+            ],
+            [
+              "c7,1",
+              "c8,1"
+            ],
+            [
+              "c8,1",
+              "c9,1"
+            ],
+            [
+              "c9,1",
+              "c10,1"
+            ],
+            [
+              "c10,1",
+              "c11,1"
+            ],
+            [
+              "c11,1",
+              "c12,1"
+            ],
+            [
+              "c12,1",
+              "c13,1"
+            ],
+            [
+              "c13,1",
+              "c14,1"
+            ],
+            [
+              "c14,1",
+              "c15,1"
+            ],
+            [
+              "c15,1",
+              "c16,1"
+            ],
+            [
+              "c16,1",
+              "c17,1"
+            ],
+            [
+              "c17,1",
+              "c18,1"
+            ],
+            [
+              "c18,1",
+              "c19,1"
+            ],
+            [
+              "e1",
+              "c12,1"
+            ],
+            [
+              "e1",
+              "c14,0"
+            ],
+            [
+              "e1",
+              "c14,1"
+            ]
+          ],
+          "vertex_count": 46,
+          "edge_count": 52
+        }
+      }
+    },
+    {
+      "test": "first_omitted_distance_prefix_M19",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "retained_M": 19,
+          "distance_to_first_omitted_each_rail": [
+            6,
+            6
+          ],
+          "general_formula": "M-13, proved by no attachment beyond index14"
+        }
+      }
+    },
+    {
+      "test": "infinite_tail_symbolic_conditions",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "rail0_tail": "(n-5,2,1), n>=15",
+          "rail1_tail": "(8,n-11,1), n>=15",
+          "proof": "Each step has length1; tails have respectively x>=10,y=2 and x=8,y>=4, and no core site has those tail coordinates."
+        }
+      }
+    },
+    {
+      "test": "exact_source_loads",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "old1_added": "99687856381667/50000000000000",
+          "old2_added": "299659657780149/250000000000000",
+          "old_edge_separate": "3",
+          "A": "13968112426577929/500000000000000",
+          "B": "4445781375070661/200000000000000",
+          "each_c0": "8015120691541701/1000000000000000",
+          "each_c1": "6730044773026091/1000000000000000",
+          "ordinary_clock": "3752638388379/31250000000000",
+          "each_c12": "3752639325879/31250000000000",
+          "each_c14": "106841189682679402815600987957370386718479895903070525565649724201614259079/889716955625038170642241667172924447958458254355391316917837531250000000000",
+          "each_emitter": "8009390906605417955947355090261127096345356594727288372522141370801/1423547129000061073027586667476679116733533206968626107068540050000000",
+          "each_far_end": "11257915165137/125000000000000"
+        }
+      }
+    },
+    {
+      "test": "reverse_branch_complete_budget",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "seed_plus_incoming_plus_normalization_plus_localized": "215527/5000000"
+        }
+      }
+    },
+    {
+      "test": "orthogonal_branch_error",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "branch_error_squared": "61/62500"
+        }
+      }
+    },
+    {
+      "test": "strict_full_output_falsifier",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "infinite_strict_lower_bound": "1061/2000",
+          "finite_strict_lower_bound": "1059/2000"
+        }
+      }
+    },
+    {
+      "test": "finite_buffer_and_error",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "minimum_T": "10000000000000000000000",
+          "minimum_margin": "43999999999999999999978",
+          "finite_error_ceiling": "19683/20971520",
+          "qubits": "2 ceil(50T)+6"
+        }
+      }
+    },
+    {
+      "test": "actual_dimensions",
+      "result": {
+        "maximum_matrix_dimension": 6,
+        "graph_vertices": 46,
+        "scientific_parameter_samples": 0,
+        "dynamics_steps": 0,
+        "quadrature_nodes": 0
+      }
+    }
+  ]
+}

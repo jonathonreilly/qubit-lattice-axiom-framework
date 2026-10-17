@@ -1,0 +1,41 @@
+# Narrow future reproduction and fault plan — not executed
+
+Root should first bind the final primary, every literal declared input, launcher,
+interpreter and selected runtime files in a serialized/fsynced prelaunch record.
+Run normal Python with assertions enabled and available pinned SymPy, through
+runner_cache.execute_and_write_cache with the declared45-second timeout and
+sharedCPU30/30. Do not misattribute the old isolated-Python import failure or
+source receipts to this run. No math body was executed by the drafter.
+
+Use isolated scratch copies and preserve the actual changed source, full streams,
+exit and expected failure. A mere checksum rejection does not demonstrate a
+scientific assertion's sensitivity. Proposed distinct families:
+
+1. Realifier signs/sector: reverse one of the two cross signs in the six-edge
+   construction. Expect sector intertwining or explicit six-edge consistency to
+   fail, preserving the existing nonzero-defect discriminator.
+2. Realifier complete scalar/positive cells: remove one attachment vacancy
+   contribution or alter a full occupied-pair diagonal. Expect the full occupation
+   identity or local polynomial/Hermiticity assertion, not just a report hash.
+3. Original counterexample: change the literal target eigenvalue/separation or
+   reverse-branch budget so its displayed strict bound no longer follows. Expect
+   same-energy witness/common-output separation or strict full-output assertion.
+   Keep its10^6/kappa² onset; never turn this into a new-onset negative claim.
+4. Preparation isolation: omit the m onsite pin or one of its clock complements.
+   Expect an existing full-Pauli core/old column to fail for M16 or M17. This tests
+   the substantive core identity, not the final arithmetic ceiling.
+5. Preparation pulse/phase: reverse the second exchange sign or remove an
+   off-pair spectator onsite. Expect exact chiral-state/common-phase comparison
+   to fail; a mere global-phase-insensitive overlap is insufficient here.
+6. Preparation Gram/resources: change an exit coefficient without making the
+   corresponding orthogonality compensation, or omit a positive identity norm
+   contribution. Expect the full rail-exit Gram, scalar, load or block-count
+   assertion for the affected family.
+
+The historical ramp_error_and_complete_trace_ceiling first clause is explicitly
+non-discriminating arithmetic. Do not select it as proof of ramp validation or
+inflate its passing flag. Ramp support remains the independently frozen operator
+Duhamel proof plus substantive local Gram/profile identities. Any replacement
+of that clause is a new separately reviewed change, not part of this transport.
+These faults are recommendations, not recorded executions or guarantees of a
+particular runtime failure before inspecting the actual scratch change.

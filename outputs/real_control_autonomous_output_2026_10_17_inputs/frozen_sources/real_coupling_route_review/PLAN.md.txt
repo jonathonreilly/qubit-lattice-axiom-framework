@@ -1,0 +1,42 @@
+# Selective real-coupling route review
+
+Task received from the parent on 2026-10-17. The only write root is this
+directory. The task is a selective mathematical check, not publication,
+retained audit, a general real-coupling no-go, or an independent rederivation
+of the already qualified spectral family.
+
+Controlling new source: `../real_coupling_halt_route/ROUTE.md`, 32324 bytes,
+SHA256 c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018.
+Its frozen inventory has SHA256
+16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b.
+
+Read the complete new argument, source manifest and necessary inherited
+interfaces. Reuse unchanged previously checked identities by exact pin.
+Derive the realification, positive cells and scalar, branch transformation,
+full-output separation and finite-horizon bound analytically. Preserve
+attempted counterexamples and live alternatives. Save and freeze that
+analysis before looking at the author's checker, launcher or outputs.
+Only then inspect those files and their actual execution provenance, without
+replaying or importing the author's scientific implementation. Write one
+complete REVIEW.md and a final freeze.
+
+No new scientific execution is planned or necessary. Hashing, copying,
+inventory verification and report serialization are bookkeeping, not
+numerical evidence. A new scientific run would require a separate declared
+resource plan and genuine serialized/fsynced prelaunch bindings first; none
+is authorized by this plan. No optimizer, parameter grid, quadrature,
+large matrix or dynamics computation will be used.
+
+The reviewer has substantial prior source exposure and same-model continuity:
+authorship/checking of the local/installed emitter, generic/interval packet
+bridge and later family/moment/resonance results. This is a separate new
+derivation of the route's changed steps, not blind or model-diverse review.
+The controlling family is the older T=10^6/kappa^2 result; the resonance-family
+improvement and preparation/calibration work are not imported.
+
+The physics-claim-reviewer skill is applied to this explicit narrow review.
+The owner-selected inherited model/effort and no-delegation instruction take
+precedence over general skill routing suggestions. Current local workflow is
+reused at its pinned revision; no Git/network freshness operation, publication,
+prompt, physical-axiom or audit write is part of this task. The campaign
+deadline remains 2026-10-17T23:07:27Z.

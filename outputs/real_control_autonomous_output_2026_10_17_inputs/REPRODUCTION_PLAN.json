@@ -1,0 +1,32 @@
+{
+  "scope": "Two mechanically transported author programs; no scientific or mutation execution in draft",
+  "runner": "scripts/real_control_autonomous_output_2026_10_17.py",
+  "canonical_execution": "scripts.runner_cache.execute_and_write_cache with declared AUDIT_TIMEOUT_SEC45; do not treat raw stdout as cache",
+  "cpu_shared_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_seconds": 45,
+  "maximum_dense_dimension": 6,
+  "maximum_graph_vertices": 46,
+  "no_optimized_python": true,
+  "prelaunch": "Root must serialize/fsync interpreter, actual launcher, primary, every declared input and selected runtime identities before spawn, compare after and preserve full streams including failures. Partial runtime pins must be labeled.",
+  "historical_limits": {
+    "realifier_author": {
+      "cpu_soft_hard_seconds": [
+        20,
+        20
+      ],
+      "external_wall_seconds": 30
+    },
+    "preparation_author": {
+      "cpu_soft_hard_seconds": [
+        20,
+        20
+      ],
+      "external_wall_seconds": 30
+    }
+  },
+  "scope_warning": "Historical preparation ramp-budget first clause remains non-discriminating budget arithmetic. Do not count it as an independent ramp check. Exact small fixtures do not prove all-length/all-time claims.",
+  "future_checks": "Separate transport review, canonical actual execution/cache, distinct fault families, source/vocabulary/diff/changed-evidence checks; integrated-main gates later."
+}

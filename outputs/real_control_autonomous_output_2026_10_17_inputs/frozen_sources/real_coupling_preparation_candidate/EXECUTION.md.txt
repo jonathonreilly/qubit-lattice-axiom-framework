@@ -1,0 +1,72 @@
+# Actual bounded corroboration
+
+Two child launch attempts were made, within the predeclared cap of two.
+Only the second reached scientific assertions. No scientific replay or
+mutation run beyond these attempts was performed.
+
+| Attempt | Actual start UTC | Result | Wall seconds | User + system CPU seconds |
+|---|---|---|---:|---:|
+| run01 | 2026-10-17T04:57:40.053170+00:00 | Import failure, before scientific assertions | 0.04669991694390774 | 0.030771999999999997 |
+| run02 | 2026-10-17T04:58:27.339722+00:00 | Exit 0, 90 structured checks passed | 0.4957573749125004 | 0.42351799999999995 |
+
+Both used hard/soft CPU limits 20/20 seconds and external wall limit 30
+seconds. No OS memory cap was imposed. The successful child maximum RSS
+was 66,846,720 bytes on this macOS host. The checker used at most 4x4
+dense matrices; its two sparse Pauli fixtures have M=16/17 sites per
+rail, 38/40 physical qubits and 12 old/core columns each. No full Hilbert
+matrix was allocated. Kappa was symbolic. There were no point grids,
+optimizers, quadrature, time-integration steps, inherited scientific
+checker imports or earlier checker replays.
+
+The first failure was `ModuleNotFoundError: No module named 'sympy'` in
+the isolated child. The complete traceback, empty stdout, unchanged
+executed checker, prelaunch and failure receipt remain in run01.
+[RETRY_AMENDMENT.md](RETRY_AMENDMENT.md) was written before the second
+launch. The second launcher supplies an explicit bootstrap pointing to
+the already installed, pinned SymPy package parent while retaining `-I`.
+There was no package installation, fallback search or scientific change.
+
+The checker, run01/executed_source.py and run02/executed_source.py are
+byte-identical, SHA256
+`70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0`.
+The proof body was written before the first run and remained byte-identical
+through both runs, SHA256
+`57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c`.
+The successful output reports Python 3.13.5, SymPy 1.14.0 and
+macOS-26.6.2-arm64-arm-64bit-Mach-O. Its program-only elapsed time after
+imports was 0.24057466676458716 seconds; that is not substituted for the
+external wall/CPU measurements above.
+
+Each prelaunch was written, flushed and fsynced, followed by directory
+fsync, before Popen. The successful run binds 26 actual input/source/
+bootstrap files and four selected runtime files. Its before, after and
+later current file hashes and generation metadata matched exactly. The
+selected runtime pins cover the interpreter binary, fractions module,
+SymPy entry module and SymPy distribution METADATA; they are not a
+hermetic pin of every transitive library file or the operating system.
+Complete stdout and stderr were preserved; successful stderr is empty.
+
+The full successful output was read. It establishes exact local
+trigonometry/sign and positivity conditions, full four-space positive
+cell/complement spectra, literal K/W algebra, the three-pulse state and
+common phase, smooth profile integrals/peaks, all 12 core Pauli actions
+in each fixture, emitter-supported residuals and rail Gram, full Pauli
+identity coefficients, positive-block counts/norm sums, old/source load
+preservation and local NN support. The two deliberate algebraic
+discriminators confirm that omitting the pin breaks the flat core and
+reversing the second exchange selects orthogonal chirality. They are
+explicit checks inside this bounded program, not separate mutation
+evidence against an independently written theorem checker.
+
+The result is not an all-M or all-time numerical experiment. Those claims
+rest on the analytical cancellation and supported Duhamel proof in the
+candidate. Scattering, common-profile normalization, threshold closure,
+bound-state control and resonance localization are inherited by their
+exact pinned conditional sources, not re-established by this program.
+The realifier and this new handoff still require separate mathematical
+review. No retained, independent-whole-chain or native-supplier status is
+claimed by this execution record.
+
+Final file hashes and source-pair verification appear in FILE_MANIFEST.json,
+FINAL_CHECK.json and FREEZE.json. No run will be repeated absent a new
+separately authorized task.

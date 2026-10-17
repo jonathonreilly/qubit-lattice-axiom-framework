@@ -1,0 +1,11 @@
+# Bounded independent preparation route
+
+Propose a nine-block local isolator for the three physical head positions e0, c_(14,0), e1. Complement the six installed real emitter bonds and the two clock bonds incident to c_(14,0); add the positive onsite (E0-kappa)n_(14,0). This gives an exactly invariant three-dimensional head range with one common scalar, while leaving literal K and all other qubits physical.
+
+Start with all new controls zero. Ramp the isolator on by a unit increasing cubic, apply three disjoint unit real pulse windows (positive exchange plus spectator onsite, negative exchange plus spectator onsite, then one positive onsite phase), and ramp the isolator off by a unit decreasing cubic. Expected areas are pi/4, pi/2, pi/2. Derive the phase and full output before a run. The two supported ramp errors should total at most sqrt(2)kappa independently of M. This is a proposed conditional theorem, not a successful numerical fit or native phase/controller supplier.
+
+Sources are in SOURCE_MAP.json. The root real_phase_preparation_idea directory is forbidden and has not been inspected. The realifier itself is under separate review, so its use remains conditional. No code from another scientific checker will be imported or replayed. Earlier broad complement-all-blocks idea would work algebraically but adds O(M) controls and scalar; it is superseded by this local isolator, not a failed no-go.
+
+If corroboration is needed, permit one exact symbolic/Pauli run, at most one repair retry after preserving failure and a written amendment. CPU20/20, external wall30, max dense dimension4, sparse Pauli fixtures M16 and17 (at most40 physical qubits), at most12 seed basis columns per fixture. Symbolic kappa and exact rational ladder coefficients. No optimizer, grid, quadrature, Gibbs/dynamics matrix, large-state allocation, or inherited checker replay. Full outputs and actual prelaunch/runtime pins must be serialized/fsynced before launch. Analytical all-M reasoning remains required.
+
+Write only this new directory; no W/Git/checkpoint/prompt/axiom/audit/PR changes, no subdelegation, no model/effort override or other-chat message. Fixed campaign deadline2026-10-17T23:07:27Z.

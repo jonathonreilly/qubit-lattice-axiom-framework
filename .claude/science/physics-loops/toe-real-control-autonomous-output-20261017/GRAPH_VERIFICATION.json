@@ -1,0 +1,55 @@
+{
+  "old_counts": {
+    "node_count": 7211,
+    "edge_count": 16166
+  },
+  "new_counts": {
+    "node_count": 7212,
+    "edge_count": 16167
+  },
+  "added": [
+    "real_control_autonomous_output_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "real_control_autonomous_output_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca",
+    "path": "docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/real_control_autonomous_output_2026_10_17.py",
+    "title": "Real local preparation followed by autonomous output"
+  },
+  "new_edges": [
+    {
+      "from": "real_control_autonomous_output_bounded_theorem_note_2026-10-17",
+      "to": "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+    }
+  ],
+  "manifest_sha256": "d0220ab56c1a9fe73505166f9443aaa6d20fa5f00a8a765690250d160be74635",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/run_citation_graph_build.py",
+      "started_utc": "2026-10-17T05:39:15.599151+00:00",
+      "elapsed_seconds": 128.37148704193532,
+      "wall_cap_seconds": 180,
+      "exit_code": 0,
+      "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "started_utc": "2026-10-17T05:41:23.973825+00:00",
+      "elapsed_seconds": 0.08668566681444645,
+      "wall_cap_seconds": 60,
+      "exit_code": 0,
+      "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    }
+  ],
+  "scope": "New real preparation/autonomous-output note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+}

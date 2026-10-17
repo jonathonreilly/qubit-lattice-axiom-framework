@@ -1,0 +1,39 @@
+{
+  "two_headers_losslessly_compressed": [
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt",
+      "new_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt.gz",
+      "raw": {
+        "bytes": 4517,
+        "sha256": "9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d"
+      },
+      "stored": {
+        "bytes": 2428,
+        "sha256": "b8b029bf6ed665f31e0914b75acedfb0b938a6e9e3bd8e4e71088cccf3109942"
+      }
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt",
+      "new_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt.gz",
+      "raw": {
+        "bytes": 3354,
+        "sha256": "37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23"
+      },
+      "stored": {
+        "bytes": 1857,
+        "sha256": "f788901bc533b99dd770c168d8391f3b7728c5429b4b15f16525cdf8abbaf62b"
+      }
+    }
+  ],
+  "final_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/real_control_autonomous_output_2026_10_17.py",
+    "bytes": 47133,
+    "sha256": "87ed66a14a21e20a7d747454cca1854d6adcd52ffb00f1532e78b33967d4af29"
+  },
+  "note_unchanged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 74148,
+    "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+  },
+  "fresh_canonical_required": true
+}

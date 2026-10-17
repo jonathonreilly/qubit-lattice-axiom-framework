@@ -1,0 +1,33 @@
+"""Root-requested one-literal coverage edit; no checker/science invocation."""
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+from pathlib import Path
+
+D=Path(__file__).resolve().parent
+primary=D/'canonical/scripts/real_control_autonomous_output_2026_10_17.py'
+builder=D/'build_package.py'
+old=b'lattice_wide: checked and not executed \xe2\x80\x94 enormous finite/infinite dynamics were not simulated; full-output horizons use the preserved analytical premises.'
+new=b'lattice_wide: analytical source scope checked; huge finite/infinite dynamics not executed, and complete-output horizons remain conditional on preserved proofs.'
+def identity(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def write(path,b):
+    with path.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+def encode(x):return (json.dumps(x,indent=2)+'\n').encode()
+before={str(p.relative_to(D)):p.read_bytes() for p in (primary,builder)}
+assert before[str(primary.relative_to(D))]==(D/'static_03/fixture_repo/scripts/real_control_autonomous_output_2026_10_17.py').read_bytes()
+assert all(b.count(old)==1 and new not in b for b in before.values())
+pre={'captured_utc':datetime.now(timezone.utc).isoformat(),'purpose':'Root-authorized exact coverage-print wording edit after static03; not another scientific or static-checker execution','executing_edit_source':identity(Path(__file__).read_bytes()),'inputs':{p:identity(b) for p,b in before.items()},'old_literal':old.decode(),'new_literal':new.decode(),'remaining_bytes':'unchanged by bytes.replace(old,new,1)','authorization':'Root message requests this exact lattice_wide coverage wording before freeze.'}
+write(D/'WORDING_PRE_EDIT.json',encode(pre))
+fd=os.open(D,os.O_RDONLY)
+try:os.fsync(fd)
+finally:os.close(fd)
+prepin=identity((D/'WORDING_PRE_EDIT.json').read_bytes())
+for relative,b in before.items():write(D/relative,b.replace(old,new,1))
+record={'pre_edit_identity_captured_before_mutation':prepin,'pre_edit_unchanged':identity((D/'WORDING_PRE_EDIT.json').read_bytes())==prepin,'changes':[{'path':relative,'before':identity(b),'after':identity((D/relative).read_bytes()),'exact_single_literal_replacement':(D/relative).read_bytes()==b.replace(old,new,1)} for relative,b in before.items()],'static_evidence_relation':'static03 covers exact immediately preceding primary; final primary differs only in one printed coverage string inside main. Neither author body, resolver, imports, refusal, input list, source/proof maps nor note changes. Full static checker not rerun after this presentation-only delta. Root owns independent final verification.','scientific_executions':0,'additional_full_static_attempts':0}
+write(D/'FINAL_WORDING_AMENDMENT.json',encode(record))
+result=json.loads((D/'BUILD_RESULT.json').read_text())
+result['primary']=identity(primary.read_bytes())
+result['final_wording_amendment']='FINAL_WORDING_AMENDMENT.json; exact root-requested coverage string only after static03.'
+write(D/'BUILD_RESULT.json',encode(result))
+print(json.dumps(record,indent=2))

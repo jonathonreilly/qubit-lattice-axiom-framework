@@ -1,0 +1,120 @@
+"""Execute one preserved canonical attempt after root portability acceptance."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import importlib.metadata
+import importlib.util
+import json
+import os
+import platform
+import resource
+import sys
+
+D = Path(__file__).resolve().parent
+W = D.parent.parent / 'correlation_worktree'
+Q = W / '.claude/science/physics-loops/toe-real-control-autonomous-output-20261017'
+label = sys.argv[1]
+assert label in {'canonical_01', 'canonical_02'}
+A = D / label
+A.mkdir(exist_ok=False)
+os.environ.update(PYTHONDONTWRITEBYTECODE='1', PYTHONOPTIMIZE='0', OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1', VECLIB_MAXIMUM_THREADS='1', NUMEXPR_NUM_THREADS='1')
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(W / 'scripts'))
+import runner_cache
+
+def pin(path):
+    raw = path.read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+
+selected_runtime = [pin(Path(importlib.util.find_spec(name).origin)) for name in ('sympy', 'fractions')]
+sympy_dist = importlib.metadata.distribution('sympy')
+selected_runtime += [pin(Path(sympy_dist.locate_file(x))) for x in sympy_dist.files if str(x).endswith('.dist-info/METADATA')]
+
+runner = 'scripts/real_control_autonomous_output_2026_10_17.py'
+output = W / 'outputs/real_control_autonomous_output_2026_10_17.json'
+root = Q / 'ROOT_PORTABILITY_ACCEPTANCE.json'
+assert root.is_file()
+declared = runner_cache.declared_input_paths(runner)
+assert declared and len(set(declared)) == len(declared)
+assert runner_cache.declared_timeout_for(runner) == 45
+if output.exists():
+    (A / 'previous_result.json').write_bytes(output.read_bytes())
+else:
+    # The cache guard also binds ancestor-directory generation tokens. Create
+    # the output slot before its pre-run capture; never create a fake cache.
+    output.write_text('{"status":"not_executed"}\n')
+old_cache = runner_cache.cache_path_for(runner)
+if old_cache.exists():
+    (A / 'previous_cache.txt').write_bytes(old_cache.read_bytes())
+pre = {'captured_utc': datetime.now(timezone.utc).isoformat(), 'before_child_execution': True,
+       'runner': pin(W / runner), 'inputs': [pin(W / x) for x in declared],
+       'launcher': pin(Path(__file__)), 'cache_implementation': pin(W / 'scripts/runner_cache.py'),
+       'binary': pin(Path(sys.executable).resolve()), 'root_acceptance': pin(root),
+       'selected_runtime_files': selected_runtime, 'sympy_version': sympy_dist.version,
+       'cpu_soft_hard_seconds_in_primary': [30, 30], 'external_wall_seconds': 45,
+       'shared_process': 'Two transported local algebra author bodies, one shared process.',
+       'argv': [sys.executable, '-u', str(W / runner)], 'cwd': str(W),
+       'thread_environment': {k: os.environ[k] for k in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS')},
+       'thread_count_measured': False, 'runtime_coverage': 'Interpreter and selected input/source files; no complete environment lock or OS memory cap.', 'python': sys.version, 'platform': platform.platform()}
+with (A / 'PRELAUNCH.json').open('w') as stream:
+    stream.write(json.dumps(pre, indent=2) + '\n'); stream.flush(); os.fsync(stream.fileno())
+for name in [runner, *[x for x in declared if x.startswith('scripts/') or x.startswith('docs/')]]:
+    target = A / 'executed_sources' / name
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes((W / name).read_bytes())
+# Preserve actual full result before the unchanged envelope's post-run guard.
+# Return the exact original object; this only records evidence outside W.
+original_execute_runner = runner_cache.execute_runner
+def execute_and_preserve(*args, **kwargs):
+    actual = original_execute_runner(*args, **kwargs)
+    with (A / 'RAW_ENVELOPE_RESULT.json').open('w') as stream:
+        stream.write(json.dumps(actual, indent=2) + '\n'); stream.flush(); os.fsync(stream.fileno())
+    (A / 'stdout_merged_before_guard.txt').write_text(actual.get('stdout', ''))
+    (A / 'stderr_protocol_before_guard.txt').write_text(actual.get('stderr', ''))
+    return actual
+runner_cache.execute_runner = execute_and_preserve
+usage_before = resource.getrusage(resource.RUSAGE_CHILDREN)
+started = datetime.now(timezone.utc).isoformat()
+try:
+    result, cache = runner_cache.execute_and_write_cache(runner, timeout_sec=45)
+except Exception as exc:
+    failure = {'failed_utc': datetime.now(timezone.utc).isoformat(),
+               'exception_type': type(exc).__name__, 'error': str(exc),
+               'prelaunch': pin(A / 'PRELAUNCH.json'),
+               'status': 'No successful canonical execution receipt; preserve and investigate.'}
+    if output.exists():
+        (A / 'result_emitted_before_failure.json').write_bytes(output.read_bytes())
+        failure['emitted_result'] = pin(A / 'result_emitted_before_failure.json')
+    (A / 'FAILURE.json').write_text(json.dumps(failure, indent=2) + '\n')
+    raise
+finished = datetime.now(timezone.utc).isoformat()
+usage_after = resource.getrusage(resource.RUSAGE_CHILDREN)
+(A / 'stdout_merged.txt').write_text(result.get('stdout', ''))
+(A / 'stderr_protocol.txt').write_text(result.get('stderr', ''))
+after = {'runner': pin(W / runner), 'inputs': [pin(W / x) for x in declared]}
+assert after['runner'] == pre['runner'] and after['inputs'] == pre['inputs']
+assert all(pin(Path(row['path'])) == row for row in selected_runtime)
+if output.exists():
+    (A / 'result.json').write_bytes(output.read_bytes())
+if cache:
+    (A / 'cache.txt').write_bytes(cache.read_bytes())
+record = {'started_utc': started, 'finished_utc': finished, 'runner': runner,
+          'prelaunch': pin(A / 'PRELAUNCH.json'), 'all_source_input_bytes_unchanged': True,
+          'runner_cache_also_checked_filesystem_generation_tokens': True,
+          'status': result.get('status'), 'exit_code': result.get('exit_code'),
+          'elapsed_seconds': result.get('elapsed_sec'),
+          'child_user_cpu_seconds': usage_after.ru_utime - usage_before.ru_utime,
+          'child_system_cpu_seconds': usage_after.ru_stime - usage_before.ru_stime,
+          'launcher_children_peak_rss_bytes_macos': usage_after.ru_maxrss,
+          'rss_scope': 'Maximum reported for children of this launcher; no OS memory cap or transitive environment lock.',
+          'caps': {'CPU_soft_hard_seconds': [30, 30], 'external_wall_seconds': 45},
+          'stream_semantics': 'runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.',
+          'stdout_merged': pin(A / 'stdout_merged.txt'), 'stderr_protocol': pin(A / 'stderr_protocol.txt'),
+          'cache_status': runner_cache.cache_status(runner),
+          'cache': pin(A / 'cache.txt') if cache else None,
+          'result': pin(A / 'result.json') if output.exists() else None,
+          'scope': 'Actual replay of two qualified author local algebra calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit.'}
+(A / 'EXECUTION.json').write_text(json.dumps(record, indent=2) + '\n')
+print(json.dumps(record, indent=2))
+assert result.get('status') == 'ok' and result.get('exit_code') == 0
+assert record['cache_status'] == 'fresh'

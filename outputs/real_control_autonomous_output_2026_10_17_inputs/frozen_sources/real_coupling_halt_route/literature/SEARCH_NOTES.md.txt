@@ -1,0 +1,90 @@
+# Matching-premise search, 2026-10-17
+
+This search preceded the new architecture claim. It found a direct prior-art
+match for the abstract realification, which is credited instead of claimed as
+new. No external physics theorem is an imported premise of the failure proof.
+URLs, versions and actual read scope are recorded here; this is not an
+exhaustive novelty survey. Only primary papers/publisher pages support the
+literature observations below.
+
+## Queries actually issued
+
+The first batch used:
+
+- `Watson theorem production amplitude elastic scattering phase time reversal real source single channel original paper`
+- `universal computation quantum walk real adjacency graph wave packets Childs 2009`
+- `Hamiltonian quantum computation real interactions product state autonomous quantum cellular automaton Nagaj Wocjan`
+- `realification Hamiltonian real symmetric extra rebit imaginary eigenstate simulation complex Hamiltonian`
+
+The second batch used:
+
+- `site.arxiv.org "Hamiltonian" "complex conjugate" "real" "encoding" Cubitt Montanaro Piddock`
+- `site.arxiv.org "Watson" "production amplitude" "phase" time reversal`
+- `Watson 1952 effect final state interactions reaction cross sections phase Physical Review 88 1163`
+- `site.arxiv.org real simulation complex quantum theory extra qubit Y eigenstate Hamiltonian`
+
+The relevant primary arXiv/publisher pages were then opened directly. Secondary
+and lexical false positives are not cited as scientific support.
+
+## Matched sources and limits
+
+**Cubitt, Montanaro, Piddock, Universal Quantum Hamiltonians.**
+[arXiv:1701.05182v4](https://arxiv.org/pdf/1701.05182v4), dated 2019-05-31.
+The complete relevant state-encoding discussion in section 7.1 and
+complex-to-real lemma in section 7.2, equations (25)-(35), were read.
+Their conjugate-sector construction requires appropriate state encoding for
+dynamics; a simple extra flag can cost locality. This is the matching
+architecture. The later general local-encoding theorem was not fully read
+and is not imported. Version v4 identifies a time-evolution correction
+relative to the published version.
+
+**Childs, Universal computation by quantum walk.**
+[arXiv:0806.1972v1](https://arxiv.org/pdf/0806.1972v1), dated 2008-06-12.
+The introduction, scattering setup and complete section VII universal-computer
+protocol were read. The construction uses real unweighted adjacency and can
+start from one vertex. Encoded wires, filters, measurement timing and its
+success/restart protocol are part of the construction. It is therefore a live
+counterexample to a broad inference that real couplings or a local initial
+vertex cannot compute. It does not directly prove a near-unit complete-output
+halt on the two literal old qubits with their fixed K. No gate/network theorem
+from the paper is applied to this apparatus.
+
+**Nagaj and Wocjan, Hamiltonian Quantum Cellular Automata in 1D.**
+[arXiv:0802.0886v4](https://arxiv.org/pdf/0802.0886v4), dated 2008-08-14;
+[publisher record](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.78.032311).
+The abstract/introduction and the selected random-time output/readout span
+were read, not the whole proof. This is context for autonomous computation
+from a basis-program state. Its ten-dimensional local system and readout
+protocol do not directly establish this qubit, literal-old full-isometry
+contract. No assertion about all its interaction coefficients being real is
+needed here or inferred from the inspected spans.
+
+**Watson, The Effect of Final State Interactions on Reaction Cross Sections.**
+[Physical Review 88, 1163 (1952)](https://journals.aps.org/pr/abstract/10.1103/PhysRev.88.1163).
+Only the publisher abstract was read. It motivates credit for the familiar
+connection between production phases and scattering phases. Equation (27)
+in ROUTE.md is instead derived directly under explicitly stated realness,
+one-channel and uniqueness hypotheses; this abstract supplies no theorem
+used in the proof.
+
+## Local matching search
+
+`repo_search.txt` preserves the 181 raw matching lines from the read-only `rg`
+search of current local `W/docs/*.md` (including nested Markdown files), with
+the regex
+
+    realification|complex.to.real|real.hopping|real.coupling|conjugate.*sector|Watson|chiral.*seed|reciprocal.*emitter
+
+The full raw output is retained; a truncated initial display was not treated
+as complete review. Targeted triage found many unrelated determinant/fermionic
+realification, flux and lattice-Green-function uses. Their full arguments were
+not read and no scientific exclusion is based on their titles. Autonomous
+controller hits likewise remain other live architectures, not ruled-out
+approaches. The applicable family/emitter and real boundary-reflection bodies
+were separately read/reused by exact source identity. No claim that the repo
+contains no related construction follows from this search.
+
+The boundary-reflection note already supplies a real Hamiltonian for the same
+W with a positive three-body boundary and a coherent incoming clock packet.
+Its precise resource mismatch is part of the route comparison, not a reason
+to call real Hamiltonians incapable of the target operation.

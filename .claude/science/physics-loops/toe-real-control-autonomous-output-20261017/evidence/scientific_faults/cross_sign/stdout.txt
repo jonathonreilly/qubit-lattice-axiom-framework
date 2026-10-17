@@ -1,0 +1,459 @@
+{
+  "status": "failed",
+  "author_corroboration_only": true,
+  "executed_primary_sha256": "bb301b99ab829779ace427eebe073c041df9fbf9727d83d7f71674de0a8d099b",
+  "actual_prelaunch_binding": "See separate root-owned actual canonical execution record; historical receipts are not this run.",
+  "program_wall_seconds": 0.005479458253830671,
+  "records": [
+    {
+      "test": "snapshot:inputs/family.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_qualification.md",
+      "result": {
+        "satisfied": true,
+        "detail": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_acceptance.json",
+      "result": {
+        "satisfied": true,
+        "detail": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+      }
+    },
+    {
+      "test": "snapshot:inputs/local_emitter.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+      }
+    },
+    {
+      "test": "snapshot:inputs/installed.md",
+      "result": {
+        "satisfied": true,
+        "detail": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+      }
+    },
+    {
+      "test": "snapshot:inputs/generic_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+      }
+    },
+    {
+      "test": "snapshot:inputs/moment.md",
+      "result": {
+        "satisfied": true,
+        "detail": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+      }
+    },
+    {
+      "test": "snapshot:inputs/interval.md",
+      "result": {
+        "satisfied": true,
+        "detail": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_v2.md",
+      "result": {
+        "satisfied": true,
+        "detail": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_finite.md",
+      "result": {
+        "satisfied": true,
+        "detail": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+      }
+    },
+    {
+      "test": "snapshot:inputs/family_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+      }
+    },
+    {
+      "test": "snapshot:inputs/reflection_wrapper.md",
+      "result": {
+        "satisfied": true,
+        "detail": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11"
+      }
+    },
+    {
+      "test": "snapshot:inputs/workflow.md",
+      "result": {
+        "satisfied": true,
+        "detail": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      }
+    },
+    {
+      "test": "snapshot:inputs/no_go_discipline.md",
+      "result": {
+        "satisfied": true,
+        "detail": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      }
+    },
+    {
+      "test": "snapshot:inputs/primitive_registry.json",
+      "result": {
+        "satisfied": true,
+        "detail": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    },
+    {
+      "test": "snapshot:inputs/realized_state_primitive.md",
+      "result": {
+        "satisfied": true,
+        "detail": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      }
+    },
+    {
+      "test": "central_phase_unit_circle",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "cos_phi": "18299308669488507201693501138731582334670664139372522141370801/28470942580001221460551733349533582334670664139372522141370801",
+          "sin_phi": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801"
+        }
+      }
+    },
+    {
+      "test": "central_phase_and_positive_onsite",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "d": "68581483988895114434201249868802662729989454576745044282741602/28470942580001221460551733349533582334670664139372522141370801",
+          "E0_minus_3kappa_max": "3002094703252334230928611712651683797/533581695525635712942911610540100000000"
+        }
+      }
+    },
+    {
+      "test": "chiral_flag_eigenvalues",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "J": [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "v_plus_unnormalized": [
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          ],
+          "v_minus_unnormalized": [
+            [
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "product_flag_half_weights",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "plus": [
+            "1/2",
+            "0"
+          ],
+          "minus": [
+            "1/2",
+            "0"
+          ]
+        }
+      }
+    },
+    {
+      "test": "six_by_six_sector_intertwining",
+      "result": {
+        "satisfied": true,
+        "detail": {
+          "H": [
+            [
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+              ]
+            ],
+            [
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "HR": [
+            [
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "30021107107032000000000000000/5335816955256357129429116105401",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+                "0"
+              ],
+              [
+                "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "test": "six_real_edge_signs",
+      "result": {
+        "satisfied": false,
+        "detail": {
+          "(2, 0)": "1/100000000",
+          "(3, 1)": "1/100000000",
+          "(4, 0)": "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+          "(5, 1)": "-18299308669488507201693501138731582334670664139372522141370801/2847094258000122146055173334953358233467066413937252214137080100000000",
+          "(4, 1)": "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801",
+          "(5, 0)": "-218112327394053857719560153805374980606481262980000000/28470942580001221460551733349533582334670664139372522141370801"
+        }
+      }
+    }
+  ],
+  "original_program_sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+  "_canonical_execution": {
+    "historical_original_limits": {
+      "cpu_soft_hard_seconds": [
+        20,
+        20
+      ],
+      "external_wall_seconds": 30
+    },
+    "actual_shared_process_limits": {
+      "cpu_soft_hard_seconds": [
+        30,
+        30
+      ],
+      "external_wall_cap_seconds": 45,
+      "wall_enforcement": "Required external canonical runner; this class does not implement wall timeout."
+    },
+    "original_program_sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+    "interpretation": "Historical source status/receipts remain historical. Current source qualification and actual execution are separate records; no independent science status is inferred."
+  }
+}

@@ -1,0 +1,255 @@
+"""Static transport checks only; never invokes either scientific body or main.
+
+All input files are a prelaunch-bound private finite fixture. The in-memory
+import is allowed only after an AST whitelist proves its top level inert.
+"""
+import ast
+import builtins
+import copy
+import gzip
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import resource
+import sys
+import time
+from urllib.parse import unquote, urlsplit
+
+ROOT = Path(sys.argv[1]).resolve()
+REPO = ROOT / 'fixture_repo'
+IN = REPO / 'outputs/real_control_autonomous_output_2026_10_17_inputs'
+PRIMARY = REPO / 'scripts/real_control_autonomous_output_2026_10_17.py'
+NOTE = REPO / 'docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+START = time.monotonic()
+CHECKS = []
+
+def digest(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+def demand(name, result, detail=None):
+    CHECKS.append({'name':name, 'satisfied':bool(result), 'detail':detail})
+    if not result:
+        raise AssertionError(name)
+
+def load(path):
+    return json.loads(path.read_text(encoding='utf-8'))
+
+def raw_row(row):
+    path=REPO / row['path']
+    stored=path.read_bytes()
+    assert len(stored)==row['bytes'] and digest(stored)==row['sha256']
+    assert row['compression'] in ('none','gzip')
+    raw=gzip.decompress(stored) if row['compression']=='gzip' else stored
+    assert len(raw)==row['raw_bytes'] and digest(raw)==row['raw_sha256']
+    return raw
+
+def dump(node):
+    return ast.dump(node,include_attributes=False)
+
+def node_at(root,path):
+    for key in path:
+        root=root[key] if isinstance(key,int) else getattr(root,key)
+    return root
+
+def assign_at(root,path,value):
+    parent=node_at(root,path[:-1]); key=path[-1]
+    if isinstance(key,int): parent[key]=value
+    else: setattr(parent,key,value)
+
+try:
+    pre=load(ROOT/'PRELAUNCH.json')
+    demand('CPU envelope installed by launcher', list(resource.getrlimit(resource.RLIMIT_CPU))==[30,30])
+    for row in pre['files']:
+        p=ROOT/row['path']; b=p.read_bytes()
+        assert len(b)==row['bytes'] and digest(b)==row['sha256'], row['path']
+    demand('entire finite fixture and executed source match prelaunch', True, len(pre['files']))
+    source=load(IN/'SOURCE_MAP.json')
+    labels={r['source_label']:r for r in source['files']}
+    demand('source labels unique and expected',len(labels)==len(source['files'])==229)
+    for row in source['files']:
+        raw_row(row)
+    demand('all stored/raw source labels preserved', True, 229)
+    for scope in source['scopes']:
+        freeze=labels[scope['scope']+'/FREEZE.json']
+        demand('source freeze '+scope['scope'], freeze['raw_sha256']==scope['freeze_sha256'])
+    tree=ast.parse(PRIMARY.read_text())
+    compile(tree,str(PRIMARY),'exec')
+    definitions={x.name:x for x in tree.body if isinstance(x,(ast.FunctionDef,ast.ClassDef))}
+    guard=copy.deepcopy(definitions['main'].body[0])
+    demand('canonical main explicitly refuses optimized Python',isinstance(guard,ast.If) and ast.unparse(guard.test)=='not __debug__' and len(guard.body)==1 and isinstance(guard.body[0],ast.Raise))
+    optimized_refusal=False
+    try:
+        # Execute the isolated refusal statement only, never main or a body.
+        exec(compile(ast.Module(body=[guard],type_ignores=[]),'<isolated refusal>','exec',optimize=1),{})
+    except RuntimeError:
+        optimized_refusal=True
+    demand('optimized refusal remains active',optimized_refusal)
+    declared=next(ast.literal_eval(x.value) for x in tree.body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets))
+    manifest=load(IN/'ARTIFACT_MANIFEST.json')
+    paths={x['path'] for x in manifest['files']}
+    demand('literal finite closure',len(declared)==len(set(declared))==109 and paths|{'outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json'}==set(declared))
+    demand('every source destination declared',all(x['path'] in declared for x in source['files']))
+    for row in manifest['files']:
+        b=(REPO/row['path']).read_bytes()
+        assert len(b)==row['bytes'] and digest(b)==row['sha256']
+    demand('manifest stored hashes and lengths match',True,len(manifest['files']))
+    ledger=load(IN/'TRANSPORT_EDIT_LEDGER.json')
+    statement_count=event_count=0
+    for entry in ledger['source_to_function']:
+        original=ast.parse(raw_row(entry['source']).decode())
+        demand(entry['role']+' original AST pin',digest(dump(original).encode())==entry['original_module_ast_sha256'])
+        fn=definitions[entry['function']]
+        # The function begins with the original module's exact docstring;
+        # it is a transported original statement, not adapter metadata.
+        adapted=ast.Module(body=copy.deepcopy(fn.body),type_ignores=[])
+        demand(entry['role']+' adapted AST pin',digest(dump(adapted).encode())==entry['adapted_body_ast_sha256'])
+        for row in entry['statements']:
+            assert digest(dump(node_at(original,row['source_ast_path'])).encode())==row['source_ast_sha256']
+            if row['adapted_ast_path'] is not None:
+                assert digest(dump(node_at(adapted,row['adapted_ast_path'])).encode())==row['adapted_ast_sha256']
+            else:
+                assert row['adapted_ast_sha256'] is None and row['status']=='contains_or_is_explicit_transport_edit'
+        statement_count+=len(entry['statements'])
+        for tail in reversed(entry['added_tail_statements']):
+            expected=ast.parse(tail).body
+            assert dump(ast.Module(body=adapted.body[-len(expected):],type_ignores=[]))==dump(ast.Module(body=expected,type_ignores=[]))
+            del adapted.body[-len(expected):]
+        for event in reversed(entry['events']):
+            path=event['source_ast_path']
+            if event['kind']=='statement':
+                replacement=ast.parse(event['replacement_source']).body
+                parent=node_at(adapted,path[:-1]); idx=path[-1]
+                assert isinstance(parent,list) and isinstance(idx,int)
+                assert dump(ast.Module(body=parent[idx:idx+len(replacement)],type_ignores=[]))==dump(ast.Module(body=replacement,type_ignores=[])),event
+                old=copy.deepcopy(node_at(original,path))
+                assert dump(old)==event['original_ast']
+                parent[idx:idx+len(replacement)]=[old]
+            else:
+                replacement=ast.parse(event['replacement_source'],mode='eval').body
+                assert dump(node_at(adapted,path))==dump(replacement),event
+                old=copy.deepcopy(node_at(original,path))
+                assert dump(old)==event['original_ast']
+                assign_at(adapted,path,old)
+        event_count+=len(entry['events'])
+        demand(entry['role']+' exact original reconstruction',dump(adapted)==dump(original))
+    demand('complete statement and adaptation accounting',statement_count==448 and event_count==16,{'statements':statement_count,'events':event_count,'added_after_finally_returns':1})
+    real=definitions['run_realifier_author']
+    demand('failure is not suppressed by finally return',all(not any(isinstance(x,ast.Return) for y in t.finalbody for x in ast.walk(y)) for t in ast.walk(real) if isinstance(t,ast.Try)) and isinstance(real.body[-1],ast.Return))
+    table=load(IN/'INPUT_MAP.json')
+    for role,roledata in table['roles'].items():
+        for logical,row in roledata['aliases'].items():
+            assert row['path'] in declared
+            raw_row(row)
+    nested=load(REPO/table['roles']['realifier_author']['aliases']['SOURCE_MANIFEST.json']['path'])
+    aliases=table['roles']['realifier_author']['aliases']
+    demand('all dynamic snapshot labels finite and pinned',all(e['snapshot'] in aliases and aliases[e['snapshot']]['raw_sha256']==e['sha256'] for e in nested['entries']),len(nested['entries']))
+    demand('scientific bodies have no historic absolute fallback',all(not isinstance(x,ast.Name) or not isinstance(x.ctx,ast.Load) or x.id not in ('D','ROOT','args') for fn in (real,definitions['run_preparation_author']) for x in ast.walk(fn)))
+    # Top-level safety whitelist then inert import. No call of either body,
+    # main, SymPy or frozen scientific source is allowed.
+    approved_imports={'pathlib','gzip','hashlib','json','resource','time'}
+    for x in tree.body:
+        if isinstance(x,(ast.Import,ast.ImportFrom)):
+            names={a.name.split('.')[0] for a in x.names} if isinstance(x,ast.Import) else {x.module}
+            assert names<=approved_imports
+        elif isinstance(x,ast.Assign):
+            assert all(isinstance(t,ast.Name) and t.id in {'AUDIT_TIMEOUT_SEC','REPO','INPUT_ROOT','AUDIT_INPUT_PATHS'} for t in x.targets)
+        elif isinstance(x,(ast.FunctionDef,ast.ClassDef)):
+            assert not x.decorator_list
+        elif isinstance(x,ast.Expr): assert isinstance(x.value,ast.Constant) and isinstance(x.value.value,str)
+        elif isinstance(x,ast.If):
+            assert ast.unparse(x.test)=="__name__ == '__main__'"
+            assert len(x.body)==1 and ast.unparse(x.body[0])=='main()'
+        else: raise AssertionError(type(x).__name__)
+    namespace={'__name__':'transport_inert_fixture','__file__':str(PRIMARY)}
+    old_import=builtins.__import__
+    imports=[]
+    def restricted_import(name,*args,**kwargs):
+        imports.append(name)
+        assert name.split('.')[0] in approved_imports,name
+        return old_import(name,*args,**kwargs)
+    old_limit=resource.setrlimit
+    def forbidden_limit(*args,**kwargs): raise AssertionError('import attempted resource mutation')
+    builtins.__import__=restricted_import
+    resource.setrlimit=forbidden_limit
+    try: exec(compile(tree,str(PRIMARY),'exec'),namespace)
+    finally:
+        builtins.__import__=old_import
+        resource.setrlimit=old_limit
+    demand('inert import excludes scientific dependencies and calls',set(imports)<=approved_imports and 'sympy' not in sys.modules,imports)
+    namespace['verify_artifacts']()
+    resolver=namespace['FrozenInputs'](REPO,IN/'INPUT_MAP.json')
+    for role,roledata in table['roles'].items():
+        for logical,row in roledata['aliases'].items():
+            assert resolver.read_bytes(role,logical)==raw_row(row)
+    demand('finite real aliases resolved without scientific execution',True,len(resolver.reads))
+    # Explicit small resolver fixtures; these contain bytes, not science.
+    FROOT=ROOT/'resolver_fixtures'; FROOT.mkdir()
+    raw=b'finite fixture\n'; (FROOT/'valid.txt').write_bytes(raw)
+    packed=gzip.compress(raw,mtime=0);(FROOT/'valid.gz').write_bytes(packed)
+    def row_for(name,b,rawb=raw,compression='none'):
+        return {'path':name,'bytes':len(b),'sha256':digest(b),'compression':compression,'raw_bytes':len(rawb),'raw_sha256':digest(rawb)}
+    good=row_for('valid.txt',raw); gz=row_for('valid.gz',packed,compression='gzip')
+    fixture_table=FROOT/'table.json';fixture_table.write_text(json.dumps({'roles':{'fixture':{'aliases':{'x':good}}}}))
+    R=namespace['FrozenInputs'](FROOT,fixture_table)
+    fixture_results=[]
+    def trial(name,row=None,role='fixture',logical='x',accept=False):
+        R.table={'roles':{'fixture':{'aliases':{'x':row or good}}}}
+        error=None
+        try:
+            result=R.read_bytes(role,logical)
+            assert result==raw
+        except Exception as exc: error=type(exc).__name__
+        passed=(error is None)==accept
+        fixture_results.append({'name':name,'expected':'accept' if accept else 'reject','exception':error,'satisfied':passed})
+        assert passed,(name,error)
+    trial('valid plain',accept=True);trial('valid gzip',gz,accept=True)
+    trial('unknown role',role='unknown');trial('unknown alias',logical='unknown')
+    for name,path in [('absolute',str(FROOT/'valid.txt')),('parent traversal','../valid.txt'),('dot component','./valid.txt'),('double separator','a//b'),('missing','missing.txt')]:trial(name,{**good,'path':path})
+    (FROOT/'leaf').symlink_to('valid.txt');trial('leaf symlink',{**good,'path':'leaf'})
+    (FROOT/'real').mkdir();(FROOT/'real/v.txt').write_bytes(raw);(FROOT/'parent').symlink_to('real',target_is_directory=True)
+    trial('parent symlink',{**good,'path':'parent/v.txt'})
+    (ROOT/'outside.txt').write_bytes(raw);(FROOT/'outside').symlink_to('../outside.txt')
+    trial('escape symlink',{**good,'path':'outside'})
+    for name,change in [('stored size',{'bytes':len(raw)+1}),('stored digest',{'sha256':'0'*64}),('raw size',{'raw_bytes':len(raw)+1}),('raw digest',{'raw_sha256':'0'*64}),('unsupported compression',{'compression':'zip'}),('negative raw size',{'raw_bytes':-1}),('oversized declared raw',{'raw_bytes':16777217}),('invalid gzip',{'compression':'gzip'})]:trial(name,{**good,**change})
+    demand('resolver rejects malformed finite mappings',all(x['satisfied'] for x in fixture_results) and len(fixture_results)<=24,fixture_results)
+    bodymap=load(IN/'PROOF_BODY_MAP.json'); note=NOTE.read_bytes()
+    for body in bodymap['bodies']:
+        original=raw_row(body['original']); changed=original.decode()
+        for edit in reversed(body['link_target_edits']):
+            a,b=edit['original_start'],edit['original_end']
+            assert changed[a:b]==edit['original_target']
+            changed=changed[:a]+edit['replacement_target']+changed[b:]
+        embedded=note[body['note_byte_start_inclusive']:body['note_byte_end_exclusive']]
+        assert embedded==changed.encode() and digest(embedded)==body['embedded_sha256']
+    demand('both complete proofs reconstructed by three target edits only',sum(len(b['link_target_edits']) for b in bodymap['bodies'])==3)
+    links=[]
+    for target in re.findall(r'\]\(([^\n)]+)\)',note.decode()):
+        target=target.strip('<>'); split=urlsplit(target)
+        if split.scheme or target.startswith('#'): continue
+        file=unquote(split.path); resolved=(NOTE.parent/file).resolve()
+        resolved.relative_to(REPO)
+        assert resolved.is_file(),target
+        links.append(target)
+    demand('all local note Markdown destinations exist',True,links)
+    failed=raw_row(labels['real_coupling_preparation_candidate/run01/stderr.txt']).decode()
+    demand('original failed import preserved', 'ModuleNotFoundError' in failed and 'sympy' in failed)
+    p1=labels['real_coupling_preparation_candidate/run01/executed_source.py']
+    p2=labels['real_coupling_preparation_candidate/run02/executed_source.py']
+    demand('original retry did not alter mathematics',p1['raw_sha256']==p2['raw_sha256']==labels['real_coupling_preparation_candidate/check_preparation.py']['raw_sha256'])
+    demand('root budget qualification explicit', 'budget arithmetic' in NOTE.read_text() and 'not an independent validation of the ramp theorem' in NOTE.read_text())
+    overlay=load(ROOT/'OVERLAY_FILES.json')
+    trailing=[]
+    for path in overlay:
+        b=(REPO/path).read_bytes()
+        if path.endswith('.gz'): continue
+        try: text=b.decode('utf-8')
+        except UnicodeDecodeError: continue
+        trailing.extend((path,i) for i,line in enumerate(text.splitlines(),1) if line.endswith((' ','\t')))
+    demand('new overlay normal text contains no trailing whitespace',not trailing,trailing)
+    report={'status':'static transport checks satisfied','scientific_executions':0,'mutation_executions':0,'checks':CHECKS,'limits':{'CPU_seconds':list(resource.getrlimit(resource.RLIMIT_CPU)),'external_wall_seconds':45,'matrix_dimension':0,'resolver_fixtures':len(fixture_results),'runtime_binding':'partial selected interpreter/stdlib bytes, not full OS','memory_limit':None},'elapsed_seconds':time.monotonic()-START}
+    print(json.dumps(report,indent=2),flush=True)
+except BaseException as exc:
+    print(json.dumps({'status':'static check failed','checks':CHECKS,'failure':repr(exc),'scientific_executions':0,'elapsed_seconds':time.monotonic()-START},indent=2),flush=True)
+    raise

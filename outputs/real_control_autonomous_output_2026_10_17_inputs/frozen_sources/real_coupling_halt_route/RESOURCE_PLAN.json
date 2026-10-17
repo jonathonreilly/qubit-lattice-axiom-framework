@@ -1,0 +1,25 @@
+{
+  "task": "Exact finite corroboration of the two-rail realification worked failure",
+  "predeclared_before_scientific_execution": true,
+  "initial_plan_preserved": "PLAN.md",
+  "cpu_soft_seconds": 20,
+  "cpu_hard_seconds": 20,
+  "external_wall_seconds": 30,
+  "maximum_attempts": 2,
+  "maximum_matrix_dimension": 6,
+  "maximum_graph_vertices": 64,
+  "arithmetic": "Python standard-library exact Fraction arithmetic, including rational complex pairs; no floats used to accept a claim",
+  "tests": [
+    "Exact rational central sine/cosine and positive onsite margin",
+    "Realification sector identities and opposite cross-edge sign discriminator",
+    "Positive two-qubit hopping-cell polynomial identity and full occupation/scalar coefficient sum",
+    "Explicit finite cubic-lattice graph, all installed nearest-neighbor supports and first-omitted-site distance",
+    "Literal K and W, conjugate flag weights, common-output separation and complete late-time rational budgets",
+    "Exact positive incident loads, seed moments and declared finite-buffer comparison"
+  ],
+  "excluded": ["inherited checker replay", "optimizer", "momentum or coupling grid", "quadrature", "time evolution", "large clock matrices", "independent-review claim"],
+  "requested_thread_environment": {"OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"},
+  "os_memory_cap": null,
+  "wall_scope": "scientific subprocess only; source capture and post-run bookkeeping separately recorded",
+  "deadline_utc": "2026-10-17T23:07:27Z"
+}

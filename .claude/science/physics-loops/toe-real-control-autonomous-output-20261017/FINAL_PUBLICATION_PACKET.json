@@ -1,0 +1,41 @@
+{
+  "finalized_utc": "2026-10-17T05:46:26.225713+00:00",
+  "parent_head": "67108090f68ed9b2bc62eee23701b2d3d71dce4a",
+  "focused_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-real-control-autonomous-output-20261017/PUBLISH_CHECKS.json",
+    "bytes": 22505,
+    "sha256": "ff516ee3768ac458a2941daa2c88e4948ed07d7bdbf9f95397bd716ba248ae53"
+  },
+  "source_body_primary_or_input_changes_after_execution": [],
+  "publication_only_delta": [
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/EXECUTION_STATUS.md",
+      "bytes": 3307,
+      "sha256": "42aad485e8911c317793a892b8b39e3f79e8f9497a54499d9a05f7a6f56b0a37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/CLUSTER_CAP_EVALUATION.md",
+      "bytes": 2215,
+      "sha256": "36e801b8ff850c77c2c930f487da61bebcd1775d9f5370bcb6565316a61f2c67"
+    }
+  ],
+  "delta_checks": {
+    "vocabulary_violating_files": 0,
+    "new_link_targets": [
+      "PUBLISH_CHECKS.json",
+      "FINAL_PUBLICATION_PACKET.json"
+    ]
+  },
+  "cache_status": "fresh",
+  "final_source_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/FINAL_UPSTREAM_REFRESH.json",
+    "bytes": 7346,
+    "sha256": "01b10d2c1cdf3e55cc3699156a52265aa739aea76571efe8b5976963d6420eba"
+  },
+  "remaining_obligations": [
+    "Remote regular PR creation and verification",
+    "Ancestor inclusion, exact integrated-current-main landing checks and retained audit",
+    "Native supply, calibration/noise, practical resources and complete capture/reset/reuse"
+  ],
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,78 @@
+{
+  "status": "static check failed",
+  "checks": [
+    {
+      "name": "CPU envelope installed by launcher",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "entire finite fixture and executed source match prelaunch",
+      "satisfied": true,
+      "detail": 121
+    },
+    {
+      "name": "source labels unique and expected",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "all stored/raw source labels preserved",
+      "satisfied": true,
+      "detail": 229
+    },
+    {
+      "name": "source freeze real_coupling_halt_route",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_route_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_preparation_candidate",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_coupling_preparation_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "source freeze real_control_root_review",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "literal finite closure",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "every source destination declared",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "manifest stored hashes and lengths match",
+      "satisfied": true,
+      "detail": 108
+    },
+    {
+      "name": "realifier_author original AST pin",
+      "satisfied": true,
+      "detail": null
+    },
+    {
+      "name": "realifier_author adapted AST pin",
+      "satisfied": false,
+      "detail": null
+    }
+  ],
+  "failure": "AssertionError('realifier_author adapted AST pin')",
+  "scientific_executions": 0,
+  "elapsed_seconds": 0.052300207782536745
+}

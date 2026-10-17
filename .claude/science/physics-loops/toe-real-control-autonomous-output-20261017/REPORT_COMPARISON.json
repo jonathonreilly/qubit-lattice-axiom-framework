@@ -1,0 +1,151 @@
+{
+  "compared_utc": "2026-10-17T05:45:37.012742+00:00",
+  "canonical_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_control_autonomous_output_2026_10_17.json",
+    "bytes": 88773,
+    "sha256": "28fab12f2ba9874a296f62cd7ed0afb7b956c8ab8af55d263b34f67b02d1c401"
+  },
+  "canonical_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_02/EXECUTION.json",
+    "bytes": 2519,
+    "sha256": "8c11fae5f87145f65ca71a85aa5f41da9b00f47fcad25e72131ec669b7d7c069"
+  },
+  "scientific_payload_equality": true,
+  "scientific_discrepancies": [],
+  "bodies": [
+    {
+      "role": "realifier_author",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/run01/stdout.json",
+        "bytes": 38604,
+        "sha256": "e7e6ce5349dd0cd6aa0c41164c3b38f8b802e3dc5df3379ee2b10e300719c2a6"
+      },
+      "scientific_payload_equal": true,
+      "enumerated_metadata_differences": [
+        {
+          "field": "records.historical_prelaunch",
+          "removed_exact_labels": [
+            "prelaunch:checker",
+            "prelaunch:executed_copy",
+            "prelaunch:launcher",
+            "prelaunch:original_plan",
+            "prelaunch:resource_plan",
+            "prelaunch:runtime:_decimal",
+            "prelaunch:runtime:collections",
+            "prelaunch:runtime:decimal",
+            "prelaunch:runtime:fractions",
+            "prelaunch:runtime:interpreter",
+            "prelaunch:runtime:json",
+            "prelaunch:runtime:numbers",
+            "prelaunch:scalar_inputs",
+            "prelaunch:snapshot:inputs/family.md",
+            "prelaunch:snapshot:inputs/family_acceptance.json",
+            "prelaunch:snapshot:inputs/family_qualification.md",
+            "prelaunch:snapshot:inputs/family_wrapper.md",
+            "prelaunch:snapshot:inputs/generic_v2.md",
+            "prelaunch:snapshot:inputs/installed.md",
+            "prelaunch:snapshot:inputs/interval.md",
+            "prelaunch:snapshot:inputs/local_emitter.md",
+            "prelaunch:snapshot:inputs/moment.md",
+            "prelaunch:snapshot:inputs/no_go_discipline.md",
+            "prelaunch:snapshot:inputs/primitive_registry.json",
+            "prelaunch:snapshot:inputs/realized_state_primitive.md",
+            "prelaunch:snapshot:inputs/reflection_finite.md",
+            "prelaunch:snapshot:inputs/reflection_v2.md",
+            "prelaunch:snapshot:inputs/reflection_wrapper.md",
+            "prelaunch:snapshot:inputs/workflow.md",
+            "prelaunch:snapshot_preparer",
+            "prelaunch:source_manifest"
+          ],
+          "reason": "Reviewed removal of original path-binding loop. Current bindings verified in actual prelaunch, not relabeled old records."
+        },
+        {
+          "field": "source/prelaunch identities",
+          "actual_binding": "See separate root-owned actual canonical execution record; historical receipts are not this run."
+        },
+        {
+          "field": "program_wall_seconds",
+          "original": 0.006094916723668575,
+          "actual": 0.00758020905777812
+        }
+      ],
+      "new_metadata": {
+        "historical_original_limits": {
+          "cpu_soft_hard_seconds": [
+            20,
+            20
+          ],
+          "external_wall_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            30,
+            30
+          ],
+          "external_wall_cap_seconds": 45,
+          "wall_enforcement": "Required external canonical runner; this class does not implement wall timeout."
+        },
+        "original_program_sha256": "7c0df32b052778776b05c41e0f6674898fa3c5749c98e46c415cffaa85907fc0",
+        "interpretation": "Historical source status/receipts remain historical. Current source qualification and actual execution are separate records; no independent science status is inferred."
+      }
+    },
+    {
+      "role": "preparation_author",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/run02/stdout.json",
+        "bytes": 15298,
+        "sha256": "6d61182e1ee3e5fc9b5fbe6c774e487589092c390e9e40a692461ee66fc06646"
+      },
+      "scientific_payload_equal": true,
+      "enumerated_metadata_differences": [
+        {
+          "field": "historical_check_interpretation",
+          "added_coverage_label": {
+            "ramp_error_and_complete_trace_ceiling": "Original first comparison is budget arithmetic only, not independent ramp validation. Gram/Duhamel proof and substantive Gram/profile identities supply the ramp support. Mathematical clause and check count are unchanged."
+          }
+        },
+        {
+          "field": "limits.cpu_soft_hard_seconds",
+          "original": [
+            20,
+            20
+          ],
+          "actual": [
+            30,
+            30
+          ]
+        },
+        {
+          "field": "limits.external_wall_seconds",
+          "original": 30,
+          "actual": 45
+        },
+        {
+          "field": "runtime.elapsed_seconds_after_import",
+          "original": 0.24057466676458716,
+          "actual": 0.23245483310893178
+        }
+      ],
+      "new_metadata": {
+        "historical_original_limits": {
+          "cpu_soft_hard_seconds": [
+            20,
+            20
+          ],
+          "external_wall_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            30,
+            30
+          ],
+          "external_wall_cap_seconds": 45,
+          "wall_enforcement": "Required external canonical runner; this class does not implement wall timeout."
+        },
+        "original_program_sha256": "70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0",
+        "interpretation": "Historical source status/receipts remain historical. Current source qualification and actual execution are separate records; no independent science status is inferred."
+      }
+    }
+  ],
+  "scope": "Complete exact author-report payloads after only explicit identity/cap/timing/coverage fields and31 old-run binding labels. Reproduction only; no new theorem, inherited scattering or independent ramp proof."
+}

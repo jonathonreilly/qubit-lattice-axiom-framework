@@ -1,0 +1,85 @@
+{
+  "changes": [
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8.gz",
+      "raw_sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade.gz",
+      "raw_sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d.gz",
+      "raw_sha256": "9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23.gz",
+      "raw_sha256": "37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8.gz",
+      "raw_sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade.gz",
+      "raw_sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d.gz",
+      "raw_sha256": "9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23.gz",
+      "raw_sha256": "37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8.gz",
+      "raw_sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade.gz",
+      "raw_sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d.gz",
+      "raw_sha256": "9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23.gz",
+      "raw_sha256": "37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8.gz",
+      "raw_sha256": "2360cdbe3f57b100bec6a9cfc7e9792ab38af683f24d9e0747dc07b546a2f3b8"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade.gz",
+      "raw_sha256": "0250e22141d72c51c03c19db10da5e5b5bb1aab27f776b82a16218c53da54ade"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d.gz",
+      "raw_sha256": "9cd46ea04955a4fc9805a3f6cbe0684211e7c4a87c614a7e6f22d86829a4de0d"
+    },
+    {
+      "old_path": "outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_route_review/REVIEW_HEADER.md.txt",
+      "new_path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/pre_repair_storage/37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23.gz",
+      "raw_sha256": "37a66045784b4b0cfada5996e2781dcb155dd6ad0b2e600a8de4455a47b57a23"
+    }
+  ],
+  "raw_identity_changes": []
+}

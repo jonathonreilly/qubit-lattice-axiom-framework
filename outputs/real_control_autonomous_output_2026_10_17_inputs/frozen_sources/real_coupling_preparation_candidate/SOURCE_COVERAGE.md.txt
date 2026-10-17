@@ -1,0 +1,47 @@
+# Source coverage and limits
+
+The complete new CANDIDATE.md, checker and both launchers were authored and
+read in this task. The complete successful stdout, first failure traceback
+and complete actual receipt fields relevant to limits, inputs, runtime,
+streams and chronology were inspected. All 26 successful prelaunch input
+bindings and four runtime bindings were verified against after-run and
+current content/generation metadata. Hash checks do not mean that all
+transitive scientific arguments were independently re-reviewed.
+
+The new realifier ROUTE and its FREEZE were read completely before the
+construction. Its literal block definitions, geometry, rail convention,
+scalar and load tables were re-read while writing the candidate. Its
+checker and calculation outputs were not read or imported. Its source
+manifest was inspected for identities and role, not treated as a proof.
+Its review status remains pending in this candidate.
+
+The exact coupling-family argument was authored/read in earlier work in
+this same agent history, with substantial source exposure. The exact
+resonance-family argument and qualification were read during the preceding
+coherent thermal/resonance packaging task; unchanged copies are pinned
+here. The common-output, exact phase, finite-horizon and scalar definitions
+needed for the new interface were re-read in this task. Their acceptance
+records are status/evidence dependencies, not an independent proof of the
+new realifier/preparation interface. The prior product preparation is this
+same author's frozen work and its root qualification; it supplies context
+for the complement/supported-release technique. It is not replayed and its
+thermal conclusions are not claimed for this new device.
+
+The exact_parameters object of parameters.json was extracted and inspected
+for all new local calculations. Its large historical central-root and packet
+evidence fields are preserved intact but are not claimed as newly reviewed
+or reproduced. The needed runtime conclusions come from the pinned family
+and resonance arguments, not from a new reading of those historical fields.
+
+The physics-loop skill was read fully for this task. The unchanged current
+workflow and discovery/claim-status/delivery instructions were already read
+in the immediately preceding coherent repository work and reused by their
+exact recorded identities. The owner's bounded local assignment controls
+the task: it does not start a campaign, publication workflow or audit.
+No other skill process was launched merely from appearing in source text.
+
+No root private pulse construction was read, and the forbidden
+real_phase_preparation_idea directory was not accessed. No root response
+or later independent verdict is anticipated. This route has the same
+inherited model/effort as its task; no override, subagent or other-chat
+communication was used. The source exposure is explicitly nonblind.

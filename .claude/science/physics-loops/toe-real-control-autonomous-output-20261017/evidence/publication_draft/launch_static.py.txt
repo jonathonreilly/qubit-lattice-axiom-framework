@@ -1,0 +1,92 @@
+"""Build finite read-only-source fixture, fsync prelaunch, run static checker only."""
+import ast
+from datetime import datetime, timezone
+import gzip
+import hashlib
+import json
+import os
+from pathlib import Path
+import resource
+import shutil
+import subprocess
+import sys
+import time
+import zlib
+
+D=Path(__file__).resolve().parent
+W=D.parent.parent/'correlation_worktree'
+C=D/'canonical'
+I='outputs/real_control_autonomous_output_2026_10_17_inputs'
+P='scripts/real_control_autonomous_output_2026_10_17.py'
+
+def sha(b):return hashlib.sha256(b).hexdigest()
+def now():return datetime.now(timezone.utc).isoformat()
+def ident(path):
+    b=path.read_bytes();s=path.stat()
+    return {'bytes':len(b),'sha256':sha(b),'device':s.st_dev,'inode':s.st_ino,'mtime_ns':s.st_mtime_ns}
+def store(path,b):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    with path.open('wb') as f:
+        f.write(b);f.flush();os.fsync(f.fileno())
+def storejson(path,x):store(path,(json.dumps(x,indent=2)+'\n').encode())
+def flushdir(path):
+    fd=os.open(path,os.O_RDONLY)
+    try:os.fsync(fd)
+    finally:os.close(fd)
+
+attempt=int(sys.argv[1]) if len(sys.argv)>1 else 1
+assert 1<=attempt<=3
+R=D/f'static_{attempt:02d}'
+R.mkdir(exist_ok=False)
+tree=ast.parse((C/P).read_text())
+declared=next(ast.literal_eval(x.value) for x in tree.body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets))
+overlay=sorted(p.relative_to(C).as_posix() for p in C.rglob('*') if p.is_file())
+required=sorted(set(declared)|set(overlay)|{P})
+transport=[]
+for name in required:
+    source=C/name if (C/name).is_file() else W/name
+    before=ident(source)
+    store(R/'fixture_repo'/name,source.read_bytes())
+    assert before==ident(source)
+    transport.append({'source':str(source),'fixture':'fixture_repo/'+name,**before})
+store(R/'executed_source.py',(D/'check_transport.py').read_bytes())
+store(R/'launcher_snapshot.py',Path(__file__).read_bytes())
+store(R/'PLAN.json',(D/'PLAN.json').read_bytes())
+storejson(R/'OVERLAY_FILES.json',overlay)
+storejson(R/'SOURCE_TRANSPORT.json',transport)
+files=[]
+for p in sorted(R.rglob('*')):
+    if p.is_file():files.append({'path':p.relative_to(R).as_posix(),**ident(p)})
+assert len(files)<=2048 and sum(x['bytes'] for x in files)<=134217728
+runtimepaths={Path(sys.executable).resolve(),Path(ast.__file__).resolve(),Path(gzip.__file__).resolve(),Path(json.__file__).resolve(),Path(resource.__file__).resolve(),Path(zlib.__file__).resolve(),Path(subprocess.__file__).resolve()}
+runtime=[{'path':str(p),**ident(p)} for p in sorted(runtimepaths)]
+origin={'path':str(Path(__file__).resolve()),**ident(Path(__file__).resolve())}
+command=[sys.executable,'-I','-B',str(R/'executed_source.py'),str(R)]
+threadenv={k:'1' for k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS']}
+pre={'stage':'serialized and fsynced before Popen; no scientific body execution authorized','captured_utc':now(),'command':command,'cwd':str(R),'files':files,'runtime_bindings':runtime,'executed_launcher_origin':origin,'runtime_versions':{'python':sys.version,'executable':sys.executable},'resource_caps':{'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':45,'max_files':2048,'max_input_bytes':134217728,'resolver_fixtures':24,'matrix_dimension':0,'OS_memory_cap':None},'requested_thread_environment':threadenv,'runtime_pin_limit':'Selected interpreter and stdlib/extension files only; not a full dynamic-library/OS/environment capture. Thread count requested, not measured.','flush_protocol':'Each input/source file flush+fsync, PRELAUNCH flush+fsync, attempt directory fsync, then prelaunch identity captured before subprocess starts.'}
+storejson(R/'PRELAUNCH.json',pre);flushdir(R)
+pre_identity=ident(R/'PRELAUNCH.json')
+spawn_time=now();started=time.monotonic()
+def setcaps():resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+env={**os.environ,**threadenv,'PYTHONDONTWRITEBYTECODE':'1'}
+timeout=False
+with (R/'stdout.json').open('wb') as out,(R/'stderr.txt').open('wb') as err:
+    child=subprocess.Popen(command,cwd=R,env=env,stdout=out,stderr=err,preexec_fn=setcaps)
+    try:code=child.wait(timeout=45)
+    except subprocess.TimeoutExpired:
+        timeout=True;child.kill();code=child.wait()
+    for f in (out,err):f.flush();os.fsync(f.fileno())
+ended=now();elapsed=time.monotonic()-started
+changes=[]
+for row in files:
+    actual=ident(R/row['path'])
+    if any(actual[k]!=row[k] for k in actual):changes.append({'path':row['path'],'after':actual})
+runtimechanges=[]
+for row in runtime+[origin]:
+    actual=ident(Path(row['path']))
+    if any(actual[k]!=row[k] for k in actual):runtimechanges.append({'path':row['path'],'after':actual})
+pre_unchanged=ident(R/'PRELAUNCH.json')==pre_identity
+receipt={'started_before_Popen_utc':spawn_time,'completed_utc':ended,'command':command,'returncode':code,'timeout':timeout,'elapsed_wall_seconds':elapsed,'prelaunch_identity_captured_before_Popen':pre_identity,'prelaunch_unchanged_after':pre_unchanged,'input_source_mutations':changes,'runtime_launcher_mutations':runtimechanges,'stdout':ident(R/'stdout.json'),'stderr':ident(R/'stderr.txt'),'caps':pre['resource_caps'],'scientific_executions':0,'mutation_executions':0,'limitation':'Static AST/hash/inert-import/resolver checks only. Does not execute either author body or canonical main. Top-level executed-source hash is bound before launch.'}
+storejson(R/'RECEIPT.json',receipt);flushdir(R)
+print(json.dumps({'attempt':attempt,'returncode':code,'elapsed_wall_seconds':elapsed,'receipt':str(R/'RECEIPT.json'),'prelaunch_unchanged_after':pre_unchanged,'input_changes':len(changes),'runtime_changes':len(runtimechanges)},indent=2))
+sys.exit(0 if code==0 and not timeout and not changes and not runtimechanges and pre_unchanged else 1)

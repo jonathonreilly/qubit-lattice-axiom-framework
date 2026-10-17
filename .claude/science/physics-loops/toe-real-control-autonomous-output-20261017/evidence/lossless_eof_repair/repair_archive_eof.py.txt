@@ -1,0 +1,46 @@
+"""Lossless storage repair for two historical headers; preserve first run."""
+from validate_packet import *
+from datetime import datetime,timezone
+archive('first_portable_records',Q,[Q/x for x in ['ROOT_PORTABILITY_ACCEPTANCE.json','REPORT_COMPARISON.json','ROOT_MUTATION_REVIEW.json','EXECUTION_STATUS.md']])
+archive('first_focused_failure',N/'runs/real_control_focused_01')
+archive('first_focused_program',D,[D/'focused_verify.py'])
+old_accept=read(Q/'ROOT_PORTABILITY_ACCEPTANCE.json');changes=[]
+for role in ['real_coupling_preparation_review','real_coupling_route_review']:
+ old=F/'frozen_sources'/role/'REVIEW_HEADER.md.txt';raw=old.read_bytes();assert raw.endswith(b'\n\n')
+ new=old.with_suffix(old.suffix+'.gz');assert not new.exists();packed=gzip.compress(raw,mtime=0)
+ new.write_bytes(packed);assert gzip.decompress(new.read_bytes())==raw
+ changes.append({'old_path':str(old.relative_to(W)),'new_path':str(new.relative_to(W)),'raw':digest(raw),'stored':digest(packed)})
+ old.unlink()
+for name in ['SOURCE_MAP.json','INPUT_MAP.json']:
+ p=F/name;before=p.read_bytes();j=json.loads(before)
+ def edit(v):
+  if isinstance(v,dict):
+   for c in changes:
+    if v.get('path')==c['old_path']:
+     assert v['sha256']==c['raw']['sha256'] and v['bytes']==c['raw']['bytes']
+     v.update(path=c['new_path'],compression='gzip',**c['stored'])
+   for x in v.values():edit(x)
+  elif isinstance(v,list):
+   for x in v:edit(x)
+ edit(j);after=(json.dumps(j,indent=2)+'\n').encode()
+ if after!=before:p.write_bytes(after)
+primary=W/'scripts/real_control_autonomous_output_2026_10_17.py';s=primary.read_text()
+for c in changes:assert s.count(c['old_path'])==1;s=s.replace(c['old_path'],c['new_path'])
+primary.write_text(s)
+p=F/'ARTIFACT_MANIFEST.json';j=read(p)
+for row in j['files']:
+ for c in changes:
+  if row['path']==c['old_path']:row['path']=c['new_path']
+ row.update(digest((W/row['path']).read_bytes()))
+write(p,j)
+checks=validate_inputs()
+record={'repaired_utc':datetime.now(timezone.utc).isoformat(),'reason':'First focused git whitespace check found a terminal blank line in two exact historical review headers. Frozen draft checker covered trailing spaces/tabs, not git new-blank-line-at-EOF. Preserve raw bytes using lossless gzip; no source argument repair.',
+ 'changes':changes,'primary_edits':'Only two literal declared-input paths. Mathematical bodies, adapter functions and note unchanged. SOURCE_MAP stored-path/hash/compression and artifact manifest updated; no alias math input change.',
+ 'before_acceptance':old_accept,'after':checks,'first_canonical_and_faults':'Fully preserved; canonical01 was scientifically successful but input storage changed, so fresh canonical02 required. Six faults remain valid for unchanged mathematical bodies and their exact old-source/input captures; no unnecessary repetition.',
+ 'focused_failure':pin(N/'runs/real_control_focused_01/EXECUTION.json'),'scientific_runs_this_repair':0}
+write(D/'LOSSLESS_EOF_REPAIR.json',record);write(Q/'LOSSLESS_EOF_REPAIR.json',record)
+accept={**old_accept,**checks,'accepted_utc':datetime.now(timezone.utc).isoformat(),'post_draft_storage_repair':pin(Q/'LOSSLESS_EOF_REPAIR.json'),'original_draft_overlay_preserved':True,
+ 'pending':['Fresh canonical02/cache on final109input closure','Exact report comparison and focused recheck','Remote regular PR; integrated-current-main and retained audit later']}
+write(Q/'ROOT_PORTABILITY_ACCEPTANCE.json',accept);write(D/'ROOT_PORTABILITY_ACCEPTANCE_FINAL.json',accept)
+archive('lossless_eof_repair',D,[D/'repair_archive_eof.py',D/'LOSSLESS_EOF_REPAIR.json'])
+print(json.dumps({'two_headers_losslessly_compressed':changes,'final_primary':checks['primary'],'note_unchanged':checks['note'],'fresh_canonical_required':True},indent=2))

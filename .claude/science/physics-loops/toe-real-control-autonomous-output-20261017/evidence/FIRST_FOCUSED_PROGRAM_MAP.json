@@ -1,0 +1,16 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "focused_verify.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/first_focused_failure/executed_source.py.txt",
+      "bytes": 10691,
+      "sha256": "c12ae377e8054f6fe461858a59dc09dcedf6e4119123ab20253860f5b3eb8829",
+      "compression": "none",
+      "raw_bytes": 10691,
+      "raw_sha256": "c12ae377e8054f6fe461858a59dc09dcedf6e4119123ab20253860f5b3eb8829"
+    }
+  ],
+  "count": 1
+}

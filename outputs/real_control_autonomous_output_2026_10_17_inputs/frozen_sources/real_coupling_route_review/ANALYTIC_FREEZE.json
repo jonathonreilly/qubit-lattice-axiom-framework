@@ -1,0 +1,122 @@
+{
+  "files": [
+    {
+      "bytes": 2458,
+      "path": "PLAN.md",
+      "sha256": "bef8e6bbad084c8e6dd646bd2533012e240edc795222896898d12b5dfd62d62a"
+    },
+    {
+      "bytes": 18613,
+      "path": "PRECHECK_ANALYSIS.md",
+      "sha256": "304de79345438661d683b2acc700e2478f76fce18bea0b32732c92c9553d2828"
+    },
+    {
+      "bytes": 12200,
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "6e8bd84d5aee5de9771eb3a1c1ab26c32e291f60460a3e57b5f6fece6dd0c88f"
+    },
+    {
+      "bytes": 11001,
+      "path": "inputs/FREEZE.json",
+      "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+    },
+    {
+      "bytes": 32324,
+      "path": "inputs/ROUTE.md",
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+    },
+    {
+      "bytes": 8399,
+      "path": "inputs/SOURCE_MANIFEST.json",
+      "sha256": "717b918b6b67b736daaddf9f51bde2182ff6013b3a925395744a5881a2b1149a"
+    },
+    {
+      "bytes": 39464,
+      "path": "inputs/inherited/family.md",
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "bytes": 10085,
+      "path": "inputs/inherited/family_acceptance.json",
+      "sha256": "a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325"
+    },
+    {
+      "bytes": 2896,
+      "path": "inputs/inherited/family_qualification.md",
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    },
+    {
+      "bytes": 50396,
+      "path": "inputs/inherited/family_wrapper.md",
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "bytes": 27028,
+      "path": "inputs/inherited/generic_v2.md",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "bytes": 30796,
+      "path": "inputs/inherited/installed.md",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "bytes": 23457,
+      "path": "inputs/inherited/interval.md",
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "bytes": 27328,
+      "path": "inputs/inherited/local_emitter.md",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "bytes": 31244,
+      "path": "inputs/inherited/moment.md",
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "bytes": 16941,
+      "path": "inputs/inherited/no_go_discipline.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "bytes": 6416,
+      "path": "inputs/inherited/primitive_registry.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 5313,
+      "path": "inputs/inherited/realized_state_primitive.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "bytes": 4856,
+      "path": "inputs/inherited/reflection_finite.md",
+      "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+    },
+    {
+      "bytes": 13239,
+      "path": "inputs/inherited/reflection_v2.md",
+      "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36"
+    },
+    {
+      "bytes": 32779,
+      "path": "inputs/inherited/reflection_wrapper.md",
+      "sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11"
+    },
+    {
+      "bytes": 11788,
+      "path": "inputs/inherited/workflow.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 3332,
+      "path": "prepare_review.py",
+      "sha256": "8d37df5fd580f92fe9ba14966cae6f10e9392904787e6ee4f6493996ceae3e67"
+    }
+  ],
+  "frozen_utc": "2026-10-17T04:39:19.327088+00:00",
+  "scientific_runs": 0,
+  "stage": "Analytic result frozen before author checker/output inspection"
+}

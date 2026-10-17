@@ -1,0 +1,29 @@
+{
+  "label": "positive_pair_diagonal",
+  "started_utc": "2026-10-17T05:39:07.235359+00:00",
+  "finished_utc": "2026-10-17T05:39:07.317939+00:00",
+  "elapsed_seconds": 0.07727429177612066,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.056977,
+  "system_cpu_seconds": 0.015559999999999997,
+  "launcher_children_peak_rss_bytes_macos_so_far": 27213824,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/PRELAUNCH.json",
+    "bytes": 39257,
+    "sha256": "6c030de76d2125d036489b2254d2b830a5f9a7259f65bf5aef58dec53da347bb"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/stdout",
+    "bytes": 15155,
+    "sha256": "69084876239c5967ca3d2d1dddb19f0bb9599b0f6d3089853fcf478e06de936d"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/stderr",
+    "bytes": 1061,
+    "sha256": "4e3b8c54f5c5672bd71f6278c4e4150de516061e1d1a49e17b93d2bad38651c3"
+  }
+}

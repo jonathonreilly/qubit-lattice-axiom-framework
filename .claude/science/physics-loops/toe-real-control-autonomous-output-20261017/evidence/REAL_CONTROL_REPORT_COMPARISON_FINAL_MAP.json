@@ -1,0 +1,43 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_report_comparison_final",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison_final/EXECUTION.json.txt",
+      "bytes": 1479,
+      "sha256": "4736077c4daa28712936da71370057374e3ee319fbc842e8c17b6393bee27dd7",
+      "compression": "none",
+      "raw_bytes": 1479,
+      "raw_sha256": "4736077c4daa28712936da71370057374e3ee319fbc842e8c17b6393bee27dd7"
+    },
+    {
+      "original_path": "executed_source.py",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison_final/executed_source.py.txt",
+      "bytes": 4602,
+      "sha256": "89b99d723bf46eff89f047581c557d050a9cc7476b8aef2166ef728f39ab23da",
+      "compression": "none",
+      "raw_bytes": 4602,
+      "raw_sha256": "89b99d723bf46eff89f047581c557d050a9cc7476b8aef2166ef728f39ab23da"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_report_comparison/stdout.txt",
+      "bytes": 4372,
+      "sha256": "1c280594f363e62ec7de2fe070948a3b65339f84196ab085ee85e7e5ca9f639b",
+      "compression": "none",
+      "raw_bytes": 4372,
+      "raw_sha256": "1c280594f363e62ec7de2fe070948a3b65339f84196ab085ee85e7e5ca9f639b"
+    }
+  ],
+  "count": 4
+}

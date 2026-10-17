@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-10-17T05:17:45.385224+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/QUALIFICATION.md",
+      "bytes": 6618,
+      "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4",
+      "device": 16777231,
+      "inode": 518544480,
+      "mtime_ns": 1792214265383973584
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/PROVENANCE.json",
+      "bytes": 175465,
+      "sha256": "9100c2ffa04f0a91c268ff1aa2ac10598450193028558c1fddab411742474904",
+      "device": 16777231,
+      "inode": 518544479,
+      "mtime_ns": 1792214265383401998
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/ACCEPTANCE.json",
+      "bytes": 3752,
+      "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852",
+      "device": 16777231,
+      "inode": 518544481,
+      "mtime_ns": 1792214265385209381
+    }
+  ],
+  "source_disposition_only": true,
+  "scientific_runs": 0
+}

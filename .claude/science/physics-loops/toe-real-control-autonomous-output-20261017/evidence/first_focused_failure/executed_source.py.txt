@@ -1,0 +1,92 @@
+"""Focused milestone verification; do not rerun scientific calculations."""
+from validate_packet import *
+from datetime import datetime,timezone
+import subprocess,sys,re
+from urllib.parse import unquote
+sys.dont_write_bytecode=True
+sys.path[:0]=[str(W/'scripts'),str(W/'docs/audit/scripts')]
+import runner_cache,build_citation_graph,forensic_evidence_readiness,no_go_discipline_gate
+primary='scripts/real_control_autonomous_output_2026_10_17.py';note='docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+claim='real_control_autonomous_output_bounded_theorem_note_2026-10-17';output='outputs/real_control_autonomous_output_2026_10_17.json'
+cache='logs/runner-cache/real_control_autonomous_output_2026_10_17.txt';graph='docs/audit/data/citation_graph_manifest.json'
+checks=validate_inputs();archives=validate_archives()
+accept=read(Q/'ROOT_PORTABILITY_ACCEPTANCE.json');assert accept['primary']==checks['primary'] and accept['note']==checks['note']
+result=read(W/output);execution=read(D/'canonical_01/EXECUTION.json');pre=read(D/'canonical_01/PRELAUNCH.json')
+assert execution['status']=='ok' and execution['exit_code']==0 and execution['cache_status']=='fresh'
+assert execution['caps']=={'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':45}
+assert result['actual_shared_process_limits']['cpu_soft_hard_seconds']==[30,30] and result['actual_shared_process_limits']['external_wall_cap_seconds']==45
+assert pre['captured_utc']<execution['started_utc']
+validate_bindings([pre[k] for k in ('runner','launcher','cache_implementation','binary','root_acceptance')]+pre['inputs']+pre['selected_runtime_files'])
+assert set(result['input_sha256'])==set(runner_cache.declared_input_paths(primary)) and len(result['input_sha256'])==109
+for rel,h in result['input_sha256'].items():assert digest((W/rel).read_bytes())['sha256']==h
+for rel,key in ((output,'result'),(cache,'cache')):assert digest((W/rel).read_bytes())=={k:execution[key][k] for k in ('bytes','sha256')}
+comparison=read(Q/'REPORT_COMPARISON.json');assert comparison['scientific_payload_equality'] and comparison['scientific_discrepancies']==[]
+assert comparison['canonical_result']==pin(W/output)
+assert len(comparison['bodies'])==2 and all(x['scientific_payload_equal'] for x in comparison['bodies'])
+mutation=read(Q/'ROOT_MUTATION_REVIEW.json');assert mutation['case_count']==6 and mutation['unexpected_failures']==0
+for row in mutation['cases']:
+ assert row['intended_assertion_reached'] and row['all_bound_bytes_unchanged'] and row['no_result_written'] and row['exit_code']==1
+ mpre=read(Path(row['prelaunch']['path']));assert mpre['captured_utc']<row['started_utc']
+ assert mpre['caps']=={'CPU_soft_hard_seconds':[30,30],'external_wall_seconds':45}
+ validate_bindings(mpre['bindings']);validate_bindings([row[k] for k in ('prelaunch','stdout','stderr')])
+helpers=build_citation_graph.resolve_helper_runner_paths(primary);assert helpers==[],helpers
+row={'claim_id':claim,'note_path':note,'runner_path':primary,'helper_runner_paths':[],'claim_type':'bounded_theorem'}
+issue=forensic_evidence_readiness.cached_row_readiness_issue(row,{claim:row},W);assert issue is None,issue
+assert runner_cache.cache_status(primary)=='fresh'
+g=read(D/'GRAPH_VERIFICATION.json');assert g['added']==[claim] and not g['removed'] and not g['rewired']
+assert g['new_edges']==[{'from':claim,'to':'thermal_resonance_halt_bounded_theorem_note_2026-10-17'}]
+assert g['manifest_sha256']==digest((W/graph).read_bytes())['sha256']
+assert g['new_node']['note_hash']==checks['note']['sha256'] and g['new_node']['runner_path']==primary and g['new_node']['helper_runner_paths']==[]
+assert all(x['exit_code']==0 for x in g['executions'])
+trigger=no_go_discipline_gate.source_requires_no_go_discipline(note,(W/note).read_text(),'bounded_theorem');assert not trigger
+compiled=[]
+for p in [W/primary,*sorted(F.rglob('*.py'))]:compile(p.read_bytes(),str(p),'exec');compiled.append(str(p.relative_to(W)))
+texts=[W/note,*sorted(Q.glob('*.md'))]
+before={str(p):digest(p.read_bytes()) for p in [*texts,W/primary]}
+vocab_runs=[]
+for mode in ('--fix','--report-only'):
+ proc=subprocess.run([sys.executable,'scripts/vocab_lint.py',mode,'--report-path',str(D/('VOCAB_'+mode[2:]+'.json')),*[str(p.relative_to(W)) for p in texts],primary],cwd=W,capture_output=True,text=True,timeout=20)
+ (D/('vocab_'+mode[2:]+'.stdout')).write_text(proc.stdout);(D/('vocab_'+mode[2:]+'.stderr')).write_text(proc.stderr)
+ vocab_runs.append({'mode':mode,'returncode':proc.returncode,'stdout':proc.stdout,'stderr':proc.stderr})
+ assert proc.returncode==0 and '0 files with violations' in proc.stdout,proc.stdout+proc.stderr
+assert all(digest(Path(p).read_bytes())==d for p,d in before.items()),'Vocabulary fixer changed reviewed source; stop for narrow review and rerun affected checks.'
+def outside_code(text):
+ lines=[];fence=None
+ for line in text.splitlines():
+  m=re.match(r'^ {0,3}(`{3,}|~{3,})(.*)$',line)
+  if fence:
+   if m and m[1][0]==fence[0] and len(m[1])>=len(fence) and not m[2].strip():fence=None
+   continue
+  if m:fence=m[1];continue
+  lines.append(line)
+ assert fence is None
+ return re.sub(r'(`+).*?\1','','\n'.join(lines))
+links=[]
+for p in texts:
+ for target in re.findall(r'\[[^\]\n]+\]\(([^)\n]+)\)',outside_code(p.read_text())):
+  target=target.strip('<>')
+  if target.startswith(('http:','https:','#')):continue
+  raw=p.parent/unquote(target.split('#')[0]);dest=raw.resolve()
+  assert dest.is_file() and not raw.is_symlink(),(str(p),target)
+  links.append({'source':str(p.relative_to(W)),'target':str(dest.relative_to(W))})
+head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip();branch=subprocess.check_output(['git','branch','--show-current'],cwd=W,text=True).strip()
+assert head=='67108090f68ed9b2bc62eee23701b2d3d71dce4a' and branch=='physics-loop/toe-real-control-autonomous-output-20261017'
+assert not subprocess.check_output(['git','diff','--cached','--name-only'],cwd=W,text=True)
+archive('graph',D,[D/x for x in ('graph_check.py','GRAPH_EXECUTIONS.json','GRAPH_VERIFICATION.json','graph_build.stdout','graph_build.stderr','graph_manifest.stdout','graph_manifest.stderr')])
+archive('graph_receipt',N/'runs/real_control_graph_01')
+write(Q/'GRAPH_VERIFICATION.json',g)
+write(Q/'PUBLICATION_EVIDENCE.json',{'scope':'Exact frozen review, historical failures and actual execution evidence outside the canonical input closure.','files':[{'path':str(p.relative_to(W)),**digest(p.read_bytes())} for p in sorted((Q/'evidence').rglob('*')) if p.is_file()]})
+ready=sorted(set([W/note,W/primary,W/output,W/cache,W/graph,Q/'PUBLISH_CHECKS.json',*[p for root in (F,Q) for p in root.rglob('*') if p.is_file()]]))
+for p in ready:
+ if not p.exists():assert p==Q/'PUBLISH_CHECKS.json';continue
+ proc=subprocess.run(['git','diff','--no-index','--check','/dev/null',str(p.relative_to(W))],cwd=W,capture_output=True,text=True)
+ assert not proc.stdout and not proc.stderr,(str(p),proc.stdout,proc.stderr)
+proc=subprocess.run(['git','diff','--check'],cwd=W,capture_output=True,text=True);assert proc.returncode==0,proc.stdout+proc.stderr
+assert runner_cache.cache_status(primary)=='fresh'
+record={'checked_utc':datetime.now(timezone.utc).isoformat(),'status':'Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.','head':head,'branch':branch,**checks,'canonical_execution':execution,'scientific_report_equality':True,'copied_fault_count':6,'fault_sensitivity_only':True,'archives':validate_archives(),'cache_status':'fresh','readiness_issue':issue,'helper_runner_paths':helpers,'graph':g,'no_go_gate_trigger':trigger,'compiled_sources':compiled,'vocabulary':vocab_runs,'local_links':links,'publication_paths':len(ready),'editable_prompt_files_changed':[],
+ 'conformance_dispositions':{'1_self_containment':'All exact proof bodies/reviews/source identities/failures are portable, raw bytes recoverable; finite109-input calculation closure.','2_cache_execution':'Actual governed cache replay, explicit caps and true fsynced prelaunch; full streams and all failed attempts preserved.','3_claim_scope':'Conditional-support, exact nominal real apparatus and supplied pure seed/C1 control premises; no native, practical, all-future-finite or calibration claim.','4_negative_claims':'Positive theorem preserves the original narrow unprepared-seed countercase at slower onset. Explicit N1 five-family limitation, no general no-go PASS; machine gate false.','5_proof_obligations':'Two complete written bodies and separate source/interface qualifications; mathematical premises and historical pending scopes preserved.','6_runner_validity':'16 reviewed AST adaptations, inert fail-closed finite resolver, exact payload comparison and six scientific fault cases. Replay is not independent proof.','7_reachability':'Single bounded-theorem artifact with paired runner and explicit upstream target; focused cached readiness passes.','8_graph_links':'Serialized governed graph build then writer; one child and one parent edge, no old rewiring; manifest co-published. All current wrapper/packet links resolve.','9_note_structure':'Explicit claim type, source/parent identity, premises, conclusions, full proofs, verification and open obligations.','10_propose_ratify':'Regular review PR only; no audit authority, axiom/prompt edits or science merge.','11_sourced_counts':'Exact manifests/source pairs and runtime records; check counts are not independent results. Standard machinery credited, no literature-priority claim.','12_delivery_gates':'Focused changed-scope pre-review complete. Full integrated-current-main pipeline, strict audit-status lint and changed-evidence checks remain shared later landing obligations.'},
+ 'remaining_obligations':['Exact staged and remote publication verification','Ancestor inclusion, shared integrated-current-main landing gates and independent retained audit','Native physical supply, calibration/noise and complete capture/reset/reuse']}
+write(Q/'PUBLISH_CHECKS.json',record);write(D/'FOCUSED_VERIFICATION.json',record)
+proc=subprocess.run(['git','diff','--no-index','--check','/dev/null',str((Q/'PUBLISH_CHECKS.json').relative_to(W))],cwd=W,capture_output=True,text=True);assert not proc.stdout and not proc.stderr
+write(D/'READY_PATHS.json',{'parent_head':head,'files':[{'path':str(p.relative_to(W)),**digest(p.read_bytes())} for p in ready],'file_count':len(ready),'scope':'Exact publication paths; generated citation_graph.json excluded.'})
+print(json.dumps({'status':record['status'],'publication_paths':len(ready),'declared_inputs':109,'cache':'fresh','faults':6,'vocabulary_violations':0,'graph_nodes_added':1,'graph_edges_added':1},indent=2))

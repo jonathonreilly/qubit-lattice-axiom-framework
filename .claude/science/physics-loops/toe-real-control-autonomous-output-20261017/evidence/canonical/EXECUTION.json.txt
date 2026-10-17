@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-17T05:39:02.855917+00:00",
+  "finished_utc": "2026-10-17T05:39:03.615048+00:00",
+  "runner": "scripts/real_control_autonomous_output_2026_10_17.py",
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01/PRELAUNCH.json",
+    "bytes": 39199,
+    "sha256": "35791aa8f55a8e5d8219e38da05dcae6e2b2c4ccf9f0f9dcdd2d8976ea24fefd"
+  },
+  "all_source_input_bytes_unchanged": true,
+  "runner_cache_also_checked_filesystem_generation_tokens": true,
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 0.6567168235778809,
+  "child_user_cpu_seconds": 0.384368,
+  "child_system_cpu_seconds": 0.065471,
+  "launcher_children_peak_rss_bytes_macos": 73351168,
+  "rss_scope": "Maximum reported for children of this launcher; no OS memory cap or transitive environment lock.",
+  "caps": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 45
+  },
+  "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+  "stdout_merged": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01/stdout_merged.txt",
+    "bytes": 1076,
+    "sha256": "23863e4d23a3ebde5cd265d15b50ec9c800d79081afc07e00ecf005d8f9ac5ea"
+  },
+  "stderr_protocol": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01/stderr_protocol.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cache_status": "fresh",
+  "cache": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01/cache.txt",
+    "bytes": 1434,
+    "sha256": "f8b11a6f56f52b962b470906156d98f6080ff87b769a0640ad43efb1a9cdd6b6"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/canonical_01/result.json",
+    "bytes": 88768,
+    "sha256": "aa7f53815ea2bd07b3c167bced2dc1e736df99ce6f290b9e6b78fc012fc35fce"
+  },
+  "scope": "Actual replay of two qualified author local algebra calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+}

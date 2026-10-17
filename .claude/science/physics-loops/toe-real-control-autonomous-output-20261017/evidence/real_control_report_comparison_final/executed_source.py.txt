@@ -1,0 +1,46 @@
+"""Exact report comparison with finite, explicit execution-field exceptions."""
+from validate_packet import *
+from datetime import datetime,timezone
+import copy
+out=W/'outputs/real_control_autonomous_output_2026_10_17.json';result=read(out)
+originals={'realifier_author':N/'real_coupling_halt_route/run01/stdout.json','preparation_author':N/'real_coupling_preparation_candidate/run02/stdout.json'}
+rows=[]
+for role,p in originals.items():
+ old=read(p);actual=copy.deepcopy(result['reports'][role]);metadata=actual.pop('_canonical_execution');changes=[]
+ assert metadata['actual_shared_process_limits']['cpu_soft_hard_seconds']==[30,30]
+ assert metadata['actual_shared_process_limits']['external_wall_cap_seconds']==45
+ if role=='realifier_author':
+  pre=read(N/'real_coupling_halt_route/run01/PRELAUNCH.json');names={'prelaunch:'+x['label'] for x in pre['bindings']}
+  assert len(names)==31 and {r['test'] for r in old['records'] if r['test'].startswith('prelaunch:')}==names
+  assert not any(r['test'].startswith('prelaunch:') for r in actual['records'])
+  assert all(r['result']['satisfied'] for r in old['records'] if r['test'] in names)
+  old['records']=[r for r in old['records'] if r['test'] not in names]
+  changes.append({'field':'records.historical_prelaunch','removed_exact_labels':sorted(names),'reason':'Reviewed removal of original path-binding loop. Current bindings verified in actual prelaunch, not relabeled old records.'})
+  assert old.pop('source_sha256')==actual.pop('original_program_sha256')==metadata['original_program_sha256']
+  assert old.pop('prelaunch_sha256')==pin(N/'real_coupling_halt_route/run01/PRELAUNCH.json')['sha256']
+  assert actual.pop('executed_primary_sha256')==pin(W/'scripts/real_control_autonomous_output_2026_10_17.py')['sha256']
+  changes.append({'field':'source/prelaunch identities','actual_binding':actual.pop('actual_prelaunch_binding')})
+  changes.append({'field':'program_wall_seconds','original':old.pop('program_wall_seconds'),'actual':actual.pop('program_wall_seconds')})
+ else:
+  assert old.pop('executed_source_sha256')==metadata['original_program_sha256']
+  assert actual.pop('executed_source_sha256')==pin(W/'scripts/real_control_autonomous_output_2026_10_17.py')['sha256']
+  changes.append({'field':'historical_check_interpretation','added_coverage_label':actual.pop('historical_check_interpretation')})
+  for key in ('cpu_soft_hard_seconds','external_wall_seconds'):
+   changes.append({'field':'limits.'+key,'original':old['limits'].pop(key),'actual':actual['limits'].pop(key)})
+  changes.append({'field':'runtime.elapsed_seconds_after_import','original':old['runtime'].pop('elapsed_seconds_after_import'),'actual':actual['runtime'].pop('elapsed_seconds_after_import')})
+ assert old==actual,role
+ rows.append({'role':role,'original':pin(p),'scientific_payload_equal':True,'enumerated_metadata_differences':changes,'new_metadata':metadata})
+record={'compared_utc':datetime.now(timezone.utc).isoformat(),'canonical_result':pin(out),'canonical_execution':pin(D/'canonical_02/EXECUTION.json'),'scientific_payload_equality':True,'scientific_discrepancies':[],'bodies':rows,'scope':'Complete exact author-report payloads after only explicit identity/cap/timing/coverage fields and31 old-run binding labels. Reproduction only; no new theorem, inherited scattering or independent ramp proof.'}
+write(Q/'REPORT_COMPARISON.json',record)
+mutation=read(Q/'ROOT_MUTATION_REVIEW.json')
+mutation['root_full_failure_stream_read']='All six complete stderr tracebacks inspected; no checksum failure. Realifier stdout payloads compared against the exact canonical prefix, changed fields separately exposed. Preparation failures have empty stdout and exact scientific assertion tracebacks. No complete-premise coverage claim.'
+diffs=[]
+for row in mutation['cases']:
+ folder=D/'mutations'/row['label'];raw=(folder/'stdout').read_bytes()
+ if not raw:continue
+ j=json.loads(raw);canonical=result['reports']['realifier_author'];baseline={r['test']:r for r in canonical['records']}
+ changes=[r for r in j['records'] if r!=baseline[r['test']]]
+ assert len(changes)==1 and changes[0]==j['records'][-1] and not changes[0]['result']['satisfied']
+ diffs.append({'case':row['label'],'changed_scientific_record':changes[0],'matching_prefix_records':len(j['records'])-1})
+write(D/'FAULT_PAYLOAD_DIFFS.json',diffs);mutation['payload_differences']=pin(D/'FAULT_PAYLOAD_DIFFS.json');write(Q/'ROOT_MUTATION_REVIEW.json',mutation)
+print(json.dumps({'scientific_payloads_equal':list(originals),'historical_binding_records_excluded':31,'fault_payload_differences':diffs},indent=2))

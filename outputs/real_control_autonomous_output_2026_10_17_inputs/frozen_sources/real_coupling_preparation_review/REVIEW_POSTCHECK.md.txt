@@ -1,0 +1,161 @@
+
+---
+
+## Post-exposure code and execution review
+
+After the analytical freeze, I read the entire checker, both launchers,
+bootstrap, plans and retry amendment, both prelaunch records and receipts,
+the full first-run traceback, complete successful stdout, execution summary,
+source-coverage statement and finalizer. I checked the author inventory
+against actual bytes. The empty first stdout and successful stderr are
+preserved. No scientific checker was imported or executed by this reviewer.
+
+The mathematical code path matches the candidate. Its rational input
+parameters and symbolic positive kappa are used to construct actual sparse
+Pauli operators for the runtime and isolator. The Pauli action gives the
+correct Y phases and leaves the old bits literal. It checks all twelve
+old/core columns for each M=16 and 17, rather than checking only an ideal
+3-by-3 hand-written matrix. Its emitter residuals and Gram check agree
+with the pre-frozen derivation. The full-cell characteristic polynomial
+tests use explicit real symmetric 4-by-4 matrices, so their roots establish
+PSD for both hopping signs and both complements. The pulse matrices,
+common phase and two wrong-construction discriminators are consistent with
+the physical terms. Runtime Pauli identity coefficients, block norm sums,
+old/source preservation and NN supports match the candidate.
+
+These fixtures corroborate the new local formulas. They do not establish
+all-M behavior merely by testing M=16 and 17, nor do they integrate the
+ramps or reprove scattering. The analytic support comes from the arbitrary-M
+edge cancellation and Duhamel argument already frozen in this review.
+The actual setup uses one-head/source-vacuum input; full-cell positivity
+on other sectors does not turn the invariant-core identity into an
+all-input preparation theorem. The code/prose distinction is sound.
+
+### Nonblocking checker-coverage finding
+
+At `check_preparation.py:284`, the first clause of the check named
+`ramp_error_and_complete_trace_ceiling` is
+
+    2*kp < 2/10**8 + 1/10**30,
+
+with kp fixed to 1/10**8. It is therefore a comparison of an endpoint to
+itself plus a positive slack. It does not test the sqrt(2) ramp residual,
+the area of |1-u|, or the Duhamel implication. The second clause does
+correctly check the displayed rounded trace-budget arithmetic.
+
+Disposition: do not count that first clause as independent ramp validation.
+If this checker is later transported to a canonical verification surface,
+replace it with a meaningful assertion linking the already computed Gram
+and ramp integrals to `sqrt(2)*kp < 2/10**8`, or label it only as budget
+arithmetic. The supported Gram checks and smooth-profile integrals earlier
+in the same code are substantive; the full operator proof was independently
+derived before code exposure. Thus this coverage issue does not invalidate
+the mathematical theorem and does not require altering the frozen candidate
+or pretending that an extra numerical run is necessary. No frozen source
+was edited. Ninety passing records are not ninety independent proofs.
+
+The two intended countercases are effective: without the ninth pin, the
+actual sparse supported m diagonal has error -(E0-kappa); changing the
+second exchange sign produces a unit state orthogonal to xi_plus. They
+match the reviewer's earlier hand derivation. They are tests inside the
+author implementation, not separate reviewer mutation executions.
+
+## Preserved failure chronology and actual resources
+
+Both launchers serialize and fsync the exact executed source and prelaunch
+JSON, fsync the run directory (and packet directory), and only then call
+Popen. Both impose CPU20/20 and wall30 limits. The first child cannot import
+SymPy under isolated mode and fails before scientific assertions. The
+second preserves `-I`, adds an explicit bootstrap pointing to the already
+installed SymPy package parent, and executes the unchanged checker. The
+retry amendment was written after the first failure and before the second
+prelaunch. There is no scientific tuning, package installation or hidden
+additional attempt in the inspected packet.
+
+| Item | Attempt 1 | Attempt 2 |
+|---|---|---|
+| Prelaunch captured UTC | 2026-10-17T04:57:40.033133+00:00 | 2026-10-17T04:58:27.317683+00:00 |
+| Started UTC | 2026-10-17T04:57:40.053170+00:00 | 2026-10-17T04:58:27.339722+00:00 |
+| Completed UTC | 2026-10-17T04:57:40.101451+00:00 | 2026-10-17T04:58:27.837500+00:00 |
+| Result | Exit 1, SymPy import failure before science | Exit 0, exact local checks completed |
+| External wall seconds | 0.04669991694390774 | 0.4957573749125004 |
+| User CPU seconds | 0.022975 | 0.37763599999999997 |
+| System CPU seconds | 0.007796999999999998 | 0.045882 |
+| Maximum RSS, Darwin bytes | 22052864 | 66846720 |
+| Input bindings / selected runtime bindings | 24 / 4 | 26 / 4 |
+
+The successful runtime is Python3.13.5, SymPy1.14.0 on macOS26.6.2 arm64.
+The program-only time after imports, .24057466676458716 seconds, is not
+substituted for the external wall or CPU cost. Its largest dense matrix is
+4-by-4. Sparse fixtures M=16/17 correspond to 38/40 physical qubits and
+twelve core columns per fixture; no full Hilbert-space array is allocated.
+Symbolic kappa is used, with no point grid, optimizer, quadrature, time
+integration or inherited-checker replay. The declared two-attempt allowance
+is exhausted by the preserved import failure and successful retry.
+
+No OS memory cap or measured thread count is claimed. The requested thread
+environment is recorded; that is not a measurement of actual threads.
+The four runtime pins cover the executable, fractions module, SymPy entry
+module and distribution METADATA, not every transitive library or OS file.
+In particular the bootstrap inserts an existing package-parent directory;
+the evidence is source-bound but not a hermetic runtime image.
+
+My deterministic verification checked the actual current content and
+generation metadata of all 28 first-run and 30 second-run bound files
+against both prelaunch and after-run records. All matched. Both checker
+copies and the inspected original are byte-identical, and the complete
+candidate was unchanged across both attempts. All seventeen original/source
+snapshot pairs matched in bytes and generation fields. All forty-one
+manifest members plus FILE_MANIFEST and FREEZE matched and were copied.
+The source/root-status pins have not been inferred from titles or PASS counts.
+The current review's twenty-four pre-exposure frozen entries also match.
+
+`PROVENANCE.json`, SHA256
+`4ecdcc2e79db2f4bdeed0715c56f34a60958e539265b27db1af7281021986d65`,
+contains these full records and chronology; `PROVENANCE_SUMMARY.json` gives
+the counts. These are bookkeeping checks, not new scientific executions.
+The exact author execution identities include:
+
+| Artifact | SHA256 |
+|---|---|
+| check_preparation.py and both executed copies | 70b08ea88adb136241132a831e4a290ab9f94e4448c811f0a511821c32a436d0 |
+| launch_check.py | 3cf8834d377e20553c4d979967b45b868ab245b620395a07b826b5693579cafe |
+| launch_check_v2.py | 01aea125363730584637792cd33773e5ed3cc081b29fd748fb34e660e2712e66 |
+| run02/import_bootstrap.py | ef9ce7914a1a91b6ad66546d1f3c6e2b8d90caf8b06a446ada0862bfafafb954 |
+| RESOURCE_PLAN.json | 43fe3aa6ab6aedda6c76e509f0187594b32c7e081ca68404ce04b85fa854341e |
+| RETRY_AMENDMENT.md | 3fdd04be15d4f0f7f5a2fa4793183aa6e9d7d886f950c72d107a25a462977dbc |
+| run01/PRELAUNCH.json | dab1aad62baf91606f756a2ed196a4d1637c3abadda9cf2898cb170a60bd44b0 |
+| run01/RECEIPT.json | 72523278579e95f68383ff7bd367b4b731f244ff99ac8dfabf53910574e4bce0 |
+| run01/stderr.txt | 8a01c7c16c240ac8c4bc7a0b7c9afe912da43f0e5eb88e049627c96edca15b2b |
+| run02/PRELAUNCH.json | ece64c03346f6b886d5ae665ac0b4938158d4f48e6b8a93360a6f9872d079197 |
+| run02/RECEIPT.json | 4e2bcee5a4fee720317edda68204bf65f5902d6e6720bed99fa837f1f375c2c5 |
+| run02/stdout.json | 6d61182e1ee3e5fc9b5fbe6c774e487589092c390e9e40a692461ee66fc06646 |
+| run01/stdout.json and run02/stderr.txt, empty | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 |
+
+## Final scope and open obligations
+
+The local setup, exact scalar, complete residual and conditional interface
+survive the selective check. No changed theorem or source repair is required.
+Retain the nonblocking code-coverage note when assessing or transporting the
+corroborating runner. Root disposition, the provisional realifier's eventual
+status, canonical execution/publication and retained audit remain separate.
+
+The setup is externally timed real control of existing sites. It exchanges
+a complex static hopping permission for specific real static coefficients,
+pure product input and finite classical pulse/ramp permissions. It does not
+derive their native manufacture. A thermal/correlated seed supplier requires
+its own complete trace-distance budget. A physical autonomous controller,
+reset/reuse and practical resource account require additional work. The
+large source/contact loads, actual phase Phi+cR*t, total old age t+5,
+coupling-dependent clock waveform, nonzero target residual and finite-window
+restriction must remain in every downstream statement. No general real-device
+impossibility or arbitrary-accuracy theorem is implied.
+
+The reviewer performed zero scientific executions and no new network search.
+The only incomplete read was the initial large display of an inherited
+parameter container; its required exact_parameters object was then read
+completely, and the full container is preserved. No new mathematical argument
+or author execution stream was accepted from truncated output. No failure
+or countercase was erased. No source, W, Git, PR, current checkpoint, prompt,
+physical axiom or audit record was edited, and no model/effort override,
+subdelegation or other-chat messaging was used. No editable prompt files changed.

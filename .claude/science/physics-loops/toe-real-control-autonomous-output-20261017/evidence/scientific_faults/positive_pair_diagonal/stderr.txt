@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/driver.py", line 7, in <module>
+    result=ns['run_realifier_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/mutated.py", line 209, in run_realifier_author
+    demand('positive_cell_polynomial_sign_' + str(sign), mul(Q, Q) == scale(Q, z(2)) and Q == adj(Q), {'Q': Q, 'spectrum_by_polynomial_and_trace': [0, 0, 2, 2]})
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/mutations/positive_pair_diagonal/mutated.py", line 80, in demand
+    raise AssertionError(name)
+AssertionError: positive_cell_polynomial_sign_-1

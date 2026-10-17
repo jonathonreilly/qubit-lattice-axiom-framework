@@ -1,0 +1,34 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/real_control_final_open_prs",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "EXECUTION.json",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_final_open_prs/EXECUTION.json.txt",
+      "bytes": 1275,
+      "sha256": "f8dbe8e8bb20dc0e94066d576c7eb115499a8e885d1111212a8ddd53a65e0fa7",
+      "compression": "none",
+      "raw_bytes": 1275,
+      "raw_sha256": "f8dbe8e8bb20dc0e94066d576c7eb115499a8e885d1111212a8ddd53a65e0fa7"
+    },
+    {
+      "original_path": "stderr",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/publication_draft/static_01/fixture_repo/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "stdout",
+      "path": ".claude/science/physics-loops/toe-real-control-autonomous-output-20261017/evidence/real_control_final_open_prs/stdout.txt",
+      "bytes": 2283,
+      "sha256": "8a6b80dd4e5c4bc5e209ca3028144af75d737d65d2657312f331b915b38c0806",
+      "compression": "none",
+      "raw_bytes": 2283,
+      "raw_sha256": "8a6b80dd4e5c4bc5e209ca3028144af75d737d65d2657312f331b915b38c0806"
+    }
+  ],
+  "count": 3
+}

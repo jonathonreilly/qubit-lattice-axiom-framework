@@ -1,0 +1,25 @@
+# Proposed publication conformance disposition
+
+This is a mechanical draft at supplied parent PR9666 head
+67108090f68ed9b2bc62eee23701b2d3d71dce4a. Root reports main69cf6a289b2ec06213473f1549c51a57c29b6d70
+and unchanged workflow/conformance/no-go instructions at05:24:22UTC. The drafter
+read the local applicable workflow, delivery and conformance completely; it
+performed no Git/remote refresh, publication or integrated-main validation.
+
+| Spec section | Actual drafting disposition and remaining owner action |
+|---|---|
+| 1 Self-containment | Finite source scopes preserved and exact parent bytes reused. Static declared closure planned/recorded separately. Root must verify the final reviewed ancestry/delta; parent is unmerged conditional science, not presumed landed main. |
+| 2 Cache/execution | Primary declares45seconds and sharedCPU30/30. No canonical science/cache here. Root must use execute_and_write_cache, bind actual source/inputs/runtime before spawn and preserve exits/streams. Every later pinned input edit requires a fresh affected run. |
+| 3 Scope honesty | Wrapper and reports distinguish conditional construction, historical pending labels, original slower countercase and source-exposed corroboration. The weak ramp-budget clause is explicitly arithmetic only. Native/thermal/controller obligations remain open. |
+| 4 Negative scope | Preserve the concrete unprepared-seed counterexample and its complete historical N1-N8 discussion. Original broad five-route threshold is explicitly not met; no general-no-go or N-gate PASS. Proposed primary prints substantive N5 granularity statements after successful body execution; they are not yet executed/cached. Root must confirm this narrow counterexample disposition on final surfaces rather than invent five failed routes. |
+| 5 Proof obligations | Both complete source arguments, two analytical reviews/freezes and root qualification are preserved. Wrapper reconstructs the realifier/core/pulse/Gram/Duhamel/resonance/composition chain, conditions, finite boundary and open native supply. No new theorem qualification by this draft. |
+| 6 Runner validity | Two original mathematical bodies are mechanically transported. Static AST reconstruction is planned/recorded separately; independent transport review and actual discriminating scientific fault families remain pending. Source reviewers used distinct analytical derivations. Historical arithmetic tautology is not promoted to ramp evidence. |
+| 7 Packet completeness | Both author computations reside in the primary; no helper registry edit or unimported mathematical helper is required. Complete reviews and raw original code/receipts are inputs, not silently executed. Restricted-packet and changed-evidence checks remain pending with root. |
+| 8 Links/graph | Load-bearing parent and source-qualification links are explicit; provenance paths inside raw bodies remain historical. Static links checked on finite overlay/parent view. Root owns actual tracked-file check, intended graph delta and generated manifest co-landing; no shared graph/manifest touched here. |
+| 9 Note structure | Machine-status/trace/import/scope/review fields supplied, historical bodies delimited. External root decision/execution placeholders sit outside calculation closure to avoid cache self-reference. |
+| 10 Propose/ratify | Proposed retained referral with actual conditional support only. No audit verdict/effective status, generated audit surface, ledger, axiom or prompt edited. |
+| 11 Sourced facts/counts | Complete source bodies, author programs and root qualification read. Counts derive from exact current capture/build/static inventories. Historical results labeled as such; no fresh science run claimed. Review exposure limits preserved without claiming blind or diverse review. |
+| 12 Focused/combined gates | Only static parsing/hash/link/inert resolver checks are authorized here. Scientific cache/fault tests, vocabulary tool, actual Git diff/tracked-link checks and changed-evidence readiness remain root-owned pending. Full pipeline/strict lint/integrated-current-main checks are a later combined gate, not falsely passed by this draft. |
+
+No unrun section is reported passed. The publication decision must use the
+separate transport and actual execution records, not this preparation checklist.

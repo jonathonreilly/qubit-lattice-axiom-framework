@@ -1,0 +1,39 @@
+# Bounded route plan, saved before any scientific execution
+
+Target: the literal K=2I+Z1Z2 and W=[(9+12i)I+(-16+12i)X1X2]/25,
+with old aging from time zero, an old-independent product seed, positive
+ordinary-nearest-neighbor two-body qubit terms and entirely real control/
+hopping coefficients. Every output branch and supplied seed resource must
+be included. No external stop, chiral input or changed old encoding may be
+silently assumed.
+
+The first concrete mechanism is replacing the phase-directed emitter by a
+reciprocal real-contact source. Derive its exact time-reversal/production
+phase relation and examine whether its emitted spectral profiles can have
+the same target old phase and a common complete clock waveform. A local
+realification is a comparison route, not a supplied chiral flag. Positive
+results remain possible through a changed scattering architecture; failure
+of this replacement will not be promoted to a general no-go.
+
+First search the pinned repository surfaces and primary literature for
+matching real Hamiltonian computation, production-phase reciprocity and
+realification mechanisms. Read exact premises before reuse. The parent
+reported source baseline is PR9665 head
+0e3993770a7a2dd872018f9dd3c76c2d9a624db9. No Git or repository mutations are
+authorized. Local current workflow/source hashes will be recorded, without
+claiming an independent fetch or Git revision verification.
+
+Analytical work is preferred. No scientific program, numerical parameter
+sweep, quadrature or dynamics is currently planned. If a bounded decisive
+calculation becomes necessary, amend this plan before execution with exact
+dimensions, caps, input snapshots and true serialized/fsynced prelaunch
+runtime bindings. Bookkeeping hashes, file inventories and literature
+retrieval are not scientific numerical evidence.
+
+Deliver one coherent proposed-route/worked-failure packet in this directory,
+with exact controlling identities, all live alternatives, an honest N1-N8
+scope check if negative material is included, source identities and a final
+freeze. This is author work awaiting a separate check. Do not duplicate the
+active preparation or resonance-family review. No delegation, model/effort
+override, W/Git/PR/checkpoint/audit/prompt/axiom or other-chat changes. The
+campaign deadline is 2026-10-17T23:07:27Z and is not extended.

@@ -1,0 +1,12 @@
+PASS L=4: all 24 rotations x 32 admissible eps preserve signed groups of both uniform sectors (1536 cases, all generators)
+PASS L=6: same (1536 cases, all generators)
+PASS L=4: non-uniform sectors map to the orientation-permuted sector (always); cases left invariant: 1536
+PASS L=4: non-admissible eps (prod eps != sign) never preserve the group
+INFO L=4 improper elements (O_h \ O) with det-condition eps: 1536 of 1536 cases preserve the uniform signed groups
+PASS B_v -> +B_{Rv} exactly for all admissible eps
+   bare qubit permutation (0, 1, 2) implements rotation ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+PASS on-site unitaries exist, are 3-qubit Cliffords implementing gamma_d -> eps gamma_Rd (24 x 32)
+INFO entangling on-site Cliffords: 736 of 768
+INFO rotations implementable by a bare permutation of the 3 site qubits: 1 (identity only expected)
+time 279.0s
+OVERALL PASS

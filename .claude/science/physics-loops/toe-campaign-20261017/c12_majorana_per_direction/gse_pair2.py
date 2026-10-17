@@ -33,7 +33,7 @@ def map_pauli(P, M, eps):
         sgn, ws = image_word([(v, d) for d in sub], M, eps)
         W = word(ws)
         # X^x Z^z = i^k gamma_sub  =>  gamma_sub = i^{-k} X^x Z^z ; image of X^x Z^z = i^k * sgn * W
-        add = [W[0], W[1], (W[2] + k + (0 if sgn == 1 else 2)) % 4]
+        add = [W[0], W[1], (W[2] - k + (0 if sgn == 1 else 2)) % 4]
         out = [out[0] ^ add[0], out[1] ^ add[1], (out[2] + add[2] + 2 * (int(out[1].astype(int) @ add[0].astype(int)) % 2)) % 4]
     return out
 def bitmap(M, eps):

@@ -8,8 +8,12 @@
 - Bug note: the first `gse.py` had gamma_0 = i X1, which is anti-Hermitian. The O-covariance checks
   survived that bug, but the pair tests (`gse_pair*.py`, `gse_conj.py`) did not, and the pair-test logs
   from before the fix are void. Fixed in `gse.py` and in the runner.
-- Pair test after the fix (`gse_conj.py`, L = 8):
-  - all three axis C2 give lambda = +1;
-  - edge C2 results disagree between conjugate elements, probably because the separation is half the
-    torus. An L = 12 rerun is in progress (`gse_conj_L12.log`).
+- Second bug: `map_pauli` used +k instead of -k when inverting gamma_sub = i^k X^x Z^z. The map was still a
+  homomorphism but implemented the wrong automorphism. `maptest.py` now checks the gamma images.
+- After both fixes, `gse_conj2.py` (L = 8, the two uniform sectors, two consistent group choices) gives
+  lambda = +1 for every axis C2 and -1 for every edge C2, consistent across conjugates and positions.
+  This solver allowed excitations within distance 1 of the endpoints.
+- The independent check used strictly clean pair creators and found lambda = -1 for both types
+  (eta_f = +1, +1). It also showed that a flux-dressed creator gives +1 for the axis C2. `gse_conj3.py`
+  reruns with clean creators (L = 10).
 - The fractionalization class is not yet claimed.

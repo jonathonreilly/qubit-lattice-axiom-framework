@@ -1,0 +1,26 @@
+dir perm C4 (1, 3, 2, 4, 0, 5) sign -1 ; C3 (1, 2, 0, 4, 5, 3) sign 1
+group sizes over 1024 (size, contains -1): {(768, True): 512, (192, True): 384, (48, True): 128}
+order-48 groups containing -1: 128
+(axis C2 lifts square to +1, edge C2 lifts square to -1): {(True, True): 128}
+element-order profile(s) of the 128 groups: {((1, 1), (2, 7), (3, 8), (4, 24), (6, 8)): 128}
+all admissible lifts of axis C2: squares {'+1': 24, 'other': 72} ; of edge C2: {'other': 144, '-1': 48}
+Comparison: binary octahedral 2O has order profile [(1, 1), (2, 1), (3, 8), (4, 18), (6, 8), (8, 12)] ; GL(2,3): [(1, 1), (2, 13), (3, 8), (4, 6), (6, 8), (8, 12)] ; S4 x Z2: [(1, 1), (2, 19), (3, 8), (4, 12), (6, 8)]
+lifts of C3 have orders [3, 6] ; even part order 24 orders {3: 8, 6: 8, 2: 7, 1: 1}
+OVERALL PASS
+L=10 tableaux built (0.3s)
+first group done (4.1s)
+syndrome checks passed: 1408
+C2 class axis sector (-1, -1, -1): lambda counts {-1: 28672}  -> eta_f = [1]
+C2 class axis sector (1, 1, 1): lambda counts {-1: 28672}  -> eta_f = [1]
+C2 class edge sector (-1, -1, -1): lambda counts {-1: 61440}  -> eta_f = [1]
+C2 class edge sector (1, 1, 1): lambda counts {-1: 61440}  -> eta_f = [1]
+  axis C2 ((1, 0, 0), (0, -1, 0), (0, 0, -1)): lambda values [-1]
+  axis C2 ((-1, 0, 0), (0, 1, 0), (0, 0, -1)): lambda values [-1]
+  axis C2 ((-1, 0, 0), (0, -1, 0), (0, 0, 1)): lambda values [-1]
+  edge C2 ((-1, 0, 0), (0, 0, 1), (0, 1, 0)): lambda values [-1]
+  edge C2 ((-1, 0, 0), (0, 0, -1), (0, -1, 0)): lambda values [-1]
+  edge C2 ((0, 1, 0), (1, 0, 0), (0, 0, -1)): lambda values [-1]
+  edge C2 ((0, -1, 0), (-1, 0, 0), (0, 0, -1)): lambda values [-1]
+  edge C2 ((0, 0, 1), (0, -1, 0), (1, 0, 0)): lambda values [-1]
+  edge C2 ((0, 0, -1), (0, -1, 0), (-1, 0, 0)): lambda values [-1]
+time 33.3s

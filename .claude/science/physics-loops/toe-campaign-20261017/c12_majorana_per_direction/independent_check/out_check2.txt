@@ -1,0 +1,6 @@
+L=5 leg=2: legs commute with all S_p & flip only {o,end}: True; T-junction signs: 20 of 20 are -1 -> PASS
+L=6 leg=2: legs commute with all S_p & flip only {o,end}: True; T-junction signs: 20 of 20 are -1 -> PASS
+L=7 leg=3: legs commute with all S_p & flip only {o,end}: True; T-junction signs: 20 of 20 are -1 -> PASS
+L=10 leg=4: legs commute with all S_p & flip only {o,end}: True; T-junction signs: 20 of 20 are -1 -> PASS
+control (commuting bosonic strings): 20 of 20 are +1
+OVERALL PASS

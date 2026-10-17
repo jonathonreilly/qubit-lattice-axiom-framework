@@ -1,0 +1,9 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+Wilson m=0.05, Haar crossing (no cut), 16384 nodes/entry: lam_min +4.466e-09 max 5.9998 max|Im Z| 8.9e-18 max|Im ln diag| 8.9e-18 [57s]
+entry (0,1): 4-point 23.802727001089+0.000000000000j vs 6-point 23.802727001089+0.000000000000j; |diff| 3.6e-15 [105s]
+watchdog peak RSS 253392 KB

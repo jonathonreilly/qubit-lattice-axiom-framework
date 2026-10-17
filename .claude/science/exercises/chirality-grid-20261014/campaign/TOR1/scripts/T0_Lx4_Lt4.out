@@ -1,0 +1,25 @@
+# TOR-1 T0 Lx=4 Lt=4 N=32 nl=32; build 0.0s
+momentum off-block max 3.52e-16
+toron spectrum position vs momentum: max diff 2.22e-15
+decompose: |P AT - F| 7.2e-16; |div AT| 1.5e-16; |mean AT| 2.4e-17
+canonical rep: plaquettes 8.9e-16; Wilson lines 8.9e-16
+[11112] toron data: winding of Gam_t over wx-circle +0.000000; base holonomy phases h_t(0) -3.923e-15, h_x(0) +2.573e-15; Gam_t spread 1.3967 rad [4.2s]
+[11112] logrho on 4 fields: 0.10s (25 ms/field); gmin 0.740; idx True; identity 1.1e-17; monopole 6.5e-16; div residual 6.4e-08; |kQ| 2.8e-08; toron Richardson 2.1e-04
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+   Re W [-16.387663 -17.439504 -15.440306 -18.779299]
+   Im W [1.251891e+01 5.351992e+00 2.232808e-03 6.052327e+00]
+   S-phase [0.414534 0.56614  0.000983 0.324454]
+   kbb phase [-1.972e-04  1.204e-03  5.863e-05  9.267e-04]
+   gauge invariance: max |dW| 8.0e-15 (phase), 6.4e-14 (modulus)
+   factorisation: Re W - (2 Re ld D1 + 0.5 Re ld D2): mean -55.4517744448 spread 7.1e-14
+   reflection: rho(theta U) = e^c conj rho(U): Re c spread 9.9e-14; Im c = -0.00000000 spread 2.3e-14
+   loop closure nu=x: max|arg Q_loop| 2.49e-14; max|ln|Q_loop|| 6.75e-14
+   loop closure nu=t: max|arg Q_loop| 7.74e-07; max|ln|Q_loop|| 4.62e-14
+[L1] toron data: winding of Gam_t over wx-circle +1.000000; base holonomy phases h_t(0) -9.622e-16, h_x(0) +6.432e-16; Gam_t spread 0.2610 rad [2.1s]
+done [7s]
+watchdog peak RSS 127680 KB

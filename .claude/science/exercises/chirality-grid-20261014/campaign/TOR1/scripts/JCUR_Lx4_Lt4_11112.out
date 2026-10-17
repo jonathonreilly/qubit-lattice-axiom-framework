@@ -1,0 +1,7 @@
+# TOR-1 measure current Lx=4 Lt=4 model=11112 eps=0.0001 dlt=0.001 Ns=8
+field 0 Ward: sum_l (d omega)_l j_l = -1.0219470461e-02; sum_x omega q_tot = -1.0218843168e-02; ratio +1.00006139
+field 0 Ward: sum_l (d omega)_l j_l = +2.1753331759e-02; sum_x omega q_tot = +2.1745480775e-02; ratio +1.00036104
+field 0 Ward: sum_l (d omega)_l j_l = +3.6579754028e-03; sum_x omega q_tot = +3.6500278728e-03; ratio +1.00217739
+field 0 source x(1, 2): |dj/dtheta| vs d: 0.0:4.15e-04 1.0:4.34e-03 2.0:9.60e-03 3.0:2.78e-03 4.0:9.68e-04 | fit rate 0.574 +- 0.332 [7s]
+field 0 source t(2, 1): |dj/dtheta| vs d: 0.0:1.58e-03 1.0:1.30e-02 2.0:6.22e-03 3.0:4.96e-03 4.0:1.42e-03 | fit rate 0.688 +- 0.136 [8s]
+watchdog peak RSS 179264 KB

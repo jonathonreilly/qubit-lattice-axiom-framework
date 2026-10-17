@@ -1,0 +1,9 @@
+chi  F3 (kernel B=(2,12))  : lam_min -6.51279e-07 lam_2 +9.431e-06 max 5.9339 min/max -1.098e-07 | q_poly 1.34e-07 q_plane 1.81e-04 h 9.7e-05 | E 1.09e-03 | plane-estimate present True | conv-negative False | PSD-within-error True
+chi  F7 (kernel B'=(2,16)) : lam_min -6.51282e-07 lam_2 +9.431e-06 max 5.9339 min/max -1.098e-07 | q_poly 1.71e-10 q_plane 1.81e-04 h 9.7e-05 | E 1.09e-03 | plane-estimate present True | conv-negative False | PSD-within-error True
+mod  F3 (kernel B=(2,12))  : lam_min -6.52873e-07 lam_2 +9.430e-06 max 5.9339 min/max -1.100e-07 | q_poly 1.34e-07 q_plane 4.04e-05 h 0.0e+00 | E 2.42e-04 | plane-estimate present True | conv-negative False | PSD-within-error True
+O    F3 (kernel B=(2,12))  : lam_min -2.23234e-07 lam_2 +9.903e-07 max 5.9834 min/max -3.731e-08 | q_poly 5.02e-13 q_plane 3.47e-06 h 0.0e+00 | E 2.08e-05 | plane-estimate present True | conv-negative False | PSD-within-error True
+vec0 F3 (kernel B=(2,12))  : lam_min -2.21886e-07 lam_2 +9.943e-07 max 5.9833 min/max -3.708e-08 | q_poly 5.19e-13 q_plane 3.51e-06 h 0.0e+00 | E 2.11e-05 | plane-estimate present True | conv-negative False | PSD-within-error True
+W    F3 (kernel B=(2,12))  : lam_min -3.65434e-06 lam_2 +4.543e-06 max 5.9859 min/max -6.105e-07 | q_poly 3.55e-15 q_plane 2.10e-05 h 0.0e+00 | E 1.26e-04 | plane-estimate present True | conv-negative False | PSD-within-error True
+PG   F3 (kernel B=(2,12))  : lam_min -1.13109e-15 lam_2 +0.000e+00 max 6.0000 min/max -1.885e-16 | q_poly 0.00e+00 q_plane 0.00e+00 h 0.0e+00 | E 1.00e-13 | plane-estimate present True | conv-negative False | PSD-within-error True
+PHASE F3: max|Zn_chi - Zn_mod| 3.958e-07; max|Im Zn_chi| 3.216e-14; lam_min chi - mod +1.594e-09; first-order +1.594e-09; |<v_mod|v_chi>| 1.000000; chi/O lam ratio 2.92
+watchdog peak RSS 19680 KB

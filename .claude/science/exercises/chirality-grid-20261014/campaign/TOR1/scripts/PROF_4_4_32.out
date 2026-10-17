@@ -1,0 +1,14 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+init 0.5102188587188721
+toron basis per node ms 12.032754719257355
+Gam_t per node ms 7.961839437484741
+transport Ns=4 per node ms 2.8300657868385315
+transport+kbb Ns=4 per node ms 3.9507150650024414
+modulus per node ms 0.5159452557563782
+wilson per node ms 0.17458945512771606
+watchdog peak RSS 167808 KB

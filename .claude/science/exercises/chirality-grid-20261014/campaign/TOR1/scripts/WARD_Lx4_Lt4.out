@@ -1,0 +1,14 @@
+# TOR-1 Ward Lx=4 Lt=4: Delta = log rho(A^T + d omega) - log rho(A^T) (phase mod 2pi, modulus); 3 fields
+s_k=-1 Ns= 4 omega=small: max|dphase| 4.095e-07  max|dmod| 1.421e-14  [4s]
+s_k=-1 Ns= 4 omega=big  : max|dphase| 9.833e-01  max|dmod| 5.684e-14  [4s]
+s_k=-1 Ns= 8 omega=small: max|dphase| 2.521e-08  max|dmod| 5.684e-14  [8s]
+s_k=-1 Ns= 8 omega=big  : max|dphase| 2.993e-02  max|dmod| 6.395e-14  [8s]
+s_k=-1 Ns=16 omega=small: max|dphase| 1.570e-09  max|dmod| 3.553e-14  [13s]
+s_k=-1 Ns=16 omega=big  : max|dphase| 5.897e-04  max|dmod| 6.040e-14  [13s]
+s_k=+1 Ns= 4 omega=small: max|dphase| 3.180e-03  max|dmod| 1.421e-14  [17s]
+s_k=+1 Ns= 4 omega=big  : max|dphase| 9.887e-01  max|dmod| 5.684e-14  [17s]
+s_k=+1 Ns= 8 omega=small: max|dphase| 3.180e-03  max|dmod| 5.684e-14  [21s]
+s_k=+1 Ns= 8 omega=big  : max|dphase| 8.942e-02  max|dmod| 6.395e-14  [21s]
+s_k=+1 Ns=16 omega=small: max|dphase| 3.180e-03  max|dmod| 3.553e-14  [26s]
+s_k=+1 Ns=16 omega=big  : max|dphase| 7.971e-02  max|dmod| 6.040e-14  [26s]
+watchdog peak RSS 76560 KB

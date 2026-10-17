@@ -686,3 +686,16 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **L3:** a heuristic case analysis for the listed implementations, not a no-go "for every inflow geometry". The 10⁴⁶-layer figure is conditional on a model, so E6 does not follow.
 - **Lemma E:** a conditional obligation map (E3 is the missing bulk–boundary theorem), not an equivalence theorem.
 - **Consequence:** route 3's central lemma is weaker than SUMMARY §2 and §3 imply. SUMMARY needs a scope correction at close.
+
+**TOR-1 result (11:45Z 10-17; same family; referee launched): OPEN, failing on the kernel's power.**
+- **G-LEG-T passes on every item.**
+  - Torus Lüscher measure with a global toron (Wilson-line) sector, following §§7–11. Gauge invariance is exact (4e-14); the un-fixed Ward identity converges as Ns⁻⁴.
+  - Measure-current locality: ν ≈ 0.6–0.7.
+  - 11112 closes around both non-contractible loops; L1 winds once.
+  - Reflection condition holds with c = 0.
+  - The toron finite-volume part decays at rate ln 2, but is about 0.22 at Lx = 4.
+- **The kernel is unresolved.**
+  - Setup: Lx = 4, Lt = 4, k = 6; the integral is 7-dimensional, so only this size was affordable.
+  - Every λ_min is about −1e-7 relative, 1–4 orders below E, including the vector-like O reference. So no sign is established, and there is no power.
+  - The chiral phase does not affect the kernel (Δλ = 1.6e-9).
+  - Side finding: at Lx = 4 with the hard weight, even the Wilson kernel has an unresolved negative λ_min.

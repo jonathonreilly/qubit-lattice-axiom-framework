@@ -1,0 +1,15 @@
+# TOR-1 kernel pool=pool_TOR1_srch_Lt4_k6_s3201.npz Lx=4 Lt=4 k=6 level (n=2, nw=8) ops=['mod', 'O', 'vec0', 'W', 'PG'] pairs=upper (21 entries)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  entry 1/21 (0,0) nodes 8192 [10s]
+  entry 6/21 (0,5) nodes 8192 [60s]
+  entry 11/21 (1,5) nodes 8192 [110s]
+  entry 16/21 (3,3) nodes 8192 [159s]
+  entry 21/21 (5,5) nodes 8192 [209s]
+node checks: max|F| over all nodes 0.5887 (hard support 0.6, bulk margin 0.55); max |Q| 0
+saved pool_TOR1_srch_Lt4_k6_s3201_L2_8_mod-O-vec0-W-PG_upper.npz done [209s]
+watchdog peak RSS 167792 KB

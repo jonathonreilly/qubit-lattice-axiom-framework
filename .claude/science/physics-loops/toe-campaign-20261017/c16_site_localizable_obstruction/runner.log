@@ -1,0 +1,48 @@
+[PASS] O has 24 proper rotations, 2O has 48 elements, 2O -> O is 2:1
+[PASS] section is normalized (w2(e,e) = 0) and w2 is a cocycle
+   O: -1 in [E,E] for class: {'0': False, 'w1^2': False, 'w2': True, 'w2+w1^2': True}
+[PASS] on O, a one-dimensional local state exists exactly for the classes 0 and w1^2 (the kernel of H^2(O;Z2) -> H^2(O;U(1))); never for w2 or w2+w1^2
+   conjugacy classes of subgroups of O: 11
+[PASS] O has 11 conjugacy classes of subgroups
+   restriction of w2: (|H|, needs dimension >= 2)
+     1                |H|= 1  degenerate-only=False
+     C2(edge)         |H|= 2  degenerate-only=False
+     C2(axis)         |H|= 2  degenerate-only=False
+     C3               |H|= 3  degenerate-only=False
+     D2(axis+edge)    |H|= 4  degenerate-only=True
+     C4               |H|= 4  degenerate-only=False
+     D2(axis)         |H|= 4  degenerate-only=True
+     D3               |H|= 6  degenerate-only=False
+     D4               |H|= 8  degenerate-only=True
+     T                |H|=12  degenerate-only=True
+     O                |H|=24  degenerate-only=True
+[PASS] w2 needs a local dimension >= 2 exactly for D2 (both classes), D4, T, O; cyclic groups and D3 admit a one-dimensional spin-1/2 local state
+[PASS] axis D2: all 8 square patterns occur; a one-dimensional state exists iff the number of C2 lifts squaring to -1 is even (so (-,-,-) is excluded)
+[PASS] an O-orbit has odd size only when the stabilizer is O (size 1) or D4 (size 3)  odd-orbit stabilizers ['D4', 'O']
+[PASS] the 8 irreps of 2O are orthonormal (5 linear, 3 spinorial; sum of squared dims 48)
+   shell: six directions (half-edges / direction qubits): orbit 6, stabilizer lift Z8
+     character k=0 (linear): A1 + T1 + E
+     character k=1 (spinorial): E1/2 + G3/2
+     character k=2 (linear): T1 + T2
+     character k=3 (spinorial): E5/2 + G3/2
+     character k=4 (linear): A2 + T2 + E
+     character k=5 (spinorial): E5/2 + G3/2
+     character k=6 (linear): T1 + T2
+     character k=7 (spinorial): E1/2 + G3/2
+   shell: eight octants (cubes around the site): orbit 8, stabilizer lift Z6
+     character k=0 (linear): A1 + T1 + A2 + T2
+     character k=1 (spinorial): E1/2 + E5/2 + G3/2
+     character k=2 (linear): T1 + T2 + E
+     character k=3 (spinorial): 2G3/2
+     character k=4 (linear): T1 + T2 + E
+     character k=5 (spinorial): E1/2 + E5/2 + G3/2
+   shell: twelve face diagonals (plaquette corners): orbit 12, stabilizer lift Z4
+     character k=0 (linear): A1 + T1 + 2T2 + E
+     character k=1 (spinorial): E1/2 + E5/2 + 2G3/2
+     character k=2 (linear): 2T1 + A2 + T2 + E
+     character k=3 (spinorial): E1/2 + E5/2 + 2G3/2
+[PASS] six directions: linear shell A1 + E + T1; every spinorial shell is E1/2 + G3/2 (k = 1, 7) or E5/2 + G3/2 (k = 3, 5)
+[PASS] eight octants: linear shell A1 + A2 + T1 + T2; spinorial shells have dimension 8 and some contain E1/2
+[PASS] twelve face diagonals: every spinorial shell contains E1/2
+
+TOTAL: PASS=11 FAIL=0

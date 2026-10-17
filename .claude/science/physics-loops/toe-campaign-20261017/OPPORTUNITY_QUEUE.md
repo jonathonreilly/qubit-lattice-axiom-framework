@@ -1,9 +1,15 @@
-# Opportunity queue (ranked; updated 2026-10-17 after C12)
+# Opportunity queue (ranked; updated 2026-10-17 after C16)
 
 Done in this campaign: C1–C4 (scoped results and finite search), C6 (BKSF orbits, four-species minimum for bare
 permutations), C8/C10 (conditional restricted D3/single-C2 class; D2 localization open), C11 (site-local half-edge realization) and C12
 (one O-covariant species with on-site Cliffords; clean-sector trivial pattern under U_R, not an unrestricted anyon invariant; sign-character W twist gives (+,-), not w2).
 
+0++. **Target after C16: a direction-carried charge.** C16 shows that a site-centred charge term (like B_v) under any
+   realization that maps terms to terms pins the class to {0, w1^2} on O. Build a code with a genuine O action whose
+   fermion-charge terms have no O- or D4-invariant support about a site, for example a charge carried by the six direction
+   qubits. Test its class with the clean pair test. If the class is w2, the six-position shell gives a doublet plus a
+   quartet. Then test which hopping sign makes the doublet lowest. Alternative route: an action mixing degenerate terms
+   (C15-type) with ordinary local representations.
 00. **The order-4 BKSF codes: an anomaly or an error?**
    - Bare finite pair tests yield three individually inferred negative signs if localization is assumed; consistent D2 localization remains open. Character twists preserve the odd sign count.
    - A nondegenerate fermion admits only even-minus patterns on D2 (abelian extensions).

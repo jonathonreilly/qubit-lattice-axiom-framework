@@ -83,5 +83,12 @@ blocks:
     runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py (PASS=12; cap 1800 s)
     exact: ["5 qubits/site: links + matter up/dn on one Z2 gauge field; commuting, dim 3", "dressed P-only endpoint maps to parent gauge charge by D=B_link P_up P_dn; fermion TJ=-1, up/dn locally related", "2O spin action on matter pair: rep, U(-1)=matter parity, doublet spin-1/2", "relative pair factor lambda_f m^2=+1; local matter spinors change pair factors, so the pattern is inherited not an anyon-invariant fractional class; invariant link ground vector not constructed"]
     independent_check: "independent landing review in progress; author packet preserved with provenance/scope banner"
+  C16-site-localizable-obstruction:
+    status: delivered_to_branch
+    note: docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py (PASS=11, 3 s)
+    exact: ["ker(H^2(O;Z2)->H^2(O;U(1))) = {0, w1^2}", "w2 forces local dim>=2 exactly for D2 (both), D4, T, O", "odd O-orbits only for stabilizers O, D4", "six-direction shell: linear A1+E+T1; spinorial E1/2+G3/2 or E5/2+G3/2", "B_v fixed by every vacuum-preserving realization in the campaign codes"]
+    conditional: "symmetry localization (same ansatz as lambda = theta eta)"
+    independent_check: "in progress (fresh-context same-model-family agent)"
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

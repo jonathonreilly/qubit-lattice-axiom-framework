@@ -17,6 +17,33 @@ adopted; every result is unaudited bounded support with a declared model.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
 
+## C16: why the cube-invariant realizations came out spinless; the six-direction shell
+
+- **Obstruction (conditional on symmetry localization).** If a rotation
+  group H about a site maps the Hamiltonian's Pauli terms to terms and the
+  fermion can sit on an H-invariant violated-term pattern, then its local
+  state is one-dimensional. So its class lies in
+  ker(H^2(H;Z2) -> H^2(H;U(1))).
+  - For O this kernel is {0, w1^2}, never w2.
+  - w2 forces degeneracy exactly for D2, D4, T and O. Cyclic groups and D3
+    do not, which is consistent with C8.
+- **Why this applies to every campaign code.** The single-site charge term
+  B_v is fixed by every vacuum-preserving realization: bare permutation
+  and the CZ-network Cliffords alike. This explains the spinless results
+  for C12 and C13.
+- **The sharpened target needs one of two things.**
+  - No charge term whose support is O- or D4-invariant about a site, so no
+    site-centred charge term like B_v.
+  - Or an action that mixes degenerate terms. That is C15's route, where
+    the spin was inherited.
+- **The owner's count.** One qubit per connecting direction gives the
+  smallest allowed shell: the six direction positions.
+  - For a spin-1/2-class charge they split as a doublet plus a quartet
+    (E1/2 + G3/2, or E5/2 + G3/2).
+  - For a trivial class they split as A1 + E + T1.
+- **Note:** `docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md`.
+- **Runner:** PASS=11, 3 s.
+
 ## C15: supplied matter doublet; conditional spin-class identification
 
 The construction:

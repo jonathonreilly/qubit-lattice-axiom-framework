@@ -1,6 +1,6 @@
 {
- "edge_count": 16194,
- "node_count": 7226,
+ "edge_count": 16197,
+ "node_count": 7227,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2120,6 +2120,10 @@
   },
   "autonomous_finite_record_window_bounded_theorem_note_2026-10-14": {
    "deps_hash": "47c9ce544854",
+   "out_degree": 3
+  },
+  "autonomous_local_record_finite_window_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f06733942b0d",
    "out_degree": 3
   },
   "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30": {

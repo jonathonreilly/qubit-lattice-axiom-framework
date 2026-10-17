@@ -1,0 +1,4 @@
+1 0 det= (1, 1) F2= 72 col2= 6 diag= (Fraction(1, 2), Fraction(-1, 2))
+1 1 det= (-2, 2) F2= 159/2 col2= 13/2 diag= (Fraction(-1, 2), Fraction(-1, 2))
+-1 0 det= (1, -1) F2= 72 col2= 6 diag= (Fraction(-1, 2), Fraction(-1, 2))
+-1 1 det= (2, 2) F2= 129/2 col2= 11/2 diag= (Fraction(1, 2), Fraction(-1, 2))

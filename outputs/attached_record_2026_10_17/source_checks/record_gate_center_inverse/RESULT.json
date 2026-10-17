@@ -1,0 +1,43 @@
+{
+  "method": "exact SymPy algebra, j scaled to 1; 12-site chains from checked lead unitary; no floating-point certificate",
+  "rows": [
+    {
+      "x": 1,
+      "arm": 0,
+      "frobenius_squared": "72",
+      "port_column_squared": "6",
+      "port_diagonal": "1/2 - I/2"
+    },
+    {
+      "x": 1,
+      "arm": 1,
+      "frobenius_squared": "159/2",
+      "port_column_squared": "13/2",
+      "port_diagonal": "-1/2 - I/2"
+    },
+    {
+      "x": 1,
+      "twolead_input_diagonal": "-I/2",
+      "onelead_update_denominator": "1/2"
+    },
+    {
+      "x": -1,
+      "arm": 0,
+      "frobenius_squared": "72",
+      "port_column_squared": "6",
+      "port_diagonal": "-1/2 - I/2"
+    },
+    {
+      "x": -1,
+      "arm": 1,
+      "frobenius_squared": "129/2",
+      "port_column_squared": "11/2",
+      "port_diagonal": "1/2 - I/2"
+    },
+    {
+      "x": -1,
+      "twolead_input_diagonal": "-I/2",
+      "onelead_update_denominator": "1/2"
+    }
+  ]
+}

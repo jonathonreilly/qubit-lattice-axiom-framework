@@ -109,6 +109,15 @@ permutation?
        three axis C2. So every character sends it to +1.
      - So a cubic-symmetric spin-1/2 class needs a degenerate,
        doublet-like fermion, like the two spin states of an electron.
+     - Scope: the constraint concerns the group fixing an occupied site.
+       Here every site is fixed by all of O (rotations about that site), so
+       it applies.
+       - A one-state fermion whose sites have smaller stabilizers can still
+         carry a spinor representation through its orbit multiplet.
+       - The class belongs to the space-group action. Its restrictions
+         about different centres can differ.
+       - The group theory was checked independently by explicit SU(2)
+         computation (loop pack, c8 independent_check/grouptheory).
 6. **Caution, from the exploration.** An earlier solver let S also
    create excitations next to the endpoints. It gave λ = +1 for the axis
    C2.

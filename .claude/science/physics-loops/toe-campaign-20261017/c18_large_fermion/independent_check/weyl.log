@@ -1,0 +1,12 @@
+term: path ('l', 'o') 0->(3, 4)@(0, 1, 0) amp i; breaks I*K: True
+   O-invariance residual 8.0e-16, hermiticity residual 0.0e+00
+   delta=0.005: deg at k* 4.4e-16; alpha([100],[111]) = [0.00333 0.00333]; band min at |k-k*|=0.0724 (m* alpha = 0.0771), E(k*)-Emin = 1.21e-04 (m* alpha^2/2 = 1.29e-04)
+   delta=0.02: deg at k* 2.7e-15; alpha([100],[111]) = [0.01333 0.01333]; band min at |k-k*|=0.2447 (m* alpha = 0.3085), E(k*)-Emin = 1.63e-03 (m* alpha^2/2 = 2.06e-03)
+term: path ('o', 'o') 0->(3, 4)@(0, 0, 0) amp 1; breaks I*K: True
+   O-invariance residual 0.0e+00, hermiticity residual 0.0e+00
+   delta=0.005: deg at k* 4.4e-16; alpha([100],[111]) = [0. 0.]; band min at |k-k*|=0.0000 (m* alpha = 0.0000), E(k*)-Emin = 6.22e-15 (m* alpha^2/2 = 2.28e-22)
+   delta=0.02: deg at k* 1.8e-15; alpha([100],[111]) = [0. 0.]; band min at |k-k*|=0.0000 (m* alpha = 0.0000), E(k*)-Emin = 3.55e-15 (m* alpha^2/2 = 5.70e-23)
+term: path ('o', 'o') 0->(0, 4)@(0, 0, 0) amp 1; breaks I*K: False
+   O-invariance residual 0.0e+00, hermiticity residual 0.0e+00
+   delta=0.005: deg at k* 4.4e-16; alpha([100],[111]) = [0. 0.]; band min at |k-k*|=0.0000 (m* alpha = 0.0000), E(k*)-Emin = 3.55e-15 (m* alpha^2/2 = 1.43e-21)
+   delta=0.02: deg at k* 2.2e-15; alpha([100],[111]) = [0. 0.]; band min at |k-k*|=0.0000 (m* alpha = 0.0000), E(k*)-Emin = 4.00e-15 (m* alpha^2/2 = 2.28e-22)

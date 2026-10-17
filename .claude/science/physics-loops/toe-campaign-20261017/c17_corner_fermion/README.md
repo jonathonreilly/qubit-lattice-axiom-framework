@@ -43,7 +43,7 @@ The direction positions (half-edges) lie on C4 axes. The corners lie only on edg
 
 ## Large-fermion view (`lowk.py`, `low_energy_valleys.log`)
 For square = plaquette = tube = π, triangle 0, t1 = -1, chiral -0.5 and t2 = ±0.1, ±0.3:
-- The lowest band minima sit at the 8 momenta (±π/2, ±π/2, ±π/2), each 2-fold degenerate.
+- Superseded (C18). For tube flux π the minimum is a single 2-fold level at one affine-fixed momentum. The earlier reading of 8 valleys came from not accounting for the momentum shifts.
 - So a fermion much larger than the grid would carry an 8-valued valley label times a doublet. The lattice-scale space-group data then appear as which momenta the valleys sit at, as with staggered-fermion tastes.
 
 Next: band-engineer a single doublet minimum at Γ or R. Then derive its k·p theory: in O without inversion, the E1/2 doublet allows a k·σ term.

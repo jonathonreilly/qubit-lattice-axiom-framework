@@ -1,0 +1,85 @@
+== Kramers: max |E_{2i}-E_{2i+1}| over 2000 random k, every band
+   (-1.0, 0.1, -0.5): max pair splitting 5.8e-15; min gap between pairs 4.308e-04
+   (-1.0, -0.1, -0.5): max pair splitting 8.0e-15; min gap between pairs 3.110e-04
+   (-1.0, 0.3, -0.5): max pair splitting 8.4e-15; min gap between pairs 7.929e-04
+   (-1.0, 0.1, 0.5): max pair splitting 6.7e-15; min gap between pairs 2.897e-04
+   (-1.0, 0.2, -0.3): max pair splitting 8.0e-15; min gap between pairs 4.253e-05
+
+== Hessian at k*, quartic anisotropy
+   (-1.0, 0.1, -0.5): k*=[ 1 -1  1]  E0=-3.555635  FD-Hessian eig [0.043224 0.043224 0.043224] (1/m* = 0.04322, spread 5.1e-10); fitted q^2 coeff over 13 dirs: spread 1.0e-12 (2*c2=0.04322)
+      quartic coeff c4 by dir: [-0.00156 -0.00156 -0.00156 -0.00074 -0.00074 -0.00074 -0.00074 -0.00046
+ -0.00046 -0.00046 -0.00074 -0.00074 -0.00098]  (c4 differs [100] vs [111]: anisotropic)
+      rel. [111]-[100] at dk: 0.2: 2.03e-03, 0.1: 5.06e-04, 0.05: 1.27e-04, 0.025: 3.16e-05   ratio a(0.1)/a(0.05) = 4.00 (4 = dk^2 scaling)
+   (-1.0, -0.1, -0.5): k*=[-1  1 -1]  E0=-3.555635  FD-Hessian eig [0.043224 0.043224 0.043224] (1/m* = 0.04322, spread 6.5e-10); fitted q^2 coeff over 13 dirs: spread 1.2e-12 (2*c2=0.04322)
+      quartic coeff c4 by dir: [-0.00156 -0.00156 -0.00156 -0.00074 -0.00074 -0.00074 -0.00074 -0.00046
+ -0.00046 -0.00046 -0.00074 -0.00074 -0.00098]  (c4 differs [100] vs [111]: anisotropic)
+      rel. [111]-[100] at dk: 0.2: 2.03e-03, 0.1: 5.06e-04, 0.05: 1.27e-04, 0.025: 3.16e-05   ratio a(0.1)/a(0.05) = 4.00 (4 = dk^2 scaling)
+   (-1.0, 0.3, -0.5): k*=[ 1 -1  1]  E0=-3.838478  FD-Hessian eig [0.111193 0.111193 0.111193] (1/m* = 0.11119, spread 7.0e-10); fitted q^2 coeff over 13 dirs: spread 1.7e-12 (2*c2=0.11119)
+      quartic coeff c4 by dir: [-0.00316 -0.00316 -0.00316 -0.00137 -0.00137 -0.00137 -0.00137 -0.00077
+ -0.00077 -0.00077 -0.00137 -0.00137 -0.0019 ]  (c4 differs [100] vs [111]: anisotropic)
+      rel. [111]-[100] at dk: 0.2: 1.73e-03, 0.1: 4.31e-04, 0.05: 1.08e-04, 0.025: 2.69e-05   ratio a(0.1)/a(0.05) = 4.00 (4 = dk^2 scaling)
+   (-1.0, 0.1, 0.5): k*=[-1  1 -1]  E0=-3.555635  FD-Hessian eig [0.043224 0.043224 0.043224] (1/m* = 0.04322, spread 5.1e-10); fitted q^2 coeff over 13 dirs: spread 1.0e-12 (2*c2=0.04322)
+      quartic coeff c4 by dir: [-0.00156 -0.00156 -0.00156 -0.00074 -0.00074 -0.00074 -0.00074 -0.00046
+ -0.00046 -0.00046 -0.00074 -0.00074 -0.00098]  (c4 differs [100] vs [111]: anisotropic)
+      rel. [111]-[100] at dk: 0.2: 2.03e-03, 0.1: 5.06e-04, 0.05: 1.27e-04, 0.025: 3.16e-05   ratio a(0.1)/a(0.05) = 4.00 (4 = dk^2 scaling)
+   (-1.0, 0.2, -0.3): k*=[ 1 -1  1]  E0=-3.131371  FD-Hessian eig [0.078059 0.078059 0.078059] (1/m* = 0.07806, spread 1.8e-10); fitted q^2 coeff over 13 dirs: spread 1.3e-12 (2*c2=0.07806)
+      quartic coeff c4 by dir: [-0.00236 -0.00236 -0.00236 -0.00106 -0.00106 -0.00106 -0.00106 -0.00062
+ -0.00062 -0.00062 -0.00106 -0.00106 -0.00145]  (c4 differs [100] vs [111]: anisotropic)
+      rel. [111]-[100] at dk: 0.2: 1.78e-03, 0.1: 4.45e-04, 0.05: 1.11e-04, 0.025: 2.78e-05   ratio a(0.1)/a(0.05) = 4.00 (4 = dk^2 scaling)
+
+== non-abelian Berry curvature of the lowest doublet at k* (Wilson loops)
+   (-1.0, 0.1, -0.5) plane (0, 1) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: -4.6e-13)
+   (-1.0, 0.1, -0.5) plane (0, 1) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 2.3e-13)
+   (-1.0, 0.1, -0.5) plane (1, 2) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 1.9e-13)
+   (-1.0, 0.1, -0.5) plane (1, 2) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 5.7e-12)
+   (-1.0, 0.1, -0.5) plane (2, 0) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: -4.0e-13)
+   (-1.0, 0.1, -0.5) plane (2, 0) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 3.6e-13)
+   (-1.0, 0.1, 0.5) plane (0, 1) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 3.7e-13)
+   (-1.0, 0.1, 0.5) plane (0, 1) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: -1.3e-12)
+   (-1.0, 0.1, 0.5) plane (1, 2) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: -6.2e-15)
+   (-1.0, 0.1, 0.5) plane (1, 2) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: -5.5e-12)
+   (-1.0, 0.1, 0.5) plane (2, 0) eps=0.04: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 2.6e-13)
+   (-1.0, 0.1, 0.5) plane (2, 0) eps=0.02: Wilson-loop phases/area = [-0.0006  0.0006]  (U(1) part det: 1.8e-13)
+
+== O x T invariant second-neighbour hops; which break I*K, and what they do at k*
+   path ('l', 'o') 0->(3, 4)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('l', 'o') 0->(3, 5)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('l', 'o') 0->(0, 4)@(np.int64(0), np.int64(1), np.int64(0)) amp 1: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(0, 4)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(0, 5)@(np.int64(0), np.int64(1), np.int64(0)) amp 1: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(0, 5)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(1, 4)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('l', 'o') 0->(1, 5)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('l', 'o') 0->(2, 4)@(np.int64(1), np.int64(0), np.int64(0)) amp 1: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(2, 4)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(2, 5)@(np.int64(1), np.int64(0), np.int64(0)) amp 1: |X|=1.00  BREAKS I*K
+   path ('l', 'o') 0->(2, 5)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(3, 4)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('o', 'l') 0->(3, 5)@(np.int64(0), np.int64(1), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('o', 'l') 0->(0, 4)@(np.int64(0), np.int64(0), np.int64(-1)) amp 1: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(0, 4)@(np.int64(0), np.int64(0), np.int64(-1)) amp i: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(0, 5)@(np.int64(0), np.int64(0), np.int64(1)) amp 1: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(0, 5)@(np.int64(0), np.int64(0), np.int64(1)) amp i: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(1, 4)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('o', 'l') 0->(1, 5)@(np.int64(1), np.int64(0), np.int64(0)) amp i: |X|=2.00  BREAKS I*K
+   path ('o', 'l') 0->(2, 4)@(np.int64(0), np.int64(0), np.int64(-1)) amp 1: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(2, 4)@(np.int64(0), np.int64(0), np.int64(-1)) amp i: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(2, 5)@(np.int64(0), np.int64(0), np.int64(1)) amp 1: |X|=1.00  BREAKS I*K
+   path ('o', 'l') 0->(2, 5)@(np.int64(0), np.int64(0), np.int64(1)) amp i: |X|=1.00  BREAKS I*K
+   path ('o', 'o') 0->(3, 4)@(0, 0, 0) amp 1: |X|=2.00  BREAKS I*K
+   path ('o', 'o') 0->(3, 5)@(0, 0, 0) amp 1: |X|=2.00  BREAKS I*K
+   path ('o', 'o') 0->(0, 4)@(0, 0, 0) amp 1: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(0, 4)@(0, 0, 0) amp i: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(0, 5)@(0, 0, 0) amp 1: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(0, 5)@(0, 0, 0) amp i: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(1, 4)@(0, 0, 0) amp 1: |X|=2.00  BREAKS I*K
+   path ('o', 'o') 0->(1, 5)@(0, 0, 0) amp 1: |X|=2.00  BREAKS I*K
+   path ('o', 'o') 0->(2, 4)@(0, 0, 0) amp 1: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(2, 4)@(0, 0, 0) amp i: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(2, 5)@(0, 0, 0) amp 1: |X|=1.00  I*K-even
+   path ('o', 'o') 0->(2, 5)@(0, 0, 0) amp i: |X|=1.00  I*K-even
+   28 of 36 nonzero symmetrized second-neighbour terms break I*K
+
+   perturb with ('l', 'o') 0->(3, 4)@(np.int64(0), np.int64(1), np.int64(0)) amp i, strength delta:
+     delta=0.02: split at k* 2.7e-15 (2O-protected), max split at random k 0.045, (E2-E1)/|dk| near k* for 3 dirs x q=1e-3,1e-2: [0.0267 0.0267 0.0267 0.0267 0.0267 0.0267] -> Weyl term 2*alpha
+     delta=0.05: split at k* 8.9e-16 (2O-protected), max split at random k 0.112, (E2-E1)/|dk| near k* for 3 dirs x q=1e-3,1e-2: [0.0667 0.0667 0.0667 0.0667 0.0667 0.0667] -> Weyl term 2*alpha

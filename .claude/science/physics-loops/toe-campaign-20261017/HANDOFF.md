@@ -26,7 +26,7 @@ adopted; every result is unaudited bounded support with a declared model.
 ## C18: the large fermion (owner's "electron much larger than the grid")
 
 - **One spin-1/2 doublet at long wavelengths.** For square = plaquette = tube = π, the site rotations fix exactly two crystal momenta, ±k* (affine action from the PSG). The corner fermion's band minimum is a single 2-fold level there. It has an isotropic mass, with anisotropy only at δk^4, and carries spin-1/2 (E1/2).
-- **The effective theory.** A wavepacket much larger than the grid is a nonrelativistic spin-1/2 particle. Lattice corrections are of order (a/w)^2.
+- **The effective theory.** A wavepacket much larger than the grid is a nonrelativistic spin-1/2 particle if the hopping keeps I·K (inversion × conjugation). If I·K is broken it is a spin-1/2 Kramers–Weyl fermion, linear and relativistic-looking (independent check).
 - **The qubit count.** The 48 qubits per site embed equivariantly into 5^3 blocks of one qubit per fine site.
 - **Open.** A uniform one-qubit rule producing the blocks; Dirac structure; charge.
 

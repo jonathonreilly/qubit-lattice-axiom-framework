@@ -1,0 +1,25 @@
+{
+  "status": "Distinct integration conditionally supported; no retained audit",
+  "review_sha256": "23d20111b2936a3b2e33557374ca17ae762f0083cd366140af2a113b8eb67c35",
+  "note_sha256": "cf1125b7b5e43c8fe65607f1f62c1ecc176257113a0ed78c497d4f6217b87d62",
+  "manifest_sha256": "d1e5b22e5dd0b7016e7796ae9eaadad258d3691c5e4b99124de883fe7d5299fd",
+  "mechanical_validation": {
+    "new_exact_proofs": 8,
+    "inherited_proofs": 146,
+    "repository_notes": 10,
+    "ancestral_manifests": 7,
+    "local_links": 10,
+    "note_sha256": "cf1125b7b5e43c8fe65607f1f62c1ecc176257113a0ed78c497d4f6217b87d62",
+    "manifest_sha256": "d1e5b22e5dd0b7016e7796ae9eaadad258d3691c5e4b99124de883fe7d5299fd",
+    "limits": "Mechanical identity/path checks only, not theorem verification."
+  },
+  "graph_validation": {
+    "old_nodes_unchanged": true,
+    "new_nodes": [
+      "faster_three_site_complete_output_bounded_theorem_note_2026-10-17"
+    ],
+    "node_count": 7236,
+    "edge_count": 16216,
+    "new_edges": 2
+  }
+}

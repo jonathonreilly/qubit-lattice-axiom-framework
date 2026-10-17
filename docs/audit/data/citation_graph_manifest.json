@@ -1,6 +1,6 @@
 {
- "edge_count": 16214,
- "node_count": 7235,
+ "edge_count": 16216,
+ "node_count": 7236,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6624,6 +6624,10 @@
   },
   "fast_vacancy_motion_after_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
+   "out_degree": 2
+  },
+  "faster_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e809197d8377",
    "out_degree": 2
   },
   "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {

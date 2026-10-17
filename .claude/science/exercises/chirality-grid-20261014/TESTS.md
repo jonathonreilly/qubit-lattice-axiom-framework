@@ -746,3 +746,17 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **c4, speed terms.** There are 5 cubic-covariant speed structures per field (3 anisotropic rod terms at tree level), against 1 in GEN-1. The Eg order also needs non-covariant speed counterterms, so n ≥ 7 against GEN-1's 2.
 - **c6, cell crystals.** At even period c, every corner folds onto Γ and the folded index is 0. At odd period c, or with floating cells, it is safe.
 - **Reading (supervisor).** Generations as orientations bring back the corner package's strain and Lorentz-violation problems, because rotations act on the label. Generations as an internal label (GEN-1, X2′) stays the better placement.
+
+**LOCK-1. Do the repo's own record rules lock matter into an even-period pattern?** (pre-registered 2026-10-17T21:36Z; Jon: "run the record-rule locking check"). Cap 0.4 GB.
+- **Why.** GEN-2's c6 shows an even-period vacuum pattern folds every corner onto Γ and removes X2′'s index protection; odd-period and floating patterns are safe. Blocks 117 (record gas makes a chessboard when bonds are expensive) and 133 (body on one sublattice) suggest the framework's rules lean toward period 2.
+- **Task.** Take the record rules already landed on main: block 117's record gas, the admissibility and one-record-per-site rules, and the moving-records rules (blocks 121–143), as written there, not invented. Find the ground state, or the low-temperature state, over the parameter ranges main gives, on Z³ at densities 1/8–1/2. Classify it as:
+  - period-2 locked;
+  - odd-period locked;
+  - other even period;
+  - liquid / floating.
+- **Readings.**
+  - **LOCK-EVEN:** every landed rule family gives an even-period lock across its stated parameter range, wherever it orders.
+  - **LOCK-SAFE:** some landed family, in its stated range, gives a liquid or odd-period state at matter-relevant density.
+  - **LOCK-MIXED:** both occur, with the boundary stated.
+  - **OPEN:** otherwise.
+- **Scope to state:** which rules, which parameters, finite size, and the method (exact enumeration, Monte Carlo, or mean-field).

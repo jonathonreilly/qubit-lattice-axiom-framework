@@ -699,3 +699,5 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
   - Every λ_min is about −1e-7 relative, 1–4 orders below E, including the vector-like O reference. So no sign is established, and there is no power.
   - The chiral phase does not affect the kernel (Δλ = 1.6e-9).
   - Side finding: at Lx = 4 with the hard weight, even the Wilson kernel has an unresolved negative λ_min.
+
+**Referee queue (recorded 11:46Z 10-17).** The codex account hit its usage limit; it resets 2026-10-22 02:13. The TOR-1 referee failed at start (`ref_TOR1/codex_run.log`). Queued for the other-vendor referee once codex resets: TOR-1, GEN-1, QMC-1b. Until then these results are same-family and unrefereed, and are labelled so.

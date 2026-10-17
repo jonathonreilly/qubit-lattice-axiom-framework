@@ -635,4 +635,5 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
     - The singlet-sector factorisation is correct on even periodic square lattices, but production did not use it.
     - The Spin(8) link construction is algebraically sound but untested.
     - The cost model is a reasonable order-of-magnitude extrapolation.
+- **Supervisor note on the "missing" gate-(iii) data.** That was a packaging error: the supervisor left `gate3_*.npz` out of the referee's folder. The corrected files (`gate3_dt005.npz`, `gate3_dt010.npz`) are archived on the branch under `campaign/QMC1/scripts/runs/`. The referee's independent replacement check is archived as `referee/ref_gate3.npz`.
 - **Strongest correct statement (referee).** A validated sign-free AFQMC pilot shows strong 10-vector correlations spanning the box once the mirror propagator is strongly suppressed. That suggests a GPR-like crossover. It does not establish a mirror spectral gap, GPR mass generation, or SMG.

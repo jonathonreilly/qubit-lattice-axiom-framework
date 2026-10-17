@@ -136,6 +136,17 @@ for P_R.
          obstruction), or λ = θ_f η_f fails for some of these C2.
        - The W-twists of item 6 flip two of the three signs at a time.
          They preserve the odd count, so they do not remove the tension.
+       - Exploratory evidence (loop pack, c14):
+         - For these codes, P_R turns a bare hop into a hop times a
+           flux-creating factor, so no scalar fermion map exists in an
+           ordering's convention.
+         - None of 12 x 4096 corner-dressed flux conventions is
+           D2-invariant, whereas D3 codes have such conventions.
+         - This is consistent with a localization obstruction but does not
+           prove one.
+       - The group-theory steps were checked independently by explicit
+         SU(2) computation (22/22; loop pack, c8 independent_check/
+         grouptheory).
      - This does not affect D3 or Z2: there every class is compatible with
        a nondegenerate fermion, since H^2(D3; U(1)) = 0.
 6. **The class belongs to the realization.**

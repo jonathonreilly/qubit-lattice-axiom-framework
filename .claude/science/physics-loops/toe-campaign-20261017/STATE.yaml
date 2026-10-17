@@ -6,7 +6,7 @@ mode: campaign
 delivery: milestone
 target: best-honest-status
 lane: N1 (electron as emergent excitation of neighbourhood conditions)
-active_block: C4 (next ranked; see OPPORTUNITY_QUEUE)
+active_block: C5 (next ranked; see OPPORTUNITY_QUEUE)
 blocks:
   C1-one-qubit-nn-stabilizer-rules:
     status: delivered_to_branch
@@ -29,6 +29,13 @@ blocks:
     runner: scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py (PASS=10 with Singular)
     exact: ["unsoldered: 8 interleaved toric codes, bounded code dim, coherently 3D-mobile bosons", "soldered C4/C3-fixed class: 11 maximal sets; valid sub-rules of 10 have growing code dim (rank bound); the eight 3-orbit rules have no 3D-mobile charge; 187-family obstructed as in C2"]
     independent_check: "A confirmed; B counts confirmed; found 23/31/187 unions contain -1 (not rules) -> claims restated via rank bound; 3-orbit rules valid; 187-family dichotomy confirmed"
+    trace_class: frontier_discovery
+  C4-fermion-search:
+    status: delivered_to_branch
+    note: docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py (PASS=8; --full adds axis-C2 enumeration)
+    exact: ["alphabet lemma", "soldered rotation-fixed class: no bounded rule with free-variable-preserving motion", "unsoldered C4/C3: 36 bounded maximal rules, all toric-code-type, bosonic"]
+    independent_check: running
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

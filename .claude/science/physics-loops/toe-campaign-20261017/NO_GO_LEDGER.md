@@ -10,3 +10,8 @@
 - C3: three axis qubits, soldered, C4/C3-fixed strings. No maximal rule has
   bounded nonzero code dimension together with a three-dimensionally mobile
   charge. Unsoldered labels do allow one (eight interleaved toric codes).
+- C4: no coherently three-dimensionally mobile fermion in the symmetric
+  three-axis-qubit classes. Soldered rules (rotation-fixed strings) have no
+  coherent mobility at all. The unsoldered C4/C3 class has only bosons. This
+  is restricted to symmetric generators, same-site charge patterns and
+  maximal sets.

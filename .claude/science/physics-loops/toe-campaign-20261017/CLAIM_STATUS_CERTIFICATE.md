@@ -35,4 +35,12 @@
 - Independent check: Part A confirmed. Part B's counts confirmed. It found
   that the 23-, 31- and 187-orbit unions contain -1; the claims are now
   stated through the rank bound.
+
+## C4
+- Note: `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Runner: `scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py` (PASS=8)
+- Status: bounded support, unaudited. Exact within the supplied model and
+  the stated search restrictions.
+- Independent check: running.
+- Intended claim_type: bounded_theorem. Trace: frontier_discovery.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.

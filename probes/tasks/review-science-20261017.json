@@ -15,68 +15,212 @@
     },
     "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
     "research_target": "Advance one precise interface toward a bosonic site-local cubic code with a genuine proper-cubic O action, ordinary local excitations, and a fermionic charge with an internal representation of dimension at least two whose localized symmetry carries w2. Choose ONE new construction, exact localization lemma, compatible vacuum construction or rigorously scoped obstruction. State the full Hilbert-space group action and group law, the charge/local-operator quotient and admissible dressings, and the vacuum reference. A central extension acting nontrivially on local excitations is not a genuine O action; the supplied C15 matter-only 2O action and clean-pair signs do not solve this target. For a positive fractionalization result, construct the localized operators and prove their composition/gauge equivalence and representative invariance, including the D2 restrictions; a multiplication of pair eigenvalues alone is insufficient. For a vacuum result, distinguish an invariant code subspace or ray from a common phase-one vector for a consistently phased group representation, and state finite-volume, boundary and any infinite-volume scope. A useful exact partial result or counterexample is welcome; identify the first remaining obstruction without turning finite search failure into a universal exclusion.",
-    "what": "Advance one precise interface toward a bosonic site-local cubic code with a genuine proper-cubic O action, ordinary local excitations, and a fermionic charge with an internal representation of dimension at least two whose localized symmetry carries w2. Choose ONE new construction, exact localization lemma, compatible vacuum construction or rigorously scoped obstruction. State the full Hilbert-space group action and group law, the charge/local-operator quotient and admissible dressings, and the vacuum reference. A central extension acting nontrivially on local excitations is not a genuine O action; the supplied C15 matter-only 2O action and clean-pair signs do not solve this target. For a positive fractionalization result, construct the localized operators and prove their composition/gauge equivalence and representative invariance, including the D2 restrictions; a multiplication of pair eigenvalues alone is insufficient. For a vacuum result, distinguish an invariant code subspace or ray from a common phase-one vector for a consistently phased group representation, and state finite-volume, boundary and any infinite-volume scope. A useful exact partial result or counterexample is welcome; identify the first remaining obstruction without turning finite search failure into a universal exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. Known starting evidence: corrected occupation parities, D=B_link P_up P_dn, exact matter exterior-algebra action, finite fermionic junction signs, local-spinor representative dependence and finite invariant-ray tests. Repeating those or relabelling an inherited spinor is not a new HIT. The five-qubit model is supplied, not derived from the one-qubit framework; state every physical import. Keep C12 representative caveats, C8 conditional D3/single-C2 inference and open D2 localization, and prior unadopted exclusion candidates intact. Before work, reconcile active claims/current main and related signed-corner task; this target is an interacting charged-sector/localization problem, not a second corner-walk classification.",
+    "what": "Advance one precise interface toward a bosonic site-local cubic code with a genuine proper-cubic O action, ordinary local excitations, and a fermionic charge with an internal representation of dimension at least two whose localized symmetry carries w2. Choose ONE new construction, exact localization lemma, compatible vacuum construction or rigorously scoped obstruction. State the full Hilbert-space group action and group law, the charge/local-operator quotient and admissible dressings, and the vacuum reference. A central extension acting nontrivially on local excitations is not a genuine O action; the supplied C15 matter-only 2O action and clean-pair signs do not solve this target. For a positive fractionalization result, construct the localized operators and prove their composition/gauge equivalence and representative invariance, including the D2 restrictions; a multiplication of pair eigenvalues alone is insufficient. For a vacuum result, distinguish an invariant code subspace or ray from a common phase-one vector for a consistently phased group representation, and state finite-volume, boundary and any infinite-volume scope. A useful exact partial result or counterexample is welcome; identify the first remaining obstruction without turning finite search failure into a universal exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. Known starting evidence: corrected occupation parities, D=B_link P_up P_dn, exact matter exterior-algebra action, finite fermionic junction signs, local-spinor representative dependence and finite invariant-ray tests. Repeating those or relabelling an inherited spinor is not a new HIT. The five-qubit model is supplied, not derived from the one-qubit framework; state every physical import. Keep C12 representative caveats, C8 conditional D3/single-C2 inference and open D2 localization, and prior unadopted exclusion candidates intact. Before work, reconcile active claims/current main and related signed-corner task; this target is an interacting charged-sector/localization problem, not a second corner-walk classification. Review9671 update: the six-direction-qubit emergent-electron route is retired as a campaign choice, with exact source recovery in archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json; its valid bounded half-edge encoding remains canonical. Do not revive a universal C4 exclusion: binary C4 admits eighth-root characters, and the localized obstruction requires a one-dimensional sector plus fusion-compatible Z2 localization. Reconcile the supplied corner code and genuine-O action with localized representative invariance, translation-rotation relations and D2 restrictions. Its paired eigenvalue checks are not the missing localization theorem. Numerical lowest-band candidates do not establish a global minimum or uniqueness of local minima. The selected 5-cube embedding, frozen spectators and range-nine interactions do not derive a unit-translation-invariant nearest-neighbour one-qubit rule. Treat these as distinct residual obligations, and choose one precise advance rather than treating the supplied construction as completion. The repaired finite pair test uses an explicitly unwrapped creator family with contractible comparison loops. Four original periodic shortest-path cases are genuine noncontractible logical loops, not scalar eigenvalues. Preserve that torus-sector distinction when proving admissible-dressing and localized representative invariance; do not reuse old 18/18 transcripts as current coverage certificates. The later supplied Weyl-pair/mass construction has corrected velocity and a numerically checked leading joint momentum/mass Dirac algebra. It does not supply a global low-energy Dirac vacuum, a qubit implementation of the new terms, a mass-generation mechanism or physical charge. Its rank counts are sampled lower bounds and its Schur selection rule is first-order and conditional; these new model observations do not complete the localized-charge task.",
     "source_branch": {
       "name": "main",
-      "head": "a3fbc858bc08bd5e152effc4e681062652367840",
+      "head": "f1f65356644f171a1e10b28c63b218e0caca333c",
       "on_origin": true
     },
     "source_paths": [
       ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
       ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
       ".claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/README.md",
+      "archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json",
+      "archive/six_direction_qubit_lane_2026_10_17/README.md",
+      "docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md",
       "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
       "docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
       "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
       "docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.json",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.py.txt",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.json",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.py.txt",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.json",
+      "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.py.txt",
+      "scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py",
+      "scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py",
+      "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py",
+      "scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+      "scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py",
+      "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+      "scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py",
+      "scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py",
       "scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py",
+      "scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py",
       "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py"
     ],
     "source_objects": [
       {
         "path": ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
-        "sha256": "b59642396f48c846435003365fe8869126b845526d029e1314f5e9f9486c1847",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "b32e143a95f1f60829c59231f4d4b7cc12872678fe63a9ff232c042101324fdd"
       },
       {
         "path": ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
-        "sha256": "a7a6dd0a4d5e3af188cda818c3cbb070095982e0b2024dd8022ea06d21be9a40",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "76d8994718d0ef291f314f0faec5b18bafcabba39aa66e28bd0b0be1d13d14d7"
       },
       {
         "path": ".claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/README.md",
-        "sha256": "8360246d7fbc2eaaf3904a7b87208a2bc93804ab778f83011ee0934bf3390914",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "8360246d7fbc2eaaf3904a7b87208a2bc93804ab778f83011ee0934bf3390914"
+      },
+      {
+        "path": "archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "06767727a58e000881f52adb5be0df17728998a905fb21d9d95afefce5e7d2aa"
+      },
+      {
+        "path": "archive/six_direction_qubit_lane_2026_10_17/README.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "968a7fa32a29f18cc341596f1e5a34e351357e04bede911f8a7b17cab2d77274"
+      },
+      {
+        "path": "docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "5edf0921d2d799672ac6560b8a8a5a91e3a4efafa833f69659950081f97758c2"
       },
       {
         "path": "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
-        "sha256": "0a9afc47c2a0f07cb2ee3ed084035752a9789ee128e709426f95f8a2110a28c9",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "0a9afc47c2a0f07cb2ee3ed084035752a9789ee128e709426f95f8a2110a28c9"
+      },
+      {
+        "path": "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "dfd8fd1eea099032753a1d6b42a84d5b681dac58cef56a4847ed53645ade9c11"
+      },
+      {
+        "path": "docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "2efab2f13a8e3a66c9dc452272b4a6d3c4216ae4f52505f605c40556e0073181"
+      },
+      {
+        "path": "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "33588efe60859cc6babcd0a73939438af1bd0564b99e956fbcd6d3542d9ee8bb"
+      },
+      {
+        "path": "docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "94c2ca7c38f7cc83c7e16b2ade40ee9f3d58c2ca7130fb001c604c17b8ab6477"
       },
       {
         "path": "docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
-        "sha256": "b9cdc90d3a9b49a067a528c476cf95c6eab4feae775ea48997b9b1bb7bb06717",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "b9cdc90d3a9b49a067a528c476cf95c6eab4feae775ea48997b9b1bb7bb06717"
       },
       {
         "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "1a31eca8375ae6ec77b3bfec4bd3f288c2f8566a03f93c2ab46716a4fbfd21d8"
+      },
+      {
+        "path": "docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "cb4e396b663387d7d47b61663d1ce96ae4f9b81a37870661871c98961b2a08e5"
       },
       {
         "path": "docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
-        "sha256": "23ef3bdac1bd0bc49624846cef99d8a3d212d9547fb4323b2f9e315f7d2626ff",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "23ef3bdac1bd0bc49624846cef99d8a3d212d9547fb4323b2f9e315f7d2626ff"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.json",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "016628281d316c082edac0bceab1cf1375e74bfdfb42e9f56fcfe15a33d88f1f"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.py.txt",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "7f0c233d71be891fb1fd6e9a5b4ff0d423e0e6d906fd5416f7fd08c4fd957423"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.json",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "5b25ba640e64961cc18d282043d04fb86cbd373f786b81f6bfc98cdc9d354bb0"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.py.txt",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "feadcd02bb674b919bca54ee29e37b4f0f03b6a24a95bf8383f5f2e32bd0a48a"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.json",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "cff9c22417842d3ca0a520b797fab7be173cd19fb5608d860e8fe57c6f824601"
+      },
+      {
+        "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.py.txt",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "e939e6884168e8960fa2e420a7645d60cd547dcbcc01784a5a38aa8f9025d234"
+      },
+      {
+        "path": "scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "baf786a5633a6b4f5e9d95e9d80a645bb5f3fcf9ea0825121d54fded38b697c7"
+      },
+      {
+        "path": "scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "1f9df6279783d86841ce6cae79a02319f2b605cac2875e5a71d6dd4fb4ed21b0"
+      },
+      {
+        "path": "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "2c3b2a1a88641a1a7009bfbacdb575c4b1824299e71729f522aee9cff394b114"
+      },
+      {
+        "path": "scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "21e75730b3fd3ff88e87e500f51bb2bdf0afcb3d0479c34eeeafb2417e5e2d81"
+      },
+      {
+        "path": "scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "389f1f2e03ae439724040a3d4dc479c7d2fb01d28e511f495112b3dd73e9ad2e"
+      },
+      {
+        "path": "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "b2d26b31602726478846f4aac7346c61f741ff3049f722fa9b8dcb1575294b92"
+      },
+      {
+        "path": "scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "0e60313a17d8198dfaae11f5387394ca991c6308f8b746b05272b40cf906333a"
+      },
+      {
+        "path": "scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "643236c246d55b151b4ced1ec0d6fb3506b927da8fe341899bcdbec0b4f3ee92"
       },
       {
         "path": "scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py",
-        "sha256": "2bada2e18c5e4cf0783a6b5e0c3c4deadc05b55213df6ad51fd4c43d5c53d48e",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "2bada2e18c5e4cf0783a6b5e0c3c4deadc05b55213df6ad51fd4c43d5c53d48e"
+      },
+      {
+        "path": "scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py",
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "4f36f8648e166ed4bd1a848aa206a34e78c5c6e7322f29a0355126fd9b86efc0"
       },
       {
         "path": "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py",
-        "sha256": "053cbe8d3cf02759988b941c19b18e1720b4252c50b2f3c299461b803c3ffc60",
-        "commit": "a3fbc858bc08bd5e152effc4e681062652367840"
+        "commit": "f1f65356644f171a1e10b28c63b218e0caca333c",
+        "sha256": "053cbe8d3cf02759988b941c19b18e1720b4252c50b2f3c299461b803c3ffc60"
       }
     ],
     "related_tasks": [

@@ -1,0 +1,68 @@
+# Narrow compatibility check: weighted static estimate plus thin-strip escape
+
+Finding: the component estimates are compatible and their stated sum proves the proposed conditional complete operator ceilings <.000058 for every t>=10^27 and <.001058 on [10^27,2*10^27] for the single fixed M=5*10^28 device. No correction is required. This is a composition check, not a repeated proof of the component estimates or an audit verdict.
+
+## Frozen source identities
+
+All paths below are relative to `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/` (N).
+
+| Source | SHA256 |
+|---|---|
+| WEIGHTED_STRIP_COMPOSITION.md | 27d36e89ed7b5389b4bf929030367de3ce6c2f490d0195074a62d4912fdd0b82 |
+| core_strip_contour/CORRECTED_V2.md | d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874 |
+| core_strip_contour_independent_check/REVIEW.md | 297e324d25905a1a70fa934f37dc1c1b3c2c32051bda2a888e7ddc09b7628dc1 |
+| core_strip_scalar_independent_check/REVIEW.md | 2fa1b96545f01eb9d38a5682a9018dcff341f68efc11d979476487d4d14b0fa0 |
+| endpoint_weighted_profile/PROPOSAL.md | 28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c |
+| endpoint_weighted_profile_independent_check/REVIEW.md | 74ca5c9f8137e0f37afc762dc79bddbe0642bca3cc4e3f09fe32a596f2a4d948 |
+| resource_next_sources/ENDPOINT_NOTE_716e159253.md | 5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221 |
+
+The composition, full core review and corrected source were read completely. The original uncorrected core proposal was also exposed, SHA256 4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31; its obsolete .0026255 sum is not used. This reviewer authored the listed scalar and weighted independent reports; their reasoning and sources are reused, not represented as newly independent evidence. The canonical finite transfer and comparator definitions were refreshed directly. Every table hash was verified in this task. No scientific executable, inherited checker or simulation was run. Only source reads/hashes and this report write occurred; no W/Git, source, checkpoint or prompt changes occurred.
+
+## Common physical and mathematical objects
+
+All components use the exact same fixed kappa=10^-12, sigma=10^-6, J, E0, interval I, physical endpoint device, delivered emitter product seed, old/source fiber and reference planes. The weighted estimate improves an inequality on the actual F_j, not the apparatus or its scattering columns. Its reference f=Fref/sqrt(p0), including the original common complex phase and exp(i113k), is unchanged. In particular it does not reweight the prepared state by the spectral variance or construct a different packet.
+
+The intermediate comparison packet in both arguments has coefficient a0,j=conjugate(omega_p f) multiplying the SAME actual unit-incoming generalized column Phi_j. Arbitrary old input coefficients are not conjugated. The weighted bound replaces only the preparation-to-that-packet cost and the outgoing discrepancy between R_inst,j a0,j and omega_p f. It keeps both contributions, rather than assuming R_inst,j a0,j=omega_p f exactly.
+
+The localized C_j continued by the core review is the remainder of that same Phi_j after subtracting its actual incoming and reflected open waves; it contains all finite coordinates and closed tails. The contour integrates a0,j C_j. Neither the weighted argument nor the composition replaces C_j by a reference response or removes its reflected-wave contribution. In particular no 1/R coefficient from the older alternative comparison packet has been mixed into the new contour proof.
+
+On the real interval the continued a0,j in the core proof agrees exactly with conjugate(omega_p f). Its Dbar denominator and exp(-i113z) are the correct continuation of that coefficient. The target scalar proof instead uses Dref and exp(i113z). These differing continuations serve distinct terms of one real-axis decomposition and need not be identified with each other. The unchanged incoming contour also uses the same a0,j. It can use its original deeper pole-free strip independently of the thinner strip needed for C_j; there is no requirement to continue C_j to the incoming contour's depth.
+
+All packet phases retain exp(-itb_j), the physical scalar exp(-ic_new t), and W's omega_p. Thus the comparator is still
+
+    Uout(t)x=exp(-ic_new t) E_out(beta_t)
+                 tensor [iota exp(-itK) W x],
+    beta_t=p_t/||p_t||, p_t=b_t restricted to m>=0,
+    b_t(m)=(2pi)^(-1/2) integral_I f(k)exp(ikm-itE(k))dk.
+
+No traversal time is subtracted, no old aging is commuted through the interacting Hamiltonian, and no per-column target phase is introduced. The target normalization is positive; the scalar result guarantees p_t is nonzero on the time domain in question.
+
+## Exhaustive budget and aggregation
+
+The triangle decomposition has five costs: preparation, paid outgoing discrepancy, incoming open wave, localized remainder, and target positive normalization. The first two have already been combined into the weighted static <5.68e-5. The preparation part retains the off-band/point-spectrum residual and its within-parity sqrt(2) aggregation. The localized <3e-7 is likewise already a complete operator estimate, with the possible overlap of two old-energy columns paid. These factors should not be removed or applied a second time.
+
+The incoming and outgoing open errors occupy orthogonal fixed internal u_j fibers, so their complete operator norms use the maximum scalar-column bounds. The scalar normalization cost is common to the normalized output profile and multiplies the old unitary; it incurs no old-column multiplicity. Different parities remain orthogonal. Arbitrary passive references preserve all these operator bounds. Consequently these are compatible operator norms on the same input space and output Hilbert space; no independence of the error vectors is needed to sum them.
+
+For all t>=T=10^27 the stated ceilings give
+
+    total <5.68e-5+3e-7+2e-7+1e-32
+          =.0000573+1e-32 <.000058.
+
+The remaining margin is .0000007−1e-32>0. Unlike the obsolete core-only sum, this rounded total explicitly has room for the positive normalization allowance. Each imported time-dependent estimate holds uniformly for all t>=T. No separate linear q_t term is needed: the compared physical outgoing packet is already restricted to m>=0, and the exact remaining normalization cost is 1−sqrt(1−q_t²).
+
+## Fixed finite apparatus and target identity
+
+The canonical finite transfer compares the literal finite evolution, embedded into the infinite output space, to the SAME infinite physical evolution from the delivered seed. It is independent of which mathematical comparison packet was used to bound the latter. The compensated last site keeps diagonal 2J. The first omitted site is distance M+23 from the seed, and the radius-18 polynomial bound applies on the full seed input subspace, including passive-reference extension.
+
+For M=50T=5*10^28 fixed before delivery and t<=2T, the inherited transfer is
+
+    ||U_M(t)−U_infinity(t)||_seed
+       <=4 exp[-(M+23)+18t sinh(1)]/(1-exp(-1))<.001.
+
+Its triangle comparison is against the embedded ORIGINAL infinite beta_t, not a truncated-and-renormalized finite waveform. Thus no extra target identity change or uncharged finite normalization is concealed. Combining with the infinite estimate gives <.001058 on [T,2T], with the unchanged M+116 qubit count. This comparison includes whatever target amplitude lies beyond the finite support through the common-space norm; it does not require setting that amplitude to zero.
+
+Both sharpened ceilings are below .0013 and .0023 respectively, so the original advertised tolerance pair also follows at this new onset under the composed conditional premises. The factor-two pure-isometry/trace-norm implication gives the stated unhalved trace ceilings .000116 and .002116, retaining arbitrary passive references. The finite guarantee is only on the specified window, not for every later time.
+
+## Scope and limits
+
+This check establishes exact compatibility and arithmetic given the separately checked scalar, weighted and full-core components. The independent full-core report is an imported premise here; its analytic continuation was not independently re-proved by this reviewer. The source's supplied Hamiltonian/state, calibration and spectral assumptions remain exposed. No coupling-family transfer, native supplier identification, practical size, optimal resource claim, permanent finite halt, simulation or retained audit follows. No source correction is requested.

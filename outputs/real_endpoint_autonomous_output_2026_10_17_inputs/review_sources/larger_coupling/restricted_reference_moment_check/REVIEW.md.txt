@@ -1,0 +1,90 @@
+# Restricted reference moment: narrow analytical review
+
+Finding: the restricted-moment improvement and complete static aggregation are correct under the explicitly stated reference/actual mass premises and same-coupling ratio interface. No correction is needed. In particular delta<1.6e-6 and static error<.000319 follow at kappa=10^-8. This does not independently establish those mass premises or any runtime/composition claim.
+
+## Sources and exposure
+
+- Root candidate `../restricted_reference_moment/PROPOSAL.md`, read completely, SHA256 `f76d55f9c51f582cf519bc025d5ae54e51d514023eaab7def6993c1cde782762`.
+- Current endpoint note, previously read including its complete weighted-profile derivation, SHA256 `d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9`.
+- `../endpoint_coupling_interface_check/REVIEW.md`, read completely to establish the precise reused coupling/ratio interface, SHA256 `c89dbf5a567e4c2c38db93c3cc2ccba95456f0942073d94121ec87432594efc2`. It pins its proposal at `7d1cb4ba6fa19a2529f1453ab5a471207dfa1156d801cbaa944bc639ab191676`. That proposal's hash was checked here; its full argument is not independently re-reviewed in this narrow check.
+- The actual/reference mass values remain explicit conditions from the separately assessed spectral-mass route. I authored that assessment and the downstream Schur-strip proposal. This is source-exposed checking of the root's new restricted-moment step, not a blind check or an independent endorsement of my own upstream/downstream work.
+
+No scientific code, numerical quadrature, simulation or inherited execution was used. Tools only read/hash files and write this report. No W/Git/PR/checkpoint/prompt edit or new agent was made. The selected model/effort and previously read unchanged methodological guidance are preserved.
+
+## 1. Exact numerator, shift and normalization
+
+Use the exact reference on the original real interval I, of width 2sigma=2e-6:
+
+    Fref=i kappa E'(k) exp(i(ell+1)k) rho_g(k)
+                /[sqrt(2pi) J Dref(k)],
+    Dref=x+alpha exp(ik), x=E(k)-E0, alpha=kappa^2/J,
+    f=Fref/sqrt(p0), p0=integral_I |Fref|^2 dk.
+
+The unit-modulus propagation and rho_g factors disappear only in this absolute-value estimate. They are not removed from f or changed in the target. There is one factor J in the amplitude denominator and the Fourier/spectral normalization is sqrt(2pi), exactly as in the source.
+
+For s=|k-k0|, monotonicity E'>v on the whole interval between k and k0 yields vs<=|x|, on both sides of k0. The reference resonance is shifted by alpha cos(k); it is not legitimate to replace |Dref| by |x|. Instead the proposed argument correctly uses
+
+    |x|=|Dref-alpha exp(ik)|<=|Dref|+alpha,
+    |Dref|>=Im Dref=alpha sin(k),
+    |x|/|Dref|<=1+1/sin(k)<3.5.
+
+Thus s/|Dref|<140. At k=k0 the left side is zero and Dref is nonzero for this positive kappa, so there is no exceptional central point or division by x.
+
+With the conditional p0>1-4.54e-8, one has 1/sqrt(p0)<1.0000001: multiplying (1-4.54e-8) by (1.0000001)^2 gives a number greater than one. Hence
+
+    s|f| <kappa * [.062/(2*.03)]*140*1.0000001
+           <144.666682 kappa<145kappa.
+
+The lower bound sqrt(2pi)>2 is conservative. No factor of two or J is missing.
+
+## 2. Finite-band integration and weighted ratio
+
+Squaring the pointwise estimate and integrating against dk on exactly I gives
+
+    ||s f||_2^2 <(2e-6)*145^2*kappa^2
+                  =.04205 kappa^2
+                  <.0441 kappa^2=(.21kappa)^2.
+
+There is no additional density Jacobian: Fref and f are already coefficients normalized in dk. Nor is there another 1/(2pi) in this L2 integral; that normalization is already present in Fref. The finite interval width, not a whole-line second moment, is the essential improvement.
+
+The reused same-coupling complex-ratio interface says
+
+    |Fj/Fref-omega_p|<2e-13+750s.
+
+Fref is nonzero on I for this positive kappa because E'>v and Im Dref>0. Multiplication by |f| and the L2 triangle inequality, using ||f||_2=1, give
+
+    delta_j=||Fj/sqrt(p0)-omega_p f||_2
+            <2e-13+750*.21*kappa.
+
+At kappa=10^-8 this is 1.5750002e-6<1.6e-6. This bounds the complex error, not a signed average, phase-only error or modulus-only error. No globally Lorentzian density is invoked. Missing reference mass remains charged through p0, and missing actual mass has not been altered at all.
+
+## 3. Complete static operator cost
+
+Let g_j=omega_p f and a0,j=conjugate(g_j), multiplying the same actual incoming generalized column. The local synthesis isometry from the reused coupling interface yields the per-column in-band comparison
+
+    ||Fj-g_j||_2
+       <=sqrt(p0)delta_j+1-sqrt(p0)
+       <1.6e-6+4.54e-8.
+
+Here 1-sqrt(p0)=(1-p0)/(1+sqrt(p0))<=1-p0; the reference deficit bound is an external condition. Adding the separately conditional actual exterior amplitude .000221 retains point spectrum and all other exterior spectral types. The two old-energy residuals within one parity may overlap, so the preparation operator cost retains sqrt(2)<1.415.
+
+For e_j=Fj/sqrt(p0)-g_j, the exact real-seed identity and |R_inst,j|=1 on the real band give
+
+    R_inst,j conjugate(g_j)-g_j=e_j-R_inst,j conjugate(e_j),
+
+so the outgoing discrepancy is at most 2delta_j. Its distinct old-column output fibers are orthogonal, and Fourier propagation plus half-line restriction are contractions. Thus no additional sqrt(2) belongs on this outgoing term. The identity only conjugates fixed basis-column scalar profiles; it does not conjugate arbitrary old/reference input coefficients.
+
+The resulting arithmetic is
+
+    1.415*(.000221+.0000016+.0000000454)+.0000032
+       =.000318243241<.000319.
+
+All old aging, c_new, the common actual reference phase and passive-reference tensoring are retained by the reused synthesis interface. There is no new state preparation or conditioning of the actual output.
+
+## 4. Conditional composition and limits
+
+If the separately proposed localized<1e-7, incoming<1e-10 and target normalization<1e-20 estimates hold at T=4e21, their addition to the loose static .000319 bound is <.000320. If the same fixed finite apparatus with M=2e23 has transfer error<.001 on [T,2T], the finite total is <.001320. These sums do meet .0013/.0023, with a changed supplied coupling; they do not assert preservation of the current fixed-kappa source's stronger .000058/.001058 errors.
+
+This review checks the restricted integral, complex-ratio weighting, normalization and aggregation. It does not establish the actual/reference mass values, complex disks, Schur contour, finite transfer or their joint acceptance. The source's pointwise ratio extension is reused from its distinct check, not independently re-proved here. The root candidate accurately labels the final runtime sentence as proposed composition.
+
+Disposition: accept this restricted-moment step conditionally, with no mathematical correction. Preserve the named external obligations before promoting a complete apparatus theorem.

@@ -1,0 +1,29 @@
+{
+  "inert_import": true,
+  "integrity_cases": [
+    {
+      "name": "tamper",
+      "exit_code": 1,
+      "failure": "input integrity mismatch: outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "symlink_file",
+      "exit_code": 1,
+      "failure": "symlink file/ancestor: outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "symlink_ancestor",
+      "exit_code": 1,
+      "failure": "symlink file/ancestor: outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "nonregular",
+      "exit_code": 1,
+      "failure": "not regular: outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md",
+      "mathematical_coverage": false
+    }
+  ]
+}

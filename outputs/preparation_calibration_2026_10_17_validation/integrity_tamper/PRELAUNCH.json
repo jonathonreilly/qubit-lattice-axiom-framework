@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-O",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/calibration_validation/integrity_scratch_tamper/scripts/preparation_calibration_2026_10_17.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/calibration_validation/integrity_scratch_tamper",
+  "utc": 1792238686.951345,
+  "wall_limit_sec": 10,
+  "cpu_limit_sec": 10,
+  "file_limit_bytes": 16777216,
+  "memory_cap": "not applied",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/calibration_validation/integrity_scratch_tamper/scripts/preparation_calibration_2026_10_17.py",
+      "bytes": 12497,
+      "sha256": "007119372382a6f3be2c7bbfab3c8ebe7d69f4bfa4d38c37d9c6e18ae087726d"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    }
+  ]
+}

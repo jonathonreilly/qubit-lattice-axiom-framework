@@ -1,0 +1,183 @@
+{
+  "qualified_utc": "2026-10-17T03:19:46.585502+00:00",
+  "disposition": "Accepted for conditional mathematical reuse and publication preparation at these exact identities; not retained audit, native realization, canonical execution or merge approval.",
+  "author_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/CANDIDATE.md",
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/FREEZE.json",
+    "bytes": 1418,
+    "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98"
+  },
+  "root_author_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/RESOURCE_FAMILY_AUTHOR_ROOT_READ.json",
+    "bytes": 13166,
+    "sha256": "c7062f63bfad39f085622a3a5b5625e2e5e5e15ce3bff374907005d3aa13b640"
+  },
+  "review_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/REPORT.md",
+    "bytes": 35719,
+    "sha256": "053e40728f0336c3a5b5409f8c3ba96bd4d8acb96bf0a57192483a28f4099d3a"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/FREEZE.json",
+    "bytes": 3029,
+    "sha256": "3e8f94554835dfa6a1775a2b45fd1b8d244cda63614adf1ff8eddcc4a8c6456b"
+  },
+  "review_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/FILE_MANIFEST.json",
+    "bytes": 14708,
+    "sha256": "9dc0f4c57989e08628fb1ff1dc3aba76febb4e7a27cdf0cfa41b3744ec1b249d"
+  },
+  "review_packet_files": 87,
+  "review_manifest_members": 85,
+  "review_source_pairs": {
+    "INITIAL_SOURCE_MANIFEST.json": 11,
+    "AUTHOR_SOURCE_MANIFEST.json": 45
+  },
+  "stage1_frozen_members": 23,
+  "author_packet_files": 45,
+  "author_source_pairs": 23,
+  "earlier_root_Git_source_pairs": 18,
+  "earlier_root_local_source_pairs": 5,
+  "author_current_prelaunch_bindings": 31,
+  "review_runs": [
+    {
+      "name": "stage1_run01",
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/PRELAUNCH.json",
+        "bytes": 5183,
+        "sha256": "6e9fc2ea3e1f7b8fedd6c5e80b65cf58b86a4608841a444cbdcaca235a4a7d8f"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/RECEIPT.json",
+        "bytes": 3060,
+        "sha256": "2ef694eb9d5ed15650ef80ff41bf21cb005d7b82f5125a6600d53e75c4b7287d"
+      },
+      "output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/stdout.json",
+        "bytes": 6406,
+        "sha256": "8b06ff48bd3a87f98ccfd96a01b5d4a87a8af9aeb56fe1e870cbfeea23e6d598"
+      },
+      "executable": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage1_run01/executed_source.py",
+        "bytes": 6766,
+        "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+      },
+      "file_bindings": 17,
+      "runtime_bindings": 3,
+      "wall_seconds": 0.7703732498921454,
+      "CPU_soft_hard_seconds": [
+        30,
+        30
+      ],
+      "wall_cap_seconds": 45,
+      "matrix_dimension": 0
+    },
+    {
+      "name": "stage2_run01",
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage2_run01/PRELAUNCH.json",
+        "bytes": 14772,
+        "sha256": "504f433e4abeb19a4714f2c2e9929de6804eba34d522b50fa408df81be43bd32"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage2_run01/RECEIPT.json",
+        "bytes": 7974,
+        "sha256": "b4a112510143b9adb51f53102a4e0c9b69cddf35a97d9b3a4c28ee8edb67493b"
+      },
+      "output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage2_run01/stdout.json",
+        "bytes": 9592,
+        "sha256": "9dcd54dab486d2889da865ed6f117f98aa5e27e0e84690ae21be0fd65c6c5b45"
+      },
+      "executable": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review/stage2_run01/executed_source.py",
+        "bytes": 10866,
+        "sha256": "da6a10d31daabbe43f2c8e760f30b0654feb9739576e4ef913b926c4210409b1"
+      },
+      "file_bindings": 73,
+      "runtime_bindings": 3,
+      "wall_seconds": 0.594293000176549,
+      "CPU_soft_hard_seconds": [
+        30,
+        30
+      ],
+      "wall_cap_seconds": 45,
+      "matrix_dimension": 4
+    }
+  ],
+  "scope": {
+    "ladder": "exact nominal inherited construction only",
+    "kappa_interval": [
+      "1e-12",
+      "1e-8"
+    ],
+    "sigma": "1e-6",
+    "infinite_onset": "T=1e6/kappa^2",
+    "infinite_error_bound": "2954065138388379/781250000000000000 < .004",
+    "finite_clock": "M=ceil(50T)",
+    "finite_horizon": "[T,2T] only",
+    "finite_error_bound": "3735315138388379/781250000000000000 < .005",
+    "upper_endpoint": "T1e22,M5e23,M+5qubits"
+  },
+  "root_review": [
+    "Read complete author and independent arguments, both independent programs and launchers/plans, full scientific stdout and actual evidence.",
+    "Independent pre-exposure mass proof retains both signed self-energy derivative corrections; sharper author proof retains a_kappa and positivity before dropping its reciprocal.",
+    "Total unit spectral mass includes outside-band/point spectrum; complete parity Gram overlap replaces failed variance shortcuts.",
+    "Every changed inverse/phase/regularity bound is analytically uniform via scaled positive majorants; squared-L2 check is separate from author triangle estimates.",
+    "Complete clock/source/emitter/reference output, actual common profile and scalar, old aging and restricted normalization are maintained.",
+    "The prepared-sector radius and ceil-based graph distance apply to the same finite compression only over the stated horizon.",
+    "Positive local-cell eigenvalues and all incident loads were independently reconstructed; source A/B and c0/c1 loads exceed two and stay explicit."
+  ],
+  "failed_routes": [
+    "Old variance mass ceiling32/25 at kappa1e-8 does not prove concentration.",
+    "Old separate point-amplitude ceiling4/5 does not retain8e-5.",
+    "Wrong arctan sign has nonzero residual; no broad no-go conclusion."
+  ],
+  "verification_limits": [
+    "Two reviewer runs are not two blind whole-graph reviews. Same model/effort; substantial inherited authorship and source exposure.",
+    "Stage-one reasoning preceded new author exposure; stage two followed candidate reading but preceded author-code reading. Root also considered the mass route and is source-exposed.",
+    "Only exact scalar/symbolic calculations and one4-dimensional local block; no grids, quadrature, full apparatus dynamics or proof-assistant verification.",
+    "Runtime interpreter/SymPy entry/metadata hashes do not pin every dependency byte; thread requests are not measured thread counts.",
+    "No joint static/calibration box or common nominal waveform across couplings, arbitrary accuracy, optimal/practical cost, physical seconds, native seed/phase supply, fixed finite-device permanence or reuse.",
+    "Canonical portability/replay, focused publication checks, eventual integrated-main landing checks and independent retained audit remain separate."
+  ],
+  "inherited_qualifications": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed_acceptance.json",
+      "bytes": 37048,
+      "sha256": "c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/installed_qualification.md",
+      "bytes": 2489,
+      "sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted_acceptance.json",
+      "bytes": 25670,
+      "sha256": "01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/weighted_qualification.md",
+      "bytes": 2186,
+      "sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_acceptance.json",
+      "bytes": 12525,
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_candidate/inputs/moment_qualification.md",
+      "bytes": 2484,
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102"
+    }
+  ],
+  "publication_scope": "Family-only abovePR9664, with moment implication; joint static/calibration results remain separately qualified and unpublished.",
+  "root_scientific_reruns": 0,
+  "editable_prompt_files_changed": []
+}

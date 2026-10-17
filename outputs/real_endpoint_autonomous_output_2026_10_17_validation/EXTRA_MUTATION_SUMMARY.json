@@ -1,0 +1,50 @@
+[
+  {
+    "name": "resource_radius",
+    "expected_failure": "one-head spectral radius",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "load",
+    "expected_failure": "old1 added load",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "variance",
+    "expected_failure": "variance tail amplitude",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "historical_onset",
+    "expected_failure": "time denominator lower squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "same_byte_symlink",
+    "expected_failure": "symlink input or ancestor",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "symlink_ancestor",
+    "expected_failure": "symlink input or ancestor",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "directory_input",
+    "expected_failure": "input is not a regular file",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "tampered_bytes",
+    "expected_failure": "integrity mismatch",
+    "detected": true,
+    "exit_code": 1
+  }
+]

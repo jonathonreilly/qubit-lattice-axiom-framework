@@ -1,0 +1,390 @@
+SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
+BOUNDARY: no spectrum, dynamics, 904/1808 matrix, native realization, or independent proof computed.
+BOUNDARY: residual spectral mass remains paid; finite guarantee is only [T,2T].
+BOUNDARY: no general impossibility claim or negative-packet verdict is tested.
+PASS integrity: declared package files match manifest (not a mathematical check).
+PASS arithmetic: unit exact momentum
+PASS arithmetic: exact E0
+PASS arithmetic: band sine lower
+PASS arithmetic: band tangent half lower
+PASS arithmetic: filter norm
+PASS arithmetic: filter norm exceeds J
+PASS arithmetic: filter vacancy positive
+PASS arithmetic: filter t positive
+PASS arithmetic: filter t below J
+PASS arithmetic: emitter occupation positive
+PASS arithmetic: endpoint occupation positive
+PASS arithmetic: velocity bound
+PASS arithmetic: velocity derivative bound
+PASS arithmetic: even filter phase
+PASS arithmetic: odd filter phase
+PASS arithmetic: filter reflection zero
+PASS arithmetic: relative free bond phase
+PASS arithmetic: free even phase
+PASS arithmetic: free odd phase
+PASS arithmetic: free endpoint convention
+PASS arithmetic: direct matching reflection
+PASS arithmetic: direct matching transmission
+PASS arithmetic: Lippmann reflection at center
+PASS arithmetic: Lippmann transmission relative free bond
+PASS arithmetic: local PSD Gram sign -1
+PASS arithmetic: local PSD Gram sign 1
+PASS arithmetic: scalar opposite-arm error
+PASS arithmetic: closed filter inverse margin
+PASS arithmetic: open rank-one inverse ceiling
+PASS arithmetic: full Schur Neumann margin
+PASS arithmetic: full filter inverse ceiling
+PASS arithmetic: open local difference coefficient
+PASS arithmetic: open local difference less than one
+PASS arithmetic: closed local coefficient
+PASS arithmetic: open reflection feedback coefficient
+PASS arithmetic: all closed channels reflection error
+PASS arithmetic: filter exterior C norm squared
+PASS arithmetic: modified exterior kernel ceiling
+PASS arithmetic: two-port reflection
+PASS arithmetic: two-port transmission error
+PASS arithmetic: terminated-port full closed correction
+PASS arithmetic: unperturbed end factor
+PASS arithmetic: terminated inverse Neumann
+PASS arithmetic: terminated matrix Lipschitz
+PASS arithmetic: end Green error
+PASS arithmetic: end matrix norm
+PASS arithmetic: outgoing row error
+PASS arithmetic: all emitter complementary inverse
+PASS arithmetic: emitter denominator correction
+PASS arithmetic: emitter imaginary lower constant
+PASS arithmetic: all emitter inverse multiplied by kappa squared
+PASS arithmetic: complete outgoing profile relative error
+PASS arithmetic: variance tail amplitude
+PASS arithmetic: reference spectral mass deficit
+PASS arithmetic: normalization error bound
+PASS arithmetic: root two bound squared
+PASS arithmetic: complete old/reference seed packet cost
+PASS arithmetic: base kernel bound
+PASS arithmetic: all filter finite-coordinate blocks
+PASS arithmetic: port transformed blocks
+PASS arithmetic: terminated finite-coordinate blocks
+PASS arithmetic: installed finite-coordinate blocks
+PASS arithmetic: installed core matching inverse
+PASS arithmetic: matching derivative
+PASS arithmetic: core inverse derivative
+PASS arithmetic: stationary core amplitude
+PASS arithmetic: stationary core derivative
+PASS arithmetic: closed-tail ratio simple majorant
+PASS arithmetic: localized core and tail
+PASS arithmetic: tail derivative sum majorant squared
+PASS arithmetic: localized derivative
+PASS arithmetic: reference positive normalization
+PASS arithmetic: reference f sup
+PASS arithmetic: Dref logarithmic derivative
+PASS arithmetic: reference derivative multiplier
+PASS arithmetic: reference f derivative sup
+PASS arithmetic: f L1 squared
+PASS arithmetic: endpoint inclusive variation
+PASS arithmetic: incoming coefficient variation
+PASS arithmetic: localized IBP column budget
+PASS arithmetic: localized two-column aggregation
+PASS arithmetic: time denominator lower squared
+PASS arithmetic: uniform all-future escape at T
+PASS arithmetic: infinite complete ceiling
+PASS arithmetic: one-head spectral radius
+PASS arithmetic: finite horizon exponent margin
+PASS arithmetic: exponential tail constant
+PASS arithmetic: finite complete ceiling
+PASS arithmetic: filter incident load
+PASS arithmetic: junction incident load sqrt2 ceiling
+PASS arithmetic: emitter load
+PASS arithmetic: input endpoint load
+PASS arithmetic: old1 added load
+PASS arithmetic: old2 added load
+PASS arithmetic: arm0 sites
+PASS arithmetic: arm1 sites
+PASS arithmetic: distinct head and internal sites
+PASS arithmetic: geometry NN edges
+PASS arithmetic: first omitted output distance
+PASS arithmetic: finite head sites count
+PASS arithmetic: finite total qubits count
+PASS arithmetic: finite head edges count
+PASS arithmetic: executed graph vertex cap
+PASS arithmetic: positive-jump Eprime ceiling
+PASS arithmetic: positive-jump finite-core trace substitution
+PASS arithmetic: positive-jump differentiated matching substitution
+PASS arithmetic: reciprocal reflection derivative substitution
+PASS arithmetic: closed-tail derivative multiplier squared
+PASS arithmetic: positive-jump localized norm
+PASS arithmetic: positive-jump localized derivative
+PASS arithmetic: positive-jump incoming variation
+PASS arithmetic: corrected pointwise derivative term expansion
+PASS arithmetic: corrected pointwise localized variation
+PASS arithmetic: corrected pointwise aggregated ceiling
+PASS arithmetic: corrected pointwise denominator squared
+PASS arithmetic: corrected pointwise escape at historical intermediate onset
+PASS arithmetic: finite spectral-mass weighted reflection derivative
+PASS arithmetic: finite spectral-mass incoming variation
+PASS arithmetic: finite spectral-mass incoming numerator
+PASS arithmetic: integrated phase derivative term expansion
+PASS arithmetic: integrated localized variation
+PASS arithmetic: integrated localized operator ceiling
+PASS arithmetic: refined onset denominator squared
+PASS arithmetic: refined onset escape arithmetic
+PASS arithmetic: refined onset infinite complete ceiling
+PASS arithmetic: refined onset finite exponent margin
+PASS arithmetic: refined onset finite complete ceiling
+PASS arithmetic: weighted J lower
+PASS arithmetic: weighted J upper
+PASS arithmetic: weighted monotone real denominator derivative
+PASS arithmetic: weighted denominator derivative upper
+PASS arithmetic: weighted imaginary denominator lower coefficient
+PASS arithmetic: weighted reference amplitude coefficient squared
+PASS arithmetic: weighted reference phase derivative
+PASS arithmetic: weighted regular reference variation
+PASS arithmetic: weighted resonant reference variation
+PASS arithmetic: weighted endpoint inclusive reference variation
+PASS arithmetic: weighted incoming variation
+PASS arithmetic: weighted incoming scalar numerator
+PASS arithmetic: weighted outgoing scalar numerator
+PASS arithmetic: weighted Cauchy Schwarz core bound squared
+PASS arithmetic: weighted matching derivative integral
+PASS arithmetic: weighted closed-tail localized derivative integral
+PASS arithmetic: weighted full localized term expansion
+PASS arithmetic: weighted full localized variation
+PASS arithmetic: weighted localized aggregated ceiling
+PASS arithmetic: weighted onset denominator squared
+PASS arithmetic: weighted onset escape arithmetic
+PASS arithmetic: weighted onset infinite complete ceiling
+PASS arithmetic: weighted onset finite exponent margin
+PASS arithmetic: weighted onset finite complete ceiling
+PASS arithmetic: endpoint selected column
+PASS arithmetic: endpoint full core inverse
+PASS arithmetic: endpoint background diagonal
+PASS arithmetic: endpoint jump trace
+PASS arithmetic: endpoint complete localized norm
+PASS arithmetic: endpoint weighted x derivative
+PASS arithmetic: endpoint weighted C derivative
+PASS arithmetic: conjugate packet outgoing identity fixture
+PASS arithmetic: conjugate packet outgoing ceiling
+PASS arithmetic: contour strip range
+PASS arithmetic: contour complex velocity ceiling
+PASS arithmetic: contour vertical denominator floor
+PASS arithmetic: contour coefficient ceiling
+PASS arithmetic: contour bottom squared bound
+PASS arithmetic: conjugate localized complete expansion
+PASS arithmetic: conjugate localized numerator
+PASS arithmetic: conjugate localized Fourier aggregation squared
+PASS arithmetic: tradeoff time denominator squared
+PASS arithmetic: tradeoff incoming ceiling
+PASS arithmetic: positive normalization squared identity fixture
+PASS arithmetic: positive normalization squared cost fixture
+PASS arithmetic: tradeoff target nonzero
+PASS arithmetic: tradeoff normalization cost
+PASS arithmetic: tradeoff localized ceiling
+PASS arithmetic: tradeoff five-term budget
+PASS arithmetic: tradeoff infinite complete ceiling
+PASS arithmetic: tradeoff finite exponent margin
+PASS arithmetic: tradeoff finite complete ceiling
+PASS arithmetic: thin closed spectral gap
+PASS arithmetic: thin energy band ceiling
+PASS arithmetic: thin closed resolvent coefficient
+PASS arithmetic: thin closed root continuation
+PASS arithmetic: thin closed self energy variation
+PASS arithmetic: thin physical matrix variation
+PASS arithmetic: thin Neumann product
+PASS arithmetic: thin continued inverse
+PASS arithmetic: thin incoming core column
+PASS arithmetic: thin closed tail squared
+PASS arithmetic: thin complete localized vector
+PASS arithmetic: thin outgoing imaginary floor
+PASS arithmetic: thin conjugate coefficient
+PASS arithmetic: thin target coefficient
+PASS arithmetic: thin outgoing side floor
+PASS arithmetic: thin exponential argument
+PASS arithmetic: thin integer exponential majorant
+PASS arithmetic: thin target bottom squared prefactor
+PASS arithmetic: thin localized aggregate
+PASS arithmetic: thin negative tail side denominator
+PASS arithmetic: thin negative tail ceiling
+PASS arithmetic: thin incoming denominator
+PASS arithmetic: thin incoming total
+PASS arithmetic: profile weighted denominator floor
+PASS arithmetic: profile weighted denominator slope
+PASS arithmetic: profile weighted denominator intercept
+PASS arithmetic: profile weighted complex slope
+PASS arithmetic: profile weighted complex intercept
+PASS arithmetic: profile weighted moment squared
+PASS arithmetic: profile weighted L2 mismatch
+PASS arithmetic: profile weighted preparation
+PASS arithmetic: profile weighted static
+PASS arithmetic: weighted strip complete infinite
+PASS arithmetic: weighted strip finite exponent
+PASS arithmetic: weighted strip complete finite
+PASS arithmetic: LC disk exponential envelope
+PASS arithmetic: LC disk closed resolvent coefficient
+PASS arithmetic: LC disk closed root
+PASS arithmetic: LC disk closed derivative
+PASS arithmetic: LC disk matrix derivative
+PASS arithmetic: LC disk bare inverse
+PASS arithmetic: LC disk open A derivative
+PASS arithmetic: LC disk closed A
+PASS arithmetic: LC disk closed A derivative
+PASS arithmetic: LC disk Tg derivative
+PASS arithmetic: LC disk filter block derivative
+PASS arithmetic: LC disk two-site derivative
+PASS arithmetic: LC disk filter Neumann hypothesis
+PASS arithmetic: LC disk full filter inverse
+PASS arithmetic: LC disk scalar filter inverse
+PASS arithmetic: LC disk bare column
+PASS arithmetic: LC disk bare column derivative
+PASS arithmetic: LC disk bare reflection derivative
+PASS arithmetic: LC disk bare reflection
+PASS arithmetic: LC disk closed filter block
+PASS arithmetic: LC disk closed filter inverse
+PASS arithmetic: LC disk scalar open column
+PASS arithmetic: LC disk open Schur inverse
+PASS arithmetic: LC disk open correction coefficient
+PASS arithmetic: LC disk closed column coefficient
+PASS arithmetic: LC disk outgoing row squared
+PASS arithmetic: LC disk reflected correction coefficient
+PASS arithmetic: LC disk reflected correction
+PASS arithmetic: LC disk Cauchy reflection ceiling
+PASS arithmetic: LC disk exterior factor squared
+PASS arithmetic: LC disk updated kernel
+PASS arithmetic: LC disk endpoint correction input
+PASS arithmetic: LC disk inverse difference product
+PASS arithmetic: LC disk termination Lipschitz
+PASS arithmetic: LC disk Cauchy endpoint derivative
+PASS arithmetic: LC background cancellation derivative
+PASS arithmetic: LC background port derivative
+PASS arithmetic: LC background endpoint derivative
+PASS arithmetic: LC background energy derivative
+PASS arithmetic: LC complementary inverse energy derivative input
+PASS arithmetic: LC exact selfenergy energy derivative
+PASS arithmetic: LC regularity supplies mass L ceiling
+PASS arithmetic: LC emitter onsite positive
+PASS arithmetic: LC endpoint onsite positive
+PASS arithmetic: LC endpoint compensated diagonal
+PASS arithmetic: LC emitter compensated diagonal
+PASS arithmetic: LC real complementary inverse
+PASS arithmetic: LC real resonant relative correction
+PASS arithmetic: LC real resonant imaginary floor
+PASS arithmetic: LC real full emitter inverse factor
+PASS arithmetic: LC outgoing row correction
+PASS arithmetic: LC physical radius
+PASS arithmetic: LC exponential rational lower proof
+PASS arithmetic: LC mass denominator smallness
+PASS arithmetic: LC mass cutoff separated
+PASS arithmetic: LC mass logarithm argument
+PASS arithmetic: LC mass H bound
+PASS arithmetic: LC actual exterior mass
+PASS arithmetic: LC actual exterior amplitude squared
+PASS arithmetic: LC reference energy derivative
+PASS arithmetic: LC reference missing mass
+PASS arithmetic: LC positive reference normalization
+PASS arithmetic: LC reference inverse normalization squared
+PASS arithmetic: LC reference amplitude factor squared
+PASS arithmetic: LC bridge open disk bound
+PASS arithmetic: LC bridge full disk bound
+PASS arithmetic: LC bridge matrix oscillation
+PASS arithmetic: LC bridge complementary disk inverse
+PASS arithmetic: LC bridge Schur correction
+PASS arithmetic: LC bridge exact selfenergy oscillation
+PASS arithmetic: LC bridge strip resonant loss
+PASS arithmetic: LC background Neumann product
+PASS arithmetic: LC background Neumann hypothesis
+PASS arithmetic: LC background strip inverse
+PASS arithmetic: LC background strip selected column squared
+PASS arithmetic: LC background strip endpoint
+PASS arithmetic: LC background source jump trace
+PASS arithmetic: LC background source continuation
+PASS arithmetic: LC strip complementary inverse
+PASS arithmetic: LC strip emitter inverse
+PASS arithmetic: LC strip update factor squared
+PASS arithmetic: LC strip cutoff denominator
+PASS arithmetic: LC strip cutoff emitter inverse
+PASS arithmetic: LC strip bottom complete C
+PASS arithmetic: LC strip side complete C
+PASS arithmetic: LC strip conjugate coefficient
+PASS arithmetic: LC strip bottom exponential argument
+PASS arithmetic: LC strip exponential integer lower
+PASS arithmetic: LC strip bottom aggregation expansion
+PASS arithmetic: LC strip side aggregation expansion
+PASS arithmetic: LC strip complete localized
+PASS arithmetic: LC scalar outgoing strip lower
+PASS arithmetic: LC scalar outgoing sinh envelope
+PASS arithmetic: LC scalar outgoing imaginary margin
+PASS arithmetic: LC scalar common cutoff floor
+PASS arithmetic: LC scalar outgoing coefficient
+PASS arithmetic: LC scalar outgoing bottom prefactor
+PASS arithmetic: LC scalar side denominator squared
+PASS arithmetic: LC scalar target negative tail
+PASS arithmetic: LC scalar target positive normalization
+PASS arithmetic: LC scalar incoming sqrt height
+PASS arithmetic: LC scalar incoming complete
+PASS arithmetic: LC restricted moment amplitude
+PASS arithmetic: LC restricted moment square coefficient
+PASS arithmetic: LC restricted moment norm squared
+PASS arithmetic: LC restricted complex mismatch
+PASS arithmetic: LC complete static arithmetic
+PASS arithmetic: LC complete static ceiling
+PASS arithmetic: LC complete infinite ceiling
+PASS arithmetic: LC finite output length
+PASS arithmetic: LC finite exponential margin
+PASS arithmetic: LC finite transfer prefactor
+PASS arithmetic: LC complete finite ceiling
+PASS arithmetic: LC infinite unhalved trace ceiling
+PASS arithmetic: LC finite unhalved trace ceiling
+PASS arithmetic: LC sufficient onset improvement ratio
+PASS arithmetic: LC sufficient length improvement ratio
+PASS arithmetic: PR positive coupling lower endpoint
+PASS arithmetic: PR emitter occupation worst endpoint
+PASS arithmetic: PR endpoint occupation worst endpoint
+PASS arithmetic: PR absolute detuning ceiling
+PASS arithmetic: PR ratio perturbation denominator
+PASS arithmetic: PR ratio perturbation ceiling
+PASS arithmetic: PR finite complex ratio error
+PASS arithmetic: PR fixed phase normalized profile
+PASS arithmetic: PR shifted interval positive
+PASS arithmetic: PR shifted interval lower margin
+PASS arithmetic: PR shifted mass denominator
+PASS arithmetic: PR shifted mass lemma smallness
+PASS arithmetic: PR shifted logarithm argument
+PASS arithmetic: PR shifted logarithm integral
+PASS arithmetic: PR shifted mass tail
+PASS arithmetic: PR shifted actual missing mass
+PASS arithmetic: PR shifted actual residual norm squared
+PASS arithmetic: PR shifted reference missing mass
+PASS arithmetic: PR actual positive band normalization
+PASS arithmetic: PR actual inverse normalization squared
+PASS arithmetic: PR actual reference coefficient squared
+PASS arithmetic: PR relative actual detuning
+PASS arithmetic: PR detuned moment denominator ratio
+PASS arithmetic: PR detuned restricted moment amplitude
+PASS arithmetic: PR detuned restricted moment norm squared
+PASS arithmetic: PR actual complex profile mismatch
+PASS arithmetic: PR real complementary gap positive
+PASS arithmetic: PR real complementary inverse
+PASS arithmetic: PR disk complementary gap positive
+PASS arithmetic: PR disk complementary inverse
+PASS arithmetic: PR exact complex selfenergy oscillation
+PASS arithmetic: PR strip energy loss relative
+PASS arithmetic: PR strip resonant margin loss
+PASS arithmetic: PR strip complementary gap positive
+PASS arithmetic: PR strip complementary inverse
+PASS arithmetic: PR bottom full emitter scaled inverse
+PASS arithmetic: PR side full Schur denominator
+PASS arithmetic: PR side full emitter inverse
+PASS arithmetic: PR source update factor squared
+PASS arithmetic: PR complete localized bottom C
+PASS arithmetic: PR complete localized side C
+PASS arithmetic: PR localized bottom error
+PASS arithmetic: PR complete localized error
+PASS arithmetic: PR scalar cutoff denominator
+PASS arithmetic: PR scalar outgoing height lower
+PASS arithmetic: PR outgoing exponential argument lower
+PASS arithmetic: PR actual target negative tail
+PASS arithmetic: PR actual incoming error
+PASS arithmetic: PR complete actual waveform error
+PASS arithmetic: PR complete fixed nominal infinite
+PASS arithmetic: PR perturbed physical radius
+PASS arithmetic: PR complete fixed nominal finite
+PASS arithmetic: RB baseline positive
+TOTAL FAIL: ('RB full double occupation polynomial', '(Fraction(89222842631193398678501826467499729904952306204199609041, 2502923942457319846371918121761310217191872375000000000000), Fraction(-3752638388379, 62500000000000), Fraction(3752638388379, 125000000000000))', '=', '(Fraction(89222842631193398678501826467499729904952306204199609041, 2502923942457319846371918121761310217191872375000000000000), Fraction(0, 1), Fraction(3752638388379, 125000000000000))')

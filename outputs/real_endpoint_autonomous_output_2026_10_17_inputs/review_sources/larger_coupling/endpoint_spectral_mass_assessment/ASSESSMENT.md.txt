@@ -1,0 +1,127 @@
+# Endpoint spectral mass on the unchanged certified band
+
+Status: proposed analytical assessment and sufficient new lemma, not a qualified family theorem. There is a rigorous local-density route that retains all missing spectrum. Its required endpoint regularity constant has not been established by the present sources. Coupling near 10^-8 is not excluded by the complete error budget, but is not certified here.
+
+## Sources, exposure and limits
+
+Primary pinned source: `../resource_next_sources/ENDPOINT_NOTE_716e159253.md`, SHA256 `5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221`. I reread its full emitter Schur, normalization and local spectral-interface arguments, including the seven complementary emitter coordinates, real-seed phase and allowed exterior point spectrum. Previously read portions and procedural guidance are reused with the same identities. The physical band remains sigma=10^-6; no larger band is assumed.
+
+The authored, unqualified family proposal `../endpoint_parameter_frontier/PROPOSAL.md`, SHA256 `5b3322cd8263be647c3f573cc0d0fee8a1ad679b9bf9c60a8604819fa60dbc22`, supplies notation and an explicitly provisional complete-error framework. Its range stopped at 10^-10. Nothing here silently promotes that range to a checked 10^-8 theorem. This assessment identifies the additional interface and checks its potential error budget.
+
+I am author-exposed to the previous endpoint and conjugate-packet proposals and their reviews. I have not read or imported the separate full-core thin-strip result. No scientific program, sweep, numerical integration, Git, W, checkpoint, PR or prompt edit was performed. Tool use was limited to reading, hashing and writing this deliverable. Model/effort and previously applicable workflow remain unchanged; the physics-claim-reviewer skill was reread to check status discipline, not to claim independent review or initiate a review workflow. No global Lorentzian, global scattering completeness or absence of exterior point spectrum is assumed.
+
+## 1. Exact quantity that must be bounded
+
+Fix an old input column j and subtract its known scalar c_new+b_j+E0. Write x=E(k)-E0, and let d=v sigma=2.5*10^-8. The symmetric energy interval [-d,d] is contained in the original certified physical interval. Restricting to it for a lower mass bound does not widen any premise.
+
+For the normalized delivered emitter coordinate u_j, exact block elimination gives
+
+    Htilde=Hphys-c_new I,
+    m_j(x+i0)=<e_j,(x+E0+b_j+i0-Htilde)^-1 e_j>
+             =1/[x-kappa^2 s_j(x)],
+    s_j=Gjj+kappa^2 Gjc Dcc^-1 Gcj.
+
+Here Htilde is the full infinite self-adjoint operator, G is the background endpoint resolvent before adding the emitter, and Dcc retains all seven complementary emitter coordinates. More invariantly, s_j is the scalar resolvent compression of the self-adjoint complement obtained by deleting only e_j, including its remaining emitter couplings. Consequently Im s_j(z)<=0 for Im z>0. This Herglotz sign follows from the actual self-adjoint apparatus; it need not be inferred from an approximate formula.
+
+The source proves smooth local density and no singular spectrum on the certified interval. Stone's sign and the energy Jacobian give exactly
+
+    dmu_j/dx=-(1/pi) Im m_j(x+i0)
+             =kappa^2[-Im s_j(x)]/[pi |x-kappa^2 s_j(x)|^2].
+
+This is also |F_j(k)|^2/E'(k). It is the seed's spectral measure, not the trace measure of the whole core and not a normalized conditional distribution. Since mu_j(R)=1,
+
+    ||P_outside_band e_j||^2
+      <=1-integral_[-d,d] dmu_j.
+
+All exterior point, singular-continuous and absolutely continuous mass is included on the left. No need to locate or classify that spectrum remains if the right side is small. This is the central advantage over trying to extend a scattering basis globally.
+
+## 2. A sufficient finite-interval lemma
+
+Put s_j(0)=a-ib and suppose on [-d,d]
+
+    |a|<=A, 0<b<=B, b>=b_min>0,
+    |s_j(x)-s_j(0)|<=L |x|,
+    kappa^2 L(1+A/b_min)<=1/2,
+    d>kappa^2 A.
+
+Let gamma=kappa^2 b and c=kappa^2 a. The comparison m0=1/(x-c+i gamma) is an algebraic comparison function only; it is not assumed to describe the actual measure outside the band. Its density integrates to one on the real line by elementary integration.
+
+Since |x|/|x-c+i gamma|<=1+A/b_min, the Lipschitz condition implies
+
+    |x-kappa^2 s_j(x)| >= |x-c+i gamma|/2,
+    |m_j-m0| <=2 kappa^2 L |x|/[(x-c)^2+gamma^2].
+
+Splitting |x|<=|x-c|+|c| and integrating yields the conservative bound
+
+    integral_[-d,d] |x|/[(x-c)^2+gamma^2] dx
+      <=2 log(1+(d+kappa^2 A)/(kappa^2 b_min))
+          +pi A/b_min =:H.
+
+The two tails of the algebraic comparison density have total mass at most
+
+    2 kappa^2 B/[pi(d-kappa^2 A)].
+
+Therefore the actual missing spectral mass is bounded by
+
+    q_j <= q_mass(kappa)
+       :=2 kappa^2 B/[pi(d-kappa^2 A)]
+           +(2 kappa^2 L/pi) H.                 (1)
+
+The actual off-band amplitude is sqrt(q_mass), rather than kappa/d. The derivation uses no approximation at the resonance, where x is of order kappa^2, and keeps the real shift c. The logarithmic correction is the price of proving a density comparison in absolute value; cancellations could improve it, but are not assumed.
+
+The same argument applies to the exact scalar reference resolvent. Its self-energy is s_ref=-exp(ik(x))/J, with energy derivative norm
+
+    |s_ref'|=1/(J E')<1334.
+
+Thus (1), with L_ref=1334, bounds 1-p0 directly on the same inner interval. This reference bound uses its actual global normalized seed measure; it does not normalize a fitted Lorentzian.
+
+## 3. What the existing constants establish and fail to establish
+
+The fixed-band endpoint formulas give |s_j|<36 and -Im s_j>12 for a proposed extension as far as kappa=10^-8, once the straightforward complementary Schur checks are repeated: 35kappa^2<<.18 and the kappa^2 epsilon_G^2 correction remains negligible. At x=0 the sharper A=35, B=17 and b_min=12 are available from the actual open entry. Indeed sin(k0)<.5 from its exact rational definition, J>.03, and
+
+    |Gjj+exp(ik)/J|
+      <=(1/J)*2eta/(1-eta)+epsilon_G <.000801.
+
+Hence -Im s_j(0)<.5/.03+.000801+6kappa^2 epsilon_G^2<17 and |Re s_j(0)|<35. The same A,B,b_min work for the scalar reference. These estimates use no broadened momentum interval.
+
+The missing load-bearing quantity is an energy Lipschitz constant L for the actual endpoint self-energy on [-d,d]. Source smoothness proves that some finite L exists, but does not prove a useful number. The selected endpoint-column norm squared, 1.008e23, combined with a background Schur derivative norm .1 in momentum, gives only a generic scale
+
+    |dGjj/dx| <=(.1/v)*1.008e23=4.032e23,
+
+if that corresponding background derivative ceiling is supplied. This illustrates the loss of the general column-norm method; it is not a newly certified background derivative premise. At kappa=10^-8 it would even violate the smallness condition in the lemma. The present full-core inverse ceiling is likewise unsuitable. A bound at this scale is not evidence that the true derivative is large.
+
+The exact explicit open formula offers a much more focused check:
+
+    g_j(k)=-(exp(ik)/J)
+       (1+R_bg,j(k) exp(2i ell k))
+       /(1+R_bg,j(k) exp((2ell+2)i k)).
+
+One can differentiate this finite rational matching expression, together with the exponentially small closed-channel correction and the Dcc Schur term. Here R_bg,j is the pre-emitter background reflection, not the final installed reflection with its narrow emitter resonance. A certified bound on R_bg,j' and on the derivative of the closed correction is enough. A small uniform value bound epsilon_G does NOT by itself bound the derivative; Cauchy requires a separately certified complex neighborhood. The very large resonant derivative of the installed reflection must not be inserted as a surrogate background derivative.
+
+## 4. Quantitative test at kappa=10^-8
+
+Suppose a new finite-core/matching certificate supplies L<=10^6 in energy units on [-d,d], uniformly for every relevant column and parity, with the previously stated Schur/profile bounds also extended to this kappa. This is an additional mathematical obligation, not a present result.
+
+Then kappa^2 L(1+35/12)<4e-10. The logarithm in H is less than 18, so H<46 using pi<10/3. The tail term in (1) is <4.534e-8 (pi>3); its Lipschitz term is <3.067e-9. Consequently
+
+    q_mass<4.85e-8,
+    actual off-band amplitude <.000221.
+
+For the reference, L_ref<1334 gives 1-p0<4.54e-8. Its positive normalization defect is at most 1-p0. Thus the complete conjugate-comparator time-independent budget becomes
+
+    1.415[.000752+.000221+.0000000454]+.001504
+       <.002881.                                (2)
+
+The sqrt(2) preparation aggregation remains necessary for overlapping old-column residuals. The outgoing 2epsilon=.001504 term has orthogonal output fibers and is paid once. No old-column, point-spectrum, phase or target normalization contribution is deleted. Equation (2) leaves about .000119 for the actual localized, incoming and output-normalization terms at the .003 infinite tolerance. This is a positive answer to whether spectral mass could permit kappa near 10^-8, conditional on a useful local regularity certificate.
+
+It is not by itself a runtime result. For orientation, if all other family inequalities are independently extended, their existing real-axis local bound has a background floor K=1.008224e22+.1/kappa^2. At this kappa K<1.009e22, C<1.2e11, D<1.02e23 and V<1.081e8, giving L_local<1.1e23. At T=3e28 this would contribute <.000087. The incoming bound must retain its exponential: dropping it now gives a useless ~.00125 bound. Retaining exp(-vT sigma/2) makes it negligible; its vertical sides remain explicit. The narrow scalar target contour has h_o=kappa^2/(4J^2), keeps vT-113, and gives negligible Q^2 at this T. A fixed M=50T would still pay the finite transfer <.001. Thus a conditional complete budget below .003/.004 is plausible with these explicit inequalities, but no improved time over the preceding proposed feasible point follows: the existing local-derivative floor dominates. No full-core contour result was used to circumvent that floor.
+
+## 5. Alternative local-contour certificate and exact obstacles
+
+A finite-core complex-energy route can replace the Lipschitz certificate. Choose an inner energy interval and integrate the exact scalar m_j(z) along a rectangle in the upper half-plane, closing onto its real boundary. The resolvent is analytic there. Cauchy's theorem identifies the real-axis integral with the top and both vertical sides; taking the negative imaginary part gives the seed's exact in-band spectral mass. An enclosure of this contour integral to absolute error below, for example, 10^-8 would directly prove a useful missing-mass bound. All three off-real pieces and endpoint limits must be retained. The infinite lead is represented by its exact retarded self-energy; a finite isolated-core spectrum is not a substitute.
+
+To avoid subtracting nearly equal numbers numerically one should integrate m_j-m0 and use the exact arctangent integral of m0. Uniform denominator enclosures, branch choice, complex rounding/error enclosures and an integral remainder estimate would be the new checkable finite-core data. No execution is authorized or performed in this assessment. A future numerical certificate would need its own bounded resource plan and independent check.
+
+Neither the real-axis epsilon_D relative denominator estimate nor epsilon_F profile-ratio estimate suffices alone for this purpose. The latter only gives in-band mass >=(1-epsilon_F)^2 p0, allowing an O(epsilon_F) missing mass and therefore an O(sqrt(epsilon_F)) amplitude, far too large. Even an O(epsilon_D) mass loss is too large. A modulus-only contour bound at Im z of order d can revert to the old kappa^2/d^2 loss unless the endpoint self-energy is quantitatively controlled. Positivity/Herglotz structure does not turn an arbitrary approximate profile into an exact normalized global Lorentzian.
+
+There is no claim that such a useful endpoint regularity or contour certificate is impossible. The smallest next proof obligation is to derive a uniform energy bound |s_j'|<=10^6 on the inner band from the exact pre-emitter matching matrices, or replace it with a comparably strong validated scalar contour-mass enclosure. Independently checking that one obligation would make (1) applicable; the kappa-extension and full error/resource composition must then be checked before any new apparatus/runtime claim is published.

@@ -1,0 +1,66 @@
+{
+  "qualified_utc": "2026-10-17T05:53:35.626823+00:00",
+  "calibration": {
+    "status": "Conditional analytical theorem qualified for provisional composition after exact listed corrections; no publication or retained audit.",
+    "original": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/PROPOSAL.md",
+      "bytes": 9298,
+      "sha256": "64d81ab828fe2ad28efd526350f8f0286bd07455db0bab9686f2053008c35adc"
+    },
+    "corrected": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_corrected/CANDIDATE_V2.md",
+      "bytes": 10482,
+      "sha256": "6ccdf001f139fa1e2f6ab0fc198984fd5293e489490c29735ac8f5563968b528"
+    },
+    "corrections": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_corrected/CORRECTIONS.json",
+      "bytes": 4847,
+      "sha256": "c119f7160b3bbd1d4005d04f2eebe0145608c9123c1ebc319f4f4668ecfd79a8"
+    },
+    "review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_review/REPORT.md",
+      "bytes": 25468,
+      "sha256": "a495c6b5c7bb4fd2094bc122afdab811e85de9ef92a88ea9dc2ae918364982d4"
+    },
+    "scope": "Constant whole-block setup amplitude eta<=1e-5 and arbitrary correlated seed deficiency epsilon<=1e-9, unchanged exact runtime; complete finite unhalved trace<.00996404 on[T,2T]. No energy-moment/native supplier/autonomous preparation theorem."
+  },
+  "permanence": {
+    "status": "Narrow fixed finite closed static product-ready-input theorem analytically qualified; N1 procedural FAIL remains and no negative-packet publication authorized by this disposition.",
+    "proposal": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_permanence_candidate/PROPOSAL.md",
+      "bytes": 7945,
+      "sha256": "6d8c6ee2aac326248c50bdf977f82108cc78e91c9761bb9120ca04ca4c82d747"
+    },
+    "gate": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_permanence_candidate/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 6988,
+      "sha256": "1c3fd3597de09425fcfa846f9d5dbff6b8f6d4027d42e229ff1fb4b83b59d725"
+    },
+    "review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_permanence_review/REPORT.md",
+      "bytes": 18181,
+      "sha256": "84640c42bbfb1e4e4a41797f377dc91634b3e9d6fd2406c1eb527ce86eb4b522"
+    },
+    "scope": "Arbitrarily late complete-output limsup>=2/sqrt(5), reduced old witness8/5. No every-late-time or useful return-time claim; no controlled ready-isometry, growing horizon or infinite/open theorem."
+  },
+  "provenance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/bounded_followup_root_review/PROVENANCE.json",
+    "bytes": 42237,
+    "sha256": "543359620ec7ec812816c9a25314cf450f9cc356224188f72f52e60ad95d8596"
+  },
+  "counts": {
+    "calibration_candidate_members": 12,
+    "permanence_candidate_members": 7,
+    "real_control_calibration_review_members": 24,
+    "finite_permanence_review_members": 20,
+    "calibration_review_source_pairs": 13,
+    "calibration_original_snapshot_pairs": 9,
+    "permanence_review_source_pairs": 13
+  },
+  "verification_limits": [
+    "Root authored both original proposals; separate same-model reviewers were source-exposed and had prior parent-source roles.",
+    "Analytical reconstruction, not blind/model-diverse/retained audit. No scientific execution or numerical model validation.",
+    "All reviewer source snapshots and frozen proposal bytes reconciled; corrections reverse exactly to V1."
+  ],
+  "editable_prompt_files_changed": []
+}

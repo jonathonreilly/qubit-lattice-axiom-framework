@@ -1,0 +1,8 @@
+{
+  "checks": 490,
+  "exit_code": 0,
+  "elapsed_sec": 0.12981724739074707,
+  "stdout_bytes": 129733,
+  "stdout_sha256": "a540e940e7111c6d97def4bef88471313715d53d70d3459cfc5771945122025e",
+  "source_pins_verified": 105
+}

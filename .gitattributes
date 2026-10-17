@@ -113,3 +113,6 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 /outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.diff whitespace=-blank-at-eol,-blank-at-eof
 /outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.diff whitespace=-blank-at-eol,-blank-at-eof
 /outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/COMPLETE_CHANGED_LOGIC.diff whitespace=-blank-at-eol,-blank-at-eof
+
+# Preserve exact captured endpoint evidence, including its final blank line.
+/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt whitespace=-blank-at-eof

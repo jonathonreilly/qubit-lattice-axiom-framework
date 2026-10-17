@@ -1,0 +1,26 @@
+[
+  {
+    "name": "double_occupation",
+    "expected_failure": "RB full double occupation polynomial",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "correlated_range",
+    "expected_failure": "RB relative range within positive contract",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "halfangle",
+    "expected_failure": "RB halfangle ratio squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "normalized_profile",
+    "expected_failure": "RB fixed complex normalized profile",
+    "detected": true,
+    "exit_code": 1
+  }
+]

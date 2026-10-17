@@ -1,0 +1,18 @@
+# Structural endpoint proposal correction record
+
+V1 `PROPOSAL.md` is preserved unchanged at SHA256 `c29243e8f2efd52865d591858dca38ac8a8bee352f29278de9f46b63002d8717`. `CORRECTED_V2.md` is the corrected review target. This is a correction of an actual full-space identity error and endpoint strictness error, not a new physical premise or a silent revision.
+
+Root identified that V1 used the wrong |11> value for the canonical hopping block. I verified the definition in the canonical note's physical-layout section: Q(h)=|h|(n_x+n_y)+h(a_x* a_y+a_y* a_x). The exchange annihilates |11>, while n_x+n_y=2 there. Consequently Q(-kappa0)|11>=2kappa0|11>, and adding (E0-kappa0)n_e+(J-kappa0)n_end gives E0+J on |11>. V1 incorrectly treated that Q contribution as zero when extending its otherwise correct one-excitation matrices.
+
+The precise corrections are:
+
+1. Equation(1)'s rank-one-part extension now uses (1+t^2)|11><11|, not (1-t)^2. Its |11> eigenvalue is e_base+J(1+t^2). At t0, e_base=E0-alpha0 and Jt0^2=alpha0, so this is exactly E0+J. For general positive t near t0 it is a sum of positive operators, preserves excitation number, and has the same one-excitation matrix [[e_base+Jt^2,-Jt],[-Jt,J]]. It also agrees on all four local states with Q(-Jt)+(e_base+Jt^2-Jt)n_e+(J-Jt)n_end, whose onsite coefficients are positive in the stated small interval. All detuning, background, ratio and sensitivity directions derived from that one-excitation matrix remain unchanged.
+2. Equation(6)'s fixed-spectrum extension now sets c11=E0+J. Its fixed eigenvalues are0,lambda_-,lambda_+,E0+J. The theta0 one-excitation matrix was already correct, so it now matches the complete nominal block on |00>, both one-excitation states, and |11>. At other theta, a_theta+b_theta=E0+J, consistent with this |11> value; positivity, real symmetry, number conservation and the product seed remain intact.
+3. Equation(4)'s pointwise ratio bound is now <=. At r=1 both sides are zero; the former strict inequality would have asserted0<0. The normalized-profile bound was already non-strict. V2 explicitly records the exact nominal zero and retains the strict numerical ceiling<.000026.
+4. The related scaling-subsection bound |gamma r/A-1| is likewise changed to <=, because q=0,r=1 is an allowed zero-error endpoint. This is the same strictness correction, not a change to any numerical allowance.
+
+I reread the complete V1 and inspected every V2 change. The complete corrected local blocks were checked on the vacuum, one-excitation and double-excitation sectors. Their one-head matrices, exact reference ratios, finite-rank background update, product-seed interpretation, parameter error directions and explicitly open full-output interfaces are unchanged. No new complete-runtime qualification follows from repairing the full-space identity.
+
+The architecture source remains the original canonical SHA256 `bc75051b87d62e65ea7953f11c2fcd320f1a9ab853c7a346f32e9314859cb1a5` at the root-reported milestone. For this narrow correction I additionally read the unchanged Q definition in the current working note, SHA256 `bdd1e8ab42bf472a9f75c01e598c15857f0e383a09f06b80f8cfd59b8ab0a39e`. Its subsequently appended precision section was not used as new evidence for this proposal. Root and the awaiting checker supplied the correction requests; this is author correction, not an independent review.
+
+No scientific execution, model override, W/Git/PR/checkpoint/prompt edit or previous-file modification occurred. A deterministic text-only copy/replacement created V2, followed by a complete diff inspection and hashing. The requested separate review should use V2 and preserve this correction history.

@@ -1,0 +1,80 @@
+from fractions import Fraction as F
+from pathlib import Path
+import hashlib,json,sys,time,resource
+start=time.process_time()
+base=Path(__file__).resolve().parent
+receipt=json.loads((base/'quantitative_run/PRELAUNCH.json').read_text())
+for e in receipt['bindings']:
+    p=Path(e['path']); b=p.read_bytes()
+    assert len(b)==e['bytes'] and hashlib.sha256(b).hexdigest()==e['sha256'],str(p)
+checks=[]
+def ck(name,left,right):
+    left,right=F(left),F(right)
+    row={'name':name,'left':str(left),'right':str(right),'margin':str(right-left),'passed':left<right,'left_display_only':float(left),'margin_display_only':float(right-left)}
+    checks.append(row)
+    print(json.dumps(row),flush=True)
+    assert row['passed'],name
+r=F(1,7); g=F(9,50); sig=F(1,10**6); kap=F(1,10**12)
+J=F('0.030021107107032'); q0=F('4.510351185997098'); C=(q0*q0-1)/(q0*q0+1); S=2*q0/(q0*q0+1)
+Delta=F('2.186826508897014'); E0=2*J*(1-C)
+beta=J*((1+S)/C-1); w=J*(1+(1-S)/C); t=J*S/C
+ck('J lower',F(3,100),J); ck('J upper',J,F(31,1000)); ck('sine lower',F(2,5),S-sig)
+ck('positive beta',0,beta);ck('w exceeds J',J,w);ck('beta below w',beta,w);ck('filter norm',w,F(1,20));ck('emitter onsite positive',kap,E0)
+ck('PC stacked factor squared',206**2*2*(1+r*r),300**2)
+ck('CC image factor',206*(1+r*r),211)
+closed=(1+r)/g+211*r**38
+ck('closed Neumann parameter',closed/20,1)
+ck('closed inverse',1/(1-closed/20),F(3,2))
+K0=10+400/(1-5*sig);ck('open scalar inverse',K0,500)
+ck('Schur coefficient',300**2*F(1,20)**2*F(3,2),338)
+schurpert=500*338*r**38;ck('Schur Neumann parameter',schurpert,1)
+ck('Schur inverse',500/(1-schurpert),1000)
+ck('full filter inverse',1000*(1+F(45,2)*r**19)**2,2000)
+ck('incoming open norm squared',8,9);ck('incoming closed coefficient squared',16**2*(1+r*r),17**2)
+xpdiff=1000*(338*r*1500+300*F(1,20)*F(3,2)*17)
+ck('open state difference coefficient',xpdiff,10**8)
+xc=F(3,2)*(17+15*r*(1500+10**8*r**37))
+ck('closed state coefficient',xc,5000)
+ck('open exterior row squared',2*80**2,120**2)
+ck('closed exterior row squared',206**2*(1+r*r),211**2)
+amperrcoef=120*F(1,20)*10**8+211*F(1,20)*5000
+ck('reflected correction coefficient',amperrcoef,10**9)
+ck('reflected correction absolute',10**9*r**37,F(1,10**20))
+scerr=5*sig+17*sig/(1-5*sig);ck('scalar reflection error',scerr,23*sig)
+eta=12*sig;d0=F('1.76e-13');deltau=d0+714*sig
+ck('R bound',(23*sig+F(1,10**20))/2,eta)
+ck('tau bound',d0+702*sig+(23*sig+F(1,10**20))/2,deltau)
+ck('Cfilter squared',2*246**2,350**2)
+ktail=F(13000000);ck('Ttilde',206+350**2*F(1,20)*2000,ktail)
+ttail=ktail*r**44;dx=3*ttail;ck('delta X',dx,F(1,10**28))
+ck('Db0 open inverse',2*J/(1-eta),21)
+ck('C0 norm',40*(1+eta),41);ck('C norm',40*(1+eta)+dx,41)
+ck('Db inverse',21/(1-21*dx),22)
+Lip=1+22*41+41*22*21*41+41*21
+ck('termination Lipschitz',Lip,10**6)
+eG=F(1,10**22);eL=F(1,10**21)
+ck('end Green error',Lip*dx,eG)
+ck('open end Green norm',(1/J)*(1+eta)/(1-eta)+eG,35)
+ck('closed end Green norm',r/J+eG,35)
+zLip=22*21*41+21
+ck('Z0 open norm',2/(1-eta),3)
+ck('Z norm',3+zLip*dx,4)
+ck('outgoing row error',4*ttail+40*zLip*dx,eL)
+ck('complementary emitter gap',g,Delta-2-2*J*sig)
+ck('complementary emitter inverse',1/(g-35*kap**2),6)
+ck('squared coupling correction small',6*kap**2*eG,1)
+eD=F(1,40000)
+actualD=2*eta/(1-eta)+(eG+6*kap**2*eG**2)*J/(S-sig)
+coarseD=2*eta/(1-eta)+2*eG*F(31,1000)/F(2,5)
+ck('emitter correction sharpened',actualD,eD)
+ck('emitter correction coarse',coarseD,eD)
+ck('imaginary emitter lower coefficient',12,(1-eD)*F(2,5)/F(31,1000))
+ck('diag inverse maximum comparison',6,1/(12*kap**2))
+ck('full emitter inverse coefficient',(1+6*kap**2*eG)**2/F(12),F(1,10))
+leading=(deltau+eta+eD+eta*eD)/((1-eta)*(1-eD))
+extra=J*eL*(1+6*kap**2*eG)/(1-eD)
+ck('E extra relative term',extra,F(1,10**21))
+ck('E complete relative error',leading+extra,F('0.000752'))
+result={'passed':len(checks),'failed':0,'scientific_scope':'exact rational inequalities A-E only','cpu_seconds':time.process_time()-start,'ru_maxrss_raw':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'platform':sys.platform,'interpreter':sys.version,'author_checker_imported':False,'checks':checks}
+(base/'quantitative_run/RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='checks'}),flush=True)

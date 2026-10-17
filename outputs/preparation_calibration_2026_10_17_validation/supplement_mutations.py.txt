@@ -1,0 +1,44 @@
+from pathlib import Path
+import ast, hashlib, json, os, resource, shutil, subprocess, sys, time
+ROOT=Path(__file__).resolve().parent
+W=ROOT.parents[1]/'correlation_worktree'
+REL='scripts/preparation_calibration_2026_10_17.py'
+SRC=(W/REL).read_text()
+node=ast.parse(SRC)
+INPUTS=next(ast.literal_eval(n.value) for n in node.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+def identity(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def caps():
+ resource.setrlimit(resource.RLIMIT_CPU,(10,10));resource.setrlimit(resource.RLIMIT_FSIZE,(16*1024**2,16*1024**2))
+def run(name,cmd,cwd,paths,timeout=10):
+ d=ROOT/name;d.mkdir(exist_ok=True)
+ pre={'command':cmd,'cwd':str(cwd),'utc':time.time(),'wall_limit_sec':timeout,'cpu_limit_sec':10,'file_limit_bytes':16*1024**2,'memory_cap':'not applied','python_version':sys.version,'sources':[identity(p) for p in paths]+[identity(Path(sys.executable).resolve())]}
+ with (d/'PRELAUNCH.json').open('w') as f:json.dump(pre,f,indent=2);f.flush();os.fsync(f.fileno())
+ t=time.monotonic()
+ with (d/'stdout.txt').open('w') as out,(d/'stderr.txt').open('w') as err:
+  p=subprocess.Popen(cmd,cwd=cwd,stdout=out,stderr=err,preexec_fn=caps)
+  try:code=p.wait(timeout=timeout)
+  except subprocess.TimeoutExpired:p.kill();p.wait();code='timeout'
+ result={'exit_code':code,'elapsed_sec':time.monotonic()-t,'outputs':[identity(d/'stdout.txt'),identity(d/'stderr.txt')]}
+ (d/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+ return code,(d/'stdout.txt').read_text(),(d/'stderr.txt').read_text()
+
+mutations=[
+('complement','comp=madd(mscale(I4,2*abs(h))','comp=madd(mscale(I4,abs(h))','full complement Gram'),
+('scaled_identity','tr(scaled)/4,(1+xi)*abs(h)','tr(scaled)/4,abs(h)','scaled identity included'),
+('zero_error',"le('zero calibration non-strict endpoint'","lt('zero calibration non-strict endpoint'",'zero calibration non-strict endpoint'),
+('counterexample',"peval(discriminant,F(2,3)))","peval(discriminant,F(0)))",'isolated projection counterexample squared'),
+('trace_factor',"arithmetic',2*operator,F('.00986404')","arithmetic',operator,F('.00986404')",'pure-seed trace ceiling arithmetic'),
+]
+results=[]
+for name,before,after,expected in mutations:
+ if SRC.count(before)!=1:raise RuntimeError('nonunique mutation '+name+': '+str(SRC.count(before)))
+ scratch=ROOT/('scratch_'+name);(scratch/'scripts').mkdir(parents=True,exist_ok=True)
+ shutil.copytree(W/'outputs/preparation_calibration_2026_10_17_inputs',scratch/'outputs/preparation_calibration_2026_10_17_inputs',dirs_exist_ok=True)
+ runner=scratch/REL;runner.write_text(SRC.replace(before,after))
+ code,out,err=run('mutation_'+name,[sys.executable,'-O',str(runner)],scratch,[runner]+[scratch/p for p in INPUTS])
+ ok=code==1 and 'PASS integrity:' in out and 'TOTAL FAIL:' in out and expected in out.split('TOTAL FAIL:')[-1]
+ results.append({'name':name,'expected_failure':expected,'detected':ok,'exit_code':code})
+ if not ok:raise RuntimeError('mutation did not fail intended family '+name+' '+out[-500:]+err)
+(ROOT/'SUPPLEMENT_MUTATION_SUMMARY.json').write_text(json.dumps(results,indent=2)+'\n')
+print(json.dumps({'canonical':'ok','mathematical_mutations':len(results),'all_intended_failures':True}))

@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-10-17T05:17:45.383985+00:00",
+  "status": "accepted conditional-support for source composition; independent retained audit remains open",
+  "source_route": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/ROUTE.md",
+    "bytes": 32324,
+    "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018",
+    "device": 16777231,
+    "inode": 518533628,
+    "mtime_ns": 1792211319713457350
+  },
+  "source_preparation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+    "bytes": 28103,
+    "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c",
+    "device": 16777231,
+    "inode": 518539817,
+    "mtime_ns": 1792213009974238154
+  },
+  "reviews": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_route_review/REVIEW.md",
+      "bytes": 30154,
+      "sha256": "e92fa7e7d82e9b1224b4b3eae1e86b7fcb97e61d7fcde18789c21fd524e8cfb2",
+      "device": 16777231,
+      "inode": 518537086,
+      "mtime_ns": 1792212165365984243
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_review/REVIEW.md",
+      "bytes": 35724,
+      "sha256": "881d9884ea03cf068c3cb1254eb6324d188ecaea04c5e7cd10b78741f6455cb1",
+      "device": 16777231,
+      "inode": 518543470,
+      "mtime_ns": 1792213973743061584
+    }
+  ],
+  "review_analytic_freezes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_route_review/ANALYTIC_FREEZE.json",
+      "bytes": 3959,
+      "sha256": "9fe434cde6c6c6a9966fdde7bdf30e9fb6a5eaa5eabaaea6e9dbee6c753ac93e",
+      "device": 16777231,
+      "inode": 518536426,
+      "mtime_ns": 1792211959327204821
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_review/ANALYTIC_FREEZE.json",
+      "bytes": 4181,
+      "sha256": "8cf616fb8f956f5a2129d247f610e44e51a0859cc23f588e80e9135cff04fc9d",
+      "device": 16777231,
+      "inode": 518542977,
+      "mtime_ns": 1792213673885333185
+    }
+  ],
+  "root_precode_source_exposed_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_phase_preparation_idea/CANDIDATE_ROOT_READ.md",
+    "bytes": 4502,
+    "sha256": "c371028e70a9d00f8715a9b96ef450cc234fff8a06b71df39b3be0f3d3a6532f",
+    "device": 16777231,
+    "inode": 518542787,
+    "mtime_ns": 1792213553699432298
+  },
+  "qualification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/QUALIFICATION.md",
+    "bytes": 6618,
+    "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4",
+    "device": 16777231,
+    "inode": 518544480,
+    "mtime_ns": 1792214265383973584
+  },
+  "provenance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/PROVENANCE.json",
+    "bytes": 175465,
+    "sha256": "9100c2ffa04f0a91c268ff1aa2ac10598450193028558c1fddab411742474904",
+    "device": 16777231,
+    "inode": 518544479,
+    "mtime_ns": 1792214265383401998
+  },
+  "root_scientific_executions": 0,
+  "editable_prompt_files_changed": [],
+  "checker_finding": "Historical ramp-budget first clause non-discriminating; do not count as a ramp proof or silently strengthen its coverage.",
+  "publication_pending": true,
+  "retained_audit": false
+}

@@ -1,0 +1,39 @@
+# Proposed weighted-profile and spectral-mass interface
+
+Root derivation, 2026-10-17. Conditional proposal only: no larger-coupling runtime theorem or published claim. No scientific runner executed.
+
+Source: current endpoint note at commit62e1e95bb012350410a1ff18764ebd97babcd697, SHA256 d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9, weighted comparison sections1–6 fully read. Mass proposal SHA256 f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8, fully read; its local regularity premise remains unproved. Source exposure includes prior checks; this is not an independent check of those sources.
+
+## Exact sufficient interface
+
+Fix sigma=1e-6, v=1/40, the original physical background and real product seed. Let 0<kappa<=1e-8. Require independently verified extension of the exact endpoint Schur/scattering interface, not the old loop apparatus: Dcc inverse<6, full endpoint matrix error epsilonG=1e-22, outgoing row error epsilonL=1e-21, actual seed spectral density, no singular spectrum on the fixed band, and the exact scalar reference spectral measure of variance kappa². Background filter/port estimates are unchanged by attaching the emitter; emitter positivity and compensation must hold for the range.
+
+The weighted pointwise proof remains numerically valid under this interface. Its only explicit coupling-dependent corrections are 6 kappa² epsilonG² in the denominator comparison and 6 kappa² epsilonG in the row correction. At kappa<=1e-8 these are <=6e-60 and <=6e-38 respectively. Thus (J/sin k)[epsilonG+6 kappa² epsilonG²]<1e-23 and J epsilonL(1+6 kappa² epsilonG)/(1-d)<3.2e-23 still hold. The same algebra proves the full complex ratio bound
+
+  |Fj/Fref−omega_p| <2e-13+750|k−k0|.
+
+No per-column phase or modulus-only replacement is introduced. This observation checks explicit constants; it does not by itself prove the required range-wide Schur/density interface.
+
+Suppose additionally the proposed exact local-mass lemma and its actual endpoint regularity premise give q_actual<4.85e-8 and q_ref=1−p0<4.54e-8 at kappa=1e-8. These bounds include all omitted spectrum, including point mass. From the exact reference variance,
+
+  delta = ||Fj/sqrt(p0)−omega_p f||_2
+        <2e-13+750 kappa/(v sqrt(p0)) <.000300001.
+
+For the last inequality, p0>1−4.54e-8 implies 1/sqrt(p0)<1.0000001 by squaring positive quantities; therefore delta<2e-13+.0003(1.0000001)<.000300001.
+
+Retaining the two-column preparation aggregation and orthogonal outgoing fibers gives
+
+  E_static <1.415[.000221+.000300001+.0000000454]
+              +2(.000300001)
+           <.001338.
+
+Actual residual amplitude is bounded by sqrt(q_actual)<.000221; reference normalization cost is at most q_ref. This improves the proposed uniform-profile static .002881 allowance, conditional on the same unproved spectral-mass premise plus the range extension above. It leaves more than .001662 for time-dependent terms at infinite tolerance .003. It does not establish any such runtime or finite-device claim.
+
+## Obligations and failure boundaries
+
+1. Prove actual endpoint regularity (or replace it with a checked mass certificate). Present generic inverse bounds do not supply it.
+2. Independently qualify the larger-coupling Schur/density interface and the weighted composition above.
+3. Derive actual complete localized decay and target normalization for the changed kappa; a smaller static allowance alone does not reduce runtime or size.
+4. Keep exact old aging, scalar phase, common output, every apparatus output/reference, source state and supplied physical Hamiltonian premises. No native supply, permanent finite halt, capture or reuse is established.
+
+This is a possible composition of compatible structures, not a transfer of the old apparatus calibration or its runtime theorem.

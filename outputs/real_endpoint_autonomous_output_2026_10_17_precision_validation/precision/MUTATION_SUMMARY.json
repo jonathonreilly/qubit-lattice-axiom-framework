@@ -1,0 +1,56 @@
+[
+  {
+    "name": "relative_range",
+    "expected_failure": "PR ratio perturbation ceiling",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "detuning_range",
+    "expected_failure": "PR absolute detuning ceiling",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "shifted_interval",
+    "expected_failure": "PR shifted interval lower margin",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "mass_regularity",
+    "expected_failure": "PR shifted actual missing mass",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "lower_coupling",
+    "expected_failure": "PR shifted logarithm argument",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "complementary_gap",
+    "expected_failure": "PR disk complementary inverse",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "localized_sides",
+    "expected_failure": "PR complete localized error",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "outgoing_height",
+    "expected_failure": "PR scalar outgoing height lower",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "profile_budget",
+    "expected_failure": "PR fixed phase normalized profile",
+    "detected": true,
+    "exit_code": 1
+  }
+]

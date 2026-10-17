@@ -1,0 +1,80 @@
+[
+  {
+    "name": "endpoint_column",
+    "expected_failure": "endpoint selected column",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "emitter_schur",
+    "expected_failure": "endpoint full core inverse",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "trace_block_factor",
+    "expected_failure": "endpoint jump trace",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "weighted_derivative",
+    "expected_failure": "endpoint weighted x derivative",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "outgoing_conjugation",
+    "expected_failure": "conjugate packet outgoing identity fixture",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "vertical_floor",
+    "expected_failure": "contour vertical denominator floor",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "bottom_ceiling",
+    "expected_failure": "contour bottom squared bound",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "local_curvature",
+    "expected_failure": "conjugate localized complete expansion",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "fourier_aggregation",
+    "expected_failure": "conjugate localized Fourier aggregation squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "normalization_identity",
+    "expected_failure": "positive normalization squared identity fixture",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "normalization_cost",
+    "expected_failure": "tradeoff normalization cost",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "new_onset",
+    "expected_failure": "tradeoff time denominator squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "new_finite",
+    "expected_failure": "tradeoff finite exponent margin",
+    "detected": true,
+    "exit_code": 1
+  }
+]

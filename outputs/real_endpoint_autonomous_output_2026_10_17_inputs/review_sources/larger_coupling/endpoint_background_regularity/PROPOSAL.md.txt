@@ -1,0 +1,185 @@
+# Proposed pre-emitter endpoint regularity certificate
+
+Status: new analytical proposal, not independently checked. Under the pinned background matching and real-axis premises, the construction below gives an energy derivative bound <35000 for the complete pre-emitter endpoint Green matrix, and <36000 for the scalar self-energy including complementary emitter coordinates, uniformly for 0<kappa<=10^-8 on the inner energy interval |E−E0|<=2.5e-8. The proposed constants are below the assessment's requested 10^6. No family theorem or spectral-mass conclusion is qualified by this document alone.
+
+## Exact sources, exposure and scope
+
+Controlling current source W: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`, SHA256 `d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9`.
+
+Proposed assessment: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_spectral_mass_assessment/ASSESSMENT.md`, SHA256 `f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8`.
+
+The assessment was read completely. Necessary current-source bare matching, filter, port, termination, complementary emitter and weighted pointwise premises were read/refreshed; earlier complete endpoint arguments and corresponding reviews were exposed in previous coherent tasks. No inherited scientific executable, author numerical output, grid, quadrature or optimizer was used. This is a fresh inequality derivation, not a numerical certificate. Applicable methodology instructions are reused. Only reads, hashing and this file write were performed; no W, Git, checkpoint, prompt, publication or prior report edits occurred.
+
+The assessment itself is not an accepted theorem here. This proposal addresses its missing regularity input only, including the dependence on complementary emitter couplings. It does not independently validate its density-comparison lemma or downstream time/error budget. The installed resonant reflection is never differentiated.
+
+## 1. Objects and strategy
+
+Primes initially denote momentum derivatives. Fix one old energy/parity column, its fixed open projection P and seven-dimensional complement Pc. Use the source's exact J=.030021107107032, sigma=10^-6, ell=20, F=20, N=44, E(k)=2J(1−cos k), and v=.025. The pre-emitter endpoint Green matrix is G(k)=Gtr(end,end); it is independent of kappa because the physical endpoint compensation restores the same background diagonal 2J. The background two-port reflection is denoted R_bg, distinguishing it from the installed one-port resonant reflection.
+
+The real source supplies
+
+    G(k)=G0(k)+DeltaG(k),
+    G0(k)=g(k)P−Qc(k)/J,
+    g(k)=−(z/J)(1+R_bg z^40)/(1+R_bg z^42),
+    ||DeltaG||<10^-22, |R_bg|<12e-6, z=exp(ik).
+
+Small ||DeltaG|| on the real interval is NOT used to infer its derivative. We first establish holomorphic matching on complex momentum disks of radius rho=10^-12 centered at every real k in I, and bound the actual analytic correction there. Cauchy's estimate then supplies its derivative. These disks are for the nonresonant PRE-emitter background only, not the installed emitter core.
+
+## 2. Certified small complex disks for the bare background
+
+For each real center k in I and complex w with |w−k|<=rho, |E'(w)|<.062. The free closed-channel half-line spectral distance at the real center is >.17: source-number conservation and positivity of Csrc/Gsrc give B>=1+Delta_min in the nonvacuum sector, so the worst gap is Delta_min−2−.0061>.17; the other vacuum band is >1.8 away. These are free-channel gaps, not a claimed gap for the interacting core.
+
+The closed half-line endpoint resolvent identity, q_l=−J m_l, gives holomorphic roots on the disk with
+
+    |q_l(w)−q_l(k)|<2|E(w)−E(k)|,
+    |q_l(w)|<.15=:r_c,
+    |q_l'(w)|<=J*.062/(.17−.062rho)^2<.125.
+
+The open root exp(iw) has modulus <=exp(rho) and derivative modulus <1.001. Therefore ||Q'||<1.001. All projections are fixed, so these scalar root estimates are operator estimates without channel-count factors.
+
+Use the exact identity −JQ^-1=lambda−2J−B+JQ in M16. Its derivative has norm <.062+.031*1.001<.1 throughout the disk. From the real ||M16^-1||<166, the Neumann product is <166*.1rho<2e-11, hence ||M16(w)^-1||<167 and M16 is holomorphic/invertible on a neighborhood of the closed disk.
+
+For A=[J(Q−Q^-1)]^-1, the open denominator remains separated by >.025−.062rho. The closed free gaps (or the exact root formula) give ||Pc A||<6. Consequently ||A||<41. Differentiating the scalar entries gives ||A'||<110: the open entry is 1/(iE'), with derivative modulus <=|E''|/|E'|²<101; a closed entry is a signed reciprocal square root of (2J+b_l−lambda)^2−4J², for which the same gap bounds give derivative <3. Thus
+
+    ||T_g||<167+41=208,
+    ||T_g'||<=167²*.1+110<3000.
+
+For the two filter sites F,F+1, the exact kernel
+
+    Gg(n,m)=A Q^|n−m|+Q^(n−1)T_g Q^(m−1)
+
+therefore has two-site operator derivative <3e4. Indeed each block costs at most 110+42+40*1.001*208*exp(40rho)+3000*exp(40rho)<12000; the two-by-two block norm is at most twice the maximum block norm. The bound 3e4 safely covers it.
+
+With V constant and ||V||<.05, the variation of I−Gg V over the disk is <1500rho. The real inverse <2000 then extends by Neumann to <2100. Likewise the real open scalar-background inverse K0^-1<500 extends to <501. No tiny real reflection error is invoked to prove these analytic continuations.
+
+For clarity, the bare scalar reflection also continues in this disk with |r_g|<1.001. This can be checked directly from the M16 unit-incoming solve: its RHS has norm <.063 and derivative <.125, giving a solution of norm <11 and derivative <205. Extracting the second-coordinate outgoing coefficient by subtracting the incident wave and dividing by its outgoing phase, then applying the absolute-origin phase convention (at most two free steps), gives the loose derivative ceiling <1000. Starting from |r_g(k)|=1 this implies the asserted disk bound. This is only a background matching estimate, not installed-reflection unitarity off the real axis.
+
+## 3. Analytic closed-channel filter error, not a real-axis derivative guess
+
+We enlarge source constants on the same disks. The two-site bare blocks satisfy
+
+    ||Gpc||,||Gcp||<500 r_c^19,
+    ||Gcc||<(1+r_c)*6+416 r_c^38<7,
+    ||(I−Gcc V)^-1||<2.
+
+These follow from the displayed exact kernel: cross terms come only from the image term, and all closed powers are bounded by r_c. The free closed two-site block has norm at most (1+r_c)||Pc A||. Open powers introduce factors exp(nrho), absorbed by the loose constants.
+
+The unit-incoming bare column at the filter has open two-site norm <4 and closed norm <20 r_c^18. For the latter the boundary matching solution above has norm <11, followed by closed propagation to the two adjacent sites. For the former use the sum of its incoming wave and r_g times its outgoing wave, with |r_g|<1.001.
+
+The scalar-open solution xP0 consequently has norm <2100. Its full open Schur correction has norm at most 1250 r_c^38, so the perturbed open inverse is <1002. Exact two-block elimination then yields the deliberately loose bounds
+
+    ||xP−xP0||<10^9 r_c^37,
+    ||xc||<16000 r_c^18.
+
+For the first inequality the forcing terms are bounded by
+
+    1002*(500 r_c^19*.05*2*20 r_c^18
+       +(500 r_c^19)^2*.05²*2*2100),
+
+which is <10^9 r_c^37. The second follows from
+2[20 r_c^18+500 r_c^19*.05*2101]. Exterior open rows have P norm <130 and Pc norm <500 r_c^19, again by the exact kernel. Multiplication by V and these rows proves for the analytic scalar scattering difference
+
+    delta_r=r_modified−r_scalar,
+    |delta_r(w)|<10^10 r_c^37<3e-20.
+
+For the final elementary comparison, r_c^5=.15^5<10^-4, so r_c^37<10^-28*.15²<3e-30. Therefore Cauchy's disk estimate, for EVERY real center in I, gives
+
+    |delta_r'(k)|<3e-8.                         (A)
+
+The source's tighter real value |delta_r(k)|<10^-20 remains available separately. The derivative bound (A) follows from a new complex enclosure of the exact difference; it does not follow from that real value alone.
+
+## 4. Analytic endpoint Green correction
+
+The same disk estimates control the propagated reflection kernel without differentiation of exponentially small powers. The exterior coefficient Cfilter in the source's exact update has norm <400: its two blocks are free A and propagated T_g terms, bounded by sqrt(2)*(41+208)*exp(40rho)<400. Hence
+
+    ||Ttilde||<208 exp(40rho)+400²*.05*2100<2e7.
+
+The real orthogonal port mixer introduces no norm factor. Its blocks after the d=24 propagation have the source's same closed-power structure, with 2e7 replacing 1.3e7 and r_c replacing 1/7. At ell=20, write X=Q^ell T_aa Q^ell and X0=Aopen R_bg exp(2i ell w)P. Then
+
+    ||X−X0||<7e7 r_c^44<1e-27.                 (B)
+
+Here the two off-diagonal blocks each contain 44 closed powers and the complementary diagonal contains 88; open propagation costs exp(44rho). The coarse comparison uses r_c^40<10^-32 and r_c^4<10^-3.
+
+The exact scalar filter a,b is holomorphic on these disks. Its parity denominators v_f+J exp(-iw) have real-center modulus at least J sin k>.012, and vary by <.032rho. The direct rational derivative formula bounds each parity reflection derivative by <100 on the disk (|v_f|<.1 suffices). Therefore |a(w)|<6e-6 and |b(w)/exp(iw)−i|<7e-6. Together with |r_g(w)|<1.001, exact scalar concatenation gives |r_scalar+r_g|<3e-5. Adding delta_r and the common port phase yields |R_bg(w)|<2e-5. This also directly verifies the scalar port denominators used in X0 without appealing to final-device poles.
+
+The unperturbed terminated inverse D_b0^-1=(A+QX0Q)^-1 is diagonal. Its open entry is Aopen^-1/(1+R_bg exp(42iw)); its closed entries are those of A^-1. The source's real ||A^-1||<20 and the above analytic formulas allow the loose bound ||D_b0^-1||<22 on the disk. Also ||A+X0||<42 and ||Q||<1.001. Equation (B) implies the perturbed inverse norm <23. The exact matrix function
+
+    F(X)=(A+X)−(A+X)Q(A+QXQ)^-1Q(A+X)
+
+is Lipschitz in X here with constant <2e6, by its three-factor difference and inverse identity. For example the dominant product is 42²*(1.001)^4*23*22<9e5, while the two outside-factor terms and the identity term remain below 3000. Its diagonal comparison is EXACTLY g(w)P−Qc(w)/J. Consequently the analytic correction satisfies
+
+    ||DeltaG(w)||<2e-21<1e-18,
+    ||DeltaG'(k)||<1e-6.                       (C)
+
+The second, intentionally weaker bound is Cauchy's operator-valued estimate at radius rho=10^-12. It can be justified by applying scalar Cauchy to matrix elements and dual vectors, with the operator supremum on the circle. There is no channel-count factor. Both G and its diagonal comparison were explicitly continued and bounded before this step.
+
+## 5. Real derivative cancellation in the two-port reflection
+
+This cancellation is what makes a useful endpoint constant possible. Let Bf=b/z, q=r_g z^40, H=r_scalar+r_g. Then on the real axis
+
+    H=z^-42 a+r_g U/(1−a q),
+    U=Bf²+1−a q.
+
+The source gives |a|<=5s, |a'|<=5, |Bf−i|<=6s, |Bf'|<=6, |Bf|<=1, |r_g|=1 and |r_g'|<=700, where s=|k−k0|<=10^-6. Thus
+
+    |q'|<=740, |U|<=17e-6,
+    |U'|<=12+5+5e-6*740=17.0037,
+    |(a q)'|<=5.0037.
+
+Differentiating the exact H expression gives
+
+    |H'|<=5+42*5e-6
+      +700*17e-6/(1−5e-6)
+      +17.0037/(1−5e-6)
+      +17e-6*5.0037/(1−5e-6)^2 <23.
+
+The physical pre-emitter reflection is R_bg=z^90(H+delta_r)/2. Using (A), the real |delta_r|<10^-20 and |H|<23e-6, one obtains
+
+    |R_bg'|<[23+3e-8+90*(23e-6+10^-20)]/2<12.  (D)
+
+In particular replacing R_bg' by the installed resonant derivative would lose this cancellation and would be the wrong object. No calibration derivative sharper than the supplied 700 was assumed.
+
+## 6. Endpoint derivative in energy units
+
+Rewrite the exact scalar endpoint expression as
+
+    g=−z/J−(z/J) R_bg z^40(1−z²)/(1+R_bg z^42).
+
+With r=12e-6 and (D), the second numerator N obeys |N|<=2r and |N'|<=2*12+82r<24.001; the denominator derivative is <12+42r<12.001. Therefore
+
+    |g'|<=J^-1[1+2r/(1−r)+24.001/(1−r)
+                       +2r*12.001/(1−r)^2]<850.
+
+The derivative of the complementary diagonal −Qc/J has norm <.125/.03<5. Equation (C) therefore gives ||G'(k)||<851. Dividing by E'(k)>v=.025 yields the proposed uniform whole-matrix energy bound
+
+    ||dG/dE||<34040<35000                    (E)
+
+on all of the original real interval. The symmetric inner energy interval |E−E0|<=v sigma is contained in E(I) by E'>v, so (E) applies on the assessment's entire inner band. No assumption that this energy interval equals the whole original momentum band is made.
+
+## 7. Complementary emitter correction up to kappa=10^-8
+
+The actual scalar self-energy in the assessment is
+
+    s_j(E)=Gjj+kappa² Gjc Dcc^-1 Gcj,
+    Dcc=(b_j+E−E0−B)_cc−kappa²Gcc.
+
+This differs from the purely pre-emitter Gjj, and must also be bounded. For 0<kappa<=10^-8 the unchanged complementary bare gap >.18 and ||G||<35 imply ||Dcc^-1||<6. This is a direct repeated Schur inequality, not an assumption that all previous family results transfer.
+
+On the real band ||Gjc||,||Gcj||<10^-22. From (E), every Green derivative block has norm <35000. Also
+
+    ||dDcc/dE||<=1+kappa²*35000<2,
+    ||d(Dcc^-1)/dE||<72.
+
+The full product rule then gives
+
+    |ds_j/dE|
+      <35000+kappa²[2*35000*6*10^-22+72*10^-44]
+      <36000<10^6.                              (F)
+
+This bound is uniform for all four old energy/parity columns and the specified coupling range. The background itself is fixed; only the explicitly bounded complementary emitter correction depends on kappa. The proof includes every complementary coordinate and does not use an installed reflection derivative or discard a nonzero floor.
+
+## 8. Review obligations and disposition
+
+This is a proposed positive resolution of the regularity bottleneck. Its new load-bearing steps are the rho=10^-12 pre-emitter complex matching certificate, the analytic closed-error bounds (A)–(C), and the real port cancellation (D). An independent checker should particularly examine the absolute-origin reflection extraction used for |r_g(w)|<1.001, the two-site norm factors, exterior Cfilter/port reference planes, and the exact terminated diagonal comparison. The constants have deliberately large margins, but that does not replace checking those identities.
+
+The derivation used no implication from a small real-axis error to a small derivative: it constructed a separate complex neighborhood and bounded the analytic difference there. It never continued the installed resonant core. Conditional on acceptance of (F), the assessment may use L=36000 (or the looser requested 10^6); its mass lemma, coupling extension, spectral normalization and complete time/resource composition still require their own checks. No new apparatus/onset theorem, scientific execution, retained status or physical supplier claim is made here.

@@ -1,0 +1,4 @@
+SCOPE: local exact algebra and rational ceilings for the supplied PR9667 setup.
+BOUNDARY: Duhamel, trace contractivity, full-domain monotonicity and runtime/output theorem are analytical premises, not computed proofs.
+BOUNDARY: no dynamics, quadrature, huge device, cooling, native supplier or general impossibility result is computed.
+TOTAL FAIL: not regular: outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md

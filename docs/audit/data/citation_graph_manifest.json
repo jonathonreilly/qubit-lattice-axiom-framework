@@ -1,6 +1,6 @@
 {
- "edge_count": 16188,
- "node_count": 7221,
+ "edge_count": 16191,
+ "node_count": 7223,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17878,6 +17878,10 @@
    "deps_hash": "b4fc7f0460f7",
    "out_degree": 1
   },
+  "preparation_calibration_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "d50c4e618dba",
+   "out_degree": 1
+  },
   "prepared_driven_state_bounded_theorem_note_2026-10-13": {
    "deps_hash": "4315a3953007",
    "out_degree": 7
@@ -18481,6 +18485,10 @@
   "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "d8ff3cbf3e4c",
+   "out_degree": 2
   },
   "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d80ec1818362",

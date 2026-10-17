@@ -1,0 +1,108 @@
+# Selective independent check: fixed-band weighted complex profile
+
+Conclusion: the proposed full complex pointwise bound `<2e-13+750|k-k0|` and combined static operator cost `<5.68e-5` follow from the pinned source's conditional premises. No correction found in the ordered calculation. This is an analytical, source-exposed independent reconstruction, not a retained audit or a fresh verification of the inherited physical/spectral premises. It transfers no conclusion to a coupling family.
+
+## Sources and exact coverage
+
+Proposal read in full: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_weighted_profile/PROPOSAL.md`, SHA256 `28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c`.
+
+Controlling source: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/resource_next_sources/ENDPOINT_NOTE_716e159253.md`, SHA256 `5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221`. Its sections on the scalar filter, full closed-channel correction, shared ports, endpoint deletion, emitter Schur complement, spectral normalization and preparation were freshly read for this check. Its exact parameters and added conjugate-packet section were read in the immediately preceding coherent tasks and reused at the same hash. The earlier source arguments had also been exposed during structural and quantitative endpoint checks. Applicable methodology instructions are reused at their previously recorded identities.
+
+No author code, inherited executable, numerical integration or scientific computation was run. Tools only read/hash sources and create this report. No source, previous report, W, Git, checkpoint or prompt was edited. The unchanged escape section was read but not independently rederived or needed for the new static conclusions below.
+
+## 1. Ordered pointwise propagation
+
+Let s=|k-k0|<=10^-6. The scalar filter's exact central data a(k0)=0 and b(k0)/z0=i, together with its derivative bounds, give |a|<=5s and |b/z−i|<=6s. To check the slope without treating s as a new bandwidth, put B=b/z and q=r_g z^(2F). Real-axis unitarity gives |B|<=1 and |r_g|=1. Hence |B²+1|<=12s. The exact concatenation formula implies
+
+    |r_scalar+r_g|
+      <=|a|+|B²+1−a q|/|1−a q|
+      <=5s+17s/(1−5s)<23s
+
+for s>0; at s=0 its left side vanishes. The physical correction is separately <10^-20, including all closed coordinates. Thus |r_m+r_g|<23s+10^-20 is strict also at s=0. The physical Hadamard half-sum/half-difference and common unit-modulus reference-plane shift now give
+
+    |R_j|<=r(s)=11.5s+5e-21,
+    |tau_j−z^(2(N+1))r_g|<=r(s).
+
+The source's central calibration allowance is d0=1.76e-13; integrating |r_g'|<=700 and |r0'|=2 gives |r_g−r0 zeta omega_p|<=d0+702s. This yields
+
+    |tau_j−rho_g omega_p|<=t(s)=d0+713.5s+5e-21.
+
+The common phase rho_g is preserved. There is no per-column phase fitting, scalar substitution for the physical closed feedback, or discarded central floor.
+
+## 2. Denominator and full complementary emitter coordinates
+
+From the exact terminated scalar g_j,
+
+    g_j+z/J=−(z/J)R_j z^(2ell)(1−z²)/(1+R_j z^(2ell+2)).
+
+The actual endpoint Green matrix differs from its diagonal comparison by epsilon_G=10^-22, including both off-diagonal blocks. With ||D_cc^-1||<6, the exact resonant denominator is
+
+    D_j=E−E0−kappa²G_jj−kappa^4G_jc D_cc^-1G_cj.
+
+Comparison to Im Dref=kappa² sin k/J gives the stronger absolute estimate
+
+    |D_j−Dref|/(Im Dref)
+      <=2r/(1−r)+(J/sin k)(epsilon_G+6kappa²epsilon_G²).
+
+It implies the same upper bound for |D_j/Dref−1| and also controls its imaginary part. The complementary contribution is retained: J/sin k<.0775 gives its size <.465*10^-68<10^-67. The full additive Green/complement contribution is <10^-23. Since r<12e-6, the coefficient of s in 2r/(1−r) is at most 23/(1−12e-6)<24, and its constant plus10^-23 is <2e-20. Therefore
+
+    |D_j/Dref−1|<=d(s)=24s+2e-20<25e-6.
+
+This is valid through resonance because no lower bound on |E−E0| was substituted for the imaginary part. The seven-dimensional complementary block is not set to zero.
+
+## 3. Full outgoing row and complex mismatch
+
+The block solve gives D_e^-1u_j=D_j^-1(u_j+c_j), where c_j=kappa² D_cc^-1G_cj is complementary and ||c_j||<6kappa²epsilon_G. Since L0Pc=0, the leading scalar row depends only on u_j. The physical error DeltaL=L−L0 still acts on u_j+c_j. Substituting Aout=−kappa L D_e^-1u_j and the source's Stone/Fref factors yields exactly
+
+    F_j/Fref=(tau_j/rho_g)/[(1+R_j z^(2ell+2))(D_j/Dref)]+e_L,j,
+    |e_L,j|<=J epsilon_L(1+6kappa²epsilon_G)/(1−d)<3.2e-23.
+
+All propagation and constant complex phases cancel with the original Fref, not with an altered target. Subtract omega_p before taking absolute values. With |omega_p|=|rho_g|=1, the numerator is bounded by t+r+d+rd, and the denominator below by (1−r)(1−d)>.99996. Also rd<=12e-6(24s+2e-20). This reproduces
+
+    |F_j/Fref−omega_p|
+      <[d0+3e-20+2.4e-25+(749+.000288)s]/.99996+3.2e-23.
+
+The slope is <750 because 750*.99996=749.97>749.000288. For the intercept, multiplying the claimed ceiling by .99996 leaves 1.99992e-13, whereas the numerator constant is only 1.7600003000024e-13 and the additional row term is far below the margin. Hence the complete complex mismatch is strictly <2e-13+750s. This explicitly retains d0, epsilon_A, epsilon_G, epsilon_L and the complementary emitter products.
+
+## 4. Reference variance weighting
+
+The pinned scalar reference has a normalized global emitter spectral measure with mean E0 and variance kappa². Its restriction to E(I) has density |Fref(k)|²dk, and f=Fref/sqrt(p0). Since E'>v=.025 throughout the interval between k and k0,
+
+    integral_I (k−k0)²|f(k)|²dk
+       <=kappa²/(p0 v²).
+
+Only positivity is used to enlarge the restricted energy moment to the full moment. No omitted spectral weight is falsely declared zero; no Lorentzian approximation or divergent continuum second moment is introduced. With p0>=1−1.6e-9, this gives ||(k−k0)f||_2<4.1e-11. Multiplying the COMPLEX pointwise bound by |f| and using the L2 triangle inequality therefore gives
+
+    delta_j=||F_j/sqrt(p0)−omega_p f||_2
+       <2e-13+750*4.1e-11=3.07502e-8<3.1e-8.
+
+The hard cutoff and the original positive reference normalization remain intact.
+
+## 5. Preparation and output aggregation
+
+The actual in-band incoming coefficient is conjugate(F_j); the comparison coefficient is conjugate(omega_p f). The source's local spectral interface permits their L2 difference to bound the physical packet difference. Since 0<p0<=1,
+
+    ||F_j−omega_p f||_2
+       <=sqrt(p0)delta_j+1−sqrt(p0)<3.1e-8+1.6e-9.
+
+Add the actual off-band amplitude <=4e-5, which includes point spectrum. General error columns of the two old energies within each parity need not be orthogonal, so the source's sqrt(2)<1.415 factor is retained. The resulting preparation operator bound is
+
+    <1.415*(4e-5+3.1e-8+1.6e-9)
+     =5.6646129e-5<5.67e-5.
+
+For the outgoing comparison error use R_inst, not the small two-port reflection R_j above. Reality gives F_j=R_inst,j conjugate(F_j), with |R_inst,j|=1. Writing e_j=F_j/sqrt(p0)−omega_p f yields the exact identity
+
+    R_inst,j conjugate(omega_p f)−omega_p f
+       =e_j−R_inst,j conjugate(e_j).
+
+Its L2 norm is <2delta_j<6.2e-8. Fourier propagation and restriction contract the norm. Unlike the general preparation residuals, these four open output errors occupy mutually orthogonal internal u_j fibers, even after retaining the old elapsed phases. Their complete operator bound is the maximum column bound, so no additional sqrt(2) belongs here. Passive-reference tensoring preserves both operator estimates.
+
+Using the looser rounded preparation ceiling gives the advertised sum
+
+    <5.67e-5+6.2e-8=5.6762e-5<5.68e-5.
+
+No actual-state renormalization or output postselection enters this sum.
+
+## Limits and disposition
+
+The requested new intercept/slope, floors, emitter complement, reference weighting and distinct aggregation rules check out under the stated fixed-device premises. The unchanged escape, off-band spectral theorem, full physical filter/kernel construction and local synthesis isometry were treated as inherited conditional inputs, not freshly certified. No larger coupling, changed band, full-output contour, optimal onset or retained theorem follows from this selective result. The proposal's separate resource section is outside the decisive check requested here.

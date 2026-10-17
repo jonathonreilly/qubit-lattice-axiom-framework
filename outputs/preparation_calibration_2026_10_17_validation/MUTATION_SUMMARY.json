@@ -1,0 +1,80 @@
+[
+  {
+    "name": "gram",
+    "expected_failure": "full local Q Gram",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "projection",
+    "expected_failure": "rank-one discriminant polynomial",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "monotonicity",
+    "expected_failure": "complete g monotonicity",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "pulse",
+    "expected_failure": "pulse unit area",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "isolation",
+    "expected_failure": "isolation norm sum",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "pulse_norm",
+    "expected_failure": "integrated pulse norm",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "pulse_identity",
+    "expected_failure": "integrated pulse identity",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "duhamel",
+    "expected_failure": "Duhamel calibration scalar ceiling",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "work",
+    "expected_failure": "modeled work variation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "slew",
+    "expected_failure": "incident pulse slew",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "seed",
+    "expected_failure": "seed trace contribution",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "channels",
+    "expected_failure": "fourteen preparation channels",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "occupied",
+    "expected_failure": "all-occupied clock energy",
+    "detected": true,
+    "exit_code": 1
+  }
+]

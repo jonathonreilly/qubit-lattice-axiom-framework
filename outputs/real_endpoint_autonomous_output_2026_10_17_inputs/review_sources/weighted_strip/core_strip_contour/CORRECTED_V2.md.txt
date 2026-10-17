@@ -1,0 +1,65 @@
+# Proposed complete localized contour bound on a certified thin strip
+
+Status: root-authored proposed argument; NOT independently checked. No publication or scientific execution. Source: ../resource_next_sources/ENDPOINT_NOTE_716e159253.md, SHA256 5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221, published endpoint commit716e159253. Keep exactly its kappa=1e-12, sigma=1e-6, apparatus, seed, common complex target and conditional real-axis premises. No widened band or inherited old-emitter family.
+
+## Objective and candidate
+
+Instead of integrating the huge real-axis derivative of a0 C by parts, continue the actual finite-core matching problem into the thin lower rectangle z=x-iy, x in I, 0<=y<=h=1e-23. The existing uniform real-axis inverse <1.2e23 permits a Neumann continuation if the physical matching variation is <.1y. This is a proposed explicit justification for continuing C, not an assumption that the earlier scalar contour also continues the core. At T=1e27 it would give a complete localized contribution <3e-7 and scalar target negative tail <1e-16, retaining the published .002625 static comparison cost and incoming <2e-7. Proposed infinite total<.002626<.003; finite M=50T=5e28 gives<.003626<.004 on[T,2T]. Every complex-strip interface below needs independent checking.
+
+## Physical matching analyticity and inverse
+
+Use the exact fixed real physical core (113 sites, eight internal coordinates per parity), with all output exterior channels eliminated at the existing physical reference plane. Its energy-dependent entries are lambda(z)=b_j+E(z) on core diagonals and the outgoing lead self-energies J exp(iz) on the selected open direction, J q_l(z) on seven closed directions. Static contacts, emitter coupling and graph coefficients are unchanged. Thus no k-dependent basis is introduced; B spectral projections are fixed. The sign of the self-energy is immaterial for this norm bound but must match the source M.
+
+The closed half-line spectral separation can conservatively be bounded below by .17 throughout real I. For nonvacuum sources B>=1+Delta_min, hence their threshold minus b_j+E(k) is at least Delta_min-2-E(k)>.17 since E(k)<.0061. The other vacuum old energy is separated from its entire lead band by more than 1.8. Source excitation number is preserved by B and all added terms in Csrc/Gsrc are positive, so this lower bound is on the whole nonvacuum subspace, not a guessed eigenvalue. The original |q_l|<=1/7 still holds on I.
+
+For |Im z|<=h, |E'(z)|<.062, so |E(z)-E(x)|<.062y. Resolvent analyticity for the closed free half-line, whose endpoint Green function equals -q_l/J up to convention, yields
+
+ |q_l(z)-q_l(x)| <= J |E(z)-E(x)|/[.17(.17-|E(z)-E(x)|)] <2 |E(z)-E(x)|.
+
+Therefore |q_l(z)|<1/6, uniformly, and the chosen decaying roots continue without branch ambiguity. The closed self-energy variation is <.004y. The open variation is J|exp(iz)-exp(ix)|<.031y. Since the boundary projection is orthogonal and there is only the actual output lead boundary, the full matching variation is
+
+ ||M(z)-M(x)|| < (.062+.031)y <.1y.
+
+This step needs confirmation against the precise core boundary convention; an unnoticed additional energy-dependent boundary would invalidate the advertised .1.
+
+Using the published real-axis ||M(x)^-1||<1.2e23, the perturbation norm is <.12 throughout the rectangle. Hence M(z) is analytic/invertible there and ||M(z)^-1||<1.2e23/(1-.12)<1.4e23. Define the analytically continued incoming column x(z)=M(z)^-1 i E'(z) u and reflection R(z)=u^T x(z)-1, with the same real constant u. Then ||x(z)||<9e21. No use is made of unitarity off the real axis.
+
+The localized column C is obtained by subtracting the open incoming/outgoing waves and including all closed tails. On the core, even allowing the subtracted open component via |R|<=||x||+1 gives <=2||x||+2. The closed-tail map has norm <=r_c/sqrt(1-r_c^2)<1/5 for r_c=1/6, multiplying the boundary vector of norm<=||x||. Thus conservatively ||C(z)||<3||x||+4<4e22. This is a holomorphic vector in the fixed finite-core plus closed-tail Hilbert space: the tails are uniformly geometric in that space. This does not continue an infinite full resolvent across its spectrum; it continues a finite matching construction and its decaying closed tails.
+
+## Localized integral
+
+The published conjugate comparison coefficient is a0(z)=conj(omega*zeta0) A E'(z) exp(-i113z)/Dbar(z), A<17kappa, Dbar=E(z)-E0+(kappa^2/J)exp(-iz). For z=x-iy,
+
+ Im Dbar = -sin x [2J sinh y+(kappa^2/J)exp(-y)].
+
+There is no zero in this rectangle, and |Dbar|>12kappa^2. Also |exp(-i113z)|<=1. Thus |a0|<1e11 everywhere. On each vertical side the existing real-part margin gives |Dbar|>.024 sigma and |a0|<44kappa/sigma=4.4e-5. The much thinner h only improves that side estimate.
+
+The time factor has modulus exp(t Im E(z))=exp[-2J t sin x sinh y]<=exp(-vty). A vector-valued rectangle deformation of (2pi)^-1/2 integral_I a0 C exp(-itE) dk is legitimate by the finite-matching and closed-tail analyticity above.
+
+Bottom norm <=(2sigma/sqrt(2pi))*1e11*4e22 exp(-vth)<4e27 exp(-vth).
+
+Two side norms combined <=(2/sqrt(2pi))*(4.4e-5)*(4e22)/(vt)<1.76e18/(vt).
+
+At T=1e27, vTh=250. The bottom is negligible (even e^250>2^250 suffices for <1e-40); side <7.04e-8 per old column. Pay sqrt(2)<1.5 for the two potentially overlapping old-energy columns within parity; different parities remain orthogonal. A complete localized ceiling <3e-7 follows, for every t>=T. Reference tensoring preserves it. Both cutoff edges remain paid.
+
+## Scalar target negative tail, separately
+
+For the actual target f(z)=zeta0 A E'(z) exp(i113z)/Dref(z), the same thin rectangle remains above its reference resonance pole. Indeed
+
+ Im Dref = sin x[(kappa^2/J) exp(y)-2J sinh y] >12kappa^2
+
+at this h, because kappa^2/J>32kappa^2 whereas 2J sinh h<.061h=.61kappa^2. The sin x>.4 margin still leaves >12kappa^2. Thus |f(z)|<2e11 allowing exp(113h)<2. Side real-part margin remains >.024sigma, and the numerator phase can be retained in the time-decay rate vt-113 rather than dropped.
+
+For negative integer m, the bottom geometric l2 sum yields a bound <1e17 exp(-vth), using 1-exp(-2h)>=h, h=1e-23, and 2sigma/sqrt(2pi)<sigma. The exp(113h) is already paid above.
+
+For the vertical sides, integration gives coefficients at most (44kappa/sigma)/(|m|+vt-113), with Fourier factor1/sqrt(2pi), on each side. Since sum_(n>=1)(n+A)^-2<=1/A for A>0, their combined l2 norm <=88kappa/[sigma sqrt(2pi(vt-113))]. At T=1e27 this is <1e-16. Both sides and the bottom imply q_t<1e-16 after a loose margin (the side is actually far smaller than that ceiling). The exact target normalization cost is 1-sqrt(1-q_t^2)<=q_t^2, not postselection of actual output.
+
+## Complete budget and limitations
+
+Keep published static .001121+.001504=.002625 and incoming<2e-7. If the two contour arguments above withstand separate checking, localized<3e-7 and normalization<1e-32 yield infinite complete operator error<.002626<.003 at all t>=1e27. The same exact finite-transfer radius18 and distanceM+23, fixed M=5e28, add<.001 on[T,2T]. This is a proposed factor1000 reduction from M5e31, not a practical apparatus, physical lower bound, retained audit, new coupling family, thermal delivery or finite permanent halt.
+
+Most vulnerable interfaces: exact physical core boundary inventory; closed-channel separation/analytic branch; C's subtraction and Hilbert-valued tail norm off real axis; contour denominator signs; hard-cutoff sides and within-parity factor. No numerical PASS is claimed. Do not publish before an independent check and scoped scalar corroboration where useful.
+
+## V2 reporting correction
+
+The stated rounded localized3e-7 and incoming2e-7 ceilings plus normalization1e-32 justify the loose total .002626. V1 printed .0026255 without explicitly allocating that final tiny normalization term. The advertised .003/.004 guarantees and proposed time/device are unchanged. This is a preserved reporting correction, not an assertion that pending independent review has completed.

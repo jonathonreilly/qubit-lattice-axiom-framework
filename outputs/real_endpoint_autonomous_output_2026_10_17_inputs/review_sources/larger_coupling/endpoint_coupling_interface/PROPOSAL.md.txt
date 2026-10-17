@@ -1,0 +1,49 @@
+# Proposed actual endpoint coupling interface
+
+Root analytical derivation, 2026-10-17. Not independently checked; no new runtime result. Source current endpoint note62e1e95bb012350410a1ff18764ebd97babcd697 SHA d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9, complete termination/emitter/spectral sections and weighted proof read. All background premises and source qualifications remain conditional as in that note. No old loop-emitter theorem is imported.
+
+Claim to check: the real-axis endpoint Schur, spectral synthesis and complex-profile interfaces extend to every 0<kappa<=1e-8 on the same sigma1e-6 band, with the same supplied static architecture and product seed. This does NOT extend any fixed-kappa localized decay constant or prove the desired sharper mass estimate.
+
+## Positivity and exact matrix
+
+The original physical emitter terms are Q(-kappa), (E0-kappa)n_e, (J-kappa)n_end. J>.03 and sin(k0)>.4 imply 1-cos(k0)=sin²(k0)/(1+cos(k0))>.08, hence E0=2J(1-cos(k0))>.0048. Thus both onsite coefficients remain strictly positive at kappa<=1e-8. The endpoint compensation restores its exact background diagonal2J. The emitter diagonal is exactly E0; no kappa-dependent extra scalar is introduced. The internal B, background, old K/W and c_new stay the same, while the actual reference f_kappa changes with kappa. Each finite truncation retains the original graph/radius bound since the new kappa stays below J.
+
+The pre-emitter terminated background inverse exists on the same band by the original Dirichlet construction. Its endpoint G satisfies norm<35, approximation epsilonG=1e-22 and cross entries<epsilonG, all independent of kappa. The outgoing row approximation epsilonL=1e-21 is also independent of kappa.
+
+## All eight emitter coordinates
+
+On complementary emitter coordinates the bare spectral distance exceeds g=.18. The perturbation norm is <35kappa²<=3.5e-15, so
+
+  ||Dcc^-1|| <=1/(.18-3.5e-15)<6.
+
+In each chosen open internal column the exact scalar denominator is
+
+  Dj=E-E0-kappa²Gjj-kappa⁴Gjc Dcc^-1 Gcj.
+
+The actual imaginary comparison is
+
+  |Dj-Dref|/Im Dref
+    <=2eta/(1-eta)+(J/sin k)(epsilonG+6kappa²epsilonG²)
+    <1/40000,
+
+with eta=12e-6, J<.031, sin k>.4. This is uniform across the proposed kappa range and gives Im Dj>12kappa². It proves invertibility, not merely relative modulus closeness.
+
+For completeness the block factorization of the full De inverse has two triangular factors, each of norm at most1+a with a=6kappa²epsilonG<=6e-38, around diag(Dj^-1,Dcc^-1). Therefore
+
+  ||De^-1|| <=(1+a)² max(1/(12kappa²),6)<1/(10kappa²).
+
+The maximum is the first term because kappa²<=1e-16. This retains all complementary coordinates; no factor eight is inserted in an operator norm. Background inverse plus this Schur inverse gives the actual finite matching inverse for every k in the fixed closed band. Thus there is no in-band normal eigenvector. Its entries are boundary values of locally analytic matching functions with no real denominator zero; the original local spectral-jump/synthesis proof applies at each kappa. Exterior spectrum remains unrestricted.
+
+## Actual spectral measure and normalization
+
+The delivered normalized emitter seed has exact mean b_j+E0+c_new and variance kappa²: its only off-diagonal coupling out of the occupied emitter coordinate is the one bond of magnitude kappa. The scalar reference has the same variance. Therefore the original positive global-measure estimate gives
+
+  p0>=1-(kappa/(v sigma))²>=.84>0,
+
+since v sigma=2.5e-8. This guarantees f_kappa=Fref/sqrt(p0) is defined without assuming the sharper mass lemma. Actual omitted mass and point spectrum remain in the residual; the crude amplitude bound reaches .4 at the largest kappa and is not enough for a useful complete-output theorem.
+
+The local rank-one jump identity uses unchanged E'(k), unit incoming columns and the real one-lead Hamiltonian. Its derivation from the inverse matching construction carries through with actual kappa. The outgoing row formula, its Stone coefficient, and the common complex reference phase are unchanged in form. The uniform ratio bound epsilonF=.000752 and the distance-weighted bound2e-13+750|k-k0| follow from the same algebra, because the only coupling corrections are bounded by6e-60 in the Schur bracket and6e-38 in the row factor. Arbitrary old/reference amplitudes remain linear; no conjugation of their coefficients occurs.
+
+## Limits
+
+This interface must receive an independent check before use. In particular the local synthesis continuation must be justified by the actual matching proof, not by an assumed global scattering basis. It does not prove a useful Lipschitz constant, the conditional missing-mass bound, any complex strip, or time/size improvement. Exact supplied Hamiltonian/seed/coefficient/physical interpretation premises and the distinction between finite windows and permanent halt remain unchanged. No empirical prediction, audit status, native supplier, capture or reset follows.

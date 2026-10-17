@@ -1,0 +1,25 @@
+{
+  "scope": "Current Markdown transport only. Historical source and execution manifests remain immutable; no old execution is represented as current.",
+  "files": {
+    "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "original": {
+        "bytes": 147577,
+        "sha256": "9d493f2c67525f89fc32cc1201888a8729b64a2ce5522a7ad46dc9d473b2aae3"
+      },
+      "current": {
+        "bytes": 147575,
+        "sha256": "99a16de7d111bc0d3ab87ecb566db80b3a678c534cecc86ae7fe2d4dd9625639"
+      },
+      "original_snapshot": "outputs/next_control_landing_2026_10_17/originals/7e3d991496/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    }
+  },
+  "edits": [
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original": "[artifact manifest](../outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json)",
+      "replacement": "artifact manifest (`outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json`)"
+    }
+  ],
+  "frozen_original_head": "7e3d99149604c4fc3b9f1b2ee146191de7f9b5b3",
+  "prior_binding": "outputs/next_control_landing_2026_10_17/history/LANDING_SOURCE_BINDING-v1.json"
+}

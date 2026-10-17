@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-10-17T11:16:06.618580+00:00",
+  "review_bytes": 16185,
+  "review_sha256": "9e3c67a2154dd6ca83ebaa643484007d519600a7a1d242b6b225fe9860015b51",
+  "verified_snapshot_count": 11,
+  "author_checker_or_outputs_opened": false,
+  "scientific_numerical_runs": 0,
+  "disposition": "structural components supported conditionally; full headline quantitative theorem not qualified by this review",
+  "unfinished_obligations": "REVIEW.md section 6"
+}

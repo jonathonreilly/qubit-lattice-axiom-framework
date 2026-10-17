@@ -1,0 +1,1 @@
+Initial canonical integration failed before arithmetic: regenerated declaration order moved parameters/manifest but two positional constants retained old indices. Repaired by binding both constants to their explicit declared literal paths. Original failed logs and launcher preserved. No scientific inequality changed.

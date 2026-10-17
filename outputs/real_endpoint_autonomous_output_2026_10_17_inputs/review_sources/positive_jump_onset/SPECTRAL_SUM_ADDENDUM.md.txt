@@ -1,0 +1,48 @@
+# Integrated local spectral mass for the reflection derivative
+
+Root proposal, not independently checked. Same apparatus and provisional input
+contract as CORRECTED_V2.md; no new parameter choice or scientific execution.
+This additional estimate does not withdraw the original missing-derivative finding.
+
+The finite-core projection Pc has rank904 in each parity. The local spectral
+identity gives, on this column's physical energy interval,
+
+    integral_I x(k)x(k)* dk/(2pi) = Pc E_H(interval) Pc*.
+
+Consequently integral_I ||x(k)||^2 dk <=2pi*904. This is a finite-rank
+spectral-projection trace, not a bound on the trace of the full resolvent.
+Only the single open channel and its exact unit-incoming normalization enter.
+
+From the independently reconstructed reciprocal identity,
+
+    |R'| <=2|E''|/E' + ||M'|| ||x||^2/E',
+
+so the actual weighted integral obeys
+
+    integral_I |f| |R'|
+      <=2(.061/.025)*.002 +(.1/.025)*(4e10)*2pi*904
+      <1e15,
+
+using pi<4. Hence Vedge(a)<=Vedge(f)+integral|f||R'|<8e26.
+The same integration by parts gives incoming norm <9e26/sqrt(pi v t);
+the original outgoing normalization bound stays 8e26/sqrt(pi v t).
+
+For the localized vector, replace the repaired reflection derivative term
+||f||1 C0 sup|R'| by C0 integral|f||R'|<2e32. The other terms remain
+1.6e28+1.2e44+4e47+9.76e14. Thus the per-column variation <5e47 and,
+including Fourier normalization and sqrt(2) old-column aggregation, the
+localized norm <1e49/(v t) is now justified by an explicit additional lemma.
+
+At T=1e66, sqrt(pi v T)>2e32. Incoming plus outgoing normalization is
+<8.5e-6, and localized error <4e-16. Thus total escape <1e-4 for every
+t>=T. If all original upstream hypotheses are qualified, infinite complete
+error remains <.0013; M=50T=5e67 yields finite <.0023 on [T,2T] by the
+same finite-transfer theorem. Resources remain astronomical. No physical
+time conversion, minimum-time or practical implementation conclusion follows.
+
+Required check: establish the integral identity with the actual fixed physical
+core, correct spectral variable, and exactly one propagating channel; verify
+the finite projection inequality and all scalar margins. Confirm no closed
+channel or residual spectrum is dropped: off-band mass is still paid in the
+unchanged preparation-to-packet estimate. This is a refinement of the positive
+jump family, not a new independent architecture or an independent check itself.

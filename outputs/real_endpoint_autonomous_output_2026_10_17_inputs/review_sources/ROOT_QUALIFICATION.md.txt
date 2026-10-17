@@ -1,0 +1,98 @@
+# Root qualification of the real endpoint-emission construction
+
+This is acceptance for conditional research reuse and preparation of a regular
+review PR, not retained audit or a physical realization claim. The source is
+real_transmission_autonomous_route/ROUTE.md in renewal_20261016_230727, SHA256
+fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9.
+Root read the complete argument. All 26 source/snapshot pairs match their
+manifest identities; ROUTE_SOURCE_IDENTITY_CHECK.json records the check.
+
+The shared-source/direct-sum structure, real phase filter, mixer, positive
+nearest-neighbor realization, terminated-port Schur identities and phase signs
+were independently reconstructed in real_two_port_structural_check/REVIEW.md
+(9e3c67a2154dd6ca83ebaa643484007d519600a7a1d242b6b225fe9860015b51).
+Its unfinished quantitative items are resolved by QUANTITATIVE.md
+(733fdb0943ce84f86457bffcf5c8798c2bbfd02ce3c95af62760d42f9865f7b1),
+including all complementary emitter directions and physical-coordinate factors.
+Root read both reports fully. Exact-Fraction arithmetic is corroboration of the
+reconstructed inequalities, not independent proof of the physical model.
+
+The local spectral representation, Stone normalization, exact reference density,
+variance complement, common phase/aging, hard-cutoff escape and finite polynomial
+transfer were independently reconstructed in endpoint_spectral_check/REVIEW.md
+(b7f46ace4aa202aa69269362a4dbf978d3190aa3db15dbeb8c03124b58ec35a9).
+Root read it fully. Its upstream Gtr/L and single-open-channel conditions are
+the quantitative interface above, together with the pinned interval/gap inputs.
+
+## Finite-coordinate kernel interface checked by root
+
+The supplied bare-core inverse <166, free/image coefficients <40 and <206,
+and contractive Q propagation give each bare site block <250. A two-site filter
+update costs at most 2*250^2*.05*2000, so every filtered block is <1.3e7.
+The two-arm orthogonal mixing costs at most two for an individual physical
+block: <3e7. The endpoint deletion inverse is <22, so every truncated background
+block is <3e7+22*(3e7)^2<2e16. With emitter inverse <1e23, existing/existing
+blocks are <2e16+1e-24*(2e16)^2*1e23<5e31. New emitter/existing blocks are
+<1e-12*2e16*1e23=2e27, and emitter/emitter blocks <1e23. Thus the same 5e31
+ceiling covers every physical block, including newly added coordinates.
+The 113 by113 matrix of these 8 by8 blocks has norm <113*5e31<6e33.
+There is no trace or norm estimate on the full infinite continuous-spectrum
+resolvent. This closes the explicit kernel premise of the downstream review.
+
+The finite radius argument has slack for the emitter diagonal displacement:
+9.5+2J+7.926+.05+2J+kappa<18 using J<.031. This is a one-head bound only.
+The graph distance M+23 and compensated compression are independently checked.
+No large finite Hamiltonian or dynamics computation is needed or claimed.
+
+## Accepted implication and scope
+
+Under the exact specified static real Hamiltonian, positive local block
+installation, selected zero couplings, pure endpoint one-head/blank-clock/source
+product state and inherited ladder calibration/gap premises, the original
+conditional complete-output theorem has infinite error <.0013 for t>=10^136,
+and finite error <.0023 on [T,2T] with M=50T. Every old input and passive
+reference is included, with old aging, a single scalar and common complex
+output profile. The infinite residual point spectrum is bounded, not removed.
+This construction removes the timed control stage from PR9667's operational
+contract by changing the apparatus. It does not derive the supplied seed or
+static Hamiltonian from the physical framework.
+
+The original sufficient onset is being sharpened separately. The corrected
+positive-jump result T=10^78 has independent conditional support; its original
+localized derivative omission is preserved. A proposed further T=10^66 spectral
+mass refinement is not accepted here until its correction and review are frozen.
+Do not combine the new apparatus with the old preparation/runtime/calibration
+theorems without a new proved interface.
+
+## Evidence and limitations
+
+All three review components are same-model and source-exposed. They rebuilt
+different load-bearing identities; they are not blind, model-diverse, an audit,
+or independent recertification of all ancestral calibration inputs. The original
+author checker and launcher were read fully by root after the new reviews froze;
+reviewers did not open them. Its 35 prelaunch bindings and all output bindings
+match now, stdout's JSON equals RESULT.json, and stderr is empty. Recorded exit
+0, wall .08226270787417889 seconds and child CPU .046963 seconds are consistent
+with the launch receipt. CPU/file/wall caps applied; requested address-space cap
+failed and remains disclosed. Initial displayed RESULT.json was truncated; root
+does not claim full manual reading of every emitted large rational from it.
+The full code, independent analytic chains, and binding/output equality supply
+the stated scope; the raw author result is not sole mathematical evidence.
+
+No native coefficient/state supplier, finite permanent halt, capture, reset,
+reuse, thermal preparation, practical resource bound, calibrated new apparatus,
+or physical Hamiltonian/time/energy/Record identification is established.
+No new PR, merge, main push, audit verdict or editable prompt change is recorded
+by this qualification. Publication still needs self-contained packaging and
+focused conformance checks; current-main combined landing gates remain future
+review work, not an author-run science merge.
+
+## Onset refinement accepted after explicit corrections
+
+Root read positive_jump_onset_check/REVIEW.md and ADDENDUM_REVIEW.md fully.
+The latter has SHA256 26078b2784d1958b4fb3d6dbe49ab78ac45d2fc95f8e447ad2b892483753bed3.
+SPECTRAL_SUM_CORRECTED.md changes pi<4 to pi<10/3 and distinguishes the finite-core inclusion from the closed-channel projection. These are the exact requested repairs. Its finite-rank spectral-mass argument yields escape <9e-6 at T=10^66, hence infinite complete error <.0013 and finite <.0023 on [T,2T], M=5e67. The original localized phase-derivative omission remains preserved; the integrated derivative lemma now bounds that term explicitly. This qualification supersedes the provisional-onset sentence above, not the source histories or physical limits.
+
+## Weighted variation refinement accepted
+
+Root fully read WEIGHTED_VARIATION_CANDIDATE.md (705081af26f4850d0688efdbf55c99443a4b359897d87c390d07aa8a7dbd21b3) and WEIGHTED_REVIEW.md (99b91967f2aace33c2bbc80b75c4dc9eec49d3e6646ce86242a9ea2ce5f23a66). The source-exposed same-model check reconstructs monotone denominator integration, the differentiated complex phase113, endpoint-inclusive variation, finite-core Cauchy-Schwarz, all localized terms including 1/R, and column aggregation. No further repair was required. Accepted conditional onset T=10^42 with M=5e43, escape <2e-5, infinite complete error <.001141 and finite <.002141 on [T,2T]; the advertised .0013/.0023 ceilings remain. This supersedes the T66 sufficient onset for this exact apparatus, preserves both earlier corrected routes, and changes no supplied physical premise. This is analytical qualification, not a numerical dynamics run or audit verdict.

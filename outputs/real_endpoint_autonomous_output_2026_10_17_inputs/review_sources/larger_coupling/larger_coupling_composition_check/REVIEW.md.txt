@@ -1,0 +1,104 @@
+# Larger-coupling complete-output composition check
+
+Finding: the pinned component results compose at the single installed coupling kappa=10^-8 to the stated infinite operator error <.000320 for t>=T=4e21 and finite operator error <.001320 on [T,2T], with M=2e23 output sites. No new mathematical correction or missing cross-component premise was found. This is a source-exposed composition check conditional on the inherited supplied apparatus, kernel and calibration premises, not independent recertification of those ancestors or retained/audit status.
+
+## Scope and exposure
+
+I read the complete root composition, complex-self-energy bridge and its report, Schur-strip proposal and its report, and restricted-reference-moment proposal and completed report. The latter review was obtained before this conclusion, not presumed from its pending assignment. Unchanged components previously read in full are reused at refreshed hashes below: coupling extension, background regularity, spectral-mass lemma, weighted estimate and their listed checks. Relevant canonical spectral, core/tail, scalar and finite-transfer definitions were previously read at the unchanged note hash.
+
+I authored the original weighted-profile proposal and the coupling-interface, background-regularity, spectral-mass and weighted-mass composition reviews. Consequently this is not another independent origin of those component arguments or a blind review. The restricted moment has a distinct source-exposed checker; that checker authored the mass assessment and Schur proposal, as disclosed in its report. Mutual exposure remains material. The selected model/effort is unchanged. Previously read applicable AGENTS, SCIENCE_WORKFLOW and physics-claim-reviewer guidance is reused. No scientific execution, inherited runner, quadrature, dynamics, new agent, W/Git/PR/checkpoint/prompt edit occurred. Tools only read/hash sources and write this report.
+
+## 1. One apparatus and one spectral normalization
+
+The coupling extension changes the physical emitter hopping to -kappa and the two positive compensating occupations together. At kappa=10^-8 their positivity survives, emitter diagonal remains E0, and background endpoint diagonal remains 2J. Thus the background matrix, filters, termination, source identification B iota=iota K and physical scalar c_new are unchanged. This is an actual new installed coupling, not an old profile inserted into a different Hamiltonian.
+
+The same real basis has one open and seven closed channels. The real Schur proof retains all eight emitter coordinates and yields Im Dj>12 kappa^2. It supplies local nonsingularity and the rank-one jump for this coupling. In the convention (lambda+i0-H)^-1 the jump is -i Phi Phi*/E', giving measure Phi Phi* dk/(2pi); F and Fref therefore already use dk normalization. The local synthesis isometry and absence of a local singular spectral component are provided by the coupling interface, not inferred from a mass lower bound. No global absolutely-continuous completeness is required.
+
+Here p0=integral_I |Fref|^2 dk, f=Fref/sqrt(p0), and Fref contains the actual kappa-dependent Dref as well as the common rho_g and propagation phase 113. All these quantities are recomputed conceptually for kappa=10^-8. The common comparator coefficient a0,j=conjugate(omega_p f) is a fixed scalar profile multiplying the actual generalized column linearly. Arbitrary old/reference coefficients are not conjugated. The same coefficient occurs in the static comparison, localized contour and incoming contour. Full elapsed old aging exp(-itK)W and exp(-ic_new t) remain in the target.
+
+## 2. Mass and regularity dependencies are acyclic
+
+The exact background disk construction precedes both uses of regularity. Its real port cancellation gives ||dG/dE||<35000 and the full complementary Schur correction gives |ds_j/dE|<36000, uniformly on the original band for 0<kappa<=10^-8. The regularity review supplies the explicit exterior-row <130 justification and free full-line bounds; these details must accompany any integrated proof.
+
+For the real mass lemma, the energy segment [-d,d], d=v sigma=2.5e-8, is contained in the actual band because E'>v on both sides. With A=35, B=17 and bmin=12, the now supplied L<36000 is stronger than the L<=10^6 used in the conservative numerical bound. Thus the previously conditional actual missing-mass ceiling 4.85e-8 and amplitude ceiling .000221 apply. The separately exact reference self-energy has Lref<1334, giving 1-p0<4.54e-8. These estimates use a lower bound on captured local spectral measure and the normalized global seed measure. All omitted energies and spectral types, including point mass, remain inside the charged complement. They neither discard possible exterior eigenstates nor extrapolate the local density formula globally.
+
+The complex contour premise follows by a different route from the same background disks. The exact matrix decomposition gives ||G||<36 on radius rho=10^-12 disks centered at every real x in I, endpoints included. Operator Cauchy gives ||G(x-iy)-G(x)||<.000037 for y<=10^-18. The complementary inverse stays <6 on those disks; each Schur correction is <8e-13. Therefore the actual s_j oscillation is <.000038. Combining this with the independently established real Im Dj>12 kappa^2 yields
+
+    Im Dj(x-iy)>[12-.00062-.000038] kappa^2>6 kappa^2.
+
+No real derivative is substituted for a complex derivative. The background is emitter-free and its disk proof does not assume this resonant full-core strip. The complex bridge does not assume the eventual mass, moment, contour or runtime conclusion. Thus there is no circular discharge of complex regularity.
+
+## 3. Restricted moment and static error
+
+The completed restricted-moment check establishes, from the exact reference denominator x+alpha exp(ik),
+
+    |x|/|Dref|<=1+1/sin k<3.5,
+    |k-k0| |f(k)|<145 kappa,
+    ||(k-k0)f||_2^2<2e-6 *145^2 kappa^2
+                         =.04205 kappa^2<(.21 kappa)^2.
+
+This retains the displaced resonance and uses exactly the original finite interval. No missing Jacobian or second Fourier normalization factor belongs in this integral. The new p0 bound supplies 1/sqrt(p0)<1.0000001.
+
+The coupling-dependent corrections in the original weighted estimate remain bounded throughout the extended range. Its full complex ratio, including d0 and closed/emitter floors, remains <2e-13+750|k-k0|. Consequently
+
+    delta=||F/sqrt(p0)-omega_p f||_2
+           <2e-13+750*.21e-8
+           =1.5750002e-6<1.6e-6.
+
+The reference normalization cost in preparation is 1-sqrt(p0)<=1-p0<4.54e-8. Adding actual exterior amplitude gives per-column preparation error <.000221+.0000016+.0000000454. Different old energies within a parity may overlap in physical residual coordinates, so the operator preparation bound pays sqrt(2)<1.415. Distinct parities are orthogonal.
+
+On the real band the actual seed reality relation F=R_inst conjugate(F), with |R_inst|=1, makes the outgoing error e-R_inst conjugate(e), where e=F/sqrt(p0)-omega_p f. Its norm is <=2delta. This identity uses real-axis unitarity only. Orthogonal old open fibers and half-line contraction give an outgoing operator cost <.0000032 with no further sqrt(2). Thus
+
+    S<1.415*(.000221+.0000016+.0000000454)+.0000032
+      =.000318243241<.000319.
+
+Passive-reference tensoring leaves these operator norms unchanged. Missing actual mass and reference normalization are separate charged contributions, not alternative estimates counted as interchangeable.
+
+## 4. Complete time-dependent output and finite embedding
+
+The Schur-strip component continues the actual incoming source column, not only a scalar approximation. Its emitter-free inverse has Neumann product .224 at h=10^-18. The supplied bridge makes the full emitter inverse analytic there, including its seven-coordinate complement. Both vertical sides use their off-resonant denominator >2.49e-8; the bottom uses the resonant margin. These give C_b<5e20 and C_s<1.4e13 for the same complete C as the canonical decomposition.
+
+The open-wave subtraction defining C is algebraic off-real; it does not assume |R_inst|=1 there. Uniform closed roots <1/6 make the retained infinite closed tails holomorphic in their fixed Hilbert space. The complete localized contour includes all core, source, emitter and closed-tail coordinates. With A_f<17kappa supplied by the new p0, its two-side term is <9.24e-8 and bottom <6.6e-9 at T=4e21. The sqrt(2)<1.5 within-parity factor is already included. Hence localized error <1e-7.
+
+The scalar target and incoming contours use their own justified heights; they do not continue C to those deeper heights. The target retains phase 113 through vT-113 and its positive denominator sign; the incoming conjugate denominator has the exp(-y) term and both negative imaginary contributions. Each contour includes both cutoff sides. Their respective bounds are q_target<1e-10 and incoming<1e-10. The outgoing state is already half-line restricted, so positive target normalization costs <=q_target^2<1e-20, not an additional linear missing-tail term.
+
+The conservative sum is therefore
+
+    E_infinite<.000319+1e-7+1e-10+1e-20<.000320
+
+for all t>=T. No sharp rounding issue remains at this displayed tolerance.
+
+At kappa=10^-8 the physical spectral-radius bound remains <17.6<18. The compensated geometry preserves first omitted-site distance M+23. With M=50T=2e23, the transfer exponent on [T,2T] is at most -[50-36 sinh(1)]T-23<-6.8T-23, giving transfer <.001. This compares embedded finite evolution to the same infinite normalized target; it does not renormalize a truncated finite waveform. Thus E_finite<.001320 on [T,2T], using one fixed finite device with M+116 qubits. It is not a permanent finite-storage statement.
+
+The unhalved trace ceilings .000640 and .002640 follow from twice the operator bounds. The 250000-fold reductions in sufficient T and M relative to the fixed-kappa T=1e27, M=5e28 result are correct, with changed coupling and error. The historical .0013/.0023 operator tolerances are met; the sharper .000058/.001058 pair is not preserved.
+
+## Exact source identities
+
+All paths below are relative to the containing renewal_20261017_110934 directory, except the canonical note. SHA256 values were refreshed for this check.
+
+| Source | SHA256 |
+|---|---|
+| LARGER_COUPLING_COMPOSITION.md | 3fd18e576fb394caea2b93272c4b430d782ec5c4663a9e961c8e3205d179952f |
+| endpoint_coupling_interface/PROPOSAL.md | 7d1cb4ba6fa19a2529f1453ab5a471207dfa1156d801cbaa944bc639ab191676 |
+| endpoint_coupling_interface_check/REVIEW.md | c89dbf5a567e4c2c38db93c3cc2ccba95456f0942073d94121ec87432594efc2 |
+| endpoint_background_regularity/PROPOSAL.md | 1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c |
+| endpoint_background_regularity_check/REVIEW.md | c97208c7542cffffabc46f9445056332336126274d9d957fa7830be6c2538d77 |
+| endpoint_spectral_mass_assessment/ASSESSMENT.md | f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8 |
+| endpoint_spectral_mass_check/REVIEW.md | eef72a0d61cb9ba79756fea1492aa507027a7b515b77e04c1230751cf47d4712 |
+| complex_selfenergy_bridge/PROPOSAL.md | 0f627a4c3390ab007be46794b37a2daa21399dc61de7f23417e4082d2051e892 |
+| complex_selfenergy_bridge_check/REVIEW.md | b46c9a561316415aac0d35344a4ada6ec0325c4fabef1e7f49a4e0fdf3c65c49 |
+| schur_strip_interface/PROPOSAL.md | 16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39 |
+| schur_strip_interface_check/REVIEW.md | 11346d3c20ca4ae749b3c55750e8e0ec4144a9b4e9f82b3018c093f3a9516f18 |
+| restricted_reference_moment/PROPOSAL.md | f76d55f9c51f582cf519bc025d5ae54e51d514023eaab7def6993c1cde782762 |
+| restricted_reference_moment_check/REVIEW.md | e9ce634ae0b1981507e0e354ccc386c485fc1cbc5e4f0343fad7c7a439b6a686 |
+| endpoint_weighted_profile/PROPOSAL.md | 28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c |
+| endpoint_weighted_profile_independent_check/REVIEW.md | 74ca5c9f8137e0f37afc762dc79bddbe0642bca3cc4e3f09fe32a596f2a4d948 |
+| weighted_mass_composition_check/REVIEW.md | 063966229b2712e636f04b9c77f52c1faefa2264d3888084bcb857a735100cdf |
+
+Canonical note SHA256 d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9. Its actual absolute location is /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md. No Git operation verified the supplied commit association.
+
+## Limits and integration obligations
+
+The composition document's pending-at-initial-writing language is now historical: the restricted-moment report above is complete and supports its narrow step. A successor should pin it explicitly. Preserve the background review's phase-plane/row-bound details, the actual complex bridge rather than merely a real derivative citation, complete-output aggregation, and finite time window in any integration. No other correction is requested.
+
+The conclusion remains a sufficient dimensionless supplied-model bound with exact preparation and coefficients. Native supply, physical identification, robustness, permanent capture/storage/reset/reuse and broader ancestor certification are not supplied by this check. No numerical dynamics or new execution evidence is claimed. No editable prompt files changed.

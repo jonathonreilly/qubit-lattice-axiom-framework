@@ -1,0 +1,50 @@
+[
+  {
+    "name": "angle_radius",
+    "expected_failure": "FS sufficient angle lower radius square",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "detuning_range",
+    "expected_failure": "FS detuning absolute",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "background_error",
+    "expected_failure": "FS background Green difference",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "complement_gap",
+    "expected_failure": "FS shifted complement gap",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "mass_regular",
+    "expected_failure": "FS actual omitted mass",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "source_bottom",
+    "expected_failure": "FS complete bottom source",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "localized_sides",
+    "expected_failure": "FS complete localized escape",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "nominal_profile",
+    "expected_failure": "FS fixed nominal normalized profile",
+    "detected": true,
+    "exit_code": 1
+  }
+]

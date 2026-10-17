@@ -1,0 +1,128 @@
+[
+  {
+    "name": "phase",
+    "expected_failure": "even filter phase",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "positive_cell",
+    "expected_failure": "local PSD Gram sign",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "schur",
+    "expected_failure": "full Schur Neumann margin",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "emitter",
+    "expected_failure": "emitter denominator correction",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "profile",
+    "expected_failure": "complete outgoing profile relative error",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "kernel",
+    "expected_failure": "installed core matching inverse",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "geometry",
+    "expected_failure": "geometry NN edges",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "positive_jump",
+    "expected_failure": "positive-jump finite-core trace substitution",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "tail",
+    "expected_failure": "closed-tail derivative multiplier squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "point_phase",
+    "expected_failure": "corrected pointwise derivative term expansion",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "spectral_pi",
+    "expected_failure": "finite spectral-mass weighted reflection derivative",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "monotone",
+    "expected_failure": "weighted monotone real denominator derivative",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "phase113",
+    "expected_failure": "weighted reference phase derivative",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "variation",
+    "expected_failure": "weighted resonant reference variation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "endpoint",
+    "expected_failure": "weighted endpoint inclusive reference variation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "weighted_core",
+    "expected_failure": "weighted Cauchy Schwarz core bound squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "weighted_xprime",
+    "expected_failure": "weighted matching derivative integral",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "weighted_cprime",
+    "expected_failure": "weighted closed-tail localized derivative integral",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "localized_phase",
+    "expected_failure": "weighted full localized term expansion",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "onset",
+    "expected_failure": "weighted onset denominator squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "finite",
+    "expected_failure": "weighted onset finite exponent margin",
+    "detected": true,
+    "exit_code": 1
+  }
+]

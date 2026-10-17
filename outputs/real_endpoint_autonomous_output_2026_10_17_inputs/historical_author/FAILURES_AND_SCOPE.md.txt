@@ -1,0 +1,78 @@
+# Preserved failures and limits
+
+No optimizer, grid, inherited scientific replay or unsuccessful scientific
+child run occurred. The sole new bounded child exited0; its complete logs and
+receipt are under run_01. This does not qualify the new proof independently.
+
+Analytical shortcuts rejected before execution:
+
+* Identical arms give r1=r2, hence transmission0 after the real mixer.
+* A single tree hopping-sign change is gauge-removable and does not supply
+  a minus sign to round-trip reflection.
+* Choosing the filter transmission to be i ignores the free bond's z phase.
+  The correct central transmission is iz0, giving relative phase i and
+  relative round-trip phase-1. This correction is in the frozen prelaunch
+  analysis and is checked through both direct boundary rows and the
+  Lippmann two-site equations.
+* An initial geometric sketch traversed the intended input-port coordinate.
+  The explicit equal-length paths in the prelaunch analysis avoid that
+  collision and passed the bounded NN/noncoincidence check.
+* In a later prose draft, the positive-block count was added incorrectly as
+  M+133. The listed categories actually sum to M+138 including K (M+137
+  excluding K). That arithmetic was corrected before the final note/freeze.
+  The executed program asserted head-site/edge counts, not that draft count;
+  no historical checker result has been changed to pretend it checked this.
+* Full reading found a false explanatory sentence in the prelaunch analysis:
+  "Neither T nor B commutes with Q in general." In fact B commutes with Q
+  because Q is its spectral function; the boundary coefficient T need not.
+  The final note corrects this, explicitly defines P,Qc and lambda, renames
+  the Green coefficient T_g and scalar kernel ceiling K_tail to avoid
+  collision with onset time T and old operator K, and states that Hcore is
+  the compression after removing c_new. The actual estimates already use
+  fixed spectral projections and commuting A,Q; no bound or code changes.
+* The actual seed's energy interval must include the global physical shift:
+  c_new+b_j+E(I). The final note makes that shift explicit. All variance and
+  denominator calculations had already subtracted c_new, so the stated
+  numerical bounds and comparator are unchanged. The unshifted prelaunch
+  sentence remains preserved rather than silently rewritten.
+
+Operational limits:
+
+* The requested512MiB RLIMIT_AS was not installed; the OS reported
+  "current limit exceeds maximum limit". CPU20/20, external wall30 and
+  file-size16MiB were installed/applied. All relevant limits and actual
+  usage are saved. No retry or increase of the scientific scope occurred.
+* A source-location read using emitter_resource_family_root_qualification
+  failed because the actual directory is emitter_family_root_qualification.
+  The correct complete qualification was then read and byte-preserved.
+* Aggregate instruction output initially exceeded its return budget; the
+  affected references were then read in separate calls. No scientific
+  conclusion is based on a truncated unseen body.
+* The only graph allocated had121 vertices including old/source and the
+  first omitted output site. Dense matrices were at most4 by4. The large
+  core matching dimensions904/1808 and clock M=5*10^137 are analytic, not
+  executed dimensions.
+
+The failed shortcuts concern their stated architecture/ansatz only. The
+No-Go Discipline packet's five-closed-family criterion is not met and no
+negative-packet PASS or general impossibility claim is made. Other real
+transmission, phase-generation and squared-reflection routes remain live.
+
+The new result is a conditional author construction. Exact real positive
+blocks/signs/coefficient ratios, a selected NN graph, pure delivered emitter
+and blank clock/source state, and unitary Hamiltonian evolution remain
+supplied. The endpoint and common-profile estimates use fixed kappa1e-12
+and sigma1e-6 only. No calibration/family composition, thermal preparation,
+native supplier, practical runtime, complete capture/reset/reuse, or physical
+Record/energy identification follows. Infinite all-future and finite-window
+claims are separate. A distinct new mathematical review is still needed.
+
+After the prelaunch derivation, the final note corrects the explanatory
+commutator/energy-window statements and symbol collisions just identified,
+and adds a complete internal-model
+table, exact source roles, the ideal-limit real phase consistency identity,
+details of the spectral jump/normalization and Dirichlet Lipschitz bounds,
+full positive-block counting, and execution/scope records. Its controlling
+scientific constants and proposed T/M/error bounds remain those saved before
+the run. It does not relabel the prelaunch run as checking every added prose
+explanation or resource count.

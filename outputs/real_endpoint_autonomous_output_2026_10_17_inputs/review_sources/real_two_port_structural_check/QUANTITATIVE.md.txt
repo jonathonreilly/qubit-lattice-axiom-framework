@@ -1,0 +1,106 @@
+# Quantitative closure of real two-port bounds (A)–(E)
+
+## Finding
+
+The independently reconstructed inequality chain supports bounds (A), (B), (C) and (E), and the algebra/sign of (D), on the exact supplied interval and coefficients. No correction to the route is required by this check. The closed-channel filter Schur complement, physical-basis norm factors, port tail, termination inverse/Lipschitz estimates, and all complementary emitter coordinates have been included. This follow-up discharges unfinished items 1 and 2 in the frozen structural REVIEW.md; that earlier file remains unchanged as a historical pre-follow-up statement.
+
+The scalar spectral-density normalization, band mass, actual spectral representation, complete escape estimate, and finite-horizon argument remain outside this follow-up. Thus it does not independently establish the complete headline theorem or confer retained/audit status. In particular, an algebraic reconstruction of Fref and a relative emitted coefficient bound are not a substitute for proving the spectral isometry and escape steps.
+
+Source: ROUTE.md, 39888 bytes, SHA256 fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9. The inherited qualified bare-ladder constants and central residual remain imported at the SOURCE_PINS.json identities. Complete route and interval argument and the family Green-identity section were read as recorded in REVIEW.md. The relevant route portion was reread for this follow-up. Methodology remains commit 84ec6fdfe5861a42ef9ee9448f111098cdd3816f. No new upstream source or certificate was silently substituted.
+
+## Independence and exposure
+
+The author argument was exposed. The independent work reconstructs the norm chain from stacked physical Green maps, a block Schur inverse, direct scattering amplitudes, and complementary-emitter elimination. It does not replay the author program, compare two evaluations of the same program, or adopt the author output as proof. No author checker or outputs were opened, including after the freeze. QUANTITATIVE_PRECHECK.md preserves the complete analytic chain before execution. This is same-model selective checking, not blind review, model diversity, retained audit, or independent recertification of the old ladder calibration.
+
+The new program only substitutes exact fractions in inequalities whose constants were analytically justified first. Its result corroborates their arithmetic; the operator claims depend on the derivation below and the pinned premises, not the number of successful assertions.
+
+## Operator and scalar derivation
+
+At the two filter sites, the map stacking Qc powers has norm r^19 sqrt(1+r²), and its open counterpart norm sqrt(2). Therefore Gpc/Gcp <=206 sqrt(2(1+r²))r^19<300r^19. The closed image term <=206(1+r²)r^38<211r^38. Its free term <=(1+r)/g. With ||V||=w<1/20, the closed inverse has norm at most [1-((1+r)/g+211r^38)/20]^-1<3/2.
+
+The exact filter eigenvalues are -beta,-w. beta>0, w>J, w<1/20. The free open denominators have real part >1 in the even sector and imaginary magnitude w tan(k/2)/(2J)>1/10 in the odd sector. Here sin(k)>=sin(k0)-sigma>2/5 and tan(k/2)=sin(k)/(1+cos(k))>1/5. Thus ||D0^-1||<10. The rank-one image has Sherman–Morrison denominator 1-a r_g z^(2F). This follows by taking the outgoing reflected coefficient of the free two-site Lippmann equation: a=Aopen v^T V D0^-1 v, v=(1,z). The inverse numerator is bounded by 10²*40*2*(1/20)=400. Thus K0inv<=10+400/(1-5sigma)<500.
+
+The full Schur correction is <=300²*(1/20)²*(3/2) r^38<338r^38. Hence S^-1<=500/(1-500*338r^38)<1000. Off-diagonal triangular factors each have norm <=1+(45/2)r^19; their product times 1000 is <2000, proving the complete physical-basis inverse bound.
+
+The incoming open two-site vector has norm <=2sqrt(2)<3. The closed vector <=16sqrt(1+r²)r^18<17r^18. Consequently xP0<1500 and
+
+    ||xP-xP0|| <=1000[338r^38*1500+300r^19*(1/20)*(3/2)*17r^18]
+                  =[507000000/7+382500]r^37 <10^8r^37.
+
+Then ||xc|| <=(3/2)[17r^18+15r^19(1500+10^8r^37)]<5000r^18.
+
+The outgoing open Green row to the filter has two scalar entries each bounded by 2|Aopen|<=80 (use Tg,PP=Aopen z² r_g), hence norm <120. Its Pc row is <=206sqrt(1+r²)r^19<211r^19. Therefore the reflected amplitude error is less than
+
+    [120*(1/20)*10^8+211*(1/20)*5000]r^37
+      =600052750r^37 <10^9r^37 <10^-20.
+
+Scalar filter concatenation gives 5sigma+17sigma/(1-5sigma)<23sigma: the 17 is 12 from |(b/z)²+1|<=2*6sigma, plus 5 from |a|. Flux bounds |b|<=1. Thus |R|<12sigma and tau error <d0+714sigma after the exact Hadamard half-sum/half-difference and common reference-plane conversion.
+
+At the outer filter site each of the two Green blocks into the filter has norm <=40+206=246; sqrt(2)*246<350. Its update gives Ttilde<=206+350²*(1/20)*2000=12250206<13000000. Rotating the two arm kernels gives port blocks that are half-sums/differences; their norms do not gain a factor two. Shifting by d=N-F=24 supplies the claimed r^d and r^(2d) factors on PC/CP and CC.
+
+For terminated input, ttail=Ktail r^44 and deltaX<=3ttail<10^-28. The scalar reference D_b0=A+QX0Q has inverse <21: closed inverse <20, open inverse <=2J/(1-eta)<21. C0=A+X0 has norm <=40(1+eta)<41; actual C has norm <41 too. Neumann gives D_b^-1<22. Resolvent difference <=22*21 deltaX. Expanding the three-factor Schur term yields coefficient 1+22*41+41*22*21*41+41*21=778386<10^6, so epsilon_G=10^-22 bounds its difference. Scalar reference end norm <=J^-1(1+eta)/(1-eta), and the closed norm <=r/J, so full end norm <35 including epsilon_G.
+
+For Z=I-Q D_b^-1 Q(A+X), ||Z0||<3: its open entry is (1-z²)/(1+Rz^42), and its closed block I-Qc² has norm <=1. The difference <=(22*21*41+21)deltaX=18963deltaX gives ||Z||<4. Y0=Aopen tau z^ell P has norm <=40, and ||Y-Y0||<=ttail. Therefore
+
+    ||L-L0|| <=4ttail+40*18963*3ttail=2275564ttail<10^-21.
+
+The complementary emitter gap is >=minDelta-2-2J sigma>g; 35kappa² perturbation gives ||Dcc^-1||<=1/(g-35kappa²)<6. PC/CP end Green blocks have norm <epsilon_G. The scalar g differs from -z/J by at most 2eta sin(k)/[J(1-eta)]. Hence
+
+    |Dj-Dref|/Im Dref
+       <=2eta/(1-eta)+(epsilon_G+6kappa² epsilon_G²)J/sin(k)
+       <2eta/(1-eta)+2epsilon_G J/sin(k)<1/40000.
+
+This controls the imaginary part as well as relative modulus. Using sin(k)>2/5 and J<31/1000 gives Im Dj>12kappa². The full emitter inverse is bounded by [1/(12kappa²)](1+6kappa²epsilon_G)² <1/(10kappa²), by two triangular block factors; all seven complementary directions are included.
+
+For (D), elimination and Stone's sign give the already reconstructed Fref. Spectral-transform normalization and mass are separately assigned. For (E), write s=R z^(2ell+2), d=(Dj-Dref)/Dref and tau/rho=omega+e. The leading ratio is (omega+e)/[(1+s)(1+d)]. Its error <=[delta_tau+eta+epsilon_D+eta epsilon_D]/[(1-eta)(1-epsilon_D)]. The complementary vector w=kappa²Dcc^-1 Gcj has norm <=6kappa²epsilon_G and lies in Pc, so L0w=0 exactly. Only the row error multiplies it. The extra relative error is <=J epsilon_L(1+6kappa²epsilon_G)/(1-epsilon_D), which is <10^-21. Check the total strictly below .000752 with its margin.
+
+## Details making the bounds independent of coordinate shortcuts
+
+All internal norms are Euclidean operator norms in orthonormal physical parity coordinates. P/Pc are orthogonal spectral projections of the real B. V acts on the two filter positions and is identity internally, so it commutes with those projections. The stacked Q powers, rather than entrywise counts over seven closed eigenvectors, supply the factors sqrt(1+r²) and sqrt(2). This avoids an unearned dimension-free bound while also avoiding an unnecessary factor seven.
+
+For the scalar free filter, with v=(1,z), the reflected coefficient is obtained from the actual outgoing free Green row Aopen v^T: a=Aopen v^T V D0^-1 v. The bare gate image is Aopen r_g z^(2F) vv^T. The Sherman–Morrison scalar is therefore exactly 1-r_g z^(2F)a, not a guessed determinant lower bound. The transpose is appropriate to the complex-symmetric retarded kernel. The row norms used above are unchanged by transpose because the Euclidean spectral norm is transpose invariant.
+
+Writing the filter equation in P/Pc blocks gives xC=Cc(yC+Gcp V xP) and S xP=yP+Gpc V Cc yC, with S=K0-Gpc V Cc Gcp V. The difference equation is S(xP-xP0)=(K0-S)xP0+Gpc V Cc yC. These identities justify the precise state-difference coefficients used in the frozen chain. The complete inverse factorization has lower and upper triangular factors each bounded by 1+(45/2)r^19 and diagonal block norm below 1000. No self-adjointness of this retarded inverse is assumed.
+
+The scalar endpoint reflection derivative satisfies |r_v'|<=2J/|v+Jz|<=2/sin(k) for real v. Lossless filter flux gives |b|<=1, which supplies |(b/z)²+1|<=12sigma and not a hidden assumption of perfect transmission throughout the interval. The original gate's unit-modulus reflection and source derivative bound are supplied by the pinned interval premise.
+
+After U mixing, each port image is a half-sum or half-difference of the two arm images, so its norm is at most their maximum. There is no factor two loss in Ktail. Translating from outer-filter coordinate F+1 to port coordinate N+1 yields exactly d=N-F=24 powers, and terminating at ell adds twenty more. The separation is therefore 44, not 43 or 45.
+
+For termination, the source's exact noncommuting formula is used without commuting X through Q. The inverse bound for the reference closed block follows from ||Ac^-1||<20. This is justified directly by B in [1,20], lambda=b_j+E with b_j in {1,3}, 0<E<4J and J<.031: |2J+b-lambda|<20 for each closed eigenchannel and |J(q-q^-1)|<|2J+b-lambda|. The open inverse is E'/|1+Rz^(2ell+2)|<=2J/(1-eta). The resolvent identity, not a derivative of an unspecified scalar function, supplies the 778386 Lipschitz constant.
+
+The emitter block gap uses source occupation preservation by B, lower source-excited B energy at least 1+minDelta, and selected vacuum b_j no greater than 3. The other vacuum energy is separated by 2. Since |E-E0|<=2J sigma, the full complementary gap exceeds g. The end Green Pc block need not be positive or real; a norm Neumann argument still gives the inverse bound. Its off-diagonal blocks are epsilon_G-small because the scalar reference is diagonal in P/Pc.
+
+The deviation Dj-Dref is compared with Im Dref directly. Merely comparing with |Dref| would not prove positivity of Im Dj away from resonance. The derived absolute bound pays both the diagonal Green error and the kappa^4 complementary feedback. For the full De inverse, two triangular factors have norm <=1+6kappa²epsilon_G and the diagonal inverse norm is below 1/(12kappa²). Thus all emitter directions are controlled at the source's 1/(10kappa²) ceiling.
+
+Finally, De^-1 u=Dj^-1(u+w) with w in Pc and ||w||<=6kappa²epsilon_G. L0 is proportional to P and annihilates w exactly. Consequently the additional term in (E) is bounded by J epsilon_L(1+6kappa²epsilon_G)/(1-epsilon_D), rather than dropping w or charging a fictitious full leading row against it. The two minus signs from hopping elimination and L0 produce the positive outgoing resolvent amplitude; Stone's convention then supplies i. The scalar f normalization and spectral jump consequences of (D) are not adjudicated here.
+
+## Arithmetic evidence and margins
+
+One bounded new Fraction-only run checked 52 strict inequalities, all successful. Exact fractions, exact differences and display-only floats are preserved for every check in quantitative_run/RESULT.json and stdout.jsonl. The following values are rounded displays only; exact rational comparisons control the proof.
+
+| Reconstructed quantity | Displayed upper estimate | Source ceiling |
+|---|---:|---:|
+| Closed filter inverse | 1.46511628 | 1.5 |
+| Open scalar filter inverse | 410.002001 | 500 |
+| Coefficient of r^37 in xP-xP0 | 72,811,071.43 | 100,000,000 |
+| Coefficient of r^18 in xC | 4,846.928572 | 5,000 |
+| Reflected correction, using coarser 10^9r^37 | 5.387317e-23 | 1e-20 |
+| Modified outer image norm | 12,250,206 | 13,000,000 |
+| Delta X | 2.551238e-30 | 1e-28 |
+| End Green error from actual Lipschitz chain | 1.985848e-24 | 1e-22 |
+| Outgoing row error from actual chain | 1.935168e-24 | 1e-21 |
+| Relative emitter-denominator correction | 0.000024000289 | 0.000025 |
+| Extra relative term in (E) | 3.002186e-23 | 1e-21 |
+| Complete relative error in (E) | 0.000751028088 | 0.000752 |
+
+The strict margin in (E) is approximately 9.7191201e-7. The coarse imaginary-part lower coefficient is 39999/3100, exceeding 12 by 2799/3100. These margins are not optimized estimates and supply no general calibration box or arbitrary-accuracy family.
+
+## Execution and remaining scope
+
+The run used Python 3.13.5 and the standard library only. launch_quantitative.py wrote and fsynced quantitative_run/PRELAUNCH.json before Popen; the child rechecked every bound source/code/runtime identity before arithmetic. The receipt includes the live original route pin as well as preserved source snapshots, analytical freeze, both new programs and the resolved interpreter binary. CPU limits 10/10 seconds and file-size limit 16 MiB were set in the child pre-exec hook; the parent enforced a 15-second timeout. No address-space limit was requested or claimed. There was no failure, retry, altered threshold, matrix calculation, grid, quadrature, simulation, optimizer or inherited-program replay.
+
+Actual return code was 0, wall time 0.04884920874610543 seconds and child-reported process CPU 0.0014939999999999988 seconds. The child's Darwin ru_maxrss counter was 20299776 bytes. stdout was read in full; stderr is empty. All output identities and actual execution status are preserved. These are execution facts, not proof of unexamined spectral or physical statements.
+
+The current result supports conditional reuse of (A)–(E)'s quantitative scattering/emitter chain, with (D) limited to its algebraic coefficient interface. It leaves the complete spectral measure, band-mass/packet normalization, late-time escape, finite-horizon comparison and headline error integration to the separately assigned review. No native state/coefficient supplier, thermal readiness, robustness, reset/reuse, physical observable identification, or audit status follows.
+
+Only this owned review directory changed. Frozen REVIEW.md, upstream source, Git state, prompts, axioms, audits, root checkpoint and other chats were not modified. Root can integrate this result using the pinned exact source; any later change to that source or its load-bearing premises requires refreshing the affected chain.

@@ -1,0 +1,43 @@
+from pathlib import Path
+import ast, hashlib, json, os, resource, shutil, subprocess, sys, time
+ROOT=Path(__file__).resolve().parent
+W=ROOT.parents[1]/'correlation_worktree'
+REL='scripts/real_endpoint_autonomous_output_2026_10_17.py'
+SRC=(W/REL).read_text()
+node=ast.parse(SRC)
+INPUTS=next(ast.literal_eval(n.value) for n in node.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+def identity(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def caps():
+ resource.setrlimit(resource.RLIMIT_CPU,(10,10));resource.setrlimit(resource.RLIMIT_FSIZE,(16*1024**2,16*1024**2))
+def run(name,cmd,cwd,paths,timeout=10):
+ d=ROOT/name;d.mkdir(exist_ok=True)
+ pre={'command':cmd,'cwd':str(cwd),'utc':time.time(),'wall_limit_sec':timeout,'cpu_limit_sec':10,'file_limit_bytes':16*1024**2,'memory_cap':'not applied','python_version':sys.version,'sources':[identity(p) for p in paths]+[identity(Path(sys.executable).resolve())]}
+ with (d/'PRELAUNCH.json').open('w') as f:json.dump(pre,f,indent=2);f.flush();os.fsync(f.fileno())
+ t=time.monotonic()
+ with (d/'stdout.txt').open('w') as out,(d/'stderr.txt').open('w') as err:
+  p=subprocess.Popen(cmd,cwd=cwd,stdout=out,stderr=err,preexec_fn=caps)
+  try:code=p.wait(timeout=timeout)
+  except subprocess.TimeoutExpired:p.kill();p.wait();code='timeout'
+ result={'exit_code':code,'elapsed_sec':time.monotonic()-t,'outputs':[identity(d/'stdout.txt'),identity(d/'stderr.txt')]}
+ (d/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+ return code,(d/'stdout.txt').read_text(),(d/'stderr.txt').read_text()
+
+(V:=ROOT/'RESOURCE_PLAN.md').write_text("# Refinement verification\nBounded Fraction/local-complex algebra only. CPU10s,file16MiB,canonical inner30s/outer45s; mutations10s wall. No memory cap. Runtime binary/version and exact sources bound before launch. No spectral integrals, dynamics, huge matrices or parameter sweep. Existing214 checks preserved; new larger-coupling mass/background/Schur/restricted-moment families challenged. No old mutated-case rerun implied.\n")
+wrapper=ROOT/'canonical_wrapper.py'
+wrapper.write_text("import sys,json\nfrom pathlib import Path\nsys.path.insert(0,"+repr(str(W/'scripts'))+")\nimport runner_cache\nr,p=runner_cache.execute_and_write_cache("+repr(REL)+",30)\nPath("+repr(str(ROOT/'CANONICAL_RESULT.json'))+").write_text(json.dumps(r,indent=2))\nprint(json.dumps({k:v for k,v in r.items() if k not in ('stdout','stderr')}))\nprint(p)\nraise SystemExit(0 if r['status']=='ok' and r['exit_code']==0 else 1)\n")
+code,out,err=run('canonical',[sys.executable,str(wrapper)],W,[W/REL,W/'scripts/runner_cache.py',wrapper]+[W/p for p in INPUTS],45)
+if code!=0:raise RuntimeError('canonical failed: '+out+err)
+mutations=[('disk_radius', "lc_rho=F('1e-12')", "lc_rho=F('1e-5')", 'LC disk filter Neumann hypothesis'), ('two_site_row', 'lc_exp40)**2,130**2', 'lc_exp40)**2,100**2', 'LC disk outgoing row squared'), ('closed_distance', '7*10**7*lc_rc**44', '7*10**7*lc_rc**24', 'LC disk endpoint correction input'), ('reflection_cancellation', "700*F('17e-6')/lc_ad", '700/lc_ad', 'LC background cancellation derivative'), ('mass_L', 'lc_L=F(10**6)', 'lc_L=F(10**8)', 'LC actual exterior mass'), ('mass_log', 'lc_logarg,F(8,3)**18', 'lc_logarg,F(8,3)**16', 'LC mass logarithm argument'), ('bridge_complement', "lc_kap**2*36**2*6,F('8e-13')", "lc_kap**2*36**2*60,F('8e-13')", 'LC bridge Schur correction'), ('background_width', "lc_h=F('1e-18')", "lc_h=F('1e-17')", 'LC bridge matrix oscillation'), ('source_trace', "F('.122')*112*8*2*10**16", "F('.122')*112*16*2*10**16", 'LC background source jump trace'), ('side_edge', "lc_locside=F('1.5')*44", "lc_locside=F('1.5')*22", 'LC strip side aggregation expansion'), ('onset', 'lc_T=4*10**21', 'lc_T=4*10**20', 'LC strip bottom exponential argument'), ('target_pole', 'lc_ho=lc_kap**2/(4*J**2)', 'lc_ho=lc_kap**2/(J**2)', 'LC scalar outgoing sinh envelope'), ('moment_width', "2*lc_sig*145**2,F('.04205')", "lc_sig*145**2,F('.04205')", 'LC restricted moment square coefficient'), ('preparation_factor', "lc_static=F('1.415')", "lc_static=F('1')", 'LC complete static arithmetic'), ('outgoing_factor', "+2*F('.0000016')", "+F('.0000016')", 'LC complete static arithmetic'), ('finite_length', 'lc_M=50*lc_T', 'lc_M=10*lc_T', 'LC finite output length'), ('trace_factor', "2*F('.001320'),F('.002640')", "F('.001320'),F('.002640')", 'LC finite unhalved trace ceiling')]
+results=[]
+for name,before,after,expected in mutations:
+ if SRC.count(before)!=1:raise RuntimeError('nonunique mutation '+name)
+ scratch=ROOT/('scratch_'+name);(scratch/'scripts').mkdir(parents=True,exist_ok=True)
+ shutil.copytree(W/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',scratch/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',dirs_exist_ok=True)
+ runner=scratch/REL;runner.write_text(SRC.replace(before,after))
+ code,out,err=run('mutation_'+name,[sys.executable,'-O',str(runner)],scratch,[runner]+[scratch/p for p in INPUTS])
+ ok=code==1 and 'PASS integrity:' in out and 'TOTAL FAIL:' in out and expected in out.split('TOTAL FAIL:')[-1]
+ results.append({'name':name,'expected_failure':expected,'detected':ok,'exit_code':code})
+ if not ok:raise RuntimeError('mutation did not fail intended family '+name+' '+out[-500:]+err)
+(ROOT/'MUTATION_SUMMARY.json').write_text(json.dumps(results,indent=2)+'\n')
+print(json.dumps({'canonical':'ok','new_mathematical_mutations':len(results),'all_intended_failures':True}))

@@ -1,0 +1,46 @@
+{
+  "original": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/PROPOSAL.md",
+    "bytes": 9298,
+    "sha256": "64d81ab828fe2ad28efd526350f8f0286bd07455db0bab9686f2053008c35adc"
+  },
+  "corrected": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_corrected/CANDIDATE_V2.md",
+    "bytes": 10482,
+    "sha256": "6ccdf001f139fa1e2f6ab0fc198984fd5293e489490c29735ac8f5563968b528"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_review/REPORT.md",
+    "bytes": 25468,
+    "sha256": "a495c6b5c7bb4fd2094bc122afdab811e85de9ef92a88ea9dc2ae918364982d4"
+  },
+  "edits": [
+    {
+      "label": "status",
+      "before": "Root-authored analytical candidate, not independently checked or qualified.\nThis refines the now-qualified real local preparation, without changing its\nruntime apparatus or importing a new thermal device. No scientific program\nor parameter search ran. It is not yet part of the publication draft.",
+      "after": "Corrected V2 of the root-authored analytical proposal. A separate same-model,\nsource-exposed reviewer reconstructed the load-bearing estimates and identified\ntwo narrow proof corrections, both included below. Root source qualification\nis recorded in ../bounded_followup_root_review/ACCEPTANCE.json. This refines the\nqualified real local preparation, without changing its runtime apparatus or\nimporting a new thermal device. No scientific program or parameter search ran.\nIt is not published or retained; the frozen original proposal is preserved."
+    },
+    {
+      "label": "C2_zero_calibration_strictness",
+      "before": "       = eta [4Aiso+11pi/4] < 10 eta.             (1)",
+      "after": "       = eta [4Aiso+11pi/4] <= 10 eta.            (1)"
+    },
+    {
+      "label": "epsilon_domain",
+      "before": "Suppose the actual joint input omega_DRA has actual old/reference marginal\nrho_DR and apparatus seed probability at least1-epsilon:",
+      "after": "For 0<=epsilon<=1, suppose the actual joint input omega_DRA has actual\nold/reference marginal rho_DR and apparatus seed probability at least1-epsilon:"
+    },
+    {
+      "label": "C1_actual_seed_deficiency",
+      "before": "For completeness, the first part is the triangle bound obtained by first\nprojecting omega onto the seed, whose disturbance to the subnormalized\nprojected state is at most sqrt[epsilon(4-3epsilon)], and then replacing\nits subnormalized old/reference marginal by the actual rho_DR, costing at\nmost epsilon. This is an input-quality implication, not a cooling theorem.\nIts exact antecedent is reused from the qualified product-preparation lemma.",
+      "after": "Let d=1-Tr[(I_DR tensor |e0><e0|)omega_DRA] be the actual deficiency,\nso 0<=d<=epsilon. Projecting onto the seed gives a subnormalized state whose\ntrace distance from omega is at most sqrt[d(4-3d)]. To see this, purify omega\nand split the purification into its orthogonal seed and complement parts.\nThe difference from its projected rank-one operator has eigenvalues\n(d+sqrt[d(4-3d)])/2 and (d-sqrt[d(4-3d)])/2. Partial trace is contractive.\nReplacing the projected old/reference marginal by rho_DR costs d, because\nthe residual marginal is positive with trace d. Thus the triangle bound\nis g(d), followed by g(d)<=g(epsilon). The complete function g is monotone\non[0,1]: its derivative is 1+(2-3x)/sqrt[x(4-3x)] on(0,1); this is\nnonnegative below2/3, and above2/3 follows from\nx(4-3x)-(3x-2)^2=4(1-x)(3x-1)>=0. Continuity includes the endpoints.\nThe simpler projection term alone is not monotone on all[0,1]; d=2/3 and\nepsilon=1 give2/sqrt(3)>1, so its isolated replacement by epsilon would be\nfalse. No such replacement is used here. The final estimate g(epsilon)\n<=3sqrt(epsilon) follows from epsilon<=sqrt(epsilon) and 4-3epsilon<=4.\nThis is an input-quality implication, not a cooling theorem. Its exact\nantecedent is reused from the qualified product-preparation lemma."
+    },
+    {
+      "label": "current_disposition",
+      "before": "remain open. Only the five-unit control calibration box and the stated\ncorrelated input-quality implication are proposed here. A separate selective\ncheck is required before qualification or inclusion in a regular PR.",
+      "after": "remain open. Only the five-unit control calibration box and the stated\ncorrelated input-quality implication are qualified for provisional composition\nafter the preserved selective analytical check and these two corrections.\nPublication, transport checks and independent retained audit are separate."
+    }
+  ],
+  "reversal_equals_original": true,
+  "scientific_execution": false
+}

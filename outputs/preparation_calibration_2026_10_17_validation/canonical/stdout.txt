@@ -1,0 +1,2 @@
+{"runner": "scripts/preparation_calibration_2026_10_17.py", "status": "ok", "exit_code": 0, "elapsed_sec": 0.08389616012573242, "timeout_sec": 30, "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/preparation_calibration_2026_10_17.txt"}
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/preparation_calibration_2026_10_17.txt

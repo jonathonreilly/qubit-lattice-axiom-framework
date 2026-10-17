@@ -1,0 +1,29 @@
+{
+  "inert_import": true,
+  "integrity_cases": [
+    {
+      "name": "tamper",
+      "exit_code": 1,
+      "failure": "integrity mismatch: outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "symlink_file",
+      "exit_code": 1,
+      "failure": "symlink input or ancestor: outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "symlink_ancestor",
+      "exit_code": 1,
+      "failure": "symlink input or ancestor: outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "mathematical_coverage": false
+    },
+    {
+      "name": "nonregular",
+      "exit_code": 1,
+      "failure": "input is not a regular file: outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "mathematical_coverage": false
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Refinement verification
+Bounded Fraction/local-complex algebra only. CPU10s,file16MiB,canonical inner30s/outer45s; mutations10s wall. No memory cap. Runtime binary/version and exact sources bound before launch. No spectral integrals, dynamics, huge matrices or parameter sweep. Existing397 checks preserved; new disk kernel, projected source, complex strip, complete contour and scalar-tail composition arithmetic families challenged. No current rerun of old integrity or inert-import suites implied. No old mutated-case rerun implied.

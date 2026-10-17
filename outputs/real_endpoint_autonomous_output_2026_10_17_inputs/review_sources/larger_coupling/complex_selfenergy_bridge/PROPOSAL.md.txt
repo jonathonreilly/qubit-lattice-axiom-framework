@@ -1,0 +1,25 @@
+# Proposed bridge from background disks to Schur strip
+
+Root derivation, conditional on independently accepting the exact complex disk construction in endpoint_background_regularity/PROPOSAL.md (SHA1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c). It supplies the explicit oscillation premise in schur_strip_interface/PROPOSAL.md (SHA16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39), both fully read. No actual runtime is asserted before all component checks and composition. No science execution.
+
+For every real x in I assume the proposed analytic radius rho=1e-12 disk, exact G(w)=g(w)P-Qc(w)/J+DeltaG(w), with |R_bg(w)|<2e-5, |exp(iw)|<=exp(rho), ||Qc||<.15 and ||DeltaG||<2e-21. Then
+
+ |g(w)| <= exp(rho)/J * [1+2e-5 exp(40rho)]/[1-2e-5 exp(42rho)]<34,
+ ||Qc(w)/J||<5,
+ ||G(w)||<35<36.
+
+The two diagonal blocks are orthogonal fixed projections, so their norm is the maximum, not the sum. Use the looser disk bound36. Operator-valued Cauchy (or its Taylor coefficients at x) gives for |w-x|<=h=1e-18
+
+ ||G(w)-G(x)|| <=36*(h/rho)/(1-h/rho)<.000037.
+
+This is a complex oscillation estimate, not an inference from a real derivative. It is valid on both the narrow bottom and vertical sides, even when x is an endpoint of I, since the assumed disks are centered at every x in I.
+
+For kappa=1e-8 the complementary bare emitter gap on the disk is at least .18-.062rho. Thus
+
+ ||Dcc(w)^-1|| <=1/(.18-.062rho-36kappa²)<6.
+
+All seven coordinates stay present. The exact correction s_j-Gjj=kappa² Gjc Dcc^-1 Gcj therefore has magnitude<kappa²*36²*6<8e-13 at both w and x. No exponential cross-block smallness off the real axis is needed here. Hence
+
+ |s_j(w)-s_j(x)| <.000037+1.6e-12<.000038<1.
+
+This discharges the Schur proposal's complex oscillation condition IF the background disk proof is accepted. It uses the actual matrix G and complementary Schur inverse, not the approximate scalar g alone. It is independent of the real derivative cancellation used for spectral mass. The source's real Im Dj>12kappa² then yields its intended lower-strip bound without off-real unitarity. All normalization, mass, full-output time terms and finite transfer remain separately checked obligations.

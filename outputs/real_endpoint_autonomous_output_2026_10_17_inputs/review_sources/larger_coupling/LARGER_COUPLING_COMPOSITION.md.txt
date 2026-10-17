@@ -1,0 +1,40 @@
+# Proposed complete larger-coupling composition
+
+Root composition, not yet a published theorem. Same supplied exact static real positive nearest-neighbor apparatus architecture as PR9668, but kappa=1e-8 instead of1e-12. All inherited interval/kernel/calibration premises remain conditional and source-qualified. Every actual profile/seed/phase quantity below belongs to this changed device; no old numerical f is reused. No old loop-emitter runtime or calibration contract transfers.
+
+Canonical source before changes: commit62e1e95bb012350410a1ff18764ebd97babcd697, note SHA d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9. Root has fully read every completed proposal/check listed below; restricted-moment check is pending at initial writing.
+
+## Source dependency chain
+
+1. endpoint_coupling_interface/PROPOSAL.md and endpoint_coupling_interface_check/REVIEW.md (review c89dbf5a567e4c2c38db93c3cc2ccba95456f0942073d94121ec87432594efc2): actual positive compensation, unchanged background, full eight-coordinate real Schur, local spectral jump/synthesis and complex ratio bounds for each0<kappa<=1e-8. No runtime transfer.
+2. endpoint_background_regularity/PROPOSAL.md (1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c), checked by endpoint_background_regularity_check/REVIEW.md (c97208c7542cffffabc46f9445056332336126274d9d957fa7830be6c2538d77): actual pre-emitter complex disks rho1e-12; real ds/dE<36000. Include review's explicit outgoing-row130 justification and free full-line A bounds in publication.
+3. endpoint_spectral_mass_assessment/ASSESSMENT.md and endpoint_spectral_mass_check/REVIEW.md (eef72a0d61cb9ba79756fea1492aa507027a7b515b77e04c1230751cf47d4712): exact local density comparison with normalized global seed measure. The missing L<=1e6 input is now supplied by2 at the same device. With A35,B17,bmin12,d2.5e-8, actual exterior mass<4.85e-8 and amplitude<.000221. Actual scalar reference has Lref<1334, hence1-p0<4.54e-8. All omitted spectrum, including point spectrum, remains charged. Local nonsingularity comes from1.
+4. complex_selfenergy_bridge/PROPOSAL.md (0f627a4c3390ab007be46794b37a2daa21399dc61de7f23417e4082d2051e892), checked by complex_selfenergy_bridge_check/REVIEW.md (b46c9a561316415aac0d35344a4ada6ec0325c4fabef1e7f49a4e0fdf3c65c49):2 gives disk ||G||<36; operator Cauchy plus all complementary emitter coordinates gives actual s oscillation<.000038 on lower strip h1e-18. Together with1 this supplies ImDj>6kappa². No off-real unitarity.
+5. schur_strip_interface/PROPOSAL.md (16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39), checked by schur_strip_interface_check/REVIEW.md (11346d3c20ca4ae749b3c55750e8e0ec4144a9b4e9f82b3018c093f3a9516f18): same actual source-specific Schur column, complete C and all closed tails. Its formerly conditional complex margin comes from4. Reference normalization from3 gives A_f<17kappa. At T=4e21, h1e-18, complete localized error<1e-7, incoming<1e-10, target negative-tail norm<1e-10 and positive normalization cost<1e-20. Finite radius<18, omitted distance M+23, M=50T=2e23 give transfer<.001 on[T,2T]. This keeps the same embedded infinite target without finite-target renormalization.
+6. restricted_reference_moment/PROPOSAL.md (check pending at initial writing): exact restricted reference moment ||(k-k0)f||<.21kappa replaces crude global variance ceiling. With1 and3, full complex mismatch delta<1.6e-6 at kappa1e-8. Same conjugate a0 and complete aggregation give static<.000319. This must be checked before adopting the following stronger conclusion.
+
+## Claimed implication to verify
+
+At the same installed kappa1e-8, reference f=Fref/sqrt(p0) carries the common rho_g and propagation phase113. Comparison coefficient a0,j=conjugate(omega_p f) multiplies the actual generalized column linearly in arbitrary old input; arbitrary amplitudes are never conjugated. Reality gives the paid outgoing discrepancy<=2delta, independently of the localized contour.
+
+Preparation plus outgoing static cost is
+
+  <1.415*(.000221+.0000016+.0000000454)+.0000032<.000319.
+
+The actual residual spectral component includes point mass, and distinct old energies within a parity can overlap, hence the preparation factor. Open outgoing/incoming fibers are orthogonal. The complete C contour pays its own within-parity factor1.5, contains all physical core/source/emitter and closed-tail coordinates, and uses the same a0. Different parities and arbitrary passive references cause no further norm factors.
+
+Thus complete operator error for the infinite apparatus is
+
+  <.000319+.0000001+.0000000001+1e-20<.000320
+
+for every t>=T=4e21. A single fixed finite device with M=2e23 output sites and M+116 qubits has complete error<.001320 for t in[T,2T]. Unhalved trace ceilings are.000640 and.002640 respectively. These trace ceilings are twice the operator bounds; do not compare them to historical operator tolerances.
+
+The full comparator includes exp(-ic_new t), the actual common positive-normalized output beta_t, blank emitter/other clock/source, and exp(-itK)W on the literal old system/reference. No setup duration, omitted output, per-column phase, supplied wavepacket or postdelivery control is hidden.
+
+## Resource meaning and limits
+
+Compared with the fixed-kappa T1e27/M5e28 sufficient certificate, this is a250000-fold reduction in sufficient onset and finite output length; coupling and error bounds change. It would meet the historical original operator tolerances.0013/.0023, but it does not preserve the sharper fixed-kappa .000058/.001058 pair. This is a sufficient dimensionless model bound, not a necessary or measured runtime. Resources remain astronomical.
+
+This construction removes externally timed preparation conditional on delivery of the exact real endpoint/blank-clock/source product seed and exact static real positive Hamiltonian. Native state/coefficient supply, actual Hamiltonian/time/energy/Record identification, robustness to persistent errors, permanent finite storage, capture, reset and reuse remain open. No retained/audit status is claimed. All independent checks were same-model and source-exposed; mutual source exposure is reported in each check, and composition checks are not extra independent origins of component proofs.
+
+No numerical dynamics, spectral integration or full904-matrix computation has been executed for this refinement. Future scalar runner checks can corroborate arithmetic/integrity only. Original failed routes remain frozen. No physical axiom or editable prompt changed.

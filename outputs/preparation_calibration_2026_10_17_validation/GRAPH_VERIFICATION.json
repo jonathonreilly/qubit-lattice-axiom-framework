@@ -1,0 +1,12 @@
+{
+  "added_nodes": [
+    "preparation_calibration_bounded_theorem_note_2026-10-17"
+  ],
+  "added_edges": [
+    "real_control_autonomous_output_bounded_theorem_note_2026-10-17"
+  ],
+  "primary_runner": "scripts/preparation_calibration_2026_10_17.py",
+  "existing_nodes_changed": 0,
+  "graph_note_hash": "51525d3d681c84f5d20b46f2cb9a6ef062847b724bcb1dbe1cbe7dd69548c80d",
+  "current_note_sha256": "51525d3d681c84f5d20b46f2cb9a6ef062847b724bcb1dbe1cbe7dd69548c80d"
+}

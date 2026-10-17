@@ -1,0 +1,116 @@
+{
+  "captured_utc": "2026-10-17T05:33:58.661170+00:00",
+  "sources": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/ROUTE.md",
+        "bytes": 32324,
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_coupling_halt_route__ROUTE.md",
+        "bytes": 32324,
+        "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/FREEZE.json",
+        "bytes": 11001,
+        "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_coupling_halt_route__FREEZE.json",
+        "bytes": 11001,
+        "sha256": "16fa2cbf13386826cd6939cc412f66c9224a89eaadd133b2163c5b3130e5829b"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+        "bytes": 28103,
+        "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_coupling_preparation_candidate__CANDIDATE.md",
+        "bytes": 28103,
+        "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/FREEZE.json",
+        "bytes": 1170,
+        "sha256": "41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_coupling_preparation_candidate__FREEZE.json",
+        "bytes": 1170,
+        "sha256": "41ce93b77d46c1dbecdde6f674201ca8b6e20026ae10231fe9b925fb69468e49"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/ACCEPTANCE.json",
+        "bytes": 3752,
+        "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_control_root_review__ACCEPTANCE.json",
+        "bytes": 3752,
+        "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/QUALIFICATION.md",
+        "bytes": 6618,
+        "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_control_root_review__QUALIFICATION.md",
+        "bytes": 6618,
+        "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/CANDIDATE.md",
+        "bytes": 28456,
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/emitter_preparation_independent__CANDIDATE.md",
+        "bytes": 28456,
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_product_root_qualification/ACCEPTANCE.json",
+        "bytes": 13476,
+        "sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/preparation_product_root_qualification__ACCEPTANCE.json",
+        "bytes": 13476,
+        "sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5"
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_integration/INSTRUCTION_FRESHNESS.json",
+        "bytes": 1409,
+        "sha256": "403785628f0a1ebc1df012b384bcd4c3cc157b1b5ae0fb7d1bf7ce42a14a0c18"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/inputs/real_control_integration__INSTRUCTION_FRESHNESS.json",
+        "bytes": 1409,
+        "sha256": "403785628f0a1ebc1df012b384bcd4c3cc157b1b5ae0fb7d1bf7ce42a14a0c18"
+      }
+    }
+  ],
+  "read_scope": "Root previously read full realifier and real preparation arguments and qualified their current source identities; refreshed product preparation section 4 lines 274-340 for the generic rank-one marginal proof. No new claim that the single-rail thermal apparatus transfers.",
+  "scientific_runs": 0,
+  "editable_prompt_files_changed": []
+}

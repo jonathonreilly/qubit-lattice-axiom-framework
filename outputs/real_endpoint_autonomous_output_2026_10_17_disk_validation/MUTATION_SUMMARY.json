@@ -1,0 +1,50 @@
+[
+  {
+    "name": "filter_inverse",
+    "expected_failure": "BD filtered disk block",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "source_pair",
+    "expected_failure": "BD pretermination incoming site",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "projected_forcing",
+    "expected_failure": "BD projected deleted input forcing",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "strip_depth",
+    "expected_failure": "BD complex exact selfenergy oscillation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "localized_bottom_ceiling",
+    "expected_failure": "BD complete bottom localized column",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "localized_side_cost",
+    "expected_failure": "BD localized same tolerance side ceiling",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "scalar_tail_series",
+    "expected_failure": "BD target scalar tail",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "static_composition",
+    "expected_failure": "BD complete nominal infinite same tolerance",
+    "detected": true,
+    "exit_code": 1
+  }
+]

@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/preparation_calibration_2026_10_17.py
+runner_sha256: 007119372382a6f3be2c7bbfab3c8ebe7d69f4bfa4d38c37d9c6e18ae087726d
+input_fingerprint_sha256: 7feb2d98260b1e91d0a7a0ef0639584f4dedd06732a6f9a21d490bf67678aa12
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+SCOPE: local exact algebra and rational ceilings for the supplied PR9667 setup.
+BOUNDARY: Duhamel, trace contractivity, full-domain monotonicity and runtime/output theorem are analytical premises, not computed proofs.
+BOUNDARY: no dynamics, quadrature, huge device, cooling, native supplier or general impossibility result is computed.
+PASS integrity: frozen package bytes; not mathematical acceptance.
+PASS arithmetic: whole-block scaling positive throughout error box
+PASS arithmetic: full local Q Gram 3/7
+PASS arithmetic: full complement Gram 3/7
+PASS arithmetic: Q identity coefficient 3/7
+PASS arithmetic: complement identity coefficient 3/7
+PASS arithmetic: whole complement scaling (Fraction(3, 7), Fraction(-1, 100000))
+PASS arithmetic: scaled identity included (Fraction(3, 7), Fraction(-1, 100000))
+PASS arithmetic: whole complement scaling (Fraction(3, 7), Fraction(1, 100000))
+PASS arithmetic: scaled identity included (Fraction(3, 7), Fraction(1, 100000))
+PASS arithmetic: full local Q Gram -5/11
+PASS arithmetic: full complement Gram -5/11
+PASS arithmetic: Q identity coefficient -5/11
+PASS arithmetic: complement identity coefficient -5/11
+PASS arithmetic: whole complement scaling (Fraction(-5, 11), Fraction(-1, 100000))
+PASS arithmetic: scaled identity included (Fraction(-5, 11), Fraction(-1, 100000))
+PASS arithmetic: whole complement scaling (Fraction(-5, 11), Fraction(1, 100000))
+PASS arithmetic: scaled identity included (Fraction(-5, 11), Fraction(1, 100000))
+PASS arithmetic: occupation identity coefficient
+PASS arithmetic: rank-one discriminant polynomial
+PASS arithmetic: complete g monotonicity polynomial factorization
+PASS arithmetic: projection matrix trace
+PASS arithmetic: projection matrix discriminant
+PASS arithmetic: monotonicity endpoint one
+PASS arithmetic: isolated projection counterexample squared
+PASS arithmetic: counterexample d two thirds radicand
+PASS arithmetic: isolation area
+PASS arithmetic: pulse unit area
+PASS arithmetic: pulse endpoint value 0
+PASS arithmetic: pulse endpoint slope 0
+PASS arithmetic: ramp endpoint slope 0
+PASS arithmetic: pulse endpoint value 1
+PASS arithmetic: pulse endpoint slope 1
+PASS arithmetic: ramp endpoint slope 1
+PASS arithmetic: pulse midpoint value
+PASS arithmetic: pulse derivative factored
+PASS arithmetic: double angle c positive
+PASS arithmetic: double angle s positive
+PASS arithmetic: pin positive at largest coupling
+PASS arithmetic: isolation norm sum from local channels
+PASS arithmetic: isolation identity from channel traces
+PASS arithmetic: isolation coupling slope positive
+PASS arithmetic: isolation ceiling throughout coupling interval
+PASS arithmetic: integrated pulse norm coefficient
+PASS arithmetic: integrated pulse identity coefficient
+PASS arithmetic: Duhamel calibration scalar ceiling
+PASS arithmetic: zero calibration non-strict endpoint
+PASS arithmetic: added control peak bound
+PASS arithmetic: modeled work variation bound
+PASS arithmetic: incident pulse slew squared
+PASS arithmetic: isolation ramp slew
+PASS arithmetic: scaled resource ceiling 9
+PASS arithmetic: scaled resource ceiling 20
+PASS arithmetic: scaled resource ceiling 33
+PASS arithmetic: nominal preparation correction squared
+PASS arithmetic: calibrated operator ceiling arithmetic
+PASS arithmetic: pure-seed trace ceiling arithmetic
+PASS arithmetic: seed trace contribution squared
+PASS arithmetic: complete trace ceiling arithmetic
+PASS arithmetic: complete trace comparison target
+PASS arithmetic: finite resource M at largest coupling
+PASS arithmetic: finite qubit count at largest coupling
+PASS arithmetic: fourteen preparation channels resource sum
+PASS arithmetic: all-occupied clock energy
+{"arithmetic_checks": 63, "largest_dense_dimension": 4, "package_integrity_reads": ["outputs/preparation_calibration_2026_10_17_inputs/ARTIFACT_MANIFEST.json", "outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md", "outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_runner_draft/ADAPTATION_REVIEW.md", "outputs/preparation_calibration_2026_10_17_inputs/reviews/preparation_calibration_publication_draft/INTEGRATION.md", "outputs/preparation_calibration_2026_10_17_inputs/reviews/preparation_calibration_publication_draft/SOURCE_IDENTITY_AND_DEPENDENCIES.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/00_bounded_followup_root_review_ACCEPTANCE.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/01_real_control_calibration_corrected_CANDIDATE_V2.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/02_real_control_calibration_corrected_CORRECTIONS.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/03_real_control_calibration_review_REPORT.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/04_real_control_calibration_candidate_PROPOSAL.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/05_real_control_calibration_candidate_SOURCE_MAP.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/06_real_coupling_halt_route_ROUTE.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/07_real_coupling_preparation_candidate_CANDIDATE.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/08_real_control_root_review_ACCEPTANCE.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/09_real_control_root_review_QUALIFICATION.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/10_docs_REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md", "outputs/preparation_calibration_2026_10_17_inputs/sources/11_real_control_autonomous_output_2026_10_17_inputs_TRANSPORT_EDIT_LEDGER.json", "outputs/preparation_calibration_2026_10_17_inputs/sources/12_preparation_calibration_publication_draft_THEOREM_NOTE.md"], "scientific_data_reads": [], "source_self_integrity_reads": []}
+TOTAL PASS: declared integrity and scoped local corroboration only.
+
+----- stderr -----
+

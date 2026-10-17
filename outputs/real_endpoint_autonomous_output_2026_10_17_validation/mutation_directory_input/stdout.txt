@@ -1,0 +1,5 @@
+SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
+BOUNDARY: no spectrum, dynamics, 904/1808 matrix, native realization, or independent proof computed.
+BOUNDARY: residual spectral mass remains paid; finite guarantee is only [T,2T].
+BOUNDARY: no general impossibility claim or negative-packet verdict is tested.
+TOTAL FAIL: input is not a regular file: outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json

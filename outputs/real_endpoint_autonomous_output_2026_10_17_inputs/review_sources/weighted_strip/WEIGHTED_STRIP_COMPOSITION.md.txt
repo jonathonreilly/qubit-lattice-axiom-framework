@@ -1,0 +1,17 @@
+# Root proposed composition of separately checked endpoint improvements
+
+Same exact source apparatus, kappa1e-12, sigma1e-6, p0, f, a0=conjugate(omega f), old basis, target, seed and finite geometry. No coupling-family premise is used.
+
+The independently checked weighted-profile argument replaces ONLY the static preparation-plus-outgoing discrepancy by <5.68e-5. It does not change a0, C, target normalization, physical finite transfer or any contour coefficient. The independently checked core thin-strip argument bounds the localized operator by <3e-7 for all t>=1e27, and the scalar target tail by <1e-16 so normalization<1e-32. The unchanged incoming contour costs<2e-7 there. Thus
+
+complete infinite error <5.68e-5+3e-7+2e-7+1e-32 <.000058.
+
+For fixed M=50T=5e28, finite transfer adds<.001 on[T,2T], hence complete finite error<.001058. In particular the original smaller advertised tolerance pair .0013/.0023 now holds atT1e27 (formerlyT1e42). Complete unhalved trace bounds are .000116/.002116 for the sharpened pair. Infinite is all future t>=T; finite is only[T,2T]. This does not assert a practical device, permanent finite halt or native supplier identification.
+
+This is a proposed integration consequence awaiting the narrow composition check; original component source identities and review limits remain unchanged. No audit or simulation is claimed.
+
+- core_strip_contour/CORRECTED_V2.md: d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874
+- core_strip_contour_independent_check/REVIEW.md: 297e324d25905a1a70fa934f37dc1c1b3c2c32051bda2a888e7ddc09b7628dc1
+- core_strip_scalar_independent_check/REVIEW.md: 2fa1b96545f01eb9d38a5682a9018dcff341f68efc11d979476487d4d14b0fa0
+- endpoint_weighted_profile/PROPOSAL.md: 28a0f35bc28b46d4cd343967543b24b51afb7368dd5bfc4c707565daddbeae3c
+- endpoint_weighted_profile_independent_check/REVIEW.md: 74ca5c9f8137e0f37afc762dc79bddbe0642bca3cc4e3f09fe32a596f2a4d948

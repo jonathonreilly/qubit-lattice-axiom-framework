@@ -1,0 +1,12 @@
+# Root qualification of corrected thin-strip implication
+
+Root read the full original proposal, full independent core review and separate scalar review. The actual one-output matching boundary, closed threshold gap, thin-strip Neumann margin, Hilbert-valued closed-tail continuation, both denominator signs, vertical cutoff edges, Fourier/column factors and finite transfer are supported by these source-exposed same-model reconstructions. V1's intermediate total omitted the tiny positive normalization allowance from its rounded sum; CORRECTED_V2 replaces that reporting claim by .002626/.003626, preserving the original and correction ledger.
+
+The corrected conditional implication is qualified for provisional composition: fixed original kappa1e-12 and sigma1e-6, infinite operator error<.003 all t>=1e27; separately fixed M5e28 finite<.004 on[T,2T]. It is not a retained audit, physical supplier identification, practical resource claim, permanent finite halt or coupling-family result. No weighted-profile proposal is used. Canonical integration/execution and publication remain pending.
+
+Source identities:
+- core_strip_contour/PROPOSAL.md: 4667ce65a41e55e21a624d521838271cad0ab98e30b2dbbffca5ef1c34a87f31
+- core_strip_contour/CORRECTED_V2.md: d05c342bcdd5d31f9696c33aa0a81306fae8abb81e7adae87995490fe9a17874
+- core_strip_contour/CORRECTIONS.json: aada05c2f46f45e42f3bd5eb662d176908e947f7f6227aa10d66fc75a0b1ae5a
+- core_strip_contour_independent_check/REVIEW.md: 297e324d25905a1a70fa934f37dc1c1b3c2c32051bda2a888e7ddc09b7628dc1
+- core_strip_scalar_independent_check/REVIEW.md: 2fa1b96545f01eb9d38a5682a9018dcff341f68efc11d979476487d4d14b0fa0

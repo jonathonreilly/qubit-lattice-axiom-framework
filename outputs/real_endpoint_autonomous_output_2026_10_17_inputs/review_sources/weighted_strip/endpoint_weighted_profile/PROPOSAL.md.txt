@@ -1,0 +1,201 @@
+# Fixed-band weighted complex profile for the real endpoint device
+
+Status: new analytical proposal, independently unchecked. This document sharpens the complex spectral mismatch and static complete-output cost for the exact fixed endpoint device. It does not extend the coupling interval, modify the published theorem or qualify an older loop-emitter packet.
+
+Under the exact published conditional premises at kappa=10^-12 and sigma=10^-6, the proposed pointwise bound is
+
+    |F_j(k)/Fref(k)-omega_p| < 2e-13 + 750 |k-k0|             (P)
+
+for all k in I and all four real old-energy/parity basis columns. The intercept is positive and includes the original calibration allowance d0=1.76e-13 and every named closed-channel/emitter floor. No exact central matching is asserted.
+
+The actual normalized endpoint reference measure then gives
+
+    ||F_j/sqrt(p0)-omega_p f||_2 <3.1e-8,
+    complete preparation-to-conjugate-packet cost <5.67e-5,
+    complete paid outgoing defect <6.2e-8,
+    sum of these static costs <5.68e-5.                     (S)
+
+All quantities use the original full complex target f, positive normalization p0, supplied seed, scalar c_new, complete old aging and passive-reference convention. These are proposed mathematical refinements, not independently checked or retained results.
+
+## Sources and exposure
+
+N=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+The controlling source is N/resource_next_sources/ENDPOINT_NOTE_716e159253.md, supplied published commit716e159253, SHA256 5342fb429ffb238c8db2ebad588cdf772211e9590210f52b1bb94e47277a4221. Its physical filter, port, termination, emitter and spectral formulas are the only scientific premises used below. The complete relevant source arguments were read during this agent's assessment and endpoint/conjugate-packet reviews and are reused at the same fixed identities. No unchanged ancestor computation is re-certified here.
+
+N/resource_next_assessment/ASSESSMENT.md, SHA256 dd707194d25c77534339d2de53e449ebd23f294c99406dda52a7c6aab565ab48, was reread in full. It proposed the proof target and variance-moment route; the present derivation is by its same author, not independent review of that suggestion. Previous author/reviewer exposure, numerical targets and source constants were known. The older partial weighted-loop and larger-coupling packets supply no numerical premise for this proof.
+
+Applicable procedure reads are reused from the same coherent bounded task. No inherited code, scientific executable, quadrature, optimizer, parameter grid or dynamics was run. All arithmetic below consists of explicit inequalities; tool operations only read/hash sources and write this proposal. No W/Git, checkpoint, prompt, axiom, publication or audit edits were made. No agents or model/effort override were used. Other workers' new coupling-frontier or contour conclusions were not read or used.
+
+## 1. Preserve momentum distance through the filter
+
+Put s=|k-k0|<=sigma=10^-6. Write r_g for the bare ladder reflection and r_m for the exact filtered-arm reflection, both at the common absolute arm origin. The supplied exact central filter values are a(k0)=0 and b(k0)/z0=i. Their derivative bounds on the unchanged full interval imply
+
+    |a(k)|<=5s, |b(k)/z-i|<=6s.
+
+These are direct fundamental-theorem-of-calculus estimates. They do not shrink the certified interval or treat s as a new parameter-family bandwidth. In the exact concatenation formula
+
+    r_scalar=z^(-2(F+1))a+(b/z)^2 r_g/(1-a r_g z^(2F)),
+
+the same algebra used by the published uniform bound gives
+
+    |r_scalar+r_g| <=5s+17s/(1-5s)<23s.
+
+The complete physical closed-channel correction is still bounded uniformly by
+
+    |r_m-r_scalar| <epsilon_A=1e-20.
+
+It is NOT multiplied by s and is NOT set to zero at k0. This bound retains the seven complementary coordinates and the noncommuting filter response exactly as in the source. Thus
+
+    |r_m+r_g| <23s+1e-20.                               (1)
+
+## 2. Shared-system port reflection and transmission
+
+After the exact Hadamard junction and common reference-plane shift, the diagonal reflection is half the sum and the transmission half the difference of the two arm reflections. Unit-modulus propagation factors change no norm. Equation (1) therefore gives
+
+    |R_j| <=r(s):=11.5s+5e-21,
+    |tau_j-z^(2(N+1))r_g| <=11.5s+5e-21.
+
+The bare calibration estimate itself retains its pointwise distance:
+
+    |r_g-r0 zeta omega_p| <=d0+702s.
+
+This follows from its exact central allowance d0 and the supplied derivative bounds |r_g'|<=700, |r0'|=2. Hence
+
+    |tau_j-rho_g omega_p| <=t(s):=d0+713.5s+5e-21.       (2)
+
+In particular r(s)<12e-6 uniformly on I. The source's physical kernel/tail estimates, epsilon_G=1e-22 and epsilon_L=1e-21 continue to apply unchanged. No scalar scattering estimate replaces those full internal interfaces.
+
+## 3. Full emitter denominator, including its nonzero floor
+
+The scalar terminated-end reference is
+
+    g_j=-(z/J)(1+R_j z^(2ell))/(1+R_j z^(2ell+2)),
+    g_j+z/J=-(z/J)R_j z^(2ell)(1-z^2)/(1+R_j z^(2ell+2)).
+
+The actual end Green matrix differs from that diagonal reference by <epsilon_G, and both off-diagonal P/Pc norms are <epsilon_G. Complementary emitter elimination is exact:
+
+    D_j=E-E0-kappa^2 G_jj-kappa^4 G_jc D_cc^-1 G_cj,
+    ||D_cc^-1||<6,
+    Dref=E-E0+kappa^2 z/J.
+
+Divide |D_j-Dref| by Im Dref=kappa^2 sin(k)/J, which is no larger than |Dref|. Using |1-z^2|=2sin(k) gives
+
+    |D_j/Dref-1|
+      <=2r(s)/(1-r(s))
+          +(J/sin(k))[epsilon_G+6kappa^2 epsilon_G^2].
+
+The second bracket explicitly includes the full complementary Schur term. With J<.031, sin(k)>.4, kappa^2=1e-24 and epsilon_G=1e-22, its contribution is <1e-23; the complementary part alone is <1e-67. Since r(s)<12e-6,
+
+    2r(s)/(1-r(s))
+      <=[23s+1e-20]/(1-12e-6).
+
+Its slope is <24 and its constant plus1e-23 is <2e-20. Consequently
+
+    |D_j/Dref-1| <=d(s):=24s+2e-20 <25e-6.             (3)
+
+The same comparison to Im Dref, rather than modulus alone, preserves the positive imaginary-part lower bound. No resonance pole, central zero, complementary emitter removal or kappa-family continuation has been assumed.
+
+## 4. Exact outgoing response and its residual row term
+
+Let DeltaL=L-L0, ||DeltaL||<epsilon_L=1e-21, where
+
+    L0=-(tau_j/J)z^(ell+1)/(1+R_j z^(2ell+2)) P.
+
+Block elimination gives
+
+    D_e^-1 u_j=D_j^-1(u_j+c_j),
+    c_j=kappa^2 D_cc^-1 G_cj, ||c_j||<6kappa^2 epsilon_G,
+    Aout,j=-kappa L D_e^-1 u_j.
+
+Since L0 Pc=0, the complementary vector does not enter the leading row, but it DOES enter DeltaL(u_j+c_j). Including Stone's unchanged iE'/sqrt(2pi) factor, the normalized scalar ratio is exactly
+
+    F_j/Fref = [tau_j/rho_g]
+                 /[(1+R_j z^(2ell+2))(D_j/Dref)] + e_L,j.
+
+All fixed complex phases cancel here only because Fref includes the original rho_g and z^(ell+1); no new per-column phase is chosen. The row remainder obeys
+
+    |e_L,j| <= J epsilon_L (1+6kappa^2 epsilon_G)/(1-d(s))
+             <3.2e-23.                               (4)
+
+This pays epsilon_L and its complementary-emitter correction rather than hiding them in a zero central error.
+
+For the leading ratio, subtract omega_p and use (2)-(3). The numerator difference is bounded by t(s)+r(s)+d(s)+r(s)d(s), and the denominator is at least (1-r(s))(1-d(s)). Since r(s)<12e-6 and d(s)<25e-6,
+
+    (1-r)(1-d) > (1-12e-6)(1-25e-6) >.99996,
+    r(s)d(s) <=12e-6[24s+2e-20].
+
+It follows explicitly that
+
+    |F_j/Fref-omega_p|
+      < [d0+3e-20+2.4e-25+(749+.000288)s]/.99996
+          +3.2e-23.
+
+The coefficient of s is <750. The constant, with d0=1.76e-13, is <2e-13. This proves the proposed (P) from the pinned source premises by a new analytic derivation. Each central floor remains strictly charged. The calculation establishes a bound on the full complex ratio, not just its modulus or phase separately.
+
+## 5. Actual reference moment without a Lorentzian substitute
+
+The scalar endpoint reference has normalized global emitter spectral measure mu_ref, mean E0 and variance kappa^2. On E(I), dmu_ref=|Fref(k)|^2 dk. Since E'>v on the interval containing k0,
+
+    v^2 (k-k0)^2 <=(E(k)-E0)^2.
+
+Integrating over this interval and using positivity of the omitted global measure yields
+
+    integral_I (k-k0)^2 |f|^2 dk
+      =p0^-1 integral_I (k-k0)^2 |Fref|^2 dk
+      <=kappa^2/(p0 v^2).
+
+No point mass or missing continuum is discarded to obtain equality of a full moment; only an inequality is used. The actual normalization satisfies p0>=1-1.6e-9, so
+
+    ||(k-k0)f||_2 <=kappa/(v sqrt(p0)) <4.1e-11.
+
+Multiplying (P) by |f| and applying the L2 triangle inequality gives
+
+    delta_j:=||F_j/sqrt(p0)-omega_p f||_2
+      <2e-13+750*4.1e-11=3.07502e-8<3.1e-8.           (5)
+
+The hard cutoff and full actual reference shape remain; no small-linewidth asymptotic or infinite-Lorentzian second moment is used. Signed averaging of the complex mismatch would not establish (5).
+
+## 6. Static full-output interface
+
+Use the already published comparison coefficient a0,j=conjugate(omega_p f), multiplying the same actual unit-incoming generalized column. This is a linear basis-column construction and does not conjugate arbitrary old-input coefficients. Actual incoming coefficient is conjugate(F_j). From (5),
+
+    ||F_j-omega_p f||_2
+       <=sqrt(p0) delta_j+1-sqrt(p0)
+       <3.1e-8+1.6e-9.
+
+Add the unchanged actual off-band amplitude <=4e-5, including point spectrum. Two old-energy residuals within a parity may overlap; multiplying by sqrt(2)<1.415 gives
+
+    preparation operator <1.415*(4e-5+3.1e-8+1.6e-9)
+                         =5.6646129e-5<5.67e-5.
+
+Distinct parities are orthogonal. No outside-band or actual-state normalization is changed.
+
+For e_j=F_j/sqrt(p0)-omega_p f, reality and one-channel unitarity give exactly
+
+    R_inst,j a0,j-omega_p f=e_j-R_inst,j conjugate(e_j).
+
+Its L2 norm is <=2delta_j<6.2e-8. Fourier propagation and physical half-line restriction are contractions, and the four open internal output fibers u_j are orthogonal. Thus this is already the complete outgoing operator ceiling without a sqrt(2) multiplier. Summing the two costs gives <5.6762e-5<5.68e-5, proving proposed interface (S).
+
+No derivative estimate changes: the new argument only improves spectral mismatch and preparation. Full elapsed old phase exp(-itK), the original W, c_new and common complex f are unchanged; passive-reference tensoring preserves every operator bound.
+
+## 7. Conservative complete-resource consequence using only published escape
+
+This section composes (S) with the already published fixed-kappa escape bounds. It does not use other workers' new contour or coupling estimates. For all t>=T=1e29:
+
+* Target negative-tail norm q obeys q^2<9e24/(pi vt)<1.2e26/t<=.0012. The exact positive-normalization cost is <=q^2, and p_t is nonzero.
+* Complete localized norm is <1.5e24/(vt)<=.0006, retaining all finite and closed coordinates and its already paid within-parity factor.
+* The published incoming contour gives bottom <1.3e-7 and both sides <=88kappa/[sigma sqrt(pi vt)]. At this T, sqrt(pi vt)>8e13, so their sum is <2e-7.
+
+The total proposed complete infinite error is therefore
+
+    5.68e-5+.0012+.0006+.0000002=.001857<.003.
+
+Every time-dependent majorant decreases after T. For the one finite device M=50T=5e30 fixed before delivery, the unchanged radius18/distanceM+23 polynomial bound contributes <.001 on [T,2T]. Thus the proposed finite complete error is <.002857<.004, with M+116 qubits. This is a factor-ten sufficient resource reduction relative to T30/M5e31 at the same advertised .003/.004 tolerances, conditional on independent acceptance of the new pointwise/moment argument. It is not the smaller-error canonical .0013 guarantee at an earlier time.
+
+Sharper composition may be possible, but no new optimum, resonance-scale onset or coupling family is claimed. The separate factor2.5 algebra-only corollary is not being packaged as a PR or scientific milestone here.
+
+## 8. Exact review obligation and unchanged limits
+
+The new review needs to check: (1) retaining s through the scalar filter and half-sum/half-difference physical port formulas; (2) retention of epsilon_A, epsilon_G, epsilon_L, d0 and the full complementary emitter term; (3) the exact complex ratio and its denominator lower bound; (4) use of the global reference variance on the actual normalized band measure; and (5) distinct aggregation rules for general preparation and orthogonal open-output errors. Equations (1)-(5) make this obligation bounded and source-addressable.
+
+The physical kernel qualifications, full Schur interfaces, local synthesis isometry and existing escape estimates are inherited conditional premises, not independently re-certified by this author proposal. Larger kappa requires its own coupled proof and new normalized f/p0 estimates. No native Hamiltonian/state supplier, thermal readiness, practical scale, calibration robustness, reset/reuse, all-future finite guarantee, physical identification, retained status or audit verdict follows.

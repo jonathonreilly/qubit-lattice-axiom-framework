@@ -1,0 +1,132 @@
+# Check of weighted reference variation and localized derivative
+
+Disposition: the proposed T=10^42 sufficient onset follows conditionally from the unchanged source contract and the corrected spectral-mass lemma. No additional mathematical correction was found in this candidate. The earlier missing 1/R derivative remains explicitly included. This is not qualification of the original apparatus hypotheses, retained status, a minimum timescale, or a feasible resource statement.
+
+## Exact scope and source exposure
+
+Read the complete `../positive_jump_onset/WEIGHTED_VARIATION_CANDIDATE.md`, SHA256 `705081af26f4850d0688efdbf55c99443a4b359897d87c390d07aa8a7dbd21b3`. The source's target exponent and proposed method were known. This is a source-exposed analytical check, not blind derivation or model-diverse corroboration.
+
+Reused the already fully read original ROUTE.md after confirming its unchanged SHA256 `fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9`. Preserved and rehashed the preceding reports without edits:
+
+- REVIEW.md: `dd85745135125e1366bf9abd696a7f5e37c705e21ec551afd145bf3cc5564de0`.
+- ADDENDUM_REVIEW.md: `26078b2784d1958b4fb3d6dbe49ab78ac45d2fc95f8e447ad2b892483753bed3`.
+
+The corrected spectral-mass lemma here means the argument checked in ADDENDUM_REVIEW.md, including its replacement of the insufficient pi<4 citation by pi<10/3 for the weighted reflection-derivative bound <1e15. The present use of pi<4 for a different integral below is sufficient.
+
+Current `correlation_worktree` instruction identities were checked unchanged: AGENTS `febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0`; SCIENCE_WORKFLOW `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`; physics-claim-reviewer `9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455`. Their full prior reads and the reference identities in ADDENDUM_REVIEW.md remain applicable. The older instruction exposure in REVIEW.md is preserved. No author checker or output was read, no scientific program was executed, and no model/effort override, new agent, Git operation, PR, checkpoint, prompt, physical axiom or other file was changed.
+
+## Reference numerator, normalization and exact phase
+
+ROUTE defines
+
+    Fref = i kappa E' z^(ell+1) rho_g /(sqrt(2pi) J D),
+    rho_g = -zeta z^(2N+4), ell=20, N=44,
+    D=E-E0+(kappa^2/J)exp(ik), f=Fref/sqrt(p0).
+
+Consequently z^(ell+1)rho_g=-zeta exp(i113k). Taking zeta0=-i zeta gives exactly
+
+    f=A E' exp(i113k) zeta0/D,
+    A=kappa/[sqrt(2pi)J sqrt(p0)], |zeta0|=1.
+
+The source's fixed scalar zeta is a phase; there is no k-dependent phase hidden in A or zeta0. The derivative must therefore retain the 113 term, as the candidate does. The source bound p0>=1-1.6e-9, J>.03 and sqrt(2pi)>2 imply A<17 kappa: equivalently .06*17*sqrt(p0)>1, with ample margin. The positive scalar p0 normalizes f once over the whole fixed interval and has no k derivative. The L2 convention is integral_I |f|^2 dk=1, without a further 2pi; the Fourier factor belongs to the generalized-packet integral.
+
+## Monotone denominator and full variation
+
+Set alpha=kappa^2/J (to avoid confusing it with the incoming coefficient), X=E-E0+alpha cos k, Y=alpha sin k. The exact derivative is
+
+    X'=E'-alpha sin k,
+    D'=E'+i alpha exp(ik).
+
+Here alpha<kappa^2/.03, E'>.025 and E'<.061 imply X'>.024 and |D'|<.062. The previously specified sin(k)>.4 and J<.031 imply Y>12 kappa^2. Thus D has no zero on the real interval, X is strictly increasing, and
+
+    integral_I dk/|D|^2
+      <=(1/.024) integral_{X(I)} dX/[X^2+(12 kappa^2)^2]
+      <=pi/(.024*12 kappa^2).
+
+No condition that X(I) straddles zero is needed for the last enlargement. This estimate keeps the k dependence of Y; replacing it by a lower bound is an inequality, not differentiating a constant surrogate for D.
+
+Differentiating the exact f gives the three terms
+
+    f'=(E''/E'+i113)f - A E' exp(i113k) zeta0 D'/D^2.
+
+Therefore
+
+    integral|f'|
+      <(.061/.025+113)*.002
+         +17 kappa*.061*.062*pi/(.024*12 kappa^2).
+
+The first number is .23088<.232. With pi<4 the second prefactor is
+
+    17*.061*.062*4/(.024*12) = .257176/.288 <1,
+
+so integral|f'|<.232+1/kappa. Adding both hard-cutoff endpoint values using sup|f|<4e10 yields
+
+    Vedge(f)<.232+1e12+8e10<2e12.
+
+This is an explicit derivative/variation estimate of the original complex waveform, not a constant-phase replacement, a linewidth estimate, or a change to the reference profile.
+
+## Reflection coefficient and scalar escape
+
+The corrected spectral-mass lemma gives integral|f||R'|<1e15 on the same interval. Since a_in=omega f/R, |R|=1, and omega is k-independent,
+
+    Vedge(a_in)<=Vedge(f)+integral|f||R'|<2e15.
+
+The phase-curvature correction for integration by parts is (.061/v)||a_in||1<.00488. Thus 3e15 is a conservative scalar numerator. The previously checked lattice estimate sum_{m>=0}(m+vt)^(-2)<=2/(vt), for vt>=1, and the 1/sqrt(2pi) Fourier normalization yield incoming norm <3e15/sqrt(pi vt). The same argument for the negative sites of the outgoing Fourier profile gives omitted norm <3e12/sqrt(pi vt), which bounds the positive-output restriction/normalization cost. The original cutoff endpoints, orthogonality of open output fibers for the old columns, and normalization convention are unchanged.
+
+## Weighted finite-core derivative and every closed tail
+
+On the actual fixed physical core the spectral-mass lemma supplies integral||x||^2 dk<=2pi*904<7232. Since integral|f|^2 dk=1, Cauchy-Schwarz gives
+
+    integral|f|||x|| <=sqrt(2pi*904)<86,
+
+because 7232<86^2=7396. This uses Lebesgue dk consistently on both factors; neither a factor of E' nor a second Fourier factor is missing.
+
+The exact differentiated finite-core matching equation, with fixed real u, is
+
+    x'=M^{-1}(iE''u-M'x).
+
+The stipulated inverse and derivative bounds then imply
+
+    integral|f|||x'||
+      <6e33[.061*.002+.1*86]
+      =6e33[.000122+8.6]<5.2e34.
+
+For completeness, decompose the localized generalized column C into its finite-core remainder and its closed tail at m>=1. Subtracting the open waves at output site zero costs |R'| in its derivative. The fixed orthogonal closed-channel spectral projections and |q|<=1/7, |q'|<=1/24 give a derivative-tail multiplier <1/6 on x' and <1/20 on x. Hence pointwise
+
+    ||C'|| <=(7/6)||x'||+|R'|+||x||/20.
+
+These coefficients do not count only one closed mode; the operator norm/geometric sum controls all seven complementary directions. The other finite head positions, including the emitter, are in x. There is no second infinite lead after input termination. Consequently
+
+    integral|f|||C'||
+      <(7/6)*5.2e34+1e15+86/20<7e34.
+
+Uniform geometric decay also justifies differentiating this Hilbert-space-valued tail. No cancellation of absolute values or averaging of M^{-1} was used.
+
+## Complete localized variation and onset arithmetic
+
+The derivative of a_in C includes f' C/R, f C'/R, and -f C R'/R^2. Integration by parts against exp(-itE) also differentiates 1/E'. With endpoint terms retained, the resulting localized numerator is bounded by
+
+    L <=C0 Vedge(f)+integral|f|||C'||
+         +C0 integral|f||R'|+(.061/v)C0||f||1
+      <4e29+7e34+2e32+9.76e14<8e34.
+
+Thus every derivative that caused concern in the earlier candidate is present. The k-independent factors omega and exp(-it b_j) add no derivative. After Fourier normalization and sqrt(2) aggregation for potentially overlapping localized errors of the two old-energy columns in one parity, the complete operator bound is
+
+    L/[sqrt(pi)vt] <1e35/(vt).
+
+The two parity sectors are orthogonal, and tensoring with a passive reference preserves the operator bound.
+
+At T=1e42, vT=2.5e40 and sqrt(pi vT)>2e20. Therefore the three contributions satisfy
+
+    incoming <1.5e-5,
+    outgoing normalization <1.5e-8,
+    localized <4e-6,
+    total <1.9015e-5<2e-5<1e-4.
+
+All three estimates decrease for t>=T. Adding the unchanged imported preparation-to-packet ceiling .001121 gives complete infinite error <.001141, hence <.0013. No out-of-band or point-spectrum residual has been removed; it is still paid in that preparation estimate.
+
+For M=50T=5e43 and t<=2T, the unchanged Chebyshev comparison is bounded by the same exponent -[50-36 sinh(1)]T-23<-6.8T-23. Its <.001 ceiling gives finite error <.002141, hence <.0023 on [T,2T]. The finite comparator and apparatus-selection convention are unchanged.
+
+## Limits and recommended disposition
+
+The weighted candidate can be carried forward as an independently checked conditional implication, citing its original hypotheses and the corrected spectral-mass lemma. The exact profile, monotone substitution, weighted derivative, closed-tail bounds and numerical margins survived this examination. This report supplies no independent qualification of the original finite-coordinate resolvent/kernel bounds, local spectral representation, preparation estimate, finite-transfer theorem, supplied dynamics/seed or physical identification. Their failure would require refreshing the dependent result. No practical clock size, native implementation, permanent finite halt, reset/reuse, or minimum physical time is established.

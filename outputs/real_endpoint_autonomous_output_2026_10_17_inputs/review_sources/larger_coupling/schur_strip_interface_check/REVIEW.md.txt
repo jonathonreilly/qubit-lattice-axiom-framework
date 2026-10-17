@@ -1,0 +1,122 @@
+# Independent check of the conditional Schur-strip interface
+
+Conclusion: the proposed background/source-column continuation, full emitter Schur estimates, boundary-specific localized estimate and scalar contour arithmetic support the stated conditional T=4e21, M=2e23 implication. No mathematical correction found in the requested interface. The complex exact self-energy oscillation <=1 and larger-coupling spectral/static inputs remain UNDISCHARGED assumptions in this review. Therefore this is not a checked larger-coupling apparatus theorem or retained audit result.
+
+## Source identities and exposure
+
+Proposal read in full: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/schur_strip_interface/PROPOSAL.md`, SHA256 `16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39`.
+
+Canonical source: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`, SHA256 `d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9`. The selected background column, full Schur and spectral jump definitions were freshly read. Relevant physical matching, free-channel gap, core/tail decomposition, scalar and finite-transfer definitions were already read at this same revision during the preceding task and are reused.
+
+The proposed mass assessment, SHA256 `f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8`, was already fully exposed. Its conclusions are not accepted by this check. This reviewer authored a separate, unreviewed background-regularity proposal, SHA256 `1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c`; none of its proposed constants is used here to discharge the complex oscillation assumption. Prior scalar and composition reviews are exposed. This is same-model, source-exposed analytical reconstruction, not blind review.
+
+No scientific execution, inherited runner, simulation, quadrature or parameter scan occurred. Only source reads/hashes and this report write occurred. No W/Git/PR/checkpoint, source, previous report or prompt edits occurred. Applicable previously read methodology remains in effect.
+
+## 1. Background inverse, jump and incoming source
+
+The 896-coordinate background is precisely the 112 retained physical head positions times eight internal coordinates, with emitter deleted and endpoint diagonal restored to 2J. Its only energy-dependent boundary is the output lead. The canonical bounds B0=2.24e18 and P0²=1.008e23 apply to this R=A^-1 and R E respectively. They are independent of the new endpoint kappa because this background itself is unchanged.
+
+The free closed-channel gap argument extends to h<=1e-18: the energy perturbation is <.062h and is far below .17. The continued closed roots remain <1/6; the open boundary change is <.031y. Orthogonality of the seven closed and one open spectral projections makes the boundary norm their maximum. Thus ||A(x−iy)−A(x)||<.1y is the correct physical matrix variation, without a dimension factor or a second lead boundary.
+
+The Neumann product is theta=.1 B0 h=.224 at h=1e-18. It yields the stated B_*, P_* estimates. For the endpoint compression, the resolvent difference contains one real selected column on the left and one continued selected column on the right. Complex symmetry gives equal transpose norms, so
+
+    ||G(z)−G(x)||<=.1y P0²/(1−theta),
+    B_*<2.89e18, P_*<4.1e11,
+    G_*<35+10080/.776<1.31e4.
+
+This is not a bound on a whole infinite resolvent.
+
+For real momentum, Im A=(E'/2)uu*, where u is the actual single open output vector. Therefore
+
+    R−R*=−iE' Ruu*R*,
+    ||iE'Ru||²=−2E' Im tr R.
+
+This derives the proposed background positive-jump formula directly, independently of an emitter resonance. Each of 112 diagonal eight-dimensional blocks has norm <2e16, so
+
+    ||x_bg||²<.122*112*8*2e16
+             =2.18624e18<(1.5e9)².
+
+The factor eight belongs here because it is a finite coordinate trace; it was correctly absent from the earlier block operator bound. Retarded positivity ensures the required sign. The trace is not over the infinite output tail.
+
+The continued inhomogeneous source is iE'(z)u. Resolvent factoring gives exactly the formula in the proposal, with ||E'(z)−E'(x)||<.062y. Hence
+
+    X_bg< (1.5e9+.062*2.24e18*1e-18)/.776<2e9.
+
+No old-column projection or complementary source component has been dropped in this source continuation.
+
+## 2. Full emitter and conditional scalar margin
+
+The block inverse in equation (1) uses a complex transpose, as required by the fixed real physical basis. Nonetheless ||V^T||=||V|| and V*V=I+kappa²(RE)*(RE), which validates the norm factor sqrt(1+kappa²P_*²) off the real axis.
+
+The second Schur inverse is diag(0,Dcc^-1)+w Dj^-1 w^T, where w=(1,kappa²Dcc^-1Gcj). Thus its norm is bounded by equation (2), including the additive d_c and the full rank-one factor. The seven complementary emitter coordinates are explicitly present.
+
+The proposed gap g−.062h−kappa²G_*>0 first proves invertibility and analyticity of Dcc. Only then is the complex s_j well-defined. Given the independently required real bound Im Dj(x)>12kappa² and exact complex oscillation <=1, at kappa=1e-8, h=1e-18 one has
+
+    Im Dj(x−iy)>12kappa²−.062h−kappa²
+                  >6kappa².
+
+The ratio .062h/kappa²=.00062 is correct. This guarantees no scalar zero in the chosen full-core strip CONDITIONAL ON that oscillation input; it is not a consequence of the background Neumann norm alone. A real-axis derivative estimate alone would not establish it.
+
+At this test point d_c<6. Equation (2) gives ||De^-1||<.18/kappa² because its rank correction kappa^4*36*G_*² is tiny and 1/6<.18. At either cutoff edge the real energy distance is at least v sigma. Subtracting the energy's real-part change, kappa²G_* and kappa^4 d_c G_*² gives the proposal's lower bound >2.49e-8 and hence ||De^-1||<5e7. This is a legitimate distinct side estimate, not an application of a resonant lower bound to off-resonant cutoffs.
+
+## 3. Complete source column and localized vector
+
+The exact source solve is x_e=−kappa De^-1 E^T x_bg, x=[x_bg;0]+Vx_e. Taking norms proves (5). At the selected parameters, sqrt(1+kappa²P_*²)<4101, so the bottom and side source estimates imply
+
+    C_b<3*2e9*(1+1e-8*4101*.18e16)+4<5e20,
+    C_s<3*2e9*(1+1e-8*4101*5e7)+4<1.4e13.
+
+The definition of C is compatible with the canonical complete generalized column: subtract the actual open incoming and reflected waves, retain the physical core and every closed tail. In the core the coarse norm is <=2||x||+2. In the exterior, the closed-tail map costs <||x||/5. The proposed <=3||x||+4 safely includes both. All growing open tail terms cancel algebraically before a Hilbert norm is taken. Fixed projectors and a uniform root bound <1/6 provide locally uniform geometric convergence of the remaining tails, so the resulting C is Hilbert-valued holomorphic. This argument does not interpret the growing continued open wave as an l2 vector or use off-real unitarity.
+
+The conjugate comparison coefficient is the same a0=conjugate(omega_p f), with its appropriate analytic Dbar continuation and decaying exp(-i113z) phase. Provided the larger-coupling reference normalization gives A_f<17kappa, its bottom bound is <.088/kappa and each side bound is <44kappa/sigma. The proposed reference missing mass would imply this normalization bound, but that missing-mass result remains a premise here.
+
+For the localized integral, 2/sqrt(2pi)<1 pays the bottom length2sigma and BOTH vertical edges. Integrating exp(-vty) gives the side 1/(vt). The already complete within-parity factor sqrt(2)<1.5 then gives precisely (7), with no additional aggregation factor needed. At T=4e21,
+
+    vT=1e20, vTh=100,
+    bottom<6.6e21 exp(-100)<6.6e-9,
+    sides<9.24e-8,
+    sum<9.9e-8<1e-7.
+
+Here exp(100)>2^100>10^30 is enough. The 1e-9 margin is explicit. Both contributions decrease for t>=T. Passive-reference tensoring preserves the estimate.
+
+## 4. Scalar outgoing and incoming contours
+
+These are different scalar integrands from a0 C and may use deeper strips without continuing C there. For the outgoing target let delta=kappa²/J² and h_o=delta/4. At kappa=1e-8 this is >2.5e-14 and <3e-14. On 0<=y<=h_o,
+
+    Im Dref=sin x[(kappa²/J)exp(y)−2J sinh y]>6kappa².
+
+For example 2J sinh h_o<.501*kappa²/J and sin x>.4 prove this with margin. Thus the target strip is pole-free independently of the full-core oscillation premise. The complete outgoing numerator phase is exp[-(n+vt−113)y] for negative site m=−n; phase113 is correctly retained.
+
+At both sides the real-part margin >.024sigma still holds. The two-edge geometric/integral estimate is at most 88kappa/[sigma sqrt(2pi(vt−113))], so the proposed weaker denominator sqrt(pi(vt−113)) is valid. On the bottom the coefficient before exp(i113z) is <.176/kappa. Its length and negative-lattice geometric sum give
+
+    bottom<=.176sigma/[kappa sqrt(pi h_o)]
+                     *exp[-(vt−113)h_o]
+          <.012sigma/kappa² *exp[-(vt−113)h_o].
+
+This explicitly verifies the supplied bottom prefactor. At T the edge ceiling is <5.2e-11. The bottom is <1e-15 using exp(-a)<=24/a^4 and (vT−113)h_o>2.4e6. Therefore q_target<1e-10 is safe, and positive target normalization costs <=q_target²<1e-20. No physical state is postselected.
+
+For the incoming contour h_i=sigma/2, the exact Dbar imaginary part has both terms negative and is pole-free. The stated two-edge bound is <5.2e-11 at T, and its bottom with exponent vT h_i=5e13 is negligible under the same elementary fourth-power estimate. Hence E_in<1e-10. All scalar ceilings decrease thereafter. No hidden linear q_target term is needed because the physical outgoing packet is already restricted to the output half-line.
+
+## 5. Conditional static composition and finite window
+
+Equations (1)–(9) prove the interface (10) if the stated exact complex and real/background/reference premises hold. Preparation and localized residuals can overlap within a parity and pay their supplied sqrt(2) factors; open outgoing/incoming fibers are orthogonal and use maximum scalar-column bounds. The target, seed, f, positive p0, a0, full elapsed old aging, W and physical scalar remain the ones for the proposed kappa=1e-8 device. They are not the numerical f/p0 of the old kappa=1e-12 device.
+
+Given the proposed mass and uniform-profile inputs, the static arithmetic is
+
+    1.415*(.000752+.000221+.0000000454)+.001504
+       =.002880859241<.002881.
+
+Adding 1e-7+1e-10+1e-20 safely gives <.002882<.003. If the additional weighted pointwise estimate extends, delta<.000301 yields
+
+    1.415*(.000301+.000221+.0000000454)+.000602
+       =.001340694241<.001341,
+
+and the separate optional <.001342 conclusion follows. Neither gives the original .0013 tolerance. These are arithmetical implications of explicitly conditional static inputs; this review does not establish those inputs or a coupling family.
+
+For the proposed fixed finite apparatus M=50T=2e23, the radius-18 inequality has ample room at kappa=1e-8: using the source's component bounds, 9.5+2J+7.926+.05+2J+1e-8<17.6<18. The compensated geometry and first omitted-site distance M+23 are unchanged. The inherited polynomial transfer is <.001 for t<=2T because its exponent is <=−[50−36sinh(1)]T−23<−6.8T−23. It compares the embedded finite evolution to the infinite evolution and then to the SAME infinite target, without finite-waveform renormalization. Thus the conservative conditional .003/.004 pair and M+116 qubit count follow on their respective domains. Infinite is all t>=T; finite only [T,2T].
+
+The ratio 10^27/(4e21)=250000 and (5e28)/(2e23)=250000 is correct. This changes both coupling and error certificate; it does not preserve the current source's much sharper .000058/.001058 bounds.
+
+## Remaining obligations
+
+The exact complex Schur-self-energy oscillation <=1, larger-coupling real emitter/profile bounds, actual/reference mass estimates, and consequent static cost must still be independently supplied. My own separate regularity proposal is not accepted or composed here. No actual device, numerical execution, whole-system simulation, native supplier, permanent finite halt, optimality or retained audit claim follows. Subject to those named inputs, the proposed interface and resource arithmetic are supported without correction.

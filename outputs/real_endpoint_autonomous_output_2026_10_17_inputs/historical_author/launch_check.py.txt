@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+"""Serialize and fsync source/runtime binding before a bounded child launch."""
+import datetime
+import fractions
+import hashlib
+import json
+import os
+from pathlib import Path
+import platform
+import resource
+import subprocess
+import sys
+import time
+
+ROOT=Path(__file__).resolve().parent
+RUN=ROOT/'run_01'
+RUN.mkdir(exist_ok=False)
+def sha(path):
+    raw=Path(path).read_bytes()
+    return {'path':str(Path(path).resolve()),'bytes':len(raw),
+            'sha256':hashlib.sha256(raw).hexdigest()}
+paths=[ROOT/'launch_check.py',ROOT/'check_route.py',ROOT/'PLAN.md',
+       ROOT/'RESOURCE_PLAN.md',ROOT/'ANALYSIS_PRELAUNCH.md',ROOT/'SOURCE_MANIFEST.json']
+paths.extend(sorted((ROOT/'inputs').iterdir()))
+paths.extend([Path(sys.executable).resolve(),Path(fractions.__file__),Path(json.__file__)])
+bindings=[sha(p) for p in paths]
+env=dict(os.environ)
+env.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',
+           VECLIB_MAXIMUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+cmd=[sys.executable,'-I','-B',str(ROOT/'check_route.py')]
+pre={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+     'command':cmd,'cwd':str(ROOT),'bindings':bindings,
+     'runtime':{'python':sys.version,'executable':str(Path(sys.executable).resolve()),
+                'platform':platform.platform()},
+     'declared_caps':{'CPU_seconds_soft_hard':[20,20],'wall_seconds':30,
+                       'address_space_bytes_requested':512*1024**2,
+                       'file_size_bytes':16*1024**2,'dense_dimension_max':4,
+                       'geometry_vertices_max':256},
+     'thread_environment_requests':{k:env[k] for k in
+          ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS']},
+     'chronology':'This object is serialized and fsynced before Popen; no results exist yet.'}
+with (RUN/'PRELAUNCH.json').open('w') as f:
+    json.dump(pre,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+fd=os.open(RUN,os.O_RDONLY);os.fsync(fd);os.close(fd)
+before=resource.getrusage(resource.RUSAGE_CHILDREN)
+start=time.monotonic()
+timed_out=False
+with (RUN/'stdout').open('wb') as out,(RUN/'stderr').open('wb') as err:
+    child=subprocess.Popen(cmd,cwd=ROOT,env=env,stdout=out,stderr=err)
+    try:code=child.wait(timeout=30)
+    except subprocess.TimeoutExpired:
+        timed_out=True;child.kill();code=child.wait()
+    out.flush();err.flush();os.fsync(out.fileno());os.fsync(err.fileno())
+elapsed=time.monotonic()-start
+after=resource.getrusage(resource.RUSAGE_CHILDREN)
+receipt={'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'prelaunch':sha(RUN/'PRELAUNCH.json'),'command':cmd,'return_code':code,
+ 'timed_out':timed_out,'wall_seconds':elapsed,
+ 'child_cpu_seconds':(after.ru_utime-before.ru_utime)+(after.ru_stime-before.ru_stime),
+ 'rusage_children_after':list(after),'maxrss_platform_units':'bytes on macOS; KiB on Linux',
+ 'outputs':[sha(p) for p in [RUN/'stdout',RUN/'stderr',RUN/'RESULT.json'] if p.exists()],
+ 'bindings_unchanged_after':all(sha(row['path'])==row for row in bindings),
+ 'scope':'One bounded author exact-arithmetic run; no independent review status.'}
+with (RUN/'EXECUTION.json').open('w') as f:
+    json.dump(receipt,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+fd=os.open(RUN,os.O_RDONLY);os.fsync(fd);os.close(fd)
+print(json.dumps(receipt,indent=2))
+sys.exit(0 if code==0 and not timed_out and receipt['bindings_unchanged_after'] else 1)

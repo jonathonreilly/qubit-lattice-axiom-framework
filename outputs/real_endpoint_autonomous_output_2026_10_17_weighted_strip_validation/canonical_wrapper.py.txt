@@ -1,0 +1,9 @@
+import sys,json
+from pathlib import Path
+sys.path.insert(0,'/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts')
+import runner_cache
+r,p=runner_cache.execute_and_write_cache('scripts/real_endpoint_autonomous_output_2026_10_17.py',30)
+Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/weighted_strip_validation/CANONICAL_RESULT.json').write_text(json.dumps(r,indent=2))
+print(json.dumps({k:v for k,v in r.items() if k not in ('stdout','stderr')}))
+print(p)
+raise SystemExit(0 if r['status']=='ok' and r['exit_code']==0 else 1)

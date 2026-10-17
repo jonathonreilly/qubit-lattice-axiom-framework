@@ -1,0 +1,121 @@
+# Endpoint spectral and complete-output check
+
+Status: independently reconstructed conditional implication; no material mathematical error found in the endpoint normalization, variance complement, phase/aging, escape, or finite-horizon steps at the source identity below. This is not independent acceptance of the upstream structural scattering bounds and not retained/audit status.
+
+The exact scope is ROUTE.md sections “Closing the input port” through “Details fixing the signs and complete spectral interface”, with the stated finite-output comparison. The structural filter, physical junction, and terminated-port kernel bounds remain separately checked inputs. In particular, (B) alone is insufficient: the physical internal-row bounds for Gtr and L, the absence of additional open channels, and the physical-coordinate kernel ceiling are essential interfaces.
+
+## Exposure and procedure
+
+Analytical findings in this document were frozen without opening check_route.py, ANALYSIS_PRELAUNCH.md, run_01 outputs, or any author checker/results file. The author's claims, numerical ceilings, and execution summary embedded in ROUTE.md were visible; this is not blind-to-target verification. No inherited source scientific programs were executed or read. No scientific numerical run was needed. Shell operations only located/read sources, compared procedural copies, hashed files, and wrote this deliverable. The initial `python` read command failed because that executable was absent; it was replaced by `python3` for reading, not scientific computation.
+
+The physics-claim-reviewer skill applies to this bounded mathematical check. Its installed skill and proof-search reference compare byte-for-byte with correlation_worktree procedural copies. AGENTS, SCIENCE_WORKFLOW and freshness guidance were read there, the procedure source used by the candidate manifest. No Git was used, as required by the handoff; consequently current remote-main freshness is not certified. No prompts, scientific sources, checkpoints, axioms, audit records or Git state changed. No subagents or model overrides were used.
+
+## Conditional endpoint calculation
+
+At each energy lambda=b_j+E(k), take the supplied physical background Green matrix G=Gtr(end,end), ||G||<35, off-diagonal P/Pc blocks <10^-22, and outgoing row L=L0+DeltaL with ||DeltaL||<10^-21. Take the real orthonormal B eigenbasis only as proof coordinates. The complementary block is invertible with norm <6, since its unperturbed gap exceeds 9/50 and its perturbation is <35 kappa^2. Block elimination gives
+
+    D_e^-1 u_j = D_j^-1 (u_j + kappa^2 D_cc^-1 G_cj),
+    D_j = E-E0-kappa^2 G_jj-kappa^4 G_jc D_cc^-1 G_cj.
+
+The scalar background difference has a useful exact factor:
+
+    g_j + z/J = -(z/J) R_j z^(2ell) (1-z^2)/(1+R_j z^(2ell+2)).
+
+Thus dividing its contribution by kappa^2 sin(k)/J cancels |1-z^2|=2 sin(k), giving 2 eta/(1-eta). The tiny matrix and complementary corrections fit the stated epsilon_D=1/40000. This comparison to the imaginary part (not just the modulus) yields Im D_j>12 kappa^2. Consequently the resonant inverse is <1/(12 kappa^2), and the full matrix inverse, including complementary pieces, is <1/(10 kappa^2). There is ample slack for the off-diagonal correction; it has not been omitted.
+
+The off-diagonal emitter/background coupling in lambda-H is +kappa, so resolvent block inversion yields A_out=-kappa L D_e^-1 u_j. With the supplied negative sign of L0 this has the positive leading numerator kappa tau_j z^(ell+1)/(J(1+R_j z^(2ell+2))D_j). The stated relative error epsilon_F follows from this expression, the (B)/(C) inputs, and the complementary correction. No additional unknown column phase can be absorbed into this estimate.
+
+## Stone normalization reconstructed
+
+Write R_+=(lambda+i0-H)^-1. At the output boundary m=0, eliminating a unit incoming plus reflected tail gives
+
+    psi_1 = z psi_0 + (z^-1-z)u_j,
+    M_+ Phi = i E' P_out u_j.
+
+Since M_- - M_+ = -i E' P_out P_j P_out*, subtraction of the inverses gives
+
+    R_+ - R_- = -i E' R_+ P_out P_j P_out* R_-
+                = -(i/E') Phi Phi*.
+
+For the stated resolvent convention Stone has minus sign, dP=-(R_+-R_-)d lambda/(2pi i). Since d lambda=E' dk, the finite-coordinate measure is Phi Phi* dk/(2pi). Recurrence extends the identity to every finite tail coordinate. The finite-core inverse and analytic tail roots on this threshold-free interval give smooth finite-coordinate densities; finite-support vectors are dense, so there is no hidden singular-continuous component in the interval. An in-band eigenvector would have zero open wave and solve the homogeneous invertible matching system, and is therefore absent.
+
+This also establishes the local multiplicity-one spectral transform needed for packet synthesis. The outgoing lead is cyclic for this open fiber: the generalized solution has nonzero unit incoming wave, and uniqueness follows from matching invertibility. It is unnecessary to assert a globally complete scattering transform outside this interval. With synthesis convention (2pi)^-1/2 integral a(k)Phi(k) dk, the coefficient norm is ||a||_2.
+
+For a real seed R_- seed is the complex conjugate of R_+ seed. Its outgoing Green coefficient A_out therefore gives outgoing spectral coefficient
+
+    F = i E' A_out / sqrt(2pi),
+
+and incoming coefficient conjugate(F). The unit incoming column has outgoing coefficient R_inst, so F=R_inst conjugate(F). The comparison spectral coefficient is a=omega_p f/R_inst, of norm one because |R_inst|=1; its outgoing coefficient is omega_p f. Hence the band-state difference equals ||F-omega_p f||_2. These signs and 2pi factors match (D). Dropping E', using energy-normalized coefficients as momentum-normalized ones, or removing the i would fail this reconstruction.
+
+## Reference density and complete variance remainder
+
+The reference scalar Jacobi model is an emitter of diagonal E0 coupled by -kappa to a half-line with hopping -J and diagonal 2J. Its endpoint self-energy is -z/J, so its emitter resolvent is 1/Dref. Directly,
+
+    -Im(1/Dref) E'/pi
+      = kappa^2 sin(k) E'/(pi J |Dref|^2)
+      = kappa^2 E'^2/(2pi J^2 |Dref|^2) = |Fref|^2.
+
+The reference phase z^(ell+1)rho_g has modulus one and changes no density. Both the reference seed and each actual real product seed have energy mean at their stated emitter diagonal and variance kappa^2: (H-mean)e is exactly -kappa times the adjacent endpoint vector. Every energy outside that seed's own interval differs from the mean by at least v sigma. Spectral Chebyshev therefore bounds the omitted probability by (kappa/(v sigma))^2=1.6e-9, amplitude by 4e-5, including all out-of-band point spectrum. This needs neither resonance decay nor postselection.
+
+p0 is between 1-1.6e-9 and 1. The band replacement error is at most epsilon_F sqrt(p0)+(1-sqrt(p0)); adding the complement gives <0.000792002 per column. There are two old-energy columns in each parity; they need not have orthogonal residuals. Cauchy–Schwarz gives the necessary sqrt(2) factor, yielding <0.001121. Parity blocks are exactly orthogonal, so no second factor is needed. The same reasoning bounds the entire old-input point projection by sqrt(2)*4e-5<6e-5. The state is not projected or conditioned in the comparison. Tensoring a passive reference preserves the operator norm.
+
+## Common phase and elapsed aging
+
+The exact comparator phase is fixed by the preceding outgoing coefficient, including i, rho_g, z^(ell+1) and the complex Dref denominator. In the ideal reflectionless limit, Fref/conjugate(Fref)=-z^(2ell+2)rho_g^2 conjugate(Dref)/Dref. Multiplication by omega_p^2 gives precisely tau_j^2 R_end. This independently checks (H); it is a consistency relation, not a replacement for the actual bounds.
+
+Each spectral energy is c_new+b_j+E(k). Its evolution separates into the actual scalar exp(-ic_new t), the same clock phase exp(-iE(k)t), and exp(-ib_j t). Since W and K share this input eigenbasis, the comparison on the old input is exp(-itK)W. This does not commute K through the interacting Hamiltonian and does not subtract a travel/setup delay. Complete output includes blank emitter, both arms, stub and sources as well as the lead head.
+
+## Complete escape estimate reconstructed
+
+Condition on the upstream physical-coordinate Green ceiling used in ROUTE. The 113-by-113 matrix of 8-by-8 blocks, each bounded by 5e31 after the emitter update, has norm <=113*5e31<6e33. Multiplying by 904 instead would be an unnecessary coordinate overcount. M'=E'I+J P_out Q' P_out* obeys ||M'||<=3J<0.1. Inverse differentiation gives <4e66. For the incoming right-hand side iE'P_out u_j, both its norm and derivative are bounded by 2J, giving ||x||<4e32 and ||x'||<3e65. Closed-tail continuation sums geometric powers |q|<=1/7; differentiation sums m q^(m-1)q' and stays bounded because |q'|<=1/24. Subtracting the two open waves leaves complete Hilbert-space columns C with ||C||<1e33, ||C'||<1e66. There is no whole-resolvent norm assertion here.
+
+The reference f satisfies the stated loose sup and derivative bounds from Im Dref>=12 kappa^2, E'<=2J, |Dref'/Dref|<6e21 and numerator phase derivative 113. Cauchy–Schwarz gives ||f||_1<=sqrt(2 sigma)<1/500. Including both hard-cutoff edge values, V(f)<7e26. Since |R_inst|=1 and |R_inst'|<3e65,
+
+    V(a) <= V(f)+||f||_1 sup|R_inst'| <7e62.
+
+For the incoming integral at m>=0 the phase derivative has magnitude m+tE'>=m+vt. Integration by parts, with endpoints retained, bounds each component by
+
+    [V(a)+(E2/v)||a||_1]/[sqrt(2pi)(m+vt)].
+
+For vt>=1, sum_(m>=0)(m+vt)^-2 <=2/(vt). The numerator is <8e62, proving the stated incoming bound 8e62/sqrt(pi vt). The same argument on the negative half-line for the outgoing Fourier packet gives a tail bound <8e26/sqrt(pi vt). Full-line Fourier Parseval gives unit norm; hence the cost of normalizing its positive-half-line restriction is 1-sqrt(1-tail^2)<=tail. This justifies the normalization bound and ensures the restriction is nonzero at the claimed times.
+
+For the localized integral, use the Banach-valued integration-by-parts bound
+
+    [C0 V(a)+C1 ||a||_1+(E2/v)C0 ||a||_1]/[sqrt(2pi)vt].
+
+Its leading term is <7e95. After the two-column sqrt(2) aggregation the displayed 2e96/(sqrt(2pi)vt) ceiling is valid. This includes finite emitter/source amplitudes and every closed tail. At t=10^136 the incoming term is <4e-5 using sqrt(pi vt)>2e67; the other terms are negligible on the 10^-4 scale. The stated complete escape allowance <10^-4 and infinite total <0.001221 therefore follow for every t>=T, conditional on the upstream kernel bounds. The huge onset is a valid sufficient bound, with no lower-bound or efficiency claim.
+
+## Finite output comparison
+
+The finite model is the compression of the infinite one-head model when the added endpoint occupation restores diagonal 2J. The first omitted site has graph distance d=M+ell+3: ell+1 emitter-to-input-origin steps, two junction-square steps from input origin to output origin, and M output steps. Internal B/contact mixing changes internal labels, not this distance. Thus polynomials of degree <d act identically on the seed in the finite and infinite systems.
+
+Both compressed and infinite one-head spectra fit a common radius <18 around the stated center. Even explicitly allowing the emitter diagonal displacement from 2J adds less than 2J; combining 9.5 internal half-width, clock width 2J, contact norm 7.926, filter norm .05, emitter displacement 2J and kappa remains below 18. This supplies slack if one does not include the emitter already in the clock ceiling.
+
+The Chebyshev expansion of exp(-itH) has coefficients 2(-i)^n J_n(18t). The generating-function contour of radius e gives |J_n(18t)|<=exp(18t sinh(1)-n). Since both operators' Chebyshev polynomials have norm <=1, canceling degrees <d and bounding the remainder gives
+
+    ||exp(-itHinf)e - embedding exp(-itHM)e||
+       <=4 exp(-d+18t sinh(1))/(1-exp(-1)).
+
+For M=50T and t<=2T, the exponent is at most -(50-36 sinh(1))T-23, strictly negative with margin >7T. It is much smaller than .001. This is an operator statement on the seed subspace, so no extra four-column factor is needed. It preserves the embedded infinite reference waveform and yields the finite total <.002221 on [T,2T]. It says nothing about later recurrence or finite-system point-spectrum suppression. Unhalved trace distance is at most twice the corresponding complete isometry error, as claimed.
+
+## Remaining interface obligations and narrow improvements
+
+1. The upstream review must certify the full internal Gtr/L bounds in the stated physical basis, not only scalar transmission/reflection (B). It must also certify that there is exactly one open channel in each parity/old-energy interval and the cited finite-coordinate Green ceilings. This check has not independently re-established those structural statements from inherited sources.
+2. Add the explicit integration-by-parts inequalities above if a durable proof is wanted; the candidate's one-sentence invocation is correct but unusually compressed. No numerical constants need correction.
+3. Clarify the reference scalar Jacobi realization and the local spectral-transform surjectivity/density argument as above. This removes potential ambiguities without adding a new physics premise.
+4. An independent check of the explicit geometry, all positive-block coefficients and resource counts belongs to structural ownership. Here only the finite-distance and norm-transfer mechanism was checked from its stated model.
+5. This report grants no global robustness, exact arbitrary-accuracy, finite all-future, practical preparation, native physical-realization, or audit conclusion. No author runner-result validation is claimed.
+
+## Exact source identities
+
+All paths are absolute. ROUTE.md was read in complete relevant sections, including the claims/exposure and execution-summary prose; the initial broad read was truncated, so focused untruncated reads supplied the complete arguments. No conclusion relies on the truncated output.
+
+| Source | SHA256 |
+|---|---|
+| /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md | fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9 |
+| /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/SOURCE_MANIFEST.json (path/procedure provenance only) | 5fe85e0e4d1a67351e125ab512f92cea27e2f3ec028e11ae10ede858e89a6659 |
+| /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md | febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0 |
+| /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md | 71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3 |
+| /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md | b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0 |
+| /Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md | 9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455 |
+| /Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md | be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258 |

@@ -55,8 +55,35 @@ A massive Dirac fermion is a closer analogue of the electron. Can the corner mod
   - Whether the mass can arise spontaneously, for example from interactions, is open.
 - **Not shown.**
   - That the Dirac point is the global low-energy feature, so that filling the lower bands gives a clean Dirac vacuum.
+    - At the stated parameters the lower band rises 0.16 above the node energy, and bands 0 and 1 touch at 24 further Weyl points (independent check).
+    - **Author search.** Optimization over the sampled 9-dimensional span (t2 ≥ 0.05, fixed Weyl velocity, |coefficients| ≤ 3) found no ideal node: the best excess on a 24^3 grid was 0.05. Unbounded searches exploited coarse grids.
+    - **Independent search.** About 1,800 random sets plus optimization found no clean gapped vacuum. The best case has a positive gap of only 0.22–0.46 of 2 m_D, because of extra Weyl touchings.
+    - Longer-range terms are untested.
+    - Logs: loop pack, `c19_dirac/`.
   - The qubit construction of the new terms.
   - Charge.
+
+## Independent check
+
+A fresh-context agent (same model family) wrote its own code, then reran the author's runner version (17/17). Its findings bear on the claims above as follows.
+- **Selection rule: confirmed and broader.**
+  - With exact signed-orbit counting at ranges up to |sh|_1 ≤ 2, the inter-node coupling of every rotation-invariant staggered term is ≤ 8.6e−16.
+  - It also holds without translation symmetry: with averaging over the 24 site rotations only, the coupling is ≤ 3.3e−14. That is Schur's lemma for the site rotations.
+  - Real A2 masses vanish at all ranges tested.
+- **Weyl pair: confirmed** over 40 random parameter sets.
+  - The velocity (0.027–0.147) and the sign of the chirality depend on X.
+  - The doublet is the lowest level only for t1 = −1 with modest strength (17 of 40).
+- **Massive Dirac.**
+  - Mass space rank 5, and m_D exactly linear in the mass strength.
+  - An isotropic scalar term c δk² (c = 0.0275) accompanies the Dirac form.
+  - A generic mass breaks site inversion. Its 5-dimensional span has 3 inversion-even and 2 inversion-odd directions, so the phase is axion-like.
+- **Cube-centre group.**
+  - The composed operations were verified geometrically to be rotations about a cube centre.
+  - The fermion is in the spin-1/2 class under them: two perpendicular half-turns anticommute.
+  - Each massive doublet is a spinorial irrep of the double cover of this group.
+- **Global structure.** No clean Dirac vacuum was found; see "Not shown".
+
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c19_dirac/independent_check/` (REPORT.txt; the refined numbers in `globalband_*.log` predate a sign fix, so use the grid numbers there and the `verify*` and `touch*` logs).
 
 ## Premises
 
@@ -77,6 +104,9 @@ A massive Dirac fermion is a closer analogue of the electron. Can the corner mod
 - **Staggered fermions: shift symmetries acting as γ5 × taste, and the staggered mass.**
   - Kogut and Susskind, PRD 11, 395 (1975).
   - Golterman and Smit, NPB 245, 61 (1984).
+- **Weyl nodes coupled by a density wave, with an axion phase.** Wang and Zhang, PRB 87, 161107(R) (2013).
+- **Zero- and finite-momentum pairing in Weyl semimetals.** Cho, Bardarson, Lu and Moore, PRB 86, 214514 (2012).
+- **The pinning here is different.** It comes from a two-dimensional projective irrep at an affine-fixed momentum. It is not the time-reversal Kramers–Weyl mechanism.
 - **Kramers–Weyl and multifold fermions in chiral crystals.**
   - Chang et al., Nat. Mater. 17, 978 (2018).
   - Bradlyn et al., Science 353, aaf5037 (2016).
@@ -89,7 +119,10 @@ A massive Dirac fermion is a closer analogue of the electron. Can the corner mod
 ## No-Go Discipline Gate
 
 - **N1 — routes.**
-  - A number-violating (Majorana) mass is an untested alternative here; its compatibility and representation require separate derivation.
+  - A number-violating (Majorana) mass.
+    - The independent check found that under the twisted action a momentum-Q pairing invariant under all 24 twisted rotations (on-site, sampled rank 5) gaps each Weyl node. So the protection in item 2 requires number conservation.
+    - Under the untwisted action, only momentum-0 inter-node pairing is allowed, and it leaves the nodes gapless.
+    - These findings come from the check's own code and are not built into the runner.
   - Longer-range masses.
   - Other flux patterns.
 - **N2/N3 — scope.** One flux pattern, L = 4, and one generic choice of X and M from each space.

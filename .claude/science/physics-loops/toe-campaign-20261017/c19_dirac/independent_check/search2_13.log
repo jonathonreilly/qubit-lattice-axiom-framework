@@ -1,0 +1,9 @@
+  bad=+0.0000 t1=-1 t2=-0.661 delta=0.330 lev=0
+  bad=+0.0282 t1=+1 t2=+0.879 delta=0.272 lev=10
+  bad=+0.0621 t1=-1 t2=+0.326 delta=0.327 lev=0
+  bad=+0.1241 t1=+1 t2=-0.017 delta=0.337 lev=8
+  bad=+0.1244 t1=+1 t2=-0.858 delta=0.251 lev=10
+  bad=+0.1397 t1=-1 t2=-0.999 delta=0.314 lev=0
+  optimized: bad=+0.00e+00 t1=-1 t2=-0.6609 delta=0.3301
+  optimized: bad=+0.00e+00 t1=+1 t2=+0.8669 delta=0.2798
+  optimized: bad=+0.00e+00 t1=-1 t2=+0.2992 delta=0.3056

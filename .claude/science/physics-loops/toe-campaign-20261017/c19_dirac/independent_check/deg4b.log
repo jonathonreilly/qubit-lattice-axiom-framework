@@ -1,0 +1,4 @@
+strength 0.05: lowest folded levels at k*: [-2.31787 -2.31787 -2.29345 -2.29345 -1.70655 -1.70655 -1.68213 -1.68213]
+   Berry flux of bands 0..3 around folded k*: [np.float64(1.0), np.float64(-1.0), np.float64(-1.0), np.float64(1.0)]
+strength 0.2: lowest folded levels at k*: [-2.64551 -2.64551 -2.42167 -2.42167 -1.57833 -1.57833 -1.4435  -1.4435 ]
+   Berry flux of bands 0..3 around folded k*: [np.float64(-1.0), np.float64(1.0), np.float64(-1.0), np.float64(1.0)]

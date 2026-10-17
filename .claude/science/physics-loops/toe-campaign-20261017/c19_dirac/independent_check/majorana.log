@@ -1,0 +1,17 @@
+E_N = -2.282843
+P=0 twisted-invariant pairing (range<=1): dim 17; antisymmetric True; Bloch BdG = real-space BdG on L=4: True
+     node-space pairing singular values (per unit amplitude): [0. 0. 0. 0.]
+     BdG (amp 0.02) min|E| at k* and on spheres r=0.01,0.03,0.1: [0.001284 0.000623 0.000193 0.004491]; min|E| in box |dk|_inf<=0.15: 1.29e-04
+P=0 untwisted-invariant pairing (range<=1): dim 20; antisymmetric True; Bloch BdG = real-space BdG on L=4: True
+     node-space pairing singular values (per unit amplitude): [3.21785 3.21785 3.21785 3.21785]
+     BdG (amp 0.02) min|E| at k* and on spheres r=0.01,0.03,0.1: [0.064357 0.06348  0.061721 0.055517]; min|E| in box |dk|_inf<=0.15: 4.12e-02
+P=Q twisted-invariant pairing (range<=1): dim 29; antisymmetric True; Bloch BdG = real-space BdG on L=4: True
+     node-space pairing singular values (per unit amplitude): [4.76714 4.76714 4.6052  4.6052 ]
+     BdG (amp 0.02) min|E| at k* and on spheres r=0.01,0.03,0.1: [0.092104 0.091844 0.091334 0.089676]; min|E| in box |dk|_inf<=0.15: 8.70e-02
+P=Q untwisted-invariant pairing (range<=1): dim 20; antisymmetric True; Bloch BdG = real-space BdG on L=4: True
+     node-space pairing singular values (per unit amplitude): [0. 0. 0. 0.]
+     BdG (amp 0.02) min|E| at k* and on spheres r=0.01,0.03,0.1: [0.019571 0.018944 0.01771  0.013585]; min|E| in box |dk|_inf<=0.15: 5.35e-03
+  on-site pairing P=0 twisted-invariant: dim 5
+  on-site pairing P=0 untwisted-invariant: dim 2
+  on-site pairing P=Q twisted-invariant: dim 5
+  on-site pairing P=Q untwisted-invariant: dim 2

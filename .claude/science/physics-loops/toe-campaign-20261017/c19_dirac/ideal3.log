@@ -1,0 +1,10 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+0 excess14 0.03888 excess24 0.05748 t2 0.064 |coef| 2.779
+1 excess14 0.03467 excess24 0.05354 t2 0.062 |coef| 3.000
+2 excess14 0.03140 excess24 0.05019 t2 0.062 |coef| 3.000
+3 excess14 0.03848 excess24 0.05708 t2 0.063 |coef| 2.684
+4 excess14 0.03341 excess24 0.05223 t2 0.063 |coef| 3.000
+5 excess14 0.03430 excess24 0.05269 t2 0.061 |coef| 3.000
+6 excess14 0.03753 excess24 0.05633 t2 0.062 |coef| 3.000
+7 excess14 0.03835 excess24 0.05699 t2 0.062 |coef| 3.000
+best excess on 24^3 grid: 0.05019

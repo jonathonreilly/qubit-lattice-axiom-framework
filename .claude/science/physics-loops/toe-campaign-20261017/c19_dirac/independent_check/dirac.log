@@ -1,0 +1,14 @@
+[mine, t2=0.2, delta=0.05] E_N = -2.282843; Weyl v_W = 0.13388; scalar curvature c = 0.03475 (spread 2.7e-09); Dirac regime needs m_D << v_W^2/c = 0.5157
+   m = 1e-04: m_D = 2.798e-04 (m_D/m = 2.7976); q up to 4 m_D/v_W = 8.36e-03: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 6.4e-06;  upper band E-E_N vs +sqrt: 2.1e-03; angular spread of upper band at fixed q: 2.2e-06
+   m = 1e-03: m_D = 2.798e-03 (m_D/m = 2.7976); q up to 4 m_D/v_W = 8.36e-02: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 6.4e-04;  upper band E-E_N vs +sqrt: 2.1e-02; angular spread of upper band at fixed q: 2.2e-04
+   m = 1e-02: m_D = 2.798e-02 (m_D/m = 2.7976); q up to 4 m_D/v_W = 8.36e-01: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 6.4e-02;  upper band E-E_N vs +sqrt: 1.7e-01; angular spread of upper band at fixed q: 2.5e-02
+   m = 5e-02: m_D = 1.399e-01 (m_D/m = 2.7976); q up to 4 m_D/v_W = 4.18e+00: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 9.3e-01;  upper band E-E_N vs +sqrt: 9.0e-01; angular spread of upper band at fixed q: 1.4e+00
+runner vel (its Weyl velocity) = 0.10959551843862474 ; runner then used v = vel/2 = 0.05479775921931237
+[runner H] E_N = -2.282843; Weyl v_W = 0.10960; scalar curvature c = 0.02752 (spread 1.3e-09); Dirac regime needs m_D << v_W^2/c = 0.4364
+   m = 1e-04: m_D = 1.404e-04 (m_D/m = 1.4041); q up to 4 m_D/v_W = 5.12e-03: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 4.8e-06;  upper band E-E_N vs +sqrt: 1.2e-03; angular spread of upper band at fixed q: 2.8e-06
+   m = 1e-03: m_D = 1.404e-03 (m_D/m = 1.4041); q up to 4 m_D/v_W = 5.12e-02: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 4.8e-04;  upper band E-E_N vs +sqrt: 1.2e-02; angular spread of upper band at fixed q: 2.8e-04
+   m = 1e-02: m_D = 1.404e-02 (m_D/m = 1.4041); q up to 4 m_D/v_W = 5.12e-01: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 4.7e-02;  upper band E-E_N vs +sqrt: 1.1e-01; angular spread of upper band at fixed q: 2.5e-02
+   m = 5e-02: m_D = 7.020e-02 (m_D/m = 1.4041); q up to 4 m_D/v_W = 2.56e+00: |r - sqrt(v_W^2 q^2 + m_D^2)|/sqrt <= 8.8e-01;  upper band E-E_N vs +sqrt: 7.4e-01; angular spread of upper band at fixed q: 1.0e+00
+   runner's test (m=0.05, |dk| <= 0.02, m_D/v_W = 0.641) with v_W: max rel dev 1.5e-04
+   runner's test (m=0.05, |dk| <= 0.02, m_D/v_W = 0.641) with v_W/2: max rel dev 5.2e-04
+   runner's test (m=0.05, |dk| <= 0.02, m_D/v_W = 0.641) with v = 0 (flat): max rel dev 6.4e-04

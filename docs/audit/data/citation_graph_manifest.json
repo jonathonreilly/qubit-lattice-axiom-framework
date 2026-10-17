@@ -1,6 +1,6 @@
 {
- "edge_count": 16170,
- "node_count": 7210,
+ "edge_count": 16173,
+ "node_count": 7211,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2469,6 +2469,10 @@
   "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "b49585dcd91f",
+   "out_degree": 3
   },
   "bksf_holonomy_compression_cycle728_bounded_theorem_note_2026-07-28": {
    "deps_hash": "2bdda41c6188",

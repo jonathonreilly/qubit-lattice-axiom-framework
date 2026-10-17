@@ -42,5 +42,13 @@
 - Status: bounded support, unaudited. Exact within the supplied model and
   the stated search restrictions.
 - Independent check: confirmed all claims, with one count wording fixed.
+
+## C6
+- Note: `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Runner: `scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py` (PASS=8)
+- Status: bounded support, unaudited. Exact for the stated family.
+- Independent check: running.
+- Intended claim_type: bounded_theorem. Trace: frontier_discovery. It fills
+  the rotation-covariance gap recorded in the 2026-09-02 BKSF census note.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.

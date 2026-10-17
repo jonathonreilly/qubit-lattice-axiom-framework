@@ -10,3 +10,26 @@ signed-orbit counts of invariant one-fermion terms (translation-invariant P = 0 
   P=0  shifts l1<=2    real  O   : dim 76
   P=0  shifts l1<=2    real  OxI : dim 39
   P=0  shifts l1<=2    imag  O   : dim 74
+  P=0  shifts l1<=2    imag  OxI : dim 36
+  P=0  shifts cube     real  O   : dim 76
+  P=0  shifts cube     real  OxI : dim 38
+  P=0  shifts cube     imag  O   : dim 86
+  P=0  shifts cube     imag  OxI : dim 43
+  P=0  r1 imag, O-invariant but inversion-ODD: dim 11
+staggered (P = Q):
+  P=Q  shifts onsite   real  A1 under O: dim 4
+  P=Q  shifts onsite   real  A2 under O: dim 1
+  P=Q  shifts onsite   imag  A1 under O: dim 2
+  P=Q  shifts onsite   imag  A2 under O: dim 5
+  P=Q  shifts r1       real  A1 under O: dim 22
+  P=Q  shifts r1       real  A2 under O: dim 13
+  P=Q  shifts r1       imag  A1 under O: dim 20
+  P=Q  shifts r1       imag  A2 under O: dim 29
+  P=Q  shifts l1<=2    real  A1 under O: dim 76
+  P=Q  shifts l1<=2    real  A2 under O: dim 55
+  P=Q  shifts l1<=2    imag  A1 under O: dim 74
+  P=Q  shifts l1<=2    imag  A2 under O: dim 95
+  P=Q  shifts cube     real  A1 under O: dim 88
+  P=Q  shifts cube     real  A2 under O: dim 61
+  P=Q  shifts cube     imag  A1 under O: dim 74
+  P=Q  shifts cube     imag  A2 under O: dim 101

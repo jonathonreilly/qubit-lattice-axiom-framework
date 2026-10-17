@@ -32,3 +32,4 @@ C19:
   dispersion: leading_joint_limit_with_higher_order_lattice_corrections
   unresolved: [global_low_energy_vacuum, qubit_realization, mass_generation, physical_identification]
   incoming_head_history: archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json
+  independent_check: same_model_family_fresh_context; selection_rule_confirmed_all_tested_ranges; majorana_mass_gaps_nodes_under_twisted_action; generic_mass_breaks_inversion; cube_centre_spin_half_class; no_clean_dirac_vacuum_found; report c19_dirac/independent_check/REPORT.txt

@@ -1,0 +1,31 @@
+gauge solved: True
+O-fixed momenta (units pi/4): [(-2, 2, -2), (2, -2, 2)]
+k* (mine) = [-1.  1. -1.]  -k* = [ 1. -1.  1.]  k*+Q = -k* mod 2pi: True  -k* = -(k*) mod 2pi: True
+dim X space (range<=1, O x I x transl, conj-odd): 9
+covariance residual (24 rotations + inversion, random k): 3.3e-16
+X conj-odd & Hermitian: True True
+inversion momentum shift pi*I s_I = [0 0 0] (0 => I maps k -> -k)
+number of 2O lifts found: 2
+  lift 0: 12-dim shell = {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+  lift 1: 12-dim shell = {'E1/2': 1, 'E5/2': 1, 'G3/2': 2}
+
+== Weyl pair: runner-like parameters (t1=-1, t2=0.2, delta=0.05) with several random X in the 9-dim space
+  X#0: lowest at k*,-k* doublets/equal: (np.True_, np.True_, np.True_, np.True_); E_N=-2.282843, next level +0.5657; v(k*) = 0.02662 spread 2.7e-10; v(-k*) = 0.02662; Berry +1.0000, -1.0000; lift0 labels [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]; D2 comm k*: -1+0j
+  X#1: lowest at k*,-k* doublets/equal: (np.True_, np.True_, np.True_, np.True_); E_N=-2.282843, next level +0.5657; v(k*) = 0.03938 spread 8.9e-11; v(-k*) = 0.03938; Berry +1.0000, -1.0000; lift0 labels [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]; D2 comm k*: -1+0j
+  X#2: lowest at k*,-k* doublets/equal: (np.True_, np.True_, np.True_, np.True_); E_N=-2.282843, next level +0.5657; v(k*) = 0.14667 spread 1.3e-10; v(-k*) = 0.14667; Berry +1.0000, -1.0000; lift0 labels [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]; D2 comm k*: -1+0j
+  X#3: lowest at k*,-k* doublets/equal: (np.True_, np.True_, np.True_, np.True_); E_N=-2.282843, next level +0.5657; v(k*) = 0.03551 spread 1.3e-10; v(-k*) = 0.03551; Berry -1.0000, +1.0000; lift0 labels [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]; D2 comm k*: -1+0j
+
+== generic elements and strengths: t2 in [-0.6,0.6], delta in [0.01, 1.0], t1 = -1 and +1
+  t1=-1 t2=-0.545 delta=0.598: lowest level at k* is 4-fold; doublets at levels [4, 6]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=+0.445 delta=0.271: lowest level at k* is 4-fold; doublets at levels [8, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=-0.233 delta=0.814: lowest level at k* is 4-fold; doublets at levels [4, 6]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=+0.099 delta=0.061: lowest level at k* is 4-fold; doublets at levels [8, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=-1 t2=-0.063 delta=0.080: lowest level at k* is 2-fold; doublets at levels [0, 2]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=-1 t2=-0.128 delta=0.765: lowest level at k* is 4-fold; doublets at levels [4, 6]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=-1 t2=-0.175 delta=0.293: lowest level at k* is 2-fold; doublets at levels [0, 2]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=-1 t2=+0.323 delta=0.056: lowest level at k* is 2-fold; doublets at levels [0, 2]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=-0.085 delta=0.053: lowest level at k* is 4-fold; doublets at levels [8, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=-0.405 delta=0.392: lowest level at k* is 4-fold; doublets at levels [4, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=+0.256 delta=0.529: lowest level at k* is 4-fold; doublets at levels [8, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  t1=+1 t2=+0.090 delta=0.027: lowest level at k* is 4-fold; doublets at levels [8, 10]; Berry +-1 opposite at both doublets: True; isotropic: True
+  summary: {'lowest_doublet': 17, 'lowest_quartet': 23, 'n': 40, 'flux_ok': np.int64(40), 'iso_ok': np.int64(40), 'doublets_at_E1/2_E5/2': 40}

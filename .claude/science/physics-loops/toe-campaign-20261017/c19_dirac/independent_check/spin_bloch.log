@@ -1,0 +1,15 @@
+node space dim at folded k*: 4
+  twisted site O, lift 0: (k*+Q doublet, k* doublet) = [{'E1/2': 1, 'E5/2': 0, 'G3/2': 0}, {'E1/2': 0, 'E5/2': 1, 'G3/2': 0}]
+  twisted site O, lift 1: (k*+Q doublet, k* doublet) = [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]
+  ratio of characters (k* doublet / k*+Q doublet) by w1: [(0, np.complex128(1+0j)), (1, np.complex128(-1-0j))]
+  odd translation T_x on the node space: diag phases [0.-1.j 0.-1.j 0.+1.j 0.+1.j] (relative sign -1 between the doublets = chirality operator up to a phase)
+  m=0.01: doublet at E-E_N = -0.020656 (dim 2): 2T lift exists True, |chi|^2 norm 1.0000, overlap with SU(2) spin-1/2 1.0000; site-T D2 commutator -1.000; cube-centre O invariant True, D2 commutator -1.000, 2O labels (both lifts) [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]
+  m=0.01: doublet at E-E_N = +0.020656 (dim 2): 2T lift exists True, |chi|^2 norm 1.0000, overlap with SU(2) spin-1/2 1.0000; site-T D2 commutator -1.000; cube-centre O invariant True, D2 commutator -1.000, 2O labels (both lifts) [{'E1/2': 0, 'E5/2': 1, 'G3/2': 0}, {'E1/2': 1, 'E5/2': 0, 'G3/2': 0}]
+
+== finite-strength O-invariant staggered term (A1, on-site real and imag, range 1): node levels stay 2-fold, no gap at the doublets
+  Q_onsite_re_A1 strength 0.1: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]
+  Q_onsite_re_A1 strength 0.3: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]
+  Q_onsite_re_A1 strength 1.0: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]
+  Q_r1_im_A1 strength 0.1: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]
+  Q_r1_im_A1 strength 0.3: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]
+  Q_r1_im_A1 strength 1.0: degeneracy pattern of the 24 folded levels at k*: [4, 4, 4, 4, 4, 4]

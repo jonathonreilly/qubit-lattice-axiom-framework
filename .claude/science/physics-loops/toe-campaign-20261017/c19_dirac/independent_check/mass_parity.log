@@ -1,0 +1,4 @@
+inversion eigenvalues on the 5-dim mass space: [ 1. -1. -1.  1.  1.]
+  inversion even subspace dim 3: max node coupling per element [1.41421 2.      1.     ]
+  inversion odd  subspace dim 2: max node coupling per element [2.      1.41421]
+  node block of each element relative to the first I-even one (ratio, proportional?): [(np.complex128(1+0j), True), (np.complex128(-1.41421+0j), True), (np.complex128(0.70711-0j), True), (np.complex128(1.41421j), True), (np.complex128(1j), True)]

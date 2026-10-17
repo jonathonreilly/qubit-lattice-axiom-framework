@@ -1,0 +1,30 @@
+runner H in my convention: levels at my k*: [-2.282843 -2.282843 -1.717157 -1.717157]
+runner H: doublets at k*: [(0, np.float64(-2.2828427124746193)), (2, np.float64(-1.7171572875253818))]
+  doublet at level 0 (E_d = -2.282843): max band 0 - E_d = -0.07965;  E_d - min band 1 = -0.23343
+  doublet at level 2 (E_d = -1.717157): max band 2 - E_d = -0.31519;  E_d - min band 3 = -0.03918
+  band 0 range [-2.3624, -2.1208], band 1 range [-2.2828, -2.0369] (grid)
+  fraction of BZ (grid) where band 0 > E_N: 0.611; max at k/pi = [0.5 0.5 0.5]
+  massive (runner m = 0.05, m_D = 0.0702): folded min(band 2) - max(band 1) = -0.0310  (vs 2 m_D = 0.1404)
+
+== search for a clean Weyl semimetal: params (t1=+-1, t2, delta, X in 9-dim)
+  best 8 random (badness = max over grid of overshoot, 0 means clean):
+   bad=+0.0156 t1=+1 t2=+0.029 delta=0.034 lev=10 E_d=2.0406 (a=+0.0156, b=+0.0144)
+   bad=+0.0247 t1=-1 t2=-0.047 delta=0.064 lev=0 E_d=-2.0668 (a=+0.0238, b=+0.0247)
+   bad=+0.0365 t1=-1 t2=+0.092 delta=0.080 lev=0 E_d=-2.1303 (a=+0.0365, b=-0.0000)
+   bad=+0.0503 t1=+1 t2=-0.131 delta=0.114 lev=10 E_d=2.1852 (a=+0.0503, b=+0.0000)
+   bad=+0.0509 t1=-1 t2=-0.073 delta=0.042 lev=0 E_d=-2.1030 (a=+0.0509, b=-0.0000)
+   bad=+0.0809 t1=+1 t2=+0.528 delta=0.326 lev=10 E_d=2.7467 (a=+0.0272, b=+0.0809)
+   bad=+0.0838 t1=-1 t2=-0.388 delta=0.163 lev=0 E_d=-2.5482 (a=+0.0838, b=-0.0000)
+   bad=+0.1020 t1=-1 t2=+0.525 delta=0.264 lev=0 E_d=-2.7431 (a=+0.1020, b=+0.0509)
+   optimized from bad=+0.0156: bad=+0.00056  t1=+1 t2=+0.0228 delta=0.0321
+   optimized from bad=+0.0247: bad=+0.00000  t1=-1 t2=-0.0405 delta=0.0744
+   optimized from bad=+0.0365: bad=+0.00000  t1=-1 t2=+0.0843 delta=0.0882
+   optimized from bad=+0.0503: bad=+0.00000  t1=+1 t2=-0.1358 delta=0.0997
+   optimized from bad=+0.0509: bad=+0.00000  t1=-1 t2=-0.0712 delta=0.0807
+   optimized from bad=+0.0809: bad=+0.00092  t1=+1 t2=+0.4274 delta=0.2359
+
+  best: refined badness: [(0, np.float64(-2.057307160696231), np.float64(-0.03434878067299918), np.float64(-0.015277154994177256)), (2, np.float64(-1.9426928393037688), np.float64(-0.09933716615740096), np.float64(-0.0028295290754085656))]
+
+real	22m12.583s
+user	25m2.127s
+sys	0m1.782s

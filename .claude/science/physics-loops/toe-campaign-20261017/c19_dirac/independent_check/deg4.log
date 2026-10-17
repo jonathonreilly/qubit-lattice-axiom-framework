@@ -1,0 +1,4 @@
+Q_onsite_re_A1: |S - I S| = 0.65, |S + I S| = 2.00; min level spacing at generic k 3.09e-03; at k*: levels [-2.8255 -2.8255 -2.8255 -2.8255 -1.1795 -1.1795 -1.1795 -1.1795]
+Q_onsite_im_A1: |S - I S| = 2.00, |S + I S| = 0.00; min level spacing at generic k 2.49e-04; at k*: levels [-3.2617 -3.2617 -3.2617 -3.2617 -0.7873 -0.7873 -0.7873 -0.7873]
+Q_r1_re_A1: |S - I S| = 1.75, |S + I S| = 2.00; min level spacing at generic k 2.05e-02; at k*: levels [-3.6869 -3.6869 -3.6869 -3.6869 -1.0941 -1.0941 -1.0941 -1.0941]
+Q_r1_im_A1: |S - I S| = 1.58, |S + I S| = 1.12; min level spacing at generic k 1.98e-02; at k*: levels [-2.9382 -2.9382 -2.9382 -2.9382 -1.3906 -1.3906 -1.3906 -1.3906]

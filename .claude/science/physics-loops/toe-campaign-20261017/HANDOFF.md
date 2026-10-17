@@ -11,7 +11,7 @@ adopted; every result is unaudited bounded support with a declared model.
 ## Final state (2026-10-17T15:46Z)
 
 - The campaign is closed and the hourly task is deleted.
-- C1–C15 are on main. C16 is in PR #9671.
+- C1–C15 are on main. C16 and C17 are in PR #9671.
 - **Next:** queue item 0++, a direction-carried charge with no site term.
 
 ## The arc in one paragraph (for the owner; interpretation, not a claim)
@@ -22,6 +22,16 @@ adopted; every result is unaudited bounded support with a declared model.
 - Supplied conditional dynamics distinguish the rotation realizations. Majorana-only and number-conserving hopping are modeling choices; no physical electric charge or electron spin-charge relation is derived.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
+
+## C17: a qubit code whose emergent fermion carries the spin-1/2 class under a genuine cube-rotation action
+
+- **Construction.** The fermion lives on the 12 corners (perpendicular direction pairs) of each site, off the C4 axes. It sees a π flux around every lattice line. The code uses 48 qubits per site, all on sites.
+- **The action.** Rotations act as a genuine linear representation of O on the whole Hilbert space: site permutation, on-site CZ network, Z fixes, and a repetition-stabilizer coboundary.
+- **The class.**
+  - The pair test gives w2 + w1^2.
+  - With the twist W on the odd elements (natural for number-conserving dynamics), all nine C2 give +1. That is w2, the spin-1/2 class.
+- **The local doublet.** A chiral on-site term makes an E1/2 doublet the cluster ground state.
+- **Open.** A mobile doublet as the lowest band state; dynamics selection.
 
 ## C16: why the cube-invariant realizations came out spinless; the six-direction shell
 

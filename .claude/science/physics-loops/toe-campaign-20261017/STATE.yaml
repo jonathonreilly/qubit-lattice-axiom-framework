@@ -90,6 +90,14 @@ blocks:
     exact: ["ker(H^2(O;Z2)->H^2(O;U(1))) = {0, w1^2}", "w2 forces local dim>=2 exactly for D2 (both), D4, T, O", "odd O-orbits only for stabilizers O, D4", "six-direction shell: linear A1+E+T1; spinorial E1/2+G3/2 or E5/2+G3/2", "on-site Clifford realizations preserve the single-site charge pattern (theorem applies); bare permutation does not (theorem silent; order-4 candidate)"]
     conditional: "symmetry localization (same ansatz as lambda = theta eta)"
     independent_check: "items 2-4 CONFIRMED exactly; item 1 CONFIRMED with explicit hypotheses (no local logicals, linear/extension action, invariant pattern); item 5 CORRECTED: bare permutation does not preserve the term set (plaquette violations near v), applies only to on-site Clifford realizations; 7 wording fixes applied"
+  C17-corner-fermion-qubit-code:
+    status: delivered_to_branch
+    note: docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runners: ["scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py (PASS=18, ~2 min, L=4)", "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py (PASS=7, ~20 s)"]
+    exact: ["48 qubits/site corner-graph BKSF with repetition halves: dim 3, fermion", "genuine linear O action on the full Hilbert space (site perm + on-site CZ + Z fixes + R-coboundary; free link orbits)", "pair test axis +1, edge -1 (w2+w1^2); twisted by W on w1-odd: all +1 (w2)", "fermion PSG, 2O lift, shell E1/2+E5/2+2G3/2, chiral cluster E1/2 ground doublet gap 2.54"]
+    conditional: "lambda = theta eta localization; w2 needs the twisted (number-conserving) realization"
+    open: ["mobile doublet ground state (band minimum leaves symmetric momenta in scanned family)", "dynamics selection", "framework derivation of corners/fluxes"]
+    independent_check: "in progress"
 scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
 campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
-next_action: "Queue 0++: build a code with a genuine O action whose fermion charge is carried by the six direction qubits (no site-centred charge term), clean pair test its class, and if w2 test which shell hopping sign makes the E1/2 doublet lowest"
+next_action: "C17 independent check; then a mobile E1/2 doublet (band minimum at a symmetric momentum) and the U(1)/spin-charge selection of the twisted realization"

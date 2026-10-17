@@ -4,7 +4,8 @@ Done in this campaign: C1–C4 (scoped results and finite search), C6 (BKSF orbi
 permutations), C8/C10 (conditional restricted D3/single-C2 class; D2 localization open), C11 (site-local half-edge realization) and C12
 (one O-covariant species with on-site Cliffords; clean-sector trivial pattern under U_R, not an unrestricted anyon invariant; sign-character W twist gives (+,-), not w2).
 
-0++. **Target after C16: a direction-carried charge.** C16 shows that a site-centred charge term (like B_v) under any
+0+++. **After C17 (done: corner fermion, genuine O, w2 with twist).** Next: a mobile E1/2 doublet at a symmetric band minimum; which dynamics selects the twisted realization (U(1)/spin-charge); can Admissibility produce the corner structure and pi flux?
+0++. ~~Target after C16: a direction-carried charge.~~ (Direction positions lie on C4 axes; Clifford realizations then give a trivial class on C4. Corners were used instead, C17.) C16 shows that a site-centred charge term (like B_v) under any
    realization that maps terms to terms pins the class to {0, w1^2} on O. Build a code with a genuine O action whose
    fermion-charge terms have no O- or D4-invariant support about a site, for example a charge carried by the six direction
    qubits. Test its class with the clean pair test. If the class is w2, the six-position shell gives a doublet plus a

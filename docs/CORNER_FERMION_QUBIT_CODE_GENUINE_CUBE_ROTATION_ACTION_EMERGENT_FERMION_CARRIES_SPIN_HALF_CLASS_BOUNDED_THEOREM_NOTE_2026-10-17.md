@@ -1,0 +1,149 @@
+---
+claim_id: corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17
+claim_type: bounded_theorem
+claim_scope: "Supplied model: BKSF on the corner graph of Z^3 (vertices = the 12 perpendicular direction pairs at each site; edges = the cuboctahedron edges at a site and the plaquette links between neighbouring sites), with each cross-site link qubit split into two Z-repetition halves, one at each end site: 48 qubits per site, all on sites. Stabilizers: corner charges B_q, repetition terms R, and signed loop operators i^n F prod A on squares (around the C4 axes), triangles (around the octants), plaquettes and edge tubes, with uniform flux F per type; default square = plaquette = pi, triangle = tube = 0. Exact (Pauli algebra with phases, L = 4 torus): commuting group with no -I and log2 code dimension 3; the corner charge has T-junction sign -1; each cube rotation about a site is realized by the site permutation, an on-site CZ network, single-qubit Z fixes and a product of repetition stabilizers, it maps every hop exactly to the rotated hop and every stabilizer to plus a stabilizer, and the 24 operators satisfy U_a U_b = U_ab exactly on all single-qubit Paulis (all 576 pairs) and fix |0...0>, so they form a genuine linear representation of O on the whole qubit Hilbert space. Pair test with clean creators (two corner charges, no repetition defects): lambda = +1 for the three axis C2 and -1 for the six edge C2; with the twist W = prod exp(-i pi B/4) prod exp(-i pi R/4) on the w1-odd elements, which is again an exact O action because prod B prod R = I, lambda = +1 for all nine C2. Conditional on the localization relation lambda = theta eta used in the companion notes, the fermion's class is w2 + w1^2 under U and w2 (the spin-1/2 class) under the twisted action. Fermion level (exact, L = 4): for all 16 uniform flux patterns the projective symmetry group exists; square flux pi gives axis C2^2 = -1, edge C2^2 = +1, C4^4 = -1; with the twist the 12-corner site representation lifts to a linear representation of 2O and decomposes as E1/2 + E5/2 + 2 G3/2; real on-site hopping never isolates a doublet, and an O-invariant chiral term on the triangles gives a single E1/2 cluster ground doublet with gap 2.54 (t1 = -1, chiral -0.5). Not claimed: a mobile doublet ground state (with inter-site hopping in the scanned family the band minimum leaves the symmetric momenta), which realization dynamics selects (the twist requires number-conserving dynamics), gap stability, a framework derivation of the corner structure, the fluxes or the qubit count, or any physical identification."
+upstream_dependencies:
+  - site_localizable_stabilizer_code_fermion_cannot_carry_the_spin_half_class_direction_shell_bounded_theorem_note_2026-10-17
+  - bksf_cubic_fermion_codes_site_local_realization_with_six_direction_qubits_per_site_bounded_theorem_note_2026-10-17
+  - bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
+runner: scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py
+---
+
+# A corner-fermion qubit code: a genuine cube-rotation action whose emergent fermion carries the spin-1/2 class
+
+**Date:** 2026-10-17
+**Type:** bounded_theorem
+**Status:** bounded support, unaudited. Exact for the supplied model at L = 4. The class identification is conditional on the localization relation used in the companion notes. Nothing is adopted.
+
+## Question
+
+The companion note on site-localizable fermions showed when a code cannot reach the spin-1/2 class. A code with a single-site fermion charge, under a rotation action that maps terms to terms, cannot carry w2.
+
+It left one route open: put the fermion charge where no rotation about a site fixes it. Can a qubit code on the framework's sites do this? It must also have a genuine (linear) action of the cube rotation group, and its emergent fermion must carry w2.
+
+## Why corners, not direction qubits (argument)
+
+- **Fixed positions get fourth-root phases.** In BKSF-type codes, a Clifford realization acts on the emergent vertex fermion by a permutation with phases in {±1, ±i}. So a vertex fixed by a C4 rotation picks up a phase u with u^4 = +1. The class is then trivial on that C4.
+- **Spin-1/2 needs eighth-root phases there.** The spin-1/2 class needs u^4 = −1, that is, an eighth root of unity.
+- **Which positions avoid the C4 axes.**
+  - Direction positions (half-edges) lie on C4 axes, and so do sites and edges.
+  - The 12 corners (v; d, d') of a site, the pairs of perpendicular directions, lie only on edge-C2 axes.
+  - So the corners are the smallest site-local orbit that avoids the C4 axes.
+- **Scope of this step.** It motivates the model. It is not part of the claim.
+
+## Result
+
+1. **The code (exact, L = 4).**
+   - **Graph.** BKSF on the corner graph. Each corner has six hops:
+     - four on-site, along the cuboctahedron edges at its site;
+     - two plaquette links to the neighbouring sites.
+   - **Qubits.** One qubit per hop.
+     - Each link qubit is split into two repetition halves, one at each end site.
+     - This gives 48 qubits per site, all of them on sites.
+   - **Stabilizers.**
+     - B_q, the corner charges;
+     - R = ZZ, the repetition terms;
+     - signed loop operators i^n F ∏A on squares, triangles, plaquettes and tubes. The default flux is square = plaquette = π, triangle = tube = 0.
+   - **Checks.**
+     - The stabilizer group commutes and contains no −I.
+     - log2 code dimension = 3.
+     - The hops anticommute exactly when they share one vertex.
+     - The corner charge has T-junction sign −1, so it is a fermion.
+2. **A genuine linear action of O (exact).**
+   - **The rotation operator U_R** has four factors:
+     - the site permutation, which permutes the 48 local qubits as labels;
+     - an on-site CZ network, on the pairs of hops whose order changes;
+     - single-qubit Z fixes, which give each hop its exact sign;
+     - a product of repetition stabilizers.
+   - **It preserves the code.** It maps every hop exactly to the rotated hop, and every stabilizer to plus a stabilizer.
+   - **Without the last factor, the group law fails.** Composites differ by products of R.
+     - That leftover is a 2-cocycle valued in the link permutation module.
+     - No rotation fixes a link: a link midpoint has a quarter-integer coordinate.
+     - So all 32 link orbits are free, and the cocycle is a coboundary. It is solved orbit by orbit.
+   - **The group law becomes exact.** After the correction, U_a U_b = U_ab on all 2 × 3072 single-qubit Paulis, for all 576 pairs.
+     - The operators fix |0…0⟩, so the identity holds with no phase.
+     - So the 24 operators form a linear representation of O on the whole qubit Hilbert space. Local states therefore carry ordinary representations.
+3. **Pair test (exact; class conditional on λ = θη).**
+   - **The creators.** Each is a clean hop string. It flips exactly the two end charges B_q, B_Rq and no repetition term.
+   - **Under U.** λ = +1 for the three axis C2 and λ = −1 for the six edge C2. With θ = −1 this is the class w2 + w1^2.
+   - **Under the twisted action.**
+     - Twist by W = ∏_q exp(−iπB_q/4) ∏_links exp(−iπR/4) on the w1-odd elements, which here are the edge C2 and the C4.
+     - ∏B ∏R = I, so W^2 is a phase. So V_g = U_g W^{w1(g)} is again an exact O action.
+     - W multiplies a two-charge state by −1. So the twisted action gives λ = +1 for all nine C2: the spin-1/2 class w2.
+4. **The fermion-level structure (exact, L = 4; second runner).**
+   - **The PSG.** For all 16 uniform flux patterns, the projective symmetry group of a spinless fermion on the corners exists, for O and for translations.
+     - Square flux π gives axis C2^2 = −1, edge C2^2 = +1 and C4^4 = −1. These are the same signs as in item 3.
+     - Translations commute exactly when the square and plaquette fluxes agree.
+   - **With the twist i^{w1}.** The action on the 12 corners of a site lifts to a linear representation of 2O. It decomposes as E1/2 + E5/2 + 2 G3/2, matching the face-diagonal shell of the companion note.
+   - **Real hopping.** Real on-site hopping is time-reversal symmetric, and gives E1/2 + E5/2 or a G3/2 quartet as the lowest level.
+   - **Chiral hopping.** An O-invariant chiral term iλ on the oriented triangles splits the pair. The cluster ground level is then a single E1/2 doublet, with gap 2.54 at t1 = −1, λ = −0.5. Reversing the sign of λ gives E5/2 instead.
+
+## How this bears on the lane (interpretation, not a claim)
+
+- **The sharpened target, as far as it was posed.** This is a qubit code with qubits on sites, an exact linear action of the cube rotations, and an emergent fermion. Under the twisted action, which needs a conserved fermion number, the fermion's half-turn signs are those of a spin-1/2 particle. No spin and no 2O action is put in anywhere.
+- **Where the spin comes from.** The fermion lives between the rotation axes, and sees a π flux around every lattice line. Going round an axis costs a sign, and that sign is the spin-1/2 double cover. This is related to how a charge around a flux line acquires half-integer angular momentum, as in Aharonov–Bohm and the Jackiw–Rebbi / Hasenfratz–'t Hooft "spin from isospin".
+- **"Larger than a site."** The localized doublet of item 4 is spread over the twelve corners of a site, as the companion note's design rule requires.
+- **Open.**
+  - A mobile doublet as the lowest band state.
+  - Which realization natural dynamics selects.
+  - Whether the corner structure and the fluxes can be derived from the framework's axioms.
+
+## Premises
+
+- **Axioms used.** Lattice (Z^3, unit translations, proper cubic rotations about sites).
+- **Supplied.**
+  - The corner graph, the BKSF encoding with repetition halves and the uniform fluxes.
+  - The localization relation λ = θη, as in the companion notes.
+  - For w2: the twisted realization.
+- **Declared enlargement.** 48 qubits per site. For comparison, the half-edge model has 6.
+
+## Relation to prior work
+
+- **Encodings.**
+  - BKSF: Bravyi and Kitaev, Ann. Phys. 298, 210 (2002).
+  - Generalized superfast encodings: Setia, Bravyi, Mezzacapo and Whitfield, PRR 1, 033033 (2019).
+- **Projective symmetry groups.** Wen, PRB 65, 165113 (2002).
+- **π flux and projective lattice symmetries** are standard, for example magnetic translations.
+- **Spatial symmetry fractionalization.**
+  - Essin and Hermele, PRB 87, 104406 (2013).
+  - Qi and Fu.
+  - Thorngren and Else, PRX 8, 011040 (2018).
+- **Spin from flux.**
+  - Jackiw and Rebbi, PRL 36, 1116 (1976).
+  - Hasenfratz and 't Hooft, PRL 36, 1119 (1976).
+- **New here.**
+  - The corner-graph construction.
+  - The exact genuine O action on a site-local qubit code: the CZ network, the Z fixes, and the free-orbit coboundary.
+  - The verification that its emergent fermion's pair signs are those of w2 + w1^2, and w2 with the twist.
+  - The 12-corner shell, and the chiral splitting to an isolated E1/2 cluster doublet.
+
+## No-Go Discipline Gate
+
+- **N1 — routes.** Other positions (cube centres, generic points) and other fluxes are not treated.
+- **N2/N3 — scope.** One supplied model, with exact checks on the L = 4 torus. An L = 6 rerun of the qubit runner is recorded in the loop pack.
+- **N4 — inputs.**
+  - The Pauli algebra is exact.
+  - The PSG and the shell use exact GF(2) solves and finite group characters.
+  - The class inference uses the stated localization relation.
+- **N5 — wording.** "Spin-1/2 class" means the involution signs of w2 under the stated realization. Nothing about physical spin or charge is claimed.
+- **N6/N7 — strongest objections.**
+  - The twist is a choice of realization, natural only for number-conserving dynamics. Without it the class is w2 + w1^2.
+  - The lowest mobile state is not shown to be the doublet.
+  - 48 qubits per site is a large enlargement.
+- **N8 — earlier claims.** Realizes the open route of the site-localizable note. It does not change the earlier results.
+
+## Verification
+
+```bash
+python3 scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py
+python3 scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py
+```
+
+Expected: `TOTAL: PASS=18 FAIL=0` (about two minutes) and `TOTAL: PASS=7 FAIL=0` (about 20 seconds).
+
+## Load-bearing sources
+
+- [Site-localizable obstruction note](SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md)
+- [Half-edge note](BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md)
+- [Bare-permutation note](BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md)
+- [Axioms](MINIMAL_AXIOMS_2026-06-29.md)

@@ -1,0 +1,5 @@
+seed 0: contents P(bond)=0.05044 (exact 0.05) | contentless bonds/rec=0.04817 (exact 0.04780)
+seed 1: contents P(bond)=0.04956 (exact 0.05) | contentless bonds/rec=0.04778 (exact 0.04780)
+seed 2: contents P(bond)=0.04945 (exact 0.05) | contentless bonds/rec=0.04720 (exact 0.04780)
+seed 3: contents P(bond)=0.05134 (exact 0.05) | contentless bonds/rec=0.04707 (exact 0.04780)
+watchdog peak RSS 121760 KB

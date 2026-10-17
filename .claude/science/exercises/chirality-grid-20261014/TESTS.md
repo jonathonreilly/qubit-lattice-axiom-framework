@@ -760,3 +760,12 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
   - **LOCK-MIXED:** both occur, with the boundary stated.
   - **OPEN:** otherwise.
 - **Scope to state:** which rules, which parameters, finite size, and the method (exact enumeration, Monte Carlo, or mean-field).
+
+**LOCK-1 result (22:01Z 10-17; same family; unrefereed): LOCK-MIXED.**
+- **Which family matters.** The record gas (static law with vacancies: blocks 39, 40, 81, 117) is the only landed family that orders matter at ρ = 1/8–1/2 on Z³.
+- **Where it locks.** It forms a period-2 chessboard only for g < g_N(ρ). Monte Carlo gives g_N ≈ 0.41 (ρ = 1/2, matching the Ising comparator 0.412), 0.36 (3/8), 0.17 (1/4), and → 0 at ρ ≈ 0.21. There is no chessboard at ρ = 1/8.
+- **Elsewhere.** It is liquid for g ≤ 2 and clumped (period 1) at g ≥ 4. No odd period appears.
+- **Main's preferred values are on the safe side:** the neutral scale g = 1 and the RP range g ≥ 1.
+- **Not determined.** The quantum walker family is OPEN in 3D. Signed hopping plus repulsion leans toward Néel at half filling on finite cubes only.
+- **Correction to GEN-2 c6 (worker's point; checked).** The chessboard keeps FCC translations, so only (π,π,π) folds onto Γ. Not all eight corners fold.
+- **Supervisor reading (to check).** In X2′, Γ carries index +3 per component and (π,π,π) carries −3 (walker chirality (−1)^hw). So the chessboard pairs them, the folded index is 0, and Γ–hw3 Dirac masses become allowed. X2′'s light protection would then fail inside the chessboard region (g < g_N) and survive at main's g ≥ 1.

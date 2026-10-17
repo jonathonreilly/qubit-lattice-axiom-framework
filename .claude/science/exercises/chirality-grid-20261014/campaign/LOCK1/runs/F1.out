@@ -1,0 +1,5 @@
+F1_L24_r0.5_g0.02_cl_board U=0.667 SQ/V=0.2500 Smax/V=0.2500@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.000 t=10.9s
+F1_L24_r0.5_g0.02_cl_rand U=0.666 SQ/V=0.0130 Smax/V=0.0379@[13, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.000 t=12.8s
+F1_L24_r0.5_g0.1_cl_board U=0.667 SQ/V=0.2489 Smax/V=0.2489@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.002 t=9.8s
+F1_L24_r0.5_g0.1_cl_rand U=0.667 SQ/V=0.2490 Smax/V=0.2490@[12, 12, 12] Smin/V=0.0000 cu=0.000 cs=0.000 acc=0.002 t=9.1s
+watchdog peak RSS 138960 KB

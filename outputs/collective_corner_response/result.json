@@ -1,0 +1,388 @@
+{
+  "checks": {
+    "Euclidean monotone 12 0.0 0.01": true,
+    "Euclidean monotone 12 0.0 0.03": true,
+    "Euclidean monotone 12 0.0 0.1": true,
+    "Euclidean monotone 12 0.5 0.01": true,
+    "Euclidean monotone 12 0.5 0.03": true,
+    "Euclidean monotone 12 0.5 0.1": true,
+    "Euclidean monotone 4 0.0 0.01": true,
+    "Euclidean monotone 4 0.0 0.03": true,
+    "Euclidean monotone 4 0.0 0.1": true,
+    "Euclidean monotone 4 0.5 0.01": true,
+    "Euclidean monotone 4 0.5 0.03": true,
+    "Euclidean monotone 4 0.5 0.1": true,
+    "Euclidean monotone 8 0.0 0.01": true,
+    "Euclidean monotone 8 0.0 0.03": true,
+    "Euclidean monotone 8 0.0 0.1": true,
+    "Euclidean monotone 8 0.5 0.01": true,
+    "Euclidean monotone 8 0.5 0.03": true,
+    "Euclidean monotone 8 0.5 0.1": true,
+    "full grand potential derivative": true,
+    "hopping Hermitian pairs": true,
+    "mass matrix Hermitian": true,
+    "node Curie contribution bounded by total": true,
+    "paired source vertex": true,
+    "positive response 12 0.0 0.01": true,
+    "positive response 12 0.0 0.03": true,
+    "positive response 12 0.0 0.1": true,
+    "positive response 12 0.5 0.01": true,
+    "positive response 12 0.5 0.03": true,
+    "positive response 12 0.5 0.1": true,
+    "positive response 4 0.0 0.01": true,
+    "positive response 4 0.0 0.03": true,
+    "positive response 4 0.0 0.1": true,
+    "positive response 4 0.5 0.01": true,
+    "positive response 4 0.5 0.03": true,
+    "positive response 4 0.5 0.1": true,
+    "positive response 8 0.0 0.01": true,
+    "positive response 8 0.0 0.03": true,
+    "positive response 8 0.0 0.1": true,
+    "positive response 8 0.5 0.01": true,
+    "positive response 8 0.5 0.03": true,
+    "positive response 8 0.5 0.1": true,
+    "real space versus Bloch normalization": true,
+    "source normalization": true,
+    "staggered source has zero linear expectation": true
+  },
+  "conditional_static_mean_field_threshold_L12_shift_half_T003": 0.15741488548471327,
+  "empirical_data_used": false,
+  "finite_difference": {
+    "0.0001": 7.157298951426805,
+    "0.0003": 7.157300190713257,
+    "0.001": 7.1573143739164795
+  },
+  "node_curie_at_L4_T003": 1.0267612275908902,
+  "realspace_isothermal": 7.157298788740856,
+  "response_rows": [
+    {
+      "N": 4,
+      "T": 0.1,
+      "collisionless_static": 6.682174641517433,
+      "degenerate": 0.9188396187365272,
+      "density": 0.6987912823460173,
+      "imaginary_frequency": {
+        "0.001": 6.682057280090506,
+        "0.01": 6.670465141596724,
+        "0.05": 6.404542368386433,
+        "0.1": 5.721106522229966,
+        "0.5": 1.5404094784641937
+      },
+      "isothermal": 7.60101426025396,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 4,
+      "T": 0.03,
+      "collisionless_static": 6.076105294050533,
+      "degenerate": 1.0811934946903072,
+      "density": 0.4453728399174681,
+      "imaginary_frequency": {
+        "0.001": 6.075979851061353,
+        "0.01": 6.063593940894835,
+        "0.05": 5.78186952190782,
+        "0.1": 5.078221306400758,
+        "0.5": 1.263534228715658
+      },
+      "isothermal": 7.157298788740841,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 4,
+      "T": 0.01,
+      "collisionless_static": 6.92822948663659,
+      "degenerate": 3.080287027675303,
+      "density": 0.48725182147787854,
+      "imaginary_frequency": {
+        "0.001": 6.9280799189742925,
+        "0.01": 6.913312786160364,
+        "0.05": 6.577870343376385,
+        "0.1": 5.744442502520601,
+        "0.5": 1.384426642375772
+      },
+      "isothermal": 10.008516514311893,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 4,
+      "T": 0.1,
+      "collisionless_static": 7.436885983405883,
+      "degenerate": 0.00015040510188257342,
+      "density": 0.6896191328096309,
+      "imaginary_frequency": {
+        "0.001": 7.436765681150193,
+        "0.01": 7.424882796732628,
+        "0.05": 7.151851061131353,
+        "0.1": 6.439842882619351,
+        "0.5": 1.683091245626483
+      },
+      "isothermal": 7.4370363885077655,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 4,
+      "T": 0.03,
+      "collisionless_static": 5.868016235366194,
+      "degenerate": 0.00017055515072175473,
+      "density": 0.41830286657313853,
+      "imaginary_frequency": {
+        "0.001": 5.86792954830447,
+        "0.01": 5.859361870172226,
+        "0.05": 5.659908795299176,
+        "0.1": 5.121841805427901,
+        "0.5": 1.3277216229935775
+      },
+      "isothermal": 5.868186790516916,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 4,
+      "T": 0.01,
+      "collisionless_static": 3.905414211430172,
+      "degenerate": 8.481397678443403e-05,
+      "density": 0.273657586056072,
+      "imaginary_frequency": {
+        "0.001": 3.905357314835456,
+        "0.01": 3.899733022168918,
+        "0.05": 3.7683209000389253,
+        "0.1": 3.410474742707562,
+        "0.5": 0.8688979069783855
+      },
+      "isothermal": 3.9054990254069564,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 8,
+      "T": 0.1,
+      "collisionless_static": 7.402016445520863,
+      "degenerate": 0.11500964349052584,
+      "density": 0.6938445805244776,
+      "imaginary_frequency": {
+        "0.001": 7.401854676536955,
+        "0.01": 7.3860173262260975,
+        "0.05": 7.051280486004561,
+        "0.1": 6.251571424239657,
+        "0.5": 1.611945848970403
+      },
+      "isothermal": 7.517026089011388,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 8,
+      "T": 0.03,
+      "collisionless_static": 6.225467677576668,
+      "degenerate": 0.1352865424247803,
+      "density": 0.4299196733568117,
+      "imaginary_frequency": {
+        "0.001": 6.225337983053231,
+        "0.01": 6.21257338748065,
+        "0.05": 5.93188080865079,
+        "0.1": 5.2435352621565325,
+        "0.5": 1.310006632205013
+      },
+      "isothermal": 6.360754220001448,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 8,
+      "T": 0.01,
+      "collisionless_static": 6.152059666833681,
+      "degenerate": 0.3850845591914159,
+      "density": 0.42331669617812334,
+      "imaginary_frequency": {
+        "0.001": 6.151941586732429,
+        "0.01": 6.14028207298472,
+        "0.05": 5.874520313719582,
+        "0.1": 5.202923604625338,
+        "0.5": 1.3052193545772475
+      },
+      "isothermal": 6.537144226025097,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 8,
+      "T": 0.1,
+      "collisionless_static": 7.5169479548490035,
+      "degenerate": 0.0001048818006402799,
+      "density": 0.6938312806971428,
+      "imaginary_frequency": {
+        "0.001": 7.516727322953707,
+        "0.01": 7.500819156206624,
+        "0.05": 7.155637492620965,
+        "0.1": 6.322272555886064,
+        "0.5": 1.6127160530455638
+      },
+      "isothermal": 7.517052836649643,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 8,
+      "T": 0.03,
+      "collisionless_static": 6.347822991495313,
+      "degenerate": 8.780186875293199e-05,
+      "density": 0.42868539995173693,
+      "imaginary_frequency": {
+        "0.001": 6.347618529948958,
+        "0.01": 6.334024940799246,
+        "0.05": 6.0361501093810315,
+        "0.1": 5.310788664332987,
+        "0.5": 1.3066621329563644
+      },
+      "isothermal": 6.347910793364067,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 8,
+      "T": 0.01,
+      "collisionless_static": 5.849814771212941,
+      "degenerate": 8.18002813807421e-05,
+      "density": 0.3857512068117001,
+      "imaginary_frequency": {
+        "0.001": 5.849552239607005,
+        "0.01": 5.837385213056126,
+        "0.05": 5.562288642143979,
+        "0.1": 4.882632935360278,
+        "0.5": 1.1845855501927638
+      },
+      "isothermal": 5.849896571494321,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 12,
+      "T": 0.1,
+      "collisionless_static": 7.482919827393618,
+      "degenerate": 0.034119765381540546,
+      "density": 0.6938379262049983,
+      "imaginary_frequency": {
+        "0.001": 7.482700810846312,
+        "0.01": 7.466307248621618,
+        "0.05": 7.116033685144922,
+        "0.1": 6.289261456476199,
+        "0.5": 1.6123295673393039
+      },
+      "isothermal": 7.517039592775159,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 12,
+      "T": 0.03,
+      "collisionless_static": 6.309351114368037,
+      "degenerate": 0.04012180484458961,
+      "density": 0.42894489251812895,
+      "imaginary_frequency": {
+        "0.001": 6.309162628535576,
+        "0.01": 6.295578520499017,
+        "0.05": 5.996376121375528,
+        "0.1": 5.277593645361922,
+        "0.5": 1.3072793357474288
+      },
+      "isothermal": 6.3494729192126265,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 12,
+      "T": 0.01,
+      "collisionless_static": 5.9497413240433925,
+      "degenerate": 0.11415029934692852,
+      "density": 0.398020288369698,
+      "imaginary_frequency": {
+        "0.001": 5.949571366103663,
+        "0.01": 5.937037292990118,
+        "0.05": 5.656373569827927,
+        "0.1": 4.974776050955892,
+        "0.5": 1.2260846432293449
+      },
+      "isothermal": 6.063891623390321,
+      "mu": -2.28284271247462,
+      "node_states": 4,
+      "shift": 0.0
+    },
+    {
+      "N": 12,
+      "T": 0.1,
+      "collisionless_static": 7.5169917880658526,
+      "degenerate": 4.79121616979063e-05,
+      "density": 0.6938379754629511,
+      "imaginary_frequency": {
+        "0.001": 7.516727080001207,
+        "0.01": 7.499874802363427,
+        "0.05": 7.139033300846604,
+        "0.1": 6.297570096025385,
+        "0.5": 1.6123327492794037
+      },
+      "isothermal": 7.51703970022755,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 12,
+      "T": 0.03,
+      "collisionless_static": 6.352599074911328,
+      "degenerate": 4.030173206408926e-05,
+      "density": 0.4291735108051166,
+      "imaginary_frequency": {
+        "0.001": 6.3523660839093115,
+        "0.01": 6.337983460879796,
+        "0.05": 6.024592119689142,
+        "0.1": 5.289429610901511,
+        "0.5": 1.3080716297106192
+      },
+      "isothermal": 6.352639376643393,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    },
+    {
+      "N": 12,
+      "T": 0.01,
+      "collisionless_static": 6.280154171245484,
+      "degenerate": 2.817769999498475e-05,
+      "density": 0.4144638649150761,
+      "imaginary_frequency": {
+        "0.001": 6.279925137390221,
+        "0.01": 6.2655663946237174,
+        "0.05": 5.949928281592964,
+        "0.1": 5.210757631075938,
+        "0.5": 1.2761604884361153
+      },
+      "isothermal": 6.280182348945479,
+      "mu": -2.28284271247462,
+      "node_states": 0,
+      "shift": 0.5
+    }
+  ],
+  "scope": "Supplied free model and grand canonical development states. Finite response, not a self-generated collective scalar.",
+  "source_vertex_singular_values": [
+    1.4040589577986065,
+    1.4040589577986051
+  ]
+}

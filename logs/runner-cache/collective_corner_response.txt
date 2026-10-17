@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/collective_corner_response.py
+runner_sha256: 50d5e6149515d710509e1fc71a10c50ff50cea187211bd64a8254b972ecef83f
+input_fingerprint_sha256: 7a6d610c7361b4336886fa9cac330ace1a7334385aafdf7d49460734675900a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+{"checks": 44, "passed": 44, "L4_T003_chi": 7.157298788740841, "vertex": [1.4040589577986065, 1.4040589577986051], "status": "conditional-support", "physical_scalar_derived": false}
+
+----- stderr -----
+

@@ -167,6 +167,17 @@ for P_R.
   "electron spin" sign without any spin degree of freedom being put in.
   For every code in the family, the sign pattern is exactly the one a
   spin-1/2 particle shows under the code's rotation symmetry.
+- **The four-species stack, with spin.** The orbit note's covariant stack
+  of four D3 codes carries one species per body diagonal.
+  - Under the bare action each species has the spinorial D3 character:
+    the C2 lift goes to +-i and the C3 lift to -1.
+  - Suppose couplings made the four species degenerate partners of one
+    multiplet. By Frobenius reciprocity, the binary octahedral group 2O
+    would act on the multiplet by the induced representation, which is the
+    four-dimensional spinor irrep G_{3/2}. The species form a spin-3/2-like
+    quartet, not 1 + 3.
+  - This is representation theory under a hypothetical coupling. It is
+    not computed.
 - **Two caveats.**
   - The twisted realizations of item 6 change the answer. Which one is
     physical depends on the dynamics.

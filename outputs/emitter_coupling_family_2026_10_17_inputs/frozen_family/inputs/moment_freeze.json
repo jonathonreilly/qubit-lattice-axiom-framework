@@ -1,0 +1,71 @@
+{
+  "frozen_utc": "2026-10-17T02:27:00.113612+00:00",
+  "role": "New author candidate for separate independent/root check; no publication or audit",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "bytes": 31244,
+    "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 10626,
+    "sha256": "5dc0c6b6018006e499a0cdcbebf5bba5772713ca5eaf449f5294cbda679e6ee8"
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "bytes": 11251,
+    "sha256": "529babd4397fd55a0d5f0e90bb113c79cd8f91ea471a0ec560b564519c27aadf"
+  },
+  "resource_plan": {
+    "path": "RESOURCE_PLAN.json",
+    "bytes": 1610,
+    "sha256": "0eebacc03b5eb7fc577ec911497bc1ccbf84c0f45ef7e08702b5388be1663b06"
+  },
+  "executed_source": {
+    "path": "run01_script.py",
+    "bytes": 7430,
+    "sha256": "04096a96f6db5c36562d1dded05f7c8c089efd6620e5aff76d42207ca371bb53"
+  },
+  "prelaunch_record": {
+    "path": "run01_PRELAUNCH.json",
+    "bytes": 12970,
+    "sha256": "23a663edd6be1025e7f5045fb82c3d42ea043d7386f5cc942df164deb24ea292"
+  },
+  "execution": {
+    "path": "run01_execution.json",
+    "bytes": 14141,
+    "sha256": "3e4f1fc767f1868373384800a3ca35d2e4cdfd3c2da94d1fee96de40270468b5"
+  },
+  "complete_stdout": {
+    "path": "run01.stdout",
+    "bytes": 4459,
+    "sha256": "2112b35944ae4a2d980b8d3769675e8cc9a3278cbdaa59d093ef9c48d6035f7c"
+  },
+  "complete_stderr": {
+    "path": "run01.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "final_binding_check": {
+    "path": "FINAL_BINDING_CHECK.json",
+    "bytes": 12103,
+    "sha256": "a31ed92a04832857b6de2608f23cf71f71f4fe0ed05e11bb09ff81d1d3f124a0"
+  },
+  "scientific_runs": 1,
+  "failed_scientific_runs": 0,
+  "maximum_scientific_matrix_dimension": 0,
+  "actual_run_wall_seconds": 0.6742795421741903,
+  "independent_review": "pending",
+  "root_qualification": "pending",
+  "claim": "Conditional sufficient T=10^30 and finite M=5*10^31 through2*10^30, exact original and qualified joint box with their actual comparators.",
+  "source_revision": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "scope_limits": [
+    "fixed supplied model and seed",
+    "no new physical axiom/primitive",
+    "no numerical dynamics/quadrature/grid",
+    "no claim of optimal escape time",
+    "no fixed finite all-future operation",
+    "prior source exposure; no independence or model-diversity claim"
+  ],
+  "editable_prompt_files_changed": []
+}

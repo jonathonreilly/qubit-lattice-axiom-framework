@@ -1,0 +1,128 @@
+{
+  "status": "Frozen unreviewed author candidate; independent analytical review and root qualification are next",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+    "bytes": 39464
+  },
+  "resource_plan": {
+    "path": "RESOURCE_PLAN.json",
+    "sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612",
+    "bytes": 3166
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02",
+    "bytes": 11292
+  },
+  "executed_script": {
+    "path": "attempt_01/check_family.py",
+    "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+    "bytes": 14431
+  },
+  "prelaunch": {
+    "path": "attempt_01/PRELAUNCH.json",
+    "sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+    "bytes": 17025
+  },
+  "receipt": {
+    "path": "attempt_01/RECEIPT.json",
+    "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+    "bytes": 8942
+  },
+  "stdout": {
+    "path": "attempt_01/stdout.json",
+    "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+    "bytes": 41223
+  },
+  "stderr": {
+    "path": "attempt_01/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "scientific_attempts": 1,
+  "scientific_failures": 0,
+  "exact_assertions_recorded": 103,
+  "caps": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "os_memory_limit": null
+  },
+  "wall_seconds": 0.7150317076593637,
+  "user_cpu_seconds": 0.285256,
+  "system_cpu_seconds": 0.050011,
+  "matrix_dimension": 0,
+  "source_snapshots": 23,
+  "prelaunch_bindings": 31,
+  "proposed_scope": {
+    "kappa_min": "1/1000000000000",
+    "kappa_max": "1/100000000",
+    "sigma": "1/1000000",
+    "L": 12,
+    "exact_ladder_parameters": {
+      "J": "3752638388379/125000000000000",
+      "cos_k": "4835816955256357129429116105401/5335816955256357129429116105401",
+      "sin_k": "2255175592998549000000000000000/5335816955256357129429116105401",
+      "tan_half_complement": "2255175592998549/500000000000000",
+      "epsilon": "30021107107032000000000000000/5335816955256357129429116105401",
+      "gA": "99687856381667/100000000000000",
+      "gB": "299659657780149/500000000000000",
+      "t": "199967484894403/50000000000000",
+      "lambdaA": "1900890690790601/500000000000000",
+      "lambdaB": "2575033765788497/1000000000000000",
+      "u": "544607276405587/1000000000000000",
+      "DeltaA": "2192035527016003/1000000000000000",
+      "DeltaB": "1093413254448507/500000000000000",
+      "mu0": "321494607058201/1000000000000000",
+      "mu1": "-1459892813020969/1000000000000000",
+      "scalar_reserve": "1459892813020969/1000000000000000"
+    }
+  },
+  "proposed_budgets": {
+    "T_formula": "10^6/kappa^2",
+    "T_at_max_kappa": "10000000000000000000000",
+    "T_at_min_kappa": "1000000000000000000000000000000",
+    "M_formula": "ceil(50*T)",
+    "M_at_max_kappa": "500000000000000000000000",
+    "M_at_min_kappa": "50000000000000000000000000000000",
+    "q_in": {
+      "rational": "4377638388379/1562500000000000000",
+      "display_only": 2.80168856856256e-06
+    },
+    "q_out": {
+      "rational": "22502638388379/1562500000000000000",
+      "display_only": 1.440168856856256e-05
+    },
+    "localized": {
+      "rational": "1/20000",
+      "display_only": 5e-05
+    },
+    "moment_remainder": {
+      "rational": "52502638388379/781250000000000000",
+      "display_only": 6.720337713712512e-05
+    },
+    "complete_infinite": {
+      "rational": "2954065138388379/781250000000000000",
+      "display_only": 0.0037812033771371253
+    },
+    "complete_finite": {
+      "rational": "3735315138388379/781250000000000000",
+      "display_only": 0.004781203377137125
+    },
+    "weighted_fallback_T_formula": "10^12/kappa^2",
+    "weighted_fallback_remainder": {
+      "rational": "52000027/540000000000",
+      "display_only": 9.62963462962963e-05
+    }
+  },
+  "new_load_bearing_step": "Arctan identity and analytic reference-mass lower bound; full kappa-family majorants and actual profile premises re-established.",
+  "failed_route": "Naive old variance substitution produces mass ceiling 32/25 at kappa=1e-8 and cannot normalize the new envelope; preserved.",
+  "independence": "Author computation with substantial prior source exposure and same model; no independent acceptance inferred.",
+  "canonical_execution": false,
+  "publication_or_audit": false,
+  "editable_prompt_changes": [],
+  "writes": "This packet only; no worktree, Git, shared checkpoint, source, axiom or audit changes."
+}

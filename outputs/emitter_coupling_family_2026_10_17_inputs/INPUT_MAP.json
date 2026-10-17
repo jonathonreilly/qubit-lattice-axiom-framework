@@ -1,0 +1,28 @@
+{
+  "roles": {
+    "family_author": {
+      "aliases": {
+        "__original_program__": {
+          "bytes": 14431,
+          "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+          "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+        },
+        "inputs/interval.json": {
+          "bytes": 24275,
+          "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+          "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+        }
+      },
+      "historical_limits": {
+        "cpu_soft_hard_seconds": [
+          20,
+          20
+        ],
+        "external_wall_cap_seconds": 30,
+        "source_attempt": "attempt_01",
+        "status": "historical author calculation only"
+      }
+    }
+  },
+  "schema": "finite_local_input_map_v1"
+}

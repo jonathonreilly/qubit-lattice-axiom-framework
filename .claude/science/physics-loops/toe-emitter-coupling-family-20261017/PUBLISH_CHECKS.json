@@ -1,0 +1,271 @@
+{
+  "checked_utc": "2026-10-17T03:36:54.985880+00:00",
+  "status": "Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.",
+  "head": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "branch": "physics-loop/toe-emitter-coupling-family-20261017",
+  "artifact_members": 53,
+  "declared_inputs": 54,
+  "unchanged_source_body": {
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "canonical_execution": {
+    "started_utc": "2026-10-17T03:33:56.554017+00:00",
+    "finished_utc": "2026-10-17T03:33:57.278696+00:00",
+    "runner": "scripts/emitter_coupling_family_2026_10_17.py",
+    "prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/PRELAUNCH.json",
+      "bytes": 19032,
+      "sha256": "36f834863d18d0c71b297240afa872e76443419d79fc176a39c6b1f92d433af7"
+    },
+    "all_source_input_bytes_unchanged": true,
+    "runner_cache_also_checked_filesystem_generation_tokens": true,
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_seconds": 0.6763970851898193,
+    "child_user_cpu_seconds": 0.298449,
+    "child_system_cpu_seconds": 0.05990399999999999,
+    "caps": {
+      "CPU_soft_hard_seconds": [
+        20,
+        20
+      ],
+      "external_wall_seconds": 30
+    },
+    "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+    "stdout_merged": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/stdout_merged.txt",
+      "bytes": 712,
+      "sha256": "1ceee6aac88d16e09e90c51089b1bf06af45f776cfd7244630e384304adaae63"
+    },
+    "stderr_protocol": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/stderr_protocol.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cache_status": "fresh",
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/cache.txt",
+      "bytes": 1063,
+      "sha256": "581afa1c4e5774dc5de5b105d2425a5c166d4b15d6a09d0b16d400d89cd01ada"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/canonical_01/result.json",
+      "bytes": 54703,
+      "sha256": "d347959ffd75d3f3a08d3d3be802b8ff4c721bd6748dd4d0def97e5fc48699de"
+    },
+    "scope": "Actual replay of one qualified scalar calculation. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+  },
+  "scientific_report_equality": true,
+  "mutation_cases": 6,
+  "fault_sensitivity_only": true,
+  "archives": [
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/CANONICAL_MAP.json",
+      "bytes": 5943,
+      "sha256": "b7f411b15f670befb7e5732cac5c99ed321402cdec1381765c2842377cbbfebd",
+      "mapped_members": 12
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/FAMILY_REVIEW_MAP.json",
+      "bytes": 40770,
+      "sha256": "1a6e087ea3b5078d61a5591d9a194c4a42531c049024cca95eee08071fbb3191",
+      "mapped_members": 87
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/GRAPH_AND_FOCUSED_SOURCE_MAP.json",
+      "bytes": 3785,
+      "sha256": "dc31dbab41cb669c072160cc0cab23e8bda627c7fc3825dcb51ef94808bb0ac1",
+      "mapped_members": 8
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/MUTATIONS_MAP.json",
+      "bytes": 13985,
+      "sha256": "316d095e95d62317604465ca1392efd57ee3c49d4b4bd47661cbc8acad897fe9",
+      "mapped_members": 32
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/PREPARATION_MAP.json",
+      "bytes": 58782,
+      "sha256": "4f58c1a3d8b4829692831e0b8331c64fff7fe66a8538bfa7c7970468d31c67c9",
+      "mapped_members": 114
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/QUALIFICATION_MAP.json",
+      "bytes": 1191,
+      "sha256": "f0813238f96b0157958ffd90714d8a74cc43280a960762728526e35b38ebfc9f",
+      "mapped_members": 2
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/ROOT_PREPARATION_MAP.json",
+      "bytes": 6843,
+      "sha256": "23bc4f41acdaf7c70a68a8e1deaada4e163c4ffbc3f3d43ba50dbe41c317aa2e",
+      "mapped_members": 15
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/TRANSPORT_REVIEW_MAP.json",
+      "bytes": 59190,
+      "sha256": "1c71b179d5569392e90b683814aeb89070fa1345f1233ccda257d4aae857c6f6",
+      "mapped_members": 122
+    }
+  ],
+  "cache_status": "fresh",
+  "readiness_issue": null,
+  "helper_runner_paths": [],
+  "graph": {
+    "old_counts": {
+      "node_count": 7209,
+      "edge_count": 16164
+    },
+    "new_counts": {
+      "node_count": 7210,
+      "edge_count": 16165
+    },
+    "added": [
+      "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "emitter_coupling_family_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem`. **Current status:** conditional support",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "product_seed_emitter_bounded_theorem_note_2026-10-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/emitter_coupling_family_2026_10_17.py",
+      "title": "A coupling family for a supplied autonomous emitter"
+    },
+    "new_edges": [
+      {
+        "from": "emitter_coupling_family_bounded_theorem_note_2026-10-17",
+        "to": "product_seed_emitter_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "manifest_sha256": "a5267582d488dea35c6eb8d11842289cd61cea68984a223c826d8b1be509121f",
+    "executions": [
+      {
+        "script": "docs/audit/scripts/run_citation_graph_build.py",
+        "started_utc": "2026-10-17T03:34:16.935413+00:00",
+        "elapsed_seconds": 126.46219104202464,
+        "wall_cap_seconds": 180,
+        "exit_code": 0,
+        "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+        "started_utc": "2026-10-17T03:36:23.403884+00:00",
+        "elapsed_seconds": 0.16832833318039775,
+        "wall_cap_seconds": 60,
+        "exit_code": 0,
+        "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      }
+    ],
+    "scope": "New coupling-family emitter note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+  },
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/emitter_coupling_family_2026_10_17.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+    "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py"
+  ],
+  "vocabulary_violating_files": 0,
+  "local_links": [
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/emitter_coupling_family_2026_10_17.py"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/family_review/REPORT.md.txt"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/emitter_coupling_family_2026_10_17.py"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json"
+    },
+    {
+      "source": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/CANONICAL_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/MUTATIONS_MAP.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/REPORT_COMPARISON.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    }
+  ],
+  "publication_paths": 204,
+  "editable_prompt_files_changed": [],
+  "remaining_obligations": [
+    "Exact staged publication-path and remote PR verification",
+    "Ancestor PRs and shared integrated-current-main landing checks",
+    "Independent retained audit",
+    "Native physical supply and reset/reuse"
+  ]
+}

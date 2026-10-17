@@ -1,0 +1,29 @@
+# Read-only preparation corrections
+
+One early matching-premise `rg` invocation supplied
+`emitter_calibration_candidate/CANDIDATE.md`, which does not exist. Its exit
+code was 2 and its complete error stream was:
+
+```text
+rg: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_calibration_candidate/CANDIDATE.md: No such file or directory (os error 2)
+```
+
+The independent second argument, the ballistic candidate, returned matches.
+This was a filename lookup failure, not a scientific execution or evidence of
+a failed theorem. A narrow file inventory found `CALIBRATION.md`; its first
+100 lines and the succeeding search result establish its fixed-kappa scope.
+The corrected searches and complete streams are in
+`MATCHING_PREMISE_SEARCH.json`. No calibration conclusion is reused.
+
+Some combined reading displays were truncated. The complete installed source
+and weighted source were then read in separate calls. The clipped finite-clock
+paragraph in the installed review was read separately in full. The new moment
+argument and report were each read completely in a separate call. The final
+candidate was read from disk in three consecutive disjoint ranges. Source
+coverage is stated in the manifest and candidate; no missing display was used
+to claim completed verification.
+
+No scientific execution failed. The failed mathematical shortcut—the original
+variance mass estimate at increased kappa—is retained analytically and in the
+successful exact checker as the value 32/25. That value is not a probability
+claim or a no-go result.

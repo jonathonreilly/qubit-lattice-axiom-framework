@@ -1,0 +1,183 @@
+{
+  "reviewed_utc": "2026-10-17T03:34:02.774721+00:00",
+  "plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/PLAN.json",
+    "bytes": 5241,
+    "sha256": "bd127a73a2bb30b9bfdf3c85da9e70fab548e00a4e8d1dc9376cf33a1f877a96"
+  },
+  "cases": [
+    {
+      "label": "mass",
+      "started_utc": "2026-10-17T03:34:01.401829+00:00",
+      "finished_utc": "2026-10-17T03:34:01.658545+00:00",
+      "elapsed_seconds": 0.25317533407360315,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.189029,
+      "system_cpu_seconds": 0.041084999999999997,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/PRELAUNCH.json",
+        "bytes": 18875,
+        "sha256": "9941c4ccf7581c17ed01bc8506ba1b59ddf44d0db9393f810417b5f7e8138b4c"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/mass/stderr",
+        "bytes": 1331,
+        "sha256": "c6728acb516c0f1edf7501721b067243777e346f1b7aa2946dbcc2d4464da2e1"
+      }
+    },
+    {
+      "label": "seed",
+      "started_utc": "2026-10-17T03:34:01.661264+00:00",
+      "finished_utc": "2026-10-17T03:34:01.861002+00:00",
+      "elapsed_seconds": 0.19755329191684723,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.15720599999999996,
+      "system_cpu_seconds": 0.030002,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/PRELAUNCH.json",
+        "bytes": 18881,
+        "sha256": "f94243640dd9b79bd0cfdc1498ebac09bed8c8ecff70a2d607841ee8ac180056"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/seed/stderr",
+        "bytes": 1436,
+        "sha256": "be930a50e63b3f729cd565161fa7fa0e3122f3095de844b6ea3164de3940d7a5"
+      }
+    },
+    {
+      "label": "outgoing_moment",
+      "started_utc": "2026-10-17T03:34:01.863477+00:00",
+      "finished_utc": "2026-10-17T03:34:02.044378+00:00",
+      "elapsed_seconds": 0.17865370819345117,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.143395,
+      "system_cpu_seconds": 0.026794,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/PRELAUNCH.json",
+        "bytes": 18918,
+        "sha256": "c8111c3f5358e399b1c9e34100c7d3ac8fdd8bc000044c03c19a28e664588a00"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/outgoing_moment/stderr",
+        "bytes": 1138,
+        "sha256": "989c5ea152a8def5b5a2855b32dca9885fd3b3529677e23e4e0fad1a12be58f4"
+      }
+    },
+    {
+      "label": "onset",
+      "started_utc": "2026-10-17T03:34:02.046814+00:00",
+      "finished_utc": "2026-10-17T03:34:02.219564+00:00",
+      "elapsed_seconds": 0.17045616684481502,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.13873300000000005,
+      "system_cpu_seconds": 0.025533,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/PRELAUNCH.json",
+        "bytes": 18878,
+        "sha256": "e7d90436989d94281493838fa70595be108c7ef528c9b02d7705be23a8f7bbb1"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/onset/stderr",
+        "bytes": 1065,
+        "sha256": "45339f8c6e8ac3476dd8ffaca0fbccba876ba5ecb218fcfbe87139cdba19a5ab"
+      }
+    },
+    {
+      "label": "finite_buffer",
+      "started_utc": "2026-10-17T03:34:02.221713+00:00",
+      "finished_utc": "2026-10-17T03:34:02.417513+00:00",
+      "elapsed_seconds": 0.19367133313789964,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.14579399999999998,
+      "system_cpu_seconds": 0.028550999999999993,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/PRELAUNCH.json",
+        "bytes": 18925,
+        "sha256": "e844f7759f3717a257ae16c3f87891668a61351db44c6348b067919c5a4d67b8"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/stderr",
+        "bytes": 1173,
+        "sha256": "ceabdffb3b3e3ce1c075dfe081ac44ee9cc1fefb9981bdf02d1a75b849cd3ec8"
+      }
+    },
+    {
+      "label": "arctan_sign",
+      "started_utc": "2026-10-17T03:34:02.419695+00:00",
+      "finished_utc": "2026-10-17T03:34:02.774192+00:00",
+      "elapsed_seconds": 0.3519990830682218,
+      "exit_code": 1,
+      "timed_out": false,
+      "intended_assertion_reached": true,
+      "all_bound_bytes_unchanged": true,
+      "no_result_written": true,
+      "user_cpu_seconds": 0.295952,
+      "system_cpu_seconds": 0.03690399999999999,
+      "prelaunch": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/PRELAUNCH.json",
+        "bytes": 18896,
+        "sha256": "2e0b2c2fb9124e9d1bb9e14601d4944423c81a949ce0df394800af6f8d86e2fb"
+      },
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/stderr",
+        "bytes": 1133,
+        "sha256": "89ef296d14f1bb60b5043119af9636e02528bb6ad0792808df017fc7c8e5b80f"
+      }
+    }
+  ],
+  "case_count": 6,
+  "unexpected_failures": 0,
+  "canonical_source_unchanged": true,
+  "scope": "Fault sensitivity of six distinct scalar/formula/budget obligations, not theorem independence or coverage of every premise. Original comparison thresholds are unchanged.",
+  "all_initial_attempts": true
+}

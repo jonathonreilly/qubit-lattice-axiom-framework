@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Read-only identity/receipt validation; no scientific program replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+R = Path(__file__).resolve().parent
+A = R / 'author_sources'
+N = R.parent
+original_author = N / 'emitter_resource_family_candidate'
+
+def read(p):
+    return json.loads(p.read_text())
+
+def ident(p):
+    b = p.read_bytes()
+    return {'sha256': hashlib.sha256(b).hexdigest(), 'bytes': len(b)}
+
+def check(p, expected):
+    actual = ident(p)
+    assert actual == {k: expected[k] for k in ('sha256', 'bytes')}, str(p)
+    return actual
+
+def timestamp(s):
+    return datetime.fromisoformat(s)
+
+def generation(p):
+    s = p.stat()
+    return dict(device=s.st_dev, inode=s.st_ino, size=s.st_size,
+                mtime_ns=s.st_mtime_ns, ctime_ns=s.st_ctime_ns)
+
+report = {'created_utc': datetime.now(timezone.utc).isoformat(),
+          'purpose': 'Bookkeeping only; no author or reviewer scientific source executed or imported.'}
+snapshots = []
+for manifest in ('INITIAL_SOURCE_MANIFEST.json', 'AUTHOR_SOURCE_MANIFEST.json'):
+    rows = read(R / manifest)['sources']
+    for row in rows:
+        check(R / row['snapshot'], row)
+        check(Path(row['original']), row)
+    snapshots.append({'manifest': manifest, 'count': len(rows),
+                      'all_original_and_snapshot_bytes_match': True})
+report['snapshot_manifests'] = snapshots
+
+fm = read(A / 'FILE_MANIFEST.json')
+for row in fm['files']:
+    check(A / row['path'], row)
+assert len(fm['files']) == fm['count'] == 43
+sm = read(A / 'SOURCE_MANIFEST.json')
+for row in sm['sources']:
+    check(A / row['snapshot'], row)
+    if 'original_path' in row:
+        check(Path(row['original_path']), row)
+assert len(sm['sources']) == 23
+report['author_manifest_validation'] = {
+    'file_entries': 43, 'source_snapshot_entries': 23,
+    'absolute_original_pairs_rechecked': sum('original_path' in x for x in sm['sources']),
+    'repository_commit_fields': 'Preserved as supplied metadata; no Git query or current-head verification.'}
+
+pre = read(A / 'attempt_01/PRELAUNCH.json')
+receipt = read(A / 'attempt_01/RECEIPT.json')
+assert ident(A / 'attempt_01/PRELAUNCH.json')['sha256'] == receipt['prelaunch_sha256']
+post = {x['path']: x for x in receipt['postchecks']}
+generation_checks = []
+for row in pre['bindings']:
+    p = Path(row['path'])
+    check(p, row)
+    if p.is_relative_to(original_author):
+        check(A / p.relative_to(original_author), row)
+    assert post[row['path']]['hash_and_bytes_equal'] is True
+    assert post[row['path']]['generation_equal'] is True
+    generation_checks.append(generation(p) == row['generation'])
+assert len(pre['bindings']) == len(post) == 31
+for stream in ('stdout', 'stderr'):
+    check(A / 'attempt_01' / ('stdout.json' if stream == 'stdout' else 'stderr.txt'), receipt[stream])
+assert receipt['exit_code'] == 0 and not receipt['timed_out']
+assert pre['cpu_soft_hard'] == [20, 20]
+assert pre['wall_timeout_seconds'] == 30
+assert receipt['wall_seconds'] < 30
+assert receipt['child_user_cpu_seconds'] + receipt['child_system_cpu_seconds'] < 20
+assert timestamp(sm['new_moment_dependency']['added_utc']) < timestamp(pre['serialized_utc'])
+assert timestamp(pre['serialized_utc']) < timestamp(receipt['launch_after_prelaunch_fsync_utc'])
+assert timestamp(receipt['launch_after_prelaunch_fsync_utc']) < timestamp(receipt['completed_utc'])
+assert timestamp(receipt['completed_utc']) < timestamp(read(A / 'FREEZE.json')['frozen_utc'])
+assert ident(A / 'check_family.py') == ident(A / 'attempt_01/check_family.py')
+out = read(A / 'attempt_01/stdout.json')
+assert len(out['checks']) == 103
+report['author_run'] = {
+    'bindings': 31, 'source_or_input_bindings': 28, 'runtime_bindings': 3,
+    'all_hashes_and_sizes_match_now': True,
+    'all_recorded_historical_generation_postchecks_true': True,
+    'current_original_generations_equal_prelaunch': all(generation_checks),
+    'current_original_generation_equal_count': sum(generation_checks),
+    'chronology_valid': True, 'executed_source_equals_declared_source': True,
+    'scientific_assertion_rows': 103, 'actual_science_runs': 1,
+    'program_replayed_by_reviewer': False,
+    'receipt': ident(A / 'attempt_01/RECEIPT.json'),
+    'prelaunch': ident(A / 'attempt_01/PRELAUNCH.json'),
+    'stdout': ident(A / 'attempt_01/stdout.json'),
+    'runtime_limit': pre['binding_limit']}
+
+own_runs = []
+for run in ('stage1_run01', 'stage2_run01'):
+    p = read(R / run / 'PRELAUNCH.json')
+    c = read(R / run / 'RECEIPT.json')
+    check(R / run / 'PRELAUNCH.json', c['prelaunch'])
+    for row in p['bound_inputs']:
+        check(R / row['path'], row)
+    for row in p['external_runtime_bindings']:
+        check(Path(row['path']), row)
+    check(R / run / 'executed_source.py', c['executed_source_after'])
+    check(R / run / 'stdout.json', c['stdout'])
+    check(R / run / 'stderr.txt', c['stderr'])
+    assert c['returncode'] == 0 and not c['timed_out']
+    assert c['all_bound_inputs_unchanged']
+    assert all(x['matches'] for x in c['input_postchecks'] + c['runtime_postchecks'])
+    assert timestamp(p['serialized_utc']) < timestamp(c['launch_utc_after_prelaunch_fsync'])
+    assert timestamp(c['launch_utc_after_prelaunch_fsync']) < timestamp(c['finished_utc'])
+    assert c['wall_seconds'] < 45
+    assert c['child_user_CPU_seconds'] + c['child_system_CPU_seconds'] < 30
+    own_runs.append({'run': run, 'input_count': len(p['bound_inputs']),
+                     'runtime_count': len(p['external_runtime_bindings']),
+                     'all_current_bindings_valid': True, 'chronology_valid': True,
+                     'prelaunch': ident(R / run / 'PRELAUNCH.json'),
+                     'receipt': ident(R / run / 'RECEIPT.json'),
+                     'stdout': ident(R / run / 'stdout.json')})
+for row in read(R / 'STAGE1_FREEZE.json')['files']:
+    check(R / row['path'], row)
+assert timestamp(read(R / 'INITIAL_REASONING_FREEZE.json')['frozen_utc']) < timestamp(read(R / 'stage1_run01/PRELAUNCH.json')['serialized_utc'])
+assert timestamp(read(R / 'stage1_run01/RECEIPT.json')['finished_utc']) < timestamp(read(R / 'STAGE1_FREEZE.json')['frozen_utc'])
+assert timestamp(read(R / 'STAGE1_FREEZE.json')['frozen_utc']) < timestamp(read(R / 'AUTHOR_SOURCE_MANIFEST.json')['created_utc'])
+report['reviewer_runs'] = own_runs
+report['preexposure_sequence_bound'] = True
+report['stage1_frozen_entries_revalidated'] = 23
+report['result'] = 'All declared identity, snapshot, historical-receipt, present-byte and chronology checks passed.'
+(R / 'EVIDENCE_VALIDATION.json').write_text(json.dumps(report, indent=2) + '\n')
+print(json.dumps(report, indent=2))

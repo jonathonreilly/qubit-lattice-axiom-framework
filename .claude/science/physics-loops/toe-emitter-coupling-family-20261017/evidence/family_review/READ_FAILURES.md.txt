@@ -1,0 +1,5 @@
+# Read-only search failure
+
+After both scientific checks had completed, a report-preparation `rg` search used an incorrectly escaped alternation containing a literal bracket. Ripgrep reported `regex parse error: unclosed character class` before reading matches. The next search used separate simple `-e` patterns and succeeded. The relevant candidate sections were then read completely with numbered Python line slices. No scientific program ran, no source file changed, and no scientific retry was consumed.
+
+The author's separate prior read-only filename/truncated-output history remains byte-preserved in `author_sources/READ_FAILURES.md`. Neither history is a mathematical failure. The actual failed mathematical shortcuts, the variance ceiling `32/25` and old point-amplitude expression `4/5`, remain preserved in both review evidence and the report.

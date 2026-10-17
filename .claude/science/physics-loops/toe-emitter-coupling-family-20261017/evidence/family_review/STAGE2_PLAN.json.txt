@@ -1,0 +1,16 @@
+{
+  "declared_utc": "2026-10-17T03:05:13.340908+00:00",
+  "stage": 2,
+  "scope": "Source-exposed changed-premise check: author exact scalar self-energy and denominator-phase identity; stricter normalization comparison; symbolic/rational kappa-majorant checks; actual-phase and full localized estimates; squared-L2 alternative; common time scaling and finite ceiling; exact local loads and a four-dimensional positive block.",
+  "CPU_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_seconds": 45,
+  "matrix_dimension_max": 4,
+  "scientific_runs_max": 1,
+  "retry_policy": "Only initial overall resource-plan implementation retry, preserve all failures.",
+  "no_author_checker_replay": true,
+  "no_grid_quadrature_optimization_dynamics": true,
+  "prelaunch": "Serialize, flush, fsync and close binding of actual executable, stage-one evidence, source snapshots, manifests, runtime and plans before subprocess creation."
+}

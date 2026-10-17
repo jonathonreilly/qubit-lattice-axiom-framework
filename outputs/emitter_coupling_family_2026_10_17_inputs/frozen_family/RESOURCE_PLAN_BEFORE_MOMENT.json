@@ -1,0 +1,15 @@
+{
+  "task": "Author candidate for an increased-coupling installed emitter with full common-seed and complete-output premises",
+  "status_at_declaration": "Before any scientific program execution for this task",
+  "source_commit": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "campaign_deadline_utc": "2026-10-17T23:07:27Z",
+  "write_scope": "This emitter_resource_family_candidate directory only",
+  "proposed_parameter_scope": {"kappa_min": "1/1000000000000", "kappa_max": "1/100000000", "sigma": "1/1000000", "L": 12, "all_other_ladder_parameters": "exact pinned PR9664 values"},
+  "scientific_caps": {"cpu_seconds_per_attempt": 20, "external_wall_seconds_per_attempt": 30, "maximum_attempts": 3, "maximum_total_cpu_seconds": 60, "maximum_total_wall_seconds": 90, "maximum_matrix_dimension": 0, "parameter_grid_points": 0, "quadrature_calls": 0, "optimizer_calls": 0, "time_evolution_calls": 0},
+  "method": "Exact Fraction inequalities and bounded symbolic scalar identities. Reconstruct every affected inequality; no imported author checker, sampled inverse, resonance quadrature, or dynamics. Parameter-family validity must be proved by explicit monotone majorants, not endpoint samples.",
+  "prelaunch_rule": "Write a separate serialized prelaunch record of actual executed source copy, every input, Python binary, launcher, caps, command, environment and UTC timestamp before spawning each scientific child. Retain full streams, traceback, exit code, resource use and source-generation checks; preserve every failed attempt.",
+  "failure_policy": "At most two documented repairs after an initial failed attempt; preserve exact original script and failure. Any unresolved scientific failure narrows the candidate rather than being counted as success.",
+  "new_obligation": "Replace the variance normalization bound, which cannot support kappa=1e-8, by an analytic lower bound on the exact reference spectral mass. Re-establish the full seed overlap and every kappa-dependent installed/weighted premise.",
+  "inherited_obligations": "Exact ladder and local optical/tail identities at pinned source identities. Existing independent review/root qualification is reused only at its declared scope, never as a new certificate at larger kappa.",
+  "excluded": ["calibration and joint coefficient-box conclusions", "ballistic candidate as a checked premise", "independent or retained status", "native hardware or seed preparation", "arbitrary accuracy below fixed target residual", "Git/repository/checkpoint/prompt/axiom/audit edits", "delegation or model overrides"]
+}

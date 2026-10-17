@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-10-17T03:17:51.952415+00:00",
+  "disposition": "Conditional exact-ladder coupling-family claim supported; no source correction required.",
+  "candidate": {
+    "path": "author_sources/CANDIDATE.md",
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "candidate_freeze": {
+    "path": "author_sources/FREEZE.json",
+    "bytes": 1418,
+    "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98"
+  },
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 35719,
+    "sha256": "053e40728f0336c3a5b5409f8c3ba96bd4d8acb96bf0a57192483a28f4099d3a"
+  },
+  "scope": {
+    "kappa_interval": [
+      "1/1000000000000",
+      "1/100000000"
+    ],
+    "sigma": "1/1000000",
+    "L": 12,
+    "infinite_onset": "1000000/kappa^2",
+    "infinite_complete_error_strict_upper": "1/250",
+    "finite_clock_sites": "ceil(50*T)",
+    "finite_window": "[T,2T]",
+    "finite_complete_error_strict_upper": "1/200",
+    "comparator": "Actual coupling-dependent f, rho, beta; scalar nu+2*kappa; old aging from zero; all source/emitter/clock outputs."
+  },
+  "initial_independent_result": {
+    "normalization_deficit_strict_upper": "4.4e-7",
+    "seed_norm_error_strict_upper": "0.003",
+    "frozen_before_new_author_exposure": true
+  },
+  "author_sharper_mass_checked": "delta_m<3.5e-7",
+  "preserved_failed_shortcuts": [
+    "Variance mass ceiling at upper endpoint =32/25.",
+    "Old point-amplitude expression at upper endpoint =4/5.",
+    "Reversed arctangent correction sign has nonzero symbolic defect."
+  ],
+  "scientific_runs": 2,
+  "scientific_run_failures": 0,
+  "reviewer_programs": [
+    {
+      "path": "check_reference_mass.py",
+      "bytes": 6766,
+      "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+    },
+    {
+      "path": "check_family_delta.py",
+      "bytes": 10866,
+      "sha256": "da6a10d31daabbe43f2c8e760f30b0654feb9739576e4ef913b926c4210409b1"
+    }
+  ],
+  "reviewer_launchers": [
+    {
+      "path": "launch_stage1.py",
+      "bytes": 3811,
+      "sha256": "f50150b98a07a6a4bb0b5fd530c0e16dfc5e908d69c0f42659cacf4870476959"
+    },
+    {
+      "path": "launch_stage2.py",
+      "bytes": 3978,
+      "sha256": "1b3f73104e1fe5326ac15269d980e0de3b6e3cc9f3cdfc9edde0c2d545d94e72"
+    }
+  ],
+  "reviewer_receipts": [
+    {
+      "path": "stage1_run01/RECEIPT.json",
+      "bytes": 3060,
+      "sha256": "2ef694eb9d5ed15650ef80ff41bf21cb005d7b82f5125a6600d53e75c4b7287d"
+    },
+    {
+      "path": "stage2_run01/RECEIPT.json",
+      "bytes": 7974,
+      "sha256": "b4a112510143b9adb51f53102a4e0c9b69cddf35a97d9b3a4c28ee8edb67493b"
+    }
+  ],
+  "author_science_replayed_or_imported": false,
+  "exposure_limits": "Same model/effort; substantial prior dependency authorship/review. Initial family reasoning predates new author exposure; stage two is source-exposed. No blind full-dependency or model-diverse claim.",
+  "excluded": [
+    "Joint calibration/coefficient boxes",
+    "One whole-clock waveform across couplings",
+    "Native seed/vacuum/complex-loop generation",
+    "Practical or optimal resources",
+    "Arbitrary accuracy or bandwidth expansion",
+    "Finite-clock all-future operation",
+    "Canonical execution/publication/retained audit status"
+  ],
+  "editable_prompt_files_changed": [],
+  "repository_or_original_sources_changed": false,
+  "new_unassigned_candidate_inspected": false
+}

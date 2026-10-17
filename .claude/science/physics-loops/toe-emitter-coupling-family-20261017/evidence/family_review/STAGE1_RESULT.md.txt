@@ -1,0 +1,26 @@
+# Pre-exposure spectral-normalization result
+
+The independent derivation in frozen `INITIAL_ANALYSIS.md` passes its declared exact scalar and symbolic checks. It uses the actual full-line two-contact reference resolvent and integrates its denominator phase, including the signed real/imaginary self-energy derivative correction. No file in the new family author packet has been opened, listed or copied at this stage.
+
+Uniformly for kappa in [10^-12,10^-8] with the unchanged exact ladder, loop and sigma=10^-6, the reference inner-band mass loss is at most the exact rational
+
+```text
+30068235143909/69579989062500000000,
+```
+
+approximately 4.321391185747429e-7. Including the wrong-direction fraction with a conservative 1e-12 allowance gives
+
+```text
+1-N_kappa^2 <= 481092875582369/1113279825000000000000
+             < 4.4e-7.
+```
+
+The unchanged exact Schur/overlap formulas were freshly bounded at the upper coupling endpoint. The full closed-block inverse, positive imaginary denominator and full augmented inverse inequalities retain the stated ceilings. The common-envelope diagonal error is below 4e-6 and the complementary-coordinate off-diagonal error below 1e-14. Their full parity-block aggregation gives a squared complete seed-error upper expression approximately 8.696314612669358e-6. The simpler exact ceiling `444000001/50000000000000=8.88000002e-6` is below `.003^2`. The actual normalization is common to all old inputs at each fixed kappa; it is not asserted identical across different apparatus couplings.
+
+This bound includes outside-band point mass through the unit total reference spectral measure. For the installed seed, its possible point component is included in the complete seed discrepancy once, using the unchanged exact packet-isometry argument and freshly checked selected-band inverse. The old reference variance shortcut gives 32/25 at kappa=1e-8 and is unusable for this purpose; the old separate installed point-amplitude shortcut gives 4/5 at that endpoint. Those failed bounds are preserved rather than silently extrapolated.
+
+This clears the normalization/overlap bottleneck for the selective review. It is not a verdict on the unread family candidate. Complete actual-phase, derivative/localized, old-aging, finite-horizon, physical-resource and execution/provenance implications remain for the frozen-author stage. No joint static box, native preparation or arbitrary-accuracy claim is added.
+
+One scientific invocation ran after a genuinely serialized, flushed and fsynced prelaunch binding of 17 source/resource inputs, the actual executable and the runtime identities. The run exited zero in 0.7703732498921454 seconds of wrapper wall time, with 0.242454 user and 0.044957 system CPU seconds and macOS child peak RSS 62,734,336 bytes. Caps were CPU30/wall45, actual matrix dimension zero, no parameter grid, quadrature or dynamics. Complete stdout was read and stderr is empty. There was no failed scientific execution.
+
+The exact program/source SHA256 is `2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a`; stdout SHA256 is `8b06ff48bd3a87f98ccfd96a01b5d4a87a8af9aeb56fe1e870cbfeea23e6d598`; PRELAUNCH SHA256 is `6e9fc2ea3e1f7b8fedd6c5e80b65cf58b86a4608841a444cbdcaca235a4a7d8f`. All input/runtime postchecks match. Source-exposed dependency limits remain those in INITIAL_ANALYSIS.md. This stage-one result and its evidence are frozen separately before author exposure; later comparison belongs in the final REPORT.md.

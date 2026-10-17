@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/mutated.py", line 457, in run_family_author
+    lt('finite_clock_distance_margin_at_smallest_clock',9,M_hi-L-1-19*(2*T_hi)*F(6,5))
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/finite_buffer/mutated.py", line 98, in lt
+    assert left<right, (name,str(left),str(right))
+           ^^^^^^^^^^
+AssertionError: ('finite_clock_distance_margin_at_smallest_clock', '9', '-56000000000000000000013')

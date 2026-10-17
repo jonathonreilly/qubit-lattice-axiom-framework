@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/mutated.py", line 618, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/mutated.py", line 543, in main
+    report = run_family_author(inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/mutated.py", line 495, in run_family_author
+    eq('arctan_density_identity',sp.cancel(theta_prime-x*yp/(x*x+y*y)-xp0*y/(x*x+y*y)),0)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_integration/mutations/arctan_sign/mutated.py", line 102, in eq
+    assert left==right,(name,left,right)
+           ^^^^^^^^^^^
+AssertionError: ('arctan_density_identity', -2*x*yp/(x**2 + y**2), 0)

@@ -1,0 +1,36 @@
+{
+  "frozen_utc": "2026-10-17T03:02:37.427701+00:00",
+  "status": "Author candidate only; independent review pending",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+    "bytes": 39464
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f",
+    "bytes": 6923
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02",
+    "bytes": 11292
+  },
+  "scientific_result": {
+    "path": "attempt_01/stdout.json",
+    "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+    "bytes": 41223
+  },
+  "execution_receipt": {
+    "path": "attempt_01/RECEIPT.json",
+    "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+    "bytes": 8942
+  },
+  "run_summary": {
+    "path": "RUN_SUMMARY.json",
+    "sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe",
+    "bytes": 4738
+  },
+  "member_count_excluding_manifest_and_freeze": 43,
+  "next_decision": "Separate analytical review of mass lower bound, directional normalization, full seed overlap, kappa-majorant transfer and actual-profile/finite-clock interfaces. No permission to infer joint-box, native, practical, retained or arbitrary-accuracy status."
+}

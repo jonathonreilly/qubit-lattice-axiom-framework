@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Stage one: exact checks of the pre-exposure reference-mass derivation.
+
+This program does not read the new family candidate or any author program.
+The controlling analytic argument is INITIAL_ANALYSIS.md, frozen first.
+"""
+from fractions import Fraction as F
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import resource
+import sys
+import time
+
+sys.dont_write_bytecode = True
+resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+start=time.monotonic()
+root=Path(sys.argv[1]).resolve(); prepath=Path(sys.argv[2]).resolve()
+pre=json.loads(prepath.read_text())
+assert pre['state']=='serialized_before_subprocess_creation'
+assert hashlib.sha256(Path(__file__).read_bytes()).hexdigest()==pre['executed_source']['sha256']
+for row in pre['bound_inputs']:
+    b=(root/row['path']).read_bytes()
+    assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row
+for row in pre['external_runtime_bindings']:
+    b=Path(row['path']).read_bytes()
+    assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row
+
+import sympy as s
+
+def qr(z):
+    z=F(z)
+    return {'exact':str(z),'decimal_display_only':float(z)}
+
+# Exact identity for the retarded resolvent, followed by the denominator phase.
+x=s.symbols('x',real=True); kap,gamma=s.symbols('kap gamma',positive=True,real=True)
+assert s.simplify(-s.im(1/(x+s.I*kap**2*gamma))-kap**2*gamma/(x*x+kap**4*gamma**2))==0
+k=s.symbols('k',real=True); Xfun=s.Function('X')(k); Gfun=s.Function('G')(k)
+theta_derivative=s.diff(s.atan(Xfun/(kap**2*Gfun)),k)
+expected=kap**2*(Gfun*s.diff(Xfun,k)-Xfun*s.diff(Gfun,k))/(Xfun**2+kap**4*Gfun**2)
+assert s.simplify(theta_derivative-expected)==0
+xp,gp,sp=s.symbols('xp gp sp',real=True)
+density_numerator=kap**2*gamma*(xp+kap**2*sp)
+theta_numerator=kap**2*(gamma*xp-x*gp)
+assert s.expand(density_numerator-theta_numerator-kap**4*gamma*sp-kap**2*x*gp)==0
+
+lo,hi=F(1,10**12),F(1,10**8)
+sigma,ell,v=F(1,10**6),F(1,2*10**6),F(1,40)
+J=F(3752638388379,125000000000000)
+G,S,G1=F(81),F(560),F(560)
+delta_energy=v*ell-160*hi**2
+X=F(4,10**8)
+assert 0<lo<=hi and delta_energy>0
+assert 2*J<F(61,1000)
+assert F(61,1000)*ell+160*hi**2<X
+assert v-560*hi**2>v/2
+assert (4+(2*ell)**2)/(2*v)<G
+old_variance=2*hi**2/(v*ell)**2
+assert old_variance==F(32,25) and old_variance>1
+old_point_amplitude=2*hi/(v*sigma)
+assert old_point_amplitude==F(4,5)
+
+# log ratio < 80 follows from e>8/3 and this exact rational comparison.
+log_argument=1+X**2/(19**2*lo**4)
+assert log_argument<F(8,3)**80
+boundary=2*hi**2*G/(3*delta_energy)
+real_correction=2*hi**2*G*S/(19*v)
+gamma_correction=(2*hi**2*G1/(3*v))*80
+mass_loss=boundary+real_correction+gamma_correction
+wrong_direction=(4*ell/3)**2
+assert wrong_direction<F(1,10**12)
+normalization_loss=mass_loss+F(1,10**12)
+assert normalization_loss<F(44,10**8)
+assert 1-normalization_loss>F(99,100)**2
+assert 6*(1-normalization_loss)>4
+
+# Fresh upper-endpoint checks of the unchanged algebraic Schur/overlap formulas.
+zr=F(4835816955256357129429116105401,5335816955256357129429116105401)
+zi=F(2255175592998549000000000000000,5335816955256357129429116105401)
+assert zr*zr+zi*zi==1
+sin2=2*zr*zi
+bmin=2*sin2-2*sigma; amax=2*sigma; bmax=F(2)
+assert bmin>F(3,2)
+eta=amax/bmin; gamma0=bmin*bmin/(4*J)
+delta=F(50,96889010407); wc=F(800,13841287201)
+r,g=F(1,7),F(9,50)
+sPQ=amax*206*delta; sQP=delta*206*bmax
+Sqq=2*(1+r*r)/g+delta*delta*206
+xi=2*eta+hi**2*sPQ*6*sQP/gamma0
+assert xi<1 and g-hi**2*Sqq>F(1,6)
+assert gamma0*(1-xi)>19
+De_scaled=(1+hi**2*sPQ*6)*(1+hi**2*sQP*6)/19+6*hi**2
+assert De_scaled<F(1,18)
+assert 166*hi**2<F(1,18)
+Maug_scaled=(1+166*hi*bmax)*(1+166*hi*amax)/18
+assert Maug_scaled<F(1,17)
+eta_p=(eta+hi**2*sPQ*6*wc/bmin+xi)/(1-xi)
+epsilon_off=6*hi*wc+6*hi**2*delta*206*bmax*(1+eta_p)
+assert eta_p<F(4,10**6) and epsilon_off<F(1,10**14)
+seed_squared=2*(normalization_loss+eta_p+epsilon_off)
+rounded_seed_squared=2*(F(44,10**8)+F(4,10**6)+F(1,10**14))
+assert seed_squared<rounded_seed_squared<F(3,1000)**2
+
+usage=resource.getrusage(resource.RUSAGE_SELF)
+result={'role':'Pre-author-exposure independent reference spectral normalization check',
+ 'new_family_author_files_read':False,'author_checker_imported_or_executed':False,
+ 'child_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'prelaunch_sha256':hashlib.sha256(prepath.read_bytes()).hexdigest(),
+ 'verified_input_count':len(pre['bound_inputs']),
+ 'symbolic_checks':{'retarded_density_sign':True,'arctangent_derivative':True,'signed_correction_identity':True},
+ 'preserved_failed_old_bounds':{'inner_mass_variance_ceiling_at_upper_kappa':qr(old_variance),'separate_installed_point_amplitude_variance_ceiling_at_upper_kappa':qr(old_point_amplitude)},
+ 'uniform_density_certificate':{'kappa_min':qr(lo),'kappa_max':qr(hi),'inner_half_width':qr(ell),
+   'denominator_endpoint_distance_lower':qr(delta_energy),'real_denominator_magnitude_cap':qr(X),
+   'gamma_upper':qr(G),'log_argument_upper':qr(log_argument),'log_ceiling':80,
+   'boundary_loss_upper':qr(boundary),'real_self_energy_derivative_correction':qr(real_correction),
+   'imaginary_self_energy_derivative_correction':qr(gamma_correction),'inner_mass_loss_upper':qr(mass_loss),
+   'wrong_direction_fraction_upper':qr(wrong_direction),'normalization_loss_upper':qr(normalization_loss),
+   'rounded_normalization_loss_ceiling':qr(F(44,10**8))},
+ 'upper_endpoint_Schur_overlap_checks':{'closed_gap_lower':qr(g-hi**2*Sqq),
+   'imaginary_denominator_scaled_lower':qr(gamma0*(1-xi)),
+   'kappa_squared_times_De_inverse_upper':qr(De_scaled),
+   'kappa_squared_times_Maug_inverse_upper':qr(Maug_scaled),
+   'eta_p_upper':qr(eta_p),'epsilon_off_upper':qr(epsilon_off),
+   'seed_squared_upper':qr(seed_squared),'rounded_seed_squared_upper':qr(rounded_seed_squared),
+   'claimed_seed_squared_ceiling':qr(F(3,1000)**2),
+   'uniformity':'All displayed positive Schur error upper expressions increase with kappa while xi<1. Upper endpoint suffices; no grid.'},
+ 'scope_limits':['Symbolic/rational checks supplement INITIAL_ANALYSIS.md; no automated infinite spectral proof.',
+   'No author-family argument or execution read yet. No family verdict.',
+   'Exact original ladder/loop only, no joint coefficient box.',
+   'No numerical quadrature or time evolution. No native readiness or optimality.'],
+ 'runtime':{'python':sys.version,'executable':sys.executable,'sympy_version':s.__version__},
+ 'resources':{'matrix_dimension':0,'parameter_grid_points':0,'wall_seconds':time.monotonic()-start,
+   'user_CPU_seconds':usage.ru_utime,'system_CPU_seconds':usage.ru_stime,'peak_RSS_native_bytes_macos':usage.ru_maxrss,
+   'CPU_soft_hard_seconds':[30,30],'external_wall_cap_seconds':45},
+ 'result':'Declared stage-one exact checks passed.'}
+print(json.dumps(result,indent=2,sort_keys=True))

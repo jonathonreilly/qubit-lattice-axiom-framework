@@ -1,0 +1,20 @@
+{
+  "kind": "Static source transport verification only; no scientific body or mutation executed",
+  "static_check_count": 718,
+  "transport_event_counts": {
+    "unchanged_statement_ast": 216,
+    "removed_historical_launch_transport": 5,
+    "adapted_input_read": 1,
+    "actual_limit_metadata_only": 1,
+    "return_instead_of_print_transport": 1
+  },
+  "complete_original_ast_recovered": true,
+  "scientific_comparison_calls_preserved_without_execution": 103,
+  "declared_inputs": 54,
+  "artifact_members": 53,
+  "new_overlay_files": 36,
+  "note_sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d",
+  "primary_sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+  "scientific_executions": 0,
+  "scientific_mutations": 0
+}

@@ -1,0 +1,774 @@
+{
+  "status": "Author scalar certificate passed; analytic parameter-family proof remains separately reviewable",
+  "parameters": {
+    "kappa_min": "1/1000000000000",
+    "kappa_max": "1/100000000",
+    "sigma": "1/1000000",
+    "L": 12,
+    "exact_ladder_parameters": {
+      "J": "3752638388379/125000000000000",
+      "cos_k": "4835816955256357129429116105401/5335816955256357129429116105401",
+      "sin_k": "2255175592998549000000000000000/5335816955256357129429116105401",
+      "tan_half_complement": "2255175592998549/500000000000000",
+      "epsilon": "30021107107032000000000000000/5335816955256357129429116105401",
+      "gA": "99687856381667/100000000000000",
+      "gB": "299659657780149/500000000000000",
+      "t": "199967484894403/50000000000000",
+      "lambdaA": "1900890690790601/500000000000000",
+      "lambdaB": "2575033765788497/1000000000000000",
+      "u": "544607276405587/1000000000000000",
+      "DeltaA": "2192035527016003/1000000000000000",
+      "DeltaB": "1093413254448507/500000000000000",
+      "mu0": "321494607058201/1000000000000000",
+      "mu1": "-1459892813020969/1000000000000000",
+      "scalar_reserve": "1459892813020969/1000000000000000"
+    }
+  },
+  "uniformity_method": "Fixed kappa_max majorants for nonnegative polynomial numerators and fixed positive denominator lower bounds; log argument uses kappa_min. No parameter or momentum samples.",
+  "budgets": {
+    "T_formula": "10^6/kappa^2",
+    "T_at_max_kappa": "10000000000000000000000",
+    "T_at_min_kappa": "1000000000000000000000000000000",
+    "M_formula": "ceil(50*T)",
+    "M_at_max_kappa": "500000000000000000000000",
+    "M_at_min_kappa": "50000000000000000000000000000000",
+    "q_in": {
+      "rational": "4377638388379/1562500000000000000",
+      "display_only": 2.80168856856256e-06
+    },
+    "q_out": {
+      "rational": "22502638388379/1562500000000000000",
+      "display_only": 1.440168856856256e-05
+    },
+    "localized": {
+      "rational": "1/20000",
+      "display_only": 5e-05
+    },
+    "moment_remainder": {
+      "rational": "52502638388379/781250000000000000",
+      "display_only": 6.720337713712512e-05
+    },
+    "complete_infinite": {
+      "rational": "2954065138388379/781250000000000000",
+      "display_only": 0.0037812033771371253
+    },
+    "complete_finite": {
+      "rational": "3735315138388379/781250000000000000",
+      "display_only": 0.004781203377137125
+    },
+    "weighted_fallback_T_formula": "10^12/kappa^2",
+    "weighted_fallback_remainder": {
+      "rational": "52000027/540000000000",
+      "display_only": 9.62963462962963e-05
+    }
+  },
+  "physical_loads": {
+    "old1": {
+      "rational": "99687856381667/50000000000000",
+      "display_only": 1.99375712763334
+    },
+    "old2": {
+      "rational": "299659657780149/250000000000000",
+      "display_only": 1.198638631120596
+    },
+    "source_A": {
+      "rational": "10166331044996727/500000000000000",
+      "display_only": 20.332662089993455
+    },
+    "source_B": {
+      "rational": "17078839343776311/1000000000000000",
+      "display_only": 17.078839343776313
+    },
+    "c0": {
+      "rational": "8015120691541701/1000000000000000",
+      "display_only": 8.015120691541702
+    },
+    "c1": {
+      "rational": "6730044773026091/1000000000000000",
+      "display_only": 6.730044773026091
+    },
+    "ordinary_clock": {
+      "rational": "3752638388379/31250000000000",
+      "display_only": 0.120084428428128
+    },
+    "emitter_at_hi": {
+      "rational": "1501060691168555256357129429116105401/266790847762817856471455805270050000000",
+      "display_only": 0.005626357514718896
+    },
+    "each_attachment_addition_at_hi": {
+      "rational": "3/100000000",
+      "display_only": 3e-08
+    },
+    "each_attachment_total_at_hi": {
+      "rational": "3752639325879/31250000000000",
+      "display_only": 0.120084458428128
+    },
+    "old_existing_edge_additional": {
+      "rational": "3",
+      "display_only": 3.0
+    }
+  },
+  "preserved_failed_shortcut": {
+    "naive_variance_mass_upper": {
+      "rational": "32/25",
+      "display_only": 1.28
+    },
+    "old_point_projection_variance_upper": {
+      "rational": "4/5",
+      "display_only": 0.8
+    },
+    "meaning": "The old variance estimate cannot certify the new normalization; a bound larger than one is not physical mass greater than one. Old 8e-5 point-amplitude claim is not inherited. Complete seed overlap instead covers point spectrum below .003."
+  },
+  "wrong_arctan_correction_sign_residual": "-2*x*yp/(x**2 + y**2)",
+  "actual_resources": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "matrix_dimension": 0,
+    "parameter_grid_points": 0,
+    "quadrature_calls": 0,
+    "optimizer_calls": 0,
+    "time_evolution_calls": 0,
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "wall_cap_external_seconds": 30,
+    "program_wall_seconds": 0.6152988341636956
+  },
+  "limitations": "This program corroborates scalar algebra and inequalities. The spectral theorem, analytic density, arctan integration, monotone-majorant applicability, noncommuting Schur structure, exact packet normalization and physical premise chain require the written argument and independent review.",
+  "checks": [
+    {
+      "name": "rational_center_circle",
+      "relation": "=",
+      "value": "1"
+    },
+    {
+      "name": "rational_center_energy",
+      "relation": "=",
+      "value": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "name": "band_in_larger_certified_band",
+      "left": 1e-06,
+      "relation": "<",
+      "right": 0.001
+    },
+    {
+      "name": "positive_emitter_onsite_entire_family",
+      "left": 2e-08,
+      "relation": "<",
+      "right": 0.005626337514718896
+    },
+    {
+      "name": "emitter_energy_below_bulk_width",
+      "left": 0.005626337514718896,
+      "relation": "<",
+      "right": 0.120084428428128
+    },
+    {
+      "name": "bulk_band_width_below_old_splitting",
+      "left": 0.120084428428128,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "source_gap_covers_old_release_and_entire_band",
+      "left": 2.120084428428128,
+      "relation": "<",
+      "right": 2.186826508897014
+    },
+    {
+      "name": "velocity_on_larger_inherited_band",
+      "left": 0.025,
+      "relation": "<",
+      "right": 0.025316715868118275
+    },
+    {
+      "name": "curvature_over_velocity",
+      "left": 2.40168856856256,
+      "relation": "<",
+      "right": 2.5
+    },
+    {
+      "name": "closed_transfer_smaller_than_open_envelope",
+      "left": 5.160543986357778e-10,
+      "relation": "<",
+      "right": 2e-06
+    },
+    {
+      "name": "open_formfactor_nonzero",
+      "left": 1.5,
+      "relation": "<",
+      "right": 1.5321729659757453
+    },
+    {
+      "name": "tail_resolvent_derivative",
+      "left": 1688.9924893594714,
+      "relation": "<",
+      "right": 1710.0
+    },
+    {
+      "name": "response_derivative",
+      "left": 1788.9924893594714,
+      "relation": "<",
+      "right": 2000.0
+    },
+    {
+      "name": "optical_lower_factor",
+      "left": 19.0,
+      "relation": "<",
+      "right": 19.549195748322624
+    },
+    {
+      "name": "closed_emitter_inverse_gap",
+      "left": 0.16666666666666666,
+      "relation": "<",
+      "right": 0.17999999999999886
+    },
+    {
+      "name": "schur_imaginary_lower_factor",
+      "left": 19.0,
+      "relation": "<",
+      "right": 19.549144711798206
+    },
+    {
+      "name": "relative_denominator_below_one",
+      "left": 2.610671307238899e-06,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "full_emitter_inverse_scaled",
+      "left": 0.05263157894736902,
+      "relation": "<",
+      "right": 0.05555555555555555
+    },
+    {
+      "name": "old_matching_inverse_in_diagonal_max",
+      "left": 1.66e-14,
+      "relation": "<",
+      "right": 0.05555555555555555
+    },
+    {
+      "name": "augmented_matching_inverse_scaled",
+      "left": 0.05555574000018444,
+      "relation": "<",
+      "right": 0.058823529411764705
+    },
+    {
+      "name": "diagonal_common_profile_relative_error",
+      "left": 3.91601718429205e-06,
+      "relation": "<",
+      "right": 4e-06
+    },
+    {
+      "name": "full_seed_off_diagonal_entry",
+      "left": 3.4678856864015735e-15,
+      "relation": "<",
+      "right": 1e-14
+    },
+    {
+      "name": "cos_phase_and_cos_twok_above_three_fifths",
+      "left": 0.6,
+      "relation": "<",
+      "right": 0.6427343132804197
+    },
+    {
+      "name": "gamma_upper_from_trigonometric_enclosure",
+      "left": 51.2,
+      "relation": "<",
+      "right": 52.0
+    },
+    {
+      "name": "a_derivative_factor_positive",
+      "left": 7.131476073260065e-14,
+      "relation": "<",
+      "right": 0.5
+    },
+    {
+      "name": "cos_phase_positive",
+      "left": 0.0,
+      "relation": "<",
+      "right": 0.6427363132804198
+    },
+    {
+      "name": "negative_endpoint_is_left_of_minus_m",
+      "left": 1e-08,
+      "relation": "<",
+      "right": 1.2499984e-08
+    },
+    {
+      "name": "positive_endpoint_is_right_of_m",
+      "left": 1e-08,
+      "relation": "<",
+      "right": 1.2499984e-08
+    },
+    {
+      "name": "whole_inner_interval_abs_x_below_M",
+      "left": 3.0021123107032e-08,
+      "relation": "<",
+      "right": 1e-07
+    },
+    {
+      "name": "log_bound_from_e_greater_than_8_over_3",
+      "left": 2.770083102493075e+31,
+      "relation": "<",
+      "right": 1.195359622141016e+34
+    },
+    {
+      "name": "arctan_lower_bracket_positive",
+      "left": 1.0403584e-06,
+      "relation": "<",
+      "right": 3.0
+    },
+    {
+      "name": "new_reference_mass_loss",
+      "left": 3.4678655930806944e-07,
+      "relation": "<",
+      "right": 3.5e-07
+    },
+    {
+      "name": "normalization_N_above_point99",
+      "left": 0.9801,
+      "relation": "<",
+      "right": 0.99999965
+    },
+    {
+      "name": "normalization_sqrt_2pi_N_above_2_using_12_over_5",
+      "left": 2.0,
+      "relation": "<",
+      "right": 2.376
+    },
+    {
+      "name": "complete_seed_overlap_squared",
+      "left": 8.53203437551987e-06,
+      "relation": "<",
+      "right": 9e-06
+    },
+    {
+      "name": "simple_complete_seed_overlap_squared",
+      "left": 8.70000002e-06,
+      "relation": "<",
+      "right": 9e-06
+    },
+    {
+      "name": "preserved_failed_naive_variance_substitution",
+      "relation": "=",
+      "value": "32/25"
+    },
+    {
+      "name": "old_point_projection_variance_ceiling_at_hi",
+      "relation": "=",
+      "value": "4/5"
+    },
+    {
+      "name": "complete_reflection_added_phase",
+      "left": 1.0442722714861375e-05,
+      "relation": "<",
+      "right": 1.1e-05
+    },
+    {
+      "name": "free_transmission_nonvanishing",
+      "left": 6.815604674440461e-12,
+      "relation": "<",
+      "right": 0.25
+    },
+    {
+      "name": "complete_common_reflection_comparison",
+      "left": 0.0007124427228908614,
+      "relation": "<",
+      "right": 0.000714
+    },
+    {
+      "name": "Sigma_derivative",
+      "left": 10448.017888,
+      "relation": "<",
+      "right": 11000.0
+    },
+    {
+      "name": "emitter_denominator_derivative",
+      "left": 0.060042214215164,
+      "relation": "<",
+      "right": 0.061
+    },
+    {
+      "name": "augmented_matching_derivative",
+      "left": 0.061293333676857,
+      "relation": "<",
+      "right": 0.063
+    },
+    {
+      "name": "drive_norm",
+      "left": 2.000002057798093,
+      "relation": "<",
+      "right": 3.0
+    },
+    {
+      "name": "drive_derivative",
+      "left": 28.001426697918635,
+      "relation": "<",
+      "right": 30.0
+    },
+    {
+      "name": "emitter_coordinate_norm_scaled",
+      "left": 0.16666666666666666,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "emitter_coordinate_derivative_scaled",
+      "left": 0.0005648148148149815,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "finite_row_derivative",
+      "left": 15048.0,
+      "relation": "<",
+      "right": 16000.0
+    },
+    {
+      "name": "closed_tail_square_sum_root",
+      "left": 1.0208333333333333,
+      "relation": "<",
+      "right": 1.022121
+    },
+    {
+      "name": "closed_tail_derivative_square_sum_root",
+      "left": 1.085521556712963,
+      "relation": "<",
+      "right": 1.1025
+    },
+    {
+      "name": "full_localized_K0",
+      "left": 13621.412,
+      "relation": "<",
+      "right": 20000.0
+    },
+    {
+      "name": "full_localized_K1",
+      "left": 591961.905,
+      "relation": "<",
+      "right": 1000000.0
+    },
+    {
+      "name": "complete_C0_scaled_by_kappa",
+      "left": 1.00020031,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "complete_C1_scaled_by_kappa_cubed",
+      "left": 1.0002,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "complete_Rprime_scaled_by_kappa_squared",
+      "left": 492.0000000000022,
+      "relation": "<",
+      "right": 1000.0
+    },
+    {
+      "name": "reference_denominator_derivative",
+      "left": 0.06004221421412,
+      "relation": "<",
+      "right": 0.061
+    },
+    {
+      "name": "reference_profile_norm_scaled",
+      "left": 0.10526315789473684,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "reference_profile_derivative_scaled",
+      "left": 0.00033795013850429197,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "F0_from_normalization_and_band_measure",
+      "left": 2e-06,
+      "relation": "<",
+      "right": 4e-06
+    },
+    {
+      "name": "outgoing_phase_t_derivative_scaled",
+      "left": 0.027036011080336198,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "rho_derivative_scaled",
+      "left": 4.0,
+      "relation": "<",
+      "right": 5.0
+    },
+    {
+      "name": "rank_one_plus_closed_inverse_factor",
+      "left": 1.0000026106781228,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "monotone_denominator_integral_hypothesis",
+      "left": 5.6e-14,
+      "relation": "<",
+      "right": 0.0125
+    },
+    {
+      "name": "I2_scaled_integral",
+      "left": 16.842105263157894,
+      "relation": "<",
+      "right": 17.0
+    },
+    {
+      "name": "I3_scaled_integral",
+      "left": 0.44321329639889195,
+      "relation": "<",
+      "right": 0.5
+    },
+    {
+      "name": "I1_Cauchy_Schwarz_scaled",
+      "left": 3.4e-05,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "F1_weighted_scaled",
+      "left": 1.05700013,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "incoming_A0_scaled",
+      "left": 1.05700013005,
+      "relation": "<",
+      "right": 3.0
+    },
+    {
+      "name": "outgoing_B0_scaled",
+      "left": 20.577000130094895,
+      "relation": "<",
+      "right": 23.0
+    },
+    {
+      "name": "weighted_yprime_constant",
+      "left": 186.588,
+      "relation": "<",
+      "right": 187.0
+    },
+    {
+      "name": "weighted_yprime_U",
+      "left": 64.392,
+      "relation": "<",
+      "right": 65.0
+    },
+    {
+      "name": "weighted_yprime_U_squared",
+      "left": 0.732,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "weighted_localized_prefactor",
+      "left": 1.0002,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "weighted_C0_constant_rounding",
+      "left": 3.6e-07,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "weighted_C1_constant_rounding",
+      "left": 3.7418e-06,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "weighted_C1_U_rounding",
+      "left": 0.06,
+      "relation": "<",
+      "right": 1.0
+    },
+    {
+      "name": "weighted_localized_Dj_scaled",
+      "left": 1.3660003790408586,
+      "relation": "<",
+      "right": 1.5
+    },
+    {
+      "name": "two_columns_in_one_parity_square_sum",
+      "left": 3.731914071079539,
+      "relation": "<",
+      "right": 9.0
+    },
+    {
+      "name": "sqrt_I2_scaled",
+      "left": 17.0,
+      "relation": "<",
+      "right": 25.0
+    },
+    {
+      "name": "sqrt_I4_scaled",
+      "left": 0.023327015599941683,
+      "relation": "<",
+      "right": 0.0256
+    },
+    {
+      "name": "sqrt_I6_scaled",
+      "left": 4.8463328808743105e-05,
+      "relation": "<",
+      "right": 4.9e-05
+    },
+    {
+      "name": "actual_f_L2_derivative_scaled",
+      "left": 0.0097600010000065,
+      "relation": "<",
+      "right": 0.01
+    },
+    {
+      "name": "actual_f_rho_L2_derivative_scaled",
+      "left": 0.2830400010000528,
+      "relation": "<",
+      "right": 0.3
+    },
+    {
+      "name": "outgoing_normalization_at_family_onset",
+      "left": 1.440168856856256e-05,
+      "relation": "<",
+      "right": 0.5
+    },
+    {
+      "name": "infinite_complete_error",
+      "left": 0.0037812033771371253,
+      "relation": "<",
+      "right": 0.004
+    },
+    {
+      "name": "finite_complete_error",
+      "left": 0.004781203377137125,
+      "relation": "<",
+      "right": 0.005
+    },
+    {
+      "name": "vT_condition_at_smallest_onset",
+      "left": 1.0,
+      "relation": "<",
+      "right": 2.5e+20
+    },
+    {
+      "name": "finite_clock_distance_margin_at_smallest_clock",
+      "left": 9.0,
+      "relation": "<",
+      "right": 4.4e+22
+    },
+    {
+      "name": "elementary_boundary_exponential_ceiling",
+      "left": 0.0009385585784912109,
+      "relation": "<",
+      "right": 0.001
+    },
+    {
+      "name": "old_gate_radius_from_full_internal_bounds",
+      "left": 17.485099584434668,
+      "relation": "<",
+      "right": 18.0
+    },
+    {
+      "name": "emitter_decoupled_radius_about_same_center",
+      "left": 9.560042214214064,
+      "relation": "<",
+      "right": 18.0
+    },
+    {
+      "name": "coupled_radius_using_sqrt_two_less_two",
+      "left": 18.00000002,
+      "relation": "<",
+      "right": 19.0
+    },
+    {
+      "name": "weighted_fallback_normalization",
+      "left": 8.518518518518518e-05,
+      "relation": "<",
+      "right": 0.5
+    },
+    {
+      "name": "weighted_fallback_complete",
+      "left": 0.0038102963462962962,
+      "relation": "<",
+      "right": 0.004
+    },
+    {
+      "name": "exact_real_selfenergy_identity",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "exact_optical_density_identity",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "constant_derivative_factor_identity",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "arctan_density_identity",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "positive_log_primitive",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "complete_weighted_product_coefficients",
+      "relation": "=",
+      "value": "0"
+    },
+    {
+      "name": "old1_added_incident_cap",
+      "left": 1.99375712763334,
+      "relation": "<",
+      "right": 2.0
+    },
+    {
+      "name": "old2_added_incident_cap",
+      "left": 1.198638631120596,
+      "relation": "<",
+      "right": 2.0
+    }
+  ],
+  "new_reference_mass": {
+    "m": "1/100000000",
+    "M": "1/10000000",
+    "gamma_upper": "52",
+    "gamma_prime_upper": "560",
+    "log_upper": 80,
+    "phase_deficit": 1.04e-06,
+    "integral_deficit": 3.584e-10,
+    "mass_loss": 3.4678655930806944e-07,
+    "mass_loss_ceiling": "7/20000000",
+    "seed_squared": 8.53203437551987e-06,
+    "seed_squared_simple_ceiling": 8.70000002e-06
+  },
+  "inherited_identity_new_bounds": {
+    "xi_majorant": 2.610671307238899e-06,
+    "relative_profile_majorant": 3.91601718429205e-06,
+    "off_diagonal_overlap": 3.4678856864015735e-15,
+    "phase_correction": 1.0442722714861375e-05,
+    "target_residual_ceiling": "11/62500000000000",
+    "Kloc": 13621.412,
+    "Kloc_prime": 591961.905,
+    "weighted_Dj_times_kappa_squared": 1.3660003790408586,
+    "f_L2prime_times_kappa_squared": 0.0097600010000065,
+    "frho_L2prime_times_kappa_squared": 0.2830400010000528
+  }
+}

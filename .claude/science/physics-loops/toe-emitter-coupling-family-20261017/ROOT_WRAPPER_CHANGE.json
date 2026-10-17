@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-17T03:30:53.085018+00:00",
+  "scope": "Root status/link clarification only; body and primary unchanged. Historical preparation bytes reconstruct from evidence/PREPARATION_MAP.json.",
+  "replacements": {
+    "next_trace_action: \"Complete the separate family analytical review and root qualification, review the portable adaptation, then execute the frozen canonical runner and focused milestone checks. Shared integrated-main landing gates remain later obligations.\"": "next_trace_action: \"Use the separate source qualification and transport acceptance; consult the current execution and publication records. Shared integrated-main landing checks and retained audit remain later obligations.\"",
+    "Its analytical review and qualification are pending.": "Its analytical review and root qualification are complete with disclosed source exposure; retained status is separate.",
+    "source_science_acceptance_complete: false": "source_science_acceptance_complete: true",
+    "wrapper_root_approval: pending_separate_transport_review": "wrapper_root_approval: see_root_transport_acceptance",
+    "canonical_execution: pending_not_executed": "canonical_execution: see_separate_execution_record",
+    "publication: local_reviewable_draft_only": "publication: reviewable_milestone_see_publication_record",
+    "**Claim type:** proposed `bounded_theorem`. **Current status:** frozen author\ncandidate with separate analytical review and root qualification pending. This\nlocal publication packet has not executed its canonical scientific runner.\nIt makes no independent, retained, merged or hardware-realization claim.": "**Claim type:** `bounded_theorem`. **Current status:** conditional support\nwith a completed separate analytical check and root qualification. This is a\nreviewable milestone; retained audit and physical realization remain open.\n\n**Runner:** [scripts/emitter_coupling_family_2026_10_17.py](../scripts/emitter_coupling_family_2026_10_17.py).\n\nThe [execution status](../.claude/science/physics-loops/toe-emitter-coupling-family-20261017/EXECUTION_STATUS.md) records actual canonical reproduction and focused checks separately.",
+    "the proposed family permits": "the checked conditional family permits",
+    "The proposed uniform conclusion": "The conditional uniform conclusion",
+    "The ongoing\nseparate family review, its eventual root decision, wrapper portability approval,\ncanonical execution and retained audit are distinct records; none is inferred\nfrom the inherited fixed-parameter qualifications.": "The completed [separate family review](../.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/family_review/REPORT.md.txt) and\n[root qualification](../.claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/qualification/QUALIFICATION.md.txt) include a pre-author-exposure mass\ncalculation and a source-exposed family check with an independently expanded\nsquared-L2 estimate. Both use the same model and substantial inherited source\nexposure. They do not establish model-diverse or full-dependency independence.\nThe actual runs took 0.770373 and 0.594293 seconds, under CPU30/30 and wall45\ncaps; the maximum matrix dimensions were zero and four. Wrapper portability,\ncanonical reproduction and retained audit are separate records.",
+    "The proposed primary is": "The primary is",
+    "The proposed shared canonical caps": "The shared canonical caps",
+    "Historical author output remains historical evidence. No canonical\nresult or cache is supplied by this draft. The": "Historical author output remains historical evidence. Actual canonical\nresults and freshness are recorded outside the declared scientific input closure\nin the execution status linked above. The",
+    "separate the pending decisions and execution. Focused milestone checks precede": "separate the source decisions and actual execution. Focused milestone checks precede",
+    "status and eventual review records": "status and separate review records"
+  },
+  "body": {
+    "bytes": 39464,
+    "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+  },
+  "new_note": {
+    "bytes": 50396,
+    "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+  },
+  "new_primary": {
+    "bytes": 24786,
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+  },
+  "editable_prompt_files_changed": []
+}

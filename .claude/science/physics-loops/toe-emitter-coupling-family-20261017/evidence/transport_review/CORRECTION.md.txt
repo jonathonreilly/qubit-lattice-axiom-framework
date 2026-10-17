@@ -1,0 +1,31 @@
+# Preserved reviewer static attempt failure
+
+`run01` exited one after 0.083855416 seconds. The copied reviewer program
+incorrectly derived its input root from its location inside `run01`, then
+failed to open `run01/INPUTS.json` at line 7. It had performed no transport
+checks, author-code execution, mutation or scientific calculation.
+
+The correction changes only the reviewer root expression from
+`Path(__file__).resolve().parent` to `Path.cwd().resolve()`. The launcher
+already explicitly sets and records that working directory to this review
+packet. The original execution copy, full traceback, prelaunch and receipt
+remain untouched. The planned second and final static attempt uses the same
+CPU15/15 and external wall20 caps. No author or repository file is changed.
+
+`run02` exited one after 0.064292417 seconds at the draft manifest inventory.
+The reviewer assumed every manifest member was a byte-bearing regular file.
+The two recorded resolver fixtures are symlink metadata entries with target
+strings instead. The checker now treats these explicit entries separately,
+and captures/binds their actual link targets before a third static attempt.
+All source, note and primary frozen pins and earlier regular-file inventory
+rows reached before this failure matched. No transport AST or scientific
+execution had yet run.
+
+`RESOURCE_AMENDMENT.json` predeclares one additional static attempt, retains
+the same CPU15/15 and wall20 caps, and preserves the original resource plan
+as `RESOURCE_PLAN_BEFORE_AMENDMENT.json`. No scientific work is added.
+
+The first patch application for this correction failed because its final
+text context did not match the actual line wrapping in this file. It made
+no changes. The corrected patch was then applied. This was an editing
+operation failure, not a subprocess or scientific failure.

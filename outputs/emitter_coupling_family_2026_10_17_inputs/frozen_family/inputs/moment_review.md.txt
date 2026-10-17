@@ -1,0 +1,282 @@
+---
+review_type: bounded_source_exposed_analytical_review
+candidate_status: conditional_support
+review_conclusion: no_material_defect_found_within_pinned_inherited_premises
+independent_scope: new_moment_derivative_composition_and_finite_clock_steps
+blind_discovery: false
+model_diversity_claim: false
+retained_audit_status: not_assigned
+editable_prompt_files_changed: []
+---
+# Review of the position-moment refinement for the installed emitter
+
+This separate analytical review finds no material mathematical defect in the frozen new argument. Conditional on its pinned installed, weighted and joint-box premises, the candidate establishes complete isometry error below **0.004 for every t >= 10^30** on the infinite apparatus. The finite apparatus with **M = 5*10^31 clock sites** has complete embedded error below **0.005 only on [10^30, 2*10^30]**. The same bounds hold for each fixed actual apparatus in the qualified joint box, with that apparatus's actual common profile and scalar. They do not assert stability of one nominal whole-clock waveform.
+
+I separately derived the position/domain statement, the denominator integrals and derivative estimates, the complete-output composition and the finite-clock comparison. A new exact checker uses a different squared-envelope derivation, a real-space moment/covariance calculation and a 12-dimensional finite graph. It did not import or execute the author checker. There is no requested correction to the candidate and no new physical-realization or retained-audit conclusion.
+
+## 1. Exact scope, exposure and source identity
+
+The reviewed candidate is `sources/author/CANDIDATE.md`, 31,244 bytes, SHA256 **31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f**. Its original `FREEZE.json` is SHA256 **962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197**. Its source manifest is SHA256 **529babd4397fd55a0d5f0e90bb113c79cd8f91ea471a0ec560b564519c27aadf**. This review contains a byte-preserved copy of the entire 59-file frozen author packet, including its 31 input snapshots, full programs, outputs and receipts. Four read procedure sources are also copied. All 57 author file-manifest entries and all 31 supplied source-snapshot identities were checked. The 17 filesystem originals and the local counterparts of 14 `git:` sources matched those snapshots. No fresh Git-object query or repository-head verification was performed.
+
+The complete new argument was read, including the domain, phase, normalization and finite-clock qualifications. The complete new author checker, launcher, resource plan and stdout were read after my different checker was written and executed. All author prelaunch and receipt binding rows were checked mechanically. I read the complete joint candidate, independent report and qualification; the acceptance JSON's semantic fields were read and its identity lists were checked as data. Relevant weighted localized sections were reread. The unchanged installed, generic bridge, interval and local-emitter arguments and the installed/weighted qualification chain were reused by their previously read, checked identities. This is a fresh check of the new implication, not a new independent certification of the entire installed Schur/scattering construction.
+
+The essential inherited pins are:
+
+| Role | Preserved source under `sources/author/inputs/science/` | SHA256 |
+| --- | --- | --- |
+| Installed apparatus and seed-to-packet theorem | `emitter_installed_certificate/CANDIDATE.md` | `4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee` |
+| Installed independent report | `emitter_installed_review/REPORT.md` | `cf9f05affa0155ff4069549490f61971d1d136b9f1e37a5d566c45b0f8d9590f` |
+| Installed root qualification | `emitter_installed_root_review/QUALIFICATION.md` | `dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d` |
+| Weighted complete localized bound | `weighted_emitter_escape_candidate/CANDIDATE.md` | `a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5` |
+| Weighted independent report | `weighted_emitter_escape_review/REPORT.md` | `cb309d98863a09a0db9b47b559a4e7a3a6f55d314b78dfd5379b57a089504028` |
+| Weighted root qualification | `weighted_emitter_root_qualification/QUALIFICATION.md` | `f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b` |
+| Joint structural-box theorem | `joint_static_halt_candidate/CANDIDATE.md` | `76d3a738854a475649512bee2e7b610c179569c04286941b38d91ddfe1aa3df1` |
+| Joint independent report | `joint_static_halt_review/REPORT.md` | `b2a2f9179e24ac9025d61a1bc95faa58152c041f408d8a0d5f0e99777f886223` |
+| Joint root qualification | `joint_static_halt_root_qualification/QUALIFICATION.md` | `c6b1ed381d617cb42cf3e5b3b42a6d471a3cfd05ff07776e4dbeddb5df737375` |
+| Generic domain, grouping and intertwining conventions | `finite_channel_wavepacket_bridge/THEOREM_V2.md` | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+| Original emitter graph/local positive cells | `autonomous_emitter_route/ROUTE.md` | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| Exact rational interval parameters | `two_body_interval_bridge/CERTIFICATE.json` | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` |
+
+The installed, weighted and joint acceptance JSON pins are respectively `c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c`, `01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16` and `3e0111d1ab4253e6d7fd595570deef19a8446f6d5fa0bc48a66472f096c54dca`. Historical pending/provisional text in the bodies remains unchanged; these later qualifications authorize conditional reuse. They do not automatically qualify the new candidate.
+
+This reviewer previously authored the local emitter route, installed certificate, generic bridge, concrete interval bridge and calibration proposal, and drafted an installed/weighted publication packet. I had also performed earlier boundary-reflection source-exposed checks. I did not author this new ballistic candidate or its checker. Its author had previous exposure to the precursor reviews. Root had read the new candidate and considered the moment route before assigning this review, so root is not an unexposed checker. All work here preserves the inherited model and effort. The genuine separation is in the new derivations and executable tests stated below; there is no blind, model-diverse or end-to-end independence claim.
+
+## 2. Position moment and Sobolev domain: separate derivation
+
+Let S on the integer chain satisfy `(S psi)_n = psi_(n-1)`, and let
+
+```text
+h = 2J I - J(S+S*),       X psi(n)=n psi(n),
+V = iJ(S-S*).
+```
+
+On finitely supported sequences, direct multiplication gives `i[h,X]=V` and `[h,V]=0`. Since the commutator is bounded, h preserves the graph domain of X. One can prove this by the finite-support core and closure, or by the periodic Fourier representation where h is multiplication by the smooth E(k). Differentiating on that domain and using the second commutator gives the exact Heisenberg identity `exp(ith) X exp(-ith)=X+tV`. No position/velocity independence or affine dispersion is used.
+
+Under the candidate's F_plus convention, S has multiplier exp(-ik), hence V has multiplier `2J sin(k)=E'(k)`. Under F_minus its multiplier is `-E'(k)`. Integration by parts gives `X F_plus g=F_plus(i g')` and `X F_minus g=F_minus(-i g')`. A function in H1_0(I) has zero endpoint trace, so its zero extension lies in periodic H1. Multiplication by exp(-itE) preserves that domain for each finite t. These facts justify the identities as equalities of Hilbert-space norms, not merely formal differentiation.
+
+For normalized g and v0=E'(k0)>v, this yields
+
+```text
+||(X-v0 t) F_plus(exp(-itE)g)|| = ||i g' + t(E'-v0)g||,
+||(X+v0 t) F_minus(exp(-itE)g)|| = ||-i g' - t(E'-v0)g||.
+```
+
+On n<0, `|n-v0t| >= v0t`; on n>=0, `|n+v0t| >= v0t`. The two projections are exactly the unwanted outgoing and incoming half-lines. Taking norms, using the Hilbert-space triangle inequality and `|E'-v0| <= 2J sigma`, proves the candidate's equation (10):
+
+```text
+wrong-half-line norm <= ||g'||/(v t) + 2J sigma/v.
+```
+
+The floor is the cost of one constant center velocity, not a physical nonzero limiting leakage. It cannot establish exact past-limit normalization. The candidate correctly retains the old decay-to-zero integration-by-parts argument and its exact scattering isometry for that purpose. The new inequality is used only for the stated finite-error late-time estimate.
+
+The new finite-support discriminator takes `psi_0=3/5, psi_1=4i/5`. Exact real-space arithmetic gives
+
+```text
+<V> = 24J/25 > 0,
+||X psi||^2 = 16/25,
+||V psi||^2 = 2J^2,
+Re <X psi,V psi> = 12J/25,
+||(X+tV)psi||^2 = 16/25 + 24Jt/25 + 2J^2 t^2.
+```
+
+A reversed propagation sign fails the positive velocity check. Replacing the Hilbert-space triangle step by a Pythagorean sum would omit the nonzero cross term. These are concrete checks of the relevant identities, not counterexamples to the candidate. The program checks both commutators on that finite-support vector without imposing a false periodic boundary on it.
+
+## 3. Denominator integrals and the actual phase profile
+
+The controlling premises, uniform in either scope, are `Im Df >= 19 kappa^2`, `|Df'| < d=.061`, `|Sigma_f,jj'| <= 560`, `sqrt(2pi)N > 2`, `|g_minus| <= 2`, `|g_minus'| <= 26` and `|t_minus| > 1/2`. With `x=Re Df` and `h=19 kappa^2`, one has `x' >= v-560 kappa^2 > v/2` and `|Df|^2 >= x^2+h^2`. Thus the monotone change of variable has Jacobian at most 2/v. Extending its image to the whole real line is valid even when the nominal center is not a zero of x. There is no linewidth sampling or assumption of zero detuning.
+
+For a separate derivation, let `J_p(h)=integral_R (x^2+h^2)^(-p/2) dx`. The antiderivatives for p=2 and p=3 give `J_2=pi/h` and `J_3=2/h^2`. Differentiation in positive h under the integral is justified locally by an integrable power bound; it gives `J_(p+2)=-J_p'/(p h)`. Therefore
+
+```text
+J_4 = pi/(2h^3),    J_5 = 4/(3h^4),    J_6 = 3pi/(8h^5).
+```
+
+This differs from the author's trigonometric/cosine recurrence. Multiplying by 2/v and using pi<4 gives, for `I_p=integral_I |Df|^(-p)`,
+
+```text
+I_p < c_p kappa^(2-2p),
+c_2=320/19, c_3=160/361, c_4=160/6859,
+c_5=320/390963, c_6=120/2476099.
+```
+
+In particular the candidate's I4, I6 and radical ceilings are correct. The factor 2/v cannot be dropped. The base antiderivatives and recurrence were independently checked symbolically, while the scalar comparisons below use exact rational arithmetic.
+
+For each fixed actual apparatus, N is a scalar independent of k. With `a1=2/sigma+13=2000013`, differentiating the unchanged profile gives
+
+```text
+|f| <= kappa U,
+|f'| <= kappa(a1 U+d U^2),       U=1/|Df|.
+```
+
+The 2/sigma term pays the cutoff derivative. The cutoff is Lipschitz, has zero endpoint trace and only finitely many derivative jumps. Its first weak derivative has no delta contribution; no second derivative is used. Since kappa is fixed and positive, the denominator is uniformly nonzero, making f an H1_0 function.
+
+Writing `n=-i |g_minus|^2/E'` gives `t_minus=1+kappa^2 n/Df`. The inherited `|n|<=160, |n'|<=720` yield
+
+```text
+|rho'| <= 2 + 2880 kappa^2 U + 640 d kappa^2 U^2.
+```
+
+The factor four in differentiating `t_minus/|t_minus|` is safe because `|t_minus|>1/2`; the leading two is `|r0'|`. The actual form factor is `g_minus=exp(ikL)(1-exp(i phi)exp(2ik))`, so `|g_minus|^2=2-2cos(phi+2k)`. At fixed actual phi its derivative is bounded by four. Together with `1/E'<=40` and `|(1/E')'|<100`, this even gives `|n'|<=560<720`, uniformly over the allowed phase box. No old-column phase or derivative with respect to an uncertain basis is inserted.
+
+I checked the L2 ceilings by **squaring the whole nonnegative pointwise majorants before integrating**, rather than by using the author's separate square-root ceilings. In particular,
+
+```text
+||f'||^2 <= kappa^2[a1^2 I2 + 2a1 d I3 + d^2 I4].
+
+|(f rho)'| <= A U+B U^2+C U^3,
+A=kappa(a1+2), B=kappa d+2880 kappa^3, C=640d kappa^3,
+
+||(f rho)'||^2 <= A^2 I2+2AB I3+(B^2+2AC)I4+2BC I5+C^2 I6.
+```
+
+Every cross term is retained. The exact rational upper expressions in `attempt01/stdout.json` give
+
+```text
+kappa^4 ||f'||^2 <= R_f,       R_f approximately 0.00008679982504738311,
+kappa^4 ||(f rho)'||^2 <= R_o, R_o approximately 0.07784918417774626,
+R_f < 0.01^2,                R_o < 0.3^2.
+```
+
+The decimals here are displays; the rational inequalities in the executable/output are controlling. They independently support the candidate's deliberately looser `||f'||<.01/kappa^2` and `||(f rho)'||<.3/kappa^2`. The outgoing phase cannot be omitted: for the finite-support example above, multiplying its Fourier function by exp(-5ik) shifts positions by +5, changing the derivative/position squared norm from 16/25 to 801/25. This discriminator concerns the general phase step; it is not asserted to be the physical resonant packet. In the actual theorem the derivative bounds explicitly retain rho, and f rho has the same zero endpoint trace as f.
+
+## 4. Complete comparator, normalization and column grouping
+
+The inherited map Gamma is an exact scattering-packet isometry, with
+
+```text
+exp(-it Htilde) Gamma_0 = Gamma_t exp(-it Db).
+```
+
+Here Db is the old-vacuum energy matrix; each stationary column has energy E(k)+b_j. The identity follows by applying the spectral equation to the packet and integrating. It never requires the literal old K to commute with the interacting Hamiltonian. The complete seed norm error, below .003 in the exact scope and .0029 in the joint scope, is propagated once by unitarity. It already includes possible seed point-spectrum amplitude and any component outside the comparison packet range. Nothing is discarded by invoking scattering completeness; there is no second charge for the same residual.
+
+The fixed ideal map remains
+
+```text
+Uideal(t)x = zeta exp[-i(nu_actual+2kappa)t]
+                beta_actual,t tensor iota exp(-itK) W x,
+zeta = -exp(-4ik0) alpha.
+```
+
+The actual emitter energy influences f and beta through Df and E(k); it is not an extra overall `exp(-it Ee)` factor. The scalar reserve 2kappa remains part of the physical Hamiltonian and comparator. All old aging begins at the seed time zero. In the original witness convention `r_site1=z^2 r_absolute`; hence the target for `r_absolute(k0)` is `z0^-2 alpha W`, with the original fixed central residual retained (strictly below 1.76e-13), not promoted to an exact equality. Dividing that target by `r0(k0)=-z0^2` gives the single `zeta=-z0^-4 alpha`. The same actual emitter unit phase multiplies both sides of the reflection comparison. This is consistent with the installed conversion and does not replace alpha by an unconverted common scalar or select separate column phases.
+
+Let b_t be the nonnegative restriction of the normalized full-line outgoing Fourier vector and let delta be its actual negative-tail norm. Orthogonality of the two restrictions gives `||b_t||=sqrt(1-delta^2)`. Thus the normalization cost relevant to this comparator is exactly
+
+```text
+||b_t-b_t/||b_t|||| = 1-sqrt(1-delta^2)
+                   = delta^2/(1+sqrt(1-delta^2)) <= delta.
+```
+
+It is a cost for the restricted vector. The corresponding full-line distance is generally larger. The review's distinct toy with positive norm 5/13 and negative norm 12/13 has restricted cost 8/13, while the full-line squared distance is 16/13, greater than the discarded squared norm 144/169. The candidate uses precisely the valid restriction-only inequality. At T, q_out<1/2, so beta is defined, and the same remains true at every later time.
+
+Open outgoing errors are diagonal in the orthonormal old/source vacuum columns. Parseval, restriction and `||f||=1` therefore give the maximum column reflection bound: .000714 originally or .000917 jointly. This orthogonality cannot be reused for localized columns. For a complete localized column C_j, direct Hilbert-valued integration by parts, with vanishing endpoint f, gives
+
+```text
+||L_j(t)|| <= D_j/(sqrt(2pi) v t),
+D_j = integral [ |f'| ||C_j|| + |f| ||C_j'||
+                          +(2J/v)|f| ||C_j|| ] dk.
+```
+
+This follows by differentiating `f C_j/E'` under the integral; `|E''|/E'<=2J/v`. The qualified weighted proof retains the full C_j, including the resonant coordinate, seven complementary emitter coordinates per parity and every closed source tail. It proves `D_j<3/(2kappa^2)`. For two arbitrary columns in each parity, Cauchy-Schwarz gives an operator bound by their square sum, at most `sqrt(2) max_j ||L_j||`. Different parity output subspaces are orthogonal, so the maximum over parity blocks suffices. Hence `D=3/kappa^2` is safe. The exact two-identical-unit-columns example has squared operator norm two while its largest squared column norm is one; it rejects the unsafe maximum-column shortcut. The new free-wave L2 estimates do not replace or weaken this inherited localized L1 product calculation.
+
+Combining the seed, incoming, reflected, normalized outgoing and localized terms yields
+
+```text
+complete error < epsilon_seed+epsilon_R
+              +(.01+.3+3/sqrt(2pi))/(kappa^2 v t)
+              +4J sigma/v
+              < epsilon_seed+epsilon_R
+              +(39/25)/(kappa^2 v t)+4J sigma/v.
+```
+
+This includes the emitter, all source and clock outputs, old system and arbitrary passive reference. Tensoring the isometry difference by an identity does not change its operator norm. The full unhalved trace-distance bound is twice the vector/isometry bound, first for pure inputs with a reference and then by convexity for mixed inputs. A partial-output argument is not being promoted to a complete one.
+
+At `T=10^30`, the exact new remainder is `52502638388379/781250000000000000`. The two complete upper expressions are
+
+| Scope | Exact rational expression | Display |
+| --- | --- | --- |
+| Exact original apparatus | `2954065138388379/781250000000000000` | .0037812033771371253 |
+| Qualified joint box | `3034533888388379/781250000000000000` | .003884203377137125 |
+
+The incoming and outgoing tails are below .000002802 and .000014402, respectively; the complete localized term is strictly below .00005. The constant two-tail spread contribution is `3752638388379/781250000000000000`, approximately .00000480337713712512. It fits both strict margins. Every remaining term decreases as 1/t, proving the stated uniform all-future inequality. This does not infer a completion time from a linewidth or an exponential emission law.
+
+## 5. Joint-interface substitution
+
+The joint theorem keeps J, K, kappa, L, geometry, positive local block forms, head conservation and the exact dark-vacuum identity fixed. It permits the ten named ladder deviations of radius 1e-8, emitter-energy radius 1e-9 and phase radius 1e-8, with `mu1=-nu_actual`. These are static apparatus parameters.
+
+The joint source explicitly rechecks the closed gap .17, physical matching inverse 167, response bound 207, the full localized sums and the same denominator, normalization and phase inequalities used in Sections 2-4 above. Its weighted full-block inverse and coefficientwise C,C' bounds reproduce the same `D=3/kappa^2`. It supplies the .0029 seed and .000917 reflection budgets and sector radius 19. The new derivative-integral proof needs no additional uniform premise: it uses only those inequalities, the common cutoff and unchanged J,v,sigma,kappa. The real shift by the actual Ee does not alter the monotone derivative of Re Df; no resonance is assumed centered at E(k0).
+
+For each apparatus f, rho and beta are fixed common functions for all four old inputs. Their dependence on the actual Ee and phi is allowed and required. The exact vacuum energies remain K, so the free reference denominator is old-independent after subtracting the actual old channel energy. Changes in closed-sector eigenvectors do not require differentiating them with respect to an error parameter in this proof. All derivatives here are in k for one fixed apparatus. The scalar is the actual `nu+2kappa`, and W and zeta are the original fixed ones.
+
+This establishes the claimed premise substitution, not a new independent full-box certificate. The prior joint nominal-waveform countercase at t=10^36 also lies in the new all-future range t>=10^30. It still defeats a nominal-waveform reformulation; it is not evidence of a new countercase precisely at the smaller onset. A fixed nominal nu likewise cannot replace the actual scalar at arbitrarily long times. The candidate correctly preserves these distinctions.
+
+## 6. Finite clock and energy/physical accounting
+
+The prepared one-head sector has the inherited spectral radius at most 19 about a suitable common center c, including all sixteen internal directions. The same radius holds for the actual finite compression. The physical scalar shifts c and remains in the comparator. This is not a bound on the full extensive many-head Hamiltonian norm.
+
+The exact finite compression keeps clock sites 0 through M-1 and the emitter. The far-end term `J n_(M-1)` is necessary when expressing it through the retained positive clock bond blocks. The shortest path from the seed e to the first omitted site M runs through L+2 and has `d=M-L-1`; the other attachment path is two hops longer. On-site internal matrices cannot move a clock position, so all powers of degree less than d agree on the entire seed subspace, not only one internal vector.
+
+For completeness, normalize the centered operators by their radius R=19. In the Chebyshev expansion of exp(-itH), the coefficient of T_m for m>=1 is `2(-i)^m J_m(Rt)`, and the norm of the difference of the two embedded T_m terms is at most two. The low-degree terms agree on the seed. The standard generating-function contour bound at radius e gives `|J_m(Rt)| <= exp(-m+Rt sinh(1))`. Summing from m=d proves
+
+```text
+finite/infinite seed evolution error
+  <= 4 exp[-d+19t sinh(1)]/(1-exp(-1)).
+```
+
+The factor four is thus two from the Chebyshev coefficients and two from the difference of contractions. One may extend the finite operator by c on its orthogonal complement to place both normalized operators in the same contraction space. This makes the compression argument explicit without requiring a spectral bound for an arbitrary zero extension.
+
+My exact 12-dimensional graph uses clock sites 0..10 plus e, attachments L=4 and L+2=6, and a finite compression retaining 0..9. Its Hermitian hoppings and arbitrary rational on-site diagonals yield identical seed powers through degree four and a nonzero difference only at site 10 at degree five. The first coefficient is `-kappa exp(i phi) J^4` for the test values. This verifies the off-by-one risk by an independent finite calculation. It checks the graph combinatorics, not the full installed inverse or physical 10^31-site dynamics.
+
+For the declared `M=5*10^31` and `Tobs=2*10^30`, the exact distance is `49999999999999999999999999999987`. The rational lower buffer `d-19 Tobs*(6/5)` is `4399999999999999999999999999987`, greater than nine. The elementary exponential series gives `e>8/3` and `e<87/32`; consequently `sinh(1)<(87/32-32/87)/2<6/5`. Therefore
+
+```text
+finite error < (32/5)(3/8)^9 = 19683/20971520 < .001.
+```
+
+Adding .001 to the complete infinite-device expressions proves the candidate's finite bounds below .004781204 and .004884204, each below .005. The exact checker also retained the slightly smaller rational final-tail expression; that extra slack is not needed to change the statement. The unhalved complete trace bound is below .01. These finite conclusions hold only through Tobs. The comparator is still the normalized infinite half-line packet in the common embedding, not a silently renormalized truncation.
+
+No physical resources were changed by this proof. The full-qubit positive emitter cells sum to `Ee n_e + the two hoppings + 2kappa I`; their norms and the emitted/returned branches are retained. The added loads are Ee+2kappa at e and 3kappa at each attachment. The old-only cap two does not cap every source/contact/clock load. With V=|L>-exp(i phi)|L+2>, the two orthogonal attachment states give `V*V=2I`, while the seed vacuum identity gives B iota=iota K. Hence, putting c=nu_actual+2kappa,
+
+```text
+Eseed* Hphysical Eseed = K+(Ee+c)I,
+Eseed* Hphysical^2 Eseed = [K+(Ee+c)I]^2+2kappa^2 I.
+```
+
+The second line can be obtained as `(Hphysical Eseed)*(Hphysical Eseed)`; it does not commute K through the later interaction. Mean and variance are therefore the stated K mean plus Ee+c and `Var(K)+2kappa^2`. The finite count remains M+5 qubits. The all-future theorem still supplies an infinite blank tail; the finite theorem supplies a large but finite vacuum apparatus. There is no irreversible sink, exact chirality, Markov decay, capture/reset/reuse, native complex hopping, practical construction or arbitrary-accuracy family proved here.
+
+## 7. Prior art, new contribution and surviving obligations
+
+I inspected the scope and exact matching sections of the two byte-preserved September 24 notes:
+
+- `AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md`, SHA256 `8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e`, section 4: i[K,X]=V, [K,V]=0, X(t)=X+tV and the Hilbert-space moment bound, with a supplied sine packet.
+- `FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md`, SHA256 `9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c`, section 4: the same position identity, an explicit boundary-corrected squared-sine packet and a joint finite-grid application.
+
+Those are direct prior art for the position method, and this review preserves that credit. Their prepared packet and target differ from the actual resonant product-seed emitter. The new load-bearing content is the explicit L2 control of this fixed f and its actual rho, and its complete-output and finite-clock consequences. I did not conduct a new worldwide literature or live-PR survey, and did not treat all lexical search hits as independent premises. The candidate's remaining prior-art snapshots and search records are preserved without expanding this read-coverage claim.
+
+The original 10^72 sufficient result and the qualified weighted 10^36 result remain valid under their respective premises. This refinement makes each declared time and finite clock count smaller by 10^6 relative to the weighted prescription; it does not refute earlier sufficient bounds or establish an optimal scaling. Native coefficient/phase/seed supply, exact structural symmetries, noise outside the static box, interaction realization, any Hamiltonian/Record identification, finite-device permanence, reset/reuse and practical resource costs remain open. A later publication or retained audit must preserve these premises and the exact full-source provenance. This review itself changes no acceptance or audit outcome.
+
+## 8. Actual independent evidence and failure record
+
+`RESOURCE_PLAN.json` declared at most two scientific attempts, with a retry allowed only after an implementation failure, CPU 30 seconds and external wall 45 seconds per child, maximum matrix dimension 16 and maximum matrix power five. One scientific attempt was made and succeeded; actual maximum matrix dimension was 12 and maximum power five. There was no optimizer, parameter/momentum grid, quadrature, dynamics evolution or large-clock allocation. The analytical domain and inherited scattering hypotheses are not established by a PASS string.
+
+The launch sequence is genuinely serialized. `launch_review.py` copies the executable, records its actual bytes, records all 68 bound source/resource/input files plus interpreter and SymPy entry/metadata identities, writes JSON, flushes, fsyncs and closes it, and only then starts the subprocess. The child rereads that exact file and validates its own source hash and all bindings. The record was serialized at **2026-10-17T02:39:48.461866+00:00**; the post-fsync launch timestamp is **02:39:48.474179+00:00**. All input and external-runtime postchecks matched. This order is visible in the complete launcher, not inferred solely from a timestamp label.
+
+The single attempt exited zero in **0.8855362082831562 seconds** of wrapper wall time, using **0.609818 user** and **0.052104 system** CPU seconds. macOS child peak RSS was **64,913,408 bytes**. There is no claimed OS memory limit; finite dimensions and bounded scalar work are explicit. Complete stdout is 6,786 bytes and was read; stderr is empty. Python was 3.13.5 with SymPy 1.14.0. The resolved interpreter binary, 52,640 bytes, is SHA256 `a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5`. SymPy's entry file and distribution metadata are pinned in PRELAUNCH; every installed dependency byte is not pinned. Exact rational scalar tests use the standard Fraction implementation, and the symbolic/finite algebra is corroboration rather than a proof-assistant claim.
+
+| Evidence | SHA256 |
+| --- | --- |
+| `check_ballistic.py` and exact `attempt01/executed_source.py` | `f88ceadf328b5dde79ce748e54324726b3c1f36f747c39a0f91bd15707c76bc9` |
+| `launch_review.py` | `46078ded8af06c85b0e24b466351ba43cd579d5c2b3b5430ec557de191134284` |
+| `attempt01/PRELAUNCH.json` | `8402f0f2112658f496a26fdb520e8b33730b4c958a1eb542406a2d1fea58a324` |
+| `attempt01/RECEIPT.json` | `5b5cf7a37ff12444a2b33c1ac90eef2f9fb4f340cb1cc9f71ec341af568651e5` |
+| `attempt01/stdout.json` | `7706db459f08ac8379e575983bd931851a994b30f835dcf7794e8883266687c6` |
+| `SOURCE_MANIFEST.json` | `453b1a3c3f73c8c83801b4dbb9e2806b6b17b3734fd558cc079e0b8a1f8c97fd` |
+| `RESOURCE_PLAN.json` | `ca028b10290c70453383d3a6634c0fe01b13750c5a3399051f4ef04f7493ab68` |
+| `AUTHOR_EVIDENCE_CHECK.json` | `ae3a03ccfa7c223605e2fa315e1e74496140caea9906f4d272d949040332d952` |
+
+The author checker was not replayed. Its complete source, full output, genuine pre-subprocess write order and all 31 historical input bindings were inspected separately. The preserved author run's ordered timestamps and postchecks agree with its source and claimed zero exit. This is a source/record check, not an independently timestamped attestation of a historical execution. No historical provenance limitation in an inherited source is repaired by relabeling it.
+
+`JOINT_ACCEPTANCE_BINDING_CHECK.json` separately records a final identity check of the joint acceptance's 14 source pins, 43 review artifacts and 29 source/snapshot pairs (115 identity rows, all matching). Its SHA256 is `2570a8aeba676dbe5486f00d3cefa45f62b1deef1e40acbe1f32b86008290d2c`. This bookkeeping occurred after my scientific run; it is not relabeled as a prelaunch input or a replay of those inherited programs. The acceptance document itself was already among the bound inputs.
+
+There were no failed scientific executions. A preparation-only read attempt treated a `git:` source identifier as a local pathname and raised FileNotFoundError before this review directory existed or any file was written. `PREPARATION_FAILURE.md` preserves that failure and the correction: supplied Git snapshots are checked by bytes, and current local counterparts are checked separately without claiming a fresh Git query. An earlier read request used the nonexistent name SOURCE_PINS.json instead of SOURCE_MANIFEST.json; it was a read-only filename correction, not evidence execution. No failed scientific route or parameter search is hidden. The unsuccessful mathematical shortcuts are preserved as explicit discriminators rather than erased.
+
+The current workflow byte identity is `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`; the physics-claim-reviewer skill and proof-search governance were read and pinned. The user/parent restriction to the inherited model and effort controlled over any generic process suggestion. No subdelegation, network, other-chat messaging, source edit, W edit, Git action, PR, checkpoint, prompt, axiom or audit edit was performed. The frozen packet ends at this bounded analytical review; root decides qualification separately.

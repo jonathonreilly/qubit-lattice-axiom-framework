@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-17T03:21:50.389046+00:00",
+  "branch": "physics-loop/toe-emitter-coupling-family-20261017",
+  "parent_head": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "parent_tree": "cec3068ed0dc438d46d351fe470210717cd19655",
+  "parent_pr": 9664,
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "stdout": "",
+  "stderr": "Switched to a new branch 'physics-loop/toe-emitter-coupling-family-20261017'\n",
+  "scope": "New coherent review branch for qualified family-only theorem; no publication, merge or main push."
+}

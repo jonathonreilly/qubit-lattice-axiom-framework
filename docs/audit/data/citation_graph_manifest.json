@@ -1,6 +1,6 @@
 {
- "edge_count": 16164,
- "node_count": 7209,
+ "edge_count": 16165,
+ "node_count": 7210,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6185,6 +6185,10 @@
   "emergent_product_law_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "emitter_coupling_family_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "efb1eceb74aa",
+   "out_degree": 1
   },
   "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
    "deps_hash": "4a2a6080dd99",

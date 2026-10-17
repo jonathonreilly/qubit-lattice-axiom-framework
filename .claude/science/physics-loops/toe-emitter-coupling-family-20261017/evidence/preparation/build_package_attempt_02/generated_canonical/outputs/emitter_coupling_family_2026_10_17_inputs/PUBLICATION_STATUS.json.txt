@@ -1,0 +1,22 @@
+{
+  "canonical_execution": "not_executed_in_this_draft",
+  "excluded_claims": [
+    "joint coefficient box",
+    "calibration extension",
+    "native supply",
+    "physical units",
+    "minimum resources",
+    "arbitrary accuracy",
+    "finite-device all-future permanence"
+  ],
+  "family_independent_review": "pending_separate_review",
+  "family_root_qualification": "pending_not_inferred_from_fixed_parameter_acceptance",
+  "new_family_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "parent_commit": "0f1022e03dbbed8085035f2a378be8ae1aca02e8",
+  "publication": "local_reviewable_packet_not_a_PR",
+  "retained_audit": "not_requested_or_performed",
+  "scientific_mutations": "not_executed_in_this_draft",
+  "shared_source_exposure": "Same author/model as the family and earlier stationary work; prior generic/installed review and publication adaptation. No new independence claim.",
+  "theorem_body": "unchanged frozen author candidate",
+  "wrapper_transport_review": "pending_separate_root_review"
+}

@@ -1,0 +1,23 @@
+{
+  "declared_utc": "2026-10-17T02:58:52.449922+00:00",
+  "scope": "Reference spectral normalization before author exposure, then selective frozen-author changed-premise review.",
+  "model_and_effort": "Inherited, unchanged; no overrides or delegation.",
+  "stage1_scientific_runs_max": 1,
+  "stage2_scientific_runs_max": 1,
+  "implementation_retry_max": 1,
+  "retry_policy": "Retain every failed source/output; no parameter optimization or widening search.",
+  "cpu_seconds_per_run": 30,
+  "wall_seconds_per_run": 45,
+  "matrix_dimension_max": 24,
+  "stage1_matrix_dimension_expected": 0,
+  "parameter_grid_points": 0,
+  "quadrature": false,
+  "dynamics": false,
+  "optimization": false,
+  "memory_policy": "No OS memory cap claimed. Exact scalar/symbolic calculations and any later finite algebra only; record RSS.",
+  "prelaunch_rule": "Write, flush, fsync and close actual source/input/runtime bindings before creating each subprocess.",
+  "planned_stage1": "Exact rational upper-endpoint checks and an elementary logarithm enclosure for the independently derived spectral-density phase-integral bound; preserve failure of old variance bound.",
+  "planned_stage2": "After full author freeze, check changed kappa premises, complete comparison and finite-horizon formulas; do not import/replay author checker.",
+  "write_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_resource_family_review",
+  "source_exposure_boundary": "Do not read mutable new author argument/code. Freeze INITIAL_ANALYSIS.md before reading the later candidate."
+}

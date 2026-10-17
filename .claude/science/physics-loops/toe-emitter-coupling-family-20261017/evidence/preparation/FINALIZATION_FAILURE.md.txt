@@ -1,0 +1,32 @@
+# Preserved finalization lookup failure
+
+A bookkeeping-only inline Python inventory attempt failed before writing any
+readiness, manifest or freeze file. It incorrectly inferred the review directory
+as `emitter_family_review` from the root message. The actual path, subsequently
+read from root's exact `ACCEPTANCE.json`, is `emitter_resource_family_review`.
+The root acceptance and qualification hashes had matched before that lookup.
+No canonical file or scientific source changed, and no science ran.
+
+The failing operation was `raw=(N/rel).read_bytes()` while iterating these pinned
+paths: the root acceptance, root qualification, then the incorrectly named
+`emitter_family_review/REPORT.md`. The expected report SHA256 was
+`053e40728f0336c3a5b5409f8c3ba96bd4d8acb96bf0a57192483a28f4099d3a`.
+The complete tool traceback was:
+
+```text
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_review/REPORT.md'
+```
+
+The command exited one after 0.052448875 seconds of tool-observed wall time.
+This final inventory lookup was not one of the bounded builder/verifier
+subprocesses and has no serialized prelaunch receipt or cap claim. Its failure
+is metadata-path bookkeeping, not a scientific assertion or a failed theorem.
+Finalization uses the paths explicitly supplied in the root acceptance record.

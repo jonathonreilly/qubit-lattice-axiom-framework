@@ -1,0 +1,335 @@
+{
+  "all_bound_inputs_unchanged": true,
+  "child_peak_RSS_native_bytes_macos": 64241664,
+  "child_system_CPU_seconds": 0.045859,
+  "child_user_CPU_seconds": 0.27253499999999997,
+  "executed_source_after": {
+    "bytes": 10866,
+    "sha256": "da6a10d31daabbe43f2c8e760f30b0654feb9739576e4ef913b926c4210409b1"
+  },
+  "finished_utc": "2026-10-17T03:08:19.450765+00:00",
+  "input_postchecks": [
+    {
+      "matches": true,
+      "path": "INITIAL_ANALYSIS.md"
+    },
+    {
+      "matches": true,
+      "path": "INITIAL_REASONING_FREEZE.json"
+    },
+    {
+      "matches": true,
+      "path": "INITIAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "matches": true,
+      "path": "RESOURCE_PLAN.json"
+    },
+    {
+      "matches": true,
+      "path": "STAGE1_RESULT.md"
+    },
+    {
+      "matches": true,
+      "path": "check_reference_mass.py"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_escape_review/REPORT.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/emitter_installed_root_review/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/two_body_interval_bridge/CERTIFICATE.json"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/weighted_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/weighted_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "launch_stage1.py"
+    },
+    {
+      "matches": true,
+      "path": "stage1_run01/PRELAUNCH.json"
+    },
+    {
+      "matches": true,
+      "path": "stage1_run01/RECEIPT.json"
+    },
+    {
+      "matches": true,
+      "path": "stage1_run01/executed_source.py"
+    },
+    {
+      "matches": true,
+      "path": "stage1_run01/stderr.txt"
+    },
+    {
+      "matches": true,
+      "path": "stage1_run01/stdout.json"
+    },
+    {
+      "matches": true,
+      "path": "STAGE1_FREEZE.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/EVIDENCE_READOUT.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/FILE_MANIFEST.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/FREEZE.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/MATCHING_PREMISE_SEARCH.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/READ_FAILURES.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/RESOURCE_PLAN.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/RESOURCE_PLAN_BEFORE_MOMENT.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/RUN_SUMMARY.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/SOURCE_MANIFEST.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/SOURCE_MANIFEST_BEFORE_MOMENT.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/SOURCE_RECHECK.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/add_moment_dependency.py"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/attempt_01/PRELAUNCH.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/attempt_01/RECEIPT.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/attempt_01/check_family.py"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/attempt_01/stderr.txt"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/attempt_01/stdout.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/capture_sources.py"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/check_family.py"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/finalize_packet.py"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/generic_v2.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/installed.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/installed_acceptance.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/installed_qualification.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/installed_review.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/interval.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/interval.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/local_qualification.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/moment.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/moment_acceptance.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/moment_freeze.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/moment_qualification.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/moment_review.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/physics_loop_skill.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/publication.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/publication_inventory.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/route.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/stationary.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/weighted.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/weighted_acceptance.json"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/weighted_qualification.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/weighted_review.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/inputs/workflow.md"
+    },
+    {
+      "matches": true,
+      "path": "author_sources/launch_check.py"
+    },
+    {
+      "matches": true,
+      "path": "AUTHOR_SOURCE_MANIFEST.json"
+    },
+    {
+      "matches": true,
+      "path": "STAGE2_PLAN.json"
+    },
+    {
+      "matches": true,
+      "path": "check_family_delta.py"
+    },
+    {
+      "matches": true,
+      "path": "launch_stage2.py"
+    }
+  ],
+  "launch_utc_after_prelaunch_fsync": "2026-10-17T03:08:18.856488+00:00",
+  "prelaunch": {
+    "bytes": 14772,
+    "sha256": "504f433e4abeb19a4714f2c2e9929de6804eba34d522b50fa408df81be43bd32"
+  },
+  "returncode": 0,
+  "runtime_postchecks": [
+    {
+      "matches": true,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13"
+    },
+    {
+      "matches": true,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+    },
+    {
+      "matches": true,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA"
+    }
+  ],
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 9592,
+    "sha256": "9dcd54dab486d2889da865ed6f117f98aa5e27e0e84690ae21be0fd65c6c5b45"
+  },
+  "timed_out": false,
+  "wall_seconds": 0.594293000176549
+}

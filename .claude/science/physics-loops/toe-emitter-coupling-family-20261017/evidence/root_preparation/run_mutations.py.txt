@@ -1,0 +1,69 @@
+"""Six predeclared copied-source faults; never edit the canonical source."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast
+import hashlib
+import json
+import os
+import resource
+import subprocess
+import sys
+import time
+
+D=Path(__file__).resolve().parent
+W=D.parents[1]/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-emitter-coupling-family-20261017'
+R=D/'mutations'
+R.mkdir(exist_ok=False)
+base=W/'scripts/emitter_coupling_family_2026_10_17.py'
+raw=base.read_bytes();source=raw.decode()
+def pin(p):
+    b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def write(p,j):p.write_text(json.dumps(j,indent=2)+'\n')
+assert pin(base)['sha256']=='6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba'
+assert json.loads((D/'canonical_01/EXECUTION.json').read_text())['status']=='ok'
+declared=next(ast.literal_eval(node.value) for node in ast.parse(source).body if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in node.targets))
+assert len(declared)==54
+specs=[
+ ('mass','mass_loss=(phase_deficit+integral_deficit)/3+eta_inner*eta_inner','mass_loss=(phase_deficit+integral_deficit)/3+eta_inner*eta_inner+F(1,1000)','new_reference_mass_loss'),
+ ('seed','seed_sq=2*(mass_ceiling+eta_p+off)','seed_sq=2*(mass_ceiling+eta_p+off)+F(1,1000)','complete_seed_overlap_squared'),
+ ('outgoing_moment','frho2_scaled=f2_scaled+(2+2880*F(4,25))*hi*hi+640*d*F(7,1000)','frho2_scaled=f2_scaled+(2+2880*F(4,25))*hi*hi+640*d*F(7,1000)+1','actual_f_rho_L2_derivative_scaled'),
+ ('onset','time_scale=F(10**6)','time_scale=F(10**2)','infinite_complete_error'),
+ ('finite_buffer','M_hi=50*T_hi','M_hi=40*T_hi','finite_clock_distance_margin_at_smallest_clock'),
+ ('arctan_sign',"eq('arctan_density_identity',sp.cancel(theta_prime+x*yp/(x*x+y*y)-xp0*y/(x*x+y*y)),0)","eq('arctan_density_identity',sp.cancel(theta_prime-x*yp/(x*x+y*y)-xp0*y/(x*x+y*y)),0)",'arctan_density_identity')]
+cases=[]
+for label,old,new,expected in specs:
+    assert source.count(old)==1
+    case=R/label;case.mkdir()
+    mutated=source.replace(old,new).replace('REPO = Path(__file__).resolve().parents[1]',f'REPO = Path({str(W)!r})')
+    output="(REPO / 'outputs/emitter_coupling_family_2026_10_17.json')"
+    assert mutated.count(output)==1
+    mutated=mutated.replace(output,f'Path({str(case/"unexpected_result.json")!r})')
+    p=case/'mutated.py';p.write_text(mutated);compile(mutated,str(p),'exec')
+    cases.append({'label':label,'scientific_edit':{'old':old,'new':new},'expected_assertion':expected,'program':pin(p), 'transport_only_edits':['Read canonical inputs from fixed W path','Write any unexpected result only inside this case']})
+plan={'planned_utc':datetime.now(timezone.utc).isoformat(),'base':pin(base),'cases':cases,'CPU_soft_hard_seconds':[20,20],'wall_cap_seconds_each':30,'total_case_count':6,'scope':'Fault sensitivity of six distinct scalar/formula/budget obligations, not theorem independence or coverage of every premise. Original comparison thresholds are unchanged.','launcher':pin(Path(__file__))}
+write(R/'PLAN.json',plan)
+environment=os.environ.copy();environment.update(PYTHONDONTWRITEBYTECODE='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
+results=[]
+for case in cases:
+    folder=R/case['label'];program=Path(case['program']['path'])
+    bindings=[pin(base),pin(program),pin(R/'PLAN.json'),pin(Path(__file__)),pin(Path(sys.executable).resolve()),*[pin(W/r) for r in declared]]
+    pre={'captured_utc':datetime.now(timezone.utc).isoformat(),'bindings':bindings,'caps':{'CPU_soft_hard_seconds':[20,20],'external_wall_seconds':30},'argv':[sys.executable,'-u',str(program)],'cwd':str(folder),'expected_assertion':case['expected_assertion'],'thread_count_measured':False,'environment_requests':{k:environment[k] for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS')}}
+    with (folder/'PRELAUNCH.json').open('w') as f:f.write(json.dumps(pre,indent=2)+'\n');f.flush();os.fsync(f.fileno())
+    started=datetime.now(timezone.utc).isoformat();tick=time.monotonic();before=resource.getrusage(resource.RUSAGE_CHILDREN)
+    try:
+        proc=subprocess.run(pre['argv'],cwd=folder,env=environment,capture_output=True,timeout=30)
+        out,err,code=proc.stdout,proc.stderr,proc.returncode;timeout=False
+    except subprocess.TimeoutExpired as exc:
+        out,err,code=exc.stdout or b'',exc.stderr or b'',None;timeout=True
+    elapsed=time.monotonic()-tick;after=resource.getrusage(resource.RUSAGE_CHILDREN)
+    (folder/'stdout').write_bytes(out);(folder/'stderr').write_bytes(err)
+    unchanged=all(pin(Path(row['path']))==row for row in bindings)
+    intended=code==1 and f"AssertionError: ('{case['expected_assertion']}'," in err.decode(errors='replace')
+    record={'label':case['label'],'started_utc':started,'finished_utc':datetime.now(timezone.utc).isoformat(),'elapsed_seconds':elapsed,'exit_code':code,'timed_out':timeout,'intended_assertion_reached':intended,'all_bound_bytes_unchanged':unchanged,'no_result_written':not (folder/'unexpected_result.json').exists(),'user_cpu_seconds':after.ru_utime-before.ru_utime,'system_cpu_seconds':after.ru_stime-before.ru_stime,'prelaunch':pin(folder/'PRELAUNCH.json'),'stdout':pin(folder/'stdout'),'stderr':pin(folder/'stderr')}
+    write(folder/'EXECUTION.json',record);results.append(record)
+    write(R/'RESULTS.json',{'plan':pin(R/'PLAN.json'),'cases':results})
+    assert intended and unchanged and record['no_result_written'],record
+assert base.read_bytes()==raw
+write(Q/'ROOT_MUTATION_REVIEW.json',{'reviewed_utc':datetime.now(timezone.utc).isoformat(),'plan':pin(R/'PLAN.json'),'cases':results,'case_count':6,'unexpected_failures':0,'canonical_source_unchanged':True,'scope':plan['scope'],'all_initial_attempts':True})
+print(json.dumps({'cases':len(results),'intended_failures':sum(r['intended_assertion_reached'] for r in results),'elapsed_sum_seconds':sum(r['elapsed_seconds'] for r in results)},indent=2))

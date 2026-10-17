@@ -1,0 +1,12 @@
+{
+  "declared_utc": "2026-10-17T03:28:57.818284+00:00",
+  "additional_static_attempts": 1,
+  "total_static_attempt_ceiling": 3,
+  "cpu_soft_hard_seconds": [
+    15,
+    15
+  ],
+  "external_wall_seconds": 20,
+  "reason": "Correct reviewer handling of two explicit symlink fixture manifest entries; no author code changed and no science executed.",
+  "previous_plan_sha256": "c3bc2d10a2f02a19410094a797c615afb732790146c93a81d621302004958131"
+}

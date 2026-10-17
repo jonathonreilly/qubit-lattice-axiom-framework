@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+"""Source-exposed independent changed-premise checks; no author imports."""
+from fractions import Fraction as F
+import datetime
+import hashlib
+import json
+from pathlib import Path
+import resource
+import sys
+import time
+sys.dont_write_bytecode=True
+resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+start=time.monotonic();root=Path(sys.argv[1]).resolve();pp=Path(sys.argv[2]).resolve()
+pre=json.loads(pp.read_text())
+assert pre['state']=='serialized_before_subprocess_creation'
+assert hashlib.sha256(Path(__file__).read_bytes()).hexdigest()==pre['executed_source']['sha256']
+for row in pre['bound_inputs']:
+ b=(root/row['path']).read_bytes();assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row
+for row in pre['external_runtime_bindings']:
+ b=Path(row['path']).read_bytes();assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row
+import sympy as s
+def q(z):
+ z=F(z);return {'exact':str(z),'decimal_display_only':float(z)}
+def sq(z):return s.Rational(z.numerator,z.denominator)
+cert=json.loads((root/'initial_sources/two_body_interval_bridge/CERTIFICATE.json').read_text())
+p={k:F(z) for k,z in cert['exact_parameters'].items()}
+first=json.loads((root/'stage1_run01/stdout.json').read_text())
+J=p['J']; zr=p['cos_k'];zi=p['sin_k']; E0=p['epsilon']
+lo,hi=F(1,10**12),F(1,10**8);sig=F(1,10**6);h=sig/2;v=F(1,40);L=12
+assert zr*zr+zi*zi==1 and E0==2*J*(1-zr)
+c=zr*zr-zi*zi;sin2=2*zr*zi
+assert c>F(3,5) and c-2*sig>F(3,5)
+
+# The author's sharper identity is checked here after the separate stage-one
+# mass derivation was frozen. The phase derivative is at fixed apparatus phi.
+k=s.symbols('k',real=True);js,cs,ks=s.symbols('J c kap',positive=True,real=True)
+vg=2*js*s.sin(k);Sigma=-s.I*(2-2*cs*s.exp(2*s.I*k))/vg
+assert s.trigsimp(s.expand_complex(s.re(Sigma))+2*cs*s.cos(k)/js)==0
+gamma=(2-2*cs*s.cos(2*k))/vg
+assert s.trigsimp(s.expand_complex(-s.im(Sigma))-gamma)==0
+E=2*js*(1-s.cos(k));xr=E-ks**2*(-2*cs*s.cos(k)/js)
+assert s.simplify(s.diff(xr,k)-(1-ks**2*cs/js**2)*vg)==0
+x,y,xp,yp,aa,V=s.symbols('x y xp yp a V',real=True)
+theta_prime=(xp*y-x*yp)/(x*x+y*y)
+assert s.simplify(((theta_prime+x*yp/(x*x+y*y))/aa).subs(xp,aa*V)-y*V/(x*x+y*y))==0
+wrong=s.simplify(((theta_prime-x*yp/(x*x+y*y))/aa).subs(xp,aa*V)-y*V/(x*x+y*y))
+assert wrong==-2*x*yp/(aa*(x*x+y*y))
+amin=1-hi**2*c/J**2
+assert F(1,2)<amin<1
+m,Mx,G=F(1,10**8),F(1,10**7),F(52)
+assert v*h-160*hi**2>m and 2*J*h+160*hi**2<Mx
+assert F(32,25)/v<G
+assert 1+(Mx/(19*lo**2))**2 < F(8,3)**80
+Bmass=2*hi**2*G/m+2*hi**2*560*80/v
+assert Bmass==F('0.0000010403584') and Bmass<3
+eta_h=h/(sin2-h)
+delta_m=Bmass/3+eta_h**2
+assert delta_m<F(7,20000000)
+
+# Stage one's independently executed exact Schur bounds are controlling for
+# inverse and overlap; recomputed constants below feed new phase/tail tests.
+r,g=F(1,7),F(9,50);delta=(1+r*r)*r**(L-1);wc=16*(1+r*r)*r**(L-2)
+amax,bmin,bmax=2*sig,2*sin2-2*sig,F(2)
+eta=amax/bmin;sPQ=amax*206*delta;sQP=delta*206*bmax;gamma0=bmin*bmin/(4*J)
+xi=2*eta+hi**2*sPQ*6*sQP/gamma0
+eta_p=(eta+6*hi**2*sPQ*wc/bmin+xi)/(1-xi)
+off=6*hi*wc+6*hi**2*delta*206*bmax*(1+eta_p)
+assert eta_p==F(first['upper_endpoint_Schur_overlap_checks']['eta_p_upper']['exact'])
+assert off==F(first['upper_endpoint_Schur_overlap_checks']['epsilon_off_upper']['exact'])
+seed_sq=2*(delta_m+eta_p+off)
+seed_rounded=2*(F(7,20000000)+F(4,10**6)+F(1,10**14))
+assert seed_sq<seed_rounded==F('0.00000870000002')<F(3,1000)**2
+
+# Complete coherent reflection estimate, including the closed complement.
+closed=6*hi**2*206*delta*wc+6*hi**2*delta**2*206**2*bmax*(1+eta_p)*(4*J/bmin)
+phase_error=2*eta+2*(1+eta)*eta_p+closed+4*eta**2
+assert 4*eta**2<F(1,4) and phase_error<F(11,10**6)
+target_error=F(176,10**15)+702*sig+F(11,10**6)
+assert target_error<F(714,10**6)
+
+# Bounds are analytic positive majorants at hi, not physical matrix samples.
+d=F(61,1000);a1=2/sig+13
+sigmap=560+24*206*2+amax*2000*2+amax*206*24
+assert sigmap<11000 and 2*J+hi**2*sigmap<d
+M16p=2*J/(1-r*r)
+bottomp=2*J+hi**2*(560+24*40*2+amax*100*2+amax*40*24)
+Maugp=max(M16p,bottomp)+48*hi
+assert Maugp<F(63,1000)
+wcp=(700*(1+r*r)+32*r/24)*r**(L-2)+16*(L-2)*(1+r*r)*r**(L-3)/24
+w0=bmax+amax+wc
+w1=(L*bmax+2)+700*amax+(L*amax+2)+wcp
+assert w0<3 and w1<30
+assert w0/18<1 and d*w0/18**2+hi**2*w1/18<1
+K0=332+2*492+L*(492+492)+492*F(1011,1000)
+K1=7404+492+2*21468+L*(16000+(L+1)*492+21468)+14580*F(1011,1000)+492*F(1,24)*F(105,100)
+assert K0==F('13621.412')<20000 and K1==F('591961.905')<10**6
+assert 31*hi+1+20000*hi<2
+assert (2700+10**6)*hi**3+1+20000*hi<2
+assert (700+21468)*hi**2+492<1000
+assert F(2,19)<1 and F(26,19)*hi**2+2*d/19**2<1
+assert F(720,19)*hi**2+160*d/19**2<1
+assert 2*hi**2+4*(F(720,19)*hi**2+160*d/19**2)<5
+weighted_inverse=(1+6*hi**2*sPQ)*(1+6*hi**2*sQP)/(1-xi)
+assert weighted_inverse<2
+assert 1+20000*hi<2 and 36*hi<1
+assert 374*hi+18*10**6*hi**2<1 and 6*10**6*hi<1
+assert 108*d+180<187 and 72*d+60<65 and 12*d<1
+U,kk,ap,dd=s.symbols('U kap a1 d',positive=True)
+product=kk*(ap*U+dd*U**2)*(32+12*kk*U)+kk*U*(2701+131*kk*U+2*kk*U**2)+s.Rational(5,2)*kk*U*(32+12*kk*U)
+expected=kk*(32*ap+2781)*U+(kk**2*(12*ap+161)+32*kk*dd)*U**2+kk**2*(12*dd+2)*U**3
+assert s.expand(product-expected)==0
+Djscaled=(236*a1+5518)*hi**2+544*d*hi+6*d+1
+assert Djscaled<F('1.366000380')<F(3,2)
+F1scaled=a1*hi+17*d
+phase_L1scaled=F(2,500)*hi+48960*hi**2+320*d
+assert F1scaled<F(2)
+assert F1scaled+F(5,2)*F(1,500)*hi<3
+assert F1scaled+phase_L1scaled+F(5,2)*F(1,500)*hi<23
+
+# Alternate squared-L2 polynomials, with every positive cross term retained.
+c2,c3,c4,c5,c6=F(320,19),F(160,361),F(160,6859),F(320,390963),F(120,2476099)
+Rf=c2*a1**2*hi**4+2*c3*a1*d*hi**2+c4*d*d
+aa1=a1+2;bb=d+2880*hi**2;cc=640*d
+Ro=c2*aa1**2*hi**4+2*c3*aa1*bb*hi**2+c4*(bb*bb+2*aa1*cc*hi**2)+2*c5*bb*cc+c6*cc*cc
+assert Rf<F(1,100)**2 and Ro<F(3,10)**2
+author_f=5*a1*hi**2+F(4,25)*d
+author_out=author_f+(2+2880*F(4,25))*hi**2+640*d*F(7,1000)
+assert author_f==F('0.0097600010000065')<F(1,100)
+assert author_out==F('0.28304000100005278')<F(3,10)
+
+# kappa^2*T=10^6 is exact for the whole interval, not an endpoint fit.
+scaled_time=F(10**6);Tmin=scaled_time/hi**2;Tmax=scaled_time/lo**2
+spread=2*J*sig/v
+qin=F(1,100)/(v*scaled_time)+spread
+qout=F(3,10)/(v*scaled_time)+spread
+qloc=F(5,4)/(v*scaled_time)
+total=F(3,1000)+F(714,10**6)+qin+qout+qloc
+assert qout<F(1,2) and v*Tmin>1
+assert total==F(2954065138388379,781250000000000000)<F(4,1000)
+assert total+F(1,1000)==F(3735315138388379,781250000000000000)<F(5,1000)
+buffer_min=F(22,5)*Tmin-22
+assert buffer_min>0 and Tmin==10**22 and Tmax==10**30
+tail=F(32,5)*F(3,8)**9
+assert tail==F(19683,20971520)<F(1,1000)
+weighted_rem=F(26,270000)+F(3)/(F(12,5)*v*10**12)
+# sqrt(pi*v*10^12)>270000 follows from pi>3 and 3*v*10^12>270000^2.
+assert 3*v*10**12>270000**2 and weighted_rem<F(97,10**6)
+assert F(3,1000)+F(714,10**6)+weighted_rem<F(4,1000)
+
+# Exact local positive block and full incident loads, retaining scalar reserves.
+phi=s.expand((sq(zr)+s.I*sq(zi))**2)
+Q=s.diag(0,1,1,2);Q[1,2]=-phi;Q[2,1]=-s.conjugate(phi)
+assert Q==Q.conjugate().T
+lam=s.symbols('lambda');assert s.expand(Q.charpoly(lam).as_expr()-lam**2*(lam-2)**2)==0
+assert E0>2*hi
+loads={'old1_added':2*p['gA'],'old2_added':2*p['gB'],
+ 'source_A':p['DeltaA']+2*p['t']+p['u']+2*p['gA']+2*p['lambdaA'],
+ 'source_B':p['DeltaB']+2*p['t']+p['u']+2*p['gB']+2*p['lambdaB'],
+ 'clock_0':3*J+2*p['lambdaA']+p['mu0'],
+ 'clock_1':4*J+2*p['lambdaB']+p['scalar_reserve'],
+ 'ordinary_clock':4*J,'emitter_attachment':4*J+3*hi,'emitter':E0+2*hi,
+ 'physical_scalar':p['scalar_reserve']+2*hi,'existing_old_edge':F(3)}
+expected_loads={'old1_added':'1.993757127633340','old2_added':'1.198638631120596','source_A':'20.332662089993454',
+ 'source_B':'17.078839343776311','clock_0':'8.015120691541701','clock_1':'6.730044773026091',
+ 'ordinary_clock':'0.120084428428128','emitter_attachment':'0.120084458428128','physical_scalar':'1.459892833020969'}
+for name,val in expected_loads.items():assert loads[name]==F(val),(name,loads[name],val)
+Vmax=2*p['lambdaA']+p['mu0'];radius=2*J+F(19,2)+Vmax+2*hi
+assert max(abs(p['mu1']),abs(2*p['lambdaB']+p['mu1']))<Vmax
+assert Vmax==F('7.925057370220605') and radius<19
+
+usage=resource.getrusage(resource.RUSAGE_SELF)
+out={'role':'Source-exposed independent family changed-premise check','author_checker_imported_or_executed':False,
+ 'prelaunch_sha256':hashlib.sha256(pp.read_bytes()).hexdigest(),'verified_input_count':len(pre['bound_inputs']),
+ 'mass_identity':{'fixed_c_self_energy_and_a_factor':True,'corrected_arctangent_identity':True,'wrong_sign_defect':str(wrong),
+  'a_lower':q(amin),'author_Bmass':q(Bmass),'author_delta_m':q(delta_m),'seed_squared_upper':q(seed_sq),'rounded_seed_squared_upper':q(seed_rounded)},
+ 'phase_and_regularities':{'common_reflection_phase_upper':q(phase_error),'fixed_target_residual_kept':q(F(176,10**15)),
+  'gate_comparison_upper':q(target_error),'Sigma_g_derivative_upper':q(sigmap),'Maug_derivative_upper':q(Maugp),
+  'drive_norm_upper':q(w0),'drive_derivative_upper':q(w1),'K0':q(K0),'K1':q(K1),
+  'weighted_inverse_coefficient':q(weighted_inverse),'weighted_Dj_scaled_upper':q(Djscaled),
+  'weighted_F1_scaled':q(F1scaled),'weighted_phase_L1_scaled':q(phase_L1scaled)},
+ 'L2':{'independent_squared_f_scaled_upper':q(Rf),'independent_squared_outgoing_scaled_upper':q(Ro),
+  'author_triangle_f_scaled':q(author_f),'author_triangle_outgoing_scaled':q(author_out),
+  'uniformity':'All expanded scaled upper polynomials have nonnegative coefficients; hi bounds the whole interval.'},
+ 'complete_family':{'kappa_squared_T':q(scaled_time),'T_min':q(Tmin),'T_max':q(Tmax),
+  'qin_at_T':q(qin),'qout_at_T':q(qout),'localized_at_T':q(qloc),'infinite_total':q(total),
+  'finite_total_with_001':q(total+F(1,1000)),'finite_tail_rational_upper':q(tail),
+  'ceiling_M_rule':'M=ceil(50T) >=50T; d=M-13; d-19(2T)(6/5)-9 >=(22/5)T-22.',
+  'minimum_ceiling_buffer':q(buffer_min),'minimum_M':int(50*Tmin),'maximum_M':int(50*Tmax),
+  'weighted_fallback_remainder_upper':q(weighted_rem),'actual_scalar_profile_old_aging_required':True},
+ 'physical':{'two_qubit_Q_over_kappa_characteristic':'lambda^2*(lambda-2)^2','maximum_matrix_dimension':4,
+  'loads_at_upper_endpoint':{name:q(val) for name,val in loads.items()},'prepared_sector_radius_upper':q(radius)},
+ 'runtime':{'python':sys.version,'sympy':s.__version__},
+ 'resources':{'wall_seconds':time.monotonic()-start,'user_CPU_seconds':usage.ru_utime,'system_CPU_seconds':usage.ru_stime,
+  'peak_RSS_native_bytes_macos':usage.ru_maxrss,'matrix_dimension_max':4,'CPU_soft_hard_seconds':[30,30],'wall_cap_seconds':45,
+  'grids':0,'quadratures':0,'dynamics':0},
+ 'scope':'Original exact ladder only; frozen source-exposed family implication. No retained audit, native preparation, joint calibration box or arbitrary accuracy.',
+ 'result':'All declared stage-two exact checks passed.'}
+print(json.dumps(out,indent=2,sort_keys=True))

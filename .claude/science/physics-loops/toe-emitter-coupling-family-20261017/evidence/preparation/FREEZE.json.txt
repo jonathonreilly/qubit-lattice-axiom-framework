@@ -1,0 +1,48 @@
+{
+  "body_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "canonical_note": {
+    "bytes": 49492,
+    "path": "canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d"
+  },
+  "canonical_primary": {
+    "bytes": 24786,
+    "path": "canonical/scripts/emitter_coupling_family_2026_10_17.py",
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+  },
+  "editable_prompt_files_changed": [],
+  "file_manifest": {
+    "bytes": 27686,
+    "path": "FILE_MANIFEST.json",
+    "sha256": "e35dcbed3aa8fed4d3c6d138c3672fd2a956aa9d5f8277817f84b8cf6a3b4513"
+  },
+  "frozen_utc": "2026-10-17T03:21:55.231522+00:00",
+  "later_root_status": {
+    "bytes": 1567,
+    "path": "LATER_ROOT_STATUS.json",
+    "sha256": "4e66e16c52841f5f58bf2b80f2023b96daa0e649226a077f19e19c815282f1c3"
+  },
+  "readiness": {
+    "bytes": 11374,
+    "path": "READINESS.json",
+    "sha256": "75490cfce9b2f7579131435458a473abf1a87e0aea63df38b3569d6cabd4f5b7"
+  },
+  "scientific_executions": 0,
+  "scientific_mutations": 0,
+  "source_map": {
+    "bytes": 18853,
+    "path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+    "sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9"
+  },
+  "static_verification": {
+    "bytes": 154402,
+    "path": "STATIC_VERIFICATION.json",
+    "sha256": "5c5e3c9d70403d5a7c741e1e03d9bcefcdcef2ae646049ffa576f7c7389c12dd"
+  },
+  "status": "Local draft frozen for root portability review; canonical runner and scientific mutations unexecuted",
+  "transport_ledger": {
+    "bytes": 112960,
+    "path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+    "sha256": "94df73ea48613754892e9cfc9a9759a0d542f8bf7706eaf14c191d6845af615d"
+  }
+}

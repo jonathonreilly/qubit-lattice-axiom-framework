@@ -1,0 +1,204 @@
+{
+  "qualified_utc": "2026-10-17T02:49:34.038914+00:00",
+  "disposition": "Accepted for conditional provisional mathematical reuse within exactly the pinned installed/weighted/joint premises. No retained audit or publication/merge outcome.",
+  "source_pins": {
+    "candidate": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/CANDIDATE.md",
+      "bytes": 31244,
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    "candidate_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/FREEZE.json",
+      "bytes": 2526,
+      "sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197"
+    },
+    "author_code": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/check_bounds.py",
+      "bytes": 7430,
+      "sha256": "04096a96f6db5c36562d1dded05f7c8c089efd6620e5aff76d42207ca371bb53"
+    },
+    "author_prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/run01_PRELAUNCH.json",
+      "bytes": 12970,
+      "sha256": "23a663edd6be1025e7f5045fb82c3d42ea043d7386f5cc942df164deb24ea292"
+    },
+    "author_execution": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_candidate/run01_execution.json",
+      "bytes": 14141,
+      "sha256": "3e4f1fc767f1868373384800a3ca35d2e4cdfd3c2da94d1fee96de40270468b5"
+    },
+    "root_initial_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_root_initial_review.json",
+      "bytes": 2296,
+      "sha256": "691179f38101851f88c029d6a238a2dc8dafe18bfc10bf12c97788bc35e8e432"
+    },
+    "independent_report": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/REPORT.md",
+      "bytes": 32078,
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77"
+    },
+    "independent_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/FREEZE.json",
+      "bytes": 2794,
+      "sha256": "dae8a0835128d5e58e9e69b52b67c973512ca7bb6726db38685ab80ea7df6aae"
+    },
+    "review_file_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/FILE_MANIFEST.json",
+      "bytes": 15061,
+      "sha256": "f4b8b5c76d1863faae08c3e391bd5245657f6db65273eb47d99e4f36744c73b3"
+    },
+    "review_source_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/SOURCE_MANIFEST.json",
+      "bytes": 34080,
+      "sha256": "453b1a3c3f73c8c83801b4dbb9e2806b6b17b3734fd558cc079e0b8a1f8c97fd"
+    },
+    "independent_code": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/check_ballistic.py",
+      "bytes": 10502,
+      "sha256": "f88ceadf328b5dde79ce748e54324726b3c1f36f747c39a0f91bd15707c76bc9"
+    },
+    "independent_launcher": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/launch_review.py",
+      "bytes": 4491,
+      "sha256": "46078ded8af06c85b0e24b466351ba43cd579d5c2b3b5430ec557de191134284"
+    },
+    "independent_resource_plan": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/RESOURCE_PLAN.json",
+      "bytes": 1373,
+      "sha256": "ca028b10290c70453383d3a6634c0fe01b13750c5a3399051f4ef04f7493ab68"
+    },
+    "independent_prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/attempt01/PRELAUNCH.json",
+      "bytes": 15648,
+      "sha256": "8402f0f2112658f496a26fdb520e8b33730b4c958a1eb542406a2d1fea58a324"
+    },
+    "independent_execution": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/attempt01/RECEIPT.json",
+      "bytes": 9138,
+      "sha256": "5b5cf7a37ff12444a2b33c1ac90eef2f9fb4f340cb1cc9f71ec341af568651e5"
+    },
+    "independent_stdout": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/attempt01/stdout.json",
+      "bytes": 6786,
+      "sha256": "7706db459f08ac8379e575983bd931851a994b30f835dcf7794e8883266687c6"
+    },
+    "independent_stderr": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/attempt01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "author_evidence_check": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/AUTHOR_EVIDENCE_CHECK.json",
+      "bytes": 3175,
+      "sha256": "ae3a03ccfa7c223605e2fa315e1e74496140caea9906f4d272d949040332d952"
+    },
+    "joint_after_run_binding_check": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/ballistic_emitter_escape_review/JOINT_ACCEPTANCE_BINDING_CHECK.json",
+      "bytes": 41539,
+      "sha256": "2570a8aeba676dbe5486f00d3cefa45f62b1deef1e40acbe1f32b86008290d2c"
+    },
+    "installed_qualification": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_root_review/QUALIFICATION.md",
+      "bytes": 2489,
+      "sha256": "dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d"
+    },
+    "weighted_qualification": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/weighted_emitter_root_qualification/QUALIFICATION.md",
+      "bytes": 2186,
+      "sha256": "f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b"
+    },
+    "joint_qualification": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/joint_static_halt_root_qualification/QUALIFICATION.md",
+      "bytes": 2371,
+      "sha256": "c6b1ed381d617cb42cf3e5b3b42a6d471a3cfd05ff07776e4dbeddb5df737375"
+    },
+    "published_exact_ladder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/PUBLICATION.json",
+      "bytes": 2842,
+      "sha256": "c84fc8ea015ae5793dccf4c9ef6f103339b3a0ff4cb9d3979d82a5d019bb19a5"
+    }
+  },
+  "root_read_coverage": [
+    "Complete new candidate argument and author code/launcher/plan/stdout",
+    "Complete independent report, code, launcher, resource plan and all stdout; empty stderr verified",
+    "Full prelaunch binding/receipt structure and final source/evidence identities",
+    "Necessary inherited installed/weighted/joint premises reused by exact qualified identity; no repeat certification of their entire proof graph"
+  ],
+  "mathematical_judgments": [
+    "H1 zero endpoint extension and bounded derivative of the smooth Fourier multiplier justify both position-domain identities; outgoing/incoming signs checked.",
+    "Wrong half-line norm uses the centered position moment, retaining the constant velocity-spread floor; old decay-to-zero normalization proof remains required and unchanged.",
+    "Monotone real denominator with ImDf>=19kappa^2 yields I4/I6. Independent derivative-in-h recurrence and squared positive envelopes retain all cross terms and support both derivative ceilings.",
+    "Actual rho derivative, cutoff joins and fixed per-apparatus normalization are included. No new common nominal waveform or per-column phase adjustment.",
+    "Restricted-vector normalization is used in the correct output space. Complete localized columns retain the sqrt(2) parity grouping; only orthonormal open channels use a maximum.",
+    "Seed mismatch includes point-spectrum amplitude and is paid once. Actual scalar nu+2kappa and old aging from timezero remain; no extra global Ee factor.",
+    "Joint substitution uses its qualified uniform denominator/gap/normalization/localized bounds and actual profile. No parameter-basis derivative or broad noise theorem is introduced.",
+    "Finite Chebyshev comparison retains the first omitted graph distanceM-L-1, factorfour, sector radius19 and finite-only horizon. Twelve-dimensional graph checks the distance, not large apparatus dynamics."
+  ],
+  "qualified_bounds": {
+    "fixed_parameters": {
+      "kappa": "1e-12",
+      "sigma": "1e-6",
+      "J": "3752638388379/125000000000000",
+      "v": "1/40",
+      "L": 12
+    },
+    "infinite_onset": "1e30",
+    "infinite_scope": "Every time at least onset; exact original apparatus or each fixed apparatus in the qualified static joint box, with its actual common output profile and scalar.",
+    "new_remainder": "52502638388379/781250000000000000",
+    "original_upper": "2954065138388379/781250000000000000 < .004",
+    "joint_upper": "3034533888388379/781250000000000000 < .004",
+    "finite_sites": "5e31",
+    "finite_time_interval": "[1e30,2e30]",
+    "finite_added_error": "< .001",
+    "finite_complete_error": "< .005",
+    "unhalved_trace_bounds": {
+      "infinite": "< .008",
+      "finite": "< .01"
+    },
+    "finite_qubits": "M+5",
+    "same_seed_energy_variance": "Var(K)+2kappa^2"
+  },
+  "actual_verification": {
+    "review_manifest_members_verified": 78,
+    "total_review_files_including_manifest_and_freeze": 80,
+    "review_source_pairs_verified": 63,
+    "author_original_source_pairs_verified": 31,
+    "prelaunch_bound_files": 68,
+    "external_runtime_bindings": 3,
+    "wrapper_wall_seconds": 0.8855362082831562,
+    "child_user_cpu_seconds": 0.609818,
+    "child_system_cpu_seconds": 0.052104,
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "wall_cap_seconds": 45,
+    "maximum_matrix_dimension": 12,
+    "maximum_matrix_power": 5,
+    "scientific_runs": 1,
+    "failed_scientific_runs": 0,
+    "author_replayed": false,
+    "dynamics_or_quadrature": false,
+    "new_root_scientific_execution": false
+  },
+  "exposure": "Same-model source-exposed analytical review. Reviewer authored inherited installed/generic/interval/local/calibration work, but not this moment candidate. Alternative squared-envelope/real-space checks are independent of the new author checker; inherited full graph is not newly recertified. Root considered a moment route beforehand.",
+  "provenance_limits": [
+    "Historical execution is bound by preserved executable/launcher/prelaunch/current hashes, not independent tamper-evident time attestation.",
+    "Reviewer checked local counterparts of14Git sources; root now also verified exact supplied Git-object identities through author manifest.",
+    "Joint115-row binding report occurred after the scientific run and remains labeled so. Its acceptance document was already bound.",
+    "Author CPU limit is soft20/hard21 and wall30, not a20/20 pair.",
+    "Read-only git-URI/filename preparation errors are preserved; no scientific failure or unreported retry."
+  ],
+  "prior_art": "Exact free-chain position identity credited to the two pinned2026-09-24 repository notes. This qualification concerns explicit resonant-profile derivative and complete-output consequences, not generic moment/scattering novelty.",
+  "open_obligations": [
+    "Native positive-block/coherent-phase/clean-vacuum/excited-seed supply",
+    "Practical resources and physical time/energy identification",
+    "Arbitrary-accuracy family and the nonzero fixed target residual",
+    "Noise outside the static structured box",
+    "Finite-device all-future permanence, complete capture/reset/reuse and Record formation",
+    "Coherent milestone publication, shared integrated-main landing gates and independent retained audit"
+  ],
+  "editable_prompt_changes": [],
+  "physical_axioms_changed": [],
+  "audit_verdict_applied": false
+}

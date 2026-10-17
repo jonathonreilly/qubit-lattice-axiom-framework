@@ -1,0 +1,45 @@
+{
+  "cache_cycle_rule": "Any declared note/input change after a canonical run invalidates that run for final freshness and requires a new receipt, while preserving the earlier result.",
+  "execution_order": [
+    "Precreate the intended output directory and output slot before canonical cache input fingerprinting",
+    "Serialize exact source, input, binary, environment and cap bindings before subprocess launch",
+    "Use repository execute_and_write_cache with the declared external wall limit and process CPU limit",
+    "Preserve full stdout/stderr, receipt, result and cache, including every failed attempt",
+    "Compare all scientific report fields with preserved author stdout; exclude only explicitly named transport/runtime fields",
+    "Verify source/input hashes and generation tokens after the run before claiming freshness"
+  ],
+  "landing_boundary": "Focused milestone checks now. Current conformance section 12 reserves full integrated-main pipeline, strict lint and changed-evidence gates for the exact shared landing candidate.",
+  "mutation_policy": "Only after separately approved exact copied-source cases and cap/source bindings; count intended scientific assertions only. No mutations are supplied as completed evidence here.",
+  "non_scientific_comparison_exclusions": [
+    "report._canonical_execution",
+    "report.actual_resources.python",
+    "report.actual_resources.sympy",
+    "report.actual_resources.cpu_soft_hard_seconds",
+    "report.actual_resources.wall_cap_external_seconds",
+    "report.actual_resources.program_wall_seconds",
+    "outer canonical wrapper fields"
+  ],
+  "planned_canonical_primary": "scripts/emitter_coupling_family_2026_10_17.py",
+  "planned_external_wall_cap_seconds": 30,
+  "planned_output": "outputs/emitter_coupling_family_2026_10_17.json",
+  "planned_shared_cpu_soft_hard_seconds": [
+    20,
+    20
+  ],
+  "prerequisites": [
+    "Separate analytical family review and root qualification",
+    "Root read of full wrapper and exact transport ledger",
+    "Root transport acceptance recorded separately",
+    "Finalize note/status/input bytes and declared input manifest"
+  ],
+  "root_owned": [
+    "Git and worktree operations",
+    "value/scope decisions",
+    "citation graph decisions and execution",
+    "final readiness",
+    "publication",
+    "audit"
+  ],
+  "scope": "One author scalar checking function, 103 historical scalar/algebra comparisons. No parent checker imports, numerical samples, matrices, quadrature, optimization or dynamics.",
+  "status": "Plan only: canonical science and mutations not executed"
+}

@@ -1,0 +1,111 @@
+{
+  "all_bound_inputs_unchanged": true,
+  "child_peak_RSS_native_bytes_macos": 62734336,
+  "child_system_CPU_seconds": 0.044957,
+  "child_user_CPU_seconds": 0.242454,
+  "executed_source_after": {
+    "bytes": 6766,
+    "sha256": "2272f1dee9d40348cacfaf85ceaa4738ca70006da2e9cea92e8ff1fd1b8b7d6a"
+  },
+  "finished_utc": "2026-10-17T03:02:19.200767+00:00",
+  "input_postchecks": [
+    {
+      "matches": true,
+      "path": "initial_sources/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/weighted_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/two_body_interval_bridge/CERTIFICATE.json"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/ballistic_emitter_escape_review/REPORT.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/emitter_installed_root_review/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "initial_sources/weighted_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "matches": true,
+      "path": "INITIAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "matches": true,
+      "path": "INITIAL_ANALYSIS.md"
+    },
+    {
+      "matches": true,
+      "path": "INITIAL_REASONING_FREEZE.json"
+    },
+    {
+      "matches": true,
+      "path": "RESOURCE_PLAN.json"
+    },
+    {
+      "matches": true,
+      "path": "check_reference_mass.py"
+    },
+    {
+      "matches": true,
+      "path": "launch_stage1.py"
+    }
+  ],
+  "launch_utc_after_prelaunch_fsync": "2026-10-17T03:02:18.430450+00:00",
+  "prelaunch": {
+    "bytes": 5183,
+    "sha256": "6e9fc2ea3e1f7b8fedd6c5e80b65cf58b86a4608841a444cbdcaca235a4a7d8f"
+  },
+  "returncode": 0,
+  "runtime_postchecks": [
+    {
+      "matches": true,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13"
+    },
+    {
+      "matches": true,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+    },
+    {
+      "matches": true,
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA"
+    }
+  ],
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 6406,
+    "sha256": "8b06ff48bd3a87f98ccfd96a01b5d4a87a8af9aeb56fe1e870cbfeea23e6d598"
+  },
+  "timed_out": false,
+  "wall_seconds": 0.7703732498921454
+}

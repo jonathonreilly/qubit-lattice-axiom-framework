@@ -1,0 +1,65 @@
+{
+  "frozen_utc": "2026-10-17T03:33:00.677861+00:00",
+  "review_kind": "selective static transport review only",
+  "disposition": "No transport blocker found at the frozen draft identities; later wrapper/status integration and canonical execution remain separately owned.",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 19242,
+    "sha256": "360e4ed40dc195432aa1e4e7dfc4ee66723c3fae6f213b77b55b9192f13be07c"
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 24069,
+    "sha256": "6ecdeac5f005c3e67b2dd044ac56d6925f9569347ef48732cce151c04bdf5df3"
+  },
+  "inputs": {
+    "path": "INPUTS.json",
+    "bytes": 125086,
+    "sha256": "6dfd7dd824a7547fb77789290ee3149a906389b4a697ba55604ffe9dccf01000"
+  },
+  "checker": {
+    "path": "check_transport.py",
+    "bytes": 17365,
+    "sha256": "dc90654efd24c91a88aabf6de7fb80f576ba12059432cb074ade057d8b823aad"
+  },
+  "launcher": {
+    "path": "launch_check.py",
+    "bytes": 4247,
+    "sha256": "81de1c71127528479fa15baa45a6924391ce5be20bf2c31c1efa5aecdc774cfb"
+  },
+  "successful_static_output": {
+    "path": "run03/stdout.json",
+    "bytes": 39870,
+    "sha256": "e5f92a0178893edcfc91af890a753afeaea77163194f78c5ba8cf4b0c1039a2a"
+  },
+  "successful_static_prelaunch": {
+    "path": "run03/PRELAUNCH.json",
+    "bytes": 133013,
+    "sha256": "9a69183525924bce0ca4f4ad1f4e3b3ee021d99abae11a5241e652eadfed1613"
+  },
+  "successful_static_receipt": {
+    "path": "run03/RECEIPT.json",
+    "bytes": 133275,
+    "sha256": "fdeebc9f9f25d6c6a82abb900b261d0b075344f20def836b9c7a57b8554e70fd"
+  },
+  "draft_freeze_sha256": "3e4f183d7bfda728b9e3ed68cecebaedaccbbda2af9484ff4672c4c26f0657cf",
+  "canonical_primary_sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+  "canonical_note_sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d",
+  "body_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "reviewer_static_attempts": 3,
+  "preserved_reviewer_static_failures": 2,
+  "scientific_executions": 0,
+  "scientific_mutations": 0,
+  "original_input_file_bindings": 182,
+  "unique_byte_snapshots": 93,
+  "successful_prelaunch_file_bindings": 283,
+  "preserved_symlink_target_records": 2,
+  "editable_prompt_files_changed": [],
+  "git_or_publication_or_audit_actions": false,
+  "independent_theorem_requalification": false,
+  "recovered_historical_launcher": {
+    "path": "LAUNCHER_RECOVERY.json",
+    "bytes": 374,
+    "sha256": "1c9c5d64f4affd6d017fd4ab7d8f5eac1d07b35e4f238496931958158f95da3a"
+  }
+}

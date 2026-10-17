@@ -1,0 +1,10 @@
+{
+  "status": "Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.",
+  "publication_paths": 204,
+  "declared_inputs": 54,
+  "cache": "fresh",
+  "mutations": 6,
+  "vocabulary_violations": 0,
+  "added_graph_nodes": 1,
+  "added_graph_edges": 1
+}

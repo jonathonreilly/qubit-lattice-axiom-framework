@@ -1,0 +1,118 @@
+# Selective portability review of the emitter coupling-family adapter
+
+**Disposition: no transport blocker found at the frozen identities below.** The adapter preserves the original scientific statement ASTs, resolves its only scientific input through a finite local map, and preserves the complete historical source packet. This supports root's next integration step. It is not a canonical execution result, scientific mutation result, new theorem qualification, publication approval or retained audit.
+
+One integration obligation remains explicit: the frozen wrapper and `PUBLICATION_STATUS.json` retain their drafting-time family-review-pending labels. The separate later root acceptance now qualifies the family mathematics. Root should update the later wrapper/status/evidence links, keep the original mathematical body and historical records unchanged, and regenerate affected note/body/artifact/input identities before execution. The current count of 54 declared inputs applies to this exact draft; additional declared qualification records require a refreshed closure check.
+
+## Frozen scope and identities
+
+All paths below are relative to the campaign directory `renewal_20261016_230727`, unless marked repository-relative. `INPUTS.json` records 182 read-source bindings in 93 deduplicated byte snapshots, plus separately captured metadata for the two historical resolver symlinks. The source packet is the freeze at **2026-10-17T03:21:55.231522Z**.
+
+| Object | SHA256 |
+|---|---|
+| `emitter_family_publication_draft/FREEZE.json` | `3e4f183d7bfda728b9e3ed68cecebaedaccbbda2af9484ff4672c4c26f0657cf` |
+| Proposed `scripts/emitter_coupling_family_2026_10_17.py` | `6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba` |
+| Proposed `docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d` |
+| Original family body, 39,464 bytes and 835 lines | `9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac` |
+| Original `emitter_resource_family_candidate/check_family.py` | `731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027` |
+| Parent `scripts/product_seed_emitter_2026_10_17.py` | `6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26` |
+| `build_package.py` | `675df84e27d6629ed4da673548c2dea4e69105ee0d15f30d8f6f48d46b64a49b` |
+| `verify_static.py` | `c8e895793073cdde15e55eaf54f9be454f27d1ce6a93e2ef893e2248b6f80e86` |
+| `launch_static.py` | `21d015a494968402cdb3d9cbf49a4acc64d9a738b5b82812adc392fa7e3f34f6` |
+| Finite `SOURCE_MAP.json` | `e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9` |
+| Complete `TRANSPORT_EDIT_LEDGER.json` | `94df73ea48613754892e9cfc9a9759a0d542f8bf7706eaf14c191d6845af615d` |
+| Later `emitter_family_root_qualification/ACCEPTANCE.json` | `a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325` |
+
+The supplied parent is PR9664 head `0f1022e03dbbed8085035f2a378be8ae1aca02e8`. I compared all nineteen reused parent-file bytes against the draft's frozen identities: eighteen original source dependencies and the additional parent infrastructure primary. I did not run Git or independently refresh the branch/head identity. Root supplied that commit identity; byte agreement for the actual required files was checked locally. No W file was changed.
+
+The later qualification document, SHA `27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814`, and acceptance were read completely. Their accepted scope is the exact nominal ladder, fixed energy/phase, kappa in [10^-12,10^-8], sigma=10^-6, actual coupling-dependent common waveform, infinite error below .004 after T=10^6/kappa^2, and finite error below .005 on [T,2T] for M=ceil(50T). They explicitly exclude a joint static/calibration box, one nominal waveform across the family, native supply, practical cost and retained audit. This review neither enlarges nor re-proves that scope.
+
+## Complete execution and transport inspection
+
+I read the complete canonical primary, builder, static verifier and static launcher, the complete new wrapper and packaging/status/failure records, and every changed transport expression. The unchanged theorem body was checked byte for byte in the note and source packet; its mathematics was not re-reviewed in this transport task. The scientific expressions in the original checker were compared across the complete AST with the adapted body, including the source/executed original identity. Copied parent infrastructure was read in the canonical primary and compared with the exact parent AST. No parent scientific body was imported or invoked.
+
+The reviewer-owned checker reverses separately specified edits on the adapted AST and compares the result with the original module. It does not use the builder's replacement strings or PASS claims as authority for permitted changes. The ledger is checked afterward against the independently reconstructed correspondence. Results: **224 original statements**, **220 adapted function statements**, **216 unchanged original statement ASTs**, exactly **eight transport events**, and all **103 `lt`/`eq` comparison-call ASTs identical**. The complete original module AST is recovered. Comments and blank-line layout are not AST statements; their complete original bytes remain in the preserved original program.
+
+| Original source location | Event | Result and replacement responsibility |
+|---|---|---|
+| Line 13 | Remove `HERE=Path(__file__).resolve().parent` | Historical launch directory is no longer a runtime root. Canonical REPO comes from the installed primary's path. |
+| Line 14 | Remove historical `PRELAUNCH.json` read | Old receipts stay evidence; they are not rerun as canonical input selectors. |
+| Lines 15–17 | Remove loop reading absolute historical prelaunch bindings | Replaced by the declared artifact integrity pass and hash-bound finite resolver, with a new canonical prelaunch/cache record still required. |
+| Line 18 | Remove assertion that historical process limit equals (20,20) | Canonical `main` sets (20,20) once and reports the actual shared process limit. This is execution transport, not removal of a scientific inequality. |
+| Line 19 | Remove `D=HERE.parent` | No remaining `HERE`, `PRE`, `D` or `__file__` dependency inside the scientific function. |
+| Line 34; adapted line 105 | Route one interval read | `(D/'inputs/interval.json').read_text()` becomes `inputs.read_text('family_author','inputs/interval.json')`, selecting identical certified bytes. |
+| Original report lines 235–248; adapted lines 519–532 | Replace wall-cap metadata expression | Only the literal external wall-cap field becomes `inputs.shared_limits()['external_wall_cap_seconds']`. Reversing this expression recovers the full report AST, including all scientific fields and limitations. |
+| Original line 249; adapted lines 534–535 | Replace final print | Adds `_canonical_execution` metadata and returns the original report. The new outer wrapper writes and summarizes it. |
+
+The original source's strict inequality assertions, symbolic wrong-sign discriminator, rational arithmetic, target residual, source/load values, failed variance shortcuts, endpoint majorants and report meanings are unchanged. This establishes transport fidelity, not correctness of those mathematical statements.
+
+The canonical `FrozenInputs` class at lines 19–62 and `verify_artifacts` at lines 65–74 are AST-identical to the parent. Their AST SHA256 values are `bb46f9c5e6af70a13c71e8c5defa5e5507f86ada7c57867c6812fcc58c0212fe` and `6446e26ad828d3f66f2e7af39818ec7ca222e498e7736a0300b6dddca81f2666`. Imports at module scope are standard library only. Scientific SymPy import and calculations are inside `run_family_author`; the guarded `main` is its sole call site. Merely importing the module does not invoke that body, change the CPU limit or write the result.
+
+## Finite input closure, reconstruction and writes
+
+The source map reconstructs all **45 original family files** exactly: **27 byte-preserved new copies** and **18 reused parent files**. Every source path maps once to a unique destination. All original file-manifest entries, original manifest/freeze bytes, actual attempt source/output/receipt, earlier plans, source snapshots and failed-route records are present. The Markdown copies have passive `.md.txt` names. This reconstructs the original tree's bytes; it does not claim the unchanged historical scripts can be launched portably with their original absolute receipt paths.
+
+The proposed overlay contains **36 files**. Its literal `AUDIT_INPUT_PATHS` contains **54 distinct relative paths**. These equal the **53 artifact-manifest members plus the artifact manifest itself**. Every new overlay input other than the primary is declared. The primary is bound by the transport ledger and must also be bound by the canonical runner/cache. The manifest excludes itself and the primary from its member list, avoiding self-reference while keeping both within the intended source/input provenance chain. All 53 member byte lengths and SHA256 values match. All twelve active wrapper links resolve to declared local inputs or the primary.
+
+There are exactly two resolver aliases: `inputs/interval.json` and `__original_program__`. Both map to declared, exact-byte files. The former is the only scientific file read in the adapted function. The latter preserves provenance; no parent or historical program is executed. Missing role/name lookups raise a key error. Destination paths must be relative, normalized and free of `..`; the resolver rejects symlink files and ancestors, constrains resolved paths below REPO, then checks length and SHA256 before UTF-8 decoding. Historical absolute strings cannot act as fallbacks. The runtime resolver has no network, directory-search or undeclared-path fallback.
+
+The outer integrity function verifies the complete artifact set before the scientific function. The sole canonical write is the intended `outputs/emitter_coupling_family_2026_10_17.json`, outside the frozen input tree. The adapted function has no file write. No canonical result/cache is present in the draft, and the package does not assert that such a run already passed. The reproduction plan correctly requires precreating the output directory/slot before canonical input fingerprinting and comparing source/input generations after the future run.
+
+The two symlinks in the packaging scratch fixture are explicitly classified historical transport fixtures. They are outside the canonical overlay. Their target strings are preserved and matched separately; they do not weaken the canonical resolver's rejection rule. The author's nine resolver rejection cases were inspected as historical evidence. I did not rerun them or execute the resolver in this task.
+
+## Shared limits and output semantics
+
+Canonical `main` sets one shared CPU soft/hard pair **(20,20)** before integrity checking and the single scientific call. `AUDIT_TIMEOUT_SEC=30` is the external wall declaration. The code explicitly says that `FrozenInputs` does **not** enforce wall time; future `runner_cache` execution must supply it. Thus this is an honest planned envelope, not a demonstrated future run duration. No separate per-function reset, subordinate scientific process, parameter grid, matrix, quadrature, optimizer or dynamics invocation was introduced.
+
+The returned scientific report retains its original meaning. The outer object adds declared input hashes, resolved reads, elapsed time, actual shared process limits and explicit scope limitations. Runtime/Python/SymPy/cap fields and `_canonical_execution` are separately identified in `REPRODUCTION_PLAN.json` as the comparison exclusions; scientific fields are not excluded. Future execution must compare those remaining report fields with the preserved author output. The stdout summary counts the one completed body and its comparisons; it does not claim independent analytical review.
+
+`LATER_ROOT_STATUS.json` accurately records that family science was separately root-qualified after the draft's initial metadata was written. It does not manufacture canonical execution. The later integration wrapper should bind that acceptance, retain the source-exposed same-model review limits and keep canonical execution, portability acceptance, publication and audit as separate records. Updating only later wrapper/status material is appropriate; silently replacing historical pending labels inside the 835-line body or old receipts is not.
+
+## Failure and evidence preservation
+
+All 112 entries of the draft file manifest were verified, including the two fixture symlink records. The original family's failed variance ceiling 32/25, weaker point-projection ceiling 4/5 and nonzero wrong-sign arctan residual remain in the preserved body/program/output. Their scope is an inadequate shortcut, not mass above one or a broad no-go.
+
+The builder/verifier history is preserved with actual executed copies, true prelaunch records, full streams and receipts. The first builder failed parsing at line 173 with an unclosed dictionary. Parsing that frozen attempted source reproduces the syntax diagnosis without executing it. The second overlay had an indentation-induced change in its function-docstring constant; all later function statements match the final overlay. The complete builder change between attempts two and three only changes that docstring representation and adds explanatory comments. The third builder is the current builder source. These checks support the disclosed correction history rather than treating earlier success as final fidelity.
+
+Historical static wall times are 0.051365209 seconds for failed builder one, 0.550634833 for builder two, 0.706443333 for final builder three and 0.976906708 for the static verifier. The stored prelaunch and postlaunch bindings agree in each receipt. Those histories are preserved in the local draft, outside its canonical overlay. Root should retain selected exact source/stream/receipt evidence in the companion publication pack when integrating; duplicate generated trees need not become runtime dependencies.
+
+The separate finalization lookup failure is disclosed with its failing operation and full traceback. It has no serialized prelaunch record or complete bounded-subprocess provenance, as `FINALIZATION_FAILURE.md` explicitly states. I do not upgrade it to a capped execution. It is bookkeeping-path evidence and does not affect the verified code/body/source identities.
+
+This review also preserves its own failures. `run01` failed before checks because my copied checker chose the attempt directory for `INPUTS.json`; `run02` reached the draft inventory but assumed symlink manifest entries had byte-length fields. The fixes affect only reviewer tooling. A predeclared amendment allowed one additional static attempt under unchanged limits. The original plan, both execution copies, full errors and receipts remain. A failed patch-context application is recorded in `CORRECTION.md`; it changed no file.
+
+## Reviewer execution, coverage and limits
+
+The reviewer-owned program imports only standard-library analysis tools and **never imports or executes the adapter, family checker, author verifier, resolver class or scientific mutation**. It parses their source as data. It checks the full byte closure and inversely normalizes the eight transport changes independently of the author verifier's execution. Reading the author verifier beforehand makes this source-exposed transport checking, not a blind pass.
+
+The initial resource plan specified CPU15/15, external wall20, maximum 350 file bindings, at most 20 MB of logical captured source inputs, no matrices and no scientific execution. After the two reviewer setup failures, `RESOURCE_AMENDMENT.json` allowed a third and final static attempt under the same limits. There was no RSS cap; peak RSS was measured.
+
+| Reviewer attempt | Result | Wrapper wall seconds | Meaning |
+|---|---|---:|---|
+| `run01` | Exit 1 | 0.083855416 | Reviewer input-root failure, before transport checks |
+| `run02` | Exit 1 | 0.064292417 | Reviewer manifest-kind assumption, before AST checking |
+| `run03` | Exit 0 | 0.224204125 | Complete AST, source closure, input binding and history check |
+
+Successful run three reported 0.165917750 seconds internally, 0.161684 user CPU seconds, 0.033132 system CPU seconds and macOS child peak RSS 32,112,640 bytes. Its **283 file bindings and two symlink target records were serialized before subprocess launch**. All captured bytes/generation fields and link targets remained unchanged afterward. Every run has its actual source copy and complete streams. No scientific run or scientific mutation was performed in this review.
+
+The launcher for the first two attempts was hash-bound before and after each
+run but was not initially copied beside their executed checker. After its
+symlink amendment, I recovered that earlier launcher by reversing only the
+recorded insertions and verified exact byte length and SHA256 against both
+prelaunch records. `HISTORICAL_LAUNCHER_RECOVERED.py` and
+`LAUNCHER_RECOVERY.json` preserve this recovery. It is not mislabeled as a
+launcher copy made before those runs.
+
+| Reviewer evidence | SHA256 |
+|---|---|
+| `INPUTS.json` | `6dfd7dd824a7547fb77789290ee3149a906389b4a697ba55604ffe9dccf01000` |
+| `check_transport.py` and `run03/executed_source.py` | `dc90654efd24c91a88aabf6de7fb80f576ba12059432cb074ade057d8b823aad` |
+| Final reviewer launcher | `81de1c71127528479fa15baa45a6924391ce5be20bf2c31c1efa5aecdc774cfb` |
+| `run03/PRELAUNCH.json` | `9a69183525924bce0ca4f4ad1f4e3b3ee021d99abae11a5241e652eadfed1613` |
+| `run03/RECEIPT.json` | `fdeebc9f9f25d6c6a82abb900b261d0b075344f20def836b9c7a57b8554e70fd` |
+| `run03/stdout.json` | `e5f92a0178893edcfc91af890a753afeaea77163194f78c5ba8cf4b0c1039a2a` |
+
+I previously reviewed related installed/weighted/interval arguments and authored the fixed-coupling moment and resonance candidates. I did not author this family publication adapter, but share model and substantial prior source context. This review was specifically limited to transport and preserved scope; it supplies no additional independence for the family's mathematics. The independent family report was not newly re-derived here. Its exact root qualification was read and bound as the authority for the separate mathematical status.
+
+The current W workflow SHA `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3` matches the previously read current-main instructions. Relevant current repository freshness/reviewer guidance was read; explicit task limits controlled model, delegation and permitted actions. No Git/fetch, PR, checkpoint, prompt, physical-axiom, audit, repository mutation or other-chat action occurred. All new files are under `emitter_family_portability_review/`. Editable prompt files changed: **none**.
+
+Root's remaining integration work is to bind the later qualification on the wrapper, refresh affected hashes and declarations, perform the actual bounded canonical run and scientific-output comparison, and decide the separately authorized focused publication checks. Static fidelity here must not be reported as any of those completed outcomes.

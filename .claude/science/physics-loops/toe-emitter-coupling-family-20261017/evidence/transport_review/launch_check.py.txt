@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Real prelaunch receipt for one bounded reviewer static-only subprocess."""
+from pathlib import Path
+import datetime,hashlib,json,os,resource,subprocess,sys,time
+R=Path(__file__).resolve().parent
+idx=json.loads((R/'INPUTS.json').read_text());plan=json.loads((R/'RESOURCE_PLAN.json').read_text())
+attempt=len(list(R.glob('run[0-9][0-9]')))+1
+assert attempt<=plan['maximum_runs_after_recorded_correction']
+A=R/f'run{attempt:02d}';A.mkdir()
+executed=A/'executed_source.py';executed.write_bytes((R/'check_transport.py').read_bytes())
+def identity(p):
+    data=p.read_bytes();st=p.stat()
+    return {'path':str(p),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),
+            'generation':{'inode':st.st_ino,'mtime_ns':st.st_mtime_ns,'ctime_ns':st.st_ctime_ns}}
+paths={R/'INPUTS.json',R/'RESOURCE_PLAN.json',R/'check_transport.py',Path(__file__),executed,Path(sys.executable).resolve()}
+paths.update({R/'SYMLINK_INPUTS.json',R/'RESOURCE_AMENDMENT.json'})
+paths.update(Path(r['original']) for r in idx['files'])
+paths.update(R/r['snapshot'] for r in idx['files'])
+assert len(paths)<=plan['max_input_file_bindings']
+before=[identity(p) for p in sorted(paths)]
+by_path={r['path']:r for r in before}
+for row in idx['files']:
+    for p in [Path(row['original']),R/row['snapshot']]:
+        assert by_path[str(p)]['sha256']==row['sha256'] and by_path[str(p)]['bytes']==row['bytes']
+env=dict(os.environ);env['PYTHONDONTWRITEBYTECODE']='1'
+argv=[sys.executable,'-B',str(executed)]
+pre={'captured_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+     'before_subprocess_start':True,'kind':'Reviewer AST/hash checks only; no scientific code execution',
+     'argv':argv,'cwd':str(R),'cpu_soft_hard_seconds':plan['cpu_soft_hard_seconds'],
+     'external_wall_seconds':plan['external_wall_seconds'],'bindings':before}
+symlinks=json.loads((R/'SYMLINK_INPUTS.json').read_text())['symlinks']
+for row in symlinks:assert Path(row['path']).is_symlink() and os.readlink(row['path'])==row['target']
+pre['symlink_targets_before_subprocess']=symlinks
+(A/'PRELAUNCH.json').write_text(json.dumps(pre,indent=2)+'\n')
+pre_id=identity(A/'PRELAUNCH.json');start_utc=datetime.datetime.now(datetime.timezone.utc).isoformat()
+usage0=resource.getrusage(resource.RUSAGE_CHILDREN);start=time.monotonic();timeout=False
+def caps():resource.setrlimit(resource.RLIMIT_CPU,tuple(plan['cpu_soft_hard_seconds']))
+try:
+    result=subprocess.run(argv,cwd=R,env=env,capture_output=True,timeout=plan['external_wall_seconds'],preexec_fn=caps)
+    stdout,stderr,code=result.stdout,result.stderr,result.returncode
+except subprocess.TimeoutExpired as err:
+    stdout,stderr,code=err.stdout or b'',err.stderr or b'',None;timeout=True
+wall=time.monotonic()-start;usage1=resource.getrusage(resource.RUSAGE_CHILDREN)
+(A/'stdout.json').write_bytes(stdout);(A/'stderr.txt').write_bytes(stderr)
+after=[identity(p) for p in sorted(paths)]
+rec={'started_utc':start_utc,'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+     'returncode':code,'timed_out':timeout,'wrapper_wall_seconds':wall,
+     'child_user_cpu_seconds':usage1.ru_utime-usage0.ru_utime,
+     'child_system_cpu_seconds':usage1.ru_stime-usage0.ru_stime,
+     'child_ru_maxrss_bytes_macos':usage1.ru_maxrss,
+     'prelaunch':pre_id,'prelaunch_record_unchanged':identity(A/'PRELAUNCH.json')==pre_id,
+     'all_bound_input_bytes_and_generations_unchanged':before==after,'after_bindings':after,
+     'stdout':identity(A/'stdout.json'),'stderr':identity(A/'stderr.txt'),
+     'cpu_soft_hard_seconds':plan['cpu_soft_hard_seconds'],'external_wall_seconds':plan['external_wall_seconds'],
+     'scientific_runner_executions':0,'scientific_mutation_executions':0}
+rec['symlink_targets_unchanged']=all(Path(row['path']).is_symlink() and os.readlink(row['path'])==row['target'] for row in symlinks)
+(A/'RECEIPT.json').write_text(json.dumps(rec,indent=2)+'\n')
+print(json.dumps({'attempt':attempt,'bindings':len(before),'returncode':code,'timeout':timeout,
+                  'wall_seconds':wall,'inputs_unchanged':before==after,
+                  'receipt_sha256':identity(A/'RECEIPT.json')['sha256']},indent=2))
+raise SystemExit(0 if code==0 and not timeout and before==after else 1)

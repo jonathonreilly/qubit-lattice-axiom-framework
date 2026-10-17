@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+"""Reviewer-owned AST and byte-transport check. Never import/execute targets."""
+from pathlib import Path,PurePosixPath
+import ast,copy,datetime,difflib,hashlib,json,posixpath,re,resource,time
+resource.setrlimit(resource.RLIMIT_CPU,(15,15))
+START=time.monotonic();R=Path.cwd().resolve()
+index=json.loads((R/'INPUTS.json').read_text());bindings={x['original']:x for x in index['files']}
+P=Path(index['draft_root']);S=Path(index['family_root']);W=Path(index['provided_parent_worktree']);N=R.parent
+for row in bindings.values():
+    raw=(R/row['snapshot']).read_bytes()
+    assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256']
+def raw(p):return (R/bindings[str(p)]['snapshot']).read_bytes()
+def obj(p):return json.loads(raw(p))
+def sha(b):return hashlib.sha256(b).hexdigest()
+def ad(n):return ast.dump(n,include_attributes=False)
+def parse(s):return ast.parse(s).body[0]
+def aid(n):return sha(ad(n).encode())
+def binding(p):return {'original':str(p),'bytes':len(raw(p)),'sha256':sha(raw(p))}
+def repo_raw(rel):
+    p=PurePosixPath(rel)
+    assert not p.is_absolute() and '..' not in p.parts and p.as_posix()==rel
+    canonical=P/'canonical'/rel
+    return raw(canonical) if str(canonical) in bindings else raw(W/rel)
+
+PREFIX='outputs/emitter_coupling_family_2026_10_17_inputs'
+PRIMARY='scripts/emitter_coupling_family_2026_10_17.py'
+NOTE='docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+BASE='0f1022e03dbbed8085035f2a378be8ae1aca02e8'
+meta=lambda name:json.loads(repo_raw(PREFIX+'/'+name))
+freeze=obj(P/'FREEZE.json')
+assert freeze['frozen_utc']=='2026-10-17T03:21:55.231522+00:00'
+for key in ['canonical_primary','canonical_note','file_manifest','later_root_status','readiness','source_map','static_verification','transport_ledger']:
+    row=freeze[key];b=raw(P/row['path']);assert len(b)==row['bytes'] and sha(b)==row['sha256'],key
+assert sha(repo_raw(PRIMARY))=='6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba'
+assert sha(repo_raw(NOTE))=='6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d'
+draft_manifest=obj(P/'FILE_MANIFEST.json')
+for row in draft_manifest['files']:
+    b=raw(P/row['path']);assert len(b)==row['bytes'] and sha(b)==row['sha256'],row['path']
+
+smap=meta('SOURCE_MAP.json');assert smap['exact_parent_commit']==BASE
+source_manifest=obj(S/'FILE_MANIFEST.json');source_paths={r['path'] for r in source_manifest['files']}|{'FILE_MANIFEST.json','FREEZE.json'}
+assert len(source_paths)==45 and len(smap['files'])==45
+assert {r['source_relative_path'] for r in smap['files']}==source_paths
+assert len({r['path'] for r in smap['files']})==45
+source_pairs=[]
+for row in smap['files']:
+    b=raw(S/row['source_relative_path']);target=repo_raw(row['path'])
+    assert b==target and sha(b)==row['sha256'] and len(b)==row['bytes']
+    source_pairs.append({'source':row['source_relative_path'],'canonical':row['path'],
+                         'sha256':sha(b),'bytes':len(b),'transport':row['transport']})
+assert sum(x['transport']=='reuse_exact_tracked_parent_file' for x in source_pairs)==18
+assert sum(x['transport']=='byte_preserved_new_copy' for x in source_pairs)==27
+for row in source_manifest['files']:
+    assert len(raw(S/row['path']))==row['bytes'] and sha(raw(S/row['path']))==row['sha256']
+source_freeze=obj(S/'FREEZE.json')
+assert sha(raw(S/'FILE_MANIFEST.json'))==source_freeze['file_manifest']['sha256']
+assert sha(raw(S/'FREEZE.json'))=='ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98'
+body=raw(S/'CANDIDATE.md');assert sha(body)=='9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac'
+body_map=meta('PROOF_BODY_MAP.json');note=repo_raw(NOTE);wrapper=raw(P/'WRAPPER.md')
+assert note[body_map['body_start_byte_inclusive']:body_map['body_end_byte_exclusive']]==body
+assert note==wrapper+b'<!-- BEGIN UNCHANGED FAMILY AUTHOR BODY -->\n'+body+b'\n<!-- END UNCHANGED FAMILY AUTHOR BODY -->\n'
+assert len(body.splitlines())==835 and len(body)==39464 and sha(note)==body_map['note_sha256']
+
+otext=raw(S/'check_family.py').decode();ptext=repo_raw(PRIMARY).decode()
+ot=ast.parse(otext);pt=ast.parse(ptext)
+fn=next(n for n in pt.body if isinstance(n,ast.FunctionDef) and n.name=='run_family_author')
+assert [x.arg for x in fn.args.args]==['inputs'] and not fn.args.defaults and fn.args.vararg is None and fn.args.kwarg is None
+allowed_removed=[
+ "HERE=Path(__file__).resolve().parent",
+ "PRE=json.loads((HERE/'PRELAUNCH.json').read_text())",
+ "for row in PRE['bindings']:\n    path=Path(row['path'])\n    assert hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256'], 'prelaunch binding mismatch'",
+ "assert resource.getrlimit(resource.RLIMIT_CPU)==(20,20)",
+ "D=HERE.parent"]
+removed_hashes={ad(parse(s)) for s in allowed_removed}
+assert len(removed_hashes)==5
+# Undo only separately specified transport operations, without ledger text as authority.
+groups=[([i],copy.deepcopy(n)) for i,n in enumerate(fn.body[:-2])]
+expected_end=ast.parse("report['_canonical_execution'] = inputs.execution_metadata('family_author')\nreturn report").body
+assert [ad(n) for n in fn.body[-2:]]==[ad(n) for n in expected_end]
+groups.append(([len(fn.body)-2,len(fn.body)-1],parse('print(json.dumps(report,indent=2))')))
+read_new=parse("data=json.loads(inputs.read_text('family_author', 'inputs/interval.json'))")
+read_old=parse("data=json.loads((D/'inputs/interval.json').read_text())")
+dynamic_wall=ast.parse("inputs.shared_limits()['external_wall_cap_seconds']",mode='eval').body
+normalized=[];group_kinds=[]
+for inds,node in groups:
+    kind='unchanged_statement_ast'
+    if ad(node)==ad(read_new):node=read_old;kind='adapted_input_read'
+    elif isinstance(node,ast.Assign) and len(node.targets)==1 and isinstance(node.targets[0],ast.Name) and node.targets[0].id=='report':
+        resources=next(val for key,val in zip(node.value.keys,node.value.values) if isinstance(key,ast.Constant) and key.value=='actual_resources')
+        wi=next(i for i,k in enumerate(resources.keys) if k.value=='wall_cap_external_seconds')
+        assert ad(resources.values[wi])==ad(dynamic_wall)
+        resources.values[wi]=ast.Constant(value=30);kind='actual_limit_metadata_only'
+    elif len(inds)==2:kind='return_instead_of_print_transport'
+    normalized.append(node);group_kinds.append(kind)
+filtered=[n for n in ot.body if ad(n) not in removed_hashes]
+assert len(ot.body)==224 and len(fn.body)==220 and len(filtered)==len(normalized)==219
+assert [ad(n) for n in filtered]==[ad(n) for n in normalized]
+assert {ad(n) for n in ot.body if ad(n) in removed_hashes}==removed_hashes
+ledger=meta('TRANSPORT_EDIT_LEDGER.json');assert len(ledger['events'])==224
+events=[];cursor=0;restored=[]
+for i,old in enumerate(ot.body):
+    if ad(old) in removed_hashes:
+        inds=[];kind='removed_historical_launch_transport';restored.append(copy.deepcopy(old))
+    else:
+        inds,node=groups[cursor];kind=group_kinds[cursor];restored.append(normalized[cursor]);cursor+=1
+    event=ledger['events'][i]
+    assert event['original_statement_index']==i and event['kind']==kind
+    assert event['original_ast_sha256']==aid(old)
+    assert event.get('new_statement_indices',[])==inds
+    assert event['new_ast_sha256']==[aid(fn.body[j]) for j in inds]
+    assert event['original_lines']==[old.lineno,old.end_lineno]
+    assert event['new_lines']==[[fn.body[j].lineno,fn.body[j].end_lineno] for j in inds]
+    if kind!='unchanged_statement_ast':
+        expected_old="'wall_cap_external_seconds':30" if kind=='actual_limit_metadata_only' else ast.get_source_segment(otext,old)
+        assert event['original_text']==expected_old
+        events.append({'source_index':i,'kind':kind,'original_lines':event['original_lines'],
+                       'new_lines':event['new_lines'],'original_text':expected_old,
+                       'replacement_text':event.get('replacement_text')})
+assert ad(ast.Module(body=restored,type_ignores=[]))==ad(ot) and len(events)==8
+old_calls=[ad(n) for n in ast.walk(ot) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id in {'lt','eq'}]
+new_calls=[ad(n) for n in ast.walk(fn) if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id in {'lt','eq'}]
+assert old_calls==new_calls and len(new_calls)==103
+reads=[ast.unparse(n) for n in ast.walk(fn) if isinstance(n,ast.Call) and isinstance(n.func,ast.Attribute) and n.func.attr in {'read_text','read_bytes','write_text','write_bytes','open'}]
+assert reads==["inputs.read_text('family_author', 'inputs/interval.json')"]
+assert not any(isinstance(n,ast.Name) and n.id in {'HERE','PRE','D','__file__'} for n in ast.walk(fn))
+assert not any(isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id in {'exec','eval','compile','__import__'} for n in ast.walk(pt))
+parent=smap['infrastructure'][0];pb=repo_raw(parent['path'])
+assert sha(pb)==parent['sha256'] and len(pb)==parent['bytes'] and parent['commit']==BASE
+ppt=ast.parse(pb.decode())
+infrastructure=[]
+for name,typ in [('FrozenInputs',ast.ClassDef),('verify_artifacts',ast.FunctionDef)]:
+    actual=next(n for n in pt.body if isinstance(n,typ) and n.name==name)
+    previous=next(n for n in ppt.body if isinstance(n,typ) and n.name==name)
+    assert ad(actual)==ad(previous)
+    assert aid(actual)==ledger['infrastructure'][name+'_ast_sha256']
+    infrastructure.append({'name':name,'ast_sha256':aid(actual),'lines':[actual.lineno,actual.end_lineno]})
+assert sum(isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='run_family_author' for n in ast.walk(pt))==1
+decl=next(n for n in pt.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+paths=ast.literal_eval(decl.value);art=meta('ARTIFACT_MANIFEST.json')
+assert len(paths)==len(set(paths))==54 and len(art['files'])==art['count']==53
+assert set(paths)=={r['path'] for r in art['files']}|{PREFIX+'/ARTIFACT_MANIFEST.json'}
+artifacts=[]
+for row in art['files']:
+    b=repo_raw(row['path']);assert len(b)==row['bytes'] and sha(b)==row['sha256']
+    artifacts.append({'path':row['path'],'bytes':len(b),'sha256':sha(b)})
+new_files={str(Path(p).relative_to(P/'canonical')) for p in bindings if Path(p).is_relative_to(P/'canonical')}
+assert len(new_files)==36 and new_files-{PRIMARY}<=set(paths)
+assert 'outputs/emitter_coupling_family_2026_10_17.json' not in new_files
+table=meta('INPUT_MAP.json');aliases=table['roles']['family_author']['aliases']
+assert set(aliases)=={'inputs/interval.json','__original_program__'}
+for row in aliases.values():
+    b=repo_raw(row['path']);assert row['path'] in paths and len(b)==row['bytes'] and sha(b)==row['sha256']
+assert repo_raw(aliases['__original_program__']['path'])==raw(S/'check_family.py')
+wrapper_links=[]
+for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)',wrapper.decode()):
+    assert '://' not in target and not target.startswith('/')
+    rel=posixpath.normpath(posixpath.join('docs',target.split('#')[0]))
+    assert rel in paths or rel==PRIMARY
+    wrapper_links.append({'target':target,'path':rel,'sha256':sha(repo_raw(rel))})
+assert len(wrapper_links)==12
+status=meta('PUBLICATION_STATUS.json');plan=meta('REPRODUCTION_PLAN.json')
+assert status['canonical_execution']=='not_executed_in_this_draft'
+assert plan['planned_shared_cpu_soft_hard_seconds']==[20,20] and plan['planned_external_wall_cap_seconds']==30
+main=next(n for n in pt.body if isinstance(n,ast.FunctionDef) and n.name=='main')
+assert ad(main.body[0])==ad(parse('resource.setrlimit(resource.RLIMIT_CPU, (20, 20))'))
+assert "'wall_enforcement': 'Required canonical runner_cache execution; this class does not enforce wall time.'" in ptext
+assert ast.literal_eval(next(n.value for n in pt.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_TIMEOUT_SEC' for t in n.targets)))==30
+writes=[ast.unparse(n) for n in ast.walk(pt) if isinstance(n,ast.Call) and isinstance(n.func,ast.Attribute) and n.func.attr in {'write_text','write_bytes'}]
+assert len(writes)==1 and "REPO / 'outputs/emitter_coupling_family_2026_10_17.json'" in writes[0]
+
+# Inspect preserved attempts as data and ASTs, without rerunning even their resolvers.
+attempts=[]
+for name,expected in [('build_package_attempt_01',1),('build_package_attempt_02',0),('build_package_attempt_03',0),('verify_static_attempt_01',0)]:
+    pre=obj(P/name/'PRELAUNCH.json');rec=obj(P/name/'RECEIPT.json')
+    assert rec['exit_code']==expected and rec['timeout'] is False
+    assert rec['all_bound_input_bytes_and_generations_unchanged'] is True
+    assert pre['bindings']==rec['after_bindings']
+    assert pre['utc']<rec['utc']
+    for key,fname in [('prelaunch','PRELAUNCH.json'),('stdout','stdout.txt'),('stderr','stderr.txt')]:
+        assert rec[key]['sha256']==sha(raw(P/name/fname)) and rec[key]['bytes']==len(raw(P/name/fname))
+    ex=next(r for r in pre['bindings'] if r['path']==str(P/name/'executed.py'))
+    assert ex['sha256']==sha(raw(P/name/'executed.py')) and ex['bytes']==len(raw(P/name/'executed.py'))
+    attempts.append({'name':name,'exit':expected,'wall':rec['elapsed_wall_seconds'],
+                     'executed_sha256':ex['sha256'],'receipt':binding(P/name/'RECEIPT.json')})
+try:ast.parse(raw(P/'build_package_attempt_01/executed.py'))
+except SyntaxError as exc:syntax_failure={'type':type(exc).__name__,'message':exc.msg,'line':exc.lineno}
+else:raise AssertionError('Recorded first builder syntax failure no longer reproduced by AST parsing')
+assert syntax_failure['line']==173
+old_overlay=raw(P/'build_package_attempt_02/generated_canonical'/PRIMARY).decode()
+old_fn=next(n for n in ast.parse(old_overlay).body if isinstance(n,ast.FunctionDef) and n.name=='run_family_author')
+assert ad(old_fn.body[0])!=ad(fn.body[0]) and [ad(n) for n in old_fn.body[1:]]==[ad(n) for n in fn.body[1:]]
+builder_changes=''.join(difflib.unified_diff(raw(P/'build_package_attempt_02/executed.py').decode().splitlines(True),raw(P/'build_package_attempt_03/executed.py').decode().splitlines(True),fromfile='builder_attempt_02',tofile='builder_attempt_03'))
+assert raw(P/'build_package.py')==raw(P/'build_package_attempt_03/executed.py')
+assert raw(P/'verify_static.py')==raw(P/'verify_static_attempt_01/executed.py')
+author_stdout=obj(S/'attempt_01/stdout.json')
+assert len(author_stdout['checks'])==103
+assert raw(S/'check_family.py')==raw(S/'attempt_01/check_family.py')
+acceptance=obj(N/'emitter_family_root_qualification/ACCEPTANCE.json')
+assert sha(raw(N/'emitter_family_root_qualification/ACCEPTANCE.json'))=='a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325'
+assert acceptance['author_candidate']['sha256']==sha(body)
+later=obj(P/'LATER_ROOT_STATUS.json');assert later['canonical_scientific_execution']=='not_performed'
+out={'role':'Independent static transport review; no target executable, scientific runner or mutation invoked',
+     'source_freeze':binding(P/'FREEZE.json'),'canonical_primary':binding(P/'canonical'/PRIMARY),
+     'canonical_note':binding(P/'canonical'/NOTE),'original_body':binding(S/'CANDIDATE.md'),
+     'snapshot_bindings':len(bindings),'unique_snapshots':index['unique_snapshot_count'],
+     'draft_manifest_entries_verified':len(draft_manifest['files']),
+     'source_pairs':source_pairs,'declared_input_count':len(paths),'artifact_members':artifacts,
+     'new_overlay_files':len(new_files),'complete_original_module_ast_reconstructed':True,
+     'original_statements':len(ot.body),'adapted_function_statements':len(fn.body),
+     'unchanged_original_statements':216,'transport_events':events,'scientific_calls_preserved':len(old_calls),
+     'scientific_file_reads':reads,'canonical_writes':writes,'copied_infrastructure':infrastructure,
+     'wrapper_links':wrapper_links,'preserved_static_attempts':attempts,'first_builder_syntax_failure':syntax_failure,
+     'second_overlay_only_function_difference':'Exact module-docstring string constant changed by indentation; all later function statements identical.',
+     'builder_02_to_03_complete_delta':builder_changes,
+     'preserved_scientific_failures':author_stdout['preserved_failed_shortcut'],
+     'root_acceptance':binding(N/'emitter_family_root_qualification/ACCEPTANCE.json'),
+     'new_scientific_executions':0,'new_mutation_executions':0,'target_code_imports':0,'matrix_dimension':0,
+     'actual_cpu_soft_hard_seconds':list(resource.getrlimit(resource.RLIMIT_CPU)),
+     'actual_program_wall_seconds':time.monotonic()-START,
+     'limits':['No canonical execution or future cache freshness tested.',
+               'No scientific theorem requalification or numerical comparison replay.',
+               'No Git invoked; nineteen existing parent byte identities are checked, parent commit identity supplied by root.',
+               'Historical resolver negative fixtures read as evidence only, not rerun by reviewer.',
+               'Historical root-pending labels require separate integration wrapper update and refreshed hashes before execution.']}
+print(json.dumps(out,indent=2,sort_keys=True))

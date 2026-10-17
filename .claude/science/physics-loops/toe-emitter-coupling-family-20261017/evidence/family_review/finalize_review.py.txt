@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+"""Final review packaging and read-only identity checks; no science replay."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+
+R = Path(__file__).resolve().parent
+
+def ident(p):
+    b = p.read_bytes()
+    return {'path': str(p.relative_to(R)) if p.is_relative_to(R) else str(p),
+            'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+def read(p):
+    return json.loads(p.read_text())
+
+def write(name, obj):
+    p = R / name
+    assert not p.exists(), str(p)
+    with p.open('x') as f:
+        json.dump(obj, f, indent=2)
+        f.write('\n')
+        f.flush()
+        os.fsync(f.fileno())
+
+def check(p, row):
+    q = ident(p)
+    assert all(q[k] == row[k] for k in ('bytes', 'sha256')), str(p)
+
+assert not (R / 'FREEZE.json').exists()
+now = datetime.now(timezone.utc).isoformat()
+source_checks = []
+for name in ('INITIAL_SOURCE_MANIFEST.json', 'AUTHOR_SOURCE_MANIFEST.json'):
+    rows = read(R / name)['sources']
+    for row in rows:
+        check(R / row['snapshot'], row)
+        check(Path(row['original']), row)
+    source_checks.append({'manifest': ident(R / name), 'original_snapshot_pairs': len(rows),
+                          'all_equal': True})
+stage1 = read(R / 'STAGE1_FREEZE.json')
+for row in stage1['files']:
+    check(R / row['path'], row)
+run_checks = []
+for run in ('stage1_run01', 'stage2_run01'):
+    p = read(R / run / 'PRELAUNCH.json')
+    c = read(R / run / 'RECEIPT.json')
+    for row in p['bound_inputs']:
+        check(R / row['path'], row)
+    for row in p['external_runtime_bindings']:
+        check(Path(row['path']), row)
+    for name, key in [('PRELAUNCH.json', 'prelaunch'), ('stdout.json', 'stdout'),
+                      ('stderr.txt', 'stderr'), ('executed_source.py', 'executed_source_after')]:
+        check(R / run / name, c[key])
+    run_checks.append({'run': run, 'bound_inputs': len(p['bound_inputs']),
+                       'runtime_bindings': len(p['external_runtime_bindings']),
+                       'all_equal': True})
+write('FINAL_BINDING_CHECK.json', {
+    'created_utc': now, 'science_replayed': False,
+    'source_checks': source_checks, 'reviewer_run_checks': run_checks,
+    'stage1_freeze_entries_unchanged': len(stage1['files']),
+    'evidence_validation': ident(R / 'EVIDENCE_VALIDATION.json'),
+    'result': 'All frozen inputs and current original/snapshot bytes still agree.'})
+
+summary = {
+    'created_utc': now,
+    'disposition': 'Conditional exact-ladder coupling-family claim supported; no source correction required.',
+    'candidate': ident(R / 'author_sources/CANDIDATE.md'),
+    'candidate_freeze': ident(R / 'author_sources/FREEZE.json'),
+    'report': ident(R / 'REPORT.md'),
+    'scope': {'kappa_interval': ['1/1000000000000', '1/100000000'],
+              'sigma': '1/1000000', 'L': 12, 'infinite_onset': '1000000/kappa^2',
+              'infinite_complete_error_strict_upper': '1/250',
+              'finite_clock_sites': 'ceil(50*T)', 'finite_window': '[T,2T]',
+              'finite_complete_error_strict_upper': '1/200',
+              'comparator': 'Actual coupling-dependent f, rho, beta; scalar nu+2*kappa; old aging from zero; all source/emitter/clock outputs.'},
+    'initial_independent_result': {'normalization_deficit_strict_upper': '4.4e-7',
+                                   'seed_norm_error_strict_upper': '0.003',
+                                   'frozen_before_new_author_exposure': True},
+    'author_sharper_mass_checked': 'delta_m<3.5e-7',
+    'preserved_failed_shortcuts': ['Variance mass ceiling at upper endpoint =32/25.',
+                                  'Old point-amplitude expression at upper endpoint =4/5.',
+                                  'Reversed arctangent correction sign has nonzero symbolic defect.'],
+    'scientific_runs': 2, 'scientific_run_failures': 0,
+    'reviewer_programs': [ident(R / 'check_reference_mass.py'), ident(R / 'check_family_delta.py')],
+    'reviewer_launchers': [ident(R / 'launch_stage1.py'), ident(R / 'launch_stage2.py')],
+    'reviewer_receipts': [ident(R / 'stage1_run01/RECEIPT.json'), ident(R / 'stage2_run01/RECEIPT.json')],
+    'author_science_replayed_or_imported': False,
+    'exposure_limits': 'Same model/effort; substantial prior dependency authorship/review. Initial family reasoning predates new author exposure; stage two is source-exposed. No blind full-dependency or model-diverse claim.',
+    'excluded': ['Joint calibration/coefficient boxes', 'One whole-clock waveform across couplings',
+                 'Native seed/vacuum/complex-loop generation', 'Practical or optimal resources',
+                 'Arbitrary accuracy or bandwidth expansion', 'Finite-clock all-future operation',
+                 'Canonical execution/publication/retained audit status'],
+    'editable_prompt_files_changed': [], 'repository_or_original_sources_changed': False,
+    'new_unassigned_candidate_inspected': False}
+write('REVIEW_SUMMARY.json', summary)
+members = sorted(p for p in R.rglob('*') if p.is_file()
+                 and p not in (R / 'FILE_MANIFEST.json', R / 'FREEZE.json'))
+write('FILE_MANIFEST.json', {'created_utc': now, 'count': len(members),
+                            'files': [ident(p) for p in members],
+                            'scope': 'All review files including full source snapshots, excluding only this root manifest and root freeze.'})
+freeze = {
+    'frozen_utc': datetime.now(timezone.utc).isoformat(),
+    'status': 'Completed selective source-exposed review; no retained audit outcome.',
+    'report': ident(R / 'REPORT.md'),
+    'summary': ident(R / 'REVIEW_SUMMARY.json'),
+    'file_manifest': ident(R / 'FILE_MANIFEST.json'),
+    'candidate': ident(R / 'author_sources/CANDIDATE.md'),
+    'candidate_freeze': ident(R / 'author_sources/FREEZE.json'),
+    'final_binding_check': ident(R / 'FINAL_BINDING_CHECK.json'),
+    'initial_reasoning_freeze': ident(R / 'INITIAL_REASONING_FREEZE.json'),
+    'stage1_freeze': ident(R / 'STAGE1_FREEZE.json'),
+    'reviewer_programs': summary['reviewer_programs'],
+    'reviewer_receipts': summary['reviewer_receipts'],
+    'reviewer_outputs': [ident(R / 'stage1_run01/stdout.json'), ident(R / 'stage2_run01/stdout.json')],
+    'scientific_runs': 2, 'scientific_failures': 0,
+    'member_count_excluding_root_manifest_and_freeze': len(members),
+    'disposition': summary['disposition'],
+    'limitations': summary['exposure_limits'],
+    'next_decision': 'Parent may assess this bounded review; no further task or publication started.'}
+write('FREEZE.json', freeze)
+for row in read(R / 'FILE_MANIFEST.json')['files']:
+    check(R / row['path'], row)
+print(json.dumps({'report': ident(R / 'REPORT.md'), 'freeze': ident(R / 'FREEZE.json'),
+                  'file_manifest': ident(R / 'FILE_MANIFEST.json'),
+                  'member_count': len(members), 'all_frozen_members_valid': True}, indent=2))

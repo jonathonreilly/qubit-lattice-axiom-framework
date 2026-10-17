@@ -1,0 +1,1139 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_publication_draft",
+  "scope": "Lossless reconstruction map; historical paths and statuses retained, no scientific replay.",
+  "files": [
+    {
+      "original_path": "BUILD_RESULT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/BUILD_RESULT.json.txt",
+      "bytes": 3859,
+      "sha256": "a34c5129b79dc4eaae942ee291fd84f20e815bc0910e9938278ca5917f79f0f4",
+      "compression": "none",
+      "raw_bytes": 3859,
+      "raw_sha256": "a34c5129b79dc4eaae942ee291fd84f20e815bc0910e9938278ca5917f79f0f4"
+    },
+    {
+      "original_path": "FILE_MANIFEST.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/FILE_MANIFEST.json.txt",
+      "bytes": 27686,
+      "sha256": "e35dcbed3aa8fed4d3c6d138c3672fd2a956aa9d5f8277817f84b8cf6a3b4513",
+      "compression": "none",
+      "raw_bytes": 27686,
+      "raw_sha256": "e35dcbed3aa8fed4d3c6d138c3672fd2a956aa9d5f8277817f84b8cf6a3b4513"
+    },
+    {
+      "original_path": "FINALIZATION_FAILURE.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/FINALIZATION_FAILURE.md.txt",
+      "bytes": 1974,
+      "sha256": "2b3aac91e6126b4c2a6570972e1b70d4e5e82647dbfc30d91a7e48720993510a",
+      "compression": "none",
+      "raw_bytes": 1974,
+      "raw_sha256": "2b3aac91e6126b4c2a6570972e1b70d4e5e82647dbfc30d91a7e48720993510a"
+    },
+    {
+      "original_path": "FREEZE.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/FREEZE.json.txt",
+      "bytes": 1877,
+      "sha256": "3e4f183d7bfda728b9e3ed68cecebaedaccbbda2af9484ff4672c4c26f0657cf",
+      "compression": "none",
+      "raw_bytes": 1877,
+      "raw_sha256": "3e4f183d7bfda728b9e3ed68cecebaedaccbbda2af9484ff4672c4c26f0657cf"
+    },
+    {
+      "original_path": "LATER_ROOT_STATUS.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/LATER_ROOT_STATUS.json.txt",
+      "bytes": 1567,
+      "sha256": "4e66e16c52841f5f58bf2b80f2023b96daa0e649226a077f19e19c815282f1c3",
+      "compression": "none",
+      "raw_bytes": 1567,
+      "raw_sha256": "4e66e16c52841f5f58bf2b80f2023b96daa0e649226a077f19e19c815282f1c3"
+    },
+    {
+      "original_path": "PACKAGING.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/PACKAGING.md.txt",
+      "bytes": 9375,
+      "sha256": "e800453428944c8fa607db6b560a70cacc2280a6e099c10ce881b4a409ef8bed",
+      "compression": "none",
+      "raw_bytes": 9375,
+      "raw_sha256": "e800453428944c8fa607db6b560a70cacc2280a6e099c10ce881b4a409ef8bed"
+    },
+    {
+      "original_path": "READINESS.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/READINESS.json.txt",
+      "bytes": 11374,
+      "sha256": "75490cfce9b2f7579131435458a473abf1a87e0aea63df38b3569d6cabd4f5b7",
+      "compression": "none",
+      "raw_bytes": 11374,
+      "raw_sha256": "75490cfce9b2f7579131435458a473abf1a87e0aea63df38b3569d6cabd4f5b7"
+    },
+    {
+      "original_path": "RESOURCE_PLAN.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/RESOURCE_PLAN.json.txt",
+      "bytes": 1624,
+      "sha256": "623588184cd1cc0d502bf056fbbb56868ab96b21dc64c0f781db7044cde4343f",
+      "compression": "none",
+      "raw_bytes": 1624,
+      "raw_sha256": "623588184cd1cc0d502bf056fbbb56868ab96b21dc64c0f781db7044cde4343f"
+    },
+    {
+      "original_path": "SOURCE_TO_FUNCTION.diff",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/SOURCE_TO_FUNCTION.diff.txt",
+      "bytes": 29762,
+      "sha256": "edbc02be0128f5ac4f635198ff064cafadf653d1cad0acf6a2b9f892d5e4dc80",
+      "compression": "none",
+      "raw_bytes": 29762,
+      "raw_sha256": "edbc02be0128f5ac4f635198ff064cafadf653d1cad0acf6a2b9f892d5e4dc80"
+    },
+    {
+      "original_path": "STATIC_FAILURES.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/STATIC_FAILURES.md.gz",
+      "bytes": 574,
+      "sha256": "1cb35aca389116d10298f51478cd39fa406f7c9dc1214c531b9971b2da51a814",
+      "compression": "gzip",
+      "raw_bytes": 1050,
+      "raw_sha256": "e9aadb015dda2843e4f8ee55c4f00744b57629e8ad3ba9807fbf534a0f746e99"
+    },
+    {
+      "original_path": "STATIC_VERIFICATION.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/STATIC_VERIFICATION.json.txt",
+      "bytes": 154402,
+      "sha256": "5c5e3c9d70403d5a7c741e1e03d9bcefcdcef2ae646049ffa576f7c7389c12dd",
+      "compression": "none",
+      "raw_bytes": 154402,
+      "raw_sha256": "5c5e3c9d70403d5a7c741e1e03d9bcefcdcef2ae646049ffa576f7c7389c12dd"
+    },
+    {
+      "original_path": "WRAPPER.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/WRAPPER.md.gz",
+      "bytes": 4320,
+      "sha256": "5460c7190670cb4f7bd95095a526252cf9eb2097a3df53f9626609862e829433",
+      "compression": "gzip",
+      "raw_bytes": 9941,
+      "raw_sha256": "36eb4a1449f23f949e3149c56df9ab389bd508aa75957a445ae5612e6960d403"
+    },
+    {
+      "original_path": "build_package.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package.py.txt",
+      "bytes": 20176,
+      "sha256": "675df84e27d6629ed4da673548c2dea4e69105ee0d15f30d8f6f48d46b64a49b",
+      "compression": "none",
+      "raw_bytes": 20176,
+      "raw_sha256": "675df84e27d6629ed4da673548c2dea4e69105ee0d15f30d8f6f48d46b64a49b"
+    },
+    {
+      "original_path": "build_package_attempt_01/PRELAUNCH.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_01/PRELAUNCH.json.txt",
+      "bytes": 23944,
+      "sha256": "559a4113e8fbca4c4555f6e3a722fab712fac4906eee5494cc7929cd3f8eeac4",
+      "compression": "none",
+      "raw_bytes": 23944,
+      "raw_sha256": "559a4113e8fbca4c4555f6e3a722fab712fac4906eee5494cc7929cd3f8eeac4"
+    },
+    {
+      "original_path": "build_package_attempt_01/RECEIPT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_01/RECEIPT.json.txt",
+      "bytes": 24800,
+      "sha256": "7e25d200ede495fcca54733f0361ea34c722b4e4d19aaf0c5ffaff32c5df0d3c",
+      "compression": "none",
+      "raw_bytes": 24800,
+      "raw_sha256": "7e25d200ede495fcca54733f0361ea34c722b4e4d19aaf0c5ffaff32c5df0d3c"
+    },
+    {
+      "original_path": "build_package_attempt_01/executed.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_01/executed.py.txt",
+      "bytes": 19758,
+      "sha256": "8fc46729b2333a5e76abd77f0f13b7671da0bd9a8df59322870aedf4f800f4bf",
+      "compression": "none",
+      "raw_bytes": 19758,
+      "raw_sha256": "8fc46729b2333a5e76abd77f0f13b7671da0bd9a8df59322870aedf4f800f4bf"
+    },
+    {
+      "original_path": "build_package_attempt_01/stderr.txt",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_01/stderr.txt.txt",
+      "bytes": 315,
+      "sha256": "c5da1bc1065e66d3fbb76d61ec936d3d0a0c6ec621c5f36306f2e27a7b0610e7",
+      "compression": "none",
+      "raw_bytes": 315,
+      "raw_sha256": "c5da1bc1065e66d3fbb76d61ec936d3d0a0c6ec621c5f36306f2e27a7b0610e7"
+    },
+    {
+      "original_path": "build_package_attempt_01/stdout.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "build_package_attempt_02/PRELAUNCH.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/PRELAUNCH.json.txt",
+      "bytes": 23944,
+      "sha256": "9c1a23dfac1d844899f17efd4bd63e441274e250869fb2f864db4d760057dad1",
+      "compression": "none",
+      "raw_bytes": 23944,
+      "raw_sha256": "9c1a23dfac1d844899f17efd4bd63e441274e250869fb2f864db4d760057dad1"
+    },
+    {
+      "original_path": "build_package_attempt_02/RECEIPT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/RECEIPT.json.txt",
+      "bytes": 24787,
+      "sha256": "9b010a1f1d231c50bbd4747917658dfc7862c9c189faa7a04676946a8214a487",
+      "compression": "none",
+      "raw_bytes": 24787,
+      "raw_sha256": "9b010a1f1d231c50bbd4747917658dfc7862c9c189faa7a04676946a8214a487"
+    },
+    {
+      "original_path": "build_package_attempt_02/executed.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/executed.py.txt",
+      "bytes": 19759,
+      "sha256": "1459f224731f52c47398a36a4722e4ce4390d865d6cf4a4d194da797cbfe2d1a",
+      "compression": "none",
+      "raw_bytes": 19759,
+      "raw_sha256": "1459f224731f52c47398a36a4722e4ce4390d865d6cf4a4d194da797cbfe2d1a"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_BUILD_RESULT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_BUILD_RESULT.json.txt",
+      "bytes": 3859,
+      "sha256": "bac3d45710abd298f84b0b58f23aa30ffef68d97ebe08005d10235641c98a293",
+      "compression": "none",
+      "raw_bytes": 3859,
+      "raw_sha256": "bac3d45710abd298f84b0b58f23aa30ffef68d97ebe08005d10235641c98a293"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_SOURCE_TO_FUNCTION.diff",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_SOURCE_TO_FUNCTION.diff.txt",
+      "bytes": 29786,
+      "sha256": "4f761373d85b0244841672c6b3987bb5116c33975b3607778320433b3c340dbf",
+      "compression": "none",
+      "raw_bytes": 29786,
+      "raw_sha256": "4f761373d85b0244841672c6b3987bb5116c33975b3607778320433b3c340dbf"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 49492,
+      "sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d",
+      "compression": "none",
+      "raw_bytes": 49492,
+      "raw_sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 14091,
+      "sha256": "2bdb6c3f5833560e5b0285fe681e5edcd856e884519c225c192e9220011c10ac",
+      "compression": "none",
+      "raw_bytes": 14091,
+      "raw_sha256": "2bdb6c3f5833560e5b0285fe681e5edcd856e884519c225c192e9220011c10ac"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 944,
+      "sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2",
+      "compression": "none",
+      "raw_bytes": 944,
+      "raw_sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 698,
+      "sha256": "7ef82716d872c2eaed88785e07828003514b7e12dd1107ea5a83295bb1d06a4e",
+      "compression": "none",
+      "raw_bytes": 698,
+      "raw_sha256": "7ef82716d872c2eaed88785e07828003514b7e12dd1107ea5a83295bb1d06a4e"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 1033,
+      "sha256": "a6034f496169a791930f28b361241df66b3adc6d3c6a20ba3a16ee78d63d1030",
+      "compression": "none",
+      "raw_bytes": 1033,
+      "raw_sha256": "a6034f496169a791930f28b361241df66b3adc6d3c6a20ba3a16ee78d63d1030"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "bytes": 2586,
+      "sha256": "b98fc1939491eebe93438cae86e78367f287761979c30be2aa0e4e242d3a301e",
+      "compression": "none",
+      "raw_bytes": 2586,
+      "raw_sha256": "b98fc1939491eebe93438cae86e78367f287761979c30be2aa0e4e242d3a301e"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 18853,
+      "sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9",
+      "compression": "none",
+      "raw_bytes": 18853,
+      "raw_sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json.txt",
+      "bytes": 112963,
+      "sha256": "0a00c3f8f229001d461852c420dba84a0395f8410bbc2eb80d4c135cdccf4877",
+      "compression": "none",
+      "raw_bytes": 112963,
+      "raw_sha256": "0a00c3f8f229001d461852c420dba84a0395f8410bbc2eb80d4c135cdccf4877"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "compression": "none",
+      "raw_bytes": 39464,
+      "raw_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "bytes": 19827,
+      "sha256": "2764e78511c4211f4c1b0207f83899d490d1e95d7be8af1e6504774365161128",
+      "compression": "none",
+      "raw_bytes": 19827,
+      "raw_sha256": "2764e78511c4211f4c1b0207f83899d490d1e95d7be8af1e6504774365161128"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "bytes": 6923,
+      "sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f",
+      "compression": "none",
+      "raw_bytes": 6923,
+      "raw_sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "bytes": 1418,
+      "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98",
+      "compression": "none",
+      "raw_bytes": 1418,
+      "raw_sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "bytes": 14727,
+      "sha256": "2e9b90232c1517ebccc77a28a709ca8b9c16e9b75f337e17bbd5b8ce700f3f8f",
+      "compression": "none",
+      "raw_bytes": 14727,
+      "raw_sha256": "2e9b90232c1517ebccc77a28a709ca8b9c16e9b75f337e17bbd5b8ce700f3f8f"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "bytes": 1587,
+      "sha256": "16ae970887b1d7ca558200e90af6f383e522d0c855aa4d5e5fa6f95320173173",
+      "compression": "none",
+      "raw_bytes": 1587,
+      "raw_sha256": "16ae970887b1d7ca558200e90af6f383e522d0c855aa4d5e5fa6f95320173173"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "bytes": 3166,
+      "sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612",
+      "compression": "none",
+      "raw_bytes": 3166,
+      "raw_sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "bytes": 2571,
+      "sha256": "21af578d7cd6f14e68b5682a87689ad33a2b12923cc04b57edf864d6a6ff0855",
+      "compression": "none",
+      "raw_bytes": 2571,
+      "raw_sha256": "21af578d7cd6f14e68b5682a87689ad33a2b12923cc04b57edf864d6a6ff0855"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "bytes": 4738,
+      "sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe",
+      "compression": "none",
+      "raw_bytes": 4738,
+      "raw_sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "bytes": 11292,
+      "sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02",
+      "compression": "none",
+      "raw_bytes": 11292,
+      "raw_sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "bytes": 8594,
+      "sha256": "0fe9c4259323f266f41335ffddf333866d4f3de1b99221cd8eeb20001452a7da",
+      "compression": "none",
+      "raw_bytes": 8594,
+      "raw_sha256": "0fe9c4259323f266f41335ffddf333866d4f3de1b99221cd8eeb20001452a7da"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "bytes": 7898,
+      "sha256": "3eb15bd31a1ab3cf5e5a3d0b6eb76bd6494803ce3b8a78890d3fb485f939ba1f",
+      "compression": "none",
+      "raw_bytes": 7898,
+      "raw_sha256": "3eb15bd31a1ab3cf5e5a3d0b6eb76bd6494803ce3b8a78890d3fb485f939ba1f"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "bytes": 2961,
+      "sha256": "3c4e6b2be4218652f59eec531ce8145d2f91c20138ce1fa4647afd641f1b7b6b",
+      "compression": "none",
+      "raw_bytes": 2961,
+      "raw_sha256": "3c4e6b2be4218652f59eec531ce8145d2f91c20138ce1fa4647afd641f1b7b6b"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "bytes": 17025,
+      "sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+      "compression": "none",
+      "raw_bytes": 17025,
+      "raw_sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "bytes": 8942,
+      "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+      "compression": "none",
+      "raw_bytes": 8942,
+      "raw_sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "bytes": 14431,
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "compression": "none",
+      "raw_bytes": 14431,
+      "raw_sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "bytes": 41223,
+      "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+      "compression": "none",
+      "raw_bytes": 41223,
+      "raw_sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "bytes": 4699,
+      "sha256": "8d689f52f44147342e2f23df862341614790cb1c20b1503650a26eef3bf2a6a0",
+      "compression": "none",
+      "raw_bytes": 4699,
+      "raw_sha256": "8d689f52f44147342e2f23df862341614790cb1c20b1503650a26eef3bf2a6a0"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "bytes": 14431,
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "compression": "none",
+      "raw_bytes": 14431,
+      "raw_sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "bytes": 5297,
+      "sha256": "ccef225eb5e1405c14863f30df153e4efe6d280eed432d5715ffc84a93bd3be1",
+      "compression": "none",
+      "raw_bytes": 5297,
+      "raw_sha256": "ccef225eb5e1405c14863f30df153e4efe6d280eed432d5715ffc84a93bd3be1"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "bytes": 31244,
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "compression": "none",
+      "raw_bytes": 31244,
+      "raw_sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "bytes": 12525,
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318",
+      "compression": "none",
+      "raw_bytes": 12525,
+      "raw_sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "bytes": 2526,
+      "sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197",
+      "compression": "none",
+      "raw_bytes": 2526,
+      "raw_sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "bytes": 2484,
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102",
+      "compression": "none",
+      "raw_bytes": 2484,
+      "raw_sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "bytes": 32078,
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77",
+      "compression": "none",
+      "raw_bytes": 32078,
+      "raw_sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "bytes": 4137,
+      "sha256": "1988d77f55ed45dd05bf15c4426135e31d7f83f02893a7bcf68442589f9b585b",
+      "compression": "none",
+      "raw_bytes": 4137,
+      "raw_sha256": "1988d77f55ed45dd05bf15c4426135e31d7f83f02893a7bcf68442589f9b585b"
+    },
+    {
+      "original_path": "build_package_attempt_02/generated_canonical/scripts/emitter_coupling_family_2026_10_17.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/scripts/emitter_coupling_family_2026_10_17.py.txt",
+      "bytes": 24804,
+      "sha256": "94d1eb6a122d00daf066145eca06779869e0feb06c2d86fcf3a286bb230e32e1",
+      "compression": "none",
+      "raw_bytes": 24804,
+      "raw_sha256": "94d1eb6a122d00daf066145eca06779869e0feb06c2d86fcf3a286bb230e32e1"
+    },
+    {
+      "original_path": "build_package_attempt_02/stderr.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "build_package_attempt_02/stdout.txt",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/stdout.txt.txt",
+      "bytes": 3859,
+      "sha256": "a34c367939a82761824d4c99a20b18a14f27bf51f470fb42ab710472669c433e",
+      "compression": "none",
+      "raw_bytes": 3859,
+      "raw_sha256": "a34c367939a82761824d4c99a20b18a14f27bf51f470fb42ab710472669c433e"
+    },
+    {
+      "original_path": "build_package_attempt_03/PRELAUNCH.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_03/PRELAUNCH.json.txt",
+      "bytes": 23944,
+      "sha256": "1817fbe706a4e51daab100bbbd033cc14b3eac7ec3d6b6e060f52b1fb63476cd",
+      "compression": "none",
+      "raw_bytes": 23944,
+      "raw_sha256": "1817fbe706a4e51daab100bbbd033cc14b3eac7ec3d6b6e060f52b1fb63476cd"
+    },
+    {
+      "original_path": "build_package_attempt_03/RECEIPT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_03/RECEIPT.json.txt",
+      "bytes": 24786,
+      "sha256": "f6c79f22c99a14dd4e0b9beccb2ab80d32b5441aeb3f2e031d420e1c9a559826",
+      "compression": "none",
+      "raw_bytes": 24786,
+      "raw_sha256": "f6c79f22c99a14dd4e0b9beccb2ab80d32b5441aeb3f2e031d420e1c9a559826"
+    },
+    {
+      "original_path": "build_package_attempt_03/executed.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package.py.txt",
+      "bytes": 20176,
+      "sha256": "675df84e27d6629ed4da673548c2dea4e69105ee0d15f30d8f6f48d46b64a49b",
+      "compression": "none",
+      "raw_bytes": 20176,
+      "raw_sha256": "675df84e27d6629ed4da673548c2dea4e69105ee0d15f30d8f6f48d46b64a49b"
+    },
+    {
+      "original_path": "build_package_attempt_03/stderr.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "build_package_attempt_03/stdout.txt",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_03/stdout.txt.txt",
+      "bytes": 3859,
+      "sha256": "f1bab6c46bbd8ba68b89abbba2e01c8f3d1e2ab0d144a0da556eae089c753d55",
+      "compression": "none",
+      "raw_bytes": 3859,
+      "raw_sha256": "f1bab6c46bbd8ba68b89abbba2e01c8f3d1e2ab0d144a0da556eae089c753d55"
+    },
+    {
+      "original_path": "canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "bytes": 49492,
+      "sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d",
+      "compression": "none",
+      "raw_bytes": 49492,
+      "raw_sha256": "6f935ddea34b016ca8ef3c099a48c003d131a4ef20b1b0d92bab8ba5a1dfd27d"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/canonical/outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json.txt",
+      "bytes": 14091,
+      "sha256": "9e7fc262387aa0a975900318ec46426335296b035f7cdcac8b935224ad047e2e",
+      "compression": "none",
+      "raw_bytes": 14091,
+      "raw_sha256": "9e7fc262387aa0a975900318ec46426335296b035f7cdcac8b935224ad047e2e"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 944,
+      "sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2",
+      "compression": "none",
+      "raw_bytes": 944,
+      "raw_sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PROOF_BODY_MAP.json.txt",
+      "bytes": 698,
+      "sha256": "7ef82716d872c2eaed88785e07828003514b7e12dd1107ea5a83295bb1d06a4e",
+      "compression": "none",
+      "raw_bytes": 698,
+      "raw_sha256": "7ef82716d872c2eaed88785e07828003514b7e12dd1107ea5a83295bb1d06a4e"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/build_package_attempt_02/generated_canonical/outputs/emitter_coupling_family_2026_10_17_inputs/PUBLICATION_STATUS.json.txt",
+      "bytes": 1033,
+      "sha256": "a6034f496169a791930f28b361241df66b3adc6d3c6a20ba3a16ee78d63d1030",
+      "compression": "none",
+      "raw_bytes": 1033,
+      "raw_sha256": "a6034f496169a791930f28b361241df66b3adc6d3c6a20ba3a16ee78d63d1030"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "bytes": 2586,
+      "sha256": "b98fc1939491eebe93438cae86e78367f287761979c30be2aa0e4e242d3a301e",
+      "compression": "none",
+      "raw_bytes": 2586,
+      "raw_sha256": "b98fc1939491eebe93438cae86e78367f287761979c30be2aa0e4e242d3a301e"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 18853,
+      "sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9",
+      "compression": "none",
+      "raw_bytes": 18853,
+      "raw_sha256": "e7ddaef56366ea418c65b7831ad0d7705ffbb139d79a7b48c3653ea499265da9"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 112960,
+      "sha256": "94df73ea48613754892e9cfc9a9759a0d542f8bf7706eaf14c191d6845af615d",
+      "compression": "none",
+      "raw_bytes": 112960,
+      "raw_sha256": "94df73ea48613754892e9cfc9a9759a0d542f8bf7706eaf14c191d6845af615d"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/CANDIDATE.md.txt",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "compression": "none",
+      "raw_bytes": 39464,
+      "raw_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/EVIDENCE_READOUT.json",
+      "bytes": 19827,
+      "sha256": "2764e78511c4211f4c1b0207f83899d490d1e95d7be8af1e6504774365161128",
+      "compression": "none",
+      "raw_bytes": 19827,
+      "raw_sha256": "2764e78511c4211f4c1b0207f83899d490d1e95d7be8af1e6504774365161128"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FILE_MANIFEST.json",
+      "bytes": 6923,
+      "sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f",
+      "compression": "none",
+      "raw_bytes": 6923,
+      "raw_sha256": "02fbb90a48e99227c4f8ea7482363af59bf1fdcb4fffb42060d6cf420b2a0d4f"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/FREEZE.json",
+      "bytes": 1418,
+      "sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98",
+      "compression": "none",
+      "raw_bytes": 1418,
+      "raw_sha256": "ed250a089a13e033c81fe98fb1cd1736e2db8639793b90087226307e3874ce98"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/MATCHING_PREMISE_SEARCH.json",
+      "bytes": 14727,
+      "sha256": "2e9b90232c1517ebccc77a28a709ca8b9c16e9b75f337e17bbd5b8ce700f3f8f",
+      "compression": "none",
+      "raw_bytes": 14727,
+      "raw_sha256": "2e9b90232c1517ebccc77a28a709ca8b9c16e9b75f337e17bbd5b8ce700f3f8f"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/READ_FAILURES.md.txt",
+      "bytes": 1587,
+      "sha256": "16ae970887b1d7ca558200e90af6f383e522d0c855aa4d5e5fa6f95320173173",
+      "compression": "none",
+      "raw_bytes": 1587,
+      "raw_sha256": "16ae970887b1d7ca558200e90af6f383e522d0c855aa4d5e5fa6f95320173173"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN.json",
+      "bytes": 3166,
+      "sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612",
+      "compression": "none",
+      "raw_bytes": 3166,
+      "raw_sha256": "35ce8f6221b426ec0abb292854ff986dca620e9883eb64c1156c6ef88dfb1612"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RESOURCE_PLAN_BEFORE_MOMENT.json",
+      "bytes": 2571,
+      "sha256": "21af578d7cd6f14e68b5682a87689ad33a2b12923cc04b57edf864d6a6ff0855",
+      "compression": "none",
+      "raw_bytes": 2571,
+      "raw_sha256": "21af578d7cd6f14e68b5682a87689ad33a2b12923cc04b57edf864d6a6ff0855"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/RUN_SUMMARY.json",
+      "bytes": 4738,
+      "sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe",
+      "compression": "none",
+      "raw_bytes": 4738,
+      "raw_sha256": "982a84f238b6319a3b9c9ab5166981e0ae9ae88e26314735958c80b66cd214fe"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST.json",
+      "bytes": 11292,
+      "sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02",
+      "compression": "none",
+      "raw_bytes": 11292,
+      "raw_sha256": "e43611834d507a88e7f63602a2c73de131fc09789c0b60dfef2065e9c5febc02"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_MANIFEST_BEFORE_MOMENT.json",
+      "bytes": 8594,
+      "sha256": "0fe9c4259323f266f41335ffddf333866d4f3de1b99221cd8eeb20001452a7da",
+      "compression": "none",
+      "raw_bytes": 8594,
+      "raw_sha256": "0fe9c4259323f266f41335ffddf333866d4f3de1b99221cd8eeb20001452a7da"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/SOURCE_RECHECK.json",
+      "bytes": 7898,
+      "sha256": "3eb15bd31a1ab3cf5e5a3d0b6eb76bd6494803ce3b8a78890d3fb485f939ba1f",
+      "compression": "none",
+      "raw_bytes": 7898,
+      "raw_sha256": "3eb15bd31a1ab3cf5e5a3d0b6eb76bd6494803ce3b8a78890d3fb485f939ba1f"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/add_moment_dependency.py",
+      "bytes": 2961,
+      "sha256": "3c4e6b2be4218652f59eec531ce8145d2f91c20138ce1fa4647afd641f1b7b6b",
+      "compression": "none",
+      "raw_bytes": 2961,
+      "raw_sha256": "3c4e6b2be4218652f59eec531ce8145d2f91c20138ce1fa4647afd641f1b7b6b"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/PRELAUNCH.json",
+      "bytes": 17025,
+      "sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c",
+      "compression": "none",
+      "raw_bytes": 17025,
+      "raw_sha256": "273a7c055fd04b6a630280ea79ddd1bc0b0945cc636c407c6ab9db9d9f14f83c"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/RECEIPT.json",
+      "bytes": 8942,
+      "sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636",
+      "compression": "none",
+      "raw_bytes": 8942,
+      "raw_sha256": "f7810c5746c5428ce601d4bb4b062807fe3ffb87590ed7d71a466a92900eb636"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/check_family.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "bytes": 14431,
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "compression": "none",
+      "raw_bytes": 14431,
+      "raw_sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stdout.json",
+      "bytes": 41223,
+      "sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c",
+      "compression": "none",
+      "raw_bytes": 41223,
+      "raw_sha256": "14125e34295e570e4338d0718ab35efb261edd2e151984fa61f18ae49712072c"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/capture_sources.py",
+      "bytes": 4699,
+      "sha256": "8d689f52f44147342e2f23df862341614790cb1c20b1503650a26eef3bf2a6a0",
+      "compression": "none",
+      "raw_bytes": 4699,
+      "raw_sha256": "8d689f52f44147342e2f23df862341614790cb1c20b1503650a26eef3bf2a6a0"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "bytes": 14431,
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "compression": "none",
+      "raw_bytes": 14431,
+      "raw_sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/finalize_packet.py",
+      "bytes": 5297,
+      "sha256": "ccef225eb5e1405c14863f30df153e4efe6d280eed432d5715ffc84a93bd3be1",
+      "compression": "none",
+      "raw_bytes": 5297,
+      "raw_sha256": "ccef225eb5e1405c14863f30df153e4efe6d280eed432d5715ffc84a93bd3be1"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment.md.txt",
+      "bytes": 31244,
+      "sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f",
+      "compression": "none",
+      "raw_bytes": 31244,
+      "raw_sha256": "31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_acceptance.json",
+      "bytes": 12525,
+      "sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318",
+      "compression": "none",
+      "raw_bytes": 12525,
+      "raw_sha256": "bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_freeze.json",
+      "bytes": 2526,
+      "sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197",
+      "compression": "none",
+      "raw_bytes": 2526,
+      "raw_sha256": "962038fee412c3a173689660236083519b08177b61163d5f1990ce00842f1197"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_qualification.md.txt",
+      "bytes": 2484,
+      "sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102",
+      "compression": "none",
+      "raw_bytes": 2484,
+      "raw_sha256": "0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/inputs/moment_review.md.txt",
+      "bytes": 32078,
+      "sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77",
+      "compression": "none",
+      "raw_bytes": 32078,
+      "raw_sha256": "cf6507b8b0dc3c9075b424602ab4969202c6e6bd665cabda4dc016125a21ee77"
+    },
+    {
+      "original_path": "canonical/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/launch_check.py",
+      "bytes": 4137,
+      "sha256": "1988d77f55ed45dd05bf15c4426135e31d7f83f02893a7bcf68442589f9b585b",
+      "compression": "none",
+      "raw_bytes": 4137,
+      "raw_sha256": "1988d77f55ed45dd05bf15c4426135e31d7f83f02893a7bcf68442589f9b585b"
+    },
+    {
+      "original_path": "canonical/scripts/emitter_coupling_family_2026_10_17.py",
+      "kind": "file",
+      "path": "scripts/emitter_coupling_family_2026_10_17.py",
+      "bytes": 24786,
+      "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+      "compression": "none",
+      "raw_bytes": 24786,
+      "raw_sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba"
+    },
+    {
+      "original_path": "launch_static.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/launch_static.py.txt",
+      "bytes": 4134,
+      "sha256": "21d015a494968402cdb3d9cbf49a4acc64d9a738b5b82812adc392fa7e3f34f6",
+      "compression": "none",
+      "raw_bytes": 4134,
+      "raw_sha256": "21d015a494968402cdb3d9cbf49a4acc64d9a738b5b82812adc392fa7e3f34f6"
+    },
+    {
+      "original_path": "resolver_fixture/INPUT_MAP.json",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 944,
+      "sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2",
+      "compression": "none",
+      "raw_bytes": 944,
+      "raw_sha256": "79fcc95e43b600faec17db21abc30ca96dfc62eb7214851df9b64c69b2c2ecb2"
+    },
+    {
+      "original_path": "resolver_fixture/link",
+      "kind": "symlink_fixture_metadata_only",
+      "target": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_publication_draft/resolver_fixture/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "target_text_sha256": "5b6eddeca6305ee7ef9413851e8c09c8c90d7eec9a644876b5633c6e02bca61c"
+    },
+    {
+      "original_path": "resolver_fixture/linked_directory",
+      "kind": "symlink_fixture_metadata_only",
+      "target": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_publication_draft/resolver_fixture/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs",
+      "target_text_sha256": "81cf6aab6e059b9190a7c4f333c2885a5692096fc93f96e15e497f869112f846"
+    },
+    {
+      "original_path": "resolver_fixture/outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/check_family.py",
+      "bytes": 14431,
+      "sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027",
+      "compression": "none",
+      "raw_bytes": 14431,
+      "raw_sha256": "731895804b4ffa5ed7f025ab10b83d4f2fae64d5d24a28d8b86cb008f266f027"
+    },
+    {
+      "original_path": "resolver_fixture/outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "kind": "file",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_review/sources/author/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "compression": "none",
+      "raw_bytes": 24275,
+      "raw_sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "original_path": "verify_static.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/verify_static.py.txt",
+      "bytes": 18246,
+      "sha256": "c8e895793073cdde15e55eaf54f9be454f27d1ce6a93e2ef893e2248b6f80e86",
+      "compression": "none",
+      "raw_bytes": 18246,
+      "raw_sha256": "c8e895793073cdde15e55eaf54f9be454f27d1ce6a93e2ef893e2248b6f80e86"
+    },
+    {
+      "original_path": "verify_static_attempt_01/PRELAUNCH.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/verify_static_attempt_01/PRELAUNCH.json.txt",
+      "bytes": 43429,
+      "sha256": "f08f86670a61a8729df562688ba1dd06fcbbb911cb66621170b70aca287aa67e",
+      "compression": "none",
+      "raw_bytes": 43429,
+      "raw_sha256": "f08f86670a61a8729df562688ba1dd06fcbbb911cb66621170b70aca287aa67e"
+    },
+    {
+      "original_path": "verify_static_attempt_01/RECEIPT.json",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/verify_static_attempt_01/RECEIPT.json.txt",
+      "bytes": 44271,
+      "sha256": "29caf6fcad93be2ecb9918cb008a4d6bb0c939c35a3529e46a9eecf80189623e",
+      "compression": "none",
+      "raw_bytes": 44271,
+      "raw_sha256": "29caf6fcad93be2ecb9918cb008a4d6bb0c939c35a3529e46a9eecf80189623e"
+    },
+    {
+      "original_path": "verify_static_attempt_01/executed.py",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/verify_static.py.txt",
+      "bytes": 18246,
+      "sha256": "c8e895793073cdde15e55eaf54f9be454f27d1ce6a93e2ef893e2248b6f80e86",
+      "compression": "none",
+      "raw_bytes": 18246,
+      "raw_sha256": "c8e895793073cdde15e55eaf54f9be454f27d1ce6a93e2ef893e2248b6f80e86"
+    },
+    {
+      "original_path": "verify_static_attempt_01/stderr.txt",
+      "kind": "file",
+      "path": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "none",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "verify_static_attempt_01/stdout.txt",
+      "kind": "file",
+      "path": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/preparation/verify_static_attempt_01/stdout.txt.txt",
+      "bytes": 773,
+      "sha256": "8693825d252c37768d13e7d65550ee4570c661d9a5c4d245037b86e7487965b1",
+      "compression": "none",
+      "raw_bytes": 773,
+      "raw_sha256": "8693825d252c37768d13e7d65550ee4570c661d9a5c4d245037b86e7487965b1"
+    }
+  ],
+  "count": 114
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_family_portability_review/run02/executed_source.py", line 38, in <module>
+    b=raw(P/row['path']);assert len(b)==row['bytes'] and sha(b)==row['sha256'],row['path']
+                                        ~~~^^^^^^^^^
+KeyError: 'bytes'

@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-17T03:17:51.952415+00:00",
+  "science_replayed": false,
+  "source_checks": [
+    {
+      "manifest": {
+        "path": "INITIAL_SOURCE_MANIFEST.json",
+        "bytes": 4128,
+        "sha256": "9eb059e399020e1ff4dc94d1f33305795a5a29a4e55f270c11abdc5fb160c005"
+      },
+      "original_snapshot_pairs": 11,
+      "all_equal": true
+    },
+    {
+      "manifest": {
+        "path": "AUTHOR_SOURCE_MANIFEST.json",
+        "bytes": 15981,
+        "sha256": "b7ebd425ec2ea90b6bd2d39366429e44cc44ee688654e82979a2933ccdf67bad"
+      },
+      "original_snapshot_pairs": 45,
+      "all_equal": true
+    }
+  ],
+  "reviewer_run_checks": [
+    {
+      "run": "stage1_run01",
+      "bound_inputs": 17,
+      "runtime_bindings": 3,
+      "all_equal": true
+    },
+    {
+      "run": "stage2_run01",
+      "bound_inputs": 73,
+      "runtime_bindings": 3,
+      "all_equal": true
+    }
+  ],
+  "stage1_freeze_entries_unchanged": 23,
+  "evidence_validation": {
+    "path": "EVIDENCE_VALIDATION.json",
+    "bytes": 3174,
+    "sha256": "aed7114f7787670da3394ae56035c4794ea5e4602b644d8a3d6e200ee836c9a2"
+  },
+  "result": "All frozen inputs and current original/snapshot bytes still agree."
+}

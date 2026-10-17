@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-17T19:48:07.649812+00:00",
+  "new_source_copies": 20,
+  "installed_note_sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+  "installed_manifest_sha256": "05dbb100eeea527701611a24eee4c1964838f5ee28ce27aab01a314540b203c4",
+  "installed_note_links": 34,
+  "preflight": {
+    "utc": "2026-10-17T19:38:14.046170+00:00",
+    "note_sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+    "manifest_sha256": "05dbb100eeea527701611a24eee4c1964838f5ee28ce27aab01a314540b203c4",
+    "new_files": 20,
+    "inherited_original_repository_pairs": 92,
+    "canonical_notes": 7,
+    "ancestor_manifests": 4,
+    "note_links": 34,
+    "scope": "Deterministic exact source/layout preflight; no copying, scientific execution or proof validation."
+  },
+  "scope": "Exact source copies and links checked; full arguments/checks read; distinct integration review completed. No scientific reruns or audit.",
+  "integration_review_sha256": "af131bc4fa01f5e349a20c547a34490cb95c1c7482a112351e3ebd577cafce76",
+  "citation_graph": {
+    "builder_exit": 0,
+    "writer_exit": 0,
+    "nodes": 7231,
+    "edges": 16207,
+    "new_node": "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17",
+    "new_edges": [
+      {
+        "from": "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17",
+        "to": "slow_output_complete_state_onset_bounded_theorem_note_2026-10-17"
+      },
+      {
+        "from": "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17",
+        "to": "uniform_slow_output_resource_family_bounded_theorem_note_2026-10-17"
+      },
+      {
+        "from": "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17",
+        "to": "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "other_manifest_nodes_unchanged": true
+  },
+  "limits": "Selective source-exposed analytical checks; no dynamics simulation, recalibration, combined-main pipeline or retained audit. No editable prompt files changed."
+}

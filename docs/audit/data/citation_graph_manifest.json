@@ -1,6 +1,6 @@
 {
- "edge_count": 16204,
- "node_count": 7230,
+ "edge_count": 16207,
+ "node_count": 7231,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -22789,6 +22789,10 @@
   "wide_lattice_h2t_skeptic_audit_note": {
    "deps_hash": "9aa2154fc209",
    "out_degree": 1
+  },
+  "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "9ccc008671bc",
+   "out_degree": 3
   },
   "wigner_mode_low_d_sublattice_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",

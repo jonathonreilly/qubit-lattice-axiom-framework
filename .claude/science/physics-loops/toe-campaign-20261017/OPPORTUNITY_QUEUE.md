@@ -4,6 +4,14 @@ Done in this campaign: C1–C4 (star-supported no-gos), C6 (BKSF orbits, four-sp
 permutations), C8/C10 (bare-permutation spin-1/2 class), C11 (site-local half-edge realization) and C12
 (one O-covariant species with on-site Cliffords; spinless under U_R, w2 under U_R W).
 
+00. **The order-4 BKSF codes: an anomaly or an error?**
+   - Under the bare action all three C2 have eta = -1, and every W-twist keeps the number of -1 odd.
+   - A nondegenerate fermion admits only even-minus patterns on D2 (abelian extensions).
+   - Decide whether the bare D2 action has a symmetry-localization obstruction (an H^3-type anomaly) or
+     whether lambda = theta*eta fails for some C2.
+   - The same constraint explains why w2 on all of O (which contains D2) is hard for a nondegenerate
+     single species. It might be impossible, which would be a genuine no-go for one-state spin-1/2
+     fermions in these codes.
 0. **A single species with w2 on all of O.** No realization found so far gives it (see the HANDOFF
    dictionary): W-twists cannot, and the on-site Majorana actions give the trivial class. Either find an
    on-site action that does, or prove an obstruction for these codes. This is the sharpest open question

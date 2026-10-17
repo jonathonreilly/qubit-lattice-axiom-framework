@@ -1,7 +1,7 @@
 ---
 claim_id: bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact (Pauli algebra with phases, L = 4 torus): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is plus, respectively minus, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact (L = 8 torus): for every one of the 108 (code, C2) pairs, in both sectors, a state with fermions at x and Rx (solved so that its excitations are R-symmetric and confined near x and Rx) has P_R-eigenvalue +1 relative to the vacuum (controls: +1 for the toric-code boson; -1 for the toric-code boson in pi flux under a plaquette-centred C2). With exchange sign -1 this gives eta_f(C2, C2) = -1 for every C2 of every code under P_R. For 72 pairs the creators are clean hop strings; for the other 36 they need local flux dressing, and lambda = +1 holds on the entire space of admissible dressed creators (exact quadratic-form argument, independent check). Group cohomology then gives, for every code, that the fermion's class for its whole rotation stabilizer (D3, D2 = Q8 class, or Z2) under P_R equals the restriction of the spin-1/2 class w2 of SO(3). Twisting by W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) on the elements where a Z2 character is -1 gives a valid realization that flips those C2: the trivial class for D3 and single-C2 codes, but not for the order-4 codes, whose reachable twisted patterns flip exactly two of the three C2. So the class belongs to the realization, not to the code alone. Not claimed: C3-only statements (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin).""
+claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact (Pauli algebra with phases, L = 4 torus): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is plus, respectively minus, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact (L = 8 torus): for every one of the 108 (code, C2) pairs, in both sectors, a state with fermions at x and Rx (solved so that its excitations are R-symmetric and confined near x and Rx) has P_R-eigenvalue +1 relative to the vacuum (controls: +1 for the toric-code boson; -1 for the toric-code boson in pi flux under a plaquette-centred C2). With exchange sign -1 this gives eta_f(C2, C2) = -1 for every C2 of every code under P_R. For 72 pairs the creators are clean hop strings; for the other 36 they need local flux dressing, and lambda = +1 holds on the entire space of admissible dressed creators (exact quadratic-form argument, independent check). Group cohomology then gives, for the D3 and single-C2 codes, that the fermion's class for the whole rotation stabilizer under P_R equals the restriction of the spin-1/2 class w2 of SO(3); for the order-4 codes the data (-1 for all three C2) match w2 on D2 in sign pattern, but a nondegenerate fermion cannot carry an odd-minus pattern on D2 in a one-dimensional local action, so these codes signal either a localization obstruction of the bare D2 action or a failure of lambda = theta*eta there (open). Twisting by W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) on the elements where a Z2 character is -1 gives a valid realization that flips those C2: the trivial class for D3 and single-C2 codes, but not for the order-4 codes, whose reachable twisted patterns flip exactly two of the three C2. So the class belongs to the realization, not to the code alone. Not claimed: C3-only statements (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin).""
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
 runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
@@ -115,10 +115,29 @@ for P_R.
      - the class with all three squares -1 on the order-4 groups, whose
        three C2 axes are mutually orthogonal (the quaternion group);
      - the nontrivial class on Z2.
-   - **Conclusion.** For every one of the 60 codes, under P_R the
-     fermion's fractionalization class for the code's whole rotation
-     stabilizer equals the restriction of w2, the class of a spin-1/2
-     particle.
+   - **Conclusion.**
+     - For the 12 D3 codes and the 36 single-C2 codes, under P_R the
+       fermion's fractionalization class for the code's whole rotation
+       stabilizer equals the restriction of w2, the class of a spin-1/2
+       particle.
+     - For the 12 order-4 codes the pair-test data are -1 for all three C2,
+       the sign pattern of w2 on D2 (the quaternion class). But assembling
+       these into a class is in tension with the fermion being
+       nondegenerate, and is left open.
+       - Here a fixed syndrome determines the excitation, so a single
+         fermion has one local state.
+       - A one-dimensional local action with fermion parity acting as -1
+         exists only for the abelian extensions of D2. Those are the sign
+         patterns with an even number of -1.
+       - The patterns (-,-,-) (quaternion) and the one-minus patterns
+         (dihedral) need a degenerate, Kramers-like fermion.
+       - So either the bare D2 action of these codes cannot be
+         consistently localized on the fermion (an anomaly-type
+         obstruction), or λ = θ_f η_f fails for some of these C2.
+       - The W-twists of item 6 flip two of the three signs at a time.
+         They preserve the odd count, so they do not remove the tension.
+     - This does not affect D3 or Z2: there every class is compatible with
+       a nondegenerate fermion, since H^2(D3; U(1)) = 0.
 6. **The class belongs to the realization.**
    - Let W = prod_v exp(-i pi B_v / 4). It is a function of the
      stabilizers, so it is constant on the code space. On a state with

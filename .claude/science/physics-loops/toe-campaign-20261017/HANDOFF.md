@@ -50,6 +50,12 @@ lambda = -eta_f.
 Here W = prod_v exp(-i pi B_v / 4). In BKSF, W = const * e^{i pi N / 2}, a quarter-turn of fermion number.
 Majorana-only hopping selects the trivial-class realizations. A single species with w2 on all of O is open.
 
+**A tension.** w2 restricted to D2 has all three squares -1, the quaternion class. A nondegenerate
+fermion (one local state) can only carry even-minus patterns on D2. So w2 on any group containing three
+orthogonal C2 needs a Kramers-like doublet. This includes all of O. In the order-4 BKSF codes the bare
+action shows the odd pattern, so either the action has a localization obstruction or lambda = theta*eta
+fails there. Open, and ranked first in the queue.
+
 ## Plain-language summary (for the owner)
 
 - **The supplied one-qubit Pauli stabilizer class has no three-dimensionally

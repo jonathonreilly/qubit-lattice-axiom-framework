@@ -1,0 +1,88 @@
+{
+  "kind": "source_exposed_single_tuple_author_candidate_freeze",
+  "created_at_utc": "2026-10-17T23:39:22.712364+00:00",
+  "independent_review_status": "pending separate review; no verdict created here",
+  "files": [
+    {
+      "path": "CALCULATION_PLAN.md",
+      "bytes": 2402,
+      "sha256": "ad9f31d1873cca4ed7ddca7bd2d7461c2d97cf373ea3017cd4c162a0cce61d01"
+    },
+    {
+      "path": "METADATA_VALIDATION.json",
+      "bytes": 1036,
+      "sha256": "5ab0ffc301d8e37c8cdad2bc8b8998ae7d394adc7971ecd5a92812021b0282c5"
+    },
+    {
+      "path": "PRECALCULATION_METADATA.json",
+      "bytes": 801,
+      "sha256": "23db766811ab904633887edff013173cd35db9094bb60878faf8b4b686482537"
+    },
+    {
+      "path": "PROPOSAL.md",
+      "bytes": 28224,
+      "sha256": "243c172226f2a509ce9ba11686763ebc2e754f52a8b5a4e98d6ab4424c0ca20d"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 11126,
+      "sha256": "d66a7c1602f6d23e81b8b020946eb21c044dd60dd386c68aa9128e947bdafd23"
+    },
+    {
+      "path": "SUPPLEMENTAL_SOURCE_PINS.json",
+      "bytes": 830,
+      "sha256": "9f50a6654bb7025b1b8891957a7e4d31001423abc4d6a96f4b642d9b502c336f"
+    },
+    {
+      "path": "calculate.py",
+      "bytes": 21499,
+      "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88"
+    },
+    {
+      "path": "run_once.py",
+      "bytes": 3002,
+      "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be"
+    },
+    {
+      "path": "runs/calculation_001/EXACT_CERTIFICATE.json",
+      "bytes": 196424,
+      "sha256": "3cb5c2632601bab0bab931893f8cbdb4b20cfc02585b5540ce7cd9ac7c11cdbe"
+    },
+    {
+      "path": "runs/calculation_001/EXECUTION.json",
+      "bytes": 3801,
+      "sha256": "c970c217b29b5aca6eab7925691568430a21927260925f89dd0f93630b1affa0"
+    },
+    {
+      "path": "runs/calculation_001/PRELAUNCH.json",
+      "bytes": 2109,
+      "sha256": "d83323fe38cd329ac91083a9e2cedf70c324a1a346b07a58de88418917010225"
+    },
+    {
+      "path": "runs/calculation_001/executed_launcher.py",
+      "bytes": 3002,
+      "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be"
+    },
+    {
+      "path": "runs/calculation_001/executed_source.py",
+      "bytes": 21499,
+      "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88"
+    },
+    {
+      "path": "runs/calculation_001/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/calculation_001/stdout",
+      "bytes": 12527,
+      "sha256": "f49280baa55c5164f54b440dada940316691a94797b35d93650f115cdb05e209"
+    },
+    {
+      "path": "seal_packet.py",
+      "bytes": 4691,
+      "sha256": "92d10fcb0be3327def547d65bd7d98b1b7876b6c367865fd69fb66fe940d9632"
+    }
+  ],
+  "self_excluded": "FINAL_FREEZE.json"
+}

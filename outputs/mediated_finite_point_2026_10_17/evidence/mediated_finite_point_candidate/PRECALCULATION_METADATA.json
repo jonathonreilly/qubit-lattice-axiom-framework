@@ -1,0 +1,20 @@
+{
+  "parsed_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/calculate.py",
+      "sha256": "4f5340de216d97d0609d198e8b488b56447d087ea5483731eb01cfbcfe55ee88",
+      "bytes": 21499,
+      "function_count": 30,
+      "syntax": "AST parsed; not imported or executed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/mediated_finite_point_candidate/run_once.py",
+      "sha256": "02a8202aa15304acf45c25dababc79ae0c42f97a5f6dd99d17b6420fa1c853be",
+      "bytes": 3002,
+      "function_count": 3,
+      "syntax": "AST parsed; not imported or executed"
+    }
+  ],
+  "source_pin_count": 41,
+  "scientific_execution_completed": false
+}

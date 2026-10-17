@@ -1,0 +1,16 @@
+{
+  "kind": "post_run_direct_identity_refresh_of_unchanged_background_premises",
+  "scope": "The launch manifest is preserved. These identities were already named by the pinned loaded theorem. Only emitter-free background sections1-2 are imported; no emitter-specific theorem is used.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/slow_lead_wide_endpoint/PROPOSAL.md",
+      "bytes": 17381,
+      "sha256": "c4c99408686166ba4d80bc973f5c22afdd1185bbf38e4539512dc26afd5cd5e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/slow_lead_wide_endpoint_check/REVIEW.md",
+      "bytes": 9578,
+      "sha256": "c6cc2ed747956e70bba1a7af3a5d65d3d36a7f708367727cb6f5e8a74386feb5"
+    }
+  ]
+}

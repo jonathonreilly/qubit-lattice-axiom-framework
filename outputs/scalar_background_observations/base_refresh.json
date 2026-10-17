@@ -1,0 +1,16 @@
+{
+  "original_reviewed_commit": "947f2ebd645458efa0ffb5bf770548502adbaa39",
+  "rebased_parent": "a3fbc858bc08bd5e152effc4e681062652367840",
+  "changed_original_paths": [
+    ".claude/science/physics-loops/scalar-background-observations-20261017/HANDOFF.md",
+    ".claude/science/physics-loops/scalar-background-observations-20261017/PR_BACKLOG.md",
+    ".claude/science/physics-loops/scalar-background-observations-20261017/STATE.yaml",
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "science_sources_and_evidence_byte_identical": true,
+  "intended_graph_delta": {
+    "nodes": 1,
+    "edges": 1
+  },
+  "scope": "Only generated manifest and administrative publication checkpoint changed. No source or proof changes. Shared landing checks still pending."
+}

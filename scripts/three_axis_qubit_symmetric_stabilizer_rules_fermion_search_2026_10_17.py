@@ -99,22 +99,52 @@ def symp(w1, w2, nq):
     return int((w1[:nq] @ w2[nq:] + w1[nq:] @ w2[:nq]) % 2)
 
 
-def junction_signs(gens, q, patterns, legs=((2, 0, 0), (0, 2, 0), (0, 0, 2)), R=3):
-    """For each charge pattern (list of (offset, generator)), the exchange sign or None if not movable."""
+def tube_sites(t, radius=1):
+    """Sites within L1 distance `radius` of the straight segment from the origin to t."""
+    n = max(abs(c) for c in t)
+    pts = set()
+    for k in range(n + 1):
+        c = tuple(round(k * t[i] / n) for i in range(3))
+        for d in itertools.product(range(-radius, radius + 1), repeat=3):
+            if sum(abs(x) for x in d) <= radius:
+                pts.add(tuple(c[i] + d[i] for i in range(3)))
+    return pts
+
+
+def junction_signs(gens, q, patterns, legs=((4, 0, 0), (0, 4, 0), (0, 0, 4)), R=5):
+    """Levin-Wen T-junction sign for each charge pattern (list of (offset, generator)), or None if some leg
+    cannot be realized. Leg operators are confined to radius-1 tubes around straight segments, so the three
+    legs overlap only near the junction (unconfined solutions can cross elsewhere and give spurious signs)."""
     inst, M, nq = build_box(gens, q, R)
     iidx = {x: i for i, x in enumerate(inst)}
-    cols = []
-    for pat in patterns:
-        for t in legs:
+    sites = list(itertools.product(range(-R, R + 1), repeat=3))
+    sidx = {p: i for i, p in enumerate(sites)}
+    legops = []
+    for t in legs:
+        cols = [q * sidx[p] + a for p in tube_sites(t) if p in sidx for a in range(q)]
+        keep = np.zeros(2 * nq, bool)
+        keep[cols] = True
+        keep[[nq + c for c in cols]] = True
+        tg = []
+        for pat in patterns:
             v = np.zeros(len(inst), np.uint8)
             for off, j in pat:
                 v[iidx[(tuple(off), j)]] ^= 1
                 v[iidx[(tuple(np.add(off, t)), j)]] ^= 1
-            cols.append(v)
-    sols = solve_many(M, np.stack(cols, axis=1))
+            tg.append(v)
+        sols = solve_many(M[:, keep], np.stack(tg, axis=1))
+        full = []
+        for w in sols:
+            if w is None:
+                full.append(None)
+            else:
+                f = np.zeros(2 * nq, np.uint8)
+                f[keep] = w
+                full.append(f)
+        legops.append(full)
     res = []
     for k in range(len(patterns)):
-        W = sols[3 * k:3 * k + 3]
+        W = [legops[i][k] for i in range(3)]
         if any(w is None for w in W):
             res.append(None)
         else:
@@ -189,9 +219,9 @@ def main() -> int:
     # ---------------- 1. statistics tool controls
     A2 = {(0, 0, 0): (X, X), (-1, 0, 0): (X, 0), (0, -1, 0): (0, X)}
     B2 = {(0, 0, 0): (Z, Z), (0, 1, 0): (Z, 0), (1, 0, 0): (0, Z)}
-    legs2 = ((2, 0, 0), (0, 2, 0), (-2, -2, 0))
+    legs2 = ((3, 0, 0), (0, 3, 0), (-3, -3, 0))
     s = junction_signs([A2, B2], 2, [[((0, 0, 0), 0)], [((0, 0, 0), 1)], [((0, 0, 0), 0), ((0, 0, 0), 1)]], legs=legs2, R=4)
-    ck.check('statistics tool: 2D toric code e and m are bosons (+1) and e x m is a fermion (-1)', s == [1, 1, -1])
+    ck.check('statistics tool (tube-confined legs): 2D toric code e and m are bosons (+1) and e x m is a fermion (-1)', s == [1, 1, -1])
 
     # ---------------- 2. alphabet lemma (finite part)
     def anti(s1, s2):
@@ -334,13 +364,13 @@ def main() -> int:
         okstat &= len(mob) >= 1 and all(x == 1 for x in mob)
     print(f'unsoldered: {len(rules)} bounded rules; mobile same-site charge patterns per rule: {sorted(set(nmob))}')
     ck.check('unsoldered: all 36 bounded maximal rules are valid with log2 code dimension 24 at L = 4 and L = 6', len(rules) == 36 and okdim)
-    ck.check('unsoldered: in every one, each same-site charge pattern that moves by 2e_x, 2e_y, 2e_z is a boson (no fermion found)', okstat)
+    ck.check('unsoldered: in every one, each same-site charge pattern movable along tube-confined legs to 4e_x, 4e_y, 4e_z is a boson (no fermion found)', okstat)
 
     print('per_element: soldered survivor set re-verified element by element; axis-C2 completeness only with --full')
     print('per_site: three axis-labelled qubits per site; no dynamics')
     print('per_mode: not applicable')
     print('per_block: not applicable')
-    print('lattice_wide: tori L = 4, 6; statistics on an open box R = 3')
+    print('lattice_wide: tori L = 4, 6; statistics on an open box R = 5 with tube-confined legs')
     print(f"TOTAL: PASS={ck.passed} FAIL={ck.failed}")
     return 0 if ck.failed == 0 else 1
 

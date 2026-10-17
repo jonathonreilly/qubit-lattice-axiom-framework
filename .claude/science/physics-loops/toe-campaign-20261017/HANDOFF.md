@@ -51,8 +51,13 @@ adopted; every result is unaudited bounded support with a declared model.
   - The hunch that soldering would enable fermions is not supported.
     Known emergent-fermion models use low-symmetry ingredients, such as a
     framing or spin structure, which these searches exclude.
-- **Next:** generators with low or no symmetry (C5); generation counting
-  (C7).
+- **C5 exploration (no note).** A quick test of "framed" toric codes found
+  apparent fermions. They were an artifact of the statistics solver, whose
+  leg operators could cross. With properly confined legs, all were bosons.
+  The tool is now fixed and the C4 result re-checked.
+- **Next:** a real 3D fermionic stabilizer code (for example the
+  Chen–Kapustin bosonization dual), and whether it can be made cubic
+  covariant; generation counting (C7).
 
 ## Blocks
 

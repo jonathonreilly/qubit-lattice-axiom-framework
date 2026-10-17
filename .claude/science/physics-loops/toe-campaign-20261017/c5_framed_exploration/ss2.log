@@ -1,0 +1,5 @@
+O 24 {'boson': 3} [0s] | fermion example: None | mixed example: None
+T 12 {'boson': 5} [0s] | fermion example: None | mixed example: None
+D3 6 {'boson': 13, 'noncommuting': 16, 'U not pure hopping': 2} [1s] | fermion example: None | mixed example: None
+C3 3 {'boson': 42, 'noncommuting': 3276, 'U not pure hopping': 4} [8s] | fermion example: None | mixed example: None
+D4z 8 {'boson': 15} [710s] | fermion example: None | mixed example: None

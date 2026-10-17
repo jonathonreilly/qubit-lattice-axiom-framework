@@ -37,5 +37,8 @@ blocks:
     exact: ["alphabet lemma", "soldered rotation-fixed class: no bounded rule with free-variable-preserving motion", "unsoldered C4/C3: 36 bounded maximal rules, all toric-code-type, bosonic"]
     independent_check: "CONFIRMED all three (own backtracking enumeration, full unsoldered survey, own statistics); wording fix on the 34927/70999 count"
     trace_class: frontier_discovery
+  C5-framed-exploration:
+    status: exploratory (no note)
+    finding: "framed edge codes U_e = Z_e X_S (|S|<=2, symmetric): only bosons with straight/tube-confined legs; earlier box-solver 'fermions' were artifacts of crossing legs; statistics tool now tube-confined"
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

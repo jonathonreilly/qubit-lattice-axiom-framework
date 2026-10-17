@@ -64,11 +64,18 @@ fermions.
      2e_z, and its T-junction sign is +1, a boson.
    - The nine largest maximal sets (383 orbits) are abelian self-commutant
      alphabets, so the lemma covers them.
-4. **Statistics tool (validated).** The leg operators are found by GF(2)
-   solving on an open box, and the sign is the product of their pairwise
-   commutation signs.
-   - It returns +1 for the 2D toric code's e and m, and -1 for e x m.
+4. **Statistics tool (validated).** Leg operators are found by GF(2)
+   solving, confined to radius-1 tubes around straight segments from the
+   junction, so the three legs overlap only near the junction. The sign is
+   the product of their pairwise commutation signs.
+   - It returns +1 for the 2D toric code's e and m and -1 for e x m, for
+     several leg geometries.
    - It returns +1 for the interleaved toric codes' vertex charge.
+   - An unconfined box solver was used first. It can return legs that cross
+     away from the junction, and it reported spurious "fermions" in a
+     separate framed-code exploration (loop pack, c5). With straight or
+     tube-confined legs, those all came out as bosons. The 36 unsoldered
+     rules give bosons with both methods.
 
 **Conclusion within these classes.** No coherently three-dimensionally
 mobile fermion exists:
@@ -164,7 +171,7 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c4_fermion_search/in
 ## Verification
 
 ```bash
-python3 scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py          # about 3 minutes
+python3 scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py          # a few minutes
 python3 scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py --full   # adds the axis-C2 enumeration
 ```
 

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/structural_coefficient_box_2026_10_17.py
+runner_sha256: b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7
+input_fingerprint_sha256: 3ceb7f376e9ab6fa187947f09b4111614aba9ff99992fa440cd939a947a73278
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+{
+  "scope": "Portable replay of two separately written finite exact calculations. The infinite resolvent/packet argument is analytically reviewed; historical point results are inherited premises.",
+  "independent_checks": 157,
+  "extra_reflection": {
+    "exact_rational": "1979343963533505010076724332885926810108419/9765421527595617928242046157797906250000000000",
+    "display_only_float": 0.00020268904500846948
+  },
+  "ready_complete": {
+    "exact_rational": "94273834080014687082390827348167944818813316533/8456855042897805125857611972652986812500000000000",
+    "display_only_float": 0.011147623271512414
+  },
+  "finite_complete": {
+    "exact_rational": "102730689122912492208248439320820931631313316533/8456855042897805125857611972652986812500000000000",
+    "display_only_float": 0.012147623271512415
+  },
+  "limits": "No stationary refit, coefficient grid, quadrature, time evolution, native realization or retained audit."
+}
+
+----- stderr -----
+

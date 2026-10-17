@@ -1,0 +1,87 @@
+{
+  "reviewed_utc": "2026-10-17T01:42:56.242250+00:00",
+  "disposition": "Wrapper and portable implementation approved for regular conditional-support publication, subject to remaining focused packet/staging checks. No retained-status or landing approval.",
+  "source_science_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_root_qualification/ACCEPTANCE.json",
+    "bytes": 15734,
+    "sha256": "ec522e7c0a20ac95c47e3c8b87af9fdc683e135e54269afd251ba97e5cb207c5"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 24313,
+    "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/structural_coefficient_box_2026_10_17.py",
+    "bytes": 12278,
+    "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+  },
+  "helper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/structural_coefficient_box_check_2026_10_17.py",
+    "bytes": 16066,
+    "sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+  },
+  "root_read_scope": [
+    "Complete wrapper, actual-scalar finite/infinite contracts, obligation/import table and review/physical-limit text.",
+    "Complete primary and actual canonical launcher/receipt; complete source proof and independent checker previously read by exact pins.",
+    "Complete metadata AST adaptation and eight-case mutation implementation/results; exact scientific fields compared with source outputs.",
+    "Two final metadata/link edits inspected separately; unchanged complete proof body verified bytewise."
+  ],
+  "implementation_scope": "Frozen scientific bodies transported into local functions; only two resource metadata dictionaries adapted. Historical source caps are not reported as canonical caps. One shared60CPU/60wall envelope is explicitly stated.",
+  "input_and_artifact_verification": {
+    "declared_input_hashes": 50,
+    "artifact_entries": 47,
+    "author_scientific_output_equal_to_historical": true,
+    "independent_scientific_output_equal_to_historical": true
+  },
+  "mutation_scope": {
+    "cases": 8,
+    "all_intended_scientific_rejections": true,
+    "source_and_stream_hashes_verified": true,
+    "math_unchanged_after_mutations": "Only AST-identical whitespace normalization and note metadata/link changes followed."
+  },
+  "canonical_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/CANONICAL_EXECUTION.json",
+    "bytes": 1378,
+    "sha256": "d7329812579834b025b36fade7c213bc79a1b0451096ec048a3319786167e4c1"
+  },
+  "metadata_adaptation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/METADATA_ADAPTATION.json",
+    "bytes": 13038,
+    "sha256": "0eb6cc6fb330baf2bf6f6efe1cd7759a7517e8a74903924bdd2c5d93368d1cdf"
+  },
+  "whitespace_adaptation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/WHITESPACE_ADAPTATION.json",
+    "bytes": 1614,
+    "sha256": "45693bc9881a9fa2d93ce1d2966d1756cf6b570bf3ffcc5d0eb64eba566eaca3"
+  },
+  "note_refresh": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/NOTE_REFRESH.json",
+    "bytes": 2995,
+    "sha256": "9e2e25cfb1a06baec840a2f11e143baaf2c75ec3c20c48e24b5f29a6e633d1a8"
+  },
+  "graph_scope": {
+    "one_new_node": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+    "one_new_edge": true,
+    "no_existing_nodes_removed_or_changed": true,
+    "topology_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 1028322,
+      "sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258"
+    }
+  },
+  "preserved_limits": [
+    "Prior nominal point/interval and generic proof are conditional inherited premises; no new physical point refit.",
+    "Same-model source-exposed review with prior stationary/interval exposure; no blind or model-diverse claim.",
+    "Exact block darkness,J,K and supplied ready vector remain premises. Ten errors track actual nu; nominal-scalar corollary fixes nu.",
+    "Only added old loads stay below2; larger source/contact loads, fixed calibration residual and huge sufficient sizes are explicit.",
+    "No arbitrary noise, packet preparation, emitter composition, native hardware, reset/reuse or retained audit."
+  ],
+  "remaining_publication_steps": [
+    "Finish focused links/readiness and complete staged-path review; verify current parent/base identities, then commit/push feature branch and create/attach regular PR.",
+    "Shared integrated-main landing pipeline, strict lint and changed-evidence checks remain later obligations; no science merge is authorized."
+  ],
+  "editable_prompt_files_changed": [],
+  "physical_axioms_changed": false,
+  "audit_verdicts_changed": false
+}

@@ -1,0 +1,590 @@
+{
+  "utc": "2026-10-17T01:45:24.618320+00:00",
+  "status": "Focused publication packet checked and root wrapper/implementation approval recorded for conditional publication. All paths unstaged; publication and landing remain separate.",
+  "scope": "Deterministic packaging and actual finite exact execution. Source theorem acceptance is reused; no new independent science verdict.",
+  "parent_head": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "branch": "physics-loop/toe-structural-coefficient-box-20261017",
+  "artifact_hashes_verified": 47,
+  "declared_input_count": 50,
+  "frozen_argument_byte_identical": true,
+  "metadata_only_calculation_ast_adaptation": true,
+  "all_other_calculation_statements_ast_identical": true,
+  "whitespace_complete_ast_preserved": true,
+  "helper_discovery": [
+    "scripts/structural_coefficient_box_check_2026_10_17.py"
+  ],
+  "independent_check_count": 157,
+  "deterministic_readiness_issue": null,
+  "cache_status": "fresh",
+  "canonical_execution": {
+    "started_utc": "2026-10-17T01:41:27.707639+00:00",
+    "ended_utc": "2026-10-17T01:41:28.284664+00:00",
+    "runner": "scripts/structural_coefficient_box_2026_10_17.py",
+    "cpu_cap_seconds": 60,
+    "external_wall_cap_seconds": 60,
+    "shared_budget": "Both finite calculations in one primary process; no per-body reset.",
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 0.5255649089813232,
+    "cache_path": "logs/runner-cache/structural_coefficient_box_2026_10_17.txt",
+    "cache_status": "fresh",
+    "stdout": {
+      "bytes": 939,
+      "sha256": "d8f7af952f167bf5cb6fcbbe0d882eb33d0823a5f30619550aa40aa1fd073916"
+    },
+    "stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runner_at_receipt": {
+      "bytes": 12278,
+      "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+    },
+    "canonical_result": {
+      "bytes": 26960,
+      "sha256": "4f1eea1cfd0e8b884d58b6f7e298af11961ee49fa196ca350fdc8ff3831a033d"
+    },
+    "preexecution_output_slots": "Missing canonical output was initialized to not_executed before runner identity capture.",
+    "scope": "Actual exact finite algebra only. No stationary refit, coefficient grid, time evolution, hardware experiment or retained audit.",
+    "cache": {
+      "bytes": 1293,
+      "sha256": "b38f852a8c91c5ad5860f4791994e15a5629acfdbe7b0907b5bd46d1d675fc55"
+    }
+  },
+  "canonical_identities": {
+    "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "bytes": 24313,
+      "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+    },
+    "scripts/structural_coefficient_box_2026_10_17.py": {
+      "bytes": 12278,
+      "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+    },
+    "scripts/structural_coefficient_box_check_2026_10_17.py": {
+      "bytes": 16066,
+      "sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+    },
+    "outputs/structural_coefficient_box_2026_10_17.json": {
+      "bytes": 26960,
+      "sha256": "4f1eea1cfd0e8b884d58b6f7e298af11961ee49fa196ca350fdc8ff3831a033d"
+    },
+    "logs/runner-cache/structural_coefficient_box_2026_10_17.txt": {
+      "bytes": 1293,
+      "sha256": "b38f852a8c91c5ad5860f4791994e15a5629acfdbe7b0907b5bd46d1d675fc55"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "bytes": 1028322,
+      "sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258"
+    }
+  },
+  "canonical_result_input_hashes": {
+    "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json": "f681f88ee1c69f040ef83e2406ca544c9d1164c42fb9d2a254fb7013f80f05d3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/BOUNDS.json": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/CANDIDATE.md": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/EXECUTION_SOURCE_BINDING.json": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/FREEZE.json": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/SOURCE_PINS.json": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/check_bounds.py": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_CANDIDATE.md": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_REVIEW.md": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/PRIOR_QUALIFICATION.md": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/EXECUTION.json": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stdout": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FILE_MANIFEST.json": "1b0283f08a4911b15d9fc04c8aaa25a207c18b6ccf0bd709b06239e5f2e66ce5",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FREEZE.json": "4ecc5a8f9895a4f3b3ad5c1dcbb2167804cca734639c36dc2efb6617481e12c7",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md": "7ec59622c9acaf321bc2363839a8631f81c5b1b75e78a99a03c7500366b4f5f8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/RESOURCE_PLAN.md": "44ee6329bd080b6cb1479a36e432ffbac9c43f35d91d1ce2510658331e7f3b90",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REUSED_PREMISE_PINS.json": "47fb4ac00c45072cbb3e5f3fa94012117b0c729daffe71b14744f3f5ead46cd3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_PINS.json": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_RECHECK.json": "85f547bb554aabc3c171150cbbb9c945359ae5ee4be5fcd2708df33307c0230c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/check_structural_box.py": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/run_check.py": "dddc65ef7efc3f606a9160133fbd02b22958753b5277c660d291ebc01868c0de",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/EXECUTION.json": "b605e59bc85e67e680ce52d66b68d52e76b6e8f2ddcccc05c0c9659db61a42a0",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/RESULT.json": "0241b1f2acfe5234408372a96633fcbe19f3cdb08c498f904025a9687acdb06f",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/SOURCE_PINS_AT_LAUNCH.json": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/executed_source.py": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stdout": "da633ca3b9959daec26f6f84e0dcf89dff2227bffb388abdc53f98e84cfd0ec0",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/BOUNDS.json": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/CANDIDATE.md": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/EXECUTION_SOURCE_BINDING.json": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/FREEZE.json": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/SOURCE_PINS.json": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/check_bounds.py": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_CANDIDATE.md": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_REVIEW.md": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/PRIOR_QUALIFICATION.md": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/EXECUTION.json": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stdout": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/PHYSICS_CLAIM_REVIEWER_SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/SCIENCE_WORKFLOW.md": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json": "ec522e7c0a20ac95c47e3c8b87af9fdc683e135e54269afd251ba97e5cb207c5",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md": "73b3acd8d92f3d986e1e5afa723729882f45ac91fb9632077437c1d00b98a401",
+    "scripts/structural_coefficient_box_check_2026_10_17.py": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+  },
+  "mutation_cases_and_archived_streams": 8,
+  "graph": {
+    "old_counts": {
+      "node_count": 7208,
+      "edge_count": 16163
+    },
+    "new_counts": {
+      "node_count": 7209,
+      "edge_count": 16164
+    },
+    "added": [
+      "structural_coefficient_box_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      ],
+      "helper_runner_paths": [
+        "scripts/structural_coefficient_box_check_2026_10_17.py"
+      ],
+      "note_hash": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f",
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+      "title": "A coefficient tolerance for the positive two-body reflection apparatus"
+    },
+    "new_edges": [
+      {
+        "from": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+        "to": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "manifest_sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258",
+    "executions": [
+      {
+        "script": "docs/audit/scripts/run_citation_graph_build.py",
+        "started_utc": "2026-10-17T01:38:08.738309+00:00",
+        "elapsed_seconds": 124.28917916724458,
+        "wall_cap_seconds": 180,
+        "exit_code": 0,
+        "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+        "started_utc": "2026-10-17T01:40:13.029809+00:00",
+        "elapsed_seconds": 0.1403145408257842,
+        "wall_cap_seconds": 60,
+        "exit_code": 0,
+        "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      }
+    ],
+    "scope": "New structural note and its explicit citation only. Generated citation_graph.json is validation residue, not publication source."
+  },
+  "graph_after_note_refresh": {
+    "scope": "Root-requested wrapper metadata and root-record link only; no source-body or scientific changes.",
+    "old_note": {
+      "bytes": 24138,
+      "sha256": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f"
+    },
+    "new_note": {
+      "bytes": 24313,
+      "sha256": "845fb32de988058055e4907cb37fae66c45d8edb8df003ed4fbcc908509014a1"
+    },
+    "changes": [
+      {
+        "old": "wrapper_root_approval: pending_separate_root_review",
+        "new": "wrapper_root_approval: see_separate_root_review_record"
+      },
+      {
+        "old": "publication are separate records.",
+        "new": "publication are separate records. Final wrapper approval is addressed by the\n[root wrapper review record](../.claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json)."
+      }
+    ],
+    "body_byte_identical": true,
+    "body_sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+    "graph_extraction_before": {
+      "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "title": "A coefficient tolerance for the positive two-body reflection apparatus",
+      "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+      "helper_runner_paths": [
+        "scripts/structural_coefficient_box_check_2026_10_17.py"
+      ],
+      "deps": [
+        "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      ]
+    },
+    "graph_extraction_after": {
+      "claim_id": "structural_coefficient_box_bounded_theorem_note_2026-10-17",
+      "path": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "title": "A coefficient tolerance for the positive two-body reflection apparatus",
+      "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "runner_path": "scripts/structural_coefficient_box_2026_10_17.py",
+      "helper_runner_paths": [
+        "scripts/structural_coefficient_box_check_2026_10_17.py"
+      ],
+      "deps": [
+        "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+      ]
+    },
+    "all_graph_fields_except_note_hash_identical": true,
+    "graph_builder_sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e",
+    "manifest_unchanged_sha256": "d4cd7260f9cb514bcb30bad1d472baf8484f54a8dd20544525c33360dca8e258",
+    "graph_scope": "Completed graph JSON retains its actual pre-edit note hash and is validation residue. Its topology manifest is unchanged and remains correct; no graph rebuild or synthetic note-hash refresh is claimed.",
+    "root_owned_record_pending": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+  },
+  "first_graph_timeout_retained": true,
+  "vocabulary_violating_files": 0,
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/structural_coefficient_box_2026_10_17.py",
+    "scripts/structural_coefficient_box_check_2026_10_17.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/check_bounds.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/check_structural_box.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/run_check.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/executed_source.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/check_bounds.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/refresh_wrapper.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/adapt_metadata.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/finalize_packet.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_verify.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/run_canonical.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/prepare_records.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_check.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused_verify.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_check.py"
+  ],
+  "regular_local_links": [
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/structural_coefficient_box_2026_10_17.py"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/structural_coefficient_box_check_2026_10_17.py"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/structural_coefficient_box_2026_10_17.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "logs/runner-cache/structural_coefficient_box_2026_10_17.txt"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json"
+    },
+    {
+      "source": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLICATION_EVIDENCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLICATION_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLISH_CHECKS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLICATION_REVIEW.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/METADATA_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/WHITESPACE_ADAPTATION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/RESULTS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/TRACE_GATE.md",
+      "target": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/TRACE_GATE.md",
+      "target": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    }
+  ],
+  "pending_root_owned_links": [],
+  "publication_file_whitespace_checked": [
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CANONICAL_EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/HANDOFF.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLICATION_EVIDENCE.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLICATION_REVIEW.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/PUBLISH_CHECKS.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/ROOT_WRAPPER_REVIEW.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/SOURCE_MANIFEST.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/TRACE_GATE.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/CANONICAL_REPEAT_COMPARISON.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_EXECUTIONS.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_RETRY_PLAN.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_VERIFICATION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/INITIAL_WHITESPACE_SCAN.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/METADATA_ADAPTATION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/NOTE_REFRESH.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PACKET_REPAIR.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PR9662_VERIFICATION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PRE_RUN_PLAN.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/VOCAB_REPORT.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/WHITESPACE_ADAPTATION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/adapt_metadata.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/CANONICAL_EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_cache.txt.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_result.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/note.md",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/finalize_packet.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused_verify.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_verify.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/GRAPH_EXECUTIONS.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_build.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_build.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_check.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_build.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_build.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_check.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_manifest.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_manifest.stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/PLAN.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/RESULTS.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/EXECUTION.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/mutated.py.gz",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/stdout",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/pr9662_inventory.json",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/prepare_records.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/refresh_wrapper.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/run_canonical.py",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/vocab.stderr",
+    ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/vocab.stdout",
+    "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "logs/runner-cache/structural_coefficient_box_2026_10_17.txt",
+    "outputs/structural_coefficient_box_2026_10_17.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/BOUNDS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/CANDIDATE.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/EXECUTION_SOURCE_BINDING.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/FREEZE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/SOURCE_PINS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/check_bounds.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/CERTIFICATE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_CANDIDATE.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_REVIEW.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/PRIOR_QUALIFICATION.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/THEOREM_V2.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/EXECUTION.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stderr",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stdout",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FILE_MANIFEST.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FREEZE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/RESOURCE_PLAN.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REUSED_PREMISE_PINS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_PINS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_RECHECK.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/check_structural_box.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/run_check.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/EXECUTION.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/RESULT.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/SOURCE_PINS_AT_LAUNCH.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/executed_source.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stderr",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stdout",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/BOUNDS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/CANDIDATE.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/EXECUTION_SOURCE_BINDING.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/FREEZE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/SOURCE_PINS.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/check_bounds.py",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/CERTIFICATE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_CANDIDATE.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_REVIEW.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/PRIOR_QUALIFICATION.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/THEOREM_V2.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/EXECUTION.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stderr",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stdout",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/SCIENCE_WORKFLOW.md",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md",
+    "scripts/structural_coefficient_box_2026_10_17.py",
+    "scripts/structural_coefficient_box_check_2026_10_17.py"
+  ],
+  "retained_whitespace_exceptions": [],
+  "tracked_diff_whitespace_exit_code": 0,
+  "pr9662_verified_inventory": {
+    "checked_utc": "2026-10-17T01:36:32.182525+00:00",
+    "authority": "Read-only gh pr view against actual Git origin jonathonreilly/qubit-lattice-axiom-framework",
+    "number": 9662,
+    "head": "3f641f336a1ab6ea36f37b3ccfbbbe5269241fc7",
+    "base": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+    "file_count": 45,
+    "raw_response": {
+      "bytes": 9171,
+      "sha256": "14c4b27406bf7a43724a665135c096ff40cb77db06a401aa2e60018f23ae96a9"
+    },
+    "coverage": "Complete returned PR body and45-path inventory read; no scientific source review of that unrelated PR.",
+    "scope": "Supplied Pauli-stabilizer classification and charge motion. Not a premise of this structural coefficient result. START count45 is confirmed at this observed head."
+  },
+  "source_manifest": {
+    "bytes": 2314,
+    "sha256": "e2727cb60bd100eba52e1fd9cda77b3299ea5f0c311484cb8042f266eef05078"
+  },
+  "publication_evidence_map": {
+    "bytes": 18864,
+    "sha256": "4ae2cad10fc7e11d07efd5156476ad57d0a46ff1c81cabc0d3f96877bdac6cac"
+  },
+  "root_wrapper_review": {
+    "bytes": 5434,
+    "sha256": "9f943f6d46cc3621082f84bfc7be5e843955398a601c42a8adaf8a05e2b3f738"
+  },
+  "editable_prompt_files_changed": [],
+  "staged_paths": [],
+  "remaining_gates": [
+    "Root final staged-path review and regular child PR preparation",
+    "Parent PR9661 landing or inclusion in integrated delta",
+    "Shared exact integrated-current-main pipeline, strict lint and changed-evidence checks",
+    "Independent retained audit"
+  ],
+  "post_execution_input_changes": false,
+  "canonical_repeat": {
+    "scope": "Exact dictionary comparison of both canonical outputs after the two wrapper-only edits. All mathematical and scope fields unchanged.",
+    "scientific_fields_exactly_unchanged": true,
+    "only_changed_input": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "excluded_fields": [
+      "input_sha256[note]",
+      "author.elapsed_seconds",
+      "independent.resources.elapsed_seconds",
+      "actual_combined_process_limits.elapsed_seconds"
+    ],
+    "compared_payload_sha256": "3d6b955aede7fdf3a6138175577c14ea7267865988329e500c0a942cd5478e02",
+    "canonical_attempts": 2,
+    "reason_for_repeat": "Declared note input changed at root request after attempt1; preserved original output, cache and receipt.",
+    "attempt1_elapsed_seconds": 0.5960419178009033,
+    "attempt2_elapsed_seconds": 0.5255649089813232
+  },
+  "publication_envelope_repair": {
+    "scope": "Publication-envelope repair only; no canonical note, program, declared input, result or current cache changed.",
+    "initial_focused_check": "Failed on an exact archived runner-cache blank EOF line; original source and streams preserved in focused_attempt_1.",
+    "repair": "Lossless gzip of archived attempt1 cache, preserving actual generated bytes and raw-source hash. The raw attempt1 copy remains in the integration directory. No whitespace exception is waived.",
+    "raw_cache_bytes": 1293,
+    "raw_cache_sha256": "5441c82a660e49fd167297afeb2c63ce32c6fd5e7312cf222f87bd2c9fb43d73",
+    "gzip_bytes": 727,
+    "gzip_sha256": "ec2a422765896b1bc02c80a805ac6f74258ec0dcb3334998bf6231d783cde714",
+    "other_setup_failure": "One apply_patch edit attempt failed to match a context line and made no changes; the corrected patch was applied before finalize execution."
+  }
+}

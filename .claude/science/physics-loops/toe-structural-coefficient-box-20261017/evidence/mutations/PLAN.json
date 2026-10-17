@@ -1,0 +1,76 @@
+{
+  "scope": "Scientific rejection tests, not additional independent theorem evidence. Frozen sources/inputs unchanged. Only an intended scientific assertion failure counts; a checksum failure, timeout or syntax failure does not.",
+  "declared_utc": "2026-10-17T01:33:54.832365+00:00",
+  "max_cases": 8,
+  "max_attempts_per_case": 1,
+  "per_case_cpu_cap_seconds": 60,
+  "per_case_external_wall_cap_seconds": 20,
+  "source_pins": {
+    "author": {
+      "bytes": 12302,
+      "sha256": "bae05b5f4c03e630e878134a94a1df57dee64499840c20d60459a47beb557d04"
+    },
+    "independent": {
+      "bytes": 16170,
+      "sha256": "b3b3fd4e7cee5e933804b7232050a8ae0435e7b79b48eee29ef1be13cda129be"
+    }
+  },
+  "cases": [
+    {
+      "name": "coefficient_box_overextension",
+      "source_role": "author",
+      "old": "a = F(1, 10**8)",
+      "new": "a = F(1, 10**6)",
+      "expected_scientific_assertion": "assert eta < F(1226, 10**10) and A*eta < 1"
+    },
+    {
+      "name": "inverse_ceiling_overextension",
+      "source_role": "author",
+      "old": "A = F(166)",
+      "new": "A = F(167)",
+      "expected_scientific_assertion": "assert actual_inverse_bound < 167"
+    },
+    {
+      "name": "omitted_closed_tail_variation",
+      "source_role": "author",
+      "old": "eta = b+c+J*J*b/(g*(g-b))",
+      "new": "eta = b+c",
+      "expected_scientific_assertion": "assert author['constants']['extra_reflection_error']['exact_rational'] == independent['derived_bounds']['extra_reflection']['exact']"
+    },
+    {
+      "name": "lost_vacuum_darkness",
+      "source_role": "independent",
+      "old": "derivatives = {'DeltaA': nA,",
+      "new": "derivatives = {'DeltaA': eye-nA,",
+      "expected_scientific_assertion": "DeltaA_annihilates_full_vacuum_embedding"
+    },
+    {
+      "name": "closed_surface_sign",
+      "source_role": "independent",
+      "old": "G = q/J",
+      "new": "G = -q/J",
+      "expected_scientific_assertion": "surface_endpoint_1/7"
+    },
+    {
+      "name": "noncommuting_resolvent_order",
+      "source_role": "independent",
+      "old": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*dHt*Rt)",
+      "new": "zero('noncommuting_resolvent_identity', Rs-Rt+Rs*Rt*dHt)",
+      "expected_scientific_assertion": "noncommuting_resolvent_identity"
+    },
+    {
+      "name": "common_phase_sign",
+      "source_role": "independent",
+      "old": "zeta = -alpha/z**4",
+      "new": "zeta = alpha/z**4",
+      "expected_scientific_assertion": "nominal_common_phase_contract"
+    },
+    {
+      "name": "finite_clock_horizon_overextension",
+      "source_role": "independent",
+      "old": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 4*10**13",
+      "new": "T, N, M, Tobs = 10**13, 22*10**12, 9*10**14, 5*10**13",
+      "expected_scientific_assertion": "finite_clock_chebyshev_exponent_margin"
+    }
+  ]
+}

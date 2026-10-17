@@ -1,0 +1,26 @@
+{
+  "name": "omitted_closed_tail_variation",
+  "source_role": "author",
+  "started_utc": "2026-10-17T01:33:55.897234+00:00",
+  "elapsed_seconds": 0.29263979103416204,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "eta = b+c+J*J*b/(g*(g-b))",
+  "new": "eta = b+c",
+  "expected_scientific_assertion": "assert author['constants']['extra_reflection_error']['exact_rational'] == independent['derived_bounds']['extra_reflection']['exact']",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 12481,
+    "sha256": "3b3740dcc7735242755d81af4739884d447c247a224a1540829c2c5e79b9d9d3"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 756,
+    "sha256": "d632d7c2458ab1c454a122621e90e8470297cf0abbcf2d9759db590455b0d22b"
+  }
+}

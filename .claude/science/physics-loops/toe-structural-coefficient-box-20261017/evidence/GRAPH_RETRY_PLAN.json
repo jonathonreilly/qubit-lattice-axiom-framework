@@ -1,0 +1,8 @@
+{
+  "declared_utc": "2026-10-17T01:38:08.697128+00:00",
+  "reason": "First governed graph build exceeded initial60s wall cap while active; no manifest writer ran. Original receipt/streams/source retained in graph_attempt_1.",
+  "new_max_attempts": 1,
+  "graph_build_wall_cap_seconds": 180,
+  "manifest_wall_cap_seconds": 60,
+  "scope": "Only external runtime allowance changes. No canonical note, primary, helper or frozen input changes."
+}

@@ -1,0 +1,51 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/check_structural_box.py",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/runs/attempt_1/RESULT.json"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review",
+  "start_utc": "2026-10-17T01:15:07.331781+00:00",
+  "end_utc": "2026-10-17T01:15:07.937297+00:00",
+  "elapsed_seconds": 0.6041657919995487,
+  "exit_code": 0,
+  "timed_out": false,
+  "cpu_cap_seconds": 45,
+  "wall_cap_seconds": 60,
+  "source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/check_structural_box.py",
+    "bytes": 15480,
+    "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+  },
+  "source_after_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/check_structural_box.py",
+    "bytes": 15480,
+    "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+  },
+  "input_manifest_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/SOURCE_PINS.json",
+    "bytes": 6744,
+    "sha256": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/run_check.py",
+    "bytes": 1893,
+    "sha256": "dddc65ef7efc3f606a9160133fbd02b22958753b5277c660d291ebc01868c0de"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/runs/attempt_1/stdout",
+    "bytes": 358,
+    "sha256": "da633ca3b9959daec26f6f84e0dcf89dff2227bffb388abdc53f98e84cfd0ec0"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/runs/attempt_1/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review/runs/attempt_1/RESULT.json",
+    "bytes": 13837,
+    "sha256": "0241b1f2acfe5234408372a96633fcbe19f3cdb08c498f904025a9687acdb06f"
+  }
+}

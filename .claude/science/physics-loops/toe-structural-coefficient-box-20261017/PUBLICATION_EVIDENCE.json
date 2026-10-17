@@ -1,0 +1,385 @@
+{
+  "scope": "Publication receipts outside the declared canonical input closure; not additional theorem premises.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/CANONICAL_REPEAT_COMPARISON.json",
+      "bytes": 829,
+      "sha256": "0a6ca24e5925d65c3cf04e6e86ddd3c8c18feed09f7b5ce1de7ca58d1fcc442e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_EXECUTIONS.json",
+      "bytes": 623,
+      "sha256": "93c5751d9da94cf94bc251d44937461ce832fe577afabde56469e592c7258e07"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_RETRY_PLAN.json",
+      "bytes": 441,
+      "sha256": "8f186bd1f8d09a20816291462314b1a8cd909bb53e9ea00e3fd8957b991da5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/GRAPH_VERIFICATION.json",
+      "bytes": 2153,
+      "sha256": "87d108a4a9926062d5c0143dc627a8cdb90121e2ac5df9e7ade67d94d098046b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/INITIAL_WHITESPACE_SCAN.json",
+      "bytes": 482,
+      "sha256": "5639c6f8d387af3aa075fbf5311c70fb4cd4d7775f11e2b7c6e76a290538a182"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/METADATA_ADAPTATION.json",
+      "bytes": 13038,
+      "sha256": "0eb6cc6fb330baf2bf6f6efe1cd7759a7517e8a74903924bdd2c5d93368d1cdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/NOTE_REFRESH.json",
+      "bytes": 2995,
+      "sha256": "9e2e25cfb1a06baec840a2f11e143baaf2c75ec3c20c48e24b5f29a6e633d1a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PACKET_REPAIR.json",
+      "bytes": 873,
+      "sha256": "c44a2b6ba7b7e8f1ba254c58b5f8a3a6a9aa011e69a9ce6041e68113d4ba945f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PR9662_VERIFICATION.json",
+      "bytes": 734,
+      "sha256": "7285e269e8c478414bb3084f376dc2e34014a63ab2417d64a577f809d0c42810"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/PRE_RUN_PLAN.md",
+      "bytes": 3270,
+      "sha256": "7adfa2975286f6da7b7b66fb0f9077b6b4eac710014731eedaa5e4efd33b86bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/VOCAB_REPORT.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/WHITESPACE_ADAPTATION.json",
+      "bytes": 1614,
+      "sha256": "45693bc9881a9fa2d93ce1d2966d1756cf6b570bf3ffcc5d0eb64eba566eaca3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/adapt_metadata.py",
+      "bytes": 9350,
+      "sha256": "f29e76465b00cc9d7eca31f5f9893fbcdf19c8b37b5cbb5ab48a1afe51bd5c57"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical.stdout",
+      "bytes": 939,
+      "sha256": "d8f7af952f167bf5cb6fcbbe0d882eb33d0823a5f30619550aa40aa1fd073916"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/CANONICAL_EXECUTION.json",
+      "bytes": 1378,
+      "sha256": "f090038279081919b79dffb06d4f285b61c9b334cdeae2ba0f7156f20bc10db3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical.stdout",
+      "bytes": 939,
+      "sha256": "d8f7af952f167bf5cb6fcbbe0d882eb33d0823a5f30619550aa40aa1fd073916"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_cache.txt.gz",
+      "bytes": 727,
+      "sha256": "ec2a422765896b1bc02c80a805ac6f74258ec0dcb3334998bf6231d783cde714"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/canonical_result.json",
+      "bytes": 26960,
+      "sha256": "2a254153fd27379f54b7436fed300656e930ff7972d5b7458b926dcd7318c1fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/canonical_attempt_1/note.md",
+      "bytes": 24138,
+      "sha256": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/finalize_packet.py",
+      "bytes": 8152,
+      "sha256": "3c5c7cafaffc70d016642c4e9969a47bc5bbc826ed5590be3f4edeafb187902e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused.stderr",
+      "bytes": 627,
+      "sha256": "cc531375489d51428079702086b6e8f73b7a5de2defaae62a3ef158bf77788f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_attempt_1/focused_verify.py",
+      "bytes": 15336,
+      "sha256": "511702ea2f6004321f27d7644d6ad666708507306e0d3294a0424732260a06d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/focused_verify.py",
+      "bytes": 15957,
+      "sha256": "8a01d8b20130bf44871f111a12b5f774b490f986b25ab9b0793c7e532f0740ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/GRAPH_EXECUTIONS.json",
+      "bytes": 312,
+      "sha256": "87c5e73ef39f4a2f50caad5f184a1b6b2f675ac691bcbf48f9b11da5b224a076"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_build.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_build.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_attempt_1/graph_check.py",
+      "bytes": 2720,
+      "sha256": "76efa6a0ba63aae0e37d2730a2b5a32421914d36e0dcc7a55d5a1714a9cffb3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_build.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_build.stdout",
+      "bytes": 281,
+      "sha256": "8d9f377b9e20b89ccef2d65d6b289e76d42faf878623852d70a9ccbdca481f45"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_check.py",
+      "bytes": 2710,
+      "sha256": "64eba648c3fc23a00bd0c757e306191502e333edecb170a9807590aa830cdd43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/graph_manifest.stdout",
+      "bytes": 77,
+      "sha256": "9d5bac84ca445908d1708719bd462173186a0b24d0e564dc4d8f17aa9da78325"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/PLAN.json",
+      "bytes": 2825,
+      "sha256": "cbd8a857822e63d59fab6a25df96936c6bed36b26fe273a75f83ffeea046d3ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/RESULTS.json",
+      "bytes": 7806,
+      "sha256": "e56815dcab68a48be6eb8f92d33491808cb490858a80bced2bed30275240e73f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/EXECUTION.json",
+      "bytes": 758,
+      "sha256": "eed5b48099ec6133d6a506d8755a15473bd8a78f92c50568409bc3ed92a1df87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/mutated.py.gz",
+      "bytes": 6316,
+      "sha256": "daf57b99995bc8fea7d0687fb2d55ad950acee8abf16033ce2037b8ae0c2f667"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/stderr",
+      "bytes": 1233,
+      "sha256": "fbd32b1add05ad1a1e3016039f8010eabc7b3cd7441ef02fea90cce7b3bbc9b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/closed_surface_sign/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/EXECUTION.json",
+      "bytes": 799,
+      "sha256": "9af9987c439b4247a11c07b9a28ea77bb199320bae2e4e53805fa0125ea543e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/mutated.py.gz",
+      "bytes": 3545,
+      "sha256": "b81d65e71d0afd2b22a7f0c5a03dde616b6393eac5b5ade2a233d0ddceea7df4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/stderr",
+      "bytes": 843,
+      "sha256": "1881bbfb7572b0f10c21654bb3aba2db24cb40fe6a25a185c0d529fa7a3f9bb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/coefficient_box_overextension/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/EXECUTION.json",
+      "bytes": 786,
+      "sha256": "484466d82bce75785b9f7e1a0e05823a1d8107f979de8d2ed387058296f92234"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/mutated.py.gz",
+      "bytes": 6315,
+      "sha256": "da7817e08703f412aa724c6caea6ca32354e30c7e49870cb28ef88c513987d04"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/stderr",
+      "bytes": 1272,
+      "sha256": "82486c29a7f39e0e82fe5053575d0810fafb9e87519b4698e3dceb558b85b284"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/common_phase_sign/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/EXECUTION.json",
+      "bytes": 883,
+      "sha256": "00411caa5629d8f3c784275e362d778cd490ada473a6d457beef07471e7f01ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/mutated.py.gz",
+      "bytes": 6315,
+      "sha256": "494a1c65e760cfcc71a8c6a6356328ec683bcc1120cd957c2d587d131b59a38c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/stderr",
+      "bytes": 1660,
+      "sha256": "2d23b677b1d73b397ce350ac21e507e5bbf6f675949dfd610e7fd9e649ab2239"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/finite_clock_horizon_overextension/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/EXECUTION.json",
+      "bytes": 781,
+      "sha256": "3397a7a776cbf7f88f79bfb6cf051a0c9a06d318d1426051b8e25134169463c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/mutated.py.gz",
+      "bytes": 3551,
+      "sha256": "269d2ae8cfe7d40babdfc88871bae084f199623d34b931dd86a3426ae0088c4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/stderr",
+      "bytes": 825,
+      "sha256": "d872ebc868a0622f48df5cb1c3423193a572d846021d78c74b11ce1e65367c6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/inverse_ceiling_overextension/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/EXECUTION.json",
+      "bytes": 824,
+      "sha256": "a7ab00ff45f9d3c756a4a3d6de27e5fb8d6e65c783190a8df7b9703b4c5c95cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/mutated.py.gz",
+      "bytes": 6319,
+      "sha256": "acda914bb14b576922cbe619fdcf64c85295a4922864add7215b30ec701b1a76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/stderr",
+      "bytes": 1582,
+      "sha256": "98bcc09ec80a6ff03a9bacb687ca9f755ab5d31531340c2c020e0e1c66bce3cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/lost_vacuum_darkness/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/EXECUTION.json",
+      "bytes": 874,
+      "sha256": "0b699cd9185dca0c3ef90296b03f3bef15c0a665fcf45c78cb4103ef6a21ebb7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/mutated.py.gz",
+      "bytes": 6318,
+      "sha256": "0cb8d4cbc21de8fd585c0a97d9f23654a78b5e38000f630a4d28f73033b1fe7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/stderr",
+      "bytes": 1608,
+      "sha256": "90a9562c55aff8f1d3a1c1877ece87f70dc9e181af2920e1057d306bc57c3b84"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/noncommuting_resolvent_order/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/EXECUTION.json",
+      "bytes": 894,
+      "sha256": "ebc5b54f7d61bde9c35d8ecfccc51e8b068576698a82adb8de1fbd845c726d9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/mutated.py.gz",
+      "bytes": 3539,
+      "sha256": "9f8f75779da33201a861c0ab59da98bfd900b4e5c88e32fe07a9a252d329d2a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/stderr",
+      "bytes": 756,
+      "sha256": "d632d7c2458ab1c454a122621e90e8470297cf0abbcf2d9759db590455b0d22b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations/omitted_closed_tail_variation/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/mutations.py",
+      "bytes": 4882,
+      "sha256": "f30801d7c1386e048bd2d4b6e45aa3b534882bc10fc0aeffcf5baab37f1a9e21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/pr9662_inventory.json",
+      "bytes": 9171,
+      "sha256": "14c4b27406bf7a43724a665135c096ff40cb77db06a401aa2e60018f23ae96a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/prepare_records.py",
+      "bytes": 9567,
+      "sha256": "8e6271d97d9256bb88e89ebed29a65ccd7273fc1b73a9bd0a4a29c680d46cec1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/refresh_wrapper.py",
+      "bytes": 4296,
+      "sha256": "308d94d125a2b1d3bf7bc00114b43844dc12d5ef158fc7a33a94531ead38ec88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/run_canonical.py",
+      "bytes": 2259,
+      "sha256": "e85ad219b5f9bc86788c87ec53da81ce85bc8b8352a1f84790288ac33f684193"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/vocab.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-structural-coefficient-box-20261017/evidence/vocab.stdout",
+      "bytes": 292,
+      "sha256": "dfcff3bb69469eb789fbc9decdccd65257d67729a23e16eab0dc931a38444c54"
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "scope": "Portable replay of two separately written finite exact calculations. The infinite resolvent/packet argument is analytically reviewed; historical point results are inherited premises.",
+  "author": {
+    "scope": "Exact scalar checks for the proposed structural coefficient box only; analytical proof and independent review remain separate.",
+    "parameters": {
+      "DeltaA": "2192035527016003/1000000000000000",
+      "DeltaB": "1093413254448507/500000000000000",
+      "h": "199967484894403/50000000000000",
+      "u": "544607276405587/1000000000000000",
+      "gA": "99687856381667/100000000000000",
+      "gB": "299659657780149/500000000000000",
+      "lambdaA": "1900890690790601/500000000000000",
+      "lambdaB": "2575033765788497/1000000000000000",
+      "mu0": "321494607058201/1000000000000000",
+      "nu": "1459892813020969/1000000000000000"
+    },
+    "coefficient_radius": "1/100000000",
+    "constants": {
+      "bulk_norm_radius": {
+        "exact_rational": "9/100000000",
+        "display_only_float": 9e-08
+      },
+      "contact_norm_radius": {
+        "exact_rational": "3/100000000",
+        "display_only_float": 3e-08
+      },
+      "remaining_closed_gap": {
+        "exact_rational": "17999991/100000000",
+        "display_only_float": 0.17999991
+      },
+      "matching_norm_radius": {
+        "exact_rational": "76564661930437304271360849/624999687500000000000000000000000",
+        "display_only_float": 1.2250352034045987e-07
+      },
+      "physical_inverse_bound": {
+        "exact_rational": "51874974062500000000000000000000000/312493488883059773703745477049533",
+        "display_only_float": 166.00337577565486
+      },
+      "bridge_inverse_bound": {
+        "exact_rational": "1378381221718586/3752638388379",
+        "display_only_float": 367.3098974809548
+      },
+      "extra_reflection_error": {
+        "exact_rational": "1979343963533505010076724332885926810108419/9765421527595617928242046157797906250000000000",
+        "display_only_float": 0.00020268904500846948
+      },
+      "finite_preparation_all_future_bound": {
+        "exact_rational": "94273834080014687082390827348167944818813316533/8456855042897805125857611972652986812500000000000",
+        "display_only_float": 0.011147623271512414
+      },
+      "finite_clock_horizon_bound": {
+        "exact_rational": "102730689122912492208248439320820931631313316533/8456855042897805125857611972652986812500000000000",
+        "display_only_float": 0.012147623271512415
+      },
+      "B_spectral_upper": {
+        "exact_rational": "955728227842433/50000000000000",
+        "display_only_float": 19.11456455684866
+      },
+      "contact_norm_upper": {
+        "exact_rational": "1585011480044121/200000000000000",
+        "display_only_float": 7.925057400220605
+      }
+    },
+    "preserved_generic_ceilings": {
+      "root": "1/7",
+      "root_derivative": "1/24",
+      "X0": 16,
+      "X1": 700,
+      "C0": 31,
+      "C1": 2700,
+      "D": 88000
+    },
+    "max_added_incident_load_changes": {
+      "old_each": "1/50000000",
+      "source_each": "1/12500000",
+      "contact_clock_each": "3/100000000"
+    },
+    "phase_scope": "Actual nutilde in ten-coefficient comparison; fixed nominal scalar corollary requires nu exact, leaving nine variable coefficients.",
+    "limits": {
+      "matrices": 0,
+      "grid_points": 0,
+      "time_evolution": false,
+      "independent_review": false,
+      "historical_source_run_limits": {
+        "cpu_cap_seconds": 10,
+        "external_wall_cap_seconds": 20
+      },
+      "actual_combined_process_limits": {
+        "cpu_cap_seconds": 60,
+        "external_wall_cap_seconds": 60
+      }
+    },
+    "elapsed_seconds": 0.0007164156995713711
+  },
+  "independent": {
+    "scope": "Independent exact finite algebra and scalar comparisons; conditional infinite-operator proof reviewed separately.",
+    "checks": {
+      "DeltaA_selfadjoint": true,
+      "DeltaA_spectral_polynomial": true,
+      "DeltaA_nonzero_positive_eigenvalue": true,
+      "DeltaA_annihilates_full_vacuum_embedding": true,
+      "DeltaA_reduces_parity": true,
+      "DeltaA_preserves_source_number": true,
+      "DeltaB_selfadjoint": true,
+      "DeltaB_spectral_polynomial": true,
+      "DeltaB_nonzero_positive_eigenvalue": true,
+      "DeltaB_annihilates_full_vacuum_embedding": true,
+      "DeltaB_reduces_parity": true,
+      "DeltaB_preserves_source_number": true,
+      "h_selfadjoint": true,
+      "h_spectral_polynomial": true,
+      "h_nonzero_positive_eigenvalue": true,
+      "h_annihilates_full_vacuum_embedding": true,
+      "h_reduces_parity": true,
+      "h_preserves_source_number": true,
+      "u_selfadjoint": true,
+      "u_spectral_polynomial": true,
+      "u_nonzero_positive_eigenvalue": true,
+      "u_annihilates_full_vacuum_embedding": true,
+      "u_reduces_parity": true,
+      "u_preserves_source_number": true,
+      "gA_selfadjoint": true,
+      "gA_spectral_polynomial": true,
+      "gA_nonzero_positive_eigenvalue": true,
+      "gA_annihilates_full_vacuum_embedding": true,
+      "gA_reduces_parity": true,
+      "gA_preserves_source_number": true,
+      "gB_selfadjoint": true,
+      "gB_spectral_polynomial": true,
+      "gB_nonzero_positive_eigenvalue": true,
+      "gB_annihilates_full_vacuum_embedding": true,
+      "gB_reduces_parity": true,
+      "gB_preserves_source_number": true,
+      "lambdaA_positive_norm_two": true,
+      "lambdaA_reduces_parity": true,
+      "lambdaB_positive_norm_two": true,
+      "lambdaB_reduces_parity": true,
+      "interaction_need_not_commute_with_old_K": true,
+      "open_1_-1_projector": true,
+      "open_1_-1_old_energy": true,
+      "open_1_-1_parity": true,
+      "open_1_-1_DeltaA_fixed_channel": true,
+      "open_1_-1_DeltaB_fixed_channel": true,
+      "open_1_-1_h_fixed_channel": true,
+      "open_1_-1_u_fixed_channel": true,
+      "open_1_-1_gA_fixed_channel": true,
+      "open_1_-1_gB_fixed_channel": true,
+      "open_1_1_projector": true,
+      "open_1_1_old_energy": true,
+      "open_1_1_parity": true,
+      "open_1_1_DeltaA_fixed_channel": true,
+      "open_1_1_DeltaB_fixed_channel": true,
+      "open_1_1_h_fixed_channel": true,
+      "open_1_1_u_fixed_channel": true,
+      "open_1_1_gA_fixed_channel": true,
+      "open_1_1_gB_fixed_channel": true,
+      "open_-1_-1_projector": true,
+      "open_-1_-1_old_energy": true,
+      "open_-1_-1_parity": true,
+      "open_-1_-1_DeltaA_fixed_channel": true,
+      "open_-1_-1_DeltaB_fixed_channel": true,
+      "open_-1_-1_h_fixed_channel": true,
+      "open_-1_-1_u_fixed_channel": true,
+      "open_-1_-1_gA_fixed_channel": true,
+      "open_-1_-1_gB_fixed_channel": true,
+      "open_-1_1_projector": true,
+      "open_-1_1_old_energy": true,
+      "open_-1_1_parity": true,
+      "open_-1_1_DeltaA_fixed_channel": true,
+      "open_-1_1_DeltaB_fixed_channel": true,
+      "open_-1_1_h_fixed_channel": true,
+      "open_-1_1_u_fixed_channel": true,
+      "open_-1_1_gA_fixed_channel": true,
+      "open_-1_1_gB_fixed_channel": true,
+      "full_qubit_clock_source_contact_positive_norm_two": true,
+      "full_qubit_vacancy_positive_norm_one": true,
+      "physical_vacancy_reduction_has_scalar_plus_negative_contact": true,
+      "fixed_J_literal": true,
+      "DeltaA_remains_positive": true,
+      "DeltaB_remains_positive": true,
+      "h_remains_positive": true,
+      "u_remains_positive": true,
+      "gA_remains_positive": true,
+      "gB_remains_positive": true,
+      "lambdaA_remains_positive": true,
+      "lambdaB_remains_positive": true,
+      "mu0_remains_positive": true,
+      "nu_remains_positive": true,
+      "Neumann_denominator": true,
+      "gap_above_17_over_100": true,
+      "matching_radius_below_1p226e_minus7": true,
+      "physical_inverse_below_167": true,
+      "extra_reflection_below_0p000203": true,
+      "reflection_bound_algebra": true,
+      "surface_endpoint_1/7": true,
+      "surface_bulk_1/7": true,
+      "outgoing_closed_match_1/7": true,
+      "wrong_resolvent_sign_rejected_1/7": true,
+      "surface_endpoint_-1/8": true,
+      "surface_bulk_-1/8": true,
+      "outgoing_closed_match_-1/8": true,
+      "wrong_resolvent_sign_rejected_-1/8": true,
+      "resolvent_toy_noncommuting": true,
+      "noncommuting_resolvent_identity": true,
+      "compressed_surface_resolvent_identity": true,
+      "opposite_resolvent_difference_sign_rejected": true,
+      "incident_extrapolation_identity": true,
+      "site1_free_matching_with_shared_rhs": true,
+      "wrong_rhs_sign_rejected": true,
+      "absolute_origin_free_reflection": true,
+      "omitted_origin_factor_rejected": true,
+      "nominal_common_phase_contract": true,
+      "matching_shared_rhs_solution_identity": true,
+      "matching_perturbation_square_block_diagonal": true,
+      "root_modulus_gap_condition": true,
+      "closed_root_derivative_ceiling": true,
+      "Schur_inverse_below_368": true,
+      "sqrt2_below_99_over_70": true,
+      "sqrt5_below_56_over_25": true,
+      "LM_radical_below_3p63": true,
+      "LM_below_0p11": true,
+      "X0_below_16": true,
+      "X1_below_700": true,
+      "C0_below_31": true,
+      "C1_contact_radical_below_1982": true,
+      "tail_norm_radical_below_1p011": true,
+      "tail_derivative_radical_below_1p05": true,
+      "C1_below_2700": true,
+      "E2_over_v_below_5_over_2": true,
+      "F0_below_1_over_750": true,
+      "F1_below_2000": true,
+      "CB_below_2001": true,
+      "grouped_D_below_88000": true,
+      "B_bound_agrees_with_prior": true,
+      "V_bound_agrees_with_prior": true,
+      "actual_B_below_20": true,
+      "actual_contact_norm_below_8": true,
+      "full_scalar_removed_spectral_radius_below_18": true,
+      "finite_ready_support_margin": true,
+      "first_omitted_clock_distance": true,
+      "finite_clock_chebyshev_exponent_margin": true,
+      "prior_resource_parameters_unchanged": true,
+      "inherited_ready_exact_budget": true,
+      "inherited_finite_exact_budget": true,
+      "complete_ready_below_0p0112": true,
+      "complete_finite_below_0p0122": true,
+      "oldA_added_cap_two": true,
+      "oldB_added_cap_two": true,
+      "source_incident_radius_8a": true,
+      "contact_incident_radius_3a": true,
+      "leakage_block_positive_polynomial": true,
+      "leakage_changes_fixed_open_subspace": true,
+      "phase_countercase_is_after_readiness": true,
+      "odd_multiple_nominal_phase_is_minus_one": true
+    },
+    "strict_positive_margins": {
+      "DeltaA_remains_positive": "2192035517016003/1000000000000000",
+      "DeltaB_remains_positive": "1093413249448507/500000000000000",
+      "h_remains_positive": "199967484394403/50000000000000",
+      "u_remains_positive": "544607266405587/1000000000000000",
+      "gA_remains_positive": "99687855381667/100000000000000",
+      "gB_remains_positive": "299659652780149/500000000000000",
+      "lambdaA_remains_positive": "1900890685790601/500000000000000",
+      "lambdaB_remains_positive": "2575033755788497/1000000000000000",
+      "mu0_remains_positive": "321494597058201/1000000000000000",
+      "nu_remains_positive": "1459892803020969/1000000000000000",
+      "Neumann_denominator": "25311972599527841670003383641012173/781250000000000000000000000000000000",
+      "gap_above_17_over_100": "999991/100000000",
+      "matching_radius_below_1p226e_minus7": "60299757062695728639151/624999687500000000000000000000000",
+      "physical_inverse_below_167": "311438580970982208525494667272011/312493488883059773703745477049533",
+      "extra_reflection_below_0p000203": "3036606568405429356411037147048158641581/9765421527595617928242046157797906250000000000",
+      "root_modulus_gap_condition": "13655018018356/26268468718653",
+      "Schur_inverse_below_368": "2589705204886/3752638388379",
+      "sqrt2_below_99_over_70": "1/4900",
+      "sqrt5_below_56_over_25": "11/625",
+      "LM_radical_below_3p63": "3059/360000",
+      "LM_below_0p11": "12792265018423/12500000000000000",
+      "X0_below_16": "205242389661017/546875000000000",
+      "X1_below_700": "1640560034365691/48828125000000",
+      "C0_below_31": "155/3",
+      "C1_contact_radical_below_1982": "2720",
+      "tail_norm_radical_below_1p011": "3863/3000000",
+      "tail_derivative_radical_below_1p05": "23471/1382400",
+      "C1_below_2700": "48/5",
+      "E2_over_v_below_5_over_2": "153611611621/1562500000000",
+      "F0_below_1_over_750": "1/9000000",
+      "F1_below_2000": "250000",
+      "CB_below_2001": "19/300",
+      "grouped_D_below_88000": "2478669565679/45000",
+      "actual_B_below_20": "44271772157567/50000000000000",
+      "actual_contact_norm_below_8": "14988519955879/200000000000000",
+      "full_scalar_removed_spectral_radius_below_18": "27497361611621/62500000000000",
+      "finite_ready_support_margin": "44695854048668/675",
+      "finite_clock_chebyshev_exponent_margin": "13999999999992",
+      "complete_ready_below_0p0112": "442942400440730327214426745545507481186683467/8456855042897805125857611972652986812500000000000",
+      "complete_finite_below_0p0122": "442942400440730327214426745545507481186683467/8456855042897805125857611972652986812500000000000",
+      "oldA_added_cap_two": "312142618333/50000000000000",
+      "oldB_added_cap_two": "200340337219851/250000000000000",
+      "phase_countercase_is_after_readiness": "4000300000000"
+    },
+    "countercases": {
+      "surface_resolvent_sign": [
+        {
+          "q": "1/7",
+          "G": "125000000000000/26268468718653",
+          "correct_F": "-26268468718653/125000000000000",
+          "wrong_sign_F_error": "-3752638388379/437500000000000",
+          "wrong_sign_endpoint_rhs": "-1"
+        },
+        {
+          "q": "-1/8",
+          "G": "-15625000000000/3752638388379",
+          "correct_F": "3752638388379/15625000000000",
+          "wrong_sign_F_error": "3752638388379/500000000000000",
+          "wrong_sign_endpoint_rhs": "-1"
+        }
+      ],
+      "excluded_vacuum_leakage": {
+        "base_B": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "positive_error": "epsilon*[[1,1],[1,1]]",
+        "epsilon": "1/1000000000000",
+        "operator_norm": "1/500000000000",
+        "Q_deltaB_P_nonzero_entry": "1/1000000000000",
+        "meaning": "Invalidates fixed open projector/shared incident-channel proof; not a counterexample inside the structural coefficient box."
+      },
+      "fixed_nominal_scalar": {
+        "allowed_nu_error": "1/100000000",
+        "time": "80001*pi/a",
+        "strict_time_lower": "24000300000000",
+        "comparison_phase_distance": 2,
+        "conditional_actual_output_distance_from_nominal_comparator_lower": "1243/625",
+        "meaning": "Exact comparator mismatch, plus triangle inequality conditional on the actual-scalar theorem; no dynamics simulated."
+      }
+    },
+    "derived_bounds": {
+      "bulk_radius": {
+        "exact": "9/100000000",
+        "display_only_float": 9e-08
+      },
+      "contact_radius": {
+        "exact": "3/100000000",
+        "display_only_float": 3e-08
+      },
+      "closed_gap_remaining": {
+        "exact": "17999991/100000000",
+        "display_only_float": 0.17999991
+      },
+      "matching_radius": {
+        "exact": "76564661930437304271360849/624999687500000000000000000000000",
+        "display_only_float": 1.2250352034045987e-07
+      },
+      "physical_inverse": {
+        "exact": "51874974062500000000000000000000000/312493488883059773703745477049533",
+        "display_only_float": 166.00337577565486
+      },
+      "bridge_inverse": {
+        "exact": "1378381221718586/3752638388379",
+        "display_only_float": 367.3098974809548
+      },
+      "extra_reflection": {
+        "exact": "1979343963533505010076724332885926810108419/9765421527595617928242046157797906250000000000",
+        "display_only_float": 0.00020268904500846948
+      },
+      "LM_proxy": {
+        "exact": "1362207734981577/12500000000000000",
+        "display_only_float": 0.10897661879852616
+      },
+      "X0_proxy": {
+        "exact": "8544757610338983/546875000000000",
+        "display_only_float": 15.62469963033414
+      },
+      "X1_proxy": {
+        "exact": "32539127465634309/48828125000000",
+        "display_only_float": 666.4013304961907
+      },
+      "C1_proxy": {
+        "exact": "13452/5",
+        "display_only_float": 2690.4
+      },
+      "D_each": {
+        "exact": "18601111/300",
+        "display_only_float": 62003.70333333333
+      },
+      "ready_complete": {
+        "exact": "94273834080014687082390827348167944818813316533/8456855042897805125857611972652986812500000000000",
+        "display_only_float": 0.011147623271512414
+      },
+      "finite_complete": {
+        "exact": "102730689122912492208248439320820931631313316533/8456855042897805125857611972652986812500000000000",
+        "display_only_float": 0.012147623271512415
+      },
+      "actual_B_upper": {
+        "exact": "955728227842433/50000000000000",
+        "display_only_float": 19.11456455684866
+      },
+      "actual_contact_upper": {
+        "exact": "1585011480044121/200000000000000",
+        "display_only_float": 7.925057400220605
+      }
+    },
+    "physical_coefficient_weights": {
+      "DeltaA": 1,
+      "DeltaB": 1,
+      "h": 2,
+      "u": 1,
+      "gA": 2,
+      "gB": 2
+    },
+    "incident_load_changes": {
+      "old1": "1/50000000",
+      "old2": "1/50000000",
+      "sourceA": "1/12500000",
+      "sourceB": "1/12500000",
+      "c0": "3/100000000",
+      "c1": "3/100000000"
+    },
+    "resources": {
+      "historical_source_run_limits": {
+        "cpu_cap_seconds": 45,
+        "external_wall_cap_seconds": 60
+      },
+      "actual_combined_process_limits": {
+        "cpu_cap_seconds": 60,
+        "external_wall_cap_seconds": 60
+      },
+      "largest_matrix_dimension": 16,
+      "largest_inverse_dimension": 4,
+      "coefficient_grid_points": 0,
+      "time_evolution": false,
+      "author_program_executed": false,
+      "historical_point_state_or_reflection_recomputed": false,
+      "clock_sites_allocated": 0,
+      "elapsed_seconds": 0.05497079202905297,
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "sympy": "1.14.0",
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+    },
+    "status": "All declared exact algebra and strict comparisons completed; scope remains conditional."
+  },
+  "input_sha256": {
+    "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md": "9f4934a5d1e63c93ee7e5f8956ff7b35c748f241204348c2510b04f38142a35f",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/ARTIFACT_MANIFEST.json": "f681f88ee1c69f040ef83e2406ca544c9d1164c42fb9d2a254fb7013f80f05d3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/BOUNDS.json": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/CANDIDATE.md": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/EXECUTION_SOURCE_BINDING.json": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/FREEZE.json": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/SOURCE_PINS.json": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/check_bounds.py": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_CANDIDATE.md": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/INTERVAL_REVIEW.md": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/PRIOR_QUALIFICATION.md": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author/inputs/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/EXECUTION.json": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/author_original_run/stdout": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FILE_MANIFEST.json": "1b0283f08a4911b15d9fc04c8aaa25a207c18b6ccf0bd709b06239e5f2e66ce5",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/FREEZE.json": "4ecc5a8f9895a4f3b3ad5c1dcbb2167804cca734639c36dc2efb6617481e12c7",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REPORT.md": "7ec59622c9acaf321bc2363839a8631f81c5b1b75e78a99a03c7500366b4f5f8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/RESOURCE_PLAN.md": "44ee6329bd080b6cb1479a36e432ffbac9c43f35d91d1ce2510658331e7f3b90",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/REUSED_PREMISE_PINS.json": "47fb4ac00c45072cbb3e5f3fa94012117b0c729daffe71b14744f3f5ead46cd3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_PINS.json": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/SOURCE_RECHECK.json": "85f547bb554aabc3c171150cbbb9c945359ae5ee4be5fcd2708df33307c0230c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/check_structural_box.py": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/run_check.py": "dddc65ef7efc3f606a9160133fbd02b22958753b5277c660d291ebc01868c0de",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/EXECUTION.json": "b605e59bc85e67e680ce52d66b68d52e76b6e8f2ddcccc05c0c9659db61a42a0",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/RESULT.json": "0241b1f2acfe5234408372a96633fcbe19f3cdb08c498f904025a9687acdb06f",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/SOURCE_PINS_AT_LAUNCH.json": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/executed_source.py": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/runs/attempt_1/stdout": "da633ca3b9959daec26f6f84e0dcf89dff2227bffb388abdc53f98e84cfd0ec0",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/BOUNDS.json": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/CANDIDATE.md": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/EXECUTION_SOURCE_BINDING.json": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/FREEZE.json": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/SOURCE_PINS.json": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/check_bounds.py": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/CERTIFICATE.json": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_CANDIDATE.md": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/INTERVAL_REVIEW.md": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/PRIOR_QUALIFICATION.md": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author/inputs/THEOREM_V2.md": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/EXECUTION.json": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/author_run/stdout": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/PHYSICS_CLAIM_REVIEWER_SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/review/sources/instructions/SCIENCE_WORKFLOW.md": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/ACCEPTANCE.json": "ec522e7c0a20ac95c47e3c8b87af9fdc683e135e54269afd251ba97e5cb207c5",
+    "outputs/structural_coefficient_box_2026_10_17_inputs/root/QUALIFICATION.md": "73b3acd8d92f3d986e1e5afa723729882f45ac91fb9632077437c1d00b98a401",
+    "scripts/structural_coefficient_box_check_2026_10_17.py": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+  },
+  "actual_combined_process_limits": {
+    "cpu_soft_hard_seconds": [
+      60,
+      60
+    ],
+    "external_wall_cap_seconds": 60,
+    "wall_enforcement": "Canonical runner_cache invocation; standalone callers must enforce an equivalent external limit.",
+    "author_and_independent_calculations_share_one_process": true,
+    "elapsed_seconds": 0.13345933333039284
+  },
+  "limits": "No stationary refit, coefficient grid, quadrature, time evolution, native realization or retained audit."
+}

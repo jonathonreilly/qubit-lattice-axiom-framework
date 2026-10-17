@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_review",
+  "purpose": "Bounded independent structural coefficient-box review; all evidence preserved locally.",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 18018,
+      "sha256": "7ec59622c9acaf321bc2363839a8631f81c5b1b75e78a99a03c7500366b4f5f8"
+    },
+    {
+      "path": "RESOURCE_PLAN.md",
+      "bytes": 1138,
+      "sha256": "44ee6329bd080b6cb1479a36e432ffbac9c43f35d91d1ce2510658331e7f3b90"
+    },
+    {
+      "path": "REUSED_PREMISE_PINS.json",
+      "bytes": 1044,
+      "sha256": "47fb4ac00c45072cbb3e5f3fa94012117b0c729daffe71b14744f3f5ead46cd3"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 6744,
+      "sha256": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9"
+    },
+    {
+      "path": "SOURCE_RECHECK.json",
+      "bytes": 4787,
+      "sha256": "85f547bb554aabc3c171150cbbb9c945359ae5ee4be5fcd2708df33307c0230c"
+    },
+    {
+      "path": "check_structural_box.py",
+      "bytes": 15480,
+      "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+    },
+    {
+      "path": "run_check.py",
+      "bytes": 1893,
+      "sha256": "dddc65ef7efc3f606a9160133fbd02b22958753b5277c660d291ebc01868c0de"
+    },
+    {
+      "path": "runs/attempt_1/EXECUTION.json",
+      "bytes": 2717,
+      "sha256": "b605e59bc85e67e680ce52d66b68d52e76b6e8f2ddcccc05c0c9659db61a42a0"
+    },
+    {
+      "path": "runs/attempt_1/RESULT.json",
+      "bytes": 13837,
+      "sha256": "0241b1f2acfe5234408372a96633fcbe19f3cdb08c498f904025a9687acdb06f"
+    },
+    {
+      "path": "runs/attempt_1/SOURCE_PINS_AT_LAUNCH.json",
+      "bytes": 6744,
+      "sha256": "4935a0d541832fd2f304539b8c0fe6d65107698369e1e96172452bd4cb2c09a9"
+    },
+    {
+      "path": "runs/attempt_1/executed_source.py",
+      "bytes": 15480,
+      "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+    },
+    {
+      "path": "runs/attempt_1/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt_1/stdout",
+      "bytes": 358,
+      "sha256": "da633ca3b9959daec26f6f84e0dcf89dff2227bffb388abdc53f98e84cfd0ec0"
+    },
+    {
+      "path": "sources/author/BOUNDS.json",
+      "bytes": 3157,
+      "sha256": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958"
+    },
+    {
+      "path": "sources/author/CANDIDATE.md",
+      "bytes": 13522,
+      "sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca"
+    },
+    {
+      "path": "sources/author/EXECUTION_SOURCE_BINDING.json",
+      "bytes": 1425,
+      "sha256": "28e46db96379d12b3535d8739249052d789f0bfd1d1092be734f90eaf8ecab31"
+    },
+    {
+      "path": "sources/author/FREEZE.json",
+      "bytes": 3049,
+      "sha256": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a"
+    },
+    {
+      "path": "sources/author/SOURCE_PINS.json",
+      "bytes": 1718,
+      "sha256": "6b50a40e1c669b6659ecd6934f1bdcfeef2e82abb4c1215d51e5d071fa1ec739"
+    },
+    {
+      "path": "sources/author/check_bounds.py",
+      "bytes": 4828,
+      "sha256": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c"
+    },
+    {
+      "path": "sources/author/inputs/CERTIFICATE.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "path": "sources/author/inputs/INTERVAL_CANDIDATE.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "path": "sources/author/inputs/INTERVAL_REVIEW.md",
+      "bytes": 19878,
+      "sha256": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a"
+    },
+    {
+      "path": "sources/author/inputs/PRIOR_QUALIFICATION.md",
+      "bytes": 3291,
+      "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8"
+    },
+    {
+      "path": "sources/author/inputs/THEOREM_V2.md",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "path": "sources/author_run/EXECUTION.json",
+      "bytes": 1306,
+      "sha256": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295"
+    },
+    {
+      "path": "sources/author_run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author_run/stdout",
+      "bytes": 248,
+      "sha256": "2f55cdc9375ab8272d34d8601290fbd3b2ec2ef00a2ebd05b3237df8b21dbccf"
+    },
+    {
+      "path": "sources/instructions/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "sources/instructions/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    }
+  ]
+}

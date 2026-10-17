@@ -1,0 +1,16 @@
+{
+  "scope": "Exact dictionary comparison of both canonical outputs after the two wrapper-only edits. All mathematical and scope fields unchanged.",
+  "scientific_fields_exactly_unchanged": true,
+  "only_changed_input": "docs/STRUCTURAL_COEFFICIENT_BOX_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "excluded_fields": [
+    "input_sha256[note]",
+    "author.elapsed_seconds",
+    "independent.resources.elapsed_seconds",
+    "actual_combined_process_limits.elapsed_seconds"
+  ],
+  "compared_payload_sha256": "3d6b955aede7fdf3a6138175577c14ea7267865988329e500c0a942cd5478e02",
+  "canonical_attempts": 2,
+  "reason_for_repeat": "Declared note input changed at root request after attempt1; preserved original output, cache and receipt.",
+  "attempt1_elapsed_seconds": 0.5960419178009033,
+  "attempt2_elapsed_seconds": 0.5255649089813232
+}

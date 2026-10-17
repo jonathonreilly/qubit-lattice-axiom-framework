@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/omitted_closed_tail_variation/mutated.py", line 144, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/omitted_closed_tail_variation/mutated.py", line 122, in main
+    assert author['constants']['extra_reflection_error']['exact_rational'] == independent['derived_bounds']['extra_reflection']['exact']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,86 @@
+{
+  "scope": "Exact scalar checks for the proposed structural coefficient box only; analytical proof and independent review remain separate.",
+  "parameters": {
+    "DeltaA": "2192035527016003/1000000000000000",
+    "DeltaB": "1093413254448507/500000000000000",
+    "h": "199967484894403/50000000000000",
+    "u": "544607276405587/1000000000000000",
+    "gA": "99687856381667/100000000000000",
+    "gB": "299659657780149/500000000000000",
+    "lambdaA": "1900890690790601/500000000000000",
+    "lambdaB": "2575033765788497/1000000000000000",
+    "mu0": "321494607058201/1000000000000000",
+    "nu": "1459892813020969/1000000000000000"
+  },
+  "coefficient_radius": "1/100000000",
+  "constants": {
+    "bulk_norm_radius": {
+      "exact_rational": "9/100000000",
+      "display_only_float": 9e-08
+    },
+    "contact_norm_radius": {
+      "exact_rational": "3/100000000",
+      "display_only_float": 3e-08
+    },
+    "remaining_closed_gap": {
+      "exact_rational": "17999991/100000000",
+      "display_only_float": 0.17999991
+    },
+    "matching_norm_radius": {
+      "exact_rational": "76564661930437304271360849/624999687500000000000000000000000",
+      "display_only_float": 1.2250352034045987e-07
+    },
+    "physical_inverse_bound": {
+      "exact_rational": "51874974062500000000000000000000000/312493488883059773703745477049533",
+      "display_only_float": 166.00337577565486
+    },
+    "bridge_inverse_bound": {
+      "exact_rational": "1378381221718586/3752638388379",
+      "display_only_float": 367.3098974809548
+    },
+    "extra_reflection_error": {
+      "exact_rational": "1979343963533505010076724332885926810108419/9765421527595617928242046157797906250000000000",
+      "display_only_float": 0.00020268904500846948
+    },
+    "finite_preparation_all_future_bound": {
+      "exact_rational": "94273834080014687082390827348167944818813316533/8456855042897805125857611972652986812500000000000",
+      "display_only_float": 0.011147623271512414
+    },
+    "finite_clock_horizon_bound": {
+      "exact_rational": "102730689122912492208248439320820931631313316533/8456855042897805125857611972652986812500000000000",
+      "display_only_float": 0.012147623271512415
+    },
+    "B_spectral_upper": {
+      "exact_rational": "955728227842433/50000000000000",
+      "display_only_float": 19.11456455684866
+    },
+    "contact_norm_upper": {
+      "exact_rational": "1585011480044121/200000000000000",
+      "display_only_float": 7.925057400220605
+    }
+  },
+  "preserved_generic_ceilings": {
+    "root": "1/7",
+    "root_derivative": "1/24",
+    "X0": 16,
+    "X1": 700,
+    "C0": 31,
+    "C1": 2700,
+    "D": 88000
+  },
+  "max_added_incident_load_changes": {
+    "old_each": "1/50000000",
+    "source_each": "1/12500000",
+    "contact_clock_each": "3/100000000"
+  },
+  "phase_scope": "Actual nutilde in ten-coefficient comparison; fixed nominal scalar corollary requires nu exact, leaving nine variable coefficients.",
+  "limits": {
+    "matrices": 0,
+    "grid_points": 0,
+    "time_evolution": false,
+    "independent_review": false,
+    "cpu_cap_seconds": 10,
+    "wrapper_wall_cap_seconds": 20
+  },
+  "elapsed_seconds": 0.000723457895219326
+}

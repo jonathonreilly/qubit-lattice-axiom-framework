@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/common_phase_sign/mutated.py", line 321, in <module>
+    run_independent_checks(Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/structural_coefficient_box_2026_10_17_inputs/review'))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/common_phase_sign/mutated.py", line 188, in run_independent_checks
+    require('nominal_common_phase_contract', sp.cancel((-z*z)*zeta-alpha/z**2) == 0)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/common_phase_sign/mutated.py", line 31, in require
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: nominal_common_phase_contract

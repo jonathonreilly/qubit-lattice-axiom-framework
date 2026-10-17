@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/finite_clock_horizon_overextension/mutated.py", line 321, in <module>
+    run_independent_checks(Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/structural_coefficient_box_2026_10_17_inputs/review'))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/finite_clock_horizon_overextension/mutated.py", line 252, in run_independent_checks
+    pos('finite_clock_chebyshev_exponent_margin', dM_clock-18*Tobs*R(6,5)-9)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/finite_clock_horizon_overextension/mutated.py", line 37, in pos
+    require(name, value.is_Rational and value.p > 0 and value.q > 0)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_integration/mutations/finite_clock_horizon_overextension/mutated.py", line 31, in require
+    assert bool(condition), name
+           ~~~~^^^^^^^^^^^
+AssertionError: finite_clock_chebyshev_exponent_margin

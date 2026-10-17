@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-17T01:06:23.213773+00:00",
+  "scope": "Post-execution source binding for the exact arithmetic run; the original recorder did not pin the child through its python -c wrapper. Source has not been edited since that run. This supplements, rather than replaces, the original receipt.",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/check_bounds.py",
+    "bytes": 4828,
+    "sha256": "19adc9be1ee764005bf390e797b287fff8ad9bb0fa44ab650bed8dfa1418d64c"
+  },
+  "original_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/structural_box_scalar_check/EXECUTION.json",
+    "bytes": 1306,
+    "sha256": "dc35bc2a3da57facb001be40b548bc15b67cc43d95fecf93eeb2ec1692114295"
+  },
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/structural_coefficient_robustness/BOUNDS.json",
+    "bytes": 3157,
+    "sha256": "e18d8cff679dcb67c6fdde2a0b05db5d40f35e1a23f6a35da7fd386ecad1c958"
+  },
+  "preliminary_work": "A prior interactive Fraction calculation computed the same scalar quantities; no parameter search, matrices or dynamics were run.",
+  "actual_scope": "One recorded execution of check_bounds.py; author-only scalar arithmetic. Independent analytical review pending."
+}

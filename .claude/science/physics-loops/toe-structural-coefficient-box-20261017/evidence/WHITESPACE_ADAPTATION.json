@@ -1,0 +1,67 @@
+{
+  "scope": "Formatting only; prior mutation evidence applies to the identical complete module ASTs. Frozen source copies untouched.",
+  "files": [
+    {
+      "path": "scripts/structural_coefficient_box_2026_10_17.py",
+      "before": {
+        "bytes": 12302,
+        "sha256": "bae05b5f4c03e630e878134a94a1df57dee64499840c20d60459a47beb557d04"
+      },
+      "after": {
+        "bytes": 12278,
+        "sha256": "b11febc057db28f305c27dd684f45c8a92f743d95ebb8344afb5b5c21a0f10b7"
+      },
+      "complete_module_ast_unchanged": true,
+      "ast_sha256": "d587a1d06d0b1ed7e0d17d3b4d9980c9bfb408f6aa005afac749e0f2a6bf013b",
+      "removed_trailing_space_lines": [
+        45,
+        53,
+        68,
+        80,
+        84,
+        87
+      ]
+    },
+    {
+      "path": "scripts/structural_coefficient_box_check_2026_10_17.py",
+      "before": {
+        "bytes": 16170,
+        "sha256": "b3b3fd4e7cee5e933804b7232050a8ae0435e7b79b48eee29ef1be13cda129be"
+      },
+      "after": {
+        "bytes": 16066,
+        "sha256": "b112819693da02966e23f153f4d2725e4fa472021b2af606a8ea709ed605e1df"
+      },
+      "complete_module_ast_unchanged": true,
+      "ast_sha256": "72424c0a99c2b160a34b8528cded24833d62c1ac5b4a22bf5b8d729a31a4e5ae",
+      "removed_trailing_space_lines": [
+        28,
+        29,
+        33,
+        34,
+        39,
+        40,
+        43,
+        44,
+        48,
+        49,
+        54,
+        55,
+        61,
+        62,
+        65,
+        66,
+        103,
+        113,
+        142,
+        158,
+        172,
+        189,
+        200,
+        234,
+        270,
+        295
+      ]
+    }
+  ]
+}

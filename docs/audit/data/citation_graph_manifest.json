@@ -1,6 +1,6 @@
 {
- "edge_count": 16163,
- "node_count": 7208,
+ "edge_count": 16164,
+ "node_count": 7209,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20877,6 +20877,10 @@
   "strongly_regular_bus_bounded_theorem_note_2026-10-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "structural_coefficient_box_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "86ebd4676891",
+   "out_degree": 1
   },
   "structural_no_go_survey_note": {
    "deps_hash": "e7df0adc06f6",

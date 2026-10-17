@@ -1,0 +1,38 @@
+{
+  "frozen_utc": "2026-10-17T01:19:16.324229+00:00",
+  "status": "Completed source-exposed same-model review; conditional new argument supported; no retained-status decision.",
+  "author_candidate_sha256": "5d3c2dd41f6af96bf7bd793b5e5cfe39e5d0f5c7c0d16517c95249542cdc81ca",
+  "author_freeze_sha256": "5e526899bf7d17b1546f8eed8497bd48220c3238ffc4b5f186f044613005078a",
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 5037,
+    "sha256": "1b0283f08a4911b15d9fc04c8aaa25a207c18b6ccf0bd709b06239e5f2e66ce5"
+  },
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 18018,
+    "sha256": "7ec59622c9acaf321bc2363839a8631f81c5b1b75e78a99a03c7500366b4f5f8"
+  },
+  "checker": {
+    "path": "check_structural_box.py",
+    "bytes": 15480,
+    "sha256": "e82bc008d335e439c84bfa0117ad2aa391539e40bade3c53be8cce68684dd7ad"
+  },
+  "receipt": {
+    "path": "runs/attempt_1/EXECUTION.json",
+    "bytes": 2717,
+    "sha256": "b605e59bc85e67e680ce52d66b68d52e76b6e8f2ddcccc05c0c9659db61a42a0"
+  },
+  "actual_execution": {
+    "runs": 1,
+    "exit_code": 0,
+    "wall_seconds": 0.6041657919995487,
+    "max_matrix_dimension": 16,
+    "max_inverse_dimension": 4,
+    "cpu_limit_seconds": 45,
+    "wall_limit_seconds": 60,
+    "historical_point_or_reflection_recomputed": false,
+    "time_evolution": false
+  },
+  "untouched": "Author files, worktree, prompts, axioms, shared checkpoints, Git and audit outputs."
+}

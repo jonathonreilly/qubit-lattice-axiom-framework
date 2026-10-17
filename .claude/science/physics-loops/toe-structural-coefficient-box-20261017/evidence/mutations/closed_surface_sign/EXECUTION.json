@@ -1,0 +1,26 @@
+{
+  "name": "closed_surface_sign",
+  "source_role": "independent",
+  "started_utc": "2026-10-17T01:33:56.367262+00:00",
+  "elapsed_seconds": 0.1775901671499014,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "G = q/J",
+  "new": "G = -q/J",
+  "expected_scientific_assertion": "surface_endpoint_1/7",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 16414,
+    "sha256": "42c01489ffefb36096e66c0c0f171ec76cb845423d09e71d111ee63de21abd44"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 1233,
+    "sha256": "fbd32b1add05ad1a1e3016039f8010eabc7b3cd7441ef02fea90cce7b3bbc9b4"
+  }
+}

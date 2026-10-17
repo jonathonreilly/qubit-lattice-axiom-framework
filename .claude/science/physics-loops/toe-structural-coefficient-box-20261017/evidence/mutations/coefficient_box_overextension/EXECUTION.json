@@ -1,0 +1,26 @@
+{
+  "name": "coefficient_box_overextension",
+  "source_role": "author",
+  "started_utc": "2026-10-17T01:33:54.839139+00:00",
+  "elapsed_seconds": 0.8806232498027384,
+  "exit_code": 1,
+  "timed_out": false,
+  "cpu_cap_seconds": 60,
+  "external_wall_cap_seconds": 20,
+  "old": "a = F(1, 10**8)",
+  "new": "a = F(1, 10**6)",
+  "expected_scientific_assertion": "assert eta < F(1226, 10**10) and A*eta < 1",
+  "scientific_assertion_rejected": true,
+  "source": {
+    "bytes": 12497,
+    "sha256": "36383750c1210b3960830d8c39ddf95abff7a43ac57d16f5ee79028f5cfab054"
+  },
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 843,
+    "sha256": "1881bbfb7572b0f10c21654bb3aba2db24cb40fe6a25a185c0d529fa7a3f9bb0"
+  }
+}

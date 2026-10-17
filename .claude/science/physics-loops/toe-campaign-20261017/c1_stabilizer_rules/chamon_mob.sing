@@ -1,0 +1,18 @@
+LIB "primdec.lib"; LIB "elim.lib";
+print("input generators:"); 
+ring r=2,(x,y,z),dp;
+ideal I0 = (y+z)*(1+y*z), (x+y)*(1+x*y);
+def S = sat(I0, x*y*z); ideal I; if (typeof(S)=="list") { I = S[1]; } else { I = S; }  // Laurent: saturate by the monomials
+I = std(I);
+print("syndrome ideal (saturated):"); print(I);
+print("dim:"); print(dim(I));
+print("minimal associated primes:"); print(minAssGTZ(I));
+print("all associated primes (primdecGTZ radicals):");
+list pd = primdecGTZ(I); int i; for(i=1;i<=size(pd);i++){ print(pd[i][2]); }
+// fully mobile charges: (I : m1) / I, m1 = (x+1,y+1,z+1)
+ideal Q = std(quotient(I, ideal(x+1,y+1,z+1)));
+print("fully mobile charge space (I:m1)/I nonzero?"); print(size(reduce(Q,I)));
+// mobility along single translations t: (I : x^t+1)/I
+list ts = x+1, y+1, z+1, x*y+1, x*z+1, y*z+1, x*y*z+1, x+y, x+z, y+z, x*y+z, x*z+y, y*z+x;
+for(i=1;i<=size(ts);i++){ ideal Qt = std(quotient(I, ts[i])); print(string(ts[i]) + " : mobile classes exist = " + string(size(reduce(Qt,I))!=0)); }
+quit;

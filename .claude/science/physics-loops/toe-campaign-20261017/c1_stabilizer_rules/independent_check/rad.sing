@@ -1,0 +1,20 @@
+LIB "elim.lib";
+ring r = 2,(x,y,z),dp;
+poly m = x*y*z;
+// x*y*z*(x+1/x+y+1/y), x*y*z*(y+1/y+z+1/z)
+ideal I0 = x2yz+yz+xy2z+xz, xy2z+xz+xyz2+xy;
+ideal I = std(sat(I0,m));
+ideal P1 = std(sat(ideal(x+y,y+z),m));
+ideal P2 = std(sat(ideal(x+y,1+y*z),m));
+ideal P3 = std(sat(ideal(1+x*y,y+z),m));
+ideal P4 = std(sat(ideal(1+x*y,1+y*z),m));
+ideal K = std(intersect(P1,P2,P3,P4));
+print(size(reduce(K,I)));  // 0 => K subset I
+print(size(reduce(I,K)));  // 0 => I subset K
+print(dim(I));
+// cross-check: 1+x not in I, planon move in I
+print(reduce(1+x,I)==0);
+poly f=(y+z)*(1+x*y);
+print(reduce(f*(1+x*z),I)==0);
+print(reduce(f*(1+x*y*z),I)==0);
+quit;

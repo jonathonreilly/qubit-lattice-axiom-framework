@@ -1,0 +1,17 @@
+{
+  "record_type": "canonical_execution_companion",
+  "canonical_execution": "pending",
+  "wrapper_root_approval": "pending",
+  "final_conformance": "pending",
+  "runner": "scripts/autonomous_boundary_reflection_2026_10_16.py",
+  "direct_import": "scripts/autonomous_boundary_reflection_check_2026_10_16.py",
+  "note": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+  "result": "outputs/autonomous_boundary_reflection_2026_10_16.json",
+  "cache": "logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt",
+  "execution_method": "scripts/runner_cache.py execute_and_write_cache(runner, timeout_sec), with the primary's declared AUDIT_TIMEOUT_SEC",
+  "actual_invocation": null,
+  "actual_exit_code": null,
+  "actual_runtime_seconds": null,
+  "actual_source_and_output_identities": null,
+  "record_limit": "This drafting placeholder reports no canonical invocation or outcome. Root must replace pending fields from actual evidence after final source integration; source acceptance and scratch mutation rejections do not imply canonical success."
+}

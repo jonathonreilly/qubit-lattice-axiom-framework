@@ -1,0 +1,39 @@
+{
+  "old_counts": {
+    "node_count": 7204,
+    "edge_count": 16158
+  },
+  "new_counts": {
+    "node_count": 7205,
+    "edge_count": 16159
+  },
+  "added": [
+    "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "native_halfline_clock_completion_finite_horizons_and_permanence_bounded_theorem_note_2026-09-14"
+    ],
+    "helper_runner_paths": [
+      "scripts/autonomous_boundary_reflection_check_2026_10_16.py"
+    ],
+    "note_hash": "4050dabaac602bcd711a9c0eea21b648e3f1ba8fdcb28007f85f1ed9bdce1577",
+    "path": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "runner_path": "scripts/autonomous_boundary_reflection_2026_10_16.py",
+    "title": "Autonomous boundary reflection with a supplied positive boundary"
+  },
+  "new_edges": [
+    {
+      "from": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16",
+      "to": "native_halfline_clock_completion_finite_horizons_and_permanence_bounded_theorem_note_2026-09-14"
+    }
+  ],
+  "manifest_sha256": "194a216e20893223bff403b6867f3a207800de01fb4f29ecb7a9bfe45d6e4865",
+  "scope": "Only the intended new note and its direct citation dependency; old topology preserved. Generated graph JSON is validation residue and will not be committed."
+}

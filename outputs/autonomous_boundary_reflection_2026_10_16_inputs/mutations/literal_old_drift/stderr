@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/literal_old_drift/scripts/autonomous_boundary_reflection_2026_10_16.py", line 48, in <module>
+    assert np.linalg.norm(K @ W - W @ K) < 1e-14
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

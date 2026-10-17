@@ -1,0 +1,122 @@
+{
+  "status": "finite author diagnostics passed; not all-future verification",
+  "source_sha256": "4bab49101d34d685ad130d53b65cd1cee8adaab66b72a42ed4276ea05a41e278",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "resource_caps": {
+    "cpu_seconds": 120,
+    "largest_sparse_joint_dimension": 1536,
+    "largest_dense_full_qubit_dimension": 64,
+    "quadrature_orders": [
+      512,
+      768
+    ],
+    "sparse_input_columns": 4
+  },
+  "finite_fixture": {
+    "J": 0.1875,
+    "M": 384,
+    "T": 160.0,
+    "sigma": 0.12
+  },
+  "diagnostics": [
+    {
+      "w": 0.25,
+      "elapsed": 320.0,
+      "boundary_residual": 1.2412670766236366e-16,
+      "isometry_error": 0.0712003403002924,
+      "omitted_global_phase_error": 1.599847826351083,
+      "quadrature_delta": 4.732077685162634e-14,
+      "initial_scattering_error": 0.02955847764626512,
+      "scattering_evolution_error": 0.029557898204655448,
+      "conservative_analytic_bound": 2.8484799028330374,
+      "bound_is_informative": false
+    },
+    {
+      "w": 0.25,
+      "elapsed": 480.0,
+      "boundary_residual": 1.2412670766236366e-16,
+      "isometry_error": 0.06573033082806838,
+      "omitted_global_phase_error": 1.5999144047815481,
+      "quadrature_delta": 4.7217220188820555e-14,
+      "initial_scattering_error": 0.02955847764626512,
+      "scattering_evolution_error": 0.029480797634336687,
+      "conservative_analytic_bound": 2.8484799028330374,
+      "bound_is_informative": false
+    },
+    {
+      "w": 0.25,
+      "bound_state_energy": 0.765625,
+      "bound_state_residual": 8.675462274975833e-17,
+      "actual_ready_bound_overlap": 0.002586872909850364
+    },
+    {
+      "w": 0.27,
+      "elapsed": 320.0,
+      "boundary_residual": 1.5700924586837752e-16,
+      "isometry_error": 0.10378064233070684,
+      "omitted_global_phase_error": 1.6423324885271167,
+      "quadrature_delta": 4.732077685162634e-14,
+      "initial_scattering_error": 0.02958885059815471,
+      "scattering_evolution_error": 0.0295882705099422,
+      "conservative_analytic_bound": 3.061813236166371,
+      "bound_is_informative": false
+    },
+    {
+      "w": 0.27,
+      "elapsed": 480.0,
+      "boundary_residual": 1.5700924586837752e-16,
+      "isometry_error": 0.10029826157701655,
+      "omitted_global_phase_error": 1.642426538186363,
+      "quadrature_delta": 4.7217220188820555e-14,
+      "initial_scattering_error": 0.02958885059815471,
+      "scattering_evolution_error": 0.029510933362546992,
+      "conservative_analytic_bound": 3.061813236166371,
+      "bound_is_informative": false
+    },
+    {
+      "w": 0.27,
+      "bound_state_energy": 0.7752083333333333,
+      "bound_state_residual": 2.805995807498498e-17,
+      "actual_ready_bound_overlap": 0.002914042094525385
+    },
+    {
+      "full_qubit_dimension": 64,
+      "minimum_full_H_eigenvalue": 0.9999999999999997,
+      "boundary_norm": 0.25000000000000017,
+      "smallest_bond_eigenvalue": 0.0
+    }
+  ],
+  "sufficient_parameter_examples": [
+    {
+      "epsilon": 0.5,
+      "sigma": 0.022058823529411766,
+      "T_lower_bound": 46486.79283617822,
+      "guaranteed_after_time": 92973.58567235644,
+      "boundary_error_allowance": 0.01171875,
+      "budget": 0.5,
+      "physical_evolution_executed": false
+    },
+    {
+      "epsilon": 0.25,
+      "sigma": 0.011029411764705883,
+      "T_lower_bound": 356405.26224535605,
+      "guaranteed_after_time": 712810.5244907121,
+      "boundary_error_allowance": 0.005859375,
+      "budget": 0.25,
+      "physical_evolution_executed": false
+    },
+    {
+      "epsilon": 0.1,
+      "sigma": 0.004411764705882354,
+      "T_lower_bound": 5426092.972978232,
+      "guaranteed_after_time": 10852185.945956465,
+      "boundary_error_allowance": 0.0023437500000000003,
+      "budget": 0.1,
+      "physical_evolution_executed": false
+    }
+  ],
+  "elapsed_seconds": 0.965052000246942
+}

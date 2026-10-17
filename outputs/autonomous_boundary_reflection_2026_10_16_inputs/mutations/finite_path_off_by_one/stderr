@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/finite_path_off_by_one/scripts/autonomous_boundary_reflection_2026_10_16.py", line 165, in <module>
+    independent_readiness = run_readiness_checks()
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/finite_path_off_by_one/scripts/autonomous_boundary_reflection_check_2026_10_16.py", line 379, in run_readiness_checks
+    assert not nonzero
+           ^^^^^^^^^^^
+AssertionError

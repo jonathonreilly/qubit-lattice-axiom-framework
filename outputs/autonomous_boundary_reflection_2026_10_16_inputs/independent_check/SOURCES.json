@@ -1,0 +1,54 @@
+{
+  "captured_utc": "2026-10-16T23:27:50.422599+00:00",
+  "git_object_store": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/sharp_current_worktree",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/CANDIDATE.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/CANDIDATE.md",
+      "bytes": 13170,
+      "sha256": "4bab49101d34d685ad130d53b65cd1cee8adaab66b72a42ed4276ea05a41e278"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/autonomous_reflection_candidate/FREEZE.json",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/FREEZE.json",
+      "bytes": 451,
+      "sha256": "c250ab7abc7712716284a7782dfe6c52b9cf470a4e512de6a585846770fcd84a"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/bootstrap/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "source": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc:docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/PR9657_NOTE.md",
+      "bytes": 93655,
+      "sha256": "b25d812dc1a4cdad2959f003ddd36346f2de0058292c74c7d0e07c9c5e395a4d"
+    },
+    {
+      "source": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc:docs/NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/PR9657_HALFLINE.md",
+      "bytes": 26686,
+      "sha256": "87d8c6f4b98563cd827f0d8264ec2575c689ec4d7ac018fe5b87d89006181ed3"
+    },
+    {
+      "source": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/REVIEWER_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "source": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "source": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "destination": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/sources/PROOF_SEARCH_GOVERNANCE.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/reflection_orientation/scripts/autonomous_boundary_reflection_2026_10_16.py", line 80, in <module>
+    assert boundary_res < 2e-15
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError

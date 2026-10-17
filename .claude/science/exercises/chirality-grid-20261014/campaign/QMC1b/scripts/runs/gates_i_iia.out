@@ -1,0 +1,18 @@
+filter f2 L=(4, 4): rho = 0.3125; max |f(k) - analytic| = 1.1e-16; f at mirrors [np.float64(1.0), np.float64(1.0)], at light [np.float64(0.0), np.float64(0.0)]
+filter fG L=(4, 4): rho = 0.3125; max |f(k) - analytic| = 5.6e-17; f at mirrors [np.float64(1.0), np.float64(0.5), np.float64(0.5)], at light [np.float64(0.0)]
+filter fG L=(6, 6): rho = 0.3125; max |f(k) - analytic| = 2.2e-16; f at mirrors [np.float64(1.0), np.float64(0.5), np.float64(0.5)], at light [np.float64(0.0)]
+filter g1 L=(3,): rho = 0.375; max |f(k) - analytic| = 1.1e-16; f at mirrors [np.float64(1.0)], at light [np.float64(0.0)]
+filter f1 L=(3,): rho = 0.375; max |f(k) - analytic| = 0.0e+00; f at mirrors [np.float64(1.0)], at light [np.float64(0.0)]
+gate(i) f2 L=(4, 4): max |G_engine(tau,k) - G_free(tau,k)| = 4.89e-15; light-corner dev 4.9e-15; wrap-vs-fresh 3.9e-15; PASS True
+gate(i) fG L=(4, 4): max |G_engine(tau,k) - G_free(tau,k)| = 4.89e-15; light-corner dev 9.5e-16; wrap-vs-fresh 3.9e-15; PASS True
+gate(i) fG L=(6, 6): max |G_engine(tau,k) - G_free(tau,k)| = 6.44e-15; light-corner dev 2.8e-15; wrap-vs-fresh 5.8e-15; PASS True
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+gate(ii-a) fG L4 trial 0: log|w| = 469.263, |phase| = 1.57e-14; conj-closed spectrum dev 7.7e-15; ||T2 B T2^-1 - B||/||B|| = 7.5e-16
+gate(ii-a) fG L4 trial 1: log|w| = 460.410, |phase| = 7.99e-15; conj-closed spectrum dev 9.5e-15; ||T2 B T2^-1 - B||/||B|| = 8.4e-16
+GATES (i)+(ii-a) PASS; total 36s, peak RSS 1163 MB
+watchdog peak RSS 1183536 KB

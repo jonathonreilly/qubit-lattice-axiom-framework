@@ -769,3 +769,10 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **Not determined.** The quantum walker family is OPEN in 3D. Signed hopping plus repulsion leans toward Néel at half filling on finite cubes only.
 - **Correction to GEN-2 c6 (worker's point; checked).** The chessboard keeps FCC translations, so only (π,π,π) folds onto Γ. Not all eight corners fold.
 - **Supervisor reading (to check).** In X2′, Γ carries index +3 per component and (π,π,π) carries −3 (walker chirality (−1)^hw). So the chessboard pairs them, the folded index is 0, and Γ–hw3 Dirac masses become allowed. X2′'s light protection would then fail inside the chessboard region (g < g_N) and survive at main's g ≥ 1.
+
+**QMC-1b result (22:33Z 10-17; same family; referee queued): OPEN.**
+- **Why OPEN.** At the registered couplings W = 2 and 4, f_Γ never reaches the suppressed window. Its (π,0) and (0,π) mirrors sit at filter value ½ and stay light, so no comparison can be read.
+- **f2 reproduces QMC-1** with 4× the statistics and Δτ = 0.05. Ratios: 0.963(28) at W = 2 and 0.865(37) at W = 4; QMC-1's 1.35 came down to 0.865.
+- **Supplementary W = 8 (registered after W = 4 failed; n_s = 4 so the gate passes):** f_Γ 0.805(63) against f2 0.861(47, incomplete at 171 sweeps). The two agree within errors. So the box-spanning 10-vector correlation does not look filter-specific (suggested).
+- **Gates re-passed**, including an ED check with negative taps.
+- **Systematics as before:** U(1)_c-plane pinning, finite temperature, no gap estimator.

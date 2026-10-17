@@ -1,0 +1,11 @@
+qubits 3072 per site 48 generators 3392
+all generators Hermitian: True
+generator commutation failures: 0
+rank 3069 contains -I or iI: False k = 3 (2.2s)
+loop orientation/start dependence (first 200 faces): 0
+hop anticommutation rule failures: 0
+hop/stabilizer syndrome failures: 0
+T-junction W3 W2^dag W1 = theta W1 W2^dag W3, theta values: -1
+prod B prod R == I: True
+B_q on one site (sample): True
+time 5.5s

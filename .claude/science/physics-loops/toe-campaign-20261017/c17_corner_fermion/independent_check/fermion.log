@@ -1,0 +1,29 @@
+flux pattern (sq,tri,pl,tube) -> PSG signs, translation commutators
+(1, 1, 1, 1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [1, 1, 1]
+(1, 1, 1, -1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [1, 1, 1]
+(1, 1, -1, 1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [-1, -1, -1]
+(1, 1, -1, -1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [-1, -1, -1]
+(1, -1, 1, 1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [1, 1, 1]
+(1, -1, 1, -1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [1, 1, 1]
+(1, -1, -1, 1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [-1, -1, -1]
+(1, -1, -1, -1) {'C2axis': [1], 'C4^4': [1], 'C2edge': [1]} T comm [-1, -1, -1]
+(-1, 1, 1, 1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [-1, -1, -1]
+(-1, 1, 1, -1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [-1, -1, -1]
+(-1, 1, -1, 1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [1, 1, 1]
+(-1, 1, -1, -1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [1, 1, 1]
+(-1, -1, 1, 1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [-1, -1, -1]
+(-1, -1, 1, -1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [-1, -1, -1]
+(-1, -1, -1, 1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [1, 1, 1]
+(-1, -1, -1, -1) {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} T comm [1, 1, 1]
+twist none : not a linear rep of 2O (cocycle != SU(2) cocycle)
+   linear rep of O after signs? False
+twist i^w1 : linear 2O rep; multiplicities {'E1/2': np.complex128(1+0j), 'E5/2': np.complex128(1+0j), 'G3/2': np.complex128(2+0j), 'A1': np.complex128(0j), 'A2': np.complex128(0j), 'E': np.complex128(0j)}
+twist (-i)^w1 : linear 2O rep; multiplicities {'E1/2': np.complex128(1+0j), 'E5/2': np.complex128(1+0j), 'G3/2': np.complex128(2+0j), 'A1': np.complex128(0j), 'A2': np.complex128(0j), 'E': np.complex128(0j)}
+default flux PSG signs: {'C2axis': [-1], 'C4^4': [-1], 'C2edge': [1]} translation commutators [1, 1, 1]
+projector ranks {'E1/2': 2, 'E5/2': 2, 'G3/2': 8}
+t1=-1 chiral=0 O-inv err 0.0e+00; levels: [(np.float64(-2.7321), 4, {'G3/2': np.float64(1.0)}), (np.float64(0.7321), 4, {'G3/2': np.float64(1.0)}), (np.float64(2.0), 4, {'E1/2': np.float64(1.0), 'E5/2': np.float64(1.0)})]  gap 3.4642
+t1=1 chiral=0 O-inv err 0.0e+00; levels: [(np.float64(-2.0), 4, {'E1/2': np.float64(1.0), 'E5/2': np.float64(1.0)}), (np.float64(-0.7321), 4, {'G3/2': np.float64(1.0)}), (np.float64(2.7321), 4, {'G3/2': np.float64(1.0)})]  gap 1.2679
+t1=-1 chiral=-0.5 O-inv err 0.0e+00; levels: [(np.float64(-2.8708), 4, {'G3/2': np.float64(1.0)}), (np.float64(0.5858), 2, {'E5/2': np.float64(1.0)}), (np.float64(0.8708), 4, {'G3/2': np.float64(1.0)})]  gap 3.4566
+t1=-1 chiral=0.5 O-inv err 0.0e+00; levels: [(np.float64(-2.8708), 4, {'G3/2': np.float64(1.0)}), (np.float64(0.5858), 2, {'E1/2': np.float64(1.0)}), (np.float64(0.8708), 4, {'G3/2': np.float64(1.0)})]  gap 3.4566
+t1=1 chiral=-0.5 O-inv err 0.0e+00; levels: [(np.float64(-3.4142), 2, {'E5/2': np.float64(1.0)}), (np.float64(-0.8708), 4, {'G3/2': np.float64(1.0)}), (np.float64(-0.5858), 2, {'E1/2': np.float64(1.0)})]  gap 2.5434
+t1=1 chiral=0.5 O-inv err 0.0e+00; levels: [(np.float64(-3.4142), 2, {'E1/2': np.float64(1.0)}), (np.float64(-0.8708), 4, {'G3/2': np.float64(1.0)}), (np.float64(-0.5858), 2, {'E5/2': np.float64(1.0)})]  gap 2.5434

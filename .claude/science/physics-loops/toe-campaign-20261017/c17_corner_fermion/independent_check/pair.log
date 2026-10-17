@@ -1,0 +1,20 @@
+C2axis w1 = 0 axis/matrix [[1, 0, 0], [0, -1, 0], [0, 0, -1]] lambda_U values {1} twisted lambda_V = {1}
+C2axis w1 = 0 axis/matrix [[-1, 0, 0], [0, 1, 0], [0, 0, -1]] lambda_U values {1} twisted lambda_V = {1}
+C2axis w1 = 0 axis/matrix [[-1, 0, 0], [0, -1, 0], [0, 0, 1]] lambda_U values {1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[-1, 0, 0], [0, 0, 1], [0, 1, 0]] lambda_U values {-1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[-1, 0, 0], [0, 0, -1], [0, -1, 0]] lambda_U values {-1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[0, 1, 0], [1, 0, 0], [0, 0, -1]] lambda_U values {-1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[0, -1, 0], [-1, 0, 0], [0, 0, -1]] lambda_U values {-1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[0, 0, 1], [0, -1, 0], [1, 0, 0]] lambda_U values {-1} twisted lambda_V = {1}
+C2edge w1 = 1 axis/matrix [[0, 0, -1], [0, -1, 0], [-1, 0, 0]] lambda_U values {-1} twisted lambda_V = {1}
+clean creators (flip exactly B_q, B_Rq, nothing else): 252 / 252
+--- control: creators carrying a winding loop ---
+C2axis [[1, 0, 0], [0, -1, 0], [0, 0, -1]] [((1, 0, 0), 1), ((0, 1, 0), 1), ((0, 0, 1), 1)]
+C2axis [[-1, 0, 0], [0, 1, 0], [0, 0, -1]] [((1, 0, 0), 1), ((0, 1, 0), 1), ((0, 0, 1), 1)]
+C2axis [[-1, 0, 0], [0, -1, 0], [0, 0, 1]] [((1, 0, 0), 1), ((0, 1, 0), 1), ((0, 0, 1), 1)]
+C2edge [[-1, 0, 0], [0, 0, 1], [0, 1, 0]] [((1, 0, 0), -1), ((0, 1, 0), None), ((0, 0, 1), None)]
+C2edge [[-1, 0, 0], [0, 0, -1], [0, -1, 0]] [((1, 0, 0), -1), ((0, 1, 0), None), ((0, 0, 1), None)]
+C2edge [[0, 1, 0], [1, 0, 0], [0, 0, -1]] [((1, 0, 0), None), ((0, 1, 0), None), ((0, 0, 1), -1)]
+C2edge [[0, -1, 0], [-1, 0, 0], [0, 0, -1]] [((1, 0, 0), None), ((0, 1, 0), None), ((0, 0, 1), -1)]
+C2edge [[0, 0, 1], [0, -1, 0], [1, 0, 0]] [((1, 0, 0), None), ((0, 1, 0), -1), ((0, 0, 1), None)]
+C2edge [[0, 0, -1], [0, -1, 0], [-1, 0, 0]] [((1, 0, 0), None), ((0, 1, 0), -1), ((0, 0, 1), None)]

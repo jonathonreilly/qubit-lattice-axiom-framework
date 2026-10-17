@@ -1,0 +1,34 @@
+L=6, flux={'square': 1, 'triangle': 0, 'plaquette': 1, 'tube': 0}, 10368 qubits (48 per site), 2592 corner vertices
+[PASS] all hops, B, R and loop generators are Hermitian
+[PASS] loops commute with hops; stabilizer generators commute (random sample)  violations=0
+[PASS] hops anticommute iff they share exactly one vertex (sample)
+[PASS] stabilizer group (B, R, loops) has no -I
+   rank 10365, log2 code dimension 3
+[PASS] log2 code dimension is 3 (Z2 gauge theory on the 3-torus)
+[PASS] T-junction exchange sign of the corner charge is -1 (a fermion)  phase i^2
+   [9s]
+[PASS] for every rotation, P_R then the on-site CZ network maps each hop to plus/minus the rotated hop; Z fixes make it exact
+[PASS] every rotation maps stabilizer generators to +stabilizers and hops exactly to rotated hops (sample)
+   [1057s]
+[PASS] fast single-qubit evaluator agrees with full conjugation (sample)
+[PASS] the composite of any two rotations differs from the third only by a product of repetition stabilizers R
+[PASS] every link orbit under O is free (no rotation fixes a link)  108 orbits
+[PASS] the R-valued cocycle is a coboundary (solved orbit by orbit)
+[PASS] after the correction U_R -> prod_{T_R} R * U_R: U_a U_b = U_ab exactly on all 2 x 10368 single-qubit Paulis, all 576 pairs
+[PASS] corrected rotations still map stabilizers to +stabilizers and hops exactly (sample)
+[PASS] prod_q B_q * prod_links R = identity, so W^2 is a global phase and V_g = U_g W^{w1(g)} is again an exact O action
+   [1146s]
+   C2 (axis) R=[[1, 0, 0], [0, -1, 0], [0, 0, -1]]: pair eigenvalues [1]
+   C2 (axis) R=[[-1, 0, 0], [0, 1, 0], [0, 0, -1]]: pair eigenvalues [1]
+   C2 (axis) R=[[-1, 0, 0], [0, -1, 0], [0, 0, 1]]: pair eigenvalues [1]
+   C2 (edge) R=[[-1, 0, 0], [0, 0, 1], [0, 1, 0]]: pair eigenvalues [-1]
+   C2 (edge) R=[[-1, 0, 0], [0, 0, -1], [0, -1, 0]]: pair eigenvalues [-1]
+   C2 (edge) R=[[0, 1, 0], [1, 0, 0], [0, 0, -1]]: pair eigenvalues [-1]
+   C2 (edge) R=[[0, -1, 0], [-1, 0, 0], [0, 0, -1]]: pair eigenvalues [-1]
+   C2 (edge) R=[[0, 0, 1], [0, -1, 0], [1, 0, 0]]: pair eigenvalues [-1]
+   C2 (edge) R=[[0, 0, -1], [0, -1, 0], [-1, 0, 0]]: pair eigenvalues [-1]
+[PASS] pair test: lambda = +1 for all axis C2 (eta = -1) and lambda = -1 for all edge C2 (eta = +1): class w2 + w1^2  {'axis': [1], 'edge': [-1]}
+[PASS] each pair creator flips exactly the two end charges B_q, B_Rq and no repetition stabilizer
+[PASS] twisted realization V_g = U_g W^{w1(g)} (edge C2 are w1-odd, axis C2 even): lambda = +1 for all nine C2: class w2  {'axis': [1], 'edge': [1]}
+
+TOTAL: PASS=18 FAIL=0   [1153s]

@@ -13,7 +13,7 @@ runner: scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
-**Status:** bounded support, unaudited. Exact for the supplied model at L = 4. The class identification is conditional on the localization relation used in the companion notes. Nothing is adopted.
+**Status:** bounded support, unaudited. Exact for the supplied model at L = 4, with the qubit runner also passing at L = 6. The class identification is conditional on the localization relation used in the companion notes. Nothing is adopted.
 
 ## Question
 
@@ -120,7 +120,7 @@ It left one route open: put the fermion charge where no rotation about a site fi
 ## No-Go Discipline Gate
 
 - **N1 — routes.** Other positions (cube centres, generic points) and other fluxes are not treated.
-- **N2/N3 — scope.** One supplied model, with exact checks on the L = 4 torus. An L = 6 rerun of the qubit runner is recorded in the loop pack.
+- **N2/N3 — scope.** One supplied model, with exact checks on the L = 4 torus. An L = 6 rerun of the qubit runner (10,368 qubits) also passes 18/18 (loop pack, `runner_qubits_L6.log`).
 - **N4 — inputs.**
   - The Pauli algebra is exact.
   - The PSG and the shell use exact GF(2) solves and finite group characters.

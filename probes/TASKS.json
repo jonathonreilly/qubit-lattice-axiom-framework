@@ -70279,7 +70279,7 @@
     },
     "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
     "research_target": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion.",
-    "what": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "what": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. PR9658 review additionally verifies four identified local nodes at the light-speed member, including the three uniaxial pi cones with transverse speed sqrt(5)-2. This does not exhaust the torus or identify physical species. The positivity-to-C3 physical bridge remains open; repeating the local cone is not a new HIT.",
     "source_branch": {
       "name": "claude/toe-campaign-24h-20261015",
       "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
@@ -70301,7 +70301,19 @@
         "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
       }
     ],
-    "related_tasks": []
+    "related_tasks": [],
+    "supplementary_source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+        "sha256": "5ded0b9965a78d887bf2277d47563d42537a658535cc573486f6473f022c72d7",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+        "sha256": "e4de287455dca1c18251992979d610ff5f96db7b36c15d36431cd2b32317da96",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      }
+    ]
   },
   {
     "id": "J:derive:review-20261016-signed-corner-extensions:a1",
@@ -70319,7 +70331,7 @@
     },
     "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
     "research_target": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations.",
-    "what": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "what": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. PR9658 independently matched both specified eleven-dimensional nearest-site families and exact equations. Reconcile those stated signed-generator conventions without inferring a classification of every projective action; exhaustive negative proof certification is tracked separately in the nearest-site-prime-closure task.",
     "source_branch": {
       "name": "claude/toe-campaign-24h-20261015",
       "head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
@@ -70365,7 +70377,19 @@
         "commit": "b0178fa585cad5ac9e02e70dff2175593dbc5dab"
       }
     ],
-    "related_tasks": []
+    "related_tasks": [],
+    "supplementary_source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+        "sha256": "5ded0b9965a78d887bf2277d47563d42537a658535cc573486f6473f022c72d7",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+        "sha256": "e4de287455dca1c18251992979d610ff5f96db7b36c15d36431cd2b32317da96",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      }
+    ]
   },
   {
     "id": "J:derive:review-20261016-strain-path-and-retuning:a1",
@@ -70732,5 +70756,487 @@
     "related_tasks": [
       "J:derive:review-20261014-flavour-strain-scope:a1"
     ]
+  },
+  {
+    "id": "J:derive:review-20261016-nearest-site-prime-closure:a1",
+    "problem": "review-20261016-nearest-site-prime-closure",
+    "title": "Verify the nearest-site prime coverage and flatness proof candidate",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Regenerate both specified eleven-dimensional nearest-site families and exact unitarity ideals from declared signed generators. Certify exhaustive minimal-prime coverage over Q or an equivalent direct elimination certificate, then independently verify every real-locus or trace reduction. The family/equation match and quartic identity are already independently checked; repeating them alone is not a new HIT. Complete truthful execution/input and no-go route/residual records without inventing failed approaches. The original proof remains unadopted; this is not a claim that it is false.",
+    "what": "Regenerate both specified eleven-dimensional nearest-site families and exact unitarity ideals from declared signed generators. Certify exhaustive minimal-prime coverage over Q or an equivalent direct elimination certificate, then independently verify every real-locus or trace reduction. The family/equation match and quartic identity are already independently checked; repeating them alone is not a new HIT. Complete truthful execution/input and no-go route/residual records without inventing failed approaches. The original proof remains unadopted; this is not a claim that it is false. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "main",
+      "head": "2bb6c1a54721e70512922fb10d4495adf8ea3042",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/control_flat.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/directcheck.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flat0.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flat1.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flatall0.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flatall1.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/gaugecheck.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model.json",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1.json",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_flat.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_flat_allprimes.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_sigma.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_flat.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_flat_allprimes.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_sigma.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/num0.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/num1.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/numsearch.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/setup.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sig0.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sig1.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sing0.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sing1.log",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/REVIEW_PROOF_CANDIDATE.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/comp8_real.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_min.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_min.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_sos.sing",
+      "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+        "sha256": "5ded0b9965a78d887bf2277d47563d42537a658535cc573486f6473f022c72d7",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+        "sha256": "e4de287455dca1c18251992979d610ff5f96db7b36c15d36431cd2b32317da96",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/README.md",
+        "sha256": "d8e51bcf6f95ae98fc0740734a7857714d120b7b349a5200cf449d063ff31f7d",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/control_flat.sing",
+        "sha256": "c67f632f836b580e39e78dd218f82bc62b1c9a0edc1c34a1086b0531a9d23139",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/directcheck.py",
+        "sha256": "9454ee3dc9538f8ec865a4e29f761d91e2286010a67159376b5f0af326efbd00",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flat0.log",
+        "sha256": "89eb5e3fd04c9f6456c481e3661c8933d3e7b6622065937b6f51cc7bca318ec5",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flat1.log",
+        "sha256": "4a0ddd139792c096a089d6172eb597b27b98f930daadd5ace71f0bb07baa3be0",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flatall0.log",
+        "sha256": "3cd301b18e75f0c3e8d9d340733f06f6736b385ae6cf2cc171a78ef87ebfeedd",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/flatall1.log",
+        "sha256": "3cd301b18e75f0c3e8d9d340733f06f6736b385ae6cf2cc171a78ef87ebfeedd",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/gaugecheck.py",
+        "sha256": "de844a5a0dfff46406ba784a8d73c800a954ddebeb22890d17e96c7ae0d41eb9",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model.json",
+        "sha256": "1c34e2ea4264c0872e1438bb31984fb7d6dd1122bf407ba0058983cd2fa89159",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model.sing",
+        "sha256": "7f7964e0be87a290348f0baa6099b4f8f4cbcb731f7410c0dd67fb86116e5b8d",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1.json",
+        "sha256": "271cd5acd6f16289a4ad2b16d9e2d6a9eedd5ed509e35617fb427e204d858a81",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1.sing",
+        "sha256": "003398cc5640d971ae69a5bd9e0155e6a4aff1cc098238e81028aa04a525ead6",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_flat.sing",
+        "sha256": "968ed8dca5fb7749d822dfc3afa26fcaad58008c00b6f39214adcaecd3d8c8cc",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_flat_allprimes.sing",
+        "sha256": "1ac85710211515c18438025cebc69ffc71d094eb910c5033b099a79d54756bc0",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model1_sigma.sing",
+        "sha256": "1092fc160fd83ce58e27a7ea7c2b37e80ba3b38b0dc7976199a38c48ed40f6d8",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_flat.sing",
+        "sha256": "5b6ebaa5a30afd70e69293d4483b92f698c70dab744cf77f335d44a3af6bf0c8",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_flat_allprimes.sing",
+        "sha256": "e59619aeda31266e15ed386eed493a7d656e005e8d3835e5c2b3381902fc4d23",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/model_sigma.sing",
+        "sha256": "89e0da2775f7ed3f258dd81a9ed89217da01da7483051819849b4802978012a6",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/num0.log",
+        "sha256": "a0d384d0a4d459336138814bf4367263ff2319e525bc12fda9bb33214fa481dc",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/num1.log",
+        "sha256": "afaf3e6a9889c66618675f416834e27a9a83e94ca90bb1b2f4a645ee56eeb45b",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/numsearch.py",
+        "sha256": "cfe7533ca33224fe0682519fd4174509a176c94636beb3f4b1091a62c88e457e",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/setup.py",
+        "sha256": "876ab18660ad34b1786791197546ceca5424d0822e1bfb66ac7993305178e2c4",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sig0.log",
+        "sha256": "0807762f119a668de61e246ccaae64d35031cd4ff9c3caf02ac0557a8ca2cb01",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sig1.log",
+        "sha256": "be37ce343bacb1b258d0182200a0cfd678c1bc618f90d1224eb8ce74093307f1",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sing0.log",
+        "sha256": "f5acab33a55d85c5d3fa064faa67d86219dc074af0ca01781b1f0ad2065faf41",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/independent_check_B8/sing1.log",
+        "sha256": "9840f520b80a09a6c4c91399a32cd8cc1b7189560f41476a8a26032d05fb4672",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/README.md",
+        "sha256": "c47e272bbe21a675853662d0f82af0fbafe2797280a99e6b57b45a32e7dc2079",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/REVIEW_PROOF_CANDIDATE.md",
+        "sha256": "61648f6aee6f79b33ae28320959c29e9b32277a7ecb1f975003aa5b25b83e780",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/comp8_real.py",
+        "sha256": "79c514c53e2eb6b6686184c043adedac9df339bd571f9405f80fc271bdacabec",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_min.out",
+        "sha256": "8341787d5d1ddac9f875bfa49d19ef8d7415c2f173edb0ffd975d6dc1aa72412",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_min.sing",
+        "sha256": "cb52d7ca90e8468126472aed7418ccbee79175d0bd36e98dd30791b2c356a11a",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/nearest_site/nn_sos.sing",
+        "sha256": "1f3810bac4033a221b9f99bd2da6fab55cb4a3896d326b832dd2b21fc6f8218a",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "802f69e8562f389aeb65b4f916d252e484afaba77ec1fd8609ca7e273caa197a",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      }
+    ],
+    "related_tasks": []
+  },
+  {
+    "id": "J:derive:review-20261016-twisted-pair-exact-branches:a1",
+    "problem": "review-20261016-twisted-pair-exact-branches",
+    "title": "Certify exact twisted-pair branch selection and exclusion",
+    "type": "judgment",
+    "lane": "review-science-20261016",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation of the named obligation, with the first unresolved step and a disjoint check; known corrections or historical reports are not completion.",
+    "research_target": "Replace the numerical twisted-pair branch prefilter with exact exhaustive selection for the stated supplied representation and U(0)=1. Produce and independently verify characteristic-zero cofactor/unit-ideal certificates for the retained exclusions, with simultaneous-variable-converter mutation controls. Saved mod-p and modStd outputs are evidence about candidate branches, not a universal axis-flatness or Dirac-cone exclusion. Preserve all viable surviving branches and the first unclosed step.",
+    "what": "Replace the numerical twisted-pair branch prefilter with exact exhaustive selection for the stated supplied representation and U(0)=1. Produce and independently verify characteristic-zero cofactor/unit-ideal certificates for the retained exclusions, with simultaneous-variable-converter mutation controls. Saved mod-p and modStd outputs are evidence about candidate branches, not a universal axis-flatness or Dirac-cone exclusion. Preserve all viable surviving branches and the first unclosed step. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+    "source_branch": {
+      "name": "main",
+      "head": "2bb6c1a54721e70512922fb10d4495adf8ea3042",
+      "on_origin": true
+    },
+    "source_paths": [
+      ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/README.md",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_Q.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.out",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.sing",
+      ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/build_branches.py",
+      "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md"
+    ],
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+        "sha256": "5ded0b9965a78d887bf2277d47563d42537a658535cc573486f6473f022c72d7",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+        "sha256": "e4de287455dca1c18251992979d610ff5f96db7b36c15d36431cd2b32317da96",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md",
+        "sha256": "4970e457431445eba2a70ee8e70c69ec112b5615d690733e69b5dece95e3dca5",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+        "sha256": "06e0f302dbd2136433e9af094f28dc1f17c3316a63610c1246b84815e7a56cb8",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+        "sha256": "1fa09d12bfe12a06af7d92830ae9ec98891f98e1826563db69eb7ec5d5cc5f71",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/README.md",
+        "sha256": "2fb6cec4dd54f4717936b1c8df1bb71aa6c7fb1608058d1c32cbf052557d3aae",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.sing",
+        "sha256": "43a793e4853628753da9b823bf1d3ae04a66ae36feada6690997dfb6645e32b2",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.sing",
+        "sha256": "bfba38d9b88e0d66e78a969ff0e007587204d3857486a43fcd0a98b3ad94fb44",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.sing",
+        "sha256": "a3f3d4c064e036d2d17494d593c80597c4bf20b8c471fd3b172920c982339d53",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.sing",
+        "sha256": "d04a24010ce7c9da27c23cb9c56d6c9cc0420655442d5a61826dbea7d0b3c65b",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.sing",
+        "sha256": "9530ad848bd3bb0abb153d5db361772607e57faecc19afeb9fa028e6167438a6",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_Q.out",
+        "sha256": "02c00dffc161e2e7864c597bfaa2acd7226aeb36e9e2e4ad16f6813fc90b85d6",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.out",
+        "sha256": "02c00dffc161e2e7864c597bfaa2acd7226aeb36e9e2e4ad16f6813fc90b85d6",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.sing",
+        "sha256": "9c574a21dced8c77734949698bc3577d789e1b7b3992d7b9ec0a99a4f005fe78",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.sing",
+        "sha256": "9ba5e080502a3c20f5cb46d7acf9613c532e0db1d7191b6dadf974078bda7277",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.sing",
+        "sha256": "d4331fb27983d6308de835778aa47cd44cdc100d5a3576464376473c9391576f",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.sing",
+        "sha256": "f7dd598ba1678539e42058735afcf45f83d997c98f08e78a74ec0090d5284a4e",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_Q.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.out",
+        "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.sing",
+        "sha256": "211d1b63bc40facdb925670218cfdfda5b32cdc7e8ff35b0f50c4766157dc3c4",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/build_branches.py",
+        "sha256": "f97728c117c8c6eed2bef61a6fe10b496a8fe0c1adeebcdbc1c2539f7ba5426a",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      },
+      {
+        "path": "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+        "sha256": "1036c463cc28ee1fd0ec6c69adea1abc2829f661117ac0c103ecaf83b99327b1",
+        "commit": "2bb6c1a54721e70512922fb10d4495adf8ea3042"
+      }
+    ],
+    "related_tasks": []
   }
 ]

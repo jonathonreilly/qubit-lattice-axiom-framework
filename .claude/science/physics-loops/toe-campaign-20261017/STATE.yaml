@@ -82,6 +82,6 @@ blocks:
     note: docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py (PASS=11, <1 min)
     exact: ["5 qubits/site: links + matter up/dn on one Z2 gauge field; commuting, dim 3", "matter excitation = gauge charge, nontrivial, fermion (T-junction -1), up/dn one anyon type (doublet)", "2O spin action on matter pair: rep, U(-1)=matter parity, doublet spin-1/2", "composition with link lambda_f=-1: eta(C2,C2)=-1 for all C2: doublet carries w2 on all of O"]
-    independent_check: pending
+    independent_check: "code, doublet and composition CONFIRMED directly (full model, all 18 lifts, L=6,8); RESCOPED: action is a 2O rep (U(-1) = global matter parity), local excitations spinorial, pair sign not an anyon invariant -> spin-1/2 inherited from matter spinor, not fractional; energy condition mu<4J added; same caveat applied to C12"
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

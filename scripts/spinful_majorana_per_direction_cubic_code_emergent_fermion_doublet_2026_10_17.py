@@ -5,7 +5,7 @@ Five qubits per site carry ten Majoranas (Jordan-Wigner inside the site): six li
 direction, and four matter Majoranas forming two complex modes c_up, c_dn. Commuting Pauli stabilizers:
   D_v = total parity of the ten Majoranas at v; W_p = product of u_e = b_{v,+a} b_{v+e_a,-a} around p;
   P_up,v and P_dn,v = parities of the two matter modes.
-H = -K sum D - J sum W - mu sum (P_up + P_dn), with K > mu > 0. The lowest charged excitations are the two
+H = -K sum D - J sum W - mu sum (P_up + P_dn), with mu < K and mu < 4J. The lowest charged excitations are the two
 states "one matter fermion at v, spin up or down".
 
 The runner checks (exact):
@@ -22,7 +22,8 @@ The runner checks (exact):
 - the link sector is the Majorana-per-direction code of the companion note: its clean pair test (consistent
   on-site Clifford action) gives lambda_f = -1 for an axis C2 and an edge C2.
 From these: a pair of doublets in a common eigenvector e of the C2 lift (eigenvalue m = +-i) has pair eigenvalue
-lambda_f m^2 = +1, so eta(C2, C2) = -1 for every C2 of O, i.e. the doublet carries w2 on all of O.
+lambda_f m^2 = +1: the w2 sign pattern for every C2, in the D = W = +1 sector. The action represents 2O (U(-1) = matter
+parity), so local excitations are spinorial and this sign is inherited from the matter spinor, not fractional.
 """
 
 from __future__ import annotations
@@ -245,7 +246,7 @@ def main() -> int:
     # composition: doublet pair in a common C2-lift eigenvector: lambda = lambda_f * m^2 with m = +-i
     # composition: |e e> with e an eigenvector of the C2 lift on the doublet (eigenvalue m) has eigenvalue lambda_f m^2
     pair = [complex(lf * m * m) for lf in lam.values() for eig in mc['c2_eigs'] for m in eig]
-    ck.check('composition: for all 18 C2 lifts and both eigenvectors, the doublet pair eigenvalue lambda_f m^2 is +1, so eta(C2, C2) = -1 for every C2 (w2 on O)',
+    ck.check('composition: for all 18 C2 lifts and both eigenvectors, the doublet pair eigenvalue lambda_f m^2 is +1, so the doublet pair shows the w2 sign pattern in the D = W = +1 sector (inherited from the matter spinor, not fractional)',
              all(np.isclose(x, 1) for x in pair))
     print('per_element: L = 6 code; 48 elements of 2O; one axis and one edge C2 for the link pair test')
     print('per_site: five qubits per site (six link and four matter Majoranas)')

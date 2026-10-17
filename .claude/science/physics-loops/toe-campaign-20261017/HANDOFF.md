@@ -31,17 +31,19 @@ adopted; every result is unaudited bounded support with a declared model.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
 
-## Headline (C15): an electron-like emergent fermion
+## Headline (C15, rescoped after its independent check)
 
-The construction:
-- add two matter modes per site (spin up and spin down) that share the C12 code's Z2 gauge field;
-- let rotations act on that pair as a spin-1/2 doublet.
-
-The result is a single emergent fermion that comes as a doublet and is spin-1/2 under all 24 cube
-rotations, over a symmetric vacuum. It uses five qubits per site.
-
-What the framework would need, in plain words: each site carries a pair of fermion modes that rotate like
-the two spin states of an electron.
+- **What was built.** Two matter modes per site (spin up and spin down) share one Z2 gauge field, and
+  rotations act on the pair as a spin-1/2 doublet. This gives a fermion doublet that rotates like spin
+  1/2 under all 24 cube rotations.
+- **Why it is not emergent spin.** The check showed this spin is inherited from the spinor matter put in
+  by hand. With that action, even trivial local excitations can be spinorial, so it is not fractional.
+- **What was learned.** A genuinely emergent electron spin needs two things at once:
+  - a fermion doublet;
+  - a rotation action under which every local excitation has ordinary, integer-type behaviour.
+- **Status.** Not achieved; the sharpest open target.
+- **The closest thing so far.** BKSF fermions under pure relabelling (C8). Those classes are genuine,
+  but not on the full rotation group.
 
 ## Realization dictionary: the emergent fermion's half-turn signs
 

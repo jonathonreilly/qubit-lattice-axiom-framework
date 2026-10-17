@@ -1,13 +1,13 @@
 ---
 claim_id: spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_carries_spin_half_class_on_all_cubic_rotations_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: five qubits per site of Z^3 carrying ten Majoranas (Jordan-Wigner inside the site): six link Majoranas b_d, one per direction, and four matter Majoranas forming two complex modes c_up, c_dn. Commuting Pauli stabilizers D_v (total parity at v), W_p (product of u_e = b_{v,+a} b_{v+e_a,-a} around p), P_up,v and P_dn,v (matter-mode parities); H = -K sum D - J sum W - mu sum (P_up + P_dn) with K > mu > 0. Exact (L = 6): a commuting group with no -1 and log2 code dimension 3; a single matter Majorana flips exactly D_v and P_up,v, and no operator in a radius-2 ball flips P_up,v alone, so the matter excitation is the nontrivial gauge charge; up and down at a site are related by a local operator (one anyon type with two states, degenerate in H); the gauge-dressed matter hops create only the end charges and give Levin-Wen T-junction sign -1 on all 20 triples (a fermion). Rotation action: the link sector as in the Majorana-per-direction note (site permutation plus on-site signed Majorana permutation, a consistent action of O up to fermion parity); on the matter pair the spin rotation U(u) = exp(-i theta n.S), S = c^dag sigma c / 2, for the 48 lifts u in 2O, verified exactly to be a representation with U(-1) equal to the matter parity (a stabilizer), preserving n_up + n_dn and the matter parity, with c_s^dag transforming as the spin-1/2 doublet. With the link sector's clean pair eigenvalue lambda_f = -1 (axis and edge C2), a pair of doublets in a common eigenvector of a C2 lift has eigenvalue lambda_f m^2 = +1 (m = +-i), so eta(C2, C2) = -1 for both C2 classes: the doublet carries the spin-1/2 class w2 on all of O, over a vacuum (no matter, link stabilizer state) that is invariant under the action. Not claimed: a framework derivation of the matter content or of the spin action (the matter pair transforms as 1/2 + 0 + 0, not as two soldered qubits), dynamics beyond the commuting H, gap stability, or any physical identification."
+claim_scope: "Supplied model: five qubits per site of Z^3 carrying ten Majoranas (Jordan-Wigner inside the site): six link Majoranas b_d, one per direction, and four matter Majoranas forming two complex modes c_up, c_dn. Commuting Pauli stabilizers D_v (total parity at v), W_p (product of u_e = b_{v,+a} b_{v+e_a,-a} around p), P_up,v and P_dn,v (matter-mode parities); H = -K sum D - J sum W - mu sum (P_up + P_dn) with K > mu > 0. Exact (L = 6): a commuting group with no -1 and log2 code dimension 3; a single matter Majorana flips exactly D_v and P_up,v, and no operator in a radius-2 ball flips P_up,v alone, so the matter excitation is the nontrivial gauge charge; up and down at a site are related by a local operator (one anyon type with two states, degenerate in H); the gauge-dressed matter hops create only the end charges and give Levin-Wen T-junction sign -1 on all 20 triples (a fermion). Rotation action: the link sector as in the Majorana-per-direction note (site permutation plus on-site signed Majorana permutation, a consistent action of O up to fermion parity); on the matter pair the spin rotation U(u) = exp(-i theta n.S), S = c^dag sigma c / 2, for the 48 lifts u in 2O, verified exactly to be a representation with U(-1) equal to the matter parity (a stabilizer), preserving n_up + n_dn and the matter parity, with c_s^dag transforming as the spin-1/2 doublet. With the link sector's clean pair eigenvalue lambda_f = -1 (axis and edge C2), a pair of doublets in a common eigenvector of a C2 lift has eigenvalue lambda_f m^2 = +1 (m = +-i), so the doublet pair has the w2 sign pattern (-1 for both C2 classes) in the sector D = W = +1, over an invariant vacuum (no matter, link stabilizer state; topologically degenerate on the torus). The action is a representation of 2O, not of O: U(-1) is the global matter parity, so purely local excitations (for example a matter fermion bound to a link Majorana) are spinorial, and the pair sign is not an anyon invariant; the doublet's spin-1/2 is inherited from the local matter spinor, not fractionalized. Not claimed: fractional spin-1/2 under a genuine O action, a framework derivation of the matter content or of the spin action (the matter pair transforms as 1/2 + 0 + 0, not as two soldered qubits), dynamics beyond the commuting H, gap stability, or any physical identification."
 upstream_dependencies:
   - majorana_per_direction_cubic_fermion_code_has_one_species_covariant_under_all_cubic_rotations_bounded_theorem_note_2026-10-17
 runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py
 ---
 
-# A spinful Majorana-per-direction cubic code has an emergent fermion doublet with the spin-1/2 class on all cube rotations
+# A spinful Majorana-per-direction cubic code: an emergent fermion doublet that rotates as spin-1/2 (inherited, not fractional)
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
@@ -47,9 +47,12 @@ symmetric vacuum, whose emergent fermion is such a doublet?
    - The gauge-dressed hops c_up(v) u_e c_up(w) create only the two end
      charges. Their Levin–Wen T-junction sign is -1 on all 20 triples: a
      fermion.
-   - With H = -K sum D - J sum W - mu sum (P_up + P_dn) and K > mu > 0,
-     the cheapest charged excitations are the degenerate pair (up, down),
-     at energy 2 mu. The bare gauge charge costs 2K.
+   - With H = -K sum D - J sum W - mu sum (P_up + P_dn), the cheapest
+     charged excitations are the degenerate pair (up, down), at energy
+     2 mu, provided mu < K and mu < 4J.
+     - The bare gauge charge costs 2K.
+     - The four-plaquette flux loop around one edge is also a charged
+       excitation, costing 8J. The independent check found this condition.
 3. **The rotation action.**
    - The link sector is acted on as in the Majorana-per-direction note:
      site permutation plus an on-site signed Majorana permutation, a
@@ -66,7 +69,7 @@ symmetric vacuum, whose emergent fermion is such a doublet?
      - all 18 C2 lifts square to -1 on the doublet.
    - The matter vacuum (no matter fermion) is a spin singlet. So the vacuum
      is invariant, and the Hamiltonian is invariant term by term.
-4. **The class: spin-1/2 on all of O (exact composition).**
+4. **The pair sign (exact, in the sector D = W = +1).**
    - In the link sector, the companion note's clean pair test under its
      consistent action gives lambda_f = -1 for an axis C2 and an edge C2.
      The runner recomputes this at L = 8.
@@ -78,37 +81,68 @@ symmetric vacuum, whose emergent fermion is such a doublet?
      - So the pair eigenvalue is lambda_f m^2 = +1.
      - The runner evaluates this for all 18 C2 lifts and both
        eigenvectors.
-   - **The class.** With exchange sign -1, eta(C2, C2) = -1 for every C2 of
-     O. H^2(O; Z2) is detected by the axis and edge C2 classes, so the
-     doublet carries w2, the spin-1/2 class, on the full cube group.
-   - **Consistency with the companion no-go.** A doublet can carry the
-     quaternion class on the axis D2, since Q8 acts on two dimensions. So
-     this does not contradict the single-state no-go.
+   - **The sign.** With exchange sign -1, the doublet pair shows
+     eta(C2, C2) = -1 for every C2 of O, the sign pattern of w2.
+   - **Direct confirmation.** The independent check confirmed this in the
+     full 5-qubit model, under the complete action (link Clifford, exact
+     matter rotation, site permutation): +1 for all 18 lifts at L = 6 and
+     L = 8.
+5. **Why this is not fractional spin (from the independent check).**
+   - The combined action is a representation of a double cover of O, not
+     of O. U(-1) is the global matter parity, which is -1 on purely local
+     states, for example c^dagger(x) b_{x,+x}|vac>.
+   - So local, trivial-sector excitations already carry projective,
+     spinorial representations. In the independent check, local clusters
+     realize every sign pattern on (axis C2, edge C2).
+   - The same charge anyon then shows all four pair-sign patterns,
+     depending on which local cluster accompanies it. The pattern is not
+     an invariant of the anyon.
+   - A fractionalization class is defined only when local excitations
+     carry ordinary representations (Essin and Hermele). This action does
+     not meet that condition.
+   - **Conclusion.** The doublet rotates as spin 1/2 because its matter
+     content does, by construction. The spin is inherited, not
+     fractionalized.
+   - The companion Majorana-per-direction note's consistent actions are
+     also double covers (order 48, containing -1). Its "clean creators
+     only" rule is the same sector restriction, and the same caveat
+     applies there.
 
 ## How this bears on the lane (interpretation, not a claim)
 
-- **An electron-like emergent fermion.** It is a Z2-charged fermion that
-  comes as a spin-1/2 doublet, transforms with the spin-1/2 class under all
-  24 cube rotations, moves by nearest-neighbour hops, and sits over a
-  symmetric, unique vacuum.
-- **The price is matter content and a spin action.**
-  - Each site carries one matter mode per spin state, coupled to a single
-    shared Z2 gauge field.
-  - Rotations act on that pair as a spin-1/2 doublet, the representation
-    1/2 + 0 + 0 on the two matter qubits. This is not two independently
-    soldered qubits, whose representation would be 1/2 x 1/2 = 0 + 1.
-  - So a framework that wants an emergent electron must contain, or
-    derive, a site degree of freedom that rotates this way.
-- **The spin-charge link.** The full 2pi rotation acts as the matter
-  parity, a stabilizer that is +1 on the vacuum and -1 on one matter
-  fermion. Rotation by 2pi equals fermion parity on the doublet, the
-  lattice form of spin-statistics for this particle.
-- **The chain of results.**
-  - Star-supported rules give no fermion.
-  - Plaquette rules give fermions, whose spin depends on the rotation
-    action.
-  - A single-state fermion can never be cube-spin-1/2.
-  - A matter doublet coupled to one gauge field gives it.
+- **A realizability statement, not an emergence statement.** A
+  cube-covariant, site-local code can host a fermion doublet that rotates
+  as spin 1/2. It does so only if the sites carry spinor matter, a pair of
+  modes rotating as 1/2 + 0 + 0. The spin then comes from that input.
+- **Spin-statistics fails across the whole model.** It has spinless
+  fermions (the bare charge at 2K and the flux loop at 8J), and local
+  bosons with rotation by 2pi acting as -1 (c^dagger b). So "electron-like"
+  applies only to the lowest charged sector, not to the model.
+- **The real target, sharpened.**
+  - Find a bosonic lattice code with a genuine O action, under which local
+    excitations carry ordinary representations, whose fermionic anyon
+    nevertheless carries the fractional class w2.
+  - It must be a doublet, by the single-state no-go.
+  - Under bare permutations the BKSF fermions already carry w2 on their
+    stabilizers (C8, a genuine action). But no BKSF code has the full O.
+  - Combining a doublet with a genuine full-O action is open.
+
+## Independent check
+
+A fresh-context agent (same model family) wrote its own code without first
+reading the runner.
+- **Items 1–3: confirmed.**
+- **The composition, directly.** It checked the composition in the full
+  model: +1 for all 18 lifts, every pair state a true eigenstate.
+- **Why the result is rescoped.** It showed that:
+  - the action is a 2O representation;
+  - local excitations are spinorial;
+  - the pair sign therefore depends on the representative.
+- **Other corrections.** It added the condition mu < 4J, the
+  torus-degeneracy wording, the Clifford wording, the prior-art
+  corrections and the missing prior art.
+
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/`.
 
 ## Premises
 
@@ -119,26 +153,33 @@ symmetric vacuum, whose emergent fermion is such a doublet?
   enlargement.
 - **Declared choices.**
   - The link action of the companion note.
-  - The spin-1/2 action on the matter pair, which is a non-Clifford
-    on-site unitary for the C3 elements.
+  - The spin-1/2 action on the matter pair. It is a non-Clifford on-site
+    unitary for every element outside Q8.
 
 ## Relation to prior work
 
 - Majorana-fermion constructions with spinful matter coupled to a Z2 gauge
   field are known:
-  - the SU(2)-invariant exactly solvable spin model of Yao, Zhang and
-    Kivelson, PRL 102, 217202 (2009);
   - "orthogonal metals" of Nandkishore, Metlitski and Senthil, PRB 86,
-    045128 (2012);
-  - the Γ-matrix models of Wu, Arovas and Hung, PRB 79, 134427 (2009).
+    045128 (2012), which is very close;
+  - the SU(2)-symmetric exactly solvable model of Yao and Lee,
+    arXiv:1010.3724;
+  - the Γ-matrix models of Wu, Arovas and Hung, PRB 79, 134427 (2009),
+    and of Yao, Zhang and Kivelson, PRL 102, 217202 (2009);
+  - Monte Carlo studies of fermions coupled to Z2 gauge fields, by Gazit
+    and coauthors;
+  - 3D exact bosonization: Chen and Kapustin, PRB 100, 245127 (2019).
+- Why fractionalization classes need local excitations to carry ordinary
+  representations: Essin and Hermele, PRB 87, 104406 (2013).
 - Generalized superfast encoding: Setia, Bravyi, Mezzacapo and Whitfield,
   PRR 1, 033033 (2019).
 - **New here.**
   - The exact checks in a site-local cubic code.
   - The cube-covariance accounting.
-  - The class computation, which yields w2 on all of O.
-  - The placement of this construction as the minimal escape from the
-    single-state no-go.
+  - The exact pair-sign computation.
+  - The diagnosis that, under the needed 2O action, the sign is inherited
+    rather than fractional.
+  - The sharpened target that follows.
 
 ## No-Go Discipline Gate
 
@@ -154,8 +195,9 @@ symmetric vacuum, whose emergent fermion is such a doublet?
     note).
   - The composition step uses factorization of the matter and link
     actions and site-local commutation of matter operators.
-- **N5 — wording.** "Spin-1/2 class" means eta = w2 on O for the stated
-  action. The doublet's two states are exactly degenerate in the stated H.
+- **N5 — wording.** "Rotates as spin-1/2" means the doublet pair shows the
+  w2 sign pattern in the sector D = W = +1. It is not a fractionalization
+  class. The doublet's two states are exactly degenerate in the stated H.
 - **N6/N7 — strongest objection.** The spin action on the matter pair is
   put in by hand, as is the matter content. The note claims realizability,
   not derivation.

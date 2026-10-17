@@ -1,0 +1,24 @@
+L=4: gens=384 anticommuting pairs=0 relations=67 relations with -1=0 rank=317 log2dim=3
+L=6: gens=1296 anticommuting pairs=0 relations=219 relations with -1=0 rank=1077 log2dim=3
+L=3: anticommuting pairs=0 relations with -1=0 log2dim=2
+syndrome chi6(v): [('D', 86), ('Pu', 86)]
+syndrome chi8(v): [('D', 86), ('Pd', 86)]
+syndrome b_{v,+x}: [('D', 86), ('W', 240), ('W', 257), ('W', 258), ('W', 260)]
+  locally creatable in radius-2 ball: P_up(v) alone                    False
+  locally creatable in radius-2 ball: D(v) alone                       False
+  locally creatable in radius-2 ball: P_up(v)+P_dn(v)                  True
+  locally creatable in radius-2 ball: P_up(v)+D(v)                     True
+  locally creatable in radius-2 ball: 4 W around edge (v,+x) alone     False
+  locally creatable in radius-2 ball: 4 W around edge + D(v)           True
+  locally creatable in radius-2 ball: 4 W around edge + P_up(v)        True
+syndrome chi6 chi8 (up<->dn converter piece): [('Pu', 86), ('Pd', 86)]
+hop along (1, 0, 0) syndrome: [('Pu', 86), ('Pu', 122)]
+hop along (0, 1, 0) syndrome: [('Pu', 86), ('Pu', 92)]
+hop along (0, 0, 1) syndrome: [('Pu', 86), ('Pu', 87)]
+T-junction phases over 20 triples: [(-1+0j)] count 20
+
+Energetics of charged-sector representatives (H = -K D - J W - mu (P_up+P_dn)):
+  P_up flip (matter doublet member): 2 mu
+  D flip (bare gauge charge):        2 K
+  4-plaquette flux loop (charged, see above): 8 J
+  => lowest charged excitation is the doublet iff mu < K and mu < 4 J

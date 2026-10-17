@@ -118,7 +118,21 @@ permutation?
          about different centres can differ.
        - The group theory was checked independently by explicit SU(2)
          computation (loop pack, c8 independent_check/grouptheory).
-6. **Caution, from the exploration.** An earlier solver let S also
+6. **Caveat: the class depends on the representative.** Found by the
+   independent check of the spinful companion note.
+   - The consistent actions of item 3 are double covers: order 48, with -1
+     the global Majorana-parity flip.
+   - Local, trivial-sector excitations such as "fermion plus elementary
+     flux" therefore carry -1 under the lift of the identity.
+   - So the pair sign is not an invariant of the anyon. The value of
+     item 4 is the value for clean creators, i.e. in the sector with no
+     extra local excitations.
+   - A genuine fractionalization class needs an action under which local
+     excitations carry ordinary representations, for example the genuine
+     order-24 actions found for the half-edge BKSF codes (site-local
+     realization note). For those, the clean pair test also gives the
+     trivial class.
+7. **Caution, from the exploration.** An earlier solver let S also
    create excitations next to the endpoints. It gave λ = +1 for the axis
    C2.
    - Here a single Majorana flips B_x together with four plaquettes. So

@@ -1,0 +1,17 @@
+L=8 rank=2557 log2dim=3
+consistent link groups (order 48): 128
+C2 elements: 9 {'axis': 3, 'edge': 6}
+(a) link pair lambda_f in 5-qubit model, all groups/lifts/positions: {('lambda_f', 'axis'): {(-1+0j)}, ('lambda_f', 'edge'): {(-1+0j)}}
+  group 0 done
+  group 1 done
+pair states that were NOT eigenstates: 0
+(b-d) ('doublet', 'axis') [(1+0j)]
+(b-d) ('doublet', 'edge') [(1+0j)]
+(b-d) ('doublet(alt order)', 'axis') [(1+0j)]
+(b-d) ('doublet(alt order)', 'edge') [(1+0j)]
+(b-d) ('local b pair', 'axis') [(1+0j)]
+(b-d) ('local b pair', 'edge') [(-1+0j)]
+(b-d) ('local c^dag b pair', 'axis') [(-1+0j)]
+(b-d) ('local c^dag b pair', 'edge') [(1+0j)]
+(b-d) ('m^2', 'axis') [(-1+0j)]
+(b-d) ('m^2', 'edge') [(-1-0j)]

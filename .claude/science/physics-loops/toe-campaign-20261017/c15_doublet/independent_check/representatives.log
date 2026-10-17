@@ -1,0 +1,10 @@
+charge pair: bare S_f                 [D flips]: axis [(-1+0j)]  edge [(-1+0j)]
+charge pair: doublet c c S_f           [P flips]: axis [(1+0j)]  edge [(1+0j)]
+charge pair: flux-loop b b S_f         [4W loops]: axis [(-1+0j)]  edge [(1+0j)]
+charge pair: doublet+flux c c b b S_f  [P + 4W]: axis [(1+0j)]  edge [(-1+0j)]
+LOCAL: c_e^dag(x) c_e^dag(Rx)          [D+P, trivial sector]: axis [(-1+0j)]  edge [(-1+0j)]
+LOCAL: b b                              [D+4W, trivial sector]: axis [(1+0j)]  edge [(-1+0j)]
+LOCAL: (c^dag b)(c^dag b)               [P+4W, D=+1, trivial sector]: axis [(-1+0j)]  edge [(1+0j)]
+V(-1) eigenvalue on c_up^dag(x)|vac>  (local; D+P flipped) : (-1+0j)
+V(-1) eigenvalue on c_up^dag(x) b_{x,+x}|vac> (local; D=+1 everywhere, P_up + 4W) : (-1+0j)
+V(-1) eigenvalue on doublet pair c c S_f |vac> : (1+0j)

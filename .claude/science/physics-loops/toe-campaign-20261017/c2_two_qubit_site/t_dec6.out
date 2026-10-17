@@ -1,0 +1,15 @@
+generators: 1, relations (syzygies): 0
+charge module presentation computed; F2-dimension of C (vdim; -1 = infinite):
+-1
+
+support of Ext^3 off coordinate planes nonempty (3D-mobile charge exists)?
+1
+Ann(Ext^3) saturated:
+z2+1,
+y2+1,
+x2+1
+minimal primes of Ann(C):
+[1]:
+   _[1]=z+1
+   _[2]=y+1
+   _[3]=x+1

@@ -1,15 +1,22 @@
-# Opportunity queue (ranked)
+# Opportunity queue (ranked; updated 2026-10-17 after C12)
 
-1. **C5 — low-symmetry generators.**
-   - The known 3D emergent-fermion models need framings or a spin
-     structure. Test whether a framed, fermionic-charge model can be made
-     covariant under the site-centred cubic group, soldered or not, for
-     example by averaging a framing over O or adding ancilla qubits.
-   - Alternatively, prove an obstruction: no O-invariant framing exists.
-2. **C7 — generations.** The soldered 3-orbit fracton rules have three axis
-   foliations cycled by C3. Count their lineon or planon species against the
-   C3 labels.
-3. **Multi-site charge patterns and non-maximal bounded rules** in the C4
-   classes, to close the remaining gaps.
-4. **Spin x axis-triplet sites:** one soldered spin qubit plus axis qubits.
-5. **Non-Pauli commuting projectors** on one qubit per site.
+Done in this campaign: C1–C4 (star-supported no-gos), C6 (BKSF orbits, four-species minimum for bare
+permutations), C8/C10 (bare-permutation spin-1/2 class), C11 (site-local half-edge realization) and C12
+(one O-covariant species with on-site Cliffords; spinless under U_R, w2 under U_R W).
+
+1. **Which realization does the dynamics select?**
+   - The spin class is a property of the rotation's action on excited states. The on-site phase
+     W = prod exp(-i pi B/4) toggles eta by w2 and is invisible in the ground space.
+   - Determine which realization is a symmetry of natural hopping Hamiltonians (Majorana vs
+     number-conserving) in both families.
+   - Determine whether a U(1) charge with a spin-charge relation (Spin^c-like) forces the w2 choice.
+     This is the sharpest route to an electron-like spin-1/2 prediction.
+2. **Settle the 36 dressed BKSF pairs.** Find R-invariant flux conventions with clean hops, or prove that
+   the dressing cannot link the string. This decides the order-4 codes' D2 class (C8).
+3. **O-covariant condensation of the four-copy BKSF stack under bare permutations (C7/C9).** Both
+   routes tried fail, either through a nonlocal commutant or through noncommuting quads. A no-go, or a
+   construction with on-site Cliffords, would close the species question for bare actions.
+4. **Low-energy theory of the O-symmetric pi-flux sector.** In the C12 code: Dirac nodes, and how U_R and
+   U_R W act on the low-energy spinors (spin times taste).
+5. **Star-supported gaps (C4).** Multi-site charge patterns and non-maximal bounded rules; non-Pauli
+   commuting projectors on one qubit per site.

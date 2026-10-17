@@ -76,7 +76,9 @@ adopted; every result is unaudited bounded support with a declared model.
   - Test: put two fermions at points swapped by a half-turn. The plain
     permutation gives this pair eigenvalue +1. For fermions that means a
     half-turn done twice acts as fermion parity, the spin-1/2 behaviour.
-    This holds for every case the test covers (72 of 108).
+    This holds for all 108 (code, half-turn) cases. For every code the full
+    sign pattern under its rotation symmetry is exactly that of a spin-1/2
+    particle.
   - An independent check refuted the first version of this note, which had
     the opposite sign; the note is corrected.
   - The answer depends on how the rotation acts. Moving the qubits gives
@@ -90,7 +92,7 @@ adopted; every result is unaudited bounded support with a declared model.
 
 | Block | Note | Runner | Headline |
 |---|---|---|---|
-| C8 | `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py` (PASS=7) | Zero- and pi-flux sectors are rotation-symmetric with bare-permutation action; swapped-pair test gives eta_f(C2,C2) = -1 (spinorial) under the bare permutation; realization-dependent. |
+| C8 | `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py` (PASS=9) | Zero- and pi-flux sectors are rotation-symmetric with bare-permutation action; swapped-pair test gives eta_f(C2,C2) = -1 for all 108 (code, C2) pairs under the bare permutation: the spin-1/2 class w2 on every code's rotation stabilizer; realization-dependent. |
 | C6 | `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py` (PASS=8) | 60 translation-invariant BKSF codes, all with a fermionic charge; none rotation-invariant; minimal orbit 4 (D3, body diagonals). |
 | C4 | `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py` (PASS=8) | No coherently 3D-mobile fermion in symmetric three-axis-qubit rules: soldered gives no coherent motion; unsoldered gives bosons only. Alphabet lemma unifies the obstructions. |
 | C3 | `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py` (PASS=10 with Singular) | Unsoldered: interleaved toric codes, coherent 3D-mobile bosons. Soldered (C4/C3-fixed): no maximal rule with bounded code dimension and 3D-mobile charge. |

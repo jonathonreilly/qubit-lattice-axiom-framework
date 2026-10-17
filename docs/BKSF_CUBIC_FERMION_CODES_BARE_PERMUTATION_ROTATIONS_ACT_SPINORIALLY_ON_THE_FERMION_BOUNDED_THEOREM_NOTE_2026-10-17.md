@@ -1,18 +1,19 @@
 ---
 claim_id: bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact on the L = 4 torus (Pauli algebra with phases): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is +, respectively -, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact: for 72 of the 108 (code, C2) pairs (all three edge C2 of every D3 code, one edge C2 of each order-4 code, the edge C2 of 24 of the 36 single-C2 codes) there is an ordering whose plaquette span P_R preserves, and in both sectors the state with fermions at x and Rx has P_R-eigenvalue +1 relative to the vacuum for every tested off-axis x (control: +1 for the bosonic toric-code charge). With exchange sign -1 this gives eta_f(C2, C2) = -1 under P_R: the bare permutation acts on the emergent fermion spinorially, C2^2 = (-1)^F. For each D3 code, since H^2(D3; Z2) = Z2 is detected by any C2, the fermion's class under P_R equals the restriction of the spin-1/2 class w2 to D3; for the 24 covered single-C2 codes likewise for their Z2. The realization P_R W with W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) gives +1, so the class belongs to the realization, not to the code alone. Not claimed: the 36 remaining pairs, C3 (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin)."
+claim_scope: "Supplied model: the 60 translation-invariant BKSF stabilizer codes on the cubic lattice (one qubit per edge of Z^3, one ordering of the six edge directions at every vertex) of the companion orbit note, with signed plaquette generators, one sign per plaquette orientation (8 translation-invariant sign sectors). Exact (Pauli algebra with phases, L = 4 torus): all 8 sectors of all 60 codes are valid; in two sectors the hop product of a fixed ordering's edge operators around every plaquette is plus, respectively minus, the signed generator (flux 0 and flux pi; this labels the sectors); every rotation in each code's stabilizer maps the signed group of those two sectors to itself as a bare qubit permutation P_R, while in each of the 6 mixed sectors 44 codes have a stabilizing rotation that needs a sign correction. Pair test, exact (L = 8 torus): for every one of the 108 (code, C2) pairs, in both sectors, a state with fermions at x and Rx (solved so that its excitations are R-symmetric and confined near x and Rx) has P_R-eigenvalue +1 relative to the vacuum (controls: +1 for the toric-code boson; -1 for the toric-code boson in pi flux under a plaquette-centred C2). With exchange sign -1 this gives eta_f(C2, C2) = -1 for every C2 of every code under P_R. Group cohomology then gives, for every code, that the fermion's fractionalization class for its whole rotation stabilizer (D3, D2 or Z2) under P_R equals the restriction of the spin-1/2 class w2 of SO(3). The realization P_R W with W = prod_v exp(-i pi B_v / 4) (a function of the stabilizers, constant on the code space) gives the trivial class instead, so the class belongs to the realization, not to the code alone. Not claimed: C3-only statements (no Z2 class), sign patterns that are not translation-invariant, the mixed sectors, other encodings, dynamics, the continuum limit, or any physical identification (electron, spin).""
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
 runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
 ---
 
-# BKSF cubic fermion codes: bare-permutation rotations act spinorially on the fermion
+# BKSF cubic fermion codes: bare-permutation rotations act spinorially on the fermion (spin-1/2 class)
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
-**Status:** bounded support, unaudited. Exact on the L = 4 torus for the
-stated family; an independent check reproduced it at L = 6. Nothing is
+**Status:** bounded support, unaudited. Exact on the L = 4 and L = 8 tori for the
+stated family; an independent check reproduced items 1-4 at L = 6 and the
+pair test for 72 pairs. Nothing is
 adopted.
 
 ## Question
@@ -51,47 +52,52 @@ for P_R.
      exactly, and the two uniform signed groups do not depend on which
      ordering in the class is used.
 4. **Pair test (exact).** Let R be a C2 in the code's stabilizer and x an
-   off-axis vertex. Let S be the product of a fixed ordering's edge
-   operators along a path from x to Rx.
-   - Then P_R S|vac> = S (S^dagger S^R) P_R|vac>. The product S^dagger S^R
-     is plus or minus an element of the signed group, and lambda is that
-     sign. So lambda is the eigenvalue of P_R on the pair state relative
-     to the vacuum.
-   - This needs an ordering o in the class whose plaquette span is
-     preserved by P_R. Such an ordering exists for 72 of the 108
-     (code, C2) pairs:
-     - all three edge C2 of each D3 code;
-     - one edge C2 of each order-4 code;
-     - the edge C2 of 24 of the 36 single-C2 codes.
-   - For the remaining 36 pairs, P_R maps bare hops to flux-dressed hops
-     for every ordering, and lambda is not determined here.
-   - In all 72 pairs, in both sectors and for every tested x, lambda = +1.
-   - Control: in the untwisted toric code (bosonic charge), lambda = +1.
-5. **Spinorial action (from 4).** For a pair swapped by C2,
-   lambda = theta_f eta_f(C2, C2).
-   - The independent check calibrated this relation: a boson gives +1, a
-     boson in pi background flux gives -1 for axes through perpendicular
-     plaquettes (the Aharonov–Bohm effect), and a scalar fermion with
-     c_v -> c_{Rv} gives -1.
-   - With theta_f = -1 it gives eta_f(C2, C2) = -1 under P_R. So C2^2 acts
-     on the emergent fermion as (-1)^F, the spin-1/2 behaviour.
-   - The independent check also derived this from the Majorana form: P_R
-     maps A_e to plus or minus A_{Re} B_tail B_head (times plaquettes), so
-     the encoded fermion goes as c_v -> -i s_v c_{Rv}.
-   - **For the D3 codes this is exactly the spin-1/2 class (group
-     cohomology).**
-     - H^2(D3; Z2) = Z2, since H_1(D3) = Z2 and H_2(D3) = 0. Its nontrivial
-       class is detected by the square of any C2.
-     - The restriction of the spin-1/2 class w2 of SO(3) to D3 is that
-       nontrivial class: in SU(2), a lift of a pi rotation squares to -1, and
-       the preimage of D3 is the binary dihedral group of order 12.
-     - All three edge C2 of every D3 code give eta_f = -1. So under P_R, the
-       fermion's fractionalization class for the code's whole rotation
-       stabilizer equals w2 restricted to D3: the class of a spin-1/2
-       particle.
-     - For a single-C2 code the same holds for its Z2.
-     - For the order-4 codes (D2 = Z2 x Z2, H^2 = Z2^3) only one edge C2 is
-       covered, so the class is not determined.
+   off-axis vertex.
+   - Solve over GF(2), in a window around x and Rx, for a Pauli S with
+     three properties:
+     - it flips exactly the vertex generators at x and Rx;
+     - it creates no other excitation farther than distance 1 from x or Rx;
+     - S and S^R = P_R S P_R^-1 have the same syndrome.
+   - Then S^dagger S^R is plus or minus an element of the signed group,
+     and lambda is that sign. It is the P_R-eigenvalue of the pair state
+     S|vac> relative to the vacuum.
+   - Results (L = 8 torus, both sectors, two x with |x - Rx| >= 3):
+     lambda = +1 for all 108 (code, C2) pairs, i.e. every edge or axis C2
+     in the stabilizer of every code.
+   - A simpler version, with the hops of an ordering whose plaquette span
+     P_R preserves, covers 72 of the pairs at L = 4 and agrees.
+   - **Controls.** The toric-code boson gives +1. The toric-code boson in
+     pi flux gives -1 under a C2 about a plaquette-centred axis (the
+     Aharonov–Bohm phase) and +1 under the vertex C2. So the test can
+     return -1.
+5. **Spinorial action and the spin-1/2 class.**
+   - **The relation.** For a pair swapped by C2,
+     lambda = theta_f eta_f(C2, C2). The independent check calibrated it:
+     the boson cases above, and a scalar fermion with c_v -> c_{Rv}, which
+     gives -1.
+   - **Every C2 is spinorial.** With theta_f = -1, eta_f(C2, C2) = -1 for
+     every C2 of every code under P_R: C2^2 acts on the emergent fermion as
+     (-1)^F.
+   - **Majorana form.** The independent check also derived this, for 72
+     pairs, from the Majorana form: P_R maps A_e to plus or minus
+     A_{Re} B_tail B_head (times plaquettes), so c_v -> -i s_v c_{Rv}.
+   - **Group cohomology (standard facts).** The class of a central Z2
+     extension is determined by how the lifts of the C2 elements square:
+     - H^2(D3; Z2) = Z2, detected by any C2;
+     - H^2(Z2; Z2) = Z2;
+     - for D2 = Z2 x Z2, H^2 = Z2^3, and the 8 classes correspond
+       one-to-one to the 8 sign patterns of the squares of the three
+       involutions' lifts.
+   - **The spin-1/2 class.** In SU(2) every lift of a pi rotation squares
+     to -1. So the restriction of w2 is:
+     - the nontrivial class on D3 (the binary dihedral group of order 12);
+     - the class with all three squares -1 on the order-4 groups, whose
+       three C2 axes are mutually orthogonal (the quaternion group);
+     - the nontrivial class on Z2.
+   - **Conclusion.** For every one of the 60 codes, the fermion's
+     fractionalization class for the code's whole rotation stabilizer,
+     under P_R, equals the restriction of w2: the class of a spin-1/2
+     particle.
 6. **The class belongs to the realization.**
    - Let W = prod_v exp(-i pi B_v / 4). It is a function of the
      stabilizers, so it is constant on the code space. On a state with
@@ -110,6 +116,8 @@ for P_R.
   the emergent fermion is spinorial. A half-turn applied twice gives the
   fermion parity, as for a spin-1/2 particle. Here the lattice supplies the
   "electron spin" sign without any spin degree of freedom being put in.
+  For every code in the family, the sign pattern is exactly the one a
+  spin-1/2 particle shows under the code's rotation symmetry.
 - **Two caveats.**
   - The dressed realization P_R W gives the scalar answer. Which one is
     physical depends on the dynamics.
@@ -124,8 +132,10 @@ for P_R.
       identity and one edge C2.
     - Even there, P_R maps a hop to a hop times the endpoint vertex terms.
     - A follow-up search (loop pack, c9) finds D3-invariant flux
-      conventions of the form S^o_p times corner vertex terms. Whether they
-      support D3-symmetric clean hops is open.
+      conventions of the form S^o_p times corner vertex terms.
+    - For two of them, local clean hops exist (L = 6), giving a
+      D3-symmetric clean hop system for a D3 code. This is an exploratory
+      result, not part of the claim.
 - **Pi-flux sector.** For complex (number-conserving) hopping with pi flux
   per plaquette, the low-energy theory is the Kogut–Susskind staggered
   fermion: two four-component Dirac tastes. The independent check confirms
@@ -143,8 +153,11 @@ reading the runner. Its verdicts:
   breaks the generators straddling the region's boundary, so it is not a
   valid localization of the symmetry.
 - **The current claim.** Its pair test (with calibrations), its Majorana
-  derivation and the W-dressing result are the basis of items 4–6. This
-  note's runner reproduces the pair test with independent code.
+  derivation and the W-dressing result are the basis of items 4–6.
+  - It covered 72 pairs and left 36 open.
+  - This note's runner reproduces the 72 with independent code.
+  - The runner closes the remaining 36 with the general method of item 4,
+    which does not need a symmetric hop system.
 
 Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/`.
 
@@ -174,23 +187,27 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/i
 - **New here.**
   - The sign-sector and pair-test analysis of the bare-permutation rotation
     action in the cubic BKSF family.
-  - The finding that this action is spinorial, while a stabilizer-function
-    dressing makes it scalar.
+  - The finding that this action is spinorial, with the spin-1/2 class on
+    every code's rotation stabilizer, while a stabilizer-function dressing
+    makes it scalar.
 
 ## No-Go Discipline Gate
 
 - **N1 — routes around the claim.** Not covered:
-  - the 36 pairs with no span-preserving ordering;
   - realizations other than P_R and P_R W;
   - sign patterns that are not translation-invariant;
   - the mixed sectors;
   - other encodings;
   - stacks.
-- **N2/N3 — scope.** One family, two sectors, one Z2 class per covered
-  (code, C2) pair.
-- **N4 — inputs.** Exact Pauli algebra with phases on the L = 4 torus. The
-  pair paths lie within a box of side 2 around the origin, so the loops
-  S^dagger S^R are contractible. The relation lambda = theta_f eta_f is an
+- **N2/N3 — scope.** One family, two sectors. The fractionalization class
+  for each code's rotation stabilizer, computed from all its C2 elements.
+- **N4 — inputs.** Exact Pauli algebra with phases.
+  - The covered-pair test runs on the L = 4 torus, with paths inside a box
+    of side 2.
+  - The general pair test runs on the L = 8 torus, with windows of side at
+    most 7 and x, Rx separated by at least 3.
+  - In both, S^dagger S^R is local and contractible.
+  - The group-cohomology facts used in item 5 are standard. The relation lambda = theta_f eta_f is an
   input, calibrated by the independent check.
 - **N5 — wording.** "Spinorial" means eta_f(C2, C2) = -1 for the stated
   realization. It does not mean an emergent SU(2) spin.
@@ -206,7 +223,7 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/i
 python3 scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py
 ```
 
-Expected: `TOTAL: PASS=7 FAIL=0` (about 1.5 minutes).
+Expected: `TOTAL: PASS=9 FAIL=0` (about 3.5 minutes).
 
 ## Load-bearing sources
 

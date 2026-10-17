@@ -140,10 +140,11 @@ def solve_multi(M, T):
     return W, ok
 
 
-def perm_of(M):
+def perm_of(M, t=(0, 0, 0)):
+    """Qubit permutation induced by the rotation v -> M v + t."""
     perm = np.zeros(N, int)
     for v in itertools.product(range(L), repeat=3):
-        w = tuple(int(x) for x in M @ np.array(v))
+        w = tuple(int(x) + t[i] for i, x in enumerate(M @ np.array(v)))
         for a in range(3):
             d = M @ np.array(E[a])
             b = int(np.nonzero(d)[0][0])
@@ -217,6 +218,86 @@ def pair_eigenvalue(order, G, M, x, twisted=True):
     return None if f is None else (1 if f == 0 else (-1 if f == 2 else 'imaginary'))
 
 
+def _wrap(p):
+    return tuple(((c + L // 2) % L) - L // 2 for c in p)
+
+
+def _support_vertices(P):
+    out = set()
+    for q in np.flatnonzero(P[0] | P[1]):
+        e, a = q // 3, q % 3
+        p = (e // (L * L), (e // L) % L, e % L)
+        out.add(_wrap(p))
+        out.add(_wrap(tuple(p[i] + E[a][i] for i in range(3))))
+    return out
+
+
+def _linf(p, q):
+    return max(abs(p[i] - q[i]) for i in range(3))
+
+
+def general_pair_eigenvalue(G, lab, M, x, t=(0, 0, 0)):
+    """Pair test without a symmetric hop system. Solve (GF(2), window around x and Rx) for S such that:
+    S flips exactly the vertex generators at x and Rx; S creates no other excitation farther than distance 1
+    from x or Rx; S and P_R S P_R^-1 have the same syndrome. Then S^dag S^R is +- an element of the signed
+    group and lambda is that sign (the P_R-eigenvalue of S|vac> relative to the vacuum)."""
+    Rx = tuple(int(c) + t[i] for i, c in enumerate(M @ np.array(x)))
+    lo = tuple(min(x[i], Rx[i]) - 1 for i in range(3))
+    hi = tuple(max(x[i], Rx[i]) + 1 for i in range(3))
+    W = [(p, a) for p in itertools.product(*[range(lo[i], hi[i] + 1) for i in range(3)]) for a in range(3)
+         if all(lo[i] <= p[i] + E[a][i] <= hi[i] for i in range(3))]
+    cols = np.array(sorted({idx(p, a) for p, a in W}))
+    perm = perm_of(M, t)
+    gsup = [_support_vertices(g) for g in G]
+    rows, rhs = [], []
+    for i, g in enumerate(G):
+        if not any(all(lo[k] - 1 <= v[k] <= hi[k] + 1 for k in range(3)) for v in gsup[i]):
+            continue
+        cg = np.concatenate([g[1][cols], g[0][cols]])
+        cgR = np.concatenate([g[1][perm][cols], g[0][perm][cols]])
+        rows.append(cg ^ cgR)
+        rhs.append(0)
+        if lab[i][0] == 'B':
+            rows.append(cg)
+            rhs.append(1 if _wrap(lab[i][1]) in (_wrap(x), _wrap(Rx)) else 0)
+        elif not any(_linf(v, x) <= 1 or _linf(v, Rx) <= 1 for v in gsup[i]):
+            rows.append(cg)
+            rhs.append(0)
+    A = np.concatenate([np.array(rows, np.uint8), np.array(rhs, np.uint8)[:, None]], 1)
+    m, n = len(rows), 2 * len(cols)
+    piv, r = [], 0
+    for c in range(n):
+        nz = np.flatnonzero(A[r:, c])
+        if nz.size == 0:
+            continue
+        pr = r + nz[0]
+        A[[r, pr]] = A[[pr, r]]
+        rr = np.flatnonzero(A[:, c])
+        rr = rr[rr != r]
+        A[rr] ^= A[r]
+        piv.append(c)
+        r += 1
+        if r == m:
+            break
+    if A[r:, -1].any():
+        return 'no S'
+    sol = np.zeros(n, np.uint8)
+    for i, c in enumerate(piv):
+        sol[c] = A[i, -1]
+    Sx = np.zeros(N, np.uint8)
+    Sz = np.zeros(N, np.uint8)
+    Sx[cols] = sol[:len(cols)]
+    Sz[cols] = sol[len(cols):]
+    S = [Sx, Sz, int(Sx.astype(int) @ Sz.astype(int)) % 4]
+    T = mulp(dag(S), apply_perm(S, perm))
+    tv = _support_vertices(T)
+    if not tv:
+        return {0: 1, 2: -1}.get(T[2] % 4, 'imaginary')
+    loc = [G[i] for i, sv in enumerate(gsup) if sv and all(min(_linf(v, u) for u in tv) <= 2 for v in sv)]
+    f = phase_in_group(loc, T)
+    return None if f is None else {0: 1, 2: -1}.get(f, 'imaginary')
+
+
 def plaquette_flux(order, G, lab):
     """Phase i^f with hop product around the plaquette at v = (1,1,1) equal to i^f times the signed S_p."""
     v = (1, 1, 1)
@@ -235,6 +316,7 @@ def plaquette_flux(order, G, lab):
 
 
 def main() -> int:
+    global L, N
     ck = c1.Checks()
     orders = list(itertools.permutations(range(6)))
     H = {o: bk.span_hash(bk.torus_rows(bk.gens(o), 4)) for o in orders}
@@ -304,6 +386,46 @@ def main() -> int:
                   if tuple(int(c) for c in M @ np.array(x)) != x)
     print('control (toric code boson) pair eigenvalues:', dict(ctl))
     ck.check('control: in the untwisted toric code (bosonic charge) the swapped pair has lambda = +1 for every edge C2', ctl == Counter({1: sum(ctl.values())}))
+
+
+    # General pair test on the L = 8 torus for all 108 (code, C2) pairs (no symmetric hop system needed).
+    L, N = 8, 3 * 8 ** 3
+    lam8 = Counter()
+    for h, ords in classes.items():
+        o = ords[0]
+        stab = [M for M in c1.O if H[bk.rot_order(M, o)] == h]
+        c2s = [M for M in stab if bk.kind(M) in ('C2edge', 'C2axis')]
+        for s_ in ((0, 0, 0), (1, 1, 1)):
+            G, lab = gens(o, s_)
+            for M in c2s:
+                cand = [x for x in itertools.product(range(-2, 3), repeat=3)
+                        if _linf(x, tuple(int(c) for c in M @ np.array(x))) >= 3][:2]
+                for x in cand:
+                    lam8[(24 // len(stab), bk.kind(M), s_, general_pair_eigenvalue(G, lab, M, x))] += 1
+    print('general pair test, L = 8 (orbit size, rotation, sector, lambda): count', dict(lam8))
+    n_pairs = sum(1 for h, ords in classes.items() for M in c1.O
+                  if H[bk.rot_order(M, ords[0])] == h and bk.kind(M) in ('C2edge', 'C2axis'))
+    ck.check('general pair test (L = 8): all 108 (code, C2) pairs, both sectors, two separated x each: lambda = +1, so eta_f(C2, C2) = -1 for every C2 of every code',
+             n_pairs == 108 and set(k[3] for k in lam8) == {1} and sum(lam8.values()) == 108 * 2 * 2)
+    # control that can give -1: toric code (bosonic charge) with pi flux, C2 about a z-axis through plaquette centres
+    Mz = np.diag([-1, -1, 1])
+    ctl8 = {}
+    for flux in (0, 1):
+        tor, tl = [], []
+        for v in itertools.product(range(L), repeat=3):
+            tor.append(from_op(bk.B(v)))
+            tl.append(('B', v, None))
+            for c in range(3):
+                P = from_op(bk.plaq(v, c, orders[0], twisted=False))
+                P[2] = (P[2] + 2 * flux) % 4
+                tor.append(P)
+                tl.append(('S', v, c))
+        ctl8[flux] = (general_pair_eigenvalue(tor, tl, Mz, (2, 0, 0), (1, 1, 0)),
+                      general_pair_eigenvalue(tor, tl, Mz, (2, 0, 0)))
+    print('control: toric code, lambda for (plaquette-centred C2z, vertex C2z) at flux 0 and pi:', ctl8)
+    ck.check('control: toric code boson has lambda = +1 at flux 0; with pi flux, lambda = -1 for the plaquette-centred C2 (Aharonov-Bohm) and +1 for the vertex C2',
+             ctl8 == {0: (1, 1), 1: (-1, 1)})
+    L, N = 4, 3 * 4 ** 3
 
     print('per_element: all 60 codes, all 8 translation-invariant sign sectors, every stabilizing rotation')
     print('per_site: one qubit per edge; exact Pauli algebra with phases on the L = 4 torus')

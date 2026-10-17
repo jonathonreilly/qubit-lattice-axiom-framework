@@ -1,7 +1,7 @@
 ---
 claim_id: bksf_cubic_fermion_codes_site_local_realization_with_six_direction_qubits_per_site_bounded_theorem_note_2026-10-17
 claim_type: bounded_theorem
-claim_scope: "Supplied model: six qubits per site of Z^3, one per direction (half-edges); for an ordering of the six directions (the same at every site), generators B_v = Z on site v's six qubits, R_(v,a) = Z_(v,+a) Z_(v+e_a,-a), and plaquettes S_p = product of the four nearest-neighbour operators A_(v,a) = X_(v,+a) X_(v+e_a,-a) times Z on v's qubits ordered before +a times Z on (v+e_a)'s qubits ordered before -a. Exact: on the R code space this is the edge BKSF code of the companion notes (each edge carries one logical qubit, X = X X, Z = Z on either half), and the framework site rotation (permute sites and permute each site's six qubits as directions, Pauli labels unchanged) maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering, and B and R to B and R. So the encoding intertwines the site action with the edge action. Checked (L = 4, all 60 codes; L = 6, one per orbit type): commuting, log2 code dimension 3, and the stabilizer of every code in O under the site action equals its stabilizer under the edge action (orbits 4, 6, 12). Consequently the statements of the BKSF orbit note and the bare-permutation note (fermionic charge, minimal orbit four, the spin-1/2 class under bare rotations) hold verbatim for this site-local model with the bare site action. Not claimed: other site-local encodings, star-supported generators (the plaquette generators span four sites), dynamics, or any physical identification."
+claim_scope: "Supplied model: six qubits per site of Z^3, one per direction (half-edges); for an ordering of the six directions (the same at every site), generators B_v = Z on site v's six qubits, R_(v,a) = Z_(v,+a) Z_(v+e_a,-a), and plaquettes S_p = product of the four nearest-neighbour operators A_(v,a) = X_(v,+a) X_(v+e_a,-a) times Z on v's qubits ordered before +a times Z on (v+e_a)'s qubits ordered before -a. Exact: on the R code space this is the edge BKSF code of the companion notes (each edge carries one logical qubit, X = X X, Z = Z on either half), and the framework site rotation (permute sites and permute each site's six qubits as directions, Pauli labels unchanged) maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering, and B and R to B and R. So the encoding intertwines the site action with the edge action. Checked (L = 4, all 60 codes; L = 6, one per orbit type): commuting, log2 code dimension 3, and the stabilizer of every code in O under the site action equals its stabilizer under the edge action (orbits 4, 6, 12). On-site Cliffords (checked for one code of each orbit type, both uniform sign sectors, L = 4): writing each site's six qubits in the code's own Jordan-Wigner order gives twelve local Majoranas mu_d = X_d Z_<d, nu_d = Y_d Z_<d with A_(v,a) = mu_{v,+a} mu_{v+e_a,-a} and Z_d = -i mu_d nu_d; a site rotation composed with an on-site signed permutation of these Majoranas maps the signed group to itself for every one of the 24 rotations, so with on-site Clifford actions each code is O-invariant and the minimal orbit four is a statement about the bare site action only. Consequently the statements of the BKSF orbit note and the bare-permutation note (fermionic charge, minimal orbit four, the spin-1/2 class under bare rotations) hold verbatim for this site-local model with the bare site action. Not claimed: other site-local encodings, star-supported generators (the plaquette generators span four sites), dynamics, or any physical identification."
 upstream_dependencies:
   - bksf_cubic_fermion_codes_are_not_rotation_invariant_minimal_orbit_four_bounded_theorem_note_2026-10-17
   - bksf_cubic_fermion_codes_bare_permutation_rotations_act_spinorially_on_the_fermion_bounded_theorem_note_2026-10-17
@@ -50,7 +50,21 @@ site rotation reproduces the edge rotation exactly?
    - each code's stabilizer in O under the site action equals its
      stabilizer under the edge action;
    - orbit sizes 4, 6 and 12.
-4. **Transfer.** The encoding is an isometry that intertwines the two
+4. **On-site Cliffords make every tested code cube-invariant (exact).**
+   - Write each site's six qubits in the code's own Jordan–Wigner order.
+     This gives twelve local Majoranas, mu_d = X_d Z_<d and
+     nu_d = Y_d Z_<d.
+   - In terms of them, A_(v,a) = mu_{v,+a} mu_{v+e_a,-a} and
+     Z_d = -i mu_d nu_d. So B and R are products of local parities.
+   - A site rotation composed with an on-site signed permutation of the
+     twelve Majoranas maps every generator to plus or minus a generator.
+   - The runner finds signs that preserve the signed group, for all 24
+     rotations, in both uniform sectors, for one code of each orbit type
+     (L = 4).
+   - So once on-site Clifford actions are allowed, the codes are
+     O-invariant. "Minimal orbit four" is a statement about the bare site
+     action only.
+5. **Transfer.** The encoding is an isometry that intertwines the two
    actions. So the companion notes' statements hold for this site-local
    model with the bare site action:
    - a fermionic point charge;
@@ -149,7 +163,7 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/indep
 python3 scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py
 ```
 
-Expected: `TOTAL: PASS=6 FAIL=0` (about one minute).
+Expected: `TOTAL: PASS=7 FAIL=0` (about three minutes).
 
 ## Load-bearing sources
 

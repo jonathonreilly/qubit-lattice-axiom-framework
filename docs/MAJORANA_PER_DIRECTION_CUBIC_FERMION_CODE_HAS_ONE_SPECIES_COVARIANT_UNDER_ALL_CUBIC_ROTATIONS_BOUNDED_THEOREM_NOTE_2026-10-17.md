@@ -119,9 +119,11 @@ permutation?
   qubit permutations of BKSF codes.
   - Here, with a different encoding and an on-site Clifford action, one
     species is cubic-covariant.
-  - Two things change at once, the encoding and the action. Whether the
-    BKSF codes themselves become invariant under some local-Clifford action
-    is not shown.
+  - Two things change at once, the encoding and the action. The companion
+    site-local note settles the encoding question.
+    - In the six-qubit half-edge form, the BKSF codes themselves become
+      O-invariant under on-site signed Majorana permutations.
+    - So the species minimum is a statement about the bare action.
 - **The framework still has to choose.** Whether the rotation acts on a
   site's qubits by bare relabelling or by such an on-site unitary is a
   declared reading of the Lattice axiom. The two readings give different

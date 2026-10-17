@@ -17,7 +17,12 @@ induces exactly the edge rotation on the logical qubits. The runner checks, on t
   per orbit type);
 - the site action maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering;
 - the stabilizer of each code in O under the site action equals its stabilizer under the edge action, so the
-  orbits have sizes 4, 6 and 12 (12, 12 and 36 codes), as for the edge codes.
+  orbits have sizes 4, 6 and 12 (12, 12 and 36 codes), as for the edge codes;
+- on-site Cliffords (signed permutations of the twelve in-site Jordan-Wigner Majoranas mu_d = X_d Z_<d,
+  nu_d = Y_d Z_<d, with the code's own ordering as the in-site order): for one code of each orbit type and both
+  uniform sign sectors, every one of the 24 rotations maps the signed group to itself for some sign choice.
+  So with on-site Clifford actions each code is O-invariant; the minimal orbit four is a statement about the
+  bare site action.
 """
 
 from __future__ import annotations
@@ -133,6 +138,109 @@ def rank(M):
     return r
 
 
+def _signed_onsite_check(order, sec, L=4):
+    """True if every rotation, with some on-site signed Majorana permutation, preserves the signed group."""
+    import bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17 as rb
+    n = 6 * L ** 3
+    rb.L, rb.N = L, n
+    V = list(itertools.product(range(L), repeat=3))
+    s_ = lambda v: ((v[0] % L) * L + (v[1] % L)) * L + (v[2] % L)
+    one = lambda: [np.zeros(n, np.uint8), np.zeros(n, np.uint8), 0]
+
+    def single(qq, lab):
+        P = one()
+        if lab in 'XY':
+            P[0][qq] = 1
+        if lab in 'YZ':
+            P[1][qq] = 1
+        if lab == 'Y':
+            P[2] = 1
+        return P
+
+    def mul(*Ps):
+        R = one()
+        for P in Ps:
+            R = rb.mulp(R, P)
+        return R
+    pos = {dd: i for i, dd in enumerate(order)}
+
+    def maj(v, d, kind):
+        P = single(6 * s_(v) + d, 'X' if kind == 0 else 'Y')
+        for dd in range(6):
+            if pos[dd] < pos[d]:
+                P = mul(single(6 * s_(v) + dd, 'Z'), P)
+        return P
+
+    def A(v, a):
+        w = tuple(v[i] + E[a][i] for i in range(3))
+        return mul(maj(v, DIRS.index((a, 1)), 0), maj(w, DIRS.index((a, -1)), 0))
+    G = []
+    for v in V:
+        G.append(mul(*[single(6 * s_(v) + d, 'Z') for d in range(6)]))
+        for a in range(3):
+            w = tuple(v[i] + E[a][i] for i in range(3))
+            G.append(mul(single(6 * s_(v) + DIRS.index((a, 1)), 'Z'), single(6 * s_(w) + DIRS.index((a, -1)), 'Z')))
+        for c in range(3):
+            a, b = [t for t in range(3) if t != c]
+            va = tuple(v[i] + E[a][i] for i in range(3))
+            vb = tuple(v[i] + E[b][i] for i in range(3))
+            P = mul(A(v, a), A(va, b), A(vb, a), A(v, b))
+            if (P[2] - int(P[0].astype(int) @ P[1].astype(int))) % 2:
+                P[2] = (P[2] + 1) % 4
+            P[2] = (P[2] + 2 * sec[c]) % 4
+            G.append(P)
+    mlist = [(d, k) for d in range(6) for k in (0, 1)]
+    base = [maj((0, 0, 0), d, k) for d, k in mlist]
+    tab = {}
+    for mask in range(1 << 12):
+        P = one()
+        for i in range(12):
+            if mask >> i & 1:
+                P = rb.mulp(P, base[i])
+        tab.setdefault((tuple(P[0][:6]), tuple(P[1][:6])), (mask, P[2]))
+
+    def image(P, M, eps):
+        out = [np.zeros(n, np.uint8), np.zeros(n, np.uint8), P[2]]
+        for s in sorted(set((np.flatnonzero(P[0] | P[1]) // 6).tolist())):
+            v = (s // (L * L), (s // L) % L, s % L)
+            mask, k = tab[(tuple(P[0][6 * s:6 * s + 6]), tuple(P[1][6 * s:6 * s + 6]))]
+            w = tuple(int(x) for x in M @ np.array(v))
+            W, sgn = one(), 1
+            for i in range(12):
+                if mask >> i & 1:
+                    d, kk = mlist[i]
+                    sgn *= eps[i]
+                    W = rb.mulp(W, maj(w, bk.rotdir(M, d), kk))
+            add = [W[0], W[1], (W[2] - k + (0 if sgn == 1 else 2)) % 4]
+            sg = int(out[1].astype(int) @ add[0].astype(int)) % 2
+            out = [out[0] ^ add[0], out[1] ^ add[1], (out[2] + add[2] + 2 * sg) % 4]
+        return out
+    Mg = np.array([np.concatenate([g[0], g[1]]) for g in G]).T
+    near = [g for g in G if (g[0][:6] | g[1][:6]).any()]
+    for M in c1.O:
+        found = False
+        for eps in itertools.product((1, -1), repeat=12):
+            good = True
+            for g in near:
+                im = image(g, M, eps)
+                W, okk = rb.solve_multi(Mg, np.concatenate([im[0], im[1]])[:, None])
+                if not okk[0]:
+                    good = False
+                    break
+                R = rb.one()
+                for i in np.nonzero(W[:, 0])[0]:
+                    R = rb.mulp(R, G[i])
+                if R[2] != im[2]:
+                    good = False
+                    break
+            if good:
+                found = True
+                break
+        if not found:
+            return False
+    return True
+
+
 def main() -> int:
     ck = c1.Checks()
     orders = list(itertools.permutations(range(6)))
@@ -172,6 +280,10 @@ def main() -> int:
     d6 = {k: h6.n - rank(h6.code(o)) for k, o in reps.items()}
     print('L = 6 log2 code dimension, one code per orbit type:', d6)
     ck.check('L = 6: log2 code dimension 3 for one code of each orbit type', all(v == 3 for v in d6.values()))
+    onsite = {k: all(_signed_onsite_check(o, sec) for sec in ((0, 0, 0), (1, 1, 1))) for k, o in reps.items()}
+    print('on-site Clifford O-invariance (orbit type: all 24 rotations preserved in both uniform sectors):', onsite)
+    ck.check('with on-site signed Majorana-permutation Cliffords, one code of each orbit type is invariant under all 24 rotations (both uniform sectors, L = 4)',
+             all(onsite.values()))
     print('per_element: all 60 codes; all 24 rotations')
     print('per_site: six qubits per site (one per direction); generators on one site, nearest-neighbour pairs and plaquettes')
     print('per_mode: not applicable')

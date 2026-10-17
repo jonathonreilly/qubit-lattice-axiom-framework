@@ -8,6 +8,12 @@ Branch `claude/toe-campaign-12h-20261017`, cut from
 excitation of neighbourhood conditions (owner's direction). Nothing here is
 adopted; every result is unaudited bounded support with a declared model.
 
+## Final state (2026-10-17T15:46Z)
+
+- The campaign is closed and the hourly task is deleted.
+- C1–C15 are on main. C16 is in PR #9671.
+- **Next:** queue item 0++, a direction-carried charge with no site term.
+
 ## The arc in one paragraph (for the owner; interpretation, not a claim)
 
 - C1–C4 give scoped Pauli-class obstructions and finite search results; no general nearest-neighbour fermion exclusion is established.

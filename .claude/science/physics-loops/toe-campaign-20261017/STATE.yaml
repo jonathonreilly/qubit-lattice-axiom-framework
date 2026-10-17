@@ -90,5 +90,6 @@ blocks:
     exact: ["ker(H^2(O;Z2)->H^2(O;U(1))) = {0, w1^2}", "w2 forces local dim>=2 exactly for D2 (both), D4, T, O", "odd O-orbits only for stabilizers O, D4", "six-direction shell: linear A1+E+T1; spinorial E1/2+G3/2 or E5/2+G3/2", "on-site Clifford realizations preserve the single-site charge pattern (theorem applies); bare permutation does not (theorem silent; order-4 candidate)"]
     conditional: "symmetry localization (same ansatz as lambda = theta eta)"
     independent_check: "items 2-4 CONFIRMED exactly; item 1 CONFIRMED with explicit hypotheses (no local logicals, linear/extension action, invariant pattern); item 5 CORRECTED: bare permutation does not preserve the term set (plaquette violations near v), applies only to on-site Clifford realizations; 7 wording fixes applied"
-scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
-next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"
+scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
+campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
+next_action: "Queue 0++: build a code with a genuine O action whose fermion charge is carried by the six direction qubits (no site-centred charge term), clean pair test its class, and if w2 test which shell hopping sign makes the E1/2 doublet lowest"

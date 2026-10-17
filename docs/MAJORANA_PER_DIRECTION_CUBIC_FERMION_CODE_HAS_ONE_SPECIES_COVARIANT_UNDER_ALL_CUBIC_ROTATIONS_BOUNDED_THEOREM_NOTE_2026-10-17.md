@@ -100,7 +100,15 @@ permutation?
      sign-pullback class.
    - The spin-1/2 class w2 (both -1) cannot be reached by any W-twist,
      because an axis C2 is the square of a C4.
-   - Twists by other internal operations are not ruled out.
+   - **More generally (standard group theory): no realization can give
+     w2 on O while each fermion has a single local state.**
+     - A one-dimensional local action with fermion parity acting as -1
+       would be a character of the binary octahedral group 2O sending -1
+       to -1.
+     - But -1 lies in the commutator subgroup of 2O, already in Q8 over the
+       three axis C2. So every character sends it to +1.
+     - So a cubic-symmetric spin-1/2 class needs a degenerate,
+       doublet-like fermion, like the two spin states of an electron.
 6. **Caution, from the exploration.** An earlier solver let S also
    create excitations next to the endpoints. It gave λ = +1 for the axis
    C2.
@@ -133,8 +141,10 @@ permutation?
   - With the consistent on-site action U_R, the single fermion species is
     spinless.
   - With the sign twist, it is spinorial for the edge C2 only.
-  - The spin-1/2 class on all of O is not reached by the realizations
-    found here.
+  - The spin-1/2 class on all of O cannot be carried by a single-state
+    fermion at all (item 5). Full cubic spin-1/2 needs a doublet. Here
+    "one species" and "spin-1/2 under the full cube" are mutually
+    exclusive.
   - "Spin" is again a property of how rotations act on the site's qubits.
     The framework would have to fix that action to make a prediction.
 - **Which action does natural dynamics pick?** (Loop pack, c12,

@@ -56,6 +56,10 @@ orthogonal C2 needs a Kramers-like doublet. This includes all of O. In the order
 action shows the odd pattern, so either the action has a localization obstruction or lambda = theta*eta
 fails there. Open, and ranked first in the queue.
 
+**And so, for the owner:** a fermion that is spin-1/2 under all 24 cube rotations must come with two
+internal states, as the electron does with spin up and spin down. A single-state fermion cannot do it,
+whatever the rotation action. That is the next target.
+
 ## Plain-language summary (for the owner)
 
 - **The supplied one-qubit Pauli stabilizer class has no three-dimensionally

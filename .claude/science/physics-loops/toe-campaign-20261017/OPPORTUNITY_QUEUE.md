@@ -12,10 +12,10 @@ permutations), C8/C10 (bare-permutation spin-1/2 class), C11 (site-local half-ed
    - The same constraint explains why w2 on all of O (which contains D2) is hard for a nondegenerate
      single species. It might be impossible, which would be a genuine no-go for one-state spin-1/2
      fermions in these codes.
-0. **A single species with w2 on all of O.** No realization found so far gives it (see the HANDOFF
-   dictionary): W-twists cannot, and the on-site Majorana actions give the trivial class. Either find an
-   on-site action that does, or prove an obstruction for these codes. This is the sharpest open question
-   for an electron-like spin-1/2 with full cubic symmetry.
+0. ~~A single species with w2 on all of O.~~ Impossible on general grounds. -1 lies in the commutator
+   subgroup of 2O (already in Q8), so no one-state fermion can carry w2 on O. Cubic spin-1/2 needs a
+   doublet. **New target:** an O-covariant code whose emergent fermion is a doublet (two degenerate states,
+   for example two species exchanged or mixed by rotations) carrying w2. That is the electron-like case.
 1. **Which realization does the dynamics select?** (partly answered: Majorana-only hopping selects the
    trivial class, in both families)
    - The spin class is a property of the rotation's action on excited states. The on-site phase

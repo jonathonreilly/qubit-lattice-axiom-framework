@@ -1,0 +1,2 @@
+D2 (axis C2z + edge C2 (110), (1-10)) | order 4 | #H^2 classes: 8 | involutions: 3 | squares-pattern determines class: True
+   w2 restricted: squares of involution lifts = [-1, -1, -1] | nontrivial class: True

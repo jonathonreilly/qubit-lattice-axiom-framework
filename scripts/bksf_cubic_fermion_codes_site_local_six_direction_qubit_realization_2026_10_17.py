@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+"""Site-local realization of the translation-invariant BKSF cubic fermion codes.
+
+Six qubits per site of Z^3, one per direction d in {+x,+y,+z,-x,-y,-z} (half-edges). For an ordering of the six
+directions (the same at every site):
+  B_v       = Z on the six qubits of site v                           (one site)
+  R_(v,a)   = Z_(v,+a) Z_(v+e_a,-a)                                   (nearest-neighbour pair; repetition)
+  A_(v,a)   = X_(v,+a) X_(v+e_a,-a) * Z on v's qubits ordered before +a * Z on (v+e_a)'s qubits ordered before -a
+                                                                      (nearest-neighbour pair; charge hop)
+  S_p       = product of the four A around a plaquette                 (four sites of a plaquette)
+Code = <B, R, S>. On the repetition code space each edge carries one logical qubit (X = X X, Z = Z on either
+half) and the code is the edge BKSF code of the companion notes.
+
+The framework site rotation about a site (permute sites, and permute each site's six qubits as directions)
+induces exactly the edge rotation on the logical qubits. The runner checks, on the L = 4 torus:
+- all 60 codes (classes of the 720 orderings) are commuting with log2 code dimension 3 (also L = 6, one code
+  per orbit type);
+- the site action maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering;
+- the stabilizer of each code in O under the site action equals its stabilizer under the edge action, so the
+  orbits have sizes 4, 6 and 12 (12, 12 and 36 codes), as for the edge codes.
+"""
+
+from __future__ import annotations
+
+import itertools
+import os
+import sys
+from collections import Counter, defaultdict
+
+import numpy as np
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import bksf_cubic_fermion_codes_rotation_orbits_2026_10_17 as bk  # noqa: E402
+import cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17 as c1  # noqa: E402
+
+AUDIT_TIMEOUT_SEC = 1200
+AUDIT_INPUT_PATHS = (
+    'docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md',
+)
+
+E, DIRS = bk.E, bk.DIRS
+
+
+class Half:
+    def __init__(self, L):
+        self.L = L
+        self.n = 6 * L ** 3
+        self.V = list(itertools.product(range(L), repeat=3))
+
+    def q(self, v, d):
+        L = self.L
+        return 6 * (((v[0] % L) * L + (v[1] % L)) * L + (v[2] % L)) + d
+
+    def A(self, v, a, order):
+        x = np.zeros(self.n, np.uint8)
+        z = np.zeros(self.n, np.uint8)
+        w = tuple(v[i] + E[a][i] for i in range(3))
+        dp, dm = DIRS.index((a, 1)), DIRS.index((a, -1))
+        x[self.q(v, dp)] ^= 1
+        x[self.q(w, dm)] ^= 1
+        pos = {d: i for i, d in enumerate(order)}
+        for d in range(6):
+            if pos[d] < pos[dp]:
+                z[self.q(v, d)] ^= 1
+            if pos[d] < pos[dm]:
+                z[self.q(w, d)] ^= 1
+        return np.concatenate([x, z])
+
+    def B(self, v):
+        z = np.zeros(self.n, np.uint8)
+        for d in range(6):
+            z[self.q(v, d)] = 1
+        return np.concatenate([np.zeros(self.n, np.uint8), z])
+
+    def R(self, v, a):
+        z = np.zeros(self.n, np.uint8)
+        w = tuple(v[i] + E[a][i] for i in range(3))
+        z[self.q(v, DIRS.index((a, 1)))] = 1
+        z[self.q(w, DIRS.index((a, -1)))] = 1
+        return np.concatenate([np.zeros(self.n, np.uint8), z])
+
+    def S(self, v, c, order):
+        a, b = [t for t in range(3) if t != c]
+        va = tuple(v[i] + E[a][i] for i in range(3))
+        vb = tuple(v[i] + E[b][i] for i in range(3))
+        return self.A(v, a, order) ^ self.A(va, b, order) ^ self.A(vb, a, order) ^ self.A(v, b, order)
+
+    def code(self, order):
+        return np.array([self.B(v) for v in self.V] + [self.R(v, a) for v in self.V for a in range(3)]
+                        + [self.S(v, c, order) for v in self.V for c in range(3)])
+
+    def site_perm(self, M):
+        perm = np.zeros(self.n, int)
+        for v in self.V:
+            w = tuple(int(x) for x in M @ np.array(v))
+            for d in range(6):
+                a, s = DIRS[d]
+                dv = M @ (s * np.array(E[a]))
+                b = int(np.nonzero(dv)[0][0])
+                perm[self.q(v, d)] = self.q(w, DIRS.index((b, int(dv[b]))))
+        return perm
+
+    def act(self, R, perm):
+        out = np.zeros_like(R)
+        out[:, perm] = R[:, :self.n]
+        out[:, self.n + perm] = R[:, self.n:]
+        return out
+
+    def commuting(self, C):
+        n = self.n
+        return not ((C[:, :n].astype(np.int32) @ C[:, n:].T.astype(np.int32)
+                     + C[:, n:].astype(np.int32) @ C[:, :n].T.astype(np.int32)) % 2).any()
+
+
+def rank(M):
+    A = (np.array(M, np.uint8) % 2).copy()
+    m, n = A.shape
+    r = 0
+    for c in range(n):
+        nz = np.flatnonzero(A[r:, c])
+        if nz.size == 0:
+            continue
+        p = r + nz[0]
+        if p != r:
+            A[[r, p]] = A[[p, r]]
+        rows = np.flatnonzero(A[:, c])
+        rows = rows[rows != r]
+        if rows.size:
+            A[rows] ^= A[r]
+        r += 1
+        if r == m:
+            break
+    return r
+
+
+def main() -> int:
+    ck = c1.Checks()
+    orders = list(itertools.permutations(range(6)))
+    Hedge = {o: bk.span_hash(bk.torus_rows(bk.gens(o), 4)) for o in orders}
+    classes = defaultdict(list)
+    for o in orders:
+        classes[Hedge[o]].append(o)
+    h4 = Half(4)
+    perms = [h4.site_perm(M) for M in c1.O]
+    comm, dims, orb, exact, same_stab = True, Counter(), Counter(), True, True
+    reps = {}
+    for h, ords in classes.items():
+        o = ords[0]
+        C = h4.code(o)
+        comm &= h4.commuting(C)
+        dims[h4.n - rank(C)] += 1
+        hh = bk.span_hash(C)
+        st = [k for k, M in enumerate(c1.O) if bk.span_hash(h4.act(C, perms[k])) == hh]
+        st_edge = [k for k, M in enumerate(c1.O) if Hedge[bk.rot_order(M, o)] == h]
+        same_stab &= st == st_edge
+        orb[24 // len(st)] += 1
+        reps.setdefault(24 // len(st), o)
+        for k, M in enumerate(c1.O):
+            for a in range(3):
+                img = h4.act(h4.A((0, 0, 0), a, o)[None, :], perms[k])[0]
+                d = M @ np.array(E[a])
+                b = int(np.nonzero(d)[0][0])
+                base = (0, 0, 0) if d[b] == 1 else tuple(-E[b][t] for t in range(3))
+                exact &= bool((img == h4.A(base, b, bk.rot_order(M, o))).all())
+    ck.check('all 60 half-edge codes are commuting stabilizer groups (L = 4)', comm)
+    ck.check('all 60 have log2 code dimension 3 on the L = 4 torus', dims == Counter({3: 60}))
+    ck.check('the site action (permute sites and the six direction labels) maps A_(v,a) of ordering o exactly to A of the rotated edge with the rotated ordering (all 24 rotations, all 60 codes)', exact)
+    ck.check('for every code, its stabilizer in O under the site action equals its stabilizer under the edge action', same_stab)
+    print('orbit sizes under the site action (size: number of codes):', dict(orb))
+    ck.check('orbits under the site action have sizes 4, 6 and 12 (12, 12 and 36 codes); no code is O-invariant', orb == Counter({4: 12, 6: 12, 12: 36}))
+    h6 = Half(6)
+    d6 = {k: h6.n - rank(h6.code(o)) for k, o in reps.items()}
+    print('L = 6 log2 code dimension, one code per orbit type:', d6)
+    ck.check('L = 6: log2 code dimension 3 for one code of each orbit type', all(v == 3 for v in d6.values()))
+    print('per_element: all 60 codes; all 24 rotations')
+    print('per_site: six qubits per site (one per direction); generators on one site, nearest-neighbour pairs and plaquettes')
+    print('per_mode: not applicable')
+    print('per_block: not applicable')
+    print('lattice_wide: L = 4 torus (all codes), L = 6 (one per orbit type)')
+    print(f"TOTAL: PASS={ck.passed} FAIL={ck.failed}")
+    return 0 if ck.failed == 0 else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

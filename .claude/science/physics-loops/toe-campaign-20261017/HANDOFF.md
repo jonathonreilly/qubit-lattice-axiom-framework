@@ -88,10 +88,19 @@ adopted; every result is unaudited bounded support with a declared model.
     rotations simply move sites, this lattice fermion already behaves like
     a spin-1/2 particle under rotations.
 
+- **The fermion can live on the framework's sites (C11).** Give each site
+  six qubits, one per direction, and tie the two halves of each edge
+  together. The fermion code then lives on sites, and the framework's own
+  site rotation reproduces everything above exactly. The four-copy minimum
+  and the spin-1/2 behaviour both carry over. The cost: six qubits per
+  site, and conditions that span a plaquette rather than just a site's
+  nearest neighbours.
+
 ## Blocks
 
 | Block | Note | Runner | Headline |
 |---|---|---|---|
+| C11 | `docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py` (PASS=6) | Six direction qubits per site: framework site rotation = edge rotation exactly; C6/C8 transfer to a site-local model. |
 | C8 | `docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py` (PASS=9) | Zero- and pi-flux sectors are rotation-symmetric with bare-permutation action; swapped-pair test gives eta_f(C2,C2) = -1 for all 108 (code, C2) pairs under the bare permutation: the spin-1/2 class w2 on every code's rotation stabilizer; realization-dependent. |
 | C6 | `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py` (PASS=8) | 60 translation-invariant BKSF codes, all with a fermionic charge; none rotation-invariant; minimal orbit 4 (D3, body diagonals). |
 | C4 | `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py` (PASS=8) | No coherently 3D-mobile fermion in symmetric three-axis-qubit rules: soldered gives no coherent motion; unsoldered gives bosons only. Alphabet lemma unifies the obstructions. |

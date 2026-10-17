@@ -61,5 +61,11 @@ blocks:
   C9-symmetric-hops-and-O-covariant-condensation:
     status: open (exploration record, no note)
     finding: "D3-equivariant hop types exist but give nonlocal commutant after quad condensation; D3-invariant corner-dressed flux conventions exist (8), 2 with local clean hops; O-covariant quad condensation with them gives noncommuting quads (bipartite z-special pattern). O-covariant local single-code condensation of the 4-copy stack: open"
+  C11-site-local-realization:
+    status: delivered_to_branch
+    note: docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py (PASS=6, ~1 min)
+    exact: ["six direction qubits per site + edge repetition: site action = edge action exactly (intertwining)", "stabilizers/orbits equal the edge case", "C6/C8 transfer to a site-local model"]
+    independent_check: pending
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

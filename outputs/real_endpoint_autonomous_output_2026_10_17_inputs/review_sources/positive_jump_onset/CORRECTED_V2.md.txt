@@ -1,0 +1,118 @@
+# Positive spectral jump and reciprocal derivative: onset candidate
+
+Status: corrected conditional candidate after source-exposed independent analytical check; whole apparatus upstream inputs remain provisional. No numerical scientific run.
+Source: ../.. /renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md,
+SHA256 fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9.
+This candidate takes its quantitative kernel and spectral-interface assertions
+as hypotheses while their separate checks are in progress. It does not qualify
+those hypotheses or the whole construction. No physical identification follows.
+
+## Exact target
+
+For the identical fixed apparatus and normalized common profile, improve the
+sufficient all-future infinite-apparatus escape time, and hence the size of the
+finite device giving the same [T,2T] output bound. Preserve all columns, phases,
+closed tails, residual spectrum and operator rather than reduced-state error.
+No change to kappa=10^-12, sigma=10^-6, supplied pure product seed or coefficients.
+An estimate of linewidth alone, a reduced old-state test or a new nominal
+waveform would not close this target.
+
+## Conditional input contract
+
+Use ROUTE's real symmetric 904-dimensional per-parity core matching matrix
+M, its inverse norm <6e33, individual 8 by 8 diagonal resolvent-block norms
+<5e31, ||M'||<.1, E'>v=.025, |E''|<.061. The normalized unit-incoming
+column x=M^-1 iE' u has output open amplitude 1+R, |R|=1. Use the exact
+local jump Rplus-Rminus=-(i/E')xx*, with Rminus=Rplus*. The physical old
+basis and u are fixed with k. Closed-tail q<=1/7, |q'|<=1/24. Finally use
+the source's ||f||_1<.002, ||f||infinity<4e10, ||f'||infinity<3e32 and
+endpoint-inclusive variation <7e26. All norms are orthonormal physical norms.
+
+## 1. Positivity saves a square root
+
+Taking the trace of the jump gives
+
+    ||x||^2 = -2 E' Im tr(M^-1)
+             <= 2 E' sum_{113 sites} 8 ||(M^-1)_{ss}||
+             < .122 * 904 * 5e31 < 1e34.
+
+Thus ||x||<1e17. This uses the spectral jump's positive rank-one structure;
+the raw inverse bound times the incoming source needlessly gives 4e32.
+No cancellation or unproved small matrix spectrum is used. The diagonal-block
+bound, not a trace bound on the infinite resolvent, is the premise.
+
+Differentiating Mx=iE'u now gives
+
+    ||x'|| <= ||M^-1|| (|E''| + ||M'|| ||x||) < 7e49.
+
+The closed tail is Qc^m x_c. Its geometric sums and derivative sums, after
+removing the open incoming/outgoing waves at output site zero, give deliberately
+rounded localized bounds C0=2e17, C1=2e50. Specifically the tail coefficient
+norm multiplier is below 2, and the derivative multiplier from m q^(m-1)q'
+is below 1; the finite part costs ||x||+2 and ||x'||+|R'|. The latter R'
+is controlled next. These bounds include every core and evanescent coordinate.
+
+## 2. Reciprocity avoids squaring the full inverse again
+
+M is complex symmetric (not Hermitian). Consequently u^T M^-1=x^T/(iE').
+Since R=u^T x-1, exact differentiation gives
+
+    R' = (E''/E')(1+R) - x^T M' x/(iE').
+
+The transpose is essential. Cauchy-Schwarz bounds |x^T M'x| by
+||M'|| ||x||^2, even for complex x. Therefore
+
+    |R'| < 2*.061/.025 + .1*1e34/.025 < 5e34.
+
+This is a reciprocal scattering identity in the real fixed basis, not an
+assumption about a delay or the commutation of K with the apparatus.
+
+For the exact comparison packet a=omega f/R, |R|=|omega|=1 gives
+
+    Var_edge(a) <= Var_edge(f)+||f||_1 sup|R'| < 2e32.
+
+No substitution of a by conjugate(omega f), and no new uniform profile error,
+is made. This preserves the original preparation-to-packet bound.
+
+## 3. Escape and finite consequence, pending check
+
+The same integration-by-parts and lattice-sum lemma as ROUTE, with the new
+variation, gives the conservative incoming norm ceiling
+
+    4e32 / sqrt(pi v t).
+
+The unchanged outgoing restriction/normalization cost is
+8e26/sqrt(pi v t). For the localized integral, endpoint terms plus variation
+of f C/E' are bounded before dividing by v t by
+
+    2*(4e10)*(2e17)
+      +(2e-6)*(3e32)*(2e17)
+      +(.002)*(2e50)
+      +(.002)*(2e17)*(5e34)
+      +(.002)*(2e17)*(.061/.025) < 2.1e49.
+
+The fourth term is the derivative of 1/R in a=omega f/R. It was omitted
+in the original CANDIDATE.md and independently identified by review and root.
+The original file remains preserved; changing the phase convention cannot
+remove this term.
+
+Include the 1/sqrt(2pi) Fourier factor and sqrt(2) old-energy aggregation;
+1e50/(v t) is a safe ceiling. At T=10^78 the sum of these three ceilings
+is <1e-4 (pi>3 suffices). The conditional infinite bound remains <.0013;
+the same Chebyshev argument with M=50T would give finite <.0023 on [T,2T].
+Thus the conditional clock size would fall from 5e137 to 5e79, not become
+practical. This is a sufficient-bound improvement, not a necessary timescale.
+
+## Open proof obligations and independence
+
+The source-exposed independent check is ../positive_jump_onset_check/REVIEW.md
+SHA256 dd85745135125e1366bf9abd696a7f5e37c705e21ec551afd145bf3cc5564de0.
+It reconstructed the identities and required the localized derivative repair.
+Confirm this corrected source matches its disposition, including the diagonal
+trace estimate, the reciprocal derivative, closed-tail norms, hard-cutoff
+variation and lattice sum. Separately qualify ROUTE's kernel ceilings and
+spectral representation. This root has read ROUTE and the structural review,
+but no author checker/output in this campaign; the derivation is source-exposed.
+No execution, retained status or independent qualification is claimed. A
+sharper background Schur analysis or resonance-weighted escape may improve
+this still extravagant bound much further.

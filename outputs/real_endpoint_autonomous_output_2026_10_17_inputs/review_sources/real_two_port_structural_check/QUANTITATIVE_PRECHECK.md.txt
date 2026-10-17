@@ -1,0 +1,47 @@
+# Frozen quantitative reasoning before arithmetic
+
+This follow-up addresses (A)–(E) of the same fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9 route. Frozen structural REVIEW.md is unchanged. Author checker/results remain unopened. Imported source bounds are g=9/50, r=1/7, ||A||<=40, ||Tg||<=206, ||alpha_closed||<=16, bare reflection derivative <=700 and fixed central residual d0=1.76e-13; their provenance/read scopes are in SOURCE_PINS.json. This new check reconstructs the quantitative use of these premises, not their original point certificates. F=20, N=44, ell=20, sigma=10^-6, kappa=10^-12.
+
+## Analytic chain to be checked with exact rational upper bounds
+
+At the two filter sites, the map stacking Qc powers has norm r^19 sqrt(1+r²), and its open counterpart norm sqrt(2). Therefore Gpc/Gcp <=206 sqrt(2(1+r²))r^19<300r^19. The closed image term <=206(1+r²)r^38<211r^38. Its free term <=(1+r)/g. With ||V||=w<1/20, the closed inverse has norm at most [1-((1+r)/g+211r^38)/20]^-1<3/2.
+
+The exact filter eigenvalues are -beta,-w. beta>0, w>J, w<1/20. The free open denominators have real part >1 in the even sector and imaginary magnitude w tan(k/2)/(2J)>1/10 in the odd sector. Here sin(k)>=sin(k0)-sigma>2/5 and tan(k/2)=sin(k)/(1+cos(k))>1/5. Thus ||D0^-1||<10. The rank-one image has Sherman–Morrison denominator 1-a r_g z^(2F). This follows by taking the outgoing reflected coefficient of the free two-site Lippmann equation: a=Aopen v^T V D0^-1 v, v=(1,z). The inverse numerator is bounded by 10²*40*2*(1/20)=400. Thus K0inv<=10+400/(1-5sigma)<500.
+
+The full Schur correction is <=300²*(1/20)²*(3/2) r^38<338r^38. Hence S^-1<=500/(1-500*338r^38)<1000. Off-diagonal triangular factors each have norm <=1+(45/2)r^19; their product times 1000 is <2000, proving the complete physical-basis inverse bound.
+
+The incoming open two-site vector has norm <=2sqrt(2)<3. The closed vector <=16sqrt(1+r²)r^18<17r^18. Consequently xP0<1500 and
+
+    ||xP-xP0|| <=1000[338r^38*1500+300r^19*(1/20)*(3/2)*17r^18]
+                  =[507000000/7+382500]r^37 <10^8r^37.
+
+Then ||xc|| <=(3/2)[17r^18+15r^19(1500+10^8r^37)]<5000r^18.
+
+The outgoing open Green row to the filter has two scalar entries each bounded by 2|Aopen|<=80 (use Tg,PP=Aopen z² r_g), hence norm <120. Its Pc row is <=206sqrt(1+r²)r^19<211r^19. Therefore the reflected amplitude error is less than
+
+    [120*(1/20)*10^8+211*(1/20)*5000]r^37
+      =600052750r^37 <10^9r^37 <10^-20.
+
+Scalar filter concatenation gives 5sigma+17sigma/(1-5sigma)<23sigma: the 17 is 12 from |(b/z)²+1|<=2*6sigma, plus 5 from |a|. Flux bounds |b|<=1. Thus |R|<12sigma and tau error <d0+714sigma after the exact Hadamard half-sum/half-difference and common reference-plane conversion.
+
+At the outer filter site each of the two Green blocks into the filter has norm <=40+206=246; sqrt(2)*246<350. Its update gives Ttilde<=206+350²*(1/20)*2000=12250206<13000000. Rotating the two arm kernels gives port blocks that are half-sums/differences; their norms do not gain a factor two. Shifting by d=N-F=24 supplies the claimed r^d and r^(2d) factors on PC/CP and CC.
+
+For terminated input, ttail=Ktail r^44 and deltaX<=3ttail<10^-28. The scalar reference D_b0=A+QX0Q has inverse <21: closed inverse <20, open inverse <=2J/(1-eta)<21. C0=A+X0 has norm <=40(1+eta)<41; actual C has norm <41 too. Neumann gives D_b^-1<22. Resolvent difference <=22*21 deltaX. Expanding the three-factor Schur term yields coefficient 1+22*41+41*22*21*41+41*21=778386<10^6, so epsilon_G=10^-22 bounds its difference. Scalar reference end norm <=J^-1(1+eta)/(1-eta), and the closed norm <=r/J, so full end norm <35 including epsilon_G.
+
+For Z=I-Q D_b^-1 Q(A+X), ||Z0||<3: its open entry is (1-z²)/(1+Rz^42), and its closed block I-Qc² has norm <=1. The difference <=(22*21*41+21)deltaX=18963deltaX gives ||Z||<4. Y0=Aopen tau z^ell P has norm <=40, and ||Y-Y0||<=ttail. Therefore
+
+    ||L-L0|| <=4ttail+40*18963*3ttail=2275564ttail<10^-21.
+
+The complementary emitter gap is >=minDelta-2-2J sigma>g; 35kappa² perturbation gives ||Dcc^-1||<=1/(g-35kappa²)<6. PC/CP end Green blocks have norm <epsilon_G. The scalar g differs from -z/J by at most 2eta sin(k)/[J(1-eta)]. Hence
+
+    |Dj-Dref|/Im Dref
+       <=2eta/(1-eta)+(epsilon_G+6kappa² epsilon_G²)J/sin(k)
+       <2eta/(1-eta)+2epsilon_G J/sin(k)<1/40000.
+
+This controls the imaginary part as well as relative modulus. Using sin(k)>2/5 and J<31/1000 gives Im Dj>12kappa². The full emitter inverse is bounded by [1/(12kappa²)](1+6kappa²epsilon_G)² <1/(10kappa²), by two triangular block factors; all seven complementary directions are included.
+
+For (D), elimination and Stone's sign give the already reconstructed Fref. Spectral-transform normalization and mass are separately assigned. For (E), write s=R z^(2ell+2), d=(Dj-Dref)/Dref and tau/rho=omega+e. The leading ratio is (omega+e)/[(1+s)(1+d)]. Its error <=[delta_tau+eta+epsilon_D+eta epsilon_D]/[(1-eta)(1-epsilon_D)]. The complementary vector w=kappa²Dcc^-1 Gcj has norm <=6kappa²epsilon_G and lies in Pc, so L0w=0 exactly. Only the row error multiplies it. The extra relative error is <=J epsilon_L(1+6kappa²epsilon_G)/(1-epsilon_D), which is <10^-21. Check the total strictly below .000752 with its margin.
+
+## Execution scope and caps
+
+One new standard-library Python Fraction run may check only these scalar rational upper-bound comparisons and elementary squared inequalities for the displayed square-root constants. No eigenvalues, matrices, quadrature, grids, time evolution, inherited executables, or optimizer. Expected largest integer is below 10^200; cap CPU at 10 seconds, external wall at 15 seconds, output/file size at 16 MiB. No address-space cap is requested; no memory-cap claim. Record code and source hashes, actual interpreter identity, prelaunch receipt before child creation, stdout/stderr, return status and resource counters. A failed comparison is evidence to inspect, not a threshold to adjust silently.

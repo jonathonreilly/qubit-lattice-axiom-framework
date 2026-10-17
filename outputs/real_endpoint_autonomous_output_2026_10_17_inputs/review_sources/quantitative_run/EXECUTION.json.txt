@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "wall_seconds": 0.04884920874610543,
+  "timeout": false,
+  "completed_utc": "2026-10-17T11:20:31.537990+00:00",
+  "output_files": {
+    "stdout.jsonl": {
+      "bytes": 14696,
+      "sha256": "cc5dc485f3e70bb3a8f9deb8086a74c98b7e2a99e139f478a468db9218200073"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "RESULT.json": {
+      "bytes": 17488,
+      "sha256": "294421a0eddceee3278a71e3ee2d6aff495eea0a5766a4260e7a38fd14b2648b"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# New exact-check resource plan (before launch)
+
+This is one author corroboration of ANALYSIS_PRELAUNCH.md, not a replay of any
+inherited program, a parameter search, an independent review, or a device
+simulation. The mathematical inputs are the exact rational parameters and
+strict analytic ceilings recorded in that derivation.
+
+Planned executable: `check_route.py`, standard Python library only. It will:
+
+1. Read only `inputs/parameters.json`'s exact_parameters object, and check its
+   bound source identity.
+2. Solve the two-site filter's two incoming matching equations over complex
+   rational arithmetic, independently of the parity formula; compare both and
+   check the relative free-bond phase. Largest dense object: 2 by 2, with a
+   separate 4 by 4 exact local-block identity allowed.
+3. Check the stated uniform inequality margins using rational arithmetic:
+   filter/closed Schur inverse, remote Green correction, terminated-port
+   inverse, emitter denominator, common profile, normalization, late-time
+   bounds and finite-horizon integers. These are bound substitutions after
+   an analytic proof, not samples of a momentum grid.
+4. Check the explicit finite junction/arm geometry, noncoincident sites,
+   ordinary-NN installed edges, and graph distances with a representative
+   output length M=4. At most 256 graph vertices. The all-M count and distance
+   remain an analytic induction, not extrapolated dynamics.
+5. Print all exact inequalities, identities, dimensions and the complete
+   result JSON. No optimizer, quadrature, eigenvectors, large matching matrix,
+   scientific dependency program, or huge physical apparatus is executed.
+
+One child process, CPU limit 20 seconds soft/hard, external wall limit30
+seconds, requested address-space limit512 MiB where the OS supports it, file
+output limit16 MiB, one-thread environment requests. Actual installed limits,
+wall/CPU/RSS, process return code, complete stdout/stderr and all failed
+attempts will be retained. A thread environment variable is not a measured
+thread count; address-space support is to be reported, not presumed.
+
+`launch_check.py` will bind itself, the exact checker, this plan, the saved
+analytical derivation, SOURCE_MANIFEST.json and every source snapshot, the
+actual Python executable and selected standard-library source files. It will
+write and fsync PRELAUNCH.json and its containing directory before Popen.
+The child checks those hashes again before scientific arithmetic. Output
+and result files are fsynced before a post-execution receipt is written.
+There is no authorization to expand these caps or silently retry a failure.
+Any necessary correction gets a named delta and a separately bound attempt.
+
+The final physical example T=10^136, M=50T is an analytic sufficient resource
+bound. The 904-dimensional per-parity matching matrix and its 1808-dimensional
+two-parity direct sum are not allocated. The largest executed graph and
+matrix must be distinguished from these theorem dimensions.

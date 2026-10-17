@@ -1,0 +1,54 @@
+SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
+BOUNDARY: no spectrum, dynamics, 904/1808 matrix, native realization, or independent proof computed.
+BOUNDARY: residual spectral mass remains paid; finite guarantee is only [T,2T].
+BOUNDARY: no general impossibility claim or negative-packet verdict is tested.
+PASS integrity: declared package files match manifest (not a mathematical check).
+PASS arithmetic: unit exact momentum
+PASS arithmetic: exact E0
+PASS arithmetic: band sine lower
+PASS arithmetic: band tangent half lower
+PASS arithmetic: filter norm
+PASS arithmetic: filter norm exceeds J
+PASS arithmetic: filter vacancy positive
+PASS arithmetic: filter t positive
+PASS arithmetic: filter t below J
+PASS arithmetic: emitter occupation positive
+PASS arithmetic: endpoint occupation positive
+PASS arithmetic: velocity bound
+PASS arithmetic: velocity derivative bound
+PASS arithmetic: even filter phase
+PASS arithmetic: odd filter phase
+PASS arithmetic: filter reflection zero
+PASS arithmetic: relative free bond phase
+PASS arithmetic: free even phase
+PASS arithmetic: free odd phase
+PASS arithmetic: free endpoint convention
+PASS arithmetic: direct matching reflection
+PASS arithmetic: direct matching transmission
+PASS arithmetic: Lippmann reflection at center
+PASS arithmetic: Lippmann transmission relative free bond
+PASS arithmetic: local PSD Gram sign -1
+PASS arithmetic: local PSD Gram sign 1
+PASS arithmetic: scalar opposite-arm error
+PASS arithmetic: closed filter inverse margin
+PASS arithmetic: open rank-one inverse ceiling
+PASS arithmetic: full Schur Neumann margin
+PASS arithmetic: full filter inverse ceiling
+PASS arithmetic: open local difference coefficient
+PASS arithmetic: open local difference less than one
+PASS arithmetic: closed local coefficient
+PASS arithmetic: open reflection feedback coefficient
+PASS arithmetic: all closed channels reflection error
+PASS arithmetic: filter exterior C norm squared
+PASS arithmetic: modified exterior kernel ceiling
+PASS arithmetic: two-port reflection
+PASS arithmetic: two-port transmission error
+PASS arithmetic: terminated-port full closed correction
+PASS arithmetic: unperturbed end factor
+PASS arithmetic: terminated inverse Neumann
+PASS arithmetic: terminated matrix Lipschitz
+PASS arithmetic: end Green error
+PASS arithmetic: end matrix norm
+PASS arithmetic: outgoing row error
+PASS arithmetic: all emitter complementary inverse
+TOTAL FAIL: ('emitter denominator correction', '84568884644309765411636585481846151047837616587438490814692660740332363444220062151202569952463094488815596435189/3523661242403918069559291963182881237913768750000000000000000000000000000000000000000000000000000000000000000000000000', '<', '1/50000')

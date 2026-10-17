@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-O",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/publication_validation/scratch_positive_cell/scripts/real_endpoint_autonomous_output_2026_10_17.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/publication_validation/scratch_positive_cell",
+  "utc": 1792236949.40552,
+  "wall_limit_sec": 10,
+  "cpu_limit_sec": 10,
+  "file_limit_bytes": 16777216,
+  "memory_cap": "not applied",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/publication_validation/scratch_positive_cell/scripts/real_endpoint_autonomous_output_2026_10_17.py",
+      "bytes": 26033,
+      "sha256": "45acaf056882fd1c8964c83bc748b41b7677815cfb94f6136b1dc3f48ef52f8c"
+    }
+  ]
+}

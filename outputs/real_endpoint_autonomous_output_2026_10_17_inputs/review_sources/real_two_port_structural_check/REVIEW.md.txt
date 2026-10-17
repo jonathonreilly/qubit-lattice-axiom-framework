@@ -1,0 +1,127 @@
+# Independent structural check: real two-port endpoint seed
+
+## Finding and scope
+
+No structural counterexample or material algebraic gap was found in the shared-internal-system construction, the real filter/mixer mechanism, the positive two-body realization, or the exact terminated-port/emitter formulas. These checks support those specific conditional components. They do **not** qualify the headline errors 0.0013/0.0023, the onset 10^136, or the complete spectral/escape argument as independently established. Those are separate load-bearing obligations listed below. No retained or audit status is assigned.
+
+The reviewed source is `ROUTE.md`, 39888 bytes, SHA256 `fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9`. `SOURCE_PINS.json` pins every preserved read source and its read scope. The route was read completely, including its late explanatory sections. The interval source and its qualification were read completely. The family source was used only for its complete section 2 (lines 134–203), which states and explains the retarded Green premise; its full body is preserved for recovery, not represented as fully reviewed. Its qualification was read completely. Other manifest entries were not needed for the reconstruction and were not reviewed. No inherited executable, new author checker, or author output was opened. No scientific numerical computation was run. The analytical findings in this document are frozen without such exposure.
+
+The source argument is exposed; this is not blind review or model diversity. Independence here means rebuilding the load-bearing identities from the physical blocks, recurrence, coordinate transformation, and Schur formulas rather than replaying author certificates. The qualified bare-ladder reflection bound, inverse bound and gap remain imported premises at their exact source pins. Their original point-certificate computations were not repeated. All decisions concern the supplied mathematical Hamiltonian and initial state; nothing derives their native physical availability.
+
+## 1. One literal old/source subsystem
+
+Let F be the 16-dimensional old/source Hilbert space and Hhead the one-head space. After fixing a parity, dim F is 8. The physical one-head Hilbert space is Hhead tensor F, not two copies of the old pair. Before mixing the exterior leads, partitioning head positions into two disconnected arms gives
+
+    (Harm0 tensor F) direct-sum (Harm1 tensor F).
+
+The common term Ihead tensor B restricts to B in each direct-sum block. This does not duplicate B as two simultaneous physical interactions: the direct-sum expression is the action conditioned on head position. The two copies of each clock/source contact are physically distinct pairs, n_c0,a lambdaA(I+XA) and n_c1,a lambdaB(I+XB). When the head is on one arm the other arm's contacts vanish. Source interactions and old/source interactions occur once. Source excitations alone cannot move the head from one arm to another.
+
+The total head number is conserved by every physical term: hopping exchanges head excitations; contacts and occupations/vacancies are diagonal in the head number. Source occupation is not conserved by the contacts, but it is not counted as head number. This distinction is sufficient and essential.
+
+The real orthogonal Hadamard U acts on the two exterior lead labels at every exterior position and is identity on F. It therefore commutes with the common B. Conjugating the two-lead direct sum by this U gives exactly the four-junction hopping matrix -JU. It does not require K to commute with the interacting Hamiltonian. The source-vacuum embedding obeys B iota=iota K, and XX parity commutes with B and all contacts. The common real basis of K and XX consequently supplies the four old input columns used by the source.
+
+The construction would fail if B were physically installed twice, or if independent source copies were used and then identified only in a scattering calculation. Neither happens in the displayed physical blocks. This is a structural discriminator, not an assumption of independent scatterers acting on independent old inputs.
+
+## 2. Filter scattering and reference planes
+
+For a free bond -J with diagonal 2J, set E=2J-J(z+z^-1), z=exp(ik). At the two modified sites use incoming amplitude 1 on the first site, reflection a there, and transmission b on the second site. The outside neighboring amplitudes are z^-1+az and bz. The two Schrödinger rows reduce to
+
+    (u+J/z)a - t b = -(u+Jz),
+    -t a + (u+J/z)b = t.
+
+At the nominated k0, write C=cos k0, S=sin k0, u=-J/C and t=JS/C. The identity
+
+    (u+J/z0) i z0 = i(u z0+J) = t
+
+proves the second row for a=0, b=iz0. Also -t i z0=-(u+Jz0), proving the first. This explicitly fixes the otherwise dangerous phase reference. For u=0,t=J the same equations give a=0,b=z. The extra one-way phase is i, not iz itself; its round-trip multiplier is -1.
+
+To concatenate the filter with the original arm reflector, let l be the right-going wave incident on the filter from the gate, and q=r_g z^(2F). The wave leaving the filter leftward is b+a l and the return relation is l=q(b+a l). Thus the reflection at the outer filter site is a+b²q/(1-aq). Restoring the absolute arm coordinate gives
+
+    r_modified,scalar=z^-2(F+1)a+(b/z)^2 r_g/(1-a r_g z^(2F)).
+
+This reconstructs both the sign and the exponent in the source formula. Identical arms give zero transmission, and changing the sign of one tree bond cannot change a round-trip reflection. The loop sign in the junction is therefore meaningful; a single tree-sign shortcut is not equivalent.
+
+At general k the scalar filter is symmetric and lossless. Even/odd diagonalization gives scalar endpoint amplitudes -(v+Jz)/(v+J/z) for v=u-t,u+t. Their derivatives satisfy |r_v'|<=2/sin k, so the stated |a|<=5 sigma follows from a(k0)=0. Differentiating b/z adds at most 1 to the bound for b, yielding <=6 sigma. These provide the stated scalar reflection-error mechanism without assuming interval-perfect filtering.
+
+The scalar argument alone does not decouple the physical closed channels. The route appropriately retains the two-site internal Green matrix. Its Pc free block is bounded by (1+r)/g, while the off-diagonal P/Pc pieces come only from Q^(n-1) T_g Q^(m-1) and carry at least r^(F-1). Schur elimination of Pc therefore creates an open correction quadratic in this small tail. This verifies the claimed mechanism behind (A); the detailed numeric ceilings 338, 10^8 and 10^9 were not independently certified here. They remain part of the quantitative obligation, not evidence supplied by this structural check.
+
+## 3. Mixer and common transmission operation
+
+At port coordinate m=0, arm coordinate n=N+1, incoming and outgoing amplitudes each incur the origin conversion, so the reflection multiplier is z^(2(N+1)). With arm0 the original arm and arm1 the filtered arm,
+
+    S=z^(2(N+1)) U diag(r_g,r_modified) U^T,
+    R=z^(2(N+1))(r_g+r_modified)/2,
+    tau=z^(2(N+1))(r_g-r_modified)/2.
+
+Consequently r_modified approximately -r_g produces small R and tau approximately z^(2(N+1))r_g. Inserting the imported r_g approximately -z² zeta omega_p yields the source rho_g=-zeta z^(2N+4). No old-energy-dependent scalar is introduced. The same U rotates all eight internal coordinates, so retaining seven closed channels does not alter the exact identity; it only changes r_modified and the closed kernel coefficients. Flux conservation gives the open 2x2 S unitarity, given the stated gap and no pole in the band. The opposite parity block is separate, not a second port at the same parity/energy.
+
+## 4. Positive local qubit realization
+
+For a real hopping h, Q(h) is zero on |00>, 2|h| on |11>, and has one-excitation matrix [[|h|,h],[h,|h|]]. Its eigenvalues on that block are 0 and 2|h|. Thus Q(h) is positive with norm 2|h| on the full two-qubit space. This check includes the sectors outside the one-head reduction.
+
+Replacing one ordinary bond by Q(-t) changes each affected diagonal by t-J. Adding beta(I-n) changes it by -beta and adds the scalar beta. Since beta=t+J/C-J, the net change is -J/C=u and the scalar is 2beta. Here beta>0 because C,S>0 and 1+S>C.
+
+Each junction vertex has one ordinary bond of magnitude J and two junction bonds of magnitude J/sqrt(2). Its hopping-block diagonal is (1+sqrt(2))J. Adding gamma(I-n), gamma=(sqrt(2)-1)J>0, reduces this to 2J and gives scalar 4gamma over the four vertices. One hopping sign is positive; positivity of Q(h) does not depend on the sign.
+
+The two source-B clock vacancies contribute 2nu I-nu(n_c1,0+n_c1,1), which explains both VB and the scalar 2nu without duplicating B. The two source-A occupations mu0 n_c0,a are positive. The inherited Csrc/Gsrc terms are positive by occupation positivity, the exchange Laplacian, and nA(I+X1), nB(I+X2) acting on disjoint factors. K=2I+ZZ is positive with norm 3. Therefore c_new=2nu+2beta+4gamma is the actual one-head scalar from this literal decomposition.
+
+At the input endpoint, its one remaining ordinary bond gives diagonal J; the emitter bond contributes kappa. Adding (J-kappa)n_end restores 2J. At the emitter, Q(-kappa)+(E0-kappa)n_e gives diagonal E0. These coefficients are positive for the displayed parameters. The finite output endpoint compensation is likewise J n_end. No negative physical block or effective three-body contact is required.
+
+The listed paths are simple and disjoint from sources and each other. Their final vertices (D,1,1) and (D+1,2,1), with ports (D+1,1,1) and (D,2,1), form the stated nearest-neighbor square. The source contacts are at (0,1,±1) and (1,1,±1), adjacent to A and B respectively. Both arms have 45 vertices. Input has 21 vertices plus emitter, giving 112 head vertices before the M output vertices. There are 88 internal arm bonds, four junction bonds, 20 stub bonds, one emitter bond and M-1 output bonds: M+112 head edges. The shortest seed-to-first-omitted-output path uses 21 input/emitter hops, two junction hops, then M output hops, namely M+23. Unused accidental geometric adjacencies must remain uncoupled, as explicitly supplied in the source.
+
+These checks support the literal local realization. They do not supply an all-site cap two, finite-temperature preparation, coefficient robustness, or a native state/coefficient source.
+
+## 5. Terminated input and emitted channel
+
+The noncommuting termination identity can be checked without a scalar approximation. At end ell and deleted site ell+1, put X=Q^ell T_aa Q^ell and D_b=A+QXQ. Since A commutes with Q,
+
+    G_end,end=A+X,
+    G_end,b=(A+X)Q,
+    G_b,end=Q(A+X).
+
+Schur deletion gives exactly the route's Gtr formula. For outgoing row Y=P T_ba Q^ell it gives
+
+    L=Y-YQ D_b^-1 Q(A+X).
+
+No movement of X through Q is valid or needed. In the scalar reference X0=A_open R z^(2ell)P, these reduce, using A(1-z²)=-z/J, to
+
+    g=-(z/J)(1+R z^(2ell))/(1+R z^(2ell+2)),
+    L0=-(tau/J)z^(ell+1)/(1+R z^(2ell+2)),
+    Gtr,closed=-Qc/J.
+
+The inverses here require the supplied small |R| and closed gap. The Green and row error bounds require the quantitative tail estimates; they are not automatic consequences of the exact identities.
+
+For hopping -kappa the full lambda-H emitter/endpoint block has off-diagonal +kappa. Its Schur complement is De=(lambda-E0)I-B-kappa²Gtr. Solving the exterior block gives outgoing seed resolvent -kappa L De^-1 u_j. Resolving the internal complementary emitter coordinates gives precisely
+
+    De^-1 u_j=Dj^-1[u_j+kappa² Dcc^-1 Gcj].
+
+Both signs therefore match the source. In the reflectionless scalar limit the outgoing coefficient is +kappa tau z^(ell+1)/(J Dref). Stone's sign convention for (lambda+i0-H)^-1 multiplies this by iE'/sqrt(2pi), reproducing Fref and its factor i.
+
+For a real seed and real H the outgoing/incoming spectral coefficients obey F=R_inst conjugate(F). In the ideal limit the terminated emitter reflection is -z^(2ell+2) conjugate(Dref)/Dref and R_inst=tau² R_end. Since rho_g has modulus one, direct conjugation of Fref gives
+
+    omega_p² Fref/conjugate(Fref)=tau² R_end.
+
+Thus the proposed emission phase is compatible with the real one-output-lead constraint: emission crosses tau once while stationary reflection crosses it twice. No inference of a general real-Hamiltonian obstruction is justified from this route.
+
+## 6. Comparator: what follows and what remains
+
+If the claimed common outgoing coefficient estimate and complete packet escape estimates hold, the stated comparator follows structurally. Every outgoing vacuum column has total energy c_new+b_j+E(k), hence its phase factors exactly as exp(-ic_new t) exp(-ib_j t) exp(-iE(k)t). Its common coefficient is omega_p f(k). Combining the four real common eigenvectors of K and W yields the displayed exp(-itK)W, the single common profile beta_t, and blank source/other-head outputs. This derivation does not commute K through the interacting Hamiltonian or remove elapsed traversal time.
+
+The common spectral profile must include rho_g, the propagation phase and emitter denominator as stated. Replacing it by a nominal uncalibrated profile would be an additional obligation. Distinct old-energy residuals within one parity can overlap; a square-sum factor sqrt(2), not orthogonality, is appropriate. Tensoring an operator-norm isometry estimate with an arbitrary passive reference preserves that estimate. The comparator is complete, rather than a reduced old-only channel, only once localized/closed/emitter remainder norms are controlled.
+
+The following are intentionally **unfinished in this review**:
+
+1. Independent uniform certification of the complete closed-channel filter inverse and every numerical bound in (A), followed through the port tail and epsilon_G/epsilon_L bounds. The structural mechanism and exact identities were rebuilt, but this is not a certificate of all constants.
+2. Independent quantitative emitter inversion (C) and error propagation (E), with the physical-basis norm costs and all complement terms.
+3. A complete spectral-transform proof and normalization check for the actual apparatus, including exclusion of in-band singular/point spectrum and the rank-one jump measure. The sign and ideal scalar density interface are consistent, but a local formal jump identity alone is not used here to assert a global isometry theorem.
+4. The endpoint mass estimate, source-to-normalized-packet norm estimate, and full old-input aggregation at their numerical constants.
+5. The complete core/closed-tail derivative bounds, hard-cutoff endpoint variation, integration-by-parts/lattice estimates and onset arithmetic.
+6. The claimed radius-18 bound and Chebyshev comparison at M=50T, and hence both headline complete-channel errors and finite observation horizon.
+
+These are separable from the positive structural result; no failure of them is claimed. They remain necessary before root may qualify the entire author theorem. No counterexample was manufactured to force a negative verdict, and absence of a counterexample is not a proof of the remaining bounds.
+
+## Evidence and operational limits
+
+The first combined tool display truncated output. Complete route text was then read in lines 1–240, 241–480 and 481–726; missing reviewer-skill coverage was reread explicitly. No truncated result is treated as completed coverage. The source hash was verified against the parent-supplied pin before writing this packet. Source snapshots and methodology texts were captured with deterministic file hashing and git show only; no scientific run was launched and no author execution success was inferred. No tool failure, model change or reasoning-effort override occurred. No model token-usage telemetry is available to this reviewer, so no fabricated usage count is reported.
+
+Only this review directory was written. No Git science content, PR, merge, prompt, axiom, audit record, root checkpoint, automation, or other chat was changed. The next root decision is to combine this structural result with a separate source-bound quantitative/spectral check; if that check changes any structural premise or source bytes, refresh the affected identities rather than extending this result by summary alone.

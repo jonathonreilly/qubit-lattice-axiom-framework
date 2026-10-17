@@ -1,0 +1,98 @@
+# Independent analytical check of positive-jump onset
+
+Disposition: conditional improvement survives, after correcting the localized-integral argument. This is a check of an implication from the specified kernel, single-channel spectral, and profile hypotheses. It does not independently establish those original quantitative hypotheses, qualify the whole apparatus, or grant retained status.
+
+## Sources and exposure
+
+Reviewed complete CANDIDATE.md at `../positive_jump_onset/CANDIDATE.md`, SHA256 `8c9e935f0316d2a4b138c815c0312ce322bc3e06ad939d11dedf37d2e2127cc4`, and complete original `../../renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md`, SHA256 `fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9`. The root's desired exponent was known; this was source-exposed, not blind. No author checker, run output, or other review report was read. ROUTE itself contains author execution summaries; those were read as source assertions, not verification evidence.
+
+The missing phase-derivative term was independently identified and sent to root before receiving root's message identifying the same omission. The report therefore discloses convergence and subsequent exposure; no model-diversity claim is made. Model and effort were preserved. No scientific executable, matrix calculation, grid, simulation, or parameter search was run; shell operations only read sources and computed file hashes. No extra scientific-run receipt is applicable.
+
+Instruction sources: supplied user AGENTS instructions; local worktree AGENTS pointer SHA256 `f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f`; SCIENCE_WORKFLOW SHA256 `05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce`; installed physics-claim-reviewer skill SHA256 `9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455`; its proof-search reference and local freshness instructions. The explicit no-Git task constraint prevents fetching/resolving remote instruction freshness; these are identified local snapshots. No prompt or instruction file was edited.
+
+## Finding requiring correction
+
+CANDIDATE section 3 differentiates f C, while its own exact packet has coefficient a=omega f/R multiplying the unit-incoming localized column C. Thus
+
+    (a C)' = omega [f' C/R + f C'/R - f C R'/R^2].
+
+The last term is missing in the displayed 5e47 bound. It contributes at most
+
+    ||f||_1 C0 sup|R'| < .002 * 2e17 * 5e34 = 2e49.
+
+One cannot silently absorb this by declaring C outgoing-normalized: then C/R has derivative bounded by C1+C0 sup|R'|, and the same term reappears. The printed localized calculation does not justify its ceiling. A simple sufficient correction is localized operator norm <1e50/(v t), which preserves T=1e78 with ample margin. This is an algebraic repair, not a new physical assumption.
+
+## Trace and reciprocal derivative reconstruction
+
+Write G=M^{-1}, with u the real unit vector at the output core coordinate. The stipulated jump G-G*=-(i/E')xx* gives, by taking the finite-dimensional trace,
+
+    ||x||^2 = -2 E' Im tr G
+              <= 2 E' sum_s |tr G_ss|
+              <= 2 E' *113*8*5e31
+              < .122*904*5e31 = 5.5144e33 <1e34.
+
+This is valid without positivity of individual entries. The rank-one positive spectral density and adjoint boundary value are essential; an arbitrary complex-symmetric matrix would not supply it. E'<.061 follows from ROUTE's E'=2J sin k. The trace is solely over the 904 core coordinates. No trace of an infinite resolvent is taken.
+
+Differentiating Mx=iE'u with u fixed gives
+
+    ||x'|| <=6e33(.061+.1*1e17) <7e49.
+
+Because M^T=M and u is real and fixed, u^T G=x^T/(iE'). With R=u^T x-1,
+
+    R'=(E''/E')(1+R)-x^T M' x/(iE').
+
+The sign and transpose are correct. The complex bilinear quadratic form obeys |x^T M'x|<=||x||||M'x||. Thus |R'|<2*.061/.025+.1*1e34/.025<5e34. This step requires the fixed real physical basis and one open channel assumed by the source; no k-dependent eigenbasis connection is being omitted under that hypothesis.
+
+## Closed tails and physical localized column
+
+Define C by removing the incoming and outgoing open waves on output m>=0 from the generalized column. The finite core remainder has norm <=||x||+2, and derivative <=||x'||+|R'|. The only infinite remainder consists of closed output coordinates Qc^m x_c, m>=1; x_c is the closed projection at output site zero. Fixed orthogonal spectral projections of B give
+
+    (sum_{m>=1} r^{2m})^(1/2)=r/sqrt(1-r^2)<1/6,
+    (1/24)(sum_{m>=1} m^2 r^{2m-2})^(1/2)
+      =(1/24)sqrt((1+r^2)/(1-r^2)^3)<1/20,
+
+for r=1/7. Consequently the tail norm is <||x||/6 and its derivative norm is <||x'||/6+||x||/20. Triangle bounds already give C0=2e17 and C1=2e50. Negative closed roots cause no problem because absolute values were used. All seven closed channels are included by the orthogonal operator bound, without multiplying by seven. There is only one infinite lead after input termination.
+
+## Hard cutoff and lattice sums
+
+For any scalar h on I=[k0-sigma,k0+sigma], let Vedge(h)=|h(left)|+|h(right)|+integral_I|h'|. The endpoint values are retained. Since |R|=1,
+
+    Vedge(a)<=Vedge(f)+||f||_1 sup|R'|
+              <7e26+1e32<2e32.
+
+For an incoming component at m>=0, integration by parts with phase -mk-tE(k), s=vt, and |E''|<.061 gives
+
+    |integral_I h exp(-imk-itE) dk|
+      <=[Vedge(h)+(.061/v)||h||_1]/(m+s).
+
+Indeed the phase-curvature term t*.061/(m+s)^2 is <=(.061/v)/(m+s). Thus the numerator for a is <2e32 (using the stricter previous 7e26+1e32 value). For s>=1,
+
+    sum_{m>=0}(m+s)^(-2) <=s^(-2)+s^(-1)<=2/s.
+
+The Fourier factor 1/sqrt(2pi) gives incoming norm <=2e32/sqrt(pi s), so the candidate's 4e32 ceiling is conservative. Incoming pieces from distinct old input columns are orthogonal on the output lead, so no extra sqrt(2) is needed here; the parity sectors are likewise orthogonal.
+
+For the outgoing Fourier packet on negative integer sites, apply the same argument with n=-m>=1. Its numerator is <8e26. The omitted negative-site norm is <=8e26/sqrt(pi s). Discrete Fourier Parseval gives total norm one because f is L2 normalized on I inside a single Brillouin interval. If p is the restricted output packet, the positive normalization correction is 1-||p||<=sqrt(1-||p||^2), bounded by this omitted norm. This proves the quoted outgoing normalization ceiling, without dropping cutoff endpoints or renormalizing the physical apparatus.
+
+## Corrected localized integral and onset
+
+For the vector integral of a C exp(-itE), integration by parts gives the per-column bound L/(sqrt(2pi) v t), where
+
+    L <= 2||f||infinity C0 + |I| ||f'||infinity C0
+         +||f||_1 C1 +||f||_1 C0 sup|R'|
+         +||f||_1 C0 (.061/v)
+      < 1.6e28 +1.2e44 +4e47 +2e49 +9.76e14
+      < 2.1e49.
+
+The phases omega and exp(-it b_j) have unit modulus and are k-independent. Paying sqrt(2) for the two potentially nonorthogonal localized column errors in each parity gives L/(sqrt(pi) v t)<1e50/(v t). Tensoring with an arbitrary passive reference does not enlarge this operator norm.
+
+At T=1e78, s=vT=2.5e76 and sqrt(pi s)>2e38 using pi>3. The candidate's conservative incoming ceiling is <2e-6, the outgoing normalization ceiling <4e-12, and the corrected localized ceiling is <4e-27. Their sum is <3e-6, in particular <1e-4, for every t>=T. Adding the stipulated original preparation-to-packet cost <.001121 gives complete infinite error <.001124, hence <.0013. No residual spectral component has been discarded; it remains in that imported preparation cost.
+
+Conditionally importing ROUTE's Chebyshev comparison, M=50T and t<=2T give exponent
+
+    -M-23+18t sinh(1) <=-[50-36 sinh(1)]T-23.
+
+Since sinh(1)<1.2, this is less than -6.8T-23, so the finite/infinite difference is <.001. The same finite apparatus therefore has error <.002124, hence <.0023, on [T,2T]. This validates the sufficient-size change from 5e137 to 5e79 output sites conditionally, not a minimum time, feasible construction, or all-future finite halt.
+
+## Remaining dependency boundary
+
+The unresolved original premises are the uniform finite-coordinate diagonal block and inverse bounds, the derivative bound for the actual matching matrix, the single-open-channel spectral representation and packet isometry, the physical basis and tail recurrence, the common normalized profile bounds, the original preparation-to-packet estimate, and the finite-horizon comparison. These were taken provisionally exactly as requested and are being checked separately. A failure of those inputs requires refreshing the affected estimates; this check cannot override it. The positive-jump and reciprocal identities provide a valid substantial improvement mechanism once those inputs hold. The only source repair required by this check is the omitted localized reflection-phase derivative and the resulting safe ceiling.

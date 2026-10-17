@@ -1,0 +1,59 @@
+# Weighted reference variation and localized derivative candidate
+
+Root proposal, unreviewed. Same fixed real endpoint apparatus and all hypotheses
+of the corrected spectral-sum lemma. No parameter changes or scientific run.
+Goal: replace the excessive sup(f') times interval width and sup(C') times
+||f||1 by explicit integrals. Candidate onset T=10^42, M=5*10^43.
+
+Write kappa=10^-12, a=kappa^2/J, D=E-E0+a exp(ik), X=Re D, Y=Im D.
+The qualified interval gives .03<J<.031, E'>.025, |E''|<.061,
+Y>12 kappa^2. Also X'=E'-a sin(k)>.024 and |D'|<.062.
+The normalized reference has form f=A E' exp(i113k) zeta0/D, where |zeta0|=1,
+A=kappa/(sqrt(2pi)J sqrt(p0))<17 kappa. Its fixed phase constant can include i.
+The earlier bounds ||f||1<.002, ||f||2=1 and sup|f|<4e10 are unchanged.
+
+Differentiation, with no unearned constant-phase removal, gives
+
+ integral|f'| <=(.061/.025+113)||f||1
+                 + A*.061*.062 integral dk/(X^2+Y^2)
+              < .232 +17 kappa*.061*.062*(1/.024)*pi/(12 kappa^2)
+              < .232 +1/kappa.
+
+The substitution X is monotone; enlarging its image to the real line bounds
+the integral by pi/(.024*12 kappa^2). Using pi<4 proves the last loose bound.
+Including both endpoint values gives Vedge(f)<.232+10^12+8e10<2e12.
+
+From the corrected spectral-mass lemma, integral |f||R'|<1e15. Thus
+Vedge(a_in)<2e15 for a_in=omega f/R. Phase-curvature contributions in scalar
+integration by parts add <.005. Incoming norm therefore <3e15/sqrt(pi v t),
+and outgoing restriction/normalization cost <3e12/sqrt(pi v t).
+
+For the localized column, use the already checked tail bounds directly:
+
+ ||C'|| <=(7/6)||x'||+|R'|+||x||/20,
+ x'=M^-1(iE''u-M'x).
+
+Since integral ||x||^2 <=2pi*904<7232, Cauchy-Schwarz gives
+integral |f| ||x|| <86. Therefore
+
+ integral|f| ||x'|| <6e33(.061*.002+.1*86)<5.2e34,
+ integral|f| ||C'|| <(7/6)*5.2e34+1e15+86/20<7e34.
+
+No absolute-value cancellation is asserted. All seven closed tails and finite
+coordinates remain in C. With C0=2e17, the complete localized IBP numerator is
+
+ C0 Vedge(f) + integral|f| ||C'||
+   + C0 integral|f||R'| +(.061/v) C0 ||f||1
+ <4e29+7e34+2e32+1e15 <8e34.
+
+After Fourier normalization and sqrt(2) old-energy aggregation this is safely
+<1e35/(vt). The derivative of 1/R is retained explicitly in the third term.
+At T=10^42, sqrt(pi vT)>2e20 and vT=2.5e40, so total escape is less than
+1.5e-5+1.5e-8+4e-6<2e-5, hence <1e-4 for all t>=T. The unchanged preparation
+cost and finite-transfer estimate would retain infinite<.0013, finite<.0023
+on[T,2T], M=50T. This is only a candidate until independently checked.
+
+Check the true reference numerator/phase, monotone variable substitution,
+normalization and finite-core spectral integral, every derivative term and
+tail aggregation. It changes no physical premise and does not qualify native
+seed/dynamics, practical resources, permanent finite halt or reset/reuse.

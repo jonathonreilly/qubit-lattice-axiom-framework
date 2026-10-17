@@ -1,0 +1,726 @@
+---
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+trace_class: frontier_discovery
+reachability_to_target: partially_closes
+independent_review: pending
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+---
+# A real two-port gate with an autonomous endpoint product seed
+
+This author candidate gives a conditional construction within the supplied
+positive local Hamiltonian model. Two copies of the **clock arm** share one
+literal old pair and one source pair. A real two-site phase filter on one arm
+and a real Hadamard junction turn the qualified boundary gate into an
+approximately reflectionless transmission gate on the common band. A single
+real endpoint emitter then supplies the input from a delivered real product
+seed, with no timed preparation or runtime controls.
+
+The new mathematical conclusion proposed here is:
+
+* With the exact coefficients, kappa=10^-12, sigma=10^-6, and the finite core
+  specified below, infinite complete isometry error is below 0.0013 for every
+  elapsed t>=T=10^136.
+* Choose the **same literal finite apparatus before delivery** with M=50T
+  output-clock sites. Complete isometry error is below 0.0023 only on
+  t in [T,2T]. It uses M+116=5*10^137+116 qubits, including old/source sites.
+  The corresponding complete unhalved trace distances are below 0.0026 and
+  0.0046. No apparatus of this size was allocated or simulated.
+
+The comparator keeps one specified common complex output profile, the actual
+vacancy scalar, all elapsed old aging, all clock/emitter/source outputs, and
+an arbitrary passive reference. The seed is |1> on one emitter, blank clock
+qubits and |00> on the two sources, tensored with the arbitrary old/reference
+input. It has no phase-engineered two-site seed. Residual point-spectrum
+amplitude is bounded, not discarded. The positive central calibration ceiling
+1.76e-13 remains in the error; arbitrary exact accuracy is not asserted.
+
+The bound T=10^136 is deliberately crude, obtained from finite matching and
+integration-by-parts estimates. It is not a linewidth estimate, a minimum,
+a feasible resource claim, or a transfer of the earlier loop-emitter onset.
+The new two-port, terminated-port and endpoint-emitter arguments have **not
+received an independent check**. The result is an author proposal, not source
+qualification, publication approval, audit status or native hardware closure.
+
+## Sources, scope, and exposure
+
+`SOURCE_MANIFEST.json` gives absolute originals, complete local snapshots,
+roles and SHA256 identities for 26 files. These exact bodies are preserved;
+the present note is not a replacement for an inherited proof. Load-bearing
+mathematical premises are the qualified bare-ladder interval and its retarded
+finite-coordinate Green identity. The inherited family and resonance timing
+theorems are not applied to this changed apparatus.
+
+| Preserved source | SHA256 | Role |
+|---|---|---|
+| `inputs/interval.md` | `b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45` | Exact B, positive blocks, channel gap, matching inverse, reflection convention and fixed residual; fully reread here |
+| `inputs/interval_qualification.md` | `33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8` | Root qualification of that interval, complete reread |
+| `inputs/family.md` | `9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac` | Unchanged Green identity and constants (7)-(9); these sections reread, complete prior exposure disclosed |
+| `inputs/family_qualification.md` | `27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814` | Root source qualification; complete reread |
+| `inputs/parameters.json` | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` | Exact rational parameter object only; historical numeric display fields are not enclosures |
+| `inputs/realifier.md` | `c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018` | Closest real construction, full-qubit positive cells and scoped conjugate-sector failure; unchanged prior complete review |
+| `inputs/real_preparation.md` | `57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c` | Closest successful timed preparation; unchanged prior complete review, not a new-apparatus premise |
+| `inputs/real_control_qualification.md` | `4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4` | Current root qualification of those two sources; complete reread |
+| `inputs/resonance.md` | `401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0` | Prior target contract/context only; its onset and apparatus are not inherited |
+| `inputs/generic_bridge.md` | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` | Prior complete-output/aging context; the new emitter, matching, normalization and escape estimates are proved here |
+
+I previously authored or reviewed substantial portions of these sources using
+the same inherited model/effort. The present work is not blind, model-diverse,
+or independent of those sources. The parent suggested assessing two matched
+arms with real mixing; it did not supply a checked opposite-phase or shared-
+source theorem. No root private phase-preparation idea was read. No inherited
+scientific checker was imported or replayed. One new bounded exact-arithmetic
+run corroborates local algebra and bound substitutions, not the entire proof.
+
+A bounded local statement search found the real multiport route explicitly
+listed as unattempted in the frozen realifier (its section of live routes),
+and prior two-port formulas for the different complex loop emitter. There is
+no exhaustive literature/repository novelty claim. The real mixer algebra,
+finite Schur complements, spectral jump identity and integration by parts are
+ordinary mathematical tools, derived at the conventions used here.
+
+The physical premises remain supplied: unitary Hamiltonian dynamics; selected
+positive real signed local cells and onsite occupations/vacancies; their exact
+coefficients, including J/sqrt(2); the displayed cubic embedding; one-head
+conservation; and delivery of a pure emitter/blank-clock/source product state.
+The registered units, kinetic-form and realized-state primitives are not being
+used to derive any of those data. No physical axiom, native coefficient/state
+supplier, thermal controller or Record identification is added or derived.
+
+## Exact internal Hamiltonian and coefficients
+
+Let n=(I-Z)/2, a=|0><1|, and write u_AB for the source interaction coefficient
+to distinguish it from the filter's diagonal shift u below. On the old pair
+and shared sources A,B,
+
+    K=2I+Z1 Z2,
+    Csrc=DeltaA nA+DeltaB nB+h(nA+nB-aA* aB-aB* aA)+u_AB nA nB,
+    Gsrc=gA nA(I+X1)+gB nB(I+X2), B=K+Csrc+Gsrc,
+    VA=lambdaA(I+XA)+mu0 I,
+    VB=lambdaB(I+XB)-nu I,
+    W=[(9+12i)I+(-16+12i)X1 X2]/25.
+
+An asterisk on a creation/annihilation symbol denotes its adjoint. Every
+entry in the following table is an exact terminating decimal.
+
+| J | gA | gB | h |
+|---:|---:|---:|---:|
+| .030021107107032 | .996878563816670 | .599319315560298 | 3.999349697888060 |
+
+| lambdaA | lambdaB | u_AB | mu0 |
+|---:|---:|---:|---:|
+| 3.801781381581202 | 2.575033765788497 | .544607276405587 | .321494607058201 |
+
+| DeltaA | DeltaB | nu |
+|---:|---:|---:|
+| 2.192035527016003 | 2.186826508897014 | 1.459892813020969 |
+
+Put q0=4.510351185997098 exactly, k0=2 arctan(1/q0),
+C=cos(k0)=(q0^2-1)/(q0^2+1), S=sin(k0)=2q0/(q0^2+1), and
+E(k)=2J(1-cos k), E0=E(k0). These C,S,E0 are exact rationals, saved in the
+parameter object. B iota=iota K for iota x=x tensor |00>_AB, and
+I<=B<20I. Parity X1X2 reduces all new and inherited blocks. Its two vacuum
+old energies are b_j=1,3 and W eigenvalues are omega_+=(-7+24i)/25,
+omega_-=1. No commutation of K with the full interacting Hamiltonian is used.
+
+The physical one-head Hamiltonian is the finite/infinite clock graph defined
+below, tensor I_internal, plus I_head tensor B, the four clock contacts
+P_(c0,a) tensor VA and P_(c1,a) tensor VB (a=0,1), plus c_new I.
+The emitter is a head position with diagonal E0; ordinary clock diagonals are
+2J except the two filter sites. This describes the restriction of the fully
+positive qubit Hamiltonian, not an effective higher-body substitute.
+
+The complete new derivation follows. All displayed inequalities are uniform
+on the fixed nonzero momentum interval unless stated otherwise.
+
+## Target and fixed choices
+
+Use the exact bare two-body ladder with B, VA, VB, J, E0, k0 and W from the
+interval source. Preserve its positive central ceiling d0=1.76e-13. There
+are four real vacuum old vectors u_j, indexed by energy b_j in {1,3} and
+parity p in {+,-}; W u_j=omega_p u_j. On I=k0+[-sigma,sigma], sigma=1e-6,
+use r=1/7, g=9/50, v=1/40, E2=2J, |r_j'|<=700,
+||M16^-1||<166, ||T_g||<=206, ||alpha_closed||<=16. Let
+
+    z=exp(ik), Q=zP+Qc, A=[J(Q-Q^-1)]^-1,
+    ||A||<=40, ||Pc A||<=1/g, ||A^-1||<20,
+    Gg(n,m)=A Q^|n-m|+Q^(n-1) T_g Q^(m-1), n,m>=2.
+
+Here lambda_j(k)=b_j+E(k) is the energy after removing c_new,
+P=|u_j><u_j|, Pc=I-P and Qc=sum_closed q_l P_l, with fixed real orthogonal
+spectral projections of B. The decaying real roots satisfy
+q_l+q_l^-1=(2J+b_l-lambda_j)/J, |q_l|<=1/7 and |q_l'|<=1/24.
+Thus ||Q'||<=1. The coefficient T_g=E1* M16^-1 E1-A is the inherited
+boundary Green coefficient; it is distinct from the later onset time T.
+
+There are seven complementary directions in each parity, including the
+other old energy. The last inverse bound follows from B in [1,20] and
+|J(q-q^-1)|<|2J+b-lambda|<20 on closed channels, while the open inverse
+entry has magnitude E'<2J<20. T_g need not commute with Q. B does commute
+with Q, because Q is its spectral function at the chosen energy; the full
+interaction need not commute with K.
+The source supplies r_j(k) approximately r0(k) zeta omega_p, with r0=-z^2,
+one exact scalar zeta=-exp(-4ik0)alpha, and uniform error d0+702sigma.
+
+Choose a phase-filter position F=20, two arms ending at N=44, input stub
+length ell=20, and endpoint coupling kappa=1e-12. No kappa family, calibration
+box, inherited resonance onset, or externally timed preparation is imported.
+
+## Two-port algebra and the phase filter
+
+For U=2^-1/2[[1,1],[1,-1]], the exact two-arm scattering matrix is
+U diag(r1,r2) U^T. Identical arms have zero transmission. A hopping sign
+change is a gauge change on a tree and does not create the required minus
+sign in a round-trip reflection.
+
+For a scalar endpoint potential v, r_v=-(v+Jz)/(v+J/z). Two constant endpoint
+potentials can satisfy r_v1=-r_v2 on an open interval only when v1+v2=0 and
+v1*v2=-J^2. Thus v1=+/-J and v2=-/+J, an old-independent scalar example;
+this is only a statement about that two-parameter ansatz.
+
+Let C=cos(k0), S=sin(k0). Replace the bond between arm-1 sites F,F+1 by
+hopping -t, and shift both their one-head diagonals by u, where
+
+    u=-J/C, t=J S/C,
+    V=[[u,J-t],[J-t,u]], w=||V||=J[1+(1-S)/C]<1/20.
+
+The two-site filter is joined to free leads by -J. In its parity basis the
+endpoint potentials are u-t and u+t. At k0 their reflections are iz0 and
+-iz0; hence filter reflection a(k0)=0 and transmission b(k0)=iz0. A free
+bond has transmission z0. The relative one-way filter phase is i, and the
+relative round trip phase is -1. The earlier idea of setting b=i rather
+than b=iz0 was corrected analytically before any execution: the free-bond
+reference plane must be paid.
+
+On I, sin(k)>2/5, so |r_v'|<=2/sin(k)<5, |a|<=5sigma and
+|b/z-i|<=6sigma. For a scalar reflector r_g at the original absolute origin,
+put q=r_g z^(2F). Exact concatenation gives
+
+    r_scalar=z^-2(F+1) a + (b/z)^2 r_g/(1-aq).
+
+Its denominator is at least 1-5sigma and
+|r_scalar+r_g|<=5sigma+17sigma/(1-5sigma)<23sigma.
+
+## Full closed-channel filter correction
+
+At filter sites F,F+1, split Gg into P and Pc. Its blocks obey
+
+    ||Gpc||,||Gcp||<=300 r^(F-1),
+    ||Gcc||<=(1+r)/g+211 r^(2F-2).
+
+The closed inverse Cc=(I-Gcc V)^-1 has norm <3/2. The free open two-site
+matrix D0=I-Aopen[[1,z],[z,1]]V has inverse norm <10: its even denominator
+has real part >1, and the magnitude of its odd denominator's imaginary part
+is w tan(k/2)/(2J)>1/10. Here w>J and tan(k/2)>1/5 on I.
+The image term is rank one. Its Sherman-Morrison denominator has modulus
+at least 1-|a|. Consequently the scalar-background K0=I-Gpp V satisfies
+
+    ||K0^-1|| <=10+400/(1-5sigma)<500.
+
+The full open Schur correction has norm <338 r^(2F-2), giving Schur inverse
+<1000 and the entire (I-Gg V)^-1 norm <2000. This is uniform, not a grid.
+For a unit-incoming ladder column, the local P input norm is <3 and its
+Pc input norm <17 r^(F-2). If xP0 denotes the scalar open solution, then
+
+    ||xP0||<1500,
+    ||xP-xP0||<10^8 r^(2F-3),
+    ||xc||<5000 r^(F-2).
+
+The exterior open rows of Gg have norms <120 on P and
+<211 r^(F-1) on Pc. Therefore
+
+    |r_modified-r_scalar|<10^9 r^(2F-3)<1e-20.          (A)
+
+All seven Pc coordinates contribute. No scalar filter argument alone is
+being substituted for the noncommuting physical ladder.
+
+For later gluing, at n,m>=F+1 write the modified Green kernel as
+
+    A Q^|n-m| + Q^(n-F-1) Ttilde Q^(m-F-1).
+
+The original Ttilde=Q^F T_g Q^F. The update is Cfilter V(I-Gg V)^-1 Cfilter^T,
+where ||Cfilter||<350. Thus ||Ttilde||<206+350^2*(1/20)*2000<1.3e7.
+The transpose, not an adjoint, occurs because these retarded finite kernels
+are complex symmetric in a real internal basis. Norm estimates are unchanged.
+
+## Shared internal system and real junction
+
+Use one old pair and one source pair A,B. Duplicate the clock contacts, not
+the internal system. B occurs once and acts independently of the arm label.
+In the one-head sector the arms before junction mixing are an exact direct
+sum on head position times the same internal fiber. Mixing the two exterior
+leads by U is an exact unitary change of head coordinates and commutes with
+B. It does not require [H,K]=0.
+
+The four junction edges realize hopping block -JU between two arm ends and
+two port starts. They are the four edges of an ordinary cubic-lattice square;
+one signed hopping is positive and the other three negative. Every magnitude
+is J/sqrt(2). Diagonal compensation uses four positive vacancy terms
+gamma(I-n), gamma=(sqrt(2)-1)J, giving diagonal 2J and scalar 4gamma.
+
+At the two port origins the common reference-plane factor is z^(2(N+1)).
+Define rho_g(k)=z^(2(N+1))r0(k)zeta=-zeta z^(2N+4). The exact open S matrix
+is [[R_j,tau_j],[tau_j,R_j]], with
+
+    |R_j|<eta=12sigma,
+    |tau_j-rho_g omega_p|<delta_tau=d0+714sigma.         (B)
+
+Equation (A) and the unitary U prove these; no equal magnitudes or opposite
+phases were assumed. S is unitary by flux. The point is only approximately
+reflectionless after closed-channel feedback; no exact interval cancellation
+is asserted.
+
+For m,n>=0 on the two exterior ports, the full kernel has the form
+
+    G_ab(m,n)=delta_ab A Q^|m-n|+Q^m T_ab Q^n.
+
+At each chosen old energy, T_ab,PP=Aopen S_ab. Since d=N-F=24,
+||T_ab,PC||,||T_ab,CP||<=K_tail r^d and
+||T_ab,CC||<=K_tail r^(2d), K_tail=1.3e7.
+K_tail is a scalar kernel ceiling, distinct from the literal old operator K.
+This pays the distance between the phase filter and the junction.
+
+## Closing the input port and installing a real endpoint emitter
+
+Keep input-port sites m=0,...,ell and remove site b=ell+1 and its outer tail.
+The remaining output lead is infinite. The exact Dirichlet formula is
+Gtr=G-G(.,b)G(b,b)^-1G(b,.). Write X=Q^ell T_aa Q^ell and
+X0=Aopen R_j z^(2ell)P. Then
+
+    ||X-X0|| <=3K_tail r^(d+ell)<1e-28,
+    Gbb=A+QXQ, ||Gbb^-1||<22,
+    Gtr(end,end)=(A+X)-(A+X)Q(A+QXQ)^-1Q(A+X).
+
+For X0 this is diagonal: its open entry is
+
+    g_j=-(z/J)(1+R_j z^(2ell))/(1+R_j z^(2ell+2)),
+
+and its closed block is -Qc/J. The displayed matrix function is Lipschitz
+with constant <10^6 on the radius-1e-28 neighborhood: the two unperturbed
+factors have norm <41, the unperturbed inverse <21, and the perturbed inverse
+<22. Hence the actual end Green matrix differs by <epsilon_G=1e-22,
+has norm <35, and its PC and CP norms are <epsilon_G.
+
+The open outgoing row toward the output lead satisfies the corresponding
+identity L=Y[I-Q(A+QXQ)^-1Q(A+X)], Y=PT_ba Q^ell. Its scalar approximation is
+
+    L0=-(tau_j/J)z^(ell+1)/(1+R_j z^(2ell+2)) P.
+
+Using ||Y-Y0||<=K_tail r^(d+ell), ||Y0||<=40 and the preceding inverse bounds
+gives ||L-L0||<epsilon_L=1e-21. These are full internal row/matrix estimates.
+
+Attach one endpoint emitter with hopping -kappa, diagonal E0. Its positive
+physical realization is Q(-kappa), (E0-kappa)n_e and (J-kappa)n_end, the
+last term restoring clock endpoint diagonal 2J. Both onsite coefficients are
+positive. The delivered seed is real product |1>_e|all clock zero>|00>_AB
+times the arbitrary old/reference state. No drive acts after delivery.
+
+The emitter Schur matrix is De=(lambda-E0)I-B-kappa^2 Gtr(end,end).
+On Pc the bare gap is >g: the smallest source margin is at least
+min(DeltaA,DeltaB)-2-2J*sigma>9/50, and the other vacuum energy is two away.
+The perturbation has norm at most35*kappa^2, so the complementary emitter
+block Dcc has inverse norm <6. The resonant scalar is
+
+    Dj=E-E0-kappa^2 Gjj-kappa^4 Gjc Dcc^-1 Gcj.
+
+Let Dref=E-E0+kappa^2 z/J. The absolute correction compared with
+Im Dref=kappa^2 sin(k)/J gives both
+
+    |Dj-Dref|<epsilon_D |Dref|,
+    Im Dj>(1-epsilon_D)kappa^2 sin(k)/J>12kappa^2,
+    epsilon_D=1/40000,
+    ||De^-1||<1/(10kappa^2)=1e23.                       (C)
+
+One must compare directly with Im Dref to justify its positive lower bound;
+relative modulus alone would not do so. The inequality follows from
+2eta/(1-eta)+2epsilon_G J/(sin(k))<epsilon_D. All seven emitter coordinates
+are retained. These finite inverse constructions also exclude an in-band
+normal eigenvector; out-of-band point spectrum is allowed.
+
+## Spectral normalization, common outgoing profile, and aging
+
+For real H use R+=(lambda+i0-H)^-1. The outgoing component of R+ seed is
+Aout,j(k)exp(ikm). Stone's formula has sign
+-(R+-R-)/(2pi i), hence the emitted outgoing coefficient in dk is
+F_j=i E'(k) Aout,j/sqrt(2pi). The exact scalar reference is
+
+    Fref(k)= i kappa E'(k) z^(ell+1)rho_g(k)
+              /[sqrt(2pi)J Dref(k)].                    (D)
+
+The scalar endpoint reference resolvent is 1/Dref. Its density in dk is
+|Fref|^2=kappa^2 E'^2/(2pi J^2 |Dref|^2). Its seed has mean E0 and variance
+kappa^2, so p0=int_I|Fref|^2 satisfies
+1-(kappa/(v sigma))^2<=p0<=1. This uses the global spectral measure, not
+completeness or Markov decay. Thus p0>=1-1.6e-9. Define f=Fref/sqrt(p0),
+with positive normalization; f already includes the one common rho_g and
+propagation phase. Actual apparatus parameters J,E0,kappa determine f.
+
+The exact outgoing row and (B)-(C) give
+
+    |F_j/Fref-omega_p|<epsilon_F=0.000752.              (E)
+
+Indeed the leading relative error is bounded by
+(delta_tau+eta+epsilon_D+eta epsilon_D)/[(1-eta)(1-epsilon_D)]<epsilon_F;
+the extra epsilon_L term is <1e-21 and fits the strict margin.
+
+For the actual product seed in column j, the mean is b_j+E0+c_new and
+the variance is exactly kappa^2. Outside its own physical energy interval
+c_new+b_j+E(I)
+the amplitude is <=kappa/(v sigma)=4e-5, including point spectrum. No point
+spectrum occurs inside that interval by the matching inverse just proved.
+The local spectral jump is rank one: if Phi_j has unit incoming open wave,
+the finite-core identity R+-R-=-(i/E')Phi_j Phi_j* gives measure
+Phi_j Phi_j* dk/(2pi). This supplies normalization without assuming a complete
+scattering basis on the whole spectrum. Hence replacing the actual seed by
+the normalized exact outgoing packet with coefficient omega_p f costs
+<0.000792002 per column. Two old-energy columns can overlap in their error
+vectors within one parity; paying sqrt(2)<1.415 gives operator cost <0.001121.
+Different parities are orthogonal. This extends to every passive reference.
+
+The physical scalar is
+
+    c_new=2nu+2beta+4gamma,
+    beta=J[(1+S)/C-1], gamma=(sqrt(2)-1)J.                (F)
+
+The full comparator at elapsed time t is exp(-ic_new t) beta_t on the output
+lead, blank emitter/other clock/source, and exp(-itK)W on old/reference.
+Here beta_t is the restriction to m>=0 of the Fourier integral with f and
+phase exp(ikm-iE(k)t), normalized by its positive norm. No old aging is
+removed, no setup time is hidden, and no per-column scalar is chosen.
+
+## A deliberately loose complete escape bound
+
+The following separate crude author estimate is intended to avoid borrowing
+the old loop-emitter resonance theorem. Every quantity is finite-dimensional
+or a closed geometric tail. No large matrix is to be executed.
+
+For the bare ladder, every finite site-to-site retarded block has norm <250:
+core blocks use M16^-1, core/tail blocks are R E1 Q^(m-1), and tail/tail blocks
+are bounded by 40+206. The filter update bounds each modified block by
+250+2*250^2*(1/20)*2000<1.3e7. Port mixing costs at most two, giving <3e7.
+Dirichlet deletion then gives <3e7+22*(3e7)^2<2e16 for every background
+finite-coordinate block. Adding the emitter using (C) gives every block
+<5e31. The finite core consists of 113 head positions, including output m=0,
+with eight internal directions per parity, so its actual 904-dimensional
+outgoing matching inverse has norm <6e33. The complete two-parity dimension
+is 1808, with no cross-parity norm factor.
+
+The matching matrix derivative is <=3J<1/10; thus its inverse derivative is
+<4e66. Its unit-incoming RHS has norm E'<2J and derivative <=2J. Therefore
+||x||<4e32, ||x'||<3e65 and |R_inst'|<3e65. Subtracting the open waves and
+summing every closed output tail gives localized column bounds
+
+    ||C_j||<C0=1e33, ||C_j'||<C1=1e66.
+
+The normalized f of (D) has ||f||1<1/500, ||f||infinity<4e10,
+||f'||infinity<3e32. Its endpoint-inclusive variation is <7e26. The phase
+derivative in its numerator is ell+1+2N+4=113; Dref'/Dref is <6e21.
+No endpoint is silently set to zero: hard cutoff edge values are included.
+The incoming coefficient is a_j=omega_p f/R_inst,j. Its variation is <7e62.
+One integration by parts and the lattice sum give, for vt>=1,
+
+    incoming norm <=8e62/sqrt(pi v t),
+    outgoing normalization cost <=8e26/sqrt(pi v t),
+    complete localized operator norm <=2e96/(sqrt(2pi) v t).
+
+The last bound includes the sqrt(2) nonorthogonal column aggregation. Thus
+escape is bounded by their sum for every t>=T. At T=10^136 the sum is <1e-4
+(use pi>3, sqrt(2pi)>2 and sqrt(pi v T)>2*10^67). Infinite complete isometry
+error is consequently <0.001221, safely <0.0013, for every t>=T. This onset
+is intentionally enormous and is not inferred from a linewidth.
+
+## Geometry, positive blocks, and finite horizon
+
+Take D=40, N=D+4. Old/source sites are old1=(0,0,0), old2=(1,0,0),
+A=(0,1,0), B=(1,1,0). Arm0 is (n,1,1) for 0<=n<=D-4, followed by
+(D-4,1,2),(D-4,1,3),(D-3,1,3),(D-2,1,3),(D-2,1,2),(D-2,1,1),
+(D-1,1,1),(D,1,1). Arm1 is (n,1,-1) for 0<=n<=D+1, followed by
+(D+1,2,-1),(D+1,2,0),(D+1,2,1). These are both 45-site paths.
+The two port starts are out=(D+1,1,1) and in=(D,2,1), completing the
+junction square. Output m is (D+1+m,1,1); input m is (D,2+m,1), with emitter
+at input m=ell+1. All sites and installed edges are ordinary cubic NN.
+An earlier provisional coordinate path that passed through the input port
+was discarded before execution; the explicit path above is the candidate.
+
+Every real hopping h uses Q(h)=|h|(n_x+n_y)+h(a_x* a_y+a_y* a_x), PSD on all
+four two-qubit states, norm 2|h|. The filter replaces one bond by Q(-t) and
+adds beta(I-n) at its two sites. Junction Q terms and gamma vacancies were
+specified above. The exact bare source/old/contact positive blocks occur
+once except both clock contacts and vacancy nu, which occur on both arms.
+Arm entrances carry J n_c0; endpoint and emitter compensations were given
+above. All runtime coefficients are static, so modeled slew is zero.
+
+Added old loads stay 2gA and 2gB below 2; the existing old edge has norm 3.
+Source A/B loads are 27.936224853155858 and 22.228906875353305. Boundary
+c0/c1 loads are 8.015120691541701 and 6.730044773026091. Filter-site loads
+are 2J+2t+beta<0.12, junction loads (1+3sqrt(2))J<0.16, emitter load
+E0+kappa<0.006, input endpoint 3J+kappa<0.091, and ordinary clock load4J.
+No all-site cap2 or native coefficient/vacuum supplier is asserted.
+
+For finite output m=0,...,M-1 add J n_(M-1) to preserve diagonal2J. There
+are M+112 head sites (including emitter), M+116 total qubits, and M+112
+head-hopping edges. The finite core used above has 113 head positions.
+The first omitted output site has head-graph distance d_M=M+ell+3=M+23
+from the seed. Internal source mixing cannot shorten this distance.
+The one-head spectral radius about c_new+10.5+2J is <18: use B in[1,20],
+contact norm<7.926, the unperturbed clock in[0,4J], filter norm<.05 and
+emitter coupling kappa. A Chebyshev path bound therefore gives
+
+    finite/infinite difference <=4 exp[-d_M+18t sinh(1)]/(1-exp(-1)).
+
+With M=50T, T=10^136, this is <.001 for t<=2T. The same literal finite
+Hamiltonian is chosen before delivery. It has complete error <.002221,
+safely <.0023, only on [T,2T]. The comparator is the embedded infinite
+output profile; no finite-waveform renormalization is substituted. All-future
+finite halt, capture, reset, reuse, thermal preparation, practical cost,
+native blocks, physical time/energy/Record identification and tolerance
+composition remain outside scope.
+
+## Details fixing the signs and complete spectral interface
+
+For the phase filter, the direct two boundary rows, with one incoming wave
+from the left, are
+
+    [[u+J/z,-t],[-t,u+J/z]] [a;b] = [-(u+Jz);t].       (G)
+
+They give a=0,b=iz at k0 over exact complex rationals. The new checker solves
+these rows directly, independently of the even/odd endpoint reduction. It
+also computes the Lippmann reflection coefficient A v^T V D0^-1 v, v=(1,z),
+and the transmitted/free ratio from the two-site free Green matrix. Both
+confirm the reference-plane factor. The free bond has b=z, not b=1.
+
+For the uniform filter inverse, the even/odd eigenvalues of V are -beta and
+-w. The free two-site Green eigenvalues have real parts +1/(2J), -1/(2J)
+and imaginary parts -(1+cos k)/E', -(1-cos k)/E'. The even denominator has
+real part 1+beta/(2J)>1. The odd denominator has imaginary magnitude
+w tan(k/2)/(2J)>1/10. Adding the gate image is a rank-one update whose
+Sherman-Morrison scalar is 1-r_j z^(2F)a(k); this follows by recognizing
+A v^T V D0^-1 v as the filter's reflected wave. Thus its lower bound
+1-|a| is an actual scattering identity, not a presumed inverse certificate.
+The large constants in (A) keep the resulting complete inverse explicit.
+
+In the terminated-port formula, use X0 as in the main derivation and D_b=A+QXQ.
+The inverse difference obeys
+
+    ||D_b^-1-D_b0^-1||<=22*21 ||X-X0||.
+
+Expanding the three-factor product for Gtr gives the exact sufficient
+Lipschitz constant 1+22*41+41*22*21*41+41*21=778386<10^6.
+For Z=I-Q D_b^-1 Q(A+X), its scalar-reference norm is below3 and
+||Z-Z0||<(22*21*41+21)||X-X0||. Thus ||Z||<4 and
+||L-L0||<=4K_tail r^44+40(22*21*41+21)3K_tail r^44<10^-21. The spectral decomposition
+of B is used only to prove inequalities; no uncertified eigenvectors enter.
+
+For the installed emitter the outgoing retarded coefficient has the exact
+form
+
+    Aout,j=-kappa L De^-1 u_j.
+
+Eliminating its seven complementary coordinates gives
+De^-1 u_j=Dj^-1[u_j+kappa^2 Dcc^-1 Gcj]. The row L0 and the sign in this
+formula produce (D), including its factor i from Stone's formula. In the
+ideal R_j=0, tau_j=rho_g omega_p limit, reflection from the emitter-terminated
+stub would be
+
+    R_end=-z^(2ell+2) conjugate(Dref)/Dref,
+    R_inst=tau_j^2 R_end
+          =omega_p^2 Fref/conjugate(Fref).               (H)
+
+This meets the real one-port phase relation. It explains why the new route
+does not inherit the previous realifier's equal conjugate-sector failure:
+the old operation is crossed twice in the final stationary reflection, but
+once by the emitted outgoing packet. Equation (H) is a consistency check
+of the ideal limit; bounds (A)-(E), not exact cancellation in (H), control
+the actual apparatus.
+
+For completeness, the finite core Schur matrix in the final one-output-lead
+geometry, with Hcore the compression of Hphys-c_new I, is
+
+    Mcore(k)=lambda_j(k)I-Hcore+J P_out Q(k) P_out*.
+
+It is exactly904 by904 per parity, in orthonormal physical head/internal
+coordinates. Its inverse equals the finite-coordinate retarded kernel used
+above; this is not a norm bound on the whole continuous-spectrum resolvent.
+The unit-incoming RHS is iE'(k) P_out u_j. Since the boundary jump is
+Mminus-Mplus=-iE' P_out Pj P_out*, resolvent subtraction gives
+
+    Rplus-Rminus=-(i/E') Phi_j Phi_j*  on finite coordinates.
+
+The spectral measure is therefore Phi_j Phi_j* dk/(2pi). Extending through
+the exact free-tail recurrence yields the complete generalized column,
+including all finite emitter/source coordinates and closed tails. An in-band
+normal state would have no open tail and would solve the homogeneous Mcore
+system, which is invertible. This justifies the local absolutely continuous
+spectral representation while allowing arbitrary spectrum outside the band.
+
+Let R_inst,j be the actual final one-channel reflection. For the real seed,
+Stone's formula gives outgoing coefficient F_j and incoming coefficient
+conjugate(F_j), consistently F_j=R_inst,j conjugate(F_j). The exact comparison
+packet uses incoming coefficient omega_p f/R_inst,j. Its outgoing coefficient
+is omega_p f. The L2 difference of these coefficients is the state norm
+difference within the band. Adding the actual variance-bounded complement
+gives the preparation-to-packet estimate, without presupposing a complete
+scattering transform on the whole Hilbert space.
+
+The actual infinite-apparatus point-spectrum amplitude on the entire old
+input is at most sqrt(2)*4e-5<6e-5. Different old-energy residuals may overlap
+within one parity, so the square-root factor is essential. For finite M the
+whole spectrum is point spectrum; that infinite-operator projection statement
+is not transferred to the finite system. Both errors are retained in the
+full state comparison, not conditioned away.
+
+The output comparator can be written explicitly as
+
+    Uout(t)x = exp(-i c_new t) E_out(beta_t)
+                 tensor [iota exp(-itK)W x],
+    beta_t(m) = b_t(m)/||b_t||_(m>=0),
+    b_t(m)=(2pi)^-1/2 integral_I f(k) exp(ikm-iE(k)t) dk.
+
+E_out places the one head on the output lead and all other head sites,
+including the emitter and both arms/input stub, in vacuum. It does not trace
+them out. Tensoring with identity on any reference preserves every operator
+bound. The ideal output profile uses the actual J,E0,kappa, path geometry
+and the exact single ladder phase zeta; it is a specified common reference
+profile whose full complex difference from every actual column is bounded
+in (E). This is not an assertion that the actual four profiles are identical,
+nor a stability theorem for a nominal waveform under calibration errors.
+
+The clock phase E(k)t and old phase b_j t come from the same exact spectral
+energy b_j+E(k). The physical c_new contributes separately. No traversal
+delay is subtracted from old aging and no K evolution is commuted through
+the source interaction. There is no five-unit control setup in this model.
+
+## Finite geometry and resource accounting conventions
+
+The temporary second infinite lead used for the scattering calculation is
+only an analysis reference. The actual input side stops at m=ell; the emitter
+occupies its next NN position. There is no unobserved open port, irreversible
+sink, or discarded outward-emission branch. The denominators in the terminated
+Green and emitter formulas retain all repeated returns and reabsorption.
+
+The head edges number M+112 in the finite device. In addition, the old edge,
+two old/source edges, shared source/source edge, and four source/clock edges
+give eight distinct non-head NN pairs, or M+120 distinct two-body edges total.
+Some pairs support more than one positive block. Counting positive blocks
+separately, including onsite blocks, gives M+138 including K when J n_c0 and
+mu0 n_c0 are kept as separate terms: head bonds M+112; source/old/contact
+blocks11 including K; arm entrance/mu0/vacancy6; filter vacancies2;
+junction vacancies4; emitter/input occupations2; finite output endpoint1.
+Equivalently, there are M+137 added positive blocks excluding K. This is one
+literal decomposition, not a minimized channel count. Combining onsite terms
+would change the count, not their incident sum or the one-head Hamiltonian.
+
+All these full-qubit blocks are positive. At an old site the pre-existing
+K edge costs3 in addition to the displayed added load. At A and B the new
+double contacts account for the large source loads. Exact static coefficient
+installation, selective zero couplings on unused NN pairs, coherent signs
+(one real pi-flux junction loop), and the initial blank product state remain
+supplied resources. Zero runtime slew is not a claim of zero fabrication,
+cooling, preparation, reset, or control-system cost.
+
+The finite-horizon argument works in the invariant one-head space; it does
+not bound the full many-head Hamiltonian norm by18. Positive blocks remain
+defined on every full-qubit sector, and the initial one-head sector is exact
+under the supplied number-conserving dynamics. The finite count is enormous
+and is not claimed compatible with any thermal whole-sector preparation
+bound from the earlier, different architecture.
+
+## Execution, failures, and limits
+
+`ANALYSIS_PRELAUNCH.md` preserves the complete analytical argument before the
+new arithmetic execution. `RESOURCE_PLAN.md` fixes its scope and caps.
+`launch_check.py` serialized and fsynced35 source/runtime bindings in
+`run_01/PRELAUNCH.json` before Popen. The child rechecked all bindings before
+scientific arithmetic. `check_route.py` uses only standard Python exact
+Fraction arithmetic and a small exact complex class. It neither imports nor
+replays an inherited scientific program.
+
+The sole scientific run exited0 on Python3.13.5. Wall time was
+0.08226270787417889 seconds; measured child CPU was0.046963 seconds and
+the recorded child RSS maximum was22052864 bytes. CPU soft/hard20 seconds,
+external wall30 seconds and file-size16MiB limits applied. The requested
+512MiB address-space limit was **not installed**: the OS returned
+"current limit exceeds maximum limit". This is retained in full stdout and
+RESULT.json; no memory-cap success is claimed. One-thread environment values
+were requests, not a measured thread count.
+
+Largest executed dense matrix was4; the geometry had121 vertices including
+old/source and the first omitted output site. Neither904/1808 matching matrix,
+large finite clock, spectrum, time evolution, Gibbs state, parameter grid,
+quadrature nor optimizer was executed. The checker confirms direct filter
+matching, exact positive Gram identities, the specific uniform bound
+arithmetic and a small explicit geometry. It does not replace proof of the
+Schur interfaces, spectral normalization or operator estimates. Full stdout,
+empty stderr, RESULT.json, actual receipt and unchanged source/runtime pins
+remain in run_01. All new assertions and outputs were read after execution.
+
+Two pre-execution analytic mistakes/shortcuts were preserved and corrected:
+choosing filter b=i without the free-bond z reference phase, and an initial
+coordinate route that intersected the input port. Identical arms and a mere
+tree hopping-sign flip were worked failed shortcuts. No failed optimizer,
+grid, dynamics run or scientific executable attempt was hidden. The memory
+limit request failure remains an operational limitation, not physics evidence.
+
+## Scope discipline and live alternatives
+
+The No-Go Discipline skill was applied narrowly to the failed shortcuts,
+not as authority for a universal negative result. Its N1-N8 accounting is:
+
+1. **N1:** This task attempted the two-arm interference family and its real
+   filter repair. Identical arms and a tree-sign change are variants within
+   that family, not five independent routes. Timed chiral preparation,
+   autonomous local state-transfer phase preparation, direct real transmission
+   synthesis, squared-reflection architectures and an alternative real
+   endpoint/source design remain distinct live possibilities; none is claimed
+   ruled out. The five-closed-family negative-packet criterion is not met,
+   and no negative-packet PASS or general no-go is claimed.
+2. **N2:** The new proof has sequential dependencies: arm/filter control
+   supports the port Green bound, which supports the endpoint spectral
+   comparison, which supports the complete late-time estimate. They are not
+   presented as independent physical walls. Native blocks/state supply and
+   physical identification remain explicit imports; no independence count
+   among them is asserted.
+3. **N3:** The potentially load-bearing words in this note concern supplied
+   blocks/state, one-head and parity reduction, exact coefficients, finite
+   Schur identities and qualified source bounds. Their roles are stated in
+   the source/premise sections. "Reference" means a comparison operator or
+   passive quantum reference, not an unpriced physical controller.
+4. **N4:** The prior realifier counterexample concerns its product seed in two
+   conjugate invariant sectors. It is not a witness against this shared-old
+   transmission graph. The constant-endpoint-potential obstruction applies
+   only to that explicit scalar two-parameter ansatz.
+5. **N5:** The failed equal-arm/sign shortcuts are scattering statements for
+   specified modes/blocks. They are not per-site or lattice-wide impossibility
+   claims. Full-qubit positivity and a complete joint-output bound are positive
+   claims proved at their stated scopes; the small graph check is corroboration.
+6. **N6:** No declaration says a new physical axiom is required. The route
+   changes supplied apparatus geometry and static coefficients within the
+   existing conditional Hamiltonian model. A convention change alone would
+   not make the two old conjugate branches equal, but changing the architecture
+   is live and is what is attempted here.
+7. **N7:** The strongest objection to any broad real-coupling no-go is exactly
+   this transmission mechanism: a real final one-port reflection can contain
+   W squared while an endpoint-emitted packet crosses W once, satisfying the
+   real phase relation (H). The finite-arm and closed-channel estimates,
+   rather than a prohibition from reality, decide whether it succeeds.
+8. **N8:** The unchanged realifier explicitly left transmission and squared-
+   reflection routes live; the later controlled preparation already removed
+   the inference that real Hamiltonians cannot create complex states. Both
+   are preserved as relevant counter-authority to overbroad rhetoric. The
+   local source search is limited; no global impossibility/novelty conclusion
+   rests on an absence of search hits.
+
+The next scientific action is a separate source-bound check of this new
+filter/closed-channel/terminated-port chain, Stone normalization and crude
+escape estimate, especially the physical-basis norm factors and absolute
+reference-plane phases. No further author downstream composition is implied
+by this packet. If those steps survive, the conditional model has a static
+real product-seed alternative to the externally timed preparation; its
+practical costs, native pure-state supply, exact-cell realization, robustness,
+physical identification and any substantial onset improvement remain open.
+
+No W/repository, Git, PR, checkpoint, audit result, editable prompt, physical
+axiom or other-chat message was changed. Model and reasoning effort were not
+overridden. Historical source bodies and their qualified/provisional labels
+are unchanged; the new result has no independent-review status yet.

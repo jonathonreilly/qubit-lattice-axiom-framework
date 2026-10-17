@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-10-17T11:20:31.488503+00:00",
+  "bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/check_quantitative.py",
+      "bytes": 4250,
+      "sha256": "ba0d69a0a090e79ca33da31777379534c1584feeffe3719789980c8bdeab9eba"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/launch_quantitative.py",
+      "bytes": 2236,
+      "sha256": "257960489b47887797b8be5f85638481ab5c3d68795d6c1e59235d3daa4571c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/QUANTITATIVE_PRECHECK.md",
+      "bytes": 5998,
+      "sha256": "4f7cb35787a0a6483ad7fb8266242ef673306ab28e29f859b2a85175f7667818"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/SOURCE_PINS.json",
+      "bytes": 4368,
+      "sha256": "3489621eee24fbeaae2c87a079c27728d47014b5c3ea770fc24b28b9945f3756"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/ROUTE.md",
+      "bytes": 39888,
+      "sha256": "fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/SOURCE_MANIFEST.json",
+      "bytes": 9824,
+      "sha256": "5fe85e0e4d1a67351e125ab512f92cea27e2f3ec028e11ae10ede858e89a6659"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/inputs/interval.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/inputs/interval_qualification.md",
+      "bytes": 3291,
+      "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/inputs/family.md",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/inputs/family_qualification.md",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/methodology/AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/methodology/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/methodology/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/methodology/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/sources/methodology/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md",
+      "bytes": 39888,
+      "sha256": "fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9"
+    }
+  ],
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check/check_quantitative.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/real_two_port_structural_check",
+  "cpu_limit_seconds": [
+    10,
+    10
+  ],
+  "wall_timeout_seconds": 15,
+  "file_limit_bytes": 16777216,
+  "address_space_cap_requested": false,
+  "numeric_scope": "small exact-Fraction comparisons only; no matrices/simulation"
+}

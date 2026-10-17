@@ -1,0 +1,1141 @@
+===== runner cache v1 =====
+runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
+runner_sha256: bd710e0589907cb40a90d17dd609c6cf332e32bb3e7bc2a4c4d232de9ad542f4
+input_fingerprint_sha256: ab579fe16797e9b334240520271907cefc5720ed73ae60d01e0e9899566ac8d3
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
+BOUNDARY: no spectrum, dynamics, 904/1808 matrix, native realization, or independent proof computed.
+BOUNDARY: residual spectral mass remains paid; finite guarantee is only [T,2T].
+BOUNDARY: no general impossibility claim or negative-packet verdict is tested.
+PASS integrity: declared package files match manifest (not a mathematical check).
+PASS arithmetic: unit exact momentum
+PASS arithmetic: exact E0
+PASS arithmetic: band sine lower
+PASS arithmetic: band tangent half lower
+PASS arithmetic: filter norm
+PASS arithmetic: filter norm exceeds J
+PASS arithmetic: filter vacancy positive
+PASS arithmetic: filter t positive
+PASS arithmetic: filter t below J
+PASS arithmetic: emitter occupation positive
+PASS arithmetic: endpoint occupation positive
+PASS arithmetic: velocity bound
+PASS arithmetic: velocity derivative bound
+PASS arithmetic: even filter phase
+PASS arithmetic: odd filter phase
+PASS arithmetic: filter reflection zero
+PASS arithmetic: relative free bond phase
+PASS arithmetic: free even phase
+PASS arithmetic: free odd phase
+PASS arithmetic: free endpoint convention
+PASS arithmetic: direct matching reflection
+PASS arithmetic: direct matching transmission
+PASS arithmetic: Lippmann reflection at center
+PASS arithmetic: Lippmann transmission relative free bond
+PASS arithmetic: local PSD Gram sign -1
+PASS arithmetic: local PSD Gram sign 1
+PASS arithmetic: scalar opposite-arm error
+PASS arithmetic: closed filter inverse margin
+PASS arithmetic: open rank-one inverse ceiling
+PASS arithmetic: full Schur Neumann margin
+PASS arithmetic: full filter inverse ceiling
+PASS arithmetic: open local difference coefficient
+PASS arithmetic: open local difference less than one
+PASS arithmetic: closed local coefficient
+PASS arithmetic: open reflection feedback coefficient
+PASS arithmetic: all closed channels reflection error
+PASS arithmetic: filter exterior C norm squared
+PASS arithmetic: modified exterior kernel ceiling
+PASS arithmetic: two-port reflection
+PASS arithmetic: two-port transmission error
+PASS arithmetic: terminated-port full closed correction
+PASS arithmetic: unperturbed end factor
+PASS arithmetic: terminated inverse Neumann
+PASS arithmetic: terminated matrix Lipschitz
+PASS arithmetic: end Green error
+PASS arithmetic: end matrix norm
+PASS arithmetic: outgoing row error
+PASS arithmetic: all emitter complementary inverse
+PASS arithmetic: emitter denominator correction
+PASS arithmetic: emitter imaginary lower constant
+PASS arithmetic: all emitter inverse multiplied by kappa squared
+PASS arithmetic: complete outgoing profile relative error
+PASS arithmetic: variance tail amplitude
+PASS arithmetic: reference spectral mass deficit
+PASS arithmetic: normalization error bound
+PASS arithmetic: root two bound squared
+PASS arithmetic: complete old/reference seed packet cost
+PASS arithmetic: base kernel bound
+PASS arithmetic: all filter finite-coordinate blocks
+PASS arithmetic: port transformed blocks
+PASS arithmetic: terminated finite-coordinate blocks
+PASS arithmetic: installed finite-coordinate blocks
+PASS arithmetic: installed core matching inverse
+PASS arithmetic: matching derivative
+PASS arithmetic: core inverse derivative
+PASS arithmetic: stationary core amplitude
+PASS arithmetic: stationary core derivative
+PASS arithmetic: closed-tail ratio simple majorant
+PASS arithmetic: localized core and tail
+PASS arithmetic: tail derivative sum majorant squared
+PASS arithmetic: localized derivative
+PASS arithmetic: reference positive normalization
+PASS arithmetic: reference f sup
+PASS arithmetic: Dref logarithmic derivative
+PASS arithmetic: reference derivative multiplier
+PASS arithmetic: reference f derivative sup
+PASS arithmetic: f L1 squared
+PASS arithmetic: endpoint inclusive variation
+PASS arithmetic: incoming coefficient variation
+PASS arithmetic: localized IBP column budget
+PASS arithmetic: localized two-column aggregation
+PASS arithmetic: time denominator lower squared
+PASS arithmetic: uniform all-future escape at T
+PASS arithmetic: infinite complete ceiling
+PASS arithmetic: one-head spectral radius
+PASS arithmetic: finite horizon exponent margin
+PASS arithmetic: exponential tail constant
+PASS arithmetic: finite complete ceiling
+PASS arithmetic: filter incident load
+PASS arithmetic: junction incident load sqrt2 ceiling
+PASS arithmetic: emitter load
+PASS arithmetic: input endpoint load
+PASS arithmetic: old1 added load
+PASS arithmetic: old2 added load
+PASS arithmetic: arm0 sites
+PASS arithmetic: arm1 sites
+PASS arithmetic: distinct head and internal sites
+PASS arithmetic: geometry NN edges
+PASS arithmetic: first omitted output distance
+PASS arithmetic: finite head sites count
+PASS arithmetic: finite total qubits count
+PASS arithmetic: finite head edges count
+PASS arithmetic: executed graph vertex cap
+PASS arithmetic: positive-jump Eprime ceiling
+PASS arithmetic: positive-jump finite-core trace substitution
+PASS arithmetic: positive-jump differentiated matching substitution
+PASS arithmetic: reciprocal reflection derivative substitution
+PASS arithmetic: closed-tail derivative multiplier squared
+PASS arithmetic: positive-jump localized norm
+PASS arithmetic: positive-jump localized derivative
+PASS arithmetic: positive-jump incoming variation
+PASS arithmetic: corrected pointwise derivative term expansion
+PASS arithmetic: corrected pointwise localized variation
+PASS arithmetic: corrected pointwise aggregated ceiling
+PASS arithmetic: corrected pointwise denominator squared
+PASS arithmetic: corrected pointwise escape at historical intermediate onset
+PASS arithmetic: finite spectral-mass weighted reflection derivative
+PASS arithmetic: finite spectral-mass incoming variation
+PASS arithmetic: finite spectral-mass incoming numerator
+PASS arithmetic: integrated phase derivative term expansion
+PASS arithmetic: integrated localized variation
+PASS arithmetic: integrated localized operator ceiling
+PASS arithmetic: refined onset denominator squared
+PASS arithmetic: refined onset escape arithmetic
+PASS arithmetic: refined onset infinite complete ceiling
+PASS arithmetic: refined onset finite exponent margin
+PASS arithmetic: refined onset finite complete ceiling
+PASS arithmetic: weighted J lower
+PASS arithmetic: weighted J upper
+PASS arithmetic: weighted monotone real denominator derivative
+PASS arithmetic: weighted denominator derivative upper
+PASS arithmetic: weighted imaginary denominator lower coefficient
+PASS arithmetic: weighted reference amplitude coefficient squared
+PASS arithmetic: weighted reference phase derivative
+PASS arithmetic: weighted regular reference variation
+PASS arithmetic: weighted resonant reference variation
+PASS arithmetic: weighted endpoint inclusive reference variation
+PASS arithmetic: weighted incoming variation
+PASS arithmetic: weighted incoming scalar numerator
+PASS arithmetic: weighted outgoing scalar numerator
+PASS arithmetic: weighted Cauchy Schwarz core bound squared
+PASS arithmetic: weighted matching derivative integral
+PASS arithmetic: weighted closed-tail localized derivative integral
+PASS arithmetic: weighted full localized term expansion
+PASS arithmetic: weighted full localized variation
+PASS arithmetic: weighted localized aggregated ceiling
+PASS arithmetic: weighted onset denominator squared
+PASS arithmetic: weighted onset escape arithmetic
+PASS arithmetic: weighted onset infinite complete ceiling
+PASS arithmetic: weighted onset finite exponent margin
+PASS arithmetic: weighted onset finite complete ceiling
+{
+  "checks": [
+    {
+      "lhs": "1",
+      "name": "unit exact momentum",
+      "relation": "=",
+      "rhs": "1"
+    },
+    {
+      "lhs": "30021107107032000000000000000/5335816955256357129429116105401",
+      "name": "exact E0",
+      "relation": "=",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "2/5",
+      "name": "band sine lower",
+      "relation": "<",
+      "rhs": "2255170257181593743642870570883894599/5335816955256357129429116105401000000"
+    },
+    {
+      "lhs": "1/5",
+      "name": "band tangent half lower",
+      "relation": "<",
+      "rhs": "2255170257181593743642870570883894599/10171639246329669515215361639918105401"
+    },
+    {
+      "lhs": "8462858502821730555445462071/172198474562409312500000000000",
+      "name": "filter norm",
+      "relation": "<",
+      "rhs": "1/20"
+    },
+    {
+      "lhs": "3752638388379/125000000000000",
+      "name": "filter norm exceeds J",
+      "relation": "<",
+      "rhs": "8462858502821730555445462071/172198474562409312500000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "filter vacancy positive",
+      "relation": "<",
+      "rhs": "30021107107032/1755175592998549"
+    },
+    {
+      "lhs": "0",
+      "name": "filter t positive",
+      "relation": "<",
+      "rhs": "67702868022573844443563696568/4835816955256357129429116105401"
+    },
+    {
+      "lhs": "67702868022573844443563696568/4835816955256357129429116105401",
+      "name": "filter t below J",
+      "relation": "<",
+      "rhs": "3752638388379/125000000000000"
+    },
+    {
+      "lhs": "1/1000000000000",
+      "name": "emitter occupation positive",
+      "relation": "<",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "1/1000000000000",
+      "name": "endpoint occupation positive",
+      "relation": "<",
+      "rhs": "3752638388379/125000000000000"
+    },
+    {
+      "lhs": "1/40",
+      "name": "velocity bound",
+      "relation": "<",
+      "rhs": "8462838479430190896886691095655025909518262465021/333488559703522320589319756587562500000000000000000"
+    },
+    {
+      "lhs": "3752638388379/1562500000000",
+      "name": "velocity derivative bound",
+      "relation": "<",
+      "rhs": "5/2"
+    },
+    {
+      "lhs": "(-2255175592998549000000000000000/5335816955256357129429116105401)+i*(4835816955256357129429116105401/5335816955256357129429116105401)",
+      "name": "even filter phase",
+      "relation": "=",
+      "rhs": "(-2255175592998549000000000000000/5335816955256357129429116105401)+i*(4835816955256357129429116105401/5335816955256357129429116105401)"
+    },
+    {
+      "lhs": "(2255175592998549000000000000000/5335816955256357129429116105401)+i*(-4835816955256357129429116105401/5335816955256357129429116105401)",
+      "name": "odd filter phase",
+      "relation": "=",
+      "rhs": "(2255175592998549000000000000000/5335816955256357129429116105401)+i*(-4835816955256357129429116105401/5335816955256357129429116105401)"
+    },
+    {
+      "lhs": "(0)+i*(0)",
+      "name": "filter reflection zero",
+      "relation": "=",
+      "rhs": "(0)+i*(0)"
+    },
+    {
+      "lhs": "(0)+i*(1)",
+      "name": "relative free bond phase",
+      "relation": "=",
+      "rhs": "(0)+i*(1)"
+    },
+    {
+      "lhs": "(4835816955256357129429116105401/5335816955256357129429116105401)+i*(2255175592998549000000000000000/5335816955256357129429116105401)",
+      "name": "free even phase",
+      "relation": "=",
+      "rhs": "(4835816955256357129429116105401/5335816955256357129429116105401)+i*(2255175592998549000000000000000/5335816955256357129429116105401)"
+    },
+    {
+      "lhs": "(-4835816955256357129429116105401/5335816955256357129429116105401)+i*(-2255175592998549000000000000000/5335816955256357129429116105401)",
+      "name": "free odd phase",
+      "relation": "=",
+      "rhs": "(-4835816955256357129429116105401/5335816955256357129429116105401)+i*(-2255175592998549000000000000000/5335816955256357129429116105401)"
+    },
+    {
+      "lhs": "(-18299308669488507201693501138731582334670664139372522141370801/28470942580001221460551733349533582334670664139372522141370801)+i*(-21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801)",
+      "name": "free endpoint convention",
+      "relation": "=",
+      "rhs": "(-18299308669488507201693501138731582334670664139372522141370801/28470942580001221460551733349533582334670664139372522141370801)+i*(-21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801)"
+    },
+    {
+      "lhs": "(0)+i*(0)",
+      "name": "direct matching reflection",
+      "relation": "=",
+      "rhs": "(0)+i*(0)"
+    },
+    {
+      "lhs": "(-2255175592998549000000000000000/5335816955256357129429116105401)+i*(4835816955256357129429116105401/5335816955256357129429116105401)",
+      "name": "direct matching transmission",
+      "relation": "=",
+      "rhs": "(-2255175592998549000000000000000/5335816955256357129429116105401)+i*(4835816955256357129429116105401/5335816955256357129429116105401)"
+    },
+    {
+      "lhs": "(0)+i*(0)",
+      "name": "Lippmann reflection at center",
+      "relation": "=",
+      "rhs": "(0)+i*(0)"
+    },
+    {
+      "lhs": "(0)+i*(1)",
+      "name": "Lippmann transmission relative free bond",
+      "relation": "=",
+      "rhs": "(0)+i*(1)"
+    },
+    {
+      "lhs": "[[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(-1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(-1, 1), Fraction(1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(2, 1)]]",
+      "name": "local PSD Gram sign -1",
+      "relation": "=",
+      "rhs": "[[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), 1, -1, Fraction(0, 1)], [Fraction(0, 1), -1, 1, Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), 2]]"
+    },
+    {
+      "lhs": "[[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(2, 1)]]",
+      "name": "local PSD Gram sign 1",
+      "relation": "=",
+      "rhs": "[[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), 1, 1, Fraction(0, 1)], [Fraction(0, 1), 1, 1, Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), 2]]"
+    },
+    {
+      "lhs": "879999/39999800000",
+      "name": "scalar opposite-arm error",
+      "relation": "<",
+      "rhs": "23/1000000"
+    },
+    {
+      "lhs": "7424846368407029720981265468484699/23388266060482143621090986225720820",
+      "name": "closed filter inverse margin",
+      "relation": "<",
+      "rhs": "1/3"
+    },
+    {
+      "lhs": "81999990/199999",
+      "name": "open rank-one inverse ceiling",
+      "relation": "<",
+      "rhs": "500"
+    },
+    {
+      "lhs": "169000/129934811447123020117172145698449",
+      "name": "full Schur Neumann margin",
+      "relation": "<",
+      "rhs": "1/2"
+    },
+    {
+      "lhs": "260259427328588435195262491417875847/259869622894246040234344291396898",
+      "name": "full filter inverse ceiling",
+      "relation": "<",
+      "rhs": "2000"
+    },
+    {
+      "lhs": "509677500/7",
+      "name": "open local difference coefficient",
+      "relation": "<",
+      "rhs": "100000000"
+    },
+    {
+      "lhs": "100000000/18562115921017574302453163671207",
+      "name": "open local difference less than one",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "33951/7",
+      "name": "closed local coefficient",
+      "relation": "<",
+      "rhs": "5000"
+    },
+    {
+      "lhs": "600052750",
+      "name": "open reflection feedback coefficient",
+      "relation": "<",
+      "rhs": "1000000000"
+    },
+    {
+      "lhs": "1000000000/18562115921017574302453163671207",
+      "name": "all closed channels reflection error",
+      "relation": "<",
+      "rhs": "1/100000000000000000000"
+    },
+    {
+      "lhs": "121032",
+      "name": "filter exterior C norm squared",
+      "relation": "<",
+      "rhs": "122500"
+    },
+    {
+      "lhs": "12250206",
+      "name": "modified exterior kernel ceiling",
+      "relation": "<",
+      "rhs": "13000000"
+    },
+    {
+      "lhs": "426928666183404209956422764437761/37124231842035148604906327342414000000",
+      "name": "two-port reflection",
+      "relation": "<",
+      "rhs": "3/250000"
+    },
+    {
+      "lhs": "827754357057060729212464084789871956633277/1160132245063598393903322729450437500000000000",
+      "name": "two-port transmission error",
+      "relation": "<",
+      "rhs": "44625000011/62500000000000"
+    },
+    {
+      "lhs": "39000000/15286700631942576193765185769276826401",
+      "name": "terminated-port full closed correction",
+      "relation": "<",
+      "rhs": "1/10000000000000000000000000000"
+    },
+    {
+      "lhs": "250003/6250",
+      "name": "unperturbed end factor",
+      "relation": "<",
+      "rhs": "41"
+    },
+    {
+      "lhs": "45860101895827728581295557307830479203/2183814375991796599109312252636832343",
+      "name": "terminated inverse Neumann",
+      "relation": "<",
+      "rhs": "22"
+    },
+    {
+      "lhs": "778386",
+      "name": "terminated matrix Lipschitz",
+      "relation": "<",
+      "rhs": "1000000"
+    },
+    {
+      "lhs": "4336722000000/2183814375991796599109312252753832343",
+      "name": "end Green error",
+      "relation": "<",
+      "rhs": "1/10000000000000000000000"
+    },
+    {
+      "lhs": "312503750000000000000000938148339179584863/9381483391795848630000000000000000000000",
+      "name": "end matrix norm",
+      "relation": "<",
+      "rhs": "35"
+    },
+    {
+      "lhs": "29582332000000/15286700631942576193765185769276826401",
+      "name": "outgoing row error",
+      "relation": "<",
+      "rhs": "1/1000000000000000000000"
+    },
+    {
+      "lhs": "200000000000000000000000/35999999999999999999993",
+      "name": "all emitter complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "84568884644309765411636585481846151047837616587438490814692660740332363444220062151202569952463094488815596435189/3523661242403918069559291963182881237913768750000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "emitter denominator correction",
+      "relation": "<",
+      "rhs": "1/40000"
+    },
+    {
+      "lhs": "12",
+      "name": "emitter imaginary lower constant",
+      "relation": "<",
+      "rhs": "93963078246881841824969979129984270901459375/6674463846552852923658448324696827245844993"
+    },
+    {
+      "lhs": "25000000000000000000001800000000000000000000030000000000000000000000000000000000000000000009/300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "all emitter inverse multiplied by kappa squared",
+      "relation": "<",
+      "rhs": "1/10"
+    },
+    {
+      "lhs": "3911459896750000000312716113059861621/5208140626562500000000000000000000000000",
+      "name": "complete outgoing profile relative error",
+      "relation": "<",
+      "rhs": "47/62500"
+    },
+    {
+      "lhs": "1/25000",
+      "name": "variance tail amplitude",
+      "relation": "=",
+      "rhs": "1/25000"
+    },
+    {
+      "lhs": "1/625000000",
+      "name": "reference spectral mass deficit",
+      "relation": "=",
+      "rhs": "1/625000000"
+    },
+    {
+      "lhs": "1/625000000",
+      "name": "normalization error bound",
+      "relation": "<",
+      "rhs": "1/500000000"
+    },
+    {
+      "lhs": "2",
+      "name": "root two bound squared",
+      "relation": "<",
+      "rhs": "80089/40000"
+    },
+    {
+      "lhs": "112068283/100000000000",
+      "name": "complete old/reference seed packet cost",
+      "relation": "<",
+      "rhs": "1121/1000000"
+    },
+    {
+      "lhs": "246",
+      "name": "base kernel bound",
+      "relation": "<",
+      "rhs": "250"
+    },
+    {
+      "lhs": "12500250",
+      "name": "all filter finite-coordinate blocks",
+      "relation": "<",
+      "rhs": "13000000"
+    },
+    {
+      "lhs": "26000000",
+      "name": "port transformed blocks",
+      "relation": "<",
+      "rhs": "30000000"
+    },
+    {
+      "lhs": "19800000030000000",
+      "name": "terminated finite-coordinate blocks",
+      "relation": "<",
+      "rhs": "20000000000000000"
+    },
+    {
+      "lhs": "40000000000000020000000000000000",
+      "name": "installed finite-coordinate blocks",
+      "relation": "<",
+      "rhs": "50000000000000000000000000000000"
+    },
+    {
+      "lhs": "5650000000000000000000000000000000",
+      "name": "installed core matching inverse",
+      "relation": "<",
+      "rhs": "6000000000000000000000000000000000"
+    },
+    {
+      "lhs": "11257915165137/125000000000000",
+      "name": "matching derivative",
+      "relation": "<",
+      "rhs": "1/10"
+    },
+    {
+      "lhs": "3600000000000000000000000000000000000000000000000000000000000000000",
+      "name": "core inverse derivative",
+      "relation": "<",
+      "rhs": "4000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "360253285284384000000000000000000",
+      "name": "stationary core amplitude",
+      "relation": "<",
+      "rhs": "400000000000000000000000000000000"
+    },
+    {
+      "lhs": "240168856856256000000000000000000360253285284384000000000000000000",
+      "name": "stationary core derivative",
+      "relation": "<",
+      "rhs": "300000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1/48",
+      "name": "closed-tail ratio simple majorant",
+      "relation": "<",
+      "rhs": "1/36"
+    },
+    {
+      "lhs": "1400000000000000000000000000000006/3",
+      "name": "localized core and tail",
+      "relation": "<",
+      "rhs": "1000000000000000000000000000000000"
+    },
+    {
+      "lhs": "60025/55296",
+      "name": "tail derivative sum majorant squared",
+      "relation": "<",
+      "rhs": "4"
+    },
+    {
+      "lhs": "1950000000000000000000000000000000100000000000000000000000000000000/3",
+      "name": "localized derivative",
+      "relation": "<",
+      "rhs": "1000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "9801/10000",
+      "name": "reference positive normalization",
+      "relation": "<",
+      "rhs": "624999999/625000000"
+    },
+    {
+      "lhs": "1667839283724/55",
+      "name": "reference f sup",
+      "relation": "<",
+      "rhs": "40000000000"
+    },
+    {
+      "lhs": "56329179495742953769021814000000000/11257915165137",
+      "name": "Dref logarithmic derivative",
+      "relation": "<",
+      "rhs": "6000000000000000000000"
+    },
+    {
+      "lhs": "12000000000000000000231/2",
+      "name": "reference derivative multiplier",
+      "relation": "<",
+      "rhs": "7000000000000000000000"
+    },
+    {
+      "lhs": "280000000000000000000000000000000",
+      "name": "reference f derivative sup",
+      "relation": "<",
+      "rhs": "300000000000000000000000000000000"
+    },
+    {
+      "lhs": "1/500000",
+      "name": "f L1 squared",
+      "relation": "<",
+      "rhs": "1/250000"
+    },
+    {
+      "lhs": "600000000000000080000000000",
+      "name": "endpoint inclusive variation",
+      "relation": "<",
+      "rhs": "700000000000000000000000000"
+    },
+    {
+      "lhs": "600000000000000000000000000000000000700000000000000000000000000",
+      "name": "incoming coefficient variation",
+      "relation": "<",
+      "rhs": "700000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "700000000000000000000000000000002000000000000000000000000000000005000000000000000000000000000000",
+      "name": "localized IBP column budget",
+      "relation": "<",
+      "rhs": "800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "localized two-column aggregation",
+      "relation": "<",
+      "rhs": "2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "time denominator lower squared",
+      "relation": "<",
+      "rhs": "750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1000000000000000000000000000000000101/25000000000000000000000000000000000000000",
+      "name": "uniform all-future escape at T",
+      "relation": "<",
+      "rhs": "1/10000"
+    },
+    {
+      "lhs": "1221/1000000",
+      "name": "infinite complete ceiling",
+      "relation": "<",
+      "rhs": "13/10000"
+    },
+    {
+      "lhs": "48475352195383554405703955630553/2755175592998549000000000000000",
+      "name": "one-head spectral radius",
+      "relation": "<",
+      "rhs": "18"
+    },
+    {
+      "lhs": "432000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009",
+      "name": "finite horizon exponent margin",
+      "relation": "<",
+      "rhs": "500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023"
+    },
+    {
+      "lhs": "19683/20971520",
+      "name": "exponential tail constant",
+      "relation": "<",
+      "rhs": "1/1000"
+    },
+    {
+      "lhs": "2221/1000000",
+      "name": "finite complete ceiling",
+      "relation": "<",
+      "rhs": "23/10000"
+    },
+    {
+      "lhs": "31779519696796404604143538080590481737534979/302238559703522320589319756587562500000000000",
+      "name": "filter incident load",
+      "relation": "<",
+      "rhs": "3/25"
+    },
+    {
+      "lhs": "138847620370023/875000000000000",
+      "name": "junction incident load sqrt2 ceiling",
+      "relation": "<",
+      "rhs": "4/25"
+    },
+    {
+      "lhs": "30021107112367816955256357129429116105401/5335816955256357129429116105401000000000000",
+      "name": "emitter load",
+      "relation": "<",
+      "rhs": "3/500"
+    },
+    {
+      "lhs": "5628957582631/62500000000000",
+      "name": "input endpoint load",
+      "relation": "<",
+      "rhs": "91/1000"
+    },
+    {
+      "lhs": "99687856381667/50000000000000",
+      "name": "old1 added load",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "299659657780149/250000000000000",
+      "name": "old2 added load",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "45",
+      "name": "arm0 sites",
+      "relation": "=",
+      "rhs": "45"
+    },
+    {
+      "lhs": "45",
+      "name": "arm1 sites",
+      "relation": "=",
+      "rhs": "45"
+    },
+    {
+      "lhs": "121",
+      "name": "distinct head and internal sites",
+      "relation": "=",
+      "rhs": "121"
+    },
+    {
+      "lhs": "True",
+      "name": "geometry NN edges",
+      "relation": "=",
+      "rhs": "True"
+    },
+    {
+      "lhs": "27",
+      "name": "first omitted output distance",
+      "relation": "=",
+      "rhs": "27"
+    },
+    {
+      "lhs": "116",
+      "name": "finite head sites count",
+      "relation": "=",
+      "rhs": "116"
+    },
+    {
+      "lhs": "120",
+      "name": "finite total qubits count",
+      "relation": "=",
+      "rhs": "120"
+    },
+    {
+      "lhs": "116",
+      "name": "finite head edges count",
+      "relation": "=",
+      "rhs": "116"
+    },
+    {
+      "lhs": "121",
+      "name": "executed graph vertex cap",
+      "relation": "<",
+      "rhs": "256"
+    },
+    {
+      "lhs": "3752638388379/62500000000000",
+      "name": "positive-jump Eprime ceiling",
+      "relation": "<",
+      "rhs": "61/1000"
+    },
+    {
+      "lhs": "5514400000000000000000000000000000",
+      "name": "positive-jump finite-core trace substitution",
+      "relation": "<",
+      "rhs": "10000000000000000000000000000000000"
+    },
+    {
+      "lhs": "60000000000000000366000000000000000000000000000000",
+      "name": "positive-jump differentiated matching substitution",
+      "relation": "<",
+      "rhs": "70000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1000000000000000000000000000000000122/25",
+      "name": "reciprocal reflection derivative substitution",
+      "relation": "<",
+      "rhs": "50000000000000000000000000000000000"
+    },
+    {
+      "lhs": "60025/31850496",
+      "name": "closed-tail derivative multiplier squared",
+      "relation": "<",
+      "rhs": "1/400"
+    },
+    {
+      "lhs": "350000000000000006/3",
+      "name": "positive-jump localized norm",
+      "relation": "<",
+      "rhs": "200000000000000000"
+    },
+    {
+      "lhs": "245000000000000150000000000000000015000000000000000/3",
+      "name": "positive-jump localized derivative",
+      "relation": "<",
+      "rhs": "200000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "100000700000000000000000000000000",
+      "name": "positive-jump incoming variation",
+      "relation": "<",
+      "rhs": "200000000000000000000000000000000"
+    },
+    {
+      "lhs": "[16000000000000000000000000000, Fraction(120000000000000000000000000000000000000000000, 1), Fraction(400000000000000000000000000000000000000000000000, 1), Fraction(20000000000000000000000000000000000000000000000000, 1), Fraction(976000000000000, 1)]",
+      "name": "corrected pointwise derivative term expansion",
+      "relation": "=",
+      "rhs": "[16000000000000000000000000000, 120000000000000000000000000000000000000000000, 400000000000000000000000000000000000000000000000, 20000000000000000000000000000000000000000000000000, 976000000000000]"
+    },
+    {
+      "lhs": "20400120000000000000016000000000000976000000000000",
+      "name": "corrected pointwise localized variation",
+      "relation": "<",
+      "rhs": "21000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "21000000000000000000000000000000000000000000000000",
+      "name": "corrected pointwise aggregated ceiling",
+      "relation": "<",
+      "rhs": "100000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "40000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "corrected pointwise denominator squared",
+      "relation": "<",
+      "rhs": "75000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "500001000000000000001/250000000000000000000000000",
+      "name": "corrected pointwise escape at historical intermediate onset",
+      "relation": "<",
+      "rhs": "3/1000000"
+    },
+    {
+      "lhs": "18080000000000000183/18750",
+      "name": "finite spectral-mass weighted reflection derivative",
+      "relation": "<",
+      "rhs": "1000000000000000"
+    },
+    {
+      "lhs": "700000000001000000000000000",
+      "name": "finite spectral-mass incoming variation",
+      "relation": "<",
+      "rhs": "800000000000000000000000000"
+    },
+    {
+      "lhs": "10000000000000000000000000000061/12500",
+      "name": "finite spectral-mass incoming numerator",
+      "relation": "<",
+      "rhs": "900000000000000000000000000"
+    },
+    {
+      "lhs": "[16000000000000000000000000000, Fraction(120000000000000000000000000000000000000000000, 1), Fraction(400000000000000000000000000000000000000000000000, 1), 200000000000000000000000000000000, Fraction(976000000000000, 1)]",
+      "name": "integrated phase derivative term expansion",
+      "relation": "=",
+      "rhs": "[16000000000000000000000000000, 120000000000000000000000000000000000000000000, 400000000000000000000000000000000000000000000000, 200000000000000000000000000000000, 976000000000000]"
+    },
+    {
+      "lhs": "400120000000000200016000000000000976000000000000",
+      "name": "integrated localized variation",
+      "relation": "<",
+      "rhs": "500000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "500000000000000000000000000000000000000000000000",
+      "name": "integrated localized operator ceiling",
+      "relation": "<",
+      "rhs": "10000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "40000000000000000000000000000000000000000000000000000000000000000",
+      "name": "refined onset denominator squared",
+      "relation": "<",
+      "rhs": "75000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "21250000001/2500000000000000",
+      "name": "refined onset escape arithmetic",
+      "relation": "<",
+      "rhs": "9/1000000"
+    },
+    {
+      "lhs": "2823750000001/2500000000000000",
+      "name": "refined onset infinite complete ceiling",
+      "relation": "<",
+      "rhs": "13/10000"
+    },
+    {
+      "lhs": "43200000000000000000000000000000000000000000000000000000000000000009",
+      "name": "refined onset finite exponent margin",
+      "relation": "<",
+      "rhs": "50000000000000000000000000000000000000000000000000000000000000000023"
+    },
+    {
+      "lhs": "5323750000001/2500000000000000",
+      "name": "refined onset finite complete ceiling",
+      "relation": "<",
+      "rhs": "23/10000"
+    },
+    {
+      "lhs": "3/100",
+      "name": "weighted J lower",
+      "relation": "<",
+      "rhs": "3752638388379/125000000000000"
+    },
+    {
+      "lhs": "3752638388379/125000000000000",
+      "name": "weighted J upper",
+      "relation": "<",
+      "rhs": "31/1000"
+    },
+    {
+      "lhs": "3/125",
+      "name": "weighted monotone real denominator derivative",
+      "relation": "<",
+      "rhs": "750527677675799999999/30021107107032000000000"
+    },
+    {
+      "lhs": "1831287533528952000001/30021107107032000000000",
+      "name": "weighted denominator derivative upper",
+      "relation": "<",
+      "rhs": "31/500"
+    },
+    {
+      "lhs": "12",
+      "name": "weighted imaginary denominator lower coefficient",
+      "relation": "<",
+      "rhs": "50000000000000/3752638388379"
+    },
+    {
+      "lhs": "1",
+      "name": "weighted reference amplitude coefficient squared",
+      "relation": "<",
+      "rhs": "2543614507534859537563551745815431751/2441406250000000000000000000000000000"
+    },
+    {
+      "lhs": "113",
+      "name": "weighted reference phase derivative",
+      "relation": "=",
+      "rhs": "113"
+    },
+    {
+      "lhs": "1443/6250",
+      "name": "weighted regular reference variation",
+      "relation": "<",
+      "rhs": "29/125"
+    },
+    {
+      "lhs": "8036750000000/9",
+      "name": "weighted resonant reference variation",
+      "relation": "<",
+      "rhs": "1000000000000"
+    },
+    {
+      "lhs": "135000000000029/125",
+      "name": "weighted endpoint inclusive reference variation",
+      "relation": "<",
+      "rhs": "2000000000000"
+    },
+    {
+      "lhs": "1002000000000000",
+      "name": "weighted incoming variation",
+      "relation": "<",
+      "rhs": "2000000000000000"
+    },
+    {
+      "lhs": "25000000000000000061/12500",
+      "name": "weighted incoming scalar numerator",
+      "relation": "<",
+      "rhs": "3000000000000000"
+    },
+    {
+      "lhs": "25000000000000061/12500",
+      "name": "weighted outgoing scalar numerator",
+      "relation": "<",
+      "rhs": "3000000000000"
+    },
+    {
+      "lhs": "7232",
+      "name": "weighted Cauchy Schwarz core bound squared",
+      "relation": "<",
+      "rhs": "7396"
+    },
+    {
+      "lhs": "51600732000000000000000000000000000",
+      "name": "weighted matching derivative integral",
+      "relation": "<",
+      "rhs": "52000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1820000000000000000030000000000000129/30",
+      "name": "weighted closed-tail localized derivative integral",
+      "relation": "<",
+      "rhs": "70000000000000000000000000000000000"
+    },
+    {
+      "lhs": "[400000000000000000000000000000, 70000000000000000000000000000000000, 200000000000000000000000000000000, Fraction(976000000000000, 1)]",
+      "name": "weighted full localized term expansion",
+      "relation": "=",
+      "rhs": "[400000000000000000000000000000, 70000000000000000000000000000000000, 200000000000000000000000000000000, 976000000000000]"
+    },
+    {
+      "lhs": "70200400000000000000976000000000000",
+      "name": "weighted full localized variation",
+      "relation": "<",
+      "rhs": "80000000000000000000000000000000000"
+    },
+    {
+      "lhs": "80000000000000000000000000000000000",
+      "name": "weighted localized aggregated ceiling",
+      "relation": "<",
+      "rhs": "100000000000000000000000000000000000"
+    },
+    {
+      "lhs": "40000000000000000000000000000000000000000",
+      "name": "weighted onset denominator squared",
+      "relation": "<",
+      "rhs": "75000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "3803/200000000",
+      "name": "weighted onset escape arithmetic",
+      "relation": "<",
+      "rhs": "1/50000"
+    },
+    {
+      "lhs": "228003/200000000",
+      "name": "weighted onset infinite complete ceiling",
+      "relation": "<",
+      "rhs": "13/10000"
+    },
+    {
+      "lhs": "43200000000000000000000000000000000000000009",
+      "name": "weighted onset finite exponent margin",
+      "relation": "<",
+      "rhs": "50000000000000000000000000000000000000000023"
+    },
+    {
+      "lhs": "428003/200000000",
+      "name": "weighted onset finite complete ceiling",
+      "relation": "<",
+      "rhs": "23/10000"
+    }
+  ],
+  "dense_dimension_max": 4,
+  "executed_geometry_vertices": 121,
+  "historical_onsets": {
+    "corrected_pointwise": "1000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "integrated_spectral_mass": "1000000000000000000000000000000000000000000000000000000000000000000",
+    "original": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "large_matching_matrices_executed": false,
+  "runtime_reads": {
+    "package_integrity": [
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/FAILURES_AND_SCOPE.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/RESOURCE_PLAN.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/ROUTE.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/SOURCE_MANIFEST.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/THEOREM_NOTE_V1.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/check_route.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/launch_check.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/EXECUTION.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/PRELAUNCH.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/RESULT.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stderr.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CANDIDATE.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CORRECTED_V2.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/SPECTRAL_SUM_ADDENDUM.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/SPECTRAL_SUM_CORRECTED.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/WEIGHTED_VARIATION_CANDIDATE.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/ADDENDUM_REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/WEIGHTED_REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_programs/check_quantitative.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_programs/launch_quantitative.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/EXECUTION.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/PRELAUNCH.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/RESULT.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/stderr.txt.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/quantitative_run/stdout.jsonl.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/QUANTITATIVE.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/QUANTITATIVE_PRECHECK.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/RECEIPT.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/real_two_port_structural_check/SOURCE_PINS.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_acceptance.json.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_qualification.md.txt"
+    ],
+    "scientific_data": [
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json"
+    ],
+    "self_integrity": []
+  },
+  "scope": "Scalar corroboration of conditional bounds; no proof or audit status.",
+  "weighted_onset": "1000000000000000000000000000000000000000000",
+  "weighted_output_sites": "50000000000000000000000000000000000000000000"
+}
+TOTAL PASS: declared integrity and scoped arithmetic checks only.
+
+----- stderr -----
+

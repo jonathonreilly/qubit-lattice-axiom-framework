@@ -1,6 +1,6 @@
 {
- "edge_count": 16167,
- "node_count": 7212,
+ "edge_count": 16169,
+ "node_count": 7213,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18465,6 +18465,10 @@
   "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "real_endpoint_autonomous_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "d8ff3cbf3e4c",
+   "out_degree": 2
   },
   "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d80ec1818362",

@@ -1,0 +1,98 @@
+# Bounded canonical integration check
+
+Disposition: no changed scientific premise, scope drift, or dropped T=10^42
+proof step found in the canonical integration relative to frozen V2. This is
+an exposed integration check by the V2 drafter, not blind independence,
+re-review of unchanged derivations, an audit verdict, or landing approval.
+
+## Findings
+
+The complete canonical-versus-V2 diff consists of the new Reproducible sources
+section and replacement of the V1 provenance filename by its packaged path.
+The mathematical body is otherwise identical (allowing one separator newline).
+The full weighted reference phase113 derivative, monotone X substitution,
+endpoint variation, finite-core spectral mass, weighted x/C derivative, explicit
+1/R derivative, Fourier/old-column factors and T42 arithmetic remain intact.
+So do M=5e43, escape <2e-5, infinite <.001141, finite <.002141 only on [T,2T],
+residual spectrum, source residual, common profile, scalar, old aging and all
+physical imports. The explicit emitter-displacement radius bound is present.
+
+The four new links resolve to ordinary local files: primary, manifest, interval
+wrapper and family wrapper. Deterministic byte search finds the complete frozen
+interval and family source bodies exactly once inside their respective linked
+wrapper notes. Thus the linked mathematical inputs contain the unchanged
+premises used in the draft; section 2 in the family link means section 2 of
+its explicitly embedded unchanged author body. The wrappers' other emitter and
+packet results are not imported by the endpoint theorem. No complete re-review
+of those wrappers or their ancestral proofs was performed.
+
+All 42 manifest-listed package files match their declared SHA256 and byte counts
+and their current original_source files. All six source_premises entries match;
+interval/family scientific bodies and qualification identities agree with the
+prior pinned sources. The two acceptance JSON files were checked as identity
+records only, not re-adjudicated mathematical evidence. The manifest set plus
+the manifest itself equals the primary's literal AUDIT_INPUT_PATHS tuple.
+
+Historical CANDIDATE, CORRECTED_V2, original and corrected spectral addenda,
+weighted candidate/review and frozen V1 are carried unchanged. The note correctly
+labels the missing localized 1/R derivative and insufficient pi<4 argument as
+historical defects, with explicit repairs. It preserves the valid T66 stage.
+The weighted candidate's historical 'unreviewed' label is not rewritten; its
+subsequent review and the current root qualification explicitly accept T42.
+The packaged root qualification contains the added weighted-refinement section,
+so its hash differs from the earlier V1 source pin for that evolving document.
+This is disclosed qualification history, not a changed physical premise.
+
+## Limits and unresolved publication checks
+
+No science code was executed or imported, no Git operation was performed, and
+W was not edited. AST parsing only inspected literal input declarations; hashing
+and substring comparisons are bookkeeping. The primary's mathematical code,
+actual execution/cache, mutation coverage and runtime behavior were not reviewed.
+The source sentence that historical programs are never replayed is not independently
+runtime-verified here. Git tracking, remote/base commit cbd23228 provenance,
+unmerged PR status, citation graph behavior, transitive closure/landing readiness
+and full pipeline remain root responsibilities. Links resolve locally; that is
+not proof that their targets are tracked. The initial broad wrapper diff was
+truncated and was not treated as complete verification: exact full-body byte
+containment and scoped premise inspection supplied the integration evidence.
+
+Current source identities must be refreshed if concurrent integration changes
+these files. No editable prompts or platform instructions were changed.
+
+## Exact SHA256 identities
+
+| File | SHA256 |
+|---|---|
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/autonomous_endpoint_publication_draft/THEOREM_NOTE_V2.md` | `425c04f1b1d763637f8af2a63b62613b3d57d0b698dee0780ee3ce92d65a99e4` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `36e27048ece4cb95c0c27a478d55649f321bf2c337954ba1c5f8067f466c4404` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json` | `0af88d029f0f515a2c7d0fe327a86115a8b3e42e3ae17ed2d84215990b568a48` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/real_endpoint_autonomous_output_2026_10_17.py` | `bd710e0589907cb40a90d17dd609c6cf332e32bb3e7bc2a4c4d232de9ad542f4` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_qualification.md.txt` | `27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family_acceptance.json.txt` | `a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_qualification.md.txt` | `33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval.md.txt` | `b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/family.md.txt` | `9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/source_premises/interval_acceptance.json.txt` | `fba41e11ee5e282800547e7571ab520abddeda1d9d3947d7095b9dfbf6fbc4fb` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/THEOREM_NOTE_V1.md.txt` | `02d8ac6dc3ab1f3c7a3d30933a14f6cbffd8971ffc59e59cb2ba364b3dee1a92` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt` | `4424b600ca44784b818de64c0c9b7eb2e0a4d11878fd3f187ceca88403d1777f` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/WEIGHTED_VARIATION_CANDIDATE.md.txt` | `705081af26f4850d0688efdbf55c99443a4b359897d87c390d07aa8a7dbd21b3` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset_check/WEIGHTED_REVIEW.md.txt` | `99b91967f2aace33c2bbc80b75c4dc9eec49d3e6646ce86242a9ea2ce5f23a66` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac` |
+| `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87` |
+
+## Mechanical integration observations
+
+```json
+{
+  "manifest_rows": 42,
+  "identity_failures": [],
+  "normalized_body_equal": true,
+  "linked_files_regular": true,
+  "embedded_full_body_occurrences": [
+    1,
+    1
+  ],
+  "declared_input_set_equal": true
+}
+```

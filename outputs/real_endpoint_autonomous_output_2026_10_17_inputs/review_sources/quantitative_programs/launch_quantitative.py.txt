@@ -1,0 +1,31 @@
+from pathlib import Path
+import hashlib,json,sys,os,subprocess,resource,datetime,time
+base=Path(__file__).resolve().parent
+run=base/'quantitative_run';run.mkdir(exist_ok=False)
+paths=[base/'check_quantitative.py',base/'launch_quantitative.py',base/'QUANTITATIVE_PRECHECK.md',base/'SOURCE_PINS.json',Path(sys.executable).resolve()]
+manifest=json.loads((base/'SOURCE_PINS.json').read_text())
+paths += [base/e['snapshot'] for e in manifest['entries']]
+paths += [Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md')]
+bindings=[]
+for p in paths:
+ b=p.read_bytes();bindings.append({'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+assert bindings[-1]['sha256']=='fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9'
+cmd=[sys.executable,str(base/'check_quantitative.py')]
+receipt={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'bindings':bindings,'command':cmd,'cwd':str(base),'cpu_limit_seconds':[10,10],'wall_timeout_seconds':15,'file_limit_bytes':16*1024*1024,'address_space_cap_requested':False,'numeric_scope':'small exact-Fraction comparisons only; no matrices/simulation'}
+with (run/'PRELAUNCH.json').open('w') as f:json.dump(receipt,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+def limits():
+ resource.setrlimit(resource.RLIMIT_CPU,(10,10))
+ resource.setrlimit(resource.RLIMIT_FSIZE,(16*1024*1024,16*1024*1024))
+start=time.monotonic()
+with (run/'stdout.jsonl').open('wb') as out,(run/'stderr.txt').open('wb') as err:
+ p=subprocess.Popen(cmd,cwd=base,stdout=out,stderr=err,preexec_fn=limits)
+ try:code=p.wait(timeout=15);timeout=False
+ except subprocess.TimeoutExpired:p.kill();code=p.wait();timeout=True
+rec={'returncode':code,'wall_seconds':time.monotonic()-start,'timeout':timeout,'completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'output_files':{}}
+for name in ['stdout.jsonl','stderr.txt','RESULT.json']:
+ pp=run/name
+ if pp.exists():
+  b=pp.read_bytes();rec['output_files'][name]={'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+(run/'EXECUTION.json').write_text(json.dumps(rec,indent=2)+'\n')
+print(json.dumps(rec,indent=2))
+sys.exit(code)

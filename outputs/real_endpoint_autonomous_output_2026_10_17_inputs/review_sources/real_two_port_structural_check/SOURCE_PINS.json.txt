@@ -1,0 +1,85 @@
+{
+  "frozen_utc": "2026-10-17T11:14:04.304447+00:00",
+  "review_kind": "independent analytical structural reconstruction; author argument exposed; author checker/output unopened",
+  "methodology_commit": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f",
+  "scientific_numeric_execution": false,
+  "entries": [
+    {
+      "snapshot": "sources/ROUTE.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/ROUTE.md",
+      "bytes": 39888,
+      "sha256": "fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9",
+      "read_scope": "complete 726-line argument, reread in untruncated chunks"
+    },
+    {
+      "snapshot": "sources/SOURCE_MANIFEST.json",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/SOURCE_MANIFEST.json",
+      "bytes": 9824,
+      "sha256": "5fe85e0e4d1a67351e125ab512f92cea27e2f3ec028e11ae10ede858e89a6659",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/inputs/interval.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/interval.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/inputs/interval_qualification.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/interval_qualification.md",
+      "bytes": 3291,
+      "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/inputs/family.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/family.md",
+      "bytes": 39464,
+      "sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+      "read_scope": "only section 2 lines 134-203; Green identity premise, not whole family theorem"
+    },
+    {
+      "snapshot": "sources/inputs/family_qualification.md",
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/family_qualification.md",
+      "bytes": 2896,
+      "sha256": "27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/methodology/AGENTS.md",
+      "original": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f:AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/methodology/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "original": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/methodology/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "original": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/methodology/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "original": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_scope": "complete"
+    },
+    {
+      "snapshot": "sources/methodology/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "original": "84ec6fdfe5861a42ef9ee9448f111098cdd3816f:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_scope": "complete"
+    }
+  ]
+}

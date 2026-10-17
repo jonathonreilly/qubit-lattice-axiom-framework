@@ -1,0 +1,100 @@
+# Check of integrated spectral mass and the 10^66 onset
+
+Disposition: the additional finite-rank spectral-mass estimate supports the conditional T=10^66 result. One numerical justification needs a narrow correction: `pi<4` alone does not prove the stated weighted derivative bound <1e15; replace it with `pi<10/3` or `pi<22/7`. No change of apparatus, spectral normalization, input state, error metric, or physical premise is required. Original route inputs remain provisional.
+
+## Frozen sources and procedure comparison
+
+The earlier REVIEW.md is unchanged, SHA256 `dd85745135125e1366bf9abd696a7f5e37c705e21ec551afd145bf3cc5564de0`.
+
+New scientific sources were read completely:
+
+- `../positive_jump_onset/CORRECTED_V2.md`: `3c90a0f71ccccbbba857bde79680c6eb10271af4bf7d71d04172b1149004ebe3`.
+- `../positive_jump_onset/SPECTRAL_SUM_ADDENDUM.md`: `9ad37ab5908a0eb342d7e5d009ed6862ae94dedd900ad589381594d9161b5bb6`.
+
+The original ROUTE.md remains the source identified in REVIEW.md, hash `fa51af25903bd07f2ec7a3ab6f4afb78122011a4197b81d514f653d12ce288e9`. The earlier source-exposed algebra and lattice reconstruction are reused within their unchanged scope. The root's spectral-mass proposal and desired exponent were known before this check; this is a source-exposed independent analytical examination, not blind discovery or model-diverse evidence. No author scientific checker/output was read, and no numerical scientific run was needed or performed.
+
+Current instructions were read from the explicitly requested `correlation_worktree` under `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/`:
+
+| File | SHA256 |
+|---|---|
+| AGENTS.md | febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0 |
+| docs/ai_methodology/SCIENCE_WORKFLOW.md | 71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3 |
+| docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md | 9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455 |
+| docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md | b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0 |
+| docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md | be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258 |
+
+The previous review's older AGENTS/workflow exposure is preserved, not rewritten as current exposure. The current AGENTS now directs first to SCIENCE_WORKFLOW; the current workflow reorganizes and condenses evidence, independence, premise, cadence and authority rules. Those applicable rules agree with the actual conditional, source-pinned mathematical check already performed. The current reviewer skill and proof-search reference are byte-identical to the installed versions previously read. No new procedure authorizes status promotion or alters the mathematical result. No Git/fetch, PR, checkpoint, prompt, axiom or model setting was changed; remote freshness is not asserted.
+
+## Confirmation of CORRECTED_V2
+
+A complete diff against the original CANDIDATE.md shows only the approved derivative correction, its 1e50/(vt) conservative ceiling, and corresponding status/provenance text. This agrees with REVIEW.md. A residual wording imprecision is that the section still says “variation of f C/E'” while the actual repaired calculation is for `a C/E'`, with `a=omega f/R`. The formula and explicit explanatory paragraph are correct; changing that phrase would remove ambiguity. No additional scientific change is hidden in V2.
+
+## Spectral normalization and finite-rank bound
+
+Work in one fixed parity of the actual infinite apparatus. Let Jcore:C^904 -> H be the isometric inclusion of its fixed physical finite-core coordinates. This avoids confusing the finite-core projection with ROUTE's closed-channel projection, also denoted Pc elsewhere. The retarded finite-coordinate kernel is Jcore* (lambda+i0-H)^(-1) Jcore. With lambda=c_new+b_j+E(k), Stone's density and the stipulated jump give
+
+    Jcore* dE_H(lambda) Jcore
+       = -(1/(2pi i))[-i x(k)x(k)*/E'(k)] d lambda
+       = x(k)x(k)* dk/(2pi).
+
+There is no extra E' or inverse E' after d lambda=E' dk. E'>v>0 makes this substitution one-to-one. The fixed parity has exactly one propagating channel on the stipulated interval; the unit-incoming convention and normalization are precisely those of ROUTE. The 904-dimensional x includes all finite-core internal and emitter coordinates, not only its open component.
+
+With B_j=c_new+b_j+E(I), integration yields
+
+    integral_I x x* dk/(2pi) = Jcore* E_H(B_j) Jcore
+
+under ROUTE's original assertion that this interval's finite-coordinate spectral measure is absolutely continuous and fully represented by the stated jump. More generally the left side is the absolutely continuous spectral contribution, which is <=Jcore* E_H(B_j) Jcore even if additional singular spectral mass exists. The weaker inequality is all the refinement needs. In either formulation,
+
+    integral_I ||x||^2 dk/(2pi)
+      <= tr[Jcore* E_H(B_j) Jcore] <= tr I_904 =904.
+
+This is a finite-rank positive contraction estimate. It is not a whole-space trace, not integration of a divergent resolvent, and not an assertion that spectral mass outside this interval vanishes. No sum over other parities or the two different old-energy intervals is needed: the bound is applied separately to each column. A rank of 1808 would double-count parity for this estimate.
+
+This derivation also identifies its necessary premise: G must be the compression of the actual self-adjoint Hamiltonian resolvent, with the given jump normalized as a spectral density. The pointwise matrix identity alone for an arbitrary parameter-dependent M would not supply the global mass bound. That resolvent/spectral premise was already explicit in ROUTE and the original requested contract; the addendum does not independently establish it.
+
+## Weighted derivative and numerical margin
+
+Use the already checked reciprocal identity and |1+R|<=2:
+
+    integral_I |f| |R'|
+      <=2(.061/.025)||f||_1
+         +(.1/.025)||f||infinity integral_I ||x||^2
+      < .00976 +(4)(4e10)(2pi)(904).
+
+The last expression using only pi<4 is <.00976+1.15712e15, which does not establish <1e15. This is a defect in the cited sufficient arithmetic, not in the desired bound. For example pi<10/3 gives
+
+    .00976 +(1.6e11)(20/3)(904)
+      = .00976 +(28928/3)e11 <1e15.
+
+Hence the asserted bound holds with that explicit correction. One could instead keep pi<4 and carry 1.2e15; all following generous ceilings would still hold, but the printed 2e32 localized phase term would need changing to 2.4e32. Using pi<10/3 preserves every subsequent displayed constant.
+
+The endpoint-inclusive variation therefore satisfies
+
+    Vedge(a) <=Vedge(f)+integral|f||R'| <7e26+1e15<8e26.
+
+This retains both hard-cutoff endpoint values. The curvature term in scalar integration by parts is (.061/v)||a||_1<.00488. Thus the numerator is <9e26. Applying the previously reconstructed lattice sum, with Fourier normalization and s=vt>=1, gives incoming norm <9e26/sqrt(pi s). Distinct old-energy input columns have orthogonal open output fibers, so this norm does not need a sqrt(2) aggregation. The unchanged outgoing restriction/positive-normalization cost remains <8e26/sqrt(pi s).
+
+## Localized vector, residual mass and time bound
+
+The localized column and its derivative bounds C0=2e17 and C1=2e50 remain as independently checked in REVIEW.md. Closed channels are included through the full finite core and the exact closed-tail recurrence. The derivative of 1/R is still present; it now obeys the integrated estimate
+
+    C0 integral|f||R'| <2e32.
+
+Thus the complete numerator before the 1/(sqrt(2pi)vt) Fourier/phase factor is
+
+    1.6e28 +1.2e44 +4e47 +2e32 +9.76e14 <5e47.
+
+After paying sqrt(2) for the two potentially overlapping localized column errors per parity, the operator bound is <5e47/(sqrt(pi)vt), safely below 1e49/(vt). The two parities remain orthogonal. This includes the exact same packet phase, old aging and full apparatus outputs, and extends to passive references by the operator norm.
+
+At T=1e66, vT=2.5e64 and sqrt(pi vT)>2e32. Therefore
+
+    incoming + outgoing normalization < (9e26+8e26)/(2e32)=8.5e-6,
+    localized <1e49/(2.5e64)=4e-16.
+
+Their sum is <9e-6, hence <1e-4. All ceilings decrease for t>=T. Adding the unchanged imported preparation-to-packet error <.001121 gives infinite error <.001130, safely <.0013. This preparation error still includes the original residual and out-of-band spectral amplitudes. The integrated spectral bound does not discard or condition away that mass; it only bounds an in-band derivative.
+
+The prior finite-transfer estimate at M=50T and t<=2T has exponent at most -[50-36 sinh(1)]T-23<-6.8T-23. It remains <.001, giving finite error <.002130 and hence <.0023 on [T,2T], with M=5e67. This is the same supplied apparatus truncated before delivery, with the same embedded infinite comparator. No finite all-future capture, new waveform, practical resource claim or time-unit identification follows.
+
+## Final boundary
+
+The spectral sum is a valid additional analytical lemma within the same positive-jump family, using the already named original spectral-resolvent premises. Its check does not qualify the original kernel ceilings, profile, preparation estimate or finite-transfer theorem; their separate upstream verification remains required. Correct the pi inequality citation and optionally clarify `a C/E'` and `Jcore` notation before presenting this addendum as checked. The T=10^66 conditional conclusion needs no other repair found in this bounded review.

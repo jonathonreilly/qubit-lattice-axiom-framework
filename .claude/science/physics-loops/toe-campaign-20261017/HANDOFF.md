@@ -11,7 +11,7 @@ adopted; every result is unaudited bounded support with a declared model.
 ## Final state (2026-10-17T15:46Z)
 
 - The campaign is closed and the hourly task is deleted.
-- C1–C15 are on main. C16, C17 and C18 are in PR #9671.
+- C1–C15 are on main. C16–C19 are in PR #9671.
 - **Next:** queue item 0++, a direction-carried charge with no site term.
 
 ## The arc in one paragraph (for the owner; interpretation, not a claim)
@@ -22,6 +22,21 @@ adopted; every result is unaudited bounded support with a declared model.
 - Supplied conditional dynamics distinguish the rotation realizations. Majorana-only and number-conserving hopping are modeling choices; no physical electric charge or electron spin-charge relation is derived.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
+
+## C19: a massive Dirac particle (owner's request)
+
+- **Weyl pair.** With a rotation- and inversion-invariant, conjugation-odd term, the two rotation-fixed momenta host an opposite-chirality Weyl pair: a massless Dirac fermion.
+- **Protected by the cube rotations.** The w1-odd rotations act like a chiral symmetry. No rotation-invariant staggered mass exists, because the two doublets are E1/2 and E5/2.
+- **The mass.** A pseudoscalar (A2) imaginary staggered term gives a massive, isotropic Dirac fermion, E = ±sqrt(v²k² + m²), whose doublets are spin-1/2. The cube rotations survive about cube centres.
+- **Open.**
+  - A clean Dirac vacuum, with the Dirac point the global low-energy feature.
+  - The qubit-level terms.
+  - A mass-generation mechanism.
+  - Charge.
+
+## Six qubits per site: retired for the lane
+
+C11 is marked SUPERSEDED. Direction positions lie on C4 axes, which forces a trivial C4 class under Clifford/PSG realizations. C16's direction-shell design paragraph is corrected. The lane now uses the corner code (C17–C19).
 
 ## C18: the large fermion (owner's "electron much larger than the grid")
 

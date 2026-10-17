@@ -1,0 +1,13 @@
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+Part 1: complex-conjugation-odd terms invariant under O, site inversion and translations (range <= 1 site)
+[PASS] the space of such terms is 9-dimensional  singular values [1.     0.8462 0.7887 0.7056 0.5942 0.5016 0.4559 0.2408 0.1064 0.
+ 0.    ]
+[PASS] these terms are invariant under all rotations and the site inversion, and odd under complex conjugation
+
+Part 2: Weyl pair at the rotation-fixed momenta (t1 = -1, t2 = 0.2, X strength 0.05)
+[PASS] the lowest levels at k* and -k* are degenerate doublets at the same energy (inversion)
+[PASS] the doublet splits linearly with the same velocity in every direction (isotropic Weyl cone)  v = 0.10960, spread 9.5e-11
+[PASS] Berry flux of the lower band through a small sphere is +1 at one node and -1 at the other (opposite chirality)  -1.0000, +1.0000
+
+Part 3: Dirac mass terms (staggered, momentum Q = (pi,pi,pi), on-site)

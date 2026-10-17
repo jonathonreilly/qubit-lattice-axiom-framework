@@ -1,6 +1,6 @@
 {
- "edge_count": 16180,
- "node_count": 7214,
+ "edge_count": 16182,
+ "node_count": 7215,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20449,6 +20449,10 @@
   "spin_statistics_fs_admission_located_exercise_note_2026-06-06": {
    "deps_hash": "8e85237fd4da",
    "out_degree": 6
+  },
+  "spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_carries_spin_half_class_on_all_cubic_rotations_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "af498dbb091f",
+   "out_degree": 2
   },
   "spinnetwork_full_ed_bounded_theorem_note_2026-05-07_w1full": {
    "deps_hash": "838364dd6763",

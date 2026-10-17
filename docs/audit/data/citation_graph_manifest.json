@@ -1,6 +1,6 @@
 {
- "edge_count": 16151,
- "node_count": 7195,
+ "edge_count": 16154,
+ "node_count": 7196,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21797,6 +21797,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_qubit_site_cubic_covariant_stabilizer_rules_three_dimensional_defect_motion_writes_a_local_record_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f6b42014f976",
+   "out_degree": 3
   },
   "two_qubit_site_unfreezes_the_cubic_tick_doubler_free_dirac_walk_bounded_theorem_note_2026-10-16": {
    "deps_hash": "f8cc0c81b987",

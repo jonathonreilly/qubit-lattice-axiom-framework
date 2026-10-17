@@ -6,7 +6,7 @@ mode: campaign
 delivery: milestone
 target: best-honest-status
 lane: N1 (electron as emergent excitation of neighbourhood conditions)
-active_block: C2-two-qubit-site-stabilizer-rules
+active_block: C3 (next ranked; see OPPORTUNITY_QUEUE)
 blocks:
   C1-one-qubit-nn-stabilizer-rules:
     status: delivered_to_branch
@@ -15,6 +15,13 @@ blocks:
     exact: ["axis/full: Chamon only", "Chamon charge ideal = 4 body-diagonal curve primes; no 3D-mobile charge; single defect immobile; planons", "trivial/sign: single-label or cluster-type", "tori L=4,6: log2 dim 4L, sign-consistent"]
     model: hard-support stabilizer reading (supplied)
     independent_check: "CONFIRMED all four claims (fresh agent, own implementation: SU(2) lifts, exact curve-restriction certificates, GF(2) box algebra to n=12, Singular radical check); corrected overall sign (both signs valid on Z^3)"
+    trace_class: frontier_discovery
+  C2-two-qubit-site-stabilizer-rules:
+    status: delivered_to_branch
+    note: docs/TWO_QUBIT_SITE_CUBIC_COVARIANT_STABILIZER_RULES_THREE_DIMENSIONAL_DEFECT_MOTION_WRITES_A_LOCAL_RECORD_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/two_qubit_site_cubic_covariant_stabilizer_rules_three_dimensional_motion_writes_a_record_2026_10_17.py (PASS=17 with Singular, ~8 min)
+    exact: ["spin soldered, flavour fixed/soldered: exhaustive classification", "record-free operators never move a charge along 3 independent vectors", "rules without free local variables: no 3D-mobile defect", "example Chamon(x)flavour-X-neighbours: R/((x+1)^2,(y+1)^2,(z+1)^2), 8 even-step-mobile charges, every move flips flavour X"]
+    independent_check: "CONFIRMED A, C, D; refuted the first statement of B (missed E orbit), now in runner; 658 rules checked by own Ext^3 test; signs not independently tested"
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

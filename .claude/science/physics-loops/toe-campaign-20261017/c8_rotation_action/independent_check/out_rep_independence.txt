@@ -1,0 +1,2 @@
+(flux 0/pi, same signed group as class rep): count over 60*11 orderings: {(0, True): 660, (1, True): 660}
+P_R A^sigma_e P_R^-1 == A^{R sigma}_{Re} exactly: mismatches = 0

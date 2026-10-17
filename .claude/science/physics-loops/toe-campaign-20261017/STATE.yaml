@@ -52,12 +52,11 @@ blocks:
     trace_class: frontier_discovery
   C8-bksf-rotation-action-spin:
     status: delivered_to_branch
-    note: docs/BKSF_CUBIC_FERMION_CODES_ROTATIONS_ACT_BY_BARE_PERMUTATION_NO_SPINORIAL_ROTATION_FRACTIONALIZATION_BOUNDED_THEOREM_NOTE_2026-10-17.md
-    runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py (PASS=5, ~1 min)
+    note: docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py (PASS=7, ~1.5 min)
     exact: ["8 translation-invariant sign sectors valid for all 60 codes", "sectors (0,0,0)/(1,1,1) = flux 0/pi; every stabilizing rotation acts by bare permutation there", "mixed sectors need sign corrections (control)"]
-    proved: "eta_f(C2,C2) = +1 at fixed vertices, stable under stabilizer dressing: fermion not spinorial under lattice rotations"
-    interpretation: "pi-flux sector rotation-symmetric -> staggered (Kogut-Susskind) hopping, 2 Dirac tastes, spin x taste integer"
-    independent_check: pending
+    pair_test: "72/108 (code,C2) pairs covered: swapped pair lambda=+1 -> eta_f(C2,C2) = -1 under bare permutation P_R (spinorial); P_R*prod exp(-i pi B/4) gives +1 (realization-dependent)"
+    independent_check: "claims 1-4 CONFIRMED (L=4,6); first-version claim eta_f=+1 REFUTED (restriction of P_R to a region is not a valid localization); pair test + Majorana form + W dressing adopted; note rewritten and renamed"
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

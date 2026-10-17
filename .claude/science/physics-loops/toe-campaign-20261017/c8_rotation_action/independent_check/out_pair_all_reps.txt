@@ -1,0 +1,6 @@
+108 ('flux0', 'cube-centre+edge-mid', 'edgeC2', '[1.0]')
+108 ('flux0', 'vertex-axis', 'edgeC2', '[1.0]')
+108 ('fluxpi', 'cube-centre+edge-mid', 'edgeC2', '[1.0]')
+108 ('fluxpi', 'vertex-axis', 'edgeC2', '[1.0]')
+36 ('no symmetric ordering in class',)
+pairs with no symmetric ordering: 36

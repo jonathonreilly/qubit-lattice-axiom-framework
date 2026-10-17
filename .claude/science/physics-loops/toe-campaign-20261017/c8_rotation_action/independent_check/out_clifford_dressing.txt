@@ -1,0 +1,4 @@
+12 ('flux0', 'bare P_R lambda', "[1.0, 'not-in-group']", 'P_R W lambda', "[-1.0, 'not-in-group']")
+60 ('flux0', 'bare P_R lambda', '[1.0]', 'P_R W lambda', '[-1.0]')
+12 ('fluxpi', 'bare P_R lambda', "[1.0, 'not-in-group']", 'P_R W lambda', "[-1.0, 'not-in-group']")
+60 ('fluxpi', 'bare P_R lambda', '[1.0]', 'P_R W lambda', '[-1.0]')

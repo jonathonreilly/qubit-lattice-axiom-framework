@@ -100,6 +100,10 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_baseline_check__REVIEW.md',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/PROPOSAL.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/SECTION_QUALIFIED.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/ARITHMETIC_DRAFT.py.txt',
 )
 PARAMETERS_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json'
 MANIFEST_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json'
@@ -844,7 +848,77 @@ def check_arithmetic(params):
     lt('RB complete finite bound',rb_fixed+F('.001'),F('.001347'))
     lt('RB absolute orientation parameter error',rb_rel*rb_t0,F('1.34e-12'))
 
+    # Nominal background-disk refinement; scalar corroboration, not kernel proof.
+    bd_h=F('1e-15'); bd_rho=F('1e-12'); bd_k=lc_kap
+    bd_T=F('1e19'); bd_Talt=F('4e18'); bd_M=50*bd_T; bd_Malt=50*bd_Talt
+    lt('BD finite propagation exponential envelope',1/(1-226*bd_rho),F('1.001'))
+    lt('BD bare contact disk block',167*F('1.001'),260)
+    lt('BD bare exterior disk block',(41+208)*F('1.001'),260)
+    lt('BD filtered disk block',260+2*260**2*F('.05')*2100,F('1.5e7'))
+    eq('BD mixed disk block ceiling',2*F('1.5e7'),F('3e7'))
+    lt('BD selected endpoint site block',F('3e7')*(1+23*F('1.001')*42),F('3e10'))
+    lt('BD selected endpoint column square',112*F('3e10')**2,F('3.2e11')**2)
+    lt('BD bare contact source solve',167*F('.063'),11)
+    lt('BD open deleted input amplitude',2*F('1.001'),3)
+    lt('BD projected diagonal open inverse',F('.062')/(1-F('2e-5')/(1-42*bd_rho)),F('.063'))
+    lt('BD bare incoming finite-site envelope',F('1.001')*(11+2),14)
+    lt('BD bare filter pair square',2*14**2,20**2)
+    lt('BD pretermination incoming site',2*(14+F('1.415')*260*F('.05')*2100*20),F('2e6'))
+    lt('BD deleted input closed source',F('.062')*F('2e7')*F('.15')**45*F('1.001'),F('1e-25'))
+    lt('BD inverse termination perturbation',23*22*F('1.001')**2*F('1e-27'),F('6e-25'))
+    lt('BD projected deleted input forcing',F('.063')*3+23*F('1e-25')+F('6e-25')*(3+F('1e-25')),F('.2'))
+    lt('BD complete background source square',112*(F('2e6')+F('.2')*F('3e7'))**2,F('1e8')**2)
+    bd_osc=36*(bd_h/bd_rho)/(1-bd_h/bd_rho)+2*bd_k**2*36**2*6
+    lt('BD complex exact selfenergy oscillation',bd_osc,F('.037'))
+    lt('BD resonance strip loss',F('.062')*bd_h+bd_k**2*bd_osc,6*bd_k**2)
+    lt('BD complement disk inverse',1/(F('.18')-F('.062')*bd_rho-36*bd_k**2),6)
+    bd_rank=1+bd_k**4*6**2*36**2
+    lt('BD bottom emitter inverse',6+bd_rank/(6*bd_k**2),F('.18')/bd_k**2)
+    bd_sideD=lc_vel*lc_sig-F('.061')*bd_h**2-36*bd_k**2-6*bd_k**4*36**2
+    lt('BD cutoff Schur margin',F('2.49e-8'),bd_sideD)
+    lt('BD cutoff full emitter inverse',6+bd_rank/bd_sideD,F('5e7'))
+    lt('BD emitter update square',1+bd_k**2*F('3.2e11')**2,3201**2)
+    bd_Cb=F('2e19');bd_Cs=F('5e11')
+    lt('BD complete bottom localized column',3*F('1e8')*(1+bd_k*3201*F('.18')/bd_k**2)+4,bd_Cb)
+    lt('BD complete side localized column',3*F('1e8')*(1+bd_k*3201*F('5e7'))+4,bd_Cs)
+    bd_pref=F('1.5')*lc_sig*F('.088')/bd_k*bd_Cb
+    eq('BD localized bottom prefactor',bd_pref,F('2.64e20'))
+    eq('BD alternate bottom exponent',lc_vel*bd_Talt*bd_h,100)
+    eq('BD same tolerance bottom exponent',lc_vel*bd_T*bd_h,250)
+    lt('BD exp100 power lower',10**30,2**100)
+    lt('BD exp250 power lower',10**75,2**250)
+    bd_bottom=bd_pref/F(10**75);bd_bottom_alt=bd_pref/F(10**30)
+    bd_side=F('1.5')*44*bd_k/lc_sig*bd_Cs/(lc_vel*bd_T)
+    bd_side_alt=F('1.5')*44*bd_k/lc_sig*bd_Cs/(lc_vel*bd_Talt)
+    eq('BD localized same tolerance side ceiling',bd_side,F('1.32e-6'))
+    eq('BD localized alternate side ceiling',bd_side_alt,F('3.3e-6'))
+    lt('BD localized alternate total',bd_side_alt+bd_bottom_alt,F('3.301e-6'))
+    bd_s=lc_vel*bd_Talt-113
+    lt('BD scalar tail square denominator',F('5.4e8')**2,3*bd_s)
+    lt('BD target scalar exponent',2400,bd_s*lc_ho)
+    bd_q=88*bd_k/(lc_sig*F('5.4e8'))+F('.012')*lc_sig/bd_k**2*3628800/F(2400)**10
+    bd_in=88*bd_k/(lc_sig*F('5.4e8'))+88*bd_k/F('7e-4')*3628800/(lc_vel*bd_Talt*lc_hi)**10
+    lt('BD target scalar tail',bd_q,F('2e-9'))
+    lt('BD incoming scalar tail',bd_in,F('2e-9'))
+    lt('BD positive target normalization',bd_q**2,F('4e-18'))
+    bd_error=lc_static+bd_bottom+bd_side+bd_in+bd_q**2
+    bd_error_alt=F('.000319')+bd_bottom_alt+bd_side_alt+bd_in+bd_q**2
+    lt('BD complete nominal infinite same tolerance',bd_error,F('.000320'))
+    lt('BD complete nominal infinite alternate',bd_error_alt,F('.000323'))
+    eq('BD same tolerance output sites',bd_M,F('5e20'))
+    eq('BD alternate output sites',bd_Malt,F('2e20'))
+    lt('BD finite transfer both windows',8/(1+bd_Malt-36*bd_Talt*F('1.2')),F('.001'))
+    lt('BD complete nominal finite same tolerance',bd_error+F('.001'),F('.001320'))
+    lt('BD complete nominal finite alternate',bd_error_alt+F('.001'),F('.001323'))
+    eq('BD same tolerance time length gain',lc_T/bd_T,400)
+    eq('BD alternate time length gain',lc_T/bd_Talt,1000)
+
     return {'checks': rows,
+            'nominal_disk_onset':str(bd_T),'nominal_disk_output_sites':str(bd_M),
+            'nominal_disk_infinite_ceiling':'.000320','nominal_disk_finite_ceiling':'.001320',
+            'nominal_disk_alternate_onset':str(bd_Talt),'nominal_disk_alternate_output_sites':str(bd_Malt),
+            'nominal_disk_alternate_infinite_ceiling':'.000323','nominal_disk_alternate_finite_ceiling':'.001323',
+            'precision_corollary_onset_unchanged':str(lc_T),
             'larger_coupling':str(lc_kap), 'larger_coupling_onset':str(lc_T),
             'larger_coupling_output_sites':str(lc_M),
             'larger_coupling_infinite_ceiling':'.000320', 'larger_coupling_finite_ceiling':'.001320',

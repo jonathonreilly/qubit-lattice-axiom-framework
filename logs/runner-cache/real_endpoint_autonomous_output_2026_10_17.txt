@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: 1c2bb464fa53f011d7f3db525c7f35101c169294567d7bddea2289162ba4e361
-input_fingerprint_sha256: ef901b4dfb48bc046c90519930d6185afaf98dcf0ffab395b164fb0de9fafaa6
+runner_sha256: d819bfe60a08810eb767a2fc5dadd4f87ad135246db11ec188de3058ef0a3047
+input_fingerprint_sha256: 2c2f210876887850c719fb717b75f2aec5d7c3d1ea38f0debcd25f7137c9958b
 timeout_sec: 30
 exit_code: 0
 elapsed_sec: 0.09
@@ -409,6 +409,54 @@ PASS arithmetic: RB fixed complex normalized profile
 PASS arithmetic: RB complete infinite bound
 PASS arithmetic: RB complete finite bound
 PASS arithmetic: RB absolute orientation parameter error
+PASS arithmetic: BD finite propagation exponential envelope
+PASS arithmetic: BD bare contact disk block
+PASS arithmetic: BD bare exterior disk block
+PASS arithmetic: BD filtered disk block
+PASS arithmetic: BD mixed disk block ceiling
+PASS arithmetic: BD selected endpoint site block
+PASS arithmetic: BD selected endpoint column square
+PASS arithmetic: BD bare contact source solve
+PASS arithmetic: BD open deleted input amplitude
+PASS arithmetic: BD projected diagonal open inverse
+PASS arithmetic: BD bare incoming finite-site envelope
+PASS arithmetic: BD bare filter pair square
+PASS arithmetic: BD pretermination incoming site
+PASS arithmetic: BD deleted input closed source
+PASS arithmetic: BD inverse termination perturbation
+PASS arithmetic: BD projected deleted input forcing
+PASS arithmetic: BD complete background source square
+PASS arithmetic: BD complex exact selfenergy oscillation
+PASS arithmetic: BD resonance strip loss
+PASS arithmetic: BD complement disk inverse
+PASS arithmetic: BD bottom emitter inverse
+PASS arithmetic: BD cutoff Schur margin
+PASS arithmetic: BD cutoff full emitter inverse
+PASS arithmetic: BD emitter update square
+PASS arithmetic: BD complete bottom localized column
+PASS arithmetic: BD complete side localized column
+PASS arithmetic: BD localized bottom prefactor
+PASS arithmetic: BD alternate bottom exponent
+PASS arithmetic: BD same tolerance bottom exponent
+PASS arithmetic: BD exp100 power lower
+PASS arithmetic: BD exp250 power lower
+PASS arithmetic: BD localized same tolerance side ceiling
+PASS arithmetic: BD localized alternate side ceiling
+PASS arithmetic: BD localized alternate total
+PASS arithmetic: BD scalar tail square denominator
+PASS arithmetic: BD target scalar exponent
+PASS arithmetic: BD target scalar tail
+PASS arithmetic: BD incoming scalar tail
+PASS arithmetic: BD positive target normalization
+PASS arithmetic: BD complete nominal infinite same tolerance
+PASS arithmetic: BD complete nominal infinite alternate
+PASS arithmetic: BD same tolerance output sites
+PASS arithmetic: BD alternate output sites
+PASS arithmetic: BD finite transfer both windows
+PASS arithmetic: BD complete nominal finite same tolerance
+PASS arithmetic: BD complete nominal finite alternate
+PASS arithmetic: BD same tolerance time length gain
+PASS arithmetic: BD alternate time length gain
 {
   "checks": [
     {
@@ -2792,6 +2840,294 @@ PASS arithmetic: RB absolute orientation parameter error
       "name": "RB absolute orientation parameter error",
       "relation": "<",
       "rhs": "67/50000000000000"
+    },
+    {
+      "lhs": "500000000000/499999999887",
+      "name": "BD finite propagation exponential envelope",
+      "relation": "<",
+      "rhs": "1001/1000"
+    },
+    {
+      "lhs": "167167/1000",
+      "name": "BD bare contact disk block",
+      "relation": "<",
+      "rhs": "260"
+    },
+    {
+      "lhs": "249249/1000",
+      "name": "BD bare exterior disk block",
+      "relation": "<",
+      "rhs": "260"
+    },
+    {
+      "lhs": "14196260",
+      "name": "BD filtered disk block",
+      "relation": "<",
+      "rhs": "15000000"
+    },
+    {
+      "lhs": "30000000",
+      "name": "BD mixed disk block ceiling",
+      "relation": "=",
+      "rhs": "30000000"
+    },
+    {
+      "lhs": "29038980000",
+      "name": "BD selected endpoint site block",
+      "relation": "<",
+      "rhs": "30000000000"
+    },
+    {
+      "lhs": "100800000000000000000000",
+      "name": "BD selected endpoint column square",
+      "relation": "<",
+      "rhs": "102400000000000000000000"
+    },
+    {
+      "lhs": "10521/1000",
+      "name": "BD bare contact source solve",
+      "relation": "<",
+      "rhs": "11"
+    },
+    {
+      "lhs": "1001/500",
+      "name": "BD open deleted input amplitude",
+      "relation": "<",
+      "rhs": "3"
+    },
+    {
+      "lhs": "15499999999349/249994999989500",
+      "name": "BD projected diagonal open inverse",
+      "relation": "<",
+      "rhs": "63/1000"
+    },
+    {
+      "lhs": "13013/1000",
+      "name": "BD bare incoming finite-site envelope",
+      "relation": "<",
+      "rhs": "14"
+    },
+    {
+      "lhs": "392",
+      "name": "BD bare filter pair square",
+      "relation": "<",
+      "rhs": "400"
+    },
+    {
+      "lhs": "1545208",
+      "name": "BD pretermination incoming site",
+      "relation": "<",
+      "rhs": "2000000"
+    },
+    {
+      "lhs": "91675277596978920502590933/879609302220800000000000000000000000000000000000000000000",
+      "name": "BD deleted input closed source",
+      "relation": "<",
+      "rhs": "1/10000000000000000000000000"
+    },
+    {
+      "lhs": "253506253/500000000000000000000000000000000",
+      "name": "BD inverse termination perturbation",
+      "relation": "<",
+      "rhs": "3/5000000000000000000000000"
+    },
+    {
+      "lhs": "9450000000000000000000205000000000000000000000003/50000000000000000000000000000000000000000000000000",
+      "name": "BD projected deleted input forcing",
+      "relation": "<",
+      "rhs": "1/5"
+    },
+    {
+      "lhs": "7168000000000000",
+      "name": "BD complete background source square",
+      "relation": "<",
+      "rhs": "10000000000000000"
+    },
+    {
+      "lhs": "625000000026973/17343750000000000",
+      "name": "BD complex exact selfenergy oscillation",
+      "relation": "<",
+      "rhs": "37/1000"
+    },
+    {
+      "lhs": "11378125000026973/173437500000000000000000000000000",
+      "name": "BD resonance strip loss",
+      "relation": "<",
+      "rhs": "3/5000000000000000"
+    },
+    {
+      "lhs": "625000000000000/112499999999959",
+      "name": "BD complement disk inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "1562500000000005625000000000729/937500000000000",
+      "name": "BD bottom emitter inverse",
+      "relation": "<",
+      "rhs": "1800000000000000"
+    },
+    {
+      "lhs": "249/10000000000",
+      "name": "BD cutoff Schur margin",
+      "relation": "<",
+      "rhs": "24999996399999999999922179/1000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1000000149999978399999999999999634/24999996399999999999922179",
+      "name": "BD cutoff full emitter inverse",
+      "relation": "<",
+      "rhs": "50000000"
+    },
+    {
+      "lhs": "10240001",
+      "name": "BD emitter update square",
+      "relation": "<",
+      "rhs": "10246401"
+    },
+    {
+      "lhs": "17285400000300000004",
+      "name": "BD complete bottom localized column",
+      "relation": "<",
+      "rhs": "20000000000000000000"
+    },
+    {
+      "lhs": "480450000004",
+      "name": "BD complete side localized column",
+      "relation": "<",
+      "rhs": "500000000000"
+    },
+    {
+      "lhs": "264000000000000000000",
+      "name": "BD localized bottom prefactor",
+      "relation": "=",
+      "rhs": "264000000000000000000"
+    },
+    {
+      "lhs": "100",
+      "name": "BD alternate bottom exponent",
+      "relation": "=",
+      "rhs": "100"
+    },
+    {
+      "lhs": "250",
+      "name": "BD same tolerance bottom exponent",
+      "relation": "=",
+      "rhs": "250"
+    },
+    {
+      "lhs": "1000000000000000000000000000000",
+      "name": "BD exp100 power lower",
+      "relation": "<",
+      "rhs": "1267650600228229401496703205376"
+    },
+    {
+      "lhs": "1000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD exp250 power lower",
+      "relation": "<",
+      "rhs": "1809251394333065553493296640760748560207343510400633813116524750123642650624"
+    },
+    {
+      "lhs": "33/25000000",
+      "name": "BD localized same tolerance side ceiling",
+      "relation": "=",
+      "rhs": "33/25000000"
+    },
+    {
+      "lhs": "33/10000000",
+      "name": "BD localized alternate side ceiling",
+      "relation": "=",
+      "rhs": "33/10000000"
+    },
+    {
+      "lhs": "412533/125000000000",
+      "name": "BD localized alternate total",
+      "relation": "<",
+      "rhs": "3301/1000000000"
+    },
+    {
+      "lhs": "291600000000000000",
+      "name": "BD scalar tail square denominator",
+      "relation": "<",
+      "rhs": "299999999999999661"
+    },
+    {
+      "lhs": "2400",
+      "name": "BD target scalar exponent",
+      "relation": "<",
+      "rhs": "39062499999999955859375000000/14082294873935738442247641"
+    },
+    {
+      "lhs": "166094438407/101921587200000000000",
+      "name": "BD target scalar tail",
+      "relation": "<",
+      "rhs": "1/500000000"
+    },
+    {
+      "lhs": "839233398437500000000000000000000000000000000000000000000000000000000000000000000000000000000024057/514984130859375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD incoming scalar tail",
+      "relation": "<",
+      "rhs": "1/500000000"
+    },
+    {
+      "lhs": "27587362469736716697649/10388009937367203840000000000000000000000",
+      "name": "BD positive target normalization",
+      "relation": "<",
+      "rhs": "1/250000000000000000"
+    },
+    {
+      "lhs": "359916420856650482482910408361931336768298195227800148971876390278339385986328125000000000000000000052612659/1126270294189453125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD complete nominal infinite same tolerance",
+      "relation": "<",
+      "rhs": "1/3125"
+    },
+    {
+      "lhs": "362999048556063782043457283361931336768298195227799851636518724262714385986328125000000000000000000052612659/1126270294189453125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD complete nominal infinite alternate",
+      "relation": "<",
+      "rhs": "323/1000000"
+    },
+    {
+      "lhs": "500000000000000000000",
+      "name": "BD same tolerance output sites",
+      "relation": "=",
+      "rhs": "500000000000000000000"
+    },
+    {
+      "lhs": "200000000000000000000",
+      "name": "BD alternate output sites",
+      "relation": "=",
+      "rhs": "200000000000000000000"
+    },
+    {
+      "lhs": "8/27200000000000000001",
+      "name": "BD finite transfer both windows",
+      "relation": "<",
+      "rhs": "1/1000"
+    },
+    {
+      "lhs": "1486186715046103607482910408361931336768298195227800148971876390278339385986328125000000000000000000052612659/1126270294189453125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD complete nominal finite same tolerance",
+      "relation": "<",
+      "rhs": "33/25000"
+    },
+    {
+      "lhs": "1489269342745516907043457283361931336768298195227799851636518724262714385986328125000000000000000000052612659/1126270294189453125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "BD complete nominal finite alternate",
+      "relation": "<",
+      "rhs": "1323/1000000"
+    },
+    {
+      "lhs": "400",
+      "name": "BD same tolerance time length gain",
+      "relation": "=",
+      "rhs": "400"
+    },
+    {
+      "lhs": "1000",
+      "name": "BD alternate time length gain",
+      "relation": "=",
+      "rhs": "1000"
     }
   ],
   "dense_dimension_max": 4,
@@ -2807,6 +3143,15 @@ PASS arithmetic: RB absolute orientation parameter error
   "larger_coupling_infinite_ceiling": ".000320",
   "larger_coupling_onset": "4000000000000000000000",
   "larger_coupling_output_sites": "200000000000000000000000",
+  "nominal_disk_alternate_finite_ceiling": ".001323",
+  "nominal_disk_alternate_infinite_ceiling": ".000323",
+  "nominal_disk_alternate_onset": "4000000000000000000",
+  "nominal_disk_alternate_output_sites": "200000000000000000000",
+  "nominal_disk_finite_ceiling": ".001320",
+  "nominal_disk_infinite_ceiling": ".000320",
+  "nominal_disk_onset": "10000000000000000000",
+  "nominal_disk_output_sites": "500000000000000000000",
+  "precision_corollary_onset_unchanged": "4000000000000000000000",
   "runtime_reads": {
     "package_integrity": [
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
@@ -2825,6 +3170,10 @@ PASS arithmetic: RB absolute orientation parameter error
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/ARITHMETIC_DRAFT.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/PROPOSAL.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/SECTION_QUALIFIED.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/ARITHMETIC_BLOCK.py.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/CHECK_MAP.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_REVIEW.md.txt",

@@ -1,0 +1,43 @@
+from pathlib import Path
+import ast, hashlib, json, os, resource, shutil, subprocess, sys, time
+ROOT=Path(__file__).resolve().parent
+W=ROOT.parents[1]/'correlation_worktree'
+REL='scripts/real_endpoint_autonomous_output_2026_10_17.py'
+SRC=(W/REL).read_text()
+node=ast.parse(SRC)
+INPUTS=next(ast.literal_eval(n.value) for n in node.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+def identity(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def caps():
+ resource.setrlimit(resource.RLIMIT_CPU,(10,10));resource.setrlimit(resource.RLIMIT_FSIZE,(16*1024**2,16*1024**2))
+def run(name,cmd,cwd,paths,timeout=10):
+ d=ROOT/name;d.mkdir(exist_ok=True)
+ pre={'command':cmd,'cwd':str(cwd),'utc':time.time(),'wall_limit_sec':timeout,'cpu_limit_sec':10,'file_limit_bytes':16*1024**2,'memory_cap':'not applied','python_version':sys.version,'sources':[identity(p) for p in paths]+[identity(Path(sys.executable).resolve())]}
+ with (d/'PRELAUNCH.json').open('w') as f:json.dump(pre,f,indent=2);f.flush();os.fsync(f.fileno())
+ t=time.monotonic()
+ with (d/'stdout.txt').open('w') as out,(d/'stderr.txt').open('w') as err:
+  p=subprocess.Popen(cmd,cwd=cwd,stdout=out,stderr=err,preexec_fn=caps)
+  try:code=p.wait(timeout=timeout)
+  except subprocess.TimeoutExpired:p.kill();p.wait();code='timeout'
+ result={'exit_code':code,'elapsed_sec':time.monotonic()-t,'outputs':[identity(d/'stdout.txt'),identity(d/'stderr.txt')]}
+ (d/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+ return code,(d/'stdout.txt').read_text(),(d/'stderr.txt').read_text()
+
+(V:=ROOT/'RESOURCE_PLAN.md').write_text("# Refinement verification\nBounded Fraction/local-complex algebra only. CPU10s,file16MiB,canonical inner30s/outer45s; mutations10s wall. No memory cap. Runtime binary/version and exact sources bound before launch. No spectral integrals, dynamics, huge matrices or parameter sweep. Existing397 checks preserved; new disk kernel, projected source, complex strip, complete contour and scalar-tail composition arithmetic families challenged. No current rerun of old integrity or inert-import suites implied. No old mutated-case rerun implied.\n")
+wrapper=ROOT/'canonical_wrapper.py'
+wrapper.write_text("import sys,json\nfrom pathlib import Path\nsys.path.insert(0,"+repr(str(W/'scripts'))+")\nimport runner_cache\nr,p=runner_cache.execute_and_write_cache("+repr(REL)+",30)\nPath("+repr(str(ROOT/'CANONICAL_RESULT.json'))+").write_text(json.dumps(r,indent=2))\nprint(json.dumps({k:v for k,v in r.items() if k not in ('stdout','stderr')}))\nprint(p)\nraise SystemExit(0 if r['status']=='ok' and r['exit_code']==0 else 1)\n")
+code,out,err=run('canonical',[sys.executable,str(wrapper)],W,[W/REL,W/'scripts/runner_cache.py',wrapper]+[W/p for p in INPUTS],45)
+if code!=0:raise RuntimeError('canonical failed: '+out+err)
+mutations=[('filter_inverse', "260+2*260**2*F('.05')*2100", "260+2*260**2*F('.05')*21000", 'BD filtered disk block'), ('source_pair', "2*(14+F('1.415')*260*F('.05')*2100*20)", "2*(14+F('1.415')*260*F('.05')*2100*40)", 'BD pretermination incoming site'), ('projected_forcing', "F('.063')*3+23*F('1e-25')", "F(23)*3+23*F('1e-25')", 'BD projected deleted input forcing'), ('strip_depth', "bd_h=F('1e-15')", "bd_h=F('1e-13')", 'BD complex exact selfenergy oscillation'), ('localized_bottom_ceiling', "bd_Cb=F('2e19')", "bd_Cb=F('1e19')", 'BD complete bottom localized column'), ('localized_side_cost', "bd_side=F('1.5')*44", "bd_side=F('1.5')*88", 'BD localized same tolerance side ceiling'), ('scalar_tail_series', '3628800/F(2400)**10', '3628800/F(2400)**4', 'BD target scalar tail'), ('static_composition', 'bd_error=lc_static+', 'bd_error=10*lc_static+', 'BD complete nominal infinite same tolerance')]
+results=[]
+for name,before,after,expected in mutations:
+ if SRC.count(before)!=1:raise RuntimeError('nonunique mutation '+name)
+ scratch=ROOT/('scratch_'+name);(scratch/'scripts').mkdir(parents=True,exist_ok=True)
+ shutil.copytree(W/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',scratch/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',dirs_exist_ok=True)
+ runner=scratch/REL;runner.write_text(SRC.replace(before,after))
+ code,out,err=run('mutation_'+name,[sys.executable,'-O',str(runner)],scratch,[runner]+[scratch/p for p in INPUTS])
+ ok=code==1 and 'PASS integrity:' in out and 'TOTAL FAIL:' in out and expected in out.split('TOTAL FAIL:')[-1]
+ results.append({'name':name,'expected_failure':expected,'detected':ok,'exit_code':code})
+ if not ok:raise RuntimeError('mutation did not fail intended family '+name+' '+out[-500:]+err)
+(ROOT/'MUTATION_SUMMARY.json').write_text(json.dumps(results,indent=2)+'\n')
+print(json.dumps({'canonical':'ok','new_mathematical_mutations':len(results),'all_intended_failures':True}))

@@ -107,6 +107,34 @@
       "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/ROUTE_SOURCE_IDENTITY_CHECK.json"
     },
     {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/ARITHMETIC_DRAFT.py.txt",
+      "bytes": 4333,
+      "sha256": "d0aea85b2f7685d3c6a9c24c006008bdcd87c5bd49330c207a07a2fb250d1ddb",
+      "role": "source-exposed analytical disk refinement and selective check; scalar draft not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/background_disk_publication/ARITHMETIC_DRAFT.py.txt"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/PROPOSAL.md",
+      "bytes": 14288,
+      "sha256": "2d1da7e51d68377d164f2529f7e6430e36ffb333a1241a694c4e75d9949ebf4c",
+      "role": "source-exposed analytical disk refinement and selective check; scalar draft not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/background_disk_runtime/PROPOSAL.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/REVIEW.md",
+      "bytes": 14202,
+      "sha256": "4789b360ecf4df8116f8735640ad9cb852e9cced24fb11ba1952a508128ddbe1",
+      "role": "source-exposed analytical disk refinement and selective check; scalar draft not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/background_disk_runtime_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/background_disk/SECTION_QUALIFIED.md",
+      "bytes": 15199,
+      "sha256": "86101f319469b014cdfe9018ab623d0a6b753198a45501480b40969c9f0de7f8",
+      "role": "source-exposed analytical disk refinement and selective check; scalar draft not replayed",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/background_disk_publication/SECTION_QUALIFIED.md"
+    },
+    {
       "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/ARITHMETIC_BLOCK.py.txt",
       "bytes": 6254,
       "sha256": "fd353c123f9fd48af1cd17b11c421e73ea2a669564256bbf13e07635658ffc9b",

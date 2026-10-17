@@ -76,6 +76,19 @@ tests it for translation-invariant orderings.
   framework's cubic covariance cannot come alone: rotation symmetry forces
   copies, and the minimum is four.
 
+## Independent check
+
+A fresh-context agent (same model family) wrote its own code without reading
+these scripts. It confirmed all five claims:
+- it applied rotations by permuting qubits directly;
+- it checked statistics on an L = 10 torus;
+- it found code dimensions 3 at L = 4, 5 and 6.
+
+It also attacked the conclusion. Neither per-edge single-qubit Clifford
+relabelings nor reflections make any code invariant or merge any orbits. Its
+support-count test is exact on the L = 4 torus. Files:
+`.claude/science/physics-loops/toe-campaign-20261017/c6_bksf_orbits/independent_check/`.
+
 ## Premises
 
 - **Axioms used.** Lattice (Z^3, proper cubic rotations).

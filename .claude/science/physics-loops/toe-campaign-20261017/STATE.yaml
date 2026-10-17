@@ -45,7 +45,10 @@ blocks:
     note: docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py (PASS=8, ~30 s)
     exact: ["720 orderings -> 60 codes, all fermionic (straight-leg T-junction -1, 20 triples), log2 dim 3", "O-orbits 4/6/12; no O-invariant code; max stabilizer D3 -> covariant stack needs >= 4 fermion species (body diagonals; S4 permutation rep 1+3)"]
-    independent_check: running
+    independent_check: "CONFIRMED all five (own code; rotation applied by direct qubit permutation; L=4,5,6 dims); per-edge Clifford relabelings merge no orbits; reflections also leave no code invariant"
+  C7-condensation-attempt:
+    status: open observation (no note)
+    finding: "condensing f_0 f_k (k=1..3) in the 4-copy stack with generators A0_e Ak_e fails: hops of pair-bosons sharing a species anticommute on adjacent edges; disjoint pairings commute but no pairing of the 4 diagonals is O-invariant. Whether another operator choice allows an O-covariant single-fermion code is open."
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

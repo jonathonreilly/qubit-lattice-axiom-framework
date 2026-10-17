@@ -1,0 +1,8 @@
+{
+  "original_head": "c7330c94ce411a991d025e45204687a507a1ba61",
+  "runner": "scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py",
+  "runner_sha256": "389f1f2e03ae439724040a3d4dc479c7d2fb01d28e511f495112b3dd73e9ad2e",
+  "note": "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "note_sha256": "33588efe60859cc6babcd0a73939438af1bd0564b99e956fbcd6d3542d9ee8bb",
+  "scope": "Initial narrow repair; independent affected review and execution pending."
+}

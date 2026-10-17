@@ -1,0 +1,96 @@
+    # Endpoint-forcing refinement: insert after FS arithmetic, before run summary.
+    # UNEXECUTED draft. EF1/EF2/EF3, complex analyticity, Stone/synthesis and
+    # complete-output composition are analytical premises, NOT established here.
+    # Uses existing Fraction alias F, lt/eq, J, lc_*, fs_*; no new dependencies.
+    ef_rho=F('1e-12'); ef_h=F('8e-15'); ef_T=F('3e17'); ef_M=50*ef_T
+    ef_khi=lc_kap; ef_klo=fs_ka; ef_eps=fs_eps; ef_det=fs_det
+    ef_G=F('36.000001'); ef_Y0=F(12); ef_P0=F('3.2e11'); ef_X0=F('1e8')
+    lt('EF endpoint open amplitude',2*F('1.001'),3)
+    ef_closed=F('.062')*F('2e7')*F('.15')**44*F('1.001')
+    lt('EF endpoint closed amplitude 44 powers',ef_closed,F('1e-24'))
+    lt('EF full endpoint incoming amplitude',3+ef_closed,F('3.001'))
+    # The adjacent block is (A+X)Q; this scalar row does not check factor order.
+    ef_endpoint_kernel=42*F('1.001')
+    lt('EF deleted-source forcing bound',F('3.001')+ef_endpoint_kernel*F('.2'),ef_Y0)
+    lt('EF actual endpoint perturbation domain',ef_det,ef_eps)
+    lt('EF background Woodbury denominator',0,1-36*ef_eps)
+    ef_H=1/(1-36*ef_eps)
+    lt('EF background multiplier',ef_H,1+F('1e-18'))
+    ef_P=F('3.21e11'); ef_Y=F('12.1'); ef_X=F('1.01e8')
+    lt('EF actual selected endpoint column',ef_P0*ef_H,ef_P)
+    lt('EF actual endpoint forcing',ef_Y0*ef_H,ef_Y)
+    ef_source_change=ef_eps*ef_P0*ef_H*ef_Y0
+    lt('EF actual additive source change',ef_source_change,F('4e-8'))
+    lt('EF actual complete source bound',ef_X0+ef_source_change,ef_X)
+    lt('EF strip stays inside background disk',ef_h,ef_rho)
+    ef_cauchy=ef_G*(ef_h/ef_rho)/(1-ef_h/ef_rho)
+    lt('EF background disk oscillation',ef_cauchy,F('.291'))
+    ef_schur_two=12*ef_khi**2*ef_G**2
+    lt('EF both complementary corrections',ef_schur_two,F('1.6e-12'))
+    lt('EF full selfenergy oscillation',ef_cauchy+ef_schur_two,F('.292'))
+    ef_loss=F('.062')*ef_h/ef_klo**2
+    lt('EF shifted coupling strip energy loss',ef_loss,F('4.961'))
+    lt('EF resonant imaginary factor remaining',6,12-ef_loss-ef_cauchy-ef_schur_two)
+    ef_gap=F('.18')-ef_det-F('.062')*ef_rho-ef_G*ef_khi**2
+    lt('EF all complementary directions gap',F(1,6),ef_gap)
+    ef_rank=1+36*ef_khi**4*ef_G**2
+    lt('EF complete bottom emitter inverse factor',6*ef_khi**2+ef_rank/6,F('.18'))
+    ef_sideD=lc_vel*lc_sig-ef_det-F('.061')*ef_h**2-ef_G*ef_khi**2-6*ef_khi**4*ef_G**2
+    lt('EF shifted hard cutoff denominator',F('2.49e-8'),ef_sideD)
+    lt('EF complete side emitter inverse',6+ef_rank/ef_sideD,F('5e7'))
+    lt('EF full emitter update norm square',1+ef_khi**2*ef_P**2,3211**2)
+    ef_Cb=F('2.2e12'); ef_Cs=F('3.1e8')
+    # Crucially X + emitter_update*Y, NOT X*(1+emitter_update).
+    lt('EF complete bottom column with endpoint forcing',3*(ef_X+F('.18')*3211*ef_Y/ef_klo)+4,ef_Cb)
+    lt('EF complete side column with endpoint forcing',3*(ef_X+ef_khi*3211*F('5e7')*ef_Y)+4,ef_Cs)
+    ef_pref=F('1.5')*lc_sig*F('.088')/ef_klo*ef_Cb
+    lt('EF complete localized bottom prefactor',ef_pref,F('3e13'))
+    eq('EF complete bottom exponent',lc_vel*ef_T*ef_h,60)
+    lt('EF e lower series witness',F(8,3),1+1+F(1,2)+F(1,6)+F(1,24))
+    lt('EF exponential fifth power witness',100,F(8,3)**5)
+    lt('EF exponential sixty power witness',10**24,F(8,3)**60)
+    ef_bottom=ef_pref/F(10**24)
+    lt('EF complete localized bottom',ef_bottom,F('3e-11'))
+    ef_sides=F('1.5')*44*ef_khi/lc_sig*ef_Cs/(lc_vel*ef_T)
+    eq('EF both localized cutoff side ceiling',ef_sides,F('2.728e-8'))
+    lt('EF localized side rounded ceiling',ef_sides,F('2.73e-8'))
+    ef_loc=ef_bottom+ef_sides
+    lt('EF complete localized bound',ef_loc,F('2.733e-8'))
+    ef_s=lc_vel*ef_T-113
+    lt('EF scalar phase retains 113',F('7.4e15'),ef_s)
+    lt('EF scalar lattice side square margin',F('1.4e8')**2,3*ef_s)
+    # These scalar heights are separate from the complete-column height ef_h.
+    ef_ho=ef_klo**2/(4*J**2); ef_hi=lc_sig/2
+    lt('EF auxiliary scalar outgoing height',F('2.5e-14'),ef_ho)
+    ef_scalar_cut=lc_vel*lc_sig-ef_det-F('.061')*ef_hi**2-ef_khi**2/J/(1-ef_hi)
+    lt('EF shifted scalar cutoff floor',F('.024')*lc_sig,ef_scalar_cut)
+    lt('EF scalar target bottom exponent',185,ef_s*ef_ho)
+    lt('EF scalar incoming bottom exponent',185,lc_vel*ef_T*ef_hi)
+    lt('EF exp185 coarse lower',10**55,2**185)
+    ef_target_pref=F('.012')*lc_sig/ef_klo**2
+    lt('EF scalar target bottom prefactor',ef_target_pref,F('1.21e8'))
+    lt('EF scalar incoming height square',F('7e-4')**2,ef_hi)
+    ef_in_pref=88*ef_khi/F('7e-4')
+    lt('EF scalar incoming bottom prefactor',ef_in_pref,F('.002'))
+    ef_scalar_sides=88*ef_khi/(lc_sig*F('1.4e8'))
+    lt('EF both scalar cutoff sides',ef_scalar_sides,F('6.3e-9'))
+    ef_q=ef_scalar_sides+ef_target_pref/F(10**55)
+    ef_in=ef_scalar_sides+ef_in_pref/F(10**55)
+    lt('EF target negative tail',ef_q,F('7e-9'))
+    lt('EF incoming tail',ef_in,F('7e-9'))
+    lt('EF positive target normalization',ef_q**2,F('4.9e-17'))
+    lt('EF both target normalization adjustments',2*ef_q**2,F('9.8e-17'))
+    ef_nominal=lc_static+ef_loc+ef_in+ef_q**2
+    # Same envelope controls actual-to-auxiliary; then use the checked FS ratio.
+    ef_fixed=ef_nominal+fs_profile+2*ef_q**2
+    lt('EF complete nominal infinite',ef_nominal,F('.000320'))
+    lt('EF complete fixed nominal infinite',ef_fixed,F('.000347'))
+    eq('EF one finite output length',ef_M,F('1.5e19'))
+    lt('EF finite transfer exponent margin',36*ef_T*F(6,5)+9,ef_M+23)
+    lt('EF finite transfer prefactor',F(4)/(1-F(3,8))*F(3,8)**9,F('.001'))
+    lt('EF complete nominal finite',ef_nominal+F('.001'),F('.001320'))
+    lt('EF complete fixed nominal finite',ef_fixed+F('.001'),F('.001347'))
+    eq('EF nominal sufficient resource gain',bd_T/ef_T,F(100,3))
+    eq('EF fixed spectrum sufficient resource gain',lc_T/ef_T,F(40000,3))
+    # Integration: preserve all historical summary keys. Add ef_* keys, do not
+    # relabel old execution evidence or other precision-corollary onsets.

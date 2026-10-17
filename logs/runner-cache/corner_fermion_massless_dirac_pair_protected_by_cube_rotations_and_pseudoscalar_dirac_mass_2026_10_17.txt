@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py
+runner_sha256: 389f1f2e03ae439724040a3d4dc479c7d2fb01d28e511f495112b3dd73e9ad2e
+input_fingerprint_sha256: ad69772ddbbaec3a3e3921a18413392948c6c6eb39c457f323e9c8a06df53d70
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 22.42
+status: ok
+----- stdout -----
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+Part 1: complex-conjugation-odd terms invariant under O, site inversion and translations (range <= 1 site)
+[PASS] the 14 sampled averaged seeds have numerical rank 9 (lower bound only)  singular values [1.     0.8462 0.7887 0.7056 0.5942 0.5016 0.4559 0.2408 0.1064 0.
+ 0.    ]
+[PASS] these terms are invariant under all rotations and the site inversion, and odd under complex conjugation
+
+Part 2: Weyl pair at the rotation-fixed momenta (t1 = -1, t2 = 0.2, X strength 0.05)
+[PASS] the lowest levels at k* and -k* are degenerate doublets at the same energy (inversion)
+[PASS] the doublet splits linearly with the same velocity in every direction (isotropic Weyl cone)  v = 0.10960, spread 9.1e-11
+[PASS] Berry flux of the lower band through a small sphere is +1 at one node and -1 at the other (opposite chirality)  -1.0000, +1.0000
+
+Part 3: Dirac mass terms (staggered, momentum Q = (pi,pi,pi), on-site)
+[PASS] the L = 4 lattice contains the four node states
+[PASS] tested O-invariant staggered on-site seeds have zero projected matrix elements; Schur inference conditional on distinct valley irreps
+[PASS] the chosen imaginary A2 term splits the projected node space into +-m pairs; 10 sampled seeds have rank 5  projected eigenvalues [-1.4041 -1.4041  1.4041  1.4041]
+[PASS] three tested real A2 seeds have zero projected mass; no exhaustive real-space classification
+
+Part 4: massive Dirac dispersion
+[PASS] folded and real-space spectra agree numerically on L = 4
+[PASS] at k* the massive spectrum is two doublets at E_N -+ m_D, symmetric about the node  m_D = 0.07020, m_D / m at this supplied finite strength = 1.4041
+[PASS] finite sampled upper-band comparison with corrected measured Weyl velocity (relative total-energy deviation < 1e-2; not a kinetic-order proof)  max relative deviation 1.5e-04
+[PASS] projected linear kinetic/mass matrices obey numerical Clifford relations and use the measured full Weyl velocity  v=0.10959551861, mass coefficient=1.4040589578, kinetic residual=1.73e-11, mass residual=7.9e-11
+[PASS] joint momentum/mass shrinkage has quadratic finite-sample remainder; no exact finite-mass dispersion claimed  [1.1085160807500216e-05, 2.761771273007696e-06, 6.892478934261703e-07]
+
+Part 5: spin content (twisted site rotations)
+[PASS] the four massless node states transform as E1/2 + E5/2 under the twisted O (opposite A2 characters at k* and -k*)
+[PASS] each massive Dirac doublet is the irreducible spin-1/2 representation of the binary tetrahedral group (rotations kept about a site)  [('lower', np.float64(1.0), np.float64(1.0)), ('upper', np.float64(1.0), np.float64(1.0))]
+
+Part 6: symmetries of the massive model
+[PASS] the massive model keeps the rotations of T about a site, the w1-odd rotations composed with an odd translation (together: the cube rotations about a cube centre), and the even translations; w1-odd rotations alone are broken
+
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

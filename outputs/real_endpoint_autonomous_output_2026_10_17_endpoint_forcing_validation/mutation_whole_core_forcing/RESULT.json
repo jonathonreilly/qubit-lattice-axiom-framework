@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.1429669577628374,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_validation/mutation_whole_core_forcing/stdout.txt",
+      "bytes": 24981,
+      "sha256": "024d396016287b80f5ccf3943b9d6c5d158a5b7e2aeadfe19df405d2ab42604e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_validation/mutation_whole_core_forcing/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

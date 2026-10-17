@@ -646,6 +646,41 @@
       "sha256": "33f4e340f2909d907e4c8fe166c86b306e82e369a6fa3ddb5eca1ab4f19405c8",
       "role": "pinned conditional bare-ladder premise and qualification",
       "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_transmission_autonomous_route/inputs/interval_qualification.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/PROPOSAL.md.txt",
+      "bytes": 18913,
+      "sha256": "2fe29c4799f73cff7712d04e94446b033bb4857c926d9348dae5ae016ab70a3f",
+      "role": "Source-exposed analytical refinement and drafted arithmetic; only canonical positive endpoint-forcing composition published; no audit status",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_next_resource_move/PROPOSAL.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/REVIEW.md.txt",
+      "bytes": 15971,
+      "sha256": "d148847bbc8903e66dd4a734a52ab269f1a1d4cfa90e6d6677675a47bc62286a",
+      "role": "Source-exposed analytical refinement and drafted arithmetic; only canonical positive endpoint-forcing composition published; no audit status",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_check/REVIEW.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/APPENDIX.md.txt",
+      "bytes": 9658,
+      "sha256": "6a3d56e316d06e73deefb8a89646b601ebea92f986c9ba8d7f8e2d9ea728212c",
+      "role": "Source-exposed analytical refinement and drafted arithmetic; only canonical positive endpoint-forcing composition published; no audit status",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_publication/APPENDIX.md"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/ARITHMETIC_BLOCK.py.txt",
+      "bytes": 5981,
+      "sha256": "50038ba03bf952efad22720416ca76c17c90581d450c834f45c607b616701225",
+      "role": "Source-exposed analytical refinement and drafted arithmetic; only canonical positive endpoint-forcing composition published; no audit status",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_publication/ARITHMETIC_BLOCK.py.txt"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/CHECK_MAP.md",
+      "bytes": 7087,
+      "sha256": "9fde480b7e37de74d83d6d7d1e55434c15b3c0f6794f7dad9a6cf9c5bf9067c7",
+      "role": "Source-exposed analytical refinement and drafted arithmetic; only canonical positive endpoint-forcing composition published; no audit status",
+      "original_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_forcing_publication/CHECK_MAP.md"
     }
   ]
 }

@@ -1,0 +1,70 @@
+import itertools as it,json,pathlib
+import numpy as np
+import sympy as sp
+R=pathlib.Path(__file__).parent
+Q=sorted(q for q in it.product((-1,0,1),repeat=3) if sum(x*x for x in q)==2);qi={q:i for i,q in enumerate(Q)};zero=(0,0,0)
+def plus(a,b):return tuple(x+y for x,y in zip(a,b))
+def minus(a,b):return tuple(x-y for x,y in zip(a,b))
+def neighbours(node):
+ v,q=node
+ for r in Q:
+  if sum(x*y for x,y in zip(q,r))==1:yield (v,r)
+ for a in range(3):
+  if q[a]:
+   d=tuple(q[a] if j==a else 0 for j in range(3));r=list(q);r[a]*=-1;yield plus(v,d),tuple(r)
+def ek(a,b):
+ v,q=a;w,r=b;sh=minus(w,v);x=(qi[q],qi[r],sh);y=(qi[r],qi[q],tuple(-k for k in sh));return min(x,y)
+E=sorted({ek((zero,q),b) for q in Q for b in neighbours((zero,q))});ei={e:i for i,e in enumerate(E)};assert len(E)==36
+cycles={}
+for q in Q:
+ start=(zero,q)
+ def walk(path):
+  if len(path)>4:return
+  for b in neighbours(path[-1]):
+   if b==start and len(path) in (3,4):
+    edges=[ei[ek(a,c)] for a,c in zip(path,path[1:]+[path[0]])];mask=np.zeros(36,dtype=np.uint8)
+    for e in edges:mask[e]^=1
+    ns=len({a[0] for a in path});typ='triangle' if len(path)==3 else 'square' if ns==1 else 'tube' if ns==2 else 'plaquette'
+    cycles[(tuple(mask),typ)]=path
+   elif b not in path and len(path)<4:walk(path+[b])
+ walk([start])
+rows=np.array([list(k[0])+[int(k[1]!='triangle')] for k in cycles],dtype=np.uint8);A=rows.copy();pivs=[];r=0
+for c in range(35,-1,-1):
+ inds=np.where(A[r:,c])[0]
+ if not len(inds):continue
+ j=r+inds[0];A[[r,j]]=A[[j,r]]
+ for j in range(len(A)):
+  if j!=r and A[j,c]:A[j]^=A[r]
+ pivs.append(c);r+=1
+assert not np.any(A[r:,36]);u=np.zeros(36,dtype=np.uint8)
+for i,c in enumerate(pivs):u[c]=A[i,36]
+assert np.all((rows[:,:36]@u)%2==rows[:,36])
+tri=[]
+for signs in it.product((-1,1),repeat=3):
+ qs=[(signs[0],signs[1],0),(0,signs[1],signs[2]),(signs[0],0,signs[2])]
+ n=np.cross(np.subtract(qs[1],qs[0]),np.subtract(qs[2],qs[1]))
+ if np.dot(n,np.sum(qs,axis=0))<0:qs.reverse()
+ tri.extend((qi[a],qi[b]) for a,b in zip(qs,qs[1:]+qs[:1]))
+def H(k,t2=.1,lam=-.5,symbolic=False):
+ M=sp.zeros(12) if symbolic else np.zeros((12,12),complex)
+ for j,(a,b,d) in enumerate(E):
+  t=-1 if d==zero else t2
+  phase=(sp.I**sum(int(k[z])*d[z] for z in range(3))) if symbolic else np.exp(1j*np.dot(k,d))
+  z=-t*((-1)**int(u[j]))*phase;M[b,a]+=z;M[a,b]+=sp.conjugate(z) if symbolic else np.conj(z)
+ for a,b in tri:
+  z=(sp.I if symbolic else 1j)*lam*((-1)**int(u[ei[ek((zero,Q[a]),(zero,Q[b]))]]));M[b,a]+=z;M[a,b]-=z
+ return M
+Ks=[np.array(k)*np.pi/2 for k in it.product((-1,1),repeat=3)];ener=[np.linalg.eigvalsh(H(k))[0] for k in Ks];k=Ks[int(np.argmin(ener))]
+def hess(k,t,l):
+ f=lambda q:np.linalg.eigvalsh(H(q,t,l))[0];h=.0005;B=np.eye(3)
+ return np.array([[(f(k+h*(a+b))-f(k+h*(a-b))-f(k-h*(a-b))+f(k-h*(a+b)))/(4*h*h) for b in B] for a in B])
+local=[]
+for p in (k,-k):
+ ev=np.linalg.eigvalsh(H(p,.3,.03));he=np.linalg.eigvalsh(hess(p,.3,.03));local.append({'k_over_pi':(p/np.pi).tolist(),'energy':float(ev[0]),'hessian':he.tolist()})
+assert all(min(x['hessian'])>0.001 for x in local),local
+assert abs(local[0]['energy']-local[1]['energy'])>0.1
+# Exact reference spectrum at one symmetric momentum, no expected decimal fitted into model.
+ks=tuple(int(round(x/(np.pi/2))) for x in k);char=sp.factor(H(ks,sp.Rational(1,10),sp.Rational(-1,2),True).charpoly().as_expr())
+base=np.linalg.eigvalsh(H(k));assert abs(base[0]+3.5556349186104)<1e-10
+out={'independent_geometry':'face-diagonal integer vectors, graph-cycle enumeration and dense GF2 elimination; no author imports','edges_per_cell':len(E),'cycle_equations':len(rows),'flux_constraint_rank':r,'reference_lowest_pair':base[:2].tolist(),'reference_exact_characteristic_polynomial':str(char),'reference_inverse_mass':np.linalg.eigvalsh(hess(k,.1,-.5)).tolist(),'counterexample_two_strict_local_minima_t2_0_3_lambda_0_03':local,'scope':'local numerical Hessian witnesses and exact reference characteristic polynomial; no global minimum certification'}
+(R/'bloch-controls.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

@@ -1,0 +1,8 @@
+{
+  "scope": "Artifact identities and local links only; no mathematics/dynamics execution",
+  "note_sha256": "735ec540842018f17ecde72b43d102f52dd76f9df65682eaaeec64498628c429",
+  "source_copies": 10,
+  "local_links": 3,
+  "integration_review_sha256": "6717f59b752e558aded787881c205f28edd2c1fb80ed85cb7f3f8224034aaa7b",
+  "errors": []
+}

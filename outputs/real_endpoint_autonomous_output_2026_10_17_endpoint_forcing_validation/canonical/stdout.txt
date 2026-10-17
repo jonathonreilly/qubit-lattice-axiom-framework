@@ -1,0 +1,2 @@
+{"runner": "scripts/real_endpoint_autonomous_output_2026_10_17.py", "status": "ok", "exit_code": 0, "elapsed_sec": 0.08256006240844727, "timeout_sec": 30, "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/.in-progress/real_endpoint_autonomous_output_2026_10_17.txt"}
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/real_endpoint_autonomous_output_2026_10_17.txt

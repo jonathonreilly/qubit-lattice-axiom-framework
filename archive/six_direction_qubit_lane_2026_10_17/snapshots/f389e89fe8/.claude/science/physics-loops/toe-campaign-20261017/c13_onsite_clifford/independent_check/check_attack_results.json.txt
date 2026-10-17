@@ -1,0 +1,479 @@
+{
+ "edge_cz_L4": {
+  "ok": 2880,
+  "tot": 2880,
+  "bare_ok": 384
+ },
+ "edge_cz_L6": {
+  "ok": 144,
+  "tot": 144,
+  "bare_ok": 24
+ },
+ "cz_equivalence": {
+  "edge": 320,
+  "half": 320,
+  "tot": 320
+ },
+ "pair_orb4_sec(0, 0, 0)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "in": 12
+   }
+  }
+ },
+ "pair_orb4_sec(1, 1, 1)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "in": 12
+   }
+  }
+ },
+ "pair_orb6_sec(0, 0, 0)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  }
+ },
+ "pair_orb6_sec(1, 1, 1)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "out": 12
+   }
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  }
+ },
+ "pair_orb12_sec(0, 0, 0)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "in": 12
+   }
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  }
+ },
+ "pair_orb12_sec(1, 1, 1)": {
+  "R1:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R2:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R3:C2axis": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R6:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R7:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": {
+    "in": 12
+   }
+  },
+  "R8:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R11:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R21:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  },
+  "R23:C2edge": {
+   "U": {
+    "minus": 12
+   },
+   "bare": "not a bare symmetry"
+  }
+ },
+ "lift_dependence": {
+  "(0, 0, 0) 24 honest #0": {
+   "('C2edge', 'minus')": 12,
+   "('C2axis', 'minus')": 6
+  },
+  "(0, 0, 0) 24 honest #1": {
+   "('C2edge', 'minus')": 12,
+   "('C2axis', 'minus')": 6
+  },
+  "(0, 0, 0) 24 honest #2": {
+   "('C2axis', 'minus')": 6,
+   "('C2edge', 'minus')": 12
+  },
+  "(0, 0, 0) 24 honest #3": {
+   "('C2axis', 'minus')": 6,
+   "('C2edge', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge-1 #0": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge-1 #1": {
+   "('C2axis', 'minus')": 12,
+   "('C2edge', 'minus')": 24
+  },
+  "(0, 0, 0) 48 edge-1 #2": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge-1 #3": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge+1 #0": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge+1 #1": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(0, 0, 0) 48 edge+1 #2": {
+   "('C2axis', 'minus')": 12,
+   "('C2edge', 'minus')": 24
+  },
+  "(0, 0, 0) 48 edge+1 #3": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 24 honest #0": {
+   "('C2edge', 'minus')": 12,
+   "('C2axis', 'minus')": 6
+  },
+  "(1, 1, 1) 24 honest #1": {
+   "('C2edge', 'minus')": 12,
+   "('C2axis', 'minus')": 6
+  },
+  "(1, 1, 1) 24 honest #2": {
+   "('C2axis', 'minus')": 6,
+   "('C2edge', 'minus')": 12
+  },
+  "(1, 1, 1) 24 honest #3": {
+   "('C2axis', 'minus')": 6,
+   "('C2edge', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge-1 #0": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge-1 #1": {
+   "('C2axis', 'minus')": 12,
+   "('C2edge', 'minus')": 24
+  },
+  "(1, 1, 1) 48 edge-1 #2": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge-1 #3": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge+1 #0": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge+1 #1": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  },
+  "(1, 1, 1) 48 edge+1 #2": {
+   "('C2axis', 'minus')": 12,
+   "('C2edge', 'minus')": 24
+  },
+  "(1, 1, 1) 48 edge+1 #3": {
+   "('C2edge', 'minus')": 24,
+   "('C2axis', 'minus')": 12
+  }
+ }
+}

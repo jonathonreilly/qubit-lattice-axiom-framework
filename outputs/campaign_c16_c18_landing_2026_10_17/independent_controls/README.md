@@ -1,0 +1,5 @@
+# Supplementary independent controls
+
+These are recorded disjoint review controls, not primary PASS substitutes. JSON files are captured results with their original scope. To replay in a scratch directory, copy source text under its original executable name: `exact-controls.py.txt` to `exact_controls.py`, `bloch-controls.py.txt` to `bloch_controls.py`, `antiunitary-control.py.txt` to `antiunitary_control.py`, and `pauli-control.py.txt` to `pauli_control.py`. Keep all four together: the latter two import `bloch_controls.py`. Review the source and resource scope before any replay; no automatic replay is scheduled here.
+
+The exact group control uses rational/quadratic-field arithmetic; the Bloch control includes numerical spectra/Hessians and an exact reference characteristic polynomial. The antiunitary coefficient check establishes the supplied family's Laurent-coefficient symmetry. The Pauli control covers the named finite tori/fluxes and statistics; none derives physical particle identification or unrestricted symmetry localization.

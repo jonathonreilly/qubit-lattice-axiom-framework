@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py
 runner_sha256: 2c3b2a1a88641a1a7009bfbacdb575c4b1824299e71729f522aee9cff394b114
-input_fingerprint_sha256: 09181008e961afd893214623e45321167cbde90f8342905189ebca5f587a540a
+input_fingerprint_sha256: be00b3ff19955f7dafe9d86fb6acb352bfd1ffd8e9287e267290a3415f1dd87c
 timeout_sec: 1200
 exit_code: 0
-elapsed_sec: 103.35
+elapsed_sec: 83.27
 status: ok
 ----- stdout -----
 PASS all 60 half-edge codes are commuting stabilizer groups (L = 4)

@@ -1,0 +1,20 @@
+L=4 t1=-1.0 t2=+0.1 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist i^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': 0.0})]
+L=4 t1=-1.0 t2=+0.1 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist (-i)^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 1.0, 'E5/2': 0.0}), ((-1, -1), {'E1/2': 0.0, 'E5/2': 1.0})]
+L=4 t1=-1.0 t2=+0.3 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.838478 deg 2; next 0.1177; twist i^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': 0.0})]
+L=4 t1=-1.0 t2=+0.3 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.838478 deg 2; next 0.1177; twist (-i)^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 1.0, 'E5/2': 0.0}), ((-1, -1), {'E1/2': 0.0, 'E5/2': 1.0})]
+L=4 t1=-1.0 t2=+0.1 lam=+0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist i^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 1.0, 'E5/2': 0.0}), ((-1, -1), {'E1/2': 0.0, 'E5/2': 1.0})]
+L=4 t1=-1.0 t2=+0.1 lam=+0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist (-i)^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': 0.0})]
+L=4 t1=-1.0 t2=+0.2 lam=-0.3: [H,G_R] max 0e+00; ground E=-3.131371 deg 2; next 0.0820; twist i^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': 0.0})]
+L=4 t1=-1.0 t2=+0.2 lam=-0.3: [H,G_R] max 0e+00; ground E=-3.131371 deg 2; next 0.0820; twist (-i)^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 1.0, 'E5/2': 0.0}), ((-1, -1), {'E1/2': 0.0, 'E5/2': 1.0})]
+L=4 t1=-1.0 t2=-0.1 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist i^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': 0.0})]
+L=4 t1=-1.0 t2=-0.1 lam=-0.5: [H,G_R] max 0e+00; ground E=-3.555635 deg 2; next 0.0442; twist (-i)^w1: lifts (sign of C4z-lift, C3-lift) -> [((1, -1), {'E1/2': 1.0, 'E5/2': 0.0}), ((-1, -1), {'E1/2': 0.0, 'E5/2': 1.0})]
+
+single-site cluster (t2 = 0, one site), same G_R restricted to the origin site:
+  lam=-0.5: E=-3.4142 deg 2 gap 2.5434; lifts -> [((1, -1), {'E1/2': -0.0, 'E5/2': 1.0}), ((-1, -1), {'E1/2': 1.0, 'E5/2': -0.0})]
+  lam=+0.5: E=-3.4142 deg 2 gap 2.5434; lifts -> [((1, -1), {'E1/2': 1.0, 'E5/2': -0.0}), ((-1, -1), {'E1/2': -0.0, 'E5/2': 1.0})]
+
+adjoint (SO(3)) image of the doublet rep: compare D_R sigma D_R^dag with R acting on a vector
+  characters of adjoint vs vector rep (should agree class by class): True
+
+L=8, (t1,t2,lam)=(-1,0.1,-0.5): lowest 8 levels [-3.555635 -3.555635 -3.54289  -3.54289  -3.54289  -3.54289  -3.54289
+ -3.54289 ]

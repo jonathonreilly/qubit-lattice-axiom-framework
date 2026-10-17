@@ -1,0 +1,22 @@
+== (2) legitimacy of the on-site map ==
+legitimacy failures (Hermitian, square, (anti)commutation, mu/nu images, homomorphism, translation covariance): 0
+eps=1 map == CZ-network o bare permutation: failures over 720 orderings x 24 rotations: 0
+== (1) invariance ==
+L=4 orbit4 code0 o=(0, 1, 2, 3, 4, 5) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=6 (expected |stab| = 6) [0.5s]
+L=4 orbit4 code0 o=(0, 1, 2, 3, 4, 5) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=6 (expected |stab| = 6) [0.6s]
+L=4 orbit6 code1 o=(0, 1, 2, 3, 5, 4) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=4 (expected |stab| = 4) [0.6s]
+L=4 orbit6 code1 o=(0, 1, 2, 3, 5, 4) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=4 (expected |stab| = 4) [0.5s]
+L=4 orbit12 code3 o=(0, 1, 2, 4, 5, 3) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=2 (expected |stab| = 2) [0.6s]
+L=4 orbit12 code3 o=(0, 1, 2, 4, 5, 3) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=2 (expected |stab| = 2) [0.6s]
+L=6 orbit4 code0 o=(0, 1, 2, 3, 4, 5) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=6 (expected |stab| = 6) [2.9s]
+L=6 orbit4 code0 o=(0, 1, 2, 3, 4, 5) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=6 (expected |stab| = 6) [2.8s]
+L=6 orbit6 code1 o=(0, 1, 2, 3, 5, 4) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=4 (expected |stab| = 4) [2.7s]
+L=6 orbit6 code1 o=(0, 1, 2, 3, 5, 4) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=4 (expected |stab| = 4) [2.3s]
+L=6 orbit12 code3 o=(0, 1, 2, 4, 5, 3) sector=(0, 0, 0) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=2 (expected |stab| = 2) [4.0s]
+L=6 orbit12 code3 o=(0, 1, 2, 4, 5, 3) sector=(1, 1, 1) log2dim=3 all-generator failures (eps=1, 24 R)=0; rotations preserving group under BARE map=2 (expected |stab| = 2) [3.5s]
+L=4: all 60 codes x 2 sectors x 24 rotations (site-0 generators, eps=1): 2880 cases, failures 0
+L=6: all 60 codes x 2 sectors x 24 rotations (site-0 generators, eps=1): 2880 cases, failures 0
+L=4: all 720 orderings x 2 sectors x 24 rotations: 34560 cases, failures 0
+orbit4: rotations preserving signed group (eps=1) per sector: {'(0, 0, 0)': 24, '(0, 0, 1)': 8, '(0, 1, 0)': 8, '(0, 1, 1)': 8, '(1, 0, 0)': 8, '(1, 0, 1)': 8, '(1, 1, 0)': 8, '(1, 1, 1)': 24}
+orbit6: rotations preserving signed group (eps=1) per sector: {'(0, 0, 0)': 24, '(0, 0, 1)': 8, '(0, 1, 0)': 8, '(0, 1, 1)': 8, '(1, 0, 0)': 8, '(1, 0, 1)': 8, '(1, 1, 0)': 8, '(1, 1, 1)': 24}
+orbit12: rotations preserving signed group (eps=1) per sector: {'(0, 0, 0)': 24, '(0, 0, 1)': 8, '(0, 1, 0)': 8, '(0, 1, 1)': 8, '(1, 0, 0)': 8, '(1, 0, 1)': 8, '(1, 1, 0)': 8, '(1, 1, 1)': 24}

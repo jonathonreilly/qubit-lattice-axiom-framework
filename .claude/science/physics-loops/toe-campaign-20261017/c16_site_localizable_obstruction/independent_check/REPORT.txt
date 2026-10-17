@@ -1,0 +1,177 @@
+INDEPENDENT CHECK: c16 site-localizable obstruction / six-direction shell
+Note: docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Date: 2026-10-17
+
+Provenance: a fresh-context agent from the same model family as the author (Claude Opus 5.5), so
+this is not an independent model. I wrote my own code from scratch (Python and numpy) and only
+read the runner and runner.log after I had my results. I did not edit the note or the runner, and
+I did not commit anything.
+
+Files in this directory:
+  grouptheory.py / grouptheory.out   items 2-4 (O, 2O, cocycles, subgroups, induced reps), ~3 s
+  application.py / application.out   item 5 (half-edge Paulis with phases; edge BKSF GF(2)), ~16 s
+
+----------------------------------------------------------------------------------------------
+ITEM 2 (kernels): CONFIRMED
+  - Over GF(2): dim Z^2(O;Z2) = 25, dim B^2 = 23, so H^2(O;Z2) = Z2^2. The cocycles w2 (from the
+    SU(2) section) and w1 cup w1 are independent modulo B^2, so they span it.
+  - w1, the sign of the permutation of the six directions, equals the S4 sign on the four body
+    diagonals. It is 1 on C4 and on edge C2, and 0 on axis C2 and on C3.
+  - Test for "the central -1 is a commutator of the extension", i.e. no 1-dim rep with z -> -1:
+      class 0: no, w1^2: no, w2: yes, w2+w1^2: yes. So the kernel is {0, w1^2}.
+    Second method: u(g) = i^{w1(g)} has coboundary exactly (-1)^{w1 cup w1}, so w1^2 is the
+    Bockstein of the sign character.
+  - Squares of the lifts of the involutions, written as (axis C2, edge C2):
+      0: (+,+)    w1^2: (+,-)    w2: (-,-)    w2+w1^2: (-,+)
+    These four patterns are distinct, so the involution squares detect the class.
+  - Subgroups: there are 30 subgroups in 11 conjugacy classes. The restriction of w2 forces local
+    dimension >= 2, i.e. -1 lies in the commutator subgroup of the preimage in 2O, exactly for:
+      D2(axis), D2(1 axis + 2 edge), D4, T and O (commutator subgroups of order 2, 2, 4, 8, 24).
+    It does not for C1, C2(axis), C2(edge), C3, C4 and D3. For D3 the commutator subgroup is Z3.
+    This matches the note.
+  - Axis D2: dim H^2 = 3, and all 8 square patterns occur, one per class. A 1-dim rep exists
+    exactly for (+,+,+), (+,-,-), (-,+,-) and (-,-,+), the patterns with an even number of -.
+    w2 restricts to (-,-,-). This matches the note.
+
+ITEM 3 (odd orbits): CONFIRMED
+  - The only subgroups of odd index are D4 (index 3) and O (index 1). This also follows from
+    Lagrange: 8 must divide |H|.
+  - Precision: the conclusion is a necessary condition. An O-invariant odd-charge pattern needs a
+    charge term with an odd orbit. Having such a term does not mean that violating its orbit alone
+    gives a realizable pattern. See wording item W4.
+
+ITEM 4 (shells): CONFIRMED WITH ONE CONVENTION TO STATE
+  - I built all 8 irreps of 2O as explicit matrix representations:
+      A1; A2 = w1; E via O -> S3; T1 = vector; T2 = T1 x A2;
+      E1/2 = defining SU(2); E5/2 = E1/2 x A2; G3/2 = Sym^3 (spin 3/2).
+    All are homomorphisms, the characters are orthonormal, and sum dim^2 = 48. These are the
+    standard Bethe/Koster labels (Gamma6 = E1/2, Gamma7 = E5/2, Gamma8 = G3/2). On the C4 lift with
+    trace +sqrt2: chi(E1/2) = +sqrt2, chi(E5/2) = -sqrt2, chi(G3/2) = 0.
+  - Induced representations, with g the continuous lift of the right-handed minimal rotation
+    (trace > 0 for C4 and C3) and chi_k(g) = exp(2 pi i k / n):
+      six directions (stabilizer lift Z8):
+        k=0  A1+E+T1      k=2,6  T1+T2      k=4  A2+E+T2
+        k=1,7  E1/2+G3/2  k=3,5  E5/2+G3/2
+      eight octants (Z6):
+        k=0  A1+A2+T1+T2   k=2,4  E+T1+T2
+        k=1,5  E1/2+E5/2+G3/2   k=3  2 G3/2
+      twelve face diagonals (Z4):
+        k=0  A1+E+T1+2T2   k=2  A2+E+2T1+T2
+        k=1,3  E1/2+E5/2+2G3/2
+    Every entry of the table and of the claim scope is correct, and so is "6 = 2 + 4".
+  - Convention (needs stating): the k labels for the six directions depend on which generator of
+    Z8 is used. Replacing g by -g = g^5 swaps k=1 <-> 5 and 3 <-> 7, so the table would then read
+    E1/2 for k = 3, 5. The runner takes "the first element of maximal order", which is not
+    documented; it happens to pick a trace-+sqrt2 generator, so its output matches mine. The
+    octant and face-diagonal groupings do not depend on the generator.
+
+ITEM 1 (obstruction logic): CONFIRMED WITH CORRECTIONS (the hypotheses need tightening)
+  The argument is correct as standard SET reasoning. The local space at the fixed point is 1-dim,
+  so the localized operators are phases, the U(1) class of the projective action is trivial, and
+  the Z2 class maps into the kernel. a x a = 1 reduces the gauge freedom to nu_a = +-1, which keeps
+  the involution squares well defined. That is what gives the "even number of -" rule. Gaps:
+  (G1) "The violated-term pattern fixes the local state" needs more than "commuting Pauli
+       Hamiltonian". The terms must generate the full stabilizer group, with no nontrivial local
+       logical operators (local indistinguishability). A spectator qubit with no term, or a
+       gauge-type local degeneracy, would make the local space bigger than 1.
+  (G2) The realization must be a linear action of H, or the note must say which extension is
+       meant. The Majorana-per-direction realizations form A4 x| Z4, an extension of O by fermion
+       parity with class w1^2 (companion note). The measured "class" then includes that
+       contribution. This does not affect "not w2", because both 0 and w1^2 are in the kernel, but
+       the class should be named relative to the realization.
+  (G3) Given its hypotheses, the content of item 1 is close to a tautology: a 1-dim projective rep
+       is U(1)-trivial. The load-bearing hypothesis is the existence of an H-invariant violated-term
+       pattern carrying a. This is a real condition, and it fails for the bare permutation (see
+       item 5). The note should name it as the condition to verify.
+
+ITEM 5 (application): CONFIRMED WITH CORRECTIONS (one overclaim)
+  Confirmed (half-edge model, L=4, Paulis with phases, 3 orderings x 24 rotations about v=0):
+  - The bare P_R maps B_v to +B_v: 0 failures.
+  - V_R P_R maps B_v to +B_v: 0 failures. Here V_R is the on-site CZ network on direction pairs
+    whose relative order differs between o and Ro.
+  - V_R P_R maps every generator near v (B, R and S^o) to + a generator of the same type:
+    0 failures out of 13,608 checks. Analytically, V_R P_R A^o_e = +A^o_{Re} exactly, and S_p is
+    unchanged under dihedral reordering of its four A's.
+  So for the on-site Clifford realization the term set is preserved, the single-B_v pattern is
+  invariant, and item 1 applies. The same holds for the Majorana-per-direction signed permutation,
+  which maps generators to +generators by that note's construction.
+  Pair test: with lambda = theta*eta and theta = -1, lambda = -1 for all nine C2 means eta = +1 on
+  both classes, which is the class-0 pattern. w1^2 would give eta(edge C2) = -1, i.e.
+  lambda(edge) = +1; w1^2 is trivial on axis C2 and nontrivial on edge C2. Confirmed.
+  "Never w2 on O" follows, and also never w2+w1^2.
+
+  OVERCLAIM: "B_v is mapped to itself by every rotation realization ... (bare permutation, ...) so
+  item 1 applies to every such realization."
+  - B_v -> B_v is necessary but not sufficient. Item 1 also needs the whole term set mapped onto
+    itself, so that the pattern {B_v only} is invariant.
+  - For the BARE permutation this fails. Exact edge BKSF, L=4: 720 orderings give 60 codes, with
+    stabilizers D3 (12 codes), order 4 (12) and C2 (36). The intertwining P_R A^o_e = A^{Ro}_{Re}
+    held with 0 sampled failures.
+      * (code, C2) pairs for which SOME ordering's plaquette term set is P_R-invariant:
+        D3 36/36, C2-codes 24/36, D2 12/36 (72/108 in total, matching the companion note).
+      * Codes with an ordering whose term set {B} u {S^o} is invariant under the WHOLE
+        stabilizer: only 24 of the 36 C2-codes. None of the 12 D3 codes (the C3 never preserves
+        it) and none of the 12 D2 codes.
+      * L=8, clean hop string from v. P_R sends the clean single-fermion pattern to one with
+        plaquette violations within distance 2 of v in:
+          D2 axis C2   12/12     D2 edge C2   19/24     D3 C3   24/24
+          D3 edge C2   24/36     C2-code edge C2   10/12
+        (3 orderings x up to 4 codes per type.)
+  - So under the bare action, item 1's hypothesis is not established for the D3 and D2 codes. For
+    the D2 codes the pair data (-,-,-) together with item 2 imply that at least one premise fails:
+    (i) no D2-invariant charge pattern exists, (ii) localization fails, or (iii) lambda = theta*eta
+    fails. Candidate (i) is now concrete, because no ordering's clean pattern is D2-invariant.
+    This matches the note's own "does not decide which assumption fails" and contradicts its
+    "item 1 applies to every such realization".
+  - Also: "Any vacuum-preserving realization maps B_v to +-B_v" is false in general. A
+    code-preserving Clifford can send B_v to B_v times other stabilizers. It holds for on-site
+    (support-preserving) realizations that map terms to terms.
+  - The runner does not test item 5 at all (it has no B_v or Clifford code). The "exact algebra"
+    of item 5 is unchecked by the runner; this check covers it.
+
+ITEM 6 / wording / prior work (item 4 of the brief): CONFIRMED WITH CORRECTIONS
+  - The theorem text stays about supplied models. "Spin-1/2 class" is defined as w2|H (N5), and
+    the physical identification is disclaimed. The p-shell analogy is in the interpretation section
+    and is presented as an analogy. Acceptable.
+  - Prior work is honest. The fixed-point projective-rep degeneracy argument is correctly credited
+    as standard (BBCW 2019; Qi-Fu; Thorngren-Else), and the double-group/induced-rep facts as
+    textbook. The "new here" items are modest corollaries and stated as such. One suggestion: say
+    "new here" is a straightforward application of the standard argument, and add Kramers-style
+    degeneracy at high-symmetry points / the "Lieb-Schultz-Mattis for point groups" literature
+    (e.g. Po, Watanabe, Jian, Zaletel, PRL 119, 127202 (2017)) only if the authors want a broader
+    citation. Optional.
+
+REQUESTED WORDING CHANGES
+  W1 (claim scope and item 5) Replace "B_v is mapped to itself by every rotation realization about
+     v that preserves the vacuum (bare permutation, the on-site Clifford maps), so the fermion's
+     class ... lies in that kernel" with:
+       "every realization that maps the term set onto itself fixes B_v. This holds for the on-site
+       Clifford maps V_R P_R and for the Majorana signed permutations, so item 1 applies to them
+       and their class on O is 0 or w1^2, never w2 or w2+w1^2. The bare permutation fixes B_v but
+       does not map the term set of any one ordering onto itself under the full D3 or D2
+       stabilizer, so item 1's invariant-pattern hypothesis is not established there."
+     Delete "Any vacuum-preserving realization maps B_v to plus or minus B_v", or restrict it to
+     on-site, term-preserving realizations.
+  W2 (item 1 Setting) Add "the terms generate a stabilizer group with no nontrivial local logical
+     operators", and "H acts linearly (or name the extension, e.g. by fermion parity)".
+  W3 (item 4) State the convention: "chi_k(g) = exp(i pi k/4), with g the lift of the +90 degree
+     rotation with trace +sqrt2". Write "T1 + T2 (k = 2, 6); A2 + E + T2 (k = 4)" instead of
+     "T1 + T2, A2 + E + T2 for k = 2, 4, 6". Optionally add the k labels for the octants
+     (k=1,5: E1/2+E5/2+G3/2; k=3: 2G3/2; k=2,4: E+T1+T2).
+  W4 (interpretation, design rule) The rule reverses item 3's implication. Item 3 says an
+     invariant odd-charge pattern requires an odd-orbit charge term. It does not say that such a
+     term yields one. Rephrase: "must have no O-invariant realizable violated-term pattern of odd
+     charge, e.g. no single-site charge term that can be violated alone, like B_v."
+  W5 (interpretation) "The six directions are the smallest even orbit at a site": true for orbits
+     of single points (sizes 1, 6, 8, 12, 24). It is false for orbits of supports, which is what
+     item 3 uses: a tetrahedron of octants has orbit 2 (stabilizer T), and a body-diagonal pair has
+     orbit 4 (stabilizer D3). Say "of single positions".
+  W6 (interpretation) "If its class is trivial, they form A1 + E + T1" holds only for k = 0. A
+     trivial class with a nontrivial stabilizer character gives T1+T2 or A2+E+T2.
+  W7 (item 5, pair test) "which is class 0" -> "which is the class-0 pattern under lambda =
+     theta*eta". The Majorana-per-direction note itself cautions that clean-sector signs are not
+     established anyon invariants, and its W-twist gives the w1^2 pattern. Both are in the kernel.
+
+OVERALL: the group theory (items 2-4) is exactly confirmed. Item 1 is sound as a conditional,
+with the hypotheses tightened as in W2. Item 5 is confirmed for the term-preserving (on-site
+Clifford and Majorana) realizations and overstated for the bare permutation (W1).

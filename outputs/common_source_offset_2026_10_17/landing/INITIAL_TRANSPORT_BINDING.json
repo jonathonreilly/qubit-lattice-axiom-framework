@@ -1,0 +1,11 @@
+{
+  "original_head": "bbaa90e990cfca779a34cdc5a72d5facd5fbeb15",
+  "original_note_sha256": "02673f4fc909c3a078339f3d0f062539df478c878e0c1f0efc5470ff127f5454",
+  "original_note_recovery": "outputs/common_source_offset_2026_10_17/landing/original-note.md.txt",
+  "final_note_sha256": "17d3d9c1b4872ea4ca39e33ce51ea387a628cd51484b95df644f9817be43989b",
+  "runner": "scripts/common_source_offset_complete_output_2026_10_17.py",
+  "runner_sha256": "e2be85a5d9cb0eba4c8393b2283c076ea50429d4be10134ee5181c7dfa755dbc",
+  "pin_count": 183,
+  "declared_input_count": 186,
+  "scope": "Author packaging only; no primary execution or independent approval. Added bounded metadata, portable output paths and narrow corroboration."
+}

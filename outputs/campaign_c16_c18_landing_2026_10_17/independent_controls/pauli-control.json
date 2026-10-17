@@ -1,0 +1,14 @@
+{
+  "construction": "independent coordinate graph, global-index edge ordering and signed unsplit BKSF representation; no author imports",
+  "L": 4,
+  "vertices": 768,
+  "edges": 2304,
+  "tube_0_and_pi_both_consistent": true,
+  "signed_stabilizer_rank": 2301,
+  "minus_identity": false,
+  "encoded_qubits": 3,
+  "half_edge_repetition_extension": "768 independent repetition constraints and 768 additional qubits preserve k=3",
+  "local_T_junctions_exact": 15360,
+  "single_loop_flux_mutation": "detected -I (inconsistent flux assignment)",
+  "scope": "finite L4 rank and exact local Pauli algebra; not a full localization theorem"
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16192,
- "node_count": 7224,
+ "edge_count": 16230,
+ "node_count": 7241,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2122,6 +2122,10 @@
    "deps_hash": "47c9ce544854",
    "out_degree": 3
   },
+  "autonomous_local_record_finite_window_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f06733942b0d",
+   "out_degree": 3
+  },
   "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30": {
    "deps_hash": "f4208d5ec387",
    "out_degree": 3
@@ -3886,6 +3890,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "common_source_offset_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "c92bc1405103",
+   "out_degree": 1
+  },
   "commuting_static_edge_fixed_target_bounded_theorem_note_2026-10-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -4242,6 +4250,18 @@
    "deps_hash": "48ebef824880",
    "out_degree": 6
   },
+  "corner_fermion_long_wavelength_theory_is_one_isotropic_spin_half_doublet_and_one_qubit_block_embedding_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "de83b23f3129",
+   "out_degree": 2
+  },
+  "corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "be9cff861701",
+   "out_degree": 3
+  },
+  "corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "b104afee3eda",
+   "out_degree": 4
+  },
   "corner_kernel_cubic_carriers_c3_split_and_registered_block_weights_bounded_theorem_note_2026-09-02": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -4376,6 +4396,10 @@
   },
   "critical_mediator_clock_data_bounded_theorem_note_2026-10-14": {
    "deps_hash": "bd801cbe187b",
+   "out_degree": 2
+  },
+  "critical_product_source_spectral_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "36f55076a973",
    "out_degree": 2
   },
   "cross_code_equivalence_cycle727_bounded_theorem_note_2026-07-28": {
@@ -6612,6 +6636,10 @@
   },
   "fast_vacancy_motion_after_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
+   "out_degree": 2
+  },
+  "faster_three_site_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e809197d8377",
    "out_degree": 2
   },
   "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {
@@ -12398,6 +12426,10 @@
    "deps_hash": "ec6690abc5b2",
    "out_degree": 1
   },
+  "hopping_controlled_finite_output_transfer_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f39a541fbfc4",
+   "out_degree": 1
+  },
   "hstar_threshold_spectral_bounded_theorem_note_2026-10-12": {
    "deps_hash": "a2414241ba68",
    "out_degree": 1
@@ -14059,6 +14091,10 @@
    "out_degree": 2
   },
   "lanes_open_science_03_quark_mass_retention_open_lane_2026-04-26_note_2026-05-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "large_feature_spectral_reconstruction_note_2026-10-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -16052,6 +16088,10 @@
   },
   "no_site_wise_formation_rule_preserves_the_sea_under_tick_evolution_the_eigenvector_condition_is_per_step_and_set_wise_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "nominal_bandcenter_converter_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f39a541fbfc4",
    "out_degree": 1
   },
   "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
@@ -20066,6 +20106,10 @@
    "deps_hash": "71548c1b3e14",
    "out_degree": 7
   },
+  "site_localizable_stabilizer_code_fermion_cannot_carry_the_spin_half_class_direction_shell_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "1192f68881e8",
+   "out_degree": 5
+  },
   "site_phase_cube_shift_intertwiner_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -20101,6 +20145,14 @@
   "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12": {
    "deps_hash": "9defae253834",
    "out_degree": 2
+  },
+  "slow_output_complete_state_onset_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e4656684d57a",
+   "out_degree": 2
+  },
+  "slow_output_local_record_finite_window_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "abd71353574e",
+   "out_degree": 4
   },
   "slow_variables_derived_one_body_closure_link_is_a_coordinate_bounded_theorem_note_2026-06-09": {
    "deps_hash": "96b72bb31cc5",
@@ -20942,6 +20994,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "structured_source_tolerance_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e809197d8377",
+   "out_degree": 2
+  },
   "structureless_dag_gravity_harness_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -21778,6 +21834,10 @@
    "deps_hash": "cd89a6235e20",
    "out_degree": 2
   },
+  "three_site_product_source_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "e8ba976e1d1a",
+   "out_degree": 2
+  },
   "three_state_clock_endpoint_reflection_sector_energy_and_ground_defect_bound_bounded_theorem_note_2026-09-15": {
    "deps_hash": "29e931ead268",
    "out_degree": 1
@@ -22161,6 +22221,10 @@
   "uniform_record_density_with_live_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "b6ef350ba20a",
    "out_degree": 2
+  },
+  "uniform_slow_output_resource_family_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "7ff42d004c44",
+   "out_degree": 1
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",
@@ -22765,6 +22829,10 @@
   "wide_lattice_h2t_skeptic_audit_note": {
    "deps_hash": "9aa2154fc209",
    "out_degree": 1
+  },
+  "wide_slow_output_complete_state_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "9ccc008671bc",
+   "out_degree": 3
   },
   "wigner_mode_low_d_sublattice_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",

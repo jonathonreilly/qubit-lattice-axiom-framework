@@ -1,3 +1,5 @@
+> Historical route: retired from the active emergent-electron campaign. Exact prior source and evidence are archived in `archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json`. The canonical bounded encoding result remains valid within its stated scope; historical spin-identification claims are not adopted.
+
 > Landing review scope correction (2026-10-17): Historical exploration. The onsite Clifford construction and finite clean-pair data remain useful. The final whole-family w2 claim is superseded: D3/single-C2 inference is conditional on localization, and D2 localization remains open.
 > Exact original: `.claude/science/physics-loops/toe-campaign-20261017/landing_history/15047c096d8c428d4f9f0b31afa0e9ea9411cbe5ee59c73a2ba1749c95f54bf2.md.txt`.
 

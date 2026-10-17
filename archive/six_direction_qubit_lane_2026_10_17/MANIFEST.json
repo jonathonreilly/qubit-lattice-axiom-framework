@@ -1,0 +1,313 @@
+{
+  "scope": "Historical six-direction/half-edge emergent-electron route; exact source snapshots, not current scientific or audit authority. Canonical bounded encoding theorem and primary remain available.",
+  "objects": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/README.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "2f6465e562d17ba56592c935f3b9e32415d6b7e2a7e8b1603b798b24cba29c1b",
+      "bytes": 635,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/README.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/halfedge.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "3abd66f313c1a0eeb4b50111563c6389b7b85c815fd9c9071919c5b493dae20d",
+      "bytes": 4494,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/halfedge.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/REPORT.txt",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "6e1e1a91dd910eec8d8aca8372a2460a04b775364729068c95ec02380bcb178e",
+      "bytes": 10506,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/REPORT.txt.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_123.out",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "cad606ad0bbbe6f8007b057b193508ce06c4dce421e79f40565daf50d8c20f06",
+      "bytes": 536,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_123.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_123.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "a5a09feb71616a59d1f7cc6581d6b5444dcd31dfc508371430d8d1c53ebcdadd",
+      "bytes": 4899,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_123.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "c29e8e66a93565070a4ae37b7cb9ffee5e7e8f458734fd892723f452e0d5c934",
+      "bytes": 8324,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4_L6.out",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "4191e7ac7f25bb63d75fd2bb30440340a714b6e5f141f978f3be5d5ab49af15c",
+      "bytes": 1414,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4_L6.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4b.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "1f9c15f0d0c85453b4057852e6849d16cfb99b14396347069c398371631b7976",
+      "bytes": 9456,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4b.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4b_L8.out",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "9ece29021db2becfd20e4293eb453cc9f0898c770a4e94a24b7f767b915aabc2",
+      "bytes": 3117,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_4b_L8.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_plaq_order.out",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "14e682c67ec0ab96b1b0e0a21ba9be08fe286afe572b18d65f40c93b319601df",
+      "bytes": 77,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_plaq_order.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_plaq_order.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "ff9e03433a85491c386635f7c9700f3cdc383386bb7f2069aadbe9f3781ac5bf",
+      "bytes": 841,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/check_plaq_order.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/ilib.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "a2ad607e2bf07e59a46e444c53b992538ce6b5add791670d5ac0a389857ca1a0",
+      "bytes": 8230,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/ilib.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c11_site_local/siteaction.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "ca5294bbaf8b9e34deeec8e99c6084eaf1c84920980a49c1c0cdadec9aba7681",
+      "bytes": 1954,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/siteaction.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/README.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "c333ef824c7fecfc95dd04365812642229806686b5715f5e231b00be379c8ffd",
+      "bytes": 1479,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/README.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/halfpair.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "a01e5b29b9b773cab7335db1bf169aae147682651c809a75aee7dbaf192f7404",
+      "bytes": 1425,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/halfpair.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/halfpair.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "3328ba4279e887b3b1da9d8c4e6c56fa8f7f879d0944b7ae90a83fb0cd005f0f",
+      "bytes": 2669,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/halfpair.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/REPORT.txt",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "69637f9fa5759955b20b3e4e9399ab46c7ea657e1c58d8b8834169fdb662605a",
+      "bytes": 9292,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/REPORT.txt.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "7edc143d1ccddcde6c58cb6482b349d30a1849040ee1b024ae94fdc2c9b6abef",
+      "bytes": 6664,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "450c84cd4a8d19f9267acc6ab9f3951fbb92e65b65001b7375ede2bdae5b3282",
+      "bytes": 9229,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack_results.json",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "3c19ad4fa580709bad40c3f68324828e1ccb7362b23234ff6a07d4d4cc351652",
+      "bytes": 7366,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_attack_results.json.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_extra.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "29be3e651edffcdcffd422d8cba2797dcdb457082909135020a4c45a0c19a325",
+      "bytes": 606,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_extra.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_extra.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "d6af83ae1b2314cbecf71eb285495dfc2375aa0127064a443c314e323789cd67",
+      "bytes": 1740,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_extra.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "17f6f975d9e8e3fa962c1085542cc4867db363d4b2f44304d19750498f299fd8",
+      "bytes": 2806,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "33ce9f317e55e45b8515a46d25031d96ebd3a116cc2f9f1c82f7c6cfcd1b16d5",
+      "bytes": 6683,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw_results.json",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "37dee3677f5081fb6cc8a0b5a96d4245dff0785b5c8325a47f337ae79b0cb413",
+      "bytes": 2652,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_grouplaw_results.json.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "37989f769835485d486d90f0f846b14e7549b7aa60cf7f0f1384c311f06284f9",
+      "bytes": 3252,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "e626bf5547e5e1dec93e7a79b42b071ddf1aa76d75f903bf03afbbaffdc8abc1",
+      "bytes": 8511,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance_results.json",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "20f7e2bac89ca79d9d6c87604cc1d51da19c3ea42951022e0a2876823ae78040",
+      "bytes": 1504,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/check_invariance_results.json.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/classify.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "181aa8e2dcaae606d312786a13cf6ecaf06675e8ef7041d620d03bcc68652978",
+      "bytes": 2168,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/classify.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/codes.json",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "3a3e1b425ecaf38073557139815e5e8293be2bae287dc5f66885c68669ed56f1",
+      "bytes": 17179,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/codes.json.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/model.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "a097ccc0b2a21be8ac4839d6ee6725d94c03a09d0b0336b420d52d396fd74d4c",
+      "bytes": 8860,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/model.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/paulialg.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "108cafd01b518127c679ef8957f38eb7c1fc654d4735f32264f1ffdc59914bb1",
+      "bytes": 3016,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/paulialg.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/majhalf.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "aa1732ce5b6eb5dbac80fa4fab820a9e0d173467b41810f3671f7297c53d1e83",
+      "bytes": 5179,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/majhalf.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/majhalf_all60_L4.log",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "96e53a3f15f128699288392a9b9c9cdbbaf25546a8b266296992f5d37278cf92",
+      "bytes": 387,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/majhalf_all60_L4.log.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/onsite.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "02b529a784d1f0cdf46d1582959fea5dcb9b6d1003e0c9b40ff1e4b6024b471f",
+      "bytes": 3104,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/onsite.py.txt"
+    },
+    {
+      "original_path": "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "d64e4892bde131ac08093f5079c4f4e1427149ae44c9c91dacec5cbe152c4b37",
+      "bytes": 12633,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt"
+    },
+    {
+      "original_path": "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "2c3b2a1a88641a1a7009bfbacdb575c4b1824299e71729f522aee9cff394b114",
+      "bytes": 12820,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "b59642396f48c846435003365fe8869126b845526d029e1314f5e9f9486c1847",
+      "bytes": 15675,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "a7a6dd0a4d5e3af188cda818c3cbb070095982e0b2024dd8022ea06d21be9a40",
+      "bytes": 3530,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/STATE.yaml",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "9eb350968c3b27e6ce7910da94a3a0cfcc921e9d170b7563b5c60ba33fc91853",
+      "bytes": 11388,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/STATE.yaml.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/CLAIM_STATUS_CERTIFICATE.md",
+      "source_commit": "f389e89fe84e2584ee85047f08da88c1443eb163",
+      "sha256": "1e2166410ca247008c72e13bbb4fff217e427e2610d45c6ede84ab6c20e81461",
+      "bytes": 4352,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/f389e89fe8/.claude/science/physics-loops/toe-campaign-20261017/CLAIM_STATUS_CERTIFICATE.md.txt"
+    },
+    {
+      "original_path": "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "source_commit": "3fee3dc191b6fcc905f65e7c3c638fd0b4f6c046",
+      "sha256": "ad30f92743c7cdbefad7b35b2aa6df3b84fc200160c4271a8c81f64ec5f15b8d",
+      "bytes": 13395,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/3fee3dc191/docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+      "source_commit": "c7330c94ce411a991d025e45204687a507a1ba61",
+      "sha256": "e198d73fd49fd9577ab0ed4d9d4edfe1f03fe84a3c652265548dd315462828bf",
+      "bytes": 20772,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/c7330c94ce/.claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-campaign-20261017/STATE.yaml",
+      "source_commit": "c7330c94ce411a991d025e45204687a507a1ba61",
+      "sha256": "463656937da0967cc86ca02d07343b4e98931f76fd7fc14a61deed2eced4efac",
+      "bytes": 16585,
+      "archive_path": "archive/six_direction_qubit_lane_2026_10_17/snapshots/c7330c94ce/.claude/science/physics-loops/toe-campaign-20261017/STATE.yaml.txt"
+    }
+  ]
+}

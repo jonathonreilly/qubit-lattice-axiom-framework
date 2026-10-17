@@ -1,0 +1,105 @@
+<!-- Publication draft only. Append after the existing fixed-spectrum corollary.
+Suggested overview paragraph for integration, without replacing historical results:
+A further selectively checked endpoint-forcing refinement gives T=3e17 and M=1.5e19 for the nominal kappa=1e-8 apparatus and the stated supplied fixed-spectrum orientation family. It preserves their respective complete .000320/.001320 and .000347/.001347 error pairs, including the fixed nominal target for the perturbed family. This improves sufficient time/length by100/3 over the nominal disk result and40000/3 over the earlier fixed-spectrum result. Other precision corollaries retain their separately established onsets. These remain conditional dimensionless model bounds, not practical or native realization claims.
+-->
+
+## Endpoint forcing: shorter complete-output bounds for nominal and fixed-spectrum devices
+
+**Selectively checked conditional refinement.** Retaining the endpoint forcing in the complete Schur solution improves the sufficient onset to T=3e17. A single finite device with M=50T=1.5e19 output sites and M+116 total qubits has the corresponding guarantee on[T,2T]. The nominal apparatus retains complete operator error<.000320 infinite and<.001320 finite. The supplied fixed-spectrum family r in[1-1e-6,1] retains its FIXED nominal comparator and error<.000347 infinite and<.001347 finite. Infinite bounds hold for every t>=T. The earlier bounds remain valid historical sufficient results; other compensated/structured precision families are not extended here.
+
+All previously stated source/calibration/kernel, local spectral synthesis and supplied Hamiltonian/product-seed premises remain. The improvement changes neither kappa0=1e-8 nor the real certified sigma=1e-6 band. The fixed-spectrum family still supplies its exact local eigenvalues, one-sided angular interval and correlated endpoint shift; no generic spectral or coefficient error contract is added.
+
+### Endpoint forcing on the established complex disks
+
+Use the existing disks |w-k|<=rho=1e-12, centered at every k in I including its endpoints. Let end=ell=20 and b=ell+1 be the deleted input site. For unit incidence from the surviving output port, the exact cross-port kernel yields
+
+    phi_a(m)=iE' Q^m T_ao u.
+
+Indeed multiplication of a retarded open-source column at n by iE' z^-n gives unit incidence because iE' Aopen=1; its Q^n u=z^n u cancels the source phase. The cross-port kernel has no free incoming term. The published |tau|<2 and finite phase growth<1.001 give ||P phi(end)||<3. The closed row has24 filter-to-port powers plus20 input-extension powers, hence
+
+    ||Pc phi(end)||<=.062*(2e7)*(.15)^44*1.001<1e-24,
+    ||phi(end)||<3.001.
+
+Writing X=Q^ell T_aa Q^ell, the adjacent-site kernel is
+
+    G(end,b)=(A+X)Q,
+
+with the displayed order: X need not commute with Q. The existing projected deletion bound is ||Gbb^-1 phi(b)||<.2; it retains the tiny complementary forcing and does not apply the open inverse bound to all channels. Therefore
+
+    y=E_end^T x_bg=phi(end)-(A+X)Q Gbb^-1 phi(b),
+    Y=||y||<3.001+42*1.001*.2<12.                  (EF1)
+
+All eight internal directions remain. This controls a finite endpoint value on the disks, not the norm of an analytically growing open wave. No off-real unitarity is used.
+
+### Complete source and actual fixed-spectrum background
+
+The exact full source formula, with P=||R E_end|| and X_bg=||x_bg||, gives
+
+    V=[-kappa R E_end;I8],
+    x=[x_bg;0]+V(-kappa De^-1 y),
+    ||x||<=X_bg+kappa sqrt(1+kappa²P²)||De^-1||Y.    (EF2)
+
+Thus the full source norm need not multiply the emitter update. The complete background term is still present; no output projection is introduced.
+
+For the fixed-spectrum family let delta_b=-Delta, H_b=(I-delta_b G)^-1. The actual changed background satisfies
+
+    R_b E_end=R E_end H_b,
+    x_bg,b=x_bg+delta_b R E_end H_b y,
+    y_b=H_b y.                                     (EF3)
+
+These follow from its driven equation and preserve transpose symmetry. On the same disks |delta_b|<1e-20 and ||G||<36 give ||H_b||<1+1e-18. Combining(EF1) with the existing P<3.2e11,X_bg<1e8 gives common nominal/fixed-spectrum ceilings
+
+    P_b<3.21e11, Y_b<12.1, X_bg,b<1.01e8.           (EF4)
+
+In particular the source correction in(EF3) is<4e-8. This proves the perturbed disk-column transfer; it does not assume the nominal source theorem applies unchanged to a perturbed apparatus.
+
+### Complete strip and hard-cutoff estimates
+
+Take h=8e-15. On the disks G_b<36.000001, so its Cauchy oscillation is<.291. Both complementary emitter Schur corrections together are<1.6e-12; the exact self-energy oscillation is consequently<.292. With kappa_a>=(1-1e-6)1e-8,
+
+    .062h/kappa_a²<4.961,
+    Im Dj(x-iy)>[12-4.961-.292]kappa_a²>6kappa_a².
+
+Delta is real; it remains in the complementary gap and side estimates:
+
+    .18-|Delta|-.062rho-36.000001 kappa_a²>1/6,
+    v sigma-|Delta|-.061h²-36.000001 kappa_a²
+                    -6kappa_a^4(36.000001)²>2.49e-8.
+
+The full emitter inverse is<.18/kappa_a² on the bottom and<5e7 on either side. This proves the narrower strip, not an emitter-pole-free full rho disk. Since sqrt(1+kappa_a²P_b²)<3211, (EF2) and ||C||<=3||x||+4 give
+
+    C_bottom<3[1.01e8+.18*3211*12.1/kappa_a]+4<2.2e12,
+    C_side<3[1.01e8+1e-8*3211*5e7*12.1]+4<3.1e8.   (EF5)
+
+The full904 coordinates and closed tails remain. Uniform closed roots<.15<1/6 retain Hilbert-valued holomorphy. Actual R_inst=u^T x-1 defines the open-wave subtraction; its modulus is not set to one off real.
+
+Use the already paid coefficient a0=conjugate(omega_p f), or its auxiliary f_a counterpart for the perturbed family. The exact conjugate denominator has imaginary part -sin(x)[2J sinh(y)+(kappa_a²/J)exp(-y)]. Its bottom and cutoff coefficient bounds remain .088/kappa_a and44kappa_a/sigma. Hence, including both sides and within-parity overlap,
+
+    E_loc(t)<=1.5[sigma*(.088/kappa_a)*C_bottom exp(-vth)
+                         +(44kappa_a/sigma)*C_side/(vt)].
+
+At T=3e17, vT=7.5e15 and vTh=60. The bottom prefactor is<3e13, while e>8/3 and(8/3)^5>100 imply exp60>1e24, giving bottom<3e-11. Both sides together are<2.73e-8, so E_loc<2.733e-8.
+
+The scalar incoming and target contours keep their separately justified heights h_i=sigma/2 and h_o=kappa_a²/(4J²)>2.5e-14; C is not continued to those heights. With s=vT-113>7.4e15, sqrt(pi s)>1.4e8, giving scalar sides<6.3e-9. The target bottom exponent exceeds185, its prefactor is<1.21e8, and exp185>2^185>1e55. The incoming bottom is smaller. Thus both scalar norms are<7e-9 and positive target normalization costs<4.9e-17. The actual shifted real cutoff margins and phase113 remain included.
+
+### Complete bounds and fixed finite device
+
+Retain the previous exact static ceiling S<.000318243241, including actual exterior spectral amplitude, complex mismatch and normalization. Then
+
+    S+2.733e-8+7e-9+4.9e-17<.000320.                (EF6)
+
+For the fixed-spectrum family this first compares to its checked auxiliary packet. Adding the previously established full complex auxiliary-to-nominal profile difference<.000026 and both target normalization adjustments<9.8e-17 leaves<.000347. The final comparator is nominal f0/beta0; no changed-background phase is absorbed into it.
+
+Both comparisons keep exp(-ic_new t), exp(-itK)W for the entire elapsed time, the common complex profile/phase, blank emitter/other-clock/source registers and arbitrary passive reference. Actual exterior point and other spectral mass remain charged. Neither target normalization nor the intermediate auxiliary packet postselects the actual output.
+
+The radius18 and distance M+23 are unchanged. At M=50T the inherited finite-transfer bound is
+
+    4 exp[-(M+23)+36T sinh(1)]/[1-exp(-1)]<.001,
+
+since sinh1<1.2 leaves exponent<-6.8T-23. Thus finite errors are<.001320 and<.001347 on[T,2T], with the same infinite target embedded in infinite space and no finite-waveform renormalization. Unhalved trace ceilings are nominal.000640/.002640 and fixed-spectrum.000694/.002694. No all-future finite storage, reset/reuse, practical resource cost or native supplier/physical time identification is inferred.
+
+### Source and verification scope
+
+This draft consolidates endpoint_next_resource_move/PROPOSAL.md SHA2562fe29c4799f73cff7712d04e94446b033bb4857c926d9348dae5ae016ab70a3f against endpoint note9d493f2c67525f89fc32cc1201888a8729b64a2ce5522a7ad46dc9d473b2aae3 and runner4431365350f4337ec2b9d4b104e291d577da6176fc9919f9f92b7ab9bff79612. Earlier source histories and results remain unchanged. The completed selective analytical review endpoint_forcing_check/REVIEW.md SHA256d148847bbc8903e66dd4a734a52ab269f1a1d4cfa90e6d6677675a47bc62286a reconstructed unit incidence from the cross-port kernel, endpoint deletion, actual background perturbation and complete contour composition. It reports no blocking defect under the inherited premises.
+
+The reviewer had no authorship of this proposal or its ancestral components in that task, but saw the intended constants and shared sources; this was source-exposed, same-model reconstruction, not blind checking or ancestral recertification. The present drafter authored the proposal and earlier disk/weighted/component work; drafting is not another independent check. No retained/audit status is assigned. New arithmetic corroboration is drafted separately and remains unexecuted in this package; it can check substitutions, not the kernel, spectral synthesis or supplied physical premises. No prompt or physical axiom changes. The broader research discussion of a spectral-projection floor is intentionally not part of this refinement.

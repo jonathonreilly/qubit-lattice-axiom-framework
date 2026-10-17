@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/faster_three_site_complete_output_2026_10_17.py
+runner_sha256: 3c80ea332cb5e2bebfd86e17760c99d78bb01e0337f2e87a81eb4565474b7cef
+input_fingerprint_sha256: a74f38adde76cec5388f19a082a9813c6be4b90cde81764921648d1d270d1ab0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+[PASS] historical proof pins retain exact bytes
+[PASS] endpoint transpose compression equals directly differentiated inverse
+[PASS] literal transpose cannot be replaced by adjoint
+[PASS] exact finite-band cubic decomposition with physical Weyl load
+[PASS] differentiated cubic cancellation retains Weyl derivative
+[PASS] finite-band correction is not identically a Markov cubic
+[PASS] complete ceiling sum at faster nominal point
+[PASS] lambda T and finite-cut scale belong to faster point
+[PASS] finite-cut exponent from conservative sinh ceiling
+[PASS] resource counts and failure-effect ceiling
+[PASS] endpoint derivative coefficient enclosure
+[PASS] selected derivative correction throughout stated source domain
+Scope: finite endpoint identity, exact cubic algebra and ceiling arithmetic only. Full physical recovery, contour/time bounds, inherited premises and complete dynamics are analytical obligations; hashes establish identity, not proof.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

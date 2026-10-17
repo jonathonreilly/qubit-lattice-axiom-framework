@@ -1,0 +1,15 @@
+label orbits: [24, 24]  all free: True
+5^3 block: point-orbit sizes [1, 6, 6, 8, 8, 12, 12, 24, 24, 24] ; free orbits with reps [(-2, -2, -1), (-2, -1, -1), (-2, -1, 0)]
+3^3 block: free point orbits: []
+placement (1,2,0)/(1,2,2): bijective True, equivariant True, spectators 77, spectators O-closed True
+   R (ZZ on link halves)   : max Chebyshev / Euclidean extent in fine units = 4 / 5.00
+   B_q (corner charge)     : max Chebyshev / Euclidean extent in fine units = 4 / 4.47
+   on-site hop             : max Chebyshev / Euclidean extent in fine units = 4 / 5.10
+   link hop                : max Chebyshev / Euclidean extent in fine units = 5 / 6.40
+   plaquette loop          : max Chebyshev / Euclidean extent in fine units = 5 / 6.93
+   plaquette-loop Chebyshev extent over all 576 equivariant base choices: min 5 max 9
+   R (ZZ on link halves)   : Chebyshev extent over the 576 base choices: min 2 max 9
+   B_q (corner charge)     : Chebyshev extent over the 576 base choices: min 2 max 4
+   on-site hop             : Chebyshev extent over the 576 base choices: min 3 max 4
+   link hop                : Chebyshev extent over the 576 base choices: min 5 max 9
+   plaquette loop          : Chebyshev extent over the 576 base choices: min 5 max 9

@@ -1,0 +1,12 @@
+signed-orbit counts of invariant one-fermion terms (translation-invariant P = 0 unless stag)
+  P=0  shifts onsite   real  O   : dim 4
+  P=0  shifts onsite   real  OxI : dim 3
+  P=0  shifts onsite   imag  O   : dim 2
+  P=0  shifts onsite   imag  OxI : dim 0
+  P=0  shifts r1       real  O   : dim 22
+  P=0  shifts r1       real  OxI : dim 12
+  P=0  shifts r1       imag  O   : dim 20
+  P=0  shifts r1       imag  OxI : dim 9
+  P=0  shifts l1<=2    real  O   : dim 76
+  P=0  shifts l1<=2    real  OxI : dim 39
+  P=0  shifts l1<=2    imag  O   : dim 74

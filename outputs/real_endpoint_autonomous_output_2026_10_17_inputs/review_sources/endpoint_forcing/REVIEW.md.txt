@@ -1,0 +1,135 @@
+# Selective analytical check of endpoint forcing and shorter complete-output resources
+
+The proposed endpoint-forcing refinement is supported on the stated, inherited complex disks. I find no blocking defect in the new Y<12 interface, its actual fixed-spectrum Woodbury transfer, or the proposed h=8e-15, T=3e17, M=1.5e19 complete-output composition. This is a source-exposed independent reconstruction of this bounded refinement, conditional on the specified ancestral kernel, calibration, local spectral synthesis and supplied apparatus/seed premises. It is not ancestral recertification, a retained verdict, a new solver, or a claim of practical resource costs.
+
+The N6 spectral-projection floor is also valid within the stated local-synthesis assumptions. It is a lower floor in terms of the ACTUAL exterior mass, not a numerical lower bound for that mass, and not a global impossibility result. The proposal correctly preserves this distinction.
+
+## Sources, exposure and review scope
+
+Here W denotes `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree` and N denotes `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934`.
+
+SHA256 identities were checked directly with `shasum`, rather than inferred from the brief:
+
+| Source | SHA256 |
+|---|---|
+| N/endpoint_next_resource_move/PROPOSAL.md | `2fe29c4799f73cff7712d04e94446b033bb4857c926d9348dae5ae016ab70a3f` |
+| W/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | `9d493f2c67525f89fc32cc1201888a8729b64a2ce5522a7ad46dc9d473b2aae3` |
+| W/scripts/real_endpoint_autonomous_output_2026_10_17.py | `4431365350f4337ec2b9d4b104e291d577da6176fc9919f9f92b7ab9bff79612` |
+| W/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md | `f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87` |
+
+The root-reported worktree head is `7e3d991496`; I did not run Git or verify branch/main status. I read the proposal completely. Relevant note arguments were read in bounded sections after an initial oversized read was truncated: physical cross-port kernel and reference plane, deletion, local spectral jump/synthesis, larger-coupling disks and mass/weighted-static proof, complete Schur source and scalar contours, the nominal disk refinement, and the fixed-spectrum composition. I read the runner's relevant BD and FS source sections, without executing them. Its current BD source still multiplies the full X into the resonant update; its FS source still uses the earlier thin-strip bounds. It does not corroborate the new Y-sensitive estimates or proposed onset yet.
+
+I had no authorship of the proposal or its ancestral components in this task. The brief and proposal exposed the desired constants before the check; this is not a blind check or a different-model origin. The new endpoint identity below was reconstructed by extracting unit incidence directly from the two-port Green kernel and then imposing the deleted-site boundary. The perturbation was reconstructed from the linear equation, and the N6 conclusion from a commuting spectral projection. Shared source premises and same-model correlation remain limitations.
+
+Local AGENTS and SCIENCE_WORKFLOW were read. The physics-claim-reviewer skill informed this bounded review; no landing/audit workflow was launched. No scientific program, simulation, parameter search, network search, Git operation or model/prompt edit occurred. Shell use was limited to source inspection, identity hashing and report creation. Only this report in the assigned directory was written.
+
+## 1. Unit incidence, exact phase and the 44 powers
+
+Use the canonical physical port coordinate m=0 and incoming open wave z^-m u. For an open source at coordinate n on the output port o, multiplying its retarded Green column by iE' z^-n gives unit incidence: the same-port free term for m<n is Aopen z^(n-m), and iE' Aopen=1. For the other port a there is no free term. Its exact kernel gives
+
+    iE' z^-n G_ao(m,n)u
+      = iE' z^-n Q^m T_ao Q^n u
+      = iE' Q^m T_ao u.
+
+This cancellation establishes the normalization independently of an off-real flux argument. T_ao,PP=Aopen tau gives the open component tau z^m u. All physical junction propagation and the common port-plane phase are already in T_ao and tau; one must not insert another phase or a second incoming term. If the incoming coordinate origin is translated, its corresponding fixed z-power must multiply the entire solution consistently. The canonical origin above makes the displayed equality exact, and the inherited finite propagation envelope bounds any already specified translation.
+
+At m=ell=20, the closed output row of T_ao has 24 decaying filter-to-port powers, followed by the 20 powers of Q^ell. Thus 44 is correct; the deleted site b=21 has 45. Projection of the source on the open u means there is no additional free closed cross-port wave. Using the proposal's conservative bounds,
+
+    ||P phi(end)|| < 2*1.001 < 3,
+    ||Pc phi(end)|| < .062*(2e7)*(.15)^44*1.001 < 1e-24.
+
+For example (.15)^40<1e-32 and (.15)^4<.00051, so the latter product is already below 6.4e-30. The proposed 1e-24 ceiling is amply conservative. Summing projected norms gives ||phi(end)||<3.001 without needing orthogonality off the real axis. The fixed real channel projections do remain orthogonal in the norm in any event.
+
+## 2. Kernel ordering and projected deletion
+
+Starting directly from G_aa(m,n)=A Q^|m-n|+Q^m T_aa Q^n and X=Q^ell T_aa Q^ell gives
+
+    G(end,b) = A Q + X Q = (A+X)Q,
+    G(b,end) = Q A + Q X = Q(A+X).
+
+A commutes with Q; X need not. These formulas also follow by transpose symmetry, since X is complex symmetric. An adjoint or commuting X through Q would be wrong.
+
+To impose zero amplitude at b, subtract the outgoing Green solution with source Gbb^-1 phi(b). That correction has no incoming wave on the surviving output port. Hence
+
+    y = E_end^T x_bg = phi(end) - (A+X)Q Gbb^-1 phi(b).
+
+The inherited projected inverse estimate is legitimate: D_b0 is block diagonal, its open inverse is <.063, phi(b)'s closed part is <1e-25, and the full inverse difference is <6e-25. Therefore its bound <.2 is not a generic replacement of 23 by .063 on the closed directions. Keeping all eight components gives
+
+    ||y|| < 3.001 + 42*1.001*.2 = 11.4094 < 12.
+
+This argument controls a finite endpoint forcing vector on every prescribed disk, including disks centered at both cutoff endpoints. It is not the norm of an off-real growing open wave. The source restriction to the opposite output port is essential: arbitrary two-port incidence would require its own direct incoming term and cannot inherit this proof unchanged.
+
+## 3. Full Schur source and actual fixed-spectrum perturbation
+
+For background A, R=A^-1 and the actual full block matrix with off-diagonal +kappa E in lambda-H convention, solving the background row first gives
+
+    x_bg,full = x_bg - kappa R E x_e,
+    D_e x_e = -kappa E^T x_bg.
+
+Thus with V=[-kappa R E; I], the full source is [x_bg;0]+V(-kappa D_e^-1 y). The Euclidean operator norm obeys ||V||=sqrt(1+kappa^2||RE||^2), including for complex R. Consequently
+
+    ||x|| <= X + kappa sqrt(1+kappa^2 P^2)||D_e^-1||Y.
+
+X remains the complete 896-coordinate background source norm; Y is the eight-coordinate forcing. This is not a projection of the final 904-coordinate output.
+
+For the actual fixed-spectrum block, A_b=A-delta_b EE^T with delta_b=-Delta. Applying this to the driven equation yields x_b=x_bg+delta_b R E y_b and y_b=y+delta_b G y_b. Thus
+
+    y_b=(I-delta_b G)^-1 y=H_b y,
+    x_b=x_bg+delta_b R E H_b y,
+    R_b E=R E H_b.
+
+The plus signs, scalar-shift order and use of the actual changed background are correct. No assumption that its original tiny approximation errors are unchanged enters these identities. Since |delta_b|<1e-20 and ||G||<36, ||H_b||<1+1e-18. Then Y_b<12.1, P_b<3.21e11 and X_b<1.01e8 follow. The additive source change is <3.84e-8 times (1+1e-18), hence <4e-8, rather than X times an arbitrary huge resolvent ceiling.
+
+## 4. The deeper strip and complete localized norm
+
+At h/rho=.008, the disk Cauchy oscillation is 36.000001/124<.291. The two complementary corrections contribute <1.6e-12, so .292 is safe. At the smallest allowed kappa_a, .062h/kappa_a^2<4.961. The inherited real imaginary margin therefore leaves more than (12-4.961-.292)kappa_a^2=6.747kappa_a^2, stronger than the 6 used in the inverse estimate. This remains true throughout 0<=y<=h, not merely at its bottom.
+
+The complementary gap .18-|Delta|-.062rho-36.000001 kappa_a^2 remains >1/6. At the vertical cutoffs, the explicitly retained Delta, quadratic real energy displacement and both self-energy terms leave >2.49e-8. The full complementary Schur inverse formula then gives the stated bottom .18/kappa_a^2 and side 5e7 ceilings. These are separate margins; the side estimate is not the bottom resonant bound used outside its useful regime. The argument asserts no pole-free full emitter disk of radius rho.
+
+With sqrt(1+kappa_a^2 P_b^2)<3211, the largest bottom expression is below 2.099e12, hence below 2.2e12. The largest side expression is below 3.031e8, hence below 3.1e8. For orientation, .18*3211*12.1=6993.558 and kappa0*3211*(5e7)*12.1=19426.55. These hand expansions check the large change in scale; the entire X term has not vanished.
+
+The conversion ||C||<=3||x||+4 retains the core, all emitter/source/other-clock coordinates and the uniformly holomorphic closed tails with roots <.15<1/6. R_inst=u^T x-1 is used algebraically, without asserting off-real |R_inst|=1. All open-wave subtraction occurs before taking the Hilbert-space norm.
+
+## 5. Contours, complete error and fixed finite device
+
+For the paid coefficient conjugate(omega_p f), or its auxiliary f_a version, the exact conjugate denominator has imaginary part -sin(x)[2J sinh(y)+(kappa_a^2/J)exp(-y)]. Its sign is correct. Delta is real. The bottom .088/kappa_a bound and cutoff 44kappa_a/sigma bounds survive at h; the phase 113 is retained. The inherited fixed-spectrum profile/mass comparison is to the auxiliary packet before the final comparison with the fixed nominal target.
+
+At T=3e17, vT=7.5e15 and vTh=60. Including the overlap multiplier 1.5, the localized bottom prefactor is <3e13. Since e>8/3 and (8/3)^5>100, exp(60)>1e24 and this bottom is <3e-11. Both hard-cutoff sides together are bounded by
+
+    1.5*44*.01*(3.1e8)/(7.5e15) = 2.728e-8.
+
+The localized total is therefore <2.731e-8, in particular below the proposal's 2.733e-8. The side terms have not been discarded.
+
+The scalar contours use their separate justified heights; no continuation of C to either scalar height is required. At s=vT-113>7.4e15, sqrt(pi*s)>1.4e8, so the scalar side ceiling is <6.3e-9. The outgoing bottom exponent exceeds 185 and its prefactor is <1.21e8. The inequality exp(185)>2^185>1e55 makes this negligible. The incoming bottom has vastly larger exponent and prefactor <.002. Thus the common 7e-9 incoming/negative-tail norm ceilings and 4.9e-17 positive-normalization cost are safe.
+
+The infinite nominal complete sum is below
+
+    .000318243241 + .00000002733 + .000000007 + 4.9e-17
+      = .000318277571 + 4.9e-17 < .000320.
+
+For the fixed-spectrum family, add the inherited full COMPLEX normalized auxiliary-to-nominal difference <.000026 and both positive-normalization adjustments <9.8e-17. Even this conservative extra normalization accounting leaves <.000344277572, hence <.000347. No probability substitution replaces exterior amplitude, and no numerical lower bound for exterior mass is used.
+
+The perturbation preserves the radius-18 ceiling and graph distance M+23. For M=50T, sinh(1)<1.2 gives -(M+23)+36T sinh(1)<-6.8T-23. With prefactor 4/(1-e^-1), the finite-transfer error is far below .001. Consequently the nominal .001320 and fixed-spectrum .001347 ceilings hold on [T,2T] for their single fixed finite apparatus, using the same embedded infinite target. The infinite estimates are monotone envelopes and hold for every t>=T. No finite-waveform renormalization or finite all-future storage conclusion follows.
+
+The comparator must keep literal old K/W, exp(-itK)W for the whole elapsed time, exp(-ic_new t), the common complex output profile/phase and blank remaining registers. Within-parity overlap and arbitrary passive references are already paid in the inherited complete norm argument. This refinement does not supply native coefficients, exact local eigenvalues, the delivered pure seed, Hamiltonian/time/energy/Record identification, or generic perturbation robustness.
+
+## 6. N6: a scoped asymptotic projection floor
+
+Let S_I be the inherited local unit-incoming spectral synthesis map, with measure dk/(2pi) in the generalized-column normalization and coefficient norm convention inherited by f. On the real band define a=omega_p f/R_inst. Since |R_inst|=1 there, a has the same L2 norm as f, and chi=S_I a lies in Ran P_I. Its outgoing amplitude is exactly R_inst a=omega_p f with the fixed phase. This use of 1/R is only on the real band and for an asymptotic argument; it does not create an unproved inverse-reflection complex strip.
+
+The real-band matching inverse and the smooth nonvanishing scalar reflection give regularity of a on the compact interval for each fixed device. The incoming component moves away from the physical half-line, and the finite/core plus closed-tail component tends to zero by nonstationary integration and the inherited tail control. The ideal packet's positive-half-line normalization tends to one. Hence ||exp(-itH)chi-ideal_t|| tends to zero. No uniform numerical rate for a across new parameter families is needed for this liminf statement.
+
+Now P_I commutes with exp(-itH), so
+
+    ||exp(-itH)seed-ideal_t||
+      >= ||(I-P_I)seed|| - ||exp(-itH)chi-ideal_t||.
+
+Taking liminf proves N6. This also shows precisely why coherent cancellation of an orthogonal exterior spectral component cannot replace its norm by its squared norm in this asymptotic comparison. Global scattering completeness is unnecessary; an in-band synthesized comparator is enough.
+
+The domain is one input column with its actual energy projection, fixed supplied H and seed, and the same hard-band normalized target. It is not a bound across target/seed redesigns or uncertified wider-band synthesis. In particular, N6 is compatible with zero exterior mass, and a mass UPPER bound of 4.85e-8 cannot establish any positive lower floor. The separate weighted split can reduce in-band mismatch; that statement does not establish a quantitative coupling obstruction. A two-sided exact-device mass estimate or a wider-response/changed-target theorem would be new work. The proposal's statements about >98% and approximate coupling scaling describe its displayed sufficient ceiling, not the actual mass or a proved optimum.
+
+## Disposition and remaining limits
+
+The new analytical interface and resource implication can be integrated as a selectively checked conditional refinement, with the ancestral premises and source exposure explicit. No new solver is required to justify the kernel interface. If a later bounded arithmetic corroboration is authorized, the runner needs explicit Y-sensitive source terms, the actual H_b transfer, the changed strip margins and both cutoff sides; simply changing T in existing BD/FS rows would not represent this proof.
+
+No concrete counterexample was found within the stated domain. The potentially invalid alternatives are identifiable: adding incidence from the terminated port, swapping noncommuting kernel factors, replacing transpose by adjoint, discarding delta_b, treating the full rho disk as emitter-pole-free, charging exterior probability rather than amplitude, or reading N6 as a numerical mass lower bound. None is needed by the proposal as written. Independent retained audit, ancestral physical suppliers and formal publication/landing status remain outside this check. No editable prompt file changed.

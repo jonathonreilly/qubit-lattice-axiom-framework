@@ -12,8 +12,10 @@ runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realizat
 
 **Date:** 2026-10-17
 **Type:** bounded_theorem
-**Status:** bounded support, unaudited. Exact for the stated encoding.
-Nothing is adopted.
+**Status:** bounded encoding support, unaudited. The six-direction-qubit emergent-electron research route is retired from the active campaign; exact source and exploration evidence are preserved in `archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json`.
+- **What remains.** The encoding, covariance and finite algebra results below remain bounded results for the supplied six-qubit model. The paired runner remains live for reproducibility.
+- **Why the route is retired.** The campaign moved to a corner-graph construction with different symmetry and dynamical assumptions. This is not a universal exclusion of direction-carried spinorial charges. A fourth-root restriction in a specified realization is an extra hypothesis; a one-dimensional character of the binary C4 lift can carry an eighth-root phase.
+- **Successor boundary.** The corner-code and long-wavelength notes are supplied candidates, not physical identifications. Their block embedding uses selected blocks, spectators and range-nine interactions and breaks unit fine translations. It does not make the qubit count physically irrelevant or derive a uniform framework rule.
 
 ## Question
 

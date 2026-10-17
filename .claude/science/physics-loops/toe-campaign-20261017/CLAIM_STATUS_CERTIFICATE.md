@@ -1,3 +1,5 @@
+> Current archive boundary: C11/C13 six-direction emergent-electron route is retired; exact historical evidence is in `archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json`. The bounded encoding remains canonical. Historical confirmation labels below are not audit verdicts or a general spin/exclusion proof.
+
 # Claim status certificate
 
 ## C1

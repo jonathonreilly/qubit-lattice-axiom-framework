@@ -1,0 +1,67 @@
+{
+  "status": "Preserved analytical sources and exposed selective checks; no numerical execution or audit status",
+  "parent_head": "e0835b2d048c9fa25bf8f1371993af628702e275",
+  "canonical_note_sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+  "files": [
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/hopping_only_finite_transfer/PROPOSAL.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/hopping_only_finite_transfer/PROPOSAL.md",
+      "sha256": "9797cfa1090d58216655c80f79a8ce0fcee493c706f5028e61150d0815db278e",
+      "bytes": 13343
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/hopping_only_finite_transfer/PROPOSAL_v1.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/hopping_only_finite_transfer/PROPOSAL_v1.md",
+      "sha256": "4c790286d6db32784bc892eff3c21b5674104fc205719229dcbce6296f4d98cd",
+      "bytes": 13218
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/hopping_only_finite_transfer_check/REVIEW.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/hopping_only_finite_transfer_check/REVIEW.md",
+      "sha256": "f47de4c7d6a20b547b365b105abaa70ca124071998ec58aeac6dab4c5e7bf664",
+      "bytes": 10014
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/hopping_only_finite_transfer_check/REVIEW_v1.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/hopping_only_finite_transfer_check/REVIEW_v1.md",
+      "sha256": "d5ad6794b64d652bfbb4e80a8b172ccff1416d8e1fe726f6e592909e90d9bc8a",
+      "bytes": 9329
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/original_hopping_transfer/PROPOSAL.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_hopping_transfer/PROPOSAL.md",
+      "sha256": "a7ef8d4ba3d1c9e35e9de7c5ca5e8f66b4cc5af3f105570e43935868d1fed8a7",
+      "bytes": 11401
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/original_hopping_transfer_check/REVIEW.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/original_hopping_transfer_check/REVIEW.md",
+      "sha256": "591e7e993db00432a30ccd9049444720f4f404d1db1e681b787b67fcbe3a0f9f",
+      "bytes": 9871
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/output_lead_weight/PROPOSAL.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/output_lead_weight/PROPOSAL.md",
+      "sha256": "58f99248986aebe14b4cd87f46237a293ed0c86ab720dd37a497c5b2a64a06cf",
+      "bytes": 9851
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/output_lead_weight_check/REVIEW.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/output_lead_weight_check/REVIEW.md",
+      "sha256": "1c72e347fed86c96fcc491c550c136d08f3b7720d52ec1534af94066056d59dd",
+      "bytes": 9259
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/bandcenter_resources/PROPOSAL.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bandcenter_resources/PROPOSAL.md",
+      "sha256": "96d6fdfa01631c17bd43c62c3a11f8754d2b31836740cc11f5a663172e3b37e7",
+      "bytes": 13124
+    },
+    {
+      "path": "outputs/hopping_finite_transfer_2026_10_17/source_checks/bandcenter_resources_check/REVIEW.md",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/bandcenter_resources_check/REVIEW.md",
+      "sha256": "01b87c7557a3d7c6c34f6a2cb1b6d7bfb61416cf3ca1d982e6aa704280352efd",
+      "bytes": 10297
+    }
+  ]
+}

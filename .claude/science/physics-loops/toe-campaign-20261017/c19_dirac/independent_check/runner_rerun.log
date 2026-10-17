@@ -1,0 +1,35 @@
+[PASS] translation-invariant gauge on the L = 4 lattice reproduces the flux pattern
+[PASS] rotations, inversion and translations all have PSG lifts; translations act without gauge signs
+Part 1: complex-conjugation-odd terms invariant under O, site inversion and translations (range <= 1 site)
+[PASS] the space of such terms is 9-dimensional  singular values [1.     0.8462 0.7887 0.7056 0.5942 0.5016 0.4559 0.2408 0.1064 0.
+ 0.    ]
+[PASS] these terms are invariant under all rotations and the site inversion, and odd under complex conjugation
+
+Part 2: Weyl pair at the rotation-fixed momenta (t1 = -1, t2 = 0.2, X strength 0.05)
+[PASS] the lowest levels at k* and -k* are degenerate doublets at the same energy (inversion)
+[PASS] the doublet splits linearly with the same velocity in every direction (isotropic Weyl cone)  v = 0.10960, spread 9.5e-11
+[PASS] Berry flux of the lower band through a small sphere is +1 at one node and -1 at the other (opposite chirality)  -1.0000, +1.0000
+
+Part 3: Dirac mass terms (staggered, momentum Q = (pi,pi,pi), on-site)
+[PASS] the L = 4 lattice contains the four node states
+[PASS] selection rule: every O-invariant staggered on-site term has zero matrix elements in the node space (no Dirac mass)
+[PASS] an imaginary A2 (pseudoscalar) staggered on-site term (a 5-dimensional space) splits the node space into +-m pairs  projected eigenvalues [-1.4041 -1.4041  1.4041  1.4041]
+[PASS] real A2 staggered on-site terms give no mass (the mass is odd under complex conjugation)
+
+Part 4: massive Dirac dispersion
+[PASS] the folded Bloch Hamiltonian reproduces the real-space spectrum on L = 4 exactly
+[PASS] at k* the massive spectrum is two doublets at E_N -+ m_D, symmetric about the node  m_D = 0.07020, linear in the mass term: m_D / m = 1.4041
+[PASS] near k* the upper band follows E - E_N = sqrt(v^2 dk^2 + m_D^2), the same in every direction (relative deviation < 1e-2)  max relative deviation 5.2e-04
+
+Part 5: spin content (twisted site rotations)
+[PASS] the four massless node states transform as E1/2 + E5/2 under the twisted O (opposite A2 characters at k* and -k*)
+[PASS] each massive Dirac doublet is the irreducible spin-1/2 representation of the binary tetrahedral group (rotations kept about a site)  [('lower', np.float64(1.0), np.float64(1.0)), ('upper', np.float64(1.0), np.float64(1.0))]
+
+Part 6: symmetries of the massive model
+[PASS] the massive model keeps the rotations of T about a site, the w1-odd rotations composed with an odd translation (together: the cube rotations about a cube centre), and the even translations; w1-odd rotations alone are broken
+
+TOTAL: PASS=17 FAIL=0
+
+real	2m26.569s
+user	4m8.824s
+sys	0m5.299s

@@ -1,0 +1,69 @@
+# Attached-record publication integration check
+
+Final disposition: the publication's mathematical claims and three distinct scopes are supported conditionally by the pinned component arguments and selective checks. Final note SHA256 is `f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f`; final inventory SHA256 is `9e1515b0f478bc6ce569b4c827126560a063fd902643c40a056de1defc5eaad5`. No mathematical correction is requested. The portable-recovery recommendations recorded below have been implemented and inspected. This review does not publish, copy the packet, confer retained audit status, or independently recalibrate the source.
+
+## Exact inspected revisions and exposure
+
+Initial publication note: `../record_attached_publication/NOTE.md`, SHA256 `e99b3b48c3774cbb04891219a4a60d1059d0339feb5378f073529fe2d19653ef`. Initial inventory: `../record_attached_publication/SOURCES.json`, SHA256 `6c212da6c7e8cfd5b5a978d2df1ff4cd7382a0cb07ab5de8a77407f2522819cf`.
+
+The entire note was read, including the remaining final paragraphs after an initial combined response truncated. The complete inventory was inspected by its structured fields and every file record, including all roles, destinations, hashes, byte counts, exclusions and repository dependencies. Deterministic hashing verified all 51 listed source files against both their declared SHA256 and byte length; all matched. This is source-inventory verification, not execution of the listed scientific scripts or verification that the proposed copy has already occurred.
+
+The note author also authored the sharp recovery and all-time composition, as the note discloses. I authored the attached endpoint, mass and reference-onset proposals, checked outgoing/incoming components, and checked the composition and finite application. This integration review is therefore source-exposed with substantial disclosed ancestry, not a blind or new independent recertification of those components. Their distinct checks are reused at the inventory's exact identities. In particular the corrected synthesis review is `46731f1c73c5654d2fb529bc89ae3d59ed86ab335da9de947e0267f58547a86c`, not its earlier attribution-mistaken version.
+
+For this integration I additionally read the complete distinct onset check `5214b69489f05d23a48d63a80418cd32dfa5839817a43228633c46d81cea99f4`, including its independent pole-location and Fourier-norm reconstruction. It supports my onset source without relying on my review of my own mathematics. The sharp source/check and full composition were read in the immediately preceding synthesis check; their exact bytes remain unchanged. The original converter physical coefficients, resource inventory and local gate definitions were refreshed where the publication gives an explicit construction.
+
+Applicable unchanged workflow and physics-claim-reviewer discipline were reused. Only analytical comparison, reading and deterministic inventory/hash checks occurred. No scientific runner, numerical integration, dynamics, sweep, delegation, W/Git, prompt, model, audit or publication change occurred. This review is the sole deliverable; no editable prompt file changed.
+
+## Construction, coefficients and reference planes
+
+The displayed shared B, old K/W, supplied decimal coefficients and converter relations match the inherited source construction. The source pair is shared once across arms. The original filter/vacancy realization and source-contact constants account for the declared scalar 2nu+2beta_f+4gamma_J+4gamma_c; the gate adds exactly 4(sqrt(2)-1)j. The scalar is global rather than switched on at arrival. K remains inside the interacting source rather than being factored from actual evolution.
+
+The two 45-site original paths, 41-site old port segments, input stub/emitter and eighteen-site cable match the frozen coordinates. The rigid gate map preserves adjacency and keeps the new gate separate from the old heads. The final ray meets the gate at its origin only under the stated selective-coupling premise. Each local arm has eleven sites; the two phase cells replace bonds and add no vertices. The shared record contacts have full-space norm 2j each and load 4j. No all-site cap2 is inferred from the small new hopping.
+
+For Q(h), the one-excitation eigenvalues are 0 and 2|h|, the vacuum eigenvalue is zero and the double-occupation eigenvalue is 2|h|, confirming its PSD statement. The emitter block uses diagonal j per endpoint and off-diagonal -kappa, plus onsite j at the emitter. Together with the preceding ordinary endpoint bond this gives both one-head diagonals 2j, as claimed. Exact supplied source positive realizations remain inherited premises.
+
+The final origin is already a gate vertex. Consequently the finite counts M+235 heads, M+236 edges, M+240 physical qubits and M+275 blocks agree with the checked attachment, including exactly four old/source qubits and one record. At the chosen M the displayed integer totals are correct. The note does not claim those counts minimal or practical.
+
+The target phase retains the eighteen-edge transmitted cable factor and gate phase: -i w^40 rho_n. With the emitter factor i w^21 and rho_n=zeta exp(172ik), its numerator has exactly carrier 61q+172k. The target starts at n>=1, while n=0 stays in finite-gate recovery. No reference-plane change, input-specific phase fitting or dropped common scalar occurs.
+
+## All-time branch versus complete asymptotic scope
+
+The publication preserves the actual common physical windows, full eight-coordinate fibers, record-sector coherence and full seed-matrix remainder. The .001057 remainder includes all omitted seeded spectral types and is charged once. Its rectangular spectral jump has the correct lower-minus-upper convention; defining F=iE'A/sqrt(2pi) produces outgoing F and incoming conjugate(F) with a plus between the two Fourier integrals. Reality provides conjugation of columns, not adjunction of a rectangular column.
+
+The outgoing 2.5e-6 coefficient bound retains prepared inputs on the wrong physical window. Incoming conjugation preserves that full-matrix bound, and its ideal carries conjugate W eigenvalues. The incoming reference is paid separately by .00105. The sharp recovery retains the direct kappa DeltaL term, full finite recovery and downstream closed tails with per-window projections. Its separately checked integration yields .00216 over both physical windows. The total .004272 is correctly rounded to .0045. Same-ray incoming/outgoing contributions are added, not declared orthogonal.
+
+The asymptotic paragraph correctly strengthens the conclusion to the unprojected state using additional reasoning. Finite/core and entire closed-tail densities are Hilbert-valued L1 on compact windows, with uniform root decay supplying norm control. Riemann-Lebesgue in that Hilbert norm removes them asymptotically. L2 approximation and nonstationary propagation remove the actual incoming positive-ray contribution. Orthogonal record-X sector recombination preserves the sectorwise outgoing error for the complete state. The resulting .0010595 unnormalized limsup plus limiting normalization cost below 5.6e-7 is strictly below .001061. That bound is not assigned the finite onset time, and residual outside spectrum is not asserted to vanish.
+
+The introductory statement that the complete state approaches the output is made precise by the table and explicit limsup formula; it is not a claim of zero-error convergence. The asymptotic success bound is uniform because the norm statements are operator statements, not separate input-dependent onset choices. All passive-reference conclusions follow from those operator bounds.
+
+## Quantitative finite window
+
+The reference onset uses the same changed phase and n<=0 complement, including n=0. Its shallow outgoing contour stops above the poles: the independent check places their depth at -log(1-kappa^2/j^2)/2>2h_c. The quoted L2 horizontal estimate, both cutoff sides and the phase104 allowance match the checked source. It supplies reference concentration, not localized apparatus decay or an actual complete-state onset.
+
+The finite transfer uses the exact cap j n_(M-1), hence the compression of the infinite seeded operator. Its weight is zero on the seed/core/gate and n on the ray, consistently zero at the shared origin. Only ray hoppings enter its imaginary-part bound 2j sinh1; all source and internal onsite dynamics remain exact. The single cut at M-1 and Duhamel give the cited exponent. At T=1e15 and M=1.5e13, it is below -6e11, so the 1e-6 complete dynamical allowance is safe.
+
+Adding that allowance to the all-time branch result yields .004501 on [0,2T]. Concentration gives reference norm above .9999994 on [T,2T]; subtracting .004501 gives successful norm above .99549, whose square is .9910003401. Thus the finite probability claim is correct. The pure-vector, unhalved trace and successful subnormalized CP bounds use the correct factors. Normalization is not treated as a linear channel, and the infinite comparator is not projected or renormalized to fit the finite ray.
+
+The note explicitly distinguishes this finite branch/error-and-success theorem from the prior unattached complete unconditioned finite theorem. It makes no same-tolerance speedup claim and does not assign the .001061 asymptotic complete-state bound to T. Those qualifications prevent the resource/time comparison from overstating what was established.
+
+## Inventory, portable links and correction history
+
+The main note's relative links have the correct structure when the note is installed in the repository docs directory and the packet at outputs/attached_record_2026_10_17. All directly linked packet artifacts are listed in the inventory; SOURCES.json itself is the proposed copied inventory, while the weighted theorem link is a same-docs repository dependency. The draft note's current staging location is not the base from which these publication links are meant to resolve. This review does not claim the files have already been copied.
+
+The packet preserves controlling proofs/checks, exact gate-inverse scripts/results and relevant corrected versions. The inherited weighted-profile erratum is included; failed/coarse routes are not substituted for the sharp controlling source. The local odd-offset obstruction remains scoped to its geometric ansatz, not a universal no-go. The exclusions of abandoned early-obstruction routes and unchanged unattached temporal conclusions are scientifically appropriate: listing a historical citation does not make its conclusion a premise. No blanket ancestry-copy or pipeline requirement is warranted.
+
+Three small portable-recovery recommendations were sent to root:
+
+1. Add `record_attached_alltime_composition_check/REVIEW_v1.md` as correction history with proof_dependency=false. The controlling review explicitly cites that preserved attribution-correction record, but the initial inventory omits it. Its hash is `c5c8bedeaf0b51381b89f19ed153650f0748cae8fb2e336d4b80fcfde17b34db`.
+2. Add the existing converter publication note SHA256 `f8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311` to repository_dependencies with copy_into_packet=false. Several controlling source artifacts explicitly name it. Its underlying construction is already recoverable through listed sources, so this is an inventory-completeness improvement rather than a missing scientific proof.
+3. The main label “corrected finite application and check” currently links only the proposal. Add a separate direct link to its listed check `record_finite_herald_transfer_check/REVIEW.md` for exact navigation.
+
+Immutable artifact prose also contains historical absolute recovery paths and references to excluded ancestry. Those are not all portable hyperlinks; the manifest's repository-relative destinations and explicit dependency/exclusion roles are the controlling navigation mechanism. Byte-exact preservation should not be defeated by rewriting every historical citation. The actual copy/link-existence verification remains root's separate mechanics task.
+
+## Final qualification
+
+Final revision inspection: the complete diffs against preserved NOTE_v1.md and SOURCES_v1.json contain only accurate review-stage wording, explicit repository/source-check links, the added attribution-history entry and the added converter repository dependency. The preserved v1 hashes match the initial identities above. The finite proof and distinct check now have separate direct links. Original endpoint, converter and weighted-transfer notes are explicitly linked at their exact pinned identities. The added converter role specifically excludes transfer of its unattached temporal/finite conclusions. No theorem constant, physical parameter, phase, error metric or scope changed.
+
+A fresh deterministic pass verified all 52 final inventory files and all three repository dependencies against their hashes, plus every listed byte length. The source destinations and new links are structurally correct from the intended docs location. Actual final packet copying and repository link-existence checks remain root's separate mechanics; this review does not claim to have performed them. All three recovery/navigation recommendations are resolved with no remaining requested source edit.
+
+The inspected note accurately presents a supplied mathematical model with three distinct conclusion scopes. Original calibration and source assumptions, exact correlated coefficients, preparation, measurement, selective interactions and physical identification remain conditional. No audit status, native Record derivation, fabrication tolerance result, physical units, irreversible latch, repeated-measurement protocol, permanent finite halt, reset or reuse is asserted. Integration readiness is supported within those limits, subject to preserving the final source identities and completing the separately owned copy mechanics.

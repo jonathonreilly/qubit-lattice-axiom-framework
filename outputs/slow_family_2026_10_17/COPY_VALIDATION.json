@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-17T18:36:50.692140+00:00",
+  "note_sha256": "fe9c64423e058791d4c9d4f26aeecf2d1ba7d9240988691e7e535316829095f7",
+  "manifest_sha256": "5b1b4c8ce340e062054ae404993fbfc1dbae05f4edc7fe7ac7f6f62a40627a0b",
+  "new_source_copies": 12,
+  "inherited_mappings": 68,
+  "repository_notes": 5,
+  "note_links": 21,
+  "scope": "Exact byte hashes/lengths and link existence; no scientific rerun or audit."
+}

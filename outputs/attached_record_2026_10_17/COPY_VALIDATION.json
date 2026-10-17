@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-10-17T17:38:12.017801+00:00",
+  "source_files": 52,
+  "repository_dependencies": 3,
+  "note_links": 18,
+  "note_sha256": "f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f",
+  "source_manifest_sha256": "9e1515b0f478bc6ce569b4c827126560a063fd902643c40a056de1defc5eaad5",
+  "scope": "Byte identities, exact source lengths, repository dependency identities and main-note local link existence; not scientific rerun or audit."
+}

@@ -1,0 +1,13 @@
+import numpy as np
+from model import bloch, solve_cell
+u=solve_cell(dict(square=1,triangle=0,plaquette=1,tube=1))
+ks=np.pi/2*np.array([1,-1,1])
+def obs(p,h=0.002):
+ e=np.linalg.eigvalsh(bloch(u,ks,*p)); gaps=e[2::2]-e[0]
+ def en(k):return np.linalg.eigvalsh(bloch(u,k,*p))[:2].mean()
+ K=(en(ks+np.array([h,0,0]))-2*en(ks)+en(ks-np.array([h,0,0])))/h**2
+ return np.r_[gaps,K]
+p=np.array([-1.,.1,-.5])
+for eps in [1e-3,3e-4,1e-4]:
+ J=np.array([(np.log(obs(p*np.exp(eps*np.eye(3)[i])))-np.log(obs(p*np.exp(-eps*np.eye(3)[i]))))/(2*eps) for i in range(3)]).T
+ print('values',obs(p));print('J',J);print('shape singular',np.linalg.svd(J[:5]-J[0],compute_uv=False));print('conformal singular',np.linalg.svd(np.r_[J[:5]-J[0], [J[-1]+J[0]]],compute_uv=False))

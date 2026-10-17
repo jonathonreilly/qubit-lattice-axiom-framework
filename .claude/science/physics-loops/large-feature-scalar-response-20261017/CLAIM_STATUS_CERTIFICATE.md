@@ -1,0 +1,10 @@
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: exact matrix inverse in supplied chamber
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: positive conditional reconstruction; no global obstruction
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

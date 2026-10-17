@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T19:08:29.694139+00:00",
+  "note_sha256": "49f53a9ab571c7784158d64a4b206e43e570b6c4252f294ec854015d99ba7027",
+  "manifest_sha256": "ae6af68aa81b5928852f6a3ebaace68c5328ba48e2f8f75f3a4d8d290c11799d",
+  "new_source_copies": 12,
+  "inherited_mappings": 80,
+  "repository_notes": 6,
+  "note_links": 20,
+  "scope": "Exact byte identity, length and destination link checks only; full changed arguments/checks read. No scientific rerun or audit. Earlier preflight stopped before mutation on changing draft manifest.",
+  "integration_review_sha256": "056199c79479f5a3f72c88baa83abb399724f47d36c03d002a029635767f16bb",
+  "citation_graph": {
+    "builder_exit": 0,
+    "writer_exit": 0,
+    "nodes": 7230,
+    "edges": 16204,
+    "semantic_delta": "One complete-state note with edges to uniform family and fixed slow-device notes; no other node changes."
+  },
+  "limits": "Selective analytical checks with disclosed ancestry; no new dynamics, sweep, original recalibration, combined-main pipeline or retained audit. No editable prompt files changed."
+}

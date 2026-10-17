@@ -1,0 +1,34 @@
+[
+  {
+    "path": "scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py",
+    "original_sha256": "5c8dd56ee72801be41e3b11d7de25c6b7843716c4db35fd932b9e2f42c99732b",
+    "final_sha256": "4f36f8648e166ed4bd1a848aa206a34e78c5c6e7322f29a0355126fd9b86efc0",
+    "original_path": "outputs/campaign_c16_c18_landing_2026_10_17/originals/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py",
+    "cap": 120,
+    "edits": "Inert main wrapper, explicit cap, nonzero failed-check exit; long-wavelength model loader calls inert helper definitions explicitly. Final review also narrows optimizer claims, requires complete pair reductions, binds independent inputs and uses the declared PSG helper."
+  },
+  {
+    "path": "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+    "original_sha256": "87f3cd1107a92ae44232442d3e200c2c08dd17841153b0a5b8f56e2f87f58544",
+    "final_sha256": "b2d26b31602726478846f4aac7346c61f741ff3049f722fa9b8dcb1575294b92",
+    "original_path": "outputs/campaign_c16_c18_landing_2026_10_17/originals/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+    "cap": 120,
+    "edits": "Inert main wrapper, explicit cap, nonzero failed-check exit; long-wavelength model loader calls inert helper definitions explicitly. Final review also narrows optimizer claims, requires complete pair reductions, binds independent inputs and uses the declared PSG helper."
+  },
+  {
+    "path": "scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py",
+    "original_sha256": "edbf0ffd49709c6652255be6caae350c2df3046cd156133e49c19a91a2e114b0",
+    "final_sha256": "0e60313a17d8198dfaae11f5387394ca991c6308f8b746b05272b40cf906333a",
+    "original_path": "outputs/campaign_c16_c18_landing_2026_10_17/originals/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py",
+    "cap": 300,
+    "edits": "Inert main wrapper, explicit cap, nonzero failed-check exit; long-wavelength model loader calls inert helper definitions explicitly. Final review also narrows optimizer claims, requires complete pair reductions, binds independent inputs and uses the declared PSG helper. Explicit unwrapped contractible creator family; former periodic logical cases retained as winding/nonmembership controls."
+  },
+  {
+    "path": "scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+    "original_sha256": "b69088de08e2c1f17715cbaa87e379f28adfb0c8004656e54ba414cce350c911",
+    "final_sha256": "21e75730b3fd3ff88e87e500f51bb2bdf0afcb3d0479c34eeeafb2417e5e2d81",
+    "original_path": "outputs/campaign_c16_c18_landing_2026_10_17/originals/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+    "cap": 120,
+    "edits": "Inert main wrapper, explicit cap, nonzero failed-check exit; long-wavelength model loader calls inert helper definitions explicitly. Final review also narrows optimizer claims, requires complete pair reductions, binds independent inputs and uses the declared PSG helper."
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "checks": {
+    "all momentum homogeneous Hamiltonian coefficients": true,
+    "exact Hermitian matrix": true,
+    "finite curvature ray 0.7": true,
+    "finite curvature ray 1.3": true,
+    "finite curvature ray 2.0": true,
+    "finite gap ray 0.7": true,
+    "finite gap ray 1.3": true,
+    "finite gap ray 2.0": true,
+    "flux equations": true,
+    "inverse link and chiral": true,
+    "inverse onsite": true,
+    "inverse q": true,
+    "inverse r": true,
+    "inverse sample 0": true,
+    "inverse sample 1": true,
+    "inverse sample 10": true,
+    "inverse sample 11": true,
+    "inverse sample 12": true,
+    "inverse sample 13": true,
+    "inverse sample 14": true,
+    "inverse sample 15": true,
+    "inverse sample 16": true,
+    "inverse sample 17": true,
+    "inverse sample 18": true,
+    "inverse sample 19": true,
+    "inverse sample 2": true,
+    "inverse sample 20": true,
+    "inverse sample 21": true,
+    "inverse sample 22": true,
+    "inverse sample 23": true,
+    "inverse sample 24": true,
+    "inverse sample 25": true,
+    "inverse sample 26": true,
+    "inverse sample 27": true,
+    "inverse sample 28": true,
+    "inverse sample 29": true,
+    "inverse sample 3": true,
+    "inverse sample 30": true,
+    "inverse sample 31": true,
+    "inverse sample 32": true,
+    "inverse sample 33": true,
+    "inverse sample 34": true,
+    "inverse sample 35": true,
+    "inverse sample 36": true,
+    "inverse sample 37": true,
+    "inverse sample 38": true,
+    "inverse sample 39": true,
+    "inverse sample 4": true,
+    "inverse sample 5": true,
+    "inverse sample 6": true,
+    "inverse sample 7": true,
+    "inverse sample 8": true,
+    "inverse sample 9": true,
+    "link perturbation changes gap ratios": true,
+    "positive isotropic reference curvature": true,
+    "reference inversion": true,
+    "reference multiplicities": true,
+    "spectrum sample 0": true,
+    "spectrum sample 1": true,
+    "spectrum sample 10": true,
+    "spectrum sample 11": true,
+    "spectrum sample 12": true,
+    "spectrum sample 13": true,
+    "spectrum sample 14": true,
+    "spectrum sample 15": true,
+    "spectrum sample 16": true,
+    "spectrum sample 17": true,
+    "spectrum sample 18": true,
+    "spectrum sample 19": true,
+    "spectrum sample 2": true,
+    "spectrum sample 20": true,
+    "spectrum sample 21": true,
+    "spectrum sample 22": true,
+    "spectrum sample 23": true,
+    "spectrum sample 24": true,
+    "spectrum sample 25": true,
+    "spectrum sample 26": true,
+    "spectrum sample 27": true,
+    "spectrum sample 28": true,
+    "spectrum sample 29": true,
+    "spectrum sample 3": true,
+    "spectrum sample 30": true,
+    "spectrum sample 31": true,
+    "spectrum sample 32": true,
+    "spectrum sample 33": true,
+    "spectrum sample 34": true,
+    "spectrum sample 35": true,
+    "spectrum sample 36": true,
+    "spectrum sample 37": true,
+    "spectrum sample 38": true,
+    "spectrum sample 39": true,
+    "spectrum sample 4": true,
+    "spectrum sample 5": true,
+    "spectrum sample 6": true,
+    "spectrum sample 7": true,
+    "spectrum sample 8": true,
+    "spectrum sample 9": true,
+    "symbolic characteristic polynomial": true,
+    "three mutations detected": true
+  },
+  "curvature_step_scan": {
+    "0.002": [
+      [
+        0.04322362945341496,
+        -1.942890293094024e-10,
+        -1.6653345369377348e-10
+      ],
+      [
+        -1.942890293094024e-10,
+        0.04322362942565938,
+        0.0
+      ],
+      [
+        -1.6653345369377348e-10,
+        0.0,
+        0.043223629536681685
+      ]
+    ],
+    "0.005": [
+      [
+        0.043223367884870356,
+        0.0,
+        -1.3322676295501878e-11
+      ],
+      [
+        0.0,
+        0.04322336790707482,
+        5.3290705182007514e-11
+      ],
+      [
+        -1.3322676295501878e-11,
+        5.3290705182007514e-11,
+        0.04322336787598857
+      ]
+    ],
+    "0.01": [
+      [
+        0.04322243375654011,
+        2.220446049250313e-12,
+        1.1102230246251565e-12
+      ],
+      [
+        2.220446049250313e-12,
+        0.04322243376320145,
+        -5.551115123125783e-12
+      ],
+      [
+        1.1102230246251565e-12,
+        -5.551115123125783e-12,
+        0.04322243376209123
+      ]
+    ]
+  },
+  "empirical_data_used": false,
+  "mutations": {
+    "opposite kinetic scaling": true,
+    "wrong flux polynomial coefficient": true,
+    "wrong inverse onsite divisor": true
+  },
+  "reference_gap_ratios": [
+    1.0,
+    1.138179979432926,
+    2.3331293839814355
+  ],
+  "reference_gaps": [
+    2.7335482027815443,
+    3.1112698372208096,
+    6.377721634439265
+  ],
+  "reference_parameters": [
+    -1.0,
+    0.1,
+    -0.5
+  ],
+  "selected_momentum_pi_over_2": [
+    -1,
+    1,
+    -1
+  ],
+  "shape_perturbation_gap_ratios": [
+    1.0,
+    1.1408134149869256,
+    2.321021257705407
+  ],
+  "status": "conditional-support"
+}

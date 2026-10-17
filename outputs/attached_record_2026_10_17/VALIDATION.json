@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-10-17T17:38:12.017801+00:00",
+  "source_files": 52,
+  "repository_dependencies": 3,
+  "note_links": 18,
+  "note_sha256": "f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f",
+  "source_manifest_sha256": "9e1515b0f478bc6ce569b4c827126560a063fd902643c40a056de1defc5eaad5",
+  "scope": "Byte identities, exact source lengths, repository dependency identities and main-note local link existence; not scientific rerun or audit.",
+  "integration_review": {
+    "path": "INTEGRATION_REVIEW.md",
+    "sha256": "2809d263b81ba31ebdc7700aa04b40f9093458beca807785e9784be61f009f01",
+    "root_read_complete": true
+  },
+  "citation_graph": {
+    "builder": "python3 docs/audit/scripts/run_citation_graph_build.py",
+    "builder_exit": 0,
+    "manifest_writer": "python3 docs/audit/scripts/write_citation_graph_manifest.py",
+    "manifest_writer_exit": 0,
+    "nodes": 7227,
+    "edges": 16197,
+    "inspected_delta": "One new note node, three edges to original endpoint, converter and finite-transfer dependencies; no other node change."
+  },
+  "not_run": [
+    "new dynamics simulation",
+    "new numerical scientific runner",
+    "full combined-main pipeline",
+    "formal audit"
+  ],
+  "editable_prompt_files_changed": [],
+  "updated_utc": "2026-10-17T17:42:07.330397+00:00"
+}

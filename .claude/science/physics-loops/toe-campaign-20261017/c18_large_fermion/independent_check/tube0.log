@@ -1,0 +1,8 @@
+tube=0 tri=0 t1=-1.0 t2=0.1 lam=-0.5: Emin=-3.421267, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold
+tube=0 tri=0 t1=-1.0 t2=0.3 lam=-0.5: Emin=-3.476482, 2 degenerate minima at (units pi/2) [(np.float64(1.0), np.float64(1.0), np.float64(1.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))], each 2-fold
+tube=0 tri=0 t1=-1.0 t2=0.1 lam=0.5: Emin=-3.421267, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold
+tube=0 tri=0 t1=-1.0 t2=0.2 lam=-0.3: Emin=-2.894427, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold
+tube=0 tri=1 t1=+1.0 t2=0.1 lam=-0.5: Emin=-3.421267, 2 degenerate minima at (units pi/2) [(np.float64(1.0), np.float64(1.0), np.float64(1.0)), (np.float64(-1.0), np.float64(-1.0), np.float64(-1.0))], each 2-fold
+tube=0 tri=1 t1=+1.0 t2=0.3 lam=-0.5: Emin=-3.476482, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold
+tube=0 tri=1 t1=+1.0 t2=0.1 lam=0.5: Emin=-3.421267, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold
+tube=0 tri=1 t1=+1.0 t2=0.2 lam=-0.3: Emin=-2.894427, 2 degenerate minima at (units pi/2) [(np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))], each 2-fold

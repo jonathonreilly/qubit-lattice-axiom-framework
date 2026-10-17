@@ -1,33 +1,10 @@
-# Opportunity queue (ranked; updated 2026-10-17 after C12)
+# Research obligations after campaign review
 
-Done in this campaign: C1–C4 (scoped results and finite search), C6 (BKSF orbits, four-species minimum for bare
-permutations), C8/C10 (conditional restricted D3/single-C2 class; D2 localization open), C11 (site-local half-edge realization) and C12
-(one O-covariant species with on-site Cliffords; clean-sector trivial pattern under U_R, not an unrestricted anyon invariant; sign-character W twist gives (+,-), not w2).
+Research work only; no scheduled worker or adopted premise. The former six-direction charge recipe is retired and recoverable in `archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json`. Valid half-edge encoding results remain canonical; no general exclusion is asserted.
 
-00. **The order-4 BKSF codes: an anomaly or an error?**
-   - Bare finite pair tests yield three individually inferred negative signs if localization is assumed; consistent D2 localization remains open. Character twists preserve the odd sign count.
-   - A nondegenerate fermion admits only even-minus patterns on D2 (abelian extensions).
-   - Decide whether the bare D2 action has a symmetry-localization obstruction (an H^3-type anomaly) or
-     whether lambda = theta*eta fails for some C2.
-   - The same constraint explains why w2 on all of O (which contains D2) is hard for a one-dimensional local symmetry representation. A single species carrying an internal doublet is not excluded.
-0+. **C15 bounded construction:** a doublet code with exact supplied on-site spin action. Local spinors change pair signs, so the displayed pattern is inherited, not an anyon invariant. Open: construct a genuine O action with ordinary local representations and a localized fractional doublet; construct an invariant link ground vector and prove any exhaustive energy minimum. Next: can the framework derive the matter doublet
-   and its spin-1/2 action from Admissibility, or must they be supplied? A related question: a
-   Lieb-Schultz-Mattis-type analysis of which site contents admit a symmetric vacuum.
-0. **One-dimensional local symmetry representations cannot realize full w2.** The central -1 lies in the commutator subgroup of 2O (already Q8), so a one-dimensional local representation cannot carry it. A single species with an internal doublet is not excluded. The target is an O-covariant fermion carrying such a doublet.
-1. **Which realization does supplied conditional dynamics select?** (partly answered: Majorana-only hopping selects the
-   trivial class, in both families)
-   - The spin class is a property of the rotation's action on excited states. The on-site phase
-     W = prod exp(-i pi B/4) changes involution signs along a group character and is invisible in the ground space; on full O it changes edge but not axis C2 signs.
-   - Determine which realization is a symmetry of natural hopping Hamiltonians (Majorana vs
-     number-conserving) in both families.
-   - Determine whether a U(1) charge with a spin-charge relation (Spin^c-like) forces the w2 choice.
-     This is an open modeling route; no physical electric charge is derived.
-2. ~~Settle the 36 dressed BKSF pairs.~~ Done: the independent check proved lambda = +1 on the whole
-   space of dressed creators.
-3. **O-covariant condensation of the four-copy BKSF stack under bare permutations (C7/C9).** With
-   on-site Cliffords the species question is closed: one code is already O-invariant (C13). For bare
-   actions both routes tried fail, so a no-go is open.
-4. **Low-energy theory of the O-symmetric pi-flux sector.** In the C12 code: Dirac nodes, and how U_R and
-   U_R W act on the low-energy spinors (spin times taste).
-5. **Star-supported gaps (C4).** Multi-site charge patterns and non-maximal bounded rules; non-Pauli
-   commuting projectors on one qubit per site.
+1. Construct explicit localized symmetry operators for the proposed corner charge and prove representative/gauge independence under the admissible local dressings. Reconcile the point-group pair signs with the nontrivial translation–rotation and bond-centered relations. The supplied twist is a choice, not a derived dynamics selection.
+2. Prove or refute global band-minimum and gap claims beyond finite sampling. Preserve higher local minima, parameter/sign/flux restrictions and the difference between a Weyl crossing and a shifted ground minimum. Identify which perturbations actually have nonzero linear coefficients.
+3. Derive a uniform one-qubit local rule producing any proposed block structure, spectator state and allowed interaction range. An equivariant static encoding does not solve unit-translation or nearest-neighbour dynamics.
+4. Resolve the earlier D2 localization tension for bare BKSF representatives; failure of the tested clean syndrome does not exclude all dressed invariant sectors. Keep the explicit localization/fusion hypotheses.
+5. Advance the already queued genuine-O fractional-doublet/local-vacuum task on ai/probes; reconcile the new corner construction before claiming it closes that target. C15 supplied matter spin and representative dependence remain limitations.
+6. Earlier open routes remain recoverable: O-covariant condensation of the four-copy bare-permutation stack, low-energy conditional dynamics of the Majorana-direction model, and broader supports/non-Pauli models outside the finite star-supported searches. None is excluded by this cleanup.

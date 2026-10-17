@@ -1,0 +1,45 @@
+{
+  "independent_geometry": "face-diagonal integer vectors, graph-cycle enumeration and dense GF2 elimination; no author imports",
+  "edges_per_cell": 36,
+  "cycle_equations": 29,
+  "flux_constraint_rank": 22,
+  "reference_lowest_pair": [
+    -3.555634918610406,
+    -3.555634918610404
+  ],
+  "reference_exact_characteristic_polynomial": "(25*lambda**2 - 50*lambda - 58)**4*(50*lambda**2 + 200*lambda + 79)**2/976562500",
+  "reference_inverse_mass": [
+    0.04322366914072781,
+    0.04322368181620962,
+    0.04322368472990278
+  ],
+  "counterexample_two_strict_local_minima_t2_0_3_lambda_0_03": [
+    {
+      "k_over_pi": [
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "energy": -2.3394112549695434,
+      "hessian": [
+        0.09797135640799692,
+        0.09797135911356834,
+        0.09797136244296469
+      ]
+    },
+    {
+      "k_over_pi": [
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "energy": -2.5091168824543146,
+      "hessian": [
+        0.10048882859566223,
+        0.10048882918882214,
+        0.10048883309732323
+      ]
+    }
+  ],
+  "scope": "local numerical Hessian witnesses and exact reference characteristic polynomial; no global minimum certification"
+}

@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "exact_charpoly": true,
+    "Hermitian": true,
+    "numeric_100_spectra_and_inverse": true,
+    "full_Bloch_positive_scaling_30": true,
+    "gap_Jacobian": true
+  },
+  "pass": 5,
+  "fail": 0,
+  "max_spectrum_abs_error": 4.440892098500626e-15,
+  "gap_jacobian": "72*sqrt(2)*(-b - c)/sqrt(3*a**2 + 2*b**2 + 4*b*c + 2*c**2)"
+}

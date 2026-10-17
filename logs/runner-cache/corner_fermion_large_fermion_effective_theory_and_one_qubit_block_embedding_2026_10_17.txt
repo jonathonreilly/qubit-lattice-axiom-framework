@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py
+runner_sha256: 21e75730b3fd3ff88e87e500f51bb2bdf0afcb3d0479c34eeeafb2417e5e2d81
+input_fingerprint_sha256: 5271a693ecc67816aef9a10c6d231b1f94b94d4bf65303a86912662a2089caaa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.85
+status: ok
+----- stdout -----
+Part 1: affine action of O on momentum (units pi/2)
+   {'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': '0'} O-fixed momenta: [(0, 0, 0), (2, 2, 2)]
+   {'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} O-fixed momenta: []
+   {'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} O-fixed momenta: [(0, 0, 0), (2, 2, 2)]
+   {'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} O-fixed momenta: []
+   {'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} O-fixed momenta: []
+   {'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} O-fixed momenta: [(1, 3, 1), (3, 1, 3)]
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} O-fixed momenta: []
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} O-fixed momenta: [(1, 3, 1), (3, 1, 3)]
+[PASS] with square = plaquette = tube = pi, the rotations fix exactly two momenta, k* = (pi/2)(1,-1,1) and -k*
+[PASS] with square = plaquette = pi and tube = 0 no momentum is fixed (the minimum star then has at least two points)
+
+Part 2: Bloch bands (square = plaquette = tube = pi, triangle 0; H = -t1 sum_onsite u c^dag c - t2 sum_links u c^dag c + chiral)
+[PASS] a translation-invariant gauge exists for this flux pattern (one-site unit cell)
+   optimizer starts=16 failures=0; finite search, no global certificate
+   t1=-1.0 t2=+0.1 chiral=-0.5: min E=-3.555635 at k*=[-1  1 -1](pi/2), deg 2, gap at k* 2.7335, E(-k*)-E(k*)=0.2828, next local min +inf; 1/m* = 0.0432 (spread 2.3e-09); anisotropy [111] vs [100] at |dk|=0.1: 5.1e-04
+   optimizer starts=16 failures=0; finite search, no global certificate
+   t1=-1.0 t2=-0.1 chiral=-0.5: min E=-3.555635 at k*=[ 1 -1  1](pi/2), deg 2, gap at k* 2.7335, E(-k*)-E(k*)=0.2828, next local min +inf; 1/m* = 0.0432 (spread 3.1e-09); anisotropy [111] vs [100] at |dk|=0.1: 5.1e-04
+   optimizer starts=16 failures=0; finite search, no global certificate
+   t1=-1.0 t2=+0.3 chiral=-0.5: min E=-3.838478 at k*=[-1  1 -1](pi/2), deg 2, gap at k* 3.0835, E(-k*)-E(k*)=0.8485, next local min +inf; 1/m* = 0.1112 (spread 2.4e-09); anisotropy [111] vs [100] at |dk|=0.1: 4.3e-04
+   optimizer starts=16 failures=0; finite search, no global certificate
+   t1=-1.0 t2=+0.1 chiral=+0.5: min E=-3.555635 at k*=[ 1 -1  1](pi/2), deg 2, gap at k* 2.7335, E(-k*)-E(k*)=0.2828, next local min +inf; 1/m* = 0.0432 (spread 2.3e-09); anisotropy [111] vs [100] at |dk|=0.1: 5.1e-04
+   optimizer starts=16 failures=0; finite search, no global certificate
+   t1=-1.0 t2=+0.2 chiral=-0.3: min E=-3.131371 at k*=[-1  1 -1](pi/2), deg 2, gap at k* 2.2627, E(-k*)-E(k*)=0.5657, next local min +inf; 1/m* = 0.0781 (spread 1.7e-09); anisotropy [111] vs [100] at |dk|=0.1: 4.4e-04
+[PASS] all finite search starts converged; lowest candidate found at k*, a doublet; evaluated other minima lie higher (not global certification)
+[PASS] paired numerical bands at 25 random k per parameter set; analytic symmetry stated separately
+[PASS] the effective-mass tensor at k* is isotropic and positive (Hessian eigenvalues equal)
+
+Part 3: representation of the minimum doublet under the twisted site rotations (L = 4)
+   t1=-1.0 t2=+0.1 chiral=-0.5: lattice ground level E=-3.5556, deg 2, {'E1/2': 1}
+   t1=-1.0 t2=+0.3 chiral=-0.5: lattice ground level E=-3.8385, deg 2, {'E1/2': 1}
+   t1=-1.0 t2=+0.1 chiral=+0.5: lattice ground level E=-3.5556, deg 2, {'E5/2': 1}
+[PASS] on the L = 4 lattice the lowest one-fermion level is the k* doublet (same energy as the Bloch minimum)
+[PASS] the minimum doublet carries a two-dimensional spinorial irrep of 2O: E1/2 for chiral -0.5, E5/2 for chiral +0.5 (twist i^{w1})
+
+Part 4: O-equivariant placement of the 48 local qubits in a 5x5x5 block of a one-qubit-per-site grid
+[PASS] both local-qubit label orbits (24 on-site hop qubits, 24 link halves) are free O-orbits
+[PASS] the block positions (1,2,0) and (1,2,2) have free O-orbits that are disjoint
+[PASS] the placement is a bijection onto two orbits of fine sites and is O-equivariant: p(R.l) = R.p(l) for all 24 R and 48 labels
+[PASS] the 77 unused fine sites form a union of O-orbits (frozen spectator qubits keep the symmetry)
+   so the corner code's rotation about a site becomes the framework's rotation about a block-centre fine site (a fine-site permutation) times the same on-block Clifford corrections; coarse translations are fine translations by 5
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

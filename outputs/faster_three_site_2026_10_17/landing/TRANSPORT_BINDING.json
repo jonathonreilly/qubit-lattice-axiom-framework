@@ -1,0 +1,11 @@
+{
+  "original_head": "881141c556edde2c57a078364efcc539aeb9cf46",
+  "original_note_sha256": "cf1125b7b5e43c8fe65607f1f62c1ecc176257113a0ed78c497d4f6217b87d62",
+  "original_note_recovery": "outputs/faster_three_site_2026_10_17/landing/original-note.md.txt",
+  "final_note_sha256": "1f0907d4af92ecb190528529959beae7fb1d673bad54ba30258e2259dda0e2e5",
+  "runner": "scripts/faster_three_site_complete_output_2026_10_17.py",
+  "runner_sha256": "3c80ea332cb5e2bebfd86e17760c99d78bb01e0337f2e87a81eb4565474b7cef",
+  "pin_count": 171,
+  "declared_input_count": 184,
+  "scope": "Author packaging and finite corroboration only; no primary execution or independent verdict."
+}

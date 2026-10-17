@@ -1,0 +1,17 @@
+{
+  "exact_integer_complex_Fourier_coefficients_checked": 8,
+  "parameter_components": [
+    "t1",
+    "t2",
+    "chiral_lambda"
+  ],
+  "inversion_PSG_shift": [
+    0,
+    0,
+    0
+  ],
+  "antiunitary_square": "-I",
+  "identity": "W conjugate(C[-d]) W^T = C[d] for each Laurent coefficient; hence all continuous k and all real parameters",
+  "mutation_plain_conjugation_failures": 7,
+  "consequence": "all Bloch eigenvalues paired; isolated rank-two effective Hamiltonian scalar, not exactly quadratic"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T18:39:48.199535+00:00",
+  "note_sha256": "fe9c64423e058791d4c9d4f26aeecf2d1ba7d9240988691e7e535316829095f7",
+  "manifest_sha256": "5b1b4c8ce340e062054ae404993fbfc1dbae05f4edc7fe7ac7f6f62a40627a0b",
+  "new_source_copies": 12,
+  "inherited_mappings": 68,
+  "repository_notes": 5,
+  "note_links": 21,
+  "scope": "Exact byte hashes/lengths and link existence; no scientific rerun or audit.",
+  "integration_review_sha256": "62899e15fe759d276f923c8c07d6a2b109d7439497d6575f769dbb1b78d1b971",
+  "citation_graph": {
+    "builder_exit": 0,
+    "writer_exit": 0,
+    "nodes": 7229,
+    "edges": 16202,
+    "semantic_delta": "One family note and one edge to parent physical construction; no other node changes."
+  },
+  "limits": "Selective analytical checking with disclosed shared ancestry. No dynamics run, sweep, combined-main pipeline or retained audit. No editable prompt files changed."
+}

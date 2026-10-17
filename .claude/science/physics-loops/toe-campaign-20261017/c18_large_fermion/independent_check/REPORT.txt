@@ -1,0 +1,378 @@
+INDEPENDENT CHECK -- corner fermion at long wavelengths + one-qubit block embedding (C18)
+=======================================================================================
+Note:   docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Runner: scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py
+        (re-run here: TOTAL PASS=12 FAIL=0, 21 s; runner_rerun.log)
+
+Provenance: fresh-context agent, same model family as the author (Claude). Not an
+independent model family and not a human referee. I wrote all the code here from the
+note's text, reusing only ideas from the C17 check. I read the runners only to compare
+after my results were in. I did not edit the note or the runners, and I did not commit.
+
+Files (this directory; each script writes the .log of the same name)
+  model.py      own corner graph; all 3- and 4-cycles found by brute force and classified;
+                own GF(2) solver; translation-invariant gauge; Bloch H; PSG solve with the
+                general ansatz sigma(n,c) = eta(c)(-1)^{s.n}
+  affine.py     items 1 and 3: cycle span, affine action, fixed momenta, direct unitary
+                equivalence, inversion and I*K
+  bands.py      item 1: grid plus many restarts.  modes: note | scan | other
+                -> bands_note.log, bands_scan.log, bands_other.log
+  kp.py         items 2, 3 and 5: Kramers, Hessian, quartic terms, Berry curvature, survey of
+                I*K-breaking terms
+  perturb.py, weyl.py, weyl2.py   item 5: O x T invariant second-neighbour hops
+  irrep.py      item 4: L = 4 real space and L = 8 sparse; both lifts to 2O; both twists;
+                the cluster doublet
+  quartet.py    item 1 (outside the claimed sector): the irrep of the 4-fold minimum
+  tube0.py      item 7: band minimum at the C17 default flux (tube 0)
+  embed.py      item 6: label and point orbits; ranges in fine units
+
+My conventions: c_k = N^-1/2 sum_n e^{-ik.n} c_n, so H(k)[c2,c1] carries e^{-ik.sh}. This is
+k -> -k relative to the runner, which is why my "+k*" is the runner's "-k*". The triangles
+are oriented counterclockwise seen from outside, and H matches the note's form.
+
+-------------------------------------------------------------------------------
+ITEM 1  Band minimum                                 VERDICT: CONFIRMED WITH CORRECTIONS
+                                                     (scope and wording)
+-------------------------------------------------------------------------------
+Own construction (model.py, affine.py):
+  - Brute-force enumeration of the 3- and 4-cycles finds only 4 classes: 8 triangles,
+    6 squares, 12 plaquettes and 24 tubes per cell. No other class appears.
+  - On the L = 4 torus these cycles have rank 1534 = (E - V + 1) - 3. So the four uniform
+    fluxes fix the gauge field up to gauge and holonomy.
+  - The translation-invariant gauge is unique up to link signs (-1)^{s.a}, i.e. up to
+    k -> k + pi s.
+
+Five note sets (bands.py note; 48^3 offset grid, 24 grid-seeded and 200 random restarts,
+Nelder-Mead then BFGS). Also run with t1 = +1, triangle pi:
+  - Every run converges to one point. The lowest band has exactly ONE local minimum (#loc 1).
+  - It sits at +k* or -k*, it is 2-fold, and it has no degenerate partner.
+  - Emin = -3.555635 (t2 = 0.1, lam = -0.5), -3.838478 (t2 = 0.3) and -3.131371
+    (t2 = 0.2, lam = -0.3). All match the runner.
+  - The gap at k* to the next pair is 2.73, 3.08 and 2.26.
+  - E(other fixed point) - E(k*) = 0.2828 = 2*sqrt(2)*|t2| exactly. So the note's "2.8 t2" is
+    right for these sets, and could be written 2*sqrt(2)|t2|.
+  - The sign of t2 and the sign of lam each swap +k* and -k*.
+  - t1 = +1 with triangle pi gives an identical spectrum (gauge-equivalent).
+
+Probes beyond the five sets:
+  - bands.py scan: 168 sets, t1 = -1, triangle 0, t2 in +-{0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6},
+    lam in +-{0.03, 0.1, 0.3, 0.5, 0.75, 1}. Grid 28^3 with 54 restarts each.
+    - The claim HOLDS in all 168: a unique global minimum, 2-fold, at +-k*.
+    - For small |lam| the other fixed point becomes a second local minimum, but it is
+      always higher.
+    - E(-k*) - E(k*) = 2 sqrt2 min(|t2|, 2|lam|) in this range. So "2.8 t2" fails once
+      2|lam| < |t2|; for example 0.1697 at t2 = 0.3, lam = 0.03.
+    - The k* gap shrinks with lam: 0.31 at t2 = 0.05, lam = 0.03.
+  - Beyond the range: t2 up to 2 and |lam| up to 1.5 (6 sets). The claim still holds.
+  - Where the claim FAILS (bands_other.log, quartet.py):
+    (a) lam = 0: two degenerate minima at +k* and -k*, 4 states, with a valley label.
+    (b) t1 = +1 with triangle 0, or equivalently t1 = -1 with triangle pi:
+        - the global minimum is at +-k*, but it is 4-fold;
+        - it is the G3/2 quartet, under both lifts (quartet.log);
+        - so the long-wavelength theory there is a spin-3/2 / Luttinger-type quartet, not a
+          doublet.
+        The claimed sector "t1 = -1, triangle 0", or "t1 = +1, triangle pi", is therefore
+        essential. Please say so in N1.
+    (c) tube 0: see item 7.
+
+Wording corrections:
+  - "k* = (pi/2)(1,-1,1)" depends on the gauge (and on the Fourier sign).
+    - Other translation-invariant gauge solutions put the fixed pair at +-(pi/2)(1,1,1),
+      +-(pi/2)(1,1,-1) or +-(pi/2)(1,-1,-1) (affine.log, "gauge seed").
+    - Gauge-invariant statement: "exactly two fixed momenta, k* and k* + (pi,pi,pi) = -k*,
+      with k* in (pi/2)(odd,odd,odd); (pi/2)(1,-1,1) in the runner's gauge".
+  - "2.8 t2": write "2 sqrt2 |t2| for these sets (2 sqrt2 min(|t2|, 2|lam|) more generally in
+    the scanned range)".
+
+-------------------------------------------------------------------------------
+ITEM 2  Kramers-type 2-fold degeneracy                 VERDICT: CONFIRMED; responsible
+                                                       symmetry identified (not in the note)
+-------------------------------------------------------------------------------
+  - Splitting of each pair over 2000 random k, for all five sets: at most 8e-15 (kp.log).
+
+  - The responsible symmetry is A = I*K, inversion through the site times complex conjugation
+    (affine.log).
+    - The inversion PSG exists with momentum shift S_I = 0, so A maps k -> k.
+    - H(k) = W_I H(k)^* W_I^T holds to 0.0.
+    - A^2 = eta_I(c) eta_I(-c) = -1 on all 12 corners, so Kramers pairs form at every k.
+    - Inversion alone maps lam -> -lam (residual 0 for that map). K alone is broken by the
+      chiral term, as it must be: C17 showed a real H cannot isolate a doublet.
+
+  - Status of A.
+    - A is a symmetry of the SUPPLIED HOPPING FAMILY (on-site t1, link t2, chiral lam on the
+      triangles).
+    - It is not one of the framework's symmetries, which are proper rotations about sites and
+      translations.
+    - Neither the C17 nor the C18 runner constructs A at the qubit level.
+    - Since the one-fermion sector of the qubit model with this Hamiltonian is exactly this
+      hopping problem, the degeneracy does hold there.
+    - It is not protected by O x T x U(1). Second-neighbour hops are products of two BKSF
+      hops; they commute with every loop stabilizer and they respect the PSG.
+      - Of the 36 independent O x T symmetrized second-neighbour terms, 28 break I*K
+        (kp.log).
+      - Adding one with strength 0.02 splits the Kramers pairs by up to 0.06 at generic k
+        (weyl2.log).
+    - So the "every band 2-fold" result is a property of this hopping family, not of the
+      qubit code's symmetry. See item 5 for why this matters.
+
+Requested wording: "every band is 2-fold degenerate because the supplied Hamiltonian has the
+antiunitary symmetry I*K (inversion through a site times complex conjugation, with PSG signs),
+which squares to -1; I*K is not among O, the translations and U(1), and generic O x T x U(1)
+invariant second-neighbour hops break it".
+
+-------------------------------------------------------------------------------
+ITEM 3  Isotropic mass, quartic anisotropy, affine action           VERDICT: CONFIRMED
+-------------------------------------------------------------------------------
+  - Direct check, which the runner does not do: H(Rk + pi S_R) = W_R H(k) W_R^T.
+    - It holds for all 24 R, at random k, for every flux pattern with commuting
+      translations. The maximum residual is 1.6e-16 (affine.log).
+    - W_R is a signed permutation from my own PSG solve. S_R = R s_R, where s_R is the
+      translation-character of the gauge transform.
+  - Fixed-point computation.
+    - Mine agrees with the runner: +-(pi/2)(1,-1,1) for tube pi, and none for tube 0.
+    - It is exact for a general reason. The fixed set of the affine action is k0 plus the set
+      fixed by the linear O action mod 2pi, which is {0, (pi,pi,pi)}. So there are either 0 or
+      exactly 2 fixed points. A grid of pi/4 confirms there are no others.
+  - Symmetry argument.
+    - With k = k* + dk: R(k* + dk) + pi S_R = k* + R dk (mod 2pi), so e_n(k* + R dk) = e_n(k* + dk).
+    - Hence the gradient vanishes and the Hessian is an O-invariant symmetric 2-tensor, which
+      is a multiple of 1 because T1 is irreducible.
+    - The cubic term vanishes (the only cubic, xyz, is A2). There are two quartic invariants.
+    - The argument is correct.
+  - Numbers (kp.log).
+    - Finite-difference Hessian: eigenvalues 0.043224 (x3), spread 5e-10. A q^2 fit along 13
+      directions has spread 1e-12.
+    - 1/m* is 0.04322 (t2 = 0.1), 0.11119 (t2 = 0.3) and 0.07806 (t2 = 0.2, lam = -0.3).
+    - The quartic coefficient fits A + B sum n_i^4, with B = -1.65e-3 at t2 = 0.1.
+    - Relative [111]-[100] difference: 2.03e-3, 5.06e-4, 1.27e-4 and 3.16e-5 at dk = 0.2, 0.1,
+      0.05 and 0.025. Successive ratios are 4.00, i.e. dk^2 scaling.
+  - Small caveat: "the Hessian is isotropic to 1e-8" is a finite-difference bound. The exact
+    statement is the symmetry argument, and it should be cited as the reason.
+
+-------------------------------------------------------------------------------
+ITEM 4  Irrep of the minimum doublet                 VERDICT: CONFIRMED WITH CORRECTIONS
+                                                     (the label is a convention)
+-------------------------------------------------------------------------------
+  - Own L = 4 real-space build: 768 modes, my gauge and my PSG (irrep.py).
+    - H commutes exactly with all 24 G_R.
+    - Ground level E = -3.555635, 2-fold, which equals the Bloch minimum. The next level is
+      +0.0442 above.
+    - The same holds at t2 = 0.3 (-3.838478), t2 = 0.2 / lam = -0.3, t2 = -0.1 and lam = +0.5.
+  - L = 8 (sparse): ground pair -3.555635, then a 6-fold level at -3.54289.
+    - L = 8 also contains k*. The rep at k* is L-independent for 4 | L, because the Bloch
+      sewing matrices give the same D_R.
+  - The twisted rotations i^{w1} G_R act on the doublet as a projective rep of O. I find ALL
+    lifts to 2O by brute force over generator signs.
+    - There are exactly TWO valid lifts for each twist. They differ by the sign character A2
+      and give E1/2 and E5/2 respectively (irrep.log). For example, at lam = -0.5 with twist
+      i^{w1}:
+          lift(+,-) -> E5/2,   lift(-,-) -> E1/2.
+    - The opposite twist (-i)^{w1} gives the same two matrix sets with the labels exchanged.
+    - Reason: identifying the Z2 extension with 2O is unique only up to the outer automorphism
+      g -> chi_A2(g) g, and that automorphism exchanges E1/2 and E5/2.
+    - So the absolute label is fixed neither by the physics nor by the twist. It is fixed by an
+      arbitrary lift choice; the runner's comes from the free variable of a GF(2) solve.
+  - Convention-free content, all confirmed:
+    (i)   the doublet is a 2-dimensional spinorial irrep of 2O (M(-1) = -I), with no
+          G3/2 content;
+    (ii)  in a fixed convention, the lam < 0 and lam > 0 doublets differ by A2;
+    (iii) in the same convention, the k* lattice doublet carries the SAME irrep as the C17
+          single-site cluster doublet (E = -3.4142, gap 2.5434): E1/2 for lam = -0.5 under
+          lift(-,-), both;
+    (iv)  the adjoint action on the doublet has the vector (T1) character for both labels.
+          So the doublet's "spin vector" rotates with the lattice like a vector, whichever
+          label is used.
+Requested wording: "carries a two-dimensional spinorial irrep of 2O (E1/2 or E5/2; which one is
+fixed only by the choice of lift, and it flips with lam; in the runner's convention E1/2 for
+lam < 0, the same irrep as the C17 cluster doublet)".
+
+-------------------------------------------------------------------------------
+ITEM 5  Long-wavelength claim (note item 4)          VERDICT: CONFIRMED WITH CORRECTIONS
+                                                     (substantive: rests on I*K, not on O)
+-------------------------------------------------------------------------------
+(a) Within the supplied I*K-symmetric family, H_eff = E0 + dk^2/2m* on a doublet is right.
+    It is even stronger than stated:
+    - every band is exactly 2-fold at every k, so in the doublet basis H_eff = e(k) * 1_2 to
+      ALL orders;
+    - there is NO spin-orbit term in the free Hamiltonian at any order;
+    - in a radial (parallel-transport) gauge around k*, the sewing matrices are the
+      k-independent D(g);
+    - so the lattice O acts as D(g) x (orbital rotation), and the free continuum theory has
+      SU(2)_spin x SO(3)_orbit. SO(3)_orbit is broken only by the quartic term, of relative
+      size about 0.07 (dk a)^2 along [100] at t2 = 0.1, so "(a/w)^2" is right for the anisotropy.
+
+(b) "Spin-orbit terms of relative size (a/w)^2" is not established by anything computed.
+    - The free theory has none, by I*K.
+    - Spin-orbit appears only with external fields, through the non-abelian (SU(2)) Berry
+      connection of the Kramers pair.
+    - I computed its curvature at k* by small Wilson loops (kp.log). It is traceless, and its
+      eigenvalues are +-6.0e-4 a^2 in each coordinate plane (t2 = 0.1, lam = +-0.5); the
+      U(1) part is below 1e-11.
+    - It gives a Pauli/Thomas-type term of order f (grad V x k).sigma. Relative to V this is
+      of order a^2/(w l_V). That is (a/w)^2 only if the potential varies on the packet scale.
+    - So the statement is plausible, but it is outside the stated free scope. It should be
+      worded as an estimate, or dropped.
+
+(c) THE IMPORTANT CORRECTION. "By the standard symmetry argument" is not enough with O alone.
+    - O has no improper elements, and the doublet at k* is E1/2 (or E5/2), with
+      T1 x T1 containing A1 once.
+    - So O allows a linear, isotropic term alpha dk.sigma at k*: a Weyl point, as at the
+      "Kramers-Weyl" points of chiral crystals.
+    - It is absent here only because of I*K (item 2).
+    - Test (perturb.py, weyl.py, weyl2.py): add O x T x U(1) invariant second-neighbour hops
+      of strength delta. I verified that they are O-invariant (residual 8e-16) and Hermitian.
+      - The degeneracy at k* survives; it is protected by the 2O irrep.
+      - 16 of the 28 I*K-breaking terms give alpha = (2/3) delta, isotropic, linear in |dk|.
+        The other 12 split the pairs away from k* but give alpha = 0 at k* in this sector.
+      - With delta = 0.005, the band minimum moves off k* to a shell |dk| = 0.072 / a, with
+        m* alpha = 0.077. The drop is E(k*) - Emin = 1.2e-4, against m* alpha^2/2 = 1.3e-4.
+      - With delta = 0.02, the shell is at |dk| = 0.24.
+    - Relative to the kinetic term, the Weyl term is of order m* alpha w. It GROWS with the
+      packet size w.
+    - So for the "much larger than the grid" regime the claim needs I*K exactly. Any
+      I*K-breaking perturbation, however small, changes the long-wavelength theory. The packet
+      then sees a shell of minima, and spin is locked to momentum.
+    - This was anticipated in the C17 exploration README ("in O without inversion, the E1/2
+      doublet allows a k.sigma term"), but the C18 note does not address it.
+
+Requested changes:
+  - claim_scope and Result item 4: replace "by the standard symmetry argument" with "by the
+    symmetry argument using O (isotropy) and the antiunitary I*K of the supplied Hamiltonian
+    (no dk.sigma term: every band 2-fold)".
+  - Add to "Not claimed" and to N6/N7: "O alone allows an isotropic Weyl term alpha dk.sigma
+    at k*; generic O x T x U(1) invariant second-neighbour hops generate it (alpha = 2/3 delta
+    here), and then the minimum becomes a shell at |dk| ~ m* alpha, which dominates for
+    w > 1/(m* alpha)".
+  - Replace "The lattice enters only through quartic anisotropy and spin-orbit terms, of
+    relative size (a/w)^2" with: "In the free problem the lattice enters only through the
+    quartic anisotropy, of relative size about (a/w)^2. Spin-orbit coupling is absent by I*K;
+    in external fields it enters through the SU(2) Berry curvature (|f| = 6e-4 a^2 at k*)."
+  - "At this order spin and orbital motion decouple": they decouple at all orders in the free
+    I*K-symmetric problem; only SO(3)_orbit is broken, at quartic order.
+  - Status line and N4 say "Part 1 and Part 4 are exact". In the note's numbering, item 4 is
+    the long-wavelength argument and item 5 is the embedding. Please write "items 1 and 5
+    (runner Parts 1 and 4) are exact; item 4 is an argument resting on items 2-3 and on I*K".
+
+-------------------------------------------------------------------------------
+ITEM 6  Embedding (note item 5)                      VERDICT: CONFIRMED WITH CORRECTIONS
+                                                     (twisted action; ranges)
+-------------------------------------------------------------------------------
+Own labels: on-site edge types, and (corner, direction) for link halves (embed.log).
+  - Two label orbits, both free, with 24 + 24 labels.
+  - The 5^3 block has point-orbit sizes 1, 6, 6, 8, 8, 12, 12, 24, 24, 24.
+    - Exactly three of these orbits are free, with types (2,1,0), (2,1,1) and (2,2,1).
+    - The 3^3 block has none, so 5^3 is the smallest site-centred cube that works.
+    - The note's (1,2,0) and (1,2,2) are two of the three.
+  - The placement is bijective and equivariant. The 77 spectator sites are O-closed.
+  - Equivariant placements are not unique: there are 24 x 24 base choices (times the choice
+    of orbits).
+  - The claim that the untwisted rotation is a fine-site permutation times on-block Clifford
+    gates is correct. The C17 check found that every factor of U_R is on-site: on-site CZ,
+    single-qubit Z fixes, and R-corrections that are single-qubit Z's on halves. The
+    embedding preserves this because U_R permutes labels as (v,l) -> (Rv, Rl).
+
+Corrections:
+  (a) The spin-1/2 class, and the E1/2/E5/2 labels of item 4, need the TWISTED action
+      V = U W^{w1}.
+      - W contains exp(-i pi R_l/4), and R_l = Z Z acts on the two halves of a link, which lie
+        in ADJACENT blocks.
+      - So V is NOT a fine-site permutation times on-block Cliffords. It also has two-block,
+        diagonal, non-Clifford gates.
+      - Please state this. The on-site alternative W' proposed in the C17 check, which was not
+        run, would make the twist on-block.
+  (b) Term ranges in fine units. The code's terms have finite range, Chebyshev extent, upper
+      bounds from supports, depending on the equivariant base choice:
+      - B_q: 2-4;
+      - on-site hops: 3-4;
+      - repetition terms R: 2-9;
+      - link hops: 5-9;
+      - plaquette loops: 5-9.
+      The embedded model has range up to 9 fine spacings and period 5. It is worth stating, and
+      the runner prints no range.
+  (c) Link-half repetition across blocks causes no equivariance problem. Rotations about a
+      block centre map blocks to blocks and halves to halves. Each R term couples one half in
+      each of two neighbouring blocks.
+  (d) The printed "consequences" line in the runner is not tested. Only the combinatorics is
+      tested. The note should call the consequence "follows from the C17 structure of U_R".
+
+-------------------------------------------------------------------------------
+ITEM 7  Wording, scope, prior art, C17 correction     VERDICT: CONFIRMED WITH CORRECTIONS
+-------------------------------------------------------------------------------
+C17 correction:
+  - The old C17 text said "with inter-site hopping in the scanned family the band minimum
+    leaves the symmetric momenta". C17's scan.py compared the minimum only with Gamma and R,
+    so the C18 diagnosis is accurate.
+  - But C17's DEFAULT flux is tube = 0. For tube 0 (tube0.log: t1 = -1, triangle 0, four
+    parameter sets):
+    - the minimum is a two-point star +-(pi/2)(1,1,1) in my gauge;
+    - each point is 2-fold, so there are 4 states with a valley label;
+    - there is no fixed momentum.
+  - So the C18 sentence "The minimum sits at the affine-fixed momentum k*" must say "for tube
+    flux pi". At C17's default flux there is no single doublet.
+  - The updated C17 claim_scope already says "for tube flux pi". Keep the C18 sentence
+    consistent with it.
+  - The C17 loop README ("Large-fermion view") says the minima sit at all 8 momenta
+    (+-pi/2)^3 for tube pi. That is wrong (only one of +-k* is the minimum) and stale.
+
+Title and headline. "is one isotropic spin-1/2 doublet" needs the scope:
+  - "(supplied I*K-symmetric hopping, tube flux pi, t1 = -1 with triangle 0, lam != 0)";
+  - and "spin-1/2" means a 2-dim spinorial 2O irrep (item 4).
+  - Suggested title: "In the supplied pi-flux corner model the band minimum is a single
+    isotropic spinorial doublet at the affine-fixed momentum; the 48-qubit sites embed in
+    one-qubit-per-site blocks".
+
+N1 should list:
+  - lam = 0 (valley pair);
+  - the opposite sign sector (G3/2 quartet);
+  - tube 0 (two-valley star);
+  - I*K-breaking dynamics (Weyl shell).
+
+Prior art to add:
+  - Kramers degeneracy from inversion times time reversal: Elliott, Phys. Rev. 96, 266 (1954).
+  - Non-abelian Berry curvature of Kramers-degenerate bands: Culcer, Yao and Niu, PRB 72,
+    085110 (2005); Shindou and Imura, Nucl. Phys. B 720, 399 (2005).
+  - Linear k.sigma "Kramers-Weyl" points at high-symmetry momenta of chiral (inversion-free)
+    groups: Chang et al., Nat. Mater. 17, 978 (2018). Multifold chiral fermions: Bradlyn
+    et al., Science 353, aaf5037 (2016).
+  - The G3/2 quartet in the other sign sector: Luttinger, Phys. Rev. 102, 1030 (1956).
+  - The existing Wen PSG, staggered-fermion and magnetic-space-group citations are fine.
+
+Things I did not verify: the C17 qubit runner at flux 1011 (the note cites the loop-pack log).
+
+Runner hygiene (non-blocking):
+  - Part 3 hard-codes E = -3.5556 and does not check the momentum of the doublet.
+  - The label check depends on the GF(2) free-variable choice of the lift.
+  - Part 2 starts from a 16^3 grid with 16 restarts; that is adequate, as my denser search
+    confirms.
+
+SUMMARY
+  1 CONFIRMED WITH CORRECTIONS: unique 2-fold minimum at +-k* in all 5 + 168 + 6 sets in the
+    claimed sector.
+    - It fails at lam = 0, in the opposite sign sector (G3/2 quartet) and at tube 0.
+    - k* is located only up to gauge.
+    - "2.8 t2" is 2 sqrt2 |t2| here, and not general.
+  2 CONFIRMED: degeneracy splitting below 8e-15. The cause is I*K with (I*K)^2 = -1.
+    - This is a symmetry of the supplied hopping family, not of O x T x U(1).
+    - 28 of 36 symmetrized second-neighbour terms break it.
+  3 CONFIRMED: direct unitary equivalence to 1.6e-16. The fixed-point argument is exact.
+    1/m* = 0.043224 (spread 5e-10). Quartic anisotropy 5.06e-4 at dk = 0.1, scaling as dk^2.
+  4 CONFIRMED WITH CORRECTIONS: the ground doublet on L = 4 (and L = 8) is the k* pair and is
+    a 2-dim spinorial 2O irrep.
+    - E1/2 vs E5/2 is fixed only by the lift (both lifts are valid for either twist).
+    - The relative statements (it flips with lam; it matches the C17 cluster doublet) are
+      convention-free.
+  5 CONFIRMED WITH CORRECTIONS (substantive):
+    - H_eff = E0 + dk^2/2m* times 1_2 is exact in form within the I*K family.
+    - The "standard symmetry argument" with O alone allows an isotropic Weyl term
+      alpha dk.sigma. Generic O x T x U(1) perturbations generate it (alpha = 2/3 delta), and
+      it dominates the large-packet limit.
+    - The note must state the I*K premise.
+    - The "spin-orbit (a/w)^2" sentence is unsupported as written. The free problem has none;
+      the field-induced term comes via the SU(2) Berry curvature, |f| = 6e-4 a^2.
+  6 CONFIRMED WITH CORRECTIONS: the placement checks out, and 5^3 is minimal.
+    - The twisted action W is two-block and non-Clifford, so the "on-block Clifford" statement
+      holds only for the untwisted U.
+    - Term ranges are up to 9 fine spacings.
+  7 CONFIRMED WITH CORRECTIONS: the C17 correction is justified for tube pi only (C17's
+    default tube 0 has a two-valley minimum). Title and scope qualifiers are needed. Prior
+    art to add: Elliott, Culcer-Yao-Niu, Kramers-Weyl, Luttinger.

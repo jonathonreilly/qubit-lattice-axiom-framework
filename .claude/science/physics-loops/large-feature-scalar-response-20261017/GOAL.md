@@ -1,0 +1,3 @@
+# Target contract
+
+Quantified domain: supplied 12-corner Bloch family, fixed flux and ordered chamber in source note. Derive interactions from gaps and a test of scalar response. Success: explicit inverse and finite-path response, with independent determinant check. No observed mass or coupling as input. Accepted matrix is a candidate, not derived axioms. Closest result PR9671 gives forward bands and imposed one-qubit blocks; new target is inverse reconstruction and response consistency. Other open PRs9672–9680 concern finite endpoint transport, not this matrix. Main source search spectral/reconstruction/gap-ratio and corner/scalar found no matching inverse. This is not a claim of global literature novelty.

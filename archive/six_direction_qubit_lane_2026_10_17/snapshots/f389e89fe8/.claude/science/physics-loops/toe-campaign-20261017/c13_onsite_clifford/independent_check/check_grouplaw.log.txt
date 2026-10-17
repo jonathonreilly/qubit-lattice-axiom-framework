@@ -1,0 +1,18 @@
+orbit4 sector(0, 0, 0): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+orbit4 sector(1, 1, 1): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+orbit6 sector(0, 0, 0): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+orbit6 sector(1, 1, 1): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+orbit12 sector(0, 0, 0): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+orbit12 sector(1, 1, 1): admissible counts per rotation {512: 24}; same set for all R: True; equals rule (ee')_+a=(ee')_-a: True
+(4, (0, 0, 0)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}
+(4, (1, 1, 1)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}
+(6, (0, 0, 0)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}
+(6, (1, 1, 1)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}
+(12, (0, 0, 0)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}
+(12, (1, 1, 1)): lift choices (C4 x C3) = 512 x 512: {'24 honest': 1024, 'order>48': 256000, '48 other kernel': 2048, '48 with -1 (fermion parity)': 3072}
+   C2-lift squares in consistent groups: {(24, 'C2axis', '+1'): 3072, (24, 'C2edge', '+1'): 6144, (48, 'C2edge', '+1'): 12288, (48, 'C2axis', '+1'): 18432, (48, 'C2edge', '-1'): 24576}

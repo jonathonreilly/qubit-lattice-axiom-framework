@@ -1,3 +1,5 @@
+> Historical route: retired from the active emergent-electron campaign. Exact prior source and evidence are archived in `archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json`. The canonical bounded encoding result remains valid within its stated scope; historical spin-identification claims are not adopted.
+
 # C11: site-local realization of the BKSF codes
 
 - `siteaction.py`: read naively as three axis qubits per site (site v owns its edges (v,+a)), the BKSF codes

@@ -1,0 +1,258 @@
+INDEPENDENT CHECK -- corner-fermion qubit code (C17)
+====================================================
+Note:    docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Runners: scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py      (18/18 PASS, 98 s)
+         scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py              (7/7 PASS, 17 s)
+
+Provenance: fresh-context agent, same model family as the author (Claude). Not an
+independent model family or a human referee. I wrote all code here from the note's text
+and read the runners only after my results were in. I did not read the author's
+exploration files in c17_corner_fermion/ (band.py, cluster.py, ...). I did not edit the
+note or the runners, and I did not commit.
+
+Files (this directory)
+  geom.py, ccode.py           own corner graph, BKSF hops, stabilizers, Pauli algebra with phases
+  check_code.py   -> check_code.log    item 4
+  rot.py          -> rot.log           item 1 (writes U_L4.pkl; run it before pair/dress/bondc2.py;
+                                       SEED=n uses a random per-corner-type ordering)
+  pair.py         -> pair.log          item 2
+  dress.py        -> dress.log         item 2 (dressed creators)
+  bondc2.py       -> bondc2.log        extra: half-turns about bond-centred axes (qubit level)
+  fermion.py      -> fermion.log       item 3
+  fermion_minus_twist.py -> .log       item 3 (twist (-i)^{w1} instead of i^{w1})
+  spacegroup.py   -> spacegroup.log    extra: rotation-translation PSG commutators
+Everything runs at L = 4 in under 30 s per script.
+
+My conventions differ from the runners' in several ways: hop orientation by lexicographic
+displacement, ordering by sorted displacement vectors (plus two random per-type orderings),
+my own qubit labels, and my own face cycles. All results agree with the runners, after the
+convention maps noted under item 3.
+
+-------------------------------------------------------------------------------
+ITEM 1  Genuine O action                                         VERDICT: CONFIRMED
+-------------------------------------------------------------------------------
+Own construction. U_R = (R-correction) (Z fixes) (CZ network) P_R, where:
+  - CZ(l@c', k@c') is applied for every pair of edges at a corner c' whose relative order
+    differs between the canonical ordering and the R-pushed one;
+  - one Z per edge whose sign comes out wrong;
+  - the R-correction comes from my own GF(2) coboundary solve.
+
+Results:
+  - hop images: U_R A_{jk} U_R^dag = A_{Rj,Rk} exactly. 0 failures in all 24 x 2304 cases,
+    with no sampling.
+  - stabilizer images: every one of the 3392 generators maps to a generator with exactly
+    the + sign, for all 24 R. 0 failures, no sampling. (The runner samples 400 per R.)
+  - before the R-correction: 243/576 products are exact. The leftover is always a product
+    of R terms (up to 384 of them), with no CZ leftover.
+  - link orbits: 32, all free (size 24). The cocycle is a coboundary on every orbit.
+  - exact group law after the correction.
+    - Every operator here has the canonical form U = D P with
+      D|y> = (-1)^{q(y)}|y>, q quadratic over GF(2), and no global phase.
+    - Equality of (pi, CZ set, Z set) is therefore an exact operator identity on the whole
+      2^3072-dimensional space, since a degree-<=2 multilinear GF(2) polynomial is fixed by
+      its values.
+    - Result: U_a U_b = U_ab for 576/576 pairs, and U_E = I.
+    - This is a stronger certificate than the runner's. The runner's method is also valid,
+      though: agreement on all single-qubit Paulis gives equality up to a phase, and the
+      common fixed point |0...0> removes the phase.
+  - locality: all CZ pairs are on-site, the Z fixes are single-qubit, and the R-corrections
+    are single-qubit Z's on link halves. So U_R is (on-site diagonal Clifford) x (site
+    permutation), as claimed. Restricted to the fixed site, it gives a linear rep of O on
+    that site's 48 qubits.
+  - robustness: the same holds (576/576) for two random translation-invariant orderings
+    (SEED=1, 2).
+
+Wording correction (minor, in the "Result 2" bullet on free orbits):
+  "No rotation fixes a link: a link midpoint has a quarter-integer coordinate" is not enough
+  on its own.
+  - A link midpoint has coordinates (integer, half-odd, quarter-odd).
+  - The quarter-odd coordinate forces a fixing rotation to fix that axis with sign +1.
+  - The half-odd coordinate then excludes the C2/C4 about that axis. On the L-torus this
+    step needs L even: for odd L, the C2 about the quarter axis fixes links whose half
+    coordinate is L/2.
+  - Please state both coordinates and "L even".
+
+-------------------------------------------------------------------------------
+ITEM 2  Pair test                                                 VERDICT: CONFIRMED
+                                                    (scope caveat: site-centred axes)
+-------------------------------------------------------------------------------
+Method:
+  - Creators are my own random hop strings. Start points q are drawn from 7 positions per C2
+    in the box [-1,1]^3, including an on-site pair at the origin site. Paths are 4 per q:
+    random-weight Dijkstra, with and without random waypoints. Paths are built in unwrapped
+    coordinates, so S^dag S^R is a contractible loop.
+  - lambda is defined by S^dag (U S U^dag) = lambda * g, with g in the stabilizer group (the
+    membership test tracks phases). This gives U S|psi> = lambda S U|psi> for every code
+    state psi. It is a relative eigenvalue, independent of how U acts on the 8-dimensional
+    logical space, so the vacuum/logical subtlety is handled correctly.
+
+Results, under the corrected U (252 creators, all clean: each flips exactly B_q and B_Rq,
+checked against every generator):
+  - lambda = +1 for all 3 axis C2;
+  - lambda = -1 for all 6 edge C2;
+  - no dependence on q, on the path, or on the ordering (default, SEED=1, SEED=2).
+  - Twisted (lambda_V = lambda_U (-1)^{w1}): +1 for all nine C2.
+
+Checks of the twist (analytic, using the exact facts verified in item 1):
+  - The twist factor is W S W^dag = S (iB_q)(iB_Rq), which is -1 relative to the vacuum.
+  - W commutes with every U_g, because U maps the sets {B} and {R} to themselves with + sign.
+  - W^2 = (-i)^{1536} prod B prod R = I exactly, and prod B prod R = I was verified.
+  - So V_g = U_g W^{w1(g)} is an exact linear O action, and it is not merely projective.
+  - The w1-odd elements are the 6 C4 and the 6 edge C2.
+
+Creator independence:
+  - 216 random local dressings S' = E S E^R (E a random 3-qubit Pauli on q's site) give the
+    same lambda in every case.
+  - So do creators whose endpoints are repetition defects instead of corner charges
+    (E = X on a link half).
+  - Analytic reason: the two commutation signs [E, S^R] and [E^R, S] are equal under U.
+  - Creators carrying a winding loop either give the same lambda, or have S^dag S^R outside
+    the stabilizer group (logical), so they are inadmissible. The runner skips such cases
+    silently (`if r is None: continue`); it should count them.
+
+Corroboration of the lambda = theta*eta premise in this model:
+  - The independently computed fermion-level PSG (item 3) gives axis C2^2 = -1 and edge +1.
+  - With theta = -1 this reproduces the qubit-level lambda's.
+  - It also does so for bond-centred half-turns (below): qubit lambda = -1 and PSG (R T_a)^2 = +1.
+  - The note may state that the conditional relation is cross-checked this way here.
+
+NEW CAVEAT (recommend adding to the interpretation and to N6/N7). The note says "the
+fermion's half-turn signs are those of a spin-1/2 particle". That holds only for half-turns
+about axes through a site:
+  - Bond-centred axis half-turns, V = U_R T_a with R a = -a, R an axis C2:
+    - qubit pair test: lambda = -1 (bondc2.log), so eta = +1;
+    - PSG: (R T_a)^2 = +1.
+    - These are w1-even, so the W twist leaves them at +1, i.e. not spin-1/2-like.
+  - Gauge- and twist-invariant commutator: on the fermion,
+    G_{C4z} T_z G_{C4z}^-1 T_z^-1 = -1 (spacegroup.log, default flux). For a spin-1/2
+    particle it is +1.
+  - So the full space-group fractionalization is not that of a spin-1/2 particle. It is a
+    staggered/magnetic-translation-like pattern. The note's claim is about O about one site,
+    and the claim text itself stays correct, but the interpretation should say this.
+  - Status of the inputs: the qubit-level result here is exact. The PSG commutator is exact
+    at the fermion level (L = 4).
+
+-------------------------------------------------------------------------------
+ITEM 3  Fermion level                                 VERDICT: CONFIRMED WITH CORRECTIONS
+                                                      (conventions/labels)
+-------------------------------------------------------------------------------
+Own code: GF(2) gauge-field solve, PSG gauge solve, quaternion 2O, SU(2) characters.
+  - All 16 uniform flux patterns:
+    - each is consistent, and the O and translation PSG exist;
+    - square pi gives C2axis^2 = -1, C4^4 = -1, C2edge^2 = +1;
+    - square 0 gives all +1;
+    - translations commute iff square = plaquette flux.
+  - Untwisted: no sign choice makes the action a linear rep of O or of 2O, consistent with
+    the class w2 + w1^2. With i^{w1}, and also with (-i)^{w1}, it is a linear 2O rep with
+    -1 -> -I, decomposing as E1/2 + E5/2 + 2 G3/2.
+  - Real on-site hopping: the lowest level is G3/2 or E1/2+E5/2 (gap 1.2679 or 3.4641).
+    - General reason, which the note/runner should state instead of only testing t1 = +-1:
+      complex conjugation commutes with any real O-invariant H and with the real G_R. It
+      maps the i^{w1}-twisted rep to the (-i)^{w1}-twisted rep, i.e. tensors by A2, so it
+      swaps E1/2 and E5/2.
+  - Chiral term: the isolated doublet has gap 2.5434, as claimed.
+
+Conventions to state explicitly:
+  - (a) The runner uses H = -t1 sum u c^dag c and puts i*lambda on H[next, cur] of
+    outward-oriented triangles. My H = +t1 sum u ... with i*lambda on H[cur, next]
+    reproduces the note at (t1, lambda) -> (-t1, -lambda).
+    - The sign of t1 is physical, given the triangle flux: t1 -> -t1 is equivalent to
+      triangle flux 0 <-> pi.
+    - So the note should give H with its signs and orientation, not just "t1 = -1, chiral -0.5".
+  - (b) The E1/2 vs E5/2 label is convention-dependent. With the opposite twist (-i)^{w1}
+    (equivalently W^-1 instead of W, an equally exact action), the same ground doublet is
+    E5/2 (fermion_minus_twist.log).
+    - Requested wording: "a single isolated spinorial doublet (E1/2 for the twist i^{w1}
+      with the stated signs; E5/2 for the opposite twist or the opposite chiral sign)".
+    - The intrinsic statement is "an isolated two-dimensional spinorial irrep".
+
+Optional addition: under the untwisted U, the class restricted to T and to each C4 is
+already w2. This is because w1^2 vanishes on T and on Z4, where H^*(Z4;Z2) has x^2 = 0;
+that is why C4^4 = -1 without the twist. The twist changes only the edge-C2 signs.
+
+-------------------------------------------------------------------------------
+ITEM 4  Code validity                                              VERDICT: CONFIRMED
+-------------------------------------------------------------------------------
+All checks are full, with no sampling:
+  - 3072 qubits, 48 per site;
+  - 3392 generators, all Hermitian, pairwise commuting (0 failures over all pairs);
+  - rank 3069, no -I or iI, so k = 3;
+  - hops anticommute iff they share exactly one corner (all 2304^2 pairs);
+  - each hop anticommutes with exactly the B's at its ends and commutes with R and all loops;
+  - T-junction theta = -1 over all 120 ordered triples at a corner;
+  - prod B prod R = I;
+  - loop operators are independent of start point and orientation.
+The runner samples the commutation and hop-algebra checks. Making them full costs ~5 s, so
+I recommend doing so.
+
+-------------------------------------------------------------------------------
+ITEM 5  "Why corners"                                 VERDICT: CONFIRMED WITH CORRECTIONS
+                                                      (labelled as motivation: correct)
+-------------------------------------------------------------------------------
+What is sound:
+  - A Clifford, hop-preserving realization gives a C4-fixed vertex a local phase in
+    {+-1, +-i}, so u^4 = 1, while w2 needs C4-lift^4 = -1.
+  - Corners lie only on edge-C2 axes. There u = +-i is allowed, which gives a lift-square
+    of -1.
+
+What is false: "So the corners are the smallest site-local orbit that avoids the C4 axes."
+  - The octant positions v + (+-1,+-1,+-1)/4 form a site-local orbit of size 8 < 12.
+  - They lie only on C3 axes, so they avoid the C4 axes.
+  - C3 carries no Z2 class (H^2(Z3;Z2) = 0), so the C4 argument does not exclude them.
+  - Their spinorial shells (E1/2+E5/2+G3/2 or 2 G3/2) are listed in the companion note.
+Requested wording: "the corners are the smallest site-local orbit lying only on C2 axes
+(avoiding both C4 and C3 axes); the octant orbit (8 positions, on C3 axes) also avoids the
+C4 obstruction and is not treated". Also make N1 say "octant positions" rather than only
+"cube centres".
+
+-------------------------------------------------------------------------------
+ITEM 6  Wording / scope / prior art                   VERDICT: CONFIRMED WITH CORRECTIONS
+-------------------------------------------------------------------------------
+The claim_scope is careful, and nothing like "electron" is claimed. Requested changes:
+  1. Title and headline: "emergent fermion carries the spin-1/2 class" reads as a statement
+     about the genuine (term-preserving Clifford) action U, under which the class is
+     w2 + w1^2. Qualify it, e.g. "... carries w2 + w1^2, and the spin-1/2 class under a
+     U(1)-twisted action".
+  2. Say that V = U W^{w1} is non-Clifford and not on-site. W contains the two-site factors
+     exp(-i pi R_l/4) on halves at neighbouring sites.
+     - Analytic suggestion, not run: an on-site alternative is
+       W' = prod_q e^{-i pi B_q/4} prod_halves e^{+i pi Z_h/4} prod_{odd sites} prod_c B_c.
+       - W'^2 = prod B prod R = I.
+       - W' commutes with U, since rotations about the origin preserve sublattice parity.
+       - W' maps each number-conserving hop term to itself on R = +1.
+       - W' gives the same -1 on two-charge states, because a creator has an even number of
+         link steps and q, Rq lie on the same sublattice.
+  3. Add the site-centred-only caveat from item 2: bond-centred axis half-turns give eta = +1,
+     and C4z T_z C4z^-1 T_z^-1 = -1 on the fermion.
+  4. Item 3 conventions: the H sign and orientation, and the E1/2/E5/2 twist dependence.
+  5. The "smallest orbit" sentence (item 5), and the free-orbit wording (item 1).
+  6. "No spin and no 2O action is put in anywhere": add "(the twist is a chosen U(1)
+     charge rotation on the w1-odd elements)".
+  7. Prior art: add the standard example of spinorial rotation reps emerging from pi-flux
+     cubic hopping, namely staggered fermions:
+     - Kogut-Susskind PRD 11, 395 (1975);
+     - Golterman-Smit NPB 245, 61 (1984);
+     - Kilcup-Sharpe NPB 283, 493 (1987).
+     The companion bare-permutation note already cites some of these. Also Levin-Wen PRB 67,
+     245316 (2003) for 3D lattice fermions and the T-junction.
+  8. Caveats already present and correct:
+     - the twist is a realization choice;
+     - a mobile doublet is not shown;
+     - 48 qubits per site.
+     The L = 4 scope is stated. The L = 6 rerun is only "recorded in the loop pack", and I
+     did not verify it.
+  9. Runner hygiene:
+     - Runner 1: make the commutation, stabilizer-image and R-syndrome checks full; count or
+       fail, rather than skip, non-member creators.
+     - Runner 2: replace the t1 = +-1 test of "never a single doublet" with the
+       conjugation argument, or add it alongside.
+
+SUMMARY
+  1 CONFIRMED: exact operator-level group law, independent construction, 576/576.
+  2 CONFIRMED: lambda axis +1 / edge -1 under U; all +1 under V; independent of creator.
+    Plus a new space-group caveat.
+  3 CONFIRMED WITH CORRECTIONS: H-sign convention; E1/2 vs E5/2 depends on the twist sign.
+  4 CONFIRMED: k = 3, no -I, theta = -1.
+  5 CONFIRMED WITH CORRECTIONS: the octant orbit (8) also avoids the C4 axes.
+  6 CONFIRMED WITH CORRECTIONS: title qualification, W non-on-site, site-centred-only,
+    prior art.

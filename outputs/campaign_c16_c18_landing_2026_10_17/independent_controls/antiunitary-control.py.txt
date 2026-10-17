@@ -1,0 +1,31 @@
+import runpy,numpy as np,itertools as it,json,pathlib
+p=pathlib.Path(__file__).parent;g=runpy.run_path(str(p/'bloch_controls.py'));Q=g['Q'];qi=g['qi'];E=g['E'];u=g['u'];zero=g['zero'];ei=g['ei'];ek=g['ek'];tri=g['tri']
+def solve(M):
+ rows=[]
+ for j,(a,b,d) in enumerate(E):
+  qa=tuple(M@Q[a]);qb=tuple(M@Q[b]);dd=tuple(M@d);jj=ei[ek((zero,qa),(dd,qb))];r=np.zeros(16,dtype=np.uint8);r[a]^=1;r[b]^=1;r[12:15]=np.array(d)%2;r[15]=u[j]^u[jj];rows.append(r)
+ A=np.array(rows);r=0;ps=[]
+ for c in range(15):
+  nz=np.where(A[r:,c])[0]
+  if not len(nz):continue
+  j=r+nz[0];A[[r,j]]=A[[j,r]]
+  for j in range(len(A)):
+   if j!=r and A[j,c]:A[j]^=A[r]
+  ps.append(c);r+=1
+ assert not np.any(A[r:,15]);v=np.zeros(15,dtype=np.uint8)
+ for j,c in enumerate(ps):v[c]=A[j,15]
+ W=np.zeros((12,12),dtype=int)
+ for a,q in enumerate(Q):W[qi[tuple(M@q)],a]=(-1)**int(v[a])
+ return W,v[12:]
+I=-np.eye(3,dtype=int);W,s=solve(I);assert not any(s);assert np.array_equal(W@W,-np.eye(12,dtype=int))
+C={}
+def add(part,d,a,b,z):
+ key=(part,tuple(d));C.setdefault(key,np.zeros((12,12),complex))[b,a]+=z
+for j,(a,b,d) in enumerate(E):
+ z=-((-1)**int(u[j]));part=0 if d==zero else 1;add(part,d,a,b,z);add(part,tuple(-v for v in d),b,a,z)
+for a,b in tri:
+ z=1j*((-1)**int(u[ei[ek((zero,Q[a]),(zero,Q[b]))]]));add(2,zero,a,b,z);add(2,zero,b,a,-z)
+for (part,d),A in C.items():assert np.array_equal(W@C[(part,tuple(-v for v in d))].conj()@W.T,A)
+mutant_fail=sum(not np.array_equal(C[(part,tuple(-v for v in d))].conj(),A) for (part,d),A in C.items());assert mutant_fail
+out={'exact_integer_complex_Fourier_coefficients_checked':len(C),'parameter_components':['t1','t2','chiral_lambda'],'inversion_PSG_shift':s.tolist(),'antiunitary_square':'-I','identity':'W conjugate(C[-d]) W^T = C[d] for each Laurent coefficient; hence all continuous k and all real parameters','mutation_plain_conjugation_failures':mutant_fail,'consequence':'all Bloch eigenvalues paired; isolated rank-two effective Hamiltonian scalar, not exactly quadratic'}
+(p/'antiunitary-control.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))

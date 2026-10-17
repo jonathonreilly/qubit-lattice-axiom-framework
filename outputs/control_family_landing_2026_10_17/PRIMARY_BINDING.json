@@ -1,0 +1,7 @@
+{
+  "path": "scripts/control_output_family_2026_10_17.py",
+  "sha256": "9ca5641b639a33733755b20854c6bafc4f8563951e4a577b24977e8115f9bfa6",
+  "timeout_seconds": 120,
+  "scope": "Finite corroboration only; independent analytical proof review controls the conditional claims.",
+  "input_count": 284
+}

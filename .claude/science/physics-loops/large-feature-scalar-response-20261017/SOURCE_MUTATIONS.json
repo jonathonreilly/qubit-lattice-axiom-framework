@@ -1,0 +1,29 @@
+{
+  "source_sha256": "2050cf84738d979e3f152ffb875583bcc31caf1243fa1600e78ab076558ec10b",
+  "cases": {
+    "matrix_chiral_coefficient": {
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-pwhv287i/scripts/test.py\", line 113, in <module>\n    check('symbolic characteristic polynomial', sp.expand(actual-fact)==0)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-pwhv287i/scripts/test.py\", line 93, in check\n    raise AssertionError(name)\nAssertionError: symbolic characteristic polynomial\n",
+      "mutation": [
+        "amp=sp.I*c*(-1)**u[ekey[(q0,r0,Z0)]]",
+        "amp=2*sp.I*c*(-1)**u[ekey[(q0,r0,Z0)]]"
+      ]
+    },
+    "inverse_normalization": {
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-y9_z5yil/scripts/test.py\", line 116, in <module>\n    check('inverse onsite', sp.simplify((d2-d1-d3)/3-a)==0)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-y9_z5yil/scripts/test.py\", line 93, in check\n    raise AssertionError(name)\nAssertionError: inverse onsite\n",
+      "mutation": [
+        "(d2-d1-d3)/6-a",
+        "(d2-d1-d3)/3-a"
+      ]
+    },
+    "finite_curvature_response": {
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-qv24470g/scripts/test.py\", line 163, in <module>\n    check(f'finite curvature ray {scale}',np.allclose(curvature(scale*p,.005),C/scale,atol=1e-8))\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/spectral-mutant-qv24470g/scripts/test.py\", line 93, in check\n    raise AssertionError(name)\nAssertionError: finite curvature ray 0.7\n",
+      "mutation": [
+        "scale*C,atol=1e-8",
+        "C/scale,atol=1e-8"
+      ]
+    }
+  }
+}

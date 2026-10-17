@@ -1,0 +1,17 @@
+L=4: 768 vertices, 2304 edges (1536 on-site)
+{'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1]}
+{'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1]}
+{'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [-1]}
+{'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [-1]}
+{'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1]}
+{'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1]}
+{'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [-1]}
+{'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [-1]}
+{'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+{'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+{'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+{'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+{'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+{'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+{'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+{'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}

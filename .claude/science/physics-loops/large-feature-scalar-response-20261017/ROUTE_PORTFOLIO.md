@@ -1,0 +1,7 @@
+# Selection
+
+Selected: observation-facing spectral inverse of the provisional extended corner model. Previously forward spectrum/embedding existed, but the inverse and finite scalar-response map were not in the inspected source. Main searched f389e89fe84e2584ee85047f08da88c1443eb163 with spectral/reconstruct, gap-ratio and corner/scalar patterns. Nearby unrelated generic spectral reconstructions and condensed-matter inverse tight-binding literature do not imply this specific inverse without its determinant. No broad novelty claim.
+
+Alternatives: uniform fine-site rule creating blocks (high-value but a new dynamics construction); stable self-bound excitation rather than wavepacket (requires a many-body binding mechanism); local cosmological matching of existing continuum twins (active earlier work; frozen static approximation has unsupplied intermediate boundary). This block tests interactions that an extended candidate could supply, instead of duplicating the embedding in PR9671. No route declared impossible.
+
+V1: user asks for useful tiny-grid/large-feature research, prior source supplies forward bands. V2: exact three-gap inverse and finite clock/ruler compatibility relation added. V3: inverse discharged only on explicit spectral chamber; physical bridge open. V4: couplings become reconstructible from spectral inputs with kinetic response reserved as discriminator. V5: not a relabeling of an already-landed calculation; closest proposal is the forward model. This is conditional support, not promotion.

@@ -1,0 +1,84 @@
+{
+  "scope": "Historical pins remain exact; original reviewer must confirm current parent transport separately. No claim promoted.",
+  "parent_candidate_base": "f389e89fe84e2584ee85047f08da88c1443eb163",
+  "mappings": [
+    {
+      "original_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "0e77defa8b2d2a3d8db2361179ba599586d0e05c12e42a71c3f61defa6740eb4"
+    },
+    {
+      "original_path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "735ec540842018f17ecde72b43d102f52dd76f9df65682eaaeec64498628c429",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/HOPPING_CONTROLLED_FINITE_OUTPUT_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "79c4b2867e6ce4a2e8039ce04390c4a8cca6c8e83819c6ad2561dbadafde5126"
+    },
+    {
+      "original_path": "docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "f8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/NOMINAL_BANDCENTER_CONVERTER_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "c92af90565e637ed30481a69f511b13b75eb09ec2175185c5546a109bed28478"
+    },
+    {
+      "original_path": "docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "f5ad73714d96536b965802e7bcb54c011f329e684d1ffd84e4e13fb4a37a429f",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/AUTONOMOUS_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "ba58b0d9363f8c3f3a62207ff408a76f78478ddb2a38e86d0c878eb2a249c111"
+    },
+    {
+      "original_path": "docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "2bda0ce48663763bdd3964b2a8bd9c6a160a45a32f7e56e94772cbfa98865d9d",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/SLOW_OUTPUT_LOCAL_RECORD_FINITE_WINDOW_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "502633b09f587570498478df8791433e334ee25fd19787857cb535bdb1434369"
+    },
+    {
+      "original_path": "docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "fe9c64423e058791d4c9d4f26aeecf2d1ba7d9240988691e7e535316829095f7",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/UNIFORM_SLOW_OUTPUT_RESOURCE_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "570065faf38bc65015bf285c54062592cc77775b31a8d34f92bfe909f7e417e2"
+    },
+    {
+      "original_path": "docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "49f53a9ab571c7784158d64a4b206e43e570b6c4252f294ec854015d99ba7027",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/SLOW_OUTPUT_COMPLETE_STATE_ONSET_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "1a6a825fa71e3a1a8c0d5e9bd3507afec7141db076a3b8b6233f9ceb9807a61a"
+    },
+    {
+      "original_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "feec1a7b2d48b758c86d5bdcde4ef0043a3b51ee09fb773024fbd7fd52d5bb38",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/WIDE_SLOW_OUTPUT_COMPLETE_STATE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "0e77defa8b2d2a3d8db2361179ba599586d0e05c12e42a71c3f61defa6740eb4"
+    },
+    {
+      "original_path": "docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "455a12b8f1bf33cc653402f87e555cd01aee9ffa49cca5cae4d2a9ecf1bb7412",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/CRITICAL_PRODUCT_SOURCE_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "e273e59d57c3155e5505fbea8736827332711fddc57c6857d307f6ff9ac43f44"
+    },
+    {
+      "original_path": "docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "9664da772e44fda23f62ba098d393f6b00676717e83fc75f2cce1caae126ae3c",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/THREE_SITE_PRODUCT_SOURCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "ce59c2adf3884ba9e01206e77185965dbbd4c75f656082fc8e7fb67f5656e405"
+    },
+    {
+      "original_path": "docs/STRUCTURED_SOURCE_TOLERANCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "original_sha256": "c045077bc3be227a737237d66327632865c2f5090f52f1a70deeed6a85f56d85",
+      "recovery_path": "outputs/common_source_offset_2026_10_17/landing/original-parents/STRUCTURED_SOURCE_TOLERANCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt",
+      "current_path": "docs/STRUCTURED_SOURCE_TOLERANCE_COMPLETE_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "current_sha256": "c6d471cf180a80897afec44968bb164dbf4f41495502eb3409c5900975a92b7f"
+    }
+  ],
+  "runner_sha256": "3626ccf47a66f6ab0fcab373d6498803d7e5e654891c738e19436b173a75446a"
+}

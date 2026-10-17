@@ -1,0 +1,11 @@
+built 24 U (9.1s); CZ counts [0, 1408, 2816, 3712, 4096, 5120, 5504, 6528, 6912, 8320, 9216, 9600, 10624, 11008] Z-fix counts [0, 512, 1024, 1536, 2048]
+hop images != rotated hop (all 24 x 2304): 0
+stabilizer generator images: not a generator: 0  not +stabilizer: 0 (12.6s)
+pairs exact before R-correction: 243 / 576; max leftover R count 384
+link orbits: 32 sizes [24]
+EXACT operator identities U_a U_b = U_ab after correction: 576 / 576
+U_E is the identity operator: True
+corrected: hop image failures (sample 1/7 of edges): 0
+all CZ on-site: True
+R-correction sizes per element: [0, 88, 88, 88, 88, 96, 112, 120, 120, 128, 128, 128, 136, 136, 144, 144, 160, 160, 160, 168, 168, 192, 192, 192]
+time 21.2s

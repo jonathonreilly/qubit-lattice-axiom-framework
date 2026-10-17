@@ -151,6 +151,8 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Paired finite PSG/shell corroboration for the supplied corner-code note.
+    'corner_fermion_qubit_code_genuine_cube_rotation_action_emergent_fermion_carries_spin_half_class_bounded_theorem_note_2026-10-17': ['scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py'],
     # Source-reviewed corrigendum artifact controls (2026-10-04); no status authority.
     'alpha_s_derived_note': ['scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py'],
     'bh_entropy_derived_note': ['scripts/frontier_bh_entropy_zero_mode_pure_vs_mixed_2026_09_30.py'],

@@ -1,0 +1,112 @@
+loop: toe-campaign-20261017
+branch: claude/toe-campaign-12h-20261017
+base: claude/toe-campaign-20261016-followup (PR #9658)
+window: 2026-10-16T23:40Z .. 2026-10-17T11:40Z
+mode: campaign
+delivery: milestone
+target: best-honest-status
+lane: N1 (electron as emergent excitation of neighbourhood conditions)
+active_block: C5 (next ranked; see OPPORTUNITY_QUEUE)
+blocks:
+  C1-one-qubit-nn-stabilizer-rules:
+    status: delivered_to_branch
+    note: docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py (PASS=20, ~1 min)
+    exact: ["axis/full: Chamon only", "Chamon charge ideal = 4 body-diagonal curve primes; no 3D-mobile charge; single defect immobile; lineons and planons; nonzero charge translation rank <= 2", "trivial/sign: single-label or cluster-type", "tori L=4,6: log2 dim 4L, sign-consistent"]
+    model: hard-support stabilizer reading (supplied)
+    independent_check: "CONFIRMED all four claims (fresh agent, own implementation: SU(2) lifts, exact curve-restriction certificates, GF(2) box algebra to n=12, Singular radical check); corrected overall sign (both signs valid on Z^3)"
+    trace_class: frontier_discovery
+  C2-two-qubit-site-stabilizer-rules:
+    status: delivered_to_branch
+    note: docs/TWO_QUBIT_SITE_SOLDERED_SPIN_STABILIZER_RULES_THREE_DIMENSIONAL_CHARGE_MOTION_FLIPS_A_FREE_LOCAL_VARIABLE_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/two_qubit_site_soldered_spin_stabilizer_rules_charge_motion_flips_free_local_variable_2026_10_17.py (PASS=17 with Singular, ~8 min)
+    exact: ["spin soldered, flavour fixed/soldered: exhaustive classification", "free-single-site-variable-preserving operators never move a charge along 3 independent vectors", "rules without free local variables: no 3D-mobile nonzero charge", "example Chamon(x)flavour-X-neighbours: R/((x+1)^2,(y+1)^2,(z+1)^2), 8 elementary basis charges, 256 classes including zero; elementary even-step moves flip flavour X; composites may have free-variable-preserving planar/line mobility"]
+    independent_check: "CONFIRMED A, C, D; refuted the first statement of B (missed E orbit), now in runner; 658 rules checked by own Ext^3 test; signs not independently tested"
+    trace_class: frontier_discovery
+  C3-three-axis-qubits-soldering-contrast:
+    status: delivered_to_branch
+    note: docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py (expected PASS=11 with Singular)
+    exact: ["unsoldered: 8 interleaved toric codes, bounded code dim, coherently 3D-mobile bosons", "soldered C4/C3-fixed class: 11 maximal sets; valid sub-rules of 10 have growing code dim (rank bound); the eight 3-orbit rules have no 3D-mobile charge; 187-family obstructed as in C2"]
+    independent_check: "A confirmed; B counts confirmed; found 23/31/187 unions contain -1 (not rules) -> claims restated via rank bound; 3-orbit rules valid; 187-family dichotomy confirmed"
+    trace_class: frontier_discovery
+  C4-fermion-search:
+    status: delivered_to_branch
+    note: docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py (expected PASS=9 (10 with --full); --full adds axis-C2 enumeration)
+    exact: ["alphabet lemma", "soldered rotation-fixed class: no bounded rule with free-variable-preserving motion", "Among the 36 supplied maximal unsoldered C4/C3-fixed rules selected by equal nonzero log2 code dimension at L=4 and L=6, every nonzero same-site charge pattern for which the radius-1 tube solver finds legs from 0 to 4e_x,4e_y,4e_z in the radius-5 box has T-junction sign +1. The finite rank selection is not an asymptotic classification of all bounded-dimension rules."]
+    independent_check: "CONFIRMED all three (own backtracking enumeration, full unsoldered survey, own statistics); wording fix on the 34927/70999 count"
+    trace_class: frontier_discovery
+  C5-framed-exploration:
+    status: exploratory (no note)
+    finding: "framed edge codes U_e = Z_e X_S (|S|<=2, symmetric): only bosons with straight/tube-confined legs; earlier box-solver 'fermions' were artifacts of crossing legs; statistics tool now tube-confined"
+  C6-bksf-rotation-orbits:
+    status: delivered_to_branch
+    note: docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py (PASS=8, ~30 s)
+    exact: ["720 orderings -> 60 codes, all fermionic (straight-leg T-junction -1, 20 triples), log2 dim 3", "O-orbits 4/6/12; no O-invariant code; max stabilizer D3 -> covariant stack needs >= 4 fermion species (body diagonals; S4 permutation rep 1+3)"]
+    independent_check: "CONFIRMED all five (own code; rotation applied by direct qubit permutation; L=4,5,6 dims); per-edge Clifford relabelings merge no orbits; reflections also leave no code invariant"
+  C7-condensation-attempt:
+    status: open observation (no note)
+    finding: "condensing f_0 f_k (k=1..3) in the 4-copy stack with generators A0_e Ak_e fails: hops of pair-bosons sharing a species anticommute on adjacent edges; disjoint pairings commute but no pairing of the 4 diagonals is O-invariant. Whether another operator choice allows an O-covariant single-fermion code is open."
+    trace_class: frontier_discovery
+  C8-bksf-rotation-action-spin:
+    status: delivered_to_branch
+    note: docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py (PASS=9, ~3.5 min)
+    exact: ["8 translation-invariant sign sectors valid for all 60 codes", "sectors (0,0,0)/(1,1,1) = flux 0/pi; every stabilizing rotation acts by bare permutation there", "mixed sectors need sign corrections (control)"]
+    pair_test_check: "second round CONFIRMED (own general pair test, L=8/10; toric controls; cohomology by GF(2))"
+    pair_test_scope: "All 108 finite pair tests give lambda=+1. With the stated lambda=theta eta localization relation this yields eta=-1 per tested C2. D3/single-C2 class inference is conditional; consistent D2 localization remains open."
+    pair_test: "All 108 finite pair tests give lambda=+1. With the stated lambda=theta eta localization relation this yields eta=-1 per tested C2. D3/single-C2 class inference is conditional; consistent D2 localization remains open."
+    independent_check: "claims 1-4 CONFIRMED (L=4,6); first-version claim eta_f=+1 REFUTED (restriction of P_R to a region is not a valid localization); pair test + Majorana form + W dressing adopted; note rewritten and renamed"
+    trace_class: frontier_discovery
+  C9-symmetric-hops-and-O-covariant-condensation:
+    status: open (exploration record, no note)
+    finding: "D3-equivariant hop types exist but give nonlocal commutant after quad condensation; D3-invariant corner-dressed flux conventions exist (8), 2 with local clean hops; O-covariant quad condensation with them gives noncommuting quads (bipartite z-special pattern). O-covariant local single-code condensation of the 4-copy stack: open"
+  C11-site-local-realization:
+    status: delivered_to_branch
+    note: docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py (PASS=7, ~3 min)
+    c13_check: "CONFIRMED: eps=1 always works (60 codes x 24 x 2 sectors, L=4,6; 720 orderings); U_R = on-site CZ network x P_R; genuine order-24 O action exists; 60 codes are one code under on-site Cliffords; edge model also invariant with vertex-centred CZ networks; spinless under U_R (lambda=-1, 9 C2)"
+    exact: ["on-site signed Majorana-permutation Cliffords make one code per orbit type O-invariant (C13): species minimum is bare-action only", "six direction qubits per site + edge repetition: site action = edge action exactly (intertwining)", "stabilizers/orbits equal the edge case", "C6 bare-action orbit bounds and C8 finite pair data transfer; conditional D3/single-C2 inference, D2 localization open"]
+    independent_check: "items 1-3 CONFIRMED (all 60 codes at L=6; 3.3M covariance checks); transfer CONFIRMED directly in the half-edge model (T-junction, sectors, 108-pair test, control); three wording fixes applied"
+  C12-majorana-per-direction-O-covariant:
+    status: delivered_to_branch
+    note: docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/majorana_per_direction_cubic_fermion_code_full_rotation_covariance_2026_10_17.py (PASS=8, ~2 min)
+    exact: ["3 qubits/site, 6 Majoranas: dims 3, fermion (T-junction -1 x20)", "all 24 rotations x 32 sign choices preserve uniform signed sectors: one species, full O with on-site Clifford", "group law: 128 choices give order-48 central extension by fermion parity; axis C2 lifts^2=+1, edge C2 lifts^2=-1"]
+    fractionalization: "clean pair test (consistent action): eta_f(C2axis)=eta_f(C2edge)=+1 -> clean-sector trivial pattern, not an unrestricted anyon invariant (local Majorana dressings can transform projectively); the only group-law-consistent W-twist (sign character) gives (axis +, edge -); w2 on O not reachable by W-twists (checker round 2 refuted the first claim)"
+    independent_check: "items 1-4 CONFIRMED (+ odd-L caveat, improper elements, group = sign-pullback central extension (A4 semidirect Z4) sign-pullback); prior art Li-Po arXiv:2107.14083 added; interpretation softened; pair test with clean creators: eta_f(C2axis)=eta_f(C2edge)=+1 (author rerun pending)"
+  C15-spinful-doublet:
+    status: delivered_to_branch
+    note: docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py (PASS=12; cap 1800 s)
+    exact: ["5 qubits/site: links + matter up/dn on one Z2 gauge field; commuting, dim 3", "dressed P-only endpoint maps to parent gauge charge by D=B_link P_up P_dn; fermion TJ=-1, up/dn locally related", "2O spin action on matter pair: rep, U(-1)=matter parity, doublet spin-1/2", "relative pair factor lambda_f m^2=+1; local matter spinors change pair factors, so the pattern is inherited not an anyon-invariant fractional class; invariant link ground vector not constructed"]
+    independent_check: "independent landing review in progress; author packet preserved with provenance/scope banner"
+  C16-site-localizable-obstruction:
+    status: delivered_to_branch
+    note: docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py (PASS=11, 3 s)
+    exact: ["ker(H^2(O;Z2)->H^2(O;U(1))) = {0, w1^2}", "w2 forces local dim>=2 exactly for D2 (both), D4, T, O", "odd O-orbits only for stabilizers O, D4", "six-direction shell: linear A1+E+T1; spinorial E1/2+G3/2 or E5/2+G3/2", "on-site Clifford realizations preserve the single-site charge pattern (theorem applies); bare permutation does not (theorem silent; order-4 candidate)"]
+    conditional: "symmetry localization (same ansatz as lambda = theta eta)"
+    independent_check: "items 2-4 CONFIRMED exactly; item 1 CONFIRMED with explicit hypotheses (no local logicals, linear/extension action, invariant pattern); item 5 CORRECTED: bare permutation does not preserve the term set (plaquette violations near v), applies only to on-site Clifford realizations; 7 wording fixes applied"
+  C17-corner-fermion-qubit-code:
+    status: delivered_to_branch
+    note: docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runners: ["scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py (PASS=18, ~2 min, L=4)", "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py (PASS=7, ~20 s)"]
+    exact: ["48 qubits/site corner-graph BKSF with repetition halves: dim 3, fermion", "genuine linear O action on the full Hilbert space (site perm + on-site CZ + Z fixes + R-coboundary; free link orbits)", "pair test axis +1, edge -1 (w2+w1^2); twisted by W on w1-odd: all +1 (w2)", "fermion PSG, 2O lift, shell E1/2+E5/2+2G3/2, chiral cluster E1/2 ground doublet gap 2.54"]
+    conditional: "lambda = theta eta localization; w2 needs the twisted (number-conserving) realization"
+    open: ["mobile doublet ground state (band minimum leaves symmetric momenta in scanned family)", "dynamics selection", "framework derivation of corners/fluxes"]
+    independent_check: "items 1,2,4 CONFIRMED (exact operator identity 576/576; 252+216 creators; full checks); corrections applied: octants also avoid C4, E1/2 vs E5/2 is twist convention, link-orbit wording, title narrowed (spin-1/2 class under the U(1)-twisted action), twist not on-site; new caveat: space-group fractionalization differs from spin-1/2 (C4 T C4^-1 T^-1 = -1, bond-centred C2 lambda=-1)"
+  C18-large-fermion-long-wavelength:
+    status: delivered_to_branch
+    note: docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py (PASS=12, ~25 s)
+    exact: ["affine action k -> Rk + pi s_R; for square=plaquette=tube=pi the O-fixed momenta are exactly +-k* = (pi/2)(1,-1,1)", "48 local qubits = two free O-orbits; equivariant placement in a 5^3 block of one qubit per fine site; 77 spectators orbit-closed"]
+    numerical: ["global band minimum a single 2-fold level at k* (5 parameter sets)", "every band 2-fold everywhere", "isotropic mass (Hessian spread <1e-8); quartic anisotropy 5e-4 at |dk|=0.1", "L=4: minimum doublet is E1/2 (lambda<0) / E5/2 (lambda>0)"]
+    corrects: "C17 note: the band minimum does not leave the symmetric momenta; earlier scan tested Gamma and R only"
+    open: ["uniform one-qubit rule (unit fine translations) producing the block structure", "Dirac/relativistic structure, charge"]
+    independent_check: "items 1-3 CONFIRMED (174 extra parameter sets; affine covariance 1.6e-16); item 4 CORRECTED: no spin-orbit is due to I*K (inversion x conjugation) of the hopping family, not O; O allows Kramers-Weyl alpha dk.sigma which dominates when I*K broken; embedding CONFIRMED (twist needs two-block non-Clifford gates; ranges <= 9; 5^3 minimal); wording fixed"
+scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
+campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
+next_action: "C17 independent check; then a mobile E1/2 doublet (band minimum at a symmetric momentum) and the U(1)/spin-charge selection of the twisted realization"

@@ -1,0 +1,49 @@
+   {'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1]}
+   {'square': '0', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [1]}
+   {'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [-1]}
+   {'square': '0', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [1], 'TxTy': [-1]}
+   {'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1]}
+   {'square': '0', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [1]}
+   {'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [-1]}
+   {'square': '0', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [1], 'C4': [1], 'C2edge': [1], 'C3': [-1], 'TxTy': [-1]}
+   {'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+   {'square': 'pi', 'triangle': '0', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+   {'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+   {'square': 'pi', 'triangle': '0', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': '0', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [-1]}
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': '0'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+   {'square': 'pi', 'triangle': 'pi', 'plaquette': 'pi', 'tube': 'pi'} {'e': [1], 'C2axis': [-1], 'C4': [-1], 'C2edge': [1], 'C3': [-1, 1], 'TxTy': [1]}
+[PASS] all 16 uniform flux patterns are consistent and invariant under O and translations
+[PASS] square flux pi: axis C2 lifts square to -1, edge C2 to +1, C4^4 = -1 (class w2 + w1^2); square flux 0: all +1
+[PASS] translations commute exactly when square and plaquette fluxes agree
+   cluster (triangle, tube, t1, chiral) = (0, 0, 1, 0.0) -> ground {'G3/2': 1} gap 3.4641
+   cluster (triangle, tube, t1, chiral) = (0, 0, -1, 0.0) -> ground {'E1/2': 1, 'E5/2': 1} gap 1.2679
+   cluster (triangle, tube, t1, chiral) = (0, 0, -1, -0.5) -> ground {'E1/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (0, 0, -1, 0.5) -> ground {'E5/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (0, 0, 1, -0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (0, 0, 1, 0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (0, 1, 1, 0.0) -> ground {'G3/2': 1} gap 3.4641
+   cluster (triangle, tube, t1, chiral) = (0, 1, -1, 0.0) -> ground {'E1/2': 1, 'E5/2': 1} gap 1.2679
+   cluster (triangle, tube, t1, chiral) = (0, 1, -1, -0.5) -> ground {'E1/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (0, 1, -1, 0.5) -> ground {'E5/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (0, 1, 1, -0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (0, 1, 1, 0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (1, 0, 1, 0.0) -> ground {'E1/2': 1, 'E5/2': 1} gap 1.2679
+   cluster (triangle, tube, t1, chiral) = (1, 0, -1, 0.0) -> ground {'G3/2': 1} gap 3.4641
+   cluster (triangle, tube, t1, chiral) = (1, 0, -1, -0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (1, 0, -1, 0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (1, 0, 1, -0.5) -> ground {'E1/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (1, 0, 1, 0.5) -> ground {'E5/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (1, 1, 1, 0.0) -> ground {'E1/2': 1, 'E5/2': 1} gap 1.2679
+   cluster (triangle, tube, t1, chiral) = (1, 1, -1, 0.0) -> ground {'G3/2': 1} gap 3.4641
+   cluster (triangle, tube, t1, chiral) = (1, 1, -1, -0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (1, 1, -1, 0.5) -> ground {'G3/2': 1} gap 3.4566
+   cluster (triangle, tube, t1, chiral) = (1, 1, 1, -0.5) -> ground {'E1/2': 1} gap 2.5434
+   cluster (triangle, tube, t1, chiral) = (1, 1, 1, 0.5) -> ground {'E5/2': 1} gap 2.5434
+[PASS] with the U(1) twist i^{w1}, the action on the 12 corners of a site lifts to a linear representation of 2O (class w2), for square flux pi
+[PASS] the site shell decomposes as E1/2 + E5/2 + 2 G3/2
+[PASS] real (time-reversal-symmetric) on-site hopping: the lowest cluster level is E1/2 + E5/2 or a G3/2 quartet, never a single doublet
+[PASS] with the O-invariant chiral term, the cluster ground level is a single E1/2 doublet (triangle 0, t1 = -1, chiral -0.5; also triangle pi, t1 = +1) with gap 2.54
+
+TOTAL: PASS=7 FAIL=0

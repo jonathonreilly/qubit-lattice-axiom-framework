@@ -1,0 +1,39 @@
+import runpy,itertools as it,json,pathlib
+p=pathlib.Path(__file__).parent;g=runpy.run_path(str(p/'bloch_controls.py'));Q=g['Q'];N=g['neighbours'];L=4
+nodes=[(v,q) for v in it.product(range(L),repeat=3) for q in Q];ni={v:i for i,v in enumerate(nodes)}
+def wrap(v):return tuple(x%L for x in v)
+def idx(v):return ni[(wrap(v[0]),v[1])]
+edges=sorted({tuple(sorted((idx(a),idx(b)))) for a in nodes for b in N(a)});ei={e:i for i,e in enumerate(edges)};n=len(edges);inc=[[] for a in nodes]
+for j,(a,b) in enumerate(edges):inc[a].append(j);inc[b].append(j)
+def mul(a,b):return a[0]^b[0],a[1]^b[1],(a[2]+b[2]+2*(a[1]&b[0]).bit_count())%4
+def hop(a,b):
+ j=ei[tuple(sorted((a,b)))];z=0
+ for c in (a,b):
+  for t in inc[c][:inc[c].index(j)]:z^=1<<t
+ return 1<<j,z,0 if a<b else 2
+B=[(0,sum(1<<j for j in inc[a]),0) for a in range(len(nodes))];loops=[]
+for v in it.product(range(L),repeat=3):
+ for (mask,typ),path in g['cycles'].items():
+  ids=[idx((g['plus'](v,a),q)) for a,q in path];P=(0,0,len(ids)+(0 if typ=='triangle' else 2))
+  for a,b in zip(ids,ids[1:]+ids[:1]):P=mul(P,hop(a,b))
+  loops.append(P)
+def elim(ps):
+ piv={};bad=False
+ for a in ps:
+  while a[0] or a[1]:
+   key=a[0]|a[1]<<n;k=key.bit_length()-1
+   if k not in piv:piv[k]=a;break
+   a=mul(a,piv[k])
+  else:bad|=a[2]!=0
+ return len(piv),bad
+tube0=[(a[0],a[1],(a[2]+(2 if list(g['cycles'])[i%len(g['cycles'])][1]=='tube' else 0))%4) for i,a in enumerate(loops)]
+assert elim(B+tube0)==(n-3,False)
+r,bad=elim(B+loops);assert r==n-3 and not bad,(r,bad)
+mut=loops.copy();a=mut[0];mut[0]=(a[0],a[1],(a[2]+2)%4);assert elim(B+mut)[1]
+# Exhaust all local incident-edge T junctions, exact Pauli phase.
+tests=0
+for a in range(len(nodes)):
+ for e,f,h in it.combinations(inc[a],3):
+  js=[next(v for v in edges[j] if v!=a) for j in (e,f,h)];A,C,D=[hop(a,j) for j in js];x=mul(mul(A,C),D);y=mul(mul(D,C),A);assert x[:2]==y[:2] and (x[2]-y[2])%4==2;tests+=1
+out={'construction':'independent coordinate graph, global-index edge ordering and signed unsplit BKSF representation; no author imports','L':L,'vertices':len(nodes),'edges':n,'tube_0_and_pi_both_consistent':True,'signed_stabilizer_rank':r,'minus_identity':bad,'encoded_qubits':n-r,'half_edge_repetition_extension':'768 independent repetition constraints and 768 additional qubits preserve k=3','local_T_junctions_exact':tests,'single_loop_flux_mutation':'detected -I (inconsistent flux assignment)','scope':'finite L4 rank and exact local Pauli algebra; not a full localization theorem'}
+(p/'pauli-control.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))

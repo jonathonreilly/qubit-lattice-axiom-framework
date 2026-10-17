@@ -1,0 +1,86 @@
+import itertools as it,json,pathlib,collections
+import sympy as s
+R=pathlib.Path(__file__).parent
+# Exact binary octahedral arithmetic in Q(sqrt(2)), independent of float SU2 tables.
+Q=[]
+for j in range(4):
+ for sign in (-1,1):Q.append(tuple(s.Integer(sign if k==j else 0) for k in range(4)))
+Q += [tuple(s.Rational(x,2) for x in a) for a in it.product((-1,1),repeat=4)]
+for i,j in it.combinations(range(4),2):
+ for a,b in it.product((-1,1),repeat=2):Q.append(tuple(s.sqrt(2)*(a if k==i else b if k==j else 0)/2 for k in range(4)))
+idx={q:i for i,q in enumerate(Q)}
+def qm(a,b):
+ w,x,y,z=a;v,i,j,k=b
+ return tuple(s.expand(t) for t in (w*v-x*i-y*j-z*k,w*i+x*v+y*k-z*j,w*j-x*k+y*v+z*i,w*k+x*j-y*i+z*v))
+M=[[idx[qm(a,b)] for b in Q] for a in Q];e=idx[(1,0,0,0)];minus=idx[(-1,0,0,0)]
+canon=lambda q:q if next(x for x in q if x)!=-abs(next(x for x in q if x)) else tuple(-x for x in q)
+# Algebraic sign uses real embedding only for canonical section, not products.
+C=[];proj=[]
+for q in Q:
+ c=canon(q)
+ if c not in C:C.append(c)
+ proj.append(C.index(c))
+sec=[idx[c] for c in C];mul=[[proj[M[a][b]] for b in sec] for a in sec];ie=proj[e]
+w2=[[int(M[a][b]!=sec[mul[i][j]]) for j,b in enumerate(sec)] for i,a in enumerate(sec)]
+def rot(q):
+ w,x,y,z=q
+ return s.Matrix([[1-2*(y*y+z*z),2*(x*y-z*w),2*(x*z+y*w)],[2*(x*y+z*w),1-2*(x*x+z*z),2*(y*z-x*w)],[2*(x*z-y*w),2*(y*z+x*w),1-2*(x*x+y*y)]]).applyfunc(s.simplify)
+rots=[rot(q) for q in C];dirs=[s.Matrix(x) for x in [(1,0,0),(0,1,0),(0,0,1),(-1,0,0),(0,-1,0),(0,0,-1)]]
+w1=[]
+for A in rots:
+ p=[dirs.index(A*v) for v in dirs];w1.append(sum(p[i]>p[j] for i in range(6) for j in range(i+1,6))%2)
+def rank(rows):
+ piv={}
+ for r in rows:
+  while r:
+   k=r.bit_length()-1
+   if k in piv:r^=piv[k]
+   else:piv[k]=r;break
+ return len(piv)
+non=[g for g in range(24) if g!=ie];cols={(g,h):i for i,(g,h) in enumerate(it.product(non,repeat=2))}
+def eq(pairs):
+ r=0
+ for p in pairs:
+  if p in cols:r^=1<<cols[p]
+ return r
+cocrank=rank(eq([(h,k),(g,mul[h][k]),(mul[g][h],k),(g,h)]) for g,h,k in it.product(non,repeat=3))
+bd=[]
+for k in non:bd.append(sum((int(g==k)^int(h==k)^int(mul[g][h]==k))<<i for (g,h),i in cols.items()))
+bdrank=rank(bd);assert len(cols)-cocrank-bdrank==2
+# Kernels by central commutator subgroup, exact table arithmetic.
+def closure(gens,T,ident):
+ S={ident};todo=[ident]
+ while todo:
+  a=todo.pop()
+  for b in gens:
+   c=T[a][b]
+   if c not in S:S.add(c);todo.append(c)
+ return frozenset(S)
+def derived_contains_minus(H,a,b):
+ els=[(g,z) for g in sorted(H) for z in (0,1)];ix={x:i for i,x in enumerate(els)}
+ T=[[ix[(mul[g][h],z^v^(a*w2[g][h])^(b*w1[g]*w1[h]))] for h,v in els] for g,z in els];ei=ix[(ie,0)];mi=ix[(ie,1)];iv=[next(j for j in range(len(els)) if T[i][j]==ei) for i in range(len(els))]
+ comm={T[T[T[i][j]][iv[i]]][iv[j]] for i in range(len(els)) for j in range(len(els))}
+ return mi in closure(comm,T,ei)
+ker={(a,b):derived_contains_minus(range(24),a,b) for a,b in it.product((0,1),repeat=2)};assert ker=={(0,0):False,(0,1):False,(1,0):True,(1,1):True}
+subs={frozenset([ie])};todo=list(subs)
+while todo:
+ H=todo.pop()
+ for g in range(24):
+  if g in H:continue
+  K=closure(list(H)+[g],mul,ie)
+  if K not in subs:subs.add(K);todo.append(K)
+inv=[next(j for j in range(24) if mul[i][j]==ie) for i in range(24)];classes={}
+for H in subs:
+ key=min(tuple(sorted(mul[mul[g][h]][inv[g]] for h in H)) for g in range(24));classes[key]=H
+assert len(classes)==11
+odd=sorted(set(24//len(H) for H in subs if (24//len(H))%2));assert odd==[1,3]
+# Exact Clifford canary and meaningful angle mutation.
+X=s.Matrix([[0,1],[1,0]]);Z=s.diag(1,-1);I=s.eye(2);P=s.kronecker_product(Z,Z);A=s.kronecker_product(X,I)
+U=(s.eye(4)-s.I*P)/s.sqrt(2);img=s.simplify(U*A*U.conjugate().T);assert img==-s.I*P*A
+V=s.cos(s.pi/8)*s.eye(4)-s.I*s.sin(s.pi/8)*P;mut=s.simplify(V*A*V.conjugate().T);assert mut!=img and mut!=A
+# Free orbit and block minimality independent signed-coordinate enumeration.
+def orbit(v):return {tuple(A*s.Matrix(v)) for A in rots}
+free3=[v for v in it.product(range(-1,2),repeat=3) if len(orbit(v))==24];free5={frozenset(orbit(v)) for v in it.product(range(-2,3),repeat=3) if len(orbit(v))==24}
+assert not free3 and len(free5)==3 and len(orbit((1,2,0))|orbit((1,2,2)))==48
+out={'H2_O_Z2_dimension':len(cols)-cocrank-bdrank,'normalized_cocycles_variables':len(cols),'cocycle_constraint_rank':cocrank,'coboundary_rank':bdrank,'minus_in_commutator':{str(k):v for k,v in ker.items()},'subgroup_count':len(subs),'subgroup_conjugacy_classes':len(classes),'odd_orbit_sizes':odd,'ZZ_pi_over4_is_Clifford':True,'pi_over8_mutation_not_Pauli_image':True,'free_orbits_in_3cube':0,'free_orbits_in_5cube':3,'two_embedding_orbits_size':48}
+(R/'exact-controls.json').write_text(json.dumps(out,indent=2)+'\n');print(out)

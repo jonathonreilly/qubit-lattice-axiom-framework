@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/common_source_offset_complete_output_2026_10_17.py
+runner_sha256: 3626ccf47a66f6ab0fcab373d6498803d7e5e654891c738e19436b173a75446a
+input_fingerprint_sha256: 39ef8c62e91ea81b7bf815b008ab7fdb973a210209ad9350dc29e4df7c73ecf6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+[PASS] 183 resolved historical proof/source pins match bytes
+[PASS] third prefix application has all four stated coefficients, independent of port shift
+[PASS] fourth application sees port shift: later-moment independence is not inferred
+[PASS] three-source Schur determinant retains physical load symbol m
+[PASS] 54 direct Jacobi inverse density samples agree with physical-band formula
+[PASS] offset changes physical load; recentered-load substitution is detectably different
+[PASS] seven complete-budget ceilings sum exactly and leave finite-cut allowance
+[PASS] conservative loaded-margin arithmetic retains common-offset term
+[PASS] sixth-moment envelope and original-window concentration arithmetic
+[PASS] weighted finite-cut exponent below -2960000
+[PASS] six-block construction counts
+Scope: finite symbolic identities,54 numerical density samples and ceiling arithmetic; full analytical interfaces, time estimates, parent calibration and physical identification remain supplied proof obligations.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

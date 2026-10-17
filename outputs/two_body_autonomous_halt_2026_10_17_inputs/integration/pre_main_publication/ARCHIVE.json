@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-17T00:45:50.921169+00:00",
+  "reason": "Original PR9659 branch was deleted after external landing at 69cf6a289b2ec06213473f1549c51a57c29b6d70. Preserve actual parent-based execution and rebase only this new milestone onto current main for a reviewable regular PR. No science merge or main push by this campaign.",
+  "files": {
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": {
+      "bytes": 106792,
+      "sha256": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1"
+    },
+    "outputs/two_body_autonomous_halt_2026_10_17.json": {
+      "bytes": 45175,
+      "sha256": "85bec08c3cec63e96095d9b758b4496ddcbed9388ce7dfb06206987b979e8110"
+    },
+    "outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json": {
+      "bytes": 281335,
+      "sha256": "7c231289b52353abee06063737bb202fd413fa17a426c13e696e5967014e86c2"
+    },
+    "logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt": {
+      "bytes": 5839,
+      "sha256": "ce560027e7cafbff48d4f654f3b043fa65af733828d318080a8c0509aae2aeb3"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CLAIM_STATUS_CERTIFICATE.md": {
+      "bytes": 3791,
+      "sha256": "b3aa63d635c03316813eafc2836f39bd50ec77e5bb1ec151803423fb70508602"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/SOURCE_MANIFEST.json": {
+      "bytes": 8627,
+      "sha256": "aeecb12ac5827b65eebba1f3d0d48445163ddb5c2954d703958747af6c69fca6"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/TRACE_GATE.md": {
+      "bytes": 1725,
+      "sha256": "637e853bd9f1396eaa99582345f2ada116c00d8e144325f7d0bcb38577d5a9c8"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/REVIEW_HISTORY.md": {
+      "bytes": 3780,
+      "sha256": "994ec903167cf63f111032107c0deaeec8028b9aacec1d9b15385e401ae9d2bd"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/CANONICAL_EXECUTION.json": {
+      "bytes": 1102,
+      "sha256": "d06079df6500a3c627ddf636109285b58d3627bfab1d7fa53308350f5b3c872e"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/PUBLISH_CHECKS.json": {
+      "bytes": 20543,
+      "sha256": "a9377fec0d70ca40fbd03816d7452627daea82f7dd09c75a4634715a87c7c681"
+    },
+    ".claude/science/physics-loops/toe-two-body-autonomous-halt-20261017/HANDOFF.md": {
+      "bytes": 2175,
+      "sha256": "57154d9373d342da4f559da3bf16d0a74bb6e4a7931ca90173656f1d9e364f00"
+    }
+  },
+  "staged_whitespace_exit_code": 2,
+  "whitespace_scope": "Six warnings in three byte-preserved historical artifacts: two unified diffs with meaningful context-space lines, and one original draft wrapper EOF. No canonical-source whitespace issue. Full stderr/stdout preserved."
+}

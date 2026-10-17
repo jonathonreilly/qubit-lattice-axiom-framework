@@ -1,18 +1,18 @@
 {
-  "utc": "2026-10-17T00:43:35.337493+00:00",
+  "utc": "2026-10-17T00:50:27.227921+00:00",
   "scope": "Focused deterministic publication checks and actual finite execution only. No independent retained audit, large-clock evolution, shared combined-main landing gate or new scientific conclusion is asserted by this checker.",
-  "artifact_hashes_verified": 259,
+  "artifact_hashes_verified": 289,
   "artifact_manifest": {
-    "bytes": 48281,
-    "sha256": "50b22c761e8e0a623e5ae2f756c69f1cb996eb050be58a1390997ce8f896f35d"
+    "bytes": 54147,
+    "sha256": "3eaa44251c4bc53c3a2ff4bd0015152809d5b6ea31647dd9c628c0bdf30f9a73"
   },
   "unchanged_mathematical_bodies": 4,
   "source_manifest": {
-    "bytes": 8627,
-    "sha256": "aeecb12ac5827b65eebba1f3d0d48445163ddb5c2954d703958747af6c69fca6"
+    "bytes": 9664,
+    "sha256": "7a5d0f0a005f39c0f644afceb01d61dd3ab7bf26916721d68c098ca5640b06ab"
   },
   "canonical_result_input_hashes": {
-    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/SOURCE_MANIFEST.json": "f5fab620b4cc9bb9e2ea09dabd94e5269bf9ae452877bce43cff5376d02ea08c",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/FILE_MANIFEST.json": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/RESULT.md": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
@@ -65,23 +65,23 @@
   "deterministic_readiness_issue": null,
   "cache_status": "fresh",
   "canonical_execution": {
-    "started_utc": "2026-10-17T00:37:00.729308+00:00",
-    "ended_utc": "2026-10-17T00:37:02.954889+00:00",
+    "started_utc": "2026-10-17T00:47:54.920932+00:00",
+    "ended_utc": "2026-10-17T00:47:57.885835+00:00",
     "runner": "scripts/two_body_autonomous_halt_2026_10_17.py",
     "timeout_sec": 120,
     "status": "ok",
     "exit_code": 0,
-    "elapsed_sec": 2.1419870853424072,
+    "elapsed_sec": 2.832818031311035,
     "cache_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt",
     "cache_status": "fresh",
-    "stdout_bytes": 5486,
+    "stdout_bytes": 5485,
     "stderr_bytes": 0,
-    "stdout_sha256": "da8e56d544c24372867af3bc9e3f85a681b7643613ca58a667096b3d0f0da01f",
+    "stdout_sha256": "9c2d025e5cda6d2169c51b2a4d59c88d889da4d1c5089f4e1bff4bde79a20ede",
     "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "preexecution_output_slots": "Missing output files were explicitly initialized as not_executed before identity capture, avoiding output-parent creation during execution.",
     "scope": "Exact finite certificate and separate checker execution only; no large-clock evolution, infinite-time experiment or retained audit.",
-    "cache_bytes": 5839,
-    "cache_sha256": "ce560027e7cafbff48d4f654f3b043fa65af733828d318080a8c0509aae2aeb3"
+    "cache_bytes": 5838,
+    "cache_sha256": "a001116fb8ccf765463a7526e3081ab6cd586d0342e258770d17c6b51b6a40b0"
   },
   "mutation_cases_and_archived_streams": 7,
   "no_go_gate_trigger": false,
@@ -237,12 +237,12 @@
   ],
   "graph": {
     "old_counts": {
-      "node_count": 7205,
-      "edge_count": 16159
+      "node_count": 7207,
+      "edge_count": 16162
     },
     "new_counts": {
-      "node_count": 7206,
-      "edge_count": 16160
+      "node_count": 7208,
+      "edge_count": 16163
     },
     "added": [
       "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
@@ -260,7 +260,7 @@
       "helper_runner_paths": [
         "scripts/two_body_autonomous_halt_check_2026_10_17.py"
       ],
-      "note_hash": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+      "note_hash": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
       "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
       "runner_path": "scripts/two_body_autonomous_halt_2026_10_17.py",
       "title": "Autonomous reflection from a positive two-body source ladder"
@@ -271,10 +271,32 @@
         "to": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
       }
     ],
-    "manifest_sha256": "95c32af8fa35cf401fe4af22bc85238bcafbacd458e5b5f7823a985893390dfe",
+    "manifest_sha256": "255002c56670e27356aa6f5b6b5fecf6d256ca63670d8458f33d9d577e0c1114",
     "scope": "Only the intended new note and its citation links; prior-result context is not a new mathematical import. Old topology preserved. Generated graph JSON is validation residue and will not be committed."
   },
   "tracked_diff_whitespace_exit_code": 0,
   "publication": "pending; regular PR URL and exact head recorded separately after creation",
-  "shared_landing_gates": "not run; combined-current-main pipeline, strict lint, changed-evidence checks and independent retained audit remain separate"
+  "shared_landing_gates": "not run; combined-current-main pipeline, strict lint, changed-evidence checks and independent retained audit remain separate",
+  "final_staged_checks": {
+    "utc": "2026-10-17T00:50:53.596823+00:00",
+    "publication_base": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+    "staged_path_count": 304,
+    "staged_path_inventory_sha256": "ae26db9fc226422d5007f4a4b685085735bc23b5747c74974f4d3b5c59b05b20",
+    "outside_owned_scope_paths": [],
+    "raw_staged_whitespace_exit_code": 2,
+    "raw_staged_whitespace_stdout_sha256": "def0e75f30fc169a1a98df0c2162a3e2ca19fc86c403380437e02c38509cf0b4",
+    "preserved_historical_warning_files": [
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_certificate_review/OLD_CAP_CHECKER_DELTA.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/DRAFT_WRAPPER.md",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/pre_main_publication/staged_check.stdout",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/prepublication_refresh/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.diff",
+      "outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/COMPLETE_CHANGED_LOGIC.diff"
+    ],
+    "all_other_staged_paths_whitespace_exit_code": 0,
+    "unstaged_or_untracked_files": [],
+    "editable_prompt_files_changed": [],
+    "scope": "All paths reviewed by exact body pins, complete changed wrapper/code review, artifact manifest and scoped final inventory. Seven historical text artifacts preserve original bytes; no blanket raw-whitespace pass is claimed. No merge, audit verdict or main push."
+  }
 }

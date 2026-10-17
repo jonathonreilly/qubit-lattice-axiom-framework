@@ -1,8 +1,8 @@
 {
   "note": {
     "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
-    "bytes": 106792,
-    "sha256": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1"
+    "bytes": 106965,
+    "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
   },
   "unchanged_bodies": [
     {
@@ -10,32 +10,32 @@
       "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/finite_channel_wavepacket_bridge/THEOREM_V2.md",
       "bytes": 27028,
       "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3",
-      "body_byte_start_inclusive": 22098,
-      "body_byte_end_exclusive": 49126
+      "body_byte_start_inclusive": 22271,
+      "body_byte_end_exclusive": 49299
     },
     {
       "label": "interval",
       "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/CANDIDATE.md",
       "bytes": 23457,
       "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45",
-      "body_byte_start_inclusive": 49349,
-      "body_byte_end_exclusive": 72806
+      "body_byte_start_inclusive": 49522,
+      "body_byte_end_exclusive": 72979
     },
     {
       "label": "stationary_history",
       "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/ROUTE.md",
       "bytes": 21276,
       "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1",
-      "body_byte_start_inclusive": 73017,
-      "body_byte_end_exclusive": 94293
+      "body_byte_start_inclusive": 73190,
+      "body_byte_end_exclusive": 94466
     },
     {
       "label": "selected_coefficients",
       "source": "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/dark_source_two_body_halt/old_cap_search/RESULT.md",
       "bytes": 12175,
       "sha256": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
-      "body_byte_start_inclusive": 94530,
-      "body_byte_end_exclusive": 106705
+      "body_byte_start_inclusive": 94703,
+      "body_byte_end_exclusive": 106878
     }
   ],
   "draft_note_sha256": "665758ecf7cc80378ae14ce863b6421f250c0c602f4f98baccf777a70d08835d",
@@ -83,8 +83,19 @@
     }
   ],
   "source_base": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
-  "publication_parent": "f5f5eda7427453aac726b394381c965f9e28ac03",
-  "current_main_instruction_revision": "2bb6c1a54721e70512922fb10d4495adf8ea3042",
+  "publication_parent": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "current_main_instruction_revision": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
   "root_source_acceptance_sha256": "fba41e11ee5e282800547e7571ab520abddeda1d9d3947d7095b9dfbf6fbc4fb",
-  "scope": "Complete mathematical bodies unchanged. Root read the full wrapper and refined only framing, exact product/energy-column meanings, paths and separate integration-status references. Actual execution/publication remain independently recorded."
+  "scope": "Complete mathematical bodies unchanged. Root read the full wrapper and refined only framing, exact product/energy-column meanings, paths and separate integration-status references. Actual execution/publication remain independently recorded.",
+  "original_science_parent": "f5f5eda7427453aac726b394381c965f9e28ac03",
+  "publication_wrapper_refinements": [
+    {
+      "old": "records ten unchanged instruction sources and the unchanged original target\nbody followed by portable-provenance prose. No science was merged into this\nbranch, and no audit verdict was adopted.",
+      "new": "records ten unchanged instruction sources, the unchanged original target\nbody and the complete narrow publication-provenance changes. No science was\nmerged or pushed to main by this campaign, and no audit verdict was adopted."
+    },
+    {
+      "old": "This milestone is packaged on a child branch of PR9659 with its own\nwrapper review and execution; the previous result is unchanged.",
+      "new": "This milestone is packaged against current main at\n69cf6a289b2ec06213473f1549c51a57c29b6d70 after PR9659 was landed externally\nand its branch deleted. Only this new milestone was rebased; its original\nscience parent and prior execution remain preserved historical sources."
+    }
+  ]
 }

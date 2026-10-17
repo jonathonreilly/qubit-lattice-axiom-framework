@@ -343,7 +343,7 @@
     "square_root_dimension": 6,
     "theorem_matching_dimension": 24,
     "cpu_seconds_cap": 120,
-    "elapsed_seconds_after_import": 0.2588811251334846
+    "elapsed_seconds_after_import": 0.5111720417626202
   },
   "script_sha256": "6111c95e2add4eb92fbc3f46d49f45085c3e95dc73431a68da7dcd602c912618",
   "independent_composition_check": {
@@ -558,11 +558,11 @@
       "numpy": "2.4.4",
       "sympy": "1.14.0",
       "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
-      "elapsed_seconds_after_limits": 1.28607179177925
+      "elapsed_seconds_after_limits": 1.591486374847591
     }
   },
   "input_sha256": {
-    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/SOURCE_MANIFEST.json": "f5fab620b4cc9bb9e2ea09dabd94e5269bf9ae452877bce43cff5376d02ea08c",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/FILE_MANIFEST.json": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d",
     "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/RESULT.md": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00",
@@ -609,5 +609,5 @@
     "scripts/two_body_autonomous_halt_check_2026_10_17.py": "ee4b71de1d1ab3f92dd1c812974a9dac1b740bea2b8fa3c442890b1854881b92"
   },
   "portable_execution_scope": "Exact author point/interval calculation and separate full-basis inverse, Schur, phase and resource checks. Prior independent point-state/reflection certificates are inherited by immutable identity, not recomputed by the helper. Infinite-time claims rest on the qualified analytic proof, not time evolution.",
-  "elapsed_seconds_total_after_import": 1.5474318331107497
+  "elapsed_seconds_total_after_import": 2.106016166973859
 }

@@ -59,3 +59,27 @@ Focused graph/publication results are [separately recorded](PUBLISH_CHECKS.json)
 Shared combined-main landing gates and independent retained audit remain
 pending. No science merge, main push, editable prompt or physical axiom change
 was performed by this milestone.
+
+Before publication, PR9659 had been landed externally at main revision
+69cf6a289b2ec06213473f1549c51a57c29b6d70 and its remote branch deleted.
+Only this new milestone was rebased onto that main. The sole conflict was
+the generated citation manifest; it was reset to that exact main manifest
+and regenerated for this note. Ten relevant instruction files are unchanged;
+the complete narrow parent wrapper/publication changes were inspected.
+No external audit verdict is adopted, and this campaign did not merge or
+push science to main. All four mathematical bodies and both programs remain
+byte-identical. The new wrapper changes only publication provenance.
+The original note, cache, result and actual execution remain archived under
+integration/pre_main_publication; the refreshed execution has its own receipt.
+
+The full initial staged whitespace check reported six warnings confined to
+three byte-preserved historical artifacts: two unified diffs whose blank
+context lines contain a meaningful space, and one original draft's blank EOF.
+Their bytes are retained for source identity. Final checks record this scope
+explicitly; no blanket whitespace pass is asserted for these raw archives.
+
+The current-main wrapper execution exited 0 in 2.832818 seconds with a fresh
+cache. Its exact scientific values equal the original execution; only the
+note input hash and elapsed-time fields changed. Earlier execution remains
+historical. Seven scientific mutations remain valid for the unchanged code
+and unchanged mathematical inputs; they were not relabeled as new runs.

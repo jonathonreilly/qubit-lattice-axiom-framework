@@ -336,17 +336,19 @@ f5f5eda7427453aac726b394381c965f9e28ac03, the published PR9659 branch tip.
 Root later recorded main at 2bb6c1a54721e70512922fb10d4495adf8ea3042 and
 scoped the authority/target provenance update in the new source qualification.
 The [current-main scope](../outputs/two_body_autonomous_halt_2026_10_17_inputs/integration/current_main_scope.json)
-records ten unchanged instruction sources and the unchanged original target
-body followed by portable-provenance prose. No science was merged into this
-branch, and no audit verdict was adopted. Historical process snapshots in
+records ten unchanged instruction sources, the unchanged original target
+body and the complete narrow publication-provenance changes. No science was
+merged or pushed to main by this campaign, and no audit verdict was adopted. Historical process snapshots in
 the evidence pack are immutable records; editable prompts and physical
 axioms are unchanged.
 
 This is the distinct two-body source construction. The preceding
 [autonomous boundary note](AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md)
 used a supplied positive three-qubit boundary block. Its small loads and
-accuracy-family conclusion are not imported here. This milestone is packaged on a child branch of PR9659 with its own
-wrapper review and execution; the previous result is unchanged. The
+accuracy-family conclusion are not imported here. This milestone is packaged against current main at
+69cf6a289b2ec06213473f1549c51a57c29b6d70 after PR9659 was landed externally
+and its branch deleted. Only this new milestone was rebased; its original
+science parent and prior execution remain preserved historical sources. The
 [portability review](../outputs/two_body_autonomous_halt_2026_10_17_inputs/portability/REPORT.md)
 checks the complete code adaptation without relabeling the original runs.
 Full combined-current-main pipeline, strict lint and changed-evidence checks

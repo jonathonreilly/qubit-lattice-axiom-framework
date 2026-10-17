@@ -1,11 +1,11 @@
 {
   "old_counts": {
-    "node_count": 7205,
-    "edge_count": 16159
+    "node_count": 7207,
+    "edge_count": 16162
   },
   "new_counts": {
-    "node_count": 7206,
-    "edge_count": 16160
+    "node_count": 7208,
+    "edge_count": 16163
   },
   "added": [
     "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
@@ -23,7 +23,7 @@
     "helper_runner_paths": [
       "scripts/two_body_autonomous_halt_check_2026_10_17.py"
     ],
-    "note_hash": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+    "note_hash": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
     "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
     "runner_path": "scripts/two_body_autonomous_halt_2026_10_17.py",
     "title": "Autonomous reflection from a positive two-body source ladder"
@@ -34,6 +34,6 @@
       "to": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
     }
   ],
-  "manifest_sha256": "95c32af8fa35cf401fe4af22bc85238bcafbacd458e5b5f7823a985893390dfe",
+  "manifest_sha256": "255002c56670e27356aa6f5b6b5fecf6d256ca63670d8458f33d9d577e0c1114",
   "scope": "Only the intended new note and its citation links; prior-result context is not a new mathematical import. Old topology preserved. Generated graph JSON is validation residue and will not be committed."
 }

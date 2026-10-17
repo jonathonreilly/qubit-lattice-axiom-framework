@@ -1,0 +1,82 @@
+--- f5f5eda7427453aac726b394381c965f9e28ac03:docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md
++++ 69cf6a289b2ec06213473f1549c51a57c29b6d70:docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md
+@@ -27,8 +27,8 @@
+ The actual source surface is `conditional-support`; no independent retained
+ audit is supplied. Root accepted the exact two mathematical sources below for
+ conditional provisional reuse, under the complete
+-[source qualification](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md).
+-The [source decision](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json)
++source qualification (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md`).
++The source decision (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json`)
+ does not approve this new wrapper or certify canonical execution, publication
+ or physical hardware. Their actual outcomes are separately recorded in the
+ [publication review history](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md)
+@@ -38,14 +38,17 @@
+ The root-owned [primary](../scripts/autonomous_boundary_reflection_2026_10_16.py)
+ directly imports the separately assembled
+ [check module](../scripts/autonomous_boundary_reflection_check_2026_10_16.py).
+-The [result](../outputs/autonomous_boundary_reflection_2026_10_16.json) and
++The result (`outputs/autonomous_boundary_reflection_2026_10_16.json`) and
+ [canonical cache](../logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt)
+ are execution evidence only when their actual run and freshness are recorded.
+ This wrapper does not predeclare a successful run. The
+-[input artifact manifest](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/ARTIFACT_MANIFEST.json)
++input artifact manifest (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/ARTIFACT_MANIFEST.json`)
+ binds the root-owned historical evidence; the companion
+ [source manifest](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/SOURCE_MANIFEST.json)
+-binds the unchanged embedded mathematical bodies.
++records the original wrapper and unchanged mathematical bodies. The
++[current source binding](../.claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/LANDING_SOURCE_BINDING.json)
++records the present wrapper and body offsets; original source-acceptance and
++execution records remain historical.
+ 
+ ## Conditional result and its resource boundaries
+ 
+@@ -135,12 +138,12 @@
+ 
+ ## Review record and unchanged source bodies
+ 
+-The [source acceptance record](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json)
++The source acceptance record (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json`)
+ has SHA256 `5f0653431bf3ea5965221da4c2e9a0da873c29e1cebabc2e12574b9601be1de4`;
+ its controlling qualification has SHA256
+ `e9324bc0b3e9a811860b0a993343fa908cb78c8089f99750f5bfb4efe7078fe4`.
+ Root read both complete mathematical arguments, the complete
+-[focused checker report](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/independent_check/REVIEW.md)
++focused checker report (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/independent_check/REVIEW.md`)
+ (SHA256 `6f54fcfe020972e4154be2f0ee59e9205155e3a80249186faac22bcdd91396df`),
+ and the actual diagnostic sources and selected numerical evidence. The
+ checker separately reconstructed boundary/bound-state, normalization, tail
+@@ -154,8 +157,8 @@
+ 
+ V2 corrects the support quantifier identified in review and changes no
+ numerical calculation. The historical author run used V1; the preserved
+-[author diagnostic](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/diagnostic.py)
+-and its [execution record](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/execution/EXECUTION.json)
++author diagnostic (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/diagnostic.py`)
++and its execution record (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/execution/EXECUTION.json`)
+ must not be relabeled as a V2 execution. Both original implementations,
+ results and receipts remain in the root evidence pack. Canonical adaptation,
+ mutations, execution and final wrapper conformance have their actual status
+@@ -170,8 +173,8 @@
+ 
+ | Frozen body | Bytes | SHA256 |
+ |---|---:|---|
+-| [CANDIDATE_V2.md](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md) | 13239 | `694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36` |
+-| [FINITE_READINESS_ADDENDUM.md](../outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md) | 4856 | `ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f` |
++| CANDIDATE_V2.md (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md`) | 13239 | `694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36` |
++| FINITE_READINESS_ADDENDUM.md (`outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md`) | 4856 | `ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f` |
+ 
+ 
+ <!-- BEGIN UNCHANGED SOURCE: CANDIDATE_V2.md; SHA256=694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36 -->
+@@ -557,3 +560,10 @@
+ three-body boundary hardware and readiness remain explicit resources.
+ 
+ <!-- END UNCHANGED SOURCE: FINITE_READINESS_ADDENDUM.md -->
++
++## Landing evidence references
++
++Output artifacts above are identified by explicit repository paths. They remain
++unchanged historical source and execution evidence, not citation-graph premises.
++The landing run has separate raw output and a freshly bound canonical cache;
++the original result JSON is preserved without relabelling it as that new run.

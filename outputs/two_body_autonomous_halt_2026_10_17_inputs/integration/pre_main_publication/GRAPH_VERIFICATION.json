@@ -1,0 +1,39 @@
+{
+  "old_counts": {
+    "node_count": 7205,
+    "edge_count": 16159
+  },
+  "new_counts": {
+    "node_count": 7206,
+    "edge_count": 16160
+  },
+  "added": [
+    "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. Source-status request: `proposed_retained`.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
+    ],
+    "helper_runner_paths": [
+      "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+    ],
+    "note_hash": "ce701169ef01f0b185dab37bf9279b90efdf4e648377ea0e53707f1ce57156d1",
+    "path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/two_body_autonomous_halt_2026_10_17.py",
+    "title": "Autonomous reflection from a positive two-body source ladder"
+  },
+  "new_edges": [
+    {
+      "from": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17",
+      "to": "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16"
+    }
+  ],
+  "manifest_sha256": "95c32af8fa35cf401fe4af22bc85238bcafbacd458e5b5f7823a985893390dfe",
+  "scope": "Only the intended new note and its citation links; prior-result context is not a new mathematical import. Old topology preserved. Generated graph JSON is validation residue and will not be committed."
+}

@@ -1,10 +1,13 @@
 # Publication handoff: two-body autonomous reflection
 
 This is a milestone publication packet, not the campaign's current recovery
-checkpoint. The science parent is PR9659 at
-f5f5eda7427453aac726b394381c965f9e28ac03. Current-main instruction authority
-was refreshed at 2bb6c1a54721e70512922fb10d4495adf8ea3042; this branch did not
-merge that science. Review the new child delta separately from inherited work.
+checkpoint. The original science parent is PR9659 at
+f5f5eda7427453aac726b394381c965f9e28ac03. That PR was landed externally and
+its branch deleted. Only this new milestone was rebased onto current main at
+69cf6a289b2ec06213473f1549c51a57c29b6d70; ten relevant instruction sources
+are unchanged. Review the new milestone delta against that main revision.
+No science was merged or pushed to main by this campaign. Original source
+arguments and earlier execution evidence remain pinned and preserved.
 
 The qualified result replaces the supplied three-body boundary with a distinct
 positive nearest-neighbor two-body source ladder. It retains the complete

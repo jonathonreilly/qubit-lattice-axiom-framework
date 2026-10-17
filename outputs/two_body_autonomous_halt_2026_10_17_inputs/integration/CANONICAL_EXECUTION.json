@@ -1,19 +1,19 @@
 {
-  "started_utc": "2026-10-17T00:37:00.729308+00:00",
-  "ended_utc": "2026-10-17T00:37:02.954889+00:00",
+  "started_utc": "2026-10-17T00:47:54.920932+00:00",
+  "ended_utc": "2026-10-17T00:47:57.885835+00:00",
   "runner": "scripts/two_body_autonomous_halt_2026_10_17.py",
   "timeout_sec": 120,
   "status": "ok",
   "exit_code": 0,
-  "elapsed_sec": 2.1419870853424072,
+  "elapsed_sec": 2.832818031311035,
   "cache_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/two_body_autonomous_halt_2026_10_17.txt",
   "cache_status": "fresh",
-  "stdout_bytes": 5486,
+  "stdout_bytes": 5485,
   "stderr_bytes": 0,
-  "stdout_sha256": "da8e56d544c24372867af3bc9e3f85a681b7643613ca58a667096b3d0f0da01f",
+  "stdout_sha256": "9c2d025e5cda6d2169c51b2a4d59c88d889da4d1c5089f4e1bff4bde79a20ede",
   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "preexecution_output_slots": "Missing output files were explicitly initialized as not_executed before identity capture, avoiding output-parent creation during execution.",
   "scope": "Exact finite certificate and separate checker execution only; no large-clock evolution, infinite-time experiment or retained audit.",
-  "cache_bytes": 5839,
-  "cache_sha256": "ce560027e7cafbff48d4f654f3b043fa65af733828d318080a8c0509aae2aeb3"
+  "cache_bytes": 5838,
+  "cache_sha256": "a001116fb8ccf765463a7526e3081ab6cd586d0342e258770d17c6b51b6a40b0"
 }

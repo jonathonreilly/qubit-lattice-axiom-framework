@@ -1,0 +1,44 @@
+{
+  "reviewed_utc": "2026-10-17T01:53:03.269250+00:00",
+  "status": "Draft narrative accepted as a faithful conditional presentation of qualified sources, pending final canonical wrapper/portability review and actual execution.",
+  "draft": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/NOTE_DRAFT.md",
+    "bytes": 93822,
+    "sha256": "49a8a8a83bfab83afc033e1fa35a74185dbc847a60c59a48d27bee88ebee96de"
+  },
+  "lead": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/NOTE_LEAD.md",
+    "bytes": 23782,
+    "sha256": "21caa1533524c906261a007a03557e3fd916d5682a3faab734437f57afdeee88"
+  },
+  "plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/INTEGRATION_PLAN.md",
+    "bytes": 19941,
+    "sha256": "6ea7acba2028c088287421a4c82cb509bd8fb33da39cd182b90a192c4ddc3068"
+  },
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/SOURCE_INVENTORY.json",
+    "bytes": 87914,
+    "sha256": "f21424757c51796c6fb1daf561d7959720c5833ad5534c1bf8717ac4e2219546"
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/FREEZE.json",
+    "bytes": 35543,
+    "sha256": "ebaec3d56d513b671515c3caf03e360e420ed7c8a4af35512ed3efeb460a20ac"
+  },
+  "verification": {
+    "frozen_files": 175,
+    "source_original_snapshot_pairs": 152,
+    "byte_identical_embedded_bodies": 3,
+    "parent_note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    }
+  },
+  "root_coverage": "Complete new lead, plan, source inventory and nonproof framing read. The three full proof bodies and their qualified interfaces were already read; exact byte identity verified. Frozen duplicate inventories checked deterministically.",
+  "required_plan_correction": "Plan section6.4 indiscriminately lists full pipeline/strict lint/changed-evidence before publication. Apply current conformance section12: relevant focused checks at this milestone; shared integrated-current-main pipeline/strict lint/changed-evidence are actual landing gates. No landing or retained status is claimed.",
+  "integration_decision": "Use a sibling branch from PR9661 pinned0e8375354c42963234cc4b15b14ab6bb553c713d. No scientific dependence on structural PR9663. Preserve original source bodies and history; no calibration or joint-box composition.",
+  "next_gate": "Prepare canonical wrappers and explicit portable input mapping. Root reads complete changed scientific code paths before canonical execution. All mathematical source checks remain; actual combined caps distinguished from historical caps.",
+  "editable_prompt_changes": []
+}

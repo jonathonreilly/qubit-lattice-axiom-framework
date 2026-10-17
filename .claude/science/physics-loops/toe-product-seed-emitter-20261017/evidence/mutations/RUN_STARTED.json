@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-10-17T02:23:27.751463+00:00",
+  "completion_signal": "Root explicitly reported canonical_02 success/cache freshness and authorized mutation execution in this turn; canonical_01 is not used as the baseline.",
+  "baseline_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/EXECUTION.json",
+    "bytes": 2360,
+    "sha256": "40b90d012a3358b22225955cdb77c3ac988c8550a24d09fafe6b71338d514783"
+  },
+  "root_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_PORTABILITY_ACCEPTANCE.json",
+    "bytes": 7311,
+    "sha256": "4442fa7f1409992d37feb8f56065e2f36ca44d83ab8d398c4fd18e0d4f2451f6"
+  },
+  "accepted_plan": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json",
+    "bytes": 10465,
+    "sha256": "3f7d1924a6d8e0b5ba28eecc3cf80ba3b1c62df9ca78b7b671c46c336d5aba97"
+  },
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/run_mutations.py",
+    "bytes": 10869,
+    "sha256": "79da80d8032f40f428f57e92ebc3aafbbe57576cfbe7370690e2a13515dc0f9d"
+  },
+  "harness": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/case_harness.py",
+    "bytes": 3849,
+    "sha256": "43e51be98ea53a2df9a93d7ae5d2dccdd0f391f23dffcee5ef14035579915a7e"
+  },
+  "cases": 12,
+  "initial_attempts_per_case": 1,
+  "per_case_CPU_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "per_case_external_wall_seconds": 60,
+  "aggregate_initial_wall_cap_seconds": 720,
+  "scientific_scope": "Fault sensitivity of approved finite calculations; no new interval/theorem proof or retained verdict."
+}

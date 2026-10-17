@@ -1,0 +1,151 @@
+{
+  "status": "Static portability checks completed; canonical scientific execution remains pending.",
+  "original_freeze_verified_files": 175,
+  "frozen_source_context_copies": 152,
+  "embedded_bodies": 3,
+  "AST_roundtrip": {
+    "local_author": {
+      "unchanged": 58,
+      "adapted": 1,
+      "removed_transport_only": 2,
+      "adaptation_events": 3,
+      "preserved_assert_ASTs": 1,
+      "function": "run_local_author"
+    },
+    "local_reviewer": {
+      "unchanged": 115,
+      "adapted": 4,
+      "removed_transport_only": 4,
+      "adaptation_events": 4,
+      "preserved_assert_ASTs": 39,
+      "function": "run_local_reviewer"
+    },
+    "installed_author": {
+      "unchanged": 225,
+      "adapted": 3,
+      "removed_transport_only": 3,
+      "adaptation_events": 6,
+      "preserved_assert_ASTs": 62,
+      "function": "run_installed_author"
+    },
+    "installed_reviewer": {
+      "unchanged": 221,
+      "adapted": 0,
+      "removed_transport_only": 3,
+      "adaptation_events": 0,
+      "preserved_assert_ASTs": 71,
+      "function": "run_installed_reviewer"
+    },
+    "weighted_author": {
+      "unchanged": 52,
+      "adapted": 3,
+      "removed_transport_only": 4,
+      "adaptation_events": 4,
+      "preserved_assert_ASTs": 25,
+      "function": "run_weighted_author"
+    },
+    "weighted_reviewer": {
+      "unchanged": 182,
+      "adapted": 4,
+      "removed_transport_only": 9,
+      "adaptation_events": 4,
+      "preserved_assert_ASTs": 3,
+      "function": "run_weighted_reviewer"
+    }
+  },
+  "artifact_manifest_entries": 163,
+  "declared_inputs": 168,
+  "resolver": {
+    "alias_checks": [
+      {
+        "role": "local_author",
+        "aliases": 4,
+        "unique_local_files": 1
+      },
+      {
+        "role": "local_reviewer",
+        "aliases": 61,
+        "unique_local_files": 20
+      },
+      {
+        "role": "installed_author",
+        "aliases": 25,
+        "unique_local_files": 8
+      },
+      {
+        "role": "installed_reviewer",
+        "aliases": 4,
+        "unique_local_files": 1
+      },
+      {
+        "role": "weighted_author",
+        "aliases": 19,
+        "unique_local_files": 6
+      },
+      {
+        "role": "weighted_reviewer",
+        "aliases": 52,
+        "unique_local_files": 17
+      }
+    ],
+    "runtime_manifest_closure": [
+      {
+        "role": "local_reviewer",
+        "actual_manifest_rows_resolved": 18
+      },
+      {
+        "role": "installed_author",
+        "actual_manifest_rows_resolved": 6,
+        "absolute_logical_keys": 6
+      },
+      {
+        "role": "weighted_author",
+        "actual_manifest_rows_resolved": 4
+      },
+      {
+        "role": "weighted_reviewer",
+        "actual_manifest_rows_resolved": 15
+      }
+    ],
+    "rejected_bad_mappings": [
+      "traversal",
+      "absolute",
+      "size",
+      "hash"
+    ],
+    "undeclared_keys_rejected": 18,
+    "checked_reads": 265,
+    "source_root_access": "Only explicit canonical mapping; historical absolute strings treated as keys."
+  },
+  "historical_report_comparison": "Existing exact scalar fields satisfy all new primary consistency guards; no source replay.",
+  "mutation_plan": "Twelve source hashes and unique replacement anchors checked; no mutant imported or executed.",
+  "parser_checks": {
+    "graph_source": {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "bytes": 82578,
+      "sha256": "ea80a55574196fcb9b3573b01f2ed51d4893612f0e15b02354d4fcb2d023ca9e"
+    },
+    "primary": "scripts/product_seed_emitter_2026_10_17.py",
+    "helpers": [
+      "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "scripts/product_seed_emitter_local_2026_10_17.py",
+      "scripts/product_seed_emitter_weighted_2026_10_17.py"
+    ],
+    "citations": [
+      "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    ],
+    "graph_build_executed": false
+  },
+  "syntax_compiled_files": 24,
+  "active_links_checked": 83,
+  "active_markdown_files": 4,
+  "editable_whitespace": [],
+  "working_branch": "physics-loop/toe-product-seed-emitter-20261017",
+  "head": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "untracked_file_count": 183,
+  "scientific_functions_executed": 0,
+  "mutations_executed": 0,
+  "cache_created": false,
+  "limits": "AST reversal proves the stated source transformation, not theorem correctness or runtime reproducibility. No runtime imports of scientific helpers; no scientific assertions executed.",
+  "editable_prompt_changes": []
+}

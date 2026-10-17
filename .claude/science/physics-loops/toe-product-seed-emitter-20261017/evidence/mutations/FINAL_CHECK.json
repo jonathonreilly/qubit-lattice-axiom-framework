@@ -1,0 +1,610 @@
+{
+  "scope": "Post-run bookkeeping recheck only. No mutation or baseline re-executed.",
+  "cases": [
+    {
+      "case": "local_vacancy_scalar",
+      "selected_function": "run_local_author",
+      "original_helper_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "executed_helper": {
+        "path": "cases/01_local_vacancy_scalar/attempt_1/executed_helper.py",
+        "bytes": 19865,
+        "sha256": "5a8b394f9ba4a64f0254d487771b5141d7936a2beab930ca1efb08f499c6bf31"
+      },
+      "assertion_reached": "full 16-dimensional scalar-reserve identity",
+      "final_assertion_line": 38,
+      "exception_message": "full 16-dimensional scalar-reserve identity",
+      "elapsed_seconds": 0.5850991252809763,
+      "user_cpu_seconds": 0.22981,
+      "system_cpu_seconds": 0.069674,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/01_local_vacancy_scalar/attempt_1/EXECUTION.json",
+        "bytes": 2145,
+        "sha256": "02831ff54dd7c989c960a832f922785f4f316c84073e362723cfc0d8451a7b04"
+      },
+      "prelaunch": {
+        "path": "cases/01_local_vacancy_scalar/attempt_1/PRELAUNCH.json",
+        "bytes": 85885,
+        "sha256": "484d9f394bada6664c71b1357ead7a8a76d7bee290c802ae29cb488539c23b21"
+      },
+      "stdout": {
+        "path": "cases/01_local_vacancy_scalar/attempt_1/stdout.txt",
+        "bytes": 299,
+        "sha256": "be8bbb64bb9eabb0587940879d30ab6f5becaee11e6b3b5eafb498208a4f0acb"
+      },
+      "stderr": {
+        "path": "cases/01_local_vacancy_scalar/attempt_1/stderr.txt",
+        "bytes": 1043,
+        "sha256": "17259650aa52d0bd368aec2ddbfd8f7df71a77a16f555b79031e4604d296e793"
+      }
+    },
+    {
+      "case": "local_phase_conjugation",
+      "selected_function": "run_local_author",
+      "original_helper_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "executed_helper": {
+        "path": "cases/02_local_phase_conjugation/attempt_1/executed_helper.py",
+        "bytes": 19905,
+        "sha256": "d03d71a7afd3b8cb99e080feadba5587b1f53ef273968914444b80a2d8aaff25"
+      },
+      "assertion_reached": "return/right-emission central notch",
+      "final_assertion_line": 38,
+      "exception_message": "return/right-emission central notch",
+      "elapsed_seconds": 0.3695766250602901,
+      "user_cpu_seconds": 0.257189,
+      "system_cpu_seconds": 0.044724,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/02_local_phase_conjugation/attempt_1/EXECUTION.json",
+        "bytes": 2164,
+        "sha256": "403a96cc747cd61785e18bdf79df77be9bc7523434662af2808ad9fc2076c309"
+      },
+      "prelaunch": {
+        "path": "cases/02_local_phase_conjugation/attempt_1/PRELAUNCH.json",
+        "bytes": 85759,
+        "sha256": "a92ec37be2964bb413b6d40fea90a2e53639eb7ff18d0f1cd50d0298a775929b"
+      },
+      "stdout": {
+        "path": "cases/02_local_phase_conjugation/attempt_1/stdout.txt",
+        "bytes": 302,
+        "sha256": "2a77ee3c37241c8c6d1ba1663ba86d06f8f171dff1eab3f14c3fc74317ddabbc"
+      },
+      "stderr": {
+        "path": "cases/02_local_phase_conjugation/attempt_1/stderr.txt",
+        "bytes": 1044,
+        "sha256": "1203c63d50d8c63aedd8522a767d509cb42c1ef849124ac27a913f89043b2cb7"
+      }
+    },
+    {
+      "case": "installed_noncommuting_order",
+      "selected_function": "run_installed_reviewer",
+      "original_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "executed_helper": {
+        "path": "cases/03_installed_noncommuting_order/attempt_1/executed_helper.py",
+        "bytes": 34371,
+        "sha256": "80b53cfb8478af56ae8e8893407d9c07f05549ce598ed6aa0ed44e8e3bdadeea"
+      },
+      "assertion_reached": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))",
+      "final_assertion_line": 437,
+      "exception_message": "",
+      "elapsed_seconds": 0.5381714999675751,
+      "user_cpu_seconds": 0.42172099999999996,
+      "system_cpu_seconds": 0.057727,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/03_installed_noncommuting_order/attempt_1/EXECUTION.json",
+        "bytes": 2204,
+        "sha256": "8968d1fe40da765d9365e62e6f4423f0d7498c8d374ae9d048736769811dabba"
+      },
+      "prelaunch": {
+        "path": "cases/03_installed_noncommuting_order/attempt_1/PRELAUNCH.json",
+        "bytes": 85931,
+        "sha256": "a7e3c3742d5ddadbfbc2ab71fbbeb6e0245621c9b18d80665ea911714ef5ad45"
+      },
+      "stdout": {
+        "path": "cases/03_installed_noncommuting_order/attempt_1/stdout.txt",
+        "bytes": 313,
+        "sha256": "20c9ac1b6139d7eec5952cc4729747277836f85ec3307eea178c02d4f7906feb"
+      },
+      "stderr": {
+        "path": "cases/03_installed_noncommuting_order/attempt_1/stderr.txt",
+        "bytes": 652,
+        "sha256": "a972246cf9358bc8fc595c66b333dd4eb9df679ef40743c88d012020f3fe708f"
+      }
+    },
+    {
+      "case": "installed_lower_sign",
+      "selected_function": "run_installed_reviewer",
+      "original_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "executed_helper": {
+        "path": "cases/04_installed_lower_sign/attempt_1/executed_helper.py",
+        "bytes": 34370,
+        "sha256": "9db815edbeffd596e0a857570b600e2af07dd7ff71698c351b6ff62bd30e4a4d"
+      },
+      "assertion_reached": "assert exact_zero(direct_aug - aug)",
+      "final_assertion_line": 452,
+      "exception_message": "",
+      "elapsed_seconds": 0.48945329105481505,
+      "user_cpu_seconds": 0.4069560000000001,
+      "system_cpu_seconds": 0.04674499999999998,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/04_installed_lower_sign/attempt_1/EXECUTION.json",
+        "bytes": 2167,
+        "sha256": "2cb9ed20af125b7694493b364c3d8b80c9bf4dd99c7c70f72d7b77987975d532"
+      },
+      "prelaunch": {
+        "path": "cases/04_installed_lower_sign/attempt_1/PRELAUNCH.json",
+        "bytes": 85757,
+        "sha256": "e1153bfe92660fb9a031c312b0d7e19219465f32facfa184592ca0d3fd7c0812"
+      },
+      "stdout": {
+        "path": "cases/04_installed_lower_sign/attempt_1/stdout.txt",
+        "bytes": 305,
+        "sha256": "814ff89cc63f76d7a8957f327267ae062399501807cdfad7902ccbab2861060b"
+      },
+      "stderr": {
+        "path": "cases/04_installed_lower_sign/attempt_1/stderr.txt",
+        "bytes": 590,
+        "sha256": "ec703de2a4a8a05e10eb516f9f4eb81d97fb0d486b64c44c2bb53d38ecf33a70"
+      }
+    },
+    {
+      "case": "installed_density_jacobian",
+      "selected_function": "run_installed_reviewer",
+      "original_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "executed_helper": {
+        "path": "cases/05_installed_density_jacobian/attempt_1/executed_helper.py",
+        "bytes": 34363,
+        "sha256": "d65b6abea4b16fceb6105be5db8133c5a6b17918eff483d461294dfce0e32923"
+      },
+      "assertion_reached": "assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0",
+      "final_assertion_line": 489,
+      "exception_message": "",
+      "elapsed_seconds": 0.5991040840744972,
+      "user_cpu_seconds": 0.523811,
+      "system_cpu_seconds": 0.04699900000000001,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/05_installed_density_jacobian/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "f645566abbe4928769ba9e7f0c169079537dda388aede9cf03a7182e542219ee"
+      },
+      "prelaunch": {
+        "path": "cases/05_installed_density_jacobian/attempt_1/PRELAUNCH.json",
+        "bytes": 85872,
+        "sha256": "f4c7f4bf489cf056b990df7794b8c4844cd8c25694273fd1f775fbcf86d295f3"
+      },
+      "stdout": {
+        "path": "cases/05_installed_density_jacobian/attempt_1/stdout.txt",
+        "bytes": 311,
+        "sha256": "c30da7d95dfe01ccad0811e521597bdfe6f1221618dfeac874c9e3c8a4dcc77d"
+      },
+      "stderr": {
+        "path": "cases/05_installed_density_jacobian/attempt_1/stderr.txt",
+        "bytes": 644,
+        "sha256": "87c0a9507a2fdc21ca827e9c8922e1a09f9ef1a5f63b719dccf7b52f0f435aad"
+      }
+    },
+    {
+      "case": "installed_overlap_diagonal_only",
+      "selected_function": "run_installed_reviewer",
+      "original_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "executed_helper": {
+        "path": "cases/06_installed_overlap_diagonal_only/attempt_1/executed_helper.py",
+        "bytes": 34406,
+        "sha256": "de07bba1505fa7e99166a644b45e5ebb9440e5f7b47d5a979a6d5a26b44491a9"
+      },
+      "assertion_reached": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))",
+      "final_assertion_line": 501,
+      "exception_message": "",
+      "elapsed_seconds": 0.659040458034724,
+      "user_cpu_seconds": 0.5856729999999999,
+      "system_cpu_seconds": 0.04791400000000001,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/06_installed_overlap_diagonal_only/attempt_1/EXECUTION.json",
+        "bytes": 2231,
+        "sha256": "6f084815e83ce2b4ac857d4a37776f7f97e56540b55c04cefd8fea512481ffcf"
+      },
+      "prelaunch": {
+        "path": "cases/06_installed_overlap_diagonal_only/attempt_1/PRELAUNCH.json",
+        "bytes": 85975,
+        "sha256": "17b70826a7d1e9fdc64e84f2c822b16e32c856796eb6ea9a48a20d61e1232a1e"
+      },
+      "stdout": {
+        "path": "cases/06_installed_overlap_diagonal_only/attempt_1/stdout.txt",
+        "bytes": 316,
+        "sha256": "c0e6692afeaef55811ee0bb1bb395e2436b4afc23b77db8c1a4afd76572d06eb"
+      },
+      "stderr": {
+        "path": "cases/06_installed_overlap_diagonal_only/attempt_1/stderr.txt",
+        "bytes": 668,
+        "sha256": "f29aa1df6766f10442d5a96fbe00677df91fe7e1556b9fa0c6a9d7b3611030f7"
+      }
+    },
+    {
+      "case": "installed_grouped_localization",
+      "selected_function": "run_installed_author",
+      "original_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "executed_helper": {
+        "path": "cases/07_installed_grouped_localization/attempt_1/executed_helper.py",
+        "bytes": 34367,
+        "sha256": "7c8fefd88afbebe6e5ae2ea22584a0acf7e46960c29ff2b9dd71319935e8aadd"
+      },
+      "assertion_reached": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2",
+      "final_assertion_line": 156,
+      "exception_message": "",
+      "elapsed_seconds": 0.26896312460303307,
+      "user_cpu_seconds": 0.18861799999999995,
+      "system_cpu_seconds": 0.04583899999999996,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/07_installed_grouped_localization/attempt_1/EXECUTION.json",
+        "bytes": 2228,
+        "sha256": "eeb3e7a1fd1ee785566d40c2cee4472730052befee6b5c077421fc9e822d6a7e"
+      },
+      "prelaunch": {
+        "path": "cases/07_installed_grouped_localization/attempt_1/PRELAUNCH.json",
+        "bytes": 85859,
+        "sha256": "bbbb48418c76ed25fd1037ddc300e4e12f85c9318b6214ffdda1ed2e24b32159"
+      },
+      "stdout": {
+        "path": "cases/07_installed_grouped_localization/attempt_1/stdout.txt",
+        "bytes": 313,
+        "sha256": "c7243ad72187ecf2b225168cbe3fa1dbdebf0ddd3194747419f279b15de6636a"
+      },
+      "stderr": {
+        "path": "cases/07_installed_grouped_localization/attempt_1/stderr.txt",
+        "bytes": 648,
+        "sha256": "a8c34fc83e15f28092590890a73fc3888eea022ec7f29e30caa4eaf3b832708f"
+      }
+    },
+    {
+      "case": "weighted_closed_inverse",
+      "selected_function": "run_weighted_reviewer",
+      "original_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "executed_helper": {
+        "path": "cases/08_weighted_closed_inverse/attempt_1/executed_helper.py",
+        "bytes": 17879,
+        "sha256": "ca4623efbc7d5f9a91614d6e47a5b3ef1fdf1a74b721c1955020a8c61c865282"
+      },
+      "assertion_reached": "full_eight_coordinate_rank_one_inverse",
+      "final_assertion_line": 105,
+      "exception_message": "full_eight_coordinate_rank_one_inverse",
+      "elapsed_seconds": 4.053270666860044,
+      "user_cpu_seconds": 3.8436120000000003,
+      "system_cpu_seconds": 0.091032,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/08_weighted_closed_inverse/attempt_1/EXECUTION.json",
+        "bytes": 2173,
+        "sha256": "380b59f39b24709cb555510f25486480fdce286882925867e288d9ebbb0f9bae"
+      },
+      "prelaunch": {
+        "path": "cases/08_weighted_closed_inverse/attempt_1/PRELAUNCH.json",
+        "bytes": 85759,
+        "sha256": "d1d5ea7184e570a0ee043578f930ea5d7197182916383b13267acbf891e7254c"
+      },
+      "stdout": {
+        "path": "cases/08_weighted_closed_inverse/attempt_1/stdout.txt",
+        "bytes": 307,
+        "sha256": "466d8bacaec34d167113663ff03f2fe88463d90eb5e19a77940c1ee0a045d462"
+      },
+      "stderr": {
+        "path": "cases/08_weighted_closed_inverse/attempt_1/stderr.txt",
+        "bytes": 1351,
+        "sha256": "c3718fd4733943047c39eecba2aef5a5a395448b0c05a1f44971d4cbfb59d9d7"
+      }
+    },
+    {
+      "case": "weighted_cutoff_derivative",
+      "selected_function": "run_weighted_reviewer",
+      "original_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "executed_helper": {
+        "path": "cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+        "bytes": 17865,
+        "sha256": "35eb5456d32583be3bfd86d7338f9c60d1b9c07a9bac69384fdbcf4d79042a6f"
+      },
+      "assertion_reached": "cutoff_and_quotient_derivative",
+      "final_assertion_line": 105,
+      "exception_message": "cutoff_and_quotient_derivative",
+      "elapsed_seconds": 0.4282954167574644,
+      "user_cpu_seconds": 0.3375490000000001,
+      "system_cpu_seconds": 0.05125500000000005,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/09_weighted_cutoff_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2203,
+        "sha256": "8b9206157fc28a88ef5b139e5d14ad0376987d1a1c94d5da415b63117c0720f0"
+      },
+      "prelaunch": {
+        "path": "cases/09_weighted_cutoff_derivative/attempt_1/PRELAUNCH.json",
+        "bytes": 85941,
+        "sha256": "1950af212a85d80fffbd4cd056f951ee07f6c4e488e64cce8aeaa3774c6e21c1"
+      },
+      "stdout": {
+        "path": "cases/09_weighted_cutoff_derivative/attempt_1/stdout.txt",
+        "bytes": 310,
+        "sha256": "a7fc9c99e1d812f94cf2109b3fa874bbbd35abdaf269cf1de24b9c15e3c51970"
+      },
+      "stderr": {
+        "path": "cases/09_weighted_cutoff_derivative/attempt_1/stderr.txt",
+        "bytes": 1278,
+        "sha256": "0804b1ed03ea337a147888a754e55838e634d98547b21bc6c1d1a2b0434a66b4"
+      }
+    },
+    {
+      "case": "weighted_localized_derivative",
+      "selected_function": "run_weighted_reviewer",
+      "original_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "executed_helper": {
+        "path": "cases/10_weighted_localized_derivative/attempt_1/executed_helper.py",
+        "bytes": 17867,
+        "sha256": "1e0718a9d1f9b365ac8b7d5ff531030d65cd9ac2a6f185e835995e28547223f7"
+      },
+      "assertion_reached": "U_coefficient_complete",
+      "final_assertion_line": 105,
+      "exception_message": "U_coefficient_complete",
+      "elapsed_seconds": 10.344992249738425,
+      "user_cpu_seconds": 10.066968,
+      "system_cpu_seconds": 0.15297399999999994,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/10_weighted_localized_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2211,
+        "sha256": "3959208aeebe7fc081f304640a5831d62fd68078712d86e325a9b55ecac5c92b"
+      },
+      "prelaunch": {
+        "path": "cases/10_weighted_localized_derivative/attempt_1/PRELAUNCH.json",
+        "bytes": 85912,
+        "sha256": "5da17d30c8a163177542937ce40de13d21fa6f707edc2925214273abdfa6c4af"
+      },
+      "stdout": {
+        "path": "cases/10_weighted_localized_derivative/attempt_1/stdout.txt",
+        "bytes": 313,
+        "sha256": "a9df8a1dd24869a3daace3dad1a6a6e9f181f04e4228d7fd6a9fe82d4289b4de"
+      },
+      "stderr": {
+        "path": "cases/10_weighted_localized_derivative/attempt_1/stderr.txt",
+        "bytes": 988,
+        "sha256": "3651b926414324f9c13aaa38f82ad53c15aa892a91b7722bcd2912cc6c629f62"
+      }
+    },
+    {
+      "case": "weighted_first_omitted_hops",
+      "selected_function": "run_weighted_reviewer",
+      "original_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "executed_helper": {
+        "path": "cases/11_weighted_first_omitted_hops/attempt_1/executed_helper.py",
+        "bytes": 17888,
+        "sha256": "152ca1ecc3b21b43bafeda645ea95b3f12c7faf7b4df73dc1c73cfb3d9c260c3"
+      },
+      "assertion_reached": "graph_distance_formula",
+      "final_assertion_line": 105,
+      "exception_message": "graph_distance_formula",
+      "elapsed_seconds": 10.643350459169596,
+      "user_cpu_seconds": 10.171109000000001,
+      "system_cpu_seconds": 0.18084699999999998,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/11_weighted_first_omitted_hops/attempt_1/EXECUTION.json",
+        "bytes": 2208,
+        "sha256": "6699dce399abf042da4b61fa57617e991610e8346b979d965cede361b45eebb4"
+      },
+      "prelaunch": {
+        "path": "cases/11_weighted_first_omitted_hops/attempt_1/PRELAUNCH.json",
+        "bytes": 85760,
+        "sha256": "8751c4929e746c0f3babb33fee8d28b05e93aa41b363fc6991df8cb304bf0c8d"
+      },
+      "stdout": {
+        "path": "cases/11_weighted_first_omitted_hops/attempt_1/stdout.txt",
+        "bytes": 311,
+        "sha256": "e4c7b69f6fa6503689055f13dd535dca8dbf1273b3ac80a094269e81614d146a"
+      },
+      "stderr": {
+        "path": "cases/11_weighted_first_omitted_hops/attempt_1/stderr.txt",
+        "bytes": 946,
+        "sha256": "e46fc58cf6b55bc419ba90376aff67296cc947e749952326dcd9b14abeae2541"
+      }
+    },
+    {
+      "case": "weighted_grouped_ceiling",
+      "selected_function": "run_weighted_author",
+      "original_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "executed_helper": {
+        "path": "cases/12_weighted_grouped_ceiling/attempt_1/executed_helper.py",
+        "bytes": 17888,
+        "sha256": "387a7cb2c4f13736aab876fbd5aa738620cca5d9e0620ae45978abe1cb1e1ae8"
+      },
+      "assertion_reached": "assert 2 * Dj * Dj < D * D",
+      "final_assertion_line": 55,
+      "exception_message": "",
+      "elapsed_seconds": 0.1998707503080368,
+      "user_cpu_seconds": 0.06044299999999936,
+      "system_cpu_seconds": 0.033406999999999965,
+      "CPU_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_seconds": 60,
+      "returncode": 1,
+      "scientific_assertion_rejection_confirmed": true,
+      "receipt": {
+        "path": "cases/12_weighted_grouped_ceiling/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "458afbe3cd14d158cc671c4759307028cc4db1ecd10a2d08caabf6fb9f2e0ac6"
+      },
+      "prelaunch": {
+        "path": "cases/12_weighted_grouped_ceiling/attempt_1/PRELAUNCH.json",
+        "bytes": 85717,
+        "sha256": "e9f714b9339a758a490e45c0d7687bdf766e1a4bdc4fa9305aa3d59b0cf7bb9a"
+      },
+      "stdout": {
+        "path": "cases/12_weighted_grouped_ceiling/attempt_1/stdout.txt",
+        "bytes": 306,
+        "sha256": "f70c136a05895387d30473afa2d5668bff3f058d4d0bdb5efc018d1df3e1e392"
+      },
+      "stderr": {
+        "path": "cases/12_weighted_grouped_ceiling/attempt_1/stderr.txt",
+        "bytes": 576,
+        "sha256": "81d8204ee05f7ac8761b4256413aed912f2d8700f808bcdfd10f8146683a1c59"
+      }
+    }
+  ],
+  "cases_count": 12,
+  "all_single_attempt": true,
+  "unexpected_failures": 0,
+  "source_binary_input_bindings_serialized_before_every_launch": true,
+  "binding_counts_per_case": [
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177,
+    177
+  ],
+  "canonical_source_and_declared_inputs_bound_per_case": 169,
+  "metadata_qualification": "The unchanged FrozenInputs source retains the literal generic canonical runner_cache wall-enforcement description. These mutations used the external subprocess.run(timeout=60) enforcement in run_mutations.py, not runner_cache. Both the recorded CPU and wall limits are60. No source/output is rewritten to obscure that distinction.",
+  "runtime_versions": {
+    "local_vacancy_scalar": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "local_phase_conjugation": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "installed_noncommuting_order": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "installed_lower_sign": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "installed_density_jacobian": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "installed_overlap_diagonal_only": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "installed_grouped_localization": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "weighted_closed_inverse": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "weighted_cutoff_derivative": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "weighted_localized_derivative": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "weighted_first_omitted_hops": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    },
+    "weighted_grouped_ceiling": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy_distribution_version": "1.14.0",
+      "mpmath_distribution_version": "1.3.0"
+    }
+  },
+  "sum_child_user_plus_system_cpu_seconds": 27.962596,
+  "sum_child_wall_seconds": 29.179187750909477,
+  "baseline": "Successful root canonical_02 only; canonical_01 is explicitly excluded. No baseline replay here.",
+  "limitations": "Sensitivity of these twelve existing scientific checks, not a new independent theorem proof, interval proof from samples, native realization, practical cost, retained audit or parameter-box composition.",
+  "editable_prompt_changes": [],
+  "canonical_changes_by_this_task": [],
+  "git_changes_by_this_task": []
+}

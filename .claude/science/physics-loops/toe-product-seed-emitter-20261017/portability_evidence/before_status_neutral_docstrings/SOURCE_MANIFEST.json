@@ -1,0 +1,63 @@
+{
+  "status": "Prepared for root portability review; canonical scientific execution pending.",
+  "parent_head": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "branch": "physics-loop/toe-product-seed-emitter-20261017",
+  "frozen_source_files": 152,
+  "declared_inputs": 168,
+  "note": {
+    "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 95437,
+    "sha256": "3a63a01dc72e0506fe5a5fb52ab7a25a1884f50453b3010e649e4902f67d15fa"
+  },
+  "primary": {
+    "path": "scripts/product_seed_emitter_2026_10_17.py",
+    "bytes": 27118,
+    "sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26"
+  },
+  "helpers": [
+    {
+      "path": "scripts/product_seed_emitter_local_2026_10_17.py",
+      "bytes": 19885,
+      "sha256": "538c263d5756872af57d325cbcbb5223c5f3f42628092b50d5c2c3cb2b9a747d"
+    },
+    {
+      "path": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "bytes": 34364,
+      "sha256": "8435990e21d7a99952907d348975e7cd0a99c5b962906a91cbb2d8616a3db40f"
+    },
+    {
+      "path": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "bytes": 17881,
+      "sha256": "6cf5814ff6d4e7c18b303092365bac0e1017d626bc9bb41407cbb507a697bf21"
+    }
+  ],
+  "artifact_manifest": {
+    "path": "outputs/product_seed_emitter_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 40934,
+    "sha256": "24bb0dda492eb65f6753be1439816b42fdcb60fe7e6e0fc392ef5fbfb9a1036d"
+  },
+  "input_map": {
+    "path": "outputs/product_seed_emitter_2026_10_17_inputs/INPUT_MAP.json",
+    "bytes": 64102,
+    "sha256": "145ea13e0876b664a6dc1f0815d758c6a795b694dc961cd9fc962db873e91c0c"
+  },
+  "proof_body_map": {
+    "path": "outputs/product_seed_emitter_2026_10_17_inputs/EMBEDDED_SOURCE_MAP.json",
+    "bytes": 1476,
+    "sha256": "dd4f3f590b7cb8948136d5b61b079ead8899998a59e67bb48478dca23774c191"
+  },
+  "source_adaptation_map": {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json",
+    "bytes": 623613,
+    "sha256": "e0355c2ddfc39944781fdb997d26e1b1131ec1ef1a80d63a58e2d91e15392ac2"
+  },
+  "root_draft_review": {
+    "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/ROOT_DRAFT_REVIEW.json",
+    "bytes": 3134,
+    "sha256": "0ba6c3ffa006a150f77bb30d865983004770dfc12d2e0d438fdce9fd35b6e15c"
+  },
+  "science_executions": 0,
+  "mutations_executed": 0,
+  "canonical_cache_created": false,
+  "editable_prompt_changes": []
+}

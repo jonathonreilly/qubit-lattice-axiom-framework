@@ -1,0 +1,32 @@
+{
+  "scope": "Preparation failures only; no failed scientific attempt occurred.",
+  "bounded_attempts": [
+    {
+      "attempt": "static_build_attempt_1",
+      "result": "SyntaxError: positional argument follows keyword argument at builder line 157. Parsing failed before any canonical file was created.",
+      "preserved": "portability_evidence/static_build_attempt_1/"
+    },
+    {
+      "attempt": "static_build_attempt_2",
+      "result": "Corrected syntax; deterministic build completed.",
+      "preserved": "portability_evidence/static_build_attempt_2/"
+    },
+    {
+      "attempt": "static_verify_attempt_1",
+      "result": "Passed before status-neutral docstring request. Complete streams and executed script retained.",
+      "preserved": "portability_evidence/static_verify_attempt_1/"
+    },
+    {
+      "attempt": "static_verify_attempt_2",
+      "result": "Passed after module-docstring-only change; final full static JSON and streams preserved.",
+      "preserved": "portability_evidence/static_verify_attempt_2/"
+    }
+  ],
+  "inspection_corrections": [
+    "A preliminary read guessed weighted_emitter_escape_review/RESULTS.json; the declared output is weighted_emitter_escape_review/runs/attempt_1/RESULT.json, which was then read. No source edited.",
+    "An initial read looked for scripts/build_citation_graph.py; exact inventory resolved docs/audit/scripts/build_citation_graph.py before parser checks.",
+    "One patch used a nonexistent context line and was rejected without modifying a file. The subsequent explicit-context report edit succeeded."
+  ],
+  "scientific_functions_executed": 0,
+  "scientific_mutations_executed": 0
+}

@@ -1,0 +1,34 @@
+{
+  "status": "Static adaptation built; verification and root review next. No scientific execution.",
+  "frozen_files": 152,
+  "functions": 6,
+  "helpers": [
+    {
+      "path": "scripts/product_seed_emitter_local_2026_10_17.py",
+      "bytes": 19885,
+      "sha256": "538c263d5756872af57d325cbcbb5223c5f3f42628092b50d5c2c3cb2b9a747d"
+    },
+    {
+      "path": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "bytes": 34364,
+      "sha256": "8435990e21d7a99952907d348975e7cd0a99c5b962906a91cbb2d8616a3db40f"
+    },
+    {
+      "path": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "bytes": 17881,
+      "sha256": "6cf5814ff6d4e7c18b303092365bac0e1017d626bc9bb41407cbb507a697bf21"
+    }
+  ],
+  "artifact_entries": 163,
+  "declared_inputs": 168,
+  "note": {
+    "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 95437,
+    "sha256": "3a63a01dc72e0506fe5a5fb52ab7a25a1884f50453b3010e649e4902f67d15fa"
+  },
+  "primary": {
+    "path": "scripts/product_seed_emitter_2026_10_17.py",
+    "bytes": 27118,
+    "sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26"
+  }
+}

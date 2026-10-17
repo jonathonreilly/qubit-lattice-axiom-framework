@@ -1,0 +1,37 @@
+{
+  "scope": "Deterministic copying/hashing/AST wrapping only; no scientific program imported or executed.",
+  "started_utc": "2026-10-17T02:03:39.627589+00:00",
+  "elapsed_seconds": 0.033397499937564135,
+  "cpu_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_cap_seconds": 60,
+  "returncode": 1,
+  "timeout": false,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/build_adaptation.py"
+  ],
+  "builder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/build_adaptation.py",
+    "bytes": 20161,
+    "sha256": "3f60608585959d5759ece10f6bc85b56f1243d5f0415fdf6b6decef3b8344e2b"
+  },
+  "template": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/primary_template.py.txt",
+    "bytes": 7430,
+    "sha256": "e4af0c8d9704a068b1924907c5dd0cd5f17f4c674b7dff0115b3b00f53c67e0a"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/static_build_attempt_1/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/static_build_attempt_1/stderr.txt",
+    "bytes": 350,
+    "sha256": "6a6b3898d4233530fe740c892c6764cd6c0b20da48996a9c208784c703b76e20"
+  }
+}

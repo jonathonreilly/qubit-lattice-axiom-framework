@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-10-17T02:36:34.225890+00:00",
+  "scope": "Final root packet review after focused checks; only execution evidence/inventory additions.",
+  "earlier_paths_verified_unchanged": 458,
+  "focused_execution": {
+    "bytes": 1932,
+    "sha256": "43e10ce51f588a36dd9fcd586a5752dd2ac927fd3b9657455b104add5a914cb6"
+  },
+  "publication_evidence": {
+    "bytes": 60798,
+    "sha256": "b49abb02b3a9d72fa731ab0ac8acc6e7653bf2b7af36898b88ba3468956f4c70"
+  },
+  "root_wrapper_review": {
+    "bytes": 3308,
+    "sha256": "a1a8752b5eb6412105f94b7b16017f31e40483887b0b7a0cd9ba6a2014ac95e0"
+  },
+  "source_freshness": {
+    "bytes": 1917,
+    "sha256": "82cc7a97b50e90c2733f999d128b6b11b97720f066ba1c25065374aa6b6bc79d"
+  },
+  "all_archive_maps_verified_lossless": true,
+  "extra_paths": [
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/focused_success/EXECUTION.json",
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/focused_success/executed_source.py.gz",
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/focused_success/stderr.gz",
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/evidence/focused_success/stdout.gz",
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/FOCUSED_EXECUTION.json",
+    ".claude/science/physics-loops/toe-product-seed-emitter-20261017/PUBLICATION_EVIDENCE.json"
+  ],
+  "declared_scientific_inputs_changed": false,
+  "editable_prompt_changes": [],
+  "decision": "Ready for exact staged-byte review and regular PR; shared integrated-main gates and retained audit remain pending."
+}

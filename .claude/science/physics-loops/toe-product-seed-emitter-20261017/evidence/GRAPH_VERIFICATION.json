@@ -1,0 +1,59 @@
+{
+  "old_counts": {
+    "node_count": 7208,
+    "edge_count": 16163
+  },
+  "new_counts": {
+    "node_count": 7209,
+    "edge_count": 16164
+  },
+  "added": [
+    "product_seed_emitter_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "product_seed_emitter_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. **Status:** `proposed_retained`.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    ],
+    "helper_runner_paths": [
+      "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "scripts/product_seed_emitter_local_2026_10_17.py",
+      "scripts/product_seed_emitter_weighted_2026_10_17.py"
+    ],
+    "note_hash": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+    "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/product_seed_emitter_2026_10_17.py",
+    "title": "A product-seed emitter for autonomous two-body reflection"
+  },
+  "new_edges": [
+    {
+      "from": "product_seed_emitter_bounded_theorem_note_2026-10-17",
+      "to": "two_body_autonomous_halt_bounded_theorem_note_2026-10-17"
+    }
+  ],
+  "manifest_sha256": "3b7f03f494ec2a4559a9c03c597aa962306c0849fe64a374e24a188e94737816",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/run_citation_graph_build.py",
+      "started_utc": "2026-10-17T02:21:32.375013+00:00",
+      "elapsed_seconds": 129.4403789169155,
+      "wall_cap_seconds": 180,
+      "exit_code": 0,
+      "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "started_utc": "2026-10-17T02:23:41.824073+00:00",
+      "elapsed_seconds": 0.07231299998238683,
+      "wall_cap_seconds": 60,
+      "exit_code": 0,
+      "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    }
+  ],
+  "scope": "New product-seed emitter note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+}

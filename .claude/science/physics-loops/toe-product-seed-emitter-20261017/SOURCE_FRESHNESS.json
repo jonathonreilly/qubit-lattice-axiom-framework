@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-10-17T02:35:17.158518+00:00",
+  "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "parent9661": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+  "open_prs": [
+    {
+      "baseRefName": "physics-loop/toe-two-body-autonomous-halt-20261017",
+      "headRefName": "physics-loop/toe-structural-coefficient-box-20261017",
+      "headRefOid": "cc06c0cc93d7c07dc726bb16556d6e68de24f204",
+      "isDraft": false,
+      "number": 9663,
+      "title": "[physics-loop] toe-structural-coefficient-box bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9663"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/toe-campaign-12h-20261017-c2",
+      "headRefOid": "fe771fa825a52716a20cafbb088a72cc29b36c68",
+      "isDraft": false,
+      "number": 9662,
+      "title": "C2\u2013C3: soldered stabilizer rules \u2014 3D charge motion needs free variables; unsoldered toric codes move",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9662"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-two-body-autonomous-halt-20261017",
+      "headRefOid": "0e8375354c42963234cc4b15b14ab6bb553c713d",
+      "isDraft": false,
+      "number": 9661,
+      "title": "[physics-loop] toe-two-body-autonomous-reflection bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9661"
+    }
+  ],
+  "applicable_instruction_status": "Current main and the active worktree instruction files remain unchanged from the complete prior review; no instruction delta to apply.",
+  "scope": "Parent9661 and structural9663 retain exact reviewed source identities. Unrelated9662 retains its previously read body and81-path inventory; no premise imported. No emitter duplicate is open.",
+  "editable_prompt_changes": []
+}

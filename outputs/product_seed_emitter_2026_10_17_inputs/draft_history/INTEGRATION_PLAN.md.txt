@@ -1,0 +1,284 @@
+# Product-seed emitter milestone: integration plan
+
+This is a drafting packet for one regular milestone after the structural-box
+PR. No repository changes, physics replay, canonical cache, publication or
+audit were performed here. The installed and weighted sources are separately
+root-qualified for conditional provisional reuse. This packet does not compose
+the emitter with a ladder coefficient box or a calibration theorem.
+
+The [note draft](NOTE_DRAFT.md) has a complete current status block and the
+three full source proof bodies. The [inventory](SOURCE_INVENTORY.md) names the
+six scientific programs, launchers, exact inputs, actual outputs and review
+limits. [SOURCE_INVENTORY.json](SOURCE_INVENTORY.json) pins all 152 copied files
+(1,692,208 bytes), including qualification decisions and the existing parent.
+The [body map](EMBEDDED_SOURCE_MAP.json) pins the byte ranges of the embedded
+proofs. The three originals must remain byte-identical through integration.
+
+## 1. Planned paths and declaration
+
+Use the following coherent path family, subject only to a root-approved naming
+change recorded before integration:
+
+| Artifact | Proposed canonical path |
+|---|---|
+| Source note | `docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md` |
+| Primary runner | `scripts/product_seed_emitter_2026_10_17.py` |
+| Local author/reviewer functions | `scripts/product_seed_emitter_local_2026_10_17.py` |
+| Installed author/reviewer functions | `scripts/product_seed_emitter_installed_2026_10_17.py` |
+| Weighted author/reviewer functions | `scripts/product_seed_emitter_weighted_2026_10_17.py` |
+| Actual canonical result | `outputs/product_seed_emitter_2026_10_17.json` |
+| Frozen source bundle and review/integration receipts | `outputs/product_seed_emitter_2026_10_17_inputs/` |
+| Actual primary cache | `logs/runner-cache/product_seed_emitter_2026_10_17.txt` |
+
+The primary must directly import and invoke all six scientific check functions
+from the three helpers. This makes their mathematical bodies part of the
+restricted audit packet through the ordinary imported-helper extraction. Check
+that extraction at the actual integration revision; do not silently fall back
+to an unregistered subprocess helper. This design does not request a change to
+the governed helper registry or dependency-policy files.
+
+Declare `AUDIT_TIMEOUT_SEC = 120` at the primary's top level, and the same
+declaration in each helper if it is independently runnable. This is a proposed
+execution cap, not a claim that an adapted run has completed. Keep the original
+dimensions and mathematical workloads: largest actual physical matrix 24,
+author envelope 48, independent installed graph 14, independent weighted inverse
+8, no optimizer, no time evolution, no grid-as-proof and no resonance
+quadrature. The historical combined wall costs suggest this cap is reasonable;
+an actual bounded run must establish whether the portable implementation fits.
+Do not relax an inequality or remove a check if it fails.
+
+The primary's `AUDIT_INPUT_PATHS` must explicitly enumerate every file its six
+functions read, including integrity-only reads, the canonical note, helper
+scripts, the package manifest, frozen source pins, full proof bodies, exact
+point and interval inputs, actual historical outputs used for comparison, and
+qualification records if their bindings are asserted. All must be tracked
+regular files present on the base or in the reviewed delta. Distinguish these
+dependency classes in the report:
+
+- Scientific numerical inputs: exact point parameters; the inherited interval
+  and installed certificates; local author exact constants compared by the
+  local reviewer; analytically justified constants embedded in independent
+  code.
+- Scientific proof inputs: generic V2, exact interval application, full local
+  construction, installed and weighted arguments, and their checked interfaces.
+- Integrity/history inputs: manifests, source snapshots, past outputs,
+  launcher/caps/runtime receipts and qualifications. Hash equality proves
+  identity, not a mathematical inequality.
+
+Do not read a live research-run path at canonical runtime. Historical absolute
+paths inside immutable manifests remain provenance strings. A separate resolver
+must map each logical original/snapshot identity to an explicit repository-local
+path and check its bytes/hash. Original JSON must not be rewritten to appear as
+a historical canonical execution.
+
+## 2. Portable adaptation that still needs review
+
+Keep all frozen programs and source evidence unchanged. Create separate helper
+functions that return reports and take explicit input paths; let the primary
+write its own canonical output. The complete adaptations require a focused
+portability/delta review before execution. The reviewer should compare every
+mathematical operation, branch, constant, assertion and input interpretation to
+the pinned original, not merely compare output summaries.
+
+Concrete changes needed:
+
+1. The originals execute at module import, set process CPU limits, use their
+   own `__file__` directory, and several parse command-line arguments or write
+   there. Wrap their actual code in functions; remove import-time execution and
+   output writes. Do not import a historical program unchanged into the primary.
+   In particular the weighted author's 5-second hard CPU limit cannot remain
+   an import-time limit on the combined 120-second process.
+2. Apply one declared primary resource envelope. Runtime metadata for a
+   canonical function call must describe that actual execution, while the
+   historical caps and receipts remain separate. Preserve mpmath precision,
+   exact Fraction/SymPy comparisons, source conventions, full dimensions and
+   all pre-existing diagnostic cases. Do not relabel floating displays as
+   outward enclosures or diagnose sampled points as uniform proof.
+3. The local reviewer reads the author's `ALGEBRA_CERTIFICATE.json` to compare
+   exact constants but independently derives its local matching/Gram checks.
+   Preserve that limited dependency explicitly. The installed independent
+   checker does not read author output for its conservative rational ceilings.
+   The weighted checker reads the installed certificate and separately derives
+   its integrals, full block factorization and weighted bounds. Keep these three
+   independence scopes distinct in the combined report.
+4. Preserve `run01_script.py`, `attempt_01/check_installed.py` and
+   `runs/attempt_1/executed_source.py` as actual executed sources. A new helper's
+   hash must never replace their recorded launch hashes. The route author had
+   no standalone launcher source; its original command and execution receipt
+   must not be retroactively described as a launcher program.
+5. The weighted author and reviewer currently write different result formats.
+   Return both full reports under clearly separate keys; assert the actual
+   exact final bounds in the primary. Keep the initial $10^{72}$ result and
+   weighted $10^{36}$ result separately visible, with the two corresponding
+   finite horizons.
+
+## 3. Required actual mathematical checks
+
+The primary must execute the mathematical paths, not merely parse prior PASS
+fields. These are the required families and their different derivations:
+
+| Family | Author path retained | Distinct check retained |
+|---|---|---|
+| Positive local cell, exact scalar and directional form factors | Full 16-dimensional projector-polynomial calculation and exact two-port algebra | Eight-dimensional bit-action/Gram assembly; four local matching equations; Pauli sign and missing-vacancy discriminators |
+| Installed tail and matching convention | Exact scalar finite elimination at $L=12$; full sixteen-direction structure; analytic inequalities; physical 90-digit diagnostics | Direct noncommuting two-channel outgoing graph, 14-dimensional full inverse and six-dimensional Schur matching; closed response and flux |
+| Common envelope and complete seed overlap | Reference spectral mass/variance, exact uniform constants, full two-by-two operator overlap | Independent rational enclosures, density Jacobian identity, rectangular-isometry and coherent-column discriminators; analytic review of the spectral measure step |
+| Full output and original escape bound | Full localized/emitter derivative constants, common phase, old aging, $10^{72}$ and finite-distance budgets | Independent conservative constants and complete output budget; exact finite graph hop test inherited from the local reviewer |
+| Weighted escape | Exact rational denominator/product ceilings and $10^{36}$ budget | Symbolic whole-line antiderivatives, cutoff calculation, non-Hermitian one-plus-seven inverse, coefficientwise products, independent exact budget and hop margin |
+
+The full proofs remain indispensable: these programs do not constitute a
+proof assistant, a completeness proof by numerical sampling, or a simulation
+to either enormous sufficient time. Bind the source-level Stieltjes,
+past-limit normalization, Hilbert-valued integration-by-parts and finite-graph
+polynomial arguments to the same frozen bodies. The portability review and
+canonical report must not claim to have independently re-proved those steps.
+
+## 4. Positive-case mutation targets
+
+Run bounded, isolated mutants of the adapted mathematical path against the
+unmutated independently constructed witness/predicate. Preserve full sources,
+outputs and exit codes for every attempted mutant, including any that survives.
+At least one load-bearing positive-case mutation must be caught in each changed
+check family. A hash mismatch alone is not the requested detection. Existing
+wrong-formula discriminators provide exact target cases; do not silently count
+their presence as execution of a mutation harness.
+
+| Positive case to corrupt | Concrete mutation | Required mathematical failure |
+|---|---|---|
+| Full positive cell and physical scalar | Delete one vacancy term, or omit $2\kappa I$ in the full-qubit target | Nonzero exact addition-minus-target matrix; local reviewer already has a missing-vacancy discriminator |
+| Phase direction | Replace the intended loop phase by its conjugate in one form factor while retaining the actual installed bonds | Intended right-emission/return notch fails; unitarity alone is insufficient |
+| Noncommuting installed self-energy | Replace $XTY$ by $YTX$, or commute $T$ and $Q$ | Direct full-graph kernel/Schur residual is nonzero in the independent two-channel witness |
+| Physical augmented matching sign | Flip the lower off-diagonal block | Direct tail elimination and proposed augmented matrix disagree exactly |
+| Reference normalization | Delete the $dE=v_gdk$ Jacobian | Retarded resolvent jump no longer equals the two continuum weights |
+| Common seed overlap and operator factors | Use diagonal overlap magnitudes only, discard off-diagonal Hermitian entries, or replace the square-sum by a maximum column error | Existing rectangular-isometry/aligned-column witness violates the claimed operator ceiling |
+| All emitter directions | Keep only the resonant entry in the installed inverse, or delete the complementary inverse summand in the weighted factorization | Nonzero closed emitter response and full eight-dimensional inverse identity reject the mutation |
+| Weighted cutoff and denominator products | Omit the taper derivative, use a wrong denominator-integral Jacobian, or drop a positive $U^3$ contribution | Exact cutoff/antiderivative identity or coefficientwise polynomial domination fails; a still-safe looser final decimal alone must not mask the algebra error |
+| Complete localized correction | Remove emitter $y$ or $y'$ from the complete norm envelope while retaining the actual vector | The positive coefficientwise comparison against the full clock-plus-emitter expression fails |
+| Finite horizon and graph distance | Replace $M-L-1$ by $M-L$ | The exact graph has a nonzero omitted-site amplitude at the true first hop, before the mutated threshold |
+
+The canonical comparator also needs explicit scope checks for one $f$, one
+$\rho$, fixed $\zeta=-e^{-4ik_0}\alpha$, the full scalar
+$\nu+2\kappa$, literal $e^{-itK}$, the nonzero central residual ceiling,
+all outputs and the finite horizon. Source-string or metadata checks of these
+items are useful contract guards but are not substitutes for a mathematical
+positive-case mutation. If additional old-aging/phase mutation witnesses are
+added, use a nonzero two-energy column convention and an exact generator or
+amplitude comparison. Label that new finite test and review it; the current
+scripts do not already provide a general dynamical old-aging simulation.
+
+## 5. Active links, proof preservation and generated row
+
+The draft deliberately uses locally resolving `sources/...` and `context/...`
+links. On canonical placement, rewrite only the active wrapper links using
+`SOURCE_INVENTORY.json`'s destination map; the existing parent link becomes
+`TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md`. A fresh root
+read must confirm that the parent bytes/interface remain compatible on the
+actual post-structural-box base. There is no dependency edge to the structural
+coefficient-box theorem merely because its publication precedes this one.
+
+Place the new inventory and body map at the canonical input bundle's root,
+with the inventory Markdown's own active links relocated too. Preserve this
+drafting plan as `integration/INTEGRATION_PLAN.md.txt` if it is landed as
+history. Replace the note's planned-run paragraph with actual reviewed runner,
+result, receipt and cache links only after those artifacts exist. Regenerate
+the embedded byte offsets after wrapper-only link changes; the three body
+hashes and byte lengths must remain identical. Methodology/context copies are
+drafting provenance, not extra theorem premises to co-land as active notes.
+
+The proposed map stores frozen historical Markdown as `.md.txt`, with original
+bytes and logical filename recorded. This prevents old frontmatter, absolute
+provenance paths, directory links and relative historical links from becoming
+new active citation edges. The full local, installed and weighted proof bodies
+also remain byte-identical inside literal Markdown fences in the note. The
+canonical resolver must account explicitly for this suffix mapping. Do not
+edit historical Markdown to repair its links. If root instead chooses original
+`.md` filenames, every link in every newly landed Markdown file needs a valid
+tracked-file/web target under the conformance spec; that is additional work,
+not an assumed exemption for frozen sources.
+
+All newly active links must resolve to tracked regular files. Non-load-bearing
+process provenance stays in code spans rather than creating theorem dependency
+edges. Frozen input copies cannot substitute for the active citation edge to
+the existing parent theorem. Do not link a directory or a nonexistent planned
+runner/cache. Add actual output/cache links only once those artifacts exist.
+
+The note's source declaration requests `proposed_retained` with
+`claim_type: bounded_theorem`, `actual_current_surface_status:
+conditional-support`, `trace_class: upstream_support`, and
+`reachability_to_target: supports`. It does not author an audit status. Expected
+generated row identity after canonical placement:
+
+```json
+{
+  "claim_id": "product_seed_emitter_bounded_theorem_note_2026-10-17",
+  "claim_type_author_hint": "bounded_theorem",
+  "path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "runner_path": "scripts/product_seed_emitter_2026_10_17.py",
+  "helper_runner_paths": [
+    "scripts/product_seed_emitter_local_2026_10_17.py",
+    "scripts/product_seed_emitter_installed_2026_10_17.py",
+    "scripts/product_seed_emitter_weighted_2026_10_17.py"
+  ],
+  "deps": ["two_body_autonomous_halt_bounded_theorem_note_2026-10-17"]
+}
+```
+
+This is a planned row check, not an instruction to hand-edit generated files.
+Confirm actual extractor ordering/fields and inspect the generated graph delta.
+Regenerate and co-land `docs/audit/data/citation_graph_manifest.json` through
+the current pipeline, after checking all new/changed edges. Do not author or
+refresh ledger `audit_status`, `effective_status`, verdict or rationale fields.
+If a harness-index entry is appropriate on the current base, put it under the
+honest conditional/support category, preserving existing entries.
+
+## 6. Required execution and publication sequence
+
+1. After the structural-box milestone, refresh the relevant base and compare
+   its parent theorem/interface to the pinned copy. Perform no mathematical
+   composition with that box. Copy the frozen source bundle using the explicit
+   destination map, finalize the active links and source map, and obtain a
+   complete wrapper/delta and portability review. Read every changed argument
+   and mathematical code path fully. Keep calibration sources outside the set.
+2. Execute the adapted primary under its declared cap using
+   `scripts/runner_cache.py`'s `execute_and_write_cache(runner, timeout_sec)`.
+   Preserve actual stdout/stderr, result, runtime/source/input identities and
+   exit status. Compare the exact invariant fields with the frozen historical
+   evidence; runtime fields and adapter source hashes are naturally different.
+   No hand-authored or header-repaired cache is permitted. If pinned input bytes
+   change afterward, rerun and re-pin the affected actual execution.
+3. Execute the positive-case mutations and inspect failures and surviving
+   controls. Read the full actual result and source delta. If the portable
+   mathematics changes, send the precise correction for a bounded recheck;
+   do not present adaptation as science-free when it alters a proof path.
+4. Run the current repository conformance checks: `scripts/vocab_lint.py` on
+   changed editable surfaces, full `docs/audit/scripts/run_pipeline.sh`,
+   strict `docs/audit/scripts/audit_lint.py`,
+   `docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
+   --include-worktree --json`, Python compilation of changed runners, and
+   the complete delta whitespace check. Use the actual current entry points
+   and capture full logs; this plan does not claim these commands have passed.
+   The changed-evidence result must expose the new row and all three helpers
+   inside the restricted packet with declared input bytes available.
+5. Read the complete source/manifest graph delta and acknowledge only intended
+   edges through the prescribed generated-manifest process. Complete a cold
+   full-diff review, verify all added files and active links, and recheck every
+   scope surface: note, result, source declaration, row, index, PR title/body
+   and handoff. Record actual canonical outcomes separately from source
+   qualification. Use a regular milestone PR when root authorizes publication;
+   a text artifact named `NOTE_DRAFT.md` is not a request for a draft PR.
+
+No current source acceptance authorizes native hardware, exact phase supply,
+blank-medium generation, reset/reuse, practical times, uniform fit accuracy,
+calibration-independent whole-clock waveforms or permanent finite-device
+operation. These physical assumptions stay visible through publication.
+
+## 7. Draft verification record
+
+Bookkeeping copied 152 regular files and verified the installed qualification's
+52 artifact entries/26 original-snapshot pairs and the weighted qualification's
+39 entries/15 pairs. The first bookkeeping attempt encountered a manifest-schema
+key difference (`original` versus `source`), after making byte-identical copies;
+its code and stderr are preserved. The corrected copier supports both historical
+schemas and changed no source. No scientific run failed or was retried here,
+because none was executed. Final draft checks are recorded separately in
+`DRAFT_VERIFICATION.json`; they cover byte preservation and link/mapping integrity,
+not new mathematical validation. No editable prompt files changed.

@@ -1,0 +1,62 @@
+{
+  "revision": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "queries": [
+    {
+      "argv": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "((two.contact|square.loop).*emitter|emitter.*(two.contact|square.loop))",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json",
+        "docs/audit/data/ledger/*.json"
+      ],
+      "exit_code": 1,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/novelty_query_1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": 0
+    },
+    {
+      "argv": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(product.seed.*(halt|scatter|reflect)|(halt|scatter|reflect).*product.seed)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json",
+        "docs/audit/data/ledger/*.json"
+      ],
+      "exit_code": 1,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/novelty_query_2.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": 0
+    },
+    {
+      "argv": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(emitter.*(Schur|vacuum)|Schur.*emitter)",
+        "origin/main",
+        "--",
+        "docs/*.md",
+        "docs/audit/data/derivation_obligations.json",
+        "docs/audit/data/ledger/*.json"
+      ],
+      "exit_code": 0,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/novelty_query_3.txt",
+      "bytes": 977,
+      "sha256": "b133825d6fd1bc235d628bfb049c210158523d52e2078c7add886888801f9645",
+      "matches": 2
+    }
+  ]
+}

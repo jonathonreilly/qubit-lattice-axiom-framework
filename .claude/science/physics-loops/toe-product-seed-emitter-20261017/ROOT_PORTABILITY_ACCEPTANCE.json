@@ -1,0 +1,90 @@
+{
+  "reviewed_utc": "2026-10-17T02:16:26.531772+00:00",
+  "disposition": "Canonical portability accepted for the declared bounded execution and copied-source science mutation plan. No canonical execution or publication result is claimed by this decision.",
+  "root_coverage": [
+    "Complete previously qualified local, installed and weighted proof/program/report bodies reused at their recorded identities; full new draft lead, plan, inventory and three exact embedded proof bodies already reviewed.",
+    "Complete changed wrapper diff from the qualified draft; complete executable primary body, helper setup and final status-neutral docstrings. The long168-path declaration was verified as a literal unique inventory, not treated as mathematical prose.",
+    "Every one of25 actual removed statements and21 adaptation events inspected. Complete330-line static verifier and its exact latest delta inspected: reverse transforms restore868 source statements, including201 Assert ASTs; removed operations are transport/resource only.",
+    "Complete pre-run plan, twelve mutation anchors/expected assertions, portability report, source manifest, preparation failures and actual static execution receipts. All221 prepared files,220 freeze members and168 declared input identities checked against current bytes."
+  ],
+  "binding": {
+    "readiness": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/READY_FOR_PORTABILITY_REVIEW.json",
+      "bytes": 57463,
+      "sha256": "f9f3c82a5b98337371610bd89e00c59d98185fcd737dafea9dddd8e94086ae13"
+    },
+    "preparation_freeze": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/PORTABILITY_FREEZE.json",
+      "bytes": 54908,
+      "sha256": "03b558535be23ad424dea6ae64677c011d3d73936237b250edf2804c7e1f888c"
+    },
+    "source_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_MANIFEST.json",
+      "bytes": 2449,
+      "sha256": "1ed8aca595de3d2e6331ebd4dee972afc0c400797c7ccb471e384bdd642dcc8f"
+    },
+    "static_checker": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/verify_adaptation.py",
+      "bytes": 22062,
+      "sha256": "bb78030d92715a9641ddafd5097dd3259d3cece0f44e0a05a4f00803eebd0125"
+    },
+    "static_result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/STATIC_CHECKS.json",
+      "bytes": 29953,
+      "sha256": "eeb9490d1f6c0e75f764d6c504d9e5c35db8b9d626975d6309074634d09adb55"
+    },
+    "static_receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_verify_attempt_2/RECEIPT.json",
+      "bytes": 1471,
+      "sha256": "47f64b192ffd522de08ebbf6ceb77de62e78270dc9cdc68174c85743626764a0"
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_seed_emitter_2026_10_17.py",
+      "bytes": 27118,
+      "sha256": "6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26"
+    },
+    "helpers": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_seed_emitter_local_2026_10_17.py",
+        "bytes": 19892,
+        "sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_seed_emitter_installed_2026_10_17.py",
+        "bytes": 34371,
+        "sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/product_seed_emitter_weighted_2026_10_17.py",
+        "bytes": 17888,
+        "sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+      }
+    ],
+    "note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95437,
+      "sha256": "3a63a01dc72e0506fe5a5fb52ab7a25a1884f50453b3010e649e4902f67d15fa"
+    },
+    "mutation_plan": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-product-seed-emitter-20261017/MUTATION_PLAN.json",
+      "bytes": 10465,
+      "sha256": "3f7d1924a6d8e0b5ba28eecc3cf80ba3b1c62df9ca78b7b671c46c336d5aba97"
+    }
+  },
+  "portability_judgments": [
+    "Historical absolute paths are finite lookup keys only; every actual file read is confined to declared local regular-file bytes with checked hash/size. There is no live renewal-directory fallback.",
+    "Original function order, exact coefficients, matrix dimensions, precision, twelve installed point diagnostics, inequalities and mathematical helper calls survive. No global/nonlocal or unhandled ROOT/__file__ reference remains in adapted functions.",
+    "Original per-program CPU setters and output writes/CLI are removed in favor of one primary CPU120/wall120 process and returned reports. Original caps and self hashes are explicitly historical; actual limits and input hashes are separate.",
+    "New guards compare existing exact returned budgets and fixed diagnostic counts. They do not replace a mathematical proof or turn point diagnostics into an interval certificate.",
+    "Root requested only status-neutral module documentation. Historical pending labels and reports remain unchanged; current publication status must be recorded separately after execution."
+  ],
+  "execution_requirements": {
+    "canonical_attempt": "One initial combined six-body run under CPU120/wall120 through runner_cache.execute_and_write_cache, with real serialized prelaunch source/input bindings and preserved complete streams.",
+    "mutations": "Twelve planned copied-source cases, each CPU60/wall60, at most one initial attempt per case. Only intended scientific assertion failures count; all harness/timeout failures remain failures.",
+    "before_publication": "Inspect complete scientific result and exact comparison to frozen outputs; finish focused packet and wrapper review, graph delta and family-value evaluation. A later note/input edit requires preserved old receipt and actual fresh execution."
+  },
+  "scope_limits": "Same-model source-exposed portability review; the source adapter authored/reviewed earlier work. This does not add independent mathematical evidence, native realization, practical cost, calibration/structural composition, retained status, integrated-main landing permission or merge authorization.",
+  "canonical_execution_performed_by_this_recorder": false,
+  "editable_prompt_changes": [],
+  "source_science_changes": []
+}

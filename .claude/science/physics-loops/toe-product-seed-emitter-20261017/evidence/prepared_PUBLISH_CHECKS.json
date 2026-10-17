@@ -1,0 +1,57 @@
+{
+  "status": "Ready for root portability review only; not ready to claim canonical execution or publication.",
+  "passed_in_this_task": [
+    "original freeze and 152 source/context byte identities",
+    "three unchanged proof-body byte maps",
+    "six function AST transformation/reversal maps",
+    "201 exact Assert ASTs retained",
+    "explicit input resolver and manifest closure",
+    "primary/helper/citation parser recognition without graph build",
+    "canonical and frozen Python syntax checks",
+    "actual historical report-field comparisons",
+    "twelve unique unexecuted scientific mutation anchors",
+    "status-neutral helper module docstrings with all function ASTs unchanged",
+    "active links and whitespace",
+    "current declared-input identities"
+  ],
+  "pending": [
+    "root complete canonical portability review",
+    "actual canonical execute_and_write_cache under shared CPU120/wall120",
+    "actual copied-source scientific mutations under stated caps",
+    "runtime result comparison and source/cache freshness receipt",
+    "focused publication gates and later graph publication checks",
+    "regular PR creation by root",
+    "shared integrated-current-main landing gates",
+    "independent retained audit"
+  ],
+  "future_canonical_caps": {
+    "CPU_soft_hard_seconds": [
+      120,
+      120
+    ],
+    "external_wall_seconds": 120,
+    "scope": "Combined six-body process, not six separate allowances."
+  },
+  "actual_bookkeeping_caps": {
+    "CPU_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_seconds": 60,
+    "scope": "Per static builder/verification attempt; see preserved receipts."
+  },
+  "scientific_functions_executed": 0,
+  "scientific_mutations_executed": 0,
+  "canonical_cache_created": false,
+  "graph_build_executed": false,
+  "git_staged": false,
+  "git_commit_created": false,
+  "published": false,
+  "editable_prompt_changes": [],
+  "review_record": "PORTABILITY_REVIEW.md",
+  "static_result": "STATIC_CHECKS.json",
+  "latest_static_receipt": "portability_evidence/static_verify_attempt_2/RECEIPT.json",
+  "source_adaptation": "SOURCE_ADAPTATION.json",
+  "input_identities": "PRE_EXECUTION_IDENTITIES.json",
+  "conformance": "Current section 12: focused checks now; full shared exact integrated-main landing gates later. Historical plan 6.4 does not add blanket per-PR gates."
+}

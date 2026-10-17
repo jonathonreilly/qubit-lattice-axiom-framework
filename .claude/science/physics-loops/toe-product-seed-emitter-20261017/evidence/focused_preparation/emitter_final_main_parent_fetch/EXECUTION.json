@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+    "fetch",
+    "--no-tags",
+    "origin",
+    "main",
+    "physics-loop/toe-two-body-autonomous-halt-20261017"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-17T02:33:43.312919+00:00",
+  "end_utc": "2026-10-17T02:33:45.088606+00:00",
+  "elapsed_seconds": 1.7755323750898242,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/emitter_final_main_parent_fetch/stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/emitter_final_main_parent_fetch/stderr",
+    "bytes": 213,
+    "sha256": "2981d3191f1a53006a41900358c0dc950af472c29960b0731766734c70039295"
+  },
+  "child_source_at_launch": null,
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

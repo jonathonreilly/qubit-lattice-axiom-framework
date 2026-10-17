@@ -1,0 +1,273 @@
+"""Deterministic copying/AST wrapping only. Never import scientific programs."""
+from pathlib import Path
+import ast
+import copy
+import datetime
+import difflib
+import hashlib
+import json
+import os
+import re
+import shutil
+
+D=Path(__file__).resolve().parent
+N=D.parent; S=N/'emitter_publication_draft'; W=N.parent/'correlation_worktree'
+F=W/'outputs/product_seed_emitter_2026_10_17_inputs'
+Q=W/'.claude/science/physics-loops/toe-product-seed-emitter-20261017'
+note=W/'docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+assert not F.exists() and not Q.exists() and not note.exists()
+F.mkdir();Q.mkdir(parents=True)
+def digest(raw):return {'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+def pin(p):return {'path':str(p.relative_to(W)),**digest(p.read_bytes())}
+def dump(p,obj):p.write_text(json.dumps(obj,indent=2)+'\n')
+def adump(x):return ast.dump(x,include_attributes=False)
+def ahash(x):return hashlib.sha256(adump(x).encode()).hexdigest()
+
+freeze=json.loads((S/'FREEZE.json').read_text())
+for row in freeze['files']:
+    assert digest((S/row['path']).read_bytes())=={k:row[k] for k in ('bytes','sha256')},row['path']
+assert digest((S/'NOTE_DRAFT.md').read_bytes())['sha256']=='49a8a8a83bfab83afc033e1fa35a74185dbc847a60c59a48d27bee88ebee96de'
+root_review=N/'emitter_publication_root_draft_review.json'
+assert digest(root_review.read_bytes())['sha256']=='0ba6c3ffa006a150f77bb30d865983004770dfc12d2e0d438fdce9fd35b6e15c'
+inventory=json.loads((S/'SOURCE_INVENTORY.json').read_text())
+programs=json.loads((S/'PROGRAM_INPUTS.json').read_text())['programs']
+assert len(inventory['files'])==152 and len(programs)==6
+destinations={};frozen_rows=[]
+for row in inventory['files']:
+    src=S/row['snapshot_path']
+    assert digest(src.read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+    dest=row['proposed_canonical_path']
+    if dest is None:
+        dest='outputs/product_seed_emitter_2026_10_17_inputs/frozen_context/'+Path(row['snapshot_path']).name+'.txt'
+    target=W/dest;target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(src,target)
+    destinations[row['snapshot_path']]=dest
+    frozen_rows.append({**row,'canonical_path':dest})
+assert len({r['canonical_path'] for r in frozen_rows})==152
+parent=W/'docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+assert digest(parent.read_bytes())['sha256']=='332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac'
+
+# Draft/process records are exact passive history, never active theorem notes.
+H=F/'draft_history';H.mkdir()
+for name in ('SOURCE_INVENTORY.json','PROGRAM_INPUTS.json','EMBEDDED_SOURCE_MAP.json',
+             'DRAFT_VERIFICATION.json','FREEZE.json','INTEGRATION_PLAN.md','SOURCE_INVENTORY.md'):
+    shutil.copyfile(S/name,H/(name+'.txt' if name.endswith('.md') else name))
+shutil.copyfile(root_review,Q/'ROOT_DRAFT_REVIEW.json')
+
+roles=['local_author','local_reviewer','installed_author','installed_reviewer','weighted_author','weighted_reviewer']
+families=['local','local','installed','installed','weighted','weighted']
+historical_caps=[(10,30),(45,60),(30,60),(45,60),(5,10),(45,60)]
+return_names=['report','report','report','result','out','result']
+by_snapshot={r['snapshot_path']:r for r in frozen_rows}
+input_table={'scope':'Explicit repository-local mapping. Historical absolute paths are immutable logical keys only; no fallback filesystem access.',
+             'roles':{},'frozen_source_count':152}
+for role,prog,caps in zip(roles,programs,historical_caps):
+    scope=Path(prog['program']).parent.as_posix()
+    aliases={}
+    selected=[prog['program_identity']]+prog['declared_read_closure']
+    for selected_row in selected:
+        row=by_snapshot[selected_row['snapshot_path']]
+        mapped={'path':row['canonical_path'],'bytes':row['bytes'],'sha256':row['sha256']}
+        keys=[row['snapshot_path'],row['original_path']]
+        prefix='sources/'+scope+'/'
+        if row['snapshot_path'].startswith(prefix):keys.append(row['snapshot_path'][len(prefix):])
+        for key in keys:
+            assert key not in aliases or aliases[key]==mapped,(role,key)
+            aliases[key]=mapped
+    aliases['__original_program__']=aliases[prog['program_identity']['snapshot_path']]
+    input_table['roles'][role]={'original_program':prog['program'],'original_report':prog['output'],
+        'historical_limits':{'cpu_cap_seconds':caps[0],'external_wall_cap_seconds':caps[1]},
+        'scientific_input_scope':prog['input_scope'],'aliases':aliases}
+dump(F/'INPUT_MAP.json',input_table)
+
+cap_keys={'cpu_cap_seconds','wrapper_wall_cap_seconds','cpu_seconds_cap','parent_wall_seconds_cap','wall_cap_seconds','external_wall_cap_seconds'}
+class Adapt(ast.NodeTransformer):
+    def __init__(self,role):self.role=role;self.events=[]
+    def event(self,kind,old,new):
+        self.events.append({'kind':kind,'original_line':getattr(old,'lineno',None),
+            'old_source':ast.unparse(old),'new_source':ast.unparse(new),
+            'old_ast':adump(old),'new_ast':adump(new)})
+        return ast.copy_location(new,old)
+    def visit_Call(self,node):
+        # Transform only literal file-read APIs, retaining all surrounding
+        # manifest loops, byte/hash assertions, parsers and scientific use.
+        if isinstance(node.func,ast.Attribute) and node.func.attr in ('read_text','read_bytes'):
+            assert not node.args and not node.keywords
+            recv=node.func.value; logical=None
+            if isinstance(recv,ast.BinOp) and isinstance(recv.op,ast.Div) and isinstance(recv.left,ast.Name) and recv.left.id=='ROOT':
+                logical=copy.deepcopy(recv.right)
+            elif isinstance(recv,ast.Call) and isinstance(recv.func,ast.Name) and recv.func.id=='Path' and len(recv.args)==1:
+                if isinstance(recv.args[0],ast.Name) and recv.args[0].id=='__file__':
+                    replacement=ast.Call(ast.Attribute(ast.Name('inputs',ast.Load()),'original_program_bytes',ast.Load()),[ast.Constant(self.role)],[])
+                    assert node.func.attr=='read_bytes'
+                    return self.event('historical_self_source_read',node,replacement)
+                logical=copy.deepcopy(recv.args[0])
+            assert logical is not None,ast.unparse(node)
+            replacement=ast.Call(ast.Attribute(ast.Name('inputs',ast.Load()),node.func.attr,ast.Load()),[ast.Constant(self.role),logical],[])
+            return self.event('explicit_local_input_read',node,replacement)
+        return self.generic_visit(node)
+    def visit_Dict(self,node):
+        original=copy.deepcopy(node)
+        node=self.generic_visit(node)
+        for j,key in enumerate(node.keys):
+            if isinstance(key,ast.Constant) and key.value=='script_sha256':
+                new=ast.Constant('historical_source_program_sha256')
+                node.keys[j]=self.event('historical_program_identity_label',key,new)
+        positions=[j for j,k in enumerate(node.keys) if isinstance(k,ast.Constant) and k.value in cap_keys]
+        if positions:
+            # Values of all non-resource keys are retained verbatim as ASTs.
+            old=copy.deepcopy(node)
+            historical=ast.Dict([copy.deepcopy(node.keys[j]) for j in positions],
+                                [copy.deepcopy(node.values[j]) for j in positions])
+            keys=[k for j,k in enumerate(node.keys) if j not in positions]
+            values=[v for j,v in enumerate(node.values) if j not in positions]
+            keys += [ast.Constant('historical_source_run_limits'),ast.Constant('actual_shared_process_limits')]
+            values += [historical,ast.Call(ast.Attribute(ast.Name('inputs',ast.Load()),'shared_limits',ast.Load()),[],[])]
+            node=self.event('resource_metadata_only',old,ast.Dict(keys,values))
+        return node
+
+def removed_kind(node,role):
+    text=ast.unparse(node)
+    if isinstance(node,ast.Expr) and isinstance(node.value,ast.Call):
+        call=node.value
+        if isinstance(call.func,ast.Attribute) and isinstance(call.func.value,ast.Name) and call.func.value.id=='resource' and call.func.attr=='setrlimit':return 'per_program_CPU_cap_replaced_by_shared_primary_cap'
+        if isinstance(call.func,ast.Name) and call.func.id=='print':return 'terminal_stdout_replaced_by_return'
+        if isinstance(call.func,ast.Attribute) and call.func.attr=='write_text':return 'terminal_output_write_replaced_by_return'
+    if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='ROOT' for t in node.targets):return 'historical_filesystem_root_replaced_by_explicit_resolver'
+    if role=='weighted_reviewer':
+        if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id in ('parser','args','outpath') for t in node.targets):return 'output_CLI_transport_removed'
+        if text.startswith('parser.add_argument(') or text.startswith('outpath.relative_to('):return 'output_CLI_transport_removed'
+    return None
+
+adaptations=[];family_functions={k:[] for k in set(families)}
+(D/'source_deltas').mkdir()
+for role,family,prog,return_name in zip(roles,families,programs,return_names):
+    path=S/'sources'/prog['program'];raw=path.read_text();tree=ast.parse(raw)
+    transformer=Adapt(role);body=[];mapping=[]
+    for index,original in enumerate(tree.body):
+        kind=removed_kind(original,role)
+        row={'original_statement_index':index,'source_start_line':original.lineno,'source_end_line':original.end_lineno,
+             'original_ast_sha256':ahash(original),'original_source':ast.unparse(original)}
+        if kind:
+            row.update(disposition='removed_transport_only',reason=kind)
+        else:
+            old_event_count=len(transformer.events)
+            current=transformer.visit(copy.deepcopy(original));ast.fix_missing_locations(current)
+            row.update(disposition='unchanged' if adump(original)==adump(current) else 'adapted',
+                       function_body_index=len(body),'canonical_ast_sha256':ahash(current),
+                       canonical_source=ast.unparse(current),
+                       adaptation_event_indices=list(range(old_event_count,len(transformer.events))))
+            body.append(current)
+        mapping.append(row)
+    body += ast.parse(f"{return_name}['portable_execution'] = inputs.execution_metadata({role!r})\nreturn {return_name}\n").body
+    fn=ast.FunctionDef(name='run_'+role,args=ast.arguments(posonlyargs=[],args=[ast.arg(arg='inputs')],kwonlyargs=[],kw_defaults=[],defaults=[]),body=body,decorator_list=[])
+    ast.fix_missing_locations(fn)
+    family_functions[family].append(fn)
+    new_text=ast.unparse(ast.Module(body=body[:-2],type_ignores=[]))+'\n'
+    delta=''.join(difflib.unified_diff(raw.splitlines(True),new_text.splitlines(True),fromfile=prog['program'],tofile='wrapped body '+fn.name))
+    (D/'source_deltas'/f'{role}.diff').write_text(delta)
+    adaptations.append({'role':role,'original_program':prog['program_identity'],
+        'canonical_module':f'scripts/product_seed_emitter_{family}_2026_10_17.py','function':fn.name,
+        'historical_scope':prog['input_scope'],'historical_caps':input_table['roles'][role]['historical_limits'],
+        'statement_map':mapping,'adaptation_events':transformer.events,
+        'new_epilogue':ast.unparse(ast.Module(body=body[-2:],type_ignores=[])),
+        'source_top_level_statements':len(tree.body),'retained_statements':len(body)-2})
+
+for family,functions in sorted(family_functions.items()):
+    header=ast.Expr(ast.Constant('Portable '+family+' author/reviewer calculation bodies.\n\nAll mathematical statements remain in source order. File reads are mapped to\nexplicit frozen local bytes; original caps/identity fields are historical.\nNo calculation executes on import. Root portability review and the first\ncanonical execution are pending; the frozen source files remain unchanged.'))
+    code=ast.unparse(ast.Module(body=[header,*functions],type_ignores=[]))+'\n'
+    (W/f'scripts/product_seed_emitter_{family}_2026_10_17.py').write_text(code)
+
+# Rewrite active wrapper links only; preserve each proof transcript bytewise.
+draft=(S/'NOTE_DRAFT.md').read_text();lead=(S/'NOTE_LEAD.md').read_text()
+assert draft.startswith(lead)
+lead=lead.replace('wrapper_root_approval: pending','wrapper_root_approval: pending_root_portability_review')
+lead=lead.replace('canonical_execution: not_performed_in_this_draft','canonical_execution: pending_not_executed')
+lead=lead.replace('publication: not_performed_in_this_draft','publication: not_performed')
+lead=lead.replace('complete regular milestone publication conformance after the structural-box milestone.',
+                  'complete focused milestone checks; shared integrated-main landing gates remain later obligations.')
+old='''**Primary runner:** `scripts/product_seed_emitter_2026_10_17.py` is the proposed
+canonical runner, not yet created or executed by this drafting task. The
+[integration plan](INTEGRATION_PLAN.md) specifies its portable helper boundaries,
+declared inputs, actual checks and mutation obligations. No existing source
+stdout is being presented as a canonical cache. Draft links resolve within this
+packet; their canonical destination map is in the
+[source inventory](SOURCE_INVENTORY.json).'''
+new='''**Primary runner:** [scripts/product_seed_emitter_2026_10_17.py](../scripts/product_seed_emitter_2026_10_17.py)
+directly imports six calculation functions from three local helpers. The
+adaptation is prepared for root portability review; no canonical scientific
+runner or mutation has been executed. The planned canonical envelope is one
+shared 120-second CPU cap and 120-second external wall cap. Original source
+limits remain historical metadata. The
+[pre-run plan](../.claude/science/physics-loops/toe-product-seed-emitter-20261017/PRE_RUN_PLAN.md)
+and [adaptation map](../.claude/science/physics-loops/toe-product-seed-emitter-20261017/SOURCE_ADAPTATION.json)
+identify the exact boundaries, input mapping and checks awaiting review.
+No historical stdout is presented as a canonical cache. The explicit local
+destination map is in the [source inventory](SOURCE_INVENTORY.json).'''
+assert old in lead;lead=lead.replace(old,new)
+lead=lead.replace('Only file copying, hashing and\ndraft checks were performed while preparing this wrapper.',
+                  'Only copying, hashing, source/AST comparison, resolver bookkeeping and\nsyntax checks were performed while preparing this adaptation.')
+lead=lead.replace('Canonical helper adaptation, actual cached execution, positive-case mutation\nchecks, complete wrapper/delta review and publication conformance remain open.',
+                  'The helper adaptation is prepared; root portability review, actual cached\nexecution, positive-case mutations and focused publication checks remain open.\nFull pipeline, strict audit lint and changed-evidence checks belong to the\nshared exact integrated-current-main landing candidate under conformance\nsection12; they are not per-PR entry gates.')
+def target_for(link):
+    if link=='context/'+parent.name:return parent.name
+    if link in destinations:return os.path.relpath(W/destinations[link],note.parent)
+    if link in ('SOURCE_INVENTORY.json','SOURCE_INVENTORY.md','EMBEDDED_SOURCE_MAP.json'):
+        return os.path.relpath(F/link,note.parent)
+    return link
+lead=re.sub(r'(?<=\]\()([^\s)]+)(?=\))',lambda m:target_for(m.group(1)),lead)
+note.write_text(lead+draft[len((S/'NOTE_LEAD.md').read_text()):])
+bodymap=json.loads((S/'EMBEDDED_SOURCE_MAP.json').read_text())
+new_bodies=[];notebytes=note.read_bytes()
+for body in bodymap['bodies']:
+    raw=(S/body['source']).read_bytes()
+    assert len(raw)==body['length_bytes'] and digest(raw)['sha256']==body['sha256']
+    assert notebytes.count(raw)==1
+    start=notebytes.index(raw)
+    new_bodies.append({**body,'source':destinations[body['source']],
+                       'offset_bytes_zero_based':start,'end_byte_exclusive':start+len(raw)})
+dump(F/'EMBEDDED_SOURCE_MAP.json',{'note':str(note.relative_to(W)),**digest(notebytes),'scope':'Three byte-identical proof transcripts; wrapper-only publication/link changes.','bodies':new_bodies})
+
+canonical_inventory={'scope':'152 byte-identical frozen source/context files; historical labels and records preserved. No canonical scientific execution yet.',
+ 'source_draft_inventory_sha256':digest((S/'SOURCE_INVENTORY.json').read_bytes())['sha256'],
+ 'file_count':152,'files':frozen_rows,'parent_current':pin(parent)}
+dump(F/'SOURCE_INVENTORY.json',canonical_inventory)
+invtext=(S/'SOURCE_INVENTORY.md').read_text()
+invtext=invtext.replace('immutable evidence copied for a drafting task','immutable evidence copied for a portability-review task')
+invtext=invtext.replace('in [NOTE_DRAFT.md](NOTE_DRAFT.md)','in [the canonical note](../../docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md)')
+def inv_link(link):
+    if link in destinations:return os.path.relpath(W/destinations[link],F)
+    if link=='PROGRAM_INPUTS.json':return 'draft_history/PROGRAM_INPUTS.json'
+    return link
+invtext=re.sub(r'(?<=\]\()([^\s)]+)(?=\))',lambda m:inv_link(m.group(1)),invtext)
+invtext += '\nCurrent placement preserves all 152 originals, including four passive context copies. The active parent remains the sibling-base theorem. Canonical execution and portability approval are pending. The historical draft plan section 6.4 is superseded for integration by current conformance section 12: focused milestone checks now, shared integrated-main landing gates later.\n'
+(F/'SOURCE_INVENTORY.md').write_text(invtext)
+
+dump(Q/'SOURCE_ADAPTATION.json',{'scope':'Pre-execution source adaptation map. Static equivalence checks are separate from runtime validation; no mathematical replay performed.',
+ 'source_draft':{'path':str(S/'NOTE_DRAFT.md'),**digest((S/'NOTE_DRAFT.md').read_bytes())},
+ 'source_freeze':{'path':str(S/'FREEZE.json'),**digest((S/'FREEZE.json').read_bytes())},
+ 'programs':adaptations,'new_primary_checks':'Exact cross-function budget consistency and fixed resource/count guards; pending root judgment/execution, not a new proof.',
+ 'mathematical_formula_changes':[]})
+for f in (D/'source_deltas').glob('*.diff'):
+    target=Q/'source_deltas'/f.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(f,target)
+
+# All canonical inputs finish before any future cache identity is captured.
+artifact_rows=[pin(p) for p in sorted(F.rglob('*')) if p.is_file()]
+dump(F/'ARTIFACT_MANIFEST.json',{'scope':'Frozen source copies and explicit current mapping/byte-map data; excludes this manifest to avoid a self-hash.','files':artifact_rows})
+helpers=[f'scripts/product_seed_emitter_{k}_2026_10_17.py' for k in ('local','installed','weighted')]
+declared=sorted([str(note.relative_to(W)),str((F/'ARTIFACT_MANIFEST.json').relative_to(W)),*helpers,*[r['path'] for r in artifact_rows]])
+template=(D/'primary_template.py.txt').read_text()
+assert template.count('# DECLARATION_INSERTION_POINT')==1
+primary=W/'scripts/product_seed_emitter_2026_10_17.py'
+primary.write_text(template.replace('# DECLARATION_INSERTION_POINT','AUDIT_INPUT_PATHS = '+repr(tuple(declared))))
+dump(Q/'SOURCE_MANIFEST.json',{'status':'Prepared for root portability review; canonical scientific execution pending.',
+ 'parent_head':'0e8375354c42963234cc4b15b14ab6bb553c713d','branch':'physics-loop/toe-product-seed-emitter-20261017',
+ 'frozen_source_files':152,'declared_inputs':len(declared),'note':pin(note),'primary':pin(primary),
+ 'helpers':[pin(W/h) for h in helpers],'artifact_manifest':pin(F/'ARTIFACT_MANIFEST.json'),
+ 'input_map':pin(F/'INPUT_MAP.json'),'proof_body_map':pin(F/'EMBEDDED_SOURCE_MAP.json'),
+ 'source_adaptation_map':pin(Q/'SOURCE_ADAPTATION.json'),'root_draft_review':pin(Q/'ROOT_DRAFT_REVIEW.json'),
+ 'science_executions':0,'mutations_executed':0,'canonical_cache_created':False,'editable_prompt_changes':[]})
+dump(D/'BUILD_RESULT.json',{'status':'Static adaptation built; verification and root review next. No scientific execution.',
+ 'frozen_files':152,'functions':6,'helpers':3,'artifact_entries':len(artifact_rows),'declared_inputs':len(declared),
+ 'note':pin(note),'primary':pin(primary),'helpers':[pin(W/h) for h in helpers]})
+print((D/'BUILD_RESULT.json').read_text())

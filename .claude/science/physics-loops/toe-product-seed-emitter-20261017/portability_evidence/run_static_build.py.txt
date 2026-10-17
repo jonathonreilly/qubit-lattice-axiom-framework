@@ -1,0 +1,39 @@
+"""Run only the deterministic package builder, with preserved streams."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import resource
+import subprocess
+import sys
+import time
+
+D = Path(__file__).resolve().parent
+attempt = D / ('static_build_attempt_' + sys.argv[1])
+attempt.mkdir()
+start = datetime.datetime.now(datetime.timezone.utc).isoformat()
+t0 = time.monotonic()
+def caps():
+    resource.setrlimit(resource.RLIMIT_CPU, (30, 30))
+try:
+    cp = subprocess.run([sys.executable, str(D / 'build_adaptation.py')], cwd=D,
+                        capture_output=True, timeout=60, preexec_fn=caps)
+    out, err, code, timed_out = cp.stdout, cp.stderr, cp.returncode, False
+except subprocess.TimeoutExpired as e:
+    out, err, code, timed_out = e.stdout or b'', e.stderr or b'', None, True
+(attempt / 'stdout.txt').write_bytes(out)
+(attempt / 'stderr.txt').write_bytes(err)
+def identity(p):
+    data = p.read_bytes()
+    return {'path': str(p), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+receipt = {'scope': 'Deterministic copying/hashing/AST wrapping only; no scientific program imported or executed.',
+           'started_utc': start, 'elapsed_seconds': time.monotonic() - t0,
+           'cpu_soft_hard_seconds': [30, 30], 'external_wall_cap_seconds': 60,
+           'returncode': code, 'timeout': timed_out, 'python': sys.version,
+           'command': [sys.executable, str(D / 'build_adaptation.py')],
+           'builder': identity(D / 'build_adaptation.py'),
+           'template': identity(D / 'primary_template.py.txt'),
+           'stdout': identity(attempt / 'stdout.txt'), 'stderr': identity(attempt / 'stderr.txt')}
+(attempt / 'RECEIPT.json').write_text(json.dumps(receipt, indent=2) + '\n')
+print(json.dumps(receipt, indent=2))
+raise SystemExit(0 if code == 0 and not timed_out else 1)

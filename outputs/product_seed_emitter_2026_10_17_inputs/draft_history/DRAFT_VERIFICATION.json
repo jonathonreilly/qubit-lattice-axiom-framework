@@ -1,0 +1,350 @@
+{
+  "checked_utc": "2026-10-17T01:48:39.123978+00:00",
+  "scope": "Drafting-only source bytes, embedded proofs, status fields, runtime-read inventory, active draft links and bookkeeping syntax; no new mathematical validation",
+  "source_copies_verified_against_originals": 152,
+  "source_bytes": 1692208,
+  "exact_embedded_proof_bodies": 3,
+  "active_draft_links_verified": 83,
+  "active_links": [
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "context/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_root_review/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/weighted_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "INTEGRATION_PLAN.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_independent_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/weighted_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "SOURCE_INVENTORY.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/emitter_installed_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "sources/weighted_emitter_escape_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_DRAFT.md",
+      "target": "EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "context/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_root_review/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/weighted_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "INTEGRATION_PLAN.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_independent_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/weighted_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "SOURCE_INVENTORY.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/emitter_installed_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "sources/weighted_emitter_escape_review/REPORT.md"
+    },
+    {
+      "source": "NOTE_LEAD.md",
+      "target": "EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "INTEGRATION_PLAN.md",
+      "target": "NOTE_DRAFT.md"
+    },
+    {
+      "source": "INTEGRATION_PLAN.md",
+      "target": "SOURCE_INVENTORY.md"
+    },
+    {
+      "source": "INTEGRATION_PLAN.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "INTEGRATION_PLAN.md",
+      "target": "EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "SOURCE_INVENTORY.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "PROGRAM_INPUTS.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/autonomous_emitter_route/ROUTE.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/CANDIDATE.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_candidate/CANDIDATE.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_independent_review/REPORT.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_review/REPORT.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_root_review/QUALIFICATION.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_root_review/ACCEPTANCE.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_review/REPORT.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_root_qualification/QUALIFICATION.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "NOTE_DRAFT.md"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "EMBEDDED_SOURCE_MAP.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/autonomous_emitter_route/emitter_algebra_check.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/autonomous_emitter_route/EXECUTION.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_independent_review/check_emitter.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_independent_review/RESULTS.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_independent_review/EXECUTION.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_independent_review/run_check.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/certify_installed_emitter.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/CERTIFICATE.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_certificate/run01_execution.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_review/check_installed.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_review/RESULTS.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_review/EXECUTION.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/emitter_installed_review/run_check.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_candidate/check_bounds.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_candidate/BOUNDS.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_candidate/EXECUTION.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_candidate/run_check.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_review/check_weighted_escape.py"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_review/runs/attempt_1/EXECUTION.json"
+    },
+    {
+      "source": "SOURCE_INVENTORY.md",
+      "target": "sources/weighted_emitter_escape_review/run_check.py"
+    }
+  ],
+  "scientific_programs_statically_inventoried": 6,
+  "proposed_canonical_destinations_unique": 148,
+  "scientific_programs_executed": 0,
+  "canonical_caches_created": 0,
+  "publication_performed": false,
+  "historical_source_links": "Byte-preserved but not newly activated or claimed locally resolved; canonical text-suffix mapping specified",
+  "packaging_failure_preserved": "Initial copier expected source key; installed manifest uses original. Original failed code/stdout/stderr retained; corrected identity-only parser succeeded.",
+  "editable_prompt_files_changed": []
+}

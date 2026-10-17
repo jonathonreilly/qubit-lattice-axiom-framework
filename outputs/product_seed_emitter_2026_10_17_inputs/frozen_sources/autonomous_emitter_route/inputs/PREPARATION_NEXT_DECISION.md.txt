@@ -1,0 +1,49 @@
+# Incoming-packet preparation: route decisions, not a theorem
+
+This is root's unverified planning note. No preparation result, new control
+permission, native identification or publication acceptance follows from it.
+The next prerequisite is the concrete two-body interval bridge and its check.
+
+The local source inventory PREPARATION_SOURCE_SEARCH.json pins five existing
+notes. Root inspected title/keyword hits and the installed-bus and local
+conserving preparation wrappers, not their complete underlying arguments.
+No new mathematical dependency is accepted from that partial search. The
+existing results already cover driven prefix-sine preparation, matching swaps
+into retained memory, positive complementary controls and fixed-slew variants
+with changed memory comparators. A generic repeat of those devices would not
+constitute a new physical supplier.
+
+The specific missing input here is a complex one-head clock packet with a
+certified finite-support approximation, independent of arbitrary old/reference
+input, while the actual K and source ladder remain installed. Its common
+scalar and total old aging must include preparation time. Native vacuum,
+phase reference, controlled bonds and external preparation timing are separate
+permissions; calling the subsequent runtime autonomous does not derive them.
+
+Two possible attacks need comparison before choosing one:
+
+1. Prepare far from the collision region and bound old/source disturbance by
+   actual finite propagation during preparation. Sequential local preparation
+   time grows with support, so distance, packet width and speed must be solved
+   together. A distant seed alone does not prove negligible total backaction.
+2. Temporarily add explicit positive complementary local controls, retain all
+   installed terms, prepare via nearest-neighbor one-head rotations and onsite
+   phases, and price the complete release. Complementary controls and their
+   negative nonscalar pieces are added physical permissions. Their scalar
+   reserves and incident loads must be counted. Existing bus arguments already
+   contain this mechanism; only a checked new packet/release application could
+   be useful. A fast release can require growing slew; fixed slew needs an
+   actual small-contact or compensated evolution estimate.
+
+For a complex finite vector, a sequence of one-head rotations can in principle
+be parameterized from tail weights, but branch phases, zero/small amplitudes,
+finite precision, pulse reserves and off-one-head action must be derived and
+checked. Merely citing finite controllability supplies neither a complete
+preparation isometry nor its physical cost. A finite rational approximation
+may avoid undecidable exact-zero choices; an error budget is still required.
+
+The generalized packet proof already prices truncation and separates actual
+preparation error eta_a. Its sufficient time can be extremely conservative.
+A higher-smoothness packet/tail estimate might reduce that price, but would
+need higher matching and closed-tail derivative bounds, not just a prettier
+finite simulation. No such improvement is established here.

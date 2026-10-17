@@ -1,0 +1,1158 @@
+{
+  "status": "All twelve intended scientific assertions rejected their copied-source faults.",
+  "cases": [
+    {
+      "case": "local_vacancy_scalar",
+      "expected": "full 16-dimensional scalar-reserve identity",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.5850991252809763,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/01_local_vacancy_scalar/attempt_1/EXECUTION.json",
+        "bytes": 2145,
+        "sha256": "02831ff54dd7c989c960a832f922785f4f316c84073e362723cfc0d8451a7b04"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "full 16-dimensional scalar-reserve identity",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/01_local_vacancy_scalar/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/01_local_vacancy_scalar/attempt_1/executed_helper.py",
+            "lineno": 64,
+            "name": "run_local_author",
+            "line": "checks.append(ck('full 16-dimensional scalar-reserve identity', (addition - desired).applyfunc(s.expand) == zero16))"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/01_local_vacancy_scalar/attempt_1/executed_helper.py",
+            "lineno": 38,
+            "name": "ck",
+            "line": "assert bool(expr), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.42031720792874694,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "local_phase_conjugation",
+      "expected": "return/right-emission central notch",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.3695766250602901,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/EXECUTION.json",
+        "bytes": 2164,
+        "sha256": "403a96cc747cd61785e18bdf79df77be9bc7523434662af2808ad9fc2076c309"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "return/right-emission central notch",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/executed_helper.py",
+            "lineno": 75,
+            "name": "run_local_author",
+            "line": "checks += [ck('return/right-emission central notch', vp0 == 0), ck('left-emission central amplitude squared', s.simplify(vm0 * s.conjugate(vm0) - 4 * sin2 * sin2) == 0)]"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/02_local_phase_conjugation/attempt_1/executed_helper.py",
+            "lineno": 38,
+            "name": "ck",
+            "line": "assert bool(expr), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.22493662498891354,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "installed_noncommuting_order",
+      "expected": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.5381714999675751,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/03_installed_noncommuting_order/attempt_1/EXECUTION.json",
+        "bytes": 2204,
+        "sha256": "8968d1fe40da765d9365e62e6f4423f0d7498c8d374ae9d048736769811dabba"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/03_installed_noncommuting_order/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/03_installed_noncommuting_order/attempt_1/executed_helper.py",
+            "lineno": 437,
+            "name": "run_installed_reviewer",
+            "line": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.3687897087074816,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "installed_lower_sign",
+      "expected": "assert exact_zero(direct_aug - aug)",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.48945329105481505,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/04_installed_lower_sign/attempt_1/EXECUTION.json",
+        "bytes": 2167,
+        "sha256": "2cb9ed20af125b7694493b364c3d8b80c9bf4dd99c7c70f72d7b77987975d532"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/04_installed_lower_sign/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/04_installed_lower_sign/attempt_1/executed_helper.py",
+            "lineno": 452,
+            "name": "run_installed_reviewer",
+            "line": "assert exact_zero(direct_aug - aug)"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.3599022077396512,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "installed_density_jacobian",
+      "expected": "assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.5991040840744972,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/05_installed_density_jacobian/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "f645566abbe4928769ba9e7f0c169079537dda388aede9cf03a7182e542219ee"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/05_installed_density_jacobian/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/05_installed_density_jacobian/attempt_1/executed_helper.py",
+            "lineno": 489,
+            "name": "run_installed_reviewer",
+            "line": "assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.47994558326900005,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "installed_overlap_diagonal_only",
+      "expected": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.659040458034724,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/06_installed_overlap_diagonal_only/attempt_1/EXECUTION.json",
+        "bytes": 2231,
+        "sha256": "6f084815e83ce2b4ac857d4a37776f7f97e56540b55c04cefd8fea512481ffcf"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/06_installed_overlap_diagonal_only/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/06_installed_overlap_diagonal_only/attempt_1/executed_helper.py",
+            "lineno": 501,
+            "name": "run_installed_reviewer",
+            "line": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.4837390840984881,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "installed_grouped_localization",
+      "expected": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.26896312460303307,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/EXECUTION.json",
+        "bytes": 2228,
+        "sha256": "eeb3e7a1fd1ee785566d40c2cee4472730052befee6b5c077421fc9e822d6a7e"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/07_installed_grouped_localization/attempt_1/executed_helper.py",
+            "lineno": 156,
+            "name": "run_installed_author",
+            "line": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.14798045763745904,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "installed_author",
+            "logical_identity": "SOURCE_MANIFEST.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/SOURCE_MANIFEST.json",
+            "sha256": "0811516c109480f61074ce53c837843f636857401f615d8d45ad856b13bb57e7"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/autonomous_emitter_route__FREEZE.json",
+            "sha256": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CANDIDATE.md.txt",
+            "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+            "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__inputs__rational_point_certificate.json",
+            "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/finite_channel_wavepacket_bridge__THEOREM_V2.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "installed_author",
+            "logical_identity": "inputs/two_body_interval_bridge__CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+            "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "weighted_closed_inverse",
+      "expected": "full_eight_coordinate_rank_one_inverse",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 4.053270666860044,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/EXECUTION.json",
+        "bytes": 2173,
+        "sha256": "380b59f39b24709cb555510f25486480fdce286882925867e288d9ebbb0f9bae"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "full_eight_coordinate_rank_one_inverse",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/executed_helper.py",
+            "lineno": 192,
+            "name": "run_weighted_reviewer",
+            "line": "zero_matrix('full_eight_coordinate_rank_one_inverse', De * inv_formula - s.eye(8))"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/executed_helper.py",
+            "lineno": 118,
+            "name": "zero_matrix",
+            "line": "require(name, mat.applyfunc(s.cancel) == s.zeros(*mat.shape))"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/08_weighted_closed_inverse/attempt_1/executed_helper.py",
+            "lineno": 105,
+            "name": "require",
+            "line": "assert bool(condition), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 3.836890040896833,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+            "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/BOUNDS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+            "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+            "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/EXECUTION.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+            "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+            "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/check_bounds.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+            "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+            "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/run_check.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+            "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stderr",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stdout",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+            "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/FREEZE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+            "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/prior_review/REPORT.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+            "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "weighted_cutoff_derivative",
+      "expected": "cutoff_and_quotient_derivative",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.4282954167574644,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2203,
+        "sha256": "8b9206157fc28a88ef5b139e5d14ad0376987d1a1c94d5da415b63117c0720f0"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "cutoff_and_quotient_derivative",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+            "lineno": 169,
+            "name": "run_weighted_reviewer",
+            "line": "identity('cutoff_and_quotient_derivative', s.diff(f_expr, t) - f_derivative)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+            "lineno": 110,
+            "name": "identity",
+            "line": "require(name, simplified == 0)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/09_weighted_cutoff_derivative/attempt_1/executed_helper.py",
+            "lineno": 105,
+            "name": "require",
+            "line": "assert bool(condition), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.30713600013405085,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+            "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/BOUNDS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+            "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+            "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/EXECUTION.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+            "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+            "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/check_bounds.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+            "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+            "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/run_check.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+            "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stderr",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stdout",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+            "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/FREEZE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+            "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/prior_review/REPORT.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+            "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "weighted_localized_derivative",
+      "expected": "U_coefficient_complete",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 10.344992249738425,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/10_weighted_localized_derivative/attempt_1/EXECUTION.json",
+        "bytes": 2211,
+        "sha256": "3959208aeebe7fc081f304640a5831d62fd68078712d86e325a9b55ecac5c92b"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "U_coefficient_complete",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/10_weighted_localized_derivative/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/10_weighted_localized_derivative/attempt_1/executed_helper.py",
+            "lineno": 252,
+            "name": "run_weighted_reviewer",
+            "line": "require('U_coefficient_complete', coefficients[1] == k * (32 * a1 + 2781))"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/10_weighted_localized_derivative/attempt_1/executed_helper.py",
+            "lineno": 105,
+            "name": "require",
+            "line": "assert bool(condition), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 10.151384042110294,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+            "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/BOUNDS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+            "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+            "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/EXECUTION.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+            "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+            "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/check_bounds.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+            "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+            "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/run_check.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+            "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stderr",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stdout",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+            "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/FREEZE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+            "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/prior_review/REPORT.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+            "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "weighted_first_omitted_hops",
+      "expected": "graph_distance_formula",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 10.643350459169596,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/11_weighted_first_omitted_hops/attempt_1/EXECUTION.json",
+        "bytes": 2208,
+        "sha256": "6699dce399abf042da4b61fa57617e991610e8346b979d965cede361b45eebb4"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "graph_distance_formula",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/11_weighted_first_omitted_hops/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/11_weighted_first_omitted_hops/attempt_1/executed_helper.py",
+            "lineno": 286,
+            "name": "run_weighted_reviewer",
+            "line": "require('graph_distance_formula', distance == M - L - 1)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/11_weighted_first_omitted_hops/attempt_1/executed_helper.py",
+            "lineno": 105,
+            "name": "require",
+            "line": "assert bool(condition), name"
+          }
+        ],
+        "selected_function_elapsed_seconds": 10.38310766685754,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/SOURCE_PINS.json",
+            "sha256": "04f4b586dba144f9c8830be1f23346860a3fc017a86a68a67084c55582ec1c50"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/BOUNDS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/BOUNDS.json",
+            "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/CANDIDATE.md.txt",
+            "sha256": "a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/EXECUTION.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/EXECUTION.json",
+            "sha256": "3be3665de14a5961f7cbda7d589f4925eb0aea96bd12f7a08fce76501315a174"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/SOURCE_PINS.json",
+            "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/check_bounds.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/check_bounds.py",
+            "sha256": "0be886d71839040982f0b372d39450a88166e1624b116a14d54442dc681490af"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/EMITTER_ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/EMITTER_ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CANDIDATE.md.txt",
+            "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/PACKET_THEOREM.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/PACKET_THEOREM.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/run_check.py",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/run_check.py",
+            "sha256": "7850555720d04de4c9b8f60ae44ccb323820963094f9f4caa85331e21c70eedb"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stderr",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/stdout",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/stdout",
+            "sha256": "736db8ba5f90cbd4823516f484b8a1b572622b9aa0af22639034cde743c31407"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/FREEZE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/FREEZE.json",
+            "sha256": "6db59cab5cb3537070f8e29890fc4d93b38b353a87632b174b759ca1722a2198"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/prior_review/REPORT.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/prior_review/REPORT.md.txt",
+            "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/instructions/SCIENCE_WORKFLOW.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/instructions/SCIENCE_WORKFLOW.md.txt",
+            "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+          },
+          {
+            "role": "weighted_reviewer",
+            "logical_identity": "sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_review/sources/author/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {
+          "sympy": {
+            "version": "1.14.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py"
+          },
+          "mpmath": {
+            "version": "1.3.0",
+            "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/__init__.py"
+          }
+        }
+      }
+    },
+    {
+      "case": "weighted_grouped_ceiling",
+      "expected": "assert 2 * Dj * Dj < D * D",
+      "intended_scientific_rejection": true,
+      "elapsed_seconds": 0.1998707503080368,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/EXECUTION.json",
+        "bytes": 2192,
+        "sha256": "458afbe3cd14d158cc671c4759307028cc4db1ecd10a2d08caabf6fb9f2e0ac6"
+      },
+      "outcome": {
+        "exception_type": "AssertionError",
+        "exception_message": "",
+        "traceback_frames": [
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/case_harness.py",
+            "lineno": 52,
+            "name": "<module>",
+            "line": "result=function(inputs)"
+          },
+          {
+            "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/executed_helper.py",
+            "lineno": 55,
+            "name": "run_weighted_author",
+            "line": "assert 2 * Dj * Dj < D * D"
+          }
+        ],
+        "selected_function_elapsed_seconds": 0.08574479119852185,
+        "actual_process_limits": {
+          "cpu_soft_hard_seconds": [
+            60,
+            60
+          ],
+          "external_wall_cap_seconds": 60,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "resolved_input_reads": [
+          {
+            "role": "weighted_author",
+            "logical_identity": "SOURCE_PINS.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/SOURCE_PINS.json",
+            "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+          },
+          {
+            "role": "weighted_author",
+            "logical_identity": "inputs/INSTALLED_CANDIDATE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CANDIDATE.md.txt",
+            "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+          },
+          {
+            "role": "weighted_author",
+            "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          },
+          {
+            "role": "weighted_author",
+            "logical_identity": "inputs/EMITTER_ROUTE.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/EMITTER_ROUTE.md.txt",
+            "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+          },
+          {
+            "role": "weighted_author",
+            "logical_identity": "inputs/PACKET_THEOREM.md",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/PACKET_THEOREM.md.txt",
+            "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+          },
+          {
+            "role": "weighted_author",
+            "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+            "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+            "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+          }
+        ],
+        "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+        "loaded_scientific_modules": {}
+      }
+    }
+  ],
+  "executed_cases": 12,
+  "unexpected_failures": 0,
+  "baseline_replayed_here": false,
+  "baseline_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/EXECUTION.json",
+    "bytes": 2360,
+    "sha256": "40b90d012a3358b22225955cdb77c3ac988c8550a24d09fafe6b71338d514783"
+  },
+  "all_canonical_bindings_unchanged": true,
+  "total_child_wall_seconds": 29.179187750909477,
+  "per_case_CPU_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "per_case_external_wall_seconds": 60,
+  "claim_limit": "These are sensitivity checks of existing calculations, not independent theorem/interval proofs or audit verdicts."
+}

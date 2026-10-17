@@ -1,0 +1,228 @@
+{
+  "scope": "Pre-run plan only; no mutation code imported or executed.",
+  "case_limit": 12,
+  "attempts_per_case_initially": 1,
+  "aggregate_initial_wall_cap_seconds": 720,
+  "limits": "Each future case has its own shared CPU60/wall60 envelope. Do not weaken assertions or hide failed harness attempts. Root reviews any retry plan.",
+  "method": "Copy one canonical helper per case to a new scratch attempt, apply its single unique source replacement, syntax-check, pin copied bytes, and execute only the selected function using the unchanged declared local inputs. Canonical/frozen files stay unchanged. Inject actual mutation limits into resolver metadata; do not claim canonical CPU120/wall120 for these cases.",
+  "success_criterion": "An AssertionError at the named scientific assertion, with matching traceback and preserved streams/source/receipt. Checksum/import/syntax/path/harness failures and timeouts are not intended scientific rejections.",
+  "independence": "Fault sensitivity checks of the existing calculations, not an independent theorem proof, interval proof from sampling, or a retained audit.",
+  "cases": [
+    {
+      "id": "local_vacancy_scalar",
+      "role": "local_author",
+      "function": "run_local_author",
+      "source": "scripts/product_seed_emitter_local_2026_10_17.py",
+      "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "old": "addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[1]) + coupling * (I16 - nn[3])",
+      "new": "addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[3])",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "full 16-dimensional scalar-reserve identity",
+      "purpose": "Remove a positive vacancy term while keeping the intended complete scalar identity.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "local_phase_conjugation",
+      "role": "local_author",
+      "function": "run_local_author",
+      "source": "scripts/product_seed_emitter_local_2026_10_17.py",
+      "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+      "old": "phase = s.expand(z0 * z0)",
+      "new": "phase = s.expand(s.conjugate(z0 * z0))",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "return/right-emission central notch",
+      "purpose": "Conjugate the loop phase; the central return notch should fail.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "installed_noncommuting_order",
+      "role": "installed_reviewer",
+      "function": "run_installed_reviewer",
+      "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "old": "assert exact_zero(sigma_direct - (sigma_free + X * T * Y))",
+      "new": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert exact_zero(sigma_direct - (sigma_free + Y * T * X))",
+      "purpose": "Reverse the noncommuting factors in the proposed self-energy identity.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "installed_lower_sign",
+      "role": "installed_reviewer",
+      "function": "run_installed_reviewer",
+      "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "old": "aug[4:6, 2:4] = -coupling * X",
+      "new": "aug[4:6, 2:4] = coupling * X",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert exact_zero(direct_aug - aug)",
+      "purpose": "Reverse the lower coupling sign in the augmented matching matrix.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "installed_density_jacobian",
+      "role": "installed_reviewer",
+      "function": "run_installed_reviewer",
+      "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "old": "jump_dk_times_pi = simp(-s.im(1 / df) * speed)",
+      "new": "jump_dk_times_pi = simp(-s.im(1 / df))",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert simp(jump_dk_times_pi - weights_dk_times_pi) == 0",
+      "purpose": "Omit the velocity Jacobian from the reference spectral density.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "installed_overlap_diagonal_only",
+      "role": "installed_reviewer",
+      "function": "run_installed_reviewer",
+      "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "old": "error_gram = cleaned((seed - packet).H * (seed - packet))",
+      "new": "error_gram = s.diag(*[cleaned((seed - packet).H * (seed - packet))[j, j] for j in range(2)])",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))",
+      "purpose": "Discard the off-diagonal operator Gram entries.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "installed_grouped_localization",
+      "role": "installed_author",
+      "function": "run_installed_author",
+      "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+      "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+      "old": "Dpacket = F(8 * 10 ** 42)",
+      "new": "Dpacket = F(10 ** 42)",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert Dj < 5 * 10 ** 42 and 2 * Dj ** 2 < Dpacket ** 2",
+      "purpose": "Understate the bound for the complete grouped localized columns.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "weighted_closed_inverse",
+      "role": "weighted_reviewer",
+      "function": "run_weighted_reviewer",
+      "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "old": "inv_formula = closed + rankterm",
+      "new": "inv_formula = rankterm",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "full_eight_coordinate_rank_one_inverse",
+      "purpose": "Omit the closed complementary inverse summand.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "weighted_cutoff_derivative",
+      "role": "weighted_reviewer",
+      "function": "run_weighted_reviewer",
+      "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "old": "f_derivative = k / normalizer * ((s.diff(chi, t) * G + chi * s.diff(G, t)) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)",
+      "new": "f_derivative = k / normalizer * (chi * s.diff(G, t) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "cutoff_and_quotient_derivative",
+      "purpose": "Omit the cutoff derivative in the packet derivative.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "weighted_localized_derivative",
+      "role": "weighted_reviewer",
+      "function": "run_weighted_reviewer",
+      "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "old": "integrand = s.Poly(s.expand(fp_upper * C_upper + f_upper * Cp_upper + R(5, 2) * f_upper * C_upper), U)",
+      "new": "integrand = s.Poly(s.expand(fp_upper * C_upper + R(5, 2) * f_upper * C_upper), U)",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "U_coefficient_complete",
+      "purpose": "Omit the derivative of the full localized correction.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "weighted_first_omitted_hops",
+      "role": "weighted_reviewer",
+      "function": "run_weighted_reviewer",
+      "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "old": "distance = M - (L + 2) + 1",
+      "new": "distance = M - (L + 2) + 2",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "graph_distance_formula",
+      "purpose": "Add one incorrect hop to the first omitted site.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    },
+    {
+      "id": "weighted_grouped_ceiling",
+      "role": "weighted_author",
+      "function": "run_weighted_author",
+      "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+      "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+      "old": "D = 3 / (k * k)",
+      "new": "D = 1 / (k * k)",
+      "unique_anchor_verified": true,
+      "expected_scientific_assertion": "assert 2 * Dj * Dj < D * D",
+      "purpose": "Understate the weighted grouped operator ceiling.",
+      "status": "planned_not_executed",
+      "cap_cpu_soft_hard_seconds": [
+        60,
+        60
+      ],
+      "external_wall_cap_seconds": 60
+    }
+  ]
+}

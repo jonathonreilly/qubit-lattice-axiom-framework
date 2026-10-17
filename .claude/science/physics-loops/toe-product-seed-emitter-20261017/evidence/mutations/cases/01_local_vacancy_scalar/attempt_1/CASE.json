@@ -1,0 +1,25 @@
+{
+  "id": "local_vacancy_scalar",
+  "role": "local_author",
+  "function": "run_local_author",
+  "source": "scripts/product_seed_emitter_local_2026_10_17.py",
+  "source_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e",
+  "old": "addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[1]) + coupling * (I16 - nn[3])",
+  "new": "addition = Qa + Qb + (E0 - 2 * coupling) * nn[0] + coupling * (I16 - nn[3])",
+  "unique_anchor_verified": true,
+  "expected_scientific_assertion": "full 16-dimensional scalar-reserve identity",
+  "purpose": "Remove a positive vacancy term while keeping the intended complete scalar identity.",
+  "status": "planned_not_executed",
+  "cap_cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_cap_seconds": 60,
+  "repo": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "resolver_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/FrozenInputs.py.txt",
+  "original_helper_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/product_seed_emitter_local_2026_10_17.py.txt",
+  "single_function_AST_changed": [
+    "run_local_author"
+  ],
+  "canonical_helper_sha256": "c567cfeaaddff24d9f59d70e99a7d59cb324e389a10d18db04e46a173407f25e"
+}

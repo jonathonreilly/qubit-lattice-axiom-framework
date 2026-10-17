@@ -1,0 +1,67 @@
+{
+  "exception_type": "AssertionError",
+  "exception_message": "",
+  "traceback_frames": [
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/case_harness.py",
+      "lineno": 52,
+      "name": "<module>",
+      "line": "result=function(inputs)"
+    },
+    {
+      "filename": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/cases/12_weighted_grouped_ceiling/attempt_1/executed_helper.py",
+      "lineno": 55,
+      "name": "run_weighted_author",
+      "line": "assert 2 * Dj * Dj < D * D"
+    }
+  ],
+  "selected_function_elapsed_seconds": 0.08574479119852185,
+  "actual_process_limits": {
+    "cpu_soft_hard_seconds": [
+      60,
+      60
+    ],
+    "external_wall_cap_seconds": 60,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  },
+  "resolved_input_reads": [
+    {
+      "role": "weighted_author",
+      "logical_identity": "SOURCE_PINS.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/SOURCE_PINS.json",
+      "sha256": "4d5178221ee4a48e89f79aba7a6d4f9d755c29ef674a7930e81fe0ff2781e376"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CANDIDATE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CANDIDATE.md.txt",
+      "sha256": "4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/EMITTER_ROUTE.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/EMITTER_ROUTE.md.txt",
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/PACKET_THEOREM.md",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/PACKET_THEOREM.md.txt",
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "role": "weighted_author",
+      "logical_identity": "inputs/INSTALLED_CERTIFICATE.json",
+      "path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/weighted_emitter_escape_candidate/inputs/INSTALLED_CERTIFICATE.json",
+      "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+    }
+  ],
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "loaded_scientific_modules": {}
+}

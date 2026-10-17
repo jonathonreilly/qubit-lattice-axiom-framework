@@ -1,0 +1,48 @@
+{
+  "start_utc": "2026-10-17T01:03:04.014392+00:00",
+  "end_utc": "2026-10-17T01:03:06.581100+00:00",
+  "wall_seconds": 2.5652289167046547,
+  "exit_code": 0,
+  "timed_out": false,
+  "command": [
+    "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate/certify_installed_emitter.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_installed_certificate",
+  "script_sha256": "950973354e69857ab19e40dbbf185ada46d1cda8a8a6c201c35fecf97a74623c",
+  "python_binary": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "python_binary_sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+  "stdout_sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "caps": {
+    "declared_before_computation_utc": "2026-10-17T00:54:03Z",
+    "cpu_seconds": 30,
+    "wall_seconds": 60,
+    "maximum_executed_matrix_dimension": 48,
+    "actual_planned_blocks": {
+      "physical_old_source": 16,
+      "original_matching_per_parity": 16,
+      "augmented_matching_per_parity": 24,
+      "full_two_parity_equivalent": 48,
+      "distinct_scalar_geometry_check": 16
+    },
+    "on_shell_diagnostic_momenta": 3,
+    "sectors_per_momentum": 4,
+    "momentum_grid_is_not_a_certificate": true,
+    "arithmetic": "exact Python Fraction inequalities; exact SymPy finite elimination; 90-digit mpmath diagnostics only",
+    "optimizers": 0,
+    "time_evolution_simulations": 0,
+    "parameters": {
+      "L": 12,
+      "coupling": "1/1000000000000",
+      "half_width": "1/1000000",
+      "center": "2 atan(1/4.510351185997098)"
+    },
+    "excluded": "No linewidth-to-time inference; no omitted source/return outputs; no external source edits"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

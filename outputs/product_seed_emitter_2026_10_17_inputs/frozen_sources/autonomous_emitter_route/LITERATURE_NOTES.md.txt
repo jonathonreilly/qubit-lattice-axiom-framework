@@ -1,0 +1,40 @@
+# Narrow primary-literature check
+
+This is a mechanism/limitations lookup, not an exhaustive survey or novelty
+claim. The source-exposed author retained the inherited model and effort.
+No theorem from the papers is assumed in the emitter algebra certificate.
+
+The bounded queries were:
+
+- `site.arxiv.org giant atom complex coupling phases directional emission tight binding waveguide two connection points`
+- `site.arxiv.org giant atom chiral coupling non-Markovian bound states tight-binding waveguide`
+- `"Nonreciprocal and chiral single-photon scattering for giant atoms" arxiv`
+
+The following primary sources were inspected through the web tool, with the
+final direct reads on 2026-10-17 UTC:
+
+1. Yao-Tong Chen, Lei Du, Lingzhen Guo, Zhihai Wang, Yan Zhang, Yong Li and
+   Jin-Hui Wu, [Nonreciprocal and chiral single-photon scattering for giant
+   atoms](https://arxiv.org/abs/2203.00823v2), arXiv:2203.00823v2;
+   Communications Physics 5, 215 (2022),
+   [DOI](https://doi.org/10.1038/s42005-022-00991-3).
+   Read coverage: complete arXiv abstract/metadata and primary journal
+   search-result text relevant to phases, loss and transmission. Direct
+   journal-page opening returned an HTTP 500; the paper's full argument was
+   not imported. Its stated requirement of external dissipation for
+   nonreciprocal transmission in its two-level model is compatible with,
+   but not a proof of, the elementary lossless two-port identity checked here.
+
+2. Z. Y. Li and H. Z. Shen, [Non-Markovian dynamics with a giant atom coupled
+   to a semi-infinite photonic waveguide](https://arxiv.org/html/2404.07890v1),
+   arXiv:2404.07890v1. Read coverage: abstract, model, and equation-of-motion
+   derivation through the early solution formulas, including its stated
+   linearized dispersion and extension of the momentum integral. It supplies
+   context for returned-field reabsorption and bound states. Its delay
+   equation is not transferred to the finite-band discrete clock.
+
+No secondary article or experimental hardware capability was used as a
+mathematical premise. Equations (10)-(20) of ROUTE.md and the new conditional
+overlap lemma were derived for the explicit finite-band Hamiltonian. The
+remaining installed-system certificates are named in ROUTE.md rather than
+attributed to either reference.

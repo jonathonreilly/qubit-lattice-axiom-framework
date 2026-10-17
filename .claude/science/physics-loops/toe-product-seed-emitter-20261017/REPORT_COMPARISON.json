@@ -1,0 +1,109 @@
+{
+  "checked_utc": "2026-10-17T02:21:08.030681+00:00",
+  "scope": "Exact data comparison of six returned payloads, not another scientific execution or theorem review.",
+  "canonical_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/result.json",
+    "bytes": 110471,
+    "sha256": "84b5680f5b5fd747121ee6e4abdff210a14a782662814bdeaafda3140870a4f5"
+  },
+  "canonical_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_02/EXECUTION.json",
+    "bytes": 2360,
+    "sha256": "40b90d012a3358b22225955cdb77c3ac988c8550a24d09fafe6b71338d514783"
+  },
+  "preserved_cache_rejected_attempt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_integration/canonical_01/FAILURE.json",
+    "bytes": 1800,
+    "sha256": "abd5d276d6c16bfadd75843d907ee9be172df878183009d7bfb45cd9d6fc9eba"
+  },
+  "report_comparisons": [
+    {
+      "role": "local_author",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/autonomous_emitter_route/ALGEBRA_CERTIFICATE.json",
+        "bytes": 6106,
+        "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "d7ec62749d000e7b362b92cf67f324e4d0caf206acf1bfce552eb4f8b475aa80",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    },
+    {
+      "role": "local_reviewer",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/emitter_independent_review/RESULTS.json",
+        "bytes": 5330,
+        "sha256": "c43d1d1750fc33fedba9347ea70c131cfc8738432167106de6b6873c6c3e43dd"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "35e4abf6a485264bee736b50490c0b8a3202653ce9fcc69ff55beaff9376f733",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    },
+    {
+      "role": "installed_author",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/emitter_installed_certificate/CERTIFICATE.json",
+        "bytes": 15554,
+        "sha256": "594ea7e4ec17f9a879b94e6750483ef58ffb067f4b57f73126909dfa99479763"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "a14009407ba61a6ad888d89b8b83100a54045a04d32bccd836814222a6d93580",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    },
+    {
+      "role": "installed_reviewer",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/emitter_installed_review/RESULTS.json",
+        "bytes": 7824,
+        "sha256": "145c93679e8b9e9b8ea14751d6edfe1080aa7a93334cfe773fb730e883f89e94"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "6b256a90147b2c49820ca6dbc385f6c48cbfb28da261dcfe7ac9a88af63ffe67",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    },
+    {
+      "role": "weighted_author",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/weighted_emitter_escape_candidate/BOUNDS.json",
+        "bytes": 2475,
+        "sha256": "c87b11324584d3cc461010b155644f3e4d25201ec0267ad14158f8cd0c50d6b5"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "cc12483c0ba0f3e8858b7d6eb566c9afd44b1204047aae8ccb704a085a394e92",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    },
+    {
+      "role": "weighted_reviewer",
+      "historical_output": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_publication_draft/sources/weighted_emitter_escape_review/runs/attempt_1/RESULT.json",
+        "bytes": 10792,
+        "sha256": "559766804ced7727e12fc5aeeacba7608e1956a8f4b50f84329038056365fb23"
+      },
+      "entire_scientific_payload_equal": true,
+      "normalized_payload_sha256": "ca9f218513dfe2a02c1df1a0e864a632166d1bb7c2627e5d92460d4864599a17",
+      "allowed_differences": [
+        "All mathematical values, point diagnostics, check records and limits other than execution metadata are exactly equal.",
+        "Only elapsed_seconds values, the explicitly nested historical cap metadata, two historical self-hash key labels, and separately checked portable_execution metadata differ."
+      ]
+    }
+  ],
+  "current_declared_inputs_verified": 168,
+  "resolved_reads_verified": 53,
+  "scientific_discrepancies": [],
+  "failure_limit": "The first attempt emitted an equal scientific JSON but has no valid cache; its deleted merged child stream is unavailable. Only canonical_02 is the successful canonical execution."
+}

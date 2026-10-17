@@ -1,0 +1,10 @@
+{
+  "status": "Exact reviewer checks completed",
+  "seed_variance": "1/500000000000000000000000",
+  "local_scattering_points": 2,
+  "matrix_dimension": 9,
+  "graph_hop_distance": 3,
+  "actual_seed_overlap_computed": false,
+  "emission_time": null,
+  "elapsed_seconds": 1.549805791117251
+}

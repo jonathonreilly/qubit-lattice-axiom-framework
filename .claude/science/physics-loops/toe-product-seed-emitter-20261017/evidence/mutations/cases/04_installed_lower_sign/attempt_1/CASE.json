@@ -1,0 +1,25 @@
+{
+  "id": "installed_lower_sign",
+  "role": "installed_reviewer",
+  "function": "run_installed_reviewer",
+  "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+  "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+  "old": "aug[4:6, 2:4] = -coupling * X",
+  "new": "aug[4:6, 2:4] = coupling * X",
+  "unique_anchor_verified": true,
+  "expected_scientific_assertion": "assert exact_zero(direct_aug - aug)",
+  "purpose": "Reverse the lower coupling sign in the augmented matching matrix.",
+  "status": "planned_not_executed",
+  "cap_cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_cap_seconds": 60,
+  "repo": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "resolver_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/FrozenInputs.py.txt",
+  "original_helper_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/product_seed_emitter_installed_2026_10_17.py.txt",
+  "single_function_AST_changed": [
+    "run_installed_reviewer"
+  ],
+  "canonical_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d"
+}

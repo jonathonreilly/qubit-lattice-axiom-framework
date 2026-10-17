@@ -1,0 +1,25 @@
+{
+  "id": "weighted_cutoff_derivative",
+  "role": "weighted_reviewer",
+  "function": "run_weighted_reviewer",
+  "source": "scripts/product_seed_emitter_weighted_2026_10_17.py",
+  "source_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669",
+  "old": "f_derivative = k / normalizer * ((s.diff(chi, t) * G + chi * s.diff(G, t)) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)",
+  "new": "f_derivative = k / normalizer * (chi * s.diff(G, t) / Dbar - chi * G * s.diff(Dbar, t) / Dbar ** 2)",
+  "unique_anchor_verified": true,
+  "expected_scientific_assertion": "cutoff_and_quotient_derivative",
+  "purpose": "Omit the cutoff derivative in the packet derivative.",
+  "status": "planned_not_executed",
+  "cap_cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_cap_seconds": 60,
+  "repo": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "resolver_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/FrozenInputs.py.txt",
+  "original_helper_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/product_seed_emitter_weighted_2026_10_17.py.txt",
+  "single_function_AST_changed": [
+    "run_weighted_reviewer"
+  ],
+  "canonical_helper_sha256": "9591a45a5566d5c32501fcb007b4ecc8ae79abd9b956134761e29dbef5463669"
+}

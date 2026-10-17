@@ -1,0 +1,69 @@
+{
+  "frozen_utc": "2026-10-17T01:23:12.597325+00:00",
+  "status": "No blocking mathematical defect found; conditional provisional reuse only, not audit or native physical realization",
+  "review": {
+    "path": "REPORT.md",
+    "bytes": 23238,
+    "sha256": "cf9f05affa0155ff4069549490f61971d1d136b9f1e37a5d566c45b0f8d9590f"
+  },
+  "checker": {
+    "path": "check_installed.py",
+    "bytes": 13328,
+    "sha256": "92cff9237938a430c68aa36bbf4c5f952c8392ea3d01c5d0bcc736d1a9b7d680"
+  },
+  "execution": {
+    "path": "EXECUTION.json",
+    "bytes": 1515,
+    "sha256": "2a3b0f06ae82da2c87f025d35d5529ad73c93f82a82c908f066534aebc06897c"
+  },
+  "results": {
+    "path": "RESULTS.json",
+    "bytes": 7824,
+    "sha256": "145c93679e8b9e9b8ea14751d6edfe1080aa7a93334cfe773fb730e883f89e94"
+  },
+  "source_pins": {
+    "path": "SOURCE_PINS.json",
+    "bytes": 12809,
+    "sha256": "b47ce14623db1efc9347a7f9447a32f8ea07bebfdf51c16c2633c5e2fe3a0726"
+  },
+  "caps": {
+    "path": "CAPS.json",
+    "bytes": 1213,
+    "sha256": "641338f2a879b46a8806fc75dbafc51e381c4d87ceab113a5c147e29393c5231"
+  },
+  "manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 6222,
+    "sha256": "4ee7be5d50883ad26b1cf3f897b9645058d83608c441364e0578172a32a104ba"
+  },
+  "source_refresh": {
+    "originals_unchanged": 26,
+    "snapshots_unchanged": 26,
+    "author_freeze_files_preverified": 16,
+    "review_link_targets_verified": 14
+  },
+  "actual_execution": {
+    "attempts": 1,
+    "failed_scientific_attempts": 0,
+    "wall_seconds": 0.8808858329430223,
+    "largest_matrix_dimension": 14,
+    "cpu_cap_seconds": 45,
+    "wall_cap_seconds": 60
+  },
+  "coverage": {
+    "new_decisive_path": "Direct noncommuting two-channel14-dimensional outgoing graph; exact matrix-order/sign/density/overlap discriminators; independently rounded rational interval/resource enclosures",
+    "inherited": "Prior full physical ladder point/interval certificates and generic theorem; reviewer author role for original/capped ladder disclosed",
+    "not_performed": [
+      "author-code replay",
+      "new full physical stationary residual certificate",
+      "momentum-grid interval inference",
+      "narrow-resonance quadrature",
+      "time evolution",
+      "native implementation",
+      "formal audit"
+    ]
+  },
+  "editable_prompt_files_changed": [],
+  "source_theorems_modified": false,
+  "git_or_repository_mutation": false
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "Lossless archival of six exact unified diffs and one actual historical stdout; no byte normalization or science-input change. Historical freeze/receipts retain original raw-path identities; use this map to locate and decompress those bytes.",
+  "files": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_reviewer.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 24976,
+      "raw_sha256": "bfdb0e916e7b50b22fb057550ade966b74075d783d09e11d4cdf2ef940abd9b3",
+      "bytes": 8079,
+      "sha256": "01e3270c857af76af6becbf5884962107454b7f0271f8f8782410b4f43127331"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_reviewer.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 22538,
+      "raw_sha256": "fd20beff02a8216b7dd13ae2040221f19e8c374d33926712d36615a204806e9b",
+      "bytes": 7764,
+      "sha256": "ed2321108f10639354b70397933ead689dd9dc678d50211307e26331ae76c780"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/local_author.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 13879,
+      "raw_sha256": "68027c54f55ab77fdb1dba2418f7f5ae59598f16b88d2de41ce3eadababdf83d",
+      "bytes": 4223,
+      "sha256": "b111893410fff3374ef40e5fe8e3283994aa30992a6d50397a8a277d9f909d4e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/weighted_author.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 6197,
+      "raw_sha256": "6ca7fe1edfa77613011133b2a55f6e2b184f28d7464debe69859147391849f13",
+      "bytes": 2254,
+      "sha256": "0d098fa9de5c12c5070a5980bb2faccf1a99d05923ba1882762e4e6511502de0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_reviewer.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 25914,
+      "raw_sha256": "0719a1595ea7fe69a727a98fd934e980be190e7cf097bf01fd91db2942a527d0",
+      "bytes": 8396,
+      "sha256": "b4f25ce32aff3ac16437ebb3b71672b8ec13c0932aa731d956af8114b5b29bb4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/source_deltas/installed_author.diff.gz",
+      "compression": "gzip",
+      "raw_bytes": 34154,
+      "raw_sha256": "1079c7b1471b78398f458cb9dbdb51fa0013eb528f1bf33cadb6ee09e2775f23",
+      "bytes": 11211,
+      "sha256": "4b70304cb1d8183ae2879a0a303d6349fe8d99dec93c0700b1a9791c87283eff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt",
+      "path": ".claude/science/physics-loops/toe-product-seed-emitter-20261017/portability_evidence/static_build_attempt_2/stdout.txt.gz",
+      "compression": "gzip",
+      "raw_bytes": 1149,
+      "raw_sha256": "7f986d768cac1a3b841e19ab38591c13e81ed91fb066f03279e11d242e286a13",
+      "bytes": 600,
+      "sha256": "49a27a6f3aee81b588b5449f56392c061bb63d74bca51e3bbfdeb4e33405d144"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "checks": [
+    {
+      "check": "z0 is exactly unit modulus",
+      "passed": true
+    },
+    {
+      "check": "E0 - 2 coupling is positive",
+      "passed": true
+    },
+    {
+      "check": "sin(2 k0) is positive",
+      "passed": true
+    },
+    {
+      "check": "speed lower bound on k0 +- sigma",
+      "passed": true
+    },
+    {
+      "check": "first edge Hermitian",
+      "passed": true
+    },
+    {
+      "check": "first edge positive with norm 2 coupling",
+      "passed": true
+    },
+    {
+      "check": "second edge Hermitian",
+      "passed": true
+    },
+    {
+      "check": "second edge positive with norm 2 coupling",
+      "passed": true
+    },
+    {
+      "check": "full 16-dimensional scalar-reserve identity",
+      "passed": true
+    },
+    {
+      "check": "addition conserves total emitter-plus-clock head number",
+      "passed": true
+    },
+    {
+      "check": "return/right-emission central notch",
+      "passed": true
+    },
+    {
+      "check": "left-emission central amplitude squared",
+      "passed": true
+    },
+    {
+      "check": "central self-energy optical identity",
+      "passed": true
+    },
+    {
+      "check": "central exact two-port unitarity",
+      "passed": true
+    },
+    {
+      "check": "central equal transmission probabilities",
+      "passed": true
+    },
+    {
+      "check": "return transmission at center is exactly one",
+      "passed": true
+    },
+    {
+      "check": "both reflection amplitudes at center vanish",
+      "passed": true
+    },
+    {
+      "check": "off_center_algebra_only self-energy optical identity",
+      "passed": true
+    },
+    {
+      "check": "off_center_algebra_only exact two-port unitarity",
+      "passed": true
+    },
+    {
+      "check": "off_center_algebra_only equal transmission probabilities",
+      "passed": true
+    },
+    {
+      "check": "directional ratio strict ceiling",
+      "passed": true
+    },
+    {
+      "check": "return reflection amplitude strict ceiling",
+      "passed": true
+    },
+    {
+      "check": "return transmission error strict ceiling",
+      "passed": true
+    },
+    {
+      "check": "wrong-way in-band probability-fraction strict ceiling",
+      "passed": true
+    },
+    {
+      "check": "single-column out-of-band amplitude below 6e-5",
+      "passed": true
+    },
+    {
+      "check": "grouped operator out-of-band amplitude at most 8e-5",
+      "passed": true
+    }
+  ],
+  "constants_exact": {
+    "added_common_scalar": "1/500000000000",
+    "clock_attachment_added_positive_block_norm_sum": "3/1000000000000",
+    "directional_ratio": "28470942580001221460551733349533582334670664139372522141370801/21811204268462805770734554828804148527065791627335860627477858629199",
+    "emitter_incident_positive_block_norm_sum": "15010553558851816955256357129429116105401/2667908477628178564714558052700500000000000",
+    "grouped_out_of_band_operator_norm_squared_ceiling": "1/156250000",
+    "return_reflection_ceiling": "56941885160002442921103466699067164669341328278745044282741602/21811204268462805770734554828804148527065791627335860627477858629199",
+    "return_transmission_error_ceiling": "1621189142787453217332928544240098528609920592226049900061135340448431525973064041360488007435199219621244330091894750763202/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+    "sin_2k0": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+    "single_column_out_of_band_norm_squared_ceiling": "1/312500000",
+    "wrong_way_in_band_probability_fraction_ceiling": "810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601"
+  },
+  "display_only": {
+    "E0": 0.005626337514718896,
+    "directional_ratio": 1.3053356536194495e-06,
+    "k0": 0.43636579340926135,
+    "return_reflection_ceiling": 2.610671307238899e-06,
+    "return_transmission_error_ceiling": 3.4078023372202306e-12,
+    "sin_2k0": 0.7660874829878727,
+    "wrong_way_in_band_probability_fraction_ceiling": 1.7039011686101153e-12
+  },
+  "limitations": [
+    "same-model source-exposed author algebra, not independent review",
+    "no finite emission-completion time",
+    "no augmented old/source matching inverse",
+    "no in-band point-spectrum bound for the installed apparatus",
+    "no complete-output gate theorem for the autonomous seed"
+  ],
+  "parameters_exact": {
+    "E0": "30021107107032000000000000000/5335816955256357129429116105401",
+    "J": "3752638388379/125000000000000",
+    "coupling": "1/1000000000000",
+    "q0": "2255175592998549/500000000000000",
+    "sigma": "1/1000000",
+    "speed": "1/40"
+  },
+  "point_algebra": [
+    {
+      "label": "central",
+      "q_exact": "2255175592998549/500000000000000",
+      "return_reflection_squared_display": 0.0,
+      "return_transmission_minus_one_squared_display": 0.0
+    },
+    {
+      "label": "off_center_algebra_only",
+      "q_exact": "2305175592998549/500000000000000",
+      "return_reflection_squared_display": 2.366299604616311e-41,
+      "return_transmission_minus_one_squared_display": 3.448408480997118e-45
+    }
+  ],
+  "resources": {
+    "cpu_cap_seconds": 10,
+    "interval_grid_points": 0,
+    "max_matrix_dimension": 16,
+    "onshell_exact_points": 2,
+    "optimizer_iterations": 0,
+    "wrapper_wall_cap_seconds": 30
+  },
+  "runtime": {
+    "elapsed_seconds": 1.0319901672191918,
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "script_sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9",
+    "sympy_version": "1.14.0"
+  },
+  "scope": "exact cell/form-factor/optical algebra and analytic diagnostic constants; no installed-emitter time certificate"
+}

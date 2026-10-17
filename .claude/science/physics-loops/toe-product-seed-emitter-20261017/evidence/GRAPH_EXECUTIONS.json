@@ -1,0 +1,18 @@
+[
+  {
+    "script": "docs/audit/scripts/run_citation_graph_build.py",
+    "started_utc": "2026-10-17T02:21:32.375013+00:00",
+    "elapsed_seconds": 129.4403789169155,
+    "wall_cap_seconds": 180,
+    "exit_code": 0,
+    "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+  },
+  {
+    "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+    "started_utc": "2026-10-17T02:23:41.824073+00:00",
+    "elapsed_seconds": 0.07231299998238683,
+    "wall_cap_seconds": 60,
+    "exit_code": 0,
+    "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+  }
+]

@@ -1,0 +1,40 @@
+# Qualified provisional emitter sources
+
+The exact frozen local construction and conditional implication in ROUTE.md at
+f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1 are accepted
+for provisional mathematical composition, after the complete separate review at
+e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f. No actual
+autonomous preparation certificate, retained audit or physical realization is
+accepted by this decision. The source remains unchanged, including historical
+pending metadata; this decision records later qualification.
+
+The positive two-body cell includes both vacancy terms and the scalar 2*kappa.
+Its complex loop phase, clean clock/source vacuum and excited emitter are explicit
+supplied resources. The free-lead directional zero and return estimates concern
+the uniform lead only. The installed energy-variance estimate is column-dependent;
+its safe within-parity square sum does not produce one common spectral projector.
+
+The section 7 implication requires an actual uniform augmented matching inverse,
+one common normalized spectral envelope, a full operator seed-overlap bound, one
+common augmented phase comparison, and finite localized/escape constants. These
+hypotheses have not been established for this emitter. A linewidth estimate, weak
+coupling, scalar repeated-scattering series or small energy variance cannot stand
+in for them. Bound states, all return visits, emitter and source amplitudes remain
+in the contract. Actual old aging begins at the initial product seed, with scalar
+exp[-i(nu+2*kappa)t]; phase and off-diagonal seed overlaps cannot be discarded.
+
+A finite-clock implication preserves only its specified time horizon and the
+seed-to-omitted-site distance M-L-1. Infinite blank supply is still a premise of an
+all-future result. Single-point emitter failure is an explicit uniform-lead
+counterexample to one shortcut, not an exclusion of other preparation methods.
+
+The separate checker solved local matching equations, used full-qubit Gram factors,
+and tested distinct overlap and hop-count discriminators. Its single exact run
+exited zero in 1.742296 seconds, maximum dimension 9, under 45 CPU/60 wall seconds.
+The complete code, output and receipt were read. This is same-model source-exposed
+checking; no blind, model-diverse, proof-assistant or independent retained audit is
+claimed. External literature arguments and novelty were not adopted as premises.
+
+Source acceptance does not preapprove a new installed-system argument, canonical
+wrapper, execution or PR. Those remain separate work. No prompts, axioms, Git science,
+main branch or audit verdict changed in this source-qualification step.

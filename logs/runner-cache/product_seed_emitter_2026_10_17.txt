@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/product_seed_emitter_2026_10_17.py
+runner_sha256: 6eaf2e5c9716616f103b13a53f5fdf39d8baced9da7abe7dbc8263dc6e95be26
+input_fingerprint_sha256: b891480e4c8316402f853bfa3b0d5a021ca38265e1f23aa31e0d07894c1f0517
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.68
+status: ok
+----- stdout -----
+{
+  "scope": "Canonical replay of six source-exposed finite calculation bodies; original source qualifications and complete analytical proofs remain separate.",
+  "function_bodies_completed": 6,
+  "initial_onset": 1000000000000000000000000000000000000000000000000000000000000000000000000,
+  "weighted_onset": 1000000000000000000000000000000000000,
+  "initial_complete_error": {
+    "exact_rational": "84065000000000000000000003/22500000000000000000000000000",
+    "display_float": 0.0037362222222222224
+  },
+  "weighted_complete_error": {
+    "exact_rational": "2057560027/540000000000",
+    "display_only_float": 0.0038102963462962962
+  },
+  "weighted_finite_complete_error": {
+    "exact_rational": "2597560027/540000000000",
+    "display_only_float": 0.004810296346296297
+  },
+  "actual_combined_process_limits": {
+    "cpu_soft_hard_seconds": [
+      120,
+      120
+    ],
+    "external_wall_cap_seconds": 120,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  }
+}
+
+----- stderr -----
+

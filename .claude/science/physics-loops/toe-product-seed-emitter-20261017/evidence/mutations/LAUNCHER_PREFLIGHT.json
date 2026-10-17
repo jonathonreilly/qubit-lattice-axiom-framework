@@ -1,0 +1,25 @@
+{
+  "scope": "Syntax-only preflight; no scientific function executed.",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/case_harness.py",
+      "bytes": 3849,
+      "sha256": "43e51be98ea53a2df9a93d7ae5d2dccdd0f391f23dffcee5ef14035579915a7e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/run_mutations.py",
+      "bytes": 10869,
+      "sha256": "79da80d8032f40f428f57e92ebc3aafbbe57576cfbe7370690e2a13515dc0f9d"
+    }
+  ],
+  "root_completion_signal_received": true,
+  "canonical_baseline": "canonical_02 only; canonical_01 excluded",
+  "cases": 12,
+  "initial_attempts_each": 1,
+  "per_case_CPU_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "per_case_external_wall_seconds": 60
+}

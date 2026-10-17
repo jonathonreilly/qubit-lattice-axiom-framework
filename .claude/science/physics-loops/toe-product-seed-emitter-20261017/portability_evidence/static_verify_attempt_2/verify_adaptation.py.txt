@@ -1,0 +1,338 @@
+"""Static/source and local-byte bookkeeping checks; never replay science.
+
+Only two isolated groups of definitions are evaluated: FrozenInputs (stdlib
+read/hash operations) and existing citation parser/helper-discovery functions.
+Neither a scientific helper nor the primary module is imported or executed.
+"""
+from pathlib import Path
+from fractions import Fraction
+import ast
+import copy
+import hashlib
+import json
+import py_compile
+import re
+import resource
+import subprocess
+import sys
+import urllib.parse
+
+D = Path(__file__).resolve().parent
+N = D.parent
+S = N / 'emitter_publication_draft'
+W = N.parent / 'correlation_worktree'
+Q = W / '.claude/science/physics-loops/toe-product-seed-emitter-20261017'
+F = W / 'outputs/product_seed_emitter_2026_10_17_inputs'
+note = W / 'docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+primary = W / 'scripts/product_seed_emitter_2026_10_17.py'
+def sha(raw): return hashlib.sha256(raw).hexdigest()
+def digest(p):
+    raw = p.read_bytes()
+    return {'bytes': len(raw), 'sha256': sha(raw)}
+def adump(n): return ast.dump(n, include_attributes=False)
+def ahash(n): return sha(adump(n).encode())
+def checkpin(p, row):
+    assert digest(p) == {k: row[k] for k in ('bytes', 'sha256')}, str(p)
+
+freeze = json.loads((S / 'FREEZE.json').read_text())
+for row in freeze['files']:
+    checkpin(S / row['path'], row)
+assert len(freeze['files']) == 175
+inventory = json.loads((F / 'SOURCE_INVENTORY.json').read_text())
+assert len(inventory['files']) == 152
+for row in inventory['files']:
+    checkpin(S / row['snapshot_path'], row)
+    checkpin(W / row['canonical_path'], row)
+    assert (S / row['snapshot_path']).read_bytes() == (W / row['canonical_path']).read_bytes()
+checkpin(W / inventory['parent_current']['path'], inventory['parent_current'])
+manifest = json.loads((F / 'ARTIFACT_MANIFEST.json').read_text())
+for row in manifest['files']:
+    checkpin(W / row['path'], row)
+bodymap = json.loads((F / 'EMBEDDED_SOURCE_MAP.json').read_text())
+checkpin(note, bodymap)
+notebytes = note.read_bytes()
+for body in bodymap['bodies']:
+    raw = notebytes[body['offset_bytes_zero_based']:body['end_byte_exclusive']]
+    assert len(raw) == body['length_bytes'] and sha(raw) == body['sha256']
+    assert raw == (W / body['source']).read_bytes()
+assert len(bodymap['bodies']) == 3
+
+adaptation = json.loads((Q / 'SOURCE_ADAPTATION.json').read_text())
+programs = json.loads((S / 'PROGRAM_INPUTS.json').read_text())['programs']
+retained_counts = {}
+allowed_event_kinds = {'explicit_local_input_read', 'historical_self_source_read',
+                       'historical_program_identity_label', 'resource_metadata_only'}
+cap_keys = {'cpu_cap_seconds','wrapper_wall_cap_seconds','cpu_seconds_cap',
+            'parent_wall_seconds_cap','wall_cap_seconds','external_wall_cap_seconds'}
+
+def removed_is_transport(node, role):
+    if isinstance(node, ast.Expr) and isinstance(node.value, ast.Call):
+        c = node.value
+        if isinstance(c.func, ast.Attribute) and isinstance(c.func.value, ast.Name):
+            if c.func.value.id == 'resource' and c.func.attr == 'setrlimit':
+                return True
+            if role == 'weighted_reviewer' and (c.func.value.id, c.func.attr) in {('parser','add_argument'), ('outpath','relative_to')}:
+                return True
+        if isinstance(c.func, ast.Name) and c.func.id == 'print': return True
+        if isinstance(c.func, ast.Attribute) and c.func.attr == 'write_text': return True
+    if isinstance(node, ast.Assign):
+        names = {t.id for t in node.targets if isinstance(t, ast.Name)}
+        return bool(names) and names <= ({'ROOT','parser','args','outpath'} if role == 'weighted_reviewer' else {'ROOT'})
+    return False
+
+def check_event(event, role):
+    assert event['kind'] in allowed_event_kinds
+    old = ast.parse(event['old_source'], mode='eval').body
+    new = ast.parse(event['new_source'], mode='eval').body
+    assert adump(old) == event['old_ast'] and adump(new) == event['new_ast']
+    kind = event['kind']
+    if kind in {'explicit_local_input_read','historical_self_source_read'}:
+        assert isinstance(old, ast.Call) and isinstance(old.func, ast.Attribute)
+        assert old.func.attr in {'read_text','read_bytes'} and not old.args and not old.keywords
+        assert isinstance(new, ast.Call) and isinstance(new.func, ast.Attribute)
+        assert adump(new.func.value) == adump(ast.Name('inputs', ast.Load()))
+        assert new.args[0].value == role and not new.keywords
+        recv = old.func.value
+        if kind == 'historical_self_source_read':
+            assert ast.unparse(recv) == 'Path(__file__)'
+            assert new.func.attr == 'original_program_bytes' and len(new.args) == 1
+        else:
+            assert new.func.attr == old.func.attr and len(new.args) == 2
+            if isinstance(recv, ast.BinOp):
+                assert isinstance(recv.op, ast.Div) and ast.unparse(recv.left) == 'ROOT'
+                logical = recv.right
+            else:
+                assert isinstance(recv, ast.Call) and ast.unparse(recv.func) == 'Path'
+                assert len(recv.args) == 1 and not recv.keywords
+                logical = recv.args[0]
+            assert adump(new.args[1]) == adump(logical)
+    elif kind == 'historical_program_identity_label':
+        assert isinstance(old, ast.Constant) and old.value == 'script_sha256'
+        assert isinstance(new, ast.Constant) and new.value == 'historical_source_program_sha256'
+    else:
+        assert isinstance(old, ast.Dict) and isinstance(new, ast.Dict)
+        positions = [i for i,k in enumerate(old.keys) if isinstance(k,ast.Constant) and k.value in cap_keys]
+        assert positions
+        expected = ast.Dict([k for i,k in enumerate(old.keys) if i not in positions] +
+                            [ast.Constant('historical_source_run_limits'), ast.Constant('actual_shared_process_limits')],
+                            [v for i,v in enumerate(old.values) if i not in positions] +
+                            [ast.Dict([old.keys[i] for i in positions], [old.values[i] for i in positions]),
+                             ast.parse('inputs.shared_limits()', mode='eval').body])
+        assert adump(expected) == adump(new)
+    return old, new
+
+class UndoOne(ast.NodeTransformer):
+    def __init__(self, old, new): self.old=old; self.new=adump(new); self.count=0
+    def visit(self, node):
+        if adump(node) == self.new:
+            self.count += 1
+            return copy.deepcopy(self.old)
+        return super().visit(node)
+
+helper_paths = sorted({p['canonical_module'] for p in adaptation['programs']})
+helper_trees = {p:ast.parse((W/p).read_text()) for p in helper_paths}
+for tree in helper_trees.values():
+    assert len(tree.body) == 3 and isinstance(tree.body[0],ast.Expr)
+    assert all(isinstance(x,ast.FunctionDef) for x in tree.body[1:])
+    assert all(x.args.args[0].arg == 'inputs' and not x.decorator_list for x in tree.body[1:])
+for row, p in zip(adaptation['programs'], programs):
+    role = row['role']
+    original = ast.parse((S/'sources'/p['program']).read_text())
+    fn = next(x for x in helper_trees[row['canonical_module']].body if isinstance(x,ast.FunctionDef) and x.name == row['function'])
+    assert len(original.body) == len(row['statement_map']) == row['source_top_level_statements']
+    retained = 0
+    disposition_counts = {'unchanged':0,'adapted':0,'removed_transport_only':0}
+    for original_node, item in zip(original.body,row['statement_map']):
+        assert ahash(original_node) == item['original_ast_sha256']
+        disposition_counts[item['disposition']] += 1
+        if item['disposition'] == 'removed_transport_only':
+            assert removed_is_transport(original_node,role)
+            continue
+        assert item['function_body_index'] == retained
+        actual = fn.body[retained];retained += 1
+        assert ahash(actual) == item['canonical_ast_sha256']
+        undone = copy.deepcopy(actual)
+        for ei in reversed(item['adaptation_event_indices']):
+            old,new = check_event(row['adaptation_events'][ei],role)
+            undo = UndoOne(old,new);undone = undo.visit(undone)
+            assert undo.count == 1, (role,ei,undo.count)
+        assert adump(undone) == adump(original_node), (role,item['original_statement_index'])
+        if item['disposition'] == 'unchanged': assert adump(actual) == adump(original_node)
+    assert len(fn.body) == retained+2
+    expected_tail=ast.parse(row['new_epilogue']).body
+    assert [adump(x) for x in fn.body[-2:]] == [adump(x) for x in expected_tail]
+    assert isinstance(fn.body[-1],ast.Return)
+    assert ast.unparse(fn.body[-2].value) == f"inputs.execution_metadata('{role}')"
+    # Every source assertion survives exactly, including hash checks.
+    source_asserts=[adump(x) for x in ast.walk(original) if isinstance(x,ast.Assert)]
+    final_asserts=[adump(x) for x in ast.walk(fn) if isinstance(x,ast.Assert)]
+    assert source_asserts == final_asserts
+    assert not any(isinstance(x,(ast.Global,ast.Nonlocal)) for x in ast.walk(original))
+    for x in ast.walk(fn):
+        if isinstance(x,ast.Name): assert x.id not in {'ROOT','__file__','parser','outpath','args'}
+        if isinstance(x,ast.Call) and isinstance(x.func,ast.Attribute):
+            assert x.func.attr not in {'write_text','write_bytes','setrlimit'}
+            if x.func.attr in {'read_text','read_bytes'}: assert ast.unparse(x.func.value) == 'inputs'
+    retained_counts[role] = {**disposition_counts, 'adaptation_events':len(row['adaptation_events']),
+                             'preserved_assert_ASTs':len(source_asserts),'function':row['function']}
+
+primary_tree=ast.parse(primary.read_text())
+source_manifest=json.loads((Q/'SOURCE_MANIFEST.json').read_text())
+for name in ('note','primary','artifact_manifest','input_map','proof_body_map','source_adaptation_map','root_draft_review'):
+    row=source_manifest[name];checkpin(W/row['path'],row)
+for row in source_manifest['helpers']:checkpin(W/row['path'],row)
+declared=next(ast.literal_eval(x.value) for x in primary_tree.body if isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in x.targets))
+expected_declared=sorted([str(note.relative_to(W)),str((F/'ARTIFACT_MANIFEST.json').relative_to(W)),*helper_paths,*[r['path'] for r in manifest['files']]])
+assert list(declared)==expected_declared and len(declared)==len(set(declared))==168
+for name in declared:assert (W/name).is_file()
+main=next(x for x in primary_tree.body if isinstance(x,ast.FunctionDef) and x.name=='main')
+assert ast.unparse(main.body[0]) == 'resource.setrlimit(resource.RLIMIT_CPU, (120, 120))'
+assert sum(isinstance(x,ast.Call) and isinstance(x.func,ast.Attribute) and x.func.attr=='setrlimit' for x in ast.walk(primary_tree)) == 1
+calls=[x.func.id for x in ast.walk(main) if isinstance(x,ast.Call) and isinstance(x.func,ast.Name) and x.func.id.startswith('run_')]
+assert calls == ['run_'+p['role'] for p in adaptation['programs']]
+assert set(calls)=={alias.name for x in primary_tree.body if isinstance(x,ast.ImportFrom) and x.module.startswith('product_seed_emitter_') for alias in x.names}
+
+# Instantiate only the resolver class, not the primary module or any helper.
+resolver_class=next(x for x in primary_tree.body if isinstance(x,ast.ClassDef) and x.name=='FrozenInputs')
+env={'Path':Path,'json':json,'hashlib':hashlib,'resource':resource,'AUDIT_TIMEOUT_SEC':120}
+exec(compile(ast.Module(body=[resolver_class],type_ignores=[]),'<isolated FrozenInputs>','exec'),env)
+inputs=env['FrozenInputs'](W,F/'INPUT_MAP.json')
+resolver_rows=[]
+for role,data in inputs.table['roles'].items():
+    for logical,mapped in data['aliases'].items():
+        actual=inputs.read_bytes(role,logical)
+        assert len(actual)==mapped['bytes'] and sha(actual)==mapped['sha256']
+    resolver_rows.append({'role':role,'aliases':len(data['aliases']),
+                          'unique_local_files':len({r['path'] for r in data['aliases'].values()})})
+closure_details=[]
+for role,prog in zip(inputs.table['roles'],programs):
+    for row in [prog['program_identity'],*prog['declared_read_closure']]:
+        assert inputs.read_bytes(role,row['snapshot_path']) == (S/row['snapshot_path']).read_bytes()
+    alias=inputs.table['roles'][role]['aliases']
+    if role in {'local_reviewer','weighted_author','weighted_reviewer'}:
+        data=json.loads(inputs.read_text(role,'SOURCE_PINS.json'))
+        rows=data['sources'] if role=='local_reviewer' else data['files']
+        key='snapshot_path' if role=='local_reviewer' else 'snapshot'
+        for r in rows:
+            raw=inputs.read_bytes(role,r[key]);assert len(raw)==r['bytes'] and sha(raw)==r['sha256']
+        closure_details.append({'role':role,'actual_manifest_rows_resolved':len(rows)})
+    elif role=='installed_author':
+        rows=json.loads(inputs.read_text(role,'SOURCE_MANIFEST.json'))['sources']
+        for r in rows:
+            raw=inputs.read_bytes(role,r['snapshot_path']);assert len(raw)==r['bytes'] and sha(raw)==r['sha256']
+        closure_details.append({'role':role,'actual_manifest_rows_resolved':len(rows),'absolute_logical_keys':sum(Path(r['snapshot_path']).is_absolute() for r in rows)})
+for role in inputs.table['roles']:
+    for bad in ('not-declared','../../etc/passwd','/etc/passwd'):
+        try:inputs.read_bytes(role,bad)
+        except KeyError:pass
+        else:raise AssertionError('Undeclared resolver key was accepted')
+# In-memory bad-map tests exercise confinement/hash rejection; no file edited.
+key='__original_program__'; role='local_author'; saved=inputs.table['roles'][role]['aliases'][key]
+negative_mapping=[]
+for name,change in [('traversal',{'path':'../outside'}),('absolute',{'path':'/etc/passwd'}),('size',{'bytes':saved['bytes']+1}),('hash',{'sha256':'0'*64})]:
+    inputs.table['roles'][role]['aliases'][key]={**saved,**change}
+    try:inputs.read_bytes(role,key)
+    except AssertionError:negative_mapping.append(name)
+    else:raise AssertionError('Invalid map was accepted: '+name)
+inputs.table['roles'][role]['aliases'][key]=saved
+
+# Compare only already recorded JSON values; do not evaluate source programs.
+reports={row['role']:json.loads((S/'sources'/p['output']).read_text()) for row,p in zip(adaptation['programs'],programs)}
+a=reports['installed_author']['conditional_complete_output'];b=reports['installed_reviewer']['independent_uniform_enclosures']
+c=reports['weighted_author']['weighted_constants'];d=reports['weighted_reviewer']['derived_bounds']
+assert (a['onset'],a['finite_horizon'],a['finite_clock_sites']) == (10**72,2*10**72,5*10**73)
+assert Fraction(a['complete_isometry_error']['exact_rational']) == Fraction(b['all_future_error']['exact']) < Fraction(4,1000)
+assert Fraction(c['complete_isometry_at_onset']['exact_rational']) == Fraction(d['complete_at_T']['exact']) < Fraction(4,1000)
+assert Fraction(c['finite_complete_isometry_upper']['exact_rational']) == Fraction(d['finite_complete']['exact']) < Fraction(5,1000)
+wt=reports['weighted_author']['time_and_clock']
+assert (wt['onset'],wt['Tobs'],wt['M']) == (10**36,2*10**36,5*10**37)
+assert len(reports['installed_author']['physical_point_diagnostics_not_interval_proof']) == 12
+assert all(r['shift_exact'] in {'-1/1000000','0','1/1000000'} for r in reports['installed_author']['physical_point_diagnostics_not_interval_proof'])
+mutation_plan=json.loads((Q/'MUTATION_PLAN.json').read_text())
+assert mutation_plan['case_limit']==len(mutation_plan['cases'])==12
+for case in mutation_plan['cases']:
+    raw=(W/case['source']).read_bytes()
+    assert sha(raw)==case['source_sha256'] and raw.decode().count(case['old'])==1
+    assert case['status']=='planned_not_executed'
+
+# Use existing graph parser functions only; no graph construction/manifest write.
+graph_path=W/'docs/audit/scripts/build_citation_graph.py'
+graph_tree=ast.parse(graph_path.read_text())
+function_names={'normalize_runner_path','runner_paths','first_runner_path','extract_section','extract_runner',
+                '_script_stem_from_path_parts','_path_parts_from_ast','_script_stem_from_ast',
+                '_dynamic_loader_param_indexes','_parse_script_imports','resolve_helper_runner_paths',
+                'resolve_link_target','extract_citations'}
+constant_names={'RUNNER_LABEL_RE','RUNNER_PATH_RE','RUNNER_SECTION_RE','RUNNER_VERIFICATION_SECTION_RE','HEADING_RE','LINK_RE'}
+selected=[x for x in graph_tree.body if isinstance(x,ast.FunctionDef) and x.name in function_names or isinstance(x,ast.Assign) and any(isinstance(t,ast.Name) and t.id in constant_names for t in x.targets)]
+genv={'ast':ast,'re':re,'Path':Path,'urllib':urllib,'REPO_ROOT':W,'DOCS_DIR':W/'docs'}
+exec(compile(ast.Module(body=selected,type_ignores=[]),'<isolated existing citation parsers>','exec'),genv)
+resolved_helpers=genv['resolve_helper_runner_paths'](str(primary.relative_to(W)))
+resolved_primary=genv['extract_runner'](note.read_text(),str(note.relative_to(W/'docs')))
+citations=sorted(str(p.relative_to(W)) for p in genv['extract_citations'](note.read_text(),note))
+assert resolved_helpers == helper_paths
+assert resolved_primary == str(primary.relative_to(W))
+assert citations == ['docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'],citations
+
+# Syntax compilation emits only scratch pyc files. Frozen originals included.
+compile_dir=D/'syntax_pyc';compile_dir.mkdir(exist_ok=True)
+compile_paths=[primary,*[W/p for p in helper_paths]]+[W/r['canonical_path'] for r in inventory['files'] if r['canonical_path'].endswith('.py')]
+for i,p in enumerate(compile_paths):py_compile.compile(str(p),cfile=str(compile_dir/f'{i}.pyc'),doraise=True)
+
+def visible_markdown(text):
+    out=[];fence=None
+    for line in text.splitlines():
+        m=re.match(r'^\s*(`{3,}|~{3,})',line)
+        if m:
+            if fence is None:fence=(m.group(1)[0],len(m.group(1)))
+            elif m.group(1)[0]==fence[0] and len(m.group(1))>=fence[1]:fence=None
+            continue
+        if fence is None:out.append(line)
+    assert fence is None
+    return '\n'.join(out)
+active_markdown=[note,F/'SOURCE_INVENTORY.md',*sorted(Q.glob('*.md'))]
+links=[]
+for path in active_markdown:
+    for target in re.findall(r'\[[^\]]*\]\(([^\s)]+)\)',visible_markdown(path.read_text())):
+        if target.startswith(('http:','https:','#','mailto:')):continue
+        dst=(path.parent/urllib.parse.unquote(target.split('#',1)[0])).resolve()
+        assert dst.is_file(),(str(path),target)
+        dst.relative_to(W)
+        links.append({'source':str(path.relative_to(W)),'target':target,'resolved':str(dst.relative_to(W))})
+
+assert not (W/'outputs/product_seed_emitter_2026_10_17.json').exists()
+assert not list((W/'outputs').glob('product_seed_emitter_2026_10_17.compute.*'))
+branch=subprocess.check_output(['git','branch','--show-current'],cwd=W,text=True).strip()
+head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip()
+assert branch=='physics-loop/toe-product-seed-emitter-20261017' and head=='0e8375354c42963234cc4b15b14ab6bb553c713d'
+assert not subprocess.check_output(['git','diff','--cached','--name-only'],cwd=W,text=True).strip()
+status=subprocess.check_output(['git','status','--short','--untracked-files=all'],cwd=W,text=True)
+allowed=[str(Q.relative_to(W))+'/',str(F.relative_to(W))+'/',str(note.relative_to(W)),str(primary.relative_to(W)),*helper_paths]
+for line in status.splitlines():assert line.startswith('?? ') and any(line[3:]==p or p.endswith('/') and line[3:].startswith(p) for p in allowed),line
+editable=[note,primary,*[W/p for p in helper_paths],F/'SOURCE_INVENTORY.md',*Q.glob('*.md')]
+editable_whitespace=[]
+for p in editable:
+    bad=[i for i,l in enumerate(p.read_text().splitlines(),1) if l.rstrip()!=l]
+    if bad:editable_whitespace.append({'path':str(p.relative_to(W)),'trailing_whitespace_lines':bad})
+frozen_whitespace=[]
+for row in inventory['files']:
+    p=W/row['canonical_path']
+    try:lines=p.read_text().splitlines()
+    except UnicodeDecodeError:continue
+    bad=[i for i,l in enumerate(lines,1) if l.rstrip()!=l]
+    if bad:frozen_whitespace.append({'path':row['canonical_path'],'trailing_whitespace_lines':bad,'reason':'Preserved frozen bytes; no rewrite.'})
+result={'status':'Static portability checks completed; canonical scientific execution remains pending.',
+ 'original_freeze_verified_files':175,'frozen_source_context_copies':152,'embedded_bodies':3,
+ 'AST_roundtrip':retained_counts,'artifact_manifest_entries':len(manifest['files']),'declared_inputs':len(declared),
+ 'resolver':{'alias_checks':resolver_rows,'runtime_manifest_closure':closure_details,'rejected_bad_mappings':negative_mapping,
+             'undeclared_keys_rejected':18,'checked_reads':len(inputs.reads),'source_root_access':'Only explicit canonical mapping; historical absolute strings treated as keys.'},
+ 'historical_report_comparison':'Existing exact scalar fields satisfy all new primary consistency guards; no source replay.',
+ 'mutation_plan':'Twelve source hashes and unique replacement anchors checked; no mutant imported or executed.',
+ 'parser_checks':{'graph_source':{'path':str(graph_path.relative_to(W)),**digest(graph_path)},'primary':resolved_primary,'helpers':resolved_helpers,'citations':citations,'graph_build_executed':False},
+ 'syntax_compiled_files':len(compile_paths),'active_links_checked':len(links),'active_markdown_files':len(active_markdown),
+ 'active_link_map':links,'editable_whitespace':editable_whitespace,'frozen_whitespace_exceptions':frozen_whitespace,
+ 'working_branch':branch,'head':head,'untracked_file_count':len(status.splitlines()),
+ 'scientific_functions_executed':0,'mutations_executed':0,'cache_created':False,
+ 'limits':'AST reversal proves the stated source transformation, not theorem correctness or runtime reproducibility. No runtime imports of scientific helpers; no scientific assertions executed.',
+ 'editable_prompt_changes':[]}
+(Q/'STATIC_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k not in {'active_link_map','frozen_whitespace_exceptions'}},indent=2))

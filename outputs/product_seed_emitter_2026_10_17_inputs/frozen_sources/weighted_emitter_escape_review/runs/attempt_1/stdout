@@ -1,0 +1,8 @@
+{
+  "status": "Declared exact algebra and inequalities completed; all installed-system premises remain conditional.",
+  "checks": 66,
+  "complete_error_display": 0.0038102963462962962,
+  "finite_error_display": 0.004810296346296297,
+  "largest_matrix_dimension": 8,
+  "elapsed_seconds": 10.538953458890319
+}

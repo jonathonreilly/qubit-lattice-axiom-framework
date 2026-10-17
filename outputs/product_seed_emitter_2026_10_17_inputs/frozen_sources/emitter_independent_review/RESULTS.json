@@ -1,0 +1,110 @@
+{
+  "scope": "Independent local identities and conditional-lemma risks only; no installed inverse, seed overlap or emission time certified",
+  "local_positive_Gram_decompositions": [
+    {
+      "attachment": 1,
+      "positive_Gram_weights": [
+        "1/1000000000000",
+        "1/500000000000"
+      ],
+      "nonzero_eigenvalue": "1/500000000000"
+    },
+    {
+      "attachment": 2,
+      "positive_Gram_weights": [
+        "1/1000000000000",
+        "1/500000000000"
+      ],
+      "nonzero_eigenvalue": "1/500000000000"
+    }
+  ],
+  "full_qubit_dimension": 8,
+  "full_qubit_scalar_identity": true,
+  "Pauli_cross_quadrature_signs": true,
+  "seed_variance_exact": "1/500000000000000000000000",
+  "local_matching": [
+    {
+      "label": "notch",
+      "z": "4835816955256357129429116105401/5335816955256357129429116105401 + 2255175592998549000000000000000*I/5335816955256357129429116105401",
+      "local_equations_dimension": 4,
+      "return_reflection_squared": "0",
+      "return_transmission_difference_squared": "0"
+    },
+    {
+      "label": "separate_algebra_point",
+      "z": "3/5 + 4*I/5",
+      "local_equations_dimension": 4,
+      "return_reflection_squared": "1645504258520154655748378725686327192768034175608990755058894312477584085958010726967020080427635194572742832210731935084378906250000/377021847519370422904021095922707454264213215158890591172654399302942095727419774330868307998591898934402162267100125680946272843143115022207686855044109951277480313938321049",
+      "return_transmission_difference_squared": "381883298640551385817214597562817594679937096903528837182830338419556877781785410689012005270081972517519992366981935084378906250000/377021847519370422904021095922707454264213215158890591172654399302942095727419774330868307998591898934402162267100125680946272843143115022207686855044109951277480313938321049"
+    }
+  ],
+  "Green_jump_with_wrong_sign": -1,
+  "wrong_phase_notch_squared": "1902919494450037475854351996384153666965131636956667554190914714797365693344160125832636739216000000000000000000000000000000/810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601",
+  "exact_constants": {
+    "sin_2k0": "21811232739405385771956015380537498060648126298000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+    "directional_ratio": "28470942580001221460551733349533582334670664139372522141370801/21811204268462805770734554828804148527065791627335860627477858629199",
+    "return_reflection_ceiling": "56941885160002442921103466699067164669341328278745044282741602/21811204268462805770734554828804148527065791627335860627477858629199",
+    "return_transmission_error_ceiling": "1621189142787453217332928544240098528609920592226049900061135340448431525973064041360488007435199219621244330091894750763202/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+    "wrong_way_in_band_probability_fraction_ceiling": "810594571393726608666464272120049264304960296113024950030567670224215762986532020680244003717599609810622165045947375381601/475728631640610118228015292735611312706130030790938768595111095150582012096663575448773906692480050892217804760414622165045947375381601",
+    "single_column_out_of_band_norm_squared_ceiling": "1/312500000",
+    "grouped_out_of_band_operator_norm_squared_ceiling": "1/156250000",
+    "added_common_scalar": "1/500000000000",
+    "emitter_incident_positive_block_norm_sum": "15010553558851816955256357129429116105401/2667908477628178564714558052700500000000000",
+    "clock_attachment_added_positive_block_norm_sum": "3/1000000000000"
+  },
+  "closed_tail_derivative_alternative_exact": "2*7**(1 - m)*m/3 + 700*7**(-m - 2) + 2*7**(-m - 1)*(m + 2)/3 + 700/7**m",
+  "seed_overlap_test": {
+    "rectangular_dimensions": [
+      4,
+      2
+    ],
+    "Gram_identity": [
+      [
+        "32/25",
+        "0"
+      ],
+      [
+        "0",
+        "32/25"
+      ]
+    ],
+    "unit_diagonal_overlap_magnitudes_do_not_suffice_squared_error": 4,
+    "aligned_error_single_column_norm_squared": 2,
+    "aligned_error_operator_norm_squared": 4,
+    "actual_installed_overlap_computed": false
+  },
+  "normalization_test": {
+    "omitted_norm": "5/13",
+    "retained_norm": "12/13",
+    "normalization_cost": "1/13"
+  },
+  "finite_graph_test": {
+    "L": 3,
+    "M": 7,
+    "dimension": 9,
+    "first_omitted_hops": 3,
+    "first_nonzero_omitted_power_amplitude": "-5/1989 - 4*I/663",
+    "first_nonzero_omitted_chebyshev_amplitude": "-20/13642551 - 16*I/4547517",
+    "rho19_sufficient_for_diagnostic_parameters": true
+  },
+  "limits": {
+    "author_program_imported_or_run": false,
+    "installed_matching_inverted": false,
+    "actual_seed_overlap_integrated": false,
+    "finite_emission_time": null,
+    "clock_time_evolution": false,
+    "interval_grid": false,
+    "optimizer": false,
+    "same_model_source_exposed": true,
+    "formal_audit": false
+  },
+  "runtime": {
+    "cpu_seconds_cap": 45,
+    "parent_wall_seconds_cap": 60,
+    "largest_matrix_dimension": 9,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "elapsed_seconds": 1.549805791117251
+  }
+}

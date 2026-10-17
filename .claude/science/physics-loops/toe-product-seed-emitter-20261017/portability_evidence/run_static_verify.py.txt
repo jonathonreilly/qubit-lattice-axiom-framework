@@ -1,0 +1,33 @@
+"""Bounded source/AST/resolver verification launcher; scientific replay forbidden."""
+from pathlib import Path
+import datetime
+import hashlib
+import json
+import resource
+import shutil
+import subprocess
+import sys
+import time
+
+D=Path(__file__).resolve().parent
+attempt=D/('static_verify_attempt_'+sys.argv[1]);attempt.mkdir()
+script=D/'verify_adaptation.py'
+shutil.copyfile(script,attempt/'verify_adaptation.py')
+def pin(p):
+ data=p.read_bytes();return {'path':str(p),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+def caps():resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();t0=time.monotonic()
+try:
+ p=subprocess.run([sys.executable,str(script)],cwd=D,capture_output=True,timeout=60,preexec_fn=caps)
+ out,err,code,timeout=p.stdout,p.stderr,p.returncode,False
+except subprocess.TimeoutExpired as e:
+ out,err,code,timeout=e.stdout or b'',e.stderr or b'',None,True
+(attempt/'stdout.txt').write_bytes(out);(attempt/'stderr.txt').write_bytes(err)
+receipt={'scope':'Static and read-only bookkeeping only. No scientific function executed.',
+ 'started_utc':start,'elapsed_seconds':time.monotonic()-t0,'python':sys.version,
+ 'command':[sys.executable,str(script)],'cpu_soft_hard_seconds':[30,30],'external_wall_cap_seconds':60,
+ 'returncode':code,'timeout':timeout,'script':pin(script),
+ 'stdout':pin(attempt/'stdout.txt'),'stderr':pin(attempt/'stderr.txt')}
+(attempt/'RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print(json.dumps(receipt,indent=2))
+raise SystemExit(0 if code==0 and not timeout else 1)

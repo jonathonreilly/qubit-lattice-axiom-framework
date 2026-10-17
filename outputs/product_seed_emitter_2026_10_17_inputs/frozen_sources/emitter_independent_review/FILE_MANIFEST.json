@@ -1,0 +1,141 @@
+{
+  "recorded_utc": "2026-10-17T00:56:03.322389+00:00",
+  "files": [
+    {
+      "path": "EXECUTION.json",
+      "bytes": 2469,
+      "sha256": "ad7609c14553a3fa794cc0120e870e9288315ca0f18aa4fde717c2ec1a7d98dc"
+    },
+    {
+      "path": "FREEZE.json",
+      "bytes": 1234,
+      "sha256": "41f82eadafa1a803617753485af94a50dc5bb277bb22a61f8b049bb80d0df3a8"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 17441,
+      "sha256": "e4eec63593ce9f04cee67ef9734d570db1d6cd29886190a44be8f817a541ae7f"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 5330,
+      "sha256": "c43d1d1750fc33fedba9347ea70c131cfc8738432167106de6b6873c6c3e43dd"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 6289,
+      "sha256": "5a700b1dc7c56e7805ebfba4cea88bca6746139beb189fe501f6e6294b16f8d0"
+    },
+    {
+      "path": "check.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "check.stdout",
+      "bytes": 289,
+      "sha256": "e73b7ebba85e3ac8e0d79b9338131819e02a07acae87f4166ee4893f6f78ba16"
+    },
+    {
+      "path": "check_emitter.py",
+      "bytes": 11404,
+      "sha256": "c2faafa025ca3905bd88c6d8110a2a8888765e881f451ff1df1a5acf1ad37196"
+    },
+    {
+      "path": "run_check.py",
+      "bytes": 1766,
+      "sha256": "e6076fa51f40e3319588658a898dd5636d9d05fafe4193ba363ec0411a393540"
+    },
+    {
+      "path": "sources/author/ALGEBRA_CERTIFICATE.json",
+      "bytes": 6106,
+      "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+    },
+    {
+      "path": "sources/author/EXECUTION.json",
+      "bytes": 1437,
+      "sha256": "166f5689ed8c0a1cca9d7de1680e2aaab6854925c89c21680bccbe4a76af58b4"
+    },
+    {
+      "path": "sources/author/FREEZE.json",
+      "bytes": 2380,
+      "sha256": "f5278acb3899cb2749009031c5cff5fd24f72a05d539aa0f3957c6a500af04db"
+    },
+    {
+      "path": "sources/author/LITERATURE_NOTES.md",
+      "bytes": 2304,
+      "sha256": "9bc10d11f46a9c51d5419da0afc44c3f801aedd37224c3638e7946560922a527"
+    },
+    {
+      "path": "sources/author/ROUTE.md",
+      "bytes": 27328,
+      "sha256": "f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1"
+    },
+    {
+      "path": "sources/author/SOURCE_MANIFEST.json",
+      "bytes": 4443,
+      "sha256": "10ae4467eaa888d29e1cc21150a75b158ed197909c2e39af1c907355fd49542f"
+    },
+    {
+      "path": "sources/author/algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author/algebra.stdout",
+      "bytes": 6106,
+      "sha256": "c281398bf83fc3f76b1c416221fc7a931402207f90a5cb13197124a3b14c9b8d"
+    },
+    {
+      "path": "sources/author/emitter_algebra_check.py",
+      "bytes": 7761,
+      "sha256": "236f558f94b8e3270c67b4cb218056b4024a2c902e276793b0c522100de461b9"
+    },
+    {
+      "path": "sources/author/inputs/INTERVAL_CANDIDATE.md",
+      "bytes": 23457,
+      "sha256": "b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45"
+    },
+    {
+      "path": "sources/author/inputs/PREPARATION_NEXT_DECISION.md",
+      "bytes": 3115,
+      "sha256": "0965984b3fdcff4014cac81079e2ca881bdc3bb8178f80497d24935ff38bcc55"
+    },
+    {
+      "path": "sources/author/inputs/PREPARATION_SOURCE_SEARCH.json",
+      "bytes": 37440,
+      "sha256": "38cf5d4e03f1b10b4d7a148bef08217938d2859f974a42b5fe54347d1ed397ee"
+    },
+    {
+      "path": "sources/author/inputs/THEOREM_V2.md",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    {
+      "path": "sources/generic_review/REVIEW.md",
+      "bytes": 15318,
+      "sha256": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6"
+    },
+    {
+      "path": "sources/interval_review/FREEZE.json",
+      "bytes": 1981,
+      "sha256": "26b4295697311102b543303ef3f441dd8ef620a4eab6b34e3609a5da87b185a4"
+    },
+    {
+      "path": "sources/interval_review/REVIEW.md",
+      "bytes": 19878,
+      "sha256": "a3ab8c94ce4c842980e2144766be0994b5f5d783f29d14d1cd25a7a2567dfe8a"
+    },
+    {
+      "path": "sources/process/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "sources/root/QUALIFICATION.md",
+      "bytes": 2753,
+      "sha256": "a1700102e8d15d37252469e3af6df5648d8054ff77e3bf836f3802328c25826f"
+    }
+  ],
+  "scope": "Review directory only; excludes this manifest itself"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "installed_overlap_diagonal_only",
+  "role": "installed_reviewer",
+  "function": "run_installed_reviewer",
+  "source": "scripts/product_seed_emitter_installed_2026_10_17.py",
+  "source_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d",
+  "old": "error_gram = cleaned((seed - packet).H * (seed - packet))",
+  "new": "error_gram = s.diag(*[cleaned((seed - packet).H * (seed - packet))[j, j] for j in range(2)])",
+  "unique_anchor_verified": true,
+  "expected_scientific_assertion": "assert exact_zero(error_gram - (2 * eye - overlap - overlap.H))",
+  "purpose": "Discard the off-diagonal operator Gram entries.",
+  "status": "planned_not_executed",
+  "cap_cpu_soft_hard_seconds": [
+    60,
+    60
+  ],
+  "external_wall_cap_seconds": 60,
+  "repo": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "resolver_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/FrozenInputs.py.txt",
+  "original_helper_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/product_seed_emitter_mutations/snapshots/product_seed_emitter_installed_2026_10_17.py.txt",
+  "single_function_AST_changed": [
+    "run_installed_reviewer"
+  ],
+  "canonical_helper_sha256": "a0394a9655d785b05ff61124400600cf9de5afa0dc998c3be5f1bdc191a7310d"
+}

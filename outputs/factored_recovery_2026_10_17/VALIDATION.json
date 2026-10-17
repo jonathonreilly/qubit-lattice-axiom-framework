@@ -1,0 +1,25 @@
+{
+  "status": "Conditional publication integration supported; no retained audit",
+  "note_sha256": "8e371a92befcc528bee765c282ae0f422239b71bf69b409c80e2203b1fa2e33e",
+  "manifest_sha256": "aed9f9e3a3615eabea11ab694e628db468216e21f2a01b1bd4fe20165c3f1341",
+  "integration_sha256": "6537d8d318e3b3720a3dd4edbea6c9dd036cc9f44beb11ab29a48f1c7540eff3",
+  "copies": 16,
+  "inherited_proofs": 154,
+  "canonical_dependencies": 11,
+  "inherited_manifests": 8,
+  "resolved_note_links": 20,
+  "limits": "Analytical checks only; no numerical dynamics, broad pipeline or retained audit. Shared source/model exposure disclosed. Context53 not checked or used as numerical premise.",
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "factored_recovery_complete_output_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "04931d62b721",
+        "out_degree": 3
+      }
+    },
+    "node_count": 7237,
+    "edge_count": 16219,
+    "added_edges": 3
+  },
+  "explicit_proof_path_closure": "All explicit folder/PROPOSAL.md and folder/REVIEW.md references resolve through new or inherited manifest mappings."
+}

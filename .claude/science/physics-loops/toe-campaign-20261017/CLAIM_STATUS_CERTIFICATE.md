@@ -26,3 +26,11 @@
 - Independent check: confirmed. One classification statement was corrected
   (the E orbit); it is now checked by the runner.
 - Intended claim_type: bounded_theorem. Trace: frontier_discovery.
+
+## C3
+- Note: `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md`
+- Runner: `scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py` (PASS=10 with Singular)
+- Status: bounded support, unaudited. Exact within the supplied model;
+  Part B is also exact within the C4/C3 symmetry restriction.
+- Independent check: running.
+- Intended claim_type: bounded_theorem. Trace: frontier_discovery.

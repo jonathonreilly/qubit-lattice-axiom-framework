@@ -1,0 +1,20 @@
+[    0.0s] sign-consistent orbits 227
+[    0.4s] edges 17923
+[    1.0s] TQO-1 single-site candidate unions (size <= 3, minimal-ish): 16
+(18,) [3] mobile3D = 0 | III IIY IIY IIX IIX III III
+(19,) [3] mobile3D = 0 | III XYY XYY XYX XYX III III
+(20,) [3] mobile3D = 0 | III IIX IIX IIY IIY III III
+(21,) [3] mobile3D = 0 | III XYX XYX XYY XYY III III
+(124,) [3] mobile3D = 0 | III XII XII ZII ZII YII YII
+(125,) [3] mobile3D = 1 | III IIY IIY ZIX ZIX YII YII
+(126,) [3] mobile3D = 0 | III XII XII YII YII ZII ZII
+(127,) [3] mobile3D = 1 | III IIX IIX YIY YIY ZII ZII
+(135,) [3] mobile3D = 1 | III XXZ XXZ YYZ YYZ YXI YXI
+(187,) [3] mobile3D = 1 | III XZZ XZZ ZYZ ZYZ ZZI ZZI
+(196,) [3] mobile3D = 0 | III XYY XYY XYX XYX IIZ IIZ
+(197,) [3] mobile3D = 0 | III XYX XYX XYY XYY IIZ IIZ
+(128, 226) [3, 1] mobile3D = 0 | III IXX IXX XIX XIX XXI XXI / III XXX XXX YYY YYY ZZZ ZZZ
+(129, 222) [3, 1] mobile3D = 0 | III XZI XZI ZYI ZYI YXI YXI / III XZY XZY ZYX ZYX YXZ YXZ
+(134, 222) [3, 1] mobile3D = 0 | III IXZ IXZ YIZ YIZ YXI YXI / III XZY XZY ZYX ZYX YXZ YXZ
+(182, 226) [3, 1] mobile3D = 0 | III XXI XXI YYI YYI ZZI ZZI / III XXX XXX YYY YYY ZZZ ZZZ
+[    2.2s] done; nonzero/unknown 4 of 16

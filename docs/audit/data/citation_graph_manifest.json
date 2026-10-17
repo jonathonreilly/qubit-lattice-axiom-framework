@@ -1,6 +1,6 @@
 {
- "edge_count": 16165,
- "node_count": 7208,
+ "edge_count": 16168,
+ "node_count": 7209,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21661,6 +21661,10 @@
   "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "three_axis_qubit_site_stabilizer_rules_unsoldered_toric_codes_move_soldered_maximal_rules_do_not_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "5d376c077da5",
+   "out_degree": 3
   },
   "three_cap_order_blind_lines_on_one_orbit_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",

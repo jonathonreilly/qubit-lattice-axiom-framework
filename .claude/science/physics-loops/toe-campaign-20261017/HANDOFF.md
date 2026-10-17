@@ -33,13 +33,25 @@ adopted; every result is unaudited bounded support with a declared model.
   - *Interpretation for the owner, not a claim:* there, three-dimensional
     motion is tied to changing extra local data along the path. That would
     be expected to spoil coherent propagation, which is not computed.
-- **Next:** non-Pauli conditions on one qubit per site (C3), then block rules
-  (C4).
+- **The supplied three-axis-qubit class (C3).**
+  - With labels that do not turn with space, eight interleaved toric codes
+    give a covariant star rule whose charges move coherently in three
+    dimensions, with bounded code dimension. The charges are bosons.
+  - With soldered labels, restricted to C4- or C3-symmetric strings, no
+    maximal rule does: each is fracton-type, a product state, or obstructed
+    as in C2.
+  - Within these classes the obstruction tracks soldering, not storage.
+  - *Interpretation for the owner, not a claim:* making the internal labels
+    turn with space, which is what gives spin-1/2 its meaning, is what
+    blocks coherent motion of the defects in these classes.
+- **Next:** fermionic charges (C4), then soldered rules without the symmetry
+  restriction (C5).
 
 ## Blocks
 
 | Block | Note | Runner | Headline |
 |---|---|---|---|
+| C3 | `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py` (PASS=10 with Singular) | Unsoldered: interleaved toric codes, coherent 3D-mobile bosons. Soldered (C4/C3-fixed): no maximal rule with bounded code dimension and 3D-mobile charge. |
 | C2 | `docs/TWO_QUBIT_SITE_SOLDERED_SPIN_STABILIZER_RULES_THREE_DIMENSIONAL_CHARGE_MOTION_FLIPS_A_FREE_LOCAL_VARIABLE_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/two_qubit_site_soldered_spin_stabilizer_rules_charge_motion_flips_free_local_variable_2026_10_17.py` (PASS=17 with Singular) | Free-variable-preserving operators never give a charge rank-three mobility; rules without free local variables have no 3D-mobile charge; example rule with 8 even-step-mobile charges. |
 | C1 | `docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py` (PASS=20) | Soldered: Chamon only, with fracton defects (no 3D mobility; planons in planes normal to body diagonals). Unsoldered: classical or cluster rules. No 3D-mobile fermionic defect in the class. |
 
@@ -48,4 +60,4 @@ adopted; every result is unaudited bounded support with a declared model.
 - C3 onwards in OPPORTUNITY_QUEUE.
 
 ## Next decision
-- Start C3: non-Pauli covariant commuting projectors on one qubit per site.
+- C3 independent check (running). Start C4: fermionic charges.

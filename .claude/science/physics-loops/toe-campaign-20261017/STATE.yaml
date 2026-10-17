@@ -6,7 +6,7 @@ mode: campaign
 delivery: milestone
 target: best-honest-status
 lane: N1 (electron as emergent excitation of neighbourhood conditions)
-active_block: C3 (next ranked; see OPPORTUNITY_QUEUE)
+active_block: C4 (next ranked; see OPPORTUNITY_QUEUE)
 blocks:
   C1-one-qubit-nn-stabilizer-rules:
     status: delivered_to_branch
@@ -22,6 +22,13 @@ blocks:
     runner: scripts/two_qubit_site_soldered_spin_stabilizer_rules_charge_motion_flips_free_local_variable_2026_10_17.py (PASS=17 with Singular, ~8 min)
     exact: ["spin soldered, flavour fixed/soldered: exhaustive classification", "record-free operators never move a charge along 3 independent vectors", "rules without free local variables: no 3D-mobile defect", "example Chamon(x)flavour-X-neighbours: R/((x+1)^2,(y+1)^2,(z+1)^2), 8 even-step-mobile charges, every move flips flavour X"]
     independent_check: "CONFIRMED A, C, D; refuted the first statement of B (missed E orbit), now in runner; 658 rules checked by own Ext^3 test; signs not independently tested"
+    trace_class: frontier_discovery
+  C3-three-axis-qubits-soldering-contrast:
+    status: delivered_to_branch
+    note: docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py (PASS=10 with Singular)
+    exact: ["unsoldered: 8 interleaved toric codes, bounded code dim, coherently 3D-mobile bosons", "soldered C4/C3-fixed class: 11 maximal sets; 10 with growing code dim and no 3D-mobile charge in maximal rules; 187-family obstructed as in C2"]
+    independent_check: running
     trace_class: frontier_discovery
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

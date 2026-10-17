@@ -7,3 +7,6 @@
 - C2: with two qubits per site and soldered spin, no record-free operator moves
   a charge in three dimensions. Rules without free local variables have no
   three-dimensionally mobile defect.
+- C3: three axis qubits, soldered, C4/C3-fixed strings. No maximal rule has
+  bounded nonzero code dimension together with a three-dimensionally mobile
+  charge. Unsoldered labels do allow one (eight interleaved toric codes).

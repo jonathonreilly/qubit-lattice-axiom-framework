@@ -64,6 +64,23 @@ site rotation reproduces the edge rotation exactly?
    - An exploration run extends this to all 60 codes, with every rotation
      and both sectors preserved (loop pack, c13,
      `majhalf_all60_L4.log`).
+   - **Independent check: confirmed, and sharper.**
+     - **No sign search is needed.** The sign-free choice always works:
+       0 failures over 60 codes x 24 rotations x 2 sectors at L = 4 and
+       L = 6, and over all 720 orderings at L = 4.
+     - **An explicit form.** The map is U_R = V_R P_R, with V_R an
+       on-site network of CZ gates, the same at every site, on the pairs
+       of directions whose order differs between o and Ro.
+     - **A genuine action.** Choices exist that form a genuine O action:
+       an order-24 group with no fermion-parity twist needed.
+     - **One code.** The 60 codes are a single code under on-site
+       Cliffords: the CZ networks map any ordering's code to any other's.
+     - **But a code-dependent action.** An action built from one ordering
+       leaves only that ordering's code O-invariant.
+     - **No six-qubit encoding needed.** In the edge model of the orbit
+       note, the bare edge permutation followed by a vertex-centred CZ
+       network also makes every code invariant. That network is local but
+       not on-site, since edge qubits belong to no site.
    - So once on-site Clifford actions are allowed, the codes are
      O-invariant. "Minimal orbit four" is a statement about the bare site
      action only.
@@ -78,7 +95,9 @@ site rotation reproduces the edge rotation exactly?
        code, both sectors, L = 8 (loop pack, c13, `halfpair.log`).
      - So under this on-site action the same fermion that is spin-1/2-like
        under the bare action (companion note) is spinless. This matches
-       the Majorana-per-direction code.
+       the Majorana-per-direction code. The independent check reproduced
+       this (λ = -1 for all 9 C2, every orbit type, both sectors), and
+       recovered C8's +1 for the bare permutation as a calibration.
 5. **Transfer.** The encoding is an isometry that intertwines the two
    actions. So the companion notes' statements hold for this site-local
    model with the bare site action:
@@ -125,7 +144,8 @@ reading the runner.
 - **Item 4: confirmed directly** in the half-edge model, with phases.
 - **Wording.** It asked for the three qualifications above.
 
-Files: `.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/`.
+Files: `.claude/science/physics-loops/toe-campaign-20261017/c11_site_local/independent_check/` and, for
+item 4, `.claude/science/physics-loops/toe-campaign-20261017/c13_onsite_clifford/independent_check/`.
 
 ## Premises
 

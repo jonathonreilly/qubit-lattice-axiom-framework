@@ -123,9 +123,14 @@ support-count test is exact on the L = 4 torus. Files:
   - Any of these could be O-invariant. The "at least four" statement holds
     only within this family.
   - It also holds only for rotations acting by bare permutation. The later
-    site-local realization note shows the following: with six direction
-    qubits per site and on-site Clifford actions (signed permutations of
-    in-site Majoranas), these codes are O-invariant.
+    site-local realization note, and its independent check, show two
+    things:
+    - In the six-qubit site form, an on-site CZ network after the
+      permutation makes every code O-invariant.
+    - In this note's edge model, a vertex-centred CZ network does the
+      same.
+    - The single-edge Clifford relabelings excluded above are too weak to
+      see this.
 - **N2/N3 — scope.** One family of 720 codes.
 - **N4 — inputs.** Exact GF(2) computations. Group equality is span
   equality on the L = 4 torus. Statistics use straight legs, so leg

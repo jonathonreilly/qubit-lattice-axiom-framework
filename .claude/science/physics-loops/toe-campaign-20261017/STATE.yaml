@@ -67,6 +67,7 @@ blocks:
     status: delivered_to_branch
     note: docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py (PASS=7, ~3 min)
+    c13_check: "CONFIRMED: eps=1 always works (60 codes x 24 x 2 sectors, L=4,6; 720 orderings); U_R = on-site CZ network x P_R; genuine order-24 O action exists; 60 codes are one code under on-site Cliffords; edge model also invariant with vertex-centred CZ networks; spinless under U_R (lambda=-1, 9 C2)"
     exact: ["on-site signed Majorana-permutation Cliffords make one code per orbit type O-invariant (C13): species minimum is bare-action only", "six direction qubits per site + edge repetition: site action = edge action exactly (intertwining)", "stabilizers/orbits equal the edge case", "C6/C8 transfer to a site-local model"]
     independent_check: "items 1-3 CONFIRMED (all 60 codes at L=6; 3.3M covariance checks); transfer CONFIRMED directly in the half-edge model (T-junction, sectors, 108-pair test, control); three wording fixes applied"
   C12-majorana-per-direction-O-covariant:

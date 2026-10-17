@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/localized_columns_orthogonal/mutated.py", line 284, in <module>
+    assert Dj<62004 and 2*Dj*Dj<Dpacket*Dpacket
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

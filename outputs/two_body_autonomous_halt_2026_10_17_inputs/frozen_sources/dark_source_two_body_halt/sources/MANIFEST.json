@@ -1,0 +1,64 @@
+[
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/PRODUCT_SOURCE_MEDIATOR_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/0",
+    "sha256": "4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20",
+    "bytes": 63977
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/1",
+    "sha256": "b25d812dc1a4cdad2959f003ddd36346f2de0058292c74c7d0e07c9c5e395a4d",
+    "bytes": 93655
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/2",
+    "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+    "bytes": 11788
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/3",
+    "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+    "bytes": 5767
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/4",
+    "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+    "bytes": 30709
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/5",
+    "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+    "bytes": 16755
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/6",
+    "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+    "bytes": 16454
+  },
+  {
+    "ref": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+    "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/7",
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "bytes": 2180
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/TARGET_CONTRACT.md",
+    "saved": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/sources/TARGET_CONTRACT.md",
+    "sha256": "aeba08e8d0195d35f8c384922ffdff12d6fafa838a0983f2736fb54f6543762c",
+    "bytes": 2173
+  }
+]

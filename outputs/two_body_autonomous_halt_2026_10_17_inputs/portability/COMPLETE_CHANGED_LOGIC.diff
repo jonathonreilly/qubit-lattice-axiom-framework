@@ -1,0 +1,96 @@
+--- frozen_author
++++ portable_primary
+@@ -6,6 +6,11 @@
+ the inequalities proved in CANDIDATE.md certify them. This is a source-exposed
+ author calculation, not an independent review or an infinite-chain simulation.
+ """
++import os
++for _name in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS',
++              'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS'):
++    os.environ[_name] = '1'
++
+ from fractions import Fraction as F
+ from pathlib import Path
+ import hashlib
+@@ -16,15 +21,20 @@
+ import sys
+ import time
+ 
+-resource.setrlimit(resource.RLIMIT_CPU, (60, 60))
++resource.setrlimit(resource.RLIMIT_CPU, (120, 120))
+ import numpy as np
+ import mpmath as mp
+ 
+-ROOT = Path(__file__).resolve().parent
++from two_body_autonomous_halt_check_2026_10_17 import run_independent_checks
++
++REPO = Path(__file__).resolve().parents[1]
++ROOT = REPO / 'outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge'
++AUDIT_TIMEOUT_SEC = 120
++AUDIT_INPUT_PATHS = (...)
+ mp.mp.dps = 90
+ started = time.monotonic()
+ for row in json.loads((ROOT/'SOURCE_MANIFEST.json').read_text())['sources']:
+-    b = Path(row['snapshot_path']).read_bytes()
++    b = (ROOT/'inputs'/Path(row['snapshot_path']).name).read_bytes()
+     assert len(b) == row['bytes']
+     assert hashlib.sha256(b).hexdigest() == row['sha256']
+ frozen = json.loads((ROOT/'inputs/rational_point_certificate.json').read_text())
+@@ -300,10 +310,27 @@
+  'runtime':{'python':sys.version,'executable':sys.executable,'numpy':np.__version__,
+             'mpmath':mp.__version__,'mpmath_dps':mp.mp.dps,'platform':platform.platform(),
+             'largest_executed_matrix_dimension':16,'square_root_dimension':6,
+-            'theorem_matching_dimension':24,'cpu_seconds_cap':60,
++            'theorem_matching_dimension':24,'cpu_seconds_cap':120,
+             'elapsed_seconds_after_import':time.monotonic()-started},
+  'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+ }
+-(ROOT/'POINT_WITNESSES.json').write_text(json.dumps(witnesses,indent=2)+'\n')
+-(ROOT/'CERTIFICATE.json').write_text(json.dumps(report,indent=2)+'\n')
+-print(json.dumps(report,indent=2))
++independent = run_independent_checks(
++    REPO/'outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review')
++report['independent_composition_check'] = independent
++report['input_sha256'] = {p: hashlib.sha256((REPO/p).read_bytes()).hexdigest()
++                          for p in AUDIT_INPUT_PATHS}
++report['portable_execution_scope'] = (
++    'Exact author point/interval calculation and separate full-basis inverse, '
++    'Schur, phase and resource checks. Prior independent point-state/reflection '
++    'certificates are inherited by immutable identity, not recomputed by the helper. '
++    'Infinite-time claims rest on the qualified analytic proof, not time evolution.')
++report['elapsed_seconds_total_after_import'] = time.monotonic()-started
++(REPO/'outputs/two_body_autonomous_halt_2026_10_17_point_witnesses.json').write_text(
++    json.dumps(witnesses,indent=2)+'\n')
++(REPO/'outputs/two_body_autonomous_halt_2026_10_17.json').write_text(
++    json.dumps(report,indent=2)+'\n')
++print(json.dumps({'status':report['status'], 'central_bound':report['central_bound'],
++    'interval':report['interval'], 'matching':report['matching'],
++    'packet':report['packet'], 'finite_horizon':report['finite_horizon'],
++    'independent_status':independent['status'],
++    'elapsed_seconds':report['elapsed_seconds_total_after_import']},indent=2))
+
+--- frozen_reviewer_body
++++ portable_helper_body
+@@ -1,5 +1,5 @@
+ START = time.monotonic()
+-ROOT = Path(__file__).resolve().parent
++ROOT = input_root
+ import numpy as np
+ import sympy as sp
+ 
+@@ -272,13 +272,8 @@
+      'finite_complete_isometry_upper':number(joint+2*eta),'finite_complete_trace_upper':number(2*(joint+2*eta))},
+  'limits':{'no_search':True,'no_grid':True,'no_clock_state_allocation':True,'no_time_evolution':True,
+      'arbitrary_accuracy_claimed':False,'native_preparation_claimed':False,'formal_audit_claimed':False},
+- 'runtime':{'cpu_seconds_cap':60,'parent_wall_seconds_cap':90,'largest_matrix_dimension':32,
++ 'runtime':{'cpu_seconds_cap':120,'parent_wall_seconds_cap':120,'largest_matrix_dimension':32,
+      'symbolic_schur_dimension':9,'square_root_dimension':12,'python':sys.version,
+      'numpy':np.__version__,'sympy':sp.__version__,'platform':platform.platform(),
+      'elapsed_seconds_after_limits':time.monotonic()-START}}
+-(ROOT/'RESULTS.json').write_text(json.dumps(output,indent=2)+'\n')
+-print(json.dumps({'status':output['status'],
+-    'inverse_center_Frobenius_bound':float(independent_center),
+-    'independent_uniform_inverse_bound':float(independent_uniform),
+-    'source_gap_lower':float(gap),'infinite_error':float(joint+eta),
+-    'finite_error':float(joint+2*eta),'elapsed_seconds':output['runtime']['elapsed_seconds_after_limits']},indent=2))
++return output

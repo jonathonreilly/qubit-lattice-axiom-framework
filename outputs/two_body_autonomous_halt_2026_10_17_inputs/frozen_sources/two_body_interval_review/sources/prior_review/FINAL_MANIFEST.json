@@ -1,0 +1,242 @@
+{
+  "recorded_utc": "2026-10-17T00:09:59.189649+00:00",
+  "files": [
+    {
+      "path": "OLD_CAP_CHECKER_DELTA.diff",
+      "bytes": 2549,
+      "sha256": "8a83925443a809faaef67608b79da55a45ea469feffb837f9ed319e76a7e330f"
+    },
+    {
+      "path": "OLD_CAP_SOURCE_MANIFEST.json",
+      "bytes": 4687,
+      "sha256": "056ba27325c2f7445a38411d6617a59fb4ba710a45a86807febd69dfb00c6811"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 20356,
+      "sha256": "4853fd0572250045c95f502afa67983342b1aed30691f0b1d61eddb843b964cd"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 21142,
+      "sha256": "23b78506dc56fe141f9e19347b60ed0e420b4e817b599cafa246a502a2a3f830"
+    },
+    {
+      "path": "REVIEW_SUMMARY.json",
+      "bytes": 13343,
+      "sha256": "f463cb1cc4d0989a5f174f43eab1b6c75a5d70c7647b740a6cd3c9f7ac4a88b2"
+    },
+    {
+      "path": "RUN_RECEIPT.json",
+      "bytes": 1399,
+      "sha256": "8a90c05b9f47384cc0a9b9f354ad4e4f6aa10a4c920c7b57cb503172ae28a4d3"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6508,
+      "sha256": "6d24762b5f075ab6b4df0580bbe5a42bfc437428d5cdc7c4891473cfc9b05bd4"
+    },
+    {
+      "path": "WITNESS.json",
+      "bytes": 721204,
+      "sha256": "4ba25878ca963c654014c9b6162d766aaa81c840ea10ea65370c468500a8e428"
+    },
+    {
+      "path": "old_cap_delta/RESULTS.json",
+      "bytes": 19151,
+      "sha256": "d9bf7daa3920029fc7695b19467355f9ecf3a39e09cf480a4f79a4f6abf43ca9"
+    },
+    {
+      "path": "old_cap_delta/RUN_RECEIPT.json",
+      "bytes": 1552,
+      "sha256": "5f97ce07a84c0868578175637399a50d3b3e8e3e1bc0d8afe9779dc56b9658d1"
+    },
+    {
+      "path": "old_cap_delta/WITNESS.json",
+      "bytes": 721897,
+      "sha256": "b04ab3b89b699814334d27e867bc2b5ed57295cb4d558eda1e8b9289ad96ec44"
+    },
+    {
+      "path": "old_cap_delta/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "old_cap_delta/stdout.txt",
+      "bytes": 479,
+      "sha256": "71437d0193f960caf82b347a3fb715f9f13a68cadd4af59b581330efdabd9aa1"
+    },
+    {
+      "path": "reviewer_certificate.py",
+      "bytes": 12956,
+      "sha256": "7a8ff82d6cd5eddd33efda5b6e7d5cc552db004af8d68175c3c2aff54b0c233e"
+    },
+    {
+      "path": "reviewer_old_cap_delta.py",
+      "bytes": 12997,
+      "sha256": "64325eef136b1f2d587caa55d69c073d11e5bcec08d2366f657026bea5fc6f59"
+    },
+    {
+      "path": "sources/author/ROUTE.md",
+      "bytes": 21276,
+      "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1"
+    },
+    {
+      "path": "sources/author/certify_point.py",
+      "bytes": 6946,
+      "sha256": "74460bcbd0db30671a6d676b79d24d1ebb5439523df62a5fa3c231760b010558"
+    },
+    {
+      "path": "sources/author/evidence/EXECUTION_RECEIPT.json",
+      "bytes": 3185,
+      "sha256": "412251772b1b87f4f26a5b72c39d041c211121dfdd21558e71442fa66c2a1dfa"
+    },
+    {
+      "path": "sources/author/evidence/FILE_MANIFEST.json",
+      "bytes": 4900,
+      "sha256": "05c7753f84e29be22ed66e11a949d9da04be730904840ecdcc09fb21cae52484"
+    },
+    {
+      "path": "sources/author/evidence/different_path_check.json",
+      "bytes": 8792,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "path": "sources/author/evidence/different_path_check.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author/evidence/different_path_check.stdout",
+      "bytes": 8792,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "path": "sources/author/evidence/ladder_refinement.json",
+      "bytes": 2678,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "path": "sources/author/evidence/ladder_refinement.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author/evidence/ladder_refinement.stdout",
+      "bytes": 2678,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "path": "sources/author/evidence/rational_point_certificate.json",
+      "bytes": 24048,
+      "sha256": "c4c8c4bd27054497edd87b8fe5deda86bf221e5e95ac395a13aca9b5e879d971"
+    },
+    {
+      "path": "sources/author/evidence/rational_point_certificate.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/author/evidence/rational_point_certificate.stdout",
+      "bytes": 1188,
+      "sha256": "1579ebaf0c99a1a18f4d584ed26d75f3f2b9e89b501f28b055d8cd6f54393f38"
+    },
+    {
+      "path": "sources/author/independent_check.py",
+      "bytes": 5567,
+      "sha256": "06e14d43a2f0b9f09c594dd547981d5e25002997e6df661d542221c400632d0d"
+    },
+    {
+      "path": "sources/old_cap/ALLOWED_SEARCH.json",
+      "bytes": 125817,
+      "sha256": "bacac229bbeb260cc14d59e272601b4eac757de6af7a14e98c9eed585950b29e"
+    },
+    {
+      "path": "sources/old_cap/CERTIFICATE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/old_cap/CERTIFICATE.stdout",
+      "bytes": 1182,
+      "sha256": "3684d2ae053430ed31482a40d22a927d923ee028ab3e47556ca0268ae54e0fdb"
+    },
+    {
+      "path": "sources/old_cap/DIFFERENT_PATH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/old_cap/DIFFERENT_PATH.stdout",
+      "bytes": 7599,
+      "sha256": "63a860432907c6e9b250782df64e637d067dd0638773738e8fb539a6876a3858"
+    },
+    {
+      "path": "sources/old_cap/FILE_MANIFEST.json",
+      "bytes": 3135,
+      "sha256": "7cfc37c4efbea811a3c6b9a20675350f59abc5a4c7ef9cc461c462222f14944d"
+    },
+    {
+      "path": "sources/old_cap/RECEIPT.json",
+      "bytes": 11550,
+      "sha256": "9728fc12e212ed7bae574d366f496736bef725e80f128b9211585d4008bb396b"
+    },
+    {
+      "path": "sources/old_cap/RESULT.md",
+      "bytes": 12175,
+      "sha256": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00"
+    },
+    {
+      "path": "sources/old_cap/VERIFIER_PROVENANCE.json",
+      "bytes": 445,
+      "sha256": "13e27fec4937631a587786b9e526354c7deec53dba26c2a35b8b0732e0fe00f6"
+    },
+    {
+      "path": "sources/old_cap/certify_old_cap.py",
+      "bytes": 7076,
+      "sha256": "acbf5b37b2705a6a2b47ab23a48d92ca4cfb7be2f5bb4993fa4d04e94418b636"
+    },
+    {
+      "path": "sources/old_cap/check_old_cap.py",
+      "bytes": 5556,
+      "sha256": "f4bb2cf596615b8aea97ea71aa7fb2f6a3024c7af7945d80b340b2711c231b5c"
+    },
+    {
+      "path": "sources/old_cap/different_path_check.json",
+      "bytes": 7599,
+      "sha256": "63a860432907c6e9b250782df64e637d067dd0638773738e8fb539a6876a3858"
+    },
+    {
+      "path": "sources/old_cap/rational_point_certificate.json",
+      "bytes": 25229,
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+    },
+    {
+      "path": "sources/process/PROOF_SEARCH_GOVERNANCE.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "sources/process/REVIEWER_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "sources/process/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stdout.txt",
+      "bytes": 478,
+      "sha256": "ca8bc3a80676d68c680762f8ad90c940e7fa2ea72be4774de33dd312d78df4b5"
+    }
+  ],
+  "source_refresh_all_unchanged": true,
+  "claim_limit": "This is an independent source-exposed review record, not formal audit or an all-future theorem."
+}

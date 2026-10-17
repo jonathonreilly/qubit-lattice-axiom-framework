@@ -1,0 +1,23 @@
+{
+  "name": "target_conjugation",
+  "started_utc": "2026-10-17T00:37:28.536489+00:00",
+  "elapsed_seconds": 0.6174879581667483,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21525,
+    "sha256": "43071c4f209b914347b9241eb4ec321ac4ba5b03f8343998835b9d70ac6be76c"
+  },
+  "old": "w=(F(-7,25),F(24,25))",
+  "new": "w=(F(-7,25),F(-24,25))",
+  "expected_scientific_assertion": "assert central_bound<central_contract",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 316,
+    "sha256": "bfd95eb71e05cf01a447c3b3c48fe89d6f1dbec031700e79c02ce5bd6289655f"
+  }
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/closed_root_underbound/mutated.py", line 247, in <module>
+    assert 2+g/J>kappa+1/kappa
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError

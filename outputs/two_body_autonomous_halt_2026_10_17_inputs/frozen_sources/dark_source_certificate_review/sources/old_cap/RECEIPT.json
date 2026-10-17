@@ -1,0 +1,306 @@
+{
+  "recorded_utc": "2026-10-16T23:58:48.760186+00:00",
+  "original_witness_status": "All 36 snapshotted preexisting files byte-for-byte unchanged; no original files added or removed",
+  "original_files_verified": [
+    {
+      "path": "ROUTE.md",
+      "size": 21276,
+      "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1"
+    },
+    {
+      "path": "__pycache__/probe.cpython-313.pyc",
+      "size": 10107,
+      "sha256": "8041c2ece49611be5aec1cc0b1a91a7d8515e1e135068d114be95f17cfcade14"
+    },
+    {
+      "path": "__pycache__/probe_ladder.cpython-313.pyc",
+      "size": 8853,
+      "sha256": "73360ad0e4ecaae09c1692dccaa3fcbe2a1bb37ba61e8e508bfc98d080027ef6"
+    },
+    {
+      "path": "certify_point.py",
+      "size": 6946,
+      "sha256": "74460bcbd0db30671a6d676b79d24d1ebb5439523df62a5fa3c231760b010558"
+    },
+    {
+      "path": "evidence/EXECUTION_RECEIPT.json",
+      "size": 3185,
+      "sha256": "412251772b1b87f4f26a5b72c39d041c211121dfdd21558e71442fa66c2a1dfa"
+    },
+    {
+      "path": "evidence/FILE_MANIFEST.json",
+      "size": 4900,
+      "sha256": "05c7753f84e29be22ed66e11a949d9da04be730904840ecdcc09fb21cae52484"
+    },
+    {
+      "path": "evidence/different_path_check.json",
+      "size": 8792,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "path": "evidence/different_path_check.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/different_path_check.stdout",
+      "size": 8792,
+      "sha256": "be356d059cca36f2960f877e2c7aaad335cef76d87d76e08d2827887a2c12e64"
+    },
+    {
+      "path": "evidence/ladder_optimization.json",
+      "size": 299432,
+      "sha256": "ea6b7894433b7ee216a9c2a6de1ec8a3564bdbb81ff75414d4ed4cea1bd82544"
+    },
+    {
+      "path": "evidence/ladder_optimization.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/ladder_optimization.stdout",
+      "size": 3637,
+      "sha256": "e8902a589eafce52d1d78aa7f796d2706a867f9fe72c06ba9d04ca9787970c38"
+    },
+    {
+      "path": "evidence/ladder_refinement.json",
+      "size": 2678,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "path": "evidence/ladder_refinement.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/ladder_refinement.stdout",
+      "size": 2678,
+      "sha256": "f13b126c7b8569f217324fbd54ac8ec134226620c100854b8b0b30574aedb1b1"
+    },
+    {
+      "path": "evidence/optimization.json",
+      "size": 236822,
+      "sha256": "186965b8850c02d9c29beb8103e6f42a1a4581d6ab0dae12fcb24d93a5056212"
+    },
+    {
+      "path": "evidence/optimization.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/optimization.stdout",
+      "size": 3401,
+      "sha256": "68c046aefee1d3948fab78a075359bf4933afaa4bd2a8bdf833df81269b804e7"
+    },
+    {
+      "path": "evidence/rational_point_certificate.json",
+      "size": 24048,
+      "sha256": "c4c8c4bd27054497edd87b8fe5deda86bf221e5e95ac395a13aca9b5e879d971"
+    },
+    {
+      "path": "evidence/rational_point_certificate.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/rational_point_certificate.stdout",
+      "size": 1188,
+      "sha256": "1579ebaf0c99a1a18f4d584ed26d75f3f2b9e89b501f28b055d8cd6f54393f38"
+    },
+    {
+      "path": "independent_check.py",
+      "size": 5567,
+      "sha256": "06e14d43a2f0b9f09c594dd547981d5e25002997e6df661d542221c400632d0d"
+    },
+    {
+      "path": "probe.py",
+      "size": 4278,
+      "sha256": "f5ee5cd27b0470d1f05cd721f2b330080b58999147f2918b3bf9ea35a52deaf2"
+    },
+    {
+      "path": "probe_ladder.py",
+      "size": 3426,
+      "sha256": "02214172f8c3e5b2484c03a6eb110e9464b839b4e1fd8cbf6335233b1977c66b"
+    },
+    {
+      "path": "refine_ladder.py",
+      "size": 1330,
+      "sha256": "96b8d0e4aaf247907e76b1cb73a3bc7e2b142d4cb88e635d3301770e4d40b02e"
+    },
+    {
+      "path": "sources/0",
+      "size": 63977,
+      "sha256": "4e68ea3c55620eb0ad3c721084780d2af44bc5eaa249cb8c205e516575189d20"
+    },
+    {
+      "path": "sources/1",
+      "size": 93655,
+      "sha256": "b25d812dc1a4cdad2959f003ddd36346f2de0058292c74c7d0e07c9c5e395a4d"
+    },
+    {
+      "path": "sources/2",
+      "size": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "sources/3",
+      "size": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "sources/4",
+      "size": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "sources/5",
+      "size": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "sources/6",
+      "size": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "sources/7",
+      "size": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "sources/MANIFEST.json",
+      "size": 3473,
+      "sha256": "ec356bbba5b1d4bc322e016ac2e0c9bcad18a818de9b889707a4f103f5fc83f2"
+    },
+    {
+      "path": "sources/TARGET_CONTRACT.md",
+      "size": 2173,
+      "sha256": "aeba08e8d0195d35f8c384922ffdff12d6fafa838a0983f2736fb54f6543762c"
+    },
+    {
+      "path": "sources/WORKFLOW_BOOTSTRAP.md",
+      "size": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    }
+  ],
+  "source_revision": "c86e61caf46c848fe8cee57ecbea6e6fdad7a4bc",
+  "supplied_main_revision": "5b0e1cc44f422fb0138b02eb071d3d16b40dfbb2",
+  "original_sources_manifest_sha256": "ec356bbba5b1d4bc322e016ac2e0c9bcad18a818de9b889707a4f103f5fc83f2",
+  "searches": {
+    "shared_cap": {
+      "max_starts": 60,
+      "max_nfev_per_start": 500,
+      "wall_checkpoint_seconds": 180,
+      "checkpoint": "Between completed starts; actual combined search elapsed below cap"
+    },
+    "completed_starts": 41,
+    "combined_search_seconds": 47.09935441613197,
+    "exception_failures": 0,
+    "termination_reasons": {
+      "The maximum number of function evaluations is exceeded.": 34,
+      "`ftol` termination condition is satisfied.": 4,
+      "`xtol` termination condition is satisfied.": 2,
+      "`gtol` termination condition is satisfied.": 1
+    },
+    "numerical_target_below_1e9": 2,
+    "optimizer_residual_calls": 213016,
+    "calls_including_detail_evaluations": 213098,
+    "expanded_search_box_used": false,
+    "variant_a_best_index": 11,
+    "variant_b_best_index": 40
+  },
+  "certificate": {
+    "scope": "Exact rational fixed-clock-momentum stationary residual certificate only; finite wavepacket theorem pending",
+    "exact_error_upper": "1157268673584970815363412380359719588406374536821067328428758632535116767761732953676885221963884191448669661638514980080650319496665121603158059601895058654614027185868905730909681729516896539157608232296437789291519590249910609757589835020169869942550954151221274178207559766986521565841728229705097784023394241197661380405884812197810813198190630303720543558672191303623752089291587729027062271850724257753910401557122933426990154194036211453312999182645151894660527283510366837142839938241403/6603625074603207806895655397250227084863623876388708896736325715216434779649232774114270914620505268015298045166136890363146464739186837724570723483924212261235512296514263492622170521875957855375414756563638232035272654542477972239151000883397343629433746324331489646245877693106335947016014813896698436696526058294452933889579177603129060648940431945394512368554738204266334179488345842766872613156477880811882167412894761475807227735630201275282456556250000000000000000000000000000000000000000000000000000",
+    "decimal_display": "1.752474830885985223069548554478212838976283275902955059372962711966226E-13",
+    "exact_assertion": "error < 176/10**15",
+    "exact_parameter_map_sha256": "37ba152c0aebc0347e4f8963518254ad44552c41eee7c0f03a2a0fef94c0c116",
+    "source_gap": {
+      "rational": "33371040234443/500000000000000",
+      "upper_float": 0.066742080468886
+    },
+    "old_band_separation": {
+      "rational": "58747361611621/31250000000000",
+      "upper_float": 1.879915571571872
+    },
+    "loads": {
+      "old1_added": {
+        "rational": "99687856381667/50000000000000",
+        "upper_float": 1.99375712763334
+      },
+      "old2_added": {
+        "rational": "299659657780149/250000000000000",
+        "upper_float": 1.198638631120596
+      },
+      "old_edge_separate": {
+        "rational": "3",
+        "upper_float": 3.0
+      },
+      "A": {
+        "rational": "10166331044996727/500000000000000",
+        "upper_float": 20.332662089993455
+      },
+      "B": {
+        "rational": "17078839343776311/1000000000000000",
+        "upper_float": 17.078839343776313
+      },
+      "clock0": {
+        "rational": "8015120691541701/1000000000000000",
+        "upper_float": 8.015120691541702
+      },
+      "clock1": {
+        "rational": "6730044773026091/1000000000000000",
+        "upper_float": 6.730044773026091
+      },
+      "clock_tail": {
+        "rational": "3752638388379/31250000000000",
+        "upper_float": 0.120084428428128
+      }
+    },
+    "elapsed_seconds": 0.2028962499462068,
+    "versions": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "numpy": "2.4.4",
+      "mpmath": "1.3.0",
+      "mpmath_dps": 90
+    }
+  },
+  "different_path": {
+    "maximum_dimension": 512,
+    "max_difference": 2.897270206437211e-13,
+    "max_linear_residual": 1.2738454388708005e-15,
+    "max_offdiagonal": 6.917869146895796e-15,
+    "elapsed_seconds": 0.07821533316746354,
+    "versions": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0"
+    },
+    "independent_reviewer": false
+  },
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "command_exit_statuses": {
+    "search.py": 0,
+    "search_allowed.py": 0,
+    "certify_old_cap.py": 0,
+    "check_old_cap.py": 0
+  },
+  "source_copied_verifier_adaptations": {
+    "copied_originals": {
+      "certify_point.py": "74460bcbd0db30671a6d676b79d24d1ebb5439523df62a5fa3c231760b010558",
+      "independent_check.py": "06e14d43a2f0b9f09c594dd547981d5e25002997e6df661d542221c400632d0d"
+    },
+    "adaptations": "New output directory; saved capped fit; Delta=2+4J+0.05+extra; exact g caps; fresh target threshold. Same residual-certification algorithm, re-executed on new exact coefficients. No original bytes changed."
+  },
+  "writes_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search",
+  "editable_prompt_files_changed": [],
+  "shared_source_files_changed": [],
+  "network_calls": 0,
+  "git_mutations": 0,
+  "note": "Verifier reruns only tightened positivity/error assertions and fixed-momentum wording; the exact candidate and different-path input coefficients stayed unchanged."
+}

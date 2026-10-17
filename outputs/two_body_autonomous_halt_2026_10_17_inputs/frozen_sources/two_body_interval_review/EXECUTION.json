@@ -1,0 +1,57 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/check_composition.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review",
+  "started_utc": "2026-10-17T00:24:33.311588+00:00",
+  "ended_utc": "2026-10-17T00:24:35.779616+00:00",
+  "elapsed_seconds": 2.465158416889608,
+  "exit_code": 0,
+  "timed_out": false,
+  "cpu_seconds_cap": 60,
+  "wall_seconds_cap": 90,
+  "largest_matrix_dimension": 32,
+  "user_cpu_seconds": 1.27571,
+  "system_cpu_seconds": 0.11798399999999999,
+  "peak_rss_bytes_macos": 76939264,
+  "environment_requests": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/check_composition.py",
+      "bytes": 15157,
+      "sha256": "3f25ff5b24829d8876246c99bec01a66bc049295b424e4ed95f057800e9b5460"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/run_check.py",
+      "bytes": 1779,
+      "sha256": "37c9269b0477e30dfb59aa40899f31b730a1e1c172d6b4aff61bb1f5233cccf3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/SOURCE_PINS.json",
+      "bytes": 12271,
+      "sha256": "41b2f768ee9a0dd2b16301feff3b8aad0e6276f8b251da06d6c0ddce0a48cb4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/check.stdout",
+      "bytes": 360,
+      "sha256": "2c5b122f27ddd11d35dda26a004f927f832cd2bafae000d84efad184ce7e0a42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/check.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "generated_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/RESULTS.json",
+      "bytes": 11127,
+      "sha256": "ff6b2305ecaa248f1df41e643e1fbcd41950c4bb99564469b951a89ece6606df"
+    }
+  ]
+}

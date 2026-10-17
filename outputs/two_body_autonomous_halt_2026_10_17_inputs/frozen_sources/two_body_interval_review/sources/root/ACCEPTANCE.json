@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-17T00:14:36.987987+00:00",
+  "status": "qualified conditional provisional reuse; publication and concrete composition separate",
+  "stationary_sources": {
+    "original_route": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/ROUTE.md",
+      "bytes": 21276,
+      "sha256": "04ffdf68d3bdadf17f5c0838dde2a8a2bd1608d786ea58e427c5c25fd33ef8d1"
+    },
+    "old_cap_result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/RESULT.md",
+      "bytes": 12175,
+      "sha256": "397c18e02c0d583bdc3e51df8f5c513f677b448862526a362eac4cc43577af00"
+    },
+    "old_cap_certificate": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_two_body_halt/old_cap_search/rational_point_certificate.json",
+      "bytes": 25229,
+      "sha256": "6f057d8a580217d29a09d7683462f5b35b71de093e75c8d07a12283cde33593f"
+    },
+    "independent_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review/REVIEW.md",
+      "bytes": 21142,
+      "sha256": "23b78506dc56fe141f9e19347b60ed0e420b4e817b599cafa246a502a2a3f830"
+    },
+    "independent_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review/FINAL_MANIFEST.json",
+      "bytes": 8121,
+      "sha256": "145a01dbde3a6d816cf6d4fa779017c79f4453d5ab108bce9ef6e9c98f103960"
+    }
+  },
+  "stationary_disposition": "Both exact stationary error ceilings accepted under the positive nearest-neighbor Hamiltonians. The old-cap witness meets cap2 only at the old added sites. Full-basis separate rational certificates support the same four-fiber result. No normalizable-input operation follows from that point result alone.",
+  "stationary_qualification": "upper_float fields are ordinary rounded displays, not outward bounds. Use exact rational strings or the proved strict rational ceilings. Source/clock loads, vacancy scalar, actual old aging, supplied vacuum, one-head and tail remain explicit.",
+  "packet_sources": {
+    "original": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM.md",
+      "bytes": 26963,
+      "sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a"
+    },
+    "revised": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM_V2.md",
+      "bytes": 27028,
+      "sha256": "db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3"
+    },
+    "independent_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_review/REVIEW.md",
+      "bytes": 15318,
+      "sha256": "bba09ef378466a3787ebfbbbd942a81fbe200031a24d04f799d2543e510673f6"
+    },
+    "change": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/V2_CHANGE.json",
+      "bytes": 1449,
+      "sha256": "e2eef19f500fb33b79b64b23bc230af6ded5829782187f2958af2e866d62b9b8"
+    }
+  },
+  "packet_disposition": "Complete conditional theorem and independent review read; normalization, full aging, closed tails, grouped column operator norms, point-spectrum overlap, preparation and finite-horizon estimates checked. V2 records the reviewer-recommended conservative-constant convention. Root accepts conditional reuse with every concrete certificate still required.",
+  "unresolved": [
+    "Uniform interval certificate and actual matching-norm conversion for the selected two-body witness",
+    "Correct site1 to absolute-site reflection conversion and one common target scalar",
+    "Finite preparation costs and native supply",
+    "Finite versus infinite extent, reset, reuse and physical interpretation"
+  ],
+  "independence_limits": "Same-model source-exposed analytical and computational checks, not blind discovery, model diversity, proof-assistant verification, retained audit or laboratory evidence. Full reviewer receipts and initial failed packet-check harness run remain preserved.",
+  "root_source_coverage": "Original route read previously in full, complete capped-result body and both complete independent reports read now. Complete generic599-line argument read. Load-bearing physical channel and positivity reasoning and packet estimates were independently reconstructed by root. Historical source programs and receipts remain covered by the pinned separate reviews; root does not claim a new full code rerun."
+}

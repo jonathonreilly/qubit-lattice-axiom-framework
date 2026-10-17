@@ -1,0 +1,41 @@
+{
+  "started_utc": "2026-10-17T00:00:57.106789+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review/reviewer_certificate.py"
+  ],
+  "working_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/dark_source_certificate_review",
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "wall_cap_seconds": 120,
+  "child_cpu_cap_seconds": 90,
+  "source_at_launch": {
+    "bytes": 12956,
+    "sha256": "7a8ff82d6cd5eddd33efda5b6e7d5cc552db004af8d68175c3c2aff54b0c233e"
+  },
+  "input_manifest_at_launch": {
+    "bytes": 6508,
+    "sha256": "6d24762b5f075ab6b4df0580bbe5a42bfc437428d5cdc7c4891473cfc9b05bd4"
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 1.4072473333217204,
+  "user_cpu_seconds": 1.164255,
+  "system_cpu_seconds": 0.040983,
+  "peak_rss": 40288256,
+  "peak_rss_unit": "bytes",
+  "stdout": {
+    "bytes": 478,
+    "sha256": "ca8bc3a80676d68c680762f8ad90c940e7fa2ea72be4774de33dd312d78df4b5"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_after": {
+    "bytes": 12956,
+    "sha256": "7a8ff82d6cd5eddd33efda5b6e7d5cc552db004af8d68175c3c2aff54b0c233e"
+  }
+}

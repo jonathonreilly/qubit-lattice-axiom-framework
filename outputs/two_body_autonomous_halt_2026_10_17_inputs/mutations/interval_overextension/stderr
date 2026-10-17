@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/interval_overextension/mutated.py", line 245, in <module>
+    assert min(source_gap,old_gap)>g
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

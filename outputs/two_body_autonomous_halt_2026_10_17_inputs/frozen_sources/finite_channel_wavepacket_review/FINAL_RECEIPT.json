@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-10-17T00:13:00.237996+00:00",
+  "reviewed_candidate_lines": 599,
+  "reviewed_candidate_sha256": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+  "source_preservation": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/THEOREM.md",
+      "pinned": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+      "current": "fffd7d405935226aba4a5e6528112b984b6dde4580747641159f554e97e2189a",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/column_norm_check.py",
+      "pinned": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625",
+      "current": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/run_check.py",
+      "pinned": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc",
+      "current": "1f08d94c03b22954bad538f3c18272d81c68323b71a94cf2d9c0906e26ff57dc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/CHECK_EXECUTION.json",
+      "pinned": "b3b6ec701759051e37a96a00a1f0787c01040086f92a8c92276ba6e7f1d6e2cc",
+      "current": "b3b6ec701759051e37a96a00a1f0787c01040086f92a8c92276ba6e7f1d6e2cc",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stdout.txt",
+      "pinned": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115",
+      "current": "b1808ec788055149854247ead2f59d2cd3c8fb219c4a404acbf96edb0821e115",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/check_stderr.txt",
+      "pinned": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/finite_channel_wavepacket_bridge/FINAL_MANIFEST.json",
+      "pinned": "3f195c332bb56ec77aadeac1896d5b5fb8e013a7be22bb45457671c5e2064250",
+      "current": "3f195c332bb56ec77aadeac1896d5b5fb8e013a7be22bb45457671c5e2064250",
+      "unchanged": true
+    }
+  ],
+  "disposition": "No blocking mathematical finding for conditional theorem; one nonblocking v-definition clarification",
+  "review_lines": 138,
+  "independent_review_scope": "Separate reviewer reconstructing proof; not formal audit or concrete-fit certificate",
+  "test_exit_code": 0,
+  "test_dimensions": {
+    "maximum_matrix_dimension": 14,
+    "matching_dimension": 3,
+    "logical_dimension": 2
+  },
+  "initial_harness_failure_preserved": "attempt_1/",
+  "model_effort": "Inherited, no overrides",
+  "network_calls": 0,
+  "editable_prompt_changes": [],
+  "shared_source_changes": []
+}

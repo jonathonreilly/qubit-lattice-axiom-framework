@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/finite_ready_support/mutated.py", line 296, in <module>
+    assert d>=max(F(1),2*J*T,16*(F1+F0)**2/(3*eta_p**2))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

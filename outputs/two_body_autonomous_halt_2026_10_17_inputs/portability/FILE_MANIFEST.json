@@ -1,0 +1,63 @@
+{
+  "recorded_utc": "2026-10-17T00:34:52.166423+00:00",
+  "files": [
+    {
+      "path": "COMPLETE_CHANGED_LOGIC.diff",
+      "bytes": 4962,
+      "sha256": "e5473a2793dc392e3328fe5eec026463c1f1b406986bca8bd264c178ddcb0b2c"
+    },
+    {
+      "path": "INSPECTION_RECEIPT.json",
+      "bytes": 1354,
+      "sha256": "e8e370ceec418bc93a23d488bd454a9811ea9a6ff8ed005a9a1a3594645f2d0d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5334,
+      "sha256": "0777e898dbdae5c19fdc6c0d78277f1cb0b99c05eb2a09d35dc1f2f43f83783c"
+    },
+    {
+      "path": "STATIC_EVIDENCE.json",
+      "bytes": 24710,
+      "sha256": "af0267c8ba0a315caf033bb65f47ac766d25ff94dc2f1fac347ce5f6ea431c0f"
+    },
+    {
+      "path": "inspect_adaptation.py",
+      "bytes": 8566,
+      "sha256": "129b08ddab21bc7df1a209eb051d3ca56c85e99b52bbff60e2c78702b1a8dd22"
+    },
+    {
+      "path": "inspection.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inspection.stdout",
+      "bytes": 402,
+      "sha256": "a13edbab6c3c98b9696b6da899c737fc668e3052ed33469df4ded53b49011758"
+    },
+    {
+      "path": "sources/CODE_ADAPTATION.json",
+      "bytes": 6862,
+      "sha256": "e5ac66e653ff066a56e64f0d358cd0cc8888333a28eb42403f5d1efa398dd545"
+    },
+    {
+      "path": "sources/prepare_code.py",
+      "bytes": 7478,
+      "sha256": "2a1b88c3d5b8feccb6aa318d7717a48c2dcacbae7c5ef8eaddfc79b958d4f9f3"
+    },
+    {
+      "path": "sources/two_body_autonomous_halt_2026_10_17.py",
+      "bytes": 21202,
+      "sha256": "6111c95e2add4eb92fbc3f46d49f45085c3e95dc73431a68da7dcd602c912618"
+    },
+    {
+      "path": "sources/two_body_autonomous_halt_check_2026_10_17.py",
+      "bytes": 15785,
+      "sha256": "ee4b71de1d1ab3f92dd1c812974a9dac1b740bea2b8fa3c442890b1854881b92"
+    }
+  ],
+  "prior_frozen_review_files_verified_unchanged": 43,
+  "candidate_sources_refreshed_unchanged": 6,
+  "scope": "Portability evidence only; no candidate execution"
+}

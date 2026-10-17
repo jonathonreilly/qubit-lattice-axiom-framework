@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/finite_observation_horizon/mutated.py", line 311, in <module>
+    assert dM>rho*Tobs*F(6,5)+9
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError

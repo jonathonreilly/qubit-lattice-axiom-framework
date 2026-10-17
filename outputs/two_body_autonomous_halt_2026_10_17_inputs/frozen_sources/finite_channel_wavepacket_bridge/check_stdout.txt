@@ -1,0 +1,23 @@
+{
+  "scope": "Exact two-dimensional algebra only; no scattering or hardware certificate",
+  "K": "Matrix([[1, 0], [0, 3]])",
+  "projector": "Matrix([[1/2, 1/2], [1/2, 1/2]])",
+  "chosen_unit_phase": "3/5 + 4*I/5",
+  "K_projector_commutator": "Matrix([[0, -1], [1, 0]])",
+  "U_is_unitary": true,
+  "error_Gram": "Matrix([[2/5, 2/5], [2/5, 2/5]])",
+  "each_column_error_squared": "2/5",
+  "operator_error_squared": "4/5",
+  "naive_max_column_bound_rejected": true,
+  "sum_of_column_squares_is_sharp": true,
+  "runtime": {
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "largest_matrix_dimension": 2,
+    "cpu_seconds_cap": 10,
+    "elapsed_seconds_after_import": 0.14945212518796325
+  },
+  "source_sha256": "ba60f080adaa5edd60f94409a85ffd36f1d6ff35bc1dd1141ae2515d2ea34625"
+}

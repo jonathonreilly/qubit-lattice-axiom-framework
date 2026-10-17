@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/portability/inspect_adaptation.py"
+  ],
+  "started_utc": "2026-10-17T00:33:59.613355+00:00",
+  "ended_utc": "2026-10-17T00:33:59.756300+00:00",
+  "elapsed_seconds": 0.14296479197219014,
+  "exit_code": 0,
+  "timed_out": false,
+  "cpu_seconds_cap": 15,
+  "wall_seconds_cap": 30,
+  "candidate_programs_executed": false,
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/portability/inspect_adaptation.py",
+      "bytes": 8566,
+      "sha256": "129b08ddab21bc7df1a209eb051d3ca56c85e99b52bbff60e2c78702b1a8dd22"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/portability/inspection.stdout",
+      "bytes": 402,
+      "sha256": "a13edbab6c3c98b9696b6da899c737fc668e3052ed33469df4ded53b49011758"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_interval_review/portability/inspection.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

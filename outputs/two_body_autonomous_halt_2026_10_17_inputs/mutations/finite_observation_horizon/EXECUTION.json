@@ -1,0 +1,23 @@
+{
+  "name": "finite_observation_horizon",
+  "started_utc": "2026-10-17T00:37:30.783831+00:00",
+  "elapsed_seconds": 0.3133931662887335,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21540,
+    "sha256": "b95457deee2f7f78a684ec4f2677f3134324a522ea9f45aa357e23a8f2472ff8"
+  },
+  "old": "M=9*10**14",
+  "new": "M=8*10**14",
+  "expected_scientific_assertion": "assert dM>rho*Tobs*F(6,5)+9",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 304,
+    "sha256": "ddcc3b29f7fa6e6cde2affeb713189f115c08f6b485ed7bac1f09da8e09249d2"
+  }
+}

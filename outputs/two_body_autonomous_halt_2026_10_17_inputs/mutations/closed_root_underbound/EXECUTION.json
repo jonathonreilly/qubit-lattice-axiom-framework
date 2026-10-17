@@ -1,0 +1,23 @@
+{
+  "name": "closed_root_underbound",
+  "started_utc": "2026-10-17T00:37:29.469722+00:00",
+  "elapsed_seconds": 0.3282825001515448,
+  "exit_code": 1,
+  "wall_cap_seconds": 30,
+  "source": {
+    "bytes": 21534,
+    "sha256": "c7fc65ce8f1af7e7cbc55778be18dc666ece65bdc92f4f4974f4c3602565e161"
+  },
+  "old": "kappa=F(1,7)",
+  "new": "kappa=F(1,100)",
+  "expected_scientific_assertion": "assert 2+g/J>kappa+1/kappa",
+  "scientific_assertion_rejected": true,
+  "stdout": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 298,
+    "sha256": "0762c09dc71bfeeaea560ee169c74493fff7716b50be60cd8e4efa4d84f46148"
+  }
+}

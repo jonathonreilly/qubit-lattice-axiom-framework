@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/two_body_integration/mutations/target_conjugation/mutated.py", line 223, in <module>
+    assert central_bound<central_contract
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

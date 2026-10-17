@@ -1,0 +1,70 @@
+{
+  "author_source": {
+    "bytes": 13759,
+    "sha256": "06b71bb656d17289d0f1759f9dd385bf9a49e07d58e6c840f4741eca6ae1e07f"
+  },
+  "independent_source": {
+    "bytes": 15157,
+    "sha256": "3f25ff5b24829d8876246c99bec01a66bc049295b424e4ed95f057800e9b5460"
+  },
+  "primary": {
+    "bytes": 21202,
+    "sha256": "6111c95e2add4eb92fbc3f46d49f45085c3e95dc73431a68da7dcd602c912618"
+  },
+  "helper": {
+    "bytes": 15785,
+    "sha256": "ee4b71de1d1ab3f92dd1c812974a9dac1b740bea2b8fa3c442890b1854881b92"
+  },
+  "declared_inputs": [
+    "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/SOURCE_MANIFEST.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/FILE_MANIFEST.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/RESULT.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/ROUTE.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/THEOREM.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/certify_old_cap.py",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_bridge/inputs/rational_point_certificate.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/SOURCE_PINS.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/BRIDGE_V2_DELTA.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/CANDIDATE.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/CERTIFICATE.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/EXECUTION.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/FREEZE.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/POINT_WITNESSES.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/SOURCE_MANIFEST.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certificate.stderr",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certificate.stdout",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/certify_interval.py",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/ACCEPTANCE.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/FILE_MANIFEST.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/QUALIFICATION.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/RESULT.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/ROUTE.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/THEOREM.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/THEOREM_V2.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/certify_old_cap.py",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/inputs/rational_point_certificate.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/candidate/run_certificate.py",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic/THEOREM_V2.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic/V2_CHANGE.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/generic_review/REVIEW.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/FINAL_MANIFEST.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/RESULTS.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/REVIEW.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/RUN_RECEIPT.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/WITNESS.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/prior_review/reviewer_old_cap_delta.py",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/PROOF_SEARCH_GOVERNANCE.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/REVIEWER_SKILL.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/SCIENCE_WORKFLOW.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/process/SKILL_FRESHNESS_CHECK.md",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/root/ACCEPTANCE.json",
+    "outputs/two_body_autonomous_halt_2026_10_17_inputs/frozen_sources/two_body_interval_review/sources/root/QUALIFICATION.md",
+    "scripts/two_body_autonomous_halt_check_2026_10_17.py"
+  ],
+  "adaptations": {
+    "scripts/two_body_autonomous_halt_2026_10_17.py": "Author calculation retained; repository-local source routing, explicit independent import, shared120-second envelope, declared inputs and output routing added.",
+    "scripts/two_body_autonomous_halt_check_2026_10_17.py": "Separate checker body wrapped as a function; root is supplied explicitly,120-second envelope metadata and return replace original output writes. No calculation or assertion weakened."
+  },
+  "execution": null
+}

@@ -21,7 +21,7 @@ All paths are read-only. Read files from the packet branch with:
 5. `panel_D/PANEL_D_SYNTHESIS.md`: the previous panel.
 6. `docs/MINIMAL_AXIOMS_2026-06-29.md` in full, in that worktree.
 
-## State of play (convened 2026-10-15 ~17:10Z)
+## State of play (first convened 2026-10-15 ~17:05Z; the usage limit stopped every agent; re-convened 2026-10-17 ~11:05Z)
 
 Referee status is given in brackets: [ref ✓c] means confirmed with corrections by codex gpt-5.6-sol at xhigh; [unref] means not yet refereed.
 
@@ -50,7 +50,7 @@ Referee status is given in brackets: [ref ✓c] means confirmed with corrections
 - **Supervisor synthesis:** `campaign/CKM_CORNER_TENSION_SYNTHESIS.md`. The YY† spurion argument says no flavour symmetry can forbid the class-S kinetic mixing.
 
 **Mirror gapping**
-- **QMC-1** [unref; referee running]: a validated sign-free AFQMC (λ1 = 0, ungauged, global Spin(10)).
+- **QMC-1** [ref ✓c; the correct fixed reading is **OPEN**]: a validated sign-free AFQMC (λ1 = 0, ungauged, global Spin(10)). The referee confirmed the engine and the validation. The replacement estimators are not gap measurements. The result suggests a GPR-like crossover and establishes neither a mirror gap, nor GPR mass generation, nor SMG.
   - 2+1D, filter f2, L = 4 and 6, β = 4. Once the mirror gap opens (W ≳ 2), S10/L² is flat: ratios 0.98(5), 1.35(26), 0.87(10).
   - No SMG window was found, and there is no strong-coupling turnover up to W = 16 at L = 4 (K1's G1 seen numerically).
   - Mechanically OPEN by the registered estimator. GPR-PILOT by the replacement estimators.
@@ -67,7 +67,7 @@ Referee status is given in brackets: [ref ✓c] means confirmed with corrections
   - edge zero modes of H_W (a Chern insulator) block Wilson-line winding;
   - the edge tail is algebraic, about Lx⁻⁵;
   - on the torus, C(11112) = 0 and C(L1) = −1.
-- **TOR-1** [running, due 21:00Z]: the periodic-torus chiral RP test, Lx ≥ 4.
+- **TOR-1** [stopped by the usage limit, being resumed]: the periodic-torus chiral RP test, Lx ≥ 4. Partial outputs are in `scratchpad/chirality_ex/campaign/TOR1/scripts/`, not yet on the branch.
 - **Earlier context:** UV-1 found a lattice-scale tail; NT-2 found the hard plaquette bound is not RP in 3D; BLEAK-1 found Planck-size light-cone leaks for set B's RP-safe gravity bridge.
 
 ### Owner decisions still parked
@@ -78,7 +78,7 @@ D1–D4 from panel D (`panel_D/PANEL_D_SYNTHESIS.md`).
 
 1. **Route 2.** Given OBS-2, 3 and 4, CLS-1 and QMC-1: is X2 viable? What is its exact remaining price list? Is the CKM-versus-translation tension a structural no-go for corner generations, or a price?
 2. **Route 1.** Given NT-1′, NT-1″ and TOR-1: is the overlap's RP failure now established for a legitimate chiral measure? What would remain to call set B's real-time branch closed?
-3. **The second half (about 14 h).** Which three tests most change the picture? Pre-register their readings now.
+3. **The rest of the campaign (about 18 working hours remain; close moved to about 05:00Z on 10-18).** Which three tests most change the picture? Pre-register their readings now.
 4. **D1–D4.** Does anything here move the panel D advice?
 
 ## What each panelist must deliver

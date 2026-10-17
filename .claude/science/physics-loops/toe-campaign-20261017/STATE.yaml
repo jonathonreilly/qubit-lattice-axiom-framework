@@ -77,5 +77,11 @@ blocks:
     exact: ["3 qubits/site, 6 Majoranas: dims 3, fermion (T-junction -1 x20)", "all 24 rotations x 32 sign choices preserve uniform signed sectors: one species, full O with on-site Clifford", "group law: 128 choices give order-48 central extension by fermion parity; axis C2 lifts^2=+1, edge C2 lifts^2=-1"]
     fractionalization: "clean pair test (consistent action): eta_f(C2axis)=eta_f(C2edge)=+1 -> trivial class on O; the only group-law-consistent W-twist (sign character) gives (axis +, edge -); w2 on O not reachable by W-twists (checker round 2 refuted the first claim)"
     independent_check: "items 1-4 CONFIRMED (+ odd-L caveat, improper elements, group = A4xZ4 sign-pullback); prior art Li-Po arXiv:2107.14083 added; interpretation softened; pair test with clean creators: eta_f(C2axis)=eta_f(C2edge)=+1 (author rerun pending)"
+  C15-spinful-doublet:
+    status: delivered_to_branch
+    note: docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py (PASS=11, <1 min)
+    exact: ["5 qubits/site: links + matter up/dn on one Z2 gauge field; commuting, dim 3", "matter excitation = gauge charge, nontrivial, fermion (T-junction -1), up/dn one anyon type (doublet)", "2O spin action on matter pair: rep, U(-1)=matter parity, doublet spin-1/2", "composition with link lambda_f=-1: eta(C2,C2)=-1 for all C2: doublet carries w2 on all of O"]
+    independent_check: pending
 scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
 next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

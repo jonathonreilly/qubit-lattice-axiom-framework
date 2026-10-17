@@ -31,6 +31,18 @@ adopted; every result is unaudited bounded support with a declared model.
 - **Next.** To make a prediction, the framework has to fix how rotations
   act inside a site, and whether there is a conserved charge.
 
+## Headline (C15): an electron-like emergent fermion
+
+The construction:
+- add two matter modes per site (spin up and spin down) that share the C12 code's Z2 gauge field;
+- let rotations act on that pair as a spin-1/2 doublet.
+
+The result is a single emergent fermion that comes as a doublet and is spin-1/2 under all 24 cube
+rotations, over a symmetric vacuum. It uses five qubits per site.
+
+What the framework would need, in plain words: each site carries a pair of fermion modes that rotate like
+the two spin states of an electron.
+
 ## Realization dictionary: the emergent fermion's half-turn signs
 
 The rotation class eta_f is detected by the squares of the half-turns. In each entry, "+" means

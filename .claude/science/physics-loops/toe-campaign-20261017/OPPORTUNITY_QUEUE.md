@@ -12,6 +12,9 @@ permutations), C8/C10 (bare-permutation spin-1/2 class), C11 (site-local half-ed
    - The same constraint explains why w2 on all of O (which contains D2) is hard for a nondegenerate
      single species. It might be impossible, which would be a genuine no-go for one-state spin-1/2
      fermions in these codes.
+0+. **Done (C15):** a doublet code with w2 on all of O. Next: can the framework derive the matter doublet
+   and its spin-1/2 action from Admissibility, or must they be supplied? A related question: a
+   Lieb-Schultz-Mattis-type analysis of which site contents admit a symmetric vacuum.
 0. ~~A single species with w2 on all of O.~~ Impossible on general grounds. -1 lies in the commutator
    subgroup of 2O (already in Q8), so no one-state fermion can carry w2 on O. Cubic spin-1/2 needs a
    doublet. **New target:** an O-covariant code whose emergent fermion is a doublet (two degenerate states,

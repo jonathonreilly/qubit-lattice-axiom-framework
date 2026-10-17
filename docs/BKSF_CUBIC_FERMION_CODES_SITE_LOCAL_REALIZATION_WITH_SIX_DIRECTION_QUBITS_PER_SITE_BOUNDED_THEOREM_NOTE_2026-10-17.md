@@ -67,6 +67,18 @@ site rotation reproduces the edge rotation exactly?
    - So once on-site Clifford actions are allowed, the codes are
      O-invariant. "Minimal orbit four" is a statement about the bare site
      action only.
+   - **Exploration: the sign-free action is spinless.** Take the sign-free
+     choice mu_d -> mu_{Rd}, nu_d -> nu_{Rd}. It is a determinant-+1
+     permutation of the twelve Majoranas, so it lifts to an action up to
+     fermion parity.
+     - Under it, plaquettes map to plaquettes exactly, so clean pair
+       creators exist for every C2.
+     - A clean pair test gives λ = -1, hence eta_f = +1, for all 3 axis
+       C2 and all 6 edge C2. This was run for a D3 code and an order-4
+       code, both sectors, L = 8 (loop pack, c13, `halfpair.log`).
+     - So under this on-site action the same fermion that is spin-1/2-like
+       under the bare action (companion note) is spinless. This matches
+       the Majorana-per-direction code.
 5. **Transfer.** The encoding is an isometry that intertwines the two
    actions. So the companion notes' statements hold for this site-local
    model with the bare site action:

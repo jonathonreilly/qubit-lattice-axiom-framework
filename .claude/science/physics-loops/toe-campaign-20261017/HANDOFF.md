@@ -127,7 +127,9 @@ adopted; every result is unaudited bounded support with a declared model.
   - So the "at least four species" result depends on rotations acting by
     pure qubit relabelling. Confirmed directly (C13): the same BKSF codes,
     in the six-qubit site form, become symmetric under all 24 rotations
-    once a rotation may shuffle the site's Majoranas. How the framework's rotations act on a site's
+    once a rotation may shuffle the site's Majoranas. Under that shuffling
+    action the fermion is spinless. Under pure relabelling it is
+    spin-1/2-like. Same code, two readings of "rotate". How the framework's rotations act on a site's
     qubits is therefore a real modelling choice with physical
     consequences.
   - Spin: with the plain on-site action this fermion is spinless. An

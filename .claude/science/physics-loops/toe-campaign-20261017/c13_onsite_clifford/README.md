@@ -8,3 +8,6 @@
   both uniform sectors (`majhalf_all60_L4.log`, about 41 min), and for one code per orbit type in the C11
   runner (PASS=7).
 - Consequence: the "minimal orbit four" of C6 holds only for bare permutations.
+- `halfpair.py`: clean pair test under the sign-free Majorana permutation (L = 8, a D3 code and an order-4
+  code, both sectors, all 9 C2). lambda = -1 everywhere, so eta_f = +1: the trivial class (`halfpair.log`).
+  Under the bare action the same codes carry w2.

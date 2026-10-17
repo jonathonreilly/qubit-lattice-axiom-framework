@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/positive_boundary/scripts/autonomous_boundary_reflection_2026_10_16.py", line 146, in <module>
+    assert np.linalg.eigvalsh(boundary).min() > -1e-14
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

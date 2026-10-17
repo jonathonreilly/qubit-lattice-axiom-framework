@@ -1,6 +1,6 @@
 {
- "edge_count": 16158,
- "node_count": 7205,
+ "edge_count": 16162,
+ "node_count": 7207,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2105,6 +2105,10 @@
   "audited_symmetry_synthesis_note": {
    "deps_hash": "5d2bb444d436",
    "out_degree": 5
+  },
+  "autonomous_boundary_reflection_bounded_theorem_note_2026-10-16": {
+   "deps_hash": "ab02497d0b96",
+   "out_degree": 1
   },
   "autonomous_compiler_composition_bounded_theorem_note_2026-10-15": {
    "deps_hash": "1adfc3e41ac7",
@@ -16309,6 +16313,10 @@
   "one_parameter_reduced_shell_law_note": {
    "deps_hash": "03d023bc9c3c",
    "out_degree": 1
+  },
+  "one_qubit_cubic_covariant_nearest_neighbour_stabilizer_rules_have_no_three_dimensionally_mobile_defect_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "9bc80da04358",
+   "out_degree": 3
   },
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {
    "deps_hash": "6b456ae72212",

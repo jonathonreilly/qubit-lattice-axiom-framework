@@ -1,0 +1,39 @@
+{
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check",
+  "started_utc": "2026-10-16T23:31:01.715919+00:00",
+  "ended_utc": "2026-10-16T23:31:04.250286+00:00",
+  "elapsed_seconds": 2.534010457806289,
+  "exit_code": 0,
+  "wall_timeout": false,
+  "limits": {
+    "wall_seconds": 180,
+    "child_cpu_seconds": 120,
+    "threads": 1
+  },
+  "sources": {
+    "check": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/check.py",
+      "bytes": 13230,
+      "sha256": "ac306fbb5c40944f605bc11c3b032f5012e42e3c083b76c80b0367099b330117"
+    },
+    "recorder": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/run_check.py",
+      "bytes": 1593,
+      "sha256": "ac8a121013e697bf4ab7316996123aad83408e7d5175e5447d344f4660f5043a"
+    }
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/stdout.txt",
+    "bytes": 19858,
+    "sha256": "49fbc1c98bc66b297a3824a38ccf5d8395359303a43eed13858b5b9505d10c1e"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_halt_independent_check/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "independent_joint_phase",
+  "mutation_file": "autonomous_boundary_reflection_check_2026_10_16.py",
+  "before": "target=np.kron(c*old@W,beta[:,None])",
+  "after": "target=np.kron(old@W,beta[:,None])",
+  "expected_rejection_site": "full_joint_operator_error",
+  "scientific_assertion_rejected": true,
+  "started_utc": "2026-10-16T23:40:54.611386+00:00",
+  "elapsed_seconds": 1.8499441668391228,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/independent_joint_phase/scripts/autonomous_boundary_reflection_2026_10_16.py"
+  ],
+  "exit_code": 1,
+  "wall_cap_seconds": 120,
+  "source_files": {
+    "autonomous_boundary_reflection_2026_10_16.py": {
+      "bytes": 8595,
+      "sha256": "facd29fd1932b1099a8731baf468affb7ee629f88b430bf64e0134345bc852eb"
+    },
+    "autonomous_boundary_reflection_check_2026_10_16.py": {
+      "bytes": 20248,
+      "sha256": "1d3378f12db9959b198e779588e221f763d0f679f15bb6ea37ce9e45a46e4043"
+    }
+  },
+  "stdout": {
+    "bytes": 18313,
+    "sha256": "c8bfcf54904a88d30488cbb3a8826f2274af1dd08d4173cc7849142aa7178974"
+  },
+  "stderr": {
+    "bytes": 740,
+    "sha256": "6a37f65c6c711153ce3cf1a0cd824c929f5baef6f67894397f34df9898a7f468"
+  }
+}

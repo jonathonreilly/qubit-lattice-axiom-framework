@@ -1,0 +1,159 @@
+{
+  "utc": "2026-10-16T23:59:46.840558+00:00",
+  "artifact_hashes_verified": 64,
+  "unchanged_bodies": 2,
+  "canonical_result_input_hashes": {
+    "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md": "4050dabaac602bcd711a9c0eea21b648e3f1ba8fdcb28007f85f1ed9bdce1577",
+    "scripts/autonomous_boundary_reflection_check_2026_10_16.py": "adb3a01d477d244e9d271a37b982d0bb0eb61d0daed701eaabfc6046befb6c94",
+    "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36",
+    "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f"
+  },
+  "helper_discovery": [
+    "scripts/autonomous_boundary_reflection_check_2026_10_16.py"
+  ],
+  "declared_inputs": [
+    "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "scripts/autonomous_boundary_reflection_check_2026_10_16.py",
+    "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md",
+    "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md"
+  ],
+  "deterministic_readiness_issue": null,
+  "cache_status_separately_checked": "fresh",
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/autonomous_boundary_reflection_2026_10_16.py",
+    "scripts/autonomous_boundary_reflection_check_2026_10_16.py"
+  ],
+  "relative_regular_file_links": [
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "scripts/autonomous_boundary_reflection_2026_10_16.py"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "scripts/autonomous_boundary_reflection_check_2026_10_16.py"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/ARTIFACT_MANIFEST.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "docs/NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/independent_check/REVIEW.md"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/diagnostic.py"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/author/execution/EXECUTION.json"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md"
+    },
+    {
+      "source": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CLAIM_STATUS_CERTIFICATE.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/TRACE_GATE.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/TRACE_GATE.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/mutations/RESULTS.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/QUALIFICATION.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/SOURCE_MANIFEST.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/TRACE_GATE.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/REVIEW_HISTORY.md"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/CANONICAL_EXECUTION.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/HANDOFF.md",
+      "target": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/root/SOURCE_ACCEPTANCE.json"
+    }
+  ],
+  "mutation_cases_and_archived_streams": 10,
+  "scope": "Deterministic packaging and finite execution evidence only; no independent retained audit or general all-future numerical verification."
+}

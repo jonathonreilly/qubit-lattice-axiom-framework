@@ -1,0 +1,39 @@
+curve restrictions (nonzero on curves [x=y=z, x=y=1/z, x=1/y=1/z, x=1/y=z]):
+  fracton [True, True, True, True]  lineon [True, True, False, False]  planon [False, True, False, False]
+box [-8,8]^3 rank 6451  built 2.4s
+box [-10,10]^3 rank 11663  built 13.7s
+box [-12,12]^3 rank 19083  built 62.1s
+fracton                t=(1, 0, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(0, 0, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(1, 1, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(1, -1, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(1, 1, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(1, 1, -1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(2, 0, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(2, 2, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(1, 0, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+fracton                t=(0, 1, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+lineon 1+xy            t=(1, -1, 0): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+lineon 1+xy            t=(2, -2, 0): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+lineon 1+xy            t=(1, 0, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+lineon 1+xy            t=(0, 0, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+lineon 1+xy            t=(1, 1, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+lineon 1+xy            t=(1, 0, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+lineon 1+xy            t=(1, 1, -1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+planon (y+z)(1+xy)     t=(1, 0, 1): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+planon (y+z)(1+xy)     t=(0, 1, 1): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+planon (y+z)(1+xy)     t=(1, -1, 0): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+planon (y+z)(1+xy)     t=(1, 2, 3): in image per box [True, True, True]; exact curve-certificate NOT in I: False
+planon (y+z)(1+xy)     t=(1, 1, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+planon (y+z)(1+xy)     t=(1, 0, 0): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+planon (y+z)(1+xy)     t=(0, 0, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+planon (y+z)(1+xy)     t=(1, 0, -1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+planon (y+z)(1+xy)     t=(1, -1, 1): in image per box [False, False, False]; exact curve-certificate NOT in I: True
+create fracton         t=None: in image per box [False, False, False]; exact curve-certificate NOT in I: True
+create lineon          t=None: in image per box [False, False, False]; exact curve-certificate NOT in I: True
+create planon          t=None: in image per box [False, False, False]; exact curve-certificate NOT in I: True
+time 79.4s
+
+real	1m19.724s
+user	1m17.220s
+sys	0m1.846s

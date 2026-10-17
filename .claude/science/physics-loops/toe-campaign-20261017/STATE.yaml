@@ -1,0 +1,20 @@
+loop: toe-campaign-20261017
+branch: claude/toe-campaign-12h-20261017
+base: claude/toe-campaign-20261016-followup (PR #9658)
+window: 2026-10-16T23:40Z .. 2026-10-17T11:40Z
+mode: campaign
+delivery: milestone
+target: best-honest-status
+lane: N1 (electron as emergent excitation of neighbourhood conditions)
+active_block: C2-two-qubit-site-stabilizer-rules
+blocks:
+  C1-one-qubit-nn-stabilizer-rules:
+    status: delivered_to_branch
+    note: docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md
+    runner: scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py (PASS=20, ~1 min)
+    exact: ["axis/full: Chamon only", "Chamon charge ideal = 4 body-diagonal curve primes; no 3D-mobile charge; single defect immobile; planons", "trivial/sign: single-label or cluster-type", "tori L=4,6: log2 dim 4L, sign-consistent"]
+    model: hard-support stabilizer reading (supplied)
+    independent_check: "CONFIRMED all four claims (fresh agent, own implementation: SU(2) lifts, exact curve-restriction certificates, GF(2) box algebra to n=12, Singular radical check); corrected overall sign (both signs valid on Z^3)"
+    trace_class: frontier_discovery
+scheduled_tasks: {hourly: "TOE campaign 12h hourly continuation (:07)", final: "TOE campaign 12h final wrap-up 2026-10-17T11:45Z"}
+next_action: "C2: enumerate covariant NN Pauli rules on two qubits per site (spin soldered x flavour), vectorized; test 3D mobility, statistics and C4^4 fractionalization"

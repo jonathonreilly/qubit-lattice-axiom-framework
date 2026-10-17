@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/complete_global_phase/scripts/autonomous_boundary_reflection_2026_10_16.py", line 97, in <module>
+    assert err < 0.2
+           ^^^^^^^^^
+AssertionError

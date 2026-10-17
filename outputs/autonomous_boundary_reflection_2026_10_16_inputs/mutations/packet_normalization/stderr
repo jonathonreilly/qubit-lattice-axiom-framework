@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/packet_normalization/scripts/autonomous_boundary_reflection_2026_10_16.py", line 164, in <module>
+    independent_reflection = run_reflection_checks()
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/packet_normalization/scripts/autonomous_boundary_reflection_check_2026_10_16.py", line 80, in run_reflection_checks
+    assert f2 == 1
+           ^^^^^^^
+AssertionError

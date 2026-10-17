@@ -1,0 +1,159 @@
+{
+  "completion": {
+    "elapsed_seconds": 0.06368779158219695,
+    "ru_maxrss_platform_units": 86704128,
+    "script_sha256": "4d89eb4a831b40b3d468c93d34e9f63366c6b5e41cf718d6d34cd4262b9a6cf1"
+  },
+  "exact_first_removed_site_path": {
+    "J": "3/16",
+    "L": 12,
+    "M": 7,
+    "N": 3,
+    "first_nonmatching_degree": 5,
+    "rho": "17/32",
+    "rows": [
+      {
+        "degree": 0,
+        "nonzero_difference": []
+      },
+      {
+        "degree": 1,
+        "nonzero_difference": []
+      },
+      {
+        "degree": 2,
+        "nonzero_difference": []
+      },
+      {
+        "degree": 3,
+        "nonzero_difference": []
+      },
+      {
+        "degree": 4,
+        "nonzero_difference": []
+      },
+      {
+        "degree": 5,
+        "nonzero_difference": [
+          {
+            "amplitude": "-7776/1419857",
+            "site": 7
+          }
+        ]
+      }
+    ],
+    "w": "1/4"
+  },
+  "finite_horizon_example": {
+    "A5_satisfied": true,
+    "J": 0.1875,
+    "L_reference": 128,
+    "M": 24,
+    "N": 3,
+    "Tobs": 20.0,
+    "d_M": 22,
+    "limit": "The length-128 reference and Bessel-tail truncation are diagnostic, not a certified infinite evolution.",
+    "mu": 1.0,
+    "required_real_distance": 21.2392374679545,
+    "rho": 0.53125,
+    "rows": [
+      {
+        "bessel_tail_through_299": 0.0,
+        "contour_bound": 1.7651494189895368e-09,
+        "finite_vs_length128_error": 2.1835026489621596e-15,
+        "t": 0
+      },
+      {
+        "bessel_tail_through_299": 1.7990315746537153e-18,
+        "contour_bound": 4.0039381772066195e-08,
+        "finite_vs_length128_error": 3.3453682283664376e-15,
+        "t": 5
+      },
+      {
+        "bessel_tail_through_299": 6.3802753480451086e-12,
+        "contour_bound": 9.082245816940496e-07,
+        "finite_vs_length128_error": 5.474757952735785e-15,
+        "t": 10
+      },
+      {
+        "bessel_tail_through_299": 1.2020787716542419e-05,
+        "contour_bound": 0.00046730995230167665,
+        "finite_vs_length128_error": 1.5447030245342981e-09,
+        "t": 20
+      }
+    ],
+    "w": 0.25,
+    "zeta": 0.001
+  },
+  "normalization_slack": {
+    "A2_distance_upper": "2 tail / A",
+    "A_lower": "3/4",
+    "comment": "The addendum uses the weaker 4*tail upper bound; its constants are safe.",
+    "minimum_retained_norm_for_eta_le_half": "5/8",
+    "tail_upper": "eta_p/4",
+    "using_worst_bounds": "2 eta_p / 3 <= eta_p"
+  },
+  "runtime": {
+    "cpu_cap_seconds": 60,
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "largest_bessel_index": 299,
+    "largest_exact_matrix": 12,
+    "largest_numeric_clock_matrix": 128,
+    "numpy": "2.4.4",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "wall_cap_seconds": 90
+  },
+  "sufficient_integer_choices_not_evolved": [
+    {
+      "A1_tail_bound": 0.110067391175244,
+      "A4_horizon_bound": 0.06337820037607644,
+      "J": 0.1875,
+      "M": 12616,
+      "N": 4733,
+      "T": 6310.325865635077,
+      "Tobs": 12620.651731270154,
+      "d": 2366.627800386846,
+      "epsilon": 1.0,
+      "eta_p": 0.5,
+      "eta_p_divided_by_four": 0.125,
+      "integer_distance": 7884,
+      "required_distance": 7883.543949773679,
+      "zeta": 0.1
+    },
+    {
+      "A1_tail_bound": 0.056532474909690114,
+      "A4_horizon_bound": 0.004690580709920846,
+      "J": 0.1875,
+      "M": 92918,
+      "N": 34866,
+      "T": 46486.79283617822,
+      "Tobs": 92973.58567235644,
+      "d": 17433.452686433167,
+      "epsilon": 0.5,
+      "eta_p": 0.25,
+      "eta_p_divided_by_four": 0.0625,
+      "integer_distance": 58053,
+      "required_distance": 58052.24297130055,
+      "zeta": 0.01
+    },
+    {
+      "A1_tail_bound": 0.011565135097312416,
+      "A4_horizon_bound": 0.005078712014778389,
+      "J": 0.1875,
+      "M": 10844874,
+      "N": 4069570,
+      "T": 5426092.972978232,
+      "Tobs": 10852185.945956465,
+      "d": 2034785.1351331628,
+      "epsilon": 0.1,
+      "eta_p": 0.1,
+      "eta_p_divided_by_four": 0.025,
+      "integer_distance": 6775305,
+      "required_distance": 6775304.322472596,
+      "zeta": 0.01
+    }
+  ]
+}

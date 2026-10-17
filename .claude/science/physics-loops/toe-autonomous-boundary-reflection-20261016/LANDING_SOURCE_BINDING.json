@@ -1,0 +1,30 @@
+{
+  "scope": "Current source wrapper mapping only; does not restamp historical approvals or executions.",
+  "note": {
+    "path": "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+    "sha256": "38549d1ad11b2978786f3e21e809d4958b9911b1958916016ba9c29d89c30c11",
+    "bytes": 32779
+  },
+  "historical_source_manifest": {
+    "path": ".claude/science/physics-loops/toe-autonomous-boundary-reflection-20261016/SOURCE_MANIFEST.json",
+    "sha256": "1ad131b1d1f850febd4518e81f134495ca4b8a395727ad175ef5d3fd3cf0843a"
+  },
+  "unchanged_bodies": [
+    {
+      "source": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/CANDIDATE_V2.md",
+      "sha256": "694484853b731991d97f11f5d9a3a012ff30b9badb7fe57a7c57f6fee7e2fd36",
+      "bytes": 13239,
+      "body_byte_start_inclusive": 14089,
+      "body_byte_end_exclusive": 27328,
+      "exact_byte_comparison": true
+    },
+    {
+      "source": "outputs/autonomous_boundary_reflection_2026_10_16_inputs/frozen_sources/FINITE_READINESS_ADDENDUM.md",
+      "sha256": "ce01691b49abf924d2fc610cf2dd6c71c565c0c21df6f1bc39960ecb2c546a2f",
+      "bytes": 4856,
+      "body_byte_start_inclusive": 27513,
+      "body_byte_end_exclusive": 32369,
+      "exact_byte_comparison": true
+    }
+  ]
+}

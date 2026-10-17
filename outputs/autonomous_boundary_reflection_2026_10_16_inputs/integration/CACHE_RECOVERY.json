@@ -1,0 +1,9 @@
+{
+  "scope": "First cache envelope failed because the runner created its output file in the outputs directory, changing a parent directory stat token. Runner/input content hashes before and after were identical. No cache was accepted. The actual produced JSON is preserved here; its existence is not relabeled as an accepted cache or successful envelope. Retry the unchanged guard on the now-existing output path.",
+  "first_output": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/FIRST_EXECUTION_OUTPUT_UNCACHED.json",
+    "bytes": 34651,
+    "sha256": "966d0bf051304441a82cbb7f94268e3f2b8d1fa14786d96ec8f90f7593bb8682"
+  },
+  "failed_envelope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/reflection_canonical/EXECUTION.json"
+}

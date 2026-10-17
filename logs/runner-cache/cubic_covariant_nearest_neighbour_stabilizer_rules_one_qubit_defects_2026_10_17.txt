@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py
+runner_sha256: 643236c246d55b151b4ced1ec0d6fb3506b927da8fe341899bcdbec0b4f3ee92
+input_fingerprint_sha256: 8b2e001a06ffa761f11dc43d524ce4b45156f0be575519fc9a60e27489421402
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 16.70
+status: ok
+----- stdout -----
+trivial: 63 sign-consistent self-commuting single orbits
+sign: 43 sign-consistent self-commuting single orbits
+axis: 1 sign-consistent self-commuting single orbits
+full: 1 sign-consistent self-commuting single orbits
+PASS axis action: the only single-orbit rule is the Chamon octahedron X(+-x) Y(+-y) Z(+-z), with identity at the centre
+PASS full action: the only single-orbit rule is the Chamon octahedron X(+-x) Y(+-y) Z(+-z), with identity at the centre
+PASS O-invariant Paulis at the centre under the axis or full action: only the identity (so no rule pins a site through its own label)
+trivial: 63 orbits, 9 maximal commuting sets: ['cluster', 'cluster', 'cluster', 'cluster', 'cluster', 'cluster', 'single-label', 'single-label', 'single-label']
+PASS trivial action: every maximal commuting set of orbits is single-label or one cluster-type orbit
+PASS trivial action: every orbit containing two different labels is a cluster-type singleton (centre P, six neighbours Q != P)
+PASS trivial action: in every cluster-type rule each single defect is created by one single-site Pauli (no topological charge)
+sign: 43 orbits, 5 maximal commuting sets: ['cluster', 'cluster', 'single-label', 'single-label', 'single-label']
+PASS sign action: every maximal commuting set of orbits is single-label or one cluster-type orbit
+PASS sign action: every orbit containing two different labels is a cluster-type singleton (centre P, six neighbours Q != P)
+PASS sign action: in every cluster-type rule each single defect is created by one single-site Pauli (no topological charge)
+PASS exact three-site fixed-label hopping algebra and noncommuting control; arbitrary-support exchange inference is analytic
+PASS Chamon syndromes: X -> y + 1/y + z + 1/z, Z -> x + 1/x + y + 1/y (over GF(2))
+PASS y z sX = (y + z)(1 + y z), x y sZ = (x + y)(1 + x y), x z (sX + sZ) = (x + z)(1 + x z) over GF(2)
+PASS the Chamon charge ideal I = (g1, g2, g3) equals the intersection of the four primes (yz+1, x+y), (yz+1, x+z), (xz+1, y+z), (y+z, x+z): curves along the four body diagonals
+PASS no component contains x, y or z (each is a prime of the Laurent ring; I is saturated)
+PASS (I : x+1) = (I : y+1) = (I : z+1) = I: unit-axis colon checks only
+PASS a single defect (the class of 1) cannot be translated by any nonzero t in {-2..2}^3 (fracton)
+PASS a charge class h supported on the curve (s, s, 1/s) exists: h P1 lies in I and h is not in I
+PASS that charge moves by t exactly when t is orthogonal to (1, 1, -1): a planon in (1,1,-1) planes
+torus L=4: qubits 64, rank 48, log2 code dimension 16, relations 16, inconsistent relations 0
+PASS L=4 torus: log2 code dimension = 4L (grows with L, type-I fracton signature) and no generator product equals -1 or +-i
+torus L=6: qubits 216, rank 192, log2 code dimension 24, relations 24, inconsistent relations 0
+PASS L=6 torus: log2 code dimension = 4L (grows with L, type-I fracton signature) and no generator product equals -1 or +-i
+per_element: exhaustive single-orbit enumeration and exact GF(2) Groebner bases
+per_site: one qubit per site; no dynamics or tick is supplied
+per_mode: not applicable
+per_block: not applicable
+lattice_wide: charge module over the Laurent ring (infinite lattice); tori L = 4, 6 only for code dimension
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

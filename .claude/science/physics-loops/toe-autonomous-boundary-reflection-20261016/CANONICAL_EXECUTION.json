@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-10-16T23:51:36.432831+00:00",
+  "ended_utc": "2026-10-16T23:51:39.039029+00:00",
+  "runner": "scripts/autonomous_boundary_reflection_2026_10_16.py",
+  "timeout_sec": 120,
+  "exit_code": 0,
+  "status": "ok",
+  "elapsed_sec": 2.589656114578247,
+  "cache_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt",
+  "cache_status": "fresh",
+  "stdout_bytes": 27306,
+  "stderr_bytes": 0,
+  "stdout_sha256": "4cf2de4d851b65764c6b80d8a5baa8b8e4561586ecce359e7c3b83e61e59b0c5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "limitation": "Actual finite computations and exact finite symbolic identities; no finite run verifies all future time or infinite volume.",
+  "cache_bytes": 27665,
+  "cache_sha256": "a123d7fa6d58239985db198469ca262bde444877d09d103ad75c4fad5b6c93ea",
+  "record_type": "canonical_execution_companion",
+  "canonical_execution": "executed_successfully",
+  "wrapper_root_approval": "conditional source correspondence accepted; final staging record separate",
+  "final_conformance": "focused proposal checks recorded in REVIEW_HISTORY.md and PUBLISH_CHECKS.json; combined landing gates pending",
+  "result": "outputs/autonomous_boundary_reflection_2026_10_16.json",
+  "cache": "logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt",
+  "execution_method": "scripts/runner_cache.py execute_and_write_cache(runner, timeout_sec=120)",
+  "actual_source_and_output_identities": {
+    "scripts/autonomous_boundary_reflection_2026_10_16.py": {
+      "bytes": 8595,
+      "sha256": "facd29fd1932b1099a8731baf468affb7ee629f88b430bf64e0134345bc852eb"
+    },
+    "scripts/autonomous_boundary_reflection_check_2026_10_16.py": {
+      "bytes": 20250,
+      "sha256": "adb3a01d477d244e9d271a37b982d0bb0eb61d0daed701eaabfc6046befb6c94"
+    },
+    "docs/AUTONOMOUS_BOUNDARY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-16.md": {
+      "bytes": 32187,
+      "sha256": "4050dabaac602bcd711a9c0eea21b648e3f1ba8fdcb28007f85f1ed9bdce1577"
+    },
+    "outputs/autonomous_boundary_reflection_2026_10_16.json": {
+      "bytes": 34651,
+      "sha256": "692758ed7c6c8c1ac4fb4c523872b52825eae6977ab146f8bb3932a0190cc44e"
+    },
+    "logs/runner-cache/autonomous_boundary_reflection_2026_10_16.txt": {
+      "bytes": 27665,
+      "sha256": "a123d7fa6d58239985db198469ca262bde444877d09d103ad75c4fad5b6c93ea"
+    }
+  },
+  "first_attempt": "The unchanged guard rejected the first envelope after creation of the new output file changed a parent-directory stat token; input content hashes were unchanged. No cache was accepted. The failed envelope, output and explanation are preserved under the integration evidence directory. A second actual run on the existing output path passed without changing or bypassing the guard."
+}

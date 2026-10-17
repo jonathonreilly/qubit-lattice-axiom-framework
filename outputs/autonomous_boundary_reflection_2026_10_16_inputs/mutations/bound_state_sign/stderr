@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/reflection_integration/mutations/bound_state_sign/scripts/autonomous_boundary_reflection_2026_10_16.py", line 117, in <module>
+    assert residual < 1e-13
+           ^^^^^^^^^^^^^^^^
+AssertionError

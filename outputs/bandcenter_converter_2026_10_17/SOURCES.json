@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "purpose": "Required byte-exact existing source/check files for the converter publication proof packet; original hopping files support comparison only.",
+  "packet_destination": "outputs/bandcenter_converter_2026_10_17",
+  "files": [
+    {
+      "path": "bandcenter_converter_composition/PROPOSAL.md",
+      "sha256": "1cc6fec524a8184f844711a4fa6d72fcc7cd13a4c8b413cbc064cd4b2201df78",
+      "bytes": 14064,
+      "role": "stationary_converter",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_converter_composition/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_converter_composition_check/REVIEW.md",
+      "sha256": "f1653ba00c0f3d10d8846c1f010ad6dcddcd25535837dd87d17b9e655019a15c",
+      "bytes": 11881,
+      "role": "stationary_converter",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_converter_composition_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_converter_endpoint/PROPOSAL.md",
+      "sha256": "22e7b4a9363a0c010ebce59f3235891708fd40eb5a5fa18f91b1a8878fe99c5a",
+      "bytes": 14711,
+      "role": "endpoint_and_actual_spectral_jump",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_converter_endpoint/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_converter_endpoint_check/REVIEW.md",
+      "sha256": "200268709480f1533050f5d197a4bed7a2acaefa5f4a22a662938ddb504619c6",
+      "bytes": 13878,
+      "role": "endpoint_and_actual_spectral_jump",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_converter_endpoint_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_reference_measure_check/REVIEW.md",
+      "sha256": "1953d153c9ac8583202e7ca18bff62829bfbff2373691cc43a5ae152a2a6b0ae",
+      "bytes": 8876,
+      "role": "free_reference_measure",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_reference_measure_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_weighted_profile/PROPOSAL.md",
+      "sha256": "ab3b7cbfb3ff8159541564ca088b23072f42c075149225b34318d11d581a9ed0",
+      "bytes": 12630,
+      "role": "pointwise_profile_and_weighted_actual_mass",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_weighted_profile/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_weighted_profile_check/REVIEW.md",
+      "sha256": "d2ac8183a6531cce4ed96da1b841b99d31e1340de4b9422507b82f5da7bb9071",
+      "bytes": 11227,
+      "role": "pointwise_profile_and_weighted_actual_mass",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_weighted_profile_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_bandwidth_extension/PROPOSAL.md",
+      "sha256": "d79a1e9abbf0508a05169d4588539063854f0604ba8db933cf878496aa7328a2",
+      "bytes": 13793,
+      "role": "wider_real_band",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_bandwidth_extension/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_bandwidth_check/REVIEW.md",
+      "sha256": "3f721b75911630e0aec48688893c6bae84a182cafaa1012c977e9e262d6e180d",
+      "bytes": 10610,
+      "role": "wider_real_band",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_bandwidth_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_temporal_route/PROPOSAL.md",
+      "sha256": "add82a40ddc49a7c7954ea1b087b1b1bf348e8375da072c96b2b2df1b6d2c011",
+      "bytes": 20035,
+      "role": "corrected_narrow_temporal_mechanism",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_temporal_route/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_temporal_check/REVIEW.md",
+      "sha256": "6df1d5809db83393bfd449442a355a6d25f5f26b31bdecf81c3a833ae67f5a23",
+      "bytes": 17666,
+      "role": "corrected_narrow_temporal_mechanism",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_temporal_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_wide_temporal/PROPOSAL.md",
+      "sha256": "f407f29620b318e6253a0d75ec9a7a3007be89ff41786f753899d30805eee8cc",
+      "bytes": 16515,
+      "role": "wider_temporal_theorem",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_wide_temporal/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_wide_temporal_check/REVIEW.md",
+      "sha256": "1182667f9f46a2fd7828558f68be95d9bc742c69bb6cf72617ced810edcc931f",
+      "bytes": 9742,
+      "role": "wider_temporal_theorem",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_wide_temporal_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_resources/PROPOSAL.md",
+      "sha256": "96d6fdfa01631c17bd43c62c3a11f8754d2b31836740cc11f5a663172e3b37e7",
+      "bytes": 13124,
+      "role": "physical_resources_and_exact_cap",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_resources/PROPOSAL.md"
+    },
+    {
+      "path": "bandcenter_resources_check/REVIEW.md",
+      "sha256": "01b87c7557a3d7c6c34f6a2cb1b6d7bfb61416cf3ca1d982e6aa704280352efd",
+      "bytes": 10297,
+      "role": "physical_resources_and_exact_cap",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_resources_check/REVIEW.md"
+    },
+    {
+      "path": "output_lead_weight/PROPOSAL.md",
+      "sha256": "58f99248986aebe14b4cd87f46237a293ed0c86ab720dd37a497c5b2a64a06cf",
+      "bytes": 9851,
+      "role": "self_contained_output_weight_proof",
+      "proof_dependency": true,
+      "destination": "source_checks/output_lead_weight/PROPOSAL.md"
+    },
+    {
+      "path": "output_lead_weight_check/REVIEW.md",
+      "sha256": "1c72e347fed86c96fcc491c550c136d08f3b7720d52ec1534af94066056d59dd",
+      "bytes": 9259,
+      "role": "self_contained_output_weight_proof",
+      "proof_dependency": true,
+      "destination": "source_checks/output_lead_weight_check/REVIEW.md"
+    },
+    {
+      "path": "converter_finite_composition/PROPOSAL.md",
+      "sha256": "6101fcafa3e4b0700cf23b5937217422a24394cc403ac9cd45bc92c95ac28883",
+      "bytes": 12013,
+      "role": "finite_complete_composition",
+      "proof_dependency": true,
+      "destination": "source_checks/converter_finite_composition/PROPOSAL.md"
+    },
+    {
+      "path": "converter_finite_composition_check/REVIEW.md",
+      "sha256": "06fb0d19b71e00e311c9e380693e78f859e346d25d82c959c2ec8e9a73a5762f",
+      "bytes": 9295,
+      "role": "finite_complete_composition",
+      "proof_dependency": true,
+      "destination": "source_checks/converter_finite_composition_check/REVIEW.md"
+    },
+    {
+      "path": "original_hopping_transfer/PROPOSAL.md",
+      "sha256": "a7ef8d4ba3d1c9e35e9de7c5ca5e8f66b4cc5af3f105570e43935868d1fed8a7",
+      "bytes": 11401,
+      "role": "comparison_only_original_checked_shorter_output",
+      "proof_dependency": false,
+      "destination": "source_checks/original_hopping_transfer/PROPOSAL.md"
+    },
+    {
+      "path": "original_hopping_transfer_check/REVIEW.md",
+      "sha256": "591e7e993db00432a30ccd9049444720f4f404d1db1e681b787b67fcbe3a0f9f",
+      "bytes": 9871,
+      "role": "comparison_only_original_checked_shorter_output",
+      "proof_dependency": false,
+      "destination": "source_checks/original_hopping_transfer_check/REVIEW.md"
+    },
+    {
+      "path": "bandcenter_weighted_profile/ENDPOINT_ERRATUM_REVIEW.md",
+      "sha256": "f307230fd3609e89e761d8dd6d240c55be870490e3d77cfcd6e02713389b36f1",
+      "bytes": 6072,
+      "role": "weighted_profile_endpoint_strictness_erratum",
+      "proof_dependency": true,
+      "destination": "source_checks/bandcenter_weighted_profile/ENDPOINT_ERRATUM_REVIEW.md"
+    }
+  ],
+  "repository_dependencies": [
+    {
+      "path": "docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "71c65d72570a32365ded6dacfc78308ac8429d9e8003a3731af88b5600eb45ff",
+      "root_supplied_pr": 9672,
+      "root_supplied_commit": "e0835b2d048c9fa25bf8f1371993af628702e275",
+      "copy_into_packet": false,
+      "role": "Original source calibration, shared internal blocks, geometry, real and complex fixed-domain source/kernel premises, and original comparison certificate."
+    }
+  ],
+  "dependency_edges": {
+    "stationary_converter": [
+      "repository_dependencies"
+    ],
+    "endpoint_and_actual_spectral_jump": [
+      "stationary_converter",
+      "free_reference_measure"
+    ],
+    "pointwise_profile_and_weighted_actual_mass": [
+      "stationary_converter",
+      "endpoint_and_actual_spectral_jump",
+      "free_reference_measure",
+      "repository_dependencies",
+      "weighted_profile_endpoint_strictness_erratum"
+    ],
+    "wider_real_band": [
+      "pointwise_profile_and_weighted_actual_mass",
+      "stationary_converter",
+      "endpoint_and_actual_spectral_jump",
+      "free_reference_measure"
+    ],
+    "corrected_narrow_temporal_mechanism": [
+      "stationary_converter",
+      "endpoint_and_actual_spectral_jump",
+      "pointwise_profile_and_weighted_actual_mass",
+      "repository_dependencies"
+    ],
+    "wider_temporal_theorem": [
+      "wider_real_band",
+      "corrected_narrow_temporal_mechanism",
+      "repository_dependencies"
+    ],
+    "physical_resources_and_exact_cap": [
+      "stationary_converter",
+      "endpoint_and_actual_spectral_jump",
+      "repository_dependencies"
+    ],
+    "self_contained_output_weight_proof": [
+      "physical_resources_and_exact_cap"
+    ],
+    "finite_complete_composition": [
+      "wider_temporal_theorem",
+      "physical_resources_and_exact_cap",
+      "self_contained_output_weight_proof"
+    ],
+    "weighted_profile_endpoint_strictness_erratum": [
+      "stationary_converter"
+    ]
+  },
+  "exclusions": [
+    "Failed contact/search candidates and Herglotz/Poisson alternatives are not proof dependencies.",
+    "The generic hopping-only proof is not imported: the output-only proposal gives its weighted-generator and Duhamel proof in full.",
+    "Historical draft and workflow citations inside immutable artifacts are provenance, not additional theorem premises. The final corrected mathematical arguments control."
+  ],
+  "preserve_source_bytes": true,
+  "status": "Author packaging inventory; copying and integration review are not performed by this file."
+}

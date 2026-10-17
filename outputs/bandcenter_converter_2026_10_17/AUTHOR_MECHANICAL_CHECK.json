@@ -1,0 +1,8 @@
+{
+  "scope": "Source-copy identities, unchanged canonical dependency and local publication links only; not mathematical verification",
+  "note_sha256": "f8480df631730d3e4e9fadb07b73486a1e02aec650511f7eae859ae2dabbe311",
+  "source_copies": 22,
+  "canonical_dependencies": 1,
+  "local_links": 24,
+  "errors": []
+}

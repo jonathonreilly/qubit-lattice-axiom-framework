@@ -1,6 +1,6 @@
 {
- "edge_count": 16193,
- "node_count": 7225,
+ "edge_count": 16194,
+ "node_count": 7226,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16056,6 +16056,10 @@
   },
   "no_site_wise_formation_rule_preserves_the_sea_under_tick_evolution_the_eigenvector_condition_is_per_step_and_set_wise_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "nominal_bandcenter_converter_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "f39a541fbfc4",
    "out_degree": 1
   },
   "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {

@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: 4431365350f4337ec2b9d4b104e291d577da6176fc9919f9f92b7ab9bff79612
-input_fingerprint_sha256: dcfff9c9d0c2eba02795aad0cd63ab1678280def5550a293226ce22bcddcdf05
+runner_sha256: d93be99a2a49abed5c3a8edc6740af7c50fa6d8ba6a7f9d156cb73319d4e78cb
+input_fingerprint_sha256: 47d3bc5215a85dbd4f54e64f92927f0983952b057362b7c58dd551e0e5733b1b
 timeout_sec: 30
 exit_code: 0
 elapsed_sec: 0.08
@@ -502,6 +502,63 @@ PASS arithmetic: FS complete actual auxiliary error
 PASS arithmetic: FS complete fixed nominal infinite
 PASS arithmetic: FS complete fixed nominal finite
 PASS arithmetic: FS full local perturbation square
+PASS arithmetic: EF endpoint open amplitude
+PASS arithmetic: EF endpoint closed amplitude 44 powers
+PASS arithmetic: EF full endpoint incoming amplitude
+PASS arithmetic: EF deleted-source forcing bound
+PASS arithmetic: EF actual endpoint perturbation domain
+PASS arithmetic: EF background Woodbury denominator
+PASS arithmetic: EF background multiplier
+PASS arithmetic: EF actual selected endpoint column
+PASS arithmetic: EF actual endpoint forcing
+PASS arithmetic: EF actual additive source change
+PASS arithmetic: EF actual complete source bound
+PASS arithmetic: EF strip stays inside background disk
+PASS arithmetic: EF background disk oscillation
+PASS arithmetic: EF both complementary corrections
+PASS arithmetic: EF full selfenergy oscillation
+PASS arithmetic: EF shifted coupling strip energy loss
+PASS arithmetic: EF resonant imaginary factor remaining
+PASS arithmetic: EF all complementary directions gap
+PASS arithmetic: EF complete bottom emitter inverse factor
+PASS arithmetic: EF shifted hard cutoff denominator
+PASS arithmetic: EF complete side emitter inverse
+PASS arithmetic: EF full emitter update norm square
+PASS arithmetic: EF complete bottom column with endpoint forcing
+PASS arithmetic: EF complete side column with endpoint forcing
+PASS arithmetic: EF complete localized bottom prefactor
+PASS arithmetic: EF complete bottom exponent
+PASS arithmetic: EF e lower series witness
+PASS arithmetic: EF exponential fifth power witness
+PASS arithmetic: EF exponential sixty power witness
+PASS arithmetic: EF complete localized bottom
+PASS arithmetic: EF both localized cutoff side ceiling
+PASS arithmetic: EF localized side rounded ceiling
+PASS arithmetic: EF complete localized bound
+PASS arithmetic: EF scalar phase retains 113
+PASS arithmetic: EF scalar lattice side square margin
+PASS arithmetic: EF auxiliary scalar outgoing height
+PASS arithmetic: EF shifted scalar cutoff floor
+PASS arithmetic: EF scalar target bottom exponent
+PASS arithmetic: EF scalar incoming bottom exponent
+PASS arithmetic: EF exp185 coarse lower
+PASS arithmetic: EF scalar target bottom prefactor
+PASS arithmetic: EF scalar incoming height square
+PASS arithmetic: EF scalar incoming bottom prefactor
+PASS arithmetic: EF both scalar cutoff sides
+PASS arithmetic: EF target negative tail
+PASS arithmetic: EF incoming tail
+PASS arithmetic: EF positive target normalization
+PASS arithmetic: EF both target normalization adjustments
+PASS arithmetic: EF complete nominal infinite
+PASS arithmetic: EF complete fixed nominal infinite
+PASS arithmetic: EF one finite output length
+PASS arithmetic: EF finite transfer exponent margin
+PASS arithmetic: EF finite transfer prefactor
+PASS arithmetic: EF complete nominal finite
+PASS arithmetic: EF complete fixed nominal finite
+PASS arithmetic: EF nominal sufficient resource gain
+PASS arithmetic: EF fixed spectrum sufficient resource gain
 {
   "checks": [
     {
@@ -3443,9 +3500,358 @@ PASS arithmetic: FS full local perturbation square
       "name": "FS full local perturbation square",
       "relation": "<",
       "rhs": "121/1000000000000000000000000000000"
+    },
+    {
+      "lhs": "1001/500",
+      "name": "EF endpoint open amplitude",
+      "relation": "<",
+      "rhs": "3"
+    },
+    {
+      "lhs": "30558425865659640167530311/43980465111040000000000000000000000000000000000000000000",
+      "name": "EF endpoint closed amplitude 44 powers",
+      "relation": "<",
+      "rhs": "1/1000000000000000000000000"
+    },
+    {
+      "lhs": "131941395333120000000000000000030558425865659640167530311/43980465111040000000000000000000000000000000000000000000",
+      "name": "EF full endpoint incoming amplitude",
+      "relation": "<",
+      "rhs": "3001/1000"
+    },
+    {
+      "lhs": "57047/5000",
+      "name": "EF deleted-source forcing bound",
+      "relation": "<",
+      "rhs": "12"
+    },
+    {
+      "lhs": "10671628574695759002501102781685894599/1301660252102364701678027597927238539002798320000000000000",
+      "name": "EF actual endpoint perturbation domain",
+      "relation": "<",
+      "rhs": "1/100000000000000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "EF background Woodbury denominator",
+      "relation": "<",
+      "rhs": "24999999999999999991/25000000000000000000"
+    },
+    {
+      "lhs": "25000000000000000000/24999999999999999991",
+      "name": "EF background multiplier",
+      "relation": "<",
+      "rhs": "1000000000000000001/1000000000000000000"
+    },
+    {
+      "lhs": "8000000000000000000000000000000/24999999999999999991",
+      "name": "EF actual selected endpoint column",
+      "relation": "<",
+      "rhs": "321000000000"
+    },
+    {
+      "lhs": "300000000000000000000/24999999999999999991",
+      "name": "EF actual endpoint forcing",
+      "relation": "<",
+      "rhs": "121/10"
+    },
+    {
+      "lhs": "960000000000/24999999999999999991",
+      "name": "EF actual additive source change",
+      "relation": "<",
+      "rhs": "1/25000000"
+    },
+    {
+      "lhs": "2500000000000000959100000000/24999999999999999991",
+      "name": "EF actual complete source bound",
+      "relation": "<",
+      "rhs": "101000000"
+    },
+    {
+      "lhs": "1/125000000000000",
+      "name": "EF strip stays inside background disk",
+      "relation": "<",
+      "rhs": "1/1000000000000"
+    },
+    {
+      "lhs": "36000001/124000000",
+      "name": "EF background disk oscillation",
+      "relation": "<",
+      "rhs": "291/1000"
+    },
+    {
+      "lhs": "3888000216000003/2500000000000000000000000000",
+      "name": "EF both complementary corrections",
+      "relation": "<",
+      "rhs": "1/625000000000"
+    },
+    {
+      "lhs": "22500000625120528006696000093/77500000000000000000000000000",
+      "name": "EF full selfenergy oscillation",
+      "relation": "<",
+      "rhs": "73/250"
+    },
+    {
+      "lhs": "4960000000000/999998000001",
+      "name": "EF shifted coupling strip energy loss",
+      "relation": "<",
+      "rhs": "4961/1000"
+    },
+    {
+      "lhs": "6",
+      "name": "EF resonant imaginary factor remaining",
+      "relation": "<",
+      "rhs": "523098184375788222233734892770993489999907/77499845000077500000000000000000000000000"
+    },
+    {
+      "lhs": "1/6",
+      "name": "EF all complementary directions gap",
+      "relation": "<",
+      "rhs": "29287355672292532172338157237820857867176345651295349747163465021/162707531512795587709753449740904817375349790000000000000000000000"
+    },
+    {
+      "lhs": "25000000000000090000000000011664000648000009/150000000000000000000000000000000000000000000",
+      "name": "EF complete bottom emitter inverse factor",
+      "relation": "<",
+      "rhs": "9/50"
+    },
+    {
+      "lhs": "249/10000000000",
+      "name": "EF shifted hard cutoff denominator",
+      "relation": "<",
+      "rhs": "20338438510357130111707224452098801345806296180203160242744718196168199323395063/813537657563977938548767248704524086876748950000000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "813537779594609000691547919327434950069502948778954818990649178418999032595200000000000/20338438510357130111707224452098801345806296180203160242744718196168199323395063",
+      "name": "EF complete side emitter inverse",
+      "relation": "<",
+      "rhs": "50000000"
+    },
+    {
+      "lhs": "10304101",
+      "name": "EF full emitter update norm square",
+      "relation": "<",
+      "rhs": "10310521"
+    },
+    {
+      "lhs": "543478477001036/259",
+      "name": "EF complete bottom column with endpoint forcing",
+      "relation": "<",
+      "rhs": "2200000000000"
+    },
+    {
+      "lhs": "6061165673/20",
+      "name": "EF complete side column with endpoint forcing",
+      "relation": "<",
+      "rhs": "310000000"
+    },
+    {
+      "lhs": "880000000000000000/30303",
+      "name": "EF complete localized bottom prefactor",
+      "relation": "<",
+      "rhs": "30000000000000"
+    },
+    {
+      "lhs": "60",
+      "name": "EF complete bottom exponent",
+      "relation": "=",
+      "rhs": "60"
+    },
+    {
+      "lhs": "8/3",
+      "name": "EF e lower series witness",
+      "relation": "<",
+      "rhs": "65/24"
+    },
+    {
+      "lhs": "100",
+      "name": "EF exponential fifth power witness",
+      "relation": "<",
+      "rhs": "32768/243"
+    },
+    {
+      "lhs": "1000000000000000000000000",
+      "name": "EF exponential sixty power witness",
+      "relation": "<",
+      "rhs": "1532495540865888858358347027150309183618739122183602176/42391158275216203514294433201"
+    },
+    {
+      "lhs": "11/378787500000",
+      "name": "EF complete localized bottom",
+      "relation": "<",
+      "rhs": "3/100000000000"
+    },
+    {
+      "lhs": "341/12500000000",
+      "name": "EF both localized cutoff side ceiling",
+      "relation": "=",
+      "rhs": "341/12500000000"
+    },
+    {
+      "lhs": "341/12500000000",
+      "name": "EF localized side rounded ceiling",
+      "relation": "<",
+      "rhs": "273/10000000000"
+    },
+    {
+      "lhs": "10344323/378787500000000",
+      "name": "EF complete localized bound",
+      "relation": "<",
+      "rhs": "2733/100000000000"
+    },
+    {
+      "lhs": "7400000000000000",
+      "name": "EF scalar phase retains 113",
+      "relation": "<",
+      "rhs": "7499999999999887"
+    },
+    {
+      "lhs": "19600000000000000",
+      "name": "EF scalar lattice side square margin",
+      "relation": "<",
+      "rhs": "22499999999999661"
+    },
+    {
+      "lhs": "1/40000000000000",
+      "name": "EF auxiliary scalar outgoing height",
+      "relation": "<",
+      "rhs": "34293484225/1236305722814660165025856"
+    },
+    {
+      "lhs": "3/125000000",
+      "name": "EF shifted scalar cutoff floor",
+      "relation": "<",
+      "rhs": "3254146584566941998115648801299468895210356136245046363669/130165960127223865049567675891343957538352881860084000000000000000"
+    },
+    {
+      "lhs": "185",
+      "name": "EF scalar target bottom exponent",
+      "relation": "<",
+      "rhs": "257201131687496124836282575/1236305722814660165025856"
+    },
+    {
+      "lhs": "185",
+      "name": "EF scalar incoming bottom exponent",
+      "relation": "<",
+      "rhs": "3750000000"
+    },
+    {
+      "lhs": "10000000000000000000000000000000000000000000000000000000",
+      "name": "EF exp185 coarse lower",
+      "relation": "<",
+      "rhs": "49039857307708443467467104868809893875799651909875269632"
+    },
+    {
+      "lhs": "40000000000000000000/333332666667",
+      "name": "EF scalar target bottom prefactor",
+      "relation": "<",
+      "rhs": "121000000"
+    },
+    {
+      "lhs": "49/100000000",
+      "name": "EF scalar incoming height square",
+      "relation": "<",
+      "rhs": "1/2000000"
+    },
+    {
+      "lhs": "11/8750",
+      "name": "EF scalar incoming bottom prefactor",
+      "relation": "<",
+      "rhs": "1/500"
+    },
+    {
+      "lhs": "11/1750000000",
+      "name": "EF both scalar cutoff sides",
+      "relation": "<",
+      "rhs": "63/10000000000"
+    },
+    {
+      "lhs": "523808476191000000000000000000000000001/83333166666750000000000000000000000000000000000",
+      "name": "EF target negative tail",
+      "relation": "<",
+      "rhs": "7/1000000000"
+    },
+    {
+      "lhs": "550000000000000000000000000000000000000000000000011/87500000000000000000000000000000000000000000000000000000000",
+      "name": "EF incoming tail",
+      "relation": "<",
+      "rhs": "7/1000000000"
+    },
+    {
+      "lhs": "274375319729537413868481000000000000001047616952382000000000000000000000000001/6944416666708333305555562500000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF positive target normalization",
+      "relation": "<",
+      "rhs": "49/1000000000000000000"
+    },
+    {
+      "lhs": "274375319729537413868481000000000000001047616952382000000000000000000000000001/3472208333354166652777781250000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF both target normalization adjustments",
+      "relation": "<",
+      "rhs": "49/500000000000000000"
+    },
+    {
+      "lhs": "2210246962839728519744423422986930981000000000000001048489964762957619044126985000000000001/6944416666708333305555562500000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF complete nominal infinite",
+      "relation": "<",
+      "rhs": "1/3125"
+    },
+    {
+      "lhs": "687665135586929352796635277332331334282980114959197992661508071037026721092520434542531156670440416948184825284593501972418314105401/2007292247251208241175507829954240348244111887017775756936828947687500000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF complete fixed nominal infinite",
+      "relation": "<",
+      "rhs": "347/1000000"
+    },
+    {
+      "lhs": "15000000000000000000",
+      "name": "EF one finite output length",
+      "relation": "=",
+      "rhs": "15000000000000000000"
+    },
+    {
+      "lhs": "12960000000000000009",
+      "name": "EF finite transfer exponent margin",
+      "relation": "<",
+      "rhs": "15000000000000000023"
+    },
+    {
+      "lhs": "19683/20971520",
+      "name": "EF finite transfer prefactor",
+      "relation": "<",
+      "rhs": "1/1000"
+    },
+    {
+      "lhs": "9154663629548061825299985922986930981000000000000001048489964762957619044126985000000000001/6944416666708333305555562500000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF complete nominal finite",
+      "relation": "<",
+      "rhs": "33/25000"
+    },
+    {
+      "lhs": "2694957382838137593972143107286571682527092001976973749598337018724526721092520434542531156670440416948184825284593501972418314105401/2007292247251208241175507829954240348244111887017775756936828947687500000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "EF complete fixed nominal finite",
+      "relation": "<",
+      "rhs": "1347/1000000"
+    },
+    {
+      "lhs": "100/3",
+      "name": "EF nominal sufficient resource gain",
+      "relation": "=",
+      "rhs": "100/3"
+    },
+    {
+      "lhs": "40000/3",
+      "name": "EF fixed spectrum sufficient resource gain",
+      "relation": "=",
+      "rhs": "40000/3"
     }
   ],
   "dense_dimension_max": 4,
+  "endpoint_forcing_analytical_review": "d148847bbc8903e66dd4a734a52ab269f1a1d4cfa90e6d6677675a47bc62286a",
+  "endpoint_forcing_fixed_nominal_finite_ceiling": ".001347",
+  "endpoint_forcing_fixed_nominal_infinite_ceiling": ".000347",
+  "endpoint_forcing_nominal_finite_ceiling": ".001320",
+  "endpoint_forcing_nominal_infinite_ceiling": ".000320",
+  "endpoint_forcing_onset": "300000000000000000",
+  "endpoint_forcing_output_sites": "15000000000000000000",
   "executed_geometry_vertices": 121,
   "fixed_spectrum_finite_ceiling": ".001347",
   "fixed_spectrum_infinite_ceiling": ".000347",
@@ -3502,6 +3908,11 @@ PASS arithmetic: FS full local perturbation square
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_baseline_check__REVIEW.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/APPENDIX.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/ARITHMETIC_BLOCK.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/CHECK_MAP.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_forcing/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation__PROPOSAL.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/fixed_spectrum/endpoint_background_perturbation_check__REVIEW.md",

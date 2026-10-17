@@ -1,0 +1,50 @@
+from pathlib import Path
+import ast, hashlib, json, os, resource, shutil, subprocess, sys, time
+ROOT=Path(__file__).resolve().parent
+W=ROOT.parents[1]/'correlation_worktree'
+REL='scripts/real_endpoint_autonomous_output_2026_10_17.py'
+SRC=(W/REL).read_text()
+if hashlib.sha256(SRC.encode()).hexdigest()!='d93be99a2a49abed5c3a8edc6740af7c50fa6d8ba6a7f9d156cb73319d4e78cb':raise RuntimeError('unapproved runner source')
+node=ast.parse(SRC)
+INPUTS=next(ast.literal_eval(n.value) for n in node.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+def identity(p):
+ b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def caps():
+ resource.setrlimit(resource.RLIMIT_CPU,(10,10));resource.setrlimit(resource.RLIMIT_FSIZE,(16*1024**2,16*1024**2))
+def run(name,cmd,cwd,paths,timeout=10):
+ d=ROOT/name;d.mkdir(exist_ok=True)
+ if (d/'PRELAUNCH.json').exists():raise RuntimeError('refuse repeated launch '+name)
+ pre={'command':cmd,'cwd':str(cwd),'utc':time.time(),'wall_limit_sec':timeout,'cpu_limit_sec':10,'file_limit_bytes':16*1024**2,'memory_cap':'not applied','python_version':sys.version,'sources':[identity(p) for p in paths]+[identity(Path(sys.executable).resolve())]}
+ with (d/'PRELAUNCH.json').open('w') as f:json.dump(pre,f,indent=2);f.flush();os.fsync(f.fileno())
+ t=time.monotonic()
+ with (d/'stdout.txt').open('w') as out,(d/'stderr.txt').open('w') as err:
+  p=subprocess.Popen(cmd,cwd=cwd,stdout=out,stderr=err,preexec_fn=caps)
+  try:code=p.wait(timeout=timeout)
+  except subprocess.TimeoutExpired:p.kill();p.wait();code='timeout'
+ result={'exit_code':code,'elapsed_sec':time.monotonic()-t,'outputs':[identity(d/'stdout.txt'),identity(d/'stderr.txt')]}
+ (d/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
+ return code,(d/'stdout.txt').read_text(),(d/'stderr.txt').read_text()
+
+(ROOT/'RESOURCE_PLAN.md').write_text("# Endpoint forcing verification\nExact Fraction corroboration, no spectral solve/dynamics/large matrices. CPU10s,file16MiB,canonical inner30s/outer45s; eight new mathematical mutations10s wall under -O. No memory cap. Preserve historical checks without counting them as new scientific evidence; new Y-sensitive interface and source/disk/contour/resource inequalities are tested. Analytical source and integration reviews are separate dependencies; no audit verdict.\n")
+wrapper=ROOT/'canonical_wrapper.py'
+wrapper.write_text("import sys,json\nfrom pathlib import Path\nsys.path.insert(0,"+repr(str(W/'scripts'))+")\nimport runner_cache\nr,p=runner_cache.execute_and_write_cache("+repr(REL)+",30)\nPath("+repr(str(ROOT/'CANONICAL_RESULT.json'))+").write_text(json.dumps(r,indent=2))\nprint(json.dumps({k:v for k,v in r.items() if k not in ('stdout','stderr')}))\nprint(p)\nraise SystemExit(0 if r['status']=='ok' and r['exit_code']==0 else 1)\n")
+code,out,err=run('canonical',[sys.executable,str(wrapper)],W,[W/REL,W/'scripts/runner_cache.py',wrapper,ROOT.parent/'endpoint_forcing_integration_check/REVIEW.md',Path(__file__).resolve()]+[W/p for p in INPUTS],45)
+if code!=0:raise RuntimeError('canonical failed: '+out+err)
+mutations=[('closed_powers', "F('.15')**44", "F('.15')**20", 'EF endpoint closed amplitude 44 powers'), ('projected_forcing', "ef_endpoint_kernel*F('.2')", 'ef_endpoint_kernel*F(69)', 'EF deleted-source forcing bound'), ('whole_core_forcing', "F('.18')*3211*ef_Y/ef_klo", "F('.18')*3211*ef_X/ef_klo", 'EF complete bottom column with endpoint forcing'), ('excess_strip', "ef_h=F('8e-15')", "ef_h=F('8e-14')", 'EF background disk oscillation'), ('endpoint_shift', 'ef_eps=fs_eps', "ef_eps=F('1e-8')", 'EF background multiplier'), ('short_time', "ef_T=F('3e17')", "ef_T=F('3e15')", 'EF complete bottom exponent'), ('side_budget', "ef_sides=F('1.5')*44", "ef_sides=F('1.5')*88", 'EF both localized cutoff side ceiling'), ('finite_length', 'ef_M=50*ef_T', 'ef_M=40*ef_T', 'EF finite transfer exponent margin')]
+results=[]
+for name,before,after,expected in mutations:
+ if SRC.count(before)!=1:raise RuntimeError('nonunique mutation '+name)
+ scratch=ROOT/('scratch_'+name);(scratch/'scripts').mkdir(parents=True,exist_ok=True)
+ shutil.copytree(W/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',scratch/'outputs/real_endpoint_autonomous_output_2026_10_17_inputs',dirs_exist_ok=True)
+ mutated=SRC.replace(before,after)
+ if name=='finite_length':
+  original="eq('EF one finite output length',ef_M,F('1.5e19'))"
+  if mutated.count(original)!=1:raise RuntimeError('finite length companion not unique')
+  mutated=mutated.replace(original,"eq('EF one finite output length',ef_M,F('1.2e19'))")
+ runner=scratch/REL;runner.write_text(mutated)
+ code,out,err=run('mutation_'+name,[sys.executable,'-O',str(runner)],scratch,[runner]+[scratch/p for p in INPUTS])
+ ok=code==1 and 'PASS integrity:' in out and 'TOTAL FAIL:' in out and expected in out.split('TOTAL FAIL:')[-1]
+ results.append({'name':name,'expected_failure':expected,'detected':ok,'exit_code':code})
+ if not ok:raise RuntimeError('mutation did not fail intended family '+name+' '+out[-500:]+err)
+(ROOT/'MUTATION_SUMMARY.json').write_text(json.dumps(results,indent=2)+'\n')
+print(json.dumps({'canonical':'ok','new_mathematical_mutations':len(results),'all_intended_failures':True}))

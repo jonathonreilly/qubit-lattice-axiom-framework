@@ -1,0 +1,50 @@
+[
+  {
+    "name": "closed_powers",
+    "expected_failure": "EF endpoint closed amplitude 44 powers",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "projected_forcing",
+    "expected_failure": "EF deleted-source forcing bound",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "whole_core_forcing",
+    "expected_failure": "EF complete bottom column with endpoint forcing",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "excess_strip",
+    "expected_failure": "EF background disk oscillation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "endpoint_shift",
+    "expected_failure": "EF background multiplier",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "short_time",
+    "expected_failure": "EF complete bottom exponent",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "side_budget",
+    "expected_failure": "EF both localized cutoff side ceiling",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "finite_length",
+    "expected_failure": "EF finite transfer exponent margin",
+    "detected": true,
+    "exit_code": 1
+  }
+]

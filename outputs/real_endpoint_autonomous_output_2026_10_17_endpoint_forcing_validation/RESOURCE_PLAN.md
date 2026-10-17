@@ -1,0 +1,2 @@
+# Endpoint forcing verification
+Exact Fraction corroboration, no spectral solve/dynamics/large matrices. CPU10s,file16MiB,canonical inner30s/outer45s; eight new mathematical mutations10s wall under -O. No memory cap. Preserve historical checks without counting them as new scientific evidence; new Y-sensitive interface and source/disk/contour/resource inequalities are tested. Analytical source and integration reviews are separate dependencies; no audit verdict.

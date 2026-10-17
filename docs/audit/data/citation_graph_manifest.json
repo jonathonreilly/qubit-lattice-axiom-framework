@@ -1,6 +1,6 @@
 {
- "edge_count": 16238,
- "node_count": 7244,
+ "edge_count": 16239,
+ "node_count": 7245,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14820,6 +14820,10 @@
   },
   "matter_self_focusing_note": {
    "deps_hash": "a85d4a63f992",
+   "out_degree": 1
+  },
+  "mediated_source_complete_output_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "4fdcdcf44672",
    "out_degree": 1
   },
   "memory_decay_diagnosis_2026-04-11": {

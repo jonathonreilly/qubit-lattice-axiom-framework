@@ -1,0 +1,32 @@
+{
+  "status": "Conditional analytical theorem with selective distinct checks; no retained audit",
+  "note_sha256": "9891a099044ae8ff6661f7fe3ba57ddbdc9b344001e00efc582c5e63a7c60123",
+  "manifest_sha256": "0adeb31d6af45533074eaf4124eb2b49b14dbe78e7dd2403c707658c76254714",
+  "reviewed_note_sha256": "0409906eeb6ae6e12c48472cff1f0924739eef30ff2f125b33d2f78a5326b7c8",
+  "integration_sha256": "e0b2ea4b9dfa1639e161b5b24320a2ee4c0dab48477cfb9f60c7cbd995a7574a",
+  "post_review_edits": [
+    "Disambiguated earlier e9d6 complete-composition check from this canonical integration review.",
+    "Clarified full arbitrary old-input scope across both old-energy windows."
+  ],
+  "new_files": 37,
+  "history_nonpremises": 3,
+  "inherited_mappings": 176,
+  "inherited_false_proof_flags": 9,
+  "historical_notes": 13,
+  "current_context_notes": 12,
+  "inherited_manifests": 10,
+  "note_links": 61,
+  "graph": {
+    "old_nodes_unchanged": true,
+    "new_nodes": {
+      "mediated_source_complete_output_bounded_theorem_note_2026-10-17": {
+        "deps_hash": "4fdcdcf44672",
+        "out_degree": 1
+      }
+    },
+    "node_count": 7245,
+    "edge_count": 16239,
+    "added_edges": 1
+  },
+  "limits": "Full ROOT note/review read; no new scientific numerical execution, finite operating point, full pipeline, retained audit or native realization. Graph was built before two link-preserving editorial changes; exact links checked unchanged."
+}

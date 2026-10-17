@@ -1,6 +1,6 @@
 {
- "edge_count": 16167,
- "node_count": 7212,
+ "edge_count": 16168,
+ "node_count": 7213,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17860,6 +17860,10 @@
   },
   "preparation_angle_energy_moments_bounded_theorem_note_2026-10-16": {
    "deps_hash": "b4fc7f0460f7",
+   "out_degree": 1
+  },
+  "preparation_calibration_bounded_theorem_note_2026-10-17": {
+   "deps_hash": "d50c4e618dba",
    "out_degree": 1
   },
   "prepared_driven_state_bounded_theorem_note_2026-10-13": {

@@ -1,0 +1,6 @@
+SCOPE: local exact algebra and rational ceilings for the supplied PR9667 setup.
+BOUNDARY: Duhamel, trace contractivity, full-domain monotonicity and runtime/output theorem are analytical premises, not computed proofs.
+BOUNDARY: no dynamics, quadrature, huge device, cooling, native supplier or general impossibility result is computed.
+PASS integrity: frozen package bytes; not mathematical acceptance.
+PASS arithmetic: whole-block scaling positive throughout error box
+TOTAL FAIL: full local Q Gram 3/7

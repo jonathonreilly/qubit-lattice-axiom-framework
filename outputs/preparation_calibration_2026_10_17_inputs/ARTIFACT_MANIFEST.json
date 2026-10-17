@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_bookkeeping_independent_check/REPORT.md",
+      "bytes": 16796,
+      "sha256": "20a59e0add0183e14237a59ae9b6b6b07f05e880fae629e73102c671e41e7c4c"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/reviews/calibration_runner_draft/ADAPTATION_REVIEW.md",
+      "bytes": 5747,
+      "sha256": "f3d3c3c64d4c9399e934cce1b2d71ea86589fcff035b8626e6194f90b76c2b28"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/reviews/preparation_calibration_publication_draft/INTEGRATION.md",
+      "bytes": 4051,
+      "sha256": "5698790be9af7526266a9da6aec6a937b2ef87cc621ad3240ff1e1a095e2916c"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/reviews/preparation_calibration_publication_draft/SOURCE_IDENTITY_AND_DEPENDENCIES.json",
+      "bytes": 5510,
+      "sha256": "339e47ec599b4d4979def5fabd24075cab5b48e6cfbddc56c9ff4dc94cd41777"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/00_bounded_followup_root_review_ACCEPTANCE.json",
+      "bytes": 3930,
+      "sha256": "c96e27884daf0df58fb2508fa3dcef2795c3551014608af1fdc8148a7b66334f"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/01_real_control_calibration_corrected_CANDIDATE_V2.md",
+      "bytes": 10482,
+      "sha256": "6ccdf001f139fa1e2f6ab0fc198984fd5293e489490c29735ac8f5563968b528"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/02_real_control_calibration_corrected_CORRECTIONS.json",
+      "bytes": 4847,
+      "sha256": "c119f7160b3bbd1d4005d04f2eebe0145608c9123c1ebc319f4f4668ecfd79a8"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/03_real_control_calibration_review_REPORT.md",
+      "bytes": 25468,
+      "sha256": "a495c6b5c7bb4fd2094bc122afdab811e85de9ef92a88ea9dc2ae918364982d4"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/04_real_control_calibration_candidate_PROPOSAL.md",
+      "bytes": 9298,
+      "sha256": "64d81ab828fe2ad28efd526350f8f0286bd07455db0bab9686f2053008c35adc"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/05_real_control_calibration_candidate_SOURCE_MAP.json",
+      "bytes": 6151,
+      "sha256": "7a9fc3b11f9f751b86ee56f1fed2d85ca25ec729e71ce5be4a8998da80be8a5b"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/06_real_coupling_halt_route_ROUTE.md",
+      "bytes": 32324,
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/07_real_coupling_preparation_candidate_CANDIDATE.md",
+      "bytes": 28103,
+      "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/08_real_control_root_review_ACCEPTANCE.json",
+      "bytes": 3752,
+      "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/09_real_control_root_review_QUALIFICATION.md",
+      "bytes": 6618,
+      "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/10_docs_REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/11_real_control_autonomous_output_2026_10_17_inputs_TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 270498,
+      "sha256": "5ccd2f94737632ecef9bcdb285a2b5d20e52d2753d807a3ba6948eaebbc05b58"
+    },
+    {
+      "path": "outputs/preparation_calibration_2026_10_17_inputs/sources/12_preparation_calibration_publication_draft_THEOREM_NOTE.md",
+      "bytes": 23314,
+      "sha256": "2ab90129937c61c3255db5c93dc9af838a6249d11a16628c674b919ab54d85f2"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+from pathlib import Path
+import runpy,sys,shutil,json
+D=Path(__file__).resolve().parent
+# Reuse only launcher definitions, never its execution block.
+code=(D/'run_validation.py').read_text().split("(V:=ROOT/")[0]
+ns={'__file__':str(D/'run_validation.py')};exec(compile(code,'launcher_definitions','exec'),ns)
+W,REL,INPUTS,run= (ns[k] for k in ['W','REL','INPUTS','run'])
+probe=D/'inert_import.py'
+probe.write_text("import importlib.util,sys\ns=importlib.util.spec_from_file_location('calibration_source',sys.argv[1])\nm=importlib.util.module_from_spec(s)\ns.loader.exec_module(m)\n")
+code,out,err=run('inert_import',[sys.executable,str(probe),str(W/REL)],W,[probe,W/REL])
+assert code==0 and not out and not err
+results=[]
+for name in ['tamper','symlink_file','symlink_ancestor','nonregular']:
+ scratch=D/('integrity_scratch_'+name);(scratch/'scripts').mkdir(parents=True,exist_ok=True)
+ shutil.copyfile(W/REL,scratch/REL)
+ shutil.copytree(W/'outputs/preparation_calibration_2026_10_17_inputs',scratch/'outputs/preparation_calibration_2026_10_17_inputs',dirs_exist_ok=True)
+ target=scratch/INPUTS[1]
+ if name=='tamper':target.write_bytes(target.read_bytes()+b'changed')
+ elif name=='symlink_file':
+  data=target.read_bytes();target.unlink();external=D/'same_bytes_file';external.write_bytes(data);target.symlink_to(external)
+ elif name=='symlink_ancestor':
+  parent=target.parent;external=D/'same_bytes_directory';shutil.copytree(parent,external,dirs_exist_ok=True);shutil.rmtree(parent);parent.symlink_to(external,target_is_directory=True)
+ else:target.unlink();target.mkdir()
+ code,out,err=run('integrity_'+name,[sys.executable,'-O',str(scratch/REL)],scratch,[scratch/REL])
+ assert code==1 and 'TOTAL FAIL:' in out and 'PASS arithmetic:' not in out and 'PASS integrity:' not in out
+ results.append({'name':name,'exit_code':code,'failure':out.split('TOTAL FAIL:')[-1].strip(),'mathematical_coverage':False})
+(D/'INTEGRITY_IMPORT_RESULT.json').write_text(json.dumps({'inert_import':True,'integrity_cases':results},indent=2)+'\n')
+print('inert import and four integrity rejection cases passed')

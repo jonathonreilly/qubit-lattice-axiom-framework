@@ -1,0 +1,47 @@
+SCOPE: local exact algebra and rational ceilings for the supplied PR9667 setup.
+BOUNDARY: Duhamel, trace contractivity, full-domain monotonicity and runtime/output theorem are analytical premises, not computed proofs.
+BOUNDARY: no dynamics, quadrature, huge device, cooling, native supplier or general impossibility result is computed.
+PASS integrity: frozen package bytes; not mathematical acceptance.
+PASS arithmetic: whole-block scaling positive throughout error box
+PASS arithmetic: full local Q Gram 3/7
+PASS arithmetic: full complement Gram 3/7
+PASS arithmetic: Q identity coefficient 3/7
+PASS arithmetic: complement identity coefficient 3/7
+PASS arithmetic: whole complement scaling (Fraction(3, 7), Fraction(-1, 100000))
+PASS arithmetic: scaled identity included (Fraction(3, 7), Fraction(-1, 100000))
+PASS arithmetic: whole complement scaling (Fraction(3, 7), Fraction(1, 100000))
+PASS arithmetic: scaled identity included (Fraction(3, 7), Fraction(1, 100000))
+PASS arithmetic: full local Q Gram -5/11
+PASS arithmetic: full complement Gram -5/11
+PASS arithmetic: Q identity coefficient -5/11
+PASS arithmetic: complement identity coefficient -5/11
+PASS arithmetic: whole complement scaling (Fraction(-5, 11), Fraction(-1, 100000))
+PASS arithmetic: scaled identity included (Fraction(-5, 11), Fraction(-1, 100000))
+PASS arithmetic: whole complement scaling (Fraction(-5, 11), Fraction(1, 100000))
+PASS arithmetic: scaled identity included (Fraction(-5, 11), Fraction(1, 100000))
+PASS arithmetic: occupation identity coefficient
+PASS arithmetic: rank-one discriminant polynomial
+PASS arithmetic: complete g monotonicity polynomial factorization
+PASS arithmetic: projection matrix trace
+PASS arithmetic: projection matrix discriminant
+PASS arithmetic: monotonicity endpoint one
+PASS arithmetic: isolated projection counterexample squared
+PASS arithmetic: counterexample d two thirds radicand
+PASS arithmetic: isolation area
+PASS arithmetic: pulse unit area
+PASS arithmetic: pulse endpoint value 0
+PASS arithmetic: pulse endpoint slope 0
+PASS arithmetic: ramp endpoint slope 0
+PASS arithmetic: pulse endpoint value 1
+PASS arithmetic: pulse endpoint slope 1
+PASS arithmetic: ramp endpoint slope 1
+PASS arithmetic: pulse midpoint value
+PASS arithmetic: pulse derivative factored
+PASS arithmetic: double angle c positive
+PASS arithmetic: double angle s positive
+PASS arithmetic: pin positive at largest coupling
+PASS arithmetic: isolation norm sum from local channels
+PASS arithmetic: isolation identity from channel traces
+PASS arithmetic: isolation coupling slope positive
+PASS arithmetic: isolation ceiling throughout coupling interval
+TOTAL FAIL: integrated pulse norm coefficient

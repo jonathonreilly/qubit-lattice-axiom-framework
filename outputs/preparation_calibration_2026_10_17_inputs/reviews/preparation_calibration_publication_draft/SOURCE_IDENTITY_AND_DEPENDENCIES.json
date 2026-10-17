@@ -1,0 +1,102 @@
+{
+  "scope": "Publication drafting inventory; hashes prove identity, not mathematics or Git tracking.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/bounded_followup_root_review/ACCEPTANCE.json",
+      "bytes": 3930,
+      "sha256": "c96e27884daf0df58fb2508fa3dcef2795c3551014608af1fdc8148a7b66334f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_corrected/CANDIDATE_V2.md",
+      "bytes": 10482,
+      "sha256": "6ccdf001f139fa1e2f6ab0fc198984fd5293e489490c29735ac8f5563968b528"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_corrected/CORRECTIONS.json",
+      "bytes": 4847,
+      "sha256": "c119f7160b3bbd1d4005d04f2eebe0145608c9123c1ebc319f4f4668ecfd79a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_review/REPORT.md",
+      "bytes": 25468,
+      "sha256": "a495c6b5c7bb4fd2094bc122afdab811e85de9ef92a88ea9dc2ae918364982d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/PROPOSAL.md",
+      "bytes": 9298,
+      "sha256": "64d81ab828fe2ad28efd526350f8f0286bd07455db0bab9686f2053008c35adc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_calibration_candidate/SOURCE_MAP.json",
+      "bytes": 6151,
+      "sha256": "7a9fc3b11f9f751b86ee56f1fed2d85ca25ec729e71ce5be4a8998da80be8a5b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_halt_route/ROUTE.md",
+      "bytes": 32324,
+      "sha256": "c1cf729c2639d682a66df72b880c529dbabfc1768935ae62d170538973ce2018"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_coupling_preparation_candidate/CANDIDATE.md",
+      "bytes": 28103,
+      "sha256": "57e1cebcee12bf6499564051f91f981fe11814d73d45b9e1168c045e65ab9b8c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/ACCEPTANCE.json",
+      "bytes": 3752,
+      "sha256": "98315ba16275ceb44dd3fcf32d655d1e92d42da7c7678600327be89d9d1ba852"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/real_control_root_review/QUALIFICATION.md",
+      "bytes": 6618,
+      "sha256": "4ac00b22cc37f4e2d4179ca0963f7228a16e5512663c86ebe04e34d23f0c70b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 74148,
+      "sha256": "0266602321da0c7a9a723b4f1bed38ef49b87a25f2213141217da2df124499ca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/real_control_autonomous_output_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 270498,
+      "sha256": "5ccd2f94737632ecef9bcdb285a2b5d20e52d2753d807a3ba6948eaebbc05b58"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/preparation_calibration_publication_draft/THEOREM_NOTE.md",
+      "bytes": 23314,
+      "sha256": "2ab90129937c61c3255db5c93dc9af838a6249d11a16628c674b919ab54d85f2"
+    }
+  ],
+  "parent_embedded_comparisons": [
+    {
+      "original": "real_coupling_halt_route/ROUTE.md",
+      "canonical_container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "reversed_link_edits": [],
+      "body_equal_after_declared_link_reversal_and_trailing_separator_normalization": true
+    },
+    {
+      "original": "real_coupling_preparation_candidate/CANDIDATE.md",
+      "canonical_container": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "reversed_link_edits": [
+        {
+          "original_destination": "SOURCE_MAP.json",
+          "canonical_destination": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/SOURCE_MAP.json"
+        },
+        {
+          "original_destination": "EXECUTION.md",
+          "canonical_destination": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/EXECUTION.md.txt"
+        },
+        {
+          "original_destination": "RESOURCE_PLAN.json",
+          "canonical_destination": "../outputs/real_control_autonomous_output_2026_10_17_inputs/frozen_sources/real_coupling_preparation_candidate/RESOURCE_PLAN.json"
+        }
+      ],
+      "body_equal_after_declared_link_reversal_and_trailing_separator_normalization": true
+    }
+  ],
+  "corrected_to_original_reversal_matches": true,
+  "direct_load_bearing_link": "REAL_CONTROL_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+  "excluded_apparatus": "PR9668 real autonomous endpoint apparatus",
+  "scientific_execution": false,
+  "git_operations": false
+}

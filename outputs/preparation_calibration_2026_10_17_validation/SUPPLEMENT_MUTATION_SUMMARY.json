@@ -1,0 +1,32 @@
+[
+  {
+    "name": "complement",
+    "expected_failure": "full complement Gram",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "scaled_identity",
+    "expected_failure": "scaled identity included",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "zero_error",
+    "expected_failure": "zero calibration non-strict endpoint",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "counterexample",
+    "expected_failure": "isolated projection counterexample squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "trace_factor",
+    "expected_failure": "pure-seed trace ceiling arithmetic",
+    "detected": true,
+    "exit_code": 1
+  }
+]

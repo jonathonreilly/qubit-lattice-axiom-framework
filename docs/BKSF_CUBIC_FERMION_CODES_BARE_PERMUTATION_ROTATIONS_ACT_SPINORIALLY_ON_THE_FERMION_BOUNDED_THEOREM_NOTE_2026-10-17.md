@@ -149,6 +149,15 @@ for P_R.
       sum t_e A_e built from one ordering's edge operators; P_R W is.
     - With number-conserving hopping both are symmetries, and they differ
       by e^{i pi N / 2}.
+    - Exactly: in BKSF, B_v is the encoded fermion parity at v, so the
+      occupation is n_v = (1 - B_v)/2. Then
+      W = prod_v exp(-i pi B_v / 4) = e^{-i pi L^3 / 4} e^{i pi N / 2}.
+      The dressing that removes the spin-1/2 class is a quarter-turn of the
+      fermion-number U(1).
+    - So with charge conservation, "spin-1/2 under rotations" and "charge
+      rotation by pi/2" are interchangeable. This is the lattice form of a
+      spin-charge relation. A prediction needs the framework to fix both
+      the rotation action and the charge.
     - So the spinorial answer is tied to the bare-permutation reading of
       the Lattice axiom, not forced by the code.
   - The hop system of a fixed ordering is less symmetric than the code.

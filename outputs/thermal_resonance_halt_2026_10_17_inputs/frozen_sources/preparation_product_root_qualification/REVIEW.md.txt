@@ -1,0 +1,134 @@
+# Root review of the exact-product thermal preparation route
+
+Status: selective source qualification of a conditional theorem, subject to the
+byte verification recorded alongside this review. This is not retained audit,
+native realization, or qualification of the distinct root preparation route.
+
+The reviewed candidate is `emitter_preparation_independent/CANDIDATE.md`,
+SHA256 b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227.
+The root read all 650 lines, the complete checker and launcher, source-coverage
+and resource-plan documents, and the entire structured scientific output.
+The inherited runtime theorem is the unchanged PR9665 source at
+0e3993770a7a2dd872018f9dd3c76c2d9a624db9, not a new spectral check.
+
+## Analytical reconstruction
+
+The cancellations hold on full local qubit spaces. On a pair,
+`n_x+n_y +/- (a_x^* a_y+a_y^* a_x)` has eigenvalues 0,0,2,2.
+The doubly occupied state has energy two. The phase-bearing emitter pair
+has the same eigenvalues after a local diagonal unitary. Conditional flips
+`g n_source (I +/- X_old)` have eigenvalues 0,0,0,2g, while the density
+complement `u(I-n_A n_B)` has eigenvalues u,u,u,0. Positivity is a full-space
+statement and does not follow from the one-head scattering restriction.
+
+Adding the opposite exchanges to the installed blocks yields twice each
+number term. The original clock has coefficient 2J at every site; its new
+edge controls add J at each endpoint and 2J internally. Thus the combined
+coefficients are 3J at endpoints and 4J internally, before contact changes.
+The contact pairs contribute 2 lambda_i n_clock. The original vacancy at
+clock one subtracts nu from that site's coefficient and contributes nu I.
+For the two emitter edges, cancellation leaves 4 kappa n_e and 2 kappa
+at each attachment. The installed emitter onsite term gives the resulting
+emitter coefficient E0+2 kappa; the attachment vacancies reduce their
+coefficients to kappa and supply 2 kappa I. The source density complement
+supplies u I. These are exactly equations (10)--(11).
+
+The onsite pins in (12) then produce 13 times the defect count Q. The
+largest pre-pin coefficient is d_A=12.184492050425463<13; all remaining
+listed coefficients are smaller on the entire kappa interval. The emitter
+vacancy pin supplies the additional scalar 13+E0+2 kappa and leaves its
+coefficient -13, equivalently 13(1-n_e). Consequently the full operator is
+K+(nu+E0+u+4 kappa)I+13Q. K has not been canceled or modified. The added
+old terms cancel the unwanted old/source flips but leave source-only
+numbers; this is distinct from root's alternative scalar complements.
+
+The resulting auxiliary Gibbs law is an exact tensor product on all M+3
+qubits. Its vacuum defect probability is epsilon=1-(1+exp(-13 beta))^-N,
+bounded by N exp(-13 beta). This includes all source, emitter and clock
+number sectors. At fixed beta and gap it is not uniform as M tends to
+infinity. The Gibbs state is supplied; no cooling or relaxation process
+has been derived.
+
+For any extension with this auxiliary marginal, purification and projection
+onto the unique seed give a rank-two difference with trace norm
+sqrt(epsilon(4-3 epsilon)). Replacing the unnormalized good marginal by
+the original unconditioned old/reference marginal adds epsilon, giving
+g(epsilon). A Schmidt purification of the full diagonal marginal attains
+the expression: its orthogonal seed/reference diagonals contribute epsilon.
+Thus 2 epsilon applies only to a product joint input. This is credited
+prior machinery, not a novel generic thermal theorem.
+
+On the exact seed the installed H_M has diagonal K+nu+2 kappa+E0 and
+the two orthogonal emitter exits have Gram operator 2 kappa^2 I. The
+additional control has scalar u+2 kappa and opposite exits. Their common
+cubic release therefore has residual (1-s) kappa V, whose integral norm
+is kappa tau/sqrt(2). Duhamel uses the full propagator and a supported
+comparison isometry. It does not require global small control norm,
+commutation with K, adiabatic following, or preservation of the actual
+state inside the seed range. The whole-device growth of the control norm
+is irrelevant to this particular supported estimate, not to hardware cost.
+
+The thermal comparison must precede this supported bound. Propagating the
+full trace error by the exact unitary avoids applying a one-head theorem
+to thermal many-head components. The final composition has error
+g(epsilon)+sqrt(2) kappa tau+2F in unhalved trace norm. Every modeled
+output is kept, with the finite apparatus embedded by extra clock vacuum.
+The output packet is indexed by runtime t; literal old aging is
+t_hold+tau+t. Reordering W with K is valid since X1 X2 commutes with
+Z1 Z2. No corresponding commutator for the full runtime is assumed.
+The runtime scalar is nu+2 kappa; E0 is included only in hold/release
+seed phases and in the actual runtime spectral profile. The full Pauli
+identity coefficient and the seed-supported scalar have distinct meanings.
+
+The G=13, beta=10 example pays the worst N<10^32 of the inherited finite
+family, not merely the upper-coupling device. Since e>8/3, its bad weight
+is below 10^-22 and g<3*10^-11. The displayed rational complete bound
+uses the inherited finite F=3735315138388379/781250000000000000,
+the valid sqrt(2) kappa<2*10^-8, and the thermal allowance. It is below
+0.009562427, with the same enormous T=10^6/kappa^2 and finite horizon.
+
+## Resource and provenance limits
+
+The runtime count besides K is M+16: four source blocks, two old/source
+blocks, M+1 clock blocks, two contacts, two onsite boundary terms, two
+emitter pairs, one emitter onsite term, and two attachment vacancies.
+The new control counts are M+7 two-body blocks on M+6 distinct edges
+and M+3 onsite pins, totaling 2M+10. The two source-source controls count
+separately. Each listed incident norm is a sum over physical blocks;
+algebraic cancellation does not refund it. Source A peaks at
+39.288796602545442, and both old-site added loads exceed two during
+preparation. The unchanged old edge contributes its norm three separately.
+The maximum new incident sum is below 19, so the cubic slew is below
+28.5/tau. The claimed unit release assumes the supplied allowance 30.
+
+The work identity follows from the finite-space von Neumann equation.
+Its integrand s' Tr(rho R) is nonpositive because each added block is
+positive and the envelope decreases. H_M>=I gives the lower endpoint
+bound. This is signed work on the modeled quantum system; temperature
+supply, controller cost, reset, extractability and actual apparatus energy
+remain distinct obligations.
+
+The author performed one bounded symbolic/local-matrix execution. Root
+has read its complete output and code but has not rerun that scientific
+program. The exact sparse-Pauli fixtures at M=16,20 corroborate the written
+termwise all-M identity; they do not prove it by sampling. Positivity
+fixtures at kappa_max are backed by the explicit all-interval spectra and
+coefficient inequalities. The local dense dimension is four, and no huge
+state, evolution or Gibbs matrix was allocated. The prelaunch closure pins
+twenty files including interpreter and selected SymPy metadata, not the
+entire transitive runtime. Requested threads were not measured, and RSS
+was measured without an OS memory cap.
+
+Root had independently frozen a different interacting-auxiliary construction
+and a staged-release extension before seeing this candidate. The two routes
+share prior sources and the same selected model. Root's present check is
+candidate-exposed and includes reading the author checker after the complete
+argument. It is not a blind or model-diverse reconstruction of every inherited
+source. No additional agent or PASS count is used as evidence of correctness.
+
+No mathematical correction was needed in this exact-product route. It may
+be used as conditional support with its supplied Gibbs/control assumptions,
+the explicitly increased preparation loads, actual output and finite-horizon
+budgets. The root alternative and any resonance-based composition require
+their own decisions. No editable prompt, axiom, audit verdict, Git publication
+or science merge is part of this qualification.

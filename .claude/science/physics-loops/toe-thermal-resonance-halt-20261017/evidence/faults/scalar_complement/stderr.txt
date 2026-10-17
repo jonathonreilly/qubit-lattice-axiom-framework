@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/driver.py", line 7, in <module>
+    result=ns['run_interacting_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/mutated.py", line 700, in run_interacting_preparation_author
+    return main()
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/mutated.py", line 696, in main
+    fixtures = [fixture(F(1, 10 ** p)) for p in (12, 10, 8)]
+                ~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/mutated.py", line 637, in fixture
+    assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

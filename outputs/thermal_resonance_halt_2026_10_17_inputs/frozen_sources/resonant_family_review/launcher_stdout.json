@@ -1,0 +1,185 @@
+{
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/PRELAUNCH.json",
+    "sha256": "07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408",
+    "bytes": 15606,
+    "device": 16777231,
+    "inode": 518531862,
+    "mtime_ns": 1792210107705108419
+  },
+  "prelaunch_fsync_completed_utc": "2026-10-17T04:08:27.705145+00:00",
+  "directory_fsync_completed_utc": "2026-10-17T04:08:27.705168+00:00",
+  "post_fsync_pre_popen_utc": "2026-10-17T04:08:27.705236+00:00",
+  "completed_utc": "2026-10-17T04:08:28.370806+00:00",
+  "returncode": 0,
+  "timeout": false,
+  "wall_seconds": 0.665611166972667,
+  "child_user_cpu_seconds": 0.347229,
+  "child_system_cpu_seconds": 0.057770999999999996,
+  "macos_peak_child_rss_bytes": 63651840,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/stdout.json",
+    "sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01",
+    "bytes": 12515,
+    "device": 16777231,
+    "inode": 518531865,
+    "mtime_ns": 1792210108371248714
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "device": 16777231,
+    "inode": 518531866,
+    "mtime_ns": 1792210108371374923
+  },
+  "resource_caps_actual": {
+    "cpu_soft": 30,
+    "cpu_hard": 30,
+    "external_wall": 45,
+    "memory": "measured only"
+  },
+  "postlaunch_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/capture_initial_sources.py",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/RESOURCE_PLAN.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/INITIAL_SOURCE_BINDINGS.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/INDEPENDENT_DERIVATION.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/check_independent.py",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/launch_independent.py",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/SCIENCE_WORKFLOW.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/author_CANDIDATE.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/author_FREEZE.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/author_SOURCE_MANIFEST.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/family.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/family_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/family_qualification.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/fixed.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/fixed_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/fixed_qualification.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/fixed_review.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/generic_v2.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/installed.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/installed_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/installed_qualification.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/interval.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/interval.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/moment.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/moment_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/moment_qualification.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/route.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/weighted.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/weighted_acceptance.json",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/inputs/weighted_qualification.md",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review/run01/executed_source.py",
+      "unchanged": true
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "unchanged": true
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "unchanged": true
+    }
+  ],
+  "source_equals_executed": true
+}

@@ -1,0 +1,67 @@
+"""Install frozen source bytes and narrow root status links; no science runs."""
+from pathlib import Path
+from datetime import datetime, timezone
+import ast, gzip, hashlib, json, re, subprocess
+D=Path(__file__).resolve().parent
+N=D.parent
+W=N.parent/'correlation_worktree'
+P=N/'thermal_resonance_publication_draft'
+Q=W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017'
+F=W/'outputs/thermal_resonance_halt_2026_10_17_inputs'
+note=W/'docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+primary=W/'scripts/thermal_resonance_halt_2026_10_17.py'
+def digest(b): return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def read(p): return json.loads(p.read_text())
+def write(p,d): p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,indent=2)+'\n')
+assert subprocess.check_output(['git','-C',str(W),'rev-parse','HEAD'],text=True).strip()=='0e3993770a7a2dd872018f9dd3c76c2d9a624db9'
+assert not subprocess.check_output(['git','-C',str(W),'status','--porcelain'],text=True)
+assert digest((P/'FREEZE.json').read_bytes())['sha256']=='001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c'
+freeze=read(P/'FREEZE.json')
+assert digest((P/'PACKET_MANIFEST.json').read_bytes())=={k:freeze['manifest'][k] for k in ('bytes','sha256')}
+members=read(P/'PACKET_MANIFEST.json')['files'];assert len(members)==1175
+for r in members:
+ p=P/r['path'];assert not p.is_symlink();assert digest(p.read_bytes())=={k:r[k] for k in ('bytes','sha256')},r['path']
+ready=read(P/'READY_FILES.json');assert len(ready['files'])==108
+assert digest((P/'READY_FILES.json').read_bytes())=={k:freeze['readiness'][k] for k in ('bytes','sha256')}
+for r in ready['files']:
+ src=P/'canonical'/r['repository_path'];dest=W/r['repository_path']
+ assert digest(src.read_bytes())=={k:r[k] for k in ('bytes','sha256')};assert not dest.exists()
+ dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(src.read_bytes())
+Q.mkdir(parents=True,exist_ok=False)
+(D/'BASE_GRAPH_MANIFEST.json').write_bytes((W/'docs/audit/data/citation_graph_manifest.json').read_bytes())
+# Deduplicate only exact immutable bytes already within the declared closure.
+known={}
+for r in read(F/'ARTIFACT_MANIFEST.json')['files']:
+ p=W/r['path']
+ if p in {note,F/'PROOF_BODY_MAP.json',F/'ARTIFACT_MANIFEST.json'}:continue
+ b=p.read_bytes();known.setdefault(hashlib.sha256(b).hexdigest(),(p,'none',b))
+b=primary.read_bytes();known.setdefault(hashlib.sha256(b).hexdigest(),(primary,'none',b))
+rows=[]
+paths=[P/r['path'] for r in members]+[P/'PACKET_MANIFEST.json',P/'FREEZE.json']
+for src in paths:
+ rel=str(src.relative_to(P));b=src.read_bytes();raw=digest(b)
+ if raw['sha256'] in known:p,compression,stored=known[raw['sha256']]
+ else:
+  compression='gzip' if re.search(rb'[ \t]+\r?$',b,re.M) or b.endswith(b'\n\n') else 'none'
+  stored=gzip.compress(b,mtime=0) if compression=='gzip' else b
+  p=Q/'evidence/packaging'/(rel+('.gz' if compression=='gzip' else '.txt'))
+  p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(stored);known[raw['sha256']]=(p,compression,stored)
+ rows.append({'original_path':rel,'path':str(p.relative_to(W)),**digest(stored),'compression':compression,'raw_bytes':len(b),'raw_sha256':raw['sha256']})
+write(Q/'evidence/PACKAGING_MAP.json',{'source_directory':str(P),'scope':'Lossless frozen preparation/history/static-failure archive; no scientific execution','count':len(rows),'files':rows})
+original=note.read_bytes();old=(P/'WRAPPER.md').read_text();assert original.startswith(old.encode())
+new=old.replace('## Portable sources and pending decisions','## Portable sources and separate decisions').replace('records the draft boundary','preserves the mechanical preparation boundary').replace('distinguishes historical evidence from the unexecuted canonical plan','distinguishes historical evidence from the planned canonical calculation')
+new+='\nThe [root transport decision](../.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/ROOT_PORTABILITY_ACCEPTANCE.json) and [actual execution status](../.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md) record later integration and reproduction. They are outside the calculation input closure; the frozen preparation status does not self-certify a later run or publication.\n'
+delta=len(new.encode())-len(old.encode());note.write_bytes(new.encode()+original[len(old.encode()):])
+bodymap=read(F/'PROOF_BODY_MAP.json')
+for r in bodymap['bodies']:
+ r['note_byte_start_inclusive']+=delta;r['note_byte_end_exclusive']+=delta
+ b=note.read_bytes()[r['note_byte_start_inclusive']:r['note_byte_end_exclusive']]
+ assert digest(b)=={'bytes':r['bytes'],'sha256':r['embedded_sha256']}
+write(F/'PROOF_BODY_MAP.json',bodymap)
+manifest=read(F/'ARTIFACT_MANIFEST.json')
+for r in manifest['files']:r.update(digest((W/r['path']).read_bytes()))
+write(F/'ARTIFACT_MANIFEST.json',manifest)
+(Q/'EXECUTION_STATUS.md').write_text('# Thermal preparation and resonance execution status\n\nThe conditional source arguments are qualified. Root transport acceptance, actual canonical execution, copied-source fault checks and focused publication validation remain pending. No retained audit or native realization is claimed.\n')
+write(Q/'ROOT_WRAPPER_CHANGE.json',{'utc':datetime.now(timezone.utc).isoformat(),'scope':'Status/history wording and two external decision links only; all five embedded bodies and primary unchanged relative to frozen overlay.','old_wrapper':digest(old.encode()),'new_wrapper':digest(new.encode()),'old_note':digest(original),'new_note':digest(note.read_bytes()),'primary':digest(primary.read_bytes()),'body_map':digest((F/'PROOF_BODY_MAP.json').read_bytes()),'body_offset_shift':delta,'editable_prompt_files_changed':[]})
+write(D/'INSTALLATION.json',{'installed_utc':datetime.now(timezone.utc).isoformat(),'base':ready['base_commit'],'overlay_files':len(ready['files']),'frozen_packaging_members_archived':len(paths),'note':digest(note.read_bytes()),'primary':digest(primary.read_bytes()),'manifest':digest((F/'ARTIFACT_MANIFEST.json').read_bytes()),'canonical_execution':False,'science_body_changes':[]})
+print((D/'INSTALLATION.json').read_text())

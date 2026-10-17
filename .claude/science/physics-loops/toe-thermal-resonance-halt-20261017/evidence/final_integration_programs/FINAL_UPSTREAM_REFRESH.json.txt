@@ -1,0 +1,30 @@
+{
+  "refs": {
+    "origin/main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_final_parent/stdout",
+    "bytes": 330,
+    "sha256": "beacd758f08b79f73749afca943b837f26d172343cab8ef6bc8dd1afd60051ec"
+  },
+  "open_prs": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_final_open_prs/stdout",
+    "bytes": 1484,
+    "sha256": "9bf022ce3d9c6bda3f9138a46f8923c92ae21dbb487e095809f234f3bfd47a0d"
+  },
+  "main_fetch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_final_main_fetch/EXECUTION.json",
+    "bytes": 1210,
+    "sha256": "3197efc18c1a699fe6ea91667cec3d850ea02e481a62ec76ae2806b08d37eabd"
+  },
+  "unrelated9662_delta": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_pr9662_delta/stdout",
+    "bytes": 6489,
+    "sha256": "9d899ee599438dc6ca94b039f9fd1830dd0badb137a4e65c8ce18ab298fc928f"
+  },
+  "delta_from": "f5c26bb94ffd37bd68372d407f5a781b227f8c6e",
+  "delta_to": "aebf049cb2614b43daacbd644c41f958fc0508b8",
+  "delta_paths": 50,
+  "scope": "Complete incremental path inventory read: C8 fermion rotation correction and C9 symmetric-hop work; no thermal/resonance/emitter collision, no workflow/cache instruction changes, no scientific validity review/import. Relevant9661/9663/9664/9665 heads unchanged; no duplicate current milestone PR."
+}

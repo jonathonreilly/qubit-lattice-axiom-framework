@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/driver.py", line 7, in <module>
+    result=ns['run_product_preparation_author'](inputs)
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/mutated.py", line 441, in run_product_preparation_author
+    assert not defect, defect
+           ^^^^^^^^^^
+AssertionError: {(): -1633821829216761/4000000000000000, ((2, 'Z'),): -544607276405587/4000000000000000, ((3, 'Z'),): -544607276405587/4000000000000000, ((2, 'Z'), (3, 'Z')): 544607276405587/4000000000000000}

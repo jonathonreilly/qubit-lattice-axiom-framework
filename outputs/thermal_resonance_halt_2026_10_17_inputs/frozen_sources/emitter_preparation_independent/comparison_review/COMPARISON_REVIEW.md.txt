@@ -1,0 +1,515 @@
+# Source-exposed review of the interacting thermal preparation and staged release
+
+**Finding:** I find no load-bearing mathematical failure in the root
+construction or its staged release under their stated exact-control,
+delivered-marginal and isolation hypotheses. The min-max Gibbs estimate,
+mean-energy bound, complete correlated-input replacement and supported
+release identities all follow. The asynchronous early stage preserves the
+whole seed range exactly; it is not a small-error approximation over a
+potentially enormous early duration.
+
+Two narrow wording corrections are appropriate. The nontrivial finite-slew
+early stage requires \(D>0\), rather than the allowed-looking \(D=0\) at
+addendum line 38. The root candidate's map with \(V_{\rm seed}^*V_{\rm seed}=2I\)
+is a scaled isometry, not an isometry, at candidate line 114; the subsequent
+\(\sqrt2\) factors are nevertheless correct. Neither correction changes the
+positive-duration examples or any substantive bound.
+
+The source-exposed comparison does not select an architecture. Root uses
+fewer two-body controls and lower peak loads in its stated example; the
+other frozen route produces an exact product Gibbs law at a larger gap.
+Neither resource prescription dominates every metric. Both require supplied
+Gibbs input and controls, exceed the old-site cap two during preparation,
+and inherit a fixed-accuracy, finite-window runtime theorem.
+
+## 1. Freeze, exposure and review scope
+
+My independent derivation was frozen first as
+[../CANDIDATE.md](../CANDIDATE.md), SHA256
+b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227,
+with [../FREEZE.json](../FREEZE.json), SHA256
+fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855,
+at 2026-10-17T04:13:55.330746+00:00. Both remain unchanged.
+
+[EXPOSURE_START.json](EXPOSURE_START.json) was written and fsynced at
+2026-10-17T04:15:06.322253+00:00 before any successful read of the root
+proofs. Actual first source capture began at
+2026-10-17T04:15:37.858808+00:00, recorded in
+[SOURCE_EXPOSURE.json](SOURCE_EXPOSURE.json). The complete roots are preserved
+byte for byte as:
+
+| Source | Lines | SHA256 |
+|---|---:|---|
+| [root_CANDIDATE.md](root_CANDIDATE.md) | 421 | 416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0 |
+| [root_STAGED_RELEASE_ADDENDUM.md](root_STAGED_RELEASE_ADDENDUM.md) | 158 | 1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885 |
+
+Both complete arguments were read. Root reported that both were frozen
+before receiving my route. That authorship chronology is attributed to root;
+the timestamps above are this reviewer's actual capture and exposure record.
+The roots' checker, outputs and execution receipts have **not** been read.
+This review is frozen before any such exposure and uses no scientific run.
+It therefore does not certify the roots' executable evidence or its bindings.
+
+The current reviewer skill and proof-search governance were read, with their
+exact files copied here. Their modeling/effort defaults do not override the
+explicit same-model, same-effort assignment. The previous preparation task's
+current workflow and exact runtime source reads remain valid at their
+unchanged source identities. No broader campaign process or publication
+operation was invoked.
+
+The mathematical runtime premise is the exact PR9665 family note at
+0e3993770a7a2dd872018f9dd3c76c2d9a624db9, SHA256
+f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87.
+I retain prior source exposure and authorship there; I did not independently
+redo its scattering proof in this review. Its complete finite isometry
+bound, actual profile, phase and full positive runtime blocks are the same
+premises as in my preceding packet.
+
+## 2. Full-space cancellation and the interacting auxiliary Hamiltonian
+
+Use root's notation \(G_i=g_i n_i(I+X_{\rm old,i})\),
+\(b_i=2g_i\), and
+\[
+Q_{ej}=\kappa(n_e+n_j)+t_j a_j^\dagger a_e+
+\overline{t_j}a_e^\dagger a_j,\qquad |t_j|=\kappa.
+\]
+On their complete two-qubit spaces, \(0\le G_i\le b_iI\) and
+\(0\le Q_{ej}\le2\kappa I\). Hence the four pair complements in root
+equation (3) are positive without an excitation-sector restriction.
+Their full pair spectra are respectively \(\{0,b_i,b_i,b_i\}\) and
+\(\{0,0,2\kappa,2\kappa\}\).
+
+The exact cancellations are
+\[
+G_i+(b_iI-G_i)=b_iI,\qquad
+Q_{ej}+(2\kappa I-Q_{ej})=2\kappa I,
+\]
+\[
+\nu(I-n_1)+\nu n_1=\nu I,\qquad
+\kappa(I-n_j)+\kappa n_j=\kappa I,
+\]
+\[
+(E_0-2\kappa)n_e+
+(E_0-2\kappa+\Delta)(I-n_e)
+=(E_0-2\kappa)I+\Delta(I-n_e).
+\]
+Combining the two emitter-pair reserves and two attachment reserves gives
+\(E_0+4\kappa\), not \(E_0+2\kappa\). Thus root's full-space identity is
+correct:
+\[
+H_{\rm prep}=K+c_{\rm prep}I+H_{\rm aux},\quad
+c_{\rm prep}=b_A+b_B+\nu+E_0+4\kappa,
+\]
+\[
+H_{\rm aux}=C+H_c+V_c+\Delta D,\qquad
+D=(I-n_e)+n_A+n_B+\sum_j n_{c_j}.
+\tag{R1}
+\]
+Every remaining term in \(C,H_c,V_c\) is positive and annihilates the
+blank clock/source configuration. Both endpoint diagonals in \(H_c\)
+remain. The emitter has no remaining hopping in \(H_{\rm aux}\), and
+\(\Delta D\) has the one-dimensional zero eigenspace spanned by \(\Omega\).
+Therefore \(H_{\rm aux}\Omega=0\), \(H_{\rm aux}\ge\Delta D\) and
+\(\ker H_{\rm aux}=\mathbb C\Omega\). These are statements on all thermal
+sectors. They do not require \([H_{\rm aux},D]=0\), which generally fails.
+The old \(K\) is untouched and decoupled for every auxiliary state.
+
+All complements use existing nearest-neighbor supports, with no three-body
+conditioning. Their physical availability remains an explicit supply
+hypothesis. Positivity of a matrix complement does not manufacture a
+microscopic channel or its opposite phase.
+
+## 3. Gibbs tail and mean energy: the noncommuting steps
+
+Let the \(2^N\) eigenvalues of \(H_{\rm aux}\) and \(D\), in increasing
+order and with multiplicity, be \(\lambda_j,d_j\). The finite-dimensional
+min-max formula gives \(\lambda_j\ge\Delta d_j\) from (R1): every Rayleigh
+quotient of the first operator is at least that of the second.
+The \(d_j\) list contains each \(k=0,\ldots,N\) with multiplicity
+\(\binom Nk\). It is legitimate to apply a scalar decreasing function to
+each matched pair of eigenvalues even when the two matrices do not commute.
+
+The unique ground state is exactly \(\Omega\), so its Gibbs weight is
+\(1/Z\). With \(q=e^{-\beta\Delta}\),
+\[
+1\le Z=\sum_j e^{-\beta\lambda_j}
+\le\sum_{k=0}^N\binom Nk q^k=(1+q)^N,
+\]
+\[
+d_{\rm thermal}=1-Z^{-1}
+\le1-(1+q)^{-N}\le Nq.
+\tag{R2}
+\]
+The final inequality is the tangent-line bound
+\((1+q)^{-N}\ge1-Nq\). No operator-exponential monotonicity, product Gibbs
+ansatz, free-fermion spectrum or one-head truncation enters (R2).
+The exponential is diagonalized separately in the two eigenvalue lists.
+
+For root equation (7), the additional condition \(\beta\Delta\ge1\)
+is essential and is stated correctly. The function \(x e^{-\beta x}\)
+is then nonincreasing for \(x\ge\Delta\). For each positive eigenvalue,
+\[
+\lambda_j e^{-\beta\lambda_j}
+\le\Delta d_j e^{-\beta\Delta d_j}.
+\]
+Summing and using \(Z\ge1\) proves
+\[
+\operatorname{Tr}(\Gamma_\beta H_{\rm aux})
+\le\Delta\sum_{k=1}^N k\binom Nk q^k
+=\Delta Nq(1+q)^{N-1}.
+\tag{R3}
+\]
+If \(Nq\le r<1\), this is at most \(\Delta r e^r\le\Delta r/(1-r)\).
+The step is valid even though \(H_{\rm aux}\) includes interacting
+conditional flips. If the hypothesis were dropped, it would fail: for one
+qubit, \(\Delta=1,\beta=1/100,H_{\rm aux}=100n\) obeys
+\(H_{\rm aux}\ge\Delta n\), but its mean \(100/(1+e)>25\) exceeds
+\(\Delta e^{-\beta\Delta}<1\). This is a check of the stated condition,
+not a counterexample to root's theorem.
+
+For marginal half-trace delivery error \(\eta_{\rm delivery}\), the good
+projector probability differs by at most that amount. Thus the actual bad
+weight is at most \(\min(1,Nq+\eta_{\rm delivery})\).
+The nominal mean-energy bound does not follow from that probability alone:
+root correctly retains the full-space
+\(2\|H_{\rm aux}\|\eta_{\rm delivery}\) energy correction or requires
+an actual mean. That norm can grow with the device.
+
+The proposed numerical tail inequality can be certified directly, without
+the root checker. The series for \(e\) gives \(e>8/3\), and
+\[
+(3/8)^{10}=\frac{59049}{1073741824}<\frac6{10^5}.
+\]
+Since \(N\le5\,10^{31}+3<6\,10^{31}\), at \(\beta\Delta=100\),
+\[
+Nq<6\,10^{31}(6/10^5)^{10}
+=\frac{6^{11}}{10^{19}}
+<\frac1{22500000000}.
+\tag{R4}
+\]
+The last comparison is the ordinary integer inequality
+\(225\,6^{11}=81629337600<10^{11}\).
+Consequently \(3\sqrt d<2\,10^{-5}\), as claimed. This is a hand-derived
+exact bound; no new numerical program or sampled spectrum was used.
+
+## 4. Arbitrary old/reference extensions and energy
+
+The root's sharp pure-factor lemma is applied to the right target:
+the exact unconditioned old/reference marginal at the declared delivery
+or release-start time. If \(P=|\Omega\rangle\langle\Omega|\) and
+\(d=1-\operatorname{Tr}(P\rho_{\rm aux})\), purification and the good/bad
+split give
+\[
+\|\rho-P\rho P\|_1\le\sqrt{d(4-3d)}.
+\]
+Writing \(P\rho P=P\otimes\tau_{OR}\), the difference
+\(\rho_{OR}-\tau_{OR}\) is positive of trace \(d\). Therefore
+\[
+\|\rho-P\otimes\rho_{OR}\|_1
+\le d+\sqrt{d(4-3d)}=g(d).
+\tag{R5}
+\]
+The rank-two matrix in root's proof has the displayed trace norm;
+orthogonality is between the good and bad full vectors and does not
+require the two retained-reference reduced states to be orthogonal.
+The monotonicity in a known upper bound for \(d\) is valid:
+\[
+g'(d)=1+\frac{2-3d}{\sqrt{4d-3d^2}}\ge0,
+\]
+with direct endpoint values. For \(d\ge2/3\) the needed squared
+inequality reduces to \(4(1-d)(3d-1)\ge0\).
+Also \(g(d)\le3\sqrt d\).
+
+An independent auxiliary/old-reference product input with the exact Gibbs
+density has complete error \(2d_{\rm thermal}\), although the auxiliary
+Gibbs density itself is interacting. Its ground block is an eigenblock and
+has no coherence with its orthogonal complement. A marginal-only delivery
+does not imply that joint product. A Schmidt purification of the Gibbs
+density shows why the square-root correlated price cannot be replaced by
+the linear product price.
+
+Since (R1) is an additive old/auxiliary Hamiltonian, its mean is
+\(\operatorname{Tr}(K\rho_O)+c_{\rm prep}+E_{\rm aux}\) even for correlated
+inputs; no statistical-independence assumption is needed for that mean.
+The root's work inequality follows from
+\(\dot H=\sum_r u'_r A_r\le0\), or \(\dot H=a'A\le0\),
+and the exact finite-space energy-balance identity.
+Using \(H_{\rm run}\ge I\) and \(K\le3I\) gives its conservative lower
+work bound \(-(2+c_{\rm prep}+E_{\rm aux})\).
+No covariance, fluctuation, cooling-cost or controller-return conclusion
+follows, and none is required in the source.
+
+If the target is instead an old/reference state before a bath interacted,
+the complete preceding bath/reference evolution must be included. An
+auxiliary-only bath coupling suffices to preserve free old marginal
+aging, but does not by itself fix the joint old/reference state when the
+bath is part of that reference. Root's use of the actual delivered
+unconditioned marginal avoids that unsupported backward extension.
+
+## 5. Common-envelope release: exact seed action and scalar
+
+Let \(\mathcal E\) append \(\Omega\) and write \(c_{\rm run}=E_0+\nu+2\kappa\),
+using the root's seed-energy notation. Each emitter complement acts as
+\[
+(2\kappa I-Q_{ej})\mathcal E=\kappa\mathcal E-\kappa V_j,
+\quad V_j^*V_j=I,\quad V_1^*V_2=0.
+\]
+Each old/source complement acts as \(b_i\mathcal E\); every added
+onsite field acts as zero on \(\mathcal E\). Thus
+\[
+A\mathcal E=(b_A+b_B+2\kappa)\mathcal E
+-\kappa(V_1+V_2).
+\tag{R6}
+\]
+Combining with the literal runtime action gives root equation (10),
+including its scalar. Under the cubic \(a(s)\), the comparison isometry
+\[
+\mathcal E\exp\!\left[-isK-i\int_0^s
+\{c_{\rm run}+a(v)(b_A+b_B+2\kappa)\}\,dv\right]
+\]
+has residual norm \(\sqrt2\kappa(1-a(s))\).
+Integrating the unitary inhomogeneous evolution yields
+\(\kappa\tau/\sqrt2\), with the stated phase
+\(c_{\rm run}\tau+(b_A+b_B+2\kappa)\tau/2\).
+This does not assume that the actual trajectory stays in the seed range.
+It also does not commute \(K\) through the physical Hamiltonian.
+
+The complete thermal trace comparison must precede use of that supported
+bound, as root states. The subsequent full unitary propagates the initial
+error once; the prepared isometry error then costs its usual factor two
+in unhalved trace norm.
+
+I independently summed the block prices. The root uses \(M+10\) additional
+blocks: four two-body complements and \(M+6\) onsite terms, on no new
+quantum sites. Their sum of norms and full identity coefficient are
+\[
+S_A=\Delta(M+3)+c_{\rm prep},\qquad
+\alpha_A=\frac{\Delta(M+3)+3(g_A+g_B)+\nu+E_0+4\kappa}{2}.
+\tag{R7}
+\]
+Both root equations (13)–(14) are correct. Neither equals the seed
+expectation in (R6). The maximum new incident load is
+\(\Delta+b_A\) for the specified family, since \(b_A>\nu,b_B\) and
+\(b_A>E_0+2\kappa\). The derivative sum under a common cubic is at most
+\(3(\Delta+b_A)/(2\tau)\).
+
+## 6. Staged asynchronous release
+
+This is the load-bearing new scheduling observation. All non-emitter
+complements and fields obey
+\[
+A_r\mathcal E=a_r\mathcal E,\qquad
+a_r=b_A,b_B\ \text{for the two old/source complements, and }0
+\text{ for all other rest blocks}.
+\tag{R8}
+\]
+In this section \(D\) is the early-stage duration, as in the addendum,
+distinct from the defect-count operator denoted by \(D\) in (R1).
+It follows from the actual local terms, not from positivity alone. Keep
+both emitter complements exactly at coefficient one. On the full seed
+range, their off-diagonal \(-\kappa(V_1+V_2)\) cancels the runtime
+\(\kappa(V_1+V_2)\) for every time and every old input. Hence
+\[
+H_{\rm early}(s)\mathcal E
+=\mathcal E[K+c_{\rm run}+2\kappa+b_Au_A(s)+b_Bu_B(s)].
+\tag{R9}
+\]
+Every source and clock term either annihilates the seed or contributes
+the explicitly shown scalar. Changing different cold fields at different
+times cannot create an excitation on that range. Self-adjointness and
+uniqueness of the finite-dimensional Schrödinger equation then give the
+exact reducing-range propagator
+\[
+U_{\rm early}(D)\mathcal E
+=\mathcal E e^{-iDK-i\Phi_{\rm early}},
+\quad
+\Phi_{\rm early}=(c_{\rm run}+2\kappa)D+
+b_A\int_0^D u_A+b_B\int_0^D u_B.
+\tag{R10}
+\]
+No slowly varying or adiabatic premise is hidden in this identity.
+Monotonicity is used for the work sign, not for seed invariance.
+
+The rest blocks can therefore be released sequentially. At most one
+changing block in a nonoverlapping cubic window of duration \(\ell\)
+contributes the derivative norm \(3\|A_r\|/(2\ell)\) at an incident site.
+Taking every such bound below the supplied allowance gives the root's
+sufficient construction. The total duration is the sum of those windows
+and gaps and may grow as \(M\); its actual value remains in (R10) and
+the old age. One cannot assert a length-independent total setup time.
+
+The notation \(D\ge0\) at addendum line 38 should be restricted to \(D>0\)
+for this nonempty rest list and finite derivative caps. A continuously
+varying nonzero block cannot go from coefficient one to zero on a
+zero-length interval. Conditional statements with \(D=0\) have no
+admissible schedule here; all exhibited schedules use positive durations.
+
+After every rest coefficient has reached zero, the late generator has
+supported action
+\[
+H_{\rm late}(s)\mathcal E
+=\mathcal E[K+c_{\rm run}+2\kappa a(s)]
+ +(1-a(s))\kappa(V_1+V_2).
+\tag{R11}
+\]
+The same independent inhomogeneous-evolution calculation gives
+\[
+\|U_{\rm late}U_{\rm early}\mathcal E-
+\mathcal E e^{-i(D+\tau_e)K-i\Phi_{\rm staged}}\|
+\le\kappa\tau_e/\sqrt2,
+\]
+\[
+\Phi_{\rm staged}=\Phi_{\rm early}+c_{\rm run}\tau_e+\kappa\tau_e.
+\tag{R12}
+\]
+There is no early-duration contribution to this nominal error. At the
+emitter the two late block norms sum to \(4\kappa\), so the cubic slew
+is at most \(6\kappa/\tau_e\), precisely as stated.
+If the late envelopes differ, orthogonality of the two output destinations
+gives the residual \(\kappa\sqrt{(1-a_1)^2+(1-a_2)^2}\), with scalar
+\(c_{\rm run}+\kappa(a_1+a_2)\). Both separate areas must be retained.
+
+The scalar accounting is also consistent under asynchronous cold fields.
+Let \(a_{\rm run}\) denote the full Pauli identity coefficient of the
+literal \(H_{\rm run}\):
+\[
+a_{\rm run}=2+
+\frac{\Delta_A+\Delta_B+g_A+g_B+\lambda_A+\lambda_B+\mu_0+\nu+E_0}{2}
+ +h_{AB}+u/4+JM+2\kappa.
+\]
+Writing \(\alpha_r\) for that coefficient of each rest block, the
+*whole-Hamiltonian* identity contribution in the early stage integrates to
+\[
+(a_{\rm run}+2\kappa)D+\sum_{r\in{\rm rest}}\alpha_r\int_0^D u_r.
+\tag{R13}
+\]
+The late identity contribution is \(a_{\rm run}\tau_e+\kappa\tau_e\).
+Cold-projector areas can disappear from the seed scalar (R10) because
+their nonidentity Pauli parts cancel their identity action on that seed.
+They are not deleted from (R13), work, block loads or controller precision.
+The old/source complement has \(\alpha_r=3g_i/2\), the emitter complement
+has identity coefficient \(\kappa\), and every positive onsite projector
+has half its coefficient. This reconstructs the complete scalar ledger.
+
+Exact cancellation, isolation and known completion time are indispensable.
+If a supported off-diagonal error is bounded by \(\eta(s)\), Duhamel
+generally adds \(\int_0^D\eta(s)\,ds\); a constant bound gives \(\eta D\).
+The elementary two-level evolution generated by \(\eta X\) has leakage
+\(|\sin(\eta D)|\), so small instantaneous coupling alone cannot give
+an all-duration small-error conclusion. This is a diagnostic model of
+the missing premise, not a replacement for the actual emitter dynamics.
+Root explicitly retains this limitation. The early nominal invariance
+does not license replacing arbitrary full-space calibration errors by a
+supported estimate or ignoring uncertain old age.
+
+## 7. Complete runtime composition and comparison of routes
+
+The runtime starts after the entire setup. Its actual common
+\(\beta_{\kappa,t}\), fixed \(\zeta\) and scalar
+\(e^{-i(\nu+2\kappa)t}\) are unchanged. The old comparator is
+\[
+e^{-itK}W e^{-i(D+\tau_e)K}
+=e^{-i(t+D+\tau_e)K}W,
+\]
+because the displayed \(W\) commutes with \(K\), not because the
+interacting Hamiltonian does. There is no extra runtime \(e^{-itE_0}\):
+\(E_0\) already belongs to the spectral profile. Equations (R5) and (R12)
+give the root's complete trace bound
+\[
+\min\{2,g(d)+\sqrt2\kappa\tau_e+2\epsilon_{\rm halt}\}.
+\tag{R14}
+\]
+The finite device is embedded into the parent's infinite comparison
+output space; every thermal sector and retained reference remains in the
+actual output. Only its seed comparator uses the one-head runtime theorem.
+The observation interval is \(t\in[T,2T]\) measured from the end of
+setup. Long early release changes the total old age, not that interval's
+meaning.
+
+The root's numerical claims are conservative and valid. They use the
+coarse \(\epsilon_{\rm halt}<0.005\). The already pinned exact parent
+bound \(F=3735315138388379/781250000000000000\) can be retained instead,
+without a new scattering theorem. With root's stated allowances,
+the common-envelope example is then below
+\(0.00973240675427425024<0.01\); the staged example is below
+\(0.00958242175427425024<0.01\).
+These are direct sums of \(2F\), \(2\,10^{-5}\), and respectively
+\(1.5\,10^{-4}\) or \(1.5\,10^{-8}\). They improve only the displayed
+upper bound, not the hardware or true error, and remove no fixed target
+residual or inherited hypothesis.
+
+| Feature | My frozen exact-product route | Root interacting route |
+|---|---|---|
+| Auxiliary preparation | Exactly \(13Q\), apart from physical scalar | \(C+H_c+V_c+\Delta D\ge\Delta D\) |
+| Gibbs statement | Exact product law | Ordered-eigenvalue upper tail bound |
+| Stated gap and inverse temperature | \(G=13,\ \beta=10\) | \(\Delta=1,\ \beta=100\) |
+| New blocks | \(2M+10\), including \(M+7\) pair blocks | \(M+10\), including four pair blocks |
+| New quantum sites | None | None |
+| Stated maximum new incident load | 18.956134512551988 | 2.993757127633340 |
+| Preparation added old1/old2 loads | 3.987514255266680 / 2.397277262241192 | The same |
+| Frozen common release example | Duration 1, sufficient slew allowance 30 | Duration 10000, allowance \(10^{-3}\) |
+| Staged early release | Not stated in the frozen candidate | Exact invariance, arbitrary admissible finite asynchronous schedule |
+| Retained model status | Supplied thermal marginal and controls | Supplied thermal marginal and controls |
+
+These examples choose different gap, temperature and derivative budgets.
+At a matched gap \(G=\Delta=13\), fewer pair controls do not imply a
+smaller sum of all new block norms. Summing my frozen block list yields
+\[
+S_{\rm product}=GN-2JM-2h_{AB}+u-\mu_0+\nu
+-\Delta_A-\Delta_B+E_0+4\kappa.
+\]
+Consequently the root's same-gap sum obeys
+\[
+S_A-S_{\rm product}
+=2JM+2h_{AB}+2(g_A+g_B)+\mu_0+\Delta_A+\Delta_B-u>0.
+\tag{R15}
+\]
+The additional counterhopping channels in the product route also reduce
+the corresponding onsite pin strengths. Its larger channel count and peak
+source load remain real costs. This is why root's comparison to
+canceling every bond should be read as a choice to avoid those channels,
+not a proved resource optimum.
+
+There is a post-exposure synthesis worth separating from prior credit.
+My frozen controls also satisfy the same staged criterion: with its two
+emitter counterhops held fully on, every remaining block acts on the seed
+as a scalar, the only nonzero one being
+\(u(I-n_An_B)\mapsto u\). Thus its corresponding early supported scalar
+would be \(c_{\rm seed}+2\kappa+u\,u_{\rm density}(s)\).
+The general argument (R9)–(R12) transfers. This observation was made
+after reading root's addendum; it is not retroactively part of my frozen
+independent derivation or a claim to independent discovery of the staged
+schedule. It shows that the scheduling improvement and the choice of
+product versus interacting Gibbs preparation are logically separate.
+
+## 8. Verification limits and disposition
+
+This review reconstructs all requested analytical steps. No scientific
+program was executed and no new computational PASS count is offered.
+The root checker/output remained unread through this analytical freeze.
+No claim about their correctness, full logs or actual run limits is made.
+The numerical bound (R4), local spectra, control counts, phases and norm
+sums are explicit finite algebra above.
+
+One initial non-scientific source-capture attempt used unresolved relative
+Path parents and failed before reading either root proof. Its following
+display command also failed because no copies yet existed. The error is
+preserved in [CAPTURE_FAILURE_01.json](CAPTURE_FAILURE_01.json).
+Resolving the path produced the subsequent byte-identical captures and
+the actual exposure timestamps. There was no failed scientific run,
+parameter search or suppressed mathematical counterexample.
+
+The full inherited runtime theorem and its prior evidence are conditional
+premises. This reviewer shares the model and substantial previous source
+exposure with root. The independent pre-exposure derivations and the
+present analytical cross-check do not establish model-diverse or
+whole-dependency independence.
+
+My recommendation is conditional mathematical reuse of the root
+construction and staged schedule, with the \(D>0\) boundary and scaled-
+isometry wording clarified. Root qualification, publication, retained
+audit and physical realization remain separate decisions. Neither route
+supplies native Gibbs delivery, a closed autonomous preparer, unrestricted
+noise tolerance, an all-future finite device or arbitrary-accuracy
+closure. No source original, worktree, Git state, checkpoint, prompt,
+axiom or audit verdict was edited.

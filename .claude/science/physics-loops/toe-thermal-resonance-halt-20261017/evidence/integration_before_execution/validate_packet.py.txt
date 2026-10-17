@@ -1,0 +1,58 @@
+"""Deterministic input/body/archive identity checks, with no scientific execution."""
+from archive_evidence import *
+import ast
+def read(p):return json.loads(p.read_text())
+def validate_inputs():
+ primary=W/'scripts/thermal_resonance_halt_2026_10_17.py';note=W/'docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+ tree=ast.parse(primary.read_text());compile(tree,str(primary),'exec')
+ declared=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets))
+ mf=read(F/'ARTIFACT_MANIFEST.json');assert len(declared)==len(set(declared))==149
+ assert set(declared)=={r['path'] for r in mf['files']}|{str((F/'ARTIFACT_MANIFEST.json').relative_to(W))}
+ for row in mf['files']:
+  p=Path(row['path']);assert not p.is_absolute() and '..' not in p.parts and p.as_posix()==row['path']
+  assert not (W/p).is_symlink() and not any(x.is_symlink() for x in (W/p).parents)
+  assert digest((W/p).read_bytes())=={k:row[k] for k in ('bytes','sha256')}
+ sm=read(F/'SOURCE_MAP.json');assert len(sm['files'])==239
+ for row in sm['files']:
+  assert row['path'] in declared
+  b=(W/row['path']).read_bytes();assert digest(b)=={k:row[k] for k in ('bytes','sha256')}
+  if row.get('compression')=='gzip':assert digest(gzip.decompress(b))=={'bytes':row['raw_bytes'],'sha256':row['raw_sha256']}
+ bm=read(F/'PROOF_BODY_MAP.json');nb=note.read_bytes();bodies=[]
+ for row in bm['bodies']:
+  raw=(W/row['original']['path']).read_bytes()
+  if row['original'].get('compression')=='gzip':
+   assert digest(raw)=={'bytes':row['original']['stored_bytes'],'sha256':row['original']['stored_sha256']};raw=gzip.decompress(raw)
+  assert digest(raw)=={k:row['original'][k] for k in ('bytes','sha256')}
+  b=nb[row['note_byte_start_inclusive']:row['note_byte_end_exclusive']]
+  assert digest(b)=={'bytes':row['bytes'],'sha256':row['embedded_sha256']}
+  for e in reversed(row.get('format_edits',[])):
+   x=e['embedded_start'];new=e['replacement_text'].encode();assert b[x:x+len(new)]==new
+   b=b[:x]+e['original_text'].encode()+b[x+len(new):]
+  for e in sorted(row['link_target_edits'],key=lambda x:x['embedded_start'],reverse=True):
+   x,y=e['embedded_start'],e['embedded_end'];assert b[x:y].decode()==e['replacement_target']
+   b=b[:x]+e['original_target'].encode()+b[y:]
+  assert b==raw,row['title']
+  bodies.append({'title':row['title'],'raw':digest(raw),'link_changes':len(row['link_target_edits']),'format_changes':len(row.get('format_edits',[]))})
+ assert len(bodies)==5 and sum(x['link_changes'] for x in bodies)==10 and sum(x['format_changes'] for x in bodies)==1
+ assert not any(x.endswith((b' ',b'\t')) for x in nb.splitlines())
+ return {'primary':pin(primary),'note':pin(note),'artifact_manifest':pin(F/'ARTIFACT_MANIFEST.json'),'source_labels':len(sm['files']),'declared_input_count':len(declared),'manifest_member_count':len(mf['files']),'bodies':bodies}
+def validate_archives():
+ result=[]
+ for p in sorted((Q/'evidence').glob('*_MAP.json')):
+  j=read(p)
+  for r in j['files']:
+   b=(W/r['path']).read_bytes();assert digest(b)=={k:r[k] for k in ('bytes','sha256')},(p,r['path'])
+   b=gzip.decompress(b) if r.get('compression')=='gzip' else b
+   assert digest(b)=={'bytes':r['raw_bytes'],'sha256':r['raw_sha256']}
+  result.append({'path':str(p.relative_to(W)),**digest(p.read_bytes()),'members':len(j['files'])})
+ return result
+def validate_manifest(root,manifest='FILE_MANIFEST.json'):
+ j=read(root/manifest)
+ for r in j['files']:
+  p=root/r['path'];assert not p.is_symlink();assert digest(p.read_bytes())=={k:r[k] for k in ('bytes','sha256')},str(p)
+ for r in j.get('inert_fixture_symlinks',[]):assert (root/r['path']).readlink().as_posix()==r['target']
+ return [root/r['path'] for r in j['files']]+[root/manifest,root/'FREEZE.json']
+def validate_bindings(rows):
+ for r in rows:
+  p=Path(r['path']);assert digest(p.read_bytes())=={k:r[k] for k in ('bytes','sha256')},str(p)
+ return len(rows)

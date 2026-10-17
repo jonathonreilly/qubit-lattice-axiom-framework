@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-10-17T04:41:07.166626+00:00",
+  "files": [
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 240327,
+      "sha256": "1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 9486,
+      "sha256": "4f66e0e922a49bbff388bee64a4f90e1524c693c3008e7126b6a0937ce6a3797"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "bytes": 14538,
+      "sha256": "437fac82e22e2bd50e8e865481fcffabf0b861fe812162c0f9fb88c0097567b0"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 385474,
+      "sha256": "827c65ce4eb84c0a27b446c30179564c1d3000aa4bdc4a68dfbfb41eb60cf39e"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 35726,
+      "sha256": "f1f04a07618e19278f940ba1fdb5f99080fe2572e95638f08867eef786271ff8"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "bytes": 1099,
+      "sha256": "82e5a8242884e0015003e21a791c1549ad10ec0384e277197cbe9d83d69673aa"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "bytes": 1634,
+      "sha256": "f002a0d8679aa1174bc66c0d6c23f74b83739a92dab3258c205b9af1a18b104d"
+    },
+    {
+      "path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/INFRASTRUCTURE_SOURCE.json",
+      "bytes": 701,
+      "sha256": "1d2b5c30ade8ef4af39c109120060d47fb42c85091b09e2317e0e7460f3786f2"
+    },
+    {
+      "path": "canonical/scripts/thermal_resonance_halt_2026_10_17.py",
+      "bytes": 59056,
+      "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+    },
+    {
+      "path": "canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 118919,
+      "sha256": "91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166"
+    },
+    {
+      "path": "READY_FILES.json",
+      "bytes": 28941,
+      "sha256": "b99954e3ae23b2ed1491b16e06eb7c906d73731ada15425e23838bc3949e79c9"
+    },
+    {
+      "path": "static_04/STATIC_RESULT.json",
+      "bytes": 279987,
+      "sha256": "79423d319f443b15ef6bf079dfd070fd90d1c62512eefecb9809d102cf544d00"
+    },
+    {
+      "path": "static_04/RECEIPT.json",
+      "bytes": 1666,
+      "sha256": "85ce456c0c87646b7c6043d7a6eae1a1fd3acc842c2d4f7106010d977e7732b3"
+    }
+  ],
+  "all_160_successful_prelaunch_bindings_still_exact": true,
+  "source_labels_still_exact": 239
+}

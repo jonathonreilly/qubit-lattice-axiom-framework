@@ -1,0 +1,75 @@
+{
+  "frozen_utc": "2026-10-17T04:15:35.894359+00:00",
+  "status": "Selective source-exposed mathematical review supports the conditional theorem at the pinned exact scope; no retained audit/canonical execution/root acceptance implied.",
+  "report": {
+    "path": "REPORT.md",
+    "bytes": 32461,
+    "sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172"
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 14615,
+    "sha256": "4b90e408accdf324ba742a8c235f113792924e87a3a2b261d53f368b9f7fef12"
+  },
+  "candidate": {
+    "path": "inputs/author_CANDIDATE.md",
+    "bytes": 37370,
+    "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+  },
+  "candidate_freeze": {
+    "path": "inputs/author_FREEZE.json",
+    "bytes": 1806,
+    "sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879"
+  },
+  "independent_derivation": {
+    "path": "INDEPENDENT_DERIVATION.md",
+    "bytes": 16477,
+    "sha256": "8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1"
+  },
+  "independent_freeze": {
+    "path": "INDEPENDENT_FREEZE.json",
+    "bytes": 6470,
+    "sha256": "aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad"
+  },
+  "independent_program": {
+    "path": "check_independent.py",
+    "bytes": 9066,
+    "sha256": "ca29a5f16956dd00594184d122088c78fca757c56873837167834b36844fd45e"
+  },
+  "prelaunch": {
+    "path": "run01/PRELAUNCH.json",
+    "bytes": 15606,
+    "sha256": "07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408"
+  },
+  "receipt": {
+    "path": "run01/RECEIPT.json",
+    "bytes": 8247,
+    "sha256": "19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49"
+  },
+  "output": {
+    "path": "run01/stdout.json",
+    "bytes": 12515,
+    "sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01"
+  },
+  "evidence_validation": {
+    "path": "EVIDENCE_VALIDATION.json",
+    "bytes": 5955,
+    "sha256": "6713fc3dd35d6b5149defd0ad6795dce115d59ce7e1763078dbd672c6cf3f9bd"
+  },
+  "final_validation": {
+    "path": "FINAL_VALIDATION.json",
+    "bytes": 610,
+    "sha256": "745af70e6c376d7c72a6e51fee93862e743e78725feaf69445572b85d696c199"
+  },
+  "packet_files_including_manifest_and_freeze": 90,
+  "author_packet_files": 41,
+  "independent_prefreeze_members": 39,
+  "scientific_runs": 1,
+  "failed_scientific_runs": 0,
+  "author_checker_replayed": false,
+  "same_model_and_effort": true,
+  "subdelegation": false,
+  "write_scope": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_review",
+  "editable_prompt_files_changed": [],
+  "campaign_deadline_utc": "2026-10-17T23:07:27Z"
+}

@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/focused_verify.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-17T05:00:25.446906+00:00",
+  "end_utc": "2026-10-17T05:00:33.489590+00:00",
+  "elapsed_seconds": 8.041354042012244,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_focused_01/stdout",
+    "bytes": 308,
+    "sha256": "01f5e80ec4f695dd72ee29fb52982ea307030c15cb6fbafc940cd21dcf2490bc"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/runs/thermal_focused_01/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/focused_verify.py",
+    "bytes": 10554,
+    "sha256": "62291b5ee604e2a971351745b4153c63e54a1e023b8fa02edd3b534a05310e1d"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

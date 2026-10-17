@@ -1,0 +1,55 @@
+{
+  "old_counts": {
+    "node_count": 7210,
+    "edge_count": 16165
+  },
+  "new_counts": {
+    "node_count": 7211,
+    "edge_count": 16166
+  },
+  "added": [
+    "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "thermal_resonance_halt_bounded_theorem_note_2026-10-17",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "`bounded_theorem`. **Current status:** conditional support.",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30",
+    "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "runner_path": "scripts/thermal_resonance_halt_2026_10_17.py",
+    "title": "Thermal preparation and resonance-scale autonomous output"
+  },
+  "new_edges": [
+    {
+      "from": "thermal_resonance_halt_bounded_theorem_note_2026-10-17",
+      "to": "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+    }
+  ],
+  "manifest_sha256": "b53fd197364c368f9d52e67166869216a7abe40a7fad5c27a0872d95af4ecd21",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/run_citation_graph_build.py",
+      "started_utc": "2026-10-17T04:58:11.296902+00:00",
+      "elapsed_seconds": 126.6548683331348,
+      "wall_cap_seconds": 180,
+      "exit_code": 0,
+      "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "started_utc": "2026-10-17T05:00:17.954100+00:00",
+      "elapsed_seconds": 0.08920116676017642,
+      "wall_cap_seconds": 60,
+      "exit_code": 0,
+      "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    }
+  ],
+  "scope": "New thermal preparation/resonance note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+}

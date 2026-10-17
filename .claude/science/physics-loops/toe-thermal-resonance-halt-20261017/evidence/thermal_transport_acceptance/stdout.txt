@@ -1,0 +1,8 @@
+{
+  "disposition": "Qualified source transport accepted for one bounded canonical replay and six predeclared copied scientific faults. Actual execution and focused publication checks remain pending.",
+  "declared_inputs": 149,
+  "original_bindings": 1380,
+  "amendment_bindings": 1462,
+  "archived_mappings": 6,
+  "primary": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872"
+}

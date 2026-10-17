@@ -1,0 +1,1 @@
+{"roles": {"r": {"aliases": {"known": {"path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/attempt_01/fixtures/repo/valid", "bytes": 10, "sha256": "83d53396bcf60b99217b45c90cb270bd145693f612135db855fb34906cde1732"}}}}}

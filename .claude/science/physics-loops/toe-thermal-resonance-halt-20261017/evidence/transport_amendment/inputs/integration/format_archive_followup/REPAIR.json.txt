@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-17T04:51:42.089591+00:00",
+  "cause": "Archive-wide root check found five historical rows still pointing at current primary/SOURCE_MAP edited by the format amendment. Preserved original bytes existed in the before snapshot. Retargeted only archival pointers, without changing history or science.",
+  "before": {
+    "bytes": 639127,
+    "sha256": "c098410eb1aac9d52ca0ad9c2a42e8d76206fab35cd189be0962936b114af886"
+  },
+  "after": {
+    "bytes": 639652,
+    "sha256": "62699c8203c84940054c0d687603c8acbd919e4379c8b865b06610c38f5957af"
+  },
+  "fixes": [
+    {
+      "original_path": "canonical/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "old_destination": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_destination": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38.txt"
+    },
+    {
+      "original_path": "canonical/scripts/thermal_resonance_halt_2026_10_17.py",
+      "old_destination": "scripts/thermal_resonance_halt_2026_10_17.py",
+      "new_destination": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad.txt"
+    },
+    {
+      "original_path": "historical_build_05/canonical/scripts/thermal_resonance_halt_2026_10_17.py",
+      "old_destination": "scripts/thermal_resonance_halt_2026_10_17.py",
+      "new_destination": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad.txt"
+    },
+    {
+      "original_path": "static_04/fixture_repo/outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "old_destination": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "new_destination": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38.txt"
+    },
+    {
+      "original_path": "static_04/fixture_repo/scripts/thermal_resonance_halt_2026_10_17.py",
+      "old_destination": "scripts/thermal_resonance_halt_2026_10_17.py",
+      "new_destination": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/format_before/3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad.txt"
+    }
+  ],
+  "all_1177_raw_and_stored_archive_members_verified": true,
+  "primary_note_and_declared_inputs_changed": false,
+  "science_runs": 0
+}

@@ -1,0 +1,650 @@
+---
+review_type: selective_source_exposed_mathematical_check
+candidate_sha256: 401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0
+disposition: supported_conditional_composition_at_exact_frozen_scope
+required_source_repair: none_identified
+retained_audit: false
+canonical_execution: not_performed
+author_checker_replayed: false
+same_inherited_model_and_effort: true
+subdelegation: false
+---
+# Review of uniform resonance-scale escape for the exact emitter family
+
+The frozen candidate supports its stated conditional theorem: for the exact
+nominal ladder, supplied product emitter seed, sigma=10^-6, L=12 and every
+fixed kappa in [10^-12,10^-8], the complete infinite-apparatus isometry error
+is below **0.003832 for every t>=kappa^-2**. With
+**M=ceil(50/kappa^2)** clock sites, the complete embedded finite-apparatus
+error is below **0.004832 only for t in [kappa^-2,2kappa^-2]**. I found no
+mathematical or execution-identity defect requiring a source correction.
+
+The two decisive new estimates survive direct reconstruction: bounded
+variation pays for both hard-cutoff endpoint jumps while the finite
+rectangle retains the time decay on its vertical edges; a separate scalar
+incoming estimate and real-band center/derivative split control the complete
+localized clock vector. The latter uses the inherited derivative of the
+entire closed tail and pays the two-column factor within each parity.
+Neither an absolute clock L1 estimate nor the wrong-half-line norm used as
+a scalar amplitude would fit this budget.
+
+This is a selective source-exposed check with substantial prior authorship
+and review exposure to the common dependency chain, under the same model
+and effort. It is not blind discovery, formal verification, an independent
+review of the entire historical dependency graph, a retained audit or
+canonical publication execution. The independent derivation and actual
+calculation were frozen before the new author's code/output were read.
+The final report compares that frozen work with the author's complete
+implementation and actual provenance. No author checker was run or imported.
+
+## 1. Exact target, source coverage and exposure order
+
+The reviewed candidate is
+`../resonant_family_candidate/CANDIDATE.md`, 37,370 bytes, SHA256
+`401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0`.
+Its 1,806-byte `FREEZE.json` has SHA256
+`8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879`.
+All 778 lines of the new argument were read. Its source manifest has SHA256
+`fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40`.
+Every one of its 21 source snapshots was byte-checked against the original,
+and the full 41-file author packet is preserved unchanged in `author_packet/`.
+The earlier initial-only capture in `inputs/` and
+`INITIAL_SOURCE_BINDINGS.json` records exactly what was available before
+author-program exposure.
+
+The exact dependencies are:
+
+| Snapshot in `inputs/` | SHA256 |
+|---|---|
+| `fixed.md` | c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8 |
+| `fixed_review.md` | 4d7694f51ec85edcc38977bef43412d8c9bc5baba4fa3c35809fe9adf3d00284 |
+| `fixed_acceptance.json` | 1a3f12fa10400e13906a09954f328e996f5cba2755a91c879399662f7a3f1421 |
+| `fixed_qualification.md` | 0f77e687647ceaec73408aaf58eea65b4291337c9bddb496e3ca759b1690bed5 |
+| `family.md` | 9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac |
+| `family_acceptance.json` | a48c7f35251ccca1eeda6c022de50a0e93c7f0889b44a4d75c46f0853bf3a325 |
+| `family_qualification.md` | 27a4008d6588fef9f0a5ac1d231d71240c12468db93d50a36ac2ee02f6ab7814 |
+| `installed.md` | 4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee |
+| `installed_acceptance.json` | c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c |
+| `installed_qualification.md` | dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d |
+| `weighted.md` | a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5 |
+| `weighted_acceptance.json` | 01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16 |
+| `weighted_qualification.md` | f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b |
+| `moment.md` | 31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f |
+| `moment_acceptance.json` | bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318 |
+| `moment_qualification.md` | 0b0ce9eaba582d878b982ecd0f86a53857c5f394b9a42b4e27306e58bb405102 |
+| `generic_v2.md` | db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3 |
+| `route.md` | f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1 |
+| `interval.md` | b386126649516e533da29182a6cf9eac2da314538ae9b072a2262d7c5c78ed45 |
+| `interval.json` | a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251 |
+| `SCIENCE_WORKFLOW.md` | 71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3 |
+
+The full earlier fixed-resonance and family proofs, reviews and common
+installed/weighted/generic/interval/local/moment sources had been read in
+the preceding tasks. Their unchanged bytes are reused here. I refreshed the
+affected family interfaces: complete mass and parity Gram overlap, the
+actual common phase, seven-coordinate emitter complement, full Cg/Kloc
+regularity, exact isometry normalization and prepared-sector radius/path
+geometry. The new fixed/family root qualification notes and acceptance
+records were read in full. Their explicit scope does not automatically
+accept this new onset. Earlier programs were not rerun.
+
+The procedure uses the applicable physics-claim-reviewer skill and the
+unchanged workflow; no audit or landing procedure was launched. The task's
+explicit same-model/no-delegation constraints control this check. The
+reported repository parent `0e3993770a7a2dd872018f9dd3c76c2d9a624db9` and
+PR9665 are author-supplied context, not a remote freshness claim made here.
+No Git or network query was needed for this local mathematical check.
+
+Before any new author-code/output exposure I wrote the complete
+16,477-byte `INDEPENDENT_DERIVATION.md`, SHA256
+`8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1`,
+and ran my separately implemented program under its predeclared caps.
+Those sources, derivation and full output were frozen at
+2026-10-17T04:09:13.285433Z in the 39-member
+`INDEPENDENT_FREEZE.json`, SHA256
+`aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad`.
+Only afterward did I inspect the new author's checker, launcher, scalar
+input file and outputs. The candidate and its printed numerical target
+were already exposed, so the independently reconstructed arithmetic is not
+a held-out prediction. Root's proposed finite-contour and center/derivative
+split ideas were also known, unproved suggestions. The independence gain
+is a separately written analysis and implementation, not different models
+or unexposed priors.
+
+## 2. Reused family premises are adequate and not silently strengthened
+
+The actual operator is the installed one-head Hamiltonian
+
+```
+Htilde_kappa = [[Hg, kappa V], [kappa V*, B+E0]],
+V = |L> - exp(i phi)|L+2>,
+Hphysical_kappa = Htilde_kappa + (nu+2kappa) I,
+Eseed x = |excited emitter, empty clock> tensor iota x.
+```
+
+The loop acts on all sixteen internal directions. The two parity blocks
+have dimension eight; each chosen incident band has one open channel and
+seven complementary directions. The qualified family proof handles both
+old energies 1 and 3, the full complementary gap 0.18, and its physical
+16/24-dimensional matching systems. This review does not replace that
+matrix certificate with a grid or an actual complex resonance pole.
+
+The exact common profile and phase are
+
+```
+yref = kappa conj(gminus)/Df,
+f_kappa = chi conj(yref)/(sqrt(2pi)N),
+rho_kappa = r0 tau,    r0(k)=-exp(2ik).
+```
+
+The family mass lemma gives N^2>=1-3.5e-7 and .99<N<=1, with
+||f||2=||f rho||2=1 and Aref=integral |f yref|/sqrt(2pi) in [N,1].
+This uses the qualified resolvent/spectral-mass argument, not the old
+variance bound whose ceiling becomes 32/25 at kappa=10^-8. The exact
+past-limit construction gives Gamma_t*Gamma_t=I without a global
+scattering-completeness assumption. Its full parity Gram comparison gives
+||Eseed-Gamma_0||<.003. The inherited .000714 reflection allowance includes
+the strictly nonzero central witness residual <1.76e-13.
+
+For each column y_j=yref u_j+delta y_j,
+integral |f| ||delta y_j||/sqrt(2pi)<4 sigma+1e-14.
+This includes the other seven emitter directions. The fixed-coupling
+10^-18 off-diagonal ceiling is not substituted. The complete clock vector
+is Cg,j+kappa Kloc,j y_j, with value/derivative bounds
+(31,2700) and (20000,10^6), respectively. The refreshed family formula
+contains the entire Q^m Pc Dtail tail and its derivative; the numerical
+derivative upper expression 591961.905<10^6 is in the real physical
+Hilbert norm. Thus the new real-band fundamental-theorem step uses the
+correct norm and needs no new finite-to-infinite norm conversion.
+
+All these quantities describe the same exact nominal apparatus for each
+chosen fixed kappa. Nothing here grants a common nominal waveform for
+different kappas or combines this interval with calibration/ladder boxes.
+
+## 3. Fourier orientation, real-band replacement and endpoints
+
+I reconstructed the outgoing phase algebra by writing
+Df=x+i kappa^2(a^2+b^2)/(2E'). It gives exactly
+
+```
+tminus-conj(Df)/Df = i kappa^2 a^2/(E'Df).
+```
+
+Normalizing tminus changes the residual by at most a second copy, so
+|tau-conj(Df)/Df|<=4 eta^2. Consequently the incoming profile has the
+advanced denominator conj(Df), while the outgoing one has the retarded
+denominator Df. The scalar r0 also remains. At Df=1+i with zero incoming
+coupling and outgoing width one, the reversed reciprocal leaves residual
+-2i. My symbolic calculation checks the general identity as well as that
+countercase; it does not merely copy the author's finite example.
+
+With q=k-k0, define Gamma=-kappa^2 Im Sigma0,
+c=kappa^2 Re Sigma0/v0, gamma=Gamma/v0,
+D0=v0(q-c+i gamma), D0sharp=v0(q-c-i gamma),
+C0=kappa gminus(k0)/(sqrt(2pi)N). Then
+
+```
+h_in=C0/D0sharp,       h_out=r0(k0) C0/D0,
+|C0|<=kappa,           |c|,gamma<3200 kappa^2<sigma/4,
+v gamma>31.25 kappa^2>30 kappa^2,
+||h_in||L2(R)=||h_out||L2(R)=1/N.
+```
+
+The last equality follows directly from gamma=kappa^2 b0^2/(2v0^2).
+The denominator ratio estimate
+|q|/|D0| <=(1+2/b0)/v0<100 and the real Taylor remainder give
+|Df-D0|/|D0| <=100(J sigma+560 kappa_+^2)<4 sigma.
+The numerator relative variations are bounded by 18 sigma and 20 sigma.
+Writing eps=4 sigma,
+rin=22 sigma/(1-eps), rout=24 sigma/(1-eps), the resulting L2 distances
+to **chi h_in** and **chi h_out** are each below 30 sigma, including the
+4 eta^2 phase error in the latter. This is a real-band comparison; the
+cosine time phase is still exact for every t.
+
+For the remaining cutoff piece w=(1-chi)h, extended by zero outside I,
+|h|<=2 kappa/(v|q|) and |h'|<=4 kappa/(v q^2) on its two outer half-bands.
+Its L1 norm is <=4 kappa/v. As a derivative measure on the full line,
+dw contains the ordinary derivative and both endpoint jumps. The three
+variation allowances are, in units kappa/(v sigma),
+
+```
+cutoff derivative: 8; rational derivative: 8; endpoint atoms: 4.
+```
+
+Therefore TV(w)<=20 kappa/(v sigma). For the wrong-direction phase
+theta=-mk-tE(k), m>=0, Stieltjes integration by parts gives
+
+```
+|integral w exp(i theta)|
+ <= [TV(w)+(2J/v)||w||1]/(m+vt).
+```
+
+This uses |theta'|>=m+vt and 2Jt/(m+vt)^2<=2J/[v(m+vt)]. At vt>=1,
+sum_(m>=0)(m+vt)^-2<=2/(vt). After Fourier normalization the wrong-half-line
+norm is at most Dcut/sqrt(vt), and the single m=0 coefficient is at most
+Dcut/(2vt), where Dcut=(kappa/v)(20/sigma+10). This proof automatically
+includes the endpoint atoms. The constant-amplitude integral over [0,pi]
+equals -2i while its interior derivative is zero, explicitly rejecting
+the derivative-only shortcut. I found no missing cutoff endpoint term.
+
+## 4. Finite-rectangle estimates are uniform in kappa and time
+
+Both wrong directions require the lower rectangle k=x-iy,
+x in I, 0<=y<=sigma: incoming n>=0 has exp(-ikn), and outgoing n<0 may
+be written exp(-ikm), m=-n>=1. On either edge
+
+```
+Im E(x-iy)=-2J sin(x) sinh(y)<=-vy,
+|| (exp(-my))_(m>=0) ||2 <= y^-1/2,   0<y<=sigma.
+```
+
+The geometric bound follows, for example, from
+1-exp(-2y)>=2y-2y^2>=y. To avoid treating the y=0 plane wave as an l2 vector,
+first apply the triangle/Minkowski bound to finite coordinate sums and then
+take the monotone limit. The y^-1/2 envelope is integrable. This addresses
+the potentially singular top corners of the rectangle.
+
+Each vertical denominator has modulus at least v sigma/2. Keeping its time
+factor yields, including 1/sqrt(2pi)<1/2,
+
+```
+one vertical edge <= kappa/(v sigma) integral_0^sigma y^-1/2 exp(-vty)dy
+                  <2 kappa/(v sigma sqrt(vt)).
+```
+
+The two edges therefore cost 4 kappa/(v sigma sqrt(vt)). The bottom costs
+kappa exp(-v sigma t)/(v sqrt(sigma)) for h_in and twice that for h_out.
+The incoming pole is above and contributes no residue. The outgoing pole
+kp=k0+c-i gamma is inside; clockwise orientation gives coefficient
+-i sqrt(2pi)r0(k0)C0/v0. Its negative-half-line geometric norm is at most
+1/N because sum_(m>=1)exp(-2gamma m)<=1/(2gamma). The exact temporal factor
+is <=exp(-v gamma t), so P(t)=2 exp(-30 kappa^2 t) is a valid common bound.
+Only these auxiliary rational functions and the scalar entire E are
+continued; none of Cg, Kloc, y_j or the installed matrix resolvent is.
+
+Combining these bounds with the cutoff estimate and using exp(-x)<=1/x gives
+
+```
+qin(t) <=30 sigma+[Dcut+4 kappa/(v sigma)]/sqrt(vt)
+                    +kappa/(v^2 sigma sqrt(sigma)t),
+qout(t)<=30 sigma+[Dcut+4 kappa/(v sigma)]/sqrt(vt)
+                    +2 kappa/(v^2 sigma sqrt(sigma)t)+P(t).
+```
+
+For t>=kappa^-2 all time-dependent terms decrease. Set s=3/20<sqrt(v),
+
+```
+H=kappa_+^2(24/sigma+10)/(v s),
+B=kappa_+^3/(v^2 sigma sqrt(sigma)),
+P=2(3/8)^30.
+```
+
+Then qin<=30 sigma+H+B and qout<=30 sigma+H+2B+P. Every nonconstant kappa
+factor here is a positive power, so kappa_+ is a proven worst-case bound.
+This is not an endpoint grid. The exact calculations gave qin below
+0.000030640002 and qout below 0.000030640004, hence qout<1/2 uniformly.
+The exponential comparison uses the elementary strict inequality e>8/3.
+
+## 5. Density residue and all localized coordinates
+
+The common emitter scalar is Ae(t)=integral_I p(k)exp(-itE(k))dk, with
+p=chi kappa^2 b^2/(2pi N |Df|^2). The comparison density is
+p0=gamma/[pi N((q-c)^2+gamma^2)], with full-real-line mass 1/N.
+The pointwise relative error to chi p0 is bounded by
+
+```
+(2rn+rn^2+2eps+eps^2)/(1-eps)^2<45 sigma, rn=18 sigma.
+```
+
+The remaining real-band cutoff contribution is bounded by
+16 kappa^2/(v^2 sigma). At kappa_+ the total L1 error is
+3301/68750000<50 sigma. This term remains in the proof at the enlarged
+coupling; it is not discarded under small-kappa notation.
+
+For p0 the two vertical integrals cost at most
+8 kappa^2/(v^3 sigma^2 t), and the bottom costs at most
+4 kappa^2/(v^3 sigma^2 t). Independent partial fractions give
+
+```
+p0=[1/(q-c-i gamma)-1/(q-c+i gamma)]/(2pi i N).
+```
+
+The lower residue is -1/(2pi i N); the clockwise multiplier -2pi i produces
+**+1/N**, with the exact phase exp(-itE(kp)). Reversing that sign would not
+describe the seed amplitude. My symbolic residue check confirms it. Hence
+
+```
+|Ae(t)| <=50 sigma+P(t)+12 kappa^2/(v^3 sigma^2 t),
+Abar=50 sigma+P+12 kappa_+^4/(v^3 sigma^2)<0.000050000001.
+```
+
+The complete emitter operator is bounded by
+|Ae|+1.5(4 sigma+1e-14). The Ae u_j columns are orthonormal, but the
+seven-coordinate error columns need not be. An explicit two-column matrix
+with both columns equal to a unit vector has squared operator norm two,
+not one. My independent check preserves this discriminator and confirms
+sqrt(2)<1.5. It rules out replacing the parity factor by a maximum column
+norm. Different reducing parities do not need another factor.
+
+The full clock needs the sharper scalar
+Sf=(1/sqrt(2pi))integral f exp(-itE). With Bstar=4e-8, the real affine
+denominator coordinate lies in [-Bstar,Bstar], because
+.03 sigma+(2/v)kappa_+^2<Bstar. Therefore
+
+```
+H0=integral_I |h_in| <(2kappa/v)log[1+2 Bstar/(19 kappa^2)]<3200 kappa,
+F0=integral_I |f|<3200 kappa/(1-eps)<4000 kappa.
+```
+
+The worst logarithm is at kappa_-, and its exact argument is
+80000000000000019/19<(8/3)^40<exp(40). The F0 assertion correctly uses
+the direct numerator bound |f|<=kappa/|Df|; inferring it by silently
+dropping the changing gminus numerator from H0 would be invalid.
+
+The scalar incoming contour has no residue, and its two verticals and
+bottom cost at most 3kappa/(v^2 sigma t). Paying the scalar BV cutoff and
+rin H0/2 real-profile error gives
+
+```
+|Sf(t)|<=1600 kappa rin+kappa(13/sigma+5)/(v^2t),
+Sbar=1600 kappa_+ rin+kappa_+^3(13/sigma+5)/v^2<3.521e-10.
+```
+
+The real-band Hilbert-vector fundamental theorem now gives
+||Cg,j(k)-Cg,j(k0)||<=2700|q| and
+||Kloc,j(k)-Kloc,j(k0)||<=10^6|q|. Separating all five terms yields
+
+```
+Clock_col <=31 Sbar +2700 sigma(2000 kappa_+)
+          +kappa_+ 20000 Abar
+          +kappa_+ 10^6 sigma
+          +kappa_+ 20000(4 sigma+1e-14).
+```
+
+They are, respectively, the constant background, its variation, the
+constant localized response to yref u_j, its variation, and the complete
+delta y_j response. The use of Aref<=1 for the varying reference term
+is valid and does not assume that yref has a bounded pointwise linewidth.
+No closed tail or emitter coordinate is discarded. With the parity factor,
+
+```
+Clock_op <=1.5 Clock_col <1.286e-7,
+Loc <=Abar+1.5(4 sigma+1e-14)+Clock_op <0.000056128570.
+```
+
+This is a real-band split in the full Hilbert space. It needs no complex
+continuation of the noncommuting interaction and no commutation of K
+through the Hamiltonian. The derivative of only a contact block would be
+insufficient; the inherited full-tail derivative is precisely what is used.
+
+## 6. Restricted normalization and the complete comparator
+
+Fourier Plancherel applies to f rho extended by zero on the momentum circle.
+The complete full-line outgoing vector has norm one. Its excluded negative
+half has norm delta<=qout, and the retained b_t has norm
+sqrt(1-delta^2)>0. Thus beta=b_t/||b_t|| exists at every allowed late time,
+and the retained-vector normalization error is
+
+```
+||b_t-beta||=1-sqrt(1-delta^2)<=delta.
+```
+
+This formula is not the distance from the full-line vector to zero-embedded
+beta. Confusing those two distances would lose a term. The candidate uses
+the correct retained-vector comparison, paying qout once.
+
+The exact intertwining identity keeps exp(-it Db) on the input side.
+Incoming and outgoing vacuum columns have orthogonal old internal vectors,
+so their norms use qin and the scalar maximum reflection error. The
+nonorthogonal localized columns already paid their within-parity factors.
+Propagating Eseed-Gamma_0 by unitarity costs .003 once. It includes possible
+point spectrum and all other components outside the exact packet range;
+there is no spectral projection, postselection or absence-of-bound-states
+assumption. In particular the old fixed-coupling point-amplitude ceiling
+8e-5 is not reused throughout the family. On the finite clock no assertion
+that its spectrum is continuous is made.
+
+The actual complete comparator is exactly
+
+```
+Uideal,kappa(t)x = zeta exp[-i(nu+2kappa)t]
+                   beta_(kappa,t) tensor iota exp(-itK) W x,
+zeta=-exp(-4ik0)alpha, |alpha|=1.
+```
+
+There is one common actual f_kappa rho_kappa for all old columns of a
+chosen apparatus. The actual scalar and literal old aging remain. No
+extra exp(-itE0) is appended, no column-dependent phase is chosen, and no
+nominal whole-clock waveform stability across kappa is claimed. K need
+not commute with the complete interaction. The error is an operator norm
+on the complete old/source/emitter/clock output, so tensoring any passive
+reference preserves it. Nothing is traced out.
+
+The complete infinite bound is
+
+```
+.003+.000714+qin+qout+Loc.
+```
+
+My separate exact calculation reconstructs
+
+```
+qin+qout+Loc
+  = 138611025462876289642614901207402041129347129 /
+    1180586898350928433778786304000000000000000000000
+  <118e-6,
+
+.003+.000714+qin+qout+Loc
+  = 4523310765938224492697027234263402041129347129 /
+    1180586898350928433778786304000000000000000000000
+  <.003832.
+```
+
+The latter is approximately .0038314085750540613. The displayed decimal
+is not an outward interval; the rational comparison is exact. Each variable
+time term decreases after T=kappa^-2. The real-band comparison floors are
+explicitly included, so the **infinite all-future** quantifier follows and
+does not promise arbitrary accuracy. The corresponding unhalved trace
+distance is below .007664.
+
+## 7. Finite horizon, geometry and exact physical resource accounting
+
+The inherited prepared-sector radius 19 is uniform over this family.
+The gate/source bounds are unchanged; the off-diagonal emitter block has
+norm sqrt(2)kappa<2e-8. The physical scalar shifts the center only. This is
+the prepared one-head sector bound, not a claim about a many-head extensive
+norm. The finite apparatus keeps sites 0,...,M-1 and the actual far-end
+positive diagonal J n_(M-1), hence is the required compression.
+
+The shortest path from seed e to omitted c_M first reaches c_(L+2), then
+walks to M. Its length is 1+[M-(L+2)]=M-L-1=M-13. The other contact route
+is two edges longer. Onsite source/old mixing cannot shorten a clock path.
+Thus the evolutions' polynomial actions agree through degree d_M-1, giving
+the inherited Chebyshev estimate
+
+```
+4 exp[-d_M+19t sinh(1)]/[1-exp(-1)].
+```
+
+For M=ceil(50T), t<=2T and sinh(1)<6/5,
+d_M-19(2T)(6/5)-9 >=(22/5)T-22. At T_min=10^16 this is exactly
+43999999999999978>0. No integrality of T is assumed; M>=50T is enough.
+The elementary sinh bound can also be obtained from
+sinh(1)<=1+1/6+(1/120)/(1-1/42)=2891/2460<6/5.
+Using e>8/3 yields finite correction
+
+```
+(32/5)(3/8)^9 =19683/20971520 <.001.
+```
+
+The exact sum with the infinite majorant is approximately
+.004769967153545272<.004832. This applies only on [T,2T]. The comparator
+is the same normalized infinite-half-line beta, viewed in the common
+comparison space; it is not truncated and renormalized to obtain the
+bound. Fixed finite-device all-future permanence is not established.
+
+The positive local contact form has eigenvalues 0,0,2kappa,2kappa.
+Together with (E0-2kappa)n_e and the two vacancy reserves
+kappa(I-n_L), kappa(I-n_(L+2)), it sums to the declared hoppings plus
+E0 n_e+2kappa I. E0>2e-8 ensures positivity throughout the family.
+This preserves the actual scalar nu+2kappa. The seed mean is
+K+(E0+nu+2kappa)I and variance Var(K)+2kappa^2. These retain the old
+Hamiltonian's actual energy distribution.
+
+At kappa=10^-8 the exact counts are T=10^16,
+M=500000000000000000 and **M+5=500000000000000005 qubits**. At
+kappa=10^-12 they are T=10^24, M=5*10^25 and M+5 qubits. These are
+sufficient declared Hamiltonian-unit costs, not physical seconds or lower
+bounds. The emitter's added incident load is E0+2kappa, approximately
+.005626357514718896 at the upper endpoint; either attachment adds
+3kappa to its clock-bond load, making .120084458428128 there. The actual
+upper-endpoint scalar is exactly 1.459892833020969.
+
+The unchanged added old-site loads 1.993757127633340 and
+1.198638631120596 are each below two, in addition to the existing old
+edge of norm three. The source loads 20.332662089993454 and
+17.078839343776311, and boundary-clock loads 8.015120691541701 and
+6.730044773026091, remain explicit and exceed two. This is not an
+all-site cap-two result. Supplied coherent loop phase, clean clock/source
+vacuum, product excited emitter and exact static coefficients are physical
+permissions. The argument does not generate these resources natively.
+
+## 8. Independent computation and actual author execution
+
+The sole reviewer scientific program was written separately and executed
+before new author-code exposure. It reconstructs rational majorants from
+the component proof, uses rational half-angle formulas from q0 rather than
+reading the author's precomputed trigonometric fields, checks the general
+symbolic phase and density-residue identities, and checks the hard-cutoff
+and aligned-column discriminators. No target rational total is used to
+generate its sum. It does not import any author checker.
+
+| Reviewer artifact | SHA256 |
+|---|---|
+| `check_independent.py` and `run01/executed_source.py` | ca29a5f16956dd00594184d122088c78fca757c56873837167834b36844fd45e |
+| `launch_independent.py` | 594defd0c86c5f759ca81a6bc51bfcc4b31b43c8c01c57fdd217ba572e137593 |
+| `RESOURCE_PLAN.json` | c444ad9bfb007a765acb3307496d2fcaffc1d996e60c8c647887ab350e1afe80 |
+| `run01/PRELAUNCH.json` | 07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408 |
+| `run01/RECEIPT.json` | 19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49 |
+| `run01/stdout.json` | 439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01 |
+| `INDEPENDENT_RESULT.md` | 90565a190900a78cce958b5ab6df4cea9c2a338b40d8daeb4f883fb9ddc77be1 |
+
+PRELAUNCH was serialized, flushed, fsynced and closed before Popen. The
+file fsync completed at 04:08:27.705145Z, directory fsync at
+04:08:27.705168Z, and recorded post-fsync/pre-Popen boundary at
+04:08:27.705236Z. The wrapper completed at 04:08:28.370806Z. There were
+31 packet-file bindings plus four runtime identities, all unchanged in
+the child and afterward. Actual limits were CPU soft/hard 30/30 seconds
+and external wall 45 seconds. The run exited zero without timeout or
+retry; wall duration was .665611166972667 s, child user CPU .347229 s,
+system CPU .057771 s and measured macOS peak child RSS 63,651,840 bytes.
+Maximum matrix dimension was two; largest requested integer power was
+40. Python was 3.13.5 and SymPy 1.14.0. All 12,515 stdout bytes and both
+empty stderr streams were inspected and retained.
+
+The reviewer interpreter SHA is
+`a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5`;
+SymPy entry and distribution metadata and fractions.py are also bound in
+PRELAUNCH. This is partial runtime pinning, not a complete transitive
+dependency or operating-system attestation. RSS was measured rather than
+capped, and single-thread environment requests were not measured thread
+counts. The program's .5825333753600717 s interval includes its work after
+the timer, including the subsequent SymPy import, but excludes interpreter
+startup. Full proof coverage comes from the analysis, not a count of checks.
+
+After the independent freeze I read the complete new author's
+`check_bounds.py`, `launch_check.py`, source preparer and final validator;
+the plan, scalar inputs, manifest, read-coverage and failure notes; and the
+complete scientific/wrapper streams, prelaunch and receipt. One aggregate
+tool display truncated metadata; the missing receipt and omitted files were
+re-read explicitly. No truncated display was treated as complete evidence.
+
+| Author artifact, preserved in `author_packet/` | SHA256 |
+|---|---|
+| `check_bounds.py` and executed copy | b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6 |
+| `launch_check.py` | 5c96cf7d03d19a9d265254d2661a5df9a3e5b59b567aa9245345aebd2ab8c15a |
+| `RESOURCE_PLAN.json` | 80d14f540d1884d0a58f9ae35c02a3eca43a24ba2abac9eee0b36a3b11b30e81 |
+| `SCALAR_INPUTS.json` | 3e7a938c2a04e1da45189e728ac65c1e65309f97d4331dab0ef08bcbfb5a0c65 |
+| `run01/PRELAUNCH.json` | 64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb |
+| `run01/RECEIPT.json` | 0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79 |
+| `run01/stdout.json` | f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c |
+
+The author ran once, exited zero without retry or timeout, and really
+serialized/fsynced/closed the prelaunch record before subprocess creation.
+Its record binds 28 packet files and five runtime files. The times are
+prelaunch fsync 03:49:49.004456Z, pre-Popen boundary 03:49:49.004585Z,
+program start 03:49:49.053382Z and wrapper completion 03:49:49.090289Z.
+Actual CPU limits were 20/21 seconds, wall limit 30 seconds. Measured wall
+was .08568883407860994 s, child CPU .025705+.009441 s, and peak RSS
+22,298,624 bytes. Its scalar computation has dimension zero, no grid,
+quadrature, optimizer or dynamics, and maximum requested power 40.
+Its 12,367-byte stdout and both empty stderr streams are preserved.
+
+The author program reads exact rational inputs, reconstructs component
+ceilings and only then compares their sum with the proposed limits. I found
+no value derived from the desired verdict, concealed fit, changed exact
+coefficient, omitted source coordinate or stale executed-copy identity.
+Its simple statements such as `8+8+4==20` corroborate assembly, not the
+analytic total-variation lemma; the candidate accurately limits their
+authority. My independent proof supplies that review coverage. Neither
+program proves absence of actual bound states or solves the complete
+apparatus dynamics, and neither claims to.
+
+The final candidate was authored/frozen after the author scalar run; it
+was not a prelaunch input to that run. The executed code, scalar inputs,
+source snapshots and runtime identities were prebound, and the later
+freeze binds the final prose to those immutable results. This chronology
+is recorded rather than represented as prelaunch theorem-byte binding.
+
+`EVIDENCE_VALIDATION.json`, SHA256
+`6713fc3dd35d6b5149defd0ad6795dce115d59ce7e1763078dbd672c6cf3f9bd`,
+checks all 39 independent frozen files, all 41 author files, 24 initial
+snapshot pairs, the 21 upstream source pairs, all 35 reviewer and 33
+author prelaunch byte/metadata bindings, and the receipt chronologies.
+All original bytes still matched. Thirty corresponding exact result strings
+match between the independently frozen output and the author output.
+This was bookkeeping comparison, not another scientific run or replay.
+
+## 9. Preserved failures, limits and remaining obligations
+
+The rejected shortcuts are meaningful and remain preserved:
+
+- At kappa_+, the earlier fixed-proof cutoff L2 allowance is .0016 and
+  the absolute localized-clock allowance is .00153; they do not support
+  the desired complete bound. These are failed sufficient estimates,
+  not lower bounds on actual errors or an apparatus no-go theorem.
+- Replacing the scalar Sf by 30 sigma would cost .001395 after the
+  Cg parity factor and fails the budget. The separate scalar integral
+  bound is essential.
+- The wrong transmission reciprocal has residual -2i. Omitting endpoint
+  jumps incorrectly predicts zero for a nonzero Fourier integral.
+  Omitting the localized column factor fails for aligned unit columns.
+- An affine-time phase replacement has an error allowance tJ sigma^2
+  growing without bound. The exact cosine phase is retained instead.
+
+There were no failed scientific executions in this review. The initial
+read-only check that the assigned review directory did not yet exist
+returned exit one; this is recorded descriptively in the prefreeze note,
+not misrepresented as a preserved raw scientific log. The author likewise
+preserves its separate read-only guessed-path failure. No streams or
+scientific attempts were discarded.
+
+No source repair obligation was found for this exact frozen theorem. Its
+remaining conditions are the stated exact ladder/matching/mass interfaces,
+supplied loop coherence and seed/vacuum resources, the actual common
+profile/scalar and full-output comparator, and the finite-horizon restriction.
+No joint calibration or ladder-coefficient extension follows automatically.
+No optimum onset, linewidth-precision requirement, exact exponential decay
+law, arbitrary accuracy, native phase/seed generation, sink/reset/reuse,
+practical cost, physical seconds or physical Hamiltonian/Record identification
+has been established. The published moment/position-identity and existing
+rational-profile/contour/scattering machinery retain their attribution;
+this check claims no broad mathematical novelty and used no new external
+literature result.
+
+Root qualification, coherent publication packaging, actual canonical checks,
+eventual integrated-main landing checks and any retained audit remain
+separate actions. No W/repository/Git/PR/shared-checkpoint/source-theorem/
+physical-axiom/audit or editable prompt file was changed. All new writes
+are confined to this review directory. No model/effort override,
+subdelegation, network call or other-chat message occurred.

@@ -1,0 +1,172 @@
+# Conditional thermal handoff into resonance-scale autonomous output
+
+Status: root composition proposal. The resonance and exact-product preparation
+sources are selectively qualified. The smaller-control interacting preparation
+and its staged release are still under a separate review; that alternative
+below remains conditional on its source being accepted. No new native supply
+or retained status is asserted.
+
+## Exact interfaces and common device
+
+The runtime source is the unchanged `resonant_family_candidate/CANDIDATE.md`
+(401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0),
+qualified at `resonant_family_root_qualification/ACCEPTANCE.json`
+(bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686).
+Its separate review is70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172.
+The exact-product preparation source is
+`emitter_preparation_independent/CANDIDATE.md`
+(b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227),
+qualified by root's full analytical review and byte checks at
+`preparation_product_root_qualification/ACCEPTANCE.json`
+(43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5).
+Root's alternative is `emitter_preparation_root/CANDIDATE.md`
+(416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0)
+and `STAGED_RELEASE_ADDENDUM.md`
+(1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885).
+All share the literal runtime at Git0e3993770a7a2dd872018f9dd3c76c2d9a624db9.
+
+Choose one exact fixed apparatus kappa in[1e-12,1e-8], sigma1e-6,L12,
+T=kappa^-2 and M=ceil(50T). Keep precisely the installed full-qubit H_M,
+including its finite far-end J n_(M-1), old K=2I+Z1Z2 and physical scalar
+c_phys=nu+2kappa. No matching parameter, loop phase, source port, old
+interaction or seed changes. M>=16 and N=M+3<=5*10^25+3<10^32.
+The preparation identities and supported release bounds hold for every
+finite M>=16; their earlier numerical demonstrations used the larger
+parent-family bound M<=5*10^31. Reducing the finite device as prescribed
+therefore preserves those thermal upper bounds. The resonance theorem,+not the older moment theorem, supplies the new interval[T,2T].
+
+Write E for the full seed isometry (excited emitter, vacuum source/clock),
+B_(kappa,t) for the actual normalized outgoing packet with empty emitter
+and source, and W for the unchanged target gate. The qualified runtime
+interface is, after embedding by extra clock vacuum,
+
+    ||exp(-it H_M)E - zeta exp(-i c_phys t)
+          B_(kappa,t) exp(-it K) W|| < F_res,  T<=t<=2T,
+    F_res < .004832.
+
+The infinite-source theorem is all-future; only this finite-horizon
+interface is used here. Its full packet, seven-coordinate and closed-tail
+budgets, fixed nonzero target residual and actual apparatus-dependent
+f_kappa rho_kappa remain inherited premises. There is no assertion of
+stability to simultaneous coefficient/phase/calibration errors.
+
+## General composition
+
+Let an actual preparation/release unitary U_setup satisfy
+
+    ||U_setup E - exp(-i Phi_setup) E exp(-is K)|| <= delta_release
+
+for its complete duration s. Suppose the actual delivered full joint input
+obeys ||rho - E rho_OR E*||_1 <= d_prep, with the exact unconditioned
+old/reference marginal. Tensor identities on passive references throughout.
+Apply this full trace comparison before evolving; then the supported
+isometry estimate and unitary invariance imply
+
+    ||exp(-itH_M)U_setup rho U_setup* exp(itH_M)
+      - I_total rho_OR I_total*||_1
+       < d_prep + 2 delta_release + 2 F_res,
+
+    I_total = zeta exp[-i(Phi_setup+c_phys t)]
+              B_(kappa,t) exp[-i(s+t)K] W.
+
+Only [W,K]=0 was used to combine chronological old aging. H_M and the
+actual setup Hamiltonians are not assumed to commute with K. The finite
+apparatus embedding includes every many-head sector; no runtime spectral
+claim is applied to a thermal bad component. The comparison packet has
+runtime index t, not s+t, and E0 is not added again to the runtime scalar.
+Every modeled clock/source/emitter/old/reference output is retained.
+
+## Alternative P: exact-product thermal preparation
+
+Use the independently derived positive controls yielding
+H_p=K+chi_p I+13Q, chi_p=nu+E0+u+4kappa and N-qubit defect count Q.
+Supply its auxiliary Gibbs marginal at beta10. Hold for one Hamiltonian
+time unit and release all added controls by the stated cubic over one
+unit. Then s=2 and
+
+    epsilon <= N exp(-130) <10^-22,
+    d_prep <= g(epsilon)=epsilon+sqrt(epsilon(4-3epsilon)) <3*10^-11,
+    delta_release <= kappa/sqrt(2),
+    Phi_setup = chi_p + c_seed + (u+2kappa)/2,
+    c_seed=nu+2kappa+E0.
+
+The complete unhalved trace bound is therefore strictly below
+
+    .009664 + .00000002000 + .00000000003
+       = .00966402003 < .009665.
+
+This uses only the safe sqrt(2)<2 and the qualified .004832 ceiling.
+The exact-product source's tighter older-parent numerical expression is
+not reused as a theorem for the shorter runtime. Its positive block and
+thermal identities remain valid because M only enters the defect count
+and endpoint pattern, both explicitly paid here.
+
+The controls add2M+10 positive blocks on existing sites/edges. Preparation
+source A load is39.288796602545442; old-site added loads are3.987514255266680
+and2.397277262241192 in addition to the unchanged old edge norm3. A supplied
+incident slew allowance30 supports the unit cubic release. Runtime old-site
+cap two returns only after release. Gibbs supply, all exact controls and
+their setup remain premises.
+
+## Alternative I: interacting thermal preparation with staged release
+
+This paragraph is a composition of the root source and addendum, whose
+independent source decision is pending at this freeze. It must not be
+promoted by the already accepted alternative P.
+
+The proposed positive controls give H_p=K+c_p I+H_aux with
+H_aux>=Delta D>=0 and unique seed ground. Take Delta1,beta100 and supply
+the auxiliary Gibbs marginal. The source uses a full eigenvalue min-max
+comparison, not operator monotonicity of the exponential or a free-Gibbs
+assumption, to obtain epsilon<=N exp(-100). Even the older, larger bound
+N<=5*10^31+3 gives g(epsilon)<2*10^-5; it therefore suffices for the new M.
+
+Keep both emitter complements on while every other control follows a
+common decreasing cubic over D_early=10000. The seed has zero residual
+through that whole interval, though it accumulates its exact phase and
+old aging. Remove the two emitter complements by a final common cubic
+over tau_e=1. Let b_A=2g_A,b_B=2g_B. Then s=D_early+1 and the source gives
+
+    delta_release <= kappa/sqrt(2),
+    Phi_setup = (c_seed+2kappa) D_early
+                 +(b_A+b_B)D_early/2 + c_seed+kappa.
+
+Consequently the complete unhalved trace bound is strictly below
+
+    .009664 + .00000002 + .00002 = .00968402 < .009685.
+
+There is no new quantum site. This route addsM+10 blocks: four two-body
+complements, three positive occupancy compensators, M+2 cold blank-site
+fields, and one emitter vacancy pin. Peak added source-A load is
+23.326419217626794. The larger preparation old-site loads are the same
+as alternative P, so old cap two is again exceeded during preparation.
+The early incident control bound is Delta+b_A and its cubic slew is
+3(Delta+b_A)/(2D_early)<.001; the late emitter incident slew is
+6kappa/tau_e<.001. Thus the supplied incident allowance .001 suffices.
+General asynchronous early release is a source-level possibility, but
+this concrete composition uses the common early cubic only. A long early
+interval is not free: D_early remains in the actual old age and phase,
+and persistent uncanceled emitter hopping would require its own integral
+error budget. Neither construction provides autonomous setup.
+
+## Resource and verification boundary
+
+At kappa1e-8 the finite device uses M5e17 clock qubits and M+5 total
+qubits; its runtime window is[1e16,2e16]. The corresponding elapsed
+observation windows from delivered preparation state are[2+T,2+2T]
+for P and[10001+T,10001+2T] for I. At kappa1e-12 the prescribed
+clock length is5e25. All times are declared Hamiltonian units, not seconds.
+
+These finite, conditional, complete-output bounds do not imply exact
+halting, an all-future finite device, practical resources, physical energy
+identification, independent retained audit, reset/reuse, cooling dynamics,
+native controllers or framework Record production. The supplied preparation
+marginal starts the protocol; no unaccounted thermalization-time promise
+is made. Signed work and extensive identity coefficients are the separate
+source formulas and must remain present in publication.
+
+No numerical scientific execution accompanies this short composition.
+The arithmetic above is explicit decimal addition of qualified or clearly
+pending ceilings; the load-bearing step is the operator/trace composition
+and exact source compatibility. Root requests a selective independent
+interface check before treating this composition as checked science.

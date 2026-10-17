@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-17T04:38:33.852724+00:00",
+  "mechanical_draft_only": true,
+  "source_acceptance": {
+    "resonance": "qualified conditional, see captured acceptance",
+    "exact_product_preparation": "qualified conditional, see captured acceptance",
+    "interacting_preparation": "qualified conditional with visible D>0 and scaled-isometry clarifications",
+    "staged_release": "qualified conditional with visible D>0 and scaled-isometry clarifications",
+    "composition": "qualified conditional P/I separately; original pending history preserved"
+  },
+  "root_transport_review": "See separate root transport record; no approval claimed by this mechanical task",
+  "canonical_scientific_execution": "See separate root execution record; this draft task performed no science",
+  "mutation_execution": "See separate root execution record; this draft task performed no mutations",
+  "publication": "See separate root publication record; this draft task performed no publication",
+  "retained_audit": "not performed",
+  "no_status_promotion": true,
+  "no_editable_prompt_changes": true
+}

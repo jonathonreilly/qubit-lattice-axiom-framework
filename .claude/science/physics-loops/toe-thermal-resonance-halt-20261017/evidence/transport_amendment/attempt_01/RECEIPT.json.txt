@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-10-17T04:54:39.427659+00:00",
+  "ended_utc": "2026-10-17T04:54:39.771262+00:00",
+  "wall_seconds": 0.2510197083465755,
+  "returncode": 0,
+  "timeout": false,
+  "cpu_user_seconds": 0.127721,
+  "cpu_system_seconds": 0.073324,
+  "max_rss_macos_bytes": 40648704,
+  "prelaunch_identity_before_spawn": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/attempt_01/PRELAUNCH.json",
+    "bytes": 700694,
+    "sha256": "8dfc2f85bec614926946e88a2abb8374729b1c0d9fac424cc658e760c2f163d8",
+    "device": 16777231,
+    "inode": 518539586,
+    "mtime_ns": 1792212879427009890
+  },
+  "binding_count": 1462,
+  "bindings_unchanged": true,
+  "prelaunch_unchanged": true,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/attempt_01/stdout.json",
+    "bytes": 840206,
+    "sha256": "f0a2dc5b119b9e99e147a761d69c85f8ef7ddeaabb194da6cbe5c7afc74afe11",
+    "device": 16777231,
+    "inode": 518539587,
+    "mtime_ns": 1792212879653230736
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/amendment_review/attempt_01/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "device": 16777231,
+    "inode": 518539588,
+    "mtime_ns": 1792212879427768048
+  },
+  "scientific_executions": 0,
+  "memory_cap": null,
+  "threads_requested": 1,
+  "threads_measured": false,
+  "runtime_pin_limit": "Interpreter and selected stdlib/extensions only; no OS/transitive-runtime closure claim."
+}

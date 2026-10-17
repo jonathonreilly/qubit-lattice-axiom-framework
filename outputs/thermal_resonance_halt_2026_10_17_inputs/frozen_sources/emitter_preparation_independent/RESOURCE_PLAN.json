@@ -1,0 +1,13 @@
+{
+  "task": "One independent preparation-to-runtime route for the literal finite PR9665 emitter",
+  "exact_source_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "family_note_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+  "write_boundary": "emitter_preparation_independent only",
+  "method": "Analytic positive-block cancellation, thermal full-space law, exact-seed Duhamel bound and complete-output composition; bounded algebraic corroboration only",
+  "scientific_caps": {"cpu_soft_hard_seconds": [20, 20], "external_wall_seconds": 30, "maximum_attempts": 2, "maximum_dense_matrix_dimension": 4, "maximum_diagnostic_clock_sites": 20, "parameter_grid_points": 0, "quadrature_calls": 0, "optimizer_calls": 0, "time_evolution_calls": 0, "os_memory_cap": null},
+  "decisive_checks": ["Full two-qubit positivity including the doubly occupied sector", "Sparse full-Pauli coefficient cancellation for finite endpoint patterns, symbolic in kappa", "Exact scalar and seed residual Gram identities", "Exact incident norm/load/count formulas", "Rational certificates for the finite-temperature and complete error budgets", "Cubic release area and slew"],
+  "uniformity_boundary": "Finite diagnostic lengths do not prove arbitrary-length behavior; the written term-by-term algebra does. The kappa range is handled by symbolic identities and monotone exact bounds, not sampling.",
+  "prelaunch_policy": "Copy the actual program, serialize input/source/interpreter/SymPy entry and package-metadata identities plus caps, flush/fsync/close PRELAUNCH.json before spawning. Preserve complete stdout/stderr, exit, timing and every failed attempt.",
+  "independence": "Root's competing mechanism is withheld until this derivation freezes. Same model/effort and substantial inherited emitter authorship/source exposure. No subdelegation or claim of a blind whole-dependency review.",
+  "forbidden": ["worktree/Git/PR/checkpoint/prompt/axiom/audit changes", "other-chat messages", "model or reasoning override", "claiming native cooling or a derived controller", "discarding quantum outputs", "arbitrary-accuracy runtime claim"]
+}

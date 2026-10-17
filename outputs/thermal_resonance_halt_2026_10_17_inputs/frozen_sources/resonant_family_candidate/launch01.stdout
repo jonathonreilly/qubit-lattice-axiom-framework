@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "wrapper_wall_seconds": 0.08568883407860994,
+  "child_user_cpu_seconds": 0.025705,
+  "child_system_cpu_seconds": 0.009440999999999998,
+  "child_peak_rss_raw": 22298624,
+  "prelaunch_unchanged": true,
+  "all_bindings_unchanged": true,
+  "all_original_source_contents_unchanged": true,
+  "source_count": 21,
+  "binding_count": 33
+}

@@ -1,0 +1,34 @@
+from pathlib import Path
+import ast, datetime, hashlib, json, os, platform, resource, shutil, subprocess, sys, time, _hashlib
+D=Path(__file__).resolve().parent;A=D/'attempt_01';A.mkdir(exist_ok=False)
+def save(p,b):
+ with p.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+def ident(p):
+ p=p.resolve();s=p.stat();b=p.read_bytes();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'device':s.st_dev,'inode':s.st_ino,'mtime_ns':s.st_mtime_ns}
+save(A/'check_transport.py',(D/'check_transport.py').read_bytes())
+save(A/'launch_static_review.py',Path(__file__).read_bytes())
+snap=json.loads((D/'INPUT_SNAPSHOTS.json').read_text());P=Path(snap['packet_root'])
+packet=json.loads((D/'inputs/packet_metadata/PACKET_MANIFEST.json').read_text())
+paths={A/'check_transport.py',A/'launch_static_review.py',D/'INPUT_SNAPSHOTS.json',D/'RESOURCE_PLAN.json',D/'PLAN.md',D/'ORIGINAL_SOURCE_MANIFEST.json',D/'capture_inputs.py'}
+paths.update(D/r['snapshot'] for r in snap['snapshot_files']);paths.update(D/'inputs'/x for x in ['resonance_original.py','product_preparation_original.py','interacting_preparation_original.py','WRAPPER_DRAFT.md'])
+paths.update(P/r['path'] for r in packet['files']);paths.update([P/'FREEZE.json',P/'PACKET_MANIFEST.json'])
+paths.update(Path(x).resolve() for x in [sys.executable,ast.__file__,hashlib.__file__,json.__file__,Path.__module__ and __import__('pathlib').__file__,resource.__file__,_hashlib.__file__])
+bindings=[ident(p) for p in sorted(paths)]
+plan=json.loads((D/'RESOURCE_PLAN.json').read_text());assert len(bindings)<=plan['maximum_inspected_files'];assert sum(r['bytes'] for r in bindings)<=plan['maximum_total_input_bytes']
+cmd=[sys.executable,'-B',str(A/'check_transport.py'),'--root',str(D)]
+pre={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'command':cmd,'bindings':bindings,'resource_plan':plan,'runtime':{'python':sys.version,'platform':platform.platform(),'executable':ident(Path(sys.executable)),'closure':'Interpreter plus selected stdlib/extension files only; dynamic loader/OS and complete stdlib dependency closure not claimed.'},'no_science':True}
+save(A/'PRELAUNCH.json',(json.dumps(pre,indent=2)+'\n').encode());fd=os.open(A,os.O_RDONLY);os.fsync(fd);os.close(fd)
+# This identity is captured after fsync and before subprocess creation.
+pre_identity=ident(A/'PRELAUNCH.json')
+env=os.environ.copy();env.update(plan['requested_thread_environment']);env['PYTHONDONTWRITEBYTECODE']='1'
+def caps():resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();t=time.monotonic();before=resource.getrusage(resource.RUSAGE_CHILDREN);timeout=False
+with (A/'stdout.json').open('wb') as out,(A/'stderr.txt').open('wb') as err:
+ try:process=subprocess.run(cmd,stdout=out,stderr=err,cwd=str(D),env=env,preexec_fn=caps,timeout=45);rc=process.returncode
+ except subprocess.TimeoutExpired:timeout=True;rc=None
+ out.flush();err.flush();os.fsync(out.fileno());os.fsync(err.fileno())
+after=resource.getrusage(resource.RUSAGE_CHILDREN)
+post=[ident(Path(r['path'])) for r in bindings]
+receipt={'started_utc':start,'ended_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'wall_seconds':time.monotonic()-t,'returncode':rc,'timeout':timeout,'cpu_user_seconds':after.ru_utime-before.ru_utime,'cpu_system_seconds':after.ru_stime-before.ru_stime,'max_rss_macos_bytes':after.ru_maxrss,'limits':plan,'binding_count':len(bindings),'all_prelaunch_bindings_unchanged':post==bindings,'prelaunch_identity_captured_before_spawn':pre_identity,'prelaunch_unchanged':ident(A/'PRELAUNCH.json')==pre_identity,'stdout':ident(A/'stdout.json'),'stderr':ident(A/'stderr.txt'),'scientific_executions':0,'runtime_pin_limit':pre['runtime']['closure']}
+save(A/'RECEIPT.json',(json.dumps(receipt,indent=2)+'\n').encode())
+print(json.dumps({k:v for k,v in receipt.items() if k not in ('limits',)},indent=2))

@@ -1,0 +1,295 @@
+"""Build a mechanical publication overlay; never execute a scientific body."""
+from pathlib import Path
+import ast, copy, datetime, difflib, hashlib, json, subprocess, re, posixpath
+D=Path(__file__).resolve().parent
+N=D.parent
+W=N.parent/'correlation_worktree'
+BASE='0e3993770a7a2dd872018f9dd3c76c2d9a624db9'
+C=D/'canonical'
+PREFIX='outputs/thermal_resonance_halt_2026_10_17_inputs'
+NOTE='docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md'
+PRIMARY='scripts/thermal_resonance_halt_2026_10_17.py'
+PARENT='scripts/emitter_coupling_family_2026_10_17.py'
+NOW=datetime.datetime.now(datetime.timezone.utc).isoformat()
+def sha(b):return hashlib.sha256(b).hexdigest()
+def dump(x):return json.dumps(x,indent=2,ensure_ascii=False)+'\n'
+def put(path,raw):
+ p=C/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw if isinstance(raw,bytes) else raw.encode())
+def write(name,obj):put(PREFIX+'/'+name,dump(obj))
+def gitread(path):return subprocess.check_output(['git','show',BASE+':'+path],cwd=W)
+def adump(n):return ast.dump(n,include_attributes=False)
+def ah(n):return sha(adump(n).encode())
+def identify(p):
+ b=p.read_bytes();s=p.stat();return {'path':str(p),'bytes':len(b),'sha256':sha(b),'device':s.st_dev,'inode':s.st_ino,'mtime_ns':s.st_mtime_ns}
+assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=W,text=True).strip()==BASE
+assert not C.exists(), 'New build destination required; preserve every earlier build.'
+C.mkdir()
+scopes=[]; source_records=[]
+def packet(name,manifest,field='files',extra=()):
+ root=N/name;mp=root/manifest;j=json.loads(mp.read_text());rows=j[field]
+ selected={x['path']:x for x in rows}
+ selected[manifest]={'path':manifest}
+ for x in extra:selected.setdefault(x,{'path':x})
+ scope={'packet':name,'selector':manifest,'selector_identity':identify(mp),'selected_paths':sorted(selected),'selection':'Finite manifest rows plus explicitly named freeze/addenda; no directory recursion'}
+ scopes.append(scope)
+ for rel,row in sorted(selected.items()):
+  p=root/rel;b=p.read_bytes()
+  if 'sha256'in row:assert sha(b)==row['sha256'] and len(b)==row['bytes'],str(p)
+  source_records.append({'packet':name,'relative':rel,'absolute':str(p),'raw':b,'identity':identify(p)})
+def explicit(name,rels):
+ scopes.append({'packet':name,'selector':'explicit named files','selected_paths':list(rels),'selection':'Exact explicit set; later files excluded'})
+ for rel in rels:
+  p=N/name/rel;source_records.append({'packet':name,'relative':rel,'absolute':str(p),'raw':p.read_bytes(),'identity':identify(p)})
+packet('resonant_family_candidate','FILE_MANIFEST.json',extra=['FREEZE.json'])
+packet('resonant_family_review','FILE_MANIFEST.json',extra=['FREEZE.json'])
+explicit('resonant_family_root_qualification',['ACCEPTANCE.json','QUALIFICATION.md'])
+packet('emitter_preparation_independent','FILE_MANIFEST.json','members',extra=['FREEZE.json'])
+explicit('preparation_product_root_qualification',['ACCEPTANCE.json','REVIEW.md'])
+packet('emitter_preparation_root','FILE_MANIFEST.json',extra=['STAGED_RELEASE_ADDENDUM.md','STAGED_RELEASE_FREEZE.json'])
+packet('emitter_preparation_independent/comparison_review','REVIEW_MANIFEST.json','members',extra=['ANALYTICAL_FREEZE.json'])
+explicit('preparation_resonance_composition',['CANDIDATE.md','FREEZE.json','historical_format_v1/CANDIDATE.md','historical_format_v1/FREEZE.json'])
+explicit('thermal_resonance_integration',['SCOPE.md','WRAPPER_DRAFT.md','BRANCH_START.json'])
+explicit('preparation_interacting_root_qualification',['ACCEPTANCE.json','CLARIFICATION.md'])
+packet('preparation_resonance_composition_review','FILE_MANIFEST.json',extra=['FREEZE.json'])
+explicit('preparation_resonance_composition_qualification',['ACCEPTANCE.json'])
+assert sha((N/'thermal_resonance_integration/WRAPPER_DRAFT.md').read_bytes())=='5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7'
+# Finite known parent closure supplies dedup candidates, not executable imports.
+parent_program=gitread(PARENT).decode();ptree=ast.parse(parent_program)
+paths={PARENT,'docs/WRITING_VOICE_GUIDE_2026-04-25.md'}
+for node in ptree.body:
+ if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in node.targets):paths.update(ast.literal_eval(node.value))
+for name in ['outputs/emitter_coupling_family_2026_10_17_inputs/ARTIFACT_MANIFEST.json','outputs/product_seed_emitter_2026_10_17_inputs/ARTIFACT_MANIFEST.json']:
+ j=json.loads(gitread(name));paths.add(name);paths.update(x['path']for x in j['files'])
+for src in source_records:
+ if src['relative'] in ('SOURCE_MANIFEST.json','SOURCE_MAP.json'):
+  j=json.loads(src['raw'])
+  for key in ('files','sources','entries'):
+   for row in j.get(key,[]):
+    if 'repository_path'in row:paths.add(row['repository_path'])
+q='.claude/science/physics-loops/toe-emitter-coupling-family-20261017'
+paths.update(subprocess.check_output(['git','ls-tree','-r','--name-only',BASE,'--',q],cwd=W,text=True).splitlines())
+parent_index={};parent_records=[]
+for path in sorted(paths):
+ raw=gitread(path);h=sha(raw)
+ assert (W/path).read_bytes()==raw, 'parent checkout differs: '+path
+ parent_index.setdefault((h,len(raw)),path)
+ parent_records.append({'path':path,'sha256':h,'bytes':len(raw),'commit':BASE})
+# Raw history maps to exact tracked parent bytes or one new byte-preserved copy.
+byhash={};mapped={};rows=[]
+for src in source_records:
+ raw=src['raw'];key=(sha(raw),len(raw));label=src['packet']+'/'+src['relative']
+ if key in parent_index:path=parent_index[key];transport='reuse_exact_tracked_parent_bytes'
+ elif key in byhash:path=byhash[key];transport='reuse_exact_new_source_bytes'
+ else:
+  rel=label+('.txt' if label.endswith('.md') else '')
+  path=PREFIX+'/frozen_sources/'+rel;put(path,raw);byhash[key]=path;transport='byte_preserved_copy'
+ row={'source_label':label,'source_path':src['absolute'],'path':path,'sha256':key[0],'bytes':key[1],'transport':transport,'captured_identity':src['identity']}
+ rows.append(row);mapped[label]=row
+write('SOURCE_MAP.json',{'created_utc':NOW,'base_commit':BASE,'scope':'Finite frozen source scopes; original absolute paths are historical labels, never resolver fallbacks. No source decision is promoted by copying.','scopes':scopes,'files':rows})
+def ref(label):return {k:mapped[label][k] for k in ('path','bytes','sha256')}
+# Store source infrastructure pins without importing its scientific program.
+infra=[]
+for name in ('FrozenInputs','verify_artifacts'):
+ n=next(n for n in ptree.body if isinstance(n,(ast.ClassDef,ast.FunctionDef))and n.name==name)
+ infra.append(ast.get_source_segment(parent_program,n))
+write('INFRASTRUCTURE_SOURCE.json',{'parent_commit':BASE,'parent_primary':{'path':PARENT,'sha256':sha(parent_program.encode()),'bytes':len(parent_program.encode())},'extracted_definitions':[{ 'name':name,'ast_sha256':ah(next(n for n in ptree.body if getattr(n,'name',None)==name))}for name in ('FrozenInputs','verify_artifacts')],'changes':'None inside these definitions. Module AUDIT_TIMEOUT_SEC becomes45; actual CPU30/30 is set only by guarded main(). Imports are inert.'})
+roles={
+ 'resonance_author':{'program':'resonant_family_candidate/check_bounds.py','function':'run_resonance_author','historical_limits':{'cpu_soft_hard_seconds':[20,21],'external_wall_seconds':30},'aliases':{}},
+ 'product_preparation_author':{'program':'emitter_preparation_independent/check_preparation.py','function':'run_product_preparation_author','historical_limits':{'cpu_soft_hard_seconds':[20,20],'external_wall_seconds':30},'aliases':{}},
+ 'interacting_preparation_author':{'program':'emitter_preparation_root/check_preparation.py','function':'run_interacting_preparation_author','historical_limits':{'cpu_soft_hard_seconds':[15,15],'external_wall_seconds':30},'aliases':{}}
+}
+for role,spec in roles.items():spec['aliases']['__original_program__']=ref(spec['program'])
+for rel in ('SOURCE_MANIFEST.json','SCALAR_INPUTS.json','inputs/interval.json'):
+ roles['resonance_author']['aliases'][rel]=ref('resonant_family_candidate/'+rel)
+for row in json.loads((N/'resonant_family_candidate/SOURCE_MANIFEST.json').read_text())['entries']:
+ roles['resonance_author']['aliases'][row['snapshot']]=ref('resonant_family_candidate/'+row['snapshot'])
+for rel in ('inputs/parameters.json','inputs/family.md'):roles['product_preparation_author']['aliases'][rel]=ref('emitter_preparation_independent/'+rel)
+write('INPUT_MAP.json',{'format':'finite role/logical identity to checked repository-relative bytes','no_absolute_fallback':True,'actual_canonical_plan':{'cpu_soft_hard_seconds':[30,30],'external_wall_seconds':45,'maximum_dense_dimension':4},'roles':roles})
+# AST transport: each event substitutes whole path/prelaunch/cap/report statements,
+# or one declared expression. Every source statement receives an explicit ledger.
+functions=[];ledgers=[]
+def allnodes(node,path=()):
+ yield path,node
+ for field,val in ast.iter_fields(node):
+  if isinstance(val,list):
+   for i,v in enumerate(val):
+    if isinstance(v,ast.AST):yield from allnodes(v,path+(field,i))
+  elif isinstance(val,ast.AST):yield from allnodes(val,path+(field,))
+def code_expr(s):return ast.parse(s,mode='eval').body
+def code_stmts(s):return ast.parse(s).body
+for role,spec in roles.items():
+ original=(N/spec['program']).read_text();orig=ast.parse(original);tree=copy.deepcopy(orig);events=[]
+ for path,node in allnodes(tree):node._source_path=list(path)
+ def event(old,new,reason,kind='statement'):
+  if not isinstance(new,list):new=[new]
+  token=len(events)
+  for i,n in enumerate(new):n._event_id=token;n._event_slot=i
+  events.append({'event_id':token,'source_ast_path':old._source_path,'kind':kind,'reason':reason,'original_ast_sha256':ah(old),'original_source':ast.get_source_segment(original,old),'original_ast':adump(old),'replacement_ast_sha256':[ah(x)for x in new],'replacement_source':[ast.unparse(x)for x in new]})
+  return new if kind=='statement' else new[0]
+ class Adapt(ast.NodeTransformer):
+  def visit_Assign(self,n):
+   text=ast.get_source_segment(original,n)
+   names=[t.id for t in n.targets if isinstance(t,ast.Name)]
+   if role=='resonance_author':
+    if names in [['p'],['a'],['D'],['prepath'],['pre']]:return event(n,code_stmts('pass'),'Historical argument/prelaunch path removed; portable inputs and outer serialized runner own transport.')
+    if text.startswith('source_manifest='):return event(n,code_stmts("source_manifest=json.loads(inputs.read_text('resonance_author','SOURCE_MANIFEST.json'))"),'Finite checked source-manifest read.')
+    if text.startswith('raw=(D/entry'):return event(n,code_stmts("raw=inputs.read_bytes('resonance_author',entry['snapshot'])"),'Finite source-snapshot alias read; original checksum assertion retained.')
+    if text.startswith('data={k:F'):return event(n,code_stmts("data={k:F(v) for k,v in json.loads(inputs.read_text('resonance_author','SCALAR_INPUTS.json')).items()}"),'Scalar input path only; rational conversion unchanged.')
+    if text.startswith('point=json'):return event(n,code_stmts("point=json.loads(inputs.read_text('resonance_author','inputs/interval.json'))['exact_parameters']"),'Exact parameter input path only.')
+    if text.startswith('out["source_identity"]'):return event(n,code_stmts("out['source_identity']={'original_program_sha256':sha256(inputs.original_program_bytes('resonance_author')).hexdigest(),'source_manifest_sha256':sha256(inputs.read_bytes('resonance_author','SOURCE_MANIFEST.json')).hexdigest(),'input_count':len(source_manifest['entries']),'executed_primary_sha256':sha256(Path(__file__).read_bytes()).hexdigest(),'prelaunch_binding':'See actual separate root-owned canonical execution receipt; historical receipt is not this run.'}"),'Report identity now distinguishes original source, actual primary and external prelaunch.')
+   if role=='product_preparation_author':
+    if names in [['A'],['pre'],['D']]:return event(n,code_stmts('pass'),'Historical attempt directory/prelaunch assignment removed; outer runner owns binding.')
+    if text.startswith('data=json.loads'):return event(n,code_stmts("data=json.loads(inputs.read_text('product_preparation_author','inputs/parameters.json'))"),'Finite exact-parameter alias replaces historical path.')
+   return self.generic_visit(n)
+  def visit_For(self,n):
+   if role=='resonance_author'and ast.unparse(n.iter)=="pre['bindings']":return event(n,code_stmts('pass'),'Historical device/inode bindings do not describe a portable rerun. Manifest validation and actual runner prelaunch replace them.')
+   if role=='product_preparation_author'and ast.unparse(n.iter)=="pre['bindings']":return event(n,code_stmts('pass'),'Historical prelaunch checks replaced by finite artifact hashes and root-owned actual prelaunch.')
+   return self.generic_visit(n)
+  def visit_Assert(self,n):
+   if role=='product_preparation_author'and 'getrlimit' in ast.unparse(n):return event(n,code_stmts("assert resource.getrlimit(resource.RLIMIT_CPU)==(30,30)"),'Actual combined CPU30/30 replaces historical CPU20/20; all scientific assertions unchanged.')
+   return self.generic_visit(n)
+  def visit_Expr(self,n):
+   text=ast.get_source_segment(original,n)
+   if role=='resonance_author':
+    if text.startswith('p.add_argument'):return event(n,code_stmts('pass'),'Outer guarded main supplies portable input map; no source CLI parsing.')
+    if text.startswith('ck("cpu_limit_is_predeclared"'):return event(n,code_stmts("ck('cpu_limit_is_predeclared',resource.getrlimit(resource.RLIMIT_CPU)==(30,30))"),'Actual shared CPU30/30 replaces historical20/21; same transport check label.')
+    if isinstance(n.value,ast.Call)and isinstance(n.value.func,ast.Name)and n.value.func.id=='print' and 'else' in n._source_path:
+     pass
+    if isinstance(n.value,ast.Call)and isinstance(n.value.func,ast.Name)and n.value.func.id=='print'and 'orelse' in n._source_path:
+     return event(n,code_stmts("out['_canonical_execution']=inputs.execution_metadata('resonance_author')\nreturn out"),'Successful stdout becomes returned payload with honest current/historical execution metadata; exception stream retained.')
+   if role=='product_preparation_author'and text.startswith('print(json.dumps(report'):
+    return event(n,code_stmts("report['_canonical_execution']=inputs.execution_metadata('product_preparation_author')\nreturn report"),'Return complete source report; append status-neutral execution metadata.')
+   if role=='interacting_preparation_author'and text.startswith('print(json.dumps(report'):
+    return event(n,code_stmts("report['_canonical_execution']=inputs.execution_metadata('interacting_preparation_author')\nreturn report"),'Return source main report; append current/historical limit metadata.')
+   return self.generic_visit(n)
+  def visit_Call(self,n):
+   if role=='product_preparation_author'and ast.unparse(n)=="(D / 'inputs/family.md').read_text()":return event(n,code_expr("inputs.read_text('product_preparation_author','inputs/family.md')"),'Finite parent-family prose alias; inherited rational-budget assertion unchanged.','expression')
+   return self.generic_visit(n)
+  def visit_Dict(self,n):
+   if role=='product_preparation_author':
+    for i,k in enumerate(n.keys):
+     if isinstance(k,ast.Constant)and k.value=='external_wall_seconds':
+      old=n.values[i];n.values[i]=event(old,code_expr("inputs.shared_limits()['external_wall_cap_seconds']"),'Actual combined wall45 report replaces historical30; raw evidence unchanged.','expression')
+   return self.generic_visit(n)
+  def visit_If(self,n):
+   if role=='interacting_preparation_author'and ast.unparse(n.test)=="__name__ == '__main__'":return event(n,code_stmts('return main()'),'Nested source main is invoked only by selected author function, never by module import.')
+   return self.generic_visit(n)
+ adapted=Adapt().visit(tree);ast.fix_missing_locations(adapted)
+ # Record event destination paths in the exact function body (module representation).
+ destinations={}
+ for path,node in allnodes(adapted):
+  if hasattr(node,'_event_id'):destinations.setdefault(node._event_id,[]).append({'path':list(path),'slot':node._event_slot})
+ for e in events:e['adapted_paths']=sorted(destinations[e['event_id']],key=lambda x:x['slot'])
+ # Statement coverage includes parents enclosing transport changes; untouched
+ # descendants retain their own exact AST identity and scientific content.
+ surviving={tuple(n._source_path):(path,n)for path,n in allnodes(adapted)if hasattr(n,'_source_path')}
+ statements=[]
+ for path,node in allnodes(orig):
+  if not isinstance(node,ast.stmt):continue
+  dst=surviving.get(path)
+  direct=[e['event_id']for e in events if tuple(e['source_ast_path'])==path]
+  nested=[e['event_id']for e in events if tuple(e['source_ast_path'][:len(path)])==path]
+  enclosing=[e['event_id']for e in events if tuple(path[:len(e['source_ast_path'])])==tuple(e['source_ast_path'])]
+  state=('unchanged_AST'if dst and ah(dst[1])==ah(node)else 'transport_replacement'if direct else 'contains_transport_edit'if dst else 'inside_removed_transport_statement')
+  assert state=='unchanged_AST'or direct or nested or enclosing,(role,path,state)
+  statements.append({'source_ast_path':list(path),'source_lines':[node.lineno,node.end_lineno],'source_ast_sha256':ah(node),'status':state,'adapted_ast_path':list(dst[0])if dst else None,'adapted_ast_sha256':ah(dst[1])if dst else None,'transport_event_ids':sorted(set(direct+nested+enclosing))})
+ body=ast.unparse(adapted)
+ # repr keeps multiline docstring value invariant under function indentation.
+ if isinstance(adapted.body[0],ast.Expr) and isinstance(adapted.body[0].value,ast.Constant) and isinstance(adapted.body[0].value.value,str):
+  body=repr(adapted.body[0].value.value)+'\n'+ast.unparse(ast.Module(body=adapted.body[1:],type_ignores=[]))
+ fn='def '+spec['function']+'(inputs):\n'+'\n'.join('    '+s if s else ''for s in body.splitlines())+'\n'
+ compile(fn,spec['function'],'exec')
+ functions.append(fn)
+ ledgers.append({'role':role,'function':spec['function'],'source':ref(spec['program']),'original_program_sha256':sha(original.encode()),'original_module_ast_sha256':ah(orig),'adapted_body_ast_sha256':ah(ast.parse(body)),'events':events,'statements':statements,'statement_count':len(statements),'scientific_expressions_assertions':'Unchanged except explicitly classified transport identity/cap checks; reversal verifier must reconstruct the entire original AST.'})
+ (D/('DIFF_'+role+'.patch')).write_text(''.join(difflib.unified_diff(original.splitlines(True),(body+'\n').splitlines(True),fromfile=spec['program'],tofile=PRIMARY+':'+spec['function'])))
+# The complete proof body bytes are kept unchanged, including historical labels. Only Markdown destination bytes in the product
+# body are rewritten through a finite reversible target map.
+wrapper=(N/'thermal_resonance_integration/WRAPPER_DRAFT.md').read_text()
+wrapper=wrapper.replace('canonical_execution: see_separate_execution_record','canonical_execution: pending_root_owned_execution')
+wrapper += '\n## Portable sources and pending decisions\n\nThe [source map](../'+PREFIX+'/SOURCE_MAP.json) resolves each historical label to exact repository bytes. The [publication status](../'+PREFIX+'/PUBLICATION_STATUS.json) records the draft boundary. The [transport ledger](../'+PREFIX+'/TRANSPORT_EDIT_LEDGER.json) describes every executable adaptation; the [reproduction plan](../'+PREFIX+'/REPRODUCTION_PLAN.json) distinguishes historical evidence from the unexecuted canonical plan.\n\nThe preparation checkers retain their original parent-runtime numerical examples. They do not recompute the shorter resonance composition or the staged addendum; those analytical interfaces use the separately recorded source/interface qualifications. Their historical report status strings do not decide current source acceptance.\n\nThe complete embedded bodies below retain their historical frontmatter, pending labels and local path strings. Four bodies are byte-identical; in the exact-product body only Markdown link destinations are adapted to portable targets. The raw originals, exact link-target map and reversible body map preserve every other byte.\n'
+bodies=[('Resonance family','resonant_family_candidate/CANDIDATE.md'),('Exact-product preparation','emitter_preparation_independent/CANDIDATE.md'),('Interacting preparation','emitter_preparation_root/CANDIDATE.md'),('Staged release','emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md'),('Preparation/resonance composition','preparation_resonance_composition/CANDIDATE.md')]
+for title,label in [('Resonance qualification','resonant_family_root_qualification/ACCEPTANCE.json'),('Exact-product qualification','preparation_product_root_qualification/ACCEPTANCE.json'),('Interacting qualification','preparation_interacting_root_qualification/ACCEPTANCE.json'),('Interacting wording clarification','preparation_interacting_root_qualification/CLARIFICATION.md'),('Composition qualification','preparation_resonance_composition_qualification/ACCEPTANCE.json')]:
+ wrapper+='\n['+title+']('+posixpath.relpath(ref(label)['path'],'docs')+').\n'
+note=wrapper.encode();bodymap=[];linkmap=[]
+for title,label in bodies:
+ raw=(N/label).read_bytes();rendered=raw;edits=[]
+ if label=='emitter_preparation_independent/CANDIDATE.md':
+  for m in re.finditer(rb'\]\(([^)]+)\)',raw):
+   target=m.group(1).decode()
+   destination=(PREFIX+'/SOURCE_MAP.json'if target=='inputs/'else ref('emitter_preparation_independent/'+target)['path'])
+   replacement=posixpath.relpath(destination,'docs').encode()
+   edits.append({'original_start':m.start(1),'original_end':m.end(1),'original_target':target,'replacement_target':replacement.decode(),'resolved_repository_path':destination})
+  for e in reversed(edits):rendered=rendered[:e['original_start']]+e['replacement_target'].encode()+rendered[e['original_end']:]
+  offset=0
+  for e in edits:
+   e['embedded_start']=e['original_start']+offset;e['embedded_end']=e['embedded_start']+len(e['replacement_target'].encode())
+   offset+=len(e['replacement_target'].encode())-(e['original_end']-e['original_start'])
+  linkmap.append({'source_label':label,'edits':edits,'original_sha256':sha(raw),'embedded_sha256':sha(rendered)})
+  (D/'PROOF_LINK_TARGET_DIFF.patch').write_text(''.join(difflib.unified_diff(raw.decode().splitlines(True),rendered.decode().splitlines(True),fromfile=label,tofile=NOTE+':'+label)))
+ note+=('\n\n## Preserved source: '+title+'\n\n<!-- BEGIN PRESERVED SOURCE '+label+' -->\n').encode();start=len(note);note+=rendered;end=len(note);note+=('\n<!-- END PRESERVED SOURCE '+label+' -->\n').encode()
+ bodymap.append({'title':title,'source_label':label,'original':ref(label),'note_byte_start_inclusive':start,'note_byte_end_exclusive':end,'embedded_sha256':sha(rendered),'bytes':len(rendered),'original_bytes':len(raw),'body_changed':bool(edits),'link_target_edits':edits,'mathematical_and_non_target_bytes_unchanged':True})
+put(NOTE,note)
+(D/'WRAPPER.md').write_text(wrapper)
+(D/'WRAPPER_DIFF.patch').write_text(''.join(difflib.unified_diff((N/'thermal_resonance_integration/WRAPPER_DRAFT.md').read_text().splitlines(True),wrapper.splitlines(True),fromfile='root/WRAPPER_DRAFT.md',tofile='overlay/wrapper')))
+write('PROOF_BODY_MAP.json',{'note':NOTE,'bodies':bodymap,'target_only_link_map':linkmap,'four_bodies_byte_identical':True,'fifth_reversible_target_only_change':True})
+write('PUBLICATION_STATUS.json',{'created_utc':NOW,'mechanical_draft_only':True,'source_acceptance':{'resonance':'qualified conditional, see captured acceptance','exact_product_preparation':'qualified conditional, see captured acceptance','interacting_preparation':'qualified conditional with visible D>0 and scaled-isometry clarifications','staged_release':'qualified conditional with visible D>0 and scaled-isometry clarifications','composition':'qualified conditional P/I separately; original pending history preserved'},'root_transport_review':'pending','canonical_scientific_execution':'not performed; root owned','mutation_execution':'not performed','publication':'not performed','retained_audit':'not performed','no_status_promotion':True,'no_editable_prompt_changes':True})
+write('REPRODUCTION_PLAN.json',{'scope':'Three author corroboration bodies only; no parent science import, no independent reviewer replay, no giant-state allocation. Root authorizes and records actual execution after transport review.','command':'python3 -B scripts/thermal_resonance_halt_2026_10_17.py through canonical execute_and_write_cache','actual_shared_cpu_soft_hard_seconds':[30,30],'external_wall_cap_seconds':45,'maximum_dense_matrix_dimension':4,'scientific_function_order':list(roles),'historical_limits':{k:v['historical_limits']for k,v in roles.items()},'transport_prelaunch':'Root must serialize/fsync actual launcher, interpreter, primary and every declared input plus selected runtime identities before starting scientific execution; all streams/failures retained. Imported module itself is inert.','output':'outputs/thermal_resonance_halt_2026_10_17.json','not_included':'Composition arithmetic or staged-release new checker; analytical qualification remains separate. No mutations yet.','later_gates':'Focused publication checks now; full integrated-main gates governed by current review-loop conformance section12 later.'})
+header='''"""Portable author-checker replay for conditional thermal/resonance output.
+
+Current review, qualification and execution status lives in the paired packet.
+Import is inert: no scientific function, input read, output write or CPU-limit
+change occurs. Guarded main alone starts the combined CPU30/30 calculation;
+the required external canonical runner enforces the shared wall45 limit.
+The three original scientific bodies are transported with explicit AST maps.
+Historical receipts remain historical; this replay is not a theorem review.
+"""
+from pathlib import Path
+import hashlib
+import json
+import resource
+import time
+
+AUDIT_TIMEOUT_SEC = 45
+REPO = Path(__file__).resolve().parents[1]
+INPUT_ROOT = REPO / 'outputs/thermal_resonance_halt_2026_10_17_inputs'
+
+'''
+main='''def main():
+    resource.setrlimit(resource.RLIMIT_CPU, (30, 30))
+    started = time.monotonic()
+    verify_artifacts()
+    inputs = FrozenInputs(REPO, INPUT_ROOT / 'INPUT_MAP.json')
+    reports = {
+        'resonance_author': run_resonance_author(inputs),
+        'product_preparation_author': run_product_preparation_author(inputs),
+        'interacting_preparation_author': run_interacting_preparation_author(inputs),
+    }
+    output = {
+        'scope': 'Three source-exposed author corroboration bodies. Analytical source/interface acceptance and independent review remain separate.',
+        'reports': reports,
+        'actual_shared_process_limits': inputs.shared_limits(),
+        'maximum_dense_matrix_dimension': 4,
+        'elapsed_seconds': time.monotonic() - started,
+        'input_sha256': {name: hashlib.sha256((REPO / name).read_bytes()).hexdigest() for name in AUDIT_INPUT_PATHS},
+        'resolved_reads': inputs.reads,
+        'limits': 'Exact nominal family, supplied thermal marginal and controls; no dynamics, cooling, joint calibration, practical realization, retained audit or finite all-future claim.'}
+    (REPO / 'outputs/thermal_resonance_halt_2026_10_17.json').write_text(json.dumps(output, indent=2) + '\\n', encoding='utf-8')
+    print(json.dumps({'scope': output['scope'], 'function_bodies_completed': len(reports),
+                      'actual_shared_process_limits': output['actual_shared_process_limits'],
+                      'resonance_status': reports['resonance_author']['status'],
+                      'maximum_dense_matrix_dimension': 4}, indent=2))
+'''
+write('TRANSPORT_EDIT_LEDGER.json',{'created_utc':NOW,'source_to_function':ledgers,'actual_shared_limits':{'cpu':[30,30],'wall':45},'wrapper_strategy':'Functions contain source ASTs; transport events reversible. No parent scientific program is imported.','primary_path':PRIMARY,'primary_sha256_binding':'Exact primary is bound by static receipt and later canonical prelaunch/cache; no manifest self-hash cycle.'})
+allpaths={NOTE,PARENT,*[x['path']for x in rows]}
+allpaths.update(str(p.relative_to(C))for p in (C/PREFIX).iterdir()if p.is_file())
+allpaths.add(PREFIX+'/ARTIFACT_MANIFEST.json')
+primary=header+'\n\n'.join(infra)+'\n\n'+'\n\n'.join(functions)+'\n\n'+main+'\n\nAUDIT_INPUT_PATHS = '+repr(tuple(sorted(allpaths)))+'\n\nif __name__ == "__main__":\n    main()\n'
+compile(primary,PRIMARY,'exec');put(PRIMARY,primary)
+artifacts=[]
+for path in sorted(allpaths-{PREFIX+'/ARTIFACT_MANIFEST.json'}):
+ raw=(C/path).read_bytes()if(C/path).is_file()else gitread(path)
+ artifacts.append({'path':path,'sha256':sha(raw),'bytes':len(raw)})
+write('ARTIFACT_MANIFEST.json',{'scope':'Declared calculation closure, excluding this manifest and primary to avoid self-reference; primary/cache and manifest are separately bound before execution. Frozen review/evidence bytes are never executed.','files':artifacts})
+(D/'CAPTURE_BINDINGS.json').write_text(dump({'created_utc':NOW,'sources':[s['identity']for s in source_records],'parent_candidates':parent_records,'scope':'Finite source snapshots and tracked-parent dedup candidates; original source identities rechecked at final freeze.'}))
+(D/'BUILD_RESULT.json').write_text(dump({'created_utc':NOW,'base':BASE,'source_labels':len(rows),'source_scopes':len(scopes),'new_raw_files':len(byhash),'parent_reused_source_labels':sum(x['transport']=='reuse_exact_tracked_parent_bytes'for x in rows),'duplicate_new_source_labels':sum(x['transport']=='reuse_exact_new_source_bytes'for x in rows),'declared_inputs':len(allpaths),'proof_bodies':len(bodymap),'author_functions':len(roles),'scientific_execution_count':0,'primary':{'path':PRIMARY,'sha256':sha(primary.encode()),'bytes':len(primary.encode())},'note':{'path':NOTE,'sha256':sha(note),'bytes':len(note)}}))
+print((D/'BUILD_RESULT.json').read_text())

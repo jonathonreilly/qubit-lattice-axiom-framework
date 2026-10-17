@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-10-17T04:25:14.537956+00:00",
+  "status": "Source-exposed analytical comparison frozen before root checker/output exposure",
+  "review": {
+    "path": "COMPARISON_REVIEW.md",
+    "bytes": 23764,
+    "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+  },
+  "manifest": {
+    "path": "REVIEW_MANIFEST.json",
+    "bytes": 1640,
+    "sha256": "071e005f02347e64f60e2f2920a0a0d2ce96f0d5fb174adfe33d97379d6567fa"
+  },
+  "exposure_start": {
+    "path": "EXPOSURE_START.json",
+    "bytes": 1387,
+    "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+  },
+  "actual_source_exposure": {
+    "path": "SOURCE_EXPOSURE.json",
+    "bytes": 1050,
+    "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+  },
+  "static_check": {
+    "path": "STATIC_REVIEW_CHECK.json",
+    "bytes": 1180,
+    "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+  },
+  "member_count_excluding_manifest_and_freeze": 10,
+  "scientific_execution": null,
+  "root_checker_output_or_receipts_read": false,
+  "disposition": "No load-bearing failure under stated conditions; clarify D>0 and scaled-isometry wording; no architecture selected",
+  "conditional_dependencies": [
+    "Exact supplied positive complements and fields",
+    "Delivered Gibbs marginal or stated delivery allowance",
+    "Exact emitter cancellation throughout early stage",
+    "Finite known setup completion time and actual phase areas",
+    "Passive retained reference after delivery",
+    "Inherited fixed-accuracy finite runtime theorem"
+  ],
+  "limits": "Same model and substantial shared inherited-source exposure. This is not root qualification, publication approval, retained audit, native preparation or full-controller realization.",
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review"
+}

@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-17T04:25:14.535848+00:00",
+  "root_source_pins": [
+    {
+      "snapshot": "root_CANDIDATE.md",
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+      "lines": 421,
+      "original_unchanged": true
+    },
+    {
+      "snapshot": "root_STAGED_RELEASE_ADDENDUM.md",
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+      "lines": 158,
+      "original_unchanged": true
+    }
+  ],
+  "own_original_members_verified": 27,
+  "own_candidate_and_freeze_unchanged": true,
+  "complete_review_lines": 515,
+  "review_links_resolve": [
+    "../CANDIDATE.md",
+    "../FREEZE.json",
+    "EXPOSURE_START.json",
+    "SOURCE_EXPOSURE.json",
+    "root_CANDIDATE.md",
+    "root_STAGED_RELEASE_ADDENDUM.md",
+    "CAPTURE_FAILURE_01.json"
+  ],
+  "scientific_programs_executed_in_review": 0,
+  "root_checker_output_or_receipts_read": false,
+  "source_capture_failure_count": 1,
+  "dependent_failed_display_count": 1,
+  "failure_record": "CAPTURE_FAILURE_01.json",
+  "status": "Analytical source-exposed check only; no executable-source validation or audit verdict",
+  "changed_editable_prompt_files": []
+}

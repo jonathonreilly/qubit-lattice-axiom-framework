@@ -1,0 +1,23 @@
+{
+  "source_exposure": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "snapshot": "root_CANDIDATE.md",
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+      "bytes": 21245,
+      "lines": 421,
+      "actual_source_capture_started_utc": "2026-10-17T04:15:37.858808+00:00",
+      "source_capture_finished_utc": "2026-10-17T04:15:37.861354+00:00"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+      "snapshot": "root_STAGED_RELEASE_ADDENDUM.md",
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+      "bytes": 7945,
+      "lines": 158,
+      "actual_source_capture_started_utc": "2026-10-17T04:15:37.861360+00:00",
+      "source_capture_finished_utc": "2026-10-17T04:15:37.862317+00:00"
+    }
+  ],
+  "checker_or_output_accessed": false
+}

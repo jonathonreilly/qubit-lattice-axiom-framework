@@ -1,0 +1,36 @@
+{
+  "main": "69cf6a289b2ec06213473f1549c51a57c29b6d70",
+  "planning": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0",
+  "concurrent_pr": 9662,
+  "head": "f5c26bb94ffd37bd68372d407f5a781b227f8c6e",
+  "paths": 145,
+  "scientific_note_paths": [
+    [
+      "docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "added",
+      "cbce729cb708e0502b7ddc26e7b579de3f63b213"
+    ],
+    [
+      "docs/BKSF_CUBIC_FERMION_CODES_ROTATIONS_ACT_BY_BARE_PERMUTATION_NO_SPINORIAL_ROTATION_FRACTIONALIZATION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "added",
+      "4b11c1787f980c26e6aa0b3933b400b146f01b14"
+    ],
+    [
+      "docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "added",
+      "4e30b9fa0eb7a231ac5ecb79d681b341f4db5cf0"
+    ],
+    [
+      "docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "added",
+      "22097a878ec811d6ac597cd0a5ca7ad7f6661954"
+    ],
+    [
+      "docs/TWO_QUBIT_SITE_SOLDERED_SPIN_STABILIZER_RULES_THREE_DIMENSIONAL_CHARGE_MOTION_FLIPS_A_FREE_LOCAL_VARIABLE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "added",
+      "5652189e6b1e67cabbba1bf0ff4a385bf8bd9df2"
+    ]
+  ],
+  "workflow_or_runner_cache_paths": [],
+  "scope": "Full PR body read; complete145path inventory captured and machine-counted, with five scientific note paths and absence of workflow/cache-policy paths inspected. Stabilizer/fermion science not imported or validated; no thermal-emitter overlap apparent. First path lookup failed because gh disallows slurp with jq; failure preserved."
+}

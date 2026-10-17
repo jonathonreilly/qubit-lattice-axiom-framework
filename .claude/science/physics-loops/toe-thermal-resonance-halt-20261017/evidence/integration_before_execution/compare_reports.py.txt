@@ -1,0 +1,30 @@
+"""Compare complete canonical reports; exclude only enumerated execution fields."""
+from validate_packet import *
+from datetime import datetime,timezone
+import copy
+out=W/'outputs/thermal_resonance_halt_2026_10_17.json';result=read(out)
+originals={'resonance_author':N/'resonant_family_candidate/run01/stdout.json','product_preparation_author':N/'emitter_preparation_independent/attempt_01/stdout.json','interacting_preparation_author':N/'emitter_preparation_root/run01/stdout.txt'}
+rows=[]
+for role,p in originals.items():
+ original=read(p);actual=copy.deepcopy(result['reports'][role]);current=actual.pop('_canonical_execution')
+ assert current['source_role']==role and current['actual_shared_process_limits']['cpu_soft_hard_seconds']==[30,30] and current['actual_shared_process_limits']['external_wall_cap_seconds']==45
+ changes=[]
+ if role=='resonance_author':
+  changes.append({'field':'started_utc','original':original.pop('started_utc'),'actual':actual.pop('started_utc')})
+  oldid=original.pop('source_identity');newid=actual.pop('source_identity')
+  assert oldid['executed_sha256']==newid['original_program_sha256']==current['original_program_sha256']
+  assert oldid['source_manifest_sha256']==newid['source_manifest_sha256'] and oldid['input_count']==newid['input_count']==21
+  assert newid['executed_primary_sha256']==pin(W/'scripts/thermal_resonance_halt_2026_10_17.py')['sha256']
+  changes.append({'field':'source_identity','original':oldid,'actual':newid,'shared_source_manifest_and_count_verified':True})
+  for key in ('cpu_soft_hard_seconds','scientific_program_wall_seconds','python_version'):
+   changes.append({'field':'resources.'+key,'original':original['resources'].pop(key),'actual':actual['resources'].pop(key)})
+ elif role=='product_preparation_author':
+  for key in ('python','sympy','cpu_soft_hard_seconds','external_wall_seconds','program_wall_seconds'):
+   changes.append({'field':'actual_resources.'+key,'original':original['actual_resources'].pop(key),'actual':actual['actual_resources'].pop(key)})
+ else:changes.append({'field':'elapsed_seconds','original':original.pop('elapsed_seconds'),'actual':actual.pop('elapsed_seconds')})
+ assert original==actual,role
+ rows.append({'role':role,'original':pin(p),'scientific_payload_equal':True,'enumerated_metadata_differences':changes,'new_metadata':current})
+receipt=read(D/'canonical_01/EXECUTION.json');assert receipt['status']=='ok' and receipt['cache_status']=='fresh'
+record={'compared_utc':datetime.now(timezone.utc).isoformat(),'canonical_result':pin(out),'canonical_execution':pin(D/'canonical_01/EXECUTION.json'),'scientific_payload_equality':True,'scientific_discrepancies':[],'bodies':rows,'scope':'Complete report equality after only listed execution/identity fields are excluded. This is a replay of three author calculations. Historical older runtime and common-release examples remain historical; the newer staged/resonance composition is supported by separate analytical qualifications.'}
+write(Q/'REPORT_COMPARISON.json',record)
+print(json.dumps({'scientific_payloads_equal':list(originals),'canonical_elapsed_seconds':receipt['elapsed_seconds'],'largest_dense_matrix':result['maximum_dense_matrix_dimension'],'no_new_scientific_conclusion':True},indent=2))

@@ -1,0 +1,858 @@
+{
+  "status": "Author algebraic corroboration passed; analytical preparation theorem needs separate review",
+  "sources": {
+    "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+    "family_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+  },
+  "parameters": {
+    "kappa_min": "1/1000000000000",
+    "kappa_max": "1/100000000",
+    "G": "13",
+    "beta": 10,
+    "hold_duration": 1,
+    "release_duration": 1,
+    "exact_runtime_parameters": {
+      "J": "3752638388379/125000000000000",
+      "cos_k": "4835816955256357129429116105401/5335816955256357129429116105401",
+      "sin_k": "2255175592998549000000000000000/5335816955256357129429116105401",
+      "tan_half_complement": "2255175592998549/500000000000000",
+      "epsilon": "30021107107032000000000000000/5335816955256357129429116105401",
+      "gA": "99687856381667/100000000000000",
+      "gB": "299659657780149/500000000000000",
+      "t": "199967484894403/50000000000000",
+      "lambdaA": "1900890690790601/500000000000000",
+      "lambdaB": "2575033765788497/1000000000000000",
+      "u": "544607276405587/1000000000000000",
+      "DeltaA": "2192035527016003/1000000000000000",
+      "DeltaB": "1093413254448507/500000000000000",
+      "mu0": "321494607058201/1000000000000000",
+      "mu1": "-1459892813020969/1000000000000000",
+      "scalar_reserve": "1459892813020969/1000000000000000"
+    }
+  },
+  "diagnostics": [
+    {
+      "clock_sites": 16,
+      "quantum_qubits": 21,
+      "global_Hilbert_dimension_not_allocated": 2097152,
+      "maximum_dense_dimension": 4,
+      "runtime_Pauli_words": 68,
+      "control_Pauli_words": 67,
+      "new_control_blocks": 42,
+      "new_two_body_blocks": 23,
+      "new_control_edges": 22,
+      "new_onsite_blocks": 19,
+      "full_space_cancellation_residual_words": 0,
+      "seed_residual_gram": "2*kappa^2 I_old"
+    },
+    {
+      "clock_sites": 20,
+      "quantum_qubits": 25,
+      "global_Hilbert_dimension_not_allocated": 33554432,
+      "maximum_dense_dimension": 4,
+      "runtime_Pauli_words": 80,
+      "control_Pauli_words": 79,
+      "new_control_blocks": 50,
+      "new_two_body_blocks": 27,
+      "new_control_edges": 26,
+      "new_onsite_blocks": 23,
+      "full_space_cancellation_residual_words": 0,
+      "seed_residual_gram": "2*kappa^2 I_old"
+    }
+  ],
+  "loads": {
+    "old1": {
+      "runtime": "99687856381667/50000000000000",
+      "new_controls": "99687856381667/50000000000000",
+      "combined_during_preparation": "99687856381667/25000000000000",
+      "new_controls_at_kmax": "99687856381667/50000000000000",
+      "combined_at_kmax": "99687856381667/25000000000000",
+      "combined_display_only": 3.98751425526668
+    },
+    "old2": {
+      "runtime": "299659657780149/250000000000000",
+      "new_controls": "299659657780149/250000000000000",
+      "combined_during_preparation": "299659657780149/125000000000000",
+      "new_controls_at_kmax": "299659657780149/250000000000000",
+      "combined_at_kmax": "299659657780149/125000000000000",
+      "combined_display_only": 2.397277262241192
+    },
+    "source_A": {
+      "runtime": "10166331044996727/500000000000000",
+      "new_controls": "4739033628137997/250000000000000",
+      "combined_during_preparation": "19644398301272721/500000000000000",
+      "new_controls_at_kmax": "4739033628137997/250000000000000",
+      "combined_at_kmax": "19644398301272721/500000000000000",
+      "combined_display_only": 39.28879660254544
+    },
+    "source_B": {
+      "runtime": "17078839343776311/1000000000000000",
+      "new_controls": "16507848299085567/1000000000000000",
+      "combined_during_preparation": "16793343821430939/500000000000000",
+      "new_controls_at_kmax": "16507848299085567/1000000000000000",
+      "combined_at_kmax": "16793343821430939/500000000000000",
+      "combined_display_only": 33.586687642861875
+    },
+    "c0": {
+      "runtime": "8015120691541701/1000000000000000",
+      "new_controls": "12648484285834767/1000000000000000",
+      "combined_during_preparation": "5165901244344117/250000000000000",
+      "new_controls_at_kmax": "12648484285834767/1000000000000000",
+      "combined_at_kmax": "5165901244344117/250000000000000",
+      "combined_display_only": 20.66360497737647
+    },
+    "c1": {
+      "runtime": "6730044773026091/1000000000000000",
+      "new_controls": "14459892813020969/1000000000000000",
+      "combined_during_preparation": "1059496879302353/50000000000000",
+      "new_controls_at_kmax": "14459892813020969/1000000000000000",
+      "combined_at_kmax": "1059496879302353/50000000000000",
+      "combined_display_only": 21.18993758604706
+    },
+    "ordinary_clock": {
+      "runtime": "3752638388379/31250000000000",
+      "new_controls": "13",
+      "combined_during_preparation": "410002638388379/31250000000000",
+      "new_controls_at_kmax": "13",
+      "combined_at_kmax": "410002638388379/31250000000000",
+      "combined_display_only": 13.120084428428129
+    },
+    "attachment_L": {
+      "runtime": "3*kap + 3752638388379/31250000000000",
+      "new_controls": "kap + 13",
+      "combined_during_preparation": "4*kap + 410002638388379/31250000000000",
+      "new_controls_at_kmax": "1300000001/100000000",
+      "combined_at_kmax": "410002639638379/31250000000000",
+      "combined_display_only": 13.120084468428129
+    },
+    "attachment_Lplus2": {
+      "runtime": "3*kap + 3752638388379/31250000000000",
+      "new_controls": "kap + 13",
+      "combined_during_preparation": "4*kap + 410002638388379/31250000000000",
+      "new_controls_at_kmax": "1300000001/100000000",
+      "combined_at_kmax": "410002639638379/31250000000000",
+      "combined_display_only": 13.120084468428129
+    },
+    "far_end": {
+      "runtime": "11257915165137/125000000000000",
+      "new_controls": "1621247361611621/125000000000000",
+      "combined_during_preparation": "816252638388379/62500000000000",
+      "new_controls_at_kmax": "1621247361611621/125000000000000",
+      "combined_at_kmax": "816252638388379/62500000000000",
+      "combined_display_only": 13.060042214214064
+    },
+    "emitter": {
+      "runtime": "2*kap + 30021107107032000000000000000/5335816955256357129429116105401",
+      "new_controls": "6*kap + 69395641525439674682578509370213/5335816955256357129429116105401",
+      "combined_during_preparation": "8*kap + 69425662632546706682578509370213/5335816955256357129429116105401",
+      "new_controls_at_kmax": "3469782092279434599897996856797998316203/266790847762817856471455805270050000000",
+      "combined_at_kmax": "867820788242650788788588496556778605401/66697711940704464117863951317512500000",
+      "combined_display_only": 13.011252755029437
+    }
+  },
+  "checks": [
+    {
+      "name": "center_phase_unit_modulus",
+      "exact_zero": true
+    },
+    {
+      "name": "literal_W_commutes_with_K",
+      "exact_zero": true
+    },
+    {
+      "name": "literal_W_unitary",
+      "exact_zero": true
+    },
+    {
+      "name": "runtime_emitter_onsite_positive",
+      "left": "1/50000000",
+      "relation": "<",
+      "right": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "name": "emitter_pair_charpoly_L_1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_11_L_1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_charpoly_L_-1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_11_L_-1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_charpoly_Lplus2_1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_11_Lplus2_1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_charpoly_Lplus2_-1",
+      "exact_zero": true
+    },
+    {
+      "name": "emitter_pair_11_Lplus2_-1",
+      "exact_zero": true
+    },
+    {
+      "name": "clock_counter_pair",
+      "exact_zero": true
+    },
+    {
+      "name": "source_density_complement",
+      "exact_zero": true
+    },
+    {
+      "name": "conditional_flip_complement",
+      "exact_zero": true
+    },
+    {
+      "name": "onsite_pin_positive_M16_site2",
+      "left": "0",
+      "relation": "<",
+      "right": "815507949574537/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site3",
+      "left": "0",
+      "relation": "<",
+      "right": "161583546420627/100000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site4",
+      "left": "0",
+      "relation": "<",
+      "right": "4984879308458299/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site5",
+      "left": "0",
+      "relation": "<",
+      "right": "9189740853015847/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site6",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site7",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site8",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site9",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site10",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site11",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site12",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site13",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site14",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site15",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site16",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361299121/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site17",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site18",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361299121/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M16_site19",
+      "left": "0",
+      "relation": "<",
+      "right": "1613742084834863/125000000000000"
+    },
+    {
+      "name": "full_Pauli_cancellation_M16",
+      "nonzero_residual_words": 0,
+      "symbolic_kappa": true
+    },
+    {
+      "name": "runtime_seed_diagonal_M16",
+      "exact_zero": true
+    },
+    {
+      "name": "runtime_seed_residual_Gram_M16",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_diagonal_M16",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_counter_M16_65536",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_counter_M16_262144",
+      "exact_zero": true
+    },
+    {
+      "name": "full_runtime_identity_coefficient_M16",
+      "exact_zero": true
+    },
+    {
+      "name": "full_preparation_identity_coefficient_M16",
+      "exact_zero": true
+    },
+    {
+      "name": "control_incident_below19_M16_old1",
+      "left": "99687856381667/50000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_old1",
+      "left": "99687856381667/25000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_old2",
+      "left": "299659657780149/250000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_old2",
+      "left": "299659657780149/125000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_source_A",
+      "left": "4739033628137997/250000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_source_A",
+      "left": "19644398301272721/500000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_source_B",
+      "left": "16507848299085567/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_source_B",
+      "left": "16793343821430939/500000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_c0",
+      "left": "12648484285834767/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_c0",
+      "left": "5165901244344117/250000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_c1",
+      "left": "14459892813020969/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_c1",
+      "left": "1059496879302353/50000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_ordinary_clock",
+      "left": "13",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_ordinary_clock",
+      "left": "410002638388379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_attachment_L",
+      "left": "1300000001/100000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_attachment_L",
+      "left": "410002639638379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_attachment_Lplus2",
+      "left": "1300000001/100000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_attachment_Lplus2",
+      "left": "410002639638379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_far_end",
+      "left": "1621247361611621/125000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_far_end",
+      "left": "816252638388379/62500000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M16_emitter",
+      "left": "3469782092279434599897996856797998316203/266790847762817856471455805270050000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M16_emitter",
+      "left": "867820788242650788788588496556778605401/66697711940704464117863951317512500000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site2",
+      "left": "0",
+      "relation": "<",
+      "right": "815507949574537/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site3",
+      "left": "0",
+      "relation": "<",
+      "right": "161583546420627/100000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site4",
+      "left": "0",
+      "relation": "<",
+      "right": "4984879308458299/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site5",
+      "left": "0",
+      "relation": "<",
+      "right": "9189740853015847/1000000000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site6",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site7",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site8",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site9",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site10",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site11",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site12",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site13",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site14",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site15",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site16",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361299121/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site17",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site18",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361299121/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site19",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site20",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site21",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site22",
+      "left": "0",
+      "relation": "<",
+      "right": "402497361611621/31250000000000"
+    },
+    {
+      "name": "onsite_pin_positive_M20_site23",
+      "left": "0",
+      "relation": "<",
+      "right": "1613742084834863/125000000000000"
+    },
+    {
+      "name": "full_Pauli_cancellation_M20",
+      "nonzero_residual_words": 0,
+      "symbolic_kappa": true
+    },
+    {
+      "name": "runtime_seed_diagonal_M20",
+      "exact_zero": true
+    },
+    {
+      "name": "runtime_seed_residual_Gram_M20",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_diagonal_M20",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_counter_M20_65536",
+      "exact_zero": true
+    },
+    {
+      "name": "control_seed_counter_M20_262144",
+      "exact_zero": true
+    },
+    {
+      "name": "full_runtime_identity_coefficient_M20",
+      "exact_zero": true
+    },
+    {
+      "name": "full_preparation_identity_coefficient_M20",
+      "exact_zero": true
+    },
+    {
+      "name": "control_incident_below19_M20_old1",
+      "left": "99687856381667/50000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_old1",
+      "left": "99687856381667/25000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_old2",
+      "left": "299659657780149/250000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_old2",
+      "left": "299659657780149/125000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_source_A",
+      "left": "4739033628137997/250000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_source_A",
+      "left": "19644398301272721/500000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_source_B",
+      "left": "16507848299085567/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_source_B",
+      "left": "16793343821430939/500000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_c0",
+      "left": "12648484285834767/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_c0",
+      "left": "5165901244344117/250000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_c1",
+      "left": "14459892813020969/1000000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_c1",
+      "left": "1059496879302353/50000000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_ordinary_clock",
+      "left": "13",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_ordinary_clock",
+      "left": "410002638388379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_attachment_L",
+      "left": "1300000001/100000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_attachment_L",
+      "left": "410002639638379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_attachment_Lplus2",
+      "left": "1300000001/100000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_attachment_Lplus2",
+      "left": "410002639638379/31250000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_far_end",
+      "left": "1621247361611621/125000000000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_far_end",
+      "left": "816252638388379/62500000000000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "control_incident_below19_M20_emitter",
+      "left": "3469782092279434599897996856797998316203/266790847762817856471455805270050000000",
+      "relation": "<",
+      "right": "19"
+    },
+    {
+      "name": "combined_added_incident_below40_M20_emitter",
+      "left": "867820788242650788788588496556778605401/66697711940704464117863951317512500000",
+      "relation": "<",
+      "right": "40"
+    },
+    {
+      "name": "cubic_half_area",
+      "exact_zero": true
+    },
+    {
+      "name": "cubic_endpoint0",
+      "exact_zero": true
+    },
+    {
+      "name": "cubic_endpoint1",
+      "exact_zero": true
+    },
+    {
+      "name": "cubic_derivative",
+      "exact_zero": true
+    },
+    {
+      "name": "cubic_slope_maximum",
+      "exact_zero": true
+    },
+    {
+      "name": "uniform_thermal_bad_probability",
+      "left": "2470604637629521278284673014486037846447525181120321387003004760481417179107666015625/587135645693458306972370149197334256843920637227079967676822742883052256278652110865924749596192175757983744",
+      "relation": "<",
+      "right": "1/10000000000000000000000",
+      "method": "N<10^32 and exp(1)>8/3, beta*G=130"
+    },
+    {
+      "name": "complete_correlated_input_trace_budget",
+      "left": "3735322962607129/390625000000000000",
+      "relation": "<",
+      "right": "1/100"
+    }
+  ],
+  "budgets": {
+    "uniform_thermal_bad_probability_upper": "2470604637629521278284673014486037846447525181120321387003004760481417179107666015625/587135645693458306972370149197334256843920637227079967676822742883052256278652110865924749596192175757983744",
+    "simple_thermal_bad_upper": "1/10^22",
+    "correlated_joint_initial_trace_upper": "3/10^11",
+    "release_isometry_exact": "kappa/sqrt(2)",
+    "release_isometry_upper": "1/10^8",
+    "inherited_finite_isometry_upper": "3735315138388379/781250000000000000",
+    "complete_correlated_trace_upper": "3735322962607129/390625000000000000",
+    "complete_correlated_trace_display_only": 0.00956242678427425,
+    "coarse_complete_trace_bound": "1/100"
+  },
+  "scalar_formulas": {
+    "physical_runtime": "nu+2*kappa",
+    "runtime_seed": "nu+2*kappa+E0",
+    "control_on_seed": "u+2*kappa",
+    "preparation_seed": "nu+E0+u+4*kappa",
+    "whole_output_phase_for_hold_h_release_tau": "(nu+E0+u+4*kappa)*h+(nu+2*kappa+E0)*tau+(u+2*kappa)*tau/2+(nu+2*kappa)*t"
+  },
+  "actual_resources": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "maximum_dense_matrix_dimension": 4,
+    "diagnostic_clock_lengths": [
+      16,
+      20
+    ],
+    "parameter_grid_points": 0,
+    "quadrature_calls": 0,
+    "optimizer_calls": 0,
+    "time_evolution_calls": 0,
+    "program_wall_seconds": 0.5186617909930646
+  },
+  "limits": "Local PSD checks use the upper-endpoint exact rational coefficients; the written positive-block proof supplies uniform positivity. Finite lengths corroborate endpoint bookkeeping, not an all-length theorem. No full apparatus Hilbert matrix is allocated and no time evolution, thermalization, native control or independent theorem review is executed."
+}

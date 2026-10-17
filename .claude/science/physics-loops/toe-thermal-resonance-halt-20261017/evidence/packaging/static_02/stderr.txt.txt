@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft/verify_static.py", line 154, in <module>
+    check('note_link:'+target,dest.is_file()and repo in dest.parents)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_publication_draft/verify_static.py", line 15, in check
+    assert test,name
+           ^^^^
+AssertionError: note_link:../scripts/thermal_resonance_halt_2026_10_17.py

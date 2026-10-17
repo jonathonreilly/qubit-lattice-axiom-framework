@@ -1,0 +1,235 @@
+{
+  "compared_utc": "2026-10-17T04:58:07.960762+00:00",
+  "canonical_result": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/thermal_resonance_halt_2026_10_17.json",
+    "bytes": 85663,
+    "sha256": "f105259f7484ada777dced53b69214f8d351264a1783e0898db0f3aec98c0d2a"
+  },
+  "canonical_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/EXECUTION.json",
+    "bytes": 2523,
+    "sha256": "7cb00d7f3c39284e45babb0496e1e081ab8236665d85362f65616dea480f2319"
+  },
+  "scientific_payload_equality": true,
+  "scientific_discrepancies": [],
+  "bodies": [
+    {
+      "role": "resonance_author",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/run01/stdout.json",
+        "bytes": 12367,
+        "sha256": "f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c"
+      },
+      "scientific_payload_equal": true,
+      "enumerated_metadata_differences": [
+        {
+          "field": "checks.historical_prelaunch_bindings",
+          "original": [
+            "binding:checker",
+            "binding:executed_copy",
+            "binding:launcher",
+            "binding:resource_plan",
+            "binding:runtime:_decimal",
+            "binding:runtime:decimal",
+            "binding:runtime:fractions",
+            "binding:runtime:interpreter",
+            "binding:runtime:numbers",
+            "binding:scalar_inputs",
+            "binding:snapshot:inputs/SCIENCE_WORKFLOW.md",
+            "binding:snapshot:inputs/family.md",
+            "binding:snapshot:inputs/family_acceptance.json",
+            "binding:snapshot:inputs/family_qualification.md",
+            "binding:snapshot:inputs/fixed.md",
+            "binding:snapshot:inputs/fixed_acceptance.json",
+            "binding:snapshot:inputs/fixed_qualification.md",
+            "binding:snapshot:inputs/fixed_review.md",
+            "binding:snapshot:inputs/generic_v2.md",
+            "binding:snapshot:inputs/installed.md",
+            "binding:snapshot:inputs/installed_acceptance.json",
+            "binding:snapshot:inputs/installed_qualification.md",
+            "binding:snapshot:inputs/interval.json",
+            "binding:snapshot:inputs/interval.md",
+            "binding:snapshot:inputs/moment.md",
+            "binding:snapshot:inputs/moment_acceptance.json",
+            "binding:snapshot:inputs/moment_qualification.md",
+            "binding:snapshot:inputs/route.md",
+            "binding:snapshot:inputs/weighted.md",
+            "binding:snapshot:inputs/weighted_acceptance.json",
+            "binding:snapshot:inputs/weighted_qualification.md",
+            "binding:snapshot_preparer",
+            "binding:source_manifest"
+          ],
+          "actual": "Removed by the explicitly reviewed historical prelaunch-loop transport. Current bindings are verified in the separate canonical PRELAUNCH/EXECUTION, not relabeled historical checks.",
+          "historical_prelaunch": {
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/run01/PRELAUNCH.json",
+            "bytes": 12028,
+            "sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb"
+          }
+        },
+        {
+          "field": "started_utc",
+          "original": "2026-10-17T03:49:49.053382+00:00",
+          "actual": "2026-10-17T04:57:26.611805+00:00"
+        },
+        {
+          "field": "source_identity",
+          "original": {
+            "executed_sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6",
+            "prelaunch_sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb",
+            "source_manifest_sha256": "fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40",
+            "input_count": 21
+          },
+          "actual": {
+            "original_program_sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6",
+            "source_manifest_sha256": "fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40",
+            "input_count": 21,
+            "executed_primary_sha256": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872",
+            "prelaunch_binding": "See actual separate root-owned canonical execution receipt; historical receipt is not this run."
+          },
+          "shared_source_manifest_and_count_verified": true
+        },
+        {
+          "field": "resources.cpu_soft_hard_seconds",
+          "original": [
+            20,
+            21
+          ],
+          "actual": [
+            30,
+            30
+          ]
+        },
+        {
+          "field": "resources.scientific_program_wall_seconds",
+          "original": 0.0031044576317071915,
+          "actual": 0.0053037921898067
+        },
+        {
+          "field": "resources.python_version",
+          "original": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+          "actual": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+        }
+      ],
+      "new_metadata": {
+        "source_role": "resonance_author",
+        "historical_source_run_limits": {
+          "cpu_soft_hard_seconds": [
+            20,
+            21
+          ],
+          "external_wall_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            30,
+            30
+          ],
+          "external_wall_cap_seconds": 45,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6"
+      }
+    },
+    {
+      "role": "product_preparation_author",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/stdout.json",
+        "bytes": 25536,
+        "sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982"
+      },
+      "scientific_payload_equal": true,
+      "enumerated_metadata_differences": [
+        {
+          "field": "actual_resources.python",
+          "original": "3.13.5",
+          "actual": "3.13.5"
+        },
+        {
+          "field": "actual_resources.sympy",
+          "original": "1.14.0",
+          "actual": "1.14.0"
+        },
+        {
+          "field": "actual_resources.cpu_soft_hard_seconds",
+          "original": [
+            20,
+            20
+          ],
+          "actual": [
+            30,
+            30
+          ]
+        },
+        {
+          "field": "actual_resources.external_wall_seconds",
+          "original": 30,
+          "actual": 45
+        },
+        {
+          "field": "actual_resources.program_wall_seconds",
+          "original": 0.5186617909930646,
+          "actual": 0.5263249170966446
+        }
+      ],
+      "new_metadata": {
+        "source_role": "product_preparation_author",
+        "historical_source_run_limits": {
+          "cpu_soft_hard_seconds": [
+            20,
+            20
+          ],
+          "external_wall_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            30,
+            30
+          ],
+          "external_wall_cap_seconds": 45,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55"
+      }
+    },
+    {
+      "role": "interacting_preparation_author",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stdout.txt",
+        "bytes": 5164,
+        "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+      },
+      "scientific_payload_equal": true,
+      "enumerated_metadata_differences": [
+        {
+          "field": "elapsed_seconds",
+          "original": 0.022154332604259253,
+          "actual": 0.021534542087465525
+        }
+      ],
+      "new_metadata": {
+        "source_role": "interacting_preparation_author",
+        "historical_source_run_limits": {
+          "cpu_soft_hard_seconds": [
+            15,
+            15
+          ],
+          "external_wall_seconds": 30
+        },
+        "actual_shared_process_limits": {
+          "cpu_soft_hard_seconds": [
+            30,
+            30
+          ],
+          "external_wall_cap_seconds": 45,
+          "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+        },
+        "source_statement_scope": "Original report scope/limitations strings retain their historical scientific meaning. This is a portable replay, not a new review.",
+        "original_program_sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+      }
+    }
+  ],
+  "initial_comparison_failure": "First comparison omitted the already reviewed removal of33 historical prelaunch check labels. That script and failed receipt are preserved; the finite old-prelaunch-derived exclusion is recorded explicitly. No primary, calculation input, result or scientific expression changed, and no scientific rerun occurred.",
+  "scope": "Complete report equality after only listed execution/identity fields and historical binding labels are excluded. This is a replay of three author calculations. Historical older runtime and common-release examples remain historical; the newer staged/resonance composition is supported by separate analytical qualifications."
+}

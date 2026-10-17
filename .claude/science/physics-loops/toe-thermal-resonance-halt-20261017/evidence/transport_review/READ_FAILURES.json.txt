@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "kind": "inspection schema mistake",
+      "exact_error": "AttributeError: 'list' object has no attribute 'items'",
+      "recovery": "Iterated source_to_function as a list; no scientific execution."
+    },
+    {
+      "kind": "display truncation",
+      "recovery": "Executable missing span500-720 recovered. All26event locations and original/replacement source printed compactly. Large ledger/identity arrays will be verified deterministically; not claimed manually read as proof."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-17T04:25:14.537810+00:00",
+  "members": [
+    {
+      "path": "CAPTURE_FAILURE_01.json",
+      "bytes": 858,
+      "sha256": "d6763a55005524bd70f73d5a758f90867bf1ca99c6a76692c03081df77892d33"
+    },
+    {
+      "path": "COMPARISON_REVIEW.md",
+      "bytes": 23764,
+      "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+    },
+    {
+      "path": "EXPOSURE_START.json",
+      "bytes": 1387,
+      "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+    },
+    {
+      "path": "SOURCE_EXPOSURE.json",
+      "bytes": 1050,
+      "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+    },
+    {
+      "path": "STATIC_REVIEW_CHECK.json",
+      "bytes": 1180,
+      "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+    },
+    {
+      "path": "freeze_review.py",
+      "bytes": 4273,
+      "sha256": "b1ffae44078848e33332115d2d14ebe78ad191e0044da31d880fa1f8d49f9033"
+    },
+    {
+      "path": "proof_search_governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "reviewer_skill.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "root_CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "root_STAGED_RELEASE_ADDENDUM.md",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    }
+  ]
+}

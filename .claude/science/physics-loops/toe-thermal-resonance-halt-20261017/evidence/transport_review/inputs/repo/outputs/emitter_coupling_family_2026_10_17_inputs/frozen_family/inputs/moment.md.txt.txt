@@ -1,0 +1,320 @@
+---
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+independent_review: pending
+root_qualification: pending
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: sharper sufficient escape bounds for the same supplied installed product-seed apparatus, with an explicitly qualified joint static-box corollary
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+---
+# A position-moment bound for the installed emitter's complete outgoing operation
+
+**Author candidate, 2026-10-17.** For the exact installed product-seed emitter, the argument below proposes the same complete isometry error **below 0.004 for every t >= 10^30**, with no change to the Hamiltonian, input seed, target operation, actual scalar, outgoing waveform or old-system aging. A finite clock with **M = 5*10^31 clock sites** has complete embedded error **below 0.005 on [10^30, 2*10^30]**. These sufficient time and clock-size prescriptions are each a factor 10^6 smaller than the qualified weighted estimate. They remain enormous and are not estimates of the actual minimum emission time.
+
+The same prescriptions also hold conditionally throughout the separately qualified joint static box. That corollary uses each fixed actual apparatus's scalar and common outgoing clock profile. It does not compare the entire box to one nominal waveform.
+
+The new step is to bound the two unwanted free-wave half-lines by a position moment, and to prove the required L2 derivative estimates for the unchanged narrow resonant envelope and its actual outgoing phase. The free-chain position identity is established prior art, including two landed repository clock notes of 2026-09-24. The inherited scattering, exact packet-isometry construction, seed-overlap argument, weighted localized estimate and finite-clock comparison are prior work. No generic clock or scattering novelty is claimed.
+
+## 1. Exact dependencies, unchanged apparatus and target
+
+All selected sources are copied byte for byte under `inputs/`; `SOURCE_MANIFEST.json` gives their original paths and complete identities. The controlling mathematical sources are:
+
+| Role | Frozen source | SHA256 |
+| --- | --- | --- |
+| Exact installed inverse, full seed overlap, physical blocks and complete comparator | `emitter_installed_certificate/CANDIDATE.md` | `4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee` |
+| Weighted denominator and complete localized bounds | `weighted_emitter_escape_candidate/CANDIDATE.md` | `a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5` |
+| Joint static-box substitutions and tighter seed allowance | `joint_static_halt_candidate/CANDIDATE.md` | `76d3a738854a475649512bee2e7b610c179569c04286941b38d91ddfe1aa3df1` |
+| Generic exact intertwining, column grouping and localized integration by parts | `finite_channel_wavepacket_bridge/THEOREM_V2.md` | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+| Original finite attached-graph and product-seed formulas | `autonomous_emitter_route/ROUTE.md` | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| Exact rational J and original interval witness | `two_body_interval_bridge/CERTIFICATE.json` | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` |
+
+Historical provisional labels in those copied bodies are unchanged. Their later root qualification documents are, respectively, `emitter_installed_root_review/QUALIFICATION.md` SHA `dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d`, `weighted_emitter_root_qualification/QUALIFICATION.md` SHA `f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b`, and `joint_static_halt_root_qualification/QUALIFICATION.md` SHA `c6b1ed381d617cb42cf3e5b3b42a6d471a3cfd05ff07776e4dbeddb5df737375`. Their acceptance records are copied too. These acceptances permit conditional mathematical reuse; they neither accept this new refinement nor confer retained audit status.
+
+Use exactly
+
+    J = 3752638388379/125000000000000 = 0.030021107107032,
+    q0 = 4.510351185997098,   k0 = 2 arctan(1/q0),
+    kappa = 10^-12,          sigma = 10^-6,   L = 12,
+    I = [k0-sigma, k0+sigma] contained in (0,pi),
+    E(k) = 2J(1-cos k),     v = 1/40 < E'(k),
+    |E''(k)| <= 2J,         2J/v < 5/2.                    (1)
+
+The old operator is K = 2I+Z1 Z2, and the fixed target is
+
+    W = [(9+12i)I+(-16+12i)X1 X2]/25.                     (2)
+
+The clock/source ladder, positive local blocks, dark vacuum Omega=|00>_AB, exact identity B iota=iota K with iota x=x tensor Omega, and the supplied two emitter attachments are unchanged. With V=|L>-exp(i phi)|L+2>, the prepared one-head operator and its physical scalar are
+
+    Htilde = [[Hg, kappa V], [kappa V*, B+Ee]],
+    Hphysical = Htilde+(nu_actual+2kappa)I,
+    Eseed x = (|1>_e tensor |all clock zero>) tensor iota x.       (3)
+
+For the original apparatus Ee=E(k0), phi=2k0 and nu_actual=1.459892813020969. The positive full-qubit realization remains the same: for j=L,L+2 use
+
+    Q_ej = kappa(n_e+n_j)+t_j a_j^dagger a_e+conj(t_j)a_e^dagger a_j,
+    t_L=kappa,  t_(L+2)=-kappa exp(i phi),
+    (Ee-2kappa)n_e, kappa(I-n_L), kappa(I-n_(L+2)).       (4)
+
+Each Q_ej is positive with norm 2kappa; Ee>2kappa in both scopes. The sum in (4) is Ee n_e plus the two hoppings plus **2kappa I**. The added incident block-norm sums are Ee+2kappa at e and 3kappa at each attachment. Existing old/source/contact loads are unchanged. The source and boundary-clock loads are not all below the old-only cap 2. Neither a new global cap nor a new strict-hardware compilation is obtained.
+
+In the joint corollary the ten static ladder coefficient deviations (DeltaA,DeltaB,h,u,gA,gB,lambdaA,lambdaB,mu0,nu) have radii 10^-8; |Ee-E(k0)|<=10^-9 and |phi-2k0|<=10^-8. J,K,kappa,L, positive block forms, geometry, head-number conservation and the exact dark vacuum remain fixed, with mu1=-nu_actual. The twelve deviations are fixed before evolution. This is the already qualified structural box, not arbitrary perturbations.
+
+For each fixed apparatus use its original reference quantities
+
+    Df = E(k)-Ee-kappa^2 Sigma_f,jj(k),
+    yref = kappa conjugate(g_minus)/Df,
+    N^2 = (1/(2pi)) integral_I chi^2 |yref|^2 dk,
+    f = chi conjugate(yref)/(sqrt(2pi)N),
+    t_minus = 1-i kappa^2 |g_minus|^2/[E'(k)Df],
+    rho = r0 t_minus/|t_minus|,   r0 = -exp(2ik).          (5)
+
+Here chi is the same real cutoff, equal to one on the central half of I and linear down to zero at both endpoints; |chi'|<=2/sigma almost everywhere. Thus ||f||2=||f rho||2=1, with positive real normalization. The envelope is a mathematical scattering representation of the supplied product seed. It is not an additionally prepared packet, an optimized replacement, or a fitted old-input-dependent state.
+
+Let
+
+    b_t(n) = (1/sqrt(2pi)) integral_I f(k)rho(k) exp[ikn-iE(k)t] dk,
+               n>=0,
+    beta_t = b_t/||b_t||,
+    Uideal(t)x = zeta exp[-i(nu_actual+2kappa)t]
+                     beta_t tensor iota exp(-itK)W x.     (6)
+
+The emitter is empty in beta_t. The fixed zeta=-exp(-4ik0)alpha is precisely the installed theorem's absolute-site phase; alpha is its original exact site-1 reflection witness. It is independent of the actual error parameters and is not refitted. Every source coordinate, clock output, old input and passive reference is in the comparison. In particular exp(-itK) starts at the actual seed time zero.
+
+## 2. A free-wave half-line estimate with its domain and velocity-spread term
+
+Let g in H^1_0(I), normalized in L2(I), be extended by zero to the momentum circle (-pi,pi). Since its endpoint trace is zero, that extension is in periodic H^1. Define unitary Fourier maps
+
+    (F_plus g)(n)  = (1/sqrt(2pi)) integral g(k)exp(+ikn) dk,
+    (F_minus g)(n) = (1/sqrt(2pi)) integral g(k)exp(-ikn) dk,
+                n in Z.                                (7)
+
+For the position multiplication X, Fourier differentiation gives
+
+    X F_plus g = F_plus(i g'),
+    X F_minus g = F_minus(-i g').                        (8)
+
+The H1 domain is preserved by multiplication by exp(-itE), because E is smooth with bounded derivative on the circle. Integration by parts proves (8) first for smooth periodic functions; H1 approximation and closedness of X extend it to this domain. Parseval therefore gives the exact equalities
+
+    ||(X-v0 t) F_plus(exp(-itE)g)||2
+        = ||i g'+t(E'-v0)g||2,
+    ||(X+v0 t) F_minus(exp(-itE)g)||2
+        = ||-i g'-t(E'-v0)g||2,   v0=E'(k0)>v.          (9)
+
+The two Fourier signs have opposite propagation directions. No independence of initial position and velocity, no affine-dispersion approximation and no operator-order inequality between a position projection and E'(k) is used.
+
+On n<0 the magnitude of n-v0t is at least v0t; on n>=0 the magnitude of n+v0t is at least v0t. Also |E'(k)-v0|<=2J sigma on I. For t>0, (9) and the triangle inequality prove
+
+    ||1_(n<0) F_plus(exp(-itE)g)||2
+          <= ||g'||2/(vt)+2J sigma/v,
+    ||1_(n>=0) F_minus(exp(-itE)g)||2
+          <= ||g'||2/(vt)+2J sigma/v.                    (10)
+
+These are full-line analysis estimates for the two specified wrong half-lines; no negative clock sites are installed. The last term is a price of centering at the single constant velocity v0. It is not a physical lower bound on leakage. One may take the smaller of (10) and the already qualified integration-by-parts estimates at any time. In particular the latter still prove true decay to zero. The new estimate alone, with its nonzero floor, is **not** used to re-prove the exact past-limit isometry normalization.
+
+This lemma is an elementary form of the known free-chain moment identity. Landed repository examples use X(t)=X+tV and the same Hilbert-space triangle argument, with compact sine packets and different targets. Section 8 records the precise prior-art distinction.
+
+## 3. Additional analytic integrals for the unchanged resonance
+
+All the following premises hold for the original apparatus and uniformly in the qualified joint box:
+
+    Im Df >= 19 kappa^2,
+    |Df'| < d=61/1000,
+    |Sigma_f,jj'| <= 560,
+    sqrt(2pi)N > 2,
+    |g_minus| <= 2,  |g_minus'| <= 26,  |t_minus| > 1/2.  (11)
+
+They are inequalities of the actual fixed apparatus, not values sampled at k0. For x=Re Df and h=19 kappa^2,
+
+    x' >= v-560kappa^2 > v/2,
+    |Df|^2 >= x^2+h^2.                                 (12)
+
+No zero of x at the nominal center is presumed. Strict monotonicity allows dk<=2 dx/v; positive integral extension over the entire real x line remains valid regardless of where x(I) lies. Put U=1/|Df| and I_p=integral_I U^p dk. The already qualified estimate is I2<17/kappa^2. The two new estimates are
+
+    I4 <= (2/v) integral_R (x^2+h^2)^(-2) dx
+        = pi/(v h^3) < 4/[v*19^3*kappa^6],
+    I6 <= (2/v) integral_R (x^2+h^2)^(-3) dx
+        = 3pi/(4v h^5) < 3/[v*19^5*kappa^10].            (13)
+
+For a direct derivation substitute x=h tan(theta). The two integrals are h^-3 times integral cos^2(theta) and h^-5 times integral cos^4(theta) on [-pi/2,pi/2], respectively. Those integrals are pi/2 and 3pi/8, by their finite Fourier expansions or elementary integration by parts. Thus (13) uses no numerical quadrature of the unresolved linewidth.
+
+The following rational square-root ceilings suffice:
+
+    sqrt(I2) < 5/kappa,
+    sqrt(I4) < (4/25)/kappa^3,
+    sqrt(I6) < (7/1000)/kappa^5.                         (14)
+
+Indeed 25>17, (4/25)^2>4/(v*19^3)=160/6859 and (7/1000)^2>3/(v*19^5)=120/2476099. These are deliberately loose ceilings, not new parameter choices.
+
+## 4. L2 bounds for both phases, including the cutoff
+
+Set a1=2/sigma+13=2000013. Differentiating (5), using (11), gives the same pointwise inequalities as the weighted theorem,
+
+    |f| <= kappa U,
+    |f'| <= kappa[a1 U+d U^2].                          (15)
+
+The 2/sigma term includes the cutoff derivative. The 13 term is |g_minus'| divided by the lower normalization 2; it is not a derivative of the spectral normalization N, which is fixed for each actual apparatus. Applying the L2 triangle inequality and (14),
+
+    ||f'||2 <= kappa a1 sqrt(I2)+kappa d sqrt(I4)
+            < 5a1+(4d/25)/kappa^2
+            < (1/100)/kappa^2.                          (16)
+
+The last scalar test is 5a1 kappa^2+4d/25<1/100. The entire source profile has zero endpoint trace and an L2 weak derivative. Jumps of chi' at the finitely many joins do not spoil H1; no second derivative of chi is used.
+
+Write t_minus=1+kappa^2 n/Df with n=-i|g_minus|^2/E'. The inherited bounds |n|<=160, |n'|<=720 imply
+
+    |t_minus'| <= kappa^2(720 U+160d U^2),
+    |rho'| <= 2+4kappa^2(720 U+160d U^2).                (17)
+
+Here 2 is |r0'|. The factor 4 safely bounds differentiation of t_minus/|t_minus| because |t_minus|>1/2. It counts the actual outgoing phase, whose derivative is large near the resonance.
+
+Using ||f||2=1 and (15),
+
+    ||f rho'||2
+      <= 2+2880kappa^3 sqrt(I4)+640d kappa^3 sqrt(I6)
+       < 2+2880(4/25)+(640d)(7/1000)/kappa^2,
+    ||(f rho)'||2 <= ||f'||2+||f rho'||2
+                   < (3/10)/kappa^2.                   (18)
+
+For example the exact kappa^2-scaled upper expressions from (16),(18) are about 0.00976000000000001 and 0.28304; the rational inequalities are controlling. Both f and f rho meet every hypothesis of (10). No old-column phase is adjusted separately.
+
+## 5. Complete-output composition and the explicit onset
+
+Apply the incoming estimate in (10) to f and the outgoing one to f rho. With
+
+    a_t(n)=(1/sqrt(2pi)) integral_I f(k)exp[-ikn-iE(k)t] dk,
+              n>=0,
+
+we obtain
+
+    ||a_t|| <= q_in(t) := (1/100)/(kappa^2 v t)+2J sigma/v,
+    ||1_(n<0) F_plus(exp(-itE)f rho)||
+             <= q_out(t) := (3/10)/(kappa^2 v t)+2J sigma/v.   (19)
+
+The outgoing full-line Fourier vector is normalized. If delta denotes its actual negative-half-line norm, its restriction b_t in (6) has norm sqrt(1-delta^2). Once q_out(t)<1, beta_t is defined and the **restricted-vector** normalization cost satisfies
+
+    ||b_t-beta_t||=1-sqrt(1-delta^2)
+                  =delta^2/[1+sqrt(1-delta^2)]
+                  <=delta<=q_out(t).                    (20)
+
+The inequality is not a comparison of the entire full-line vector to its normalized restriction; making that substitution can miss a factor. We deliberately use the safe linear bound in (20), despite the available quadratic improvement.
+
+The inherited exact scattering map Gamma_t is an isometry and satisfies
+
+    exp(-it Htilde)Gamma_0 = Gamma_t exp(-it Db),          (21)
+
+where Db lists the exact old vacuum energies. The seed error ||Eseed-Gamma_0|| includes every possible seed point-spectrum amplitude. It is below epsilon_seed=.003 for the original scope and .0029 for the joint box. It is propagated unitarily once; no bound state is discarded or paid twice.
+
+The actual open outgoing columns differ from zeta times the W eigenvalues times the common rho by at most epsilon_R=.000714 originally, or .000917 in the joint box, uniformly on I. Parseval and restriction bound the associated column-map error by epsilon_R. Open vacuum channels are orthonormal, so their aggregate bound is the maximum; this does not impose orthogonality on the localized error columns.
+
+For clarity the unchanged **complete localized** estimate is
+
+    ||L_t|| <= D/[sqrt(2pi) v t],      D=3/kappa^2.        (22)
+
+Its exact ingredients are the weighted theorem's full C_j and C_j' bounds, not a discarded closed tail. They keep the seven complementary emitter coordinates per parity and every source/clock component. Hilbert-valued integration by parts uses
+
+    D_j = integral_I [ |f'| ||C_j|| + |f| ||C_j'||
+                                      +(2J/v)|f| ||C_j|| ] dk
+             < 3/(2kappa^2),
+    D > sqrt(2) max_j D_j.                              (23)
+
+There are two potentially aligned localized columns in each parity and orthogonal parity groups. The new L2 estimates are used only for the free-wave tails; (22)-(23) retain their qualified weighted L1 product proof. Thus there is no unjustified replacement of a localized operator norm by one column norm or of the full matching inverse by a resonant scalar.
+
+Equations (19)-(23), the fixed scalar in (3), and the exact old-energy intertwining give, for q_out(t)<1,
+
+    ||exp(-it Hphysical)Eseed-Uideal(t)||
+      < epsilon_seed+epsilon_R+q_in(t)+q_out(t)
+                                  +3/[sqrt(2pi) kappa^2 v t]
+      < epsilon_seed+epsilon_R
+                    +(39/25)/(kappa^2 v t)+4J sigma/v,    (24)
+
+where sqrt(2pi)>12/5 and 1/100+3/10+3/(12/5)=39/25. This follows directly by comparing the actual evolved seed to Gamma_t exp(-itDb), then its incoming, outgoing and localized parts to (6). It never commutes K through the interacting Hamiltonian. The entire old clock aging remains exp(-itK), starting at zero.
+
+At T=10^30 the exact conservative remainder in (24) is
+
+    52502638388379/781250000000000000
+       = approximately 0.00006720337713712512.           (25)
+
+The individual ceilings are q_in(T)<.000002802, q_out(T)<.000014402 and the localized term<.00005. In particular q_out(T)<1/2 and vT>=1. Using the unchanged seed and reflection ceilings yields the exact rational upper expressions
+
+    original: 2954065138388379/781250000000000000
+                 = approximately .0037812033771371253 < .004,
+    joint:    3034533888388379/781250000000000000
+                 = approximately .003884203377137125  < .004. (26)
+
+The constant velocity-spread contribution is about .00000480337713712512 in the two-tail sum. It fits both error budgets. The remaining terms decrease with t, so (26) holds for **every** t>=T on the infinite apparatus. Trace distance here uses the full, unhalved trace norm: the complete channel error is below .008, including arbitrary passive references, by the standard twice-isometry-error bound.
+
+The joint extension introduces no new ladder estimate: the qualified joint source explicitly rechecks the gap .17, matching inverse 167, response bound 207, all localized sums, the same inequalities (11), and (22)-(23). Every quantity changed by this new proof is in (13)-(19) and depends only on those uniform actual-profile inequalities, the unchanged J,v,sigma,kappa and the same endpoint cutoff. Neither the changed source-excited eigenbasis nor its derivative with respect to an error parameter is used. The per-apparatus f and rho are fixed throughout each evolution. The joint seed and reflection allowances in (26) are inherited by their exact qualification, not independently recertified here.
+
+## 6. Finite clock, distance, scalar and physical resource accounting
+
+Keep clock sites 0,...,M-1 and e, with the same exact compression and the far-end diagonal correction J n_(M-1). The previously proved radius 19 about a suitable center applies in the prepared one-head sector, for both original and joint scopes. The physical scalar nu_actual+2kappa shifts that center; it is not dropped from the comparator. A path from e through c_(L+2) to the first omitted site c_M has distance
+
+    dM = 1+(M-L-2) = M-L-1 = M-13.                     (27)
+
+The alternative attachment route is two hops longer. The Chebyshev comparison, applied to the exact prepared seed and retaining all internal directions, is
+
+    ||embedded finite evolution - infinite evolution||
+          <= 4 exp[-dM+19t sinh(1)]/[1-exp(-1)].         (28)
+
+It is uniform on arbitrary old/reference input. It is not obtained by inserting M into a large simulation. Set
+
+    Tobs=2*10^30,       M=5*10^31.                      (29)
+
+The exact inequality dM>19 Tobs*(6/5)+9, together with sinh(1)<6/5, proves that (28) is less than .001 through Tobs. For an entirely rational final comparison, e>8/3 implies
+
+    4 exp(-9)/(1-exp(-1))
+          <(32/5)(3/8)^9=19683/20971520<.001.           (30)
+
+Combining (26),(28) gives original finite complete error below approximately .004781204 and joint finite complete error below approximately .004884204, each strictly below .005 on [T,Tobs]. The unhalved trace bound is below .01. The comparator remains the same normalized **infinite** half-line output embedded with the finite actual state; it is not replaced by a secretly renormalized truncated waveform. No fixed finite device is claimed to work forever.
+
+There are M clock qubits, one emitter and four original old/source qubits, hence M+5 qubits in this finite witness. On the exact product seed,
+
+    Eseed* Hphysical Eseed = K+(Ee+nu_actual+2kappa)I,
+    Eseed* Hphysical^2 Eseed
+        = [K+(Ee+nu_actual+2kappa)I]^2+2kappa^2 I.        (31)
+
+Thus for any old state the mean is its K mean plus the actual displayed scalar and Ee, and the variance is Var(K)+2kappa^2. This is the inherited one-head identity (the two attachment outputs are orthogonal); reducing T or M has not changed the seed's energy, interactions, strengths or positive local supports. A radius 19 in this sector is not a full many-head extensive-norm bound. The blank infinite tail remains the resource for the all-future statement, while (29) is a separate finite-horizon resource. Clean source/clock vacuum, the excited emitter, static phase coherence, coefficient supply and any native Hamiltonian or Record identification remain supplied or open. No reset, reuse or optimal resource claim is added.
+
+## 7. Discriminators and deliberately unused shortcuts
+
+The preserved author controls and the analytic proof distinguish the following nearby wrong arguments.
+
+1. **Wrong propagation sign.** For outgoing F_plus, i times the derivative of exp(-itE)g is exp(-itE)[i g'+tE'g]. Reversing the velocity sign leaves the exact symbolic defect 2tE'exp(-itE)g. Incoming F_minus has the opposite sign. This tests conventions, not just a positive bound.
+2. **Dropping velocity spread.** The exact identity contains (E'-v0)g. For constant normalized g on the circle and E=2J(1-cos k), v0=0 gives ||X psi_t||^2=2J^2t^2 while ||g'||=0. This toy is not the narrow emitter packet; it invalidates the proposed general identity without that term. For a nonzero narrow packet the term is likewise not identically zero. The floor in (10) is a conservative proof cost, not an impossibility theorem for sharper estimates.
+3. **Omitting the actual outgoing phase.** Constant normalized f on the circle and rho=exp(-7ik) have ||f'||=0 but ||(f rho)'||=7. Equation (18) therefore keeps the phase product. In the actual emitter bounds it contributes a leading kappa^-2 term. Replacing rho by r0 or by a fixed nominal output is not covered.
+4. **Wrong normalization space.** A normalized full-line toy vector with positive-side norm3/5 and negative-side norm4/5 costs2/5 to normalize its positive restriction, whereas its full-line distance to that normalized restriction has squared norm4/5>16/25. Equation (20) is the restriction-only statement needed in (24).
+5. **Wrong denominator integral coefficient.** The monotone substitution contributes2/v. Deleting that factor2 disagrees with the exact trigonometric evaluation of (13). No resonance grid is used to suggest it is harmless.
+6. **Replacing the actual scalar or waveform.** The qualified joint review's nominal-waveform countercase at t=10^36 is still a countercase to a nominal-waveform claim for every t>=10^30, since that time lies in the new range. Its distinct fixed-nominal-nu phase issue also remains. No new quantitative onset counterexample is asserted from that inheritance.
+
+Only the moment route is developed here. Higher-order pointwise integration by parts would have to pay cutoff derivative jumps and resonance derivatives; it was not silently invoked. A contour/exponential decay route would need a controlled complex continuation and all pole/branch contributions; no such theorem is assumed. Altering kappa, preparing a different packet, or inserting a supplied gate bond would change the present task. These unattempted alternatives are not ruled out, and the result is neither an optimum nor a broad negative conclusion.
+
+## 8. Focused prior-art comparison and exact read limits
+
+The repository statement search was made at parent-supplied current main **69cf6a289b2ec06213473f1549c51a57c29b6d70**, refreshed by root at 02:08 UTC. `prior_art/SEARCH.json` records the exact six read-only Git searches and their outputs. The initial broad parent query metadata and query2 are snapshotted. Both the parent broad searches and one of this worker's searches generated many lexical false positives (notably "decomposition" matching "position"). A subsequent word-boundary and explicit X+tV search exposed the relevant prior statements. This is a focused repository comparison, not an exhaustive worldwide literature or live-PR survey.
+
+- `AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS...2026-09-24`, complete source read: section4 already proves i[K,X]=V, [K,V]=0, X(t)=X+tV and the Hilbert-space moment bound. Its sine clock is prepared by design and controls finite-horizon reduced dynamics via prefix positions. It does not bound the fixed resonant emitter profile or the complete product-seed scattering output.
+- `FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS...2026-09-24`, complete source read: section4 proves the same exact position identity with a squared-sine prepared packet and uses it for full joint finite-grid control. The packet, program and target differ. This is direct prior art for the method, not this emitter's constants.
+- `GAPPED_CHAIN_SCATTERING...2026-10-12`, source lines1-375 read, covering the complete relevant section4: arbitrary-order tails outside velocity cones for smooth fixed packets are already proved. Its constants are packet-dependent, its dispersion/model differ, and it does not supply the explicit L2 estimates (13)-(18) for the present Lipschitz cutoff and kappa=10^-12 resonance. Its later scattering sections were not reread or imported here.
+- `NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE...2026-09-14`, complete source read: autonomous outgoing half-line permanence and Chebyshev finite-horizon costs are prior art. Its entrance uses supplied target-gate bonds, a different ready state and commuting K. No such bond is substituted for the installed literal-old-K apparatus in this refinement.
+- `FINITE_WAVEFORM_CLOCK_RESOURCE_SHARPENING...2026-10-14`, lines1-85 read for scope, and `CHAIN_PREPARATION_MOMENT_SCALING...2026-10-14`, lines1-80 read for scope: these concern a redesigned finite waveform packet and preparation energy moments, respectively. They are context-only hits. Their remaining proofs are not asserted read or relied on.
+- The complete pinned installed, weighted and joint mathematical sources were previously read, and their complete weighted/joint bodies and relevant installed sections were reread for this task. Their qualification documents were read. The exact generic bridge, local emitter and interval premises are reused by identity from the prior reviews; no inherited proof is replaced by an author PASS line. The relevant stationary/coefficient-box open proposals are represented by the same previously read pinned science; no moving publication wrapper or new PR head was independently inspected in this task.
+
+The matching prior identity is therefore credited explicitly. The proposed addition is the analytic resonant-profile derivative control, its actual outgoing-phase cost, and the resulting complete-output/finite-clock improvement for this unchanged seed and Hamiltonian, including the checked premise substitution to the qualified joint box. The nearest prior campaign result is the weighted t^-1/2 free-wave sum at T=10^36; simply rounding that old inequality cannot give the present onset.
+
+## 9. Actual evidence, exposure and handoff
+
+One bounded author program was executed once after `RESOURCE_PLAN.json` declared20 CPU seconds and30 external wall seconds. It does not import or run a parent scientific checker. `check_bounds.py` and its exact executed copy `run01_script.py` use the frozen rational J, rational integral/radical comparisons, symbolic Fourier differentiation, normalization discriminators and the new budgets. No matrix, parameter grid, quadrature, optimization, dynamics or large clock was used. The actual matrix dimension is zero. The elementary cosine integral coefficients are reconstructed by both the finite Fourier constant coefficient and integration-by-parts recurrence.
+
+The source, launcher, interpreter, resource plan, manifest and31 input snapshots were hashed and serialized in `run01_PRELAUNCH.json` **before** subprocess start, then compared afterward. This is a real prelaunch record, not a postexecution field named as if captured earlier. The single attempt exited0 in **0.6742795421741903 seconds** of wrapper wall time, using0.278231 user CPU seconds and0.055247 system CPU seconds; macOS child ru_maxrss was61,521,920 bytes. `run01.stdout` is complete, stderr is empty, and `run01_execution.json` records actual limits and matching bindings. No failed scientific execution occurred. The wrong formulas above are preserved discriminators, not erased attempts.
+
+The executed source SHA256 is `04096a96f6db5c36562d1dded05f7c8c089efd6620e5aff76d42207ca371bb53`; stdout SHA256 is `2112b35944ae4a2d980b8d3769675e8cc9a3278cbdaa59d093ef9c48d6035f7c`. The prelaunch and execution receipt identities are `23a663edd6be1025e7f5045fb82c3d42ea043d7386f5cc942df164deb24ea292` and `3e4f1fc767f1868373384800a3ca35d2e4cdfd3c2da94d1fee96de40270468b5`.
+
+These calculations corroborate the displayed algebra and exact scalar comparisons. They do not independently prove the Sobolev-domain argument, seed spectral measure, installed Schur inverse, past-limit scattering normalization or the conditional physical interfaces. This author previously performed source-exposed checks of the local emitter, interval bridge, weighted refinement and joint box. Those are reused premises, not new independent checks of this proposal; there is no model-diversity claim. The installed-source reviewer also had original stationary-ladder author exposure, as its qualification discloses. Root has not yet qualified this new candidate.
+
+The exact current-main workflow, skill and primitive-registry snapshots are recorded in `PROCESS_SOURCE_PINS.json` and the complete source manifest. Registered units, kinetic-form and realized-state primitives are not treated as missing or expanded to supply an apparatus. This mathematical theorem is conditional on the named supplied model; no new axiom or primitive is introduced. No editable prompt file, source theorem, worktree, checkpoint, Git state, PR or audit surface was edited.
+
+The next step is a **separate** bounded analytical check of (9)-(24), the inherited-interface match, the phase and normalization conventions, the exact scalar budgets and (27)-(30). In particular the checker should try wrong-sign and dropped-phase variants and confirm that the old exact isometry normalization is not being inferred from the moment estimate's nonvanishing floor. Only after that check should root decide whether to qualify or integrate the result. This frozen packet stops at the requested author-candidate handoff.

@@ -1,0 +1,584 @@
+{
+  "qualified_utc": "2026-10-17T04:31:30.034414+00:00",
+  "status": "qualified conditional interacting-preparation and staged-release theorem with two explicit wording clarifications",
+  "source_revision": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "source_tree": "087bbc0b414d63793d9d36a7cc8a371826894aa9",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+    "bytes": 21245,
+    "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+  },
+  "staged_addendum": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+    "bytes": 7945,
+    "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+  },
+  "clarifications": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/preparation_interacting_root_qualification/CLARIFICATION.md",
+    "bytes": 2069,
+    "sha256": "3a38c656e28fdef327c77ce3c49a9665e0fb200889dee0c990d8ff06bd97fa71"
+  },
+  "independent_analytical_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md",
+    "bytes": 23764,
+    "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+  },
+  "review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/ANALYTICAL_FREEZE.json",
+    "bytes": 1965,
+    "sha256": "146697585c3e5eff8c6e4b4852cdd64576da3dc85a161beaa8b0486277574ea0"
+  },
+  "author_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/FILE_MANIFEST.json",
+    "bytes": 4772,
+    "sha256": "083a756e896feeb0b07d4c65ca9143008a6839c378a240ac42abce8b92a24d6c"
+  },
+  "author_evidence": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/EVIDENCE.json",
+    "bytes": 2541,
+    "sha256": "821666f6be9624d1e3a8f6260919264c21dde129343095f3ef04d7c3cbfa0d6e"
+  },
+  "root_read_coverage": "Complete candidate, staged addendum, author checker/launcher and full output, and all 515 lines of the separate comparison read; inherited unchanged sources reused by identity. Hash validation is not proof review.",
+  "judgment": [
+    "Full-space positive-complement identity Hprep=K+cprep I+Haux holds, with Haux>=Delta D and a unique auxiliary seed ground.",
+    "All N=M+3 auxiliary qubits and many-head sectors enter the Gibbs estimate through ordered-eigenvalue min-max; no operator monotonicity of exponential or commutation with D is presumed.",
+    "The arbitrary-correlated complete-input trace estimate uses the actual unconditioned old/reference marginal and g(epsilon)=epsilon+sqrt(epsilon(4-3epsilon)); smaller product-joint estimates are not silently imported.",
+    "Common release pays sqrt(2) kappa tau in trace, actual scalar and full old aging. Staged release holds emitter complements while removing other seed-scalar controls, so the early nominal leakage is exactly zero; only the late emitter ramp incurs kappa tau_e/sqrt(2) in isometry.",
+    "Finite-slew nonempty early stages require D>0; V_seed is a scaled isometry with Gram 2I. These clarify frozen wording without altering its formulas or D=10000 example.",
+    "Every modeled qubit/reference output is retained, but prescribed controls and delivered thermal marginal remain external conditional supplies. Physical isolation, calibration, native Hamiltonian, cooling and reset/reuse are open.",
+    "Positive controls imply signed release work nonpositive; extensive identity coefficients and block loads remain paid. This is not a closed cooling/controller-energy or recovered work cycle."
+  ],
+  "verification": {
+    "author_frozen_members": 27,
+    "git_snapshot_pairs": 16,
+    "prelaunch_bindings": 26,
+    "review_frozen_members": 10,
+    "author_actual_execution": {
+      "all_bindings_unchanged": true,
+      "binding_count": 26,
+      "elapsed_seconds": 0.07662320788949728,
+      "ended_utc": "2026-10-17T04:01:33.730488+00:00",
+      "limits": {
+        "cpu_hard_seconds": 15,
+        "cpu_soft_seconds": 15,
+        "external_wall_seconds": 30,
+        "memory_cap": null,
+        "output_file_bytes": 8388608,
+        "thread_environment_requested": 1
+      },
+      "prelaunch": {
+        "bytes": 8683,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/PRELAUNCH.json",
+        "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+      },
+      "returncode": 0,
+      "runtime_coverage": "Interpreter plus selected standard-library files pinned, not the entire runtime or operating system. Thread count requested, not measured.",
+      "started_utc": "2026-10-17T04:01:33.653858+00:00",
+      "stderr": {
+        "bytes": 0,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 5164,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stdout.txt",
+        "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+      },
+      "timeout": false
+    },
+    "review_scientific_executions": 0,
+    "review_scope": "Source-exposed analytical independent check; author code/output remained unread through review freeze. Same model and substantial shared inherited sources, not blind whole-graph independence.",
+    "root_authorship_exposure": "Root froze its different mechanism before the other preparation derivation was received/read; root is the author here and does not count this disposition as independent of itself.",
+    "checks_in_this_script": "Exact file/Git/receipt identities and chronology only; no rerun, numerical bound, Gibbs computation or dynamics."
+  },
+  "retained_status": false,
+  "canonical_replay": false,
+  "published": false,
+  "source_members_rechecked": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/EVIDENCE.json",
+      "bytes": 2541,
+      "sha256": "821666f6be9624d1e3a8f6260919264c21dde129343095f3ef04d7c3cbfa0d6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/FREEZE.json",
+      "bytes": 751,
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "bytes": 8534,
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/check_preparation.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "bytes": 7275,
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "bytes": 4820,
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/launch_check.py",
+      "bytes": 4078,
+      "sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/EXECUTION.json",
+      "bytes": 1412,
+      "sha256": "2d4e2cb2864152926088010add43cda02516e5e1331a324291b2f977e8df8a71"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/PRELAUNCH.json",
+      "bytes": 8683,
+      "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/checker.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stdout.txt",
+      "bytes": 5164,
+      "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "bytes": 8534,
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "bytes": 4820,
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "bytes": 7275,
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/FREEZE.json",
+      "bytes": 751,
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "bytes": 8534,
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/check_preparation.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/launch_check.py",
+      "bytes": 4078,
+      "sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "bytes": 4820,
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "bytes": 7275,
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/checker.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "bytes": 40021,
+      "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py",
+      "bytes": 14020,
+      "sha256": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/math.cpython-313-darwin.so",
+      "bytes": 111808,
+      "sha256": "89e7675a78d1b8ef36fd2ea5fb2887e2d4ac80843cc786635d16cde8e9bad982"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/PRELAUNCH.json",
+      "bytes": 8683,
+      "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stdout.txt",
+      "bytes": 5164,
+      "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/CAPTURE_FAILURE_01.json",
+      "bytes": 858,
+      "sha256": "d6763a55005524bd70f73d5a758f90867bf1ca99c6a76692c03081df77892d33"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md",
+      "bytes": 23764,
+      "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/EXPOSURE_START.json",
+      "bytes": 1387,
+      "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/SOURCE_EXPOSURE.json",
+      "bytes": 1050,
+      "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/STATIC_REVIEW_CHECK.json",
+      "bytes": 1180,
+      "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/freeze_review.py",
+      "bytes": 4273,
+      "sha256": "b1ffae44078848e33332115d2d14ebe78ad191e0044da31d880fa1f8d49f9033"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/proof_search_governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/reviewer_skill.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/root_CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/root_STAGED_RELEASE_ADDENDUM.md",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md",
+      "bytes": 23764,
+      "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/REVIEW_MANIFEST.json",
+      "bytes": 1640,
+      "sha256": "071e005f02347e64f60e2f2920a0a0d2ce96f0d5fb174adfe33d97379d6567fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/EXPOSURE_START.json",
+      "bytes": 1387,
+      "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/SOURCE_EXPOSURE.json",
+      "bytes": 1050,
+      "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/STATIC_REVIEW_CHECK.json",
+      "bytes": 1180,
+      "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/root_CANDIDATE.md",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review/root_STAGED_RELEASE_ADDENDUM.md",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    }
+  ],
+  "failed_routes_preserved": [
+    "Mean-energy bound without beta*Delta>=1 fails; the comparison gives an explicit one-qubit counterexample.",
+    "Nonempty zero-duration release violates finite slew.",
+    "Uncanceled early leakage can accumulate with early duration.",
+    "Fewer control blocks do not imply smaller extensive norm or architecture dominance."
+  ],
+  "open_dependencies": [
+    "Exact supplied counterterms and phases",
+    "Delivered Gibbs marginal or explicit error allowance",
+    "Passive isolation after delivery",
+    "Exact early emitter cancellation",
+    "Known setup completion and actual control areas",
+    "Inherited complete-output finite runtime; any resonance replacement separately composed"
+  ],
+  "editable_prompt_files_changed": []
+}

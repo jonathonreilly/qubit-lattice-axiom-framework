@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/thermal_resonance_halt_2026_10_17.py
+runner_sha256: 944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872
+input_fingerprint_sha256: fadd8fb977cecd0222d7997a4066a73f335b3c3419e32a7e2efbfd8caf7d30a7
+timeout_sec: 45
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
+----- stdout -----
+{
+  "scope": "Three source-exposed author corroboration bodies. Analytical source/interface acceptance and independent review remain separate.",
+  "function_bodies_completed": 3,
+  "actual_shared_process_limits": {
+    "cpu_soft_hard_seconds": [
+      30,
+      30
+    ],
+    "external_wall_cap_seconds": 45,
+    "wall_enforcement": "Required canonical runner_cache execution; this class does not enforce wall time."
+  },
+  "resonance_status": "PASS_exact_scalar_corroboration_only",
+  "maximum_dense_matrix_dimension": 4
+}
+
+----- stderr -----
+

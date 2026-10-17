@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-17T04:33:25.022895+00:00",
+  "mechanical_draft_only": true,
+  "source_acceptance": {
+    "resonance": "qualified conditional, see captured acceptance",
+    "exact_product_preparation": "qualified conditional, see captured acceptance",
+    "interacting_preparation": "qualified conditional with visible D>0 and scaled-isometry clarifications",
+    "staged_release": "qualified conditional with visible D>0 and scaled-isometry clarifications",
+    "composition": "qualified conditional P/I separately; original pending history preserved"
+  },
+  "root_transport_review": "pending",
+  "canonical_scientific_execution": "not performed; root owned",
+  "mutation_execution": "not performed",
+  "publication": "not performed",
+  "retained_audit": "not performed",
+  "no_status_promotion": true,
+  "no_editable_prompt_changes": true
+}

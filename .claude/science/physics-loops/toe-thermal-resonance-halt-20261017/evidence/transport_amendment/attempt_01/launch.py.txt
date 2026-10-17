@@ -1,0 +1,28 @@
+from pathlib import Path
+import ast,datetime,gzip,hashlib,json,os,platform,resource,subprocess,sys,time,zlib
+D=Path(__file__).resolve().parent;A=D/'attempt_01';A.mkdir(exist_ok=False)
+def save(p,b):
+ with p.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+def ident(p):
+ p=p.resolve();b=p.read_bytes();s=p.stat();return {'path':str(p),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'device':s.st_dev,'inode':s.st_ino,'mtime_ns':s.st_mtime_ns}
+for name in ('check_amendment.py','launch.py'):save(A/name,(D/name).read_bytes())
+x=json.loads((D/'INPUTS.json').read_text());P=Path(x['historical_packet']);plan=json.loads((D/'PLAN.json').read_text())
+paths={D/'INPUTS.json',D/'PLAN.json',D/'capture.py',A/'check_amendment.py',A/'launch.py'}
+paths.update(D/r['snapshot'] for r in x['files'])
+maprel='.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/PACKAGING_MAP.json';archive=json.loads((D/'inputs/repo'/maprel).read_text())
+paths.update(P/r['original_path'] for r in archive['files'])
+paths.update(Path(v).resolve() for v in [sys.executable,ast.__file__,gzip.__file__,hashlib.__file__,json.__file__,resource.__file__,zlib.__file__])
+rows=[ident(p) for p in sorted(paths)];assert len(rows)<=plan['maximum_input_files'];assert sum(r['bytes'] for r in rows)<=plan['maximum_input_bytes']
+cmd=[sys.executable,'-B',str(A/'check_amendment.py'),'--root',str(D)]
+pre={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'command':cmd,'bindings':rows,'plan':plan,'runtime':{'python':sys.version,'platform':platform.platform(),'pin_limit':'Interpreter and selected stdlib/extensions only; no OS/transitive-runtime closure claim.'}}
+save(A/'PRELAUNCH.json',(json.dumps(pre,indent=2)+'\n').encode());fd=os.open(A,os.O_RDONLY);os.fsync(fd);os.close(fd);pre_identity=ident(A/'PRELAUNCH.json')
+env=os.environ.copy();env.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')
+def cap():resource.setrlimit(resource.RLIMIT_CPU,(30,30))
+start=datetime.datetime.now(datetime.timezone.utc).isoformat();t=time.monotonic();b=resource.getrusage(resource.RUSAGE_CHILDREN);timeout=False
+with (A/'stdout.json').open('wb') as out,(A/'stderr.txt').open('wb') as err:
+ try:p=subprocess.run(cmd,stdout=out,stderr=err,env=env,cwd=str(D),preexec_fn=cap,timeout=45);rc=p.returncode
+ except subprocess.TimeoutExpired:rc=None;timeout=True
+ out.flush();err.flush();os.fsync(out.fileno());os.fsync(err.fileno())
+a=resource.getrusage(resource.RUSAGE_CHILDREN);elapsed=time.monotonic()-t;post=[ident(Path(r['path'])) for r in rows]
+r={'started_utc':start,'ended_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'wall_seconds':elapsed,'returncode':rc,'timeout':timeout,'cpu_user_seconds':a.ru_utime-b.ru_utime,'cpu_system_seconds':a.ru_stime-b.ru_stime,'max_rss_macos_bytes':a.ru_maxrss,'prelaunch_identity_before_spawn':pre_identity,'binding_count':len(rows),'bindings_unchanged':post==rows,'prelaunch_unchanged':ident(A/'PRELAUNCH.json')==pre_identity,'stdout':ident(A/'stdout.json'),'stderr':ident(A/'stderr.txt'),'scientific_executions':0,'memory_cap':None,'threads_requested':1,'threads_measured':False,'runtime_pin_limit':pre['runtime']['pin_limit']}
+save(A/'RECEIPT.json',(json.dumps(r,indent=2)+'\n').encode());print(json.dumps(r,indent=2))

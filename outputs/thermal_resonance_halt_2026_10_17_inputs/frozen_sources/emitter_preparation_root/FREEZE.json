@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-10-17T03:58:31.920390+00:00",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "bytes": 21245,
+    "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "bytes": 8534,
+    "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+  },
+  "exposure": "Root author has not seen the independently assigned preparation derivation. The neutral task and common runtime/previous preparation sources were shared. Same selected model/effort; no blind or model-diverse claim.",
+  "scientific_execution": "none for this candidate as of this freeze",
+  "status": "unaccepted root candidate, pending separate mathematical check"
+}

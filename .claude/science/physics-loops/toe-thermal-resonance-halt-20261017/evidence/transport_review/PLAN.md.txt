@@ -1,0 +1,36 @@
+# Selective transport review plan
+
+The root's three original programs and WRAPPER_DRAFT.md were read completely
+and copied by their supplied SHA256 pins. No draft adapter is treated as final
+until root supplies its freeze pin. Review writes are confined to this directory.
+
+Review the complete executable transport and its finite source resolver after
+that freeze. Compare scientific statements and assertions one by one through
+AST/source reconstruction; separately account for import/main guarding, path
+substitutions, cap assertions and output/report changes. Verify literal input
+closure, fail-closed behavior, source snapshots, failed historical evidence,
+complete proof/review availability, and agreement of wrapper claims with the
+pinned qualifications and bodies. Historical status labels stay historical.
+
+Static AST/hash checks and bounded inert resolver fixtures are allowed. No
+scientific function, original checker, canonical primary, mutation campaign,
+optimizer, quadrature or dynamics will execute. Root owns canonical science
+execution. Any recommended scientific fault plan is descriptive only.
+
+Prepare deterministic evidence, full logs and actual receipts for static checks.
+Predeclare resource limits before such checks, retain failed attempts, and bind
+the exact source snapshots and executed checker before each subprocess. Do not
+interpret a successful transport check as mathematical theorem qualification.
+
+This reviewer authored the original resonance-family checking program and has
+substantial prior emitter/family exposure. The preparation originals and wrapper
+are exposed sources. This is a same-model selective transport review, not blind
+or model-diverse science review. The inherited model and effort stay unchanged.
+
+The current local SCIENCE_WORKFLOW.md hash is
+71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3,
+unchanged from the preceding complete read. The physics-claim-reviewer workflow
+is used only for this authorized packaging scope. User/root constraints override
+its generic model or parallel-review suggestions: no model override, delegation,
+Git, PR, checkpoint, audit, source, physical-axiom, prompt or other-chat action.
+The campaign deadline remains 2026-10-17T23:07:27Z.

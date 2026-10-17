@@ -1,0 +1,47 @@
+# Mechanical source coverage
+
+This packet packages already qualified conditional sources. It does not add a
+scientific qualification or rerun any scientific program. The same inherited
+model/effort and the author's substantial source exposure remain.
+
+The complete current SCOPE.md and root WRAPPER_DRAFT.md were read, including
+its final 5cc1d827 revision and the later three requested status/tense edits.
+The full parent portable primary and the earlier family build_package.py were
+read as implementation references. FrozenInputs and verify_artifacts are
+copied by exact AST identity; no parent scientific module is imported. The
+current writing guide was read. The applicable science workflow and unchanged
+prior governance are reused by their verified source identities, without
+starting an audit or landing process.
+
+All three new author checking programs were read completely, including the
+root preparation checker and its historical launcher. The resonance proof
+401e5c23, its full review70eaca75, root qualification, composition proposal
+250d431f and complete 432-line interface review150090e3 were read. The original
+650-line exact-product preparation proof b7ef6e98, the root preparation proof
+416a0cd7, staged addendum1c021b81 and this author's comparison cdf14b87 are
+reused from the immediately preceding complete readings at unchanged bytes.
+Their exact frozen scopes are captured. The complete product qualification
+review and acceptance, interacting clarification and operative judgment,
+and composition acceptance's operative scope/basis/limits were read.
+
+Large acceptance identity arrays, freeze pointers and source inventories were
+checked mechanically in full; this is not represented as another mathematical
+read of each historical dependency. Historical scientific output/receipt files
+are preserved and hash verified, not replayed. Existing source qualifications
+provide their historical evidentiary authority. Copies of older source trees
+are deduplicated against exact tracked parent bytes or exact new packet bytes
+through finite maps; no arbitrary growing source-directory glob was used.
+
+This author wrote the exact-product preparation and its checker. The root
+preparation code/output had remained unread through the earlier analytical
+comparison freeze at 04:25:14 UTC. Its checker was first read here, after that
+freeze, for transport. That later exposure does not retroactively describe
+the analytical comparison as code-independent forever or a blind full-chain
+review. Raw evidence is unchanged and comparison exposure records are retained.
+
+One guessed REPORT.md name failed; the correct REVIEW.md was then read fully.
+Truncated aggregate displays were followed by explicit missing ranges.
+READ_FAILURES.json records those read limitations. No truncated result is
+counted as completed proof reading. No new external literature, model/effort
+override, subdelegation, W edit, Git mutation, checkpoint, prompt, axiom, audit
+verdict, PR or science execution occurred.

@@ -1,0 +1,167 @@
+{
+  "planned_utc": "2026-10-17T04:57:32.774228+00:00",
+  "base": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/thermal_resonance_halt_2026_10_17.py",
+    "bytes": 59059,
+    "sha256": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872"
+  },
+  "cases": [
+    {
+      "label": "cutoff_atoms",
+      "role": "resonance_author",
+      "scientific_edit": {
+        "old": "tv_terms = [F(8), F(8), F(4)]",
+        "new": "tv_terms = [F(8), F(8), F(0)]"
+      },
+      "expected_stderr": "AssertionError: cutoff_total_variation",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/mutated.py",
+        "bytes": 59117,
+        "sha256": "dd68c733965e771e0e9631a2a30e97065c754a14623b7e128cc7cc2183c19347"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/driver.py",
+        "bytes": 663,
+        "sha256": "2e500d0758a4b1c8f9dc7d629fc5c01f138dbb30111b9475693ade46b5e0a245"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "transmission_orientation",
+      "role": "resonance_author",
+      "scientific_edit": {
+        "old": "correct = zsub(tminus, zdiv(Dzbar, Dz))",
+        "new": "correct = zsub(tminus, zdiv(Dz, Dzbar))"
+      },
+      "expected_stderr": "AssertionError: correct_phase_discriminator",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/transmission_orientation/mutated.py",
+        "bytes": 59117,
+        "sha256": "4870d6077c2e8abfbc743b89bed85b25bf24a547675a0eac4b4861e4fca6dc58"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/transmission_orientation/driver.py",
+        "bytes": 687,
+        "sha256": "4a74e9b79838823378bf42b3de69fa0cff2f612570dcd056c9d3a726ae7373ab"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "pair_diagonal",
+      "role": "product_preparation_author",
+      "scientific_edit": {
+        "old": "return kap * number_pair + sign *",
+        "new": "return kap / 2 * number_pair + sign *"
+      },
+      "expected_stderr": "AssertionError: ('emitter_pair_charpoly_L_1',",
+      "expected_traceback_statement": null,
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/pair_diagonal/mutated.py",
+        "bytes": 59121,
+        "sha256": "7de997fbe255b5d4cb46213d41e3dc728d35e2616b155863c517636c4b6d3fc6"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/pair_diagonal/driver.py",
+        "bytes": 675,
+        "sha256": "459b31d998396d8f18b5693c9acb5ba2754b0d70b2921971ad54a567a25ff419"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "density_complement",
+      "role": "product_preparation_author",
+      "scientific_edit": {
+        "old": "add(controls, 'counter_source_density', (SA, SB), u0 * (I4 - kron(n, n)), u0)",
+        "new": "pass  # Deliberately omit the density complement."
+      },
+      "expected_stderr": "AssertionError:",
+      "expected_traceback_statement": "assert not defect, defect",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/mutated.py",
+        "bytes": 59089,
+        "sha256": "e963fb65d3b39fc755afd216ca195fa7f2d275ac9c8579232e9ce8183116eb25"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/density_complement/driver.py",
+        "bytes": 685,
+        "sha256": "07cadcad95a25220788ed3dfb6c91a97ce42b411ba0ce74ca3da073e90af475f"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "vacancy_reserve",
+      "role": "interacting_preparation_author",
+      "scientific_edit": {
+        "old": "scale(nu, number(clocks[1])), scale(kappa, number(j1))",
+        "new": "scale(0, number(clocks[1])), scale(kappa, number(j1))"
+      },
+      "expected_stderr": "AssertionError",
+      "expected_traceback_statement": "assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/vacancy_reserve/mutated.py",
+        "bytes": 59116,
+        "sha256": "60533e5628842d02a958883aaf8a07edd2130d882796ec084cd2ffe0cc705694"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/vacancy_reserve/driver.py",
+        "bytes": 683,
+        "sha256": "0ef19ba00428a64a7c14482d204ab2f6c4d9dae6a81e27ab1d9b52a3679caaab"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    },
+    {
+      "label": "scalar_complement",
+      "role": "interacting_preparation_author",
+      "scientific_edit": {
+        "old": "controls = [add(scale(ba, Iop), scale(-1, Ga))",
+        "new": "controls = [add(scale(ba / 2, Iop), scale(-1, Ga))"
+      },
+      "expected_stderr": "AssertionError",
+      "expected_traceback_statement": "assert not add(run, extra, scale(-1, K), scale(-cprep, Iop), scale(-1, aux))",
+      "program": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/mutated.py",
+        "bytes": 59121,
+        "sha256": "839cb0f1ff3897f6d626cf0e5d2182dc54e2a02e15fc9ebd3d29b67f6de1d11c"
+      },
+      "driver": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/scalar_complement/driver.py",
+        "bytes": 687,
+        "sha256": "c4ab79ab42ddfc2016ba9fd7ecd7c786dc81ae8ab73c8fad76ee704c2e4a9e7b"
+      },
+      "transport": "Only REPO becomes fixed W path. Original guarded main stays inert; driver verifies unchanged inputs and calls one selected body."
+    }
+  ],
+  "CPU_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_seconds": 45,
+  "total_case_count": 6,
+  "maximum_dense_dimension": 4,
+  "runtime": [
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "bytes": 29422,
+      "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "bytes": 40021,
+      "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "bytes": 12816,
+      "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+    }
+  ],
+  "sympy_version": "1.14.0",
+  "launcher": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/run_mutations.py",
+    "bytes": 7711,
+    "sha256": "203c94433a0c32f8c09bdedb7101f3954ed4ff597b82d6766619627510ee7344"
+  },
+  "scope": "Fault sensitivity, not independent proof. Two resonance faults and four full-space preparation faults; no all-premise coverage claim. No full many-body or time dynamics calculation."
+}

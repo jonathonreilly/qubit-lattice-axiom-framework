@@ -1,0 +1,55 @@
+"""Preserve actual execution and comparison evidence outside calculation closure."""
+from validate_packet import *
+from datetime import datetime,timezone
+e=read(D/'canonical_01/EXECUTION.json');m=read(Q/'ROOT_MUTATION_REVIEW.json');c=read(Q/'REPORT_COMPARISON.json')
+assert e['status']=='ok' and e['cache_status']=='fresh' and c['scientific_payload_equality']
+assert m['case_count']==6 and all(x['intended_assertion_reached'] for x in m['cases'])
+for r in m['cases']:
+ validate_bindings(read(Path(r['prelaunch']['path']))['bindings'])
+ validate_bindings([r[k] for k in ('prelaunch','stdout','stderr')])
+m['root_full_failure_stream_read']='Complete six stderr streams and two nonempty resonance stdout JSON streams read; remaining four stdout streams verified empty. Intended scientific failures, not hash/import/path/cap/syntax errors.'
+m['root_stream_reviewed_utc']=datetime.now(timezone.utc).isoformat();write(Q/'ROOT_MUTATION_REVIEW.json',m)
+for label,root in [('canonical',D/'canonical_01'),('faults',D/'mutations'),('comparison_failure_01',D/'report_comparison_failure_01')]:archive(label,root)
+for name in ('thermal_install_overlay','thermal_spacing_amendment','thermal_format_archive_followup','thermal_transport_acceptance','thermal_canonical_01','thermal_compare_reports','thermal_compare_reports_02','thermal_faults_01'):
+ archive(name,N/'runs'/name)
+archive('post_execution_programs',D,[D/'compare_reports.py',Path(__file__)])
+(Q/'CLUSTER_CAP_EVALUATION.md').write_bytes((D/'CLUSTER_CAP_EVALUATION.md').read_bytes())
+(Q/'EXECUTION_STATUS.md').write_text(f'''# Thermal preparation and resonance execution status
+
+The conditional source arguments and reversible executable transport are
+qualified for this milestone. One actual canonical replay completed successfully
+in {e['elapsed_seconds']:.9f}s under shared CPU30/30 and external wall45. Its three
+author reports have identical scientific payloads to their original outputs,
+after explicitly enumerated timing, resource, identity and33historical binding
+labels are separated. All149 calculation inputs and actual prelaunch identities
+remain stable; the governed runner cache is fresh.
+
+The first comparison harness omitted those33historical labels and failed. Its
+script and receipt remain preserved; the reviewed transport already replaces
+that old prelaunch loop with the current external record. Only comparison
+bookkeeping changed. No scientific expression, primary, declared input or result
+changed, and the successful scientific calculation was not rerun.
+
+Six copied scientific faults reached their intended assertions, total child
+wall{sum(r['elapsed_seconds'] for r in m['cases']):.9f}s, each capped at CPU30/30 and wall45.
+They test cutoff endpoint atoms, transmission orientation, a complete pair
+diagonal, density complement, vacancy reserve and scalar complement. Full stdout
+and stderr were read. These are fault-sensitivity checks, not six independent
+proofs. The largest dense fixture is4x4; no huge-apparatus evolution, Gibbs
+preparation, controller, cooling, uniform numerical sweep or retained audit ran.
+
+The two preparation author programs retain their older runtime/common-release
+examples. The new staged release and resonance composition rely on the separate
+written source/interface qualifications. Complete output, actual phase, literal
+old aging, finite horizon and distinct preparation/runtime resource premises
+remain explicit. Same-model source exposure and partial runtime pinning remain
+limits. No OS memory cap or measured thread count is claimed.
+
+[Transport acceptance](ROOT_PORTABILITY_ACCEPTANCE.json),
+[complete report comparison](REPORT_COMPARISON.json) and
+[fault evidence](ROOT_MUTATION_REVIEW.json) record their actual scopes.
+Citation/focused checks and publication remain pending in their separate records.
+No editable prompt, physical axiom, audit verdict or science merge changed.
+''')
+write(D/'EXECUTION_PRESERVATION.json',{'utc':datetime.now(timezone.utc).isoformat(),'canonical':e,'comparison':pin(Q/'REPORT_COMPARISON.json'),'mutation_review':pin(Q/'ROOT_MUTATION_REVIEW.json'),'archives':validate_archives(),'scientific_executions':1,'copied_fault_executions':6,'failed_comparison_harness_attempts':1,'primary_and_declared_input_changes_after_execution':[]})
+print(json.dumps({'canonical':1,'faults':6,'scientific_payload_equality':True,'archives':len(validate_archives())},indent=2))

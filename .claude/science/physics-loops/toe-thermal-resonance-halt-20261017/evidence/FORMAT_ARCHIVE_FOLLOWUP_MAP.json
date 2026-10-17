@@ -1,0 +1,25 @@
+{
+  "source_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/format_archive_followup",
+  "scope": "Lossless original byte reconstruction, including failed attempts; no scientific execution.",
+  "files": [
+    {
+      "original_path": "PACKAGING_MAP.before.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/transport_amendment/inputs/integration/format_archive_followup/PACKAGING_MAP.before.json.txt",
+      "bytes": 639127,
+      "sha256": "c098410eb1aac9d52ca0ad9c2a42e8d76206fab35cd189be0962936b114af886",
+      "compression": "none",
+      "raw_bytes": 639127,
+      "raw_sha256": "c098410eb1aac9d52ca0ad9c2a42e8d76206fab35cd189be0962936b114af886"
+    },
+    {
+      "original_path": "REPAIR.json",
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/transport_amendment/inputs/integration/format_archive_followup/REPAIR.json.txt",
+      "bytes": 2597,
+      "sha256": "7bde2e482b28aa8e3a7d777c0ed51a528502462496f04f2f4be859b575e45747",
+      "compression": "none",
+      "raw_bytes": 2597,
+      "raw_sha256": "7bde2e482b28aa8e3a7d777c0ed51a528502462496f04f2f4be859b575e45747"
+    }
+  ],
+  "count": 2
+}

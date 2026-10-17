@@ -1,0 +1,158 @@
+---
+claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+source_status: root_candidate_pending_independent_check
+---
+# Release the cold fields before opening the emitter
+
+This proposed extension was derived before root received or read the separate
+preparation derivation. It relies on the exact full-qubit construction in
+root CANDIDATE.md, SHA256
+416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0.
+It changes the externally prescribed setup schedule, not the autonomous
+runtime. Independent checking is pending. The original common-envelope
+candidate and its actual exact-arithmetic run remain unchanged.
+
+## 1. Separate the two release interfaces
+
+Write A=A_rest+A_e1+A_e2 for the positive controls in candidate (3), where
+A_ej=2kappa I-Q_ej for the two emitter contacts. Every individual block A_r
+of A_rest satisfies
+
+    A_r E=a_r E,
+
+with a_r=b_A for the old1/sourceA complement, b_B for the old2/sourceB
+complement, and zero for every cold-field block. The two emitter complements
+instead satisfy
+
+    A_e1 E=kappa E-kappa V_1,
+    A_e2 E=kappa E-kappa V_2,
+    V_1^*V_1=V_2^*V_2=I, V_1^*V_2=0,
+    V_seed=V_1+V_2.                                   (A1)
+
+The phases of V_1,V_2 are the actual t_L/kappa and t_(L+2)/kappa; these
+are not chosen independently of the installed emitter. Equations (A1) hold
+on the complete old input space and with all passive references.
+
+Hold both emitter complements fully on while releasing the other controls.
+For any finite actual D>=0, let each u_r(s), 0<=s<=D, be a supplied C1
+nonincreasing envelope from one to zero, with zero endpoint derivatives,
+0<=u_r<=1. Different controls may have different start times, durations and
+shapes. Their actual incident derivative sums must meet the supplied cap.
+The generator in this first stage is
+
+    H_early(s)=Hrun+A_e1+A_e2+sum_(r in rest) u_r(s) A_r. (A2)
+
+All cold fields and old-port complements are zero by D. There are no extra
+clock/emitter/source factors. If a control has not reached zero, the next
+stage does not satisfy this exact schedule; its actual residual requires
+separate accounting. A finite known completion time is a condition, not an
+inferred property of a large control network.
+
+Substitution of (A1) and candidate (2) gives the exact supported identity
+
+    H_early(s) E=E[K+c_early(s)I],
+    c_early(s)=c_run+2kappa+b_A u_A(s)+b_B u_B(s).        (A3)
+
+Thus the ideal seed is preserved exactly throughout the entire early
+stage, with actual old age D and phase
+
+    Phi_early=(c_run+2kappa)D
+                  +b_A integral_0^D u_A(s)ds
+                  +b_B integral_0^D u_B(s)ds.          (A4)
+
+No adiabatic approximation or spectral gap along the release is needed.
+The source and all clock qubits stay empty on this comparator because the
+only terms that can move its single emitter head cancel exactly. A cold
+onsite projector annihilates the seed separately, so its detailed area is
+absent from (A4); its physical block load and controller cost are not absent.
+Neither source darkness nor this cancellation is assumed for arbitrary
+thermal states. Their complete initial error is propagated by the actual
+unitary using candidate (8), once.
+
+## 2. Open only the two emitter bonds last
+
+After D, keep A_rest zero. Release A_e1 and A_e2 together over a duration
+tau_e>0 with the same decreasing cubic a(s) as the original candidate:
+
+    H_late(s)=Hrun+a(s)(A_e1+A_e2), 0<=s<=tau_e.        (A5)
+
+The supported phase is c_run+2kappa a(s) and the orthogonal residual is
+(1-a(s))kappa V_seed. The exact same Duhamel argument now gives
+
+    ||U_late U_early E
+       -E exp[-i(D+tau_e)K-i Phi_staged]||
+          <=kappa tau_e/sqrt(2),
+    Phi_staged=Phi_early+c_run tau_e+kappa tau_e.       (A6)
+
+The nominal release error contains tau_e, not D+tau_e. Long or sequential
+removal of the M+2 blank fields therefore does not itself increase that
+error. It still consumes real time and real control resources, and ages
+the old system. No claim of negligible total setup time follows.
+
+The largest late added incident load is 4kappa at the emitter, so the cubic
+late slew is at most 6kappa/tau_e. A supplied allowance Lambda is satisfied
+when tau_e>=6kappa/Lambda. For example, tau_e=1 and Lambda=10^-3 suffice
+throughout the given coupling family: 6kappa<=6*10^-8<10^-3. This is a
+specified finite model duration, not a derived minimum or bandwidth bound.
+Only the two emitter-complement envelopes need this particular simultaneous
+late profile. If they differ, their actual supported residual has norm
+kappa sqrt[(1-a_1)^2+(1-a_2)^2], and its time integral is the corresponding
+valid allowance. One must then retain their two separate phase areas.
+
+The early stage admits a simple bounded implementation as well. For a common
+cubic release of A_rest, D=10000, Delta=1 and Lambda=10^-3 suffice by the
+original extra-load upper bound Delta+b_A<3. Alternatively release its blocks
+in separate nonoverlapping cubic windows of a chosen duration ell. It is
+sufficient that 3||A_r||/(2ell)<=Lambda for every block. The actual D is the
+sum of their finite window durations and any gaps. Equation (A3) still holds
+at every time, even through gaps. This is an explicit possibility for
+sequentially scheduled supplied controls, not a free universal controller
+or a proof that all sites can be addressed by a native mechanism.
+
+## 3. Full target, thermal errors and work
+
+For the finite runtime theorem after setup, replace tau and Phi in candidate
+(15) by D+tau_e and Phi_staged. In particular the complete comparator is
+
+    zeta exp[-i Phi_staged-i(nu+2kappa)t]
+       beta_kappa,t tensor iota exp(-itK)W exp[-i(D+tau_e)K]. (A7)
+
+The spectral profile uses runtime t since the end of setup. The literal old
+age is t+D+tau_e, and any earlier isolated preparation duration must be
+added when an earlier old input is compared. K is never commuted through
+the physical interacting Hamiltonian. Its commutation with the explicitly
+given W is only a simplification of the comparator.
+
+For the same arbitrary correlated delivered input the complete unhalved
+trace bound is
+
+    min(2,g(d)+sqrt(2)kappa tau_e+2epsilon_halt).        (A8)
+
+With the candidate's nominal beta=100,Delta=1,M<=5*10^31, exact thermal
+count bound and tau_e=1, the already checked g(d)<2*10^-5 is unchanged.
+The release allowance is less than 1.5*10^-8. The inherited PR9665 finite
+epsilon_halt<.005 therefore gives total trace error below .010020015.
+The point is the different setup timing permission and supported error
+account, not the last decimal of that sufficient error bound. If a future
+separately qualified runtime has another onset or device size, its actual
+thermal count and finite time horizon must be substituted explicitly; this
+addendum does not qualify the pending resonance-family theorem.
+
+All early and late coefficients are nonincreasing on positive added blocks.
+The sign W_setup<=0 and endpoint identity from candidate (18) therefore
+hold over both actual stages, with the same initial Hprep and final Hrun.
+Its nominal mean-energy allowance remains the candidate's interacting
+Gibbs estimate. This is work returned to the supplied drive, not a cooling
+cost, restored controller, or reusable blank source. Preparation, phase
+reference, timing manufacture, isolation and physical energy/Record
+identifications remain open or supplied.
+
+The gain relies on exact cancellation of the two emitter hopping blocks
+during the potentially long early stage. A residual uncanceled hopping of
+norm eta would generally add a term of order eta D; a small pointwise
+miscalibration is not an all-duration certificate. This particular residual
+is local to the emitter, so one may formulate a local supplied precision
+certificate, but this addendum does not derive or waive it. Runtime temporal
+noise is also outside scope. The late onset must not be counted from the
+start of a long early setup while forgetting actual old aging.

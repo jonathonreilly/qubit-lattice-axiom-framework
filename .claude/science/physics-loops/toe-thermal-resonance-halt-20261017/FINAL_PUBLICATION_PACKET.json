@@ -1,0 +1,41 @@
+{
+  "finalized_utc": "2026-10-17T05:02:13.206221+00:00",
+  "parent_head": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "focused_record": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-thermal-resonance-halt-20261017/PUBLISH_CHECKS.json",
+    "bytes": 23858,
+    "sha256": "45617490e3d60721f7cc3eee09f52ec2e63a6c9152b03b2930d297952069aff9"
+  },
+  "source_body_primary_or_input_changes_after_execution": [],
+  "publication_only_delta": [
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md",
+      "bytes": 2552,
+      "sha256": "cd17ffc4cd5ed1f450e4568abdb517ba1dc19f2f23c155a31ac6cebd9c85b9da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/CLUSTER_CAP_EVALUATION.md",
+      "bytes": 3710,
+      "sha256": "b75e3362069014ca8f79ae4dfd6627cf4e7383be65298d58038569b3518c4035"
+    }
+  ],
+  "delta_checks": {
+    "vocabulary_violating_files": 0,
+    "new_link_targets": [
+      "PUBLISH_CHECKS.json",
+      "FINAL_PUBLICATION_PACKET.json"
+    ]
+  },
+  "cache_status": "fresh",
+  "final_source_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/FINAL_UPSTREAM_REFRESH.json",
+    "bytes": 1659,
+    "sha256": "67547f20fda615ef9149a5b125fe503a51c0dd74ecf07c93e74b71985365ca7b"
+  },
+  "remaining_obligations": [
+    "Remote regular PR creation and verification",
+    "Ancestor inclusion, exact integrated-current-main landing checks and retained audit",
+    "Native supply, calibration/noise, practical resources and complete capture/reset/reuse"
+  ],
+  "editable_prompt_files_changed": []
+}

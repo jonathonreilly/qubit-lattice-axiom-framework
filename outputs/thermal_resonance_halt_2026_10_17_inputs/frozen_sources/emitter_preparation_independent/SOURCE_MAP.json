@@ -1,0 +1,104 @@
+{
+  "captured_utc": "2026-10-17T04:01:11.901070+00:00",
+  "source_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "sources": [
+    {
+      "snapshot": "inputs/family.md",
+      "repository_path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/product_seed.md",
+      "repository_path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/two_body.md",
+      "repository_path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/local_gibbs.md",
+      "repository_path": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/controlled_stop.md",
+      "repository_path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/local_bias.md",
+      "repository_path": "docs/LOCAL_CONDITIONAL_BIAS_AND_ROTATED_GIBBS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 166194,
+      "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/parameters.json",
+      "repository_path": "outputs/product_seed_emitter_2026_10_17_inputs/frozen_sources/emitter_installed_certificate/inputs/two_body_interval_bridge__CERTIFICATE.json",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/workflow.md",
+      "repository_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/physics_loop.md",
+      "repository_path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/discovery.md",
+      "repository_path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/claim_status.md",
+      "repository_path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "worktree_same_at_capture": true
+    },
+    {
+      "snapshot": "inputs/delivery.md",
+      "repository_path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "worktree_same_at_capture": true
+    }
+  ],
+  "inherited_family_body_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "scope": "Complete exact source snapshots; reading coverage is separately stated. No live-source status inferred from historical embedded labels."
+}

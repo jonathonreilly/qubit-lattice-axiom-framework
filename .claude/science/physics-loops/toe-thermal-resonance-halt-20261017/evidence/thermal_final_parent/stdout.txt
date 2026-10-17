@@ -1,0 +1,1 @@
+{"baseRefName":"physics-loop/toe-product-seed-emitter-20261017","headRefName":"physics-loop/toe-emitter-coupling-family-20261017","headRefOid":"0e3993770a7a2dd872018f9dd3c76c2d9a624db9","isDraft":false,"mergedAt":null,"number":9665,"state":"OPEN","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9665"}

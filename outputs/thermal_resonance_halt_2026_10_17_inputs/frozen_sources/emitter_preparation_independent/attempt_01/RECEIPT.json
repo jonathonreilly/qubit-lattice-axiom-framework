@@ -1,0 +1,281 @@
+{
+  "finished_utc": "2026-10-17T04:03:46.489404+00:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.1043415828607976,
+  "user_cpu_seconds": 0.680372,
+  "system_cpu_seconds": 0.05651,
+  "child_peak_rss_native_units": 65011712,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "caps": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "maximum_attempts": 2,
+    "maximum_dense_matrix_dimension": 4,
+    "maximum_diagnostic_clock_sites": 20,
+    "parameter_grid_points": 0,
+    "quadrature_calls": 0,
+    "optimizer_calls": 0,
+    "time_evolution_calls": 0,
+    "os_memory_cap": null
+  },
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/PRELAUNCH.json",
+    "bytes": 9642,
+    "sha256": "278f4805d655f6f469895f4062f3718675cda92c64b01aa585228c956609e609",
+    "generation": {
+      "device": 16777231,
+      "inode": 518531398,
+      "mtime_ns": 1792209825385038413,
+      "ctime_ns": 1792209825385038413
+    }
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/stdout.json",
+    "bytes": 25536,
+    "sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982",
+    "generation": {
+      "device": 16777231,
+      "inode": 518531399,
+      "mtime_ns": 1792209826390986087,
+      "ctime_ns": 1792209826390986087
+    }
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "generation": {
+      "device": 16777231,
+      "inode": 518531400,
+      "mtime_ns": 1792209825385163871,
+      "ctime_ns": 1792209825385183288
+    }
+  },
+  "all_bound_bytes_and_generations_unchanged": true,
+  "after_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/RESOURCE_PLAN.json",
+      "bytes": 2150,
+      "sha256": "298504905f055e7187554f2f5a2c1c1dc9b650e5d80f4b6014d5ad8ee4d3ce15",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531149,
+        "mtime_ns": 1792209671448805793,
+        "ctime_ns": 1792209671448805793
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/SOURCE_MAP.json",
+      "bytes": 4689,
+      "sha256": "7d8c278958582704f1f8c54875618336bc1f38756592d7bcec83701e09228835",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531164,
+        "mtime_ns": 1792209671901601098,
+        "ctime_ns": 1792209671901601098
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/check_preparation.py",
+      "bytes": 13034,
+      "sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531393,
+        "mtime_ns": 1792209824784540071,
+        "ctime_ns": 1792209824784540071
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/launch_check.py",
+      "bytes": 3074,
+      "sha256": "f7631d81614c8080dc98ef18b4b9dc31bc769d136df4c9c8279c36eadc719c80",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531394,
+        "mtime_ns": 1792209824784677905,
+        "ctime_ns": 1792209824784677905
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/check_preparation.py",
+      "bytes": 13034,
+      "sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531396,
+        "mtime_ns": 1792209825080883580,
+        "ctime_ns": 1792209825080897788
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/claim_status.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531162,
+        "mtime_ns": 1792209671883222736,
+        "ctime_ns": 1792209671883222736
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/controlled_stop.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531156,
+        "mtime_ns": 1792209671767142291,
+        "ctime_ns": 1792209671767142291
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/delivery.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531163,
+        "mtime_ns": 1792209671900749593,
+        "ctime_ns": 1792209671900749593
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/discovery.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531161,
+        "mtime_ns": 1792209671864747801,
+        "ctime_ns": 1792209671864747801
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/family.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531152,
+        "mtime_ns": 1792209671690428052,
+        "ctime_ns": 1792209671690428052
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/local_bias.md",
+      "bytes": 166194,
+      "sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531157,
+        "mtime_ns": 1792209671784869000,
+        "ctime_ns": 1792209671784869000
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/local_gibbs.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531155,
+        "mtime_ns": 1792209671748648491,
+        "ctime_ns": 1792209671748648491
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/parameters.json",
+      "bytes": 24275,
+      "sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531158,
+        "mtime_ns": 1792209671807052290,
+        "ctime_ns": 1792209671807052290
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/physics_loop.md",
+      "bytes": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531160,
+        "mtime_ns": 1792209671844690543,
+        "ctime_ns": 1792209671844690543
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/product_seed.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531153,
+        "mtime_ns": 1792209671708484252,
+        "ctime_ns": 1792209671708484252
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/two_body.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531154,
+        "mtime_ns": 1792209671728462344,
+        "ctime_ns": 1792209671728462344
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/workflow.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "generation": {
+        "device": 16777231,
+        "inode": 518531159,
+        "mtime_ns": 1792209671825813614,
+        "ctime_ns": 1792209671825813614
+      }
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+      "generation": {
+        "device": 16777231,
+        "inode": 31187059,
+        "mtime_ns": 1751028755689299885,
+        "ctime_ns": 1771073912457841854
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "bytes": 29422,
+      "sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0",
+      "generation": {
+        "device": 16777231,
+        "inode": 96387496,
+        "mtime_ns": 1776471071872214098,
+        "ctime_ns": 1776471071872214098
+      }
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "bytes": 12816,
+      "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+      "generation": {
+        "device": 16777231,
+        "inode": 96389224,
+        "mtime_ns": 1776471072101500080,
+        "ctime_ns": 1776471072101500080
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+"""Root source-transport acceptance, with actual frozen reviewer evidence."""
+from validate_packet import *
+from datetime import datetime,timezone
+import os
+R=N/'thermal_resonance_transport_review';A=R/'amendment_review'
+assert pin(R/'REVIEW.md')['sha256']=='69f89458fb51f9ddf8c15b68339c8a96c8f95cf5e07b82b0487f52434ebdf530'
+assert pin(A/'REVIEW.md')['sha256']=='bb4f7e239df7135fdb3665fa33d4bc0cedaa6010b3fce9c9063c2d9bb7386e9c'
+assert pin(A/'FREEZE.json')['sha256']=='cb594e3a520e85973fe78c3bce450bede2e1fc85c4770ed3c8dd40c8ef26a422'
+reviews=[]
+for root,expected_count in ((R,1380),(A,1462)):
+ paths=validate_manifest(root)
+ pre=read(root/'attempt_01/PRELAUNCH.json');receipt=read(root/'attempt_01/RECEIPT.json')
+ assert receipt['returncode']==0 and not receipt['timeout'] and receipt['scientific_executions']==0
+ assert validate_bindings(pre['bindings'])==expected_count
+ for r in pre['bindings']:
+  s=Path(r['path']).stat();assert all(getattr(s,{'device':'st_dev','inode':'st_ino','mtime_ns':'st_mtime_ns'}[k])==r[k] for k in ('device','inode','mtime_ns'))
+ ident=receipt.get('prelaunch_identity_before_spawn',receipt.get('prelaunch_identity_captured_before_spawn'))
+ validate_bindings([ident,receipt['stdout'],receipt['stderr']])
+ assert receipt['prelaunch_unchanged'] and receipt.get('bindings_unchanged',receipt.get('all_prelaunch_bindings_unchanged'))
+ assert pre['created_utc']<receipt['started_utc']
+ assert (root/'attempt_01/stderr.txt').read_bytes()==b''
+ result=read(root/'attempt_01/stdout.json')
+ if root==R:
+  assert result['scientific_functions_called']==result['scientific_mutations']==0
+  assert sum(x['statement_count'] for x in result['details']['ast_preservation'])==581
+  assert sum(x['allowed_event_count'] for x in result['details']['ast_preservation'])==26
+  assert result['declared_inputs']==149 and result['source_labels']==239 and result['inert_fixture_cases']==14
+ else:
+  assert result['scientific_executions']==result['source_program_executions']==0
+  assert result['all_functions_classes_AST_unchanged'] and result['archive_members']==1177 and result['archive_pointer_repairs']==5
+  assert result['declared_inputs']==149 and result['literal_primary_path_changes']==1
+ arch=archive('transport_review' if root==R else 'transport_amendment',root,paths)
+ reviews.append({'review':pin(root/'REVIEW.md'),'freeze':pin(root/'FREEZE.json'),'manifest':pin(root/'FILE_MANIFEST.json'),'receipt':pin(root/'attempt_01/RECEIPT.json'),'validated_prelaunch_bindings':expected_count,'archived_regular_members':arch['count'],'scope':'Independent static implementation, source-exposed same-model reviewer; no science executed.'})
+archive('format_amendment',D/'spacing_amendment')
+archive('format_archive_followup',D/'format_archive_followup')
+integration_paths=[D/x for x in ('install_overlay.py','INSTALLATION.json','fix_math_spacing_transport.py','repair_format_archive.py','run_canonical.py','run_mutations.py','archive_evidence.py','validate_packet.py','accept_transport.py','compare_reports.py','UPSTREAM_REFRESH.json','CLUSTER_CAP_EVALUATION.md')]
+archive('integration_before_execution',D,integration_paths)
+checks=validate_inputs();archives=validate_archives()
+assert checks['primary']['sha256']=='944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872'
+assert checks['note']['sha256']=='939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30'
+record={'accepted_utc':datetime.now(timezone.utc).isoformat(),'disposition':'Qualified source transport accepted for one bounded canonical replay and six predeclared copied scientific faults. Actual execution and focused publication checks remain pending.',**checks,'review_evidence':reviews,'archives':archives,'root_read_scope':'Complete wrapper, original three programs, all26 transport edits, executable infrastructure, original and amendment reviews/checkers/launchers, actual static receipt fields, historical failure streams, all changed format/map logic. Frozen mathematical source qualifications retain their separate full-argument read scope. Large inventories and repetitive check-name arrays validated by deterministic identity comparison, not claimed as fresh mathematical reading.','format_scope':'Ten product Markdown destinations plus one TeX spacing span; raw product losslessly compressed. All scientific functions/classes unchanged. Five historical archive pointers repaired separately with failures/history retained.','scientific_executions_in_this_decision':0,'execution_plan':pin(D/'run_canonical.py'),'fault_plan':pin(D/'run_mutations.py'),'verification_limits':['Same selected model and substantial inherited/source exposure; no model diversity or blind full-dependency audit.','Transport/identity checks are not mathematical proof.','Three author calculations retain older numerical examples; staged/resonance composition is analytically qualified separately.','Native supply, calibration/noise, practical resources, complete capture/reset/reuse and physical identification remain open.','Integrated-main landing gates and independent retained audit remain separate.'],'editable_prompt_files_changed':[]}
+write(Q/'ROOT_PORTABILITY_ACCEPTANCE.json',record)
+print(json.dumps({'disposition':record['disposition'],'declared_inputs':149,'original_bindings':1380,'amendment_bindings':1462,'archived_mappings':len(archives),'primary':checks['primary']['sha256']},indent=2))

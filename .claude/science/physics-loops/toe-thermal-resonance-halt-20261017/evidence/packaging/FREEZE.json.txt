@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-10-17T04:41:07.906357+00:00",
+  "status": "Frozen mechanical publication overlay; root transport acceptance and actual scientific execution remain separate",
+  "manifest": {
+    "path": "PACKET_MANIFEST.json",
+    "bytes": 305905,
+    "sha256": "ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde"
+  },
+  "readiness": {
+    "path": "READY_FILES.json",
+    "bytes": 28941,
+    "sha256": "b99954e3ae23b2ed1491b16e06eb7c906d73731ada15425e23838bc3949e79c9"
+  },
+  "principal_identities": {
+    "path": "FINAL_IDENTITIES.json",
+    "bytes": 2767,
+    "sha256": "0e65645ff9b0542f175b7ce5f0fbea529feff9073af815ad14839c0cc16b5627"
+  },
+  "primary": {
+    "path": "canonical/scripts/thermal_resonance_halt_2026_10_17.py",
+    "bytes": 59056,
+    "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+  },
+  "note": {
+    "path": "canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 118919,
+    "sha256": "91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166"
+  },
+  "static_success_receipt": {
+    "path": "static_04/RECEIPT.json",
+    "bytes": 1666,
+    "sha256": "85ce456c0c87646b7c6043d7a6eae1a1fd3acc842c2d4f7106010d977e7732b3"
+  },
+  "regular_members_excluding_manifest_and_freeze": 1175,
+  "canonical_overlay_files": 108,
+  "source_labels": 239,
+  "declared_inputs": 149,
+  "scientific_executions": 0,
+  "scientific_mutation_executions": 0,
+  "editable_prompt_files_changed": [],
+  "no_W_or_Git_mutations": true,
+  "same_model_and_effort": true
+}

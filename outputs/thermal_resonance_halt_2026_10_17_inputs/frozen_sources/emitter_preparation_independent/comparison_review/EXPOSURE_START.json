@@ -1,0 +1,20 @@
+{
+  "recorded_before_root_proof_read_utc": "2026-10-17T04:15:06.322253+00:00",
+  "own_candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/CANDIDATE.md",
+    "bytes": 28456,
+    "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+  },
+  "own_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/FREEZE.json",
+    "bytes": 1693,
+    "sha256": "fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855"
+  },
+  "expected_root_candidate_sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0",
+  "expected_root_addendum_sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885",
+  "prior_exposure": "Own exact-product preparation route and substantial inherited emitter authorship/source exposure; root preparation proofs not yet read",
+  "method": "Source-exposed analytical comparison first; no root checker/output read before analytical freeze; bounded computation only if a specific decisive risk requires it",
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/comparison_review",
+  "same_model_effort": true,
+  "subdelegation": false
+}

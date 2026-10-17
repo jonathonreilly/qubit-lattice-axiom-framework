@@ -1,0 +1,21 @@
+{
+  "scope": "Static transport review and inert finite-resolver fixtures only",
+  "saved_before_static_checker_execution": true,
+  "cpu_soft_seconds": 30,
+  "cpu_hard_seconds": 30,
+  "external_wall_seconds": 45,
+  "maximum_attempts": 3,
+  "maximum_inspected_files": 2048,
+  "maximum_total_input_bytes": 134217728,
+  "maximum_inert_fixture_cases": 24,
+  "scientific_matrix_dimension": 0,
+  "scientific_body_executions": 0,
+  "scientific_mutation_executions": 0,
+  "parameter_grid_points": 0,
+  "quadrature_calls": 0,
+  "dynamics_steps": 0,
+  "os_memory_cap": null,
+  "requested_thread_environment": {"OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"},
+  "freeze_dependency": "Await root-supplied publication freeze pin before treating adapter bytes as final",
+  "deadline_utc": "2026-10-17T23:07:27Z"
+}

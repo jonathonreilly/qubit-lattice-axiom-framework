@@ -1,0 +1,27 @@
+"""Retarget historical deduplicated evidence after an explicit formatting edit."""
+from pathlib import Path
+from datetime import datetime,timezone
+import gzip,hashlib,json
+D=Path(__file__).resolve().parent;W=D.parents[1]/'correlation_worktree'
+Q=W/'.claude/science/physics-loops/toe-thermal-resonance-halt-20261017'
+A=D/'format_archive_followup';A.mkdir(exist_ok=False)
+m=Q/'evidence/PACKAGING_MAP.json';raw=m.read_bytes();(A/'PACKAGING_MAP.before.json').write_bytes(raw)
+def dig(b):return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+j=json.loads(raw);fixes=[]
+for r in j['files']:
+ b=(W/r['path']).read_bytes()
+ if dig(b)=={k:r[k] for k in ('bytes','sha256')}:continue
+ old=D/'spacing_amendment/before'/r['path'];b=old.read_bytes()
+ assert dig(b)=={k:r[k] for k in ('bytes','sha256')}
+ p=Q/'evidence/format_before'/(r['sha256']+'.txt');p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
+ fixes.append({'original_path':r['original_path'],'old_destination':r['path'],'new_destination':str(p.relative_to(W))})
+ r['path']=str(p.relative_to(W))
+assert len(fixes)==5
+m.write_text(json.dumps(j,indent=2)+'\n')
+for r in j['files']:
+ b=(W/r['path']).read_bytes();assert dig(b)=={k:r[k] for k in ('bytes','sha256')}
+ b=gzip.decompress(b) if r['compression']=='gzip' else b
+ assert dig(b)=={'bytes':r['raw_bytes'],'sha256':r['raw_sha256']}
+record={'utc':datetime.now(timezone.utc).isoformat(),'cause':'Archive-wide root check found five historical rows still pointing at current primary/SOURCE_MAP edited by the format amendment. Preserved original bytes existed in the before snapshot. Retargeted only archival pointers, without changing history or science.','before':dig(raw),'after':dig(m.read_bytes()),'fixes':fixes,'all_1177_raw_and_stored_archive_members_verified':True,'primary_note_and_declared_inputs_changed':False,'science_runs':0}
+for p in (A/'REPAIR.json',Q/'FORMAT_ARCHIVE_FOLLOWUP.json'):p.write_text(json.dumps(record,indent=2)+'\n')
+print(json.dumps(record,indent=2))

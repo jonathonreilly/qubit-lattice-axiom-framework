@@ -1,0 +1,64 @@
+{
+  "started_utc": "2026-10-17T04:47:33.567612+00:00",
+  "ended_utc": "2026-10-17T04:47:33.891039+00:00",
+  "wall_seconds": 0.32341570826247334,
+  "returncode": 0,
+  "timeout": false,
+  "cpu_user_seconds": 0.14354199999999998,
+  "cpu_system_seconds": 0.047582,
+  "max_rss_macos_bytes": 38420480,
+  "limits": {
+    "scope": "Static transport review and inert finite-resolver fixtures only",
+    "saved_before_static_checker_execution": true,
+    "cpu_soft_seconds": 30,
+    "cpu_hard_seconds": 30,
+    "external_wall_seconds": 45,
+    "maximum_attempts": 3,
+    "maximum_inspected_files": 2048,
+    "maximum_total_input_bytes": 134217728,
+    "maximum_inert_fixture_cases": 24,
+    "scientific_matrix_dimension": 0,
+    "scientific_body_executions": 0,
+    "scientific_mutation_executions": 0,
+    "parameter_grid_points": 0,
+    "quadrature_calls": 0,
+    "dynamics_steps": 0,
+    "os_memory_cap": null,
+    "requested_thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "freeze_dependency": "Await root-supplied publication freeze pin before treating adapter bytes as final",
+    "deadline_utc": "2026-10-17T23:07:27Z"
+  },
+  "binding_count": 1380,
+  "all_prelaunch_bindings_unchanged": true,
+  "prelaunch_identity_captured_before_spawn": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/attempt_01/PRELAUNCH.json",
+    "bytes": 652400,
+    "sha256": "1a84e860f9f83c073bd9a3187f0a1e79424cd6a2e02dbaa8b6b01dda335e3001",
+    "device": 16777231,
+    "inode": 518538031,
+    "mtime_ns": 1792212453566578286
+  },
+  "prelaunch_unchanged": true,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/attempt_01/stdout.json",
+    "bytes": 514627,
+    "sha256": "57d8a30e754f6121adc08f6f7288150242138aefe976ae43b1f56f17c16a9604",
+    "device": 16777231,
+    "inode": 518538032,
+    "mtime_ns": 1792212453767832177
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_transport_review/attempt_01/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "device": 16777231,
+    "inode": 518538033,
+    "mtime_ns": 1792212453567743281
+  },
+  "scientific_executions": 0,
+  "runtime_pin_limit": "Interpreter plus selected stdlib/extension files only; dynamic loader/OS and complete stdlib dependency closure not claimed."
+}

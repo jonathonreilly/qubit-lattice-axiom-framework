@@ -1,0 +1,153 @@
+{
+  "bindings": [
+    {
+      "bytes": 21245,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/CANDIDATE.md",
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "bytes": 751,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/FREEZE.json",
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421"
+    },
+    {
+      "bytes": 8534,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "bytes": 11515,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/check_preparation.py",
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "bytes": 4078,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/launch_check.py",
+      "sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263"
+    },
+    {
+      "bytes": 50396,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "bytes": 95866,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "bytes": 106965,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "bytes": 102731,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "bytes": 94335,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "bytes": 77852,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6"
+    },
+    {
+      "bytes": 117717,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021"
+    },
+    {
+      "bytes": 4820,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea"
+    },
+    {
+      "bytes": 3862,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304"
+    },
+    {
+      "bytes": 11333,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 6416,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 2581,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "bytes": 4770,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "bytes": 5313,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "bytes": 7275,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a"
+    },
+    {
+      "bytes": 11788,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/inputs/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 11515,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/checker.py",
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "bytes": 52640,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    },
+    {
+      "bytes": 40021,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/fractions.py",
+      "sha256": "58f7750133f2e23999ba3f634d1b14edfec6dc48bf8bb00a9911262cd7198f63"
+    },
+    {
+      "bytes": 14020,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py",
+      "sha256": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5"
+    },
+    {
+      "bytes": 111808,
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/math.cpython-313-darwin.so",
+      "sha256": "89e7675a78d1b8ef36fd2ea5fb2887e2d4ac80843cc786635d16cde8e9bad982"
+    }
+  ],
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-I",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01/checker.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/run01",
+  "independence": "Root authored both candidate and this checker before seeing the separately assigned preparation derivation; this is corroboration, not independent review.",
+  "limits": {
+    "cpu_hard_seconds": 15,
+    "cpu_soft_seconds": 15,
+    "external_wall_seconds": 30,
+    "memory_cap": null,
+    "output_file_bytes": 8388608,
+    "thread_environment_requested": 1
+  },
+  "runtime_coverage": "Interpreter plus selected standard-library files pinned, not the entire runtime or operating system. Thread count requested, not measured.",
+  "scope": "Exact fraction/Pauli identities on an abstract M=17 register, complete 4x4 pair matrices, rational scalar checks. No large matrix, thermal density, dynamics or scattering calculation.",
+  "serialized_utc": "2026-10-17T04:01:33.653383+00:00"
+}

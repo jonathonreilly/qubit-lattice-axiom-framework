@@ -1,0 +1,32 @@
+# Qualified conditional resonance-family escape
+
+The unchanged candidate401e5c23 and separate source-exposed review70eaca75
+support the exact nominal ladder, kappa[1e-12,1e-8], sigma1e-6,L12. Complete
+infinite isometry error is below.003832 for everyt>=1/kappa^2. The finite
+device Mceil(50/kappa^2) has error below.004832 only on[T,2T]. At the upper
+coupling the sufficient onset is1e16 Hamiltonian units and M5e17. These are
+enormous sufficient resources, not physical seconds, minimum cost or a
+practical device.
+
+Root read the full new arguments, separate derivation and actual code/output.
+BV endpoints, time-decaying contour edges and the scalar/full-tail real-band
+decomposition hold with the exact phase, old aging, complete outputs and
+nonzero seed/reflection floors. Every source coordinate and point-spectrum
+allowance remains paid. No installed matrix resonance was analytically
+continued. The finite graph bound retains the actual endpoint term and
+separate finite horizon.
+
+All41author and90review files,65review source pairs,21author upstream pairs,
+39independently frozen files and33author/35reviewer prelaunch bindings were
+verified. One author run took.085688834s and one distinct reviewer run
+took.665611167s. Root did not replay science. Selective same-model checking,
+prior source authorship, candidate exposure and root's unproved route
+suggestions remain explicit. Exact scalar checks corroborate the proof;
+they are not retained audit. Runtime pins are partial, and final author
+prose postdates its execution.
+
+Joint/calibration boxes and changes to the physical apparatus are excluded.
+Native phase/blocks/seed manufacture, cooling, practical cost, full finite
+capture/reset/reuse and physical Hamiltonian/Record identification remain
+open. Canonical publication checks and later integrated-main/retained gates
+are separate. No science merged or editable prompt changed.

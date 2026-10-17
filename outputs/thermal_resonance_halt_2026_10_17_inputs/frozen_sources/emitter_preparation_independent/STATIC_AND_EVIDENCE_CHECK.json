@@ -1,0 +1,245 @@
+{
+  "checked_utc": "2026-10-17T04:13:55.326720+00:00",
+  "kind": "Bookkeeping and source freshness; no scientific replay",
+  "source_checks": [
+    {
+      "snapshot": "inputs/family.md",
+      "expected_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87"
+    },
+    {
+      "snapshot": "inputs/product_seed.md",
+      "expected_sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44"
+    },
+    {
+      "snapshot": "inputs/two_body.md",
+      "expected_sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac"
+    },
+    {
+      "snapshot": "inputs/local_gibbs.md",
+      "expected_sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9"
+    },
+    {
+      "snapshot": "inputs/controlled_stop.md",
+      "expected_sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03"
+    },
+    {
+      "snapshot": "inputs/local_bias.md",
+      "expected_sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "ef7f472b1d7de4ef18206e113960649645bb831421a4fee892d34e98c6adcb89"
+    },
+    {
+      "snapshot": "inputs/parameters.json",
+      "expected_sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251"
+    },
+    {
+      "snapshot": "inputs/workflow.md",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "snapshot": "inputs/physics_loop.md",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "snapshot": "inputs/discovery.md",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "snapshot": "inputs/claim_status.md",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "snapshot": "inputs/delivery.md",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "frozen_copy_matches": true,
+      "current_worktree_matches": true,
+      "current_worktree_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    }
+  ],
+  "all_current_worktree_sources_match": true,
+  "family_body_sha256": "9bcf538e7efb2285e1e9e8b67da8c3f29a308b0baa9004eec1dd4787393fa9ac",
+  "body_wrapper_offsets": [
+    {
+      "leading_wrapper_bytes": 0,
+      "trailing_wrapper_bytes": 1,
+      "bytes": 39464
+    }
+  ],
+  "prelaunch_binding_count": 20,
+  "bound_checks": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/RESOURCE_PLAN.json",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/SOURCE_MAP.json",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/check_preparation.py",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/launch_check.py",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/attempt_01/check_preparation.py",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/claim_status.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/controlled_stop.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/delivery.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/discovery.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/family.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/local_bias.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/local_gibbs.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/parameters.json",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/physics_loop.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/product_seed.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/two_body.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/inputs/workflow.md",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/__init__.py",
+      "sha256_matches": true,
+      "generation_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy-1.14.0.dist-info/METADATA",
+      "sha256_matches": true,
+      "generation_matches": true
+    }
+  ],
+  "actual_scientific_attempts": 1,
+  "scientific_failures": 0,
+  "scientific_status": "Author algebraic corroboration passed; analytical preparation theorem needs separate review",
+  "named_scientific_check_records": 122,
+  "receipt_exit_code": 0,
+  "wall_seconds": 1.1043415828607976,
+  "limits": {
+    "cpu_soft_hard_seconds": [
+      20,
+      20
+    ],
+    "external_wall_seconds": 30,
+    "maximum_attempts": 2,
+    "maximum_dense_matrix_dimension": 4,
+    "maximum_diagnostic_clock_sites": 20,
+    "parameter_grid_points": 0,
+    "quadrature_calls": 0,
+    "optimizer_calls": 0,
+    "time_evolution_calls": 0,
+    "os_memory_cap": null
+  },
+  "python_ast_parse_paths": [
+    "capture_sources.py",
+    "check_preparation.py",
+    "finalize_packet.py",
+    "launch_check.py",
+    "attempt_01/check_preparation.py"
+  ],
+  "candidate_lines": 650,
+  "candidate_local_links_resolve": [
+    "SOURCE_MAP.json",
+    "inputs/",
+    "inputs/family.md",
+    "SOURCE_COVERAGE.md",
+    "RESOURCE_PLAN.json",
+    "attempt_01/PRELAUNCH.json",
+    "attempt_01/RECEIPT.json",
+    "check_preparation.py",
+    "attempt_01/stdout.json",
+    "attempt_01/stderr.txt"
+  ],
+  "changed_editable_prompt_files": [],
+  "limitations": "No independent theorem validation, thermalization, controller realization, scientific runner replay or large-device simulation in this finalization."
+}

@@ -1,0 +1,47 @@
+# Root qualification of the exact-ladder coupling family
+
+The complete frozen author argument and separate review support conditional
+reuse on the exact nominal apparatus, for kappa in[1e-12,1e-8] and sigma1e-6.
+Complete infinite error is below.004 for every t>=T=1e6/kappa^2. For
+M=ceil(50T), complete finite error is below.005 on[T,2T] only. At the upper
+endpoint T1e22 and M5e23 remain enormous sufficient bounds in Hamiltonian
+units, not minimum or practical physical costs.
+
+The reference spectral-mass bottleneck has a separate pre-exposure proof
+that retains both signed derivative corrections. The review also checks the
+author's sharper arctan identity with its constant Jacobian and positive
+bracket, and all changed Schur/phase/regularity/finite-horizon premises.
+An independently expanded squared-L2 bound supports the moment step. The
+complete parity overlap accounts for possible point spectrum. The failed
+variance ceilings32/25 and4/5 are preserved; neither is a physical probability
+or a general impossibility result.
+
+Root read both complete arguments, independent code/launchers/plans and
+full scientific outputs. It verified87 review files,56 original/snapshot
+pairs,23 stage-one frozen entries and true prelaunch bindings of17 and73
+review inputs plus3 runtime identities per run. Earlier root verification
+of the author's18 Git sources and5 local source pairs remains bound to
+unchanged bytes. The separate runs took.770373s and.594293s under CPU30/30
+and wall45; maximum matrices were0 and4. Root did not replay either
+scientific program. ACCEPTANCE.json carries exact pins and evidence.
+
+This is selective checking by the same model with substantial prior source
+exposure. Stage one predates new author exposure; stage two is exposed.
+Root had considered the mass route too. This is not independent retained
+audit or proof of the entire dependency graph. No grids, quadrature,
+full-device dynamics or formal verification were performed.
+
+The actual coupling-dependent common waveform, scalar nu+2kappa, literal
+old aging, full source/emitter/clock/reference outputs and nonzero fixed
+target residual remain. Positive cells and incident loads are retained;
+source A/B and c0/c1 are not under an all-site cap two. Native coherent
+phase, seed/vacuum supply, temporal noise, practical cost, reset/reuse and
+physical Hamiltonian/Record identification remain open. Joint static or
+calibration boxes are excluded; no common waveform across the family,
+arbitrary accuracy or all-future finite-clock claim follows.
+
+The next permitted step is a family-only reviewable publication artifact
+above PR9664, including its moment implication. Its actual canonical entry
+point must be inspected and executed with its declared inputs. Focused
+publication verification, eventual shared integrated-main landing checks
+and retained audit are separate obligations. No editable prompt changed.

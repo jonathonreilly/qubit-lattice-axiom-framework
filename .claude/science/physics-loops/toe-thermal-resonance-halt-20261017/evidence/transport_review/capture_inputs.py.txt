@@ -1,0 +1,42 @@
+from pathlib import Path
+import ast, hashlib, json, os
+D=Path(__file__).resolve().parent
+N=D.parent
+P=N/'thermal_resonance_publication_draft'
+W=N.parent/'correlation_worktree'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def save(p,b):
+ p.parent.mkdir(parents=True,exist_ok=True)
+ with p.open('wb') as f:f.write(b);f.flush();os.fsync(f.fileno())
+def cp(src,dest,expected=None):
+ b=src.read_bytes()
+ if expected:assert sha(b)==expected,(str(src),sha(b))
+ save(dest,b)
+ return {'source':str(src),'snapshot':str(dest.relative_to(D)),'bytes':len(b),'sha256':sha(b)}
+rows=[]
+for name,pin in [('FREEZE.json','001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c'),('PACKET_MANIFEST.json','ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde')]:rows.append(cp(P/name,D/'inputs/packet_metadata'/name,pin))
+manifest=json.loads((P/'PACKET_MANIFEST.json').read_text())
+assert len(manifest['files'])==1175
+assert sum(r['bytes'] for r in manifest['files']) < 134217728
+# Snapshot finite canonical closure plus selected mechanical metadata, not historical fixture copies.
+primary='scripts/thermal_resonance_halt_2026_10_17.py'
+b=(P/'canonical'/primary).read_bytes();assert sha(b)=='3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad'
+tree=ast.parse(b)
+audit=next(ast.literal_eval(x.value) for x in tree.body if isinstance(x,ast.Assign) and any(isinstance(y,ast.Name) and y.id=='AUDIT_INPUT_PATHS' for y in x.targets))
+assert len(audit)==149
+for name in sorted(set(audit)|{primary}):
+ rel=Path(name);assert not rel.is_absolute() and '..' not in rel.parts
+ src=P/'canonical'/rel
+ if not src.is_file():src=W/rel
+ rows.append(cp(src,D/'inputs/repo'/rel))
+for name in ['PACKAGING.md','READY_FILES.json','FINAL_IDENTITIES.json','WRAPPER.md','WRAPPER_DIFF.patch','PROOF_LINK_TARGET_DIFF.patch','FAILURE_EVIDENCE_MAP.json','READ_FAILURES.json','STATIC_REPAIR_01.json','STATIC_REPAIR_02.json','STATIC_REPAIR_03.json','MUTATION_FAMILIES.json']:
+ rows.append(cp(P/name,D/'inputs/packet_metadata'/name))
+for i in range(1,5):
+ for name in ['PRELAUNCH.json','RECEIPT.json','stdout.txt','stderr.txt','verify_static.py']:
+  rows.append(cp(P/f'static_{i:02}'/name,D/'inputs/packet_metadata'/f'static_{i:02}'/name))
+rows.append(cp(P/'static_04/STATIC_RESULT.json',D/'inputs/packet_metadata/static_04/STATIC_RESULT.json'))
+# Whole frozen packet is hash-verified by the static review, not copied recursively.
+result={'packet_root':str(P),'source_manifest_pin':'ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde','snapshot_files':rows,'packet_members_to_hash':1175,'packet_member_bytes':sum(r['bytes'] for r in manifest['files']),'scientific_execution':False}
+save(D/'INPUT_SNAPSHOTS.json',(json.dumps(result,indent=2)+'\n').encode())
+save(D/'READ_FAILURES.json',(json.dumps({'events':[{'kind':'inspection schema mistake','exact_error':"AttributeError: 'list' object has no attribute 'items'",'recovery':'Iterated source_to_function as a list; no scientific execution.'},{'kind':'display truncation','recovery':'Executable missing span500-720 recovered. All26event locations and original/replacement source printed compactly. Large ledger/identity arrays will be verified deterministically; not claimed manually read as proof.'}]},indent=2)+'\n').encode())
+print(json.dumps({'snapshots':len(rows),'bytes':sum(r['bytes'] for r in rows),'packet_members':1175}))

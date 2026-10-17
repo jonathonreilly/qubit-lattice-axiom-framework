@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-10-17T04:13:55.330746+00:00",
+  "status": "Frozen conditional author candidate, not root qualified or independently checked",
+  "source_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "candidate": {
+    "path": "CANDIDATE.md",
+    "bytes": 28456,
+    "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+  },
+  "source_map": {
+    "path": "SOURCE_MAP.json",
+    "bytes": 4689,
+    "sha256": "7d8c278958582704f1f8c54875618336bc1f38756592d7bcec83701e09228835"
+  },
+  "file_manifest": {
+    "path": "FILE_MANIFEST.json",
+    "bytes": 4354,
+    "sha256": "6593244eeac318b3d2cbd2327ef8960566f552fe7b951abbd20d4e20612a0fd6"
+  },
+  "scientific_output": {
+    "path": "attempt_01/stdout.json",
+    "bytes": 25536,
+    "sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982"
+  },
+  "scientific_receipt": {
+    "path": "attempt_01/RECEIPT.json",
+    "bytes": 10782,
+    "sha256": "88cc2a22357bb116878a788ec7d9ba6615dc2c70a7e62ac064b04184b380c321"
+  },
+  "static_receipt": {
+    "path": "STATIC_AND_EVIDENCE_CHECK.json",
+    "bytes": 10268,
+    "sha256": "ebffb295fa4fc6982fd5ea726d450fc1503e2f3344d1da7fe894ccadbd563d39"
+  },
+  "member_count_excluding_manifest_and_freeze": 27,
+  "root_competing_mechanism_exposure": "Not viewed before freeze",
+  "new_claim": "Positive full-space preparation controls, thermal marginal to complete finite emitter output, exact seed release bound kappa*tau/sqrt(2)",
+  "remaining_decision": "Separate analytical check before downstream acceptance",
+  "write_boundary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent"
+}

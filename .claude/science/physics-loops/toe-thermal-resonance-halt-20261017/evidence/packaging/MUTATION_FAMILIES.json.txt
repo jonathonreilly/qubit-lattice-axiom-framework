@@ -1,0 +1,55 @@
+{
+  "status": "Proposed families for root/transport-review selection; none executed or scientifically validated by this packaging task",
+  "base_rule": "Mutate a copied canonical primary after root approves transport. Keep the original FrozenInputs and finite input hashes unchanged. Invoke only the selected scientific function, under a real serialized prelaunch and shared CPU30/30, external wall45. Count only the intended scientific AssertionError, never hash/import/path/syntax/time/harness failure. Stop on unexpected outcomes and preserve copies and all streams.",
+  "families": [
+    {
+      "id": "resonance_cutoff_endpoint_atoms",
+      "function": "run_resonance_author",
+      "source_marker": "tv_terms=[F(8),F(8),F(4)]",
+      "proposed_change": "Set only the endpoint-atom contribution F(4) to F(0), leaving the required total20 unchanged.",
+      "intended_assertion": "cutoff_total_variation",
+      "meaning": "Missing hard-cutoff endpoint atoms must be rejected. This test does not prove the BV lemma."
+    },
+    {
+      "id": "resonance_wrong_reciprocal",
+      "function": "run_resonance_author",
+      "source_marker": "correct=zsub(tminus,zdiv(Dzbar,Dz))",
+      "proposed_change": "Reverse only the denominator ratio in correct to zdiv(Dz,Dzbar).",
+      "intended_assertion": "correct_phase_discriminator",
+      "meaning": "The opposite transmission-phase orientation must be rejected."
+    },
+    {
+      "id": "product_full_pair_number_term",
+      "function": "run_product_preparation_author",
+      "source_marker": "def qedge(t,sign=1): return kap*number_pair+sign*(...)",
+      "proposed_change": "Halve only the qedge diagonal kap*number_pair coefficient; keep its hopping and expected full-space spectra unchanged.",
+      "intended_assertion": "emitter_pair_charpoly_L_1",
+      "meaning": "A changed positive-pair construction must fail its entire 4x4 spectral identity."
+    },
+    {
+      "id": "product_density_complement_omission",
+      "function": "run_product_preparation_author",
+      "source_marker": "add(controls,'counter_source_density',(SA,SB),u0*(I4-kron(n,n)),u0)",
+      "proposed_change": "Remove only this added control from the full-space assembled operator, preserving the expected preparation Hamiltonian.",
+      "intended_assertion": "assert not defect,defect at the first M=16 full Pauli cancellation",
+      "meaning": "The omitted density scalar/complement must be detected by the global Pauli identity."
+    },
+    {
+      "id": "interacting_vacancy_compensation_omission",
+      "function": "run_interacting_preparation_author",
+      "source_marker": "scale(nu, number(clocks[1])) in controls",
+      "proposed_change": "Replace this control coefficient by zero; leave runtime and expected aux/cprep unchanged.",
+      "intended_assertion": "assert not add(run, extra, scale(-1,K), scale(-cprep,Iop), scale(-1,aux))",
+      "meaning": "The actual vacancy reserve requires its full-space compensation."
+    },
+    {
+      "id": "interacting_old_complement_half_sized",
+      "function": "run_interacting_preparation_author",
+      "source_marker": "add(scale(ba,Iop),scale(-1,Ga)) in controls",
+      "proposed_change": "Replace ba by ba/2 in this complement only; retain the expected preparation identity.",
+      "intended_assertion": "assert not add(run, extra, scale(-1,K), scale(-cprep,Iop), scale(-1,aux))",
+      "meaning": "Under-counting a positive scalar complement must fail the assembled identity; original local discriminator separately exposes negativity."
+    }
+  ],
+  "limits": "These are proposed discriminators, not results or an independent proof. Root must verify exact canonical AST matching and select the final cases. No calibration, joint box or new theorem is added."
+}

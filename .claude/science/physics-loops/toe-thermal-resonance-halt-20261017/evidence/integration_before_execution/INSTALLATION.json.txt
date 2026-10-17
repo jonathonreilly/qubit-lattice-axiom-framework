@@ -1,0 +1,20 @@
+{
+  "installed_utc": "2026-10-17T04:44:07.532001+00:00",
+  "base": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "overlay_files": 108,
+  "frozen_packaging_members_archived": 1177,
+  "note": {
+    "bytes": 119368,
+    "sha256": "13f226eca0041b5333bc087b69354ac2830d0eddb266d10cd698773ffc19657a"
+  },
+  "primary": {
+    "bytes": 59056,
+    "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+  },
+  "manifest": {
+    "bytes": 35726,
+    "sha256": "7e8ae2e98aad464bcb9410dd755ad9d2f3983b41f71e95f1dc879fb616bfc4b8"
+  },
+  "canonical_execution": false,
+  "science_body_changes": []
+}

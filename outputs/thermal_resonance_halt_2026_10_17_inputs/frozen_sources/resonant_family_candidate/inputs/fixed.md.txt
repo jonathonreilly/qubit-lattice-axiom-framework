@@ -1,0 +1,417 @@
+---
+claim_type: conditional_author_theorem
+actual_current_surface_status: new-author-work-awaiting-independent-review
+independent_review: pending
+root_qualification: pending
+native_preparation_claim: false
+retained_audit_claim: false
+scope: exact fixed installed emitter only
+---
+# Resonance-profile comparison for the fixed installed product-seed emitter
+
+**Exploratory author candidate, 2026-10-17.** For the unchanged installed apparatus with kappa=10^-12 and sigma=10^-6, the argument below proposes complete isometry error **below 0.003831 for every t>=10^24**. It keeps the actual outgoing clock waveform, fixed target phase, physical scalar, literal old-system aging, both source qubits, emitter and every closed channel. A finite clock with **M=5*10^25 sites** has embedded complete error **below 0.004831 on [10^24,2*10^24]**. These sufficient onset and size prescriptions are each a factor 10^6 smaller than the separately qualified position-moment candidate. They are still enormous sufficient costs, not estimates of minimum emission time.
+
+The new argument compares the actual real-band profiles in norm to rational functions with opposite poles. Only these auxiliary functions are continued off the real axis. A finite rectangular contour retains the **exact cosine dispersion** and charges the cutoff and vertical edges. A separate density comparison controls the remaining emitter amplitude. No Markov approximation, exponential decay law for the actual Hamiltonian, actual complex resonance-pole certificate, or completeness of the scattering states is assumed.
+
+This is author work, not an independent check or a retained-status claim. The one bounded scalar/symbolic execution supports the displayed arithmetic and discriminators; it does not independently validate the contour argument or its operator composition. No changed-coupling family or joint static box is composed here.
+
+## 1. Source identity, reuse and unchanged physical contract
+
+`SOURCE_MANIFEST.json` binds eighteen byte-exact snapshots and their original paths. The main mathematical identities are:
+
+| Role | Source under `inputs/science/` | SHA256 |
+|---|---|---|
+| Installed matching inverse, common seed overlap, full local coordinates and scalar | `emitter_installed_certificate/CANDIDATE.md` | `4361797e3896c5301d899d57824991dc2fd9263c7f4947fb87ddceabdef0a8ee` |
+| Weighted denominator and complete local estimates | `weighted_emitter_escape_candidate/CANDIDATE.md` | `a2e96d2947b1e0deef2417d4673ddc8afd54f7382236aee6913ba6cae98e32b5` |
+| Qualified previous sufficient onset and finite-horizon comparison | `ballistic_emitter_escape_candidate/CANDIDATE.md` | `31449e982b27e623491f4e9cb0c8239e2ff15ebc9605668b8e4684055c52410f` |
+| Exact scattering isometry, old aging, norm convention and column grouping | `finite_channel_wavepacket_bridge/THEOREM_V2.md` | `db1a25ee639337a99800f8b8c27dbf366861a6707116f559029697c9f8aaf0e3` |
+| Full positive emitter realization and graph geometry | `autonomous_emitter_route/ROUTE.md` | `f03626e591cddc3448bee72148edbee4717ae64af3a6543d4b5c184e7ef9f0a1` |
+| Exact rational J, sin(k0), cos(k0) and old ladder | `two_body_interval_bridge/CERTIFICATE.json` | `a98e272fa5d65e6177670ce2dfb52498ed942b8bd9996a0b9b16838d4e0c2251` |
+
+The unchanged source bodies retain their historical provisional labels. Their later acceptance records are copied too: installed acceptance SHA `c99e0c13ec2469910d74d1fe487d9d4ae09539d1ca3d46f53047dc36d509963c`, weighted acceptance SHA `01e6cf9d8e54d8dd38157f5901a0c9c2b7bc0ed2890e7895b2213a26b1469a16`, and ballistic acceptance SHA `bd2059184e105bd41437b1c28ca3f106a441215e09eac7a2b3ec316cbd674318`. The installed and weighted qualification documents have SHA `dfe73e8d332dc81bac378daf480662f74e95e3091f01fce11d6e2098f7d7596d` and `f3513816c0bbe060f50860e02a2f1c49afcd42056314af9cc161885076882f4b`, respectively. These records permit conditional mathematical reuse; they do not qualify this refinement or grant physical preparation permissions.
+
+Use exactly
+
+    J = 3752638388379/125000000000000,
+    q0 = 4.510351185997098,    k0 = 2 arctan(1/q0),
+    kappa = 10^-12, sigma = 10^-6, L = 12,
+    I = [k0-sigma,k0+sigma] contained in (0,pi),
+    E(k) = 2J(1-cos k), E0=E(k0), phi=2k0,
+    v = 1/40 < E'(k), |E''(k)|<=2J on I,
+    v0 = E'(k0),      v < v0 < 3/100.                    (1)
+
+The exact old operator and target are
+
+    K=2I+Z1 Z2,
+    W=[(9+12i)I+(-16+12i)X1 X2]/25,
+    zeta=-exp(-4ik0)alpha.                              (2)
+
+Here alpha is the original exact site-1 reflection witness, and zeta is the inherited absolute-site scalar. It is not fitted again. All other ladder coefficients remain the exact `exact_parameters` of the frozen interval certificate. The source vacuum is Omega=|00>_AB, iota x=x tensor Omega, and B iota=iota K. The old/source space is sixteen-dimensional, with two reducing parity blocks of dimension eight. At each selected old-energy band there is one open channel per parity and seven complementary internal directions.
+
+The same one-head operator and supplied product seed are
+
+    V=|L>-exp(i phi)|L+2>,
+    Htilde=[[Hg,kappa V],[kappa V*,B+E0]],
+    Hphysical=Htilde+(nu+2kappa)I, nu=1.459892813020969,
+    Eseed x=(|1>_e tensor |all clock zero>) tensor iota x. (3)
+
+The full-qubit positive realization is unchanged. For j=L,L+2, use
+
+    Q_ej=kappa(n_e+n_j)+t_j a_j^dagger a_e
+                             +conj(t_j)a_e^dagger a_j,
+    t_L=kappa, t_(L+2)=-kappa exp(i phi),
+    (E0-2kappa)n_e, kappa(I-n_L), kappa(I-n_(L+2)).       (4)
+
+Each Q_ej is positive with norm 2kappa, and E0>2kappa. Their sum with the three one-site terms in (4) is E0 n_e plus the two hoppings plus **2kappa I**. Added incident positive-block norm sums are E0+2kappa at e and 3kappa at either attachment. The supplied complex loop phase, exact static coefficients, clock/source vacuum and one excited emitter remain premises. Old/source/contact loads are unchanged, and the inherited source and boundary-clock loads are not all below two. No new all-site cap or native preparation is claimed. The seed energy mean is K+(E0+nu+2kappa)I and its variance is Var(K)+2kappa^2.
+
+## 2. Inherited complete spectral premises and the actual comparator
+
+Write z=exp(ik) and
+
+    gplus=z^-L(1-exp(i phi)z^-2),
+    gminus=z^L(1-exp(i phi)z^2),
+    a(k)=|gplus|<=2sigma,
+    b(k)=|gminus|>=bmin>3/2, b(k)<=2,
+    eta=2sigma/bmin < (4/3)sigma,
+    |gminus'|<=26.                                     (5)
+
+The scalar full-line reference self-energy and denominator are
+
+    Sigma_f,jj(k)=(-i/E'(k))[2-2cos(phi)z^2],
+    Df(k)=E(k)-E0-kappa^2 Sigma_f,jj(k),
+    Im Df=kappa^2(a^2+b^2)/(2E')>=19kappa^2,
+    |Sigma_f,jj'|<=560.                                (6)
+
+All bounds here hold throughout I. They are inherited uniform inequalities, not point samples. Define the unchanged real cutoff chi, one on |k-k0|<=sigma/2, linear to zero at both endpoints, and
+
+    yref=kappa conj(gminus)/Df,
+    N^2=(1/(2pi)) integral_I chi^2 |yref|^2 dk,
+    f=chi conj(yref)/(sqrt(2pi)N),
+    tminus=1-i kappa^2 b^2/(E'Df),
+    tau=tminus/|tminus|, r0(k)=-exp(2ik), rho=r0 tau.     (7)
+
+The installed theorem supplies
+
+    .99<N<=1, sqrt(2pi)N>2, ||f||2=||f rho||2=1,
+    |tminus|>1/2,
+    Aref=integral_I |f yref|/sqrt(2pi) in [N,1].         (8)
+
+It also supplies exact stationary columns Phi_j, their packet isometry
+
+    Gamma_t e_j=(1/sqrt(2pi)) integral_I f Phi_j exp(-iEt) dk,
+    exp(-itHtilde)Gamma_0=Gamma_t exp(-it diag(b_j)),
+    ||Eseed-Gamma_0||<.003,
+    max_j |R_aug,j-zeta omega_j rho|<.000714,            (9)
+
+where omega_j are the fixed eigenvalues of W in the inherited old basis. The .003 overlap bound is a **full operator** estimate. It already includes seed components outside the selected continuum, including allowed point spectrum. There is no addition or removal of those components here. The exact isometry is inherited from the earlier past-limit proof; the nonzero approximation floors below are not used to re-prove that isometry.
+
+The actual complete comparator is exactly
+
+    b_t(n)=(1/sqrt(2pi)) integral_I f(k)rho(k)
+                             exp[ikn-iE(k)t] dk, n>=0,
+    beta_t=b_t/||b_t||, with emitter empty,
+    Uideal(t)x=zeta exp[-i(nu+2kappa)t]
+                        beta_t tensor iota exp(-itK)W x. (10)
+
+The same common f and rho serve all four old channels. Both source qubits, emitter, complete clock and arbitrary passive reference are retained. The old factor ages for the entire elapsed time from the product seed at zero; it is not obtained by commuting K through the interacting Hamiltonian. There is no additional global exp(-iE0t) factor to discard: the clock waveform in (10) contains its own full E(k) phase.
+
+The full emitter component y_j of each Phi_j obeys, with Pc the seven-dimensional complement of its open internal vector u_j,
+
+    |(y_j)_j/yref-1|<=eta_p<4sigma,
+    ||Pc y_j||<=6kappa w_c
+         +6kappa^2 delta*206*2*(1+eta_p)|yref|,
+    w_c=800/13841287201, delta=50/96889010407.            (11)
+
+Consequently, using (8) and ||f||1/sqrt(2pi)<=1, the integrated norm of the complete Pc term is bounded by the installed epsilon_off<10^-18. This norm bound retains all seven emitter coordinates, not just the other vacuum coordinate. The localized clock part is C_g,j+kappa Kloc y_j, with
+
+    ||C_g,j||<=31, ||Kloc||<20000.                      (12)
+
+Kloc subtracts only the outgoing open wave and includes sites 0,1, all intermediate clock coordinates and the infinite closed tails. There are two possibly nonorthogonal error columns within each parity. Their operator norm is bounded by sqrt(2) times a common column bound; distinct parities are orthogonal. Reference emitter vectors u_j themselves are orthonormal.
+
+## 3. The outgoing phase cancels the advanced denominator, up to a bounded error
+
+For real k, put s(k)=conj(Df)/Df, a unit complex number. Directly from (6)-(7),
+
+    tminus-s = i kappa^2 a^2/(E'Df),
+    |tminus-s| <= 2a^2/(a^2+b^2) <= 2eta^2,
+    |tau-s| <= |tau-tminus|+|tminus-s|
+             <=2|tminus-s|<=4eta^2.                   (13)
+
+The middle step uses |tau-tminus|=|1-|tminus||<=|tminus-s|. Thus the actual outgoing profile f rho is within L2 distance 4eta^2 of
+
+    chi kappa r0 gminus/(sqrt(2pi)N Df).                (14)
+
+The incoming profile has conjugate(Df) in its denominator. The cancellation is approximate because a does not vanish on all of I; it is exact at k0. The opposite convention is wrong: at the rescaled values Re D=1, kappa^2 a^2/(2E')=0 and kappa^2 b^2/(2E')=1, tminus-conj(D)/D=0 but tminus-D/conj(D)=-2i. This discriminator is preserved in the executed output.
+
+## 4. Real-band comparison with two rational auxiliary profiles
+
+Set q=k-k0, g0=gminus(k0), b0=|g0|=2sin(2k0)>3/2 and Sigma0=Sigma_f,jj(k0). The exact phi=2k0 identities are
+
+    |Sigma0|=b0/v0, -Im Sigma0=b0^2/(2v0),
+    Gamma=-kappa^2 Im Sigma0=kappa^2 b0^2/(2v0)>19kappa^2,
+    c=kappa^2 Re Sigma0/v0, gamma=Gamma/v0,
+    |c|,gamma<3200kappa^2<sigma/4.                     (15)
+
+Define entire affine denominators
+
+    D0(k)=v0(q-c+i gamma),
+    D0sharp(k)=v0(q-c-i gamma).                        (16)
+
+For real k, D0sharp=conj(D0). On a complex contour `sharp` means the analytic formula in (16), not literal complex conjugation at that point. Let
+
+    C=kappa g0/(sqrt(2pi)N), |C|<=kappa,
+    h_in(k)=C/D0sharp(k),
+    h_out(k)=r0(k0)C/D0(k),       k in I,               (17)
+
+and extend both by zero on the rest of the momentum circle. They are auxiliary L2 functions, need not have zero endpoint trace and need not be normalized. For the untruncated rational functions on the real q line,
+
+    integral_R |C/D0|^2 dq
+        =kappa^2 b0^2/(2N^2 v0^2 gamma)=1/N^2.         (18)
+
+The same identity holds with D0sharp. Real Taylor's theorem and (6) give
+
+    |Df-D0|<=Jq^2+560kappa^2|q|,
+    |q|/|D0| <=(1+2/b0)/v0<100,
+    |Df-D0|/|D0| <=100(Jsigma+560kappa^2)
+                  <epsilon=4sigma.                  (19)
+
+For the second line, |q|<=|q-c|+|c|, |D0|>=v0|q-c| and |D0|>=Gamma, while |c|/Gamma=|Re Sigma0|/(v0[-Im Sigma0])<=2/(v0 b0). These are uniform inequalities even at the resonance. No root of the actual Df is found or assumed.
+
+The numerator changes are bounded by
+
+    |gminus/g0-1|<=26sigma/b0<18sigma,
+    |r0(k)gminus(k)/(r0(k0)g0)-1|
+       <=30sigma/b0<20sigma.                         (20)
+
+The latter derivative ceiling uses |r0'|=2 and |gminus|<=2. The cutoff loss is also explicit. On |q|>=sigma/2, (15) implies |q-c|>=|q|/2. Hence
+
+    integral_(|q|>=sigma/2) |C/D0|^2 dq
+                   <=16kappa^2/(v^2 sigma),
+    ||(1-chi)C/D0||_(L2(I))<=4kappa/(v sqrt(sigma)).   (21)
+
+The same estimates hold for D0sharp. Combining (13),(18)-(21), N^-1<100/99, gives
+
+    ||f-h_in||2
+       <=(100/99)(18sigma+epsilon)/(1-epsilon)
+                            +4kappa/(v sqrt(sigma))
+        <30sigma,
+    ||f rho-h_out||2
+       <=(100/99)(20sigma+epsilon)/(1-epsilon)
+                +4kappa/(v sqrt(sigma))+4eta^2
+        <30sigma.                                    (22)
+
+These comparisons use only the real interval. Multiplication by the exact unit phase exp(-itE(k)), Fourier transformation and projection onto either half-line cannot increase them, at any real time. The finite-band and cutoff changes are paid once in (22), not silently replaced by a full-line Lorentzian model.
+
+## 5. Exact-dispersion contour estimates for the two unwanted clock halves
+
+Use the unitary circle Fourier conventions
+
+    (F_plus g)(n)=(1/sqrt(2pi)) integral g(k)exp(+ikn)dk,
+    (F_minus g)(n)=(1/sqrt(2pi)) integral g(k)exp(-ikn)dk.
+
+For t>=0 deform the finite interval I to the rectangle whose lower side has imaginary part -sigma. At k=x-iy, x in I and 0<=y<=sigma,
+
+    Im E(x-iy)=-2J sin(x)sinh(y)<=-v y.                (23)
+
+The exact E is used on every side. For incoming Fourier coefficients on n>=0, and outgoing ones on n<0, the spatial factor has modulus at most exp(-y|n|), where n=0 is included for the incoming case. On 0<y<=sigma,
+
+    1-exp(-2y)>=y,
+    [sum_(n>=0) exp(-2yn)]^(1/2)<=y^-1/2.             (24)
+
+For example exp(-2y)<=1-2y+2y^2<=1-y for y<=1/2 proves the first inequality. The negative-half-line geometric norm is no larger. Establish the contour identity for each integer n, apply Minkowski to finite partial square sums, then use (24) and monotone convergence. The y^-1/2 endpoint singularity is integrable. This avoids treating the y=0 plane-wave sequence itself as an l2 vector.
+
+Both vertical sides obey |D0|,|D0sharp|>=v sigma/2. On the lower horizontal side |D0sharp|>=v sigma and |D0|>=v sigma/2. The numerator magnitude is at most kappa; 1/sqrt(2pi)<1/2. Discarding the additional time-decay factor on the three deformed edges, their total half-line norm bounds are
+
+    incoming: 4kappa/(v sqrt(sigma)) from verticals
+                       +kappa/(v sqrt(sigma)) from bottom,
+    outgoing: 4kappa/(v sqrt(sigma)) from verticals
+                      +2kappa/(v sqrt(sigma)) from bottom. (25)
+
+For clarity, one vertical contributes at most
+`(1/2)[2kappa/(v sigma)] integral_0^sigma y^-1/2 dy = 2kappa/(v sqrt(sigma))`.
+The bottom has length 2sigma and geometric factor at most sigma^-1/2. No infinite semicircle or large-|k| continuation of the physical dispersion is used.
+
+The advanced incoming denominator D0sharp has its pole above the real axis and crosses no pole in this rectangle. The retarded outgoing denominator has one pole
+
+    kp=k0+c-i gamma.                                  (26)
+
+Its lower-rectangle residue term, up to an irrelevant norm phase, is
+
+    -i sqrt(2pi) r0(k0) C/v0
+                         exp[ikp n-iE(kp)t].          (27)
+
+The factor -2pi i before division by sqrt(2pi) is the clockwise orientation. On n<0 the squared geometric sum is 1/(exp(2gamma)-1). Using exp(2gamma)-1>=2gamma and (15), its norm is at most
+
+    kappa b0/[Nv0 sqrt(2gamma)] * exp[Im E(kp)t]
+       =N^-1 exp[Im E(kp)t]
+       <=2 exp(-v gamma t).                          (28)
+
+The real part of kp lies in I. Equations (1),(15) give
+
+    v gamma = v kappa^2 b0^2/(2v0^2)
+                     >(125/4)kappa^2>30kappa^2.       (29)
+
+Define P(t)=2exp(-30kappa^2 t). Combining (22),(25)-(29),
+
+    q_in(t):=||1_(n>=0) F_minus(exp(-itE)f)||
+         <=30sigma+5kappa/(v sqrt(sigma)),
+    q_out(t):=||1_(n<0) F_plus(exp(-itE)f rho)||
+         <=30sigma+6kappa/(v sqrt(sigma))+P(t).         (30)
+
+In particular these bounds are uniform for all t>=T=10^24, since P(t)<=2e^-30<2(3/8)^30<10^-12. The retained actual output b_t in (10) has norm sqrt(1-delta_t^2), with delta_t=q_out's actual left side. Once delta_t<=1/2, its normalization changes b_t by
+
+    ||b_t-beta_t||=1-sqrt(1-delta_t^2)<=delta_t.        (31)
+
+This is the normalization cost of the **restricted** output. It is not a claim that the complete full-line vector differs from the normalized restriction by at most delta_t. The bound q_out in (30) is less than 1/2 at T, so beta_t exists for every later time.
+
+## 6. A separate density comparison controls the full emitter reference
+
+The common reference component of the emitter in Gamma_t is exactly
+
+    A_e(t)=integral_I p(k) exp[-iE(k)t] dk,
+    p=chi kappa^2 b(k)^2/[2pi N |Df(k)|^2].             (32)
+
+This follows from f yref/sqrt(2pi)=p. In particular p is nonnegative on the real interval and integral_I p=Aref<=1. Introduce the auxiliary rational density
+
+    p0(k)=kappa^2 b0^2/[2pi N D0(k)D0sharp(k)]
+         =gamma/[pi N ((q-c)^2+gamma^2)].              (33)
+
+On the real line its mass is 1/N. On the rectangle the first analytic formula is meant; no literal complex conjugation is continued. Put r_n=18sigma. By (19)-(20), a sufficient relative density ceiling is
+
+    |(b^2/b0^2)(|D0|^2/|Df|^2)-1|
+       <=[2r_n+r_n^2+2epsilon+epsilon^2]/(1-epsilon)^2
+        <45sigma.                                    (34)
+
+Its numerator bounds |b^2/b0^2-1| and ||Df/D0|^2-1| separately. The cutoff tail of p0 is bounded by the same real-line integral as (21), because its numerator is at most kappa^2. Therefore
+
+    integral_I |p-p0| dk
+        <=45sigma*(100/99)+16kappa^2/(v^2 sigma)
+        <50sigma.                                    (35)
+
+Now apply the same lower rectangle to integral_I p0 exp(-iEt), a scalar integral. Each vertical has |p0|<=4kappa^2/(v^2 sigma^2), and the bottom has |p0|<=2kappa^2/(v^2 sigma^2). Their lengths are sigma,sigma,2sigma. The numerator bound follows from b0<=2 and 2pi N>4, itself a consequence of sqrt(2pi)N>2 and sqrt(2pi)>2. Equation (23) bounds the temporal modulus by one. Thus the three edges contribute at most
+
+    12kappa^2/(v^2 sigma).                            (36)
+
+The residue of p0 at q=c-i gamma is -1/(2pi i N). The clockwise -2pi i factor consequently gives **+N^-1 exp[-iE(kp)t]**. Reversing that orientation would give the wrong sign and the wrong time-zero normalization. Equations (28),(35)-(36) prove
+
+    |A_e(t)|<=50sigma+P(t)+12kappa^2/(v^2 sigma).       (37)
+
+This is a norm comparison with an explicitly transformable pole contribution and bounded finite-contour remainder, not an exact exponential law for the installed emitter.
+
+## 7. Complete localized terms and the operator estimate
+
+The common reference in (37) is not the whole emitter. Retain the difference in (11). Its integrated per-column norm is at most eta_p+epsilon_off. Grouping the two columns in each parity with sqrt(2)<3/2 yields
+
+    ||emitter output||
+       <=|A_e(t)|+(3/2)(4sigma+10^-18).                (38)
+
+The A_e u_j columns themselves are orthonormal and cost |A_e|, with no factor sqrt(2). This bound includes the other vacuum direction and the six source-excited internal coordinates in each parity. None is discarded by a scalar rank-one reduction.
+
+For the clock part, a sharper absolute first integral suffices; no time cancellation is needed. From (7)-(8),(19),
+
+    F0=integral_I |f| dk
+        <=kappa/(1-epsilon) integral_I |D0|^-1 dk.
+
+Set Bstar=4*10^-8. Since |Sigma0|<2/v and v0<.03,
+`|v0q-kappa^2 Re Sigma0|<=.03sigma+(2/v)kappa^2<Bstar`. With u=v0q-kappa^2 Re Sigma0 and Gamma>=19kappa^2,
+
+    F0 <= kappa/(1-epsilon) *(2/v) asinh(Bstar/Gamma)
+        <=kappa/(1-epsilon) *(2/v)
+                             log(1+2Bstar/(19kappa^2))
+        <kappa/(1-epsilon)*80*40<4000kappa.            (39)
+
+Here asinh x<=log(1+2x) for x>=0. The exact rational inequality
+`1+2Bstar/(19kappa^2)<(8/3)^40` and e>8/3 certify log<40; no linewidth quadrature is involved.
+
+Furthermore (8),(11) imply
+
+    integral_I |f| ||y_j||/sqrt(2pi)
+       <=1+eta_p+epsilon_off<2.                       (40)
+
+Equations (12),(39)-(40), and 1/sqrt(2pi)<1/2, bound each complete localized clock column by
+
+    31*(4000kappa)/2+kappa*20000*2=102000kappa.
+
+After grouping, this is less than 153000kappa. Adding (37)-(38), a valid complete localized bound is
+
+    Loc(t)=50sigma+P(t)+12kappa^2/(v^2 sigma)
+              +(3/2)(4sigma+10^-18)+153000kappa.      (41)
+
+This estimate includes every clock coordinate of Kloc, not merely a finite contact block. The previously certified geometric sums and full matrix matching in (11)-(12) are essential inherited hypotheses. There is no new complex continuation assumption on the installed noncommuting closed coordinates.
+
+Apply exact evolution to the seed discrepancy in (9), then compare Gamma_t to (10). Incoming vacuum columns are orthogonal and cost q_in. Outgoing reflection errors cost .000714, with their original positive central residual included. The actual outgoing normalization costs at most q_out by (31). The localized block costs Loc. Hence, in operator norm and after tensoring any passive reference,
+
+    ||exp(-itHphysical)Eseed-Uideal(t)||
+       <.003+.000714+q_in(t)+q_out(t)+Loc(t).           (42)
+
+The same exp(-it diag(b_j)) acts on every error column, so these bounds survive literal old aging. The physical common scalar exp[-i(nu+2kappa)t] has modulus one and remains in the comparator rather than being changed to a nominal or relative phase.
+
+At T=10^24, the right side of the last three terms is at most the exact rational
+
+    137648719642386604723213024136836561 /
+       1180591620717411303424000000000000000000
+       <117*10^-6.                                   (43)
+
+It decreases or stays constant for later t. Thus the complete original ceiling is
+
+    4522365998986852185639949024136836561 /
+       1180591620717411303424000000000000000000
+       <.003831<.004,       t>=10^24.                  (44)
+
+The corresponding complete unhalved trace distance is below .007662. The norm-error floors in (22),(35),(38)-(41) are explicitly charged. No claim of asymptotically exact exponential decay follows; the earlier qualified estimates may still be used to show the separate scattering/localized tails tend to zero. This fixed-precision result does not create an arbitrary-accuracy family.
+
+## 8. Finite clock, exact distance and retained resource costs
+
+Compress the same Hamiltonian to clock sites 0,...,M-1 and emitter e, with the inherited far-end diagonal J n_(M-1). The previously qualified radius 19 about the fixed spectral center contains the clock, gate/source and emitter spectra plus the off-diagonal coupling. The actual scalar shifts the center only. The shortest path from seed e to the first omitted site c_M goes through c_(L+2), so
+
+    dM=M-L-1=M-13.                                   (45)
+
+The inherited polynomial/Chebyshev comparison bounds embedded finite versus infinite evolution by
+
+    4 exp[-dM+19t sinh(1)]/[1-exp(-1)].                (46)
+
+Choose integers
+
+    T=10^24, Tobs=2*10^24, M=5*10^25.                 (47)
+
+The exact comparison `dM>19*Tobs*(6/5)+9`, sinh(1)<6/5 and e>8/3 make (46), throughout [0,Tobs], strictly smaller than
+
+    (32/5)(3/8)^9=19683/20971520<.001.                (48)
+
+Combining (44),(48), the embedded finite output has complete isometry error **below .004831** and complete unhalved trace distance **below .009662** throughout [T,Tobs]. The comparator remains the same normalized infinite-half-line beta_t in (10), embedded in the common comparison space. It is not truncated and renormalized again. No fixed finite clock is asserted to work for all future times.
+
+There are M clock qubits, one emitter and four old/source qubits, hence M+5 total. No matrix of this dimension was allocated. All supplied preparation, exact coefficients, positive block supports and incident loads from section 1 remain in force. This timing refinement creates no reset, reuse, classical Record, sink or practical hardware claim.
+
+## 9. Decisive checks, actual execution and limits
+
+`RESOURCE_PLAN.json` was written before the sole scientific run: CPU soft limit 20 seconds, hard limit 21 seconds, external wall limit 30 seconds; maximum scientific matrix dimension zero; exact Gaussian-rational powers at most 16; no parameter grid, optimizer, quadrature, dynamics or large-clock allocation. RSS was recorded but not capped. Thread environment variables were set to one; the actual thread count was not measured.
+
+`launch_check.py` wrote `run01_PRELAUNCH.json` **before** starting the subprocess. That record hashes the executed copy, declared source, launcher, resource plan, input manifest, interpreter and all eighteen input snapshots. Those bindings and the prelaunch record were compared again after execution and remained unchanged. The installed-source historical runs were not replayed.
+
+The single run exited zero on 2026-10-17 at 03:11:26 UTC. Wrapper wall time was 0.855124500 seconds; child user/system CPU were 0.330109/0.059561 seconds and macOS child peak RSS was 63,602,688 bytes. The program reported 0.721608708 seconds and SymPy 1.14.0. Its exact arithmetic independently of floating displays reconstructs Sigma0 from rational z0, checks (15),(19)-(22),(34)-(35),(39),(43)-(48), and verifies the phase identity, pole locations, residue signs, exact complex cosine identity and outgoing pole-mass normalization symbolically. Maximum matrix dimension was zero. Full outputs, including exact rational ceilings, are preserved.
+
+| Evidence | SHA256 |
+|---|---|
+| `check_resonant_bounds.py` and identical executed `run01_script.py` | `44daf46645a815e15616d7c790ad8539ac28fde79b9ad0cdf818e1412e1282e7` |
+| `SOURCE_MANIFEST.json` | `5cd293437b57c5b7d483e353aa9da4779645433b2bdca8ab595d1bd216481bee` |
+| `RESOURCE_PLAN.json` | `d393a39e573a8e1ab6ff5e44f5f0b81e9f07a562b8aa5e505037843a415da062` |
+| `run01_PRELAUNCH.json` | `3d3d284008638ba300eebefd8a90e8a3f41e7d25927f71fa010b5473a9fba7d3` |
+| `run01_execution.json` | `6f776a61f29438f0d5f7fdcf54a3033721943f1b705119c58fb191e91cc8963c` |
+| `run01.stdout` | `903f8f2fb0b5e42b936cc4603e57d65728357fd8b95cbe9c1be1bdd58e0aa509` |
+| Empty `run01.stderr` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+
+The receipt's short `cpu_cap_in_child_seconds:20` field denotes the soft limit; the actual executed source sets the pair (20,21), as the predeclared plan states. Decimal `display` entries are explanatory displays, not outward enclosures. The scalar assertions and full analytical argument, not those floats, carry the inequalities. There was no failed execution or discarded numerical candidate in this bounded step. The wrong reciprocal phase and wrong contour orientation are explicit rejected variants, not silently corrected physical models.
+
+This author previously reviewed the interval, generic, weighted and static-composition arguments and authored the qualified ballistic candidate. The new route began with root's explicitly unproved suggestion about opposite analytic poles. That exposure and contribution are disclosed; neither root's suggestion nor the present author's corroboration is an independent check. The old installed reviewer also had prior stationary-ladder author exposure, as preserved in the source acceptance. Model and reasoning settings were inherited unchanged. There was no delegation.
+
+The complete inherited arguments were previously read at these exact identities. This task refreshed the installed construction, matching, overlap, phase, localized-coordinate and finite-clock sections, and the exact new ballistic acceptance. It reuses their already qualified real-band premises; it does not rerun the old inverse or inspect a moving changed-coupling variant. The current SCIENCE_WORKFLOW snapshot is from main `69cf6a289b2ec06213473f1549c51a57c29b6d70`, with SHA `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`; it was verified byte-identical at the source W path when this packet was prepared. All new writes are confined to this candidate directory. No editable prompt, physical axiom, repository source, Git state, campaign checkpoint, audit output or publication surface was changed.
+
+## 10. Prior machinery, distinct contribution and remaining checks
+
+Rational resonance profiles, residue calculus and Friedrichs-model weak-coupling limits are prior machinery. Root supplied a primary-literature triage of Dereziński and De Roeck, *Extended Weak Coupling Limit for Friedrichs Hamiltonians*, arXiv:math-ph/0604058, v2, sections 4.1-4.5. Root reports having read the assumptions and Theorem 4.6/Remark 4.7: the stated result is a rescaled full-space limit, with no explicit finite-kappa complete-output error constant that directly substitutes here. This author has not independently checked that external source in this task, and imports no theorem from it. Root's local off-spectrum forcing-note check and multi-contact feedback/bound-state literature warning likewise supply context only. No exhaustive matching-premise literature search or worldwide novelty claim is asserted by this packet.
+
+The narrow proposed contribution is the explicit fixed-apparatus comparison (13)-(44), including the actual common outgoing phase, exact cosine dispersion, finite-contour edges, full emitter complement and complete clock/source budget, followed by the unchanged finite-clock comparison. The prior ballistic and weighted results supply larger sufficient costs; their generic scattering and permanence strategy are not republished as new machinery. The input seed, Hamiltonian, W and comparator have not been optimized to make the estimate work.
+
+A tempting direct transform of a profile with affine time dispersion would leave the elementary phase bound `|exp[-it(E(k)-E0-v0q)]-1|<=tJ sigma^2`. At the proposed T this bound already exceeds one and it grows thereafter; that bound cannot justify the requested all-future comparison. The present route instead makes the profile replacement in a time-uniform L2 norm and retains the exact E on a finite rectangle. This rejected affine-phase estimate, the reciprocal-phase countercase and the orientation countercase are explicit limits of tempting simplifications, not claims that every alternative approximation is impossible.
+
+The next decisive check should independently derive the real-band comparison constants, lower-rectangle half-line estimates and density residue with their Fourier signs; verify that all seven complementary emitter directions are charged in (38)-(41); and check the full-output normalization/scalar/old-aging composition in (42). A replay of this author's script alone is not that check. An extension to static calibration, the joint ladder box or a changed kappa needs its own affected estimates: (15),(19)-(22),(29),(35) and the fixed precision budget cannot simply be presumed uniform there. Practical preparation, precision, native physical implementation and any sharper actual emission time remain open. This frozen candidate stops before root qualification or publication.

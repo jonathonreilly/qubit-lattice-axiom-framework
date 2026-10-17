@@ -1,0 +1,576 @@
+{
+  "created_utc": "2026-10-17T04:41:07.166626+00:00",
+  "status": "Ready for separate root transport review; no canonical scientific execution or mutations",
+  "base_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "overlay_root": "canonical",
+  "files": [
+    {
+      "repository_path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 118919,
+      "sha256": "91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+      "bytes": 35726,
+      "sha256": "f1f04a07618e19278f940ba1fdb5f99080fe2572e95638f08867eef786271ff8"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/INFRASTRUCTURE_SOURCE.json",
+      "bytes": 701,
+      "sha256": "1d2b5c30ade8ef4af39c109120060d47fb42c85091b09e2317e0e7460f3786f2"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/INPUT_MAP.json",
+      "bytes": 9486,
+      "sha256": "4f66e0e922a49bbff388bee64a4f90e1524c693c3008e7126b6a0937ce6a3797"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/PROOF_BODY_MAP.json",
+      "bytes": 14538,
+      "sha256": "437fac82e22e2bd50e8e865481fcffabf0b861fe812162c0f9fb88c0097567b0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json",
+      "bytes": 1099,
+      "sha256": "82e5a8242884e0015003e21a791c1549ad10ec0384e277197cbe9d83d69673aa"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json",
+      "bytes": 1634,
+      "sha256": "f002a0d8679aa1174bc66c0d6c23f74b83739a92dab3258c205b9af1a18b104d"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json",
+      "bytes": 240327,
+      "sha256": "1b34d6c4133871f5ea4124d203e9448ad35e3630e085bde457d5087c37274e38"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json",
+      "bytes": 385474,
+      "sha256": "827c65ce4eb84c0a27b446c30179564c1d3000aa4bdc4a68dfbfb41eb60cf39e"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/CANDIDATE.md.txt",
+      "bytes": 28456,
+      "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FILE_MANIFEST.json",
+      "bytes": 4354,
+      "sha256": "6593244eeac318b3d2cbd2327ef8960566f552fe7b951abbd20d4e20612a0fd6"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/FREEZE.json",
+      "bytes": 1693,
+      "sha256": "fb4b80aada7275e110fc76ea0c4ac49974daf123db79a5639156e9332e958855"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/PRIOR_SEARCH.json",
+      "bytes": 16008,
+      "sha256": "2b3b60f6c33d79ccbc6ea34e7f8e368234d6dbfd814b2dfc82d448cc565c5ec6"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json",
+      "bytes": 2150,
+      "sha256": "298504905f055e7187554f2f5a2c1c1dc9b650e5d80f4b6014d5ad8ee4d3ce15"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt",
+      "bytes": 6395,
+      "sha256": "0f4d30312972e320112ce42e7b489c87d025559438906d9467a0d0181315da58"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json",
+      "bytes": 4689,
+      "sha256": "7d8c278958582704f1f8c54875618336bc1f38756592d7bcec83701e09228835"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/STATIC_AND_EVIDENCE_CHECK.json",
+      "bytes": 10268,
+      "sha256": "ebffb295fa4fc6982fd5ea726d450fc1503e2f3344d1da7fe894ccadbd563d39"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json",
+      "bytes": 9642,
+      "sha256": "278f4805d655f6f469895f4062f3718675cda92c64b01aa585228c956609e609"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json",
+      "bytes": 10782,
+      "sha256": "88cc2a22357bb116878a788ec7d9ba6615dc2c70a7e62ac064b04184b380c321"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py",
+      "bytes": 13034,
+      "sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json",
+      "bytes": 25536,
+      "sha256": "4c64211724e698a53111ba6dcb3aa88b80c779d795b37dcd955428a1b0afd982"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/capture_sources.py",
+      "bytes": 2770,
+      "sha256": "ee42c4f69f000aae572cdc7a9f860cbb153582432d2cd4e97bccd56da1ffca4a"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/ANALYTICAL_FREEZE.json",
+      "bytes": 1965,
+      "sha256": "146697585c3e5eff8c6e4b4852cdd64576da3dc85a161beaa8b0486277574ea0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/CAPTURE_FAILURE_01.json",
+      "bytes": 858,
+      "sha256": "d6763a55005524bd70f73d5a758f90867bf1ca99c6a76692c03081df77892d33"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/COMPARISON_REVIEW.md.txt",
+      "bytes": 23764,
+      "sha256": "cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/EXPOSURE_START.json",
+      "bytes": 1387,
+      "sha256": "d982e03c87f44e719c1709735de4765c5f3aee2dca61c553035a307b044e77cf"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/REVIEW_MANIFEST.json",
+      "bytes": 1640,
+      "sha256": "071e005f02347e64f60e2f2920a0a0d2ce96f0d5fb174adfe33d97379d6567fa"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/SOURCE_EXPOSURE.json",
+      "bytes": 1050,
+      "sha256": "8d583c1a836d0a1386d990c598cc6154767682d4b5b91d77ca7de79ac2502428"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/STATIC_REVIEW_CHECK.json",
+      "bytes": 1180,
+      "sha256": "52ef22464c805db543a25b1616963193531b71405583ee693e9bd571b3b1406a"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/freeze_review.py",
+      "bytes": 4273,
+      "sha256": "b1ffae44078848e33332115d2d14ebe78ad191e0044da31d880fa1f8d49f9033"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/finalize_packet.py",
+      "bytes": 7468,
+      "sha256": "7a4bdfae9a61919e988760b66d52575857e2a759a8be12534224ad9fecc5995a"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/launch_check.py",
+      "bytes": 3074,
+      "sha256": "f7631d81614c8080dc98ef18b4b9dc31bc769d136df4c9c8279c36eadc719c80"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/CANDIDATE.md.txt",
+      "bytes": 21245,
+      "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/EVIDENCE.json",
+      "bytes": 2541,
+      "sha256": "821666f6be9624d1e3a8f6260919264c21dde129343095f3ef04d7c3cbfa0d6e"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FILE_MANIFEST.json",
+      "bytes": 4772,
+      "sha256": "083a756e896feeb0b07d4c65ca9143008a6839c378a240ac42abce8b92a24d6c"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/FREEZE.json",
+      "bytes": 751,
+      "sha256": "2337aec4a67826733d78499507754e1b37ae4f04c8cacded4149d7d767f4c421"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/SOURCE_MANIFEST.json",
+      "bytes": 8534,
+      "sha256": "8e36d040e152ccdea525024751d9a8b314b75bfb3b28c49d600d1d56f1081737"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_ADDENDUM.md.txt",
+      "bytes": 7945,
+      "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/STAGED_RELEASE_FREEZE.json",
+      "bytes": 433,
+      "sha256": "5a15bbbbc55f092e8ff3b1388e8ca804ff439b1ca20360ffb4a66411ae72b546"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/check_preparation.py",
+      "bytes": 11515,
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/launch_check.py",
+      "bytes": 4078,
+      "sha256": "de61255a832eb95ef74cf1b67ca2741c9fc21417a1da3229f47de34977500263"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/EXECUTION.json",
+      "bytes": 1412,
+      "sha256": "2d4e2cb2864152926088010add43cda02516e5e1331a324291b2f977e8df8a71"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/PRELAUNCH.json",
+      "bytes": 8683,
+      "sha256": "fe3b8694cb53d7298c72de37de0ad296e82290b48c1b80d0db3c3a5219a6bf35"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/run01/stdout.txt",
+      "bytes": 5164,
+      "sha256": "2f7ba209a8db5a4f5ceeb11cde7e216a641c4168ca5342f7480d3d657b6403b0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json",
+      "bytes": 34658,
+      "sha256": "c3729f67a8c5ffa8b3aec646c8ca940764289408177646956b4b1d6a9ef6c267"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt",
+      "bytes": 2069,
+      "sha256": "3a38c656e28fdef327c77ce3c49a9665e0fb200889dee0c990d8ff06bd97fa71"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json",
+      "bytes": 13476,
+      "sha256": "43e1609d6e38b2220e35e1637428263e49b38d1ac22ed282ee64f3d7d3f60ca5"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/REVIEW.md.txt",
+      "bytes": 8169,
+      "sha256": "5e4cc2c916d9240ec5bb0b2a84559ae38fd2b20959e63c52d6b3c0bda04a2d69"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/CANDIDATE.md.txt",
+      "bytes": 8933,
+      "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/FREEZE.json",
+      "bytes": 513,
+      "sha256": "38c236c95a87fae06c1a6631867c698fc872791d8dcecc9a6b3d8fc865ce0575"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/CANDIDATE.md.txt",
+      "bytes": 8933,
+      "sha256": "cff7f94507245665cd69b9c86a95981fd5292b94bbcbe7999c448b8b4f10d6c8"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition/historical_format_v1/FREEZE.json",
+      "bytes": 377,
+      "sha256": "ed0690aec07ab544867f1b243f87f828747c3167657f1354d30bf7977f262f25"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json",
+      "bytes": 23174,
+      "sha256": "1c332524121c9777f099948ffea6bcbae048bff47784942d2734a6c72021407e"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FILE_MANIFEST.json",
+      "bytes": 3481,
+      "sha256": "8c4ae9e967653b1fe06066a6df97a5bcf8458269318aa0a7cd3fbec3081992f3"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/FREEZE.json",
+      "bytes": 1761,
+      "sha256": "94e1e606b7ace5e80713a843c61e2cc08535e54fb62fc1cc2b7a8cdc9e49a8a0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/REVIEW.md.txt",
+      "bytes": 21044,
+      "sha256": "150090e32afd08fe55bb49611e83ee9f185d0529129284874181379143027515"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/SOURCE_MANIFEST.json",
+      "bytes": 7442,
+      "sha256": "23e07a332a8299e6ab74081dee06ef68a4c849fa72eec45a06d82fac114dcdc0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/VALIDATION.json",
+      "bytes": 6143,
+      "sha256": "b55ab12d64203442fa9ecd3dbac1a7b916e924c1709a6aa81f1df31f947c1a76"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/capture_sources.py",
+      "bytes": 3668,
+      "sha256": "9ba0a5c7975368d920a27b69555477a4b51afcf01d576f118c6e25a5df97e46b"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/finalize_review.py",
+      "bytes": 4146,
+      "sha256": "00fb145063d958ff1f5eb804a704335bcc575acfc65bea8acdf76c37c9307c9b"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/CANDIDATE.md.txt",
+      "bytes": 37370,
+      "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FAILURES.md.txt",
+      "bytes": 1605,
+      "sha256": "1b003181da1080be07ab382ffc5fdf29b8808c9886c2403411225515dd209aea"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FILE_MANIFEST.json",
+      "bytes": 6246,
+      "sha256": "442bb68f26e27176f293c2b8b45eab1c76896f38f76bb273138a70630ff31834"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/FREEZE.json",
+      "bytes": 1806,
+      "sha256": "8cdf10121e4c42247d4aba730a48413817a62b9ada420adfc6bc70df7df64879"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/READ_COVERAGE.json",
+      "bytes": 2027,
+      "sha256": "cf78515f5556ae06dc8c4102e20b70f0fcac0eda627cdbd395cb9e6c60167664"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/RESOURCE_PLAN.json",
+      "bytes": 3290,
+      "sha256": "80d14f540d1884d0a58f9ae35c02a3eca43a24ba2abac9eee0b36a3b11b30e81"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SCALAR_INPUTS.json",
+      "bytes": 629,
+      "sha256": "3e7a938c2a04e1da45189e728ac65c1e65309f97d4331dab0ef08bcbfb5a0c65"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/SOURCE_MANIFEST.json",
+      "bytes": 9467,
+      "sha256": "fef1d432e80bc0604def3a46d3dbff655020eab9587a73e2f357ed0b7f462c40"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/STATIC_VALIDATION.json",
+      "bytes": 7859,
+      "sha256": "8db3abea6ec2d073a11ed0803f0d95b616a9974a10f2cd8a3c274adee2a3bcab"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/check_bounds.py",
+      "bytes": 9876,
+      "sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed.md.txt",
+      "bytes": 31556,
+      "sha256": "c68350310ac5c471a38940660d76ba74d982306e2d62a28bbf9c330e79c984b8"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_acceptance.json",
+      "bytes": 6673,
+      "sha256": "1a3f12fa10400e13906a09954f328e996f5cba2755a91c879399662f7a3f1421"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_qualification.md.txt",
+      "bytes": 2280,
+      "sha256": "0f77e687647ceaec73408aaf58eea65b4291337c9bddb496e3ca759b1690bed5"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/inputs/fixed_review.md.txt",
+      "bytes": 30019,
+      "sha256": "4d7694f51ec85edcc38977bef43412d8c9bc5baba4fa3c35809fe9adf3d00284"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch01.stdout",
+      "bytes": 378,
+      "sha256": "fe52491b4d0c94a4d86e70ff289bc529321a73689d42d9adbca67a26395515a0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch_check.py",
+      "bytes": 5481,
+      "sha256": "5c96cf7d03d19a9d265254d2661a5df9a3e5b59b567aa9245345aebd2ab8c15a"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/prepare_inputs.py",
+      "bytes": 4574,
+      "sha256": "873ee6369e80a48281bb213e1849a31bf0eaca298b5c6664ec448bba3814236a"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/PRELAUNCH.json",
+      "bytes": 12028,
+      "sha256": "64f8369ae07325c3e38f2482e6e399e43a45ab4e50d63be400ab965225b06afb"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/RECEIPT.json",
+      "bytes": 19800,
+      "sha256": "0ead3f309bd1b6952228cd74d389c02c12225736f90ea79f1b23b02b6f69db79"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/run01/stdout.json",
+      "bytes": 12367,
+      "sha256": "f94907937c47f29197681d05d8275efaaacb1ee7df54fcc92ef61d8c5533ce0c"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/validate_and_freeze.py",
+      "bytes": 5321,
+      "sha256": "beb2f7202b8e9a217e1b6960f276f68aa588f0f569852f03abb58cbc7f130f63"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/AUTHOR_CAPTURE_BINDINGS.json",
+      "bytes": 13929,
+      "sha256": "20318ccffd8c0a271de69d6f2d92014e82c678b20a0f5e7a7229708421c0cdb0"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/EVIDENCE_VALIDATION.json",
+      "bytes": 5955,
+      "sha256": "6713fc3dd35d6b5149defd0ad6795dce115d59ce7e1763078dbd672c6cf3f9bd"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FILE_MANIFEST.json",
+      "bytes": 14615,
+      "sha256": "4b90e408accdf324ba742a8c235f113792924e87a3a2b261d53f368b9f7fef12"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FINAL_VALIDATION.json",
+      "bytes": 610,
+      "sha256": "745af70e6c376d7c72a6e51fee93862e743e78725feaf69445572b85d696c199"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/FREEZE.json",
+      "bytes": 2689,
+      "sha256": "6ead24431690a1b62f549d1adca9d7250ac92231cb0103cfe6953dee56be17b7"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_DERIVATION.md.txt",
+      "bytes": 16477,
+      "sha256": "8ded59142de426e65f32ffb0c245d0d5c0bff3334fb293c932744dbef1f231f1"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_FREEZE.json",
+      "bytes": 6470,
+      "sha256": "aaaeb80e889b8d6de92af607a0d7d912d9d8e4c36b98480d451e54dc251ac1ad"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INDEPENDENT_RESULT.md.txt",
+      "bytes": 3735,
+      "sha256": "90565a190900a78cce958b5ab6df4cea9c2a338b40d8daeb4f883fb9ddc77be1"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/INITIAL_SOURCE_BINDINGS.json",
+      "bytes": 12201,
+      "sha256": "2779ff1b583d0707b46be0eb644a0efe2c1e1478149c7d092c50b867553ca606"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/REPORT.md.txt",
+      "bytes": 32461,
+      "sha256": "70eaca751449653eb33255a8b6c0509cde2d4f69de14d39d353c5b96b838c172"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/RESOURCE_PLAN.json",
+      "bytes": 2111,
+      "sha256": "c444ad9bfb007a765acb3307496d2fcaffc1d996e60c8c647887ab350e1afe80"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_author_packet.py",
+      "bytes": 1782,
+      "sha256": "3f654c28b88b2b230d9225c04fbe91d3df4129c9337f18e155666f6e0183b447"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_initial_sources.py",
+      "bytes": 2206,
+      "sha256": "547c541a8afffc6a8736133ac4494d46de27ff3219e93c9d0d95d08a9c954d43"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/check_independent.py",
+      "bytes": 9066,
+      "sha256": "ca29a5f16956dd00594184d122088c78fca757c56873837167834b36844fd45e"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/finalize_review.py",
+      "bytes": 4147,
+      "sha256": "7129b1b3afb572e5854389aed8c5a5d6411117afcaa0c84b9599c35a9d78f346"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/freeze_independent.py",
+      "bytes": 1014,
+      "sha256": "fc113cfa249d42c7fe8244fa9fabcb8dbe938543b41b054321e3a8cc48cfe30d"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launch_independent.py",
+      "bytes": 4235,
+      "sha256": "594defd0c86c5f759ca81a6bc51bfcc4b31b43c8c01c57fdd217ba572e137593"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launcher_stdout.json",
+      "bytes": 8247,
+      "sha256": "19f2877bb8bc53c0bdd3d5e9f301a62fd6e73bd6b55276360897008e4a3ffa49"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/PRELAUNCH.json",
+      "bytes": 15606,
+      "sha256": "07b9575f47025f437a0d1c82dddbdbf8bca29b137aa592290cd52732c349e408"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/run01/stdout.json",
+      "bytes": 12515,
+      "sha256": "439649efffe03f48925b99c4a50c5fe7f23a1777edc30fbfededb8fd232d1b01"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/validate_evidence.py",
+      "bytes": 7144,
+      "sha256": "a58c94055ff3672c208bed81d1bec3eef2b6aac9b9b255459000feee1dd5f3a7"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json",
+      "bytes": 6363,
+      "sha256": "bb280c96d290e28b42c45994cab3fe9871d671b0d20d39a36ae09d211ef98686"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/QUALIFICATION.md.txt",
+      "bytes": 1896,
+      "sha256": "88db9d4dcfdae159ad3478776441857db7dac0117db80dc13123be94267e4e84"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/BRANCH_START.json",
+      "bytes": 416,
+      "sha256": "09793e9f230c783f356edbc45e7a6e36bd26dc9c5dfbcc06c566f4eb96f72fe2"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/SCOPE.md.txt",
+      "bytes": 2600,
+      "sha256": "42d262b7839cb11a394ddc81364cab931512a0210c4c456931e5cf3b7d56b9eb"
+    },
+    {
+      "repository_path": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/thermal_resonance_integration/WRAPPER_DRAFT.md.txt",
+      "bytes": 10888,
+      "sha256": "5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7"
+    },
+    {
+      "repository_path": "scripts/thermal_resonance_halt_2026_10_17.py",
+      "bytes": 59056,
+      "sha256": "3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad"
+    }
+  ],
+  "source_labels": 239,
+  "source_scopes": 12,
+  "static_evidence": {
+    "path": "static_04/STATIC_RESULT.json",
+    "bytes": 279987,
+    "sha256": "79423d319f443b15ef6bf079dfd070fd90d1c62512eefecb9809d102cf544d00"
+  },
+  "static_receipt": {
+    "path": "static_04/RECEIPT.json",
+    "bytes": 1666,
+    "sha256": "85ce456c0c87646b7c6043d7a6eae1a1fd3acc842c2d4f7106010d977e7732b3"
+  },
+  "actual_static_attempts": 4,
+  "preserved_failed_attempts": [
+    "static_01",
+    "static_02",
+    "static_03"
+  ],
+  "actual_scientific_executions": 0,
+  "actual_mutation_executions": 0,
+  "root_remaining_actions": [
+    "Separate transport review and acceptance",
+    "Install selected overlay without adding undeclared scientific inputs",
+    "Actual prelaunch/canonical execute_and_write_cache run CPU30/30 external wall45, maximum dense4",
+    "Root-selected scientific mutations with expected assertion review",
+    "Focused graph/readiness/publication checks and actual external records"
+  ],
+  "editable_prompt_files_changed": []
+}

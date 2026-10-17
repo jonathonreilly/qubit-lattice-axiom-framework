@@ -1,0 +1,10 @@
+{
+  "events": [
+    {
+      "kind": "read-only wrong location",
+      "exact_output": "cat: thermal_resonance_integration/ROOT_WRAPPER_CHANGE.json: No such file or directory",
+      "recovery": "Read complete actual Q/ROOT_WRAPPER_CHANGE.json from supplied repository path."
+    }
+  ],
+  "root_preserved_failure": "Spacing amendment left five stale archival pointers; separate repair record retained and reviewed, without rewriting AMENDMENT history."
+}

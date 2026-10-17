@@ -1,0 +1,468 @@
+{
+  "checked_utc": "2026-10-17T05:00:33.353888+00:00",
+  "status": "Focused publication checks complete; regular milestone PR allowed. No retained audit or integrated-main landing claim.",
+  "head": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "branch": "physics-loop/toe-thermal-resonance-halt-20261017",
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/thermal_resonance_halt_2026_10_17.py",
+    "bytes": 59059,
+    "sha256": "944f256cd1e894601d2e483db47f9faba57d371532ed22d2b5e1835b409de872"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+    "bytes": 119492,
+    "sha256": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30"
+  },
+  "artifact_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/outputs/thermal_resonance_halt_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
+    "bytes": 35729,
+    "sha256": "9ef23d8044235449b6f4b0cc04d20aa7f6f1c95675b7b20fd38926c25fc4dc83"
+  },
+  "source_labels": 239,
+  "declared_input_count": 149,
+  "manifest_member_count": 148,
+  "bodies": [
+    {
+      "title": "Resonance family",
+      "raw": {
+        "bytes": 37370,
+        "sha256": "401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Exact-product preparation",
+      "raw": {
+        "bytes": 28456,
+        "sha256": "b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227"
+      },
+      "link_changes": 10,
+      "format_changes": 1
+    },
+    {
+      "title": "Interacting preparation",
+      "raw": {
+        "bytes": 21245,
+        "sha256": "416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Staged release",
+      "raw": {
+        "bytes": 7945,
+        "sha256": "1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    },
+    {
+      "title": "Preparation/resonance composition",
+      "raw": {
+        "bytes": 8933,
+        "sha256": "250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca"
+      },
+      "link_changes": 0,
+      "format_changes": 0
+    }
+  ],
+  "canonical_execution": {
+    "started_utc": "2026-10-17T04:57:26.455696+00:00",
+    "finished_utc": "2026-10-17T04:57:27.705577+00:00",
+    "runner": "scripts/thermal_resonance_halt_2026_10_17.py",
+    "prelaunch": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/PRELAUNCH.json",
+      "bytes": 51701,
+      "sha256": "d53814049281798eca494f94ef9816ef1892ba2197d11f8fe761791f856a5b0c"
+    },
+    "all_source_input_bytes_unchanged": true,
+    "runner_cache_also_checked_filesystem_generation_tokens": true,
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_seconds": 1.114833116531372,
+    "child_user_cpu_seconds": 0.71382,
+    "child_system_cpu_seconds": 0.07717,
+    "launcher_children_peak_rss_bytes_macos": 73236480,
+    "rss_scope": "Maximum reported for children of this launcher; no OS memory cap or transitive environment lock.",
+    "caps": {
+      "CPU_soft_hard_seconds": [
+        30,
+        30
+      ],
+      "external_wall_seconds": 45
+    },
+    "stream_semantics": "runner_cache merges child stderr into stdout; the empty stderr field is protocol-only, not an independently observed child stream.",
+    "stdout_merged": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/stdout_merged.txt",
+      "bytes": 524,
+      "sha256": "5e9ec02299720c814f032652ba450448495d91ba17ee656f5206891883bcc4a9"
+    },
+    "stderr_protocol": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/stderr_protocol.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cache_status": "fresh",
+    "cache": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/cache.txt",
+      "bytes": 874,
+      "sha256": "fc50d04f7ce138919b951ead585c3edebedaab1b8fccf058e3e45ee1e7da02d3"
+    },
+    "result": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/canonical_01/result.json",
+      "bytes": 85663,
+      "sha256": "f105259f7484ada777dced53b69214f8d351264a1783e0898db0f3aec98c0d2a"
+    },
+    "scope": "Actual replay of three qualified author scalar/algebra calculations. This is reproducibility, not a new independent theorem proof, interval proof from samples, dynamics simulation or retained audit."
+  },
+  "scientific_report_equality": true,
+  "copied_fault_count": 6,
+  "fault_sensitivity_only": true,
+  "archives": [
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/CANONICAL_MAP.json",
+      "bytes": 16052,
+      "sha256": "3ff0e1829f3043a7c9e718ec13a7a5f6ee7b08ff0174b86ad0210f9d59c2bbe7",
+      "members": 31
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/COMPARISON_FAILURE_01_MAP.json",
+      "bytes": 760,
+      "sha256": "b24e7d89aa72b8146f0ceef35b0ba6271933fcf8d29696e467a7849a527ad236",
+      "members": 1
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/FAULTS_MAP.json",
+      "bytes": 17075,
+      "sha256": "338ac02810d36ff553879532c3eb97bf2d2a3d2012470c4223fa88f1fd0931af",
+      "members": 38
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/FORMAT_AMENDMENT_MAP.json",
+      "bytes": 4653,
+      "sha256": "b0f578d009106fc84ffbb5743c1b5df024a98f36e76886de2596fa0aa349878a",
+      "members": 8
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/FORMAT_ARCHIVE_FOLLOWUP_MAP.json",
+      "bytes": 1275,
+      "sha256": "d2baf88ba70eb6b1b34c8775139be2bc1db83c6a4df34f5cf7934f66f1685df6",
+      "members": 2
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/GRAPH_MAP.json",
+      "bytes": 3251,
+      "sha256": "48a2dafe13f5f337fd1906f091737be0a97b473075b9692df12d639799558c04",
+      "members": 7
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/GRAPH_RECEIPT_MAP.json",
+      "bytes": 1944,
+      "sha256": "f21059d4f8d816c9be729b9b40c09849d8b1fb4a7413d87d398c1854593b6dd9",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/INTEGRATION_BEFORE_EXECUTION_MAP.json",
+      "bytes": 5726,
+      "sha256": "3bede6d1117e719dca8efbd044c13233dab2faadd19c191de80d3765bab272e4",
+      "members": 12
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/PACKAGING_MAP.json",
+      "bytes": 639652,
+      "sha256": "62699c8203c84940054c0d687603c8acbd919e4379c8b865b06610c38f5957af",
+      "members": 1177
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/POST_EXECUTION_PROGRAMS_MAP.json",
+      "bytes": 1178,
+      "sha256": "955d5e30f67d6d50c28e42fca59bda053311e4a105aebc8abd5795e543528d2c",
+      "members": 2
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_CANONICAL_01_MAP.json",
+      "bytes": 1975,
+      "sha256": "a0d609971eb40686a42e43dfdb676be9a944f32d953edfd18d599fbc14e249fb",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_COMPARE_REPORTS_02_MAP.json",
+      "bytes": 1994,
+      "sha256": "8842f41a650ffaa9654082ae88d9067fdef7f30683a0b9282b05ffcab17511ca",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_COMPARE_REPORTS_MAP.json",
+      "bytes": 1987,
+      "sha256": "74c5af38c265f8ec8fdc5f3895bdfd76f2694d233f784c9dc3b3fb48c63f7ee2",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_FAULTS_01_MAP.json",
+      "bytes": 1965,
+      "sha256": "3887252712c5ac9280cce7c951f9017cc71c3483b0f1af1290852caa82d0f6e3",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_FORMAT_ARCHIVE_FOLLOWUP_MAP.json",
+      "bytes": 2065,
+      "sha256": "a86a41a873279208c2c96312f5a28e173f537d9d7c2eb1de012868df32852e2d",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_INSTALL_OVERLAY_MAP.json",
+      "bytes": 1986,
+      "sha256": "91b88edd5ae1e15c1b1308b55471cbda40655d30fa466a8e894c67ec0f6692a9",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_SPACING_AMENDMENT_MAP.json",
+      "bytes": 2055,
+      "sha256": "cfb203600b93582019c0a48b51c39cea9a56a0b35220637c70a4c386ee03b37b",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/THERMAL_TRANSPORT_ACCEPTANCE_MAP.json",
+      "bytes": 2003,
+      "sha256": "7f66b114d8b765d139fe0d3eed7b16919b6b8a60a5d1d8edeba3c9718bbcea8b",
+      "members": 4
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/TRANSPORT_AMENDMENT_MAP.json",
+      "bytes": 154408,
+      "sha256": "4e6765f83d0555eb6a0a2c745576c5d5680eaaa694e5ec5d6cb884d5632afccd",
+      "members": 274
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/evidence/TRANSPORT_REVIEW_MAP.json",
+      "bytes": 108935,
+      "sha256": "d358db23c136a29fcffb5701ac4410329f2ac4b7961dfb7f0e55f76e768250de",
+      "members": 210
+    }
+  ],
+  "cache_status": "fresh",
+  "readiness_issue": null,
+  "helper_runner_paths": [],
+  "graph": {
+    "old_counts": {
+      "node_count": 7210,
+      "edge_count": 16165
+    },
+    "new_counts": {
+      "node_count": 7211,
+      "edge_count": 16166
+    },
+    "added": [
+      "thermal_resonance_halt_bounded_theorem_note_2026-10-17"
+    ],
+    "removed": [],
+    "rewired": [],
+    "new_node": {
+      "claim_id": "thermal_resonance_halt_bounded_theorem_note_2026-10-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem`. **Current status:** conditional support.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "939a505813adb86ce8bccf335781fd8a1d3ce5ef96367836fe68339bc7c01b30",
+      "path": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "runner_path": "scripts/thermal_resonance_halt_2026_10_17.py",
+      "title": "Thermal preparation and resonance-scale autonomous output"
+    },
+    "new_edges": [
+      {
+        "from": "thermal_resonance_halt_bounded_theorem_note_2026-10-17",
+        "to": "emitter_coupling_family_bounded_theorem_note_2026-10-17"
+      }
+    ],
+    "manifest_sha256": "b53fd197364c368f9d52e67166869216a7abe40a7fad5c27a0872d95af4ecd21",
+    "executions": [
+      {
+        "script": "docs/audit/scripts/run_citation_graph_build.py",
+        "started_utc": "2026-10-17T04:58:11.296902+00:00",
+        "elapsed_seconds": 126.6548683331348,
+        "wall_cap_seconds": 180,
+        "exit_code": 0,
+        "script_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+        "started_utc": "2026-10-17T05:00:17.954100+00:00",
+        "elapsed_seconds": 0.08920116676017642,
+        "wall_cap_seconds": 60,
+        "exit_code": 0,
+        "script_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      }
+    ],
+    "scope": "New thermal preparation/resonance note and its explicit parent citation only. Generated citation_graph.json is validation residue, not publication source."
+  },
+  "no_go_gate_trigger": false,
+  "compiled_sources": [
+    "scripts/thermal_resonance_halt_2026_10_17.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/capture_sources.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/comparison_review/freeze_review.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/finalize_packet.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/launch_check.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/check_preparation.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_root/launch_check.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/capture_sources.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_review/finalize_review.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/check_bounds.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/launch_check.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/prepare_inputs.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_candidate/validate_and_freeze.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_author_packet.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/capture_initial_sources.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/check_independent.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/finalize_review.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/freeze_independent.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/launch_independent.py",
+    "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_review/validate_evidence.py"
+  ],
+  "vocabulary": [
+    {
+      "mode": "--fix",
+      "returncode": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/VOCAB_fix.json\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--report-only",
+      "returncode": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/VOCAB_report-only.json\n",
+      "stderr": ""
+    }
+  ],
+  "local_links": [
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "scripts/thermal_resonance_halt_2026_10_17.py"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": ".claude/science/physics-loops/toe-emitter-coupling-family-20261017/evidence/canonical/executed_sources/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md.txt"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/SOURCE_COVERAGE.md.txt"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/RESOURCE_PLAN.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/PRELAUNCH.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/RECEIPT.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/check_preparation.py"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/emitter_preparation_independent/attempt_01/stdout.json"
+    },
+    {
+      "source": "docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "target": "outputs/emitter_coupling_family_2026_10_17_inputs/frozen_family/attempt_01/stderr.txt"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/ROOT_PORTABILITY_ACCEPTANCE.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/REPORT_COMPARISON.json"
+    },
+    {
+      "source": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/EXECUTION_STATUS.md",
+      "target": ".claude/science/physics-loops/toe-thermal-resonance-halt-20261017/ROOT_MUTATION_REVIEW.json"
+    }
+  ],
+  "publication_paths": 400,
+  "editable_prompt_files_changed": [],
+  "conformance_dispositions": {
+    "1_self_containment": "All exact proof bodies/reviews/source identities/failures are portable, raw bytes recoverable; finite149-input calculation closure.",
+    "2_cache_execution": "Actual governed cache replay, explicit caps and true fsynced prelaunch; full streams and all failed attempts preserved.",
+    "3_claim_scope": "Conditional-support, exact nominal family and supplied thermal/control premises; no native, practical, all-future-finite or calibration claim.",
+    "4_negative_claims": "Positive theorem with named failed routes/counterexamples; no broad negative result. Machine N-gate false.",
+    "5_proof_obligations": "Five written bodies and separate source/interface qualifications; mathematical premises and historical pending scopes preserved.",
+    "6_runner_validity": "26 reviewed AST adaptations, inert fail-closed finite resolver, exact payload comparison and six scientific fault cases. Replay is not independent proof.",
+    "7_reachability": "Single bounded-theorem artifact with paired runner and explicit upstream target; focused cached readiness passes.",
+    "8_graph_links": "Serialized governed graph build then writer; one child and one parent edge, no old rewiring; manifest co-published. All current wrapper/packet links resolve.",
+    "9_note_structure": "Explicit claim type, source/parent identity, premises, conclusions, full proofs, verification and open obligations.",
+    "10_propose_ratify": "Regular review PR only; no audit authority, axiom/prompt edits or science merge.",
+    "11_sourced_counts": "Exact manifests/source pairs and runtime records; check counts are not independent results. Standard machinery credited, no literature-priority claim.",
+    "12_delivery_gates": "Focused changed-scope pre-review complete. Full integrated-current-main pipeline, strict audit-status lint and changed-evidence checks remain shared later landing obligations."
+  },
+  "remaining_obligations": [
+    "Exact staged and remote publication verification",
+    "Ancestor inclusion, shared integrated-current-main landing gates and independent retained audit",
+    "Native physical supply, calibration/noise and complete capture/reset/reuse"
+  ]
+}

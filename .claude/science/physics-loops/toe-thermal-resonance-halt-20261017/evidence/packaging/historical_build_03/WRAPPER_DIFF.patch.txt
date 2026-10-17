@@ -1,0 +1,33 @@
+--- root/WRAPPER_DRAFT.md
++++ overlay/wrapper
+@@ -15,7 +15,7 @@
+ claim_type_reason: "A complete conditional preparation/runtime composition with explicit finite horizon, output norm, scalar, chronological old aging and local hardware costs; no native realization is inferred."
+ source_science_acceptance_complete: true
+ wrapper_root_approval: pending
+-canonical_execution: see_separate_execution_record
++canonical_execution: pending_root_owned_execution
+ publication: reviewable_packet_pending_checks
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+@@ -181,3 +181,21 @@
+ audit and integrated-current-main landing checks remain separate obligations.
+ No science merge, main push, audit verdict, physical axiom or editable prompt
+ change is part of this milestone.
++
++## Portable sources and pending decisions
++
++The [source map](../outputs/thermal_resonance_halt_2026_10_17_inputs/SOURCE_MAP.json) resolves each historical label to exact repository bytes. The [publication status](../outputs/thermal_resonance_halt_2026_10_17_inputs/PUBLICATION_STATUS.json) records the draft boundary. The [transport ledger](../outputs/thermal_resonance_halt_2026_10_17_inputs/TRANSPORT_EDIT_LEDGER.json) describes every executable adaptation; the [reproduction plan](../outputs/thermal_resonance_halt_2026_10_17_inputs/REPRODUCTION_PLAN.json) distinguishes historical evidence from the unexecuted canonical plan.
++
++The preparation checkers retain their original parent-runtime numerical examples. They do not recompute the shorter resonance composition or the staged addendum; those analytical interfaces use the separately recorded source/interface qualifications. Their historical report status strings do not decide current source acceptance.
++
++The complete embedded bodies below retain their historical frontmatter, pending labels and local path strings. Four bodies are byte-identical; in the exact-product body only Markdown link destinations are adapted to portable targets. The raw originals, exact link-target map and reversible body map preserve every other byte.
++
++[Resonance qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/resonant_family_root_qualification/ACCEPTANCE.json).
++
++[Exact-product qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_product_root_qualification/ACCEPTANCE.json).
++
++[Interacting qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/ACCEPTANCE.json).
++
++[Interacting wording clarification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_interacting_root_qualification/CLARIFICATION.md.txt).
++
++[Composition qualification](../outputs/thermal_resonance_halt_2026_10_17_inputs/frozen_sources/preparation_resonance_composition_qualification/ACCEPTANCE.json).

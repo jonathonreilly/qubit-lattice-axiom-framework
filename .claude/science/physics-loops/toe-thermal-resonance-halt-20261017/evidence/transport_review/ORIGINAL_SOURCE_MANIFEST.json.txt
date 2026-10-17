@@ -1,0 +1,32 @@
+{
+  "entries": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/resonant_family_candidate/check_bounds.py",
+      "snapshot": "inputs/resonance_original.py",
+      "sha256": "b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6",
+      "bytes": 9876,
+      "read_coverage": "complete source read before adapter freeze"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_independent/check_preparation.py",
+      "snapshot": "inputs/product_preparation_original.py",
+      "sha256": "15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55",
+      "bytes": 13034,
+      "read_coverage": "complete source read before adapter freeze"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/emitter_preparation_root/check_preparation.py",
+      "snapshot": "inputs/interacting_preparation_original.py",
+      "sha256": "5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b",
+      "bytes": 11515,
+      "read_coverage": "complete source read before adapter freeze"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/WRAPPER_DRAFT.md",
+      "snapshot": "inputs/WRAPPER_DRAFT.md",
+      "sha256": "5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7",
+      "bytes": 10888,
+      "read_coverage": "complete source read before adapter freeze"
+    }
+  ]
+}

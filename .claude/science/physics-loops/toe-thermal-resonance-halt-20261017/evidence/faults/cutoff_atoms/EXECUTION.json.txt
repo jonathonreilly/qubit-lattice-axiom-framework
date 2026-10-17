@@ -1,0 +1,29 @@
+{
+  "label": "cutoff_atoms",
+  "started_utc": "2026-10-17T04:57:32.790466+00:00",
+  "finished_utc": "2026-10-17T04:57:32.859212+00:00",
+  "elapsed_seconds": 0.06324912467971444,
+  "exit_code": 1,
+  "timed_out": false,
+  "intended_assertion_reached": true,
+  "all_bound_bytes_unchanged": true,
+  "no_result_written": true,
+  "user_cpu_seconds": 0.044605,
+  "system_cpu_seconds": 0.013930999999999999,
+  "launcher_children_peak_rss_bytes_macos_so_far": 27377664,
+  "prelaunch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/PRELAUNCH.json",
+    "bytes": 51757,
+    "sha256": "2a94e2aa7740f8a955c7cec45d84372f74600b855601981968bf02dfdfa407b9"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/stdout",
+    "bytes": 3823,
+    "sha256": "ccf4dfe96d247eb06dd708310712028c7a81c54126af661849b650a00afcb35f"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261016_230727/thermal_resonance_integration/mutations/cutoff_atoms/stderr",
+    "bytes": 817,
+    "sha256": "2bf4e9e4b02a0e1ae084395703679472b2f154f0e31594ac6f38f219aa65c218"
+  }
+}

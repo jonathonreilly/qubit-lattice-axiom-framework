@@ -1,0 +1,19 @@
+{
+  "parent_commit": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "parent_primary": {
+    "path": "scripts/emitter_coupling_family_2026_10_17.py",
+    "sha256": "6eed5d1b9c2eb93f6465e21aab254076e6da1248386e792a64f7949eb1c471ba",
+    "bytes": 24786
+  },
+  "extracted_definitions": [
+    {
+      "name": "FrozenInputs",
+      "ast_sha256": "bb46f9c5e6af70a13c71e8c5defa5e5507f86ada7c57867c6812fcc58c0212fe"
+    },
+    {
+      "name": "verify_artifacts",
+      "ast_sha256": "6446e26ad828d3f66f2e7af39818ec7ca222e498e7736a0300b6dddca81f2666"
+    }
+  ],
+  "changes": "None inside these definitions. Module AUDIT_TIMEOUT_SEC becomes45; actual CPU30/30 is set only by guarded main(). Imports are inert."
+}

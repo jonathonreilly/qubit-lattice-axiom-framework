@@ -1,0 +1,42 @@
+{
+  "scope": "Three author corroboration bodies only; no parent science import, no independent reviewer replay, no giant-state allocation. Root authorizes and records actual execution after transport review.",
+  "command": "python3 -B scripts/thermal_resonance_halt_2026_10_17.py through canonical execute_and_write_cache",
+  "actual_shared_cpu_soft_hard_seconds": [
+    30,
+    30
+  ],
+  "external_wall_cap_seconds": 45,
+  "maximum_dense_matrix_dimension": 4,
+  "scientific_function_order": [
+    "resonance_author",
+    "product_preparation_author",
+    "interacting_preparation_author"
+  ],
+  "historical_limits": {
+    "resonance_author": {
+      "cpu_soft_hard_seconds": [
+        20,
+        21
+      ],
+      "external_wall_seconds": 30
+    },
+    "product_preparation_author": {
+      "cpu_soft_hard_seconds": [
+        20,
+        20
+      ],
+      "external_wall_seconds": 30
+    },
+    "interacting_preparation_author": {
+      "cpu_soft_hard_seconds": [
+        15,
+        15
+      ],
+      "external_wall_seconds": 30
+    }
+  },
+  "transport_prelaunch": "Root must serialize/fsync actual launcher, interpreter, primary and every declared input plus selected runtime identities before starting scientific execution; all streams/failures retained. Imported module itself is inert.",
+  "output": "outputs/thermal_resonance_halt_2026_10_17.json",
+  "not_included": "Composition arithmetic or staged-release new checker; analytical qualification remains separate. No mutations yet.",
+  "later_gates": "Focused publication checks now; full integrated-main gates governed by current review-loop conformance section12 later."
+}

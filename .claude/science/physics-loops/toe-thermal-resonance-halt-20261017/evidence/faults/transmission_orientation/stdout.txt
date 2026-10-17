@@ -1,0 +1,252 @@
+{
+  "status": "FAILED",
+  "started_utc": "2026-10-17T04:57:32.947943+00:00",
+  "independence": "author corroboration only; no prior checker import/replay",
+  "checks": {
+    "cpu_limit_is_predeclared": true,
+    "snapshot:inputs/fixed.md": true,
+    "snapshot:inputs/fixed_review.md": true,
+    "snapshot:inputs/fixed_acceptance.json": true,
+    "snapshot:inputs/fixed_qualification.md": true,
+    "snapshot:inputs/family.md": true,
+    "snapshot:inputs/family_acceptance.json": true,
+    "snapshot:inputs/family_qualification.md": true,
+    "snapshot:inputs/installed.md": true,
+    "snapshot:inputs/installed_acceptance.json": true,
+    "snapshot:inputs/installed_qualification.md": true,
+    "snapshot:inputs/weighted.md": true,
+    "snapshot:inputs/weighted_acceptance.json": true,
+    "snapshot:inputs/weighted_qualification.md": true,
+    "snapshot:inputs/moment.md": true,
+    "snapshot:inputs/moment_acceptance.json": true,
+    "snapshot:inputs/moment_qualification.md": true,
+    "snapshot:inputs/generic_v2.md": true,
+    "snapshot:inputs/route.md": true,
+    "snapshot:inputs/interval.md": true,
+    "snapshot:inputs/interval.json": true,
+    "snapshot:inputs/SCIENCE_WORKFLOW.md": true,
+    "exact_unit_circle": true,
+    "Sigma0_modulus_identity": true,
+    "Sigma0_imag_identity": true,
+    "center_velocity_interval": true,
+    "form_factor_interval": true,
+    "curvature_ratio": true,
+    "sqrt_velocity_surrogate": true,
+    "Gamma_coefficient": true,
+    "pole_horizontal_bound": true,
+    "pole_vertical_bound": true,
+    "all_poles_inside_rectangle": true,
+    "pole_decay_coefficient": true,
+    "denominator_q_ratio": true,
+    "uniform_denominator_relative": true,
+    "incoming_L2_floor": true,
+    "outgoing_L2_floor": true,
+    "density_relative_rounding": true,
+    "density_cutoff_kept": true,
+    "real_affine_range": true,
+    "exact_log_majorant": true,
+    "H0_coefficient": true,
+    "F0_coefficient": true,
+    "cutoff_total_variation": true,
+    "cutoff_curvature_coefficient": true,
+    "halfline_sum_regime": true,
+    "finite_bottom_regime": true,
+    "exact_sqrt_sigma": true,
+    "actual_halfline_normalization_exists": true,
+    "proposed_remainder": true,
+    "proposed_infinite_error": true,
+    "proposed_trace_error": true,
+    "finite_graph_distance_buffer": true,
+    "finite_extra_rounding": true,
+    "proposed_finite_error": true,
+    "positive_emitter_onsite_all_family": true,
+    "naive_substitution_misses_004": true,
+    "scalar_not_halfline_required": true,
+    "correct_phase_discriminator": false
+  },
+  "values": {
+    "v0": {
+      "rational": "135405736045147688887127393136/5335816955256357129429116105401",
+      "display_float": 0.025376758082332338
+    },
+    "b0": {
+      "rational": "43622465478810771543912030761074996121296252596000000000000000/28470942580001221460551733349533582334670664139372522141370801",
+      "display_float": 1.5321749659757453
+    },
+    "Sigma0_real": {
+      "rational": "-22123026783345543136159112298123406566745599283894017365054667106208838958502501966134949050250000000000000/570084830782501077356872021579416299771748459495671553587229885996924328162858311349743736158229746748179",
+      "display_float": -38.80655226868495
+    },
+    "Sigma0_imag": {
+      "rational": "-8789594091354927179060415316850710536598500513874275855734216074738810661291500000000000000000000000000000/190028276927500359118957340526472099923916153165223851195743295332308109387619437116581245386076582249393",
+      "display_float": -46.25413771818989
+    },
+    "denominator_relative_upper": {
+      "rational": "3752645388379/1250000000000000000",
+      "display_float": 3.0021163107032e-06
+    },
+    "incoming_pointwise_relative": {
+      "rational": "11/499998",
+      "display_float": 2.2000088000352e-05
+    },
+    "outgoing_pointwise_relative": {
+      "rational": "2/83333",
+      "display_float": 2.4000096000384e-05
+    },
+    "density_relative": {
+      "rational": "3666695/83332666668",
+      "display_float": 4.400069200483203e-05
+    },
+    "density_L1_floor": {
+      "rational": "3301/68750000",
+      "display_float": 4.8014545454545454e-05
+    },
+    "max_log_argument": {
+      "rational": "80000000000000019/19",
+      "display_float": 4210526315789474.5
+    },
+    "cutoff_TV_coefficients": {
+      "cutoff_derivative": "8",
+      "rational_derivative": "8",
+      "two_outer_endpoint_jumps": "4"
+    },
+    "minimum_onset": {
+      "rational": "10000000000000000",
+      "display_float": 1e+16
+    },
+    "maximum_onset": {
+      "rational": "1000000000000000000000000",
+      "display_float": 1e+24
+    },
+    "uniform_pole_ceiling": {
+      "rational": "205891132094649/618970019642690137449562112",
+      "display_float": 3.326350639947033e-13
+    },
+    "uniform_directional_cutoff_plus_vertical": {
+      "rational": "2400001/3750000000000",
+      "display_float": 6.400002666666666e-07
+    },
+    "uniform_incoming_bottom": {
+      "rational": "1/625000000000",
+      "display_float": 1.6e-12
+    },
+    "qin": {
+      "rational": "114900007/3750000000000",
+      "display_float": 3.0640001866666664e-05
+    },
+    "qout": {
+      "rational": "69452796948874118655136937024519/2266735911777429702574080000000000000",
+      "display_float": 3.064000379930173e-05
+    },
+    "uniform_density_contour_edges": {
+      "rational": "3/390625000000000",
+      "display_float": 7.68e-15
+    },
+    "emitter_reference_amplitude": {
+      "rational": "23611832575057471250902531322946653/472236648286964521369600000000000000000",
+      "display_float": 5.0000000340315066e-05
+    },
+    "scalar_incoming_amplitude": {
+      "rational": "11000649997649999/31249875000000000000000000",
+      "display_float": 3.52022208013632e-10
+    },
+    "constant_background_clock": {
+      "rational": "341020149927149969/31249875000000000000000000",
+      "display_float": 1.0912688448422592e-08
+    },
+    "varying_background_clock": {
+      "rational": "27/500000000",
+      "display_float": 5.4e-08
+    },
+    "constant_localized_response_clock": {
+      "rational": "23611832575057471250902531322946653/2361183241434822606848000000000000000000000",
+      "display_float": 1.0000000068063013e-08
+    },
+    "varying_localized_response_clock": {
+      "rational": "1/100000000",
+      "display_float": 1e-08
+    },
+    "all_emitter_error_coordinates_clock": {
+      "rational": "400000001/500000000000000000",
+      "display_float": 8.00000002e-10
+    },
+    "localized_clock_per_column": {
+      "rational": "50595638543679078094241896018077105709043/590293449175464216889393152000000000000000000000",
+      "display_float": 8.571268851848561e-08
+    },
+    "localized_clock_operator": {
+      "rational": "50595638543679078094241896018077105709043/393528966116976144592928768000000000000000000000",
+      "display_float": 1.285690327777284e-07
+    },
+    "full_emitter_operator": {
+      "rational": "26445252471862808103424599143490653/472236648286964521369600000000000000000",
+      "display_float": 5.600000035531507e-05
+    },
+    "complete_localized_operator": {
+      "rational": "22088217880921112954921063100263142970199043/393528966116976144592928768000000000000000000000",
+      "display_float": 5.6128569388092795e-05
+    },
+    "complete_escape_remainder": {
+      "rational": "138611025462876289642614901207402041129347129/1180586898350928433778786304000000000000000000000",
+      "display_float": 0.00011740857505406118
+    },
+    "complete_infinite_upper_expression": {
+      "rational": "4523310765938224492697027234263402041129347129/1180586898350928433778786304000000000000000000000",
+      "display_float": 0.0038314085750540613
+    },
+    "minimum_finite_buffer": {
+      "rational": "43999999999999978",
+      "display_float": 4.3999999999999976e+16
+    },
+    "finite_extra": {
+      "rational": "19683/20971520",
+      "display_float": 0.0009385585784912109
+    },
+    "complete_finite_upper_expression": {
+      "rational": "5631360727039819625623388834263402041129347129/1180586898350928433778786304000000000000000000000",
+      "display_float": 0.004769967153545272
+    },
+    "upper_coupling_clock_sites": {
+      "rational": "500000000000000000",
+      "display_float": 5e+17
+    },
+    "lower_coupling_clock_sites": {
+      "rational": "50000000000000000000000000",
+      "display_float": 5e+25
+    },
+    "E0": {
+      "rational": "30021107107032000000000000000/5335816955256357129429116105401",
+      "display_float": 0.005626337514718896
+    },
+    "maximum_new_emitter_incident_load": {
+      "rational": "1501060691168555256357129429116105401/266790847762817856471455805270050000000",
+      "display_float": 0.005626357514718896
+    },
+    "maximum_added_attachment_incident_load": {
+      "rational": "3/100000000",
+      "display_float": 3e-08
+    },
+    "actual_scalar_upper_endpoint": {
+      "rational": "1459892833020969/1000000000000000",
+      "display_float": 1.459892833020969
+    },
+    "actual_scalar_lower_endpoint": {
+      "rational": "1459892813022969/1000000000000000",
+      "display_float": 1.459892813022969
+    },
+    "failed_old_cutoff_L2_single": {
+      "rational": "1/625",
+      "display_float": 0.0016
+    },
+    "failed_old_absolute_clock": {
+      "rational": "153/100000",
+      "display_float": 0.00153
+    }
+  },
+  "failed_routes": {},
+  "resources": {},
+  "error": {
+    "type": "AssertionError",
+    "message": "correct_phase_discriminator"
+  }
+}

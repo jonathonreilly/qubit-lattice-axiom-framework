@@ -1,0 +1,294 @@
+# Selective source-transport review of thermal/resonance publication
+
+**Disposition:** the frozen executable transport preserves the three scientific
+programs under the explicitly reviewed path, identity, cap and report edits.
+Its finite calculation closure and proof transport check out in the bounded
+static test below. The frozen note has one known trailing-space publication
+format defect. Root is preparing a separately pinned reversible repair; that
+repair is **not covered by this frozen review**. Canonical scientific execution,
+fault tests, publication checks and later retained audit remain separate.
+
+This is a same-model, source-exposed transport review, not a new independent
+qualification of the mathematics. This reviewer authored the resonance-family
+source and has extensive prior emitter/family exposure. The preparation code
+and wrapper were fully exposed. No model/effort change, subdelegation, science
+execution, scientific mutation, repository/Git/PR, checkpoint, physical axiom,
+audit or editable prompt change occurred. All writes belong to this review
+directory. The saved PLAN.md and RESOURCE_PLAN.json preceded the static test.
+
+## Exact reviewed boundary
+
+All paths in this section are relative to the sibling
+`thermal_resonance_publication_draft/` unless specified otherwise.
+
+| Source | SHA256 |
+|---|---|
+| FREEZE.json, frozen 2026-10-17T04:41:07.906357+00:00 | `001e6f9fb06cc7cf8b23187ae87af304b45e982e254c4f94068fea4bd876719c` |
+| PACKET_MANIFEST.json | `ea3d6dd8a60e89e23c37bdf392d2ccd10dc4b359a8e5a528c19a905b81dd9cde` |
+| canonical/scripts/thermal_resonance_halt_2026_10_17.py, 59056 bytes | `3308c3d3f1ff96143bff2ae0d3d255da72b218c160a7d8420064c52a4aeb6aad` |
+| canonical/docs/THERMAL_RESONANCE_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md, 118919 bytes | `91c95df5e66f34e92fadfe821b3ca5688089fbcaad7d642bef01f0c074ae1166` |
+| Root original WRAPPER_DRAFT.md | `5cc1d82702ad10b90369c3b2773a313664d36eaea5be9573ded980a9b767eed7` |
+| Resonance original check_bounds.py | `b5383a88626e3bd378ba9155ee88577b49f8cf28e9b6031a2be5aada9fa48ef6` |
+| Exact-product original check_preparation.py | `15825c012370af1a260d37cb940e44cdaec9049dc2d897e0db68283062450d55` |
+| Interacting original check_preparation.py | `5cf3a0db8abe26cdc6008730a0cc8eb95640aeeafdf963a86f99e34e17235b9b` |
+
+The supplied parent is PR9665 commit
+`0e3993770a7a2dd872018f9dd3c76c2d9a624db9`. No Git/network refresh or independent
+commit-membership claim was made here: exact reused parent-file bytes were
+captured from the read-only checkout, then checked against the frozen maps.
+The current workflow remains pinned at
+`71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3`.
+
+`INPUT_SNAPSHOTS.json` identifies 185 preserved input snapshots (4,031,660 bytes).
+The finite repository fixture contains the primary and all 149 declared inputs,
+including reused parent files. The packet manifest separately fixes every one
+of the 1,175 original packet members (21,488,659 bytes); all were hashed in this
+review. Historical fixture copies are not recursively duplicated in this review.
+The supplied packet remains the recovery location for those manifest-pinned
+files. The complete own receipt and selected runtime bindings are preserved.
+
+## Executable preservation, statement by statement
+
+The reviewer wrote `check_transport.py` independently of the packager's builder
+and static checker. It specifies the 26 permitted replacements explicitly,
+transforms each pinned original AST, and compares the **entire resulting AST**
+with the corresponding function in the primary. It also checks every original
+statement record and the ledger's original/replacement expressions. No author
+checker was run or imported as validation.
+
+| Body | Original statements, including nested statements | Transport events |
+|---|---:|---:|
+| resonance_author | 173 | 15 |
+| product_preparation_author | 238 | 9 |
+| interacting_preparation_author | 170 | 2 |
+| Total | 581 | 26 |
+
+The complete AST comparisons pass, including docstring literal values, exact
+numeric constants, imports inside the functions, every mathematical expression
+and assertion, exception paths, and original report content outside the named
+metadata adaptations. Whitespace, quote style and source line numbers are not
+AST semantics. Original comments and all original bytes remain available in the
+raw source snapshots. The wrapper's nested function scopes introduce no changed
+name binding in these sources: their original module-level helpers and data are
+now in their respective enclosing function, used after initialization; no
+`global`, `eval` or cross-program helper dependency is substituted.
+
+The allowed changes are exactly:
+
+* Resonance: seven CLI/path/prelaunch setup statements and its historical
+  prelaunch-binding loop become inert `pass`; the cap comparison changes
+  `(20,21)` to the shared `(30,30)`; four reads become checked finite aliases;
+  the identity report distinguishes original source from executing primary and
+  external prelaunch; the successful print becomes a returned report plus
+  current/historical metadata. Its failure JSON/exception path is unchanged.
+* Product preparation: historical directory/prelaunch setup and binding loop
+  become inert; `(20,20)` becomes `(30,30)`; parameters and the family-note read
+  use checked aliases; the current external wall-plan field becomes 45 rather
+  than its historical 30; success becomes a returned report plus metadata.
+  Its exact fraction, SymPy 4x4, sparse-Pauli, positivity, seed-column, load,
+  release and thermal calculations remain identical.
+* Interacting preparation: its final print becomes a returned report plus
+  metadata, and its original module guard becomes the enclosing function's
+  `return main()`. All Pauli helpers, complete pair checks, seed columns,
+  Gram factor, compensation discriminators and scalar checks remain identical.
+
+The three reports execute sequentially under one **shared** CPU30/30 envelope.
+There is no fresh cap reset per body. The primary advertises an externally
+required wall45 limit but does not claim to implement a wall timer itself.
+Historical CPU20/21,20/20,15/15 and wall30 receipts remain historical; they are
+not relabeled as executions of the transported primary. Successful reports are
+nested in one output JSON, with resolved-read identities and all declared input
+hashes. Output is written only after all three functions return. A failed run
+must be judged by its exit/streams/receipt; an old output left from an earlier
+run would not be new evidence.
+
+## Input closure and inert behavior
+
+The literal `AUDIT_INPUT_PATHS` has 149 distinct relative paths. The artifact
+manifest binds exactly the other 148 inputs, excluding itself to avoid a hash
+cycle. The primary is independently bound outside its own input tuple. Each
+of the 239 historical source labels and every runtime alias resolves to these
+finite declared bytes. Every resonance source-manifest snapshot label is
+explicitly mapped, so the dynamic loop does not expand into arbitrary paths.
+No historical absolute-path label is used as a filesystem fallback.
+
+The resolver rejects unknown roles and aliases, absolute physical paths,
+`..`, noncanonical `./` or repeated separators, missing files, leaf/parent
+symlinks, repository escape, and wrong size/hash. An absolute **logical label**
+can be accepted only if explicitly present in the table and mapped to a checked
+relative target; a real absolute filename is not thereby readable.
+
+Fourteen reviewer-owned inert fixtures exercise these cases. Twelve reject as
+expected, the ordinary exact read succeeds, and the explicitly mapped absolute
+logical label succeeds. The entire primary was compiled/executed only as an
+import with a non-main name: its five permitted stdlib imports and definition/
+constant initialization occurred, no SymPy import or scientific function call
+occurred, and changing resource limits during import was prohibited. No canonical
+output was created. The body functions themselves were never invoked.
+
+These claims are for the declared normal Python execution with assertions
+active. Canonical reproduction must not use `-O` or `PYTHONOPTIMIZE`, since both
+original science and resolver checks use `assert`. This is not a hostile-process
+security sandbox or a proof against concurrent adversarial file replacement.
+`verify_artifacts` checks containment and leaf symlinks but does not separately
+reject an internal parent-directory symlink; the runtime alias resolver does.
+The exact inspected fixture has no such ambiguity, and neither route permits
+an out-of-repository resolved target. Manifest/primary self-binding and actual
+prelaunch/postlaunch stability remain the root runner's obligations.
+
+## Proof transport, current wrapper and historical evidence
+
+The five embedded proof bodies reconstruct exactly from their raw originals:
+
+| Body | Original SHA256 | Transport |
+|---|---|---|
+| Resonance family | `401e5c2389ef99bd9980898ec118f2476e49dd627d3cf9f32deb812ffc5498f0` | byte-identical |
+| Exact-product preparation | `b7ef6e98b16bcffb609cbf8a9cca2aee03d4bb20ac6295e99c744f488ad14227` | ten Markdown destination spans only |
+| Interacting preparation | `416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0` | byte-identical |
+| Staged release | `1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885` | byte-identical |
+| Preparation/resonance composition | `250d431f3b818e08225b97b9d65d539c447ddd7b6ab00a36f5f7c7a7cc3868ca` | byte-identical |
+
+The ten product-body edits change destinations, not visible mathematical prose
+or equations. The exact original offsets/bytes and replacements were checked;
+every other byte matches. All 21 local Markdown destinations resolve in the
+finite parent/overlay fixture and are declared inputs, except the separately
+bound primary. Deduplicated empty stderr paths are byte-identical and retain
+historical labels in the source map; the displayed target is not a claim that
+the older family run produced the preparation result.
+
+The wrapper agrees with the displayed qualifications: nominal fixed ladder,
+`kappa in [1e-12,1e-8]`, sigma1e-6,L12; actual scalar `nu+2kappa`; actual common
+`f_kappa rho_kappa` waveform; complete old/reference/source/emitter/clock outputs;
+chronological `exp[-i(s+t)K]W`; infinite error<.003832 after T=kappa^-2 versus
+finite error<.004832 only on [T,2T] with M=ceil(50T). P and I remain separate
+supplied control/Gibbs alternatives. P has setup2, trace<.009665,2M+10 blocks;
+I has setup10001,trace<.009685,M+10 blocks, nonempty finite-slew early D>0 and
+exit Gram2I. Preparation loads exceeding the old runtime cap remain visible.
+
+Crucially, the product program still checks its older PR9665 numerical runtime
+ceiling, and the interacting program still checks its earlier common release
+of duration10000. Neither is relabeled as a numerical check of the shortened
+resonance composition or staged release. Those are preserved analytical sources
+and selective interface qualifications. The wrapper explicitly says so. Their
+historical pending labels and report status strings remain unchanged; later
+qualification records discharge the dependencies outside the frozen bodies.
+The staged-release and composition bodies were read completely for this
+transport/interface check, not re-qualified as new mathematics.
+
+The five source/interface qualification records are preserved with complete
+raw reports/evidence in the finite source map. In particular the interacting
+clarification states V_seed*V_seed=2I and D>0 for a nonempty finite-slew early
+stage. The composition qualification records the later resolution of its
+historically pending I dependency. No model diversity, blind review or retained
+status is claimed by the wrapper.
+
+The wrapper delta from root5cc1d827 adds external-record status language,
+"executes only", explicit historical numerical-example qualifications, source
+and transport maps, and qualification links. It does not assert a successful
+canonical run. Root's subsequently proposed links to separate
+ROOT_PORTABILITY_ACCEPTANCE.json and EXECUTION_STATUS.md are compatible in
+principle: keep those actual later decisions outside the calculation closure,
+label PUBLICATION_STATUS/REPRODUCTION_PLAN as frozen preparation history, and
+refresh note/body-map/artifact identities **before** execution. This review does
+not cover bytes not yet supplied and pinned.
+
+## Known publication defect and preserved failures
+
+The frozen note contains one trailing-space line, **1379** in these exact bytes:
+the product body's literal TeX control-space `\\boxed{\\ ` is preserved from the
+raw candidate. Root independently reported a publication whitespace check
+failure in its integrated copy (its line1381). This is a formatting/conformance
+defect, not a detected mathematical change. Root's proposed nontrailing rendered
+spacing plus a reversible one-span format ledger and lossless raw-source
+preservation requires a narrow follow-up check of its actual bytes. It is not
+silently accepted here and does not authorize changing the source history.
+
+Packager failures are real and preserved, with exact prelaunch/checker/stream/
+receipt records and historical overlay pins:
+
+1. static01, exit1: multiline docstring indentation changed its literal AST
+   value. Final literal `repr` transport repairs that semantic change.
+2. static02, exit1: private link fixture omitted the separately bound primary.
+   The canonical primary existed; the fixture was corrected.
+3. static03, exit1: dedup selected an archived parent note, leaving the distinct
+   canonical parent-note link outside declared closure. Final closure adds it.
+4. static04, exit0: bounded static verification, wall0.437376042, no science.
+
+The own read-only inspection initially mistook a list for a dictionary and
+raised AttributeError; READ_FAILURES.json preserves it. Large initial ledger/
+identity displays were truncated. Missing executable text was recovered and
+all26 event sources were displayed compactly; identity arrays are verified
+mechanically, not claimed as a full mathematical read. The own bounded static
+checker had **one attempt, exit0**, with no suppressed failed scientific run.
+
+## Actual static evidence and limits
+
+`attempt_01/PRELAUNCH.json` was serialized and fsynced, its directory fsynced,
+and its identity captured **before** subprocess creation. It binds1,380 files:
+executed checker/launcher, plans, snapshots, all frozen packet members and
+selected interpreter/stdlib/extension files. Postlaunch comparison found every
+binding and the prelaunch record unchanged. This is a genuine prelaunch capture,
+not a list first assembled after execution.
+
+Actual start2026-10-17T04:47:33.567612+00:00; wall0.323415708seconds;
+userCPU0.143542seconds; systemCPU0.047582seconds; macOS maxRSS38,420,480bytes.
+Caps were CPU30/30 and external wall45, max2,048files,128MiB input bytes,
+24inert fixtures, at most3attempts. Actual check used14fixtures and inspected
+1,175packet members plus the finite snapshot/runtime bindings. No OS memory
+cap was claimed; requested OMP/OPENBLAS/MKL threads1 were not measured.
+No scientific matrix, grid, quadrature, dynamics, optimizer or mutation executed.
+The selected interpreter and module pins do not close the OS/dynamic-loader or
+entire transitive runtime.
+
+The result has4,116 static assertions, not4,116 independent scientific results.
+Full check names, per-body edits, fixture outcomes, proof reconstruction and
+failure streams are in the saved output. Important identities:
+
+* PRELAUNCH SHA256 `1a84e860f9f83c073bd9a3187f0a1e79424cd6a2e02dbaa8b6b01dda335e3001`.
+* stdout SHA256 `57d8a30e754f6121adc08f6f7288150242138aefe976ae43b1f56f17c16a9604`.
+* stderr is empty, SHA256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`.
+
+Manual read coverage: complete three pinned programs, complete primary adapter
+(including recovered initially truncated span), complete wrapper baseline/final
+and diff, all26 event originals/replacements, resolver/outer main, maps' relevant
+schemas, complete staged/composition bodies, resonance qualification, product
+root review and interacting clarification, qualification decision/scope fields,
+all four static receipts/failure streams and packaging repairs. Full ledger,
+239label inventory, raw proof/review/evidence availability and1,175file membership
+were verified deterministically. This does **not** claim re-reading or re-proving
+every inherited note, every raw review, every historical builder, or every
+scientific output. No author builder/static program was executed in this review.
+
+## Recommended fault plan, not executed
+
+Use isolated root-owned copies, bind the actual changed source, and require a
+scientific assertion failure rather than an input checksum failure. Preserve
+full attempts; do not weaken assertions to make the run succeed.
+
+1. Resonance outgoing phase: invert the rational transmission-phase choice in
+   the actual discriminator; `correct_phase_discriminator` should reject while
+   the preserved wrong-reciprocal countercase remains visible.
+2. Resonance cutoff endpoints: omit the endpoint jump contribution from the
+   total-variation terms; `cutoff_total_variation` must reject, rather than merely
+   shrinking a displayed budget.
+3. Resonance full localized/finite budget: increase the complete localized-tail
+   term or remove the finite distance buffer payment in a way that crosses a
+   named final ceiling; require `proposed_remainder`, `finite_graph_distance_buffer`
+   or `proposed_finite_error` as appropriate. This is a scalar implementation
+   discriminator, not a fresh proof of the underlying contour argument.
+4. Product preparation: delete a clock endpoint compensation or an attachment
+   vacancy compensation in the complete Pauli construction; the exact full
+   operator/seed decomposition should fail for an already declared fixture.
+5. Interacting preparation: replace `2kappa I-Q` by `kappa I-Q` or remove the
+   old/source complement factor2; require a full local positivity/decomposition
+   assertion to reject, not only a scalar report mismatch.
+6. Interacting seed/thermal accounting: replace the exit Gram2kappa² bykappa²,
+   or drop the N-factor in the many-sector comparison; choose the corresponding
+   exact Gram or many-sector discriminator. These are separate error families;
+   one successful mutant rejection does not cover the other.
+
+No mutation in these three programs alone certifies the new staged/composition
+interfaces, because those are not numerically executed here. Their qualified
+analytical source is preserved. Root must keep the canonical result scope just
+as narrow, record actual runtime/caps/failures, and complete the separate
+publication checks after resolving the named format issue.

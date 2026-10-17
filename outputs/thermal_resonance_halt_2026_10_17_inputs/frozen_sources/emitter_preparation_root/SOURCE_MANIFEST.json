@@ -1,0 +1,136 @@
+{
+  "created_utc": "2026-10-17T03:58:31.903774+00:00",
+  "source_revision": "0e3993770a7a2dd872018f9dd3c76c2d9a624db9",
+  "source_tree": "087bbc0b414d63793d9d36a7cc8a371826894aa9",
+  "files": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "repository_path": "docs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "snapshot": "inputs/EMITTER_COUPLING_FAMILY_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 50396,
+      "sha256": "f3a10874f4f52bef0bc5c393081590aff2f71b877a0f44cac9a3cbe05b34da87",
+      "git_blob": "b982c1cf25b91b828ee4d4c3d5cb8fa98aac4be2"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "repository_path": "docs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "snapshot": "inputs/PRODUCT_SEED_EMITTER_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 95866,
+      "sha256": "62d60c0c6e1921bebab45ec836a5e82da5f453f247528a7a10c212d3f0324b44",
+      "git_blob": "1f19ca3157a465b857328ace130920639488a2f9"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "repository_path": "docs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "snapshot": "inputs/TWO_BODY_AUTONOMOUS_HALT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+      "bytes": 106965,
+      "sha256": "332a5fd3ebe33383206743ba2903de3dc2dacbf368fff77f8b59b7f094e326ac",
+      "git_blob": "756492eb2016e9ca1f99a3fddef475bf4f7a138e"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "repository_path": "docs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "inputs/LOCAL_GIBBS_CONTROLLER_SOURCE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 102731,
+      "sha256": "6b69ce1c8b776acaf64d63e6be04012e02315f2a3d9f4dd0f242627a130ddfc9",
+      "git_blob": "ce7612c1b8c69e3455e5ee97354f35c6f3221a7e"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "repository_path": "docs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "snapshot": "inputs/PRODUCT_SOURCE_CONTROLLED_STOP_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "bytes": 94335,
+      "sha256": "bfa0b68ba5954b10f435846cae48df9a71fc04bcdb08215ca945319c13caef03",
+      "git_blob": "602336b82e590281e80677763de8952cfbb2831b"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "repository_path": "docs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "inputs/INSTALLED_GENERATOR_PREPARATION_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 77852,
+      "sha256": "cdb42d6682ee56968c20229b2e012a23afc6de75bceab0f42f06bc94b95a4fe6",
+      "git_blob": "979b3b891f4b1aeae8e86e4cd214effd84ce2ae8"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "repository_path": "docs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "snapshot": "inputs/INSTALLED_BACKGROUND_AUXILIARY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 117717,
+      "sha256": "7d48af3dc97630d1adc21ac6cbce02fe602aeea14d4b81e2edad54944c9cb021",
+      "git_blob": "9a2b8bf8ad6bac70cb64fdb432966a0cd17d198b"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "repository_path": "docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "snapshot": "inputs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md",
+      "bytes": 4820,
+      "sha256": "a135ca429e41725140382e2046cab4604263dcfaec2fef801be9d954acc971ea",
+      "git_blob": "438d6136005ddf293ab1c41128d8938da21e269f"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "repository_path": "docs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "snapshot": "inputs/RECORD_RESET_WITH_SINK_CONDITIONAL_2026-06-05.md",
+      "bytes": 3862,
+      "sha256": "ae0cbec1281a1e8d0e0fa50fb611afcac0b211847f67128feb3bfd1b89903304",
+      "git_blob": "07e593da2c08f2de239d03cd65b1a0a6b4e39b97"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "repository_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "snapshot": "inputs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/data/axiom_premise_nodes.json",
+      "repository_path": "docs/audit/data/axiom_premise_nodes.json",
+      "snapshot": "inputs/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "repository_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "snapshot": "inputs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "repository_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "snapshot": "inputs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "repository_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "snapshot": "inputs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "repository_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "snapshot": "inputs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
+      "bytes": 7275,
+      "sha256": "7bedb81876474133c560bcbb2ee9a360fe048c945b4802676a01855391282a0a",
+      "git_blob": "432fc5e2d04ed6d893b96d3a7d3457a26865a5dc"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "repository_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "inputs/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965"
+    }
+  ],
+  "role": "Immutable current sources; a hash is not review coverage or scientific acceptance."
+}

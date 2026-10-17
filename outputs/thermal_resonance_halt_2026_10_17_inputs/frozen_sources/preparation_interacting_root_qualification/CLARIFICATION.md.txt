@@ -1,0 +1,34 @@
+# Qualification clarifications for interacting preparation and staged release
+
+This document qualifies the frozen source, rather than overwriting its historical
+bytes. The source candidate has SHA256
+`416a0cd7155a60517bae6944368d9f9619f0f59274b6634004e0c4962d921fa0`;
+the staged addendum has SHA256
+`1c021b815445bbfc8146b7b37d21b3475769f065a21247bda86563f649f90885`.
+The selective analytical comparison has SHA256
+`cdf14b870fb6d1f706f9a4a09f46fbf42a5dd0b5bc4f7a0c964bb0927b78ac09`.
+
+1. The candidate's `V_seed` is a **scaled isometry**, with
+   `V_seed* V_seed = 2 I` and norm `sqrt(2)`. It is the sum of the two
+   orthogonal emitter-exit maps. The candidate's leakage, Duhamel and trace
+   formulas already use this factor. Calling this unnormalized map an
+   isometry is a wording error; it does not authorize dropping `sqrt(2)`.
+2. The early stage of a nonempty staged release with finite slew must have
+   **D > 0**. The addendum's `D >= 0` domain is narrowed accordingly. At
+   D=0, a nonzero rest control cannot change from one to zero continuously
+   with finite slew. A genuinely empty early stage may be omitted, but is
+   not a zero-duration implementation of the stated nonempty stage.
+   The concrete D=10000 schedule satisfies the corrected domain.
+
+Every rest control remains scalar on the seed range while both emitter
+complements remain fully on; this is the exact invariance premise. The early
+stage may then be long without a nominal release error, but its actual duration
+and scalar areas enter old-system aging and phase. An uncanceled seed leakage
+of norm eta(s) would add its time integral. There is no finite tolerance or
+native controller conclusion here.
+
+No scientific expression, source checker, reported execution, thermal theorem,
+or concrete parameter choice is changed. The finite-source runtime used in the
+original note and the separately checked resonance replacement remain distinct.
+This correction is not a retained audit verdict, new physical axiom, or proof
+that the supplied Gibbs state and controls can be physically produced.

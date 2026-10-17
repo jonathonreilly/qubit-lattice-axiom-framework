@@ -26,13 +26,13 @@
     "positive_open_path_clock_bounded_theorem_note_2026-10-14",
     "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/critical_mediator_clock_data_identity_2026_10_14.py",
   "title": "Critical Dirichlet mediator paths for a supplied finite clock program",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

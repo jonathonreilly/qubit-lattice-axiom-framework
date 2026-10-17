@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.585,
+  "load_bearing_score": 9.644,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py",
   "title": "Finite-penalty recovery of a literal charged-link coupling",
-  "transitive_descendants": 11,
+  "transitive_descendants": 49,
   "verdict_rationale": null
 }

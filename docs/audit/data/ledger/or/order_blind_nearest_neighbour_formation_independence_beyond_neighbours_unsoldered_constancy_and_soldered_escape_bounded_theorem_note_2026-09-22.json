@@ -25,13 +25,13 @@
   "deps": [
     "minimal_axioms"
   ],
-  "direct_in_degree": 29,
+  "direct_in_degree": 30,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 20.875,
+  "load_bearing_score": 21.392,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py",
   "title": "Order-blind nearest-neighbour formation: independence beyond neighbours, unsoldered constancy, and the soldered cube-orbit escape",
-  "transitive_descendants": 82,
+  "transitive_descendants": 83,
   "verdict_rationale": null
 }

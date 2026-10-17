@@ -113,7 +113,7 @@ blocks:
     runner: scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py (PASS=17, ~2 min)
     results: ["9-dim space of O x I x T invariant conjugation-odd terms", "opposite-chirality Weyl pair at +-k* (Berry flux -+1), isotropic", "selection rule: no O-invariant staggered term gives a Dirac mass (E1/2 vs E5/2 differ by A2)", "imaginary A2 staggered mass (5-dim): massive Dirac E=+-sqrt(v^2k^2+mD^2), isotropic", "massive doublets are spin-1/2 irreps of 2T", "massive model keeps O about cube centres (w1-odd rotations x odd translations)"]
     open: ["Dirac point as global low-energy feature / clean Dirac vacuum (search running)", "qubit construction of X and M", "mass generation mechanism", "charge"]
-    independent_check: "in progress"
+    independent_check: "selection rule CONFIRMED and generalized (all ranges; Schur for site O); Weyl pair CONFIRMED (40 random sets); massive Dirac CONFIRMED WITH CORRECTIONS (runner dispersion test replaced by a discriminating asymptotic test, scalar c dk^2 term, generic mass breaks inversion); cube-centre symmetry CONFIRMED and spin-1/2 class there; no clean Dirac vacuum in ~1800 sets; Majorana mass allowed under twisted action (protection needs number conservation)"
 scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
 campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
 next_action: "C17 independent check; then a mobile E1/2 doublet (band minimum at a symmetric momentum) and the U(1)/spin-charge selection of the twisted realization"

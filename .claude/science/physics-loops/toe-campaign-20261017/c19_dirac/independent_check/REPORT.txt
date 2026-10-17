@@ -1,0 +1,276 @@
+INDEPENDENT CHECK -- corner fermion: massless Dirac pair protected by cube rotations, pseudoscalar Dirac mass (C19)
+=====================================================================================================================
+Note:   docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md
+Runner: scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py
+        Re-run here: TOTAL PASS=17 FAIL=0, 2 min 27 s (runner_rerun.log).
+
+Provenance: a fresh-context agent of the same model family as the author (Claude). It is not an
+independent model family and not a human referee. All the code here is my own: corner graph, brute-force
+cycle classification, GF(2) gauge, PSG solve, Bloch and folded Bloch Hamiltonians, real-space L = 4,
+2O lifts. I reused only ideas from the C18 check. I read the runner to compare after my results were
+in. dump_runner.py exec's the runner's own source, unmodified, only to extract its Hamiltonian for a
+like-for-like test. No note or runner was edited, and nothing was committed.
+
+Conventions (mine): Bloch states e^{+ik.n}, so h(k) = sum_sh h_sh e^{-ik.sh}. In my gauge
+k* = (pi/2)(-1,1,-1) and -k* = k* + Q. The runner's gauge and Fourier sign differ, and only the
+gauge-free statements are compared.
+
+Files (this directory; each X.py writes X.log)
+  core.py         model, gauge, PSG, Bloch/folded Bloch, 2O tables and lifts
+  invspace.py     EXACT invariant-operator spaces by signed-orbit counting (no averaging)
+  bases.py        cached bases (bases.pkl)
+  weyl.py         item 2: covariance, fixed momenta, Weyl pair for many random X, t2, delta, t1
+  selection.py    items 1 and 3: selection rule for every range and type; mass space; dispersion (first pass)
+  dirac.py        item 3: asymptotic Dirac test, mine and the runner's H (runner_blocks.pkl, dump_runner.py)
+  realspace.py    items 1 and 4: O-only invariant operators without translation symmetry; symmetries of
+                  the massive model; cube-centre O and its projective class
+  spin_bloch.py   items 3 and 4: labels, chirality action, spin of the massive doublets, finite-strength
+                  A1 terms
+  majorana.py / majorana2.py   N1: pairing masses, twisted vs untwisted, P = 0 vs Q
+  mass_parity.py  inversion parity of the 5-dim mass space
+  deg4*.py, inv_stag.py        finite-strength A1 staggered terms
+  globalband.py, verify_global.py, search2.py, verify2.py, touch*.py   item 5
+  (globalband_*.log print "refined" numbers from a sign bug that I fixed later. Use the grid numbers in
+   those logs and the verify*/touch* logs.)
+
+-------------------------------------------------------------------------------
+ITEM 1  Selection rule (no Dirac mass from site-rotation-invariant terms)     VERDICT: CONFIRMED
+        (and stronger than stated). N1's wording on Majorana masses needs correction.
+-------------------------------------------------------------------------------
+Why it holds, convention-free:
+  - Both k* and -k* are fixed by all 24 rotations (exactly two fixed momenta; fixed_momenta()).
+  - On the Bloch space at either momentum, the rotation acts by the same 12 x 12 signed permutation W_R.
+    The internal shell is E1/2 + E5/2 + 2 G3/2, and E1/2 and E5/2 each occur once.
+  - So the node doublets are fixed vectors: the unique E1/2 and E5/2 subspaces. One sits at k* and the
+    other at -k*, whatever t2 and X are.
+  - Two consequences follow:
+    - E_N = -2 - sqrt2 t2 exactly, independent of X. X vanishes on a one-copy isotypic subspace because
+      it is I*K-odd.
+    - m_D / m depends only on the mass matrix (1.4041 for the runner's M), not on t2 or X.
+  - The character ratio between the two doublets is +1 on the w1-even and -1 on the w1-odd rotations,
+    i.e. A2, in either 2O lift (spin_bloch.log). This is convention-free.
+  - The E1/2 / E5/2 labels themselves swap between the two valid lifts, and between the twists i^{w1}
+    and (-i)^{w1}.
+  - Complex conjugation maps the E1/2 subspace onto the E5/2 one (checked).
+
+Numbers:
+  - Exact bases (orbit counts) of O-invariant staggered (momentum Q) terms:
+
+        range               real   imaginary
+        on-site                4           2
+        range <= 1 site       22          20
+        |sh|_1 <= 2           76          74
+        |sh|_inf <= 1         88          74
+
+    The maximum coupling between the k* doublet and the -k* doublet is 8.6e-16 over all of them.
+    The coupling map has rank 0 (selection.log).
+  - Momentum-0 O-invariant terms, same ranges, real and imaginary: the diagonal blocks are scalar to
+    1.3e-15 and the off-diagonal blocks vanish.
+  - Without translation symmetry: random complex Hermitian operators of site range <= 2 on the L = 4
+    torus, symmetrized over the 24 site rotations only. The k* <-> -k* blocks are <= 3.3e-14, and the
+    diagonal blocks are scalar to 4e-14 (realspace.log).
+    So the rule is pure Schur on site-O. It needs neither translation symmetry nor a particular momentum.
+    Only momentum Q connects k* and -k*: momentum-0 terms cannot couple them, and no other momentum can.
+  - Finite strength (not only first order): O-invariant staggered A1 terms of strength 0.1 to 1 keep the
+    folded levels at k* 4-fold (pure real or pure imaginary terms).
+    A complex mixture splits them 2 + 2, and each doublet stays a Weyl node with flux +-1 (deg4b.log).
+    So no gap opens at any strength.
+  - Real A2 terms give zero at EVERY range (on-site 1, range-1 13, |sh|_1<=2 55, cube 61; max 3e-17).
+    The reason: K maps one node doublet onto the other. The coupling of a K-even operator is then a
+    symmetric invariant bilinear form on a pseudoreal irrep, and that must vanish.
+    Imaginary A2 terms (5 / 29 / 95 / 101 dims) give a coupling map of real rank 2.
+
+Majorana masses (N1), my own BdG; Bloch BdG = real-space L = 4 BdG (majorana.log):
+  - Twisted-invariant pairing (pair matrix A2 under the untwisted PSG):
+    - With momentum Q (on-site 5 dims, range <= 1 29 dims) it is intra-node, i.e. a Majorana mass.
+    - The BdG with mu = E_N is gapped near k*. min|E| = the node pairing (1.39e-3 at amplitude 1e-3), and
+      it is attained at k* (majorana2.log).
+    - It keeps all 24 twisted site rotations. Translations survive only when dressed with U(1)
+      rotations.
+    - With momentum 0 it is forbidden (E1/2 x E5/2 contains no A1).
+  - Untwisted-invariant pairing:
+    - Momentum Q is forbidden.
+    - Momentum 0 (on-site 2 dims, range <= 1 20 dims) gives a nonzero inter-node pairing, but the nodes
+      stay gapless: BdG zero modes sit at |q| ~ Delta/v (e.g. 6e-18 at |q| = 0.048). This is the BCS
+      versus FFLO pattern of Weyl superconductors.
+  - So under the twisted action the protection needs number conservation. Under the untwisted action
+    (class w2 + w1^2) no pairing tested gaps the nodes.
+
+Requested wording:
+  - Item 2 / claim (3):
+    "every number-conserving one-fermion operator invariant under the 24 site rotations, of any range,
+    real or imaginary, with or without translation symmetry, is block-diagonal and scalar on the four
+    node states; at finite strength the nodes persist."
+  - N1:
+    "A staggered (momentum Q) pairing that is invariant under the twisted site rotations (A2 under the
+    untwisted ones; 5-dimensional on-site) gives each Weyl node a Majorana mass and gaps it while keeping
+    all 24 twisted rotations. The protection under the twisted action therefore requires number
+    conservation. Under the untwisted action only momentum-0 inter-node pairing is allowed, and it does
+    not gap the nodes."
+
+-------------------------------------------------------------------------------
+ITEM 2  Weyl pair                                                             VERDICT: CONFIRMED
+-------------------------------------------------------------------------------
+  - Covariance h(Rk + pi R s_R) = W h(k) W^T holds for all 24 rotations and the inversion (s_I = 0), to
+    3.3e-16.
+  - Space of terms: the range <= 1 site, conj-odd terms invariant under O x I and translations form a
+    space of dimension exactly 9, by orbit count.
+    - "Range <= 1" means all corner pairs on a site and its 6 neighbours.
+    - Context: dropping I gives 20; real terms give 12; on-site gives 0.
+  - Runner-like parameters (t1 = -1, t2 = 0.2, delta = 0.05), 4 random X from the 9-dim space:
+    - the lowest levels at +-k* are degenerate doublets at E_N = -2.282843;
+    - the next level is +0.566 higher;
+    - v = 0.027 to 0.147 (it depends on X), with spread <= 2.7e-10;
+    - the Berry fluxes are +-1, opposite; the sign at k* depends on X.
+  - Runner's own H: v_W = 0.10960 = the runner's "vel".
+  - Generic elements (40 sets; t1 = +-1, t2 in [-0.6, 0.6], delta in [0.01, 1], random X):
+    - Always: both doublets at k* (E1/2 and E5/2) exist, each is an isotropic Weyl node, and the
+      Berry fluxes at k* and -k* are opposite and +-1. 40/40 sets.
+    - But the doublet is the LOWEST level at k* in only 17 of the 40 sets: t1 = -1 with modest delta.
+    - For t1 = +1, or delta >~ 0.6, the lowest level is a G3/2 quartet. The Weyl pair then sits higher
+      in the spectrum.
+  - Isotropy is forced: T1 x adj(E) contains A1 once.
+
+-------------------------------------------------------------------------------
+ITEM 3  Massive Dirac fermion                                VERDICT: CONFIRMED WITH CORRECTIONS
+-------------------------------------------------------------------------------
+Confirmed:
+  - The imaginary A2 staggered on-site space has dimension exactly 5. Real ones (1 dim) give zero.
+  - The two node doublets go to E_N -+ m_D exactly, with the centre shift 1e-15.
+  - m_D is exactly linear in m: the 4-state node block is closed. m_D/m = 1.4041 for the runner's M,
+    3.304 and 2.798 for my elements.
+  - Labels: the massless node states are E1/2 + E5/2 under the twisted O. Each massive doublet is the
+    spin-1/2 irrep of 2T (|chi|^2 = 1, overlap with SU(2) spin-1/2 = 1), and its site-T D2 commutator
+    is -1.
+
+Corrections (substantive for the dispersion):
+  (a) The runner's dispersion test is not discriminating.
+      - It compares at |dk| <= 0.02 with m = 0.05 (m_D = 0.070, m_D/v_W = 0.64), i.e. q << m_D/v.
+      - A FLAT band passes it: max relative deviation 6.4e-4 < 1e-2.
+      - So the "5e-4" is a statement about E ~ m_D near q = 0. It is not isotropy, and not the sqrt form.
+  (b) The runner uses v = vel/2. The Dirac velocity is the Weyl velocity v_W = vel. That wrong
+      velocity also passes the test (5.2e-4).
+  (c) Proper asymptotic test (dirac.log), q = x m_D/v_W with x <= 4. Decompose E = E_N + s(q) +- r(q):
+      - r(q) -> sqrt(v_W^2 q^2 + m_D^2), with error ~ m.
+        Runner's H: 4.8e-6 at m = 1e-4 and 4.8e-4 at m = 1e-3. Mine: 6.4e-6 and 6.4e-4.
+      - The angular spread is 2.8e-6 at m = 1e-4.
+      - There is an extra isotropic scalar term s = c q^2: c = 0.0275 for the runner's H, 0.035 for mine.
+        It breaks particle-hole symmetry.
+      - So: E - E_N = c dk^2 +- sqrt(v^2 dk^2 + m_D^2) + O(m dk^2, dk^3).
+      - The Dirac regime needs m_D << v^2/c (0.44 for the runner's H) and q << the k.p range.
+      - At the runner's m = 0.05 the form fails beyond tiny q: an 88% deviation at q = 4 m_D/v = 2.6.
+        At m = 1e-2 it is 5%.
+  (d) "Pseudoscalar" means A2 under the rotations only. The 5-dim space splits under site inversion:
+      - 3 I-even elements give a real node coupling z;
+      - 2 I-odd elements give z with relative phase i (mass_parity.log).
+      So the mass is a complex number m e^{i phi}: rank 2, with a scalar (P-even) and a pseudoscalar
+      (P-odd) part. The phase phi is the chiral (axion) angle, and the w1-odd rotations send z -> -z.
+      A generic M breaks the site inversion (realspace.log). An I-even M keeps it.
+  (e) Spin labels, convention-free:
+      - The two massless doublets differ by A2, and each is spinorial: D2 commutator -1.
+      - With U(1) rephasing allowed (number conservation), the 2T label among its three 2D irreps is
+        conventional. The invariant is the w2 class (D2 commutator -1).
+
+Requested wording for item 3 / claim (4):
+  "E - E_N = c dk^2 +- sqrt(v^2 dk^2 + m_D^2) asymptotically (m_D -> 0, dk ~ m_D/v), with v the Weyl
+  velocity and an isotropic scalar curvature c; verified to O(m) (4.8e-6 at m = 1e-4)."
+  Drop "isotropic to 5e-4". Please also fix the runner: use v = vel, test small m (<= 1e-3) out to
+  dk ~ 3 m_D/v, and fit or remove s(q).
+
+-------------------------------------------------------------------------------
+ITEM 4  Symmetry of the massive model                         VERDICT: CONFIRMED (and strengthened)
+-------------------------------------------------------------------------------
+On L = 4, m = 0.05, random M (realspace.log):
+  - Kept: the 12 T rotations about a site and the 32 even translations.
+  - Broken: all 12 w1-odd site rotations, all 32 odd translations, and the site inversion (also composed
+    with an odd translation).
+  - p - Rp (p = (1/2,1/2,1/2)) is an odd translation exactly for the w1-odd R.
+  - All 24 maps n -> R(n - p) + p commute with H. A geometric check confirms that each one moves the
+    corner points by the rotation about p.
+  - So "together the 24 rotations about a cube centre" is right, modulo the kept even translations.
+
+Projective class under the cube-centre O (a convention-free U(1) invariant):
+  - C2x C2y C2x^-1 C2y^-1 = -1 on the whole one-fermion space, i.e. w2 (spin-1/2).
+  - The untwisted cube-centre action lifts to 2O and the i^{w1}-twisted one does not. The k*-phase of
+    the odd translation supplies the i^{w1}.
+  - Each massive doublet is invariant under the cube-centre O, with D2 commutator -1, and is E1/2 or
+    E5/2 depending on the lift (realspace.log; spin_bloch.log, both doublets).
+  - So the massive Dirac doublets are spin-1/2 under the full cube group about a cube centre, not only
+    under 2T. The note can say this.
+
+Mechanism:
+  - On the node space the odd translations act as the chirality operator: relative phase -1 between the
+    doublets (spin_bloch.log).
+  - The w1-odd site rotations act as a spin rotation times the chirality operator.
+  - Their product, the cube-centre rotation, is a pure spin rotation. That is why it survives the mass.
+  - So "the w1-odd rotations play the role of the shift symmetries" is fair. The closer analogue: both
+    the odd translations and the w1-odd site rotations act as gamma5 up to a spin rotation.
+
+Consistency: site C4z T_x C4z^-1 T_y^-1 = -1. This is C17's caveat.
+
+-------------------------------------------------------------------------------
+ITEM 5  Global low-energy structure                VERDICT: the note's "not claimed" is CORRECT;
+        a clean Dirac vacuum was NOT FOUND in the family (t1, t2, X in 9-dim, delta, mass)
+-------------------------------------------------------------------------------
+Runner's parameters (globalband grid lines; touch.log):
+  - Band 1 has its minimum at the node.
+  - Band 0 rises to E_N + 0.162, with its maximum at another (pi/2)(odd,odd,odd) point. On 61% of the BZ
+    band 0 lies above E_N.
+  - Bands 0 and 1 also touch at 24 further points: one orbit, of the form (pi/2)(1, a, -a) with
+    a = 0.265, at E_N + 0.089. These are Weyl points with flux +-1 summing to 0, and the set is closed
+    under k -> k + Q.
+  - With the mass (m = 0.05): the folded min(band 2) - max(band 1) = -0.031, versus 2 m_D = 0.140. That
+    is a metal.
+
+Search:
+  - Random sampling plus Nelder-Mead: 2 x 300 sets with small delta, 3 x 400 with delta up to 3, and
+    t1 = +-1.
+  - Optimizing on a grid finds "clean" points. Fine extremes and local maximization show that every one
+    is a grid artefact: band 0 has a sharp conical maximum at an extra Weyl touching, which the grid
+    misses (verify_global.log, verify2.log).
+  - Survey of 39 sets with t1 = -1 and the lowest doublet (touch3.log):
+    - 0/39 are clean;
+    - 36/39 have extra band-0/1 Weyl touchings;
+    - in every set, either band 0 overshoots E_d or band 1 undershoots it.
+  - Best massive case: t1 = -1, t2 = -0.0405, delta = 0.0744, X given in verify_global.log.
+    - The extra Weyl points sit only 6e-5 below E_d.
+    - The global gap is positive: +2.3e-4 to +3.9e-3 for m = 3e-4 to 1e-2.
+    - But that is only 0.22 to 0.46 of 2 m_D, because the 24 extra Weyl points are also gapped by the
+      staggered mass and set the gap.
+    - So it is not a single clean Dirac vacuum.
+  - Generic obstruction seen: extra Weyl crossings between the node bands on the lines (pi/2)(1, a, -a),
+    for most parameters.
+
+Requested wording:
+  - Quantify the "not claimed" for the stated parameters: band 0 overshoot 0.162; 24 extra Weyl points
+    at +0.089; massive indirect gap -0.031.
+  - Add that a search over t2, delta and X found no clean case.
+
+-------------------------------------------------------------------------------
+ITEM 6  Wording / scope / prior art                                VERDICT: CORRECTIONS REQUESTED
+-------------------------------------------------------------------------------
+  1. Claim (3) says "on-site", but Result 2 says "every rotation-invariant staggered term". Make them
+     match. The runner tests on-site terms only. This check supports the general statement (all ranges,
+     real and imaginary, no translation symmetry needed), so the scope can be widened, citing this check.
+  2. Claim (4): replace the dispersion statement (item 3, a-c). Say that m_D is exactly linear and
+     independent of t2 and X.
+  3. "Pseudoscalar": add that the mass is complex, that the 5-dim space has 3 I-even and 2 I-odd
+     elements, and that a generic M breaks the site inversion. Add the inversion to the "broken" list in
+     claim (6) / Result 5, unless an I-even M is chosen.
+  4. Claim (5): state the convention-free content (relative A2; D2 commutator -1). Add the cube-centre
+     result: the massive doublets are spinorial 2O irreps about a cube centre.
+  5. Claim (2): the doublet is the lowest level only in the t1 = -1, modest-delta sector. Velocity and
+     chirality sign depend on X.
+  6. N1: the Majorana statement, as in item 1.
+  7. N2/N3: "one generic choice of X and M": this check covered 40+ random X and several M.
+  8. Prior art to add:
+     - Wang and Zhang, PRB 87, 161107(R) (2013): a density-wave mass coupling Weyl nodes at k and
+       k + Q, whose phase is the axion field. This is the direct precedent for the staggered complex
+       mass.
+     - Cho, Bardarson, Lu and Moore, PRB 86, 214514 (2012): BCS (inter-node) pairing leaves Weyl nodes,
+       and finite-momentum (intra-node) pairing gaps them. This matches the N1 finding.
+     - For band degeneracies enforced by Z2-flux projective symmetry, e.g. Zhao, Huang and Yang,
+       PRL 126, 196402 (2021). Please verify this citation before adding it.
+     - Nielsen-Ninomiya is consistent: the extra Weyl points also sum to zero chirality.
+  9. "Kramers-Weyl" (cited) refers to time-reversal-invariant momenta. Here the pinning is by the
+     2D projective irrep of O at an affine-fixed momentum, without time reversal. Say so.

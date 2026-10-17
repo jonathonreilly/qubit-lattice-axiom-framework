@@ -221,15 +221,21 @@ check("the folded Bloch Hamiltonian reproduces the real-space spectrum on L = 4 
 e0 = np.linalg.eigvalsh(Hfold(kst, m)); mD = (e0[2] - e0[1]) / 2; mid = (e0[1] + e0[2]) / 2
 check("at k* the massive spectrum is two doublets at E_N -+ m_D, symmetric about the node", abs(e0[0] - e0[1]) < 1e-10 and
       abs(e0[2] - e0[3]) < 1e-10 and abs(mid - EN) < 1e-3 * mD, f"m_D = {mD:.5f}, linear in the mass term: m_D / m = {mD/m:.4f}")
-v = np.mean(vel) / 2
-dev = []
-for d in (0.005, 0.01, 0.02):
-    for n_ in dirs[:3]:
-        ee = np.linalg.eigvalsh(Hfold(kst + d * n_, m))
-        dev.append(abs((ee[2] - mid) - np.sqrt(v * v * d * d + mD * mD)) / np.sqrt(v * v * d * d + mD * mD))
-check("near k* the upper band follows E - E_N = sqrt(v^2 dk^2 + m_D^2), the same in every direction (relative deviation < 1e-2)",
-      max(dev) < 1e-2, f"max relative deviation {max(dev):.1e}")
-
+v = np.mean(vel)          # Weyl velocity: the doublet splits as 2 v |dk|
+# asymptotic Dirac form, tested at small mass over dk up to 4 m_D / v:
+#   E_+- - E_N = c dk^2 +- sqrt(v^2 dk^2 + m_D^2)  (c an isotropic scalar term)
+ms = 1e-3
+e0s = np.linalg.eigvalsh(Hfold(kst, ms)); mDs = (e0s[2] - e0s[1]) / 2; mids = (e0s[1] + e0s[2]) / 2
+dev = []; cs = []
+for x in (0.5, 1.0, 2.0, 4.0):
+    d = x * mDs / v
+    for n_ in dirs[:4]:
+        ee = np.linalg.eigvalsh(Hfold(kst + d * n_, ms))
+        half = (ee[2] - ee[1]) / 2; pred = np.sqrt(v * v * d * d + mDs * mDs)
+        dev.append(abs(half - pred) / pred); cs.append(((ee[2] + ee[1]) / 2 - mids) / (d * d))
+check("Dirac form at small mass (m = 1e-3, dk up to 4 m_D/v): the splitting is 2 sqrt(v^2 dk^2 + m_D^2) in every direction "
+      "to 1e-2, plus an isotropic scalar c dk^2", max(dev) < 1e-2 and np.ptp(cs[-4:]) < 0.05 * abs(np.mean(cs[-4:])) + 1e-3,
+      f"max relative deviation {max(dev):.1e}; c = {np.mean(cs[-4:]):.4f}")
 # ---------------- Part 5
 print("\nPart 5: spin content (twisted site rotations)")
 def q2su(qv):

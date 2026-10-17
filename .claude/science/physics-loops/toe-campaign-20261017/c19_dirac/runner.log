@@ -19,7 +19,7 @@ Part 3: Dirac mass terms (staggered, momentum Q = (pi,pi,pi), on-site)
 Part 4: massive Dirac dispersion
 [PASS] the folded Bloch Hamiltonian reproduces the real-space spectrum on L = 4 exactly
 [PASS] at k* the massive spectrum is two doublets at E_N -+ m_D, symmetric about the node  m_D = 0.07020, linear in the mass term: m_D / m = 1.4041
-[PASS] near k* the upper band follows E - E_N = sqrt(v^2 dk^2 + m_D^2), the same in every direction (relative deviation < 1e-2)  max relative deviation 5.2e-04
+[PASS] Dirac form at small mass (m = 1e-3, dk up to 4 m_D/v): the splitting is 2 sqrt(v^2 dk^2 + m_D^2) in every direction to 1e-2, plus an isotropic scalar c dk^2  max relative deviation 4.6e-04; c = 0.0275
 
 Part 5: spin content (twisted site rotations)
 [PASS] the four massless node states transform as E1/2 + E5/2 under the twisted O (opposite A2 characters at k* and -k*)

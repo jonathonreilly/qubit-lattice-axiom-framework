@@ -1,0 +1,24 @@
+    # Structured baseline corollary: exact polynomial full-block identities.
+    rb_t0=lc_kap/J; rb_alpha=lc_kap**2/J; rb_base=E0-rb_alpha
+    rb_rel=F('4e-6'); rb_rlo=1-rb_rel
+    lt('RB baseline positive',0,rb_base)
+    # Coefficients in t: vacuum, two one-particle diagonals, hopping, |11>.
+    rb_rankone_double=(rb_base+J,F(0),J)
+    rb_compensated_double=(rb_base+J,2*J-J-J,J)
+    eq('RB full double occupation polynomial',rb_rankone_double,rb_compensated_double)
+    eq('RB nominal double occupation',rb_base+J*(1+rb_t0**2),E0+J)
+    eq('RB nominal emitter diagonal',rb_base+J*rb_t0**2,E0)
+    eq('RB hopping parameterization',J*rb_t0,lc_kap)
+    lt('RB relative range within positive contract',pr_rlo,rb_rlo)
+    rb_drel=1-rb_rlo**2
+    lt('RB detuning within positive contract',rb_drel,pr_det)
+    lt('RB halfangle denominator positive',0,1+C0-lc_sig)
+    lt('RB halfangle ratio squared',2/(1+C0-lc_sig),F('1.1')**2)
+    rb_eta=F('1.1')*rb_drel
+    lt('RB correlated ratio denominator',rb_eta,1)
+    rb_profile=2*(rb_rel+rb_eta)/(1-rb_eta)
+    lt('RB fixed complex normalized profile',rb_profile,F('.000026'))
+    rb_fixed=F('.000320')+rb_profile+2*F('1e-20')
+    lt('RB complete infinite bound',rb_fixed,F('.000347'))
+    lt('RB complete finite bound',rb_fixed+F('.001'),F('.001347'))
+    lt('RB absolute orientation parameter error',rb_rel*rb_t0,F('1.34e-12'))

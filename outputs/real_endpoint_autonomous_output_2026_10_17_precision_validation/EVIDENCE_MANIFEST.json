@@ -1,0 +1,395 @@
+{
+  "scope": "Actual bounded execution and review provenance; not a proof or audit",
+  "files": [
+    {
+      "path": "endpoint_precision_runner_draft__CHECK_MAP.md",
+      "bytes": 8834,
+      "sha256": "a121bc0b559ad981918ac05b92468d710e42effe460aa25448f4c84355e90a3e"
+    },
+    {
+      "path": "endpoint_rankone_baseline_check__REVIEW.md",
+      "bytes": 8654,
+      "sha256": "8bd60218b0200888ee7ab32fe6836ac2d1c64e4eac5f8a72fec3660b2fa46c11"
+    },
+    {
+      "path": "endpoint_rankone_integration_check__REVIEW.md",
+      "bytes": 9507,
+      "sha256": "8e5d58e9bc9a5e6bb67cb91fb89b276d6c69c5b282e8ce11897f62691d24d65a"
+    },
+    {
+      "path": "precision/CANONICAL_RESULT.json",
+      "bytes": 110197,
+      "sha256": "eb7c62b3a2069b1e82375aa41baa22f99c934365b41934a646b49e819569754f"
+    },
+    {
+      "path": "precision/EXECUTED_INPUT_MANIFEST.json",
+      "bytes": 32422,
+      "sha256": "a0b8945e313129ceaaca29383233ea3977c88c740c1ef6893b169558219bb986"
+    },
+    {
+      "path": "precision/EXECUTED_RUNNER.py.txt",
+      "bytes": 55754,
+      "sha256": "d497864cb7af1451e0736cf6bc3f2aab2025e2c2f8fbe732a41e7f85fa5f3d95"
+    },
+    {
+      "path": "precision/MUTATION_SUMMARY.json",
+      "bytes": 1251,
+      "sha256": "e8abc6f648b419ece313f18d27cbee113fc3d308525733fcc46769389058287f"
+    },
+    {
+      "path": "precision/RESOURCE_PLAN.md",
+      "bytes": 440,
+      "sha256": "b02b4717c0c201506db5f4007f971ffd2f45571d362728f4d1fbcaa644ec9dd8"
+    },
+    {
+      "path": "precision/canonical/PRELAUNCH.json",
+      "bytes": 28605,
+      "sha256": "d61f0075ee4419c0794b13638c5355434b5d1aec71dc724686eaa3d66a018262"
+    },
+    {
+      "path": "precision/canonical/RESULT.json",
+      "bytes": 621,
+      "sha256": "083deabb97ff1cad20756cece385d27ae76690f8c201afe6c3accc324892aee5"
+    },
+    {
+      "path": "precision/canonical/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/canonical/stdout.txt",
+      "bytes": 485,
+      "sha256": "d78dc6db712437265096c6fd892d975bbf6e509060c015d1cd8f445036fe7948"
+    },
+    {
+      "path": "precision/canonical_wrapper.py.txt",
+      "bytes": 618,
+      "sha256": "aa2fb8a682f59da4e9fcf508acea1b6f8577315d9bad4d10e6831f7b98ed3a97"
+    },
+    {
+      "path": "precision/mutation_complementary_gap/PRELAUNCH.json",
+      "bytes": 32994,
+      "sha256": "0f2e421650ab40d24e09ec9c10928aa3f139129f48f770a5e73a007fcf702d6f"
+    },
+    {
+      "path": "precision/mutation_complementary_gap/RESULT.json",
+      "bytes": 657,
+      "sha256": "2cf9a8e1a7f0e0392c5ee9dc8effd65834f512ac531863cd11896b1e52582701"
+    },
+    {
+      "path": "precision/mutation_complementary_gap/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_complementary_gap/stdout.txt",
+      "bytes": 17720,
+      "sha256": "dfe40345c13121ff281e69edd2c86cac4ef90eff0a69d48f8d8808dc39c0ab86"
+    },
+    {
+      "path": "precision/mutation_detuning_range/PRELAUNCH.json",
+      "bytes": 32745,
+      "sha256": "5a61fc3772b1d09e7bac14ff901a21b6c44668702a4f093b529733796d17c37f"
+    },
+    {
+      "path": "precision/mutation_detuning_range/RESULT.json",
+      "bytes": 652,
+      "sha256": "2712963bf69a52ae817eb62fb91a27e794607c01c79ae3bcee45ba4d13a32933"
+    },
+    {
+      "path": "precision/mutation_detuning_range/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_detuning_range/stdout.txt",
+      "bytes": 16403,
+      "sha256": "5b67c4a73f7c6d5c10e21ab7b28daf2f0cd77c4a8119f3479d95f0f148e3e673"
+    },
+    {
+      "path": "precision/mutation_localized_sides/PRELAUNCH.json",
+      "bytes": 32828,
+      "sha256": "ad9ce3b34710442ee5e99e92b59a300a81daca708e4507127afc08bacf131b4b"
+    },
+    {
+      "path": "precision/mutation_localized_sides/RESULT.json",
+      "bytes": 654,
+      "sha256": "b2459bad65337b325e06746cbec8f51e0b2292088b1ec84cc5c395aa39395025"
+    },
+    {
+      "path": "precision/mutation_localized_sides/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_localized_sides/stdout.txt",
+      "bytes": 18327,
+      "sha256": "9a9796576ffc15c7c0014b6ec1256ad7a7229a441857c6d6185db6697b015f5c"
+    },
+    {
+      "path": "precision/mutation_lower_coupling/PRELAUNCH.json",
+      "bytes": 32745,
+      "sha256": "6dd785537a05f5a6889b25b22eff983aece652dbfe795fbc13d2716eb74c4c36"
+    },
+    {
+      "path": "precision/mutation_lower_coupling/RESULT.json",
+      "bytes": 652,
+      "sha256": "a4ae85c62212451cd9fb24430dba00fdd692bd8b886ed3b5dd23cc298bc7fb74"
+    },
+    {
+      "path": "precision/mutation_lower_coupling/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_lower_coupling/stdout.txt",
+      "bytes": 16850,
+      "sha256": "e547961fb0c4b44e9cea70b6652d984aa5e761deca0b49738fec465c4ecb2ce9"
+    },
+    {
+      "path": "precision/mutation_mass_regularity/PRELAUNCH.json",
+      "bytes": 32828,
+      "sha256": "53efe1948f8b4d3607af75aa59b3f73c04c44b53ca2e58d5c5eb0faa2df4bd5e"
+    },
+    {
+      "path": "precision/mutation_mass_regularity/RESULT.json",
+      "bytes": 654,
+      "sha256": "325f7bcb3360a4ac7469af50ff110806e6de716296bd2096e9afcc647c3cb2f2"
+    },
+    {
+      "path": "precision/mutation_mass_regularity/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_mass_regularity/stdout.txt",
+      "bytes": 16988,
+      "sha256": "4b3c1c4702c7ffcfa87f9efa96acec0f3b3230a59a2df03b391d61851bab6000"
+    },
+    {
+      "path": "precision/mutation_outgoing_height/PRELAUNCH.json",
+      "bytes": 32828,
+      "sha256": "f4630e8c5d135d0fc94289b4f6602122b6ad5c7e4cd8fdd8585f1252a44b6234"
+    },
+    {
+      "path": "precision/mutation_outgoing_height/RESULT.json",
+      "bytes": 654,
+      "sha256": "a6472b29b94fe2e3dd215c650ef4553524d4f358fae7f51297ae224842175223"
+    },
+    {
+      "path": "precision/mutation_outgoing_height/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_outgoing_height/stdout.txt",
+      "bytes": 18443,
+      "sha256": "03829cfbc0395e733727d35705b4f5760102e675083392bc37e87a25efaecf7c"
+    },
+    {
+      "path": "precision/mutation_profile_budget/PRELAUNCH.json",
+      "bytes": 32745,
+      "sha256": "a151f87ef00540afeaeccf408b073be199a6463fb8749f9d0fe56673c1379d0f"
+    },
+    {
+      "path": "precision/mutation_profile_budget/RESULT.json",
+      "bytes": 652,
+      "sha256": "fec284e52163e4f81f2a18c2252691453d804e40f205e6de9f51f7b5337ab39d"
+    },
+    {
+      "path": "precision/mutation_profile_budget/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_profile_budget/stdout.txt",
+      "bytes": 16580,
+      "sha256": "72272d6ba7b6d8614bda7f0b96b9ed7e99cbe634341773803ac04114dc244173"
+    },
+    {
+      "path": "precision/mutation_relative_range/PRELAUNCH.json",
+      "bytes": 32746,
+      "sha256": "dc61149405b4b6ade311d76a3c8a0e225ebbc5ff08c4d45003f4c1867bfcb64e"
+    },
+    {
+      "path": "precision/mutation_relative_range/RESULT.json",
+      "bytes": 652,
+      "sha256": "ff57ccb11b31ac5c29add42655dc68fdbab6248addc3c021df05bcfbf3e9710b"
+    },
+    {
+      "path": "precision/mutation_relative_range/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_relative_range/stdout.txt",
+      "bytes": 16473,
+      "sha256": "129bbfbc5a23390cd591b16fad81416b12e37148c2f82f423bcbb66a3ea3f0c3"
+    },
+    {
+      "path": "precision/mutation_shifted_interval/PRELAUNCH.json",
+      "bytes": 32911,
+      "sha256": "3e4579bd7b4412a07a9ada1950818f8a4380f4b8a6fb4d8379746433022b3a56"
+    },
+    {
+      "path": "precision/mutation_shifted_interval/RESULT.json",
+      "bytes": 656,
+      "sha256": "49c125499171e24baad76b16f4f5bbc3f5384c5c6e1cec5731ff5dc16f32b22b"
+    },
+    {
+      "path": "precision/mutation_shifted_interval/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "precision/mutation_shifted_interval/stdout.txt",
+      "bytes": 16692,
+      "sha256": "a4ff690832a8435353e73f2e600f6fd9aa44c2c159cf441c0f9b2defb1417117"
+    },
+    {
+      "path": "precision/run_validation.py.txt",
+      "bytes": 4823,
+      "sha256": "544bf5f47e340a7140bd7056f95a362218538a4f26c133d96bf22d3a9bc56747"
+    },
+    {
+      "path": "runner_cache.py.txt",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "structured/CANONICAL_RESULT.json",
+      "bytes": 114875,
+      "sha256": "7db9a6ab1189766eca6c958680218872fdebdbef0b793f13e44f4f0190a4cc23"
+    },
+    {
+      "path": "structured/EXECUTED_INPUT_MANIFEST.json",
+      "bytes": 35166,
+      "sha256": "e8e4747f6431fb4dcb9f74051fca8a948a5ec2c0818d3c69309c173525425f2f"
+    },
+    {
+      "path": "structured/EXECUTED_RUNNER.py.txt",
+      "bytes": 57899,
+      "sha256": "1c2bb464fa53f011d7f3db525c7f35101c169294567d7bddea2289162ba4e361"
+    },
+    {
+      "path": "structured/MUTATION_SUMMARY.json",
+      "bytes": 578,
+      "sha256": "7e65d74af46fc2c0edf7076d0ee80fa7a18dfb8cc772ca4056dbce5aa998c5ff"
+    },
+    {
+      "path": "structured/RESOURCE_PLAN.md",
+      "bytes": 483,
+      "sha256": "a4d5a71f38f253d100e4c48c82d8d8db133e158c5d4f313102d224abd28ed4d3"
+    },
+    {
+      "path": "structured/canonical/PRELAUNCH.json",
+      "bytes": 30438,
+      "sha256": "c125737f2b430605f547bcf918be769d9934195229586d5170d240fc4f5ff616"
+    },
+    {
+      "path": "structured/canonical/RESULT.json",
+      "bytes": 618,
+      "sha256": "027d8f74d419650d80b30fa22aeb31a5884b609fe65bccc5339a80c82335a055"
+    },
+    {
+      "path": "structured/canonical/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "structured/canonical/stdout.txt",
+      "bytes": 485,
+      "sha256": "bb4c7cf3897569dd070277b541476a866204d2ba04c90190c78761f3df28e60e"
+    },
+    {
+      "path": "structured/canonical_wrapper.py.txt",
+      "bytes": 616,
+      "sha256": "b11feb47ae3ca8618b89769d6cde99f53cf73114de340fc4338336bc9b6753c8"
+    },
+    {
+      "path": "structured/mutation_correlated_range/PRELAUNCH.json",
+      "bytes": 34863,
+      "sha256": "feb3be8001bb598b4d725055da76d70449b7365f19e87a33f9765eea3a8c0f20"
+    },
+    {
+      "path": "structured/mutation_correlated_range/RESULT.json",
+      "bytes": 652,
+      "sha256": "b353ccefdcf9ac83f87d89adc497012575b661afc189203493894ca83a75c692"
+    },
+    {
+      "path": "structured/mutation_correlated_range/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "structured/mutation_correlated_range/stdout.txt",
+      "bytes": 19046,
+      "sha256": "ace8b4920d52be75739aa8166819fc56e472188333a8c57b9a6a38ade633575e"
+    },
+    {
+      "path": "structured/mutation_double_occupation/PRELAUNCH.json",
+      "bytes": 34950,
+      "sha256": "aa133e947cbf5747d3e270fd17db9b15d51937bad670d7d5aa773d3c8b749cee"
+    },
+    {
+      "path": "structured/mutation_double_occupation/RESULT.json",
+      "bytes": 654,
+      "sha256": "47ef8249679b5aca711e7e322b398cc51052a7ce06f12d36ee32c570eb87a294"
+    },
+    {
+      "path": "structured/mutation_double_occupation/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "structured/mutation_double_occupation/stdout.txt",
+      "bytes": 19225,
+      "sha256": "8975eec2bd73d3132fe403ffc4ce99ebf579be1b5c40e8f51bb36e54b29ec9a0"
+    },
+    {
+      "path": "structured/mutation_halfangle/PRELAUNCH.json",
+      "bytes": 34246,
+      "sha256": "3c1d10b9618397a6068154753beeaf54f55b5f7b12229e2e05af7425d7932851"
+    },
+    {
+      "path": "structured/mutation_halfangle/RESULT.json",
+      "bytes": 638,
+      "sha256": "227f19413c5e16a82f49fb4dbe9f85b6bcc90f2f10beec1d8da9929683c80ae1"
+    },
+    {
+      "path": "structured/mutation_halfangle/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "structured/mutation_halfangle/stdout.txt",
+      "bytes": 19260,
+      "sha256": "1f9a8da67dd1de28aeeb1571843abe16c17f4e983923ad66ceebf7a890fc0269"
+    },
+    {
+      "path": "structured/mutation_normalized_profile/PRELAUNCH.json",
+      "bytes": 35037,
+      "sha256": "627c369675151892040ccccf348fb3bb3d15854fa21655c7dffa4a2194770d47"
+    },
+    {
+      "path": "structured/mutation_normalized_profile/RESULT.json",
+      "bytes": 656,
+      "sha256": "422b67ed2494a07cda3c7970aefe11e5dddbfa01f5a94b1bd9575748b9410ed6"
+    },
+    {
+      "path": "structured/mutation_normalized_profile/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "structured/mutation_normalized_profile/stdout.txt",
+      "bytes": 19305,
+      "sha256": "7adccaa1b6b0b57fffee86c49d00a48d2fe87fdd6c1d6aa5c0fa0c68ee1f99ae"
+    },
+    {
+      "path": "structured/run_validation.py.txt",
+      "bytes": 4391,
+      "sha256": "b096eb0d946c8da7346c561da517337f985144035bab1d15fb8822244fe648ee"
+    }
+  ]
+}

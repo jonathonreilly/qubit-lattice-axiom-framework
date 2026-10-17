@@ -1743,3 +1743,189 @@ The drafting agent authored the mass assessment and Schur interface and checked 
 The current canonical runner completed 331 scalar/local arithmetic checks with 76 declared inputs, exit0 in 0.07642698287963867 seconds, 86449 scientific stdout bytes and empty stderr. Seventeen new mathematical mutations under Python -O failed at their intended named checks after input integrity succeeded. Four current integrity rejection cases (tamper, symlink file, symlink ancestor, nonregular input) and inert import also passed. These are coverage probes, not independent proofs. Historical mutated cases remain historical and were not rerun.
 
 The bounded prelaunch plan records CPU10seconds, file16MiB, canonical inner30/outer45seconds and mutation10seconds wall limits; no memory cap. Runtime binary/version, runner/helper/wrapper and every declared input were pinned before execution. Full streams, receipts, exact mutations and reviewed code are frozen in `outputs/real_endpoint_autonomous_output_2026_10_17_larger_coupling_validation/`. No numerical dynamics, spectral integration, full904-matrix or huge-device computation was performed. No physical axiom or editable prompt changed. This evidence is not an audit verdict or full combined-main landing-pipeline run.
+
+## Compensated endpoint precision against the fixed nominal waveform
+
+The following checked conditional contract allows specified static endpoint errors while keeping the nominal complex target fixed. It uses the same supplied background, old K/W, source state, reference planes, lead dispersion and physical-identification premises as the preceding larger-coupling result. It does not cover independent errors in all physical coefficients or provide a mechanism that enforces compensation.
+
+Fix nominal kappa0=10^-8, E0=E(k0), sigma=10^-6, v=.025, T=4e21 and M=2e23. Write alpha0=kappa0^2/J. The nominal target beta_0(t) is the positive-normalized half-line packet built from the nominal f0, including its propagation phase exp(i113k). It will not be redefined to follow the perturbed device.
+
+### Permitted physical perturbations
+
+Install the actual positive terms
+
+    Q(-kappa_a), (E0+Delta-kappa_a)n_e, (J-kappa_a)n_end,
+    kappa_a=r kappa0,
+    1-10^-5<=r<=1, |Delta|<=10^-5 alpha0.             (P1)
+
+The emitter diagonal is E0+Delta and the background endpoint diagonal stays exactly2J. Positivity follows from E0>.0048, J>.03 and |Delta|<3.34e-20. The pre-emitter background, c_new, old K/W and geometry are exactly unchanged. Delta is a local emitter detuning, not a common energy shift. The seed is still the stipulated real emitter/blank-clock/source product state.
+
+Equation(P1) is a correlated implementation premise. If the bond alone changes while the two compensation coefficients remain nominal, both emitter and endpoint diagonals change by delta_kappa=kappa_a-kappa0. The background then changes as well. Such independent coefficient errors are outside this contract. The one-sided r range also keeps kappa_a within the previously checked upper coupling limit.
+
+### Exact fixed-target comparison
+
+On the unchanged real band let x=E(k)-E0 and z=exp(ik). The nominal and actual scalar-reference coefficients are
+
+    D0=x+alpha0 z, Da=x-Delta+r^2 alpha0 z,
+    F0=i kappa0 E' z^21 rho_g/[sqrt(2pi)J D0],
+    Fa=i r kappa0 E' z^21 rho_g/[sqrt(2pi)J Da],
+    p_l=integral_I |F_l|^2 dk, f_l=F_l/sqrt(p_l), l=0,a.
+
+The exact COMPLEX ratio is Fa/F0=rD0/Da. All propagation/scattering phases are retained. With
+
+    eta=2.5[|r^2-1|+|Delta|/alpha0],
+    epsilon=(|r-1|+eta)/(1-eta),
+
+sin(k)>.4 gives |Da-D0|<=eta|D0| and |Fa/F0-1|<=epsilon. In(P1), eta<=7.5e-5 and epsilon<8.501e-5. Set g=Fa/sqrt(p0). Then ||g-f0||_2<=epsilon, ||g||_2=sqrt(pa/p0), and positive normalization costs exactly
+
+    ||fa-g||_2=|1-||g||_2|<=epsilon.
+
+Consequently
+
+    ||fa-f0||_2<=2epsilon<.000171.                 (P2)
+
+There is no extra reciprocal normalization factor and no arbitrary constant-phase optimization. This is a finite perturbation estimate, not a linear sensitivity approximation or a whole-line Lorentzian substitution.
+
+Let B_l(t) be the unnormalized restriction to output sites m>=0 of the Fourier packet with f_l exp(-itE), and q_l its negative-tail norm. The same Fourier evolution and restriction are contractions. Since ||B_l||=sqrt(1-q_l^2), the normalized targets obey
+
+    ||beta_a(t)-beta_0(t)||
+      <=2epsilon+q_a(t)^2+q_0(t)^2.               (P3)
+
+Each positive-normalization cost is 1-sqrt(1-q_l^2)<=q_l^2. No physical state is postselected. Both packets evolve with the same lead energies; no factor exp(-iDelta t) is attached to the target. The comparison tensors the same old unitary and blank-output isometry, so no old-column overlap factor is needed in(P3). Arbitrary old/reference input amplitudes are never conjugated.
+
+### Uniform full-device margins under the perturbations
+
+The full actual-device error relative to beta_a must be checked separately from(P2). The following substitutions retain every term of the preceding spectral and complete-output argument.
+
+**Real Schur and local synthesis.** The seven complementary emitter directions now have bare gap at least .18-|Delta|, so
+
+    ||Dcc^-1||<=1/(.18-|Delta|-35kappa_a^2)<6.
+
+Real Delta cancels from Dj-Dref,a. The relative denominator bound, outgoing row comparison and ImDj>12kappa_a^2 therefore retain their forms. All eight emitter coordinates remain in the inverse. The local matching invertibility, spectral jump and synthesis proof applies on the same band. In particular the full complex ratio bound remains
+
+    |Fj/Fa-omega_p|<2e-13+750|k-k0|,
+
+including its fixed d0, closed-channel and complementary-emitter terms.
+
+**Actual shifted mass.** Center energy at the actual seed mean E0+Delta. Put d=v sigma=2.5e-8 and d_a=d-|Delta|. For either sign of Delta,
+
+    [Delta-d_a,Delta+d_a] subset [-d,d] subset E(I)-E0,
+    d_a>d(1-2e-12).
+
+Thus the full interval [-d_a,d_a] in u=E-E0-Delta is covered by the unchanged band proof. The center constants A=35, B=17 and b_min=12 remain valid: the real endpoint estimate |Gjj+z/J|<.000801 and sin(k)<.5 hold throughout I. The complete complementary product-rule derivative remains <36000, so the conservative L=10^6 is available. The reference retains L_ref<1334.
+
+The mass comparison hypotheses hold uniformly, including
+
+    kappa_a^2 L(1+A/b_min)<4e-10<1/2,
+    d_a>kappa_a^2 A.
+
+Since kappa_a^2>=.9999800001e-16, the logarithm argument remains <2.084e7<(8/3)^18. Hence the comparison factor H remains <46. Using pi>3, the tail term is at most
+
+    34e-16/[3*(2.5e-8*(1-2e-12)-35e-16)]<4.534e-8.
+
+The actual regularity contribution is <3.067e-9; the reference contribution is <4.1e-12. Therefore
+
+    actual exterior mass<4.85e-8,
+    actual exterior amplitude<.000221,
+    1-pa<4.54e-8, A_f<17kappa_a.                  (P4)
+
+These bounds subtract a lower bound on captured local mass from the normalized global seed measure. All exterior point and other spectral mass remains charged.
+
+**Restricted moment and static cost.** The moment still uses the fixed band center k0. With alpha_a=kappa_a^2/J,
+
+    |Delta|/alpha_a<1.000021e-5,
+    |x|/|Da|<=1+(1+|Delta|/alpha_a)/sin(k)<3.500026.
+
+Together with v|k-k0|<=|x| and 1/sqrt(pa)<1.0000001, this gives |k-k0||fa|<145kappa_a and ||(k-k0)fa||_2<.21kappa_a. The complex mismatch delta_j remains <1.6e-6. Retaining the within-parity preparation factor and orthogonal outgoing fibers gives the same complete static ceiling
+
+    1.415*(.000221+.0000016+.0000000454)+.0000032
+       =.000318243241<.000319.                   (P5)
+
+**Complex strip and complete localized column.** The background disks and operator Cauchy estimate are unchanged. The extra real shift leaves the disk complementary inverse <6 and exact self-energy oscillation <.000038. At h=10^-18,
+
+    .062h/kappa_a^2<.000621,
+    ImDj(x-iy)>6kappa_a^2.
+
+Thus the full Schur bottom bound .18/kappa_a^2 remains valid. The source-specific norm contains sqrt(1+kappa_a^2P_*^2)/kappa_a; its growth relative to nominal is at most 1/r<1.000011. The nominal displayed complete-C estimate before rounding is <4.43e20, so C_b<5e20 is preserved. On both cutoff sides, subtracting |Delta| still leaves |Dj|>2.49e-8, yielding ||De^-1||<5e7 and C_s<1.4e13. All physical core/source/emitter coordinates and closed tails remain in C. Its holomorphy follows from the same algebraic open-wave subtraction and uniformly convergent closed tails, without off-real unitarity.
+
+The actual conjugate coefficient has bottom bound .088/kappa_a and side bound 44kappa_a/sigma. Its exact denominator imaginary part is still
+
+    -sin(x)[2J sinh(y)+(kappa_a^2/J)exp(-y)].
+
+Real Delta does not change this sign. The localized bottom at T grows by at most 1.000011 to <6.601e-9; both sides together remain <=9.24e-8. The old-column factor is already included. Hence complete localized error stays <10^-7 for all t>=T.
+
+**Incoming and target tails.** The incoming contour keeps height sigma/2, the corrected exp(-y) denominator and both sides, giving error <10^-10. The actual target uses h_o=kappa_a^2/(4J^2)>2.5e-14. Its imaginary denominator margin is unchanged; cutoff real-part margins remain >.024sigma after subtracting |Delta|. The bottom prefactor rises by less than 1.000021, while (vT-113)h_o remains >2.4e6. The same fourth-power exponential estimate and side bound <5.2e-11 give q_a<10^-10. The published nominal q_0<10^-10 is unchanged. The full phase113 and the positive-normalization cost q_a^2 are retained.
+
+It follows from(P5), localized, incoming and normalization terms that the actual device remains within .000320 of its own actual beta_a for every t>=T. This conclusion is established by the explicit margins above, not presumed from continuity.
+
+### Complete fixed-nominal bound and finite device
+
+Combining that full-device estimate with(P3),
+
+    complete infinite operator error against beta_0
+      <.000320+.000171+2e-20<.000492              (P6)
+
+for every t>=4e21. The comparator includes exp(-ic_new t), the fixed nominal common beta_0, blank emitter/other-clock/source registers and exp(-itK)W on the literal old system, including an arbitrary passive reference. The conservative sum pays the actual target normalization twice; it remains explicit and negligible.
+
+The spectral-radius estimate gains at most |Delta| and remains <18. The compensated graph and first omitted distance M+23 are unchanged. For the one fixed device with M=2e23 output sites and M+116 qubits, the same finite transfer is <.001 on [T,2T]. The target is still the same embedded infinite nominal target, without finite-waveform renormalization. Thus
+
+    complete finite operator error<.001492
+       for t in[4e21,8e21].                      (P7)
+
+Unhalved trace ceilings are .000984 and .002984. The operator bounds meet the historical .0013/.0023 operator tolerances, but do not preserve the sharper actual-parameter .000320/.001320 pair. No permanent finite storage follows.
+
+If the actual preparation isometry differs from the stipulated one in operator norm by at most epsilon_seed, add epsilon_seed once to(P6) and(P7). Unitary evolution preserves that difference, including passive references. This clause does not supply a native seed or an error guarantee for an unspecified thermal preparation.
+
+### Supplied-coefficient scope and verification limits
+
+Under the specified correlation, relative coupling tolerance10^-5 enters without a factor T. The detuning tolerance is still 10^-5 kappa0^2/J<3.34e-20 in supplied units. A relative bond error10^-5 alone is approximately10^-13 at this coupling; leaving compensation nominal would create a much larger emitter detuning and change the background. The correlation is a substantive supplied control assumption, not a derived fabrication or calibration mechanism.
+
+Errors in J, c_new, old K/W, shared-source or other background coefficients are not covered. They can alter propagation, old relative phases or the implemented operation over T. This contract makes no assertion about time-dependent errors, repeated use, robustness of physical identification, native state/coefficient supply, capture, reset or permanent storage. The result is a sufficient conditional model bound, not measured performance or an optimal precision threshold.
+
+The source proposal is `endpoint_static_precision/PROPOSAL.md`, SHA256 `233364359dc3e79b54debf331eb75e6454f093cdbec36c36e1ba4fe17acc1381`. The bounded positive-contract review is `endpoint_static_precision_check/REVIEW.md`, SHA256 `40f7649071bc0eeb192a7832c64510c4185d39d31b6c27e9064a77fd5fa6a5f5`. They use the preceding canonical note at SHA256 `bc75051b87d62e65ea7953f11c2fcd320f1a9ab853c7a346f32e9314859cb1a5`, associated by root with milestone `97ccd9f9bee7e69af123395fcb04d40812885ac4`.
+
+The proposal author previously authored the mass assessment and Schur-strip proposal; the positive-contract reviewer previously authored the weighted-profile proposal and reviewed reused components. These are same-model, source-exposed analytical checks with explicit inherited premises. This section is drafting after that review, not another verification or a new independent component proof. The analytical proposal and reviews performed no scientific execution. The separate scoped corroboration below was subsequently run; it is not spectral integration, full-matrix dynamics, a numerical robustness scan or an independent proof. Historical runner evidence is not relabeled as testing these perturbations. The proposal's separate negative reference illustration is not part of this section or its claimed positive-contract coverage. No retained/audit status or new physical axiom is claimed.
+
+### Structured positive-block corollary with a fixed emitter baseline
+
+This corollary changes the supplied error-direction contract, not the graph, seed or runtime. Put t0=kappa0/J, alpha0=kappa0²/J and e_base=E0-alpha0>0. Supply on the adjacent emitter/endpoint qubits the real number-conserving positive block
+
+    B(t)=e_base n_e+J[|chi_t><chi_t|+(1+t²)|11><11|],
+    chi_t=t|10>-|01>,  t=r t0,  1-4e-6<=r<=1.
+
+Its vacuum value is zero, its one-excitation matrix is [[e_base+Jt²,-Jt],[-Jt,J]], and its double-occupation value is e_base+J(1+t²). Thus on the entire two-qubit space it equals
+
+    Q(-kappa_a)+(E0+Delta-kappa_a)n_e+(J-kappa_a)n_end,
+    kappa_a=r kappa0, Delta=(r²-1)alpha0.
+
+At r=1 it equals the original full local block, including the double-occupation value E0+J. The endpoint background remains exactly unchanged. For this range, |Delta|<8e-6 alpha0 and r is inside(P1), so every actual-device margin already checked above applies. No new scattering or runtime transfer is assumed.
+
+The correlation gives a sharper fixed-target comparison. Exactly,
+
+    Da=D0+(r²-1)alpha0(z-1), Fa/F0=rD0/Da.
+
+Since |z-1|/sin(k)=1/cos(k/2)<1.1 on I, set eta_r=1.1|r²-1|<8.8e-6. Then
+
+    |Fa/F0-1| <= (|r-1|+eta_r)/(1-eta_r),
+    ||fa-f0|| <= 2(|r-1|+eta_r)/(1-eta_r)<.000026.
+
+The non-strict intermediate inequality includes r=1, where its two sides vanish. Positive normalization and fixed complex phase use the same argument as(P2). Combining with actual-to-own-waveform error<.000320, both negative-tail normalization costs<1e-20 and unchanged finite transfer<.001 gives
+
+    infinite complete operator error<.000347 for t>=4e21,
+    finite complete operator error<.001347 on[4e21,8e21], M=2e23.
+
+Unhalved trace ceilings are .000694 and .002694. The old evolution, scalar phase, all outputs and arbitrary passive references remain those in(P6)-(P7). An isometry-norm seed error again enters once.
+
+This is a supplied fixed-baseline and structured-parameter contract. The positive baseline e_base and J remain exact; generic block scaling, baseline error and arbitrary independent matrix-entry errors are not covered. A relative t error of4e-6 is an absolute t error below1.34e-12. Supplying this direction does not establish a native mechanism that protects the baseline. The benefit is explicit quadratic correlation of emitter detuning with coupling, without retuning the baseline to the actual t.
+
+The first structural proposal used (1-t)² in the |11> completion and incorrectly claimed full-block nominal equality. That would differ by -2kappa0 on |11>. The corrected1+t² restores the full operator identity; the original and correction record remain research provenance. Its fixed-spectrum alternative is not used in this corollary. The corrected source and this exact corollary were selectively checked in the reports identified below. These source-exposed checks are not blind review or formal audit.
+
+Source identities: corrected structural proposal d07e86f57b1247877e8f6abcc08efceaec18ac60c03b5cacce17ff178a7575b8, correction record ee6df01851795fd3adfd4c693cd387299b5ae791271af90f757931e69db17eb2, scoped baseline review8bd60218b0200888ee7ab32fe6836ac2d1c64e4eac5f8a72fec3660b2fa46c11, integration review8e5d58e9bc9a5e6bb67cb91fb89b276d6c69c5b282e8ce11897f62691d24d65a. Root identified the full-space defect before the reviews; the correction was exposed. The baseline reviewer also reviewed the reused positive contract; the integration reviewer checked the complete appended positive section and the exact corrected corollary. Their coverage is selective and explicitly source-exposed. No fixed-spectrum or independently varying strength theorem is asserted.
+
+### Precision and structured-block execution evidence
+
+The final canonical runner executed397 scoped local/algebraic checks with exit0 in .08623790740966797seconds,104972stdoutbytes and empty stderr. The preceding positive-precision stage executed383checks and nine mathematical mutations; the final structured-block stage added fourteen checks and four mathematical mutations. All thirteen new mutations failed their intended named family after input integrity passed, under Python optimization. The full-double-occupation mutation restores the original incorrect polynomial and is detected. The two stages retain separate source/runtime/input identities; earlier mutation suites were not rerun or recounted as new coverage.
+
+Each launch imposed CPU10seconds and output-file16MiB limits; the canonical runner had inner30/outer45second wall limits and mutations10seconds. No memory cap was applied. Prelaunch records bind the interpreter binary/version, runner, helper, wrapper and declared inputs. The final runner matched its prelaunch bytes. The current input integrity implementation is unchanged; the previous four rejection cases and inert-import test remain historical evidence, not newly rerun cases.
+
+Full precision-stage and structured-stage receipts, exact executed sources, mutation definitions and streams are preserved in outputs/real_endpoint_autonomous_output_2026_10_17_precision_validation. The arithmetic uses exact Fraction substitutions and local polynomial identities. The continuum identities, uniform envelopes, spectral synthesis, complete-output interpretation and supplied physical premises rest on the separately exposed analytical arguments and checks. No full-device simulation, large matching matrix, independent retained audit or full combined-main landing pipeline was executed for this update.

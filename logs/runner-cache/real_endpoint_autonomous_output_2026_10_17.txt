@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: 93cc122aa253fc2a6fc26748826561bdf61343227e36a9f1df02f4f248e5b991
-input_fingerprint_sha256: e02686e1fb716b32b630c94008a8ea1acfd5e18b3a8a519a9e39dd74568251da
+runner_sha256: 1c2bb464fa53f011d7f3db525c7f35101c169294567d7bddea2289162ba4e361
+input_fingerprint_sha256: ef901b4dfb48bc046c90519930d6185afaf98dcf0ffab395b164fb0de9fafaa6
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 SCOPE: exact local finite algebra and conditional analytical-bound arithmetic.
@@ -343,6 +343,72 @@ PASS arithmetic: LC infinite unhalved trace ceiling
 PASS arithmetic: LC finite unhalved trace ceiling
 PASS arithmetic: LC sufficient onset improvement ratio
 PASS arithmetic: LC sufficient length improvement ratio
+PASS arithmetic: PR positive coupling lower endpoint
+PASS arithmetic: PR emitter occupation worst endpoint
+PASS arithmetic: PR endpoint occupation worst endpoint
+PASS arithmetic: PR absolute detuning ceiling
+PASS arithmetic: PR ratio perturbation denominator
+PASS arithmetic: PR ratio perturbation ceiling
+PASS arithmetic: PR finite complex ratio error
+PASS arithmetic: PR fixed phase normalized profile
+PASS arithmetic: PR shifted interval positive
+PASS arithmetic: PR shifted interval lower margin
+PASS arithmetic: PR shifted mass denominator
+PASS arithmetic: PR shifted mass lemma smallness
+PASS arithmetic: PR shifted logarithm argument
+PASS arithmetic: PR shifted logarithm integral
+PASS arithmetic: PR shifted mass tail
+PASS arithmetic: PR shifted actual missing mass
+PASS arithmetic: PR shifted actual residual norm squared
+PASS arithmetic: PR shifted reference missing mass
+PASS arithmetic: PR actual positive band normalization
+PASS arithmetic: PR actual inverse normalization squared
+PASS arithmetic: PR actual reference coefficient squared
+PASS arithmetic: PR relative actual detuning
+PASS arithmetic: PR detuned moment denominator ratio
+PASS arithmetic: PR detuned restricted moment amplitude
+PASS arithmetic: PR detuned restricted moment norm squared
+PASS arithmetic: PR actual complex profile mismatch
+PASS arithmetic: PR real complementary gap positive
+PASS arithmetic: PR real complementary inverse
+PASS arithmetic: PR disk complementary gap positive
+PASS arithmetic: PR disk complementary inverse
+PASS arithmetic: PR exact complex selfenergy oscillation
+PASS arithmetic: PR strip energy loss relative
+PASS arithmetic: PR strip resonant margin loss
+PASS arithmetic: PR strip complementary gap positive
+PASS arithmetic: PR strip complementary inverse
+PASS arithmetic: PR bottom full emitter scaled inverse
+PASS arithmetic: PR side full Schur denominator
+PASS arithmetic: PR side full emitter inverse
+PASS arithmetic: PR source update factor squared
+PASS arithmetic: PR complete localized bottom C
+PASS arithmetic: PR complete localized side C
+PASS arithmetic: PR localized bottom error
+PASS arithmetic: PR complete localized error
+PASS arithmetic: PR scalar cutoff denominator
+PASS arithmetic: PR scalar outgoing height lower
+PASS arithmetic: PR outgoing exponential argument lower
+PASS arithmetic: PR actual target negative tail
+PASS arithmetic: PR actual incoming error
+PASS arithmetic: PR complete actual waveform error
+PASS arithmetic: PR complete fixed nominal infinite
+PASS arithmetic: PR perturbed physical radius
+PASS arithmetic: PR complete fixed nominal finite
+PASS arithmetic: RB baseline positive
+PASS arithmetic: RB full double occupation polynomial
+PASS arithmetic: RB nominal double occupation
+PASS arithmetic: RB nominal emitter diagonal
+PASS arithmetic: RB hopping parameterization
+PASS arithmetic: RB relative range within positive contract
+PASS arithmetic: RB detuning within positive contract
+PASS arithmetic: RB halfangle denominator positive
+PASS arithmetic: RB halfangle ratio squared
+PASS arithmetic: RB correlated ratio denominator
+PASS arithmetic: RB fixed complex normalized profile
+PASS arithmetic: RB complete infinite bound
+PASS arithmetic: RB complete finite bound
+PASS arithmetic: RB absolute orientation parameter error
 {
   "checks": [
     {
@@ -2330,6 +2396,402 @@ PASS arithmetic: LC sufficient length improvement ratio
       "name": "LC sufficient length improvement ratio",
       "relation": "=",
       "rhs": "250000"
+    },
+    {
+      "lhs": "0",
+      "name": "PR positive coupling lower endpoint",
+      "relation": "<",
+      "rhs": "99999/10000000000000"
+    },
+    {
+      "lhs": "7505276776783/750527677675800000000",
+      "name": "PR emitter occupation worst endpoint",
+      "relation": "<",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "1/100000000",
+      "name": "PR endpoint occupation worst endpoint",
+      "relation": "<",
+      "rhs": "3752638388379/125000000000000"
+    },
+    {
+      "lhs": "1/30021107107032000000",
+      "name": "PR absolute detuning ceiling",
+      "relation": "<",
+      "rhs": "167/5000000000000000000000"
+    },
+    {
+      "lhs": "299999/4000000000",
+      "name": "PR ratio perturbation denominator",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "299999/4000000000",
+      "name": "PR ratio perturbation ceiling",
+      "relation": "<",
+      "rhs": "3/40000"
+    },
+    {
+      "lhs": "30909/363609091",
+      "name": "PR finite complex ratio error",
+      "relation": "<",
+      "rhs": "8501/100000000"
+    },
+    {
+      "lhs": "61818/363609091",
+      "name": "PR fixed phase normalized profile",
+      "relation": "<",
+      "rhs": "171/1000000"
+    },
+    {
+      "lhs": "0",
+      "name": "PR shifted interval positive",
+      "relation": "<",
+      "rhs": "1876319194187/75052767767580000000"
+    },
+    {
+      "lhs": "499999999999/20000000000000000000",
+      "name": "PR shifted interval lower margin",
+      "relation": "<",
+      "rhs": "1876319194187/75052767767580000000"
+    },
+    {
+      "lhs": "7/2000000000000000",
+      "name": "PR shifted mass denominator",
+      "relation": "<",
+      "rhs": "1876319194187/75052767767580000000"
+    },
+    {
+      "lhs": "47/120000000000",
+      "name": "PR shifted mass lemma smallness",
+      "relation": "<",
+      "rhs": "1/2"
+    },
+    {
+      "lhs": "208333372499800001/9999800001",
+      "name": "PR shifted logarithm argument",
+      "relation": "<",
+      "rhs": "18014398509481984/387420489"
+    },
+    {
+      "lhs": "823/18",
+      "name": "PR shifted logarithm integral",
+      "relation": "<",
+      "rhs": "46"
+    },
+    {
+      "lhs": "42529901734962/938159465751156406735",
+      "name": "PR shifted mass tail",
+      "relation": "<",
+      "rhs": "2267/50000000000"
+    },
+    {
+      "lhs": "68110386144898319470981/1407239198626734610102500000000",
+      "name": "PR shifted actual missing mass",
+      "relation": "<",
+      "rhs": "97/2000000000"
+    },
+    {
+      "lhs": "68110386144898319470981/1407239198626734610102500000000",
+      "name": "PR shifted actual residual norm squared",
+      "relation": "<",
+      "rhs": "48841/1000000000000"
+    },
+    {
+      "lhs": "31900304762094317698087144327/703619599313367305051250000000000000",
+      "name": "PR shifted reference missing mass",
+      "relation": "<",
+      "rhs": "227/5000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "PR actual positive band normalization",
+      "relation": "<",
+      "rhs": "703619567413062542956932301912855673/703619599313367305051250000000000000"
+    },
+    {
+      "lhs": "1",
+      "name": "PR actual inverse normalization squared",
+      "relation": "<",
+      "rhs": "70361970813698306176511502392474562489415372855673/70361959931336730505125000000000000000000000000000"
+    },
+    {
+      "lhs": "1",
+      "name": "PR actual reference coefficient squared",
+      "relation": "<",
+      "rhs": "2863579107713355343558617564807326070655746031248144174780326577/1832342706545227356904296875000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "100000/9999800001",
+      "name": "PR relative actual detuning",
+      "relation": "<",
+      "rhs": "1000021/100000000000"
+    },
+    {
+      "lhs": "69999100007/19999600002",
+      "name": "PR detuned moment denominator ratio",
+      "relation": "<",
+      "rhs": "1750013/500000"
+    },
+    {
+      "lhs": "5424930793035525054250000/37525633359864962588379",
+      "name": "PR detuned restricted moment amplitude",
+      "relation": "<",
+      "rhs": "145"
+    },
+    {
+      "lhs": "58859748218450101540897806139958930886125000/1408173159059010160803272136549417299385847641",
+      "name": "PR detuned restricted moment norm squared",
+      "relation": "<",
+      "rhs": "441/10000"
+    },
+    {
+      "lhs": "7875001/5000000000000",
+      "name": "PR actual complex profile mismatch",
+      "relation": "<",
+      "rhs": "1/625000"
+    },
+    {
+      "lhs": "0",
+      "name": "PR real complementary gap positive",
+      "relation": "<",
+      "rhs": "1350949819816413731281281347/7505276776758000000000000000"
+    },
+    {
+      "lhs": "7505276776758000000000000000/1350949819816413731281281347",
+      "name": "PR real complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "0",
+      "name": "PR disk complementary gap positive",
+      "relation": "<",
+      "rhs": "422171818692483641747951461/2345398992736875000000000000"
+    },
+    {
+      "lhs": "2345398992736875000000000000/422171818692483641747951461",
+      "name": "PR disk complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "625000026999973/17361093750000000000",
+      "name": "PR exact complex selfenergy oscillation",
+      "relation": "<",
+      "rhs": "19/500000"
+    },
+    {
+      "lhs": "6200000/9999800001",
+      "name": "PR strip energy loss relative",
+      "relation": "<",
+      "rhs": "621/1000000"
+    },
+    {
+      "lhs": "37962885506873110010799991/57869155099537031250000000000",
+      "name": "PR strip resonant margin loss",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "0",
+      "name": "PR strip complementary gap positive",
+      "relation": "<",
+      "rhs": "337737454951652021676779964960251/1876319194189500000000000000000000"
+    },
+    {
+      "lhs": "1876319194189500000000000000000000/337737454951652021676779964960251",
+      "name": "PR strip complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "2500000000000009000000154449/15000000000000000000000000000",
+      "name": "PR bottom full emitter scaled inverse",
+      "relation": "<",
+      "rhs": "9/50"
+    },
+    {
+      "lhs": "249/10000000000",
+      "name": "PR side full Schur denominator",
+      "relation": "<",
+      "rhs": "93811043753061184870583570216559689058308881/3752638388379000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "3752638951245262518367341059999999998626534349853286/93811043753061184870583570216559689058308881",
+      "name": "PR side full emitter inverse",
+      "relation": "<",
+      "rhs": "50000000"
+    },
+    {
+      "lhs": "16810001",
+      "name": "PR source update factor squared",
+      "relation": "<",
+      "rhs": "16818201"
+    },
+    {
+      "lhs": "4921200000066666000044444/11111",
+      "name": "PR complete localized bottom C",
+      "relation": "<",
+      "rhs": "500000000000000000000"
+    },
+    {
+      "lhs": "12309000000004",
+      "name": "PR complete localized side C",
+      "relation": "<",
+      "rhs": "14000000000000"
+    },
+    {
+      "lhs": "11/1666650000",
+      "name": "PR localized bottom error",
+      "relation": "<",
+      "rhs": "6601/1000000000000"
+    },
+    {
+      "lhs": "8249923/83332500000000",
+      "name": "PR complete localized error",
+      "relation": "<",
+      "rhs": "1/10000000"
+    },
+    {
+      "lhs": "3/125000000",
+      "name": "PR scalar cutoff denominator",
+      "relation": "<",
+      "rhs": "250175581529768897101230373/10007030698826148828000000000000000"
+    },
+    {
+      "lhs": "1/40000000000000",
+      "name": "PR scalar outgoing height lower",
+      "relation": "<",
+      "rhs": "77158950625/2781687876332985371308176"
+    },
+    {
+      "lhs": "2400000",
+      "name": "PR outgoing exponential argument lower",
+      "relation": "<",
+      "rhs": "7715895062499999991281038579375/2781687876332985371308176"
+    },
+    {
+      "lhs": "31544566918431239210220922776910363335977243379054434369945526261353474601769694208609053510116765793149752302158145428571/609383106381014521137983864470345852656621297214862307995614650210041950383346788368323754404269082849697406491691445779212500000000",
+      "name": "PR actual target negative tail",
+      "relation": "<",
+      "rhs": "1/10000000000"
+    },
+    {
+      "lhs": "6015625000000000000000000000000000000000000000561/116210937500000000000000000000000000000000000000000000000000",
+      "name": "PR actual incoming error",
+      "relation": "<",
+      "rhs": "1/10000000000"
+    },
+    {
+      "lhs": "15515810710105903269788298965341547749925765121810721465570294098646939955474980117198460453278292917969055703978642875848263734070973655889576341675862779481633132994289139273376515739945292453693998946257731035977629820683007799874037321312315671511133660894442675206333048104204814235599029855331/48739394857462950478622739824054318994663535620280698354515436761711470553299234961444231546045247507332650376506797437518065583859111816610297734020206345515856876079594642975368251452217891866743568985531292317011255070334085987797383795247020507812500000000000000000000000000000000000000000000000000",
+      "name": "PR complete actual waveform error",
+      "relation": "<",
+      "rhs": "1/3125"
+    },
+    {
+      "lhs": "3148547599167911091835776290456086536729540169943441114232141294448323079966519629445848101268241642061780843919995083658900372782771966892036316976437880481484735683610650192886279098104232105395926540639921444928231237795556969347206476722046961040740007722317040533244455936108255563311034417564404249231152364679479116527674058481/6447257714175858560232892835976196098008091953574470933210451660268114724079496909444481236151127483394244641393904884017346602568212227090054169932572041916665564639479653771829611396533574441710851624129582106049836981726300317800939888536194938680295862809543905314058065414428710937500000000000000000000000000000000000000000000000000",
+      "name": "PR complete fixed nominal infinite",
+      "relation": "<",
+      "rhs": "123/250000"
+    },
+    {
+      "lhs": "2063491935900116609814591391/117269949636843750000000000",
+      "name": "PR perturbed physical radius",
+      "relation": "<",
+      "rhs": "18"
+    },
+    {
+      "lhs": "9595805313343769652068669126432282634737632123517912047442592954716437804046016538890329337419369125456025485313899967676246975350984193982090486909009922398150300323090303964715890494637806547106778164769503550978068219521857287148146365258241899721035870531860945847302521350536966500811034417564404249231152364679479116527674058481/6447257714175858560232892835976196098008091953574470933210451660268114724079496909444481236151127483394244641393904884017346602568212227090054169932572041916665564639479653771829611396533574441710851624129582106049836981726300317800939888536194938680295862809543905314058065414428710937500000000000000000000000000000000000000000000000000",
+      "name": "PR complete fixed nominal finite",
+      "relation": "<",
+      "rhs": "373/250000"
+    },
+    {
+      "lhs": "0",
+      "name": "RB baseline positive",
+      "relation": "<",
+      "rhs": "9012668719313536786083233882870570883894599/1601871323172684701678027597927238539002798320"
+    },
+    {
+      "lhs": "(Fraction(89222842631193398678501826467499729904952306204199609041, 2502923942457319846371918121761310217191872375000000000000), Fraction(0, 1), Fraction(3752638388379, 125000000000000))",
+      "name": "RB full double occupation polynomial",
+      "relation": "=",
+      "rhs": "(Fraction(89222842631193398678501826467499729904952306204199609041, 2502923942457319846371918121761310217191872375000000000000), Fraction(0, 1), Fraction(3752638388379, 125000000000000))"
+    },
+    {
+      "lhs": "23776029928037558770975344974090481737534979/666977119407044641178639513175125000000000000",
+      "name": "RB nominal double occupation",
+      "relation": "=",
+      "rhs": "23776029928037558770975344974090481737534979/666977119407044641178639513175125000000000000"
+    },
+    {
+      "lhs": "30021107107032000000000000000/5335816955256357129429116105401",
+      "name": "RB nominal emitter diagonal",
+      "relation": "=",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "1/100000000",
+      "name": "RB hopping parameterization",
+      "relation": "=",
+      "rhs": "1/100000000"
+    },
+    {
+      "lhs": "99999/100000",
+      "name": "RB relative range within positive contract",
+      "relation": "<",
+      "rhs": "249999/250000"
+    },
+    {
+      "lhs": "499999/62500000000",
+      "name": "RB detuning within positive contract",
+      "relation": "<",
+      "rhs": "1/100000"
+    },
+    {
+      "lhs": "0",
+      "name": "RB halfangle denominator positive",
+      "relation": "<",
+      "rhs": "10171628574695759002501102781685894599/5335816955256357129429116105401000000"
+    },
+    {
+      "lhs": "10671633910512714258858232210802000000/10171628574695759002501102781685894599",
+      "name": "RB halfangle ratio squared",
+      "relation": "<",
+      "rhs": "121/100"
+    },
+    {
+      "lhs": "5499989/625000000000",
+      "name": "RB correlated ratio denominator",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "15999978/624994500011",
+      "name": "RB fixed complex normalized profile",
+      "relation": "<",
+      "rhs": "13/500000"
+    },
+    {
+      "lhs": "10799910900176000624994500011/31249725000550000000000000000000",
+      "name": "RB complete infinite bound",
+      "relation": "<",
+      "rhs": "347/1000000"
+    },
+    {
+      "lhs": "42049635900726000624994500011/31249725000550000000000000000000",
+      "name": "RB complete finite bound",
+      "relation": "<",
+      "rhs": "1347/1000000"
+    },
+    {
+      "lhs": "5/3752638388379",
+      "name": "RB absolute orientation parameter error",
+      "relation": "<",
+      "rhs": "67/50000000000000"
     }
   ],
   "dense_dimension_max": 4,
@@ -2363,6 +2825,15 @@ PASS arithmetic: LC sufficient length improvement ratio
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/ARITHMETIC_BLOCK.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/CHECK_MAP.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_SECTION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_ARITHMETIC_DRAFT.py.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_COROLLARY_QUALIFIED.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_baseline_check__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_QUALIFICATION.md.txt",

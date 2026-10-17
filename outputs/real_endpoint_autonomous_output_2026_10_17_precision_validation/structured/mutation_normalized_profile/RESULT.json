@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.12544774962589145,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_rankone_validation/mutation_normalized_profile/stdout.txt",
+      "bytes": 19305,
+      "sha256": "7adccaa1b6b0b57fffee86c49d00a48d2fe87fdd6c1d6aa5c0fa0c68ee1f99ae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_rankone_validation/mutation_normalized_profile/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+# Positive endpoint precision contract: bounded analytical review
+
+Finding: sections 1–5 and 7 support the proposed fixed-nominal-target bounds <.000492 infinite and <.001492 finite, conditional on the exact correlated compensation and unchanged supplied background premises. No correction is required in the positive contract. Independent bond/onsite errors do not satisfy its hypotheses. Section 6 was visible in the full source read but is excluded from this verdict; no full-device negative conclusion is certified here.
+
+## Sources, independence and limits
+
+Proposal read completely: endpoint_static_precision/PROPOSAL.md, SHA256 233364359dc3e79b54debf331eb75e6454f093cdbec36c36e1ba4fe17acc1381. Canonical note: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md, SHA256 bc75051b87d62e65ea7953f11c2fcd320f1a9ab853c7a346f32e9314859cb1a5. Both hashes refreshed. The complete larger-coupling argument at this unchanged note revision was previously read and checked for integration; its component hypotheses are reused, not recertified from original ancestor certificates. The supplied commit association 97ccd9f9bee7e69af123395fcb04d40812885ac4 was not independently verified with Git here.
+
+This is an independent reconstruction of the new positive finite-perturbation argument, with source exposure. I authored the older weighted-profile proposal and reviewed several earlier components and their composition. It is not blind/model-diverse checking or another independent origin of those old results. Applicable previously read guidance remains in force; model/effort unchanged. No scientific execution, inherited program, numerical integral, parameter scan, new agent or W/Git/PR/checkpoint/prompt edit occurred. Only source reading/hashing and this report write were performed.
+
+## 1. Physical perturbation and fixed target
+
+The actual hopping and two occupation terms sum to emitter diagonal E0+Delta and endpoint diagonal 2J exactly. Their positivity follows from E0>.0048, J>.03, kappa_a<=1e-8 and |Delta|<3.34e-20. The pre-emitter G, dispersion, old K/W and scalar c_new are unchanged. The actual seed is the same stipulated product vector; its spectral measure changes with the Hamiltonian.
+
+The nominal target keeps f0 and its phase113 at kappa0=1e-8. The actual intermediate comparison uses fa. Common real Delta shifts each emitter internal coordinate; it is not a global energy shift and creates no separate exp(-iDelta t) multiplying the final lead waveform. The spectral evolution uses the same E(k) in both comparisons.
+
+If only the hopping changes while compensation is held nominal, both affected diagonal entries change by delta_kappa. The endpoint background is then different. Such a perturbation cannot be inserted into this theorem by relabeling its hopping as a relative coupling error. This distinction is explicit and necessary.
+
+## 2. Complex ratio, overlap and normalization
+
+Cancellation of the identical complex numerator factors gives Fa/F0=r D0/Da exactly. With the specified conjugate-linear-first inner product,
+
+    <f0,fa>=r sqrt(p0/pa) integral |f0|^2 D0/Da dk.
+
+The real part determines the norm difference for the fixed phase. The logarithmic derivative signs are correct: differentiating D with respect to Delta produces -1, hence partial_Delta F=F/D; differentiating in kappa gives 1/kappa-2kappa z/(JD). Since p'=2p Re<ell> under the normalized density, the normalized derivative subtracts exactly Re<ell>. None of these differential identities is used as an unbounded finite-step approximation.
+
+For eta as defined in the proposal, |Da-D0|<=eta|D0| follows from ImD0=alpha0 sin k and sin k>.4. Thus
+
+    |r D0/Da-1|<= (|r-1|+eta)/(1-eta)=epsilon.
+
+No imaginary or phase error is discarded. Taking g=Fa/sqrt(p0) gives ||g-f0||<=epsilon and ||g||=sqrt(pa/p0)>0. Positive normalization has exact cost ||g-fa||=| ||g||-1 |<=epsilon. Hence ||fa-f0||<=2epsilon; no 1/(1-epsilon) factor is missing.
+
+Fourier evolution and output restriction are contractions for the common dk convention. Each normalized half-line target differs from its unnormalized restriction by 1-sqrt(1-q_l^2)<=q_l^2. This proves the proposed beta_a/beta_0 comparison with the fixed complex phase. The waveform error tensors the same old unitary and blank-output isometry, so it introduces no old-column overlap factor. The actual-device comparison already pays all its other output coordinates.
+
+## 3. Uniform numerical perturbation range
+
+For r in [.99999,1], r^2>=.9999800001 and |r^2-1|<=2e-5. With |Delta|/alpha0<=1e-5,
+
+    eta<=7.5e-5,
+    epsilon<=8.5e-5/(1-7.5e-5)<8.501e-5,
+    2epsilon<.00017002<.000171.
+
+Furthermore |Delta|/alpha_a<=1e-5/.9999800001<1.000021e-5. All denominator comparisons stay strictly away from zero. The interval is one-sided in r, so the source's upper coupling range is not silently widened.
+
+## 4. Actual real spectrum, mass and restricted moment
+
+The complementary bare gap loses at most |Delta|. Its actual inverse is bounded by 1/(.18-|Delta|-35 kappa_a^2)<6. Detuning cancels exactly in Dj-Dref,a, leaving the inherited relative correction and outgoing row argument valid. ImDref,a=kappa_a^2 sin k/J is unchanged by real Delta; therefore ImDj>12 kappa_a^2. The same matching invertibility, local jump and synthesis proof applies, including exclusion of in-band singular mass. All seven complementary directions are retained.
+
+The actual seed mean shifts to E0+Delta. With d=2.5e-8 and d_a=d-|Delta|, [Delta-d_a,Delta+d_a] is indeed contained in [-d,d] for either sign of Delta. The latter lies inside the original physical band. Since |Delta|<3.34e-20, d_a>d(1-2e-12). Centering the exact mass lemma at this shifted mean therefore uses only already certified energies.
+
+The center values satisfy the same A=35, B=17, b_min=12 with margin: the endpoint approximation and sin k<.5 apply throughout I, not merely at k0. Detuning in Dcc does not change its energy derivative, and the product-rule estimate stays <36000. The reference derivative remains <1334. The conservative smallness hypothesis kappa_a^2*10^6*(1+35/12)<4e-10 still holds.
+
+For the logarithm use kappa_a^2>=.9999800001e-16 and d_a<=d. Its argument remains <2.084e7, well below (8/3)^18; hence log<18 and H<46 uniformly. The proposed worst-case tail <4.534e-8, actual regularity term <3.067e-9 and reference regularity term <4.1e-12 imply actual missing mass <4.85e-8 and 1-pa<4.54e-8. Thus actual exterior amplitude <.000221. This is a lower-bound-on-captured-mass argument; exterior point and other spectral components remain charged. It does not posit a global density approximation.
+
+The restricted moment correctly retains the nominal-center x although the actual resonance is detuned. From x=Da+Delta-alpha_a z,
+
+    |x|/|Da|<=1+(1+|Delta|/alpha_a)/sin k<3.500026.
+
+Combining with v|k-k0|<=|x| gives the moment bound. The amplitude coefficient is less than (.062/.06)*(3.500026/.025)*1.0000001<145, preserving ||(k-k0)fa||<.21 kappa_a. The same complex-profile bound therefore gives delta_j<1.6e-6. Positive actual-reference normalization and all actual omitted mass are included in the unchanged .000319 static ceiling, with the original preparation and outgoing aggregation rules.
+
+## 5. Actual complex strip and complete C
+
+Background disks and source column continuation are unchanged. The disk complementary inverse stays <6 after subtracting |Delta|. The exact Schur correction and operator Cauchy estimate therefore still give self-energy oscillation <.000038. Since
+
+    .062h/kappa_a^2<=.00062/.9999800001<.000621,
+
+combination with the real imaginary margin leaves >6 kappa_a^2. This is the same independent complex bridge, not an inference from real regularity alone. The bottom full-emitter inverse remains <.18/kappa_a^2.
+
+In the source norm the potentially increasing factor is sqrt(1+kappa_a^2 P_*^2)/kappa_a=sqrt(kappa_a^-2+P_*^2). Its growth is at most 1/r<1.000011. The original displayed C bottom bound before rounding is below 4.43e20, so the new value is safely <5e20. This verifies the slack rather than merely invoking continuity. Side denominators lose at most |Delta| and stay >2.49e-8; the complementary and rank-one corrections remain negligible with the stated bounds, so the emitter side inverse stays <5e7. The update factor cannot increase as kappa_a decreases; C_s<1.4e13 follows. Closed tails and algebraic off-real open-wave subtraction are unchanged, with no unitarity assumed off-real.
+
+## 6. Scalar tails, complete budget and finite window
+
+A_f<17 kappa_a follows from the new pa bound. Real detuning does not change the imaginary parts of Dbar or Dref on either scalar contour. The bottom coefficient .088/kappa_a remains valid, while the cutoff bound 44 kappa_a/sigma survives subtraction of |Delta|. Thus the localized bottom rises by at most 1/r<1.000011 to <6.601e-9. The two sides stay <=9.24e-8. Their sum is <1e-7, with the within-parity factor already included.
+
+The incoming contour still uses sigma/2, its exact exp(-y) sign and both sides. Its coefficient decreases with kappa_a and its denominator side margin persists, so the <1e-10 conclusion survives. For the target, h_o=kappa_a^2/(4J^2)>2.5e-14 even at the lower endpoint: J<.031 already gives this inequality. The imaginary margin proof is unchanged. The bottom prefactor increases by at most 1/r^2<1.000021; the exponent still exceeds 2.4e6 at T. The fourth-power exponential estimate and side <5.2e-11 therefore retain q_a<1e-10. The nominal q0 retains its published bound. All estimates decrease for later t.
+
+Consequently the actual-to-own-waveform E_a remains <.000320 infinite. Adding the fixed-target difference gives
+
+    error <.000320+.000171+2e-20<.000492.
+
+This deliberately loose sum includes the second charge for actual positive target normalization. It is safe and retains a margin of almost 1e-6.
+
+The one-head radius estimate gains at most |Delta| and still lies below 18; the smaller hopping cannot worsen its kappa contribution. Geometry, first omitted distance M+23 and old/source terms are unchanged. The same polynomial transfer adds <.001 for the one fixed M=2e23 device on [T,2T]. Equivalently use the actual finite E_a<.001320 before adding the common waveform difference. Either route gives <.001492 and no finite all-future claim. Unhalved trace ceilings are .000984 and .002984, separately from the stated historical operator tolerances.
+
+## 7. Interpretation
+
+A perturbation of the stipulated preparation isometry in operator norm enters once by unitarity, including arbitrary passive references. The seed statement is correctly conditional on that norm, not a native-supply or thermal-state assertion.
+
+The absence of a factor T in this contract follows from exact spectral-profile comparison at a fixed nominal target. It does not relax errors in J, c_new, K/W or background/source terms, nor time-dependent errors or repeated-use accumulation. Correlated compensation is a substantive supplied premise; the proposal clearly says it is not obtained natively. The optional overlap calculation is a sharpening opportunity, not an outstanding obligation for the conservative positive bound just checked.
+
+No mathematical correction requested for sections 1–5 and 7. Section 6's separated negative illustration and any claim about a full device at its much larger detuning remain outside this review. No retained/audit status, numerical verification or editable prompt change is claimed.

@@ -1,0 +1,2 @@
+# Refinement verification
+Bounded Fraction/local-complex algebra only. CPU10s,file16MiB,canonical inner30s/outer45s; mutations10s wall. No memory cap. Runtime binary/version and exact sources bound before launch. No spectral integrals, dynamics, huge matrices or parameter sweep. Existing383 checks preserved; corrected full-qubit polynomial identity and structured baseline contract challenged. Prior precision mutations remain separate evidence. No old mutated-case rerun implied.

@@ -91,6 +91,15 @@ AUDIT_INPUT_PATHS = (
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface_check/REVIEW.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition/PROPOSAL.md.txt',
     'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition_check/REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_SECTION.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/POSITIVE_REVIEW.md.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/ARITHMETIC_BLOCK.py.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/CHECK_MAP.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_COROLLARY_QUALIFIED.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_precision_publication__RANKONE_ARITHMETIC_DRAFT.py.txt',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_structural_precision__CORRECTIONS.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_baseline_check__REVIEW.md',
+    'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/compensated_precision/endpoint_rankone_integration_check__REVIEW.md',
 )
 PARAMETERS_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/parameters.json'
 MANIFEST_PATH = 'outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json'
@@ -709,6 +718,131 @@ def check_arithmetic(params):
     eq('LC finite unhalved trace ceiling',2*F('.001320'),F('.002640'))
     eq('LC sufficient onset improvement ratio',F(10**27,lc_T),250000)
     eq('LC sufficient length improvement ratio',F(5*10**28,lc_M),250000)
+
+    # Positive precision contract ONLY: scalar substitutions after analytical proof.
+    # Insert after the LC block and before its return. No execution at drafting.
+    # The physical compensation, ratio identity, spectral synthesis, monotonic
+    # envelopes and contour identities are external premises; see CHECK_MAP.md.
+    pr_rel=F('1e-5'); pr_det=F('1e-5')
+    pr_rlo=1-pr_rel; pr_klo=pr_rlo*lc_kap; pr_khi=lc_kap
+    pr_Dmax=pr_det*lc_kap**2/J
+    lt('PR positive coupling lower endpoint',0,pr_klo)
+    lt('PR emitter occupation worst endpoint',pr_khi+pr_Dmax,E0)
+    lt('PR endpoint occupation worst endpoint',pr_khi,J)
+    lt('PR absolute detuning ceiling',pr_Dmax,F('3.34e-20'))
+    # r<=1 is the stipulated upper endpoint, not inferred from an arithmetic row.
+    pr_eta=(1-pr_rlo**2+pr_det)/F('.4')
+    lt('PR ratio perturbation denominator',pr_eta,1)
+    lt('PR ratio perturbation ceiling',pr_eta,F('7.5e-5'))
+    pr_eps=(pr_rel+pr_eta)/(1-pr_eta)
+    lt('PR finite complex ratio error',pr_eps,F('8.501e-5'))
+    pr_profile=2*pr_eps  # positive normalization lemma, not modulus-only overlap
+    lt('PR fixed phase normalized profile',pr_profile,F('.000171'))
+    # Center at E0+Delta. For either sign the contained halfwidth is d-|Delta|.
+    pr_da=lc_d-pr_Dmax
+    lt('PR shifted interval positive',0,pr_da)
+    lt('PR shifted interval lower margin',lc_d*(1-F('2e-12')),pr_da)
+    lt('PR shifted mass denominator',35*pr_khi**2,pr_da)
+    lt('PR shifted mass lemma smallness',pr_khi**2*10**6*(1+F(35,12)),F(1,2))
+    # Mixed endpoints give an upper envelope: numerator up, denominator down.
+    pr_logarg=1+(lc_d+35*pr_khi**2)/(12*pr_klo**2)
+    lt('PR shifted logarithm argument',pr_logarg,F(8,3)**18)
+    pr_H=2*18+F(10,3)*F(35,12)  # pi<10/3; e>8/3 inherited
+    lt('PR shifted logarithm integral',pr_H,46)
+    pr_tail=34*pr_khi**2/(3*(pr_da-35*pr_khi**2))
+    lt('PR shifted mass tail',pr_tail,F('4.534e-8'))
+    pr_actual_mass=pr_tail+2*pr_khi**2*10**6*46/3
+    pr_ref_mass=pr_tail+2*pr_khi**2*1334*46/3
+    lt('PR shifted actual missing mass',pr_actual_mass,F('4.85e-8'))
+    lt('PR shifted actual residual norm squared',pr_actual_mass,F('.000221')**2)
+    lt('PR shifted reference missing mass',pr_ref_mass,F('4.54e-8'))
+    pr_palow=1-pr_ref_mass
+    lt('PR actual positive band normalization',0,pr_palow)
+    lt('PR actual inverse normalization squared',1,pr_palow*F('1.0000001')**2)
+    lt('PR actual reference coefficient squared',1,17**2*6*J**2*pr_palow)
+    # Real detuning stays in the restricted moment about the NOMINAL k0.
+    pr_det_alpha=pr_Dmax*J/pr_klo**2
+    lt('PR relative actual detuning',pr_det_alpha,F('1.000021e-5'))
+    pr_xratio=1+(1+pr_det_alpha)/F('.4')
+    lt('PR detuned moment denominator ratio',pr_xratio,F('3.500026'))
+    pr_moment_amp=lc_Ep/(2*J)*(pr_xratio/lc_vel)*F('1.0000001')
+    lt('PR detuned restricted moment amplitude',pr_moment_amp,145)
+    lt('PR detuned restricted moment norm squared',2*lc_sig*pr_moment_amp**2,F('.21')**2)
+    pr_delta=F('2e-13')+750*F('.21')*pr_khi
+    lt('PR actual complex profile mismatch',pr_delta,F('1.6e-6'))
+    # Complement and full emitter: real Delta also enters all seven coordinates.
+    pr_real_gap=F('.18')-pr_Dmax-35*pr_khi**2
+    lt('PR real complementary gap positive',0,pr_real_gap)
+    lt('PR real complementary inverse',1/pr_real_gap,6)
+    pr_disk_gap=F('.18')-pr_Dmax-lc_Ep*lc_rho-36*pr_khi**2
+    lt('PR disk complementary gap positive',0,pr_disk_gap)
+    lt('PR disk complementary inverse',1/pr_disk_gap,6)
+    pr_sosc=36*(lc_h/lc_rho)/(1-lc_h/lc_rho)+2*pr_khi**2*36**2*6
+    lt('PR exact complex selfenergy oscillation',pr_sosc,F('.000038'))
+    lt('PR strip energy loss relative',lc_Ep*lc_h/pr_klo**2,F('.000621'))
+    lt('PR strip resonant margin loss',lc_Ep*lc_h/pr_klo**2+pr_sosc,6)
+    pr_strip_gap=F('.18')-pr_Dmax-lc_Ep*lc_h-pr_khi**2*13100
+    lt('PR strip complementary gap positive',0,pr_strip_gap)
+    lt('PR strip complementary inverse',1/pr_strip_gap,6)
+    pr_rank=1+pr_khi**4*6**2*13100**2
+    lt('PR bottom full emitter scaled inverse',6*pr_khi**2+pr_rank/6,F('.18'))
+    pr_side_D=lc_vel*lc_sig-pr_Dmax-F('.061')*lc_h**2-pr_khi**2*13100-pr_khi**4*6*13100**2
+    lt('PR side full Schur denominator',F('2.49e-8'),pr_side_D)
+    lt('PR side full emitter inverse',6+pr_rank/pr_side_D,5*10**7)
+    lt('PR source update factor squared',1+pr_khi**2*F('4.1e11')**2,4101**2)
+    # sqrt(1+k_a^2 P^2)<=4101, 1/k_a<=1/klo give conservative full C.
+    pr_Cb=3*2*10**9*(1+F('.18')*4101/pr_klo)+4
+    pr_Cs=3*2*10**9*(1+pr_khi*4101*5*10**7)+4
+    lt('PR complete localized bottom C',pr_Cb,5*10**20)
+    lt('PR complete localized side C',pr_Cs,F('1.4e13'))
+    pr_bottom=F('1.5')*lc_sig*F('.088')/pr_klo*5*10**20/F(10**30)
+    pr_side=F('1.5')*44*pr_khi/lc_sig*F('1.4e13')/(lc_vel*lc_T)
+    lt('PR localized bottom error',pr_bottom,F('6.601e-9'))
+    lt('PR complete localized error',pr_bottom+pr_side,F('1e-7'))
+    # Both scalar cutoffs; hi dominates the energy curvature for either strip.
+    pr_cut=lc_vel*lc_sig-pr_Dmax-F('.061')*lc_hi**2-pr_khi**2/J/(1-lc_hi)
+    lt('PR scalar cutoff denominator',F('.024')*lc_sig,pr_cut)
+    pr_holo=pr_klo**2/(4*J**2)
+    lt('PR scalar outgoing height lower',F('2.5e-14'),pr_holo)
+    lt('PR outgoing exponential argument lower',F('2.4e6'),lc_s*pr_holo)
+    pr_q=88*pr_khi/(lc_sig*F('1.7e10'))+F('.012')*lc_sig/pr_klo**2*24/(lc_s*pr_holo)**4
+    lt('PR actual target negative tail',pr_q,F('1e-10'))
+    pr_in=88*pr_khi/(lc_sig*F('1.7e10'))+88*pr_khi/F('7e-4')*24/(lc_vel*lc_T*lc_hi)**4
+    lt('PR actual incoming error',pr_in,F('1e-10'))
+    # Common waveform error pays no sqrt(2); preparation retains its factor.
+    pr_static=F('1.415')*(F('.000221')+F('.0000016')+F('.0000000454'))+2*F('.0000016')
+    pr_actual=pr_static+pr_bottom+pr_side+pr_in+pr_q**2
+    lt('PR complete actual waveform error',pr_actual,F('.000320'))
+    pr_fixed=pr_actual+pr_profile+pr_q**2+lc_target_tail**2
+    lt('PR complete fixed nominal infinite',pr_fixed,F('.000492'))
+    lt('PR perturbed physical radius',F('9.5')+4*J+F('7.926')+F('.05')+pr_khi+pr_Dmax,18)
+    # Radius18, geometry, time window, and LC transfer rows are reused unchanged.
+    lt('PR complete fixed nominal finite',pr_fixed+F('.001'),F('.001492'))
+
+    # Structured baseline corollary: exact polynomial full-block identities.
+    rb_t0=lc_kap/J; rb_alpha=lc_kap**2/J; rb_base=E0-rb_alpha
+    rb_rel=F('4e-6'); rb_rlo=1-rb_rel
+    lt('RB baseline positive',0,rb_base)
+    # Coefficients in t: vacuum, two one-particle diagonals, hopping, |11>.
+    rb_rankone_double=(rb_base+J,F(0),J)
+    rb_compensated_double=(rb_base+J,2*J-J-J,J)
+    eq('RB full double occupation polynomial',rb_rankone_double,rb_compensated_double)
+    eq('RB nominal double occupation',rb_base+J*(1+rb_t0**2),E0+J)
+    eq('RB nominal emitter diagonal',rb_base+J*rb_t0**2,E0)
+    eq('RB hopping parameterization',J*rb_t0,lc_kap)
+    lt('RB relative range within positive contract',pr_rlo,rb_rlo)
+    rb_drel=1-rb_rlo**2
+    lt('RB detuning within positive contract',rb_drel,pr_det)
+    lt('RB halfangle denominator positive',0,1+C0-lc_sig)
+    lt('RB halfangle ratio squared',2/(1+C0-lc_sig),F('1.1')**2)
+    rb_eta=F('1.1')*rb_drel
+    lt('RB correlated ratio denominator',rb_eta,1)
+    rb_profile=2*(rb_rel+rb_eta)/(1-rb_eta)
+    lt('RB fixed complex normalized profile',rb_profile,F('.000026'))
+    rb_fixed=F('.000320')+rb_profile+2*F('1e-20')
+    lt('RB complete infinite bound',rb_fixed,F('.000347'))
+    lt('RB complete finite bound',rb_fixed+F('.001'),F('.001347'))
+    lt('RB absolute orientation parameter error',rb_rel*rb_t0,F('1.34e-12'))
 
     return {'checks': rows,
             'larger_coupling':str(lc_kap), 'larger_coupling_onset':str(lc_T),

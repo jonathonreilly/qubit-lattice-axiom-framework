@@ -97,7 +97,7 @@ blocks:
     exact: ["48 qubits/site corner-graph BKSF with repetition halves: dim 3, fermion", "genuine linear O action on the full Hilbert space (site perm + on-site CZ + Z fixes + R-coboundary; free link orbits)", "pair test axis +1, edge -1 (w2+w1^2); twisted by W on w1-odd: all +1 (w2)", "fermion PSG, 2O lift, shell E1/2+E5/2+2G3/2, chiral cluster E1/2 ground doublet gap 2.54"]
     conditional: "lambda = theta eta localization; w2 needs the twisted (number-conserving) realization"
     open: ["mobile doublet ground state (band minimum leaves symmetric momenta in scanned family)", "dynamics selection", "framework derivation of corners/fluxes"]
-    independent_check: "in progress"
+    independent_check: "items 1,2,4 CONFIRMED (exact operator identity 576/576; 252+216 creators; full checks); corrections applied: octants also avoid C4, E1/2 vs E5/2 is twist convention, link-orbit wording, title narrowed (spin-1/2 class under the U(1)-twisted action), twist not on-site; new caveat: space-group fractionalization differs from spin-1/2 (C4 T C4^-1 T^-1 = -1, bond-centred C2 lambda=-1)"
 scheduled_tasks: {hourly: "deleted 2026-10-17T15:46Z", final: "fired 2026-10-17T15:45Z (wrap-up done)"}
 campaign_status: "closed 2026-10-17T15:46Z; C1-C15 landed on main (a3fbc858bc and earlier); C16 in PR #9671"
 next_action: "C17 independent check; then a mobile E1/2 doublet (band minimum at a symmetric momentum) and the U(1)/spin-charge selection of the twisted realization"

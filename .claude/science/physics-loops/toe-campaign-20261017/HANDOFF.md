@@ -31,7 +31,8 @@ adopted; every result is unaudited bounded support with a declared model.
   - The pair test gives w2 + w1^2.
   - With the twist W on the odd elements (natural for number-conserving dynamics), all nine C2 give +1. That is w2, the spin-1/2 class.
 - **The local doublet.** A chiral on-site term makes an E1/2 doublet the cluster ground state.
-- **Open.** A mobile doublet as the lowest band state; dynamics selection.
+- **Caveat (independent check).** Only the point group about a site matches spin-1/2. The full space group differs: C4 T C4^-1 T^-1 = -1 on the fermion, and bond-centred C2 give -1.
+- **Open.** A mobile doublet as the lowest band state; dynamics selection; a flux pattern whose space-group fractionalization is that of spin-1/2.
 
 ## C16: why the cube-invariant realizations came out spinless; the six-direction shell
 

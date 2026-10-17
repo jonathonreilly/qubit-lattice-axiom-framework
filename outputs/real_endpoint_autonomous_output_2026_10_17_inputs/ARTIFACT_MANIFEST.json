@@ -386,6 +386,91 @@
       "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/weighted_strip/weighted_strip_composition_check/REVIEW.md.txt",
       "bytes": 8604,
       "sha256": "03bff8954690e0fa1dd827989cc0514a740ff53bf7d8077963e498d5fd09ac25"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
+      "bytes": 6547,
+      "sha256": "3fd18e576fb394caea2b93272c4b430d782ec5c4663a9e961c8e3205d179952f"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_QUALIFICATION.md.txt",
+      "bytes": 2240,
+      "sha256": "6001c9ddf96c54f49d86bfaf373f8c5f0d8aee3ece18a6a477f240ec9e1863b0"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge/PROPOSAL.md.txt",
+      "bytes": 2224,
+      "sha256": "0f627a4c3390ab007be46794b37a2daa21399dc61de7f23417e4082d2051e892"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge_check/REVIEW.md.txt",
+      "bytes": 6856,
+      "sha256": "b46c9a561316415aac0d35344a4ada6ec0325c4fabef1e7f49a4e0fdf3c65c49"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity/PROPOSAL.md.txt",
+      "bytes": 15106,
+      "sha256": "1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity_check/REVIEW.md.txt",
+      "bytes": 14313,
+      "sha256": "c97208c7542cffffabc46f9445056332336126274d9d957fa7830be6c2538d77"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface/PROPOSAL.md.txt",
+      "bytes": 5021,
+      "sha256": "7d1cb4ba6fa19a2529f1453ab5a471207dfa1156d801cbaa944bc639ab191676"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface_check/REVIEW.md.txt",
+      "bytes": 10550,
+      "sha256": "c89dbf5a567e4c2c38db93c3cc2ccba95456f0942073d94121ec87432594efc2"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_assessment/ASSESSMENT.md.txt",
+      "bytes": 12574,
+      "sha256": "f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_check/REVIEW.md.txt",
+      "bytes": 11218,
+      "sha256": "eef72a0d61cb9ba79756fea1492aa507027a7b515b77e04c1230751cf47d4712"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/larger_coupling_composition_check/REVIEW.md.txt",
+      "bytes": 13303,
+      "sha256": "f2094c29156d63152bddb4792e27e822902274f4d18b1d1b1f577b85cb949646"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment/PROPOSAL.md.txt",
+      "bytes": 2675,
+      "sha256": "f76d55f9c51f582cf519bc025d5ae54e51d514023eaab7def6993c1cde782762"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment_check/REVIEW.md.txt",
+      "bytes": 6985,
+      "sha256": "e9ce634ae0b1981507e0e354ccc386c485fc1cbc5e4f0343fad7c7a439b6a686"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface/PROPOSAL.md.txt",
+      "bytes": 15837,
+      "sha256": "16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface_check/REVIEW.md.txt",
+      "bytes": 12469,
+      "sha256": "11346d3c20ca4ae749b3c55750e8e0ec4144a9b4e9f82b3018c093f3a9516f18"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition/PROPOSAL.md.txt",
+      "bytes": 3828,
+      "sha256": "79fe84afc4a244c346161a75b2850d81790f1c4add88009e6761d7cc7c939491"
+    },
+    {
+      "path": "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition_check/REVIEW.md.txt",
+      "bytes": 7545,
+      "sha256": "063966229b2712e636f04b9c77f52c1faefa2264d3888084bcb857a735100cdf"
     }
   ]
 }

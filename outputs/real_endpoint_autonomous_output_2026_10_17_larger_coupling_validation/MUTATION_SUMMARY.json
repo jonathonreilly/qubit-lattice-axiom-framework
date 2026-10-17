@@ -1,0 +1,104 @@
+[
+  {
+    "name": "disk_radius",
+    "expected_failure": "LC disk filter Neumann hypothesis",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "two_site_row",
+    "expected_failure": "LC disk outgoing row squared",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "closed_distance",
+    "expected_failure": "LC disk endpoint correction input",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "reflection_cancellation",
+    "expected_failure": "LC background cancellation derivative",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "mass_L",
+    "expected_failure": "LC actual exterior mass",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "mass_log",
+    "expected_failure": "LC mass logarithm argument",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "bridge_complement",
+    "expected_failure": "LC bridge Schur correction",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "background_width",
+    "expected_failure": "LC bridge matrix oscillation",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "source_trace",
+    "expected_failure": "LC background source jump trace",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "side_edge",
+    "expected_failure": "LC strip side aggregation expansion",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "onset",
+    "expected_failure": "LC strip bottom exponential argument",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "target_pole",
+    "expected_failure": "LC scalar outgoing sinh envelope",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "moment_width",
+    "expected_failure": "LC restricted moment square coefficient",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "preparation_factor",
+    "expected_failure": "LC complete static arithmetic",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "outgoing_factor",
+    "expected_failure": "LC complete static arithmetic",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "finite_length",
+    "expected_failure": "LC finite output length",
+    "detected": true,
+    "exit_code": 1
+  },
+  {
+    "name": "trace_factor",
+    "expected_failure": "LC finite unhalved trace ceiling",
+    "detected": true,
+    "exit_code": 1
+  }
+]

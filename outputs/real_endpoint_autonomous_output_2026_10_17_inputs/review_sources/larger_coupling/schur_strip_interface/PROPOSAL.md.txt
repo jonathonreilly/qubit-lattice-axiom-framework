@@ -1,0 +1,204 @@
+# Background and emitter Schur continuation interface
+
+Status: proposed conditional continuation lemma and resource assessment. This is not a checked larger-coupling apparatus theorem. The background estimates below follow from the pinned source and its matching identities; the explicitly named complex scalar self-energy and larger-coupling static interfaces remain obligations. No scalar regularity derivation assigned to another agent is duplicated here.
+
+## Sources and exposure
+
+Primary current source: `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md`, SHA256 `d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9`. I read the complete new physical core strip, scalar target strip and weighted complex-profile arguments, and reread the selected-column Schur identities. Earlier unchanged emitter/spectral premises were already read. This is source-exposed development, not independent review. The source's fixed-kappa checked result is T=10^27, error .000058/.001058; that result is not promoted to a coupling family.
+
+Current AGENTS SHA256 `febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0` and SCIENCE_WORKFLOW SHA256 `71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3` match the previously read guidance. The selected model/effort is unchanged. No scientific execution, new agent, W/Git/PR/checkpoint/prompt edit occurred. Only source reads, hashes and this proposal write were performed.
+
+The authored spectral assessment `../endpoint_spectral_mass_assessment/ASSESSMENT.md`, SHA256 `f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8`, is used only to name an unproved possible static interface. Its hypothesized regularity constant and missing-mass improvement are not supplied results. The older parameter family also remains unqualified and its range is not borrowed.
+
+After this derivation and initial document write, root reported an unreviewed background-regularity proposal at `../endpoint_background_regularity/PROPOSAL.md`, with supplied hash `1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c`, and described its proposed complex disks. I have not read or used it here. Its reported estimates do not discharge (4) or any static premise in this document.
+
+## 1. Exact separation
+
+Work in the fixed real physical basis with one open and seven closed output channels. Write z=x-iy, x in the original I, and let
+
+    A(z) = background matching matrix on 896 coordinates,
+    R(z)=A(z)^-1,
+    E = real endpoint inclusion C^8 -> C^896,
+    G(z)=E^T R(z) E,
+    De(z)=(b_j+Eenergy(z)-E0)I-B-kappa^2 G(z).
+
+The background here has the emitter deleted, with endpoint diagonal exactly 2J. The physical compensation in the source makes it independent of the chosen endpoint kappa. It includes the original terminated stub and the single output boundary self-energy. The complete 904-coordinate inverse obeys exactly
+
+    M(z)^-1=diag(R(z),0)+V(z) De(z)^-1 V(z)^T,
+    V(z)=[-kappa R(z)E; I8].                         (1)
+
+Transpose is not adjoint. Complex symmetry nevertheless gives equal norms of a matrix and its transpose. The positive identity for V*V gives ||V||<=sqrt(1+kappa^2 ||R E||^2), also off the real axis. No off-real scattering unitarity is used.
+
+Split the emitter into its resonant coordinate and all seven complementary coordinates. In this fixed basis define
+
+    Dcc=(De)_cc,
+    s_j(z)=Gjj(z)+kappa^2 Gjc(z) Dcc(z)^-1 Gcj(z),
+    Dj(z)=Eenergy(z)-E0-kappa^2 s_j(z).
+
+The second Schur inverse has the exact bound
+
+    ||De^-1|| <= d_c + (1+kappa^4 d_c^2 G_*^2)/|Dj|, (2)
+
+provided ||Dcc^-1||<=d_c and ||G||<=G_*. This follows from its rank-one factor w=(1,kappa^2 Dcc^-1 Gcj), with ||w||^2<=1+kappa^4 d_c^2 G_*^2. The rank-one factorization uses transpose and keeps the complementary inverse term. Omitting the seven coordinates would invalidate the interface.
+
+## 2. Background strip follows without a resonant Neumann inverse
+
+Let B0=2.24e18 and P0^2=1.008e23. These are the source's real-axis bounds on ||R(x)|| and ||R(x)E||^2. For h<=10^-18 the same physical tail proof in the source gives
+
+    ||A(x-iy)-A(x)||<.1y,
+    |q_l(x-iy)|<1/6,
+    |Eenergy'|, |Eenergy''|<.062.
+
+Indeed the closed free-half-line gap .17 is reduced by less than .062e-18, and the open exponential self-energy has the same .031y ceiling. This applies to A with the emitter deleted as well as to M; no additional energy-dependent boundary is inserted.
+
+Put theta=.1 B0 h and require theta<1. Background analyticity and the resolvent identity give
+
+    B_*=B0/(1-theta),       ||R(z)||<B_*,
+    P_*=P0/(1-theta),       ||R(z)E||<P_*,
+    G_* =35+.1h P0^2/(1-theta),  ||G(z)||<G_*.       (3)
+
+The last bound uses the two selected endpoint columns and complex symmetry, rather than the much larger full inverse squared. At h=10^-18,
+
+    theta=.224, B_*<2.89e18, P_*<4.1e11, G_*<1.31e4.
+
+These estimates are background statements and do not assert that the emitter resonance is absent from this strip. That is the separate scalar condition below.
+
+## 3. Exact sufficient complex self-energy hypotheses
+
+For a fixed proposed device, require the real resonant bound Im Dj(x)>12kappa^2 on the original interval and the following two complex conditions:
+
+    g-.062h-kappa^2 G_*>0,
+    sup_(x in I,0<=y<=h) |s_j(x-iy)-s_j(x)| <= L_s y,
+    (.062+kappa^2 L_s)h <=6kappa^2.                 (4)
+
+The first condition supplies d_c=1/(g-.062h-kappa^2 G_*) from the bare complementary gap g=.18. It establishes analyticity of Dcc^-1 before s_j is defined on the whole rectangle. The second is a complex continuation estimate for the exact Schur self-energy, not merely for Gjj, an approximate scalar or its real derivative. Then
+
+    Im Dj(x-iy)>=12kappa^2-.062y-kappa^2 L_s y
+                  >=6kappa^2,
+
+so Dj and De remain invertible throughout the rectangle. Together with (1)-(3), this proves complete matching analyticity. An equivalent weaker input is a uniform oscillation bound eta_s on s_j with .062h+kappa^2 eta_s<=6kappa^2; it need not arise from a derivative estimate.
+
+This supplies the transparent strip prescription
+
+    h <= min(h_background, 6kappa^2/(.062+kappa^2 L_s)),
+
+with theta<1 and the complementary-gap condition also imposed. At small kappa the emitter linewidth still limits the strip; the Schur rearrangement cannot eliminate a real resonance pole. At sufficiently large kappa a modest complex self-energy variation makes the background limit dominant. This is the genuine distinction from applying a full-core inverse norm directly to .1h.
+
+A real-axis Lipschitz estimate alone does not imply (4). It must be strengthened through the exact analytic matching expressions or a separately justified complex enclosure. The generic bound from (3), approximately 1.3e22 per unit momentum, is too weak for useful emitter continuation at the illustrative coupling below. This is precisely where new scalar structural information is required; it is not supplied by this proposal.
+
+## 4. Continue the source column, not only the inverse
+
+A uniform full-inverse bound can make the vertical cutoff terms unnecessarily large. There is a better exact bound using the background incoming solution
+
+    x_bg(z)=R(z) i Eenergy'(z) u,
+
+where u is the actual output-port unit vector, with zero emitter component. The background positive jump has the same single open boundary. On the real axis,
+
+    ||x_bg||^2=-2Eenergy' Im tr R
+       <=.122*(112*8)*(2e16)<(1.5e9)^2.
+
+The source's 2e16 diagonal block bound and the eight internal coordinates are both retained. This is a finite-core trace, not a trace of the infinite resolvent. The background matching inverse already exists by the supplied terminated construction.
+
+Continue this column directly:
+
+    x_bg(z)=[I+R(x)(A(z)-A(x))]^-1
+       [x_bg(x)+R(x)i(Eenergy'(z)-Eenergy'(x))u].
+
+Consequently
+
+    X_bg=(1.5e9+.062 B0 h)/(1-theta)
+         >sup ||x_bg(z)||.
+
+At h=10^-18, X_bg<2e9. Exact source elimination gives
+
+    x_e=-kappa De^-1 E^T x_bg,
+    x=[x_bg;0]+V x_e,
+    ||x||<=X_bg[1+kappa sqrt(1+kappa^2 P_*^2)||De^-1||]. (5)
+
+This bound retains all emitter/source components. It is useful both on the bottom and on each vertical side, with different denominator lower bounds in (2).
+
+The source's physical definition of C subtracts the actual open waves and retains every closed tail. Since R_inst(z)=u^T x(z)-1, without using |R_inst|=1 off the real axis, the same conservative estimate is
+
+    ||C(z)||<=3||x(z)||+4.                          (6)
+
+The closed-tail map has norm <1/5 when |q_l|<1/6, and is holomorphic into the fixed infinite tail Hilbert space by uniform geometric convergence. This justifies a Hilbert-valued contour for the complete localized vector, not just a finite core surrogate.
+
+## 5. Boundary-specific constants and complete localized integral
+
+Let C_b bound (6) on the bottom and C_s on both vertical sides. With the same actual a0 and full phase as the source, suppose the reference normalization gives A_f<17kappa. Then
+
+    |a0(z)|<.088/kappa=:A_b,
+    |a0(z)|<44kappa/sigma=:A_s on the two sides.
+
+The first follows from Im Dbar=-sin x[2J sinh y+(kappa^2/J)exp(-y)] and its >12kappa^2 margin on this tiny strip. The second retains the original cutoff denominator margin. The numerator phase exp(-i113z) only improves decay. No derivative of 1/R is omitted: a0 has no 1/R, and the paid outgoing mismatch is a separate static term.
+
+Using 2/sqrt(2pi)<1 and the time decay exp(-vty), an explicit complete localized operator bound is
+
+    E_loc(kappa,t)
+      <=1.5 [sigma A_b C_b exp(-vth)+A_s C_s/(vt)]. (7)
+
+The factor 1.5 bounds sqrt(2) for overlapping old-column localized vectors within parity. Different parities are orthogonal; passive-reference tensoring preserves this bound. Both cutoff sides are present in A_s C_s/(vt). No side is absorbed into the exponential bottom.
+
+For the side denominators one may use
+
+    |Dj(x_edge-iy)| >= v sigma-.061h^2-kappa^2 G_*
+                              -kappa^4 d_c G_*^2. (8)
+
+This avoids a resonant 1/kappa^2 ceiling at a cutoff separated in energy from the resonance. Ignoring this distinction would substantially erode the benefit of the wider strip.
+
+## 6. Illustrative conditional coupling and onset
+
+Consider exactly kappa=10^-8 and h=10^-18. This is a conditional test point, not an inherited allowed range. Assume the real emitter/profile interfaces have been extended to this device, and require the new exact complex condition
+
+    |s_j(x-iy)-s_j(x)|<=1 throughout the rectangle,
+
+uniformly in every column and parity. This is more than sufficient for (4), since .062h/kappa^2=.00062. A certified L_s<=10^18 would imply it, but no such complex certificate is asserted here.
+
+Then d_c<6, |Dj|>=6kappa^2 and (2) yields ||De^-1||<.18/kappa^2. At these values sqrt(1+kappa^2 P_*^2)<4101. Equations (5)-(6) give
+
+    C_b<5e20.
+
+At either side, (8)>2.49e-8, since kappa^2 G_*<1.31e-12 and the fourth-order term is negligible. Thus ||De^-1||<5e7 there, and
+
+    C_s<1.4e13.
+
+Use T=4e21. Then vT=10^20 and vTh=100. Formula (7) gives a bottom <6.6e21 exp(-100)<6.6e-9, using e^100>2^100>10^30, and two-side contribution <9.24e-8. Hence
+
+    complete localized error <10^-7 for every t>=T. (9)
+
+The target scalar contour must be handled separately; this does not assert its pole lies below the background strip for every kappa. At this particular coupling the established scalar choice h_o=kappa^2/(4J^2)>2.5e-14 is allowed by its own direct denominator proof. Keeping the outgoing numerator growth through vT-113 gives
+
+    q_target <=88kappa/[sigma sqrt(pi(vT-113))]
+                 +.012sigma/kappa^2 exp[-(vT-113)h_o]
+              <10^-10,
+
+so positive target normalization costs <10^-20. The incoming scalar contour uses h_i=sigma/2, its exact exp(-y) denominator identity and both sides; at this T it gives
+
+    E_in <=88kappa/[sigma sqrt(pi vT)]
+                  +88kappa/sqrt(h_i) exp(-vT h_i)<10^-10.
+
+These exponential estimates need no numerical run: for instance exp(-a)<=24/a^4 already makes both bottom terms negligible here. Neither contour shifts the full C to the much deeper scalar height.
+
+Let S(kappa) be an independently established complete static cost, including actual off-band/point amplitude, reference normalization, weighted or uniform complex profile mismatch, old-column aggregation, and the paid conjugate-comparator outgoing discrepancy. The resulting sufficient bound is
+
+    E_infinite < S(10^-8)+10^-7+10^-10+10^-20.       (10)
+
+This exposes the missing scientific interface rather than dropping it. The preceding spectral assessment proposed that a newly certified real energy-Lipschitz self-energy bound <=10^6 could imply residual amplitude <.000221 and 1-p0<4.54e-8. If those two conclusions AND the uniform epsilon_F=.000752 profile estimate are independently established at this coupling, then S<.002881 and (10)<.002882<.003. This static premise is not proven here.
+
+If the source's weighted pointwise profile estimate also extends, its unchanged variance argument only guarantees delta<.000301 at this coupling. That yields S<.001341 and an optional conditional ceiling .001342. These constants do not certify the original .0013 tolerance. A shorter lifetime alone cannot restore its smaller error budget.
+
+For a single apparatus fixed before delivery choose M=50T=2e23 output sites. Conditional on the same physical spectral radius <18 (whose simple kappa-dependent last term must be rechecked), the source's exact transfer bound
+
+    4 exp[-(M+23)+36T sinh(1)]/(1-exp(-1))
+
+is <.001 for t in [T,2T]. Thus the conservative conditional .003/.004 pair is retained, with 2e23+116 qubits. Compared with the current fixed-kappa T=10^27, M=5e28 certificate, the sufficient time/window would be smaller by 250000. The coupling and static certificate have changed, and the current source's much smaller .000058/.001058 errors are not preserved by this comparison. These are conditional dimensionless supplied-model resources, still astronomical.
+
+## 7. Obstacles and smallest next obligations
+
+1. The background strip is available from the pinned real background norms and the source's physical tail analyticity. It does not itself control the resonant scalar. A precise complex bound on the exact s_j, including complementary emitter Schur correction, is required. A real-only regularity certificate cannot silently fill it.
+2. The same real endpoint data bound generic complex variation too loosely. This is a limitation of those norm estimates, not a no-go theorem for the apparatus. Exact background matching structure is the appropriate next source of improvement, and is separately owned.
+3. A wider strip with a single global C ceiling can leave a dominant vertical cutoff cost. Equations (5) and (8) explicitly address that issue with the actual source column and off-resonant sides.
+4. Larger kappa must still pass actual spectral mass, relative profile, reference normalization, physical compensation and finite-radius checks. Neither the unqualified family nor the current fixed-kappa weighted theorem supplies them automatically.
+5. No continuation beyond an emitter pole is asserted. The general width remains min(background width, emitter scalar margin), and the scalar target and complete C may use different justified widths.
+
+The next bounded check should certify or refute the complex oscillation of s_j on the stated original-band rectangle, together with the separately owned real spectral-mass interface. Then independently check (1)-(10) and the larger-coupling static composition. Until those are supplied, this is a rigorous sufficient interface with an explicit conditional resource benefit, not a new theorem about the delivered device.

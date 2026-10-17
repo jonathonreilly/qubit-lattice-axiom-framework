@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/real_endpoint_autonomous_output_2026_10_17.py
-runner_sha256: cf1c78e122e0db0e5e3f1986c5f9ee8cdfe3b35453e26cd2e36b7b6851a8eb2a
-input_fingerprint_sha256: 0eb2a964dc2e5acb77775bba59dfb73d950f63ff71308c9c873263d12f79c6d4
+runner_sha256: 93cc122aa253fc2a6fc26748826561bdf61343227e36a9f1df02f4f248e5b991
+input_fingerprint_sha256: e02686e1fb716b32b630c94008a8ea1acfd5e18b3a8a519a9e39dd74568251da
 timeout_sec: 30
 exit_code: 0
 elapsed_sec: 0.08
@@ -226,6 +226,123 @@ PASS arithmetic: profile weighted static
 PASS arithmetic: weighted strip complete infinite
 PASS arithmetic: weighted strip finite exponent
 PASS arithmetic: weighted strip complete finite
+PASS arithmetic: LC disk exponential envelope
+PASS arithmetic: LC disk closed resolvent coefficient
+PASS arithmetic: LC disk closed root
+PASS arithmetic: LC disk closed derivative
+PASS arithmetic: LC disk matrix derivative
+PASS arithmetic: LC disk bare inverse
+PASS arithmetic: LC disk open A derivative
+PASS arithmetic: LC disk closed A
+PASS arithmetic: LC disk closed A derivative
+PASS arithmetic: LC disk Tg derivative
+PASS arithmetic: LC disk filter block derivative
+PASS arithmetic: LC disk two-site derivative
+PASS arithmetic: LC disk filter Neumann hypothesis
+PASS arithmetic: LC disk full filter inverse
+PASS arithmetic: LC disk scalar filter inverse
+PASS arithmetic: LC disk bare column
+PASS arithmetic: LC disk bare column derivative
+PASS arithmetic: LC disk bare reflection derivative
+PASS arithmetic: LC disk bare reflection
+PASS arithmetic: LC disk closed filter block
+PASS arithmetic: LC disk closed filter inverse
+PASS arithmetic: LC disk scalar open column
+PASS arithmetic: LC disk open Schur inverse
+PASS arithmetic: LC disk open correction coefficient
+PASS arithmetic: LC disk closed column coefficient
+PASS arithmetic: LC disk outgoing row squared
+PASS arithmetic: LC disk reflected correction coefficient
+PASS arithmetic: LC disk reflected correction
+PASS arithmetic: LC disk Cauchy reflection ceiling
+PASS arithmetic: LC disk exterior factor squared
+PASS arithmetic: LC disk updated kernel
+PASS arithmetic: LC disk endpoint correction input
+PASS arithmetic: LC disk inverse difference product
+PASS arithmetic: LC disk termination Lipschitz
+PASS arithmetic: LC disk Cauchy endpoint derivative
+PASS arithmetic: LC background cancellation derivative
+PASS arithmetic: LC background port derivative
+PASS arithmetic: LC background endpoint derivative
+PASS arithmetic: LC background energy derivative
+PASS arithmetic: LC complementary inverse energy derivative input
+PASS arithmetic: LC exact selfenergy energy derivative
+PASS arithmetic: LC regularity supplies mass L ceiling
+PASS arithmetic: LC emitter onsite positive
+PASS arithmetic: LC endpoint onsite positive
+PASS arithmetic: LC endpoint compensated diagonal
+PASS arithmetic: LC emitter compensated diagonal
+PASS arithmetic: LC real complementary inverse
+PASS arithmetic: LC real resonant relative correction
+PASS arithmetic: LC real resonant imaginary floor
+PASS arithmetic: LC real full emitter inverse factor
+PASS arithmetic: LC outgoing row correction
+PASS arithmetic: LC physical radius
+PASS arithmetic: LC exponential rational lower proof
+PASS arithmetic: LC mass denominator smallness
+PASS arithmetic: LC mass cutoff separated
+PASS arithmetic: LC mass logarithm argument
+PASS arithmetic: LC mass H bound
+PASS arithmetic: LC actual exterior mass
+PASS arithmetic: LC actual exterior amplitude squared
+PASS arithmetic: LC reference energy derivative
+PASS arithmetic: LC reference missing mass
+PASS arithmetic: LC positive reference normalization
+PASS arithmetic: LC reference inverse normalization squared
+PASS arithmetic: LC reference amplitude factor squared
+PASS arithmetic: LC bridge open disk bound
+PASS arithmetic: LC bridge full disk bound
+PASS arithmetic: LC bridge matrix oscillation
+PASS arithmetic: LC bridge complementary disk inverse
+PASS arithmetic: LC bridge Schur correction
+PASS arithmetic: LC bridge exact selfenergy oscillation
+PASS arithmetic: LC bridge strip resonant loss
+PASS arithmetic: LC background Neumann product
+PASS arithmetic: LC background Neumann hypothesis
+PASS arithmetic: LC background strip inverse
+PASS arithmetic: LC background strip selected column squared
+PASS arithmetic: LC background strip endpoint
+PASS arithmetic: LC background source jump trace
+PASS arithmetic: LC background source continuation
+PASS arithmetic: LC strip complementary inverse
+PASS arithmetic: LC strip emitter inverse
+PASS arithmetic: LC strip update factor squared
+PASS arithmetic: LC strip cutoff denominator
+PASS arithmetic: LC strip cutoff emitter inverse
+PASS arithmetic: LC strip bottom complete C
+PASS arithmetic: LC strip side complete C
+PASS arithmetic: LC strip conjugate coefficient
+PASS arithmetic: LC strip bottom exponential argument
+PASS arithmetic: LC strip exponential integer lower
+PASS arithmetic: LC strip bottom aggregation expansion
+PASS arithmetic: LC strip side aggregation expansion
+PASS arithmetic: LC strip complete localized
+PASS arithmetic: LC scalar outgoing strip lower
+PASS arithmetic: LC scalar outgoing sinh envelope
+PASS arithmetic: LC scalar outgoing imaginary margin
+PASS arithmetic: LC scalar common cutoff floor
+PASS arithmetic: LC scalar outgoing coefficient
+PASS arithmetic: LC scalar outgoing bottom prefactor
+PASS arithmetic: LC scalar side denominator squared
+PASS arithmetic: LC scalar target negative tail
+PASS arithmetic: LC scalar target positive normalization
+PASS arithmetic: LC scalar incoming sqrt height
+PASS arithmetic: LC scalar incoming complete
+PASS arithmetic: LC restricted moment amplitude
+PASS arithmetic: LC restricted moment square coefficient
+PASS arithmetic: LC restricted moment norm squared
+PASS arithmetic: LC restricted complex mismatch
+PASS arithmetic: LC complete static arithmetic
+PASS arithmetic: LC complete static ceiling
+PASS arithmetic: LC complete infinite ceiling
+PASS arithmetic: LC finite output length
+PASS arithmetic: LC finite exponential margin
+PASS arithmetic: LC finite transfer prefactor
+PASS arithmetic: LC complete finite ceiling
+PASS arithmetic: LC infinite unhalved trace ceiling
+PASS arithmetic: LC finite unhalved trace ceiling
+PASS arithmetic: LC sufficient onset improvement ratio
+PASS arithmetic: LC sufficient length improvement ratio
 {
   "checks": [
     {
@@ -1511,6 +1628,708 @@ PASS arithmetic: weighted strip complete finite
       "name": "weighted strip complete finite",
       "relation": "<",
       "rhs": "529/500000"
+    },
+    {
+      "lhs": "25000000000/24999999999",
+      "name": "LC disk exponential envelope",
+      "relation": "<",
+      "rhs": "1001/1000"
+    },
+    {
+      "lhs": "55594642790800/53518518518499",
+      "name": "LC disk closed resolvent coefficient",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "250000000000217/1750000000000000",
+      "name": "LC disk closed root",
+      "relation": "<",
+      "rhs": "3/20"
+    },
+    {
+      "lhs": "17234339265148000000000000/267592592592397407407407443",
+      "name": "LC disk closed derivative",
+      "relation": "<",
+      "rhs": "1/8"
+    },
+    {
+      "lhs": "93031/1000000",
+      "name": "LC disk matrix derivative",
+      "relation": "<",
+      "rhs": "1/10"
+    },
+    {
+      "lhs": "830000000000000/4999999999917",
+      "name": "LC disk bare inverse",
+      "relation": "<",
+      "rhs": "167"
+    },
+    {
+      "lhs": "15500000000000000000000000000/156249999999225000000000961",
+      "name": "LC disk open A derivative",
+      "relation": "<",
+      "rhs": "101"
+    },
+    {
+      "lhs": "500000000000000/84999999999969",
+      "name": "LC disk closed A",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "15500000000000000000000000000/7224999999994730000000000961",
+      "name": "LC disk closed A derivative",
+      "relation": "<",
+      "rhs": "3"
+    },
+    {
+      "lhs": "28989/10",
+      "name": "LC disk Tg derivative",
+      "relation": "<",
+      "rhs": "3000"
+    },
+    {
+      "lhs": "287007999999848/24999999999",
+      "name": "LC disk filter block derivative",
+      "relation": "<",
+      "rhs": "12000"
+    },
+    {
+      "lhs": "24000",
+      "name": "LC disk two-site derivative",
+      "relation": "<",
+      "rhs": "30000"
+    },
+    {
+      "lhs": "3/1000000",
+      "name": "LC disk filter Neumann hypothesis",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "2000000000/999997",
+      "name": "LC disk full filter inverse",
+      "relation": "<",
+      "rhs": "2100"
+    },
+    {
+      "lhs": "2000000000/3999997",
+      "name": "LC disk scalar filter inverse",
+      "relation": "<",
+      "rhs": "501"
+    },
+    {
+      "lhs": "10521/1000",
+      "name": "LC disk bare column",
+      "relation": "<",
+      "rhs": "11"
+    },
+    {
+      "lhs": "1965757/10000",
+      "name": "LC disk bare column derivative",
+      "relation": "<",
+      "rhs": "205"
+    },
+    {
+      "lhs": "109109/500",
+      "name": "LC disk bare reflection derivative",
+      "relation": "<",
+      "rhs": "1000"
+    },
+    {
+      "lhs": "1000000001/1000000000",
+      "name": "LC disk bare reflection",
+      "relation": "<",
+      "rhs": "1001/1000"
+    },
+    {
+      "lhs": "5927054868480000000000000000017561072329748897157/858993459200000000000000000000000000000000000000",
+      "name": "LC disk closed filter block",
+      "relation": "<",
+      "rhs": "7"
+    },
+    {
+      "lhs": "20/13",
+      "name": "LC disk closed filter inverse",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "2004",
+      "name": "LC disk scalar open column",
+      "relation": "<",
+      "rhs": "2100"
+    },
+    {
+      "lhs": "11017106510315520000000000000000000000000000000000/21990232555519999999999999323223289445830963411",
+      "name": "LC disk open Schur inverse",
+      "relation": "<",
+      "rhs": "1002"
+    },
+    {
+      "lhs": "395539500",
+      "name": "LC disk open correction coefficient",
+      "relation": "<",
+      "rhs": "1000000000"
+    },
+    {
+      "lhs": "31595/2",
+      "name": "LC disk closed column coefficient",
+      "relation": "<",
+      "rhs": "16000"
+    },
+    {
+      "lhs": "934823011250000000000000/69444444438888888889",
+      "name": "LC disk outgoing row squared",
+      "relation": "<",
+      "rhs": "16900"
+    },
+    {
+      "lhs": "6500400000",
+      "name": "LC disk reflected correction coefficient",
+      "relation": "<",
+      "rhs": "10000000000"
+    },
+    {
+      "lhs": "450283905890997363/137438953472000000000000000000000000000",
+      "name": "LC disk reflected correction",
+      "relation": "<",
+      "rhs": "3/100000000000000000000"
+    },
+    {
+      "lhs": "3/100000000",
+      "name": "LC disk Cauchy reflection ceiling",
+      "relation": "=",
+      "rhs": "3/100000000"
+    },
+    {
+      "lhs": "8611250000000000000000000/69444444438888888889",
+      "name": "LC disk exterior factor squared",
+      "relation": "<",
+      "rhs": "160000"
+    },
+    {
+      "lhs": "32308092306400000/1923076923",
+      "name": "LC disk updated kernel",
+      "relation": "<",
+      "rhs": "20000000"
+    },
+    {
+      "lhs": "6893396315285278630167/175921860444160000000000000000000000000000000000000",
+      "name": "LC disk endpoint correction input",
+      "relation": "<",
+      "rhs": "1/1000000000000000000000000000"
+    },
+    {
+      "lhs": "112019961884403573/125000000000",
+      "name": "LC disk inverse difference product",
+      "relation": "<",
+      "rhs": "900000"
+    },
+    {
+      "lhs": "903000",
+      "name": "LC disk termination Lipschitz",
+      "relation": "<",
+      "rhs": "2000000"
+    },
+    {
+      "lhs": "1/500000000",
+      "name": "LC disk Cauchy endpoint derivative",
+      "relation": "<",
+      "rhs": "1/1000000"
+    },
+    {
+      "lhs": "88063039931700021/3999960000100000",
+      "name": "LC background cancellation derivative",
+      "relation": "<",
+      "rhs": "23"
+    },
+    {
+      "lhs": "230020700300000000009/20000000000000000000",
+      "name": "LC background port derivative",
+      "relation": "<",
+      "rhs": "12"
+    },
+    {
+      "lhs": "17756392053875000000000000/21321297304534425181401",
+      "name": "LC background endpoint derivative",
+      "relation": "<",
+      "rhs": "850"
+    },
+    {
+      "lhs": "34040",
+      "name": "LC background energy derivative",
+      "relation": "<",
+      "rhs": "35000"
+    },
+    {
+      "lhs": "2000000000007/2000000000000",
+      "name": "LC complementary inverse energy derivative input",
+      "relation": "<",
+      "rhs": "2"
+    },
+    {
+      "lhs": "4375000000000000000000000000000000000525000000000000000000000009/125000000000000000000000000000000000000000000000000000000000",
+      "name": "LC exact selfenergy energy derivative",
+      "relation": "<",
+      "rhs": "36000"
+    },
+    {
+      "lhs": "36000",
+      "name": "LC regularity supplies mass L ceiling",
+      "relation": "<",
+      "rhs": "1000000"
+    },
+    {
+      "lhs": "1/100000000",
+      "name": "LC emitter onsite positive",
+      "relation": "<",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "1/100000000",
+      "name": "LC endpoint onsite positive",
+      "relation": "<",
+      "rhs": "3752638388379/125000000000000"
+    },
+    {
+      "lhs": "3752638388379/62500000000000",
+      "name": "LC endpoint compensated diagonal",
+      "relation": "=",
+      "rhs": "3752638388379/62500000000000"
+    },
+    {
+      "lhs": "30021107107032000000000000000/5335816955256357129429116105401",
+      "name": "LC emitter compensated diagonal",
+      "relation": "=",
+      "rhs": "30021107107032000000000000000/5335816955256357129429116105401"
+    },
+    {
+      "lhs": "2000000000000000/359999999999993",
+      "name": "LC real complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "150000000000000000046907416958979243150000000000000000002814445017538754589/6249925000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "LC real resonant relative correction",
+      "relation": "<",
+      "rhs": "1/40000"
+    },
+    {
+      "lhs": "12",
+      "name": "LC real resonant imaginary floor",
+      "relation": "<",
+      "rhs": "16666250000000/1250879462793"
+    },
+    {
+      "lhs": "2500000000000000000000000000000000000300000000000000000000000000000000000009/2500000000000000000000000000000000000000000000000000000000000000000000000000",
+      "name": "LC real full emitter inverse factor",
+      "relation": "<",
+      "rhs": "6/5"
+    },
+    {
+      "lhs": "62543973139650000000000000000000000003752638388379/2083281250000000000000000000000000000000000000000000000000000000000000000",
+      "name": "LC outgoing row correction",
+      "relation": "<",
+      "rhs": "1/31250000000000000000000"
+    },
+    {
+      "lhs": "549877638700879/31250000000000",
+      "name": "LC physical radius",
+      "relation": "<",
+      "rhs": "18"
+    },
+    {
+      "lhs": "8/3",
+      "name": "LC exponential rational lower proof",
+      "relation": "<",
+      "rhs": "65/24"
+    },
+    {
+      "lhs": "47/120000000000",
+      "name": "LC mass denominator smallness",
+      "relation": "<",
+      "rhs": "1/2"
+    },
+    {
+      "lhs": "7/2000000000000000",
+      "name": "LC mass cutoff separated",
+      "relation": "<",
+      "rhs": "1/40000000"
+    },
+    {
+      "lhs": "83333349/4",
+      "name": "LC mass logarithm argument",
+      "relation": "<",
+      "rhs": "18014398509481984/387420489"
+    },
+    {
+      "lhs": "823/18",
+      "name": "LC mass H bound",
+      "relation": "<",
+      "rhs": "46"
+    },
+    {
+      "lhs": "18149999839/374999947500000000",
+      "name": "LC actual exterior mass",
+      "relation": "<",
+      "rhs": "97/2000000000"
+    },
+    {
+      "lhs": "97/2000000000",
+      "name": "LC actual exterior amplitude squared",
+      "relation": "<",
+      "rhs": "48841/1000000000000"
+    },
+    {
+      "lhs": "5000000000000000/3752638388379",
+      "name": "LC reference energy derivative",
+      "relation": "<",
+      "rhs": "1334"
+    },
+    {
+      "lhs": "2833589016630871/62499991250000000000000",
+      "name": "LC reference missing mass",
+      "relation": "<",
+      "rhs": "227/5000000000"
+    },
+    {
+      "lhs": "0",
+      "name": "LC positive reference normalization",
+      "relation": "<",
+      "rhs": "4999999773/5000000000"
+    },
+    {
+      "lhs": "1",
+      "name": "LC reference inverse normalization squared",
+      "relation": "<",
+      "rhs": "500000077300000459999773/500000000000000000000000"
+    },
+    {
+      "lhs": "1",
+      "name": "LC reference amplitude factor squared",
+      "relation": "<",
+      "rhs": "61046745506989054302724776654684022431/39062500000000000000000000000000000000"
+    },
+    {
+      "lhs": "1562531249871873687502625000000000000000000000000/46907041691247081386682920207727584785803844041",
+      "name": "LC bridge open disk bound",
+      "relation": "<",
+      "rhs": "34"
+    },
+    {
+      "lhs": "17000000000000000000001/500000000000000000000",
+      "name": "LC bridge full disk bound",
+      "relation": "<",
+      "rhs": "36"
+    },
+    {
+      "lhs": "4/111111",
+      "name": "LC bridge matrix oscillation",
+      "relation": "<",
+      "rhs": "37/1000000"
+    },
+    {
+      "lhs": "625000000000000/112499999999959",
+      "name": "LC bridge complementary disk inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "243/312500000000000",
+      "name": "LC bridge Schur correction",
+      "relation": "<",
+      "rhs": "1/1250000000000"
+    },
+    {
+      "lhs": "625000026999973/17361093750000000000",
+      "name": "LC bridge exact selfenergy oscillation",
+      "relation": "<",
+      "rhs": "19/500000"
+    },
+    {
+      "lhs": "11388878151999973/173610937500000000000000000000000000",
+      "name": "LC bridge strip resonant loss",
+      "relation": "<",
+      "rhs": "3/5000000000000000"
+    },
+    {
+      "lhs": "28/125",
+      "name": "LC background Neumann product",
+      "relation": "=",
+      "rhs": "28/125"
+    },
+    {
+      "lhs": "28/125",
+      "name": "LC background Neumann hypothesis",
+      "relation": "<",
+      "rhs": "1"
+    },
+    {
+      "lhs": "280000000000000000000/97",
+      "name": "LC background strip inverse",
+      "relation": "<",
+      "rhs": "2890000000000000000"
+    },
+    {
+      "lhs": "1575000000000000000000000000/9409",
+      "name": "LC background strip selected column squared",
+      "relation": "<",
+      "rhs": "168100000000000000000000"
+    },
+    {
+      "lhs": "1263395/97",
+      "name": "LC background strip endpoint",
+      "relation": "<",
+      "rhs": "13100"
+    },
+    {
+      "lhs": "2186240000000000000",
+      "name": "LC background source jump trace",
+      "relation": "<",
+      "rhs": "2250000000000000000"
+    },
+    {
+      "lhs": "4687500000434/2425",
+      "name": "LC background source continuation",
+      "relation": "<",
+      "rhs": "2000000000"
+    },
+    {
+      "lhs": "500000000000000000000/89999999999344999969",
+      "name": "LC strip complementary inverse",
+      "relation": "<",
+      "rhs": "6"
+    },
+    {
+      "lhs": "2500000000000009000000154449/1500000000000",
+      "name": "LC strip emitter inverse",
+      "relation": "<",
+      "rhs": "1800000000000000"
+    },
+    {
+      "lhs": "16810001",
+      "name": "LC strip update factor squared",
+      "relation": "<",
+      "rhs": "16818201"
+    },
+    {
+      "lhs": "249/10000000000",
+      "name": "LC strip cutoff denominator",
+      "relation": "<",
+      "rhs": "24998689999999989703399999999939/1000000000000000000000000000000000000000"
+    },
+    {
+      "lhs": "1000000149992139999999999999999999999634/24998689999999989703399999999939",
+      "name": "LC strip cutoff emitter inverse",
+      "relation": "<",
+      "rhs": "50000000"
+    },
+    {
+      "lhs": "442908000006000000004",
+      "name": "LC strip bottom complete C",
+      "relation": "<",
+      "rhs": "500000000000000000000"
+    },
+    {
+      "lhs": "12309000000004",
+      "name": "LC strip side complete C",
+      "relation": "<",
+      "rhs": "14000000000000"
+    },
+    {
+      "lhs": "527/6000",
+      "name": "LC strip conjugate coefficient",
+      "relation": "<",
+      "rhs": "11/125"
+    },
+    {
+      "lhs": "100",
+      "name": "LC strip bottom exponential argument",
+      "relation": "=",
+      "rhs": "100"
+    },
+    {
+      "lhs": "1000000000000000000000000000000",
+      "name": "LC strip exponential integer lower",
+      "relation": "<",
+      "rhs": "1267650600228229401496703205376"
+    },
+    {
+      "lhs": "6600000000000000000000",
+      "name": "LC strip bottom aggregation expansion",
+      "relation": "=",
+      "rhs": "6600000000000000000000"
+    },
+    {
+      "lhs": "231/2500000000",
+      "name": "LC strip side aggregation expansion",
+      "relation": "=",
+      "rhs": "231/2500000000"
+    },
+    {
+      "lhs": "99/1000000000",
+      "name": "LC strip complete localized",
+      "relation": "<",
+      "rhs": "1/10000000"
+    },
+    {
+      "lhs": "1/40000000000000",
+      "name": "LC scalar outgoing strip lower",
+      "relation": "<",
+      "rhs": "390625000000/14082294873935738442247641"
+    },
+    {
+      "lhs": "198311028916476775465341529333589227771091970064881/396622057832953550930683058362002674292183940129762",
+      "name": "LC scalar outgoing sinh envelope",
+      "relation": "<",
+      "rhs": "501/1000"
+    },
+    {
+      "lhs": "6",
+      "name": "LC scalar outgoing imaginary margin",
+      "relation": "<",
+      "rhs": "24950000000000/3752638388379"
+    },
+    {
+      "lhs": "3/125000000",
+      "name": "LC scalar common cutoff floor",
+      "relation": "<",
+      "rhs": "750526744590306690803691119/30021092096478446484000000000000000"
+    },
+    {
+      "lhs": "527/3000",
+      "name": "LC scalar outgoing coefficient",
+      "relation": "<",
+      "rhs": "22/125"
+    },
+    {
+      "lhs": "41279022272169/3906250000000000",
+      "name": "LC scalar outgoing bottom prefactor",
+      "relation": "<",
+      "rhs": "3/250"
+    },
+    {
+      "lhs": "289000000000000000000",
+      "name": "LC scalar side denominator squared",
+      "relation": "<",
+      "rhs": "299999999999999999661"
+    },
+    {
+      "lhs": "6402848717552835822469259584124498470850784662015850420774430492224093995828102103125051713124120147699006633/123691279441118239797360729426145554536515555810183285952975013060495257579299878634628839790821075439453125000000000000",
+      "name": "LC scalar target negative tail",
+      "relation": "<",
+      "rhs": "1/10000000000"
+    },
+    {
+      "lhs": "40996471699867994362523504446908259904772712025496703413875645078267654568734260980484222520720376505186841842479431789746819602776548086086098039168761854682270281185938899464650920787051784774847879572480374977996689/15299532609780799736113800376107602621789470583762211310371600227138489542036553167842205833023669107376177120062459058968633341869040500488409116651627038815692753945612810707876949578576386556960642337799072265625000000000000000000000000",
+      "name": "LC scalar target positive normalization",
+      "relation": "<",
+      "rhs": "1/100000000000000000000"
+    },
+    {
+      "lhs": "49/100000000",
+      "name": "LC scalar incoming sqrt height",
+      "relation": "<",
+      "rhs": "1/2000000"
+    },
+    {
+      "lhs": "6015625000000000000000000000000000000000000000561/116210937500000000000000000000000000000000000000000000000000",
+      "name": "LC scalar incoming complete",
+      "relation": "<",
+      "rhs": "1/10000000000"
+    },
+    {
+      "lhs": "542500054250000/3752638388379",
+      "name": "LC restricted moment amplitude",
+      "relation": "<",
+      "rhs": "145"
+    },
+    {
+      "lhs": "841/20000",
+      "name": "LC restricted moment square coefficient",
+      "relation": "=",
+      "rhs": "841/20000"
+    },
+    {
+      "lhs": "841/20000",
+      "name": "LC restricted moment norm squared",
+      "relation": "<",
+      "rhs": "441/10000"
+    },
+    {
+      "lhs": "7875001/5000000000000",
+      "name": "LC restricted complex mismatch",
+      "relation": "<",
+      "rhs": "1/625000"
+    },
+    {
+      "lhs": "318243241/1000000000000",
+      "name": "LC complete static arithmetic",
+      "relation": "=",
+      "rhs": "318243241/1000000000000"
+    },
+    {
+      "lhs": "318243241/1000000000000",
+      "name": "LC complete static ceiling",
+      "relation": "<",
+      "rhs": "319/1000000"
+    },
+    {
+      "lhs": "31910010000000001/100000000000000000000",
+      "name": "LC complete infinite ceiling",
+      "relation": "<",
+      "rhs": "1/3125"
+    },
+    {
+      "lhs": "200000000000000000000000",
+      "name": "LC finite output length",
+      "relation": "=",
+      "rhs": "200000000000000000000000"
+    },
+    {
+      "lhs": "172800000000000000000009",
+      "name": "LC finite exponential margin",
+      "relation": "<",
+      "rhs": "200000000000000000000023"
+    },
+    {
+      "lhs": "19683/20971520",
+      "name": "LC finite transfer prefactor",
+      "relation": "<",
+      "rhs": "1/1000"
+    },
+    {
+      "lhs": "131910010000000001/100000000000000000000",
+      "name": "LC complete finite ceiling",
+      "relation": "<",
+      "rhs": "33/25000"
+    },
+    {
+      "lhs": "2/3125",
+      "name": "LC infinite unhalved trace ceiling",
+      "relation": "=",
+      "rhs": "2/3125"
+    },
+    {
+      "lhs": "33/12500",
+      "name": "LC finite unhalved trace ceiling",
+      "relation": "=",
+      "rhs": "33/12500"
+    },
+    {
+      "lhs": "250000",
+      "name": "LC sufficient onset improvement ratio",
+      "relation": "=",
+      "rhs": "250000"
+    },
+    {
+      "lhs": "250000",
+      "name": "LC sufficient length improvement ratio",
+      "relation": "=",
+      "rhs": "250000"
     }
   ],
   "dense_dimension_max": 4,
@@ -1521,6 +2340,11 @@ PASS arithmetic: weighted strip complete finite
     "original": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
   },
   "large_matching_matrices_executed": false,
+  "larger_coupling": "1/100000000",
+  "larger_coupling_finite_ceiling": ".001320",
+  "larger_coupling_infinite_ceiling": ".000320",
+  "larger_coupling_onset": "4000000000000000000000",
+  "larger_coupling_output_sites": "200000000000000000000000",
   "runtime_reads": {
     "package_integrity": [
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/ARTIFACT_MANIFEST.json",
@@ -1540,6 +2364,23 @@ PASS arithmetic: weighted strip complete finite
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROOT_QUALIFICATION.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/ROUTE_SOURCE_IDENTITY_CHECK.json",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/endpoint_spectral_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_COMPOSITION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/LARGER_COUPLING_QUALIFICATION.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/complex_selfenergy_bridge_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_background_regularity_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_coupling_interface_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_assessment/ASSESSMENT.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/endpoint_spectral_mass_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/larger_coupling_composition_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/restricted_reference_moment_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/schur_strip_interface_check/REVIEW.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition/PROPOSAL.md.txt",
+      "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/larger_coupling/weighted_mass_composition_check/REVIEW.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CANDIDATE.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/CORRECTED_V2.md.txt",
       "outputs/real_endpoint_autonomous_output_2026_10_17_inputs/review_sources/positive_jump_onset/SPECTRAL_SUM_ADDENDUM.md.txt",

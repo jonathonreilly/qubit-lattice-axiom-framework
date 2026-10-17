@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "elapsed_sec": 0.13511295802891254,
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/larger_coupling_validation/mutation_two_site_row/stdout.txt",
+      "bytes": 11743,
+      "sha256": "85f8c2d0120fed1d988ec50307aa44f410da9a73edea22e0a235341971a2d6e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/larger_coupling_validation/mutation_two_site_row/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+# Interface check: weighted mismatch with conditional spectral mass
+
+## Finding
+
+The proposed composition is correct under its explicitly required extended endpoint interfaces and mass bounds. The two coupling-dependent correction terms remain within the stated ceilings through kappa=10^-8. The actual reference variance, positive normalization and complete operator aggregation give **static error <.001338 at kappa=10^-8**. No correction to the conditional calculation is required.
+
+This is an interface/arithmetic check, not proof that the hypotheses hold. Actual endpoint regularity L<=10^6, the larger-coupling Schur/synthesis qualification, and complete time-dependent estimates remain open. No larger-coupling runtime, finite apparatus, family theorem or retained/audit result follows.
+
+## Sources and exposure
+
+N=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree.
+
+| Source | SHA256 |
+|---|---|
+| N/weighted_mass_composition/PROPOSAL.md, fully read | 79fe84afc4a244c346161a75b2850d81790f1c4add88009e6761d7cc7c939491 |
+| W/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9 |
+| N/endpoint_spectral_mass_assessment/ASSESSMENT.md, complete preceding-task read reused | f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8 |
+| N/endpoint_spectral_mass_check/REVIEW.md, preceding check reused | eef72a0d61cb9ba79756fea1492aa507027a7b515b77e04c1230751cf47d4712 |
+
+The canonical weighted/emitter/normalization sections were read completely in this agent's preceding coherent tasks, at unchanged source identity, and reused. I authored the original fixed-kappa weighted estimate and independently checked the separate local-mass lemma. This review is therefore a source-exposed composition check, **not an additional independent derivation of my own original weighted proof**. Root's proposed bounds and premise list were visible before checking. No new thin-strip or other worker result is needed here.
+
+No scientific executable, numerical integration, parameter sweep, inherited checker or simulation was run. Tools only read/hash sources and write this report. No W/Git/PR/checkpoint, prompt, axiom, source or publication edit occurred, and model/effort was preserved. Previously read applicable methodology instructions were reused.
+
+## 1. Coupling-dependent terms
+
+Under the required exact compensated endpoint background, G and L are pre-emitter quantities: varying kappa does not change the retained background diagonal or its reference planes. The compensation and positivity conditions must be kept in the extension; otherwise the claim that the background is unchanged would fail.
+
+With the same exact block formulas and ||D_cc^-1||<6, the resonant self-energy correction retained in the pointwise denominator proof is bounded by6kappa^2 epsilon_G^2 after division by the leading kappa^2. The outgoing-row correction retains the complementary vector norm6kappa^2 epsilon_G. For 0<kappa<=10^-8 and epsilon_G=10^-22,
+
+    6kappa^2 epsilon_G^2 <=6e-60,
+    6kappa^2 epsilon_G <=6e-38.
+
+Consequently
+
+    (J/sin k)[epsilon_G+6kappa^2 epsilon_G^2]
+      <(.031/.4)(1e-22+6e-60)<1e-23,
+    J epsilon_L(1+6kappa^2 epsilon_G)/(1-d)
+      <.031*1e-21*(1+6e-38)/(1-25e-6)<3.2e-23.
+
+The unchanged filter/port slopes and nonzero floors can therefore feed the same pointwise intercept/slope2e-13+750|k-k0|. The algebra uses kappa>0 and the positive imaginary reference denominator; it does not include kappa=0. These scalar inequalities do not themselves prove the actual complementary inverse, full density, absence of singular spectrum or scattering synthesis at a new kappa. Those remain the explicit extension hypotheses.
+
+## 2. Actual measure and normalization
+
+At the numerical endpoint kappa=10^-8, take the proposed mass premises literally:
+
+    q_actual<4.85e-8,
+    1-p0<4.54e-8.
+
+They concern actual seed and actual scalar-reference spectral measures, respectively. They must not be interchanged. The reference still has global variance kappa^2, so the same positive restricted-moment argument gives
+
+    ||(k-k0)f||_2 <= kappa/(v sqrt(p0)).
+
+This is a bound on the existing normalized profile f=Fref/sqrt(p0), not a new weighting of the delivered state. It retains the original hard cutoff and every global reference spectral contribution in the variance premise.
+
+To check the stated normalization factor, (1-4.54e-8)*(1.0000001)^2>1. Thus p0>1-4.54e-8 implies1/sqrt(p0)<1.0000001. Therefore
+
+    delta=||F_j/sqrt(p0)-omega_p f||_2
+      <2e-13+750*kappa/(v sqrt(p0))
+      <2e-13+.0003*(1.0000001)
+       =.0003000000302 <.000300001.
+
+This is the full complex L2 mismatch, not a signed average or a modulus-only comparison. No global Lorentzian approximation or removed point mass is used.
+
+## 3. Complete static comparison
+
+The real-seed incoming coefficient is conjugate(F_j), while the same comparison packet has a0,j=conjugate(omega_p f). Its in-band state error is bounded by
+
+    ||F_j-omega_p f||_2 <=sqrt(p0)delta+1-sqrt(p0)
+                         <delta+q_ref.
+
+The actual omitted spectral amplitude is bounded by sqrt(q_actual)<.000221 because (.000221)^2=4.8841e-8>4.85e-8. It is added to the in-band error and remains in the full-state comparison; no actual state is conditioned or renormalized. Two old-energy residual columns within one parity may overlap, so the preparation operator uses sqrt(2)<1.415, with different parities orthogonal.
+
+For the outgoing coefficient, the exact real-seed relation and actual one-channel unitarity yield
+
+    R_inst,j conjugate(omega_p f)-omega_p f
+       =e_j-R_inst,j conjugate(e_j),
+    e_j=F_j/sqrt(p0)-omega_p f.
+
+Its L2 norm is <=2delta. Fourier evolution and restriction contract it; the old columns occupy orthogonal fixed open internal fibers, so this part takes the maximum scalar bound rather than another sqrt(2). The displayed complete static sum is consequently
+
+    1.415*(.000221+.000300001+.0000000454)
+       +2*.000300001
+      =.001337282656 <.001338.
+
+The residual actual mass, reference normalization cost and both old-column rules are accounted for exactly once. The gap to the .003 tolerance is therefore greater than .001662. This is available error allowance, not a decay theorem. Passive references, original old aging and scalar phase preserve these operator norms.
+
+## 4. Scope of the result
+
+The explicit correction-term inequalities hold across the proposed coupling range conditional on the required endpoint interfaces. The numerical mass premises and the .001338 static conclusion in this document are evaluated at kappa=10^-8 only; this review does not silently turn them into uniform mass bounds for every smaller kappa.
+
+The conditional mass lemma still needs its useful actual regularity certificate or an equivalent checked mass enclosure. The fixed-kappa published source is not a range-wide Schur/synthesis proof. Complete localized decay, incoming escape and normalization of the changed target waveform must be established for the changed kappa and combined with finite transfer before any apparatus/time claim is warranted. Merely improving the static allowance does not reduce size or runtime.
+
+With these conditions explicit, the proposed weighted/mass interface is compatible. No source correction is requested, and no new physical premise or qualified coupling/runtime theorem is supplied by this report.

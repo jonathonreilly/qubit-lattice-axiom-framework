@@ -1,0 +1,187 @@
+# Independent analytical check of endpoint background regularity
+
+## Finding
+
+The proposed complex-disk construction and real-axis cancellation support
+
+    ||dGtr(end,end)/dE||<35000,
+    |ds_j/dE|<36000
+
+on the original band (hence on the stated inner energy interval), under the pinned background matching/kernel premises, for every relevant old-energy/parity column and 0<kappa<=10^-8. No failed identity or insufficient numerical constant was found. This supplies a checked conditional regularity lemma; it does not by itself certify a new complete runtime or mass/resource composition.
+
+Two terse steps benefit from explicit reconstruction, supplied below: the exterior open-row bound <130 uses the exact absolute-origin identity (T_g)_PP=Aopen r_g z^2, not the generic ||T_g||<208; and closed A/A' bounds follow directly from the free full-line resolvent gap. These are consequences of the stated physical kernel and conventions, not new assumptions. No numerical correction to the proposal is required.
+
+## Sources, scope and exposure
+
+N=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree.
+
+| Source | SHA256 |
+|---|---|
+| N/endpoint_background_regularity/PROPOSAL.md, complete read | 1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c |
+| W/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9 |
+| N/endpoint_spectral_mass_assessment/ASSESSMENT.md, prior complete read reused for interface only | f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8 |
+
+The proposal and intended constants were read before reconstruction. The exact canonical bare M16/kernel, filter response, port mixing, endpoint termination and emitter formulas were previously read fully in this coherent task and reused at unchanged identities. This is source-exposed same-model independent checking of the new analytic regularity steps, not a new calibration of the ancestor matrices or a blind/model-diverse review. I previously reviewed the endpoint spectral/contour interfaces and authored a separate weighted-profile proposal; neither its authorship nor prior numerical targets establishes this derivative result.
+
+No scientific executable, inherited checker, numerical integration, quadrature, parameter grid or optimization was run. Tools only read/hash sources and write this report. No W/Git/PR/checkpoint, prompt, axiom, source, proposal, publication or audit edits were made; no agents/model overrides were used. Applicable procedural reads are reused. The mass theorem and subsequent complete runtime composition are outside this report's conclusion.
+
+## 1. Complex disks and bare matching
+
+Fix a real center k in I and |w-k|<=rho=10^-12. The actual cosine dispersion satisfies |E'|,|E''|<.062 there. The seven complementary free-channel spectra are separated from the real center energy by>.17: the nonvacuum B sector is bounded below by1+Delta_min because source excitation number is preserved and the added Csrc/Gsrc blocks are positive, while the other vacuum band's distance is>1.8. This is a free-lead gap, not a full-core gap.
+
+For a closed half-line endpoint resolvent m_l with q_l=-J m_l, resolvent identity yields
+
+    |q_l(w)-q_l(k)|<=J|DeltaE|/[.17(.17-|DeltaE|)]<2|DeltaE|,
+    |q_l'(w)|<=J*.062/(.17-.062rho)^2<.125.
+
+Thus every closed root remains holomorphic on the disk and |q_l|<.15. The open root exp(iw) has norm and derivative<1.001. Because the projectors of B are fixed and orthogonal, ||Q'||<1.001 has no channel-count multiplier.
+
+Using the exact recurrence identity -JQ^-1=lambda-2J-B+JQ converts the lower M16 block to an expression whose derivative is bounded by .062+.031*1.001<.1. The other varying block is simply lambda, and off-diagonal J blocks are constant. Therefore ||M16'||<.1. Real inverse bound166 gives perturbation product<1.66e-11, and the inverse extends with norm<167.
+
+For the open A entry, Aopen=1/(iE'), so ||Aopen||<41 and |Aopen'|<.062/(.025-.062rho)^2<101. Each closed A entry is the diagonal Green function of the free full-line channel. Its resolvent norm is <=1/(.17-|DeltaE|), hence its diagonal and derivative bounds are <6 and <.062/(.17-.062rho)^2<3. This proves the proposal's A and A' bounds without a potentially ambiguous square-root sign:
+
+    ||A||<41, ||A'||<110,
+    ||T_g||<208, ||T_g'||<167^2*.1+110<3000.
+
+Analyticity follows from these explicit branches and finite inverses, not from small real-axis reflection error.
+
+## 2. Two-site continuation and the bare reflection plane
+
+For n,m in {F,F+1}, F=20, the derivative of
+
+    Gg(n,m)=A Q^|n-m|+Q^(n-1)T_g Q^(m-1)
+
+has each block bounded by
+
+    110+42+40*1.001*208*exp(40rho)+3000*exp(40rho)<12000.
+
+The two-by-two block operator norm is at most twice the maximal block norm, hence<3e4. Both finite internal block dimensions and the two-site factor are counted. Since ||V||<.05, ||Delta(I-GgV)||<1500rho. The real response inverse2000 extends to<2100, while the real open K0 inverse500 extends to<501 by the corresponding Neumann inequalities. These hold on disks centered even at I's endpoints; no assertion of a larger real certified interval is needed.
+
+The source's bare incoming right-hand side at site1 is iE'/exp(iw). Its norm is <.063 and derivative <.125. Therefore the site0/1 matching solution has norm<11 and derivative bounded by
+
+    167^2*.1*.063+167*.125<205.
+
+At the physical absolute-origin convention, its open site1 component obeys psi_1=exp(-iw)+r_g exp(iw). Thus r_g=exp(-iw)psi_1-exp(-2iw); differentiating gives a bound below220, already smaller than the proposal's loose1000. Any stated equivalent two-step reference conversion remains covered by1000. Starting from |r_g(k)|=1 on the real axis, integration along the disk radius gives |r_g(w)|<1.001. No off-real unitarity is used.
+
+## 3. Analytic filtered-arm error
+
+The cross blocks at the two filter sites come only from the image term and obey<500 r_c^19 with r_c=.15. The closed block has bound<(1+r_c)*6+416r_c^38<7. Consequently its response inverse is<1/(1-.35)<2. The two-site incoming open norm is<4 from the incoming plus reflected waves; the closed boundary solution followed by geometric propagation supplies the loose<20r_c^18 bound.
+
+The scalar open solution obeys ||xP0||<501*4<2100. Its full open Schur correction is bounded by
+
+    (500r_c^19)^2*.05^2*2=1250r_c^38.
+
+This gives the perturbed inverse<1002. The exact two-block forcing estimate in the proposal becomes
+
+    1002*[1000r_c^37+2,625,000r_c^38]
+      =1002*394750*r_c^37<10^9r_c^37.
+
+The corresponding closed solution is bounded by
+
+    2[20+500*.15*.05*2101]r_c^18
+      =15797.5r_c^18<16000r_c^18.
+
+The exterior open-row constant needs the physical reflection identity. In the open-open part of the exact kernel, the reflected image is Aopen r_g exp(i(n+m)w), whereas the displayed T_g image has exp(i(n+m-2)w). Therefore
+
+    (T_g)_PP=Aopen r_g exp(2iw).
+
+For the outgoing coefficient toward the exterior, the two P row entries each have norm bounded by the free plus reflected terms, approximately41*(1+1.001) with harmless exp(F rho) factors. Their Euclidean two-site row norm is<130. The Pc row comes only from T_g's cross image and is<500r_c^19. One must extract the outgoing coefficient before bounding these rows; the arbitrary-distance growing open wave itself is not uniformly bounded off real axis.
+
+Multiplication by V and the two solution differences thus gives
+
+    |delta_r| <=130*.05*10^9r_c^37
+                   +500r_c^19*.05*16000r_c^18
+                <10^10r_c^37<3e-20.
+
+The last comparison follows from r_c^35<10^-28 and r_c^2<.03. All relevant inverses and scalar scattering denominators are analytic in the disks, so delta_r is analytic. Cauchy at every real center gives |delta_r'|<3e-8. This derivative estimate is genuinely new complex-domain control; it is not inferred from the existing small real value.
+
+## 4. Analytic endpoint correction and its phase planes
+
+The two coefficient blocks in Cfilter have the exact free/image form, hence their combined norm is<sqrt(2)*(41+208)exp(40rho)<400. The propagated updated coefficient satisfies
+
+    ||Ttilde||<208exp(40rho)+400^2*.05*2100<2e7.
+
+Port mixing is a fixed real orthogonal transformation of the two-arm direct sum; its norm is one. Each port block is bounded by the same2e7. The distance from the filter reference at F+1 to the port origin N+1 is N-F=24. Adding ell=20 input powers gives44 closed powers in each off-diagonal component of X=Q^ell T_aa Q^ell, and88 in its closed diagonal component. The open component is exactly X0=Aopen R_bg exp(2iell w)P. Thus
+
+    ||X-X0||<7e7 r_c^44<1e-27.
+
+This retains the actual absolute port-origin shift; using N instead of N+1 would change phases, although not the loose norm constants.
+
+The scalar filter parity denominators remain nonzero: their real-center modulus is at least J sin(k)>.012 and their disk change<.032rho. Their rational quotient derivatives are<100 using |v_f|<.1. Together with the real-axis central bounds this gives |a(w)|<6e-6 and |b(w)/exp(iw)-i|<7e-6. Combining these with |r_g(w)|<1.001 in the exact concatenation proves |r_scalar+r_g|<3e-5. After the port phase exp(90iw) and division by two, |R_bg(w)|<2e-5. This is a background disk estimate, unrelated to the installed emitter resonance.
+
+The comparison D_b0=A+QX0Q is diagonal. Its open inverse is Aopen^-1/(1+R_bg exp(42iw)), and its closed inverse is A_c^-1. These expressions, the original strict ||A^-1||<20 and continuity estimates from the explicit root formulas give ||D_b0^-1||<22. For example a closed inverse entry has derivative bounded by |E'| times the bounded ratio |2J+b_l-lambda|/|sqrt((2J+b_l-lambda)^2-4J^2)|, so its disk variation is tiny; no inverse norm on the infinite continuous spectrum is invoked. The open denominator is separated by1-2e-5 exp(42rho).
+
+The perturbation Q(X-X0)Q then gives ||D_b^-1||<23. The actual outer factors A+X have norm<42, and ||Q||<1.001. In the exact three-factor difference for F(X), the inverse-difference contribution is bounded by
+
+    42^2*(1.001)^4*23*22<9e5,
+
+while both outside-factor contributions and the identity are<3000. Thus the loose Lipschitz constant2e6 is safe.
+
+For the diagonal comparison, direct scalar algebra gives the open g(w), and each closed entry is -q_l(w)/J. This identity holds on the analytic branches, not merely for real roots. It follows that the actual analytic correction satisfies
+
+    ||DeltaG(w)||<2e-21<1e-18,
+    ||DeltaG'(k)||<1e-6
+
+by operator-valued Cauchy with rho=1e-12. Applying scalar Cauchy to fixed unit input/output vectors proves the operator estimate without a factor eight. This verifies the entire small-error derivative bridge used later.
+
+## 5. Real reflection cancellation and energy derivative
+
+Write Bf=b/z, q=r_g z^40, U=Bf^2+1-aq and H=r_scalar+r_g. The exact expression is
+
+    H=z^-42 a+r_g U/(1-aq).
+
+On the real band |Bf|<=1, |Bf'|<=6, |a'|<=5, |r_g'|<=700, so
+
+    |q'|<=740,
+    |U|<=17e-6,
+    |U'|<=12+5+5e-6*740=17.0037,
+    |(aq)'|<=5.0037.
+
+Differentiating the displayed expression, including the -42 reference phase, yields the proposal's four-term bound, whose sum is below22.017 and hence<23. In particular the large bare derivative700 multiplies the small U; replacing the derivative of the whole half-sum by two unrelated700 bounds would miss this cancellation.
+
+The physical pre-emitter port reflection is
+
+    R_bg=z^90(H+delta_r)/2,
+
+because the port shift is2(N+1)=90. Using the real small value of delta_r separately from its newly bounded derivative gives
+
+    |R_bg'|<[23+3e-8+90*(23e-6+1e-20)]/2<12.
+
+This differentiates the pre-emitter background reflection, not the installed resonant reflection.
+
+For g=-z/J-(z/J)N/(1+R_bg z^42), N=R_bg z^40(1-z^2), the real bounds give
+
+    |N|<=2r, |N'|<=24+82r<24.001,
+    |(R_bg z^42)'|<12.001, r=12e-6.
+
+Keeping the derivative of the exterior z as well gives
+
+    |g'|<=J^-1[1+2r/(1-r)+24.001/(1-r)
+                         +2r*12.001/(1-r)^2]<850.
+
+The complementary diagonal derivative is<.125/.03<5. Since the comparison is block diagonal, its operator derivative norm is the maximum of these two bounds, not their sum. Adding ||DeltaG'||<1e-6 gives ||G'(k)||<851. Dividing by E'(k)>.025 proves
+
+    ||dG/dE||<34040<35000.
+
+The source's symmetric inner energy interval is contained in E(I), so this uniform real-band estimate covers the complete proposed mass-lemma interval.
+
+## 6. Complementary emitter term through the coupling range
+
+For 0<kappa<=10^-8, the complementary bare emitter gap>.18 and ||G||<35 give ||D_cc^-1||<6 by the direct same-band Schur inequality. All derivative blocks of G are bounded by35000, while its actual off-diagonal real values remain<1e-22. Hence
+
+    ||dD_cc/dE||<=1+kappa^2*35000<2,
+    ||d(D_cc^-1)/dE||<6^2*2=72.
+
+Differentiating s_j=G_jj+kappa^2G_jc D_cc^-1G_cj, with kappa fixed during the energy derivative, gives
+
+    |ds_j/dE|<35000+kappa^2[2*35000*6*1e-22+72*1e-44]
+               <36000.
+
+Every complementary direction and every product-rule term is present. A small cross value is used only to multiply its separately established whole-matrix derivative, not to infer that derivative. The correction is negligible but not set to zero. All four old-energy/parity channels share the supplied uniform constants.
+
+## Disposition and limits
+
+The proof's new decisive steps—background disks, full analytic closed-channel error, endpoint Cauchy derivative and pre-emitter reflection cancellation—survive this reconstruction. The resulting L=36000 may be used as a checked conditional regularity premise in a separately assembled mass argument, with these exact source identities. It is not a numerical certificate, global spectral theorem, installed complex-strip continuation or independent recertification of the inherited real calibration/kernel premises.
+
+The local-mass lemma, larger-coupling spectral synthesis and actual complete output/runtime composition retain their own source and review obligations. No source modification, useful-time assertion, empirical prediction, native supplier, retained audit or finite permanent halt is supplied by this report.

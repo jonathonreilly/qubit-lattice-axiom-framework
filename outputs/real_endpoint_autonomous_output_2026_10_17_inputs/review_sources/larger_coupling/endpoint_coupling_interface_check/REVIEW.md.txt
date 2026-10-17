@@ -1,0 +1,96 @@
+# Independent analytical check of the actual endpoint coupling interface
+
+## Finding
+
+The proposed real-axis interface extends under the unchanged conditional background premises to every **0<kappa<=10^-8** on the original sigma=10^-6 band. The positive physical installation, full eight-coordinate emitter inverse, local spectral density/jump/synthesis, nonzero reference normalization p0>=.84 and stated complex-ratio interfaces check out. No correction is required for these claims.
+
+This is an interface result at each positive kappa, not a uniform bounded inverse as kappa tends to zero. It proves no useful missing-mass estimate, endpoint Lipschitz constant, complex strip, complete decay, runtime or device-size improvement. In particular the old fixed-kappa small mass and derivative/contour constants are not continued by this report.
+
+## Sources and exposure
+
+N=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934.
+W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree.
+
+| Source | SHA256 |
+|---|---|
+| N/endpoint_coupling_interface/PROPOSAL.md, read completely | 7d1cb4ba6fa19a2529f1453ab5a471207dfa1156d801cbaa944bc639ab191676 |
+| W/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md | d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9 |
+
+The canonical physical endpoint compensation, background gap/kernel, exact emitter Schur and full spectral-interface sections were read in the preceding coherent tasks at this unchanged identity and reused here. The new coupling argument was read before reconstruction; constants and desired conclusions were exposed. I previously reviewed endpoint spectral normalization and authored the original weighted-profile estimate, so this is source-exposed same-model checking, not blind/model-diverse evidence or an additional independent origin for that weighted proof. This review reconstructs the new coupling and spectral applicability, rather than treating fixed-kappa status as an automatic family qualification.
+
+No scientific code, inherited executable, numerical integration or simulation was run. File reads/hashes and this report write were the only operations. No W/Git/PR/checkpoint, prompt, axiom, proposal, publication or audit edits were made; model/effort is unchanged. Applicable methodology reads are reused.
+
+## 1. Physical terms, scalar and unchanged background
+
+The installed terms are Q(-kappa), (E0-kappa)n_e and (J-kappa)n_end. The first is positive on the full two-qubit space with spectrum0,0,2kappa,2kappa; the other two are positive since J>.03 and E0>.0048. The latter bound follows from sin(k0)>.4 and 1-cos(k0)=sin^2(k0)/(1+cos(k0))>.08. All these margins exceed10^-8.
+
+The end site's remaining ordinary bond contributes J to its one-head diagonal, and the new bond and occupation compensation contribute kappa+(J-kappa)=J. The total is exactly2J. The emitter diagonal is kappa+(E0-kappa)=E0. These are occupation terms, not vacancy terms, so no extra kappa-dependent scalar is produced. The actual c_new, shared B, old K/W, graph and pre-emitter background compression remain fixed.
+
+This exact compensation is what permits using the same G, epsilon_G, epsilon_L and terminated-background inverse throughout the range. The reference waveform changes with kappa through its actual denominator and normalization; it is not a common nominal waveform across different installed devices. The original one-head radius also remains below18 by direct substitution in9.5+4J+7.926+.05+kappa<18. This does not by itself specify a finite runtime.
+
+## 2. Full complementary and resonant inverse
+
+For each selected old-energy/parity column, the other seven emitter directions have bare energy distance>.18 on the same band. Since ||G||<35, their perturbation has norm<35kappa^2<=3.5e-15. The inverse bound follows from the smallest-singular-value perturbation inequality, not Hermiticity of the retarded block:
+
+    ||D_cc^-1|| <=1/(.18-3.5e-15)<6.
+
+The exact scalar Schur denominator is
+
+    D_j=E-E0-kappa^2G_jj-kappa^4G_jc D_cc^-1G_cj.
+
+Using the actual terminated scalar g_j, |1-z^2|=2sin(k), the fixed |R_j|<eta=12e-6 and off-diagonal Green errors gives
+
+    |D_j-Dref|/Im Dref
+      <=2eta/(1-eta)+(J/sin k)(epsilon_G+6kappa^2epsilon_G^2)
+      <1/40000.
+
+The inequality is uniform: the only new upper-endpoint correction is6e-60 inside the bracket, negligible beside epsilon_G=1e-22. Since Im Dref=kappa^2 sin(k)/J and sin(k)>.4, J<.031,
+
+    Im D_j>(1-1/40000)kappa^2 sin(k)/J>12kappa^2.
+
+Thus D_j is nonzero for every positive kappa; taking kappa=0 would destroy this conclusion and is explicitly excluded.
+
+The exact block inverse factors into two triangular matrices around diag(D_j^-1,D_cc^-1). Their off-diagonal maps are respectively kappa^2G_jcD_cc^-1 and kappa^2D_cc^-1G_cj, with norms<6kappa^2epsilon_G<=6e-38. Each triangular matrix has norm<=1+a by triangle inequality. Hence
+
+    ||D_e^-1|| <=(1+a)^2 max(1/(12kappa^2),6)
+                <1/(10kappa^2).
+
+The maximum is the resonant bound throughout the range, and (1+6e-38)^2<6/5 supplies ample margin. No scalar-only emitter approximation or erroneous factor eight is used. Inserting this invertible Schur block into the fixed invertible terminated background gives the actual finite core inverse. Its norm need not remain equal to the previously fixed1.2e23 constant.
+
+## 3. Local spectral interface at each positive kappa
+
+The fixed real core and one-output-lead boundary retain the exact form
+
+    M_j(k)=(b_j+E(k))I-Hcore,kappa+J P_out Q_j(k)P_out*,
+    Phi_j,core=M_j(k)^-1 iE'(k)P_out u_j.
+
+The source's threshold-free closed roots and the open root exp(ik) are unchanged because the exterior B and lead are unchanged. At every fixed positive kappa, the proven real-axis invertibility plus analytic entries gives an analytic finite matching inverse in a neighborhood of each band point. The neighborhood may depend on kappa; no uniform complex strip is concluded.
+
+Any normal in-band eigenvector must have zero incoming and outgoing open waves. Its closed tail is determined by the finite boundary coordinates. Those coordinates would solve M_j(k)x=0 and thus vanish; all tails then vanish. Hence there is no in-band point eigenvector. Resolvent subtraction uses the unchanged boundary jump and gives
+
+    R_+-R_- =-(i/E')Phi_j Phi_j*,
+    dP_H=Phi_j Phi_j* dk/(2pi)
+
+on finite coordinates and, by the recurrence, every finite-support matrix element. Analytic matching and threshold-free roots make these local finite-coordinate densities smooth. Finite-support vectors are dense, so no hidden singular-continuous band component remains. Nothing is concluded about the spectrum outside the band.
+
+For completeness, the local synthesis isometry is not an assumption of global scattering completeness. The density formula defines the local transform T from the band spectral subspace into L2(I), with coefficient Phi_j* v/sqrt(2pi) on finite-support v. It is isometric by the spectral theorem and intertwines H with multiplication by b_j+E(k). Its closed range is a reducing subspace for this scalar multiplication operator; since E is one-to-one on I, such a range is L2 of a measurable subset of I. The unit-incoming generalized column is nonzero at each k: its open tail cannot vanish at all sites with incoming coefficient1. Thus its finite-coordinate coefficients do not all vanish on any positive-measure subset, and the range cannot omit such a subset. The range is all L2(I), giving the required local multiplicity-one synthesis isometry. The argument repeats at each positive kappa and invokes no scattering transform outside I.
+
+Reality, the same spectral normalization and one open physical channel then give F_j=R_inst,j conjugate(F_j), |R_inst,j|=1 on the real band. This statement does not assume that the two-port pre-emitter reflection is the installed reflection, or that a complex continuation is unitary.
+
+## 4. Seed measure, p0 and complex profiles
+
+For a real old basis column u_j, (H-mean)e_j is exactly -kappa times its neighboring endpoint vector. Its mean is c_new+b_j+E0 and variance kappa^2. The statement is per eigenbasis column; an arbitrary old superposition can additionally have old-energy variance, which is not incorrectly bounded by kappa^2 here. The scalar reference emitter has the same variance and unit global spectral mass.
+
+Outside the relevant physical band, the energy distance from that mean is at least v sigma=2.5e-8. Spectral Chebyshev yields omitted probability <=(kappa/(v sigma))^2 and reference mass
+
+    p0>=1-(kappa/(v sigma))^2>=1-.16=.84>0.
+
+Therefore the actual f_kappa=Fref/sqrt(p0) is defined throughout the range. Actual exterior point, singular and continuum mass remains in the residual. The upper-endpoint amplitude bound .4 is deliberately crude and establishes no small complete-output error.
+
+The exact outgoing row -kappa L D_e^-1 u_j and Stone factor iE'/sqrt(2pi) are unchanged. Dividing by the corresponding Fref cancels the leading kappa. The remaining explicit coupling corrections are6kappa^2epsilon_G^2 and6kappa^2epsilon_G; at the upper endpoint they are <=6e-60 and <=6e-38. They fit the existing denominator and outgoing-row error margins. Consequently both the uniform complex ratio epsilon_F=.000752 and the pointwise2e-13+750|k-k0| interface continue under this reconstructed Schur/spectral extension. These are ratio estimates; the fixed-kappa numerical weighted L2 bound3.1e-8 and tiny p0 deficit are not claimed for the enlarged range.
+
+Arbitrary complex old/reference inputs follow linearly from the real basis columns. Conjugation in the scalar real-seed identity does not conjugate arbitrary input coefficients. Old aging, the physical scalar and target phase conventions remain intact.
+
+## Limits and disposition
+
+The proposed interface is supported with no correction. It removes a specific hidden-fixed-kappa concern: real-axis invertibility and local synthesis can indeed be re-established on the unchanged band by the full Schur bound rather than merely citing the fixed-kappa theorem. It does not establish a useful energy regularity constant, the proposed improved missing-mass bounds, any fixed thin strip across the entire range, complete-output decay or a resource improvement. Existing runtime constants must be rederived if kappa changes. The supplied Hamiltonian/state and physical-identification limitations remain unchanged; no native supplier, retained audit, reset or permanent finite halt follows.

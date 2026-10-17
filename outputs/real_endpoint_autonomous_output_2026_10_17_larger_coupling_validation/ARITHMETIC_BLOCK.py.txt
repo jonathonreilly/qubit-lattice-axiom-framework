@@ -1,0 +1,171 @@
+    # DRAFT, NOT EXECUTED: insert before check_arithmetic's return.
+    # Scalar rational corroboration ONLY. Analytic/matching/spectral identities
+    # and aggregation rules are premises pinned in the accompanying CHECK_MAP.
+    # Unique lc_ names preserve all original kap/T and historical checks.
+    lc_kap=F('1e-8'); lc_rho=F('1e-12'); lc_h=F('1e-18')
+    lc_T=4*10**21; lc_M=50*lc_T; lc_rc=F('.15')
+    lc_vel=F('.025'); lc_sig=F('1e-6'); lc_Ep=F('.062')
+    lc_gap=F('.17'); lc_epsG=F('1e-22'); lc_epsL=F('1e-21')
+    # Complex disk scalar envelopes. exp(x)<=1/(1-x), 0<=x<1,
+    # is an analytical series inequality, not a computed complex exponential.
+    lc_exp40=1/(1-40*lc_rho)
+    lt('LC disk exponential envelope',lc_exp40,F('1.001'))
+    lt('LC disk closed resolvent coefficient',J/(lc_gap*(lc_gap-lc_Ep*lc_rho)),2)
+    lt('LC disk closed root',F(1,7)+2*lc_Ep*lc_rho,lc_rc)
+    lt('LC disk closed derivative',J*lc_Ep/(lc_gap-lc_Ep*lc_rho)**2,F('.125'))
+    lt('LC disk matrix derivative',lc_Ep+F('.031')*F('1.001'),F('.1'))
+    lt('LC disk bare inverse',F(166)/(1-166*F('.1')*lc_rho),167)
+    lt('LC disk open A derivative',lc_Ep/(lc_vel-lc_Ep*lc_rho)**2,101)
+    lt('LC disk closed A',1/(lc_gap-lc_Ep*lc_rho),6)
+    lt('LC disk closed A derivative',lc_Ep/(lc_gap-lc_Ep*lc_rho)**2,3)
+    lt('LC disk Tg derivative',167**2*F('.1')+110,3000)
+    lt('LC disk filter block derivative',110+42+(40*F('1.001')*208+3000)*lc_exp40,12000)
+    lt('LC disk two-site derivative',2*12000,30000)
+    lt('LC disk filter Neumann hypothesis',2000*1500*lc_rho,1)
+    lt('LC disk full filter inverse',F(2000)/(1-2000*1500*lc_rho),2100)
+    lt('LC disk scalar filter inverse',F(500)/(1-500*1500*lc_rho),501)
+    lt('LC disk bare column',167*F('.063'),11)
+    lt('LC disk bare column derivative',167**2*F('.1')*F('.063')+167*F('.125'),205)
+    lt('LC disk bare reflection derivative',F('1.001')*(205+11)+2*F('1.001'),1000)
+    lt('LC disk bare reflection',1+1000*lc_rho,F('1.001'))
+    lt('LC disk closed filter block',(1+lc_rc)*6+416*lc_rc**38,7)
+    lt('LC disk closed filter inverse',1/(1-7*F('.05')),2)
+    lt('LC disk scalar open column',501*4,2100)
+    lt('LC disk open Schur inverse',F(501)/(1-501*1250*lc_rc**38),1002)
+    lt('LC disk open correction coefficient',1002*(1000+2625000*lc_rc),10**9)
+    lt('LC disk closed column coefficient',2*(20+500*lc_rc*F('.05')*2101),16000)
+    # The 130 outgoing-row premise uses Tg_PP=Aopen*r_g*z^2;
+    # generic ||Tg||<208 alone would not supply that row bound.
+    lt('LC disk outgoing row squared',2*(41*(1+F('1.001'))*lc_exp40)**2,130**2)
+    lt('LC disk reflected correction coefficient',130*F('.05')*10**9+500*F('.05')*16000,10**10)
+    lt('LC disk reflected correction',10**10*lc_rc**37,F('3e-20'))
+    eq('LC disk Cauchy reflection ceiling',F('3e-20')/lc_rho,F('3e-8'))
+    lt('LC disk exterior factor squared',2*(41+208)**2*lc_exp40**2,400**2)
+    lt('LC disk updated kernel',208*lc_exp40+400**2*F('.05')*2100,2*10**7)
+    lt('LC disk endpoint correction input',7*10**7*lc_rc**44,F('1e-27'))
+    lt('LC disk inverse difference product',42**2*F('1.001')**4*23*22,9*10**5)
+    lt('LC disk termination Lipschitz',9*10**5+3000,2*10**6)
+    lt('LC disk Cauchy endpoint derivative',F('2e-21')/lc_rho,F('1e-6'))
+    # Real pre-emitter reflection cancellation, including phases 42 and 90.
+    lc_ad=1-F('5e-6')
+    lc_Hprime=(5+42*F('5e-6')+700*F('17e-6')/lc_ad
+               +F('17.0037')/lc_ad+F('17e-6')*F('5.0037')/lc_ad**2)
+    lt('LC background cancellation derivative',lc_Hprime,23)
+    lc_Rprime=(23+F('3e-8')+90*(F('23e-6')+F('1e-20')))/2
+    lt('LC background port derivative',lc_Rprime,12)
+    lc_rmax=F('12e-6')
+    lc_gprime=(1+2*lc_rmax/(1-lc_rmax)+F('24.001')/(1-lc_rmax)
+               +2*lc_rmax*F('12.001')/(1-lc_rmax)**2)/J
+    lt('LC background endpoint derivative',lc_gprime,850)
+    lt('LC background energy derivative',F(851)/lc_vel,35000)
+    lt('LC complementary inverse energy derivative input',1+lc_kap**2*35000,2)
+    lt('LC exact selfenergy energy derivative',35000+lc_kap**2*(2*35000*6*lc_epsG+72*lc_epsG**2),36000)
+    lt('LC regularity supplies mass L ceiling',36000,10**6)
+    # Real coupling interface: positive physical compensation and full Schur.
+    lt('LC emitter onsite positive',lc_kap,E0)
+    lt('LC endpoint onsite positive',lc_kap,J)
+    eq('LC endpoint compensated diagonal',J+lc_kap+(J-lc_kap),2*J)
+    eq('LC emitter compensated diagonal',lc_kap+(E0-lc_kap),E0)
+    lt('LC real complementary inverse',1/(F('.18')-35*lc_kap**2),6)
+    lc_Drelative=2*lc_rmax/(1-lc_rmax)+(J/F('.4'))*(lc_epsG+6*lc_kap**2*lc_epsG**2)
+    lt('LC real resonant relative correction',lc_Drelative,F(1,40000))
+    lt('LC real resonant imaginary floor',12,(1-F(1,40000))*F('.4')/J)
+    lt('LC real full emitter inverse factor',(1+6*lc_kap**2*lc_epsG)**2,F(6,5))
+    lt('LC outgoing row correction',J*lc_epsL*(1+6*lc_kap**2*lc_epsG)/(1-F('25e-6')),F('3.2e-23'))
+    lt('LC physical radius',F('9.5')+4*J+F('7.926')+F('.05')+lc_kap,18)
+    # Exact finite-interval mass lemma: exp(1)>sum_{n=0}^4 1/n!=65/24>8/3.
+    # Thus argument<(8/3)^18 implies log(argument)<18; no float log is used.
+    lt('LC exponential rational lower proof',F(8,3),1+1+F(1,2)+F(1,6)+F(1,24))
+    lc_d=lc_vel*lc_sig; lc_A=F(35); lc_B=F(17); lc_bmin=F(12)
+    lc_L=F(10**6); lc_H=F(46)
+    lt('LC mass denominator smallness',lc_kap**2*lc_L*(1+lc_A/lc_bmin),F(1,2))
+    lt('LC mass cutoff separated',lc_kap**2*lc_A,lc_d)
+    lc_logarg=1+(lc_d+lc_kap**2*lc_A)/(lc_kap**2*lc_bmin)
+    lt('LC mass logarithm argument',lc_logarg,F(8,3)**18)
+    lt('LC mass H bound',2*18+F(10,3)*lc_A/lc_bmin,lc_H)
+    lc_mass_tail=2*lc_kap**2*lc_B/(3*(lc_d-lc_kap**2*lc_A))
+    lc_mass_actual=lc_mass_tail+2*lc_kap**2*lc_L*lc_H/3
+    lt('LC actual exterior mass',lc_mass_actual,F('4.85e-8'))
+    lt('LC actual exterior amplitude squared',F('4.85e-8'),F('.000221')**2)
+    lt('LC reference energy derivative',1/(J*lc_vel),1334)
+    lc_mass_ref=lc_mass_tail+2*lc_kap**2*1334*lc_H/3
+    lt('LC reference missing mass',lc_mass_ref,F('4.54e-8'))
+    lc_p0low=1-F('4.54e-8')
+    lt('LC positive reference normalization',0,lc_p0low)
+    lt('LC reference inverse normalization squared',1,lc_p0low*F('1.0000001')**2)
+    lt('LC reference amplitude factor squared',1,17**2*6*J**2*lc_p0low)
+    # Complex bridge: these are substitutions AFTER the analytic disk proof.
+    lc_gdisk=(1/(1-lc_rho))/J*(1+F('2e-5')/(1-40*lc_rho))/(1-F('2e-5')/(1-42*lc_rho))
+    lt('LC bridge open disk bound',lc_gdisk,34)
+    lt('LC bridge full disk bound',34+F('2e-21'),36)
+    lc_bridge_var=36*(lc_h/lc_rho)/(1-lc_h/lc_rho)
+    lt('LC bridge matrix oscillation',lc_bridge_var,F('.000037'))
+    lt('LC bridge complementary disk inverse',1/(F('.18')-lc_Ep*lc_rho-36*lc_kap**2),6)
+    lt('LC bridge Schur correction',lc_kap**2*36**2*6,F('8e-13'))
+    lc_bridge_s=lc_bridge_var+2*lc_kap**2*36**2*6
+    lt('LC bridge exact selfenergy oscillation',lc_bridge_s,F('.000038'))
+    lt('LC bridge strip resonant loss',lc_Ep*lc_h+lc_kap**2*lc_bridge_s,6*lc_kap**2)
+    # Background source trace and continuation; trace has eight coordinates/site.
+    lc_B0=F('2.24e18'); lc_P0sq=F('1.008e23')
+    lc_theta=F('.1')*lc_B0*lc_h
+    eq('LC background Neumann product',lc_theta,F('.224'))
+    lt('LC background Neumann hypothesis',lc_theta,1)
+    lt('LC background strip inverse',lc_B0/(1-lc_theta),F('2.89e18'))
+    lt('LC background strip selected column squared',lc_P0sq/(1-lc_theta)**2,F('4.1e11')**2)
+    lt('LC background strip endpoint',35+F('.1')*lc_h*lc_P0sq/(1-lc_theta),13100)
+    lt('LC background source jump trace',F('.122')*112*8*2*10**16,F('1.5e9')**2)
+    lt('LC background source continuation',(F('1.5e9')+lc_Ep*lc_B0*lc_h)/(1-lc_theta),2*10**9)
+    lt('LC strip complementary inverse',1/(F('.18')-lc_Ep*lc_h-lc_kap**2*13100),6)
+    lc_rankfactor=1+lc_kap**4*6**2*13100**2
+    lt('LC strip emitter inverse',6+lc_rankfactor/(6*lc_kap**2),F('.18')/lc_kap**2)
+    lt('LC strip update factor squared',1+lc_kap**2*F('4.1e11')**2,4101**2)
+    lc_side_D=lc_vel*lc_sig-F('.061')*lc_h**2-lc_kap**2*13100-lc_kap**4*6*13100**2
+    lt('LC strip cutoff denominator',F('2.49e-8'),lc_side_D)
+    lt('LC strip cutoff emitter inverse',6+lc_rankfactor/lc_side_D,5*10**7)
+    lt('LC strip bottom complete C',3*2*10**9*(1+lc_kap*4101*F('.18')/lc_kap**2)+4,5*10**20)
+    lt('LC strip side complete C',3*2*10**9*(1+lc_kap*4101*5*10**7)+4,F('1.4e13'))
+    lt('LC strip conjugate coefficient',17*lc_Ep/12,F('.088'))
+    eq('LC strip bottom exponential argument',lc_vel*lc_T*lc_h,100)
+    lt('LC strip exponential integer lower',10**30,2**100)
+    lc_locbottom=F('1.5')*lc_sig*F('.088')/lc_kap*5*10**20
+    lc_locside=F('1.5')*44*lc_kap/lc_sig*F('1.4e13')/(lc_vel*lc_T)
+    eq('LC strip bottom aggregation expansion',lc_locbottom,F('6.6e21'))
+    eq('LC strip side aggregation expansion',lc_locside,F('9.24e-8'))
+    lc_loc=lc_locbottom/F(10**30)+lc_locside
+    lt('LC strip complete localized',lc_loc,F('1e-7'))
+    # Scalar strips may be deeper; no continuation of C to these depths.
+    lc_ho=lc_kap**2/(4*J**2); lc_hi=lc_sig/2; lc_s=lc_vel*lc_T-113
+    lt('LC scalar outgoing strip lower',F('2.5e-14'),lc_ho)
+    lt('LC scalar outgoing sinh envelope',2*J**2*lc_ho/(lc_kap**2*(1-lc_ho**2)),F('.501'))
+    lt('LC scalar outgoing imaginary margin',6,F('.4')*F('.499')/J)
+    lt('LC scalar common cutoff floor',F('.024')*lc_sig,
+       lc_vel*lc_sig-F('.061')*lc_hi**2-lc_kap**2/J/(1-lc_hi))
+    lt('LC scalar outgoing coefficient',17*lc_Ep/6,F('.176'))
+    lt('LC scalar outgoing bottom prefactor',F('.176')*2*J,F('.012'))
+    lt('LC scalar side denominator squared',F('1.7e10')**2,3*lc_s)
+    lc_target_tail=88*lc_kap/(lc_sig*F('1.7e10'))+F('.012')*lc_sig/lc_kap**2*24/(lc_s*lc_ho)**4
+    lt('LC scalar target negative tail',lc_target_tail,F('1e-10'))
+    lt('LC scalar target positive normalization',lc_target_tail**2,F('1e-20'))
+    lt('LC scalar incoming sqrt height',F('7e-4')**2,lc_hi)
+    lc_incoming=88*lc_kap/(lc_sig*F('1.7e10'))+88*lc_kap/F('7e-4')*24/(lc_vel*lc_T*lc_hi)**4
+    lt('LC scalar incoming complete',lc_incoming,F('1e-10'))
+    # Restricted dk moment: exact local reference density, not global Lorentzian.
+    lt('LC restricted moment amplitude',lc_Ep/(2*J)*140*F('1.0000001'),145)
+    eq('LC restricted moment square coefficient',2*lc_sig*145**2,F('.04205'))
+    lt('LC restricted moment norm squared',2*lc_sig*145**2,F('.21')**2)
+    lc_delta=F('2e-13')+750*F('.21')*lc_kap
+    lt('LC restricted complex mismatch',lc_delta,F('1.6e-6'))
+    lc_static=F('1.415')*(F('.000221')+F('.0000016')+F('.0000000454'))+2*F('.0000016')
+    eq('LC complete static arithmetic',lc_static,F('.000318243241'))
+    lt('LC complete static ceiling',lc_static,F('.000319'))
+    lc_total=F('.000319')+F('1e-7')+F('1e-10')+F('1e-20')
+    lt('LC complete infinite ceiling',lc_total,F('.000320'))
+    eq('LC finite output length',lc_M,2*10**23)
+    lt('LC finite exponential margin',36*lc_T*F(6,5)+9,lc_M+23)
+    # sinh(1)<6/5 is the inherited analytic bound; e>8/3 was proved above.
+    lt('LC finite transfer prefactor',F(4)/(1-F(3,8))*F(3,8)**9,F('.001'))
+    lt('LC complete finite ceiling',lc_total+F('.001'),F('.001320'))
+    eq('LC infinite unhalved trace ceiling',2*F('.000320'),F('.000640'))
+    eq('LC finite unhalved trace ceiling',2*F('.001320'),F('.002640'))
+    eq('LC sufficient onset improvement ratio',F(10**27,lc_T),250000)
+    eq('LC sufficient length improvement ratio',F(5*10**28,lc_M),250000)

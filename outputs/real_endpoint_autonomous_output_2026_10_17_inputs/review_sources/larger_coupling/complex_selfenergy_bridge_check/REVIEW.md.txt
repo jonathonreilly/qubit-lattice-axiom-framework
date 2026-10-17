@@ -1,0 +1,86 @@
+# Conditional complex self-energy bridge review
+
+Verdict: the narrow bridge is correct conditional on the stated analytic disk premises. No correction is needed. It implies the proposed oscillation <.000038, hence the downstream Schur interface's <1 condition. This review does not qualify the disk construction, the larger-coupling real emitter bound, spectral mass, or a complete runtime theorem.
+
+## Scope, exposure and sources
+
+I read the complete root-authored `../complex_selfenergy_bridge/PROPOSAL.md` and complete `../endpoint_background_regularity/PROPOSAL.md`. The latter's disk construction is an explicit assumption for this narrow review; a separate checker owns its derivation. Reading it establishes premise identity, not independent endorsement of its matching calculations.
+
+I authored the downstream `../schur_strip_interface/PROPOSAL.md` and preceding spectral assessment. Thus I am familiar with and invested in the downstream proposed application; this is an author-exposed check of a distinct root-authored bridge, not blind independence or a second independent derivation of my own Schur proposal. The selected model/effort is unchanged. No science execution, W/Git/PR/checkpoint/prompt change or new agent was used. Only source reading, hashing and this review write occurred. Previously read unchanged methodology guidance applies.
+
+Exact SHA256 pins are recorded below after the analytical findings. The controlling fixed-apparatus note remains `d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9`; no larger-kappa conclusion is imported from its fixed-kappa theorem.
+
+## 1. Premises actually consumed
+
+For every real x in the unchanged I, the exact pre-emitter endpoint matrix G is holomorphic on a neighborhood of the closed disk |w-x|<=rho, rho=10^-12. It has the exact decomposition
+
+    G(w)=g(w)P-Qc(w)/J+DeltaG(w),
+    g(w)=-(exp(iw)/J)
+           [1+R_bg(w)exp(40iw)]/[1+R_bg(w)exp(42iw)],
+
+with fixed orthogonal open/complementary projections, .03<J<.031, |R_bg|<2e-5, ||Qc||<.15 and ||DeltaG||<2e-21 on each disk. The chosen analytic branches and fixed real internal basis are part of these premises. The real complementary bare emitter gap exceeds .18 and |E'(w)|<.062 there.
+
+There is no need to differentiate the real port cancellation or prove a real energy derivative bound to establish this bridge. Conversely, such a real derivative bound alone would not replace the disk hypotheses.
+
+## 2. Uniform matrix bound
+
+Reverse triangle inequality gives
+
+    |g(w)| <= exp(rho)/J
+       *[1+2e-5 exp(40rho)]/[1-2e-5 exp(42rho)] <34.
+
+The denominator is positive and very far from zero; the same displayed bound remains <34 using exp(42rho)<1.000000001 and 1/J<100/3. Also ||Qc/J||<.15/.03=5. Since gP and -Qc/J act on orthogonal fixed subspaces, the norm of their direct sum is their maximum. Consequently ||G||<34+2e-21<35, and the proposed loose bound 36 is valid. Summing 34 and 5 would unnecessarily lose this useful constant; no channel-count factor is needed.
+
+## 3. Operator Cauchy and the whole narrow rectangle
+
+Expand G(x+z)=sum_(n>=0) A_n z^n. The operator-valued Cauchy integral, or scalar matrix elements with independent unit dual vectors followed by the supremum, gives ||A_n||<=36/rho^n. For |z|<=h=10^-18,
+
+    ||G(x+z)-G(x)||
+      <=sum_(n>=1)36(h/rho)^n
+       =36*10^-6/(1-10^-6)
+       <.000036000037<.000037.                    (1)
+
+This controls genuinely complex increments. Holomorphy on a neighborhood of the closed disk permits the circle radius rho directly; if only an open-disk formulation were used, taking inner radii to rho yields the same bound. The hypotheses provide a disk centered at every x in I, including both endpoints. Hence (1) covers the bottom and both vertical sides of the desired lower rectangle without extending the real certified band. Fixed orthogonal projection onto the jj entry is contractive, so the same estimate bounds |Gjj(w)-Gjj(x)|.
+
+## 4. All complementary emitter coordinates
+
+At the real center the bare complementary emitter block is self-adjoint and its distance from zero exceeds .18. Its complex energy shift has norm <.062rho, and its endpoint correction has norm <36kappa^2. At the single proposed kappa=10^-8,
+
+    sigma_min(Dcc(w))>.18-.062*10^-12-36*10^-16,
+    ||Dcc(w)^-1||<6.                              (2)
+
+This is a singular-value perturbation/Neumann statement; it does not assume Dcc(w) stays self-adjoint or normal. It also establishes its analytic inverse, so the exact scalar Schur correction is analytic. All seven complementary coordinates remain in Dcc.
+
+Contractivity of block projections gives ||Gjc||,||Gcj||<36, with no assumption of small off-real cross blocks. Thus at both w and x,
+
+    |s_j-Gjj|
+      =|kappa^2 Gjc Dcc^-1 Gcj|
+      <10^-16*36^2*6
+       =7.776*10^-13<8*10^-13.                    (3)
+
+Using a triangle inequality for the two correction values is valid; a derivative of Dcc^-1 is unnecessary here. The bridge does not omit that derivative from a claimed product derivative—it never takes one.
+
+Combining (1) and (3),
+
+    |s_j(w)-s_j(x)|
+      <.000037+1.6*10^-12<.000038<1.              (4)
+
+The absolute sum and units are correct: rho and h are momentum increments, kappa^2 multiplies Green matrices in the exact Schur denominator, and the later .062h energy shift is paid separately.
+
+## 5. Meaning for the downstream interface
+
+If the real bound Im Dj(x)>12kappa^2 is separately supplied at this same kappa, then along w=x-iy,
+
+    Im Dj(w)>12kappa^2-.062h-kappa^2*.000038.
+
+At kappa=10^-8, h=10^-18 the loss divided by kappa^2 is less than .00062+.000038=.000658. This leaves >11.999342kappa^2, comfortably above the Schur proposal's required 6kappa^2. No off-real unitarity, scalar-only core replacement, or installed-reflection derivative enters this implication.
+
+That conclusion is conditional twice: on the exact disk construction and on the same-coupling real emitter inequality. Neither is independently established in this review. Complete output still requires the separately specified mass/profile/normalization, C/tail contour, both cutoff sides, old-column aggregation and finite-window transfer bounds. The bridge introduces no claim that those obligations have passed.
+
+## Source pins
+
+- Root bridge: `../complex_selfenergy_bridge/PROPOSAL.md`; SHA256 `0f627a4c3390ab007be46794b37a2daa21399dc61de7f23417e4082d2051e892`.
+- Conditional disk source: `../endpoint_background_regularity/PROPOSAL.md`; SHA256 `1229768dfdc065c6396a7f5d9ca0c8518f0862d8523a1dc9efed2ae9b3f6b64c`.
+- Authored downstream interface: `../schur_strip_interface/PROPOSAL.md`; SHA256 `16cc6ce85dd6bd40cf9ca6084274fd9b9d438134b39b35af21646a3af4f82a39`.
+
+Disposition: acceptable as a conditional bridge. Await the separate disk check and full composition; no broader scientific qualification is implied.

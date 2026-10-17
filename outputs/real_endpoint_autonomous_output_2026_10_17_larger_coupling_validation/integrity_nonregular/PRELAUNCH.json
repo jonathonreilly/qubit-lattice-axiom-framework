@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-O",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/larger_coupling_validation/integrity_scratch_nonregular/scripts/real_endpoint_autonomous_output_2026_10_17.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/larger_coupling_validation/integrity_scratch_nonregular",
+  "utc": 1792241501.9866738,
+  "wall_limit_sec": 10,
+  "cpu_limit_sec": 10,
+  "file_limit_bytes": 16777216,
+  "memory_cap": "not applied",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/larger_coupling_validation/integrity_scratch_nonregular/scripts/real_endpoint_autonomous_output_2026_10_17.py",
+      "bytes": 49007,
+      "sha256": "93cc122aa253fc2a6fc26748826561bdf61343227e36a9f1df02f4f248e5b991"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "bytes": 52640,
+      "sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5"
+    }
+  ]
+}

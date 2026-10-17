@@ -1,0 +1,130 @@
+# Independent check of the finite-interval endpoint spectral-mass lemma
+
+## Finding
+
+The local-density comparison lemma and its stated numerical conditional example are mathematically supported. I found no sign error, lost factor in the finite logarithmic integral, discarded spectral complement, or incorrect old-column aggregation. No correction to equations (1)–(2) is required.
+
+This establishes a conditional implication only. **The energy Lipschitz premise L<=10^6 is not supplied or proved by this review or the canonical endpoint theorem.** The latter is fixed at kappa=10^-12. Using the example at kappa=10^-8 additionally requires the stated extension of the actual emitter Schur/profile/local spectral interfaces. The example does not establish a new coupling family, runtime or complete resource theorem.
+
+## Exact sources and exposure
+
+Reviewed assessment, read completely:
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261017_110934/endpoint_spectral_mass_assessment/ASSESSMENT.md
+SHA256 f81fd349ce1d67c0ce1ed7b8d3405dbdc63aca5602a59e2c4d80caec18ebd6e8.
+
+Controlling canonical source:
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/REAL_ENDPOINT_AUTONOMOUS_OUTPUT_BOUNDED_THEOREM_NOTE_2026-10-17.md
+SHA256 d3a48c35bf77a7ee5a084b949ff30573610282b97b88f3ad31bed3f5991894e9.
+
+The exact endpoint termination, all-eight-coordinate emitter Schur formula and local spectral/normalization argument were refreshed. Remaining necessary canonical conventions and procedure instructions were read in this agent's preceding coherent tasks and reused at these identities. I previously reviewed endpoint spectral/contour arguments and authored a separate weighted-profile proposal. Neither my weighted proposal nor a new thin-strip result is used to prove the present mass lemma. The current assessment and its targets were read before reconstruction, so this is same-model, source-exposed review, not blind/model-diverse checking.
+
+No scientific executable, inherited code, quadrature, numerical integration or simulation was run. File reads/hashes and this report write were the only operations. No W/Git/PR/checkpoint, prompt, axiom, proposal or publication edits were made; no agents or model/effort overrides were used. The family proposal mentioned in the assessment was not qualified or used as an established theorem here. Its optional full-runtime orientation lies outside this narrow review.
+
+## 1. Scalar resolvent identity and sign
+
+Let e_j be the normalized emitter coordinate with internal B eigenvector u_j and bare energy b_j+E0. Since B u_j=b_j u_j, deleting only e_j from the full self-adjoint Hamiltonian leaves a self-adjoint complement whose coupling to e_j is -kappa times the endpoint coordinate u_j. In the convention (z-H)^-1, its compressed resolvent has nonpositive imaginary part in the upper half-plane. The exact one-coordinate Schur identity therefore is
+
+    m_j(x+i0)=1/[x-kappa^2 s_j(x)],
+    Im s_j(z)<=0 for Im z>0.
+
+Eliminating the seven remaining emitter coordinates inside this complement yields precisely
+
+    s_j=G_jj+kappa^2 G_jc D_cc^-1 G_cj.
+
+The plus sign in s_j and minus sign in x-kappa^2 s_j agree with the canonical D_j formula. There is no adjoint inserted between retarded blocks and no claim that their product is pointwise positive; positivity of the measure follows from the actual self-adjoint complement. The seven complementary coordinates remain present.
+
+Write s_j(x)=a(x)-i b(x). Stone gives
+
+    -(1/pi)Im m_j(x+i0)
+       =kappa^2 b(x)/[pi|x-kappa^2 s_j(x)|^2].
+
+This is the seed's density in energy x. Its momentum density is |F_j(k)|^2, so division by E'(k)>0 is correct. There is no extra2pi, square root of velocity, core-trace factor or old-column multiplicity.
+
+The inner energy interval [-d,d], d=v sigma, lies inside E(I)-E0 by monotonicity and E'>v along both sides of k0. Its use can only weaken a lower bound on the original band mass; it does not widen a certified interval.
+
+## 2. Pointwise denominator comparison
+
+Use the lemma's assumptions s_j(0)=a-ib, |a|<=A, b_min<=b<=B, b_min>0 and |s_j(x)-s_j(0)|<=L|x| on [-d,d]. Define c=kappa^2 a, gamma=kappa^2 b and D0=x-c+i gamma. Then
+
+    |x|/|D0| <= |x-c|/|D0|+|c|/|D0|
+               <=1+|c|/gamma <=1+A/b_min.
+
+The smallness hypothesis kappa^2 L(1+A/b_min)<=1/2 gives
+
+    |(x-kappa^2 s_j(x))-D0|<=|D0|/2,
+    |x-kappa^2 s_j(x)|>=|D0|/2>0.
+
+Subtracting the two scalar inverses, rather than comparing only their moduli, yields
+
+    |m_j-m0| <=2kappa^2 L |x|/[(x-c)^2+gamma^2],
+    m0=1/(x-c+i gamma).
+
+This remains valid through the resonance; there is no division by |x| or an assumption that the resonance is centered at zero. The nonzero real shift is retained explicitly.
+
+## 3. Finite logarithmic integral and comparison tails
+
+Put D=d+kappa^2 A. With u=x-c, the integration domain is contained in [-D,D]. Splitting |x|<=|u|+|c| gives
+
+    integral_[-d,d] |x|/[(x-c)^2+gamma^2] dx
+      <=log(1+(D/gamma)^2)+pi |c|/gamma
+      <=2log(1+D/(kappa^2 b_min))+pi A/b_min =H.
+
+The first term comes from the integral of |u|, whose antiderivative supplies one logarithm of1+(D/gamma)^2, not an extra factor two. The final bound uses 1+r^2<=(1+r)^2 and is conservative. The shift term is bounded using the full-line integral pi/gamma. The finite D must remain in the logarithm; no divergent full-line absolute first moment is introduced.
+
+The normalized comparison density is gamma/[pi((x-c)^2+gamma^2)]. If d>kappa^2 A, each of its two exterior tails is bounded using 1/(u^2+gamma^2)<=1/u^2. Their sum is
+
+    <=gamma/pi[1/(d-c)+1/(d+c)]
+    <=2kappa^2 B/[pi(d-kappa^2 A)].
+
+The actual density differs in absolute value from the comparison density by at most |m_j-m0|/pi. Integrating and combining the two estimates proves
+
+    missing mass <=2kappa^2 B/[pi(d-kappa^2 A)]
+                     +(2kappa^2 L/pi)H.
+
+Thus equation (1)'s factor2, pi and finite endpoints are correct.
+
+## 4. Residual spectrum and reference normalization
+
+The actual normalized seed measure has total mass one. Its mass outside the original band is at most one minus its mass on the inner interval, and therefore at most one minus the integrated inner absolutely continuous density. Exterior point mass, singular-continuous mass and absolutely continuous mass are all included in this remainder. The proof does not assert that the algebraic comparison m0 is the actual resolvent outside the interval.
+
+In fact the lower-mass argument alone needs only the actual ac density: any singular mass inside the inner interval would add nonnegative mass and cannot invalidate the inequality for the exterior complement. For using the canonical packet representation of the band, the established local nonsingularity/synthesis interface is still needed or any extra singular component must explicitly remain in the residual. The canonical fixed-kappa source supplies that interface; its extension to a new kappa is a separate hypothesis in the numerical application. No global scattering completeness is needed.
+
+The reference resolvent has exact s_ref=-exp(ik(x))/J. Since dk/dx=1/E', its derivative magnitude is1/(J E')<1334 on the unchanged band. Applying the same mass lemma to its normalized global seed measure bounds1-p0: the full original band contains the chosen inner interval. The argument does not renormalize a Lorentzian or condition the actual seed. Positive target normalization satisfies1-sqrt(p0)<=1-p0.
+
+## 5. Conditional constants at kappa=10^-8
+
+The source's background geometry and G bounds are independent of the emitter coupling. Repeating the complementary Schur estimates at the proposed coupling is nevertheless necessary before adopting the resulting s_j as a certified input. Conditional on that repetition, the listed center constants are consistent:
+
+    A=35, B=17, b_min=12.
+
+The source's scalar g_j difference and epsilon_G give |G_jj+exp(ik)/J|<.000801. The central sin(k0)<.5 and J>.03 then imply -Im s_j(0)<17, while the actual Schur imaginary lower bound gives >12. The complementary correction is bounded by6kappa^2 epsilon_G^2. The real bound35 has ample margin. None of these estimates establishes an energy derivative bound. In particular epsilon_G alone supplies no control of its derivative.
+
+Assuming L<=10^6, kappa^2=10^-16 gives
+
+    kappa^2 L(1+35/12)<4e-10<1/2,
+    d-kappa^2 A=2.5e-8-3.5e-15>0.
+
+The logarithm argument1+(d+kappa^2 A)/(kappa^2*12) is less than2.1e7. Its logarithm is <18 (for example the elementary series bound e>8/3 gives (8/3)^18>4e7). Therefore
+
+    H<36+(10/3)*35/12<46.
+
+Using pi>3, the comparison-tail contribution is <4.534e-8 and the Lipschitz contribution <3.067e-9. Their sum is <4.85e-8. Since (.000221)^2=4.8841e-8, the actual exterior amplitude is <.000221. For L_ref<1334, the second contribution is <4.1e-12, giving1-p0<4.54e-8. The stated numerical rounding is safe.
+
+Assuming the same pointwise complex profile bound epsilon_F=.000752 and local synthesis have also been extended to this kappa, the preparation comparison is at most
+
+    sqrt(2)[epsilon_F sqrt(p0)+1-sqrt(p0)+sqrt(q_mass)].
+
+The two old-energy residual columns can overlap, requiring the existing sqrt(2)<1.415; separate parities are orthogonal. Substituting the conservative ceilings gives the assessment's combined static budget
+
+    1.415*(.000752+.000221+.0000000454)+.001504
+      =.002880859241 <.002881.
+
+The .001504 outgoing discrepancy is the same real-seed conjugate-packet identity with normalized f and epsilon_F; its orthogonal open fibers require no further sqrt(2). The residual spectral mass is paid once in preparation and is not silently removed from this comparison. Approximately .000119 remains before .003, but this is not a certificate that all escape terms fit that allowance.
+
+## 6. What remains open
+
+The endpoint-specific estimate |s_j'|<=10^6 in energy units, uniformly on the inner interval and over the relevant old/parity columns at the proposed coupling, is the decisive unproved premise. Smoothness on a compact real interval proves existence of a finite derivative bound but not the proposed magnitude. The enormous generic column-norm bound does not establish impossibility or actual large variation. Differentiating the pre-emitter reflection and closed correction, or a rigorously enclosed scalar resolvent contour, remains a legitimate route to this premise.
+
+The assessment's upper-half-plane contour alternative has the correct conceptual sign and analytic domain for the (z-H)^-1 convention, but no contour enclosure is provided or qualified by this report. Both side terms and any comparison-resolvent subtraction must remain in a future certificate.
+
+Finally, the example's Schur/profile extension, complete localized/incoming/normalization bounds and finite transfer must be checked together before publishing a new coupling/runtime result. The optional family-runtime numbers in section4 were not independently reconstructed here and are not endorsed as a theorem. This review supports the finite-interval lemma and its explicitly conditional mass/static arithmetic only; it supplies no new physical premise, retained/audit status or complete resource claim.

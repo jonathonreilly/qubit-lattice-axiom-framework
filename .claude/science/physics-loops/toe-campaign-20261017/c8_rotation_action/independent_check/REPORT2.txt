@@ -1,0 +1,95 @@
+INDEPENDENT CHECK 2: extension of the corrected C8 note
+(docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md)
+
+Method: I wrote my own general pair test first (general_pair_test.py, general_pair_axis_L10.py) and my own
+cohomology check (cohomology_check.py). Only afterwards did I read and run the runner. It gives
+TOTAL: PASS=9 FAIL=0 and agrees on every number.
+
+(a) GENERAL PAIR TEST: CONFIRMED, all 108 (code, C2) pairs, both uniform sectors, lambda = +1
+
+  My implementation
+  - Window: an R-invariant set of edges, the distance-1 neighbourhood of a lattice path x -> Rx together with
+    its R-image. (The runner uses a bounding box.)
+  - Constraints, solved over GF(2):
+      * B_x and B_Rx flipped, every other B unflipped;
+      * no plaquette flipped unless a corner is within L-infinity distance 1 of x or Rx;
+      * <S,g> = <S^R,g> for every generator g.
+  - Checks on each solution: the B syndrome is exactly {x, Rx}; O = S^dag S^R commutes with all generators;
+    O decomposes in the generator span (local and contractible); lambda is the sign of O in the signed
+    group G_s.
+  - Several solutions per x: the particular solution plus random nullspace vectors.
+
+  Results (out_general_pair_L8.txt, out_general_pair_axis_L10.txt)
+  - All 96 edge-C2 pairs at L = 8.
+    Per pair: up to 14 x values, separations 1, 2 and >= 3, 6 sampled solutions each.
+    Every sampled solution in both sectors gives lambda = +1:
+      sep >= 3: 1728 per sector
+      sep = 2:  4224 per sector
+      sep = 1:  1536 per sector
+  - All 12 axis C2s.
+      * At L = 8 the separation |x - Rx| is even, so 2, or 4 = L/2, which is ambiguous on the torus with
+        minimal images. I therefore also ran L = 10 at separation 4: all 224 solutions per sector give +1.
+      * At L = 8, separation 2: 600 per sector, all +1.
+  - No "no solution" and no noncontractible O for any BKSF pair.
+
+  Your question: is "same syndrome as S^R" enough, or can a symmetric local excitation contaminate lambda?
+  - Why the condition is the right one.
+      * It is exactly what makes S|vac> a P_R-eigenstate: O commutes with all generators and is local,
+        so O is in +-G and P_R S|vac> = lambda S P_R|vac>.
+  - Why it is the pair's sector invariant.
+      * Two solutions differ by K = S S'. K has no B syndrome, and an R-symmetric plaquette syndrome
+        confined to N1(x) and N1(Rx). Fluxes form closed loops, so modulo stabilizers
+        K = K_x K_x^R h, with h a stabilizer element.
+      * Then O' = +-O times (stabilizer factors) times [K_x, K_x^R].
+      * The stabilizer factors carry sign +1. Reason: P_R preserves the signed group, and
+        (S^dag S^R)^R = (S^dag S^R)^dag = S^dag S^R.
+      * So lambda can change only through the commutator [K_x, K_x^R]. This commutator does not depend on
+        the stabilizer representative, and it is +1 when the two clusters can be cleaned to disjoint
+        supports, i.e. when x and Rx are well separated (the note's separation >= 3).
+  - Numerical confirmation.
+      * Random nullspace sampling found zero spread among all solutions.
+      * This holds even at separations 1 and 2, where the argument alone does not guarantee it.
+  - Conclusion: no contamination observed or possible at the separations used.
+
+  Minor wording
+  - N4 says x and Rx are "separated by at least 3" for all 108 pairs at L = 8. For an axis C2 the separation
+    is even, so it is 4 = L/2.
+  - This is fine in the runner, which uses an unwrapped window of side 7. It is worth stating, or the axis
+    C2s should also be run at L = 10.
+
+(b) TORIC CONTROL: CONFIRMED
+  - Toric-code boson, my general pair test at L = 8 (and the earlier path test at L = 6).
+  - Flux 0: lambda = +1 for every C2 tested, about vertex, edge-midpoint and plaquette axes.
+  - Pi flux:
+      * lambda = -1 exactly for the C2 whose axis passes through centres of plaquettes perpendicular to it
+        (a cube-centre + plaquette-centre axis, my C2x with t = (0,1,1); the runner uses C2z with
+        t = (1,1,0));
+      * lambda = +1 for the vertex C2;
+      * lambda = +1 for axes through plaquettes parallel to the axis.
+  - The runner prints {0: (1,1), 1: (-1,1)}, which matches.
+
+(c) COHOMOLOGY STEP: CONFIRMED (cohomology_check.py, exact GF(2) linear algebra; out_cohomology.txt)
+  - D2 = {1, C2z, C2(110), C2(1-10)}:
+      * dim H^2(D2; Z2) = 3;
+      * the square map (w(g,g) for the three involutions) is injective on H^2, so the 8 classes correspond
+        to the 8 sign patterns;
+      * the SU(2) lifts of the three mutually orthogonal pi rotations all square to -1, which is the Q8 class
+        (equivalently, the three squares force the commutator to -1).
+  - D3 (C3 about (111) and an edge C2):
+      * dim H^2(D3; Z2) = 1, detected by the square of any involution;
+      * w2 restricted is nontrivial (binary dihedral group of order 12).
+  - Z2: trivial.
+  - Hence "class on the whole stabilizer = w2 restricted" holds for every code. This uses (a) for all
+    three C2s of each order-4 code, which is exactly what the 36 newly closed pairs supply.
+  - Caveat to keep: this is the class under P_R. Under P_R W the class is trivial (the note already says so).
+
+Note-level comments
+  - Item 4 / item 5: lambda = theta_f eta_f is stated as an input calibrated by the checks.
+    It can be derived in two lines, so it could be called derived rather than an input. Write
+    alpha(c+_x) = a c+_Rx and alpha(c+_Rx) = b c+_x. Then lambda = theta_f * ab and eta_f = alpha^2 = ab.
+  - Everything else in the extension matches my independent results.
+
+Files (this folder)
+  - Code: general_pair_test.py, general_pair_axis_L10.py, cohomology_check.py.
+  - Outputs: out_general_pair_L8.txt, out_general_pair_axis_L10.txt, out_cohomology.txt.
+  - Runner output (comparison only): scratchpad runner_out.txt.

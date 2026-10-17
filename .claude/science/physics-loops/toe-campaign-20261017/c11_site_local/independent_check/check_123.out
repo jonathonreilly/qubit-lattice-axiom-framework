@@ -1,0 +1,10 @@
+(1) L=4 all 720: commute True half dims {(3, True): 720} edge dims {(3, True): 720}
+codes: half 60 edge 60 same partition True
+(1b) L=6 half dims over 60 reps {(3, True): 60}
+(2) site action: A^o_e -> A^{Ro}_{Re} exact (incl. phase), B->B, R->R: checks 3317760 failures 0 89 s
+(3) site stabilizer == edge stabilizer for all 60: True
+    orbit size -> #codes: {4: 12, 6: 12, 12: 36}
+    (4, (('C2edge', 3), ('C3', 2), ('E', 1))) 12
+    (6, (('C2axis', 1), ('C2edge', 2), ('E', 1))) 12
+    (12, (('C2edge', 1), ('E', 1))) 36
+elapsed 89 s

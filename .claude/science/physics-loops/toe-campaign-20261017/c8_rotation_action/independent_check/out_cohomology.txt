@@ -1,2 +1,4 @@
-D2 (axis C2z + edge C2 (110), (1-10)) | order 4 | #H^2 classes: 8 | involutions: 3 | squares-pattern determines class: True
+D2 (axis C2z + edge C2 (110), (1-10)) | order 4 | dim H^2(G;Z2) = 3 | involutions: 3 | class determined by squares of involutions: True
+   w2 restricted: squares of involution lifts = [-1, -1, -1] | nontrivial class: True
+D3 (C3 about (111) + edge C2 (1-10)) | order 6 | dim H^2(G;Z2) = 1 | involutions: 3 | class determined by squares of involutions: True
    w2 restricted: squares of involution lifts = [-1, -1, -1] | nontrivial class: True

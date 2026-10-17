@@ -55,6 +55,7 @@ blocks:
     note: docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md
     runner: scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py (PASS=9, ~3.5 min)
     exact: ["8 translation-invariant sign sectors valid for all 60 codes", "sectors (0,0,0)/(1,1,1) = flux 0/pi; every stabilizing rotation acts by bare permutation there", "mixed sectors need sign corrections (control)"]
+    pair_test_check: "second round CONFIRMED (own general pair test, L=8/10; toric controls; cohomology by GF(2))"
     pair_test: "all 108 (code,C2) pairs (general method, L=8; C10): lambda=+1 -> eta_f(C2,C2) = -1 under bare permutation P_R; per code the class on its rotation stabilizer = w2 restricted (D3 nontrivial, D2 = Q8 class, Z2 nontrivial); P_R*prod exp(-i pi B/4) gives trivial class (realization-dependent); AB control returns -1"
     independent_check: "claims 1-4 CONFIRMED (L=4,6); first-version claim eta_f=+1 REFUTED (restriction of P_R to a region is not a valid localization); pair test + Majorana form + W dressing adopted; note rewritten and renamed"
     trace_class: frontier_discovery

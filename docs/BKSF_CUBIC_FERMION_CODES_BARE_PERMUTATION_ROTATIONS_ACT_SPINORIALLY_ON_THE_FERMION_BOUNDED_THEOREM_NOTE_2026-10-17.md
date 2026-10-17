@@ -72,9 +72,15 @@ for P_R.
      return -1.
 5. **Spinorial action and the spin-1/2 class.**
    - **The relation.** For a pair swapped by C2,
-     lambda = theta_f eta_f(C2, C2). The independent check calibrated it:
-     the boson cases above, and a scalar fermion with c_v -> c_{Rv}, which
-     gives -1.
+     lambda = theta_f eta_f(C2, C2).
+     - Derivation: if the rotation sends c_x^dagger to a c_{Rx}^dagger and
+       c_{Rx}^dagger to b c_x^dagger, then the pair c_x^dagger
+       c_{Rx}^dagger goes to ab c_{Rx}^dagger c_x^dagger
+       = theta_f ab c_x^dagger c_{Rx}^dagger. So lambda = theta_f ab,
+       and eta_f(C2, C2) = ab.
+     - The independent check also calibrated it numerically: the boson
+       cases above, and a scalar fermion with c_v -> c_{Rv}, which gives
+       -1.
    - **Every C2 is spinorial.** With theta_f = -1, eta_f(C2, C2) = -1 for
      every C2 of every code under P_R: C2^2 acts on the emergent fermion as
      (-1)^F.
@@ -158,6 +164,18 @@ reading the runner. Its verdicts:
   - This note's runner reproduces the 72 with independent code.
   - The runner closes the remaining 36 with the general method of item 4,
     which does not need a symmetric hop system.
+- **Second round: confirmed.** The agent wrote its own general pair test
+  using R-invariant path windows, with random nullspace sampling.
+  - It confirmed lambda = +1 for all 108 pairs in both sectors, including
+    separations 1 and 2 and axis C2's at L = 10.
+  - It confirmed the toric controls.
+  - It confirmed the cohomology step by exact GF(2) computation:
+    - H^2(D2; Z2) = Z2^3, with classes in bijection with the sign patterns
+      of the squares;
+    - H^2(D3; Z2) = Z2.
+  - It also argued why the "same syndrome" condition fixes lambda: two
+    valid solutions differ only by separated local clusters and
+    stabilizers.
 
 Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/independent_check/`.
 
@@ -204,8 +222,11 @@ Files: `.claude/science/physics-loops/toe-campaign-20261017/c8_rotation_action/i
 - **N4 — inputs.** Exact Pauli algebra with phases.
   - The covered-pair test runs on the L = 4 torus, with paths inside a box
     of side 2.
-  - The general pair test runs on the L = 8 torus, with windows of side at
-    most 7 and x, Rx separated by at least 3.
+  - The general pair test runs on the L = 8 torus, with unwrapped windows
+    of side at most 7 and x, Rx separated by at least 3.
+    - For an axis C2 the separation is even, so this means 4, half the
+      torus.
+    - The independent check repeated the axis-C2 cases at L = 10.
   - In both, S^dagger S^R is local and contractible.
   - The group-cohomology facts used in item 5 are standard. The relation lambda = theta_f eta_f is an
   input, calibrated by the independent check.

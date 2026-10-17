@@ -6,27 +6,59 @@ restriction (w2) on the cubic D2 {1, C2z, C2_(110), C2_(1-10)} and D3."""
 import itertools
 import numpy as np
 
-def cohomology(elems, mul, inv_list):
-    n = len(elems); e = 0
-    pairs = [(a, b) for a in range(n) for b in range(n)]
-    # cocycle condition w(a,b)+w(ab,c) = w(b,c)+w(a,bc) (mod 2), normalized w(e,.)=w(.,e)=0
-    free = [(a, b) for (a, b) in pairs if a != e and b != e]
-    cocycles = []
-    for bits in itertools.product([0, 1], repeat=len(free)):
-        w = {p: 0 for p in pairs}
-        for p, v in zip(free, bits): w[p] = v
-        if all((w[(a, b)] + w[(mul[a][b], c)] + w[(b, c)] + w[(a, mul[b][c])]) % 2 == 0
-               for a in range(n) for b in range(n) for c in range(n)):
-            cocycles.append(w)
-    cob = set()
-    for nu in itertools.product([0, 1], repeat=n - 1):
-        nuf = (0,) + nu
-        cob.add(tuple((nuf[a] + nuf[b] + nuf[mul[a][b]]) % 2 for (a, b) in pairs))
-    classes = {}
-    for w in cocycles:
-        key = min(tuple((w[p] + c[i]) % 2 for i, p in enumerate(pairs)) for c in cob)
-        classes.setdefault(key, w)
-    return classes, pairs
+def rank2(vecs):
+    piv = {}
+    for v in vecs:
+        while v:
+            h = v.bit_length() - 1
+            if h in piv: v ^= piv[h]
+            else: piv[h] = v; break
+    return len(piv)
+
+def nullspace2(rows, ncols):
+    piv = {}
+    for r in rows:
+        while r:
+            h = r.bit_length() - 1
+            if h in piv: r ^= piv[h]
+            else: piv[h] = r; break
+    keys = sorted(piv)
+    for k in keys:
+        for k2 in keys:
+            if k2 != k and (piv[k2] >> k) & 1: piv[k2] ^= piv[k]
+    free = [c for c in range(ncols) if c not in piv]
+    basis = []
+    for f in free:
+        v = 1 << f
+        for k in keys:
+            if (piv[k] >> f) & 1: v |= 1 << k
+        basis.append(v)
+    return basis
+
+def cohomology(elems, mul, _):
+    """Linear algebra over GF(2). Returns (dim H^2, cocycle basis, coboundary
+    basis, pair index)."""
+    n = len(elems)
+    pairs = [(a, b) for a in range(1, n) for b in range(1, n)]
+    pid = {p: i for i, p in enumerate(pairs)}
+    def bit(a, b):
+        return 0 if a == 0 or b == 0 else 1 << pid[(a, b)]
+    rows = []
+    for a in range(n):
+        for b in range(n):
+            for c in range(n):
+                r = bit(a, b) ^ bit(mul[a][b], c) ^ bit(b, c) ^ bit(a, mul[b][c])
+                if r: rows.append(r)
+    Z = nullspace2(rows, len(pairs))
+    Bv = []
+    for g in range(1, n):
+        v = 0
+        for (a, b) in pairs:
+            if (a == g) ^ (b == g) ^ (mul[a][b] == g):
+                v |= 1 << pid[(a, b)]
+        Bv.append(v)
+    dimB = rank2(Bv)
+    return len(Z) - dimB, Z, Bv, pid
 
 def mats_group(gens):
     G = [np.eye(3, dtype=int)]
@@ -48,13 +80,21 @@ C2z = np.diag([-1, -1, 1]); C2a = np.array([[0, 1, 0], [1, 0, 0], [0, 0, -1]]); 
 C3 = np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]]); C2d = np.array([[0, -1, 0], [-1, 0, 0], [0, 0, -1]])  # C2 about (1,-1,0) is perpendicular to (1,1,1)
 for name, gens in (("D2 (axis C2z + edge C2 (110), (1-10))", [C2z, C2a]), ("D3 (C3 about (111) + edge C2 (1-10))", [C3, C2d])):
     G = mats_group(gens); mul = table(G)
-    classes, pairs = cohomology(G, mul, None)
+    dimH, Z, Bv, pid = cohomology(G, mul, None)
+    pairs = [(a, b) for a in range(len(G)) for b in range(len(G))]
     invol = [i for i, g in enumerate(G) if i != 0 and mul[i][i] == 0]
-    sq = {}
-    for k, w in classes.items():
-        sq[k] = tuple(w[(i, i)] for i in invol)
-    print(name, "| order", len(G), "| #H^2 classes:", len(classes), "| involutions:", len(invol),
-          "| squares-pattern determines class:", len(set(sq.values())) == len(classes))
+    # square map on cocycles; injective on H^2 iff  dim(span(B + kernel of sq on Z)) == dim B
+    def sq(w): return tuple((w >> pid[(i, i)]) & 1 for i in invol)
+    # kernel of sq restricted to Z: brute force over Z (dim small)
+    kerZ = []
+    for bits in itertools.product([0, 1], repeat=len(Z)):
+        w = 0
+        for z, b in zip(Z, bits):
+            if b: w ^= z
+        if not any(sq(w)): kerZ.append(w)
+    injective = rank2(Bv + kerZ) == rank2(Bv)
+    print(name, "| order", len(G), "| dim H^2(G;Z2) =", dimH, "| involutions:", len(invol),
+          "| class determined by squares of involutions:", injective)
     # SU(2) restriction: lift each rotation to SU(2); cocycle w(a,b) from lift(a)lift(b) = (-1)^w lift(ab)
     def su2(R):
         # quaternion from rotation matrix (one of +-)

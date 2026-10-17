@@ -126,6 +126,22 @@ permutation?
   - So "spin" is again a property of how rotations act on the site's
     qubits. The framework would have to fix that action to make a
     prediction.
+- **Which action does natural dynamics pick?** (Loop pack, c12,
+  `hopsym.py`.)
+  - U_R maps each Majorana hop A_e to plus or minus A_{Re}. No
+    translation-invariant sign pattern of a nearest-neighbour Majorana
+    hopping sum t_a A is U_R-symmetric for any of the 128 consistent
+    actions. A staggered Z2 gauge dressing by vertex terms repairs this,
+    and does not change the class.
+  - U_R W instead attaches the endpoint parities B_t B_h to each hop. No
+    sign gauge removes that.
+  - So Majorana-only hopping selects the spinless realization, as the
+    BKSF independent check found for that family. The spin-1/2 class
+    needs dynamics symmetric under the W-twisted action, such as
+    number-conserving hopping.
+  - Under number-conserving hopping both realizations are symmetries.
+    They differ by e^{i pi N / 2}, so the distinction merges with the U(1)
+    charge, as in a spin-charge relation.
 
 ## Independent check
 

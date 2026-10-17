@@ -718,3 +718,17 @@ The other four panel E lenses were stopped to save tokens (Jon, 10-17).
 - **Side findings.** A two-loop spread of about 1e-8 needs counterterms at each order. All-orders exclusion of flavour-dependent on-site offsets needs a Θ-type lattice CPT.
 - **Cost.** 96 modes per site, and the "3" is put in by hand.
 - **Reading (supervisor).** X2′ swaps the corner package's FCNC and lattice-scale-breaking prices for the generic set-C Lorentz-violation tuning class: the same wall as gravity's matter light cones.
+
+**GEN-2. Generations as the direction label (X2′ with 6 direction qubits per site)** (pre-registered 2026-10-17T16:11Z; to run after QMC-1b; Jon: "run GEN-2 after QMC-1b"). Cap 0.4 GB.
+- **Object.** X2′ (GEN-1), except that the generation index is the axis label of a per-site register with one qubit per direction (±x, ±y, ±z). Cubic rotations permute the generations; translations do not act on them. Comparators: GEN-1 (internal label) and X2-corner.
+- **Items.**
+  - (c1) X2-L1 and X2-L2 at Γ with the direction label.
+  - (c2) The Z₁₆ and mixed anomaly gates.
+  - (c3) Whether CKM forces a first-order strain channel. If it does, its size on the m_p/m_e clock row (OBS-1 estimator) against 3.6e-17/yr.
+  - (c4) One-loop LV: the residual after the cubic-covariant per-field counterterms, the number n of further counterterms, and their tuning, against GEN-1's n = 2 at about 1e-16.
+  - (c5) Tree-level ΔF = 2 beyond the SM.
+- **Readings.**
+  - **DIR-GAIN:** c1, c2 and c5 hold, the clock row is ≤ 10× the bound, and n ≤ GEN-1's.
+  - **DIR-PRICE:** c1, c2 and c5 hold, but the clock row is > 10× or n exceeds GEN-1's.
+  - **DIR-FAIL:** c1, c2 or c5 fails.
+  - **OPEN:** otherwise.

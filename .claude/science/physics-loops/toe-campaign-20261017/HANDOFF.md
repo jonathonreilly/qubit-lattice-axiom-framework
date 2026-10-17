@@ -69,11 +69,23 @@ adopted; every result is unaudited bounded support with a declared model.
     as real generations do; making them mix needs couplings not yet built.
 - **Next:** couple the four BKSF copies so the species can mix (C7), and
   test other fermion encodings for full rotation symmetry.
+- **Spin of the BKSF fermion under lattice rotations (C8).**
+  - Give each plaquette orientation a sign: 8 sectors, all valid. Exactly
+    two are mapped to themselves by every rotation that fixes the code.
+    In them the fermion sees flux 0, respectively pi, on every plaquette.
+  - In those two sectors each such rotation is a bare qubit permutation.
+    So a 180-degree rotation squared acts as +1 on the fermion: it is not
+    spin-1/2 under the lattice rotations.
+  - *Interpretation for the owner, not a claim:* the pi-flux sector is the
+    staggered-fermion hopping problem of lattice QCD. At low energy it gives
+    Dirac fermions whose spin-1/2 is locked to an extra "taste" label. So in
+    this family an electron-like spin would be emergent, not microscopic.
 
 ## Blocks
 
 | Block | Note | Runner | Headline |
 |---|---|---|---|
+| C8 | `docs/BKSF_CUBIC_FERMION_CODES_ROTATIONS_ACT_BY_BARE_PERMUTATION_NO_SPINORIAL_ROTATION_FRACTIONALIZATION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py` (PASS=5) | Zero- and pi-flux sectors are rotation-symmetric with bare-permutation action; C2^2 = +1 on the fermion (not spinorial). |
 | C6 | `docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py` (PASS=8) | 60 translation-invariant BKSF codes, all with a fermionic charge; none rotation-invariant; minimal orbit 4 (D3, body diagonals). |
 | C4 | `docs/THREE_AXIS_QUBIT_SYMMETRIC_STABILIZER_RULES_FERMION_SEARCH_FINDS_NO_COHERENTLY_MOBILE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_symmetric_stabilizer_rules_fermion_search_2026_10_17.py` (PASS=8) | No coherently 3D-mobile fermion in symmetric three-axis-qubit rules: soldered gives no coherent motion; unsoldered gives bosons only. Alphabet lemma unifies the obstructions. |
 | C3 | `docs/THREE_AXIS_QUBIT_SITE_STABILIZER_RULES_UNSOLDERED_TORIC_CODES_MOVE_SOLDERED_MAXIMAL_RULES_DO_NOT_BOUNDED_THEOREM_NOTE_2026-10-17.md` | `scripts/three_axis_qubit_site_stabilizer_rules_soldering_and_three_dimensional_charge_mobility_2026_10_17.py` (PASS=10 with Singular) | Unsoldered: interleaved toric codes, coherent 3D-mobile bosons. Soldered (C4/C3-fixed): no maximal rule with bounded code dimension and 3D-mobile charge. |
